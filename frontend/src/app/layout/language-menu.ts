@@ -11,12 +11,12 @@ const NATIVE_NAMES: Record<Lang, string> = { pl: 'Polski', en: 'English', de: 'D
   imports: [RouterLink, Icon],
   template: `
     <button type="button" (click)="open.set(!open())" [attr.aria-expanded]="open()" aria-haspopup="true"
-            class="flex h-10 items-center gap-1.5 rounded-[4px] border border-line px-3 text-sm font-semibold transition hover:border-line-strong">
-      <app-icon name="globe" [size]="16" /> {{ labels[lang.current()] }}
+            class="flex h-10 items-center gap-1 px-1 text-[14px] font-medium transition hover:text-brand-text">
+      {{ labels[lang.current()] }}
       <app-icon name="chevron-down" [size]="14" />
     </button>
     @if (open()) {
-      <ul class="reveal-enter absolute right-0 top-full z-30 mt-2 w-48 overflow-hidden rounded-[6px] border border-line bg-panel py-1 shadow-2xl"
+      <ul class="reveal-enter absolute right-0 top-full z-30 mt-2 w-48 overflow-hidden rounded-[4px] border border-line bg-panel py-1 shadow-2xl"
           animate.leave="reveal-leave">
         @for (l of langs; track l) {
           <li>

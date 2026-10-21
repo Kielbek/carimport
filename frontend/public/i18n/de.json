@@ -288,7 +288,7 @@
     "advanced": "Erweiterte Optionen"
   },
   "layout": {
-    "topbar": "Importkostenrechner für Autos aus USA, Kanada, Japan, VAE und UK — NBP-Kurse täglich aktualisiert",
+    "topbar": "Importrechner für USA, Kanada, Japan, VAE und UK — wir kalkulieren und liefern in jedes EU-Land",
     "forBusiness": "Für Importunternehmen",
     "home": "Startseite",
     "nav": "Hauptnavigation",
@@ -302,7 +302,10 @@
     "close": "Schließen",
     "breadcrumb": "Brotkrümel",
     "themeLight": "Helles Design aktivieren",
-    "themeDark": "Dunkles Design aktivieren"
+    "themeDark": "Dunkles Design aktivieren",
+    "consultation": "Kostenlose Beratung vereinbaren",
+    "callback": "Rückruf anfordern",
+    "services": "Leistungen"
   },
   "footer": {
     "about": "Unabhängiger Rechner für Fahrzeugimporte aus Drittländern: Auktionsgebühren, Fracht, Zoll, Verbrauchsteuer und USt an einem Ort.",
@@ -330,11 +333,11 @@
   "home": {
     "hero": {
       "eyebrow": "Fahrzeugimport in die EU",
-      "title1": "Ihr Auto importieren",
-      "title2": "aus USA, Kanada, Japan, Dubai oder UK",
-      "lead": "Berechnen Sie die Gesamtkosten vor dem Gebot — Auktion, Transport, Zoll, Verbrauchsteuer und USt — oder übergeben Sie den Import einem geprüften Partner. Sie erhalten ein zulassungsfertiges Auto.",
+      "title1": "Wir importieren Autos",
+      "title2": "aus USA, Kanada, Japan, den VAE und UK",
+      "lead": "Wir berechnen die Gesamtkosten vor dem Gebot; ein geprüfter Partner übernimmt Kauf, Transport, Verzollung und Formalitäten. Sie erhalten ein zulassungsfertiges Auto.",
       "cta": "Importkosten berechnen",
-      "secondary": "Import schlüsselfertig beauftragen",
+      "secondary": "Import schlüsselfertig",
       "visual": "Sportwagen im Neonlicht"
     },
     "how": {
@@ -355,7 +358,8 @@
       "s4": {
         "title": "Bericht holen oder übergeben",
         "text": "Exakte PDF-Aufstellung oder Kontakt zu einem geprüften Importeur."
-      }
+      },
+      "step": "Schritt"
     },
     "costs": {
       "eyebrow": "Woraus sich der Preis zusammensetzt",
@@ -407,8 +411,8 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu",
-        "text": "Rechner und Importpartner-Netzwerk"
+        "title": "CarImport.eu —",
+        "text": "Autoimport in die EU"
       },
       "docs": {
         "title": "Dokumente",
@@ -442,7 +446,8 @@
       "calc": {
         "tag": "Rechner",
         "title": "Importkosten live",
-        "text": "Auktion, Transport, Zoll, Verbrauchsteuer und USt — live mit jeder Eingabe."
+        "text": "Auktion, Transport, Zoll, Verbrauchsteuer und USt — live mit jeder Eingabe.",
+        "alt": "Screenshot des Importkostenrechners"
       },
       "report": {
         "tag": "Bericht",
@@ -496,10 +501,10 @@
       }
     },
     "contact": {
-      "eyebrow": "Bereit für den Import?",
+      "eyebrow": "Bereit, Ihr Auto zu holen",
       "title1": "Beschreiben Sie,",
       "title2": "welches Auto Sie suchen",
-      "lead": "Ein Partner erstellt ein Angebot mit Termin und Komplettpreis.",
+      "lead": "Wir kalkulieren Termin und Komplettpreis.",
       "b1": "Antwort innerhalb eines Werktags",
       "b2": "Nur geprüfte Importunternehmen",
       "b3": "Unverbindlich, ohne versteckte Kosten",
@@ -507,7 +512,11 @@
       "message": "Welches Auto suchen Sie",
       "placeholder": "Marke, Modell, Baujahr, Budget oder Auktionslink",
       "submit": "Anfrage senden",
-      "error": "Senden fehlgeschlagen. Bitte gleich erneut versuchen."
+      "error": "Senden fehlgeschlagen. Bitte gleich erneut versuchen.",
+      "name": "Ihr Name",
+      "phone": "Telefonnummer",
+      "email": "E-Mail-Adresse",
+      "question": "Welches Auto? Marke, Modell, Budget oder Auktionslink"
     }
   },
   "pricing": {

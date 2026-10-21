@@ -19,7 +19,7 @@ import { CONDITIONS } from '../calculator.options';
         @for (c of conditions; track c.code) {
           <button type="button" class="choice" [class.choice--active]="s().condition === c.code" (click)="store.patch({ condition: c.code })">
             <span class="choice-check"><app-icon name="check" [size]="12" [stroke]="3" /></span>
-            <app-icon [name]="c.code" [size]="26" class="text-accent-text" />
+            <app-icon [name]="c.code" [size]="26" class="text-brand-text" />
             <span class="mt-2 font-semibold">{{ 'condition.' + c.code | translate }}</span>
             <span class="text-xs text-muted">{{ 'condition.' + c.code + '_HINT' | translate }}</span>
             @if (c.surcharge) {

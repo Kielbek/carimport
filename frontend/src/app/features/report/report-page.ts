@@ -91,7 +91,7 @@ const CATEGORIES: CostCategory[] = ['VEHICLE', 'TRANSPORT', 'TAXES', 'REGISTRATI
         <section class="mt-10 grid gap-5 sm:grid-cols-2">
           @for (stage of stages; track stage) {
             <div class="card p-6">
-              <h2 class="flex items-center gap-2 font-extrabold"><app-icon name="list" [size]="18" class="text-accent-text" />{{ 'report.stage.' + stage | translate }}</h2>
+              <h2 class="flex items-center gap-2 font-extrabold"><app-icon name="list" [size]="18" class="text-brand-text" />{{ 'report.stage.' + stage | translate }}</h2>
               <ul class="mt-4 space-y-2.5 text-sm">
                 @for (d of docsOf(stage); track d.key) {
                   <li class="flex gap-2.5"><span class="mt-0.5 size-4 shrink-0 rounded-[3px] border border-line-strong"></span>{{ d.key | translate }}</li>

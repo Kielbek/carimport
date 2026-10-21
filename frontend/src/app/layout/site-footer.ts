@@ -12,7 +12,7 @@ import { Logo } from './logo';
   selector: 'app-site-footer',
   imports: [RouterLink, TranslatePipe, Logo, Flag, Icon],
   template: `
-    <footer class="mt-24 border-t border-line bg-bg-soft">
+    <footer class="mt-20 border-t border-line">
       <div class="site grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
           <app-logo />

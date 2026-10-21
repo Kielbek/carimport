@@ -8,7 +8,7 @@ import { Icon } from '../shared/icon/icon';
   imports: [Icon, TranslatePipe],
   template: `
     <button type="button" (click)="theme.toggle()"
-            class="grid size-10 place-items-center rounded-[4px] border border-line text-fg transition hover:border-line-strong hover:text-brand-text"
+            class="grid size-10 place-items-center text-fg/80 transition hover:text-brand-text"
             [attr.aria-label]="label() | translate" [title]="label() | translate">
       <app-icon [name]="theme.theme() === 'dark' ? 'sun' : 'moon'" [size]="18" />
     </button>

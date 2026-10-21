@@ -2,7 +2,7 @@ import {
   Anchor, ArrowLeft, ArrowLeftRight, ArrowRight, Atom, BadgePercent, Banknote, BatteryCharging, Building2, Calculator,
   Car, CarFront, ChartPie, Check, ChevronDown, CircleCheck, Clock, Construction, Container, Cookie, Download, Droplet,
   FileText, Flag, Flame, Forklift, Fuel, Globe, Handshake, Info, Key, Landmark, Languages, Leaf, ListChecks, Lock, Mail,
-  Menu, Monitor, Moon, Motorbike, Plug, Receipt, Route, Scale, Search, Ship, ShieldCheck, Sparkles, Sun, Timer,
+  Menu, Monitor, Moon, Motorbike, MoveRight, Plug, Receipt, Route, Scale, Search, Ship, ShieldCheck, Sparkles, Sun, Timer,
   TriangleAlert, Truck, User, Van, Wallet, X, Zap,
 } from 'lucide-angular';
 
@@ -14,7 +14,7 @@ export type IconNode = readonly (readonly [string, Record<string, string>])[];
  * Vehicle/fuel names match the backend enums so options can map straight to icons.
  */
 export const ICONS = {
-  anchor: Anchor, 'arrow-left': ArrowLeft, 'arrow-right': ArrowRight, exchange: ArrowLeftRight, atom: Atom,
+  anchor: Anchor, 'arrow-left': ArrowLeft, 'arrow-right': ArrowRight, 'arrow-long': MoveRight, exchange: ArrowLeftRight, atom: Atom,
   percent: BadgePercent, banknote: Banknote, building: Building2, calculator: Calculator, check: Check,
   'check-circle': CircleCheck, 'chevron-down': ChevronDown, clock: Clock, container: Container, cookie: Cookie,
   download: Download, document: FileText, globe: Globe, handshake: Handshake, info: Info, landmark: Landmark,
