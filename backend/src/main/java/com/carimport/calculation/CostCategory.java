@@ -1,6 +1,6 @@
 package com.carimport.calculation;
 
-/** Buckets used by the donut chart in the free tier. */
+/** Cost buckets used by the chart and the report sections. */
 public enum CostCategory {
-    VEHICLE, TRANSPORT, TAXES, REGISTRATION
+    VEHICLE, TRANSPORT, TAXES, REGISTRATION, RISK
 }

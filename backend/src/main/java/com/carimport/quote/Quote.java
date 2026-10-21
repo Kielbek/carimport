@@ -2,6 +2,7 @@ package com.carimport.quote;
 
 import com.carimport.calculation.CalculationRequest;
 import com.carimport.calculation.CalculationResult;
+import com.carimport.calculation.QuoteRange;
 import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.time.Instant;
@@ -37,6 +38,11 @@ public class Quote {
     @Column(name = "result_json", nullable = false)
     private CalculationResult result;
 
+    /** All three scenarios (optimistic / average / pessimistic) for the paid report. */
+    @JdbcTypeCode(SqlTypes.JSON)
+    @Column(name = "range_json")
+    private QuoteRange range;
+
     @Column(name = "range_min", nullable = false, precision = 14, scale = 2)
     private BigDecimal rangeMin;
 
@@ -46,11 +52,12 @@ public class Quote {
     protected Quote() {
     }
 
-    public Quote(CalculationRequest request, CalculationResult result, BigDecimal rangeMin, BigDecimal rangeMax,
+    public Quote(CalculationRequest request, QuoteRange range, BigDecimal rangeMin, BigDecimal rangeMax,
                  String locale, Instant now, Instant expiresAt) {
         this.id = UUID.randomUUID();
         this.request = request;
-        this.result = result;
+        this.result = range.expected();
+        this.range = range;
         this.rangeMin = rangeMin;
         this.rangeMax = rangeMax;
         this.locale = locale;
@@ -68,6 +75,7 @@ public class Quote {
     public String getLocale() { return locale; }
     public CalculationRequest getRequest() { return request; }
     public CalculationResult getResult() { return result; }
+    public QuoteRange getRange() { return range; }
     public BigDecimal getRangeMin() { return rangeMin; }
     public BigDecimal getRangeMax() { return rangeMax; }
 }

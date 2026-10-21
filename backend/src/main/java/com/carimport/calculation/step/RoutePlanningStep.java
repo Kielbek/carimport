@@ -9,7 +9,9 @@ import com.carimport.domain.VehicleCategory;
 import com.carimport.reference.InlandTransportRate;
 import com.carimport.reference.OceanFreightRate;
 import java.util.Comparator;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import org.springframework.stereotype.Component;
 
@@ -30,7 +32,7 @@ public class RoutePlanningStep implements CalculationStep {
     public void apply(CalculationContext ctx) {
         CalculationRequest req = ctx.request();
         OceanFreightRate.SizeClass size = sizeClass(req.vehicleCategory());
-        List<InlandTransportRate> inland = ctx.catalog().inlandRates(req.originCountry(), req.pickupZone());
+        List<InlandTransportRate> inland = inlandCandidates(ctx, req);
 
         record Candidate(CalculationContext.Route route, Money expectedCost) {
         }
@@ -46,6 +48,19 @@ public class RoutePlanningStep implements CalculationStep {
 
         ctx.route(best.map(Candidate::route).orElseThrow(() -> new CalculationException("error.route.unavailable",
                 req.originCountry() + "/" + req.pickupZone() + " -> " + req.euPortCode())));
+    }
+
+    /**
+     * Zone-specific rates first; country-wide "*" rates fill in the ports the zone has no own rate for, so a buyer in
+     * New Jersey can still choose to ship from Savannah.
+     */
+    private static List<InlandTransportRate> inlandCandidates(CalculationContext ctx, CalculationRequest req) {
+        List<InlandTransportRate> zoned = ctx.catalog().inlandRates(req.originCountry(), req.pickupZone());
+        List<InlandTransportRate> fallback = ctx.catalog().inlandRates(req.originCountry(), "*");
+        Map<String, InlandTransportRate> byPort = new LinkedHashMap<>();
+        zoned.forEach(r -> byPort.put(r.getDeparturePort(), r));
+        fallback.forEach(r -> byPort.putIfAbsent(r.getDeparturePort(), r));
+        return List.copyOf(byPort.values());
     }
 
     private static Money expectedCost(CalculationContext ctx, CalculationContext.Route route) {

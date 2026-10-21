@@ -51,7 +51,17 @@ import { CONDITIONS } from '../calculator.options';
       }
     </div>
 
-    <div class="mt-8 rounded-[6px] border border-line">
+    <div class="mt-8 max-w-sm">
+      <label class="label" for="repair">{{ 'wizard.repair' | translate }}</label>
+      <div class="relative">
+        <input id="repair" type="number" min="0" step="100" class="input pr-16" [value]="s().repairEstimate ?? ''"
+               (input)="store.patch({ repairEstimate: num($event) })" />
+        <span class="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-muted">{{ s().displayCurrency }}</span>
+      </div>
+      <p class="mt-2 text-xs text-muted">{{ (store.isRunner() ? 'wizard.repairHintRunner' : 'wizard.repairHintDamaged') | translate }}</p>
+    </div>
+
+    <div class="mt-8 rounded-[4px] border border-line">
       <button type="button" class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left" (click)="advanced.set(!advanced())"
               [attr.aria-expanded]="advanced()" aria-controls="advanced-options">
         <span>
@@ -113,5 +123,10 @@ export class StepCondition {
   protected readonly shipping: ShippingMethod[] = ['CONTAINER_SHARED', 'CONTAINER_EXCLUSIVE', 'RORO'];
   protected readonly advanced = signal(false);
   /** Clean/salvage schedules only exist for the North-American style auctions. */
+  protected num(e: Event): number | null {
+    const v = (e.target as HTMLInputElement).value;
+    return v === '' ? null : Number(v);
+  }
+
   protected readonly hasTitleTypes = computed(() => ['COPART', 'IAAI'].includes(this.s().auctionHouse));
 }

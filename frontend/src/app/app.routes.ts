@@ -16,19 +16,25 @@ export const routes: Routes = [
   {
     path: ':lang',
     canActivate: [languageGuard],
-    loadComponent: () => import('./layout/shell').then((m) => m.Shell),
     children: [
-      { path: '', loadComponent: () => import('./features/home/home-page').then((m) => m.HomePage), data: { page: 'home' } },
+      // full-screen calculator: no site header/footer
       ...localized(SLUGS.calculator, calculator, 'calculator'),
-      ...localized(SLUGS.privacy, privacy, 'privacy'),
       // Stripe cancel_url returns here; the wizard restores its state from session storage
       { path: 'result/:quoteId', loadComponent: calculator, data: { page: 'calculator', noindex: true } },
       {
-        path: 'report/:orderId',
-        loadComponent: () => import('./features/report/report-page').then((m) => m.ReportPage),
-        data: { page: 'report' },
+        path: '',
+        loadComponent: () => import('./layout/shell').then((m) => m.Shell),
+        children: [
+          { path: '', loadComponent: () => import('./features/home/home-page').then((m) => m.HomePage), data: { page: 'home' } },
+          ...localized(SLUGS.privacy, privacy, 'privacy'),
+          {
+            path: 'report/:orderId',
+            loadComponent: () => import('./features/report/report-page').then((m) => m.ReportPage),
+            data: { page: 'report' },
+          },
+          { path: '**', redirectTo: '' },
+        ],
       },
-      { path: '**', redirectTo: '' },
     ],
   },
 ];

@@ -2,6 +2,7 @@ package com.carimport.reference;
 
 import com.carimport.calculation.TariffCatalog;
 import com.carimport.domain.AuctionHouse;
+import com.carimport.domain.DeliveryMode;
 import com.carimport.domain.FuelType;
 import com.carimport.domain.OriginCountry;
 import com.carimport.domain.ShippingMethod;
@@ -39,13 +40,16 @@ public class JpaTariffCatalog implements TariffCatalog {
     private final ExciseRateRepository excise;
     private final CustomsTariffRepository tariffs;
     private final DestinationFeeRepository destinationFees;
+    private final RoadTransportRateRepository roadRates;
+    private final RiskFactorRepository risks;
 
     public JpaTariffCatalog(AuctionFeeTierRepository feeTiers, AuctionFixedFeeRepository fixedFees,
                             ConditionSurchargeRepository surcharges, InlandTransportRateRepository inland,
                             OceanFreightRateRepository ocean, IntraEuTransportRateRepository intraEu,
                             EuPortRepository ports, EuCountryTaxProfileRepository taxProfiles,
                             ExciseRateRepository excise, CustomsTariffRepository tariffs,
-                            DestinationFeeRepository destinationFees) {
+                            DestinationFeeRepository destinationFees, RoadTransportRateRepository roadRates,
+                            RiskFactorRepository risks) {
         this.feeTiers = feeTiers;
         this.fixedFees = fixedFees;
         this.surcharges = surcharges;
@@ -57,6 +61,8 @@ public class JpaTariffCatalog implements TariffCatalog {
         this.excise = excise;
         this.tariffs = tariffs;
         this.destinationFees = destinationFees;
+        this.roadRates = roadRates;
+        this.risks = risks;
     }
 
     @Override
@@ -137,5 +143,18 @@ public class JpaTariffCatalog implements TariffCatalog {
     @Cacheable
     public List<DestinationFee> destinationFees(String countryCode) {
         return destinationFees.findByDestinationCountry(countryCode);
+    }
+
+    @Override
+    @Cacheable
+    public Optional<RoadTransportRate> roadRate(String countryCode, DeliveryMode mode) {
+        return roadRates.findByCountryCodeAndMode(countryCode, mode)
+                .or(() -> roadRates.findByCountryCodeAndMode("*", mode));
+    }
+
+    @Override
+    @Cacheable
+    public List<RiskFactor> riskFactors() {
+        return risks.findAll();
     }
 }

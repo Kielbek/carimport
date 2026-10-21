@@ -1,10 +1,14 @@
 package com.carimport.web;
 
+import com.carimport.calculation.TariffCatalog;
 import com.carimport.domain.AuctionHouse;
+import com.carimport.domain.DeliveryMode;
 import com.carimport.domain.OriginCountry;
 import com.carimport.reference.EuCountryTaxProfile;
 import com.carimport.reference.EuCountryTaxProfileRepository;
 import com.carimport.reference.EuPortRepository;
+import com.carimport.reference.InlandTransportRate;
+import com.carimport.reference.IntraEuTransportRate;
 import java.math.BigDecimal;
 import java.time.Duration;
 import java.util.Arrays;
@@ -13,6 +17,7 @@ import org.springframework.http.CacheControl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /** Static wizard options (cached by the CDN / browser for an hour). */
@@ -27,12 +32,47 @@ public class ReferenceDataController {
                              boolean supportsProcedure4200) {
     }
 
+    public record ServiceOption(String code, boolean statutory, boolean defaultSelected) {
+    }
+
+    public record RoadOption(DeliveryMode mode, BigDecimal perKmMin, BigDecimal perKmMax, BigDecimal fixedFee,
+                             BigDecimal minimumCharge, String currency) {
+    }
+
+    /** Wizard options for one route: what can be ticked after import, per-km tariffs, typical distance, ports. */
+    public record RouteOptions(List<String> departurePorts, List<ServiceOption> services, List<RoadOption> delivery,
+                               Integer typicalDistanceKm) {
+    }
+
     private final EuPortRepository ports;
     private final EuCountryTaxProfileRepository taxes;
+    private final TariffCatalog catalog;
 
-    public ReferenceDataController(EuPortRepository ports, EuCountryTaxProfileRepository taxes) {
+    public ReferenceDataController(EuPortRepository ports, EuCountryTaxProfileRepository taxes, TariffCatalog catalog) {
         this.ports = ports;
         this.taxes = taxes;
+        this.catalog = catalog;
+    }
+
+    /** Amounts of after-import services are not exposed here - they are part of the paid report. */
+    @GetMapping("/options")
+    public RouteOptions options(@RequestParam OriginCountry origin, @RequestParam String destination,
+                                @RequestParam String euPort) {
+        List<String> departurePorts = catalog.inlandRates(origin, "*").stream()
+                .map(InlandTransportRate::getDeparturePort).distinct().toList();
+        List<ServiceOption> services = catalog.destinationFees(destination).stream()
+                .filter(f -> f.appliesTo(origin))
+                .map(f -> new ServiceOption(f.getCode(), !f.isSelectable(), f.isDefaultSelected()))
+                .toList();
+        List<RoadOption> delivery = Arrays.stream(DeliveryMode.values())
+                .filter(DeliveryMode::needsRoad)
+                .flatMap(m -> catalog.roadRate(destination, m).stream())
+                .map(r -> new RoadOption(r.getMode(), r.getPricePerKmMin(), r.getPricePerKmMax(), r.getFixedFee(),
+                        r.getMinimumCharge(), r.getCurrency().name()))
+                .toList();
+        Integer km = catalog.intraEuRate(euPort, destination).map(IntraEuTransportRate::getDistanceKm)
+                .filter(d -> d > 0).orElse(euPort.startsWith(destination) ? 300 : null);
+        return new RouteOptions(departurePorts, services, delivery, km);
     }
 
     @GetMapping("/origins")

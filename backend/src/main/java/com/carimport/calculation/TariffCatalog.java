@@ -1,6 +1,7 @@
 package com.carimport.calculation;
 
 import com.carimport.domain.AuctionHouse;
+import com.carimport.domain.DeliveryMode;
 import com.carimport.domain.FuelType;
 import com.carimport.domain.OriginCountry;
 import com.carimport.domain.ShippingMethod;
@@ -16,6 +17,8 @@ import com.carimport.reference.ExciseRate;
 import com.carimport.reference.InlandTransportRate;
 import com.carimport.reference.IntraEuTransportRate;
 import com.carimport.reference.OceanFreightRate;
+import com.carimport.reference.RiskFactor;
+import com.carimport.reference.RoadTransportRate;
 import java.util.List;
 import java.util.Optional;
 
@@ -48,4 +51,9 @@ public interface TariffCatalog {
     List<CustomsTariff> customsTariffs();
 
     List<DestinationFee> destinationFees(String countryCode);
+
+    /** Per-km road price for the destination country, falling back to the EU-wide "*" row. */
+    Optional<RoadTransportRate> roadRate(String countryCode, DeliveryMode mode);
+
+    List<RiskFactor> riskFactors();
 }

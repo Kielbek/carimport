@@ -9,6 +9,7 @@ import {
   OrderStatus,
   PortOption,
   PublicQuoteView,
+  RouteOptions,
 } from './api.models';
 
 /** Thin typed client for /api/v1. Accept-Language is added by the language interceptor. */
@@ -23,6 +24,10 @@ export class CarImportApi {
 
   createQuote(request: CalculationRequest): Observable<PublicQuoteView> {
     return this.http.post<PublicQuoteView>(`${this.base}/quotes`, request);
+  }
+
+  routeOptions(origin: string, destination: string, euPort: string): Observable<RouteOptions> {
+    return this.http.get<RouteOptions>(`${this.base}/reference/options`, { params: { origin, destination, euPort } });
   }
 
   ports(): Observable<PortOption[]> {

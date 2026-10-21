@@ -43,7 +43,7 @@ public class QuoteService {
         FxRates fx = rates.latest();
         QuoteRange range = engine.calculateRange(request, fx);
         Instant now = clock.instant();
-        Quote quote = new Quote(request, range.expected(),
+        Quote quote = new Quote(request, range,
                 PublicQuoteView.floorToStep(range.low().total()),
                 PublicQuoteView.ceilToStep(range.high().total()),
                 locale, now, now.plus(VALIDITY));

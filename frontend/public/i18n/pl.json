@@ -28,12 +28,13 @@
     "MOTORCYCLE": "Motocykl",
     "PASSENGER_CAR": "Osobowy",
     "PICKUP_TRUCK": "Pickup",
-    "REGISTRATION": "Rejestracja",
+    "REGISTRATION": "Po imporcie i rejestracja",
     "SUV": "SUV",
     "TAXES": "Opłaty skarbowe UE",
     "TRANSPORT": "Transport i logistyka",
     "VAN": "Van",
-    "VEHICLE": "Pojazd i aukcja"
+    "VEHICLE": "Pojazd i aukcja",
+    "RISK": "Ryzyka po drodze"
   },
   "condition": {
     "ENGINE_STARTS": "Silnik odpala",
@@ -73,7 +74,32 @@
     "SWORN_TRANSLATION": "Tłumaczenie przysięgłe dokumentów",
     "TECHNICAL_INSPECTION": "Badanie techniczne",
     "US_LIGHTING_CONVERSION": "Przeróbka oświetlenia (wersja US)",
-    "WINCH_CONTAINER_LOADING": "Załadunek do kontenera (wyciągarka)"
+    "WINCH_CONTAINER_LOADING": "Załadunek do kontenera (wyciągarka)",
+    "DELIVERY_CAR_CARRIER": "Autotransporter z portu pod dom",
+    "DELIVERY_TOW_TRUCK": "Laweta z portu pod dom",
+    "DELIVERY_SELF_DRIVE": "Przejazd na tablicach tymczasowych (paliwo, tablice, OC krótkoterminowe)",
+    "TECHNICAL_INSPECTION_IMPORT": "Badanie techniczne pojazdu sprowadzonego",
+    "REG_TEMPORARY_PERMIT": "Pozwolenie czasowe (z opłatą ewidencyjną)",
+    "REG_TEMPORARY_PLATES": "Tablice tymczasowe",
+    "REG_CERTIFICATE": "Dowód rejestracyjny (z opłatą ewidencyjną)",
+    "REG_PLATES": "Tablice rejestracyjne",
+    "REG_STICKER": "Nalepka kontrolna (z opłatą ewidencyjną)",
+    "REAR_FOG_LIGHT": "Montaż tylnego światła przeciwmgielnego",
+    "SPEEDOMETER_KMH": "Przestawienie licznika na km/h",
+    "SERVICE_INSPECTION": "Przegląd serwisowy i wymiana płynów",
+    "GEOMETRY_ALIGNMENT": "Geometria kół",
+    "DETAILING": "Czyszczenie i detailing",
+    "EXPERT_VALUATION": "Wycena rzeczoznawcy (np. do ubezpieczenia AC)",
+    "REPAIR_ESTIMATE": "Naprawa (Twoja wycena)",
+    "INSURANCE_FIRST_YEAR": "Ubezpieczenie OC/AC – pierwszy rok (Twoja kwota)",
+    "RISK_PORT_STORAGE": "Postój w porcie (opóźniony odbiór, dokumenty)",
+    "RISK_CUSTOMS_INSPECTION": "Rewizja celna / prześwietlenie kontenera",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Zakwestionowanie wartości celnej (dopłata cła i VAT)",
+    "RISK_VESSEL_ROLLOVER": "Przesunięcie na kolejny statek (postój w porcie wyjścia)",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Szkoda w transporcie – udział własny w polisie",
+    "RISK_HIDDEN_DAMAGE": "Ukryte usterki niewidoczne na aukcji",
+    "RISK_TITLE_DELAY": "Opóźnienie dokumentu Title (dodatkowy postój)",
+    "RISK_EXPORT_DOCS_DELAY": "Opóźnienie dokumentów eksportowych"
   },
   "doc": {
     "billOfLading": "Konosament (Bill of Lading)",
@@ -182,15 +208,21 @@
     "item": "Pozycja",
     "rate": "Stawka",
     "refunded": "Zamówienie zostało zwrócone.",
-    "stage": {
-      "CUSTOMS": "Odprawa celna",
-      "PURCHASE": "Zakup",
-      "REGISTRATION": "Rejestracja",
-      "SHIPPING": "Transport"
-    },
+    "stage": "Etap",
     "title": "Raport kosztów importu pojazdu",
     "total": "Razem koszt „pod dom”",
-    "waiting": "Potwierdzamy płatność…"
+    "waiting": "Potwierdzamy płatność…",
+    "delivery": "Dostawa",
+    "leadTime": "Czas do rejestracji",
+    "days": "dni",
+    "scenarios": "Trzy scenariusze kosztów",
+    "timeline": "Harmonogram",
+    "plan": "Co zrobić po imporcie – krok po kroku",
+    "step": "Krok",
+    "deadline": "Termin",
+    "riskDetail": "Prawdopodobieństwo {{p}}%, koszt jeśli wystąpi: {{min}}–{{max}} {{cur}}",
+    "userAmount": "kwota podana przez Ciebie",
+    "scenarioMethod": "Scenariusz średni zawiera ryzyka jako wartość oczekiwaną (prawdopodobieństwo × średni koszt); pesymistyczny zakłada, że wszystkie ryzyka wystąpią w górnej granicy kosztu."
   },
   "result": {
     "chart": "Struktura kosztów",
@@ -206,7 +238,24 @@
     "transit": "{{days}} dni morzem",
     "unlock": "Odblokuj pełny raport – {{price}}",
     "updating": "Przeliczam…",
-    "short": "Koszt „pod dom”"
+    "short": "Koszt „pod dom”",
+    "calculating": "Liczymy wszystkie pozycje i scenariusze…",
+    "edit": "Zmień dane",
+    "structure": "Struktura kosztów (scenariusz średni)",
+    "timeline": "Czas: {{min}}–{{max}} dni do rejestracji",
+    "included": "Co jest wliczone",
+    "risks": "Co może się wydarzyć po drodze",
+    "risksLead": "Każde ryzyko ma prawdopodobieństwo i widełki kosztu. W scenariuszu średnim liczymy je proporcjonalnie, w pesymistycznym – w całości. Kwoty znajdziesz w raporcie.",
+    "probability": "Prawdopodobieństwo",
+    "reportEyebrow": "Raport „pod dom”",
+    "reportTitle": "Każda pozycja co do grosza – w trzech scenariuszach",
+    "reportItem1": "Opłaty aukcyjne, transport, fracht i ubezpieczenie",
+    "reportItem2": "Cło, akcyza i VAT z podstawami i stawkami",
+    "reportItem3": "Dostawa: km × stawka, załadunek, minimum",
+    "reportItem4": "Opłaty rejestracyjne i usługi po imporcie",
+    "reportItem5": "Ryzyka z kwotami: optymistycznie, średnio, pesymistycznie",
+    "reportItem6": "Plan krok po kroku z terminami i lista dokumentów",
+    "cheapestPort": "najtańszy port"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Kontener na wyłączność",
@@ -254,6 +303,10 @@
     },
     "registrationTax": {
       "notModelled": "Krajowy podatek rejestracyjny kraju docelowego nie jest jeszcze uwzględniony."
+    },
+    "delivery": {
+      "portPickup": "Wybrano odbiór w porcie – transport do domu nie jest wliczony.",
+      "selfDriveNotRunning": "Auto niejezdne nie może jechać na tablicach tymczasowych – wybierz lawetę."
     }
   },
   "wizard": {
@@ -278,14 +331,39 @@
     "procedure4200": "Procedura celna 4200",
     "procedure4200Hint": "Dla firm z VAT UE: bez VAT na granicy, rozliczenie w kraju docelowym (odwrotne obciążenie).",
     "shipping": "Sposób transportu morskiego",
-    "step1": "Trasa",
+    "step1": "Skąd",
     "step2": "Pojazd",
-    "step3": "Stan i zakup",
+    "step3": "Stan i cena",
     "title": "Typ dokumentu (title)",
     "year": "Rok produkcji",
     "zone": "Lokalizacja placu (stan / prowincja)",
     "zoneOther": "Inna / nie wiem",
-    "advanced": "Opcje zaawansowane"
+    "advanced": "Opcje zaawansowane",
+    "step4": "Dokąd i dostawa",
+    "step5": "Po imporcie",
+    "step6": "Raport kosztów",
+    "calculate": "Policz pełny koszt",
+    "departurePort": "Port wyjścia",
+    "departureAuto": "Automatycznie – najtańsza trasa",
+    "departureHint": "Wybierz konkretny port, jeśli spedytor już go wskazał.",
+    "delivery": "Transport z portu pod dom",
+    "distance": "Odległość z portu pod Twój adres",
+    "distanceHint": "Podpowiadamy typową odległość z portu {{port}}; wpisz własną dla dokładnego wyniku.",
+    "pricePerKm": "Cena za kilometr",
+    "tariff": "Stawka rynkowa: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} za załadunek (minimum {{minimum}} {{cur}}).",
+    "ownRate": "Mam własną ofertę przewoźnika",
+    "tariffUnknown": "Brak cennika za km dla tego kraju – użyjemy stawki ryczałtowej.",
+    "repair": "Szacowany koszt naprawy (opcjonalnie)",
+    "repairHintRunner": "Np. drobne poprawki lakiernicze, opony, klocki.",
+    "repairHintDamaged": "Dla aut uszkodzonych wpisz wycenę warsztatu – ukryte usterki liczymy osobno jako ryzyko.",
+    "afterImportLead": "Wszystko, co trzeba zrobić i opłacić między portem a tablicami rejestracyjnymi. Pozycje obowiązkowe są zawsze wliczone, resztę wybierasz sam.",
+    "statutory": "Obowiązkowe (opłaty urzędowe)",
+    "optional": "Do wyboru",
+    "recommended": "zalecane",
+    "optionsLoading": "Wczytujemy listę usług dla Twojej trasy…",
+    "noServices": "Dla tego kraju nie mamy jeszcze szczegółowego cennika rejestracji – w raporcie znajdziesz listę kroków.",
+    "insurance": "Ubezpieczenie na pierwszy rok (opcjonalnie)",
+    "insuranceHint": "Wpisz kwotę z kalkulatora ubezpieczyciela, aby raport pokazał pełny koszt pierwszego roku."
   },
   "layout": {
     "topbar": "Kalkulator kosztów importu z USA, Kanady, Japonii, ZEA i UK — policzymy i sprowadzimy auto do dowolnego kraju UE",
@@ -430,7 +508,7 @@
     "map": {
       "eyebrow": "Trasy importu",
       "title": "Z portów na całym świecie prosto do Unii Europejskiej",
-      "lead": "Znamy porty eksportowe, typowe trasy przez Panamę i Suez oraz czas rejsu do portów odprawy w UE. Najedź na kraj, aby zobaczyć jego trasy.",
+      "lead": "Porty eksportowe w USA, Kanadzie, Japonii, ZEA i Wielkiej Brytanii oraz trasy przez Panamę, Suez i Gibraltar do portów odprawy w UE.",
       "aria": "Mapa tras morskich z USA, Kanady, Japonii, ZEA i Wielkiej Brytanii do portów w Unii Europejskiej",
       "eu": "Unia Europejska",
       "legendEu": "Kraje UE (rejestracja)",
@@ -588,7 +666,7 @@
   },
   "calc": {
     "title": "Kalkulator kosztów importu auta",
-    "lead": "Trzy kroki, wynik na żywo. Zmieniaj parametry i obserwuj, jak zmienia się koszt „pod dom”.",
+    "lead": "Sześć kroków: skąd, pojazd, stan, dokąd, po imporcie i raport. Wynik pokazujemy na końcu – w trzech scenariuszach.",
     "currency": "Waluta wyniku",
     "progress": "Postęp"
   },
@@ -633,5 +711,141 @@
       "title": "Twoje prawa",
       "text": "Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia, sprzeciwu i cofnięcia zgody w dowolnym momencie, a także skargi do Prezesa UODO. Napisz do nas: {{email}}."
     }
+  },
+  "delivery": {
+    "PORT_PICKUP": "Odbiór w porcie",
+    "CAR_CARRIER": "Autotransporter",
+    "TOW_TRUCK": "Laweta",
+    "SELF_DRIVE": "Na tablicach tymczasowych"
+  },
+  "scenario": {
+    "0": "Optymistyczny",
+    "1": "Średni",
+    "2": "Pesymistyczny"
+  },
+  "scenarioHint": {
+    "0": "Najniższe stawki, korzystny kurs, nic nie idzie nie tak",
+    "1": "Typowe stawki + ryzyka ważone prawdopodobieństwem",
+    "2": "Najwyższe stawki, słabszy kurs, ryzyka się materializują"
+  },
+  "timeline": {
+    "INLAND": "Odbiór z placu i transport do portu",
+    "OCEAN": "Rejs (z oczekiwaniem na statek)",
+    "CLEARANCE": "Rozładunek i odprawa celna",
+    "DELIVERY": "Transport pod dom",
+    "REGISTRATION": "Przygotowanie i rejestracja"
+  },
+  "plan": {
+    "deadline": {
+      "beforeRelease": "Przed wydaniem auta z portu",
+      "14days": "14 dni od przywozu do Polski",
+      "beforeInspection": "Przed badaniem technicznym",
+      "beforeRegistration": "Przed rejestracją",
+      "pl30days": "30 dni od sprowadzenia (kara do 1000 zł)",
+      "fromRegistration": "Od dnia rejestracji / tablic tymczasowych",
+      "national": "Według przepisów kraju rejestracji",
+      "none": "Bez terminu ustawowego"
+    },
+    "step": {
+      "clearance": {
+        "title": "Odprawa celna w porcie",
+        "text": "Agencja celna składa zgłoszenie (SAD), opłacasz cło i VAT importowy; potrzebne: faktura, konosament, Title/certyfikat eksportowy, EORI."
+      },
+      "pl": {
+        "excise": {
+          "title": "Deklaracja i zapłata akcyzy (AKC-U/S)",
+          "text": "Składasz deklarację w urzędzie skarbowym lub przez e-Deklaracje i płacisz akcyzę; potwierdzenie jest potrzebne do rejestracji."
+        },
+        "exciseExemption": {
+          "title": "Zgłoszenie zwolnienia z akcyzy (auto elektryczne)",
+          "text": "Auto elektryczne jest zwolnione, ale deklarację AKC-U/S trzeba złożyć."
+        },
+        "inspection": {
+          "title": "Badanie techniczne na stacji kontroli",
+          "text": "Pierwsze badanie pojazdu sprowadzonego z identyfikacją VIN; zaświadczenie trafia do systemu CEP."
+        },
+        "recycling": {
+          "title": "Opłata recyklingowa 500 zł",
+          "text": "Wpłata na rachunek NFOŚiGW przy pierwszej rejestracji auta sprowadzonego z zagranicy."
+        },
+        "registration": {
+          "title": "Rejestracja w wydziale komunikacji",
+          "text": "Wniosek, dowód własności z tłumaczeniem, akcyza, badanie, opłata recyklingowa, dowód zapłaty VAT/cła; otrzymujesz pozwolenie czasowe i tablice."
+        }
+      },
+      "translations": {
+        "title": "Tłumaczenia przysięgłe",
+        "text": "Title / dowód zagraniczny, faktura i dokument eksportowy – u tłumacza przysięgłego."
+      },
+      "lighting": {
+        "title": "Dostosowanie oświetlenia do norm UE",
+        "text": "Pomarańczowe kierunkowskazy z tyłu, tylne światło przeciwmgielne, regulacja reflektorów – bez tego auto nie przejdzie badania."
+      },
+      "insurance": {
+        "title": "Ubezpieczenie OC",
+        "text": "Obowiązkowe od dnia rejestracji; AC warto dobrać po wycenie rzeczoznawcy."
+      },
+      "de": {
+        "approval": {
+          "title": "Einzelabnahme (§21 StVZO)",
+          "text": "Pełne badanie rzeczoznawcy (TÜV/DEKRA) dla aut spoza UE; wymagane do Zulassung."
+        },
+        "registration": {
+          "title": "Zulassung",
+          "text": "eVB z ubezpieczalni, dowód odprawy celnej, Gutachten, SEPA na Kfz-Steuer."
+        }
+      },
+      "generic": {
+        "inspection": {
+          "title": "Badanie techniczne / homologacja jednostkowa",
+          "text": "Zakres zależy od kraju – auta spoza UE często wymagają dopuszczenia jednostkowego."
+        },
+        "registrationTax": {
+          "title": "Krajowy podatek rejestracyjny",
+          "text": "Np. BPM w Holandii, NoVA w Austrii, malus we Francji – sprawdź przed zakupem."
+        },
+        "registration": {
+          "title": "Rejestracja pojazdu",
+          "text": "Złóż wniosek z dowodem odprawy celnej, badaniem i ubezpieczeniem."
+        }
+      },
+      "evCharging": {
+        "title": "Gniazdo ładowania",
+        "text": "Auta z USA mają NACS/CCS1 – potrzebny adapter lub wymiana gniazda na CCS2/Type 2."
+      }
+    }
+  },
+  "deliveryHint": {
+    "CAR_CARRIER": "Najtańszy dla aut jezdnych",
+    "TOW_TRUCK": "Pojedyncza laweta, także dla niejezdnych",
+    "SELF_DRIVE": "Tablice tymczasowe + OC; tylko auta jezdne",
+    "PORT_PICKUP": "Organizujesz transport sam"
+  },
+  "serviceHint": {
+    "SWORN_TRANSLATION": "Title, faktura i dokument eksportowy",
+    "US_LIGHTING_CONVERSION": "Kierunkowskazy i światła zgodne z UE",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Auto z kierownicą po prawej",
+    "REAR_FOG_LIGHT": "Wymagane przy badaniu technicznym",
+    "SPEEDOMETER_KMH": "Licznik w milach – wygoda i wartość przy sprzedaży",
+    "SERVICE_INSPECTION": "Olej, filtry, płyny, hamulce po długim transporcie",
+    "GEOMETRY_ALIGNMENT": "Zalecane po naprawie zawieszenia",
+    "DETAILING": "Mycie, pranie wnętrza, korekta lakieru",
+    "EXPERT_VALUATION": "Przydatna do AC i przy sprzedaży"
+  },
+  "riskInfo": {
+    "RISK_PORT_STORAGE": "Terminal liczy postój za każdy dzień po okresie bezpłatnym, np. przy opóźnieniu dokumentów lub transportu.",
+    "RISK_CUSTOMS_INSPECTION": "Losowa lub celowana kontrola: rozładunek kontenera, prześwietlenie, dodatkowe opłaty terminalu.",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Gdy cena wydaje się zaniżona, urząd może przyjąć wyższą wartość – rośnie cło i VAT.",
+    "RISK_VESSEL_ROLLOVER": "Statek jest przepełniony i kontener płynie następnym – dochodzi postój w porcie wyjścia.",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Uszkodzenie w transporcie pokrywa polisa, ale z udziałem własnym.",
+    "RISK_HIDDEN_DAMAGE": "Usterki, których nie widać na zdjęciach z aukcji – im gorszy stan, tym wyższe ryzyko.",
+    "RISK_TITLE_DELAY": "Aukcja wysyła Title z opóźnieniem – auto czeka na placu lub w porcie.",
+    "RISK_EXPORT_DOCS_DELAY": "Wyrejestrowanie i dokumenty eksportowe trwają dłużej niż zwykle."
+  },
+  "docStage": {
+    "PURCHASE": "Zakup",
+    "SHIPPING": "Transport",
+    "CUSTOMS": "Odprawa celna",
+    "REGISTRATION": "Rejestracja"
   }
 }
