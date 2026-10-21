@@ -12,49 +12,41 @@ import { Icon } from '../../shared/icon/icon';
   selector: 'app-contact-section',
   imports: [ReactiveFormsModule, RouterLink, TranslatePipe, Icon],
   template: `
-    <section id="contact" class="site pt-20">
-      <div class="card grid gap-10 p-7 sm:p-10 lg:grid-cols-[0.9fr_1.1fr]">
+    <section id="contact" class="site pb-4 pt-6">
+      <div class="theme-dark grid gap-12 rounded-[4px] bg-panel p-8 text-fg sm:p-[30px] lg:grid-cols-[1fr_1fr] lg:p-[50px]">
         <div>
-          <p class="eyebrow">{{ 'home.contact.eyebrow' | translate }}</p>
-          <h2 class="h-section mt-4"><span class="text-brand-text">{{ 'home.contact.title1' | translate }}</span> {{ 'home.contact.title2' | translate }}</h2>
-          <p class="mt-5 font-semibold">{{ 'home.contact.lead' | translate }}</p>
-          <ul class="mt-6 space-y-3 text-sm text-muted">
+          <p class="eyebrow !text-[18px]">{{ 'home.contact.eyebrow' | translate }}</p>
+          <h2 class="h-section mt-6"><span class="text-brand">{{ 'home.contact.title1' | translate }}</span> {{ 'home.contact.title2' | translate }}</h2>
+          <p class="mt-8 font-bold">{{ 'home.contact.lead' | translate }}</p>
+          <ul class="mt-6 space-y-3 text-sm text-fg/80">
             @for (n of [1, 2, 3]; track n) {
-              <li class="flex gap-3"><app-icon name="check-circle" [size]="18" class="text-success" />{{ 'home.contact.b' + n | translate }}</li>
+              <li class="flex gap-3"><app-icon name="check" [size]="18" class="text-brand" />{{ 'home.contact.b' + n | translate }}</li>
             }
           </ul>
         </div>
 
         @if (sent()) {
-          <div class="flex flex-col items-center justify-center text-center" animate.enter="reveal-enter">
-            <span class="grid size-14 place-items-center rounded-full bg-success text-white"><app-icon name="check" [size]="28" [stroke]="2.5" /></span>
-            <h3 class="mt-5 text-xl font-extrabold">{{ 'lead.thanks' | translate }}</h3>
-            <p class="mt-2 text-sm text-muted">{{ 'lead.thanksHint' | translate }}</p>
+          <div class="flex flex-col items-start justify-center" animate.enter="reveal-enter">
+            <span class="grid size-14 place-items-center rounded-full bg-brand text-brand-ink"><app-icon name="check" [size]="28" [stroke]="2.5" /></span>
+            <h3 class="mt-6 text-2xl font-extrabold">{{ 'lead.thanks' | translate }}</h3>
+            <p class="mt-2 text-fg/80">{{ 'lead.thanksHint' | translate }}</p>
           </div>
         } @else {
-          <form class="grid gap-x-6 gap-y-5 sm:grid-cols-2" [formGroup]="form" (ngSubmit)="submit()">
-            <div><label class="label" for="c-name">{{ 'lead.name' | translate }}</label><input id="c-name" class="input" formControlName="name" autocomplete="name" /></div>
-            <div><label class="label" for="c-phone">{{ 'lead.phone' | translate }}</label><input id="c-phone" type="tel" class="input" formControlName="phone" autocomplete="tel" /></div>
-            <div><label class="label" for="c-email">{{ 'lead.email' | translate }}</label><input id="c-email" type="email" class="input" formControlName="email" autocomplete="email" /></div>
-            <div>
-              <label class="label" for="c-origin">{{ 'home.contact.origin' | translate }}</label>
-              <select id="c-origin" class="input" formControlName="originCountry">
-                @for (o of origins; track o) { <option [value]="o">{{ 'origin.' + o | translate }}</option> }
-              </select>
-            </div>
-            <div class="sm:col-span-2">
-              <label class="label" for="c-msg">{{ 'home.contact.message' | translate }}</label>
-              <textarea id="c-msg" class="input min-h-28" formControlName="message" [placeholder]="'home.contact.placeholder' | translate"></textarea>
-            </div>
+          <form class="grid gap-x-8 gap-y-6 sm:grid-cols-2" [formGroup]="form" (ngSubmit)="submit()">
+            <input class="input-line" formControlName="name" autocomplete="name" [placeholder]="'home.contact.name' | translate" [attr.aria-label]="'home.contact.name' | translate" />
+            <input class="input-line" type="tel" formControlName="phone" autocomplete="tel" [placeholder]="'home.contact.phone' | translate" [attr.aria-label]="'home.contact.phone' | translate" />
+            <input class="input-line" type="email" formControlName="email" autocomplete="email" [placeholder]="'home.contact.email' | translate" [attr.aria-label]="'home.contact.email' | translate" />
+            <select class="input-line cursor-pointer" formControlName="originCountry" [attr.aria-label]="'home.contact.origin' | translate">
+              @for (o of origins; track o) { <option [value]="o" class="bg-panel">{{ 'origin.' + o | translate }}</option> }
+            </select>
+            <input class="input-line sm:col-span-2" formControlName="message" [placeholder]="'home.contact.question' | translate" [attr.aria-label]="'home.contact.question' | translate" />
             <input class="hidden" formControlName="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
-            <label class="flex cursor-pointer items-start gap-2.5 text-xs leading-relaxed text-muted sm:col-span-2">
+            <label class="mt-2 flex cursor-pointer items-start gap-3 text-[12px] leading-snug text-fg/80 sm:col-span-2">
               <input type="checkbox" class="checkbox" formControlName="consentDataTransfer" />
-              <span>{{ 'lead.consentTransfer' | translate }} <a [routerLink]="privacy()" class="text-accent-text underline">{{ 'footer.privacy' | translate }}</a></span>
+              <span>{{ 'lead.consentTransfer' | translate }} <a [routerLink]="privacy()" class="underline underline-offset-2">{{ 'footer.privacy' | translate }}</a></span>
             </label>
             @if (error()) { <p class="text-sm text-danger sm:col-span-2">{{ 'home.contact.error' | translate }}</p> }
-            <button type="submit" class="btn btn-primary sm:col-span-2" [disabled]="form.invalid || busy()">
-              {{ 'home.contact.submit' | translate }} <app-icon name="arrow-right" [size]="18" />
-            </button>
+            <button type="submit" class="btn btn-primary w-full font-semibold sm:col-span-2" [disabled]="form.invalid || busy()">{{ 'home.contact.submit' | translate }}</button>
           </form>
         }
       </div>

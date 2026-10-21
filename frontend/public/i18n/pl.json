@@ -288,7 +288,7 @@
     "advanced": "Opcje zaawansowane"
   },
   "layout": {
-    "topbar": "Kalkulator kosztów importu aut z USA, Kanady, Japonii, ZEA i Wielkiej Brytanii — kursy NBP aktualizowane codziennie",
+    "topbar": "Kalkulator kosztów importu z USA, Kanady, Japonii, ZEA i UK — policzymy i sprowadzimy auto do dowolnego kraju UE",
     "forBusiness": "Dla firm importowych",
     "home": "Strona główna",
     "nav": "Nawigacja główna",
@@ -302,7 +302,10 @@
     "close": "Zamknij",
     "breadcrumb": "Ścieżka nawigacji",
     "themeLight": "Włącz jasny motyw",
-    "themeDark": "Włącz ciemny motyw"
+    "themeDark": "Włącz ciemny motyw",
+    "consultation": "Umów bezpłatną konsultację",
+    "callback": "Zamów kontakt",
+    "services": "Usługi"
   },
   "footer": {
     "about": "Niezależny kalkulator kosztów importu samochodów spoza UE: opłaty aukcyjne, fracht, cło, akcyza i VAT w jednym miejscu.",
@@ -330,9 +333,9 @@
   "home": {
     "hero": {
       "eyebrow": "Import samochodów spoza UE",
-      "title1": "Sprowadź samochód",
-      "title2": "z USA, Kanady, Japonii, Dubaju i Wielkiej Brytanii",
-      "lead": "Policz pełny koszt przed licytacją — aukcja, transport, cło, akcyza i VAT — albo zleć cały import zweryfikowanemu partnerowi. Otrzymujesz auto gotowe do rejestracji.",
+      "title1": "Sprowadzamy samochody",
+      "title2": "z USA, Kanady, Japonii, ZEA i Wielkiej Brytanii",
+      "lead": "Liczymy pełny koszt przed licytacją, a zweryfikowany partner bierze na siebie zakup, transport, odprawę i formalności. Otrzymujesz auto gotowe do rejestracji.",
       "cta": "Oblicz koszt importu",
       "secondary": "Zamów auto pod klucz",
       "visual": "Samochód sportowy w neonowym świetle"
@@ -355,7 +358,8 @@
       "s4": {
         "title": "Pobierz raport lub zleć import",
         "text": "Wyliczenie co do grosza w PDF albo kontakt ze zweryfikowaną firmą importową."
-      }
+      },
+      "step": "Krok"
     },
     "costs": {
       "eyebrow": "Z czego składa się cena",
@@ -407,8 +411,8 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu",
-        "text": "Kalkulator i sieć partnerów importowych"
+        "title": "CarImport.eu —",
+        "text": "import aut do UE"
       },
       "docs": {
         "title": "Dokumenty",
@@ -442,7 +446,8 @@
       "calc": {
         "tag": "Kalkulator",
         "title": "Koszt importu na żywo",
-        "text": "Aukcja, transport, cło, akcyza i VAT — wynik zmienia się z każdym parametrem."
+        "text": "Aukcja, transport, cło, akcyza i VAT — wynik zmienia się z każdym parametrem.",
+        "alt": "Zrzut ekranu kalkulatora kosztów importu"
       },
       "report": {
         "tag": "Raport",
@@ -496,10 +501,10 @@
       }
     },
     "contact": {
-      "eyebrow": "Gotowy sprowadzić auto?",
+      "eyebrow": "Gotowi sprowadzić Twoje auto",
       "title1": "Opisz,",
       "title2": "jakiego auta szukasz",
-      "lead": "Partner przygotuje ofertę z terminem i ceną pod klucz.",
+      "lead": "Policzymy terminy i cenę pod klucz.",
       "b1": "Odpowiedź w ciągu 1 dnia roboczego",
       "b2": "Tylko zweryfikowane firmy importowe",
       "b3": "Bez zobowiązań i ukrytych kosztów",
@@ -507,7 +512,11 @@
       "message": "Jakie auto Cię interesuje",
       "placeholder": "Marka, model, rocznik, budżet albo link do aukcji",
       "submit": "Wyślij zapytanie",
-      "error": "Nie udało się wysłać. Spróbuj ponownie za chwilę."
+      "error": "Nie udało się wysłać. Spróbuj ponownie za chwilę.",
+      "name": "Twoje imię",
+      "phone": "Numer telefonu",
+      "email": "Adres e-mail",
+      "question": "Jakie auto Cię interesuje? Marka, model, budżet lub link do aukcji"
     }
   },
   "pricing": {

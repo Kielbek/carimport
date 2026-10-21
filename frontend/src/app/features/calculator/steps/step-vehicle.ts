@@ -20,7 +20,7 @@ const CC_MAX = 7000;
         @for (c of categories; track c) {
           <button type="button" class="choice items-center !py-5 text-center" [class.choice--active]="s().vehicleCategory === c"
                   (click)="store.patch({ vehicleCategory: c })">
-            <app-icon [name]="c" [size]="30" [stroke]="1.5" class="text-accent-text" />
+            <app-icon [name]="c" [size]="30" [stroke]="1.5" class="text-brand-text" />
             <span class="mt-1 text-sm font-semibold">{{ 'category.' + c | translate }}</span>
           </button>
         }
@@ -33,7 +33,7 @@ const CC_MAX = 7000;
         @for (f of fuels; track f) {
           <button type="button" class="choice items-center !gap-2 !px-2 !py-3 text-center" [class.choice--active]="s().fuelType === f"
                   (click)="selectFuel(f)">
-            <app-icon [name]="f" [size]="22" class="text-accent-text" />
+            <app-icon [name]="f" [size]="22" class="text-brand-text" />
             <span class="text-[12px] font-semibold leading-tight">{{ 'fuel.' + f | translate }}</span>
           </button>
         }

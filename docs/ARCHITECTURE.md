@@ -168,7 +168,7 @@ frontend/src/app/
 ├── shared/                       Icon (Lucide jako inline SVG), Flag (flag-icons SVG), CountUp
 └── features/
     ├── home/                     HomePage (hero, mapa tras, usługi, jak to działa, liczby, koszty + porty, cennik,
-    │                             B2B, FAQ, formularz), WorldMap (+ world-map.data.ts), CarVisual, ContactSection
+    │                             B2B, FAQ, formularz), WorldMap (+ world-map.data.ts), ContactSection
     ├── calculator/               store + strona + 3 kroki + panel wyniku (Chart.js)
     ├── paywall/ leads/ affiliates/ report/ legal/
 ```
@@ -194,14 +194,16 @@ frontend/src/app/
   motywu. Trasy morskie (przez Panamę, Suez, Gibraltar, Skagerrak) i porty są w kodzie i trafiają do prerenderu;
   animacja przepływu i „statki” (`animateMotion`) mają prędkość proporcjonalną do czasu rejsu. Najechanie na kraj
   podświetla jego trasy. Dane generuje `node tools/generate-world-map.mjs` (zmiana portów lub tras = ponowne uruchomienie).
-* **Hero**: zdjęcie auta ustawia się w `SITE.heroImage` (`core/site.config.ts`). Bez zdjęcia wyświetla się ilustracja
-  SVG (`CarVisual`) w kolorach marki. Hero i sekcja z liczbami są zawsze ciemne (klasa `theme-dark`
-  lokalnie nadpisuje tokeny).
+* **Hero** według szablonu marki: zdjęcie auta na całą szerokość z gradientem od lewej (`SITE.heroImage`,
+  `.hero-photo`), neonowy okrąg i belka. Bez zdjęcia hero jest typograficzne. Hero i sekcja kontaktu są zawsze
+  ciemne (klasa `theme-dark` lokalnie nadpisuje tokeny). Duży kafel usług pokazuje prawdziwy zrzut kalkulatora
+  (`public/images/calculator-preview.webp`).
 
 ### 3.0.1 Design system
 
-* Styl według szablonu marki: ciemne tło, Inter, cienkie linie, ostre narożniki (4–6 px), neonowy okrąg i belka
-  w hero – w kolorystyce **żółty (`brand`, akcje i wyróżnienia) + niebieski (`accent`, linki, zaznaczenia, focus)**.
+* Styl 1:1 z szablonu marki (autoimport.pro): tło #101011, płaskie panele #1b1b1d bez obramowań, font Montserrat,
+  przyciski z cienką ramką, okrągłe strzałki, pola formularza z podkreśleniem, FAQ w wąskiej kolumnie. Jeden akcent –
+  **żółty (`brand`)** zamiast fioletu; niebieski (`accent`) tylko na mapie (UE) i w wykresie.
 * Kolory to **tokeny semantyczne** (`bg`, `panel`, `line`, `fg`, `muted`, `brand`, `accent`, `ink`) zdefiniowane jako
   zmienne CSS i podpięte do Tailwind 4 (`@theme inline`). Motyw jasny/ciemny = jeden atrybut `data-theme`, ustawiany
   skryptem w `index.html` przed pierwszym renderem (bez mignięcia); domyślnie według ustawień systemu.

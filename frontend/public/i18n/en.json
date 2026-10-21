@@ -288,7 +288,7 @@
     "advanced": "Advanced options"
   },
   "layout": {
-    "topbar": "Import cost calculator for cars from the USA, Canada, Japan, UAE and the UK — NBP exchange rates updated daily",
+    "topbar": "Import cost calculator for the USA, Canada, Japan, UAE and UK — we price and ship your car to any EU country",
     "forBusiness": "For import companies",
     "home": "Home",
     "nav": "Main navigation",
@@ -302,7 +302,10 @@
     "close": "Close",
     "breadcrumb": "Breadcrumb",
     "themeLight": "Switch to light theme",
-    "themeDark": "Switch to dark theme"
+    "themeDark": "Switch to dark theme",
+    "consultation": "Book a free consultation",
+    "callback": "Request a call back",
+    "services": "Services"
   },
   "footer": {
     "about": "Independent calculator for importing cars from outside the EU: auction fees, freight, duty, excise and VAT in one place.",
@@ -330,9 +333,9 @@
   "home": {
     "hero": {
       "eyebrow": "Importing cars into the EU",
-      "title1": "Import your car",
-      "title2": "from the USA, Canada, Japan, Dubai or the UK",
-      "lead": "Work out the full cost before you bid — auction, shipping, duty, excise and VAT — or hand the whole import to a verified partner. You get a car ready for registration.",
+      "title1": "We import cars",
+      "title2": "from the USA, Canada, Japan, the UAE and the UK",
+      "lead": "We price the full cost before you bid, and a verified partner handles purchase, shipping, customs and paperwork. You get a car ready for registration.",
       "cta": "Calculate import cost",
       "secondary": "Order a turnkey import",
       "visual": "Sports car in neon light"
@@ -355,7 +358,8 @@
       "s4": {
         "title": "Get the report or hand it over",
         "text": "An exact PDF breakdown, or contact with a verified import company."
-      }
+      },
+      "step": "Step"
     },
     "costs": {
       "eyebrow": "What the price is made of",
@@ -407,8 +411,8 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu",
-        "text": "Calculator and import partner network"
+        "title": "CarImport.eu —",
+        "text": "car imports to the EU"
       },
       "docs": {
         "title": "Documents",
@@ -442,7 +446,8 @@
       "calc": {
         "tag": "Calculator",
         "title": "Live import cost",
-        "text": "Auction, shipping, duty, excise and VAT — the result updates with every input."
+        "text": "Auction, shipping, duty, excise and VAT — the result updates with every input.",
+        "alt": "Screenshot of the import cost calculator"
       },
       "report": {
         "tag": "Report",
@@ -496,10 +501,10 @@
       }
     },
     "contact": {
-      "eyebrow": "Ready to import your car?",
+      "eyebrow": "Ready to bring your car over",
       "title1": "Tell us",
       "title2": "which car you want",
-      "lead": "A partner will prepare an offer with timing and a turnkey price.",
+      "lead": "We will work out timing and a turnkey price.",
       "b1": "Reply within 1 business day",
       "b2": "Verified import companies only",
       "b3": "No obligation, no hidden fees",
@@ -507,7 +512,11 @@
       "message": "Which car are you after",
       "placeholder": "Make, model, year, budget or an auction link",
       "submit": "Send request",
-      "error": "Could not send. Please try again shortly."
+      "error": "Could not send. Please try again shortly.",
+      "name": "Your name",
+      "phone": "Phone number",
+      "email": "E-mail address",
+      "question": "Which car? Make, model, budget or an auction link"
     }
   },
   "pricing": {

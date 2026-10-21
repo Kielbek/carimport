@@ -25,7 +25,7 @@ const ICONS: Record<AffiliateOffer['kind'], IconName> = { CURRENCY_EXCHANGE: 'ex
             <a class="card card-hover group flex flex-col p-5" rel="sponsored noopener" target="_blank"
                [href]="o.href + '?locale=' + lang.current() + '&subId=' + (store.frozenQuote()?.quoteId ?? '')">
               <span class="flex items-center justify-between">
-                <app-icon [name]="icons[o.kind]" [size]="24" class="text-accent-text" />
+                <app-icon [name]="icons[o.kind]" [size]="24" class="text-brand-text" />
                 <span class="text-[10px] uppercase tracking-wider text-muted">{{ 'affiliate.sponsored' | translate }}</span>
               </span>
               <span class="mt-4 font-semibold">{{ 'affiliate.' + o.kind | translate }}</span>
