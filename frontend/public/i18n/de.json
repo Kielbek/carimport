@@ -329,36 +329,13 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Fahrzeugimport-Rechner",
-      "title1": "Was kostet ein Auto",
-      "title2": "aus USA, Japan oder Dubai wirklich?",
-      "lead": "Berechnen Sie die Gesamtkosten vor dem Gebot: Copart-, IAAI- und USS-Gebühren, Transport, Fracht, Zoll, Verbrauchsteuer und USt für Ihren EU-Hafen. Live, ohne Anmeldung.",
+      "eyebrow": "Fahrzeugimport in die EU",
+      "title1": "Ihr Auto importieren",
+      "title2": "aus USA, Kanada, Japan, Dubai oder UK",
+      "lead": "Berechnen Sie die Gesamtkosten vor dem Gebot — Auktion, Transport, Zoll, Verbrauchsteuer und USt — oder übergeben Sie den Import einem geprüften Partner. Sie erhalten ein zulassungsfertiges Auto.",
       "cta": "Importkosten berechnen",
-      "secondary": "So rechnen wir"
-    },
-    "facts": {
-      "origins": {
-        "value": "5",
-        "label": "Herkunftsländer"
-      },
-      "eu": {
-        "value": "27",
-        "label": "EU-Zulassungsländer"
-      },
-      "fx": {
-        "value": "NBP",
-        "label": "tägliche Wechselkurse"
-      },
-      "time": {
-        "value": "60 s",
-        "label": "bis zum Ergebnis"
-      }
-    },
-    "example": {
-      "title": "Beispielrechnung",
-      "badge": "Beispiel",
-      "caption": "Copart, 12.000 USD, Benzin 2,5 l, Verzollung Bremerhaven, Zulassung in Polen",
-      "route": "USA → Bremerhaven → PL"
+      "secondary": "Import schlüsselfertig beauftragen",
+      "visual": "Sportwagen im Neonlicht"
     },
     "how": {
       "eyebrow": "So funktioniert es",
@@ -379,16 +356,6 @@
         "title": "Bericht holen oder übergeben",
         "text": "Exakte PDF-Aufstellung oder Kontakt zu einem geprüften Importeur."
       }
-    },
-    "countries": {
-      "eyebrow": "Herkunft",
-      "title": "Woher Sie importieren",
-      "lead": "Für jedes Land kennen wir Gebührenpläne, Exporthäfen und typische Seetransitzeiten.",
-      "auctions": "Auktionen",
-      "sea": "Seeweg",
-      "days": "Tage",
-      "currency": "Währung",
-      "cta": "Import berechnen"
     },
     "costs": {
       "eyebrow": "Woraus sich der Preis zusammensetzt",
@@ -437,6 +404,110 @@
     "final": {
       "title": "Berechnen Sie Ihren Import in einer Minute",
       "text": "Ohne Anmeldung. Sofortiges Ergebnis, PDF-Bericht wenn Sie bereit sind."
+    },
+    "strip": {
+      "brand": {
+        "title": "CarImport.eu",
+        "text": "Rechner und Importpartner-Netzwerk"
+      },
+      "docs": {
+        "title": "Dokumente",
+        "text": "Komplette Liste für Zoll und Zulassung"
+      },
+      "routes": {
+        "title": "8 Seerouten",
+        "text": "Nach Bremerhaven, Rotterdam, Antwerpen, Gdynia"
+      },
+      "fx": {
+        "title": "NBP-Kurse",
+        "text": "An jedem Werktag aktualisiert"
+      }
+    },
+    "map": {
+      "eyebrow": "Importrouten",
+      "title": "Aus Häfen weltweit direkt in die EU",
+      "lead": "Wir kennen Exporthäfen, die Routen über Panama und Suez und die Fahrtzeit zu den EU-Häfen. Fahren Sie über ein Land, um seine Routen zu sehen.",
+      "aria": "Karte der Seerouten aus USA, Kanada, Japan, VAE und UK zu EU-Häfen",
+      "eu": "Europäische Union",
+      "legendEu": "EU-Länder (Zulassung)",
+      "legendOrigin": "Kaufländer",
+      "legendRoute": "Seeroute",
+      "scroll": "Karte seitlich wischen",
+      "days": "Tage"
+    },
+    "services": {
+      "eyebrow": "Leistungen",
+      "title": "Was wir für Sie tun",
+      "lead": "Der ganze Weg — von der Kalkulation bis zum zulassungsfertigen Auto.",
+      "calc": {
+        "tag": "Rechner",
+        "title": "Importkosten live",
+        "text": "Auktion, Transport, Zoll, Verbrauchsteuer und USt — live mit jeder Eingabe."
+      },
+      "report": {
+        "tag": "Bericht",
+        "title": "Exakte Aufstellung",
+        "text": "Persönliches PDF mit allen Sätzen und Grundlagen."
+      },
+      "fx": {
+        "tag": "Währung",
+        "title": "Günstiger Geldwechsel",
+        "text": "In USD, JPY oder AED ohne Bankmarge zahlen."
+      },
+      "vin": {
+        "tag": "Historie",
+        "title": "VIN-Prüfung",
+        "text": "Schäden, Kilometer, Diebstahl — vor dem Gebot."
+      },
+      "finance": {
+        "tag": "Finanzen",
+        "title": "Leasing und Kredit",
+        "text": "Kauf, Transport und Steuern finanzieren."
+      },
+      "docs": {
+        "tag": "Dokumente",
+        "title": "Verzollung und Zulassung",
+        "text": "Dokumentenliste für Ihre Route und Ihr Land."
+      },
+      "partner": {
+        "tag": "Schlüsselfertig",
+        "title": "Import mit Partner",
+        "text": "Ein geprüfter Partner kauft, transportiert und verzollt für Sie."
+      }
+    },
+    "numbers": {
+      "eyebrow": "CarImport.eu in Zahlen",
+      "title": "Die Zahlen hinter jeder Kalkulation",
+      "n1": {
+        "value": "5",
+        "label": "Herkunftsländer: USA, Kanada, Japan, VAE und UK"
+      },
+      "n2": {
+        "value": "27",
+        "label": "EU-Länder für die Zulassung"
+      },
+      "n3": {
+        "value": "5",
+        "label": "Abfertigungshäfen mit USt-Vergleich"
+      },
+      "n4": {
+        "value": "4",
+        "label": "Sprachen: Polnisch, Englisch, Deutsch, Ukrainisch"
+      }
+    },
+    "contact": {
+      "eyebrow": "Bereit für den Import?",
+      "title1": "Beschreiben Sie,",
+      "title2": "welches Auto Sie suchen",
+      "lead": "Ein Partner erstellt ein Angebot mit Termin und Komplettpreis.",
+      "b1": "Antwort innerhalb eines Werktags",
+      "b2": "Nur geprüfte Importunternehmen",
+      "b3": "Unverbindlich, ohne versteckte Kosten",
+      "origin": "Woher importieren",
+      "message": "Welches Auto suchen Sie",
+      "placeholder": "Marke, Modell, Baujahr, Budget oder Auktionslink",
+      "submit": "Anfrage senden",
+      "error": "Senden fehlgeschlagen. Bitte gleich erneut versuchen."
     }
   },
   "pricing": {
