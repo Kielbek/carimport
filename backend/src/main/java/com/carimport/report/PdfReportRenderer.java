@@ -26,10 +26,13 @@ public class PdfReportRenderer {
 
     private final TemplateEngine templates;
     private final DocumentChecklistService checklist;
+    private final AfterImportPlanService planner;
 
-    public PdfReportRenderer(TemplateEngine templates, DocumentChecklistService checklist) {
+    public PdfReportRenderer(TemplateEngine templates, DocumentChecklistService checklist,
+                             AfterImportPlanService planner) {
         this.templates = templates;
         this.checklist = checklist;
+        this.planner = planner;
     }
 
     public byte[] render(ReportOrder order, Quote quote) {
@@ -42,6 +45,8 @@ public class PdfReportRenderer {
         List<DocumentChecklistService.ChecklistItem> docs =
                 checklist.checklist(quote.getRequest(), quote.getResult().historic());
         ctx.setVariable("documents", docs);
+        ctx.setVariable("table", quote.getRange() != null ? ScenarioTable.of(quote.getRange()) : null);
+        ctx.setVariable("plan", planner.plan(quote.getRequest(), quote.getResult().route().euPortCode().substring(0, 2)));
         String html = templates.process("report", ctx);
 
         try (ByteArrayOutputStream out = new ByteArrayOutputStream()) {

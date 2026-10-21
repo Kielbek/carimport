@@ -4,6 +4,7 @@ import com.carimport.domain.AuctionHouse;
 import com.carimport.domain.BuyerType;
 import com.carimport.domain.CurrencyCode;
 import com.carimport.domain.CustomsProcedure;
+import com.carimport.domain.DeliveryMode;
 import com.carimport.domain.FuelType;
 import com.carimport.domain.OriginCountry;
 import com.carimport.domain.ShippingMethod;
@@ -18,10 +19,21 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.time.Year;
+import java.util.Set;
 
-/** Wizard input. Prices are in the origin country's currency (USD for USA, JPY for Japan, ...). */
+/**
+ * Wizard input. The bid is in the origin country's currency (USD for USA, JPY for Japan, ...); repair and insurance
+ * estimates are in the display currency.
+ *
+ * @param deliveryMode       port to home leg; null = car carrier
+ * @param deliveryDistanceKm road distance from the EU port; null = typical distance for the destination country
+ * @param pricePerKm         own per-km price in the destination's tax currency; null = tariff
+ * @param postImportServices optional after-import services to include (codes of selectable destination fees);
+ *                           null = the recommended defaults
+ */
 public record CalculationRequest(
         @NotNull OriginCountry originCountry,
         @NotNull AuctionHouse auctionHouse,
@@ -40,9 +52,19 @@ public record CalculationRequest(
         @NotNull @Pattern(regexp = "[A-Z]{2}") String destinationCountry,
         @NotNull BuyerType buyerType,
         @NotNull CustomsProcedure customsProcedure,
-        @NotNull CurrencyCode displayCurrency) {
+        @NotNull CurrencyCode displayCurrency,
+        DeliveryMode deliveryMode,
+        @Min(0) @Max(5000) Integer deliveryDistanceKm,
+        @DecimalMin("0") @DecimalMax("100") BigDecimal pricePerKm,
+        @DecimalMin("0") @DecimalMax("10000000") BigDecimal repairEstimate,
+        @DecimalMin("0") @DecimalMax("1000000") BigDecimal insuranceEstimate,
+        @Size(max = 30) Set<@Pattern(regexp = "[A-Z_]{2,48}") String> postImportServices) {
 
     public static final int HISTORIC_MIN_AGE = 30;
+
+    public DeliveryMode effectiveDeliveryMode() {
+        return deliveryMode == null ? DeliveryMode.CAR_CARRIER : deliveryMode;
+    }
 
     public boolean qualifiesAsHistoric(Year now) {
         return historicOriginalCondition

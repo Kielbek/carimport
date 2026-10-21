@@ -82,6 +82,28 @@ public class CalculationEngine {
                         route.ocean().getTransitDays()),
                 byCategory,
                 total,
-                ctx.warnings());
+                ctx.warnings(),
+                timeline(ctx),
+                ctx.deliveryKm());
+    }
+
+    /**
+     * Typical lead times: yard release + towing, sailing (+ up to a week waiting for the vessel/booking), port
+     * clearance, road delivery (~700 km per day of a carrier's route) and registration.
+     */
+    static CalculationResult.Timeline timeline(CalculationContext ctx) {
+        CalculationContext.Route route = ctx.route();
+        int sea = route.ocean().getTransitDays();
+        boolean road = ctx.request().effectiveDeliveryMode().needsRoad();
+        int roadMin = road ? Math.max(1, ctx.deliveryKm() / 700) : 0;
+        List<CalculationResult.Stage> stages = List.of(
+                new CalculationResult.Stage("INLAND", route.inland().getDaysMin(), route.inland().getDaysMax()),
+                new CalculationResult.Stage("OCEAN", sea, sea + 7),
+                new CalculationResult.Stage("CLEARANCE", 2, 6),
+                new CalculationResult.Stage("DELIVERY", roadMin, road ? roadMin + 4 : 1),
+                new CalculationResult.Stage("REGISTRATION", 7, 21));
+        return new CalculationResult.Timeline(stages,
+                stages.stream().mapToInt(CalculationResult.Stage::minDays).sum(),
+                stages.stream().mapToInt(CalculationResult.Stage::maxDays).sum());
     }
 }

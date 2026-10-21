@@ -41,6 +41,13 @@ public class InlandTransportRate {
     @Column(nullable = false, length = 3)
     private CurrencyCode currency;
 
+    /** Pickup-to-port lead time incl. yard release and export paperwork. */
+    @Column(name = "days_min", nullable = false)
+    private int daysMin = 5;
+
+    @Column(name = "days_max", nullable = false)
+    private int daysMax = 14;
+
     protected InlandTransportRate() {
     }
 
@@ -62,4 +69,6 @@ public class InlandTransportRate {
     public BigDecimal getPriceMax() { return priceMax; }
     public BigDecimal getNonRunningSurcharge() { return nonRunningSurcharge; }
     public CurrencyCode getCurrency() { return currency; }
+    public int getDaysMin() { return daysMin; }
+    public int getDaysMax() { return daysMax; }
 }

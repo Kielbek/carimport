@@ -146,6 +146,32 @@ Copart salvage, bid 10 000 USD, NJ → Newark → Gdynia, benzyna 2500 cm³, PL;
 | Rozładunek, agencja, laweta, tłumaczenia, badanie, rejestracja, recykling, przeróbka świateł | | 6 206,50 |
 | **Razem „pod dom”** | | **89 676,90** |
 
+
+### 2.5 Dokładny koszt „pod dom” (wersja szczegółowa)
+
+* **Kierunek i port wyjścia** – użytkownik może wskazać konkretny port eksportowy (`departurePort`); stawki
+  strefowe są uzupełniane krajowymi („*”), więc np. odbiór w New Jersey można wysłać z Savannah.
+* **Dostawa z portu pod dom liczona za km** (`DeliveryStep`, tabela `road_transport_rate`):
+  `koszt = max(minimum, opłata stała + km × stawka/km)`. Tryby: autotransporter, laweta, przejazd na tablicach
+  tymczasowych (paliwo/km + tablice i OC krótkoterminowe jako opłata stała; tylko auta jezdne), odbiór w porcie.
+  Odległość – własna albo typowa dla trasy (`intra_eu_transport_rate.distance_km`); stawka – rynkowa (widełki) albo
+  własna oferta przewoźnika.
+* **Po imporcie** (`DestinationFeesStep`): opłaty urzędowe zawsze (PL: badanie pojazdu sprowadzonego, pozwolenie
+  czasowe, tablice tymczasowe i stałe, dowód, nalepka, opłata recyklingowa), usługi do wyboru z domyślnymi
+  rekomendacjami (tłumaczenia, oświetlenie US, światło przeciwmgielne, licznik km/h, serwis, geometria, detailing,
+  wycena) oraz kwoty użytkownika: naprawa i ubezpieczenie na pierwszy rok.
+* **Ryzyka po drodze** (`RiskStep`, tabela `risk_factor`): postój w porcie, rewizja celna, zakwestionowanie wartości
+  celnej, przesunięcie na kolejny statek, udział własny przy szkodzie, ukryte usterki (zależnie od stanu), opóźnienie
+  Title / dokumentów eksportowych. Każde ma prawdopodobieństwo i widełki (kwota stała, % ceny lub stawka dzienna).
+* **Trzy scenariusze**: optymistyczny (najniższe stawki, kurs −1,5%, ryzyka = 0), średni (środek widełek + ryzyka jako
+  wartość oczekiwana: prawdopodobieństwo × średni koszt), pesymistyczny (najwyższe stawki, kurs +2,5%, szacunki +25%,
+  ryzyka w górnej granicy). Wycena zapisuje wszystkie trzy (`quote.range_json`); raport PDF i strona raportu pokazują
+  każdą pozycję w trzech kolumnach.
+* **Harmonogram** (odbiór z placu, rejs, odprawa, dostawa, rejestracja) i **plan po imporcie** z terminami ustawowymi
+  (`AfterImportPlanService`; PL: akcyza 14 dni, rejestracja 30 dni).
+* Darmowy wynik pokazuje zaokrąglone sumy trzech scenariuszy, strukturę, czas, listę wliczonych pozycji (nazwy) i
+  ryzyka z prawdopodobieństwem; kwoty pozycji są w raporcie płatnym.
+
 ---
 
 ## 3. Frontend (Angular 21: standalone, Signals, control flow, zoneless, SSG)
@@ -153,8 +179,8 @@ Copart salvage, bid 10 000 USD, NJ → Newark → Gdynia, benzyna 2500 cm³, PL;
 ```
 frontend/src/app/
 ├── app.config.ts / app.config.server.ts   zoneless, hydracja z event replay, router (input binding, anchor scrolling)
-├── app.routes.ts                 '' → wykryty język; ':lang' (guard czeka na tłumaczenia) → Shell:
-│                                 home | kalkulator·calculator·rechner·kalkuliator | polityka-prywatnosci… | result | report
+├── app.routes.ts                 '' → wykryty język; ':lang' (guard czeka na tłumaczenia) →
+│                                 kalkulator (pełny ekran, bez nagłówka/stopki) | Shell: home, polityka, report
 ├── app.routes.server.ts          prerender stron publicznych per język; report/result/root renderowane w przeglądarce
 ├── core/
 │   ├── api/                      api.models.ts (lustro DTO z Javy), carimport-api.ts
@@ -189,11 +215,11 @@ frontend/src/app/
 * **Treść pod frazy**: „cło na samochód z USA”, „akcyza na auto”, „Bremerhaven czy Gdynia”, „procedura 4200” – sekcje
   objaśniające i FAQ są w prerenderowanym HTML; FAQ działa na natywnym `<details>` (dostępne, bez JS).
 
-* **Mapa tras importu** (`WorldMap`): kontury państw z Natural Earth (world-atlas, domena publiczna) jako
+* **Mapa tras importu** (`WorldMap`): cały świat, bez podpisów, flag i legendy – tylko UE na niebiesko, porty i
+  animowane trasy. Kontury państw z Natural Earth (world-atlas, domena publiczna) jako
   buforowany sprite `public/map/world.svg` (86 kB, ok. 30 kB po gzip) wstawiany przez `<use>`, więc dziedziczy kolory
   motywu. Trasy morskie (przez Panamę, Suez, Gibraltar, Skagerrak) i porty są w kodzie i trafiają do prerenderu;
-  animacja przepływu i „statki” (`animateMotion`) mają prędkość proporcjonalną do czasu rejsu. Najechanie na kraj
-  podświetla jego trasy. Dane generuje `node tools/generate-world-map.mjs` (zmiana portów lub tras = ponowne uruchomienie).
+  animacja przepływu i „statki” (`animateMotion`) mają prędkość proporcjonalną do czasu rejsu. Dane generuje `node tools/generate-world-map.mjs` (zmiana portów lub tras = ponowne uruchomienie).
 * **Hero** według szablonu marki: zdjęcie auta na całą szerokość z gradientem od lewej (`SITE.heroImage`,
   `.hero-photo`), neonowy okrąg i belka. Bez zdjęcia hero jest typograficzne. Hero i sekcja kontaktu są zawsze
   ciemne (klasa `theme-dark` lokalnie nadpisuje tokeny). Duży kafel usług pokazuje prawdziwy zrzut kalkulatora

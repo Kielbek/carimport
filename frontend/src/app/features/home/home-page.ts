@@ -90,7 +90,7 @@ interface Tile { key: string; icon: IconName; to: 'calculator' | 'contact'; high
         <p class="eyebrow">{{ 'home.map.eyebrow' | translate }}</p>
         <h2 class="h-section mt-5 max-w-3xl">{{ 'home.map.title' | translate }}</h2>
         <p class="mt-4 max-w-2xl text-[16px] text-fg/90">{{ 'home.map.lead' | translate }}</p>
-        <div class="mt-9"><app-world-map /></div>
+        <app-world-map class="mt-10" />
       </div>
     </section>
 

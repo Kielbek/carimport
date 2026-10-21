@@ -1,6 +1,7 @@
 package com.carimport.report;
 
 import com.carimport.calculation.CalculationResult;
+import com.carimport.calculation.QuoteRange;
 import com.carimport.domain.CurrencyCode;
 import com.carimport.payment.AccessTokens;
 import com.carimport.payment.CheckoutService;
@@ -43,7 +44,13 @@ public class ReportOrderController {
     public record OrderStatus(UUID orderId, ReportOrder.Status status, boolean downloadable) {
     }
 
-    public record FullReport(CalculationResult result, List<DocumentChecklistService.ChecklistItem> documents) {
+    /**
+     * @param result    the average scenario (main breakdown)
+     * @param scenarios optimistic / average / pessimistic; null for quotes created before scenarios were stored
+     */
+    public record FullReport(CalculationResult result, QuoteRange scenarios,
+                             List<DocumentChecklistService.ChecklistItem> documents,
+                             List<AfterImportPlanService.PlanStep> plan) {
     }
 
     private final CheckoutService checkout;
@@ -51,14 +58,17 @@ public class ReportOrderController {
     private final QuoteRepository quotes;
     private final ReportStorage storage;
     private final DocumentChecklistService checklist;
+    private final AfterImportPlanService planner;
 
     public ReportOrderController(CheckoutService checkout, ReportOrderRepository orders, QuoteRepository quotes,
-                                 ReportStorage storage, DocumentChecklistService checklist) {
+                                 ReportStorage storage, DocumentChecklistService checklist,
+                                 AfterImportPlanService planner) {
         this.checkout = checkout;
         this.orders = orders;
         this.quotes = quotes;
         this.storage = storage;
         this.checklist = checklist;
+        this.planner = planner;
     }
 
     @PostMapping("/checkout")
@@ -82,7 +92,9 @@ public class ReportOrderController {
             throw new ResponseStatusException(HttpStatus.PAYMENT_REQUIRED);
         }
         var quote = quotes.findById(order.getQuoteId()).orElseThrow();
-        return new FullReport(quote.getResult(), checklist.checklist(quote.getRequest(), quote.getResult().historic()));
+        return new FullReport(quote.getResult(), quote.getRange(),
+                checklist.checklist(quote.getRequest(), quote.getResult().historic()),
+                planner.plan(quote.getRequest(), quote.getResult().route().euPortCode().substring(0, 2)));
     }
 
     @GetMapping("/orders/{id}/pdf")

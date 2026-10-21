@@ -39,6 +39,14 @@ public class DestinationFee {
     @Column(nullable = false)
     private boolean estimate;
 
+    /** Optional after-import service the user can switch on/off; statutory fees are never selectable. */
+    @Column(nullable = false)
+    private boolean selectable;
+
+    /** Whether a selectable service is included when the user has not chosen explicitly. */
+    @Column(name = "default_selected", nullable = false)
+    private boolean defaultSelected;
+
     protected DestinationFee() {
     }
 
@@ -52,6 +60,13 @@ public class DestinationFee {
         this.estimate = estimate;
     }
 
+    public DestinationFee(String destinationCountry, OriginCountry originCountry, String code, BigDecimal amount,
+                          CurrencyCode currency, boolean estimate, boolean selectable, boolean defaultSelected) {
+        this(destinationCountry, originCountry, code, amount, currency, estimate);
+        this.selectable = selectable;
+        this.defaultSelected = defaultSelected;
+    }
+
     public boolean appliesTo(OriginCountry origin) {
         return originCountry == null || originCountry == origin;
     }
@@ -62,4 +77,6 @@ public class DestinationFee {
     public BigDecimal getAmount() { return amount; }
     public CurrencyCode getCurrency() { return currency; }
     public boolean isEstimate() { return estimate; }
+    public boolean isSelectable() { return selectable; }
+    public boolean isDefaultSelected() { return defaultSelected; }
 }

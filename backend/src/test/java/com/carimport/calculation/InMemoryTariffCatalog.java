@@ -2,6 +2,7 @@ package com.carimport.calculation;
 
 import com.carimport.domain.AuctionHouse;
 import com.carimport.domain.CurrencyCode;
+import com.carimport.domain.DeliveryMode;
 import com.carimport.domain.FuelType;
 import com.carimport.domain.OriginCountry;
 import com.carimport.domain.ShippingMethod;
@@ -19,6 +20,8 @@ import com.carimport.reference.ExciseRate;
 import com.carimport.reference.InlandTransportRate;
 import com.carimport.reference.IntraEuTransportRate;
 import com.carimport.reference.OceanFreightRate;
+import com.carimport.reference.RiskFactor;
+import com.carimport.reference.RoadTransportRate;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +41,8 @@ class InMemoryTariffCatalog implements TariffCatalog {
     private final List<ExciseRate> excise = new ArrayList<>();
     private final List<CustomsTariff> tariffs = new ArrayList<>();
     private final List<DestinationFee> destinationFees = new ArrayList<>();
+    private final List<RoadTransportRate> roadRates = new ArrayList<>();
+    private final List<RiskFactor> risks = new ArrayList<>();
 
     InMemoryTariffCatalog() {
         tier(AuctionHouse.COPART, AuctionFeeTier.FeeType.BUYER_FEE, TitleType.SALVAGE, "8000", "10000", "850", "0");
@@ -73,8 +78,20 @@ class InMemoryTariffCatalog implements TariffCatalog {
 
         ports.add(new EuPort("PLGDY", "Gdynia", "PL", bd("1300"), bd("800"), CurrencyCode.PLN, true));
         ports.add(new EuPort("DEBRV", "Bremerhaven", "DE", bd("450"), bd("250"), CurrencyCode.EUR, true));
-        intraEu.add(new IntraEuTransportRate("PLGDY", "PL", bd("800"), bd("1600"), CurrencyCode.PLN));
-        intraEu.add(new IntraEuTransportRate("DEBRV", "PL", bd("450"), bd("650"), CurrencyCode.EUR));
+        intraEu.add(new IntraEuTransportRate("PLGDY", "PL", bd("800"), bd("1600"), CurrencyCode.PLN, 350));
+        intraEu.add(new IntraEuTransportRate("DEBRV", "PL", bd("450"), bd("650"), CurrencyCode.EUR, 850));
+        roadRates.add(new RoadTransportRate("PL", DeliveryMode.CAR_CARRIER, bd("2.60"), bd("3.40"), bd("150"), bd("600"),
+                CurrencyCode.PLN));
+        roadRates.add(new RoadTransportRate("PL", DeliveryMode.TOW_TRUCK, bd("3.50"), bd("4.50"), bd("100"), bd("400"),
+                CurrencyCode.PLN));
+        roadRates.add(new RoadTransportRate("PL", DeliveryMode.SELF_DRIVE, bd("0.60"), bd("0.80"), bd("250"), bd("0"),
+                CurrencyCode.PLN));
+        risks.add(new RiskFactor("PORT_STORAGE", null, null, null, bd("0.30"), RiskFactor.Basis.PER_DAY, bd("20"),
+                bd("30"), 3, 10, CurrencyCode.EUR));
+        risks.add(new RiskFactor("HIDDEN_DAMAGE", null, VehicleCondition.NON_RUNNING, null, bd("0.50"),
+                RiskFactor.Basis.PCT_OF_BID, bd("0.08"), bd("0.25"), null, null, null));
+        risks.add(new RiskFactor("TITLE_DELAY", OriginCountry.USA, null, null, bd("0.10"), RiskFactor.Basis.FIXED,
+                bd("100"), bd("400"), null, null, CurrencyCode.USD));
 
         taxes.add(new EuCountryTaxProfile("PL", CurrencyCode.PLN, bd("0.23"), bd("0.08"), true));
         taxes.add(new EuCountryTaxProfile("DE", CurrencyCode.EUR, bd("0.19"), bd("0.07"), false));
@@ -93,12 +110,15 @@ class InMemoryTariffCatalog implements TariffCatalog {
         tariffs.add(new CustomsTariff(VehicleCategory.PICKUP_TRUCK, false, null, 0, null, "870421", bd("0.22"), "pickup"));
         tariffs.add(new CustomsTariff(null, true, null, 0, null, "970500", bd("0"), "historic"));
 
-        destinationFees.add(new DestinationFee("PL", null, "SWORN_TRANSLATION", bd("350"), CurrencyCode.PLN, true));
+        destinationFees.add(new DestinationFee("PL", null, "SWORN_TRANSLATION", bd("350"), CurrencyCode.PLN, true, true,
+                true));
         destinationFees.add(new DestinationFee("PL", null, "TECHNICAL_INSPECTION", bd("300"), CurrencyCode.PLN, true));
+        destinationFees.add(new DestinationFee("PL", null, "GEOMETRY_ALIGNMENT", bd("250"), CurrencyCode.PLN, true, true,
+                false));
         destinationFees.add(new DestinationFee("PL", null, "REGISTRATION_FEE", bd("256.50"), CurrencyCode.PLN, false));
         destinationFees.add(new DestinationFee("PL", null, "RECYCLING_FEE", bd("500"), CurrencyCode.PLN, false));
         destinationFees.add(new DestinationFee("PL", OriginCountry.USA, "US_LIGHTING_CONVERSION", bd("1500"),
-                CurrencyCode.PLN, true));
+                CurrencyCode.PLN, true, true, true));
     }
 
     private void tier(AuctionHouse house, AuctionFeeTier.FeeType type, TitleType title, String from, String to,
@@ -174,5 +194,15 @@ class InMemoryTariffCatalog implements TariffCatalog {
     @Override
     public List<DestinationFee> destinationFees(String countryCode) {
         return destinationFees.stream().filter(d -> d.getDestinationCountry().equals(countryCode)).toList();
+    }
+
+    @Override
+    public Optional<RoadTransportRate> roadRate(String countryCode, DeliveryMode mode) {
+        return roadRates.stream().filter(r -> r.getCountryCode().equals(countryCode) && r.getMode() == mode).findFirst();
+    }
+
+    @Override
+    public List<RiskFactor> riskFactors() {
+        return risks;
     }
 }

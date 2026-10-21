@@ -45,6 +45,7 @@ public final class CalculationContext {
     private Money excise;
     private Money vatIncidentalCosts;
     private boolean historic;
+    private int deliveryKm;
 
     public CalculationContext(CalculationRequest request, Scenario scenario, FxRates fx, TariffCatalog catalog,
                               LocalDate calculationDate) {
@@ -123,6 +124,8 @@ public final class CalculationContext {
     public void excise(Money excise) { this.excise = excise; }
     public boolean historic() { return historic; }
     public void historic(boolean historic) { this.historic = historic; }
+    public int deliveryKm() { return deliveryKm; }
+    public void deliveryKm(int km) { this.deliveryKm = km; }
 
     /** Costs after the EU border up to the first place of destination (Art. 86(1)(b) VAT Directive). */
     public Money vatIncidentalCosts() { return vatIncidentalCosts == null ? zero() : vatIncidentalCosts; }

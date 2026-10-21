@@ -24,10 +24,19 @@ public record CalculationResult(
         RouteInfo route,
         Map<CostCategory, Money> totalsByCategory,
         Money total,
-        Set<String> warnings) {
+        Set<String> warnings,
+        Timeline timeline,
+        int deliveryKm) {
 
     /** A cost line plus its amount in the display currency. */
     public record Line(CostLine line, Money display) {
+    }
+
+    /** Door-to-registration lead time; stages are in order. */
+    public record Timeline(List<Stage> stages, int totalMin, int totalMax) {
+    }
+
+    public record Stage(String code, int minDays, int maxDays) {
     }
 
     public record RouteInfo(String departurePort, String euPortCode, String euPortName, int transitDays) {

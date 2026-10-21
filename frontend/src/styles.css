@@ -330,14 +330,14 @@ select.input {
 .route-base {
   fill: none;
   stroke: var(--brand);
-  stroke-opacity: 0.22;
-  stroke-width: 1.4;
+  stroke-opacity: 0.25;
+  stroke-width: 1;
   transition: stroke-opacity 0.3s;
 }
 .route-flow {
   fill: none;
   stroke: var(--brand);
-  stroke-width: 1.6;
+  stroke-width: 1.1;
   stroke-linecap: round;
   stroke-dasharray: 3 9;
   animation: route-flow 1.4s linear infinite;

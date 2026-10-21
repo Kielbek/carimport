@@ -28,12 +28,13 @@
     "MOTORCYCLE": "Motorcycle",
     "PASSENGER_CAR": "Car",
     "PICKUP_TRUCK": "Pickup",
-    "REGISTRATION": "Registration",
+    "REGISTRATION": "After import & registration",
     "SUV": "SUV",
     "TAXES": "EU duties & taxes",
     "TRANSPORT": "Transport & logistics",
     "VAN": "Van",
-    "VEHICLE": "Vehicle & auction"
+    "VEHICLE": "Vehicle & auction",
+    "RISK": "Risks on the way"
   },
   "condition": {
     "ENGINE_STARTS": "Engine starts",
@@ -73,7 +74,32 @@
     "SWORN_TRANSLATION": "Sworn translation of documents",
     "TECHNICAL_INSPECTION": "Technical inspection",
     "US_LIGHTING_CONVERSION": "Lighting conversion (US spec)",
-    "WINCH_CONTAINER_LOADING": "Container loading by winch"
+    "WINCH_CONTAINER_LOADING": "Container loading by winch",
+    "DELIVERY_CAR_CARRIER": "Car carrier from port to door",
+    "DELIVERY_TOW_TRUCK": "Tow truck from port to door",
+    "DELIVERY_SELF_DRIVE": "Drive home on temporary plates (fuel, plates, short-term insurance)",
+    "TECHNICAL_INSPECTION_IMPORT": "Technical inspection of an imported vehicle",
+    "REG_TEMPORARY_PERMIT": "Temporary registration permit",
+    "REG_TEMPORARY_PLATES": "Temporary plates",
+    "REG_CERTIFICATE": "Registration certificate",
+    "REG_PLATES": "Number plates",
+    "REG_STICKER": "Control sticker",
+    "REAR_FOG_LIGHT": "Rear fog light installation",
+    "SPEEDOMETER_KMH": "Speedometer conversion to km/h",
+    "SERVICE_INSPECTION": "Service and fluid change",
+    "GEOMETRY_ALIGNMENT": "Wheel alignment",
+    "DETAILING": "Cleaning and detailing",
+    "EXPERT_VALUATION": "Expert valuation (e.g. for comprehensive insurance)",
+    "REPAIR_ESTIMATE": "Repairs (your estimate)",
+    "INSURANCE_FIRST_YEAR": "Insurance – first year (your amount)",
+    "RISK_PORT_STORAGE": "Port storage (late pickup, paperwork)",
+    "RISK_CUSTOMS_INSPECTION": "Customs inspection / container X-ray",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Customs value challenge (extra duty and VAT)",
+    "RISK_VESSEL_ROLLOVER": "Rolled to a later vessel (storage at export port)",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transit damage – insurance deductible",
+    "RISK_HIDDEN_DAMAGE": "Hidden damage not visible at auction",
+    "RISK_TITLE_DELAY": "Title delay (extra storage)",
+    "RISK_EXPORT_DOCS_DELAY": "Export document delay"
   },
   "doc": {
     "billOfLading": "Bill of Lading",
@@ -182,15 +208,21 @@
     "item": "Item",
     "rate": "Rate",
     "refunded": "This order was refunded.",
-    "stage": {
-      "CUSTOMS": "Customs clearance",
-      "PURCHASE": "Purchase",
-      "REGISTRATION": "Registration",
-      "SHIPPING": "Shipping"
-    },
+    "stage": "Stage",
     "title": "Vehicle import cost report",
     "total": "Total landed cost",
-    "waiting": "Confirming your payment…"
+    "waiting": "Confirming your payment…",
+    "delivery": "Delivery",
+    "leadTime": "Time to registration",
+    "days": "days",
+    "scenarios": "Three cost scenarios",
+    "timeline": "Timeline",
+    "plan": "What to do after import – step by step",
+    "step": "Step",
+    "deadline": "Deadline",
+    "riskDetail": "Probability {{p}}%, cost if it happens: {{min}}–{{max}} {{cur}}",
+    "userAmount": "amount you entered",
+    "scenarioMethod": "The average scenario includes risks as expected value (probability × mid cost); the pessimistic one assumes every risk happens at its upper cost."
   },
   "result": {
     "chart": "Cost structure",
@@ -206,7 +238,24 @@
     "transit": "{{days}} days at sea",
     "unlock": "Unlock the full report – {{price}}",
     "updating": "Updating…",
-    "short": "Landed cost"
+    "short": "Landed cost",
+    "calculating": "Calculating every item and scenario…",
+    "edit": "Change inputs",
+    "structure": "Cost structure (average scenario)",
+    "timeline": "Time: {{min}}–{{max}} days to registration",
+    "included": "What is included",
+    "risks": "What can happen on the way",
+    "risksLead": "Each risk has a probability and cost band. The average scenario counts them proportionally, the pessimistic one in full. Amounts are in the report.",
+    "probability": "Probability",
+    "reportEyebrow": "Door-to-door report",
+    "reportTitle": "Every item to the cent – in three scenarios",
+    "reportItem1": "Auction fees, transport, freight and insurance",
+    "reportItem2": "Duty, excise and VAT with bases and rates",
+    "reportItem3": "Delivery: km × rate, loading, minimum",
+    "reportItem4": "Registration fees and after-import services",
+    "reportItem5": "Risks with amounts: optimistic, average, pessimistic",
+    "reportItem6": "Step-by-step plan with deadlines and document list",
+    "cheapestPort": "cheapest port"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exclusive container",
@@ -254,6 +303,10 @@
     },
     "registrationTax": {
       "notModelled": "The destination country's registration tax is not modelled yet."
+    },
+    "delivery": {
+      "portPickup": "Port pickup selected – road transport home is not included.",
+      "selfDriveNotRunning": "A non-running car cannot be driven on temporary plates – choose a tow truck."
     }
   },
   "wizard": {
@@ -278,14 +331,39 @@
     "procedure4200": "Customs procedure 4200",
     "procedure4200Hint": "For EU VAT-registered companies: no VAT at the border, reverse charge at destination.",
     "shipping": "Ocean shipping method",
-    "step1": "Route",
+    "step1": "From",
     "step2": "Vehicle",
-    "step3": "Condition & purchase",
+    "step3": "Condition & price",
     "title": "Title type",
     "year": "Production year",
     "zone": "Yard location (state / province)",
     "zoneOther": "Other / not sure",
-    "advanced": "Advanced options"
+    "advanced": "Advanced options",
+    "step4": "Destination & delivery",
+    "step5": "After import",
+    "step6": "Cost report",
+    "calculate": "Calculate full cost",
+    "departurePort": "Port of departure",
+    "departureAuto": "Automatic – cheapest route",
+    "departureHint": "Pick a specific port if your forwarder has already named one.",
+    "delivery": "Transport from the port to your door",
+    "distance": "Distance from the port to your address",
+    "distanceHint": "We suggest a typical distance from {{port}}; enter your own for an exact result.",
+    "pricePerKm": "Price per kilometre",
+    "tariff": "Market rate: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} loading (minimum {{minimum}} {{cur}}).",
+    "ownRate": "I have my own carrier quote",
+    "tariffUnknown": "No per-km tariff for this country – a flat rate will be used.",
+    "repair": "Estimated repair cost (optional)",
+    "repairHintRunner": "E.g. small paint touch-ups, tyres, brake pads.",
+    "repairHintDamaged": "For damaged cars enter the workshop quote – hidden damage is counted separately as a risk.",
+    "afterImportLead": "Everything to do and pay between the port and number plates. Mandatory items are always included; you choose the rest.",
+    "statutory": "Mandatory (official fees)",
+    "optional": "Optional",
+    "recommended": "recommended",
+    "optionsLoading": "Loading services for your route…",
+    "noServices": "We do not have a detailed registration price list for this country yet – the report lists the steps.",
+    "insurance": "Insurance for the first year (optional)",
+    "insuranceHint": "Enter your insurer’s quote so the report shows the full first-year cost."
   },
   "layout": {
     "topbar": "Import cost calculator for the USA, Canada, Japan, UAE and UK — we price and ship your car to any EU country",
@@ -430,7 +508,7 @@
     "map": {
       "eyebrow": "Import routes",
       "title": "From ports around the world straight into the EU",
-      "lead": "We know the export ports, the usual lanes via Panama and Suez and the sailing time to EU clearance ports. Hover a country to see its routes.",
+      "lead": "Export ports in the USA, Canada, Japan, the UAE and the UK and the lanes via Panama, Suez and Gibraltar to EU clearance ports.",
       "aria": "Map of sea routes from the USA, Canada, Japan, UAE and UK to EU ports",
       "eu": "European Union",
       "legendEu": "EU countries (registration)",
@@ -588,7 +666,7 @@
   },
   "calc": {
     "title": "Car import cost calculator",
-    "lead": "Three steps, live result. Change the inputs and watch the landed cost update.",
+    "lead": "Six steps: origin, vehicle, condition, destination, after import and report. The result comes at the end – in three scenarios.",
     "currency": "Result currency",
     "progress": "Progress"
   },
@@ -633,5 +711,141 @@
       "title": "Your rights",
       "text": "You have the right to access, rectify, erase, restrict, port and object, to withdraw consent at any time and to complain to your data protection authority. Write to us: {{email}}."
     }
+  },
+  "delivery": {
+    "PORT_PICKUP": "Pickup at port",
+    "CAR_CARRIER": "Car carrier",
+    "TOW_TRUCK": "Tow truck",
+    "SELF_DRIVE": "On temporary plates"
+  },
+  "scenario": {
+    "0": "Optimistic",
+    "1": "Average",
+    "2": "Pessimistic"
+  },
+  "scenarioHint": {
+    "0": "Lowest rates, favourable FX, nothing goes wrong",
+    "1": "Typical rates + probability-weighted risks",
+    "2": "Highest rates, weaker FX, risks materialise"
+  },
+  "timeline": {
+    "INLAND": "Yard pickup and transport to port",
+    "OCEAN": "Sailing (incl. waiting for the vessel)",
+    "CLEARANCE": "Unloading and customs clearance",
+    "DELIVERY": "Delivery to your door",
+    "REGISTRATION": "Preparation and registration"
+  },
+  "plan": {
+    "deadline": {
+      "beforeRelease": "Before release from the port",
+      "14days": "14 days after arrival in Poland",
+      "beforeInspection": "Before the technical inspection",
+      "beforeRegistration": "Before registration",
+      "pl30days": "30 days after import (fine up to PLN 1,000)",
+      "fromRegistration": "From registration / temporary plates",
+      "national": "Per the registration country’s rules",
+      "none": "No statutory deadline"
+    },
+    "step": {
+      "clearance": {
+        "title": "Customs clearance at the port",
+        "text": "The customs agent files the declaration (SAD); you pay duty and import VAT. Needed: invoice, bill of lading, title/export certificate, EORI."
+      },
+      "pl": {
+        "excise": {
+          "title": "Excise return and payment (AKC-U/S)",
+          "text": "File with the tax office (or online) and pay the excise; the confirmation is needed for registration."
+        },
+        "exciseExemption": {
+          "title": "Excise exemption filing (electric car)",
+          "text": "Electric cars are exempt, but the AKC-U/S return must still be filed."
+        },
+        "inspection": {
+          "title": "Technical inspection at a test station",
+          "text": "First inspection of an imported vehicle incl. VIN identification; the result goes to the central register."
+        },
+        "recycling": {
+          "title": "Recycling fee PLN 500",
+          "text": "Paid to the National Environmental Fund on first registration of an imported car."
+        },
+        "registration": {
+          "title": "Registration at the vehicle office",
+          "text": "Application, proof of ownership with translation, excise, inspection, recycling fee, VAT/duty proof; you get a temporary permit and plates."
+        }
+      },
+      "translations": {
+        "title": "Sworn translations",
+        "text": "Foreign title/registration, invoice and export document – by a sworn translator."
+      },
+      "lighting": {
+        "title": "Lighting conversion to EU standards",
+        "text": "Amber rear indicators, rear fog light, headlight aim – the car fails the inspection without it."
+      },
+      "insurance": {
+        "title": "Liability insurance",
+        "text": "Mandatory from registration; comprehensive cover is worth arranging after an expert valuation."
+      },
+      "de": {
+        "approval": {
+          "title": "Individual approval (§21 StVZO)",
+          "text": "Full expert inspection (TÜV/DEKRA) for non-EU cars; required for registration."
+        },
+        "registration": {
+          "title": "Registration (Zulassung)",
+          "text": "Insurance eVB number, customs clearance proof, expert report, SEPA mandate for vehicle tax."
+        }
+      },
+      "generic": {
+        "inspection": {
+          "title": "Inspection / individual approval",
+          "text": "Scope depends on the country – non-EU cars often need individual approval."
+        },
+        "registrationTax": {
+          "title": "National registration tax",
+          "text": "E.g. BPM in the Netherlands, NoVA in Austria, malus in France – check before buying."
+        },
+        "registration": {
+          "title": "Vehicle registration",
+          "text": "Apply with customs clearance proof, inspection and insurance."
+        }
+      },
+      "evCharging": {
+        "title": "Charging port",
+        "text": "US cars use NACS/CCS1 – you need an adapter or a CCS2/Type 2 port retrofit."
+      }
+    }
+  },
+  "deliveryHint": {
+    "CAR_CARRIER": "Cheapest for running cars",
+    "TOW_TRUCK": "Single tow truck, also for non-runners",
+    "SELF_DRIVE": "Temporary plates + insurance; runners only",
+    "PORT_PICKUP": "You arrange transport yourself"
+  },
+  "serviceHint": {
+    "SWORN_TRANSLATION": "Title, invoice and export document",
+    "US_LIGHTING_CONVERSION": "EU-compliant indicators and lights",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Right-hand-drive car",
+    "REAR_FOG_LIGHT": "Required at the inspection",
+    "SPEEDOMETER_KMH": "Speedometer in miles – comfort and resale value",
+    "SERVICE_INSPECTION": "Oil, filters, fluids, brakes after a long trip",
+    "GEOMETRY_ALIGNMENT": "Recommended after suspension repairs",
+    "DETAILING": "Wash, interior cleaning, paint correction",
+    "EXPERT_VALUATION": "Useful for comprehensive insurance and resale"
+  },
+  "riskInfo": {
+    "RISK_PORT_STORAGE": "The terminal charges per day after the free period, e.g. when documents or transport are late.",
+    "RISK_CUSTOMS_INSPECTION": "Random or targeted control: devanning, X-ray, extra terminal fees.",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "If the price looks too low, customs may use a higher value – duty and VAT go up.",
+    "RISK_VESSEL_ROLLOVER": "The vessel is overbooked and the container sails on the next one – extra storage at the export port.",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transit damage is covered by the policy, minus the deductible.",
+    "RISK_HIDDEN_DAMAGE": "Faults you cannot see in auction photos – the worse the condition, the higher the risk.",
+    "RISK_TITLE_DELAY": "The auction sends the title late – the car waits at the yard or port.",
+    "RISK_EXPORT_DOCS_DELAY": "Deregistration and export documents take longer than usual."
+  },
+  "docStage": {
+    "PURCHASE": "Purchase",
+    "SHIPPING": "Shipping",
+    "CUSTOMS": "Customs clearance",
+    "REGISTRATION": "Registration"
   }
 }

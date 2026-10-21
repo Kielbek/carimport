@@ -20,8 +20,9 @@ public interface CalculationStep {
     int EXCISE = 100;
     int PORT_CLEARANCE = 110;
     int IMPORT_VAT = 120;
-    int INTRA_EU_TRANSPORT = 130;
+    int DELIVERY = 130;
     int DESTINATION_FEES = 140;
+    int RISKS = 150;
 
     int order();
 

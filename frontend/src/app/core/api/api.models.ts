@@ -10,7 +10,8 @@ export type ShippingMethod = 'CONTAINER_SHARED' | 'CONTAINER_EXCLUSIVE' | 'RORO'
 export type BuyerType = 'PRIVATE' | 'COMPANY';
 export type CustomsProcedure = 'STANDARD_4000' | 'VAT_DEFERRED_4200';
 export type DisplayCurrency = 'PLN' | 'EUR' | 'USD';
-export type CostCategory = 'VEHICLE' | 'TRANSPORT' | 'TAXES' | 'REGISTRATION';
+export type CostCategory = 'VEHICLE' | 'TRANSPORT' | 'TAXES' | 'REGISTRATION' | 'RISK';
+export type DeliveryMode = 'PORT_PICKUP' | 'CAR_CARRIER' | 'TOW_TRUCK' | 'SELF_DRIVE';
 
 export interface CalculationRequest {
   originCountry: OriginCountry;
@@ -31,20 +32,49 @@ export interface CalculationRequest {
   buyerType: BuyerType;
   customsProcedure: CustomsProcedure;
   displayCurrency: DisplayCurrency;
+  /** Port-to-door leg; null = car carrier. */
+  deliveryMode: DeliveryMode | null;
+  /** Own distance from the EU port; null = typical for the country. */
+  deliveryDistanceKm: number | null;
+  /** Own per-km price in the destination currency; null = tariff. */
+  pricePerKm: number | null;
+  /** In the display currency. */
+  repairEstimate: number | null;
+  insuranceEstimate: number | null;
+  /** Selected optional after-import services; null = recommended defaults. */
+  postImportServices: string[] | null;
 }
 
-/** Free tier: band + shares only. */
+export interface Timeline {
+  stages: { code: string; minDays: number; maxDays: number }[];
+  totalMin: number;
+  totalMax: number;
+}
+
+/** Free tier: rounded scenario totals, shares, what is included (names only) and which risks were considered. */
 export interface PublicQuoteView {
   quoteId: string | null;
   rangeMin: number;
   rangeMax: number;
   currency: DisplayCurrency;
+  scenarios: { optimistic: number; average: number; pessimistic: number };
   sharePercent: Record<CostCategory, number>;
+  includedItems: Partial<Record<CostCategory, string[]>>;
+  risks: { code: string; probabilityPercent: number }[];
   exciseApplies: boolean;
   transitDays: number;
+  timeline: Timeline;
+  deliveryKm: number;
   fxDate: string;
   warnings: string[];
   expiresAt: string | null;
+}
+
+export interface RouteOptions {
+  departurePorts: string[];
+  services: { code: string; statutory: boolean; defaultSelected: boolean }[];
+  delivery: { mode: DeliveryMode; perKmMin: number; perKmMax: number; fixedFee: number; minimumCharge: number; currency: string }[];
+  typicalDistanceKm: number | null;
 }
 
 export interface Money {
@@ -77,11 +107,15 @@ export interface CalculationResult {
   totalsByCategory: Record<CostCategory, Money>;
   total: Money;
   warnings: string[];
+  timeline: Timeline;
+  deliveryKm: number;
 }
 
 export interface FullReport {
   result: CalculationResult;
+  scenarios: { low: CalculationResult; expected: CalculationResult; high: CalculationResult } | null;
   documents: { key: string; stage: 'PURCHASE' | 'SHIPPING' | 'CUSTOMS' | 'REGISTRATION' }[];
+  plan: { key: string; deadline: string }[];
 }
 
 export type OrderStatus = 'PENDING' | 'PAID' | 'GENERATING' | 'READY' | 'FAILED' | 'EXPIRED' | 'REFUNDED';

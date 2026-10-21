@@ -11,8 +11,9 @@ export const CATEGORY_COLORS: Record<CostCategory, string> = {
   TRANSPORT: '#38bdf8',
   TAXES: '#ffc61a',
   REGISTRATION: '#94a3b8',
+  RISK: '#f97316',
 };
-const ORDER: CostCategory[] = ['VEHICLE', 'TRANSPORT', 'TAXES', 'REGISTRATION'];
+const ORDER: CostCategory[] = ['VEHICLE', 'TRANSPORT', 'TAXES', 'REGISTRATION', 'RISK'];
 
 /**
  * Doughnut of the cost structure. The chart is created once in the browser and updated in place from an effect, so
@@ -54,7 +55,7 @@ export class CostDonut implements OnDestroy {
           datasets: [{
             data,
             backgroundColor: ORDER.map((c) => CATEGORY_COLORS[c]),
-            borderColor: '#0f1522',
+            borderColor: 'rgba(0,0,0,0)',
             borderWidth: 3,
             hoverOffset: 10,
           }],

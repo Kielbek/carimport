@@ -18,36 +18,68 @@ import java.util.Set;
 import java.util.UUID;
 
 /**
- * Free tier: a rounded min-max band and whole-percent category shares. Deliberately carries no line items, rates or
- * exact amounts - those are what the paid report sells, so they never leave the server unpaid.
+ * Free tier: rounded totals of the three scenarios, whole-percent category shares, the lead time, which positions are
+ * included (names only) and which risks were considered (with probability). Deliberately carries no amounts per line,
+ * rates or tax bases - those are what the paid report sells, so they never leave the server unpaid.
  */
 public record PublicQuoteView(
         UUID quoteId,
         BigDecimal rangeMin,
         BigDecimal rangeMax,
         CurrencyCode currency,
+        Scenarios scenarios,
         Map<CostCategory, Integer> sharePercent,
+        Map<CostCategory, List<String>> includedItems,
+        List<RiskInfo> risks,
         boolean exciseApplies,
         int transitDays,
+        CalculationResult.Timeline timeline,
+        int deliveryKm,
         LocalDate fxDate,
         Set<String> warnings,
         Instant expiresAt) {
+
+    /** Optimistic is rounded down, pessimistic up, average to the nearest step. */
+    public record Scenarios(BigDecimal optimistic, BigDecimal average, BigDecimal pessimistic) {
+    }
+
+    public record RiskInfo(String code, int probabilityPercent) {
+    }
 
     private static final BigDecimal ROUNDING_STEP = new BigDecimal("100");
 
     public static PublicQuoteView of(UUID quoteId, QuoteRange range, Instant expiresAt) {
         CalculationResult expected = range.expected();
+        Map<CostCategory, List<String>> items = new EnumMap<>(CostCategory.class);
+        List<RiskInfo> risks = new ArrayList<>();
+        for (CalculationResult.Line l : expected.lines()) {
+            if (l.line().category() == CostCategory.RISK) {
+                risks.add(new RiskInfo(l.line().code(), Integer.parseInt(l.line().params().get("probability"))));
+            } else if (l.line().includedInTotal()) {
+                items.computeIfAbsent(l.line().category(), c -> new ArrayList<>()).add(l.line().code());
+            }
+        }
         return new PublicQuoteView(
                 quoteId,
                 floorToStep(range.low().total()),
                 ceilToStep(range.high().total()),
                 expected.displayCurrency(),
+                new Scenarios(floorToStep(range.low().total()), roundToStep(expected.total()),
+                        ceilToStep(range.high().total())),
                 shares(expected.totalsByCategory(), expected.total()),
+                items,
+                risks,
                 expected.lines().stream().anyMatch(l -> l.line().code().equals("EXCISE_TAX") && !l.display().isZero()),
                 expected.route().transitDays(),
+                expected.timeline(),
+                expected.deliveryKm(),
                 expected.fxDate(),
                 expected.warnings(),
                 expiresAt);
+    }
+
+    public static BigDecimal roundToStep(Money money) {
+        return money.amount().divide(ROUNDING_STEP, 0, RoundingMode.HALF_UP).multiply(ROUNDING_STEP);
     }
 
     public static BigDecimal floorToStep(Money money) {

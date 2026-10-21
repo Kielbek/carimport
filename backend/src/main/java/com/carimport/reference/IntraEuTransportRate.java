@@ -30,6 +30,10 @@ public class IntraEuTransportRate {
     @Column(nullable = false, length = 3)
     private CurrencyCode currency;
 
+    /** Typical road distance from the port to the destination country's main population centre. */
+    @Column(name = "distance_km", nullable = false)
+    private int distanceKm;
+
     protected IntraEuTransportRate() {
     }
 
@@ -42,9 +46,16 @@ public class IntraEuTransportRate {
         this.currency = currency;
     }
 
+    public IntraEuTransportRate(String euPortCode, String destinationCountry, BigDecimal priceMin, BigDecimal priceMax,
+                                CurrencyCode currency, int distanceKm) {
+        this(euPortCode, destinationCountry, priceMin, priceMax, currency);
+        this.distanceKm = distanceKm;
+    }
+
     public String getEuPortCode() { return euPortCode; }
     public String getDestinationCountry() { return destinationCountry; }
     public BigDecimal getPriceMin() { return priceMin; }
     public BigDecimal getPriceMax() { return priceMax; }
     public CurrencyCode getCurrency() { return currency; }
+    public int getDistanceKm() { return distanceKm; }
 }

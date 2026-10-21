@@ -4,81 +4,144 @@
     <meta charset="UTF-8"/>
     <title th:text="#{report.title}">Report</title>
     <style>
-        @page { size: A4; margin: 18mm 16mm 20mm 16mm;
-            @bottom-center { content: counter(page) " / " counter(pages); font-size: 8pt; color: #64748b; } }
-        body { font-family: 'Report Sans', sans-serif; font-size: 9.5pt; color: #0f172a; }
-        h1 { font-size: 18pt; margin: 0 0 4mm 0; color: #1e3a8a; }
-        h2 { font-size: 12pt; margin: 7mm 0 2mm 0; color: #1e3a8a; border-bottom: 1px solid #cbd5e1; padding-bottom: 1mm; }
-        .meta td { padding: 0.6mm 4mm 0.6mm 0; }
-        .meta td.k { color: #475569; }
-        table.lines { width: 100%; border-collapse: collapse; }
-        table.lines th { text-align: left; background: #eff6ff; color: #1e3a8a; padding: 1.6mm; font-size: 8.5pt; }
-        table.lines td { padding: 1.4mm 1.6mm; border-bottom: 1px solid #e2e8f0; }
+        @page { size: A4 landscape; margin: 14mm 12mm 16mm 12mm;
+            @bottom-center { content: counter(page) " / " counter(pages); font-size: 8pt; color: #6b6b72; } }
+        body { font-family: 'Report Sans', sans-serif; font-size: 8.8pt; color: #101011; }
+        h1 { font-size: 17pt; margin: 0 0 3mm 0; }
+        h2 { font-size: 11.5pt; margin: 7mm 0 2mm 0; padding-bottom: 1mm; border-bottom: 1.5px solid #ffc000; }
+        .meta td { padding: 0.5mm 5mm 0.5mm 0; }
+        .meta td.k { color: #5d5d64; }
+        table.t { width: 100%; border-collapse: collapse; }
+        table.t th { text-align: left; background: #101011; color: #fff; padding: 1.6mm; font-size: 8pt; }
+        table.t td { padding: 1.3mm 1.6mm; border-bottom: 1px solid #e3e3e6; vertical-align: top; }
         td.num, th.num { text-align: right; white-space: nowrap; }
         tr { page-break-inside: avoid; }
-        tr.cat td { background: #f8fafc; font-weight: bold; }
-        tr.info td { color: #64748b; font-style: italic; }
-        tr.total td { font-size: 12pt; font-weight: bold; background: #1e3a8a; color: #fff; padding: 2.5mm 1.6mm; }
-        .warn { background: #fffbeb; border-left: 3px solid #f59e0b; padding: 1.5mm 3mm; margin: 1mm 0; }
-        .stage { font-weight: bold; margin-top: 2mm; }
-        .disclaimer { margin-top: 8mm; font-size: 7.5pt; color: #64748b; }
+        tr.cat td { background: #f3f3f4; font-weight: bold; }
+        tr.info td { color: #6b6b72; font-style: italic; }
+        tr.total td { font-size: 10.5pt; font-weight: bold; background: #ffc000; padding: 2.2mm 1.6mm; }
+        td.avg, th.avg { background: #fff8db; }
+        tr.total td.avg { background: #ffd34d; }
+        .small { color: #6b6b72; font-size: 7.5pt; }
+        .boxes td { width: 33%; padding: 3mm; border: 1px solid #e3e3e6; }
+        .boxes .v { font-size: 15pt; font-weight: bold; }
+        .warn { background: #fff8db; border-left: 3px solid #ffc000; padding: 1.5mm 3mm; margin: 1mm 0; }
+        .disclaimer { margin-top: 8mm; font-size: 7.5pt; color: #6b6b72; }
     </style>
 </head>
 <body>
 <h1 th:text="#{report.title}">Report</h1>
 
 <table class="meta">
-    <tr><td class="k" th:text="#{report.preparedFor}">For</td><td><b th:text="${order.fullName}">Name</b></td></tr>
-    <tr><td class="k" th:text="#{report.date}">Date</td><td th:text="${result.calculationDate()}">2026-10-21</td></tr>
-    <tr><td class="k" th:text="#{report.fx}">FX</td><td th:text="${result.fxDate()}">2026-10-20</td></tr>
+    <tr><td class="k" th:text="#{report.preparedFor}">For</td><td><b th:text="${order.fullName}">Name</b></td>
+        <td class="k" th:text="#{report.date}">Date</td><td th:text="${result.calculationDate()}">2026-10-21</td>
+        <td class="k" th:text="#{report.fx}">FX</td><td th:text="${result.fxDate()}">2026-10-20</td></tr>
     <tr><td class="k" th:text="#{report.route}">Route</td>
-        <td th:text="${result.route().departurePort()} + ' → ' + ${result.route().euPortName()} + ' → ' + ${request.destinationCountry()}">route</td></tr>
-    <tr><td class="k" th:text="#{report.transitDays}">Transit</td><td th:text="${result.route().transitDays()}">21</td></tr>
-    <tr><td class="k" th:text="#{report.hsCode}">HS</td><td th:text="${result.hsCode()}">8703</td></tr>
-    <tr><td class="k" th:text="#{report.customsValue}">CIF</td>
+        <td th:text="${result.route().departurePort()} + ' → ' + ${result.route().euPortName()} + ' → ' + ${request.destinationCountry()}">route</td>
+        <td class="k" th:text="#{report.hsCode}">HS</td><td th:text="${result.hsCode()}">8703</td>
+        <td class="k" th:text="#{report.customsValue}">CIF</td>
         <td th:text="${#numbers.formatDecimal(result.customsValue().amount(), 1, 'DEFAULT', 2, 'DEFAULT')} + ' ' + ${result.customsValue().currency()}">0</td></tr>
+    <tr><td class="k" th:text="#{report.delivery}">Delivery</td>
+        <td th:text="#{'delivery.' + ${request.effectiveDeliveryMode()}} + ' · ' + ${result.deliveryKm()} + ' km'">mode</td>
+        <td class="k" th:text="#{report.leadTime}">Lead time</td>
+        <td th:text="${result.timeline().totalMin()} + '–' + ${result.timeline().totalMax()} + ' ' + #{report.days}">days</td>
+        <td></td><td></td></tr>
 </table>
 
-<h2 th:text="#{report.breakdown}">Breakdown</h2>
-<table class="lines">
-    <thead>
-    <tr>
-        <th th:text="#{report.position}">Item</th>
-        <th class="num" th:text="#{report.original}">Original</th>
-        <th class="num" th:text="#{report.base}">Base</th>
-        <th class="num" th:text="#{report.rate}">Rate</th>
-        <th class="num" th:text="#{report.amount}">Amount</th>
-    </tr>
-    </thead>
-    <tbody>
-    <th:block th:each="cat : ${T(com.carimport.calculation.CostCategory).values()}">
-        <tr class="cat">
-            <td colspan="4" th:text="#{'category.' + ${cat}}">Category</td>
-            <td class="num" th:text="${#numbers.formatDecimal(result.totalsByCategory().get(cat).amount(), 1, 'DEFAULT', 2, 'DEFAULT')}">0</td>
+<th:block th:if="${table != null}">
+    <h2 th:text="#{report.scenarios}">Scenarios</h2>
+    <table class="boxes"><tr>
+        <td th:each="i : ${ {0, 1, 2} }">
+            <div class="small" th:text="#{'scenario.' + ${i}}">scenario</div>
+            <div class="v" th:text="${#numbers.formatDecimal(table.totals()[i].amount(), 1, 'DEFAULT', 2, 'DEFAULT')} + ' ' + ${result.displayCurrency()}">0</div>
+            <div class="small" th:text="#{'scenarioHint.' + ${i}}">hint</div>
+        </td>
+    </tr></table>
+
+    <h2 th:text="#{report.breakdown}">Breakdown</h2>
+    <table class="t">
+        <thead><tr>
+            <th th:text="#{report.position}">Item</th>
+            <th class="num" th:text="#{report.original}">Original</th>
+            <th class="num" th:text="#{report.base}">Base</th>
+            <th class="num" th:text="#{report.rate}">Rate</th>
+            <th class="num" th:text="#{scenario.0}">Opt</th>
+            <th class="num avg" th:text="#{scenario.1}">Avg</th>
+            <th class="num" th:text="#{scenario.2}">Pess</th>
+        </tr></thead>
+        <tbody>
+        <th:block th:each="cat : ${T(com.carimport.calculation.CostCategory).values()}" th:if="${!table.rowsOf(cat).isEmpty()}">
+            <tr class="cat">
+                <td colspan="4" th:text="#{'category.' + ${cat}}">Category</td>
+                <td class="num" th:text="${#numbers.formatDecimal(table.categoryTotals().get(cat)[0].amount(), 1, 'DEFAULT', 2, 'DEFAULT')}">0</td>
+                <td class="num avg" th:text="${#numbers.formatDecimal(table.categoryTotals().get(cat)[1].amount(), 1, 'DEFAULT', 2, 'DEFAULT')}">0</td>
+                <td class="num" th:text="${#numbers.formatDecimal(table.categoryTotals().get(cat)[2].amount(), 1, 'DEFAULT', 2, 'DEFAULT')}">0</td>
+            </tr>
+            <tr th:each="r : ${table.rowsOf(cat)}" th:class="${r.line().includedInTotal()} ? '' : 'info'">
+                <td>
+                    <span th:text="#{'cost.' + ${r.line().code()}}">Label</span>
+                    <span th:if="${r.line().params().get('localName') != null}" th:text="' (' + ${r.line().params().get('localName')} + ')'"></span>
+                    <div class="small" th:if="${r.line().params().get('km') != null}"
+                         th:text="${r.line().params().get('km')} + ' km × ' + ${r.line().params().get('perKm')} + ' ' + ${r.line().params().get('currency')} + '/km + ' + ${r.line().params().get('fixed')} + ' (min. ' + ${r.line().params().get('minimum')} + ')'"></div>
+                    <div class="small" th:if="${r.line().category().name() == 'RISK'}"
+                         th:text="#{report.riskDetail(${r.line().params().get('probability')}, ${r.line().params().get('min')}, ${r.line().params().get('max')}, ${r.line().params().get('currency')})}"></div>
+                    <div class="small" th:if="${r.line().params().get('type') == 'USER'}" th:text="#{report.userAmount}"></div>
+                    <span class="small" th:if="${!r.line().includedInTotal()}" th:text="' – ' + #{report.informational}"></span>
+                </td>
+                <td class="num" th:text="${r.line().category().name() == 'RISK'} ? '' : ${#numbers.formatDecimal(r.line().original().amount(), 1, 'DEFAULT', 2, 'DEFAULT')} + ' ' + ${r.line().original().currency()}">0</td>
+                <td class="num" th:text="${r.line().taxBase() != null} ? ${#numbers.formatDecimal(r.line().taxBase().amount(), 1, 'DEFAULT', 2, 'DEFAULT')} + ' ' + ${r.line().taxBase().currency()} : ''"></td>
+                <td class="num" th:text="${r.line().rate() != null and r.line().category().name() != 'RISK'} ? ${#numbers.formatPercent(r.line().rate(), 1, 2)} : ''"></td>
+                <td class="num" th:text="${#numbers.formatDecimal(r.optimistic().amount(), 1, 'DEFAULT', 2, 'DEFAULT')}">0</td>
+                <td class="num avg" th:text="${#numbers.formatDecimal(r.average().amount(), 1, 'DEFAULT', 2, 'DEFAULT')}">0</td>
+                <td class="num" th:text="${#numbers.formatDecimal(r.pessimistic().amount(), 1, 'DEFAULT', 2, 'DEFAULT')}">0</td>
+            </tr>
+        </th:block>
+        <tr class="total">
+            <td colspan="4" th:text="#{report.total} + ' (' + ${result.displayCurrency()} + ')'">Total</td>
+            <td class="num" th:text="${#numbers.formatDecimal(table.totals()[0].amount(), 1, 'DEFAULT', 2, 'DEFAULT')}">0</td>
+            <td class="num avg" th:text="${#numbers.formatDecimal(table.totals()[1].amount(), 1, 'DEFAULT', 2, 'DEFAULT')}">0</td>
+            <td class="num" th:text="${#numbers.formatDecimal(table.totals()[2].amount(), 1, 'DEFAULT', 2, 'DEFAULT')}">0</td>
         </tr>
-        <tr th:each="l : ${result.lines()}" th:if="${l.line().category() == cat}"
-            th:class="${l.line().includedInTotal()} ? '' : 'info'">
-            <td>
-                <span th:text="#{'cost.' + ${l.line().code()}}">Label</span>
-                <span th:if="${l.line().params().get('localName') != null}" th:text="' (' + ${l.line().params().get('localName')} + ')'"></span>
-                <span th:if="${!l.line().includedInTotal()}" th:text="' – ' + #{report.informational}"></span>
-            </td>
-            <td class="num" th:text="${#numbers.formatDecimal(l.line().original().amount(), 1, 'DEFAULT', 2, 'DEFAULT')} + ' ' + ${l.line().original().currency()}">0</td>
-            <td class="num" th:text="${l.line().taxBase() != null} ? ${#numbers.formatDecimal(l.line().taxBase().amount(), 1, 'DEFAULT', 2, 'DEFAULT')} + ' ' + ${l.line().taxBase().currency()} : ''"></td>
-            <td class="num" th:text="${l.line().rate() != null} ? ${#numbers.formatPercent(l.line().rate(), 1, 2)} : ''"></td>
+        </tbody>
+    </table>
+    <p class="small" th:text="#{report.scenarioMethod}">method</p>
+</th:block>
+
+<th:block th:if="${table == null}">
+    <h2 th:text="#{report.breakdown}">Breakdown</h2>
+    <table class="t">
+        <tr th:each="l : ${result.lines()}">
+            <td th:text="#{'cost.' + ${l.line().code()}}">Label</td>
             <td class="num" th:text="${#numbers.formatDecimal(l.display().amount(), 1, 'DEFAULT', 2, 'DEFAULT')}">0</td>
         </tr>
-    </th:block>
-    <tr class="total">
-        <td colspan="4" th:text="#{report.total}">Total</td>
-        <td class="num" th:text="${#numbers.formatDecimal(result.total().amount(), 1, 'DEFAULT', 2, 'DEFAULT')} + ' ' + ${result.displayCurrency()}">0</td>
+        <tr class="total"><td th:text="#{report.total}">Total</td>
+            <td class="num" th:text="${#numbers.formatDecimal(result.total().amount(), 1, 'DEFAULT', 2, 'DEFAULT')} + ' ' + ${result.displayCurrency()}">0</td></tr>
+    </table>
+</th:block>
+
+<h2 th:text="#{report.timeline}">Timeline</h2>
+<table class="t">
+    <thead><tr><th th:text="#{report.stage}">Stage</th><th class="num" th:text="#{report.days}">Days</th></tr></thead>
+    <tr th:each="st : ${result.timeline().stages()}">
+        <td th:text="#{'timeline.' + ${st.code()}}">stage</td>
+        <td class="num" th:text="${st.minDays()} + '–' + ${st.maxDays()}">1–2</td>
     </tr>
-    </tbody>
+    <tr class="cat"><td th:text="#{report.total}">Total</td>
+        <td class="num" th:text="${result.timeline().totalMin()} + '–' + ${result.timeline().totalMax()}">0</td></tr>
+</table>
+
+<h2 th:text="#{report.plan}">After import</h2>
+<table class="t">
+    <thead><tr><th>#</th><th th:text="#{report.step}">Step</th><th th:text="#{report.deadline}">Deadline</th></tr></thead>
+    <tr th:each="p, it : ${plan}">
+        <td th:text="${it.count}">1</td>
+        <td><b th:text="#{${p.key()} + '.title'}">title</b><div class="small" th:text="#{${p.key()} + '.text'}">text</div></td>
+        <td th:text="#{${p.deadline()}}">deadline</td>
+    </tr>
 </table>
 
 <h2 th:text="#{report.documents}">Documents</h2>
 <th:block th:each="stage : ${T(com.carimport.report.DocumentChecklistService.Stage).values()}">
-    <div class="stage" th:text="#{'report.stage.' + ${stage}}">Stage</div>
+    <b th:text="#{'report.stage.' + ${stage}}">Stage</b>
     <ul>
         <li th:each="d : ${documents}" th:if="${d.stage() == stage}" th:text="#{${d.key()}}">doc</li>
     </ul>

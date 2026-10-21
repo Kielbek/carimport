@@ -1,26 +1,30 @@
-import { HttpErrorResponse } from '@angular/common/http';
 import { isPlatformBrowser } from '@angular/common';
-import { Injectable, PLATFORM_ID, computed, inject, linkedSignal, signal } from '@angular/core';
+import { HttpErrorResponse } from '@angular/common/http';
+import { Injectable, PLATFORM_ID, computed, effect, inject, signal, untracked } from '@angular/core';
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
-import { EMPTY, Observable, catchError, debounceTime, distinctUntilChanged, finalize, map, of, switchMap, tap } from 'rxjs';
+import { EMPTY, Observable, catchError, distinctUntilChanged, map, of, switchMap, tap } from 'rxjs';
 import {
   ApiProblem,
   AuctionHouse,
   CalculationRequest,
   OriginCountry,
   PublicQuoteView,
+  RouteOptions,
 } from '../../core/api/api.models';
 import { CarImportApi } from '../../core/api/carimport-api';
 import { EXCISE_THRESHOLD_CC, ORIGINS } from './calculator.options';
 
-export type WizardStep = 1 | 2 | 3;
-export type WizardState = Omit<CalculationRequest, 'departurePort'>;
+export type WizardStep = 1 | 2 | 3 | 4 | 5 | 6;
+export const LAST_INPUT_STEP = 5;
+export const RESULT_STEP: WizardStep = 6;
+export type WizardState = CalculationRequest;
 
 const DEFAULTS: WizardState = {
   originCountry: 'USA',
   auctionHouse: 'COPART',
   titleType: 'SALVAGE',
   pickupZone: 'NJ',
+  departurePort: null,
   bidPrice: 12000,
   vehicleCategory: 'PASSENGER_CAR',
   fuelType: 'PETROL',
@@ -34,33 +38,40 @@ const DEFAULTS: WizardState = {
   buyerType: 'PRIVATE',
   customsProcedure: 'STANDARD_4000',
   displayCurrency: 'PLN',
+  deliveryMode: 'CAR_CARRIER',
+  deliveryDistanceKm: null,
+  pricePerKm: null,
+  repairEstimate: null,
+  insuranceEstimate: null,
+  postImportServices: null,
 };
-const STORAGE_KEY = 'carimport.wizard';
-
-type PreviewState = { view: PublicQuoteView; error: null } | { view: null; error: ApiProblem };
+const STORAGE_KEY = 'carimport.wizard.v2';
 
 /**
- * Wizard state + live pricing, built entirely on signals:
+ * Wizard state and the detailed landed-cost calculation, built on signals:
  *
- *   state (signal) ──► request (computed) ──► toObservable ─debounce─► POST /quotes/preview ─► preview (linkedSignal)
- *        │                    └──► client-side hints (excise threshold, 4200 eligibility) - instant, no round trip
+ *   state (signal) ──► request (computed) ──► calculate() on the last step ──► result (signal)
+ *        │                    └──► client-side hints (excise threshold, delivery availability) - instant
+ *        ├──► route key (origin, EU port, destination) ──► GET /reference/options ──► options (toSignal)
  *        └──► persisted to sessionStorage (survives the Stripe cancel redirect)
  *
- * Exact amounts never exist on the client in the free tier; it only knows the band and the shares.
+ * The free result has rounded scenario totals and item names only; amounts per line are in the paid report.
  */
 @Injectable()
 export class CalculatorStore {
   private readonly api = inject(CarImportApi);
-  /** No live pricing while prerendering: the static HTML shows the wizard, the browser fetches the numbers. */
+  /** No API calls while prerendering: the static HTML shows the wizard, the browser fetches the data. */
   private readonly browser = isPlatformBrowser(inject(PLATFORM_ID));
 
   readonly state = signal<WizardState>(restore());
   readonly step = signal<WizardStep>(1);
-  readonly loading = signal(false);
-  /** Quote frozen on the server (needed for checkout and leads); reset whenever the inputs change. */
-  readonly frozenQuote = signal<PublicQuoteView | null>(null);
+  readonly calculating = signal(false);
+  readonly result = signal<PublicQuoteView | null>(null);
+  readonly error = signal<ApiProblem | null>(null);
+  /** The calculated quote is the one bought as a report or attached to a partner lead. */
+  readonly frozenQuote = this.result;
 
-  readonly request = computed<CalculationRequest>(() => ({ ...this.state(), departurePort: null }));
+  readonly request = computed<CalculationRequest>(() => ({ ...this.state() }));
 
   readonly origin = computed(() => ORIGINS.find((o) => o.code === this.state().originCountry)!);
   readonly auctionHouses = computed(() => this.origin().auctions);
@@ -69,6 +80,7 @@ export class CalculatorStore {
   readonly vehicleAge = computed(() => new Date().getFullYear() - this.state().productionYear);
   readonly canBeHistoric = computed(() => this.vehicleAge() >= 30);
   readonly needsEngineCc = computed(() => !['EV', 'HYDROGEN'].includes(this.state().fuelType));
+  readonly isRunner = computed(() => this.state().condition === 'RUN_AND_DRIVE');
 
   /** True when the slider sits above 2000 cm³ for a car that will pay Polish excise. */
   readonly exciseThresholdCrossed = computed(() => {
@@ -100,27 +112,53 @@ export class CalculatorStore {
 
   readonly procedure4200Available = computed(() => this.state().buyerType === 'COMPANY');
 
+  /** Only the inputs that change the route options - typing a price must not refetch. */
+  private readonly routeKey = computed(
+    () => `${this.state().originCountry}|${this.state().destinationCountry}|${this.state().euPortCode}`,
+  );
+
+  readonly options = toSignal(
+    (this.browser ? toObservable(this.routeKey) : EMPTY).pipe(
+      distinctUntilChanged(),
+      switchMap((key) => {
+        const [origin, destination, euPort] = key.split('|');
+        return this.api.routeOptions(origin, destination, euPort).pipe(catchError(() => of(null)));
+      }),
+    ),
+    { initialValue: null as RouteOptions | null },
+  );
+
+  readonly selectableServices = computed(() => (this.options()?.services ?? []).filter((s) => !s.statutory));
+  readonly statutoryServices = computed(() => (this.options()?.services ?? []).filter((s) => s.statutory));
+  readonly roadRate = computed(() =>
+    this.options()?.delivery.find((d) => d.mode === (this.state().deliveryMode ?? 'CAR_CARRIER')),
+  );
+  readonly effectiveDistance = computed(() => this.state().deliveryDistanceKm ?? this.options()?.typicalDistanceKm ?? null);
+
+  /** Services that will be included: the explicit choice, or the recommended defaults. */
+  readonly chosenServices = computed(
+    () =>
+      new Set(
+        this.state().postImportServices ?? this.selectableServices().filter((s) => s.defaultSelected).map((s) => s.code),
+      ),
+  );
+
   readonly isValid = computed(() => {
     const s = this.state();
     return s.bidPrice >= 100 && (!this.needsEngineCc() || s.engineCc > 0) && s.productionYear >= 1900;
   });
 
-  private readonly previewState = toSignal(
-    (this.browser ? toObservable(this.request) : EMPTY).pipe(
-      debounceTime(350),
-      distinctUntilChanged((a, b) => JSON.stringify(a) === JSON.stringify(b)),
-      tap(() => this.frozenQuote.set(null)),
-      switchMap((req) => (this.isValid() ? this.fetchPreview(req) : of(null))),
-    ),
-    { initialValue: null },
-  );
-
-  /** Last successful preview - linkedSignal keeps the previous value on errors so the UI never flashes empty. */
-  readonly preview = linkedSignal<PreviewState | null, PublicQuoteView | null>({
-    source: this.previewState,
-    computation: (current, previous) => current?.view ?? previous?.value ?? null,
-  });
-  readonly error = computed(() => this.previewState()?.error ?? null);
+  constructor() {
+    // a non-runner cannot be driven home on temporary plates
+    effect(() => {
+      const runner = this.isRunner();
+      untracked(() => {
+        if (!runner && this.state().deliveryMode === 'SELF_DRIVE') {
+          this.patch({ deliveryMode: 'TOW_TRUCK' });
+        }
+      });
+    });
+  }
 
   patch(changes: Partial<WizardState>): void {
     this.state.update((s) => {
@@ -128,6 +166,7 @@ export class CalculatorStore {
       persist(next);
       return next;
     });
+    this.result.set(null);
   }
 
   selectOrigin(origin: OriginCountry): void {
@@ -138,7 +177,7 @@ export class CalculatorStore {
       : next.auctions[0];
     // 12 000 USD must not silently become 12 000 JPY
     const bidPrice = next.currency === current.currency ? this.state().bidPrice : next.typicalBid;
-    this.patch({ originCountry: origin, auctionHouse, pickupZone: null, bidPrice });
+    this.patch({ originCountry: origin, auctionHouse, pickupZone: null, departurePort: null, bidPrice });
   }
 
   setBuyerType(buyerType: WizardState['buyerType']): void {
@@ -148,28 +187,50 @@ export class CalculatorStore {
     });
   }
 
-  goTo(step: WizardStep): void {
-    this.step.set(step);
+  toggleService(code: string): void {
+    const set = new Set(this.chosenServices());
+    if (set.has(code)) {
+      set.delete(code);
+    } else {
+      set.add(code);
+    }
+    this.patch({ postImportServices: [...set] });
   }
 
-  /** Persists the current inputs as a quote (idempotent per input set). */
+  goTo(step: WizardStep): void {
+    this.step.set(step);
+    if (step === RESULT_STEP && !this.result()) {
+      this.calculate();
+    }
+  }
+
+  /** Runs the full calculation and stores it as a quote (needed for the report checkout and partner leads). */
+  calculate(): void {
+    if (!this.browser || !this.isValid()) {
+      return;
+    }
+    this.calculating.set(true);
+    this.error.set(null);
+    this.api
+      .createQuote(this.request())
+      .pipe(
+        map((view) => ({ view, error: null as ApiProblem | null })),
+        catchError((e: HttpErrorResponse) => of({ view: null, error: (e.error as ApiProblem) ?? { status: e.status } })),
+      )
+      .subscribe(({ view, error }) => {
+        this.result.set(view);
+        this.error.set(error);
+        this.calculating.set(false);
+      });
+  }
+
+  /** The calculated quote, computing it first if needed. */
   freeze(): Observable<PublicQuoteView> {
-    const existing = this.frozenQuote();
+    const existing = this.result();
     if (existing?.quoteId) {
       return of(existing);
     }
-    return this.api.createQuote(this.request()).pipe(tap((q) => this.frozenQuote.set(q)));
-  }
-
-  private fetchPreview(req: CalculationRequest): Observable<PreviewState> {
-    this.loading.set(true);
-    return this.api.preview(req).pipe(
-      map((view): PreviewState => ({ view, error: null })),
-      catchError((e: HttpErrorResponse) =>
-        of<PreviewState>({ view: null, error: (e.error as ApiProblem) ?? { status: e.status } }),
-      ),
-      finalize(() => this.loading.set(false)),
-    );
+    return this.api.createQuote(this.request()).pipe(tap((q) => this.result.set(q)));
   }
 }
 

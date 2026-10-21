@@ -1,14 +1,18 @@
 import {
   AuctionHouse,
+  DeliveryMode,
   FuelType,
   OriginCountry,
   PortOption,
   VehicleCategory,
   VehicleCondition,
 } from '../../core/api/api.models';
+import { IconName } from '../../shared/icon/icons';
 
-/** Static wizard options. Server-side validation is authoritative; these only drive the UI. */
-/** `typicalBid` (in the origin currency) replaces the price when the user switches to a country with another currency. */
+/**
+ * Static wizard options. Server-side validation is authoritative; these only drive the UI.
+ * `typicalBid` (in the origin currency) replaces the price when the user switches to a country with another currency.
+ */
 export const ORIGINS: { code: OriginCountry; currency: string; auctions: AuctionHouse[]; typicalBid: number }[] = [
   { code: 'USA', currency: 'USD', auctions: ['COPART', 'IAAI', 'DEALER'], typicalBid: 12000 },
   { code: 'CANADA', currency: 'CAD', auctions: ['COPART', 'IAAI', 'DEALER'], typicalBid: 16000 },
@@ -21,6 +25,19 @@ export const ORIGINS: { code: OriginCountry; currency: string; auctions: Auction
 export const PICKUP_ZONES: Partial<Record<OriginCountry, string[]>> = {
   USA: ['NJ', 'NY', 'PA', 'GA', 'FL', 'TX', 'IL', 'AZ', 'CA'],
   CANADA: ['ON', 'QC'],
+};
+
+/** Export ports (UN/LOCODE -> name). */
+export const DEPARTURE_PORTS: Record<string, string> = {
+  USNWK: 'New York / Newark',
+  USSAV: 'Savannah',
+  USHOU: 'Houston',
+  USLAX: 'Los Angeles',
+  CAHAL: 'Halifax',
+  CAMTR: 'Montréal',
+  JPYOK: 'Yokohama',
+  AEJEA: 'Jebel Ali (Dubai)',
+  GBSOU: 'Southampton',
 };
 
 /** Mirrors the seeded EU ports; used for prerendering and as an offline fallback for GET /reference/ports. */
@@ -38,13 +55,18 @@ export const EU_COUNTRIES = [
 ] as const;
 
 export const CATEGORIES: VehicleCategory[] = ['PASSENGER_CAR', 'SUV', 'PICKUP_TRUCK', 'VAN', 'MOTORCYCLE'];
-
 export const FUELS: FuelType[] = ['PETROL', 'DIESEL', 'LPG', 'MHEV', 'HEV', 'PHEV', 'EV', 'HYDROGEN'];
-
 export const CONDITIONS: { code: VehicleCondition; surcharge: boolean }[] = [
   { code: 'RUN_AND_DRIVE', surcharge: false },
   { code: 'ENGINE_STARTS', surcharge: true },
   { code: 'NON_RUNNING', surcharge: true },
+];
+
+export const DELIVERY_MODES: { code: DeliveryMode; icon: IconName }[] = [
+  { code: 'CAR_CARRIER', icon: 'container' },
+  { code: 'TOW_TRUCK', icon: 'NON_RUNNING' },
+  { code: 'SELF_DRIVE', icon: 'ENGINE_STARTS' },
+  { code: 'PORT_PICKUP', icon: 'anchor' },
 ];
 
 /** Engine displacement at which Polish excise jumps (art. 105 ustawy o podatku akcyzowym). */
