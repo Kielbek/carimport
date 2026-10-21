@@ -1,0 +1,75 @@
+spring:
+  application:
+    name: carimport-api
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/carimport}
+    username: ${DB_USER:carimport}
+    password: ${DB_PASSWORD:carimport}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate.jdbc.time_zone: UTC
+  flyway:
+    enabled: true
+  messages:
+    basename: i18n/messages
+    fallback-to-system-locale: false
+    encoding: UTF-8
+  cache:
+    type: simple
+  threads:
+    virtual:
+      enabled: true
+
+server:
+  forward-headers-strategy: framework
+  error:
+    include-message: never
+
+management:
+  endpoints.web.exposure.include: health,info,metrics,prometheus
+
+app:
+  frontend-url: ${FRONTEND_URL:http://localhost:4200}
+  supported-locales: [pl, en, de, uk]
+  fx:
+    cron: "0 20 12,23 * * MON-FRI"
+  insurance:
+    rate: 0.015
+    minimum-eur: 60
+  stripe:
+    api-key: ${STRIPE_SECRET_KEY:sk_test_replace_me}
+    webhook-secret: ${STRIPE_WEBHOOK_SECRET:whsec_replace_me}
+  report:
+    storage-dir: ${REPORT_STORAGE_DIR:./var/reports}
+    price-minor:
+      PLN: 1900
+      EUR: 499
+      USD: 549
+  affiliates:
+    - id: fx-online
+      kind: CURRENCY_EXCHANGE
+      partner: "Online FX exchange"
+      url: "https://example-fx.com/{locale}?ref=carimport&sub={subId}"
+      origins: [USA, CANADA, JAPAN, UAE, UK]
+      countries: []
+      locales: []
+      priority: 1
+    - id: vin-history
+      kind: VIN_CHECK
+      partner: "VIN history report"
+      url: "https://example-vin.com/{locale}/?a_aid=carimport&chan={subId}"
+      origins: [USA, CANADA]
+      countries: []
+      locales: []
+      priority: 2
+    - id: leasing-pl
+      kind: FINANCING
+      partner: "Leasing broker PL"
+      url: "https://example-leasing.pl/?utm_source=carimport&sub={subId}"
+      origins: []
+      countries: [PL]
+      locales: [pl, uk]
+      priority: 3
