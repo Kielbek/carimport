@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
+<head>
+    <meta charset="UTF-8"/>
+    <title th:text="#{report.title}">Report</title>
+    <style>
+        @page { size: A4; margin: 18mm 16mm 20mm 16mm;
+            @bottom-center { content: counter(page) " / " counter(pages); font-size: 8pt; color: #64748b; } }
+        body { font-family: 'Report Sans', sans-serif; font-size: 9.5pt; color: #0f172a; }
+        h1 { font-size: 18pt; margin: 0 0 4mm 0; color: #1e3a8a; }
+        h2 { font-size: 12pt; margin: 7mm 0 2mm 0; color: #1e3a8a; border-bottom: 1px solid #cbd5e1; padding-bottom: 1mm; }
+        .meta td { padding: 0.6mm 4mm 0.6mm 0; }
+        .meta td.k { color: #475569; }
+        table.lines { width: 100%; border-collapse: collapse; }
+        table.lines th { text-align: left; background: #eff6ff; color: #1e3a8a; padding: 1.6mm; font-size: 8.5pt; }
+        table.lines td { padding: 1.4mm 1.6mm; border-bottom: 1px solid #e2e8f0; }
+        td.num, th.num { text-align: right; white-space: nowrap; }
+        tr { page-break-inside: avoid; }
+        tr.cat td { background: #f8fafc; font-weight: bold; }
+        tr.info td { color: #64748b; font-style: italic; }
+        tr.total td { font-size: 12pt; font-weight: bold; background: #1e3a8a; color: #fff; padding: 2.5mm 1.6mm; }
+        .warn { background: #fffbeb; border-left: 3px solid #f59e0b; padding: 1.5mm 3mm; margin: 1mm 0; }
+        .stage { font-weight: bold; margin-top: 2mm; }
+        .disclaimer { margin-top: 8mm; font-size: 7.5pt; color: #64748b; }
+    </style>
+</head>
+<body>
+<h1 th:text="#{report.title}">Report</h1>
+
+<table class="meta">
+    <tr><td class="k" th:text="#{report.preparedFor}">For</td><td><b th:text="${order.fullName}">Name</b></td></tr>
+    <tr><td class="k" th:text="#{report.date}">Date</td><td th:text="${result.calculationDate()}">2026-10-21</td></tr>
+    <tr><td class="k" th:text="#{report.fx}">FX</td><td th:text="${result.fxDate()}">2026-10-20</td></tr>
+    <tr><td class="k" th:text="#{report.route}">Route</td>
+        <td th:text="${result.route().departurePort()} + ' → ' + ${result.route().euPortName()} + ' → ' + ${request.destinationCountry()}">route</td></tr>
+    <tr><td class="k" th:text="#{report.transitDays}">Transit</td><td th:text="${result.route().transitDays()}">21</td></tr>
+    <tr><td class="k" th:text="#{report.hsCode}">HS</td><td th:text="${result.hsCode()}">8703</td></tr>
+    <tr><td class="k" th:text="#{report.customsValue}">CIF</td>
+        <td th:text="${#numbers.formatDecimal(result.customsValue().amount(), 1, 'DEFAULT', 2, 'DEFAULT')} + ' ' + ${result.customsValue().currency()}">0</td></tr>
+</table>
+
+<h2 th:text="#{report.breakdown}">Breakdown</h2>
+<table class="lines">
+    <thead>
+    <tr>
+        <th th:text="#{report.position}">Item</th>
+        <th class="num" th:text="#{report.original}">Original</th>
+        <th class="num" th:text="#{report.base}">Base</th>
+        <th class="num" th:text="#{report.rate}">Rate</th>
+        <th class="num" th:text="#{report.amount}">Amount</th>
+    </tr>
+    </thead>
+    <tbody>
+    <th:block th:each="cat : ${T(com.carimport.calculation.CostCategory).values()}">
+        <tr class="cat">
+            <td colspan="4" th:text="#{'category.' + ${cat}}">Category</td>
+            <td class="num" th:text="${#numbers.formatDecimal(result.totalsByCategory().get(cat).amount(), 1, 'DEFAULT', 2, 'DEFAULT')}">0</td>
+        </tr>
+        <tr th:each="l : ${result.lines()}" th:if="${l.line().category() == cat}"
+            th:class="${l.line().includedInTotal()} ? '' : 'info'">
+            <td>
+                <span th:text="#{'cost.' + ${l.line().code()}}">Label</span>
+                <span th:if="${l.line().params().get('localName') != null}" th:text="' (' + ${l.line().params().get('localName')} + ')'"></span>
+                <span th:if="${!l.line().includedInTotal()}" th:text="' – ' + #{report.informational}"></span>
+            </td>
+            <td class="num" th:text="${#numbers.formatDecimal(l.line().original().amount(), 1, 'DEFAULT', 2, 'DEFAULT')} + ' ' + ${l.line().original().currency()}">0</td>
+            <td class="num" th:text="${l.line().taxBase() != null} ? ${#numbers.formatDecimal(l.line().taxBase().amount(), 1, 'DEFAULT', 2, 'DEFAULT')} + ' ' + ${l.line().taxBase().currency()} : ''"></td>
+            <td class="num" th:text="${l.line().rate() != null} ? ${#numbers.formatPercent(l.line().rate(), 1, 2)} : ''"></td>
+            <td class="num" th:text="${#numbers.formatDecimal(l.display().amount(), 1, 'DEFAULT', 2, 'DEFAULT')}">0</td>
+        </tr>
+    </th:block>
+    <tr class="total">
+        <td colspan="4" th:text="#{report.total}">Total</td>
+        <td class="num" th:text="${#numbers.formatDecimal(result.total().amount(), 1, 'DEFAULT', 2, 'DEFAULT')} + ' ' + ${result.displayCurrency()}">0</td>
+    </tr>
+    </tbody>
+</table>
+
+<h2 th:text="#{report.documents}">Documents</h2>
+<th:block th:each="stage : ${T(com.carimport.report.DocumentChecklistService.Stage).values()}">
+    <div class="stage" th:text="#{'report.stage.' + ${stage}}">Stage</div>
+    <ul>
+        <li th:each="d : ${documents}" th:if="${d.stage() == stage}" th:text="#{${d.key()}}">doc</li>
+    </ul>
+</th:block>
+
+<th:block th:if="${!result.warnings().isEmpty()}">
+    <h2 th:text="#{report.warnings}">Notes</h2>
+    <div class="warn" th:each="w : ${result.warnings()}" th:text="#{${w}}">warning</div>
+</th:block>
+
+<p class="disclaimer" th:text="#{report.disclaimer}">Disclaimer</p>
+</body>
+</html>
