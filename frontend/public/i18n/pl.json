@@ -329,36 +329,13 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Kalkulator importu samochodów",
-      "title1": "Ile naprawdę kosztuje",
-      "title2": "auto z USA, Japonii czy Dubaju?",
-      "lead": "Policz koszt „pod dom” zanim zalicytujesz: opłaty Copart, IAAI i USS, transport, fracht, cło, akcyza i VAT dla wybranego portu w UE. Wynik na żywo, bez rejestracji.",
+      "eyebrow": "Import samochodów spoza UE",
+      "title1": "Sprowadź samochód",
+      "title2": "z USA, Kanady, Japonii, Dubaju i Wielkiej Brytanii",
+      "lead": "Policz pełny koszt przed licytacją — aukcja, transport, cło, akcyza i VAT — albo zleć cały import zweryfikowanemu partnerowi. Otrzymujesz auto gotowe do rejestracji.",
       "cta": "Oblicz koszt importu",
-      "secondary": "Jak liczymy"
-    },
-    "facts": {
-      "origins": {
-        "value": "5",
-        "label": "kierunków importu"
-      },
-      "eu": {
-        "value": "27",
-        "label": "krajów rejestracji w UE"
-      },
-      "fx": {
-        "value": "NBP",
-        "label": "kursy walut codziennie"
-      },
-      "time": {
-        "value": "60 s",
-        "label": "do pierwszego wyniku"
-      }
-    },
-    "example": {
-      "title": "Przykładowa wycena",
-      "badge": "Przykład",
-      "caption": "Copart, 12 000 USD, benzyna 2,5 l, odprawa w Bremerhaven, rejestracja w Polsce",
-      "route": "USA → Bremerhaven → PL"
+      "secondary": "Zamów auto pod klucz",
+      "visual": "Samochód sportowy w neonowym świetle"
     },
     "how": {
       "eyebrow": "Jak to działa",
@@ -379,16 +356,6 @@
         "title": "Pobierz raport lub zleć import",
         "text": "Wyliczenie co do grosza w PDF albo kontakt ze zweryfikowaną firmą importową."
       }
-    },
-    "countries": {
-      "eyebrow": "Kierunki",
-      "title": "Skąd sprowadzisz auto",
-      "lead": "Dla każdego kraju znamy cenniki aukcji, porty eksportowe i typowy czas transportu morskiego.",
-      "auctions": "Aukcje",
-      "sea": "Morzem",
-      "days": "dni",
-      "currency": "Waluta",
-      "cta": "Oblicz import"
     },
     "costs": {
       "eyebrow": "Z czego składa się cena",
@@ -437,6 +404,110 @@
     "final": {
       "title": "Policz swój import w minutę",
       "text": "Bez rejestracji. Wynik od razu, raport PDF gdy będziesz gotów kupić."
+    },
+    "strip": {
+      "brand": {
+        "title": "CarImport.eu",
+        "text": "Kalkulator i sieć partnerów importowych"
+      },
+      "docs": {
+        "title": "Dokumenty",
+        "text": "Pełna lista do odprawy i rejestracji"
+      },
+      "routes": {
+        "title": "8 tras morskich",
+        "text": "Do Bremerhaven, Rotterdamu, Antwerpii i Gdyni"
+      },
+      "fx": {
+        "title": "Kursy NBP",
+        "text": "Aktualizowane w każdy dzień roboczy"
+      }
+    },
+    "map": {
+      "eyebrow": "Trasy importu",
+      "title": "Z portów na całym świecie prosto do Unii Europejskiej",
+      "lead": "Znamy porty eksportowe, typowe trasy przez Panamę i Suez oraz czas rejsu do portów odprawy w UE. Najedź na kraj, aby zobaczyć jego trasy.",
+      "aria": "Mapa tras morskich z USA, Kanady, Japonii, ZEA i Wielkiej Brytanii do portów w Unii Europejskiej",
+      "eu": "Unia Europejska",
+      "legendEu": "Kraje UE (rejestracja)",
+      "legendOrigin": "Kraje zakupu",
+      "legendRoute": "Trasa morska",
+      "scroll": "Przesuń mapę w bok",
+      "days": "dni"
+    },
+    "services": {
+      "eyebrow": "Usługi",
+      "title": "Co dla Ciebie zrobimy",
+      "lead": "Pełny cykl — od policzenia kosztów do auta gotowego do rejestracji.",
+      "calc": {
+        "tag": "Kalkulator",
+        "title": "Koszt importu na żywo",
+        "text": "Aukcja, transport, cło, akcyza i VAT — wynik zmienia się z każdym parametrem."
+      },
+      "report": {
+        "tag": "Raport",
+        "title": "Wycena co do grosza",
+        "text": "Imienny PDF z każdą stawką i podstawą opodatkowania."
+      },
+      "fx": {
+        "tag": "Waluty",
+        "title": "Tańsza wymiana walut",
+        "text": "Zapłać za auto w USD, JPY lub AED bez marży banku."
+      },
+      "vin": {
+        "tag": "Historia",
+        "title": "Sprawdzenie VIN",
+        "text": "Szkody, przebieg i kradzieże — zanim zalicytujesz."
+      },
+      "finance": {
+        "tag": "Finanse",
+        "title": "Leasing i kredyt",
+        "text": "Sfinansuj zakup, transport i podatki."
+      },
+      "docs": {
+        "tag": "Dokumenty",
+        "title": "Odprawa i rejestracja",
+        "text": "Lista dokumentów dla Twojej trasy i kraju rejestracji."
+      },
+      "partner": {
+        "tag": "Pod klucz",
+        "title": "Import z partnerem",
+        "text": "Zweryfikowana firma kupi, przewiezie i odprawi auto za Ciebie."
+      }
+    },
+    "numbers": {
+      "eyebrow": "CarImport.eu w liczbach",
+      "title": "Liczby, które stoją za każdą wyceną",
+      "n1": {
+        "value": "5",
+        "label": "kierunków importu: USA, Kanada, Japonia, ZEA i Wielka Brytania"
+      },
+      "n2": {
+        "value": "27",
+        "label": "krajów UE, w których możesz zarejestrować auto"
+      },
+      "n3": {
+        "value": "5",
+        "label": "portów odprawy z porównaniem stawek VAT"
+      },
+      "n4": {
+        "value": "4",
+        "label": "języki: polski, angielski, niemiecki i ukraiński"
+      }
+    },
+    "contact": {
+      "eyebrow": "Gotowy sprowadzić auto?",
+      "title1": "Opisz,",
+      "title2": "jakiego auta szukasz",
+      "lead": "Partner przygotuje ofertę z terminem i ceną pod klucz.",
+      "b1": "Odpowiedź w ciągu 1 dnia roboczego",
+      "b2": "Tylko zweryfikowane firmy importowe",
+      "b3": "Bez zobowiązań i ukrytych kosztów",
+      "origin": "Skąd chcesz sprowadzić auto",
+      "message": "Jakie auto Cię interesuje",
+      "placeholder": "Marka, model, rocznik, budżet albo link do aukcji",
+      "submit": "Wyślij zapytanie",
+      "error": "Nie udało się wysłać. Spróbuj ponownie za chwilę."
     }
   },
   "pricing": {

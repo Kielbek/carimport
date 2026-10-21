@@ -1,77 +1,113 @@
 import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
+import { CountryNamePipe } from '../../core/format/country-name.pipe';
 import { LanguageService } from '../../core/i18n/language.service';
 import { pathFor } from '../../core/routing/paths';
-import { CountryNamePipe } from '../../core/format/country-name.pipe';
+import { SITE } from '../../core/site.config';
 import { Flag } from '../../shared/flag/flag';
 import { Icon } from '../../shared/icon/icon';
 import { IconName } from '../../shared/icon/icons';
+import { CarVisual } from './car-visual';
+import { ContactSection } from './contact-section';
 import { FaqSection } from './faq-section';
+import { WorldMap } from './world-map';
 
-interface OriginCard { code: string; auctions: string; days: string; currency: string }
+interface Service { key: string; icon: IconName; to: 'calculator' | 'contact' | 'pricing'; highlight?: boolean }
 
 /** Landing page - prerendered per language; content-rich for search, with the calculator one click away. */
 @Component({
   selector: 'app-home-page',
-  imports: [RouterLink, TranslatePipe, CountryNamePipe, Flag, Icon, FaqSection],
+  imports: [RouterLink, TranslatePipe, CountryNamePipe, Flag, Icon, CarVisual, WorldMap, FaqSection, ContactSection],
   template: `
-    <!-- HERO -->
-    <section class="hero relative isolate overflow-hidden border-b border-line">
-      <div class="grid-lines pointer-events-none absolute inset-0 -z-10 opacity-60"></div>
-      <div class="neon-ring -z-10"></div><div class="neon-bar -z-10"></div>
-      <div class="site grid items-center gap-12 pb-16 pt-14 lg:min-h-[620px] lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
-        <div>
+    <!-- HERO: always dark, like a studio shot -->
+    <section class="theme-dark relative isolate overflow-hidden bg-bg text-fg">
+      <div class="hero absolute inset-0 -z-20"></div>
+      <div class="neon-ring -z-10 !right-[8%] !top-[12%] !size-[420px] max-lg:!size-[260px]"></div>
+      <div class="neon-bar -z-10 !right-[4%] !top-[18%]"></div>
+      <div class="neon-bar -z-10 !right-[9%] !top-[26%] !h-[180px] !opacity-40 max-lg:hidden"></div>
+
+      <div class="site relative grid min-h-[640px] items-center gap-6 pb-10 pt-14 lg:grid-cols-[1fr_1.1fr] lg:pb-24">
+        <div class="relative z-10">
           <p class="eyebrow">{{ 'home.hero.eyebrow' | translate }}</p>
           <h1 class="h-display mt-5">
-            <span class="block text-brand-text">{{ 'home.hero.title1' | translate }}</span>
+            <span class="block text-brand">{{ 'home.hero.title1' | translate }}</span>
             <span class="block">{{ 'home.hero.title2' | translate }}</span>
           </h1>
-          <p class="lead mt-7 max-w-[540px]">{{ 'home.hero.lead' | translate }}</p>
+          <p class="lead mt-7 max-w-[520px] !text-fg/85">{{ 'home.hero.lead' | translate }}</p>
           <div class="mt-9 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
-            <a [routerLink]="calculator()" class="btn btn-primary">
-              <app-icon name="calculator" [size]="18" /> {{ 'home.hero.cta' | translate }}
-            </a>
-            <a routerLink="." fragment="how-it-works" class="link-arrow">{{ 'home.hero.secondary' | translate }} <app-icon name="arrow-right" [size]="18" /></a>
+            <a [routerLink]="calculator()" class="btn btn-primary"><app-icon name="calculator" [size]="18" /> {{ 'home.hero.cta' | translate }}</a>
+            <a routerLink="." fragment="contact" class="link-arrow !text-brand">{{ 'home.hero.secondary' | translate }} <app-icon name="arrow-right" [size]="18" /></a>
           </div>
-          <dl class="mt-12 grid grid-cols-2 gap-x-6 gap-y-5 border-t border-line pt-6 sm:grid-cols-4">
-            @for (f of facts; track f.key) {
-              <div class="sm:border-l sm:border-line sm:pl-5 sm:first:border-0 sm:first:pl-0">
-                <dt class="text-[22px] font-extrabold">{{ 'home.facts.' + f.key + '.value' | translate }}</dt>
-                <dd class="mt-1 text-xs text-muted">{{ 'home.facts.' + f.key + '.label' | translate }}</dd>
-              </div>
-            }
-          </dl>
         </div>
 
-        <!-- example quote card: illustrates the free result, clearly labelled as an example -->
-        <figure class="result-card mx-auto w-full max-w-[440px]" [attr.aria-label]="'home.example.title' | translate">
-          <div class="flex items-center justify-between">
-            <span class="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/60">{{ 'home.example.title' | translate }}</span>
-            <span class="badge badge--brand">{{ 'home.example.badge' | translate }}</span>
-          </div>
-          <p class="mt-4 text-[34px] font-extrabold tracking-tight text-brand">86 200 – 93 500 zł</p>
-          <p class="mt-1 text-sm text-white/60">{{ 'home.example.caption' | translate }}</p>
-          <div class="mt-6 flex h-2.5 overflow-hidden rounded-full bg-white/10">
-            @for (s of exampleShares; track s.key) {
-              <span [style.width.%]="s.pct" [style.background]="s.color"></span>
-            }
-          </div>
-          <ul class="mt-5 space-y-2.5 text-sm">
-            @for (s of exampleShares; track s.key) {
-              <li class="flex items-center justify-between">
-                <span class="flex items-center gap-2.5 text-white/80"><span class="size-2.5 rounded-[2px]" [style.background]="s.color"></span>{{ 'category.' + s.key | translate }}</span>
-                <span class="font-semibold tabular-nums">{{ s.pct }}%</span>
-              </li>
-            }
-          </ul>
-          <div class="mt-6 flex items-center gap-3 border-t border-white/10 pt-5 text-xs text-white/60">
-            <app-flag code="USA" class="w-6" /> <app-icon name="arrow-right" [size]="14" />
-            <app-flag code="DE" class="w-6" /> <app-icon name="arrow-right" [size]="14" />
-            <app-flag code="PL" class="w-6" />
-            <span class="ml-auto">{{ 'home.example.route' | translate }}</span>
-          </div>
-        </figure>
+        <div class="relative lg:-mr-24">
+          @if (heroImage) {
+            <img [src]="heroImage" alt="" class="w-full rounded-[6px] object-cover [mask-image:linear-gradient(90deg,transparent,black_25%)]" fetchpriority="high" />
+          } @else {
+            <app-car-visual class="mx-auto max-w-[820px] drop-shadow-[0_30px_40px_rgba(0,0,0,0.6)]" [label]="'home.hero.visual' | translate" />
+          }
+        </div>
+
+        <dl class="relative z-10 grid grid-cols-2 gap-x-6 gap-y-5 border-t border-line pt-6 lg:absolute lg:inset-x-5 lg:bottom-8 lg:grid-cols-4">
+          @for (k of strip; track k; let first = $first) {
+            <div [class]="first ? '' : 'lg:border-l lg:border-line lg:pl-8'">
+              <dt class="font-extrabold">{{ 'home.strip.' + k + '.title' | translate }}</dt>
+              <dd class="mt-1 text-xs text-muted">{{ 'home.strip.' + k + '.text' | translate }}</dd>
+            </div>
+          }
+        </dl>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section id="countries" class="site py-20">
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <div>
+          <p class="eyebrow">{{ 'home.map.eyebrow' | translate }}</p>
+          <h2 class="h-section mt-4 max-w-2xl">{{ 'home.map.title' | translate }}</h2>
+        </div>
+        <p class="lead max-w-md">{{ 'home.map.lead' | translate }}</p>
+      </div>
+      <div class="mt-10"><app-world-map /></div>
+    </section>
+
+    <!-- SERVICES (layout from the brand template: one wide visual card + icon cards) -->
+    <section id="services" class="relative overflow-hidden border-y border-line bg-bg-soft py-20">
+      <div class="site">
+        <p class="eyebrow">{{ 'home.services.eyebrow' | translate }}</p>
+        <h2 class="h-section mt-4">{{ 'home.services.title' | translate }}</h2>
+        <p class="lead mt-4">{{ 'home.services.lead' | translate }}</p>
+
+        <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <a [routerLink]="calculator()" class="theme-dark group relative min-h-[320px] overflow-hidden rounded-[6px] bg-ink sm:col-span-2">
+            <div class="neon-ring !-right-16 !-top-20 !size-[300px] opacity-40"></div>
+            <app-car-visual class="absolute -right-8 top-4 w-[100%] transition duration-500 group-hover:-translate-x-3 sm:top-0" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 text-white">
+              <span class="text-sm font-semibold uppercase tracking-[0.18em] text-brand">{{ 'home.services.calc.tag' | translate }}</span>
+              <h3 class="mt-2 text-2xl font-extrabold">{{ 'home.services.calc.title' | translate }}</h3>
+              <p class="mt-1 max-w-md text-sm text-white/80">{{ 'home.services.calc.text' | translate }}</p>
+            </div>
+          </a>
+
+          @for (s of services; track s.key) {
+            <a [routerLink]="s.to === 'calculator' ? calculator() : '.'" [fragment]="s.to === 'calculator' ? undefined : s.to"
+               class="group relative flex min-h-[260px] flex-col rounded-[6px] border p-6 transition duration-200 hover:-translate-y-1"
+               [class]="s.highlight ? 'border-brand bg-brand text-brand-ink' : 'border-line bg-panel hover:border-line-strong'">
+              <div class="flex items-start justify-between gap-3">
+                <app-icon [name]="s.icon" [size]="40" [stroke]="1.4" [class]="s.highlight ? 'text-brand-ink' : 'text-accent-text'" />
+                <span class="text-right text-[13px] font-semibold uppercase tracking-[0.16em]" [class]="s.highlight ? '' : 'text-accent-text'">{{ 'home.services.' + s.key + '.tag' | translate }}</span>
+              </div>
+              <h3 class="mt-8 text-xl font-extrabold leading-tight">{{ 'home.services.' + s.key + '.title' | translate }}</h3>
+              <p class="mt-2 text-sm leading-relaxed" [class]="s.highlight ? 'text-brand-ink/75' : 'text-muted'">{{ 'home.services.' + s.key + '.text' | translate }}</p>
+              <span class="ml-auto mt-auto grid size-10 place-items-center rounded-full transition group-hover:translate-x-1"
+                    [class]="s.highlight ? 'bg-brand-ink text-brand' : 'bg-brand text-brand-ink'">
+                <app-icon name="arrow-right" [size]="20" />
+              </span>
+            </a>
+          }
+        </div>
       </div>
     </section>
 
@@ -93,30 +129,23 @@ interface OriginCard { code: string; auctions: string; days: string; currency: s
       </ol>
     </section>
 
-    <!-- COUNTRIES -->
-    <section id="countries" class="border-y border-line bg-bg-soft py-20">
-      <div class="site">
-        <div class="flex flex-wrap items-end justify-between gap-6">
-          <div>
-            <p class="eyebrow">{{ 'home.countries.eyebrow' | translate }}</p>
-            <h2 class="h-section mt-4">{{ 'home.countries.title' | translate }}</h2>
-          </div>
-          <p class="lead max-w-md">{{ 'home.countries.lead' | translate }}</p>
+    <!-- NUMBERS -->
+    <section class="theme-dark relative overflow-hidden bg-bg py-20 text-fg">
+      <div class="hero absolute inset-0 opacity-70"></div>
+      <div class="site relative grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center">
+        <div>
+          <p class="text-[13px] font-semibold uppercase tracking-[0.18em] text-fg/70">{{ 'home.numbers.eyebrow' | translate }}</p>
+          <h2 class="h-section mt-4 max-w-lg">{{ 'home.numbers.title' | translate }}</h2>
+          <span class="mt-6 block h-0.5 w-32 bg-brand"></span>
         </div>
-        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
-          @for (o of origins; track o.code) {
-            <a [routerLink]="calculator()" [queryParams]="{ from: o.code }" class="card card-hover group flex flex-col p-5">
-              <app-flag [code]="o.code" class="w-14" />
-              <h3 class="mt-5 text-lg font-extrabold">{{ 'origin.' + o.code | translate }}</h3>
-              <dl class="mt-4 space-y-2 text-sm">
-                <div class="flex justify-between gap-2"><dt class="text-muted">{{ 'home.countries.auctions' | translate }}</dt><dd class="text-right font-medium">{{ o.auctions }}</dd></div>
-                <div class="flex justify-between gap-2"><dt class="text-muted">{{ 'home.countries.sea' | translate }}</dt><dd class="font-medium">{{ o.days }} {{ 'home.countries.days' | translate }}</dd></div>
-                <div class="flex justify-between gap-2"><dt class="text-muted">{{ 'home.countries.currency' | translate }}</dt><dd class="font-medium">{{ o.currency }}</dd></div>
-              </dl>
-              <span class="link-arrow mt-6 text-sm">{{ 'home.countries.cta' | translate }} <app-icon name="arrow-right" [size]="16" /></span>
-            </a>
+        <dl class="grid grid-cols-2">
+          @for (n of [1, 2, 3, 4]; track n; let i = $index) {
+            <div class="py-6" [class]="(i % 2 ? 'border-l border-line pl-8' : 'pr-8') + (i < 2 ? ' border-b border-line' : '')">
+              <dt class="text-[44px] font-extrabold leading-none text-brand sm:text-[56px]">{{ 'home.numbers.n' + n + '.value' | translate }}</dt>
+              <dd class="mt-3 text-sm text-muted">{{ 'home.numbers.n' + n + '.label' | translate }}</dd>
+            </div>
           }
-        </div>
+        </dl>
       </div>
     </section>
 
@@ -136,7 +165,6 @@ interface OriginCard { code: string; auctions: string; days: string; currency: s
           </article>
         }
       </div>
-
       <div class="mt-12 grid gap-8 lg:grid-cols-[1fr_1.2fr] lg:items-center">
         <div>
           <h3 class="text-2xl font-extrabold">{{ 'home.ports.title' | translate }}</h3>
@@ -179,7 +207,8 @@ interface OriginCard { code: string; auctions: string; days: string; currency: s
                   <li class="flex gap-2.5"><app-icon name="check" [size]="18" class="text-success" />{{ 'pricing.' + plan.key + '.f' + n | translate }}</li>
                 }
               </ul>
-              <a [routerLink]="calculator()" class="btn mt-8" [class]="plan.featured ? 'btn-primary' : 'btn-outline'">{{ 'pricing.' + plan.key + '.cta' | translate }}</a>
+              <a [routerLink]="plan.key === 'partner' ? '.' : calculator()" [fragment]="plan.key === 'partner' ? 'contact' : undefined"
+                 class="btn mt-8" [class]="plan.featured ? 'btn-primary' : 'btn-outline'">{{ 'pricing.' + plan.key + '.cta' | translate }}</a>
             </article>
           }
         </div>
@@ -188,15 +217,15 @@ interface OriginCard { code: string; auctions: string; days: string; currency: s
 
     <!-- B2B -->
     <section id="partners" class="site pt-20">
-      <div class="relative overflow-hidden rounded-[6px] bg-ink px-7 py-12 text-white sm:px-12">
+      <div class="theme-dark relative overflow-hidden rounded-[6px] bg-ink px-7 py-12 text-fg sm:px-12">
         <div class="neon-ring !-right-20 !-top-24 !size-[300px] opacity-40"></div>
         <div class="relative grid gap-8 lg:grid-cols-[1.3fr_1fr] lg:items-center">
           <div>
             <p class="text-[13px] font-semibold uppercase tracking-[0.18em] text-brand">{{ 'home.partners.eyebrow' | translate }}</p>
             <h2 class="mt-4 text-3xl font-extrabold sm:text-[36px]">{{ 'home.partners.title' | translate }}</h2>
-            <p class="mt-4 max-w-xl leading-relaxed text-white/70">{{ 'home.partners.text' | translate }}</p>
+            <p class="mt-4 max-w-xl leading-relaxed text-muted">{{ 'home.partners.text' | translate }}</p>
           </div>
-          <ul class="space-y-3 text-sm text-white/85">
+          <ul class="space-y-3 text-sm text-fg/85">
             @for (n of [1, 2, 3]; track n) {
               <li class="flex gap-3"><app-icon name="check-circle" [size]="20" class="text-brand" />{{ 'home.partners.b' + n | translate }}</li>
             }
@@ -207,31 +236,23 @@ interface OriginCard { code: string; auctions: string; days: string; currency: s
     </section>
 
     <app-faq-section />
-
-    <!-- FINAL CTA -->
-    <section class="site">
-      <div class="card flex flex-col items-start justify-between gap-6 p-8 sm:flex-row sm:items-center sm:p-10">
-        <div>
-          <h2 class="text-2xl font-extrabold sm:text-3xl">{{ 'home.final.title' | translate }}</h2>
-          <p class="mt-2 text-muted">{{ 'home.final.text' | translate }}</p>
-        </div>
-        <a [routerLink]="calculator()" class="btn btn-primary shrink-0">{{ 'home.hero.cta' | translate }} <app-icon name="arrow-right" [size]="18" /></a>
-      </div>
-    </section>
+    <app-contact-section />
   `,
 })
 export class HomePage {
   protected readonly lang = inject(LanguageService);
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
+  protected readonly heroImage = SITE.heroImage;
   protected readonly partnerMail = 'partnerzy@carimport.eu';
+  protected readonly strip = ['brand', 'docs', 'routes', 'fx'];
 
-  protected readonly facts = [{ key: 'origins' }, { key: 'eu' }, { key: 'fx' }, { key: 'time' }];
-
-  protected readonly exampleShares = [
-    { key: 'VEHICLE', pct: 54, color: 'var(--accent)' },
-    { key: 'TRANSPORT', pct: 12, color: '#38bdf8' },
-    { key: 'TAXES', pct: 31, color: 'var(--brand)' },
-    { key: 'REGISTRATION', pct: 3, color: '#94a3b8' },
+  protected readonly services: Service[] = [
+    { key: 'report', icon: 'document', to: 'calculator' },
+    { key: 'fx', icon: 'exchange', to: 'calculator' },
+    { key: 'vin', icon: 'search', to: 'calculator' },
+    { key: 'finance', icon: 'wallet', to: 'calculator' },
+    { key: 'docs', icon: 'list', to: 'calculator' },
+    { key: 'partner', icon: 'handshake', to: 'contact', highlight: true },
   ];
 
   protected readonly steps: { key: string; icon: IconName }[] = [
@@ -239,14 +260,6 @@ export class HomePage {
     { key: 's2', icon: 'PASSENGER_CAR' },
     { key: 's3', icon: 'pie' },
     { key: 's4', icon: 'document' },
-  ];
-
-  protected readonly origins: OriginCard[] = [
-    { code: 'USA', auctions: 'Copart · IAAI', days: '13–40', currency: 'USD' },
-    { code: 'CANADA', auctions: 'Copart · IAAI', days: '11–20', currency: 'CAD' },
-    { code: 'JAPAN', auctions: 'USS', days: '40–48', currency: 'JPY' },
-    { code: 'UAE', auctions: 'Copart · Emirates', days: '24–30', currency: 'AED' },
-    { code: 'UK', auctions: 'Copart · IAAI', days: '2–6', currency: 'GBP' },
   ];
 
   protected readonly costs: { key: string; icon: IconName; color: string }[] = [

@@ -329,36 +329,13 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Car import calculator",
-      "title1": "What does a car from",
-      "title2": "the USA, Japan or Dubai really cost?",
-      "lead": "Work out the landed cost before you bid: Copart, IAAI and USS fees, transport, freight, duty, excise and VAT for your EU port. Live result, no sign-up.",
+      "eyebrow": "Importing cars into the EU",
+      "title1": "Import your car",
+      "title2": "from the USA, Canada, Japan, Dubai or the UK",
+      "lead": "Work out the full cost before you bid — auction, shipping, duty, excise and VAT — or hand the whole import to a verified partner. You get a car ready for registration.",
       "cta": "Calculate import cost",
-      "secondary": "How we calculate"
-    },
-    "facts": {
-      "origins": {
-        "value": "5",
-        "label": "origin countries"
-      },
-      "eu": {
-        "value": "27",
-        "label": "EU countries of registration"
-      },
-      "fx": {
-        "value": "NBP",
-        "label": "daily exchange rates"
-      },
-      "time": {
-        "value": "60 s",
-        "label": "to your first result"
-      }
-    },
-    "example": {
-      "title": "Sample quote",
-      "badge": "Example",
-      "caption": "Copart, USD 12,000, 2.5 l petrol, cleared in Bremerhaven, registered in Poland",
-      "route": "USA → Bremerhaven → PL"
+      "secondary": "Order a turnkey import",
+      "visual": "Sports car in neon light"
     },
     "how": {
       "eyebrow": "How it works",
@@ -379,16 +356,6 @@
         "title": "Get the report or hand it over",
         "text": "An exact PDF breakdown, or contact with a verified import company."
       }
-    },
-    "countries": {
-      "eyebrow": "Origins",
-      "title": "Where you can import from",
-      "lead": "For every country we know the auction fee schedules, export ports and typical sea transit time.",
-      "auctions": "Auctions",
-      "sea": "At sea",
-      "days": "days",
-      "currency": "Currency",
-      "cta": "Calculate import"
     },
     "costs": {
       "eyebrow": "What the price is made of",
@@ -437,6 +404,110 @@
     "final": {
       "title": "Calculate your import in a minute",
       "text": "No sign-up. Instant result, PDF report when you are ready to buy."
+    },
+    "strip": {
+      "brand": {
+        "title": "CarImport.eu",
+        "text": "Calculator and import partner network"
+      },
+      "docs": {
+        "title": "Documents",
+        "text": "Full list for clearance and registration"
+      },
+      "routes": {
+        "title": "8 sea lanes",
+        "text": "To Bremerhaven, Rotterdam, Antwerp and Gdynia"
+      },
+      "fx": {
+        "title": "NBP rates",
+        "text": "Updated every business day"
+      }
+    },
+    "map": {
+      "eyebrow": "Import routes",
+      "title": "From ports around the world straight into the EU",
+      "lead": "We know the export ports, the usual lanes via Panama and Suez and the sailing time to EU clearance ports. Hover a country to see its routes.",
+      "aria": "Map of sea routes from the USA, Canada, Japan, UAE and UK to EU ports",
+      "eu": "European Union",
+      "legendEu": "EU countries (registration)",
+      "legendOrigin": "Buying countries",
+      "legendRoute": "Sea route",
+      "scroll": "Swipe to see the whole map",
+      "days": "days"
+    },
+    "services": {
+      "eyebrow": "Services",
+      "title": "What we do for you",
+      "lead": "The full cycle — from costing to a car ready for registration.",
+      "calc": {
+        "tag": "Calculator",
+        "title": "Live import cost",
+        "text": "Auction, shipping, duty, excise and VAT — the result updates with every input."
+      },
+      "report": {
+        "tag": "Report",
+        "title": "Exact breakdown",
+        "text": "A personal PDF with every rate and tax base."
+      },
+      "fx": {
+        "tag": "Currency",
+        "title": "Cheaper currency exchange",
+        "text": "Pay in USD, JPY or AED without bank margins."
+      },
+      "vin": {
+        "tag": "History",
+        "title": "VIN check",
+        "text": "Damage, mileage and theft records — before you bid."
+      },
+      "finance": {
+        "tag": "Finance",
+        "title": "Leasing and loans",
+        "text": "Finance the purchase, shipping and taxes."
+      },
+      "docs": {
+        "tag": "Documents",
+        "title": "Clearance and registration",
+        "text": "Document checklist for your route and country."
+      },
+      "partner": {
+        "tag": "Turnkey",
+        "title": "Import with a partner",
+        "text": "A verified company buys, ships and clears the car for you."
+      }
+    },
+    "numbers": {
+      "eyebrow": "CarImport.eu in numbers",
+      "title": "The numbers behind every quote",
+      "n1": {
+        "value": "5",
+        "label": "origin countries: USA, Canada, Japan, UAE and UK"
+      },
+      "n2": {
+        "value": "27",
+        "label": "EU countries where you can register the car"
+      },
+      "n3": {
+        "value": "5",
+        "label": "clearance ports with VAT comparison"
+      },
+      "n4": {
+        "value": "4",
+        "label": "languages: Polish, English, German, Ukrainian"
+      }
+    },
+    "contact": {
+      "eyebrow": "Ready to import your car?",
+      "title1": "Tell us",
+      "title2": "which car you want",
+      "lead": "A partner will prepare an offer with timing and a turnkey price.",
+      "b1": "Reply within 1 business day",
+      "b2": "Verified import companies only",
+      "b3": "No obligation, no hidden fees",
+      "origin": "Where from",
+      "message": "Which car are you after",
+      "placeholder": "Make, model, year, budget or an auction link",
+      "submit": "Send request",
+      "error": "Could not send. Please try again shortly."
     }
   },
   "pricing": {

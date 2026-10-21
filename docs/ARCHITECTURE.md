@@ -167,7 +167,8 @@ frontend/src/app/
 │                                 CookieConsent, LanguageMenu, ThemeToggle, Logo
 ├── shared/                       Icon (Lucide jako inline SVG), Flag (flag-icons SVG), CountUp
 └── features/
-    ├── home/                     HomePage (hero, jak to działa, kraje, koszty + tabela portów, cennik, B2B, CTA), FaqSection
+    ├── home/                     HomePage (hero, mapa tras, usługi, jak to działa, liczby, koszty + porty, cennik,
+    │                             B2B, FAQ, formularz), WorldMap (+ world-map.data.ts), CarVisual, ContactSection
     ├── calculator/               store + strona + 3 kroki + panel wyniku (Chart.js)
     ├── paywall/ leads/ affiliates/ report/ legal/
 ```
@@ -187,6 +188,15 @@ frontend/src/app/
   Domena jest w `core/site.config.ts` – przy wdrożeniu zmienić ją też w sitemap.
 * **Treść pod frazy**: „cło na samochód z USA”, „akcyza na auto”, „Bremerhaven czy Gdynia”, „procedura 4200” – sekcje
   objaśniające i FAQ są w prerenderowanym HTML; FAQ działa na natywnym `<details>` (dostępne, bez JS).
+
+* **Mapa tras importu** (`WorldMap`): kontury państw z Natural Earth (world-atlas, domena publiczna) jako
+  buforowany sprite `public/map/world.svg` (86 kB, ok. 30 kB po gzip) wstawiany przez `<use>`, więc dziedziczy kolory
+  motywu. Trasy morskie (przez Panamę, Suez, Gibraltar, Skagerrak) i porty są w kodzie i trafiają do prerenderu;
+  animacja przepływu i „statki” (`animateMotion`) mają prędkość proporcjonalną do czasu rejsu. Najechanie na kraj
+  podświetla jego trasy. Dane generuje `node tools/generate-world-map.mjs` (zmiana portów lub tras = ponowne uruchomienie).
+* **Hero**: zdjęcie auta ustawia się w `SITE.heroImage` (`core/site.config.ts`). Bez zdjęcia wyświetla się ilustracja
+  SVG (`CarVisual`) w kolorach marki. Hero i sekcja z liczbami są zawsze ciemne (klasa `theme-dark`
+  lokalnie nadpisuje tokeny).
 
 ### 3.0.1 Design system
 
