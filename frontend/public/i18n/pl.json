@@ -1,0 +1,287 @@
+{
+  "affiliate": {
+    "CURRENCY_EXCHANGE": "Tańsza wymiana walut",
+    "CURRENCY_EXCHANGE_HINT": "Zapłać za auto bez marży banku",
+    "FINANCING": "Leasing lub kredyt",
+    "FINANCING_HINT": "Sfinansuj import i podatki",
+    "VIN_CHECK": "Sprawdź historię VIN",
+    "VIN_CHECK_HINT": "Szkody, przebieg, kradzieże",
+    "sponsored": "Link partnerski",
+    "title": "Przyda Ci się też"
+  },
+  "app": {
+    "headline": "Ile naprawdę kosztuje auto z zagranicy?",
+    "tagline": "Licytacja w USA, Kanadzie, Japonii, Dubaju lub UK → cło, akcyza i VAT w UE. Wynik na żywo, bez rejestracji."
+  },
+  "auction": {
+    "COPART": "Copart",
+    "DEALER": "Dealer / prywatnie",
+    "EMIRATES_AUCTION": "Emirates Auction",
+    "IAAI": "IAAI",
+    "USS": "USS Japan"
+  },
+  "buyer": {
+    "COMPANY": "Firma",
+    "PRIVATE": "Osoba prywatna"
+  },
+  "category": {
+    "MOTORCYCLE": "Motocykl",
+    "PASSENGER_CAR": "Osobowy",
+    "PICKUP_TRUCK": "Pickup",
+    "REGISTRATION": "Rejestracja",
+    "SUV": "SUV",
+    "TAXES": "Opłaty skarbowe UE",
+    "TRANSPORT": "Transport i logistyka",
+    "VAN": "Van",
+    "VEHICLE": "Pojazd i aukcja"
+  },
+  "condition": {
+    "ENGINE_STARTS": "Silnik odpala",
+    "ENGINE_STARTS_HINT": "Nie jedzie o własnych siłach",
+    "NON_RUNNING": "Uszkodzony / Salvage",
+    "NON_RUNNING_HINT": "Wymaga lawety z wyciągarką",
+    "RUN_AND_DRIVE": "Run & Drive",
+    "RUN_AND_DRIVE_HINT": "Odpala i jeździ"
+  },
+  "cost": {
+    "AUCTION_AGENT_COMMISSION": "Prowizja agenta eksportowego",
+    "AUCTION_BUYER_FEE": "Opłata aukcyjna kupującego",
+    "AUCTION_ENVIRONMENTAL_FEE": "Opłata środowiskowa",
+    "AUCTION_EXPORT_DOCS": "Dokumenty eksportowe",
+    "AUCTION_GATE_FEE": "Opłata wyjazdowa (gate fee)",
+    "AUCTION_RECYCLING_FEE": "Opłata recyklingowa (Japonia)",
+    "AUCTION_SERVICE_FEE": "Opłata serwisowa aukcji",
+    "AUCTION_TITLE_HANDLING_FEE": "Obsługa dokumentu własności (title)",
+    "AUCTION_VIRTUAL_BID_FEE": "Opłata za licytację online",
+    "CARGO_INSURANCE": "Ubezpieczenie cargo",
+    "CUSTOMS_AGENCY": "Agencja celna",
+    "CUSTOMS_DUTY": "Cło",
+    "EXCISE_TAX": "Akcyza",
+    "FORKLIFT_LOADING": "Załadunek wózkiem widłowym",
+    "IMPORT_VAT": "VAT importowy",
+    "INDIVIDUAL_APPROVAL": "Homologacja jednostkowa (§21 StVZO)",
+    "INLAND_TRANSPORT": "Transport lądowy do portu",
+    "INTRA_EU_ACQUISITION_VAT": "VAT WNT (odwrotne obciążenie, do odliczenia)",
+    "INTRA_EU_TRANSPORT": "Transport lawetą z portu do kraju",
+    "OCEAN_FREIGHT": "Fracht morski",
+    "PORT_UNLOADING": "Rozładunek i terminal w porcie",
+    "PURCHASE_PRICE": "Cena zakupu (wylicytowana)",
+    "RDW_INSPECTION": "Kontrola RDW",
+    "RECYCLING_FEE": "Opłata recyklingowa",
+    "REGISTRATION_FEE": "Opłaty rejestracyjne",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Regulacja świateł (ruch lewostronny)",
+    "SWORN_TRANSLATION": "Tłumaczenie przysięgłe dokumentów",
+    "TECHNICAL_INSPECTION": "Badanie techniczne",
+    "US_LIGHTING_CONVERSION": "Przeróbka oświetlenia (wersja US)",
+    "WINCH_CONTAINER_LOADING": "Załadunek do kontenera (wyciągarka)"
+  },
+  "doc": {
+    "billOfLading": "Konosament (Bill of Lading)",
+    "companyRegistryExtract": "Odpis KRS / CEIDG firmy",
+    "customsDeclarationSad": "Zgłoszenie celne (SAD / ZC429)",
+    "customsPowerOfAttorney": "Pełnomocnictwo dla agencji celnej",
+    "eoriNumber": "Numer EORI importera",
+    "evChargingPortAdapterNote": "Sprawdź standard gniazda ładowania (NACS/CCS1 → CCS2)",
+    "historicExpertOpinion": "Opinia rzeczoznawcy o zabytkowym charakterze pojazdu",
+    "insurancePolicy": "Polisa ubezpieczenia cargo",
+    "invoice": "Faktura / Bill of Sale z aukcji",
+    "ownership": {
+      "japanExportCertificate": "Japoński certyfikat wyrejestrowania na eksport (Export Certificate)",
+      "title": "Oryginał Title (dokument własności)",
+      "uaeExportCertificate": "Certyfikat eksportowy ZEA (RTA)",
+      "v5c": "Brytyjski dowód rejestracyjny V5C"
+    },
+    "pl": {
+      "exciseDeclarationAkcUs": "Deklaracja akcyzowa AKC-U/S i potwierdzenie zapłaty",
+      "exciseExemptionConfirmation": "Potwierdzenie zwolnienia z akcyzy (EV)",
+      "recyclingFeeConfirmation": "Potwierdzenie opłaty recyklingowej"
+    },
+    "procedure4200VatIdAndProofOfTransport": "Procedura 4200: NIP UE nabywcy i dowód wywozu do kraju docelowego",
+    "registrationApplication": "Wniosek o rejestrację pojazdu",
+    "salvageTitleRepairEvidence": "Dokumentacja naprawy (salvage title)",
+    "swornTranslation": "Tłumaczenia przysięgłe dokumentów zagranicznych",
+    "technicalInspection": "Zaświadczenie o badaniu technicznym",
+    "transportInvoices": "Faktury za transport i fracht",
+    "usExportAesItn": "Zgłoszenie eksportowe USA (AES/ITN)",
+    "vatPaymentProof": "Dowód zapłaty VAT (lub VAT-25 przy WNT)"
+  },
+  "error": {
+    "auction": {
+      "noSchedule": "Brak cennika opłat aukcyjnych.",
+      "unsupported": "Ten dom aukcyjny nie jest obsługiwany."
+    },
+    "excise": {
+      "rateNotFound": "Brak stawki akcyzy dla tej konfiguracji."
+    },
+    "port": {
+      "unknown": "Nieznany port docelowy."
+    },
+    "procedure4200": {
+      "notAvailableInPort": "Procedura 4200 nie jest dostępna w tym porcie.",
+      "sameCountry": "Procedura 4200 wymaga, aby kraj odprawy był inny niż kraj docelowy."
+    },
+    "route": {
+      "unavailable": "Brak połączenia transportowego dla wybranej trasy."
+    },
+    "tariff": {
+      "notFound": "Nie udało się sklasyfikować pojazdu w taryfie celnej."
+    },
+    "taxProfile": {
+      "missing": "Brak stawek podatkowych dla wybranego kraju."
+    }
+  },
+  "fuel": {
+    "DIESEL": "Diesel",
+    "EV": "Elektryk",
+    "HEV": "Hybryda",
+    "HYDROGEN": "Wodór",
+    "LPG": "LPG",
+    "MHEV": "Mild hybrid",
+    "PETROL": "Benzyna",
+    "PHEV": "Plug-in"
+  },
+  "lead": {
+    "consentMarketing": "Chcę otrzymywać okazje i porady importowe (opcjonalnie).",
+    "consentTransfer": "Zgadzam się na przekazanie moich danych i wyceny jednemu zweryfikowanemu partnerowi w celu przygotowania oferty (RODO art. 6 ust. 1 lit. a).",
+    "email": "E-mail",
+    "message": "Link do aukcji lub dodatkowe informacje",
+    "name": "Imię i nazwisko",
+    "phone": "Telefon (opcjonalnie)",
+    "submit": "Wyślij zapytanie",
+    "subtitle": "Zweryfikowana firma importowa skontaktuje się z Tobą z ofertą „pod klucz”.",
+    "thanks": "Dziękujemy!",
+    "thanksHint": "Partner odezwie się w ciągu 1 dnia roboczego.",
+    "title": "Bezpieczny import z partnerem"
+  },
+  "origin": {
+    "CANADA": "Kanada",
+    "JAPAN": "Japonia",
+    "UAE": "ZEA / Dubaj",
+    "UK": "Wielka Brytania",
+    "USA": "USA"
+  },
+  "paywall": {
+    "blikHint": "Zapłacisz BLIK-iem, Przelewy24 lub kartą.",
+    "currency": "Waluta płatności",
+    "email": "E-mail (wyślemy link do raportu)",
+    "fullName": "Imię i nazwisko (na raporcie)",
+    "pay": "Przejdź do płatności",
+    "redirecting": "Przekierowanie…",
+    "secure": "Bezpieczna płatność Stripe. Nie przechowujemy danych karty.",
+    "subtitle": "Kwoty co do grosza, podstawy i stawki podatków, dokumenty – w PDF z Twoim nazwiskiem.",
+    "terms": "Akceptuję regulamin i żądam dostarczenia treści cyfrowej przed upływem terminu odstąpienia.",
+    "title": "Pełny raport importu"
+  },
+  "report": {
+    "amount": "Kwota",
+    "back": "Wróć do kalkulatora",
+    "base": "Podstawa",
+    "download": "Pobierz PDF",
+    "expired": "Płatność nie została zrealizowana.",
+    "generating": "Generujemy PDF…",
+    "item": "Pozycja",
+    "rate": "Stawka",
+    "refunded": "Zamówienie zostało zwrócone.",
+    "stage": {
+      "CUSTOMS": "Odprawa celna",
+      "PURCHASE": "Zakup",
+      "REGISTRATION": "Rejestracja",
+      "SHIPPING": "Transport"
+    },
+    "title": "Raport kosztów importu pojazdu",
+    "total": "Razem koszt „pod dom”",
+    "waiting": "Potwierdzamy płatność…"
+  },
+  "result": {
+    "chart": "Struktura kosztów",
+    "exciseIncluded": "Akcyza wliczona",
+    "fx": "Kursy NBP z {{date}}",
+    "paid1": "Dokładne opłaty aukcyjne",
+    "paid2": "Cło, akcyza i VAT",
+    "paid3": "Lista dokumentów",
+    "paid4": "Imienny raport PDF",
+    "partner": "Zleć bezpieczny import partnerowi",
+    "rangeHint": "Zakres uwzględnia wahania kursów i stawek frachtu.",
+    "title": "Szacowany koszt „pod dom”",
+    "transit": "{{days}} dni morzem",
+    "unlock": "Odblokuj wycenę co do grosza – {{price}}"
+  },
+  "shipping": {
+    "CONTAINER_EXCLUSIVE": "Kontener na wyłączność",
+    "CONTAINER_SHARED": "Kontener współdzielony",
+    "RORO": "RoRo"
+  },
+  "title": {
+    "CLEAN": "Clean title",
+    "SALVAGE": "Salvage / Non-repairable"
+  },
+  "validation": {
+    "auctionHouse": {
+      "notInOrigin": "Ten dom aukcyjny nie działa w wybranym kraju."
+    },
+    "engineCc": {
+      "required": "Podaj pojemność silnika."
+    },
+    "procedure4200": {
+      "companyOnly": "Procedura 4200 jest dostępna tylko dla firm z aktywnym numerem VAT UE."
+    }
+  },
+  "warning": {
+    "dealer": {
+      "verifyExportDocuments": "Przy zakupie od dealera sprawdź, czy sprzedawca dostarczy dokumenty eksportowe."
+    },
+    "historic": {
+      "expertOpinionRequired": "Status pojazdu zabytkowego (0% cła) wymaga opinii rzeczoznawcy i może zostać zakwestionowany przez urząd celny."
+    },
+    "intraEuTransport": {
+      "notPriced": "Brak cennika transportu z portu do kraju docelowego – koszt nieuwzględniony."
+    },
+    "newMeansOfTransport": {
+      "vatInDestination": "Nowy środek transportu (≤6 mies. lub ≤6000 km): VAT należny także w kraju rejestracji."
+    },
+    "nl": {
+      "bpmNotIncluded": "Podatek BPM (rejestracja w Holandii) nie jest uwzględniony."
+    },
+    "pl": {
+      "clearedForOtherMemberState": "Odprawa w Polsce dla auta rejestrowanego w innym kraju UE – sprawdź podatki rejestracyjne kraju docelowego.",
+      "exciseDeclarationWithin14Days": "Akcyzę zapłacisz w polskim urzędzie skarbowym (AKC-U/S) w ciągu 14 dni od przywozu.",
+      "pickupMayBeReclassified": "Pickup zarejestrowany jako osobowy może podlegać akcyzie – sprawdź homologację."
+    },
+    "procedure4200": {
+      "reverseChargeDeductible": "Procedura 4200: VAT rozliczasz w kraju docelowym w mechanizmie odwrotnego obciążenia (neutralny dla czynnego podatnika VAT)."
+    },
+    "registrationTax": {
+      "notModelled": "Krajowy podatek rejestracyjny kraju docelowego nie jest jeszcze uwzględniony."
+    }
+  },
+  "wizard": {
+    "auction": "Dom aukcyjny",
+    "back": "Wstecz",
+    "bid": "Cena wylicytowana",
+    "buyer": "Kupujący",
+    "category": "Typ pojazdu",
+    "condition": "Stan pojazdu",
+    "destination": "Kraj rejestracji",
+    "engineCc": "Pojemność silnika",
+    "exciseRate": "Akcyza PL: {{rate}}%",
+    "exciseWarning": "Powyżej 2000 cm³ akcyza rośnie z {{from}}% do {{to}}% – to często kilka tysięcy złotych różnicy!",
+    "finish": "Pełny raport",
+    "forklift": "wózek widłowy / wyciągarka",
+    "fuel": "Napęd",
+    "historic": "Pojazd zabytkowy w stanie oryginalnym",
+    "historicHint": "30+ lat, bez istotnych modyfikacji: 0% cła i obniżony VAT.",
+    "next": "Dalej",
+    "origin": "Kraj zakupu",
+    "port": "Port odprawy w UE",
+    "procedure4200": "Procedura celna 4200",
+    "procedure4200Hint": "Dla firm z VAT UE: bez VAT na granicy, rozliczenie w kraju docelowym (odwrotne obciążenie).",
+    "shipping": "Sposób transportu morskiego",
+    "step1": "Trasa",
+    "step2": "Pojazd",
+    "step3": "Stan i zakup",
+    "title": "Typ dokumentu (title)",
+    "year": "Rok produkcji",
+    "zone": "Lokalizacja placu (stan / prowincja)",
+    "zoneOther": "Inna / nie wiem"
+  }
+}

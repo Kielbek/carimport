@@ -1,0 +1,287 @@
+{
+  "affiliate": {
+    "CURRENCY_EXCHANGE": "Günstiger Geldwechsel",
+    "CURRENCY_EXCHANGE_HINT": "Ohne Bankmarge bezahlen",
+    "FINANCING": "Leasing oder Kredit",
+    "FINANCING_HINT": "Import und Steuern finanzieren",
+    "VIN_CHECK": "VIN-Historie prüfen",
+    "VIN_CHECK_HINT": "Schäden, Kilometer, Diebstahl",
+    "sponsored": "Anzeige",
+    "title": "Das könnte helfen"
+  },
+  "app": {
+    "headline": "Was kostet ein Importauto wirklich?",
+    "tagline": "Auktion in USA, Kanada, Japan, Dubai oder UK → EU-Zoll, Verbrauchsteuer und USt. Live-Ergebnis ohne Anmeldung."
+  },
+  "auction": {
+    "COPART": "Copart",
+    "DEALER": "Händler / privat",
+    "EMIRATES_AUCTION": "Emirates Auction",
+    "IAAI": "IAAI",
+    "USS": "USS Japan"
+  },
+  "buyer": {
+    "COMPANY": "Unternehmen",
+    "PRIVATE": "Privatperson"
+  },
+  "category": {
+    "MOTORCYCLE": "Motorrad",
+    "PASSENGER_CAR": "Pkw",
+    "PICKUP_TRUCK": "Pickup",
+    "REGISTRATION": "Zulassung",
+    "SUV": "SUV",
+    "TAXES": "EU-Zölle & Steuern",
+    "TRANSPORT": "Transport & Logistik",
+    "VAN": "Van",
+    "VEHICLE": "Fahrzeug & Auktion"
+  },
+  "condition": {
+    "ENGINE_STARTS": "Motor startet",
+    "ENGINE_STARTS_HINT": "Nicht fahrbereit",
+    "NON_RUNNING": "Beschädigt / Salvage",
+    "NON_RUNNING_HINT": "Benötigt Seilwinde",
+    "RUN_AND_DRIVE": "Run & Drive",
+    "RUN_AND_DRIVE_HINT": "Startet und fährt"
+  },
+  "cost": {
+    "AUCTION_AGENT_COMMISSION": "Provision des Exportagenten",
+    "AUCTION_BUYER_FEE": "Käufergebühr der Auktion",
+    "AUCTION_ENVIRONMENTAL_FEE": "Umweltgebühr",
+    "AUCTION_EXPORT_DOCS": "Exportdokumente",
+    "AUCTION_GATE_FEE": "Gate-Gebühr",
+    "AUCTION_RECYCLING_FEE": "Recyclinggebühr (Japan)",
+    "AUCTION_SERVICE_FEE": "Servicegebühr der Auktion",
+    "AUCTION_TITLE_HANDLING_FEE": "Title-Bearbeitungsgebühr",
+    "AUCTION_VIRTUAL_BID_FEE": "Online-Gebotsgebühr",
+    "CARGO_INSURANCE": "Transportversicherung",
+    "CUSTOMS_AGENCY": "Zollagentur",
+    "CUSTOMS_DUTY": "Zoll",
+    "EXCISE_TAX": "Verbrauchsteuer",
+    "FORKLIFT_LOADING": "Verladung per Gabelstapler",
+    "IMPORT_VAT": "Einfuhrumsatzsteuer",
+    "INDIVIDUAL_APPROVAL": "Einzelabnahme (§21 StVZO)",
+    "INLAND_TRANSPORT": "Landtransport zum Hafen",
+    "INTRA_EU_ACQUISITION_VAT": "Erwerbsteuer (Reverse Charge, abziehbar)",
+    "INTRA_EU_TRANSPORT": "Autotransport vom Hafen ins Zielland",
+    "OCEAN_FREIGHT": "Seefracht",
+    "PORT_UNLOADING": "Entladung & Terminal im Hafen",
+    "PURCHASE_PRICE": "Kaufpreis (Zuschlag)",
+    "RDW_INSPECTION": "RDW-Prüfung",
+    "RECYCLING_FEE": "Recyclinggebühr",
+    "REGISTRATION_FEE": "Zulassungsgebühren",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Scheinwerfereinstellung (RHD)",
+    "SWORN_TRANSLATION": "Beglaubigte Übersetzung",
+    "TECHNICAL_INSPECTION": "Technische Prüfung",
+    "US_LIGHTING_CONVERSION": "Umrüstung der Beleuchtung (US-Version)",
+    "WINCH_CONTAINER_LOADING": "Containerverladung per Seilwinde"
+  },
+  "doc": {
+    "billOfLading": "Konnossement (Bill of Lading)",
+    "companyRegistryExtract": "Handelsregisterauszug",
+    "customsDeclarationSad": "Zollanmeldung (ATLAS / SAD)",
+    "customsPowerOfAttorney": "Vollmacht für den Zollagenten",
+    "eoriNumber": "EORI-Nummer des Importeurs",
+    "evChargingPortAdapterNote": "Ladeanschluss prüfen (NACS/CCS1 → CCS2)",
+    "historicExpertOpinion": "Oldtimer-Gutachten",
+    "insurancePolicy": "Transportversicherungspolice",
+    "invoice": "Auktionsrechnung / Bill of Sale",
+    "ownership": {
+      "japanExportCertificate": "Japanisches Exportzertifikat",
+      "title": "Original-Title (Eigentumsnachweis)",
+      "uaeExportCertificate": "VAE-Exportzertifikat (RTA)",
+      "v5c": "Britisches V5C"
+    },
+    "pl": {
+      "exciseDeclarationAkcUs": "Verbrauchsteuererklärung AKC-U/S",
+      "exciseExemptionConfirmation": "Bestätigung der Verbrauchsteuerbefreiung (EV)",
+      "recyclingFeeConfirmation": "Bestätigung der Recyclinggebühr"
+    },
+    "procedure4200VatIdAndProofOfTransport": "Verfahren 4200: USt-IdNr. und Verbringungsnachweis",
+    "registrationApplication": "Zulassungsantrag",
+    "salvageTitleRepairEvidence": "Reparaturnachweise (Salvage Title)",
+    "swornTranslation": "Beglaubigte Übersetzungen",
+    "technicalInspection": "Prüfbescheinigung",
+    "transportInvoices": "Transport- und Frachtrechnungen",
+    "usExportAesItn": "US-Exportanmeldung (AES/ITN)",
+    "vatPaymentProof": "Nachweis der USt-Zahlung"
+  },
+  "error": {
+    "auction": {
+      "noSchedule": "Kein Gebührenplan verfügbar.",
+      "unsupported": "Dieses Auktionshaus wird nicht unterstützt."
+    },
+    "excise": {
+      "rateNotFound": "Kein Verbrauchsteuersatz für diese Konfiguration."
+    },
+    "port": {
+      "unknown": "Unbekannter Zielhafen."
+    },
+    "procedure4200": {
+      "notAvailableInPort": "Verfahren 4200 ist in diesem Hafen nicht verfügbar.",
+      "sameCountry": "Verfahren 4200 erfordert ein anderes Abfertigungsland als das Zielland."
+    },
+    "route": {
+      "unavailable": "Keine Transportroute für diese Auswahl verfügbar."
+    },
+    "tariff": {
+      "notFound": "Das Fahrzeug konnte nicht tarifiert werden."
+    },
+    "taxProfile": {
+      "missing": "Keine Steuersätze für das gewählte Land."
+    }
+  },
+  "fuel": {
+    "DIESEL": "Diesel",
+    "EV": "Elektro",
+    "HEV": "Hybrid",
+    "HYDROGEN": "Wasserstoff",
+    "LPG": "LPG",
+    "MHEV": "Mild-Hybrid",
+    "PETROL": "Benzin",
+    "PHEV": "Plug-in"
+  },
+  "lead": {
+    "consentMarketing": "Ich möchte Import-Angebote und Tipps erhalten (optional).",
+    "consentTransfer": "Ich willige ein, dass meine Daten an einen geprüften Partner übermittelt werden (DSGVO Art. 6 Abs. 1 lit. a).",
+    "email": "E-Mail",
+    "message": "Auktionslink oder weitere Infos",
+    "name": "Name",
+    "phone": "Telefon (optional)",
+    "submit": "Anfrage senden",
+    "subtitle": "Ein geprüftes Importunternehmen meldet sich mit einem Komplettangebot.",
+    "thanks": "Vielen Dank!",
+    "thanksHint": "Ein Partner meldet sich innerhalb eines Werktags.",
+    "title": "Sicherer Import mit Partner"
+  },
+  "origin": {
+    "CANADA": "Kanada",
+    "JAPAN": "Japan",
+    "UAE": "VAE / Dubai",
+    "UK": "Vereinigtes Königreich",
+    "USA": "USA"
+  },
+  "paywall": {
+    "blikHint": "Zahlung per BLIK, Przelewy24 oder Karte.",
+    "currency": "Zahlungswährung",
+    "email": "E-Mail (für den Berichtslink)",
+    "fullName": "Vollständiger Name (im Bericht)",
+    "pay": "Weiter zur Zahlung",
+    "redirecting": "Weiterleitung…",
+    "secure": "Sichere Zahlung über Stripe. Keine Kartendaten bei uns.",
+    "subtitle": "Exakte Beträge, Bemessungsgrundlagen, Dokumente – als PDF mit Ihrem Namen.",
+    "terms": "Ich akzeptiere die AGB und verlange die sofortige Lieferung digitaler Inhalte.",
+    "title": "Vollständiger Importbericht"
+  },
+  "report": {
+    "amount": "Betrag",
+    "back": "Zurück zum Rechner",
+    "base": "Bemessungsgrundlage",
+    "download": "PDF herunterladen",
+    "expired": "Die Zahlung wurde nicht abgeschlossen.",
+    "generating": "PDF wird erstellt…",
+    "item": "Position",
+    "rate": "Satz",
+    "refunded": "Diese Bestellung wurde erstattet.",
+    "stage": {
+      "CUSTOMS": "Zollabfertigung",
+      "PURCHASE": "Kauf",
+      "REGISTRATION": "Zulassung",
+      "SHIPPING": "Versand"
+    },
+    "title": "Kostenbericht Fahrzeugimport",
+    "total": "Gesamtkosten bis vor die Tür",
+    "waiting": "Zahlung wird bestätigt…"
+  },
+  "result": {
+    "chart": "Kostenstruktur",
+    "exciseIncluded": "Verbrauchsteuer enthalten",
+    "fx": "NBP-Kurse vom {{date}}",
+    "paid1": "Exakte Auktionsgebühren",
+    "paid2": "Zoll, Verbrauchsteuer & USt",
+    "paid3": "Dokumenten-Checkliste",
+    "paid4": "Persönlicher PDF-Bericht",
+    "partner": "Import an geprüften Partner übergeben",
+    "rangeHint": "Die Spanne deckt Wechselkurs- und Frachtschwankungen ab.",
+    "title": "Geschätzte Gesamtkosten",
+    "transit": "{{days}} Tage Seeweg",
+    "unlock": "Exakte Aufstellung freischalten – {{price}}"
+  },
+  "shipping": {
+    "CONTAINER_EXCLUSIVE": "Exklusiver Container",
+    "CONTAINER_SHARED": "Sammelcontainer",
+    "RORO": "RoRo"
+  },
+  "title": {
+    "CLEAN": "Clean Title",
+    "SALVAGE": "Salvage / Non-repairable"
+  },
+  "validation": {
+    "auctionHouse": {
+      "notInOrigin": "Dieses Auktionshaus ist im gewählten Land nicht tätig."
+    },
+    "engineCc": {
+      "required": "Bitte Hubraum angeben."
+    },
+    "procedure4200": {
+      "companyOnly": "Verfahren 4200 nur für Unternehmen mit gültiger USt-IdNr."
+    }
+  },
+  "warning": {
+    "dealer": {
+      "verifyExportDocuments": "Beim Kauf vom Händler: Exportdokumente müssen mitgeliefert werden."
+    },
+    "historic": {
+      "expertOpinionRequired": "Der Oldtimer-Status (0 % Zoll) erfordert ein Gutachten und kann vom Zoll angefochten werden."
+    },
+    "intraEuTransport": {
+      "notPriced": "Kein Transportpreis vom Hafen ins Zielland – nicht enthalten."
+    },
+    "newMeansOfTransport": {
+      "vatInDestination": "Neues Fahrzeug (≤6 Monate oder ≤6000 km): USt ist im Zulassungsland fällig."
+    },
+    "nl": {
+      "bpmNotIncluded": "Die niederländische BPM ist nicht enthalten."
+    },
+    "pl": {
+      "clearedForOtherMemberState": "In Polen verzollt, Zulassung in einem anderen Land – Zulassungssteuern prüfen.",
+      "exciseDeclarationWithin14Days": "Die polnische Verbrauchsteuer ist binnen 14 Tagen beim Finanzamt (AKC-U/S) zu zahlen.",
+      "pickupMayBeReclassified": "Ein als Pkw zugelassener Pickup kann verbrauchsteuerpflichtig sein."
+    },
+    "procedure4200": {
+      "reverseChargeDeductible": "Verfahren 4200: Die Steuer wird im Zielland per Reverse Charge erklärt (neutral für Unternehmer)."
+    },
+    "registrationTax": {
+      "notModelled": "Die Zulassungssteuer des Ziellandes ist noch nicht berücksichtigt."
+    }
+  },
+  "wizard": {
+    "auction": "Auktionshaus",
+    "back": "Zurück",
+    "bid": "Zuschlagspreis",
+    "buyer": "Käufer",
+    "category": "Fahrzeugtyp",
+    "condition": "Fahrzeugzustand",
+    "destination": "Zulassungsland",
+    "engineCc": "Hubraum",
+    "exciseRate": "PL-Verbrauchsteuer: {{rate}} %",
+    "exciseWarning": "Über 2000 cm³ steigt die Verbrauchsteuer von {{from}} % auf {{to}} %!",
+    "finish": "Vollständiger Bericht",
+    "forklift": "Gabelstapler / Seilwinde",
+    "fuel": "Antrieb",
+    "historic": "Oldtimer im Originalzustand",
+    "historicHint": "30+ Jahre, unverändert: 0 % Zoll und ermäßigte USt.",
+    "next": "Weiter",
+    "origin": "Kaufland",
+    "port": "EU-Abfertigungshafen",
+    "procedure4200": "Zollverfahren 4200",
+    "procedure4200Hint": "Für Unternehmen mit USt-IdNr.: keine EUSt an der Grenze, Reverse Charge im Zielland.",
+    "shipping": "Seetransport",
+    "step1": "Route",
+    "step2": "Fahrzeug",
+    "step3": "Zustand & Kauf",
+    "title": "Title-Art",
+    "year": "Baujahr",
+    "zone": "Standort (Bundesstaat / Provinz)",
+    "zoneOther": "Andere / weiß nicht"
+  }
+}
