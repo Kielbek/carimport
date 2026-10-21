@@ -7,7 +7,7 @@ wartość celna CIF, cło (TARIC), akcyza, VAT importowy zależny od portu odpra
 |-------------|-----------------------------------------------------------------------|
 | `backend/`  | Spring Boot 3.5, Java 21, PostgreSQL + Flyway, Stripe, OpenHTMLtoPDF  |
 | `frontend/` | Angular 21 (standalone, Signals, control flow, zoneless), Tailwind 4, ngx-translate, Chart.js |
-| `docs/`     | [Architektura](docs/ARCHITECTURE.md) – model danych, silnik, frontend, i18n, płatności |
+| `docs/`     | [Architektura](docs/ARCHITECTURE.md) – model danych, silnik, frontend, i18n, płatności; [zrzut kreatora](docs/assets/wizard-step2.png), [przykładowy raport PDF](docs/assets/sample-report-pl.pdf) |
 
 ## Uruchomienie lokalne
 
