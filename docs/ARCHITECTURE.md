@@ -148,28 +148,57 @@ Copart salvage, bid 10 000 USD, NJ → Newark → Gdynia, benzyna 2500 cm³, PL;
 
 ---
 
-## 3. Frontend (Angular 21: standalone, Signals, control flow, zoneless)
+## 3. Frontend (Angular 21: standalone, Signals, control flow, zoneless, SSG)
 
 ```
 frontend/src/app/
-├── app.config.ts                 provideZonelessChangeDetection, router (input binding), HttpClient + interceptor, ngx-translate
-├── app.routes.ts                 '' → wykryty język; ':lang' (guard) → kalkulator | result/:quoteId | report/:orderId (lazy)
+├── app.config.ts / app.config.server.ts   zoneless, hydracja z event replay, router (input binding, anchor scrolling)
+├── app.routes.ts                 '' → wykryty język; ':lang' (guard czeka na tłumaczenia) → Shell:
+│                                 home | kalkulator·calculator·rechner·kalkuliator | polityka-prywatnosci… | result | report
+├── app.routes.server.ts          prerender stron publicznych per język; report/result/root renderowane w przeglądarce
 ├── core/
-│   ├── api/                      api.models.ts (lustro DTO z Javy), carimport-api.ts (typowany klient)
-│   ├── i18n/                     LanguageService (signal), languageGuard, acceptLanguageInterceptor
-│   └── format/                   MoneyPipe, LocalNumberPipe, CountryNamePipe (Intl.DisplayNames)
-├── shared/count-up.directive.ts  animacja liczb (rAF, prefers-reduced-motion)
+│   ├── api/                      api.models.ts (lustro DTO z Javy), carimport-api.ts
+│   ├── i18n/                     LanguageService (signal), languageGuard, LazyJsonTranslateLoader, interceptor
+│   ├── routing/paths.ts          zlokalizowane slugi + pathFor(page, lang)
+│   ├── seo/seo.service.ts        title, description, canonical, hreflang, OG/Twitter, JSON-LD
+│   ├── theme/theme.service.ts    jasny/ciemny (data-theme na <html>)
+│   └── format/                   MoneyPipe, LocalNumberPipe, CountryNamePipe (Intl)
+├── layout/                       Shell, SiteHeader (top bar, nav, język, motyw, menu mobilne), SiteFooter,
+│                                 CookieConsent, LanguageMenu, ThemeToggle, Logo
+├── shared/                       Icon (Lucide jako inline SVG), Flag (flag-icons SVG), CountUp
 └── features/
-    ├── calculator/
-    │   ├── calculator.store.ts   ★ stan + logika na Signals (provider na poziomie strony)
-    │   ├── calculator-page.ts    powłoka kreatora, pasek postępu, pasek wyniku na mobile
-    │   ├── steps/                step-route (flagi, porty z VAT), step-vehicle (suwak cm³ + alarm akcyzy), step-condition
-    │   └── result/               live-result-panel (przedział, CTA), cost-donut (Chart.js aktualizowany in-place)
-    ├── paywall/paywall-modal.ts  dane na raport → freeze quote → Stripe Checkout
-    ├── report/                   report-page (polling statusu, tabela co do grosza, PDF), order-tokens
-    ├── leads/partner-lead-form   lead B2B (zgody RODO, honeypot)
-    └── affiliates/               widgety kantor / VIN / leasing (kontekstowe, rel="sponsored")
+    ├── home/                     HomePage (hero, jak to działa, kraje, koszty + tabela portów, cennik, B2B, CTA), FaqSection
+    ├── calculator/               store + strona + 3 kroki + panel wyniku (Chart.js)
+    ├── paywall/ leads/ affiliates/ report/ legal/
 ```
+
+### 3.0 Strona publiczna i SEO
+
+* **Static Site Generation** (`outputMode: "static"`): strona główna, kalkulator i polityka prywatności są
+  prerenderowane do HTML w 4 językach (12 plików). Google dostaje pełną treść, nagłówki i dane strukturalne bez
+  wykonywania JS; hosting to dowolny CDN. Strony osobiste (`/report/…`, `/result/…`) renderują się w przeglądarce
+  i mają `noindex`.
+* **Zlokalizowane adresy**: `/pl/kalkulator`, `/en/calculator`, `/de/rechner`, `/uk/kalkuliator`; przełącznik języka
+  prowadzi do odpowiednika bieżącej strony, nie na stronę główną.
+* **`SeoService`** ustawia per strona: `<title>`, description, canonical, `hreflang` dla 4 języków + `x-default`,
+  Open Graph (`og-image.png` 1200×630) i Twitter Card oraz JSON-LD: `Organization`, `WebSite`, `WebApplication`
+  (z ofertami 0 zł / 19 zł), `FAQPage` (te same 8 pytań co w sekcji FAQ), `BreadcrumbList`, `WebPage`.
+* `public/sitemap.xml` (z alternatywami `xhtml:link`) i `robots.txt` (blokuje `/api`, raporty i linki wycen).
+  Domena jest w `core/site.config.ts` – przy wdrożeniu zmienić ją też w sitemap.
+* **Treść pod frazy**: „cło na samochód z USA”, „akcyza na auto”, „Bremerhaven czy Gdynia”, „procedura 4200” – sekcje
+  objaśniające i FAQ są w prerenderowanym HTML; FAQ działa na natywnym `<details>` (dostępne, bez JS).
+
+### 3.0.1 Design system
+
+* Styl według szablonu marki: ciemne tło, Inter, cienkie linie, ostre narożniki (4–6 px), neonowy okrąg i belka
+  w hero – w kolorystyce **żółty (`brand`, akcje i wyróżnienia) + niebieski (`accent`, linki, zaznaczenia, focus)**.
+* Kolory to **tokeny semantyczne** (`bg`, `panel`, `line`, `fg`, `muted`, `brand`, `accent`, `ink`) zdefiniowane jako
+  zmienne CSS i podpięte do Tailwind 4 (`@theme inline`). Motyw jasny/ciemny = jeden atrybut `data-theme`, ustawiany
+  skryptem w `index.html` przed pierwszym renderem (bez mignięcia); domyślnie według ustawień systemu.
+* **Bez emoji**: ikony liniowe Lucide renderowane szablonem jako inline SVG (działa w prerenderze, bez `innerHTML`),
+  flagi z `flag-icons` serwowane lokalnie z `/flags` (bez zapytań do zewnętrznych serwerów).
+* Wyskakujące elementy: baner cookies (równorzędne „Akceptuję” / „Tylko niezbędne”, pokazywany dopiero po hydracji),
+  modale płatności i leada, menu języka i menu mobilne (Escape / klik poza zamyka).
 
 ### 3.1 Przeliczanie na żywo – `CalculatorStore`
 
@@ -206,9 +235,15 @@ Stan kreatora jest w `sessionStorage`, więc powrót z anulowanej płatności St
 
 ### 3.2 UX / mikrointerakcje
 
-Karty z efektem hover-lift i „sprężystym” kliknięciem, flagi obracające się przy hoverze, przejścia między krokami,
-shimmer podczas przeliczania, modal z animacją pop-in, pełna obsługa `prefers-reduced-motion` i trybu ciemnego,
-layout mobilny bez poziomego scrolla z przyklejonym paskiem wyniku.
+* **Progresywne ujawnianie** (Angular `animate.enter` / `animate.leave`): lokalizacja placu tylko dla USA/Kanady,
+  typ tytułu tylko dla Copart/IAAI, checkbox zabytku dopiero dla aut 30+, suwak pojemności znika dla EV/wodoru,
+  procedura 4200 tylko dla firm; transport, kupujący i 4200 schowane w „Opcjach zaawansowanych” z jednolinijkowym
+  podsumowaniem.
+* Suwak pojemności z wypełnieniem i znacznikiem 2000 cm³; po przekroczeniu progu panel zmienia kolor, pojawia się
+  badge „Akcyza PL: 18,6%” i ostrzeżenie. Zmiana kraju na inną walutę podstawia typową cenę w tej walucie
+  (12 000 USD nie staje się 12 000 JPY).
+* Przewijające się kwoty (`appCountUp`), animowany wykres, pasek postępu kroków z „ptaszkami”, przyklejony pasek
+  wyniku na telefonie, `prefers-reduced-motion` respektowane, brak poziomego scrolla na 390 px.
 
 ---
 
@@ -219,8 +254,10 @@ layout mobilny bez poziomego scrolla z przyklejonym paskiem wyniku.
 * **Język w URL** (`/pl`, `/en`, `/de`, `/uk` – kod ISO 639-1 dla ukraińskiego; w przełączniku etykieta „UA”).
   `languageGuard` ustawia język, `LanguageService.current` (signal) zasila ngx-translate, `Intl` (kwoty, liczby, nazwy
   27 krajów UE przez `Intl.DisplayNames`) i atrybut `<html lang>`.
-* **ngx-translate (runtime)** zamiast natywnego `@angular/localize`: jeden build zamiast czterech, przełączanie bez
-  przeładowania i możliwość aktualizacji tłumaczeń bez deployu (pliki `public/i18n/{lang}.json` z CDN).
+* **ngx-translate (runtime)** zamiast natywnego `@angular/localize`: jeden build zamiast czterech i przełączanie bez
+  przeładowania. Pliki `public/i18n/{lang}.json` ładuje `LazyJsonTranslateLoader` jako osobne, leniwe chunki (dynamiczny
+  `import`), więc działa to identycznie w przeglądarce i podczas prerenderingu, a guard języka czeka na tłumaczenia –
+  w statycznym HTML nigdy nie ma surowych kluczy.
 * **Backend też jest wielojęzyczny**: `acceptLanguageInterceptor` dodaje `Accept-Language`; Spring `MessageSource`
   (`i18n/messages_*.properties`) tłumaczy błędy walidacji (ProblemDetail), PDF (Thymeleaf `#{...}`), nazwę produktu
   i locale strony Stripe Checkout.
@@ -282,4 +319,5 @@ pozostaje PENDING, poprawny webhook → READY i PDF 30 KB, duplikat zdarzenia �
 * **E-mail** z linkiem do raportu (w miejscu oznaczonym w `ReportGenerationService`) i powiadomienia partnerów o leadach.
 * **Rozszerzenia silnika**: kolejne `ExciseStrategy` (NL BPM, AT NoVA, FR malus) bez zmian w pipeline; kurs celny UE
   (miesięczny, przedostatnia środa EBC) jako osobny `RateType`; panel B2B dla partnerów z rozliczeniem prowizji.
-* **SEO**: SSR/prerender stron językowych (`@angular/ssr`) z `hreflang`.
+* **SEO – dalej**: blog/poradniki per kraj i marka (long tail: „import Toyoty z USA”), strony docelowe per kraj
+  pochodzenia z prerenderowanym przykładem wyceny, Search Console + monitoring Core Web Vitals.

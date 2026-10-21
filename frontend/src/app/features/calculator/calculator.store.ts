@@ -1,7 +1,8 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { Injectable, computed, inject, linkedSignal, signal } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Injectable, PLATFORM_ID, computed, inject, linkedSignal, signal } from '@angular/core';
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
-import { Observable, catchError, debounceTime, distinctUntilChanged, finalize, map, of, switchMap, tap } from 'rxjs';
+import { EMPTY, Observable, catchError, debounceTime, distinctUntilChanged, finalize, map, of, switchMap, tap } from 'rxjs';
 import {
   ApiProblem,
   AuctionHouse,
@@ -50,6 +51,8 @@ type PreviewState = { view: PublicQuoteView; error: null } | { view: null; error
 @Injectable()
 export class CalculatorStore {
   private readonly api = inject(CarImportApi);
+  /** No live pricing while prerendering: the static HTML shows the wizard, the browser fetches the numbers. */
+  private readonly browser = isPlatformBrowser(inject(PLATFORM_ID));
 
   readonly state = signal<WizardState>(restore());
   readonly step = signal<WizardStep>(1);
@@ -103,7 +106,7 @@ export class CalculatorStore {
   });
 
   private readonly previewState = toSignal(
-    toObservable(this.request).pipe(
+    (this.browser ? toObservable(this.request) : EMPTY).pipe(
       debounceTime(350),
       distinctUntilChanged((a, b) => JSON.stringify(a) === JSON.stringify(b)),
       tap(() => this.frozenQuote.set(null)),
@@ -128,11 +131,14 @@ export class CalculatorStore {
   }
 
   selectOrigin(origin: OriginCountry): void {
-    const auctions = ORIGINS.find((o) => o.code === origin)!.auctions;
-    const auctionHouse: AuctionHouse = auctions.includes(this.state().auctionHouse)
+    const next = ORIGINS.find((o) => o.code === origin)!;
+    const current = this.origin();
+    const auctionHouse: AuctionHouse = next.auctions.includes(this.state().auctionHouse)
       ? this.state().auctionHouse
-      : auctions[0];
-    this.patch({ originCountry: origin, auctionHouse, pickupZone: null });
+      : next.auctions[0];
+    // 12 000 USD must not silently become 12 000 JPY
+    const bidPrice = next.currency === current.currency ? this.state().bidPrice : next.typicalBid;
+    this.patch({ originCountry: origin, auctionHouse, pickupZone: null, bidPrice });
   }
 
   setBuyerType(buyerType: WizardState['buyerType']): void {

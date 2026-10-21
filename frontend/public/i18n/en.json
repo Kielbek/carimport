@@ -204,7 +204,9 @@
     "rangeHint": "The range covers FX and freight-rate fluctuations.",
     "title": "Estimated landed cost",
     "transit": "{{days}} days at sea",
-    "unlock": "Unlock the exact breakdown – {{price}}"
+    "unlock": "Unlock the full report – {{price}}",
+    "updating": "Updating…",
+    "short": "Landed cost"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exclusive container",
@@ -282,6 +284,274 @@
     "title": "Title type",
     "year": "Production year",
     "zone": "Yard location (state / province)",
-    "zoneOther": "Other / not sure"
+    "zoneOther": "Other / not sure",
+    "advanced": "Advanced options"
+  },
+  "layout": {
+    "topbar": "Import cost calculator for cars from the USA, Canada, Japan, UAE and the UK — NBP exchange rates updated daily",
+    "forBusiness": "For import companies",
+    "home": "Home",
+    "nav": "Main navigation",
+    "calculator": "Calculator",
+    "howItWorks": "How it works",
+    "countries": "Countries",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "cta": "Calculate cost",
+    "menu": "Menu",
+    "close": "Close",
+    "breadcrumb": "Breadcrumb",
+    "themeLight": "Switch to light theme",
+    "themeDark": "Switch to dark theme"
+  },
+  "footer": {
+    "about": "Independent calculator for importing cars from outside the EU: auction fees, freight, duty, excise and VAT in one place.",
+    "calculators": "Import calculators",
+    "importFrom": {
+      "USA": "Car from the USA",
+      "CANADA": "Car from Canada",
+      "JAPAN": "Car from Japan",
+      "UAE": "Car from Dubai (UAE)",
+      "UK": "Car from the UK"
+    },
+    "service": "Service",
+    "privacy": "Privacy policy",
+    "language": "Language",
+    "payments": "Payments by Stripe (card, BLIK, Przelewy24). We never store card data.",
+    "rights": "All rights reserved.",
+    "disclaimer": "Calculations are informational and are neither a customs decision nor tax advice."
+  },
+  "cookies": {
+    "title": "Cookies",
+    "text": "We use essential cookies to run the site and, with your consent, analytics cookies. Details:",
+    "accept": "Accept all",
+    "necessary": "Necessary only"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Car import calculator",
+      "title1": "What does a car from",
+      "title2": "the USA, Japan or Dubai really cost?",
+      "lead": "Work out the landed cost before you bid: Copart, IAAI and USS fees, transport, freight, duty, excise and VAT for your EU port. Live result, no sign-up.",
+      "cta": "Calculate import cost",
+      "secondary": "How we calculate"
+    },
+    "facts": {
+      "origins": {
+        "value": "5",
+        "label": "origin countries"
+      },
+      "eu": {
+        "value": "27",
+        "label": "EU countries of registration"
+      },
+      "fx": {
+        "value": "NBP",
+        "label": "daily exchange rates"
+      },
+      "time": {
+        "value": "60 s",
+        "label": "to your first result"
+      }
+    },
+    "example": {
+      "title": "Sample quote",
+      "badge": "Example",
+      "caption": "Copart, USD 12,000, 2.5 l petrol, cleared in Bremerhaven, registered in Poland",
+      "route": "USA → Bremerhaven → PL"
+    },
+    "how": {
+      "eyebrow": "How it works",
+      "title": "From auction link to full cost in four steps",
+      "s1": {
+        "title": "Choose country & auction",
+        "text": "USA, Canada, Japan, UAE or UK — plus the EU port of clearance and country of registration."
+      },
+      "s2": {
+        "title": "Describe the vehicle",
+        "text": "Type, drivetrain, displacement, year and condition — each of them changes the taxes."
+      },
+      "s3": {
+        "title": "See the live result",
+        "text": "The cost range and breakdown update with every change."
+      },
+      "s4": {
+        "title": "Get the report or hand it over",
+        "text": "An exact PDF breakdown, or contact with a verified import company."
+      }
+    },
+    "countries": {
+      "eyebrow": "Origins",
+      "title": "Where you can import from",
+      "lead": "For every country we know the auction fee schedules, export ports and typical sea transit time.",
+      "auctions": "Auctions",
+      "sea": "At sea",
+      "days": "days",
+      "currency": "Currency",
+      "cta": "Calculate import"
+    },
+    "costs": {
+      "eyebrow": "What the price is made of",
+      "title": "Duty, excise and VAT calculated in the same order as at customs",
+      "lead": "Each tax is the base for the next, so the order matters. The port of clearance sets the VAT rate; the country of registration sets the excise.",
+      "cif": {
+        "title": "Customs value (CIF)",
+        "formula": "price + auction fee + transport + freight + insurance",
+        "text": "Everything you pay until the car arrives in an EU port."
+      },
+      "duty": {
+        "title": "Customs duty (TARIC)",
+        "formula": "CIF × 10% cars · 22% pickups · 0% classics",
+        "text": "The rate depends on the HS code; motorcycles 6–8%."
+      },
+      "excise": {
+        "title": "Excise (PL)",
+        "formula": "(CIF + duty) × 3.1% up to 2.0 l · 18.6% above",
+        "text": "Hybrids 1.55% / 9.3%, EVs 0%. Paid in the country of registration."
+      },
+      "vat": {
+        "title": "Import VAT",
+        "formula": "(CIF + duty + excise* + unloading) × rate of clearance country",
+        "text": "*Excise is included only when cleared in the country of registration."
+      }
+    },
+    "ports": {
+      "title": "The VAT rate depends on the port of clearance",
+      "text": "Clearing in Germany means 19% VAT instead of 23%, but you add a car carrier to Poland and pay excise separately at the tax office. The calculator shows which option is cheaper for your car.",
+      "port": "Port",
+      "country": "Clearance country"
+    },
+    "pricing": {
+      "eyebrow": "Pricing",
+      "title": "Start free, pay only for certainty"
+    },
+    "partners": {
+      "eyebrow": "For businesses",
+      "title": "Run an import business? Receive ready-to-buy clients.",
+      "text": "We pass on enquiries from clients who have already calculated the cost and know their budget — with the full vehicle quote.",
+      "b1": "Leads with a complete quote and vehicle details",
+      "b2": "GDPR consent collected before any data transfer",
+      "b3": "Pay per accepted lead",
+      "cta": "Become a partner"
+    },
+    "final": {
+      "title": "Calculate your import in a minute",
+      "text": "No sign-up. Instant result, PDF report when you are ready to buy."
+    }
+  },
+  "pricing": {
+    "popular": "Most popular",
+    "free": {
+      "name": "Quick estimate",
+      "price": "Free",
+      "f1": "Landed-cost range",
+      "f2": "Cost structure chart",
+      "f3": "Transit time and warnings",
+      "f4": "No sign-up",
+      "cta": "Calculate for free"
+    },
+    "report": {
+      "name": "PDF report",
+      "price": "€4.99",
+      "f1": "Every item to the cent",
+      "f2": "Auction fees by price tier",
+      "f3": "Duty, excise and VAT with bases and rates",
+      "f4": "Document checklist and personal PDF",
+      "cta": "Calculate & unlock report"
+    },
+    "partner": {
+      "name": "Import with a partner",
+      "price": "Partner quote",
+      "f1": "Verified import company",
+      "f2": "Purchase, shipping and clearance for you",
+      "f3": "Contact within 1 business day",
+      "f4": "No obligation",
+      "cta": "Start with a quote"
+    }
+  },
+  "faq": {
+    "eyebrow": "Questions & answers",
+    "title": "Frequently asked questions",
+    "lead": "Can’t find your answer? The calculator shows every assumption and the PDF report every rate and base.",
+    "q1": {
+      "q": "How much is customs duty on a car from the USA?",
+      "a": "For passenger cars (CN 8703) duty is 10% of the CIF customs value, 22% for pickups and light trucks (8704) and 6–8% for motorcycles. Collector vehicles over 30 years old in original condition may qualify for 0%. The customs value is the purchase price plus auction fees, transport to the EU border and insurance."
+    },
+    "q2": {
+      "q": "What excise applies when importing a car to Poland?",
+      "a": "Combustion cars up to 2000 cm³: 3.1%, above 2000 cm³: 18.6%. Hybrids: 1.55% up to 2000 cm³ and 9.3% up to 3500 cm³. Plug-in hybrids up to 2000 cm³ and electric cars are exempt. The base is the customs value plus duty, converted to PLN."
+    },
+    "q3": {
+      "q": "Where is it best to clear the car: Bremerhaven, Rotterdam or Gdynia?",
+      "a": "Import VAT is charged by the clearance country: 19% in Germany, 21% in the Netherlands and 23% in Poland. Clearing in Germany lowers VAT, but you add a car carrier to Poland and pay excise separately at the tax office within 14 days. The calculator compares the options for your car."
+    },
+    "q4": {
+      "q": "What is customs procedure 4200?",
+      "a": "It is release with a VAT exemption in the import country when the car goes straight to a VAT-registered business in another EU state. The buyer accounts for VAT at home under the reverse charge, so it is neutral for VAT-registered companies. It is not available to private individuals."
+    },
+    "q5": {
+      "q": "How long does shipping to Europe take?",
+      "a": "From US East Coast and Canadian ports about 2–3 weeks at sea, from California about 5 weeks, from Japan 6–7 weeks, from the UAE 3–4 weeks and from the UK a few days. Add transport from the auction yard to the port and clearance."
+    },
+    "q6": {
+      "q": "Where do the exchange rates come from?",
+      "a": "We use NBP average rates fetched automatically every business day. Because you pay for the car days or weeks after the quote, the free range allows for currency movements."
+    },
+    "q7": {
+      "q": "What does the paid PDF report include?",
+      "a": "Every item to the cent: auction fees by tier, transport, customs value, duty, excise and VAT with bases and rates, the list of required documents and a personal PDF to download. Pay by BLIK, card or Przelewy24."
+    },
+    "q8": {
+      "q": "Is the calculator result binding?",
+      "a": "No. It is an estimate based on current rates and price lists. Final amounts are set by customs and the tax office, which may for example verify the customs value. The report lists all assumptions, so it is easy to compare with the official decision."
+    }
+  },
+  "calc": {
+    "title": "Car import cost calculator",
+    "lead": "Three steps, live result. Change the inputs and watch the landed cost update.",
+    "currency": "Result currency",
+    "progress": "Progress"
+  },
+  "seo": {
+    "home": {
+      "title": "Car import cost calculator – USA, Japan, Dubai to EU | CarImport.eu",
+      "description": "Calculate the cost of importing a car from the USA, Canada, Japan, UAE or UK: Copart and IAAI fees, shipping, duty, excise and VAT. Live result and exact PDF report."
+    },
+    "calculator": {
+      "title": "Duty, excise & VAT calculator for imported cars | CarImport.eu",
+      "description": "Pick the country, auction, port and vehicle — the live calculator shows the cost range and breakdown: price, shipping, duty, excise, VAT and registration."
+    },
+    "privacy": {
+      "title": "Privacy policy | CarImport.eu",
+      "description": "How CarImport.eu processes personal data: payments, reports, partner enquiries and cookies."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Legal",
+    "title": "Privacy policy",
+    "s1": {
+      "title": "Data controller",
+      "text": "The data controller is the operator of CarImport.eu. For data protection matters contact us at {{email}}."
+    },
+    "s2": {
+      "title": "What data we process",
+      "text": "Quote inputs (no personal data) and, when buying a report, your name and e-mail. The partner form additionally collects a phone number and message. We never process card data — Stripe does."
+    },
+    "s3": {
+      "title": "Purposes and legal bases",
+      "text": "Performing the report purchase (Art. 6(1)(b) GDPR), accounting obligations (c), passing your enquiry to a partner based on your consent (a), and analytics with consent given in the cookie banner."
+    },
+    "s4": {
+      "title": "Recipients",
+      "text": "Stripe Payments Europe (payments), our hosting and e-mail providers and — for the partner form — one verified import company, only with your consent."
+    },
+    "s5": {
+      "title": "Cookies",
+      "text": "Essential cookies and browser storage remember your language, theme, calculator progress and access to a purchased report. Analytics run only after you click “Accept all”."
+    },
+    "s6": {
+      "title": "Your rights",
+      "text": "You have the right to access, rectify, erase, restrict, port and object, to withdraw consent at any time and to complain to your data protection authority. Write to us: {{email}}."
+    }
   }
 }

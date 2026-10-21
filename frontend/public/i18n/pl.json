@@ -204,7 +204,9 @@
     "rangeHint": "Zakres uwzględnia wahania kursów i stawek frachtu.",
     "title": "Szacowany koszt „pod dom”",
     "transit": "{{days}} dni morzem",
-    "unlock": "Odblokuj wycenę co do grosza – {{price}}"
+    "unlock": "Odblokuj pełny raport – {{price}}",
+    "updating": "Przeliczam…",
+    "short": "Koszt „pod dom”"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Kontener na wyłączność",
@@ -282,6 +284,274 @@
     "title": "Typ dokumentu (title)",
     "year": "Rok produkcji",
     "zone": "Lokalizacja placu (stan / prowincja)",
-    "zoneOther": "Inna / nie wiem"
+    "zoneOther": "Inna / nie wiem",
+    "advanced": "Opcje zaawansowane"
+  },
+  "layout": {
+    "topbar": "Kalkulator kosztów importu aut z USA, Kanady, Japonii, ZEA i Wielkiej Brytanii — kursy NBP aktualizowane codziennie",
+    "forBusiness": "Dla firm importowych",
+    "home": "Strona główna",
+    "nav": "Nawigacja główna",
+    "calculator": "Kalkulator",
+    "howItWorks": "Jak to działa",
+    "countries": "Kraje",
+    "pricing": "Cennik",
+    "faq": "FAQ",
+    "cta": "Oblicz koszt",
+    "menu": "Menu",
+    "close": "Zamknij",
+    "breadcrumb": "Ścieżka nawigacji",
+    "themeLight": "Włącz jasny motyw",
+    "themeDark": "Włącz ciemny motyw"
+  },
+  "footer": {
+    "about": "Niezależny kalkulator kosztów importu samochodów spoza UE: opłaty aukcyjne, fracht, cło, akcyza i VAT w jednym miejscu.",
+    "calculators": "Kalkulatory importu",
+    "importFrom": {
+      "USA": "Auto z USA",
+      "CANADA": "Auto z Kanady",
+      "JAPAN": "Auto z Japonii",
+      "UAE": "Auto z Dubaju (ZEA)",
+      "UK": "Auto z Wielkiej Brytanii"
+    },
+    "service": "Serwis",
+    "privacy": "Polityka prywatności",
+    "language": "Język",
+    "payments": "Płatności obsługuje Stripe (karta, BLIK, Przelewy24). Nie przechowujemy danych kart.",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "disclaimer": "Wyliczenia mają charakter informacyjny i nie stanowią decyzji organu celnego ani porady podatkowej."
+  },
+  "cookies": {
+    "title": "Pliki cookie",
+    "text": "Używamy niezbędnych plików cookie do działania serwisu, a za Twoją zgodą także analitycznych. Szczegóły:",
+    "accept": "Akceptuję wszystkie",
+    "necessary": "Tylko niezbędne"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Kalkulator importu samochodów",
+      "title1": "Ile naprawdę kosztuje",
+      "title2": "auto z USA, Japonii czy Dubaju?",
+      "lead": "Policz koszt „pod dom” zanim zalicytujesz: opłaty Copart, IAAI i USS, transport, fracht, cło, akcyza i VAT dla wybranego portu w UE. Wynik na żywo, bez rejestracji.",
+      "cta": "Oblicz koszt importu",
+      "secondary": "Jak liczymy"
+    },
+    "facts": {
+      "origins": {
+        "value": "5",
+        "label": "kierunków importu"
+      },
+      "eu": {
+        "value": "27",
+        "label": "krajów rejestracji w UE"
+      },
+      "fx": {
+        "value": "NBP",
+        "label": "kursy walut codziennie"
+      },
+      "time": {
+        "value": "60 s",
+        "label": "do pierwszego wyniku"
+      }
+    },
+    "example": {
+      "title": "Przykładowa wycena",
+      "badge": "Przykład",
+      "caption": "Copart, 12 000 USD, benzyna 2,5 l, odprawa w Bremerhaven, rejestracja w Polsce",
+      "route": "USA → Bremerhaven → PL"
+    },
+    "how": {
+      "eyebrow": "Jak to działa",
+      "title": "Od linku do aukcji do pełnej kwoty w czterech krokach",
+      "s1": {
+        "title": "Wybierz kraj i aukcję",
+        "text": "USA, Kanada, Japonia, ZEA lub UK — oraz port odprawy w UE i kraj rejestracji."
+      },
+      "s2": {
+        "title": "Opisz pojazd",
+        "text": "Typ, napęd, pojemność silnika, rocznik i stan — każdy z tych parametrów zmienia podatki."
+      },
+      "s3": {
+        "title": "Zobacz wynik na żywo",
+        "text": "Przedział kosztów i struktura wydatków aktualizują się przy każdej zmianie."
+      },
+      "s4": {
+        "title": "Pobierz raport lub zleć import",
+        "text": "Wyliczenie co do grosza w PDF albo kontakt ze zweryfikowaną firmą importową."
+      }
+    },
+    "countries": {
+      "eyebrow": "Kierunki",
+      "title": "Skąd sprowadzisz auto",
+      "lead": "Dla każdego kraju znamy cenniki aukcji, porty eksportowe i typowy czas transportu morskiego.",
+      "auctions": "Aukcje",
+      "sea": "Morzem",
+      "days": "dni",
+      "currency": "Waluta",
+      "cta": "Oblicz import"
+    },
+    "costs": {
+      "eyebrow": "Z czego składa się cena",
+      "title": "Cło, akcyza i VAT liczone w tej samej kolejności co w urzędzie celnym",
+      "lead": "Każdy podatek jest podstawą kolejnego, dlatego kolejność ma znaczenie. Port odprawy decyduje o stawce VAT, a kraj rejestracji — o akcyzie.",
+      "cif": {
+        "title": "Wartość celna CIF",
+        "formula": "cena + prowizja aukcji + transport + fracht + ubezpieczenie",
+        "text": "Wszystko, co zapłacisz do momentu, gdy auto wpłynie do portu w UE."
+      },
+      "duty": {
+        "title": "Cło (TARIC)",
+        "formula": "CIF × 10% osobowe · 22% pickup · 0% zabytki",
+        "text": "Stawka zależy od kodu HS pojazdu; motocykle 6–8%."
+      },
+      "excise": {
+        "title": "Akcyza (PL)",
+        "formula": "(CIF + cło) × 3,1% do 2,0 l · 18,6% powyżej",
+        "text": "Hybrydy 1,55% / 9,3%, elektryki 0%. Płacona w kraju rejestracji."
+      },
+      "vat": {
+        "title": "VAT importowy",
+        "formula": "(CIF + cło + akcyza* + rozładunek) × stawka kraju odprawy",
+        "text": "*Akcyza wchodzi do podstawy tylko przy odprawie w kraju rejestracji."
+      }
+    },
+    "ports": {
+      "title": "Stawka VAT zależy od portu odprawy",
+      "text": "Odprawa w Niemczech oznacza 19% VAT zamiast 23%, ale dochodzi transport lawetą do Polski, a akcyzę zapłacisz osobno w urzędzie skarbowym. Kalkulator pokazuje, która opcja wychodzi taniej dla Twojego auta.",
+      "port": "Port",
+      "country": "Kraj odprawy"
+    },
+    "pricing": {
+      "eyebrow": "Cennik",
+      "title": "Zacznij za darmo, zapłać tylko za pewność"
+    },
+    "partners": {
+      "eyebrow": "Dla firm",
+      "title": "Prowadzisz firmę importową? Odbieraj gotowych klientów.",
+      "text": "Przekazujemy zapytania klientów, którzy już policzyli koszt i znają budżet — razem z pełną wyceną auta.",
+      "b1": "Leady z kompletną wyceną i parametrami auta",
+      "b2": "Zgody RODO zebrane przed przekazaniem danych",
+      "b3": "Rozliczenie za przyjęty lead",
+      "cta": "Zostań partnerem"
+    },
+    "final": {
+      "title": "Policz swój import w minutę",
+      "text": "Bez rejestracji. Wynik od razu, raport PDF gdy będziesz gotów kupić."
+    }
+  },
+  "pricing": {
+    "popular": "Najczęściej wybierany",
+    "free": {
+      "name": "Szybka wycena",
+      "price": "0 zł",
+      "f1": "Przedział kosztów „pod dom”",
+      "f2": "Struktura kosztów na wykresie",
+      "f3": "Czas transportu i ostrzeżenia",
+      "f4": "Bez rejestracji",
+      "cta": "Policz za darmo"
+    },
+    "report": {
+      "name": "Raport PDF",
+      "price": "19 zł",
+      "f1": "Każda pozycja co do grosza",
+      "f2": "Opłaty aukcyjne według progów cenowych",
+      "f3": "Cło, akcyza i VAT z podstawami i stawkami",
+      "f4": "Lista dokumentów i imienny PDF",
+      "cta": "Policz i odblokuj raport"
+    },
+    "partner": {
+      "name": "Import z partnerem",
+      "price": "Wycena partnera",
+      "f1": "Zweryfikowana firma importowa",
+      "f2": "Zakup, transport i odprawa za Ciebie",
+      "f3": "Kontakt w ciągu 1 dnia roboczego",
+      "f4": "Bez zobowiązań",
+      "cta": "Zacznij od wyceny"
+    }
+  },
+  "faq": {
+    "eyebrow": "Pytania i odpowiedzi",
+    "title": "Najczęstsze pytania o import auta",
+    "lead": "Nie znalazłeś odpowiedzi? Kalkulator pokazuje wszystkie założenia, a raport PDF — każdą stawkę i podstawę.",
+    "q1": {
+      "q": "Ile wynosi cło na samochód z USA?",
+      "a": "Dla samochodów osobowych (kod CN 8703) cło wynosi 10% wartości celnej CIF, dla pickupów i lekkich ciężarówek (8704) 22%, a dla motocykli 6–8%. Pojazdy kolekcjonerskie powyżej 30 lat w stanie oryginalnym mogą być objęte stawką 0%. Wartość celna to cena zakupu powiększona o opłaty aukcyjne, transport do granicy UE i ubezpieczenie."
+    },
+    "q2": {
+      "q": "Jaka akcyza obowiązuje przy imporcie auta do Polski?",
+      "a": "Samochody spalinowe do 2000 cm³: 3,1%, powyżej 2000 cm³: 18,6%. Hybrydy: 1,55% do 2000 cm³ i 9,3% do 3500 cm³. Hybrydy plug-in do 2000 cm³ i samochody elektryczne są zwolnione. Podstawą jest wartość celna powiększona o cło, przeliczona na złote."
+    },
+    "q3": {
+      "q": "Gdzie najlepiej odprawić auto: Bremerhaven, Rotterdam czy Gdynia?",
+      "a": "VAT importowy pobiera kraj odprawy: 19% w Niemczech, 21% w Holandii i 23% w Polsce. Odprawa w Niemczech obniża VAT, ale trzeba doliczyć transport lawetą do Polski, a akcyzę zapłacić osobno w urzędzie skarbowym w ciągu 14 dni. Kalkulator porównuje warianty dla konkretnego auta."
+    },
+    "q4": {
+      "q": "Czym jest procedura celna 4200?",
+      "a": "To odprawa ze zwolnieniem z VAT w kraju przywozu, gdy auto od razu trafia do firmy zarejestrowanej do VAT w innym kraju UE. VAT rozlicza nabywca u siebie w mechanizmie odwrotnego obciążenia, więc dla czynnego podatnika jest neutralny. Procedura nie jest dostępna dla osób prywatnych."
+    },
+    "q5": {
+      "q": "Ile trwa transport auta do Europy?",
+      "a": "Z portów wschodniego wybrzeża USA i z Kanady około 2–3 tygodni morzem, z Kalifornii około 5 tygodni, z Japonii 6–7 tygodni, z ZEA 3–4 tygodnie, a z Wielkiej Brytanii kilka dni. Do tego dochodzi transport z placu aukcyjnego do portu i odprawa."
+    },
+    "q6": {
+      "q": "Skąd pochodzą kursy walut w kalkulatorze?",
+      "a": "Korzystamy ze średnich kursów NBP pobieranych automatycznie w każdy dzień roboczy. Ponieważ za auto płacisz kilka dni lub tygodni po wycenie, darmowy przedział uwzględnia możliwe wahania kursu."
+    },
+    "q7": {
+      "q": "Co zawiera płatny raport PDF?",
+      "a": "Wyliczenie każdej pozycji co do grosza: opłaty aukcyjne według progów, transport, wartość celną, cło, akcyzę i VAT wraz z podstawami i stawkami, listę wymaganych dokumentów oraz imienny plik PDF do pobrania. Zapłacisz BLIK-iem, kartą lub Przelewy24."
+    },
+    "q8": {
+      "q": "Czy wynik kalkulatora jest wiążący?",
+      "a": "Nie. To szacunek oparty na aktualnych stawkach i cennikach. Ostateczne kwoty ustalają urząd celny i skarbowy — mogą np. zweryfikować wartość celną. Raport wskazuje wszystkie założenia, dzięki czemu łatwo porównać go z decyzją urzędu."
+    }
+  },
+  "calc": {
+    "title": "Kalkulator kosztów importu auta",
+    "lead": "Trzy kroki, wynik na żywo. Zmieniaj parametry i obserwuj, jak zmienia się koszt „pod dom”.",
+    "currency": "Waluta wyniku",
+    "progress": "Postęp"
+  },
+  "seo": {
+    "home": {
+      "title": "Kalkulator importu auta z USA, Japonii i Dubaju | CarImport.eu",
+      "description": "Policz koszt sprowadzenia auta z USA, Kanady, Japonii, ZEA i UK: opłaty Copart i IAAI, transport, cło, akcyza i VAT. Wynik na żywo, raport PDF co do grosza."
+    },
+    "calculator": {
+      "title": "Kalkulator cła, akcyzy i VAT na auto z zagranicy | CarImport.eu",
+      "description": "Wybierz kraj, aukcję, port odprawy i parametry auta — kalkulator na żywo pokaże przedział kosztów i strukturę: cena, transport, cło, akcyza, VAT, rejestracja."
+    },
+    "privacy": {
+      "title": "Polityka prywatności | CarImport.eu",
+      "description": "Jak przetwarzamy dane osobowe w serwisie CarImport.eu: płatności, raporty, zapytania do partnerów i pliki cookie."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Informacje prawne",
+    "title": "Polityka prywatności",
+    "s1": {
+      "title": "Administrator danych",
+      "text": "Administratorem danych jest operator serwisu CarImport.eu. W sprawach ochrony danych skontaktuj się z nami pod adresem {{email}}."
+    },
+    "s2": {
+      "title": "Jakie dane przetwarzamy",
+      "text": "Parametry wyceny (bez danych osobowych), a przy zakupie raportu — imię i nazwisko oraz e-mail. W formularzu partnera dodatkowo telefon i wiadomość. Danych kart płatniczych nie przetwarzamy — obsługuje je Stripe."
+    },
+    "s3": {
+      "title": "Cele i podstawy prawne",
+      "text": "Realizacja umowy sprzedaży raportu (art. 6 ust. 1 lit. b RODO), obowiązki księgowe (lit. c), przekazanie zapytania partnerowi na podstawie Twojej zgody (lit. a) oraz analityka za zgodą wyrażoną w banerze cookie."
+    },
+    "s4": {
+      "title": "Odbiorcy danych",
+      "text": "Stripe Payments Europe (płatności), dostawca hostingu i poczty, a w przypadku formularza partnera — jedna zweryfikowana firma importowa, wyłącznie za Twoją zgodą."
+    },
+    "s5": {
+      "title": "Pliki cookie",
+      "text": "Niezbędne pliki i pamięć przeglądarki zapamiętują język, motyw, postęp w kalkulatorze i dostęp do kupionego raportu. Analityczne uruchamiamy wyłącznie po kliknięciu „Akceptuję wszystkie”."
+    },
+    "s6": {
+      "title": "Twoje prawa",
+      "text": "Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia, sprzeciwu i cofnięcia zgody w dowolnym momencie, a także skargi do Prezesa UODO. Napisz do nas: {{email}}."
+    }
   }
 }
