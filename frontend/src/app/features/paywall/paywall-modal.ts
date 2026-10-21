@@ -5,6 +5,7 @@ import { switchMap } from 'rxjs';
 import { DisplayCurrency } from '../../core/api/api.models';
 import { CarImportApi } from '../../core/api/carimport-api';
 import { LanguageService } from '../../core/i18n/language.service';
+import { Icon } from '../../shared/icon/icon';
 import { CalculatorStore } from '../calculator/calculator.store';
 import { rememberOrder } from '../report/order-tokens';
 
@@ -14,25 +15,28 @@ import { rememberOrder } from '../report/order-tokens';
  */
 @Component({
   selector: 'app-paywall-modal',
-  imports: [ReactiveFormsModule, TranslatePipe],
+  imports: [ReactiveFormsModule, TranslatePipe, Icon],
   template: `
-    <div class="modal-backdrop" (click)="closed.emit()"></div>
+    <div class="overlay" (click)="closed.emit()"></div>
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="paywall-title">
-      <button type="button" class="absolute right-4 top-4 text-slate-400 hover:text-slate-700" (click)="closed.emit()" aria-label="Close">✕</button>
-      <h2 id="paywall-title" class="text-2xl font-bold">🔓 {{ 'paywall.title' | translate }}</h2>
-      <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">{{ 'paywall.subtitle' | translate }}</p>
+      <button type="button" class="absolute right-4 top-4 text-muted hover:text-fg" (click)="closed.emit()" [attr.aria-label]="'layout.close' | translate">
+        <app-icon name="x" [size]="20" />
+      </button>
+      <span class="grid size-12 place-items-center rounded-[6px] bg-brand text-brand-ink"><app-icon name="document" [size]="24" /></span>
+      <h2 id="paywall-title" class="mt-5 text-2xl font-extrabold">{{ 'paywall.title' | translate }}</h2>
+      <p class="mt-2 text-sm leading-relaxed text-muted">{{ 'paywall.subtitle' | translate }}</p>
 
       <form class="mt-6 space-y-4" [formGroup]="form" (ngSubmit)="pay()">
         <div>
-          <label class="step-label" for="fullName">{{ 'paywall.fullName' | translate }}</label>
+          <label class="label" for="fullName">{{ 'paywall.fullName' | translate }}</label>
           <input id="fullName" class="input" formControlName="fullName" autocomplete="name" />
         </div>
         <div>
-          <label class="step-label" for="email">{{ 'paywall.email' | translate }}</label>
+          <label class="label" for="email">{{ 'paywall.email' | translate }}</label>
           <input id="email" type="email" class="input" formControlName="email" autocomplete="email" />
         </div>
         <div>
-          <span class="step-label">{{ 'paywall.currency' | translate }}</span>
+          <span class="label">{{ 'paywall.currency' | translate }}</span>
           <div class="flex gap-2">
             @for (c of currencies; track c.code) {
               <button type="button" class="chip" [class.chip--active]="form.value.currency === c.code"
@@ -40,20 +44,20 @@ import { rememberOrder } from '../report/order-tokens';
             }
           </div>
           @if (form.value.currency === 'PLN') {
-            <p class="mt-2 text-xs text-slate-500">{{ 'paywall.blikHint' | translate }}</p>
+            <p class="mt-2 text-xs text-muted">{{ 'paywall.blikHint' | translate }}</p>
           }
         </div>
-        <label class="flex items-start gap-2 text-xs text-slate-600 dark:text-slate-400">
-          <input type="checkbox" formControlName="terms" class="mt-0.5 accent-indigo-600" />
+        <label class="flex cursor-pointer items-start gap-2.5 text-xs leading-relaxed text-muted">
+          <input type="checkbox" formControlName="terms" class="checkbox" />
           <span>{{ 'paywall.terms' | translate }}</span>
         </label>
         @if (error()) {
-          <p class="rounded-lg bg-rose-50 p-3 text-sm text-rose-700">{{ error() }}</p>
+          <p class="rounded-[4px] bg-danger-soft p-3 text-sm text-danger">{{ error() }}</p>
         }
-        <button type="submit" class="cta-primary w-full" [disabled]="form.invalid || busy()">
+        <button type="submit" class="btn btn-primary w-full" [disabled]="form.invalid || busy()">
           {{ busy() ? ('paywall.redirecting' | translate) : ('paywall.pay' | translate) }}
         </button>
-        <p class="text-center text-[11px] text-slate-500">🔒 {{ 'paywall.secure' | translate }}</p>
+        <p class="flex items-center justify-center gap-1.5 text-center text-[11px] text-muted"><app-icon name="lock" [size]="12" /> {{ 'paywall.secure' | translate }}</p>
       </form>
     </div>
   `,
@@ -67,7 +71,7 @@ export class PaywallModal {
   protected readonly busy = signal(false);
   protected readonly error = signal<string | null>(null);
   protected readonly currencies: { code: DisplayCurrency; label: string }[] = [
-    { code: 'PLN', label: '19 zł · BLIK' },
+    { code: 'PLN', label: '19 zł' },
     { code: 'EUR', label: '4,99 €' },
     { code: 'USD', label: '$5.49' },
   ];

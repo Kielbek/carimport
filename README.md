@@ -6,8 +6,8 @@ wartość celna CIF, cło (TARIC), akcyza, VAT importowy zależny od portu odpra
 | Katalog     | Stos                                                                  |
 |-------------|-----------------------------------------------------------------------|
 | `backend/`  | Spring Boot 3.5, Java 21, PostgreSQL + Flyway, Stripe, OpenHTMLtoPDF  |
-| `frontend/` | Angular 21 (standalone, Signals, control flow, zoneless), Tailwind 4, ngx-translate, Chart.js |
-| `docs/`     | [Architektura](docs/ARCHITECTURE.md) – model danych, silnik, frontend, i18n, płatności; [zrzut kreatora](docs/assets/wizard-step2.png), [przykładowy raport PDF](docs/assets/sample-report-pl.pdf) |
+| `frontend/` | Angular 21 (standalone, Signals, zoneless, prerender/SSG), Tailwind 4, ngx-translate, Chart.js, Lucide, flag-icons |
+| `docs/`     | [Architektura](docs/ARCHITECTURE.md) – model danych, silnik, frontend, i18n, płatności; [strona główna](docs/assets/home-dark.png), [kalkulator](docs/assets/calculator-dark.png), [motyw jasny](docs/assets/home-light.png), [przykładowy raport PDF](docs/assets/sample-report-pl.pdf) |
 
 ## Uruchomienie lokalne
 
@@ -18,6 +18,7 @@ docker compose up -d            # Postgres :5432, API :8080 (Flyway tworzy schem
 
 # 2. frontend
 cd frontend && npm install && npm start   # http://localhost:4200 → przekierowanie na /pl, /en, /de lub /uk
+npx ng build                              # dist/frontend/browser: statyczny serwis (12 prerenderowanych stron) na CDN
 
 # 3. płatności (opcjonalnie) – przekazywanie webhooków Stripe na localhost
 stripe listen --forward-to localhost:8080/api/v1/webhooks/stripe   # wypisze STRIPE_WEBHOOK_SECRET

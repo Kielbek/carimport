@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /*/report/
+Disallow: /*/result/
+
+Sitemap: https://carimport.eu/sitemap.xml

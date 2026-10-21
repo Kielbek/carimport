@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Keep in sync with core/routing/paths.ts and core/site.config.ts -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://carimport.eu/pl</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carimport.eu/pl"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carimport.eu/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carimport.eu/de"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://carimport.eu/uk"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en"/>
+    <changefreq>weekly</changefreq><priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://carimport.eu/en</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carimport.eu/pl"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carimport.eu/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carimport.eu/de"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://carimport.eu/uk"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en"/>
+    <changefreq>weekly</changefreq><priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://carimport.eu/de</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carimport.eu/pl"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carimport.eu/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carimport.eu/de"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://carimport.eu/uk"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en"/>
+    <changefreq>weekly</changefreq><priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://carimport.eu/uk</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carimport.eu/pl"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carimport.eu/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carimport.eu/de"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://carimport.eu/uk"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en"/>
+    <changefreq>weekly</changefreq><priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://carimport.eu/pl/kalkulator</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carimport.eu/pl/kalkulator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carimport.eu/en/calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carimport.eu/de/rechner"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://carimport.eu/uk/kalkuliator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en/calculator"/>
+    <changefreq>weekly</changefreq><priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://carimport.eu/en/calculator</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carimport.eu/pl/kalkulator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carimport.eu/en/calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carimport.eu/de/rechner"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://carimport.eu/uk/kalkuliator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en/calculator"/>
+    <changefreq>weekly</changefreq><priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://carimport.eu/de/rechner</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carimport.eu/pl/kalkulator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carimport.eu/en/calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carimport.eu/de/rechner"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://carimport.eu/uk/kalkuliator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en/calculator"/>
+    <changefreq>weekly</changefreq><priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://carimport.eu/uk/kalkuliator</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carimport.eu/pl/kalkulator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carimport.eu/en/calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carimport.eu/de/rechner"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://carimport.eu/uk/kalkuliator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en/calculator"/>
+    <changefreq>weekly</changefreq><priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://carimport.eu/pl/polityka-prywatnosci</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carimport.eu/pl/polityka-prywatnosci"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carimport.eu/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carimport.eu/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://carimport.eu/uk/polityka-konfidentsiinosti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en/privacy-policy"/>
+    <changefreq>weekly</changefreq><priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://carimport.eu/en/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carimport.eu/pl/polityka-prywatnosci"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carimport.eu/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carimport.eu/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://carimport.eu/uk/polityka-konfidentsiinosti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en/privacy-policy"/>
+    <changefreq>weekly</changefreq><priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://carimport.eu/de/datenschutz</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carimport.eu/pl/polityka-prywatnosci"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carimport.eu/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carimport.eu/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://carimport.eu/uk/polityka-konfidentsiinosti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en/privacy-policy"/>
+    <changefreq>weekly</changefreq><priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://carimport.eu/uk/polityka-konfidentsiinosti</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carimport.eu/pl/polityka-prywatnosci"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carimport.eu/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carimport.eu/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://carimport.eu/uk/polityka-konfidentsiinosti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en/privacy-policy"/>
+    <changefreq>weekly</changefreq><priority>0.2</priority>
+  </url>
+</urlset>

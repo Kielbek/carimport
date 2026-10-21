@@ -4,22 +4,25 @@ import {
   provideBrowserGlobalErrorListeners,
   provideZonelessChangeDetection,
 } from '@angular/core';
+import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { provideRouter, withComponentInputBinding, withInMemoryScrolling } from '@angular/router';
-import { provideTranslateService } from '@ngx-translate/core';
-import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
+import { provideTranslateLoader, provideTranslateService } from '@ngx-translate/core';
 
 import { routes } from './app.routes';
 import { acceptLanguageInterceptor } from './core/i18n/accept-language.interceptor';
+import { LazyJsonTranslateLoader } from './core/i18n/translate-loader';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
-    provideRouter(routes, withComponentInputBinding(), withInMemoryScrolling({ scrollPositionRestoration: 'top' })),
+    provideRouter(
+      routes,
+      withComponentInputBinding(),
+      withInMemoryScrolling({ scrollPositionRestoration: 'top', anchorScrolling: 'enabled' }),
+    ),
     provideHttpClient(withFetch(), withInterceptors([acceptLanguageInterceptor])),
-    provideTranslateService({
-      loader: provideTranslateHttpLoader({ prefix: '/i18n/', suffix: '.json' }),
-      fallbackLang: 'en',
-    }),
+    provideTranslateService({ loader: provideTranslateLoader(LazyJsonTranslateLoader), fallbackLang: 'en' }),
+    provideClientHydration(withEventReplay()),
   ],
 };

@@ -204,7 +204,9 @@
     "rangeHint": "Die Spanne deckt Wechselkurs- und Frachtschwankungen ab.",
     "title": "Geschätzte Gesamtkosten",
     "transit": "{{days}} Tage Seeweg",
-    "unlock": "Exakte Aufstellung freischalten – {{price}}"
+    "unlock": "Vollen Bericht freischalten – {{price}}",
+    "updating": "Aktualisiere…",
+    "short": "Gesamtkosten"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exklusiver Container",
@@ -282,6 +284,274 @@
     "title": "Title-Art",
     "year": "Baujahr",
     "zone": "Standort (Bundesstaat / Provinz)",
-    "zoneOther": "Andere / weiß nicht"
+    "zoneOther": "Andere / weiß nicht",
+    "advanced": "Erweiterte Optionen"
+  },
+  "layout": {
+    "topbar": "Importkostenrechner für Autos aus USA, Kanada, Japan, VAE und UK — NBP-Kurse täglich aktualisiert",
+    "forBusiness": "Für Importunternehmen",
+    "home": "Startseite",
+    "nav": "Hauptnavigation",
+    "calculator": "Rechner",
+    "howItWorks": "So funktioniert es",
+    "countries": "Länder",
+    "pricing": "Preise",
+    "faq": "FAQ",
+    "cta": "Kosten berechnen",
+    "menu": "Menü",
+    "close": "Schließen",
+    "breadcrumb": "Brotkrümel",
+    "themeLight": "Helles Design aktivieren",
+    "themeDark": "Dunkles Design aktivieren"
+  },
+  "footer": {
+    "about": "Unabhängiger Rechner für Fahrzeugimporte aus Drittländern: Auktionsgebühren, Fracht, Zoll, Verbrauchsteuer und USt an einem Ort.",
+    "calculators": "Importrechner",
+    "importFrom": {
+      "USA": "Auto aus den USA",
+      "CANADA": "Auto aus Kanada",
+      "JAPAN": "Auto aus Japan",
+      "UAE": "Auto aus Dubai (VAE)",
+      "UK": "Auto aus Großbritannien"
+    },
+    "service": "Service",
+    "privacy": "Datenschutzerklärung",
+    "language": "Sprache",
+    "payments": "Zahlungen über Stripe (Karte, BLIK, Przelewy24). Keine Kartendaten bei uns.",
+    "rights": "Alle Rechte vorbehalten.",
+    "disclaimer": "Berechnungen dienen der Information und sind weder Zollbescheid noch Steuerberatung."
+  },
+  "cookies": {
+    "title": "Cookies",
+    "text": "Wir verwenden notwendige Cookies und mit Ihrer Einwilligung Analyse-Cookies. Details:",
+    "accept": "Alle akzeptieren",
+    "necessary": "Nur notwendige"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Fahrzeugimport-Rechner",
+      "title1": "Was kostet ein Auto",
+      "title2": "aus USA, Japan oder Dubai wirklich?",
+      "lead": "Berechnen Sie die Gesamtkosten vor dem Gebot: Copart-, IAAI- und USS-Gebühren, Transport, Fracht, Zoll, Verbrauchsteuer und USt für Ihren EU-Hafen. Live, ohne Anmeldung.",
+      "cta": "Importkosten berechnen",
+      "secondary": "So rechnen wir"
+    },
+    "facts": {
+      "origins": {
+        "value": "5",
+        "label": "Herkunftsländer"
+      },
+      "eu": {
+        "value": "27",
+        "label": "EU-Zulassungsländer"
+      },
+      "fx": {
+        "value": "NBP",
+        "label": "tägliche Wechselkurse"
+      },
+      "time": {
+        "value": "60 s",
+        "label": "bis zum Ergebnis"
+      }
+    },
+    "example": {
+      "title": "Beispielrechnung",
+      "badge": "Beispiel",
+      "caption": "Copart, 12.000 USD, Benzin 2,5 l, Verzollung Bremerhaven, Zulassung in Polen",
+      "route": "USA → Bremerhaven → PL"
+    },
+    "how": {
+      "eyebrow": "So funktioniert es",
+      "title": "Vom Auktionslink zu den Gesamtkosten in vier Schritten",
+      "s1": {
+        "title": "Land & Auktion wählen",
+        "text": "USA, Kanada, Japan, VAE oder UK — dazu EU-Hafen und Zulassungsland."
+      },
+      "s2": {
+        "title": "Fahrzeug beschreiben",
+        "text": "Typ, Antrieb, Hubraum, Baujahr und Zustand — jeder Wert beeinflusst die Steuern."
+      },
+      "s3": {
+        "title": "Live-Ergebnis sehen",
+        "text": "Kostenspanne und Struktur aktualisieren sich bei jeder Änderung."
+      },
+      "s4": {
+        "title": "Bericht holen oder übergeben",
+        "text": "Exakte PDF-Aufstellung oder Kontakt zu einem geprüften Importeur."
+      }
+    },
+    "countries": {
+      "eyebrow": "Herkunft",
+      "title": "Woher Sie importieren",
+      "lead": "Für jedes Land kennen wir Gebührenpläne, Exporthäfen und typische Seetransitzeiten.",
+      "auctions": "Auktionen",
+      "sea": "Seeweg",
+      "days": "Tage",
+      "currency": "Währung",
+      "cta": "Import berechnen"
+    },
+    "costs": {
+      "eyebrow": "Woraus sich der Preis zusammensetzt",
+      "title": "Zoll, Verbrauchsteuer und USt in derselben Reihenfolge wie beim Zoll",
+      "lead": "Jede Steuer ist Basis der nächsten. Der Abfertigungshafen bestimmt die USt, das Zulassungsland die Verbrauchsteuer.",
+      "cif": {
+        "title": "Zollwert (CIF)",
+        "formula": "Preis + Auktionsgebühr + Transport + Fracht + Versicherung",
+        "text": "Alles, was bis zur Ankunft im EU-Hafen anfällt."
+      },
+      "duty": {
+        "title": "Zoll (TARIC)",
+        "formula": "CIF × 10 % Pkw · 22 % Pickup · 0 % Oldtimer",
+        "text": "Satz hängt vom HS-Code ab; Motorräder 6–8 %."
+      },
+      "excise": {
+        "title": "Verbrauchsteuer (PL)",
+        "formula": "(CIF + Zoll) × 3,1 % bis 2,0 l · 18,6 % darüber",
+        "text": "Hybride 1,55 % / 9,3 %, E-Autos 0 %. Fällig im Zulassungsland."
+      },
+      "vat": {
+        "title": "Einfuhrumsatzsteuer",
+        "formula": "(CIF + Zoll + VSt* + Entladung) × Satz des Abfertigungslandes",
+        "text": "*Verbrauchsteuer nur bei Verzollung im Zulassungsland."
+      }
+    },
+    "ports": {
+      "title": "Der USt-Satz hängt vom Hafen ab",
+      "text": "Verzollung in Deutschland bedeutet 19 % statt 23 % USt, dafür kommen Autotransport und separate Verbrauchsteuer hinzu. Der Rechner zeigt, was für Ihr Auto günstiger ist.",
+      "port": "Hafen",
+      "country": "Abfertigungsland"
+    },
+    "pricing": {
+      "eyebrow": "Preise",
+      "title": "Kostenlos starten, nur für Gewissheit zahlen"
+    },
+    "partners": {
+      "eyebrow": "Für Unternehmen",
+      "title": "Importunternehmen? Erhalten Sie kaufbereite Kunden.",
+      "text": "Wir leiten Anfragen von Kunden weiter, die Kosten und Budget bereits kennen — inklusive vollständiger Kalkulation.",
+      "b1": "Leads mit vollständiger Kalkulation",
+      "b2": "DSGVO-Einwilligung vor Weitergabe",
+      "b3": "Abrechnung pro angenommenem Lead",
+      "cta": "Partner werden"
+    },
+    "final": {
+      "title": "Berechnen Sie Ihren Import in einer Minute",
+      "text": "Ohne Anmeldung. Sofortiges Ergebnis, PDF-Bericht wenn Sie bereit sind."
+    }
+  },
+  "pricing": {
+    "popular": "Am beliebtesten",
+    "free": {
+      "name": "Schnellschätzung",
+      "price": "Kostenlos",
+      "f1": "Gesamtkostenspanne",
+      "f2": "Kostenstruktur als Diagramm",
+      "f3": "Transitzeit und Hinweise",
+      "f4": "Ohne Anmeldung",
+      "cta": "Kostenlos berechnen"
+    },
+    "report": {
+      "name": "PDF-Bericht",
+      "price": "4,99 €",
+      "f1": "Jede Position auf den Cent",
+      "f2": "Auktionsgebühren nach Preisstufe",
+      "f3": "Zoll, VSt und USt mit Grundlagen und Sätzen",
+      "f4": "Dokumentenliste und persönliches PDF",
+      "cta": "Berechnen & freischalten"
+    },
+    "partner": {
+      "name": "Import mit Partner",
+      "price": "Partnerangebot",
+      "f1": "Geprüftes Importunternehmen",
+      "f2": "Kauf, Transport und Verzollung für Sie",
+      "f3": "Kontakt innerhalb 1 Werktags",
+      "f4": "Unverbindlich",
+      "cta": "Mit Rechnung starten"
+    }
+  },
+  "faq": {
+    "eyebrow": "Fragen & Antworten",
+    "title": "Häufige Fragen zum Autoimport",
+    "lead": "Keine Antwort gefunden? Der Rechner zeigt alle Annahmen, der PDF-Bericht jeden Satz.",
+    "q1": {
+      "q": "Wie hoch ist der Zoll auf ein Auto aus den USA?",
+      "a": "Für Pkw (KN 8703) beträgt der Zoll 10 % des CIF-Zollwerts, für Pickups und leichte Lkw (8704) 22 %, für Motorräder 6–8 %. Oldtimer über 30 Jahre im Originalzustand können 0 % erhalten. Der Zollwert umfasst Kaufpreis, Auktionsgebühren, Transport bis zur EU-Grenze und Versicherung."
+    },
+    "q2": {
+      "q": "Welche Verbrauchsteuer gilt beim Import nach Polen?",
+      "a": "Verbrenner bis 2000 cm³: 3,1 %, darüber 18,6 %. Hybride: 1,55 % bis 2000 cm³ und 9,3 % bis 3500 cm³. Plug-in-Hybride bis 2000 cm³ und E-Autos sind befreit. Basis ist Zollwert plus Zoll, umgerechnet in PLN."
+    },
+    "q3": {
+      "q": "Wo verzollt man am besten: Bremerhaven, Rotterdam oder Gdynia?",
+      "a": "Die Einfuhrumsatzsteuer erhebt das Abfertigungsland: 19 % in Deutschland, 21 % in den Niederlanden, 23 % in Polen. Deutschland senkt die USt, dafür fallen Autotransport und separate Verbrauchsteuer (binnen 14 Tagen) an."
+    },
+    "q4": {
+      "q": "Was ist das Zollverfahren 4200?",
+      "a": "Abfertigung mit USt-Befreiung im Einfuhrland, wenn das Fahrzeug direkt an ein umsatzsteuerlich registriertes Unternehmen in einem anderen EU-Staat geht. Der Erwerber erklärt die Steuer per Reverse Charge. Für Privatpersonen nicht verfügbar."
+    },
+    "q5": {
+      "q": "Wie lange dauert der Transport nach Europa?",
+      "a": "Von der US-Ostküste und Kanada etwa 2–3 Wochen, von Kalifornien etwa 5 Wochen, aus Japan 6–7 Wochen, aus den VAE 3–4 Wochen, aus UK wenige Tage. Hinzu kommen Landtransport und Verzollung."
+    },
+    "q6": {
+      "q": "Woher stammen die Wechselkurse?",
+      "a": "Wir verwenden die NBP-Mittelkurse, die jeden Werktag automatisch abgerufen werden. Da Sie Tage oder Wochen nach der Rechnung zahlen, berücksichtigt die Spanne Kursschwankungen."
+    },
+    "q7": {
+      "q": "Was enthält der kostenpflichtige PDF-Bericht?",
+      "a": "Jede Position auf den Cent: Auktionsgebühren nach Stufen, Transport, Zollwert, Zoll, Verbrauchsteuer und USt mit Grundlagen und Sätzen, Dokumentenliste und persönliches PDF. Zahlung per Karte, BLIK oder Przelewy24."
+    },
+    "q8": {
+      "q": "Ist das Ergebnis verbindlich?",
+      "a": "Nein. Es ist eine Schätzung auf Basis aktueller Sätze. Endgültige Beträge legen Zoll- und Finanzamt fest, die z. B. den Zollwert prüfen können. Der Bericht nennt alle Annahmen."
+    }
+  },
+  "calc": {
+    "title": "Rechner für Fahrzeugimportkosten",
+    "lead": "Drei Schritte, Live-Ergebnis. Ändern Sie die Werte und sehen Sie die Gesamtkosten.",
+    "currency": "Ergebniswährung",
+    "progress": "Fortschritt"
+  },
+  "seo": {
+    "home": {
+      "title": "Autoimport-Rechner – USA, Japan, Dubai in die EU | CarImport.eu",
+      "description": "Berechnen Sie die Importkosten aus USA, Kanada, Japan, VAE oder UK: Copart- und IAAI-Gebühren, Transport, Zoll, Verbrauchsteuer und USt. Live-Ergebnis und PDF-Bericht."
+    },
+    "calculator": {
+      "title": "Rechner für Zoll, Verbrauchsteuer & USt beim Autoimport | CarImport.eu",
+      "description": "Land, Auktion, Hafen und Fahrzeug wählen — der Live-Rechner zeigt Kostenspanne und Struktur: Preis, Transport, Zoll, Verbrauchsteuer, USt, Zulassung."
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung | CarImport.eu",
+      "description": "Wie CarImport.eu personenbezogene Daten verarbeitet: Zahlungen, Berichte, Partneranfragen und Cookies."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Rechtliches",
+    "title": "Datenschutzerklärung",
+    "s1": {
+      "title": "Verantwortlicher",
+      "text": "Verantwortlich ist der Betreiber von CarImport.eu. Kontakt in Datenschutzfragen: {{email}}."
+    },
+    "s2": {
+      "title": "Welche Daten wir verarbeiten",
+      "text": "Kalkulationsdaten (ohne Personenbezug), beim Berichtskauf Name und E-Mail, im Partnerformular zusätzlich Telefon und Nachricht. Kartendaten verarbeitet ausschließlich Stripe."
+    },
+    "s3": {
+      "title": "Zwecke und Rechtsgrundlagen",
+      "text": "Vertragserfüllung beim Berichtskauf (Art. 6 Abs. 1 lit. b DSGVO), Buchhaltungspflichten (lit. c), Weitergabe an Partner mit Einwilligung (lit. a) und Analyse mit Cookie-Einwilligung."
+    },
+    "s4": {
+      "title": "Empfänger",
+      "text": "Stripe Payments Europe (Zahlungen), Hosting- und E-Mail-Anbieter sowie beim Partnerformular ein geprüftes Importunternehmen, nur mit Ihrer Einwilligung."
+    },
+    "s5": {
+      "title": "Cookies",
+      "text": "Notwendige Cookies und Browserspeicher merken Sprache, Design, Rechnerfortschritt und Berichtszugang. Analyse nur nach „Alle akzeptieren“."
+    },
+    "s6": {
+      "title": "Ihre Rechte",
+      "text": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Übertragbarkeit, Widerspruch, Widerruf der Einwilligung und Beschwerde bei der Aufsichtsbehörde. Kontakt: {{email}}."
+    }
   }
 }
