@@ -1,0 +1,287 @@
+{
+  "affiliate": {
+    "CURRENCY_EXCHANGE": "Дешевший обмін валют",
+    "CURRENCY_EXCHANGE_HINT": "Оплата без банківської маржі",
+    "FINANCING": "Лізинг або кредит",
+    "FINANCING_HINT": "Фінансування імпорту та податків",
+    "VIN_CHECK": "Перевірити історію VIN",
+    "VIN_CHECK_HINT": "Пошкодження, пробіг, викрадення",
+    "sponsored": "Партнерське посилання",
+    "title": "Також знадобиться"
+  },
+  "app": {
+    "headline": "Скільки насправді коштує авто з-за кордону?",
+    "tagline": "Аукціони США, Канади, Японії, Дубаю чи UK → мито, акциз і ПДВ у ЄС. Результат наживо, без реєстрації."
+  },
+  "auction": {
+    "COPART": "Copart",
+    "DEALER": "Дилер / приватно",
+    "EMIRATES_AUCTION": "Emirates Auction",
+    "IAAI": "IAAI",
+    "USS": "USS Japan"
+  },
+  "buyer": {
+    "COMPANY": "Компанія",
+    "PRIVATE": "Приватна особа"
+  },
+  "category": {
+    "MOTORCYCLE": "Мотоцикл",
+    "PASSENGER_CAR": "Легковий",
+    "PICKUP_TRUCK": "Пікап",
+    "REGISTRATION": "Реєстрація",
+    "SUV": "SUV",
+    "TAXES": "Мита та податки ЄС",
+    "TRANSPORT": "Транспорт і логістика",
+    "VAN": "Мінівен",
+    "VEHICLE": "Авто та аукціон"
+  },
+  "condition": {
+    "ENGINE_STARTS": "Двигун заводиться",
+    "ENGINE_STARTS_HINT": "Не їде самостійно",
+    "NON_RUNNING": "Пошкоджений / Salvage",
+    "NON_RUNNING_HINT": "Потрібен евакуатор з лебідкою",
+    "RUN_AND_DRIVE": "Run & Drive",
+    "RUN_AND_DRIVE_HINT": "Заводиться і їде"
+  },
+  "cost": {
+    "AUCTION_AGENT_COMMISSION": "Комісія експортного агента",
+    "AUCTION_BUYER_FEE": "Аукціонний збір покупця",
+    "AUCTION_ENVIRONMENTAL_FEE": "Екологічний збір",
+    "AUCTION_EXPORT_DOCS": "Експортні документи",
+    "AUCTION_GATE_FEE": "Плата за виїзд (gate fee)",
+    "AUCTION_RECYCLING_FEE": "Утилізаційний збір (Японія)",
+    "AUCTION_SERVICE_FEE": "Сервісний збір аукціону",
+    "AUCTION_TITLE_HANDLING_FEE": "Обробка документа власності (title)",
+    "AUCTION_VIRTUAL_BID_FEE": "Збір за онлайн-ставку",
+    "CARGO_INSURANCE": "Страхування вантажу",
+    "CUSTOMS_AGENCY": "Митний брокер",
+    "CUSTOMS_DUTY": "Мито",
+    "EXCISE_TAX": "Акциз",
+    "FORKLIFT_LOADING": "Навантаження навантажувачем",
+    "IMPORT_VAT": "Імпортний ПДВ",
+    "INDIVIDUAL_APPROVAL": "Індивідуальна омологація (§21 StVZO)",
+    "INLAND_TRANSPORT": "Наземне транспортування до порту",
+    "INTRA_EU_ACQUISITION_VAT": "ПДВ внутрішньоєвропейського придбання (reverse charge)",
+    "INTRA_EU_TRANSPORT": "Автовоз з порту до країни призначення",
+    "OCEAN_FREIGHT": "Морський фрахт",
+    "PORT_UNLOADING": "Розвантаження та термінал у порту",
+    "PURCHASE_PRICE": "Ціна покупки (виграна ставка)",
+    "RDW_INSPECTION": "Перевірка RDW",
+    "RECYCLING_FEE": "Утилізаційний збір",
+    "REGISTRATION_FEE": "Реєстраційні збори",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Регулювання фар (правий кермо)",
+    "SWORN_TRANSLATION": "Присяжний переклад документів",
+    "TECHNICAL_INSPECTION": "Технічний огляд",
+    "US_LIGHTING_CONVERSION": "Переобладнання освітлення (US-версія)",
+    "WINCH_CONTAINER_LOADING": "Завантаження в контейнер лебідкою"
+  },
+  "doc": {
+    "billOfLading": "Коносамент (Bill of Lading)",
+    "companyRegistryExtract": "Виписка з реєстру компанії",
+    "customsDeclarationSad": "Митна декларація (SAD)",
+    "customsPowerOfAttorney": "Довіреність для митного брокера",
+    "eoriNumber": "Номер EORI імпортера",
+    "evChargingPortAdapterNote": "Перевірте стандарт зарядного порту (NACS/CCS1 → CCS2)",
+    "historicExpertOpinion": "Висновок експерта щодо історичного статусу",
+    "insurancePolicy": "Поліс страхування вантажу",
+    "invoice": "Рахунок / Bill of Sale з аукціону",
+    "ownership": {
+      "japanExportCertificate": "Японський експортний сертифікат",
+      "title": "Оригінал Title (документ власності)",
+      "uaeExportCertificate": "Експортний сертифікат ОАЕ (RTA)",
+      "v5c": "Британське свідоцтво V5C"
+    },
+    "pl": {
+      "exciseDeclarationAkcUs": "Акцизна декларація AKC-U/S та підтвердження оплати",
+      "exciseExemptionConfirmation": "Підтвердження звільнення від акцизу (EV)",
+      "recyclingFeeConfirmation": "Підтвердження сплати утилізаційного збору"
+    },
+    "procedure4200VatIdAndProofOfTransport": "Процедура 4200: номер ПДВ ЄС і доказ перевезення",
+    "registrationApplication": "Заява на реєстрацію авто",
+    "salvageTitleRepairEvidence": "Документація ремонту (salvage title)",
+    "swornTranslation": "Присяжні переклади документів",
+    "technicalInspection": "Довідка про технічний огляд",
+    "transportInvoices": "Рахунки за транспорт і фрахт",
+    "usExportAesItn": "Експортна декларація США (AES/ITN)",
+    "vatPaymentProof": "Підтвердження сплати ПДВ"
+  },
+  "error": {
+    "auction": {
+      "noSchedule": "Немає тарифів аукціону.",
+      "unsupported": "Цей аукціон не підтримується."
+    },
+    "excise": {
+      "rateNotFound": "Немає ставки акцизу для цієї конфігурації."
+    },
+    "port": {
+      "unknown": "Невідомий порт призначення."
+    },
+    "procedure4200": {
+      "notAvailableInPort": "Процедура 4200 недоступна в цьому порту.",
+      "sameCountry": "Процедура 4200 вимагає розмитнення в іншій країні, ніж країна призначення."
+    },
+    "route": {
+      "unavailable": "Немає маршруту доставки для цього вибору."
+    },
+    "tariff": {
+      "notFound": "Не вдалося класифікувати авто в митному тарифі."
+    },
+    "taxProfile": {
+      "missing": "Немає податкових ставок для обраної країни."
+    }
+  },
+  "fuel": {
+    "DIESEL": "Дизель",
+    "EV": "Електро",
+    "HEV": "Гібрид",
+    "HYDROGEN": "Водень",
+    "LPG": "ГБО",
+    "MHEV": "М'який гібрид",
+    "PETROL": "Бензин",
+    "PHEV": "Plug-in"
+  },
+  "lead": {
+    "consentMarketing": "Хочу отримувати пропозиції та поради (необов'язково).",
+    "consentTransfer": "Погоджуюся на передачу моїх даних одному перевіреному партнеру (GDPR ст. 6(1)(a)).",
+    "email": "E-mail",
+    "message": "Посилання на аукціон або деталі",
+    "name": "Ім'я та прізвище",
+    "phone": "Телефон (необов'язково)",
+    "submit": "Надіслати запит",
+    "subtitle": "Перевірена компанія зв'яжеться з вами з пропозицією «під ключ».",
+    "thanks": "Дякуємо!",
+    "thanksHint": "Партнер зв'яжеться протягом 1 робочого дня.",
+    "title": "Безпечний імпорт з партнером"
+  },
+  "origin": {
+    "CANADA": "Канада",
+    "JAPAN": "Японія",
+    "UAE": "ОАЕ / Дубай",
+    "UK": "Велика Британія",
+    "USA": "США"
+  },
+  "paywall": {
+    "blikHint": "Оплата BLIK, Przelewy24 або карткою.",
+    "currency": "Валюта оплати",
+    "email": "E-mail (надішлемо посилання на звіт)",
+    "fullName": "Ім'я та прізвище (у звіті)",
+    "pay": "Перейти до оплати",
+    "redirecting": "Перенаправлення…",
+    "secure": "Безпечна оплата Stripe. Ми не зберігаємо дані карток.",
+    "subtitle": "Точні суми, бази та ставки податків, документи – у PDF з вашим іменем.",
+    "terms": "Приймаю умови та прошу негайно надати цифровий контент.",
+    "title": "Повний звіт про імпорт"
+  },
+  "report": {
+    "amount": "Сума",
+    "back": "Назад до калькулятора",
+    "base": "База",
+    "download": "Завантажити PDF",
+    "expired": "Оплату не завершено.",
+    "generating": "Створюємо PDF…",
+    "item": "Позиція",
+    "rate": "Ставка",
+    "refunded": "Замовлення повернуто.",
+    "stage": {
+      "CUSTOMS": "Розмитнення",
+      "PURCHASE": "Купівля",
+      "REGISTRATION": "Реєстрація",
+      "SHIPPING": "Доставка"
+    },
+    "title": "Звіт про витрати на імпорт авто",
+    "total": "Загальна вартість «під ключ»",
+    "waiting": "Підтверджуємо оплату…"
+  },
+  "result": {
+    "chart": "Структура витрат",
+    "exciseIncluded": "Акциз враховано",
+    "fx": "Курси НБП на {{date}}",
+    "paid1": "Точні аукціонні збори",
+    "paid2": "Мито, акциз і ПДВ",
+    "paid3": "Перелік документів",
+    "paid4": "Іменний PDF-звіт",
+    "partner": "Доручити імпорт перевіреному партнеру",
+    "rangeHint": "Діапазон враховує коливання курсів і фрахту.",
+    "title": "Орієнтовна вартість «під ключ»",
+    "transit": "{{days}} днів морем",
+    "unlock": "Відкрити точний розрахунок – {{price}}"
+  },
+  "shipping": {
+    "CONTAINER_EXCLUSIVE": "Окремий контейнер",
+    "CONTAINER_SHARED": "Спільний контейнер",
+    "RORO": "RoRo"
+  },
+  "title": {
+    "CLEAN": "Clean title",
+    "SALVAGE": "Salvage / Non-repairable"
+  },
+  "validation": {
+    "auctionHouse": {
+      "notInOrigin": "Цей аукціон не працює в обраній країні."
+    },
+    "engineCc": {
+      "required": "Вкажіть об'єм двигуна."
+    },
+    "procedure4200": {
+      "companyOnly": "Процедура 4200 доступна лише компаніям з дійсним номером ПДВ ЄС."
+    }
+  },
+  "warning": {
+    "dealer": {
+      "verifyExportDocuments": "Купуючи у дилера, переконайтеся, що він надасть експортні документи."
+    },
+    "historic": {
+      "expertOpinionRequired": "Статус історичного авто (0% мита) потребує висновку експерта і може бути оскаржений митницею."
+    },
+    "intraEuTransport": {
+      "notPriced": "Немає тарифу на перевезення з порту – вартість не враховано."
+    },
+    "newMeansOfTransport": {
+      "vatInDestination": "Новий транспортний засіб (≤6 міс. або ≤6000 км): ПДВ сплачується і в країні реєстрації."
+    },
+    "nl": {
+      "bpmNotIncluded": "Нідерландський податок BPM не враховано."
+    },
+    "pl": {
+      "clearedForOtherMemberState": "Розмитнення в Польщі для реєстрації в іншій країні – перевірте реєстраційні податки.",
+      "exciseDeclarationWithin14Days": "Польський акциз сплачується в податковій (AKC-U/S) протягом 14 днів після ввезення.",
+      "pickupMayBeReclassified": "Пікап, зареєстрований як легковий, може оподатковуватися акцизом."
+    },
+    "procedure4200": {
+      "reverseChargeDeductible": "Процедура 4200: ПДВ декларується в країні призначення (reverse charge)."
+    },
+    "registrationTax": {
+      "notModelled": "Реєстраційний податок країни призначення ще не враховано."
+    }
+  },
+  "wizard": {
+    "auction": "Аукціон",
+    "back": "Назад",
+    "bid": "Виграна ставка",
+    "buyer": "Покупець",
+    "category": "Тип авто",
+    "condition": "Стан авто",
+    "destination": "Країна реєстрації",
+    "engineCc": "Об'єм двигуна",
+    "exciseRate": "Акциз PL: {{rate}}%",
+    "exciseWarning": "Понад 2000 см³ акциз зростає з {{from}}% до {{to}}% – це тисячі різниці!",
+    "finish": "Повний звіт",
+    "forklift": "навантажувач / лебідка",
+    "fuel": "Привід",
+    "historic": "Історичне авто в оригінальному стані",
+    "historicHint": "30+ років, без змін: 0% мита і знижений ПДВ.",
+    "next": "Далі",
+    "origin": "Країна покупки",
+    "port": "Порт розмитнення в ЄС",
+    "procedure4200": "Митна процедура 4200",
+    "procedure4200Hint": "Для компаній з ПДВ ЄС: без ПДВ на кордоні, reverse charge у країні призначення.",
+    "shipping": "Спосіб морської доставки",
+    "step1": "Маршрут",
+    "step2": "Авто",
+    "step3": "Стан і покупка",
+    "title": "Тип документа (title)",
+    "year": "Рік випуску",
+    "zone": "Розташування майданчика (штат / провінція)",
+    "zoneOther": "Інше / не знаю"
+  }
+}
