@@ -1,0 +1,1014 @@
+{
+  "affiliate": {
+    "CURRENCY_EXCHANGE": "Schimb valutar mai ieftin",
+    "CURRENCY_EXCHANGE_HINT": "Plătește mașina fără comisioanele băncii",
+    "FINANCING": "Leasing sau credit",
+    "FINANCING_HINT": "Finanțează importul și taxele",
+    "VIN_CHECK": "Verifică istoricul VIN",
+    "VIN_CHECK_HINT": "Daune, kilometraj, înregistrări de furt",
+    "sponsored": "Sponsorizat",
+    "title": "S-ar putea să îți mai trebuiască"
+  },
+  "app": {
+    "headline": "Cât costă de fapt o mașină importată?",
+    "tagline": "Licitații din SUA, Canada, Japonia, Dubai sau Regatul Unit → taxe vamale UE, accize și TVA. Rezultat instant, fără înregistrare."
+  },
+  "auction": {
+    "COPART": "Copart",
+    "DEALER": "Dealer / persoană fizică",
+    "EMIRATES_AUCTION": "Emirates Auction",
+    "IAAI": "IAAI",
+    "USS": "USS Japonia"
+  },
+  "buyer": {
+    "COMPANY": "Firmă",
+    "PRIVATE": "Persoană fizică"
+  },
+  "category": {
+    "MOTORCYCLE": "Motocicletă",
+    "PASSENGER_CAR": "Autoturism",
+    "PICKUP_TRUCK": "Pickup",
+    "REGISTRATION": "După import și înmatriculare",
+    "SUV": "SUV",
+    "TAXES": "Taxe vamale și impozite UE",
+    "TRANSPORT": "Transport și logistică",
+    "VAN": "Autoutilitară",
+    "VEHICLE": "Vehicul și licitație",
+    "RISK": "Riscuri pe drum"
+  },
+  "condition": {
+    "ENGINE_STARTS": "Motorul pornește",
+    "ENGINE_STARTS_HINT": "Nu se poate deplasa prin forțe proprii",
+    "NON_RUNNING": "Avariat / Salvage",
+    "NON_RUNNING_HINT": "Necesită platformă cu troliu",
+    "RUN_AND_DRIVE": "Run & Drive",
+    "RUN_AND_DRIVE_HINT": "Pornește și rulează"
+  },
+  "cost": {
+    "AUCTION_AGENT_COMMISSION": "Comision agent de export",
+    "AUCTION_BUYER_FEE": "Taxa de cumpărător la licitație",
+    "AUCTION_ENVIRONMENTAL_FEE": "Taxă de mediu",
+    "AUCTION_EXPORT_DOCS": "Documente de export",
+    "AUCTION_GATE_FEE": "Taxă de ieșire din parc (gate fee)",
+    "AUCTION_RECYCLING_FEE": "Taxă de reciclare (Japonia)",
+    "AUCTION_SERVICE_FEE": "Taxă de serviciu la licitație",
+    "AUCTION_TITLE_HANDLING_FEE": "Taxă de procesare a titlului",
+    "AUCTION_VIRTUAL_BID_FEE": "Taxă de licitare online",
+    "CARGO_INSURANCE": "Asigurare de transport (cargo)",
+    "CUSTOMS_AGENCY": "Comisionar vamal",
+    "CUSTOMS_DUTY": "Taxe vamale",
+    "EXCISE_TAX": "Accize",
+    "FORKLIFT_LOADING": "Încărcare cu stivuitorul",
+    "IMPORT_VAT": "TVA la import",
+    "INDIVIDUAL_APPROVAL": "Omologare individuală (§21 StVZO)",
+    "INLAND_TRANSPORT": "Transport intern până în port",
+    "INTRA_EU_ACQUISITION_VAT": "TVA la achiziția intracomunitară (taxare inversă, deductibilă)",
+    "INTRA_EU_TRANSPORT": "Trailer auto din port până la destinație",
+    "OCEAN_FREIGHT": "Navlu maritim",
+    "PORT_UNLOADING": "Descărcare în port și terminal",
+    "PURCHASE_PRICE": "Preț de achiziție (oferta câștigătoare)",
+    "RDW_INSPECTION": "Inspecție RDW",
+    "RECYCLING_FEE": "Taxă de reciclare",
+    "REGISTRATION_FEE": "Taxe de înmatriculare",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Reglarea farurilor (volan pe dreapta)",
+    "SWORN_TRANSLATION": "Traducere autorizată a documentelor",
+    "TECHNICAL_INSPECTION": "Inspecție tehnică",
+    "US_LIGHTING_CONVERSION": "Conversia sistemului de iluminare (specificație SUA)",
+    "WINCH_CONTAINER_LOADING": "Încărcare în container cu troliul",
+    "DELIVERY_CAR_CARRIER": "Trailer auto din port până la ușa ta",
+    "DELIVERY_TOW_TRUCK": "Platformă de tractare din port până la ușa ta",
+    "DELIVERY_SELF_DRIVE": "Condus până acasă cu numere provizorii (combustibil, numere, asigurare pe termen scurt)",
+    "TECHNICAL_INSPECTION_IMPORT": "Inspecție tehnică a unui vehicul importat",
+    "REG_TEMPORARY_PERMIT": "Autorizație de circulație provizorie",
+    "REG_TEMPORARY_PLATES": "Numere provizorii",
+    "REG_CERTIFICATE": "Certificat de înmatriculare",
+    "REG_PLATES": "Plăcuțe de înmatriculare",
+    "REG_STICKER": "Autocolant de control",
+    "REAR_FOG_LIGHT": "Montarea lămpii de ceață spate",
+    "SPEEDOMETER_KMH": "Conversia vitezometrului în km/h",
+    "SERVICE_INSPECTION": "Revizie și schimb de lichide",
+    "GEOMETRY_ALIGNMENT": "Geometria roților",
+    "DETAILING": "Curățare și detailing",
+    "EXPERT_VALUATION": "Evaluare de către un expert (de ex. pentru CASCO)",
+    "REPAIR_ESTIMATE": "Reparații (estimarea ta)",
+    "INSURANCE_FIRST_YEAR": "Asigurare – primul an (suma ta)",
+    "RISK_PORT_STORAGE": "Depozitare în port (ridicare întârziată, acte)",
+    "RISK_CUSTOMS_INSPECTION": "Control vamal / scanarea containerului",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Contestarea valorii în vamă (taxe vamale și TVA suplimentare)",
+    "RISK_VESSEL_ROLLOVER": "Mutat pe o navă ulterioară (depozitare în portul de export)",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Daune în transport – franșiza asigurării",
+    "RISK_HIDDEN_DAMAGE": "Daune ascunse, nevizibile la licitație",
+    "RISK_TITLE_DELAY": "Întârzierea titlului (depozitare suplimentară)",
+    "RISK_EXPORT_DOCS_DELAY": "Întârzierea documentelor de export"
+  },
+  "doc": {
+    "billOfLading": "Conosament (Bill of Lading)",
+    "companyRegistryExtract": "Extras de la registrul comerțului",
+    "customsDeclarationSad": "Declarație vamală (DVI / SAD)",
+    "customsPowerOfAttorney": "Împuternicire pentru comisionarul vamal",
+    "eoriNumber": "Numărul EORI al importatorului",
+    "evChargingPortAdapterNote": "Verifică standardul portului de încărcare (NACS/CCS1 → CCS2)",
+    "historicExpertOpinion": "Expertiză privind statutul de vehicul istoric",
+    "insurancePolicy": "Polița de asigurare a transportului",
+    "invoice": "Factura licitației / contract de vânzare-cumpărare",
+    "ownership": {
+      "japanExportCertificate": "Certificat de export japonez (radiere)",
+      "title": "Title original (document de proprietate)",
+      "uaeExportCertificate": "Certificat de export EAU (RTA)",
+      "v5c": "Certificat de înmatriculare britanic V5C (logbook)"
+    },
+    "pl": {
+      "exciseDeclarationAkcUs": "Declarația de accize AKC-U/S și dovada plății",
+      "exciseExemptionConfirmation": "Confirmarea scutirii de accize (vehicul electric)",
+      "recyclingFeeConfirmation": "Dovada plății taxei de reciclare"
+    },
+    "procedure4200VatIdAndProofOfTransport": "Procedura 4200: codul de TVA UE al cumpărătorului și dovada transportului",
+    "registrationApplication": "Cerere de înmatriculare a vehiculului",
+    "salvageTitleRepairEvidence": "Documentația reparațiilor (titlu salvage)",
+    "swornTranslation": "Traduceri autorizate ale documentelor străine",
+    "technicalInspection": "Certificat de inspecție tehnică",
+    "transportInvoices": "Facturi de transport și navlu",
+    "usExportAesItn": "Declarație de export SUA (AES/ITN)",
+    "vatPaymentProof": "Dovada plății TVA"
+  },
+  "error": {
+    "auction": {
+      "noSchedule": "Nu este disponibilă nicio grilă de taxe pentru această licitație.",
+      "unsupported": "Această casă de licitații nu este acceptată."
+    },
+    "excise": {
+      "rateNotFound": "Nu există o cotă de accize pentru această configurație."
+    },
+    "port": {
+      "unknown": "Port de destinație necunoscut."
+    },
+    "procedure4200": {
+      "notAvailableInPort": "Procedura 4200 nu este disponibilă în acest port.",
+      "sameCountry": "Procedura 4200 necesită vămuirea într-o altă țară decât cea de destinație."
+    },
+    "route": {
+      "unavailable": "Nu există nicio rută maritimă disponibilă pentru această selecție."
+    },
+    "tariff": {
+      "notFound": "Vehiculul nu a putut fi încadrat în tariful vamal."
+    },
+    "taxProfile": {
+      "missing": "Nu există cote de impozitare pentru țara selectată."
+    }
+  },
+  "fuel": {
+    "DIESEL": "Diesel",
+    "EV": "Electric",
+    "HEV": "Hibrid",
+    "HYDROGEN": "Hidrogen",
+    "LPG": "GPL",
+    "MHEV": "Mild hybrid",
+    "PETROL": "Benzină",
+    "PHEV": "Hibrid plug-in"
+  },
+  "lead": {
+    "consentMarketing": "Trimiteți-mi oferte și sfaturi despre import (opțional).",
+    "consentTransfer": "Sunt de acord ca datele și calculul meu să fie transmise unui singur partener verificat pentru pregătirea unei oferte (art. 6 alin. (1) lit. a) GDPR).",
+    "email": "E-mail",
+    "message": "Link către licitație sau detalii suplimentare",
+    "name": "Nume complet",
+    "phone": "Telefon (opțional)",
+    "submit": "Trimite cererea",
+    "subtitle": "CarImport.eu nu importă mașini. Dacă dorești, transmitem estimarea ta unei singure firme de import verificate, care îți va pregăti o ofertă. Fără nicio obligație.",
+    "thanks": "Mulțumim!",
+    "thanksHint": "Firma de import te va contacta în cel mult o zi lucrătoare.",
+    "title": "Cerere către o firmă de import (opțional)"
+  },
+  "origin": {
+    "CANADA": "Canada",
+    "JAPAN": "Japonia",
+    "UAE": "EAU / Dubai",
+    "UK": "Regatul Unit",
+    "USA": "SUA"
+  },
+  "paywall": {
+    "blikHint": "Plătește cu BLIK, Przelewy24 sau cu cardul.",
+    "currency": "Moneda de plată",
+    "email": "E-mail (îți trimitem linkul către raport)",
+    "fullName": "Nume complet (tipărit pe raport)",
+    "pay": "Continuă spre plată",
+    "redirecting": "Redirecționare…",
+    "secure": "Plată securizată prin Stripe. Nu stocăm niciodată datele cardului.",
+    "subtitle": "Sume exacte, baze de impozitare și cote, documente – într-un PDF pe numele tău.",
+    "terms": "Accept termenii și solicit livrarea imediată a conținutului digital, renunțând la dreptul de retragere.",
+    "title": "Raport complet de import"
+  },
+  "report": {
+    "amount": "Sumă",
+    "back": "Înapoi la calculator",
+    "base": "Bază",
+    "download": "Descarcă PDF",
+    "expired": "Plata nu a fost finalizată.",
+    "generating": "Se generează PDF-ul…",
+    "item": "Poziție",
+    "rate": "Cotă",
+    "refunded": "Această comandă a fost rambursată.",
+    "stage": "Etapă",
+    "title": "Raport privind costurile de import ale vehiculului",
+    "total": "Cost total până la ușa ta",
+    "waiting": "Se confirmă plata…",
+    "delivery": "Livrare",
+    "leadTime": "Timp până la înmatriculare",
+    "days": "zile",
+    "scenarios": "Trei scenarii de cost",
+    "timeline": "Cronologie",
+    "plan": "Ce faci după import – pas cu pas",
+    "step": "Pas",
+    "deadline": "Termen",
+    "riskDetail": "Probabilitate {{p}}%, cost dacă se întâmplă: {{min}}–{{max}} {{cur}}",
+    "userAmount": "suma introdusă de tine",
+    "scenarioMethod": "Scenariul mediu include riscurile ca valoare așteptată (probabilitate × cost mediu); cel pesimist presupune că fiecare risc se produce la costul maxim."
+  },
+  "result": {
+    "chart": "Structura costurilor",
+    "exciseIncluded": "Accize incluse",
+    "fx": "Cursuri NBP din {{date}}",
+    "paid1": "Taxe de licitație exacte",
+    "paid2": "Taxe vamale, accize și TVA",
+    "paid3": "Lista documentelor",
+    "paid4": "Raport PDF personalizat",
+    "partner": "Vrei o ofertă de la o firmă de import?",
+    "rangeHint": "Intervalul acoperă fluctuațiile cursului valutar și ale tarifelor de navlu.",
+    "title": "Cost total estimat",
+    "transit": "{{days}} zile pe mare",
+    "unlock": "Deblochează raportul complet – {{price}}",
+    "updating": "Se actualizează…",
+    "short": "Cost total",
+    "calculating": "Calculăm fiecare poziție și fiecare scenariu…",
+    "edit": "Modifică datele",
+    "structure": "Structura costurilor (scenariu mediu)",
+    "timeline": "Timp: {{min}}–{{max}} zile până la înmatriculare",
+    "included": "Ce este inclus",
+    "risks": "Ce se poate întâmpla pe drum",
+    "risksLead": "Fiecare risc are o probabilitate și un interval de cost. Scenariul mediu le ia în calcul proporțional, cel pesimist integral. Sumele se află în raport.",
+    "probability": "Probabilitate",
+    "reportEyebrow": "Raport door-to-door",
+    "reportTitle": "Fiecare poziție la cent – în trei scenarii",
+    "reportItem1": "Taxe de licitație, transport, navlu și asigurare",
+    "reportItem2": "Taxe vamale, accize și TVA cu baze și cote",
+    "reportItem3": "Livrare: km × tarif, încărcare, minim",
+    "reportItem4": "Taxe de înmatriculare și servicii după import",
+    "reportItem5": "Riscuri cu sume: optimist, mediu, pesimist",
+    "reportItem6": "Plan pas cu pas cu termene și lista documentelor",
+    "cheapestPort": "cel mai ieftin port"
+  },
+  "shipping": {
+    "CONTAINER_EXCLUSIVE": "Container exclusiv",
+    "CONTAINER_SHARED": "Container partajat",
+    "RORO": "RoRo"
+  },
+  "title": {
+    "CLEAN": "Titlu curat (clean title)",
+    "SALVAGE": "Salvage / Non-repairable"
+  },
+  "validation": {
+    "auctionHouse": {
+      "notInOrigin": "Această casă de licitații nu activează în țara selectată."
+    },
+    "engineCc": {
+      "required": "Introdu capacitatea cilindrică a motorului."
+    },
+    "procedure4200": {
+      "companyOnly": "Procedura 4200 este disponibilă doar firmelor cu un cod de TVA UE valabil."
+    }
+  },
+  "warning": {
+    "dealer": {
+      "verifyExportDocuments": "La cumpărarea de la un dealer, asigură-te că primești documentele de export."
+    },
+    "historic": {
+      "expertOpinionRequired": "Statutul de vehicul de colecție (taxe vamale 0%) necesită o expertiză și poate fi contestat de vamă."
+    },
+    "intraEuTransport": {
+      "notPriced": "Nu există un preț de transport din port până la destinație – costul nu este inclus."
+    },
+    "newMeansOfTransport": {
+      "vatInDestination": "Mijloc de transport nou (≤6 luni sau ≤6000 km): TVA se datorează și în țara de înmatriculare."
+    },
+    "nl": {
+      "bpmNotIncluded": "Taxa olandeză de înmatriculare BPM nu este inclusă."
+    },
+    "pl": {
+      "clearedForOtherMemberState": "Vămuit în Polonia pentru înmatriculare în altă țară – verifică taxele de înmatriculare din țara de destinație.",
+      "exciseDeclarationWithin14Days": "Accizele poloneze se plătesc la administrația fiscală (AKC-U/S) în termen de 14 zile de la sosire.",
+      "pickupMayBeReclassified": "Un pickup înmatriculat ca autoturism poate fi supus accizelor – verifică omologarea."
+    },
+    "procedure4200": {
+      "reverseChargeDeductible": "Procedura 4200: TVA se autolichidează în țara de destinație (taxare inversă, neutră pentru firmele înregistrate în scopuri de TVA)."
+    },
+    "registrationTax": {
+      "notModelled": "Taxa de înmatriculare din țara de destinație nu este încă inclusă în calcul."
+    },
+    "delivery": {
+      "portPickup": "Ai ales ridicarea din port – transportul rutier până acasă nu este inclus.",
+      "selfDriveNotRunning": "O mașină nefuncțională nu poate fi condusă cu numere provizorii – alege o platformă de tractare."
+    }
+  },
+  "wizard": {
+    "auction": "Casa de licitații",
+    "back": "Înapoi",
+    "bid": "Oferta câștigătoare",
+    "buyer": "Cumpărător",
+    "category": "Tipul vehiculului",
+    "condition": "Starea vehiculului",
+    "destination": "Țara de înmatriculare",
+    "engineCc": "Capacitatea cilindrică",
+    "exciseRate": "Accize PL: {{rate}}%",
+    "exciseWarning": "Peste 2000 cm³ accizele cresc de la {{from}}% la {{to}}% – adesea o diferență de mii!",
+    "finish": "Raport complet",
+    "forklift": "stivuitor / troliu",
+    "fuel": "Motorizare",
+    "historic": "Vehicul istoric în stare originală",
+    "historicHint": "Peste 30 de ani, nemodificat: taxe vamale 0% și TVA redusă.",
+    "next": "Înainte",
+    "origin": "Cumpăr din",
+    "port": "Portul UE de vămuire",
+    "procedure4200": "Procedura vamală 4200",
+    "procedure4200Hint": "Pentru firmele din UE înregistrate în scopuri de TVA: fără TVA la frontieră, taxare inversă la destinație.",
+    "shipping": "Metoda de transport maritim",
+    "step1": "De unde",
+    "step2": "Vehicul",
+    "step3": "Stare și preț",
+    "title": "Tipul titlului",
+    "year": "Anul fabricației",
+    "zone": "Locația parcului (stat / provincie)",
+    "zoneOther": "Altul / nu știu",
+    "advanced": "Opțiuni avansate",
+    "step4": "Destinație și livrare",
+    "step5": "După import",
+    "step6": "Raport de costuri",
+    "calculate": "Calculează costul total",
+    "departurePort": "Portul de plecare",
+    "departureAuto": "Automat – cea mai ieftină rută",
+    "departureHint": "Alege un anumit port dacă expeditorul tău a indicat deja unul.",
+    "delivery": "Transport din port până la ușa ta",
+    "distance": "Distanța din port până la adresa ta",
+    "pricePerKm": "Preț pe kilometru",
+    "tariffUnknown": "Nu există un tarif pe km pentru această țară – se va folosi un tarif fix.",
+    "repair": "Costul reparației",
+    "repairHintRunner": "Propunem o sumă tipică pentru această stare și acest titlu (vopsea, anvelope). Ai o ofertă de la un service? Introdu-o.",
+    "repairHintDamaged": "Propunem o sumă tipică de reparație pentru această stare (circa 30–40% din preț). Ai o ofertă de la un service? Introdu-o – daunele ascunse sunt calculate separat, ca risc.",
+    "afterImportLead": "Tot ce ai de făcut și de plătit între port și plăcuțele de înmatriculare. Pozițiile obligatorii sunt incluse mereu; restul le alegi tu.",
+    "statutory": "Obligatorii (taxe oficiale)",
+    "optional": "Opționale",
+    "recommended": "recomandat",
+    "optionsLoading": "Se încarcă serviciile pentru ruta ta…",
+    "noServices": "Încă nu avem o listă detaliată de prețuri pentru înmatriculare în această țară – raportul enumeră pașii.",
+    "insurance": "Asigurare RCA pentru primul an",
+    "insuranceHint": "Propunem oferta RCA mediană pentru o mașină nou înmatriculată în această țară. Ai propria ofertă? Introdu-o.",
+    "address": "Adresa de livrare",
+    "addressPlaceholder": "de ex. Cluj-Napoca, str. Memorandumului 5 sau un cod poștal",
+    "addressChange": "Schimbă",
+    "addressHint": "Singurul câmp pe care îl completezi. Pe baza adresei calculăm kilometrii din fiecare port și îl alegem pe cel mai ieftin.",
+    "portRankingAddress": "Toate cele {{count}} porturi UE calculate până la adresa ta – cele mai ieftine primele.",
+    "portRankingCountry": "Toate cele {{count}} porturi UE calculate până în țara de înmatriculare – introdu o adresă pentru kilometri exacți.",
+    "portRankingLoading": "Calculăm fiecare port UE…",
+    "portCheapest": "cel mai ieftin",
+    "portAuto": "Înapoi la cel mai ieftin",
+    "portsAll": "Arată toate porturile UE ({{count}})",
+    "portsLess": "Restrânge lista de porturi",
+    "days": "zile",
+    "portRankingNote": "Total door-to-door, scenariu mediu: navlu, vămuire și TVA în țara portului, livrare la adresă și taxe după import.",
+    "distanceRouted": "Traseu rutier de la {{port}} până la adresa ta.",
+    "distanceEstimated": "Estimare de la {{port}} până la adresa ta (linie dreaptă × 1,25).",
+    "distanceTypical": "Distanța tipică de la {{port}} – introdu adresa mai sus pentru o valoare exactă.",
+    "tariffShort": "Piață: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} încărcare, min. {{minimum}} {{cur}}."
+  },
+  "layout": {
+    "topbar": "Calculator independent al costurilor de import auto din SUA, Canada, Japonia, EAU și Regatul Unit în cele 27 de țări UE",
+    "forBusiness": "Pentru firmele de import",
+    "home": "Acasă",
+    "nav": "Navigare principală",
+    "calculator": "Calculator",
+    "howItWorks": "Cum funcționează",
+    "pricing": "Prețuri",
+    "faq": "Întrebări frecvente",
+    "cta": "Calculează costul",
+    "menu": "Meniu",
+    "close": "Închide",
+    "breadcrumb": "Fir de navigare",
+    "themeLight": "Treci la tema luminoasă",
+    "themeDark": "Treci la tema întunecată",
+    "about": "Despre noi",
+    "why": "De ce noi",
+    "what": "Ce calculăm",
+    "ctaHint": "Gratuit, fără înregistrare",
+    "language": "Limbă"
+  },
+  "footer": {
+    "about": "Calculator independent al costurilor de import pentru mașini din afara UE. Nu vindem și nu importăm mașini – calculăm cât costă de fapt.",
+    "calculators": "Calculatoare de import",
+    "importFrom": {
+      "USA": "Mașină din SUA",
+      "CANADA": "Mașină din Canada",
+      "JAPAN": "Mașină din Japonia",
+      "UAE": "Mașină din Dubai (EAU)",
+      "UK": "Mașină din Regatul Unit"
+    },
+    "service": "Serviciu",
+    "privacy": "Politica de confidențialitate",
+    "language": "Limbă",
+    "payments": "Plăți prin Stripe (card, BLIK, Przelewy24). Nu stocăm niciodată datele cardului.",
+    "rights": "Toate drepturile rezervate.",
+    "disclaimer": "Calculele au caracter informativ și nu reprezintă o decizie vamală sau consultanță fiscală."
+  },
+  "cookies": {
+    "title": "Cookie-uri",
+    "text": "Folosim cookie-uri esențiale pentru funcționarea site-ului și, cu acordul tău, cookie-uri de analiză. Detalii:",
+    "accept": "Accept toate",
+    "necessary": "Doar cele necesare"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Calculator de import auto",
+      "title1": "Află costul importului",
+      "title2": "înainte să licitezi",
+      "lead": "Un calculator independent care îți arată într-un minut costul complet al aducerii unei mașini din SUA, Canada, Japonia, EAU sau Regatul Unit – de la prețul de licitație până la plăcuțele de înmatriculare din țara ta.",
+      "cta": "Calculează gratuit",
+      "secondary": "Ce anume calculăm",
+      "visual": "Ford Mustang negru în lumină de neon galbenă, pe fundalul drapelului SUA",
+      "point1": "Estimare instantă – fără înregistrare, fără telefoane, fără să aștepți o ofertă",
+      "point2": "Peste 40 de poziții de cost, 43 de porturi UE și cursurile valutare de azi",
+      "point3": "Nu vindem mașini și nu luăm comisioane – cifrele sunt corecte"
+    },
+    "how": {
+      "eyebrow": "Cum funcționează",
+      "title": "De la idee la suma completă în patru pași",
+      "s1": {
+        "title": "De unde cumperi",
+        "text": "SUA, Canada, Japonia, EAU sau Regatul Unit – de la licitație sau de la un dealer."
+      },
+      "s2": {
+        "title": "Ce mașină",
+        "text": "Tipul, combustibilul, capacitatea motorului, anul și starea – ele determină taxele."
+      },
+      "s3": {
+        "title": "Adresa ta",
+        "text": "Singurul câmp pe care îl completezi. Noi calculăm kilometrii și cel mai ieftin port."
+      },
+      "s4": {
+        "title": "Rezultat și raport",
+        "text": "Trei scenarii gratuit și un PDF exact la cent atunci când ești gata să cumperi."
+      },
+      "step": "Pasul"
+    },
+    "costs": {
+      "eyebrow": "Din ce se compune prețul",
+      "title": "Taxe vamale, accize și TVA calculate în aceeași ordine ca la vamă",
+      "lead": "Fiecare taxă este baza pentru următoarea, așa că ordinea contează. Portul de vămuire stabilește cota de TVA; țara de înmatriculare stabilește accizele.",
+      "cif": {
+        "title": "Valoarea în vamă (CIF)",
+        "formula": "preț + taxa de licitație + transport + navlu + asigurare",
+        "text": "Tot ce plătești până când mașina ajunge într-un port din UE."
+      },
+      "duty": {
+        "title": "Taxe vamale (TARIC)",
+        "formula": "CIF × 10% autoturisme · 22% pickupuri · 0% clasice",
+        "text": "Cota depinde de codul SA (HS); motociclete 6–8%."
+      },
+      "excise": {
+        "title": "Accize (PL)",
+        "formula": "(CIF + taxe vamale) × 3,1% până la 2,0 l · 18,6% peste",
+        "text": "Hibride 1,55% / 9,3%, electrice 0%. Se plătesc în țara de înmatriculare."
+      },
+      "vat": {
+        "title": "TVA la import",
+        "formula": "(CIF + taxe vamale + accize* + descărcare) × cota țării de vămuire",
+        "text": "*Accizele se includ doar la vămuirea în țara de înmatriculare."
+      }
+    },
+    "ports": {
+      "title": "Cota de TVA depinde de portul de vămuire",
+      "text": "Calculatorul evaluează door-to-door toate cele 43 de porturi de vămuire din UE: TVA în țara portului, navlu, livrarea la adresa ta și taxele după import. Vămuirea în Germania înseamnă TVA de 19% în loc de 23%, dar se adaugă un trailer auto – mai jos câteva exemple, restul le compară calculatorul.",
+      "port": "Port",
+      "country": "Țara de vămuire"
+    },
+    "pricing": {
+      "eyebrow": "Prețuri",
+      "title": "Începi gratuit, plătești doar pentru certitudine"
+    },
+    "final": {
+      "title": "Calculează-ți importul într-un minut",
+      "text": "Fără înregistrare, fără obligații. Dacă mașina se dovedește prea scumpă, tocmai ai economisit bani. Dacă merită, licitezi liniștit, cunoscând costul complet.",
+      "title1": "Verifică înainte să cumperi.",
+      "title2": "Durează un minut.",
+      "cta": "Calculează costul importului",
+      "about": "Cine suntem"
+    },
+    "strip": {
+      "brand": {
+        "title": "CarImport.eu —",
+        "text": "calculator independent de import"
+      },
+      "instant": {
+        "title": "Rezultat într-un minut",
+        "text": "Introduci doar adresa, restul îl propunem noi"
+      },
+      "items": {
+        "title": "Peste 40 de poziții de cost",
+        "text": "De la licitație până la înmatriculare și riscuri"
+      },
+      "ports": {
+        "title": "43 de porturi UE",
+        "text": "Îl alegem pe cel mai ieftin pentru adresa ta"
+      }
+    },
+    "map": {
+      "eyebrow": "Rute de import",
+      "title": "Din porturi de pe tot globul, direct în UE",
+      "lead": "Porturi de export din SUA, Canada, Japonia, EAU și Regatul Unit și rutele prin Panama, Suez și Gibraltar spre porturile de vămuire din UE.",
+      "aria": "Harta rutelor maritime din SUA, Canada, Japonia, EAU și Regatul Unit către porturile UE",
+      "eu": "Uniunea Europeană",
+      "legendEu": "Țări UE (înmatriculare)",
+      "legendOrigin": "Țări de achiziție",
+      "legendRoute": "Rută maritimă",
+      "scroll": "Glisează pentru a vedea toată harta",
+      "days": "zile"
+    },
+    "numbers": {
+      "eyebrow": "CarImport.eu în cifre",
+      "title": "Cifrele din spatele fiecărui calcul",
+      "n1": {
+        "value": "5",
+        "label": "țări de origine: SUA, Canada, Japonia, EAU și Regatul Unit"
+      },
+      "n2": {
+        "value": "27",
+        "label": "țări UE în care poți înmatricula mașina"
+      },
+      "n3": {
+        "value": "43",
+        "label": "porturi de vămuire în 22 de țări UE – îl alegem pe cel mai ieftin pentru adresa ta"
+      },
+      "n4": {
+        "value": "4",
+        "label": "limbi: poloneză, engleză, germană, ucraineană"
+      }
+    },
+    "why": {
+      "eyebrow": "De ce să-l folosești",
+      "title": "Află cât vei plăti – înainte să apeși „licitează”",
+      "lead": "Cea mai scumpă parte a importului sunt costurile pe care nu ți le-a menționat nimeni înainte de cumpărare. Calculatorul le scoate la iveală înainte să cheltui primul dolar.",
+      "preview": {
+        "tag": "Calculator",
+        "title": "Costul complet door-to-door în șase pași",
+        "text": "Licitație, transport, taxe vamale, accize, TVA, înmatriculare și riscuri – în trei scenarii.",
+        "alt": "Captură de ecran a calculatorului de costuri de import"
+      },
+      "instant": {
+        "tag": "Instant",
+        "title": "O estimare într-un minut, nu în două zile",
+        "text": "Fără formulare de contact, fără să aștepți un apel de vânzări. Fiecare câmp vine precompletat cu o propunere – schimbi doar ce știi mai bine."
+      },
+      "independent": {
+        "tag": "Independent",
+        "title": "Nu vindem nici mașini, nici transport",
+        "text": "Nu câștigăm nicio marjă de la transportatori sau licitații, deci nu avem niciun motiv să subestimăm costurile. Toată lumea primește același rezultat."
+      },
+      "ports": {
+        "tag": "43 de porturi",
+        "title": "Cea mai ieftină rută până la adresa ta",
+        "text": "Evaluăm door-to-door fiecare port de vămuire din UE și îți arătăm diferența."
+      },
+      "scenarios": {
+        "tag": "Scenarii",
+        "title": "Optimist, mediu, pesimist",
+        "text": "Cursuri valutare, întârzieri și riscuri pe drum – vezi un interval realist, nu un singur număr „magic”."
+      },
+      "after": {
+        "tag": "După import",
+        "title": "Și înmatricularea, și actele",
+        "text": "Inspecție tehnică, traduceri, adaptarea iluminării, taxe oficiale și asigurare – cu termene."
+      },
+      "report": {
+        "tag": "Raport PDF",
+        "title": "Fiecare cent negru pe alb",
+        "text": "Pentru 25 lei, un raport nominal cu fiecare cotă, bază de impozitare și un plan de acțiune după import."
+      }
+    },
+    "what": {
+      "eyebrow": "Ce includem",
+      "title": "Tot ce compune prețul mașinii la ușa ta",
+      "lead": "Majoritatea calculatoarelor se opresc la taxele vamale și TVA. Noi calculăm tot drumul – din parcul licitației până la plăcuțele de înmatriculare – și adăugăm ce ar putea merge prost.",
+      "cta": "Încearcă pe mașina ta",
+      "purchase": {
+        "title": "Achiziție",
+        "i1": "Oferta câștigătoare sau prețul dealerului",
+        "i2": "Taxele Copart, IAAI, Manheim, USS pe tranșe de preț",
+        "i3": "Titlu curat / salvage și starea mașinii",
+        "i4": "Costul estimat al reparației"
+      },
+      "transport": {
+        "title": "Transport",
+        "i1": "Din parcul licitației până în portul de export",
+        "i2": "Navlu în container sau RoRo",
+        "i3": "Asigurare de transport",
+        "i4": "Descărcare și taxe de terminal",
+        "i5": "Platformă de tractare sau trailer auto până la adresa ta"
+      },
+      "taxes": {
+        "title": "Taxe vamale și impozite",
+        "i1": "Taxe vamale conform TARIC (10%, 22% pentru pickupuri)",
+        "i2": "Accize în funcție de motor și combustibil",
+        "i3": "TVA în țara portului de vămuire",
+        "i4": "Cursul băncii centrale din aceeași zi"
+      },
+      "after": {
+        "title": "După import",
+        "i1": "Inspecție tehnică și omologare",
+        "i2": "Traduceri autorizate ale documentelor",
+        "i3": "Înmatriculare, plăcuțe și taxe oficiale",
+        "i4": "Conversia iluminării și a vitezometrului",
+        "i5": "Asigurare RCA pentru primul an"
+      },
+      "risks": {
+        "title": "Riscuri",
+        "i1": "Depozitare în port și nave întârziate",
+        "i2": "Control vamal și verificarea valorii",
+        "i3": "Daune ascunse și daune în transport",
+        "i4": "Titlu și documente de export întârziate"
+      }
+    },
+    "compare": {
+      "eyebrow": "Comparație",
+      "title": "De ce un calcul „pe colțul mesei” nu este suficient",
+      "self": "Pe cont propriu",
+      "broker": "Ofertă de la un intermediar",
+      "r1": "Taxe de licitație conform tranșelor actuale",
+      "r2": "Comparația tuturor celor 43 de porturi UE",
+      "r3": "Cursul de azi + o rezervă pentru fluctuații",
+      "r4": "Accize și TVA în funcție de țara de vămuire și de înmatriculare",
+      "r5": "Riscuri și trei scenarii de cost",
+      "r6": "Înmatriculare și acte după import",
+      "r7": "Fără marjă sau comision ascuns",
+      "note": "~ înseamnă „de obicei parțial”. Ofertele intermediarilor includ adesea marja lor și nu prezintă defalcarea costurilor."
+    }
+  },
+  "pricing": {
+    "popular": "Cel mai ales",
+    "free": {
+      "name": "Estimare rapidă",
+      "price": "Gratuit",
+      "f1": "Intervalul costului total",
+      "f2": "Graficul structurii costurilor",
+      "f3": "Durata tranzitului și avertizări",
+      "f4": "Fără înregistrare",
+      "cta": "Calculează gratuit"
+    },
+    "report": {
+      "name": "Raport PDF",
+      "price": "25 lei",
+      "f1": "Fiecare poziție la cent",
+      "f2": "Taxe de licitație pe tranșe de preț",
+      "f3": "Taxe vamale, accize și TVA cu baze și cote",
+      "f4": "Lista documentelor și PDF personalizat",
+      "cta": "Calculează și deblochează raportul"
+    },
+    "partner": {
+      "name": "Pentru firmele de import",
+      "price": "Per lead acceptat",
+      "f1": "Cumpărători cu o estimare gata făcută",
+      "f2": "Consimțământ GDPR obținut înainte de transmitere",
+      "f3": "Doar cererile pe care le accepți",
+      "f4": "Fără abonament",
+      "cta": "Devino partener"
+    }
+  },
+  "faq": {
+    "eyebrow": "Întrebări și răspunsuri",
+    "title": "Întrebări frecvente",
+    "lead": "Nu găsești răspunsul? Calculatorul arată fiecare ipoteză, iar raportul PDF fiecare cotă și bază de impozitare.",
+    "q1": {
+      "q": "Cât sunt taxele vamale pentru o mașină din SUA?",
+      "a": "Pentru autoturisme (NC 8703) taxa vamală este de 10% din valoarea în vamă CIF, 22% pentru pickupuri și camionete (8704) și 6–8% pentru motociclete. Vehiculele de colecție mai vechi de 30 de ani, în stare originală, se pot încadra la 0%. Valoarea în vamă este prețul de achiziție plus taxele de licitație, transportul până la frontiera UE și asigurarea."
+    },
+    "q2": {
+      "q": "Ce accize se aplică la importul unei mașini în Polonia?",
+      "a": "Mașini cu motor cu ardere internă până la 2000 cm³: 3,1%, peste 2000 cm³: 18,6%. Hibride: 1,55% până la 2000 cm³ și 9,3% până la 3500 cm³. Hibridele plug-in până la 2000 cm³ și mașinile electrice sunt scutite. Baza este valoarea în vamă plus taxele vamale, convertită în PLN."
+    },
+    "q3": {
+      "q": "Unde este cel mai bine să vămuiești mașina: Bremerhaven, Rotterdam sau Gdynia?",
+      "a": "TVA la import se percepe de țara de vămuire: 19% în Germania, 21% în Țările de Jos și 23% în Polonia. Vămuirea în Germania reduce TVA, dar se adaugă un trailer auto până în Polonia, iar accizele le plătești separat la administrația fiscală în termen de 14 zile. Calculatorul compară variantele pentru mașina ta."
+    },
+    "q4": {
+      "q": "Ce este procedura vamală 4200?",
+      "a": "Este punerea în liberă circulație cu scutire de TVA în țara de import, atunci când mașina ajunge direct la o firmă înregistrată în scopuri de TVA dintr-un alt stat membru UE. Cumpărătorul contabilizează TVA în țara sa prin taxare inversă, astfel că operațiunea este neutră pentru firmele plătitoare de TVA. Nu este disponibilă persoanelor fizice."
+    },
+    "q5": {
+      "q": "Cât durează transportul până în Europa?",
+      "a": "Din porturile de pe Coasta de Est a SUA și din Canada circa 2–3 săptămâni pe mare, din California circa 5 săptămâni, din Japonia 6–7 săptămâni, din EAU 3–4 săptămâni și din Regatul Unit câteva zile. La acestea se adaugă transportul din parcul licitației până în port și vămuirea."
+    },
+    "q6": {
+      "q": "De unde provin cursurile valutare?",
+      "a": "Folosim cursurile medii NBP, preluate automat în fiecare zi lucrătoare. Pentru că plătești mașina la câteva zile sau săptămâni după calcul, intervalul gratuit ține cont de fluctuațiile valutare."
+    },
+    "q7": {
+      "q": "Ce include raportul PDF plătit?",
+      "a": "Fiecare poziție la cent: taxele de licitație pe tranșe, transportul, valoarea în vamă, taxele vamale, accizele și TVA cu baze și cote, lista documentelor necesare și un PDF personalizat de descărcat. Plata se face prin BLIK, card sau Przelewy24."
+    },
+    "q8": {
+      "q": "Rezultatul calculatorului este obligatoriu?",
+      "a": "Nu. Este o estimare bazată pe cotele și listele de prețuri actuale. Sumele finale sunt stabilite de autoritatea vamală și de administrația fiscală, care pot, de exemplu, să verifice valoarea în vamă. Raportul enumeră toate ipotezele, așa că îl poți compara ușor cu decizia oficială."
+    },
+    "q9": {
+      "q": "CarImport.eu importă mașini?",
+      "a": "Nu. Suntem doar un calculator – nu cumpărăm, nu transportăm și nu vămuim mașini și nu primim comisioane de la licitații sau transportatori. Astfel estimarea rămâne independentă. Dacă vrei, poți transmite estimarea unei firme de import verificate, dar asta este întotdeauna alegerea ta."
+    }
+  },
+  "calc": {
+    "title": "Calculator al costurilor de import auto",
+    "lead": "Șase pași: origine, vehicul, stare, destinație, după import și raport. Rezultatul apare la final – în trei scenarii.",
+    "currency": "Moneda rezultatului",
+    "progress": "Progres"
+  },
+  "seo": {
+    "home": {
+      "title": "Calculator costuri import auto – SUA, Japonia, Dubai în UE | CarImport.eu",
+      "description": "Calculator independent pentru importul unei mașini din SUA, Canada, Japonia, EAU și Regatul Unit: licitație, transport maritim, taxe vamale, accize, TVA, înmatriculare și riscuri. Estimare instantă, fără înregistrare."
+    },
+    "calculator": {
+      "title": "Calculator taxe vamale, accize și TVA pentru mașini importate | CarImport.eu",
+      "description": "Alege țara, licitația, portul și vehiculul — calculatorul live arată intervalul de cost și defalcarea: preț, transport maritim, taxe vamale, accize, TVA și înmatriculare."
+    },
+    "privacy": {
+      "title": "Politica de confidențialitate | CarImport.eu",
+      "description": "Cum prelucrează CarImport.eu datele cu caracter personal: plăți, rapoarte, cereri către parteneri și cookie-uri."
+    },
+    "about": {
+      "title": "Despre noi – un calculator independent de import auto | CarImport.eu",
+      "description": "Cine suntem, de unde provin datele noastre și cum câștigăm bani. CarImport.eu nu vinde și nu importă mașini – calculează costul complet al importului, corect și independent."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Informații legale",
+    "title": "Politica de confidențialitate",
+    "s1": {
+      "title": "Operatorul de date",
+      "text": "Operatorul de date este administratorul CarImport.eu. Pentru aspecte privind protecția datelor ne poți contacta la {{email}}."
+    },
+    "s2": {
+      "title": "Ce date prelucrăm",
+      "text": "Datele introduse pentru calcul (fără date cu caracter personal) și, la cumpărarea unui raport, numele și adresa ta de e-mail. Formularul pentru parteneri colectează în plus un număr de telefon și un mesaj. Nu prelucrăm niciodată datele cardului — acest lucru îl face Stripe."
+    },
+    "s3": {
+      "title": "Scopuri și temeiuri juridice",
+      "text": "Executarea achiziției raportului (art. 6 alin. (1) lit. b) GDPR), obligații contabile (lit. c), transmiterea cererii tale către un partener pe baza consimțământului tău (lit. a) și analiză pe baza consimțământului exprimat în bannerul de cookie-uri."
+    },
+    "s4": {
+      "title": "Destinatari",
+      "text": "Stripe Payments Europe (plăți), furnizorii noștri de găzduire și e-mail și — pentru formularul de parteneri — o singură firmă de import verificată, numai cu consimțământul tău."
+    },
+    "s5": {
+      "title": "Cookie-uri",
+      "text": "Cookie-urile esențiale și stocarea din browser rețin limba, tema, progresul în calculator și accesul la un raport cumpărat. Analiza rulează doar după ce dai clic pe „Accept toate”."
+    },
+    "s6": {
+      "title": "Drepturile tale",
+      "text": "Ai dreptul de acces, rectificare, ștergere, restricționare, portabilitate și opoziție, dreptul de a-ți retrage oricând consimțământul și dreptul de a depune o plângere la autoritatea de supraveghere a protecției datelor. Scrie-ne: {{email}}."
+    }
+  },
+  "delivery": {
+    "PORT_PICKUP": "Ridicare din port",
+    "CAR_CARRIER": "Trailer auto",
+    "TOW_TRUCK": "Platformă de tractare",
+    "SELF_DRIVE": "Cu numere provizorii"
+  },
+  "scenario": {
+    "0": "Optimist",
+    "1": "Mediu",
+    "2": "Pesimist"
+  },
+  "scenarioHint": {
+    "0": "Cele mai mici tarife, curs favorabil, nimic nu merge prost",
+    "1": "Tarife tipice + riscuri ponderate cu probabilitatea",
+    "2": "Cele mai mari tarife, curs mai slab, riscurile se materializează"
+  },
+  "timeline": {
+    "INLAND": "Preluare din parc și transport până în port",
+    "OCEAN": "Transport maritim (incl. așteptarea navei)",
+    "CLEARANCE": "Descărcare și vămuire",
+    "DELIVERY": "Livrare la ușa ta",
+    "REGISTRATION": "Pregătire și înmatriculare"
+  },
+  "plan": {
+    "deadline": {
+      "beforeRelease": "Înainte de eliberarea din port",
+      "14days": "14 zile de la sosirea în Polonia",
+      "beforeInspection": "Înainte de inspecția tehnică",
+      "beforeRegistration": "Înainte de înmatriculare",
+      "pl30days": "30 de zile de la import (amendă de până la 1.000 PLN)",
+      "fromRegistration": "De la înmatriculare / numere provizorii",
+      "national": "Conform regulilor țării de înmatriculare",
+      "none": "Fără termen legal"
+    },
+    "step": {
+      "clearance": {
+        "title": "Vămuirea în port",
+        "text": "Comisionarul vamal depune declarația (SAD); tu plătești taxele vamale și TVA la import. Necesare: factura, conosamentul, title-ul/certificatul de export, EORI."
+      },
+      "pl": {
+        "excise": {
+          "title": "Declarația și plata accizelor (AKC-U/S)",
+          "text": "Se depune la administrația fiscală (sau online) și se plătesc accizele; confirmarea este necesară la înmatriculare."
+        },
+        "exciseExemption": {
+          "title": "Declarația de scutire de accize (mașină electrică)",
+          "text": "Mașinile electrice sunt scutite, dar declarația AKC-U/S trebuie totuși depusă."
+        },
+        "inspection": {
+          "title": "Inspecția tehnică la o stație de inspecție",
+          "text": "Prima inspecție a unui vehicul importat, inclusiv identificarea VIN; rezultatul ajunge în registrul central."
+        },
+        "recycling": {
+          "title": "Taxa de reciclare de 500 PLN",
+          "text": "Se plătește către Fondul Național pentru Protecția Mediului la prima înmatriculare a unei mașini importate."
+        },
+        "registration": {
+          "title": "Înmatricularea la serviciul de înmatriculare a vehiculelor",
+          "text": "Cerere, dovada proprietății cu traducere, accize, inspecție, taxa de reciclare, dovada plății TVA/taxelor vamale; primești o autorizație provizorie și numere."
+        }
+      },
+      "translations": {
+        "title": "Traduceri autorizate",
+        "text": "Title-ul/certificatul de înmatriculare străin, factura și documentul de export – de către un traducător autorizat."
+      },
+      "lighting": {
+        "title": "Adaptarea iluminării la standardele UE",
+        "text": "Semnalizatoare spate portocalii, lampă de ceață spate, reglajul farurilor – fără acestea mașina nu trece inspecția."
+      },
+      "insurance": {
+        "title": "Asigurarea RCA",
+        "text": "Obligatorie de la înmatriculare; asigurarea CASCO merită încheiată după o evaluare făcută de un expert."
+      },
+      "de": {
+        "approval": {
+          "title": "Omologare individuală (§21 StVZO)",
+          "text": "Inspecție completă de expertiză (TÜV/DEKRA) pentru mașinile din afara UE; obligatorie pentru înmatriculare."
+        },
+        "registration": {
+          "title": "Înmatriculare (Zulassung)",
+          "text": "Numărul eVB al asigurării, dovada vămuirii, raportul de expertiză, mandatul SEPA pentru impozitul auto."
+        }
+      },
+      "generic": {
+        "inspection": {
+          "title": "Inspecție / omologare individuală",
+          "text": "Amploarea depinde de țară – mașinile din afara UE au adesea nevoie de omologare individuală."
+        },
+        "registrationTax": {
+          "title": "Taxa națională de înmatriculare",
+          "text": "De ex. BPM în Țările de Jos, NoVA în Austria, malus în Franța – verifică înainte de cumpărare."
+        },
+        "registration": {
+          "title": "Înmatricularea vehiculului",
+          "text": "Cererea se depune cu dovada vămuirii, inspecția și asigurarea."
+        }
+      },
+      "evCharging": {
+        "title": "Portul de încărcare",
+        "text": "Mașinile din SUA folosesc NACS/CCS1 – ai nevoie de un adaptor sau de montarea unui port CCS2/Type 2."
+      }
+    }
+  },
+  "deliveryHint": {
+    "CAR_CARRIER": "Cel mai ieftin pentru mașinile funcționale",
+    "TOW_TRUCK": "Platformă individuală, și pentru mașini nefuncționale",
+    "SELF_DRIVE": "Numere provizorii + asigurare; doar mașini funcționale",
+    "PORT_PICKUP": "Organizezi singur transportul"
+  },
+  "serviceHint": {
+    "SWORN_TRANSLATION": "Title, factură și document de export",
+    "US_LIGHTING_CONVERSION": "Semnalizatoare și lumini conforme UE",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Mașină cu volan pe dreapta",
+    "REAR_FOG_LIGHT": "Obligatorie la inspecție",
+    "SPEEDOMETER_KMH": "Vitezometru în mile – confort și valoare la revânzare",
+    "SERVICE_INSPECTION": "Ulei, filtre, lichide, frâne după un drum lung",
+    "GEOMETRY_ALIGNMENT": "Recomandată după reparații la suspensie",
+    "DETAILING": "Spălare, curățarea interiorului, corecția vopselei",
+    "EXPERT_VALUATION": "Util pentru CASCO și la revânzare"
+  },
+  "riskInfo": {
+    "RISK_PORT_STORAGE": "Terminalul taxează pe zi după perioada gratuită, de ex. când documentele sau transportul întârzie.",
+    "RISK_CUSTOMS_INSPECTION": "Control aleatoriu sau țintit: descărcarea containerului, scanare, taxe suplimentare de terminal.",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Dacă prețul pare prea mic, vama poate folosi o valoare mai mare – taxele vamale și TVA cresc.",
+    "RISK_VESSEL_ROLLOVER": "Nava este suprarezervată și containerul pleacă cu următoarea – depozitare suplimentară în portul de export.",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Daunele din transport sunt acoperite de poliță, minus franșiza.",
+    "RISK_HIDDEN_DAMAGE": "Defecte pe care nu le vezi în fotografiile de la licitație – cu cât starea este mai proastă, cu atât riscul este mai mare.",
+    "RISK_TITLE_DELAY": "Licitația trimite title-ul cu întârziere – mașina așteaptă în parc sau în port.",
+    "RISK_EXPORT_DOCS_DELAY": "Radierea și documentele de export durează mai mult decât de obicei."
+  },
+  "docStage": {
+    "PURCHASE": "Achiziție",
+    "SHIPPING": "Transport maritim",
+    "CUSTOMS": "Vămuire",
+    "REGISTRATION": "Înmatriculare"
+  },
+  "proposal": {
+    "tag": "Propunere",
+    "restore": "Folosește propunerea",
+    "was": "propunere: {{value}} {{unit}}"
+  },
+  "region": {
+    "NORTH_SEA": "Marea Nordului",
+    "BALTIC": "Marea Baltică și Scandinavia",
+    "ATLANTIC": "Atlantic",
+    "WEST_MED": "Mediterana de Vest",
+    "EAST_MED": "Marea Adriatică, Marea Egee și Marea Neagră"
+  },
+  "about": {
+    "eyebrow": "Despre noi",
+    "title1": "Calculăm importul de mașini.",
+    "title2": "Nu vindem mașini.",
+    "lead": "CarImport.eu este un calculator independent al costului aducerii unei mașini din afara Uniunii Europene. L-am creat pentru ca oricine – nu doar un dealer cu zece ani de experiență – să știe înainte de cumpărare cât va plăti de fapt.",
+    "story": {
+      "eyebrow": "Cum a început",
+      "title": "Din frustrarea provocată de costurile ascunse",
+      "p1": "O mașină de la o licitație din SUA pare o afacere – până când aduni taxele de licitație, transportul până în port, navlul, taxele vamale, accizele, TVA, descărcarea, platforma de tractare, traducerile, inspecția tehnică și înmatricularea. Fiecare poziție e „mică”, dar împreună pot dubla prețul.",
+      "p2": "Informațiile sunt împrăștiate în listele de prețuri ale licitațiilor, tarifele vamale, tabelele de curs valutar și regulile a 27 de țări. Ofertele intermediarilor dau de obicei o singură cifră, fără defalcare – și cu marja lor inclusă.",
+      "p3": "Am construit un instrument care adună totul la un loc, calculează cu cotele actuale și arată fiecare ipoteză. Fără înregistrare, fără telefoane de la vânzători."
+    },
+    "role": {
+      "eyebrow": "Sinceri despre ce suntem",
+      "title": "Suntem un calculator. Doar un calculator.",
+      "is": "Ce suntem",
+      "is1": "Un calculator independent al costului complet de import",
+      "is2": "O comparație a 43 de porturi de vămuire din UE pentru adresa ta",
+      "is3": "Sursa unui raport PDF detaliat, cu fiecare cotă",
+      "is4": "O listă de pași și documente după import",
+      "isNot": "Ce nu suntem",
+      "isNot1": "Nu suntem importator sau dealer – nu vindem mașini",
+      "isNot2": "Nu organizăm transportul sau vămuirea",
+      "isNot3": "Nu primim comisioane de la licitații, transportatori sau comisionari vamali",
+      "isNot4": "Nu suntem o autoritate sau un consultant fiscal – rezultatul este o estimare"
+    },
+    "data": {
+      "eyebrow": "De unde provin cifrele",
+      "title": "Cote actuale, nu „cam așa”",
+      "lead": "Fiecare sumă din rezultat provine dintr-o cotă concretă, pe care o arată raportul. Datele se actualizează automat sau ori de câte ori se schimbă legea.",
+      "customs": {
+        "title": "Tariful vamal al UE",
+        "text": "Cote ale taxelor vamale după codul NC (TARIC) pentru autoturisme, pickupuri, motociclete și vehicule istorice."
+      },
+      "fx": {
+        "title": "Cursurile băncii centrale",
+        "text": "Cursuri de referință preluate în fiecare zi lucrătoare, cu o rezervă pentru fluctuații până la plată."
+      },
+      "fees": {
+        "title": "Listele de prețuri ale licitațiilor și transportatorilor",
+        "text": "Tranșele de taxe Copart, IAAI, Manheim și USS, tarife de navlu, taxe portuare și prețuri de transport pe km."
+      },
+      "law": {
+        "title": "Reguli naționale",
+        "text": "Accize, cotele de TVA din 27 de țări, taxe de înmatriculare și inspecții obligatorii – cu temeiul legal în raport."
+      }
+    },
+    "money": {
+      "eyebrow": "Cum câștigăm bani",
+      "title": "Transparent – pentru că e vorba de încredere",
+      "lead": "Rezultatul calculatorului nu depinde de cine ne plătește sau cât. Câștigăm în trei moduri, toate la vedere:",
+      "m1": {
+        "title": "Raport PDF – 25 lei",
+        "text": "Rezultatul gratuit arată intervalul și structura costurilor. Raportul detaliat, cu fiecare poziție, îl cumperi doar dacă ai nevoie de el."
+      },
+      "m2": {
+        "title": "Cerere opțională către o firmă de import",
+        "text": "Doar dacă ne ceri, transmitem estimarea ta unei singure firme verificate. Ea ne plătește, nu tu – și doar cu acordul tău."
+      },
+      "m3": {
+        "title": "Linkuri afiliate marcate",
+        "text": "De ex. verificări VIN sau schimb valutar. Întotdeauna marcate, fără nicio influență asupra estimării."
+      }
+    },
+    "values": {
+      "eyebrow": "Ce ne ghidează",
+      "transparency": {
+        "title": "Transparență",
+        "text": "Fiecare cifră are o sursă și un temei. Dacă ceva este o estimare, spunem asta."
+      },
+      "independence": {
+        "title": "Independență",
+        "text": "Nu avem niciun interes dacă tu cumperi mașina sau cine o importă pentru tine."
+      },
+      "precision": {
+        "title": "Precizie",
+        "text": "Calculăm la cent, dar arătăm și un interval – pentru că importul nu este matematică perfectă."
+      }
+    },
+    "cta": {
+      "title": "Verifică-ți mașina într-un minut",
+      "text": "Ai o întrebare sau ai observat o cotă depășită? Scrie-ne la {{email}}"
+    }
+  },
+  "currency": {
+    "label": "Moneda rezultatului",
+    "title": "În ce monedă să afișăm costurile?",
+    "hint": "Sumele de la licitație (USD, JPY, AED…) sunt convertite la cursul actual al băncii centrale. Moneda nu schimbă calculul taxelor – acestea sunt întotdeauna stabilite de țara de vămuire.",
+    "groupEu": "Monede UE",
+    "groupOther": "Altele"
+  }
+}
