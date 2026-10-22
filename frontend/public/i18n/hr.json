@@ -1,0 +1,1014 @@
+{
+  "affiliate": {
+    "CURRENCY_EXCHANGE": "Povoljnija mjenjačnica",
+    "CURRENCY_EXCHANGE_HINT": "Platite automobil bez bankovnih marži",
+    "FINANCING": "Leasing ili kredit",
+    "FINANCING_HINT": "Financirajte uvoz i davanja",
+    "VIN_CHECK": "Provjerite povijest VIN-a",
+    "VIN_CHECK_HINT": "Oštećenja, kilometraža, evidencija krađa",
+    "sponsored": "Sponzorirano",
+    "title": "Možda će vam trebati i"
+  },
+  "app": {
+    "headline": "Koliko uvezeni automobil zaista košta?",
+    "tagline": "Aukcije u SAD-u, Kanadi, Japanu, Dubaiju ili Ujedinjenom Kraljevstvu → carina, trošarina i PDV u EU. Rezultat uživo, bez registracije."
+  },
+  "auction": {
+    "COPART": "Copart",
+    "DEALER": "Trgovac / privatna osoba",
+    "EMIRATES_AUCTION": "Emirates Auction",
+    "IAAI": "IAAI",
+    "USS": "USS Japan"
+  },
+  "buyer": {
+    "COMPANY": "Tvrtka",
+    "PRIVATE": "Fizička osoba"
+  },
+  "category": {
+    "MOTORCYCLE": "Motocikl",
+    "PASSENGER_CAR": "Osobni automobil",
+    "PICKUP_TRUCK": "Pickup",
+    "REGISTRATION": "Nakon uvoza i registracija",
+    "SUV": "SUV",
+    "TAXES": "Carine i porezi EU",
+    "TRANSPORT": "Prijevoz i logistika",
+    "VAN": "Kombi",
+    "VEHICLE": "Vozilo i aukcija",
+    "RISK": "Rizici na putu"
+  },
+  "condition": {
+    "ENGINE_STARTS": "Motor se pali",
+    "ENGINE_STARTS_HINT": "Ne može voziti vlastitim pogonom",
+    "NON_RUNNING": "Oštećeno / Salvage",
+    "NON_RUNNING_HINT": "Potrebna je vučna služba s vitlom",
+    "RUN_AND_DRIVE": "Run & Drive",
+    "RUN_AND_DRIVE_HINT": "Pali se i vozi"
+  },
+  "cost": {
+    "AUCTION_AGENT_COMMISSION": "Provizija izvoznog agenta",
+    "AUCTION_BUYER_FEE": "Aukcijska naknada za kupca",
+    "AUCTION_ENVIRONMENTAL_FEE": "Ekološka naknada",
+    "AUCTION_EXPORT_DOCS": "Izvozni dokumenti",
+    "AUCTION_GATE_FEE": "Naknada za izdavanje vozila (gate fee)",
+    "AUCTION_RECYCLING_FEE": "Naknada za recikliranje (Japan)",
+    "AUCTION_SERVICE_FEE": "Aukcijska servisna naknada",
+    "AUCTION_TITLE_HANDLING_FEE": "Naknada za obradu vlasničke isprave (title)",
+    "AUCTION_VIRTUAL_BID_FEE": "Naknada za online licitiranje",
+    "CARGO_INSURANCE": "Osiguranje tereta",
+    "CUSTOMS_AGENCY": "Carinsko zastupanje",
+    "CUSTOMS_DUTY": "Carina",
+    "EXCISE_TAX": "Trošarina",
+    "FORKLIFT_LOADING": "Utovar viličarom",
+    "IMPORT_VAT": "PDV pri uvozu",
+    "INDIVIDUAL_APPROVAL": "Pojedinačno odobrenje (§21 StVZO)",
+    "INLAND_TRANSPORT": "Kopneni prijevoz do luke",
+    "INTRA_EU_ACQUISITION_VAT": "PDV na stjecanje unutar EU (prijenos porezne obveze, odbitni)",
+    "INTRA_EU_TRANSPORT": "Autotransporter od luke do odredišta",
+    "OCEAN_FREIGHT": "Pomorska vozarina",
+    "PORT_UNLOADING": "Istovar u luci i terminal",
+    "PURCHASE_PRICE": "Kupoprodajna cijena (pobjednička ponuda)",
+    "RDW_INSPECTION": "Pregled RDW",
+    "RECYCLING_FEE": "Naknada za recikliranje",
+    "REGISTRATION_FEE": "Registracijske naknade",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Podešavanje svjetala (desni volan)",
+    "SWORN_TRANSLATION": "Sudski ovjereni prijevod dokumenata",
+    "TECHNICAL_INSPECTION": "Tehnički pregled",
+    "US_LIGHTING_CONVERSION": "Prilagodba svjetala (američka izvedba)",
+    "WINCH_CONTAINER_LOADING": "Utovar u kontejner vitlom",
+    "DELIVERY_CAR_CARRIER": "Autotransporter od luke do vrata",
+    "DELIVERY_TOW_TRUCK": "Vučna služba od luke do vrata",
+    "DELIVERY_SELF_DRIVE": "Vožnja kući na probnim pločicama (gorivo, pločice, kratkoročno osiguranje)",
+    "TECHNICAL_INSPECTION_IMPORT": "Tehnički pregled uvezenog vozila",
+    "REG_TEMPORARY_PERMIT": "Privremena dozvola za registraciju",
+    "REG_TEMPORARY_PLATES": "Privremene pločice",
+    "REG_CERTIFICATE": "Prometna dozvola",
+    "REG_PLATES": "Registarske pločice",
+    "REG_STICKER": "Kontrolna naljepnica",
+    "REAR_FOG_LIGHT": "Ugradnja stražnjeg svjetla za maglu",
+    "SPEEDOMETER_KMH": "Prilagodba brzinomjera na km/h",
+    "SERVICE_INSPECTION": "Servis i zamjena tekućina",
+    "GEOMETRY_ALIGNMENT": "Podešavanje geometrije kotača",
+    "DETAILING": "Čišćenje i detailing",
+    "EXPERT_VALUATION": "Procjena vještaka (npr. za kasko osiguranje)",
+    "REPAIR_ESTIMATE": "Popravci (vaša procjena)",
+    "INSURANCE_FIRST_YEAR": "Osiguranje – prva godina (vaš iznos)",
+    "RISK_PORT_STORAGE": "Skladištenje u luci (kasno preuzimanje, dokumenti)",
+    "RISK_CUSTOMS_INSPECTION": "Carinski pregled / rendgen kontejnera",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Osporavanje carinske vrijednosti (dodatna carina i PDV)",
+    "RISK_VESSEL_ROLLOVER": "Prebacivanje na kasniji brod (skladištenje u izvoznoj luci)",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Oštećenje u prijevozu – franšiza osiguranja",
+    "RISK_HIDDEN_DAMAGE": "Skrivena oštećenja nevidljiva na aukciji",
+    "RISK_TITLE_DELAY": "Kašnjenje vlasničke isprave (dodatno skladištenje)",
+    "RISK_EXPORT_DOCS_DELAY": "Kašnjenje izvoznih dokumenata"
+  },
+  "doc": {
+    "billOfLading": "Teretnica (Bill of Lading)",
+    "companyRegistryExtract": "Izvadak iz sudskog registra",
+    "customsDeclarationSad": "Carinska deklaracija (JCD/SAD)",
+    "customsPowerOfAttorney": "Punomoć za carinskog zastupnika",
+    "eoriNumber": "EORI broj uvoznika",
+    "evChargingPortAdapterNote": "Provjerite standard priključka za punjenje (NACS/CCS1 → CCS2)",
+    "historicExpertOpinion": "Vještačko mišljenje o statusu oldtimera",
+    "insurancePolicy": "Polica osiguranja tereta",
+    "invoice": "Aukcijski račun / kupoprodajni ugovor",
+    "ownership": {
+      "japanExportCertificate": "Japanska izvozna potvrda (odjava vozila)",
+      "title": "Izvornik vlasničke isprave (Title)",
+      "uaeExportCertificate": "Izvozna potvrda UAE (RTA)",
+      "v5c": "Britanska knjižica vozila V5C"
+    },
+    "pl": {
+      "exciseDeclarationAkcUs": "Trošarinska prijava AKC-U/S i dokaz o plaćanju",
+      "exciseExemptionConfirmation": "Potvrda o oslobođenju od trošarine (EV)",
+      "recyclingFeeConfirmation": "Potvrda o plaćanju naknade za recikliranje"
+    },
+    "procedure4200VatIdAndProofOfTransport": "Postupak 4200: PDV identifikacijski broj kupca u EU i dokaz o prijevozu",
+    "registrationApplication": "Zahtjev za registraciju vozila",
+    "salvageTitleRepairEvidence": "Dokumentacija o popravku (salvage title)",
+    "swornTranslation": "Sudski ovjereni prijevodi stranih dokumenata",
+    "technicalInspection": "Potvrda o tehničkom pregledu",
+    "transportInvoices": "Računi za prijevoz i vozarinu",
+    "usExportAesItn": "Američka izvozna prijava (AES/ITN)",
+    "vatPaymentProof": "Dokaz o plaćanju PDV-a"
+  },
+  "error": {
+    "auction": {
+      "noSchedule": "Cjenik aukcijskih naknada nije dostupan.",
+      "unsupported": "Ova aukcijska kuća nije podržana."
+    },
+    "excise": {
+      "rateNotFound": "Za ovu konfiguraciju ne postoji stopa trošarine."
+    },
+    "port": {
+      "unknown": "Nepoznata odredišna luka."
+    },
+    "procedure4200": {
+      "notAvailableInPort": "Postupak 4200 nije dostupan u ovoj luci.",
+      "sameCountry": "Postupak 4200 zahtijeva carinjenje u drugoj državi od odredišne."
+    },
+    "route": {
+      "unavailable": "Za ovaj odabir nije dostupna nijedna pomorska ruta."
+    },
+    "tariff": {
+      "notFound": "Vozilo nije bilo moguće razvrstati u carinsku tarifu."
+    },
+    "taxProfile": {
+      "missing": "Za odabranu državu nema poreznih stopa."
+    }
+  },
+  "fuel": {
+    "DIESEL": "Dizel",
+    "EV": "Električni",
+    "HEV": "Hibrid",
+    "HYDROGEN": "Vodik",
+    "LPG": "Autoplin (LPG)",
+    "MHEV": "Blagi hibrid",
+    "PETROL": "Benzin",
+    "PHEV": "Plug-in hibrid"
+  },
+  "lead": {
+    "consentMarketing": "Šaljite mi ponude i savjete za uvoz (neobavezno).",
+    "consentTransfer": "Pristajem da se moji podaci i izračun proslijede jednom provjerenom partneru radi pripreme ponude (čl. 6. st. 1. t. (a) GDPR-a).",
+    "email": "E-pošta",
+    "message": "Poveznica na aukciju ili dodatni podaci",
+    "name": "Ime i prezime",
+    "phone": "Telefon (neobavezno)",
+    "submit": "Pošalji upit",
+    "subtitle": "CarImport.eu ne uvozi automobile. Ako želite, vaš ćemo izračun proslijediti jednoj provjerenoj uvozničkoj tvrtki koja će vam pripremiti ponudu. Bez obveze.",
+    "thanks": "Hvala!",
+    "thanksHint": "Uvoznička tvrtka javit će vam se u roku od 1 radnog dana.",
+    "title": "Upit uvozničkoj tvrtki (neobavezno)"
+  },
+  "origin": {
+    "CANADA": "Kanada",
+    "JAPAN": "Japan",
+    "UAE": "UAE / Dubai",
+    "UK": "Ujedinjeno Kraljevstvo",
+    "USA": "SAD"
+  },
+  "paywall": {
+    "blikHint": "Platite putem BLIK-a, Przelewy24 ili karticom.",
+    "currency": "Valuta plaćanja",
+    "email": "E-pošta (poslat ćemo vam poveznicu na izvješće)",
+    "fullName": "Ime i prezime (ispisano na izvješću)",
+    "pay": "Nastavi na plaćanje",
+    "redirecting": "Preusmjeravanje…",
+    "secure": "Sigurno plaćanje putem Stripea. Podatke o kartici nikada ne pohranjujemo.",
+    "subtitle": "Točni iznosi, porezne osnovice i stope, dokumenti – u PDF-u s vašim imenom.",
+    "terms": "Prihvaćam uvjete i tražim trenutnu isporuku digitalnog sadržaja, čime se odričem prava na jednostrani raskid.",
+    "title": "Cjelovito izvješće o uvozu"
+  },
+  "report": {
+    "amount": "Iznos",
+    "back": "Natrag na kalkulator",
+    "base": "Osnovica",
+    "download": "Preuzmi PDF",
+    "expired": "Plaćanje nije dovršeno.",
+    "generating": "Izrada PDF-a…",
+    "item": "Stavka",
+    "rate": "Stopa",
+    "refunded": "Ova je narudžba refundirana.",
+    "stage": "Faza",
+    "title": "Izvješće o troškovima uvoza vozila",
+    "total": "Ukupni trošak do vrata",
+    "waiting": "Potvrđujemo vaše plaćanje…",
+    "delivery": "Dostava",
+    "leadTime": "Vrijeme do registracije",
+    "days": "dana",
+    "scenarios": "Tri scenarija troškova",
+    "timeline": "Vremenski slijed",
+    "plan": "Što učiniti nakon uvoza – korak po korak",
+    "step": "Korak",
+    "deadline": "Rok",
+    "riskDetail": "Vjerojatnost {{p}} %, trošak ako se dogodi: {{min}}–{{max}} {{cur}}",
+    "userAmount": "iznos koji ste unijeli",
+    "scenarioMethod": "Prosječni scenarij uključuje rizike kao očekivanu vrijednost (vjerojatnost × srednji trošak); pesimistični pretpostavlja da se svaki rizik ostvari po gornjem trošku."
+  },
+  "result": {
+    "chart": "Struktura troškova",
+    "exciseIncluded": "Trošarina uključena",
+    "fx": "Tečajevi NBP-a na dan {{date}}",
+    "paid1": "Točne aukcijske naknade",
+    "paid2": "Carina, trošarina i PDV",
+    "paid3": "Popis dokumenata",
+    "paid4": "Osobno PDF izvješće",
+    "partner": "Želite ponudu uvozničke tvrtke?",
+    "rangeHint": "Raspon obuhvaća oscilacije tečaja i cijena vozarine.",
+    "title": "Procijenjeni trošak do vrata",
+    "transit": "{{days}} dana na moru",
+    "unlock": "Otključajte cjelovito izvješće – {{price}}",
+    "updating": "Ažuriranje…",
+    "short": "Trošak do vrata",
+    "calculating": "Izračunavamo svaku stavku i scenarij…",
+    "edit": "Promijeni podatke",
+    "structure": "Struktura troškova (prosječni scenarij)",
+    "timeline": "Vrijeme: {{min}}–{{max}} dana do registracije",
+    "included": "Što je uključeno",
+    "risks": "Što se može dogoditi na putu",
+    "risksLead": "Svaki rizik ima vjerojatnost i raspon troška. Prosječni scenarij uračunava ih razmjerno, pesimistični u cijelosti. Iznosi su u izvješću.",
+    "probability": "Vjerojatnost",
+    "reportEyebrow": "Izvješće od vrata do vrata",
+    "reportTitle": "Svaka stavka do centa – u tri scenarija",
+    "reportItem1": "Aukcijske naknade, prijevoz, vozarina i osiguranje",
+    "reportItem2": "Carina, trošarina i PDV s osnovicama i stopama",
+    "reportItem3": "Dostava: km × cijena, utovar, minimum",
+    "reportItem4": "Registracijske naknade i usluge nakon uvoza",
+    "reportItem5": "Rizici s iznosima: optimistično, prosječno, pesimistično",
+    "reportItem6": "Plan korak po korak s rokovima i popisom dokumenata",
+    "cheapestPort": "najpovoljnija luka"
+  },
+  "shipping": {
+    "CONTAINER_EXCLUSIVE": "Vlastiti kontejner",
+    "CONTAINER_SHARED": "Dijeljeni kontejner",
+    "RORO": "RoRo"
+  },
+  "title": {
+    "CLEAN": "Čista vlasnička isprava (clean title)",
+    "SALVAGE": "Salvage / Nepopravljivo"
+  },
+  "validation": {
+    "auctionHouse": {
+      "notInOrigin": "Ova aukcijska kuća ne posluje u odabranoj državi."
+    },
+    "engineCc": {
+      "required": "Unesite obujam motora."
+    },
+    "procedure4200": {
+      "companyOnly": "Postupak 4200 dostupan je samo tvrtkama s važećim PDV identifikacijskim brojem u EU."
+    }
+  },
+  "warning": {
+    "dealer": {
+      "verifyExportDocuments": "Pri kupnji od trgovca provjerite hoćete li dobiti izvozne dokumente."
+    },
+    "historic": {
+      "expertOpinionRequired": "Status oldtimera (0 % carine) zahtijeva vještačko mišljenje, a carina ga može osporiti."
+    },
+    "intraEuTransport": {
+      "notPriced": "Nema cijene prijevoznika od luke do odredišta – trošak nije uključen."
+    },
+    "newMeansOfTransport": {
+      "vatInDestination": "Novo prijevozno sredstvo (≤ 6 mjeseci ili ≤ 6000 km): PDV se plaća i u državi registracije."
+    },
+    "nl": {
+      "bpmNotIncluded": "Nizozemski registracijski porez BPM nije uključen."
+    },
+    "pl": {
+      "clearedForOtherMemberState": "Ocarinjeno u Poljskoj radi registracije drugdje – provjerite registracijske poreze u odredišnoj državi.",
+      "exciseDeclarationWithin14Days": "Poljska trošarina plaća se u poreznom uredu (AKC-U/S) u roku od 14 dana od dolaska.",
+      "pickupMayBeReclassified": "Pickup registriran kao osobni automobil može podlijegati trošarini – provjerite homologaciju."
+    },
+    "procedure4200": {
+      "reverseChargeDeductible": "Postupak 4200: PDV se samostalno obračunava u odredišnoj državi (prijenos porezne obveze, neutralno za obveznike PDV-a)."
+    },
+    "registrationTax": {
+      "notModelled": "Registracijski porez odredišne države još nije uključen u model."
+    },
+    "delivery": {
+      "portPickup": "Odabrano je preuzimanje u luci – cestovni prijevoz do kuće nije uključen.",
+      "selfDriveNotRunning": "Nevozni automobil ne može se voziti na probnim pločicama – odaberite vučnu službu."
+    }
+  },
+  "wizard": {
+    "auction": "Aukcijska kuća",
+    "back": "Natrag",
+    "bid": "Pobjednička ponuda",
+    "buyer": "Kupac",
+    "category": "Vrsta vozila",
+    "condition": "Stanje vozila",
+    "destination": "Država registracije",
+    "engineCc": "Obujam motora",
+    "exciseRate": "Trošarina PL: {{rate}} %",
+    "exciseWarning": "Iznad 2000 cm³ trošarina skače s {{from}} % na {{to}} % – razlika je često nekoliko tisuća!",
+    "finish": "Cjelovito izvješće",
+    "forklift": "viličar / vitlo",
+    "fuel": "Pogon",
+    "historic": "Povijesno vozilo u originalnom stanju",
+    "historicHint": "Starije od 30 godina, neizmijenjeno: 0 % carine i sniženi PDV.",
+    "next": "Dalje",
+    "origin": "Kupujem u",
+    "port": "Luka carinjenja u EU",
+    "procedure4200": "Carinski postupak 4200",
+    "procedure4200Hint": "Za tvrtke registrirane za PDV u EU: bez PDV-a na granici, prijenos porezne obveze u odredišnoj državi.",
+    "shipping": "Način pomorskog prijevoza",
+    "step1": "Odakle",
+    "step2": "Vozilo",
+    "step3": "Stanje i cijena",
+    "title": "Vrsta vlasničke isprave",
+    "year": "Godina proizvodnje",
+    "zone": "Lokacija aukcije (savezna država / pokrajina)",
+    "zoneOther": "Drugo / nisam siguran",
+    "advanced": "Napredne opcije",
+    "step4": "Odredište i dostava",
+    "step5": "Nakon uvoza",
+    "step6": "Izvješće o troškovima",
+    "calculate": "Izračunaj ukupni trošak",
+    "departurePort": "Luka polaska",
+    "departureAuto": "Automatski – najpovoljnija ruta",
+    "departureHint": "Odaberite određenu luku ako ju je vaš špediter već naveo.",
+    "delivery": "Prijevoz od luke do vašeg praga",
+    "distance": "Udaljenost od luke do vaše adrese",
+    "pricePerKm": "Cijena po kilometru",
+    "tariffUnknown": "Za ovu državu nema tarife po kilometru – primijenit će se paušal.",
+    "repair": "Trošak popravka",
+    "repairHintRunner": "Predlažemo tipičan iznos za ovo stanje i ispravu (lak, gume). Imate ponudu servisa? Unesite je.",
+    "repairHintDamaged": "Predlažemo tipičan iznos popravka za ovo stanje (oko 30–40 % cijene). Imate ponudu servisa? Unesite je – skrivena oštećenja računaju se zasebno kao rizik.",
+    "afterImportLead": "Sve što treba obaviti i platiti između luke i registarskih pločica. Obvezne stavke uvijek su uključene, ostalo birate sami.",
+    "statutory": "Obvezno (službene naknade)",
+    "optional": "Neobavezno",
+    "recommended": "preporučeno",
+    "optionsLoading": "Učitavamo usluge za vašu rutu…",
+    "noServices": "Za ovu državu još nemamo detaljan cjenik registracije – izvješće navodi korake.",
+    "insurance": "Obvezno osiguranje od automobilske odgovornosti za prvu godinu",
+    "insuranceHint": "Predlažemo medijan ponuda obveznog osiguranja za novoregistrirani automobil u ovoj državi. Imate vlastitu ponudu? Unesite je.",
+    "address": "Adresa dostave",
+    "addressPlaceholder": "npr. Zagreb, Ilica 5 ili poštanski broj",
+    "addressChange": "Promijeni",
+    "addressHint": "Jedino polje koje upisujete. Iz adrese izračunavamo kilometre od svake luke i biramo najpovoljniju.",
+    "portRankingAddress": "Svih {{count}} luka EU izračunato do vaše adrese – najpovoljnija prva.",
+    "portRankingCountry": "Svih {{count}} luka EU izračunato do države registracije – unesite adresu za točne kilometre.",
+    "portRankingLoading": "Izračunavamo svaku luku EU…",
+    "portCheapest": "najpovoljnija",
+    "portAuto": "Natrag na najpovoljniju",
+    "portsAll": "Prikaži sve luke EU ({{count}})",
+    "portsLess": "Sažmi popis luka",
+    "days": "dana",
+    "portRankingNote": "Ukupno od vrata do vrata, prosječni scenarij: vozarina, carinjenje i PDV u državi luke, dostava na adresu i naknade nakon uvoza.",
+    "distanceRouted": "Cestovna ruta od {{port}} do vaše adrese.",
+    "distanceEstimated": "Procjena od {{port}} do vaše adrese (zračna linija × 1,25).",
+    "distanceTypical": "Tipična udaljenost od {{port}} – za točan podatak unesite adresu iznad.",
+    "tariffShort": "Tržište: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} utovar, min. {{minimum}} {{cur}}."
+  },
+  "layout": {
+    "topbar": "Neovisni kalkulator troškova uvoza automobila iz SAD-a, Kanade, Japana, UAE-a i Ujedinjenog Kraljevstva u 27 država EU",
+    "forBusiness": "Za uvozničke tvrtke",
+    "home": "Početna",
+    "nav": "Glavna navigacija",
+    "calculator": "Kalkulator",
+    "howItWorks": "Kako funkcionira",
+    "pricing": "Cijene",
+    "faq": "Česta pitanja",
+    "cta": "Izračunaj trošak",
+    "menu": "Izbornik",
+    "close": "Zatvori",
+    "breadcrumb": "Navigacijski put",
+    "themeLight": "Prebaci na svijetlu temu",
+    "themeDark": "Prebaci na tamnu temu",
+    "about": "O nama",
+    "why": "Zašto mi",
+    "what": "Što izračunavamo",
+    "ctaHint": "Besplatno, bez registracije",
+    "language": "Jezik"
+  },
+  "footer": {
+    "about": "Neovisni kalkulator troškova uvoza automobila izvan EU. Automobile ne prodajemo niti uvozimo – izračunavamo koliko zaista koštaju.",
+    "calculators": "Kalkulatori uvoza",
+    "importFrom": {
+      "USA": "Automobil iz SAD-a",
+      "CANADA": "Automobil iz Kanade",
+      "JAPAN": "Automobil iz Japana",
+      "UAE": "Automobil iz Dubaija (UAE)",
+      "UK": "Automobil iz Ujedinjenog Kraljevstva"
+    },
+    "service": "Usluga",
+    "privacy": "Politika privatnosti",
+    "language": "Jezik",
+    "payments": "Plaćanja putem Stripea (kartica, BLIK, Przelewy24). Podatke o kartici nikada ne pohranjujemo.",
+    "rights": "Sva prava pridržana.",
+    "disclaimer": "Izračuni su informativni i nisu carinsko rješenje niti porezni savjet."
+  },
+  "cookies": {
+    "title": "Kolačići",
+    "text": "Koristimo nužne kolačiće za rad stranice te, uz vašu privolu, analitičke kolačiće. Pojedinosti:",
+    "accept": "Prihvati sve",
+    "necessary": "Samo nužni"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Kalkulator uvoza automobila",
+      "title1": "Saznajte trošak uvoza",
+      "title2": "prije nego što licitirate",
+      "lead": "Neovisni kalkulator koji u minuti prikazuje ukupni trošak dovoza automobila iz SAD-a, Kanade, Japana, UAE-a ili Ujedinjenog Kraljevstva – od aukcijske cijene do registarskih pločica u vašoj državi.",
+      "cta": "Izračunajte besplatno",
+      "secondary": "Što točno izračunavamo",
+      "visual": "Crni Ford Mustang u žutom neonskom svjetlu ispred američke zastave",
+      "point1": "Trenutna procjena – bez registracije, poziva i čekanja na ponudu",
+      "point2": "Više od 40 troškovnih stavki, 43 luke EU i današnji tečajevi",
+      "point3": "Ne prodajemo automobile niti uzimamo provizije – brojke su poštene"
+    },
+    "how": {
+      "eyebrow": "Kako funkcionira",
+      "title": "Od ideje do ukupnog iznosa u četiri koraka",
+      "s1": {
+        "title": "Gdje kupujete",
+        "text": "SAD, Kanada, Japan, UAE ili Ujedinjeno Kraljevstvo – i aukcija ili trgovac."
+      },
+      "s2": {
+        "title": "Koji automobil",
+        "text": "Vrsta, gorivo, obujam motora, godište i stanje – o njima ovise porezi."
+      },
+      "s3": {
+        "title": "Vaša adresa",
+        "text": "Jedino polje koje upisujete. Izračunavamo kilometre i najpovoljniju luku."
+      },
+      "s4": {
+        "title": "Rezultat i izvješće",
+        "text": "Tri scenarija besplatno, a PDF do centa kad ste spremni za kupnju."
+      },
+      "step": "Korak"
+    },
+    "costs": {
+      "eyebrow": "Od čega se sastoji cijena",
+      "title": "Carina, trošarina i PDV izračunani istim redoslijedom kao na carini",
+      "lead": "Svako davanje osnovica je za sljedeće, pa je redoslijed važan. Luka carinjenja određuje stopu PDV-a, a država registracije trošarinu.",
+      "cif": {
+        "title": "Carinska vrijednost (CIF)",
+        "formula": "cijena + aukcijska naknada + prijevoz + vozarina + osiguranje",
+        "text": "Sve što platite dok automobil ne stigne u luku EU."
+      },
+      "duty": {
+        "title": "Carina (TARIC)",
+        "formula": "CIF × 10 % automobili · 22 % pickupi · 0 % oldtimeri",
+        "text": "Stopa ovisi o tarifnoj oznaci HS; motocikli 6–8 %."
+      },
+      "excise": {
+        "title": "Trošarina (PL)",
+        "formula": "(CIF + carina) × 3,1 % do 2,0 l · 18,6 % iznad",
+        "text": "Hibridi 1,55 % / 9,3 %, električni 0 %. Plaća se u državi registracije."
+      },
+      "vat": {
+        "title": "PDV pri uvozu",
+        "formula": "(CIF + carina + trošarina* + istovar) × stopa države carinjenja",
+        "text": "*Trošarina se uključuje samo pri carinjenju u državi registracije."
+      }
+    },
+    "ports": {
+      "title": "Stopa PDV-a ovisi o luci carinjenja",
+      "text": "Kalkulator izračunava svih 43 luke carinjenja u EU od vrata do vrata: PDV u državi luke, vozarinu, dostavu na vašu adresu i naknade nakon uvoza. Carinjenje u Njemačkoj znači 19 % PDV-a umjesto 23 %, ali dodajete autotransporter – u nastavku je nekoliko primjera, ostalo uspoređuje kalkulator.",
+      "port": "Luka",
+      "country": "Država carinjenja"
+    },
+    "pricing": {
+      "eyebrow": "Cijene",
+      "title": "Počnite besplatno, platite samo za sigurnost"
+    },
+    "final": {
+      "title": "Izračunajte svoj uvoz u minuti",
+      "text": "Bez registracije i bez obveze. Ako se automobil pokaže preskupim, upravo ste uštedjeli. Ako se isplati, licitirate mirno, znajući ukupni trošak.",
+      "title1": "Provjerite prije kupnje.",
+      "title2": "Traje samo minutu.",
+      "cta": "Izračunaj trošak uvoza",
+      "about": "Tko smo mi"
+    },
+    "strip": {
+      "brand": {
+        "title": "CarImport.eu —",
+        "text": "neovisni kalkulator uvoza"
+      },
+      "instant": {
+        "title": "Rezultat u minuti",
+        "text": "Unosite samo adresu, ostalo predlažemo mi"
+      },
+      "items": {
+        "title": "Više od 40 troškovnih stavki",
+        "text": "Od aukcije do registracije i rizika"
+      },
+      "ports": {
+        "title": "43 luke EU",
+        "text": "Biramo najpovoljniju za vašu adresu"
+      }
+    },
+    "map": {
+      "eyebrow": "Uvozne rute",
+      "title": "Iz luka diljem svijeta ravno u EU",
+      "lead": "Izvozne luke u SAD-u, Kanadi, Japanu, UAE-u i Ujedinjenom Kraljevstvu te rute preko Paname, Sueza i Gibraltara do luka carinjenja u EU.",
+      "aria": "Karta pomorskih ruta iz SAD-a, Kanade, Japana, UAE-a i Ujedinjenog Kraljevstva do luka EU",
+      "eu": "Europska unija",
+      "legendEu": "Države EU (registracija)",
+      "legendOrigin": "Države kupnje",
+      "legendRoute": "Pomorska ruta",
+      "scroll": "Povucite prstom za prikaz cijele karte",
+      "days": "dana"
+    },
+    "numbers": {
+      "eyebrow": "CarImport.eu u brojkama",
+      "title": "Brojke iza svakog izračuna",
+      "n1": {
+        "value": "5",
+        "label": "država podrijetla: SAD, Kanada, Japan, UAE i Ujedinjeno Kraljevstvo"
+      },
+      "n2": {
+        "value": "27",
+        "label": "država EU u kojima možete registrirati automobil"
+      },
+      "n3": {
+        "value": "43",
+        "label": "luke carinjenja u 22 države EU – biramo najpovoljniju za vašu adresu"
+      },
+      "n4": {
+        "value": "4",
+        "label": "jezika: poljski, engleski, njemački, ukrajinski"
+      }
+    },
+    "why": {
+      "eyebrow": "Zašto ga koristiti",
+      "title": "Znajte koliko ćete platiti – prije nego što kliknete „licitiraj”",
+      "lead": "Najskuplji dio uvoza su troškovi koje prije kupnje nitko nije spomenuo. Kalkulator ih otkriva prije nego što potrošite prvi dolar.",
+      "preview": {
+        "tag": "Kalkulator",
+        "title": "Ukupni trošak od vrata do vrata u šest koraka",
+        "text": "Aukcija, prijevoz, carina, trošarina, PDV, registracija i rizici – u tri scenarija.",
+        "alt": "Snimka zaslona kalkulatora troškova uvoza"
+      },
+      "instant": {
+        "tag": "Odmah",
+        "title": "Procjena u minuti, a ne za dva dana",
+        "text": "Bez kontaktnih obrazaca i čekanja na poziv prodavača. Svako polje unaprijed je popunjeno prijedlogom – mijenjate samo ono što znate bolje."
+      },
+      "independent": {
+        "tag": "Neovisno",
+        "title": "Ne prodajemo ni automobile ni prijevoz",
+        "text": "Ne zarađujemo maržu od prijevoznika ni aukcija, pa nemamo razloga umanjivati troškove. Svi dobivaju isti rezultat."
+      },
+      "ports": {
+        "tag": "43 luke",
+        "title": "Najpovoljnija ruta do vaše adrese",
+        "text": "Izračunavamo svaku luku carinjenja u EU od vrata do vrata i pokazujemo vam razliku."
+      },
+      "scenarios": {
+        "tag": "Scenariji",
+        "title": "Optimističan, prosječan, pesimističan",
+        "text": "Tečajevi, kašnjenja i rizici na putu – vidite realan raspon, a ne jednu „čarobnu” brojku."
+      },
+      "after": {
+        "tag": "Nakon uvoza",
+        "title": "I registracija i papirologija",
+        "text": "Tehnički pregled, prijevodi, prilagodba svjetala, službene naknade i osiguranje – s rokovima."
+      },
+      "report": {
+        "tag": "PDF izvješće",
+        "title": "Svaki cent crno na bijelo",
+        "text": "Za 4,99 € osobno izvješće sa svim stopama, poreznim osnovicama i planom radnji nakon uvoza."
+      }
+    },
+    "what": {
+      "eyebrow": "Što uključujemo",
+      "title": "Sve što čini cijenu automobila pred vašim vratima",
+      "lead": "Većina kalkulatora staje kod carine i PDV-a. Mi računamo cijeli put – od aukcijskog parkirališta do registarskih pločica – i dodajemo ono što bi moglo poći po zlu.",
+      "cta": "Isprobajte na svom automobilu",
+      "purchase": {
+        "title": "Kupnja",
+        "i1": "Pobjednička ponuda ili cijena trgovca",
+        "i2": "Naknade Copart, IAAI, Manheim, USS po cjenovnim razredima",
+        "i3": "Čista / salvage isprava i stanje",
+        "i4": "Procijenjeni trošak popravka"
+      },
+      "transport": {
+        "title": "Prijevoz",
+        "i1": "Od aukcijskog parkirališta do izvozne luke",
+        "i2": "Vozarina u kontejneru ili RoRo",
+        "i3": "Osiguranje tereta",
+        "i4": "Istovar i terminalske naknade",
+        "i5": "Vučna služba ili autotransporter do vaše adrese"
+      },
+      "taxes": {
+        "title": "Carine i porezi",
+        "i1": "Carina prema TARIC-u (10 %, 22 % za pickupe)",
+        "i2": "Trošarina prema motoru i vrsti goriva",
+        "i3": "PDV u državi luke carinjenja",
+        "i4": "Tečaj središnje banke na isti dan"
+      },
+      "after": {
+        "title": "Nakon uvoza",
+        "i1": "Tehnički pregled i homologacija",
+        "i2": "Sudski ovjereni prijevodi dokumenata",
+        "i3": "Registracija, pločice i službene naknade",
+        "i4": "Prilagodba svjetala i brzinomjera",
+        "i5": "Obvezno osiguranje od automobilske odgovornosti za prvu godinu"
+      },
+      "risks": {
+        "title": "Rizici",
+        "i1": "Skladištenje u luci i kašnjenja brodova",
+        "i2": "Carinski pregled i provjera vrijednosti",
+        "i3": "Skrivena oštećenja i oštećenja u prijevozu",
+        "i4": "Kašnjenje vlasničke isprave i izvoznih dokumenata"
+      }
+    },
+    "compare": {
+      "eyebrow": "Usporedba",
+      "title": "Zašto procjena „od oka” nije dovoljna",
+      "self": "Sami",
+      "broker": "Ponuda posrednika",
+      "r1": "Aukcijske naknade prema aktualnim razredima",
+      "r2": "Usporedba svih 43 luke EU",
+      "r3": "Današnji tečaj + rezerva za oscilacije",
+      "r4": "Trošarina i PDV prema državi carinjenja i registracije",
+      "r5": "Rizici i tri scenarija troškova",
+      "r6": "Registracija i papirologija nakon uvoza",
+      "r7": "Bez marže ili skrivene provizije",
+      "note": "~ znači „obično djelomično”. Ponude posrednika često uključuju njihovu maržu i ne prikazuju raščlambu troškova."
+    }
+  },
+  "pricing": {
+    "popular": "Najpopularnije",
+    "free": {
+      "name": "Brza procjena",
+      "price": "Besplatno",
+      "f1": "Raspon troška do vrata",
+      "f2": "Grafikon strukture troškova",
+      "f3": "Vrijeme prijevoza i upozorenja",
+      "f4": "Bez registracije",
+      "cta": "Izračunajte besplatno"
+    },
+    "report": {
+      "name": "PDF izvješće",
+      "price": "4,99 €",
+      "f1": "Svaka stavka do centa",
+      "f2": "Aukcijske naknade po cjenovnim razredima",
+      "f3": "Carina, trošarina i PDV s osnovicama i stopama",
+      "f4": "Popis dokumenata i osobni PDF",
+      "cta": "Izračunaj i otključaj izvješće"
+    },
+    "partner": {
+      "name": "Za uvozničke tvrtke",
+      "price": "Po prihvaćenom upitu",
+      "f1": "Kupci s gotovim izračunom za automobil",
+      "f2": "Privola prema GDPR-u prikupljena prije prosljeđivanja",
+      "f3": "Samo upiti koje prihvatite",
+      "f4": "Bez pretplate",
+      "cta": "Postanite partner"
+    }
+  },
+  "faq": {
+    "eyebrow": "Pitanja i odgovori",
+    "title": "Česta pitanja",
+    "lead": "Ne nalazite odgovor? Kalkulator prikazuje svaku pretpostavku, a PDF izvješće svaku stopu i osnovicu.",
+    "q1": {
+      "q": "Kolika je carina na automobil iz SAD-a?",
+      "a": "Za osobne automobile (KN 8703) carina iznosi 10 % carinske vrijednosti CIF, 22 % za pickupe i laka teretna vozila (8704) te 6–8 % za motocikle. Kolekcionarska vozila starija od 30 godina u originalnom stanju mogu ostvariti stopu od 0 %. Carinska vrijednost je kupoprodajna cijena uvećana za aukcijske naknade, prijevoz do granice EU i osiguranje."
+    },
+    "q2": {
+      "q": "Koja se trošarina primjenjuje pri uvozu automobila u Poljsku?",
+      "a": "Automobili s motorom s unutarnjim izgaranjem do 2000 cm³: 3,1 %, iznad 2000 cm³: 18,6 %. Hibridi: 1,55 % do 2000 cm³ i 9,3 % do 3500 cm³. Plug-in hibridi do 2000 cm³ i električni automobili oslobođeni su. Osnovica je carinska vrijednost uvećana za carinu, preračunata u PLN."
+    },
+    "q3": {
+      "q": "Gdje je najbolje ocariniti automobil: u Bremerhavenu, Rotterdamu ili Gdyni?",
+      "a": "PDV pri uvozu obračunava država carinjenja: 19 % u Njemačkoj, 21 % u Nizozemskoj i 23 % u Poljskoj. Carinjenje u Njemačkoj smanjuje PDV, ali dodajete autotransporter do Poljske i trošarinu plaćate zasebno u poreznom uredu u roku od 14 dana. Kalkulator uspoređuje mogućnosti za vaš automobil."
+    },
+    "q4": {
+      "q": "Što je carinski postupak 4200?",
+      "a": "To je puštanje u slobodni promet uz oslobođenje od PDV-a u državi uvoza kada automobil ide izravno obvezniku PDV-a u drugoj državi članici EU. Kupac obračunava PDV u svojoj državi po načelu prijenosa porezne obveze, pa je za tvrtke registrirane za PDV neutralan. Nije dostupan fizičkim osobama."
+    },
+    "q5": {
+      "q": "Koliko traje prijevoz brodom do Europe?",
+      "a": "Iz luka na istočnoj obali SAD-a i u Kanadi oko 2–3 tjedna na moru, iz Kalifornije oko 5 tjedana, iz Japana 6–7 tjedana, iz UAE-a 3–4 tjedna, a iz Ujedinjenog Kraljevstva nekoliko dana. Tome dodajte prijevoz od aukcijskog parkirališta do luke i carinjenje."
+    },
+    "q6": {
+      "q": "Odakle dolaze tečajevi?",
+      "a": "Koristimo srednje tečajeve NBP-a koji se automatski preuzimaju svakog radnog dana. Budući da automobil plaćate danima ili tjednima nakon izračuna, besplatni raspon uzima u obzir kretanja valuta."
+    },
+    "q7": {
+      "q": "Što sadrži plaćeno PDF izvješće?",
+      "a": "Svaku stavku do centa: aukcijske naknade po razredima, prijevoz, carinsku vrijednost, carinu, trošarinu i PDV s osnovicama i stopama, popis potrebnih dokumenata i osobni PDF za preuzimanje. Plaćate BLIK-om, karticom ili putem Przelewy24."
+    },
+    "q8": {
+      "q": "Je li rezultat kalkulatora obvezujući?",
+      "a": "Ne. Riječ je o procjeni na temelju aktualnih stopa i cjenika. Konačne iznose utvrđuju carina i porezni ured, koji mogu primjerice provjeriti carinsku vrijednost. Izvješće navodi sve pretpostavke, pa ga je lako usporediti sa službenim rješenjem."
+    },
+    "q9": {
+      "q": "Uvozi li CarImport.eu automobile?",
+      "a": "Ne. Mi smo samo kalkulator – ne kupujemo, ne prevozimo i ne carinimo automobile te ne uzimamo provizije od aukcija ni prijevoznika. Zato je procjena neovisna. Ako želite, izračun možete proslijediti provjerenoj uvozničkoj tvrtki, ali to je uvijek vaš izbor."
+    }
+  },
+  "calc": {
+    "title": "Kalkulator troškova uvoza automobila",
+    "lead": "Šest koraka: podrijetlo, vozilo, stanje, odredište, nakon uvoza i izvješće. Rezultat dobivate na kraju – u tri scenarija.",
+    "currency": "Valuta rezultata",
+    "progress": "Napredak"
+  },
+  "seo": {
+    "home": {
+      "title": "Kalkulator troškova uvoza automobila – SAD, Japan, Dubai u EU | CarImport.eu",
+      "description": "Neovisni kalkulator uvoza automobila iz SAD-a, Kanade, Japana, UAE-a i Ujedinjenog Kraljevstva: aukcija, prijevoz brodom, carina, trošarina, PDV, registracija i rizici. Trenutna procjena, bez registracije."
+    },
+    "calculator": {
+      "title": "Kalkulator carine, trošarine i PDV-a za uvezene automobile | CarImport.eu",
+      "description": "Odaberite državu, aukciju, luku i vozilo — kalkulator uživo prikazuje raspon troškova i raščlambu: cijena, prijevoz brodom, carina, trošarina, PDV i registracija."
+    },
+    "privacy": {
+      "title": "Politika privatnosti | CarImport.eu",
+      "description": "Kako CarImport.eu obrađuje osobne podatke: plaćanja, izvješća, upiti partnerima i kolačići."
+    },
+    "about": {
+      "title": "O nama – neovisni kalkulator uvoza automobila | CarImport.eu",
+      "description": "Tko smo, odakle dolaze naši podaci i kako zarađujemo. CarImport.eu ne prodaje niti uvozi automobile – ukupni trošak uvoza izračunava pošteno i neovisno."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Pravne informacije",
+    "title": "Politika privatnosti",
+    "s1": {
+      "title": "Voditelj obrade",
+      "text": "Voditelj obrade podataka je operater stranice CarImport.eu. Za pitanja zaštite podataka obratite nam se na {{email}}."
+    },
+    "s2": {
+      "title": "Koje podatke obrađujemo",
+      "text": "Ulazne podatke izračuna (bez osobnih podataka) te, pri kupnji izvješća, vaše ime i adresu e-pošte. Partnerski obrazac dodatno prikuplja broj telefona i poruku. Podatke o kartici nikada ne obrađujemo — to čini Stripe."
+    },
+    "s3": {
+      "title": "Svrhe i pravne osnove",
+      "text": "Izvršenje kupnje izvješća (čl. 6. st. 1. t. (b) GDPR-a), računovodstvene obveze (c), prosljeđivanje vašeg upita partneru na temelju vaše privole (a) te analitika uz privolu danu u obavijesti o kolačićima."
+    },
+    "s4": {
+      "title": "Primatelji",
+      "text": "Stripe Payments Europe (plaćanja), naši pružatelji usluga hostinga i e-pošte te — za partnerski obrazac — jedna provjerena uvoznička tvrtka, isključivo uz vašu privolu."
+    },
+    "s5": {
+      "title": "Kolačići",
+      "text": "Nužni kolačići i pohrana preglednika pamte vaš jezik, temu, napredak u kalkulatoru i pristup kupljenom izvješću. Analitika se pokreće tek nakon što kliknete „Prihvati sve”."
+    },
+    "s6": {
+      "title": "Vaša prava",
+      "text": "Imate pravo na pristup, ispravak, brisanje, ograničenje obrade, prenosivost i prigovor, pravo da u bilo kojem trenutku povučete privolu te pravo na pritužbu nadzornom tijelu za zaštitu podataka. Pišite nam: {{email}}."
+    }
+  },
+  "delivery": {
+    "PORT_PICKUP": "Preuzimanje u luci",
+    "CAR_CARRIER": "Autotransporter",
+    "TOW_TRUCK": "Vučna služba",
+    "SELF_DRIVE": "Na probnim pločicama"
+  },
+  "scenario": {
+    "0": "Optimističan",
+    "1": "Prosječan",
+    "2": "Pesimističan"
+  },
+  "scenarioHint": {
+    "0": "Najniže cijene, povoljni tečajevi, ništa ne pođe po zlu",
+    "1": "Tipične cijene + rizici ponderirani vjerojatnošću",
+    "2": "Najviše cijene, slabiji tečajevi, rizici se ostvaruju"
+  },
+  "timeline": {
+    "INLAND": "Preuzimanje s parkirališta i prijevoz do luke",
+    "OCEAN": "Plovidba (uklj. čekanje na brod)",
+    "CLEARANCE": "Istovar i carinjenje",
+    "DELIVERY": "Dostava do vašeg praga",
+    "REGISTRATION": "Priprema i registracija"
+  },
+  "plan": {
+    "deadline": {
+      "beforeRelease": "Prije preuzimanja iz luke",
+      "14days": "14 dana nakon dolaska u Poljsku",
+      "beforeInspection": "Prije tehničkog pregleda",
+      "beforeRegistration": "Prije registracije",
+      "pl30days": "30 dana nakon uvoza (kazna do 1.000 PLN)",
+      "fromRegistration": "Od registracije / privremenih pločica",
+      "national": "Prema propisima države registracije",
+      "none": "Nema zakonskog roka"
+    },
+    "step": {
+      "clearance": {
+        "title": "Carinjenje u luci",
+        "text": "Carinski zastupnik podnosi deklaraciju (JCD/SAD); vi plaćate carinu i PDV pri uvozu. Potrebno: račun, teretnica, vlasnička isprava/izvozna potvrda, EORI."
+      },
+      "pl": {
+        "excise": {
+          "title": "Trošarinska prijava i plaćanje (AKC-U/S)",
+          "text": "Podnesite je u poreznom uredu (ili elektronički) i platite trošarinu; potvrda je potrebna za registraciju."
+        },
+        "exciseExemption": {
+          "title": "Prijava oslobođenja od trošarine (električni automobil)",
+          "text": "Električni automobili oslobođeni su, ali prijavu AKC-U/S ipak treba podnijeti."
+        },
+        "inspection": {
+          "title": "Tehnički pregled na stanici za tehnički pregled",
+          "text": "Prvi pregled uvezenog vozila uklj. identifikaciju VIN-a; rezultat se upisuje u središnji registar."
+        },
+        "recycling": {
+          "title": "Naknada za recikliranje 500 PLN",
+          "text": "Plaća se Nacionalnom fondu za zaštitu okoliša pri prvoj registraciji uvezenog automobila."
+        },
+        "registration": {
+          "title": "Registracija u uredu za vozila",
+          "text": "Zahtjev, dokaz o vlasništvu s prijevodom, trošarina, tehnički pregled, naknada za recikliranje, dokaz o PDV-u/carini; dobivate privremenu dozvolu i pločice."
+        }
+      },
+      "translations": {
+        "title": "Sudski ovjereni prijevodi",
+        "text": "Strana vlasnička isprava/prometna dozvola, račun i izvozni dokument – kod sudskog tumača."
+      },
+      "lighting": {
+        "title": "Prilagodba svjetala standardima EU",
+        "text": "Narančasti stražnji pokazivači smjera, stražnje svjetlo za maglu, podešavanje svjetala – bez toga automobil ne prolazi tehnički pregled."
+      },
+      "insurance": {
+        "title": "Osiguranje od automobilske odgovornosti",
+        "text": "Obvezno od registracije; kasko osiguranje isplati se ugovoriti nakon procjene vještaka."
+      },
+      "de": {
+        "approval": {
+          "title": "Pojedinačno odobrenje (§21 StVZO)",
+          "text": "Cjeloviti pregled vještaka (TÜV/DEKRA) za automobile izvan EU; potreban za registraciju."
+        },
+        "registration": {
+          "title": "Registracija (Zulassung)",
+          "text": "Broj osiguranja eVB, dokaz o carinjenju, vještačko izvješće, SEPA ovlaštenje za porez na vozila."
+        }
+      },
+      "generic": {
+        "inspection": {
+          "title": "Pregled / pojedinačno odobrenje",
+          "text": "Opseg ovisi o državi – automobili izvan EU često trebaju pojedinačno odobrenje."
+        },
+        "registrationTax": {
+          "title": "Nacionalni registracijski porez",
+          "text": "Npr. BPM u Nizozemskoj, NoVA u Austriji, malus u Francuskoj – provjerite prije kupnje."
+        },
+        "registration": {
+          "title": "Registracija vozila",
+          "text": "Zahtjev podnesite s dokazom o carinjenju, tehničkim pregledom i osiguranjem."
+        }
+      },
+      "evCharging": {
+        "title": "Priključak za punjenje",
+        "text": "Američki automobili koriste NACS/CCS1 – trebate adapter ili ugradnju priključka CCS2/Type 2."
+      }
+    }
+  },
+  "deliveryHint": {
+    "CAR_CARRIER": "Najpovoljnije za vozne automobile",
+    "TOW_TRUCK": "Pojedinačna vučna služba, i za nevozne",
+    "SELF_DRIVE": "Probne pločice + osiguranje; samo vozni automobili",
+    "PORT_PICKUP": "Prijevoz organizirate sami"
+  },
+  "serviceHint": {
+    "SWORN_TRANSLATION": "Vlasnička isprava, račun i izvozni dokument",
+    "US_LIGHTING_CONVERSION": "Pokazivači smjera i svjetla sukladni propisima EU",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Automobil s volanom na desnoj strani",
+    "REAR_FOG_LIGHT": "Obvezno na tehničkom pregledu",
+    "SPEEDOMETER_KMH": "Brzinomjer u miljama – udobnost i vrijednost pri prodaji",
+    "SERVICE_INSPECTION": "Ulje, filtri, tekućine, kočnice nakon dugog puta",
+    "GEOMETRY_ALIGNMENT": "Preporučeno nakon popravka ovjesa",
+    "DETAILING": "Pranje, čišćenje unutrašnjosti, poliranje laka",
+    "EXPERT_VALUATION": "Korisno za kasko osiguranje i prodaju"
+  },
+  "riskInfo": {
+    "RISK_PORT_STORAGE": "Terminal nakon besplatnog razdoblja naplaćuje ležarinu po danu, npr. kad kasne dokumenti ili prijevoz.",
+    "RISK_CUSTOMS_INSPECTION": "Nasumična ili ciljana kontrola: pražnjenje kontejnera, rendgen, dodatne terminalske naknade.",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Ako se cijena čini preniskom, carina može primijeniti višu vrijednost – carina i PDV rastu.",
+    "RISK_VESSEL_ROLLOVER": "Brod je prebukiran i kontejner isplovljava sljedećim – dodatno skladištenje u izvoznoj luci.",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Oštećenja u prijevozu pokriva polica, umanjeno za franšizu.",
+    "RISK_HIDDEN_DAMAGE": "Kvarovi koji se ne vide na aukcijskim fotografijama – što je stanje lošije, to je rizik veći.",
+    "RISK_TITLE_DELAY": "Aukcija kasno šalje vlasničku ispravu – automobil čeka na parkiralištu ili u luci.",
+    "RISK_EXPORT_DOCS_DELAY": "Odjava i izvozni dokumenti traju dulje nego obično."
+  },
+  "docStage": {
+    "PURCHASE": "Kupnja",
+    "SHIPPING": "Prijevoz",
+    "CUSTOMS": "Carinjenje",
+    "REGISTRATION": "Registracija"
+  },
+  "proposal": {
+    "tag": "Prijedlog",
+    "restore": "Koristi prijedlog",
+    "was": "prijedlog: {{value}} {{unit}}"
+  },
+  "region": {
+    "NORTH_SEA": "Sjeverno more",
+    "BALTIC": "Baltik i Skandinavija",
+    "ATLANTIC": "Atlantik",
+    "WEST_MED": "Zapadni Mediteran",
+    "EAST_MED": "Jadran, Egejsko i Crno more"
+  },
+  "about": {
+    "eyebrow": "O nama",
+    "title1": "Izračunavamo uvoz automobila.",
+    "title2": "Automobile ne prodajemo.",
+    "lead": "CarImport.eu je neovisni kalkulator troškova dovoza automobila izvan Europske unije. Izradili smo ga kako bi svatko – ne samo trgovac s deset godina iskustva – prije kupnje znao koliko će zaista platiti.",
+    "story": {
+      "eyebrow": "Kako je počelo",
+      "title": "Iz frustracije skrivenim troškovima",
+      "p1": "Automobil s američke aukcije izgleda kao prava prilika – dok ne zbrojite aukcijske naknade, prijevoz do luke, vozarinu, carinu, trošarinu, PDV, istovar, vučnu službu, prijevode, tehnički pregled i registraciju. Svaka je stavka „mala”, a zajedno mogu udvostručiti cijenu.",
+      "p2": "Informacije su raspršene po aukcijskim cjenicima, carinskim tarifama, tečajnim listama i propisima 27 država. Ponude posrednika obično daju jednu brojku bez raščlambe – i s uključenom maržom.",
+      "p3": "Izradili smo alat koji sve to objedinjuje, računa s aktualnim stopama i prikazuje svaku pretpostavku. Bez registracije, bez poziva prodavača."
+    },
+    "role": {
+      "eyebrow": "Iskreno o tome što smo",
+      "title": "Mi smo kalkulator. Samo kalkulator.",
+      "is": "Što jesmo",
+      "is1": "Neovisni kalkulator ukupnog troška uvoza",
+      "is2": "Usporedba 43 luke carinjenja u EU za vašu adresu",
+      "is3": "Izvor detaljnog PDF izvješća sa svim stopama",
+      "is4": "Popis koraka i dokumenata nakon uvoza",
+      "isNot": "Što nismo",
+      "isNot1": "Nismo uvoznik ni trgovac – ne prodajemo automobile",
+      "isNot2": "Ne organiziramo prijevoz ni carinjenje",
+      "isNot3": "Bez provizija od aukcija, prijevoznika ili carinskih zastupnika",
+      "isNot4": "Nismo tijelo vlasti ni porezni savjetnik – rezultat je procjena"
+    },
+    "data": {
+      "eyebrow": "Odakle dolaze brojke",
+      "title": "Aktualne stope, a ne „otprilike”",
+      "lead": "Svaki iznos u rezultatu proizlazi iz konkretne stope koju izvješće prikazuje. Podaci se ažuriraju automatski ili pri svakoj promjeni propisa.",
+      "customs": {
+        "title": "Carinska tarifa EU",
+        "text": "Carinske stope prema oznaci KN (TARIC) za automobile, pickupe, motocikle i povijesna vozila."
+      },
+      "fx": {
+        "title": "Tečajevi središnje banke",
+        "text": "Referentni tečajevi preuzeti svakog radnog dana, s rezervom za oscilacije do plaćanja."
+      },
+      "fees": {
+        "title": "Cjenici aukcija i prijevoznika",
+        "text": "Razredi naknada Copart, IAAI, Manheim i USS, cijene vozarine, lučke naknade i cijene prijevoza po kilometru."
+      },
+      "law": {
+        "title": "Nacionalni propisi",
+        "text": "Trošarina, stope PDV-a 27 država, registracijske naknade i obvezni pregledi – s pravnom osnovom u izvješću."
+      }
+    },
+    "money": {
+      "eyebrow": "Kako zarađujemo",
+      "title": "Transparentno – jer je riječ o povjerenju",
+      "lead": "Rezultat kalkulatora ne ovisi o tome tko nam plaća ni koliko. Zarađujemo na tri načina, svi su javni:",
+      "m1": {
+        "title": "PDF izvješće – 4,99 €",
+        "text": "Besplatni rezultat prikazuje raspon i strukturu troškova. Detaljno izvješće sa svim stavkama kupujete samo ako vam treba."
+      },
+      "m2": {
+        "title": "Neobavezni upit uvozničkoj tvrtki",
+        "text": "Samo ako to zatražite, vaš izračun prosljeđujemo jednoj provjerenoj tvrtki. Ona plaća nama, a ne vi – i samo uz vašu privolu."
+      },
+      "m3": {
+        "title": "Označene partnerske poveznice",
+        "text": "Npr. provjera VIN-a ili mjenjačnica. Uvijek označene i nikada ne utječu na procjenu."
+      }
+    },
+    "values": {
+      "eyebrow": "Što nas vodi",
+      "transparency": {
+        "title": "Transparentnost",
+        "text": "Svaka brojka ima izvor i osnovu. Ako je nešto procjena, to i kažemo."
+      },
+      "independence": {
+        "title": "Neovisnost",
+        "text": "Nemamo interes u tome hoćete li kupiti automobil ni tko će vam ga uvesti."
+      },
+      "precision": {
+        "title": "Preciznost",
+        "text": "Računamo do centa, ali prikazujemo i raspon – jer uvoz nije savršena matematika."
+      }
+    },
+    "cta": {
+      "title": "Provjerite svoj automobil u minuti",
+      "text": "Imate pitanje ili ste uočili zastarjelu stopu? Pišite na {{email}}"
+    }
+  },
+  "currency": {
+    "label": "Valuta rezultata",
+    "title": "U kojoj valuti želite prikaz troškova?",
+    "hint": "Aukcijski iznosi (USD, JPY, AED…) preračunavaju se po aktualnom tečaju središnje banke. Valuta ne mijenja izračun poreza – poreze uvijek utvrđuje država carinjenja.",
+    "groupEu": "Valute EU",
+    "groupOther": "Ostalo"
+  }
+}
