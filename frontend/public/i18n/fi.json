@@ -1,0 +1,1014 @@
+{
+  "affiliate": {
+    "CURRENCY_EXCHANGE": "Edullisempi valuutanvaihto",
+    "CURRENCY_EXCHANGE_HINT": "Maksa auto ilman pankin marginaaleja",
+    "FINANCING": "Leasing tai laina",
+    "FINANCING_HINT": "Rahoita tuonti ja verot",
+    "VIN_CHECK": "Tarkista VIN-historia",
+    "VIN_CHECK_HINT": "Vauriot, ajokilometrit, varkausmerkinnät",
+    "sponsored": "Sponsoroitu",
+    "title": "Saatat tarvita myös"
+  },
+  "app": {
+    "headline": "Paljonko tuontiauto oikeasti maksaa?",
+    "tagline": "Huutokaupat Yhdysvalloissa, Kanadassa, Japanissa, Dubaissa tai Isossa-Britanniassa → EU:n tulli, valmistevero ja ALV. Tulos heti, ilman rekisteröitymistä."
+  },
+  "auction": {
+    "COPART": "Copart",
+    "DEALER": "Jälleenmyyjä / yksityinen",
+    "EMIRATES_AUCTION": "Emirates Auction",
+    "IAAI": "IAAI",
+    "USS": "USS Japan"
+  },
+  "buyer": {
+    "COMPANY": "Yritys",
+    "PRIVATE": "Yksityishenkilö"
+  },
+  "category": {
+    "MOTORCYCLE": "Moottoripyörä",
+    "PASSENGER_CAR": "Henkilöauto",
+    "PICKUP_TRUCK": "Pickup",
+    "REGISTRATION": "Tuonnin jälkeen ja rekisteröinti",
+    "SUV": "SUV",
+    "TAXES": "EU:n tullit ja verot",
+    "TRANSPORT": "Kuljetus ja logistiikka",
+    "VAN": "Pakettiauto",
+    "VEHICLE": "Ajoneuvo ja huutokauppa",
+    "RISK": "Riskit matkalla"
+  },
+  "condition": {
+    "ENGINE_STARTS": "Moottori käynnistyy",
+    "ENGINE_STARTS_HINT": "Ei liiku omin voimin",
+    "NON_RUNNING": "Vaurioitunut / salvage",
+    "NON_RUNNING_HINT": "Tarvitsee vinssillä varustetun hinausauton",
+    "RUN_AND_DRIVE": "Run & Drive",
+    "RUN_AND_DRIVE_HINT": "Käynnistyy ja liikkuu"
+  },
+  "cost": {
+    "AUCTION_AGENT_COMMISSION": "Vientiagentin palkkio",
+    "AUCTION_BUYER_FEE": "Huutokaupan ostajan maksu",
+    "AUCTION_ENVIRONMENTAL_FEE": "Ympäristömaksu",
+    "AUCTION_EXPORT_DOCS": "Vientiasiakirjat",
+    "AUCTION_GATE_FEE": "Luovutusmaksu (gate fee)",
+    "AUCTION_RECYCLING_FEE": "Kierrätysmaksu (Japani)",
+    "AUCTION_SERVICE_FEE": "Huutokaupan palvelumaksu",
+    "AUCTION_TITLE_HANDLING_FEE": "Omistusasiakirjan (title) käsittelymaksu",
+    "AUCTION_VIRTUAL_BID_FEE": "Verkkohuutomaksu",
+    "CARGO_INSURANCE": "Kuljetusvakuutus",
+    "CUSTOMS_AGENCY": "Tulliasiamiehen palkkio",
+    "CUSTOMS_DUTY": "Tulli",
+    "EXCISE_TAX": "Valmistevero",
+    "FORKLIFT_LOADING": "Lastaus trukilla",
+    "IMPORT_VAT": "Maahantuonnin ALV",
+    "INDIVIDUAL_APPROVAL": "Yksittäishyväksyntä (§21 StVZO)",
+    "INLAND_TRANSPORT": "Maakuljetus satamaan",
+    "INTRA_EU_ACQUISITION_VAT": "Yhteisöhankinnan ALV (käännetty verovelvollisuus, vähennyskelpoinen)",
+    "INTRA_EU_TRANSPORT": "Autonkuljetusauto satamasta määränpäähän",
+    "OCEAN_FREIGHT": "Merirahti",
+    "PORT_UNLOADING": "Satamapurku ja terminaali",
+    "PURCHASE_PRICE": "Ostohinta (voittanut huuto)",
+    "RDW_INSPECTION": "RDW-tarkastus",
+    "RECYCLING_FEE": "Kierrätysmaksu",
+    "REGISTRATION_FEE": "Rekisteröintimaksut",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Ajovalojen säätö (oikeanpuoleinen ohjaus)",
+    "SWORN_TRANSLATION": "Asiakirjojen virallinen käännös",
+    "TECHNICAL_INSPECTION": "Katsastus",
+    "US_LIGHTING_CONVERSION": "Valojen muutostyö (USA-malli)",
+    "WINCH_CONTAINER_LOADING": "Konttiin lastaus vinssillä",
+    "DELIVERY_CAR_CARRIER": "Autonkuljetusauto satamasta ovelle",
+    "DELIVERY_TOW_TRUCK": "Hinausauto satamasta ovelle",
+    "DELIVERY_SELF_DRIVE": "Ajo kotiin siirtokilvillä (polttoaine, kilvet, lyhytaikainen vakuutus)",
+    "TECHNICAL_INSPECTION_IMPORT": "Tuontiajoneuvon katsastus",
+    "REG_TEMPORARY_PERMIT": "Väliaikainen rekisteröintilupa",
+    "REG_TEMPORARY_PLATES": "Väliaikaiset kilvet",
+    "REG_CERTIFICATE": "Rekisteröintitodistus",
+    "REG_PLATES": "Rekisterikilvet",
+    "REG_STICKER": "Tarkastustarra",
+    "REAR_FOG_LIGHT": "Takasumuvalon asennus",
+    "SPEEDOMETER_KMH": "Nopeusmittarin muutos km/h-asteikolle",
+    "SERVICE_INSPECTION": "Huolto ja nesteiden vaihto",
+    "GEOMETRY_ALIGNMENT": "Pyöränsuuntaus",
+    "DETAILING": "Puhdistus ja detailing",
+    "EXPERT_VALUATION": "Asiantuntijan arvonmääritys (esim. kaskovakuutusta varten)",
+    "REPAIR_ESTIMATE": "Korjaukset (oma arviosi)",
+    "INSURANCE_FIRST_YEAR": "Vakuutus – ensimmäinen vuosi (oma summasi)",
+    "RISK_PORT_STORAGE": "Satamavarastointi (myöhäinen nouto, paperityöt)",
+    "RISK_CUSTOMS_INSPECTION": "Tullitarkastus / kontin läpivalaisu",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Tulliarvon kyseenalaistaminen (lisätulli ja -ALV)",
+    "RISK_VESSEL_ROLLOVER": "Siirto myöhempään alukseen (varastointi vientisatamassa)",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Kuljetusvaurio – vakuutuksen omavastuu",
+    "RISK_HIDDEN_DAMAGE": "Piilevät vauriot, jotka eivät näy huutokaupassa",
+    "RISK_TITLE_DELAY": "Omistusasiakirjan viivästys (lisävarastointi)",
+    "RISK_EXPORT_DOCS_DELAY": "Vientiasiakirjojen viivästys"
+  },
+  "doc": {
+    "billOfLading": "Konossementti (Bill of Lading)",
+    "companyRegistryExtract": "Kaupparekisteriote",
+    "customsDeclarationSad": "Tulli-ilmoitus (SAD)",
+    "customsPowerOfAttorney": "Valtakirja tulliasiamiehelle",
+    "eoriNumber": "Maahantuojan EORI-numero",
+    "evChargingPortAdapterNote": "Tarkista latausliitännän standardi (NACS/CCS1 → CCS2)",
+    "historicExpertOpinion": "Asiantuntijalausunto museoajoneuvon asemasta",
+    "insurancePolicy": "Kuljetusvakuutuksen vakuutuskirja",
+    "invoice": "Huutokaupan lasku / kauppakirja",
+    "ownership": {
+      "japanExportCertificate": "Japanilainen vientitodistus (Export Certificate, rekisteristä poisto)",
+      "title": "Alkuperäinen Title (omistusasiakirja)",
+      "uaeExportCertificate": "Arabiemiirikuntien vientitodistus (RTA)",
+      "v5c": "Brittiläinen V5C-rekisteröintitodistus (logbook)"
+    },
+    "pl": {
+      "exciseDeclarationAkcUs": "Valmisteveroilmoitus AKC-U/S ja maksutosite",
+      "exciseExemptionConfirmation": "Valmisteverovapautuksen vahvistus (sähköauto)",
+      "recyclingFeeConfirmation": "Kierrätysmaksun maksutosite"
+    },
+    "procedure4200VatIdAndProofOfTransport": "Menettely 4200: ostajan EU-ALV-tunniste ja kuljetustodiste",
+    "registrationApplication": "Ajoneuvon rekisteröintihakemus",
+    "salvageTitleRepairEvidence": "Korjausdokumentaatio (salvage title)",
+    "swornTranslation": "Ulkomaisten asiakirjojen viralliset käännökset",
+    "technicalInspection": "Katsastustodistus",
+    "transportInvoices": "Kuljetus- ja rahtilaskut",
+    "usExportAesItn": "Yhdysvaltain vienti-ilmoitus (AES/ITN)",
+    "vatPaymentProof": "ALV:n maksutosite"
+  },
+  "error": {
+    "auction": {
+      "noSchedule": "Huutokaupan maksutaulukkoa ei ole saatavilla.",
+      "unsupported": "Tätä huutokauppataloa ei tueta."
+    },
+    "excise": {
+      "rateNotFound": "Tälle kokoonpanolle ei löydy valmisteveroprosenttia."
+    },
+    "port": {
+      "unknown": "Tuntematon määräsatama."
+    },
+    "procedure4200": {
+      "notAvailableInPort": "Menettely 4200 ei ole käytettävissä tässä satamassa.",
+      "sameCountry": "Menettely 4200 edellyttää tulliselvitystä eri maassa kuin määränpäämaa."
+    },
+    "route": {
+      "unavailable": "Tälle valinnalle ei ole saatavilla laivausreittiä."
+    },
+    "tariff": {
+      "notFound": "Ajoneuvoa ei voitu luokitella tullitariffiin."
+    },
+    "taxProfile": {
+      "missing": "Valitulle maalle ei ole verokantoja."
+    }
+  },
+  "fuel": {
+    "DIESEL": "Diesel",
+    "EV": "Sähkö",
+    "HEV": "Hybridi",
+    "HYDROGEN": "Vety",
+    "LPG": "LPG",
+    "MHEV": "Kevythybridi",
+    "PETROL": "Bensiini",
+    "PHEV": "Ladattava hybridi"
+  },
+  "lead": {
+    "consentMarketing": "Lähettäkää minulle tuontitarjouksia ja vinkkejä (valinnainen).",
+    "consentTransfer": "Hyväksyn, että tietoni ja laskelmani jaetaan yhdelle varmennetulle kumppanille tarjouksen laatimista varten (GDPR 6 artiklan 1 kohdan a alakohta).",
+    "email": "Sähköposti",
+    "message": "Huutokauppalinkki tai lisätietoja",
+    "name": "Koko nimi",
+    "phone": "Puhelin (valinnainen)",
+    "submit": "Lähetä pyyntö",
+    "subtitle": "CarImport.eu ei tuo autoja maahan. Halutessasi välitämme laskelmasi yhdelle varmennetulle tuontiyritykselle, joka laatii sinulle tarjouksen. Ei sitoumuksia.",
+    "thanks": "Kiitos!",
+    "thanksHint": "Tuontiyritys ottaa sinuun yhteyttä yhden arkipäivän kuluessa.",
+    "title": "Tarjouspyyntö tuontiyritykselle (valinnainen)"
+  },
+  "origin": {
+    "CANADA": "Kanada",
+    "JAPAN": "Japani",
+    "UAE": "Arabiemiirikunnat / Dubai",
+    "UK": "Iso-Britannia",
+    "USA": "USA"
+  },
+  "paywall": {
+    "blikHint": "Maksa BLIKillä, Przelewy24:llä tai kortilla.",
+    "currency": "Maksuvaluutta",
+    "email": "Sähköposti (lähetämme raportin linkin)",
+    "fullName": "Koko nimi (tulostetaan raporttiin)",
+    "pay": "Jatka maksamaan",
+    "redirecting": "Uudelleenohjataan…",
+    "secure": "Turvallinen maksu Stripen kautta. Emme koskaan tallenna korttitietoja.",
+    "subtitle": "Tarkat summat, veroperusteet ja verokannat, asiakirjat – PDF-raportissa omalla nimelläsi.",
+    "terms": "Hyväksyn ehdot ja pyydän digitaalisen sisällön toimittamista välittömästi, jolloin luovun peruuttamisoikeudesta.",
+    "title": "Täydellinen tuontiraportti"
+  },
+  "report": {
+    "amount": "Summa",
+    "back": "Takaisin laskuriin",
+    "base": "Peruste",
+    "download": "Lataa PDF",
+    "expired": "Maksua ei suoritettu loppuun.",
+    "generating": "Luodaan PDF:ää…",
+    "item": "Erä",
+    "rate": "Kanta",
+    "refunded": "Tämä tilaus on hyvitetty.",
+    "stage": "Vaihe",
+    "title": "Ajoneuvon tuontikustannusraportti",
+    "total": "Kokonaiskustannus perillä",
+    "waiting": "Vahvistetaan maksuasi…",
+    "delivery": "Toimitus",
+    "leadTime": "Aika rekisteröintiin",
+    "days": "päivää",
+    "scenarios": "Kolme kustannusskenaariota",
+    "timeline": "Aikajana",
+    "plan": "Mitä tehdä tuonnin jälkeen – vaihe vaiheelta",
+    "step": "Vaihe",
+    "deadline": "Määräaika",
+    "riskDetail": "Todennäköisyys {{p}} %, kustannus toteutuessaan: {{min}}–{{max}} {{cur}}",
+    "userAmount": "syöttämäsi summa",
+    "scenarioMethod": "Keskimääräinen skenaario sisältää riskit odotusarvona (todennäköisyys × keskikustannus); pessimistinen olettaa jokaisen riskin toteutuvan ylärajan kustannuksella."
+  },
+  "result": {
+    "chart": "Kustannusrakenne",
+    "exciseIncluded": "Sisältää valmisteveron",
+    "fx": "NBP:n kurssit, päivä: {{date}}",
+    "paid1": "Tarkat huutokauppamaksut",
+    "paid2": "Tulli, valmistevero ja ALV",
+    "paid3": "Asiakirjaluettelo",
+    "paid4": "Henkilökohtainen PDF-raportti",
+    "partner": "Haluatko tarjouksen tuontiyritykseltä?",
+    "rangeHint": "Vaihteluväli kattaa valuuttakurssien ja rahtihintojen heilahtelut.",
+    "title": "Arvioitu kokonaiskustannus perillä",
+    "transit": "Merellä: {{days}} päivää",
+    "unlock": "Avaa täydellinen raportti – {{price}}",
+    "updating": "Päivitetään…",
+    "short": "Kokonaiskustannus",
+    "calculating": "Lasketaan jokaista erää ja skenaariota…",
+    "edit": "Muuta tietoja",
+    "structure": "Kustannusrakenne (keskimääräinen skenaario)",
+    "timeline": "Aika rekisteröintiin: {{min}}–{{max}} päivää",
+    "included": "Mitä hintaan sisältyy",
+    "risks": "Mitä matkalla voi tapahtua",
+    "risksLead": "Jokaisella riskillä on todennäköisyys ja kustannushaarukka. Keskimääräinen skenaario huomioi ne suhteessa todennäköisyyteen, pessimistinen täysimääräisinä. Summat löytyvät raportista.",
+    "probability": "Todennäköisyys",
+    "reportEyebrow": "Raportti ovelta ovelle",
+    "reportTitle": "Jokainen erä sentilleen – kolmessa skenaariossa",
+    "reportItem1": "Huutokauppamaksut, kuljetus, merirahti ja vakuutus",
+    "reportItem2": "Tulli, valmistevero ja ALV veroperusteineen ja -kantoineen",
+    "reportItem3": "Toimitus: km × hinta, lastaus, vähimmäismaksu",
+    "reportItem4": "Rekisteröintimaksut ja tuonnin jälkeiset palvelut",
+    "reportItem5": "Riskit summineen: optimistinen, keskimääräinen, pessimistinen",
+    "reportItem6": "Vaiheittainen suunnitelma määräaikoineen ja asiakirjaluetteloineen",
+    "cheapestPort": "edullisin satama"
+  },
+  "shipping": {
+    "CONTAINER_EXCLUSIVE": "Oma kontti",
+    "CONTAINER_SHARED": "Jaettu kontti",
+    "RORO": "RoRo"
+  },
+  "title": {
+    "CLEAN": "Puhdas omistusasiakirja (clean title)",
+    "SALVAGE": "Salvage / ei korjattavissa"
+  },
+  "validation": {
+    "auctionHouse": {
+      "notInOrigin": "Tämä huutokauppatalo ei toimi valitussa maassa."
+    },
+    "engineCc": {
+      "required": "Anna moottorin iskutilavuus."
+    },
+    "procedure4200": {
+      "companyOnly": "Menettely 4200 on käytettävissä vain yrityksille, joilla on voimassa oleva EU-ALV-tunniste."
+    }
+  },
+  "warning": {
+    "dealer": {
+      "verifyExportDocuments": "Kun ostat jälleenmyyjältä, varmista, että saat vientiasiakirjat."
+    },
+    "historic": {
+      "expertOpinionRequired": "Museoajoneuvon asema (0 % tulli) edellyttää asiantuntijalausuntoa, ja tulli voi kyseenalaistaa sen."
+    },
+    "intraEuTransport": {
+      "notPriced": "Autonkuljetukselle satamasta määränpäähän ei ole hintaa – kustannus ei sisälly."
+    },
+    "newMeansOfTransport": {
+      "vatInDestination": "Uusi kulkuneuvo (≤6 kuukautta tai ≤6000 km): ALV on maksettava myös rekisteröintimaassa."
+    },
+    "nl": {
+      "bpmNotIncluded": "Alankomaiden BPM-rekisteröintivero ei sisälly."
+    },
+    "pl": {
+      "clearedForOtherMemberState": "Tulliselvitetty Puolassa rekisteröitäväksi muualla – tarkista määränpäämaan rekisteröintiverot.",
+      "exciseDeclarationWithin14Days": "Puolan valmistevero maksetaan verotoimistoon (AKC-U/S) 14 päivän kuluessa saapumisesta.",
+      "pickupMayBeReclassified": "Henkilöautoksi rekisteröity pickup voi olla valmisteveron alainen – tarkista hyväksyntä."
+    },
+    "procedure4200": {
+      "reverseChargeDeductible": "Menettely 4200: ALV ilmoitetaan itse määränpäämaassa (käännetty verovelvollisuus, neutraali ALV-rekisteröidyille yrityksille)."
+    },
+    "registrationTax": {
+      "notModelled": "Määränpäämaan rekisteröintiveroa ei ole vielä mallinnettu."
+    },
+    "delivery": {
+      "portPickup": "Nouto satamasta valittu – maantiekuljetus kotiin ei sisälly.",
+      "selfDriveNotRunning": "Ei-ajokuntoisella autolla ei voi ajaa siirtokilvillä – valitse hinausauto."
+    }
+  },
+  "wizard": {
+    "auction": "Huutokauppatalo",
+    "back": "Takaisin",
+    "bid": "Voittanut huuto",
+    "buyer": "Ostaja",
+    "category": "Ajoneuvotyyppi",
+    "condition": "Ajoneuvon kunto",
+    "destination": "Rekisteröintimaa",
+    "engineCc": "Iskutilavuus",
+    "exciseRate": "Puolan valmistevero: {{rate}} %",
+    "exciseWarning": "Yli 2000 cm³:n moottoreilla valmistevero nousee {{from}} prosentista {{to}} prosenttiin – ero on usein tuhansia!",
+    "finish": "Täydellinen raportti",
+    "forklift": "trukki / vinssi",
+    "fuel": "Voimalinja",
+    "historic": "Alkuperäiskuntoinen museoajoneuvo",
+    "historicHint": "Yli 30 vuotta vanha, muuttamaton: 0 % tulli ja alennettu ALV.",
+    "next": "Seuraava",
+    "origin": "Ostomaa",
+    "port": "Tulliselvityssatama EU:ssa",
+    "procedure4200": "Tullimenettely 4200",
+    "procedure4200Hint": "ALV-rekisteröidyille EU-yrityksille: ei ALV:tä rajalla, käännetty verovelvollisuus määränpäässä.",
+    "shipping": "Merikuljetustapa",
+    "step1": "Mistä",
+    "step2": "Ajoneuvo",
+    "step3": "Kunto ja hinta",
+    "title": "Omistusasiakirjan tyyppi",
+    "year": "Valmistusvuosi",
+    "zone": "Varikon sijainti (osavaltio / provinssi)",
+    "zoneOther": "Muu / en tiedä",
+    "advanced": "Lisäasetukset",
+    "step4": "Määränpää ja toimitus",
+    "step5": "Tuonnin jälkeen",
+    "step6": "Kustannusraportti",
+    "calculate": "Laske kokonaiskustannus",
+    "departurePort": "Lähtösatama",
+    "departureAuto": "Automaattinen – edullisin reitti",
+    "departureHint": "Valitse tietty satama, jos huolitsijasi on jo nimennyt sellaisen.",
+    "delivery": "Kuljetus satamasta ovellesi",
+    "distance": "Etäisyys satamasta osoitteeseesi",
+    "pricePerKm": "Kilometrihinta",
+    "tariffUnknown": "Tälle maalle ei ole kilometrihinnastoa – käytetään kiinteää hintaa.",
+    "repair": "Korjauskustannus",
+    "repairHintRunner": "Ehdotamme tälle kunnolle ja omistusasiakirjalle tyypillistä summaa (maalaus, renkaat). Onko sinulla korjaamon tarjous? Syötä se.",
+    "repairHintDamaged": "Ehdotamme tälle kunnolle tyypillistä korjaussummaa (noin 30–40 % hinnasta). Onko sinulla korjaamon tarjous? Syötä se – piilevät vauriot lasketaan erikseen riskinä.",
+    "afterImportLead": "Kaikki, mitä on tehtävä ja maksettava sataman ja rekisterikilpien välillä. Pakolliset erät sisältyvät aina, muut valitset itse.",
+    "statutory": "Pakolliset (viranomaismaksut)",
+    "optional": "Valinnaiset",
+    "recommended": "suositeltu",
+    "optionsLoading": "Ladataan reittisi palveluita…",
+    "noServices": "Meillä ei vielä ole tälle maalle yksityiskohtaista rekisteröintihinnastoa – raportti luettelee vaiheet.",
+    "insurance": "Ensimmäisen vuoden liikennevakuutus",
+    "insuranceHint": "Ehdotamme tässä maassa vasta rekisteröidyn auton liikennevakuutustarjousten mediaania. Onko sinulla oma tarjous? Syötä se.",
+    "address": "Toimitusosoite",
+    "addressPlaceholder": "esim. Helsinki, Mannerheimintie 5 tai postinumero",
+    "addressChange": "Muuta",
+    "addressHint": "Ainoa kenttä, johon kirjoitat. Osoitteen perusteella laskemme kilometrit jokaisesta satamasta ja valitsemme edullisimman.",
+    "portRankingAddress": "Kaikki {{count}} EU-satamaa hinnoiteltu osoitteeseesi – edullisin ensin.",
+    "portRankingCountry": "Kaikki {{count}} EU-satamaa hinnoiteltu rekisteröintimaahan – anna osoite tarkkoja kilometrejä varten.",
+    "portRankingLoading": "Hinnoitellaan kaikkia EU-satamia…",
+    "portCheapest": "edullisin",
+    "portAuto": "Takaisin edullisimpaan",
+    "portsAll": "Näytä kaikki EU-satamat ({{count}})",
+    "portsLess": "Piilota satamaluettelo",
+    "days": "päivää",
+    "portRankingNote": "Kokonaissumma ovelta ovelle, keskimääräinen skenaario: merirahti, tulliselvitys ja ALV sataman maassa, toimitus osoitteeseen ja tuonnin jälkeiset maksut.",
+    "distanceRouted": "Tiereitti osoitteeseesi, lähtösatama: {{port}}.",
+    "distanceEstimated": "Arvio osoitteeseesi, lähtösatama: {{port}} (linnuntie × 1,25).",
+    "distanceTypical": "Tyypillinen etäisyys, satama: {{port}} – anna osoite yllä tarkkaa lukua varten.",
+    "tariffShort": "Markkinahinta: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} lastaus, väh. {{minimum}} {{cur}}."
+  },
+  "layout": {
+    "topbar": "Riippumaton laskuri autojen tuontikustannuksille Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista ja Isosta-Britanniasta 27 EU-maahan",
+    "forBusiness": "Tuontiyrityksille",
+    "home": "Etusivu",
+    "nav": "Päävalikko",
+    "calculator": "Laskuri",
+    "howItWorks": "Näin se toimii",
+    "pricing": "Hinnoittelu",
+    "faq": "UKK",
+    "cta": "Laske kustannus",
+    "menu": "Valikko",
+    "close": "Sulje",
+    "breadcrumb": "Murupolku",
+    "themeLight": "Vaihda vaaleaan teemaan",
+    "themeDark": "Vaihda tummaan teemaan",
+    "about": "Meistä",
+    "why": "Miksi me",
+    "what": "Mitä laskemme",
+    "ctaHint": "Maksuton, ilman rekisteröitymistä",
+    "language": "Kieli"
+  },
+  "footer": {
+    "about": "Riippumaton laskuri EU:n ulkopuolelta tuotavien autojen tuontikustannuksille. Emme myy emmekä tuo autoja – laskemme, mitä ne oikeasti maksavat.",
+    "calculators": "Tuontilaskurit",
+    "importFrom": {
+      "USA": "Auto Yhdysvalloista",
+      "CANADA": "Auto Kanadasta",
+      "JAPAN": "Auto Japanista",
+      "UAE": "Auto Dubaista (Arabiemiirikunnat)",
+      "UK": "Auto Isosta-Britanniasta"
+    },
+    "service": "Palvelu",
+    "privacy": "Tietosuojaseloste",
+    "language": "Kieli",
+    "payments": "Maksut Stripen kautta (kortti, BLIK, Przelewy24). Emme koskaan tallenna korttitietoja.",
+    "rights": "Kaikki oikeudet pidätetään.",
+    "disclaimer": "Laskelmat ovat suuntaa antavia, eivätkä ne ole tullipäätös tai veroneuvontaa."
+  },
+  "cookies": {
+    "title": "Evästeet",
+    "text": "Käytämme sivuston toiminnan kannalta välttämättömiä evästeitä sekä suostumuksellasi analytiikkaevästeitä. Lisätietoja:",
+    "accept": "Hyväksy kaikki",
+    "necessary": "Vain välttämättömät"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Autontuontilaskuri",
+      "title1": "Tiedä tuontikustannus",
+      "title2": "ennen kuin huudat",
+      "lead": "Riippumaton laskuri, joka näyttää minuutissa auton tuonnin kokonaiskustannuksen Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista tai Isosta-Britanniasta – huutokauppahinnasta rekisterikilpiin asti omassa maassasi.",
+      "cta": "Laske maksutta",
+      "secondary": "Mitä tarkalleen laskemme",
+      "visual": "Musta Ford Mustang keltaisessa neonvalossa Yhdysvaltain lipun edessä",
+      "point1": "Välitön arvio – ei rekisteröitymistä, puheluita eikä tarjouksen odottelua",
+      "point2": "Yli 40 kustannuserää, 43 EU-satamaa ja päivän valuuttakurssit",
+      "point3": "Emme myy autoja emmekä ota palkkioita – luvut ovat rehellisiä"
+    },
+    "how": {
+      "eyebrow": "Näin se toimii",
+      "title": "Ideasta kokonaissummaan neljässä vaiheessa",
+      "s1": {
+        "title": "Mistä ostat",
+        "text": "USA, Kanada, Japani, Arabiemiirikunnat tai Iso-Britannia – huutokaupasta tai jälleenmyyjältä."
+      },
+      "s2": {
+        "title": "Mikä auto",
+        "text": "Tyyppi, käyttövoima, iskutilavuus, vuosimalli ja kunto – ne ratkaisevat verot."
+      },
+      "s3": {
+        "title": "Osoitteesi",
+        "text": "Ainoa kenttä, johon kirjoitat. Laskemme kilometrit ja edullisimman sataman."
+      },
+      "s4": {
+        "title": "Tulos ja raportti",
+        "text": "Kolme skenaariota maksutta ja sentilleen tarkka PDF, kun olet valmis ostamaan."
+      },
+      "step": "Vaihe"
+    },
+    "costs": {
+      "eyebrow": "Mistä hinta muodostuu",
+      "title": "Tulli, valmistevero ja ALV laskettuna samassa järjestyksessä kuin tullissa",
+      "lead": "Jokainen vero on seuraavan veron peruste, joten järjestyksellä on väliä. Tulliselvityssatama määrää ALV-kannan, rekisteröintimaa valmisteveron.",
+      "cif": {
+        "title": "Tulliarvo (CIF)",
+        "formula": "hinta + huutokauppamaksu + kuljetus + merirahti + vakuutus",
+        "text": "Kaikki, mitä maksat siihen asti, kun auto saapuu EU-satamaan."
+      },
+      "duty": {
+        "title": "Tulli (TARIC)",
+        "formula": "CIF × 10 % henkilöautot · 22 % pickupit · 0 % museoajoneuvot",
+        "text": "Tullin määrä riippuu HS-koodista; moottoripyörät 6–8 %."
+      },
+      "excise": {
+        "title": "Valmistevero (PL)",
+        "formula": "(CIF + tulli) × 3,1 % enintään 2,0 l · 18,6 % sen yli",
+        "text": "Hybridit 1,55 % / 9,3 %, sähköautot 0 %. Maksetaan rekisteröintimaassa."
+      },
+      "vat": {
+        "title": "Maahantuonnin ALV",
+        "formula": "(CIF + tulli + valmistevero* + purku) × tulliselvitysmaan verokanta",
+        "text": "*Valmistevero sisältyy vain, kun tulliselvitys tehdään rekisteröintimaassa."
+      }
+    },
+    "ports": {
+      "title": "ALV-kanta riippuu tulliselvityssatamasta",
+      "text": "Laskuri hinnoittelee kaikki 43 EU:n tulliselvityssatamaa ovelta ovelle: ALV sataman maassa, merirahti, toimitus osoitteeseesi ja tuonnin jälkeiset maksut. Tulliselvitys Saksassa tarkoittaa 19 %:n ALV:tä 23 %:n sijaan, mutta siihen tulee lisäksi autonkuljetus – alla muutama esimerkki, loput laskuri vertailee.",
+      "port": "Satama",
+      "country": "Tulliselvitysmaa"
+    },
+    "pricing": {
+      "eyebrow": "Hinnoittelu",
+      "title": "Aloita maksutta, maksa vain varmuudesta"
+    },
+    "final": {
+      "title": "Laske tuontisi minuutissa",
+      "text": "Ei rekisteröitymistä, ei sitoumuksia. Jos auto osoittautuu liian kalliiksi, säästit juuri rahaa. Jos se kannattaa, huudat rauhallisin mielin kokonaiskustannuksen tietäen.",
+      "title1": "Tarkista ennen kuin ostat.",
+      "title2": "Se vie minuutin.",
+      "cta": "Laske tuontikustannus",
+      "about": "Keitä olemme"
+    },
+    "strip": {
+      "brand": {
+        "title": "CarImport.eu —",
+        "text": "riippumaton tuontilaskuri"
+      },
+      "instant": {
+        "title": "Tulos minuutissa",
+        "text": "Annat vain osoitteen, me ehdotamme loput"
+      },
+      "items": {
+        "title": "40+ kustannuserää",
+        "text": "Huutokaupasta rekisteröintiin ja riskeihin"
+      },
+      "ports": {
+        "title": "43 EU-satamaa",
+        "text": "Valitsemme osoitteellesi edullisimman"
+      }
+    },
+    "map": {
+      "eyebrow": "Tuontireitit",
+      "title": "Satamista ympäri maailmaa suoraan EU:hun",
+      "lead": "Vientisatamat Yhdysvalloissa, Kanadassa, Japanissa, Arabiemiirikunnissa ja Isossa-Britanniassa sekä reitit Panaman, Suezin ja Gibraltarin kautta EU:n tulliselvityssatamiin.",
+      "aria": "Kartta merireiteistä Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista ja Isosta-Britanniasta EU-satamiin",
+      "eu": "Euroopan unioni",
+      "legendEu": "EU-maat (rekisteröinti)",
+      "legendOrigin": "Ostomaat",
+      "legendRoute": "Merireitti",
+      "scroll": "Pyyhkäise nähdäksesi koko kartan",
+      "days": "päivää"
+    },
+    "numbers": {
+      "eyebrow": "CarImport.eu lukuina",
+      "title": "Luvut jokaisen laskelman takana",
+      "n1": {
+        "value": "5",
+        "label": "lähtömaata: USA, Kanada, Japani, Arabiemiirikunnat ja Iso-Britannia"
+      },
+      "n2": {
+        "value": "27",
+        "label": "EU-maata, joissa voit rekisteröidä auton"
+      },
+      "n3": {
+        "value": "43",
+        "label": "tulliselvityssatamaa 22 EU-maassa – valitsemme osoitteellesi edullisimman"
+      },
+      "n4": {
+        "value": "4",
+        "label": "kieltä: puola, englanti, saksa, ukraina"
+      }
+    },
+    "why": {
+      "eyebrow": "Miksi käyttää laskuria",
+      "title": "Tiedä, mitä maksat – ennen kuin painat ”huuda”",
+      "lead": "Tuonnin kallein osa ovat kulut, joista kukaan ei kertonut ennen ostoa. Laskuri tuo ne päivänvaloon ennen kuin käytät ensimmäistäkään dollaria.",
+      "preview": {
+        "tag": "Laskuri",
+        "title": "Kokonaiskustannus ovelta ovelle kuudessa vaiheessa",
+        "text": "Huutokauppa, kuljetus, tulli, valmistevero, ALV, rekisteröinti ja riskit – kolmessa skenaariossa.",
+        "alt": "Kuvakaappaus tuontikustannuslaskurista"
+      },
+      "instant": {
+        "tag": "Välitön",
+        "title": "Arvio minuutissa, ei kahdessa päivässä",
+        "text": "Ei yhteydenottolomakkeita, ei myyjän soiton odottelua. Jokaisessa kentässä on valmiina ehdotus – muutat vain sen, minkä tiedät paremmin."
+      },
+      "independent": {
+        "tag": "Riippumaton",
+        "title": "Emme myy autoja emmekä kuljetuksia",
+        "text": "Emme ansaitse katetta rahdinkuljettajilta tai huutokaupoilta, joten meillä ei ole syytä alakanttiin laskettuihin kuluihin. Kaikki saavat saman tuloksen."
+      },
+      "ports": {
+        "tag": "43 satamaa",
+        "title": "Edullisin reitti osoitteeseesi",
+        "text": "Hinnoittelemme jokaisen EU:n tulliselvityssataman ovelta ovelle ja näytämme erotuksen."
+      },
+      "scenarios": {
+        "tag": "Skenaariot",
+        "title": "Optimistinen, keskimääräinen, pessimistinen",
+        "text": "Valuuttakurssit, viivästykset ja matkan riskit – näet realistisen vaihteluvälin, et yhtä ”maagista” lukua."
+      },
+      "after": {
+        "tag": "Tuonnin jälkeen",
+        "title": "Myös rekisteröinti ja paperityöt",
+        "text": "Katsastus, käännökset, valojen muutostyöt, viranomaismaksut ja vakuutus – määräaikoineen."
+      },
+      "report": {
+        "tag": "PDF-raportti",
+        "title": "Jokainen sentti mustaa valkoisella",
+        "text": "Hintaan 4,99 € nimelläsi varustettu raportti, jossa on jokainen verokanta, veroperuste ja tuonnin jälkeinen toimintasuunnitelma."
+      }
+    },
+    "what": {
+      "eyebrow": "Mitä huomioimme",
+      "title": "Kaikki, mistä auton hinta ovellasi muodostuu",
+      "lead": "Useimmat laskurit pysähtyvät tulliin ja ALV:hen. Me laskemme koko matkan – huutokaupan varikolta rekisterikilpiin – ja lisäämme sen, mikä voi mennä pieleen.",
+      "cta": "Kokeile omalla autollasi",
+      "purchase": {
+        "title": "Osto",
+        "i1": "Voittanut huuto tai jälleenmyyjän hinta",
+        "i2": "Copartin, IAAI:n, Manheimin ja USS:n maksut hintaportaittain",
+        "i3": "Clean / salvage title ja kunto",
+        "i4": "Arvioitu korjauskustannus"
+      },
+      "transport": {
+        "title": "Kuljetus",
+        "i1": "Huutokauppavarikolta vientisatamaan",
+        "i2": "Kontti- tai RoRo-rahti",
+        "i3": "Kuljetusvakuutus",
+        "i4": "Purku- ja terminaalimaksut",
+        "i5": "Hinausauto tai autonkuljetusauto osoitteeseesi"
+      },
+      "taxes": {
+        "title": "Tulli ja verot",
+        "i1": "Tulli TARICin mukaan (10 %, pickupit 22 %)",
+        "i2": "Valmistevero moottorin ja käyttövoiman mukaan",
+        "i3": "ALV tulliselvityssataman maassa",
+        "i4": "Saman päivän keskuspankin valuuttakurssi"
+      },
+      "after": {
+        "title": "Tuonnin jälkeen",
+        "i1": "Katsastus ja hyväksyntä",
+        "i2": "Asiakirjojen viralliset käännökset",
+        "i3": "Rekisteröinti, kilvet ja viranomaismaksut",
+        "i4": "Valojen ja nopeusmittarin muutostyöt",
+        "i5": "Ensimmäisen vuoden liikennevakuutus"
+      },
+      "risks": {
+        "title": "Riskit",
+        "i1": "Satamavarastointi ja myöhästyneet alukset",
+        "i2": "Tullitarkastus ja tulliarvon tarkistus",
+        "i3": "Piilevät vauriot ja kuljetusvauriot",
+        "i4": "Viivästyneet omistusasiakirjat ja vientiasiakirjat"
+      }
+    },
+    "compare": {
+      "eyebrow": "Vertailu",
+      "title": "Miksi pikainen hatusta vedetty arvio ei riitä",
+      "self": "Itse laskien",
+      "broker": "Välittäjän tarjous",
+      "r1": "Huutokauppamaksut nykyisten portaiden mukaan",
+      "r2": "Kaikkien 43 EU-sataman vertailu",
+      "r3": "Päivän valuuttakurssi + puskuri heilahteluille",
+      "r4": "Valmistevero ja ALV tulliselvitys- ja rekisteröintimaan mukaan",
+      "r5": "Riskit ja kolme kustannusskenaariota",
+      "r6": "Rekisteröinti ja paperityöt tuonnin jälkeen",
+      "r7": "Ei katetta eikä piilopalkkioita",
+      "note": "~ tarkoittaa ”yleensä osittain”. Välittäjien tarjouksiin sisältyy usein heidän oma katteensa, eivätkä ne näytä kustannuserittelyä."
+    }
+  },
+  "pricing": {
+    "popular": "Suosituin",
+    "free": {
+      "name": "Pika-arvio",
+      "price": "Maksuton",
+      "f1": "Kokonaiskustannuksen vaihteluväli",
+      "f2": "Kustannusrakennekaavio",
+      "f3": "Kuljetusaika ja varoitukset",
+      "f4": "Ei rekisteröitymistä",
+      "cta": "Laske maksutta"
+    },
+    "report": {
+      "name": "PDF-raportti",
+      "price": "4,99 €",
+      "f1": "Jokainen erä sentilleen",
+      "f2": "Huutokauppamaksut hintaportaittain",
+      "f3": "Tulli, valmistevero ja ALV veroperusteineen ja -kantoineen",
+      "f4": "Asiakirjaluettelo ja henkilökohtainen PDF",
+      "cta": "Laske ja avaa raportti"
+    },
+    "partner": {
+      "name": "Tuontiyrityksille",
+      "price": "Hyväksyttyä liidiä kohden",
+      "f1": "Ostajia, joilla on valmis autolaskelma",
+      "f2": "GDPR-suostumus kerätty ennen tietojen siirtoa",
+      "f3": "Vain hyväksymäsi yhteydenotot",
+      "f4": "Ei tilausmaksua",
+      "cta": "Ryhdy kumppaniksi"
+    }
+  },
+  "faq": {
+    "eyebrow": "Kysymyksiä ja vastauksia",
+    "title": "Usein kysytyt kysymykset",
+    "lead": "Etkö löydä vastausta? Laskuri näyttää jokaisen oletuksen ja PDF-raportti jokaisen verokannan ja veroperusteen.",
+    "q1": {
+      "q": "Paljonko tulli on Yhdysvalloista tuotavasta autosta?",
+      "a": "Henkilöautoista (CN 8703) tulli on 10 % CIF-tulliarvosta, pickupeista ja kevyistä kuorma-autoista (8704) 22 % ja moottoripyöristä 6–8 %. Yli 30 vuotta vanhat alkuperäiskuntoiset keräilyajoneuvot voivat olla oikeutettuja 0 %:n tulliin. Tulliarvo on ostohinta lisättynä huutokauppamaksuilla, kuljetuksella EU:n rajalle ja vakuutuksella."
+    },
+    "q2": {
+      "q": "Mikä valmistevero koskee auton tuontia Puolaan?",
+      "a": "Polttomoottoriautot enintään 2000 cm³: 3,1 %, yli 2000 cm³: 18,6 %. Hybridit: 1,55 % enintään 2000 cm³ ja 9,3 % enintään 3500 cm³. Enintään 2000 cm³:n ladattavat hybridit ja sähköautot ovat verovapaita. Veroperuste on tulliarvo lisättynä tullilla, muunnettuna zlotyiksi (PLN)."
+    },
+    "q3": {
+      "q": "Missä auto kannattaa tulliselvittää: Bremerhavenissa, Rotterdamissa vai Gdyniassa?",
+      "a": "Maahantuonnin ALV:n perii tulliselvitysmaa: Saksassa 19 %, Alankomaissa 21 % ja Puolassa 23 %. Tulliselvitys Saksassa pienentää ALV:tä, mutta siihen tulee lisäksi autonkuljetus Puolaan, ja valmistevero maksetaan erikseen verotoimistoon 14 päivän kuluessa. Laskuri vertailee vaihtoehtoja autollesi."
+    },
+    "q4": {
+      "q": "Mikä on tullimenettely 4200?",
+      "a": "Se on luovutus vapaaseen liikkeeseen, jossa tuontimaassa sovelletaan ALV-vapautusta, kun auto toimitetaan suoraan ALV-rekisteröidylle yritykselle toiseen EU-jäsenvaltioon. Ostaja tilittää ALV:n kotimaassaan käännetyn verovelvollisuuden mukaisesti, joten menettely on ALV-rekisteröidyille yrityksille neutraali. Se ei ole yksityishenkilöiden käytettävissä."
+    },
+    "q5": {
+      "q": "Kauanko laivaus Eurooppaan kestää?",
+      "a": "Yhdysvaltain itärannikolta ja Kanadan satamista noin 2–3 viikkoa merellä, Kaliforniasta noin 5 viikkoa, Japanista 6–7 viikkoa, Arabiemiirikunnista 3–4 viikkoa ja Isosta-Britanniasta muutama päivä. Lisäksi tulee kuljetus huutokauppavarikolta satamaan sekä tulliselvitys."
+    },
+    "q6": {
+      "q": "Mistä valuuttakurssit tulevat?",
+      "a": "Käytämme NBP:n (Puolan keskuspankki) keskikursseja, jotka haetaan automaattisesti jokaisena arkipäivänä. Koska maksat auton päiviä tai viikkoja laskelman jälkeen, maksuton vaihteluväli huomioi valuuttakurssien liikkeet."
+    },
+    "q7": {
+      "q": "Mitä maksullinen PDF-raportti sisältää?",
+      "a": "Jokaisen erän sentilleen: huutokauppamaksut portaittain, kuljetuksen, tulliarvon, tullin, valmisteveron ja ALV:n veroperusteineen ja -kantoineen, luettelon tarvittavista asiakirjoista sekä ladattavan henkilökohtaisen PDF:n. Maksa BLIKillä, kortilla tai Przelewy24:llä."
+    },
+    "q8": {
+      "q": "Onko laskurin tulos sitova?",
+      "a": "Ei. Se on arvio, joka perustuu voimassa oleviin verokantoihin ja hinnastoihin. Lopulliset summat vahvistavat tulli ja verohallinto, jotka voivat esimerkiksi tarkistaa tulliarvon. Raportti luettelee kaikki oletukset, joten sitä on helppo verrata viralliseen päätökseen."
+    },
+    "q9": {
+      "q": "Tuoko CarImport.eu autoja maahan?",
+      "a": "Ei. Olemme pelkkä laskuri – emme osta, kuljeta emmekä tulliselvitä autoja, emmekä ota palkkioita huutokaupoilta tai rahdinkuljettajilta. Siksi arvio pysyy riippumattomana. Halutessasi voit välittää arvion varmennetulle tuontiyritykselle, mutta se on aina sinun valintasi."
+    }
+  },
+  "calc": {
+    "title": "Autontuonnin kustannuslaskuri",
+    "lead": "Kuusi vaihetta: lähtömaa, ajoneuvo, kunto, määränpää, tuonnin jälkeen ja raportti. Tulos näytetään lopussa – kolmessa skenaariossa.",
+    "currency": "Tuloksen valuutta",
+    "progress": "Edistyminen"
+  },
+  "seo": {
+    "home": {
+      "title": "Autontuonnin kustannuslaskuri – USA, Japani, Dubai → EU | CarImport.eu",
+      "description": "Riippumaton laskuri auton tuontiin Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista ja Isosta-Britanniasta: huutokauppa, laivaus, tulli, valmistevero, ALV, rekisteröinti ja riskit. Välitön arvio ilman rekisteröitymistä."
+    },
+    "calculator": {
+      "title": "Tulli-, valmistevero- ja ALV-laskuri tuontiautoille | CarImport.eu",
+      "description": "Valitse maa, huutokauppa, satama ja ajoneuvo — reaaliaikainen laskuri näyttää kustannusten vaihteluvälin ja erittelyn: hinta, laivaus, tulli, valmistevero, ALV ja rekisteröinti."
+    },
+    "privacy": {
+      "title": "Tietosuojaseloste | CarImport.eu",
+      "description": "Miten CarImport.eu käsittelee henkilötietoja: maksut, raportit, kumppanikyselyt ja evästeet."
+    },
+    "about": {
+      "title": "Meistä – riippumaton autontuontilaskuri | CarImport.eu",
+      "description": "Keitä olemme, mistä tietomme tulevat ja miten ansaitsemme rahaa. CarImport.eu ei myy eikä tuo autoja – se laskee tuonnin kokonaiskustannuksen rehellisesti ja riippumattomasti."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Oikeudelliset tiedot",
+    "title": "Tietosuojaseloste",
+    "s1": {
+      "title": "Rekisterinpitäjä",
+      "text": "Rekisterinpitäjä on CarImport.eu-palvelun ylläpitäjä. Tietosuoja-asioissa ota yhteyttä osoitteeseen {{email}}."
+    },
+    "s2": {
+      "title": "Mitä tietoja käsittelemme",
+      "text": "Laskelman syötteet (ei henkilötietoja) sekä raporttia ostettaessa nimesi ja sähköpostiosoitteesi. Kumppanilomake kerää lisäksi puhelinnumeron ja viestin. Emme koskaan käsittele korttitietoja — sen tekee Stripe."
+    },
+    "s3": {
+      "title": "Käsittelyn tarkoitukset ja oikeusperusteet",
+      "text": "Raporttikaupan toteuttaminen (GDPR 6 artiklan 1 kohdan b alakohta), kirjanpitovelvoitteet (c alakohta), yhteydenottosi välittäminen kumppanille suostumuksesi perusteella (a alakohta) sekä analytiikka evästebannerissa annetun suostumuksen perusteella."
+    },
+    "s4": {
+      "title": "Vastaanottajat",
+      "text": "Stripe Payments Europe (maksut), palvelin- ja sähköpostipalveluntarjoajamme sekä — kumppanilomakkeen osalta — yksi varmennettu tuontiyritys, vain suostumuksellasi."
+    },
+    "s5": {
+      "title": "Evästeet",
+      "text": "Välttämättömät evästeet ja selaimen tallennustila muistavat kielesi, teemasi, edistymisesi laskurissa ja pääsyn ostettuun raporttiin. Analytiikka käynnistyy vasta, kun napsautat ”Hyväksy kaikki”."
+    },
+    "s6": {
+      "title": "Oikeutesi",
+      "text": "Sinulla on oikeus tarkastaa, oikaista ja poistaa tietosi, rajoittaa niiden käsittelyä, siirtää ne järjestelmästä toiseen ja vastustaa käsittelyä, peruuttaa suostumuksesi milloin tahansa sekä tehdä valitus tietosuojaviranomaiselle. Kirjoita meille: {{email}}."
+    }
+  },
+  "delivery": {
+    "PORT_PICKUP": "Nouto satamasta",
+    "CAR_CARRIER": "Autonkuljetusauto",
+    "TOW_TRUCK": "Hinausauto",
+    "SELF_DRIVE": "Siirtokilvillä"
+  },
+  "scenario": {
+    "0": "Optimistinen",
+    "1": "Keskimääräinen",
+    "2": "Pessimistinen"
+  },
+  "scenarioHint": {
+    "0": "Alimmat hinnat, suotuisa valuuttakurssi, mikään ei mene pieleen",
+    "1": "Tyypilliset hinnat + todennäköisyydellä painotetut riskit",
+    "2": "Korkeimmat hinnat, heikompi valuuttakurssi, riskit toteutuvat"
+  },
+  "timeline": {
+    "INLAND": "Nouto varikolta ja kuljetus satamaan",
+    "OCEAN": "Merimatka (sis. aluksen odotuksen)",
+    "CLEARANCE": "Purku ja tulliselvitys",
+    "DELIVERY": "Toimitus ovellesi",
+    "REGISTRATION": "Valmistelu ja rekisteröinti"
+  },
+  "plan": {
+    "deadline": {
+      "beforeRelease": "Ennen luovutusta satamasta",
+      "14days": "14 päivän kuluessa Puolaan saapumisesta",
+      "beforeInspection": "Ennen katsastusta",
+      "beforeRegistration": "Ennen rekisteröintiä",
+      "pl30days": "30 päivän kuluessa tuonnista (sakko enintään 1 000 PLN)",
+      "fromRegistration": "Rekisteröinnistä / siirtokilvistä alkaen",
+      "national": "Rekisteröintimaan sääntöjen mukaan",
+      "none": "Ei lakisääteistä määräaikaa"
+    },
+    "step": {
+      "clearance": {
+        "title": "Tulliselvitys satamassa",
+        "text": "Tulliasiamies jättää tulli-ilmoituksen (SAD); sinä maksat tullin ja maahantuonnin ALV:n. Tarvitaan: lasku, konossementti, title/vientitodistus, EORI."
+      },
+      "pl": {
+        "excise": {
+          "title": "Valmisteveroilmoitus ja maksu (AKC-U/S)",
+          "text": "Jätä ilmoitus verotoimistoon (tai sähköisesti) ja maksa valmistevero; vahvistusta tarvitaan rekisteröinnissä."
+        },
+        "exciseExemption": {
+          "title": "Valmisteverovapautuksen ilmoitus (sähköauto)",
+          "text": "Sähköautot ovat verovapaita, mutta AKC-U/S-ilmoitus on silti jätettävä."
+        },
+        "inspection": {
+          "title": "Katsastus katsastusasemalla",
+          "text": "Tuontiajoneuvon ensimmäinen katsastus, johon sisältyy VIN-tunnistus; tulos kirjataan keskusrekisteriin."
+        },
+        "recycling": {
+          "title": "Kierrätysmaksu 500 PLN",
+          "text": "Maksetaan kansalliselle ympäristörahastolle tuontiauton ensirekisteröinnin yhteydessä."
+        },
+        "registration": {
+          "title": "Rekisteröinti ajoneuvovirastossa",
+          "text": "Hakemus, omistustodistus käännöksineen, valmistevero, katsastus, kierrätysmaksu, ALV-/tullitosite; saat väliaikaisen luvan ja kilvet."
+        }
+      },
+      "translations": {
+        "title": "Viralliset käännökset",
+        "text": "Ulkomainen title/rekisteröintitodistus, lasku ja vientiasiakirja – auktorisoidun kääntäjän kääntämänä."
+      },
+      "lighting": {
+        "title": "Valojen muutostyö EU-standardien mukaisiksi",
+        "text": "Oranssit takasuuntavilkut, takasumuvalo, ajovalojen suuntaus – ilman niitä auto hylätään katsastuksessa."
+      },
+      "insurance": {
+        "title": "Liikennevakuutus",
+        "text": "Pakollinen rekisteröinnistä alkaen; kaskovakuutus kannattaa ottaa asiantuntijan arvonmäärityksen jälkeen."
+      },
+      "de": {
+        "approval": {
+          "title": "Yksittäishyväksyntä (§21 StVZO)",
+          "text": "Täysi asiantuntijatarkastus (TÜV/DEKRA) EU:n ulkopuolisille autoille; edellytys rekisteröinnille."
+        },
+        "registration": {
+          "title": "Rekisteröinti (Zulassung)",
+          "text": "Vakuutuksen eVB-numero, tulliselvitystodistus, asiantuntijalausunto, SEPA-valtuutus ajoneuvoveroa varten."
+        }
+      },
+      "generic": {
+        "inspection": {
+          "title": "Katsastus / yksittäishyväksyntä",
+          "text": "Laajuus riippuu maasta – EU:n ulkopuoliset autot tarvitsevat usein yksittäishyväksynnän."
+        },
+        "registrationTax": {
+          "title": "Kansallinen rekisteröintivero",
+          "text": "Esim. BPM Alankomaissa, NoVA Itävallassa, malus Ranskassa – tarkista ennen ostoa."
+        },
+        "registration": {
+          "title": "Ajoneuvon rekisteröinti",
+          "text": "Hae tulliselvitystodistuksen, katsastuksen ja vakuutuksen kanssa."
+        }
+      },
+      "evCharging": {
+        "title": "Latausliitäntä",
+        "text": "Yhdysvaltalaisissa autoissa on NACS/CCS1-liitäntä – tarvitset sovittimen tai jälkiasennetun CCS2/Type 2 -liitännän."
+      }
+    }
+  },
+  "deliveryHint": {
+    "CAR_CARRIER": "Edullisin ajokuntoisille autoille",
+    "TOW_TRUCK": "Yksittäinen hinausauto, myös ei-ajokuntoisille",
+    "SELF_DRIVE": "Siirtokilvet + vakuutus; vain ajokuntoisille",
+    "PORT_PICKUP": "Järjestät kuljetuksen itse"
+  },
+  "serviceHint": {
+    "SWORN_TRANSLATION": "Title, lasku ja vientiasiakirja",
+    "US_LIGHTING_CONVERSION": "EU-määräysten mukaiset suuntavilkut ja valot",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Oikealta ohjattava auto",
+    "REAR_FOG_LIGHT": "Vaaditaan katsastuksessa",
+    "SPEEDOMETER_KMH": "Nopeusmittari maileina – mukavuus ja jälleenmyyntiarvo",
+    "SERVICE_INSPECTION": "Öljy, suodattimet, nesteet, jarrut pitkän matkan jälkeen",
+    "GEOMETRY_ALIGNMENT": "Suositellaan alustakorjausten jälkeen",
+    "DETAILING": "Pesu, sisäpuhdistus, maalipinnan korjaus",
+    "EXPERT_VALUATION": "Hyödyllinen kaskovakuutusta ja jälleenmyyntiä varten"
+  },
+  "riskInfo": {
+    "RISK_PORT_STORAGE": "Terminaali veloittaa päivämaksun maksuttoman ajan jälkeen, esim. kun asiakirjat tai kuljetus myöhästyvät.",
+    "RISK_CUSTOMS_INSPECTION": "Satunnainen tai kohdennettu tarkastus: kontin purku, läpivalaisu, lisämaksut terminaalissa.",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Jos hinta vaikuttaa liian alhaiselta, tulli voi käyttää korkeampaa arvoa – tulli ja ALV nousevat.",
+    "RISK_VESSEL_ROLLOVER": "Alus on ylibuukattu ja kontti lähtee seuraavalla – lisävarastointia vientisatamassa.",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Kuljetusvauriot korvataan vakuutuksesta omavastuulla vähennettynä.",
+    "RISK_HIDDEN_DAMAGE": "Viat, joita huutokauppakuvista ei näe – mitä huonompi kunto, sitä suurempi riski.",
+    "RISK_TITLE_DELAY": "Huutokauppa lähettää titlen myöhässä – auto odottaa varikolla tai satamassa.",
+    "RISK_EXPORT_DOCS_DELAY": "Rekisteristä poisto ja vientiasiakirjat vievät tavallista kauemmin."
+  },
+  "docStage": {
+    "PURCHASE": "Osto",
+    "SHIPPING": "Laivaus",
+    "CUSTOMS": "Tulliselvitys",
+    "REGISTRATION": "Rekisteröinti"
+  },
+  "proposal": {
+    "tag": "Ehdotettu",
+    "restore": "Käytä ehdotusta",
+    "was": "ehdotus: {{value}} {{unit}}"
+  },
+  "region": {
+    "NORTH_SEA": "Pohjanmeri",
+    "BALTIC": "Itämeri ja Skandinavia",
+    "ATLANTIC": "Atlantti",
+    "WEST_MED": "Läntinen Välimeri",
+    "EAST_MED": "Adrianmeri, Egeanmeri ja Mustameri"
+  },
+  "about": {
+    "eyebrow": "Meistä",
+    "title1": "Laskemme autojen tuonnin.",
+    "title2": "Emme myy autoja.",
+    "lead": "CarImport.eu on riippumaton laskuri, joka laskee, mitä auton tuominen Euroopan unionin ulkopuolelta maksaa. Rakensimme sen, jotta kuka tahansa – eikä vain kymmenen vuoden kokemuksen omaava kauppias – tietäisi ennen ostoa, mitä oikeasti maksaa.",
+    "story": {
+      "eyebrow": "Miten kaikki alkoi",
+      "title": "Turhautumisesta piilokuluihin",
+      "p1": "Yhdysvaltain huutokaupasta ostettu auto näyttää löydöltä – kunnes lisäät huutokauppamaksut, kuljetuksen satamaan, merirahdin, tullin, valmisteveron, ALV:n, purun, hinausauton, käännökset, katsastuksen ja rekisteröinnin. Jokainen erä on ”pieni”, mutta yhdessä ne voivat tuplata hinnan.",
+      "p2": "Tiedot ovat hajallaan huutokauppojen hinnastoissa, tullitariffeissa, valuuttakurssitaulukoissa ja 27 maan säännöissä. Välittäjien tarjoukset antavat yleensä yhden luvun ilman erittelyä – oma kate sisällä.",
+      "p3": "Rakensimme työkalun, joka kokoaa kaiken yhteen, laskee voimassa olevilla verokannoilla ja näyttää jokaisen oletuksen. Ilman rekisteröitymistä, ilman myyjän puhelua."
+    },
+    "role": {
+      "eyebrow": "Rehellisesti siitä, mitä olemme",
+      "title": "Olemme laskuri. Vain laskuri.",
+      "is": "Mitä olemme",
+      "is1": "Riippumaton tuonnin kokonaiskustannusten laskuri",
+      "is2": "43 EU:n tulliselvityssataman vertailu osoitteellesi",
+      "is3": "Yksityiskohtainen PDF-raportti jokaisella verokannalla",
+      "is4": "Luettelo tuonnin jälkeisistä vaiheista ja asiakirjoista",
+      "isNot": "Mitä emme ole",
+      "isNot1": "Emme ole maahantuoja tai jälleenmyyjä – emme myy autoja",
+      "isNot2": "Emme järjestä kuljetusta tai tulliselvitystä",
+      "isNot3": "Ei palkkioita huutokaupoilta, rahdinkuljettajilta tai tulliasiamiehiltä",
+      "isNot4": "Emme ole viranomainen tai veroneuvoja – tulos on arvio"
+    },
+    "data": {
+      "eyebrow": "Mistä luvut tulevat",
+      "title": "Voimassa olevat verokannat, ei ”suunnilleen”",
+      "lead": "Jokainen tuloksen summa perustuu tiettyyn verokantaan tai hintaan, jonka raportti näyttää. Tiedot päivittyvät automaattisesti tai aina lainsäädännön muuttuessa.",
+      "customs": {
+        "title": "EU:n tullitariffi",
+        "text": "Tullit CN-koodin (TARIC) mukaan henkilöautoille, pickupeille, moottoripyörille ja museoajoneuvoille."
+      },
+      "fx": {
+        "title": "Keskuspankkien kurssit",
+        "text": "Viitekurssit haetaan jokaisena arkipäivänä, ja niihin lisätään puskuri maksuun asti tapahtuvia heilahteluja varten."
+      },
+      "fees": {
+        "title": "Huutokauppojen ja kuljetusyritysten hinnastot",
+        "text": "Copartin, IAAI:n, Manheimin ja USS:n maksuportaat, rahtihinnat, satamamaksut ja kilometrikohtaiset kuljetushinnat."
+      },
+      "law": {
+        "title": "Kansalliset säännöt",
+        "text": "Valmistevero, 27 maan ALV-kannat, rekisteröintimaksut ja pakolliset tarkastukset – oikeusperusteineen raportissa."
+      }
+    },
+    "money": {
+      "eyebrow": "Miten ansaitsemme rahaa",
+      "title": "Läpinäkyvästi – koska kyse on luottamuksesta",
+      "lead": "Laskurin tulos ei riipu siitä, kuka meille maksaa tai kuinka paljon. Ansaitsemme kolmella tavalla, ja kaikki ne ovat avoimia:",
+      "m1": {
+        "title": "PDF-raportti – 4,99 €",
+        "text": "Maksuton tulos näyttää vaihteluvälin ja kustannusrakenteen. Ostat yksityiskohtaisen raportin kaikkine erineen vain, jos tarvitset sitä."
+      },
+      "m2": {
+        "title": "Valinnainen tarjouspyyntö tuontiyritykselle",
+        "text": "Vain pyynnöstäsi välitämme laskelmasi yhdelle varmennetulle yritykselle. Se maksaa meille, et sinä – ja vain suostumuksellasi."
+      },
+      "m3": {
+        "title": "Merkityt kumppanilinkit",
+        "text": "Esim. VIN-tarkistukset tai valuutanvaihto. Aina merkittyjä, eivätkä ne koskaan vaikuta arvioon."
+      }
+    },
+    "values": {
+      "eyebrow": "Mikä meitä ohjaa",
+      "transparency": {
+        "title": "Läpinäkyvyys",
+        "text": "Jokaisella luvulla on lähde ja peruste. Jos jokin on arvio, kerromme sen."
+      },
+      "independence": {
+        "title": "Riippumattomuus",
+        "text": "Meillä ei ole intressiä siihen, ostatko auton tai kuka sen sinulle tuo."
+      },
+      "precision": {
+        "title": "Tarkkuus",
+        "text": "Laskemme sentilleen, mutta näytämme myös vaihteluvälin – koska tuonti ei ole täsmällistä matematiikkaa."
+      }
+    },
+    "cta": {
+      "title": "Tarkista autosi minuutissa",
+      "text": "Onko sinulla kysyttävää tai huomasitko vanhentuneen verokannan? Kirjoita osoitteeseen {{email}}"
+    }
+  },
+  "currency": {
+    "label": "Tuloksen valuutta",
+    "title": "Missä valuutassa näytämme kustannukset?",
+    "hint": "Huutokauppasummat (USD, JPY, AED…) muunnetaan keskuspankin voimassa olevalla kurssilla. Valuutta ei vaikuta verolaskelmaan – verot määrää aina tulliselvitysmaa.",
+    "groupEu": "EU-valuutat",
+    "groupOther": "Muut"
+  }
+}
