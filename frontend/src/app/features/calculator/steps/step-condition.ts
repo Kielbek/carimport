@@ -4,6 +4,7 @@ import { ShippingMethod } from '../../../core/api/api.models';
 import { Icon } from '../../../shared/icon/icon';
 import { CalculatorStore } from '../calculator.store';
 import { CONDITIONS } from '../calculator.options';
+import { ProposalInput } from '../proposal-input';
 
 /**
  * Step 3 - condition, price and title up front; shipping, buyer type and customs procedure live in a collapsible
@@ -11,7 +12,7 @@ import { CONDITIONS } from '../calculator.options';
  */
 @Component({
   selector: 'app-step-condition',
-  imports: [TranslatePipe, Icon],
+  imports: [TranslatePipe, Icon, ProposalInput],
   template: `
     <fieldset>
       <legend class="label">{{ 'wizard.condition' | translate }}</legend>
@@ -52,13 +53,10 @@ import { CONDITIONS } from '../calculator.options';
     </div>
 
     <div class="mt-8 max-w-sm">
-      <label class="label" for="repair">{{ 'wizard.repair' | translate }}</label>
-      <div class="relative">
-        <input id="repair" type="number" min="0" step="100" class="input pr-16" [value]="s().repairEstimate ?? ''"
-               (input)="store.patch({ repairEstimate: num($event) })" />
-        <span class="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-muted">{{ s().displayCurrency }}</span>
-      </div>
-      <p class="mt-2 text-xs text-muted">{{ (store.isRunner() ? 'wizard.repairHintRunner' : 'wizard.repairHintDamaged') | translate }}</p>
+      <app-proposal-input inputId="repair" label="wizard.repair" [unit]="s().displayCurrency"
+                          [hint]="store.isRunner() ? 'wizard.repairHintRunner' : 'wizard.repairHintDamaged'"
+                          [value]="s().repairEstimate" [proposal]="store.repairProposal()"
+                          (changed)="store.patch({ repairEstimate: $event })" />
     </div>
 
     <div class="mt-8 rounded-[4px] border border-line">
@@ -123,10 +121,5 @@ export class StepCondition {
   protected readonly shipping: ShippingMethod[] = ['CONTAINER_SHARED', 'CONTAINER_EXCLUSIVE', 'RORO'];
   protected readonly advanced = signal(false);
   /** Clean/salvage schedules only exist for the North-American style auctions. */
-  protected num(e: Event): number | null {
-    const v = (e.target as HTMLInputElement).value;
-    return v === '' ? null : Number(v);
-  }
-
   protected readonly hasTitleTypes = computed(() => ['COPART', 'IAAI'].includes(this.s().auctionHouse));
 }

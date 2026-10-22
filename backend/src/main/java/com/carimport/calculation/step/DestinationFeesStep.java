@@ -4,18 +4,21 @@ import com.carimport.calculation.CalculationContext;
 import com.carimport.calculation.CalculationRequest;
 import com.carimport.calculation.CostCategory;
 import com.carimport.calculation.CostLine;
+import com.carimport.calculation.Proposals;
 import com.carimport.calculation.Scenario;
 import com.carimport.domain.Money;
 import com.carimport.reference.DestinationFee;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Map;
 import java.util.Set;
 import org.springframework.stereotype.Component;
 
 /**
  * Everything between the port and a registered car: statutory fees (always), optional services the user ticked
- * (lighting conversion, inspection, translations, ...) and the user's own estimates for repairs and insurance.
- * Estimated positions get a -15% / +25% band in the optimistic/pessimistic scenarios.
+ * (lighting conversion, inspection, translations, ...) and repairs and insurance - the user's own amounts, or the
+ * calculator's {@link Proposals} when left empty. Estimated and proposed positions get a -15% / +25% band in the
+ * optimistic/pessimistic scenarios.
  */
 @Component
 public class DestinationFeesStep implements CalculationStep {
@@ -45,8 +48,28 @@ public class DestinationFeesStep implements CalculationStep {
                     true, Map.of("type", fee.isSelectable() ? "OPTIONAL" : "STATUTORY",
                     "estimate", String.valueOf(fee.isEstimate()))));
         }
-        userAmount(ctx, "REPAIR_ESTIMATE", req.repairEstimate());
-        userAmount(ctx, "INSURANCE_FIRST_YEAR", req.insuranceEstimate());
+        if (req.repairEstimate() == null) {
+            BigDecimal share = Proposals.repairShare(req.condition(), req.titleType());
+            Money bid = ctx.toBase(Money.of(req.bidPrice(), req.originCountry().currency()));
+            proposed(ctx, "REPAIR_ESTIMATE", Money.of(bid.amount().multiply(share).setScale(-1, RoundingMode.HALF_UP),
+                    bid.currency()));
+        } else {
+            userAmount(ctx, "REPAIR_ESTIMATE", req.repairEstimate());
+        }
+        if (req.insuranceEstimate() == null) {
+            proposed(ctx, "INSURANCE_FIRST_YEAR", Proposals.liabilityInsurance(req.destinationCountry()));
+        } else {
+            userAmount(ctx, "INSURANCE_FIRST_YEAR", req.insuranceEstimate());
+        }
+    }
+
+    private static void proposed(CalculationContext ctx, String code, Money proposal) {
+        if (proposal.amount().signum() == 0) {
+            return;
+        }
+        Money original = Money.of(estimate(proposal.amount(), ctx.scenario()), proposal.currency());
+        ctx.add(new CostLine(code, CostCategory.REGISTRATION, original, ctx.toBase(original), null, null, true,
+                Map.of("type", "PROPOSED", "estimate", "true")));
     }
 
     private static void userAmount(CalculationContext ctx, String code, BigDecimal amount) {

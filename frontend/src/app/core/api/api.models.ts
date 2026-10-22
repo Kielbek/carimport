@@ -32,17 +32,57 @@ export interface CalculationRequest {
   buyerType: BuyerType;
   customsProcedure: CustomsProcedure;
   displayCurrency: DisplayCurrency;
-  /** Port-to-door leg; null = car carrier. */
+  /** Port-to-door leg; null = proposal (car carrier for a runner, tow truck otherwise). */
   deliveryMode: DeliveryMode | null;
-  /** Own distance from the EU port; null = typical for the country. */
+  /** Road distance from the EU port; null = from the address, else typical for the country. */
   deliveryDistanceKm: number | null;
   /** Own per-km price in the destination currency; null = tariff. */
   pricePerKm: number | null;
-  /** In the display currency. */
+  /** In the display currency; null = the calculator's proposal, 0 = none. */
   repairEstimate: number | null;
   insuranceEstimate: number | null;
   /** Selected optional after-import services; null = recommended defaults. */
   postImportServices: string[] | null;
+  /** Delivery address picked from the address search. */
+  destinationAddress: string | null;
+  destinationLat: number | null;
+  destinationLon: number | null;
+}
+
+export type PortRegion = 'NORTH_SEA' | 'ATLANTIC' | 'BALTIC' | 'WEST_MED' | 'EAST_MED';
+
+/** A geocoded address (EU only). */
+export interface Place {
+  label: string;
+  countryCode: string;
+  lat: number;
+  lon: number;
+}
+
+/** One EU port priced door to door for the current car and address. */
+export interface PortSuggestion {
+  code: string;
+  name: string;
+  countryCode: string;
+  region: PortRegion;
+  lat: number;
+  lon: number;
+  distanceKm: number | null;
+  distanceMethod: 'ROUTED' | 'ESTIMATED';
+  /** Expected total, rounded to 100, display currency. */
+  total: number;
+  daysMin: number;
+  daysMax: number;
+}
+
+/** The calculator's current proposal for every field the user does not have to fill in. */
+export interface Suggestions {
+  recommendedPort: string;
+  ports: PortSuggestion[];
+  deliveryMode: DeliveryMode;
+  repairEstimate: number;
+  insuranceEstimate: number;
+  currency: string;
 }
 
 export interface Timeline {
@@ -126,6 +166,9 @@ export interface PortOption {
   countryCode: string;
   vatRate: number;
   supportsProcedure4200: boolean;
+  region?: PortRegion;
+  lat?: number | null;
+  lon?: number | null;
 }
 
 export interface AffiliateOffer {

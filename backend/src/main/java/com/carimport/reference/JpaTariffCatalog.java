@@ -119,6 +119,12 @@ public class JpaTariffCatalog implements TariffCatalog {
 
     @Override
     @Cacheable
+    public List<EuPort> ports() {
+        return ports.findByActiveTrueOrderByName();
+    }
+
+    @Override
+    @Cacheable
     public Optional<EuCountryTaxProfile> taxProfile(String countryCode) {
         LocalDate today = LocalDate.now();
         return taxProfiles.findByCountryCodeOrderByValidFromDesc(countryCode).stream()

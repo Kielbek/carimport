@@ -1,14 +1,15 @@
 package com.carimport.web;
 
 import com.carimport.calculation.TariffCatalog;
+import com.carimport.calculation.step.DeliveryStep;
 import com.carimport.domain.AuctionHouse;
 import com.carimport.domain.DeliveryMode;
 import com.carimport.domain.OriginCountry;
 import com.carimport.reference.EuCountryTaxProfile;
 import com.carimport.reference.EuCountryTaxProfileRepository;
+import com.carimport.reference.EuPort;
 import com.carimport.reference.EuPortRepository;
 import com.carimport.reference.InlandTransportRate;
-import com.carimport.reference.IntraEuTransportRate;
 import java.math.BigDecimal;
 import java.time.Duration;
 import java.util.Arrays;
@@ -29,7 +30,7 @@ public class ReferenceDataController {
     }
 
     public record PortOption(String code, String name, String countryCode, BigDecimal vatRate,
-                             boolean supportsProcedure4200) {
+                             boolean supportsProcedure4200, EuPort.Region region, Double lat, Double lon) {
     }
 
     public record ServiceOption(String code, boolean statutory, boolean defaultSelected) {
@@ -70,8 +71,9 @@ public class ReferenceDataController {
                 .map(r -> new RoadOption(r.getMode(), r.getPricePerKmMin(), r.getPricePerKmMax(), r.getFixedFee(),
                         r.getMinimumCharge(), r.getCurrency().name()))
                 .toList();
-        Integer km = catalog.intraEuRate(euPort, destination).map(IntraEuTransportRate::getDistanceKm)
-                .filter(d -> d > 0).orElse(euPort.startsWith(destination) ? 300 : null);
+        Integer km = catalog.port(euPort)
+                .flatMap(p -> DeliveryStep.typicalKm(p, destination, catalog.intraEuRate(euPort, destination)))
+                .orElse(euPort.startsWith(destination) ? 300 : null);
         return new RouteOptions(departurePorts, services, delivery, km);
     }
 
@@ -90,7 +92,9 @@ public class ReferenceDataController {
                 .map(p -> new PortOption(p.getCode(), p.getName(), p.getCountryCode(),
                         taxes.findByCountryCodeOrderByValidFromDesc(p.getCountryCode()).stream()
                                 .findFirst().map(EuCountryTaxProfile::getStandardVatRate).orElse(null),
-                        p.isSupportsProcedure4200()))
+                        p.isSupportsProcedure4200(), p.getRegion(),
+                        p.location() == null ? null : p.location().lat(),
+                        p.location() == null ? null : p.location().lon()))
                 .toList();
         return ResponseEntity.ok().cacheControl(CacheControl.maxAge(Duration.ofHours(1))).body(body);
     }

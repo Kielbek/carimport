@@ -7,9 +7,11 @@ import {
   DisplayCurrency,
   FullReport,
   OrderStatus,
+  Place,
   PortOption,
   PublicQuoteView,
   RouteOptions,
+  Suggestions,
 } from './api.models';
 
 /** Thin typed client for /api/v1. Accept-Language is added by the language interceptor. */
@@ -24,6 +26,15 @@ export class CarImportApi {
 
   createQuote(request: CalculationRequest): Observable<PublicQuoteView> {
     return this.http.post<PublicQuoteView>(`${this.base}/quotes`, request);
+  }
+
+  /** Cheapest EU port for this car and address, distances and the proposed amounts. */
+  suggestions(request: CalculationRequest): Observable<Suggestions> {
+    return this.http.post<Suggestions>(`${this.base}/quotes/suggestions`, request);
+  }
+
+  searchAddress(q: string): Observable<Place[]> {
+    return this.http.get<Place[]>(`${this.base}/geo/search`, { params: { q } });
   }
 
   routeOptions(origin: string, destination: string, euPort: string): Observable<RouteOptions> {

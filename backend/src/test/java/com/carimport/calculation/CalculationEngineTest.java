@@ -39,6 +39,8 @@ import com.carimport.domain.TitleType;
 import com.carimport.domain.VehicleCategory;
 import com.carimport.domain.VehicleCondition;
 import com.carimport.fx.FxRates;
+import com.carimport.geo.GeoPoint;
+import com.carimport.geo.RoadDistance;
 import java.math.BigDecimal;
 import java.time.Clock;
 import java.time.Instant;
@@ -53,7 +55,7 @@ import org.junit.jupiter.api.Test;
 public class CalculationEngineTest {
 
     /** Round numbers make the expected values checkable with a pocket calculator. */
-    static final FxRates FX = new FxRates(LocalDate.of(2026, 10, 20), "TEST", Map.of(
+    public static final FxRates FX = new FxRates(LocalDate.of(2026, 10, 20), "TEST", Map.of(
             CurrencyCode.USD, new BigDecimal("4.00"),
             CurrencyCode.EUR, new BigDecimal("4.25"),
             CurrencyCode.JPY, new BigDecimal("0.027")));
@@ -72,6 +74,10 @@ public class CalculationEngineTest {
             new InMemoryTariffCatalog(),
             Clock.fixed(Instant.parse("2026-10-21T10:00:00Z"), ZoneOffset.UTC));
 
+    public CalculationEngine engine() {
+        return engine;
+    }
+
     public CalculationResult expected(CalculationRequest request) {
         return engine.calculate(request, Scenario.EXPECTED, FX);
     }
@@ -84,14 +90,14 @@ public class CalculationEngineTest {
         return new CalculationRequest(OriginCountry.USA, AuctionHouse.COPART, TitleType.SALVAGE, "NJ", null,
                 new BigDecimal("10000"), VehicleCategory.PASSENGER_CAR, fuel, cc, 2021, false,
                 VehicleCondition.RUN_AND_DRIVE, ShippingMethod.CONTAINER_SHARED, "PLGDY", "PL", BuyerType.PRIVATE,
-                CustomsProcedure.STANDARD_4000, CurrencyCode.PLN, null, null, null, null, null, null);
+                CustomsProcedure.STANDARD_4000, CurrencyCode.PLN, null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null);
     }
 
     static CalculationRequest with(CalculationRequest r, String euPort, BuyerType buyer, CustomsProcedure procedure) {
         return new CalculationRequest(r.originCountry(), r.auctionHouse(), r.titleType(), r.pickupZone(),
                 r.departurePort(), r.bidPrice(), r.vehicleCategory(), r.fuelType(), r.engineCc(), r.productionYear(),
                 r.historicOriginalCondition(), r.condition(), r.shippingMethod(), euPort, r.destinationCountry(), buyer,
-                procedure, r.displayCurrency(), null, null, null, null, null, null);
+                procedure, r.displayCurrency(), null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null);
     }
 
     static CostLine line(CalculationResult result, String code) {
@@ -170,7 +176,7 @@ public class CalculationEngineTest {
         CalculationRequest historic = new CalculationRequest(base.originCountry(), base.auctionHouse(),
                 base.titleType(), base.pickupZone(), null, base.bidPrice(), base.vehicleCategory(), base.fuelType(),
                 base.engineCc(), 1990, true, base.condition(), base.shippingMethod(), base.euPortCode(),
-                base.destinationCountry(), base.buyerType(), base.customsProcedure(), base.displayCurrency(), null, null, null, null, null, null);
+                base.destinationCountry(), base.buyerType(), base.customsProcedure(), base.displayCurrency(), null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null);
         CalculationResult r = engine.calculate(historic, Scenario.EXPECTED, FX);
 
         assertThat(r.historic()).isTrue();
@@ -228,7 +234,7 @@ public class CalculationEngineTest {
                 base.titleType(), base.pickupZone(), null, base.bidPrice(), base.vehicleCategory(), base.fuelType(),
                 base.engineCc(), base.productionYear(), false, VehicleCondition.NON_RUNNING, base.shippingMethod(),
                 base.euPortCode(), base.destinationCountry(), base.buyerType(), base.customsProcedure(),
-                base.displayCurrency(), null, null, null, null, null, null);
+                base.displayCurrency(), null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null);
         CalculationResult runner = engine.calculate(base, Scenario.EXPECTED, FX);
         CalculationResult nonRunner = engine.calculate(damaged, Scenario.EXPECTED, FX);
 
@@ -243,7 +249,7 @@ public class CalculationEngineTest {
         CalculationRequest req = new CalculationRequest(OriginCountry.JAPAN, AuctionHouse.USS, TitleType.CLEAN, null,
                 null, new BigDecimal("2000000"), VehicleCategory.PASSENGER_CAR, FuelType.HEV, 1800, 2019, false,
                 VehicleCondition.RUN_AND_DRIVE, ShippingMethod.CONTAINER_SHARED, "PLGDY", "PL", BuyerType.PRIVATE,
-                CustomsProcedure.STANDARD_4000, CurrencyCode.EUR, null, null, null, null, null, null);
+                CustomsProcedure.STANDARD_4000, CurrencyCode.EUR, null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null);
         CalculationResult r = engine.calculate(req, Scenario.EXPECTED, FX);
 
         assertThat(line(r, "AUCTION_AGENT_COMMISSION").original().amount()).isEqualByComparingTo("80000");
@@ -258,8 +264,8 @@ public class CalculationEngineTest {
                 r.departurePort(), r.bidPrice(), r.vehicleCategory(), r.fuelType(), r.engineCc(), r.productionYear(),
                 r.historicOriginalCondition(), r.condition(), r.shippingMethod(), r.euPortCode(), r.destinationCountry(),
                 r.buyerType(), r.customsProcedure(), r.displayCurrency(), mode, km,
-                perKm == null ? null : new BigDecimal(perKm), repair == null ? null : new BigDecimal(repair), null,
-                services);
+                perKm == null ? null : new BigDecimal(perKm), repair == null ? BigDecimal.ZERO : new BigDecimal(repair),
+                BigDecimal.ZERO, services, null, null, null);
     }
 
     @Nested
@@ -290,6 +296,26 @@ public class CalculationEngineTest {
             assertThat(r.lines()).noneMatch(l -> l.line().code().startsWith("DELIVERY_"));
             assertThat(r.warnings()).contains("warning.delivery.portPickup");
         }
+
+        @Test
+        void distanceIsEstimatedFromTheDeliveryAddress() {
+            CalculationRequest base = delivery(copartToGdynia(FuelType.PETROL, 2500), DeliveryMode.CAR_CARRIER, null,
+                    null, null, null);
+            GeoPoint krakow = new GeoPoint(50.0647, 19.9450);
+            CalculationRequest req = new CalculationRequest(base.originCountry(), base.auctionHouse(), base.titleType(),
+                    base.pickupZone(), base.departurePort(), base.bidPrice(), base.vehicleCategory(), base.fuelType(),
+                    base.engineCc(), base.productionYear(), false, base.condition(), base.shippingMethod(),
+                    base.euPortCode(), base.destinationCountry(), base.buyerType(), base.customsProcedure(),
+                    base.displayCurrency(), base.deliveryMode(), null, null, BigDecimal.ZERO, BigDecimal.ZERO, null,
+                    "Kraków, Polska", krakow.lat(), krakow.lon());
+
+            CalculationResult r = engine.calculate(req, Scenario.EXPECTED, FX);
+
+            int expected = RoadDistance.estimateKm(new GeoPoint(54.533, 18.55), krakow);
+            assertThat(r.deliveryKm()).isEqualTo(expected).isBetween(550, 700);
+            // a routed distance sent by the client wins over the estimate
+            assertThat(engine.calculate(req.withPort("PLGDY", 590), Scenario.EXPECTED, FX).deliveryKm()).isEqualTo(590);
+        }
     }
 
     @Test
@@ -314,6 +340,39 @@ public class CalculationEngineTest {
         // pessimistic port storage = 10 days x 30 EUR = 300 EUR = 1 275 PLN
         assertThat(line(range.high(), "RISK_PORT_STORAGE").amount().amount()).isEqualByComparingTo("1275");
         assertThat(line(range.expected(), "RISK_PORT_STORAGE").params()).containsEntry("probability", "30");
+    }
+
+    @Test
+    void emptyRepairAndInsuranceAreProposedZeroMeansNone() {
+        CalculationRequest proposed = copartToGdynia(FuelType.PETROL, 2500).withProposedEstimates();
+        CalculationResult r = engine.calculate(proposed, Scenario.EXPECTED, FX);
+
+        Money bid = Money.of(new BigDecimal("10000"), CurrencyCode.USD);
+        BigDecimal bidPln = FX.convert(bid, CurrencyCode.PLN).amount();
+        // salvage title, runs and drives: 15% of the bid
+        assertThat(line(r, "REPAIR_ESTIMATE").original().amount())
+                .isEqualByComparingTo(bidPln.multiply(new BigDecimal("0.15")).setScale(-1, java.math.RoundingMode.HALF_UP));
+        assertThat(line(r, "REPAIR_ESTIMATE").params()).containsEntry("type", "PROPOSED");
+        assertThat(line(r, "INSURANCE_FIRST_YEAR").original().amount()).isEqualByComparingTo("1200");
+        assertThat(engine.calculate(proposed, Scenario.HIGH, FX).lines().stream()
+                .filter(l -> l.line().code().equals("INSURANCE_FIRST_YEAR")).findFirst().orElseThrow()
+                .line().original().amount()).isEqualByComparingTo("1500");
+
+        CalculationResult none = engine.calculate(copartToGdynia(FuelType.PETROL, 2500), Scenario.EXPECTED, FX);
+        assertThat(none.lines()).noneMatch(l -> l.line().code().equals("REPAIR_ESTIMATE"));
+    }
+
+    @Test
+    void nonRunnerIsTowedByDefault() {
+        CalculationRequest base = copartToGdynia(FuelType.PETROL, 1800);
+        CalculationRequest damaged = new CalculationRequest(base.originCountry(), base.auctionHouse(),
+                base.titleType(), base.pickupZone(), null, base.bidPrice(), base.vehicleCategory(), base.fuelType(),
+                base.engineCc(), base.productionYear(), false, VehicleCondition.NON_RUNNING, base.shippingMethod(),
+                base.euPortCode(), base.destinationCountry(), base.buyerType(), base.customsProcedure(),
+                base.displayCurrency(), null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null);
+
+        assertThat(damaged.effectiveDeliveryMode()).isEqualTo(DeliveryMode.TOW_TRUCK);
+        assertThat(base.effectiveDeliveryMode()).isEqualTo(DeliveryMode.CAR_CARRIER);
     }
 
     @Test

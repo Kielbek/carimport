@@ -2,7 +2,7 @@
 export const MAP_VIEWBOX = { width: 1000, height: 451 } as const;
 
 export interface MapRoute { origin: string; port: string; to: string; days: string; from: readonly [number, number]; d: string }
-export interface MapPort { code: string; name: string; at: readonly [number, number] }
+export interface MapPort { code: string; name: string; at: readonly [number, number]; hub: boolean }
 
 export const MAP_ROUTES: readonly MapRoute[] = [
   {
@@ -83,6 +83,17 @@ export const MAP_ROUTES: readonly MapRoute[] = [
     "d": "M648.3,181.2C648.9,180.5 650.1,175.2 652.1,177.3C654.1,179.5 662.9,186.8 660.5,194.1C658.1,201.4 644.9,216.9 637.9,221.2C630.9,225.5 626.6,228.2 618.5,219.9C610.5,211.6 595.1,181.5 589.6,171.5C584.1,161.6 594.1,164.3 585.7,160.2C577.3,156.1 555.8,149.6 539.1,147.2C522.4,144.8 496.1,149.6 485.4,145.6C474.7,141.6 474.4,129.8 474.7,123.1C475,116.4 481.6,110.3 487.2,105.4C492.8,100.6 503.2,98 508.4,94C513.7,90 515.9,84 518.7,81.2C521.5,78.4 523.5,76.8 525.4,77.3C527.3,77.9 528.1,83.1 530.1,84.5C532.2,85.9 535.4,85.3 537.7,85.7C540,86.1 542.9,86.9 543.9,87.1"
   },
   {
+    "origin": "UAE",
+    "port": "Jebel Ali",
+    "to": "SIKOP",
+    "days": "18–22",
+    "from": [
+      648.3,
+      181.2
+    ],
+    "d": "M648.3,181.2C648.9,180.5 650.1,175.2 652.1,177.3C654.1,179.5 662.9,186.8 660.5,194.1C658.1,201.4 644.9,216.9 637.9,221.2C630.9,225.5 626.6,228.2 618.5,219.9C610.5,211.6 595.1,181.5 589.6,171.5C584.1,161.6 591.1,164.1 585.7,160.2C580.4,156.3 563.8,152.7 557.5,148.2C551.2,143.7 551,137.6 547.7,133.4C544.4,129.2 540.1,125.9 537.9,123.1C535.8,120.3 535.4,118.2 534.8,116.8C534.2,115.5 534.4,115.3 534.3,115"
+  },
+  {
     "origin": "UK",
     "port": "Southampton",
     "to": "NLRTM",
@@ -102,7 +113,8 @@ export const MAP_EU_PORTS: readonly MapPort[] = [
     "at": [
       520.4,
       90.2
-    ]
+    ],
+    "hub": true
   },
   {
     "code": "NLRTM",
@@ -110,7 +122,8 @@ export const MAP_EU_PORTS: readonly MapPort[] = [
     "at": [
       509.7,
       95
-    ]
+    ],
+    "hub": true
   },
   {
     "code": "BEANR",
@@ -118,7 +131,8 @@ export const MAP_EU_PORTS: readonly MapPort[] = [
     "at": [
       510.6,
       97.3
-    ]
+    ],
+    "hub": true
   },
   {
     "code": "PLGDY",
@@ -126,6 +140,358 @@ export const MAP_EU_PORTS: readonly MapPort[] = [
     "at": [
       543.9,
       87.1
-    ]
+    ],
+    "hub": true
+  },
+  {
+    "code": "DEHAM",
+    "name": "Hamburg",
+    "at": [
+      523.7,
+      90.2
+    ],
+    "hub": false
+  },
+  {
+    "code": "DEEMD",
+    "name": "Emden",
+    "at": [
+      517.1,
+      90.7
+    ],
+    "hub": false
+  },
+  {
+    "code": "NLVLI",
+    "name": "Vlissingen",
+    "at": [
+      508.7,
+      96.6
+    ],
+    "hub": false
+  },
+  {
+    "code": "NLAMS",
+    "name": "Amsterdam",
+    "at": [
+      511.5,
+      93.6
+    ],
+    "hub": false
+  },
+  {
+    "code": "BEZEE",
+    "name": "Zeebrugge",
+    "at": [
+      507.7,
+      96.9
+    ],
+    "hub": false
+  },
+  {
+    "code": "FRLEH",
+    "name": "Le Havre",
+    "at": [
+      500.3,
+      102.7
+    ],
+    "hub": false
+  },
+  {
+    "code": "FRMTX",
+    "name": "Saint-Nazaire (Montoir)",
+    "at": [
+      494.7,
+      109.5
+    ],
+    "hub": false
+  },
+  {
+    "code": "IEDUB",
+    "name": "Dublin",
+    "at": [
+      485.2,
+      90.7
+    ],
+    "hub": false
+  },
+  {
+    "code": "ESBIO",
+    "name": "Bilbao",
+    "at": [
+      492.3,
+      122
+    ],
+    "hub": false
+  },
+  {
+    "code": "PTLEI",
+    "name": "Leixões (Porto)",
+    "at": [
+      477.8,
+      129
+    ],
+    "hub": false
+  },
+  {
+    "code": "PTLIS",
+    "name": "Lisboa",
+    "at": [
+      476.5,
+      136.9
+    ],
+    "hub": false
+  },
+  {
+    "code": "PLGDN",
+    "name": "Gdańsk",
+    "at": [
+      544.2,
+      87.5
+    ],
+    "hub": false
+  },
+  {
+    "code": "PLSZZ",
+    "name": "Szczecin / Świnoujście",
+    "at": [
+      534.7,
+      90.5
+    ],
+    "hub": false
+  },
+  {
+    "code": "LTKLJ",
+    "name": "Klaipėda",
+    "at": [
+      549.6,
+      83.6
+    ],
+    "hub": false
+  },
+  {
+    "code": "LVRIX",
+    "name": "Rīga",
+    "at": [
+      556,
+      79.8
+    ],
+    "hub": false
+  },
+  {
+    "code": "EETLL",
+    "name": "Tallinn (Muuga)",
+    "at": [
+      557,
+      72.3
+    ],
+    "hub": false
+  },
+  {
+    "code": "FIHKO",
+    "name": "Hanko",
+    "at": [
+      552.3,
+      71.3
+    ],
+    "hub": false
+  },
+  {
+    "code": "FIHEL",
+    "name": "Helsinki (Vuosaari)",
+    "at": [
+      557.2,
+      70.2
+    ],
+    "hub": false
+  },
+  {
+    "code": "SEGOT",
+    "name": "Göteborg",
+    "at": [
+      527.4,
+      77.6
+    ],
+    "hub": false
+  },
+  {
+    "code": "SEMMA",
+    "name": "Malmö",
+    "at": [
+      530.5,
+      83.8
+    ],
+    "hub": false
+  },
+  {
+    "code": "DKAAR",
+    "name": "Aarhus",
+    "at": [
+      523.9,
+      82.2
+    ],
+    "hub": false
+  },
+  {
+    "code": "DKCPH",
+    "name": "København",
+    "at": [
+      529.6,
+      83.6
+    ],
+    "hub": false
+  },
+  {
+    "code": "ESALG",
+    "name": "Algeciras",
+    "at": [
+      485.9,
+      145.2
+    ],
+    "hub": false
+  },
+  {
+    "code": "ESVLC",
+    "name": "Valencia",
+    "at": [
+      499.2,
+      134.5
+    ],
+    "hub": false
+  },
+  {
+    "code": "ESBCN",
+    "name": "Barcelona",
+    "at": [
+      505.5,
+      128.4
+    ],
+    "hub": false
+  },
+  {
+    "code": "FRFOS",
+    "name": "Marseille-Fos",
+    "at": [
+      512.3,
+      121.8
+    ],
+    "hub": false
+  },
+  {
+    "code": "ITGOA",
+    "name": "Genova",
+    "at": [
+      522.3,
+      118.7
+    ],
+    "hub": false
+  },
+  {
+    "code": "ITSPE",
+    "name": "La Spezia",
+    "at": [
+      524.7,
+      119.6
+    ],
+    "hub": false
+  },
+  {
+    "code": "ITLIV",
+    "name": "Livorno",
+    "at": [
+      526,
+      121.4
+    ],
+    "hub": false
+  },
+  {
+    "code": "ITGIT",
+    "name": "Gioia Tauro",
+    "at": [
+      541,
+      137.7
+    ],
+    "hub": false
+  },
+  {
+    "code": "MTMAR",
+    "name": "Marsaxlokk",
+    "at": [
+      537.9,
+      146.2
+    ],
+    "hub": false
+  },
+  {
+    "code": "ITTRS",
+    "name": "Trieste",
+    "at": [
+      534.3,
+      114.8
+    ],
+    "hub": false
+  },
+  {
+    "code": "SIKOP",
+    "name": "Koper",
+    "at": [
+      534.3,
+      115
+    ],
+    "hub": true
+  },
+  {
+    "code": "HRRJK",
+    "name": "Rijeka",
+    "at": [
+      536,
+      115.7
+    ],
+    "hub": false
+  },
+  {
+    "code": "GRPIR",
+    "name": "Piraeus",
+    "at": [
+      561.1,
+      139.4
+    ],
+    "hub": false
+  },
+  {
+    "code": "GRSKG",
+    "name": "Thessaloniki",
+    "at": [
+      558.6,
+      130.7
+    ],
+    "hub": false
+  },
+  {
+    "code": "CYLMS",
+    "name": "Limassol",
+    "at": [
+      586.4,
+      150
+    ],
+    "hub": false
+  },
+  {
+    "code": "ROCND",
+    "name": "Constanța",
+    "at": [
+      572,
+      119.4
+    ],
+    "hub": false
+  },
+  {
+    "code": "BGVAR",
+    "name": "Varna",
+    "at": [
+      570.5,
+      122.5
+    ],
+    "hub": false
   }
 ];

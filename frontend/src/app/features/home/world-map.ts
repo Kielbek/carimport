@@ -15,7 +15,7 @@ import { MAP_EU_PORTS, MAP_ROUTES, MAP_VIEWBOX } from './world-map.data';
          [attr.aria-label]="'home.map.aria' | translate">
       <use href="/map/world.svg#rest" fill="var(--map-land)" />
       <use href="/map/world.svg#eu" fill="var(--map-eu)" />
-      @for (r of routes; track r.port) {
+      @for (r of routes; track r.port + r.to) {
         <path class="route-base" [attr.d]="r.d" />
         <path class="route-flow" [attr.d]="r.d" />
         <circle r="2" fill="var(--brand)">
@@ -27,8 +27,12 @@ import { MAP_EU_PORTS, MAP_ROUTES, MAP_VIEWBOX } from './world-map.data';
       }
       @for (p of euPorts; track p.code) {
         <g [attr.transform]="'translate(' + p.at[0] + ' ' + p.at[1] + ')'">
-          <circle class="port-pulse" r="2.6" fill="none" stroke="#fff" stroke-width="0.8" />
-          <circle r="2.6" fill="#fff" stroke="var(--map-eu)" stroke-width="1.2"><title>{{ p.name }}</title></circle>
+          @if (p.hub) {
+            <circle class="port-pulse" r="2.6" fill="none" stroke="#fff" stroke-width="0.8" />
+            <circle r="2.6" fill="#fff" stroke="var(--map-eu)" stroke-width="1.2"><title>{{ p.name }}</title></circle>
+          } @else {
+            <circle r="1.3" fill="#fff" stroke="var(--map-eu)" stroke-width="0.6"><title>{{ p.name }}</title></circle>
+          }
         </g>
       }
     </svg>

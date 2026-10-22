@@ -174,6 +174,34 @@ Copart salvage, bid 10 000 USD, NJ → Newark → Gdynia, benzyna 2500 cm³, PL;
 
 ---
 
+### 2.6 Propozycje zamiast wpisywania, adres → kilometry, wszystkie porty UE
+
+Użytkownik niczego nie musi wpisywać poza adresem dostawy. Każde opcjonalne pole żądania ma **propozycję**:
+`null` = „użyj propozycji kalkulatora”, wartość = nadpisanie użytkownika, `0` = brak pozycji (np. bez naprawy).
+Te same reguły stosuje silnik (gdy pole jest puste) i endpoint propozycji, więc liczba w formularzu = liczba w raporcie.
+
+| Pole | Propozycja |
+|---|---|
+| port odprawy | najtańszy „od drzwi do drzwi” spośród **43 portów w 22 krajach UE** (`V4__all_eu_ports.sql`) |
+| `deliveryDistanceKm` | trasa drogowa z portu pod adres (OSRM `table`, jedno zapytanie dla wszystkich portów); bez routera: linia prosta × 1,25 (`RoadDistance`); bez adresu: odległość do centrum ludnościowego kraju (`CountryCentres`) |
+| `deliveryMode` | autotransporter dla auta jezdnego, laweta dla niejezdnego |
+| `pricePerKm` | środek pasma rynkowego z `road_transport_rate` |
+| `repairEstimate` | % ceny wg stanu i tytułu (`Proposals.repairShare`: 0 / 15 % salvage / 30 % / 40 %) |
+| `insuranceEstimate` | mediana OC pierwszego roku w kraju rejestracji (`Proposals.liabilityInsurance`) |
+
+Kwoty proponowane są pozycjami szacunkowymi (pasmo −15 % / +25 % w scenariuszach), w raporcie z dopiskiem „propozycja kalkulatora”.
+
+**Geo** (`com.carimport.geo`): `GET /api/v1/geo/search?q=` – autouzupełnianie adresu (Nominatim, tylko kraje UE; przy braku
+odpowiedzi wbudowana lista ~300 miast `geo/eu-places.json`, dopasowanie bez polskich znaków). Adresy dostawców ustawia się
+w `app.geo.*` (`GEOCODER_URL`, `ROUTER_URL`; puste = tylko lokalne dane). Publiczne instancje OSM mają limity – produkcyjnie
+własny Nominatim/OSRM lub dostawca komercyjny z tym samym API. Wyniki są cache’owane; każda odległość niesie `ROUTED`/`ESTIMATED`.
+
+**Ranking portów**: `POST /api/v1/quotes/suggestions` (to samo ciało co wycena) liczy pełny silnik dla każdego portu
+(scenariusz średni) i zwraca listę od najtańszej: suma zaokrąglona do 100, km, czas, oraz propozycje naprawy/OC/trybu dostawy.
+Frynt trzyma port w trybie AUTO (podąża za najtańszym) do czasu, aż użytkownik wybierze inny; „Wróć do najtańszego” przywraca AUTO.
+Stawki frachtu do nowych portów są wyprowadzone z linii do Rotterdamu (Gdańsk – z Gdyni) współczynnikami trasy:
+Atlantyk (USA/Kanada/UK) taniej na Morze Północne, Suez (Japonia/ZEA) taniej i szybciej na Morze Śródziemne, Bałtyk – feeder.
+
 ## 3. Frontend (Angular 21: standalone, Signals, control flow, zoneless, SSG)
 
 ```

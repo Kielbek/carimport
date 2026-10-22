@@ -7,6 +7,10 @@ import com.carimport.calculation.CostLine;
 import com.carimport.domain.DeliveryMode;
 import com.carimport.domain.Money;
 import com.carimport.domain.VehicleCondition;
+import com.carimport.geo.CountryCentres;
+import com.carimport.geo.GeoPoint;
+import com.carimport.geo.RoadDistance;
+import com.carimport.reference.EuPort;
 import com.carimport.reference.IntraEuTransportRate;
 import com.carimport.reference.RoadTransportRate;
 import java.math.BigDecimal;
@@ -14,9 +18,10 @@ import java.util.Optional;
 import org.springframework.stereotype.Component;
 
 /**
- * Port-to-home leg priced per km: cost = max(minimum charge, fixed fee + km x price/km). The distance is the user's
- * own (door address) or the typical distance for the country; the per-km price is the tariff band or the user's own
- * quote. Without a per-km tariff the flat port-to-country rate is used.
+ * Port-to-home leg priced per km: cost = max(minimum charge, fixed fee + km x price/km). The distance is, in order:
+ * the routed distance sent with the request, an estimate from the delivery address coordinates, the curated lane
+ * distance, or an estimate to the destination country's population centre. The per-km price is the tariff band or
+ * the user's own quote. Without a per-km tariff the flat port-to-country rate is used.
  */
 @Component
 public class DeliveryStep implements CalculationStep {
@@ -43,8 +48,9 @@ public class DeliveryStep implements CalculationStep {
         String destination = req.destinationCountry();
         Optional<IntraEuTransportRate> lane = ctx.catalog().intraEuRate(ctx.euPort().getCode(), destination);
         int km = req.deliveryDistanceKm() != null ? req.deliveryDistanceKm()
-                : lane.map(IntraEuTransportRate::getDistanceKm).filter(d -> d > 0)
-                        .orElse(ctx.clearedInDestinationCountry() ? DOMESTIC_DEFAULT_KM : -1);
+                : req.destinationPoint().flatMap(home -> estimate(ctx.euPort(), home))
+                        .orElseGet(() -> typicalKm(ctx.euPort(), destination, lane)
+                                .orElse(ctx.clearedInDestinationCountry() ? DOMESTIC_DEFAULT_KM : -1));
         Optional<RoadTransportRate> road = ctx.catalog().roadRate(destination, mode);
 
         if (road.isEmpty() || km < 0) {
@@ -72,5 +78,15 @@ public class DeliveryStep implements CalculationStep {
                         "from", ctx.euPort().getName(),
                         "customRate", String.valueOf(req.pricePerKm() != null))));
         ctx.deliveryKm(km);
+    }
+
+    /** Distance to the destination country without an address: the curated lane, else to its population centre. */
+    public static Optional<Integer> typicalKm(EuPort port, String country, Optional<IntraEuTransportRate> lane) {
+        return lane.map(IntraEuTransportRate::getDistanceKm).filter(d -> d > 0)
+                .or(() -> CountryCentres.of(country).flatMap(centre -> estimate(port, centre)));
+    }
+
+    private static Optional<Integer> estimate(EuPort port, GeoPoint to) {
+        return Optional.ofNullable(port.location()).map(from -> RoadDistance.estimateKm(from, to));
     }
 }
