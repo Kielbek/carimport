@@ -8,6 +8,16 @@ import { Observable, from } from 'rxjs';
  */
 export class LazyJsonTranslateLoader implements TranslateLoader {
   getTranslation(lang: string): Observable<TranslationObject> {
-    return from(import(`../../../../public/i18n/${lang}.json`).then((m) => m.default as TranslationObject));
+    return from(
+      load(lang).catch(() => {
+        // a language without a translation file yet shows English rather than raw keys
+        console.warn(`Missing translations for "${lang}", falling back to English`);
+        return load('en');
+      }),
+    );
   }
+}
+
+function load(lang: string): Promise<TranslationObject> {
+  return import(`../../../../public/i18n/${lang}.json`).then((m) => m.default as TranslationObject);
 }

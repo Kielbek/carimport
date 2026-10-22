@@ -1,4 +1,7 @@
 /** TypeScript mirror of the backend DTOs (com.carimport.*). Keep in sync with the Java records. */
+import { DisplayCurrency } from '../currency/currencies';
+
+export type { DisplayCurrency } from '../currency/currencies';
 
 export type OriginCountry = 'USA' | 'CANADA' | 'JAPAN' | 'UAE' | 'UK';
 export type AuctionHouse = 'COPART' | 'IAAI' | 'USS' | 'EMIRATES_AUCTION' | 'DEALER';
@@ -9,7 +12,6 @@ export type VehicleCondition = 'RUN_AND_DRIVE' | 'ENGINE_STARTS' | 'NON_RUNNING'
 export type ShippingMethod = 'CONTAINER_SHARED' | 'CONTAINER_EXCLUSIVE' | 'RORO';
 export type BuyerType = 'PRIVATE' | 'COMPANY';
 export type CustomsProcedure = 'STANDARD_4000' | 'VAT_DEFERRED_4200';
-export type DisplayCurrency = 'PLN' | 'EUR' | 'USD';
 export type CostCategory = 'VEHICLE' | 'TRANSPORT' | 'TAXES' | 'REGISTRATION' | 'RISK';
 export type DeliveryMode = 'PORT_PICKUP' | 'CAR_CARRIER' | 'TOW_TRUCK' | 'SELF_DRIVE';
 

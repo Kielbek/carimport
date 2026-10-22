@@ -15,6 +15,9 @@ import {
   Suggestions,
 } from '../../core/api/api.models';
 import { CarImportApi } from '../../core/api/carimport-api';
+import { isDisplayCurrency } from '../../core/currency/currencies';
+import { LanguageService } from '../../core/i18n/language.service';
+import { LanguageInfo } from '../../core/i18n/languages';
 import { EXCISE_THRESHOLD_CC, ORIGINS } from './calculator.options';
 
 export type WizardStep = 1 | 2 | 3 | 4 | 5 | 6;
@@ -75,7 +78,8 @@ export class CalculatorStore {
   /** No API calls while prerendering: the static HTML shows the wizard, the browser fetches the data. */
   private readonly browser = isPlatformBrowser(inject(PLATFORM_ID));
 
-  readonly state = signal<WizardState>(restore());
+  private readonly lang = inject(LanguageService);
+  readonly state = signal<WizardState>(restore(this.lang.info()));
   readonly step = signal<WizardStep>(1);
   readonly calculating = signal(false);
   readonly result = signal<PublicQuoteView | null>(null);
@@ -345,12 +349,20 @@ function restorePortMode(): 'AUTO' | 'MANUAL' {
   }
 }
 
-function restore(): WizardState {
+/** Saved wizard state, else defaults for the visitor's language: their country and currency. */
+function restore(language: LanguageInfo): WizardState {
+  const defaults: WizardState = {
+    ...DEFAULTS,
+    destinationCountry: language.country,
+    displayCurrency: isDisplayCurrency(language.currency) ? language.currency : DEFAULTS.displayCurrency,
+  };
   try {
     const raw = sessionStorage.getItem(STORAGE_KEY);
-    return raw ? { ...DEFAULTS, ...(JSON.parse(raw) as Partial<WizardState>) } : DEFAULTS;
+    const saved = raw ? (JSON.parse(raw) as Partial<WizardState>) : {};
+    const merged = { ...defaults, ...saved };
+    return isDisplayCurrency(merged.displayCurrency) ? merged : { ...merged, displayCurrency: defaults.displayCurrency };
   } catch {
-    return DEFAULTS;
+    return defaults;
   }
 }
 

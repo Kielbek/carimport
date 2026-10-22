@@ -1,11 +1,11 @@
 import { DOCUMENT, Injectable, inject } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
-import { Lang, SUPPORTED_LANGS } from '../i18n/language.service';
+import { REPORT_PRICE_MINOR, isDisplayCurrency } from '../currency/currencies';
+import { LANGUAGE_BY_CODE, Lang, SUPPORTED_LANGS } from '../i18n/language.service';
 import { Page, pathFor } from '../routing/paths';
 import { SITE } from '../site.config';
 
-const OG_LOCALES: Record<Lang, string> = { pl: 'pl_PL', en: 'en_GB', de: 'de_DE', uk: 'uk_UA' };
 export const FAQ_COUNT = 9;
 
 /**
@@ -34,7 +34,7 @@ export class SeoService {
     this.meta.updateTag({ property: 'og:title', content: pageTitle });
     this.meta.updateTag({ property: 'og:description', content: description });
     this.meta.updateTag({ property: 'og:url', content: url });
-    this.meta.updateTag({ property: 'og:locale', content: OG_LOCALES[lang] });
+    this.meta.updateTag({ property: 'og:locale', content: LANGUAGE_BY_CODE[lang].og });
     this.meta.updateTag({ property: 'og:image', content: SITE.url + SITE.ogImage });
     this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
 
@@ -68,6 +68,8 @@ export class SeoService {
       { '@type': 'WebSite', '@id': `${SITE.url}/#website`, url: SITE.url, name: SITE.name, inLanguage: lang, publisher: { '@id': `${SITE.url}/#org` } },
     ];
     if (page === 'home' || page === 'calculator') {
+      const own = LANGUAGE_BY_CODE[lang].currency;
+      const currency = isDisplayCurrency(own) ? own : 'EUR';
       graph.push({
         '@type': 'WebApplication',
         name: t('seo.calculator.title'),
@@ -76,8 +78,13 @@ export class SeoService {
         operatingSystem: 'Any',
         inLanguage: lang,
         offers: [
-          { '@type': 'Offer', price: '0', priceCurrency: 'PLN', name: t('pricing.free.name') },
-          { '@type': 'Offer', price: '19.00', priceCurrency: 'PLN', name: t('pricing.report.name') },
+          { '@type': 'Offer', price: '0', priceCurrency: currency, name: t('pricing.free.name') },
+          {
+            '@type': 'Offer',
+            price: (REPORT_PRICE_MINOR[currency] / 100).toFixed(2),
+            priceCurrency: currency,
+            name: t('pricing.report.name'),
+          },
         ],
       });
     }

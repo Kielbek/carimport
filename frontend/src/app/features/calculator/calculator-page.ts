@@ -1,10 +1,11 @@
 import { Component, OnInit, computed, inject, input, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { DisplayCurrency, OriginCountry } from '../../core/api/api.models';
+import { OriginCountry } from '../../core/api/api.models';
 import { LanguageService } from '../../core/i18n/language.service';
 import { PageContext } from '../../core/routing/page-context';
 import { pathFor } from '../../core/routing/paths';
+import { CurrencyMenu } from '../../layout/currency-menu';
 import { LanguageMenu } from '../../layout/language-menu';
 import { Logo } from '../../layout/logo';
 import { ThemeToggle } from '../../layout/theme-toggle';
@@ -27,7 +28,7 @@ import { StepVehicle } from './steps/step-vehicle';
 @Component({
   selector: 'app-calculator-page',
   imports: [
-    RouterLink, TranslatePipe, Icon, Logo, LanguageMenu, ThemeToggle, StepOrigin, StepVehicle, StepCondition,
+    RouterLink, TranslatePipe, Icon, Logo, CurrencyMenu, LanguageMenu, ThemeToggle, StepOrigin, StepVehicle, StepCondition,
     StepDestination, StepAfterImport, StepResult, PaywallModal, PartnerLeadForm, AffiliateWidgets,
   ],
   providers: [CalculatorStore],
@@ -35,16 +36,13 @@ import { StepVehicle } from './steps/step-vehicle';
     <div class="min-h-screen">
       <!-- minimal bar instead of the site header -->
       <div class="border-b border-line">
-        <div class="mx-auto flex h-16 max-w-5xl items-center justify-between gap-4 px-5">
-          <a [routerLink]="home()" [attr.aria-label]="'layout.home' | translate"><app-logo class="scale-[0.8] origin-left" /></a>
-          <div class="flex items-center gap-2">
-            <select class="input !w-auto !py-1.5 text-sm" [value]="store.state().displayCurrency" [attr.aria-label]="'calc.currency' | translate"
-                    (change)="store.patch({ displayCurrency: $any($event.target).value })">
-              @for (c of currencies; track c) { <option [value]="c" [selected]="c === store.state().displayCurrency">{{ c }}</option> }
-            </select>
+        <div class="mx-auto flex h-16 max-w-5xl items-center justify-between gap-2 px-4 sm:gap-4 sm:px-5">
+          <a [routerLink]="home()" class="min-w-0 shrink" [attr.aria-label]="'layout.home' | translate"><app-logo class="origin-left scale-[0.65] sm:scale-[0.8]" /></a>
+          <div class="flex items-center gap-1 sm:gap-2">
+            <app-currency-menu [value]="store.state().displayCurrency" (changed)="store.patch({ displayCurrency: $event })" />
             <app-language-menu [hrefFor]="page.hrefFor()" />
-            <app-theme-toggle />
-            <a [routerLink]="home()" class="grid size-10 place-items-center text-fg/70 hover:text-fg" [attr.aria-label]="'layout.close' | translate">
+            <app-theme-toggle class="hidden sm:block" />
+            <a [routerLink]="home()" class="grid size-9 sm:size-10 place-items-center text-fg/70 hover:text-fg" [attr.aria-label]="'layout.close' | translate">
               <app-icon name="x" [size]="20" />
             </a>
           </div>
@@ -120,7 +118,6 @@ export class CalculatorPage implements OnInit {
   protected readonly steps: WizardStep[] = [1, 2, 3, 4, 5, 6];
   protected readonly lastInput = LAST_INPUT_STEP;
   protected readonly resultStep = RESULT_STEP;
-  protected readonly currencies: DisplayCurrency[] = ['PLN', 'EUR', 'USD'];
   protected readonly paywall = signal(false);
   protected readonly lead = signal(false);
 

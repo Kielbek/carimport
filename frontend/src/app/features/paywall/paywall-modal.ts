@@ -1,9 +1,10 @@
-import { Component, inject, output, signal } from '@angular/core';
+import { Component, computed, inject, output, signal } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TranslatePipe } from '@ngx-translate/core';
 import { switchMap } from 'rxjs';
 import { DisplayCurrency } from '../../core/api/api.models';
 import { CarImportApi } from '../../core/api/carimport-api';
+import { DISPLAY_CURRENCIES, reportPrice } from '../../core/currency/currencies';
 import { LanguageService } from '../../core/i18n/language.service';
 import { Icon } from '../../shared/icon/icon';
 import { CalculatorStore } from '../calculator/calculator.store';
@@ -37,8 +38,8 @@ import { rememberOrder } from '../report/order-tokens';
         </div>
         <div>
           <span class="label">{{ 'paywall.currency' | translate }}</span>
-          <div class="flex gap-2">
-            @for (c of currencies; track c.code) {
+          <div class="flex flex-wrap gap-2">
+            @for (c of currencies(); track c.code) {
               <button type="button" class="chip" [class.chip--active]="form.value.currency === c.code"
                       (click)="form.patchValue({ currency: c.code })">{{ c.label }}</button>
             }
@@ -70,11 +71,12 @@ export class PaywallModal {
   readonly closed = output<void>();
   protected readonly busy = signal(false);
   protected readonly error = signal<string | null>(null);
-  protected readonly currencies: { code: DisplayCurrency; label: string }[] = [
-    { code: 'PLN', label: '19 zł' },
-    { code: 'EUR', label: '4,99 €' },
-    { code: 'USD', label: '$5.49' },
-  ];
+  /** The result currency first, then the euro, then the rest - each labelled with its price. */
+  protected readonly currencies = computed(() => {
+    const first = this.store.state().displayCurrency;
+    const order = [first, ...DISPLAY_CURRENCIES.filter((c) => c !== first)];
+    return order.map((code) => ({ code, label: reportPrice(code, this.lang.locale()) }));
+  });
 
   protected readonly form = inject(FormBuilder).nonNullable.group({
     fullName: ['', [Validators.required, Validators.maxLength(120)]],

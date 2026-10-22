@@ -324,7 +324,13 @@ Stan kreatora jest w `sessionStorage`, więc powrót z anulowanej płatności St
 
 ### 4.1 Wielojęzyczność
 
-* **Język w URL** (`/pl`, `/en`, `/de`, `/uk` – kod ISO 639-1 dla ukraińskiego; w przełączniku etykieta „UA”).
+* **23 języki**: urzędowy język każdego państwa UE (Irlandię i Maltę obsługuje angielski, który jest tam językiem
+  urzędowym) oraz ukraiński. Jedno źródło prawdy: `core/i18n/languages.ts` (kod, nazwa natywna, locale `Intl`,
+  locale Open Graph, domyślny kraj docelowy i waluta wyniku). Z niego korzystają router, prerender, hreflang,
+  przełącznik języka i kalkulator (np. `/cs` startuje z Czechami i CZK, `/sv` ze Szwecją i SEK).
+* **Język w URL** (`/pl`, `/cs`, `/uk`… – kody ISO 639-1; dla ukraińskiego w przełączniku etykieta „UA”), z lokalnymi
+  slugami podstron (`/cs/kalkulacka`, `/fr/a-propos`, …) w `core/routing/paths.ts`. `public/sitemap.xml` generuje
+  `node tools/generate-sitemap.mjs` (92 adresy z alternatywami hreflang).
   `languageGuard` ustawia język, `LanguageService.current` (signal) zasila ngx-translate, `Intl` (kwoty, liczby, nazwy
   27 krajów UE przez `Intl.DisplayNames`) i atrybut `<html lang>`.
 * **ngx-translate (runtime)** zamiast natywnego `@angular/localize`: jeden build zamiast czterech i przełączanie bez
@@ -336,9 +342,12 @@ Stan kreatora jest w `sessionStorage`, więc powrót z anulowanej płatności St
   i locale strony Stripe Checkout.
 * **Wspólne klucze domenowe**: `cost.*`, `category.*`, `warning.*`, `error.*`, `doc.*` mają te same nazwy w JSON
   frontendu i w `.properties` backendu – API zwraca klucze (`messageKey`, `warnings`, `code` linii), nie teksty.
-  Rekomendacja CI: test parzystości kluczy między 4 językami i obiema warstwami.
-* **Waluty**: wybór PLN/EUR/USD w nagłówku przelicza wynik na serwerze (snapshot NBP); kwoty oryginalne (USD, JPY, AED…)
-  są zachowane w raporcie.
+  Test `I18nCoverageTest` pilnuje, że każdy język z `app.supported-locales` ma pełny plik `.properties`.
+* **Waluty**: wynik w EUR lub walucie każdego państwa UE spoza strefy euro (PLN, CZK, HUF, RON, SEK, DKK) oraz w USD
+  i GBP. Wybór w nagłówku kalkulatora (`CurrencyMenu`: flaga, kod, symbol, pełna nazwa w języku interfejsu i
+  wyjaśnienie, że waluta nie zmienia podatków). Przeliczenie po stronie serwera (snapshot kursów); kwoty oryginalne
+  (USD, JPY, AED…) są zachowane w raporcie. Raport jest sprzedawany w każdej z tych walut
+  (`app.report.price-minor` = `REPORT_PRICE_MINOR` we froncie); BLIK/P24 tylko dla PLN (P24 też EUR), karta wszędzie.
 
 ### 4.2 Płatność → PDF (bezpieczny przepływ)
 

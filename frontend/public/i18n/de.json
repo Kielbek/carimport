@@ -397,7 +397,8 @@
     "about": "Über uns",
     "why": "Warum wir",
     "what": "Was wir rechnen",
-    "ctaHint": "Kostenlos, ohne Anmeldung"
+    "ctaHint": "Kostenlos, ohne Anmeldung",
+    "language": "Sprache"
   },
   "footer": {
     "about": "Unabhängiger Rechner für die Importkosten von Autos außerhalb der EU. Wir verkaufen und importieren keine Autos – wir rechnen aus, was sie wirklich kosten.",
@@ -1002,5 +1003,12 @@
       "title": "Prüfen Sie Ihr Auto in einer Minute",
       "text": "Frage oder veralteter Satz entdeckt? Schreiben Sie an {{email}}"
     }
+  },
+  "currency": {
+    "label": "Ergebniswährung",
+    "title": "In welcher Währung sollen die Kosten angezeigt werden?",
+    "hint": "Auktionsbeträge (USD, JPY, AED…) rechnen wir zum aktuellen Zentralbankkurs um. Die Währung ändert die Steuerberechnung nicht – die erfolgt immer im Land der Verzollung.",
+    "groupEu": "Währungen der EU-Länder",
+    "groupOther": "Weitere"
   }
 }

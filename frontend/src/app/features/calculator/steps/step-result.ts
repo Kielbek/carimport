@@ -3,6 +3,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { map, startWith, switchMap } from 'rxjs';
 import { CostCategory } from '../../../core/api/api.models';
+import { reportPrice } from '../../../core/currency/currencies';
 import { LanguageService } from '../../../core/i18n/language.service';
 import { CountUpDirective } from '../../../shared/count-up.directive';
 import { Icon } from '../../../shared/icon/icon';
@@ -198,8 +199,5 @@ export class StepResult {
     { initialValue: { VEHICLE: '', TRANSPORT: '', TAXES: '', REGISTRATION: '', RISK: '' } },
   );
 
-  protected readonly reportPrice = computed(() => {
-    const c = this.s().displayCurrency;
-    return c === 'PLN' ? '19 zł' : c === 'EUR' ? '4,99 €' : '$5.49';
-  });
+  protected readonly reportPrice = computed(() => reportPrice(this.s().displayCurrency, this.lang.locale()));
 }
