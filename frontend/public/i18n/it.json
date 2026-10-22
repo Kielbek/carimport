@@ -1,0 +1,1014 @@
+{
+  "affiliate": {
+    "CURRENCY_EXCHANGE": "Cambio valuta più conveniente",
+    "CURRENCY_EXCHANGE_HINT": "Paga l’auto senza i margini bancari",
+    "FINANCING": "Leasing o finanziamento",
+    "FINANCING_HINT": "Finanzia l’importazione e le imposte",
+    "VIN_CHECK": "Verifica la storia del VIN",
+    "VIN_CHECK_HINT": "Danni, chilometraggio, segnalazioni di furto",
+    "sponsored": "Sponsorizzato",
+    "title": "Potrebbe servirti anche"
+  },
+  "app": {
+    "headline": "Quanto costa davvero un’auto importata?",
+    "tagline": "Aste in USA, Canada, Giappone, Dubai o Regno Unito → dazio UE, accisa e IVA. Risultato in tempo reale, senza registrazione."
+  },
+  "auction": {
+    "COPART": "Copart",
+    "DEALER": "Concessionario / privato",
+    "EMIRATES_AUCTION": "Emirates Auction",
+    "IAAI": "IAAI",
+    "USS": "USS Japan"
+  },
+  "buyer": {
+    "COMPANY": "Azienda",
+    "PRIVATE": "Privato"
+  },
+  "category": {
+    "MOTORCYCLE": "Moto",
+    "PASSENGER_CAR": "Auto",
+    "PICKUP_TRUCK": "Pick-up",
+    "REGISTRATION": "Dopo l’importazione e immatricolazione",
+    "SUV": "SUV",
+    "TAXES": "Dazi e imposte UE",
+    "TRANSPORT": "Trasporto e logistica",
+    "VAN": "Furgone",
+    "VEHICLE": "Veicolo e asta",
+    "RISK": "Rischi lungo il percorso"
+  },
+  "condition": {
+    "ENGINE_STARTS": "Il motore si avvia",
+    "ENGINE_STARTS_HINT": "Non si muove con le proprie forze",
+    "NON_RUNNING": "Incidentata / Salvage",
+    "NON_RUNNING_HINT": "Serve un carro attrezzi con verricello",
+    "RUN_AND_DRIVE": "Run & Drive",
+    "RUN_AND_DRIVE_HINT": "Si avvia e marcia"
+  },
+  "cost": {
+    "AUCTION_AGENT_COMMISSION": "Commissione dell’agente all’esportazione",
+    "AUCTION_BUYER_FEE": "Commissione d’asta per l’acquirente",
+    "AUCTION_ENVIRONMENTAL_FEE": "Contributo ambientale",
+    "AUCTION_EXPORT_DOCS": "Documenti di esportazione",
+    "AUCTION_GATE_FEE": "Gate fee (uscita dal piazzale)",
+    "AUCTION_RECYCLING_FEE": "Contributo di riciclo (Giappone)",
+    "AUCTION_SERVICE_FEE": "Commissione di servizio d’asta",
+    "AUCTION_TITLE_HANDLING_FEE": "Gestione del Title",
+    "AUCTION_VIRTUAL_BID_FEE": "Commissione per offerta online",
+    "CARGO_INSURANCE": "Assicurazione del carico",
+    "CUSTOMS_AGENCY": "Spedizioniere doganale",
+    "CUSTOMS_DUTY": "Dazio doganale",
+    "EXCISE_TAX": "Accisa",
+    "FORKLIFT_LOADING": "Carico con carrello elevatore",
+    "IMPORT_VAT": "IVA all’importazione",
+    "INDIVIDUAL_APPROVAL": "Omologazione individuale (§21 StVZO)",
+    "INLAND_TRANSPORT": "Trasporto interno fino al porto",
+    "INTRA_EU_ACQUISITION_VAT": "IVA su acquisto intracomunitario (inversione contabile, detraibile)",
+    "INTRA_EU_TRANSPORT": "Bisarca dal porto alla destinazione",
+    "OCEAN_FREIGHT": "Nolo marittimo",
+    "PORT_UNLOADING": "Sbarco e terminal portuale",
+    "PURCHASE_PRICE": "Prezzo d’acquisto (offerta vincente)",
+    "RDW_INSPECTION": "Ispezione RDW",
+    "RECYCLING_FEE": "Contributo di riciclo",
+    "REGISTRATION_FEE": "Spese di immatricolazione",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Regolazione dei fari (guida a destra)",
+    "SWORN_TRANSLATION": "Traduzione giurata dei documenti",
+    "TECHNICAL_INSPECTION": "Revisione tecnica",
+    "US_LIGHTING_CONVERSION": "Adeguamento luci (specifica USA)",
+    "WINCH_CONTAINER_LOADING": "Carico nel container con verricello",
+    "DELIVERY_CAR_CARRIER": "Bisarca dal porto a casa tua",
+    "DELIVERY_TOW_TRUCK": "Carro attrezzi dal porto a casa tua",
+    "DELIVERY_SELF_DRIVE": "Guida fino a casa con targa provvisoria (carburante, targhe, assicurazione temporanea)",
+    "TECHNICAL_INSPECTION_IMPORT": "Revisione tecnica di un veicolo importato",
+    "REG_TEMPORARY_PERMIT": "Permesso di circolazione provvisorio",
+    "REG_TEMPORARY_PLATES": "Targhe provvisorie",
+    "REG_CERTIFICATE": "Carta di circolazione",
+    "REG_PLATES": "Targhe",
+    "REG_STICKER": "Contrassegno di controllo",
+    "REAR_FOG_LIGHT": "Installazione del retronebbia",
+    "SPEEDOMETER_KMH": "Conversione del tachimetro in km/h",
+    "SERVICE_INSPECTION": "Tagliando e cambio liquidi",
+    "GEOMETRY_ALIGNMENT": "Convergenza e assetto ruote",
+    "DETAILING": "Pulizia e detailing",
+    "EXPERT_VALUATION": "Perizia di stima (es. per la kasko)",
+    "REPAIR_ESTIMATE": "Riparazioni (tua stima)",
+    "INSURANCE_FIRST_YEAR": "Assicurazione – primo anno (tuo importo)",
+    "RISK_PORT_STORAGE": "Sosta in porto (ritiro tardivo, pratiche)",
+    "RISK_CUSTOMS_INSPECTION": "Ispezione doganale / scansione a raggi X del container",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Contestazione del valore in dogana (dazio e IVA aggiuntivi)",
+    "RISK_VESSEL_ROLLOVER": "Spostamento su una nave successiva (sosta nel porto di esportazione)",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Danni durante il trasporto – franchigia assicurativa",
+    "RISK_HIDDEN_DAMAGE": "Danni nascosti non visibili all’asta",
+    "RISK_TITLE_DELAY": "Ritardo del Title (sosta aggiuntiva)",
+    "RISK_EXPORT_DOCS_DELAY": "Ritardo dei documenti di esportazione"
+  },
+  "doc": {
+    "billOfLading": "Polizza di carico (Bill of Lading)",
+    "companyRegistryExtract": "Visura camerale",
+    "customsDeclarationSad": "Dichiarazione doganale (DAU)",
+    "customsPowerOfAttorney": "Procura allo spedizioniere doganale",
+    "eoriNumber": "Numero EORI dell’importatore",
+    "evChargingPortAdapterNote": "Verifica lo standard della presa di ricarica (NACS/CCS1 → CCS2)",
+    "historicExpertOpinion": "Perizia sullo status di veicolo storico",
+    "insurancePolicy": "Polizza assicurativa del carico",
+    "invoice": "Fattura d’asta / contratto di vendita",
+    "ownership": {
+      "japanExportCertificate": "Export Certificate giapponese (cancellazione dal registro)",
+      "title": "Title originale (documento di proprietà)",
+      "uaeExportCertificate": "Certificato di esportazione EAU (RTA)",
+      "v5c": "Libretto V5C del Regno Unito"
+    },
+    "pl": {
+      "exciseDeclarationAkcUs": "Dichiarazione di accisa AKC-U/S e prova di pagamento",
+      "exciseExemptionConfirmation": "Conferma di esenzione dall’accisa (veicolo elettrico)",
+      "recyclingFeeConfirmation": "Conferma di pagamento del contributo di riciclo"
+    },
+    "procedure4200VatIdAndProofOfTransport": "Regime 4200: partita IVA UE dell’acquirente e prova del trasporto",
+    "registrationApplication": "Domanda di immatricolazione del veicolo",
+    "salvageTitleRepairEvidence": "Documentazione delle riparazioni (salvage title)",
+    "swornTranslation": "Traduzioni giurate dei documenti esteri",
+    "technicalInspection": "Certificato di revisione tecnica",
+    "transportInvoices": "Fatture di trasporto e nolo",
+    "usExportAesItn": "Dichiarazione di esportazione USA (AES/ITN)",
+    "vatPaymentProof": "Prova di pagamento dell’IVA"
+  },
+  "error": {
+    "auction": {
+      "noSchedule": "Nessun tariffario d’asta disponibile.",
+      "unsupported": "Questa casa d’aste non è supportata."
+    },
+    "excise": {
+      "rateNotFound": "Nessuna aliquota di accisa per questa configurazione."
+    },
+    "port": {
+      "unknown": "Porto di destinazione sconosciuto."
+    },
+    "procedure4200": {
+      "notAvailableInPort": "Il regime 4200 non è disponibile in questo porto.",
+      "sameCountry": "Il regime 4200 richiede lo sdoganamento in un Paese diverso da quello di destinazione."
+    },
+    "route": {
+      "unavailable": "Nessuna rotta di spedizione disponibile per questa selezione."
+    },
+    "tariff": {
+      "notFound": "Non è stato possibile classificare il veicolo nella tariffa doganale."
+    },
+    "taxProfile": {
+      "missing": "Nessuna aliquota fiscale per il Paese selezionato."
+    }
+  },
+  "fuel": {
+    "DIESEL": "Diesel",
+    "EV": "Elettrica",
+    "HEV": "Ibrida",
+    "HYDROGEN": "Idrogeno",
+    "LPG": "GPL",
+    "MHEV": "Mild hybrid",
+    "PETROL": "Benzina",
+    "PHEV": "Ibrida plug-in"
+  },
+  "lead": {
+    "consentMarketing": "Inviatemi offerte e consigli sull’importazione (facoltativo).",
+    "consentTransfer": "Acconsento alla condivisione dei miei dati e del mio preventivo con un partner verificato per la preparazione di un’offerta (art. 6, par. 1, lett. a) GDPR).",
+    "email": "E-mail",
+    "message": "Link all’asta o ulteriori dettagli",
+    "name": "Nome e cognome",
+    "phone": "Telefono (facoltativo)",
+    "submit": "Invia richiesta",
+    "subtitle": "CarImport.eu non importa auto. Se lo desideri, trasmetteremo la tua stima a un’azienda di importazione verificata, che preparerà un’offerta. Senza impegno.",
+    "thanks": "Grazie!",
+    "thanksHint": "L’azienda di importazione ti risponderà entro 1 giorno lavorativo.",
+    "title": "Richiesta a un’azienda di importazione (facoltativa)"
+  },
+  "origin": {
+    "CANADA": "Canada",
+    "JAPAN": "Giappone",
+    "UAE": "EAU / Dubai",
+    "UK": "Regno Unito",
+    "USA": "USA"
+  },
+  "paywall": {
+    "blikHint": "Paga con BLIK, Przelewy24 o carta.",
+    "currency": "Valuta di pagamento",
+    "email": "E-mail (ti invieremo il link al report)",
+    "fullName": "Nome e cognome (stampati sul report)",
+    "pay": "Procedi al pagamento",
+    "redirecting": "Reindirizzamento…",
+    "secure": "Pagamento sicuro tramite Stripe. Non conserviamo mai i dati della carta.",
+    "subtitle": "Importi esatti, basi imponibili e aliquote, documenti – in un PDF intestato a te.",
+    "terms": "Accetto i termini e chiedo la fornitura immediata del contenuto digitale, rinunciando al diritto di recesso.",
+    "title": "Report completo sull’importazione"
+  },
+  "report": {
+    "amount": "Importo",
+    "back": "Torna al calcolatore",
+    "base": "Base",
+    "download": "Scarica il PDF",
+    "expired": "Il pagamento non è stato completato.",
+    "generating": "Generazione del PDF…",
+    "item": "Voce",
+    "rate": "Aliquota",
+    "refunded": "Questo ordine è stato rimborsato.",
+    "stage": "Fase",
+    "title": "Report sui costi di importazione del veicolo",
+    "total": "Costo totale a destinazione",
+    "waiting": "Conferma del pagamento in corso…",
+    "delivery": "Consegna",
+    "leadTime": "Tempo fino all’immatricolazione",
+    "days": "giorni",
+    "scenarios": "Tre scenari di costo",
+    "timeline": "Tempistiche",
+    "plan": "Cosa fare dopo l’importazione – passo dopo passo",
+    "step": "Passo",
+    "deadline": "Scadenza",
+    "riskDetail": "Probabilità {{p}}%, costo se si verifica: {{min}}–{{max}} {{cur}}",
+    "userAmount": "importo da te inserito",
+    "scenarioMethod": "Lo scenario medio include i rischi come valore atteso (probabilità × costo medio); quello pessimistico presume che ogni rischio si verifichi al costo massimo."
+  },
+  "result": {
+    "chart": "Struttura dei costi",
+    "exciseIncluded": "Accisa inclusa",
+    "fx": "Cambi NBP del {{date}}",
+    "paid1": "Commissioni d’asta esatte",
+    "paid2": "Dazio, accisa e IVA",
+    "paid3": "Checklist dei documenti",
+    "paid4": "Report PDF personalizzato",
+    "partner": "Vuoi un’offerta da un’azienda di importazione?",
+    "rangeHint": "La forbice tiene conto delle oscillazioni dei cambi e dei noli.",
+    "title": "Costo stimato a destinazione",
+    "transit": "{{days}} giorni di navigazione",
+    "unlock": "Sblocca il report completo – {{price}}",
+    "updating": "Aggiornamento…",
+    "short": "Costo a destinazione",
+    "calculating": "Calcolo di tutte le voci e gli scenari…",
+    "edit": "Modifica i dati",
+    "structure": "Struttura dei costi (scenario medio)",
+    "timeline": "Tempo: {{min}}–{{max}} giorni fino all’immatricolazione",
+    "included": "Cosa è incluso",
+    "risks": "Cosa può succedere lungo il percorso",
+    "risksLead": "Ogni rischio ha una probabilità e una fascia di costo. Lo scenario medio li conteggia in proporzione, quello pessimistico per intero. Gli importi sono nel report.",
+    "probability": "Probabilità",
+    "reportEyebrow": "Report porta a porta",
+    "reportTitle": "Ogni voce al centesimo – in tre scenari",
+    "reportItem1": "Commissioni d’asta, trasporto, nolo e assicurazione",
+    "reportItem2": "Dazio, accisa e IVA con basi imponibili e aliquote",
+    "reportItem3": "Consegna: km × tariffa, carico, minimo",
+    "reportItem4": "Spese di immatricolazione e servizi dopo l’importazione",
+    "reportItem5": "Rischi con importi: ottimistico, medio, pessimistico",
+    "reportItem6": "Piano passo dopo passo con scadenze ed elenco dei documenti",
+    "cheapestPort": "porto più conveniente"
+  },
+  "shipping": {
+    "CONTAINER_EXCLUSIVE": "Container esclusivo",
+    "CONTAINER_SHARED": "Container condiviso",
+    "RORO": "RoRo"
+  },
+  "title": {
+    "CLEAN": "Clean title",
+    "SALVAGE": "Salvage / Non riparabile"
+  },
+  "validation": {
+    "auctionHouse": {
+      "notInOrigin": "Questa casa d’aste non opera nel Paese selezionato."
+    },
+    "engineCc": {
+      "required": "Inserisci la cilindrata del motore."
+    },
+    "procedure4200": {
+      "companyOnly": "Il regime 4200 è disponibile solo per le aziende con una partita IVA UE valida."
+    }
+  },
+  "warning": {
+    "dealer": {
+      "verifyExportDocuments": "Se acquisti da un concessionario, assicurati che ti vengano forniti i documenti di esportazione."
+    },
+    "historic": {
+      "expertOpinionRequired": "Lo status di veicolo da collezione (dazio 0%) richiede una perizia e può essere contestato dalla dogana."
+    },
+    "intraEuTransport": {
+      "notPriced": "Nessun prezzo di trasporto dal porto alla destinazione – costo non incluso."
+    },
+    "newMeansOfTransport": {
+      "vatInDestination": "Mezzo di trasporto nuovo (≤6 mesi o ≤6000 km): l’IVA è dovuta anche nel Paese di immatricolazione."
+    },
+    "nl": {
+      "bpmNotIncluded": "L’imposta di immatricolazione olandese BPM non è inclusa."
+    },
+    "pl": {
+      "clearedForOtherMemberState": "Sdoganata in Polonia per l’immatricolazione altrove – verifica le imposte di immatricolazione del Paese di destinazione.",
+      "exciseDeclarationWithin14Days": "L’accisa polacca si paga all’ufficio delle imposte (AKC-U/S) entro 14 giorni dall’arrivo.",
+      "pickupMayBeReclassified": "Un pick-up immatricolato come autovettura può essere soggetto ad accisa – verifica l’omologazione."
+    },
+    "procedure4200": {
+      "reverseChargeDeductible": "Regime 4200: l’IVA è autoliquidata nel Paese di destinazione (inversione contabile, neutra per i soggetti passivi IVA)."
+    },
+    "registrationTax": {
+      "notModelled": "L’imposta di immatricolazione del Paese di destinazione non è ancora modellata."
+    },
+    "delivery": {
+      "portPickup": "Ritiro in porto selezionato – il trasporto su strada fino a casa non è incluso.",
+      "selfDriveNotRunning": "Un’auto non marciante non può circolare con targa provvisoria – scegli il carro attrezzi."
+    }
+  },
+  "wizard": {
+    "auction": "Casa d’aste",
+    "back": "Indietro",
+    "bid": "Offerta vincente",
+    "buyer": "Acquirente",
+    "category": "Tipo di veicolo",
+    "condition": "Condizioni del veicolo",
+    "destination": "Paese di immatricolazione",
+    "engineCc": "Cilindrata",
+    "exciseRate": "Accisa PL: {{rate}}%",
+    "exciseWarning": "Oltre i 2000 cm³ l’accisa sale dal {{from}}% al {{to}}% – spesso migliaia di differenza!",
+    "finish": "Report completo",
+    "forklift": "carrello elevatore / verricello",
+    "fuel": "Alimentazione",
+    "historic": "Veicolo storico in condizioni originali",
+    "historicHint": "Oltre 30 anni, non modificato: dazio 0% e IVA ridotta.",
+    "next": "Avanti",
+    "origin": "Acquisto da",
+    "port": "Porto UE di sdoganamento",
+    "procedure4200": "Regime doganale 4200",
+    "procedure4200Hint": "Per le aziende con partita IVA UE: niente IVA alla frontiera, inversione contabile a destinazione.",
+    "shipping": "Modalità di spedizione marittima",
+    "step1": "Da dove",
+    "step2": "Veicolo",
+    "step3": "Condizioni e prezzo",
+    "title": "Tipo di Title",
+    "year": "Anno di produzione",
+    "zone": "Ubicazione del piazzale (stato / provincia)",
+    "zoneOther": "Altro / non so",
+    "advanced": "Opzioni avanzate",
+    "step4": "Destinazione e consegna",
+    "step5": "Dopo l’importazione",
+    "step6": "Report dei costi",
+    "calculate": "Calcola il costo totale",
+    "departurePort": "Porto di partenza",
+    "departureAuto": "Automatico – rotta più conveniente",
+    "departureHint": "Scegli un porto specifico se il tuo spedizioniere ne ha già indicato uno.",
+    "delivery": "Trasporto dal porto a casa tua",
+    "distance": "Distanza dal porto al tuo indirizzo",
+    "pricePerKm": "Prezzo al chilometro",
+    "tariffUnknown": "Nessuna tariffa chilometrica per questo Paese – verrà applicata una tariffa forfettaria.",
+    "repair": "Costo delle riparazioni",
+    "repairHintRunner": "Proponiamo un importo tipico per queste condizioni e questo Title (vernice, pneumatici). Hai un preventivo dell’officina? Inseriscilo.",
+    "repairHintDamaged": "Proponiamo un importo di riparazione tipico per queste condizioni (circa il 30–40% del prezzo). Hai un preventivo dell’officina? Inseriscilo – i danni nascosti sono conteggiati a parte come rischio.",
+    "afterImportLead": "Tutto ciò che c’è da fare e pagare tra il porto e le targhe. Le voci obbligatorie sono sempre incluse; il resto lo scegli tu.",
+    "statutory": "Obbligatorie (tariffe ufficiali)",
+    "optional": "Facoltative",
+    "recommended": "consigliato",
+    "optionsLoading": "Caricamento dei servizi per il tuo percorso…",
+    "noServices": "Non disponiamo ancora di un listino dettagliato per l’immatricolazione in questo Paese – il report elenca i passaggi.",
+    "insurance": "RC auto per il primo anno",
+    "insuranceHint": "Proponiamo l’offerta RC mediana per un’auto appena immatricolata in questo Paese. Hai un tuo preventivo? Inseriscilo.",
+    "address": "Indirizzo di consegna",
+    "addressPlaceholder": "es. Cracovia, Długa 5 o un codice postale",
+    "addressChange": "Modifica",
+    "addressHint": "L’unico campo da digitare. Dall’indirizzo calcoliamo i chilometri da ogni porto e scegliamo il più conveniente.",
+    "portRankingAddress": "Tutti i {{count}} porti UE calcolati fino al tuo indirizzo – dal più conveniente.",
+    "portRankingCountry": "Tutti i {{count}} porti UE calcolati fino al Paese di immatricolazione – inserisci un indirizzo per i chilometri esatti.",
+    "portRankingLoading": "Calcolo dei prezzi per tutti i porti UE…",
+    "portCheapest": "più conveniente",
+    "portAuto": "Torna al più conveniente",
+    "portsAll": "Mostra tutti i porti UE ({{count}})",
+    "portsLess": "Comprimi l’elenco dei porti",
+    "days": "giorni",
+    "portRankingNote": "Totale porta a porta, scenario medio: nolo, sdoganamento e IVA nel Paese del porto, consegna all’indirizzo e spese dopo l’importazione.",
+    "distanceRouted": "Percorso stradale da {{port}} al tuo indirizzo.",
+    "distanceEstimated": "Stima da {{port}} al tuo indirizzo (linea d’aria × 1,25).",
+    "distanceTypical": "Distanza tipica da {{port}} – inserisci l’indirizzo qui sopra per un valore esatto.",
+    "tariffShort": "Mercato: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} di carico, min. {{minimum}} {{cur}}."
+  },
+  "layout": {
+    "topbar": "Calcolatore indipendente dei costi di importazione auto da USA, Canada, Giappone, EAU e Regno Unito verso 27 Paesi UE",
+    "forBusiness": "Per le aziende di importazione",
+    "home": "Home",
+    "nav": "Navigazione principale",
+    "calculator": "Calcolatore",
+    "howItWorks": "Come funziona",
+    "pricing": "Prezzi",
+    "faq": "FAQ",
+    "cta": "Calcola il costo",
+    "menu": "Menu",
+    "close": "Chiudi",
+    "breadcrumb": "Percorso di navigazione",
+    "themeLight": "Passa al tema chiaro",
+    "themeDark": "Passa al tema scuro",
+    "about": "Chi siamo",
+    "why": "Perché noi",
+    "what": "Cosa calcoliamo",
+    "ctaHint": "Gratis, senza registrazione",
+    "language": "Lingua"
+  },
+  "footer": {
+    "about": "Calcolatore indipendente dei costi di importazione di auto da Paesi extra UE. Non vendiamo né importiamo auto – calcoliamo quanto costano davvero.",
+    "calculators": "Calcolatori di importazione",
+    "importFrom": {
+      "USA": "Auto dagli USA",
+      "CANADA": "Auto dal Canada",
+      "JAPAN": "Auto dal Giappone",
+      "UAE": "Auto da Dubai (EAU)",
+      "UK": "Auto dal Regno Unito"
+    },
+    "service": "Servizio",
+    "privacy": "Informativa sulla privacy",
+    "language": "Lingua",
+    "payments": "Pagamenti tramite Stripe (carta, BLIK, Przelewy24). Non conserviamo mai i dati della carta.",
+    "rights": "Tutti i diritti riservati.",
+    "disclaimer": "I calcoli hanno carattere informativo e non costituiscono né una decisione doganale né una consulenza fiscale."
+  },
+  "cookies": {
+    "title": "Cookie",
+    "text": "Utilizziamo cookie tecnici per il funzionamento del sito e, con il tuo consenso, cookie analitici. Dettagli:",
+    "accept": "Accetta tutti",
+    "necessary": "Solo necessari"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Calcolatore di importazione auto",
+      "title1": "Conosci il costo di importazione",
+      "title2": "prima di fare un’offerta",
+      "lead": "Un calcolatore indipendente che in un minuto mostra il costo completo per portare un’auto da USA, Canada, Giappone, EAU o Regno Unito – dal prezzo d’asta fino alle targhe nel tuo Paese.",
+      "cta": "Calcola gratis",
+      "secondary": "Cosa calcoliamo esattamente",
+      "visual": "Ford Mustang nera sotto una luce al neon gialla sullo sfondo della bandiera statunitense",
+      "point1": "Stima immediata – senza registrazione, senza telefonate, senza attendere un preventivo",
+      "point2": "Oltre 40 voci di costo, 43 porti UE e i cambi di oggi",
+      "point3": "Non vendiamo auto né prendiamo commissioni – i numeri sono onesti"
+    },
+    "how": {
+      "eyebrow": "Come funziona",
+      "title": "Dall’idea all’importo completo in quattro passi",
+      "s1": {
+        "title": "Dove acquisti",
+        "text": "USA, Canada, Giappone, EAU o Regno Unito – e da un’asta o da un concessionario."
+      },
+      "s2": {
+        "title": "Quale auto",
+        "text": "Tipo, alimentazione, cilindrata, anno e condizioni – sono questi a determinare le imposte."
+      },
+      "s3": {
+        "title": "Il tuo indirizzo",
+        "text": "L’unico campo da digitare. Calcoliamo i chilometri e il porto più conveniente."
+      },
+      "s4": {
+        "title": "Risultato e report",
+        "text": "Tre scenari gratis e un PDF al centesimo quando sei pronto ad acquistare."
+      },
+      "step": "Passo"
+    },
+    "costs": {
+      "eyebrow": "Da cosa è composto il prezzo",
+      "title": "Dazio, accisa e IVA calcolati nello stesso ordine della dogana",
+      "lead": "Ogni imposta è la base della successiva, quindi l’ordine conta. Il porto di sdoganamento determina l’aliquota IVA; il Paese di immatricolazione determina l’accisa.",
+      "cif": {
+        "title": "Valore in dogana (CIF)",
+        "formula": "prezzo + commissione d’asta + trasporto + nolo + assicurazione",
+        "text": "Tutto ciò che paghi finché l’auto non arriva in un porto UE."
+      },
+      "duty": {
+        "title": "Dazio doganale (TARIC)",
+        "formula": "CIF × 10% auto · 22% pick-up · 0% veicoli storici",
+        "text": "L’aliquota dipende dal codice SA; moto 6–8%."
+      },
+      "excise": {
+        "title": "Accisa (PL)",
+        "formula": "(CIF + dazio) × 3,1% fino a 2,0 l · 18,6% oltre",
+        "text": "Ibride 1,55% / 9,3%, elettriche 0%. Si paga nel Paese di immatricolazione."
+      },
+      "vat": {
+        "title": "IVA all’importazione",
+        "formula": "(CIF + dazio + accisa* + sbarco) × aliquota del Paese di sdoganamento",
+        "text": "*L’accisa è inclusa solo se lo sdoganamento avviene nel Paese di immatricolazione."
+      }
+    },
+    "ports": {
+      "title": "L’aliquota IVA dipende dal porto di sdoganamento",
+      "text": "Il calcolatore valuta tutti i 43 porti UE di sdoganamento porta a porta: IVA nel Paese del porto, nolo, consegna al tuo indirizzo e spese dopo l’importazione. Sdoganare in Germania significa IVA al 19% invece del 23%, ma si aggiunge la bisarca – qui sotto alcuni esempi, il resto lo confronta il calcolatore.",
+      "port": "Porto",
+      "country": "Paese di sdoganamento"
+    },
+    "pricing": {
+      "eyebrow": "Prezzi",
+      "title": "Inizia gratis, paga solo per la certezza"
+    },
+    "final": {
+      "title": "Calcola la tua importazione in un minuto",
+      "text": "Senza registrazione, senza impegno. Se l’auto si rivela troppo cara, hai appena risparmiato. Se conviene, fai la tua offerta con tranquillità, conoscendo il costo completo.",
+      "title1": "Verifica prima di acquistare.",
+      "title2": "Basta un minuto.",
+      "cta": "Calcola il costo di importazione",
+      "about": "Chi siamo"
+    },
+    "strip": {
+      "brand": {
+        "title": "CarImport.eu —",
+        "text": "calcolatore di importazione indipendente"
+      },
+      "instant": {
+        "title": "Risultato in un minuto",
+        "text": "Inserisci solo l’indirizzo, al resto pensiamo noi"
+      },
+      "items": {
+        "title": "Oltre 40 voci di costo",
+        "text": "Dall’asta all’immatricolazione, rischi compresi"
+      },
+      "ports": {
+        "title": "43 porti UE",
+        "text": "Scegliamo il più conveniente per il tuo indirizzo"
+      }
+    },
+    "map": {
+      "eyebrow": "Rotte di importazione",
+      "title": "Dai porti di tutto il mondo direttamente nell’UE",
+      "lead": "Porti di esportazione in USA, Canada, Giappone, EAU e Regno Unito e le rotte via Panama, Suez e Gibilterra verso i porti di sdoganamento UE.",
+      "aria": "Mappa delle rotte marittime da USA, Canada, Giappone, EAU e Regno Unito verso i porti UE",
+      "eu": "Unione europea",
+      "legendEu": "Paesi UE (immatricolazione)",
+      "legendOrigin": "Paesi di acquisto",
+      "legendRoute": "Rotta marittima",
+      "scroll": "Scorri per vedere tutta la mappa",
+      "days": "giorni"
+    },
+    "numbers": {
+      "eyebrow": "CarImport.eu in cifre",
+      "title": "I numeri dietro ogni preventivo",
+      "n1": {
+        "value": "5",
+        "label": "Paesi di origine: USA, Canada, Giappone, EAU e Regno Unito"
+      },
+      "n2": {
+        "value": "27",
+        "label": "Paesi UE in cui puoi immatricolare l’auto"
+      },
+      "n3": {
+        "value": "43",
+        "label": "porti di sdoganamento in 22 Paesi UE – scegliamo il più conveniente per il tuo indirizzo"
+      },
+      "n4": {
+        "value": "4",
+        "label": "lingue: polacco, inglese, tedesco, ucraino"
+      }
+    },
+    "why": {
+      "eyebrow": "Perché usarlo",
+      "title": "Sappi quanto pagherai – prima di cliccare “fai un’offerta”",
+      "lead": "La parte più costosa dell’importazione sono i costi di cui nessuno ha parlato prima dell’acquisto. Il calcolatore li porta alla luce prima che tu spenda il primo dollaro.",
+      "preview": {
+        "tag": "Calcolatore",
+        "title": "Costo completo porta a porta in sei passi",
+        "text": "Asta, trasporto, dazio, accisa, IVA, immatricolazione e rischi – in tre scenari.",
+        "alt": "Schermata del calcolatore dei costi di importazione"
+      },
+      "instant": {
+        "tag": "Immediato",
+        "title": "Una stima in un minuto, non in due giorni",
+        "text": "Niente moduli di contatto, nessuna attesa della chiamata di un venditore. Ogni campo è precompilato con una proposta – modifichi solo ciò che conosci meglio."
+      },
+      "independent": {
+        "tag": "Indipendente",
+        "title": "Non vendiamo né auto né spedizioni",
+        "text": "Non guadagniamo margini da trasportatori o aste, quindi non abbiamo motivo di sottostimare i costi. Tutti ottengono lo stesso risultato."
+      },
+      "ports": {
+        "tag": "43 porti",
+        "title": "La rotta più conveniente fino al tuo indirizzo",
+        "text": "Calcoliamo il prezzo porta a porta per ogni porto UE di sdoganamento e ti mostriamo la differenza."
+      },
+      "scenarios": {
+        "tag": "Scenari",
+        "title": "Ottimistico, medio, pessimistico",
+        "text": "Cambi, ritardi e rischi lungo il percorso – vedi una forbice realistica, non un unico numero “magico”."
+      },
+      "after": {
+        "tag": "Dopo l’importazione",
+        "title": "Anche immatricolazione e pratiche",
+        "text": "Revisione, traduzioni, adeguamento delle luci, tariffe ufficiali e assicurazione – con le scadenze."
+      },
+      "report": {
+        "tag": "Report PDF",
+        "title": "Ogni centesimo nero su bianco",
+        "text": "Per 4,99 €, un report intestato con ogni aliquota, base imponibile e un piano d’azione dopo l’importazione."
+      }
+    },
+    "what": {
+      "eyebrow": "Cosa includiamo",
+      "title": "Tutto ciò che compone il prezzo dell’auto sotto casa tua",
+      "lead": "La maggior parte dei calcolatori si ferma a dazio e IVA. Noi calcoliamo l’intero viaggio – dal piazzale dell’asta fino alle targhe – e aggiungiamo ciò che potrebbe andare storto.",
+      "cta": "Provalo sulla tua auto",
+      "purchase": {
+        "title": "Acquisto",
+        "i1": "Offerta vincente o prezzo del concessionario",
+        "i2": "Commissioni Copart, IAAI, Manheim, USS per fascia di prezzo",
+        "i3": "Title clean / salvage e condizioni",
+        "i4": "Costo stimato delle riparazioni"
+      },
+      "transport": {
+        "title": "Trasporto",
+        "i1": "Dal piazzale dell’asta al porto di esportazione",
+        "i2": "Nolo in container o RoRo",
+        "i3": "Assicurazione del carico",
+        "i4": "Sbarco e spese di terminal",
+        "i5": "Carro attrezzi o bisarca fino al tuo indirizzo"
+      },
+      "taxes": {
+        "title": "Dazi e imposte",
+        "i1": "Dazio secondo TARIC (10%, 22% per i pick-up)",
+        "i2": "Accisa in base a motore e alimentazione",
+        "i3": "IVA nel Paese del porto di sdoganamento",
+        "i4": "Cambio della banca centrale del giorno"
+      },
+      "after": {
+        "title": "Dopo l’importazione",
+        "i1": "Revisione e omologazione",
+        "i2": "Traduzioni giurate dei documenti",
+        "i3": "Immatricolazione, targhe e tariffe ufficiali",
+        "i4": "Adeguamento di luci e tachimetro",
+        "i5": "RC auto per il primo anno"
+      },
+      "risks": {
+        "title": "Rischi",
+        "i1": "Sosta in porto e navi in ritardo",
+        "i2": "Ispezione doganale e verifiche del valore",
+        "i3": "Danni nascosti e danni durante il trasporto",
+        "i4": "Ritardi del Title e dei documenti di esportazione"
+      }
+    },
+    "compare": {
+      "eyebrow": "Confronto",
+      "title": "Perché un calcolo fatto a occhio non basta",
+      "self": "Fai da te",
+      "broker": "Preventivo di un intermediario",
+      "r1": "Commissioni d’asta secondo le fasce attuali",
+      "r2": "Confronto di tutti i 43 porti UE",
+      "r3": "Cambio di oggi + margine per le oscillazioni",
+      "r4": "Accisa e IVA in base al Paese di sdoganamento e di immatricolazione",
+      "r5": "Rischi e tre scenari di costo",
+      "r6": "Immatricolazione e pratiche dopo l’importazione",
+      "r7": "Nessun margine o commissione nascosta",
+      "note": "~ significa “di solito in parte”. I preventivi degli intermediari spesso includono il loro margine e non mostrano il dettaglio dei costi."
+    }
+  },
+  "pricing": {
+    "popular": "Il più scelto",
+    "free": {
+      "name": "Stima rapida",
+      "price": "Gratis",
+      "f1": "Forbice del costo a destinazione",
+      "f2": "Grafico della struttura dei costi",
+      "f3": "Tempi di transito e avvisi",
+      "f4": "Senza registrazione",
+      "cta": "Calcola gratis"
+    },
+    "report": {
+      "name": "Report PDF",
+      "price": "4,99 €",
+      "f1": "Ogni voce al centesimo",
+      "f2": "Commissioni d’asta per fascia di prezzo",
+      "f3": "Dazio, accisa e IVA con basi imponibili e aliquote",
+      "f4": "Checklist dei documenti e PDF personalizzato",
+      "cta": "Calcola e sblocca il report"
+    },
+    "partner": {
+      "name": "Per le aziende di importazione",
+      "price": "Per contatto accettato",
+      "f1": "Acquirenti con una stima dell’auto già pronta",
+      "f2": "Consenso GDPR raccolto prima della trasmissione",
+      "f3": "Solo le richieste che accetti",
+      "f4": "Nessun abbonamento",
+      "cta": "Diventa partner"
+    }
+  },
+  "faq": {
+    "eyebrow": "Domande e risposte",
+    "title": "Domande frequenti",
+    "lead": "Non trovi la risposta? Il calcolatore mostra ogni ipotesi e il report PDF ogni aliquota e base imponibile.",
+    "q1": {
+      "q": "Quanto è il dazio doganale su un’auto dagli USA?",
+      "a": "Per le autovetture (NC 8703) il dazio è il 10% del valore in dogana CIF, il 22% per pick-up e autocarri leggeri (8704) e il 6–8% per le moto. I veicoli da collezione con oltre 30 anni in condizioni originali possono beneficiare dello 0%. Il valore in dogana è il prezzo d’acquisto più le commissioni d’asta, il trasporto fino al confine UE e l’assicurazione."
+    },
+    "q2": {
+      "q": "Quale accisa si applica importando un’auto in Polonia?",
+      "a": "Auto con motore termico fino a 2000 cm³: 3,1%, oltre 2000 cm³: 18,6%. Ibride: 1,55% fino a 2000 cm³ e 9,3% fino a 3500 cm³. Le ibride plug-in fino a 2000 cm³ e le auto elettriche sono esenti. La base imponibile è il valore in dogana più il dazio, convertito in PLN."
+    },
+    "q3": {
+      "q": "Dove conviene sdoganare l’auto: Bremerhaven, Rotterdam o Gdynia?",
+      "a": "L’IVA all’importazione è applicata dal Paese di sdoganamento: 19% in Germania, 21% nei Paesi Bassi e 23% in Polonia. Sdoganare in Germania riduce l’IVA, ma si aggiunge la bisarca fino in Polonia e l’accisa va pagata separatamente all’ufficio delle imposte entro 14 giorni. Il calcolatore confronta le opzioni per la tua auto."
+    },
+    "q4": {
+      "q": "Che cos’è il regime doganale 4200?",
+      "a": "È l’immissione in libera pratica con esenzione dall’IVA nel Paese di importazione quando l’auto va direttamente a un soggetto passivo IVA in un altro Stato UE. L’acquirente assolve l’IVA nel proprio Paese con l’inversione contabile, quindi l’operazione è neutra per le aziende con partita IVA. Non è disponibile per i privati."
+    },
+    "q5": {
+      "q": "Quanto dura la spedizione verso l’Europa?",
+      "a": "Dai porti della costa orientale degli USA e del Canada circa 2–3 settimane di navigazione, dalla California circa 5 settimane, dal Giappone 6–7 settimane, dagli EAU 3–4 settimane e dal Regno Unito pochi giorni. A questo si aggiungono il trasporto dal piazzale dell’asta al porto e lo sdoganamento."
+    },
+    "q6": {
+      "q": "Da dove provengono i tassi di cambio?",
+      "a": "Utilizziamo i cambi medi della NBP, scaricati automaticamente ogni giorno lavorativo. Poiché paghi l’auto giorni o settimane dopo il preventivo, la forbice gratuita tiene conto delle oscillazioni valutarie."
+    },
+    "q7": {
+      "q": "Cosa include il report PDF a pagamento?",
+      "a": "Ogni voce al centesimo: commissioni d’asta per fascia, trasporto, valore in dogana, dazio, accisa e IVA con basi imponibili e aliquote, l’elenco dei documenti necessari e un PDF personalizzato da scaricare. Paga con BLIK, carta o Przelewy24."
+    },
+    "q8": {
+      "q": "Il risultato del calcolatore è vincolante?",
+      "a": "No. È una stima basata sulle aliquote e sui listini attuali. Gli importi definitivi sono stabiliti dalla dogana e dall’ufficio delle imposte, che possono ad esempio verificare il valore in dogana. Il report elenca tutte le ipotesi, così è facile confrontarlo con la decisione ufficiale."
+    },
+    "q9": {
+      "q": "CarImport.eu importa auto?",
+      "a": "No. Siamo solo un calcolatore – non acquistiamo, spediamo né sdoganiamo auto e non prendiamo commissioni da aste o trasportatori. Questo mantiene la stima indipendente. Se vuoi, puoi trasmettere la stima a un’azienda di importazione verificata, ma la scelta è sempre tua."
+    }
+  },
+  "calc": {
+    "title": "Calcolatore dei costi di importazione auto",
+    "lead": "Sei passi: origine, veicolo, condizioni, destinazione, dopo l’importazione e report. Il risultato arriva alla fine – in tre scenari.",
+    "currency": "Valuta del risultato",
+    "progress": "Avanzamento"
+  },
+  "seo": {
+    "home": {
+      "title": "Calcolatore costi importazione auto – USA, Giappone, Dubai verso l’UE | CarImport.eu",
+      "description": "Calcolatore indipendente per importare un’auto da USA, Canada, Giappone, EAU e Regno Unito: asta, spedizione, dazio, accisa, IVA, immatricolazione e rischi. Stima immediata, senza registrazione."
+    },
+    "calculator": {
+      "title": "Calcolatore di dazio, accisa e IVA per auto importate | CarImport.eu",
+      "description": "Scegli Paese, asta, porto e veicolo — il calcolatore in tempo reale mostra la forbice dei costi e il dettaglio: prezzo, spedizione, dazio, accisa, IVA e immatricolazione."
+    },
+    "privacy": {
+      "title": "Informativa sulla privacy | CarImport.eu",
+      "description": "Come CarImport.eu tratta i dati personali: pagamenti, report, richieste ai partner e cookie."
+    },
+    "about": {
+      "title": "Chi siamo – un calcolatore indipendente per l’importazione di auto | CarImport.eu",
+      "description": "Chi siamo, da dove provengono i nostri dati e come guadagniamo. CarImport.eu non vende né importa auto – calcola il costo completo di importazione in modo onesto e indipendente."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Note legali",
+    "title": "Informativa sulla privacy",
+    "s1": {
+      "title": "Titolare del trattamento",
+      "text": "Il titolare del trattamento è il gestore di CarImport.eu. Per questioni relative alla protezione dei dati contattaci all’indirizzo {{email}}."
+    },
+    "s2": {
+      "title": "Quali dati trattiamo",
+      "text": "I dati inseriti per il preventivo (nessun dato personale) e, in caso di acquisto di un report, nome e indirizzo e-mail. Il modulo per i partner raccoglie inoltre un numero di telefono e un messaggio. Non trattiamo mai i dati della carta — se ne occupa Stripe."
+    },
+    "s3": {
+      "title": "Finalità e basi giuridiche",
+      "text": "Esecuzione dell’acquisto del report (art. 6, par. 1, lett. b) GDPR), obblighi contabili (lett. c), trasmissione della tua richiesta a un partner sulla base del tuo consenso (lett. a) e analisi statistiche con il consenso espresso nel banner dei cookie."
+    },
+    "s4": {
+      "title": "Destinatari",
+      "text": "Stripe Payments Europe (pagamenti), i nostri fornitori di hosting e di posta elettronica e — per il modulo partner — un’azienda di importazione verificata, solo con il tuo consenso."
+    },
+    "s5": {
+      "title": "Cookie",
+      "text": "I cookie tecnici e la memoria del browser ricordano la lingua, il tema, l’avanzamento nel calcolatore e l’accesso a un report acquistato. Le analisi statistiche vengono attivate solo dopo che hai cliccato “Accetta tutti”."
+    },
+    "s6": {
+      "title": "I tuoi diritti",
+      "text": "Hai il diritto di accesso, rettifica, cancellazione, limitazione, portabilità e opposizione, di revocare il consenso in qualsiasi momento e di proporre reclamo all’autorità di controllo per la protezione dei dati. Scrivici: {{email}}."
+    }
+  },
+  "delivery": {
+    "PORT_PICKUP": "Ritiro in porto",
+    "CAR_CARRIER": "Bisarca",
+    "TOW_TRUCK": "Carro attrezzi",
+    "SELF_DRIVE": "Con targa provvisoria"
+  },
+  "scenario": {
+    "0": "Ottimistico",
+    "1": "Medio",
+    "2": "Pessimistico"
+  },
+  "scenarioHint": {
+    "0": "Tariffe più basse, cambio favorevole, tutto fila liscio",
+    "1": "Tariffe tipiche + rischi ponderati per probabilità",
+    "2": "Tariffe più alte, cambio sfavorevole, i rischi si verificano"
+  },
+  "timeline": {
+    "INLAND": "Ritiro dal piazzale e trasporto al porto",
+    "OCEAN": "Navigazione (inclusa l’attesa della nave)",
+    "CLEARANCE": "Sbarco e sdoganamento",
+    "DELIVERY": "Consegna a casa tua",
+    "REGISTRATION": "Preparazione e immatricolazione"
+  },
+  "plan": {
+    "deadline": {
+      "beforeRelease": "Prima dello svincolo dal porto",
+      "14days": "14 giorni dall’arrivo in Polonia",
+      "beforeInspection": "Prima della revisione tecnica",
+      "beforeRegistration": "Prima dell’immatricolazione",
+      "pl30days": "30 giorni dall’importazione (sanzione fino a 1.000 PLN)",
+      "fromRegistration": "Dall’immatricolazione / targa provvisoria",
+      "national": "Secondo le norme del Paese di immatricolazione",
+      "none": "Nessuna scadenza di legge"
+    },
+    "step": {
+      "clearance": {
+        "title": "Sdoganamento in porto",
+        "text": "Lo spedizioniere doganale presenta la dichiarazione (DAU); tu paghi il dazio e l’IVA all’importazione. Servono: fattura, polizza di carico, Title/certificato di esportazione, EORI."
+      },
+      "pl": {
+        "excise": {
+          "title": "Dichiarazione e pagamento dell’accisa (AKC-U/S)",
+          "text": "Presentala all’ufficio delle imposte (o online) e paga l’accisa; la conferma è necessaria per l’immatricolazione."
+        },
+        "exciseExemption": {
+          "title": "Dichiarazione di esenzione dall’accisa (auto elettrica)",
+          "text": "Le auto elettriche sono esenti, ma la dichiarazione AKC-U/S va comunque presentata."
+        },
+        "inspection": {
+          "title": "Revisione tecnica presso un centro di controllo",
+          "text": "Prima revisione di un veicolo importato con identificazione del VIN; l’esito viene trasmesso al registro centrale."
+        },
+        "recycling": {
+          "title": "Contributo di riciclo 500 PLN",
+          "text": "Versato al Fondo nazionale per l’ambiente alla prima immatricolazione di un’auto importata."
+        },
+        "registration": {
+          "title": "Immatricolazione presso l’ufficio veicoli",
+          "text": "Domanda, prova di proprietà con traduzione, accisa, revisione, contributo di riciclo, prova di pagamento di IVA/dazio; ricevi un permesso provvisorio e le targhe."
+        }
+      },
+      "translations": {
+        "title": "Traduzioni giurate",
+        "text": "Title/documento di immatricolazione estero, fattura e documento di esportazione – da un traduttore giurato."
+      },
+      "lighting": {
+        "title": "Adeguamento delle luci agli standard UE",
+        "text": "Indicatori di direzione posteriori arancioni, retronebbia, regolazione dei fari – senza questi l’auto non supera la revisione."
+      },
+      "insurance": {
+        "title": "RC auto",
+        "text": "Obbligatoria dall’immatricolazione; conviene stipulare una kasko dopo una perizia di stima."
+      },
+      "de": {
+        "approval": {
+          "title": "Omologazione individuale (§21 StVZO)",
+          "text": "Perizia tecnica completa (TÜV/DEKRA) per le auto extra UE; necessaria per l’immatricolazione."
+        },
+        "registration": {
+          "title": "Immatricolazione (Zulassung)",
+          "text": "Codice assicurativo eVB, prova dello sdoganamento, perizia tecnica, mandato SEPA per la tassa automobilistica."
+        }
+      },
+      "generic": {
+        "inspection": {
+          "title": "Revisione / omologazione individuale",
+          "text": "L’ambito dipende dal Paese – le auto extra UE spesso necessitano di un’omologazione individuale."
+        },
+        "registrationTax": {
+          "title": "Imposta nazionale di immatricolazione",
+          "text": "Ad es. BPM nei Paesi Bassi, NoVA in Austria, malus in Francia – verifica prima dell’acquisto."
+        },
+        "registration": {
+          "title": "Immatricolazione del veicolo",
+          "text": "Presenta la domanda con la prova dello sdoganamento, la revisione e l’assicurazione."
+        }
+      },
+      "evCharging": {
+        "title": "Presa di ricarica",
+        "text": "Le auto statunitensi usano NACS/CCS1 – serve un adattatore o la sostituzione della presa con una CCS2/Tipo 2."
+      }
+    }
+  },
+  "deliveryHint": {
+    "CAR_CARRIER": "La soluzione più economica per auto marcianti",
+    "TOW_TRUCK": "Carro attrezzi dedicato, anche per auto non marcianti",
+    "SELF_DRIVE": "Targa provvisoria + assicurazione; solo auto marcianti",
+    "PORT_PICKUP": "Organizzi tu il trasporto"
+  },
+  "serviceHint": {
+    "SWORN_TRANSLATION": "Title, fattura e documento di esportazione",
+    "US_LIGHTING_CONVERSION": "Indicatori di direzione e luci conformi UE",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Auto con guida a destra",
+    "REAR_FOG_LIGHT": "Richiesto alla revisione",
+    "SPEEDOMETER_KMH": "Tachimetro in miglia – comfort e valore di rivendita",
+    "SERVICE_INSPECTION": "Olio, filtri, liquidi, freni dopo un lungo viaggio",
+    "GEOMETRY_ALIGNMENT": "Consigliata dopo riparazioni alle sospensioni",
+    "DETAILING": "Lavaggio, pulizia interni, lucidatura della carrozzeria",
+    "EXPERT_VALUATION": "Utile per la kasko e la rivendita"
+  },
+  "riskInfo": {
+    "RISK_PORT_STORAGE": "Il terminal addebita una tariffa giornaliera dopo il periodo di franchigia, ad es. quando i documenti o il trasporto sono in ritardo.",
+    "RISK_CUSTOMS_INSPECTION": "Controllo casuale o mirato: svuotamento del container, scansione a raggi X, spese di terminal aggiuntive.",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Se il prezzo sembra troppo basso, la dogana può applicare un valore più alto – dazio e IVA aumentano.",
+    "RISK_VESSEL_ROLLOVER": "La nave è in overbooking e il container parte con quella successiva – sosta aggiuntiva nel porto di esportazione.",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "I danni durante il trasporto sono coperti dalla polizza, al netto della franchigia.",
+    "RISK_HIDDEN_DAMAGE": "Difetti che non si vedono nelle foto dell’asta – peggiori sono le condizioni, maggiore è il rischio.",
+    "RISK_TITLE_DELAY": "L’asta invia il Title in ritardo – l’auto attende nel piazzale o in porto.",
+    "RISK_EXPORT_DOCS_DELAY": "La cancellazione dal registro e i documenti di esportazione richiedono più tempo del solito."
+  },
+  "docStage": {
+    "PURCHASE": "Acquisto",
+    "SHIPPING": "Spedizione",
+    "CUSTOMS": "Sdoganamento",
+    "REGISTRATION": "Immatricolazione"
+  },
+  "proposal": {
+    "tag": "Proposto",
+    "restore": "Usa la proposta",
+    "was": "proposta: {{value}} {{unit}}"
+  },
+  "region": {
+    "NORTH_SEA": "Mare del Nord",
+    "BALTIC": "Baltico e Scandinavia",
+    "ATLANTIC": "Atlantico",
+    "WEST_MED": "Mediterraneo occidentale",
+    "EAST_MED": "Adriatico, Egeo e Mar Nero"
+  },
+  "about": {
+    "eyebrow": "Chi siamo",
+    "title1": "Calcoliamo l’importazione di auto.",
+    "title2": "Non vendiamo auto.",
+    "lead": "CarImport.eu è un calcolatore indipendente del costo per portare un’auto da fuori dell’Unione europea. L’abbiamo creato affinché chiunque – non solo un commerciante con dieci anni di esperienza – sappia prima dell’acquisto quanto pagherà davvero.",
+    "story": {
+      "eyebrow": "Come è nato",
+      "title": "Dalla frustrazione per i costi nascosti",
+      "p1": "Un’auto da un’asta americana sembra un affare – finché non si sommano commissioni d’asta, trasporto al porto, nolo, dazio, accisa, IVA, sbarco, carro attrezzi, traduzioni, revisione e immatricolazione. Ogni voce è “piccola”, ma insieme possono raddoppiare il prezzo.",
+      "p2": "Le informazioni sono sparse tra listini d’asta, tariffe doganali, tabelle dei cambi e le norme di 27 Paesi. I preventivi degli intermediari di solito riportano un’unica cifra senza dettaglio – e con il loro margine incluso.",
+      "p3": "Abbiamo creato uno strumento che mette tutto insieme, calcola con le aliquote attuali e mostra ogni ipotesi. Senza registrazione, senza chiamate da parte di un venditore."
+    },
+    "role": {
+      "eyebrow": "Onesti su ciò che siamo",
+      "title": "Siamo un calcolatore. Solo un calcolatore.",
+      "is": "Cosa siamo",
+      "is1": "Un calcolatore indipendente del costo completo di importazione",
+      "is2": "Un confronto di 43 porti UE di sdoganamento per il tuo indirizzo",
+      "is3": "La fonte di un report PDF dettagliato con ogni aliquota",
+      "is4": "Un elenco di passaggi e documenti dopo l’importazione",
+      "isNot": "Cosa non siamo",
+      "isNot1": "Non siamo un importatore né un concessionario – non vendiamo auto",
+      "isNot2": "Non organizziamo spedizioni né sdoganamenti",
+      "isNot3": "Nessuna commissione da aste, trasportatori o spedizionieri doganali",
+      "isNot4": "Non siamo un’autorità né un consulente fiscale – il risultato è una stima"
+    },
+    "data": {
+      "eyebrow": "Da dove provengono i numeri",
+      "title": "Aliquote attuali, non “più o meno”",
+      "lead": "Ogni importo del risultato deriva da un’aliquota specifica riportata nel report. I dati vengono aggiornati automaticamente o ogni volta che cambia la normativa.",
+      "customs": {
+        "title": "Tariffa doganale UE",
+        "text": "Aliquote del dazio per codice NC (TARIC) per auto, pick-up, moto e veicoli storici."
+      },
+      "fx": {
+        "title": "Cambi della banca centrale",
+        "text": "Cambi di riferimento scaricati ogni giorno lavorativo, con un margine per le oscillazioni fino al pagamento."
+      },
+      "fees": {
+        "title": "Listini di aste e trasportatori",
+        "text": "Fasce di commissione Copart, IAAI, Manheim e USS, noli, spese portuali e prezzi di trasporto al chilometro."
+      },
+      "law": {
+        "title": "Norme nazionali",
+        "text": "Accise, aliquote IVA di 27 Paesi, spese di immatricolazione e controlli obbligatori – con la base giuridica nel report."
+      }
+    },
+    "money": {
+      "eyebrow": "Come guadagniamo",
+      "title": "In modo trasparente – perché si tratta di fiducia",
+      "lead": "Il risultato del calcolatore non dipende da chi ci paga né da quanto. Guadagniamo in tre modi, tutti dichiarati:",
+      "m1": {
+        "title": "Report PDF – 4,99 €",
+        "text": "Il risultato gratuito mostra la forbice e la struttura dei costi. Acquisti il report dettagliato con ogni voce solo se ti serve."
+      },
+      "m2": {
+        "title": "Richiesta facoltativa a un’azienda di importazione",
+        "text": "Solo se lo chiedi, trasmettiamo la tua stima a un’azienda verificata. Paga lei, non tu – e solo con il tuo consenso."
+      },
+      "m3": {
+        "title": "Link di affiliazione contrassegnati",
+        "text": "Ad es. verifiche del VIN o cambio valuta. Sempre contrassegnati, non influiscono mai sulla stima."
+      }
+    },
+    "values": {
+      "eyebrow": "I nostri principi",
+      "transparency": {
+        "title": "Trasparenza",
+        "text": "Ogni numero ha una fonte e una base. Se qualcosa è una stima, lo diciamo."
+      },
+      "independence": {
+        "title": "Indipendenza",
+        "text": "Non abbiamo alcun interesse nel fatto che tu acquisti l’auto o in chi la importa per te."
+      },
+      "precision": {
+        "title": "Precisione",
+        "text": "Calcoliamo al centesimo, ma mostriamo anche una forbice – perché l’importazione non è matematica perfetta."
+      }
+    },
+    "cta": {
+      "title": "Verifica la tua auto in un minuto",
+      "text": "Hai una domanda o hai notato un’aliquota non aggiornata? Scrivi a {{email}}"
+    }
+  },
+  "currency": {
+    "label": "Valuta del risultato",
+    "title": "In quale valuta vuoi vedere i costi?",
+    "hint": "Gli importi d’asta (USD, JPY, AED…) sono convertiti al cambio attuale della banca centrale. La valuta non modifica il calcolo delle imposte – le imposte sono sempre determinate dal Paese di sdoganamento.",
+    "groupEu": "Valute UE",
+    "groupOther": "Altre"
+  }
+}

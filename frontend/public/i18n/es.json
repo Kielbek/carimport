@@ -1,0 +1,1014 @@
+{
+  "affiliate": {
+    "CURRENCY_EXCHANGE": "Cambio de divisas más barato",
+    "CURRENCY_EXCHANGE_HINT": "Paga el coche sin márgenes bancarios",
+    "FINANCING": "Leasing o préstamo",
+    "FINANCING_HINT": "Financia la importación y los impuestos",
+    "VIN_CHECK": "Comprobar el historial del VIN",
+    "VIN_CHECK_HINT": "Daños, kilometraje, registros de robo",
+    "sponsored": "Patrocinado",
+    "title": "También te puede interesar"
+  },
+  "app": {
+    "headline": "¿Cuánto cuesta realmente un coche importado?",
+    "tagline": "Subastas en EE. UU., Canadá, Japón, Dubái o el Reino Unido → aranceles, impuesto especial e IVA en la UE. Resultado al instante, sin registro."
+  },
+  "auction": {
+    "COPART": "Copart",
+    "DEALER": "Concesionario / particular",
+    "EMIRATES_AUCTION": "Emirates Auction",
+    "IAAI": "IAAI",
+    "USS": "USS Japón"
+  },
+  "buyer": {
+    "COMPANY": "Empresa",
+    "PRIVATE": "Particular"
+  },
+  "category": {
+    "MOTORCYCLE": "Moto",
+    "PASSENGER_CAR": "Turismo",
+    "PICKUP_TRUCK": "Pick-up",
+    "REGISTRATION": "Tras la importación y matriculación",
+    "SUV": "SUV",
+    "TAXES": "Aranceles e impuestos de la UE",
+    "TRANSPORT": "Transporte y logística",
+    "VAN": "Furgoneta",
+    "VEHICLE": "Vehículo y subasta",
+    "RISK": "Riesgos en el trayecto"
+  },
+  "condition": {
+    "ENGINE_STARTS": "El motor arranca",
+    "ENGINE_STARTS_HINT": "No puede moverse por sus propios medios",
+    "NON_RUNNING": "Dañado / Salvage",
+    "NON_RUNNING_HINT": "Necesita un camión con cabrestante",
+    "RUN_AND_DRIVE": "Run & Drive",
+    "RUN_AND_DRIVE_HINT": "Arranca y circula"
+  },
+  "cost": {
+    "AUCTION_AGENT_COMMISSION": "Comisión del agente de exportación",
+    "AUCTION_BUYER_FEE": "Comisión del comprador de la subasta",
+    "AUCTION_ENVIRONMENTAL_FEE": "Tasa medioambiental",
+    "AUCTION_EXPORT_DOCS": "Documentos de exportación",
+    "AUCTION_GATE_FEE": "Tasa de salida (gate fee)",
+    "AUCTION_RECYCLING_FEE": "Tasa de reciclaje (Japón)",
+    "AUCTION_SERVICE_FEE": "Tasa de servicio de la subasta",
+    "AUCTION_TITLE_HANDLING_FEE": "Tasa de gestión del título",
+    "AUCTION_VIRTUAL_BID_FEE": "Tasa de puja online",
+    "CARGO_INSURANCE": "Seguro de la mercancía",
+    "CUSTOMS_AGENCY": "Agente de aduanas",
+    "CUSTOMS_DUTY": "Derechos de aduana (arancel)",
+    "EXCISE_TAX": "Impuesto especial",
+    "FORKLIFT_LOADING": "Carga con carretilla elevadora",
+    "IMPORT_VAT": "IVA de importación",
+    "INDIVIDUAL_APPROVAL": "Homologación individual (§21 StVZO)",
+    "INLAND_TRANSPORT": "Transporte terrestre hasta el puerto",
+    "INTRA_EU_ACQUISITION_VAT": "IVA de adquisición intracomunitaria (inversión del sujeto pasivo, deducible)",
+    "INTRA_EU_TRANSPORT": "Camión portavehículos del puerto al destino",
+    "OCEAN_FREIGHT": "Flete marítimo",
+    "PORT_UNLOADING": "Descarga en puerto y terminal",
+    "PURCHASE_PRICE": "Precio de compra (puja ganadora)",
+    "RDW_INSPECTION": "Inspección RDW",
+    "RECYCLING_FEE": "Tasa de reciclaje",
+    "REGISTRATION_FEE": "Tasas de matriculación",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Ajuste de faros (volante a la derecha)",
+    "SWORN_TRANSLATION": "Traducción jurada de documentos",
+    "TECHNICAL_INSPECTION": "Inspección técnica (ITV)",
+    "US_LIGHTING_CONVERSION": "Adaptación del alumbrado (especificación EE. UU.)",
+    "WINCH_CONTAINER_LOADING": "Carga en contenedor con cabrestante",
+    "DELIVERY_CAR_CARRIER": "Camión portavehículos del puerto a tu puerta",
+    "DELIVERY_TOW_TRUCK": "Grúa del puerto a tu puerta",
+    "DELIVERY_SELF_DRIVE": "Conducirlo a casa con matrícula provisional (combustible, placas, seguro temporal)",
+    "TECHNICAL_INSPECTION_IMPORT": "Inspección técnica de un vehículo importado",
+    "REG_TEMPORARY_PERMIT": "Permiso de circulación provisional",
+    "REG_TEMPORARY_PLATES": "Placas de matrícula provisionales",
+    "REG_CERTIFICATE": "Permiso de circulación",
+    "REG_PLATES": "Placas de matrícula",
+    "REG_STICKER": "Adhesivo de control",
+    "REAR_FOG_LIGHT": "Instalación de antiniebla trasero",
+    "SPEEDOMETER_KMH": "Conversión del velocímetro a km/h",
+    "SERVICE_INSPECTION": "Revisión y cambio de fluidos",
+    "GEOMETRY_ALIGNMENT": "Alineación de la dirección",
+    "DETAILING": "Limpieza y detailing",
+    "EXPERT_VALUATION": "Tasación pericial (p. ej. para un seguro a todo riesgo)",
+    "REPAIR_ESTIMATE": "Reparaciones (tu estimación)",
+    "INSURANCE_FIRST_YEAR": "Seguro – primer año (tu importe)",
+    "RISK_PORT_STORAGE": "Almacenaje en puerto (recogida tardía, trámites)",
+    "RISK_CUSTOMS_INSPECTION": "Inspección aduanera / escáner del contenedor",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Revisión del valor en aduana (aranceles e IVA adicionales)",
+    "RISK_VESSEL_ROLLOVER": "Traslado a un buque posterior (almacenaje en el puerto de exportación)",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Daños en tránsito – franquicia del seguro",
+    "RISK_HIDDEN_DAMAGE": "Daños ocultos no visibles en la subasta",
+    "RISK_TITLE_DELAY": "Retraso del título (almacenaje adicional)",
+    "RISK_EXPORT_DOCS_DELAY": "Retraso de los documentos de exportación"
+  },
+  "doc": {
+    "billOfLading": "Conocimiento de embarque (Bill of Lading)",
+    "companyRegistryExtract": "Nota simple del Registro Mercantil",
+    "customsDeclarationSad": "Declaración aduanera (DUA)",
+    "customsPowerOfAttorney": "Poder de representación para el agente de aduanas",
+    "eoriNumber": "Número EORI del importador",
+    "evChargingPortAdapterNote": "Comprueba el estándar de la toma de carga (NACS/CCS1 → CCS2)",
+    "historicExpertOpinion": "Informe pericial sobre la condición de vehículo histórico",
+    "insurancePolicy": "Póliza de seguro de la mercancía",
+    "invoice": "Factura de la subasta / contrato de compraventa",
+    "ownership": {
+      "japanExportCertificate": "Certificado de exportación japonés (baja registral)",
+      "title": "Title original (documento de propiedad)",
+      "uaeExportCertificate": "Certificado de exportación de los EAU (RTA)",
+      "v5c": "Documento de matriculación británico V5C"
+    },
+    "pl": {
+      "exciseDeclarationAkcUs": "Declaración del impuesto especial AKC-U/S y justificante de pago",
+      "exciseExemptionConfirmation": "Justificante de exención del impuesto especial (VE)",
+      "recyclingFeeConfirmation": "Justificante de pago de la tasa de reciclaje"
+    },
+    "procedure4200VatIdAndProofOfTransport": "Régimen 4200: NIF-IVA intracomunitario del comprador y prueba del transporte",
+    "registrationApplication": "Solicitud de matriculación del vehículo",
+    "salvageTitleRepairEvidence": "Documentación de la reparación (título salvage)",
+    "swornTranslation": "Traducciones juradas de los documentos extranjeros",
+    "technicalInspection": "Informe de la inspección técnica",
+    "transportInvoices": "Facturas de transporte y flete",
+    "usExportAesItn": "Declaración de exportación de EE. UU. (AES/ITN)",
+    "vatPaymentProof": "Justificante de pago del IVA"
+  },
+  "error": {
+    "auction": {
+      "noSchedule": "No hay tarifas disponibles para esta subasta.",
+      "unsupported": "Esta casa de subastas no es compatible."
+    },
+    "excise": {
+      "rateNotFound": "No hay tipo de impuesto especial para esta configuración."
+    },
+    "port": {
+      "unknown": "Puerto de destino desconocido."
+    },
+    "procedure4200": {
+      "notAvailableInPort": "El régimen 4200 no está disponible en este puerto.",
+      "sameCountry": "El régimen 4200 requiere el despacho en un país distinto del de destino."
+    },
+    "route": {
+      "unavailable": "No hay ruta marítima disponible para esta selección."
+    },
+    "tariff": {
+      "notFound": "No se ha podido clasificar el vehículo en el arancel aduanero."
+    },
+    "taxProfile": {
+      "missing": "No hay tipos impositivos para el país seleccionado."
+    }
+  },
+  "fuel": {
+    "DIESEL": "Diésel",
+    "EV": "Eléctrico",
+    "HEV": "Híbrido",
+    "HYDROGEN": "Hidrógeno",
+    "LPG": "GLP",
+    "MHEV": "Microhíbrido",
+    "PETROL": "Gasolina",
+    "PHEV": "Híbrido enchufable"
+  },
+  "lead": {
+    "consentMarketing": "Envíame ofertas y consejos de importación (opcional).",
+    "consentTransfer": "Acepto que mis datos y mi presupuesto se compartan con un socio verificado para preparar una oferta (art. 6, apdo. 1, letra a) del RGPD).",
+    "email": "Correo electrónico",
+    "message": "Enlace de la subasta o más detalles",
+    "name": "Nombre y apellidos",
+    "phone": "Teléfono (opcional)",
+    "submit": "Enviar solicitud",
+    "subtitle": "CarImport.eu no importa coches. Si lo deseas, enviaremos tu estimación a una empresa importadora verificada, que te preparará una oferta. Sin compromiso.",
+    "thanks": "¡Gracias!",
+    "thanksHint": "La empresa importadora se pondrá en contacto contigo en un plazo de 1 día hábil.",
+    "title": "Consulta a una empresa importadora (opcional)"
+  },
+  "origin": {
+    "CANADA": "Canadá",
+    "JAPAN": "Japón",
+    "UAE": "EAU / Dubái",
+    "UK": "Reino Unido",
+    "USA": "EE. UU."
+  },
+  "paywall": {
+    "blikHint": "Paga con BLIK, Przelewy24 o tarjeta.",
+    "currency": "Moneda de pago",
+    "email": "Correo electrónico (te enviaremos el enlace al informe)",
+    "fullName": "Nombre y apellidos (aparecerán en el informe)",
+    "pay": "Continuar al pago",
+    "redirecting": "Redirigiendo…",
+    "secure": "Pago seguro con Stripe. Nunca almacenamos los datos de la tarjeta.",
+    "subtitle": "Importes exactos, bases imponibles y tipos, documentos – en un PDF a tu nombre.",
+    "terms": "Acepto las condiciones y solicito la entrega inmediata del contenido digital, renunciando al derecho de desistimiento.",
+    "title": "Informe de importación completo"
+  },
+  "report": {
+    "amount": "Importe",
+    "back": "Volver a la calculadora",
+    "base": "Base",
+    "download": "Descargar PDF",
+    "expired": "El pago no se ha completado.",
+    "generating": "Generando PDF…",
+    "item": "Concepto",
+    "rate": "Tipo",
+    "refunded": "Este pedido ha sido reembolsado.",
+    "stage": "Fase",
+    "title": "Informe de costes de importación del vehículo",
+    "total": "Coste total puesto en destino",
+    "waiting": "Confirmando tu pago…",
+    "delivery": "Entrega",
+    "leadTime": "Plazo hasta la matriculación",
+    "days": "días",
+    "scenarios": "Tres escenarios de coste",
+    "timeline": "Cronograma",
+    "plan": "Qué hacer tras la importación – paso a paso",
+    "step": "Paso",
+    "deadline": "Plazo",
+    "riskDetail": "Probabilidad {{p}} %, coste si ocurre: {{min}}–{{max}} {{cur}}",
+    "userAmount": "importe introducido por ti",
+    "scenarioMethod": "El escenario medio incluye los riesgos como valor esperado (probabilidad × coste medio); el pesimista supone que cada riesgo se produce con su coste máximo."
+  },
+  "result": {
+    "chart": "Estructura de costes",
+    "exciseIncluded": "Impuesto especial incluido",
+    "fx": "Tipos del NBP del {{date}}",
+    "paid1": "Tasas exactas de la subasta",
+    "paid2": "Arancel, impuesto especial e IVA",
+    "paid3": "Lista de documentos",
+    "paid4": "Informe PDF personalizado",
+    "partner": "¿Quieres una oferta de una empresa importadora?",
+    "rangeHint": "El rango cubre las fluctuaciones del tipo de cambio y de las tarifas de flete.",
+    "title": "Coste estimado puesto en destino",
+    "transit": "{{days}} días en el mar",
+    "unlock": "Desbloquear el informe completo – {{price}}",
+    "updating": "Actualizando…",
+    "short": "Coste en destino",
+    "calculating": "Calculando cada concepto y escenario…",
+    "edit": "Cambiar datos",
+    "structure": "Estructura de costes (escenario medio)",
+    "timeline": "Plazo: {{min}}–{{max}} días hasta la matriculación",
+    "included": "Qué incluye",
+    "risks": "Qué puede pasar por el camino",
+    "risksLead": "Cada riesgo tiene una probabilidad y una horquilla de coste. El escenario medio los computa de forma proporcional, el pesimista en su totalidad. Los importes figuran en el informe.",
+    "probability": "Probabilidad",
+    "reportEyebrow": "Informe puerta a puerta",
+    "reportTitle": "Cada concepto al céntimo – en tres escenarios",
+    "reportItem1": "Tasas de subasta, transporte, flete y seguro",
+    "reportItem2": "Arancel, impuesto especial e IVA con bases y tipos",
+    "reportItem3": "Entrega: km × tarifa, carga, mínimo",
+    "reportItem4": "Tasas de matriculación y servicios tras la importación",
+    "reportItem5": "Riesgos con importes: optimista, medio, pesimista",
+    "reportItem6": "Plan paso a paso con plazos y lista de documentos",
+    "cheapestPort": "puerto más barato"
+  },
+  "shipping": {
+    "CONTAINER_EXCLUSIVE": "Contenedor exclusivo",
+    "CONTAINER_SHARED": "Contenedor compartido",
+    "RORO": "RoRo"
+  },
+  "title": {
+    "CLEAN": "Título limpio (clean)",
+    "SALVAGE": "Salvage / No reparable"
+  },
+  "validation": {
+    "auctionHouse": {
+      "notInOrigin": "Esta casa de subastas no opera en el país seleccionado."
+    },
+    "engineCc": {
+      "required": "Introduce la cilindrada del motor."
+    },
+    "procedure4200": {
+      "companyOnly": "El régimen 4200 solo está disponible para empresas con un NIF-IVA intracomunitario válido."
+    }
+  },
+  "warning": {
+    "dealer": {
+      "verifyExportDocuments": "Si compras a un concesionario, asegúrate de que te entregue los documentos de exportación."
+    },
+    "historic": {
+      "expertOpinionRequired": "La condición de vehículo histórico (0 % de arancel) requiere un informe pericial y puede ser cuestionada por la aduana."
+    },
+    "intraEuTransport": {
+      "notPriced": "No hay precio de transporte del puerto al destino – coste no incluido."
+    },
+    "newMeansOfTransport": {
+      "vatInDestination": "Medio de transporte nuevo (≤6 meses o ≤6000 km): el IVA también se devenga en el país de matriculación."
+    },
+    "nl": {
+      "bpmNotIncluded": "El impuesto de matriculación neerlandés BPM no está incluido."
+    },
+    "pl": {
+      "clearedForOtherMemberState": "Despachado en Polonia para matricularse en otro país – comprueba los impuestos de matriculación del destino.",
+      "exciseDeclarationWithin14Days": "El impuesto especial polaco se paga en la oficina tributaria (AKC-U/S) en un plazo de 14 días desde la llegada.",
+      "pickupMayBeReclassified": "Un pick-up matriculado como turismo puede estar sujeto al impuesto especial – comprueba la homologación."
+    },
+    "procedure4200": {
+      "reverseChargeDeductible": "Régimen 4200: el IVA se autoliquida en el país de destino (inversión del sujeto pasivo, neutral para empresas registradas a efectos del IVA)."
+    },
+    "registrationTax": {
+      "notModelled": "El impuesto de matriculación del país de destino aún no está modelizado."
+    },
+    "delivery": {
+      "portPickup": "Has elegido la recogida en el puerto – el transporte por carretera hasta casa no está incluido.",
+      "selfDriveNotRunning": "Un coche que no funciona no puede circular con matrícula provisional – elige una grúa."
+    }
+  },
+  "wizard": {
+    "auction": "Casa de subastas",
+    "back": "Atrás",
+    "bid": "Puja ganadora",
+    "buyer": "Comprador",
+    "category": "Tipo de vehículo",
+    "condition": "Estado del vehículo",
+    "destination": "País de matriculación",
+    "engineCc": "Cilindrada",
+    "exciseRate": "Impuesto especial PL: {{rate}} %",
+    "exciseWarning": "Por encima de 2000 cm³ el impuesto especial salta del {{from}} % al {{to}} % – ¡a menudo miles de diferencia!",
+    "finish": "Informe completo",
+    "forklift": "carretilla / cabrestante",
+    "fuel": "Propulsión",
+    "historic": "Vehículo histórico en estado original",
+    "historicHint": "Más de 30 años, sin modificar: 0 % de arancel e IVA reducido.",
+    "next": "Siguiente",
+    "origin": "País de compra",
+    "port": "Puerto de despacho en la UE",
+    "procedure4200": "Régimen aduanero 4200",
+    "procedure4200Hint": "Para empresas registradas a efectos del IVA en la UE: sin IVA en frontera, inversión del sujeto pasivo en destino.",
+    "shipping": "Modalidad de transporte marítimo",
+    "step1": "Origen",
+    "step2": "Vehículo",
+    "step3": "Estado y precio",
+    "title": "Tipo de título",
+    "year": "Año de fabricación",
+    "zone": "Ubicación del depósito (estado / provincia)",
+    "zoneOther": "Otro / no lo sé",
+    "advanced": "Opciones avanzadas",
+    "step4": "Destino y entrega",
+    "step5": "Tras la importación",
+    "step6": "Informe de costes",
+    "calculate": "Calcular el coste total",
+    "departurePort": "Puerto de salida",
+    "departureAuto": "Automático – ruta más barata",
+    "departureHint": "Elige un puerto concreto si tu transitario ya te ha indicado uno.",
+    "delivery": "Transporte del puerto a tu puerta",
+    "distance": "Distancia del puerto a tu dirección",
+    "pricePerKm": "Precio por kilómetro",
+    "tariffUnknown": "No hay tarifa por km para este país – se aplicará una tarifa plana.",
+    "repair": "Coste de reparación",
+    "repairHintRunner": "Proponemos un importe típico para este estado y título (pintura, neumáticos). ¿Tienes un presupuesto de taller? Introdúcelo.",
+    "repairHintDamaged": "Proponemos un importe de reparación típico para este estado (alrededor del 30–40 % del precio). ¿Tienes un presupuesto de taller? Introdúcelo – los daños ocultos se computan aparte como riesgo.",
+    "afterImportLead": "Todo lo que hay que hacer y pagar entre el puerto y las placas de matrícula. Los conceptos obligatorios siempre se incluyen; el resto lo eliges tú.",
+    "statutory": "Obligatorio (tasas oficiales)",
+    "optional": "Opcional",
+    "recommended": "recomendado",
+    "optionsLoading": "Cargando servicios para tu ruta…",
+    "noServices": "Todavía no tenemos una tarifa detallada de matriculación para este país – el informe enumera los pasos.",
+    "insurance": "Seguro de responsabilidad civil del primer año",
+    "insuranceHint": "Proponemos la oferta mediana de responsabilidad civil para un coche recién matriculado en este país. ¿Tienes tu propio presupuesto? Introdúcelo.",
+    "address": "Dirección de entrega",
+    "addressPlaceholder": "p. ej. Madrid, Calle Mayor 5 o un código postal",
+    "addressChange": "Cambiar",
+    "addressHint": "El único campo que escribes. A partir de la dirección calculamos los kilómetros desde cada puerto y elegimos el más barato.",
+    "portRankingAddress": "Los {{count}} puertos de la UE calculados hasta tu dirección – del más barato al más caro.",
+    "portRankingCountry": "Los {{count}} puertos de la UE calculados hasta el país de matriculación – introduce una dirección para obtener los kilómetros exactos.",
+    "portRankingLoading": "Calculando todos los puertos de la UE…",
+    "portCheapest": "el más barato",
+    "portAuto": "Volver al más barato",
+    "portsAll": "Mostrar todos los puertos de la UE ({{count}})",
+    "portsLess": "Contraer la lista de puertos",
+    "days": "días",
+    "portRankingNote": "Total puerta a puerta, escenario medio: flete, despacho e IVA en el país del puerto, entrega en la dirección y tasas tras la importación.",
+    "distanceRouted": "Ruta por carretera de {{port}} a tu dirección.",
+    "distanceEstimated": "Estimación de {{port}} a tu dirección (línea recta × 1,25).",
+    "distanceTypical": "Distancia típica desde {{port}} – introduce la dirección arriba para obtener una cifra exacta.",
+    "tariffShort": "Mercado: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} de carga, mín. {{minimum}} {{cur}}."
+  },
+  "layout": {
+    "topbar": "Calculadora independiente de costes de importación de coches de EE. UU., Canadá, Japón, EAU y Reino Unido a los 27 países de la UE",
+    "forBusiness": "Para empresas importadoras",
+    "home": "Inicio",
+    "nav": "Navegación principal",
+    "calculator": "Calculadora",
+    "howItWorks": "Cómo funciona",
+    "pricing": "Precios",
+    "faq": "Preguntas frecuentes",
+    "cta": "Calcular el coste",
+    "menu": "Menú",
+    "close": "Cerrar",
+    "breadcrumb": "Ruta de navegación",
+    "themeLight": "Cambiar al tema claro",
+    "themeDark": "Cambiar al tema oscuro",
+    "about": "Quiénes somos",
+    "why": "Por qué nosotros",
+    "what": "Qué calculamos",
+    "ctaHint": "Gratis, sin registro",
+    "language": "Idioma"
+  },
+  "footer": {
+    "about": "Calculadora independiente de los costes de importación de coches de fuera de la UE. No vendemos ni importamos coches – calculamos lo que realmente cuestan.",
+    "calculators": "Calculadoras de importación",
+    "importFrom": {
+      "USA": "Coche de EE. UU.",
+      "CANADA": "Coche de Canadá",
+      "JAPAN": "Coche de Japón",
+      "UAE": "Coche de Dubái (EAU)",
+      "UK": "Coche del Reino Unido"
+    },
+    "service": "Servicio",
+    "privacy": "Política de privacidad",
+    "language": "Idioma",
+    "payments": "Pagos con Stripe (tarjeta, BLIK, Przelewy24). Nunca almacenamos los datos de la tarjeta.",
+    "rights": "Todos los derechos reservados.",
+    "disclaimer": "Los cálculos son informativos y no constituyen una resolución aduanera ni asesoramiento fiscal."
+  },
+  "cookies": {
+    "title": "Cookies",
+    "text": "Utilizamos cookies esenciales para el funcionamiento del sitio y, con tu consentimiento, cookies analíticas. Detalles:",
+    "accept": "Aceptar todas",
+    "necessary": "Solo las necesarias"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Calculadora de importación de coches",
+      "title1": "Conoce el coste de importación",
+      "title2": "antes de pujar",
+      "lead": "Una calculadora independiente que muestra en un minuto el coste total de traer un coche de EE. UU., Canadá, Japón, los EAU o el Reino Unido – desde el precio de subasta hasta las placas de matrícula en tu país.",
+      "cta": "Calcular gratis",
+      "secondary": "Qué calculamos exactamente",
+      "visual": "Ford Mustang negro bajo una luz de neón amarilla con la bandera de EE. UU. de fondo",
+      "point1": "Estimación inmediata – sin registro, sin llamadas, sin esperar un presupuesto",
+      "point2": "Más de 40 conceptos de coste, 43 puertos de la UE y los tipos de cambio de hoy",
+      "point3": "No vendemos coches ni cobramos comisiones – las cifras son honestas"
+    },
+    "how": {
+      "eyebrow": "Cómo funciona",
+      "title": "De la idea al importe total en cuatro pasos",
+      "s1": {
+        "title": "Dónde compras",
+        "text": "EE. UU., Canadá, Japón, EAU o Reino Unido – y en subasta o a un concesionario."
+      },
+      "s2": {
+        "title": "Qué coche",
+        "text": "Tipo, combustible, cilindrada, año y estado – son los que determinan los impuestos."
+      },
+      "s3": {
+        "title": "Tu dirección",
+        "text": "El único campo que escribes. Calculamos los kilómetros y el puerto más barato."
+      },
+      "s4": {
+        "title": "Resultado e informe",
+        "text": "Tres escenarios gratis y un PDF al céntimo cuando estés listo para comprar."
+      },
+      "step": "Paso"
+    },
+    "costs": {
+      "eyebrow": "De qué se compone el precio",
+      "title": "Arancel, impuesto especial e IVA calculados en el mismo orden que en la aduana",
+      "lead": "Cada impuesto es la base del siguiente, así que el orden importa. El puerto de despacho determina el tipo de IVA; el país de matriculación, el impuesto especial.",
+      "cif": {
+        "title": "Valor en aduana (CIF)",
+        "formula": "precio + tasa de subasta + transporte + flete + seguro",
+        "text": "Todo lo que pagas hasta que el coche llega a un puerto de la UE."
+      },
+      "duty": {
+        "title": "Arancel (TARIC)",
+        "formula": "CIF × 10 % turismos · 22 % pick-ups · 0 % clásicos",
+        "text": "El tipo depende del código SA; motos 6–8 %."
+      },
+      "excise": {
+        "title": "Impuesto especial (PL)",
+        "formula": "(CIF + arancel) × 3,1 % hasta 2,0 l · 18,6 % por encima",
+        "text": "Híbridos 1,55 % / 9,3 %, eléctricos 0 %. Se paga en el país de matriculación."
+      },
+      "vat": {
+        "title": "IVA de importación",
+        "formula": "(CIF + arancel + impuesto especial* + descarga) × tipo del país de despacho",
+        "text": "*El impuesto especial solo se incluye cuando el despacho se realiza en el país de matriculación."
+      }
+    },
+    "ports": {
+      "title": "El tipo de IVA depende del puerto de despacho",
+      "text": "La calculadora valora puerta a puerta los 43 puertos de despacho de la UE: IVA del país del puerto, flete, entrega en tu dirección y tasas tras la importación. Despachar en Alemania supone un 19 % de IVA en lugar del 23 %, pero hay que sumar un camión portavehículos – abajo tienes algunos ejemplos, la calculadora compara el resto.",
+      "port": "Puerto",
+      "country": "País de despacho"
+    },
+    "pricing": {
+      "eyebrow": "Precios",
+      "title": "Empieza gratis y paga solo por la certeza"
+    },
+    "final": {
+      "title": "Calcula tu importación en un minuto",
+      "text": "Sin registro ni compromiso. Si el coche resulta demasiado caro, acabas de ahorrar dinero. Si compensa, pujas con tranquilidad conociendo el coste total.",
+      "title1": "Compruébalo antes de comprar.",
+      "title2": "Solo lleva un minuto.",
+      "cta": "Calcular el coste de importación",
+      "about": "Quiénes somos"
+    },
+    "strip": {
+      "brand": {
+        "title": "CarImport.eu —",
+        "text": "calculadora de importación independiente"
+      },
+      "instant": {
+        "title": "Resultado en un minuto",
+        "text": "Solo introduces la dirección, nosotros proponemos el resto"
+      },
+      "items": {
+        "title": "Más de 40 conceptos de coste",
+        "text": "Desde la subasta hasta la matriculación y los riesgos"
+      },
+      "ports": {
+        "title": "43 puertos de la UE",
+        "text": "Elegimos el más barato para tu dirección"
+      }
+    },
+    "map": {
+      "eyebrow": "Rutas de importación",
+      "title": "Desde puertos de todo el mundo directamente a la UE",
+      "lead": "Puertos de exportación de EE. UU., Canadá, Japón, los EAU y el Reino Unido y las rutas por Panamá, Suez y Gibraltar hasta los puertos de despacho de la UE.",
+      "aria": "Mapa de las rutas marítimas desde EE. UU., Canadá, Japón, EAU y Reino Unido hasta los puertos de la UE",
+      "eu": "Unión Europea",
+      "legendEu": "Países de la UE (matriculación)",
+      "legendOrigin": "Países de compra",
+      "legendRoute": "Ruta marítima",
+      "scroll": "Desliza para ver el mapa completo",
+      "days": "días"
+    },
+    "numbers": {
+      "eyebrow": "CarImport.eu en cifras",
+      "title": "Las cifras detrás de cada cálculo",
+      "n1": {
+        "value": "5",
+        "label": "países de origen: EE. UU., Canadá, Japón, EAU y Reino Unido"
+      },
+      "n2": {
+        "value": "27",
+        "label": "países de la UE donde puedes matricular el coche"
+      },
+      "n3": {
+        "value": "43",
+        "label": "puertos de despacho en 22 países de la UE – elegimos el más barato para tu dirección"
+      },
+      "n4": {
+        "value": "4",
+        "label": "idiomas: polaco, inglés, alemán, ucraniano"
+      }
+    },
+    "why": {
+      "eyebrow": "Por qué usarla",
+      "title": "Sabe cuánto vas a pagar – antes de hacer clic en «pujar»",
+      "lead": "Lo más caro de importar son los costes que nadie mencionó antes de la compra. La calculadora los saca a la luz antes de que gastes tu primer dólar.",
+      "preview": {
+        "tag": "Calculadora",
+        "title": "Coste total puerta a puerta en seis pasos",
+        "text": "Subasta, transporte, arancel, impuesto especial, IVA, matriculación y riesgos – en tres escenarios.",
+        "alt": "Captura de pantalla de la calculadora de costes de importación"
+      },
+      "instant": {
+        "tag": "Al instante",
+        "title": "Una estimación en un minuto, no en dos días",
+        "text": "Sin formularios de contacto ni esperas a la llamada de un comercial. Cada campo viene rellenado con una propuesta – solo cambias lo que conoces mejor."
+      },
+      "independent": {
+        "tag": "Independiente",
+        "title": "No vendemos ni coches ni transporte",
+        "text": "No ganamos ningún margen de transportistas ni subastas, así que no tenemos motivos para rebajar los costes. Todo el mundo obtiene el mismo resultado."
+      },
+      "ports": {
+        "tag": "43 puertos",
+        "title": "La ruta más barata hasta tu dirección",
+        "text": "Valoramos puerta a puerta cada puerto de despacho de la UE y te mostramos la diferencia."
+      },
+      "scenarios": {
+        "tag": "Escenarios",
+        "title": "Optimista, medio, pesimista",
+        "text": "Tipos de cambio, retrasos y riesgos por el camino – ves un rango realista, no una cifra «mágica»."
+      },
+      "after": {
+        "tag": "Tras la importación",
+        "title": "También la matriculación y el papeleo",
+        "text": "ITV, traducciones, adaptación del alumbrado, tasas oficiales y seguro – con plazos."
+      },
+      "report": {
+        "tag": "Informe PDF",
+        "title": "Cada céntimo por escrito",
+        "text": "Por 4,99 €, un informe a tu nombre con cada tipo, cada base imponible y un plan de acción tras la importación."
+      }
+    },
+    "what": {
+      "eyebrow": "Qué incluimos",
+      "title": "Todo lo que compone el precio del coche en tu puerta",
+      "lead": "La mayoría de las calculadoras se quedan en el arancel y el IVA. Nosotros calculamos todo el trayecto – desde el depósito de la subasta hasta las placas de matrícula – y añadimos lo que podría salir mal.",
+      "cta": "Pruébala con tu coche",
+      "purchase": {
+        "title": "Compra",
+        "i1": "Puja ganadora o precio del concesionario",
+        "i2": "Tasas de Copart, IAAI, Manheim, USS por tramo de precio",
+        "i3": "Título clean / salvage y estado",
+        "i4": "Coste estimado de reparación"
+      },
+      "transport": {
+        "title": "Transporte",
+        "i1": "Del depósito de la subasta al puerto de exportación",
+        "i2": "Flete en contenedor o RoRo",
+        "i3": "Seguro de la mercancía",
+        "i4": "Tasas de descarga y de terminal",
+        "i5": "Grúa o camión portavehículos hasta tu dirección"
+      },
+      "taxes": {
+        "title": "Aranceles e impuestos",
+        "i1": "Arancel según TARIC (10 %, 22 % para pick-ups)",
+        "i2": "Impuesto especial según motor y combustible",
+        "i3": "IVA en el país del puerto de despacho",
+        "i4": "Tipo de cambio del banco central del mismo día"
+      },
+      "after": {
+        "title": "Tras la importación",
+        "i1": "ITV y homologación",
+        "i2": "Traducciones juradas de los documentos",
+        "i3": "Matriculación, placas y tasas oficiales",
+        "i4": "Adaptación del alumbrado y del velocímetro",
+        "i5": "Seguro de responsabilidad civil del primer año"
+      },
+      "risks": {
+        "title": "Riesgos",
+        "i1": "Almacenaje en puerto y retrasos de buques",
+        "i2": "Inspección aduanera y revisión del valor",
+        "i3": "Daños ocultos y daños en tránsito",
+        "i4": "Retraso del título y de los documentos de exportación"
+      }
+    },
+    "compare": {
+      "eyebrow": "Comparativa",
+      "title": "Por qué no basta con un cálculo a ojo",
+      "self": "Por tu cuenta",
+      "broker": "Presupuesto de un intermediario",
+      "r1": "Tasas de subasta según los tramos actuales",
+      "r2": "Comparativa de los 43 puertos de la UE",
+      "r3": "Tipo de cambio de hoy + margen para fluctuaciones",
+      "r4": "Impuesto especial e IVA según el país de despacho y de matriculación",
+      "r5": "Riesgos y tres escenarios de coste",
+      "r6": "Matriculación y papeleo tras la importación",
+      "r7": "Sin margen ni comisiones ocultas",
+      "note": "~ significa «normalmente en parte». Los presupuestos de intermediarios suelen incluir su margen y no desglosan los costes."
+    }
+  },
+  "pricing": {
+    "popular": "El más popular",
+    "free": {
+      "name": "Estimación rápida",
+      "price": "Gratis",
+      "f1": "Rango del coste puesto en destino",
+      "f2": "Gráfico de la estructura de costes",
+      "f3": "Tiempo de tránsito y avisos",
+      "f4": "Sin registro",
+      "cta": "Calcular gratis"
+    },
+    "report": {
+      "name": "Informe PDF",
+      "price": "4,99 €",
+      "f1": "Cada concepto al céntimo",
+      "f2": "Tasas de subasta por tramo de precio",
+      "f3": "Arancel, impuesto especial e IVA con bases y tipos",
+      "f4": "Lista de documentos y PDF personalizado",
+      "cta": "Calcular y desbloquear el informe"
+    },
+    "partner": {
+      "name": "Para empresas importadoras",
+      "price": "Por lead aceptado",
+      "f1": "Compradores con una estimación del coche ya hecha",
+      "f2": "Consentimiento RGPD recabado antes de la cesión",
+      "f3": "Solo las consultas que aceptes",
+      "f4": "Sin suscripción",
+      "cta": "Hazte socio"
+    }
+  },
+  "faq": {
+    "eyebrow": "Preguntas y respuestas",
+    "title": "Preguntas frecuentes",
+    "lead": "¿No encuentras tu respuesta? La calculadora muestra cada supuesto y el informe PDF cada tipo y cada base.",
+    "q1": {
+      "q": "¿Cuánto es el arancel de un coche de EE. UU.?",
+      "a": "Para los turismos (NC 8703) el arancel es del 10 % del valor en aduana CIF, del 22 % para pick-ups y camiones ligeros (8704) y del 6–8 % para motos. Los vehículos históricos de más de 30 años en estado original pueden acogerse al 0 %. El valor en aduana es el precio de compra más las tasas de subasta, el transporte hasta la frontera de la UE y el seguro."
+    },
+    "q2": {
+      "q": "¿Qué impuesto especial se aplica al importar un coche a Polonia?",
+      "a": "Coches de combustión hasta 2000 cm³: 3,1 %; por encima de 2000 cm³: 18,6 %. Híbridos: 1,55 % hasta 2000 cm³ y 9,3 % hasta 3500 cm³. Los híbridos enchufables de hasta 2000 cm³ y los coches eléctricos están exentos. La base es el valor en aduana más el arancel, convertido a PLN."
+    },
+    "q3": {
+      "q": "¿Dónde conviene despachar el coche: Bremerhaven, Róterdam o Gdynia?",
+      "a": "El IVA de importación lo cobra el país de despacho: 19 % en Alemania, 21 % en los Países Bajos y 23 % en Polonia. Despachar en Alemania reduce el IVA, pero hay que sumar un camión portavehículos hasta Polonia y pagar el impuesto especial por separado en la oficina tributaria en un plazo de 14 días. La calculadora compara las opciones para tu coche."
+    },
+    "q4": {
+      "q": "¿Qué es el régimen aduanero 4200?",
+      "a": "Es el despacho a libre práctica con exención del IVA en el país de importación cuando el coche se envía directamente a una empresa registrada a efectos del IVA en otro Estado miembro de la UE. El comprador liquida el IVA en su país mediante la inversión del sujeto pasivo, por lo que resulta neutral para las empresas registradas a efectos del IVA. No está disponible para particulares."
+    },
+    "q5": {
+      "q": "¿Cuánto tarda el envío a Europa?",
+      "a": "Desde los puertos de la costa este de EE. UU. y de Canadá, unas 2–3 semanas de navegación; desde California, unas 5 semanas; desde Japón, 6–7 semanas; desde los EAU, 3–4 semanas, y desde el Reino Unido, unos pocos días. A esto hay que sumar el transporte del depósito de la subasta al puerto y el despacho."
+    },
+    "q6": {
+      "q": "¿De dónde salen los tipos de cambio?",
+      "a": "Utilizamos los tipos medios del NBP, que se obtienen automáticamente cada día hábil. Como pagas el coche días o semanas después del cálculo, el rango gratuito tiene en cuenta las fluctuaciones de la divisa."
+    },
+    "q7": {
+      "q": "¿Qué incluye el informe PDF de pago?",
+      "a": "Cada concepto al céntimo: tasas de subasta por tramo, transporte, valor en aduana, arancel, impuesto especial e IVA con bases y tipos, la lista de documentos necesarios y un PDF personalizado para descargar. Paga con BLIK, tarjeta o Przelewy24."
+    },
+    "q8": {
+      "q": "¿Es vinculante el resultado de la calculadora?",
+      "a": "No. Es una estimación basada en los tipos y tarifas vigentes. Los importes definitivos los fijan la aduana y la oficina tributaria, que pueden, por ejemplo, comprobar el valor en aduana. El informe enumera todos los supuestos, por lo que es fácil compararlo con la resolución oficial."
+    },
+    "q9": {
+      "q": "¿CarImport.eu importa coches?",
+      "a": "No. Solo somos una calculadora – no compramos, enviamos ni despachamos coches, y no cobramos comisiones de subastas ni de transportistas. Eso mantiene la estimación independiente. Si quieres, puedes enviar la estimación a una empresa importadora verificada, pero siempre es decisión tuya."
+    }
+  },
+  "calc": {
+    "title": "Calculadora del coste de importación de coches",
+    "lead": "Seis pasos: origen, vehículo, estado, destino, tras la importación e informe. El resultado aparece al final – en tres escenarios.",
+    "currency": "Moneda del resultado",
+    "progress": "Progreso"
+  },
+  "seo": {
+    "home": {
+      "title": "Calculadora de costes de importación de coches – EE. UU., Japón, Dubái a la UE | CarImport.eu",
+      "description": "Calculadora independiente para importar un coche de EE. UU., Canadá, Japón, EAU y Reino Unido: subasta, envío, arancel, impuesto especial, IVA, matriculación y riesgos. Estimación inmediata, sin registro."
+    },
+    "calculator": {
+      "title": "Calculadora de arancel, impuesto especial e IVA para coches importados | CarImport.eu",
+      "description": "Elige el país, la subasta, el puerto y el vehículo — la calculadora en tiempo real muestra el rango y el desglose de costes: precio, envío, arancel, impuesto especial, IVA y matriculación."
+    },
+    "privacy": {
+      "title": "Política de privacidad | CarImport.eu",
+      "description": "Cómo trata CarImport.eu los datos personales: pagos, informes, consultas a socios y cookies."
+    },
+    "about": {
+      "title": "Quiénes somos – una calculadora independiente de importación de coches | CarImport.eu",
+      "description": "Quiénes somos, de dónde salen nuestros datos y cómo ganamos dinero. CarImport.eu no vende ni importa coches – calcula el coste total de importación de forma honesta e independiente."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Información legal",
+    "title": "Política de privacidad",
+    "s1": {
+      "title": "Responsable del tratamiento",
+      "text": "El responsable del tratamiento de los datos es el titular de CarImport.eu. Para cuestiones de protección de datos, escríbenos a {{email}}."
+    },
+    "s2": {
+      "title": "Qué datos tratamos",
+      "text": "Los datos introducidos para el cálculo (sin datos personales) y, al comprar un informe, tu nombre y correo electrónico. El formulario para socios recoge además un número de teléfono y un mensaje. Nunca tratamos datos de tarjetas — lo hace Stripe."
+    },
+    "s3": {
+      "title": "Finalidades y bases jurídicas",
+      "text": "La ejecución de la compra del informe (art. 6, apdo. 1, letra b) del RGPD), las obligaciones contables (letra c), el envío de tu consulta a un socio sobre la base de tu consentimiento (letra a) y la analítica con el consentimiento otorgado en el banner de cookies."
+    },
+    "s4": {
+      "title": "Destinatarios",
+      "text": "Stripe Payments Europe (pagos), nuestros proveedores de alojamiento y correo electrónico y — en el caso del formulario para socios — una empresa importadora verificada, solo con tu consentimiento."
+    },
+    "s5": {
+      "title": "Cookies",
+      "text": "Las cookies esenciales y el almacenamiento del navegador recuerdan tu idioma, el tema, el progreso en la calculadora y el acceso a un informe comprado. La analítica solo se activa después de que hagas clic en «Aceptar todas»."
+    },
+    "s6": {
+      "title": "Tus derechos",
+      "text": "Tienes derecho de acceso, rectificación, supresión, limitación, portabilidad y oposición, a retirar tu consentimiento en cualquier momento y a presentar una reclamación ante tu autoridad de protección de datos. Escríbenos: {{email}}."
+    }
+  },
+  "delivery": {
+    "PORT_PICKUP": "Recogida en el puerto",
+    "CAR_CARRIER": "Camión portavehículos",
+    "TOW_TRUCK": "Grúa",
+    "SELF_DRIVE": "Con matrícula provisional"
+  },
+  "scenario": {
+    "0": "Optimista",
+    "1": "Medio",
+    "2": "Pesimista"
+  },
+  "scenarioHint": {
+    "0": "Tarifas más bajas, tipo de cambio favorable, nada sale mal",
+    "1": "Tarifas típicas + riesgos ponderados por su probabilidad",
+    "2": "Tarifas más altas, tipo de cambio desfavorable, los riesgos se materializan"
+  },
+  "timeline": {
+    "INLAND": "Recogida en el depósito y transporte al puerto",
+    "OCEAN": "Navegación (incl. espera del buque)",
+    "CLEARANCE": "Descarga y despacho de aduanas",
+    "DELIVERY": "Entrega en tu puerta",
+    "REGISTRATION": "Preparación y matriculación"
+  },
+  "plan": {
+    "deadline": {
+      "beforeRelease": "Antes del levante en el puerto",
+      "14days": "14 días desde la llegada a Polonia",
+      "beforeInspection": "Antes de la inspección técnica",
+      "beforeRegistration": "Antes de la matriculación",
+      "pl30days": "30 días desde la importación (multa de hasta 1000 PLN)",
+      "fromRegistration": "Desde la matriculación / matrícula provisional",
+      "national": "Según las normas del país de matriculación",
+      "none": "Sin plazo legal"
+    },
+    "step": {
+      "clearance": {
+        "title": "Despacho de aduanas en el puerto",
+        "text": "El agente de aduanas presenta la declaración (DUA); tú pagas el arancel y el IVA de importación. Necesario: factura, conocimiento de embarque, title/certificado de exportación, EORI."
+      },
+      "pl": {
+        "excise": {
+          "title": "Declaración y pago del impuesto especial (AKC-U/S)",
+          "text": "Presenta la declaración en la oficina tributaria (o por internet) y paga el impuesto especial; el justificante es necesario para la matriculación."
+        },
+        "exciseExemption": {
+          "title": "Declaración de exención del impuesto especial (coche eléctrico)",
+          "text": "Los coches eléctricos están exentos, pero hay que presentar igualmente la declaración AKC-U/S."
+        },
+        "inspection": {
+          "title": "Inspección técnica en una estación de ITV",
+          "text": "Primera inspección de un vehículo importado, incluida la identificación del VIN; el resultado se envía al registro central."
+        },
+        "recycling": {
+          "title": "Tasa de reciclaje de 500 PLN",
+          "text": "Se paga al Fondo Nacional de Protección del Medio Ambiente en la primera matriculación de un coche importado."
+        },
+        "registration": {
+          "title": "Matriculación en la oficina de tráfico",
+          "text": "Solicitud, prueba de propiedad con traducción, impuesto especial, inspección, tasa de reciclaje, justificante del IVA y del arancel; recibes un permiso provisional y las placas."
+        }
+      },
+      "translations": {
+        "title": "Traducciones juradas",
+        "text": "Title/permiso de circulación extranjero, factura y documento de exportación – por un traductor jurado."
+      },
+      "lighting": {
+        "title": "Adaptación del alumbrado a las normas de la UE",
+        "text": "Intermitentes traseros ámbar, antiniebla trasero, reglaje de faros – sin ello el coche no supera la inspección."
+      },
+      "insurance": {
+        "title": "Seguro de responsabilidad civil",
+        "text": "Obligatorio desde la matriculación; conviene contratar un seguro a todo riesgo tras una tasación pericial."
+      },
+      "de": {
+        "approval": {
+          "title": "Homologación individual (§21 StVZO)",
+          "text": "Inspección pericial completa (TÜV/DEKRA) para coches de fuera de la UE; necesaria para la matriculación."
+        },
+        "registration": {
+          "title": "Matriculación (Zulassung)",
+          "text": "Número de seguro eVB, justificante del despacho de aduanas, informe pericial, mandato SEPA para el impuesto de circulación."
+        }
+      },
+      "generic": {
+        "inspection": {
+          "title": "Inspección / homologación individual",
+          "text": "El alcance depende del país – los coches de fuera de la UE suelen necesitar homologación individual."
+        },
+        "registrationTax": {
+          "title": "Impuesto nacional de matriculación",
+          "text": "P. ej. BPM en los Países Bajos, NoVA en Austria, malus en Francia – compruébalo antes de comprar."
+        },
+        "registration": {
+          "title": "Matriculación del vehículo",
+          "text": "Solicítala con el justificante del despacho de aduanas, la inspección y el seguro."
+        }
+      },
+      "evCharging": {
+        "title": "Toma de carga",
+        "text": "Los coches de EE. UU. usan NACS/CCS1 – necesitas un adaptador o la instalación de una toma CCS2/Tipo 2."
+      }
+    }
+  },
+  "deliveryHint": {
+    "CAR_CARRIER": "Lo más barato para coches que circulan",
+    "TOW_TRUCK": "Grúa individual, también para coches que no arrancan",
+    "SELF_DRIVE": "Matrícula provisional + seguro; solo coches que circulan",
+    "PORT_PICKUP": "Tú mismo organizas el transporte"
+  },
+  "serviceHint": {
+    "SWORN_TRANSLATION": "Title, factura y documento de exportación",
+    "US_LIGHTING_CONVERSION": "Intermitentes y luces conformes a la normativa de la UE",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Coche con volante a la derecha",
+    "REAR_FOG_LIGHT": "Obligatorio en la inspección",
+    "SPEEDOMETER_KMH": "Velocímetro en millas – comodidad y valor de reventa",
+    "SERVICE_INSPECTION": "Aceite, filtros, fluidos y frenos tras un largo viaje",
+    "GEOMETRY_ALIGNMENT": "Recomendado tras reparaciones de la suspensión",
+    "DETAILING": "Lavado, limpieza interior, corrección de pintura",
+    "EXPERT_VALUATION": "Útil para el seguro a todo riesgo y la reventa"
+  },
+  "riskInfo": {
+    "RISK_PORT_STORAGE": "La terminal cobra por día tras el periodo gratuito, p. ej. cuando los documentos o el transporte se retrasan.",
+    "RISK_CUSTOMS_INSPECTION": "Control aleatorio o selectivo: desconsolidación, escáner, tasas de terminal adicionales.",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Si el precio parece demasiado bajo, la aduana puede aplicar un valor más alto – suben el arancel y el IVA.",
+    "RISK_VESSEL_ROLLOVER": "El buque tiene overbooking y el contenedor sale en el siguiente – almacenaje adicional en el puerto de exportación.",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Los daños en tránsito los cubre la póliza, menos la franquicia.",
+    "RISK_HIDDEN_DAMAGE": "Averías que no se ven en las fotos de la subasta – cuanto peor es el estado, mayor es el riesgo.",
+    "RISK_TITLE_DELAY": "La subasta envía el title con retraso – el coche espera en el depósito o en el puerto.",
+    "RISK_EXPORT_DOCS_DELAY": "La baja registral y los documentos de exportación tardan más de lo habitual."
+  },
+  "docStage": {
+    "PURCHASE": "Compra",
+    "SHIPPING": "Envío",
+    "CUSTOMS": "Despacho de aduanas",
+    "REGISTRATION": "Matriculación"
+  },
+  "proposal": {
+    "tag": "Propuesto",
+    "restore": "Usar la propuesta",
+    "was": "propuesta: {{value}} {{unit}}"
+  },
+  "region": {
+    "NORTH_SEA": "Mar del Norte",
+    "BALTIC": "Báltico y Escandinavia",
+    "ATLANTIC": "Atlántico",
+    "WEST_MED": "Mediterráneo occidental",
+    "EAST_MED": "Adriático, Egeo y mar Negro"
+  },
+  "about": {
+    "eyebrow": "Quiénes somos",
+    "title1": "Calculamos la importación de coches.",
+    "title2": "No vendemos coches.",
+    "lead": "CarImport.eu es una calculadora independiente del coste de traer un coche de fuera de la Unión Europea. La creamos para que cualquiera – no solo un comerciante con diez años de experiencia – sepa antes de comprar cuánto pagará realmente.",
+    "story": {
+      "eyebrow": "Cómo empezó",
+      "title": "Por la frustración con los costes ocultos",
+      "p1": "Un coche de una subasta estadounidense parece una ganga – hasta que sumas las tasas de subasta, el transporte al puerto, el flete, el arancel, el impuesto especial, el IVA, la descarga, la grúa, las traducciones, la ITV y la matriculación. Cada concepto es «pequeño», pero juntos pueden duplicar el precio.",
+      "p2": "La información está dispersa entre tarifas de subastas, aranceles aduaneros, tablas de tipos de cambio y las normas de 27 países. Los presupuestos de los intermediarios suelen dar una sola cifra sin desglose – y con su margen incluido.",
+      "p3": "Creamos una herramienta que lo reúne todo, calcula con los tipos actuales y muestra cada supuesto. Sin registro y sin llamadas de comerciales."
+    },
+    "role": {
+      "eyebrow": "Honestos sobre lo que somos",
+      "title": "Somos una calculadora. Solo una calculadora.",
+      "is": "Lo que somos",
+      "is1": "Una calculadora independiente del coste total de importación",
+      "is2": "Una comparativa de 43 puertos de despacho de la UE para tu dirección",
+      "is3": "La fuente de un informe PDF detallado con cada tipo",
+      "is4": "Una lista de pasos y documentos tras la importación",
+      "isNot": "Lo que no somos",
+      "isNot1": "No somos importadores ni concesionarios – no vendemos coches",
+      "isNot2": "No organizamos el transporte ni el despacho de aduanas",
+      "isNot3": "Sin comisiones de subastas, transportistas ni agentes de aduanas",
+      "isNot4": "No somos una administración ni asesores fiscales – el resultado es una estimación"
+    },
+    "data": {
+      "eyebrow": "De dónde salen las cifras",
+      "title": "Tipos actuales, no «más o menos»",
+      "lead": "Cada importe del resultado procede de un tipo concreto que se muestra en el informe. Los datos se actualizan automáticamente o cada vez que cambia la ley.",
+      "customs": {
+        "title": "Arancel aduanero de la UE",
+        "text": "Tipos arancelarios por código NC (TARIC) para turismos, pick-ups, motos y vehículos históricos."
+      },
+      "fx": {
+        "title": "Tipos de los bancos centrales",
+        "text": "Tipos de referencia obtenidos cada día hábil, con un margen para las fluctuaciones hasta el pago."
+      },
+      "fees": {
+        "title": "Tarifas de subastas y transportistas",
+        "text": "Tramos de tasas de Copart, IAAI, Manheim y USS, tarifas de flete, tasas portuarias y precios de transporte por km."
+      },
+      "law": {
+        "title": "Normativa nacional",
+        "text": "Impuesto especial, tipos de IVA de 27 países, tasas de matriculación e inspecciones obligatorias – con la base legal en el informe."
+      }
+    },
+    "money": {
+      "eyebrow": "Cómo ganamos dinero",
+      "title": "Con transparencia – porque se trata de confianza",
+      "lead": "El resultado de la calculadora no depende de quién nos pague ni de cuánto. Ganamos dinero de tres formas, todas abiertas:",
+      "m1": {
+        "title": "Informe PDF – 4,99 €",
+        "text": "El resultado gratuito muestra el rango y la estructura de costes. Solo compras el informe detallado con cada concepto si lo necesitas."
+      },
+      "m2": {
+        "title": "Consulta opcional a una empresa importadora",
+        "text": "Solo si lo pides, enviamos tu estimación a una empresa verificada. Nos paga ella, no tú – y solo con tu consentimiento."
+      },
+      "m3": {
+        "title": "Enlaces de afiliación señalizados",
+        "text": "P. ej. comprobación del VIN o cambio de divisas. Siempre señalizados y sin influir nunca en la estimación."
+      }
+    },
+    "values": {
+      "eyebrow": "Lo que nos guía",
+      "transparency": {
+        "title": "Transparencia",
+        "text": "Cada cifra tiene una fuente y una base. Si algo es una estimación, lo decimos."
+      },
+      "independence": {
+        "title": "Independencia",
+        "text": "No tenemos ningún interés en que compres el coche ni en quién te lo importe."
+      },
+      "precision": {
+        "title": "Precisión",
+        "text": "Calculamos al céntimo, pero también mostramos un rango – porque importar no es una ciencia exacta."
+      }
+    },
+    "cta": {
+      "title": "Comprueba tu coche en un minuto",
+      "text": "¿Tienes una pregunta o has visto un tipo desactualizado? Escribe a {{email}}"
+    }
+  },
+  "currency": {
+    "label": "Moneda del resultado",
+    "title": "¿En qué moneda mostramos los costes?",
+    "hint": "Los importes de la subasta (USD, JPY, AED…) se convierten al tipo actual del banco central. La moneda no cambia el cálculo de los impuestos – estos siempre los determina el país de despacho.",
+    "groupEu": "Monedas de la UE",
+    "groupOther": "Otras"
+  }
+}
