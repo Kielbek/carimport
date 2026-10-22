@@ -1,0 +1,1014 @@
+{
+  "affiliate": {
+    "CURRENCY_EXCHANGE": "Pigesnis valiutos keitimas",
+    "CURRENCY_EXCHANGE_HINT": "Sumokėkite už automobilį be banko maržos",
+    "FINANCING": "Lizingas arba paskola",
+    "FINANCING_HINT": "Finansuokite importą ir mokesčius",
+    "VIN_CHECK": "Patikrinkite VIN istoriją",
+    "VIN_CHECK_HINT": "Žalos, rida, vagystės",
+    "sponsored": "Remiama",
+    "title": "Jums taip pat gali prireikti"
+  },
+  "app": {
+    "headline": "Kiek iš tikrųjų kainuoja importuotas automobilis?",
+    "tagline": "Aukcionai JAV, Kanadoje, Japonijoje, Dubajuje ar JK → ES muitas, akcizas ir PVM. Rezultatas iškart, be registracijos."
+  },
+  "auction": {
+    "COPART": "Copart",
+    "DEALER": "Prekiautojas / privatus asmuo",
+    "EMIRATES_AUCTION": "Emirates Auction",
+    "IAAI": "IAAI",
+    "USS": "USS Japan"
+  },
+  "buyer": {
+    "COMPANY": "Įmonė",
+    "PRIVATE": "Privatus asmuo"
+  },
+  "category": {
+    "MOTORCYCLE": "Motociklas",
+    "PASSENGER_CAR": "Lengvasis automobilis",
+    "PICKUP_TRUCK": "Pikapas",
+    "REGISTRATION": "Po importo ir registracija",
+    "SUV": "Visureigis (SUV)",
+    "TAXES": "ES muitai ir mokesčiai",
+    "TRANSPORT": "Transportas ir logistika",
+    "VAN": "Furgonas",
+    "VEHICLE": "Transporto priemonė ir aukcionas",
+    "RISK": "Rizikos kelyje"
+  },
+  "condition": {
+    "ENGINE_STARTS": "Variklis užsiveda",
+    "ENGINE_STARTS_HINT": "Negali važiuoti savo eiga",
+    "NON_RUNNING": "Sugadintas / Salvage",
+    "NON_RUNNING_HINT": "Reikalingas evakuatorius su gerve",
+    "RUN_AND_DRIVE": "Run & Drive",
+    "RUN_AND_DRIVE_HINT": "Užsiveda ir važiuoja"
+  },
+  "cost": {
+    "AUCTION_AGENT_COMMISSION": "Eksporto agento komisinis mokestis",
+    "AUCTION_BUYER_FEE": "Aukciono pirkėjo mokestis",
+    "AUCTION_ENVIRONMENTAL_FEE": "Aplinkosaugos mokestis",
+    "AUCTION_EXPORT_DOCS": "Eksporto dokumentai",
+    "AUCTION_GATE_FEE": "Išvežimo mokestis (gate fee)",
+    "AUCTION_RECYCLING_FEE": "Perdirbimo mokestis (Japonija)",
+    "AUCTION_SERVICE_FEE": "Aukciono paslaugų mokestis",
+    "AUCTION_TITLE_HANDLING_FEE": "Nuosavybės dokumento (title) tvarkymo mokestis",
+    "AUCTION_VIRTUAL_BID_FEE": "Internetinio statymo mokestis",
+    "CARGO_INSURANCE": "Krovinio draudimas",
+    "CUSTOMS_AGENCY": "Muitinės tarpininkas",
+    "CUSTOMS_DUTY": "Muitas",
+    "EXCISE_TAX": "Akcizas",
+    "FORKLIFT_LOADING": "Pakrovimas šakiniu krautuvu",
+    "IMPORT_VAT": "Importo PVM",
+    "INDIVIDUAL_APPROVAL": "Individualus patvirtinimas (§21 StVZO)",
+    "INLAND_TRANSPORT": "Sausumos transportas iki uosto",
+    "INTRA_EU_ACQUISITION_VAT": "Prekių įsigijimo ES viduje PVM (atvirkštinis apmokestinimas, atskaitomas)",
+    "INTRA_EU_TRANSPORT": "Autovežis iš uosto iki paskirties vietos",
+    "OCEAN_FREIGHT": "Jūrinis frachtas",
+    "PORT_UNLOADING": "Iškrovimas uoste ir terminalas",
+    "PURCHASE_PRICE": "Pirkimo kaina (laimėtas statymas)",
+    "RDW_INSPECTION": "RDW patikra",
+    "RECYCLING_FEE": "Perdirbimo mokestis",
+    "REGISTRATION_FEE": "Registracijos mokesčiai",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Žibintų reguliavimas (vairas dešinėje)",
+    "SWORN_TRANSLATION": "Prisiekęs dokumentų vertimas",
+    "TECHNICAL_INSPECTION": "Techninė apžiūra",
+    "US_LIGHTING_CONVERSION": "Apšvietimo pritaikymas (JAV specifikacija)",
+    "WINCH_CONTAINER_LOADING": "Pakrovimas į konteinerį gerve",
+    "DELIVERY_CAR_CARRIER": "Autovežis iš uosto iki durų",
+    "DELIVERY_TOW_TRUCK": "Evakuatorius iš uosto iki durų",
+    "DELIVERY_SELF_DRIVE": "Parvažiavimas su laikinais numeriais (kuras, numeriai, trumpalaikis draudimas)",
+    "TECHNICAL_INSPECTION_IMPORT": "Importuotos transporto priemonės techninė apžiūra",
+    "REG_TEMPORARY_PERMIT": "Laikinas registracijos leidimas",
+    "REG_TEMPORARY_PLATES": "Laikini numeriai",
+    "REG_CERTIFICATE": "Registracijos liudijimas",
+    "REG_PLATES": "Valstybinio numerio ženklai",
+    "REG_STICKER": "Kontrolinis lipdukas",
+    "REAR_FOG_LIGHT": "Galinio rūko žibinto montavimas",
+    "SPEEDOMETER_KMH": "Spidometro perdarymas į km/h",
+    "SERVICE_INSPECTION": "Techninis aptarnavimas ir skysčių keitimas",
+    "GEOMETRY_ALIGNMENT": "Ratų geometrijos reguliavimas",
+    "DETAILING": "Valymas ir detailing",
+    "EXPERT_VALUATION": "Eksperto vertinimas (pvz., KASKO draudimui)",
+    "REPAIR_ESTIMATE": "Remontas (jūsų sąmata)",
+    "INSURANCE_FIRST_YEAR": "Draudimas – pirmieji metai (jūsų suma)",
+    "RISK_PORT_STORAGE": "Saugojimas uoste (vėlyvas atsiėmimas, dokumentai)",
+    "RISK_CUSTOMS_INSPECTION": "Muitinės patikrinimas / konteinerio rentgenas",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Muitinės vertės ginčijimas (papildomas muitas ir PVM)",
+    "RISK_VESSEL_ROLLOVER": "Perkėlimas į vėlesnį laivą (saugojimas eksporto uoste)",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Žala transportuojant – draudimo išskaita",
+    "RISK_HIDDEN_DAMAGE": "Paslėpti defektai, nematomi aukcione",
+    "RISK_TITLE_DELAY": "Nuosavybės dokumento vėlavimas (papildomas saugojimas)",
+    "RISK_EXPORT_DOCS_DELAY": "Eksporto dokumentų vėlavimas"
+  },
+  "doc": {
+    "billOfLading": "Konosamentas (Bill of Lading)",
+    "companyRegistryExtract": "Juridinių asmenų registro išrašas",
+    "customsDeclarationSad": "Muitinės deklaracija (BAD)",
+    "customsPowerOfAttorney": "Įgaliojimas muitinės tarpininkui",
+    "eoriNumber": "Importuotojo EORI numeris",
+    "evChargingPortAdapterNote": "Patikrinkite įkrovimo lizdo standartą (NACS/CCS1 → CCS2)",
+    "historicExpertOpinion": "Eksperto išvada dėl istorinės transporto priemonės statuso",
+    "insurancePolicy": "Krovinio draudimo polisas",
+    "invoice": "Aukciono sąskaita faktūra / pirkimo–pardavimo sutartis",
+    "ownership": {
+      "japanExportCertificate": "Japonijos eksporto sertifikatas (išregistravimas)",
+      "title": "Originalus Title (nuosavybės dokumentas)",
+      "uaeExportCertificate": "JAE eksporto sertifikatas (RTA)",
+      "v5c": "JK registracijos dokumentas V5C"
+    },
+    "pl": {
+      "exciseDeclarationAkcUs": "Akcizo deklaracija AKC-U/S ir mokėjimo įrodymas",
+      "exciseExemptionConfirmation": "Akcizo atleidimo patvirtinimas (elektromobilis)",
+      "recyclingFeeConfirmation": "Perdirbimo mokesčio sumokėjimo patvirtinimas"
+    },
+    "procedure4200VatIdAndProofOfTransport": "Procedūra 4200: pirkėjo ES PVM mokėtojo kodas ir transportavimo įrodymas",
+    "registrationApplication": "Prašymas įregistruoti transporto priemonę",
+    "salvageTitleRepairEvidence": "Remonto dokumentai (salvage title)",
+    "swornTranslation": "Prisiekę užsienio dokumentų vertimai",
+    "technicalInspection": "Techninės apžiūros pažyma",
+    "transportInvoices": "Transporto ir frachto sąskaitos faktūros",
+    "usExportAesItn": "JAV eksporto deklaracija (AES/ITN)",
+    "vatPaymentProof": "PVM sumokėjimo įrodymas"
+  },
+  "error": {
+    "auction": {
+      "noSchedule": "Nėra aukciono mokesčių lentelės.",
+      "unsupported": "Šis aukcionas nepalaikomas."
+    },
+    "excise": {
+      "rateNotFound": "Šiai konfigūracijai nėra akcizo tarifo."
+    },
+    "port": {
+      "unknown": "Nežinomas paskirties uostas."
+    },
+    "procedure4200": {
+      "notAvailableInPort": "Šiame uoste procedūra 4200 negalima.",
+      "sameCountry": "Taikant procedūrą 4200 muitinis įforminimas turi vykti kitoje šalyje nei paskirties šalis."
+    },
+    "route": {
+      "unavailable": "Šiam pasirinkimui nėra jūrinio maršruto."
+    },
+    "tariff": {
+      "notFound": "Transporto priemonės nepavyko klasifikuoti pagal muitų tarifą."
+    },
+    "taxProfile": {
+      "missing": "Pasirinktai šaliai nėra mokesčių tarifų."
+    }
+  },
+  "fuel": {
+    "DIESEL": "Dyzelinas",
+    "EV": "Elektra",
+    "HEV": "Hibridas",
+    "HYDROGEN": "Vandenilis",
+    "LPG": "SND (LPG)",
+    "MHEV": "Lengvasis hibridas",
+    "PETROL": "Benzinas",
+    "PHEV": "Įkraunamas hibridas"
+  },
+  "lead": {
+    "consentMarketing": "Siųskite man importo pasiūlymus ir patarimus (neprivaloma).",
+    "consentTransfer": "Sutinku, kad mano duomenys ir skaičiavimas būtų perduoti vienam patikrintam partneriui pasiūlymui parengti (BDAR 6 str. 1 d. a p.).",
+    "email": "El. paštas",
+    "message": "Aukciono nuoroda arba papildoma informacija",
+    "name": "Vardas ir pavardė",
+    "phone": "Telefonas (neprivaloma)",
+    "submit": "Siųsti užklausą",
+    "subtitle": "CarImport.eu automobilių neimportuoja. Jei norite, perduosime jūsų skaičiavimą vienai patikrintai importo įmonei, kuri parengs pasiūlymą. Jokių įsipareigojimų.",
+    "thanks": "Ačiū!",
+    "thanksHint": "Importo įmonė susisieks su jumis per 1 darbo dieną.",
+    "title": "Užklausa importo įmonei (neprivaloma)"
+  },
+  "origin": {
+    "CANADA": "Kanada",
+    "JAPAN": "Japonija",
+    "UAE": "JAE / Dubajus",
+    "UK": "Jungtinė Karalystė",
+    "USA": "JAV"
+  },
+  "paywall": {
+    "blikHint": "Mokėkite BLIK, Przelewy24 arba kortele.",
+    "currency": "Mokėjimo valiuta",
+    "email": "El. paštas (atsiųsime nuorodą į ataskaitą)",
+    "fullName": "Vardas ir pavardė (bus išspausdinta ataskaitoje)",
+    "pay": "Pereiti prie mokėjimo",
+    "redirecting": "Nukreipiama…",
+    "secure": "Saugus mokėjimas per Stripe. Mes niekada nesaugome kortelės duomenų.",
+    "subtitle": "Tikslios sumos, mokesčių bazės ir tarifai, dokumentai – PDF formatu su jūsų vardu.",
+    "terms": "Sutinku su sąlygomis ir prašau skaitmeninį turinį pateikti nedelsiant, atsisakydamas teisės atsisakyti sutarties.",
+    "title": "Išsami importo ataskaita"
+  },
+  "report": {
+    "amount": "Suma",
+    "back": "Grįžti į skaičiuoklę",
+    "base": "Bazė",
+    "download": "Atsisiųsti PDF",
+    "expired": "Mokėjimas nebuvo užbaigtas.",
+    "generating": "Generuojamas PDF…",
+    "item": "Pozicija",
+    "rate": "Tarifas",
+    "refunded": "Už šį užsakymą pinigai grąžinti.",
+    "stage": "Etapas",
+    "title": "Transporto priemonės importo išlaidų ataskaita",
+    "total": "Bendra kaina iki durų",
+    "waiting": "Tvirtinamas jūsų mokėjimas…",
+    "delivery": "Pristatymas",
+    "leadTime": "Laikas iki registracijos",
+    "days": "dienos",
+    "scenarios": "Trys išlaidų scenarijai",
+    "timeline": "Laiko planas",
+    "plan": "Ką daryti po importo – žingsnis po žingsnio",
+    "step": "Žingsnis",
+    "deadline": "Terminas",
+    "riskDetail": "Tikimybė {{p}}%, kaina įvykus: {{min}}–{{max}} {{cur}}",
+    "userAmount": "jūsų įvesta suma",
+    "scenarioMethod": "Vidutinis scenarijus rizikas įtraukia kaip tikėtiną vertę (tikimybė × vidutinė kaina); pesimistinis daro prielaidą, kad kiekviena rizika įvyksta didžiausia kaina."
+  },
+  "result": {
+    "chart": "Išlaidų struktūra",
+    "exciseIncluded": "Akcizas įskaičiuotas",
+    "fx": "NBP kursai, galioję {{date}}",
+    "paid1": "Tikslūs aukciono mokesčiai",
+    "paid2": "Muitas, akcizas ir PVM",
+    "paid3": "Dokumentų sąrašas",
+    "paid4": "Asmeninė PDF ataskaita",
+    "partner": "Norite importo įmonės pasiūlymo?",
+    "rangeHint": "Intervalas apima valiutų kursų ir frachto kainų svyravimus.",
+    "title": "Numatoma kaina iki durų",
+    "transit": "Jūroje: {{days}} d.",
+    "unlock": "Atrakinkite išsamią ataskaitą – {{price}}",
+    "updating": "Atnaujinama…",
+    "short": "Kaina iki durų",
+    "calculating": "Skaičiuojamos visos pozicijos ir scenarijai…",
+    "edit": "Keisti duomenis",
+    "structure": "Išlaidų struktūra (vidutinis scenarijus)",
+    "timeline": "Laikas iki registracijos: {{min}}–{{max}} d.",
+    "included": "Kas įskaičiuota",
+    "risks": "Kas gali nutikti kelyje",
+    "risksLead": "Kiekviena rizika turi tikimybę ir kainos intervalą. Vidutinis scenarijus jas įskaičiuoja proporcingai, pesimistinis – visas. Sumos pateikiamos ataskaitoje.",
+    "probability": "Tikimybė",
+    "reportEyebrow": "Ataskaita „nuo durų iki durų“",
+    "reportTitle": "Kiekviena pozicija iki cento – trimis scenarijais",
+    "reportItem1": "Aukciono mokesčiai, transportas, frachtas ir draudimas",
+    "reportItem2": "Muitas, akcizas ir PVM su bazėmis ir tarifais",
+    "reportItem3": "Pristatymas: km × tarifas, pakrovimas, minimumas",
+    "reportItem4": "Registracijos mokesčiai ir paslaugos po importo",
+    "reportItem5": "Rizikos su sumomis: optimistinis, vidutinis, pesimistinis",
+    "reportItem6": "Žingsnis po žingsnio planas su terminais ir dokumentų sąrašu",
+    "cheapestPort": "pigiausias uostas"
+  },
+  "shipping": {
+    "CONTAINER_EXCLUSIVE": "Atskiras konteineris",
+    "CONTAINER_SHARED": "Bendras konteineris",
+    "RORO": "RoRo"
+  },
+  "title": {
+    "CLEAN": "Švarus nuosavybės dokumentas (clean title)",
+    "SALVAGE": "Salvage / neremontuotinas"
+  },
+  "validation": {
+    "auctionHouse": {
+      "notInOrigin": "Šis aukcionas pasirinktoje šalyje neveikia."
+    },
+    "engineCc": {
+      "required": "Įveskite variklio darbinį tūrį."
+    },
+    "procedure4200": {
+      "companyOnly": "Procedūra 4200 galima tik įmonėms, turinčioms galiojantį ES PVM mokėtojo kodą."
+    }
+  },
+  "warning": {
+    "dealer": {
+      "verifyExportDocuments": "Pirkdami iš prekiautojo įsitikinkite, kad bus pateikti eksporto dokumentai."
+    },
+    "historic": {
+      "expertOpinionRequired": "Kolekcinės transporto priemonės statusui (0 % muitas) reikalinga eksperto išvada, o muitinė jį gali ginčyti."
+    },
+    "intraEuTransport": {
+      "notPriced": "Nėra autovežio kainos iš uosto iki paskirties vietos – išlaidos neįskaičiuotos."
+    },
+    "newMeansOfTransport": {
+      "vatInDestination": "Nauja transporto priemonė (≤6 mėn. arba ≤6000 km): PVM taip pat mokamas registracijos šalyje."
+    },
+    "nl": {
+      "bpmNotIncluded": "Nyderlandų registracijos mokestis BPM neįskaičiuotas."
+    },
+    "pl": {
+      "clearedForOtherMemberState": "Muitinis įforminimas Lenkijoje registracijai kitoje šalyje – patikrinkite paskirties šalies registracijos mokesčius.",
+      "exciseDeclarationWithin14Days": "Lenkijos akcizas mokamas mokesčių inspekcijoje (AKC-U/S) per 14 dienų nuo atvykimo.",
+      "pickupMayBeReclassified": "Pikapas, registruojamas kaip lengvasis automobilis, gali būti apmokestintas akcizu – patikrinkite patvirtinimą."
+    },
+    "procedure4200": {
+      "reverseChargeDeductible": "Procedūra 4200: PVM apskaičiuojamas paskirties šalyje (atvirkštinis apmokestinimas, neutralus PVM mokėtojams)."
+    },
+    "registrationTax": {
+      "notModelled": "Paskirties šalies registracijos mokestis kol kas neskaičiuojamas."
+    },
+    "delivery": {
+      "portPickup": "Pasirinktas atsiėmimas uoste – kelių transportas namo neįskaičiuotas.",
+      "selfDriveNotRunning": "Neveikiančiu automobiliu negalima važiuoti su laikinais numeriais – pasirinkite evakuatorių."
+    }
+  },
+  "wizard": {
+    "auction": "Aukcionas",
+    "back": "Atgal",
+    "bid": "Laimėtas statymas",
+    "buyer": "Pirkėjas",
+    "category": "Transporto priemonės tipas",
+    "condition": "Transporto priemonės būklė",
+    "destination": "Registracijos šalis",
+    "engineCc": "Variklio darbinis tūris",
+    "exciseRate": "PL akcizas: {{rate}}%",
+    "exciseWarning": "Virš 2000 cm³ akcizas šokteli nuo {{from}}% iki {{to}}% – skirtumas dažnai siekia tūkstančius!",
+    "finish": "Išsami ataskaita",
+    "forklift": "krautuvas / gervė",
+    "fuel": "Pavara",
+    "historic": "Originalios būklės istorinė transporto priemonė",
+    "historicHint": "30+ metų, nemodifikuota: 0 % muitas ir lengvatinis PVM.",
+    "next": "Toliau",
+    "origin": "Perkama iš",
+    "port": "ES muitinio įforminimo uostas",
+    "procedure4200": "Muitinės procedūra 4200",
+    "procedure4200Hint": "ES PVM mokėtojoms įmonėms: jokio PVM pasienyje, atvirkštinis apmokestinimas paskirties šalyje.",
+    "shipping": "Jūrinio gabenimo būdas",
+    "step1": "Iš kur",
+    "step2": "Transporto priemonė",
+    "step3": "Būklė ir kaina",
+    "title": "Nuosavybės dokumento tipas",
+    "year": "Pagaminimo metai",
+    "zone": "Aikštelės vieta (valstija / provincija)",
+    "zoneOther": "Kita / nežinau",
+    "advanced": "Išplėstinės parinktys",
+    "step4": "Paskirtis ir pristatymas",
+    "step5": "Po importo",
+    "step6": "Išlaidų ataskaita",
+    "calculate": "Apskaičiuoti visą kainą",
+    "departurePort": "Išvykimo uostas",
+    "departureAuto": "Automatiškai – pigiausias maršrutas",
+    "departureHint": "Pasirinkite konkretų uostą, jei ekspeditorius jį jau nurodė.",
+    "delivery": "Transportas iš uosto iki jūsų durų",
+    "distance": "Atstumas nuo uosto iki jūsų adreso",
+    "pricePerKm": "Kaina už kilometrą",
+    "tariffUnknown": "Šiai šaliai nėra kilometrinio tarifo – bus taikoma fiksuota kaina.",
+    "repair": "Remonto kaina",
+    "repairHintRunner": "Siūlome tipinę sumą šiai būklei ir dokumentui (dažai, padangos). Turite serviso sąmatą? Įveskite ją.",
+    "repairHintDamaged": "Siūlome tipinę remonto sumą šiai būklei (apie 30–40 % kainos). Turite serviso sąmatą? Įveskite ją – paslėpti defektai skaičiuojami atskirai kaip rizika.",
+    "afterImportLead": "Viskas, ką reikia atlikti ir sumokėti nuo uosto iki valstybinių numerių. Privalomos pozicijos įtraukiamos visada; kitas pasirenkate jūs.",
+    "statutory": "Privaloma (oficialūs mokesčiai)",
+    "optional": "Neprivaloma",
+    "recommended": "rekomenduojama",
+    "optionsLoading": "Įkeliamos paslaugos jūsų maršrutui…",
+    "noServices": "Šiai šaliai dar neturime išsamaus registracijos kainyno – ataskaitoje pateikiami žingsniai.",
+    "insurance": "Pirmųjų metų civilinės atsakomybės draudimas",
+    "insuranceHint": "Siūlome šios šalies naujai registruoto automobilio civilinės atsakomybės draudimo pasiūlymų medianą. Turite savo pasiūlymą? Įveskite jį.",
+    "address": "Pristatymo adresas",
+    "addressPlaceholder": "pvz., Kaunas, Laisvės al. 5 arba pašto kodas",
+    "addressChange": "Keisti",
+    "addressHint": "Vienintelis laukas, kurį įvedate patys. Pagal adresą apskaičiuojame kilometrus nuo kiekvieno uosto ir parenkame pigiausią.",
+    "portRankingAddress": "Visi ES uostai ({{count}}) įvertinti iki jūsų adreso – pigiausi pirmiau.",
+    "portRankingCountry": "Visi ES uostai ({{count}}) įvertinti iki registracijos šalies – įveskite adresą tiksliems kilometrams.",
+    "portRankingLoading": "Vertinami visi ES uostai…",
+    "portCheapest": "pigiausias",
+    "portAuto": "Grįžti prie pigiausio",
+    "portsAll": "Rodyti visus ES uostus ({{count}})",
+    "portsLess": "Suskleisti uostų sąrašą",
+    "days": "d.",
+    "portRankingNote": "Bendra suma nuo durų iki durų, vidutinis scenarijus: frachtas, muitinis įforminimas ir PVM uosto šalyje, pristatymas iki adreso ir mokesčiai po importo.",
+    "distanceRouted": "Kelio maršrutas nuo uosto ({{port}}) iki jūsų adreso.",
+    "distanceEstimated": "Įvertis nuo uosto ({{port}}) iki jūsų adreso (tiesi linija × 1,25).",
+    "distanceTypical": "Tipinis atstumas nuo uosto ({{port}}) – tiksliam skaičiui įveskite adresą aukščiau.",
+    "tariffShort": "Rinka: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} už pakrovimą, min. {{minimum}} {{cur}}."
+  },
+  "layout": {
+    "topbar": "Nepriklausoma automobilių importo iš JAV, Kanados, Japonijos, JAE ir JK į 27 ES šalis išlaidų skaičiuoklė",
+    "forBusiness": "Importo įmonėms",
+    "home": "Pradžia",
+    "nav": "Pagrindinė navigacija",
+    "calculator": "Skaičiuoklė",
+    "howItWorks": "Kaip tai veikia",
+    "pricing": "Kainos",
+    "faq": "DUK",
+    "cta": "Apskaičiuoti kainą",
+    "menu": "Meniu",
+    "close": "Uždaryti",
+    "breadcrumb": "Naršymo kelias",
+    "themeLight": "Perjungti į šviesią temą",
+    "themeDark": "Perjungti į tamsią temą",
+    "about": "Apie mus",
+    "why": "Kodėl mes",
+    "what": "Ką skaičiuojame",
+    "ctaHint": "Nemokamai, be registracijos",
+    "language": "Kalba"
+  },
+  "footer": {
+    "about": "Nepriklausoma automobilių iš ne ES šalių importo išlaidų skaičiuoklė. Automobilių neparduodame ir neimportuojame – apskaičiuojame, kiek jie iš tikrųjų kainuoja.",
+    "calculators": "Importo skaičiuoklės",
+    "importFrom": {
+      "USA": "Automobilis iš JAV",
+      "CANADA": "Automobilis iš Kanados",
+      "JAPAN": "Automobilis iš Japonijos",
+      "UAE": "Automobilis iš Dubajaus (JAE)",
+      "UK": "Automobilis iš JK"
+    },
+    "service": "Paslauga",
+    "privacy": "Privatumo politika",
+    "language": "Kalba",
+    "payments": "Mokėjimai per Stripe (kortelė, BLIK, Przelewy24). Mes niekada nesaugome kortelės duomenų.",
+    "rights": "Visos teisės saugomos.",
+    "disclaimer": "Skaičiavimai yra informacinio pobūdžio ir nėra nei muitinės sprendimas, nei mokesčių konsultacija."
+  },
+  "cookies": {
+    "title": "Slapukai",
+    "text": "Naudojame būtinuosius slapukus svetainės veikimui ir, jums sutikus, analitinius slapukus. Daugiau informacijos:",
+    "accept": "Sutikti su visais",
+    "necessary": "Tik būtinieji"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Automobilių importo skaičiuoklė",
+      "title1": "Sužinokite importo kainą",
+      "title2": "prieš statydami aukcione",
+      "lead": "Nepriklausoma skaičiuoklė, kuri per minutę parodo visą automobilio atgabenimo iš JAV, Kanados, Japonijos, JAE ar JK kainą – nuo aukciono kainos iki valstybinių numerių jūsų šalyje.",
+      "cta": "Apskaičiuoti nemokamai",
+      "secondary": "Ką tiksliai skaičiuojame",
+      "visual": "Juodas Ford Mustang geltonoje neono šviesoje JAV vėliavos fone",
+      "point1": "Įvertis iškart – be registracijos, skambučių ir laukimo pasiūlymo",
+      "point2": "Daugiau nei 40 išlaidų pozicijų, 43 ES uostai ir šiandienos valiutų kursai",
+      "point3": "Neparduodame automobilių ir neimame komisinių – skaičiai sąžiningi"
+    },
+    "how": {
+      "eyebrow": "Kaip tai veikia",
+      "title": "Nuo idėjos iki visos sumos per keturis žingsnius",
+      "s1": {
+        "title": "Kur perkate",
+        "text": "JAV, Kanada, Japonija, JAE ar JK – ir aukcionas arba prekiautojas."
+      },
+      "s2": {
+        "title": "Koks automobilis",
+        "text": "Tipas, kuras, variklio tūris, metai ir būklė – nuo jų priklauso mokesčiai."
+      },
+      "s3": {
+        "title": "Jūsų adresas",
+        "text": "Vienintelis laukas, kurį įvedate patys. Apskaičiuojame kilometrus ir pigiausią uostą."
+      },
+      "s4": {
+        "title": "Rezultatas ir ataskaita",
+        "text": "Trys scenarijai nemokamai, o PDF iki cento – kai būsite pasiruošę pirkti."
+      },
+      "step": "Žingsnis"
+    },
+    "costs": {
+      "eyebrow": "Iš ko susideda kaina",
+      "title": "Muitas, akcizas ir PVM skaičiuojami ta pačia tvarka kaip muitinėje",
+      "lead": "Kiekvienas mokestis yra kito mokesčio bazė, todėl tvarka svarbi. Muitinio įforminimo uostas lemia PVM tarifą, registracijos šalis – akcizą.",
+      "cif": {
+        "title": "Muitinė vertė (CIF)",
+        "formula": "kaina + aukciono mokestis + transportas + frachtas + draudimas",
+        "text": "Viskas, ką sumokate, kol automobilis atvyksta į ES uostą."
+      },
+      "duty": {
+        "title": "Muitas (TARIC)",
+        "formula": "CIF × 10 % automobiliams · 22 % pikapams · 0 % klasikiniams",
+        "text": "Tarifas priklauso nuo HS kodo; motociklams 6–8 %."
+      },
+      "excise": {
+        "title": "Akcizas (PL)",
+        "formula": "(CIF + muitas) × 3,1 % iki 2,0 l · 18,6 % daugiau",
+        "text": "Hibridams 1,55 % / 9,3 %, elektromobiliams 0 %. Mokamas registracijos šalyje."
+      },
+      "vat": {
+        "title": "Importo PVM",
+        "formula": "(CIF + muitas + akcizas* + iškrovimas) × įforminimo šalies tarifas",
+        "text": "*Akcizas įskaičiuojamas tik tada, kai muitinis įforminimas vyksta registracijos šalyje."
+      }
+    },
+    "ports": {
+      "title": "PVM tarifas priklauso nuo muitinio įforminimo uosto",
+      "text": "Skaičiuoklė įvertina visus 43 ES muitinio įforminimo uostus nuo durų iki durų: PVM uosto šalyje, frachtą, pristatymą iki jūsų adreso ir mokesčius po importo. Įforminus Vokietijoje PVM bus 19 %, o ne 23 %, tačiau prisideda autovežis – žemiau keli pavyzdžiai, likusius palygina skaičiuoklė.",
+      "port": "Uostas",
+      "country": "Įforminimo šalis"
+    },
+    "pricing": {
+      "eyebrow": "Kainos",
+      "title": "Pradėkite nemokamai, mokėkite tik už tikrumą"
+    },
+    "final": {
+      "title": "Apskaičiuokite savo importą per minutę",
+      "text": "Be registracijos, be įsipareigojimų. Jei automobilis pasirodys per brangus – ką tik sutaupėte pinigų. Jei apsimoka – statote ramiai, žinodami visą kainą.",
+      "title1": "Patikrinkite prieš pirkdami.",
+      "title2": "Tai užtruks minutę.",
+      "cta": "Apskaičiuoti importo kainą",
+      "about": "Kas mes esame"
+    },
+    "strip": {
+      "brand": {
+        "title": "CarImport.eu —",
+        "text": "nepriklausoma importo skaičiuoklė"
+      },
+      "instant": {
+        "title": "Rezultatas per minutę",
+        "text": "Įvedate tik adresą, visa kita pasiūlome mes"
+      },
+      "items": {
+        "title": "40+ išlaidų pozicijų",
+        "text": "Nuo aukciono iki registracijos ir rizikų"
+      },
+      "ports": {
+        "title": "43 ES uostai",
+        "text": "Parenkame pigiausią jūsų adresui"
+      }
+    },
+    "map": {
+      "eyebrow": "Importo maršrutai",
+      "title": "Iš viso pasaulio uostų tiesiai į ES",
+      "lead": "Eksporto uostai JAV, Kanadoje, Japonijoje, JAE ir JK bei maršrutai per Panamą, Sueco kanalą ir Gibraltarą iki ES muitinio įforminimo uostų.",
+      "aria": "Jūrinių maršrutų iš JAV, Kanados, Japonijos, JAE ir JK į ES uostus žemėlapis",
+      "eu": "Europos Sąjunga",
+      "legendEu": "ES šalys (registracija)",
+      "legendOrigin": "Pirkimo šalys",
+      "legendRoute": "Jūrinis maršrutas",
+      "scroll": "Perbraukite, kad pamatytumėte visą žemėlapį",
+      "days": "d."
+    },
+    "numbers": {
+      "eyebrow": "CarImport.eu skaičiais",
+      "title": "Skaičiai už kiekvieno skaičiavimo",
+      "n1": {
+        "value": "5",
+        "label": "kilmės šalys: JAV, Kanada, Japonija, JAE ir JK"
+      },
+      "n2": {
+        "value": "27",
+        "label": "ES šalys, kuriose galite įregistruoti automobilį"
+      },
+      "n3": {
+        "value": "43",
+        "label": "muitinio įforminimo uostai 22 ES šalyse – parenkame pigiausią jūsų adresui"
+      },
+      "n4": {
+        "value": "4",
+        "label": "kalbos: lenkų, anglų, vokiečių, ukrainiečių"
+      }
+    },
+    "why": {
+      "eyebrow": "Kodėl verta naudotis",
+      "title": "Žinokite, kiek mokėsite – prieš spausdami „statyti“",
+      "lead": "Brangiausia importo dalis – išlaidos, apie kurias niekas neužsiminė prieš pirkimą. Skaičiuoklė jas atskleidžia dar prieš išleidžiant pirmąjį dolerį.",
+      "preview": {
+        "tag": "Skaičiuoklė",
+        "title": "Visa kaina nuo durų iki durų per šešis žingsnius",
+        "text": "Aukcionas, transportas, muitas, akcizas, PVM, registracija ir rizikos – trimis scenarijais.",
+        "alt": "Importo išlaidų skaičiuoklės ekrano kopija"
+      },
+      "instant": {
+        "tag": "Iškart",
+        "title": "Įvertis per minutę, ne per dvi dienas",
+        "text": "Jokių kontaktinių formų, jokio laukimo pardavėjo skambučio. Kiekvienas laukas jau užpildytas pasiūlymu – keičiate tik tai, ką žinote geriau."
+      },
+      "independent": {
+        "tag": "Nepriklausomi",
+        "title": "Neparduodame nei automobilių, nei pervežimo",
+        "text": "Neuždirbame maržos iš vežėjų ar aukcionų, todėl neturime jokios priežasties mažinti išlaidų. Visi gauna tą patį rezultatą."
+      },
+      "ports": {
+        "tag": "43 uostai",
+        "title": "Pigiausias maršrutas iki jūsų adreso",
+        "text": "Įvertiname kiekvieną ES muitinio įforminimo uostą nuo durų iki durų ir parodome skirtumą."
+      },
+      "scenarios": {
+        "tag": "Scenarijai",
+        "title": "Optimistinis, vidutinis, pesimistinis",
+        "text": "Valiutų kursai, vėlavimai ir rizikos kelyje – matote realistišką intervalą, o ne vieną „stebuklingą“ skaičių."
+      },
+      "after": {
+        "tag": "Po importo",
+        "title": "Taip pat registracija ir dokumentai",
+        "text": "Techninė apžiūra, vertimai, apšvietimo pritaikymas, oficialūs mokesčiai ir draudimas – su terminais."
+      },
+      "report": {
+        "tag": "PDF ataskaita",
+        "title": "Kiekvienas centas juodu ant balto",
+        "text": "Už 4,99 € – vardinė ataskaita su kiekvienu tarifu, mokesčių baze ir veiksmų planu po importo."
+      }
+    },
+    "what": {
+      "eyebrow": "Ką įtraukiame",
+      "title": "Viskas, kas sudaro automobilio kainą prie jūsų durų",
+      "lead": "Dauguma skaičiuoklių sustoja ties muitu ir PVM. Mes skaičiuojame visą kelionę – nuo aukciono aikštelės iki valstybinių numerių – ir pridedame tai, kas gali nepavykti.",
+      "cta": "Išbandykite su savo automobiliu",
+      "purchase": {
+        "title": "Pirkimas",
+        "i1": "Laimėtas statymas arba prekiautojo kaina",
+        "i2": "Copart, IAAI, Manheim, USS mokesčiai pagal kainų pakopas",
+        "i3": "Clean / salvage nuosavybės dokumentas ir būklė",
+        "i4": "Numatoma remonto kaina"
+      },
+      "transport": {
+        "title": "Transportas",
+        "i1": "Nuo aukciono aikštelės iki eksporto uosto",
+        "i2": "Frachtas konteineriu arba RoRo",
+        "i3": "Krovinio draudimas",
+        "i4": "Iškrovimo ir terminalo mokesčiai",
+        "i5": "Evakuatorius arba autovežis iki jūsų adreso"
+      },
+      "taxes": {
+        "title": "Muitai ir mokesčiai",
+        "i1": "Muitas pagal TARIC (10 %, pikapams 22 %)",
+        "i2": "Akcizas pagal variklį ir kuro tipą",
+        "i3": "PVM muitinio įforminimo uosto šalyje",
+        "i4": "Tos dienos centrinio banko valiutos kursas"
+      },
+      "after": {
+        "title": "Po importo",
+        "i1": "Techninė apžiūra ir patvirtinimas",
+        "i2": "Prisiekę dokumentų vertimai",
+        "i3": "Registracija, numeriai ir oficialūs mokesčiai",
+        "i4": "Apšvietimo ir spidometro pritaikymas",
+        "i5": "Pirmųjų metų civilinės atsakomybės draudimas"
+      },
+      "risks": {
+        "title": "Rizikos",
+        "i1": "Saugojimas uoste ir vėluojantys laivai",
+        "i2": "Muitinės patikrinimas ir vertės tikrinimas",
+        "i3": "Paslėpti defektai ir žala transportuojant",
+        "i4": "Vėluojantys nuosavybės ir eksporto dokumentai"
+      }
+    },
+    "compare": {
+      "eyebrow": "Palyginimas",
+      "title": "Kodėl apytikslio skaičiavimo „ant servetėlės“ nepakanka",
+      "self": "Patys",
+      "broker": "Brokerio pasiūlymas",
+      "r1": "Aukciono mokesčiai pagal galiojančias pakopas",
+      "r2": "Visų 43 ES uostų palyginimas",
+      "r3": "Šiandienos valiutos kursas + rezervas svyravimams",
+      "r4": "Akcizas ir PVM pagal įforminimo ir registracijos šalį",
+      "r5": "Rizikos ir trys išlaidų scenarijai",
+      "r6": "Registracija ir dokumentai po importo",
+      "r7": "Jokios maržos ar paslėptų komisinių",
+      "note": "~ reiškia „paprastai iš dalies“. Brokerių pasiūlymuose dažnai įskaičiuota jų marža ir nepateikiamas išlaidų išskaidymas."
+    }
+  },
+  "pricing": {
+    "popular": "Populiariausias",
+    "free": {
+      "name": "Greitas įvertis",
+      "price": "Nemokamai",
+      "f1": "Kainos iki durų intervalas",
+      "f2": "Išlaidų struktūros diagrama",
+      "f3": "Gabenimo laikas ir įspėjimai",
+      "f4": "Be registracijos",
+      "cta": "Apskaičiuoti nemokamai"
+    },
+    "report": {
+      "name": "PDF ataskaita",
+      "price": "4,99 €",
+      "f1": "Kiekviena pozicija iki cento",
+      "f2": "Aukciono mokesčiai pagal kainų pakopas",
+      "f3": "Muitas, akcizas ir PVM su bazėmis ir tarifais",
+      "f4": "Dokumentų sąrašas ir asmeninis PDF",
+      "cta": "Apskaičiuoti ir atrakinti ataskaitą"
+    },
+    "partner": {
+      "name": "Importo įmonėms",
+      "price": "Už kiekvieną priimtą užklausą",
+      "f1": "Pirkėjai su paruoštu automobilio skaičiavimu",
+      "f2": "BDAR sutikimas gaunamas prieš perdavimą",
+      "f3": "Tik jūsų priimtos užklausos",
+      "f4": "Jokios prenumeratos",
+      "cta": "Tapkite partneriu"
+    }
+  },
+  "faq": {
+    "eyebrow": "Klausimai ir atsakymai",
+    "title": "Dažniausiai užduodami klausimai",
+    "lead": "Neradote atsakymo? Skaičiuoklė parodo kiekvieną prielaidą, o PDF ataskaita – kiekvieną tarifą ir bazę.",
+    "q1": {
+      "q": "Koks muitas taikomas automobiliui iš JAV?",
+      "a": "Lengviesiems automobiliams (KN 8703) muitas yra 10 % muitinės vertės CIF, pikapams ir lengviesiems sunkvežimiams (8704) – 22 %, motociklams – 6–8 %. Senesnėms nei 30 metų originalios būklės kolekcinėms transporto priemonėms gali būti taikomas 0 %. Muitinę vertę sudaro pirkimo kaina, aukciono mokesčiai, transportas iki ES sienos ir draudimas."
+    },
+    "q2": {
+      "q": "Koks akcizas taikomas importuojant automobilį į Lenkiją?",
+      "a": "Vidaus degimo varikliu varomiems automobiliams iki 2000 cm³: 3,1 %, virš 2000 cm³: 18,6 %. Hibridams: 1,55 % iki 2000 cm³ ir 9,3 % iki 3500 cm³. Įkraunami hibridai iki 2000 cm³ ir elektromobiliai atleidžiami nuo akcizo. Bazė – muitinė vertė ir muitas, perskaičiuoti į PLN."
+    },
+    "q3": {
+      "q": "Kur geriausia įforminti automobilį: Bremerhavene, Roterdame ar Gdynėje?",
+      "a": "Importo PVM ima muitinio įforminimo šalis: Vokietijoje 19 %, Nyderlanduose 21 %, Lenkijoje 23 %. Įforminus Vokietijoje PVM mažesnis, tačiau prisideda autovežis į Lenkiją, o akcizą reikia atskirai sumokėti mokesčių inspekcijai per 14 dienų. Skaičiuoklė palygina variantus jūsų automobiliui."
+    },
+    "q4": {
+      "q": "Kas yra muitinės procedūra 4200?",
+      "a": "Tai išleidimas į laisvą apyvartą su PVM atleidimu importo šalyje, kai automobilis iškart keliauja PVM mokėtojai įmonei kitoje ES valstybėje. Pirkėjas PVM apskaito savo šalyje taikydamas atvirkštinį apmokestinimą, todėl PVM mokėtojoms įmonėms jis neutralus. Privatiems asmenims ši procedūra negalima."
+    },
+    "q5": {
+      "q": "Kiek trunka gabenimas į Europą?",
+      "a": "Iš JAV rytinės pakrantės ir Kanados uostų – apie 2–3 savaites jūra, iš Kalifornijos – apie 5 savaites, iš Japonijos – 6–7 savaites, iš JAE – 3–4 savaites, o iš JK – kelias dienas. Pridėkite transportą nuo aukciono aikštelės iki uosto ir muitinį įforminimą."
+    },
+    "q6": {
+      "q": "Iš kur imami valiutų kursai?",
+      "a": "Naudojame NBP vidutinius kursus, automatiškai atsisiunčiamus kiekvieną darbo dieną. Kadangi už automobilį mokate praėjus dienoms ar savaitėms po skaičiavimo, nemokamas intervalas atsižvelgia į valiutų svyravimus."
+    },
+    "q7": {
+      "q": "Kas įeina į mokamą PDF ataskaitą?",
+      "a": "Kiekviena pozicija iki cento: aukciono mokesčiai pagal pakopas, transportas, muitinė vertė, muitas, akcizas ir PVM su bazėmis ir tarifais, reikalingų dokumentų sąrašas ir asmeninis PDF atsisiuntimui. Mokėti galima BLIK, kortele arba Przelewy24."
+    },
+    "q8": {
+      "q": "Ar skaičiuoklės rezultatas yra privalomas?",
+      "a": "Ne. Tai įvertis, pagrįstas galiojančiais tarifais ir kainynais. Galutines sumas nustato muitinė ir mokesčių administratorius, kurie, pavyzdžiui, gali patikrinti muitinę vertę. Ataskaitoje išvardytos visos prielaidos, todėl ją lengva palyginti su oficialiu sprendimu."
+    },
+    "q9": {
+      "q": "Ar CarImport.eu importuoja automobilius?",
+      "a": "Ne. Esame tik skaičiuoklė – automobilių neperkame, negabename ir neįforminame muitinėje, taip pat neimame komisinių iš aukcionų ar vežėjų. Todėl įvertis lieka nepriklausomas. Jei norite, galite perduoti skaičiavimą patikrintai importo įmonei, tačiau tai visada jūsų pasirinkimas."
+    }
+  },
+  "calc": {
+    "title": "Automobilių importo išlaidų skaičiuoklė",
+    "lead": "Šeši žingsniai: kilmė, transporto priemonė, būklė, paskirtis, po importo ir ataskaita. Rezultatas pateikiamas pabaigoje – trimis scenarijais.",
+    "currency": "Rezultato valiuta",
+    "progress": "Eiga"
+  },
+  "seo": {
+    "home": {
+      "title": "Automobilių importo išlaidų skaičiuoklė – iš JAV, Japonijos, Dubajaus į ES | CarImport.eu",
+      "description": "Nepriklausoma automobilio importo iš JAV, Kanados, Japonijos, JAE ir JK skaičiuoklė: aukcionas, gabenimas, muitas, akcizas, PVM, registracija ir rizikos. Įvertis iškart, be registracijos."
+    },
+    "calculator": {
+      "title": "Importuotų automobilių muito, akcizo ir PVM skaičiuoklė | CarImport.eu",
+      "description": "Pasirinkite šalį, aukcioną, uostą ir transporto priemonę — skaičiuoklė iškart parodo kainos intervalą ir išskaidymą: kaina, gabenimas, muitas, akcizas, PVM ir registracija."
+    },
+    "privacy": {
+      "title": "Privatumo politika | CarImport.eu",
+      "description": "Kaip CarImport.eu tvarko asmens duomenis: mokėjimai, ataskaitos, užklausos partneriams ir slapukai."
+    },
+    "about": {
+      "title": "Apie mus – nepriklausoma automobilių importo skaičiuoklė | CarImport.eu",
+      "description": "Kas mes esame, iš kur gauname duomenis ir kaip uždirbame. CarImport.eu automobilių neparduoda ir neimportuoja – sąžiningai ir nepriklausomai apskaičiuoja visą importo kainą."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Teisinė informacija",
+    "title": "Privatumo politika",
+    "s1": {
+      "title": "Duomenų valdytojas",
+      "text": "Duomenų valdytojas yra CarImport.eu operatorius. Duomenų apsaugos klausimais rašykite adresu {{email}}."
+    },
+    "s2": {
+      "title": "Kokius duomenis tvarkome",
+      "text": "Skaičiavimo duomenis (be asmens duomenų), o perkant ataskaitą – jūsų vardą, pavardę ir el. pašto adresą. Partnerio forma papildomai renka telefono numerį ir žinutę. Kortelių duomenų niekada netvarkome — tai daro Stripe."
+    },
+    "s3": {
+      "title": "Tikslai ir teisiniai pagrindai",
+      "text": "Ataskaitos pirkimo vykdymas (BDAR 6 str. 1 d. b p.), apskaitos pareigos (c p.), jūsų užklausos perdavimas partneriui jūsų sutikimu (a p.) ir analitika gavus sutikimą slapukų juostoje."
+    },
+    "s4": {
+      "title": "Gavėjai",
+      "text": "Stripe Payments Europe (mokėjimai), mūsų prieglobos ir el. pašto paslaugų teikėjai bei — partnerio formos atveju — viena patikrinta importo įmonė, tik jums sutikus."
+    },
+    "s5": {
+      "title": "Slapukai",
+      "text": "Būtinieji slapukai ir naršyklės saugykla įsimena jūsų kalbą, temą, skaičiuoklės eigą ir prieigą prie įsigytos ataskaitos. Analitika įjungiama tik paspaudus „Sutikti su visais“."
+    },
+    "s6": {
+      "title": "Jūsų teisės",
+      "text": "Turite teisę susipažinti su duomenimis, juos ištaisyti, ištrinti, apriboti tvarkymą, perkelti ir nesutikti, bet kada atšaukti sutikimą ir pateikti skundą duomenų apsaugos priežiūros institucijai. Rašykite mums: {{email}}."
+    }
+  },
+  "delivery": {
+    "PORT_PICKUP": "Atsiėmimas uoste",
+    "CAR_CARRIER": "Autovežis",
+    "TOW_TRUCK": "Evakuatorius",
+    "SELF_DRIVE": "Su laikinais numeriais"
+  },
+  "scenario": {
+    "0": "Optimistinis",
+    "1": "Vidutinis",
+    "2": "Pesimistinis"
+  },
+  "scenarioHint": {
+    "0": "Mažiausi tarifai, palankus kursas, niekas nenutinka",
+    "1": "Tipiniai tarifai + rizikos pagal tikimybę",
+    "2": "Didžiausi tarifai, silpnesnis kursas, rizikos išsipildo"
+  },
+  "timeline": {
+    "INLAND": "Paėmimas iš aikštelės ir transportas iki uosto",
+    "OCEAN": "Plaukimas (įskaitant laivo laukimą)",
+    "CLEARANCE": "Iškrovimas ir muitinis įforminimas",
+    "DELIVERY": "Pristatymas iki jūsų durų",
+    "REGISTRATION": "Paruošimas ir registracija"
+  },
+  "plan": {
+    "deadline": {
+      "beforeRelease": "Prieš išleidžiant iš uosto",
+      "14days": "Per 14 dienų nuo atvykimo į Lenkiją",
+      "beforeInspection": "Prieš techninę apžiūrą",
+      "beforeRegistration": "Prieš registraciją",
+      "pl30days": "Per 30 dienų nuo importo (bauda iki 1 000 PLN)",
+      "fromRegistration": "Nuo registracijos / laikinų numerių",
+      "national": "Pagal registracijos šalies taisykles",
+      "none": "Įstatyme nustatyto termino nėra"
+    },
+    "step": {
+      "clearance": {
+        "title": "Muitinis įforminimas uoste",
+        "text": "Muitinės tarpininkas pateikia deklaraciją (BAD); jūs sumokate muitą ir importo PVM. Reikia: sąskaitos faktūros, konosamento, nuosavybės dokumento (title) / eksporto sertifikato, EORI."
+      },
+      "pl": {
+        "excise": {
+          "title": "Akcizo deklaracija ir mokėjimas (AKC-U/S)",
+          "text": "Pateikite mokesčių inspekcijai (arba internetu) ir sumokėkite akcizą; patvirtinimas reikalingas registracijai."
+        },
+        "exciseExemption": {
+          "title": "Akcizo atleidimo deklaracija (elektromobilis)",
+          "text": "Elektromobiliai atleidžiami nuo akcizo, tačiau AKC-U/S deklaraciją vis tiek reikia pateikti."
+        },
+        "inspection": {
+          "title": "Techninė apžiūra apžiūros stotyje",
+          "text": "Pirmoji importuotos transporto priemonės apžiūra, įskaitant VIN identifikavimą; rezultatas perduodamas į centrinį registrą."
+        },
+        "recycling": {
+          "title": "Perdirbimo mokestis 500 PLN",
+          "text": "Mokamas Nacionaliniam aplinkos apsaugos fondui pirmą kartą registruojant importuotą automobilį."
+        },
+        "registration": {
+          "title": "Registracija transporto priemonių registravimo įstaigoje",
+          "text": "Prašymas, nuosavybės įrodymas su vertimu, akcizas, apžiūra, perdirbimo mokestis, PVM / muito sumokėjimo įrodymas; gaunate laikiną leidimą ir numerius."
+        }
+      },
+      "translations": {
+        "title": "Prisiekę vertimai",
+        "text": "Užsienio nuosavybės / registracijos dokumentas, sąskaita faktūra ir eksporto dokumentas – verčia prisiekęs vertėjas."
+      },
+      "lighting": {
+        "title": "Apšvietimo pritaikymas ES standartams",
+        "text": "Gintariniai galiniai posūkių žibintai, galinis rūko žibintas, žibintų reguliavimas – be to automobilis neišlaikys apžiūros."
+      },
+      "insurance": {
+        "title": "Civilinės atsakomybės draudimas",
+        "text": "Privalomas nuo registracijos; KASKO draudimą verta sudaryti po eksperto vertinimo."
+      },
+      "de": {
+        "approval": {
+          "title": "Individualus patvirtinimas (§21 StVZO)",
+          "text": "Visa eksperto apžiūra (TÜV/DEKRA) ne ES automobiliams; būtina registracijai."
+        },
+        "registration": {
+          "title": "Registracija (Zulassung)",
+          "text": "Draudimo eVB numeris, muitinio įforminimo įrodymas, eksperto ataskaita, SEPA įgaliojimas transporto priemonės mokesčiui."
+        }
+      },
+      "generic": {
+        "inspection": {
+          "title": "Apžiūra / individualus patvirtinimas",
+          "text": "Apimtis priklauso nuo šalies – ne ES automobiliams dažnai reikalingas individualus patvirtinimas."
+        },
+        "registrationTax": {
+          "title": "Nacionalinis registracijos mokestis",
+          "text": "Pvz., BPM Nyderlanduose, NoVA Austrijoje, malus Prancūzijoje – patikrinkite prieš pirkdami."
+        },
+        "registration": {
+          "title": "Transporto priemonės registracija",
+          "text": "Pateikite prašymą su muitinio įforminimo įrodymu, apžiūros pažyma ir draudimu."
+        }
+      },
+      "evCharging": {
+        "title": "Įkrovimo lizdas",
+        "text": "JAV automobiliai naudoja NACS/CCS1 – reikės adapterio arba CCS2/Type 2 lizdo įrengimo."
+      }
+    }
+  },
+  "deliveryHint": {
+    "CAR_CARRIER": "Pigiausia važiuojantiems automobiliams",
+    "TOW_TRUCK": "Atskiras evakuatorius, tinka ir nevažiuojantiems",
+    "SELF_DRIVE": "Laikini numeriai + draudimas; tik važiuojantiems",
+    "PORT_PICKUP": "Transportą organizuojate patys"
+  },
+  "serviceHint": {
+    "SWORN_TRANSLATION": "Nuosavybės dokumentas, sąskaita faktūra ir eksporto dokumentas",
+    "US_LIGHTING_CONVERSION": "ES reikalavimus atitinkantys posūkių žibintai ir šviesos",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Automobilis su vairu dešinėje",
+    "REAR_FOG_LIGHT": "Reikalaujama apžiūros metu",
+    "SPEEDOMETER_KMH": "Spidometras myliomis – patogumas ir perpardavimo vertė",
+    "SERVICE_INSPECTION": "Alyva, filtrai, skysčiai, stabdžiai po ilgos kelionės",
+    "GEOMETRY_ALIGNMENT": "Rekomenduojama po važiuoklės remonto",
+    "DETAILING": "Plovimas, salono valymas, dažų poliravimas",
+    "EXPERT_VALUATION": "Naudinga KASKO draudimui ir perpardavimui"
+  },
+  "riskInfo": {
+    "RISK_PORT_STORAGE": "Pasibaigus nemokamam laikotarpiui terminalas ima mokestį už kiekvieną dieną, pvz., kai vėluoja dokumentai ar transportas.",
+    "RISK_CUSTOMS_INSPECTION": "Atsitiktinis ar tikslinis patikrinimas: konteinerio iškrovimas, rentgenas, papildomi terminalo mokesčiai.",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Jei kaina atrodo per maža, muitinė gali taikyti didesnę vertę – muitas ir PVM išauga.",
+    "RISK_VESSEL_ROLLOVER": "Laivas perpildytas ir konteineris plaukia kitu – papildomas saugojimas eksporto uoste.",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Žalą transportuojant padengia polisas, atėmus išskaitą.",
+    "RISK_HIDDEN_DAMAGE": "Gedimai, kurių nematyti aukciono nuotraukose – kuo prastesnė būklė, tuo didesnė rizika.",
+    "RISK_TITLE_DELAY": "Aukcionas vėluoja atsiųsti nuosavybės dokumentą – automobilis laukia aikštelėje ar uoste.",
+    "RISK_EXPORT_DOCS_DELAY": "Išregistravimas ir eksporto dokumentai užtrunka ilgiau nei įprastai."
+  },
+  "docStage": {
+    "PURCHASE": "Pirkimas",
+    "SHIPPING": "Gabenimas",
+    "CUSTOMS": "Muitinis įforminimas",
+    "REGISTRATION": "Registracija"
+  },
+  "proposal": {
+    "tag": "Pasiūlyta",
+    "restore": "Naudoti pasiūlymą",
+    "was": "pasiūlymas: {{value}} {{unit}}"
+  },
+  "region": {
+    "NORTH_SEA": "Šiaurės jūra",
+    "BALTIC": "Baltija ir Skandinavija",
+    "ATLANTIC": "Atlantas",
+    "WEST_MED": "Vakarų Viduržemio jūra",
+    "EAST_MED": "Adrijos, Egėjo ir Juodoji jūros"
+  },
+  "about": {
+    "eyebrow": "Apie mus",
+    "title1": "Skaičiuojame automobilių importą.",
+    "title2": "Automobilių neparduodame.",
+    "lead": "CarImport.eu – nepriklausoma automobilio atgabenimo iš ne Europos Sąjungos šalių išlaidų skaičiuoklė. Sukūrėme ją, kad kiekvienas – ne tik dešimtmetį patirties turintis prekiautojas – prieš pirkdamas žinotų, kiek iš tikrųjų sumokės.",
+    "story": {
+      "eyebrow": "Kaip viskas prasidėjo",
+      "title": "Iš nusivylimo paslėptomis išlaidomis",
+      "p1": "Automobilis iš JAV aukciono atrodo kaip puikus sandoris – kol nepridedate aukciono mokesčių, transporto iki uosto, frachto, muito, akcizo, PVM, iškrovimo, evakuatoriaus, vertimų, techninės apžiūros ir registracijos. Kiekviena pozicija „nedidelė“, bet kartu jos gali padvigubinti kainą.",
+      "p2": "Informacija išblaškyta po aukcionų kainynus, muitų tarifus, valiutų kursų lenteles ir 27 šalių taisykles. Brokerių pasiūlymuose paprastai pateikiamas vienas skaičius be išskaidymo – su jų marža viduje.",
+      "p3": "Sukūrėme įrankį, kuris visa tai sujungia, skaičiuoja pagal galiojančius tarifus ir parodo kiekvieną prielaidą. Be registracijos, be pardavėjo skambučio."
+    },
+    "role": {
+      "eyebrow": "Sąžiningai apie tai, kas esame",
+      "title": "Esame skaičiuoklė. Tik skaičiuoklė.",
+      "is": "Kas esame",
+      "is1": "Nepriklausoma visos importo kainos skaičiuoklė",
+      "is2": "43 ES muitinio įforminimo uostų palyginimas jūsų adresui",
+      "is3": "Išsamios PDF ataskaitos su kiekvienu tarifu šaltinis",
+      "is4": "Žingsnių ir dokumentų po importo sąrašas",
+      "isNot": "Kas nesame",
+      "isNot1": "Ne importuotojas ir ne prekiautojas – automobilių neparduodame",
+      "isNot2": "Neorganizuojame gabenimo ir muitinio įforminimo",
+      "isNot3": "Jokių komisinių iš aukcionų, vežėjų ar muitinės tarpininkų",
+      "isNot4": "Ne institucija ir ne mokesčių konsultantas – rezultatas yra įvertis"
+    },
+    "data": {
+      "eyebrow": "Iš kur skaičiai",
+      "title": "Galiojantys tarifai, o ne „maždaug“",
+      "lead": "Kiekviena rezultato suma gaunama iš konkretaus tarifo, kurį parodo ataskaita. Duomenys atnaujinami automatiškai arba pasikeitus teisės aktams.",
+      "customs": {
+        "title": "ES muitų tarifas",
+        "text": "Muito tarifai pagal KN kodą (TARIC) automobiliams, pikapams, motociklams ir istorinėms transporto priemonėms."
+      },
+      "fx": {
+        "title": "Centrinio banko kursai",
+        "text": "Orientaciniai kursai, atsisiunčiami kiekvieną darbo dieną, su rezervu svyravimams iki mokėjimo."
+      },
+      "fees": {
+        "title": "Aukcionų ir vežėjų kainynai",
+        "text": "Copart, IAAI, Manheim ir USS mokesčių pakopos, frachto tarifai, uosto mokesčiai ir transporto kainos už km."
+      },
+      "law": {
+        "title": "Nacionalinės taisyklės",
+        "text": "Akcizas, 27 šalių PVM tarifai, registracijos mokesčiai ir privalomos patikros – su teisiniu pagrindu ataskaitoje."
+      }
+    },
+    "money": {
+      "eyebrow": "Kaip uždirbame",
+      "title": "Skaidriai – nes svarbiausia pasitikėjimas",
+      "lead": "Skaičiuoklės rezultatas nepriklauso nuo to, kas ir kiek mums moka. Uždirbame trimis būdais, ir visi jie atviri:",
+      "m1": {
+        "title": "PDF ataskaita – 4,99 €",
+        "text": "Nemokamas rezultatas parodo intervalą ir išlaidų struktūrą. Išsamią ataskaitą su kiekviena pozicija perkate tik jei jos reikia."
+      },
+      "m2": {
+        "title": "Neprivaloma užklausa importo įmonei",
+        "text": "Tik jei paprašysite, perduodame jūsų skaičiavimą vienai patikrintai įmonei. Ji moka mums, ne jūs – ir tik jums sutikus."
+      },
+      "m3": {
+        "title": "Pažymėtos partnerių nuorodos",
+        "text": "Pvz., VIN patikra ar valiutos keitimas. Visada pažymėtos ir niekada nedaro įtakos įverčiui."
+      }
+    },
+    "values": {
+      "eyebrow": "Kuo vadovaujamės",
+      "transparency": {
+        "title": "Skaidrumas",
+        "text": "Kiekvienas skaičius turi šaltinį ir pagrindą. Jei kažkas yra įvertis, tai ir pasakome."
+      },
+      "independence": {
+        "title": "Nepriklausomumas",
+        "text": "Mums nesvarbu, ar pirksite automobilį ir kas jį jums importuos."
+      },
+      "precision": {
+        "title": "Tikslumas",
+        "text": "Skaičiuojame iki cento, bet parodome ir intervalą – nes importas nėra tobula matematika."
+      }
+    },
+    "cta": {
+      "title": "Patikrinkite savo automobilį per minutę",
+      "text": "Turite klausimą ar pastebėjote pasenusį tarifą? Rašykite: {{email}}"
+    }
+  },
+  "currency": {
+    "label": "Rezultato valiuta",
+    "title": "Kokia valiuta rodyti išlaidas?",
+    "hint": "Aukciono sumos (USD, JPY, AED…) perskaičiuojamos pagal galiojantį centrinio banko kursą. Valiuta neturi įtakos mokesčių skaičiavimui – mokesčius visada nustato muitinio įforminimo šalis.",
+    "groupEu": "ES valiutos",
+    "groupOther": "Kitos"
+  }
+}

@@ -1,0 +1,1014 @@
+{
+  "affiliate": {
+    "CURRENCY_EXCHANGE": "Olcsóbb valutaváltás",
+    "CURRENCY_EXCHANGE_HINT": "Fizessen az autóért banki árrés nélkül",
+    "FINANCING": "Lízing vagy hitel",
+    "FINANCING_HINT": "Finanszírozza az importot és az adókat",
+    "VIN_CHECK": "Alvázszám (VIN) előélet-ellenőrzés",
+    "VIN_CHECK_HINT": "Sérülések, futásteljesítmény, lopási adatok",
+    "sponsored": "Szponzorált",
+    "title": "Erre is szüksége lehet"
+  },
+  "app": {
+    "headline": "Mennyibe kerül valójában egy importautó?",
+    "tagline": "Aukciók az USA-ban, Kanadában, Japánban, Dubajban vagy az Egyesült Királyságban → uniós vám, jövedéki adó és áfa. Azonnali eredmény, regisztráció nélkül."
+  },
+  "auction": {
+    "COPART": "Copart",
+    "DEALER": "Kereskedő / magánszemély",
+    "EMIRATES_AUCTION": "Emirates Auction",
+    "IAAI": "IAAI",
+    "USS": "USS Japan"
+  },
+  "buyer": {
+    "COMPANY": "Cég",
+    "PRIVATE": "Magánszemély"
+  },
+  "category": {
+    "MOTORCYCLE": "Motorkerékpár",
+    "PASSENGER_CAR": "Személyautó",
+    "PICKUP_TRUCK": "Pickup",
+    "REGISTRATION": "Behozatal után és forgalomba helyezés",
+    "SUV": "SUV",
+    "TAXES": "Uniós vámok és adók",
+    "TRANSPORT": "Szállítás és logisztika",
+    "VAN": "Kisteherautó",
+    "VEHICLE": "Jármű és aukció",
+    "RISK": "Kockázatok útközben"
+  },
+  "condition": {
+    "ENGINE_STARTS": "A motor beindul",
+    "ENGINE_STARTS_HINT": "Saját erejéből nem mozgatható",
+    "NON_RUNNING": "Sérült / roncs (salvage)",
+    "NON_RUNNING_HINT": "Csörlős autómentő szükséges",
+    "RUN_AND_DRIVE": "Run & Drive",
+    "RUN_AND_DRIVE_HINT": "Beindul és vezethető"
+  },
+  "cost": {
+    "AUCTION_AGENT_COMMISSION": "Exportügynöki jutalék",
+    "AUCTION_BUYER_FEE": "Aukciós vevői díj",
+    "AUCTION_ENVIRONMENTAL_FEE": "Környezetvédelmi díj",
+    "AUCTION_EXPORT_DOCS": "Exportdokumentumok",
+    "AUCTION_GATE_FEE": "Kiadási díj (gate fee)",
+    "AUCTION_RECYCLING_FEE": "Újrahasznosítási díj (Japán)",
+    "AUCTION_SERVICE_FEE": "Aukciós szolgáltatási díj",
+    "AUCTION_TITLE_HANDLING_FEE": "Tulajdoni okmány (title) kezelési díja",
+    "AUCTION_VIRTUAL_BID_FEE": "Online licitálási díj",
+    "CARGO_INSURANCE": "Szállítmánybiztosítás",
+    "CUSTOMS_AGENCY": "Vámügynöki díj",
+    "CUSTOMS_DUTY": "Vám",
+    "EXCISE_TAX": "Jövedéki adó",
+    "FORKLIFT_LOADING": "Targoncás rakodás",
+    "IMPORT_VAT": "Import áfa",
+    "INDIVIDUAL_APPROVAL": "Egyedi forgalomba helyezési engedély (§21 StVZO)",
+    "INLAND_TRANSPORT": "Belföldi szállítás a kikötőig",
+    "INTRA_EU_ACQUISITION_VAT": "Közösségen belüli beszerzés áfája (fordított adózás, levonható)",
+    "INTRA_EU_TRANSPORT": "Autószállító a kikötőtől a célállomásig",
+    "OCEAN_FREIGHT": "Tengeri fuvardíj",
+    "PORT_UNLOADING": "Kikötői kirakodás és terminál",
+    "PURCHASE_PRICE": "Vételár (nyertes licit)",
+    "RDW_INSPECTION": "RDW-vizsgálat",
+    "RECYCLING_FEE": "Újrahasznosítási díj",
+    "REGISTRATION_FEE": "Forgalomba helyezési díjak",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Fényszóró-beállítás (jobbkormányos)",
+    "SWORN_TRANSLATION": "Dokumentumok hiteles fordítása",
+    "TECHNICAL_INSPECTION": "Műszaki vizsga",
+    "US_LIGHTING_CONVERSION": "Világítás átalakítása (amerikai kivitel)",
+    "WINCH_CONTAINER_LOADING": "Konténerbe rakodás csörlővel",
+    "DELIVERY_CAR_CARRIER": "Autószállító a kikötőtől házhoz",
+    "DELIVERY_TOW_TRUCK": "Autómentő a kikötőtől házhoz",
+    "DELIVERY_SELF_DRIVE": "Hazavezetés ideiglenes rendszámmal (üzemanyag, rendszám, rövid távú biztosítás)",
+    "TECHNICAL_INSPECTION_IMPORT": "Behozott jármű műszaki vizsgája",
+    "REG_TEMPORARY_PERMIT": "Ideiglenes forgalomba helyezési engedély",
+    "REG_TEMPORARY_PLATES": "Ideiglenes rendszám",
+    "REG_CERTIFICATE": "Forgalmi engedély",
+    "REG_PLATES": "Rendszámtáblák",
+    "REG_STICKER": "Ellenőrző matrica",
+    "REAR_FOG_LIGHT": "Hátsó ködlámpa beszerelése",
+    "SPEEDOMETER_KMH": "Sebességmérő átállítása km/h-ra",
+    "SERVICE_INSPECTION": "Szerviz és folyadékcsere",
+    "GEOMETRY_ALIGNMENT": "Futómű-beállítás",
+    "DETAILING": "Tisztítás és autókozmetika",
+    "EXPERT_VALUATION": "Szakértői értékbecslés (pl. casco biztosításhoz)",
+    "REPAIR_ESTIMATE": "Javítás (saját becslés)",
+    "INSURANCE_FIRST_YEAR": "Biztosítás – első év (saját összeg)",
+    "RISK_PORT_STORAGE": "Kikötői tárolás (késői átvétel, papírmunka)",
+    "RISK_CUSTOMS_INSPECTION": "Vámvizsgálat / konténer-átvilágítás",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Vámérték vitatása (többlet vám és áfa)",
+    "RISK_VESSEL_ROLLOVER": "Átrakás későbbi hajóra (tárolás az exportkikötőben)",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Szállítási kár – biztosítási önrész",
+    "RISK_HIDDEN_DAMAGE": "Az aukción nem látható rejtett sérülés",
+    "RISK_TITLE_DELAY": "Késik a tulajdoni okmány (többlet tárolás)",
+    "RISK_EXPORT_DOCS_DELAY": "Késnek az exportdokumentumok"
+  },
+  "doc": {
+    "billOfLading": "Hajóraklevél (Bill of Lading)",
+    "companyRegistryExtract": "Cégkivonat",
+    "customsDeclarationSad": "Vámáru-nyilatkozat (SAD)",
+    "customsPowerOfAttorney": "Meghatalmazás a vámügynök részére",
+    "eoriNumber": "Az importőr EORI-száma",
+    "evChargingPortAdapterNote": "Ellenőrizze a töltőcsatlakozó szabványát (NACS/CCS1 → CCS2)",
+    "historicExpertOpinion": "Szakértői vélemény a veterán (gyűjteményi) státuszról",
+    "insurancePolicy": "Szállítmánybiztosítási kötvény",
+    "invoice": "Aukciós számla / adásvételi szerződés",
+    "ownership": {
+      "japanExportCertificate": "Japán exporttanúsítvány (Export Certificate, forgalomból kivonás)",
+      "title": "Eredeti Title (tulajdonjogot igazoló okmány)",
+      "uaeExportCertificate": "Egyesült Arab Emírségekbeli exporttanúsítvány (RTA)",
+      "v5c": "Brit V5C forgalmi okmány (logbook)"
+    },
+    "pl": {
+      "exciseDeclarationAkcUs": "AKC-U/S jövedékiadó-bevallás és a befizetés igazolása",
+      "exciseExemptionConfirmation": "Jövedékiadó-mentesség igazolása (elektromos autó)",
+      "recyclingFeeConfirmation": "Az újrahasznosítási díj befizetésének igazolása"
+    },
+    "procedure4200VatIdAndProofOfTransport": "4200-as eljárás: a vevő uniós közösségi adószáma és a szállítás igazolása",
+    "registrationApplication": "Forgalomba helyezési kérelem",
+    "salvageTitleRepairEvidence": "Javítási dokumentáció (salvage title)",
+    "swornTranslation": "Külföldi dokumentumok hiteles fordítása",
+    "technicalInspection": "Műszaki vizsgálati igazolás",
+    "transportInvoices": "Szállítási és fuvarszámlák",
+    "usExportAesItn": "Amerikai exportbejelentés (AES/ITN)",
+    "vatPaymentProof": "Az áfa megfizetésének igazolása"
+  },
+  "error": {
+    "auction": {
+      "noSchedule": "Nem érhető el aukciós díjtáblázat.",
+      "unsupported": "Ez az aukciósház nem támogatott."
+    },
+    "excise": {
+      "rateNotFound": "Ehhez a konfigurációhoz nincs jövedékiadó-mérték."
+    },
+    "port": {
+      "unknown": "Ismeretlen célkikötő."
+    },
+    "procedure4200": {
+      "notAvailableInPort": "A 4200-as eljárás ebben a kikötőben nem érhető el.",
+      "sameCountry": "A 4200-as eljárás a célországtól eltérő országban történő vámkezelést igényel."
+    },
+    "route": {
+      "unavailable": "Ehhez a választáshoz nincs elérhető hajózási útvonal."
+    },
+    "tariff": {
+      "notFound": "A járművet nem sikerült besorolni a vámtarifába."
+    },
+    "taxProfile": {
+      "missing": "A kiválasztott országhoz nincsenek adókulcsok."
+    }
+  },
+  "fuel": {
+    "DIESEL": "Dízel",
+    "EV": "Elektromos",
+    "HEV": "Hibrid",
+    "HYDROGEN": "Hidrogén",
+    "LPG": "LPG",
+    "MHEV": "Enyhe hibrid (mild hybrid)",
+    "PETROL": "Benzin",
+    "PHEV": "Plug-in hibrid"
+  },
+  "lead": {
+    "consentMarketing": "Kérek importajánlatokat és tippeket (opcionális).",
+    "consentTransfer": "Hozzájárulok, hogy adataimat és a kalkulációmat egy ellenőrzött partnerrel megosszák ajánlatkészítés céljából (GDPR 6. cikk (1) bekezdés a) pont).",
+    "email": "E-mail",
+    "message": "Aukciós link vagy további részletek",
+    "name": "Teljes név",
+    "phone": "Telefon (opcionális)",
+    "submit": "Kérés elküldése",
+    "subtitle": "A CarImport.eu nem foglalkozik autóimporttal. Ha szeretné, a kalkulációját továbbítjuk egy ellenőrzött importcégnek, amely ajánlatot készít Önnek. Kötelezettség nélkül.",
+    "thanks": "Köszönjük!",
+    "thanksHint": "Az importcég 1 munkanapon belül felveszi Önnel a kapcsolatot.",
+    "title": "Ajánlatkérés importcégtől (opcionális)"
+  },
+  "origin": {
+    "CANADA": "Kanada",
+    "JAPAN": "Japán",
+    "UAE": "Egyesült Arab Emírségek / Dubaj",
+    "UK": "Egyesült Királyság",
+    "USA": "USA"
+  },
+  "paywall": {
+    "blikHint": "Fizetés BLIK-kel, Przelewy24-gyel vagy kártyával.",
+    "currency": "Fizetési pénznem",
+    "email": "E-mail (ide küldjük a jelentés linkjét)",
+    "fullName": "Teljes név (a jelentésen szerepel)",
+    "pay": "Tovább a fizetéshez",
+    "redirecting": "Átirányítás…",
+    "secure": "Biztonságos fizetés a Stripe-on keresztül. Kártyaadatokat soha nem tárolunk.",
+    "subtitle": "Pontos összegek, adóalapok és adókulcsok, dokumentumok – az Ön nevére szóló PDF-ben.",
+    "terms": "Elfogadom a feltételeket, és kérem a digitális tartalom azonnali teljesítését, lemondva az elállási jogról.",
+    "title": "Teljes importjelentés"
+  },
+  "report": {
+    "amount": "Összeg",
+    "back": "Vissza a kalkulátorhoz",
+    "base": "Alap",
+    "download": "PDF letöltése",
+    "expired": "A fizetés nem fejeződött be.",
+    "generating": "PDF készítése…",
+    "item": "Tétel",
+    "rate": "Kulcs",
+    "refunded": "Ezt a rendelést visszatérítettük.",
+    "stage": "Szakasz",
+    "title": "Járműimport költségjelentés",
+    "total": "Teljes bekerülési költség",
+    "waiting": "Fizetés megerősítése…",
+    "delivery": "Kiszállítás",
+    "leadTime": "Idő a forgalomba helyezésig",
+    "days": "nap",
+    "scenarios": "Három költségforgatókönyv",
+    "timeline": "Ütemterv",
+    "plan": "Teendők a behozatal után – lépésről lépésre",
+    "step": "Lépés",
+    "deadline": "Határidő",
+    "riskDetail": "Valószínűség: {{p}}%, költség, ha bekövetkezik: {{min}}–{{max}} {{cur}}",
+    "userAmount": "Ön által megadott összeg",
+    "scenarioMethod": "Az átlagos forgatókönyv a kockázatokat várható értékként veszi figyelembe (valószínűség × közepes költség); a pesszimista feltételezi, hogy minden kockázat a felső költséggel bekövetkezik."
+  },
+  "result": {
+    "chart": "Költségszerkezet",
+    "exciseIncluded": "Jövedéki adóval együtt",
+    "fx": "NBP-árfolyamok, dátum: {{date}}",
+    "paid1": "Pontos aukciós díjak",
+    "paid2": "Vám, jövedéki adó és áfa",
+    "paid3": "Dokumentumlista",
+    "paid4": "Személyre szóló PDF-jelentés",
+    "partner": "Ajánlatot kérne egy importcégtől?",
+    "rangeHint": "A sáv az árfolyam- és fuvardíj-ingadozást is lefedi.",
+    "title": "Becsült teljes bekerülési költség",
+    "transit": "Tengeri út: {{days}} nap",
+    "unlock": "A teljes jelentés feloldása – {{price}}",
+    "updating": "Frissítés…",
+    "short": "Bekerülési költség",
+    "calculating": "Minden tétel és forgatókönyv kiszámítása…",
+    "edit": "Adatok módosítása",
+    "structure": "Költségszerkezet (átlagos forgatókönyv)",
+    "timeline": "Idő a forgalomba helyezésig: {{min}}–{{max}} nap",
+    "included": "Mit tartalmaz",
+    "risks": "Mi történhet útközben",
+    "risksLead": "Minden kockázathoz valószínűség és költségsáv tartozik. Az átlagos forgatókönyv arányosan, a pesszimista teljes mértékben számol velük. Az összegek a jelentésben szerepelnek.",
+    "probability": "Valószínűség",
+    "reportEyebrow": "Háztól házig jelentés",
+    "reportTitle": "Minden tétel fillérre pontosan – három forgatókönyvben",
+    "reportItem1": "Aukciós díjak, szállítás, tengeri fuvar és biztosítás",
+    "reportItem2": "Vám, jövedéki adó és áfa – adóalapokkal és kulcsokkal",
+    "reportItem3": "Kiszállítás: km × díj, rakodás, minimális díj",
+    "reportItem4": "Forgalomba helyezési díjak és behozatal utáni szolgáltatások",
+    "reportItem5": "Kockázatok összegekkel: optimista, átlagos, pesszimista",
+    "reportItem6": "Lépésenkénti terv határidőkkel és dokumentumlistával",
+    "cheapestPort": "legolcsóbb kikötő"
+  },
+  "shipping": {
+    "CONTAINER_EXCLUSIVE": "Saját (kizárólagos) konténer",
+    "CONTAINER_SHARED": "Megosztott konténer",
+    "RORO": "RoRo"
+  },
+  "title": {
+    "CLEAN": "Tiszta tulajdoni okmány (clean title)",
+    "SALVAGE": "Roncs / nem javítható (salvage)"
+  },
+  "validation": {
+    "auctionHouse": {
+      "notInOrigin": "Ez az aukciósház nem működik a kiválasztott országban."
+    },
+    "engineCc": {
+      "required": "Kérjük, adja meg a hengerűrtartalmat."
+    },
+    "procedure4200": {
+      "companyOnly": "A 4200-as eljárás csak érvényes uniós közösségi adószámmal rendelkező cégek számára érhető el."
+    }
+  },
+  "warning": {
+    "dealer": {
+      "verifyExportDocuments": "Kereskedőtől történő vásárláskor győződjön meg arról, hogy megkapja az exportdokumentumokat."
+    },
+    "historic": {
+      "expertOpinionRequired": "A veterán (gyűjteményi) státuszhoz (0% vám) szakértői vélemény szükséges, és a vámhatóság vitathatja."
+    },
+    "intraEuTransport": {
+      "notPriced": "Nincs autószállítási ár a kikötőtől a célállomásig – a költség nincs benne."
+    },
+    "newMeansOfTransport": {
+      "vatInDestination": "Új közlekedési eszköz (≤6 hónap vagy ≤6000 km): az áfa a forgalomba helyezés országában is fizetendő."
+    },
+    "nl": {
+      "bpmNotIncluded": "A holland BPM regisztrációs adó nincs benne."
+    },
+    "pl": {
+      "clearedForOtherMemberState": "Lengyelországban vámkezelve, más országban történő forgalomba helyezéshez – ellenőrizze a célország regisztrációs adóit.",
+      "exciseDeclarationWithin14Days": "A lengyel jövedéki adót az adóhivatalnál kell megfizetni (AKC-U/S) a beérkezéstől számított 14 napon belül.",
+      "pickupMayBeReclassified": "A személyautóként forgalomba helyezett pickup jövedéki adó alá eshet – ellenőrizze a típusjóváhagyást."
+    },
+    "procedure4200": {
+      "reverseChargeDeductible": "4200-as eljárás: az áfát a célországban önadózással kell elszámolni (fordított adózás, áfaalany vállalkozásoknak semleges)."
+    },
+    "registrationTax": {
+      "notModelled": "A célország regisztrációs adóját még nem modellezzük."
+    },
+    "delivery": {
+      "portPickup": "Kikötői átvétel kiválasztva – a hazaszállítás közúton nincs benne.",
+      "selfDriveNotRunning": "Nem működő autóval nem lehet ideiglenes rendszámmal közlekedni – válasszon autómentőt."
+    }
+  },
+  "wizard": {
+    "auction": "Aukciósház",
+    "back": "Vissza",
+    "bid": "Nyertes licit",
+    "buyer": "Vevő",
+    "category": "Járműtípus",
+    "condition": "A jármű állapota",
+    "destination": "Forgalomba helyezés országa",
+    "engineCc": "Hengerűrtartalom",
+    "exciseRate": "Lengyel jövedéki adó: {{rate}}%",
+    "exciseWarning": "2000 cm³ felett a jövedéki adó {{from}}%-ról {{to}}%-ra ugrik – ez gyakran ezres nagyságrendű különbség!",
+    "finish": "Teljes jelentés",
+    "forklift": "targonca / csörlő",
+    "fuel": "Hajtáslánc",
+    "historic": "Eredeti állapotú veterán jármű",
+    "historicHint": "30+ éves, átalakítás nélkül: 0% vám és kedvezményes áfa.",
+    "next": "Tovább",
+    "origin": "Vásárlás helye",
+    "port": "Uniós vámkezelési kikötő",
+    "procedure4200": "4200-as vámeljárás",
+    "procedure4200Hint": "Uniós áfaalany cégeknek: nincs áfa a határon, fordított adózás a célországban.",
+    "shipping": "Tengeri szállítás módja",
+    "step1": "Honnan",
+    "step2": "Jármű",
+    "step3": "Állapot és ár",
+    "title": "Tulajdoni okmány típusa",
+    "year": "Gyártási év",
+    "zone": "Telephely helye (állam / tartomány)",
+    "zoneOther": "Egyéb / nem tudom",
+    "advanced": "Speciális beállítások",
+    "step4": "Célország és kiszállítás",
+    "step5": "Behozatal után",
+    "step6": "Költségjelentés",
+    "calculate": "Teljes költség kiszámítása",
+    "departurePort": "Indulási kikötő",
+    "departureAuto": "Automatikus – legolcsóbb útvonal",
+    "departureHint": "Válasszon konkrét kikötőt, ha a szállítmányozója már megnevezett egyet.",
+    "delivery": "Szállítás a kikötőből házhoz",
+    "distance": "Távolság a kikötőtől az Ön címéig",
+    "pricePerKm": "Kilométerdíj",
+    "tariffUnknown": "Ehhez az országhoz nincs kilométeralapú díjszabás – átalánydíjjal számolunk.",
+    "repair": "Javítási költség",
+    "repairHintRunner": "Az adott állapotra és okmánytípusra jellemző összeget javasoljuk (fényezés, gumik). Van szervizajánlata? Írja be.",
+    "repairHintDamaged": "Az adott állapotra jellemző javítási összeget javasoljuk (az ár kb. 30–40%-a). Van szervizajánlata? Írja be – a rejtett sérüléseket külön kockázatként számoljuk.",
+    "afterImportLead": "Minden teendő és költség a kikötő és a rendszámtábla között. A kötelező tételek mindig benne vannak, a többit Ön választja ki.",
+    "statutory": "Kötelező (hatósági díjak)",
+    "optional": "Opcionális",
+    "recommended": "ajánlott",
+    "optionsLoading": "Az útvonalához tartozó szolgáltatások betöltése…",
+    "noServices": "Ehhez az országhoz még nincs részletes forgalomba helyezési díjlistánk – a jelentés felsorolja a lépéseket.",
+    "insurance": "Kötelező gépjármű-felelősségbiztosítás az első évre",
+    "insuranceHint": "Az adott országban újonnan forgalomba helyezett autóra vonatkozó medián kötelezőbiztosítási ajánlatot javasoljuk. Van saját ajánlata? Írja be.",
+    "address": "Szállítási cím",
+    "addressPlaceholder": "pl. Budapest, Váci út 5 vagy irányítószám",
+    "addressChange": "Módosítás",
+    "addressHint": "Az egyetlen mező, amit be kell gépelnie. A cím alapján kiszámítjuk a kilométereket minden kikötőtől, és kiválasztjuk a legolcsóbbat.",
+    "portRankingAddress": "Mind a(z) {{count}} uniós kikötőt beáraztuk az Ön címére – a legolcsóbb elöl.",
+    "portRankingCountry": "Mind a(z) {{count}} uniós kikötőt beáraztuk a forgalomba helyezés országára – adja meg a címét a pontos kilométerekhez.",
+    "portRankingLoading": "Az összes uniós kikötő beárazása…",
+    "portCheapest": "legolcsóbb",
+    "portAuto": "Vissza a legolcsóbbhoz",
+    "portsAll": "Összes uniós kikötő megjelenítése ({{count}})",
+    "portsLess": "Kikötőlista összecsukása",
+    "days": "nap",
+    "portRankingNote": "Háztól házig végösszeg, átlagos forgatókönyv: tengeri fuvar, vámkezelés és áfa a kikötő országában, kiszállítás a címre és a behozatal utáni díjak.",
+    "distanceRouted": "Közúti útvonal a címéig, indulás: {{port}}.",
+    "distanceEstimated": "Becslés a címéig, indulás: {{port}} (légvonal × 1,25).",
+    "distanceTypical": "Jellemző távolság, kikötő: {{port}} – a pontos értékhez adja meg fent a címet.",
+    "tariffShort": "Piaci ár: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} rakodás, min. {{minimum}} {{cur}}."
+  },
+  "layout": {
+    "topbar": "Független kalkulátor az USA-ból, Kanadából, Japánból, az Egyesült Arab Emírségekből és az Egyesült Királyságból 27 uniós országba történő autóimport költségeihez",
+    "forBusiness": "Importcégeknek",
+    "home": "Kezdőlap",
+    "nav": "Főmenü",
+    "calculator": "Kalkulátor",
+    "howItWorks": "Hogyan működik",
+    "pricing": "Árak",
+    "faq": "GYIK",
+    "cta": "Költség kiszámítása",
+    "menu": "Menü",
+    "close": "Bezárás",
+    "breadcrumb": "Morzsamenü",
+    "themeLight": "Váltás világos témára",
+    "themeDark": "Váltás sötét témára",
+    "about": "Rólunk",
+    "why": "Miért mi",
+    "what": "Mit számolunk",
+    "ctaHint": "Ingyenes, regisztráció nélkül",
+    "language": "Nyelv"
+  },
+  "footer": {
+    "about": "Független kalkulátor az EU-n kívülről behozott autók importköltségeihez. Nem árulunk és nem importálunk autókat – kiszámoljuk, mennyibe kerülnek valójában.",
+    "calculators": "Importkalkulátorok",
+    "importFrom": {
+      "USA": "Autó az USA-ból",
+      "CANADA": "Autó Kanadából",
+      "JAPAN": "Autó Japánból",
+      "UAE": "Autó Dubajból (Egyesült Arab Emírségek)",
+      "UK": "Autó az Egyesült Királyságból"
+    },
+    "service": "Szolgáltatás",
+    "privacy": "Adatvédelmi tájékoztató",
+    "language": "Nyelv",
+    "payments": "Fizetés a Stripe-on keresztül (kártya, BLIK, Przelewy24). Kártyaadatokat soha nem tárolunk.",
+    "rights": "Minden jog fenntartva.",
+    "disclaimer": "A számítások tájékoztató jellegűek, nem minősülnek vámhatósági határozatnak vagy adótanácsadásnak."
+  },
+  "cookies": {
+    "title": "Sütik",
+    "text": "A webhely működéséhez szükséges sütiket, valamint az Ön hozzájárulásával analitikai sütiket használunk. Részletek:",
+    "accept": "Összes elfogadása",
+    "necessary": "Csak a szükségesek"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Autóimport-kalkulátor",
+      "title1": "Ismerje meg az importköltséget,",
+      "title2": "mielőtt licitál",
+      "lead": "Független kalkulátor, amely egy perc alatt megmutatja, mennyibe kerül összesen egy autó behozatala az USA-ból, Kanadából, Japánból, az Egyesült Arab Emírségekből vagy az Egyesült Királyságból – az aukciós ártól egészen a rendszámtábláig az Ön országában.",
+      "cta": "Ingyenes kalkuláció",
+      "secondary": "Pontosan mit számolunk",
+      "visual": "Fekete Ford Mustang sárga neonfényben, az amerikai zászló előtt",
+      "point1": "Azonnali becslés – regisztráció, telefonhívás és ajánlatra várás nélkül",
+      "point2": "Több mint 40 költségtétel, 43 uniós kikötő és a mai árfolyamok",
+      "point3": "Nem árulunk autót és nem veszünk fel jutalékot – a számok őszinték"
+    },
+    "how": {
+      "eyebrow": "Hogyan működik",
+      "title": "Az ötlettől a teljes összegig négy lépésben",
+      "s1": {
+        "title": "Hol vásárol",
+        "text": "USA, Kanada, Japán, Egyesült Arab Emírségek vagy Egyesült Királyság – aukción vagy kereskedőnél."
+      },
+      "s2": {
+        "title": "Melyik autót",
+        "text": "Típus, üzemanyag, hengerűrtartalom, évjárat és állapot – ezek határozzák meg az adókat."
+      },
+      "s3": {
+        "title": "Az Ön címe",
+        "text": "Az egyetlen mező, amit begépel. Kiszámoljuk a kilométereket és a legolcsóbb kikötőt."
+      },
+      "s4": {
+        "title": "Eredmény és jelentés",
+        "text": "Három forgatókönyv ingyen, és fillérre pontos PDF, amikor készen áll a vásárlásra."
+      },
+      "step": "Lépés"
+    },
+    "costs": {
+      "eyebrow": "Miből áll össze az ár",
+      "title": "Vám, jövedéki adó és áfa ugyanabban a sorrendben számolva, mint a vámhivatalban",
+      "lead": "Minden adó a következő alapját képezi, ezért a sorrend számít. Az áfakulcsot a vámkezelés kikötője, a jövedéki adót a forgalomba helyezés országa határozza meg.",
+      "cif": {
+        "title": "Vámérték (CIF)",
+        "formula": "ár + aukciós díj + szállítás + tengeri fuvar + biztosítás",
+        "text": "Minden, amit addig fizet, amíg az autó megérkezik egy uniós kikötőbe."
+      },
+      "duty": {
+        "title": "Vám (TARIC)",
+        "formula": "CIF × 10% személyautó · 22% pickup · 0% veterán",
+        "text": "A kulcs a HS-kódtól függ; motorkerékpároknál 6–8%."
+      },
+      "excise": {
+        "title": "Jövedéki adó (PL)",
+        "formula": "(CIF + vám) × 3,1% 2,0 l-ig · 18,6% felette",
+        "text": "Hibridek 1,55% / 9,3%, elektromos autók 0%. A forgalomba helyezés országában fizetendő."
+      },
+      "vat": {
+        "title": "Import áfa",
+        "formula": "(CIF + vám + jövedéki adó* + kirakodás) × a vámkezelő ország kulcsa",
+        "text": "*A jövedéki adó csak akkor számít bele, ha a vámkezelés a forgalomba helyezés országában történik."
+      }
+    },
+    "ports": {
+      "title": "Az áfakulcs a vámkezelés kikötőjétől függ",
+      "text": "A kalkulátor mind a 43 uniós vámkezelési kikötőt háztól házig beárazza: áfa a kikötő országában, tengeri fuvar, kiszállítás a címére és a behozatal utáni díjak. Németországi vámkezeléssel 23% helyett 19% az áfa, de hozzájön az autószállító költsége – lent néhány példa, a többit a kalkulátor hasonlítja össze.",
+      "port": "Kikötő",
+      "country": "Vámkezelés országa"
+    },
+    "pricing": {
+      "eyebrow": "Árak",
+      "title": "Kezdje ingyen, és csak a biztonságért fizessen"
+    },
+    "final": {
+      "title": "Számolja ki az importot egy perc alatt",
+      "text": "Regisztráció és kötelezettség nélkül. Ha az autó túl drágának bizonyul, épp most spórolt meg egy csomó pénzt. Ha megéri, nyugodtan licitál, ismerve a teljes költséget.",
+      "title1": "Ellenőrizze vásárlás előtt.",
+      "title2": "Egy percet vesz igénybe.",
+      "cta": "Importköltség kiszámítása",
+      "about": "Kik vagyunk"
+    },
+    "strip": {
+      "brand": {
+        "title": "CarImport.eu —",
+        "text": "független importkalkulátor"
+      },
+      "instant": {
+        "title": "Eredmény egy perc alatt",
+        "text": "Csak a címet adja meg, a többit mi javasoljuk"
+      },
+      "items": {
+        "title": "40+ költségtétel",
+        "text": "Az aukciótól a forgalomba helyezésig és a kockázatokig"
+      },
+      "ports": {
+        "title": "43 uniós kikötő",
+        "text": "Kiválasztjuk a címéhez legolcsóbbat"
+      }
+    },
+    "map": {
+      "eyebrow": "Importútvonalak",
+      "title": "A világ kikötőiből egyenesen az EU-ba",
+      "lead": "Exportkikötők az USA-ban, Kanadában, Japánban, az Egyesült Arab Emírségekben és az Egyesült Királyságban, valamint a Panamán, Szuezen és Gibraltáron át vezető útvonalak az uniós vámkezelési kikötőkig.",
+      "aria": "A tengeri útvonalak térképe az USA-ból, Kanadából, Japánból, az Egyesült Arab Emírségekből és az Egyesült Királyságból az uniós kikötőkig",
+      "eu": "Európai Unió",
+      "legendEu": "Uniós országok (forgalomba helyezés)",
+      "legendOrigin": "Vásárlási országok",
+      "legendRoute": "Tengeri útvonal",
+      "scroll": "Húzza el a teljes térkép megtekintéséhez",
+      "days": "nap"
+    },
+    "numbers": {
+      "eyebrow": "A CarImport.eu számokban",
+      "title": "A számok minden kalkuláció mögött",
+      "n1": {
+        "value": "5",
+        "label": "származási ország: USA, Kanada, Japán, Egyesült Arab Emírségek és Egyesült Királyság"
+      },
+      "n2": {
+        "value": "27",
+        "label": "uniós ország, ahol forgalomba helyezheti az autót"
+      },
+      "n3": {
+        "value": "43",
+        "label": "vámkezelési kikötő 22 uniós országban – kiválasztjuk a címéhez legolcsóbbat"
+      },
+      "n4": {
+        "value": "4",
+        "label": "nyelv: lengyel, angol, német, ukrán"
+      }
+    },
+    "why": {
+      "eyebrow": "Miért érdemes használni",
+      "title": "Tudja meg, mennyit fizet – mielőtt a „licit” gombra kattint",
+      "lead": "Az import legdrágább része azok a költségek, amelyeket vásárlás előtt senki sem említett. A kalkulátor még azelőtt felszínre hozza őket, hogy az első dollárt elköltené.",
+      "preview": {
+        "tag": "Kalkulátor",
+        "title": "Teljes háztól házig költség hat lépésben",
+        "text": "Aukció, szállítás, vám, jövedéki adó, áfa, forgalomba helyezés és kockázatok – három forgatókönyvben.",
+        "alt": "Képernyőkép az importköltség-kalkulátorról"
+      },
+      "instant": {
+        "tag": "Azonnali",
+        "title": "Becslés egy perc, nem két nap alatt",
+        "text": "Nincsenek kapcsolatfelvételi űrlapok, nem kell értékesítői hívásra várni. Minden mező előre ki van töltve egy javaslattal – csak azt módosítja, amit jobban tud."
+      },
+      "independent": {
+        "tag": "Független",
+        "title": "Nem árulunk sem autót, sem szállítást",
+        "text": "Nem keresünk árrést a fuvarozókon vagy az aukciókon, így nincs okunk alábecsülni a költségeket. Mindenki ugyanazt az eredményt kapja."
+      },
+      "ports": {
+        "tag": "43 kikötő",
+        "title": "A legolcsóbb útvonal a címéig",
+        "text": "Minden uniós vámkezelési kikötőt háztól házig beárazunk, és megmutatjuk a különbséget."
+      },
+      "scenarios": {
+        "tag": "Forgatókönyvek",
+        "title": "Optimista, átlagos, pesszimista",
+        "text": "Árfolyamok, késések és útközbeni kockázatok – reális sávot lát, nem egyetlen „varázsszámot”."
+      },
+      "after": {
+        "tag": "Behozatal után",
+        "title": "Forgalomba helyezés és papírmunka is",
+        "text": "Műszaki vizsga, fordítások, világítás-átalakítás, hatósági díjak és biztosítás – határidőkkel."
+      },
+      "report": {
+        "tag": "PDF-jelentés",
+        "title": "Minden fillér feketén-fehéren",
+        "text": "1 990 Ft-ért névre szóló jelentés minden kulccsal, adóalappal és behozatal utáni cselekvési tervvel."
+      }
+    },
+    "what": {
+      "eyebrow": "Mit számolunk bele",
+      "title": "Minden, ami az autó árát az Ön kapujáig meghatározza",
+      "lead": "A legtöbb kalkulátor megáll a vámnál és az áfánál. Mi a teljes utat számoljuk – az aukciós teleptől a rendszámtábláig –, és hozzáadjuk azt is, ami félremehet.",
+      "cta": "Próbálja ki a saját autójával",
+      "purchase": {
+        "title": "Vásárlás",
+        "i1": "Nyertes licit vagy kereskedői ár",
+        "i2": "Copart, IAAI, Manheim, USS díjak ársávok szerint",
+        "i3": "Clean / salvage title és állapot",
+        "i4": "Becsült javítási költség"
+      },
+      "transport": {
+        "title": "Szállítás",
+        "i1": "Aukciós teleptől az exportkikötőig",
+        "i2": "Konténeres vagy RoRo fuvar",
+        "i3": "Szállítmánybiztosítás",
+        "i4": "Kirakodási és termináldíjak",
+        "i5": "Autómentő vagy autószállító a címéig"
+      },
+      "taxes": {
+        "title": "Vám és adók",
+        "i1": "Vám a TARIC szerint (10%, pickupoknál 22%)",
+        "i2": "Jövedéki adó motor és üzemanyag szerint",
+        "i3": "Áfa a vámkezelési kikötő országában",
+        "i4": "Aznapi jegybanki árfolyam"
+      },
+      "after": {
+        "title": "Behozatal után",
+        "i1": "Műszaki vizsga és jóváhagyás",
+        "i2": "Dokumentumok hiteles fordítása",
+        "i3": "Forgalomba helyezés, rendszámtábla és hatósági díjak",
+        "i4": "Világítás és sebességmérő átalakítása",
+        "i5": "Kötelező gépjármű-felelősségbiztosítás az első évre"
+      },
+      "risks": {
+        "title": "Kockázatok",
+        "i1": "Kikötői tárolás és késő hajók",
+        "i2": "Vámvizsgálat és vámérték-ellenőrzés",
+        "i3": "Rejtett sérülések és szállítási károk",
+        "i4": "Késő tulajdoni okmány és exportdokumentumok"
+      }
+    },
+    "compare": {
+      "eyebrow": "Összehasonlítás",
+      "title": "Miért nem elég egy hozzávetőleges becslés",
+      "self": "Egyedül",
+      "broker": "Bróker ajánlata",
+      "r1": "Aukciós díjak az aktuális sávok szerint",
+      "r2": "Mind a 43 uniós kikötő összehasonlítása",
+      "r3": "Mai árfolyam + tartalék az ingadozásra",
+      "r4": "Jövedéki adó és áfa a vámkezelés és a forgalomba helyezés országa szerint",
+      "r5": "Kockázatok és három költségforgatókönyv",
+      "r6": "Forgalomba helyezés és papírmunka a behozatal után",
+      "r7": "Nincs árrés vagy rejtett jutalék",
+      "note": "A ~ jelentése: „általában részben”. A brókerek ajánlatai gyakran tartalmazzák a saját árrésüket, és nem mutatnak költségbontást."
+    }
+  },
+  "pricing": {
+    "popular": "Legnépszerűbb",
+    "free": {
+      "name": "Gyors becslés",
+      "price": "Ingyenes",
+      "f1": "Bekerülési költség sávja",
+      "f2": "Költségszerkezet-diagram",
+      "f3": "Szállítási idő és figyelmeztetések",
+      "f4": "Regisztráció nélkül",
+      "cta": "Ingyenes kalkuláció"
+    },
+    "report": {
+      "name": "PDF-jelentés",
+      "price": "1 990 Ft",
+      "f1": "Minden tétel fillérre pontosan",
+      "f2": "Aukciós díjak ársávok szerint",
+      "f3": "Vám, jövedéki adó és áfa – adóalapokkal és kulcsokkal",
+      "f4": "Dokumentumlista és személyre szóló PDF",
+      "cta": "Kalkuláció és jelentés feloldása"
+    },
+    "partner": {
+      "name": "Importcégeknek",
+      "price": "Elfogadott érdeklődőnként",
+      "f1": "Vevők kész autós kalkulációval",
+      "f2": "GDPR-hozzájárulás az adattovábbítás előtt",
+      "f3": "Csak az Ön által elfogadott megkeresések",
+      "f4": "Előfizetés nélkül",
+      "cta": "Legyen partnerünk"
+    }
+  },
+  "faq": {
+    "eyebrow": "Kérdések és válaszok",
+    "title": "Gyakran ismételt kérdések",
+    "lead": "Nem találja a választ? A kalkulátor minden feltételezést, a PDF-jelentés pedig minden kulcsot és adóalapot megmutat.",
+    "q1": {
+      "q": "Mennyi a vám egy USA-ból behozott autóra?",
+      "a": "Személygépkocsiknál (KN 8703) a vám a CIF vámérték 10%-a, pickupoknál és könnyű tehergépkocsiknál (8704) 22%, motorkerékpároknál 6–8%. A 30 évnél idősebb, eredeti állapotú gyűjteményi járművek 0%-os vámtételre lehetnek jogosultak. A vámérték a vételár, valamint az aukciós díjak, az uniós határig történő szállítás és a biztosítás összege."
+    },
+    "q2": {
+      "q": "Milyen jövedéki adó vonatkozik az autóimportra Lengyelországban?",
+      "a": "Belső égésű motoros autók 2000 cm³-ig: 3,1%, 2000 cm³ felett: 18,6%. Hibridek: 1,55% 2000 cm³-ig és 9,3% 3500 cm³-ig. A 2000 cm³-ig terjedő plug-in hibridek és az elektromos autók mentesek. Az adóalap a vámérték plusz a vám, PLN-re átszámítva."
+    },
+    "q3": {
+      "q": "Hol a legjobb vámkezeltetni az autót: Bremerhavenben, Rotterdamban vagy Gdyniában?",
+      "a": "Az import áfát a vámkezelés országa szabja ki: Németországban 19%, Hollandiában 21%, Lengyelországban 23%. A németországi vámkezelés csökkenti az áfát, de hozzájön a Lengyelországba tartó autószállító költsége, és a jövedéki adót külön kell megfizetni az adóhivatalnál 14 napon belül. A kalkulátor összehasonlítja a lehetőségeket az Ön autójára."
+    },
+    "q4": {
+      "q": "Mi az a 4200-as vámeljárás?",
+      "a": "Olyan szabad forgalomba bocsátás, amelynél az importáló országban áfamentesség érvényesül, ha az autó közvetlenül egy másik uniós tagállamban lévő áfaalany vállalkozáshoz kerül. A vevő a saját országában fordított adózással számolja el az áfát, így ez az áfaalany cégek számára semleges. Magánszemélyek számára nem érhető el."
+    },
+    "q5": {
+      "q": "Mennyi ideig tart a szállítás Európába?",
+      "a": "Az USA keleti partjáról és a kanadai kikötőkből kb. 2–3 hét a tengeren, Kaliforniából kb. 5 hét, Japánból 6–7 hét, az Egyesült Arab Emírségekből 3–4 hét, az Egyesült Királyságból néhány nap. Ehhez jön még a szállítás az aukciós teleptől a kikötőig és a vámkezelés."
+    },
+    "q6": {
+      "q": "Honnan származnak az árfolyamok?",
+      "a": "Az NBP (Lengyel Nemzeti Bank) középárfolyamait használjuk, amelyeket minden munkanapon automatikusan letöltünk. Mivel az autót napokkal vagy hetekkel a kalkuláció után fizeti ki, az ingyenes sáv számol az árfolyam-ingadozással."
+    },
+    "q7": {
+      "q": "Mit tartalmaz a fizetős PDF-jelentés?",
+      "a": "Minden tételt fillérre pontosan: aukciós díjak sávok szerint, szállítás, vámérték, vám, jövedéki adó és áfa adóalapokkal és kulcsokkal, a szükséges dokumentumok listája és egy letölthető, személyre szóló PDF. Fizetés BLIK-kel, kártyával vagy Przelewy24-gyel."
+    },
+    "q8": {
+      "q": "Kötelező érvényű a kalkulátor eredménye?",
+      "a": "Nem. Ez egy becslés az aktuális kulcsok és díjszabások alapján. A végleges összegeket a vámhatóság és az adóhivatal állapítja meg, amelyek például ellenőrizhetik a vámértéket. A jelentés minden feltételezést felsorol, így könnyen összevethető a hivatalos határozattal."
+    },
+    "q9": {
+      "q": "A CarImport.eu importál autókat?",
+      "a": "Nem. Mi csak egy kalkulátor vagyunk – nem vásárolunk, nem szállítunk és nem vámkezelünk autókat, és nem veszünk fel jutalékot aukcióktól vagy fuvarozóktól. Így a becslés független marad. Ha szeretné, továbbíthatja a kalkulációt egy ellenőrzött importcégnek, de ez mindig az Ön döntése."
+    }
+  },
+  "calc": {
+    "title": "Autóimport-költségkalkulátor",
+    "lead": "Hat lépés: származás, jármű, állapot, célország, behozatal után és jelentés. Az eredmény a végén jelenik meg – három forgatókönyvben.",
+    "currency": "Az eredmény pénzneme",
+    "progress": "Haladás"
+  },
+  "seo": {
+    "home": {
+      "title": "Autóimport-költségkalkulátor – USA, Japán, Dubaj → EU | CarImport.eu",
+      "description": "Független kalkulátor autóimporthoz az USA-ból, Kanadából, Japánból, az Egyesült Arab Emírségekből és az Egyesült Királyságból: aukció, szállítás, vám, jövedéki adó, áfa, forgalomba helyezés és kockázatok. Azonnali becslés, regisztráció nélkül."
+    },
+    "calculator": {
+      "title": "Vám-, jövedékiadó- és áfakalkulátor importautókhoz | CarImport.eu",
+      "description": "Válassza ki az országot, az aukciót, a kikötőt és a járművet — az élő kalkulátor megmutatja a költségsávot és a bontást: ár, szállítás, vám, jövedéki adó, áfa és forgalomba helyezés."
+    },
+    "privacy": {
+      "title": "Adatvédelmi tájékoztató | CarImport.eu",
+      "description": "Hogyan kezeli a CarImport.eu a személyes adatokat: fizetések, jelentések, partneri megkeresések és sütik."
+    },
+    "about": {
+      "title": "Rólunk – független autóimport-kalkulátor | CarImport.eu",
+      "description": "Kik vagyunk, honnan származnak az adataink és miből élünk. A CarImport.eu nem árul és nem importál autókat – őszintén és függetlenül kiszámolja a teljes importköltséget."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Jogi információk",
+    "title": "Adatvédelmi tájékoztató",
+    "s1": {
+      "title": "Adatkezelő",
+      "text": "Az adatkezelő a CarImport.eu üzemeltetője. Adatvédelmi ügyekben írjon nekünk erre a címre: {{email}}."
+    },
+    "s2": {
+      "title": "Milyen adatokat kezelünk",
+      "text": "A kalkulációhoz megadott adatokat (személyes adatok nélkül), jelentés vásárlásakor pedig nevét és e-mail-címét. A partneri űrlap ezenfelül telefonszámot és üzenetet is gyűjt. Kártyaadatokat soha nem kezelünk — ezt a Stripe végzi."
+    },
+    "s3": {
+      "title": "Célok és jogalapok",
+      "text": "A jelentés megvásárlásának teljesítése (GDPR 6. cikk (1) bekezdés b) pont), számviteli kötelezettségek (c) pont), megkeresésének továbbítása egy partnernek az Ön hozzájárulása alapján (a) pont), valamint analitika a sütisávban adott hozzájárulás alapján."
+    },
+    "s4": {
+      "title": "Címzettek",
+      "text": "Stripe Payments Europe (fizetések), tárhely- és e-mail-szolgáltatóink, valamint — a partneri űrlap esetén — egy ellenőrzött importcég, kizárólag az Ön hozzájárulásával."
+    },
+    "s5": {
+      "title": "Sütik",
+      "text": "A szükséges sütik és a böngésző tárhelye megjegyzik a nyelvet, a témát, a kalkulátorban elért haladást és a megvásárolt jelentéshez való hozzáférést. Az analitika csak azután indul el, hogy Ön az „Összes elfogadása” gombra kattint."
+    },
+    "s6": {
+      "title": "Az Ön jogai",
+      "text": "Önnek joga van a hozzáféréshez, a helyesbítéshez, a törléshez, a korlátozáshoz, az adathordozhatósághoz és a tiltakozáshoz, hozzájárulását bármikor visszavonhatja, és panaszt tehet az adatvédelmi hatóságnál. Írjon nekünk: {{email}}."
+    }
+  },
+  "delivery": {
+    "PORT_PICKUP": "Átvétel a kikötőben",
+    "CAR_CARRIER": "Autószállító",
+    "TOW_TRUCK": "Autómentő",
+    "SELF_DRIVE": "Ideiglenes rendszámmal"
+  },
+  "scenario": {
+    "0": "Optimista",
+    "1": "Átlagos",
+    "2": "Pesszimista"
+  },
+  "scenarioHint": {
+    "0": "Legalacsonyabb díjak, kedvező árfolyam, minden rendben megy",
+    "1": "Jellemző díjak + valószínűséggel súlyozott kockázatok",
+    "2": "Legmagasabb díjak, gyengébb árfolyam, a kockázatok bekövetkeznek"
+  },
+  "timeline": {
+    "INLAND": "Átvétel a telepről és szállítás a kikötőbe",
+    "OCEAN": "Hajóút (a hajóra várakozással együtt)",
+    "CLEARANCE": "Kirakodás és vámkezelés",
+    "DELIVERY": "Kiszállítás házhoz",
+    "REGISTRATION": "Előkészítés és forgalomba helyezés"
+  },
+  "plan": {
+    "deadline": {
+      "beforeRelease": "A kikötőből való kiadás előtt",
+      "14days": "A Lengyelországba érkezéstől számított 14 napon belül",
+      "beforeInspection": "A műszaki vizsga előtt",
+      "beforeRegistration": "A forgalomba helyezés előtt",
+      "pl30days": "A behozataltól számított 30 napon belül (bírság legfeljebb 1000 PLN)",
+      "fromRegistration": "A forgalomba helyezéstől / ideiglenes rendszámtól",
+      "national": "A forgalomba helyezés országának szabályai szerint",
+      "none": "Nincs jogszabályi határidő"
+    },
+    "step": {
+      "clearance": {
+        "title": "Vámkezelés a kikötőben",
+        "text": "A vámügynök benyújtja a vámáru-nyilatkozatot (SAD); Ön megfizeti a vámot és az import áfát. Szükséges: számla, hajóraklevél, title/exporttanúsítvány, EORI."
+      },
+      "pl": {
+        "excise": {
+          "title": "Jövedékiadó-bevallás és befizetés (AKC-U/S)",
+          "text": "Benyújtás az adóhivatalnál (vagy online) és a jövedéki adó megfizetése; az igazolás a forgalomba helyezéshez szükséges."
+        },
+        "exciseExemption": {
+          "title": "Jövedékiadó-mentesség bejelentése (elektromos autó)",
+          "text": "Az elektromos autók mentesek, de az AKC-U/S bevallást ettől függetlenül be kell nyújtani."
+        },
+        "inspection": {
+          "title": "Műszaki vizsga vizsgaállomáson",
+          "text": "A behozott jármű első műszaki vizsgája, az alvázszám (VIN) azonosításával együtt; az eredmény a központi nyilvántartásba kerül."
+        },
+        "recycling": {
+          "title": "Újrahasznosítási díj: 500 PLN",
+          "text": "A Nemzeti Környezetvédelmi Alapnak fizetendő a behozott autó első forgalomba helyezésekor."
+        },
+        "registration": {
+          "title": "Forgalomba helyezés a járműnyilvántartó hivatalban",
+          "text": "Kérelem, tulajdonjog igazolása fordítással, jövedéki adó, műszaki vizsga, újrahasznosítási díj, áfa/vám igazolása; ideiglenes engedélyt és rendszámot kap."
+        }
+      },
+      "translations": {
+        "title": "Hiteles fordítások",
+        "text": "Külföldi title/forgalmi okmány, számla és exportdokumentum – hites fordítótól."
+      },
+      "lighting": {
+        "title": "Világítás átalakítása uniós szabványra",
+        "text": "Borostyánsárga hátsó irányjelzők, hátsó ködlámpa, fényszóró-beállítás – ezek nélkül az autó megbukik a műszaki vizsgán."
+      },
+      "insurance": {
+        "title": "Kötelező gépjármű-felelősségbiztosítás",
+        "text": "A forgalomba helyezéstől kötelező; a casco biztosítást érdemes szakértői értékbecslés után megkötni."
+      },
+      "de": {
+        "approval": {
+          "title": "Egyedi forgalomba helyezési engedély (§21 StVZO)",
+          "text": "Teljes szakértői vizsgálat (TÜV/DEKRA) EU-n kívüli autókhoz; a forgalomba helyezéshez kötelező."
+        },
+        "registration": {
+          "title": "Forgalomba helyezés (Zulassung)",
+          "text": "Biztosítási eVB-szám, vámkezelési igazolás, szakértői jelentés, SEPA-megbízás a gépjárműadóhoz."
+        }
+      },
+      "generic": {
+        "inspection": {
+          "title": "Műszaki vizsga / egyedi jóváhagyás",
+          "text": "A terjedelem országonként eltér – az EU-n kívüli autókhoz gyakran egyedi jóváhagyás szükséges."
+        },
+        "registrationTax": {
+          "title": "Nemzeti regisztrációs adó",
+          "text": "Pl. BPM Hollandiában, NoVA Ausztriában, malus Franciaországban – vásárlás előtt ellenőrizze."
+        },
+        "registration": {
+          "title": "Forgalomba helyezés",
+          "text": "Kérelem vámkezelési igazolással, műszaki vizsgával és biztosítással."
+        }
+      },
+      "evCharging": {
+        "title": "Töltőcsatlakozó",
+        "text": "Az amerikai autók NACS/CCS1 csatlakozót használnak – adapterre vagy CCS2/Type 2 csatlakozó utólagos beépítésére van szükség."
+      }
+    }
+  },
+  "deliveryHint": {
+    "CAR_CARRIER": "A legolcsóbb működőképes autókhoz",
+    "TOW_TRUCK": "Egyedi autómentő, nem működő autókhoz is",
+    "SELF_DRIVE": "Ideiglenes rendszám + biztosítás; csak működőképes autókhoz",
+    "PORT_PICKUP": "A szállítást Ön intézi"
+  },
+  "serviceHint": {
+    "SWORN_TRANSLATION": "Title, számla és exportdokumentum",
+    "US_LIGHTING_CONVERSION": "Uniós előírásoknak megfelelő irányjelzők és lámpák",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Jobbkormányos autó",
+    "REAR_FOG_LIGHT": "A műszaki vizsgán kötelező",
+    "SPEEDOMETER_KMH": "Mérföldes sebességmérő – kényelem és viszonteladási érték",
+    "SERVICE_INSPECTION": "Olaj, szűrők, folyadékok, fékek a hosszú út után",
+    "GEOMETRY_ALIGNMENT": "Futóműjavítás után ajánlott",
+    "DETAILING": "Mosás, belső takarítás, fényezés-polírozás",
+    "EXPERT_VALUATION": "Hasznos a casco biztosításhoz és az eladáshoz"
+  },
+  "riskInfo": {
+    "RISK_PORT_STORAGE": "A terminál a díjmentes időszak után napi díjat számít fel, pl. ha a dokumentumok vagy a szállítás késnek.",
+    "RISK_CUSTOMS_INSPECTION": "Szúrópróbaszerű vagy célzott ellenőrzés: konténer kirakása, röntgenvizsgálat, további terminálköltségek.",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Ha az ár túl alacsonynak tűnik, a vámhatóság magasabb értéket vehet alapul – nő a vám és az áfa.",
+    "RISK_VESSEL_ROLLOVER": "A hajó túlfoglalt, és a konténer a következővel megy – többlet tárolás az exportkikötőben.",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "A szállítási kárt a kötvény fedezi, az önrész levonásával.",
+    "RISK_HIDDEN_DAMAGE": "Az aukciós fotókon nem látható hibák – minél rosszabb az állapot, annál nagyobb a kockázat.",
+    "RISK_TITLE_DELAY": "Az aukció későn küldi a title-t – az autó a telepen vagy a kikötőben vár.",
+    "RISK_EXPORT_DOCS_DELAY": "A forgalomból kivonás és az exportdokumentumok a szokásosnál tovább tartanak."
+  },
+  "docStage": {
+    "PURCHASE": "Vásárlás",
+    "SHIPPING": "Szállítás",
+    "CUSTOMS": "Vámkezelés",
+    "REGISTRATION": "Forgalomba helyezés"
+  },
+  "proposal": {
+    "tag": "Javasolt",
+    "restore": "Javaslat használata",
+    "was": "javaslat: {{value}} {{unit}}"
+  },
+  "region": {
+    "NORTH_SEA": "Északi-tenger",
+    "BALTIC": "Balti-tenger és Skandinávia",
+    "ATLANTIC": "Atlanti-óceán",
+    "WEST_MED": "Nyugati Földközi-tenger",
+    "EAST_MED": "Adriai-, Égei- és Fekete-tenger"
+  },
+  "about": {
+    "eyebrow": "Rólunk",
+    "title1": "Az autóimportot számoljuk.",
+    "title2": "Autókat nem árulunk.",
+    "lead": "A CarImport.eu egy független kalkulátor, amely kiszámolja, mennyibe kerül egy autó behozatala az Európai Unión kívülről. Azért hoztuk létre, hogy bárki – ne csak a tízéves tapasztalattal rendelkező kereskedő – vásárlás előtt tudja, mennyit fizet valójában.",
+    "story": {
+      "eyebrow": "Hogyan kezdődött",
+      "title": "A rejtett költségek miatti bosszúságból",
+      "p1": "Egy amerikai aukciós autó kiváló vételnek tűnik – amíg hozzá nem adja az aukciós díjakat, a kikötőig tartó szállítást, a tengeri fuvart, a vámot, a jövedéki adót, az áfát, a kirakodást, az autómentőt, a fordításokat, a műszaki vizsgát és a forgalomba helyezést. Minden tétel „apróság”, együtt viszont akár meg is duplázhatják az árat.",
+      "p2": "Az információk szét vannak szórva aukciós díjtáblázatokban, vámtarifákban, árfolyamtáblázatokban és 27 ország szabályaiban. A brókerek ajánlatai általában egyetlen számot adnak bontás nélkül – a saját árrésükkel együtt.",
+      "p3": "Olyan eszközt építettünk, amely mindezt egy helyre gyűjti, aktuális kulcsokkal számol, és minden feltételezést megmutat. Regisztráció nélkül, értékesítői hívás nélkül."
+    },
+    "role": {
+      "eyebrow": "Őszintén arról, mik vagyunk",
+      "title": "Kalkulátor vagyunk. Csak egy kalkulátor.",
+      "is": "Mik vagyunk",
+      "is1": "A teljes importköltség független kalkulátora",
+      "is2": "43 uniós vámkezelési kikötő összehasonlítása az Ön címére",
+      "is3": "Részletes PDF-jelentés forrása minden kulccsal",
+      "is4": "A behozatal utáni lépések és dokumentumok listája",
+      "isNot": "Mik nem vagyunk",
+      "isNot1": "Nem importőr és nem kereskedő – nem árulunk autókat",
+      "isNot2": "Nem intézünk szállítást vagy vámkezelést",
+      "isNot3": "Nincs jutalék aukcióktól, fuvarozóktól vagy vámügynököktől",
+      "isNot4": "Nem hatóság és nem adótanácsadó – az eredmény becslés"
+    },
+    "data": {
+      "eyebrow": "Honnan származnak a számok",
+      "title": "Aktuális kulcsok, nem „nagyjából”",
+      "lead": "Az eredményben szereplő minden összeg egy konkrét kulcson alapul, amelyet a jelentés megmutat. Az adatok automatikusan, illetve minden jogszabályváltozáskor frissülnek.",
+      "customs": {
+        "title": "Az EU vámtarifája",
+        "text": "Vámtételek KN-kód (TARIC) szerint személyautókra, pickupokra, motorkerékpárokra és veterán járművekre."
+      },
+      "fx": {
+        "title": "Jegybanki árfolyamok",
+        "text": "Minden munkanapon letöltött referencia-árfolyamok, tartalékkal a fizetésig bekövetkező ingadozásra."
+      },
+      "fees": {
+        "title": "Aukciós és fuvarozói díjszabások",
+        "text": "A Copart, IAAI, Manheim és USS díjsávjai, tengeri fuvardíjak, kikötői díjak és kilométeralapú szállítási árak."
+      },
+      "law": {
+        "title": "Nemzeti szabályok",
+        "text": "Jövedéki adó, 27 ország áfakulcsai, forgalomba helyezési díjak és kötelező vizsgálatok – a jogalappal együtt a jelentésben."
+      }
+    },
+    "money": {
+      "eyebrow": "Miből élünk",
+      "title": "Átláthatóan – mert bizalomról van szó",
+      "lead": "A kalkulátor eredménye nem függ attól, ki és mennyit fizet nekünk. Háromféleképpen keresünk pénzt, mindhárom nyilvános:",
+      "m1": {
+        "title": "PDF-jelentés – 1 990 Ft",
+        "text": "Az ingyenes eredmény megmutatja a sávot és a költségszerkezetet. A minden tételt tartalmazó részletes jelentést csak akkor veszi meg, ha szüksége van rá."
+      },
+      "m2": {
+        "title": "Opcionális ajánlatkérés importcégtől",
+        "text": "Csak ha Ön kéri, továbbítjuk a kalkulációját egy ellenőrzött cégnek. Ő fizet nekünk, nem Ön – és csak az Ön hozzájárulásával."
+      },
+      "m3": {
+        "title": "Megjelölt partnerlinkek",
+        "text": "Pl. alvázszám-ellenőrzés vagy valutaváltás. Mindig megjelölve, és soha nem befolyásolják a becslést."
+      }
+    },
+    "values": {
+      "eyebrow": "Amit fontosnak tartunk",
+      "transparency": {
+        "title": "Átláthatóság",
+        "text": "Minden számnak van forrása és alapja. Ha valami becslés, azt meg is mondjuk."
+      },
+      "independence": {
+        "title": "Függetlenség",
+        "text": "Nem fűződik érdekünk ahhoz, hogy megveszi-e az autót, vagy ki importálja Önnek."
+      },
+      "precision": {
+        "title": "Pontosság",
+        "text": "Fillérre pontosan számolunk, de sávot is mutatunk – mert az import nem egzakt matematika."
+      }
+    },
+    "cta": {
+      "title": "Ellenőrizze az autóját egy perc alatt",
+      "text": "Kérdése van, vagy elavult kulcsot talált? Írjon nekünk: {{email}}"
+    }
+  },
+  "currency": {
+    "label": "Az eredmény pénzneme",
+    "title": "Milyen pénznemben mutassuk a költségeket?",
+    "hint": "Az aukciós összegeket (USD, JPY, AED…) az aktuális jegybanki árfolyamon számítjuk át. A pénznem nem befolyásolja az adószámítást – az adókat mindig a vámkezelés országa állapítja meg.",
+    "groupEu": "Uniós pénznemek",
+    "groupOther": "Egyéb"
+  }
+}
