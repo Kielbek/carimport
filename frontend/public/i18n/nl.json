@@ -1,0 +1,1014 @@
+{
+  "affiliate": {
+    "CURRENCY_EXCHANGE": "Voordeliger valuta wisselen",
+    "CURRENCY_EXCHANGE_HINT": "Betaal de auto zonder bankmarges",
+    "FINANCING": "Lease of lening",
+    "FINANCING_HINT": "Financier de import en de belastingen",
+    "VIN_CHECK": "Controleer de VIN-historie",
+    "VIN_CHECK_HINT": "Schade, kilometerstand, diefstalregistraties",
+    "sponsored": "Gesponsord",
+    "title": "Misschien heeft u ook nodig"
+  },
+  "app": {
+    "headline": "Wat kost een geïmporteerde auto echt?",
+    "tagline": "Veilingen in de VS, Canada, Japan, Dubai of het VK → EU-invoerrechten, accijns en btw. Direct resultaat, zonder registratie."
+  },
+  "auction": {
+    "COPART": "Copart",
+    "DEALER": "Dealer / particulier",
+    "EMIRATES_AUCTION": "Emirates Auction",
+    "IAAI": "IAAI",
+    "USS": "USS Japan"
+  },
+  "buyer": {
+    "COMPANY": "Bedrijf",
+    "PRIVATE": "Particulier"
+  },
+  "category": {
+    "MOTORCYCLE": "Motorfiets",
+    "PASSENGER_CAR": "Personenauto",
+    "PICKUP_TRUCK": "Pick-up",
+    "REGISTRATION": "Na import & registratie",
+    "SUV": "SUV",
+    "TAXES": "EU-heffingen & belastingen",
+    "TRANSPORT": "Transport & logistiek",
+    "VAN": "Bestelwagen",
+    "VEHICLE": "Voertuig & veiling",
+    "RISK": "Risico’s onderweg"
+  },
+  "condition": {
+    "ENGINE_STARTS": "Motor start",
+    "ENGINE_STARTS_HINT": "Kan niet op eigen kracht rijden",
+    "NON_RUNNING": "Schade / Salvage",
+    "NON_RUNNING_HINT": "Heeft een lier- of takelwagen nodig",
+    "RUN_AND_DRIVE": "Run & Drive",
+    "RUN_AND_DRIVE_HINT": "Start en rijdt"
+  },
+  "cost": {
+    "AUCTION_AGENT_COMMISSION": "Commissie exportagent",
+    "AUCTION_BUYER_FEE": "Kopersprovisie veiling",
+    "AUCTION_ENVIRONMENTAL_FEE": "Milieuheffing",
+    "AUCTION_EXPORT_DOCS": "Exportdocumenten",
+    "AUCTION_GATE_FEE": "Gate fee (uitrijkosten)",
+    "AUCTION_RECYCLING_FEE": "Recyclingbijdrage (Japan)",
+    "AUCTION_SERVICE_FEE": "Servicekosten veiling",
+    "AUCTION_TITLE_HANDLING_FEE": "Kosten afhandeling title",
+    "AUCTION_VIRTUAL_BID_FEE": "Kosten online bieden",
+    "CARGO_INSURANCE": "Transportverzekering",
+    "CUSTOMS_AGENCY": "Douane-expediteur",
+    "CUSTOMS_DUTY": "Invoerrechten",
+    "EXCISE_TAX": "Accijns",
+    "FORKLIFT_LOADING": "Laden met heftruck",
+    "IMPORT_VAT": "Invoer-btw",
+    "INDIVIDUAL_APPROVAL": "Individuele goedkeuring (§21 StVZO)",
+    "INLAND_TRANSPORT": "Binnenlands transport naar de haven",
+    "INTRA_EU_ACQUISITION_VAT": "Btw op intracommunautaire verwerving (verlegd, aftrekbaar)",
+    "INTRA_EU_TRANSPORT": "Autotransporter van haven naar bestemming",
+    "OCEAN_FREIGHT": "Zeevracht",
+    "PORT_UNLOADING": "Lossen in de haven & terminal",
+    "PURCHASE_PRICE": "Aankoopprijs (winnend bod)",
+    "RDW_INSPECTION": "RDW-keuring",
+    "RECYCLING_FEE": "Recyclingbijdrage",
+    "REGISTRATION_FEE": "Registratiekosten",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Koplampen afstellen (rechtsgestuurd)",
+    "SWORN_TRANSLATION": "Beëdigde vertaling van documenten",
+    "TECHNICAL_INSPECTION": "Technische keuring",
+    "US_LIGHTING_CONVERSION": "Verlichting ombouwen (Amerikaanse uitvoering)",
+    "WINCH_CONTAINER_LOADING": "Container laden met lier",
+    "DELIVERY_CAR_CARRIER": "Autotransporter van haven tot voor de deur",
+    "DELIVERY_TOW_TRUCK": "Oprij-/takelwagen van haven tot voor de deur",
+    "DELIVERY_SELF_DRIVE": "Zelf naar huis rijden op tijdelijk kenteken (brandstof, platen, kortlopende verzekering)",
+    "TECHNICAL_INSPECTION_IMPORT": "Technische keuring van een geïmporteerd voertuig",
+    "REG_TEMPORARY_PERMIT": "Tijdelijk kentekenbewijs",
+    "REG_TEMPORARY_PLATES": "Tijdelijke kentekenplaten",
+    "REG_CERTIFICATE": "Kentekenbewijs",
+    "REG_PLATES": "Kentekenplaten",
+    "REG_STICKER": "Controlesticker",
+    "REAR_FOG_LIGHT": "Inbouw mistachterlicht",
+    "SPEEDOMETER_KMH": "Snelheidsmeter ombouwen naar km/h",
+    "SERVICE_INSPECTION": "Onderhoudsbeurt en vloeistoffen verversen",
+    "GEOMETRY_ALIGNMENT": "Uitlijnen",
+    "DETAILING": "Reiniging en detailing",
+    "EXPERT_VALUATION": "Taxatierapport (bijv. voor een allriskverzekering)",
+    "REPAIR_ESTIMATE": "Reparaties (uw schatting)",
+    "INSURANCE_FIRST_YEAR": "Verzekering – eerste jaar (uw bedrag)",
+    "RISK_PORT_STORAGE": "Opslag in de haven (late afhaling, papierwerk)",
+    "RISK_CUSTOMS_INSPECTION": "Douanecontrole / scan van de container",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Correctie douanewaarde (extra invoerrechten en btw)",
+    "RISK_VESSEL_ROLLOVER": "Doorgeschoven naar later schip (opslag in exporthaven)",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transportschade – eigen risico verzekering",
+    "RISK_HIDDEN_DAMAGE": "Verborgen schade die op de veiling niet zichtbaar was",
+    "RISK_TITLE_DELAY": "Vertraging title (extra opslag)",
+    "RISK_EXPORT_DOCS_DELAY": "Vertraging exportdocumenten"
+  },
+  "doc": {
+    "billOfLading": "Cognossement (Bill of Lading)",
+    "companyRegistryExtract": "Uittreksel handelsregister",
+    "customsDeclarationSad": "Douaneaangifte (enig document, SAD)",
+    "customsPowerOfAttorney": "Volmacht voor de douane-expediteur",
+    "eoriNumber": "EORI-nummer van de importeur",
+    "evChargingPortAdapterNote": "Controleer de laadpoortstandaard (NACS/CCS1 → CCS2)",
+    "historicExpertOpinion": "Deskundigenrapport over de status als historisch voertuig",
+    "insurancePolicy": "Polis transportverzekering",
+    "invoice": "Veilingfactuur / koopovereenkomst",
+    "ownership": {
+      "japanExportCertificate": "Japans exportcertificaat (uitschrijving)",
+      "title": "Originele Title (eigendomsbewijs)",
+      "uaeExportCertificate": "Exportcertificaat VAE (RTA)",
+      "v5c": "Brits kentekenbewijs V5C (logbook)"
+    },
+    "pl": {
+      "exciseDeclarationAkcUs": "Accijnsaangifte AKC-U/S en betalingsbewijs",
+      "exciseExemptionConfirmation": "Bevestiging accijnsvrijstelling (elektrische auto)",
+      "recyclingFeeConfirmation": "Betalingsbewijs recyclingbijdrage"
+    },
+    "procedure4200VatIdAndProofOfTransport": "Regeling 4200: EU-btw-nummer van de koper en vervoersbewijs",
+    "registrationApplication": "Aanvraag voertuigregistratie",
+    "salvageTitleRepairEvidence": "Reparatiedocumentatie (salvage title)",
+    "swornTranslation": "Beëdigde vertalingen van buitenlandse documenten",
+    "technicalInspection": "Keuringsrapport",
+    "transportInvoices": "Facturen voor transport en vracht",
+    "usExportAesItn": "Amerikaanse exportaangifte (AES/ITN)",
+    "vatPaymentProof": "Bewijs van btw-betaling"
+  },
+  "error": {
+    "auction": {
+      "noSchedule": "Geen tarieventabel voor deze veiling beschikbaar.",
+      "unsupported": "Dit veilinghuis wordt niet ondersteund."
+    },
+    "excise": {
+      "rateNotFound": "Geen accijnstarief voor deze configuratie."
+    },
+    "port": {
+      "unknown": "Onbekende bestemmingshaven."
+    },
+    "procedure4200": {
+      "notAvailableInPort": "Regeling 4200 is in deze haven niet beschikbaar.",
+      "sameCountry": "Regeling 4200 vereist inklaring in een ander land dan het land van bestemming."
+    },
+    "route": {
+      "unavailable": "Geen scheepvaartroute beschikbaar voor deze selectie."
+    },
+    "tariff": {
+      "notFound": "Het voertuig kon niet in het douanetarief worden ingedeeld."
+    },
+    "taxProfile": {
+      "missing": "Geen belastingtarieven voor het gekozen land."
+    }
+  },
+  "fuel": {
+    "DIESEL": "Diesel",
+    "EV": "Elektrisch",
+    "HEV": "Hybride",
+    "HYDROGEN": "Waterstof",
+    "LPG": "LPG",
+    "MHEV": "Mild hybride",
+    "PETROL": "Benzine",
+    "PHEV": "Plug-in hybride"
+  },
+  "lead": {
+    "consentMarketing": "Stuur mij importaanbiedingen en tips (optioneel).",
+    "consentTransfer": "Ik ga ermee akkoord dat mijn gegevens en berekening worden gedeeld met één geverifieerde partner om een offerte op te stellen (AVG art. 6, lid 1, onder a).",
+    "email": "E-mail",
+    "message": "Veilinglink of aanvullende gegevens",
+    "name": "Volledige naam",
+    "phone": "Telefoon (optioneel)",
+    "submit": "Aanvraag versturen",
+    "subtitle": "CarImport.eu importeert zelf geen auto’s. Als u dat wilt, sturen wij uw berekening door naar één geverifieerd importbedrijf, dat een offerte voor u opstelt. Geheel vrijblijvend.",
+    "thanks": "Hartelijk dank!",
+    "thanksHint": "Het importbedrijf neemt binnen 1 werkdag contact met u op.",
+    "title": "Aanvraag bij een importbedrijf (optioneel)"
+  },
+  "origin": {
+    "CANADA": "Canada",
+    "JAPAN": "Japan",
+    "UAE": "VAE / Dubai",
+    "UK": "Verenigd Koninkrijk",
+    "USA": "VS"
+  },
+  "paywall": {
+    "blikHint": "Betaal met BLIK, Przelewy24 of creditcard.",
+    "currency": "Betaalvaluta",
+    "email": "E-mail (wij sturen u de link naar het rapport)",
+    "fullName": "Volledige naam (staat op het rapport)",
+    "pay": "Verder naar betalen",
+    "redirecting": "U wordt doorgestuurd…",
+    "secure": "Veilig betalen via Stripe. Wij slaan nooit kaartgegevens op.",
+    "subtitle": "Exacte bedragen, maatstaven van heffing en tarieven, documenten – in een pdf op uw naam.",
+    "terms": "Ik accepteer de voorwaarden en verzoek om onmiddellijke levering van de digitale inhoud, waarbij ik afstand doe van het herroepingsrecht.",
+    "title": "Volledig importrapport"
+  },
+  "report": {
+    "amount": "Bedrag",
+    "back": "Terug naar de calculator",
+    "base": "Grondslag",
+    "download": "Pdf downloaden",
+    "expired": "De betaling is niet voltooid.",
+    "generating": "Pdf wordt gegenereerd…",
+    "item": "Post",
+    "rate": "Tarief",
+    "refunded": "Deze bestelling is terugbetaald.",
+    "stage": "Fase",
+    "title": "Rapport importkosten voertuig",
+    "total": "Totale kosten tot aan de deur",
+    "waiting": "Uw betaling wordt bevestigd…",
+    "delivery": "Levering",
+    "leadTime": "Doorlooptijd tot registratie",
+    "days": "dagen",
+    "scenarios": "Drie kostenscenario’s",
+    "timeline": "Tijdlijn",
+    "plan": "Wat te doen na de import – stap voor stap",
+    "step": "Stap",
+    "deadline": "Termijn",
+    "riskDetail": "Kans {{p}}%, kosten als het gebeurt: {{min}}–{{max}} {{cur}}",
+    "userAmount": "door u ingevoerd bedrag",
+    "scenarioMethod": "Het gemiddelde scenario rekent risico’s mee als verwachtingswaarde (kans × gemiddelde kosten); het pessimistische scenario gaat ervan uit dat elk risico zich voordoet tegen de hoogste kosten."
+  },
+  "result": {
+    "chart": "Kostenopbouw",
+    "exciseIncluded": "Inclusief accijns",
+    "fx": "NBP-koersen van {{date}}",
+    "paid1": "Exacte veilingkosten",
+    "paid2": "Invoerrechten, accijns & btw",
+    "paid3": "Checklist documenten",
+    "paid4": "Persoonlijk pdf-rapport",
+    "partner": "Een offerte van een importbedrijf ontvangen?",
+    "rangeHint": "De bandbreedte dekt schommelingen in wisselkoersen en vrachttarieven.",
+    "title": "Geschatte kosten tot aan de deur",
+    "transit": "{{days}} dagen op zee",
+    "unlock": "Ontgrendel het volledige rapport – {{price}}",
+    "updating": "Bijwerken…",
+    "short": "Totale kosten",
+    "calculating": "Elke post en elk scenario wordt berekend…",
+    "edit": "Gegevens wijzigen",
+    "structure": "Kostenopbouw (gemiddeld scenario)",
+    "timeline": "Tijd: {{min}}–{{max}} dagen tot registratie",
+    "included": "Wat is inbegrepen",
+    "risks": "Wat er onderweg kan gebeuren",
+    "risksLead": "Elk risico heeft een kans en een kostenbandbreedte. Het gemiddelde scenario rekent ze naar verhouding mee, het pessimistische volledig. De bedragen staan in het rapport.",
+    "probability": "Kans",
+    "reportEyebrow": "Rapport van deur tot deur",
+    "reportTitle": "Elke post tot op de cent – in drie scenario’s",
+    "reportItem1": "Veilingkosten, transport, vracht en verzekering",
+    "reportItem2": "Invoerrechten, accijns en btw met grondslagen en tarieven",
+    "reportItem3": "Levering: km × tarief, laden, minimumtarief",
+    "reportItem4": "Registratiekosten en diensten na de import",
+    "reportItem5": "Risico’s met bedragen: optimistisch, gemiddeld, pessimistisch",
+    "reportItem6": "Stappenplan met termijnen en lijst met documenten",
+    "cheapestPort": "goedkoopste haven"
+  },
+  "shipping": {
+    "CONTAINER_EXCLUSIVE": "Eigen container",
+    "CONTAINER_SHARED": "Gedeelde container",
+    "RORO": "RoRo"
+  },
+  "title": {
+    "CLEAN": "Clean title (schadevrij)",
+    "SALVAGE": "Salvage / Non-repairable"
+  },
+  "validation": {
+    "auctionHouse": {
+      "notInOrigin": "Dit veilinghuis is niet actief in het gekozen land."
+    },
+    "engineCc": {
+      "required": "Vul de cilinderinhoud in."
+    },
+    "procedure4200": {
+      "companyOnly": "Regeling 4200 is alleen beschikbaar voor bedrijven met een geldig EU-btw-nummer."
+    }
+  },
+  "warning": {
+    "dealer": {
+      "verifyExportDocuments": "Zorg er bij aankoop via een dealer voor dat u de exportdocumenten ontvangt."
+    },
+    "historic": {
+      "expertOpinionRequired": "De status van verzamelobject (0% invoerrechten) vereist een deskundigenrapport en kan door de douane worden betwist."
+    },
+    "intraEuTransport": {
+      "notPriced": "Geen transportprijs van haven naar bestemming – kosten niet meegerekend."
+    },
+    "newMeansOfTransport": {
+      "vatInDestination": "Nieuw vervoermiddel (≤6 maanden of ≤6000 km): ook in het land van registratie is btw verschuldigd."
+    },
+    "nl": {
+      "bpmNotIncluded": "De Nederlandse BPM (belasting van personenauto’s en motorrijwielen) is niet meegerekend."
+    },
+    "pl": {
+      "clearedForOtherMemberState": "Ingeklaard in Polen voor registratie elders – controleer de registratiebelastingen in het land van bestemming.",
+      "exciseDeclarationWithin14Days": "De Poolse accijns wordt binnen 14 dagen na aankomst bij de belastingdienst betaald (AKC-U/S).",
+      "pickupMayBeReclassified": "Een pick-up die als personenauto wordt geregistreerd, kan onder de accijns vallen – controleer de typegoedkeuring."
+    },
+    "procedure4200": {
+      "reverseChargeDeductible": "Regeling 4200: de btw wordt in het land van bestemming zelf aangegeven (verleggingsregeling, neutraal voor btw-plichtige ondernemingen)."
+    },
+    "registrationTax": {
+      "notModelled": "De registratiebelasting van het land van bestemming is nog niet in de berekening opgenomen."
+    },
+    "delivery": {
+      "portPickup": "Afhalen in de haven gekozen – wegtransport naar huis is niet meegerekend.",
+      "selfDriveNotRunning": "Een niet-rijdende auto kan niet op een tijdelijk kenteken worden gereden – kies een oprij- of takelwagen."
+    }
+  },
+  "wizard": {
+    "auction": "Veilinghuis",
+    "back": "Terug",
+    "bid": "Winnend bod",
+    "buyer": "Koper",
+    "category": "Type voertuig",
+    "condition": "Staat van het voertuig",
+    "destination": "Land van registratie",
+    "engineCc": "Cilinderinhoud",
+    "exciseRate": "PL-accijns: {{rate}}%",
+    "exciseWarning": "Boven 2000 cm³ springt de accijns van {{from}}% naar {{to}}% – vaak duizenden verschil!",
+    "finish": "Volledig rapport",
+    "forklift": "heftruck / lier",
+    "fuel": "Aandrijving",
+    "historic": "Historisch voertuig in originele staat",
+    "historicHint": "30+ jaar, niet gemodificeerd: 0% invoerrechten en verlaagde btw.",
+    "next": "Volgende",
+    "origin": "Aankoop in",
+    "port": "EU-haven van inklaring",
+    "procedure4200": "Douaneregeling 4200",
+    "procedure4200Hint": "Voor btw-geregistreerde bedrijven in de EU: geen btw aan de grens, verlegging in het land van bestemming.",
+    "shipping": "Verschepingsmethode",
+    "step1": "Herkomst",
+    "step2": "Voertuig",
+    "step3": "Staat & prijs",
+    "title": "Type title",
+    "year": "Bouwjaar",
+    "zone": "Locatie van het terrein (staat / provincie)",
+    "zoneOther": "Anders / weet ik niet",
+    "advanced": "Geavanceerde opties",
+    "step4": "Bestemming & levering",
+    "step5": "Na de import",
+    "step6": "Kostenrapport",
+    "calculate": "Bereken de totale kosten",
+    "departurePort": "Vertrekhaven",
+    "departureAuto": "Automatisch – goedkoopste route",
+    "departureHint": "Kies een specifieke haven als uw expediteur er al een heeft genoemd.",
+    "delivery": "Transport van de haven tot aan uw deur",
+    "distance": "Afstand van de haven tot uw adres",
+    "pricePerKm": "Prijs per kilometer",
+    "tariffUnknown": "Geen kilometertarief voor dit land – er wordt een vast tarief gebruikt.",
+    "repair": "Reparatiekosten",
+    "repairHintRunner": "Wij stellen een gangbaar bedrag voor bij deze staat en title (lak, banden). Heeft u een offerte van een garage? Vul die in.",
+    "repairHintDamaged": "Wij stellen een gangbaar reparatiebedrag voor bij deze staat (ongeveer 30–40% van de prijs). Heeft u een offerte van een garage? Vul die in – verborgen schade wordt apart als risico meegerekend.",
+    "afterImportLead": "Alles wat u tussen de haven en de kentekenplaten moet regelen en betalen. Verplichte posten zijn altijd inbegrepen; de rest kiest u zelf.",
+    "statutory": "Verplicht (wettelijke leges)",
+    "optional": "Optioneel",
+    "recommended": "aanbevolen",
+    "optionsLoading": "Diensten voor uw route worden geladen…",
+    "noServices": "Voor dit land hebben we nog geen gedetailleerde prijslijst voor registratie – het rapport vermeldt de stappen.",
+    "insurance": "WA-verzekering eerste jaar",
+    "insuranceHint": "Wij stellen de mediaan van WA-aanbiedingen voor een nieuw geregistreerde auto in dit land voor. Heeft u een eigen offerte? Vul die in.",
+    "address": "Afleveradres",
+    "addressPlaceholder": "bijv. Utrecht, Oudegracht 5 of een postcode",
+    "addressChange": "Wijzigen",
+    "addressHint": "Het enige veld dat u zelf invult. Op basis van het adres berekenen wij de kilometers vanaf elke haven en kiezen we de goedkoopste.",
+    "portRankingAddress": "Alle {{count}} EU-havens doorgerekend tot uw adres – goedkoopste eerst.",
+    "portRankingCountry": "Alle {{count}} EU-havens doorgerekend tot het land van registratie – vul een adres in voor exacte kilometers.",
+    "portRankingLoading": "Alle EU-havens worden doorgerekend…",
+    "portCheapest": "goedkoopst",
+    "portAuto": "Terug naar de goedkoopste",
+    "portsAll": "Toon alle EU-havens ({{count}})",
+    "portsLess": "Havenlijst inklappen",
+    "days": "dagen",
+    "portRankingNote": "Totaal van deur tot deur, gemiddeld scenario: vracht, inklaring en btw in het havenland, levering op het adres en kosten na de import.",
+    "distanceRouted": "Route over de weg van {{port}} naar uw adres.",
+    "distanceEstimated": "Schatting van {{port}} naar uw adres (hemelsbreed × 1,25).",
+    "distanceTypical": "Gebruikelijke afstand vanaf {{port}} – vul hierboven het adres in voor een exact getal.",
+    "tariffShort": "Markt: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} laden, min. {{minimum}} {{cur}}."
+  },
+  "layout": {
+    "topbar": "Onafhankelijke calculator voor de importkosten van auto’s uit de VS, Canada, Japan, de VAE en het VK naar 27 EU-landen",
+    "forBusiness": "Voor importbedrijven",
+    "home": "Home",
+    "nav": "Hoofdnavigatie",
+    "calculator": "Calculator",
+    "howItWorks": "Hoe het werkt",
+    "pricing": "Prijzen",
+    "faq": "Veelgestelde vragen",
+    "cta": "Bereken de kosten",
+    "menu": "Menu",
+    "close": "Sluiten",
+    "breadcrumb": "Kruimelpad",
+    "themeLight": "Naar licht thema",
+    "themeDark": "Naar donker thema",
+    "about": "Over ons",
+    "why": "Waarom wij",
+    "what": "Wat we berekenen",
+    "ctaHint": "Gratis, zonder registratie",
+    "language": "Taal"
+  },
+  "footer": {
+    "about": "Onafhankelijke calculator voor de importkosten van auto’s van buiten de EU. Wij verkopen en importeren geen auto’s – wij berekenen wat ze echt kosten.",
+    "calculators": "Importcalculators",
+    "importFrom": {
+      "USA": "Auto uit de VS",
+      "CANADA": "Auto uit Canada",
+      "JAPAN": "Auto uit Japan",
+      "UAE": "Auto uit Dubai (VAE)",
+      "UK": "Auto uit het VK"
+    },
+    "service": "Service",
+    "privacy": "Privacybeleid",
+    "language": "Taal",
+    "payments": "Betalingen via Stripe (creditcard, BLIK, Przelewy24). Wij slaan nooit kaartgegevens op.",
+    "rights": "Alle rechten voorbehouden.",
+    "disclaimer": "De berekeningen zijn informatief en vormen geen douanebeschikking of belastingadvies."
+  },
+  "cookies": {
+    "title": "Cookies",
+    "text": "Wij gebruiken noodzakelijke cookies om de website te laten werken en, met uw toestemming, analytische cookies. Details:",
+    "accept": "Alles accepteren",
+    "necessary": "Alleen noodzakelijke"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Calculator voor auto-import",
+      "title1": "Ken de importkosten",
+      "title2": "voordat u biedt",
+      "lead": "Een onafhankelijke calculator die binnen een minuut de volledige kosten laat zien van een auto uit de VS, Canada, Japan, de VAE of het VK – van de veilingprijs tot de kentekenplaten in uw land.",
+      "cta": "Gratis berekenen",
+      "secondary": "Wat we precies berekenen",
+      "visual": "Zwarte Ford Mustang in geel neonlicht tegen de Amerikaanse vlag",
+      "point1": "Direct een schatting – geen registratie, geen telefoontje, niet wachten op een offerte",
+      "point2": "Meer dan 40 kostenposten, 43 EU-havens en de wisselkoersen van vandaag",
+      "point3": "Wij verkopen geen auto’s en vragen geen commissie – de cijfers zijn eerlijk"
+    },
+    "how": {
+      "eyebrow": "Hoe het werkt",
+      "title": "Van idee tot totaalbedrag in vier stappen",
+      "s1": {
+        "title": "Waar u koopt",
+        "text": "VS, Canada, Japan, VAE of VK – en via een veiling of een dealer."
+      },
+      "s2": {
+        "title": "Welke auto",
+        "text": "Type, brandstof, cilinderinhoud, bouwjaar en staat – die bepalen de belastingen."
+      },
+      "s3": {
+        "title": "Uw adres",
+        "text": "Het enige veld dat u zelf invult. Wij berekenen de kilometers en de goedkoopste haven."
+      },
+      "s4": {
+        "title": "Resultaat en rapport",
+        "text": "Drie scenario’s gratis, en een pdf tot op de cent zodra u klaar bent om te kopen."
+      },
+      "step": "Stap"
+    },
+    "costs": {
+      "eyebrow": "Waaruit de prijs bestaat",
+      "title": "Invoerrechten, accijns en btw berekend in dezelfde volgorde als bij de douane",
+      "lead": "Elke belasting vormt de grondslag voor de volgende, dus de volgorde is belangrijk. De haven van inklaring bepaalt het btw-tarief; het land van registratie bepaalt de accijns.",
+      "cif": {
+        "title": "Douanewaarde (CIF)",
+        "formula": "prijs + veilingkosten + transport + vracht + verzekering",
+        "text": "Alles wat u betaalt tot de auto in een EU-haven aankomt."
+      },
+      "duty": {
+        "title": "Invoerrechten (TARIC)",
+        "formula": "CIF × 10% personenauto’s · 22% pick-ups · 0% klassiekers",
+        "text": "Het tarief hangt af van de GS-code; motorfietsen 6–8%."
+      },
+      "excise": {
+        "title": "Accijns (PL)",
+        "formula": "(CIF + invoerrechten) × 3,1% tot 2,0 l · 18,6% daarboven",
+        "text": "Hybrides 1,55% / 9,3%, elektrische auto’s 0%. Betaald in het land van registratie."
+      },
+      "vat": {
+        "title": "Invoer-btw",
+        "formula": "(CIF + invoerrechten + accijns* + lossen) × tarief van het land van inklaring",
+        "text": "*Accijns telt alleen mee bij inklaring in het land van registratie."
+      }
+    },
+    "ports": {
+      "title": "Het btw-tarief hangt af van de haven van inklaring",
+      "text": "De calculator rekent alle 43 EU-havens van inklaring door van deur tot deur: btw in het havenland, vracht, levering op uw adres en kosten na de import. Inklaren in Duitsland betekent 19% btw in plaats van 23%, maar daar komt een autotransporter bij – hieronder een paar voorbeelden, de calculator vergelijkt de rest.",
+      "port": "Haven",
+      "country": "Land van inklaring"
+    },
+    "pricing": {
+      "eyebrow": "Prijzen",
+      "title": "Begin gratis, betaal alleen voor zekerheid"
+    },
+    "final": {
+      "title": "Bereken uw import in een minuut",
+      "text": "Geen registratie, geen verplichtingen. Blijkt de auto te duur, dan heeft u zojuist geld bespaard. Is hij de moeite waard, dan biedt u met een gerust hart, met kennis van de volledige kosten.",
+      "title1": "Controleer voordat u koopt.",
+      "title2": "Het kost maar een minuut.",
+      "cta": "Bereken de importkosten",
+      "about": "Wie wij zijn"
+    },
+    "strip": {
+      "brand": {
+        "title": "CarImport.eu —",
+        "text": "onafhankelijke importcalculator"
+      },
+      "instant": {
+        "title": "Resultaat in een minuut",
+        "text": "U vult alleen het adres in, de rest stellen wij voor"
+      },
+      "items": {
+        "title": "40+ kostenposten",
+        "text": "Van de veiling tot registratie en risico’s"
+      },
+      "ports": {
+        "title": "43 EU-havens",
+        "text": "Wij kiezen de goedkoopste voor uw adres"
+      }
+    },
+    "map": {
+      "eyebrow": "Importroutes",
+      "title": "Vanuit havens over de hele wereld rechtstreeks de EU in",
+      "lead": "Exporthavens in de VS, Canada, Japan, de VAE en het VK en de vaarroutes via Panama, Suez en Gibraltar naar de EU-havens van inklaring.",
+      "aria": "Kaart van zeeroutes uit de VS, Canada, Japan, de VAE en het VK naar EU-havens",
+      "eu": "Europese Unie",
+      "legendEu": "EU-landen (registratie)",
+      "legendOrigin": "Landen van aankoop",
+      "legendRoute": "Zeeroute",
+      "scroll": "Veeg om de hele kaart te zien",
+      "days": "dagen"
+    },
+    "numbers": {
+      "eyebrow": "CarImport.eu in cijfers",
+      "title": "De cijfers achter elke berekening",
+      "n1": {
+        "value": "5",
+        "label": "herkomstlanden: VS, Canada, Japan, VAE en VK"
+      },
+      "n2": {
+        "value": "27",
+        "label": "EU-landen waar u de auto kunt registreren"
+      },
+      "n3": {
+        "value": "43",
+        "label": "havens van inklaring in 22 EU-landen – wij kiezen de goedkoopste voor uw adres"
+      },
+      "n4": {
+        "value": "4",
+        "label": "talen: Pools, Engels, Duits, Oekraïens"
+      }
+    },
+    "why": {
+      "eyebrow": "Waarom deze calculator",
+      "title": "Weet wat u betaalt – voordat u op ‘bieden’ klikt",
+      "lead": "Het duurste deel van importeren zijn de kosten die niemand vóór de aankoop noemde. De calculator brengt ze aan het licht voordat u uw eerste dollar uitgeeft.",
+      "preview": {
+        "tag": "Calculator",
+        "title": "Volledige kosten van deur tot deur in zes stappen",
+        "text": "Veiling, transport, invoerrechten, accijns, btw, registratie en risico’s – in drie scenario’s.",
+        "alt": "Schermafbeelding van de calculator voor importkosten"
+      },
+      "instant": {
+        "tag": "Direct",
+        "title": "Een schatting in een minuut, niet in twee dagen",
+        "text": "Geen contactformulieren, niet wachten op een verkoopgesprek. Elk veld is vooraf ingevuld met een voorstel – u wijzigt alleen wat u beter weet."
+      },
+      "independent": {
+        "tag": "Onafhankelijk",
+        "title": "Wij verkopen geen auto’s en geen transport",
+        "text": "Wij verdienen niets aan vervoerders of veilingen, dus we hebben geen reden om kosten mooier voor te stellen. Iedereen krijgt hetzelfde resultaat."
+      },
+      "ports": {
+        "tag": "43 havens",
+        "title": "De goedkoopste route naar uw adres",
+        "text": "Wij rekenen elke EU-haven van inklaring door van deur tot deur en laten u het verschil zien."
+      },
+      "scenarios": {
+        "tag": "Scenario’s",
+        "title": "Optimistisch, gemiddeld, pessimistisch",
+        "text": "Wisselkoersen, vertragingen en risico’s onderweg – u ziet een realistische bandbreedte, geen ‘magisch’ getal."
+      },
+      "after": {
+        "tag": "Na de import",
+        "title": "Ook registratie en papierwerk",
+        "text": "Keuring, vertalingen, aanpassing van de verlichting, leges en verzekering – met termijnen."
+      },
+      "report": {
+        "tag": "Pdf-rapport",
+        "title": "Elke cent zwart op wit",
+        "text": "Voor € 4,99 een rapport op uw naam met elk tarief, elke grondslag en een actieplan voor na de import."
+      }
+    },
+    "what": {
+      "eyebrow": "Wat we meerekenen",
+      "title": "Alles wat de prijs van de auto voor uw deur bepaalt",
+      "lead": "De meeste calculators stoppen bij invoerrechten en btw. Wij rekenen de hele reis mee – van het veilingterrein tot de kentekenplaten – en tellen op wat er mis kan gaan.",
+      "cta": "Probeer het met uw auto",
+      "purchase": {
+        "title": "Aankoop",
+        "i1": "Winnend bod of dealerprijs",
+        "i2": "Kosten van Copart, IAAI, Manheim en USS per prijsklasse",
+        "i3": "Clean / salvage title en staat",
+        "i4": "Geschatte reparatiekosten"
+      },
+      "transport": {
+        "title": "Transport",
+        "i1": "Van veilingterrein naar exporthaven",
+        "i2": "Vracht per container of RoRo",
+        "i3": "Transportverzekering",
+        "i4": "Lossen en terminalkosten",
+        "i5": "Oprij-/takelwagen of autotransporter naar uw adres"
+      },
+      "taxes": {
+        "title": "Invoerrechten & belastingen",
+        "i1": "Invoerrechten volgens TARIC (10%, 22% voor pick-ups)",
+        "i2": "Accijns naar motor en brandstof",
+        "i3": "Btw in het land van de haven van inklaring",
+        "i4": "Wisselkoers van de centrale bank van dezelfde dag"
+      },
+      "after": {
+        "title": "Na de import",
+        "i1": "Keuring en goedkeuring",
+        "i2": "Beëdigde vertalingen van documenten",
+        "i3": "Registratie, kentekenplaten en leges",
+        "i4": "Aanpassing van verlichting en snelheidsmeter",
+        "i5": "WA-verzekering eerste jaar"
+      },
+      "risks": {
+        "title": "Risico’s",
+        "i1": "Havenopslag en vertraagde schepen",
+        "i2": "Douanecontrole en controle van de douanewaarde",
+        "i3": "Verborgen schade en transportschade",
+        "i4": "Vertraagde title en exportdocumenten"
+      }
+    },
+    "compare": {
+      "eyebrow": "Vergelijking",
+      "title": "Waarom een berekening op de achterkant van een envelop niet volstaat",
+      "self": "Zelf uitrekenen",
+      "broker": "Offerte van een tussenpersoon",
+      "r1": "Veilingkosten volgens actuele staffels",
+      "r2": "Vergelijking van alle 43 EU-havens",
+      "r3": "Wisselkoers van vandaag + buffer voor schommelingen",
+      "r4": "Accijns en btw naar land van inklaring en registratie",
+      "r5": "Risico’s en drie kostenscenario’s",
+      "r6": "Registratie en papierwerk na de import",
+      "r7": "Geen marge of verborgen commissie",
+      "note": "~ betekent ‘meestal gedeeltelijk’. Offertes van tussenpersonen bevatten vaak hun marge en tonen geen kostenspecificatie."
+    }
+  },
+  "pricing": {
+    "popular": "Meest gekozen",
+    "free": {
+      "name": "Snelle schatting",
+      "price": "Gratis",
+      "f1": "Bandbreedte van de totale kosten",
+      "f2": "Grafiek van de kostenopbouw",
+      "f3": "Transittijd en waarschuwingen",
+      "f4": "Zonder registratie",
+      "cta": "Gratis berekenen"
+    },
+    "report": {
+      "name": "Pdf-rapport",
+      "price": "€ 4,99",
+      "f1": "Elke post tot op de cent",
+      "f2": "Veilingkosten per prijsklasse",
+      "f3": "Invoerrechten, accijns en btw met grondslagen en tarieven",
+      "f4": "Checklist documenten en persoonlijke pdf",
+      "cta": "Bereken & ontgrendel rapport"
+    },
+    "partner": {
+      "name": "Voor importbedrijven",
+      "price": "Per geaccepteerde lead",
+      "f1": "Kopers met een kant-en-klare kostenberekening",
+      "f2": "AVG-toestemming verkregen vóór doorgifte",
+      "f3": "Alleen aanvragen die u accepteert",
+      "f4": "Geen abonnement",
+      "cta": "Word partner"
+    }
+  },
+  "faq": {
+    "eyebrow": "Vragen & antwoorden",
+    "title": "Veelgestelde vragen",
+    "lead": "Staat uw antwoord er niet bij? De calculator toont elke aanname en het pdf-rapport elk tarief en elke grondslag.",
+    "q1": {
+      "q": "Hoeveel invoerrechten betaal ik op een auto uit de VS?",
+      "a": "Voor personenauto’s (GN 8703) bedragen de invoerrechten 10% van de douanewaarde (CIF), voor pick-ups en lichte vrachtwagens (8704) 22% en voor motorfietsen 6–8%. Verzamelvoertuigen ouder dan 30 jaar in originele staat kunnen in aanmerking komen voor 0%. De douanewaarde is de aankoopprijs plus veilingkosten, transport tot aan de EU-grens en verzekering."
+    },
+    "q2": {
+      "q": "Welke accijns geldt bij de invoer van een auto in Polen?",
+      "a": "Auto’s met verbrandingsmotor tot 2000 cm³: 3,1%, boven 2000 cm³: 18,6%. Hybrides: 1,55% tot 2000 cm³ en 9,3% tot 3500 cm³. Plug-in hybrides tot 2000 cm³ en elektrische auto’s zijn vrijgesteld. De grondslag is de douanewaarde plus invoerrechten, omgerekend naar PLN."
+    },
+    "q3": {
+      "q": "Waar kan de auto het best worden ingeklaard: Bremerhaven, Rotterdam of Gdynia?",
+      "a": "De invoer-btw wordt geheven door het land van inklaring: 19% in Duitsland, 21% in Nederland en 23% in Polen. Inklaren in Duitsland verlaagt de btw, maar daar komt een autotransporter naar Polen bij en u betaalt de accijns apart binnen 14 dagen bij de belastingdienst. De calculator vergelijkt de opties voor uw auto."
+    },
+    "q4": {
+      "q": "Wat is douaneregeling 4200?",
+      "a": "Dat is het in het vrije verkeer brengen met vrijstelling van btw in het land van invoer wanneer de auto rechtstreeks naar een btw-geregistreerde onderneming in een andere EU-lidstaat gaat. De koper geeft de btw in eigen land aan via de verleggingsregeling, waardoor dit neutraal is voor btw-plichtige bedrijven. Voor particulieren is de regeling niet beschikbaar."
+    },
+    "q5": {
+      "q": "Hoe lang duurt de verscheping naar Europa?",
+      "a": "Vanuit havens aan de Amerikaanse oostkust en in Canada ongeveer 2–3 weken op zee, vanuit Californië ongeveer 5 weken, vanuit Japan 6–7 weken, vanuit de VAE 3–4 weken en vanuit het VK enkele dagen. Daar komen het transport van het veilingterrein naar de haven en de inklaring nog bij."
+    },
+    "q6": {
+      "q": "Waar komen de wisselkoersen vandaan?",
+      "a": "Wij gebruiken de gemiddelde koersen van de NBP, die elke werkdag automatisch worden opgehaald. Omdat u de auto dagen of weken na de berekening betaalt, houdt de gratis bandbreedte rekening met koersschommelingen."
+    },
+    "q7": {
+      "q": "Wat staat er in het betaalde pdf-rapport?",
+      "a": "Elke post tot op de cent: veilingkosten per staffel, transport, douanewaarde, invoerrechten, accijns en btw met grondslagen en tarieven, de lijst met benodigde documenten en een persoonlijke pdf om te downloaden. Betalen kan met BLIK, creditcard of Przelewy24."
+    },
+    "q8": {
+      "q": "Is het resultaat van de calculator bindend?",
+      "a": "Nee. Het is een schatting op basis van actuele tarieven en prijslijsten. De definitieve bedragen worden vastgesteld door de douane en de belastingdienst, die bijvoorbeeld de douanewaarde kunnen controleren. Het rapport vermeldt alle aannames, zodat u het eenvoudig met de officiële beschikking kunt vergelijken."
+    },
+    "q9": {
+      "q": "Importeert CarImport.eu auto’s?",
+      "a": "Nee. Wij zijn alleen een calculator – wij kopen, verschepen en klaren geen auto’s in, en wij ontvangen geen commissie van veilingen of vervoerders. Zo blijft de schatting onafhankelijk. Als u wilt, kunt u de berekening doorsturen naar een geverifieerd importbedrijf, maar dat is altijd uw eigen keuze."
+    }
+  },
+  "calc": {
+    "title": "Calculator voor de importkosten van een auto",
+    "lead": "Zes stappen: herkomst, voertuig, staat, bestemming, na de import en rapport. Het resultaat volgt aan het eind – in drie scenario’s.",
+    "currency": "Valuta van het resultaat",
+    "progress": "Voortgang"
+  },
+  "seo": {
+    "home": {
+      "title": "Calculator importkosten auto – VS, Japan, Dubai naar de EU | CarImport.eu",
+      "description": "Onafhankelijke calculator voor het importeren van een auto uit de VS, Canada, Japan, de VAE en het VK: veiling, verscheping, invoerrechten, accijns, btw, registratie en risico’s. Direct een schatting, zonder registratie."
+    },
+    "calculator": {
+      "title": "Calculator invoerrechten, accijns & btw voor importauto’s | CarImport.eu",
+      "description": "Kies het land, de veiling, de haven en het voertuig — de live calculator toont de kostenbandbreedte en de specificatie: prijs, verscheping, invoerrechten, accijns, btw en registratie."
+    },
+    "privacy": {
+      "title": "Privacybeleid | CarImport.eu",
+      "description": "Hoe CarImport.eu persoonsgegevens verwerkt: betalingen, rapporten, aanvragen bij partners en cookies."
+    },
+    "about": {
+      "title": "Over ons – een onafhankelijke calculator voor auto-import | CarImport.eu",
+      "description": "Wie wij zijn, waar onze gegevens vandaan komen en hoe wij geld verdienen. CarImport.eu verkoopt en importeert geen auto’s – het berekent de volledige importkosten eerlijk en onafhankelijk."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Juridisch",
+    "title": "Privacybeleid",
+    "s1": {
+      "title": "Verwerkingsverantwoordelijke",
+      "text": "De verwerkingsverantwoordelijke is de exploitant van CarImport.eu. Voor vragen over gegevensbescherming kunt u contact met ons opnemen via {{email}}."
+    },
+    "s2": {
+      "title": "Welke gegevens wij verwerken",
+      "text": "Invoer voor de berekening (geen persoonsgegevens) en, bij aankoop van een rapport, uw naam en e-mailadres. Het partnerformulier verzamelt daarnaast een telefoonnummer en een bericht. Wij verwerken nooit kaartgegevens — dat doet Stripe."
+    },
+    "s3": {
+      "title": "Doeleinden en rechtsgronden",
+      "text": "Uitvoering van de aankoop van het rapport (art. 6, lid 1, onder b AVG), boekhoudkundige verplichtingen (c), het doorsturen van uw aanvraag naar een partner op basis van uw toestemming (a), en analyse met de toestemming die u in de cookiebanner geeft."
+    },
+    "s4": {
+      "title": "Ontvangers",
+      "text": "Stripe Payments Europe (betalingen), onze hosting- en e-mailproviders en — bij het partnerformulier — één geverifieerd importbedrijf, uitsluitend met uw toestemming."
+    },
+    "s5": {
+      "title": "Cookies",
+      "text": "Noodzakelijke cookies en browseropslag onthouden uw taal, thema, voortgang in de calculator en toegang tot een gekocht rapport. Analyse vindt pas plaats nadat u op ‘Alles accepteren’ klikt."
+    },
+    "s6": {
+      "title": "Uw rechten",
+      "text": "U heeft het recht op inzage, rectificatie, wissing, beperking, overdraagbaarheid en bezwaar, het recht om uw toestemming op elk moment in te trekken en het recht om een klacht in te dienen bij uw toezichthoudende autoriteit voor gegevensbescherming. Schrijf ons: {{email}}."
+    }
+  },
+  "delivery": {
+    "PORT_PICKUP": "Afhalen in de haven",
+    "CAR_CARRIER": "Autotransporter",
+    "TOW_TRUCK": "Oprij-/takelwagen",
+    "SELF_DRIVE": "Op tijdelijk kenteken"
+  },
+  "scenario": {
+    "0": "Optimistisch",
+    "1": "Gemiddeld",
+    "2": "Pessimistisch"
+  },
+  "scenarioHint": {
+    "0": "Laagste tarieven, gunstige koers, niets gaat mis",
+    "1": "Gangbare tarieven + naar kans gewogen risico’s",
+    "2": "Hoogste tarieven, zwakkere koers, risico’s doen zich voor"
+  },
+  "timeline": {
+    "INLAND": "Ophalen van het terrein en transport naar de haven",
+    "OCEAN": "Zeereis (incl. wachten op het schip)",
+    "CLEARANCE": "Lossen en douane-inklaring",
+    "DELIVERY": "Levering aan uw deur",
+    "REGISTRATION": "Voorbereiding en registratie"
+  },
+  "plan": {
+    "deadline": {
+      "beforeRelease": "Vóór vrijgave in de haven",
+      "14days": "14 dagen na aankomst in Polen",
+      "beforeInspection": "Vóór de technische keuring",
+      "beforeRegistration": "Vóór de registratie",
+      "pl30days": "30 dagen na de invoer (boete tot PLN 1.000)",
+      "fromRegistration": "Vanaf registratie / tijdelijk kenteken",
+      "national": "Volgens de regels van het land van registratie",
+      "none": "Geen wettelijke termijn"
+    },
+    "step": {
+      "clearance": {
+        "title": "Douane-inklaring in de haven",
+        "text": "De douane-expediteur dient de aangifte (SAD) in; u betaalt invoerrechten en invoer-btw. Nodig: factuur, cognossement, title/exportcertificaat, EORI."
+      },
+      "pl": {
+        "excise": {
+          "title": "Accijnsaangifte en -betaling (AKC-U/S)",
+          "text": "Indienen bij de belastingdienst (of online) en de accijns betalen; de bevestiging is nodig voor de registratie."
+        },
+        "exciseExemption": {
+          "title": "Aangifte accijnsvrijstelling (elektrische auto)",
+          "text": "Elektrische auto’s zijn vrijgesteld, maar de AKC-U/S-aangifte moet toch worden ingediend."
+        },
+        "inspection": {
+          "title": "Technische keuring bij een keuringsstation",
+          "text": "Eerste keuring van een geïmporteerd voertuig incl. identificatie van het VIN; het resultaat gaat naar het centrale register."
+        },
+        "recycling": {
+          "title": "Recyclingbijdrage PLN 500",
+          "text": "Te betalen aan het Nationaal Milieufonds bij de eerste registratie van een geïmporteerde auto."
+        },
+        "registration": {
+          "title": "Registratie bij de dienst voertuigregistratie",
+          "text": "Aanvraag, eigendomsbewijs met vertaling, accijns, keuring, recyclingbijdrage, bewijs van btw/invoerrechten; u ontvangt een tijdelijk kentekenbewijs en kentekenplaten."
+        }
+      },
+      "translations": {
+        "title": "Beëdigde vertalingen",
+        "text": "Buitenlandse title/kentekenbewijs, factuur en exportdocument – door een beëdigd vertaler."
+      },
+      "lighting": {
+        "title": "Verlichting aanpassen aan EU-normen",
+        "text": "Oranje knipperlichten achter, mistachterlicht, koplampafstelling – zonder deze aanpassingen wordt de auto afgekeurd."
+      },
+      "insurance": {
+        "title": "WA-verzekering",
+        "text": "Verplicht vanaf de registratie; een allriskverzekering kunt u het best afsluiten na een taxatie."
+      },
+      "de": {
+        "approval": {
+          "title": "Individuele goedkeuring (§21 StVZO)",
+          "text": "Volledige keuring door een deskundige (TÜV/DEKRA) voor auto’s van buiten de EU; verplicht voor registratie."
+        },
+        "registration": {
+          "title": "Registratie (Zulassung)",
+          "text": "eVB-nummer van de verzekering, bewijs van inklaring, keuringsrapport, SEPA-machtiging voor de motorrijtuigenbelasting."
+        }
+      },
+      "generic": {
+        "inspection": {
+          "title": "Keuring / individuele goedkeuring",
+          "text": "De omvang hangt af van het land – auto’s van buiten de EU hebben vaak een individuele goedkeuring nodig."
+        },
+        "registrationTax": {
+          "title": "Nationale registratiebelasting",
+          "text": "Bijv. BPM in Nederland, NoVA in Oostenrijk, malus in Frankrijk – controleer dit vóór de aankoop."
+        },
+        "registration": {
+          "title": "Registratie van het voertuig",
+          "text": "Aanvragen met bewijs van inklaring, keuring en verzekering."
+        }
+      },
+      "evCharging": {
+        "title": "Laadpoort",
+        "text": "Amerikaanse auto’s gebruiken NACS/CCS1 – u heeft een adapter nodig of een ombouw naar een CCS2/Type 2-laadpoort."
+      }
+    }
+  },
+  "deliveryHint": {
+    "CAR_CARRIER": "Voordeligst voor rijdende auto’s",
+    "TOW_TRUCK": "Eén oprijwagen, ook voor niet-rijdende auto’s",
+    "SELF_DRIVE": "Tijdelijk kenteken + verzekering; alleen rijdende auto’s",
+    "PORT_PICKUP": "U regelt het transport zelf"
+  },
+  "serviceHint": {
+    "SWORN_TRANSLATION": "Title, factuur en exportdocument",
+    "US_LIGHTING_CONVERSION": "EU-conforme knipperlichten en verlichting",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Rechtsgestuurde auto",
+    "REAR_FOG_LIGHT": "Verplicht bij de keuring",
+    "SPEEDOMETER_KMH": "Snelheidsmeter in mijlen – comfort en restwaarde",
+    "SERVICE_INSPECTION": "Olie, filters, vloeistoffen, remmen na een lange reis",
+    "GEOMETRY_ALIGNMENT": "Aanbevolen na reparaties aan de wielophanging",
+    "DETAILING": "Wassen, interieurreiniging, lakcorrectie",
+    "EXPERT_VALUATION": "Handig voor een allriskverzekering en bij doorverkoop"
+  },
+  "riskInfo": {
+    "RISK_PORT_STORAGE": "De terminal rekent na de vrije periode per dag, bijv. als documenten of transport te laat zijn.",
+    "RISK_CUSTOMS_INSPECTION": "Steekproef of gerichte controle: lossen van de container, scan, extra terminalkosten.",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Lijkt de prijs te laag, dan kan de douane een hogere waarde hanteren – invoerrechten en btw stijgen.",
+    "RISK_VESSEL_ROLLOVER": "Het schip is overboekt en de container gaat met het volgende mee – extra opslag in de exporthaven.",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transportschade wordt door de polis gedekt, minus het eigen risico.",
+    "RISK_HIDDEN_DAMAGE": "Gebreken die u op de veilingfoto’s niet ziet – hoe slechter de staat, hoe groter het risico.",
+    "RISK_TITLE_DELAY": "De veiling verstuurt de title te laat – de auto wacht op het terrein of in de haven.",
+    "RISK_EXPORT_DOCS_DELAY": "Uitschrijving en exportdocumenten duren langer dan gebruikelijk."
+  },
+  "docStage": {
+    "PURCHASE": "Aankoop",
+    "SHIPPING": "Verscheping",
+    "CUSTOMS": "Douane-inklaring",
+    "REGISTRATION": "Registratie"
+  },
+  "proposal": {
+    "tag": "Voorstel",
+    "restore": "Voorstel gebruiken",
+    "was": "voorstel: {{value}} {{unit}}"
+  },
+  "region": {
+    "NORTH_SEA": "Noordzee",
+    "BALTIC": "Oostzee & Scandinavië",
+    "ATLANTIC": "Atlantische Oceaan",
+    "WEST_MED": "Westelijke Middellandse Zee",
+    "EAST_MED": "Adriatische Zee, Egeïsche Zee & Zwarte Zee"
+  },
+  "about": {
+    "eyebrow": "Over ons",
+    "title1": "Wij berekenen auto-import.",
+    "title2": "Wij verkopen geen auto’s.",
+    "lead": "CarImport.eu is een onafhankelijke calculator voor de kosten van een auto van buiten de Europese Unie. We hebben hem gebouwd zodat iedereen – niet alleen een handelaar met tien jaar ervaring – vóór de aankoop weet wat hij of zij echt gaat betalen.",
+    "story": {
+      "eyebrow": "Hoe het begon",
+      "title": "Uit frustratie over verborgen kosten",
+      "p1": "Een auto van een Amerikaanse veiling lijkt een koopje – totdat u de veilingkosten, het transport naar de haven, de vracht, invoerrechten, accijns, btw, het lossen, de oprijwagen, vertalingen, de keuring en de registratie optelt. Elke post is ‘klein’, samen kunnen ze de prijs verdubbelen.",
+      "p2": "De informatie is verspreid over prijslijsten van veilingen, douanetarieven, wisselkoerstabellen en de regels van 27 landen. Offertes van tussenpersonen noemen meestal één bedrag zonder specificatie – met hun marge erin verwerkt.",
+      "p3": "Wij hebben een tool gebouwd die alles samenbrengt, rekent met actuele tarieven en elke aanname laat zien. Zonder registratie, zonder telefoontje van een verkoper."
+    },
+    "role": {
+      "eyebrow": "Eerlijk over wat we zijn",
+      "title": "Wij zijn een calculator. Alleen een calculator.",
+      "is": "Wat we zijn",
+      "is1": "Een onafhankelijke calculator van de volledige importkosten",
+      "is2": "Een vergelijking van 43 EU-havens van inklaring voor uw adres",
+      "is3": "De bron van een gedetailleerd pdf-rapport met elk tarief",
+      "is4": "Een lijst met stappen en documenten na de import",
+      "isNot": "Wat we niet zijn",
+      "isNot1": "Geen importeur of dealer – wij verkopen geen auto’s",
+      "isNot2": "Wij regelen geen verscheping of douane-inklaring",
+      "isNot3": "Geen commissie van veilingen, vervoerders of douane-expediteurs",
+      "isNot4": "Geen overheidsinstantie of belastingadviseur – het resultaat is een schatting"
+    },
+    "data": {
+      "eyebrow": "Waar de cijfers vandaan komen",
+      "title": "Actuele tarieven, geen ‘ongeveer’",
+      "lead": "Elk bedrag in het resultaat is gebaseerd op een concreet tarief dat in het rapport staat. De gegevens worden automatisch bijgewerkt of zodra de wet verandert.",
+      "customs": {
+        "title": "Douanetarief van de EU",
+        "text": "Tarieven van invoerrechten per GN-code (TARIC) voor personenauto’s, pick-ups, motorfietsen en historische voertuigen."
+      },
+      "fx": {
+        "title": "Koersen van de centrale bank",
+        "text": "Referentiekoersen die elke werkdag worden opgehaald, met een buffer voor schommelingen tot de betaling."
+      },
+      "fees": {
+        "title": "Prijslijsten van veilingen en vervoerders",
+        "text": "Tariefstaffels van Copart, IAAI, Manheim en USS, vrachttarieven, havenkosten en transportprijzen per km."
+      },
+      "law": {
+        "title": "Nationale regels",
+        "text": "Accijns, btw-tarieven van 27 landen, registratiekosten en verplichte keuringen – met de wettelijke grondslag in het rapport."
+      }
+    },
+    "money": {
+      "eyebrow": "Hoe we geld verdienen",
+      "title": "Transparant – want het draait om vertrouwen",
+      "lead": "Het resultaat van de calculator hangt niet af van wie ons betaalt of hoeveel. We verdienen op drie manieren, allemaal openlijk:",
+      "m1": {
+        "title": "Pdf-rapport – € 4,99",
+        "text": "Het gratis resultaat toont de bandbreedte en de kostenopbouw. Het gedetailleerde rapport met elke post koopt u alleen als u het nodig heeft."
+      },
+      "m2": {
+        "title": "Optionele aanvraag bij een importbedrijf",
+        "text": "Alleen als u daarom vraagt, sturen wij uw berekening door naar één geverifieerd bedrijf. Dat bedrijf betaalt ons, niet u – en alleen met uw toestemming."
+      },
+      "m3": {
+        "title": "Gemarkeerde affiliatelinks",
+        "text": "Bijv. VIN-controles of valutawissel. Altijd gemarkeerd, nooit van invloed op de schatting."
+      }
+    },
+    "values": {
+      "eyebrow": "Waar we voor staan",
+      "transparency": {
+        "title": "Transparantie",
+        "text": "Elk getal heeft een bron en een grondslag. Is iets een schatting, dan zeggen we dat."
+      },
+      "independence": {
+        "title": "Onafhankelijkheid",
+        "text": "Wij hebben er geen belang bij of u de auto koopt of wie hem voor u importeert."
+      },
+      "precision": {
+        "title": "Precisie",
+        "text": "Wij rekenen tot op de cent, maar tonen ook een bandbreedte – want importeren is geen exacte wiskunde."
+      }
+    },
+    "cta": {
+      "title": "Controleer uw auto in een minuut",
+      "text": "Heeft u een vraag of ziet u een verouderd tarief? Schrijf naar {{email}}"
+    }
+  },
+  "currency": {
+    "label": "Valuta van het resultaat",
+    "title": "In welke valuta zullen we de kosten tonen?",
+    "hint": "Veilingbedragen (USD, JPY, AED…) worden omgerekend tegen de actuele koers van de centrale bank. De valuta verandert niets aan de belastingberekening – belastingen worden altijd vastgesteld door het land van inklaring.",
+    "groupEu": "EU-valuta",
+    "groupOther": "Overige"
+  }
+}
