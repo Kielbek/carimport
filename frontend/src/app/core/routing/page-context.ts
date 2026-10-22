@@ -6,7 +6,7 @@ import { Lang, LanguageService } from '../i18n/language.service';
 import { SeoService } from '../seo/seo.service';
 import { Page, pathFor } from './paths';
 
-const INDEXABLE: Page[] = ['home', 'calculator', 'privacy'];
+const INDEXABLE: Page[] = ['home', 'calculator', 'about', 'privacy'];
 
 /**
  * Tracks which page is shown (after every navigation) for SEO tags and the "same page in another language" links.

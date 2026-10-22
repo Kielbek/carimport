@@ -229,15 +229,15 @@ frontend/src/app/
 
 ### 3.0 Strona publiczna i SEO
 
-* **Static Site Generation** (`outputMode: "static"`): strona główna, kalkulator i polityka prywatności są
-  prerenderowane do HTML w 4 językach (12 plików). Google dostaje pełną treść, nagłówki i dane strukturalne bez
+* **Static Site Generation** (`outputMode: "static"`): strona główna, kalkulator, „O nas” i polityka prywatności
+  są prerenderowane do HTML w 4 językach (16 plików). Google dostaje pełną treść, nagłówki i dane strukturalne bez
   wykonywania JS; hosting to dowolny CDN. Strony osobiste (`/report/…`, `/result/…`) renderują się w przeglądarce
   i mają `noindex`.
 * **Zlokalizowane adresy**: `/pl/kalkulator`, `/en/calculator`, `/de/rechner`, `/uk/kalkuliator`; przełącznik języka
   prowadzi do odpowiednika bieżącej strony, nie na stronę główną.
 * **`SeoService`** ustawia per strona: `<title>`, description, canonical, `hreflang` dla 4 języków + `x-default`,
   Open Graph (`og-image.png` 1200×630) i Twitter Card oraz JSON-LD: `Organization`, `WebSite`, `WebApplication`
-  (z ofertami 0 zł / 19 zł), `FAQPage` (te same 8 pytań co w sekcji FAQ), `BreadcrumbList`, `WebPage`.
+  (z ofertami 0 zł / 19 zł), `FAQPage` (te same 9 pytań co w sekcji FAQ), `BreadcrumbList`, `WebPage` / `AboutPage`.
 * `public/sitemap.xml` (z alternatywami `xhtml:link`) i `robots.txt` (blokuje `/api`, raporty i linki wycen).
   Domena jest w `core/site.config.ts` – przy wdrożeniu zmienić ją też w sitemap.
 * **Treść pod frazy**: „cło na samochód z USA”, „akcyza na auto”, „Bremerhaven czy Gdynia”, „procedura 4200” – sekcje
@@ -248,10 +248,17 @@ frontend/src/app/
   buforowany sprite `public/map/world.svg` (86 kB, ok. 30 kB po gzip) wstawiany przez `<use>`, więc dziedziczy kolory
   motywu. Trasy morskie (przez Panamę, Suez, Gibraltar, Skagerrak) i porty są w kodzie i trafiają do prerenderu;
   animacja przepływu i „statki” (`animateMotion`) mają prędkość proporcjonalną do czasu rejsu. Dane generuje `node tools/generate-world-map.mjs` (zmiana portów lub tras = ponowne uruchomienie).
-* **Hero** według szablonu marki: zdjęcie auta na całą szerokość z gradientem od lewej (`SITE.heroImage`,
-  `.hero-photo`), neonowy okrąg i belka. Bez zdjęcia hero jest typograficzne. Hero i sekcja kontaktu są zawsze
-  ciemne (klasa `theme-dark` lokalnie nadpisuje tokeny). Duży kafel usług pokazuje prawdziwy zrzut kalkulatora
-  (`public/images/calculator-preview.webp`).
+* **Pozycjonowanie**: serwis jest wyłącznie kalkulatorem – nie sprzedaje ani nie sprowadza aut. Strona główna sprzedaje
+  wycenę: hero („Policz import auta, zanim zalicytujesz”), *Dlaczego warto* (od ręki, niezależnie, 43 porty, scenariusze,
+  koszty po imporcie, raport), *Co uwzględniamy* (5 grup, 22 pozycje), tabela porównania z liczeniem na własną rękę
+  i wyceną pośrednika, mapa, liczby, *Jak to działa*, koszty i porty, cennik (trzecia kolumna to oferta B2B dla firm
+  importowych), FAQ (w tym „Czy CarImport.eu sprowadza auta?”) i końcowe CTA. Każda sekcja kończy się wejściem do kalkulatora.
+* **„O nas”** (`/pl/o-nas`, `/en/about`, `/de/ueber-uns`, `/uk/pro-nas`): historia, czym jesteśmy i czym nie jesteśmy,
+  źródła danych, jawny model przychodów (raport, opcjonalne zapytanie do firmy importowej za zgodą, oznaczone linki partnerskie),
+  wartości. JSON-LD `AboutPage`.
+* **Hero**: grafika auta z przezroczystym tłem (`public/images/hero-car-{900,1600}.webp`, `srcset`) po prawej stronie,
+  z animacją wjazdu (wyłączoną przy `prefers-reduced-motion`). Hero i końcowe CTA są zawsze ciemne (`theme-dark`).
+  Ta sama grafika jest w `og-image.png`. Duży kafel „Dlaczego warto” pokazuje prawdziwy zrzut kalkulatora.
 
 ### 3.0.1 Design system
 

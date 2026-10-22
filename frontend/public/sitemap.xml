@@ -109,4 +109,40 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en/privacy-policy"/>
     <changefreq>weekly</changefreq><priority>0.2</priority>
   </url>
+  <url>
+    <loc>https://carimport.eu/pl/o-nas</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carimport.eu/pl/o-nas"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carimport.eu/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carimport.eu/de/ueber-uns"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://carimport.eu/uk/pro-nas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en/about"/>
+    <changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://carimport.eu/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carimport.eu/pl/o-nas"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carimport.eu/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carimport.eu/de/ueber-uns"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://carimport.eu/uk/pro-nas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en/about"/>
+    <changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://carimport.eu/de/ueber-uns</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carimport.eu/pl/o-nas"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carimport.eu/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carimport.eu/de/ueber-uns"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://carimport.eu/uk/pro-nas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en/about"/>
+    <changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://carimport.eu/uk/pro-nas</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://carimport.eu/pl/o-nas"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carimport.eu/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://carimport.eu/de/ueber-uns"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://carimport.eu/uk/pro-nas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carimport.eu/en/about"/>
+    <changefreq>monthly</changefreq><priority>0.6</priority>
+  </url>
 </urlset>
