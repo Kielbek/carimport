@@ -1,7 +1,7 @@
 import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { LANG_LABELS, LanguageService, SUPPORTED_LANGS } from '../core/i18n/language.service';
+import { LANGUAGES, LanguageService } from '../core/i18n/language.service';
 import { pathFor } from '../core/routing/paths';
 import { SITE } from '../core/site.config';
 import { Flag } from '../shared/flag/flag';
@@ -50,9 +50,9 @@ import { Logo } from './logo';
 
         <div>
           <h2 class="label">{{ 'footer.language' | translate }}</h2>
-          <ul class="flex flex-wrap gap-2 text-sm">
-            @for (l of langs; track l) {
-              <li><a [routerLink]="'/' + l" [attr.hreflang]="l" class="chip !min-h-9 !px-3" [class.chip--active]="l === lang.current()">{{ labels[l] }}</a></li>
+          <ul class="flex flex-wrap gap-1.5 text-sm">
+            @for (l of langs; track l.code) {
+              <li><a [routerLink]="'/' + l.code" [attr.hreflang]="l.code" [attr.title]="l.native" class="chip !min-h-8 !px-2.5 text-xs" [class.chip--active]="l.code === lang.current()">{{ l.label }}</a></li>
             }
           </ul>
           <p class="mt-6 flex items-start gap-2 text-xs leading-relaxed text-muted">
@@ -71,8 +71,7 @@ import { Logo } from './logo';
 })
 export class SiteFooter {
   protected readonly lang = inject(LanguageService);
-  protected readonly langs = SUPPORTED_LANGS;
-  protected readonly labels = LANG_LABELS;
+  protected readonly langs = LANGUAGES;
   protected readonly email = SITE.email;
   protected readonly name = SITE.name;
   protected readonly year = new Date().getFullYear();

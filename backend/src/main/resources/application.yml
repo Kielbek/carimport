@@ -33,7 +33,7 @@ management:
 
 app:
   frontend-url: ${FRONTEND_URL:http://localhost:4200}
-  supported-locales: [pl, en, de, uk]
+  supported-locales: [bg, cs, da, de, el, en, es, et, fi, fr, hr, hu, it, lt, lv, nl, pl, pt, ro, sk, sl, sv, uk]
   fx:
     cron: "0 20 12,23 * * MON-FRI"
   insurance:
@@ -44,10 +44,17 @@ app:
     webhook-secret: ${STRIPE_WEBHOOK_SECRET:whsec_replace_me}
   report:
     storage-dir: ${REPORT_STORAGE_DIR:./var/reports}
+    # same table as frontend core/currency/currencies.ts
     price-minor:
-      PLN: 1900
       EUR: 499
+      PLN: 1900
+      CZK: 12900
+      HUF: 199000
+      RON: 2500
+      SEK: 5900
+      DKK: 3900
       USD: 549
+      GBP: 449
   affiliates:
     - id: fx-online
       kind: CURRENCY_EXCHANGE

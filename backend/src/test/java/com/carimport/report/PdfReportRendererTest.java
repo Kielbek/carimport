@@ -25,7 +25,8 @@ import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 class PdfReportRendererTest {
 
     @ParameterizedTest
-    @ValueSource(strings = {"pl", "en", "de", "uk"})
+    @ValueSource(strings = {"bg", "cs", "da", "de", "el", "en", "es", "et", "fi", "fr", "hr", "hu", "it", "lt", "lv", "nl",
+            "pl", "pt", "ro", "sk", "sl", "sv", "uk"})
     void rendersLocalizedReport(String locale) throws Exception {
         ResourceBundleMessageSource messages = new ResourceBundleMessageSource();
         messages.setBasename("i18n/messages");

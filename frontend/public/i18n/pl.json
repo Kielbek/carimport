@@ -397,7 +397,8 @@
     "about": "O nas",
     "why": "Dlaczego warto",
     "what": "Co liczymy",
-    "ctaHint": "Za darmo, bez rejestracji"
+    "ctaHint": "Za darmo, bez rejestracji",
+    "language": "Język"
   },
   "footer": {
     "about": "Niezależny kalkulator kosztów importu samochodów spoza UE. Nie sprzedajemy ani nie sprowadzamy aut – liczymy, ile naprawdę kosztują.",
@@ -1002,5 +1003,12 @@
       "title": "Sprawdź swoje auto w minutę",
       "text": "Masz pytanie lub zauważyłeś nieaktualną stawkę? Napisz: {{email}}"
     }
+  },
+  "currency": {
+    "label": "Waluta wyniku",
+    "title": "W jakiej walucie pokazać koszty?",
+    "hint": "Kwoty z aukcji (USD, JPY, AED…) przeliczamy po aktualnym kursie banku centralnego. Waluta nie zmienia wyliczenia podatków – te zawsze liczy kraj odprawy.",
+    "groupEu": "Waluty krajów UE",
+    "groupOther": "Inne"
   }
 }

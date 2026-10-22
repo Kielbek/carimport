@@ -397,7 +397,8 @@
     "about": "About us",
     "why": "Why us",
     "what": "What we count",
-    "ctaHint": "Free, no sign-up"
+    "ctaHint": "Free, no sign-up",
+    "language": "Language"
   },
   "footer": {
     "about": "Independent calculator of import costs for cars from outside the EU. We neither sell nor import cars – we work out what they really cost.",
@@ -1002,5 +1003,12 @@
       "title": "Check your car in a minute",
       "text": "Have a question or spotted an outdated rate? Write to {{email}}"
     }
+  },
+  "currency": {
+    "label": "Result currency",
+    "title": "Which currency should we show the costs in?",
+    "hint": "Auction amounts (USD, JPY, AED…) are converted at the current central bank rate. The currency doesn’t change the tax calculation – taxes are always assessed by the clearance country.",
+    "groupEu": "EU currencies",
+    "groupOther": "Other"
   }
 }

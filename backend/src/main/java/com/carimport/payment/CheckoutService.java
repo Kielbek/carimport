@@ -109,11 +109,31 @@ public class CheckoutService {
         };
     }
 
+    /** Stripe Checkout speaks every site language except Ukrainian, which falls back to the browser language. */
     private static SessionCreateParams.Locale stripeLocale(String locale) {
         return switch (locale) {
-            case "pl" -> SessionCreateParams.Locale.PL;
+            case "bg" -> SessionCreateParams.Locale.BG;
+            case "cs" -> SessionCreateParams.Locale.CS;
+            case "da" -> SessionCreateParams.Locale.DA;
             case "de" -> SessionCreateParams.Locale.DE;
+            case "el" -> SessionCreateParams.Locale.EL;
             case "en" -> SessionCreateParams.Locale.EN;
+            case "es" -> SessionCreateParams.Locale.ES;
+            case "et" -> SessionCreateParams.Locale.ET;
+            case "fi" -> SessionCreateParams.Locale.FI;
+            case "fr" -> SessionCreateParams.Locale.FR;
+            case "hr" -> SessionCreateParams.Locale.HR;
+            case "hu" -> SessionCreateParams.Locale.HU;
+            case "it" -> SessionCreateParams.Locale.IT;
+            case "lt" -> SessionCreateParams.Locale.LT;
+            case "lv" -> SessionCreateParams.Locale.LV;
+            case "nl" -> SessionCreateParams.Locale.NL;
+            case "pl" -> SessionCreateParams.Locale.PL;
+            case "pt" -> SessionCreateParams.Locale.PT;
+            case "ro" -> SessionCreateParams.Locale.RO;
+            case "sk" -> SessionCreateParams.Locale.SK;
+            case "sl" -> SessionCreateParams.Locale.SL;
+            case "sv" -> SessionCreateParams.Locale.SV;
             default -> SessionCreateParams.Locale.AUTO;
         };
     }

@@ -1,0 +1,1014 @@
+{
+  "affiliate": {
+    "CURRENCY_EXCHANGE": "Billigere valutaveksling",
+    "CURRENCY_EXCHANGE_HINT": "Betal for bilen uden bankens kursavance",
+    "FINANCING": "Leasing eller lån",
+    "FINANCING_HINT": "Finansiér importen og afgifterne",
+    "VIN_CHECK": "Tjek VIN-historikken",
+    "VIN_CHECK_HINT": "Skader, kilometerstand, tyverianmeldelser",
+    "sponsored": "Sponsoreret",
+    "title": "Du får måske også brug for"
+  },
+  "app": {
+    "headline": "Hvad koster en importeret bil egentlig?",
+    "tagline": "Auktioner i USA, Canada, Japan, Dubai eller Storbritannien → EU-told, punktafgift og moms. Resultat med det samme, uden oprettelse."
+  },
+  "auction": {
+    "COPART": "Copart",
+    "DEALER": "Forhandler / privat",
+    "EMIRATES_AUCTION": "Emirates Auction",
+    "IAAI": "IAAI",
+    "USS": "USS Japan"
+  },
+  "buyer": {
+    "COMPANY": "Virksomhed",
+    "PRIVATE": "Privatperson"
+  },
+  "category": {
+    "MOTORCYCLE": "Motorcykel",
+    "PASSENGER_CAR": "Personbil",
+    "PICKUP_TRUCK": "Pickup",
+    "REGISTRATION": "Efter import & registrering",
+    "SUV": "SUV",
+    "TAXES": "EU-told & afgifter",
+    "TRANSPORT": "Transport & logistik",
+    "VAN": "Varebil",
+    "VEHICLE": "Køretøj & auktion",
+    "RISK": "Risici undervejs"
+  },
+  "condition": {
+    "ENGINE_STARTS": "Motoren starter",
+    "ENGINE_STARTS_HINT": "Kan ikke køre for egen kraft",
+    "NON_RUNNING": "Skadet / Salvage",
+    "NON_RUNNING_HINT": "Kræver kranvogn med spil",
+    "RUN_AND_DRIVE": "Run & Drive",
+    "RUN_AND_DRIVE_HINT": "Starter og kører"
+  },
+  "cost": {
+    "AUCTION_AGENT_COMMISSION": "Provision til eksportagent",
+    "AUCTION_BUYER_FEE": "Auktionens købersalær",
+    "AUCTION_ENVIRONMENTAL_FEE": "Miljøgebyr",
+    "AUCTION_EXPORT_DOCS": "Eksportdokumenter",
+    "AUCTION_GATE_FEE": "Gate fee (udleveringsgebyr)",
+    "AUCTION_RECYCLING_FEE": "Genanvendelsesgebyr (Japan)",
+    "AUCTION_SERVICE_FEE": "Auktionens servicegebyr",
+    "AUCTION_TITLE_HANDLING_FEE": "Gebyr for håndtering af title",
+    "AUCTION_VIRTUAL_BID_FEE": "Gebyr for onlinebud",
+    "CARGO_INSURANCE": "Godsforsikring",
+    "CUSTOMS_AGENCY": "Toldspeditør",
+    "CUSTOMS_DUTY": "Told",
+    "EXCISE_TAX": "Punktafgift",
+    "FORKLIFT_LOADING": "Lastning med gaffeltruck",
+    "IMPORT_VAT": "Importmoms",
+    "INDIVIDUAL_APPROVAL": "Individuel godkendelse (§21 StVZO)",
+    "INLAND_TRANSPORT": "Landtransport til havnen",
+    "INTRA_EU_ACQUISITION_VAT": "Moms af EU-erhvervelse (omvendt betalingspligt, fradragsberettiget)",
+    "INTRA_EU_TRANSPORT": "Autotransporter fra havn til destination",
+    "OCEAN_FREIGHT": "Søfragt",
+    "PORT_UNLOADING": "Losning i havn & terminal",
+    "PURCHASE_PRICE": "Købspris (vindende bud)",
+    "RDW_INSPECTION": "RDW-syn",
+    "RECYCLING_FEE": "Genanvendelsesgebyr",
+    "REGISTRATION_FEE": "Registreringsgebyrer",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Justering af forlygter (højrestyret)",
+    "SWORN_TRANSLATION": "Autoriseret oversættelse af dokumenter",
+    "TECHNICAL_INSPECTION": "Syn",
+    "US_LIGHTING_CONVERSION": "Ombygning af lys (US-specifikation)",
+    "WINCH_CONTAINER_LOADING": "Lastning i container med spil",
+    "DELIVERY_CAR_CARRIER": "Autotransporter fra havn til døren",
+    "DELIVERY_TOW_TRUCK": "Kranvogn fra havn til døren",
+    "DELIVERY_SELF_DRIVE": "Kør selv hjem på midlertidige nummerplader (brændstof, plader, korttidsforsikring)",
+    "TECHNICAL_INSPECTION_IMPORT": "Syn af importeret køretøj",
+    "REG_TEMPORARY_PERMIT": "Midlertidig registreringstilladelse",
+    "REG_TEMPORARY_PLATES": "Midlertidige nummerplader",
+    "REG_CERTIFICATE": "Registreringsattest",
+    "REG_PLATES": "Nummerplader",
+    "REG_STICKER": "Kontrolmærkat",
+    "REAR_FOG_LIGHT": "Montering af baglygte til tåge",
+    "SPEEDOMETER_KMH": "Omstilling af speedometer til km/t",
+    "SERVICE_INSPECTION": "Service og væskeskift",
+    "GEOMETRY_ALIGNMENT": "Hjulafstilling",
+    "DETAILING": "Rengøring og klargøring",
+    "EXPERT_VALUATION": "Vurdering ved taksator (f.eks. til kaskoforsikring)",
+    "REPAIR_ESTIMATE": "Reparationer (dit overslag)",
+    "INSURANCE_FIRST_YEAR": "Forsikring – første år (dit beløb)",
+    "RISK_PORT_STORAGE": "Oplagring i havnen (sen afhentning, papirarbejde)",
+    "RISK_CUSTOMS_INSPECTION": "Toldkontrol / røntgenscanning af container",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Toldværdien anfægtes (ekstra told og moms)",
+    "RISK_VESSEL_ROLLOVER": "Flyttet til et senere skib (oplagring i eksporthavnen)",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transportskade – selvrisiko på forsikringen",
+    "RISK_HIDDEN_DAMAGE": "Skjulte skader, der ikke kunne ses på auktionen",
+    "RISK_TITLE_DELAY": "Forsinket title (ekstra oplagring)",
+    "RISK_EXPORT_DOCS_DELAY": "Forsinkede eksportdokumenter"
+  },
+  "doc": {
+    "billOfLading": "Konnossement (Bill of Lading)",
+    "companyRegistryExtract": "Udskrift fra virksomhedsregister",
+    "customsDeclarationSad": "Toldangivelse (SAD)",
+    "customsPowerOfAttorney": "Fuldmagt til toldspeditøren",
+    "eoriNumber": "Importørens EORI-nummer",
+    "evChargingPortAdapterNote": "Tjek ladestikkets standard (NACS/CCS1 → CCS2)",
+    "historicExpertOpinion": "Sagkyndig erklæring om veterankøretøjsstatus",
+    "insurancePolicy": "Godsforsikringspolice",
+    "invoice": "Auktionsfaktura / slutseddel",
+    "ownership": {
+      "japanExportCertificate": "Japansk Export Certificate (afregistrering)",
+      "title": "Original Title (ejerskabsdokument)",
+      "uaeExportCertificate": "Eksportcertifikat fra UAE (RTA)",
+      "v5c": "Britisk V5C-registreringsattest (logbook)"
+    },
+    "pl": {
+      "exciseDeclarationAkcUs": "Punktafgiftsangivelse AKC-U/S og betalingsbevis",
+      "exciseExemptionConfirmation": "Bekræftelse på fritagelse for punktafgift (elbil)",
+      "recyclingFeeConfirmation": "Bekræftelse på betalt genanvendelsesgebyr"
+    },
+    "procedure4200VatIdAndProofOfTransport": "Toldprocedure 4200: købers EU-momsnummer og transportbevis",
+    "registrationApplication": "Anmodning om registrering af køretøj",
+    "salvageTitleRepairEvidence": "Reparationsdokumentation (salvage title)",
+    "swornTranslation": "Autoriserede oversættelser af udenlandske dokumenter",
+    "technicalInspection": "Synsrapport",
+    "transportInvoices": "Fakturaer for transport og fragt",
+    "usExportAesItn": "Amerikansk eksportanmeldelse (AES/ITN)",
+    "vatPaymentProof": "Bevis for betalt moms"
+  },
+  "error": {
+    "auction": {
+      "noSchedule": "Der findes ingen gebyrtabel for denne auktion.",
+      "unsupported": "Dette auktionshus understøttes ikke."
+    },
+    "excise": {
+      "rateNotFound": "Der findes ingen punktafgiftssats for denne konfiguration."
+    },
+    "port": {
+      "unknown": "Ukendt destinationshavn."
+    },
+    "procedure4200": {
+      "notAvailableInPort": "Toldprocedure 4200 er ikke tilgængelig i denne havn.",
+      "sameCountry": "Toldprocedure 4200 kræver fortoldning i et andet land end destinationslandet."
+    },
+    "route": {
+      "unavailable": "Der findes ingen skibsrute for dette valg."
+    },
+    "tariff": {
+      "notFound": "Køretøjet kunne ikke tariferes i toldtariffen."
+    },
+    "taxProfile": {
+      "missing": "Der findes ingen afgiftssatser for det valgte land."
+    }
+  },
+  "fuel": {
+    "DIESEL": "Diesel",
+    "EV": "El",
+    "HEV": "Hybrid",
+    "HYDROGEN": "Brint",
+    "LPG": "LPG (autogas)",
+    "MHEV": "Mildhybrid",
+    "PETROL": "Benzin",
+    "PHEV": "Plug-in-hybrid"
+  },
+  "lead": {
+    "consentMarketing": "Send mig importtilbud og gode råd (valgfrit).",
+    "consentTransfer": "Jeg accepterer, at mine oplysninger og mit overslag deles med én verificeret partner, som udarbejder et tilbud (GDPR art. 6, stk. 1, litra a).",
+    "email": "E-mail",
+    "message": "Link til auktionen eller yderligere oplysninger",
+    "name": "Fulde navn",
+    "phone": "Telefon (valgfrit)",
+    "submit": "Send forespørgsel",
+    "subtitle": "CarImport.eu importerer ikke biler. Hvis du ønsker det, videregiver vi dit overslag til én verificeret importvirksomhed, som udarbejder et tilbud. Helt uforpligtende.",
+    "thanks": "Tak!",
+    "thanksHint": "Importvirksomheden vender tilbage til dig inden for 1 hverdag.",
+    "title": "Forespørgsel til en importvirksomhed (valgfrit)"
+  },
+  "origin": {
+    "CANADA": "Canada",
+    "JAPAN": "Japan",
+    "UAE": "UAE / Dubai",
+    "UK": "Storbritannien",
+    "USA": "USA"
+  },
+  "paywall": {
+    "blikHint": "Betal med BLIK, Przelewy24 eller kort.",
+    "currency": "Betalingsvaluta",
+    "email": "E-mail (vi sender linket til rapporten)",
+    "fullName": "Fulde navn (trykkes på rapporten)",
+    "pay": "Gå til betaling",
+    "redirecting": "Viderestiller…",
+    "secure": "Sikker betaling via Stripe. Vi gemmer aldrig kortoplysninger.",
+    "subtitle": "Præcise beløb, beregningsgrundlag og satser, dokumenter – i en PDF med dit navn.",
+    "terms": "Jeg accepterer vilkårene og anmoder om øjeblikkelig levering af digitalt indhold, hvorved jeg giver afkald på fortrydelsesretten.",
+    "title": "Fuld importrapport"
+  },
+  "report": {
+    "amount": "Beløb",
+    "back": "Tilbage til beregneren",
+    "base": "Grundlag",
+    "download": "Download PDF",
+    "expired": "Betalingen blev ikke gennemført.",
+    "generating": "Genererer PDF…",
+    "item": "Post",
+    "rate": "Sats",
+    "refunded": "Denne ordre er blevet refunderet.",
+    "stage": "Fase",
+    "title": "Rapport over omkostninger ved import af køretøj",
+    "total": "Samlet pris leveret",
+    "waiting": "Bekræfter din betaling…",
+    "delivery": "Levering",
+    "leadTime": "Tid til registrering",
+    "days": "dage",
+    "scenarios": "Tre omkostningsscenarier",
+    "timeline": "Tidslinje",
+    "plan": "Hvad du skal gøre efter importen – trin for trin",
+    "step": "Trin",
+    "deadline": "Frist",
+    "riskDetail": "Sandsynlighed {{p}} %, omkostning hvis det sker: {{min}}–{{max}} {{cur}}",
+    "userAmount": "beløb, du har indtastet",
+    "scenarioMethod": "Det gennemsnitlige scenarie medregner risici som forventet værdi (sandsynlighed × middelomkostning); det pessimistiske antager, at alle risici indtræffer med den højeste omkostning."
+  },
+  "result": {
+    "chart": "Omkostningsstruktur",
+    "exciseIncluded": "Punktafgift medregnet",
+    "fx": "NBP-kurser pr. {{date}}",
+    "paid1": "Præcise auktionsgebyrer",
+    "paid2": "Told, punktafgift & moms",
+    "paid3": "Tjekliste over dokumenter",
+    "paid4": "Personlig PDF-rapport",
+    "partner": "Vil du have et tilbud fra en importvirksomhed?",
+    "rangeHint": "Intervallet dækker udsving i valutakurser og fragtrater.",
+    "title": "Anslået samlet pris leveret",
+    "transit": "{{days}} dage til søs",
+    "unlock": "Lås op for den fulde rapport – {{price}}",
+    "updating": "Opdaterer…",
+    "short": "Samlet pris",
+    "calculating": "Beregner hver post og hvert scenarie…",
+    "edit": "Ret oplysninger",
+    "structure": "Omkostningsstruktur (gennemsnitligt scenarie)",
+    "timeline": "Tid: {{min}}–{{max}} dage til registrering",
+    "included": "Hvad er inkluderet",
+    "risks": "Hvad der kan ske undervejs",
+    "risksLead": "Hver risiko har en sandsynlighed og et omkostningsinterval. Det gennemsnitlige scenarie medregner dem forholdsmæssigt, det pessimistiske fuldt ud. Beløbene står i rapporten.",
+    "probability": "Sandsynlighed",
+    "reportEyebrow": "Rapport fra dør til dør",
+    "reportTitle": "Hver post på øre – i tre scenarier",
+    "reportItem1": "Auktionsgebyrer, transport, fragt og forsikring",
+    "reportItem2": "Told, punktafgift og moms med grundlag og satser",
+    "reportItem3": "Levering: km × sats, lastning, minimumspris",
+    "reportItem4": "Registreringsgebyrer og ydelser efter importen",
+    "reportItem5": "Risici med beløb: optimistisk, gennemsnitligt, pessimistisk",
+    "reportItem6": "Trin-for-trin-plan med frister og dokumentliste",
+    "cheapestPort": "billigste havn"
+  },
+  "shipping": {
+    "CONTAINER_EXCLUSIVE": "Egen container",
+    "CONTAINER_SHARED": "Delt container",
+    "RORO": "RoRo"
+  },
+  "title": {
+    "CLEAN": "Clean title",
+    "SALVAGE": "Salvage / ikke reparerbar"
+  },
+  "validation": {
+    "auctionHouse": {
+      "notInOrigin": "Dette auktionshus opererer ikke i det valgte land."
+    },
+    "engineCc": {
+      "required": "Angiv venligst motorens slagvolumen."
+    },
+    "procedure4200": {
+      "companyOnly": "Toldprocedure 4200 er kun tilgængelig for virksomheder med et gyldigt EU-momsnummer."
+    }
+  },
+  "warning": {
+    "dealer": {
+      "verifyExportDocuments": "Ved køb hos en forhandler skal du sikre dig, at eksportdokumenterne følger med."
+    },
+    "historic": {
+      "expertOpinionRequired": "Veteranstatus (0 % told) kræver en sagkyndig erklæring og kan blive anfægtet af toldmyndighederne."
+    },
+    "intraEuTransport": {
+      "notPriced": "Ingen pris for autotransport fra havn til destination – omkostningen er ikke medregnet."
+    },
+    "newMeansOfTransport": {
+      "vatInDestination": "Nyt transportmiddel (≤6 måneder eller ≤6000 km): Der skal også betales moms i registreringslandet."
+    },
+    "nl": {
+      "bpmNotIncluded": "Den hollandske registreringsafgift BPM er ikke medregnet."
+    },
+    "pl": {
+      "clearedForOtherMemberState": "Fortoldet i Polen med henblik på registrering i et andet land – tjek registreringsafgifterne i destinationslandet.",
+      "exciseDeclarationWithin14Days": "Polsk punktafgift betales på skattekontoret (AKC-U/S) inden for 14 dage efter ankomst.",
+      "pickupMayBeReclassified": "En pickup, der registreres som personbil, kan blive pålagt punktafgift – tjek typegodkendelsen."
+    },
+    "procedure4200": {
+      "reverseChargeDeductible": "Toldprocedure 4200: Momsen afregnes af køber i destinationslandet (omvendt betalingspligt, neutral for momsregistrerede virksomheder)."
+    },
+    "registrationTax": {
+      "notModelled": "Destinationslandets registreringsafgift er endnu ikke indregnet i modellen."
+    },
+    "delivery": {
+      "portPickup": "Afhentning i havnen valgt – landtransport hjem er ikke medregnet.",
+      "selfDriveNotRunning": "En bil, der ikke kører, kan ikke køres hjem på midlertidige nummerplader – vælg en kranvogn."
+    }
+  },
+  "wizard": {
+    "auction": "Auktionshus",
+    "back": "Tilbage",
+    "bid": "Vindende bud",
+    "buyer": "Køber",
+    "category": "Køretøjstype",
+    "condition": "Køretøjets stand",
+    "destination": "Registreringsland",
+    "engineCc": "Motorens slagvolumen",
+    "exciseRate": "PL-punktafgift: {{rate}} %",
+    "exciseWarning": "Over 2000 cm³ springer punktafgiften fra {{from}} % til {{to}} % – ofte en forskel på flere tusinde!",
+    "finish": "Fuld rapport",
+    "forklift": "gaffeltruck / spil",
+    "fuel": "Drivlinje",
+    "historic": "Veterankøretøj i original stand",
+    "historicHint": "30+ år, uændret: 0 % told og nedsat moms.",
+    "next": "Næste",
+    "origin": "Køb fra",
+    "port": "EU-havn for fortoldning",
+    "procedure4200": "Toldprocedure 4200",
+    "procedure4200Hint": "For momsregistrerede virksomheder i EU: ingen moms ved grænsen, omvendt betalingspligt i destinationslandet.",
+    "shipping": "Forsendelsesmetode til søs",
+    "step1": "Fra",
+    "step2": "Køretøj",
+    "step3": "Stand & pris",
+    "title": "Type af title",
+    "year": "Produktionsår",
+    "zone": "Pladsens placering (stat / provins)",
+    "zoneOther": "Andet / ved ikke",
+    "advanced": "Avancerede indstillinger",
+    "step4": "Destination & levering",
+    "step5": "Efter importen",
+    "step6": "Omkostningsrapport",
+    "calculate": "Beregn den samlede pris",
+    "departurePort": "Afgangshavn",
+    "departureAuto": "Automatisk – billigste rute",
+    "departureHint": "Vælg en bestemt havn, hvis din speditør allerede har udpeget en.",
+    "delivery": "Transport fra havnen til din dør",
+    "distance": "Afstand fra havnen til din adresse",
+    "pricePerKm": "Pris pr. kilometer",
+    "tariffUnknown": "Ingen kilometertakst for dette land – der bruges en fast pris.",
+    "repair": "Reparationsomkostninger",
+    "repairHintRunner": "Vi foreslår et typisk beløb for denne stand og title (lak, dæk). Har du et tilbud fra et værksted? Indtast det.",
+    "repairHintDamaged": "Vi foreslår et typisk reparationsbeløb for denne stand (ca. 30–40 % af prisen). Har du et tilbud fra et værksted? Indtast det – skjulte skader medregnes separat som en risiko.",
+    "afterImportLead": "Alt, du skal gøre og betale mellem havnen og nummerpladerne. Obligatoriske poster er altid med; resten vælger du selv.",
+    "statutory": "Obligatorisk (offentlige gebyrer)",
+    "optional": "Valgfrit",
+    "recommended": "anbefales",
+    "optionsLoading": "Indlæser ydelser for din rute…",
+    "noServices": "Vi har endnu ikke en detaljeret prisliste for registrering i dette land – rapporten beskriver trinene.",
+    "insurance": "Ansvarsforsikring det første år",
+    "insuranceHint": "Vi foreslår mediantilbuddet på ansvarsforsikring for en nyregistreret bil i dette land. Har du dit eget tilbud? Indtast det.",
+    "address": "Leveringsadresse",
+    "addressPlaceholder": "f.eks. Aarhus, Søndergade 5 eller et postnummer",
+    "addressChange": "Ændr",
+    "addressHint": "Det eneste felt, du skal udfylde. Ud fra adressen beregner vi kilometerne fra hver havn og vælger den billigste.",
+    "portRankingAddress": "Alle {{count}} EU-havne prissat til din adresse – billigste først.",
+    "portRankingCountry": "Alle {{count}} EU-havne prissat til registreringslandet – angiv en adresse for præcise kilometer.",
+    "portRankingLoading": "Prissætter alle EU-havne…",
+    "portCheapest": "billigst",
+    "portAuto": "Tilbage til den billigste",
+    "portsAll": "Vis alle EU-havne ({{count}})",
+    "portsLess": "Skjul havnelisten",
+    "days": "dage",
+    "portRankingNote": "Samlet pris fra dør til dør, gennemsnitligt scenarie: fragt, fortoldning og moms i havnelandet, levering til adressen og gebyrer efter importen.",
+    "distanceRouted": "Køreruten fra {{port}} til din adresse.",
+    "distanceEstimated": "Overslag fra {{port}} til din adresse (luftlinje × 1,25).",
+    "distanceTypical": "Typisk afstand fra {{port}} – angiv adressen ovenfor for et præcist tal.",
+    "tariffShort": "Markedspris: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} for lastning, min. {{minimum}} {{cur}}."
+  },
+  "layout": {
+    "topbar": "Uafhængig beregner af omkostninger ved import af biler fra USA, Canada, Japan, UAE og Storbritannien til 27 EU-lande",
+    "forBusiness": "For importvirksomheder",
+    "home": "Forside",
+    "nav": "Hovednavigation",
+    "calculator": "Beregner",
+    "howItWorks": "Sådan virker det",
+    "pricing": "Priser",
+    "faq": "FAQ",
+    "cta": "Beregn prisen",
+    "menu": "Menu",
+    "close": "Luk",
+    "breadcrumb": "Brødkrummesti",
+    "themeLight": "Skift til lyst tema",
+    "themeDark": "Skift til mørkt tema",
+    "about": "Om os",
+    "why": "Hvorfor os",
+    "what": "Hvad vi beregner",
+    "ctaHint": "Gratis, uden oprettelse",
+    "language": "Sprog"
+  },
+  "footer": {
+    "about": "Uafhængig beregner af importomkostninger for biler fra lande uden for EU. Vi hverken sælger eller importerer biler – vi regner ud, hvad de reelt koster.",
+    "calculators": "Importberegnere",
+    "importFrom": {
+      "USA": "Bil fra USA",
+      "CANADA": "Bil fra Canada",
+      "JAPAN": "Bil fra Japan",
+      "UAE": "Bil fra Dubai (UAE)",
+      "UK": "Bil fra Storbritannien"
+    },
+    "service": "Tjeneste",
+    "privacy": "Privatlivspolitik",
+    "language": "Sprog",
+    "payments": "Betaling via Stripe (kort, BLIK, Przelewy24). Vi gemmer aldrig kortoplysninger.",
+    "rights": "Alle rettigheder forbeholdes.",
+    "disclaimer": "Beregningerne er vejledende og er hverken en toldafgørelse eller skatterådgivning."
+  },
+  "cookies": {
+    "title": "Cookies",
+    "text": "Vi bruger nødvendige cookies til at drive siden og, med dit samtykke, statistikcookies. Detaljer:",
+    "accept": "Accepter alle",
+    "necessary": "Kun nødvendige"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Beregner til bilimport",
+      "title1": "Kend importprisen",
+      "title2": "før du byder",
+      "lead": "En uafhængig beregner, der på et minut viser den fulde pris for at hente en bil fra USA, Canada, Japan, UAE eller Storbritannien – fra auktionsprisen til nummerpladerne i dit land.",
+      "cta": "Beregn gratis",
+      "secondary": "Hvad vi præcist beregner",
+      "visual": "Sort Ford Mustang i gult neonlys foran det amerikanske flag",
+      "point1": "Øjeblikkeligt overslag – uden oprettelse, uden telefonopkald, uden at vente på et tilbud",
+      "point2": "Over 40 omkostningsposter, 43 EU-havne og dagens valutakurser",
+      "point3": "Vi sælger ikke biler og tager ingen provision – tallene er ærlige"
+    },
+    "how": {
+      "eyebrow": "Sådan virker det",
+      "title": "Fra idé til det fulde beløb i fire trin",
+      "s1": {
+        "title": "Hvor du køber",
+        "text": "USA, Canada, Japan, UAE eller Storbritannien – og på auktion eller hos en forhandler."
+      },
+      "s2": {
+        "title": "Hvilken bil",
+        "text": "Type, brændstof, motorstørrelse, årgang og stand – de afgør afgifterne."
+      },
+      "s3": {
+        "title": "Din adresse",
+        "text": "Det eneste felt, du skal udfylde. Vi beregner kilometerne og den billigste havn."
+      },
+      "s4": {
+        "title": "Resultat og rapport",
+        "text": "Tre scenarier gratis – og en PDF præcis på øren, når du er klar til at købe."
+      },
+      "step": "Trin"
+    },
+    "costs": {
+      "eyebrow": "Hvad prisen består af",
+      "title": "Told, punktafgift og moms beregnet i samme rækkefølge som i tolden",
+      "lead": "Hver afgift er grundlaget for den næste, så rækkefølgen betyder noget. Fortoldningshavnen bestemmer momssatsen; registreringslandet bestemmer punktafgiften.",
+      "cif": {
+        "title": "Toldværdi (CIF)",
+        "formula": "pris + auktionsgebyr + transport + fragt + forsikring",
+        "text": "Alt, hvad du betaler, indtil bilen ankommer til en EU-havn."
+      },
+      "duty": {
+        "title": "Told (TARIC)",
+        "formula": "CIF × 10 % personbiler · 22 % pickupper · 0 % veteranbiler",
+        "text": "Satsen afhænger af HS-koden; motorcykler 6–8 %."
+      },
+      "excise": {
+        "title": "Punktafgift (PL)",
+        "formula": "(CIF + told) × 3,1 % op til 2,0 l · 18,6 % derover",
+        "text": "Hybrider 1,55 % / 9,3 %, elbiler 0 %. Betales i registreringslandet."
+      },
+      "vat": {
+        "title": "Importmoms",
+        "formula": "(CIF + told + punktafgift* + losning) × fortoldningslandets sats",
+        "text": "*Punktafgiften medregnes kun ved fortoldning i registreringslandet."
+      }
+    },
+    "ports": {
+      "title": "Momssatsen afhænger af fortoldningshavnen",
+      "text": "Beregneren prissætter alle 43 EU-fortoldningshavne fra dør til dør: moms i havnelandet, fragt, levering til din adresse og gebyrer efter importen. Fortoldning i Tyskland betyder 19 % moms i stedet for 23 %, men du skal lægge en autotransporter oveni – nedenfor ser du et par eksempler, beregneren sammenligner resten.",
+      "port": "Havn",
+      "country": "Fortoldningsland"
+    },
+    "pricing": {
+      "eyebrow": "Priser",
+      "title": "Start gratis – betal kun for vished"
+    },
+    "final": {
+      "title": "Beregn din import på et minut",
+      "text": "Uden oprettelse, helt uforpligtende. Viser bilen sig at blive for dyr, har du lige sparet penge. Kan den betale sig, byder du roligt – med kendskab til den fulde pris.",
+      "title1": "Tjek før du køber.",
+      "title2": "Det tager et minut.",
+      "cta": "Beregn importprisen",
+      "about": "Hvem vi er"
+    },
+    "strip": {
+      "brand": {
+        "title": "CarImport.eu —",
+        "text": "uafhængig importberegner"
+      },
+      "instant": {
+        "title": "Resultat på et minut",
+        "text": "Du angiver kun adressen – resten foreslår vi"
+      },
+      "items": {
+        "title": "40+ omkostningsposter",
+        "text": "Fra auktionen til registrering og risici"
+      },
+      "ports": {
+        "title": "43 EU-havne",
+        "text": "Vi vælger den billigste til din adresse"
+      }
+    },
+    "map": {
+      "eyebrow": "Importruter",
+      "title": "Fra havne verden over direkte ind i EU",
+      "lead": "Eksporthavne i USA, Canada, Japan, UAE og Storbritannien og ruterne via Panama, Suez og Gibraltar til EU's fortoldningshavne.",
+      "aria": "Kort over søruter fra USA, Canada, Japan, UAE og Storbritannien til EU-havne",
+      "eu": "Den Europæiske Union",
+      "legendEu": "EU-lande (registrering)",
+      "legendOrigin": "Købslande",
+      "legendRoute": "Sørute",
+      "scroll": "Swipe for at se hele kortet",
+      "days": "dage"
+    },
+    "numbers": {
+      "eyebrow": "CarImport.eu i tal",
+      "title": "Tallene bag hvert overslag",
+      "n1": {
+        "value": "5",
+        "label": "oprindelseslande: USA, Canada, Japan, UAE og Storbritannien"
+      },
+      "n2": {
+        "value": "27",
+        "label": "EU-lande, hvor du kan registrere bilen"
+      },
+      "n3": {
+        "value": "43",
+        "label": "fortoldningshavne i 22 EU-lande – vi vælger den billigste til din adresse"
+      },
+      "n4": {
+        "value": "4",
+        "label": "sprog: polsk, engelsk, tysk, ukrainsk"
+      }
+    },
+    "why": {
+      "eyebrow": "Hvorfor bruge den",
+      "title": "Ved, hvad du skal betale – før du klikker »byd«",
+      "lead": "Det dyreste ved import er de omkostninger, ingen nævnte før købet. Beregneren bringer dem frem i lyset, før du bruger din første dollar.",
+      "preview": {
+        "tag": "Beregner",
+        "title": "Fuld pris fra dør til dør i seks trin",
+        "text": "Auktion, transport, told, punktafgift, moms, registrering og risici – i tre scenarier.",
+        "alt": "Skærmbillede af beregneren til importomkostninger"
+      },
+      "instant": {
+        "tag": "Øjeblikkeligt",
+        "title": "Et overslag på et minut, ikke på to dage",
+        "text": "Ingen kontaktformularer, ingen venten på et opkald fra en sælger. Hvert felt er udfyldt med et forslag på forhånd – du ændrer kun det, du ved bedre."
+      },
+      "independent": {
+        "tag": "Uafhængig",
+        "title": "Vi sælger hverken biler eller fragt",
+        "text": "Vi tjener ingen avance på speditører eller auktioner, så vi har ingen grund til at skønmale omkostningerne. Alle får det samme resultat."
+      },
+      "ports": {
+        "tag": "43 havne",
+        "title": "Den billigste rute til din adresse",
+        "text": "Vi prissætter hver EU-fortoldningshavn fra dør til dør og viser dig forskellen."
+      },
+      "scenarios": {
+        "tag": "Scenarier",
+        "title": "Optimistisk, gennemsnitligt, pessimistisk",
+        "text": "Valutakurser, forsinkelser og risici undervejs – du ser et realistisk interval, ikke ét »magisk« tal."
+      },
+      "after": {
+        "tag": "Efter importen",
+        "title": "Også registrering og papirarbejde",
+        "text": "Syn, oversættelser, ombygning af lys, offentlige gebyrer og forsikring – med frister."
+      },
+      "report": {
+        "tag": "PDF-rapport",
+        "title": "Hver en øre sort på hvidt",
+        "text": "For 39 kr. får du en personlig rapport med hver sats, hvert beregningsgrundlag og en handlingsplan efter importen."
+      }
+    },
+    "what": {
+      "eyebrow": "Hvad vi medregner",
+      "title": "Alt, hvad der udgør prisen på bilen ved din dør",
+      "lead": "De fleste beregnere stopper ved told og moms. Vi regner hele rejsen med – fra auktionspladsen til nummerpladerne – og lægger til, hvad der kan gå galt.",
+      "cta": "Prøv det på din bil",
+      "purchase": {
+        "title": "Køb",
+        "i1": "Vindende bud eller forhandlerpris",
+        "i2": "Gebyrer hos Copart, IAAI, Manheim og USS efter prisniveau",
+        "i3": "Clean / salvage title og stand",
+        "i4": "Anslåede reparationsomkostninger"
+      },
+      "transport": {
+        "title": "Transport",
+        "i1": "Fra auktionspladsen til eksporthavnen",
+        "i2": "Fragt i container eller med RoRo",
+        "i3": "Godsforsikring",
+        "i4": "Losning og terminalgebyrer",
+        "i5": "Kranvogn eller autotransporter til din adresse"
+      },
+      "taxes": {
+        "title": "Told & afgifter",
+        "i1": "Told efter TARIC (10 %, 22 % for pickupper)",
+        "i2": "Punktafgift efter motor og brændstoftype",
+        "i3": "Moms i fortoldningshavnens land",
+        "i4": "Centralbankens valutakurs samme dag"
+      },
+      "after": {
+        "title": "Efter importen",
+        "i1": "Syn og godkendelse",
+        "i2": "Autoriserede oversættelser af dokumenter",
+        "i3": "Registrering, nummerplader og offentlige gebyrer",
+        "i4": "Ombygning af lys og speedometer",
+        "i5": "Ansvarsforsikring det første år"
+      },
+      "risks": {
+        "title": "Risici",
+        "i1": "Oplagring i havnen og forsinkede skibe",
+        "i2": "Toldkontrol og kontrol af toldværdien",
+        "i3": "Skjulte skader og transportskader",
+        "i4": "Forsinket title og eksportdokumenter"
+      }
+    },
+    "compare": {
+      "eyebrow": "Sammenligning",
+      "title": "Hvorfor et overslag på bagsiden af en konvolut ikke er nok",
+      "self": "På egen hånd",
+      "broker": "Tilbud fra mægler",
+      "r1": "Auktionsgebyrer efter aktuelle prisniveauer",
+      "r2": "Sammenligning af alle 43 EU-havne",
+      "r3": "Dagens valutakurs + buffer til udsving",
+      "r4": "Punktafgift og moms efter fortoldnings- og registreringsland",
+      "r5": "Risici og tre omkostningsscenarier",
+      "r6": "Registrering og papirarbejde efter importen",
+      "r7": "Ingen avance eller skjult provision",
+      "note": "~ betyder »som regel delvist«. Tilbud fra mæglere indeholder ofte deres avance og viser ikke en opdeling af omkostningerne."
+    }
+  },
+  "pricing": {
+    "popular": "Mest populær",
+    "free": {
+      "name": "Hurtigt overslag",
+      "price": "Gratis",
+      "f1": "Interval for samlet pris leveret",
+      "f2": "Diagram over omkostningsstrukturen",
+      "f3": "Transittid og advarsler",
+      "f4": "Uden oprettelse",
+      "cta": "Beregn gratis"
+    },
+    "report": {
+      "name": "PDF-rapport",
+      "price": "39 kr.",
+      "f1": "Hver post på øren",
+      "f2": "Auktionsgebyrer efter prisniveau",
+      "f3": "Told, punktafgift og moms med grundlag og satser",
+      "f4": "Tjekliste over dokumenter og personlig PDF",
+      "cta": "Beregn & lås op for rapporten"
+    },
+    "partner": {
+      "name": "For importvirksomheder",
+      "price": "Pr. accepteret lead",
+      "f1": "Købere med et færdigt overslag på bilen",
+      "f2": "GDPR-samtykke indhentet før videregivelse",
+      "f3": "Kun forespørgsler, du accepterer",
+      "f4": "Intet abonnement",
+      "cta": "Bliv partner"
+    }
+  },
+  "faq": {
+    "eyebrow": "Spørgsmål & svar",
+    "title": "Ofte stillede spørgsmål",
+    "lead": "Kan du ikke finde dit svar? Beregneren viser alle forudsætninger, og PDF-rapporten hver sats og hvert grundlag.",
+    "q1": {
+      "q": "Hvor meget er tolden på en bil fra USA?",
+      "a": "For personbiler (KN 8703) er tolden 10 % af toldværdien (CIF), 22 % for pickupper og lette lastbiler (8704) og 6–8 % for motorcykler. Veterankøretøjer over 30 år i original stand kan opnå 0 %. Toldværdien er købsprisen plus auktionsgebyrer, transport til EU's grænse og forsikring."
+    },
+    "q2": {
+      "q": "Hvilken punktafgift gælder ved import af en bil til Polen?",
+      "a": "Biler med forbrændingsmotor op til 2000 cm³: 3,1 %, over 2000 cm³: 18,6 %. Hybrider: 1,55 % op til 2000 cm³ og 9,3 % op til 3500 cm³. Plug-in-hybrider op til 2000 cm³ og elbiler er fritaget. Grundlaget er toldværdien plus told, omregnet til PLN."
+    },
+    "q3": {
+      "q": "Hvor er det bedst at fortolde bilen: Bremerhaven, Rotterdam eller Gdynia?",
+      "a": "Importmomsen opkræves af fortoldningslandet: 19 % i Tyskland, 21 % i Nederlandene og 23 % i Polen. Fortoldning i Tyskland sænker momsen, men du skal lægge en autotransporter til Polen oveni og betale punktafgiften separat på skattekontoret inden for 14 dage. Beregneren sammenligner mulighederne for din bil."
+    },
+    "q4": {
+      "q": "Hvad er toldprocedure 4200?",
+      "a": "Det er overgang til fri omsætning med momsfritagelse i importlandet, når bilen går direkte videre til en momsregistreret virksomhed i et andet EU-land. Køberen afregner momsen hjemme efter reglerne om omvendt betalingspligt, så det er neutralt for momsregistrerede virksomheder. Proceduren er ikke tilgængelig for privatpersoner."
+    },
+    "q5": {
+      "q": "Hvor lang tid tager skibstransporten til Europa?",
+      "a": "Fra havne på den amerikanske østkyst og i Canada ca. 2–3 uger til søs, fra Californien ca. 5 uger, fra Japan 6–7 uger, fra UAE 3–4 uger og fra Storbritannien få dage. Hertil kommer transport fra auktionspladsen til havnen og fortoldning."
+    },
+    "q6": {
+      "q": "Hvor kommer valutakurserne fra?",
+      "a": "Vi bruger NBP's gennemsnitskurser, som hentes automatisk hver hverdag. Da du betaler for bilen dage eller uger efter overslaget, tager det gratis interval højde for valutaudsving."
+    },
+    "q7": {
+      "q": "Hvad indeholder den betalte PDF-rapport?",
+      "a": "Hver post på øren: auktionsgebyrer efter prisniveau, transport, toldværdi, told, punktafgift og moms med grundlag og satser, listen over nødvendige dokumenter og en personlig PDF til download. Betal med BLIK, kort eller Przelewy24."
+    },
+    "q8": {
+      "q": "Er beregnerens resultat bindende?",
+      "a": "Nej. Det er et overslag baseret på aktuelle satser og prislister. De endelige beløb fastsættes af toldmyndighederne og skattemyndighederne, som f.eks. kan efterprøve toldværdien. Rapporten viser alle forudsætninger, så den er nem at sammenligne med den officielle afgørelse."
+    },
+    "q9": {
+      "q": "Importerer CarImport.eu biler?",
+      "a": "Nej. Vi er kun en beregner – vi køber, sender og fortolder ikke biler, og vi tager ingen provision fra auktioner eller speditører. Det holder overslaget uafhængigt. Hvis du vil, kan du videregive overslaget til en verificeret importvirksomhed, men det er altid dit valg."
+    }
+  },
+  "calc": {
+    "title": "Beregner til omkostninger ved bilimport",
+    "lead": "Seks trin: oprindelse, køretøj, stand, destination, efter importen og rapport. Resultatet kommer til sidst – i tre scenarier.",
+    "currency": "Valuta for resultatet",
+    "progress": "Fremskridt"
+  },
+  "seo": {
+    "home": {
+      "title": "Beregner til bilimport – USA, Japan, Dubai til EU | CarImport.eu",
+      "description": "Uafhængig beregner til import af bil fra USA, Canada, Japan, UAE og Storbritannien: auktion, fragt, told, punktafgift, moms, registrering og risici. Øjeblikkeligt overslag, uden oprettelse."
+    },
+    "calculator": {
+      "title": "Beregner til told, punktafgift & moms på importbiler | CarImport.eu",
+      "description": "Vælg land, auktion, havn og køretøj — beregneren viser med det samme prisintervallet og opdelingen: pris, fragt, told, punktafgift, moms og registrering."
+    },
+    "privacy": {
+      "title": "Privatlivspolitik | CarImport.eu",
+      "description": "Sådan behandler CarImport.eu personoplysninger: betalinger, rapporter, forespørgsler til partnere og cookies."
+    },
+    "about": {
+      "title": "Om os – en uafhængig beregner til bilimport | CarImport.eu",
+      "description": "Hvem vi er, hvor vores data kommer fra, og hvordan vi tjener penge. CarImport.eu hverken sælger eller importerer biler – vi beregner den fulde importpris ærligt og uafhængigt."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Juridisk",
+    "title": "Privatlivspolitik",
+    "s1": {
+      "title": "Dataansvarlig",
+      "text": "Dataansvarlig er operatøren af CarImport.eu. I spørgsmål om databeskyttelse kan du kontakte os på {{email}}."
+    },
+    "s2": {
+      "title": "Hvilke oplysninger vi behandler",
+      "text": "Oplysninger til beregningen (ingen personoplysninger) og, ved køb af en rapport, dit navn og din e-mail. Partnerformularen indsamler derudover et telefonnummer og en besked. Vi behandler aldrig kortoplysninger — det gør Stripe."
+    },
+    "s3": {
+      "title": "Formål og retsgrundlag",
+      "text": "Opfyldelse af købet af rapporten (GDPR art. 6, stk. 1, litra b), regnskabsmæssige forpligtelser (litra c), videregivelse af din forespørgsel til en partner på grundlag af dit samtykke (litra a) samt statistik med samtykke givet i cookiebanneret."
+    },
+    "s4": {
+      "title": "Modtagere",
+      "text": "Stripe Payments Europe (betalinger), vores udbydere af hosting og e-mail samt — for partnerformularen — én verificeret importvirksomhed, kun med dit samtykke."
+    },
+    "s5": {
+      "title": "Cookies",
+      "text": "Nødvendige cookies og browserlager husker dit sprog, dit tema, dine fremskridt i beregneren og adgangen til en købt rapport. Statistik kører først, når du klikker på »Accepter alle«."
+    },
+    "s6": {
+      "title": "Dine rettigheder",
+      "text": "Du har ret til indsigt, berigtigelse, sletning, begrænsning, dataportabilitet og indsigelse, til når som helst at trække dit samtykke tilbage og til at klage til din databeskyttelsesmyndighed (i Danmark Datatilsynet). Skriv til os: {{email}}."
+    }
+  },
+  "delivery": {
+    "PORT_PICKUP": "Afhentning i havnen",
+    "CAR_CARRIER": "Autotransporter",
+    "TOW_TRUCK": "Kranvogn",
+    "SELF_DRIVE": "På midlertidige nummerplader"
+  },
+  "scenario": {
+    "0": "Optimistisk",
+    "1": "Gennemsnitligt",
+    "2": "Pessimistisk"
+  },
+  "scenarioHint": {
+    "0": "Laveste satser, gunstige valutakurser, intet går galt",
+    "1": "Typiske satser + sandsynlighedsvægtede risici",
+    "2": "Højeste satser, svagere valutakurser, risiciene indtræffer"
+  },
+  "timeline": {
+    "INLAND": "Afhentning på pladsen og transport til havnen",
+    "OCEAN": "Sejlads (inkl. ventetid på skibet)",
+    "CLEARANCE": "Losning og fortoldning",
+    "DELIVERY": "Levering til din dør",
+    "REGISTRATION": "Klargøring og registrering"
+  },
+  "plan": {
+    "deadline": {
+      "beforeRelease": "Før frigivelse fra havnen",
+      "14days": "14 dage efter ankomst til Polen",
+      "beforeInspection": "Før synet",
+      "beforeRegistration": "Før registrering",
+      "pl30days": "30 dage efter importen (bøde på op til 1.000 PLN)",
+      "fromRegistration": "Fra registrering / midlertidige nummerplader",
+      "national": "Efter registreringslandets regler",
+      "none": "Ingen lovbestemt frist"
+    },
+    "step": {
+      "clearance": {
+        "title": "Fortoldning i havnen",
+        "text": "Toldspeditøren indgiver toldangivelsen (SAD); du betaler told og importmoms. Nødvendigt: faktura, konnossement, title/eksportcertifikat, EORI."
+      },
+      "pl": {
+        "excise": {
+          "title": "Punktafgiftsangivelse og betaling (AKC-U/S)",
+          "text": "Indgiv angivelsen på skattekontoret (eller online), og betal punktafgiften; kvitteringen skal bruges ved registreringen."
+        },
+        "exciseExemption": {
+          "title": "Angivelse af fritagelse for punktafgift (elbil)",
+          "text": "Elbiler er fritaget, men AKC-U/S-angivelsen skal stadig indgives."
+        },
+        "inspection": {
+          "title": "Syn på en synsstation",
+          "text": "Første syn af et importeret køretøj inkl. identifikation af VIN; resultatet indberettes til det centrale register."
+        },
+        "recycling": {
+          "title": "Genanvendelsesgebyr 500 PLN",
+          "text": "Betales til den nationale miljøfond ved første registrering af en importeret bil."
+        },
+        "registration": {
+          "title": "Registrering på registreringskontoret",
+          "text": "Anmodning, ejerskabsbevis med oversættelse, punktafgift, syn, genanvendelsesgebyr, bevis for betalt moms/told; du får en midlertidig tilladelse og nummerplader."
+        }
+      },
+      "translations": {
+        "title": "Autoriserede oversættelser",
+        "text": "Udenlandsk title/registreringsattest, faktura og eksportdokument – af en statsautoriseret translatør."
+      },
+      "lighting": {
+        "title": "Ombygning af lys til EU-standard",
+        "text": "Gule blinklys bagtil, baglygte til tåge, indstilling af forlygter – uden det dumper bilen til synet."
+      },
+      "insurance": {
+        "title": "Ansvarsforsikring",
+        "text": "Obligatorisk fra registreringen; kaskoforsikring er værd at tegne efter en vurdering ved taksator."
+      },
+      "de": {
+        "approval": {
+          "title": "Individuel godkendelse (§21 StVZO)",
+          "text": "Fuld sagkyndig gennemgang (TÜV/DEKRA) for biler fra lande uden for EU; påkrævet for registrering."
+        },
+        "registration": {
+          "title": "Registrering (Zulassung)",
+          "text": "Forsikringens eVB-nummer, bevis for fortoldning, sagkyndig rapport, SEPA-mandat til køretøjsafgiften."
+        }
+      },
+      "generic": {
+        "inspection": {
+          "title": "Syn / individuel godkendelse",
+          "text": "Omfanget afhænger af landet – biler fra lande uden for EU kræver ofte individuel godkendelse."
+        },
+        "registrationTax": {
+          "title": "National registreringsafgift",
+          "text": "F.eks. BPM i Nederlandene, NoVA i Østrig, malus i Frankrig – tjek det, før du køber."
+        },
+        "registration": {
+          "title": "Registrering af køretøjet",
+          "text": "Ansøg med bevis for fortoldning, syn og forsikring."
+        }
+      },
+      "evCharging": {
+        "title": "Ladestik",
+        "text": "Amerikanske biler bruger NACS/CCS1 – du skal bruge en adapter eller en eftermonteret CCS2/Type 2-port."
+      }
+    }
+  },
+  "deliveryHint": {
+    "CAR_CARRIER": "Billigst for køreklare biler",
+    "TOW_TRUCK": "Enkelt kranvogn, også til biler, der ikke kører",
+    "SELF_DRIVE": "Midlertidige nummerplader + forsikring; kun køreklare biler",
+    "PORT_PICKUP": "Du sørger selv for transporten"
+  },
+  "serviceHint": {
+    "SWORN_TRANSLATION": "Title, faktura og eksportdokument",
+    "US_LIGHTING_CONVERSION": "Blinklys og lygter efter EU-krav",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Højrestyret bil",
+    "REAR_FOG_LIGHT": "Påkrævet ved synet",
+    "SPEEDOMETER_KMH": "Speedometer i miles – komfort og gensalgsværdi",
+    "SERVICE_INSPECTION": "Olie, filtre, væsker, bremser efter en lang rejse",
+    "GEOMETRY_ALIGNMENT": "Anbefales efter reparationer af undervognen",
+    "DETAILING": "Vask, indvendig rengøring, lakpolering",
+    "EXPERT_VALUATION": "Nyttig til kaskoforsikring og gensalg"
+  },
+  "riskInfo": {
+    "RISK_PORT_STORAGE": "Terminalen opkræver betaling pr. dag efter den gratis periode, f.eks. når dokumenter eller transport er forsinket.",
+    "RISK_CUSTOMS_INSPECTION": "Stikprøve eller målrettet kontrol: tømning af container, røntgenscanning, ekstra terminalgebyrer.",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Hvis prisen ser for lav ud, kan toldmyndighederne anvende en højere værdi – told og moms stiger.",
+    "RISK_VESSEL_ROLLOVER": "Skibet er overbooket, og containeren sejler med det næste – ekstra oplagring i eksporthavnen.",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transportskader dækkes af policen, minus selvrisikoen.",
+    "RISK_HIDDEN_DAMAGE": "Fejl, du ikke kan se på auktionsbillederne – jo dårligere stand, jo højere risiko.",
+    "RISK_TITLE_DELAY": "Auktionen sender title for sent – bilen venter på pladsen eller i havnen.",
+    "RISK_EXPORT_DOCS_DELAY": "Afregistrering og eksportdokumenter tager længere tid end normalt."
+  },
+  "docStage": {
+    "PURCHASE": "Køb",
+    "SHIPPING": "Forsendelse",
+    "CUSTOMS": "Fortoldning",
+    "REGISTRATION": "Registrering"
+  },
+  "proposal": {
+    "tag": "Forslag",
+    "restore": "Brug forslaget",
+    "was": "forslag: {{value}} {{unit}}"
+  },
+  "region": {
+    "NORTH_SEA": "Nordsøen",
+    "BALTIC": "Østersøen & Skandinavien",
+    "ATLANTIC": "Atlanterhavet",
+    "WEST_MED": "Det vestlige Middelhav",
+    "EAST_MED": "Adriaterhavet, Det Ægæiske Hav & Sortehavet"
+  },
+  "about": {
+    "eyebrow": "Om os",
+    "title1": "Vi beregner bilimport.",
+    "title2": "Vi sælger ikke biler.",
+    "lead": "CarImport.eu er en uafhængig beregner af omkostningerne ved at hente en bil fra lande uden for Den Europæiske Union. Vi har bygget den, så alle – ikke kun en forhandler med ti års erfaring – ved, hvad de reelt kommer til at betale, før de køber.",
+    "story": {
+      "eyebrow": "Sådan startede det",
+      "title": "Ud af frustration over skjulte omkostninger",
+      "p1": "En bil fra en amerikansk auktion ligner et kup – indtil du lægger auktionsgebyrer, transport til havnen, fragt, told, punktafgift, moms, losning, kranvogn, oversættelser, syn og registrering oveni. Hver post er »lille«, men tilsammen kan de fordoble prisen.",
+      "p2": "Oplysningerne er spredt ud over auktionernes prislister, toldtariffer, valutakurstabeller og reglerne i 27 lande. Tilbud fra mæglere giver som regel ét tal uden opdeling – og med deres avance indbygget.",
+      "p3": "Vi har bygget et værktøj, der samler det hele, regner med aktuelle satser og viser hver eneste forudsætning. Uden oprettelse, uden opkald fra en sælger."
+    },
+    "role": {
+      "eyebrow": "Ærlige om, hvad vi er",
+      "title": "Vi er en beregner. Kun en beregner.",
+      "is": "Hvad vi er",
+      "is1": "En uafhængig beregner af den fulde importpris",
+      "is2": "En sammenligning af 43 EU-fortoldningshavne til din adresse",
+      "is3": "Kilden til en detaljeret PDF-rapport med hver sats",
+      "is4": "En liste over trin og dokumenter efter importen",
+      "isNot": "Hvad vi ikke er",
+      "isNot1": "Ikke en importør eller forhandler – vi sælger ikke biler",
+      "isNot2": "Vi står ikke for forsendelse eller fortoldning",
+      "isNot3": "Ingen provision fra auktioner, speditører eller toldspeditører",
+      "isNot4": "Ikke en myndighed eller skatterådgiver – resultatet er et overslag"
+    },
+    "data": {
+      "eyebrow": "Hvor tallene kommer fra",
+      "title": "Aktuelle satser, ikke »cirka«",
+      "lead": "Hvert beløb i resultatet stammer fra en konkret sats, som rapporten viser. Data opdateres automatisk eller hver gang lovgivningen ændres.",
+      "customs": {
+        "title": "EU's toldtarif",
+        "text": "Toldsatser efter KN-kode (TARIC) for personbiler, pickupper, motorcykler og veterankøretøjer."
+      },
+      "fx": {
+        "title": "Centralbankkurser",
+        "text": "Referencekurser hentet hver hverdag med en buffer til udsving frem til betalingen."
+      },
+      "fees": {
+        "title": "Prislister fra auktioner og speditører",
+        "text": "Gebyrniveauer hos Copart, IAAI, Manheim og USS, fragtrater, havnegebyrer og transportpriser pr. km."
+      },
+      "law": {
+        "title": "Nationale regler",
+        "text": "Punktafgift, momssatser i 27 lande, registreringsgebyrer og obligatoriske syn – med retsgrundlaget i rapporten."
+      }
+    },
+    "money": {
+      "eyebrow": "Sådan tjener vi penge",
+      "title": "Gennemsigtigt – for det handler om tillid",
+      "lead": "Beregnerens resultat afhænger ikke af, hvem der betaler os, eller hvor meget. Vi tjener penge på tre måder, og de er alle åbne:",
+      "m1": {
+        "title": "PDF-rapport – 39 kr.",
+        "text": "Det gratis resultat viser intervallet og omkostningsstrukturen. Den detaljerede rapport med hver post køber du kun, hvis du har brug for den."
+      },
+      "m2": {
+        "title": "Valgfri forespørgsel til en importvirksomhed",
+        "text": "Kun hvis du beder om det, videregiver vi dit overslag til én verificeret virksomhed. Den betaler os, ikke dig – og kun med dit samtykke."
+      },
+      "m3": {
+        "title": "Markerede affiliate-links",
+        "text": "F.eks. VIN-tjek eller valutaveksling. Altid markeret og påvirker aldrig overslaget."
+      }
+    },
+    "values": {
+      "eyebrow": "Det styrer os",
+      "transparency": {
+        "title": "Gennemsigtighed",
+        "text": "Hvert tal har en kilde og et grundlag. Er noget et skøn, siger vi det."
+      },
+      "independence": {
+        "title": "Uafhængighed",
+        "text": "Vi har ingen interesse i, om du køber bilen, eller hvem der importerer den for dig."
+      },
+      "precision": {
+        "title": "Præcision",
+        "text": "Vi regner på øren, men viser også et interval – for import er ikke eksakt matematik."
+      }
+    },
+    "cta": {
+      "title": "Tjek din bil på et minut",
+      "text": "Har du et spørgsmål eller fundet en forældet sats? Skriv til {{email}}"
+    }
+  },
+  "currency": {
+    "label": "Valuta for resultatet",
+    "title": "Hvilken valuta skal vi vise omkostningerne i?",
+    "hint": "Auktionsbeløb (USD, JPY, AED…) omregnes til centralbankens aktuelle kurs. Valutaen ændrer ikke afgiftsberegningen – afgifterne fastsættes altid af fortoldningslandet.",
+    "groupEu": "EU-valutaer",
+    "groupOther": "Andre"
+  }
+}

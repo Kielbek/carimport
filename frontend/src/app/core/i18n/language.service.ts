@@ -1,14 +1,11 @@
 import { DOCUMENT, Injectable, computed, inject, signal } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Observable, map, of } from 'rxjs';
+import { LANGUAGE_BY_CODE, Lang, SUPPORTED_LANGS } from './languages';
 
-export const SUPPORTED_LANGS = ['pl', 'en', 'de', 'uk'] as const;
-export type Lang = (typeof SUPPORTED_LANGS)[number];
+export { LANGUAGES, LANGUAGE_BY_CODE, SUPPORTED_LANGS } from './languages';
+export type { Lang } from './languages';
 
-/** BCP 47 locales used for Intl number/date formatting. "uk" is the ISO 639-1 code for Ukrainian (country: UA). */
-const LOCALES: Record<Lang, string> = { pl: 'pl-PL', en: 'en-GB', de: 'de-DE', uk: 'uk-UA' };
-/** Short labels for the language switcher (UA is what Ukrainian users expect to see). */
-export const LANG_LABELS: Record<Lang, string> = { pl: 'PL', en: 'EN', de: 'DE', uk: 'UA' };
 const STORAGE_KEY = 'carimport.lang';
 
 export function isSupportedLang(value: string | null | undefined): value is Lang {
@@ -25,7 +22,8 @@ export class LanguageService {
   private readonly document = inject(DOCUMENT);
 
   readonly current = signal<Lang>('en');
-  readonly locale = computed(() => LOCALES[this.current()]);
+  readonly info = computed(() => LANGUAGE_BY_CODE[this.current()]);
+  readonly locale = computed(() => this.info().locale);
 
   /** Completes once the translations are loaded, so prerendered HTML never contains raw keys. */
   use(lang: Lang): Observable<Lang> {
