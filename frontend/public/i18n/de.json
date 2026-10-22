@@ -348,22 +348,36 @@
     "departureHint": "Wählen Sie einen Hafen, wenn Ihr Spediteur ihn schon vorgibt.",
     "delivery": "Transport vom Hafen bis vor die Tür",
     "distance": "Entfernung vom Hafen zu Ihrer Adresse",
-    "distanceHint": "Typische Entfernung ab {{port}}; geben Sie Ihre eigene für ein genaues Ergebnis ein.",
     "pricePerKm": "Preis pro Kilometer",
-    "tariff": "Marktpreis: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} Verladung (mindestens {{minimum}} {{cur}}).",
-    "ownRate": "Ich habe ein eigenes Angebot",
     "tariffUnknown": "Kein km-Tarif für dieses Land – Pauschale wird verwendet.",
-    "repair": "Geschätzte Reparaturkosten (optional)",
-    "repairHintRunner": "Z. B. kleine Lackarbeiten, Reifen, Bremsbeläge.",
-    "repairHintDamaged": "Bei beschädigten Autos die Werkstattschätzung eintragen – versteckte Mängel zählen wir separat als Risiko.",
+    "repair": "Reparaturkosten",
+    "repairHintRunner": "Wir schlagen einen typischen Betrag für Zustand und Titel vor (Lack, Reifen). Haben Sie ein Werkstattangebot? Tragen Sie es ein.",
+    "repairHintDamaged": "Wir schlagen einen typischen Reparaturbetrag für diesen Zustand vor (ca. 30–40 % des Preises). Haben Sie ein Werkstattangebot? Tragen Sie es ein – versteckte Mängel zählen wir separat als Risiko.",
     "afterImportLead": "Alles zwischen Hafen und Kennzeichen. Pflichtposten sind immer enthalten, den Rest wählen Sie.",
     "statutory": "Pflicht (amtliche Gebühren)",
     "optional": "Optional",
     "recommended": "empfohlen",
     "optionsLoading": "Leistungen werden geladen…",
     "noServices": "Für dieses Land fehlt noch eine detaillierte Preisliste – der Bericht nennt die Schritte.",
-    "insurance": "Versicherung für das erste Jahr (optional)",
-    "insuranceHint": "Geben Sie das Versicherungsangebot ein, damit der Bericht die Kosten des ersten Jahres zeigt."
+    "insurance": "Haftpflichtversicherung im ersten Jahr",
+    "insuranceHint": "Wir schlagen den Median der Haftpflichtangebote für ein neu zugelassenes Auto in diesem Land vor. Eigenes Angebot? Tragen Sie es ein.",
+    "address": "Lieferadresse",
+    "addressPlaceholder": "z. B. Köln, Hauptstraße 5 oder PLZ",
+    "addressChange": "Ändern",
+    "addressHint": "Das einzige Feld zum Ausfüllen. Aus der Adresse berechnen wir die Kilometer ab jedem Hafen und wählen den günstigsten.",
+    "portRankingAddress": "Alle {{count}} EU-Häfen bis zu Ihrer Adresse kalkuliert – günstigster zuerst.",
+    "portRankingCountry": "Alle {{count}} EU-Häfen bis ins Zulassungsland kalkuliert – Adresse eingeben für genaue Kilometer.",
+    "portRankingLoading": "Alle EU-Häfen werden kalkuliert…",
+    "portCheapest": "am günstigsten",
+    "portAuto": "Zurück zum günstigsten",
+    "portsAll": "Alle EU-Häfen anzeigen ({{count}})",
+    "portsLess": "Hafenliste einklappen",
+    "days": "Tage",
+    "portRankingNote": "Gesamtkosten von Tür zu Tür, mittleres Szenario: Fracht, Verzollung und EUSt im Hafenland, Lieferung zur Adresse und Kosten nach dem Import.",
+    "distanceRouted": "Straßenroute von {{port}} zu Ihrer Adresse.",
+    "distanceEstimated": "Schätzung von {{port}} zu Ihrer Adresse (Luftlinie × 1,25).",
+    "distanceTypical": "Typische Entfernung ab {{port}} – Adresse oben eingeben für einen genauen Wert.",
+    "tariffShort": "Markt: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} Verladung, min. {{minimum}} {{cur}}."
   },
   "layout": {
     "topbar": "Importrechner für USA, Kanada, Japan, VAE und UK — wir kalkulieren und liefern in jedes EU-Land",
@@ -466,7 +480,7 @@
     },
     "ports": {
       "title": "Der USt-Satz hängt vom Hafen ab",
-      "text": "Verzollung in Deutschland bedeutet 19 % statt 23 % USt, dafür kommen Autotransport und separate Verbrauchsteuer hinzu. Der Rechner zeigt, was für Ihr Auto günstiger ist.",
+      "text": "Der Rechner kalkuliert alle 43 EU-Zollhäfen von Tür zu Tür: EUSt im Hafenland, Fracht, Lieferung zu Ihrer Adresse und Kosten nach dem Import. Unten einige Beispiele, den Rest vergleicht der Rechner.",
       "port": "Hafen",
       "country": "Abfertigungsland"
     },
@@ -570,8 +584,8 @@
         "label": "EU-Länder für die Zulassung"
       },
       "n3": {
-        "value": "5",
-        "label": "Abfertigungshäfen mit USt-Vergleich"
+        "value": "43",
+        "label": "Zollhäfen in 22 EU-Ländern – wir wählen den günstigsten für Ihre Adresse"
       },
       "n4": {
         "value": "4",
@@ -847,5 +861,17 @@
     "SHIPPING": "Versand",
     "CUSTOMS": "Zollabfertigung",
     "REGISTRATION": "Zulassung"
+  },
+  "proposal": {
+    "tag": "Vorschlag",
+    "restore": "Vorschlag übernehmen",
+    "was": "Vorschlag: {{value}} {{unit}}"
+  },
+  "region": {
+    "NORTH_SEA": "Nordsee",
+    "BALTIC": "Ostsee & Skandinavien",
+    "ATLANTIC": "Atlantik",
+    "WEST_MED": "Westliches Mittelmeer",
+    "EAST_MED": "Adria, Ägäis & Schwarzes Meer"
   }
 }

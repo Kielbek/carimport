@@ -2,11 +2,12 @@ import { Component, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { Icon } from '../../../shared/icon/icon';
 import { CalculatorStore } from '../calculator.store';
+import { ProposalInput } from '../proposal-input';
 
 /** Step 5 - what has to happen before the car is registered: statutory items and optional services to tick. */
 @Component({
   selector: 'app-step-after-import',
-  imports: [TranslatePipe, Icon],
+  imports: [TranslatePipe, Icon, ProposalInput],
   template: `
     <p class="text-sm text-muted">{{ 'wizard.afterImportLead' | translate }}</p>
 
@@ -46,22 +47,13 @@ import { CalculatorStore } from '../calculator.store';
     }
 
     <div class="mt-8 max-w-sm">
-      <label class="label" for="ins">{{ 'wizard.insurance' | translate }}</label>
-      <div class="relative">
-        <input id="ins" type="number" min="0" step="100" class="input pr-16" [value]="s().insuranceEstimate ?? ''"
-               (input)="store.patch({ insuranceEstimate: num($event) })" />
-        <span class="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-muted">{{ s().displayCurrency }}</span>
-      </div>
-      <p class="mt-2 text-xs text-muted">{{ 'wizard.insuranceHint' | translate }}</p>
+      <app-proposal-input inputId="ins" label="wizard.insurance" [unit]="s().displayCurrency" hint="wizard.insuranceHint"
+                          [value]="s().insuranceEstimate" [proposal]="store.insuranceProposal()"
+                          (changed)="store.patch({ insuranceEstimate: $event })" />
     </div>
   `,
 })
 export class StepAfterImport {
   protected readonly store = inject(CalculatorStore);
   protected readonly s = this.store.state;
-
-  protected num(e: Event): number | null {
-    const v = (e.target as HTMLInputElement).value;
-    return v === '' ? null : Number(v);
-  }
 }

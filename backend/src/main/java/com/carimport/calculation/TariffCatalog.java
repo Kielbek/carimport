@@ -44,6 +44,9 @@ public interface TariffCatalog {
 
     Optional<EuPort> port(String code);
 
+    /** All active EU ports of clearance. */
+    List<EuPort> ports();
+
     Optional<EuCountryTaxProfile> taxProfile(String countryCode);
 
     List<ExciseRate> exciseRates(String countryCode, FuelType fuelType);

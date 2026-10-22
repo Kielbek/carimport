@@ -348,22 +348,36 @@
     "departureHint": "Wybierz konkretny port, jeśli spedytor już go wskazał.",
     "delivery": "Transport z portu pod dom",
     "distance": "Odległość z portu pod Twój adres",
-    "distanceHint": "Podpowiadamy typową odległość z portu {{port}}; wpisz własną dla dokładnego wyniku.",
     "pricePerKm": "Cena za kilometr",
-    "tariff": "Stawka rynkowa: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} za załadunek (minimum {{minimum}} {{cur}}).",
-    "ownRate": "Mam własną ofertę przewoźnika",
     "tariffUnknown": "Brak cennika za km dla tego kraju – użyjemy stawki ryczałtowej.",
-    "repair": "Szacowany koszt naprawy (opcjonalnie)",
-    "repairHintRunner": "Np. drobne poprawki lakiernicze, opony, klocki.",
-    "repairHintDamaged": "Dla aut uszkodzonych wpisz wycenę warsztatu – ukryte usterki liczymy osobno jako ryzyko.",
+    "repair": "Koszt naprawy",
+    "repairHintRunner": "Proponujemy typowy koszt dla tego stanu i tytułu (np. lakier, opony). Masz wycenę warsztatu? Wpisz ją.",
+    "repairHintDamaged": "Proponujemy typową kwotę naprawy dla tego stanu (ok. 30–40% ceny). Masz wycenę warsztatu? Wpisz ją – ukryte usterki liczymy osobno jako ryzyko.",
     "afterImportLead": "Wszystko, co trzeba zrobić i opłacić między portem a tablicami rejestracyjnymi. Pozycje obowiązkowe są zawsze wliczone, resztę wybierasz sam.",
     "statutory": "Obowiązkowe (opłaty urzędowe)",
     "optional": "Do wyboru",
     "recommended": "zalecane",
     "optionsLoading": "Wczytujemy listę usług dla Twojej trasy…",
     "noServices": "Dla tego kraju nie mamy jeszcze szczegółowego cennika rejestracji – w raporcie znajdziesz listę kroków.",
-    "insurance": "Ubezpieczenie na pierwszy rok (opcjonalnie)",
-    "insuranceHint": "Wpisz kwotę z kalkulatora ubezpieczyciela, aby raport pokazał pełny koszt pierwszego roku."
+    "insurance": "Ubezpieczenie OC na pierwszy rok",
+    "insuranceHint": "Proponujemy medianę ofert OC dla nowo rejestrowanego auta w tym kraju. Masz własną ofertę? Wpisz ją.",
+    "address": "Adres dostawy",
+    "addressPlaceholder": "np. Kraków, ul. Długa 5 albo kod pocztowy",
+    "addressChange": "Zmień",
+    "addressHint": "To jedyne pole do wpisania. Z adresu policzymy kilometry z każdego portu i wybierzemy najtańszy.",
+    "portRankingAddress": "Wszystkie {{count}} portów UE wycenione pod Twój adres – od najtańszego.",
+    "portRankingCountry": "Wszystkie {{count}} portów UE wycenione do kraju rejestracji – podaj adres, by policzyć dokładne kilometry.",
+    "portRankingLoading": "Wyceniamy wszystkie porty UE…",
+    "portCheapest": "najtańszy",
+    "portAuto": "Wróć do najtańszego",
+    "portsAll": "Pokaż wszystkie porty UE ({{count}})",
+    "portsLess": "Zwiń listę portów",
+    "days": "dni",
+    "portRankingNote": "Suma „od drzwi do drzwi” w wariancie średnim: fracht, odprawa i VAT w kraju portu, transport pod adres i opłaty po imporcie.",
+    "distanceRouted": "Trasa drogowa z portu {{port}} pod Twój adres.",
+    "distanceEstimated": "Szacunek z portu {{port}} pod Twój adres (linia prosta × 1,25).",
+    "distanceTypical": "Typowa odległość z portu {{port}} – podaj adres powyżej, by policzyć dokładnie.",
+    "tariffShort": "Rynek: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} załadunek, min. {{minimum}} {{cur}}."
   },
   "layout": {
     "topbar": "Kalkulator kosztów importu z USA, Kanady, Japonii, ZEA i UK — policzymy i sprowadzimy auto do dowolnego kraju UE",
@@ -466,7 +480,7 @@
     },
     "ports": {
       "title": "Stawka VAT zależy od portu odprawy",
-      "text": "Odprawa w Niemczech oznacza 19% VAT zamiast 23%, ale dochodzi transport lawetą do Polski, a akcyzę zapłacisz osobno w urzędzie skarbowym. Kalkulator pokazuje, która opcja wychodzi taniej dla Twojego auta.",
+      "text": "Kalkulator wycenia wszystkie 43 porty odprawy w UE od drzwi do drzwi: VAT w kraju portu, fracht, transport pod Twój adres i opłaty po imporcie. Odprawa w Niemczech to 19% VAT zamiast 23%, ale dochodzi laweta do Polski – poniżej kilka przykładów, resztę porówna kalkulator.",
       "port": "Port",
       "country": "Kraj odprawy"
     },
@@ -570,8 +584,8 @@
         "label": "krajów UE, w których możesz zarejestrować auto"
       },
       "n3": {
-        "value": "5",
-        "label": "portów odprawy z porównaniem stawek VAT"
+        "value": "43",
+        "label": "portów odprawy w 22 krajach UE – wybieramy najtańszy pod Twój adres"
       },
       "n4": {
         "value": "4",
@@ -847,5 +861,17 @@
     "SHIPPING": "Transport",
     "CUSTOMS": "Odprawa celna",
     "REGISTRATION": "Rejestracja"
+  },
+  "proposal": {
+    "tag": "Propozycja",
+    "restore": "Przywróć propozycję",
+    "was": "propozycja: {{value}} {{unit}}"
+  },
+  "region": {
+    "NORTH_SEA": "Morze Północne",
+    "BALTIC": "Bałtyk i Skandynawia",
+    "ATLANTIC": "Atlantyk",
+    "WEST_MED": "Morze Śródziemne – zachód",
+    "EAST_MED": "Adriatyk, Morze Egejskie i Czarne"
   }
 }

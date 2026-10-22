@@ -15,6 +15,7 @@ import com.carimport.reference.ConditionSurcharge;
 import com.carimport.reference.CustomsTariff;
 import com.carimport.reference.DestinationFee;
 import com.carimport.reference.EuCountryTaxProfile;
+import com.carimport.geo.GeoPoint;
 import com.carimport.reference.EuPort;
 import com.carimport.reference.ExciseRate;
 import com.carimport.reference.InlandTransportRate;
@@ -28,7 +29,7 @@ import java.util.List;
 import java.util.Optional;
 
 /** Small, hand-checkable subset of the production seed data. */
-class InMemoryTariffCatalog implements TariffCatalog {
+public class InMemoryTariffCatalog implements TariffCatalog {
 
     private final List<AuctionFeeTier> tiers = new ArrayList<>();
     private final List<AuctionFixedFee> fixed = new ArrayList<>();
@@ -44,7 +45,7 @@ class InMemoryTariffCatalog implements TariffCatalog {
     private final List<RoadTransportRate> roadRates = new ArrayList<>();
     private final List<RiskFactor> risks = new ArrayList<>();
 
-    InMemoryTariffCatalog() {
+    public InMemoryTariffCatalog() {
         tier(AuctionHouse.COPART, AuctionFeeTier.FeeType.BUYER_FEE, TitleType.SALVAGE, "8000", "10000", "850", "0");
         tier(AuctionHouse.COPART, AuctionFeeTier.FeeType.BUYER_FEE, TitleType.SALVAGE, "10000", "15000", "900", "0");
         tier(AuctionHouse.COPART, AuctionFeeTier.FeeType.BUYER_FEE, TitleType.SALVAGE, "15000", null, "0", "0.075");
@@ -76,8 +77,10 @@ class InMemoryTariffCatalog implements TariffCatalog {
                     OceanFreightRate.SizeClass.SEDAN, bd("1700"), bd("2200"), CurrencyCode.USD, 48));
         }
 
-        ports.add(new EuPort("PLGDY", "Gdynia", "PL", bd("1300"), bd("800"), CurrencyCode.PLN, true));
-        ports.add(new EuPort("DEBRV", "Bremerhaven", "DE", bd("450"), bd("250"), CurrencyCode.EUR, true));
+        ports.add(new EuPort("PLGDY", "Gdynia", "PL", bd("1300"), bd("800"), CurrencyCode.PLN, true,
+                new GeoPoint(54.533, 18.55), EuPort.Region.BALTIC));
+        ports.add(new EuPort("DEBRV", "Bremerhaven", "DE", bd("450"), bd("250"), CurrencyCode.EUR, true,
+                new GeoPoint(53.552, 8.578), EuPort.Region.NORTH_SEA));
         intraEu.add(new IntraEuTransportRate("PLGDY", "PL", bd("800"), bd("1600"), CurrencyCode.PLN, 350));
         intraEu.add(new IntraEuTransportRate("DEBRV", "PL", bd("450"), bd("650"), CurrencyCode.EUR, 850));
         roadRates.add(new RoadTransportRate("PL", DeliveryMode.CAR_CARRIER, bd("2.60"), bd("3.40"), bd("150"), bd("600"),
@@ -168,6 +171,11 @@ class InMemoryTariffCatalog implements TariffCatalog {
     public Optional<IntraEuTransportRate> intraEuRate(String euPortCode, String destinationCountry) {
         return intraEu.stream().filter(r -> r.getEuPortCode().equals(euPortCode)
                 && r.getDestinationCountry().equals(destinationCountry)).findFirst();
+    }
+
+    @Override
+    public List<EuPort> ports() {
+        return List.copyOf(ports);
     }
 
     @Override

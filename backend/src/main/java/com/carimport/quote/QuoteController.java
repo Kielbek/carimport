@@ -16,9 +16,20 @@ import org.springframework.web.bind.annotation.RestController;
 public class QuoteController {
 
     private final QuoteService quotes;
+    private final SuggestionService suggestions;
 
-    public QuoteController(QuoteService quotes) {
+    public QuoteController(QuoteService quotes, SuggestionService suggestions) {
         this.quotes = quotes;
+        this.suggestions = suggestions;
+    }
+
+    /**
+     * Proposals for the fields the user does not have to fill in: every EU port priced door to door for this car and
+     * address (cheapest first), road distances, delivery mode, repair and insurance amounts.
+     */
+    @PostMapping("/suggestions")
+    public SuggestionService.Suggestions suggestions(@Valid @RequestBody CalculationRequest request) {
+        return suggestions.suggest(request);
     }
 
     /** Called (debounced) on every wizard change. Rate-limited per IP at the gateway. */

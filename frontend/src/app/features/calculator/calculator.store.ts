@@ -2,14 +2,17 @@ import { isPlatformBrowser } from '@angular/common';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Injectable, PLATFORM_ID, computed, effect, inject, signal, untracked } from '@angular/core';
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
-import { EMPTY, Observable, catchError, distinctUntilChanged, map, of, switchMap, tap } from 'rxjs';
+import { EMPTY, Observable, catchError, debounceTime, distinctUntilChanged, map, of, switchMap, tap } from 'rxjs';
 import {
   ApiProblem,
   AuctionHouse,
   CalculationRequest,
+  DeliveryMode,
   OriginCountry,
+  Place,
   PublicQuoteView,
   RouteOptions,
+  Suggestions,
 } from '../../core/api/api.models';
 import { CarImportApi } from '../../core/api/carimport-api';
 import { EXCISE_THRESHOLD_CC, ORIGINS } from './calculator.options';
@@ -38,14 +41,18 @@ const DEFAULTS: WizardState = {
   buyerType: 'PRIVATE',
   customsProcedure: 'STANDARD_4000',
   displayCurrency: 'PLN',
-  deliveryMode: 'CAR_CARRIER',
+  deliveryMode: null,
   deliveryDistanceKm: null,
   pricePerKm: null,
   repairEstimate: null,
   insuranceEstimate: null,
   postImportServices: null,
+  destinationAddress: null,
+  destinationLat: null,
+  destinationLon: null,
 };
-const STORAGE_KEY = 'carimport.wizard.v2';
+const STORAGE_KEY = 'carimport.wizard.v3';
+const PORT_MODE_KEY = 'carimport.wizard.portMode';
 
 /**
  * Wizard state and the detailed landed-cost calculation, built on signals:
@@ -53,7 +60,12 @@ const STORAGE_KEY = 'carimport.wizard.v2';
  *   state (signal) ──► request (computed) ──► calculate() on the last step ──► result (signal)
  *        │                    └──► client-side hints (excise threshold, delivery availability) - instant
  *        ├──► route key (origin, EU port, destination) ──► GET /reference/options ──► options (toSignal)
+ *        ├──► suggestion key (all but the proposed fields), debounced ──► POST /quotes/suggestions ──► suggestions
  *        └──► persisted to sessionStorage (survives the Stripe cancel redirect)
+ *
+ * Nothing has to be typed: a null field means "use the calculator's proposal" (cheapest port for the address, road
+ * distance from it, delivery mode for the condition, repair and insurance amounts). The inputs show the proposal and
+ * typing in them overrides it; "use proposal" sets the field back to null.
  *
  * The free result has rounded scenario totals and item names only; amounts per line are in the paid report.
  */
@@ -71,7 +83,45 @@ export class CalculatorStore {
   /** The calculated quote is the one bought as a report or attached to a partner lead. */
   readonly frozenQuote = this.result;
 
-  readonly request = computed<CalculationRequest>(() => ({ ...this.state() }));
+  /** AUTO = the EU port follows the cheapest proposal; MANUAL = the user picked one. */
+  readonly portMode = signal<'AUTO' | 'MANUAL'>(restorePortMode());
+
+  /** Inputs that change the proposals - the proposed fields themselves and the port are left out. */
+  private readonly suggestionKey = computed(() => {
+    const { euPortCode, deliveryDistanceKm, repairEstimate, insuranceEstimate, ...rest } = this.state();
+    return JSON.stringify(rest);
+  });
+
+  readonly suggestionsLoading = signal(false);
+  readonly suggestions = toSignal(
+    (this.browser ? toObservable(this.suggestionKey) : EMPTY).pipe(
+      debounceTime(350),
+      distinctUntilChanged(),
+      tap(() => this.suggestionsLoading.set(true)),
+      switchMap(() => this.api.suggestions(untracked(() => this.state())).pipe(catchError(() => of(null)))),
+      tap(() => this.suggestionsLoading.set(false)),
+    ),
+    { initialValue: null as Suggestions | null },
+  );
+
+  /** The selected port as priced in the ranking (distance from the address, door-to-door total). */
+  readonly selectedPort = computed(() =>
+    this.suggestions()?.ports.find((p) => p.code === this.state().euPortCode) ?? null,
+  );
+
+  readonly proposedDeliveryMode = computed<DeliveryMode>(() =>
+    this.state().condition === 'RUN_AND_DRIVE' ? 'CAR_CARRIER' : 'TOW_TRUCK',
+  );
+  readonly deliveryMode = computed<DeliveryMode>(() => this.state().deliveryMode ?? this.proposedDeliveryMode());
+  readonly repairProposal = computed(() => this.suggestions()?.repairEstimate ?? null);
+  readonly insuranceProposal = computed(() => this.suggestions()?.insuranceEstimate ?? null);
+
+  /** What is sent: the user's overrides, and for the distance the routed one from the ranking. */
+  readonly request = computed<CalculationRequest>(() => {
+    const s = this.state();
+    const routed = s.destinationLat != null ? this.selectedPort()?.distanceKm ?? null : null;
+    return { ...s, deliveryDistanceKm: s.deliveryDistanceKm ?? routed };
+  });
 
   readonly origin = computed(() => ORIGINS.find((o) => o.code === this.state().originCountry)!);
   readonly auctionHouses = computed(() => this.origin().auctions);
@@ -130,10 +180,12 @@ export class CalculatorStore {
 
   readonly selectableServices = computed(() => (this.options()?.services ?? []).filter((s) => !s.statutory));
   readonly statutoryServices = computed(() => (this.options()?.services ?? []).filter((s) => s.statutory));
-  readonly roadRate = computed(() =>
-    this.options()?.delivery.find((d) => d.mode === (this.state().deliveryMode ?? 'CAR_CARRIER')),
+  readonly roadRate = computed(() => this.options()?.delivery.find((d) => d.mode === this.deliveryMode()));
+  /** Distance the calculation uses: own value, else from the address (ranking), else typical for the country. */
+  readonly proposedDistance = computed(
+    () => this.selectedPort()?.distanceKm ?? this.options()?.typicalDistanceKm ?? null,
   );
-  readonly effectiveDistance = computed(() => this.state().deliveryDistanceKm ?? this.options()?.typicalDistanceKm ?? null);
+  readonly effectiveDistance = computed(() => this.state().deliveryDistanceKm ?? this.proposedDistance());
 
   /** Services that will be included: the explicit choice, or the recommended defaults. */
   readonly chosenServices = computed(
@@ -149,15 +201,66 @@ export class CalculatorStore {
   });
 
   constructor() {
-    // a non-runner cannot be driven home on temporary plates
+    // a non-runner cannot be driven home on temporary plates - fall back to the proposal (tow truck)
     effect(() => {
       const runner = this.isRunner();
       untracked(() => {
         if (!runner && this.state().deliveryMode === 'SELF_DRIVE') {
-          this.patch({ deliveryMode: 'TOW_TRUCK' });
+          this.patch({ deliveryMode: null });
         }
       });
     });
+    // the port follows the cheapest door-to-door proposal until the user picks one
+    effect(() => {
+      const best = this.suggestions()?.recommendedPort;
+      untracked(() => {
+        if (best && this.portMode() === 'AUTO' && best !== this.state().euPortCode) {
+          this.patch({ euPortCode: best, deliveryDistanceKm: null });
+          if (this.step() === RESULT_STEP) {
+            this.calculate();
+          }
+        }
+      });
+    });
+  }
+
+  choosePort(code: string): void {
+    this.setPortMode('MANUAL');
+    this.patch({ euPortCode: code, deliveryDistanceKm: null });
+  }
+
+  useRecommendedPort(): void {
+    this.setPortMode('AUTO');
+    const best = this.suggestions()?.recommendedPort;
+    if (best) {
+      this.patch({ euPortCode: best, deliveryDistanceKm: null });
+    }
+  }
+
+  /** Delivery address from the search; the destination country follows the address. */
+  setAddress(place: Place | null): void {
+    if (!place) {
+      this.patch({ destinationAddress: null, destinationLat: null, destinationLon: null, deliveryDistanceKm: null });
+      return;
+    }
+    const countryChanged = place.countryCode !== this.state().destinationCountry;
+    this.patch({
+      destinationAddress: place.label,
+      destinationLat: place.lat,
+      destinationLon: place.lon,
+      destinationCountry: place.countryCode,
+      deliveryDistanceKm: null,
+      ...(countryChanged ? { pricePerKm: null, postImportServices: null } : {}),
+    });
+  }
+
+  private setPortMode(mode: 'AUTO' | 'MANUAL'): void {
+    this.portMode.set(mode);
+    try {
+      sessionStorage.setItem(PORT_MODE_KEY, mode);
+    } catch {
+      // storage unavailable
+    }
   }
 
   patch(changes: Partial<WizardState>): void {
@@ -231,6 +334,14 @@ export class CalculatorStore {
       return of(existing);
     }
     return this.api.createQuote(this.request()).pipe(tap((q) => this.result.set(q)));
+  }
+}
+
+function restorePortMode(): 'AUTO' | 'MANUAL' {
+  try {
+    return sessionStorage.getItem(PORT_MODE_KEY) === 'MANUAL' ? 'MANUAL' : 'AUTO';
+  } catch {
+    return 'AUTO';
   }
 }
 

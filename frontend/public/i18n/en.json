@@ -348,22 +348,36 @@
     "departureHint": "Pick a specific port if your forwarder has already named one.",
     "delivery": "Transport from the port to your door",
     "distance": "Distance from the port to your address",
-    "distanceHint": "We suggest a typical distance from {{port}}; enter your own for an exact result.",
     "pricePerKm": "Price per kilometre",
-    "tariff": "Market rate: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} loading (minimum {{minimum}} {{cur}}).",
-    "ownRate": "I have my own carrier quote",
     "tariffUnknown": "No per-km tariff for this country – a flat rate will be used.",
-    "repair": "Estimated repair cost (optional)",
-    "repairHintRunner": "E.g. small paint touch-ups, tyres, brake pads.",
-    "repairHintDamaged": "For damaged cars enter the workshop quote – hidden damage is counted separately as a risk.",
+    "repair": "Repair cost",
+    "repairHintRunner": "We propose a typical amount for this condition and title (paint, tyres). Have a workshop quote? Enter it.",
+    "repairHintDamaged": "We propose a typical repair amount for this condition (about 30–40% of the price). Have a workshop quote? Enter it – hidden damage is counted separately as a risk.",
     "afterImportLead": "Everything to do and pay between the port and number plates. Mandatory items are always included; you choose the rest.",
     "statutory": "Mandatory (official fees)",
     "optional": "Optional",
     "recommended": "recommended",
     "optionsLoading": "Loading services for your route…",
     "noServices": "We do not have a detailed registration price list for this country yet – the report lists the steps.",
-    "insurance": "Insurance for the first year (optional)",
-    "insuranceHint": "Enter your insurer’s quote so the report shows the full first-year cost."
+    "insurance": "First-year liability insurance",
+    "insuranceHint": "We propose the median liability offer for a newly registered car in this country. Have your own quote? Enter it.",
+    "address": "Delivery address",
+    "addressPlaceholder": "e.g. Kraków, Długa 5 or a postcode",
+    "addressChange": "Change",
+    "addressHint": "The only field you type. From the address we calculate the kilometres from every port and pick the cheapest.",
+    "portRankingAddress": "All {{count}} EU ports priced to your address – cheapest first.",
+    "portRankingCountry": "All {{count}} EU ports priced to the registration country – enter an address for exact kilometres.",
+    "portRankingLoading": "Pricing every EU port…",
+    "portCheapest": "cheapest",
+    "portAuto": "Back to the cheapest",
+    "portsAll": "Show all EU ports ({{count}})",
+    "portsLess": "Collapse the port list",
+    "days": "days",
+    "portRankingNote": "Door-to-door total, average scenario: freight, clearance and VAT in the port country, delivery to the address and after-import fees.",
+    "distanceRouted": "Road route from {{port}} to your address.",
+    "distanceEstimated": "Estimate from {{port}} to your address (straight line × 1.25).",
+    "distanceTypical": "Typical distance from {{port}} – enter the address above for an exact figure.",
+    "tariffShort": "Market: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} loading, min. {{minimum}} {{cur}}."
   },
   "layout": {
     "topbar": "Import cost calculator for the USA, Canada, Japan, UAE and UK — we price and ship your car to any EU country",
@@ -466,7 +480,7 @@
     },
     "ports": {
       "title": "The VAT rate depends on the port of clearance",
-      "text": "Clearing in Germany means 19% VAT instead of 23%, but you add a car carrier to Poland and pay excise separately at the tax office. The calculator shows which option is cheaper for your car.",
+      "text": "The calculator prices all 43 EU ports of clearance door to door: VAT in the port country, freight, delivery to your address and after-import fees. Clearing in Germany means 19% VAT instead of 23%, but you add a car carrier – a few examples below, the calculator compares the rest.",
       "port": "Port",
       "country": "Clearance country"
     },
@@ -570,8 +584,8 @@
         "label": "EU countries where you can register the car"
       },
       "n3": {
-        "value": "5",
-        "label": "clearance ports with VAT comparison"
+        "value": "43",
+        "label": "ports of clearance in 22 EU countries – we pick the cheapest for your address"
       },
       "n4": {
         "value": "4",
@@ -847,5 +861,17 @@
     "SHIPPING": "Shipping",
     "CUSTOMS": "Customs clearance",
     "REGISTRATION": "Registration"
+  },
+  "proposal": {
+    "tag": "Proposed",
+    "restore": "Use proposal",
+    "was": "proposal: {{value}} {{unit}}"
+  },
+  "region": {
+    "NORTH_SEA": "North Sea",
+    "BALTIC": "Baltic & Scandinavia",
+    "ATLANTIC": "Atlantic",
+    "WEST_MED": "Western Mediterranean",
+    "EAST_MED": "Adriatic, Aegean & Black Sea"
   }
 }

@@ -1,6 +1,7 @@
 package com.carimport.reference;
 
 import com.carimport.domain.CurrencyCode;
+import com.carimport.geo.GeoPoint;
 import jakarta.persistence.*;
 import java.math.BigDecimal;
 
@@ -14,7 +15,7 @@ public class EuPort {
     @Column(length = 5)
     private String code;
 
-    @Column(nullable = false, length = 64)
+    @Column(nullable = false, length = 80)
     private String name;
 
     /** ISO 3166-1 alpha-2 country of clearance. */
@@ -39,6 +40,21 @@ public class EuPort {
     @Column(nullable = false)
     private boolean active = true;
 
+    @Column(nullable = false)
+    private double latitude;
+
+    @Column(nullable = false)
+    private double longitude;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false, length = 16)
+    private Region region = Region.NORTH_SEA;
+
+    /** Sea area - decides which ocean lanes are cheap (Atlantic vs. Suez) and groups the port list. */
+    public enum Region {
+        NORTH_SEA, ATLANTIC, BALTIC, WEST_MED, EAST_MED
+    }
+
     protected EuPort() {
     }
 
@@ -53,6 +69,14 @@ public class EuPort {
         this.supportsProcedure4200 = supportsProcedure4200;
     }
 
+    public EuPort(String code, String name, String countryCode, BigDecimal unloadingFee, BigDecimal customsAgencyFee,
+                  CurrencyCode feeCurrency, boolean supportsProcedure4200, GeoPoint location, Region region) {
+        this(code, name, countryCode, unloadingFee, customsAgencyFee, feeCurrency, supportsProcedure4200);
+        this.latitude = location.lat();
+        this.longitude = location.lon();
+        this.region = region;
+    }
+
     public String getCode() { return code; }
     public String getName() { return name; }
     public String getCountryCode() { return countryCode; }
@@ -61,4 +85,10 @@ public class EuPort {
     public CurrencyCode getFeeCurrency() { return feeCurrency; }
     public boolean isSupportsProcedure4200() { return supportsProcedure4200; }
     public boolean isActive() { return active; }
+    public Region getRegion() { return region; }
+
+    /** Null for ports seeded without coordinates. */
+    public GeoPoint location() {
+        return latitude == 0 && longitude == 0 ? null : new GeoPoint(latitude, longitude);
+    }
 }

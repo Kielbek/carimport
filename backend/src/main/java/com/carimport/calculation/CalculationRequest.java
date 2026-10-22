@@ -11,6 +11,7 @@ import com.carimport.domain.ShippingMethod;
 import com.carimport.domain.TitleType;
 import com.carimport.domain.VehicleCategory;
 import com.carimport.domain.VehicleCondition;
+import com.carimport.geo.GeoPoint;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.AssertTrue;
 import jakarta.validation.constraints.DecimalMax;
@@ -22,17 +23,25 @@ import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.time.Year;
+import java.util.Optional;
 import java.util.Set;
 
 /**
  * Wizard input. The bid is in the origin country's currency (USD for USA, JPY for Japan, ...); repair and insurance
  * estimates are in the display currency.
  *
- * @param deliveryMode       port to home leg; null = car carrier
- * @param deliveryDistanceKm road distance from the EU port; null = typical distance for the destination country
+ * Every optional field has a proposal: null means "use what the calculator proposes", so the user only overrides
+ * what they know better.
+ *
+ * @param deliveryMode       port to home leg; null = car carrier for a runner, tow truck otherwise
+ * @param deliveryDistanceKm road distance from the EU port; null = from the address coordinates, else typical for the
+ *                           destination country
  * @param pricePerKm         own per-km price in the destination's tax currency; null = tariff
+ * @param repairEstimate     null = proposed from the condition and title; 0 = no repairs
+ * @param insuranceEstimate  null = typical first-year liability premium in the destination country; 0 = none
  * @param postImportServices optional after-import services to include (codes of selectable destination fees);
  *                           null = the recommended defaults
+ * @param destinationAddress delivery address as picked from the address search (shown in the report)
  */
 public record CalculationRequest(
         @NotNull OriginCountry originCountry,
@@ -58,12 +67,43 @@ public record CalculationRequest(
         @DecimalMin("0") @DecimalMax("100") BigDecimal pricePerKm,
         @DecimalMin("0") @DecimalMax("10000000") BigDecimal repairEstimate,
         @DecimalMin("0") @DecimalMax("1000000") BigDecimal insuranceEstimate,
-        @Size(max = 30) Set<@Pattern(regexp = "[A-Z_]{2,48}") String> postImportServices) {
+        @Size(max = 30) Set<@Pattern(regexp = "[A-Z_]{2,48}") String> postImportServices,
+        @Size(max = 200) String destinationAddress,
+        @DecimalMin("-90") @DecimalMax("90") Double destinationLat,
+        @DecimalMin("-180") @DecimalMax("180") Double destinationLon) {
 
     public static final int HISTORIC_MIN_AGE = 30;
 
     public DeliveryMode effectiveDeliveryMode() {
-        return deliveryMode == null ? DeliveryMode.CAR_CARRIER : deliveryMode;
+        if (deliveryMode != null) {
+            return deliveryMode;
+        }
+        return condition == null || condition == VehicleCondition.RUN_AND_DRIVE
+                ? DeliveryMode.CAR_CARRIER : DeliveryMode.TOW_TRUCK;
+    }
+
+    /** Coordinates of the delivery address, if one was picked. */
+    public Optional<GeoPoint> destinationPoint() {
+        return destinationLat == null || destinationLon == null
+                ? Optional.empty() : Optional.of(new GeoPoint(destinationLat, destinationLon));
+    }
+
+    /** The same car and buyer cleared in another port, with that port's door distance. */
+    public CalculationRequest withPort(String port, Integer distanceKm) {
+        return new CalculationRequest(originCountry, auctionHouse, titleType, pickupZone, departurePort, bidPrice,
+                vehicleCategory, fuelType, engineCc, productionYear, historicOriginalCondition, condition,
+                shippingMethod, port, destinationCountry, buyerType, customsProcedure, displayCurrency, deliveryMode,
+                distanceKm, pricePerKm, repairEstimate, insuranceEstimate, postImportServices, destinationAddress,
+                destinationLat, destinationLon);
+    }
+
+    /** The same request with the repair and insurance amounts left to the calculator's proposal. */
+    public CalculationRequest withProposedEstimates() {
+        return new CalculationRequest(originCountry, auctionHouse, titleType, pickupZone, departurePort, bidPrice,
+                vehicleCategory, fuelType, engineCc, productionYear, historicOriginalCondition, condition,
+                shippingMethod, euPortCode, destinationCountry, buyerType, customsProcedure, displayCurrency,
+                deliveryMode, deliveryDistanceKm, pricePerKm, null, null, postImportServices, destinationAddress,
+                destinationLat, destinationLon);
     }
 
     public boolean qualifiesAsHistoric(Year now) {

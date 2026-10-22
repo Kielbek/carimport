@@ -180,7 +180,12 @@ export class StepResult {
     const code = this.s().departurePort;
     return code ? (DEPARTURE_PORTS[code] ?? code) : this.translate.instant('result.cheapestPort');
   });
-  protected readonly euPort = computed(() => FALLBACK_PORTS.find((p) => p.code === this.s().euPortCode)?.name ?? this.s().euPortCode);
+  protected readonly euPort = computed(
+    () =>
+      this.store.selectedPort()?.name ??
+      FALLBACK_PORTS.find((p) => p.code === this.s().euPortCode)?.name ??
+      this.s().euPortCode,
+  );
 
   protected readonly labels = toSignal(
     this.translate.onLangChange.pipe(

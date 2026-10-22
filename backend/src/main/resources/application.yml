@@ -73,3 +73,8 @@ app:
       countries: [PL]
       locales: [pl, uk]
       priority: 3
+  geo:
+    geocoder-url: ${GEOCODER_URL:https://nominatim.openstreetmap.org}
+    router-url: ${ROUTER_URL:https://router.project-osrm.org}
+    user-agent: "carimport/1.0 (${CONTACT_EMAIL:kontakt@carimport.example})"
+    timeout: 4s

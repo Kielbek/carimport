@@ -259,10 +259,11 @@ export class HomePage {
 
   protected readonly ports = [
     { name: 'Bremerhaven', country: 'DE', vat: 19 },
-    { name: 'Hamburg', country: 'DE', vat: 19 },
     { name: 'Rotterdam', country: 'NL', vat: 21 },
-    { name: 'Antwerpen', country: 'BE', vat: 21 },
     { name: 'Gdynia', country: 'PL', vat: 23 },
+    { name: 'Klaipėda', country: 'LT', vat: 21 },
+    { name: 'Koper', country: 'SI', vat: 22 },
+    { name: 'Constanța', country: 'RO', vat: 21 },
   ];
 
   protected readonly plans: { key: string; featured: boolean }[] = [
