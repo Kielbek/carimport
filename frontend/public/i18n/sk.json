@@ -1,0 +1,1014 @@
+{
+  "affiliate": {
+    "CURRENCY_EXCHANGE": "Výhodnejšia výmena meny",
+    "CURRENCY_EXCHANGE_HINT": "Zaplaťte za auto bez bankových prirážok",
+    "FINANCING": "Leasing alebo úver",
+    "FINANCING_HINT": "Financujte dovoz aj dane",
+    "VIN_CHECK": "Overte históriu VIN",
+    "VIN_CHECK_HINT": "Škody, nájazd, záznamy o krádeži",
+    "sponsored": "Sponzorované",
+    "title": "Mohlo by sa vám hodiť"
+  },
+  "app": {
+    "headline": "Koľko vás dovezené auto naozaj bude stáť?",
+    "tagline": "Aukcie v USA, Kanade, Japonsku, Dubaji alebo Spojenom kráľovstve → clo, spotrebná daň a DPH v EÚ. Výsledok okamžite, bez registrácie."
+  },
+  "auction": {
+    "COPART": "Copart",
+    "DEALER": "Predajca / súkromná osoba",
+    "EMIRATES_AUCTION": "Emirates Auction",
+    "IAAI": "IAAI",
+    "USS": "USS Japonsko"
+  },
+  "buyer": {
+    "COMPANY": "Firma",
+    "PRIVATE": "Súkromná osoba"
+  },
+  "category": {
+    "MOTORCYCLE": "Motocykel",
+    "PASSENGER_CAR": "Osobné auto",
+    "PICKUP_TRUCK": "Pick-up",
+    "REGISTRATION": "Po dovoze a registrácia",
+    "SUV": "SUV",
+    "TAXES": "Clo a dane v EÚ",
+    "TRANSPORT": "Doprava a logistika",
+    "VAN": "Dodávka",
+    "VEHICLE": "Vozidlo a aukcia",
+    "RISK": "Riziká na ceste"
+  },
+  "condition": {
+    "ENGINE_STARTS": "Motor naštartuje",
+    "ENGINE_STARTS_HINT": "Nepôjde po vlastnej osi",
+    "NON_RUNNING": "Poškodené / Salvage",
+    "NON_RUNNING_HINT": "Potrebuje odťahovku s navijakom",
+    "RUN_AND_DRIVE": "Run & Drive",
+    "RUN_AND_DRIVE_HINT": "Naštartuje a jazdí"
+  },
+  "cost": {
+    "AUCTION_AGENT_COMMISSION": "Provízia exportného agenta",
+    "AUCTION_BUYER_FEE": "Aukčný poplatok kupujúceho",
+    "AUCTION_ENVIRONMENTAL_FEE": "Ekologický poplatok",
+    "AUCTION_EXPORT_DOCS": "Exportné doklady",
+    "AUCTION_GATE_FEE": "Poplatok za výjazd z areálu (gate fee)",
+    "AUCTION_RECYCLING_FEE": "Recyklačný poplatok (Japonsko)",
+    "AUCTION_SERVICE_FEE": "Servisný poplatok aukcie",
+    "AUCTION_TITLE_HANDLING_FEE": "Poplatok za spracovanie titulu",
+    "AUCTION_VIRTUAL_BID_FEE": "Poplatok za online príhoz",
+    "CARGO_INSURANCE": "Poistenie nákladu",
+    "CUSTOMS_AGENCY": "Colný deklarant",
+    "CUSTOMS_DUTY": "Clo",
+    "EXCISE_TAX": "Spotrebná daň",
+    "FORKLIFT_LOADING": "Nakládka vysokozdvižným vozíkom",
+    "IMPORT_VAT": "DPH pri dovoze",
+    "INDIVIDUAL_APPROVAL": "Individuálne schválenie (§21 StVZO)",
+    "INLAND_TRANSPORT": "Vnútrozemská doprava do prístavu",
+    "INTRA_EU_ACQUISITION_VAT": "DPH z nadobudnutia tovaru v rámci EÚ (reverse charge, odpočítateľná)",
+    "INTRA_EU_TRANSPORT": "Autoprepravník z prístavu do cieľovej krajiny",
+    "OCEAN_FREIGHT": "Námorná preprava",
+    "PORT_UNLOADING": "Vykládka a terminál v prístave",
+    "PURCHASE_PRICE": "Kúpna cena (víťazný príhoz)",
+    "RDW_INSPECTION": "Kontrola RDW",
+    "RECYCLING_FEE": "Recyklačný poplatok",
+    "REGISTRATION_FEE": "Registračné poplatky",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Nastavenie svetlometov (pravostranné riadenie)",
+    "SWORN_TRANSLATION": "Úradný preklad dokladov",
+    "TECHNICAL_INSPECTION": "Technická kontrola (STK)",
+    "US_LIGHTING_CONVERSION": "Prestavba osvetlenia (americká špecifikácia)",
+    "WINCH_CONTAINER_LOADING": "Nakládka do kontajnera navijakom",
+    "DELIVERY_CAR_CARRIER": "Autoprepravník z prístavu až k vám",
+    "DELIVERY_TOW_TRUCK": "Odťahovka z prístavu až k vám",
+    "DELIVERY_SELF_DRIVE": "Cesta domov po vlastnej osi na dočasné značky (palivo, značky, krátkodobé poistenie)",
+    "TECHNICAL_INSPECTION_IMPORT": "Technická kontrola dovezeného vozidla",
+    "REG_TEMPORARY_PERMIT": "Dočasné povolenie na prevádzku",
+    "REG_TEMPORARY_PLATES": "Dočasné evidenčné čísla",
+    "REG_CERTIFICATE": "Osvedčenie o evidencii",
+    "REG_PLATES": "Tabuľky s evidenčným číslom",
+    "REG_STICKER": "Kontrolná nálepka",
+    "REAR_FOG_LIGHT": "Montáž zadného hmlového svetla",
+    "SPEEDOMETER_KMH": "Prestavba tachometra na km/h",
+    "SERVICE_INSPECTION": "Servis a výmena kvapalín",
+    "GEOMETRY_ALIGNMENT": "Nastavenie geometrie",
+    "DETAILING": "Čistenie a detailing",
+    "EXPERT_VALUATION": "Znalecký posudok (napr. pre havarijné poistenie)",
+    "REPAIR_ESTIMATE": "Opravy (váš odhad)",
+    "INSURANCE_FIRST_YEAR": "Poistenie – prvý rok (vaša suma)",
+    "RISK_PORT_STORAGE": "Skladné v prístave (neskoré vyzdvihnutie, papiere)",
+    "RISK_CUSTOMS_INSPECTION": "Colná kontrola / röntgen kontajnera",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Spochybnenie colnej hodnoty (doplatok cla a DPH)",
+    "RISK_VESSEL_ROLLOVER": "Presun na neskoršiu loď (skladné v exportnom prístave)",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Poškodenie pri preprave – spoluúčasť poistenia",
+    "RISK_HIDDEN_DAMAGE": "Skryté vady neviditeľné na aukcii",
+    "RISK_TITLE_DELAY": "Oneskorenie titulu (ďalšie skladné)",
+    "RISK_EXPORT_DOCS_DELAY": "Oneskorenie exportných dokladov"
+  },
+  "doc": {
+    "billOfLading": "Konosament (Bill of Lading)",
+    "companyRegistryExtract": "Výpis z obchodného registra",
+    "customsDeclarationSad": "Colné vyhlásenie (JCD/SAD)",
+    "customsPowerOfAttorney": "Plnomocenstvo pre colného deklaranta",
+    "eoriNumber": "Číslo EORI dovozcu",
+    "evChargingPortAdapterNote": "Overte štandard nabíjacej zásuvky (NACS/CCS1 → CCS2)",
+    "historicExpertOpinion": "Znalecký posudok o historickom statuse",
+    "insurancePolicy": "Poistná zmluva na náklad",
+    "invoice": "Aukčná faktúra / kúpna zmluva",
+    "ownership": {
+      "japanExportCertificate": "Japonský exportný certifikát (deregistrácia)",
+      "title": "Originál titulu (doklad o vlastníctve)",
+      "uaeExportCertificate": "Exportný certifikát SAE (RTA)",
+      "v5c": "Britský technický preukaz V5C"
+    },
+    "pl": {
+      "exciseDeclarationAkcUs": "Priznanie k spotrebnej dani AKC-U/S a doklad o zaplatení",
+      "exciseExemptionConfirmation": "Potvrdenie o oslobodení od spotrebnej dane (EV)",
+      "recyclingFeeConfirmation": "Potvrdenie o zaplatení recyklačného poplatku"
+    },
+    "procedure4200VatIdAndProofOfTransport": "Colný režim 4200: IČ DPH kupujúceho v EÚ a doklad o preprave",
+    "registrationApplication": "Žiadosť o registráciu vozidla",
+    "salvageTitleRepairEvidence": "Dokumentácia opráv (salvage title)",
+    "swornTranslation": "Úradné preklady zahraničných dokladov",
+    "technicalInspection": "Protokol o technickej kontrole",
+    "transportInvoices": "Faktúry za dopravu a námornú prepravu",
+    "usExportAesItn": "Americké exportné hlásenie (AES/ITN)",
+    "vatPaymentProof": "Doklad o zaplatení DPH"
+  },
+  "error": {
+    "auction": {
+      "noSchedule": "Sadzobník aukčných poplatkov nie je k dispozícii.",
+      "unsupported": "Táto aukcia nie je podporovaná."
+    },
+    "excise": {
+      "rateNotFound": "Pre túto konfiguráciu neexistuje sadzba spotrebnej dane."
+    },
+    "port": {
+      "unknown": "Neznámy cieľový prístav."
+    },
+    "procedure4200": {
+      "notAvailableInPort": "Colný režim 4200 nie je v tomto prístave dostupný.",
+      "sameCountry": "Colný režim 4200 vyžaduje preclenie v inej krajine, než je cieľová krajina."
+    },
+    "route": {
+      "unavailable": "Pre tento výber nie je dostupná žiadna prepravná trasa."
+    },
+    "tariff": {
+      "notFound": "Vozidlo sa nepodarilo zatriediť do colného sadzobníka."
+    },
+    "taxProfile": {
+      "missing": "Pre vybranú krajinu nemáme daňové sadzby."
+    }
+  },
+  "fuel": {
+    "DIESEL": "Diesel",
+    "EV": "Elektro",
+    "HEV": "Hybrid",
+    "HYDROGEN": "Vodík",
+    "LPG": "LPG",
+    "MHEV": "Mild hybrid",
+    "PETROL": "Benzín",
+    "PHEV": "Plug-in hybrid"
+  },
+  "lead": {
+    "consentMarketing": "Posielajte mi ponuky a tipy k dovozu (nepovinné).",
+    "consentTransfer": "Súhlasím s odovzdaním mojich údajov a kalkulácie jednému overenému partnerovi na účely prípravy ponuky (čl. 6 ods. 1 písm. a) GDPR).",
+    "email": "E-mail",
+    "message": "Odkaz na aukciu alebo ďalšie podrobnosti",
+    "name": "Meno a priezvisko",
+    "phone": "Telefón (nepovinné)",
+    "submit": "Odoslať dopyt",
+    "subtitle": "CarImport.eu autá nedováža. Ak si to želáte, odovzdáme vašu kalkuláciu jednej overenej dovoznej firme, ktorá vám pripraví ponuku. Bez záväzkov.",
+    "thanks": "Ďakujeme!",
+    "thanksHint": "Dovozná firma sa vám ozve do 1 pracovného dňa.",
+    "title": "Dopyt u dovoznej firmy (nepovinné)"
+  },
+  "origin": {
+    "CANADA": "Kanada",
+    "JAPAN": "Japonsko",
+    "UAE": "SAE / Dubaj",
+    "UK": "Spojené kráľovstvo",
+    "USA": "USA"
+  },
+  "paywall": {
+    "blikHint": "Plaťte cez BLIK, Przelewy24 alebo kartou.",
+    "currency": "Mena platby",
+    "email": "E-mail (pošleme vám odkaz na report)",
+    "fullName": "Meno a priezvisko (uvedené v reporte)",
+    "pay": "Pokračovať na platbu",
+    "redirecting": "Presmerúvame…",
+    "secure": "Bezpečná platba cez Stripe. Údaje o karte nikdy neukladáme.",
+    "subtitle": "Presné sumy, základy dane a sadzby, doklady – v PDF na vaše meno.",
+    "terms": "Súhlasím s obchodnými podmienkami a žiadam o okamžité dodanie digitálneho obsahu, čím sa vzdávam práva na odstúpenie od zmluvy.",
+    "title": "Kompletný report dovozu"
+  },
+  "report": {
+    "amount": "Suma",
+    "back": "Späť na kalkulačku",
+    "base": "Základ",
+    "download": "Stiahnuť PDF",
+    "expired": "Platba nebola dokončená.",
+    "generating": "Generujeme PDF…",
+    "item": "Položka",
+    "rate": "Sadzba",
+    "refunded": "Za túto objednávku boli peniaze vrátené.",
+    "stage": "Fáza",
+    "title": "Report nákladov na dovoz vozidla",
+    "total": "Celkové náklady až k vám",
+    "waiting": "Overujeme vašu platbu…",
+    "delivery": "Doručenie",
+    "leadTime": "Čas do registrácie",
+    "days": "dní",
+    "scenarios": "Tri scenáre nákladov",
+    "timeline": "Časový plán",
+    "plan": "Čo robiť po dovoze – krok za krokom",
+    "step": "Krok",
+    "deadline": "Lehota",
+    "riskDetail": "Pravdepodobnosť {{p}} %, náklad, ak nastane: {{min}}–{{max}} {{cur}}",
+    "userAmount": "vami zadaná suma",
+    "scenarioMethod": "Priemerný scenár započítava riziká ako očakávanú hodnotu (pravdepodobnosť × stredný náklad); pesimistický predpokladá, že nastanú všetky riziká v hornej výške nákladov."
+  },
+  "result": {
+    "chart": "Štruktúra nákladov",
+    "exciseIncluded": "Vrátane spotrebnej dane",
+    "fx": "Kurzy NBP k {{date}}",
+    "paid1": "Presné aukčné poplatky",
+    "paid2": "Clo, spotrebná daň a DPH",
+    "paid3": "Zoznam dokladov",
+    "paid4": "Osobný PDF report",
+    "partner": "Chcete ponuku od dovoznej firmy?",
+    "rangeHint": "Rozpätie zohľadňuje výkyvy kurzov a cien námornej prepravy.",
+    "title": "Odhadované náklady až k vám",
+    "transit": "{{days}} dní na mori",
+    "unlock": "Odomknúť kompletný report – {{price}}",
+    "updating": "Aktualizujeme…",
+    "short": "Celkové náklady",
+    "calculating": "Počítame každú položku a scenár…",
+    "edit": "Zmeniť zadanie",
+    "structure": "Štruktúra nákladov (priemerný scenár)",
+    "timeline": "Čas: {{min}}–{{max}} dní do registrácie",
+    "included": "Čo je zahrnuté",
+    "risks": "Čo sa môže stať cestou",
+    "risksLead": "Každé riziko má pravdepodobnosť a rozpätie nákladov. Priemerný scenár ich započítava pomerne, pesimistický v plnej výške. Sumy nájdete v reporte.",
+    "probability": "Pravdepodobnosť",
+    "reportEyebrow": "Report „od dverí k dverám“",
+    "reportTitle": "Každá položka na cent – v troch scenároch",
+    "reportItem1": "Aukčné poplatky, doprava, námorná preprava a poistenie",
+    "reportItem2": "Clo, spotrebná daň a DPH so základmi a sadzbami",
+    "reportItem3": "Doručenie: km × sadzba, nakládka, minimum",
+    "reportItem4": "Registračné poplatky a služby po dovoze",
+    "reportItem5": "Riziká v sumách: optimistický, priemerný, pesimistický scenár",
+    "reportItem6": "Plán krok za krokom s lehotami a zoznamom dokladov",
+    "cheapestPort": "najlacnejší prístav"
+  },
+  "shipping": {
+    "CONTAINER_EXCLUSIVE": "Vlastný kontajner",
+    "CONTAINER_SHARED": "Zdieľaný kontajner",
+    "RORO": "RoRo"
+  },
+  "title": {
+    "CLEAN": "Clean title (čistý titul)",
+    "SALVAGE": "Salvage / Neopraviteľné"
+  },
+  "validation": {
+    "auctionHouse": {
+      "notInOrigin": "Táto aukcia vo vybranej krajine nepôsobí."
+    },
+    "engineCc": {
+      "required": "Zadajte, prosím, zdvihový objem motora."
+    },
+    "procedure4200": {
+      "companyOnly": "Colný režim 4200 je dostupný iba firmám s platným IČ DPH v EÚ."
+    }
+  },
+  "warning": {
+    "dealer": {
+      "verifyExportDocuments": "Pri kúpe od predajcu sa uistite, že dodá exportné doklady."
+    },
+    "historic": {
+      "expertOpinionRequired": "Status historického vozidla (0 % cla) vyžaduje znalecký posudok a colný úrad ho môže spochybniť."
+    },
+    "intraEuTransport": {
+      "notPriced": "Chýba cena autoprepravníka z prístavu do cieľovej krajiny – náklad nie je zahrnutý."
+    },
+    "newMeansOfTransport": {
+      "vatInDestination": "Nový dopravný prostriedok (≤ 6 mesiacov alebo ≤ 6000 km): DPH sa odvádza aj v krajine registrácie."
+    },
+    "nl": {
+      "bpmNotIncluded": "Holandská registračná daň BPM nie je zahrnutá."
+    },
+    "pl": {
+      "clearedForOtherMemberState": "Preclenie v Poľsku na registráciu v inej krajine – overte registračné dane v cieľovej krajine.",
+      "exciseDeclarationWithin14Days": "Poľská spotrebná daň sa platí na daňovom úrade (AKC-U/S) do 14 dní od príchodu.",
+      "pickupMayBeReclassified": "Pick-up registrovaný ako osobné auto môže podliehať spotrebnej dani – overte homologizáciu."
+    },
+    "procedure4200": {
+      "reverseChargeDeductible": "Colný režim 4200: DPH si priznáte sami v cieľovej krajine (reverse charge, pre platiteľov DPH neutrálne)."
+    },
+    "registrationTax": {
+      "notModelled": "Registračná daň cieľovej krajiny zatiaľ nie je v kalkulácii zahrnutá."
+    },
+    "delivery": {
+      "portPickup": "Zvolené vyzdvihnutie v prístave – cestná doprava domov nie je zahrnutá.",
+      "selfDriveNotRunning": "Nepojazdné auto nemožno prepraviť po vlastnej osi na dočasné značky – zvoľte odťahovku."
+    }
+  },
+  "wizard": {
+    "auction": "Aukcia",
+    "back": "Späť",
+    "bid": "Víťazný príhoz",
+    "buyer": "Kupujúci",
+    "category": "Typ vozidla",
+    "condition": "Stav vozidla",
+    "destination": "Krajina registrácie",
+    "engineCc": "Zdvihový objem motora",
+    "exciseRate": "Spotrebná daň PL: {{rate}} %",
+    "exciseWarning": "Nad 2000 cm³ vyskočí spotrebná daň z {{from}} % na {{to}} % – rozdiel často robí tisíce!",
+    "finish": "Kompletný report",
+    "forklift": "vysokozdvižný vozík / navijak",
+    "fuel": "Pohon",
+    "historic": "Historické vozidlo v originálnom stave",
+    "historicHint": "30+ rokov, bez úprav: 0 % cla a znížená DPH.",
+    "next": "Ďalej",
+    "origin": "Kupujem z",
+    "port": "Prístav preclenia v EÚ",
+    "procedure4200": "Colný režim 4200",
+    "procedure4200Hint": "Pre firmy registrované pre DPH v EÚ: bez DPH na hranici, reverse charge v cieľovej krajine.",
+    "shipping": "Spôsob námornej prepravy",
+    "step1": "Odkiaľ",
+    "step2": "Vozidlo",
+    "step3": "Stav a cena",
+    "title": "Typ titulu",
+    "year": "Rok výroby",
+    "zone": "Umiestnenie areálu (štát / provincia)",
+    "zoneOther": "Iné / neviem",
+    "advanced": "Pokročilé možnosti",
+    "step4": "Cieľ a doručenie",
+    "step5": "Po dovoze",
+    "step6": "Report nákladov",
+    "calculate": "Vypočítať celkové náklady",
+    "departurePort": "Prístav odplávania",
+    "departureAuto": "Automaticky – najlacnejšia trasa",
+    "departureHint": "Zvoľte konkrétny prístav, ak vám ho už špeditér určil.",
+    "delivery": "Doprava z prístavu až k vám",
+    "distance": "Vzdialenosť z prístavu na vašu adresu",
+    "pricePerKm": "Cena za kilometer",
+    "tariffUnknown": "Pre túto krajinu nemáme sadzbu za km – použije sa paušál.",
+    "repair": "Náklady na opravu",
+    "repairHintRunner": "Navrhujeme obvyklú sumu pre tento stav a titul (lak, pneumatiky). Máte ponuku z dielne? Zadajte ju.",
+    "repairHintDamaged": "Navrhujeme obvyklú sumu opravy pre tento stav (zhruba 30–40 % ceny). Máte ponuku z dielne? Zadajte ju – skryté vady počítame zvlášť ako riziko.",
+    "afterImportLead": "Všetko, čo treba vybaviť a zaplatiť medzi prístavom a evidenčnými číslami. Povinné položky sú vždy zahrnuté, zvyšok si vyberiete sami.",
+    "statutory": "Povinné (úradné poplatky)",
+    "optional": "Voliteľné",
+    "recommended": "odporúčané",
+    "optionsLoading": "Načítavame služby pre vašu trasu…",
+    "noServices": "Pre túto krajinu zatiaľ nemáme podrobný cenník registrácie – report uvádza jednotlivé kroky.",
+    "insurance": "PZP na prvý rok",
+    "insuranceHint": "Navrhujeme medián ponúk PZP pre novo registrované auto v tejto krajine. Máte vlastnú ponuku? Zadajte ju.",
+    "address": "Adresa doručenia",
+    "addressPlaceholder": "napr. Bratislava, Dlhá 5 alebo PSČ",
+    "addressChange": "Zmeniť",
+    "addressHint": "Jediné pole, ktoré vypĺňate. Z adresy vypočítame kilometre z každého prístavu a vyberieme najlacnejší.",
+    "portRankingAddress": "Všetkých {{count}} prístavov EÚ nacenených na vašu adresu – od najlacnejšieho.",
+    "portRankingCountry": "Všetkých {{count}} prístavov EÚ nacenených do krajiny registrácie – pre presné kilometre zadajte adresu.",
+    "portRankingLoading": "Naceňujeme všetky prístavy EÚ…",
+    "portCheapest": "najlacnejší",
+    "portAuto": "Späť na najlacnejší",
+    "portsAll": "Zobraziť všetky prístavy EÚ ({{count}})",
+    "portsLess": "Zbaliť zoznam prístavov",
+    "days": "dní",
+    "portRankingNote": "Spolu „od dverí k dverám“, priemerný scenár: námorná preprava, preclenie a DPH v krajine prístavu, doručenie na adresu a poplatky po dovoze.",
+    "distanceRouted": "Cestná trasa z {{port}} na vašu adresu.",
+    "distanceEstimated": "Odhad z {{port}} na vašu adresu (vzdušná čiara × 1,25).",
+    "distanceTypical": "Obvyklá vzdialenosť z {{port}} – pre presný údaj zadajte adresu vyššie.",
+    "tariffShort": "Trh: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} nakládka, min. {{minimum}} {{cur}}."
+  },
+  "layout": {
+    "topbar": "Nezávislá kalkulačka nákladov na dovoz áut z USA, Kanady, Japonska, SAE a Spojeného kráľovstva do 27 krajín EÚ",
+    "forBusiness": "Pre dovozné firmy",
+    "home": "Domov",
+    "nav": "Hlavná navigácia",
+    "calculator": "Kalkulačka",
+    "howItWorks": "Ako to funguje",
+    "pricing": "Cenník",
+    "faq": "Časté otázky",
+    "cta": "Vypočítať náklady",
+    "menu": "Menu",
+    "close": "Zavrieť",
+    "breadcrumb": "Omrvinková navigácia",
+    "themeLight": "Prepnúť na svetlý motív",
+    "themeDark": "Prepnúť na tmavý motív",
+    "about": "O nás",
+    "why": "Prečo my",
+    "what": "Čo počítame",
+    "ctaHint": "Zadarmo, bez registrácie",
+    "language": "Jazyk"
+  },
+  "footer": {
+    "about": "Nezávislá kalkulačka nákladov na dovoz áut z krajín mimo EÚ. Autá nepredávame ani nedovážame – počítame, koľko naozaj stoja.",
+    "calculators": "Kalkulačky dovozu",
+    "importFrom": {
+      "USA": "Auto z USA",
+      "CANADA": "Auto z Kanady",
+      "JAPAN": "Auto z Japonska",
+      "UAE": "Auto z Dubaja (SAE)",
+      "UK": "Auto zo Spojeného kráľovstva"
+    },
+    "service": "Služba",
+    "privacy": "Zásady ochrany osobných údajov",
+    "language": "Jazyk",
+    "payments": "Platby cez Stripe (karta, BLIK, Przelewy24). Údaje o karte nikdy neukladáme.",
+    "rights": "Všetky práva vyhradené.",
+    "disclaimer": "Výpočty majú informatívny charakter a nie sú colným rozhodnutím ani daňovým poradenstvom."
+  },
+  "cookies": {
+    "title": "Cookies",
+    "text": "Používame nevyhnutné cookies na prevádzku webu a s vaším súhlasom aj analytické cookies. Podrobnosti:",
+    "accept": "Prijať všetko",
+    "necessary": "Iba nevyhnutné"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Kalkulačka dovozu áut",
+      "title1": "Poznajte náklady na dovoz",
+      "title2": "skôr, než prihodíte",
+      "lead": "Nezávislá kalkulačka, ktorá vám za minútu ukáže celkové náklady na dovoz auta z USA, Kanady, Japonska, SAE alebo Spojeného kráľovstva – od aukčnej ceny až po evidenčné čísla vo vašej krajine.",
+      "cta": "Vypočítať zadarmo",
+      "secondary": "Čo presne počítame",
+      "visual": "Čierny Ford Mustang v žltom neónovom svetle na pozadí americkej vlajky",
+      "point1": "Okamžitý odhad – bez registrácie, bez telefonátu, bez čakania na ponuku",
+      "point2": "Vyše 40 nákladových položiek, 43 prístavov EÚ a dnešné kurzy",
+      "point3": "Nepredávame autá ani neberieme provízie – čísla sú poctivé"
+    },
+    "how": {
+      "eyebrow": "Ako to funguje",
+      "title": "Od nápadu ku konečnej sume v štyroch krokoch",
+      "s1": {
+        "title": "Kde kupujete",
+        "text": "USA, Kanada, Japonsko, SAE alebo Spojené kráľovstvo – a aukcia, alebo predajca."
+      },
+      "s2": {
+        "title": "Aké auto",
+        "text": "Typ, palivo, objem motora, rok a stav – podľa nich sa počítajú dane."
+      },
+      "s3": {
+        "title": "Vaša adresa",
+        "text": "Jediné pole, ktoré vypĺňate. Vypočítame kilometre a najlacnejší prístav."
+      },
+      "s4": {
+        "title": "Výsledok a report",
+        "text": "Tri scenáre zadarmo a PDF presné na cent, keď budete pripravení kúpiť."
+      },
+      "step": "Krok"
+    },
+    "costs": {
+      "eyebrow": "Z čoho sa skladá cena",
+      "title": "Clo, spotrebná daň a DPH počítané v rovnakom poradí ako na colnici",
+      "lead": "Každá daň je základom pre ďalšiu, preto na poradí záleží. Prístav preclenia určuje sadzbu DPH, krajina registrácie určuje spotrebnú daň.",
+      "cif": {
+        "title": "Colná hodnota (CIF)",
+        "formula": "cena + aukčný poplatok + doprava + námorná preprava + poistenie",
+        "text": "Všetko, čo zaplatíte, kým auto dorazí do prístavu v EÚ."
+      },
+      "duty": {
+        "title": "Clo (TARIC)",
+        "formula": "CIF × 10 % osobné autá · 22 % pick-upy · 0 % veterány",
+        "text": "Sadzba závisí od kódu HS; motocykle 6–8 %."
+      },
+      "excise": {
+        "title": "Spotrebná daň (PL)",
+        "formula": "(CIF + clo) × 3,1 % do 2,0 l · 18,6 % nad",
+        "text": "Hybridy 1,55 % / 9,3 %, elektromobily 0 %. Platí sa v krajine registrácie."
+      },
+      "vat": {
+        "title": "DPH pri dovoze",
+        "formula": "(CIF + clo + spotrebná daň* + vykládka) × sadzba krajiny preclenia",
+        "text": "*Spotrebná daň sa započítava iba pri preclení v krajine registrácie."
+      }
+    },
+    "ports": {
+      "title": "Sadzba DPH závisí od prístavu preclenia",
+      "text": "Kalkulačka nacení všetkých 43 prístavov preclenia v EÚ „od dverí k dverám“: DPH v krajine prístavu, námornú prepravu, doručenie na vašu adresu a poplatky po dovoze. Preclenie v Nemecku znamená 19 % DPH namiesto 23 %, ale pripočítate autoprepravník – nižšie je niekoľko príkladov, zvyšok porovná kalkulačka.",
+      "port": "Prístav",
+      "country": "Krajina preclenia"
+    },
+    "pricing": {
+      "eyebrow": "Cenník",
+      "title": "Začnite zadarmo, plaťte len za istotu"
+    },
+    "final": {
+      "title": "Vypočítajte si dovoz za minútu",
+      "text": "Bez registrácie, bez záväzkov. Ak vyjde auto príliš draho, práve ste ušetrili. Ak sa oplatí, prihadzujete pokojne a s vedomím celkových nákladov.",
+      "title1": "Overte si to pred kúpou.",
+      "title2": "Zaberie to minútu.",
+      "cta": "Vypočítať náklady na dovoz",
+      "about": "Kto sme"
+    },
+    "strip": {
+      "brand": {
+        "title": "CarImport.eu —",
+        "text": "nezávislá kalkulačka dovozu"
+      },
+      "instant": {
+        "title": "Výsledok za minútu",
+        "text": "Zadáte iba adresu, zvyšok navrhneme"
+      },
+      "items": {
+        "title": "40+ nákladových položiek",
+        "text": "Od aukcie po registráciu a riziká"
+      },
+      "ports": {
+        "title": "43 prístavov EÚ",
+        "text": "Pre vašu adresu vyberieme najlacnejší"
+      }
+    },
+    "map": {
+      "eyebrow": "Dovozné trasy",
+      "title": "Z prístavov celého sveta priamo do EÚ",
+      "lead": "Exportné prístavy v USA, Kanade, Japonsku, SAE a Spojenom kráľovstve a trasy cez Panamu, Suez a Gibraltár do prístavov preclenia v EÚ.",
+      "aria": "Mapa námorných trás z USA, Kanady, Japonska, SAE a Spojeného kráľovstva do prístavov EÚ",
+      "eu": "Európska únia",
+      "legendEu": "Krajiny EÚ (registrácia)",
+      "legendOrigin": "Krajiny nákupu",
+      "legendRoute": "Námorná trasa",
+      "scroll": "Potiahnite prstom a uvidíte celú mapu",
+      "days": "dní"
+    },
+    "numbers": {
+      "eyebrow": "CarImport.eu v číslach",
+      "title": "Čísla za každou kalkuláciou",
+      "n1": {
+        "value": "5",
+        "label": "krajín pôvodu: USA, Kanada, Japonsko, SAE a Spojené kráľovstvo"
+      },
+      "n2": {
+        "value": "27",
+        "label": "krajín EÚ, kde môžete auto zaregistrovať"
+      },
+      "n3": {
+        "value": "43",
+        "label": "prístavov preclenia v 22 krajinách EÚ – pre vašu adresu vyberieme najlacnejší"
+      },
+      "n4": {
+        "value": "4",
+        "label": "jazyky: poľština, angličtina, nemčina, ukrajinčina"
+      }
+    },
+    "why": {
+      "eyebrow": "Prečo ju používať",
+      "title": "Vedzte, koľko zaplatíte – skôr, než kliknete na „prihodiť“",
+      "lead": "Najdrahšou časťou dovozu sú náklady, o ktorých vám pred kúpou nikto nepovedal. Kalkulačka ich odhalí skôr, než minete prvý dolár.",
+      "preview": {
+        "tag": "Kalkulačka",
+        "title": "Celkové náklady „od dverí k dverám“ v šiestich krokoch",
+        "text": "Aukcia, doprava, clo, spotrebná daň, DPH, registrácia a riziká – v troch scenároch.",
+        "alt": "Snímka obrazovky kalkulačky nákladov na dovoz"
+      },
+      "instant": {
+        "tag": "Okamžite",
+        "title": "Odhad za minútu, nie za dva dni",
+        "text": "Žiadne kontaktné formuláre, žiadne čakanie na telefonát obchodníka. Každé pole je predvyplnené návrhom – meníte len to, čo viete lepšie."
+      },
+      "independent": {
+        "tag": "Nezávisle",
+        "title": "Nepredávame autá ani prepravu",
+        "text": "Nemáme žiadnu maržu od dopravcov ani aukcií, a preto nemáme dôvod náklady podhodnocovať. Každý dostane rovnaký výsledok."
+      },
+      "ports": {
+        "tag": "43 prístavov",
+        "title": "Najlacnejšia trasa na vašu adresu",
+        "text": "Naceníme každý prístav preclenia v EÚ „od dverí k dverám“ a ukážeme vám rozdiel."
+      },
+      "scenarios": {
+        "tag": "Scenáre",
+        "title": "Optimistický, priemerný, pesimistický",
+        "text": "Kurzy, oneskorenia a riziká na ceste – vidíte realistické rozpätie, nie jedno „magické“ číslo."
+      },
+      "after": {
+        "tag": "Po dovoze",
+        "title": "Aj registrácia a papierovačky",
+        "text": "Technická kontrola, preklady, prestavba osvetlenia, úradné poplatky a poistenie – vrátane lehôt."
+      },
+      "report": {
+        "tag": "PDF report",
+        "title": "Každý cent čierne na bielom",
+        "text": "Za 4,99 € report na vaše meno so všetkými sadzbami, základmi dane a plánom krokov po dovoze."
+      }
+    },
+    "what": {
+      "eyebrow": "Čo započítavame",
+      "title": "Všetko, čo tvorí cenu auta pred vašimi dverami",
+      "lead": "Väčšina kalkulačiek skončí pri cle a DPH. My počítame celú cestu – od aukčného areálu až po evidenčné čísla – a pridávame aj to, čo sa môže pokaziť.",
+      "cta": "Vyskúšajte to na svojom aute",
+      "purchase": {
+        "title": "Kúpa",
+        "i1": "Víťazný príhoz alebo cena predajcu",
+        "i2": "Poplatky Copart, IAAI, Manheim, USS podľa cenových pásiem",
+        "i3": "Clean / salvage title a stav vozidla",
+        "i4": "Odhad nákladov na opravu"
+      },
+      "transport": {
+        "title": "Doprava",
+        "i1": "Z aukčného areálu do exportného prístavu",
+        "i2": "Preprava v kontajneri alebo RoRo",
+        "i3": "Poistenie nákladu",
+        "i4": "Vykládka a terminálové poplatky",
+        "i5": "Odťahovka alebo autoprepravník na vašu adresu"
+      },
+      "taxes": {
+        "title": "Clo a dane",
+        "i1": "Clo podľa TARIC (10 %, pri pick-upoch 22 %)",
+        "i2": "Spotrebná daň podľa motora a paliva",
+        "i3": "DPH v krajine prístavu preclenia",
+        "i4": "Kurz centrálnej banky z toho istého dňa"
+      },
+      "after": {
+        "title": "Po dovoze",
+        "i1": "Technická kontrola a schválenie",
+        "i2": "Úradné preklady dokladov",
+        "i3": "Registrácia, evidenčné čísla a úradné poplatky",
+        "i4": "Prestavba osvetlenia a tachometra",
+        "i5": "PZP na prvý rok"
+      },
+      "risks": {
+        "title": "Riziká",
+        "i1": "Skladné v prístave a oneskorené lode",
+        "i2": "Colná kontrola a overenie hodnoty",
+        "i3": "Skryté vady a poškodenie pri preprave",
+        "i4": "Oneskorený titul a exportné doklady"
+      }
+    },
+    "compare": {
+      "eyebrow": "Porovnanie",
+      "title": "Prečo nestačí odhad „od oka“",
+      "self": "Na vlastnú päsť",
+      "broker": "Ponuka sprostredkovateľa",
+      "r1": "Aukčné poplatky podľa aktuálnych pásiem",
+      "r2": "Porovnanie všetkých 43 prístavov EÚ",
+      "r3": "Dnešný kurz + rezerva na výkyvy",
+      "r4": "Spotrebná daň a DPH podľa krajiny preclenia a registrácie",
+      "r5": "Riziká a tri scenáre nákladov",
+      "r6": "Registrácia a papierovačky po dovoze",
+      "r7": "Žiadna marža ani skrytá provízia",
+      "note": "~ znamená „zvyčajne čiastočne“. Ponuky sprostredkovateľov často obsahujú ich maržu a neukazujú rozpis nákladov."
+    }
+  },
+  "pricing": {
+    "popular": "Najobľúbenejšie",
+    "free": {
+      "name": "Rýchly odhad",
+      "price": "Zadarmo",
+      "f1": "Rozpätie celkových nákladov",
+      "f2": "Graf štruktúry nákladov",
+      "f3": "Čas prepravy a upozornenia",
+      "f4": "Bez registrácie",
+      "cta": "Vypočítať zadarmo"
+    },
+    "report": {
+      "name": "PDF report",
+      "price": "4,99 €",
+      "f1": "Každá položka na cent",
+      "f2": "Aukčné poplatky podľa cenových pásiem",
+      "f3": "Clo, spotrebná daň a DPH so základmi a sadzbami",
+      "f4": "Zoznam dokladov a osobné PDF",
+      "cta": "Vypočítať a odomknúť report"
+    },
+    "partner": {
+      "name": "Pre dovozné firmy",
+      "price": "Za prijatý dopyt",
+      "f1": "Kupujúci s hotovou kalkuláciou auta",
+      "f2": "Súhlas podľa GDPR získaný pred odovzdaním",
+      "f3": "Iba dopyty, ktoré prijmete",
+      "f4": "Bez predplatného",
+      "cta": "Staňte sa partnerom"
+    }
+  },
+  "faq": {
+    "eyebrow": "Otázky a odpovede",
+    "title": "Často kladené otázky",
+    "lead": "Nenašli ste odpoveď? Kalkulačka ukazuje všetky predpoklady a PDF report každú sadzbu a základ.",
+    "q1": {
+      "q": "Koľko je clo na auto z USA?",
+      "a": "Pri osobných autách (KN 8703) je clo 10 % z colnej hodnoty CIF, pri pick-upoch a ľahkých nákladných vozidlách (8704) 22 % a pri motocykloch 6–8 %. Zberateľské vozidlá staršie ako 30 rokov v originálnom stave môžu mať nárok na 0 %. Colnú hodnotu tvorí kúpna cena plus aukčné poplatky, doprava na hranicu EÚ a poistenie."
+    },
+    "q2": {
+      "q": "Aká spotrebná daň sa platí pri dovoze auta do Poľska?",
+      "a": "Autá so spaľovacím motorom do 2000 cm³: 3,1 %, nad 2000 cm³: 18,6 %. Hybridy: 1,55 % do 2000 cm³ a 9,3 % do 3500 cm³. Plug-in hybridy do 2000 cm³ a elektromobily sú oslobodené. Základom je colná hodnota plus clo, prepočítané na PLN."
+    },
+    "q3": {
+      "q": "Kde je najlepšie auto precliť: v Bremerhavene, Rotterdame, alebo Gdyni?",
+      "a": "DPH pri dovoze vyrubuje krajina preclenia: 19 % v Nemecku, 21 % v Holandsku a 23 % v Poľsku. Preclenie v Nemecku znižuje DPH, ale pripočítate autoprepravník do Poľska a spotrebnú daň zaplatíte zvlášť na daňovom úrade do 14 dní. Kalkulačka porovná možnosti pre vaše auto."
+    },
+    "q4": {
+      "q": "Čo je colný režim 4200?",
+      "a": "Ide o prepustenie do voľného obehu s oslobodením od DPH v krajine dovozu, ak auto smeruje priamo k platiteľovi DPH v inom členskom štáte EÚ. Kupujúci prizná DPH doma v režime reverse charge, takže je pre platiteľov DPH neutrálne. Súkromným osobám nie je dostupný."
+    },
+    "q5": {
+      "q": "Ako dlho trvá preprava do Európy?",
+      "a": "Z prístavov na východnom pobreží USA a v Kanade približne 2–3 týždne na mori, z Kalifornie asi 5 týždňov, z Japonska 6–7 týždňov, zo SAE 3–4 týždne a zo Spojeného kráľovstva niekoľko dní. K tomu pripočítajte dopravu z aukčného areálu do prístavu a preclenie."
+    },
+    "q6": {
+      "q": "Odkiaľ pochádzajú kurzy?",
+      "a": "Používame priemerné kurzy NBP, ktoré sa automaticky sťahujú každý pracovný deň. Keďže za auto platíte dni či týždne po kalkulácii, bezplatné rozpätie počíta s pohybom kurzov."
+    },
+    "q7": {
+      "q": "Čo obsahuje platený PDF report?",
+      "a": "Každú položku na cent: aukčné poplatky podľa pásiem, dopravu, colnú hodnotu, clo, spotrebnú daň a DPH so základmi a sadzbami, zoznam potrebných dokladov a osobné PDF na stiahnutie. Plaťte cez BLIK, kartou alebo Przelewy24."
+    },
+    "q8": {
+      "q": "Je výsledok kalkulačky záväzný?",
+      "a": "Nie. Ide o odhad založený na aktuálnych sadzbách a cenníkoch. Konečné sumy určí colný a daňový úrad, ktorý môže napríklad overiť colnú hodnotu. Report uvádza všetky predpoklady, takže je ľahké ho porovnať s úradným rozhodnutím."
+    },
+    "q9": {
+      "q": "Dováža CarImport.eu autá?",
+      "a": "Nie. Sme iba kalkulačka – autá nekupujeme, neprepravujeme ani nepreclievame a neberieme provízie od aukcií ani dopravcov. Vďaka tomu je odhad nezávislý. Ak chcete, môžete kalkuláciu odovzdať overenej dovoznej firme, ale vždy je to len vaša voľba."
+    }
+  },
+  "calc": {
+    "title": "Kalkulačka nákladov na dovoz auta",
+    "lead": "Šesť krokov: pôvod, vozidlo, stav, cieľ, po dovoze a report. Výsledok dostanete na konci – v troch scenároch.",
+    "currency": "Mena výsledku",
+    "progress": "Postup"
+  },
+  "seo": {
+    "home": {
+      "title": "Kalkulačka nákladov na dovoz auta – z USA, Japonska, Dubaja do EÚ | CarImport.eu",
+      "description": "Nezávislá kalkulačka dovozu auta z USA, Kanady, Japonska, SAE a Spojeného kráľovstva: aukcia, preprava, clo, spotrebná daň, DPH, registrácia a riziká. Okamžitý odhad, bez registrácie."
+    },
+    "calculator": {
+      "title": "Kalkulačka cla, spotrebnej dane a DPH pre dovezené autá | CarImport.eu",
+      "description": "Vyberte krajinu, aukciu, prístav a vozidlo — živá kalkulačka ukáže rozpätie a rozpis nákladov: cena, preprava, clo, spotrebná daň, DPH a registrácia."
+    },
+    "privacy": {
+      "title": "Zásady ochrany osobných údajov | CarImport.eu",
+      "description": "Ako CarImport.eu spracúva osobné údaje: platby, reporty, dopyty pre partnerov a cookies."
+    },
+    "about": {
+      "title": "O nás – nezávislá kalkulačka dovozu áut | CarImport.eu",
+      "description": "Kto sme, odkiaľ berieme dáta a ako zarábame. CarImport.eu autá nepredáva ani nedováža – poctivo a nezávisle počíta celkové náklady na dovoz."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Právne informácie",
+    "title": "Zásady ochrany osobných údajov",
+    "s1": {
+      "title": "Prevádzkovateľ",
+      "text": "Prevádzkovateľom osobných údajov je prevádzkovateľ CarImport.eu. V záležitostiach ochrany osobných údajov nás kontaktujte na {{email}}."
+    },
+    "s2": {
+      "title": "Aké údaje spracúvame",
+      "text": "Vstupy kalkulácie (bez osobných údajov) a pri kúpe reportu vaše meno a e-mail. Formulár pre partnerov navyše zhromažďuje telefónne číslo a správu. Údaje o platobných kartách nikdy nespracúvame — to robí Stripe."
+    },
+    "s3": {
+      "title": "Účely a právne základy",
+      "text": "Plnenie zmluvy o kúpe reportu (čl. 6 ods. 1 písm. b) GDPR), účtovné povinnosti (písm. c), odovzdanie vášho dopytu partnerovi na základe vášho súhlasu (písm. a) a analytika so súhlasom udeleným v cookie lište."
+    },
+    "s4": {
+      "title": "Príjemcovia",
+      "text": "Stripe Payments Europe (platby), naši poskytovatelia hostingu a e-mailu a — pri formulári pre partnerov — jedna overená dovozná firma, a to iba s vaším súhlasom."
+    },
+    "s5": {
+      "title": "Cookies",
+      "text": "Nevyhnutné cookies a úložisko prehliadača si pamätajú váš jazyk, motív, postup v kalkulačke a prístup ku kúpenému reportu. Analytika sa spúšťa až po kliknutí na „Prijať všetko“."
+    },
+    "s6": {
+      "title": "Vaše práva",
+      "text": "Máte právo na prístup, opravu, vymazanie, obmedzenie spracúvania, prenosnosť a namietanie, právo kedykoľvek odvolať súhlas a podať sťažnosť dozornému orgánu pre ochranu osobných údajov. Napíšte nám: {{email}}."
+    }
+  },
+  "delivery": {
+    "PORT_PICKUP": "Vyzdvihnutie v prístave",
+    "CAR_CARRIER": "Autoprepravník",
+    "TOW_TRUCK": "Odťahovka",
+    "SELF_DRIVE": "Na dočasné značky"
+  },
+  "scenario": {
+    "0": "Optimistický",
+    "1": "Priemerný",
+    "2": "Pesimistický"
+  },
+  "scenarioHint": {
+    "0": "Najnižšie sadzby, priaznivý kurz, nič sa nepokazí",
+    "1": "Obvyklé sadzby + riziká vážené pravdepodobnosťou",
+    "2": "Najvyššie sadzby, slabší kurz, riziká nastanú"
+  },
+  "timeline": {
+    "INLAND": "Vyzdvihnutie z areálu a doprava do prístavu",
+    "OCEAN": "Plavba (vr. čakania na loď)",
+    "CLEARANCE": "Vykládka a preclenie",
+    "DELIVERY": "Doručenie až k vám",
+    "REGISTRATION": "Príprava a registrácia"
+  },
+  "plan": {
+    "deadline": {
+      "beforeRelease": "Pred uvoľnením z prístavu",
+      "14days": "14 dní od príchodu do Poľska",
+      "beforeInspection": "Pred technickou kontrolou",
+      "beforeRegistration": "Pred registráciou",
+      "pl30days": "30 dní od dovozu (pokuta do 1 000 PLN)",
+      "fromRegistration": "Od registrácie / dočasných značiek",
+      "national": "Podľa predpisov krajiny registrácie",
+      "none": "Bez zákonnej lehoty"
+    },
+    "step": {
+      "clearance": {
+        "title": "Preclenie v prístave",
+        "text": "Colný deklarant podá colné vyhlásenie (JCD/SAD); vy zaplatíte clo a DPH pri dovoze. Potrebujete: faktúru, konosament, titul/exportný certifikát, EORI."
+      },
+      "pl": {
+        "excise": {
+          "title": "Priznanie a zaplatenie spotrebnej dane (AKC-U/S)",
+          "text": "Podajte na daňovom úrade (alebo online) a zaplaťte spotrebnú daň; potvrdenie je potrebné na registráciu."
+        },
+        "exciseExemption": {
+          "title": "Oznámenie o oslobodení od spotrebnej dane (elektromobil)",
+          "text": "Elektromobily sú oslobodené, ale priznanie AKC-U/S treba aj tak podať."
+        },
+        "inspection": {
+          "title": "Technická kontrola na stanici technickej kontroly",
+          "text": "Prvá kontrola dovezeného vozidla vrátane identifikácie VIN; výsledok sa zapisuje do centrálneho registra."
+        },
+        "recycling": {
+          "title": "Recyklačný poplatok 500 PLN",
+          "text": "Platí sa Národnému fondu ochrany životného prostredia pri prvej registrácii dovezeného auta."
+        },
+        "registration": {
+          "title": "Registrácia na úrade (dopravný inšpektorát)",
+          "text": "Žiadosť, doklad o vlastníctve s prekladom, spotrebná daň, technická kontrola, recyklačný poplatok, doklad o DPH/cle; dostanete dočasné povolenie a značky."
+        }
+      },
+      "translations": {
+        "title": "Úradné preklady",
+        "text": "Zahraničný titul/osvedčenie o evidencii, faktúra a exportný doklad – od úradného prekladateľa."
+      },
+      "lighting": {
+        "title": "Prestavba osvetlenia na normy EÚ",
+        "text": "Oranžové zadné smerovky, zadné hmlové svetlo, nastavenie svetlometov – bez toho auto technickou kontrolou neprejde."
+      },
+      "insurance": {
+        "title": "Povinné zmluvné poistenie (PZP)",
+        "text": "Povinné od registrácie; havarijné poistenie sa oplatí uzavrieť po znaleckom ocenení."
+      },
+      "de": {
+        "approval": {
+          "title": "Individuálne schválenie (§21 StVZO)",
+          "text": "Kompletná znalecká prehliadka (TÜV/DEKRA) pri autách z krajín mimo EÚ; potrebná na registráciu."
+        },
+        "registration": {
+          "title": "Registrácia (Zulassung)",
+          "text": "Číslo poistenia eVB, doklad o preclení, znalecký posudok, mandát SEPA na daň z motorových vozidiel."
+        }
+      },
+      "generic": {
+        "inspection": {
+          "title": "Technická kontrola / individuálne schválenie",
+          "text": "Rozsah závisí od krajiny – autá z krajín mimo EÚ často potrebujú individuálne schválenie."
+        },
+        "registrationTax": {
+          "title": "Národná registračná daň",
+          "text": "Napr. BPM v Holandsku, NoVA v Rakúsku, malus vo Francúzsku – overte si ju pred kúpou."
+        },
+        "registration": {
+          "title": "Registrácia vozidla",
+          "text": "Žiadosť s dokladom o preclení, technickou kontrolou a poistením."
+        }
+      },
+      "evCharging": {
+        "title": "Nabíjacia zásuvka",
+        "text": "Americké autá používajú NACS/CCS1 – potrebujete adaptér alebo prestavbu na zásuvku CCS2/Type 2."
+      }
+    }
+  },
+  "deliveryHint": {
+    "CAR_CARRIER": "Najlacnejšie pre pojazdné autá",
+    "TOW_TRUCK": "Samostatná odťahovka, aj pre nepojazdné autá",
+    "SELF_DRIVE": "Dočasné značky + poistenie; iba pojazdné autá",
+    "PORT_PICKUP": "Dopravu si zabezpečíte sami"
+  },
+  "serviceHint": {
+    "SWORN_TRANSLATION": "Titul, faktúra a exportný doklad",
+    "US_LIGHTING_CONVERSION": "Smerovky a svetlá v súlade s normami EÚ",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Auto s pravostranným riadením",
+    "REAR_FOG_LIGHT": "Vyžaduje sa pri technickej kontrole",
+    "SPEEDOMETER_KMH": "Tachometer v míľach – pohodlie a hodnota pri predaji",
+    "SERVICE_INSPECTION": "Olej, filtre, kvapaliny, brzdy po dlhej ceste",
+    "GEOMETRY_ALIGNMENT": "Odporúčané po opravách podvozku",
+    "DETAILING": "Umytie, čistenie interiéru, korekcia laku",
+    "EXPERT_VALUATION": "Užitočné pre havarijné poistenie a ďalší predaj"
+  },
+  "riskInfo": {
+    "RISK_PORT_STORAGE": "Terminál po uplynutí bezplatnej doby účtuje poplatok za každý deň, napr. keď sa oneskoria doklady alebo doprava.",
+    "RISK_CUSTOMS_INSPECTION": "Náhodná alebo cielená kontrola: vykládka kontajnera, röntgen, ďalšie terminálové poplatky.",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Ak sa cena zdá príliš nízka, colný úrad môže použiť vyššiu hodnotu – clo aj DPH stúpnu.",
+    "RISK_VESSEL_ROLLOVER": "Loď je preplnená a kontajner odpláva až ďalšou – ďalšie skladné v exportnom prístave.",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Poškodenie pri preprave kryje poistka, po odpočítaní spoluúčasti.",
+    "RISK_HIDDEN_DAMAGE": "Vady, ktoré na aukčných fotkách nevidíte – čím horší stav, tým vyššie riziko.",
+    "RISK_TITLE_DELAY": "Aukcia pošle titul neskoro – auto čaká v areáli alebo v prístave.",
+    "RISK_EXPORT_DOCS_DELAY": "Deregistrácia a exportné doklady trvajú dlhšie ako zvyčajne."
+  },
+  "docStage": {
+    "PURCHASE": "Kúpa",
+    "SHIPPING": "Preprava",
+    "CUSTOMS": "Preclenie",
+    "REGISTRATION": "Registrácia"
+  },
+  "proposal": {
+    "tag": "Návrh",
+    "restore": "Použiť návrh",
+    "was": "návrh: {{value}} {{unit}}"
+  },
+  "region": {
+    "NORTH_SEA": "Severné more",
+    "BALTIC": "Baltské more a Škandinávia",
+    "ATLANTIC": "Atlantik",
+    "WEST_MED": "Západné Stredomorie",
+    "EAST_MED": "Jadranské, Egejské a Čierne more"
+  },
+  "about": {
+    "eyebrow": "O nás",
+    "title1": "Počítame dovoz áut.",
+    "title2": "Autá nepredávame.",
+    "lead": "CarImport.eu je nezávislá kalkulačka nákladov na dovoz auta z krajín mimo Európskej únie. Vytvorili sme ju, aby každý – nielen obchodník s desaťročnou praxou – vedel už pred kúpou, koľko naozaj zaplatí.",
+    "story": {
+      "eyebrow": "Ako to začalo",
+      "title": "Z frustrácie zo skrytých nákladov",
+      "p1": "Auto z americkej aukcie vyzerá ako výhodná kúpa – kým nepripočítate aukčné poplatky, dopravu do prístavu, námornú prepravu, clo, spotrebnú daň, DPH, vykládku, odťahovku, preklady, technickú kontrolu a registráciu. Každá položka je „malá“, spolu však môžu cenu zdvojnásobiť.",
+      "p2": "Informácie sú roztrúsené v aukčných cenníkoch, colných sadzobníkoch, kurzových lístkoch a predpisoch 27 krajín. Ponuky sprostredkovateľov zvyčajne uvádzajú jedno číslo bez rozpisu – a s ich maržou vnútri.",
+      "p3": "Vytvorili sme nástroj, ktorý všetko spojí dohromady, počíta s aktuálnymi sadzbami a ukazuje každý predpoklad. Bez registrácie, bez telefonátu od obchodníka."
+    },
+    "role": {
+      "eyebrow": "Na rovinu o tom, čo sme",
+      "title": "Sme kalkulačka. Len kalkulačka.",
+      "is": "Čo sme",
+      "is1": "Nezávislá kalkulačka celkových nákladov na dovoz",
+      "is2": "Porovnanie 43 prístavov preclenia v EÚ pre vašu adresu",
+      "is3": "Zdroj podrobného PDF reportu so všetkými sadzbami",
+      "is4": "Zoznam krokov a dokladov po dovoze",
+      "isNot": "Čo nie sme",
+      "isNot1": "Nie sme dovozca ani predajca – autá nepredávame",
+      "isNot2": "Nezabezpečujeme prepravu ani preclenie",
+      "isNot3": "Žiadne provízie od aukcií, dopravcov ani colných deklarantov",
+      "isNot4": "Nie sme úrad ani daňový poradca – výsledok je odhad"
+    },
+    "data": {
+      "eyebrow": "Odkiaľ pochádzajú čísla",
+      "title": "Aktuálne sadzby, nie „zhruba“",
+      "lead": "Každá suma vo výsledku vychádza z konkrétnej sadzby, ktorú report uvádza. Dáta sa aktualizujú automaticky alebo pri každej zmene legislatívy.",
+      "customs": {
+        "title": "Colný sadzobník EÚ",
+        "text": "Colné sadzby podľa kódu KN (TARIC) pre osobné autá, pick-upy, motocykle a historické vozidlá."
+      },
+      "fx": {
+        "title": "Kurzy centrálnej banky",
+        "text": "Referenčné kurzy sťahované každý pracovný deň, s rezervou na výkyvy do okamihu platby."
+      },
+      "fees": {
+        "title": "Cenníky aukcií a dopravcov",
+        "text": "Pásma poplatkov Copart, IAAI, Manheim a USS, sadzby námornej prepravy, prístavné poplatky a ceny dopravy za km."
+      },
+      "law": {
+        "title": "Národné predpisy",
+        "text": "Spotrebná daň, sadzby DPH 27 krajín, registračné poplatky a povinné kontroly – s právnym základom v reporte."
+      }
+    },
+    "money": {
+      "eyebrow": "Ako zarábame",
+      "title": "Transparentne – pretože ide o dôveru",
+      "lead": "Výsledok kalkulačky nezávisí od toho, kto nám platí ani koľko. Zarábame tromi spôsobmi, všetkými otvorene:",
+      "m1": {
+        "title": "PDF report – 4,99 €",
+        "text": "Bezplatný výsledok ukazuje rozpätie a štruktúru nákladov. Podrobný report so všetkými položkami si kúpite, len ak ho potrebujete."
+      },
+      "m2": {
+        "title": "Nepovinný dopyt u dovoznej firmy",
+        "text": "Iba ak o to požiadate, odovzdáme vašu kalkuláciu jednej overenej firme. Platí nám ona, nie vy – a iba s vaším súhlasom."
+      },
+      "m3": {
+        "title": "Označené affiliate odkazy",
+        "text": "Napr. overenie VIN alebo výmena meny. Vždy označené, nikdy neovplyvňujú odhad."
+      }
+    },
+    "values": {
+      "eyebrow": "Čím sa riadime",
+      "transparency": {
+        "title": "Transparentnosť",
+        "text": "Každé číslo má zdroj a podklad. Ak ide o odhad, povieme to."
+      },
+      "independence": {
+        "title": "Nezávislosť",
+        "text": "Nemáme žiadny záujem na tom, či auto kúpite, ani kto vám ho dovezie."
+      },
+      "precision": {
+        "title": "Presnosť",
+        "text": "Počítame na cent, ale ukazujeme aj rozpätie – pretože dovoz nie je exaktná matematika."
+      }
+    },
+    "cta": {
+      "title": "Preverte svoje auto za minútu",
+      "text": "Máte otázku alebo ste narazili na zastaranú sadzbu? Napíšte na {{email}}"
+    }
+  },
+  "currency": {
+    "label": "Mena výsledku",
+    "title": "V akej mene vám máme náklady zobraziť?",
+    "hint": "Aukčné sumy (USD, JPY, AED…) prepočítavame aktuálnym kurzom centrálnej banky. Mena nemení výpočet daní – dane vždy vyrubuje krajina preclenia.",
+    "groupEu": "Meny EÚ",
+    "groupOther": "Ostatné"
+  }
+}
