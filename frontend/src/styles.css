@@ -222,41 +222,22 @@ select.input {
   @apply border-danger bg-danger text-white;
 }
 
-/* ---------- hero: dark page with neon ring and bar (reference), optional full-bleed photo ---------- */
+/* ---------- hero: dark page with the neon car graphic on the right ---------- */
 .hero {
-  background: radial-gradient(ellipse at 66% 32%, var(--hero-glow-1), transparent 40%),
+  background: radial-gradient(ellipse at 70% 40%, var(--hero-glow-1), transparent 45%),
     radial-gradient(ellipse at 14% 100%, var(--hero-glow-2), transparent 38%), var(--bg);
 }
-.hero-photo {
-  background-size: cover;
-  background-position: center 54%;
+.hero-car {
+  @apply pointer-events-none select-none;
+  filter: drop-shadow(0 30px 40px rgb(0 0 0 / 0.55));
+  animation: hero-car-in 900ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
-.hero-photo::after {
-  content: '';
-  @apply pointer-events-none absolute inset-0;
-  background: linear-gradient(90deg, var(--bg) 0%, color-mix(in srgb, var(--bg) 96%, transparent) 23%,
-      color-mix(in srgb, var(--bg) 67%, transparent) 47%, color-mix(in srgb, var(--bg) 12%, transparent) 100%),
-    linear-gradient(0deg, var(--bg) 0%, transparent 33%);
+@keyframes hero-car-in {
+  from { opacity: 0; transform: translateX(60px) scale(0.97); }
+  to { opacity: 1; transform: none; }
 }
-.neon-ring {
-  @apply pointer-events-none absolute rounded-full;
-  width: 350px;
-  height: 350px;
-  top: 34px;
-  right: 27%;
-  border: 5px solid color-mix(in srgb, var(--brand) 60%, transparent);
-  box-shadow: 0 0 16px var(--brand), inset 0 0 14px color-mix(in srgb, var(--brand) 30%, transparent);
-  opacity: 0.65;
-}
-.neon-bar {
-  @apply pointer-events-none absolute;
-  right: 9%;
-  top: 18%;
-  width: 5px;
-  height: 270px;
-  background: var(--brand);
-  box-shadow: 0 0 18px 6px color-mix(in srgb, var(--brand) 70%, transparent);
-  opacity: 0.6;
+@media (prefers-reduced-motion: reduce) {
+  .hero-car { animation: none; }
 }
 
 /* ---------- live result card ---------- */
@@ -363,11 +344,6 @@ select.input {
 @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
 .shake {
   animation: shake 0.4s ease-in-out;
-}
-
-@media (max-width: 767px) {
-  .neon-ring { width: 210px; height: 210px; right: 5%; top: 80px; }
-  .neon-bar { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -174,10 +174,10 @@
     "name": "Full name",
     "phone": "Phone (optional)",
     "submit": "Send request",
-    "subtitle": "A verified import company will contact you with a turnkey offer.",
+    "subtitle": "CarImport.eu does not import cars. If you wish, we’ll pass your estimate to one verified import company, which will prepare an offer. No obligation.",
     "thanks": "Thank you!",
-    "thanksHint": "A partner will contact you within 1 business day.",
-    "title": "Safe import with a partner"
+    "thanksHint": "The import company will get back to you within 1 business day.",
+    "title": "Enquiry to an import company (optional)"
   },
   "origin": {
     "CANADA": "Canada",
@@ -232,7 +232,7 @@
     "paid2": "Duty, excise & VAT",
     "paid3": "Document checklist",
     "paid4": "Personal PDF report",
-    "partner": "Let a verified partner handle the import",
+    "partner": "Want an offer from an import company?",
     "rangeHint": "The range covers FX and freight-rate fluctuations.",
     "title": "Estimated landed cost",
     "transit": "{{days}} days at sea",
@@ -380,13 +380,12 @@
     "tariffShort": "Market: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} loading, min. {{minimum}} {{cur}}."
   },
   "layout": {
-    "topbar": "Import cost calculator for the USA, Canada, Japan, UAE and UK — we price and ship your car to any EU country",
+    "topbar": "Independent calculator of car import costs from the USA, Canada, Japan, UAE and UK to 27 EU countries",
     "forBusiness": "For import companies",
     "home": "Home",
     "nav": "Main navigation",
     "calculator": "Calculator",
     "howItWorks": "How it works",
-    "countries": "Countries",
     "pricing": "Pricing",
     "faq": "FAQ",
     "cta": "Calculate cost",
@@ -395,12 +394,13 @@
     "breadcrumb": "Breadcrumb",
     "themeLight": "Switch to light theme",
     "themeDark": "Switch to dark theme",
-    "consultation": "Book a free consultation",
-    "callback": "Request a call back",
-    "services": "Services"
+    "about": "About us",
+    "why": "Why us",
+    "what": "What we count",
+    "ctaHint": "Free, no sign-up"
   },
   "footer": {
-    "about": "Independent calculator for importing cars from outside the EU: auction fees, freight, duty, excise and VAT in one place.",
+    "about": "Independent calculator of import costs for cars from outside the EU. We neither sell nor import cars – we work out what they really cost.",
     "calculators": "Import calculators",
     "importFrom": {
       "USA": "Car from the USA",
@@ -424,32 +424,35 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Importing cars into the EU",
-      "title1": "We import cars",
-      "title2": "from the USA, Canada, Japan, the UAE and the UK",
-      "lead": "We price the full cost before you bid, and a verified partner handles purchase, shipping, customs and paperwork. You get a car ready for registration.",
-      "cta": "Calculate import cost",
-      "secondary": "Order a turnkey import",
-      "visual": "Sports car in neon light"
+      "eyebrow": "Car import calculator",
+      "title1": "Know the import cost",
+      "title2": "before you bid",
+      "lead": "An independent calculator that shows the full cost of bringing a car from the USA, Canada, Japan, the UAE or the UK in a minute – from the auction price to registration plates in your country.",
+      "cta": "Calculate for free",
+      "secondary": "What exactly we count",
+      "visual": "Black Ford Mustang in yellow neon light against the US flag",
+      "point1": "Instant estimate – no sign-up, no phone call, no waiting for a quote",
+      "point2": "Over 40 cost items, 43 EU ports and today’s exchange rates",
+      "point3": "We don’t sell cars or take commissions – the numbers are honest"
     },
     "how": {
       "eyebrow": "How it works",
-      "title": "From auction link to full cost in four steps",
+      "title": "From idea to the full amount in four steps",
       "s1": {
-        "title": "Choose country & auction",
-        "text": "USA, Canada, Japan, UAE or UK — plus the EU port of clearance and country of registration."
+        "title": "Where you buy",
+        "text": "USA, Canada, Japan, UAE or UK – and an auction or a dealer."
       },
       "s2": {
-        "title": "Describe the vehicle",
-        "text": "Type, drivetrain, displacement, year and condition — each of them changes the taxes."
+        "title": "Which car",
+        "text": "Type, fuel, engine size, year and condition – they decide the taxes."
       },
       "s3": {
-        "title": "See the live result",
-        "text": "The cost range and breakdown update with every change."
+        "title": "Your address",
+        "text": "The only field you type. We work out the kilometres and the cheapest port."
       },
       "s4": {
-        "title": "Get the report or hand it over",
-        "text": "An exact PDF breakdown, or contact with a verified import company."
+        "title": "Result and report",
+        "text": "Three scenarios for free, and a to-the-cent PDF when you’re ready to buy."
       },
       "step": "Step"
     },
@@ -488,35 +491,30 @@
       "eyebrow": "Pricing",
       "title": "Start free, pay only for certainty"
     },
-    "partners": {
-      "eyebrow": "For businesses",
-      "title": "Run an import business? Receive ready-to-buy clients.",
-      "text": "We pass on enquiries from clients who have already calculated the cost and know their budget — with the full vehicle quote.",
-      "b1": "Leads with a complete quote and vehicle details",
-      "b2": "GDPR consent collected before any data transfer",
-      "b3": "Pay per accepted lead",
-      "cta": "Become a partner"
-    },
     "final": {
       "title": "Calculate your import in a minute",
-      "text": "No sign-up. Instant result, PDF report when you are ready to buy."
+      "text": "No sign-up, no obligation. If the car turns out too expensive, you’ve just saved money. If it pays off, you bid calmly, knowing the full cost.",
+      "title1": "Check before you buy.",
+      "title2": "It takes a minute.",
+      "cta": "Calculate import cost",
+      "about": "Who we are"
     },
     "strip": {
       "brand": {
         "title": "CarImport.eu —",
-        "text": "car imports to the EU"
+        "text": "independent import calculator"
       },
-      "docs": {
-        "title": "Documents",
-        "text": "Full list for clearance and registration"
+      "instant": {
+        "title": "Result in a minute",
+        "text": "You enter only the address, we propose the rest"
       },
-      "routes": {
-        "title": "8 sea lanes",
-        "text": "To Bremerhaven, Rotterdam, Antwerp and Gdynia"
+      "items": {
+        "title": "40+ cost items",
+        "text": "From the auction to registration and risks"
       },
-      "fx": {
-        "title": "NBP rates",
-        "text": "Updated every business day"
+      "ports": {
+        "title": "43 EU ports",
+        "text": "We pick the cheapest for your address"
       }
     },
     "map": {
@@ -530,47 +528,6 @@
       "legendRoute": "Sea route",
       "scroll": "Swipe to see the whole map",
       "days": "days"
-    },
-    "services": {
-      "eyebrow": "Services",
-      "title": "What we do for you",
-      "lead": "The full cycle — from costing to a car ready for registration.",
-      "calc": {
-        "tag": "Calculator",
-        "title": "Live import cost",
-        "text": "Auction, shipping, duty, excise and VAT — the result updates with every input.",
-        "alt": "Screenshot of the import cost calculator"
-      },
-      "report": {
-        "tag": "Report",
-        "title": "Exact breakdown",
-        "text": "A personal PDF with every rate and tax base."
-      },
-      "fx": {
-        "tag": "Currency",
-        "title": "Cheaper currency exchange",
-        "text": "Pay in USD, JPY or AED without bank margins."
-      },
-      "vin": {
-        "tag": "History",
-        "title": "VIN check",
-        "text": "Damage, mileage and theft records — before you bid."
-      },
-      "finance": {
-        "tag": "Finance",
-        "title": "Leasing and loans",
-        "text": "Finance the purchase, shipping and taxes."
-      },
-      "docs": {
-        "tag": "Documents",
-        "title": "Clearance and registration",
-        "text": "Document checklist for your route and country."
-      },
-      "partner": {
-        "tag": "Turnkey",
-        "title": "Import with a partner",
-        "text": "A verified company buys, ships and clears the car for you."
-      }
     },
     "numbers": {
       "eyebrow": "CarImport.eu in numbers",
@@ -592,23 +549,103 @@
         "label": "languages: Polish, English, German, Ukrainian"
       }
     },
-    "contact": {
-      "eyebrow": "Ready to bring your car over",
-      "title1": "Tell us",
-      "title2": "which car you want",
-      "lead": "We will work out timing and a turnkey price.",
-      "b1": "Reply within 1 business day",
-      "b2": "Verified import companies only",
-      "b3": "No obligation, no hidden fees",
-      "origin": "Where from",
-      "message": "Which car are you after",
-      "placeholder": "Make, model, year, budget or an auction link",
-      "submit": "Send request",
-      "error": "Could not send. Please try again shortly.",
-      "name": "Your name",
-      "phone": "Phone number",
-      "email": "E-mail address",
-      "question": "Which car? Make, model, budget or an auction link"
+    "why": {
+      "eyebrow": "Why use it",
+      "title": "Know what you’ll pay – before you click “bid”",
+      "lead": "The most expensive part of importing is the costs nobody mentioned before the purchase. The calculator brings them to light before you spend your first dollar.",
+      "preview": {
+        "tag": "Calculator",
+        "title": "Full door-to-door cost in six steps",
+        "text": "Auction, transport, duty, excise, VAT, registration and risks – in three scenarios.",
+        "alt": "Screenshot of the import cost calculator"
+      },
+      "instant": {
+        "tag": "Instant",
+        "title": "An estimate in a minute, not in two days",
+        "text": "No contact forms, no waiting for a sales call. Every field comes prefilled with a proposal – you change only what you know better."
+      },
+      "independent": {
+        "tag": "Independent",
+        "title": "We sell neither cars nor shipping",
+        "text": "We earn no margin from carriers or auctions, so we have no reason to lowball costs. Everyone gets the same result."
+      },
+      "ports": {
+        "tag": "43 ports",
+        "title": "The cheapest route to your address",
+        "text": "We price every EU port of clearance door to door and show you the difference."
+      },
+      "scenarios": {
+        "tag": "Scenarios",
+        "title": "Optimistic, average, pessimistic",
+        "text": "Exchange rates, delays and risks on the way – you see a realistic range, not one “magic” number."
+      },
+      "after": {
+        "tag": "After import",
+        "title": "Registration and paperwork too",
+        "text": "Roadworthiness test, translations, lighting conversion, official fees and insurance – with deadlines."
+      },
+      "report": {
+        "tag": "PDF report",
+        "title": "Every cent in black and white",
+        "text": "For €4.99, a named report with every rate, tax base and an after-import action plan."
+      }
+    },
+    "what": {
+      "eyebrow": "What we include",
+      "title": "Everything that makes up the price of the car at your door",
+      "lead": "Most calculators stop at duty and VAT. We count the whole journey – from the auction yard to the registration plates – and add what could go wrong.",
+      "cta": "Try it on your car",
+      "purchase": {
+        "title": "Purchase",
+        "i1": "Winning bid or dealer price",
+        "i2": "Copart, IAAI, Manheim, USS fees by price tier",
+        "i3": "Clean / salvage title and condition",
+        "i4": "Estimated repair cost"
+      },
+      "transport": {
+        "title": "Transport",
+        "i1": "Auction yard to export port",
+        "i2": "Container or RoRo freight",
+        "i3": "Cargo insurance",
+        "i4": "Unloading and terminal fees",
+        "i5": "Tow truck or car carrier to your address"
+      },
+      "taxes": {
+        "title": "Duty & taxes",
+        "i1": "Duty per TARIC (10%, 22% for pickups)",
+        "i2": "Excise by engine and fuel type",
+        "i3": "VAT in the port-of-clearance country",
+        "i4": "Same-day central bank exchange rate"
+      },
+      "after": {
+        "title": "After import",
+        "i1": "Roadworthiness test and approval",
+        "i2": "Sworn translations of documents",
+        "i3": "Registration, plates and official fees",
+        "i4": "Lighting and speedometer conversion",
+        "i5": "First-year liability insurance"
+      },
+      "risks": {
+        "title": "Risks",
+        "i1": "Port storage and delayed vessels",
+        "i2": "Customs inspection and value checks",
+        "i3": "Hidden damage and transit damage",
+        "i4": "Delayed title and export documents"
+      }
+    },
+    "compare": {
+      "eyebrow": "Comparison",
+      "title": "Why a back-of-the-envelope estimate isn’t enough",
+      "self": "On your own",
+      "broker": "Broker quote",
+      "r1": "Auction fees by current tiers",
+      "r2": "Comparison of all 43 EU ports",
+      "r3": "Today’s exchange rate + buffer for swings",
+      "r4": "Excise and VAT by clearance and registration country",
+      "r5": "Risks and three cost scenarios",
+      "r6": "Registration and paperwork after import",
+      "r7": "No margin or hidden commission",
+      "note": "~ means “usually partly”. Broker quotes often include their margin and don’t show a cost breakdown."
     }
   },
   "pricing": {
@@ -632,13 +669,13 @@
       "cta": "Calculate & unlock report"
     },
     "partner": {
-      "name": "Import with a partner",
-      "price": "Partner quote",
-      "f1": "Verified import company",
-      "f2": "Purchase, shipping and clearance for you",
-      "f3": "Contact within 1 business day",
-      "f4": "No obligation",
-      "cta": "Start with a quote"
+      "name": "For import companies",
+      "price": "Per accepted lead",
+      "f1": "Buyers with a ready car estimate",
+      "f2": "GDPR consent collected before transfer",
+      "f3": "Only enquiries you accept",
+      "f4": "No subscription",
+      "cta": "Become a partner"
     }
   },
   "faq": {
@@ -676,6 +713,10 @@
     "q8": {
       "q": "Is the calculator result binding?",
       "a": "No. It is an estimate based on current rates and price lists. Final amounts are set by customs and the tax office, which may for example verify the customs value. The report lists all assumptions, so it is easy to compare with the official decision."
+    },
+    "q9": {
+      "q": "Does CarImport.eu import cars?",
+      "a": "No. We are only a calculator – we don’t buy, ship or clear cars, and we take no commission from auctions or carriers. That keeps the estimate independent. If you want, you can pass the estimate to a verified import company, but that is always your choice."
     }
   },
   "calc": {
@@ -687,7 +728,7 @@
   "seo": {
     "home": {
       "title": "Car import cost calculator – USA, Japan, Dubai to EU | CarImport.eu",
-      "description": "Calculate the cost of importing a car from the USA, Canada, Japan, UAE or UK: Copart and IAAI fees, shipping, duty, excise and VAT. Live result and exact PDF report."
+      "description": "Independent calculator for importing a car from the USA, Canada, Japan, UAE and UK: auction, shipping, duty, excise, VAT, registration and risks. Instant estimate, no sign-up."
     },
     "calculator": {
       "title": "Duty, excise & VAT calculator for imported cars | CarImport.eu",
@@ -696,6 +737,10 @@
     "privacy": {
       "title": "Privacy policy | CarImport.eu",
       "description": "How CarImport.eu processes personal data: payments, reports, partner enquiries and cookies."
+    },
+    "about": {
+      "title": "About us – an independent car import calculator | CarImport.eu",
+      "description": "Who we are, where our data comes from and how we earn money. CarImport.eu neither sells nor imports cars – it calculates the full import cost honestly and independently."
     }
   },
   "privacy": {
@@ -873,5 +918,89 @@
     "ATLANTIC": "Atlantic",
     "WEST_MED": "Western Mediterranean",
     "EAST_MED": "Adriatic, Aegean & Black Sea"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title1": "We calculate car imports.",
+    "title2": "We don’t sell cars.",
+    "lead": "CarImport.eu is an independent calculator of the cost of bringing a car from outside the European Union. We built it so that anyone – not just a dealer with ten years of experience – knows before buying what they will really pay.",
+    "story": {
+      "eyebrow": "How it started",
+      "title": "Out of frustration with hidden costs",
+      "p1": "A car from a US auction looks like a bargain – until you add auction fees, transport to the port, freight, duty, excise, VAT, unloading, the tow truck, translations, the roadworthiness test and registration. Each item is “small”, together they can double the price.",
+      "p2": "The information is scattered across auction price lists, customs tariffs, exchange-rate tables and the rules of 27 countries. Broker quotes usually give one figure with no breakdown – and with their margin inside.",
+      "p3": "We built a tool that brings it all together, calculates with current rates and shows every assumption. No sign-up, no call from a salesperson."
+    },
+    "role": {
+      "eyebrow": "Honest about what we are",
+      "title": "We are a calculator. Only a calculator.",
+      "is": "What we are",
+      "is1": "An independent calculator of the full import cost",
+      "is2": "A comparison of 43 EU ports of clearance for your address",
+      "is3": "The source of a detailed PDF report with every rate",
+      "is4": "A list of steps and documents after import",
+      "isNot": "What we are not",
+      "isNot1": "Not an importer or a dealer – we don’t sell cars",
+      "isNot2": "We don’t arrange shipping or customs clearance",
+      "isNot3": "No commission from auctions, carriers or customs agents",
+      "isNot4": "Not an authority or tax adviser – the result is an estimate"
+    },
+    "data": {
+      "eyebrow": "Where the numbers come from",
+      "title": "Current rates, not “roughly”",
+      "lead": "Every amount in the result comes from a specific rate that the report shows. Data is updated automatically or whenever the law changes.",
+      "customs": {
+        "title": "EU customs tariff",
+        "text": "Duty rates by CN code (TARIC) for cars, pickups, motorcycles and historic vehicles."
+      },
+      "fx": {
+        "title": "Central bank rates",
+        "text": "Reference rates fetched every business day, with a buffer for swings until payment."
+      },
+      "fees": {
+        "title": "Auction and carrier price lists",
+        "text": "Copart, IAAI, Manheim and USS fee tiers, freight rates, port fees and per-km transport prices."
+      },
+      "law": {
+        "title": "National rules",
+        "text": "Excise, VAT rates of 27 countries, registration fees and mandatory tests – with the legal basis in the report."
+      }
+    },
+    "money": {
+      "eyebrow": "How we earn money",
+      "title": "Transparently – because it’s about trust",
+      "lead": "The calculator’s result doesn’t depend on who pays us or how much. We earn in three ways, all of them open:",
+      "m1": {
+        "title": "PDF report – €4.99",
+        "text": "The free result shows the range and cost structure. You buy the detailed report with every item only if you need it."
+      },
+      "m2": {
+        "title": "Optional enquiry to an import company",
+        "text": "Only if you ask, we pass your estimate to one verified company. It pays us, not you – and only with your consent."
+      },
+      "m3": {
+        "title": "Labelled affiliate links",
+        "text": "E.g. VIN checks or currency exchange. Always labelled, never affecting the estimate."
+      }
+    },
+    "values": {
+      "eyebrow": "What guides us",
+      "transparency": {
+        "title": "Transparency",
+        "text": "Every number has a source and a basis. If something is an estimate, we say so."
+      },
+      "independence": {
+        "title": "Independence",
+        "text": "We have no stake in whether you buy the car or who imports it for you."
+      },
+      "precision": {
+        "title": "Precision",
+        "text": "We calculate to the cent but also show a range – because importing isn’t perfect maths."
+      }
+    },
+    "cta": {
+      "title": "Check your car in a minute",
+      "text": "Have a question or spotted an outdated rate? Write to {{email}}"
+    }
   }
 }

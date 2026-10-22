@@ -6,7 +6,7 @@ import { Page, pathFor } from '../routing/paths';
 import { SITE } from '../site.config';
 
 const OG_LOCALES: Record<Lang, string> = { pl: 'pl_PL', en: 'en_GB', de: 'de_DE', uk: 'uk_UA' };
-export const FAQ_COUNT = 8;
+export const FAQ_COUNT = 9;
 
 /**
  * Per-page head management for search engines and social previews: title, description, canonical, hreflang
@@ -99,7 +99,15 @@ export class SeoService {
         ],
       });
     }
-    graph.push({ '@type': 'WebPage', url, name, description, inLanguage: lang, isPartOf: { '@id': `${SITE.url}/#website` } });
+    graph.push({
+      '@type': page === 'about' ? 'AboutPage' : 'WebPage',
+      url,
+      name,
+      description,
+      inLanguage: lang,
+      isPartOf: { '@id': `${SITE.url}/#website` },
+      ...(page === 'about' ? { about: { '@id': `${SITE.url}/#org` } } : {}),
+    });
 
     let script = this.document.head.querySelector<HTMLScriptElement>('script#ld-json');
     if (!script) {

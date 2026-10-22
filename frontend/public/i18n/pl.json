@@ -174,10 +174,10 @@
     "name": "Imię i nazwisko",
     "phone": "Telefon (opcjonalnie)",
     "submit": "Wyślij zapytanie",
-    "subtitle": "Zweryfikowana firma importowa skontaktuje się z Tobą z ofertą „pod klucz”.",
+    "subtitle": "CarImport.eu nie sprowadza aut. Jeśli chcesz, przekażemy Twoją wycenę jednej zweryfikowanej firmie importowej, która przygotuje ofertę. Bez zobowiązań.",
     "thanks": "Dziękujemy!",
-    "thanksHint": "Partner odezwie się w ciągu 1 dnia roboczego.",
-    "title": "Bezpieczny import z partnerem"
+    "thanksHint": "Firma importowa odezwie się w ciągu 1 dnia roboczego.",
+    "title": "Zapytanie do firmy importowej (opcjonalnie)"
   },
   "origin": {
     "CANADA": "Kanada",
@@ -232,7 +232,7 @@
     "paid2": "Cło, akcyza i VAT",
     "paid3": "Lista dokumentów",
     "paid4": "Imienny raport PDF",
-    "partner": "Zleć bezpieczny import partnerowi",
+    "partner": "Chcesz oferty od firmy importowej?",
     "rangeHint": "Zakres uwzględnia wahania kursów i stawek frachtu.",
     "title": "Szacowany koszt „pod dom”",
     "transit": "{{days}} dni morzem",
@@ -380,13 +380,12 @@
     "tariffShort": "Rynek: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} załadunek, min. {{minimum}} {{cur}}."
   },
   "layout": {
-    "topbar": "Kalkulator kosztów importu z USA, Kanady, Japonii, ZEA i UK — policzymy i sprowadzimy auto do dowolnego kraju UE",
+    "topbar": "Niezależny kalkulator kosztów importu aut z USA, Kanady, Japonii, ZEA i UK do 27 krajów UE",
     "forBusiness": "Dla firm importowych",
     "home": "Strona główna",
     "nav": "Nawigacja główna",
     "calculator": "Kalkulator",
     "howItWorks": "Jak to działa",
-    "countries": "Kraje",
     "pricing": "Cennik",
     "faq": "FAQ",
     "cta": "Oblicz koszt",
@@ -395,12 +394,13 @@
     "breadcrumb": "Ścieżka nawigacji",
     "themeLight": "Włącz jasny motyw",
     "themeDark": "Włącz ciemny motyw",
-    "consultation": "Umów bezpłatną konsultację",
-    "callback": "Zamów kontakt",
-    "services": "Usługi"
+    "about": "O nas",
+    "why": "Dlaczego warto",
+    "what": "Co liczymy",
+    "ctaHint": "Za darmo, bez rejestracji"
   },
   "footer": {
-    "about": "Niezależny kalkulator kosztów importu samochodów spoza UE: opłaty aukcyjne, fracht, cło, akcyza i VAT w jednym miejscu.",
+    "about": "Niezależny kalkulator kosztów importu samochodów spoza UE. Nie sprzedajemy ani nie sprowadzamy aut – liczymy, ile naprawdę kosztują.",
     "calculators": "Kalkulatory importu",
     "importFrom": {
       "USA": "Auto z USA",
@@ -424,32 +424,35 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Import samochodów spoza UE",
-      "title1": "Sprowadzamy samochody",
-      "title2": "z USA, Kanady, Japonii, ZEA i Wielkiej Brytanii",
-      "lead": "Liczymy pełny koszt przed licytacją, a zweryfikowany partner bierze na siebie zakup, transport, odprawę i formalności. Otrzymujesz auto gotowe do rejestracji.",
-      "cta": "Oblicz koszt importu",
-      "secondary": "Zamów auto pod klucz",
-      "visual": "Samochód sportowy w neonowym świetle"
+      "eyebrow": "Kalkulator importu samochodów",
+      "title1": "Policz import auta,",
+      "title2": "zanim zalicytujesz",
+      "lead": "Niezależny kalkulator, który w minutę pokazuje pełny koszt sprowadzenia samochodu z USA, Kanady, Japonii, ZEA lub UK – od ceny na aukcji po tablice rejestracyjne w Twoim kraju.",
+      "cta": "Oblicz koszt za darmo",
+      "secondary": "Co dokładnie liczymy",
+      "visual": "Czarny Ford Mustang w żółtym neonowym świetle na tle flagi USA",
+      "point1": "Wycena od ręki – bez rejestracji, telefonu i czekania na ofertę",
+      "point2": "Ponad 40 pozycji kosztów, 43 porty UE i aktualne kursy walut",
+      "point3": "Nie sprzedajemy aut i nie bierzemy prowizji – liczymy uczciwie"
     },
     "how": {
       "eyebrow": "Jak to działa",
-      "title": "Od linku do aukcji do pełnej kwoty w czterech krokach",
+      "title": "Od pomysłu do pełnej kwoty w czterech krokach",
       "s1": {
-        "title": "Wybierz kraj i aukcję",
-        "text": "USA, Kanada, Japonia, ZEA lub UK — oraz port odprawy w UE i kraj rejestracji."
+        "title": "Skąd kupujesz",
+        "text": "USA, Kanada, Japonia, ZEA lub UK – i aukcja albo dealer."
       },
       "s2": {
-        "title": "Opisz pojazd",
-        "text": "Typ, napęd, pojemność silnika, rocznik i stan — każdy z tych parametrów zmienia podatki."
+        "title": "Jakie auto",
+        "text": "Typ, napęd, pojemność, rocznik i stan – od tego zależą podatki."
       },
       "s3": {
-        "title": "Zobacz wynik na żywo",
-        "text": "Przedział kosztów i struktura wydatków aktualizują się przy każdej zmianie."
+        "title": "Twój adres",
+        "text": "Jedyne pole do wpisania. Kilometry i najtańszy port liczymy sami."
       },
       "s4": {
-        "title": "Pobierz raport lub zleć import",
-        "text": "Wyliczenie co do grosza w PDF albo kontakt ze zweryfikowaną firmą importową."
+        "title": "Wynik i raport",
+        "text": "Trzy scenariusze za darmo, a raport PDF co do grosza, gdy będziesz gotów kupić."
       },
       "step": "Krok"
     },
@@ -488,35 +491,30 @@
       "eyebrow": "Cennik",
       "title": "Zacznij za darmo, zapłać tylko za pewność"
     },
-    "partners": {
-      "eyebrow": "Dla firm",
-      "title": "Prowadzisz firmę importową? Odbieraj gotowych klientów.",
-      "text": "Przekazujemy zapytania klientów, którzy już policzyli koszt i znają budżet — razem z pełną wyceną auta.",
-      "b1": "Leady z kompletną wyceną i parametrami auta",
-      "b2": "Zgody RODO zebrane przed przekazaniem danych",
-      "b3": "Rozliczenie za przyjęty lead",
-      "cta": "Zostań partnerem"
-    },
     "final": {
       "title": "Policz swój import w minutę",
-      "text": "Bez rejestracji. Wynik od razu, raport PDF gdy będziesz gotów kupić."
+      "text": "Bez rejestracji i bez zobowiązań. Jeśli auto okaże się za drogie – właśnie zaoszczędziłeś pieniądze. Jeśli się opłaca – licytujesz spokojnie, znając pełny koszt.",
+      "title1": "Sprawdź, zanim kupisz.",
+      "title2": "To zajmie minutę.",
+      "cta": "Oblicz koszt importu",
+      "about": "Kim jesteśmy"
     },
     "strip": {
       "brand": {
         "title": "CarImport.eu —",
-        "text": "import aut do UE"
+        "text": "niezależny kalkulator importu"
       },
-      "docs": {
-        "title": "Dokumenty",
-        "text": "Pełna lista do odprawy i rejestracji"
+      "instant": {
+        "title": "Wynik w minutę",
+        "text": "Podajesz tylko adres, resztę proponujemy"
       },
-      "routes": {
-        "title": "8 tras morskich",
-        "text": "Do Bremerhaven, Rotterdamu, Antwerpii i Gdyni"
+      "items": {
+        "title": "40+ pozycji kosztów",
+        "text": "Od aukcji po rejestrację i ryzyka"
       },
-      "fx": {
-        "title": "Kursy NBP",
-        "text": "Aktualizowane w każdy dzień roboczy"
+      "ports": {
+        "title": "43 porty UE",
+        "text": "Najtańszy wybieramy pod Twój adres"
       }
     },
     "map": {
@@ -530,47 +528,6 @@
       "legendRoute": "Trasa morska",
       "scroll": "Przesuń mapę w bok",
       "days": "dni"
-    },
-    "services": {
-      "eyebrow": "Usługi",
-      "title": "Co dla Ciebie zrobimy",
-      "lead": "Pełny cykl — od policzenia kosztów do auta gotowego do rejestracji.",
-      "calc": {
-        "tag": "Kalkulator",
-        "title": "Koszt importu na żywo",
-        "text": "Aukcja, transport, cło, akcyza i VAT — wynik zmienia się z każdym parametrem.",
-        "alt": "Zrzut ekranu kalkulatora kosztów importu"
-      },
-      "report": {
-        "tag": "Raport",
-        "title": "Wycena co do grosza",
-        "text": "Imienny PDF z każdą stawką i podstawą opodatkowania."
-      },
-      "fx": {
-        "tag": "Waluty",
-        "title": "Tańsza wymiana walut",
-        "text": "Zapłać za auto w USD, JPY lub AED bez marży banku."
-      },
-      "vin": {
-        "tag": "Historia",
-        "title": "Sprawdzenie VIN",
-        "text": "Szkody, przebieg i kradzieże — zanim zalicytujesz."
-      },
-      "finance": {
-        "tag": "Finanse",
-        "title": "Leasing i kredyt",
-        "text": "Sfinansuj zakup, transport i podatki."
-      },
-      "docs": {
-        "tag": "Dokumenty",
-        "title": "Odprawa i rejestracja",
-        "text": "Lista dokumentów dla Twojej trasy i kraju rejestracji."
-      },
-      "partner": {
-        "tag": "Pod klucz",
-        "title": "Import z partnerem",
-        "text": "Zweryfikowana firma kupi, przewiezie i odprawi auto za Ciebie."
-      }
     },
     "numbers": {
       "eyebrow": "CarImport.eu w liczbach",
@@ -592,23 +549,103 @@
         "label": "języki: polski, angielski, niemiecki i ukraiński"
       }
     },
-    "contact": {
-      "eyebrow": "Gotowi sprowadzić Twoje auto",
-      "title1": "Opisz,",
-      "title2": "jakiego auta szukasz",
-      "lead": "Policzymy terminy i cenę pod klucz.",
-      "b1": "Odpowiedź w ciągu 1 dnia roboczego",
-      "b2": "Tylko zweryfikowane firmy importowe",
-      "b3": "Bez zobowiązań i ukrytych kosztów",
-      "origin": "Skąd chcesz sprowadzić auto",
-      "message": "Jakie auto Cię interesuje",
-      "placeholder": "Marka, model, rocznik, budżet albo link do aukcji",
-      "submit": "Wyślij zapytanie",
-      "error": "Nie udało się wysłać. Spróbuj ponownie za chwilę.",
-      "name": "Twoje imię",
-      "phone": "Numer telefonu",
-      "email": "Adres e-mail",
-      "question": "Jakie auto Cię interesuje? Marka, model, budżet lub link do aukcji"
+    "why": {
+      "eyebrow": "Dlaczego warto",
+      "title": "Wiesz, ile zapłacisz – zanim klikniesz „licytuj”",
+      "lead": "Najdroższe w imporcie są koszty, o których nikt nie powiedział przed zakupem. Kalkulator wyciąga je na wierzch, zanim wydasz pierwszego dolara.",
+      "preview": {
+        "tag": "Kalkulator",
+        "title": "Pełny koszt „pod dom” w sześciu krokach",
+        "text": "Aukcja, transport, cło, akcyza, VAT, rejestracja i ryzyka – w trzech scenariuszach.",
+        "alt": "Zrzut ekranu kalkulatora kosztów importu"
+      },
+      "instant": {
+        "tag": "Od ręki",
+        "title": "Wycena w minutę, nie w dwa dni",
+        "text": "Bez formularzy kontaktowych i czekania na telefon handlowca. Każde pole ma gotową propozycję – zmieniasz tylko to, co wiesz lepiej."
+      },
+      "independent": {
+        "tag": "Niezależnie",
+        "title": "Nie sprzedajemy aut ani transportu",
+        "text": "Nie zarabiamy na marży od przewoźnika czy aukcji, więc nie mamy powodu zaniżać kosztów. Wynik jest taki sam dla każdego."
+      },
+      "ports": {
+        "tag": "43 porty",
+        "title": "Najtańsza trasa pod Twój adres",
+        "text": "Wyceniamy każdy port odprawy w UE od drzwi do drzwi i pokazujemy różnicę."
+      },
+      "scenarios": {
+        "tag": "Scenariusze",
+        "title": "Optymistycznie, średnio, pesymistycznie",
+        "text": "Kurs walut, opóźnienia i ryzyka po drodze – widzisz realny przedział, nie jedną „magiczną” liczbę."
+      },
+      "after": {
+        "tag": "Po imporcie",
+        "title": "Rejestracja i dokumenty też",
+        "text": "Badanie techniczne, tłumaczenia, przeróbki świateł, opłaty urzędowe i OC – z terminami."
+      },
+      "report": {
+        "tag": "Raport PDF",
+        "title": "Każda złotówka czarno na białym",
+        "text": "Za 19 zł imienny raport z każdą stawką, podstawą i planem działań po imporcie."
+      }
+    },
+    "what": {
+      "eyebrow": "Co uwzględniamy",
+      "title": "Wszystko, co składa się na cenę auta pod Twoim domem",
+      "lead": "Większość kalkulatorów kończy na cle i VAT. My liczymy całą drogę – od placu aukcyjnego po tablice rejestracyjne – i dokładamy to, co może pójść nie tak.",
+      "cta": "Sprawdź na swoim aucie",
+      "purchase": {
+        "title": "Zakup",
+        "i1": "Cena wylicytowana lub od dealera",
+        "i2": "Opłaty aukcyjne Copart, IAAI, Manheim, USS według progów",
+        "i3": "Tytuł clean / salvage i stan auta",
+        "i4": "Szacowany koszt naprawy"
+      },
+      "transport": {
+        "title": "Transport",
+        "i1": "Dowóz z placu aukcyjnego do portu",
+        "i2": "Fracht kontenerem lub RoRo",
+        "i3": "Ubezpieczenie ładunku",
+        "i4": "Rozładunek i opłaty terminalowe",
+        "i5": "Laweta lub autotransporter pod Twój adres"
+      },
+      "taxes": {
+        "title": "Cło i podatki",
+        "i1": "Cło według TARIC (10%, 22% dla pickupów)",
+        "i2": "Akcyza zależna od silnika i napędu",
+        "i3": "VAT w kraju portu odprawy",
+        "i4": "Kurs NBP / EBC z bieżącego dnia"
+      },
+      "after": {
+        "title": "Po imporcie",
+        "i1": "Badanie techniczne i homologacja",
+        "i2": "Tłumaczenia przysięgłe dokumentów",
+        "i3": "Rejestracja, tablice i opłaty urzędowe",
+        "i4": "Przeróbki świateł i licznika",
+        "i5": "Ubezpieczenie OC na pierwszy rok"
+      },
+      "risks": {
+        "title": "Ryzyka",
+        "i1": "Postój w porcie i opóźnione statki",
+        "i2": "Kontrola celna i weryfikacja wartości",
+        "i3": "Ukryte uszkodzenia i szkody w transporcie",
+        "i4": "Opóźnienia tytułu i dokumentów eksportowych"
+      }
+    },
+    "compare": {
+      "eyebrow": "Porównanie",
+      "title": "Dlaczego nie wystarczy policzyć na kartce?",
+      "self": "Na własną rękę",
+      "broker": "Wycena pośrednika",
+      "r1": "Opłaty aukcyjne według aktualnych progów",
+      "r2": "Porównanie wszystkich 43 portów UE",
+      "r3": "Kurs walut z dnia + zapas na wahania",
+      "r4": "Akcyza i VAT według kraju odprawy i rejestracji",
+      "r5": "Ryzyka i trzy scenariusze kosztów",
+      "r6": "Koszty rejestracji i dokumentów po imporcie",
+      "r7": "Wynik bez marży i ukrytych prowizji",
+      "note": "~ oznacza „zwykle częściowo”. Wyceny pośredników często zawierają ich marżę i nie pokazują rozbicia kosztów."
     }
   },
   "pricing": {
@@ -632,13 +669,13 @@
       "cta": "Policz i odblokuj raport"
     },
     "partner": {
-      "name": "Import z partnerem",
-      "price": "Wycena partnera",
-      "f1": "Zweryfikowana firma importowa",
-      "f2": "Zakup, transport i odprawa za Ciebie",
-      "f3": "Kontakt w ciągu 1 dnia roboczego",
-      "f4": "Bez zobowiązań",
-      "cta": "Zacznij od wyceny"
+      "name": "Dla firm importowych",
+      "price": "Za przyjęty lead",
+      "f1": "Klienci z gotową wyceną auta",
+      "f2": "Zgody RODO zebrane przed przekazaniem",
+      "f3": "Tylko zapytania, które przyjmiesz",
+      "f4": "Bez abonamentu",
+      "cta": "Zostań partnerem"
     }
   },
   "faq": {
@@ -676,6 +713,10 @@
     "q8": {
       "q": "Czy wynik kalkulatora jest wiążący?",
       "a": "Nie. To szacunek oparty na aktualnych stawkach i cennikach. Ostateczne kwoty ustalają urząd celny i skarbowy — mogą np. zweryfikować wartość celną. Raport wskazuje wszystkie założenia, dzięki czemu łatwo porównać go z decyzją urzędu."
+    },
+    "q9": {
+      "q": "Czy CarImport.eu sprowadza samochody?",
+      "a": "Nie. Jesteśmy wyłącznie kalkulatorem – nie kupujemy, nie transportujemy i nie odprawiamy aut, nie bierzemy prowizji od aukcji ani przewoźników. Dzięki temu wycena jest niezależna. Jeśli chcesz, możesz przekazać wycenę zweryfikowanej firmie importowej, ale to zawsze Twoja decyzja."
     }
   },
   "calc": {
@@ -687,7 +728,7 @@
   "seo": {
     "home": {
       "title": "Kalkulator importu auta z USA, Japonii i Dubaju | CarImport.eu",
-      "description": "Policz koszt sprowadzenia auta z USA, Kanady, Japonii, ZEA i UK: opłaty Copart i IAAI, transport, cło, akcyza i VAT. Wynik na żywo, raport PDF co do grosza."
+      "description": "Niezależny kalkulator importu auta z USA, Kanady, Japonii, ZEA i UK: aukcja, transport, cło, akcyza, VAT, rejestracja i ryzyka. Wycena od ręki, bez rejestracji."
     },
     "calculator": {
       "title": "Kalkulator cła, akcyzy i VAT na auto z zagranicy | CarImport.eu",
@@ -696,6 +737,10 @@
     "privacy": {
       "title": "Polityka prywatności | CarImport.eu",
       "description": "Jak przetwarzamy dane osobowe w serwisie CarImport.eu: płatności, raporty, zapytania do partnerów i pliki cookie."
+    },
+    "about": {
+      "title": "O nas – niezależny kalkulator importu aut | CarImport.eu",
+      "description": "Kim jesteśmy, skąd bierzemy dane i jak zarabiamy. CarImport.eu nie sprzedaje ani nie sprowadza aut – liczy pełny koszt importu uczciwie i niezależnie."
     }
   },
   "privacy": {
@@ -873,5 +918,89 @@
     "ATLANTIC": "Atlantyk",
     "WEST_MED": "Morze Śródziemne – zachód",
     "EAST_MED": "Adriatyk, Morze Egejskie i Czarne"
+  },
+  "about": {
+    "eyebrow": "O nas",
+    "title1": "Liczymy import aut.",
+    "title2": "Nie sprzedajemy ich.",
+    "lead": "CarImport.eu to niezależny kalkulator kosztów sprowadzenia samochodu spoza Unii Europejskiej. Powstał po to, żeby każdy – nie tylko handlarz z dziesięcioletnim doświadczeniem – wiedział przed zakupem, ile naprawdę zapłaci.",
+    "story": {
+      "eyebrow": "Skąd się wzięliśmy",
+      "title": "Z frustracji ukrytymi kosztami",
+      "p1": "Auto z amerykańskiej aukcji wygląda na okazję – dopóki nie doliczysz opłat aukcyjnych, transportu do portu, frachtu, cła, akcyzy, VAT, rozładunku, lawety, tłumaczeń, badania technicznego i rejestracji. Każda z tych pozycji jest „niewielka”, a razem potrafią podwoić cenę.",
+      "p2": "Informacje są rozproszone po cennikach aukcji, taryfach celnych, tabelach kursów i przepisach 27 krajów. Wyceny od pośredników zwykle podają jedną kwotę bez rozbicia – i z marżą w środku.",
+      "p3": "Zbudowaliśmy narzędzie, które zbiera to wszystko w jednym miejscu, liczy według aktualnych stawek i pokazuje każde założenie. Bez rejestracji, bez telefonu od handlowca."
+    },
+    "role": {
+      "eyebrow": "Uczciwie o tym, czym jesteśmy",
+      "title": "Jesteśmy kalkulatorem. I tylko kalkulatorem.",
+      "is": "Czym jesteśmy",
+      "is1": "Niezależnym kalkulatorem pełnych kosztów importu",
+      "is2": "Porównywarką 43 portów odprawy w UE pod Twój adres",
+      "is3": "Źródłem szczegółowego raportu PDF z każdą stawką",
+      "is4": "Listą kroków i dokumentów po imporcie",
+      "isNot": "Czym nie jesteśmy",
+      "isNot1": "Nie jesteśmy importerem ani komisem – nie sprzedajemy aut",
+      "isNot2": "Nie organizujemy transportu ani odprawy",
+      "isNot3": "Nie bierzemy prowizji od aukcji, przewoźników ani agencji celnych",
+      "isNot4": "Nie jesteśmy urzędem ani doradcą podatkowym – wynik jest szacunkiem"
+    },
+    "data": {
+      "eyebrow": "Skąd bierzemy liczby",
+      "title": "Aktualne stawki, a nie „mniej więcej”",
+      "lead": "Każda kwota w wyniku wynika z konkretnej stawki, którą pokazujemy w raporcie. Dane aktualizujemy automatycznie lub przy każdej zmianie przepisów.",
+      "customs": {
+        "title": "Taryfa celna UE",
+        "text": "Stawki cła według kodów CN (TARIC) dla aut osobowych, pickupów, motocykli i pojazdów zabytkowych."
+      },
+      "fx": {
+        "title": "Kursy NBP i EBC",
+        "text": "Średnie kursy pobierane w każdy dzień roboczy, z buforem na wahania do dnia zapłaty."
+      },
+      "fees": {
+        "title": "Cenniki aukcji i przewoźników",
+        "text": "Progi opłat Copart, IAAI, Manheim i USS, stawki frachtu, opłaty portowe i ceny transportu za kilometr."
+      },
+      "law": {
+        "title": "Przepisy krajowe",
+        "text": "Akcyza, stawki VAT 27 państw, opłaty rejestracyjne i obowiązkowe badania – z podstawą prawną w raporcie."
+      }
+    },
+    "money": {
+      "eyebrow": "Jak zarabiamy",
+      "title": "Przejrzyście – bo to kwestia zaufania",
+      "lead": "Wynik kalkulatora nie zależy od tego, kto i ile nam płaci. Zarabiamy na trzy sposoby, wszystkie jawne:",
+      "m1": {
+        "title": "Raport PDF – 19 zł",
+        "text": "Darmowy wynik pokazuje przedział i strukturę kosztów. Szczegółowy raport z każdą pozycją kupujesz tylko, jeśli go potrzebujesz."
+      },
+      "m2": {
+        "title": "Opcjonalne zapytanie do firmy importowej",
+        "text": "Jeśli sam poprosisz, przekażemy wycenę jednej zweryfikowanej firmie. Płaci ona nam, nie Ty – i tylko za Twoją zgodą."
+      },
+      "m3": {
+        "title": "Oznaczone linki partnerskie",
+        "text": "Np. sprawdzenie VIN czy wymiana walut. Zawsze oznaczone, nigdy nie wpływają na wynik wyceny."
+      }
+    },
+    "values": {
+      "eyebrow": "Czym się kierujemy",
+      "transparency": {
+        "title": "Przejrzystość",
+        "text": "Każda liczba ma źródło i podstawę. Jeśli coś jest szacunkiem, piszemy to wprost."
+      },
+      "independence": {
+        "title": "Niezależność",
+        "text": "Nie mamy interesu w tym, czy kupisz auto, ani przez kogo je sprowadzisz."
+      },
+      "precision": {
+        "title": "Precyzja",
+        "text": "Liczymy co do grosza, ale pokazujemy też przedział – bo import to nie matematyka idealna."
+      }
+    },
+    "cta": {
+      "title": "Sprawdź swoje auto w minutę",
+      "text": "Masz pytanie lub zauważyłeś nieaktualną stawkę? Napisz: {{email}}"
+    }
   }
 }

@@ -5,6 +5,7 @@ import { LanguageService } from './core/i18n/language.service';
 import { SLUGS } from './core/routing/paths';
 
 const calculator = () => import('./features/calculator/calculator-page').then((m) => m.CalculatorPage);
+const about = () => import('./features/about/about-page').then((m) => m.AboutPage);
 const privacy = () => import('./features/legal/privacy-page').then((m) => m.PrivacyPage);
 
 /** Every language's slug resolves to the same page, e.g. /pl/kalkulator, /en/calculator, /de/rechner. */
@@ -26,6 +27,7 @@ export const routes: Routes = [
         loadComponent: () => import('./layout/shell').then((m) => m.Shell),
         children: [
           { path: '', loadComponent: () => import('./features/home/home-page').then((m) => m.HomePage), data: { page: 'home' } },
+          ...localized(SLUGS.about, about, 'about'),
           ...localized(SLUGS.privacy, privacy, 'privacy'),
           {
             path: 'report/:orderId',

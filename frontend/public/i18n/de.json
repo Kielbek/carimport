@@ -174,10 +174,10 @@
     "name": "Name",
     "phone": "Telefon (optional)",
     "submit": "Anfrage senden",
-    "subtitle": "Ein geprüftes Importunternehmen meldet sich mit einem Komplettangebot.",
+    "subtitle": "CarImport.eu importiert keine Autos. Auf Wunsch geben wir Ihre Kalkulation an eine geprüfte Importfirma weiter, die ein Angebot erstellt. Unverbindlich.",
     "thanks": "Vielen Dank!",
-    "thanksHint": "Ein Partner meldet sich innerhalb eines Werktags.",
-    "title": "Sicherer Import mit Partner"
+    "thanksHint": "Die Importfirma meldet sich innerhalb eines Werktags.",
+    "title": "Anfrage an eine Importfirma (optional)"
   },
   "origin": {
     "CANADA": "Kanada",
@@ -232,7 +232,7 @@
     "paid2": "Zoll, Verbrauchsteuer & USt",
     "paid3": "Dokumenten-Checkliste",
     "paid4": "Persönlicher PDF-Bericht",
-    "partner": "Import an geprüften Partner übergeben",
+    "partner": "Angebot einer Importfirma gewünscht?",
     "rangeHint": "Die Spanne deckt Wechselkurs- und Frachtschwankungen ab.",
     "title": "Geschätzte Gesamtkosten",
     "transit": "{{days}} Tage Seeweg",
@@ -380,13 +380,12 @@
     "tariffShort": "Markt: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} Verladung, min. {{minimum}} {{cur}}."
   },
   "layout": {
-    "topbar": "Importrechner für USA, Kanada, Japan, VAE und UK — wir kalkulieren und liefern in jedes EU-Land",
+    "topbar": "Unabhängiger Rechner für Importkosten von Autos aus den USA, Kanada, Japan, den VAE und UK in 27 EU-Länder",
     "forBusiness": "Für Importunternehmen",
     "home": "Startseite",
     "nav": "Hauptnavigation",
     "calculator": "Rechner",
     "howItWorks": "So funktioniert es",
-    "countries": "Länder",
     "pricing": "Preise",
     "faq": "FAQ",
     "cta": "Kosten berechnen",
@@ -395,12 +394,13 @@
     "breadcrumb": "Brotkrümel",
     "themeLight": "Helles Design aktivieren",
     "themeDark": "Dunkles Design aktivieren",
-    "consultation": "Kostenlose Beratung vereinbaren",
-    "callback": "Rückruf anfordern",
-    "services": "Leistungen"
+    "about": "Über uns",
+    "why": "Warum wir",
+    "what": "Was wir rechnen",
+    "ctaHint": "Kostenlos, ohne Anmeldung"
   },
   "footer": {
-    "about": "Unabhängiger Rechner für Fahrzeugimporte aus Drittländern: Auktionsgebühren, Fracht, Zoll, Verbrauchsteuer und USt an einem Ort.",
+    "about": "Unabhängiger Rechner für die Importkosten von Autos außerhalb der EU. Wir verkaufen und importieren keine Autos – wir rechnen aus, was sie wirklich kosten.",
     "calculators": "Importrechner",
     "importFrom": {
       "USA": "Auto aus den USA",
@@ -424,32 +424,35 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Fahrzeugimport in die EU",
-      "title1": "Wir importieren Autos",
-      "title2": "aus USA, Kanada, Japan, den VAE und UK",
-      "lead": "Wir berechnen die Gesamtkosten vor dem Gebot; ein geprüfter Partner übernimmt Kauf, Transport, Verzollung und Formalitäten. Sie erhalten ein zulassungsfertiges Auto.",
-      "cta": "Importkosten berechnen",
-      "secondary": "Import schlüsselfertig",
-      "visual": "Sportwagen im Neonlicht"
+      "eyebrow": "Auto-Import-Rechner",
+      "title1": "Importkosten kennen,",
+      "title2": "bevor Sie bieten",
+      "lead": "Ein unabhängiger Rechner, der in einer Minute die vollen Kosten für ein Auto aus den USA, Kanada, Japan, den VAE oder UK zeigt – vom Auktionspreis bis zum Kennzeichen in Ihrem Land.",
+      "cta": "Kostenlos berechnen",
+      "secondary": "Was genau wir rechnen",
+      "visual": "Schwarzer Ford Mustang in gelbem Neonlicht vor der US-Flagge",
+      "point1": "Sofort-Kalkulation – ohne Anmeldung, Anruf oder Warten auf ein Angebot",
+      "point2": "Über 40 Kostenpositionen, 43 EU-Häfen und tagesaktuelle Kurse",
+      "point3": "Wir verkaufen keine Autos und nehmen keine Provision – ehrliche Zahlen"
     },
     "how": {
       "eyebrow": "So funktioniert es",
-      "title": "Vom Auktionslink zu den Gesamtkosten in vier Schritten",
+      "title": "Von der Idee zum vollen Betrag in vier Schritten",
       "s1": {
-        "title": "Land & Auktion wählen",
-        "text": "USA, Kanada, Japan, VAE oder UK — dazu EU-Hafen und Zulassungsland."
+        "title": "Wo Sie kaufen",
+        "text": "USA, Kanada, Japan, VAE oder UK – Auktion oder Händler."
       },
       "s2": {
-        "title": "Fahrzeug beschreiben",
-        "text": "Typ, Antrieb, Hubraum, Baujahr und Zustand — jeder Wert beeinflusst die Steuern."
+        "title": "Welches Auto",
+        "text": "Typ, Antrieb, Hubraum, Baujahr und Zustand – davon hängen die Steuern ab."
       },
       "s3": {
-        "title": "Live-Ergebnis sehen",
-        "text": "Kostenspanne und Struktur aktualisieren sich bei jeder Änderung."
+        "title": "Ihre Adresse",
+        "text": "Das einzige Feld zum Ausfüllen. Kilometer und günstigsten Hafen rechnen wir."
       },
       "s4": {
-        "title": "Bericht holen oder übergeben",
-        "text": "Exakte PDF-Aufstellung oder Kontakt zu einem geprüften Importeur."
+        "title": "Ergebnis und Bericht",
+        "text": "Drei Szenarien kostenlos, der PDF-Bericht auf den Cent, wenn Sie kaufen möchten."
       },
       "step": "Schritt"
     },
@@ -488,35 +491,30 @@
       "eyebrow": "Preise",
       "title": "Kostenlos starten, nur für Gewissheit zahlen"
     },
-    "partners": {
-      "eyebrow": "Für Unternehmen",
-      "title": "Importunternehmen? Erhalten Sie kaufbereite Kunden.",
-      "text": "Wir leiten Anfragen von Kunden weiter, die Kosten und Budget bereits kennen — inklusive vollständiger Kalkulation.",
-      "b1": "Leads mit vollständiger Kalkulation",
-      "b2": "DSGVO-Einwilligung vor Weitergabe",
-      "b3": "Abrechnung pro angenommenem Lead",
-      "cta": "Partner werden"
-    },
     "final": {
       "title": "Berechnen Sie Ihren Import in einer Minute",
-      "text": "Ohne Anmeldung. Sofortiges Ergebnis, PDF-Bericht wenn Sie bereit sind."
+      "text": "Ohne Anmeldung und Verpflichtung. Ist das Auto zu teuer, haben Sie gerade Geld gespart. Lohnt es sich, bieten Sie in Ruhe – mit voller Kostenkenntnis.",
+      "title1": "Prüfen, bevor Sie kaufen.",
+      "title2": "Es dauert eine Minute.",
+      "cta": "Importkosten berechnen",
+      "about": "Wer wir sind"
     },
     "strip": {
       "brand": {
         "title": "CarImport.eu —",
-        "text": "Autoimport in die EU"
+        "text": "unabhängiger Import-Rechner"
       },
-      "docs": {
-        "title": "Dokumente",
-        "text": "Komplette Liste für Zoll und Zulassung"
+      "instant": {
+        "title": "Ergebnis in einer Minute",
+        "text": "Nur die Adresse eingeben, den Rest schlagen wir vor"
       },
-      "routes": {
-        "title": "8 Seerouten",
-        "text": "Nach Bremerhaven, Rotterdam, Antwerpen, Gdynia"
+      "items": {
+        "title": "40+ Kostenpositionen",
+        "text": "Von der Auktion bis zur Zulassung und den Risiken"
       },
-      "fx": {
-        "title": "NBP-Kurse",
-        "text": "An jedem Werktag aktualisiert"
+      "ports": {
+        "title": "43 EU-Häfen",
+        "text": "Wir wählen den günstigsten für Ihre Adresse"
       }
     },
     "map": {
@@ -530,47 +528,6 @@
       "legendRoute": "Seeroute",
       "scroll": "Karte seitlich wischen",
       "days": "Tage"
-    },
-    "services": {
-      "eyebrow": "Leistungen",
-      "title": "Was wir für Sie tun",
-      "lead": "Der ganze Weg — von der Kalkulation bis zum zulassungsfertigen Auto.",
-      "calc": {
-        "tag": "Rechner",
-        "title": "Importkosten live",
-        "text": "Auktion, Transport, Zoll, Verbrauchsteuer und USt — live mit jeder Eingabe.",
-        "alt": "Screenshot des Importkostenrechners"
-      },
-      "report": {
-        "tag": "Bericht",
-        "title": "Exakte Aufstellung",
-        "text": "Persönliches PDF mit allen Sätzen und Grundlagen."
-      },
-      "fx": {
-        "tag": "Währung",
-        "title": "Günstiger Geldwechsel",
-        "text": "In USD, JPY oder AED ohne Bankmarge zahlen."
-      },
-      "vin": {
-        "tag": "Historie",
-        "title": "VIN-Prüfung",
-        "text": "Schäden, Kilometer, Diebstahl — vor dem Gebot."
-      },
-      "finance": {
-        "tag": "Finanzen",
-        "title": "Leasing und Kredit",
-        "text": "Kauf, Transport und Steuern finanzieren."
-      },
-      "docs": {
-        "tag": "Dokumente",
-        "title": "Verzollung und Zulassung",
-        "text": "Dokumentenliste für Ihre Route und Ihr Land."
-      },
-      "partner": {
-        "tag": "Schlüsselfertig",
-        "title": "Import mit Partner",
-        "text": "Ein geprüfter Partner kauft, transportiert und verzollt für Sie."
-      }
     },
     "numbers": {
       "eyebrow": "CarImport.eu in Zahlen",
@@ -592,23 +549,103 @@
         "label": "Sprachen: Polnisch, Englisch, Deutsch, Ukrainisch"
       }
     },
-    "contact": {
-      "eyebrow": "Bereit, Ihr Auto zu holen",
-      "title1": "Beschreiben Sie,",
-      "title2": "welches Auto Sie suchen",
-      "lead": "Wir kalkulieren Termin und Komplettpreis.",
-      "b1": "Antwort innerhalb eines Werktags",
-      "b2": "Nur geprüfte Importunternehmen",
-      "b3": "Unverbindlich, ohne versteckte Kosten",
-      "origin": "Woher importieren",
-      "message": "Welches Auto suchen Sie",
-      "placeholder": "Marke, Modell, Baujahr, Budget oder Auktionslink",
-      "submit": "Anfrage senden",
-      "error": "Senden fehlgeschlagen. Bitte gleich erneut versuchen.",
-      "name": "Ihr Name",
-      "phone": "Telefonnummer",
-      "email": "E-Mail-Adresse",
-      "question": "Welches Auto? Marke, Modell, Budget oder Auktionslink"
+    "why": {
+      "eyebrow": "Warum es sich lohnt",
+      "title": "Wissen, was Sie zahlen – bevor Sie auf „Bieten“ klicken",
+      "lead": "Am teuersten sind beim Import die Kosten, die vor dem Kauf niemand erwähnt hat. Der Rechner bringt sie ans Licht, bevor Sie den ersten Dollar ausgeben.",
+      "preview": {
+        "tag": "Rechner",
+        "title": "Volle Kosten bis vor die Haustür in sechs Schritten",
+        "text": "Auktion, Transport, Zoll, Steuern, Zulassung und Risiken – in drei Szenarien.",
+        "alt": "Screenshot des Importkosten-Rechners"
+      },
+      "instant": {
+        "tag": "Sofort",
+        "title": "Kalkulation in einer Minute, nicht in zwei Tagen",
+        "text": "Keine Kontaktformulare, kein Warten auf den Verkäuferanruf. Jedes Feld hat einen Vorschlag – Sie ändern nur, was Sie besser wissen."
+      },
+      "independent": {
+        "tag": "Unabhängig",
+        "title": "Wir verkaufen weder Autos noch Transporte",
+        "text": "Wir verdienen keine Marge an Spediteuren oder Auktionen und haben keinen Grund, Kosten kleinzurechnen. Jeder bekommt dasselbe Ergebnis."
+      },
+      "ports": {
+        "tag": "43 Häfen",
+        "title": "Die günstigste Route zu Ihrer Adresse",
+        "text": "Wir kalkulieren jeden EU-Zollhafen von Tür zu Tür und zeigen den Unterschied."
+      },
+      "scenarios": {
+        "tag": "Szenarien",
+        "title": "Optimistisch, mittel, pessimistisch",
+        "text": "Wechselkurse, Verzögerungen und Risiken unterwegs – Sie sehen eine realistische Spanne statt einer „magischen“ Zahl."
+      },
+      "after": {
+        "tag": "Nach dem Import",
+        "title": "Zulassung und Papiere inklusive",
+        "text": "Hauptuntersuchung, Übersetzungen, Lichtumrüstung, Gebühren und Versicherung – mit Fristen."
+      },
+      "report": {
+        "tag": "PDF-Bericht",
+        "title": "Jeder Cent schwarz auf weiß",
+        "text": "Für 4,99 € ein persönlicher Bericht mit jedem Satz, jeder Bemessungsgrundlage und einem Plan nach dem Import."
+      }
+    },
+    "what": {
+      "eyebrow": "Was wir berücksichtigen",
+      "title": "Alles, was den Preis des Autos vor Ihrer Haustür ausmacht",
+      "lead": "Die meisten Rechner hören bei Zoll und Einfuhrumsatzsteuer auf. Wir rechnen die ganze Strecke – vom Auktionsplatz bis zum Kennzeichen – und ergänzen, was schiefgehen kann.",
+      "cta": "Mit Ihrem Auto testen",
+      "purchase": {
+        "title": "Kauf",
+        "i1": "Zuschlag oder Händlerpreis",
+        "i2": "Gebühren von Copart, IAAI, Manheim, USS nach Preisstufen",
+        "i3": "Clean/Salvage-Titel und Zustand",
+        "i4": "Geschätzte Reparaturkosten"
+      },
+      "transport": {
+        "title": "Transport",
+        "i1": "Vom Auktionsplatz zum Exporthafen",
+        "i2": "Container- oder RoRo-Fracht",
+        "i3": "Transportversicherung",
+        "i4": "Entladung und Terminalgebühren",
+        "i5": "Abschlepp- oder Autotransporter zu Ihrer Adresse"
+      },
+      "taxes": {
+        "title": "Zoll & Steuern",
+        "i1": "Zoll nach TARIC (10 %, 22 % für Pickups)",
+        "i2": "Verbrauchsteuer nach Motor und Antrieb",
+        "i3": "EUSt im Land des Zollhafens",
+        "i4": "Tagesaktueller Referenzkurs"
+      },
+      "after": {
+        "title": "Nach dem Import",
+        "i1": "Hauptuntersuchung und Typgenehmigung",
+        "i2": "Beglaubigte Übersetzungen",
+        "i3": "Zulassung, Kennzeichen und Gebühren",
+        "i4": "Licht- und Tachoumrüstung",
+        "i5": "Haftpflicht im ersten Jahr"
+      },
+      "risks": {
+        "title": "Risiken",
+        "i1": "Hafenlagerung und verspätete Schiffe",
+        "i2": "Zollbeschau und Wertprüfung",
+        "i3": "Versteckte Schäden und Transportschäden",
+        "i4": "Verzögerter Titel und Exportpapiere"
+      }
+    },
+    "compare": {
+      "eyebrow": "Vergleich",
+      "title": "Warum eine Überschlagsrechnung nicht reicht",
+      "self": "Selbst rechnen",
+      "broker": "Angebot eines Vermittlers",
+      "r1": "Auktionsgebühren nach aktuellen Stufen",
+      "r2": "Vergleich aller 43 EU-Häfen",
+      "r3": "Tageskurs + Puffer für Schwankungen",
+      "r4": "Steuern nach Zoll- und Zulassungsland",
+      "r5": "Risiken und drei Kostenszenarien",
+      "r6": "Zulassung und Papiere nach dem Import",
+      "r7": "Ohne Marge und versteckte Provision",
+      "note": "~ bedeutet „meist teilweise“. Vermittlerangebote enthalten oft ihre Marge und zeigen keine Aufschlüsselung."
     }
   },
   "pricing": {
@@ -632,13 +669,13 @@
       "cta": "Berechnen & freischalten"
     },
     "partner": {
-      "name": "Import mit Partner",
-      "price": "Partnerangebot",
-      "f1": "Geprüftes Importunternehmen",
-      "f2": "Kauf, Transport und Verzollung für Sie",
-      "f3": "Kontakt innerhalb 1 Werktags",
-      "f4": "Unverbindlich",
-      "cta": "Mit Rechnung starten"
+      "name": "Für Importfirmen",
+      "price": "Pro angenommenem Lead",
+      "f1": "Kunden mit fertiger Kalkulation",
+      "f2": "DSGVO-Einwilligung vor Weitergabe",
+      "f3": "Nur Anfragen, die Sie annehmen",
+      "f4": "Kein Abonnement",
+      "cta": "Partner werden"
     }
   },
   "faq": {
@@ -676,6 +713,10 @@
     "q8": {
       "q": "Ist das Ergebnis verbindlich?",
       "a": "Nein. Es ist eine Schätzung auf Basis aktueller Sätze. Endgültige Beträge legen Zoll- und Finanzamt fest, die z. B. den Zollwert prüfen können. Der Bericht nennt alle Annahmen."
+    },
+    "q9": {
+      "q": "Importiert CarImport.eu Autos?",
+      "a": "Nein. Wir sind ausschließlich ein Rechner – wir kaufen, transportieren und verzollen keine Autos und nehmen keine Provision von Auktionen oder Spediteuren. So bleibt die Kalkulation unabhängig. Auf Wunsch können Sie sie an eine geprüfte Importfirma weitergeben, das entscheiden immer Sie."
     }
   },
   "calc": {
@@ -687,7 +728,7 @@
   "seo": {
     "home": {
       "title": "Autoimport-Rechner – USA, Japan, Dubai in die EU | CarImport.eu",
-      "description": "Berechnen Sie die Importkosten aus USA, Kanada, Japan, VAE oder UK: Copart- und IAAI-Gebühren, Transport, Zoll, Verbrauchsteuer und USt. Live-Ergebnis und PDF-Bericht."
+      "description": "Unabhängiger Rechner für den Autoimport aus den USA, Kanada, Japan, den VAE und UK: Auktion, Transport, Zoll, Steuern, Zulassung und Risiken. Sofort, ohne Anmeldung."
     },
     "calculator": {
       "title": "Rechner für Zoll, Verbrauchsteuer & USt beim Autoimport | CarImport.eu",
@@ -696,6 +737,10 @@
     "privacy": {
       "title": "Datenschutzerklärung | CarImport.eu",
       "description": "Wie CarImport.eu personenbezogene Daten verarbeitet: Zahlungen, Berichte, Partneranfragen und Cookies."
+    },
+    "about": {
+      "title": "Über uns – unabhängiger Auto-Import-Rechner | CarImport.eu",
+      "description": "Wer wir sind, woher unsere Daten stammen und wie wir Geld verdienen. CarImport.eu verkauft und importiert keine Autos – es berechnet die vollen Importkosten ehrlich und unabhängig."
     }
   },
   "privacy": {
@@ -873,5 +918,89 @@
     "ATLANTIC": "Atlantik",
     "WEST_MED": "Westliches Mittelmeer",
     "EAST_MED": "Adria, Ägäis & Schwarzes Meer"
+  },
+  "about": {
+    "eyebrow": "Über uns",
+    "title1": "Wir rechnen Autoimporte.",
+    "title2": "Wir verkaufen keine Autos.",
+    "lead": "CarImport.eu ist ein unabhängiger Rechner für die Kosten eines Autos von außerhalb der EU. Damit jeder – nicht nur ein Händler mit zehn Jahren Erfahrung – vor dem Kauf weiß, was er wirklich zahlt.",
+    "story": {
+      "eyebrow": "Wie alles begann",
+      "title": "Aus Frust über versteckte Kosten",
+      "p1": "Ein Auto von einer US-Auktion sieht nach Schnäppchen aus – bis man Auktionsgebühren, Transport zum Hafen, Fracht, Zoll, Steuern, Entladung, Abschleppwagen, Übersetzungen, Hauptuntersuchung und Zulassung addiert. Jede Position ist „klein“, zusammen verdoppeln sie den Preis.",
+      "p2": "Die Informationen sind über Auktionspreislisten, Zolltarife, Kurstabellen und die Regeln von 27 Ländern verstreut. Vermittler nennen meist eine Zahl ohne Aufschlüsselung – mit ihrer Marge darin.",
+      "p3": "Wir haben ein Werkzeug gebaut, das alles bündelt, mit aktuellen Sätzen rechnet und jede Annahme zeigt. Ohne Anmeldung, ohne Verkäuferanruf."
+    },
+    "role": {
+      "eyebrow": "Ehrlich darüber, was wir sind",
+      "title": "Wir sind ein Rechner. Nur ein Rechner.",
+      "is": "Was wir sind",
+      "is1": "Ein unabhängiger Rechner der vollen Importkosten",
+      "is2": "Ein Vergleich von 43 EU-Zollhäfen für Ihre Adresse",
+      "is3": "Die Quelle eines detaillierten PDF-Berichts",
+      "is4": "Eine Liste der Schritte und Dokumente nach dem Import",
+      "isNot": "Was wir nicht sind",
+      "isNot1": "Kein Importeur und kein Händler – wir verkaufen keine Autos",
+      "isNot2": "Wir organisieren weder Transport noch Verzollung",
+      "isNot3": "Keine Provision von Auktionen, Spediteuren oder Zollagenten",
+      "isNot4": "Keine Behörde und kein Steuerberater – das Ergebnis ist eine Schätzung"
+    },
+    "data": {
+      "eyebrow": "Woher die Zahlen kommen",
+      "title": "Aktuelle Sätze statt „ungefähr“",
+      "lead": "Jeder Betrag beruht auf einem konkreten Satz, den der Bericht zeigt. Daten werden automatisch oder bei jeder Gesetzesänderung aktualisiert.",
+      "customs": {
+        "title": "EU-Zolltarif",
+        "text": "Zollsätze nach KN-Code (TARIC) für Pkw, Pickups, Motorräder und Oldtimer."
+      },
+      "fx": {
+        "title": "Zentralbankkurse",
+        "text": "Referenzkurse an jedem Werktag, mit Puffer für Schwankungen bis zur Zahlung."
+      },
+      "fees": {
+        "title": "Preislisten von Auktionen und Spediteuren",
+        "text": "Gebührenstufen von Copart, IAAI, Manheim und USS, Frachtraten, Hafengebühren und Kilometerpreise."
+      },
+      "law": {
+        "title": "Nationale Vorschriften",
+        "text": "Verbrauchsteuer, USt-Sätze von 27 Ländern, Zulassungsgebühren und Pflichtprüfungen – mit Rechtsgrundlage im Bericht."
+      }
+    },
+    "money": {
+      "eyebrow": "Wie wir verdienen",
+      "title": "Transparent – denn es geht um Vertrauen",
+      "lead": "Das Ergebnis hängt nicht davon ab, wer uns wie viel zahlt. Wir verdienen auf drei offene Arten:",
+      "m1": {
+        "title": "PDF-Bericht – 4,99 €",
+        "text": "Das kostenlose Ergebnis zeigt Spanne und Struktur. Den detaillierten Bericht kaufen Sie nur, wenn Sie ihn brauchen."
+      },
+      "m2": {
+        "title": "Optionale Anfrage an eine Importfirma",
+        "text": "Nur auf Ihren Wunsch geben wir die Kalkulation an eine geprüfte Firma weiter. Sie zahlt uns, nicht Sie – und nur mit Ihrer Einwilligung."
+      },
+      "m3": {
+        "title": "Gekennzeichnete Partnerlinks",
+        "text": "Z. B. VIN-Prüfung oder Devisentausch. Immer gekennzeichnet, ohne Einfluss auf die Kalkulation."
+      }
+    },
+    "values": {
+      "eyebrow": "Was uns leitet",
+      "transparency": {
+        "title": "Transparenz",
+        "text": "Jede Zahl hat eine Quelle. Was geschätzt ist, nennen wir Schätzung."
+      },
+      "independence": {
+        "title": "Unabhängigkeit",
+        "text": "Uns ist egal, ob Sie das Auto kaufen und wer es für Sie importiert."
+      },
+      "precision": {
+        "title": "Präzision",
+        "text": "Wir rechnen auf den Cent, zeigen aber auch eine Spanne – Import ist keine perfekte Mathematik."
+      }
+    },
+    "cta": {
+      "title": "Prüfen Sie Ihr Auto in einer Minute",
+      "text": "Frage oder veralteter Satz entdeckt? Schreiben Sie an {{email}}"
+    }
   }
 }

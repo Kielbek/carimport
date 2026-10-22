@@ -38,10 +38,12 @@ import { Logo } from './logo';
         <div>
           <h2 class="label">{{ 'footer.service' | translate }}</h2>
           <ul class="space-y-2.5 text-sm text-fg/85">
+            <li><a [routerLink]="about()" class="hover:text-brand-text">{{ 'layout.about' | translate }}</a></li>
+            <li><a [routerLink]="home()" fragment="what" class="hover:text-brand-text">{{ 'layout.what' | translate }}</a></li>
             <li><a [routerLink]="home()" fragment="how-it-works" class="hover:text-brand-text">{{ 'layout.howItWorks' | translate }}</a></li>
             <li><a [routerLink]="home()" fragment="pricing" class="hover:text-brand-text">{{ 'layout.pricing' | translate }}</a></li>
             <li><a [routerLink]="home()" fragment="faq" class="hover:text-brand-text">{{ 'layout.faq' | translate }}</a></li>
-            <li><a [routerLink]="home()" fragment="partners" class="hover:text-brand-text">{{ 'layout.forBusiness' | translate }}</a></li>
+            <li><a [routerLink]="home()" fragment="pricing" class="hover:text-brand-text">{{ 'layout.forBusiness' | translate }}</a></li>
             <li><a [routerLink]="privacy()" class="hover:text-brand-text">{{ 'footer.privacy' | translate }}</a></li>
           </ul>
         </div>
@@ -77,5 +79,6 @@ export class SiteFooter {
   protected readonly origins = ['USA', 'CANADA', 'JAPAN', 'UAE', 'UK'].map((code) => ({ code }));
   protected readonly home = computed(() => pathFor('home', this.lang.current()));
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
+  protected readonly about = computed(() => pathFor('about', this.lang.current()));
   protected readonly privacy = computed(() => pathFor('privacy', this.lang.current()));
 }

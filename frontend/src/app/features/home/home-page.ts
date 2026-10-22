@@ -4,43 +4,55 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { CountryNamePipe } from '../../core/format/country-name.pipe';
 import { LanguageService } from '../../core/i18n/language.service';
 import { pathFor } from '../../core/routing/paths';
-import { SITE } from '../../core/site.config';
 import { Flag } from '../../shared/flag/flag';
 import { Icon } from '../../shared/icon/icon';
 import { IconName } from '../../shared/icon/icons';
-import { ContactSection } from './contact-section';
 import { FaqSection } from './faq-section';
 import { WorldMap } from './world-map';
 
-interface Tile { key: string; icon: IconName; to: 'calculator' | 'contact'; highlight?: boolean }
+interface Benefit { key: string; icon: IconName; highlight?: boolean }
+interface CostGroup { key: string; icon: IconName; items: number }
 
-/** Landing page, prerendered per language. Layout follows the brand template (autoimport.pro). */
+/**
+ * Landing page, prerendered per language. CarImport.eu is a calculator only - it neither sells nor imports cars - so
+ * the page sells the calculation: instant, independent, complete, and ends every section with a way into it.
+ */
 @Component({
   selector: 'app-home-page',
-  imports: [RouterLink, TranslatePipe, CountryNamePipe, Flag, Icon, WorldMap, FaqSection, ContactSection],
+  imports: [RouterLink, TranslatePipe, CountryNamePipe, Flag, Icon, WorldMap, FaqSection],
   template: `
-    <!-- HERO (always dark, like the template) -->
-    <section class="theme-dark hero relative isolate min-h-[600px] overflow-hidden text-fg"
-             [class.hero-photo]="heroImage" [style.background-image]="heroImage ? 'url(' + heroImage + ')' : null">
-      <div class="neon-ring -z-0"></div>
-      <div class="neon-bar -z-0"></div>
-      <div class="site relative z-10 flex min-h-[600px] flex-col justify-center pb-28 pt-16">
-        <div class="max-w-[620px]">
-          <h1 class="h-display">
+    <!-- HERO (always dark) -->
+    <section class="theme-dark hero relative isolate overflow-hidden text-fg">
+      <div class="site relative grid min-h-[620px] items-center gap-6 pb-10 pt-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:pb-28">
+        <div class="relative z-10 max-w-[600px]">
+          <p class="eyebrow">{{ 'home.hero.eyebrow' | translate }}</p>
+          <h1 class="h-display mt-5">
             <span class="block text-brand">{{ 'home.hero.title1' | translate }}</span>
             <span class="block">{{ 'home.hero.title2' | translate }}</span>
           </h1>
-          <p class="mt-8 max-w-[540px] text-[16px] leading-[1.45] text-fg/95">{{ 'home.hero.lead' | translate }}</p>
-          <div class="mt-10 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
-            <a [routerLink]="calculator()" class="btn btn-outline">{{ 'home.hero.cta' | translate }}</a>
-            <a routerLink="." fragment="contact" class="link-arrow text-[15px]">{{ 'home.hero.secondary' | translate }} <app-icon name="arrow-long" [size]="26" [stroke]="1.5" /></a>
+          <p class="mt-7 max-w-[540px] text-[16px] leading-[1.5] text-fg/95">{{ 'home.hero.lead' | translate }}</p>
+          <ul class="mt-6 space-y-2 text-[14px] text-fg/90">
+            @for (n of [1, 2, 3]; track n) {
+              <li class="flex items-start gap-2.5"><app-icon name="check" [size]="18" [stroke]="2.5" class="mt-0.5 shrink-0 text-brand" />{{ 'home.hero.point' + n | translate }}</li>
+            }
+          </ul>
+          <div class="mt-9 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
+            <a [routerLink]="calculator()" class="btn btn-primary"><app-icon name="calculator" [size]="18" /> {{ 'home.hero.cta' | translate }}</a>
+            <a routerLink="." fragment="what" class="link-arrow text-[15px]">{{ 'home.hero.secondary' | translate }} <app-icon name="arrow-long" [size]="26" [stroke]="1.5" /></a>
           </div>
         </div>
 
-        <dl class="mt-14 grid grid-cols-2 gap-5 border-t border-line pt-5 md:absolute md:inset-x-5 md:bottom-0 md:mt-0 md:grid-cols-4 md:border-0 md:pb-6 md:pt-0">
-          <div class="text-sm font-bold leading-tight">{{ 'home.strip.brand.title' | translate }}<br>{{ 'home.strip.brand.text' | translate }}</div>
+        <div class="relative -mx-5 lg:-mr-24 lg:ml-0">
+          <img class="hero-car w-full" src="/images/hero-car-1600.webp"
+               srcset="/images/hero-car-900.webp 900w, /images/hero-car-1600.webp 1600w"
+               sizes="(min-width: 1024px) 60vw, 100vw" width="1600" height="835" fetchpriority="high" decoding="async"
+               [alt]="'home.hero.visual' | translate" />
+        </div>
+
+        <dl class="grid grid-cols-2 gap-5 border-t border-line pt-5 lg:absolute lg:inset-x-5 lg:bottom-0 lg:grid-cols-4 lg:border-0 lg:pb-6 lg:pt-0">
+          <div class="col-span-2 text-sm font-bold leading-tight lg:col-span-1">{{ 'home.strip.brand.title' | translate }}<br>{{ 'home.strip.brand.text' | translate }}</div>
           @for (k of strip; track k) {
-            <div class="border-l border-line pl-4 md:pl-8">
+            <div class="border-l border-line pl-4 lg:pl-8">
               <dt class="font-bold">{{ 'home.strip.' + k + '.title' | translate }}</dt>
               <dd class="mt-1 text-xs text-muted">{{ 'home.strip.' + k + '.text' | translate }}</dd>
             </div>
@@ -49,38 +61,97 @@ interface Tile { key: string; icon: IconName; to: 'calculator' | 'contact'; high
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section id="services" class="site py-16">
-      <p class="eyebrow">{{ 'home.services.eyebrow' | translate }}</p>
-      <h2 class="h-section mt-5">{{ 'home.services.title' | translate }}</h2>
-      <p class="mt-4 text-[16px] text-fg/90">{{ 'home.services.lead' | translate }}</p>
+    <!-- WHY -->
+    <section id="why" class="site py-16">
+      <p class="eyebrow">{{ 'home.why.eyebrow' | translate }}</p>
+      <h2 class="h-section mt-5 max-w-4xl">{{ 'home.why.title' | translate }}</h2>
+      <p class="mt-4 max-w-3xl text-[16px] text-fg/90">{{ 'home.why.lead' | translate }}</p>
 
       <div class="mt-9 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
         <a [routerLink]="calculator()" class="group relative min-h-[312px] overflow-hidden rounded-[4px] bg-ink sm:col-span-2">
           <img src="/images/calculator-preview.webp" width="1200" height="760" loading="lazy" decoding="async"
-               [alt]="'home.services.calc.alt' | translate"
+               [alt]="'home.why.preview.alt' | translate"
                class="absolute inset-0 h-full w-full object-cover object-left-top transition duration-500 group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black via-black/75 to-black/10"></div>
           <div class="absolute bottom-5 left-6 right-6 text-white">
-            <span class="text-sm font-semibold uppercase tracking-[0.12em] text-brand">{{ 'home.services.calc.tag' | translate }}</span>
-            <h3 class="mt-2 text-2xl font-bold">{{ 'home.services.calc.title' | translate }}</h3>
-            <p class="mt-1 text-sm text-white/90">{{ 'home.services.calc.text' | translate }}</p>
+            <span class="text-sm font-semibold uppercase tracking-[0.12em] text-brand">{{ 'home.why.preview.tag' | translate }}</span>
+            <h3 class="mt-2 text-2xl font-bold">{{ 'home.why.preview.title' | translate }}</h3>
+            <p class="mt-1 text-sm text-white/90">{{ 'home.why.preview.text' | translate }}</p>
           </div>
         </a>
 
-        @for (t of tiles; track t.key; let i = $index) {
-          <a [routerLink]="t.to === 'calculator' ? calculator() : '.'" [fragment]="t.to === 'contact' ? 'contact' : undefined"
+        @for (b of benefits; track b.key; let i = $index) {
+          <a [routerLink]="calculator()"
              class="group relative flex flex-col rounded-[4px] p-5 transition duration-200 hover:-translate-y-1"
-             [class]="(i < 2 ? 'min-h-[312px] ' : 'min-h-[230px] ') + (t.highlight ? 'bg-white text-neutral-900 hover:bg-neutral-100' : 'border border-card-border bg-panel hover:bg-panel-2')">
+             [class]="(i < 2 ? 'min-h-[312px] ' : 'min-h-[250px] ') + (b.highlight ? 'bg-white text-neutral-900 hover:bg-neutral-100' : 'border border-card-border bg-panel hover:bg-panel-2')">
             <div class="flex items-center justify-between gap-3">
-              <app-icon [name]="t.icon" [size]="44" [stroke]="1.5" [class]="t.highlight ? 'text-[#b38600]' : 'text-brand-text'" />
-              <span class="text-right text-[16px] uppercase tracking-[0.08em]" [class]="t.highlight ? 'text-[#b38600]' : 'text-brand-text'">{{ 'home.services.' + t.key + '.tag' | translate }}</span>
+              <app-icon [name]="b.icon" [size]="44" [stroke]="1.5" [class]="b.highlight ? 'text-[#b38600]' : 'text-brand-text'" />
+              <span class="text-right text-[15px] uppercase tracking-[0.08em]" [class]="b.highlight ? 'text-[#b38600]' : 'text-brand-text'">{{ 'home.why.' + b.key + '.tag' | translate }}</span>
             </div>
-            <h3 class="font-extrabold leading-tight" [class]="i < 2 ? 'mt-9 text-[20px]' : 'mt-8 text-xl'">{{ 'home.services.' + t.key + '.title' | translate }}</h3>
-            <p class="mt-3 text-[14px] leading-[1.35]" [class]="t.highlight ? 'text-neutral-700' : 'text-fg/85'">{{ 'home.services.' + t.key + '.text' | translate }}</p>
+            <h3 class="font-extrabold leading-tight" [class]="i < 2 ? 'mt-9 text-[20px]' : 'mt-8 text-xl'">{{ 'home.why.' + b.key + '.title' | translate }}</h3>
+            <p class="mt-3 text-[14px] leading-[1.4]" [class]="b.highlight ? 'text-neutral-700' : 'text-fg/85'">{{ 'home.why.' + b.key + '.text' | translate }}</p>
             <span class="arrow-round ml-auto mt-auto"><app-icon name="arrow-long" [size]="22" /></span>
           </a>
         }
+      </div>
+    </section>
+
+    <!-- WHAT WE COUNT -->
+    <section id="what" class="border-t border-line py-16">
+      <div class="site">
+        <div class="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
+          <div>
+            <p class="eyebrow">{{ 'home.what.eyebrow' | translate }}</p>
+            <h2 class="h-section mt-5 max-w-3xl">{{ 'home.what.title' | translate }}</h2>
+            <p class="mt-4 max-w-3xl text-[16px] text-fg/90">{{ 'home.what.lead' | translate }}</p>
+          </div>
+          <a [routerLink]="calculator()" class="btn btn-outline self-start lg:self-end">{{ 'home.what.cta' | translate }}</a>
+        </div>
+        <div class="mt-10 grid gap-px overflow-hidden rounded-[4px] border border-line bg-line sm:grid-cols-2 lg:grid-cols-5">
+          @for (g of costGroups; track g.key) {
+            <div class="bg-bg p-6">
+              <app-icon [name]="g.icon" [size]="32" [stroke]="1.5" class="text-brand-text" />
+              <h3 class="mt-5 text-lg font-extrabold">{{ 'home.what.' + g.key + '.title' | translate }}</h3>
+              <ul class="mt-4 space-y-2.5 text-[14px] text-fg/85">
+                @for (n of range(g.items); track n) {
+                  <li class="flex items-start gap-2.5"><app-icon name="check" [size]="16" class="mt-0.5 shrink-0 text-brand-text" />{{ 'home.what.' + g.key + '.i' + n | translate }}</li>
+                }
+              </ul>
+            </div>
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON -->
+    <section id="compare" class="border-t border-line py-16">
+      <div class="site">
+        <p class="eyebrow">{{ 'home.compare.eyebrow' | translate }}</p>
+        <h2 class="h-section mt-5 max-w-3xl">{{ 'home.compare.title' | translate }}</h2>
+        <div class="mt-9 overflow-x-auto">
+          <table class="w-full min-w-[640px] text-[15px]">
+            <caption class="sr-only">{{ 'home.compare.title' | translate }}</caption>
+            <thead>
+              <tr class="border-b border-line text-left text-[12px] uppercase tracking-[0.06em] text-muted">
+                <th class="py-3 pr-4 font-semibold"></th>
+                <th class="w-36 py-3 text-center font-semibold">{{ 'home.compare.self' | translate }}</th>
+                <th class="w-36 py-3 text-center font-semibold">{{ 'home.compare.broker' | translate }}</th>
+                <th class="w-36 bg-brand/10 py-3 text-center font-semibold text-brand-text">CarImport.eu</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (r of compareRows; track r.n) {
+                <tr class="border-b border-line">
+                  <td class="py-4 pr-4 font-medium">{{ 'home.compare.r' + r.n | translate }}</td>
+                  <td class="text-center">@switch (r.self) { @case ('yes') { <app-icon name="check" [size]="20" class="inline text-success" /> } @case ('part') { <span class="text-muted">~</span> } @default { <app-icon name="x" [size]="18" class="inline text-muted" /> } }</td>
+                  <td class="text-center">@switch (r.broker) { @case ('yes') { <app-icon name="check" [size]="20" class="inline text-success" /> } @case ('part') { <span class="text-muted">~</span> } @default { <app-icon name="x" [size]="18" class="inline text-muted" /> } }</td>
+                  <td class="bg-brand/10 text-center"><app-icon name="check" [size]="20" [stroke]="2.5" class="inline text-brand-text" /></td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-4 text-xs text-muted">{{ 'home.compare.note' | translate }}</p>
       </div>
     </section>
 
@@ -94,7 +165,7 @@ interface Tile { key: string; icon: IconName; to: 'calculator' | 'contact'; high
       </div>
     </section>
 
-    <!-- NUMBERS (template: "в числах") -->
+    <!-- NUMBERS -->
     <section class="border-t border-line py-20">
       <div class="site grid gap-12 lg:grid-cols-[1fr_1.05fr]">
         <div>
@@ -195,59 +266,76 @@ interface Tile { key: string; icon: IconName; to: 'calculator' | 'contact'; high
                   <li class="flex gap-3"><app-icon name="check" [size]="18" class="text-brand-text" />{{ 'pricing.' + plan.key + '.f' + n | translate }}</li>
                 }
               </ul>
-              <a [routerLink]="plan.key === 'partner' ? '.' : calculator()" [fragment]="plan.key === 'partner' ? 'contact' : undefined"
-                 class="btn mt-8" [class]="plan.featured ? 'btn-primary' : 'btn-outline'">{{ 'pricing.' + plan.key + '.cta' | translate }}</a>
+              @if (plan.key === 'partner') {
+                <a [href]="'mailto:' + partnerMail" class="btn btn-outline mt-8">{{ 'pricing.partner.cta' | translate }}</a>
+              } @else {
+                <a [routerLink]="calculator()" class="btn mt-8" [class]="plan.featured ? 'btn-primary' : 'btn-outline'">{{ 'pricing.' + plan.key + '.cta' | translate }}</a>
+              }
             </article>
           }
         </div>
       </div>
     </section>
 
-    <!-- FOR IMPORT COMPANIES -->
-    <section id="partners" class="border-t border-line py-16">
-      <div class="site grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-center">
-        <div>
-          <p class="eyebrow">{{ 'home.partners.eyebrow' | translate }}</p>
-          <h2 class="h-section mt-5">{{ 'home.partners.title' | translate }}</h2>
-          <p class="mt-4 max-w-xl leading-relaxed text-muted">{{ 'home.partners.text' | translate }}</p>
+    <app-faq-section />
+
+    <!-- FINAL CTA -->
+    <section class="site pb-4 pt-6">
+      <div class="theme-dark relative grid items-center gap-8 overflow-hidden rounded-[4px] bg-panel p-8 text-fg sm:p-10 lg:grid-cols-[1fr_1fr] lg:p-[50px]">
+        <div class="relative z-10">
+          <h2 class="h-section"><span class="text-brand">{{ 'home.final.title1' | translate }}</span> {{ 'home.final.title2' | translate }}</h2>
+          <p class="mt-6 max-w-lg leading-relaxed text-fg/85">{{ 'home.final.text' | translate }}</p>
+          <div class="mt-8 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
+            <a [routerLink]="calculator()" class="btn btn-primary"><app-icon name="calculator" [size]="18" /> {{ 'home.final.cta' | translate }}</a>
+            <a [routerLink]="about()" class="link-arrow text-[15px]">{{ 'home.final.about' | translate }} <app-icon name="arrow-long" [size]="26" [stroke]="1.5" /></a>
+          </div>
         </div>
-        <div>
-          <ul class="divide-y divide-line border-y border-line">
-            @for (n of [1, 2, 3]; track n) {
-              <li class="flex items-center gap-4 py-4 font-medium"><app-icon name="check" [size]="20" class="text-brand-text" />{{ 'home.partners.b' + n | translate }}</li>
-            }
-          </ul>
-          <a [href]="'mailto:' + partnerMail" class="btn btn-outline mt-8">{{ 'home.partners.cta' | translate }}</a>
-        </div>
+        <img src="/images/hero-car-900.webp" width="900" height="470" loading="lazy" decoding="async" alt=""
+             class="pointer-events-none -mb-6 w-full max-w-[560px] justify-self-end lg:-mr-10" />
       </div>
     </section>
-
-    <app-faq-section />
-    <app-contact-section />
   `,
 })
 export class HomePage {
   protected readonly lang = inject(LanguageService);
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
-  protected readonly heroImage = SITE.heroImage;
+  protected readonly about = computed(() => pathFor('about', this.lang.current()));
   protected readonly partnerMail = 'partnerzy@carimport.eu';
-  protected readonly strip = ['docs', 'routes', 'fx'];
+  protected readonly strip = ['instant', 'items', 'ports'];
 
-  /** Same rhythm as the template: two tall tiles next to the wide visual, then a row of four, last one inverted. */
-  protected readonly tiles: Tile[] = [
-    { key: 'report', icon: 'document', to: 'calculator' },
-    { key: 'fx', icon: 'exchange', to: 'calculator' },
-    { key: 'vin', icon: 'search', to: 'calculator' },
-    { key: 'finance', icon: 'wallet', to: 'calculator' },
-    { key: 'docs', icon: 'list', to: 'calculator' },
-    { key: 'partner', icon: 'PASSENGER_CAR', to: 'contact', highlight: true },
+  /** Two tall tiles next to the wide preview, then a row of four, the last one inverted. */
+  protected readonly benefits: Benefit[] = [
+    { key: 'instant', icon: 'timer' },
+    { key: 'independent', icon: 'scale' },
+    { key: 'ports', icon: 'anchor' },
+    { key: 'scenarios', icon: 'pie' },
+    { key: 'after', icon: 'list' },
+    { key: 'report', icon: 'document', highlight: true },
+  ];
+
+  protected readonly costGroups: CostGroup[] = [
+    { key: 'purchase', icon: 'banknote', items: 4 },
+    { key: 'transport', icon: 'ship', items: 5 },
+    { key: 'taxes', icon: 'landmark', items: 4 },
+    { key: 'after', icon: 'document', items: 5 },
+    { key: 'risks', icon: 'warning', items: 4 },
+  ];
+
+  protected readonly compareRows: { n: number; self: 'yes' | 'part' | 'no'; broker: 'yes' | 'part' | 'no' }[] = [
+    { n: 1, self: 'part', broker: 'part' },
+    { n: 2, self: 'no', broker: 'no' },
+    { n: 3, self: 'part', broker: 'part' },
+    { n: 4, self: 'no', broker: 'part' },
+    { n: 5, self: 'no', broker: 'no' },
+    { n: 6, self: 'part', broker: 'no' },
+    { n: 7, self: 'yes', broker: 'no' },
   ];
 
   protected readonly steps: { key: string; icon: IconName }[] = [
     { key: 's1', icon: 'globe' },
     { key: 's2', icon: 'PASSENGER_CAR' },
-    { key: 's3', icon: 'pie' },
-    { key: 's4', icon: 'document' },
+    { key: 's3', icon: 'map-pin' },
+    { key: 's4', icon: 'pie' },
   ];
 
   protected readonly costs: { key: string; icon: IconName }[] = [
@@ -271,4 +359,8 @@ export class HomePage {
     { key: 'report', featured: true },
     { key: 'partner', featured: false },
   ];
+
+  protected range(n: number): number[] {
+    return Array.from({ length: n }, (_, i) => i + 1);
+  }
 }
