@@ -398,7 +398,8 @@
     "why": "Why us",
     "what": "What we count",
     "ctaHint": "Free, no sign-up",
-    "language": "Language"
+    "language": "Language",
+    "blog": "Blog"
   },
   "footer": {
     "about": "Independent calculator of import costs for cars from outside the EU. We neither sell nor import cars – we work out what they really cost.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Related guides",
     "disclaimer": "Information for orientation only; tax and customs authorities decide the final amounts. Rates as used by the calculator."
+  },
+  "blog": {
+    "title": "Car import blog",
+    "lead": "Practical articles about importing cars from the USA, Canada, Japan, the UAE and the UK: real costs, auctions, customs, registration and the mistakes to avoid.",
+    "metaTitle": "Car import blog – costs, auctions, customs, registration | CarImport.eu",
+    "metaDescription": "Guides and articles about importing a car into the EU: how much it really costs, how to buy at Copart and IAAI, customs duty, VAT and registration.",
+    "all": "All",
+    "minutes": "{{n}} min read",
+    "related": "Read also",
+    "latest": "From the blog",
+    "latestLead": "Answers to the questions people ask before importing a car.",
+    "more": "All articles",
+    "empty": "Articles in this language are coming soon.",
+    "category": {
+      "costs": "Costs",
+      "buying": "Buying",
+      "customs": "Customs & taxes",
+      "registration": "Registration",
+      "logistics": "Shipping & ports"
+    }
   }
 }

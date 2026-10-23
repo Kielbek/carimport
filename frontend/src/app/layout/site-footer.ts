@@ -52,6 +52,7 @@ import { Logo } from './logo';
           <h2 class="label">{{ 'footer.service' | translate }}</h2>
           <ul class="space-y-2.5 text-sm text-fg/85">
             <li><a [routerLink]="about()" class="hover:text-brand-text">{{ 'layout.about' | translate }}</a></li>
+            <li><a [routerLink]="'/' + lang.current() + '/blog'" class="hover:text-brand-text">{{ 'layout.blog' | translate }}</a></li>
             <li><a [routerLink]="home()" fragment="what" class="hover:text-brand-text">{{ 'layout.what' | translate }}</a></li>
             <li><a [routerLink]="home()" fragment="how-it-works" class="hover:text-brand-text">{{ 'layout.howItWorks' | translate }}</a></li>
             <li><a [routerLink]="home()" fragment="pricing" class="hover:text-brand-text">{{ 'layout.pricing' | translate }}</a></li>

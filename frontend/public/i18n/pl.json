@@ -398,7 +398,8 @@
     "why": "Dlaczego warto",
     "what": "Co liczymy",
     "ctaHint": "Za darmo, bez rejestracji",
-    "language": "Język"
+    "language": "Język",
+    "blog": "Blog"
   },
   "footer": {
     "about": "Niezależny kalkulator kosztów importu samochodów spoza UE. Nie sprzedajemy ani nie sprowadzamy aut – liczymy, ile naprawdę kosztują.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Powiązane poradniki",
     "disclaimer": "Informacje orientacyjne; ostateczne kwoty ustalają urzędy celne i skarbowe. Stawki takie, jak w kalkulatorze."
+  },
+  "blog": {
+    "title": "Blog o imporcie aut",
+    "lead": "Praktyczne artykuły o sprowadzaniu aut z USA, Kanady, Japonii, ZEA i Wielkiej Brytanii: realne koszty, aukcje, cło, akcyza, rejestracja i błędy, których warto uniknąć.",
+    "metaTitle": "Blog o imporcie aut – koszty, aukcje, cło, rejestracja | CarImport.eu",
+    "metaDescription": "Poradniki i artykuły o sprowadzaniu auta do Polski: ile naprawdę kosztuje import, jak kupić na Copart i IAAI, cło, akcyza, VAT i rejestracja.",
+    "all": "Wszystkie",
+    "minutes": "{{n}} min czytania",
+    "related": "Przeczytaj też",
+    "latest": "Z bloga",
+    "latestLead": "Odpowiedzi na pytania, które każdy zadaje przed sprowadzeniem auta.",
+    "more": "Wszystkie artykuły",
+    "empty": "Artykuły w tym języku pojawią się wkrótce.",
+    "category": {
+      "costs": "Koszty",
+      "buying": "Zakup",
+      "customs": "Cło i podatki",
+      "registration": "Rejestracja",
+      "logistics": "Transport i porty"
+    }
   }
 }
