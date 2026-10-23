@@ -1,0 +1,1014 @@
+{
+  "affiliate": {
+    "CURRENCY_EXCHANGE": "Izdevīgāka valūtas maiņa",
+    "CURRENCY_EXCHANGE_HINT": "Samaksājiet par auto bez bankas uzcenojuma",
+    "FINANCING": "Līzings vai kredīts",
+    "FINANCING_HINT": "Finansējiet importu un nodokļus",
+    "VIN_CHECK": "Pārbaudiet VIN vēsturi",
+    "VIN_CHECK_HINT": "Bojājumi, nobraukums, zādzību ieraksti",
+    "sponsored": "Sponsorēts",
+    "title": "Jums var noderēt arī"
+  },
+  "app": {
+    "headline": "Cik patiesībā maksā importēts auto?",
+    "tagline": "Izsoles ASV, Kanādā, Japānā, Dubaijā vai Apvienotajā Karalistē → ES muitas nodoklis, akcīzes nodoklis un PVN. Rezultāts uzreiz, bez reģistrācijas."
+  },
+  "auction": {
+    "COPART": "Copart",
+    "DEALER": "Dīleris / privātpersona",
+    "EMIRATES_AUCTION": "Emirates Auction",
+    "IAAI": "IAAI",
+    "USS": "USS Japāna"
+  },
+  "buyer": {
+    "COMPANY": "Uzņēmums",
+    "PRIVATE": "Privātpersona"
+  },
+  "category": {
+    "MOTORCYCLE": "Motocikls",
+    "PASSENGER_CAR": "Vieglais auto",
+    "PICKUP_TRUCK": "Pikaps",
+    "REGISTRATION": "Pēc importa un reģistrācija",
+    "SUV": "Apvidus auto (SUV)",
+    "TAXES": "ES muitas maksājumi un nodokļi",
+    "TRANSPORT": "Transports un loģistika",
+    "VAN": "Furgons",
+    "VEHICLE": "Transportlīdzeklis un izsole",
+    "RISK": "Riski ceļā"
+  },
+  "condition": {
+    "ENGINE_STARTS": "Dzinējs iedarbojas",
+    "ENGINE_STARTS_HINT": "Nevar pārvietoties ar savu jaudu",
+    "NON_RUNNING": "Bojāts / Salvage",
+    "NON_RUNNING_HINT": "Nepieciešams evakuators ar vinču",
+    "RUN_AND_DRIVE": "Run & Drive",
+    "RUN_AND_DRIVE_HINT": "Iedarbojas un brauc"
+  },
+  "cost": {
+    "AUCTION_AGENT_COMMISSION": "Eksporta aģenta komisija",
+    "AUCTION_BUYER_FEE": "Izsoles pircēja maksa",
+    "AUCTION_ENVIRONMENTAL_FEE": "Vides maksa",
+    "AUCTION_EXPORT_DOCS": "Eksporta dokumenti",
+    "AUCTION_GATE_FEE": "Izbraukšanas maksa (gate fee)",
+    "AUCTION_RECYCLING_FEE": "Utilizācijas maksa (Japāna)",
+    "AUCTION_SERVICE_FEE": "Izsoles pakalpojuma maksa",
+    "AUCTION_TITLE_HANDLING_FEE": "Īpašumtiesību dokumenta (title) apstrādes maksa",
+    "AUCTION_VIRTUAL_BID_FEE": "Tiešsaistes solīšanas maksa",
+    "CARGO_INSURANCE": "Kravas apdrošināšana",
+    "CUSTOMS_AGENCY": "Muitas brokera pakalpojumi",
+    "CUSTOMS_DUTY": "Muitas nodoklis",
+    "EXCISE_TAX": "Akcīzes nodoklis",
+    "FORKLIFT_LOADING": "Iekraušana ar iekrāvēju",
+    "IMPORT_VAT": "Importa PVN",
+    "INDIVIDUAL_APPROVAL": "Individuālā apstiprināšana (§21 StVZO)",
+    "INLAND_TRANSPORT": "Iekšzemes transports līdz ostai",
+    "INTRA_EU_ACQUISITION_VAT": "ES iekšienes iegādes PVN (apgrieztā maksāšana, atskaitāms)",
+    "INTRA_EU_TRANSPORT": "Autovedējs no ostas līdz galamērķim",
+    "OCEAN_FREIGHT": "Jūras pārvadājums",
+    "PORT_UNLOADING": "Izkraušana ostā un termināls",
+    "PURCHASE_PRICE": "Pirkuma cena (uzvarējusī likme)",
+    "RDW_INSPECTION": "RDW apskate",
+    "RECYCLING_FEE": "Utilizācijas maksa",
+    "REGISTRATION_FEE": "Reģistrācijas maksas",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Lukturu regulēšana (labās puses stūre)",
+    "SWORN_TRANSLATION": "Dokumentu zvērināts tulkojums",
+    "TECHNICAL_INSPECTION": "Tehniskā apskate",
+    "US_LIGHTING_CONVERSION": "Apgaismojuma pārbūve (ASV versija)",
+    "WINCH_CONTAINER_LOADING": "Iekraušana konteinerā ar vinču",
+    "DELIVERY_CAR_CARRIER": "Autovedējs no ostas līdz durvīm",
+    "DELIVERY_TOW_TRUCK": "Evakuators no ostas līdz durvīm",
+    "DELIVERY_SELF_DRIVE": "Brauciens mājās ar pagaidu numurzīmēm (degviela, numurzīmes, īstermiņa apdrošināšana)",
+    "TECHNICAL_INSPECTION_IMPORT": "Importēta transportlīdzekļa tehniskā apskate",
+    "REG_TEMPORARY_PERMIT": "Pagaidu reģistrācijas atļauja",
+    "REG_TEMPORARY_PLATES": "Pagaidu numurzīmes",
+    "REG_CERTIFICATE": "Reģistrācijas apliecība",
+    "REG_PLATES": "Numurzīmes",
+    "REG_STICKER": "Kontroles uzlīme",
+    "REAR_FOG_LIGHT": "Aizmugurējā miglas luktura uzstādīšana",
+    "SPEEDOMETER_KMH": "Spidometra pārveide uz km/h",
+    "SERVICE_INSPECTION": "Apkope un šķidrumu maiņa",
+    "GEOMETRY_ALIGNMENT": "Riteņu ģeometrijas regulēšana",
+    "DETAILING": "Tīrīšana un kosmētiskā apstrāde (detailing)",
+    "EXPERT_VALUATION": "Eksperta novērtējums (piem., KASKO apdrošināšanai)",
+    "REPAIR_ESTIMATE": "Remonts (jūsu aprēķins)",
+    "INSURANCE_FIRST_YEAR": "Apdrošināšana – pirmais gads (jūsu summa)",
+    "RISK_PORT_STORAGE": "Glabāšana ostā (novēlota izvešana, dokumenti)",
+    "RISK_CUSTOMS_INSPECTION": "Muitas kontrole / konteinera rentgens",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Muitas vērtības apstrīdēšana (papildu muitas nodoklis un PVN)",
+    "RISK_VESSEL_ROLLOVER": "Pārcelšana uz vēlāku kuģi (glabāšana eksporta ostā)",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Pārvadāšanas bojājumi – apdrošināšanas pašrisks",
+    "RISK_HIDDEN_DAMAGE": "Slēpti bojājumi, kas izsolē nebija redzami",
+    "RISK_TITLE_DELAY": "Īpašumtiesību dokumenta (title) kavēšanās (papildu glabāšana)",
+    "RISK_EXPORT_DOCS_DELAY": "Eksporta dokumentu kavēšanās"
+  },
+  "doc": {
+    "billOfLading": "Konosaments (Bill of Lading)",
+    "companyRegistryExtract": "Komercreģistra izraksts",
+    "customsDeclarationSad": "Muitas deklarācija (SAD)",
+    "customsPowerOfAttorney": "Pilnvara muitas brokerim",
+    "eoriNumber": "Importētāja EORI numurs",
+    "evChargingPortAdapterNote": "Pārbaudiet uzlādes ligzdas standartu (NACS/CCS1 → CCS2)",
+    "historicExpertOpinion": "Eksperta atzinums par vēsturiskā transportlīdzekļa statusu",
+    "insurancePolicy": "Kravas apdrošināšanas polise",
+    "invoice": "Izsoles rēķins / pirkuma līgums",
+    "ownership": {
+      "japanExportCertificate": "Japānas eksporta sertifikāts (Export Certificate, izslēgšana no reģistra)",
+      "title": "Oriģinālais Title (īpašumtiesību dokuments)",
+      "uaeExportCertificate": "AAE eksporta sertifikāts (RTA)",
+      "v5c": "Apvienotās Karalistes reģistrācijas dokuments V5C (logbook)"
+    },
+    "pl": {
+      "exciseDeclarationAkcUs": "Akcīzes deklarācija AKC-U/S un maksājuma apliecinājums",
+      "exciseExemptionConfirmation": "Akcīzes atbrīvojuma apstiprinājums (elektroauto)",
+      "recyclingFeeConfirmation": "Utilizācijas maksas samaksas apstiprinājums"
+    },
+    "procedure4200VatIdAndProofOfTransport": "Procedūra 4200: pircēja ES PVN maksātāja numurs un transportēšanas pierādījums",
+    "registrationApplication": "Transportlīdzekļa reģistrācijas iesniegums",
+    "salvageTitleRepairEvidence": "Remonta dokumentācija (salvage title)",
+    "swornTranslation": "Ārvalstu dokumentu zvērināti tulkojumi",
+    "technicalInspection": "Tehniskās apskates apliecinājums",
+    "transportInvoices": "Transporta un jūras pārvadājumu rēķini",
+    "usExportAesItn": "ASV eksporta deklarācija (AES/ITN)",
+    "vatPaymentProof": "PVN samaksas apliecinājums"
+  },
+  "error": {
+    "auction": {
+      "noSchedule": "Nav pieejams izsoles maksu cenrādis.",
+      "unsupported": "Šis izsoļu nams netiek atbalstīts."
+    },
+    "excise": {
+      "rateNotFound": "Šai konfigurācijai nav akcīzes nodokļa likmes."
+    },
+    "port": {
+      "unknown": "Nezināma galamērķa osta."
+    },
+    "procedure4200": {
+      "notAvailableInPort": "Procedūra 4200 šajā ostā nav pieejama.",
+      "sameCountry": "Procedūrai 4200 muitošanai jānotiek citā valstī, nevis galamērķa valstī."
+    },
+    "route": {
+      "unavailable": "Šai izvēlei nav pieejams jūras pārvadājumu maršruts."
+    },
+    "tariff": {
+      "notFound": "Transportlīdzekli neizdevās klasificēt muitas tarifā."
+    },
+    "taxProfile": {
+      "missing": "Izvēlētajai valstij nav nodokļu likmju."
+    }
+  },
+  "fuel": {
+    "DIESEL": "Dīzelis",
+    "EV": "Elektroauto",
+    "HEV": "Hibrīds",
+    "HYDROGEN": "Ūdeņradis",
+    "LPG": "LPG (gāze)",
+    "MHEV": "Vieglais hibrīds (mild hybrid)",
+    "PETROL": "Benzīns",
+    "PHEV": "Uzlādējams hibrīds (plug-in)"
+  },
+  "lead": {
+    "consentMarketing": "Sūtiet man importa piedāvājumus un padomus (pēc izvēles).",
+    "consentTransfer": "Piekrītu, ka mani dati un aprēķins tiek nodoti vienam pārbaudītam partnerim piedāvājuma sagatavošanai (VDAR 6. panta 1. punkta a) apakšpunkts).",
+    "email": "E-pasts",
+    "message": "Izsoles saite vai papildu informācija",
+    "name": "Vārds, uzvārds",
+    "phone": "Tālrunis (pēc izvēles)",
+    "submit": "Nosūtīt pieprasījumu",
+    "subtitle": "CarImport.eu automašīnas neimportē. Ja vēlaties, nodosim jūsu aprēķinu vienam pārbaudītam importa uzņēmumam, kas sagatavos piedāvājumu. Bez saistībām.",
+    "thanks": "Paldies!",
+    "thanksHint": "Importa uzņēmums ar jums sazināsies 1 darba dienas laikā.",
+    "title": "Pieprasījums importa uzņēmumam (pēc izvēles)"
+  },
+  "origin": {
+    "CANADA": "Kanāda",
+    "JAPAN": "Japāna",
+    "UAE": "AAE / Dubaija",
+    "UK": "Apvienotā Karaliste",
+    "USA": "ASV"
+  },
+  "paywall": {
+    "blikHint": "Maksājiet ar BLIK, Przelewy24 vai karti.",
+    "currency": "Maksājuma valūta",
+    "email": "E-pasts (nosūtīsim saiti uz atskaiti)",
+    "fullName": "Vārds, uzvārds (tiks norādīts atskaitē)",
+    "pay": "Turpināt uz maksājumu",
+    "redirecting": "Pāradresācija…",
+    "secure": "Drošs maksājums ar Stripe. Mēs nekad neglabājam kartes datus.",
+    "subtitle": "Precīzas summas, nodokļu bāzes un likmes, dokumenti – PDF formātā ar jūsu vārdu.",
+    "terms": "Piekrītu noteikumiem un lūdzu nekavējoties piegādāt digitālo saturu, atsakoties no atteikuma tiesībām.",
+    "title": "Pilna importa atskaite"
+  },
+  "report": {
+    "amount": "Summa",
+    "back": "Atpakaļ uz kalkulatoru",
+    "base": "Bāze",
+    "download": "Lejupielādēt PDF",
+    "expired": "Maksājums netika pabeigts.",
+    "generating": "Ģenerē PDF…",
+    "item": "Pozīcija",
+    "rate": "Likme",
+    "refunded": "Šis pasūtījums tika atmaksāts.",
+    "stage": "Posms",
+    "title": "Transportlīdzekļa importa izmaksu atskaite",
+    "total": "Kopējās izmaksas ar piegādi",
+    "waiting": "Apstiprinām jūsu maksājumu…",
+    "delivery": "Piegāde",
+    "leadTime": "Laiks līdz reģistrācijai",
+    "days": "dienas",
+    "scenarios": "Trīs izmaksu scenāriji",
+    "timeline": "Laika grafiks",
+    "plan": "Kas jādara pēc importa – soli pa solim",
+    "step": "Solis",
+    "deadline": "Termiņš",
+    "riskDetail": "Varbūtība {{p}}%, izmaksas, ja tas notiek: {{min}}–{{max}} {{cur}}",
+    "userAmount": "jūsu ievadītā summa",
+    "scenarioMethod": "Vidējais scenārijs ietver riskus kā sagaidāmo vērtību (varbūtība × vidējās izmaksas); pesimistiskais pieņem, ka katrs risks īstenojas ar augstākajām izmaksām."
+  },
+  "result": {
+    "chart": "Izmaksu struktūra",
+    "exciseIncluded": "Akcīzes nodoklis iekļauts",
+    "fx": "NBP kursi uz {{date}}",
+    "paid1": "Precīzas izsoles maksas",
+    "paid2": "Muitas nodoklis, akcīze un PVN",
+    "paid3": "Dokumentu kontrolsaraksts",
+    "paid4": "Personalizēta PDF atskaite",
+    "partner": "Vēlaties piedāvājumu no importa uzņēmuma?",
+    "rangeHint": "Diapazons ņem vērā valūtas kursu un frakts likmju svārstības.",
+    "title": "Aptuvenās kopējās izmaksas ar piegādi",
+    "transit": "{{days}} dienas jūrā",
+    "unlock": "Atbloķēt pilno atskaiti – {{price}}",
+    "updating": "Atjaunina…",
+    "short": "Kopējās izmaksas",
+    "calculating": "Aprēķinām katru pozīciju un scenāriju…",
+    "edit": "Mainīt datus",
+    "structure": "Izmaksu struktūra (vidējais scenārijs)",
+    "timeline": "Laiks: {{min}}–{{max}} dienas līdz reģistrācijai",
+    "included": "Kas ir iekļauts",
+    "risks": "Kas var notikt ceļā",
+    "risksLead": "Katram riskam ir varbūtība un izmaksu diapazons. Vidējais scenārijs tos ieskaita proporcionāli, pesimistiskais – pilnā apmērā. Summas ir atskaitē.",
+    "probability": "Varbūtība",
+    "reportEyebrow": "Atskaite no durvīm līdz durvīm",
+    "reportTitle": "Katra pozīcija līdz centam – trīs scenārijos",
+    "reportItem1": "Izsoles maksas, transports, frakts un apdrošināšana",
+    "reportItem2": "Muitas nodoklis, akcīze un PVN ar bāzēm un likmēm",
+    "reportItem3": "Piegāde: km × tarifs, iekraušana, minimums",
+    "reportItem4": "Reģistrācijas maksas un pakalpojumi pēc importa",
+    "reportItem5": "Riski ar summām: optimistisks, vidējs, pesimistisks",
+    "reportItem6": "Plāns soli pa solim ar termiņiem un dokumentu sarakstu",
+    "cheapestPort": "lētākā osta"
+  },
+  "shipping": {
+    "CONTAINER_EXCLUSIVE": "Atsevišķs konteiners",
+    "CONTAINER_SHARED": "Koplietošanas konteiners",
+    "RORO": "RoRo"
+  },
+  "title": {
+    "CLEAN": "Tīrs īpašumtiesību dokuments (clean title)",
+    "SALVAGE": "Salvage / neatjaunojams"
+  },
+  "validation": {
+    "auctionHouse": {
+      "notInOrigin": "Šis izsoļu nams izvēlētajā valstī nedarbojas."
+    },
+    "engineCc": {
+      "required": "Lūdzu, ievadiet dzinēja tilpumu."
+    },
+    "procedure4200": {
+      "companyOnly": "Procedūra 4200 pieejama tikai uzņēmumiem ar derīgu ES PVN maksātāja numuru."
+    }
+  },
+  "warning": {
+    "dealer": {
+      "verifyExportDocuments": "Pērkot no dīlera, pārliecinieties, ka tiek izsniegti eksporta dokumenti."
+    },
+    "historic": {
+      "expertOpinionRequired": "Kolekcijas transportlīdzekļa statusam (0% muitas nodoklis) nepieciešams eksperta atzinums, un muita to var apstrīdēt."
+    },
+    "intraEuTransport": {
+      "notPriced": "Nav pārvadātāja cenas no ostas līdz galamērķim – izmaksas nav iekļautas."
+    },
+    "newMeansOfTransport": {
+      "vatInDestination": "Jauns transportlīdzeklis (≤6 mēneši vai ≤6000 km): PVN jāmaksā arī reģistrācijas valstī."
+    },
+    "nl": {
+      "bpmNotIncluded": "Nīderlandes reģistrācijas nodoklis BPM nav iekļauts."
+    },
+    "pl": {
+      "clearedForOtherMemberState": "Muitots Polijā reģistrācijai citā valstī – pārbaudiet galamērķa valsts reģistrācijas nodokļus.",
+      "exciseDeclarationWithin14Days": "Polijas akcīzes nodoklis jāsamaksā nodokļu iestādē (AKC-U/S) 14 dienu laikā pēc ierašanās.",
+      "pickupMayBeReclassified": "Pikaps, kas reģistrēts kā vieglais auto, var būt apliekams ar akcīzes nodokli – pārbaudiet tipa apstiprinājumu."
+    },
+    "procedure4200": {
+      "reverseChargeDeductible": "Procedūra 4200: PVN aprēķina pats pircējs galamērķa valstī (apgrieztā maksāšana, neitrāla PVN maksātājiem)."
+    },
+    "registrationTax": {
+      "notModelled": "Galamērķa valsts reģistrācijas nodoklis vēl nav iekļauts modelī."
+    },
+    "delivery": {
+      "portPickup": "Izvēlēta saņemšana ostā – autotransports līdz mājām nav iekļauts.",
+      "selfDriveNotRunning": "Nebraucošu auto nevar vadīt ar pagaidu numurzīmēm – izvēlieties evakuatoru."
+    }
+  },
+  "wizard": {
+    "auction": "Izsoļu nams",
+    "back": "Atpakaļ",
+    "bid": "Uzvarējusī likme",
+    "buyer": "Pircējs",
+    "category": "Transportlīdzekļa tips",
+    "condition": "Transportlīdzekļa stāvoklis",
+    "destination": "Reģistrācijas valsts",
+    "engineCc": "Dzinēja tilpums",
+    "exciseRate": "PL akcīze: {{rate}}%",
+    "exciseWarning": "Virs 2000 cm³ akcīzes likme pieaug no {{from}}% līdz {{to}}% – starpība bieži ir tūkstošos!",
+    "finish": "Pilna atskaite",
+    "forklift": "iekrāvējs / vinča",
+    "fuel": "Spēka agregāts",
+    "historic": "Vēsturisks transportlīdzeklis oriģinālā stāvoklī",
+    "historicHint": "30+ gadi, nepārveidots: 0% muitas nodoklis un samazināts PVN.",
+    "next": "Tālāk",
+    "origin": "Pirkšanas valsts",
+    "port": "ES muitošanas osta",
+    "procedure4200": "Muitas procedūra 4200",
+    "procedure4200Hint": "Uzņēmumiem – ES PVN maksātājiem: uz robežas PVN nav jāmaksā, galamērķī – apgrieztā maksāšana.",
+    "shipping": "Jūras pārvadājuma veids",
+    "step1": "No kurienes",
+    "step2": "Transportlīdzeklis",
+    "step3": "Stāvoklis un cena",
+    "title": "Īpašumtiesību dokumenta (title) veids",
+    "year": "Izlaiduma gads",
+    "zone": "Laukuma atrašanās vieta (štats / province)",
+    "zoneOther": "Cits / nezinu",
+    "advanced": "Papildu iestatījumi",
+    "step4": "Galamērķis un piegāde",
+    "step5": "Pēc importa",
+    "step6": "Izmaksu atskaite",
+    "calculate": "Aprēķināt kopējās izmaksas",
+    "departurePort": "Izbraukšanas osta",
+    "departureAuto": "Automātiski – lētākais maršruts",
+    "departureHint": "Izvēlieties konkrētu ostu, ja ekspeditors to jau ir norādījis.",
+    "delivery": "Transports no ostas līdz jūsu durvīm",
+    "distance": "Attālums no ostas līdz jūsu adresei",
+    "pricePerKm": "Cena par kilometru",
+    "tariffUnknown": "Šai valstij nav kilometru tarifa – tiks izmantota fiksēta cena.",
+    "repair": "Remonta izmaksas",
+    "repairHintRunner": "Piedāvājam šim stāvoklim un dokumenta veidam tipisku summu (krāsošana, riepas). Jums ir servisa tāme? Ievadiet to.",
+    "repairHintDamaged": "Piedāvājam šim stāvoklim tipisku remonta summu (apmēram 30–40% no cenas). Jums ir servisa tāme? Ievadiet to – slēptie bojājumi tiek ieskaitīti atsevišķi kā risks.",
+    "afterImportLead": "Viss, kas jādara un jāsamaksā ceļā no ostas līdz numurzīmēm. Obligātās pozīcijas vienmēr ir iekļautas, pārējo izvēlaties jūs.",
+    "statutory": "Obligāti (valsts nodevas)",
+    "optional": "Pēc izvēles",
+    "recommended": "ieteicams",
+    "optionsLoading": "Ielādējam pakalpojumus jūsu maršrutam…",
+    "noServices": "Šai valstij mums vēl nav detalizēta reģistrācijas cenrāža – atskaitē ir uzskaitīti soļi.",
+    "insurance": "Pirmā gada OCTA",
+    "insuranceHint": "Piedāvājam šīs valsts OCTA piedāvājumu mediānu tikko reģistrētam auto. Jums ir savs piedāvājums? Ievadiet to.",
+    "address": "Piegādes adrese",
+    "addressPlaceholder": "piem., Rīga, Brīvības iela 5 vai pasta indekss",
+    "addressChange": "Mainīt",
+    "addressHint": "Vienīgais lauks, kas jāaizpilda pašam. Pēc adreses aprēķinām kilometrus no katras ostas un izvēlamies lētāko.",
+    "portRankingAddress": "Visas ES ostas ({{count}}) ar cenu līdz jūsu adresei – lētākās vispirms.",
+    "portRankingCountry": "Visas ES ostas ({{count}}) ar cenu līdz reģistrācijas valstij – precīziem kilometriem ievadiet adresi.",
+    "portRankingLoading": "Aprēķinām cenu katrai ES ostai…",
+    "portCheapest": "lētākā",
+    "portAuto": "Atpakaļ uz lētāko",
+    "portsAll": "Rādīt visas ES ostas ({{count}})",
+    "portsLess": "Sakļaut ostu sarakstu",
+    "days": "dienas",
+    "portRankingNote": "Kopsumma no durvīm līdz durvīm, vidējais scenārijs: frakts, muitošana un PVN ostas valstī, piegāde līdz adresei un maksas pēc importa.",
+    "distanceRouted": "Autoceļa maršruts no ostas {{port}} līdz jūsu adresei.",
+    "distanceEstimated": "Aprēķins no ostas {{port}} līdz jūsu adresei (taisnā līnijā × 1,25).",
+    "distanceTypical": "Tipisks attālums no ostas {{port}} – precīzam skaitlim ievadiet adresi augstāk.",
+    "tariffShort": "Tirgus: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} iekraušana, min. {{minimum}} {{cur}}."
+  },
+  "layout": {
+    "topbar": "Neatkarīgs kalkulators automašīnu importa izmaksām no ASV, Kanādas, Japānas, AAE un Apvienotās Karalistes uz 27 ES valstīm",
+    "forBusiness": "Importa uzņēmumiem",
+    "home": "Sākums",
+    "nav": "Galvenā navigācija",
+    "calculator": "Kalkulators",
+    "howItWorks": "Kā tas darbojas",
+    "pricing": "Cenas",
+    "faq": "BUJ",
+    "cta": "Aprēķināt izmaksas",
+    "menu": "Izvēlne",
+    "close": "Aizvērt",
+    "breadcrumb": "Navigācijas ceļš",
+    "themeLight": "Pārslēgt uz gaišo motīvu",
+    "themeDark": "Pārslēgt uz tumšo motīvu",
+    "about": "Par mums",
+    "why": "Kāpēc mēs",
+    "what": "Ko mēs aprēķinām",
+    "ctaHint": "Bez maksas, bez reģistrācijas",
+    "language": "Valoda"
+  },
+  "footer": {
+    "about": "Neatkarīgs importa izmaksu kalkulators automašīnām no valstīm ārpus ES. Mēs automašīnas nepārdodam un neimportējam – mēs aprēķinām, cik tās patiesībā maksā.",
+    "calculators": "Importa kalkulatori",
+    "importFrom": {
+      "USA": "Auto no ASV",
+      "CANADA": "Auto no Kanādas",
+      "JAPAN": "Auto no Japānas",
+      "UAE": "Auto no Dubaijas (AAE)",
+      "UK": "Auto no Apvienotās Karalistes"
+    },
+    "service": "Serviss",
+    "privacy": "Privātuma politika",
+    "language": "Valoda",
+    "payments": "Maksājumi caur Stripe (karte, BLIK, Przelewy24). Mēs nekad neglabājam kartes datus.",
+    "rights": "Visas tiesības aizsargātas.",
+    "disclaimer": "Aprēķini ir informatīvi un nav ne muitas lēmums, ne nodokļu konsultācija."
+  },
+  "cookies": {
+    "title": "Sīkdatnes",
+    "text": "Mēs izmantojam vietnes darbībai nepieciešamās sīkdatnes un ar jūsu piekrišanu – analītikas sīkdatnes. Sīkāk:",
+    "accept": "Pieņemt visas",
+    "necessary": "Tikai nepieciešamās"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Auto importa kalkulators",
+      "title1": "Uzziniet importa izmaksas",
+      "title2": "pirms solāt",
+      "lead": "Neatkarīgs kalkulators, kas minūtes laikā parāda pilnas izmaksas, lai atvestu auto no ASV, Kanādas, Japānas, AAE vai Apvienotās Karalistes – no izsoles cenas līdz numurzīmēm jūsu valstī.",
+      "cta": "Aprēķināt bez maksas",
+      "secondary": "Ko tieši mēs aprēķinām",
+      "visual": "Melns Ford Mustang dzeltenā neona gaismā uz ASV karoga fona",
+      "point1": "Tūlītējs aprēķins – bez reģistrācijas, zvaniem un piedāvājuma gaidīšanas",
+      "point2": "Vairāk nekā 40 izmaksu pozīcijas, 43 ES ostas un šodienas valūtas kursi",
+      "point3": "Mēs nepārdodam automašīnas un neņemam komisijas – skaitļi ir godīgi"
+    },
+    "how": {
+      "eyebrow": "Kā tas darbojas",
+      "title": "No idejas līdz pilnai summai četros soļos",
+      "s1": {
+        "title": "Kur pērkat",
+        "text": "ASV, Kanāda, Japāna, AAE vai Apvienotā Karaliste – un izsole vai dīleris."
+      },
+      "s2": {
+        "title": "Kāds auto",
+        "text": "Tips, degviela, dzinēja tilpums, gads un stāvoklis – tie nosaka nodokļus."
+      },
+      "s3": {
+        "title": "Jūsu adrese",
+        "text": "Vienīgais lauks, kas jāaizpilda pašam. Mēs aprēķinām kilometrus un lētāko ostu."
+      },
+      "s4": {
+        "title": "Rezultāts un atskaite",
+        "text": "Trīs scenāriji bez maksas un PDF līdz centam, kad esat gatavs pirkt."
+      },
+      "step": "Solis"
+    },
+    "costs": {
+      "eyebrow": "No kā veidojas cena",
+      "title": "Muitas nodoklis, akcīze un PVN aprēķināti tādā pašā secībā kā muitā",
+      "lead": "Katrs nodoklis ir bāze nākamajam, tāpēc secībai ir nozīme. Muitošanas osta nosaka PVN likmi, reģistrācijas valsts – akcīzi.",
+      "cif": {
+        "title": "Muitas vērtība (CIF)",
+        "formula": "cena + izsoles maksa + transports + frakts + apdrošināšana",
+        "text": "Viss, ko maksājat, līdz auto nonāk ES ostā."
+      },
+      "duty": {
+        "title": "Muitas nodoklis (TARIC)",
+        "formula": "CIF × 10% vieglie auto · 22% pikapi · 0% klasika",
+        "text": "Likme atkarīga no HS koda; motocikliem 6–8%."
+      },
+      "excise": {
+        "title": "Akcīze (PL)",
+        "formula": "(CIF + muitas nodoklis) × 3,1% līdz 2,0 l · 18,6% virs",
+        "text": "Hibrīdiem 1,55% / 9,3%, elektroauto 0%. Maksā reģistrācijas valstī."
+      },
+      "vat": {
+        "title": "Importa PVN",
+        "formula": "(CIF + muitas nodoklis + akcīze* + izkraušana) × muitošanas valsts likme",
+        "text": "*Akcīze tiek ieskaitīta tikai tad, ja muitošana notiek reģistrācijas valstī."
+      }
+    },
+    "ports": {
+      "title": "PVN likme ir atkarīga no muitošanas ostas",
+      "text": "Kalkulators aprēķina cenu visām 43 ES muitošanas ostām no durvīm līdz durvīm: PVN ostas valstī, frakts, piegāde līdz jūsu adresei un maksas pēc importa. Muitošana Vācijā nozīmē 19% PVN 23% vietā, taču jāpieskaita autovedējs – zemāk daži piemēri, pārējos salīdzina kalkulators.",
+      "port": "Osta",
+      "country": "Muitošanas valsts"
+    },
+    "pricing": {
+      "eyebrow": "Cenas",
+      "title": "Sāciet bez maksas, maksājiet tikai par pārliecību"
+    },
+    "final": {
+      "title": "Aprēķiniet savu importu minūtē",
+      "text": "Bez reģistrācijas, bez saistībām. Ja auto izrādīsies pārāk dārgs, jūs tikko ietaupījāt naudu. Ja tas atmaksājas, solāt mierīgi, zinot pilnās izmaksas.",
+      "title1": "Pārbaudiet pirms pirkšanas.",
+      "title2": "Tas aizņem minūti.",
+      "cta": "Aprēķināt importa izmaksas",
+      "about": "Kas mēs esam"
+    },
+    "strip": {
+      "brand": {
+        "title": "CarImport.eu —",
+        "text": "neatkarīgs importa kalkulators"
+      },
+      "instant": {
+        "title": "Rezultāts minūtē",
+        "text": "Jūs ievadāt tikai adresi, pārējo piedāvājam mēs"
+      },
+      "items": {
+        "title": "40+ izmaksu pozīcijas",
+        "text": "No izsoles līdz reģistrācijai un riskiem"
+      },
+      "ports": {
+        "title": "43 ES ostas",
+        "text": "Izvēlamies lētāko jūsu adresei"
+      }
+    },
+    "map": {
+      "eyebrow": "Importa maršruti",
+      "title": "No ostām visā pasaulē tieši uz ES",
+      "lead": "Eksporta ostas ASV, Kanādā, Japānā, AAE un Apvienotajā Karalistē un jūras ceļi caur Panamu, Suecu un Gibraltāru uz ES muitošanas ostām.",
+      "aria": "Jūras maršrutu karte no ASV, Kanādas, Japānas, AAE un Apvienotās Karalistes uz ES ostām",
+      "eu": "Eiropas Savienība",
+      "legendEu": "ES valstis (reģistrācija)",
+      "legendOrigin": "Pirkšanas valstis",
+      "legendRoute": "Jūras maršruts",
+      "scroll": "Pavelciet, lai redzētu visu karti",
+      "days": "dienas"
+    },
+    "numbers": {
+      "eyebrow": "CarImport.eu skaitļos",
+      "title": "Skaitļi aiz katra aprēķina",
+      "n1": {
+        "value": "5",
+        "label": "izcelsmes valstis: ASV, Kanāda, Japāna, AAE un Apvienotā Karaliste"
+      },
+      "n2": {
+        "value": "27",
+        "label": "ES valstis, kurās varat reģistrēt auto"
+      },
+      "n3": {
+        "value": "43",
+        "label": "muitošanas ostas 22 ES valstīs – izvēlamies lētāko jūsu adresei"
+      },
+      "n4": {
+        "value": "23",
+        "label": "valodas – katras ES valsts oficiālā valoda, kā arī ukraiņu valoda"
+      }
+    },
+    "why": {
+      "eyebrow": "Kāpēc to izmantot",
+      "title": "Ziniet, cik maksāsiet – pirms nospiežat „Solīt“",
+      "lead": "Dārgākā importa daļa ir izmaksas, par kurām pirms pirkuma neviens nerunāja. Kalkulators tās atklāj, pirms iztērējat pirmo dolāru.",
+      "preview": {
+        "tag": "Kalkulators",
+        "title": "Pilnas izmaksas no durvīm līdz durvīm sešos soļos",
+        "text": "Izsole, transports, muitas nodoklis, akcīze, PVN, reģistrācija un riski – trīs scenārijos.",
+        "alt": "Importa izmaksu kalkulatora ekrānuzņēmums"
+      },
+      "instant": {
+        "tag": "Uzreiz",
+        "title": "Aprēķins minūtē, nevis divās dienās",
+        "text": "Nekādu kontaktformu, nekādas pārdevēja zvana gaidīšanas. Katrs lauks ir iepriekš aizpildīts ar priekšlikumu – mainiet tikai to, ko zināt labāk."
+      },
+      "independent": {
+        "tag": "Neatkarīgi",
+        "title": "Mēs nepārdodam ne automašīnas, ne pārvadājumus",
+        "text": "Mēs nepelnām uzcenojumu no pārvadātājiem vai izsolēm, tāpēc mums nav iemesla samazināt izmaksas. Visi saņem vienādu rezultātu."
+      },
+      "ports": {
+        "tag": "43 ostas",
+        "title": "Lētākais maršruts līdz jūsu adresei",
+        "text": "Mēs aprēķinām cenu katrai ES muitošanas ostai no durvīm līdz durvīm un parādām starpību."
+      },
+      "scenarios": {
+        "tag": "Scenāriji",
+        "title": "Optimistisks, vidējs, pesimistisks",
+        "text": "Valūtas kursi, kavējumi un riski ceļā – jūs redzat reālistisku diapazonu, nevis vienu „maģisku“ skaitli."
+      },
+      "after": {
+        "tag": "Pēc importa",
+        "title": "Arī reģistrācija un dokumenti",
+        "text": "Tehniskā apskate, tulkojumi, apgaismojuma pārbūve, valsts nodevas un apdrošināšana – ar termiņiem."
+      },
+      "report": {
+        "tag": "PDF atskaite",
+        "title": "Katrs cents melns uz balta",
+        "text": "Par 4,99 € – personalizēta atskaite ar katru likmi, nodokļa bāzi un rīcības plānu pēc importa."
+      }
+    },
+    "what": {
+      "eyebrow": "Ko mēs iekļaujam",
+      "title": "Viss, kas veido auto cenu pie jūsu durvīm",
+      "lead": "Lielākā daļa kalkulatoru apstājas pie muitas nodokļa un PVN. Mēs aprēķinām visu ceļu – no izsoles laukuma līdz numurzīmēm – un pievienojam to, kas var noiet greizi.",
+      "cta": "Izmēģiniet ar savu auto",
+      "purchase": {
+        "title": "Pirkums",
+        "i1": "Uzvarējusī likme vai dīlera cena",
+        "i2": "Copart, IAAI, Manheim, USS maksas pēc cenu pakāpēm",
+        "i3": "Clean / salvage title un stāvoklis",
+        "i4": "Aptuvenās remonta izmaksas"
+      },
+      "transport": {
+        "title": "Transports",
+        "i1": "No izsoles laukuma līdz eksporta ostai",
+        "i2": "Konteinera vai RoRo pārvadājums",
+        "i3": "Kravas apdrošināšana",
+        "i4": "Izkraušanas un termināla maksas",
+        "i5": "Evakuators vai autovedējs līdz jūsu adresei"
+      },
+      "taxes": {
+        "title": "Muitas nodoklis un nodokļi",
+        "i1": "Muitas nodoklis pēc TARIC (10%, pikapiem 22%)",
+        "i2": "Akcīze pēc dzinēja un degvielas veida",
+        "i3": "PVN muitošanas ostas valstī",
+        "i4": "Tās pašas dienas centrālās bankas valūtas kurss"
+      },
+      "after": {
+        "title": "Pēc importa",
+        "i1": "Tehniskā apskate un apstiprināšana",
+        "i2": "Dokumentu zvērināti tulkojumi",
+        "i3": "Reģistrācija, numurzīmes un valsts nodevas",
+        "i4": "Apgaismojuma un spidometra pārveide",
+        "i5": "Pirmā gada OCTA"
+      },
+      "risks": {
+        "title": "Riski",
+        "i1": "Glabāšana ostā un kuģu kavēšanās",
+        "i2": "Muitas kontrole un vērtības pārbaude",
+        "i3": "Slēpti bojājumi un pārvadāšanas bojājumi",
+        "i4": "Kavēts title un eksporta dokumenti"
+      }
+    },
+    "compare": {
+      "eyebrow": "Salīdzinājums",
+      "title": "Kāpēc ar aptuvenu aprēķinu uz lapiņas nepietiek",
+      "self": "Pašu spēkiem",
+      "broker": "Brokera piedāvājums",
+      "r1": "Izsoles maksas pēc aktuālajām pakāpēm",
+      "r2": "Visu 43 ES ostu salīdzinājums",
+      "r3": "Šodienas kurss + rezerve svārstībām",
+      "r4": "Akcīze un PVN pēc muitošanas un reģistrācijas valsts",
+      "r5": "Riski un trīs izmaksu scenāriji",
+      "r6": "Reģistrācija un dokumenti pēc importa",
+      "r7": "Bez uzcenojuma un slēptas komisijas",
+      "note": "~ nozīmē „parasti daļēji“. Brokeru piedāvājumos bieži ir iekļauts viņu uzcenojums, un tie neparāda izmaksu sadalījumu."
+    }
+  },
+  "pricing": {
+    "popular": "Populārākais",
+    "free": {
+      "name": "Ātrs aprēķins",
+      "price": "Bez maksas",
+      "f1": "Kopējo izmaksu diapazons",
+      "f2": "Izmaksu struktūras diagramma",
+      "f3": "Pārvadājuma laiks un brīdinājumi",
+      "f4": "Bez reģistrācijas",
+      "cta": "Aprēķināt bez maksas"
+    },
+    "report": {
+      "name": "PDF atskaite",
+      "price": "4,99 €",
+      "f1": "Katra pozīcija līdz centam",
+      "f2": "Izsoles maksas pēc cenu pakāpēm",
+      "f3": "Muitas nodoklis, akcīze un PVN ar bāzēm un likmēm",
+      "f4": "Dokumentu kontrolsaraksts un personalizēts PDF",
+      "cta": "Aprēķināt un atbloķēt atskaiti"
+    },
+    "partner": {
+      "name": "Importa uzņēmumiem",
+      "price": "Par pieņemtu pieprasījumu",
+      "f1": "Pircēji ar gatavu auto aprēķinu",
+      "f2": "VDAR piekrišana saņemta pirms nodošanas",
+      "f3": "Tikai jūsu pieņemtie pieprasījumi",
+      "f4": "Bez abonēšanas maksas",
+      "cta": "Kļūt par partneri"
+    }
+  },
+  "faq": {
+    "eyebrow": "Jautājumi un atbildes",
+    "title": "Biežāk uzdotie jautājumi",
+    "lead": "Neatradāt atbildi? Kalkulators parāda katru pieņēmumu, bet PDF atskaite – katru likmi un bāzi.",
+    "q1": {
+      "q": "Cik liels ir muitas nodoklis auto no ASV?",
+      "a": "Vieglajiem automobiļiem (KN 8703) muitas nodoklis ir 10% no CIF muitas vērtības, pikapiem un vieglajām kravas automašīnām (8704) – 22%, bet motocikliem – 6–8%. Kolekcijas transportlīdzekļiem, kas vecāki par 30 gadiem un ir oriģinālā stāvoklī, var piemērot 0%. Muitas vērtība ir pirkuma cena plus izsoles maksas, transports līdz ES robežai un apdrošināšana."
+    },
+    "q2": {
+      "q": "Kāds akcīzes nodoklis piemērojams, importējot auto uz Poliju?",
+      "a": "Automašīnām ar iekšdedzes dzinēju līdz 2000 cm³: 3,1%, virs 2000 cm³: 18,6%. Hibrīdiem: 1,55% līdz 2000 cm³ un 9,3% līdz 3500 cm³. Uzlādējamie hibrīdi līdz 2000 cm³ un elektroauto ir atbrīvoti. Bāze ir muitas vērtība plus muitas nodoklis, pārrēķināta PLN."
+    },
+    "q3": {
+      "q": "Kur labāk muitot auto: Brēmerhāfenē, Roterdamā vai Gdiņā?",
+      "a": "Importa PVN iekasē muitošanas valsts: Vācijā 19%, Nīderlandē 21% un Polijā 23%. Muitošana Vācijā samazina PVN, taču jāpieskaita autovedējs uz Poliju, un akcīze atsevišķi jāsamaksā nodokļu iestādē 14 dienu laikā. Kalkulators salīdzina iespējas jūsu auto."
+    },
+    "q4": {
+      "q": "Kas ir muitas procedūra 4200?",
+      "a": "Tā ir laišana brīvā apgrozībā ar PVN atbrīvojumu importa valstī, ja auto nonāk tieši pie PVN maksātāja uzņēmuma citā ES dalībvalstī. Pircējs PVN aprēķina savā valstī apgrieztās maksāšanas kārtībā, tāpēc PVN maksātājiem uzņēmumiem tā ir neitrāla. Privātpersonām tā nav pieejama."
+    },
+    "q5": {
+      "q": "Cik ilgi notiek pārvadājums uz Eiropu?",
+      "a": "No ASV austrumkrasta un Kanādas ostām aptuveni 2–3 nedēļas jūrā, no Kalifornijas aptuveni 5 nedēļas, no Japānas 6–7 nedēļas, no AAE 3–4 nedēļas un no Apvienotās Karalistes dažas dienas. Jāpieskaita transports no izsoles laukuma līdz ostai un muitošana."
+    },
+    "q6": {
+      "q": "No kurienes ņemti valūtas kursi?",
+      "a": "Mēs izmantojam NBP (Polijas Nacionālās bankas) vidējos kursus, kas automātiski tiek ielādēti katru darba dienu. Tā kā par auto maksājat dienas vai nedēļas pēc aprēķina, bezmaksas diapazons ņem vērā valūtas svārstības."
+    },
+    "q7": {
+      "q": "Ko ietver maksas PDF atskaite?",
+      "a": "Katru pozīciju līdz centam: izsoles maksas pēc pakāpēm, transportu, muitas vērtību, muitas nodokli, akcīzi un PVN ar bāzēm un likmēm, nepieciešamo dokumentu sarakstu un personalizētu PDF lejupielādei. Maksājiet ar BLIK, karti vai Przelewy24."
+    },
+    "q8": {
+      "q": "Vai kalkulatora rezultāts ir saistošs?",
+      "a": "Nē. Tas ir aprēķins, kas balstīts uz aktuālajām likmēm un cenrāžiem. Galīgās summas nosaka muita un nodokļu iestāde, kas, piemēram, var pārbaudīt muitas vērtību. Atskaitē ir uzskaitīti visi pieņēmumi, tāpēc to ir viegli salīdzināt ar oficiālo lēmumu."
+    },
+    "q9": {
+      "q": "Vai CarImport.eu importē automašīnas?",
+      "a": "Nē. Mēs esam tikai kalkulators – mēs nepērkam, nepārvadājam un nemuitojam automašīnas un neņemam komisiju no izsolēm vai pārvadātājiem. Tas nodrošina aprēķina neatkarību. Ja vēlaties, aprēķinu varat nodot pārbaudītam importa uzņēmumam, taču tā vienmēr ir jūsu izvēle."
+    }
+  },
+  "calc": {
+    "title": "Auto importa izmaksu kalkulators",
+    "lead": "Seši soļi: izcelsme, transportlīdzeklis, stāvoklis, galamērķis, pēc importa un atskaite. Rezultāts tiek parādīts beigās – trīs scenārijos.",
+    "currency": "Rezultāta valūta",
+    "progress": "Progress"
+  },
+  "seo": {
+    "home": {
+      "title": "Auto importa izmaksu kalkulators – ASV, Japāna, Dubaija → ES | CarImport.eu",
+      "description": "Neatkarīgs kalkulators auto importam no ASV, Kanādas, Japānas, AAE un Apvienotās Karalistes: izsole, pārvadājums, muitas nodoklis, akcīze, PVN, reģistrācija un riski. Tūlītējs aprēķins, bez reģistrācijas."
+    },
+    "calculator": {
+      "title": "Importēto auto muitas nodokļa, akcīzes un PVN kalkulators | CarImport.eu",
+      "description": "Izvēlieties valsti, izsoli, ostu un transportlīdzekli — tiešsaistes kalkulators parāda izmaksu diapazonu un sadalījumu: cena, pārvadājums, muitas nodoklis, akcīze, PVN un reģistrācija."
+    },
+    "privacy": {
+      "title": "Privātuma politika | CarImport.eu",
+      "description": "Kā CarImport.eu apstrādā personas datus: maksājumi, atskaites, partneru pieprasījumi un sīkdatnes."
+    },
+    "about": {
+      "title": "Par mums – neatkarīgs auto importa kalkulators | CarImport.eu",
+      "description": "Kas mēs esam, no kurienes ņemam datus un kā pelnām. CarImport.eu nepārdod un neimportē automašīnas – tas godīgi un neatkarīgi aprēķina pilnas importa izmaksas."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Juridiskā informācija",
+    "title": "Privātuma politika",
+    "s1": {
+      "title": "Pārzinis",
+      "text": "Personas datu pārzinis ir CarImport.eu uzturētājs. Datu aizsardzības jautājumos sazinieties ar mums: {{email}}."
+    },
+    "s2": {
+      "title": "Kādus datus mēs apstrādājam",
+      "text": "Aprēķina ievaddati (bez personas datiem) un, pērkot atskaiti, jūsu vārds un e-pasts. Partneru veidlapā papildus tiek vākts tālruņa numurs un ziņa. Mēs nekad neapstrādājam kartes datus — to dara Stripe."
+    },
+    "s3": {
+      "title": "Nolūki un juridiskais pamats",
+      "text": "Atskaites pirkuma izpilde (VDAR 6. panta 1. punkta b) apakšpunkts), grāmatvedības pienākumi (c) apakšpunkts), jūsu pieprasījuma nodošana partnerim uz jūsu piekrišanas pamata (a) apakšpunkts) un analītika ar sīkdatņu joslā sniegto piekrišanu."
+    },
+    "s4": {
+      "title": "Saņēmēji",
+      "text": "Stripe Payments Europe (maksājumi), mūsu mitināšanas un e-pasta pakalpojumu sniedzēji un — partneru veidlapas gadījumā — viens pārbaudīts importa uzņēmums, tikai ar jūsu piekrišanu."
+    },
+    "s5": {
+      "title": "Sīkdatnes",
+      "text": "Nepieciešamās sīkdatnes un pārlūka krātuve atceras jūsu valodu, motīvu, kalkulatora progresu un piekļuvi iegādātajai atskaitei. Analītika tiek ieslēgta tikai pēc tam, kad noklikšķināt „Pieņemt visas“."
+    },
+    "s6": {
+      "title": "Jūsu tiesības",
+      "text": "Jums ir tiesības piekļūt saviem datiem, tos labot, dzēst, ierobežot to apstrādi, pārnest tos un iebilst pret apstrādi, jebkurā laikā atsaukt piekrišanu un iesniegt sūdzību datu aizsardzības uzraudzības iestādē. Rakstiet mums: {{email}}."
+    }
+  },
+  "delivery": {
+    "PORT_PICKUP": "Saņemšana ostā",
+    "CAR_CARRIER": "Autovedējs",
+    "TOW_TRUCK": "Evakuators",
+    "SELF_DRIVE": "Ar pagaidu numurzīmēm"
+  },
+  "scenario": {
+    "0": "Optimistisks",
+    "1": "Vidējs",
+    "2": "Pesimistisks"
+  },
+  "scenarioHint": {
+    "0": "Zemākās likmes, labvēlīgs valūtas kurss, nekas nenoiet greizi",
+    "1": "Tipiskas likmes + riski, svērti pēc varbūtības",
+    "2": "Augstākās likmes, vājāks valūtas kurss, riski īstenojas"
+  },
+  "timeline": {
+    "INLAND": "Izvešana no laukuma un transports līdz ostai",
+    "OCEAN": "Kuģošana (ieskaitot kuģa gaidīšanu)",
+    "CLEARANCE": "Izkraušana un muitošana",
+    "DELIVERY": "Piegāde līdz jūsu durvīm",
+    "REGISTRATION": "Sagatavošana un reģistrācija"
+  },
+  "plan": {
+    "deadline": {
+      "beforeRelease": "Pirms izlaišanas no ostas",
+      "14days": "14 dienu laikā pēc ierašanās Polijā",
+      "beforeInspection": "Pirms tehniskās apskates",
+      "beforeRegistration": "Pirms reģistrācijas",
+      "pl30days": "30 dienu laikā pēc importa (sods līdz 1000 PLN)",
+      "fromRegistration": "No reģistrācijas / pagaidu numurzīmju saņemšanas",
+      "national": "Saskaņā ar reģistrācijas valsts noteikumiem",
+      "none": "Nav likumā noteikta termiņa"
+    },
+    "step": {
+      "clearance": {
+        "title": "Muitošana ostā",
+        "text": "Muitas brokeris iesniedz deklarāciju (SAD); jūs samaksājat muitas nodokli un importa PVN. Nepieciešams: rēķins, konosaments, title/eksporta sertifikāts, EORI."
+      },
+      "pl": {
+        "excise": {
+          "title": "Akcīzes deklarācija un samaksa (AKC-U/S)",
+          "text": "Iesniedziet nodokļu iestādē (vai elektroniski) un samaksājiet akcīzi; apstiprinājums nepieciešams reģistrācijai."
+        },
+        "exciseExemption": {
+          "title": "Akcīzes atbrīvojuma deklarēšana (elektroauto)",
+          "text": "Elektroauto ir atbrīvoti, taču AKC-U/S deklarācija tik un tā jāiesniedz."
+        },
+        "inspection": {
+          "title": "Tehniskā apskate diagnostikas stacijā",
+          "text": "Importēta transportlīdzekļa pirmā apskate, ieskaitot VIN identifikāciju; rezultāts tiek ievadīts centrālajā reģistrā."
+        },
+        "recycling": {
+          "title": "Utilizācijas maksa 500 PLN",
+          "text": "Tiek maksāta Nacionālajam vides fondam, pirmo reizi reģistrējot importētu auto."
+        },
+        "registration": {
+          "title": "Reģistrācija transportlīdzekļu reģistrācijas iestādē",
+          "text": "Iesniegums, īpašumtiesību apliecinājums ar tulkojumu, akcīze, apskate, utilizācijas maksa, PVN/muitas nodokļa samaksas apliecinājums; jūs saņemat pagaidu atļauju un numurzīmes."
+        }
+      },
+      "translations": {
+        "title": "Zvērināti tulkojumi",
+        "text": "Ārvalstu title/reģistrācijas dokuments, rēķins un eksporta dokuments – pie zvērināta tulkotāja."
+      },
+      "lighting": {
+        "title": "Apgaismojuma pārbūve atbilstoši ES standartiem",
+        "text": "Dzintara krāsas aizmugurējie pagrieziena rādītāji, aizmugurējais miglas lukturis, lukturu regulēšana – bez tā auto neiztur apskati."
+      },
+      "insurance": {
+        "title": "Civiltiesiskā apdrošināšana (OCTA)",
+        "text": "Obligāta no reģistrācijas brīža; KASKO ir vērts noformēt pēc eksperta novērtējuma."
+      },
+      "de": {
+        "approval": {
+          "title": "Individuālā apstiprināšana (§21 StVZO)",
+          "text": "Pilna eksperta pārbaude (TÜV/DEKRA) automašīnām no valstīm ārpus ES; nepieciešama reģistrācijai."
+        },
+        "registration": {
+          "title": "Reģistrācija (Zulassung)",
+          "text": "Apdrošināšanas eVB numurs, muitošanas apliecinājums, eksperta atzinums, SEPA tiešā debeta pilnvara transportlīdzekļa nodoklim."
+        }
+      },
+      "generic": {
+        "inspection": {
+          "title": "Apskate / individuālā apstiprināšana",
+          "text": "Apjoms atkarīgs no valsts – automašīnām no valstīm ārpus ES bieži nepieciešama individuālā apstiprināšana."
+        },
+        "registrationTax": {
+          "title": "Valsts reģistrācijas nodoklis",
+          "text": "Piem., BPM Nīderlandē, NoVA Austrijā, malus Francijā – pārbaudiet pirms pirkšanas."
+        },
+        "registration": {
+          "title": "Transportlīdzekļa reģistrācija",
+          "text": "Iesniedziet pieteikumu ar muitošanas apliecinājumu, apskati un apdrošināšanu."
+        }
+      },
+      "evCharging": {
+        "title": "Uzlādes ligzda",
+        "text": "ASV automašīnām ir NACS/CCS1 – nepieciešams adapteris vai CCS2/Type 2 ligzdas pārbūve."
+      }
+    }
+  },
+  "deliveryHint": {
+    "CAR_CARRIER": "Lētākais braucošām automašīnām",
+    "TOW_TRUCK": "Atsevišķs evakuators, arī nebraucošām automašīnām",
+    "SELF_DRIVE": "Pagaidu numurzīmes + apdrošināšana; tikai braucošām automašīnām",
+    "PORT_PICKUP": "Transportu organizējat paši"
+  },
+  "serviceHint": {
+    "SWORN_TRANSLATION": "Title, rēķins un eksporta dokuments",
+    "US_LIGHTING_CONVERSION": "ES prasībām atbilstoši pagrieziena rādītāji un lukturi",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Auto ar labās puses stūri",
+    "REAR_FOG_LIGHT": "Nepieciešams tehniskajā apskatē",
+    "SPEEDOMETER_KMH": "Spidometrs jūdzēs – ērtība un pārdošanas vērtība",
+    "SERVICE_INSPECTION": "Eļļa, filtri, šķidrumi, bremzes pēc ilga ceļa",
+    "GEOMETRY_ALIGNMENT": "Ieteicams pēc piekares remonta",
+    "DETAILING": "Mazgāšana, salona tīrīšana, krāsojuma pulēšana",
+    "EXPERT_VALUATION": "Noderīgs KASKO apdrošināšanai un pārdošanai"
+  },
+  "riskInfo": {
+    "RISK_PORT_STORAGE": "Termināls pēc bezmaksas perioda iekasē maksu par katru dienu, piem., ja kavējas dokumenti vai transports.",
+    "RISK_CUSTOMS_INSPECTION": "Nejauša vai mērķēta kontrole: konteinera izkraušana, rentgens, papildu termināla maksas.",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Ja cena šķiet pārāk zema, muita var piemērot augstāku vērtību – muitas nodoklis un PVN pieaug.",
+    "RISK_VESSEL_ROLLOVER": "Kuģis ir pārpildīts, un konteiners kuģo ar nākamo – papildu glabāšana eksporta ostā.",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Pārvadāšanas bojājumus sedz polise, atskaitot pašrisku.",
+    "RISK_HIDDEN_DAMAGE": "Defekti, kurus nevar redzēt izsoles fotogrāfijās – jo sliktāks stāvoklis, jo lielāks risks.",
+    "RISK_TITLE_DELAY": "Izsole nosūta īpašumtiesību dokumentu (title) ar kavēšanos – auto gaida laukumā vai ostā.",
+    "RISK_EXPORT_DOCS_DELAY": "Izslēgšana no reģistra un eksporta dokumenti aizņem ilgāku laiku nekā parasti."
+  },
+  "docStage": {
+    "PURCHASE": "Pirkums",
+    "SHIPPING": "Pārvadājums",
+    "CUSTOMS": "Muitošana",
+    "REGISTRATION": "Reģistrācija"
+  },
+  "proposal": {
+    "tag": "Priekšlikums",
+    "restore": "Izmantot priekšlikumu",
+    "was": "priekšlikums: {{value}} {{unit}}"
+  },
+  "region": {
+    "NORTH_SEA": "Ziemeļjūra",
+    "BALTIC": "Baltija un Skandināvija",
+    "ATLANTIC": "Atlantijas okeāns",
+    "WEST_MED": "Vidusjūras rietumu daļa",
+    "EAST_MED": "Adrijas jūra, Egejas jūra un Melnā jūra"
+  },
+  "about": {
+    "eyebrow": "Par mums",
+    "title1": "Mēs aprēķinām auto importu.",
+    "title2": "Mēs nepārdodam automašīnas.",
+    "lead": "CarImport.eu ir neatkarīgs kalkulators, kas aprēķina izmaksas, lai atvestu auto no valstīm ārpus Eiropas Savienības. Mēs to izveidojām, lai ikviens – ne tikai dīleris ar desmit gadu pieredzi – pirms pirkuma zinātu, cik patiesībā maksās.",
+    "story": {
+      "eyebrow": "Kā tas sākās",
+      "title": "No neapmierinātības ar slēptajām izmaksām",
+      "p1": "Auto no ASV izsoles šķiet izdevīgs pirkums – līdz pieskaitāt izsoles maksas, transportu līdz ostai, fraktu, muitas nodokli, akcīzi, PVN, izkraušanu, evakuatoru, tulkojumus, tehnisko apskati un reģistrāciju. Katra pozīcija ir „neliela“, kopā tās var dubultot cenu.",
+      "p2": "Informācija ir izkaisīta pa izsoļu cenrāžiem, muitas tarifiem, valūtas kursu tabulām un 27 valstu noteikumiem. Brokeru piedāvājumos parasti ir viens skaitlis bez sadalījuma – un ar viņu uzcenojumu iekšā.",
+      "p3": "Mēs izveidojām rīku, kas to visu apvieno, rēķina ar aktuālajām likmēm un parāda katru pieņēmumu. Bez reģistrācijas, bez pārdevēja zvana."
+    },
+    "role": {
+      "eyebrow": "Godīgi par to, kas mēs esam",
+      "title": "Mēs esam kalkulators. Tikai kalkulators.",
+      "is": "Kas mēs esam",
+      "is1": "Neatkarīgs pilno importa izmaksu kalkulators",
+      "is2": "43 ES muitošanas ostu salīdzinājums jūsu adresei",
+      "is3": "Detalizētas PDF atskaites avots ar katru likmi",
+      "is4": "Soļu un dokumentu saraksts pēc importa",
+      "isNot": "Kas mēs neesam",
+      "isNot1": "Ne importētājs, ne dīleris – mēs nepārdodam automašīnas",
+      "isNot2": "Mēs neorganizējam pārvadājumus un muitošanu",
+      "isNot3": "Nekādas komisijas no izsolēm, pārvadātājiem vai muitas brokeriem",
+      "isNot4": "Ne iestāde, ne nodokļu konsultants – rezultāts ir aprēķins"
+    },
+    "data": {
+      "eyebrow": "No kurienes nāk skaitļi",
+      "title": "Aktuālas likmes, nevis „apmēram“",
+      "lead": "Katra summa rezultātā balstās uz konkrētu likmi, ko parāda atskaite. Dati tiek atjaunināti automātiski vai ikreiz, kad mainās likums.",
+      "customs": {
+        "title": "ES muitas tarifs",
+        "text": "Muitas nodokļa likmes pēc KN koda (TARIC) vieglajiem auto, pikapiem, motocikliem un vēsturiskiem transportlīdzekļiem."
+      },
+      "fx": {
+        "title": "Centrālo banku kursi",
+        "text": "Atsauces kursi, kas tiek ielādēti katru darba dienu, ar rezervi svārstībām līdz maksājumam."
+      },
+      "fees": {
+        "title": "Izsoļu un pārvadātāju cenrāži",
+        "text": "Copart, IAAI, Manheim un USS maksu pakāpes, frakts likmes, ostu maksas un transporta cenas par kilometru."
+      },
+      "law": {
+        "title": "Valstu noteikumi",
+        "text": "Akcīze, 27 valstu PVN likmes, reģistrācijas maksas un obligātās pārbaudes – ar juridisko pamatu atskaitē."
+      }
+    },
+    "money": {
+      "eyebrow": "Kā mēs pelnām",
+      "title": "Caurskatāmi – jo runa ir par uzticēšanos",
+      "lead": "Kalkulatora rezultāts nav atkarīgs no tā, kas mums maksā un cik. Mēs pelnām trīs veidos, visi ir atklāti:",
+      "m1": {
+        "title": "PDF atskaite – 4,99 €",
+        "text": "Bezmaksas rezultāts parāda diapazonu un izmaksu struktūru. Detalizētu atskaiti ar katru pozīciju pērkat tikai tad, ja tā jums nepieciešama."
+      },
+      "m2": {
+        "title": "Neobligāts pieprasījums importa uzņēmumam",
+        "text": "Tikai pēc jūsu lūguma nododam jūsu aprēķinu vienam pārbaudītam uzņēmumam. Mums maksā tas, nevis jūs – un tikai ar jūsu piekrišanu."
+      },
+      "m3": {
+        "title": "Marķētas partneru saites",
+        "text": "Piem., VIN pārbaudes vai valūtas maiņa. Vienmēr marķētas, nekad neietekmē aprēķinu."
+      }
+    },
+    "values": {
+      "eyebrow": "Kas mūs vada",
+      "transparency": {
+        "title": "Caurskatāmība",
+        "text": "Katram skaitlim ir avots un pamatojums. Ja kaut kas ir aptuvens aprēķins, mēs to pasakām."
+      },
+      "independence": {
+        "title": "Neatkarība",
+        "text": "Mums nav intereses par to, vai jūs pērkat auto vai kas to jums importē."
+      },
+      "precision": {
+        "title": "Precizitāte",
+        "text": "Mēs rēķinām līdz centam, bet parādām arī diapazonu – jo imports nav precīza matemātika."
+      }
+    },
+    "cta": {
+      "title": "Pārbaudiet savu auto minūtē",
+      "text": "Jums ir jautājums vai pamanījāt novecojušu likmi? Rakstiet: {{email}}"
+    }
+  },
+  "currency": {
+    "label": "Rezultāta valūta",
+    "title": "Kādā valūtā rādīt izmaksas?",
+    "hint": "Izsoles summas (USD, JPY, AED…) tiek pārrēķinātas pēc aktuālā centrālās bankas kursa. Valūta nemaina nodokļu aprēķinu – nodokļus vienmēr nosaka muitošanas valsts.",
+    "groupEu": "ES valūtas",
+    "groupOther": "Citas"
+  }
+}
