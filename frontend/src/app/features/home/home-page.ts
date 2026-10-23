@@ -1,4 +1,4 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component, computed, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { CountryNamePipe } from '../../core/format/country-name.pipe';
@@ -7,6 +7,7 @@ import { pathFor } from '../../core/routing/paths';
 import { Flag } from '../../shared/flag/flag';
 import { Icon } from '../../shared/icon/icon';
 import { IconName } from '../../shared/icon/icons';
+import { BlogArticle } from '../blog/blog.models';
 import { FaqSection } from './faq-section';
 import { WorldMap } from './world-map';
 
@@ -277,6 +278,31 @@ interface CostGroup { key: string; icon: IconName; items: number }
       </div>
     </section>
 
+    <!-- FROM THE BLOG -->
+    @if (latest().length) {
+      <section id="blog" class="border-t border-line py-16">
+        <div class="site">
+          <div class="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p class="eyebrow">{{ 'blog.latest' | translate }}</p>
+              <h2 class="h-section mt-5 max-w-3xl">{{ 'blog.latestLead' | translate }}</h2>
+            </div>
+            <a [routerLink]="blog()" class="link-arrow text-[15px]">{{ 'blog.more' | translate }} <app-icon name="arrow-long" [size]="26" [stroke]="1.5" /></a>
+          </div>
+          <div class="mt-9 grid gap-7 md:grid-cols-3">
+            @for (a of latest(); track a.id) {
+              <a [routerLink]="blog() + '/' + a.slug" class="card group flex flex-col p-6 transition hover:-translate-y-1">
+                <span class="text-xs font-semibold uppercase tracking-[0.08em] text-brand-text">{{ 'blog.category.' + a.category | translate }}</span>
+                <h3 class="mt-4 text-xl font-extrabold leading-tight">{{ a.title }}</h3>
+                <p class="mt-3 line-clamp-3 text-sm leading-relaxed text-muted">{{ a.description }}</p>
+                <span class="mt-auto pt-6 text-xs text-muted">{{ 'blog.minutes' | translate: { n: a.minutes } }}</span>
+              </a>
+            }
+          </div>
+        </div>
+      </section>
+    }
+
     <app-faq-section />
 
     <!-- FINAL CTA -->
@@ -297,6 +323,11 @@ interface CostGroup { key: string; icon: IconName; items: number }
   `,
 })
 export class HomePage {
+  /** Newest articles in the current language (route resolver). */
+  readonly posts = input<BlogArticle[]>([]);
+  protected readonly latest = computed(() => this.posts().slice(0, 3));
+  protected readonly blog = computed(() => `/${this.lang.current()}/blog`);
+
   protected readonly lang = inject(LanguageService);
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly about = computed(() => pathFor('about', this.lang.current()));

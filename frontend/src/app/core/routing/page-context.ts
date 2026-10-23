@@ -34,9 +34,9 @@ export class PageContext {
       leaf = leaf.firstChild;
     }
     const data = leaf.snapshot.data;
-    const page = data['page'] as Page | 'report' | 'guide' | undefined;
-    if (page === 'guide') {
-      return; // guide pages set their own head tags and language links (GuidePage)
+    const page = data['page'] as Page | 'report' | 'guide' | 'blog' | undefined;
+    if (page === 'guide' || page === 'blog') {
+      return; // guide and blog pages set their own head tags and language links
     }
     if (page && INDEXABLE.includes(page as Page) && !data['noindex']) {
       this.seo.apply(page as Page, this.lang.current());

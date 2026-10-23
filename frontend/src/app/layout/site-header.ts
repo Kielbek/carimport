@@ -31,6 +31,7 @@ import { ThemeToggle } from './theme-toggle';
             <a [routerLink]="home()" [fragment]="item.fragment" class="transition hover:text-brand-text">{{ item.label | translate }}</a>
           }
           <a [routerLink]="guides()" class="transition hover:text-brand-text">{{ 'guide.nav.title' | translate }}</a>
+          <a [routerLink]="blog()" class="transition hover:text-brand-text">{{ 'layout.blog' | translate }}</a>
           <a [routerLink]="about()" routerLinkActive="text-brand-text" class="transition hover:text-brand-text">{{ 'layout.about' | translate }}</a>
         </nav>
 
@@ -57,6 +58,7 @@ import { ThemeToggle } from './theme-toggle';
               <a [routerLink]="home()" [fragment]="item.fragment" (click)="menu.set(false)" class="py-2.5">{{ item.label | translate }}</a>
             }
             <a [routerLink]="guides()" (click)="menu.set(false)" class="py-2.5">{{ 'guide.nav.title' | translate }}</a>
+            <a [routerLink]="blog()" (click)="menu.set(false)" class="py-2.5">{{ 'layout.blog' | translate }}</a>
             <a [routerLink]="about()" (click)="menu.set(false)" class="py-2.5">{{ 'layout.about' | translate }}</a>
             <app-language-menu class="mt-3 self-start sm:hidden" [hrefFor]="hrefFor()" />
           </div>
@@ -74,11 +76,11 @@ export class SiteHeader {
   protected readonly home = computed(() => pathFor('home', this.lang.current()));
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly about = computed(() => pathFor('about', this.lang.current()));
+  protected readonly blog = computed(() => `/${this.lang.current()}/blog`);
   protected readonly guides = computed(() => guidePath({ section: 'origins', item: null }, this.lang.current()));
   protected readonly anchors = [
     { fragment: 'why', label: 'layout.why' },
     { fragment: 'how-it-works', label: 'layout.howItWorks' },
-    { fragment: 'pricing', label: 'layout.pricing' },
     { fragment: 'faq', label: 'layout.faq' },
   ];
 }

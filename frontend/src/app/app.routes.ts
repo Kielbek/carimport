@@ -4,6 +4,7 @@ import { languageGuard } from './core/i18n/language.guard';
 import { LanguageService } from './core/i18n/language.service';
 import { ALL_SECTION_SLUGS } from './core/routing/guide-paths';
 import { SLUGS } from './core/routing/paths';
+import { blogResolver } from './features/blog/blog-content';
 
 const calculator = () => import('./features/calculator/calculator-page').then((m) => m.CalculatorPage);
 const guide = () => import('./features/guides/guide-page').then((m) => m.GuidePage);
@@ -16,6 +17,8 @@ const guides: Routes = [...ALL_SECTION_SLUGS].flatMap((section) => [
   { path: section, loadComponent: guide, data: { page: 'guide', section } },
   { path: `${section}/:item`, loadComponent: guide, data: { page: 'guide', section } },
 ]);
+
+const blog = () => import('./features/blog/blog-page').then((m) => m.BlogPage);
 
 const about = () => import('./features/about/about-page').then((m) => m.AboutPage);
 const privacy = () => import('./features/legal/privacy-page').then((m) => m.PrivacyPage);
@@ -38,7 +41,14 @@ export const routes: Routes = [
         path: '',
         loadComponent: () => import('./layout/shell').then((m) => m.Shell),
         children: [
-          { path: '', loadComponent: () => import('./features/home/home-page').then((m) => m.HomePage), data: { page: 'home' } },
+          {
+            path: '',
+            loadComponent: () => import('./features/home/home-page').then((m) => m.HomePage),
+            data: { page: 'home' },
+            resolve: { posts: blogResolver },
+          },
+          { path: 'blog', loadComponent: blog, data: { page: 'blog' }, resolve: { posts: blogResolver } },
+          { path: 'blog/:slug', loadComponent: blog, data: { page: 'blog' }, resolve: { posts: blogResolver } },
           ...localized(SLUGS.about, about, 'about'),
           ...localized(SLUGS.privacy, privacy, 'privacy'),
           ...guides,

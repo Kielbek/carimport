@@ -2,6 +2,7 @@ import { RenderMode, ServerRoute } from '@angular/ssr';
 import { SUPPORTED_LANGS } from './core/i18n/language.service';
 import { GUIDE_SECTIONS, GuideSection, itemSlug, itemsOf } from './core/routing/guide-paths';
 import { SLUGS } from './core/routing/paths';
+import { BLOG_INDEX } from './features/blog/blog-index.generated';
 
 const allLangs = async () => SUPPORTED_LANGS.map((lang) => ({ lang }));
 
@@ -40,6 +41,17 @@ const guides: ServerRoute[] = [...new Set(guideSections.map((g) => g.slug))].fla
   ];
 });
 
+/** Blog list in every language (empty languages show a short note) and every article in the languages that have it. */
+const blog: ServerRoute[] = [
+  { path: ':lang/blog', renderMode: RenderMode.Prerender, getPrerenderParams: allLangs },
+  {
+    path: ':lang/blog/:slug',
+    renderMode: RenderMode.Prerender,
+    getPrerenderParams: async () =>
+      Object.values(BLOG_INDEX).flatMap((versions) => Object.entries(versions).map(([lang, slug]) => ({ lang, slug }))),
+  },
+];
+
 /**
  * Static output: public, indexable pages are prerendered to HTML at build time (fast, crawlable, CDN-friendly);
  * personal pages (report, quote links) and the language-detecting root render in the browser.
@@ -51,5 +63,6 @@ export const serverRoutes: ServerRoute[] = [
   ...perLanguage(SLUGS.about),
   ...perLanguage(SLUGS.privacy),
   ...guides,
+  ...blog,
   { path: '**', renderMode: RenderMode.Client },
 ];

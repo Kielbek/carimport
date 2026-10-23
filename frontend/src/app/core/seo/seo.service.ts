@@ -20,6 +20,14 @@ export interface CustomPage {
   faq: { q: string; a: string }[];
   /** schema.org entity the article is about (a Place, a Country, ...). */
   about?: Record<string, unknown>;
+  /** Article headline if it differs from the <title>. */
+  headline?: string;
+  /** schema.org type of the main entity; default Article. */
+  type?: 'Article' | 'BlogPosting' | 'CollectionPage';
+  /** ISO date - published and modified (blog). */
+  published?: string;
+  /** Languages that have this page (hreflang); default all. */
+  languages?: readonly Lang[];
 }
 
 /**
@@ -74,7 +82,7 @@ export class SeoService {
     this.meta.updateTag({ property: 'og:image', content: SITE.url + SITE.ogImage });
     this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
 
-    this.writeLinks(url, (l) => SITE.url + page.pathFor(l));
+    this.writeLinks(url, (l) => SITE.url + page.pathFor(l), page.languages);
     const graph: Record<string, unknown>[] = [
       ...this.baseGraph(page.lang),
       {
@@ -87,8 +95,9 @@ export class SeoService {
         })),
       },
       {
-        '@type': 'Article',
-        headline: page.title,
+        '@type': page.type ?? 'Article',
+        headline: page.headline ?? page.title,
+        ...(page.published ? { datePublished: page.published, dateModified: page.published } : {}),
         description: page.description,
         inLanguage: page.lang,
         mainEntityOfPage: url,
@@ -120,7 +129,7 @@ export class SeoService {
     this.writeLinks(canonical, (l) => SITE.url + pathFor(page, l));
   }
 
-  private writeLinks(canonical: string, alternate: (lang: Lang) => string): void {
+  private writeLinks(canonical: string, alternate: (lang: Lang) => string, langs: readonly Lang[] = SUPPORTED_LANGS): void {
     const head = this.document.head;
     head.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang]').forEach((l) => l.remove());
     const add = (attrs: Record<string, string>) => {
@@ -129,10 +138,10 @@ export class SeoService {
       head.appendChild(link);
     };
     add({ rel: 'canonical', href: canonical });
-    for (const l of SUPPORTED_LANGS) {
+    for (const l of langs) {
       add({ rel: 'alternate', hreflang: l, href: alternate(l) });
     }
-    add({ rel: 'alternate', hreflang: 'x-default', href: alternate('en') });
+    add({ rel: 'alternate', hreflang: 'x-default', href: alternate(langs.includes('en') ? 'en' : langs[0]) });
   }
 
   private setJsonLd(page: Page, lang: Lang, name: string, description: string, url: string, t: (k: string) => string) {

@@ -1,0 +1,618 @@
+[
+  {
+    "id": "total-cost",
+    "slug": "how-much-does-it-cost-to-import-a-car-from-the-usa",
+    "category": "costs",
+    "origin": "USA",
+    "date": "2026-10-20",
+    "minutes": 8,
+    "title": "How much does it really cost to import a car from the USA?",
+    "metaTitle": "How much does it cost to import a car from the USA? | CarImport.eu",
+    "description": "A real cost breakdown of importing a car from the USA to the EU: auction fees, transport, freight, customs duty, VAT, port fees and registration – with an example.",
+    "lead": "The price on Copart or IAAI is only the beginning. By the time the car stands registered in front of your house, you usually pay 1.6 to 2 times the hammer price. Here is where that money goes – line by line.",
+    "blocks": [
+      {
+        "h2": "The short answer"
+      },
+      {
+        "p": "For a typical passenger car bought for $10,000 at a US auction, expect a total of roughly $16,000–19,000 delivered and registered in the EU. The biggest items after the car itself are import VAT, customs duty and transport. Repairs of damaged cars come on top."
+      },
+      {
+        "h2": "1. The purchase: bid plus auction fees"
+      },
+      {
+        "p": "Copart and IAAI charge a buyer fee that grows with the price, plus fixed internet-bidding, gate and environmental fees. Clean-title and salvage-title cars have different fee schedules. If you bid through a broker, add the broker’s commission."
+      },
+      {
+        "ul": [
+          "Buyer fee: tiered by price, often $600–1,000 on a $10,000 car",
+          "Virtual/internet bid fee and gate fee: about $100–200",
+          "Broker commission: typically $200–500 per car",
+          "Storage: charged per day if you pay or collect late"
+        ]
+      },
+      {
+        "h2": "2. Getting the car to the port"
+      },
+      {
+        "p": "A truck takes the car from the auction yard to the export port (New Jersey, Savannah, Houston or Los Angeles). Distance matters: a yard close to the port costs a few hundred dollars, a cross-country haul over $1,000. A non-running car needs a forklift and winch, which adds a surcharge."
+      },
+      {
+        "h2": "3. Ocean freight and insurance"
+      },
+      {
+        "p": "A shared container (usually 3–4 cars) is the cheapest safe option: about $1,000–1,600 per car from the East Coast to North Sea ports. RoRo is cheaper for running cars but less protected. Marine insurance costs about 1.5% of the car’s value and is part of the customs value."
+      },
+      {
+        "h2": "4. Customs duty"
+      },
+      {
+        "p": "Duty is charged on the customs value – the CIF value: price, auction fees, transport to the EU border and insurance. For passenger cars it is 10% (CN code 8703), for pickups 22%, for motorcycles 6–8%. Cars over 30 years old in original condition can be duty-free as collector’s items."
+      },
+      {
+        "h2": "5. Import VAT – in the country of clearance"
+      },
+      {
+        "p": "VAT is charged on the customs value plus duty and the transport costs to the first destination in the EU. The rate is the one of the country where the car is cleared – from 17% in Luxembourg to 27% in Hungary. That is why the choice of port can change the total by hundreds of euros."
+      },
+      {
+        "h2": "6. Port, delivery and registration"
+      },
+      {
+        "p": "In the EU port you pay terminal handling and container unloading (about €400–500) and a customs agent (about €250). Then the car travels to your address by car carrier or tow truck, priced per kilometre. Finally come national costs: inspection, translations, registration fees and – in many countries – a registration tax."
+      },
+      {
+        "h2": "Example: a $10,000 car"
+      },
+      {
+        "table": {
+          "head": [
+            "Item",
+            "Amount (USD)"
+          ],
+          "rows": [
+            [
+              "Winning bid",
+              "10,000"
+            ],
+            [
+              "Auction and broker fees",
+              "1,200"
+            ],
+            [
+              "Transport to the port",
+              "450"
+            ],
+            [
+              "Shared container freight",
+              "1,200"
+            ],
+            [
+              "Marine insurance",
+              "180"
+            ],
+            [
+              "Customs value (CIF)",
+              "13,030"
+            ],
+            [
+              "Customs duty 10%",
+              "1,303"
+            ],
+            [
+              "Import VAT (example 21%)",
+              "3,130"
+            ],
+            [
+              "Port, devanning and customs agent",
+              "750"
+            ],
+            [
+              "Delivery to your address",
+              "500"
+            ],
+            [
+              "Total before registration",
+              "≈ 18,000"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "The example uses round numbers for orientation. Exchange rates, the clearance country, the car type and your address change the result – the calculator works it out for your specific car."
+      },
+      {
+        "tip": "Plan a buffer of 10–15% for surprises: storage fees, a delayed vessel, a customs inspection or hidden damage. The calculator shows these risks in its pessimistic scenario."
+      },
+      {
+        "h2": "How to pay less"
+      },
+      {
+        "ol": [
+          "Buy close to an export port to save on inland transport.",
+          "Use a shared container instead of an exclusive one.",
+          "Compare ports of clearance: lower VAT in another EU country can beat the extra road transport.",
+          "Check the auction fee tiers – a few dollars over a threshold can raise the fee.",
+          "Pay the auction in USD with a low-margin currency exchange."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is import VAT refundable for a private buyer?",
+        "a": "No. A private person pays import VAT as a final cost. A VAT-registered company can usually deduct it, or use customs procedure 4200 when the car goes on to another EU country."
+      },
+      {
+        "q": "Do I pay VAT on the shipping costs too?",
+        "a": "Yes. The VAT base includes the customs value, the duty and the transport costs to the first destination in the EU."
+      }
+    ]
+  },
+  {
+    "id": "copart-iaai",
+    "slug": "how-to-buy-a-car-at-copart-or-iaai-from-europe",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-16",
+    "minutes": 7,
+    "title": "How to buy a car at Copart or IAAI from Europe",
+    "metaTitle": "How to buy at Copart or IAAI from Europe – step by step | CarImport.eu",
+    "description": "Registering, deposits, brokers, bidding, payment deadlines and storage fees: how a private buyer in Europe buys a car at the Copart and IAAI auctions.",
+    "lead": "Copart and IAAI sell hundreds of thousands of cars every month, many of them to buyers in Europe. Here is how bidding from abroad works and which fees and deadlines you must not miss.",
+    "blocks": [
+      {
+        "h2": "Do you need a broker?"
+      },
+      {
+        "p": "Many lots can only be bought with a dealer licence, and some states restrict who may buy salvage vehicles. That is why most European buyers bid through a registered broker (also called an agent or importer) who places the bids on your behalf under their licence. The broker charges a fixed commission per car."
+      },
+      {
+        "h2": "Step by step"
+      },
+      {
+        "ol": [
+          "Choose a broker and sign the agreement; you get access to bidding through their account.",
+          "Pay the security deposit – usually about 10% of your maximum bid.",
+          "Find the car, read the condition report and check the VIN history.",
+          "Set your maximum bid including all fees – not just the hammer price.",
+          "Bid in the preliminary round or live; the highest bid wins if it meets the seller’s reserve.",
+          "Pay within the deadline (usually 2–3 business days) by bank transfer.",
+          "Arrange pick-up quickly – free storage is short, then a daily fee is charged.",
+          "The car is transported to the port, and the title goes to the exporter for customs."
+        ]
+      },
+      {
+        "h2": "Reading a listing"
+      },
+      {
+        "ul": [
+          "Title type: clean, salvage, rebuilt or certificate of destruction / parts only",
+          "Primary and secondary damage, airbags, odometer status",
+          "Run and Drive / Engine Starts / Enhanced Vehicles labels – verified only at check-in, not guaranteed",
+          "Keys present, location of the yard and its distance to the port",
+          "Seller type: insurance company, dealer, rental company"
+        ]
+      },
+      {
+        "tip": "‘Run and Drive’ means the car started and moved forward at check-in. It does not mean it is roadworthy – plan for a technical check after arrival."
+      },
+      {
+        "h2": "Fees that surprise new buyers"
+      },
+      {
+        "p": "Besides the buyer fee, auctions add internet-bidding, gate, environmental and title-handling fees. Late payment and late pick-up cost extra, and relisting fees apply if you do not pay. Your broker adds a commission and sometimes a fee for documents and export."
+      },
+      {
+        "h2": "How much to bid"
+      },
+      {
+        "p": "Work backwards: start from what the car may cost at your door – including duty, VAT, transport and registration – and from the value it will have in your market after repairs. The difference is your maximum, and the calculator turns it into a bid in dollars."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I cancel after winning?",
+        "a": "Usually not without penalty. If you do not pay, the deposit is forfeited and relisting fees may apply."
+      },
+      {
+        "q": "How long from winning to the car in Europe?",
+        "a": "Typically 4–8 weeks: payment and pick-up 1–2 weeks, transport to the port and loading 1–3 weeks, sailing 2–5 weeks."
+      }
+    ]
+  },
+  {
+    "id": "salvage-title",
+    "slug": "salvage-title-cars-from-the-usa-what-you-need-to-know",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-12",
+    "minutes": 6,
+    "title": "Salvage title cars from the USA: what you need to know",
+    "metaTitle": "Salvage title cars from the USA – risks and costs | CarImport.eu",
+    "description": "What clean, salvage, rebuilt and parts-only titles mean, whether a salvage car can be registered in the EU and how to budget for repairs and hidden damage.",
+    "lead": "Most cars on Copart and IAAI have a salvage title – that is why they are so cheap. In the EU the title brand itself does not stop registration, but it says a lot about the risk you are buying.",
+    "blocks": [
+      {
+        "h2": "Title types in short"
+      },
+      {
+        "ul": [
+          "Clean – no total loss recorded",
+          "Salvage – declared a total loss by an insurer (collision, flood, theft recovery, hail)",
+          "Rebuilt / reconstructed – a former salvage car repaired and re-inspected in the US",
+          "Certificate of destruction / parts only / non-repairable – meant for parts; avoid if you want to register the car"
+        ]
+      },
+      {
+        "h2": "Can a salvage car be registered in Europe?"
+      },
+      {
+        "p": "Yes. EU countries do not use US title brands; what matters is that the repaired car passes the technical inspection and meets EU lighting and safety requirements. The salvage history may, however, lower resale value and some insurers ask about it."
+      },
+      {
+        "h2": "Where the real risk lies"
+      },
+      {
+        "p": "Photos show the visible damage, not what is behind it: bent frames, deployed airbags and their sensors, electronics after flooding, missing parts. Flood cars are the riskiest – corrosion and electrical faults appear weeks later."
+      },
+      {
+        "tip": "Budget repairs at 30–40% of the price for cars that do not run, and keep an extra reserve for hidden damage. The calculator proposes these amounts automatically."
+      },
+      {
+        "h2": "How to reduce the risk"
+      },
+      {
+        "ol": [
+          "Check the VIN history for previous accidents and flood records.",
+          "Prefer cars with front or rear damage only, without airbag deployment.",
+          "Get a repair estimate from a body shop that knows the model before you bid.",
+          "Check parts availability and prices in your country.",
+          "Leave room in the budget: the cheapest car is often the most expensive project."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does a salvage title affect customs duty?",
+        "a": "No. Duty and VAT are based on the price paid and transport costs, whatever the title."
+      },
+      {
+        "q": "Is a rebuilt title better?",
+        "a": "It shows the car was repaired and inspected in the US, but the quality of that repair varies. Inspect it like any damaged car."
+      }
+    ]
+  },
+  {
+    "id": "customs-vat",
+    "slug": "customs-duty-and-vat-on-imported-cars-explained",
+    "category": "customs",
+    "origin": null,
+    "date": "2026-10-08",
+    "minutes": 7,
+    "title": "Customs duty and VAT on imported cars, explained",
+    "metaTitle": "Customs duty and import VAT on cars – how it works | CarImport.eu",
+    "description": "How customs value (CIF), duty rates, import VAT and procedure 4200 work when you import a car from outside the EU – with a worked example.",
+    "lead": "Customs is where most first-time importers get their numbers wrong. Two rules explain almost everything: duty is charged on the CIF value, and VAT on top of it in the country of clearance.",
+    "blocks": [
+      {
+        "h2": "Customs value: what is included"
+      },
+      {
+        "p": "The customs value of a car bought outside the EU is its transaction value plus the costs of bringing it to the EU border: auction fees, transport to the export port, ocean freight and insurance. Costs after the border – unloading, transport inside the EU – are not part of it."
+      },
+      {
+        "h2": "Duty rates"
+      },
+      {
+        "table": {
+          "head": [
+            "Vehicle",
+            "CN code",
+            "Duty"
+          ],
+          "rows": [
+            [
+              "Passenger car, SUV",
+              "8703",
+              "10%"
+            ],
+            [
+              "Pickup, light truck",
+              "8704",
+              "22%"
+            ],
+            [
+              "Motorcycle",
+              "8711",
+              "6–8%"
+            ],
+            [
+              "Collector’s vehicle (30+ years, original)",
+              "9705",
+              "0%"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Import VAT"
+      },
+      {
+        "p": "VAT is calculated on the customs value plus the duty and the transport costs to the first destination in the EU. It is paid in the member state where the car is released for free circulation, at that country’s standard rate. Some countries also charge an excise or registration tax later – these are national and differ a lot."
+      },
+      {
+        "h2": "Worked example"
+      },
+      {
+        "table": {
+          "head": [
+            "",
+            "EUR"
+          ],
+          "rows": [
+            [
+              "Customs value (CIF)",
+              "12,000"
+            ],
+            [
+              "Duty 10%",
+              "1,200"
+            ],
+            [
+              "Unloading and delivery to destination",
+              "700"
+            ],
+            [
+              "VAT base",
+              "13,900"
+            ],
+            [
+              "Import VAT at 21%",
+              "2,919"
+            ],
+            [
+              "Duty + VAT",
+              "4,119"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Customs procedure 4200"
+      },
+      {
+        "p": "A VAT-registered company importing a car that goes straight on to another EU country can clear it under procedure 4200: no import VAT is paid in the country of arrival, and the buyer accounts for VAT in its own country under the reverse charge. Private persons cannot use it."
+      },
+      {
+        "tip": "Keep the purchase invoice, auction fee receipts, freight invoice and bill of lading – customs may challenge the declared value, and these documents prove it."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can customs raise the value of my car?",
+        "a": "Yes, if the declared price looks unrealistically low. Proof of the auction result and payments usually settles it."
+      },
+      {
+        "q": "Is duty lower for electric cars?",
+        "a": "No, battery electric passenger cars also pay 10%. Some countries have lower registration taxes for EVs."
+      }
+    ]
+  },
+  {
+    "id": "registration",
+    "slug": "registering-an-imported-car-in-the-eu-documents-and-steps",
+    "category": "registration",
+    "origin": null,
+    "date": "2026-10-04",
+    "minutes": 6,
+    "title": "Registering an imported car: documents and steps",
+    "metaTitle": "Registering a car imported from the USA or Japan | CarImport.eu",
+    "description": "Which documents you need, which inspection the car must pass and what to adapt (lights, speedometer) before registering a car imported from outside the EU.",
+    "lead": "Customs clearance is only half of the job. Before the car gets plates, it has to meet EU technical requirements and you need a set of documents – most of them translated.",
+    "blocks": [
+      {
+        "h2": "Documents you will need"
+      },
+      {
+        "ul": [
+          "Title or export certificate and the purchase invoice",
+          "Customs declaration showing duty and VAT paid",
+          "Bill of lading",
+          "Sworn translations of foreign-language documents",
+          "Inspection certificate / conformity confirmation",
+          "Proof of insurance and identity"
+        ]
+      },
+      {
+        "h2": "Technical adaptation"
+      },
+      {
+        "p": "US cars usually need their lighting adapted: red rear indicators and side markers do not meet EU rules, and headlights may need a different beam pattern. Speedometers must show km/h. A rear fog light is mandatory. Japanese cars are right-hand drive, which most countries accept with adjusted headlights."
+      },
+      {
+        "h2": "Inspection and approval"
+      },
+      {
+        "p": "A car without an EU type approval goes through an individual approval or a thorough first inspection. The inspector checks identification (VIN), lighting, emissions and safety equipment. Plan this step with a workshop that knows imported cars."
+      },
+      {
+        "h2": "Registration and taxes"
+      },
+      {
+        "p": "With the inspection certificate you register the car at the national registration authority. Several countries charge a one-off registration tax based on CO₂, price or engine size; others charge only a fee for plates and documents. Some set a deadline after import, often 30 days."
+      },
+      {
+        "tip": "Ask the workshop for the list of required modifications before you buy – conversions on some models cost far more than on others."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need a certificate of conformity (CoC)?",
+        "a": "Cars built for the US or Japan have no EU CoC. They are registered through individual approval or a national inspection procedure instead."
+      },
+      {
+        "q": "Can I drive the car home from the port?",
+        "a": "Only on temporary plates with insurance, and only if the car is roadworthy. Otherwise use a car carrier or tow truck."
+      }
+    ]
+  },
+  {
+    "id": "port-choice",
+    "slug": "bremerhaven-rotterdam-or-antwerp-choosing-a-port",
+    "category": "logistics",
+    "origin": null,
+    "date": "2026-09-30",
+    "minutes": 6,
+    "title": "Bremerhaven, Rotterdam or Antwerp? How to choose the port of clearance",
+    "metaTitle": "Which EU port to clear an imported car? Comparison | CarImport.eu",
+    "description": "How the port of clearance changes import VAT, fees, sailing time and delivery costs – and how to find the cheapest of the 43 EU ports for your address.",
+    "lead": "Most cars from the USA land in Bremerhaven, Rotterdam or Antwerp – but they can be cleared in any of 43 EU ports. The port decides the VAT rate, the port fees and how far the car travels by road.",
+    "blocks": [
+      {
+        "h2": "Three things the port changes"
+      },
+      {
+        "ol": [
+          "Import VAT: you pay the rate of the port country – 19% in Germany, 21% in the Netherlands and Belgium, up to 25% in Scandinavia.",
+          "Fees: terminal handling, devanning and the customs agent differ by port.",
+          "Road distance: the cheaper VAT port may be far from your home."
+        ]
+      },
+      {
+        "h2": "When a ‘foreign’ port is cheaper"
+      },
+      {
+        "p": "If your home country has a high VAT rate, clearing in a country with a lower one can save more than the extra road transport costs. Some countries additionally charge excise or registration tax at home, so the comparison must be done door to door."
+      },
+      {
+        "h2": "Sailing times"
+      },
+      {
+        "p": "From the US East Coast the North Sea ports are the fastest (about 2 weeks). From Japan and the UAE, ships come through Suez, so Mediterranean ports such as Koper, Genoa or Piraeus are a week or more faster than the North Sea."
+      },
+      {
+        "tip": "Enter your address in the calculator: it prices every EU port door to door and picks the cheapest automatically."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I clear the car in another country and register it at home?",
+        "a": "Yes. You pay import VAT in the port country and register the car at home with the customs documents."
+      },
+      {
+        "q": "Which ports handle the most cars from the USA?",
+        "a": "Bremerhaven, Rotterdam, Antwerp and Hamburg on the North Sea, plus Baltic ports such as Gdynia and Klaipėda for Central and Eastern Europe."
+      }
+    ]
+  },
+  {
+    "id": "japan-jdm",
+    "slug": "importing-a-jdm-car-from-japan-auction-sheets-and-costs",
+    "category": "buying",
+    "origin": "JAPAN",
+    "date": "2026-09-25",
+    "minutes": 7,
+    "title": "Importing a JDM car from Japan: auction sheets, grades and costs",
+    "metaTitle": "Import a JDM car from Japan – auction sheets & costs | CarImport.eu",
+    "description": "How Japanese car auctions work, how to read an auction sheet and its grades, what right-hand drive means for registration and what a JDM import costs.",
+    "lead": "Japanese auctions are famous for honest grading and cars in excellent condition. With a reliable exporter, buying a JDM car is safer than buying blind from US auctions – if you understand the auction sheet.",
+    "blocks": [
+      {
+        "h2": "How buying in Japan works"
+      },
+      {
+        "p": "Auctions such as USS, TAA, CAA and JU are open to licensed dealers. You buy through an exporter: you choose cars, set a maximum bid, and the exporter bids, pays, deregisters the car for export and ships it."
+      },
+      {
+        "h2": "Reading the auction sheet"
+      },
+      {
+        "ul": [
+          "Overall grade: 6–5 nearly new, 4.5–4 very good, 3.5 average, R/RA repaired accident car",
+          "Interior grade: A to D",
+          "Body map: A = scratch, U = dent, W = wave/repair, S = rust, C = corrosion, with a number for size",
+          "Inspector notes – always get them translated"
+        ]
+      },
+      {
+        "tip": "An R or RA grade is not always bad, but ask what was repaired – frame repairs are a different story from a replaced bumper."
+      },
+      {
+        "h2": "Costs and timing"
+      },
+      {
+        "p": "Add the exporter’s fee, inland transport in Japan, export documents and freight. Ships go via Suez: about 5–6 weeks to the North Sea, less to Mediterranean ports. Duty is 10% for passenger cars and import VAT is paid in the country of clearance."
+      },
+      {
+        "h2": "Right-hand drive"
+      },
+      {
+        "p": "Most EU countries register RHD cars, usually after headlight adjustment. A few restrict them for permanent registration – check your national rules before buying."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Are Japanese mileages reliable?",
+        "a": "Generally yes – auction sheets and export certificates record mileage, and rollbacks are rare compared with other markets."
+      },
+      {
+        "q": "What about rust?",
+        "a": "Cars from northern Japan (Hokkaido) can have underbody rust from road salt; the sheet marks it as S or C."
+      }
+    ]
+  },
+  {
+    "id": "checklist",
+    "slug": "checklist-before-you-bid-on-an-imported-car",
+    "category": "buying",
+    "origin": null,
+    "date": "2026-09-20",
+    "minutes": 5,
+    "title": "12-point checklist before you bid on a car abroad",
+    "metaTitle": "Checklist before bidding on a car from the USA or Japan | CarImport.eu",
+    "description": "Twelve checks that protect your budget when you buy a car at an auction abroad: VIN history, title, damage, fees, transport, taxes and registration.",
+    "lead": "An auction gives you minutes to decide. These twelve points take an evening and save you from the most expensive mistakes.",
+    "blocks": [
+      {
+        "ol": [
+          "Run a VIN history report: accidents, flood, mileage, theft.",
+          "Check the title type – avoid parts-only and non-repairable certificates.",
+          "Study every photo: panel gaps, airbags, water lines, engine bay.",
+          "Read the condition labels as information, not a guarantee.",
+          "Check the yard location and the distance to the export port.",
+          "Calculate all auction and broker fees for your bid level.",
+          "Get the full landed cost: freight, duty, VAT, port, delivery.",
+          "Compare ports of clearance for your address.",
+          "Get a repair estimate and parts prices in your country.",
+          "Check what the car must change to be registered (lights, speedometer).",
+          "Plan the timing: payment and pick-up deadlines, sailing, inspection.",
+          "Set a maximum bid – and stick to it."
+        ]
+      },
+      {
+        "tip": "Do steps 6–8 in the calculator: it adds all fees and taxes and shows optimistic, average and pessimistic totals."
+      },
+      {
+        "h2": "The most common mistakes"
+      },
+      {
+        "ul": [
+          "Bidding up to the market price without counting fees and taxes",
+          "Forgetting storage fees when pick-up is delayed",
+          "Underestimating repairs of ‘minor’ front damage",
+          "Ignoring the registration tax in the home country"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much should I keep in reserve?",
+        "a": "At least 10–15% of the total for surprises, more for non-running cars."
+      },
+      {
+        "q": "Is a VIN report enough?",
+        "a": "It is essential but not complete – combine it with the photos, the condition report and a repair estimate."
+      }
+    ]
+  }
+]
