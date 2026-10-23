@@ -398,7 +398,8 @@
     "why": "De ce noi",
     "what": "Ce calculăm",
     "ctaHint": "Gratuit, fără înregistrare",
-    "language": "Limbă"
+    "language": "Limbă",
+    "blog": "Blog"
   },
   "footer": {
     "about": "Calculator independent al costurilor de import pentru mașini din afara UE. Nu vindem și nu importăm mașini – calculăm cât costă de fapt.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Ghiduri similare",
     "disclaimer": "Informații cu caracter orientativ; sumele finale sunt stabilite de autoritățile fiscale și vamale. Cotele sunt cele folosite de calculator."
+  },
+  "blog": {
+    "title": "Blog despre importul de mașini",
+    "lead": "Articole practice despre importul de mașini din SUA, Canada, Japonia, Emiratele Arabe Unite și Marea Britanie: costuri reale, licitații, vamă, înmatriculare și greșelile pe care merită să le eviți.",
+    "metaTitle": "Blog import auto – costuri, licitații, vamă, înmatriculare | CarImport.eu",
+    "metaDescription": "Ghiduri și articole despre importul unei mașini în România și UE: cât costă de fapt, cum cumperi de la Copart și IAAI, taxe vamale, TVA și înmatriculare.",
+    "all": "Toate",
+    "minutes": "{{n}} min de citit",
+    "related": "Citește și",
+    "latest": "De pe blog",
+    "latestLead": "Răspunsuri la întrebările pe care le pune oricine înainte să importe o mașină.",
+    "more": "Toate articolele",
+    "empty": "Articolele în această limbă vor apărea în curând.",
+    "category": {
+      "costs": "Costuri",
+      "buying": "Cumpărare",
+      "customs": "Vamă și taxe",
+      "registration": "Înmatriculare",
+      "logistics": "Transport și porturi"
+    }
   }
 }

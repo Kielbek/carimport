@@ -398,7 +398,8 @@
     "why": "Zašto mi",
     "what": "Što izračunavamo",
     "ctaHint": "Besplatno, bez registracije",
-    "language": "Jezik"
+    "language": "Jezik",
+    "blog": "Blog"
   },
   "footer": {
     "about": "Neovisni kalkulator troškova uvoza automobila izvan EU. Automobile ne prodajemo niti uvozimo – izračunavamo koliko zaista koštaju.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Povezani vodiči",
     "disclaimer": "Informacije služe samo za orijentaciju; konačne iznose određuju porezna i carinska tijela. Stope kakve koristi kalkulator."
+  },
+  "blog": {
+    "title": "Blog o uvozu automobila",
+    "lead": "Praktični članci o uvozu automobila iz SAD-a, Kanade, Japana, UAE-a i Ujedinjenog Kraljevstva: stvarni troškovi, aukcije, carina, registracija i greške koje se isplati izbjeći.",
+    "metaTitle": "Blog o uvozu automobila – troškovi, aukcije, carina, registracija | CarImport.eu",
+    "metaDescription": "Vodiči i članci o uvozu automobila u EU: koliko to stvarno košta, kako kupiti na Copartu i IAAI-ju, carina, PDV i registracija.",
+    "all": "Sve",
+    "minutes": "{{n}} min čitanja",
+    "related": "Pročitajte i",
+    "latest": "S bloga",
+    "latestLead": "Odgovori na pitanja koja si ljudi postavljaju prije uvoza automobila.",
+    "more": "Svi članci",
+    "empty": "Članci na ovom jeziku uskoro stižu.",
+    "category": {
+      "costs": "Troškovi",
+      "buying": "Kupnja",
+      "customs": "Carina i porezi",
+      "registration": "Registracija",
+      "logistics": "Prijevoz i luke"
+    }
   }
 }

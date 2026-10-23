@@ -398,7 +398,8 @@
     "why": "Zakaj mi",
     "what": "Kaj izračunamo",
     "ctaHint": "Brezplačno, brez registracije",
-    "language": "Jezik"
+    "language": "Jezik",
+    "blog": "Blog"
   },
   "footer": {
     "about": "Neodvisni kalkulator stroškov uvoza avtomobilov izven EU. Avtomobilov ne prodajamo in ne uvažamo – izračunamo, koliko v resnici stanejo.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Sorodni vodniki",
     "disclaimer": "Informacije so zgolj okvirne; končne zneske določijo davčni in carinski organi. Stopnje, kot jih uporablja kalkulator."
+  },
+  "blog": {
+    "title": "Blog o uvozu avtomobilov",
+    "lead": "Praktični članki o uvozu avtomobilov iz ZDA, Kanade, Japonske, ZAE in Združenega kraljestva: dejanski stroški, dražbe, carina, registracija in napake, ki se jim je vredno izogniti.",
+    "metaTitle": "Blog o uvozu avtomobilov – stroški, dražbe, carina | CarImport.eu",
+    "metaDescription": "Vodniki in članki o uvozu avtomobila v EU: koliko res stane, kako kupiti na Copart in IAAI, carina, DDV in registracija v Sloveniji.",
+    "all": "Vse",
+    "minutes": "{{n}} min branja",
+    "related": "Preberite tudi",
+    "latest": "Iz bloga",
+    "latestLead": "Odgovori na vprašanja, ki si jih ljudje zastavljajo pred uvozom avtomobila.",
+    "more": "Vsi članki",
+    "empty": "Članki v tem jeziku so v pripravi.",
+    "category": {
+      "costs": "Stroški",
+      "buying": "Nakup",
+      "customs": "Carina in davki",
+      "registration": "Registracija",
+      "logistics": "Prevoz in pristanišča"
+    }
   }
 }

@@ -398,7 +398,8 @@
     "why": "Porquê nós",
     "what": "O que calculamos",
     "ctaHint": "Grátis, sem registo",
-    "language": "Idioma"
+    "language": "Idioma",
+    "blog": "Blog"
   },
   "footer": {
     "about": "Calculadora independente dos custos de importação de carros de fora da UE. Não vendemos nem importamos carros – calculamos quanto custam realmente.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Guias relacionados",
     "disclaimer": "Informação meramente indicativa; são as autoridades tributárias e aduaneiras que fixam os valores finais. Taxas tal como utilizadas pela calculadora."
+  },
+  "blog": {
+    "title": "Blog sobre importação de carros",
+    "lead": "Artigos práticos sobre a importação de carros dos EUA, Canadá, Japão, EAU e Reino Unido: custos reais, leilões, alfândega, legalização e os erros a evitar.",
+    "metaTitle": "Blog de importação de carros – custos, leilões, alfândega | CarImport.eu",
+    "metaDescription": "Guias e artigos sobre a importação de um carro para Portugal e a UE: quanto custa realmente, como comprar na Copart e IAAI, direitos, IVA e legalização.",
+    "all": "Todos",
+    "minutes": "{{n}} min de leitura",
+    "related": "Leia também",
+    "latest": "Do blog",
+    "latestLead": "Respostas às perguntas que se fazem antes de importar um carro.",
+    "more": "Todos os artigos",
+    "empty": "Os artigos neste idioma estarão disponíveis em breve.",
+    "category": {
+      "costs": "Custos",
+      "buying": "Compra",
+      "customs": "Alfândega e impostos",
+      "registration": "Legalização",
+      "logistics": "Transporte e portos"
+    }
   }
 }
