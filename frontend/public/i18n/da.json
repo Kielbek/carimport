@@ -1010,5 +1010,252 @@
     "hint": "Auktionsbeløb (USD, JPY, AED…) omregnes til centralbankens aktuelle kurs. Valutaen ændrer ikke afgiftsberegningen – afgifterne fastsættes altid af fortoldningslandet.",
     "groupEu": "EU-valutaer",
     "groupOther": "Andre"
+  },
+  "guide": {
+    "nav": {
+      "title": "Importguides",
+      "origins": "Import efter købsland",
+      "countries": "Import til EU-lande",
+      "ports": "Fortoldningshavne i EU",
+      "all": "Alle guides"
+    },
+    "hub": {
+      "origins": {
+        "title": "Guides til bilimport: USA, Canada, Japan, De Forenede Arabiske Emirater og Storbritannien",
+        "lead": "Trin-for-trin-guides for hvert land, du kan købe bil i: auktioner, dokumenter, transporttid, told, moms og registrering i Danmark – med de reelle omkostninger i beregneren.",
+        "metaTitle": "Guides til bilimport – USA, Canada, Japan, UAE, UK | CarImport.eu",
+        "metaDescription": "Sådan importerer du en bil fra USA, Canada, Japan, Emiraterne eller Storbritannien til Danmark: auktioner, dokumenter, fragt, told, moms og registrering."
+      },
+      "countries": {
+        "title": "Bilimport til hvert EU-land",
+        "lead": "Momssats, registreringsafgift, registreringsmyndighed, syn og nærmeste fortoldningshavne for alle 27 EU-lande.",
+        "metaTitle": "Bilimport til EU-lande – moms, registrering, havne | CarImport.eu",
+        "metaDescription": "Importmoms, registreringsafgifter, myndigheder, syn og nærmeste havne for alle 27 EU-lande – sammenlign og beregn den samlede pris på en importeret bil.",
+        "yours": "Dit land"
+      },
+      "ports": {
+        "title": "Fortoldningshavne i EU for importerede biler",
+        "lead": "Alle {{count}} havne i EU, hvor biler fra lande uden for EU fortoldes: gebyrer, moms, sejltider fra USA, Canada, Japan, Emiraterne og Storbritannien samt vejafstande.",
+        "metaTitle": "{{count}} EU-havne til bilimport – gebyrer, moms, sejltid | CarImport.eu",
+        "metaDescription": "Sammenlign alle {{count}} fortoldningshavne for biler i EU: terminal- og speditørgebyrer, importmoms, sejltider og vejafstande til Danmark.",
+        "sortedFrom": "Sorteret efter vejafstand til: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Trin for trin",
+        "costsTitle": "Det betaler du",
+        "portsTitle": "Nærmeste fortoldningshavne",
+        "docsTitle": "Dokumenter, du skal bruge",
+        "whyTitle": "Hvorfor købe her",
+        "auctionsTitle": "Hvor du køber",
+        "tipTitle": "Tip",
+        "step1": {
+          "title": "Køb bilen",
+          "text": "Vind auktionen eller køb hos en forhandler. Auktionsgebyrerne afhænger af prisniveau og title – beregneren anvender den aktuelle prisliste."
+        },
+        "step2": {
+          "title": "Transport til eksporthavnen",
+          "text": "En lastbil kører bilen fra pladsen til havnen; biler, der ikke kan køre, kræver gaffeltruck og spil, hvilket koster ekstra."
+        },
+        "step3": {
+          "title": "Søfragt",
+          "text": "Delt container, eksklusiv container eller RoRo. Sejladsen til EU tager {{min}}–{{max}} dage plus lastning og ventetid på skibet."
+        },
+        "step4": {
+          "title": "Fortoldning i EU-havnen",
+          "text": "En toldspeditør indgiver toldangivelsen. Du betaler told og importmoms i havnens land – medmindre en virksomhed bruger toldprocedure 4200."
+        },
+        "step5": {
+          "title": "Levering til din adresse",
+          "text": "Biltransporter, autotransport eller kørsel på midlertidige nummerplader – prissat pr. kilometer fra havnen."
+        },
+        "step6": {
+          "title": "Syn og registrering",
+          "text": "Syn, oversættelser og registrering i det land, hvor du bor, plus en eventuel lokal afgift ved registreringen."
+        },
+        "cost": {
+          "duty": "Told",
+          "dutyValue": "10 % af CIF-værdien (pickupper 22 %, motorcykler 6–8 %, veteranbiler 0 %)",
+          "vat": "Importmoms",
+          "vatValue": "{{vat}} % – {{country}}",
+          "vatRange": "17–27 % afhængigt af fortoldningslandet",
+          "registration": "Lokal afgift ved registrering",
+          "none": "ingen",
+          "shipping": "Sejltid",
+          "shippingValue": "{{min}}–{{max}} dage",
+          "currency": "Auktionsvaluta"
+        },
+        "portsNote": "Vejafstand fra havnen til befolkningscentret i {{country}}. Beregneren prissætter hver havn fra dør til dør for netop din adresse.",
+        "portsNoteEu": "Beregneren prissætter alle EU-havne fra dør til dør for netop din adresse og vælger den billigste.",
+        "faqPorts": {
+          "q": "Hvilken havn er billigst for mig?",
+          "a": "Det afhænger af din adresse, importmomsen i havnens land og sejlplanen. Beregneren prissætter hver EU-havn fra dør til dør og viser dem med den billigste først."
+        },
+        "faqBinding": {
+          "q": "Er beregningen bindende?",
+          "a": "Nej. Den bygger på aktuelle satser og prislister; told- og skattemyndighederne fastsætter de endelige beløb. PDF-rapporten viser alle satser og forudsætninger, så du kan sammenligne."
+        }
+      },
+      "USA": {
+        "h1": "Import af bil fra USA til Danmark",
+        "metaTitle": "Importér bil fra USA til Danmark – pris, told, moms | CarImport.eu",
+        "metaDescription": "Sådan importerer du en bil fra USA: Copart- og IAAI-auktioner, fragttid, 10 % told, importmoms, dokumenter og registrering. Beregn den samlede pris på et minut.",
+        "lead": "USA er den største kilde til importerede biler: millioner af køretøjer på Copart og IAAI hvert år, ofte til priser langt under det europæiske marked. Her kan du se, hvordan hele processen foregår, og hvad den reelt koster.",
+        "why": "Kæmpe udvalg, lave priser på skadede (salvage) biler, stærke motorer og veludstyrede versioner, der er sjældne i Europa. Ulempen: amerikansk lys og nogle gange speedometeret skal ombygges, og reparation af salvage-biler kan blive dyr.",
+        "auctions": "Copart og IAAI (Insurance Auto Auctions) sælger hovedsageligt forsikringsbiler med clean eller salvage title; Manheim og forhandlere sælger biler uden skader. Du byder som regel via en mægler med auktionslicens.",
+        "docs": "Title (clean eller salvage), faktura / bill of sale, konnossement (bill of lading), amerikansk eksportangivelse (EEI/AES), toldangivelse i EU-havnen, oversættelser af title og faktura, synsrapport.",
+        "tip": "Tjek VIN-historikken (uheld, oversvømmelse, kilometertal), før du byder, og sæt en buffer af til skjulte skader – beregneren lægger den til som et risikoscenarie.",
+        "faq1": {
+          "q": "Hvor lang tid tager fragten fra USA?",
+          "a": "Fra østkysten (New Jersey, Savannah) ca. {{min}} dages sejlads til Nordsøhavnene, fra Houston og Californien op til {{max}} dage. Læg 1–3 uger til for transport til havnen og ventetid på skibet."
+        },
+        "faq2": {
+          "q": "Er en salvage title et problem i EU?",
+          "a": "Nej – EU bruger ikke amerikanske title-mærkninger. Bilen skal dog bestå synet efter reparationen, så budgettér med en ordentlig reparation og risikoen for skjulte skader."
+        }
+      },
+      "CANADA": {
+        "h1": "Import af bil fra Canada til Danmark",
+        "metaTitle": "Importér bil fra Canada til Danmark – pris, told, moms | CarImport.eu",
+        "metaDescription": "Importér bil fra Canada: Copart og IAAI Canada, fragt fra Halifax og Montreal, 10 % told, moms, dokumenter og registrering. Beregner til den samlede pris.",
+        "lead": "Canadiske biler ligner amerikanske, men er ofte bedre rustet til vinter, har metriske speedometre og lavere priser i canadiske dollar. Sejladsen fra Halifax og Montreal til Europa er en af de korteste over Atlanten.",
+        "why": "Metriske instrumenter, vinterpakker, motorvarmere og god rustbeskyttelse; priserne i CAD er ofte lavere end i USA for den samme model.",
+        "auctions": "Copart og IAAI findes også i Canada; køb hos forhandlere og private er en mulighed for biler uden skader. Budgivningen foregår via en mægler.",
+        "docs": "Registreringsattest / ownership (eller salvage title), slutseddel, konnossement, canadisk eksportangivelse, toldangivelse i EU, oversættelser, synsrapport.",
+        "tip": "De østlige provinser (Ontario, Quebec) ligger tættest på havnene i Montreal og Halifax – transport over land fra vest koster langt mere.",
+        "faq1": {
+          "q": "Hvor lang tid tager fragten fra Canada?",
+          "a": "Fra Halifax og Montreal ca. {{min}}–{{max}} dages sejlads til Nordsøhavnene plus transport til havnen og ventetid på skibet."
+        },
+        "faq2": {
+          "q": "Skal en canadisk bil ombygges?",
+          "a": "Som regel mindre end en amerikansk bil: speedometeret er allerede metrisk. Lyset (gule blinklys bagpå, sidemarkeringslys) kan dog stadig skulle tilpasses EU-reglerne."
+        }
+      },
+      "JAPAN": {
+        "h1": "Import af bil fra Japan til Danmark",
+        "metaTitle": "Importér bil fra Japan til Danmark – JDM, told, moms | CarImport.eu",
+        "metaDescription": "Importér en JDM-bil fra Japan: USS-auktioner, auktionsrapporter, fragt fra Yokohama, told, moms, højrestyring og registrering. Beregner til den samlede pris.",
+        "lead": "Japan er JDM-bilernes hjemland: lave kilometertal, fremragende stand og modeller, der aldrig er solgt i Europa. Auktionsrapporterne beskriver hver bil i detaljer – men bilerne er højrestyrede, og rejsen er lang.",
+        "why": "Meget god stand takket være strenge syn (shaken), ærlig auktionsvurdering og unikke sportsvogne og kei-biler. Priserne i yen er attraktive.",
+        "auctions": "USS er det største auktionsnetværk; andre er TAA, CAA og JU. Du køber via en eksportør, der oversætter auktionsrapporten og står for afmeldingen til eksport.",
+        "docs": "Eksportcertifikat (afmelding), auktionsrapport og faktura, konnossement, toldangivelse i EU, oversættelser, synsrapport.",
+        "tip": "Undersøg, om dit land begrænser højrestyrede biler, og hvordan synet behandler dem, før du køber.",
+        "faq1": {
+          "q": "Hvor lang tid tager fragten fra Japan?",
+          "a": "Via Suezkanalen ca. {{min}}–{{max}} dages sejlads afhængigt af EU-havnen – Middelhavshavnene er hurtigst. Læg tiden til eksportdokumenterne til."
+        },
+        "faq2": {
+          "q": "Kan jeg registrere en højrestyret bil?",
+          "a": "I de fleste EU-lande ja, nogle gange med justering af forlygterne. Enkelte lande begrænser højrestyrede biler ved permanent registrering – tjek de lokale regler, før du køber."
+        }
+      },
+      "UAE": {
+        "h1": "Import af bil fra Dubai (De Forenede Arabiske Emirater) til Danmark",
+        "metaTitle": "Importér bil fra Dubai (UAE) til Danmark – pris, told, moms | CarImport.eu",
+        "metaDescription": "Importér bil fra Dubai og Emiraterne: Emirates Auction og forhandlere, GCC-spec, fragt fra Jebel Ali, told, moms og registrering. Beregner til den samlede pris.",
+        "lead": "Dubai er et marked for premium- og sportsvogne med lave kilometertal, ofte næsten ubrugte. Biler i GCC-specifikation er bygget til varme og sælges til attraktive priser.",
+        "why": "Luksus- og sportsmodeller, lave kilometertal og tørt klima (ingen rust). Priserne i dirham er knyttet til den amerikanske dollar.",
+        "auctions": "Emirates Auction og forhandlere i Dubai og Sharjah; en lokal eksportør sørger for eksportcertifikatet og forsendelsen fra Jebel Ali.",
+        "docs": "Eksportcertifikat, faktura, konnossement, toldangivelse i EU, oversættelser, synsrapport.",
+        "tip": "Varmen slider på gummidele og interiør – bed om billeder af tætningslister, dæk og instrumentbræt.",
+        "faq1": {
+          "q": "Hvor lang tid tager fragten fra Dubai?",
+          "a": "Fra Jebel Ali via Suez ca. {{min}}–{{max}} dages sejlads afhængigt af EU-havnen; Middelhavshavnene ligger tættest."
+        },
+        "faq2": {
+          "q": "Hvad er en bil i GCC-specifikation?",
+          "a": "En bil bygget til markedet i Den Persiske Golf: kraftigere køling og aircondition, nogle gange andet emissionsudstyr. Den kan registreres i EU efter syn."
+        }
+      },
+      "UK": {
+        "h1": "Import af bil fra Storbritannien til Danmark",
+        "metaTitle": "Importér bil fra Storbritannien efter Brexit – told, moms | CarImport.eu",
+        "metaDescription": "Importér bil fra Storbritannien efter Brexit: told og præferenceoprindelse, moms, højrestyring, kort fragt og registrering. Beregner til den samlede pris.",
+        "lead": "Efter Brexit er en bil fra Storbritannien en import fra et land uden for EU: toldangivelse, told og importmoms gælder. Rejsen er kort, og biler produceret i Storbritannien eller EU kan opnå 0 % told.",
+        "why": "Et stort brugtbilsmarked, god servicehistorik og kort fragt med RoRo eller færge. Højrestyringen skal tages med i overvejelserne.",
+        "auctions": "Copart UK, BCA, Manheim UK og forhandlere. Køber du hos en momsregistreret forhandler, kan den britiske moms refunderes ved eksport.",
+        "docs": "V5C (registreringsattest), faktura, eksportangivelse, oprindelseserklæring om præferenceoprindelse (for 0 % told), toldangivelse i EU, oversættelser, synsrapport.",
+        "tip": "Bed sælgeren om en oprindelseserklæring om præferenceoprindelse – i henhold til handelsaftalen mellem EU og Storbritannien kan den nedsætte tolden til nul for biler produceret i Storbritannien eller EU.",
+        "faq1": {
+          "q": "Hvor lang tid tager transporten fra Storbritannien?",
+          "a": "Kun {{min}}–{{max}} dages sejlads (RoRo eller færge) plus toldformaliteter på begge sider."
+        },
+        "faq2": {
+          "q": "Betaler jeg told af en bil fra Storbritannien?",
+          "a": "Ja, 10 % – medmindre bilen har dokumenteret præferenceoprindelse (produceret i Storbritannien eller EU) i henhold til aftalen mellem EU og Storbritannien; så kan tolden være 0 %. Importmoms skal altid betales."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: import af bil fra lande uden for EU",
+      "metaTitle": "{{country}} – bilimport: moms {{vat}} %, registrering, havne | CarImport.eu",
+      "metaDescription": "Import af bil til {{country}} fra USA, Canada, Japan, Emiraterne eller Storbritannien: importmoms {{vat}} %, registrering, syn, nærmeste havne og den samlede pris.",
+      "lead": "Alt, hvad der er vigtigt, når du registrerer en importeret bil i {{country}}: afgifter, myndigheder, syn og de billigste havne.",
+      "facts": {
+        "title": "Vigtige fakta",
+        "vat": "Importmoms (normalsats)",
+        "currency": "Valuta",
+        "registrationTax": "Engangsafgift ved registrering",
+        "noTax": "ingen",
+        "authority": "Registreringsmyndighed",
+        "inspection": "Syn før registrering",
+        "deadline": "Frist for registrering",
+        "deadlineValue": "{{days}} dage",
+        "noDeadline": "se lokale regler"
+      },
+      "p1": "Tolden er den samme i alle EU-lande: 10 % af CIF-værdien for personbiler. Importmomsen betales i det land, hvor bilen fortoldes – {{vat}} %, hvis du fortolder den her.",
+      "p2": "Fortoldning i et andet EU-land med lavere moms kan være billigere, selv med den ekstra transport – beregneren sammenligner alle havne fra dør til dør.",
+      "p3": "Lokale registreringsafgifter og syn er ikke harmoniseret i EU; planlæg omkostningerne og tiden til dem, før du køber.",
+      "portsTitle": "Nærmeste fortoldningshavne",
+      "portsNote": "Anslået vejafstand til befolkningscentret i {{country}}.",
+      "originsTitle": "Hvor du køber",
+      "faq1": {
+        "q": "Hvor meget moms betaler jeg af en importeret bil?",
+        "a": "Hvis bilen fortoldes i {{country}}, {{vat}} % af toldværdien plus told og transportomkostninger til bestemmelsesstedet. Fortolder du et andet sted i EU, gælder det lands importmoms."
+      },
+      "faq2": {
+        "q": "Hvor registrerer jeg en importeret bil?",
+        "a": "Hos {{authority}}, efter synet ({{inspection}}) og med oversatte købs- og tolddokumenter."
+      }
+    },
+    "port": {
+      "h1": "Havnen i {{port}} ({{country}}): fortoldning af importerede biler",
+      "metaTitle": "{{port}} – bilimport, fortoldning, moms {{vat}} % | CarImport.eu",
+      "metaDescription": "Fortoldning af en importeret bil i {{port}} ({{country}}): terminal- og speditørgebyrer, importmoms {{vat}} %, sejltider fra USA, Japan og Emiraterne, afstande.",
+      "lead": "{{port}} er en fortoldningshavn i {{country}}. Her er gebyrerne, sejltiderne og vejafstandene – og om det kan betale sig at fortolde din bil her.",
+      "facts": {
+        "title": "Havnen i korte træk",
+        "country": "Land",
+        "region": "Havområde",
+        "vat": "Importmoms ved fortoldning her",
+        "unloading": "Terminalhåndtering og udlosning af container",
+        "agency": "Toldspeditør",
+        "perCar": "pr. bil"
+      },
+      "sailingTitle": "Sejltid til {{port}}",
+      "sailingNote": "Delt container fra de vigtigste eksporthavne; RoRo tager nogle dage længere.",
+      "days": "{{min}}–{{max}} dage",
+      "distancesTitle": "Vejafstand fra {{port}}",
+      "alternativesTitle": "Andre havne i nærheden",
+      "p1": "Fortoldning i {{port}} betyder, at du betaler importmoms i {{country}} ({{vat}} %). Registrerer du bilen i et andet EU-land, leveres den derefter ad landevejen.",
+      "p2": "Beregneren sammenligner {{port}} med alle andre EU-havne for din adresse og viser den billigste mulighed.",
+      "faq1": {
+        "q": "Hvad koster det at fortolde en bil i {{port}}?",
+        "a": "Terminalhåndtering og udlosning af container ca. {{unloading}}, toldspeditør ca. {{agency}} plus told og importmoms på {{vat}} %."
+      },
+      "faq2": {
+        "q": "Kan jeg fortolde en bil her og registrere den i et andet EU-land?",
+        "a": "Ja. En privat køber betaler importmomsen her; en momsregistreret virksomhed kan bruge toldprocedure 4200 og afregne momsen i sit eget land."
+      }
+    },
+    "cta": {
+      "title": "Beregn den nøjagtige pris for din bil",
+      "text": "Indtast kun din adresse – vi foreslår resten og prissætter hver havn fra dør til dør.",
+      "button": "Åbn beregneren"
+    },
+    "related": "Relaterede guides",
+    "disclaimer": "Oplysningerne er kun vejledende; skatte- og toldmyndighederne fastsætter de endelige beløb. Satser som anvendt i beregneren."
   }
 }

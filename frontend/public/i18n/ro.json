@@ -1010,5 +1010,252 @@
     "hint": "Sumele de la licitație (USD, JPY, AED…) sunt convertite la cursul actual al băncii centrale. Moneda nu schimbă calculul taxelor – acestea sunt întotdeauna stabilite de țara de vămuire.",
     "groupEu": "Monede UE",
     "groupOther": "Altele"
+  },
+  "guide": {
+    "nav": {
+      "title": "Ghiduri de import",
+      "origins": "Import după țara de cumpărare",
+      "countries": "Import în țările UE",
+      "ports": "Porturi de vămuire din UE",
+      "all": "Toate ghidurile"
+    },
+    "hub": {
+      "origins": {
+        "title": "Ghiduri de import auto: SUA, Canada, Japonia, EAU și Regatul Unit",
+        "lead": "Ghiduri pas cu pas pentru fiecare țară din care poți cumpăra o mașină: licitații, documente, durata transportului, taxe vamale, TVA și înmatricularea în România – cu costurile reale în calculator.",
+        "metaTitle": "Ghiduri de import auto – SUA, Canada, Japonia, EAU, UK | CarImport.eu",
+        "metaDescription": "Cum aduci o mașină din SUA, Canada, Japonia, EAU sau Regatul Unit în România: licitații, documente, transport, taxe vamale, TVA și înmatriculare, pas cu pas."
+      },
+      "countries": {
+        "title": "Importul unei mașini în fiecare țară din UE",
+        "lead": "Cota de TVA, taxa de înmatriculare, autoritatea de înmatriculare, inspecția tehnică și cele mai apropiate porturi de vămuire pentru toate cele 27 de state membre UE.",
+        "metaTitle": "Import auto în țările UE – TVA, înmatriculare, porturi | CarImport.eu",
+        "metaDescription": "TVA la import, taxe de înmatriculare, autorități, inspecții și cele mai apropiate porturi pentru toate cele 27 de țări UE – calculează costul total al mașinii.",
+        "yours": "Țara ta"
+      },
+      "ports": {
+        "title": "Porturi de vămuire din UE pentru mașini importate",
+        "lead": "Toate cele {{count}} porturi maritime din UE în care se vămuiesc mașinile din afara UE: taxe, TVA, durata transportului maritim din SUA, Canada, Japonia, EAU și Regatul Unit și distanțe rutiere.",
+        "metaTitle": "{{count}} porturi UE pentru import auto – taxe, TVA, transport | CarImport.eu",
+        "metaDescription": "Compară toate cele {{count}} porturi de vămuire auto din UE: taxe de terminal și comisionar, TVA la import, durata transportului și distanța până în România.",
+        "sortedFrom": "Sortate după distanța rutieră până la: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Pas cu pas",
+        "costsTitle": "Ce plătești",
+        "portsTitle": "Cele mai apropiate porturi de vămuire",
+        "docsTitle": "Documente necesare",
+        "whyTitle": "De ce să cumperi de aici",
+        "auctionsTitle": "De unde să cumperi",
+        "tipTitle": "Sfat",
+        "step1": {
+          "title": "Cumpără mașina",
+          "text": "Câștigă licitația sau cumpără de la un dealer. Taxele de licitație depind de tranșa de preț și de tipul titlului – calculatorul aplică grila actuală."
+        },
+        "step2": {
+          "title": "Transportul până la portul de export",
+          "text": "Un camion duce mașina din parcul licitației în port; mașinile nefuncționale necesită stivuitor și troliu, ceea ce costă în plus."
+        },
+        "step3": {
+          "title": "Transportul maritim",
+          "text": "Container comun, container exclusiv sau RoRo. Drumul pe mare până în UE durează {{min}}–{{max}} zile, plus încărcarea și așteptarea navei."
+        },
+        "step4": {
+          "title": "Vămuirea în portul din UE",
+          "text": "Comisionarul vamal depune declarația vamală. Plătești taxele vamale și TVA-ul la import în țara portului – cu excepția cazului în care o firmă folosește regimul vamal 4200."
+        },
+        "step5": {
+          "title": "Livrarea la adresa ta",
+          "text": "Platformă auto, tractare sau condus cu numere provizorii – preț pe kilometru de la port."
+        },
+        "step6": {
+          "title": "Inspecția tehnică și înmatricularea",
+          "text": "Inspecția tehnică, traducerile și înmatricularea în țara în care locuiești, plus eventuala taxă locală de înmatriculare."
+        },
+        "cost": {
+          "duty": "Taxe vamale",
+          "dutyValue": "10% din valoarea CIF (pickup-uri 22%, motociclete 6–8%, mașini istorice 0%)",
+          "vat": "TVA la import",
+          "vatValue": "{{vat}}% – {{country}}",
+          "vatRange": "17–27% în funcție de țara de vămuire",
+          "registration": "Taxă locală la înmatriculare",
+          "none": "nu există",
+          "shipping": "Durata transportului maritim",
+          "shippingValue": "{{min}}–{{max}} zile",
+          "currency": "Moneda licitației"
+        },
+        "portsNote": "Distanța rutieră de la port până la: {{country}} (centrul populației). Calculatorul calculează prețul fiecărui port din ușă în ușă pentru adresa ta exactă.",
+        "portsNoteEu": "Calculatorul calculează prețul tuturor porturilor din UE din ușă în ușă pentru adresa ta exactă și îl alege pe cel mai ieftin.",
+        "faqPorts": {
+          "q": "Care port este cel mai ieftin pentru mine?",
+          "a": "Depinde de adresa ta, de TVA-ul la import din țara portului și de programul navelor. Calculatorul calculează prețul fiecărui port din UE din ușă în ușă și le afișează începând cu cel mai ieftin."
+        },
+        "faqBinding": {
+          "q": "Estimarea este obligatorie?",
+          "a": "Nu. Se bazează pe tarifele și listele de prețuri actuale; sumele finale sunt stabilite de autoritățile vamale și fiscale. Raportul PDF enumeră fiecare cotă și ipoteză, ca să poți compara."
+        }
+      },
+      "USA": {
+        "h1": "Importul unei mașini din SUA în România",
+        "metaTitle": "Import mașină din SUA în România – costuri, taxe vamale, TVA | CarImport.eu",
+        "metaDescription": "Cum imporți o mașină din SUA: licitații Copart și IAAI, transport, taxă vamală 10%, TVA la import, documente și înmatriculare. Costul total într-un minut.",
+        "lead": "SUA sunt cea mai mare sursă de mașini importate: milioane de vehicule pe Copart și IAAI în fiecare an, adesea la prețuri mult sub piața europeană. Iată cum arată întregul proces și cât costă cu adevărat.",
+        "why": "Ofertă uriașă, prețuri mici pentru mașinile avariate (salvage), motoare puternice și versiuni bine echipate, rare în Europa. Dezavantajul: iluminarea americană și uneori vitezometrul trebuie adaptate, iar repararea mașinilor salvage poate fi scumpă.",
+        "auctions": "Copart și IAAI (Insurance Auto Auctions) vând în principal mașini de la asigurători, cu titlu clean sau salvage; Manheim și dealerii vând mașini fără daune. De obicei licitezi printr-un broker cu licență de licitație.",
+        "docs": "Titlul (clean sau salvage), factura / contractul de vânzare (bill of sale), conosamentul (bill of lading), declarația de export din SUA (EEI/AES), declarația vamală în portul din UE, traducerile titlului și facturii, certificatul de inspecție tehnică.",
+        "tip": "Verifică istoricul după VIN (accidente, inundații, kilometraj) înainte de a licita și păstrează o rezervă pentru daunele ascunse – calculatorul o adaugă ca scenariu de risc.",
+        "faq1": {
+          "q": "Cât durează transportul din SUA?",
+          "a": "De pe Coasta de Est (New Jersey, Savannah) aproximativ {{min}} zile pe mare până la porturile de la Marea Nordului, din Houston și California până la {{max}} zile. Adaugă 1–3 săptămâni pentru transportul până în port și așteptarea navei."
+        },
+        "faq2": {
+          "q": "Este titlul salvage o problemă în UE?",
+          "a": "Nu – UE nu folosește mențiunile de pe titlurile americane. Totuși, mașina trebuie să treacă inspecția tehnică după reparație, așa că bugetează o reparație corectă și riscul daunelor ascunse."
+        }
+      },
+      "CANADA": {
+        "h1": "Importul unei mașini din Canada în România",
+        "metaTitle": "Import mașină din Canada în România – costuri, taxe vamale, TVA | CarImport.eu",
+        "metaDescription": "Import mașină din Canada: Copart și IAAI Canada, transport din Halifax și Montreal, taxă vamală 10%, TVA, documente și înmatriculare. Calculator de cost total.",
+        "lead": "Mașinile canadiene seamănă cu cele americane, dar sunt adesea mai bine pregătite pentru iarnă, au vitezometre metrice și prețuri mai mici în dolari canadieni. Transportul din Halifax și Montreal spre Europa este printre cele mai scurte peste Atlantic.",
+        "why": "Bord metric, pachete de iarnă, preîncălzitoare de motor și protecție anticorozivă bună; prețurile în CAD sunt adesea mai mici decât în SUA pentru același model.",
+        "auctions": "Copart și IAAI funcționează și în Canada; vânzările de la dealeri și persoane fizice sunt o opțiune pentru mașinile fără daune. Licitarea se face printr-un broker.",
+        "docs": "Certificatul de înmatriculare / proprietate (sau titlul salvage), contractul de vânzare, conosamentul, declarația de export canadiană, declarația vamală UE, traduceri, certificatul de inspecție tehnică.",
+        "tip": "Provinciile estice (Ontario, Quebec) sunt cele mai apropiate de porturile Montreal și Halifax – transportul terestru din vest costă mult mai mult.",
+        "faq1": {
+          "q": "Cât durează transportul din Canada?",
+          "a": "Din Halifax și Montreal aproximativ {{min}}–{{max}} zile pe mare până la porturile de la Marea Nordului, plus transportul până în port și așteptarea navei."
+        },
+        "faq2": {
+          "q": "O mașină canadiană necesită adaptări?",
+          "a": "De obicei mai puține decât una americană: vitezometrul este deja metric. Iluminarea (semnalizatoare spate portocalii, lămpi laterale) poate necesita totuși adaptarea la normele UE."
+        }
+      },
+      "JAPAN": {
+        "h1": "Importul unei mașini din Japonia în România",
+        "metaTitle": "Import mașină din Japonia în România – JDM, taxe vamale, TVA | CarImport.eu",
+        "metaDescription": "Import mașină JDM din Japonia: licitații USS, fișe de licitație, transport din Yokohama, taxe vamale, TVA, volan pe dreapta și înmatriculare. Calculator.",
+        "lead": "Japonia este patria mașinilor JDM: kilometraj mic, stare excelentă și modele nevândute niciodată în Europa. Fișele de licitație descriu fiecare mașină în detaliu – dar mașinile au volanul pe dreapta, iar drumul este lung.",
+        "why": "Stare foarte bună datorită inspecțiilor stricte (shaken), evaluări corecte la licitație și mașini sport și kei unice. Prețurile în yeni sunt atractive.",
+        "auctions": "USS este cea mai mare rețea de licitații; altele sunt TAA, CAA și JU. Cumperi printr-un exportator care traduce fișa de licitație și se ocupă de radierea pentru export.",
+        "docs": "Certificatul de export (radiere), fișa de licitație și factura, conosamentul, declarația vamală UE, traduceri, certificatul de inspecție tehnică.",
+        "tip": "Verifică înainte de cumpărare dacă țara ta restricționează mașinile cu volan pe dreapta și cum sunt tratate la inspecția tehnică.",
+        "faq1": {
+          "q": "Cât durează transportul din Japonia?",
+          "a": "Prin Canalul Suez aproximativ {{min}}–{{max}} zile pe mare, în funcție de portul din UE – porturile mediteraneene sunt cele mai rapide. Adaugă timpul pentru documentele de export."
+        },
+        "faq2": {
+          "q": "Pot înmatricula o mașină cu volan pe dreapta?",
+          "a": "În majoritatea țărilor UE da, uneori cu reglarea farurilor. Câteva țări limitează înmatricularea definitivă a mașinilor cu volan pe dreapta – verifică regulile locale înainte de cumpărare."
+        }
+      },
+      "UAE": {
+        "h1": "Importul unei mașini din Dubai (EAU) în România",
+        "metaTitle": "Import mașină din Dubai (EAU) în România – costuri, taxe, TVA | CarImport.eu",
+        "metaDescription": "Import mașină din Dubai și EAU: Emirates Auction și dealeri, specificație GCC, transport din Jebel Ali, taxe vamale, TVA și înmatriculare. Calculator.",
+        "lead": "Dubai este piața mașinilor premium și sport cu kilometraj mic, adesea aproape nefolosite. Mașinile cu specificație GCC sunt construite pentru căldură și vândute la prețuri atractive.",
+        "why": "Modele de lux și sport, kilometraj mic și climă uscată (fără rugină). Prețurile în dirhami sunt legate de dolarul american.",
+        "auctions": "Emirates Auction și dealeri din Dubai și Sharjah; un exportator local se ocupă de certificatul de export și de transportul din Jebel Ali.",
+        "docs": "Certificatul de export, factura, conosamentul, declarația vamală UE, traduceri, certificatul de inspecție tehnică.",
+        "tip": "Căldura uzează piesele din cauciuc și interiorul – cere fotografii cu garniturile, anvelopele și bordul.",
+        "faq1": {
+          "q": "Cât durează transportul din Dubai?",
+          "a": "Din Jebel Ali prin Canalul Suez aproximativ {{min}}–{{max}} zile pe mare, în funcție de portul din UE; porturile mediteraneene sunt cele mai apropiate."
+        },
+        "faq2": {
+          "q": "Ce este o mașină cu specificație GCC?",
+          "a": "O mașină construită pentru piața din Golf: răcire și aer condiționat mai puternice, uneori echipamente de emisii diferite. Poate fi înmatriculată în UE după inspecția tehnică."
+        }
+      },
+      "UK": {
+        "h1": "Importul unei mașini din Regatul Unit în România",
+        "metaTitle": "Import mașină din Regatul Unit după Brexit – taxe vamale, TVA | CarImport.eu",
+        "metaDescription": "Import mașină din Regatul Unit în România după Brexit: taxe vamale și origine preferențială, TVA, volan pe dreapta, transport scurt și înmatriculare.",
+        "lead": "De la Brexit, o mașină din Regatul Unit este un import din afara UE: se aplică declarație vamală, taxe vamale și TVA la import. Drumul este scurt, iar mașinile fabricate în Regatul Unit sau în UE pot beneficia de taxă vamală 0%.",
+        "why": "O piață mare de mașini second-hand, istorice de service bine documentate și transport scurt cu RoRo sau feribotul. Volanul pe dreapta trebuie luat în calcul.",
+        "auctions": "Copart UK, BCA, Manheim UK și dealeri. Dacă cumperi de la un dealer înregistrat în scopuri de TVA, TVA-ul britanic poate fi recuperat la export.",
+        "docs": "Certificatul V5C (logbook), factura, declarația de export, declarația de origine preferențială (pentru taxă vamală 0%), declarația vamală UE, traduceri, certificatul de inspecție tehnică.",
+        "tip": "Cere vânzătorului o declarație de origine preferențială – în baza acordului comercial UE–Regatul Unit, aceasta poate reduce taxa vamală la zero pentru mașinile fabricate în Regatul Unit sau în UE.",
+        "faq1": {
+          "q": "Cât durează transportul din Regatul Unit?",
+          "a": "Doar {{min}}–{{max}} zile pe mare (RoRo sau feribot), plus formalitățile vamale de ambele părți."
+        },
+        "faq2": {
+          "q": "Plătesc taxe vamale pentru o mașină din Regatul Unit?",
+          "a": "Da, 10% – cu excepția cazului în care mașina are originea preferențială dovedită (fabricată în Regatul Unit sau în UE) conform acordului UE–Regatul Unit, caz în care taxa vamală poate fi 0%. TVA-ul la import se plătește întotdeauna."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: importul unei mașini din afara UE",
+      "metaTitle": "{{country}} – import auto: TVA {{vat}}%, înmatriculare, porturi | CarImport.eu",
+      "metaDescription": "Import auto din SUA, Canada, Japonia, EAU sau Regatul Unit – țara: {{country}}. TVA la import {{vat}}%, înmatriculare, inspecție, porturi, cost total.",
+      "lead": "Tot ce contează când înmatriculezi o mașină importată – țara: {{country}}. Taxe, autorități, inspecție tehnică și cele mai ieftine porturi.",
+      "facts": {
+        "title": "Informații esențiale",
+        "vat": "TVA la import (cota standard)",
+        "currency": "Moneda",
+        "registrationTax": "Taxă unică la înmatriculare",
+        "noTax": "nu există",
+        "authority": "Autoritatea de înmatriculare",
+        "inspection": "Inspecția înainte de înmatriculare",
+        "deadline": "Termen de înmatriculare",
+        "deadlineValue": "{{days}} zile",
+        "noDeadline": "vezi regulile locale"
+      },
+      "p1": "Taxele vamale sunt aceleași în toate țările UE: 10% din valoarea CIF pentru autoturisme. TVA-ul la import se plătește în țara în care mașina este vămuită – {{vat}}% dacă o vămuiești aici.",
+      "p2": "Vămuirea într-o altă țară UE cu TVA mai mic poate fi mai ieftină chiar și cu transportul suplimentar – calculatorul compară toate porturile din ușă în ușă.",
+      "p3": "Taxele locale de înmatriculare și inspecțiile tehnice nu sunt armonizate în UE; planifică-le costul și durata înainte de cumpărare.",
+      "portsTitle": "Cele mai apropiate porturi de vămuire",
+      "portsNote": "Distanța rutieră estimată până la centrul populației – țara: {{country}}.",
+      "originsTitle": "De unde să cumperi",
+      "faq1": {
+        "q": "Cât TVA plătesc pentru o mașină importată?",
+        "a": "Dacă mașina este vămuită aici (țara: {{country}}), {{vat}}% din valoarea în vamă plus taxele vamale și costurile de transport până la destinație. Vămuirea în altă țară UE înseamnă TVA-ul la import al acelei țări."
+      },
+      "faq2": {
+        "q": "Unde înmatriculez o mașină importată?",
+        "a": "La autoritatea competentă ({{authority}}), după inspecția tehnică ({{inspection}}) și cu documentele de cumpărare și vamale traduse."
+      }
+    },
+    "port": {
+      "h1": "Portul {{port}} ({{country}}): vămuirea mașinilor importate",
+      "metaTitle": "{{port}} – import auto, vămuire, TVA {{vat}}% | CarImport.eu",
+      "metaDescription": "Vămuirea unei mașini importate în portul {{port}} ({{country}}): taxe de terminal și comisionar, TVA {{vat}}%, transport din SUA, Japonia și EAU, distanțe.",
+      "lead": "{{port}} este un port de vămuire din țara: {{country}}. Iată taxele, duratele de transport maritim și distanțele rutiere – și dacă merită să îți vămuiești mașina aici.",
+      "facts": {
+        "title": "Portul pe scurt",
+        "country": "Țara",
+        "region": "Zona maritimă",
+        "vat": "TVA la import la vămuirea aici",
+        "unloading": "Manipulare în terminal și descărcarea containerului",
+        "agency": "Comisionar vamal",
+        "perCar": "per mașină"
+      },
+      "sailingTitle": "Durata transportului maritim până în portul {{port}}",
+      "sailingNote": "Container comun din principalele porturi de export; RoRo durează câteva zile în plus.",
+      "days": "{{min}}–{{max}} zile",
+      "distancesTitle": "Distanța rutieră din portul {{port}}",
+      "alternativesTitle": "Alte porturi din apropiere",
+      "p1": "Vămuirea în portul {{port}} înseamnă plata TVA-ului la import din țara: {{country}} ({{vat}}%). Dacă înmatriculezi mașina în altă țară UE, aceasta este apoi livrată rutier.",
+      "p2": "Calculatorul compară portul {{port}} cu toate celelalte porturi din UE pentru adresa ta și îți arată cea mai ieftină variantă.",
+      "faq1": {
+        "q": "Cât costă vămuirea unei mașini în portul {{port}}?",
+        "a": "Manipularea în terminal și descărcarea containerului aproximativ {{unloading}}, comisionarul vamal aproximativ {{agency}}, plus taxele vamale și TVA-ul la import de {{vat}}%."
+      },
+      "faq2": {
+        "q": "Pot vămui mașina aici și să o înmatriculez în altă țară UE?",
+        "a": "Da. O persoană fizică plătește aici TVA-ul la import; o firmă înregistrată în scopuri de TVA poate folosi regimul vamal 4200 și poate deconta TVA-ul în propria țară."
+      }
+    },
+    "cta": {
+      "title": "Calculează costul exact pentru mașina ta",
+      "text": "Introdu doar adresa – noi propunem restul și calculăm prețul fiecărui port din ușă în ușă.",
+      "button": "Deschide calculatorul"
+    },
+    "related": "Ghiduri similare",
+    "disclaimer": "Informații cu caracter orientativ; sumele finale sunt stabilite de autoritățile fiscale și vamale. Cotele sunt cele folosite de calculator."
   }
 }

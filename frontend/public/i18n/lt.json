@@ -1010,5 +1010,252 @@
     "hint": "Aukciono sumos (USD, JPY, AED…) perskaičiuojamos pagal galiojantį centrinio banko kursą. Valiuta neturi įtakos mokesčių skaičiavimui – mokesčius visada nustato muitinio įforminimo šalis.",
     "groupEu": "ES valiutos",
     "groupOther": "Kitos"
+  },
+  "guide": {
+    "nav": {
+      "title": "Importo gidai",
+      "origins": "Importas pagal pirkimo šalį",
+      "countries": "Importas į ES šalis",
+      "ports": "ES muitinio įforminimo uostai",
+      "all": "Visi gidai"
+    },
+    "hub": {
+      "origins": {
+        "title": "Automobilių importo gidai: JAV, Kanada, Japonija, JAE ir Jungtinė Karalystė",
+        "lead": "Žingsnis po žingsnio kiekvienai šaliai, kurioje galite įsigyti automobilį: aukcionai, dokumentai, gabenimo trukmė, muitas, PVM ir registracija Lietuvoje – su realiomis išlaidomis skaičiuoklėje.",
+        "metaTitle": "Automobilių importo gidai – JAV, Kanada, Japonija, JAE, JK | CarImport.eu",
+        "metaDescription": "Kaip įsivežti automobilį į Lietuvą iš JAV, Kanados, Japonijos, JAE ar Jungtinės Karalystės: aukcionai, dokumentai, gabenimas, muitas, PVM ir registracija."
+      },
+      "countries": {
+        "title": "Automobilio importas į kiekvieną ES šalį",
+        "lead": "PVM tarifas, registracijos mokestis, registruojanti institucija, techninė apžiūra ir artimiausi muitinio įforminimo uostai visoms 27 ES valstybėms narėms.",
+        "metaTitle": "Automobilių importas į ES šalis – PVM, registracija, uostai | CarImport.eu",
+        "metaDescription": "Importo PVM, registracijos mokesčiai, institucijos, techninės apžiūros ir artimiausi uostai visose 27 ES šalyse – palyginkite ir apskaičiuokite visą kainą.",
+        "yours": "Jūsų šalis"
+      },
+      "ports": {
+        "title": "ES muitinio įforminimo uostai importuojamiems automobiliams",
+        "lead": "Visi {{count}} ES jūrų uostai, kuriuose įforminami automobiliai iš ne ES šalių: mokesčiai, PVM, plaukimo trukmė iš JAV, Kanados, Japonijos, JAE ir Jungtinės Karalystės bei atstumai keliais.",
+        "metaTitle": "{{count}} ES uostai automobilių importui – mokesčiai, PVM | CarImport.eu",
+        "metaDescription": "Palyginkite visus {{count}} ES automobilių muitinio įforminimo uostus: terminalo ir muitinės tarpininko mokesčiai, importo PVM, plaukimo trukmė ir atstumas iki Lietuvos.",
+        "sortedFrom": "Surūšiuota pagal atstumą keliais iki: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Žingsnis po žingsnio",
+        "costsTitle": "Už ką mokate",
+        "portsTitle": "Artimiausi muitinio įforminimo uostai",
+        "docsTitle": "Reikalingi dokumentai",
+        "whyTitle": "Kodėl verta pirkti čia",
+        "auctionsTitle": "Kur pirkti",
+        "tipTitle": "Patarimas",
+        "step1": {
+          "title": "Įsigykite automobilį",
+          "text": "Laimėkite aukcioną arba pirkite iš prekybininko. Aukciono mokesčiai priklauso nuo kainos intervalo ir nuosavybės dokumento – skaičiuoklė taiko galiojantį įkainių sąrašą."
+        },
+        "step2": {
+          "title": "Transportavimas į eksporto uostą",
+          "text": "Vilkikas nuveža automobilį iš aikštelės į uostą; nevažiuojančiam automobiliui reikia krautuvo ir gervės, už tai mokama papildomai."
+        },
+        "step3": {
+          "title": "Jūrinis gabenimas",
+          "text": "Bendras konteineris, atskiras konteineris arba RoRo. Plaukimas į ES trunka {{min}}–{{max}} d., plius pakrovimas ir laivo laukimas."
+        },
+        "step4": {
+          "title": "Muitinis įforminimas ES uoste",
+          "text": "Muitinės tarpininkas pateikia muitinės deklaraciją. Muitą ir importo PVM mokate uosto šalyje – nebent įmonė taiko muitinės procedūrą 4200."
+        },
+        "step5": {
+          "title": "Pristatymas jūsų adresu",
+          "text": "Autovežis, techninė pagalba arba važiavimas su laikinaisiais numeriais – kaina skaičiuojama pagal kilometrus nuo uosto."
+        },
+        "step6": {
+          "title": "Techninė apžiūra ir registracija",
+          "text": "Techninė apžiūra, vertimai ir registracija jūsų gyvenamojoje šalyje, taip pat galimas vietinis registracijos mokestis."
+        },
+        "cost": {
+          "duty": "Muitas",
+          "dutyValue": "10 % CIF vertės (pikapai 22 %, motociklai 6–8 %, istoriniai automobiliai 0 %)",
+          "vat": "Importo PVM",
+          "vatValue": "{{vat}}% – {{country}}",
+          "vatRange": "17–27 % priklausomai nuo įforminimo šalies",
+          "registration": "Vietinis mokestis registruojant",
+          "none": "nėra",
+          "shipping": "Plaukimo trukmė",
+          "shippingValue": "{{min}}–{{max}} d.",
+          "currency": "Aukciono valiuta"
+        },
+        "portsNote": "Atstumas keliais nuo uosto iki šalies: {{country}} (gyventojų centras). Skaičiuoklė apskaičiuoja kiekvieno uosto kainą nuo durų iki durų pagal jūsų tikslų adresą.",
+        "portsNoteEu": "Skaičiuoklė apskaičiuoja visų ES uostų kainą nuo durų iki durų pagal jūsų tikslų adresą ir parenka pigiausią.",
+        "faqPorts": {
+          "q": "Kuris uostas man pigiausias?",
+          "a": "Tai priklauso nuo jūsų adreso, uosto šalies importo PVM ir laivų tvarkaraščio. Skaičiuoklė apskaičiuoja kiekvieno ES uosto kainą nuo durų iki durų ir rodo juos nuo pigiausio."
+        },
+        "faqBinding": {
+          "q": "Ar įvertinimas yra privalomas?",
+          "a": "Ne. Jis pagrįstas galiojančiais tarifais ir kainoraščiais; galutines sumas nustato muitinė ir mokesčių institucijos. PDF ataskaitoje nurodyti visi tarifai ir prielaidos, kad galėtumėte palyginti."
+        }
+      },
+      "USA": {
+        "h1": "Automobilio importas iš JAV į Lietuvą",
+        "metaTitle": "Automobilio importas iš JAV į Lietuvą – kaina, muitas, PVM | CarImport.eu",
+        "metaDescription": "Kaip įsivežti automobilį iš JAV į Lietuvą: Copart ir IAAI aukcionai, gabenimo trukmė, 10 % muitas, PVM, dokumentai ir registracija. Apskaičiuokite per minutę.",
+        "lead": "JAV – didžiausias importuojamų automobilių šaltinis: Copart ir IAAI kasmet parduoda milijonus transporto priemonių, dažnai gerokai pigiau nei Europos rinkoje. Štai kaip atrodo visas procesas ir kiek jis iš tikrųjų kainuoja.",
+        "why": "Didžiulis pasirinkimas, žemos apgadintų (salvage) automobilių kainos, galingi varikliai ir gerai įrengtos versijos, kurios Europoje retos. Tačiau JAV žibintus, o kartais ir spidometrą, reikia pritaikyti, o salvage automobilių remontas gali būti brangus.",
+        "auctions": "Copart ir IAAI (Insurance Auto Auctions) daugiausia parduoda draudimo bendrovių automobilius su švariu arba salvage nuosavybės dokumentu; Manheim ir prekybininkai parduoda nepažeistus automobilius. Paprastai statymai atliekami per tarpininką, turintį aukciono licenciją.",
+        "docs": "Nuosavybės dokumentas (title – švarus arba salvage), sąskaita faktūra / pirkimo–pardavimo sutartis, konosamentas, JAV eksporto deklaracija (EEI/AES), muitinės deklaracija ES uoste, title ir sąskaitos vertimai, techninės apžiūros pažyma.",
+        "tip": "Prieš statydami patikrinkite VIN istoriją (eismo įvykiai, potvynis, rida) ir numatykite rezervą paslėptiems defektams – skaičiuoklė jį prideda kaip rizikos scenarijų.",
+        "faq1": {
+          "q": "Kiek trunka gabenimas iš JAV?",
+          "a": "Iš rytinės pakrantės (Naujasis Džersis, Savana) apie {{min}} d. jūra iki Šiaurės jūros uostų, iš Hiustono ir Kalifornijos – iki {{max}} d. Pridėkite 1–3 savaites transportavimui į uostą ir laivo laukimui."
+        },
+        "faq2": {
+          "q": "Ar salvage title yra problema ES?",
+          "a": "Ne – ES nenaudoja JAV title žymų. Tačiau po remonto automobilis turi praeiti techninę apžiūrą, todėl numatykite kokybišką remontą ir paslėptų defektų riziką."
+        }
+      },
+      "CANADA": {
+        "h1": "Automobilio importas iš Kanados į Lietuvą",
+        "metaTitle": "Automobilio importas iš Kanados į Lietuvą – muitas, PVM | CarImport.eu",
+        "metaDescription": "Automobilio importas iš Kanados: Copart ir IAAI Canada, gabenimas iš Halifakso ir Monrealio, 10 % muitas, PVM, dokumentai ir registracija. Skaičiuoklė.",
+        "lead": "Kanados automobiliai panašūs į amerikietiškus, bet dažnai geriau paruošti žiemai, su metriniu spidometru ir mažesnėmis kainomis Kanados doleriais. Gabenimas iš Halifakso ir Monrealio į Europą – vienas trumpiausių per Atlantą.",
+        "why": "Metriniai prietaisų skydeliai, žieminiai paketai, variklio pašildytuvai ir gera antikorozinė apsauga; kainos CAD už tą patį modelį dažnai mažesnės nei JAV.",
+        "auctions": "Copart ir IAAI veikia ir Kanadoje; nepažeistus automobilius galima pirkti iš prekybininkų ar privačių asmenų. Statymai atliekami per tarpininką.",
+        "docs": "Registracijos / nuosavybės liudijimas (arba salvage title), pirkimo–pardavimo sutartis, konosamentas, Kanados eksporto deklaracija, ES muitinės deklaracija, vertimai, techninės apžiūros pažyma.",
+        "tip": "Rytinės provincijos (Ontarijas, Kvebekas) yra arčiausiai Monrealio ir Halifakso uostų – vidaus transportas iš vakarų kainuoja gerokai daugiau.",
+        "faq1": {
+          "q": "Kiek trunka gabenimas iš Kanados?",
+          "a": "Iš Halifakso ir Monrealio apie {{min}}–{{max}} d. jūra iki Šiaurės jūros uostų, plius transportavimas į uostą ir laivo laukimas."
+        },
+        "faq2": {
+          "q": "Ar Kanados automobilį reikia pritaikyti?",
+          "a": "Paprastai mažiau nei JAV automobilį: spidometras jau metrinis. Žibintus (gintarinius galinius posūkio žibintus, šoninius gabaritinius žibintus) vis tiek gali tekti pritaikyti pagal ES reikalavimus."
+        }
+      },
+      "JAPAN": {
+        "h1": "Automobilio importas iš Japonijos į Lietuvą",
+        "metaTitle": "Automobilio importas iš Japonijos į Lietuvą – JDM, muitas | CarImport.eu",
+        "metaDescription": "JDM automobilio importas iš Japonijos: USS aukcionai, aukciono lapai, gabenimas iš Jokohamos, muitas, PVM, dešinysis vairas ir registracija. Skaičiuoklė.",
+        "lead": "Japonija – JDM automobilių tėvynė: maža rida, puiki būklė ir modeliai, kurie niekada nebuvo parduodami Europoje. Aukciono lapai išsamiai aprašo kiekvieną automobilį – tačiau automobiliai su dešiniuoju vairu, o kelionė ilga.",
+        "why": "Labai gera būklė dėl griežtų techninių apžiūrų (shaken), sąžiningo aukciono vertinimo ir unikalių sportinių bei kei automobilių. Kainos jenomis patrauklios.",
+        "auctions": "USS – didžiausias aukcionų tinklas; kiti – TAA, CAA ir JU. Perkate per eksportuotoją, kuris išverčia aukciono lapą ir sutvarko išregistravimą eksportui.",
+        "docs": "Eksporto sertifikatas (išregistravimas), aukciono lapas ir sąskaita faktūra, konosamentas, ES muitinės deklaracija, vertimai, techninės apžiūros pažyma.",
+        "tip": "Prieš pirkdami patikrinkite, ar jūsų šalis riboja automobilius su dešiniuoju vairu ir kaip į juos žiūrima techninės apžiūros metu.",
+        "faq1": {
+          "q": "Kiek trunka gabenimas iš Japonijos?",
+          "a": "Per Sueco kanalą apie {{min}}–{{max}} d. jūra priklausomai nuo ES uosto – Viduržemio jūros uostai greičiausi. Pridėkite laiką eksporto dokumentams."
+        },
+        "faq2": {
+          "q": "Ar galiu užregistruoti automobilį su dešiniuoju vairu?",
+          "a": "Daugumoje ES šalių – taip, kartais su žibintų reguliavimu. Kelios šalys riboja nuolatinę automobilių su dešiniuoju vairu registraciją – prieš pirkdami pasitikrinkite vietines taisykles."
+        }
+      },
+      "UAE": {
+        "h1": "Automobilio importas iš Dubajaus (JAE) į Lietuvą",
+        "metaTitle": "Automobilio importas iš Dubajaus (JAE) į Lietuvą – muitas | CarImport.eu",
+        "metaDescription": "Automobilio importas iš Dubajaus ir JAE: Emirates Auction ir prekybininkai, GCC spec, gabenimas iš Jebel Ali, muitas, PVM ir registracija. Skaičiuoklė.",
+        "lead": "Dubajus – premium ir sportinių automobilių su maža rida rinka, dažnai beveik nenaudotų. GCC specifikacijos automobiliai sukurti karščiui ir parduodami patraukliomis kainomis.",
+        "why": "Prabangūs ir sportiniai modeliai, maža rida ir sausas klimatas (be rūdžių). Kainos dirhamais susietos su JAV doleriu.",
+        "auctions": "Emirates Auction ir prekybininkai Dubajuje bei Šardžoje; vietinis eksportuotojas sutvarko eksporto sertifikatą ir gabenimą iš Jebel Ali.",
+        "docs": "Eksporto sertifikatas, sąskaita faktūra, konosamentas, ES muitinės deklaracija, vertimai, techninės apžiūros pažyma.",
+        "tip": "Karštis dėvi gumines detales ir saloną – paprašykite sandariklių, padangų ir prietaisų skydelio nuotraukų.",
+        "faq1": {
+          "q": "Kiek trunka gabenimas iš Dubajaus?",
+          "a": "Iš Jebel Ali per Suecą apie {{min}}–{{max}} d. jūra priklausomai nuo ES uosto; Viduržemio jūros uostai arčiausiai."
+        },
+        "faq2": {
+          "q": "Kas yra GCC specifikacijos automobilis?",
+          "a": "Persijos įlankos rinkai pagamintas automobilis: galingesnis aušinimas ir oro kondicionierius, kartais kitokia išmetamųjų dujų įranga. Jį galima registruoti ES po techninės apžiūros."
+        }
+      },
+      "UK": {
+        "h1": "Automobilio importas iš Jungtinės Karalystės į Lietuvą",
+        "metaTitle": "Automobilio importas iš JK po Brexit – muitas, PVM | CarImport.eu",
+        "metaDescription": "Automobilio importas iš Jungtinės Karalystės į Lietuvą po Brexit: muitas ir lengvatinė kilmė, PVM, dešinysis vairas, trumpas gabenimas ir registracija.",
+        "lead": "Po Brexit automobilis iš Jungtinės Karalystės yra importas iš ne ES šalies: taikoma muitinės deklaracija, muitas ir importo PVM. Kelionė trumpa, o JK arba ES pagaminti automobiliai gali atitikti 0 % muito sąlygas.",
+        "why": "Didelė naudotų automobilių rinka, geros techninės priežiūros istorijos ir trumpas gabenimas RoRo laivu ar keltu. Reikia atsižvelgti į dešinįjį vairą.",
+        "auctions": "Copart UK, BCA, Manheim UK ir prekybininkai. Perkant iš PVM mokėtojo prekybininko, JK PVM eksportuojant galima susigrąžinti.",
+        "docs": "V5C registracijos liudijimas, sąskaita faktūra, eksporto deklaracija, lengvatinės kilmės deklaracija (0 % muitui), ES muitinės deklaracija, vertimai, techninės apžiūros pažyma.",
+        "tip": "Paprašykite pardavėjo lengvatinės kilmės deklaracijos – pagal ES ir JK prekybos susitarimą ji gali sumažinti muitą iki nulio JK arba ES pagamintiems automobiliams.",
+        "faq1": {
+          "q": "Kiek trunka gabenimas iš Jungtinės Karalystės?",
+          "a": "Tik {{min}}–{{max}} d. jūra (RoRo arba keltu), plius muitinės formalumai abiejose pusėse."
+        },
+        "faq2": {
+          "q": "Ar už automobilį iš JK mokamas muitas?",
+          "a": "Taip, 10 % – nebent automobilio lengvatinė kilmė (pagamintas JK arba ES) įrodyta pagal ES ir JK susitarimą; tada muitas gali būti 0 %. Importo PVM mokamas visada."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: automobilio importas iš ne ES šalių",
+      "metaTitle": "{{country}} – automobilio importas: PVM {{vat}}%, registracija | CarImport.eu",
+      "metaDescription": "Automobilio importas iš JAV, Kanados, Japonijos, JAE ar JK, paskirties šalis – {{country}}: importo PVM {{vat}}%, registracija, apžiūra, uostai ir visa kaina.",
+      "lead": "Viskas, kas svarbu registruojant importuotą automobilį, šalis – {{country}}: mokesčiai, institucijos, techninė apžiūra ir pigiausi uostai.",
+      "facts": {
+        "title": "Pagrindiniai faktai",
+        "vat": "Importo PVM (standartinis tarifas)",
+        "currency": "Valiuta",
+        "registrationTax": "Vienkartinis mokestis registruojant",
+        "noTax": "nėra",
+        "authority": "Registruojanti institucija",
+        "inspection": "Techninė apžiūra prieš registraciją",
+        "deadline": "Registracijos terminas",
+        "deadlineValue": "{{days}} d.",
+        "noDeadline": "žr. vietines taisykles"
+      },
+      "p1": "Muitas visose ES šalyse vienodas: lengviesiems automobiliams 10 % CIF vertės. Importo PVM mokamas šalyje, kurioje automobilis įforminamas – {{vat}}%, jei įforminate čia.",
+      "p2": "Įforminimas kitoje ES šalyje su mažesniu PVM gali būti pigesnis net ir su papildomu transportu – skaičiuoklė palygina visus uostus nuo durų iki durų.",
+      "p3": "Vietiniai registracijos mokesčiai ir techninės apžiūros ES nėra suderinti; prieš pirkdami įvertinkite jų kainą ir trukmę.",
+      "portsTitle": "Artimiausi muitinio įforminimo uostai",
+      "portsNote": "Apytikslis atstumas keliais iki gyventojų centro, šalis – {{country}}.",
+      "originsTitle": "Kur pirkti",
+      "faq1": {
+        "q": "Kiek PVM mokėsiu už importuotą automobilį?",
+        "a": "Jei automobilis įforminamas čia ({{country}}), {{vat}}% muitinės vertės, pridėjus muitą ir transportavimo iki paskirties vietos išlaidas. Įforminant kitur ES taikomas tos šalies importo PVM."
+      },
+      "faq2": {
+        "q": "Kur registruoti importuotą automobilį?",
+        "a": "Institucijoje {{authority}}, po techninės apžiūros ({{inspection}}) ir su išverstais pirkimo bei muitinės dokumentais."
+      }
+    },
+    "port": {
+      "h1": "Uostas {{port}} ({{country}}): importuojamų automobilių muitinis įforminimas",
+      "metaTitle": "{{port}} – automobilio importas, muitas, PVM {{vat}}% | CarImport.eu",
+      "metaDescription": "Importuoto automobilio įforminimas, uostas {{port}} ({{country}}): terminalo ir tarpininko mokesčiai, PVM {{vat}}%, plaukimas iš JAV, Japonijos ir JAE, atstumai.",
+      "lead": "{{port}} – muitinio įforminimo uostas, šalis – {{country}}. Čia rasite jo mokesčius, plaukimo trukmę ir atstumus keliais – ir ar verta įforminti automobilį būtent čia.",
+      "facts": {
+        "title": "Uostas trumpai",
+        "country": "Šalis",
+        "region": "Jūrų regionas",
+        "vat": "Importo PVM įforminant čia",
+        "unloading": "Terminalo aptarnavimas ir konteinerio iškrovimas",
+        "agency": "Muitinės tarpininkas",
+        "perCar": "už automobilį"
+      },
+      "sailingTitle": "Plaukimo trukmė – uostas {{port}}",
+      "sailingNote": "Bendras konteineris iš pagrindinių eksporto uostų; RoRo užtrunka keliomis dienomis ilgiau.",
+      "days": "{{min}}–{{max}} d.",
+      "distancesTitle": "Atstumas keliais – uostas {{port}}",
+      "alternativesTitle": "Kiti netoliese esantys uostai",
+      "p1": "Įforminimas uoste {{port}} reiškia, kad mokate importo PVM, taikomą šalyje {{country}} ({{vat}}%). Jei automobilį registruojate kitoje ES šalyje, jis pristatomas keliais.",
+      "p2": "Skaičiuoklė palygina uostą {{port}} su visais kitais ES uostais pagal jūsų adresą ir parodo pigiausią variantą.",
+      "faq1": {
+        "q": "Kiek kainuoja automobilio įforminimas – uostas {{port}}?",
+        "a": "Terminalo aptarnavimas ir konteinerio iškrovimas apie {{unloading}}, muitinės tarpininkas apie {{agency}}, plius muitas ir importo PVM {{vat}}%."
+      },
+      "faq2": {
+        "q": "Ar galiu įforminti automobilį čia ir registruoti jį kitoje ES šalyje?",
+        "a": "Taip. Privatus pirkėjas importo PVM moka čia; PVM mokėtoja įmonė gali taikyti muitinės procedūrą 4200 ir apskaityti PVM savo šalyje."
+      }
+    },
+    "cta": {
+      "title": "Apskaičiuokite tikslią savo automobilio kainą",
+      "text": "Įveskite tik savo adresą – visa kita pasiūlysime patys ir apskaičiuosime kiekvieno uosto kainą nuo durų iki durų.",
+      "button": "Atidaryti skaičiuoklę"
+    },
+    "related": "Susiję gidai",
+    "disclaimer": "Informacija tik orientacinė; galutines sumas nustato mokesčių ir muitinės institucijos. Tarifai – kaip naudojami skaičiuoklėje."
   }
 }

@@ -1010,5 +1010,252 @@
     "hint": "Auction amounts (USD, JPY, AED…) are converted at the current central bank rate. The currency doesn’t change the tax calculation – taxes are always assessed by the clearance country.",
     "groupEu": "EU currencies",
     "groupOther": "Other"
+  },
+  "guide": {
+    "nav": {
+      "title": "Import guides",
+      "origins": "Import by country of purchase",
+      "countries": "Import to EU countries",
+      "ports": "EU ports of clearance",
+      "all": "All guides"
+    },
+    "hub": {
+      "origins": {
+        "title": "Car import guides: USA, Canada, Japan, UAE and the UK",
+        "lead": "Step-by-step guides for each country you can buy a car in: auctions, documents, shipping time, customs duty, VAT and registration – with the real costs in your calculator.",
+        "metaTitle": "Car import guides – USA, Canada, Japan, UAE, UK | CarImport.eu",
+        "metaDescription": "How to import a car from the USA, Canada, Japan, the UAE or the UK into the EU: auctions, documents, shipping, duty, VAT and registration explained step by step."
+      },
+      "countries": {
+        "title": "Importing a car into each EU country",
+        "lead": "VAT rate, registration tax, registration authority, inspection and nearest ports of clearance for all 27 EU member states.",
+        "metaTitle": "Car import to EU countries – VAT, registration, ports | CarImport.eu",
+        "metaDescription": "Import VAT, registration taxes, authorities, inspections and the nearest ports for all 27 EU countries – compare and calculate the full cost of an imported car.",
+        "yours": "Your country"
+      },
+      "ports": {
+        "title": "EU ports of clearance for imported cars",
+        "lead": "All {{count}} EU sea ports where cars from outside the EU are cleared: fees, VAT, sailing times from the USA, Canada, Japan, the UAE and the UK, and road distances.",
+        "metaTitle": "{{count}} EU ports for car imports – fees, VAT, sailing times | CarImport.eu",
+        "metaDescription": "Compare all {{count}} EU ports of clearance for cars: terminal and customs agent fees, import VAT, sailing times and road distances to your country.",
+        "sortedFrom": "Sorted by road distance to: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Step by step",
+        "costsTitle": "What you pay",
+        "portsTitle": "Nearest ports of clearance",
+        "docsTitle": "Documents you need",
+        "whyTitle": "Why buy here",
+        "auctionsTitle": "Where to buy",
+        "tipTitle": "Tip",
+        "step1": {
+          "title": "Buy the car",
+          "text": "Win the auction or buy from a dealer. Auction fees depend on the price tier and title – the calculator applies the current schedule."
+        },
+        "step2": {
+          "title": "Transport to the export port",
+          "text": "A truck takes the car from the yard to the port; non-runners need a forklift and winch, which costs extra."
+        },
+        "step3": {
+          "title": "Ocean freight",
+          "text": "Shared container, exclusive container or RoRo. Sailing to the EU takes {{min}}–{{max}} days, plus loading and waiting for the vessel."
+        },
+        "step4": {
+          "title": "Customs clearance in the EU port",
+          "text": "A customs agent files the declaration. You pay customs duty and import VAT in the country of the port – unless a company uses customs procedure 4200."
+        },
+        "step5": {
+          "title": "Delivery to your address",
+          "text": "Car carrier, tow truck or driving on temporary plates – priced per kilometre from the port."
+        },
+        "step6": {
+          "title": "Inspection and registration",
+          "text": "Technical inspection, translations and registration in the country where you live, plus any local registration tax."
+        },
+        "cost": {
+          "duty": "Customs duty",
+          "dutyValue": "10% of the CIF value (pickups 22%, motorcycles 6–8%, historic cars 0%)",
+          "vat": "Import VAT",
+          "vatValue": "{{vat}}% – {{country}}",
+          "vatRange": "17–27% depending on the country of clearance",
+          "registration": "Local tax at registration",
+          "none": "none",
+          "shipping": "Sailing time",
+          "shippingValue": "{{min}}–{{max}} days",
+          "currency": "Auction currency"
+        },
+        "portsNote": "Road distance from the port to {{country}} (population centre). The calculator prices every port door to door for your exact address.",
+        "portsNoteEu": "The calculator prices all EU ports door to door for your exact address and picks the cheapest.",
+        "faqPorts": {
+          "q": "Which port is the cheapest for me?",
+          "a": "It depends on your address, the import VAT of the port country and the sailing schedule. The calculator prices every EU port door to door and shows them from the cheapest."
+        },
+        "faqBinding": {
+          "q": "Is the estimate binding?",
+          "a": "No. It is based on current rates and price lists; customs and tax authorities decide the final amounts. The PDF report lists every rate and assumption so you can compare."
+        }
+      },
+      "USA": {
+        "h1": "Importing a car from the USA to the EU",
+        "metaTitle": "Import a car from the USA to Europe – costs, duty, VAT | CarImport.eu",
+        "metaDescription": "How to import a car from the USA: Copart and IAAI auctions, shipping time, 10% duty, import VAT, documents and registration. Calculate the full cost in a minute.",
+        "lead": "The USA is the biggest source of imported cars: millions of vehicles on Copart and IAAI every year, often at prices far below the European market. Here is what the whole process looks like and what it really costs.",
+        "why": "Huge choice, low prices for damaged (salvage) cars, strong engines and well-equipped versions that are rare in Europe. The catch: US lighting and sometimes the speedometer must be converted, and repairs of salvage cars can be expensive.",
+        "auctions": "Copart and IAAI (Insurance Auto Auctions) sell mostly insurance cars with clean or salvage titles; Manheim and dealers sell cars without damage. You usually bid through a broker with an auction licence.",
+        "docs": "Title (clean or salvage), invoice / bill of sale, bill of lading, US export declaration (EEI/AES), customs declaration in the EU port, translations of the title and invoice, inspection certificate.",
+        "tip": "Check the VIN history (accidents, flood, mileage) before bidding and set aside a buffer for hidden damage – the calculator adds it as a risk scenario.",
+        "faq1": {
+          "q": "How long does shipping from the USA take?",
+          "a": "From the East Coast (New Jersey, Savannah) about {{min}} days at sea to the North Sea ports, from Houston and California up to {{max}} days. Add 1–3 weeks for transport to the port and waiting for the vessel."
+        },
+        "faq2": {
+          "q": "Is a salvage title a problem in the EU?",
+          "a": "No – the EU does not use US title brands. The car must however pass the technical inspection after repairs, so budget for a proper repair and the hidden-damage risk."
+        }
+      },
+      "CANADA": {
+        "h1": "Importing a car from Canada to the EU",
+        "metaTitle": "Import a car from Canada to Europe – costs, duty, VAT | CarImport.eu",
+        "metaDescription": "Import a car from Canada: Copart and IAAI Canada, shipping from Halifax and Montreal, 10% duty, VAT, documents and registration. Full cost calculator.",
+        "lead": "Canadian cars are similar to American ones but often better prepared for winter, with metric speedometers and lower prices in Canadian dollars. Shipping from Halifax and Montreal to Europe is among the shortest across the Atlantic.",
+        "why": "Metric instrument clusters, winter packages, block heaters and good rust protection; prices in CAD are often lower than in the USA for the same model.",
+        "auctions": "Copart and IAAI operate in Canada as well; dealer and private sales are an option for cars without damage. Bidding goes through a broker.",
+        "docs": "Registration / ownership (or salvage title), bill of sale, bill of lading, Canadian export declaration, EU customs declaration, translations, inspection certificate.",
+        "tip": "Eastern provinces (Ontario, Quebec) are closest to the ports of Montreal and Halifax – inland transport from the west costs much more.",
+        "faq1": {
+          "q": "How long does shipping from Canada take?",
+          "a": "From Halifax and Montreal about {{min}}–{{max}} days at sea to the North Sea ports, plus transport to the port and waiting for the vessel."
+        },
+        "faq2": {
+          "q": "Does a Canadian car need conversion?",
+          "a": "Usually less than a US car: the speedometer is already metric. Lighting (amber rear indicators, side markers) may still need adapting to EU rules."
+        }
+      },
+      "JAPAN": {
+        "h1": "Importing a car from Japan to the EU",
+        "metaTitle": "Import a car from Japan to Europe – JDM costs, duty, VAT | CarImport.eu",
+        "metaDescription": "Import a JDM car from Japan: USS auctions, auction sheets, shipping from Yokohama, duty, VAT, right-hand drive and registration. Full cost calculator.",
+        "lead": "Japan is the home of JDM cars: low mileage, excellent condition and models never sold in Europe. Auction sheets describe every car in detail – but the cars are right-hand drive and the journey is long.",
+        "why": "Very good condition thanks to strict inspections (shaken), honest auction grading and unique sports and kei cars. Prices in yen are attractive.",
+        "auctions": "USS is the largest auction network; others include TAA, CAA and JU. You buy through an exporter who translates the auction sheet and handles export deregistration.",
+        "docs": "Export certificate (deregistration), auction sheet and invoice, bill of lading, EU customs declaration, translations, inspection certificate.",
+        "tip": "Check whether your country restricts right-hand-drive cars and how the inspection treats them before you buy.",
+        "faq1": {
+          "q": "How long does shipping from Japan take?",
+          "a": "Via the Suez Canal about {{min}}–{{max}} days at sea depending on the EU port – Mediterranean ports are the fastest. Add the time for export documents."
+        },
+        "faq2": {
+          "q": "Can I register a right-hand-drive car?",
+          "a": "In most EU countries yes, sometimes with headlight adjustment. A few countries limit RHD cars for permanent registration – check your local rules before buying."
+        }
+      },
+      "UAE": {
+        "h1": "Importing a car from Dubai (UAE) to the EU",
+        "metaTitle": "Import a car from Dubai (UAE) to Europe – costs, duty, VAT | CarImport.eu",
+        "metaDescription": "Import a car from Dubai and the UAE: Emirates Auction and dealers, GCC spec, shipping from Jebel Ali, duty, VAT and registration. Full cost calculator.",
+        "lead": "Dubai is a market of premium and sports cars with low mileage, often barely used. GCC-spec cars are built for heat and sold at attractive prices.",
+        "why": "Luxury and sports models, low mileage and dry climate (no rust). Prices in dirhams are pegged to the US dollar.",
+        "auctions": "Emirates Auction and dealers in Dubai and Sharjah; a local exporter arranges the export certificate and shipping from Jebel Ali.",
+        "docs": "Export certificate, invoice, bill of lading, EU customs declaration, translations, inspection certificate.",
+        "tip": "Heat wears rubber parts and interiors – ask for photos of seals, tyres and dashboard.",
+        "faq1": {
+          "q": "How long does shipping from Dubai take?",
+          "a": "From Jebel Ali through Suez about {{min}}–{{max}} days at sea depending on the EU port; Mediterranean ports are the closest."
+        },
+        "faq2": {
+          "q": "What is a GCC-spec car?",
+          "a": "A car built for the Gulf market: stronger cooling and air conditioning, sometimes different emissions equipment. It can be registered in the EU after the technical inspection."
+        }
+      },
+      "UK": {
+        "h1": "Importing a car from the UK to the EU",
+        "metaTitle": "Import a car from the UK after Brexit – costs, duty, VAT | CarImport.eu",
+        "metaDescription": "Import a car from the UK after Brexit: customs duty and preferential origin, VAT, right-hand drive, short shipping and registration. Full cost calculator.",
+        "lead": "Since Brexit a car from the United Kingdom is an import from outside the EU: customs declaration, duty and import VAT apply. The journey is short, and cars made in the UK or the EU may qualify for 0% duty.",
+        "why": "A large used-car market, good service histories and short shipping by RoRo or ferry. Right-hand drive needs to be considered.",
+        "auctions": "Copart UK, BCA, Manheim UK and dealers. Buying from a VAT-registered dealer means the UK VAT can be refunded on export.",
+        "docs": "V5C logbook, invoice, export declaration, preferential origin statement (for 0% duty), EU customs declaration, translations, inspection certificate.",
+        "tip": "Ask the seller for a statement of preferential origin – under the EU–UK trade agreement it can cut the duty to zero for cars made in the UK or the EU.",
+        "faq1": {
+          "q": "How long does transport from the UK take?",
+          "a": "Only {{min}}–{{max}} days by sea (RoRo or ferry), plus customs formalities on both sides."
+        },
+        "faq2": {
+          "q": "Do I pay duty on a car from the UK?",
+          "a": "Yes, 10% – unless the car has proven preferential origin (made in the UK or the EU) under the EU–UK agreement, in which case duty can be 0%. Import VAT is always due."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: importing a car from outside the EU",
+      "metaTitle": "{{country}} – car import: VAT {{vat}}%, registration, ports | CarImport.eu",
+      "metaDescription": "Importing a car into {{country}} from the USA, Canada, Japan, the UAE or the UK: import VAT {{vat}}%, registration, inspection, nearest ports and the full cost.",
+      "lead": "Everything that matters when you register an imported car in {{country}}: tax, authorities, inspection and the cheapest ports.",
+      "facts": {
+        "title": "Key facts",
+        "vat": "Import VAT (standard rate)",
+        "currency": "Currency",
+        "registrationTax": "One-off tax at registration",
+        "noTax": "none",
+        "authority": "Registration authority",
+        "inspection": "Inspection before registration",
+        "deadline": "Deadline to register",
+        "deadlineValue": "{{days}} days",
+        "noDeadline": "see local rules"
+      },
+      "p1": "Customs duty is the same in every EU country: 10% of the CIF value for passenger cars. Import VAT is paid in the country where the car is cleared – {{vat}}% if you clear it here.",
+      "p2": "Clearing in another EU country with lower VAT can be cheaper even with the extra transport – the calculator compares all ports door to door.",
+      "p3": "Local registration taxes and inspections are not harmonised in the EU; plan their cost and time before you buy.",
+      "portsTitle": "Nearest ports of clearance",
+      "portsNote": "Estimated road distance to the population centre of {{country}}.",
+      "originsTitle": "Where to buy",
+      "faq1": {
+        "q": "How much VAT do I pay on an imported car?",
+        "a": "If the car is cleared in {{country}}, {{vat}}% of the customs value plus duty and transport costs to the destination. Clearing elsewhere in the EU means that country’s import VAT."
+      },
+      "faq2": {
+        "q": "Where do I register an imported car?",
+        "a": "At {{authority}}, after the inspection ({{inspection}}) and with translated purchase and customs documents."
+      }
+    },
+    "port": {
+      "h1": "Port of {{port}} ({{country}}): customs clearance of imported cars",
+      "metaTitle": "{{port}} – car import, customs, VAT {{vat}}% | CarImport.eu",
+      "metaDescription": "Clearing an imported car in {{port}} ({{country}}): terminal and agent fees, import VAT {{vat}}%, sailing times from the USA, Japan and the UAE, distances.",
+      "lead": "{{port}} is a port of clearance in {{country}}. Here are its fees, sailing times and road distances – and whether it is worth clearing your car here.",
+      "facts": {
+        "title": "Port at a glance",
+        "country": "Country",
+        "region": "Sea area",
+        "vat": "Import VAT when cleared here",
+        "unloading": "Terminal handling and devanning",
+        "agency": "Customs agent",
+        "perCar": "per car"
+      },
+      "sailingTitle": "Sailing time to {{port}}",
+      "sailingNote": "Shared container from the main export ports; RoRo takes a few days longer.",
+      "days": "{{min}}–{{max}} days",
+      "distancesTitle": "Road distance from {{port}}",
+      "alternativesTitle": "Other ports nearby",
+      "p1": "Clearing in {{port}} means paying import VAT of {{country}} ({{vat}}%). If you register the car in another EU country, the car is then delivered by road.",
+      "p2": "The calculator compares {{port}} with all other EU ports for your address and shows the cheapest option.",
+      "faq1": {
+        "q": "How much does clearing a car in {{port}} cost?",
+        "a": "Terminal handling and devanning about {{unloading}}, customs agent about {{agency}}, plus customs duty and import VAT of {{vat}}%."
+      },
+      "faq2": {
+        "q": "Can I clear a car here and register it in another EU country?",
+        "a": "Yes. A private buyer pays the import VAT here; a VAT-registered company can use customs procedure 4200 and account for VAT in its own country."
+      }
+    },
+    "cta": {
+      "title": "Calculate the exact cost for your car",
+      "text": "Enter only your address – we propose the rest and price every port door to door.",
+      "button": "Open the calculator"
+    },
+    "related": "Related guides",
+    "disclaimer": "Information for orientation only; tax and customs authorities decide the final amounts. Rates as used by the calculator."
   }
 }

@@ -1010,5 +1010,252 @@
     "hint": "Zneski z dražbe (USD, JPY, AED …) se preračunajo po trenutnem tečaju centralne banke. Valuta ne spremeni izračuna davkov – davke vedno odmeri država carinjenja.",
     "groupEu": "Valute EU",
     "groupOther": "Drugo"
+  },
+  "guide": {
+    "nav": {
+      "title": "Vodniki za uvoz",
+      "origins": "Uvoz po državi nakupa",
+      "countries": "Uvoz v države EU",
+      "ports": "Pristanišča carinjenja v EU",
+      "all": "Vsi vodniki"
+    },
+    "hub": {
+      "origins": {
+        "title": "Vodniki za uvoz avtomobila: ZDA, Kanada, Japonska, ZAE in Združeno kraljestvo",
+        "lead": "Vodniki po korakih za vsako državo, v kateri lahko kupite avtomobil: dražbe, dokumenti, trajanje prevoza, carina, DDV in registracija v Sloveniji – z dejanskimi stroški v vašem kalkulatorju.",
+        "metaTitle": "Vodniki za uvoz avtomobila – ZDA, Kanada, Japonska, ZAE, UK | CarImport.eu",
+        "metaDescription": "Kako uvoziti avtomobil iz ZDA, Kanade, Japonske, ZAE ali Združenega kraljestva v Slovenijo: dražbe, dokumenti, prevoz, carina, DDV in registracija po korakih."
+      },
+      "countries": {
+        "title": "Uvoz avtomobila v posamezne države EU",
+        "lead": "Stopnja DDV, davek ob registraciji, pristojni organ, tehnični pregled in najbližja pristanišča carinjenja za vseh 27 držav članic EU.",
+        "metaTitle": "Uvoz avtomobila v države EU – DDV, registracija, pristanišča | CarImport.eu",
+        "metaDescription": "Uvozni DDV, davki ob registraciji, organi, tehnični pregledi in najbližja pristanišča za vseh 27 držav EU – primerjajte in izračunajte celotne stroške uvoza.",
+        "yours": "Vaša država"
+      },
+      "ports": {
+        "title": "Pristanišča carinjenja v EU za uvožene avtomobile",
+        "lead": "Vseh {{count}} morskih pristanišč EU, v katerih se carinijo avtomobili iz držav zunaj EU: stroški, DDV, trajanje plovbe iz ZDA, Kanade, Japonske, ZAE in UK ter cestne razdalje.",
+        "metaTitle": "{{count}} pristanišč EU za uvoz avtomobilov – stroški, DDV, plovba | CarImport.eu",
+        "metaDescription": "Primerjajte vseh {{count}} pristanišč EU za carinjenje avtomobilov: stroški terminala in carinskega zastopnika, uvozni DDV, trajanje plovbe in razdalja do Slovenije.",
+        "sortedFrom": "Razvrščeno po cestni razdalji do: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Korak za korakom",
+        "costsTitle": "Kaj plačate",
+        "portsTitle": "Najbližja pristanišča carinjenja",
+        "docsTitle": "Potrebni dokumenti",
+        "whyTitle": "Zakaj kupiti tukaj",
+        "auctionsTitle": "Kje kupiti",
+        "tipTitle": "Nasvet",
+        "step1": {
+          "title": "Nakup avtomobila",
+          "text": "Zmagajte na dražbi ali kupite pri trgovcu. Dražbene provizije so odvisne od cenovnega razreda in vrste lastniškega lista – kalkulator uporablja veljavni cenik."
+        },
+        "step2": {
+          "title": "Prevoz do izvoznega pristanišča",
+          "text": "Tovornjak odpelje avtomobil z dražbenega dvorišča do pristanišča; nevozna vozila potrebujejo viličar in vitel, kar se dodatno zaračuna."
+        },
+        "step3": {
+          "title": "Pomorski prevoz",
+          "text": "Skupni zabojnik, samostojni zabojnik ali RoRo. Plovba do EU traja {{min}}–{{max}} dni, poleg tega še nakladanje in čakanje na ladjo."
+        },
+        "step4": {
+          "title": "Carinjenje v pristanišču EU",
+          "text": "Carinski zastopnik vloži carinsko deklaracijo. Carino in uvozni DDV plačate v državi pristanišča – razen če podjetje uporabi carinski postopek 4200."
+        },
+        "step5": {
+          "title": "Dostava na vaš naslov",
+          "text": "Avtotransporter, vlečna služba ali vožnja s preizkusnimi tablicami – cena na kilometer od pristanišča."
+        },
+        "step6": {
+          "title": "Tehnični pregled in registracija",
+          "text": "Tehnični pregled, prevodi in registracija v državi, kjer živite, ter morebitni lokalni davek ob registraciji."
+        },
+        "cost": {
+          "duty": "Carina",
+          "dutyValue": "10 % vrednosti CIF (pickupi 22 %, motorna kolesa 6–8 %, starodobna vozila 0 %)",
+          "vat": "Uvozni DDV",
+          "vatValue": "{{vat}} % – {{country}}",
+          "vatRange": "17–27 % glede na državo carinjenja",
+          "registration": "Lokalni davek ob registraciji",
+          "none": "ni",
+          "shipping": "Trajanje plovbe",
+          "shippingValue": "{{min}}–{{max}} dni",
+          "currency": "Valuta dražbe"
+        },
+        "portsNote": "Cestna razdalja od pristanišča do: {{country}} (središče poselitve). Kalkulator izračuna ceno vsakega pristanišča od vrat do vrat za vaš točen naslov.",
+        "portsNoteEu": "Kalkulator izračuna ceno vseh pristanišč EU od vrat do vrat za vaš točen naslov in izbere najcenejše.",
+        "faqPorts": {
+          "q": "Katero pristanišče je zame najcenejše?",
+          "a": "Odvisno je od vašega naslova, uvoznega DDV države pristanišča in voznega reda ladij. Kalkulator izračuna ceno vsakega pristanišča EU od vrat do vrat in jih prikaže od najcenejšega naprej."
+        },
+        "faqBinding": {
+          "q": "Ali je ocena zavezujoča?",
+          "a": "Ne. Temelji na veljavnih stopnjah in cenikih; končne zneske določijo carinski in davčni organi. Poročilo PDF navaja vse stopnje in predpostavke, da jih lahko primerjate."
+        }
+      },
+      "USA": {
+        "h1": "Uvoz avtomobila iz ZDA v Slovenijo",
+        "metaTitle": "Uvoz avtomobila iz ZDA v Slovenijo – stroški, carina, DDV | CarImport.eu",
+        "metaDescription": "Kako uvoziti avtomobil iz ZDA v Slovenijo: dražbe Copart in IAAI, trajanje prevoza, 10 % carine, uvozni DDV, dokumenti in registracija. Izračunajte stroške.",
+        "lead": "ZDA so največji vir uvoženih avtomobilov: vsako leto milijoni vozil na Copartu in IAAI, pogosto po cenah precej pod evropskim trgom. Tukaj je prikazano, kako poteka celoten postopek in koliko v resnici stane.",
+        "why": "Ogromna izbira, nizke cene poškodovanih (salvage) avtomobilov, močni motorji in bogato opremljene izvedbe, ki so v Evropi redke. Past: ameriške luči in včasih tudi merilnik hitrosti je treba predelati, popravilo salvage avtomobila pa je lahko drago.",
+        "auctions": "Copart in IAAI (Insurance Auto Auctions) prodajata predvsem avtomobile zavarovalnic s čistim (clean) ali salvage lastniškim listom; Manheim in trgovci prodajajo nepoškodovane avtomobile. Običajno licitirate prek posrednika (brokerja) z dražbeno licenco.",
+        "docs": "Lastniški list – title (clean ali salvage), račun / kupoprodajna pogodba, ladijski tovorni list (bill of lading), ameriška izvozna deklaracija (EEI/AES), carinska deklaracija v pristanišču EU, prevodi titla in računa, potrdilo o tehničnem pregledu.",
+        "tip": "Pred licitiranjem preverite zgodovino VIN (nesreče, poplave, prevoženi kilometri) in predvidite rezervo za skrite poškodbe – kalkulator jo doda kot scenarij tveganja.",
+        "faq1": {
+          "q": "Koliko časa traja prevoz iz ZDA?",
+          "a": "Z vzhodne obale (New Jersey, Savannah) približno {{min}} dni plovbe do pristanišč ob Severnem morju, iz Houstona in Kalifornije do {{max}} dni. Prištejte 1–3 tedne za prevoz do pristanišča in čakanje na ladjo."
+        },
+        "faq2": {
+          "q": "Ali je salvage title v EU težava?",
+          "a": "Ne – EU ne uporablja ameriških oznak lastniških listov. Avtomobil pa mora po popravilu opraviti tehnični pregled, zato računajte na kakovostno popravilo in tveganje skritih poškodb."
+        }
+      },
+      "CANADA": {
+        "h1": "Uvoz avtomobila iz Kanade v Slovenijo",
+        "metaTitle": "Uvoz avtomobila iz Kanade v Slovenijo – stroški, carina, DDV | CarImport.eu",
+        "metaDescription": "Uvoz avtomobila iz Kanade v Slovenijo: Copart in IAAI Canada, prevoz iz Halifaxa in Montreala, 10 % carine, DDV, dokumenti in registracija. Kalkulator stroškov.",
+        "lead": "Kanadski avtomobili so podobni ameriškim, vendar so pogosto bolje pripravljeni na zimo, imajo merilnike hitrosti v kilometrih in nižje cene v kanadskih dolarjih. Prevoz iz Halifaxa in Montreala v Evropo je med najkrajšimi čez Atlantik.",
+        "why": "Metrični instrumenti, zimski paketi, grelniki motorja in dobra protikorozijska zaščita; cene v CAD so za isti model pogosto nižje kot v ZDA.",
+        "auctions": "Copart in IAAI delujeta tudi v Kanadi; za nepoškodovane avtomobile pride v poštev nakup pri trgovcih ali zasebnikih. Licitira se prek posrednika.",
+        "docs": "Registracija / dokazilo o lastništvu (ali salvage title), kupoprodajna pogodba, ladijski tovorni list, kanadska izvozna deklaracija, carinska deklaracija v EU, prevodi, potrdilo o tehničnem pregledu.",
+        "tip": "Vzhodne province (Ontario, Quebec) so najbližje pristaniščema Montreal in Halifax – kopenski prevoz z zahoda je precej dražji.",
+        "faq1": {
+          "q": "Koliko časa traja prevoz iz Kanade?",
+          "a": "Iz Halifaxa in Montreala približno {{min}}–{{max}} dni plovbe do pristanišč ob Severnem morju, poleg tega še prevoz do pristanišča in čakanje na ladjo."
+        },
+        "faq2": {
+          "q": "Ali je treba kanadski avtomobil predelati?",
+          "a": "Običajno manj kot ameriškega: merilnik hitrosti je že v kilometrih. Luči (oranžni zadnji smerniki, bočne luči) bo morda vseeno treba prilagoditi pravilom EU."
+        }
+      },
+      "JAPAN": {
+        "h1": "Uvoz avtomobila iz Japonske v Slovenijo",
+        "metaTitle": "Uvoz avtomobila iz Japonske v Slovenijo – JDM, carina, DDV | CarImport.eu",
+        "metaDescription": "Uvoz JDM avtomobila iz Japonske v Slovenijo: dražbe USS, auction sheet, prevoz iz Jokohame, carina, DDV, desni volan in registracija. Kalkulator stroškov.",
+        "lead": "Japonska je dom avtomobilov JDM: malo prevoženih kilometrov, odlično stanje in modeli, ki se v Evropi nikoli niso prodajali. Auction sheeti podrobno opisujejo vsak avtomobil – a avtomobili imajo volan na desni, pot pa je dolga.",
+        "why": "Zelo dobro stanje zaradi strogih pregledov (shaken), poštenega ocenjevanja na dražbah ter edinstvenih športnih in kei avtomobilov. Cene v jenih so privlačne.",
+        "auctions": "USS je največja mreža dražb; druge so TAA, CAA in JU. Kupujete prek izvoznika, ki prevede auction sheet in uredi odjavo vozila za izvoz.",
+        "docs": "Izvozno potrdilo (odjava), auction sheet in račun, ladijski tovorni list, carinska deklaracija v EU, prevodi, potrdilo o tehničnem pregledu.",
+        "tip": "Pred nakupom preverite, ali vaša država omejuje avtomobile z volanom na desni in kako jih obravnava tehnični pregled.",
+        "faq1": {
+          "q": "Koliko časa traja prevoz iz Japonske?",
+          "a": "Skozi Sueški prekop približno {{min}}–{{max}} dni plovbe, odvisno od pristanišča v EU – sredozemska pristanišča so najhitrejša. Prištejte čas za izvozne dokumente."
+        },
+        "faq2": {
+          "q": "Ali lahko registriram avtomobil z volanom na desni?",
+          "a": "V večini držav EU da, včasih s prilagoditvijo žarometov. Nekaj držav omejuje trajno registracijo avtomobilov z volanom na desni – pred nakupom preverite lokalna pravila."
+        }
+      },
+      "UAE": {
+        "h1": "Uvoz avtomobila iz Dubaja (ZAE) v Slovenijo",
+        "metaTitle": "Uvoz avtomobila iz Dubaja (ZAE) v Slovenijo – carina, DDV | CarImport.eu",
+        "metaDescription": "Uvoz avtomobila iz Dubaja in ZAE v Slovenijo: Emirates Auction in trgovci, specifikacija GCC, prevoz iz Jebel Alija, carina, DDV in registracija.",
+        "lead": "Dubaj je trg premium in športnih avtomobilov z malo prevoženimi kilometri, pogosto komaj rabljenih. Avtomobili s specifikacijo GCC so narejeni za vročino in se prodajajo po privlačnih cenah.",
+        "why": "Luksuzni in športni modeli, malo kilometrov in suho podnebje (brez rje). Cene v dirhamih so vezane na ameriški dolar.",
+        "auctions": "Emirates Auction in trgovci v Dubaju in Šardži; lokalni izvoznik uredi izvozno potrdilo in prevoz iz Jebel Alija.",
+        "docs": "Izvozno potrdilo, račun, ladijski tovorni list, carinska deklaracija v EU, prevodi, potrdilo o tehničnem pregledu.",
+        "tip": "Vročina obrablja gumijaste dele in notranjost – zahtevajte fotografije tesnil, pnevmatik in armaturne plošče.",
+        "faq1": {
+          "q": "Koliko časa traja prevoz iz Dubaja?",
+          "a": "Iz Jebel Alija skozi Suez približno {{min}}–{{max}} dni plovbe, odvisno od pristanišča v EU; sredozemska pristanišča so najbližja."
+        },
+        "faq2": {
+          "q": "Kaj je avtomobil s specifikacijo GCC?",
+          "a": "Avtomobil, izdelan za trg Zaliva: močnejše hlajenje in klimatska naprava, včasih drugačna oprema za emisije. V EU ga je mogoče registrirati po tehničnem pregledu."
+        }
+      },
+      "UK": {
+        "h1": "Uvoz avtomobila iz Združenega kraljestva v Slovenijo",
+        "metaTitle": "Uvoz avtomobila iz UK v Slovenijo po brexitu – carina, DDV | CarImport.eu",
+        "metaDescription": "Uvoz avtomobila iz Združenega kraljestva v Slovenijo po brexitu: carina in preferencialno poreklo, DDV, desni volan, kratek prevoz in registracija.",
+        "lead": "Od brexita je avtomobil iz Združenega kraljestva uvoz iz države zunaj EU: potrebni so carinska deklaracija, carina in uvozni DDV. Pot je kratka, avtomobili, izdelani v Združenem kraljestvu ali EU, pa so lahko upravičeni do 0 % carine.",
+        "why": "Velik trg rabljenih avtomobilov, dobro vodene servisne knjižice in kratek prevoz z ladjo RoRo ali trajektom. Upoštevati je treba volan na desni.",
+        "auctions": "Copart UK, BCA, Manheim UK in trgovci. Če kupite pri trgovcu, registriranem za DDV, lahko britanski DDV ob izvozu dobite povrnjen.",
+        "docs": "Prometno dovoljenje V5C, račun, izvozna deklaracija, izjava o preferencialnem poreklu (za 0 % carine), carinska deklaracija v EU, prevodi, potrdilo o tehničnem pregledu.",
+        "tip": "Od prodajalca zahtevajte izjavo o preferencialnem poreklu – po Sporazumu o trgovini EU–ZK lahko carino za avtomobile, izdelane v Združenem kraljestvu ali EU, zniža na nič.",
+        "faq1": {
+          "q": "Koliko časa traja prevoz iz Združenega kraljestva?",
+          "a": "Le {{min}}–{{max}} dni po morju (RoRo ali trajekt), poleg tega še carinske formalnosti na obeh straneh."
+        },
+        "faq2": {
+          "q": "Ali za avtomobil iz Združenega kraljestva plačam carino?",
+          "a": "Da, 10 % – razen če ima avtomobil dokazano preferencialno poreklo (izdelan v Združenem kraljestvu ali EU) po sporazumu EU–ZK; v tem primeru je carina lahko 0 %. Uvozni DDV je treba plačati vedno."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: uvoz avtomobila iz držav zunaj EU",
+      "metaTitle": "{{country}} – uvoz avtomobila: DDV {{vat}} %, registracija, pristanišča | CarImport.eu",
+      "metaDescription": "{{country}}: uvoz avtomobila iz ZDA, Kanade, Japonske, ZAE ali UK – uvozni DDV {{vat}} %, registracija, tehnični pregled, najbližja pristanišča in celotni stroški.",
+      "lead": "{{country}} – vse, kar je pomembno, ko tukaj registrirate uvožen avtomobil: davki, pristojni organi, tehnični pregled in najcenejša pristanišča.",
+      "facts": {
+        "title": "Ključna dejstva",
+        "vat": "Uvozni DDV (splošna stopnja)",
+        "currency": "Valuta",
+        "registrationTax": "Enkratni davek ob registraciji",
+        "noTax": "ni",
+        "authority": "Organ za registracijo",
+        "inspection": "Pregled pred registracijo",
+        "deadline": "Rok za registracijo",
+        "deadlineValue": "{{days}} dni",
+        "noDeadline": "glejte lokalna pravila"
+      },
+      "p1": "Carina je v vseh državah EU enaka: 10 % vrednosti CIF za osebne avtomobile. Uvozni DDV se plača v državi, kjer se avtomobil ocarini – {{vat}} %, če ga ocarinite tukaj.",
+      "p2": "Carinjenje v drugi državi EU z nižjim DDV je lahko cenejše tudi z dodatnim prevozom – kalkulator primerja vsa pristanišča od vrat do vrat.",
+      "p3": "Lokalni davki ob registraciji in tehnični pregledi v EU niso usklajeni; njihove stroške in čas načrtujte pred nakupom.",
+      "portsTitle": "Najbližja pristanišča carinjenja",
+      "portsNote": "Ocenjena cestna razdalja do središča poselitve – država: {{country}}.",
+      "originsTitle": "Kje kupiti",
+      "faq1": {
+        "q": "Koliko DDV plačam za uvožen avtomobil?",
+        "a": "Če se avtomobil ocarini tukaj ({{country}}), {{vat}} % carinske vrednosti, povečane za carino in stroške prevoza do namembnega kraja. Carinjenje drugje v EU pomeni uvozni DDV tiste države."
+      },
+      "faq2": {
+        "q": "Kje registriram uvožen avtomobil?",
+        "a": "Pristojni organ: {{authority}} – po tehničnem pregledu ({{inspection}}) in s prevedenimi nakupnimi in carinskimi dokumenti."
+      }
+    },
+    "port": {
+      "h1": "Pristanišče {{port}} ({{country}}): carinjenje uvoženih avtomobilov",
+      "metaTitle": "{{port}} – uvoz avtomobila, carina, DDV {{vat}} % | CarImport.eu",
+      "metaDescription": "Carinjenje uvoženega avtomobila v pristanišču {{port}} ({{country}}): stroški terminala in zastopnika, DDV {{vat}} %, plovba iz ZDA, Japonske in ZAE, razdalje.",
+      "lead": "Pristanišče {{port}} je pristanišče carinjenja (država: {{country}}). Tukaj so njegovi stroški, trajanje plovbe in cestne razdalje – in ali se splača svoj avtomobil ocariniti tukaj.",
+      "facts": {
+        "title": "Pristanišče na kratko",
+        "country": "Država",
+        "region": "Morsko območje",
+        "vat": "Uvozni DDV pri carinjenju tukaj",
+        "unloading": "Pretovor na terminalu in praznjenje zabojnika",
+        "agency": "Carinski zastopnik",
+        "perCar": "na avtomobil"
+      },
+      "sailingTitle": "Trajanje plovbe do pristanišča {{port}}",
+      "sailingNote": "Skupni zabojnik iz glavnih izvoznih pristanišč; RoRo traja nekaj dni dlje.",
+      "days": "{{min}}–{{max}} dni",
+      "distancesTitle": "Cestna razdalja od pristanišča {{port}}",
+      "alternativesTitle": "Druga bližnja pristanišča",
+      "p1": "Carinjenje v pristanišču {{port}} pomeni plačilo uvoznega DDV države pristanišča ({{country}}, {{vat}} %). Če avtomobil registrirate v drugi državi EU, ga nato dostavijo po cesti.",
+      "p2": "Kalkulator primerja pristanišče {{port}} z vsemi drugimi pristanišči EU za vaš naslov in prikaže najcenejšo možnost.",
+      "faq1": {
+        "q": "Koliko stane carinjenje avtomobila v pristanišču {{port}}?",
+        "a": "Pretovor na terminalu in praznjenje zabojnika približno {{unloading}}, carinski zastopnik približno {{agency}}, poleg tega carina in uvozni DDV {{vat}} %."
+      },
+      "faq2": {
+        "q": "Ali lahko avtomobil ocarinim tukaj in ga registriram v drugi državi EU?",
+        "a": "Da. Zasebni kupec plača uvozni DDV tukaj; podjetje, registrirano za DDV, lahko uporabi carinski postopek 4200 in obračuna DDV v svoji državi."
+      }
+    },
+    "cta": {
+      "title": "Izračunajte točne stroške za svoj avtomobil",
+      "text": "Vnesite le svoj naslov – ostalo predlagamo mi in izračunamo ceno vsakega pristanišča od vrat do vrat.",
+      "button": "Odpri kalkulator"
+    },
+    "related": "Sorodni vodniki",
+    "disclaimer": "Informacije so zgolj okvirne; končne zneske določijo davčni in carinski organi. Stopnje, kot jih uporablja kalkulator."
   }
 }

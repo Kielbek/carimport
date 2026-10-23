@@ -1010,5 +1010,252 @@
     "hint": "Gli importi d’asta (USD, JPY, AED…) sono convertiti al cambio attuale della banca centrale. La valuta non modifica il calcolo delle imposte – le imposte sono sempre determinate dal Paese di sdoganamento.",
     "groupEu": "Valute UE",
     "groupOther": "Altre"
+  },
+  "guide": {
+    "nav": {
+      "title": "Guide all'importazione",
+      "origins": "Importare per Paese d'acquisto",
+      "countries": "Importare nei Paesi UE",
+      "ports": "Porti di sdoganamento UE",
+      "all": "Tutte le guide"
+    },
+    "hub": {
+      "origins": {
+        "title": "Guide all'importazione auto: USA, Canada, Giappone, EAU e Regno Unito",
+        "lead": "Guide passo passo per ogni Paese in cui puoi comprare un'auto: aste, documenti, tempi di spedizione, dazio, IVA e immatricolazione in Italia, con i costi reali nel tuo calcolatore.",
+        "metaTitle": "Guide importazione auto – USA, Canada, Giappone, EAU, UK | CarImport.eu",
+        "metaDescription": "Come importare un'auto da USA, Canada, Giappone, EAU o Regno Unito in Italia: aste, documenti, spedizione, dazio, IVA e immatricolazione spiegati passo passo."
+      },
+      "countries": {
+        "title": "Importare un'auto in ogni Paese UE",
+        "lead": "Aliquota IVA, imposta di immatricolazione, ente competente, revisione e porti di sdoganamento più vicini per tutti i 27 Stati membri dell'UE.",
+        "metaTitle": "Importare un'auto nei Paesi UE – IVA, immatricolazione, porti | CarImport.eu",
+        "metaDescription": "IVA all'importazione, imposte di immatricolazione, enti, revisioni e porti più vicini per tutti i 27 Paesi UE: confronta e calcola il costo totale dell'auto.",
+        "yours": "Il tuo Paese"
+      },
+      "ports": {
+        "title": "Porti di sdoganamento UE per auto importate",
+        "lead": "Tutti i {{count}} porti marittimi dell'UE in cui si sdoganano auto extra-UE: tariffe, IVA, tempi di navigazione da USA, Canada, Giappone, EAU e Regno Unito, distanze stradali.",
+        "metaTitle": "{{count}} porti UE per importare auto – tariffe, IVA, tempi | CarImport.eu",
+        "metaDescription": "Confronta tutti i {{count}} porti di sdoganamento UE: tariffe di terminal e spedizioniere doganale, IVA all'importazione, tempi di navigazione e distanze dall'Italia.",
+        "sortedFrom": "Ordinati per distanza stradale da: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Passo dopo passo",
+        "costsTitle": "Cosa paghi",
+        "portsTitle": "Porti di sdoganamento più vicini",
+        "docsTitle": "Documenti necessari",
+        "whyTitle": "Perché comprare qui",
+        "auctionsTitle": "Dove comprare",
+        "tipTitle": "Consiglio",
+        "step1": {
+          "title": "Acquista l'auto",
+          "text": "Aggiudicati l'asta o compra da un concessionario. Le commissioni d'asta dipendono dalla fascia di prezzo e dal titolo: il calcolatore applica il tariffario in vigore."
+        },
+        "step2": {
+          "title": "Trasporto al porto di esportazione",
+          "text": "Una bisarca porta l'auto dal piazzale al porto; i veicoli non marcianti richiedono muletto e verricello, con un costo aggiuntivo."
+        },
+        "step3": {
+          "title": "Trasporto marittimo",
+          "text": "Container condiviso, container esclusivo o RoRo. La navigazione verso l'UE dura {{min}}–{{max}} giorni, più il carico e l'attesa della nave."
+        },
+        "step4": {
+          "title": "Sdoganamento nel porto UE",
+          "text": "Uno spedizioniere doganale presenta la dichiarazione. Paghi il dazio e l'IVA all'importazione nel Paese del porto, salvo che un'impresa utilizzi il regime doganale 4200."
+        },
+        "step5": {
+          "title": "Consegna al tuo indirizzo",
+          "text": "Bisarca, carro attrezzi o guida con targa provvisoria, con prezzo al chilometro dal porto."
+        },
+        "step6": {
+          "title": "Revisione e immatricolazione",
+          "text": "Collaudo tecnico, traduzioni e immatricolazione nel Paese in cui vivi, più l'eventuale imposta locale di immatricolazione."
+        },
+        "cost": {
+          "duty": "Dazio doganale",
+          "dutyValue": "10% del valore CIF (pick-up 22%, moto 6–8%, auto storiche 0%)",
+          "vat": "IVA all'importazione",
+          "vatValue": "{{vat}}% – {{country}}",
+          "vatRange": "17–27% a seconda del Paese di sdoganamento",
+          "registration": "Imposta locale all'immatricolazione",
+          "none": "nessuna",
+          "shipping": "Tempo di navigazione",
+          "shippingValue": "{{min}}–{{max}} giorni",
+          "currency": "Valuta dell'asta"
+        },
+        "portsNote": "Distanza stradale dal porto al centro demografico del Paese: {{country}}. Il calcolatore quota ogni porto porta a porta per il tuo indirizzo esatto.",
+        "portsNoteEu": "Il calcolatore quota tutti i porti UE porta a porta per il tuo indirizzo esatto e sceglie il più conveniente.",
+        "faqPorts": {
+          "q": "Qual è il porto più conveniente per me?",
+          "a": "Dipende dal tuo indirizzo, dall'IVA all'importazione del Paese del porto e dal calendario delle partenze. Il calcolatore quota ogni porto UE porta a porta e li elenca dal più economico."
+        },
+        "faqBinding": {
+          "q": "Il preventivo è vincolante?",
+          "a": "No. Si basa su tariffe e listini attuali; gli importi definitivi sono stabiliti dalle autorità doganali e fiscali. Il report PDF elenca ogni aliquota e ipotesi, così puoi confrontarle."
+        }
+      },
+      "USA": {
+        "h1": "Importare un'auto dagli Stati Uniti in Italia",
+        "metaTitle": "Importare un'auto dagli USA in Italia – costi, dazio, IVA | CarImport.eu",
+        "metaDescription": "Come importare un'auto dagli USA in Italia: aste Copart e IAAI, tempi di spedizione, dazio del 10%, IVA, documenti e immatricolazione. Calcola il costo in un minuto.",
+        "lead": "Gli Stati Uniti sono la principale fonte di auto importate: milioni di veicoli ogni anno su Copart e IAAI, spesso a prezzi molto inferiori a quelli del mercato europeo. Ecco come funziona l'intero processo e quanto costa davvero.",
+        "why": "Scelta enorme, prezzi bassi per le auto incidentate (salvage), motori potenti e allestimenti ricchi rari in Europa. Il rovescio della medaglia: i fari americani e talvolta il tachimetro vanno adattati, e riparare un'auto salvage può costare caro.",
+        "auctions": "Copart e IAAI (Insurance Auto Auctions) vendono soprattutto auto assicurative con titolo clean o salvage; Manheim e i concessionari vendono auto non danneggiate. Di solito si fa offerta tramite un broker con licenza d'asta.",
+        "docs": "Titolo di proprietà (clean o salvage), fattura / bill of sale, polizza di carico (B/L), dichiarazione di esportazione USA (EEI/AES), dichiarazione doganale nel porto UE, traduzioni del titolo e della fattura, certificato di revisione.",
+        "tip": "Controlla lo storico del VIN (incidenti, alluvioni, chilometraggio) prima di fare offerta e tieni un margine per danni nascosti: il calcolatore lo aggiunge come scenario di rischio.",
+        "faq1": {
+          "q": "Quanto dura la spedizione dagli Stati Uniti?",
+          "a": "Dalla costa orientale (New Jersey, Savannah) circa {{min}} giorni di navigazione fino ai porti del Mare del Nord, da Houston e dalla California fino a {{max}} giorni. Aggiungi 1–3 settimane per il trasporto al porto e l'attesa della nave."
+        },
+        "faq2": {
+          "q": "Un titolo salvage è un problema nell'UE?",
+          "a": "No: l'UE non utilizza le annotazioni dei titoli statunitensi. L'auto deve però superare la revisione dopo la riparazione, quindi metti in conto una riparazione a regola d'arte e il rischio di danni nascosti."
+        }
+      },
+      "CANADA": {
+        "h1": "Importare un'auto dal Canada in Italia",
+        "metaTitle": "Importare un'auto dal Canada in Italia – costi, dazio, IVA | CarImport.eu",
+        "metaDescription": "Importa un'auto dal Canada in Italia: Copart e IAAI Canada, spedizione da Halifax e Montreal, dazio del 10%, IVA, documenti e immatricolazione. Calcolatore completo.",
+        "lead": "Le auto canadesi sono simili a quelle americane, ma spesso meglio attrezzate per l'inverno, con tachimetro metrico e prezzi più bassi in dollari canadesi. La spedizione da Halifax e Montreal verso l'Europa è tra le più brevi dell'Atlantico.",
+        "why": "Quadri strumenti metrici, pacchetti invernali, preriscaldatori motore e buona protezione anticorrosione; i prezzi in CAD sono spesso più bassi che negli USA per lo stesso modello.",
+        "auctions": "Copart e IAAI operano anche in Canada; per auto non danneggiate ci sono concessionari e vendite tra privati. Le offerte passano tramite un broker.",
+        "docs": "Documento di registrazione / proprietà (o titolo salvage), atto di vendita, polizza di carico (B/L), dichiarazione di esportazione canadese, dichiarazione doganale UE, traduzioni, certificato di revisione.",
+        "tip": "Le province orientali (Ontario, Québec) sono le più vicine ai porti di Montreal e Halifax: il trasporto via terra dall'ovest costa molto di più.",
+        "faq1": {
+          "q": "Quanto dura la spedizione dal Canada?",
+          "a": "Da Halifax e Montreal circa {{min}}–{{max}} giorni di navigazione fino ai porti del Mare del Nord, più il trasporto al porto e l'attesa della nave."
+        },
+        "faq2": {
+          "q": "Un'auto canadese va adattata?",
+          "a": "Di solito meno di un'auto americana: il tachimetro è già metrico. L'illuminazione (indicatori posteriori ambra, luci di ingombro laterali) può comunque richiedere un adeguamento alle norme UE."
+        }
+      },
+      "JAPAN": {
+        "h1": "Importare un'auto dal Giappone in Italia",
+        "metaTitle": "Importare un'auto dal Giappone in Italia – JDM, dazio, IVA | CarImport.eu",
+        "metaDescription": "Importa un'auto JDM dal Giappone in Italia: aste USS, auction sheet, spedizione da Yokohama, dazio, IVA, guida a destra e immatricolazione. Calcolatore completo.",
+        "lead": "Il Giappone è la patria delle auto JDM: pochi chilometri, condizioni eccellenti e modelli mai venduti in Europa. Gli auction sheet descrivono ogni auto nel dettaglio, ma le auto hanno la guida a destra e il viaggio è lungo.",
+        "why": "Condizioni ottime grazie alle severe revisioni (shaken), valutazioni d'asta oneste e sportive e kei car uniche. I prezzi in yen sono interessanti.",
+        "auctions": "USS è la più grande rete di aste; altre sono TAA, CAA e JU. Si acquista tramite un esportatore che traduce l'auction sheet e gestisce la cancellazione per l'esportazione.",
+        "docs": "Certificato di esportazione (cancellazione dal registro), auction sheet e fattura, polizza di carico (B/L), dichiarazione doganale UE, traduzioni, certificato di revisione.",
+        "tip": "Prima di comprare verifica se il tuo Paese limita le auto con guida a destra e come le tratta la revisione.",
+        "faq1": {
+          "q": "Quanto dura la spedizione dal Giappone?",
+          "a": "Attraverso il Canale di Suez circa {{min}}–{{max}} giorni di navigazione a seconda del porto UE: i porti del Mediterraneo sono i più rapidi. Aggiungi i tempi per i documenti di esportazione."
+        },
+        "faq2": {
+          "q": "Posso immatricolare un'auto con guida a destra?",
+          "a": "Nella maggior parte dei Paesi UE sì, a volte con la regolazione dei fari. Alcuni Paesi limitano l'immatricolazione definitiva delle auto con guida a destra: verifica le norme locali prima di comprare."
+        }
+      },
+      "UAE": {
+        "h1": "Importare un'auto da Dubai (EAU) in Italia",
+        "metaTitle": "Importare un'auto da Dubai (EAU) in Italia – costi, dazio, IVA | CarImport.eu",
+        "metaDescription": "Importa un'auto da Dubai e dagli EAU in Italia: Emirates Auction e concessionari, specifiche GCC, spedizione da Jebel Ali, dazio, IVA e immatricolazione.",
+        "lead": "Dubai è un mercato di auto premium e sportive con pochi chilometri, spesso quasi nuove. Le auto con specifiche GCC sono costruite per il caldo e vendute a prezzi interessanti.",
+        "why": "Modelli di lusso e sportivi, chilometraggi bassi e clima secco (niente ruggine). I prezzi in dirham sono ancorati al dollaro USA.",
+        "auctions": "Emirates Auction e concessionari di Dubai e Sharjah; un esportatore locale si occupa del certificato di esportazione e della spedizione da Jebel Ali.",
+        "docs": "Certificato di esportazione, fattura, polizza di carico (B/L), dichiarazione doganale UE, traduzioni, certificato di revisione.",
+        "tip": "Il caldo usura le parti in gomma e gli interni: chiedi foto di guarnizioni, pneumatici e cruscotto.",
+        "faq1": {
+          "q": "Quanto dura la spedizione da Dubai?",
+          "a": "Da Jebel Ali attraverso Suez circa {{min}}–{{max}} giorni di navigazione a seconda del porto UE; i porti del Mediterraneo sono i più vicini."
+        },
+        "faq2": {
+          "q": "Che cos'è un'auto con specifiche GCC?",
+          "a": "Un'auto costruita per il mercato del Golfo: raffreddamento e climatizzazione potenziati, a volte dotazioni diverse per le emissioni. Può essere immatricolata nell'UE dopo la revisione."
+        }
+      },
+      "UK": {
+        "h1": "Importare un'auto dal Regno Unito in Italia",
+        "metaTitle": "Importare un'auto dal Regno Unito dopo la Brexit – dazio, IVA | CarImport.eu",
+        "metaDescription": "Importa un'auto dal Regno Unito in Italia dopo la Brexit: dazio e origine preferenziale, IVA, guida a destra, spedizione breve e immatricolazione. Calcolatore completo.",
+        "lead": "Dopo la Brexit un'auto dal Regno Unito è un'importazione extra-UE: si applicano dichiarazione doganale, dazio e IVA all'importazione. Il viaggio è breve e le auto prodotte nel Regno Unito o nell'UE possono beneficiare del dazio allo 0%.",
+        "why": "Un grande mercato dell'usato, buoni libretti di manutenzione e spedizione breve in RoRo o traghetto. Bisogna tenere conto della guida a destra.",
+        "auctions": "Copart UK, BCA, Manheim UK e concessionari. Acquistando da un concessionario registrato ai fini IVA, l'IVA britannica può essere rimborsata all'esportazione.",
+        "docs": "Libretto V5C, fattura, dichiarazione di esportazione, attestazione di origine preferenziale (per il dazio allo 0%), dichiarazione doganale UE, traduzioni, certificato di revisione.",
+        "tip": "Chiedi al venditore un'attestazione di origine preferenziale: in base all'Accordo commerciale UE–Regno Unito può azzerare il dazio per le auto prodotte nel Regno Unito o nell'UE.",
+        "faq1": {
+          "q": "Quanto dura il trasporto dal Regno Unito?",
+          "a": "Solo {{min}}–{{max}} giorni via mare (RoRo o traghetto), più le formalità doganali da entrambe le parti."
+        },
+        "faq2": {
+          "q": "Pago il dazio su un'auto dal Regno Unito?",
+          "a": "Sì, il 10%, a meno che l'auto non abbia un'origine preferenziale comprovata (prodotta nel Regno Unito o nell'UE) ai sensi dell'accordo UE–Regno Unito: in quel caso il dazio può essere dello 0%. L'IVA all'importazione è sempre dovuta."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: importare un'auto da fuori UE",
+      "metaTitle": "{{country}} – importare un'auto: IVA {{vat}}%, immatricolazione | CarImport.eu",
+      "metaDescription": "Importare un'auto da USA, Canada, Giappone, EAU o Regno Unito – Paese: {{country}}. IVA all'importazione {{vat}}%, immatricolazione, revisione, porti e costo totale.",
+      "lead": "Tutto ciò che conta per immatricolare un'auto importata – Paese: {{country}}. Imposte, enti, revisione e porti più convenienti.",
+      "facts": {
+        "title": "Dati principali",
+        "vat": "IVA all'importazione (aliquota ordinaria)",
+        "currency": "Valuta",
+        "registrationTax": "Imposta una tantum all'immatricolazione",
+        "noTax": "nessuna",
+        "authority": "Ente di immatricolazione",
+        "inspection": "Revisione prima dell'immatricolazione",
+        "deadline": "Termine per l'immatricolazione",
+        "deadlineValue": "{{days}} giorni",
+        "noDeadline": "vedi norme locali"
+      },
+      "p1": "Il dazio doganale è uguale in tutti i Paesi UE: il 10% del valore CIF per le autovetture. L'IVA all'importazione si paga nel Paese in cui l'auto viene sdoganata: il {{vat}}% se la sdogani qui.",
+      "p2": "Sdoganare in un altro Paese UE con IVA più bassa può risultare più conveniente anche con il trasporto aggiuntivo: il calcolatore confronta tutti i porti porta a porta.",
+      "p3": "Le imposte locali di immatricolazione e le revisioni non sono armonizzate nell'UE: pianificane costi e tempi prima di comprare.",
+      "portsTitle": "Porti di sdoganamento più vicini",
+      "portsNote": "Distanza stradale stimata dal centro demografico del Paese: {{country}}.",
+      "originsTitle": "Dove comprare",
+      "faq1": {
+        "q": "Quanta IVA pago su un'auto importata?",
+        "a": "Se l'auto viene sdoganata nel Paese indicato ({{country}}), il {{vat}}% del valore in dogana più dazio e spese di trasporto fino a destinazione. Se la sdogani altrove nell'UE, si applica l'IVA all'importazione di quel Paese."
+      },
+      "faq2": {
+        "q": "Dove immatricolo un'auto importata?",
+        "a": "Presso l'ente competente ({{authority}}), dopo la revisione ({{inspection}}) e con i documenti d'acquisto e doganali tradotti."
+      }
+    },
+    "port": {
+      "h1": "Porto di {{port}} ({{country}}): sdoganamento di auto importate",
+      "metaTitle": "{{port}} – importazione auto, dogana, IVA {{vat}}% | CarImport.eu",
+      "metaDescription": "Sdoganare un'auto importata a {{port}} ({{country}}): tariffe di terminal e spedizioniere, IVA all'importazione {{vat}}%, tempi di navigazione da USA, Giappone ed EAU.",
+      "lead": "{{port}} è un porto di sdoganamento – Paese: {{country}}. Ecco tariffe, tempi di navigazione e distanze stradali, e se conviene sdoganare qui la tua auto.",
+      "facts": {
+        "title": "Il porto in sintesi",
+        "country": "Paese",
+        "region": "Area marittima",
+        "vat": "IVA all'importazione se sdoganata qui",
+        "unloading": "Movimentazione in terminal e svuotamento container",
+        "agency": "Spedizioniere doganale",
+        "perCar": "per auto"
+      },
+      "sailingTitle": "Tempo di navigazione fino al porto: {{port}}",
+      "sailingNote": "Container condiviso dai principali porti di esportazione; il RoRo richiede qualche giorno in più.",
+      "days": "{{min}}–{{max}} giorni",
+      "distancesTitle": "Distanze stradali dal porto: {{port}}",
+      "alternativesTitle": "Altri porti vicini",
+      "p1": "Sdoganare nel porto di {{port}} significa pagare l'IVA all'importazione del Paese del porto ({{country}}, {{vat}}%). Se immatricoli l'auto in un altro Paese UE, l'auto viene poi consegnata su strada.",
+      "p2": "Il calcolatore confronta il porto di {{port}} con tutti gli altri porti UE per il tuo indirizzo e mostra l'opzione più conveniente.",
+      "faq1": {
+        "q": "Quanto costa sdoganare un'auto nel porto di {{port}}?",
+        "a": "Movimentazione in terminal e svuotamento container circa {{unloading}}, spedizioniere doganale circa {{agency}}, più dazio doganale e IVA all'importazione del {{vat}}%."
+      },
+      "faq2": {
+        "q": "Posso sdoganare un'auto qui e immatricolarla in un altro Paese UE?",
+        "a": "Sì. Un acquirente privato paga qui l'IVA all'importazione; un'impresa con partita IVA può utilizzare il regime doganale 4200 e assolvere l'IVA nel proprio Paese."
+      }
+    },
+    "cta": {
+      "title": "Calcola il costo esatto della tua auto",
+      "text": "Inserisci solo il tuo indirizzo: al resto pensiamo noi, quotando ogni porto porta a porta.",
+      "button": "Apri il calcolatore"
+    },
+    "related": "Guide correlate",
+    "disclaimer": "Informazioni puramente indicative; gli importi definitivi sono stabiliti dalle autorità fiscali e doganali. Aliquote come utilizzate dal calcolatore."
   }
 }

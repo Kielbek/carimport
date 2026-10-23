@@ -34,7 +34,10 @@ export class PageContext {
       leaf = leaf.firstChild;
     }
     const data = leaf.snapshot.data;
-    const page = data['page'] as Page | 'report' | undefined;
+    const page = data['page'] as Page | 'report' | 'guide' | undefined;
+    if (page === 'guide') {
+      return; // guide pages set their own head tags and language links (GuidePage)
+    }
     if (page && INDEXABLE.includes(page as Page) && !data['noindex']) {
       this.seo.apply(page as Page, this.lang.current());
       this.hrefFor.set((l) => pathFor(page as Page, l));

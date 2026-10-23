@@ -1010,5 +1010,252 @@
     "hint": "Az aukciós összegeket (USD, JPY, AED…) az aktuális jegybanki árfolyamon számítjuk át. A pénznem nem befolyásolja az adószámítást – az adókat mindig a vámkezelés országa állapítja meg.",
     "groupEu": "Uniós pénznemek",
     "groupOther": "Egyéb"
+  },
+  "guide": {
+    "nav": {
+      "title": "Importútmutatók",
+      "origins": "Import a vásárlás országa szerint",
+      "countries": "Import az uniós országokba",
+      "ports": "Uniós vámkezelő kikötők",
+      "all": "Összes útmutató"
+    },
+    "hub": {
+      "origins": {
+        "title": "Autóimport-útmutatók: USA, Kanada, Japán, Egyesült Arab Emírségek és Egyesült Királyság",
+        "lead": "Lépésről lépésre minden országra, ahol autót vásárolhat: aukciók, dokumentumok, szállítási idő, vám, áfa és forgalomba helyezés Magyarországon – valós költségekkel a kalkulátorban.",
+        "metaTitle": "Autóimport-útmutatók – USA, Kanada, Japán, EAE, UK | CarImport.eu",
+        "metaDescription": "Autóimport az USA-ból, Kanadából, Japánból, az EAE-ből vagy az Egyesült Királyságból Magyarországra: aukciók, okmányok, szállítás, vám, áfa, forgalomba helyezés."
+      },
+      "countries": {
+        "title": "Autóimport az egyes uniós országokba",
+        "lead": "Áfakulcs, regisztrációs adó, nyilvántartó hatóság, műszaki vizsga és a legközelebbi vámkezelő kikötők mind a 27 uniós tagállamra.",
+        "metaTitle": "Autóimport az EU-országokba – áfa, forgalomba helyezés, kikötők | CarImport.eu",
+        "metaDescription": "Behozatali áfa, regisztrációs adó, hatóságok, műszaki vizsga és legközelebbi kikötők mind a 27 EU-országra – számolja ki az importautó teljes költségét.",
+        "yours": "Az Ön országa"
+      },
+      "ports": {
+        "title": "Uniós vámkezelő kikötők importautókhoz",
+        "lead": "Mind a(z) {{count}} uniós tengeri kikötő, ahol az EU-n kívülről érkező autókat vámkezelik: díjak, áfa, hajózási idő az USA-ból, Kanadából, Japánból, az EAE-ből és az Egyesült Királyságból, valamint közúti távolságok.",
+        "metaTitle": "{{count}} uniós kikötő autóimporthoz – díjak, áfa, hajózási idő | CarImport.eu",
+        "metaDescription": "Hasonlítsa össze mind a(z) {{count}} uniós vámkezelő kikötőt: terminál- és vámügynöki díjak, behozatali áfa, hajózási idő és közúti távolság Magyarországig.",
+        "sortedFrom": "Közúti távolság szerint rendezve, célország: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Lépésről lépésre",
+        "costsTitle": "Mit fizet",
+        "portsTitle": "Legközelebbi vámkezelő kikötők",
+        "docsTitle": "Szükséges dokumentumok",
+        "whyTitle": "Miért érdemes itt vásárolni",
+        "auctionsTitle": "Hol vásároljon",
+        "tipTitle": "Tipp",
+        "step1": {
+          "title": "Az autó megvásárlása",
+          "text": "Nyerje meg az aukciót, vagy vásároljon kereskedőtől. Az aukciós díjak az ársávtól és a tulajdoni lap (title) típusától függenek – a kalkulátor az aktuális díjtáblát alkalmazza."
+        },
+        "step2": {
+          "title": "Szállítás az exportkikötőbe",
+          "text": "Kamion viszi az autót a telephelyről a kikötőbe; a nem működő autókhoz targonca és csörlő kell, ami felárral jár."
+        },
+        "step3": {
+          "title": "Tengeri szállítás",
+          "text": "Megosztott konténer, kizárólagos konténer vagy RoRo. A hajóút az EU-ba {{min}}–{{max}} nap, plusz a berakodás és a hajóra várakozás."
+        },
+        "step4": {
+          "title": "Vámkezelés az uniós kikötőben",
+          "text": "A vámügynök benyújtja a vámáru-nyilatkozatot. A vámot és a behozatali áfát a kikötő országában fizeti meg – kivéve, ha egy cég a 4200-as vámeljárást alkalmazza."
+        },
+        "step5": {
+          "title": "Kiszállítás az Ön címére",
+          "text": "Autószállító kamion, autómentő vagy ideiglenes rendszámmal saját tengelyen – kilométer alapon árazva a kikötőtől."
+        },
+        "step6": {
+          "title": "Műszaki vizsga és forgalomba helyezés",
+          "text": "Műszaki vizsga, fordítások és forgalomba helyezés a lakóhelye szerinti országban, valamint az esetleges helyi regisztrációs adó."
+        },
+        "cost": {
+          "duty": "Vám",
+          "dutyValue": "a CIF-érték 10%-a (pickupok 22%, motorkerékpárok 6–8%, veterán autók 0%)",
+          "vat": "Behozatali áfa",
+          "vatValue": "{{vat}}% – {{country}}",
+          "vatRange": "17–27% a vámkezelés országától függően",
+          "registration": "Helyi adó a forgalomba helyezéskor",
+          "none": "nincs",
+          "shipping": "Hajózási idő",
+          "shippingValue": "{{min}}–{{max}} nap",
+          "currency": "Az aukció pénzneme"
+        },
+        "portsNote": "Közúti távolság a kikötőtől – célország: {{country}} (népességi központ). A kalkulátor minden kikötőt háztól házig áraz az Ön pontos címére.",
+        "portsNoteEu": "A kalkulátor minden uniós kikötőt háztól házig áraz az Ön pontos címére, és kiválasztja a legolcsóbbat.",
+        "faqPorts": {
+          "q": "Melyik kikötő a legolcsóbb számomra?",
+          "a": "Ez a címétől, a kikötő országának behozatali áfájától és a hajómenetrendtől függ. A kalkulátor minden uniós kikötőt háztól házig áraz, és a legolcsóbbtól kezdve mutatja őket."
+        },
+        "faqBinding": {
+          "q": "Kötelező érvényű a becslés?",
+          "a": "Nem. Az aktuális díjakon és árlistákon alapul; a végső összegekről a vám- és adóhatóságok döntenek. A PDF-jelentés minden kulcsot és feltételezést felsorol, így összehasonlíthatja őket."
+        }
+      },
+      "USA": {
+        "h1": "Autó behozatala az USA-ból Magyarországra",
+        "metaTitle": "Autóimport az USA-ból Magyarországra – költségek, vám, áfa | CarImport.eu",
+        "metaDescription": "Autó behozatala az USA-ból: Copart és IAAI aukciók, szállítási idő, 10% vám, behozatali áfa, okmányok és forgalomba helyezés. Teljes költség egy perc alatt.",
+        "lead": "Az USA az importautók legnagyobb forrása: évente autók milliói a Copart és az IAAI aukcióin, gyakran jóval az európai piaci ár alatt. Így néz ki a teljes folyamat, és ennyibe kerül valójában.",
+        "why": "Hatalmas választék, alacsony árak a sérült (salvage) autóknál, erős motorok és Európában ritka, jól felszerelt változatok. A hátrány: az amerikai világítást és néha a sebességmérőt át kell alakítani, a salvage autók javítása pedig drága lehet.",
+        "auctions": "A Copart és az IAAI (Insurance Auto Auctions) főleg biztosítói autókat árul clean vagy salvage title-lel; a Manheim és a kereskedők sérülésmentes autókat kínálnak. Általában aukciós licenccel rendelkező brókeren keresztül licitál.",
+        "docs": "Title (clean vagy salvage), számla / adásvételi szerződés (bill of sale), hajóraklevél (bill of lading), amerikai kiviteli nyilatkozat (EEI/AES), vámáru-nyilatkozat az uniós kikötőben, a title és a számla fordítása, műszaki vizsga igazolása.",
+        "tip": "Licitálás előtt ellenőrizze a VIN alapján az előéletet (balesetek, árvíz, futásteljesítmény), és különítsen el tartalékot a rejtett hibákra – a kalkulátor ezt kockázati forgatókönyvként adja hozzá.",
+        "faq1": {
+          "q": "Mennyi ideig tart a szállítás az USA-ból?",
+          "a": "A keleti partról (New Jersey, Savannah) kb. {{min}} nap a tengeren az északi-tengeri kikötőkig, Houstonból és Kaliforniából akár {{max}} nap. Ehhez jön 1–3 hét a kikötőbe szállításra és a hajóra várakozásra."
+        },
+        "faq2": {
+          "q": "Gond a salvage title az EU-ban?",
+          "a": "Nem – az EU nem használja az amerikai title-jelöléseket. A javítás után azonban az autónak át kell mennie a műszaki vizsgán, ezért számoljon szakszerű javítással és a rejtett hibák kockázatával."
+        }
+      },
+      "CANADA": {
+        "h1": "Autó behozatala Kanadából Magyarországra",
+        "metaTitle": "Autóimport Kanadából Magyarországra – költségek, vám, áfa | CarImport.eu",
+        "metaDescription": "Autó behozatala Kanadából: Copart és IAAI Canada, szállítás Halifaxból és Montrealból, 10% vám, áfa, okmányok és forgalomba helyezés. Teljes költségkalkulátor.",
+        "lead": "A kanadai autók hasonlítanak az amerikaiakra, de gyakran jobban felkészítették őket a télre, metrikus sebességmérőjük van, és kanadai dollárban olcsóbbak. A hajóút Halifaxból és Montrealból Európába az egyik legrövidebb az Atlanti-óceánon át.",
+        "why": "Metrikus műszerfal, téli csomagok, motorelőmelegítő és jó rozsdavédelem; ugyanaz a modell kanadai dollárban gyakran olcsóbb, mint az USA-ban.",
+        "auctions": "A Copart és az IAAI Kanadában is működik; sérülésmentes autókhoz a kereskedői és magáneladás is opció. A licitálás brókeren keresztül történik.",
+        "docs": "Forgalmi / tulajdoni okmány (vagy salvage title), adásvételi szerződés, hajóraklevél, kanadai kiviteli nyilatkozat, uniós vámáru-nyilatkozat, fordítások, műszaki vizsga igazolása.",
+        "tip": "A keleti tartományok (Ontario, Québec) vannak a legközelebb Montreal és Halifax kikötőihez – a nyugatról induló belföldi szállítás jóval drágább.",
+        "faq1": {
+          "q": "Mennyi ideig tart a szállítás Kanadából?",
+          "a": "Halifaxból és Montrealból kb. {{min}}–{{max}} nap a tengeren az északi-tengeri kikötőkig, plusz a kikötőbe szállítás és a hajóra várakozás."
+        },
+        "faq2": {
+          "q": "Át kell alakítani a kanadai autót?",
+          "a": "Általában kevésbé, mint az amerikait: a sebességmérő már metrikus. A világítást (borostyánszínű hátsó irányjelzők, oldalsó helyzetjelzők) azonban lehet, hogy az uniós előírásokhoz kell igazítani."
+        }
+      },
+      "JAPAN": {
+        "h1": "Autó behozatala Japánból Magyarországra",
+        "metaTitle": "Autóimport Japánból Magyarországra – JDM, vám, áfa | CarImport.eu",
+        "metaDescription": "JDM autó behozatala Japánból: USS aukciók, aukciós lapok, szállítás Jokohamából, vám, áfa, jobbkormányos autók és forgalomba helyezés. Teljes költségkalkulátor.",
+        "lead": "Japán a JDM autók hazája: alacsony futásteljesítmény, kiváló állapot és Európában soha nem forgalmazott modellek. Az aukciós lapok minden autót részletesen leírnak – az autók viszont jobbkormányosak, és az út hosszú.",
+        "why": "Nagyon jó állapot a szigorú műszaki vizsgáknak (shaken) köszönhetően, megbízható aukciós értékelés, egyedi sport- és kei autók. A jenben megadott árak vonzók.",
+        "auctions": "Az USS a legnagyobb aukciós hálózat; további aukciók a TAA, a CAA és a JU. Exportőrön keresztül vásárol, aki lefordítja az aukciós lapot és intézi a kiviteli forgalomból kivonást.",
+        "docs": "Kiviteli igazolás (forgalomból kivonás), aukciós lap és számla, hajóraklevél, uniós vámáru-nyilatkozat, fordítások, műszaki vizsga igazolása.",
+        "tip": "Vásárlás előtt ellenőrizze, korlátozza-e az Ön országa a jobbkormányos autókat, és hogyan kezeli őket a műszaki vizsga.",
+        "faq1": {
+          "q": "Mennyi ideig tart a szállítás Japánból?",
+          "a": "A Szuezi-csatornán át kb. {{min}}–{{max}} nap a tengeren az uniós kikötőtől függően – a földközi-tengeri kikötők a leggyorsabbak. Ehhez jön a kiviteli okmányok elkészítésének ideje."
+        },
+        "faq2": {
+          "q": "Forgalomba helyezhetek jobbkormányos autót?",
+          "a": "A legtöbb uniós országban igen, néha a fényszórók beállításával. Néhány ország korlátozza a jobbkormányos autók végleges forgalomba helyezését – vásárlás előtt nézze meg a helyi szabályokat."
+        }
+      },
+      "UAE": {
+        "h1": "Autó behozatala Dubajból (EAE) Magyarországra",
+        "metaTitle": "Autóimport Dubajból (EAE) Magyarországra – vám, áfa | CarImport.eu",
+        "metaDescription": "Autóimport Dubajból és az EAE-ből: Emirates Auction és kereskedők, GCC-specifikáció, szállítás Jebel Aliból, vám, áfa, forgalomba helyezés. Költségkalkulátor.",
+        "lead": "Dubaj a prémium- és sportautók piaca, alacsony futásteljesítménnyel, gyakran alig használt állapotban. A GCC-specifikációjú autókat a hőségre építik, és kedvező áron kínálják.",
+        "why": "Luxus- és sportmodellek, alacsony futásteljesítmény és száraz éghajlat (nincs rozsda). A dirham árfolyama az amerikai dollárhoz van kötve.",
+        "auctions": "Emirates Auction, valamint dubaji és sardzsai kereskedők; egy helyi exportőr intézi a kiviteli igazolást és a szállítást Jebel Aliból.",
+        "docs": "Kiviteli igazolás, számla, hajóraklevél, uniós vámáru-nyilatkozat, fordítások, műszaki vizsga igazolása.",
+        "tip": "A hőség koptatja a gumi alkatrészeket és a belső teret – kérjen fotókat a tömítésekről, a gumiabroncsokról és a műszerfalról.",
+        "faq1": {
+          "q": "Mennyi ideig tart a szállítás Dubajból?",
+          "a": "Jebel Aliból a Szuezi-csatornán át kb. {{min}}–{{max}} nap a tengeren az uniós kikötőtől függően; a földközi-tengeri kikötők vannak a legközelebb."
+        },
+        "faq2": {
+          "q": "Mi az a GCC-specifikációjú autó?",
+          "a": "Az Öböl-menti piacra épített autó: erősebb hűtés és klíma, néha eltérő emissziós felszereltség. Műszaki vizsga után forgalomba helyezhető az EU-ban."
+        }
+      },
+      "UK": {
+        "h1": "Autó behozatala az Egyesült Királyságból Magyarországra",
+        "metaTitle": "Autóimport az Egyesült Királyságból a Brexit után – vám, áfa | CarImport.eu",
+        "metaDescription": "Autóimport az Egyesült Királyságból a Brexit után: vám és preferenciális származás, áfa, jobbkormány, rövid szállítás, forgalomba helyezés. Kalkulátor.",
+        "lead": "A Brexit óta az Egyesült Királyságból hozott autó EU-n kívüli behozatalnak számít: vámáru-nyilatkozat, vám és behozatali áfa terheli. Az út rövid, és az Egyesült Királyságban vagy az EU-ban gyártott autók 0%-os vámra is jogosultak lehetnek.",
+        "why": "Nagy használtautó-piac, jól vezetett szervizkönyvek és rövid szállítás RoRo-val vagy komppal. A jobbkormányt figyelembe kell venni.",
+        "auctions": "Copart UK, BCA, Manheim UK és kereskedők. Áfaregisztrált kereskedőtől vásárolva a brit áfa exportkor visszaigényelhető.",
+        "docs": "V5C forgalmi okmány (logbook), számla, kiviteli nyilatkozat, preferenciális származási nyilatkozat (a 0%-os vámhoz), uniós vámáru-nyilatkozat, fordítások, műszaki vizsga igazolása.",
+        "tip": "Kérjen az eladótól preferenciális származási nyilatkozatot – az EU–Egyesült Királyság kereskedelmi megállapodás alapján ez nullára csökkentheti a vámot az Egyesült Királyságban vagy az EU-ban gyártott autóknál.",
+        "faq1": {
+          "q": "Mennyi ideig tart a szállítás az Egyesült Királyságból?",
+          "a": "Mindössze {{min}}–{{max}} nap a tengeren (RoRo vagy komp), plusz a vámalakiságok mindkét oldalon."
+        },
+        "faq2": {
+          "q": "Kell vámot fizetnem az Egyesült Királyságból hozott autó után?",
+          "a": "Igen, 10%-ot – kivéve, ha az autó igazoltan preferenciális származású (az Egyesült Királyságban vagy az EU-ban gyártották) az EU–Egyesült Királyság megállapodás szerint; ekkor a vám 0% lehet. Behozatali áfát mindig kell fizetni."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: autó behozatala az EU-n kívülről",
+      "metaTitle": "{{country}} – autóimport: áfa {{vat}}%, forgalomba helyezés | CarImport.eu",
+      "metaDescription": "Autóimport az USA-ból, Kanadából, Japánból, az EAE-ből vagy az Egyesült Királyságból – célország: {{country}}. Áfa {{vat}}%, kikötők, teljes költség.",
+      "lead": "Minden, ami számít, ha importautót helyez forgalomba – célország: {{country}}. Adók, hatóságok, műszaki vizsga és a legolcsóbb kikötők.",
+      "facts": {
+        "title": "A legfontosabb tények",
+        "vat": "Behozatali áfa (általános kulcs)",
+        "currency": "Pénznem",
+        "registrationTax": "Egyszeri adó a forgalomba helyezéskor",
+        "noTax": "nincs",
+        "authority": "Nyilvántartó hatóság",
+        "inspection": "Műszaki vizsga a forgalomba helyezés előtt",
+        "deadline": "Forgalomba helyezési határidő",
+        "deadlineValue": "{{days}} nap",
+        "noDeadline": "lásd a helyi szabályokat"
+      },
+      "p1": "A vám minden uniós országban azonos: személyautóknál a CIF-érték 10%-a. A behozatali áfát abban az országban kell megfizetni, ahol az autót vámkezelik – itt történő vámkezelés esetén {{vat}}%.",
+      "p2": "Egy alacsonyabb áfájú másik uniós országban történő vámkezelés a többletszállítással együtt is olcsóbb lehet – a kalkulátor minden kikötőt háztól házig összehasonlít.",
+      "p3": "A helyi regisztrációs adók és műszaki vizsgák nincsenek harmonizálva az EU-ban; vásárlás előtt tervezze meg ezek költségét és idejét.",
+      "portsTitle": "Legközelebbi vámkezelő kikötők",
+      "portsNote": "Becsült közúti távolság a népességi központig – ország: {{country}}.",
+      "originsTitle": "Hol vásároljon",
+      "faq1": {
+        "q": "Mennyi áfát fizetek egy importautó után?",
+        "a": "Ha az autót itt vámkezelik (ország: {{country}}), a vámérték, a vám és a rendeltetési helyig felmerülő szállítási költségek összegének {{vat}}%-át. Máshol az EU-ban történő vámkezelésnél az adott ország behozatali áfája érvényes."
+      },
+      "faq2": {
+        "q": "Hol helyezhetem forgalomba az importautót?",
+        "a": "Hatóság: {{authority}} – a műszaki vizsga ({{inspection}}) után, lefordított vásárlási és vámokmányokkal."
+      }
+    },
+    "port": {
+      "h1": "{{port}} kikötő ({{country}}): importautók vámkezelése",
+      "metaTitle": "{{port}} – autóimport, vámkezelés, áfa {{vat}}% | CarImport.eu",
+      "metaDescription": "Importautó vámkezelése – kikötő: {{port}} ({{country}}). Terminál- és ügynöki díjak, áfa {{vat}}%, hajózási idő az USA-ból, Japánból és az EAE-ből.",
+      "lead": "{{port}} vámkezelő kikötő, ország: {{country}}. Íme a díjai, a hajózási idők és a közúti távolságok – és hogy megéri-e itt vámkezeltetni az autót.",
+      "facts": {
+        "title": "A kikötő röviden",
+        "country": "Ország",
+        "region": "Tengeri térség",
+        "vat": "Behozatali áfa itteni vámkezeléskor",
+        "unloading": "Terminálkezelés és konténerkirakás",
+        "agency": "Vámügynök",
+        "perCar": "autónként"
+      },
+      "sailingTitle": "Hajózási idő – kikötő: {{port}}",
+      "sailingNote": "Megosztott konténer a fő exportkikötőkből; a RoRo néhány nappal tovább tart.",
+      "days": "{{min}}–{{max}} nap",
+      "distancesTitle": "Közúti távolság – kikötő: {{port}}",
+      "alternativesTitle": "További közeli kikötők",
+      "p1": "Vámkezelés itt ({{port}}) azt jelenti, hogy a behozatali áfát az alábbi ország szerint fizeti: {{country}} ({{vat}}%). Ha az autót egy másik uniós országban helyezi forgalomba, azt ezután közúton szállítják oda.",
+      "p2": "A kalkulátor összehasonlítja ezt a kikötőt ({{port}}) az összes többi uniós kikötővel az Ön címére, és megmutatja a legolcsóbb lehetőséget.",
+      "faq1": {
+        "q": "Mennyibe kerül egy autó vámkezelése – kikötő: {{port}}?",
+        "a": "Terminálkezelés és konténerkirakás kb. {{unloading}}, vámügynök kb. {{agency}}, plusz a vám és {{vat}}% behozatali áfa."
+      },
+      "faq2": {
+        "q": "Vámkezeltethetem itt az autót, és forgalomba helyezhetem egy másik uniós országban?",
+        "a": "Igen. Magánszemély itt fizeti meg a behozatali áfát; áfaregisztrált cég a 4200-as vámeljárással a saját országában számolhatja el az áfát."
+      }
+    },
+    "cta": {
+      "title": "Számolja ki autója pontos költségét",
+      "text": "Csak a címét adja meg – a többit mi javasoljuk, és minden kikötőt háztól házig árazunk.",
+      "button": "A kalkulátor megnyitása"
+    },
+    "related": "Kapcsolódó útmutatók",
+    "disclaimer": "Az információk csak tájékoztató jellegűek; a végső összegekről az adó- és vámhatóságok döntenek. A kulcsok a kalkulátor által használt értékek."
   }
 }

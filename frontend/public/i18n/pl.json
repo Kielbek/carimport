@@ -1010,5 +1010,252 @@
     "hint": "Kwoty z aukcji (USD, JPY, AED…) przeliczamy po aktualnym kursie banku centralnego. Waluta nie zmienia wyliczenia podatków – te zawsze liczy kraj odprawy.",
     "groupEu": "Waluty krajów UE",
     "groupOther": "Inne"
+  },
+  "guide": {
+    "nav": {
+      "title": "Poradniki importu",
+      "origins": "Import według kraju zakupu",
+      "countries": "Import do krajów UE",
+      "ports": "Porty odprawy w UE",
+      "all": "Wszystkie poradniki"
+    },
+    "hub": {
+      "origins": {
+        "title": "Poradniki importu auta: USA, Kanada, Japonia, ZEA i Wielka Brytania",
+        "lead": "Krok po kroku dla każdego kraju, w którym kupisz auto: aukcje, dokumenty, czas transportu, cło, VAT i rejestracja w Polsce – z prawdziwymi kosztami w kalkulatorze.",
+        "metaTitle": "Poradniki importu auta – USA, Kanada, Japonia, ZEA, UK | CarImport.eu",
+        "metaDescription": "Jak sprowadzić auto z USA, Kanady, Japonii, ZEA lub Wielkiej Brytanii do Polski: aukcje, dokumenty, transport, cło, akcyza, VAT i rejestracja krok po kroku."
+      },
+      "countries": {
+        "title": "Import auta do krajów Unii Europejskiej",
+        "lead": "Stawka VAT, podatek rejestracyjny, urząd, badanie techniczne i najbliższe porty odprawy dla wszystkich 27 państw UE.",
+        "metaTitle": "Import auta do krajów UE – VAT, rejestracja, porty | CarImport.eu",
+        "metaDescription": "VAT importowy, podatki rejestracyjne, urzędy, badania techniczne i najbliższe porty dla wszystkich 27 krajów UE – porównaj i policz pełny koszt auta z importu.",
+        "yours": "Twój kraj"
+      },
+      "ports": {
+        "title": "Porty odprawy w UE dla aut z importu",
+        "lead": "Wszystkie {{count}} porty morskie w UE, w których odprawisz auto spoza Unii: opłaty, VAT, czas rejsu z USA, Kanady, Japonii, ZEA i UK oraz odległości drogowe.",
+        "metaTitle": "{{count}} porty UE do importu aut – opłaty, VAT, czas rejsu | CarImport.eu",
+        "metaDescription": "Porównaj wszystkie {{count}} porty odprawy aut w UE: opłaty terminalowe i agencji celnej, VAT importowy, czas rejsu i odległość drogowa do Polski.",
+        "sortedFrom": "Według odległości drogowej do: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Krok po kroku",
+        "costsTitle": "Co zapłacisz",
+        "portsTitle": "Najbliższe porty odprawy",
+        "docsTitle": "Potrzebne dokumenty",
+        "whyTitle": "Dlaczego warto",
+        "auctionsTitle": "Gdzie kupić",
+        "tipTitle": "Wskazówka",
+        "step1": {
+          "title": "Zakup auta",
+          "text": "Wygrywasz aukcję albo kupujesz od dealera. Opłaty aukcyjne zależą od progu cenowego i tytułu – kalkulator stosuje aktualny cennik."
+        },
+        "step2": {
+          "title": "Transport do portu eksportowego",
+          "text": "Laweta przewozi auto z placu do portu; auto niejezdne wymaga wózka widłowego i wyciągarki, co kosztuje dodatkowo."
+        },
+        "step3": {
+          "title": "Fracht morski",
+          "text": "Kontener dzielony, kontener na wyłączność lub RoRo. Rejs do UE trwa {{min}}–{{max}} dni plus załadunek i oczekiwanie na statek."
+        },
+        "step4": {
+          "title": "Odprawa celna w porcie UE",
+          "text": "Agencja celna składa zgłoszenie. Cło i VAT importowy płacisz w kraju portu – chyba że firma korzysta z procedury celnej 4200."
+        },
+        "step5": {
+          "title": "Transport pod dom",
+          "text": "Autotransporter, laweta albo jazda na tablicach tymczasowych – wyceniane za kilometr z portu."
+        },
+        "step6": {
+          "title": "Akcyza, badanie i rejestracja",
+          "text": "Akcyza w urzędzie skarbowym (14 dni), badanie techniczne pojazdu sprowadzonego, tłumaczenia i rejestracja w wydziale komunikacji (30 dni)."
+        },
+        "cost": {
+          "duty": "Cło",
+          "dutyValue": "10% wartości celnej CIF (pickupy 22%, motocykle 6–8%, zabytki 0%)",
+          "vat": "VAT importowy",
+          "vatValue": "{{vat}}% – {{country}}",
+          "vatRange": "17–27% zależnie od kraju odprawy",
+          "registration": "Podatek przy rejestracji",
+          "none": "brak",
+          "shipping": "Czas rejsu",
+          "shippingValue": "{{min}}–{{max}} dni",
+          "currency": "Waluta aukcji"
+        },
+        "portsNote": "Odległość drogowa z portu do centrum kraju: {{country}}. Kalkulator wycenia każdy port od drzwi do drzwi dla Twojego adresu.",
+        "portsNoteEu": "Kalkulator wycenia wszystkie porty UE od drzwi do drzwi dla Twojego adresu i wybiera najtańszy.",
+        "faqPorts": {
+          "q": "Który port będzie dla mnie najtańszy?",
+          "a": "Zależy od adresu, stawki VAT w kraju portu i rozkładu rejsów. Kalkulator wycenia każdy port UE od drzwi do drzwi i pokazuje je od najtańszego."
+        },
+        "faqBinding": {
+          "q": "Czy wycena jest wiążąca?",
+          "a": "Nie. Opiera się na aktualnych stawkach i cennikach; ostateczne kwoty ustalają urzędy celne i skarbowe. Raport PDF wymienia każdą stawkę i założenie, więc łatwo je porównać."
+        }
+      },
+      "USA": {
+        "h1": "Import auta z USA do Polski",
+        "metaTitle": "Import auta z USA do Polski – koszty, cło, akcyza, VAT | CarImport.eu",
+        "metaDescription": "Jak sprowadzić auto z USA do Polski: aukcje Copart i IAAI, czas transportu, 10% cła, akcyza, VAT, dokumenty i rejestracja. Policz pełny koszt w minutę.",
+        "lead": "USA to największe źródło aut z importu: miliony pojazdów rocznie na Copart i IAAI, często w cenach dużo niższych niż w Polsce. Zobacz, jak wygląda cały proces i ile naprawdę kosztuje.",
+        "why": "Ogromny wybór, niskie ceny aut uszkodzonych (salvage), mocne silniki i bogate wersje rzadkie w Europie. Haczyk: amerykańskie oświetlenie, a czasem licznik trzeba przerobić, a naprawa aut po szkodzie bywa droga.",
+        "auctions": "Copart i IAAI (Insurance Auto Auctions) sprzedają głównie auta ubezpieczeniowe z tytułem clean lub salvage; Manheim i dealerzy – auta bez szkód. Licytujesz zwykle przez brokera z licencją aukcyjną.",
+        "docs": "Tytuł własności (clean lub salvage), faktura / bill of sale, konosament (B/L), amerykańska deklaracja eksportowa (EEI/AES), zgłoszenie celne w porcie UE, tłumaczenia przysięgłe tytułu i faktury, zaświadczenie o badaniu technicznym, deklaracja akcyzowa AKC-U/S.",
+        "tip": "Przed licytacją sprawdź historię VIN (wypadki, powódź, przebieg) i zostaw zapas na ukryte uszkodzenia – kalkulator dolicza je jako ryzyko w scenariuszu pesymistycznym.",
+        "faq1": {
+          "q": "Ile trwa transport auta z USA?",
+          "a": "Ze wschodniego wybrzeża (New Jersey, Savannah) około {{min}} dni rejsu do portów Morza Północnego, z Houston i Kalifornii do {{max}} dni. Doliczyć trzeba 1–3 tygodnie na dowóz do portu i oczekiwanie na statek."
+        },
+        "faq2": {
+          "q": "Czy tytuł salvage to problem w Polsce?",
+          "a": "Nie – w UE nie stosuje się amerykańskich oznaczeń tytułu. Auto musi jednak przejść badanie techniczne po naprawie, więc zaplanuj solidną naprawę i ryzyko ukrytych szkód."
+        }
+      },
+      "CANADA": {
+        "h1": "Import auta z Kanady do Polski",
+        "metaTitle": "Import auta z Kanady do Polski – koszty, cło, akcyza, VAT | CarImport.eu",
+        "metaDescription": "Sprowadzenie auta z Kanady: Copart i IAAI Canada, transport z Halifax i Montrealu, 10% cła, akcyza, VAT, dokumenty i rejestracja. Kalkulator pełnego kosztu.",
+        "lead": "Kanadyjskie auta są podobne do amerykańskich, ale często lepiej przygotowane do zimy, z licznikami w km/h i tańsze w dolarach kanadyjskich. Rejs z Halifax i Montrealu do Europy to jedna z najkrótszych tras przez Atlantyk.",
+        "why": "Liczniki metryczne, pakiety zimowe, podgrzewacze silnika i dobre zabezpieczenie antykorozyjne; ceny w CAD bywają niższe niż w USA za ten sam model.",
+        "auctions": "Copart i IAAI działają także w Kanadzie; auta bez szkód kupisz od dealerów i prywatnie. Licytujesz przez brokera.",
+        "docs": "Dowód rejestracyjny / ownership (lub tytuł salvage), umowa kupna, konosament, kanadyjska deklaracja eksportowa, zgłoszenie celne w UE, tłumaczenia przysięgłe, badanie techniczne, deklaracja akcyzowa.",
+        "tip": "Wschodnie prowincje (Ontario, Quebec) są najbliżej portów w Montrealu i Halifax – dowóz z zachodu kosztuje znacznie więcej.",
+        "faq1": {
+          "q": "Ile trwa transport auta z Kanady?",
+          "a": "Z Halifax i Montrealu około {{min}}–{{max}} dni rejsu do portów Morza Północnego, plus dowóz do portu i oczekiwanie na statek."
+        },
+        "faq2": {
+          "q": "Czy auto z Kanady trzeba przerabiać?",
+          "a": "Zwykle mniej niż auto z USA: licznik jest już w km/h. Oświetlenie (pomarańczowe kierunkowskazy z tyłu, światła boczne) może wymagać dostosowania do przepisów UE."
+        }
+      },
+      "JAPAN": {
+        "h1": "Import auta z Japonii do Polski",
+        "metaTitle": "Import auta z Japonii (JDM) do Polski – koszty, cło, VAT | CarImport.eu",
+        "metaDescription": "Sprowadzenie auta JDM z Japonii: aukcje USS, arkusze aukcyjne, transport z Jokohamy, cło, akcyza, VAT, kierownica po prawej i rejestracja. Kalkulator kosztów.",
+        "lead": "Japonia to ojczyzna aut JDM: niskie przebiegi, świetny stan i modele nigdy niesprzedawane w Europie. Arkusze aukcyjne opisują każde auto szczegółowo – ale kierownica jest po prawej, a podróż długa.",
+        "why": "Bardzo dobry stan dzięki surowym przeglądom (shaken), rzetelne oceny aukcyjne i unikalne auta sportowe oraz kei cars. Ceny w jenach są atrakcyjne.",
+        "auctions": "USS to największa sieć aukcji; inne to TAA, CAA i JU. Kupujesz przez eksportera, który tłumaczy arkusz aukcyjny i wyrejestrowuje auto do eksportu.",
+        "docs": "Świadectwo eksportowe (wyrejestrowanie), arkusz aukcyjny i faktura, konosament, zgłoszenie celne w UE, tłumaczenia przysięgłe, badanie techniczne, deklaracja akcyzowa.",
+        "tip": "Auto z kierownicą po prawej zarejestrujesz w Polsce po przestawieniu świateł – sprawdź koszt przeróbki przed zakupem.",
+        "faq1": {
+          "q": "Ile trwa transport auta z Japonii?",
+          "a": "Przez Kanał Sueski około {{min}}–{{max}} dni rejsu zależnie od portu UE – najszybciej do portów Morza Śródziemnego. Doliczyć trzeba czas na dokumenty eksportowe."
+        },
+        "faq2": {
+          "q": "Czy zarejestruję auto z kierownicą po prawej?",
+          "a": "Tak, w Polsce auto z kierownicą po prawej można zarejestrować; badanie techniczne wymaga dostosowania świateł do ruchu prawostronnego."
+        }
+      },
+      "UAE": {
+        "h1": "Import auta z Dubaju (ZEA) do Polski",
+        "metaTitle": "Import auta z Dubaju (ZEA) do Polski – koszty, cło, VAT | CarImport.eu",
+        "metaDescription": "Sprowadzenie auta z Dubaju i ZEA: Emirates Auction i dealerzy, specyfikacja GCC, transport z Jebel Ali, cło, akcyza, VAT i rejestracja. Kalkulator kosztów.",
+        "lead": "Dubaj to rynek aut premium i sportowych z niskim przebiegiem, często prawie nieużywanych. Auta w specyfikacji GCC są przystosowane do upałów i sprzedawane w atrakcyjnych cenach.",
+        "why": "Modele luksusowe i sportowe, niskie przebiegi i suchy klimat (brak korozji). Kurs dirhama jest powiązany z dolarem.",
+        "auctions": "Emirates Auction oraz dealerzy w Dubaju i Szardży; lokalny eksporter załatwia świadectwo eksportowe i wysyłkę z Jebel Ali.",
+        "docs": "Świadectwo eksportowe, faktura, konosament, zgłoszenie celne w UE, tłumaczenia przysięgłe, badanie techniczne, deklaracja akcyzowa.",
+        "tip": "Upał niszczy gumy i wnętrze – poproś o zdjęcia uszczelek, opon i deski rozdzielczej.",
+        "faq1": {
+          "q": "Ile trwa transport auta z Dubaju?",
+          "a": "Z Jebel Ali przez Suez około {{min}}–{{max}} dni rejsu zależnie od portu UE; najbliżej są porty Morza Śródziemnego."
+        },
+        "faq2": {
+          "q": "Co to jest auto w specyfikacji GCC?",
+          "a": "Auto na rynek Zatoki Perskiej: mocniejsze chłodzenie i klimatyzacja, czasem inne wyposażenie emisyjne. Zarejestrujesz je w UE po badaniu technicznym."
+        }
+      },
+      "UK": {
+        "h1": "Import auta z Wielkiej Brytanii do Polski",
+        "metaTitle": "Import auta z UK po Brexicie – koszty, cło, akcyza, VAT | CarImport.eu",
+        "metaDescription": "Sprowadzenie auta z Wielkiej Brytanii po Brexicie: cło i preferencyjne pochodzenie, VAT, akcyza, kierownica po prawej, krótki transport i rejestracja.",
+        "lead": "Po Brexicie auto z Wielkiej Brytanii to import spoza UE: obowiązuje zgłoszenie celne, cło i VAT importowy. Podróż jest krótka, a auta wyprodukowane w UK lub UE mogą mieć 0% cła.",
+        "why": "Duży rynek aut używanych, dobre historie serwisowe i krótki transport RoRo lub promem. Trzeba wziąć pod uwagę kierownicę po prawej.",
+        "auctions": "Copart UK, BCA, Manheim UK i dealerzy. Kupując od dealera zarejestrowanego do VAT, odzyskasz brytyjski VAT przy eksporcie.",
+        "docs": "Dowód V5C, faktura, zgłoszenie eksportowe, oświadczenie o preferencyjnym pochodzeniu (dla 0% cła), zgłoszenie celne w UE, tłumaczenia, badanie techniczne, deklaracja akcyzowa.",
+        "tip": "Poproś sprzedawcę o oświadczenie o preferencyjnym pochodzeniu – zgodnie z umową UE–Wielka Brytania może obniżyć cło do zera dla aut wyprodukowanych w UK lub UE.",
+        "faq1": {
+          "q": "Ile trwa transport auta z Wielkiej Brytanii?",
+          "a": "Tylko {{min}}–{{max}} dni drogą morską (RoRo lub prom), plus formalności celne po obu stronach."
+        },
+        "faq2": {
+          "q": "Czy za auto z UK płacę cło?",
+          "a": "Tak, 10% – chyba że auto ma udokumentowane preferencyjne pochodzenie (wyprodukowane w UK lub UE) zgodnie z umową UE–UK; wtedy cło może wynosić 0%. VAT importowy i akcyzę płacisz zawsze."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: import auta spoza UE",
+      "metaTitle": "{{country}} – import auta: VAT {{vat}}%, rejestracja, porty | CarImport.eu",
+      "metaDescription": "Import auta z USA, Kanady, Japonii, ZEA lub UK – kraj docelowy: {{country}}. VAT importowy {{vat}}%, rejestracja, badanie, najbliższe porty i pełny koszt.",
+      "lead": "Wszystko, co ważne przy rejestracji auta z importu – kraj: {{country}}. Podatki, urzędy, badanie techniczne i najtańsze porty.",
+      "facts": {
+        "title": "Najważniejsze informacje",
+        "vat": "VAT importowy (stawka podstawowa)",
+        "currency": "Waluta",
+        "registrationTax": "Jednorazowy podatek przy rejestracji",
+        "noTax": "brak",
+        "authority": "Urząd rejestrujący",
+        "inspection": "Badanie przed rejestracją",
+        "deadline": "Termin na rejestrację",
+        "deadlineValue": "{{days}} dni",
+        "noDeadline": "zgodnie z lokalnymi przepisami"
+      },
+      "p1": "Cło jest takie samo w całej UE: 10% wartości celnej CIF dla aut osobowych. VAT importowy płacisz w kraju odprawy – {{vat}}%, jeśli odprawiasz auto w tym kraju.",
+      "p2": "Odprawa w innym kraju UE z niższym VAT może wyjść taniej nawet z dodatkowym transportem – kalkulator porównuje wszystkie porty od drzwi do drzwi.",
+      "p3": "Krajowe podatki rejestracyjne i badania nie są ujednolicone w UE – zaplanuj ich koszt i czas przed zakupem.",
+      "portsTitle": "Najbliższe porty odprawy",
+      "portsNote": "Szacowana odległość drogowa do centrum kraju: {{country}}.",
+      "originsTitle": "Gdzie kupić auto",
+      "faq1": {
+        "q": "Ile VAT zapłacę za auto z importu?",
+        "a": "Przy odprawie w tym kraju ({{country}}) – {{vat}}% od wartości celnej powiększonej o cło i koszty transportu do miejsca przeznaczenia. Przy odprawie w innym kraju UE – VAT importowy tamtego kraju."
+      },
+      "faq2": {
+        "q": "Gdzie zarejestruję auto z importu?",
+        "a": "W urzędzie: {{authority}}, po badaniu ({{inspection}}) i z przetłumaczonymi dokumentami zakupu i odprawy celnej."
+      }
+    },
+    "port": {
+      "h1": "Port {{port}} ({{country}}): odprawa celna auta z importu",
+      "metaTitle": "{{port}} – import auta, odprawa celna, VAT {{vat}}% | CarImport.eu",
+      "metaDescription": "Odprawa auta w porcie {{port}} ({{country}}): opłaty terminalowe i agencji celnej, VAT importowy {{vat}}%, czas rejsu z USA, Japonii i ZEA, odległości.",
+      "lead": "{{port}} to port odprawy – kraj: {{country}}. Sprawdź opłaty, czas rejsu i odległości drogowe – i czy opłaca się tu odprawić auto.",
+      "facts": {
+        "title": "Port w skrócie",
+        "country": "Kraj",
+        "region": "Akwen",
+        "vat": "VAT importowy przy odprawie tutaj",
+        "unloading": "Obsługa terminalu i rozładunek",
+        "agency": "Agencja celna",
+        "perCar": "za auto"
+      },
+      "sailingTitle": "Czas rejsu – port {{port}}",
+      "sailingNote": "Kontener dzielony z głównych portów eksportowych; RoRo trwa kilka dni dłużej.",
+      "days": "{{min}}–{{max}} dni",
+      "distancesTitle": "Odległość drogowa – port {{port}}",
+      "alternativesTitle": "Inne porty w pobliżu",
+      "p1": "Odprawa w porcie {{port}} oznacza VAT importowy kraju portu ({{country}}, {{vat}}%). Jeśli rejestrujesz auto w innym kraju UE, auto jedzie dalej drogą lądową.",
+      "p2": "Kalkulator porównuje {{port}} ze wszystkimi innymi portami UE dla Twojego adresu i pokazuje najtańszą opcję.",
+      "faq1": {
+        "q": "Ile kosztuje odprawa auta w porcie {{port}}?",
+        "a": "Obsługa terminalu i rozładunek około {{unloading}}, agencja celna około {{agency}}, do tego cło i VAT importowy {{vat}}%."
+      },
+      "faq2": {
+        "q": "Czy mogę odprawić auto tutaj i zarejestrować w innym kraju UE?",
+        "a": "Tak. Osoba prywatna płaci VAT importowy tutaj; firma zarejestrowana do VAT może skorzystać z procedury celnej 4200 i rozliczyć VAT w swoim kraju."
+      }
+    },
+    "cta": {
+      "title": "Policz dokładny koszt dla swojego auta",
+      "text": "Podaj tylko adres – resztę proponujemy sami i wyceniamy każdy port od drzwi do drzwi.",
+      "button": "Otwórz kalkulator"
+    },
+    "related": "Powiązane poradniki",
+    "disclaimer": "Informacje orientacyjne; ostateczne kwoty ustalają urzędy celne i skarbowe. Stawki takie, jak w kalkulatorze."
   }
 }

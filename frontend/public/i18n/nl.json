@@ -1010,5 +1010,252 @@
     "hint": "Veilingbedragen (USD, JPY, AED…) worden omgerekend tegen de actuele koers van de centrale bank. De valuta verandert niets aan de belastingberekening – belastingen worden altijd vastgesteld door het land van inklaring.",
     "groupEu": "EU-valuta",
     "groupOther": "Overige"
+  },
+  "guide": {
+    "nav": {
+      "title": "Importgidsen",
+      "origins": "Import per land van aankoop",
+      "countries": "Import naar EU-landen",
+      "ports": "Inklaringshavens in de EU",
+      "all": "Alle gidsen"
+    },
+    "hub": {
+      "origins": {
+        "title": "Gidsen voor auto-import: VS, Canada, Japan, VAE en het VK",
+        "lead": "Stapsgewijze gidsen voor elk land waar u een auto kunt kopen: veilingen, documenten, transporttijd, invoerrechten, btw en registratie in Nederland – met de echte kosten in uw calculator.",
+        "metaTitle": "Gidsen auto-import – VS, Canada, Japan, VAE, VK | CarImport.eu",
+        "metaDescription": "Een auto uit de VS, Canada, Japan, de VAE of het VK naar Nederland importeren: veilingen, documenten, transport, invoerrechten, btw en registratie uitgelegd."
+      },
+      "countries": {
+        "title": "Een auto importeren in elk EU-land",
+        "lead": "Btw-tarief, registratiebelasting, registratie-instantie, keuring en de dichtstbijzijnde inklaringshavens voor alle 27 EU-lidstaten.",
+        "metaTitle": "Auto-import naar EU-landen – btw, registratie, havens | CarImport.eu",
+        "metaDescription": "Invoer-btw, registratiebelastingen, instanties, keuringen en de dichtstbijzijnde havens voor alle 27 EU-landen – vergelijk en bereken de totale importkosten.",
+        "yours": "Uw land"
+      },
+      "ports": {
+        "title": "Inklaringshavens in de EU voor geïmporteerde auto’s",
+        "lead": "Alle {{count}} EU-zeehavens waar auto’s van buiten de EU worden ingeklaard: kosten, btw, vaartijden vanuit de VS, Canada, Japan, de VAE en het VK, en afstanden over de weg.",
+        "metaTitle": "{{count}} EU-havens voor auto-import – kosten, btw, vaartijden | CarImport.eu",
+        "metaDescription": "Vergelijk alle {{count}} EU-inklaringshavens voor auto’s: terminal- en douane-agentkosten, invoer-btw, vaartijden en afstand over de weg naar Nederland.",
+        "sortedFrom": "Gesorteerd op afstand over de weg naar: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Stap voor stap",
+        "costsTitle": "Wat u betaalt",
+        "portsTitle": "Dichtstbijzijnde inklaringshavens",
+        "docsTitle": "Benodigde documenten",
+        "whyTitle": "Waarom hier kopen",
+        "auctionsTitle": "Waar kopen",
+        "tipTitle": "Tip",
+        "step1": {
+          "title": "De auto kopen",
+          "text": "Win de veiling of koop bij een dealer. De veilingkosten hangen af van de prijsklasse en de title – de calculator past het actuele tarief toe."
+        },
+        "step2": {
+          "title": "Transport naar de exporthaven",
+          "text": "Een truck brengt de auto van het veilingterrein naar de haven; niet-rijdende auto’s hebben een heftruck en lier nodig, wat extra kost."
+        },
+        "step3": {
+          "title": "Zeevracht",
+          "text": "Gedeelde container, exclusieve container of RoRo. De overtocht naar de EU duurt {{min}}–{{max}} dagen, plus laden en wachten op het schip."
+        },
+        "step4": {
+          "title": "Inklaring in een EU-haven",
+          "text": "Een douane-agent dient de aangifte in. U betaalt invoerrechten en invoer-btw in het land van de haven – tenzij een bedrijf gebruikmaakt van douaneregeling 4200."
+        },
+        "step5": {
+          "title": "Levering op uw adres",
+          "text": "Autotransporter, sleepwagen of rijden op tijdelijke kentekenplaten – berekend per kilometer vanaf de haven."
+        },
+        "step6": {
+          "title": "Keuring en registratie",
+          "text": "Technische keuring, vertalingen en registratie in uw woonland, plus eventuele lokale registratiebelasting."
+        },
+        "cost": {
+          "duty": "Invoerrechten",
+          "dutyValue": "10% van de CIF-waarde (pick-ups 22%, motorfietsen 6–8%, oldtimers 0%)",
+          "vat": "Invoer-btw",
+          "vatValue": "{{vat}}% – {{country}}",
+          "vatRange": "17–27% afhankelijk van het land van inklaring",
+          "registration": "Lokale belasting bij registratie",
+          "none": "geen",
+          "shipping": "Vaartijd",
+          "shippingValue": "{{min}}–{{max}} dagen",
+          "currency": "Veilingvaluta"
+        },
+        "portsNote": "Afstand over de weg van de haven naar het bevolkingscentrum van {{country}}. De calculator berekent elke haven van deur tot deur voor uw exacte adres.",
+        "portsNoteEu": "De calculator berekent alle EU-havens van deur tot deur voor uw exacte adres en kiest de goedkoopste.",
+        "faqPorts": {
+          "q": "Welke haven is voor mij het goedkoopst?",
+          "a": "Dat hangt af van uw adres, de invoer-btw van het havenland en de vaarschema’s. De calculator berekent elke EU-haven van deur tot deur en toont ze van goedkoopst naar duurst."
+        },
+        "faqBinding": {
+          "q": "Is de berekening bindend?",
+          "a": "Nee. Ze is gebaseerd op actuele tarieven en prijslijsten; de douane en de belastingdienst stellen de definitieve bedragen vast. Het pdf-rapport vermeldt elk tarief en elke aanname, zodat u kunt vergelijken."
+        }
+      },
+      "USA": {
+        "h1": "Een auto uit de VS naar Nederland importeren",
+        "metaTitle": "Auto uit de VS naar Nederland importeren – kosten, btw | CarImport.eu",
+        "metaDescription": "Een auto uit de VS importeren: Copart- en IAAI-veilingen, transporttijd, 10% invoerrechten, invoer-btw, documenten en registratie. Totale kosten in een minuut.",
+        "lead": "De VS zijn de grootste bron van importauto’s: miljoenen voertuigen per jaar bij Copart en IAAI, vaak tegen prijzen ver onder de Europese markt. Zo verloopt het hele proces – en dit kost het echt.",
+        "why": "Enorme keuze, lage prijzen voor schadeauto’s (salvage), sterke motoren en goed uitgeruste versies die in Europa zeldzaam zijn. Het nadeel: de Amerikaanse verlichting en soms de snelheidsmeter moeten worden omgebouwd, en het herstel van salvage-auto’s kan duur zijn.",
+        "auctions": "Copart en IAAI (Insurance Auto Auctions) verkopen vooral verzekeringsauto’s met een clean of salvage title; Manheim en dealers verkopen auto’s zonder schade. Meestal biedt u via een broker met een veilinglicentie.",
+        "docs": "Title (clean of salvage), factuur / bill of sale, cognossement (bill of lading), Amerikaanse exportaangifte (EEI/AES), douaneaangifte in de EU-haven, vertalingen van title en factuur, keuringsbewijs.",
+        "tip": "Controleer vóór het bieden de VIN-historie (ongevallen, overstroming, kilometerstand) en houd een buffer aan voor verborgen schade – de calculator neemt die mee als risicoscenario.",
+        "faq1": {
+          "q": "Hoe lang duurt het transport vanuit de VS?",
+          "a": "Vanaf de oostkust (New Jersey, Savannah) ongeveer {{min}} dagen op zee naar de Noordzeehavens, vanuit Houston en Californië tot {{max}} dagen. Reken op 1–3 weken extra voor transport naar de haven en wachten op het schip."
+        },
+        "faq2": {
+          "q": "Is een salvage title een probleem in de EU?",
+          "a": "Nee – de EU gebruikt de Amerikaanse title-aanduidingen niet. De auto moet na herstel wel de technische keuring doorstaan, dus reken op een degelijke reparatie en het risico van verborgen schade."
+        }
+      },
+      "CANADA": {
+        "h1": "Een auto uit Canada naar Nederland importeren",
+        "metaTitle": "Auto uit Canada naar Nederland importeren – kosten, btw | CarImport.eu",
+        "metaDescription": "Een auto uit Canada importeren: Copart en IAAI Canada, verscheping vanuit Halifax en Montreal, 10% invoerrechten, btw, documenten en registratie. Calculator.",
+        "lead": "Canadese auto’s lijken op Amerikaanse, maar zijn vaak beter voorbereid op de winter, met metrische snelheidsmeters en lagere prijzen in Canadese dollars. De overtocht vanuit Halifax en Montreal naar Europa is een van de kortste over de Atlantische Oceaan.",
+        "why": "Metrische instrumenten, winterpakketten, motorvoorverwarmers en goede roestbescherming; prijzen in CAD liggen voor hetzelfde model vaak lager dan in de VS.",
+        "auctions": "Copart en IAAI zijn ook in Canada actief; dealer- en particuliere verkoop zijn een optie voor auto’s zonder schade. Bieden gaat via een broker.",
+        "docs": "Registration / ownership (of salvage title), koopovereenkomst, cognossement, Canadese exportaangifte, EU-douaneaangifte, vertalingen, keuringsbewijs.",
+        "tip": "De oostelijke provincies (Ontario, Quebec) liggen het dichtst bij de havens van Montreal en Halifax – transport over land vanuit het westen kost veel meer.",
+        "faq1": {
+          "q": "Hoe lang duurt het transport vanuit Canada?",
+          "a": "Vanuit Halifax en Montreal ongeveer {{min}}–{{max}} dagen op zee naar de Noordzeehavens, plus transport naar de haven en wachten op het schip."
+        },
+        "faq2": {
+          "q": "Moet een Canadese auto worden omgebouwd?",
+          "a": "Meestal minder dan een Amerikaanse auto: de snelheidsmeter is al metrisch. De verlichting (oranje achterknipperlichten, zijmarkeringslichten) moet mogelijk nog worden aangepast aan de EU-regels."
+        }
+      },
+      "JAPAN": {
+        "h1": "Een auto uit Japan naar Nederland importeren",
+        "metaTitle": "JDM-auto uit Japan naar Nederland – kosten, rechten, btw | CarImport.eu",
+        "metaDescription": "Een JDM-auto uit Japan importeren: USS-veilingen, auction sheets, verscheping vanuit Yokohama, invoerrechten, btw, rechtsgestuurd en registratie. Calculator.",
+        "lead": "Japan is de thuisbasis van JDM-auto’s: lage kilometerstanden, uitstekende staat en modellen die nooit in Europa zijn verkocht. Auction sheets beschrijven elke auto tot in detail – maar de auto’s zijn rechtsgestuurd en de reis is lang.",
+        "why": "Zeer goede staat dankzij strenge keuringen (shaken), eerlijke veilingbeoordelingen en unieke sportauto’s en kei cars. De prijzen in yen zijn aantrekkelijk.",
+        "auctions": "USS is het grootste veilingnetwerk; andere zijn TAA, CAA en JU. U koopt via een exporteur die het auction sheet vertaalt en de uitschrijving voor export regelt.",
+        "docs": "Exportcertificaat (uitschrijving), auction sheet en factuur, cognossement, EU-douaneaangifte, vertalingen, keuringsbewijs.",
+        "tip": "Controleer vóór aankoop of uw land beperkingen stelt aan rechtsgestuurde auto’s en hoe de keuring ermee omgaat.",
+        "faq1": {
+          "q": "Hoe lang duurt het transport vanuit Japan?",
+          "a": "Via het Suezkanaal ongeveer {{min}}–{{max}} dagen op zee, afhankelijk van de EU-haven – havens aan de Middellandse Zee zijn het snelst. Reken ook op tijd voor de exportdocumenten."
+        },
+        "faq2": {
+          "q": "Kan ik een rechtsgestuurde auto registreren?",
+          "a": "In de meeste EU-landen wel, soms met aanpassing van de koplampen. Enkele landen beperken rechtsgestuurde auto’s voor permanente registratie – controleer vóór aankoop de lokale regels."
+        }
+      },
+      "UAE": {
+        "h1": "Een auto uit Dubai (VAE) naar Nederland importeren",
+        "metaTitle": "Auto uit Dubai (VAE) naar Nederland – kosten, rechten, btw | CarImport.eu",
+        "metaDescription": "Een auto uit Dubai en de VAE importeren: Emirates Auction en dealers, GCC-specificatie, verscheping vanuit Jebel Ali, invoerrechten, btw en registratie.",
+        "lead": "Dubai is een markt voor premium- en sportauto’s met lage kilometerstanden, vaak nauwelijks gebruikt. Auto’s met GCC-specificatie zijn gebouwd voor hitte en worden tegen aantrekkelijke prijzen verkocht.",
+        "why": "Luxe- en sportmodellen, lage kilometerstanden en een droog klimaat (geen roest). De dirham is gekoppeld aan de Amerikaanse dollar.",
+        "auctions": "Emirates Auction en dealers in Dubai en Sharjah; een lokale exporteur regelt het exportcertificaat en de verscheping vanuit Jebel Ali.",
+        "docs": "Exportcertificaat, factuur, cognossement, EU-douaneaangifte, vertalingen, keuringsbewijs.",
+        "tip": "Hitte tast rubberen onderdelen en het interieur aan – vraag om foto’s van de afdichtingen, banden en het dashboard.",
+        "faq1": {
+          "q": "Hoe lang duurt het transport vanuit Dubai?",
+          "a": "Vanuit Jebel Ali via Suez ongeveer {{min}}–{{max}} dagen op zee, afhankelijk van de EU-haven; havens aan de Middellandse Zee liggen het dichtstbij."
+        },
+        "faq2": {
+          "q": "Wat is een auto met GCC-specificatie?",
+          "a": "Een auto gebouwd voor de Golfmarkt: sterkere koeling en airco, soms andere emissieapparatuur. Na de technische keuring kan hij in de EU worden geregistreerd."
+        }
+      },
+      "UK": {
+        "h1": "Een auto uit het VK naar Nederland importeren",
+        "metaTitle": "Auto uit het VK naar Nederland na de Brexit – kosten, btw | CarImport.eu",
+        "metaDescription": "Een auto uit het VK importeren na de Brexit: invoerrechten en preferentiële oorsprong, btw, rechtsgestuurd, kort transport en registratie in Nederland.",
+        "lead": "Sinds de Brexit is een auto uit het Verenigd Koninkrijk een import van buiten de EU: douaneaangifte, invoerrechten en invoer-btw zijn van toepassing. De reis is kort, en auto’s die in het VK of de EU zijn gemaakt, kunnen in aanmerking komen voor 0% invoerrechten.",
+        "why": "Een grote occasionmarkt, goede onderhoudshistorie en kort transport per RoRo of veerboot. Houd rekening met het rechtsgestuurde stuur.",
+        "auctions": "Copart UK, BCA, Manheim UK en dealers. Koopt u bij een btw-geregistreerde dealer, dan kan de Britse btw bij export worden terugbetaald.",
+        "docs": "V5C-kentekenbewijs, factuur, exportaangifte, verklaring van preferentiële oorsprong (voor 0% invoerrechten), EU-douaneaangifte, vertalingen, keuringsbewijs.",
+        "tip": "Vraag de verkoper om een verklaring van preferentiële oorsprong – op grond van de handelsovereenkomst EU–VK kan die de invoerrechten tot nul verlagen voor auto’s gemaakt in het VK of de EU.",
+        "faq1": {
+          "q": "Hoe lang duurt het transport vanuit het VK?",
+          "a": "Slechts {{min}}–{{max}} dagen over zee (RoRo of veerboot), plus de douaneformaliteiten aan beide kanten."
+        },
+        "faq2": {
+          "q": "Betaal ik invoerrechten op een auto uit het VK?",
+          "a": "Ja, 10% – tenzij de auto een aangetoonde preferentiële oorsprong heeft (gemaakt in het VK of de EU) op grond van de overeenkomst EU–VK; dan kunnen de invoerrechten 0% zijn. Invoer-btw is altijd verschuldigd."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: een auto importeren van buiten de EU",
+      "metaTitle": "{{country}} – auto-import: btw {{vat}}%, registratie, havens | CarImport.eu",
+      "metaDescription": "Een auto uit de VS, Canada, Japan, de VAE of het VK importeren naar {{country}}: invoer-btw {{vat}}%, registratie, keuring, havens en totale kosten.",
+      "lead": "Alles wat telt bij het registreren van een importauto in {{country}}: belastingen, instanties, keuring en de goedkoopste havens.",
+      "facts": {
+        "title": "Belangrijkste feiten",
+        "vat": "Invoer-btw (standaardtarief)",
+        "currency": "Valuta",
+        "registrationTax": "Eenmalige belasting bij registratie",
+        "noTax": "geen",
+        "authority": "Registratie-instantie",
+        "inspection": "Keuring vóór registratie",
+        "deadline": "Termijn voor registratie",
+        "deadlineValue": "{{days}} dagen",
+        "noDeadline": "zie lokale regels"
+      },
+      "p1": "De invoerrechten zijn in elk EU-land gelijk: 10% van de CIF-waarde voor personenauto’s. Invoer-btw wordt betaald in het land waar de auto wordt ingeklaard – {{vat}}% als u hier inklaart.",
+      "p2": "Inklaren in een ander EU-land met lagere btw kan goedkoper zijn, zelfs met het extra transport – de calculator vergelijkt alle havens van deur tot deur.",
+      "p3": "Lokale registratiebelastingen en keuringen zijn in de EU niet geharmoniseerd; plan de kosten en tijd ervan vóór de aankoop.",
+      "portsTitle": "Dichtstbijzijnde inklaringshavens",
+      "portsNote": "Geschatte afstand over de weg naar het bevolkingscentrum van {{country}}.",
+      "originsTitle": "Waar kopen",
+      "faq1": {
+        "q": "Hoeveel btw betaal ik op een importauto?",
+        "a": "Bij inklaring in {{country}} {{vat}}% over de douanewaarde plus invoerrechten en transportkosten tot de bestemming. Bij inklaring elders in de EU geldt de invoer-btw van dat land."
+      },
+      "faq2": {
+        "q": "Waar registreer ik een importauto?",
+        "a": "Bij {{authority}}, na de keuring ({{inspection}}) en met vertaalde aankoop- en douanedocumenten."
+      }
+    },
+    "port": {
+      "h1": "Haven van {{port}} ({{country}}): inklaring van importauto’s",
+      "metaTitle": "{{port}} – auto-import, inklaring, btw {{vat}}% | CarImport.eu",
+      "metaDescription": "Een importauto inklaren in {{port}} ({{country}}): terminal- en agentkosten, invoer-btw {{vat}}%, vaartijden vanuit de VS, Japan en de VAE, afstanden.",
+      "lead": "{{port}} is een inklaringshaven in {{country}}. Hier vindt u de kosten, vaartijden en afstanden over de weg – en of het loont om uw auto hier in te klaren.",
+      "facts": {
+        "title": "De haven in het kort",
+        "country": "Land",
+        "region": "Zeegebied",
+        "vat": "Invoer-btw bij inklaring hier",
+        "unloading": "Terminalafhandeling en lossen",
+        "agency": "Douane-agent",
+        "perCar": "per auto"
+      },
+      "sailingTitle": "Vaartijd naar {{port}}",
+      "sailingNote": "Gedeelde container vanuit de belangrijkste exporthavens; RoRo duurt een paar dagen langer.",
+      "days": "{{min}}–{{max}} dagen",
+      "distancesTitle": "Afstand over de weg vanaf {{port}}",
+      "alternativesTitle": "Andere havens in de buurt",
+      "p1": "Inklaren in {{port}} betekent invoer-btw van {{country}} ({{vat}}%). Registreert u de auto in een ander EU-land, dan wordt hij daarna over de weg geleverd.",
+      "p2": "De calculator vergelijkt {{port}} met alle andere EU-havens voor uw adres en toont de goedkoopste optie.",
+      "faq1": {
+        "q": "Wat kost het inklaren van een auto in {{port}}?",
+        "a": "Terminalafhandeling en lossen ongeveer {{unloading}}, douane-agent ongeveer {{agency}}, plus invoerrechten en invoer-btw van {{vat}}%."
+      },
+      "faq2": {
+        "q": "Kan ik een auto hier inklaren en in een ander EU-land registreren?",
+        "a": "Ja. Een particuliere koper betaalt de invoer-btw hier; een btw-geregistreerd bedrijf kan douaneregeling 4200 gebruiken en de btw in het eigen land verrekenen."
+      }
+    },
+    "cta": {
+      "title": "Bereken de exacte kosten voor uw auto",
+      "text": "Vul alleen uw adres in – wij stellen de rest voor en berekenen elke haven van deur tot deur.",
+      "button": "Open de calculator"
+    },
+    "related": "Gerelateerde gidsen",
+    "disclaimer": "Informatie alleen ter oriëntatie; de belastingdienst en de douane stellen de definitieve bedragen vast. Tarieven zoals gebruikt door de calculator."
   }
 }

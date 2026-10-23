@@ -1010,5 +1010,252 @@
     "hint": "Huutokauppasummat (USD, JPY, AED…) muunnetaan keskuspankin voimassa olevalla kurssilla. Valuutta ei vaikuta verolaskelmaan – verot määrää aina tulliselvitysmaa.",
     "groupEu": "EU-valuutat",
     "groupOther": "Muut"
+  },
+  "guide": {
+    "nav": {
+      "title": "Tuontioppaat",
+      "origins": "Tuonti ostomaan mukaan",
+      "countries": "Tuonti EU-maihin",
+      "ports": "Tullaussatamat EU:ssa",
+      "all": "Kaikki oppaat"
+    },
+    "hub": {
+      "origins": {
+        "title": "Auton tuontioppaat: Yhdysvallat, Kanada, Japani, Arabiemiirikunnat ja Iso-Britannia",
+        "lead": "Vaiheittaiset oppaat jokaiseen maahan, josta voit ostaa auton: huutokaupat, asiakirjat, kuljetusaika, tulli, arvonlisävero ja rekisteröinti Suomessa – todelliset kustannukset näet laskurista.",
+        "metaTitle": "Auton tuontioppaat – USA, Kanada, Japani, Arabiemiirikunnat, UK | CarImport.eu",
+        "metaDescription": "Näin tuot auton Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista tai Iso-Britanniasta Suomeen: huutokaupat, asiakirjat, rahti, tulli, ALV ja rekisteröinti."
+      },
+      "countries": {
+        "title": "Auton tuonti kuhunkin EU-maahan",
+        "lead": "Arvonlisäverokanta, rekisteröintivero, rekisteröintiviranomainen, katsastus ja lähimmät tullaussatamat kaikille 27 EU-maalle.",
+        "metaTitle": "Auton tuonti EU-maihin – ALV, rekisteröinti, satamat | CarImport.eu",
+        "metaDescription": "Tuonnin arvonlisävero, rekisteröintiverot, viranomaiset, katsastukset ja lähimmät satamat kaikille 27 EU-maalle – vertaile ja laske tuontiauton kokonaishinta.",
+        "yours": "Oma maasi"
+      },
+      "ports": {
+        "title": "EU:n tullaussatamat tuontiautoille",
+        "lead": "Kaikki {{count}} EU:n satamaa, joissa EU:n ulkopuolelta tulevat autot tullataan: maksut, ALV, merimatkan kesto Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista ja Iso-Britanniasta sekä tieetäisyydet.",
+        "metaTitle": "{{count}} EU-satamaa autojen tuontiin – maksut, ALV, merimatka | CarImport.eu",
+        "metaDescription": "Vertaile kaikkia {{count}} EU:n autojen tullaussatamaa: terminaali- ja tulliasiamiesmaksut, tuonnin ALV, merimatkan kesto ja tieetäisyys Suomeen.",
+        "sortedFrom": "Lajiteltu tieetäisyyden mukaan, kohde: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Vaihe vaiheelta",
+        "costsTitle": "Mitä maksat",
+        "portsTitle": "Lähimmät tullaussatamat",
+        "docsTitle": "Tarvittavat asiakirjat",
+        "whyTitle": "Miksi ostaa täältä",
+        "auctionsTitle": "Mistä ostaa",
+        "tipTitle": "Vinkki",
+        "step1": {
+          "title": "Osta auto",
+          "text": "Voita huutokauppa tai osta jälleenmyyjältä. Huutokauppamaksut riippuvat hintaluokasta ja titlestä – laskuri käyttää voimassa olevaa hinnastoa."
+        },
+        "step2": {
+          "title": "Kuljetus vientisatamaan",
+          "text": "Rekka kuljettaa auton varastoalueelta satamaan; ajokelvoton auto vaatii trukin ja vinssin, mikä maksaa lisää."
+        },
+        "step3": {
+          "title": "Merirahti",
+          "text": "Jaettu kontti, oma kontti tai RoRo. Merimatka EU:hun kestää {{min}}–{{max}} päivää, lisäksi lastaus ja laivan odottaminen."
+        },
+        "step4": {
+          "title": "Tullaus EU-satamassa",
+          "text": "Tulliasiamies tekee tulli-ilmoituksen. Maksat tullin ja tuonnin arvonlisäveron sataman sijaintimaassa – ellei yritys käytä tullimenettelyä 4200."
+        },
+        "step5": {
+          "title": "Toimitus osoitteeseesi",
+          "text": "Autonkuljetusajoneuvo, hinausauto tai ajo väliaikaisilla kilvillä – hinnoitellaan kilometreittäin satamasta."
+        },
+        "step6": {
+          "title": "Katsastus ja rekisteröinti",
+          "text": "Katsastus, käännökset ja rekisteröinti asuinmaassasi sekä mahdollinen paikallinen rekisteröinnin yhteydessä maksettava vero."
+        },
+        "cost": {
+          "duty": "Tulli",
+          "dutyValue": "10 % CIF-arvosta (avolava-autot 22 %, moottoripyörät 6–8 %, museoajoneuvot 0 %)",
+          "vat": "Tuonnin arvonlisävero",
+          "vatValue": "{{vat}} % – {{country}}",
+          "vatRange": "17–27 % tullausmaasta riippuen",
+          "registration": "Paikallinen vero rekisteröinnissä",
+          "none": "ei ole",
+          "shipping": "Merimatkan kesto",
+          "shippingValue": "{{min}}–{{max}} päivää",
+          "currency": "Huutokaupan valuutta"
+        },
+        "portsNote": "Tieetäisyys satamasta väestökeskukseen, maa: {{country}}. Laskuri hinnoittelee jokaisen sataman ovelta ovelle juuri sinun osoitteeseesi.",
+        "portsNoteEu": "Laskuri hinnoittelee kaikki EU:n satamat ovelta ovelle juuri sinun osoitteeseesi ja valitsee edullisimman.",
+        "faqPorts": {
+          "q": "Mikä satama on minulle edullisin?",
+          "a": "Se riippuu osoitteestasi, sataman sijaintimaan tuonnin arvonlisäverosta ja laivojen aikataulusta. Laskuri hinnoittelee jokaisen EU-sataman ovelta ovelle ja näyttää ne edullisimmasta alkaen."
+        },
+        "faqBinding": {
+          "q": "Onko laskelma sitova?",
+          "a": "Ei. Se perustuu voimassa oleviin verokantoihin ja hinnastoihin; lopulliset summat määräävät tulli- ja veroviranomaiset. PDF-raportissa luetellaan jokainen verokanta ja oletus, joten voit verrata niitä."
+        }
+      },
+      "USA": {
+        "h1": "Auton tuonti Yhdysvalloista Suomeen",
+        "metaTitle": "Auton tuonti Yhdysvalloista Suomeen – kulut, tulli, ALV | CarImport.eu",
+        "metaDescription": "Näin tuot auton Yhdysvalloista: Copart- ja IAAI-huutokaupat, kuljetusaika, 10 % tulli, tuonnin ALV, asiakirjat ja rekisteröinti. Laske kokonaiskulut minuutissa.",
+        "lead": "Yhdysvallat on tuontiautojen suurin lähde: Copartissa ja IAAI:ssa myydään vuosittain miljoonia ajoneuvoja, usein selvästi Euroopan markkinahintoja halvemmalla. Näin koko prosessi etenee ja tämän se todella maksaa.",
+        "why": "Valtava valikoima, edulliset hinnat vaurioituneille (salvage) autoille, tehokkaat moottorit ja hyvin varustellut versiot, jotka ovat Euroopassa harvinaisia. Haittapuolet: yhdysvaltalaiset valot ja joskus nopeusmittari on muutettava, ja salvage-autojen korjaukset voivat tulla kalliiksi.",
+        "auctions": "Copart ja IAAI (Insurance Auto Auctions) myyvät pääasiassa vakuutusyhtiöiden autoja, joilla on clean- tai salvage-title; Manheim ja jälleenmyyjät myyvät vaurioitumattomia autoja. Huudat yleensä huutokauppalisenssin omaavan välittäjän kautta.",
+        "docs": "Title (clean tai salvage), lasku / bill of sale, konossementti (bill of lading), Yhdysvaltain vienti-ilmoitus (EEI/AES), tulli-ilmoitus EU-satamassa, titlen ja laskun käännökset, katsastustodistus.",
+        "tip": "Tarkista VIN-historia (kolarit, tulvat, mittarilukema) ennen huutamista ja varaa puskuri piilovaurioille – laskuri lisää sen riskiskenaarioksi.",
+        "faq1": {
+          "q": "Kauanko kuljetus Yhdysvalloista kestää?",
+          "a": "Itärannikolta (New Jersey, Savannah) noin {{min}} päivää merellä Pohjanmeren satamiin, Houstonista ja Kaliforniasta jopa {{max}} päivää. Lisää 1–3 viikkoa kuljetukseen satamaan ja laivan odottamiseen."
+        },
+        "faq2": {
+          "q": "Onko salvage-title ongelma EU:ssa?",
+          "a": "Ei – EU:ssa ei käytetä Yhdysvaltain title-merkintöjä. Auton on kuitenkin läpäistävä katsastus korjausten jälkeen, joten budjetoi kunnollinen korjaus ja piilovaurioiden riski."
+        }
+      },
+      "CANADA": {
+        "h1": "Auton tuonti Kanadasta Suomeen",
+        "metaTitle": "Auton tuonti Kanadasta Suomeen – kulut, tulli, ALV | CarImport.eu",
+        "metaDescription": "Auton tuonti Kanadasta: Copart ja IAAI Canada, rahti Halifaxista ja Montrealista, 10 % tulli, ALV, asiakirjat ja rekisteröinti. Kokonaiskulujen laskuri.",
+        "lead": "Kanadalaiset autot muistuttavat yhdysvaltalaisia, mutta ne on usein varusteltu paremmin talveen, niissä on metriset nopeusmittarit ja hinnat Kanadan dollareissa ovat edullisempia. Merimatka Halifaxista ja Montrealista Eurooppaan on Atlantin lyhyimpiä.",
+        "why": "Metriset mittaristot, talvipaketit, lohkolämmittimet ja hyvä ruostesuojaus; hinnat Kanadan dollareissa ovat usein samasta mallista alemmat kuin Yhdysvalloissa.",
+        "auctions": "Copart ja IAAI toimivat myös Kanadassa; vaurioitumattomia autoja voi ostaa jälleenmyyjiltä ja yksityisiltä. Huudot tehdään välittäjän kautta.",
+        "docs": "Rekisteröintitodistus / ownership (tai salvage-title), kauppakirja, konossementti, Kanadan vienti-ilmoitus, tulli-ilmoitus EU:ssa, käännökset, katsastustodistus.",
+        "tip": "Itäiset provinssit (Ontario, Quebec) ovat lähimpänä Montrealin ja Halifaxin satamia – maakuljetus lännestä maksaa huomattavasti enemmän.",
+        "faq1": {
+          "q": "Kauanko kuljetus Kanadasta kestää?",
+          "a": "Halifaxista ja Montrealista noin {{min}}–{{max}} päivää merellä Pohjanmeren satamiin, lisäksi kuljetus satamaan ja laivan odottaminen."
+        },
+        "faq2": {
+          "q": "Pitääkö kanadalaiseen autoon tehdä muutoksia?",
+          "a": "Yleensä vähemmän kuin yhdysvaltalaiseen: nopeusmittari on jo metrinen. Valot (oranssit takavilkut, sivuheijastinvalot) voivat silti vaatia mukauttamista EU:n sääntöihin."
+        }
+      },
+      "JAPAN": {
+        "h1": "Auton tuonti Japanista Suomeen",
+        "metaTitle": "Auton tuonti Japanista Suomeen – JDM, tulli, ALV | CarImport.eu",
+        "metaDescription": "JDM-auton tuonti Japanista: USS-huutokaupat, huutokauppaselosteet, rahti Yokohamasta, tulli, ALV, oikeanpuoleinen ohjaus ja rekisteröinti. Kululaskuri.",
+        "lead": "Japani on JDM-autojen kotimaa: matalat mittarilukemat, erinomainen kunto ja malleja, joita ei ole koskaan myyty Euroopassa. Huutokauppaselosteet kuvaavat jokaisen auton yksityiskohtaisesti – mutta autot ovat oikealta ohjattavia ja matka on pitkä.",
+        "why": "Erittäin hyvä kunto tiukkojen katsastusten (shaken) ansiosta, rehellinen huutokauppaluokitus sekä ainutlaatuiset urheiluautot ja kei-autot. Hinnat jeneinä ovat houkuttelevia.",
+        "auctions": "USS on suurin huutokauppaverkosto; muita ovat TAA, CAA ja JU. Ostat viejän kautta, joka kääntää huutokauppaselosteen ja hoitaa auton poiston rekisteristä vientiä varten.",
+        "docs": "Vientitodistus (rekisteristä poisto), huutokauppaseloste ja lasku, konossementti, tulli-ilmoitus EU:ssa, käännökset, katsastustodistus.",
+        "tip": "Tarkista ennen ostoa, rajoittaako maasi oikealta ohjattavia autoja ja miten katsastus suhtautuu niihin.",
+        "faq1": {
+          "q": "Kauanko kuljetus Japanista kestää?",
+          "a": "Suezin kanavan kautta noin {{min}}–{{max}} päivää merellä EU-satamasta riippuen – Välimeren satamiin pääsee nopeimmin. Lisää aika vientiasiakirjoille."
+        },
+        "faq2": {
+          "q": "Voinko rekisteröidä oikealta ohjattavan auton?",
+          "a": "Useimmissa EU-maissa kyllä, joskus ajovalojen säädön jälkeen. Muutama maa rajoittaa oikealta ohjattavien autojen pysyvää rekisteröintiä – tarkista paikalliset säännöt ennen ostoa."
+        }
+      },
+      "UAE": {
+        "h1": "Auton tuonti Dubaista (Arabiemiirikunnat) Suomeen",
+        "metaTitle": "Auton tuonti Dubaista Suomeen – kulut, tulli, ALV | CarImport.eu",
+        "metaDescription": "Auton tuonti Dubaista ja Arabiemiirikunnista: Emirates Auction ja jälleenmyyjät, GCC-spec, rahti Jebel Alista, tulli, ALV ja rekisteröinti. Kululaskuri.",
+        "lead": "Dubai on premium- ja urheiluautojen markkina, jossa mittarilukemat ovat matalia ja autot usein lähes käyttämättömiä. GCC-mallin autot on rakennettu kuumuuteen ja niitä myydään houkuttelevin hinnoin.",
+        "why": "Luksus- ja urheilumallit, matalat mittarilukemat ja kuiva ilmasto (ei ruostetta). Dirhamin kurssi on sidottu Yhdysvaltain dollariin.",
+        "auctions": "Emirates Auction sekä jälleenmyyjät Dubaissa ja Sharjahissa; paikallinen viejä hoitaa vientitodistuksen ja laivauksen Jebel Alista.",
+        "docs": "Vientitodistus, lasku, konossementti, tulli-ilmoitus EU:ssa, käännökset, katsastustodistus.",
+        "tip": "Kuumuus kuluttaa kumiosia ja sisustaa – pyydä kuvia tiivisteistä, renkaista ja kojelaudasta.",
+        "faq1": {
+          "q": "Kauanko kuljetus Dubaista kestää?",
+          "a": "Jebel Alista Suezin kautta noin {{min}}–{{max}} päivää merellä EU-satamasta riippuen; Välimeren satamat ovat lähimpänä."
+        },
+        "faq2": {
+          "q": "Mikä on GCC-mallin auto?",
+          "a": "Persianlahden markkinoille rakennettu auto: tehokkaampi jäähdytys ja ilmastointi, joskus erilaiset päästölaitteet. Sen voi rekisteröidä EU:ssa katsastuksen jälkeen."
+        }
+      },
+      "UK": {
+        "h1": "Auton tuonti Iso-Britanniasta Suomeen",
+        "metaTitle": "Auton tuonti Iso-Britanniasta Brexitin jälkeen – tulli, ALV | CarImport.eu",
+        "metaDescription": "Auton tuonti Iso-Britanniasta Brexitin jälkeen: tulli ja etuuskohteluun oikeuttava alkuperä, ALV, oikeanpuoleinen ohjaus, lyhyt rahti ja rekisteröinti.",
+        "lead": "Brexitin jälkeen Iso-Britanniasta ostettu auto on tuontia EU:n ulkopuolelta: tulli-ilmoitus, tulli ja tuonnin arvonlisävero tulevat maksettaviksi. Matka on lyhyt, ja Iso-Britanniassa tai EU:ssa valmistetut autot voivat olla oikeutettuja 0 % tulliin.",
+        "why": "Suuret käytettyjen autojen markkinat, hyvät huoltohistoriat ja lyhyt rahti RoRo-aluksella tai lautalla. Oikeanpuoleinen ohjaus on otettava huomioon.",
+        "auctions": "Copart UK, BCA, Manheim UK ja jälleenmyyjät. Kun ostat ALV-rekisteröidyltä jälleenmyyjältä, Iso-Britannian ALV voidaan palauttaa viennin yhteydessä.",
+        "docs": "V5C-rekisteröintitodistus, lasku, vienti-ilmoitus, ilmoitus etuuskohteluun oikeuttavasta alkuperästä (0 % tullia varten), tulli-ilmoitus EU:ssa, käännökset, katsastustodistus.",
+        "tip": "Pyydä myyjältä ilmoitus etuuskohteluun oikeuttavasta alkuperästä – EU:n ja Iso-Britannian kauppasopimuksen nojalla se voi pudottaa tullin nollaan Iso-Britanniassa tai EU:ssa valmistetuilta autoilta.",
+        "faq1": {
+          "q": "Kauanko kuljetus Iso-Britanniasta kestää?",
+          "a": "Vain {{min}}–{{max}} päivää merellä (RoRo tai lautta), lisäksi tullimuodollisuudet molemmin puolin."
+        },
+        "faq2": {
+          "q": "Maksanko tullia Iso-Britanniasta tuodusta autosta?",
+          "a": "Kyllä, 10 % – ellei autolla ole todistettua etuuskohteluun oikeuttavaa alkuperää (valmistettu Iso-Britanniassa tai EU:ssa) EU:n ja Iso-Britannian sopimuksen mukaisesti, jolloin tulli voi olla 0 %. Tuonnin arvonlisävero on aina maksettava."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: auton tuonti EU:n ulkopuolelta",
+      "metaTitle": "{{country}} – auton tuonti: ALV {{vat}} %, rekisteröinti, satamat | CarImport.eu",
+      "metaDescription": "Auton tuonti Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista tai Iso-Britanniasta, kohdemaa {{country}}: ALV {{vat}} %, rekisteröinti, katsastus, satamat ja kulut.",
+      "lead": "Kaikki olennainen, kun rekisteröit tuontiauton – kohdemaa: {{country}}. Verot, viranomaiset, katsastus ja edullisimmat satamat.",
+      "facts": {
+        "title": "Keskeiset tiedot",
+        "vat": "Tuonnin arvonlisävero (yleinen verokanta)",
+        "currency": "Valuutta",
+        "registrationTax": "Kertaluonteinen vero rekisteröinnissä",
+        "noTax": "ei ole",
+        "authority": "Rekisteröintiviranomainen",
+        "inspection": "Katsastus ennen rekisteröintiä",
+        "deadline": "Rekisteröinnin määräaika",
+        "deadlineValue": "{{days}} päivää",
+        "noDeadline": "katso paikalliset säännöt"
+      },
+      "p1": "Tulli on sama kaikissa EU-maissa: henkilöautoilta 10 % CIF-arvosta. Tuonnin arvonlisävero maksetaan siinä maassa, jossa auto tullataan – {{vat}} %, jos tullaat sen täällä.",
+      "p2": "Tullaus toisessa EU-maassa, jossa ALV on alempi, voi tulla edullisemmaksi lisäkuljetuksesta huolimatta – laskuri vertaa kaikkia satamia ovelta ovelle.",
+      "p3": "Paikallisia rekisteröintiveroja ja katsastuksia ei ole yhdenmukaistettu EU:ssa; suunnittele niiden kustannukset ja aikataulu ennen ostoa.",
+      "portsTitle": "Lähimmät tullaussatamat",
+      "portsNote": "Arvioitu tieetäisyys väestökeskukseen, maa: {{country}}.",
+      "originsTitle": "Mistä ostaa",
+      "faq1": {
+        "q": "Paljonko maksan arvonlisäveroa tuontiautosta?",
+        "a": "Jos auto tullataan tässä maassa ({{country}}), {{vat}} % tullausarvosta lisättynä tullilla ja kuljetuskustannuksilla määränpäähän. Jos tullaat muualla EU:ssa, sovelletaan sen maan tuonnin arvonlisäveroa."
+      },
+      "faq2": {
+        "q": "Missä rekisteröin tuontiauton?",
+        "a": "Viranomainen: {{authority}}. Rekisteröinti tehdään katsastuksen ({{inspection}}) jälkeen, ja mukana on oltava käännetyt osto- ja tulliasiakirjat."
+      }
+    },
+    "port": {
+      "h1": "Satama {{port}} ({{country}}): tuontiautojen tullaus",
+      "metaTitle": "{{port}} – auton tuonti, tullaus, ALV {{vat}} % | CarImport.eu",
+      "metaDescription": "Tuontiauton tullaus, satama {{port}} ({{country}}): terminaali- ja tulliasiamiesmaksut, tuonnin ALV {{vat}} %, merimatkat Yhdysvalloista, Japanista ja Arabiemiirikunnista.",
+      "lead": "{{port}} on tullaussatama, maa: {{country}}. Tässä sen maksut, merimatkojen kestot ja tieetäisyydet – ja kannattaako autosi tullata täällä.",
+      "facts": {
+        "title": "Satama lyhyesti",
+        "country": "Maa",
+        "region": "Merialue",
+        "vat": "Tuonnin ALV, kun tullaus tehdään täällä",
+        "unloading": "Terminaalikäsittely ja kontin purku",
+        "agency": "Tulliasiamies",
+        "perCar": "per auto"
+      },
+      "sailingTitle": "Merimatkan kesto, satama {{port}}",
+      "sailingNote": "Jaettu kontti tärkeimmistä vientisatamista; RoRo kestää muutaman päivän pidempään.",
+      "days": "{{min}}–{{max}} päivää",
+      "distancesTitle": "Tieetäisyydet, lähtösatama {{port}}",
+      "alternativesTitle": "Muut lähellä olevat satamat",
+      "p1": "Kun tullaus tehdään satamassa {{port}}, maksat sen maan tuonnin arvonlisäveron ({{country}}, {{vat}} %). Jos rekisteröit auton toisessa EU-maassa, auto toimitetaan sinne maanteitse.",
+      "p2": "Laskuri vertaa satamaa {{port}} kaikkiin muihin EU:n satamiin osoitteesi perusteella ja näyttää edullisimman vaihtoehdon.",
+      "faq1": {
+        "q": "Paljonko auton tullaus maksaa, satama {{port}}?",
+        "a": "Terminaalikäsittely ja kontin purku noin {{unloading}}, tulliasiamies noin {{agency}}, lisäksi tulli ja tuonnin arvonlisävero {{vat}} %."
+      },
+      "faq2": {
+        "q": "Voinko tullata auton täällä ja rekisteröidä sen toisessa EU-maassa?",
+        "a": "Kyllä. Yksityinen ostaja maksaa tuonnin arvonlisäveron täällä; ALV-rekisteröity yritys voi käyttää tullimenettelyä 4200 ja tilittää arvonlisäveron omassa maassaan."
+      }
+    },
+    "cta": {
+      "title": "Laske autosi tarkat kulut",
+      "text": "Syötä vain osoitteesi – ehdotamme loput ja hinnoittelemme jokaisen sataman ovelta ovelle.",
+      "button": "Avaa laskuri"
+    },
+    "related": "Aiheeseen liittyvät oppaat",
+    "disclaimer": "Tiedot ovat suuntaa antavia; lopulliset summat määräävät vero- ja tulliviranomaiset. Verokannat laskurin käyttämien mukaan."
   }
 }
