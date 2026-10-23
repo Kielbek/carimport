@@ -1010,5 +1010,252 @@
     "hint": "Auktionsbeträge (USD, JPY, AED…) rechnen wir zum aktuellen Zentralbankkurs um. Die Währung ändert die Steuerberechnung nicht – die erfolgt immer im Land der Verzollung.",
     "groupEu": "Währungen der EU-Länder",
     "groupOther": "Weitere"
+  },
+  "guide": {
+    "nav": {
+      "title": "Import-Ratgeber",
+      "origins": "Import nach Kaufland",
+      "countries": "Import in EU-Länder",
+      "ports": "Abfertigungshäfen in der EU",
+      "all": "Alle Ratgeber"
+    },
+    "hub": {
+      "origins": {
+        "title": "Ratgeber Autoimport: USA, Kanada, Japan, VAE und Großbritannien",
+        "lead": "Schritt-für-Schritt-Ratgeber für jedes Kaufland: Auktionen, Dokumente, Transportdauer, Zoll, Einfuhrumsatzsteuer und Zulassung in Deutschland – mit den echten Kosten im Rechner.",
+        "metaTitle": "Ratgeber Autoimport – USA, Kanada, Japan, VAE, UK | CarImport.eu",
+        "metaDescription": "Auto aus den USA, Kanada, Japan, den VAE oder UK nach Deutschland importieren: Auktionen, Dokumente, Transport, Zoll, EUSt und Zulassung Schritt für Schritt."
+      },
+      "countries": {
+        "title": "Autoimport in die einzelnen EU-Länder",
+        "lead": "Umsatzsteuersatz, Zulassungssteuer, Zulassungsbehörde, Fahrzeugprüfung und die nächsten Abfertigungshäfen für alle 27 EU-Mitgliedstaaten.",
+        "metaTitle": "Autoimport in EU-Länder – EUSt, Zulassung, Häfen | CarImport.eu",
+        "metaDescription": "Einfuhrumsatzsteuer, Zulassungssteuern, Behörden, Prüfungen und die nächsten Häfen für alle 27 EU-Länder – vergleichen und Importkosten berechnen.",
+        "yours": "Ihr Land"
+      },
+      "ports": {
+        "title": "EU-Abfertigungshäfen für Importautos",
+        "lead": "Alle {{count}} EU-Seehäfen, in denen Autos aus Drittländern verzollt werden: Gebühren, Einfuhrumsatzsteuer, Fahrzeiten aus den USA, Kanada, Japan, den VAE und UK sowie Straßenentfernungen.",
+        "metaTitle": "{{count}} EU-Häfen für Autoimporte – Gebühren, EUSt, Fahrzeit | CarImport.eu",
+        "metaDescription": "Alle {{count}} EU-Abfertigungshäfen für Autos im Vergleich: Terminal- und Zollagenturgebühren, Einfuhrumsatzsteuer, Fahrzeiten und Entfernung nach Deutschland.",
+        "sortedFrom": "Sortiert nach Straßenentfernung zu: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Schritt für Schritt",
+        "costsTitle": "Was Sie bezahlen",
+        "portsTitle": "Nächste Abfertigungshäfen",
+        "docsTitle": "Benötigte Dokumente",
+        "whyTitle": "Warum hier kaufen",
+        "auctionsTitle": "Wo kaufen",
+        "tipTitle": "Tipp",
+        "step1": {
+          "title": "Auto kaufen",
+          "text": "Sie gewinnen die Auktion oder kaufen beim Händler. Die Auktionsgebühren hängen von Preisstufe und Title ab – der Rechner verwendet die aktuelle Gebührentabelle."
+        },
+        "step2": {
+          "title": "Transport zum Exporthafen",
+          "text": "Ein Lkw bringt das Auto vom Auktionsgelände zum Hafen; nicht fahrbereite Fahrzeuge brauchen Gabelstapler und Seilwinde, was extra kostet."
+        },
+        "step3": {
+          "title": "Seefracht",
+          "text": "Sammelcontainer, exklusiver Container oder RoRo. Die Überfahrt in die EU dauert {{min}}–{{max}} Tage, zuzüglich Verladung und Wartezeit auf das Schiff."
+        },
+        "step4": {
+          "title": "Verzollung im EU-Hafen",
+          "text": "Ein Zollagent gibt die Zollanmeldung ab. Zoll und Einfuhrumsatzsteuer zahlen Sie im Land des Hafens – außer ein Unternehmen nutzt das Zollverfahren 4200."
+        },
+        "step5": {
+          "title": "Lieferung an Ihre Adresse",
+          "text": "Autotransporter, Abschleppwagen oder Überführung mit Kurzzeitkennzeichen – berechnet pro Kilometer ab Hafen."
+        },
+        "step6": {
+          "title": "Prüfung und Zulassung",
+          "text": "Technische Prüfung, Übersetzungen und Zulassung in Ihrem Wohnsitzland, zuzüglich einer etwaigen lokalen Zulassungssteuer."
+        },
+        "cost": {
+          "duty": "Zoll",
+          "dutyValue": "10 % des CIF-Werts (Pickups 22 %, Motorräder 6–8 %, Oldtimer 0 %)",
+          "vat": "Einfuhrumsatzsteuer",
+          "vatValue": "{{vat}} % – {{country}}",
+          "vatRange": "17–27 % je nach Land der Verzollung",
+          "registration": "Lokale Steuer bei der Zulassung",
+          "none": "keine",
+          "shipping": "Fahrzeit",
+          "shippingValue": "{{min}}–{{max}} Tage",
+          "currency": "Auktionswährung"
+        },
+        "portsNote": "Straßenentfernung vom Hafen ins Bevölkerungszentrum – Land: {{country}}. Der Rechner kalkuliert jeden Hafen von Tür zu Tür für Ihre genaue Adresse.",
+        "portsNoteEu": "Der Rechner kalkuliert alle EU-Häfen von Tür zu Tür für Ihre genaue Adresse und wählt den günstigsten.",
+        "faqPorts": {
+          "q": "Welcher Hafen ist für mich am günstigsten?",
+          "a": "Das hängt von Ihrer Adresse, der Einfuhrumsatzsteuer im Land des Hafens und dem Fahrplan ab. Der Rechner kalkuliert jeden EU-Hafen von Tür zu Tür und zeigt sie vom günstigsten an."
+        },
+        "faqBinding": {
+          "q": "Ist die Kalkulation verbindlich?",
+          "a": "Nein. Sie basiert auf aktuellen Sätzen und Preislisten; die endgültigen Beträge legen Zoll- und Steuerbehörden fest. Der PDF-Bericht listet jeden Satz und jede Annahme auf, damit Sie vergleichen können."
+        }
+      },
+      "USA": {
+        "h1": "Auto aus den USA nach Deutschland importieren",
+        "metaTitle": "Auto aus den USA nach Deutschland – Kosten, Zoll, EUSt | CarImport.eu",
+        "metaDescription": "Auto aus den USA nach Deutschland importieren: Copart und IAAI, Transportdauer, 10 % Zoll, Einfuhrumsatzsteuer, Dokumente, Zulassung. Gesamtkosten in 1 Minute.",
+        "lead": "Die USA sind die größte Quelle für Importautos: Millionen Fahrzeuge jährlich bei Copart und IAAI, oft deutlich günstiger als auf dem europäischen Markt. So läuft der gesamte Prozess ab – und das kostet er wirklich.",
+        "why": "Riesige Auswahl, niedrige Preise für Unfallwagen (Salvage), starke Motoren und gut ausgestattete Versionen, die in Europa selten sind. Der Haken: Die US-Beleuchtung und manchmal der Tacho müssen umgerüstet werden, und die Reparatur von Salvage-Fahrzeugen kann teuer werden.",
+        "auctions": "Copart und IAAI (Insurance Auto Auctions) verkaufen vor allem Versicherungsfahrzeuge mit Clean oder Salvage Title; Manheim und Händler verkaufen unbeschädigte Autos. Geboten wird meist über einen Broker mit Auktionslizenz.",
+        "docs": "Title (Clean oder Salvage), Rechnung / Bill of Sale, Konnossement (Bill of Lading), US-Ausfuhranmeldung (EEI/AES), Zollanmeldung im EU-Hafen, Übersetzungen von Title und Rechnung, Prüfbescheinigung.",
+        "tip": "Prüfen Sie vor dem Bieten die VIN-Historie (Unfälle, Flut, Kilometerstand) und planen Sie einen Puffer für versteckte Schäden ein – der Rechner berücksichtigt ihn als Risikoszenario.",
+        "faq1": {
+          "q": "Wie lange dauert der Transport aus den USA?",
+          "a": "Von der Ostküste (New Jersey, Savannah) etwa {{min}} Tage auf See bis zu den Nordseehäfen, von Houston und Kalifornien bis zu {{max}} Tage. Hinzu kommen 1–3 Wochen für den Transport zum Hafen und die Wartezeit auf das Schiff."
+        },
+        "faq2": {
+          "q": "Ist ein Salvage Title in der EU ein Problem?",
+          "a": "Nein – die EU kennt keine US-Title-Kennzeichnungen. Das Auto muss nach der Reparatur jedoch die technische Prüfung bestehen; planen Sie also eine ordentliche Reparatur und das Risiko versteckter Schäden ein."
+        }
+      },
+      "CANADA": {
+        "h1": "Auto aus Kanada nach Deutschland importieren",
+        "metaTitle": "Auto aus Kanada nach Deutschland – Kosten, Zoll, EUSt | CarImport.eu",
+        "metaDescription": "Auto aus Kanada nach Deutschland: Copart und IAAI Canada, Verschiffung ab Halifax und Montreal, 10 % Zoll, EUSt, Dokumente, Zulassung. Gesamtkostenrechner.",
+        "lead": "Kanadische Autos ähneln US-Fahrzeugen, sind aber oft besser für den Winter gerüstet, haben metrische Tachos und sind in kanadischen Dollar günstiger. Die Verschiffung ab Halifax und Montreal nach Europa gehört zu den kürzesten Atlantikrouten.",
+        "why": "Metrische Kombiinstrumente, Winterpakete, Motorvorwärmer und guter Rostschutz; die Preise in CAD liegen für dasselbe Modell oft unter denen in den USA.",
+        "auctions": "Copart und IAAI sind auch in Kanada aktiv; für unbeschädigte Autos kommen Händler- und Privatverkäufe infrage. Geboten wird über einen Broker.",
+        "docs": "Registration / Ownership (oder Salvage Title), Kaufvertrag, Konnossement, kanadische Ausfuhranmeldung, EU-Zollanmeldung, Übersetzungen, Prüfbescheinigung.",
+        "tip": "Die östlichen Provinzen (Ontario, Quebec) liegen am nächsten an den Häfen Montreal und Halifax – der Landtransport aus dem Westen kostet deutlich mehr.",
+        "faq1": {
+          "q": "Wie lange dauert der Transport aus Kanada?",
+          "a": "Ab Halifax und Montreal etwa {{min}}–{{max}} Tage auf See bis zu den Nordseehäfen, zuzüglich Transport zum Hafen und Wartezeit auf das Schiff."
+        },
+        "faq2": {
+          "q": "Muss ein kanadisches Auto umgerüstet werden?",
+          "a": "Meist weniger als ein US-Auto: Der Tacho ist bereits metrisch. Die Beleuchtung (gelbe hintere Blinker, Seitenmarkierungsleuchten) muss eventuell noch an die EU-Vorschriften angepasst werden."
+        }
+      },
+      "JAPAN": {
+        "h1": "Auto aus Japan nach Deutschland importieren",
+        "metaTitle": "JDM-Auto aus Japan nach Deutschland – Kosten, Zoll, EUSt | CarImport.eu",
+        "metaDescription": "JDM-Auto aus Japan nach Deutschland: USS-Auktionen, Auction Sheets, Verschiffung ab Yokohama, Zoll, EUSt, Rechtslenker und Zulassung. Gesamtkostenrechner.",
+        "lead": "Japan ist die Heimat der JDM-Autos: geringe Laufleistung, hervorragender Zustand und Modelle, die in Europa nie verkauft wurden. Auction Sheets beschreiben jedes Auto im Detail – allerdings sind es Rechtslenker und der Weg ist lang.",
+        "why": "Sehr guter Zustand dank strenger Prüfungen (Shaken), ehrliche Auktionsbewertungen und einzigartige Sportwagen und Kei-Cars. Die Preise in Yen sind attraktiv.",
+        "auctions": "USS ist das größte Auktionsnetz; weitere sind TAA, CAA und JU. Sie kaufen über einen Exporteur, der das Auction Sheet übersetzt und die Abmeldung für den Export erledigt.",
+        "docs": "Exportzertifikat (Abmeldung), Auction Sheet und Rechnung, Konnossement, EU-Zollanmeldung, Übersetzungen, Prüfbescheinigung.",
+        "tip": "Prüfen Sie vor dem Kauf, ob Ihr Land Rechtslenker einschränkt und wie die Prüfung mit ihnen umgeht.",
+        "faq1": {
+          "q": "Wie lange dauert der Transport aus Japan?",
+          "a": "Über den Suezkanal etwa {{min}}–{{max}} Tage auf See, je nach EU-Hafen – Mittelmeerhäfen sind am schnellsten. Hinzu kommt die Zeit für die Exportdokumente."
+        },
+        "faq2": {
+          "q": "Kann ich einen Rechtslenker zulassen?",
+          "a": "In den meisten EU-Ländern ja, teils mit Anpassung der Scheinwerfer. Einige Länder beschränken Rechtslenker bei der dauerhaften Zulassung – prüfen Sie vor dem Kauf die örtlichen Vorschriften."
+        }
+      },
+      "UAE": {
+        "h1": "Auto aus Dubai (VAE) nach Deutschland importieren",
+        "metaTitle": "Auto aus Dubai (VAE) nach Deutschland – Kosten, Zoll, EUSt | CarImport.eu",
+        "metaDescription": "Auto aus Dubai und den VAE nach Deutschland: Emirates Auction und Händler, GCC-Spezifikation, Verschiffung ab Jebel Ali, Zoll, EUSt, Zulassung. Kostenrechner.",
+        "lead": "Dubai ist ein Markt für Premium- und Sportwagen mit geringer Laufleistung, oft kaum gefahren. Autos in GCC-Spezifikation sind für Hitze gebaut und werden zu attraktiven Preisen verkauft.",
+        "why": "Luxus- und Sportmodelle, geringe Laufleistung und trockenes Klima (kein Rost). Der Dirham ist an den US-Dollar gekoppelt.",
+        "auctions": "Emirates Auction sowie Händler in Dubai und Sharjah; ein lokaler Exporteur kümmert sich um das Exportzertifikat und die Verschiffung ab Jebel Ali.",
+        "docs": "Exportzertifikat, Rechnung, Konnossement, EU-Zollanmeldung, Übersetzungen, Prüfbescheinigung.",
+        "tip": "Hitze setzt Gummiteilen und Innenraum zu – lassen Sie sich Fotos von Dichtungen, Reifen und Armaturenbrett schicken.",
+        "faq1": {
+          "q": "Wie lange dauert der Transport aus Dubai?",
+          "a": "Ab Jebel Ali durch den Suezkanal etwa {{min}}–{{max}} Tage auf See, je nach EU-Hafen; Mittelmeerhäfen liegen am nächsten."
+        },
+        "faq2": {
+          "q": "Was ist ein Auto in GCC-Spezifikation?",
+          "a": "Ein Auto für den Golfmarkt: stärkere Kühlung und Klimaanlage, teils andere Abgastechnik. Es kann nach der technischen Prüfung in der EU zugelassen werden."
+        }
+      },
+      "UK": {
+        "h1": "Auto aus Großbritannien nach Deutschland importieren",
+        "metaTitle": "Auto aus UK nach Deutschland – Brexit, Kosten, Zoll, EUSt | CarImport.eu",
+        "metaDescription": "Auto aus Großbritannien nach dem Brexit importieren: Zoll und Präferenzursprung, EUSt, Rechtslenker, kurzer Transport und Zulassung in Deutschland.",
+        "lead": "Seit dem Brexit ist ein Auto aus dem Vereinigten Königreich ein Import aus einem Drittland: Zollanmeldung, Zoll und Einfuhrumsatzsteuer fallen an. Der Weg ist kurz, und für in UK oder der EU hergestellte Autos kann 0 % Zoll gelten.",
+        "why": "Großer Gebrauchtwagenmarkt, gute Servicehistorien und kurzer Transport per RoRo oder Fähre. Das Rechtslenkerthema sollte bedacht werden.",
+        "auctions": "Copart UK, BCA, Manheim UK und Händler. Beim Kauf von einem umsatzsteuerregistrierten Händler kann die britische VAT bei der Ausfuhr erstattet werden.",
+        "docs": "V5C-Fahrzeugbrief, Rechnung, Ausfuhranmeldung, Erklärung zum Präferenzursprung (für 0 % Zoll), EU-Zollanmeldung, Übersetzungen, Prüfbescheinigung.",
+        "tip": "Bitten Sie den Verkäufer um eine Erklärung zum Präferenzursprung – nach dem Handelsabkommen EU–UK kann sie den Zoll für in UK oder der EU hergestellte Autos auf null senken.",
+        "faq1": {
+          "q": "Wie lange dauert der Transport aus Großbritannien?",
+          "a": "Nur {{min}}–{{max}} Tage auf dem Seeweg (RoRo oder Fähre), zuzüglich der Zollformalitäten auf beiden Seiten."
+        },
+        "faq2": {
+          "q": "Zahle ich Zoll auf ein Auto aus Großbritannien?",
+          "a": "Ja, 10 % – außer das Auto hat einen nachgewiesenen Präferenzursprung (hergestellt in UK oder der EU) nach dem Abkommen EU–UK; dann kann der Zoll 0 % betragen. Einfuhrumsatzsteuer fällt immer an."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: Auto aus Drittländern importieren",
+      "metaTitle": "{{country}} – Autoimport: EUSt {{vat}} %, Zulassung, Häfen | CarImport.eu",
+      "metaDescription": "Autoimport aus USA, Kanada, Japan, VAE oder UK – Zielland: {{country}}. Einfuhrumsatzsteuer {{vat}} %, Zulassung, Prüfung, nächste Häfen und Gesamtkosten.",
+      "lead": "Alles, was bei der Zulassung eines Importautos zählt – Land: {{country}}. Steuern, Behörden, Prüfung und die günstigsten Häfen.",
+      "facts": {
+        "title": "Die wichtigsten Fakten",
+        "vat": "Einfuhrumsatzsteuer (Regelsatz)",
+        "currency": "Währung",
+        "registrationTax": "Einmalige Steuer bei der Zulassung",
+        "noTax": "keine",
+        "authority": "Zulassungsbehörde",
+        "inspection": "Prüfung vor der Zulassung",
+        "deadline": "Frist für die Zulassung",
+        "deadlineValue": "{{days}} Tage",
+        "noDeadline": "siehe lokale Vorschriften"
+      },
+      "p1": "Der Zoll ist in jedem EU-Land gleich: 10 % des CIF-Werts für Pkw. Die Einfuhrumsatzsteuer wird im Land der Verzollung gezahlt – {{vat}} %, wenn Sie das Auto hier verzollen.",
+      "p2": "Die Verzollung in einem anderen EU-Land mit niedrigerer Umsatzsteuer kann trotz zusätzlichem Transport günstiger sein – der Rechner vergleicht alle Häfen von Tür zu Tür.",
+      "p3": "Lokale Zulassungssteuern und Prüfungen sind in der EU nicht harmonisiert; planen Sie Kosten und Zeit dafür vor dem Kauf ein.",
+      "portsTitle": "Nächste Abfertigungshäfen",
+      "portsNote": "Geschätzte Straßenentfernung zum Bevölkerungszentrum – Land: {{country}}.",
+      "originsTitle": "Wo kaufen",
+      "faq1": {
+        "q": "Wie viel Einfuhrumsatzsteuer zahle ich auf ein Importauto?",
+        "a": "Bei Verzollung im Land {{country}} {{vat}} % auf den Zollwert zuzüglich Zoll und Transportkosten bis zum Bestimmungsort. Bei Verzollung in einem anderen EU-Land gilt dessen Einfuhrumsatzsteuer."
+      },
+      "faq2": {
+        "q": "Wo lasse ich ein Importauto zu?",
+        "a": "Bei der zuständigen Behörde ({{authority}}) nach der Prüfung ({{inspection}}) und mit übersetzten Kauf- und Zolldokumenten."
+      }
+    },
+    "port": {
+      "h1": "Hafen {{port}} ({{country}}): Verzollung von Importautos",
+      "metaTitle": "{{port}} – Autoimport, Verzollung, EUSt {{vat}} % | CarImport.eu",
+      "metaDescription": "Importauto im Hafen {{port}} ({{country}}) verzollen: Terminal- und Agenturgebühren, EUSt {{vat}} %, Fahrzeiten aus USA, Japan und VAE, Entfernungen.",
+      "lead": "{{port}} ist ein Abfertigungshafen – Land: {{country}}. Hier finden Sie Gebühren, Fahrzeiten und Straßenentfernungen – und ob sich die Verzollung Ihres Autos hier lohnt.",
+      "facts": {
+        "title": "Der Hafen auf einen Blick",
+        "country": "Land",
+        "region": "Seegebiet",
+        "vat": "Einfuhrumsatzsteuer bei Verzollung hier",
+        "unloading": "Terminalumschlag und Entladung",
+        "agency": "Zollagent",
+        "perCar": "pro Auto"
+      },
+      "sailingTitle": "Fahrzeit zum Hafen {{port}}",
+      "sailingNote": "Sammelcontainer ab den wichtigsten Exporthäfen; RoRo dauert einige Tage länger.",
+      "days": "{{min}}–{{max}} Tage",
+      "distancesTitle": "Straßenentfernung ab Hafen {{port}}",
+      "alternativesTitle": "Weitere Häfen in der Nähe",
+      "p1": "Verzollung im Hafen {{port}} bedeutet Einfuhrumsatzsteuer des Hafenlandes ({{country}}, {{vat}} %). Wenn Sie das Auto in einem anderen EU-Land zulassen, wird es anschließend auf der Straße geliefert.",
+      "p2": "Der Rechner vergleicht {{port}} mit allen anderen EU-Häfen für Ihre Adresse und zeigt die günstigste Option.",
+      "faq1": {
+        "q": "Was kostet die Verzollung eines Autos im Hafen {{port}}?",
+        "a": "Terminalumschlag und Entladung etwa {{unloading}}, Zollagent etwa {{agency}}, dazu Zoll und Einfuhrumsatzsteuer von {{vat}} %."
+      },
+      "faq2": {
+        "q": "Kann ich ein Auto hier verzollen und in einem anderen EU-Land zulassen?",
+        "a": "Ja. Ein Privatkäufer zahlt die Einfuhrumsatzsteuer hier; ein umsatzsteuerlich registriertes Unternehmen kann das Zollverfahren 4200 nutzen und die Umsatzsteuer im eigenen Land abrechnen."
+      }
+    },
+    "cta": {
+      "title": "Berechnen Sie die genauen Kosten für Ihr Auto",
+      "text": "Geben Sie nur Ihre Adresse ein – den Rest schlagen wir vor und kalkulieren jeden Hafen von Tür zu Tür.",
+      "button": "Zum Rechner"
+    },
+    "related": "Verwandte Ratgeber",
+    "disclaimer": "Informationen nur zur Orientierung; die endgültigen Beträge legen Steuer- und Zollbehörden fest. Sätze wie im Rechner verwendet."
   }
 }

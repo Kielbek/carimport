@@ -1010,5 +1010,252 @@
     "hint": "Aukční částky (USD, JPY, AED…) přepočítáváme aktuálním kurzem centrální banky. Měna nemění výpočet daní – daně vždy vyměřuje země proclení.",
     "groupEu": "Měny EU",
     "groupOther": "Ostatní"
+  },
+  "guide": {
+    "nav": {
+      "title": "Průvodci dovozem",
+      "origins": "Dovoz podle země nákupu",
+      "countries": "Dovoz do zemí EU",
+      "ports": "Přístavy proclení v EU",
+      "all": "Všichni průvodci"
+    },
+    "hub": {
+      "origins": {
+        "title": "Průvodci dovozem auta: USA, Kanada, Japonsko, SAE a Velká Británie",
+        "lead": "Postup krok za krokem pro každou zemi, kde můžete auto koupit: aukce, doklady, doba přepravy, clo, DPH a registrace v Česku – se skutečnými náklady v kalkulačce.",
+        "metaTitle": "Průvodci dovozem auta – USA, Kanada, Japonsko, SAE, UK | CarImport.eu",
+        "metaDescription": "Jak dovézt auto z USA, Kanady, Japonska, SAE nebo Velké Británie do Česka: aukce, doklady, přeprava, clo, DPH a registrace krok za krokem."
+      },
+      "countries": {
+        "title": "Dovoz auta do jednotlivých zemí EU",
+        "lead": "Sazba DPH, registrační daň, registrační úřad, technická kontrola a nejbližší přístavy proclení pro všech 27 členských států EU.",
+        "metaTitle": "Dovoz auta do zemí EU – DPH, registrace, přístavy | CarImport.eu",
+        "metaDescription": "Dovozní DPH, registrační daně, úřady, technické kontroly a nejbližší přístavy pro všech 27 zemí EU – porovnejte a spočítejte celkovou cenu dovezeného auta.",
+        "yours": "Vaše země"
+      },
+      "ports": {
+        "title": "Přístavy proclení v EU pro dovážená auta",
+        "lead": "Všechny námořní přístavy EU ({{count}}), kde se proclívají auta ze zemí mimo EU: poplatky, DPH, doba plavby z USA, Kanady, Japonska, SAE a UK a silniční vzdálenosti.",
+        "metaTitle": "Přístavy EU pro dovoz aut ({{count}}) – poplatky, DPH, plavba | CarImport.eu",
+        "metaDescription": "Porovnejte všechny přístavy proclení aut v EU ({{count}}): poplatky terminálu a celního zástupce, dovozní DPH, doba plavby a silniční vzdálenost do Česka.",
+        "sortedFrom": "Seřazeno podle silniční vzdálenosti do: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Krok za krokem",
+        "costsTitle": "Co zaplatíte",
+        "portsTitle": "Nejbližší přístavy proclení",
+        "docsTitle": "Potřebné doklady",
+        "whyTitle": "Proč nakupovat zde",
+        "auctionsTitle": "Kde koupit",
+        "tipTitle": "Tip",
+        "step1": {
+          "title": "Koupě auta",
+          "text": "Vyhrajte aukci nebo kupte auto od prodejce. Aukční poplatky závisí na cenovém pásmu a typu titulu – kalkulačka používá aktuální sazebník."
+        },
+        "step2": {
+          "title": "Přeprava do exportního přístavu",
+          "text": "Kamion odveze auto z aukčního areálu do přístavu; nepojízdná auta potřebují vysokozdvižný vozík a navijáky, což stojí navíc."
+        },
+        "step3": {
+          "title": "Námořní přeprava",
+          "text": "Sdílený kontejner, samostatný kontejner nebo RoRo. Plavba do EU trvá {{min}}–{{max}} dní, plus nakládka a čekání na loď."
+        },
+        "step4": {
+          "title": "Proclení v přístavu EU",
+          "text": "Celní zástupce podá celní prohlášení. Clo a dovozní DPH zaplatíte v zemi přístavu – pokud firma nevyužije celní režim 4200."
+        },
+        "step5": {
+          "title": "Doručení na vaši adresu",
+          "text": "Autotransportér, odtahovka nebo jízda na převozní značky – cena za kilometr od přístavu."
+        },
+        "step6": {
+          "title": "Technická kontrola a registrace",
+          "text": "Technická kontrola, překlady a registrace v zemi, kde žijete, plus případná místní registrační daň."
+        },
+        "cost": {
+          "duty": "Clo",
+          "dutyValue": "10 % z hodnoty CIF (pick-upy 22 %, motocykly 6–8 %, historická vozidla 0 %)",
+          "vat": "Dovozní DPH",
+          "vatValue": "{{vat}} % – {{country}}",
+          "vatRange": "17–27 % podle země proclení",
+          "registration": "Místní daň při registraci",
+          "none": "žádná",
+          "shipping": "Doba plavby",
+          "shippingValue": "{{min}}–{{max}} dní",
+          "currency": "Měna aukce"
+        },
+        "portsNote": "Silniční vzdálenost z přístavu do cílové země ({{country}}, populační těžiště). Kalkulačka ocení každý přístav od dveří ke dveřím pro vaši přesnou adresu.",
+        "portsNoteEu": "Kalkulačka ocení všechny přístavy EU od dveří ke dveřím pro vaši přesnou adresu a vybere ten nejlevnější.",
+        "faqPorts": {
+          "q": "Který přístav je pro mě nejlevnější?",
+          "a": "Záleží na vaší adrese, dovozní DPH v zemi přístavu a jízdním řádu lodí. Kalkulačka ocení každý přístav EU od dveří ke dveřím a seřadí je od nejlevnějšího."
+        },
+        "faqBinding": {
+          "q": "Je odhad závazný?",
+          "a": "Ne. Vychází z aktuálních sazeb a ceníků; konečné částky určují celní a finanční úřady. PDF zpráva uvádí všechny sazby a předpoklady, abyste je mohli porovnat."
+        }
+      },
+      "USA": {
+        "h1": "Dovoz auta z USA do Česka",
+        "metaTitle": "Dovoz auta z USA do Česka – náklady, clo, DPH | CarImport.eu",
+        "metaDescription": "Jak dovézt auto z USA do Česka: aukce Copart a IAAI, doba přepravy, 10% clo, dovozní DPH, doklady a registrace. Spočítejte celkovou cenu za minutu.",
+        "lead": "USA jsou největším zdrojem dovážených aut: miliony vozidel ročně na Copart a IAAI, často za ceny hluboko pod evropským trhem. Podívejte se, jak celý proces vypadá a kolik skutečně stojí.",
+        "why": "Obrovský výběr, nízké ceny poškozených (salvage) aut, silné motory a bohatě vybavené verze, které jsou v Evropě vzácné. Háček: americká světla a někdy i tachometr je nutné přestavět a oprava havarovaných aut může být drahá.",
+        "auctions": "Copart a IAAI (Insurance Auto Auctions) prodávají hlavně auta od pojišťoven s titulem clean nebo salvage; Manheim a prodejci nabízejí nepoškozená auta. Obvykle přihazujete přes brokera s aukční licencí.",
+        "docs": "Titul (clean nebo salvage), faktura / bill of sale, konosament, americké vývozní prohlášení (EEI/AES), celní prohlášení v přístavu EU, překlady titulu a faktury, protokol o technické kontrole.",
+        "tip": "Před přihozením si ověřte historii VIN (nehody, záplavy, nájezd) a počítejte s rezervou na skryté vady – kalkulačka ji přidává jako rizikový scénář.",
+        "faq1": {
+          "q": "Jak dlouho trvá přeprava z USA?",
+          "a": "Z východního pobřeží (New Jersey, Savannah) asi {{min}} dní plavby do přístavů Severního moře, z Houstonu a Kalifornie až {{max}} dní. Připočtěte 1–3 týdny na dopravu do přístavu a čekání na loď."
+        },
+        "faq2": {
+          "q": "Je titul salvage v EU problém?",
+          "a": "Ne – EU americká označení titulů nepoužívá. Auto však musí po opravě projít technickou kontrolou, proto počítejte s kvalitní opravou a rizikem skrytých vad."
+        }
+      },
+      "CANADA": {
+        "h1": "Dovoz auta z Kanady do Česka",
+        "metaTitle": "Dovoz auta z Kanady do Česka – náklady, clo, DPH | CarImport.eu",
+        "metaDescription": "Dovoz auta z Kanady do Česka: Copart a IAAI Canada, přeprava z Halifaxu a Montrealu, 10% clo, DPH, doklady a registrace. Kalkulačka celkových nákladů.",
+        "lead": "Kanadská auta se podobají americkým, ale bývají lépe připravena na zimu, mají metrické tachometry a nižší ceny v kanadských dolarech. Plavba z Halifaxu a Montrealu do Evropy patří k nejkratším přes Atlantik.",
+        "why": "Metrické přístroje, zimní pakety, předehřev motoru a dobrá ochrana proti korozi; ceny v CAD bývají u stejného modelu nižší než v USA.",
+        "auctions": "Copart a IAAI působí i v Kanadě; pro nepoškozená auta připadá v úvahu nákup od prodejce nebo soukromé osoby. Přihazuje se přes brokera.",
+        "docs": "Registrace / doklad o vlastnictví (nebo titul salvage), kupní smlouva, konosament, kanadské vývozní prohlášení, celní prohlášení v EU, překlady, protokol o technické kontrole.",
+        "tip": "Východní provincie (Ontario, Québec) jsou nejblíže přístavům Montreal a Halifax – vnitrozemská přeprava ze západu stojí mnohem více.",
+        "faq1": {
+          "q": "Jak dlouho trvá přeprava z Kanady?",
+          "a": "Z Halifaxu a Montrealu asi {{min}}–{{max}} dní plavby do přístavů Severního moře, plus doprava do přístavu a čekání na loď."
+        },
+        "faq2": {
+          "q": "Potřebuje kanadské auto přestavbu?",
+          "a": "Obvykle menší než americké: tachometr je už metrický. Osvětlení (oranžové zadní blinkry, boční obrysová světla) může být stále nutné přizpůsobit předpisům EU."
+        }
+      },
+      "JAPAN": {
+        "h1": "Dovoz auta z Japonska do Česka",
+        "metaTitle": "Dovoz auta z Japonska do Česka – JDM, clo, DPH | CarImport.eu",
+        "metaDescription": "Dovoz JDM auta z Japonska do Česka: aukce USS, aukční listy, přeprava z Jokohamy, clo, DPH, pravostranné řízení a registrace. Kalkulačka celkových nákladů.",
+        "lead": "Japonsko je domovem JDM aut: nízký nájezd, výborný stav a modely, které se v Evropě nikdy neprodávaly. Aukční listy popisují každé auto do detailu – auta však mají řízení vpravo a cesta je dlouhá.",
+        "why": "Velmi dobrý stav díky přísným kontrolám (shaken), poctivé aukční hodnocení a jedinečné sportovní a kei vozy. Ceny v jenech jsou atraktivní.",
+        "auctions": "USS je největší aukční síť; dalšími jsou TAA, CAA a JU. Nakupujete přes exportéra, který přeloží aukční list a zajistí vývozní odhlášení vozidla.",
+        "docs": "Vývozní certifikát (odhlášení), aukční list a faktura, konosament, celní prohlášení v EU, překlady, protokol o technické kontrole.",
+        "tip": "Před nákupem si ověřte, zda vaše země neomezuje auta s pravostranným řízením a jak k nim přistupuje technická kontrola.",
+        "faq1": {
+          "q": "Jak dlouho trvá přeprava z Japonska?",
+          "a": "Přes Suezský průplav asi {{min}}–{{max}} dní plavby podle přístavu EU – nejrychlejší jsou středomořské přístavy. Připočtěte čas na vývozní doklady."
+        },
+        "faq2": {
+          "q": "Mohu zaregistrovat auto s řízením vpravo?",
+          "a": "Ve většině zemí EU ano, někdy s úpravou světlometů. Několik zemí omezuje trvalou registraci aut s pravostranným řízením – před nákupem si ověřte místní pravidla."
+        }
+      },
+      "UAE": {
+        "h1": "Dovoz auta z Dubaje (SAE) do Česka",
+        "metaTitle": "Dovoz auta z Dubaje (SAE) do Česka – náklady, clo, DPH | CarImport.eu",
+        "metaDescription": "Dovoz auta z Dubaje a SAE do Česka: Emirates Auction a prodejci, specifikace GCC, přeprava z Jebel Ali, clo, DPH a registrace. Kalkulačka nákladů.",
+        "lead": "Dubaj je trhem prémiových a sportovních aut s nízkým nájezdem, často téměř nepoužívaných. Auta ve specifikaci GCC jsou stavěná do horka a prodávají se za atraktivní ceny.",
+        "why": "Luxusní a sportovní modely, nízký nájezd a suché klima (žádná koroze). Ceny v dirhamech jsou navázané na americký dolar.",
+        "auctions": "Emirates Auction a prodejci v Dubaji a Šardžá; místní exportér zajistí vývozní certifikát a přepravu z Jebel Ali.",
+        "docs": "Vývozní certifikát, faktura, konosament, celní prohlášení v EU, překlady, protokol o technické kontrole.",
+        "tip": "Horko opotřebovává pryžové díly a interiér – vyžádejte si fotky těsnění, pneumatik a palubní desky.",
+        "faq1": {
+          "q": "Jak dlouho trvá přeprava z Dubaje?",
+          "a": "Z Jebel Ali přes Suez asi {{min}}–{{max}} dní plavby podle přístavu EU; nejblíže jsou středomořské přístavy."
+        },
+        "faq2": {
+          "q": "Co je auto ve specifikaci GCC?",
+          "a": "Auto vyrobené pro trh Perského zálivu: výkonnější chlazení a klimatizace, někdy odlišná emisní výbava. V EU ho lze zaregistrovat po technické kontrole."
+        }
+      },
+      "UK": {
+        "h1": "Dovoz auta z Velké Británie do Česka",
+        "metaTitle": "Dovoz auta z UK do Česka po brexitu – clo, DPH | CarImport.eu",
+        "metaDescription": "Dovoz auta z Velké Británie do Česka po brexitu: clo a preferenční původ, DPH, řízení vpravo, krátká přeprava a registrace. Kalkulačka celkových nákladů.",
+        "lead": "Od brexitu je auto ze Spojeného království dovozem ze země mimo EU: platí celní prohlášení, clo a dovozní DPH. Cesta je krátká a auta vyrobená v UK nebo EU mohou mít nárok na nulové clo.",
+        "why": "Velký trh ojetých aut, dobře doložená servisní historie a krátká přeprava lodí RoRo nebo trajektem. Je třeba počítat s řízením vpravo.",
+        "auctions": "Copart UK, BCA, Manheim UK a prodejci. Při nákupu od plátce DPH lze britskou DPH při vývozu získat zpět.",
+        "docs": "Technický průkaz V5C, faktura, vývozní prohlášení, prohlášení o preferenčním původu (pro nulové clo), celní prohlášení v EU, překlady, protokol o technické kontrole.",
+        "tip": "Požádejte prodejce o prohlášení o preferenčním původu – podle obchodní dohody EU–UK může u aut vyrobených v UK nebo EU snížit clo na nulu.",
+        "faq1": {
+          "q": "Jak dlouho trvá přeprava z Velké Británie?",
+          "a": "Jen {{min}}–{{max}} dní po moři (RoRo nebo trajekt), plus celní formality na obou stranách."
+        },
+        "faq2": {
+          "q": "Platím clo za auto z Velké Británie?",
+          "a": "Ano, 10 % – pokud auto nemá prokázaný preferenční původ (vyrobeno v UK nebo EU) podle dohody EU–UK; v tom případě může být clo 0 %. Dovozní DPH se platí vždy."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: dovoz auta ze zemí mimo EU",
+      "metaTitle": "{{country}} – dovoz auta: DPH {{vat}} %, registrace, přístavy | CarImport.eu",
+      "metaDescription": "{{country}} – dovoz auta z USA, Kanady, Japonska, SAE nebo UK: dovozní DPH {{vat}} %, registrace, technická kontrola, nejbližší přístavy a celkové náklady.",
+      "lead": "Vše důležité pro registraci dovezeného auta (země: {{country}}): daně, úřady, technická kontrola a nejlevnější přístavy.",
+      "facts": {
+        "title": "Klíčové údaje",
+        "vat": "Dovozní DPH (základní sazba)",
+        "currency": "Měna",
+        "registrationTax": "Jednorázová daň při registraci",
+        "noTax": "žádná",
+        "authority": "Registrační úřad",
+        "inspection": "Kontrola před registrací",
+        "deadline": "Lhůta pro registraci",
+        "deadlineValue": "{{days}} dní",
+        "noDeadline": "viz místní předpisy"
+      },
+      "p1": "Clo je ve všech zemích EU stejné: 10 % z hodnoty CIF u osobních aut. Dovozní DPH se platí v zemi, kde je auto proclené – {{vat}} %, pokud ho proclíte zde.",
+      "p2": "Proclení v jiné zemi EU s nižší DPH může vyjít levněji i přes delší dopravu – kalkulačka porovná všechny přístavy od dveří ke dveřím.",
+      "p3": "Místní registrační daně a technické kontroly nejsou v EU harmonizované; jejich cenu a čas si naplánujte ještě před nákupem.",
+      "portsTitle": "Nejbližší přístavy proclení",
+      "portsNote": "Odhadovaná silniční vzdálenost k populačnímu těžišti (země: {{country}}).",
+      "originsTitle": "Kde koupit",
+      "faq1": {
+        "q": "Kolik DPH zaplatím za dovezené auto?",
+        "a": "Při proclení v této zemi ({{country}}) je to {{vat}} % z celní hodnoty navýšené o clo a náklady na dopravu do místa určení. Při proclení jinde v EU platí dovozní DPH dané země."
+      },
+      "faq2": {
+        "q": "Kde zaregistruji dovezené auto?",
+        "a": "Registrační úřad: {{authority}} – po technické kontrole ({{inspection}}) a s přeloženými kupními a celními doklady."
+      }
+    },
+    "port": {
+      "h1": "Přístav {{port}} ({{country}}): proclení dovážených aut",
+      "metaTitle": "{{port}} – dovoz auta, proclení, DPH {{vat}} % | CarImport.eu",
+      "metaDescription": "Proclení dovezeného auta v přístavu {{port}} ({{country}}): poplatky terminálu a zástupce, dovozní DPH {{vat}} %, doba plavby z USA, Japonska a SAE, vzdálenosti.",
+      "lead": "{{port}} je přístav proclení – {{country}}. Zde najdete jeho poplatky, dobu plavby a silniční vzdálenosti – a zda se vyplatí proclít auto právě tady.",
+      "facts": {
+        "title": "Přístav v kostce",
+        "country": "Země",
+        "region": "Mořská oblast",
+        "vat": "Dovozní DPH při proclení zde",
+        "unloading": "Manipulace v terminálu a vykládka kontejneru",
+        "agency": "Celní zástupce",
+        "perCar": "za auto"
+      },
+      "sailingTitle": "Doba plavby do přístavu {{port}}",
+      "sailingNote": "Sdílený kontejner z hlavních exportních přístavů; RoRo trvá o několik dní déle.",
+      "days": "{{min}}–{{max}} dní",
+      "distancesTitle": "Silniční vzdálenost z přístavu {{port}}",
+      "alternativesTitle": "Další přístavy v okolí",
+      "p1": "Proclení v přístavu {{port}} znamená zaplatit dovozní DPH platnou v zemi přístavu ({{country}}, {{vat}} %). Pokud auto registrujete v jiné zemi EU, doveze se pak po silnici.",
+      "p2": "Kalkulačka porovná přístav {{port}} se všemi ostatními přístavy EU pro vaši adresu a ukáže nejlevnější možnost.",
+      "faq1": {
+        "q": "Kolik stojí proclení auta v přístavu {{port}}?",
+        "a": "Manipulace v terminálu a vykládka kontejneru asi {{unloading}}, celní zástupce asi {{agency}}, plus clo a dovozní DPH {{vat}} %."
+      },
+      "faq2": {
+        "q": "Mohu auto proclít zde a zaregistrovat ho v jiné zemi EU?",
+        "a": "Ano. Soukromý kupující zaplatí dovozní DPH zde; firma registrovaná k DPH může využít celní režim 4200 a přiznat DPH ve své zemi."
+      }
+    },
+    "cta": {
+      "title": "Spočítejte přesné náklady pro své auto",
+      "text": "Zadejte jen svou adresu – zbytek navrhneme a oceníme každý přístav od dveří ke dveřím.",
+      "button": "Otevřít kalkulačku"
+    },
+    "related": "Související průvodci",
+    "disclaimer": "Informace mají pouze orientační charakter; konečné částky určují finanční a celní úřady. Sazby odpovídají těm, které používá kalkulačka."
   }
 }

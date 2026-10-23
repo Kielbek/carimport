@@ -1010,5 +1010,252 @@
     "hint": "Les montants des enchères (USD, JPY, AED…) sont convertis au taux actuel de la banque centrale. La devise ne change pas le calcul des taxes – celles-ci sont toujours établies par le pays de dédouanement.",
     "groupEu": "Devises de l’UE",
     "groupOther": "Autres"
+  },
+  "guide": {
+    "nav": {
+      "title": "Guides d’importation",
+      "origins": "Importer selon le pays d’achat",
+      "countries": "Importer dans les pays de l’UE",
+      "ports": "Ports de dédouanement de l’UE",
+      "all": "Tous les guides"
+    },
+    "hub": {
+      "origins": {
+        "title": "Guides d’importation de voiture : États-Unis, Canada, Japon, Émirats et Royaume-Uni",
+        "lead": "Des guides étape par étape pour chaque pays où acheter une voiture : enchères, documents, délais de transport, droits de douane, TVA et immatriculation en France – avec les coûts réels dans votre calculateur.",
+        "metaTitle": "Guides import auto – États-Unis, Canada, Japon, EAU, UK | CarImport.eu",
+        "metaDescription": "Importer une voiture des États-Unis, du Canada, du Japon, des EAU ou du Royaume-Uni en France : enchères, documents, transport, douane, TVA et immatriculation."
+      },
+      "countries": {
+        "title": "Importer une voiture dans chaque pays de l’UE",
+        "lead": "Taux de TVA, taxe d’immatriculation, autorité compétente, contrôle technique et ports de dédouanement les plus proches pour les 27 États membres de l’UE.",
+        "metaTitle": "Import auto dans les pays de l’UE – TVA, immatriculation, ports | CarImport.eu",
+        "metaDescription": "TVA à l’importation, taxes d’immatriculation, autorités, contrôles et ports les plus proches pour les 27 pays de l’UE – comparez et calculez le coût total.",
+        "yours": "Votre pays"
+      },
+      "ports": {
+        "title": "Ports de dédouanement de l’UE pour les voitures importées",
+        "lead": "Les {{count}} ports maritimes de l’UE où sont dédouanées les voitures venant de pays tiers : frais, TVA, temps de traversée depuis les États-Unis, le Canada, le Japon, les EAU et le Royaume-Uni, et distances routières.",
+        "metaTitle": "{{count}} ports UE pour l’import auto – frais, TVA, traversée | CarImport.eu",
+        "metaDescription": "Comparez les {{count}} ports de dédouanement auto de l’UE : frais de terminal et d’agent en douane, TVA à l’importation, traversées et distance jusqu’en France.",
+        "sortedFrom": "Triés par distance routière vers : {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Étape par étape",
+        "costsTitle": "Ce que vous payez",
+        "portsTitle": "Ports de dédouanement les plus proches",
+        "docsTitle": "Documents nécessaires",
+        "whyTitle": "Pourquoi acheter ici",
+        "auctionsTitle": "Où acheter",
+        "tipTitle": "Conseil",
+        "step1": {
+          "title": "Acheter la voiture",
+          "text": "Remportez l’enchère ou achetez auprès d’un concessionnaire. Les frais d’enchère dépendent de la tranche de prix et du titre – le calculateur applique le barème en vigueur."
+        },
+        "step2": {
+          "title": "Transport jusqu’au port d’exportation",
+          "text": "Un camion emmène la voiture du parc jusqu’au port ; une voiture non roulante nécessite un chariot élévateur et un treuil, facturés en supplément."
+        },
+        "step3": {
+          "title": "Fret maritime",
+          "text": "Conteneur partagé, conteneur exclusif ou RoRo. La traversée vers l’UE dure {{min}} à {{max}} jours, plus le chargement et l’attente du navire."
+        },
+        "step4": {
+          "title": "Dédouanement dans un port de l’UE",
+          "text": "Un commissionnaire en douane dépose la déclaration. Vous payez les droits de douane et la TVA à l’importation dans le pays du port – sauf si une entreprise utilise le régime douanier 4200."
+        },
+        "step5": {
+          "title": "Livraison à votre adresse",
+          "text": "Camion porte-voitures, dépanneuse ou conduite sous plaques provisoires – facturé au kilomètre depuis le port."
+        },
+        "step6": {
+          "title": "Contrôle technique et immatriculation",
+          "text": "Contrôle technique, traductions et immatriculation dans votre pays de résidence, plus une éventuelle taxe d’immatriculation locale."
+        },
+        "cost": {
+          "duty": "Droits de douane",
+          "dutyValue": "10 % de la valeur CIF (pick-up 22 %, motos 6–8 %, véhicules de collection 0 %)",
+          "vat": "TVA à l’importation",
+          "vatValue": "{{vat}} % – {{country}}",
+          "vatRange": "17–27 % selon le pays de dédouanement",
+          "registration": "Taxe locale à l’immatriculation",
+          "none": "aucune",
+          "shipping": "Durée de traversée",
+          "shippingValue": "{{min}}–{{max}} jours",
+          "currency": "Devise de l’enchère"
+        },
+        "portsNote": "Distance routière du port jusqu’au centre de population – pays : {{country}}. Le calculateur chiffre chaque port de porte à porte pour votre adresse exacte.",
+        "portsNoteEu": "Le calculateur chiffre tous les ports de l’UE de porte à porte pour votre adresse exacte et choisit le moins cher.",
+        "faqPorts": {
+          "q": "Quel port est le moins cher pour moi ?",
+          "a": "Cela dépend de votre adresse, de la TVA à l’importation du pays du port et du calendrier des traversées. Le calculateur chiffre chaque port de l’UE de porte à porte et les classe du moins cher au plus cher."
+        },
+        "faqBinding": {
+          "q": "L’estimation est-elle contraignante ?",
+          "a": "Non. Elle repose sur les taux et tarifs actuels ; les montants définitifs sont fixés par les autorités douanières et fiscales. Le rapport PDF détaille chaque taux et hypothèse pour que vous puissiez comparer."
+        }
+      },
+      "USA": {
+        "h1": "Importer une voiture des États-Unis en France",
+        "metaTitle": "Importer une voiture des USA en France – coûts, douane, TVA | CarImport.eu",
+        "metaDescription": "Importer une voiture des États-Unis : enchères Copart et IAAI, délai de transport, 10 % de droits, TVA, documents et immatriculation. Coût total en une minute.",
+        "lead": "Les États-Unis sont la première source de voitures importées : des millions de véhicules chaque année sur Copart et IAAI, souvent bien moins chers que sur le marché européen. Voici comment se déroule tout le processus et ce qu’il coûte vraiment.",
+        "why": "Un choix immense, des prix bas pour les véhicules accidentés (salvage), des moteurs puissants et des versions bien équipées, rares en Europe. Le revers : l’éclairage américain et parfois le compteur doivent être adaptés, et la réparation d’un véhicule salvage peut coûter cher.",
+        "auctions": "Copart et IAAI (Insurance Auto Auctions) vendent surtout des véhicules d’assurance avec titre clean ou salvage ; Manheim et les concessionnaires vendent des voitures non accidentées. On enchérit généralement via un courtier titulaire d’une licence d’enchères.",
+        "docs": "Titre (clean ou salvage), facture / bill of sale, connaissement (bill of lading), déclaration d’exportation américaine (EEI/AES), déclaration en douane au port de l’UE, traductions du titre et de la facture, certificat de contrôle technique.",
+        "tip": "Vérifiez l’historique du VIN (accidents, inondation, kilométrage) avant d’enchérir et prévoyez une marge pour les dommages cachés – le calculateur l’ajoute comme scénario de risque.",
+        "faq1": {
+          "q": "Combien de temps dure le transport depuis les États-Unis ?",
+          "a": "Depuis la côte Est (New Jersey, Savannah) environ {{min}} jours de mer jusqu’aux ports de la mer du Nord, depuis Houston et la Californie jusqu’à {{max}} jours. Comptez 1 à 3 semaines de plus pour l’acheminement au port et l’attente du navire."
+        },
+        "faq2": {
+          "q": "Un titre salvage pose-t-il problème dans l’UE ?",
+          "a": "Non – l’UE n’utilise pas les mentions des titres américains. La voiture doit toutefois passer le contrôle technique après réparation : prévoyez une réparation sérieuse et le risque de dommages cachés."
+        }
+      },
+      "CANADA": {
+        "h1": "Importer une voiture du Canada en France",
+        "metaTitle": "Importer une voiture du Canada en France – coûts, douane, TVA | CarImport.eu",
+        "metaDescription": "Importer une voiture du Canada : Copart et IAAI Canada, expédition depuis Halifax et Montréal, 10 % de droits, TVA, documents, immatriculation. Calculateur.",
+        "lead": "Les voitures canadiennes ressemblent aux américaines, mais sont souvent mieux équipées pour l’hiver, avec des compteurs métriques et des prix plus bas en dollars canadiens. La traversée depuis Halifax et Montréal vers l’Europe est l’une des plus courtes de l’Atlantique.",
+        "why": "Instruments métriques, packs hiver, chauffe-moteurs et bonne protection anticorrosion ; les prix en CAD sont souvent inférieurs à ceux des États-Unis pour le même modèle.",
+        "auctions": "Copart et IAAI opèrent aussi au Canada ; les ventes par concessionnaires et entre particuliers sont une option pour les voitures non accidentées. Les enchères passent par un courtier.",
+        "docs": "Certificat d’immatriculation / ownership (ou titre salvage), acte de vente, connaissement, déclaration d’exportation canadienne, déclaration en douane dans l’UE, traductions, certificat de contrôle technique.",
+        "tip": "Les provinces de l’Est (Ontario, Québec) sont les plus proches des ports de Montréal et d’Halifax – le transport terrestre depuis l’Ouest coûte bien plus cher.",
+        "faq1": {
+          "q": "Combien de temps dure le transport depuis le Canada ?",
+          "a": "Depuis Halifax et Montréal environ {{min}} à {{max}} jours de mer jusqu’aux ports de la mer du Nord, plus l’acheminement au port et l’attente du navire."
+        },
+        "faq2": {
+          "q": "Une voiture canadienne doit-elle être adaptée ?",
+          "a": "Généralement moins qu’une voiture américaine : le compteur est déjà métrique. L’éclairage (clignotants arrière orange, feux de position latéraux) peut encore devoir être adapté aux règles de l’UE."
+        }
+      },
+      "JAPAN": {
+        "h1": "Importer une voiture du Japon en France",
+        "metaTitle": "Importer une JDM du Japon en France – coûts, douane, TVA | CarImport.eu",
+        "metaDescription": "Importer une JDM du Japon : enchères USS, fiches d’enchère, expédition depuis Yokohama, douane, TVA, conduite à droite et immatriculation. Calculateur de coût.",
+        "lead": "Le Japon est le berceau des voitures JDM : faible kilométrage, excellent état et modèles jamais vendus en Europe. Les fiches d’enchère décrivent chaque voiture en détail – mais le volant est à droite et le voyage est long.",
+        "why": "Très bon état grâce à des contrôles stricts (shaken), des notations d’enchère fiables et des sportives et kei cars uniques. Les prix en yens sont attractifs.",
+        "auctions": "USS est le plus grand réseau d’enchères ; parmi les autres figurent TAA, CAA et JU. Vous achetez via un exportateur qui traduit la fiche d’enchère et s’occupe de la radiation pour l’export.",
+        "docs": "Certificat d’exportation (radiation), fiche d’enchère et facture, connaissement, déclaration en douane dans l’UE, traductions, certificat de contrôle technique.",
+        "tip": "Vérifiez avant l’achat si votre pays restreint les voitures à conduite à droite et comment le contrôle technique les traite.",
+        "faq1": {
+          "q": "Combien de temps dure le transport depuis le Japon ?",
+          "a": "Via le canal de Suez environ {{min}} à {{max}} jours de mer selon le port de l’UE – les ports méditerranéens sont les plus rapides. Ajoutez le délai des documents d’exportation."
+        },
+        "faq2": {
+          "q": "Puis-je immatriculer une voiture à conduite à droite ?",
+          "a": "Dans la plupart des pays de l’UE oui, parfois avec un réglage des phares. Quelques pays limitent les voitures à conduite à droite pour une immatriculation définitive – vérifiez la réglementation locale avant d’acheter."
+        }
+      },
+      "UAE": {
+        "h1": "Importer une voiture de Dubaï (Émirats arabes unis) en France",
+        "metaTitle": "Importer une voiture de Dubaï (EAU) en France – coûts, TVA | CarImport.eu",
+        "metaDescription": "Importer une voiture de Dubaï et des EAU : Emirates Auction et concessionnaires, spécification GCC, expédition depuis Jebel Ali, douane, TVA, immatriculation.",
+        "lead": "Dubaï est un marché de voitures premium et sportives à faible kilométrage, souvent à peine utilisées. Les voitures en spécification GCC sont conçues pour la chaleur et vendues à des prix attractifs.",
+        "why": "Modèles de luxe et sportifs, faible kilométrage et climat sec (pas de rouille). Le dirham est arrimé au dollar américain.",
+        "auctions": "Emirates Auction et les concessionnaires de Dubaï et de Charjah ; un exportateur local se charge du certificat d’exportation et de l’expédition depuis Jebel Ali.",
+        "docs": "Certificat d’exportation, facture, connaissement, déclaration en douane dans l’UE, traductions, certificat de contrôle technique.",
+        "tip": "La chaleur use les caoutchoucs et l’habitacle – demandez des photos des joints, des pneus et du tableau de bord.",
+        "faq1": {
+          "q": "Combien de temps dure le transport depuis Dubaï ?",
+          "a": "Depuis Jebel Ali via Suez environ {{min}} à {{max}} jours de mer selon le port de l’UE ; les ports méditerranéens sont les plus proches."
+        },
+        "faq2": {
+          "q": "Qu’est-ce qu’une voiture en spécification GCC ?",
+          "a": "Une voiture conçue pour le marché du Golfe : refroidissement et climatisation renforcés, parfois un équipement antipollution différent. Elle peut être immatriculée dans l’UE après le contrôle technique."
+        }
+      },
+      "UK": {
+        "h1": "Importer une voiture du Royaume-Uni en France",
+        "metaTitle": "Importer une voiture du Royaume-Uni en France après le Brexit | CarImport.eu",
+        "metaDescription": "Importer une voiture du Royaume-Uni après le Brexit : droits de douane et origine préférentielle, TVA, conduite à droite, transport court et immatriculation.",
+        "lead": "Depuis le Brexit, une voiture du Royaume-Uni est une importation d’un pays tiers : déclaration en douane, droits de douane et TVA à l’importation s’appliquent. Le trajet est court, et les voitures fabriquées au Royaume-Uni ou dans l’UE peuvent bénéficier de 0 % de droits.",
+        "why": "Un vaste marché de l’occasion, de bons historiques d’entretien et un transport court en RoRo ou en ferry. La conduite à droite est à prendre en compte.",
+        "auctions": "Copart UK, BCA, Manheim UK et concessionnaires. En achetant auprès d’un concessionnaire assujetti à la TVA, la TVA britannique peut être remboursée à l’exportation.",
+        "docs": "Certificat V5C, facture, déclaration d’exportation, attestation d’origine préférentielle (pour 0 % de droits), déclaration en douane dans l’UE, traductions, certificat de contrôle technique.",
+        "tip": "Demandez au vendeur une attestation d’origine préférentielle – selon l’accord commercial UE–Royaume-Uni, elle peut ramener les droits à zéro pour les voitures fabriquées au Royaume-Uni ou dans l’UE.",
+        "faq1": {
+          "q": "Combien de temps dure le transport depuis le Royaume-Uni ?",
+          "a": "Seulement {{min}} à {{max}} jours par la mer (RoRo ou ferry), plus les formalités douanières des deux côtés."
+        },
+        "faq2": {
+          "q": "Dois-je payer des droits de douane sur une voiture du Royaume-Uni ?",
+          "a": "Oui, 10 % – sauf si la voiture a une origine préférentielle prouvée (fabriquée au Royaume-Uni ou dans l’UE) au titre de l’accord UE–Royaume-Uni, auquel cas les droits peuvent être de 0 %. La TVA à l’importation est toujours due."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}} : importer une voiture d’un pays hors UE",
+      "metaTitle": "{{country}} – import auto : TVA {{vat}} %, immatriculation, ports | CarImport.eu",
+      "metaDescription": "Import d’une voiture des États-Unis, du Canada, du Japon, des EAU ou du Royaume-Uni – pays : {{country}}. TVA {{vat}} %, immatriculation, ports, coût total.",
+      "lead": "Tout ce qui compte pour immatriculer une voiture importée – pays : {{country}}. Taxes, autorités, contrôle technique et ports les moins chers.",
+      "facts": {
+        "title": "L’essentiel",
+        "vat": "TVA à l’importation (taux normal)",
+        "currency": "Devise",
+        "registrationTax": "Taxe unique à l’immatriculation",
+        "noTax": "aucune",
+        "authority": "Autorité d’immatriculation",
+        "inspection": "Contrôle avant immatriculation",
+        "deadline": "Délai d’immatriculation",
+        "deadlineValue": "{{days}} jours",
+        "noDeadline": "voir la réglementation locale"
+      },
+      "p1": "Les droits de douane sont identiques dans tous les pays de l’UE : 10 % de la valeur CIF pour les voitures particulières. La TVA à l’importation est payée dans le pays de dédouanement – {{vat}} % si vous dédouanez ici.",
+      "p2": "Dédouaner dans un autre pays de l’UE où la TVA est plus basse peut revenir moins cher, même avec le transport supplémentaire – le calculateur compare tous les ports de porte à porte.",
+      "p3": "Les taxes d’immatriculation et les contrôles locaux ne sont pas harmonisés dans l’UE ; prévoyez leur coût et leur délai avant d’acheter.",
+      "portsTitle": "Ports de dédouanement les plus proches",
+      "portsNote": "Distance routière estimée jusqu’au centre de population – pays : {{country}}.",
+      "originsTitle": "Où acheter",
+      "faq1": {
+        "q": "Combien de TVA paie-t-on sur une voiture importée ?",
+        "a": "En cas de dédouanement dans ce pays ({{country}}), {{vat}} % de la valeur en douane majorée des droits et des frais de transport jusqu’à destination. Un dédouanement ailleurs dans l’UE implique la TVA à l’importation de ce pays."
+      },
+      "faq2": {
+        "q": "Où immatriculer une voiture importée ?",
+        "a": "Auprès de l’autorité compétente ({{authority}}), après le contrôle ({{inspection}}) et avec les documents d’achat et de douane traduits."
+      }
+    },
+    "port": {
+      "h1": "{{port}} ({{country}}) : dédouanement des voitures importées",
+      "metaTitle": "{{port}} – import auto, dédouanement, TVA {{vat}} % | CarImport.eu",
+      "metaDescription": "Dédouaner une voiture au port : {{port}} ({{country}}). Frais de terminal et d’agent, TVA {{vat}} %, traversées depuis USA, Japon et EAU, distances.",
+      "lead": "{{port}} est un port de dédouanement – pays : {{country}}. Voici ses frais, ses temps de traversée et ses distances routières – et s’il vaut la peine d’y dédouaner votre voiture.",
+      "facts": {
+        "title": "Le port en bref",
+        "country": "Pays",
+        "region": "Zone maritime",
+        "vat": "TVA à l’importation en cas de dédouanement ici",
+        "unloading": "Manutention au terminal et dépotage",
+        "agency": "Commissionnaire en douane",
+        "perCar": "par voiture"
+      },
+      "sailingTitle": "Durée de traversée – port : {{port}}",
+      "sailingNote": "Conteneur partagé depuis les principaux ports d’exportation ; le RoRo prend quelques jours de plus.",
+      "days": "{{min}}–{{max}} jours",
+      "distancesTitle": "Distances routières – port : {{port}}",
+      "alternativesTitle": "Autres ports à proximité",
+      "p1": "Dédouaner au port {{port}} signifie payer la TVA à l’importation du pays du port ({{country}}, {{vat}} %). Si vous immatriculez la voiture dans un autre pays de l’UE, elle est ensuite livrée par la route.",
+      "p2": "Le calculateur compare {{port}} à tous les autres ports de l’UE pour votre adresse et affiche l’option la moins chère.",
+      "faq1": {
+        "q": "Combien coûte le dédouanement d’une voiture au port {{port}} ?",
+        "a": "Manutention au terminal et dépotage environ {{unloading}}, commissionnaire en douane environ {{agency}}, plus les droits de douane et la TVA à l’importation de {{vat}} %."
+      },
+      "faq2": {
+        "q": "Puis-je dédouaner une voiture ici et l’immatriculer dans un autre pays de l’UE ?",
+        "a": "Oui. Un particulier paie la TVA à l’importation ici ; une entreprise assujettie à la TVA peut utiliser le régime douanier 4200 et déclarer la TVA dans son propre pays."
+      }
+    },
+    "cta": {
+      "title": "Calculez le coût exact pour votre voiture",
+      "text": "Indiquez seulement votre adresse – nous proposons le reste et chiffrons chaque port de porte à porte.",
+      "button": "Ouvrir le calculateur"
+    },
+    "related": "Guides associés",
+    "disclaimer": "Informations données à titre indicatif ; les montants définitifs sont fixés par les autorités fiscales et douanières. Taux tels qu’utilisés par le calculateur."
   }
 }

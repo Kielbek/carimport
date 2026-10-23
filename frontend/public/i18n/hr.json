@@ -1010,5 +1010,252 @@
     "hint": "Aukcijski iznosi (USD, JPY, AED…) preračunavaju se po aktualnom tečaju središnje banke. Valuta ne mijenja izračun poreza – poreze uvijek utvrđuje država carinjenja.",
     "groupEu": "Valute EU",
     "groupOther": "Ostalo"
+  },
+  "guide": {
+    "nav": {
+      "title": "Vodiči za uvoz",
+      "origins": "Uvoz prema zemlji kupnje",
+      "countries": "Uvoz u zemlje EU-a",
+      "ports": "Luke carinjenja u EU-u",
+      "all": "Svi vodiči"
+    },
+    "hub": {
+      "origins": {
+        "title": "Vodiči za uvoz automobila: SAD, Kanada, Japan, UAE i Ujedinjeno Kraljevstvo",
+        "lead": "Vodiči korak po korak za svaku zemlju u kojoj možete kupiti automobil: aukcije, dokumenti, trajanje prijevoza, carina, PDV i registracija u Hrvatskoj – sa stvarnim troškovima u vašem kalkulatoru.",
+        "metaTitle": "Vodiči za uvoz automobila – SAD, Kanada, Japan, UAE, UK | CarImport.eu",
+        "metaDescription": "Kako uvesti automobil iz SAD-a, Kanade, Japana, UAE-a ili UK-a u Hrvatsku: aukcije, dokumenti, prijevoz, carina, PDV i registracija korak po korak."
+      },
+      "countries": {
+        "title": "Uvoz automobila u svaku zemlju EU-a",
+        "lead": "Stopa PDV-a, porez pri registraciji, nadležno tijelo, tehnički pregled i najbliže luke carinjenja za svih 27 država članica EU-a.",
+        "metaTitle": "Uvoz automobila u zemlje EU-a – PDV, registracija, luke | CarImport.eu",
+        "metaDescription": "Uvozni PDV, porezi pri registraciji, nadležna tijela, tehnički pregledi i najbliže luke za svih 27 zemalja EU-a – usporedite i izračunajte puni trošak uvoza.",
+        "yours": "Vaša zemlja"
+      },
+      "ports": {
+        "title": "Luke carinjenja u EU-u za uvezene automobile",
+        "lead": "Svih {{count}} morskih luka EU-a u kojima se carine automobili iz zemalja izvan EU-a: naknade, PDV, trajanje plovidbe iz SAD-a, Kanade, Japana, UAE-a i UK-a te cestovne udaljenosti.",
+        "metaTitle": "{{count}} luka EU-a za uvoz automobila – naknade, PDV, plovidba | CarImport.eu",
+        "metaDescription": "Usporedite svih {{count}} luka carinjenja automobila u EU-u: naknade terminala i carinskog zastupnika, uvozni PDV, trajanje plovidbe i udaljenost do Hrvatske.",
+        "sortedFrom": "Poredano po cestovnoj udaljenosti do: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Korak po korak",
+        "costsTitle": "Što plaćate",
+        "portsTitle": "Najbliže luke carinjenja",
+        "docsTitle": "Potrebni dokumenti",
+        "whyTitle": "Zašto kupiti ovdje",
+        "auctionsTitle": "Gdje kupiti",
+        "tipTitle": "Savjet",
+        "step1": {
+          "title": "Kupnja automobila",
+          "text": "Pobijedite na aukciji ili kupite od trgovca. Aukcijske naknade ovise o cjenovnom razredu i vrsti vlasničkog lista – kalkulator primjenjuje važeći cjenik."
+        },
+        "step2": {
+          "title": "Prijevoz do izvozne luke",
+          "text": "Kamion prevozi automobil s aukcijskog placa do luke; vozila koja nisu u voznom stanju trebaju viličar i vitlo, što se dodatno naplaćuje."
+        },
+        "step3": {
+          "title": "Pomorski prijevoz",
+          "text": "Dijeljeni kontejner, zasebni kontejner ili RoRo. Plovidba do EU-a traje {{min}}–{{max}} dana, uz utovar i čekanje broda."
+        },
+        "step4": {
+          "title": "Carinjenje u luci EU-a",
+          "text": "Carinski zastupnik podnosi carinsku deklaraciju. Carinu i uvozni PDV plaćate u zemlji luke – osim ako tvrtka koristi carinski postupak 4200."
+        },
+        "step5": {
+          "title": "Dostava na vašu adresu",
+          "text": "Autotransporter, šlep služba ili vožnja s privremenim tablicama – cijena po kilometru od luke."
+        },
+        "step6": {
+          "title": "Tehnički pregled i registracija",
+          "text": "Tehnički pregled, prijevodi i registracija u zemlji u kojoj živite, uz eventualni lokalni porez pri registraciji."
+        },
+        "cost": {
+          "duty": "Carina",
+          "dutyValue": "10% carinske vrijednosti CIF (pickupi 22%, motocikli 6–8%, povijesna vozila 0%)",
+          "vat": "Uvozni PDV",
+          "vatValue": "{{vat}}% – {{country}}",
+          "vatRange": "17–27% ovisno o zemlji carinjenja",
+          "registration": "Lokalni porez pri registraciji",
+          "none": "nema",
+          "shipping": "Trajanje plovidbe",
+          "shippingValue": "{{min}}–{{max}} dana",
+          "currency": "Valuta aukcije"
+        },
+        "portsNote": "Cestovna udaljenost od luke do: {{country}} (središte naseljenosti). Kalkulator izračunava cijenu svake luke od vrata do vrata za vašu točnu adresu.",
+        "portsNoteEu": "Kalkulator izračunava cijenu svih luka EU-a od vrata do vrata za vašu točnu adresu i odabire najjeftiniju.",
+        "faqPorts": {
+          "q": "Koja je luka za mene najjeftinija?",
+          "a": "Ovisi o vašoj adresi, uvoznom PDV-u zemlje luke i rasporedu plovidbe. Kalkulator izračunava cijenu svake luke EU-a od vrata do vrata i prikazuje ih od najjeftinije."
+        },
+        "faqBinding": {
+          "q": "Je li procjena obvezujuća?",
+          "a": "Nije. Temelji se na važećim stopama i cjenicima; konačne iznose određuju carinska i porezna tijela. PDF izvješće navodi svaku stopu i pretpostavku kako biste mogli usporediti."
+        }
+      },
+      "USA": {
+        "h1": "Uvoz automobila iz SAD-a u Hrvatsku",
+        "metaTitle": "Uvoz automobila iz SAD-a u Hrvatsku – troškovi, carina, PDV | CarImport.eu",
+        "metaDescription": "Kako uvesti automobil iz SAD-a u Hrvatsku: aukcije Copart i IAAI, trajanje prijevoza, carina 10%, uvozni PDV, dokumenti i registracija. Izračunajte puni trošak.",
+        "lead": "SAD je najveći izvor uvezenih automobila: milijuni vozila na Copartu i IAAI-ju svake godine, često po cijenama znatno nižima od europskog tržišta. Evo kako izgleda cijeli postupak i koliko on zaista košta.",
+        "why": "Ogroman izbor, niske cijene oštećenih (salvage) automobila, snažni motori i bogato opremljene izvedbe koje su u Europi rijetke. Kvaka: američka svjetla, a ponekad i brzinomjer, moraju se prilagoditi, a popravak salvage automobila može biti skup.",
+        "auctions": "Copart i IAAI (Insurance Auto Auctions) prodaju uglavnom automobile osiguravajućih društava s čistim (clean) ili salvage vlasničkim listom; Manheim i trgovci prodaju neoštećene automobile. Obično licitirate preko brokera s aukcijskom licencom.",
+        "docs": "Vlasnički list – title (clean ili salvage), račun / kupoprodajni ugovor, teretnica (bill of lading), američka izvozna deklaracija (EEI/AES), carinska deklaracija u luci EU-a, prijevodi titlea i računa, potvrda o tehničkom pregledu.",
+        "tip": "Prije licitiranja provjerite povijest VIN-a (nesreće, poplava, kilometraža) i ostavite rezervu za skrivena oštećenja – kalkulator je dodaje kao scenarij rizika.",
+        "faq1": {
+          "q": "Koliko traje prijevoz iz SAD-a?",
+          "a": "S istočne obale (New Jersey, Savannah) oko {{min}} dana plovidbe do luka Sjevernog mora, iz Houstona i Kalifornije do {{max}} dana. Dodajte 1–3 tjedna za prijevoz do luke i čekanje broda."
+        },
+        "faq2": {
+          "q": "Je li salvage title problem u EU-u?",
+          "a": "Nije – EU ne primjenjuje američke oznake vlasničkih listova. Automobil ipak mora nakon popravka proći tehnički pregled, pa računajte na kvalitetan popravak i rizik skrivenih oštećenja."
+        }
+      },
+      "CANADA": {
+        "h1": "Uvoz automobila iz Kanade u Hrvatsku",
+        "metaTitle": "Uvoz automobila iz Kanade u Hrvatsku – troškovi, carina, PDV | CarImport.eu",
+        "metaDescription": "Uvoz automobila iz Kanade u Hrvatsku: Copart i IAAI Canada, prijevoz iz Halifaxa i Montreala, carina 10%, PDV, dokumenti i registracija. Kalkulator troškova.",
+        "lead": "Kanadski automobili slični su američkima, ali su često bolje pripremljeni za zimu, imaju brzinomjere u kilometrima i niže cijene u kanadskim dolarima. Prijevoz iz Halifaxa i Montreala do Europe među najkraćima je preko Atlantika.",
+        "why": "Instrumenti u metričkom sustavu, zimski paketi, grijači motora i dobra antikorozivna zaštita; cijene u CAD-u za isti model često su niže nego u SAD-u.",
+        "auctions": "Copart i IAAI posluju i u Kanadi; prodaja od trgovaca i privatnih osoba opcija je za neoštećene automobile. Licitira se preko brokera.",
+        "docs": "Registracija / dokaz o vlasništvu (ili salvage title), kupoprodajni ugovor, teretnica, kanadska izvozna deklaracija, carinska deklaracija u EU-u, prijevodi, potvrda o tehničkom pregledu.",
+        "tip": "Istočne pokrajine (Ontario, Quebec) najbliže su lukama Montreal i Halifax – kopneni prijevoz sa zapada znatno je skuplji.",
+        "faq1": {
+          "q": "Koliko traje prijevoz iz Kanade?",
+          "a": "Iz Halifaxa i Montreala oko {{min}}–{{max}} dana plovidbe do luka Sjevernog mora, uz prijevoz do luke i čekanje broda."
+        },
+        "faq2": {
+          "q": "Treba li kanadski automobil prilagodbu?",
+          "a": "Obično manju nego američki: brzinomjer je već u kilometrima. Svjetla (narančasti stražnji pokazivači smjera, bočna svjetla) možda će ipak trebati prilagoditi pravilima EU-a."
+        }
+      },
+      "JAPAN": {
+        "h1": "Uvoz automobila iz Japana u Hrvatsku",
+        "metaTitle": "Uvoz automobila iz Japana u Hrvatsku – JDM, carina, PDV | CarImport.eu",
+        "metaDescription": "Uvoz JDM automobila iz Japana u Hrvatsku: aukcije USS, auction sheet, prijevoz iz Yokohame, carina, PDV, desni volan i registracija. Kalkulator troškova.",
+        "lead": "Japan je dom JDM automobila: mala kilometraža, izvrsno stanje i modeli koji se nikad nisu prodavali u Europi. Auction sheetovi detaljno opisuju svaki automobil – ali automobili imaju volan na desnoj strani, a put je dug.",
+        "why": "Vrlo dobro stanje zahvaljujući strogim pregledima (shaken), poštenom ocjenjivanju na aukcijama te jedinstvenim sportskim i kei automobilima. Cijene u jenima su privlačne.",
+        "auctions": "USS je najveća mreža aukcija; ostale su TAA, CAA i JU. Kupujete preko izvoznika koji prevodi auction sheet i obavlja odjavu vozila radi izvoza.",
+        "docs": "Izvozni certifikat (odjava), auction sheet i račun, teretnica, carinska deklaracija u EU-u, prijevodi, potvrda o tehničkom pregledu.",
+        "tip": "Prije kupnje provjerite ograničava li vaša zemlja automobile s desnim volanom i kako se prema njima odnosi tehnički pregled.",
+        "faq1": {
+          "q": "Koliko traje prijevoz iz Japana?",
+          "a": "Preko Sueskog kanala oko {{min}}–{{max}} dana plovidbe, ovisno o luci EU-a – sredozemne luke su najbrže. Dodajte vrijeme za izvozne dokumente."
+        },
+        "faq2": {
+          "q": "Mogu li registrirati automobil s desnim volanom?",
+          "a": "U većini zemalja EU-a da, ponekad uz podešavanje prednjih svjetala. Nekoliko zemalja ograničava trajnu registraciju automobila s desnim volanom – prije kupnje provjerite lokalna pravila."
+        }
+      },
+      "UAE": {
+        "h1": "Uvoz automobila iz Dubaija (UAE) u Hrvatsku",
+        "metaTitle": "Uvoz automobila iz Dubaija (UAE) u Hrvatsku – carina, PDV | CarImport.eu",
+        "metaDescription": "Uvoz automobila iz Dubaija i UAE-a u Hrvatsku: Emirates Auction i trgovci, GCC specifikacija, prijevoz iz Jebel Alija, carina, PDV i registracija.",
+        "lead": "Dubai je tržište premium i sportskih automobila s malom kilometražom, često jedva korištenih. Automobili GCC specifikacije izrađeni su za vrućinu i prodaju se po privlačnim cijenama.",
+        "why": "Luksuzni i sportski modeli, mala kilometraža i suha klima (bez hrđe). Cijene u dirhamima vezane su uz američki dolar.",
+        "auctions": "Emirates Auction i trgovci u Dubaiju i Šardži; lokalni izvoznik pribavlja izvozni certifikat i organizira prijevoz iz Jebel Alija.",
+        "docs": "Izvozni certifikat, račun, teretnica, carinska deklaracija u EU-u, prijevodi, potvrda o tehničkom pregledu.",
+        "tip": "Vrućina troši gumene dijelove i unutrašnjost – zatražite fotografije brtvi, guma i armaturne ploče.",
+        "faq1": {
+          "q": "Koliko traje prijevoz iz Dubaija?",
+          "a": "Iz Jebel Alija preko Sueza oko {{min}}–{{max}} dana plovidbe, ovisno o luci EU-a; sredozemne luke su najbliže."
+        },
+        "faq2": {
+          "q": "Što je automobil GCC specifikacije?",
+          "a": "Automobil izrađen za tržište Zaljeva: jače hlađenje i klima-uređaj, ponekad drukčija oprema za emisije. Može se registrirati u EU-u nakon tehničkog pregleda."
+        }
+      },
+      "UK": {
+        "h1": "Uvoz automobila iz Ujedinjenog Kraljevstva u Hrvatsku",
+        "metaTitle": "Uvoz automobila iz UK-a u Hrvatsku nakon Brexita – carina, PDV | CarImport.eu",
+        "metaDescription": "Uvoz automobila iz UK-a u Hrvatsku nakon Brexita: carina i povlašteno podrijetlo, PDV, desni volan, kratak prijevoz i registracija. Kalkulator troškova.",
+        "lead": "Od Brexita je automobil iz Ujedinjenog Kraljevstva uvoz iz zemlje izvan EU-a: potrebni su carinska deklaracija, carina i uvozni PDV. Put je kratak, a automobili proizvedeni u UK-u ili EU-u mogu ostvariti carinu od 0%.",
+        "why": "Veliko tržište rabljenih automobila, dobre servisne knjižice i kratak prijevoz RoRo brodom ili trajektom. Treba uzeti u obzir volan na desnoj strani.",
+        "auctions": "Copart UK, BCA, Manheim UK i trgovci. Kupnjom od trgovca registriranog za PDV britanski PDV može se pri izvozu vratiti.",
+        "docs": "Prometna knjižica V5C, račun, izvozna deklaracija, izjava o povlaštenom podrijetlu (za carinu 0%), carinska deklaracija u EU-u, prijevodi, potvrda o tehničkom pregledu.",
+        "tip": "Zatražite od prodavatelja izjavu o povlaštenom podrijetlu – prema Sporazumu o trgovini EU–UK carina na automobile proizvedene u UK-u ili EU-u može pasti na nulu.",
+        "faq1": {
+          "q": "Koliko traje prijevoz iz Ujedinjenog Kraljevstva?",
+          "a": "Samo {{min}}–{{max}} dana morem (RoRo ili trajekt), uz carinske formalnosti s obje strane."
+        },
+        "faq2": {
+          "q": "Plaćam li carinu na automobil iz UK-a?",
+          "a": "Da, 10% – osim ako automobil ima dokazano povlašteno podrijetlo (proizveden u UK-u ili EU-u) prema sporazumu EU–UK, kada carina može biti 0%. Uvozni PDV plaća se uvijek."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: uvoz automobila iz zemalja izvan EU-a",
+      "metaTitle": "{{country}} – uvoz automobila: PDV {{vat}}%, registracija, luke | CarImport.eu",
+      "metaDescription": "{{country}}: uvoz automobila iz SAD-a, Kanade, Japana, UAE-a ili UK-a – uvozni PDV {{vat}}%, registracija, tehnički pregled, najbliže luke i puni trošak.",
+      "lead": "{{country}} – sve što je važno kada ovdje registrirate uvezeni automobil: porezi, nadležna tijela, tehnički pregled i najjeftinije luke.",
+      "facts": {
+        "title": "Ključne činjenice",
+        "vat": "Uvozni PDV (opća stopa)",
+        "currency": "Valuta",
+        "registrationTax": "Jednokratni porez pri registraciji",
+        "noTax": "nema",
+        "authority": "Tijelo za registraciju",
+        "inspection": "Pregled prije registracije",
+        "deadline": "Rok za registraciju",
+        "deadlineValue": "{{days}} dana",
+        "noDeadline": "vidi lokalna pravila"
+      },
+      "p1": "Carina je ista u svim zemljama EU-a: 10% vrijednosti CIF za osobne automobile. Uvozni PDV plaća se u zemlji u kojoj se automobil carini – {{vat}}% ako ga carinite ovdje.",
+      "p2": "Carinjenje u drugoj zemlji EU-a s nižim PDV-om može biti jeftinije čak i uz dodatni prijevoz – kalkulator uspoređuje sve luke od vrata do vrata.",
+      "p3": "Lokalni porezi pri registraciji i tehnički pregledi nisu usklađeni u EU-u; planirajte njihov trošak i vrijeme prije kupnje.",
+      "portsTitle": "Najbliže luke carinjenja",
+      "portsNote": "Procijenjena cestovna udaljenost do središta naseljenosti – zemlja: {{country}}.",
+      "originsTitle": "Gdje kupiti",
+      "faq1": {
+        "q": "Koliko PDV-a plaćam na uvezeni automobil?",
+        "a": "Ako se automobil carini ovdje ({{country}}), {{vat}}% carinske vrijednosti uvećane za carinu i troškove prijevoza do odredišta. Carinjenje drugdje u EU-u znači uvozni PDV te zemlje."
+      },
+      "faq2": {
+        "q": "Gdje registriram uvezeni automobil?",
+        "a": "Nadležno tijelo: {{authority}} – nakon tehničkog pregleda ({{inspection}}) i uz prevedene kupoprodajne i carinske dokumente."
+      }
+    },
+    "port": {
+      "h1": "Luka {{port}} ({{country}}): carinjenje uvezenih automobila",
+      "metaTitle": "{{port}} – uvoz automobila, carina, PDV {{vat}}% | CarImport.eu",
+      "metaDescription": "Carinjenje uvezenog automobila u luci {{port}} ({{country}}): naknade terminala i zastupnika, uvozni PDV {{vat}}%, plovidba iz SAD-a, Japana i UAE-a, udaljenosti.",
+      "lead": "Luka {{port}} je luka carinjenja (zemlja: {{country}}). Ovdje su njezine naknade, trajanje plovidbe i cestovne udaljenosti – te isplati li se ovdje ocariniti vaš automobil.",
+      "facts": {
+        "title": "Luka ukratko",
+        "country": "Zemlja",
+        "region": "Morsko područje",
+        "vat": "Uvozni PDV pri carinjenju ovdje",
+        "unloading": "Terminalska manipulacija i istovar kontejnera",
+        "agency": "Carinski zastupnik",
+        "perCar": "po automobilu"
+      },
+      "sailingTitle": "Trajanje plovidbe do luke {{port}}",
+      "sailingNote": "Dijeljeni kontejner iz glavnih izvoznih luka; RoRo traje nekoliko dana dulje.",
+      "days": "{{min}}–{{max}} dana",
+      "distancesTitle": "Cestovna udaljenost od luke {{port}}",
+      "alternativesTitle": "Druge obližnje luke",
+      "p1": "Carinjenje u luci {{port}} znači plaćanje uvoznog PDV-a zemlje luke ({{country}}, {{vat}}%). Ako automobil registrirate u drugoj zemlji EU-a, on se zatim dostavlja cestom.",
+      "p2": "Kalkulator uspoređuje luku {{port}} sa svim ostalim lukama EU-a za vašu adresu i prikazuje najjeftiniju opciju.",
+      "faq1": {
+        "q": "Koliko košta carinjenje automobila u luci {{port}}?",
+        "a": "Terminalska manipulacija i istovar kontejnera oko {{unloading}}, carinski zastupnik oko {{agency}}, uz carinu i uvozni PDV od {{vat}}%."
+      },
+      "faq2": {
+        "q": "Mogu li automobil ocariniti ovdje i registrirati ga u drugoj zemlji EU-a?",
+        "a": "Da. Privatni kupac ovdje plaća uvozni PDV; tvrtka registrirana za PDV može koristiti carinski postupak 4200 i obračunati PDV u svojoj zemlji."
+      }
+    },
+    "cta": {
+      "title": "Izračunajte točan trošak za svoj automobil",
+      "text": "Unesite samo svoju adresu – ostalo predlažemo mi i izračunavamo cijenu svake luke od vrata do vrata.",
+      "button": "Otvori kalkulator"
+    },
+    "related": "Povezani vodiči",
+    "disclaimer": "Informacije služe samo za orijentaciju; konačne iznose određuju porezna i carinska tijela. Stope kakve koristi kalkulator."
   }
 }

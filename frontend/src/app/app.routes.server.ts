@@ -1,16 +1,44 @@
 import { RenderMode, ServerRoute } from '@angular/ssr';
 import { SUPPORTED_LANGS } from './core/i18n/language.service';
+import { GUIDE_SECTIONS, GuideSection, itemSlug, itemsOf } from './core/routing/guide-paths';
 import { SLUGS } from './core/routing/paths';
 
 const allLangs = async () => SUPPORTED_LANGS.map((lang) => ({ lang }));
 
-/** Each localized slug is prerendered only for its own language: /pl/kalkulator, /en/calculator, ... */
+/**
+ * Each localized slug is prerendered only for the languages that use it: /pl/kalkulator, /en/calculator, ...
+ * Several languages can share a slug (kalkulator: pl, bg, hr, hu, sl) - they share one server route.
+ */
 const perLanguage = (slugs: Record<string, string>): ServerRoute[] =>
-  SUPPORTED_LANGS.map((lang) => ({
-    path: `:lang/${slugs[lang]}`,
+  [...new Set(Object.values(slugs))].map((slug) => ({
+    path: `:lang/${slug}`,
     renderMode: RenderMode.Prerender,
-    getPrerenderParams: async () => [{ lang }],
+    getPrerenderParams: async () => SUPPORTED_LANGS.filter((lang) => slugs[lang] === slug).map((lang) => ({ lang })),
   }));
+
+/**
+ * Every guide hub and guide page, prerendered only for the languages that use that section slug:
+ * /pl/porty, /pl/porty/bremerhaven, /uk/porty/..., /en/ports/..., /fr/ports/...
+ */
+const guideSections = SUPPORTED_LANGS.flatMap((lang) =>
+  (Object.keys(GUIDE_SECTIONS[lang]) as GuideSection[]).map((section) => ({ lang, section, slug: GUIDE_SECTIONS[lang][section] })),
+);
+const guides: ServerRoute[] = [...new Set(guideSections.map((g) => g.slug))].flatMap((slug): ServerRoute[] => {
+  const users = guideSections.filter((g) => g.slug === slug);
+  return [
+    {
+      path: `:lang/${slug}`,
+      renderMode: RenderMode.Prerender,
+      getPrerenderParams: async () => users.map(({ lang }) => ({ lang })),
+    },
+    {
+      path: `:lang/${slug}/:item`,
+      renderMode: RenderMode.Prerender,
+      getPrerenderParams: async () =>
+        users.flatMap(({ lang, section }) => itemsOf(section).map((item) => ({ lang, item: itemSlug(section, item, lang) }))),
+    },
+  ];
+});
 
 /**
  * Static output: public, indexable pages are prerendered to HTML at build time (fast, crawlable, CDN-friendly);
@@ -22,5 +50,6 @@ export const serverRoutes: ServerRoute[] = [
   ...perLanguage(SLUGS.calculator),
   ...perLanguage(SLUGS.about),
   ...perLanguage(SLUGS.privacy),
+  ...guides,
   { path: '**', renderMode: RenderMode.Client },
 ];

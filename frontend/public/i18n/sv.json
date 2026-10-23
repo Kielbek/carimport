@@ -1010,5 +1010,252 @@
     "hint": "Auktionsbelopp (USD, JPY, AED…) räknas om till centralbankens aktuella kurs. Valutan påverkar inte skatteberäkningen – skatterna fastställs alltid av förtullningslandet.",
     "groupEu": "EU-valutor",
     "groupOther": "Övriga"
+  },
+  "guide": {
+    "nav": {
+      "title": "Importguider",
+      "origins": "Import efter inköpsland",
+      "countries": "Import till EU-länder",
+      "ports": "Förtullningshamnar i EU",
+      "all": "Alla guider"
+    },
+    "hub": {
+      "origins": {
+        "title": "Guider för bilimport: USA, Kanada, Japan, Förenade Arabemiraten och Storbritannien",
+        "lead": "Steg-för-steg-guider för varje land där du kan köpa bil: auktioner, dokument, transporttid, tull, moms och registrering i Sverige – med de verkliga kostnaderna i kalkylatorn.",
+        "metaTitle": "Guider för bilimport – USA, Kanada, Japan, Arabemiraten, UK | CarImport.eu",
+        "metaDescription": "Så importerar du en bil från USA, Kanada, Japan, Förenade Arabemiraten eller Storbritannien till Sverige: auktioner, dokument, frakt, tull, moms och registrering."
+      },
+      "countries": {
+        "title": "Bilimport till varje EU-land",
+        "lead": "Momssats, registreringsskatt, registreringsmyndighet, besiktning och närmaste förtullningshamnar för alla 27 EU-länder.",
+        "metaTitle": "Bilimport till EU-länder – moms, registrering, hamnar | CarImport.eu",
+        "metaDescription": "Importmoms, registreringsskatter, myndigheter, besiktning och närmaste hamnar för alla 27 EU-länder – jämför och beräkna hela kostnaden för en importbil.",
+        "yours": "Ditt land"
+      },
+      "ports": {
+        "title": "Förtullningshamnar i EU för importbilar",
+        "lead": "Alla {{count}} hamnar i EU där bilar från länder utanför EU förtullas: avgifter, moms, sjötransporttider från USA, Kanada, Japan, Förenade Arabemiraten och Storbritannien samt vägavstånd.",
+        "metaTitle": "{{count}} EU-hamnar för bilimport – avgifter, moms, sjötid | CarImport.eu",
+        "metaDescription": "Jämför alla {{count}} förtullningshamnar för bilar i EU: terminal- och tullombudsavgifter, importmoms, sjötransporttider och vägavstånd till Sverige.",
+        "sortedFrom": "Sorterat efter vägavstånd till: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Steg för steg",
+        "costsTitle": "Det här betalar du",
+        "portsTitle": "Närmaste förtullningshamnar",
+        "docsTitle": "Dokument som behövs",
+        "whyTitle": "Varför köpa här",
+        "auctionsTitle": "Var du köper",
+        "tipTitle": "Tips",
+        "step1": {
+          "title": "Köp bilen",
+          "text": "Vinn auktionen eller köp av en handlare. Auktionsavgifterna beror på prisnivå och title – kalkylatorn tillämpar den aktuella prislistan."
+        },
+        "step2": {
+          "title": "Transport till exporthamnen",
+          "text": "En lastbil kör bilen från uppställningsplatsen till hamnen; bilar som inte går att köra kräver truck och vinsch, vilket kostar extra."
+        },
+        "step3": {
+          "title": "Sjöfrakt",
+          "text": "Delad container, egen container eller RoRo. Sjötransporten till EU tar {{min}}–{{max}} dagar, plus lastning och väntan på fartyget."
+        },
+        "step4": {
+          "title": "Förtullning i EU-hamnen",
+          "text": "Ett tullombud lämnar in tulldeklarationen. Du betalar tull och importmoms i hamnlandet – om inte ett företag använder tullförfarande 4200."
+        },
+        "step5": {
+          "title": "Leverans till din adress",
+          "text": "Biltransport, bärgningsbil eller körning på tillfälliga skyltar – prissatt per kilometer från hamnen."
+        },
+        "step6": {
+          "title": "Besiktning och registrering",
+          "text": "Besiktning, översättningar och registrering i landet där du bor, plus eventuell lokal skatt vid registreringen."
+        },
+        "cost": {
+          "duty": "Tull",
+          "dutyValue": "10 % av CIF-värdet (pickuper 22 %, motorcyklar 6–8 %, veteranbilar 0 %)",
+          "vat": "Importmoms",
+          "vatValue": "{{vat}} % – {{country}}",
+          "vatRange": "17–27 % beroende på förtullningsland",
+          "registration": "Lokal skatt vid registrering",
+          "none": "ingen",
+          "shipping": "Sjötransporttid",
+          "shippingValue": "{{min}}–{{max}} dagar",
+          "currency": "Auktionsvaluta"
+        },
+        "portsNote": "Vägavstånd från hamnen till befolkningscentrum i {{country}}. Kalkylatorn prissätter varje hamn dörr till dörr för just din adress.",
+        "portsNoteEu": "Kalkylatorn prissätter alla EU-hamnar dörr till dörr för just din adress och väljer den billigaste.",
+        "faqPorts": {
+          "q": "Vilken hamn är billigast för mig?",
+          "a": "Det beror på din adress, importmomsen i hamnlandet och fartygens tidtabell. Kalkylatorn prissätter varje EU-hamn dörr till dörr och visar dem från den billigaste."
+        },
+        "faqBinding": {
+          "q": "Är beräkningen bindande?",
+          "a": "Nej. Den bygger på aktuella satser och prislistor; tull- och skattemyndigheterna fastställer de slutliga beloppen. PDF-rapporten listar varje sats och antagande så att du kan jämföra."
+        }
+      },
+      "USA": {
+        "h1": "Importera bil från USA till Sverige",
+        "metaTitle": "Importera bil från USA till Sverige – kostnad, tull, moms | CarImport.eu",
+        "metaDescription": "Så importerar du en bil från USA: Copart- och IAAI-auktioner, frakttid, 10 % tull, importmoms, dokument och registrering. Beräkna hela kostnaden på en minut.",
+        "lead": "USA är den största källan till importbilar: miljontals fordon på Copart och IAAI varje år, ofta till priser långt under den europeiska marknaden. Så här ser hela processen ut och vad den verkligen kostar.",
+        "why": "Enormt utbud, låga priser på skadade (salvage) bilar, starka motorer och välutrustade versioner som är ovanliga i Europa. Haken: amerikansk belysning och ibland hastighetsmätaren måste byggas om, och reparationer av salvage-bilar kan bli dyra.",
+        "auctions": "Copart och IAAI (Insurance Auto Auctions) säljer främst försäkringsbilar med clean eller salvage title; Manheim och handlare säljer oskadade bilar. Du bjuder oftast via en mäklare med auktionslicens.",
+        "docs": "Title (clean eller salvage), faktura / bill of sale, konossement (bill of lading), amerikansk exportdeklaration (EEI/AES), tulldeklaration i EU-hamnen, översättningar av title och faktura, besiktningsintyg.",
+        "tip": "Kontrollera VIN-historiken (olyckor, översvämning, mätarställning) innan du bjuder och avsätt en buffert för dolda skador – kalkylatorn lägger till den som ett riskscenario.",
+        "faq1": {
+          "q": "Hur lång tid tar frakten från USA?",
+          "a": "Från östkusten (New Jersey, Savannah) cirka {{min}} dagar till sjöss till Nordsjöhamnarna, från Houston och Kalifornien upp till {{max}} dagar. Lägg till 1–3 veckor för transport till hamnen och väntan på fartyget."
+        },
+        "faq2": {
+          "q": "Är en salvage title ett problem i EU?",
+          "a": "Nej – EU använder inte amerikanska title-märkningar. Bilen måste dock klara besiktningen efter reparationen, så budgetera för en ordentlig reparation och risken för dolda skador."
+        }
+      },
+      "CANADA": {
+        "h1": "Importera bil från Kanada till Sverige",
+        "metaTitle": "Importera bil från Kanada till Sverige – kostnad, tull, moms | CarImport.eu",
+        "metaDescription": "Importera bil från Kanada: Copart och IAAI Canada, frakt från Halifax och Montreal, 10 % tull, moms, dokument och registrering. Kalkylator för hela kostnaden.",
+        "lead": "Kanadensiska bilar liknar amerikanska men är ofta bättre rustade för vinter, med metriska hastighetsmätare och lägre priser i kanadensiska dollar. Sjötransporten från Halifax och Montreal till Europa är en av de kortaste över Atlanten.",
+        "why": "Metriska instrument, vinterpaket, motorvärmare och bra rostskydd; priserna i CAD är ofta lägre än i USA för samma modell.",
+        "auctions": "Copart och IAAI finns även i Kanada; köp från handlare och privatpersoner är ett alternativ för oskadade bilar. Budgivningen sker via en mäklare.",
+        "docs": "Registreringsbevis / ownership (eller salvage title), köpekontrakt, konossement, kanadensisk exportdeklaration, tulldeklaration i EU, översättningar, besiktningsintyg.",
+        "tip": "De östra provinserna (Ontario, Quebec) ligger närmast hamnarna i Montreal och Halifax – inlandstransport från väst kostar betydligt mer.",
+        "faq1": {
+          "q": "Hur lång tid tar frakten från Kanada?",
+          "a": "Från Halifax och Montreal cirka {{min}}–{{max}} dagar till sjöss till Nordsjöhamnarna, plus transport till hamnen och väntan på fartyget."
+        },
+        "faq2": {
+          "q": "Behöver en kanadensisk bil byggas om?",
+          "a": "Oftast mindre än en amerikansk bil: hastighetsmätaren är redan metrisk. Belysningen (gula blinkers bak, sidomarkeringsljus) kan ändå behöva anpassas till EU:s regler."
+        }
+      },
+      "JAPAN": {
+        "h1": "Importera bil från Japan till Sverige",
+        "metaTitle": "Importera bil från Japan till Sverige – JDM, tull, moms | CarImport.eu",
+        "metaDescription": "Importera en JDM-bil från Japan: USS-auktioner, auktionsprotokoll, frakt från Yokohama, tull, moms, högerstyrning och registrering. Kalkylator för hela kostnaden.",
+        "lead": "Japan är JDM-bilarnas hemland: låga mätarställningar, utmärkt skick och modeller som aldrig sålts i Europa. Auktionsprotokollen beskriver varje bil i detalj – men bilarna är högerstyrda och resan är lång.",
+        "why": "Mycket gott skick tack vare strikta besiktningar (shaken), ärlig auktionsgradering och unika sportbilar och kei-bilar. Priserna i yen är attraktiva.",
+        "auctions": "USS är det största auktionsnätverket; andra är TAA, CAA och JU. Du köper via en exportör som översätter auktionsprotokollet och sköter avregistreringen för export.",
+        "docs": "Exportcertifikat (avregistrering), auktionsprotokoll och faktura, konossement, tulldeklaration i EU, översättningar, besiktningsintyg.",
+        "tip": "Kontrollera om ditt land begränsar högerstyrda bilar och hur besiktningen hanterar dem innan du köper.",
+        "faq1": {
+          "q": "Hur lång tid tar frakten från Japan?",
+          "a": "Via Suezkanalen cirka {{min}}–{{max}} dagar till sjöss beroende på EU-hamn – Medelhavshamnarna är snabbast. Lägg till tiden för exportdokumenten."
+        },
+        "faq2": {
+          "q": "Kan jag registrera en högerstyrd bil?",
+          "a": "I de flesta EU-länder ja, ibland med justering av strålkastarna. Några länder begränsar högerstyrda bilar vid permanent registrering – kontrollera de lokala reglerna innan du köper."
+        }
+      },
+      "UAE": {
+        "h1": "Importera bil från Dubai (Förenade Arabemiraten) till Sverige",
+        "metaTitle": "Importera bil från Dubai till Sverige – kostnad, tull, moms | CarImport.eu",
+        "metaDescription": "Importera bil från Dubai och Förenade Arabemiraten: Emirates Auction och handlare, GCC-spec, frakt från Jebel Ali, tull, moms och registrering. Kostnadskalkylator.",
+        "lead": "Dubai är en marknad för premium- och sportbilar med låga mätarställningar, ofta knappt använda. Bilar i GCC-utförande är byggda för hetta och säljs till attraktiva priser.",
+        "why": "Lyx- och sportmodeller, låga mätarställningar och torrt klimat (ingen rost). Priserna i dirham är knutna till US-dollarn.",
+        "auctions": "Emirates Auction och handlare i Dubai och Sharjah; en lokal exportör ordnar exportcertifikatet och frakten från Jebel Ali.",
+        "docs": "Exportcertifikat, faktura, konossement, tulldeklaration i EU, översättningar, besiktningsintyg.",
+        "tip": "Hettan sliter på gummidetaljer och interiörer – be om bilder på tätningslister, däck och instrumentbräda.",
+        "faq1": {
+          "q": "Hur lång tid tar frakten från Dubai?",
+          "a": "Från Jebel Ali via Suez cirka {{min}}–{{max}} dagar till sjöss beroende på EU-hamn; Medelhavshamnarna ligger närmast."
+        },
+        "faq2": {
+          "q": "Vad är en bil i GCC-utförande?",
+          "a": "En bil byggd för marknaden i Persiska viken: kraftigare kylning och luftkonditionering, ibland annan avgasreningsutrustning. Den kan registreras i EU efter besiktning."
+        }
+      },
+      "UK": {
+        "h1": "Importera bil från Storbritannien till Sverige",
+        "metaTitle": "Importera bil från Storbritannien efter Brexit – tull, moms | CarImport.eu",
+        "metaDescription": "Importera bil från Storbritannien efter Brexit: tull och förmånsberättigande ursprung, moms, högerstyrning, kort frakt och registrering. Kostnadskalkylator.",
+        "lead": "Sedan Brexit är en bil från Storbritannien en import från ett land utanför EU: tulldeklaration, tull och importmoms tillkommer. Resan är kort, och bilar tillverkade i Storbritannien eller EU kan kvalificera för 0 % tull.",
+        "why": "En stor begagnatmarknad, bra servicehistorik och kort frakt med RoRo eller färja. Högerstyrningen måste tas med i beräkningen.",
+        "auctions": "Copart UK, BCA, Manheim UK och handlare. Köper du av en momsregistrerad handlare kan den brittiska momsen återbetalas vid export.",
+        "docs": "V5C (registreringsbevis), faktura, exportdeklaration, ursprungsförsäkran om förmånsberättigande ursprung (för 0 % tull), tulldeklaration i EU, översättningar, besiktningsintyg.",
+        "tip": "Be säljaren om en ursprungsförsäkran om förmånsberättigande ursprung – enligt handelsavtalet mellan EU och Storbritannien kan den sänka tullen till noll för bilar tillverkade i Storbritannien eller EU.",
+        "faq1": {
+          "q": "Hur lång tid tar transporten från Storbritannien?",
+          "a": "Bara {{min}}–{{max}} dagar till sjöss (RoRo eller färja), plus tullformaliteter på båda sidor."
+        },
+        "faq2": {
+          "q": "Betalar jag tull på en bil från Storbritannien?",
+          "a": "Ja, 10 % – om inte bilen har styrkt förmånsberättigande ursprung (tillverkad i Storbritannien eller EU) enligt avtalet mellan EU och Storbritannien, då kan tullen bli 0 %. Importmoms ska alltid betalas."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: import av bil från länder utanför EU",
+      "metaTitle": "{{country}} – bilimport: moms {{vat}} %, registrering, hamnar | CarImport.eu",
+      "metaDescription": "Importera bil till {{country}} från USA, Kanada, Japan, Arabemiraten eller Storbritannien: importmoms {{vat}} %, registrering, besiktning, hamnar och hela kostnaden.",
+      "lead": "Allt som är viktigt när du registrerar en importbil i {{country}}: skatt, myndigheter, besiktning och de billigaste hamnarna.",
+      "facts": {
+        "title": "Viktiga fakta",
+        "vat": "Importmoms (normalskattesats)",
+        "currency": "Valuta",
+        "registrationTax": "Engångsskatt vid registrering",
+        "noTax": "ingen",
+        "authority": "Registreringsmyndighet",
+        "inspection": "Besiktning före registrering",
+        "deadline": "Frist för registrering",
+        "deadlineValue": "{{days}} dagar",
+        "noDeadline": "se lokala regler"
+      },
+      "p1": "Tullen är densamma i alla EU-länder: 10 % av CIF-värdet för personbilar. Importmomsen betalas i det land där bilen förtullas – {{vat}} % om du förtullar den här.",
+      "p2": "Att förtulla i ett annat EU-land med lägre moms kan bli billigare även med den extra transporten – kalkylatorn jämför alla hamnar dörr till dörr.",
+      "p3": "Lokala registreringsskatter och besiktningar är inte harmoniserade inom EU; planera kostnaden och tiden för dem innan du köper.",
+      "portsTitle": "Närmaste förtullningshamnar",
+      "portsNote": "Uppskattat vägavstånd till befolkningscentrum i {{country}}.",
+      "originsTitle": "Var du köper",
+      "faq1": {
+        "q": "Hur mycket moms betalar jag på en importbil?",
+        "a": "Om bilen förtullas i {{country}}, {{vat}} % av tullvärdet plus tull och transportkostnader till destinationen. Förtullar du någon annanstans i EU gäller det landets importmoms."
+      },
+      "faq2": {
+        "q": "Var registrerar jag en importbil?",
+        "a": "Hos {{authority}}, efter besiktningen ({{inspection}}) och med översatta köp- och tulldokument."
+      }
+    },
+    "port": {
+      "h1": "Hamnen {{port}} ({{country}}): förtullning av importbilar",
+      "metaTitle": "{{port}} – bilimport, förtullning, moms {{vat}} % | CarImport.eu",
+      "metaDescription": "Förtulla en importbil i {{port}} ({{country}}): terminal- och ombudsavgifter, importmoms {{vat}} %, sjötider från USA, Japan och Arabemiraten samt avstånd.",
+      "lead": "{{port}} är en förtullningshamn i {{country}}. Här är avgifterna, sjötransporttiderna och vägavstånden – och om det lönar sig att förtulla din bil här.",
+      "facts": {
+        "title": "Hamnen i korthet",
+        "country": "Land",
+        "region": "Havsområde",
+        "vat": "Importmoms vid förtullning här",
+        "unloading": "Terminalhantering och lossning ur container",
+        "agency": "Tullombud",
+        "perCar": "per bil"
+      },
+      "sailingTitle": "Sjötransporttid till {{port}}",
+      "sailingNote": "Delad container från de viktigaste exporthamnarna; RoRo tar några dagar längre.",
+      "days": "{{min}}–{{max}} dagar",
+      "distancesTitle": "Vägavstånd från {{port}}",
+      "alternativesTitle": "Andra hamnar i närheten",
+      "p1": "Förtullning i {{port}} innebär importmoms i {{country}} ({{vat}} %). Registrerar du bilen i ett annat EU-land levereras den sedan på väg.",
+      "p2": "Kalkylatorn jämför {{port}} med alla andra EU-hamnar för din adress och visar det billigaste alternativet.",
+      "faq1": {
+        "q": "Vad kostar det att förtulla en bil i {{port}}?",
+        "a": "Terminalhantering och lossning ur container cirka {{unloading}}, tullombud cirka {{agency}}, plus tull och importmoms på {{vat}} %."
+      },
+      "faq2": {
+        "q": "Kan jag förtulla en bil här och registrera den i ett annat EU-land?",
+        "a": "Ja. En privatperson betalar importmomsen här; ett momsregistrerat företag kan använda tullförfarande 4200 och redovisa momsen i sitt eget land."
+      }
+    },
+    "cta": {
+      "title": "Beräkna den exakta kostnaden för din bil",
+      "text": "Ange bara din adress – vi föreslår resten och prissätter varje hamn dörr till dörr.",
+      "button": "Öppna kalkylatorn"
+    },
+    "related": "Relaterade guider",
+    "disclaimer": "Informationen är endast vägledande; skatte- och tullmyndigheterna fastställer de slutliga beloppen. Satser enligt kalkylatorn."
   }
 }

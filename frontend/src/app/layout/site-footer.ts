@@ -2,6 +2,7 @@ import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LANGUAGES, LanguageService } from '../core/i18n/language.service';
+import { GuideRef, GuideSection, guidePath } from '../core/routing/guide-paths';
 import { pathFor } from '../core/routing/paths';
 import { SITE } from '../core/site.config';
 import { Flag } from '../shared/flag/flag';
@@ -13,7 +14,7 @@ import { Logo } from './logo';
   imports: [RouterLink, TranslatePipe, Logo, Flag, Icon],
   template: `
     <footer class="mt-20 border-t border-line">
-      <div class="site grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <div class="site grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr]">
         <div>
           <app-logo />
           <p class="mt-5 max-w-xs text-sm leading-relaxed text-muted">{{ 'footer.about' | translate }}</p>
@@ -31,6 +32,18 @@ import { Logo } from './logo';
                   <app-flag [code]="o.code" class="w-5" /> {{ 'footer.importFrom.' + o.code | translate }}
                 </a>
               </li>
+            }
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="label">{{ 'guide.nav.title' | translate }}</h2>
+          <ul class="space-y-2.5 text-sm text-fg/85">
+            @for (s of guideSections; track s) {
+              <li><a [routerLink]="guide({ section: s, item: null })" class="hover:text-brand-text">{{ 'guide.nav.' + s | translate }}</a></li>
+            }
+            @if (homeCountry(); as h) {
+              <li><a [routerLink]="guide({ section: 'countries', item: h })" class="hover:text-brand-text">{{ countryName(h) }}</a></li>
             }
           </ul>
         </div>
@@ -79,5 +92,15 @@ export class SiteFooter {
   protected readonly home = computed(() => pathFor('home', this.lang.current()));
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly about = computed(() => pathFor('about', this.lang.current()));
+  protected readonly guideSections: GuideSection[] = ['origins', 'countries', 'ports'];
+  protected readonly homeCountry = computed(() => this.lang.info().home);
+
+  protected guide(ref: GuideRef): string {
+    return guidePath(ref, this.lang.current());
+  }
+
+  protected countryName(code: string): string {
+    return new Intl.DisplayNames([this.lang.locale()], { type: 'region' }).of(code) ?? code;
+  }
   protected readonly privacy = computed(() => pathFor('privacy', this.lang.current()));
 }

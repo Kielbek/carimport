@@ -1010,5 +1010,252 @@
     "hint": "Los importes de la subasta (USD, JPY, AED…) se convierten al tipo actual del banco central. La moneda no cambia el cálculo de los impuestos – estos siempre los determina el país de despacho.",
     "groupEu": "Monedas de la UE",
     "groupOther": "Otras"
+  },
+  "guide": {
+    "nav": {
+      "title": "Guías de importación",
+      "origins": "Importar según el país de compra",
+      "countries": "Importar a países de la UE",
+      "ports": "Puertos de despacho en la UE",
+      "all": "Todas las guías"
+    },
+    "hub": {
+      "origins": {
+        "title": "Guías para importar un coche: EE. UU., Canadá, Japón, EAU y Reino Unido",
+        "lead": "Guías paso a paso para cada país donde puedes comprar un coche: subastas, documentos, plazos de transporte, aranceles, IVA y matriculación en España, con los costes reales en tu calculadora.",
+        "metaTitle": "Guías de importación – EE. UU., Canadá, Japón, EAU, UK | CarImport.eu",
+        "metaDescription": "Cómo importar un coche de EE. UU., Canadá, Japón, EAU o Reino Unido a España: subastas, documentos, transporte, aranceles, IVA y matriculación paso a paso."
+      },
+      "countries": {
+        "title": "Importar un coche a cada país de la UE",
+        "lead": "Tipo de IVA, impuesto de matriculación, organismo competente, inspección técnica y puertos de despacho más cercanos para los 27 Estados miembros de la UE.",
+        "metaTitle": "Importar un coche a países de la UE – IVA, matriculación, puertos | CarImport.eu",
+        "metaDescription": "IVA a la importación, impuestos de matriculación, organismos, inspecciones y puertos más cercanos de los 27 países de la UE: compara y calcula el coste total.",
+        "yours": "Tu país"
+      },
+      "ports": {
+        "title": "Puertos de despacho en la UE para coches importados",
+        "lead": "Los {{count}} puertos marítimos de la UE donde se despachan coches de fuera de la UE: tasas, IVA, tiempos de travesía desde EE. UU., Canadá, Japón, EAU y Reino Unido, y distancias por carretera.",
+        "metaTitle": "{{count}} puertos de la UE para importar coches – tasas, IVA | CarImport.eu",
+        "metaDescription": "Compara los {{count}} puertos de despacho de la UE: tasas de terminal y de agente de aduanas, IVA a la importación, travesías y distancias por carretera a España.",
+        "sortedFrom": "Ordenados por distancia por carretera a: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Paso a paso",
+        "costsTitle": "Lo que pagas",
+        "portsTitle": "Puertos de despacho más cercanos",
+        "docsTitle": "Documentos necesarios",
+        "whyTitle": "Por qué comprar aquí",
+        "auctionsTitle": "Dónde comprar",
+        "tipTitle": "Consejo",
+        "step1": {
+          "title": "Compra el coche",
+          "text": "Gana la subasta o compra a un concesionario. Las comisiones de subasta dependen del tramo de precio y del título; la calculadora aplica las tarifas vigentes."
+        },
+        "step2": {
+          "title": "Transporte al puerto de exportación",
+          "text": "Un camión lleva el coche desde el depósito hasta el puerto; los vehículos que no arrancan necesitan carretilla y cabrestante, con coste adicional."
+        },
+        "step3": {
+          "title": "Flete marítimo",
+          "text": "Contenedor compartido, contenedor exclusivo o RoRo. La travesía hasta la UE dura {{min}}–{{max}} días, más la carga y la espera del buque."
+        },
+        "step4": {
+          "title": "Despacho de aduanas en el puerto de la UE",
+          "text": "Un agente de aduanas presenta la declaración. Pagas los derechos de aduana y el IVA a la importación en el país del puerto, salvo que una empresa utilice el régimen aduanero 4200."
+        },
+        "step5": {
+          "title": "Entrega en tu domicilio",
+          "text": "Camión portavehículos, grúa o conducción con matrícula temporal, con precio por kilómetro desde el puerto."
+        },
+        "step6": {
+          "title": "Inspección y matriculación",
+          "text": "Inspección técnica, traducciones y matriculación en tu país de residencia, más el posible impuesto de matriculación local."
+        },
+        "cost": {
+          "duty": "Derechos de aduana",
+          "dutyValue": "10 % del valor CIF (pickups 22 %, motocicletas 6–8 %, vehículos históricos 0 %)",
+          "vat": "IVA a la importación",
+          "vatValue": "{{vat}} % – {{country}}",
+          "vatRange": "17–27 % según el país de despacho",
+          "registration": "Impuesto local al matricular",
+          "none": "ninguno",
+          "shipping": "Tiempo de travesía",
+          "shippingValue": "{{min}}–{{max}} días",
+          "currency": "Moneda de la subasta"
+        },
+        "portsNote": "Distancia por carretera desde el puerto hasta el centro de población del país: {{country}}. La calculadora valora cada puerto puerta a puerta para tu dirección exacta.",
+        "portsNoteEu": "La calculadora valora todos los puertos de la UE puerta a puerta para tu dirección exacta y elige el más barato.",
+        "faqPorts": {
+          "q": "¿Qué puerto me sale más barato?",
+          "a": "Depende de tu dirección, del IVA a la importación del país del puerto y del calendario de navieras. La calculadora valora cada puerto de la UE puerta a puerta y los ordena del más barato al más caro."
+        },
+        "faqBinding": {
+          "q": "¿Es vinculante el presupuesto?",
+          "a": "No. Se basa en tarifas y listas de precios actuales; las autoridades aduaneras y tributarias fijan los importes definitivos. El informe en PDF detalla cada tipo y supuesto para que puedas compararlos."
+        }
+      },
+      "USA": {
+        "h1": "Importar un coche de Estados Unidos a España",
+        "metaTitle": "Importar un coche de EE. UU. a España – costes, aranceles, IVA | CarImport.eu",
+        "metaDescription": "Cómo importar un coche de EE. UU. a España: subastas Copart e IAAI, plazos de envío, 10 % de arancel, IVA, documentos y matriculación. Calcula el coste en un minuto.",
+        "lead": "Estados Unidos es la mayor fuente de coches importados: millones de vehículos al año en Copart e IAAI, a menudo a precios muy inferiores a los del mercado europeo. Así es todo el proceso y esto es lo que cuesta de verdad.",
+        "why": "Enorme oferta, precios bajos de coches siniestrados (salvage), motores potentes y versiones bien equipadas poco habituales en Europa. La pega: hay que adaptar la iluminación estadounidense y a veces el velocímetro, y reparar un coche siniestrado puede salir caro.",
+        "auctions": "Copart e IAAI (Insurance Auto Auctions) venden sobre todo coches de aseguradoras con título clean o salvage; Manheim y los concesionarios venden coches sin daños. Normalmente se puja a través de un intermediario con licencia de subasta.",
+        "docs": "Título de propiedad (clean o salvage), factura / bill of sale, conocimiento de embarque (B/L), declaración de exportación estadounidense (EEI/AES), declaración aduanera en el puerto de la UE, traducciones del título y la factura, certificado de inspección técnica.",
+        "tip": "Revisa el historial del VIN (accidentes, inundaciones, kilometraje) antes de pujar y reserva un margen para daños ocultos: la calculadora lo añade como escenario de riesgo.",
+        "faq1": {
+          "q": "¿Cuánto tarda el envío desde Estados Unidos?",
+          "a": "Desde la Costa Este (Nueva Jersey, Savannah), unos {{min}} días de travesía hasta los puertos del mar del Norte; desde Houston y California, hasta {{max}} días. Suma 1–3 semanas de transporte al puerto y espera del buque."
+        },
+        "faq2": {
+          "q": "¿Es un problema un título salvage en la UE?",
+          "a": "No: en la UE no se utilizan las marcas de título estadounidenses. Eso sí, el coche debe superar la inspección técnica tras la reparación, así que presupuesta una reparación de calidad y el riesgo de daños ocultos."
+        }
+      },
+      "CANADA": {
+        "h1": "Importar un coche de Canadá a España",
+        "metaTitle": "Importar un coche de Canadá a España – costes, aranceles, IVA | CarImport.eu",
+        "metaDescription": "Importa un coche de Canadá a España: Copart e IAAI Canadá, envío desde Halifax y Montreal, 10 % de arancel, IVA, documentos y matriculación. Calculadora del coste total.",
+        "lead": "Los coches canadienses son parecidos a los estadounidenses, pero suelen estar mejor preparados para el invierno, llevan velocímetro métrico y tienen precios más bajos en dólares canadienses. El envío desde Halifax y Montreal a Europa es de los más cortos del Atlántico.",
+        "why": "Cuadros de instrumentos métricos, paquetes de invierno, calefactores de bloque y buena protección anticorrosión; los precios en CAD suelen ser más bajos que en EE. UU. para el mismo modelo.",
+        "auctions": "Copart e IAAI también operan en Canadá; para coches sin daños existen la venta en concesionario y entre particulares. Las pujas se hacen a través de un intermediario.",
+        "docs": "Permiso de circulación / título de propiedad (o título salvage), contrato de compraventa, conocimiento de embarque (B/L), declaración de exportación canadiense, declaración aduanera en la UE, traducciones, certificado de inspección técnica.",
+        "tip": "Las provincias del este (Ontario, Quebec) son las más cercanas a los puertos de Montreal y Halifax; el transporte terrestre desde el oeste cuesta mucho más.",
+        "faq1": {
+          "q": "¿Cuánto tarda el envío desde Canadá?",
+          "a": "Desde Halifax y Montreal, unos {{min}}–{{max}} días de travesía hasta los puertos del mar del Norte, más el transporte al puerto y la espera del buque."
+        },
+        "faq2": {
+          "q": "¿Hay que adaptar un coche canadiense?",
+          "a": "Normalmente menos que uno estadounidense: el velocímetro ya es métrico. Aun así, puede ser necesario adaptar la iluminación (intermitentes traseros ámbar, luces de posición laterales) a la normativa de la UE."
+        }
+      },
+      "JAPAN": {
+        "h1": "Importar un coche de Japón a España",
+        "metaTitle": "Importar un coche de Japón a España – JDM, aranceles, IVA | CarImport.eu",
+        "metaDescription": "Importa un coche JDM de Japón a España: subastas USS, hojas de subasta, envío desde Yokohama, aranceles, IVA, volante a la derecha y matriculación. Calculadora completa.",
+        "lead": "Japón es la cuna de los coches JDM: pocos kilómetros, un estado excelente y modelos que nunca se vendieron en Europa. Las hojas de subasta describen cada coche con detalle, pero llevan el volante a la derecha y el viaje es largo.",
+        "why": "Muy buen estado gracias a las estrictas inspecciones (shaken), una valoración honesta en las subastas y deportivos y kei cars únicos. Los precios en yenes son atractivos.",
+        "auctions": "USS es la mayor red de subastas; otras son TAA, CAA y JU. Se compra a través de un exportador que traduce la hoja de subasta y gestiona la baja para exportación.",
+        "docs": "Certificado de exportación (baja del registro), hoja de subasta y factura, conocimiento de embarque (B/L), declaración aduanera en la UE, traducciones, certificado de inspección técnica.",
+        "tip": "Antes de comprar, comprueba si tu país restringe los coches con volante a la derecha y cómo los trata la inspección técnica.",
+        "faq1": {
+          "q": "¿Cuánto tarda el envío desde Japón?",
+          "a": "Por el canal de Suez, unos {{min}}–{{max}} días de travesía según el puerto de la UE; los puertos del Mediterráneo son los más rápidos. Suma el tiempo de los documentos de exportación."
+        },
+        "faq2": {
+          "q": "¿Puedo matricular un coche con volante a la derecha?",
+          "a": "En la mayoría de los países de la UE, sí, a veces ajustando los faros. Algunos países limitan la matriculación definitiva de coches con volante a la derecha: consulta la normativa local antes de comprar."
+        }
+      },
+      "UAE": {
+        "h1": "Importar un coche de Dubái (EAU) a España",
+        "metaTitle": "Importar un coche de Dubái (EAU) a España – costes, aranceles | CarImport.eu",
+        "metaDescription": "Importa un coche de Dubái y los EAU a España: Emirates Auction y concesionarios, especificación GCC, envío desde Jebel Ali, aranceles, IVA y matriculación.",
+        "lead": "Dubái es un mercado de coches premium y deportivos con pocos kilómetros, a menudo casi sin uso. Los coches con especificación GCC están preparados para el calor y se venden a precios atractivos.",
+        "why": "Modelos de lujo y deportivos, poco kilometraje y clima seco (sin óxido). Los precios en dírhams están vinculados al dólar estadounidense.",
+        "auctions": "Emirates Auction y concesionarios de Dubái y Sharjah; un exportador local tramita el certificado de exportación y el envío desde Jebel Ali.",
+        "docs": "Certificado de exportación, factura, conocimiento de embarque (B/L), declaración aduanera en la UE, traducciones, certificado de inspección técnica.",
+        "tip": "El calor desgasta las gomas y el interior: pide fotos de juntas, neumáticos y salpicadero.",
+        "faq1": {
+          "q": "¿Cuánto tarda el envío desde Dubái?",
+          "a": "Desde Jebel Ali por Suez, unos {{min}}–{{max}} días de travesía según el puerto de la UE; los puertos del Mediterráneo son los más cercanos."
+        },
+        "faq2": {
+          "q": "¿Qué es un coche con especificación GCC?",
+          "a": "Un coche fabricado para el mercado del Golfo: refrigeración y aire acondicionado más potentes y, a veces, distinto equipamiento de emisiones. Puede matricularse en la UE tras superar la inspección técnica."
+        }
+      },
+      "UK": {
+        "h1": "Importar un coche del Reino Unido a España",
+        "metaTitle": "Importar un coche del Reino Unido tras el Brexit – aranceles, IVA | CarImport.eu",
+        "metaDescription": "Importa un coche del Reino Unido a España tras el Brexit: aranceles y origen preferencial, IVA, volante a la derecha, envío corto y matriculación. Calculadora completa.",
+        "lead": "Desde el Brexit, un coche del Reino Unido es una importación de fuera de la UE: se aplican declaración aduanera, aranceles e IVA a la importación. El trayecto es corto y los coches fabricados en el Reino Unido o en la UE pueden acogerse a un arancel del 0 %.",
+        "why": "Un gran mercado de coches usados, buenos historiales de mantenimiento y envío rápido en RoRo o ferri. Hay que tener en cuenta el volante a la derecha.",
+        "auctions": "Copart UK, BCA, Manheim UK y concesionarios. Si compras a un concesionario registrado a efectos del IVA, el IVA británico puede devolverse al exportar.",
+        "docs": "Documento de registro V5C, factura, declaración de exportación, declaración de origen preferencial (para el arancel del 0 %), declaración aduanera en la UE, traducciones, certificado de inspección técnica.",
+        "tip": "Pide al vendedor una declaración de origen preferencial: según el Acuerdo de Comercio y Cooperación UE–Reino Unido, puede reducir el arancel a cero para coches fabricados en el Reino Unido o en la UE.",
+        "faq1": {
+          "q": "¿Cuánto tarda el transporte desde el Reino Unido?",
+          "a": "Solo {{min}}–{{max}} días por mar (RoRo o ferri), más los trámites aduaneros en ambos lados."
+        },
+        "faq2": {
+          "q": "¿Pago aranceles por un coche del Reino Unido?",
+          "a": "Sí, un 10 %, salvo que el coche tenga origen preferencial acreditado (fabricado en el Reino Unido o en la UE) según el acuerdo UE–Reino Unido; en ese caso el arancel puede ser del 0 %. El IVA a la importación se paga siempre."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: importar un coche de fuera de la UE",
+      "metaTitle": "{{country}} – importar un coche: IVA {{vat}} %, matriculación | CarImport.eu",
+      "metaDescription": "Importar un coche desde EE. UU., Canadá, Japón, EAU o Reino Unido a {{country}}: IVA a la importación {{vat}} %, matriculación, inspección, puertos y coste total.",
+      "lead": "Todo lo importante para matricular un coche importado en {{country}}: impuestos, organismos, inspección y los puertos más baratos.",
+      "facts": {
+        "title": "Datos clave",
+        "vat": "IVA a la importación (tipo general)",
+        "currency": "Moneda",
+        "registrationTax": "Impuesto único al matricular",
+        "noTax": "ninguno",
+        "authority": "Organismo de matriculación",
+        "inspection": "Inspección antes de matricular",
+        "deadline": "Plazo para matricular",
+        "deadlineValue": "{{days}} días",
+        "noDeadline": "consulta la normativa local"
+      },
+      "p1": "Los derechos de aduana son los mismos en todos los países de la UE: el 10 % del valor CIF para turismos. El IVA a la importación se paga en el país donde se despacha el coche: un {{vat}} % si lo despachas aquí.",
+      "p2": "Despachar en otro país de la UE con un IVA más bajo puede salir más barato incluso con el transporte adicional; la calculadora compara todos los puertos puerta a puerta.",
+      "p3": "Los impuestos de matriculación y las inspecciones locales no están armonizados en la UE; planifica su coste y su plazo antes de comprar.",
+      "portsTitle": "Puertos de despacho más cercanos",
+      "portsNote": "Distancia estimada por carretera hasta el centro de población del país: {{country}}.",
+      "originsTitle": "Dónde comprar",
+      "faq1": {
+        "q": "¿Cuánto IVA pago por un coche importado?",
+        "a": "Si el coche se despacha en {{country}}, el {{vat}} % del valor en aduana más los aranceles y los gastos de transporte hasta el destino. Si se despacha en otro país de la UE, se aplica el IVA a la importación de ese país."
+      },
+      "faq2": {
+        "q": "¿Dónde matriculo un coche importado?",
+        "a": "En el organismo competente ({{authority}}), tras la inspección ({{inspection}}) y con los documentos de compra y de aduana traducidos."
+      }
+    },
+    "port": {
+      "h1": "Puerto de {{port}} ({{country}}): despacho de aduanas de coches importados",
+      "metaTitle": "{{port}} – importar coches, aduana, IVA {{vat}} % | CarImport.eu",
+      "metaDescription": "Despachar un coche importado en {{port}} ({{country}}): tasas de terminal y agente, IVA a la importación {{vat}} %, travesías desde EE. UU., Japón y EAU, distancias.",
+      "lead": "{{port}} es un puerto de despacho en {{country}}. Aquí tienes sus tasas, tiempos de travesía y distancias por carretera, y si te conviene despachar aquí tu coche.",
+      "facts": {
+        "title": "El puerto de un vistazo",
+        "country": "País",
+        "region": "Zona marítima",
+        "vat": "IVA a la importación si se despacha aquí",
+        "unloading": "Manipulación en terminal y desconsolidación",
+        "agency": "Agente de aduanas",
+        "perCar": "por coche"
+      },
+      "sailingTitle": "Tiempo de travesía a {{port}}",
+      "sailingNote": "Contenedor compartido desde los principales puertos de exportación; el RoRo tarda unos días más.",
+      "days": "{{min}}–{{max}} días",
+      "distancesTitle": "Distancia por carretera desde {{port}}",
+      "alternativesTitle": "Otros puertos cercanos",
+      "p1": "Despachar en {{port}} significa pagar el IVA a la importación del país del puerto ({{country}}, {{vat}} %). Si matriculas el coche en otro país de la UE, se entrega después por carretera.",
+      "p2": "La calculadora compara {{port}} con todos los demás puertos de la UE para tu dirección y muestra la opción más barata.",
+      "faq1": {
+        "q": "¿Cuánto cuesta despachar un coche en {{port}}?",
+        "a": "Manipulación en terminal y desconsolidación, unos {{unloading}}; agente de aduanas, unos {{agency}}; más los derechos de aduana y el IVA a la importación del {{vat}} %."
+      },
+      "faq2": {
+        "q": "¿Puedo despachar un coche aquí y matricularlo en otro país de la UE?",
+        "a": "Sí. Un comprador particular paga aquí el IVA a la importación; una empresa registrada a efectos del IVA puede utilizar el régimen aduanero 4200 y liquidar el IVA en su propio país."
+      }
+    },
+    "cta": {
+      "title": "Calcula el coste exacto de tu coche",
+      "text": "Introduce solo tu dirección: nosotros proponemos el resto y valoramos cada puerto puerta a puerta.",
+      "button": "Abrir la calculadora"
+    },
+    "related": "Guías relacionadas",
+    "disclaimer": "Información meramente orientativa; las autoridades tributarias y aduaneras fijan los importes definitivos. Tipos según los utiliza la calculadora."
   }
 }

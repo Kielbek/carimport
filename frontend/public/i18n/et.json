@@ -1010,5 +1010,252 @@
     "hint": "Oksjonisummad (USD, JPY, AED…) arvestatakse ümber keskpanga kehtiva kursiga. Valuuta ei muuda maksude arvutamist – makse määrab alati tollivormistuse riik.",
     "groupEu": "ELi valuutad",
     "groupOther": "Muud"
+  },
+  "guide": {
+    "nav": {
+      "title": "Impordijuhendid",
+      "origins": "Import osturiigi järgi",
+      "countries": "Import ELi riikidesse",
+      "ports": "ELi tollivormistussadamad",
+      "all": "Kõik juhendid"
+    },
+    "hub": {
+      "origins": {
+        "title": "Auto impordi juhendid: USA, Kanada, Jaapan, AÜE ja Ühendkuningriik",
+        "lead": "Samm-sammulised juhendid iga riigi kohta, kust saad auto osta: oksjonid, dokumendid, transpordiaeg, tollimaks, käibemaks ja registreerimine Eestis – tegelike kuludega kalkulaatoris.",
+        "metaTitle": "Auto impordi juhendid – USA, Kanada, Jaapan, AÜE, UK | CarImport.eu",
+        "metaDescription": "Kuidas tuua auto Eestisse USAst, Kanadast, Jaapanist, AÜEst või Ühendkuningriigist: oksjonid, dokumendid, transport, toll, käibemaks ja registreerimine."
+      },
+      "countries": {
+        "title": "Auto import igasse ELi riiki",
+        "lead": "Käibemaksumäär, registreerimismaks, registreeriv asutus, ülevaatus ja lähimad tollivormistussadamad kõigi 27 ELi liikmesriigi kohta.",
+        "metaTitle": "Auto import ELi riikidesse – käibemaks, registreerimine | CarImport.eu",
+        "metaDescription": "Impordikäibemaks, registreerimismaksud, asutused, ülevaatused ja lähimad sadamad kõigis 27 ELi riigis – võrdle ja arvuta imporditud auto täishind.",
+        "yours": "Sinu riik"
+      },
+      "ports": {
+        "title": "ELi tollivormistussadamad imporditud autodele",
+        "lead": "Kõik {{count}} ELi meresadamat, kus vormistatakse väljastpoolt ELi toodud autosid: tasud, käibemaks, laevasõidu kestus USAst, Kanadast, Jaapanist, AÜEst ja Ühendkuningriigist ning teekaugused.",
+        "metaTitle": "{{count}} ELi sadamat auto impordiks – tasud, käibemaks | CarImport.eu",
+        "metaDescription": "Võrdle kõiki {{count}} ELi autode tollivormistussadamat: terminali- ja tolliagendi tasud, impordikäibemaks, laevasõidu kestus ja teekaugus Eestisse.",
+        "sortedFrom": "Sorteeritud teekauguse järgi riigini: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Samm-sammult",
+        "costsTitle": "Mille eest maksad",
+        "portsTitle": "Lähimad tollivormistussadamad",
+        "docsTitle": "Vajalikud dokumendid",
+        "whyTitle": "Miks osta siit",
+        "auctionsTitle": "Kust osta",
+        "tipTitle": "Nõuanne",
+        "step1": {
+          "title": "Osta auto",
+          "text": "Võida oksjon või osta edasimüüjalt. Oksjonitasud sõltuvad hinnaklassist ja dokumendi tüübist – kalkulaator kasutab kehtivat hinnakirja."
+        },
+        "step2": {
+          "title": "Transport ekspordisadamasse",
+          "text": "Veok viib auto platsilt sadamasse; sõidukõlbmatu auto vajab tõstukit ja vintsi, mis maksab lisaks."
+        },
+        "step3": {
+          "title": "Merevedu",
+          "text": "Jagatud konteiner, eraldi konteiner või RoRo. Laevasõit ELi kestab {{min}}–{{max}} päeva, lisaks laadimine ja laeva ootamine."
+        },
+        "step4": {
+          "title": "Tollivormistus ELi sadamas",
+          "text": "Tolliagent esitab tollideklaratsiooni. Tollimaksu ja impordikäibemaksu maksad sadamariigis – välja arvatud juhul, kui ettevõte kasutab tolliprotseduuri 4200."
+        },
+        "step5": {
+          "title": "Kohaletoimetamine sinu aadressile",
+          "text": "Autovedu, puksiir või sõit ajutiste numbrimärkidega – hind arvestatakse kilomeetrite järgi sadamast."
+        },
+        "step6": {
+          "title": "Ülevaatus ja registreerimine",
+          "text": "Tehnoülevaatus, tõlked ja registreerimine elukohariigis ning võimalik kohalik registreerimismaks."
+        },
+        "cost": {
+          "duty": "Tollimaks",
+          "dutyValue": "10% CIF-väärtusest (pikapid 22%, mootorrattad 6–8%, ajaloolised sõidukid 0%)",
+          "vat": "Impordikäibemaks",
+          "vatValue": "{{vat}}% – {{country}}",
+          "vatRange": "17–27% sõltuvalt tollivormistuse riigist",
+          "registration": "Kohalik maks registreerimisel",
+          "none": "puudub",
+          "shipping": "Laevasõidu kestus",
+          "shippingValue": "{{min}}–{{max}} päeva",
+          "currency": "Oksjoni valuuta"
+        },
+        "portsNote": "Teekaugus sadamast riigini {{country}} (asustuse keskpunkt). Kalkulaator arvutab iga sadama hinna uksest ukseni sinu täpse aadressi jaoks.",
+        "portsNoteEu": "Kalkulaator arvutab kõigi ELi sadamate hinna uksest ukseni sinu täpse aadressi jaoks ja valib odavaima.",
+        "faqPorts": {
+          "q": "Milline sadam on minu jaoks odavaim?",
+          "a": "See sõltub sinu aadressist, sadamariigi impordikäibemaksust ja laevagraafikust. Kalkulaator arvutab iga ELi sadama hinna uksest ukseni ja näitab need odavaimast alates."
+        },
+        "faqBinding": {
+          "q": "Kas hinnang on siduv?",
+          "a": "Ei. See põhineb kehtivatel määradel ja hinnakirjadel; lõplikud summad määravad toll ja maksuamet. PDF-aruanne loetleb kõik määrad ja eeldused, et saaksid võrrelda."
+        }
+      },
+      "USA": {
+        "h1": "Auto import USAst Eestisse",
+        "metaTitle": "Auto import USAst Eestisse – kulud, toll, käibemaks | CarImport.eu",
+        "metaDescription": "Kuidas tuua auto USAst Eestisse: Copart ja IAAI oksjonid, transpordiaeg, 10% toll, käibemaks, dokumendid ja registreerimine. Arvuta täishind minutiga.",
+        "lead": "USA on imporditud autode suurim allikas: Copartis ja IAAI-s on igal aastal miljoneid sõidukeid, sageli Euroopa turust tunduvalt odavamalt. Siin on näha, kuidas kogu protsess käib ja mis see tegelikult maksab.",
+        "why": "Tohutu valik, madalad hinnad kahjustatud (salvage) autodele, võimsad mootorid ja hästi varustatud versioonid, mida Euroopas napib. Konks: USA tuled ja mõnikord ka spidomeeter tuleb ümber ehitada ning salvage-autode remont võib olla kallis.",
+        "auctions": "Copart ja IAAI (Insurance Auto Auctions) müüvad peamiselt kindlustusautosid puhta või salvage-dokumendiga; Manheim ja edasimüüjad müüvad kahjustusteta autosid. Pakkumisi tehakse tavaliselt oksjonilitsentsiga vahendaja kaudu.",
+        "docs": "Omandidokument (title, puhas või salvage), arve / ostu-müügileping, konossement, USA ekspordideklaratsioon (EEI/AES), tollideklaratsioon ELi sadamas, omandidokumendi ja arve tõlked, ülevaatuse tõend.",
+        "tip": "Kontrolli enne pakkumist VIN-koodi ajalugu (õnnetused, üleujutus, läbisõit) ja jäta varjatud kahjude jaoks puhver – kalkulaator lisab selle riskistsenaariumina.",
+        "faq1": {
+          "q": "Kui kaua kestab transport USAst?",
+          "a": "Idarannikult (New Jersey, Savannah) umbes {{min}} päeva merel Põhjamere sadamatesse, Houstonist ja Californiast kuni {{max}} päeva. Lisa 1–3 nädalat transpordiks sadamasse ja laeva ootamiseks."
+        },
+        "faq2": {
+          "q": "Kas salvage-dokument on ELis probleem?",
+          "a": "Ei – EL ei kasuta USA dokumentide märgistusi. Auto peab aga pärast remonti läbima tehnoülevaatuse, seega arvesta korraliku remondi ja varjatud kahjude riskiga."
+        }
+      },
+      "CANADA": {
+        "h1": "Auto import Kanadast Eestisse",
+        "metaTitle": "Auto import Kanadast Eestisse – kulud, toll, käibemaks | CarImport.eu",
+        "metaDescription": "Auto import Kanadast: Copart ja IAAI Canada, vedu Halifaxist ja Montrealist, 10% toll, käibemaks, dokumendid ja registreerimine. Täiskulu kalkulaator.",
+        "lead": "Kanada autod sarnanevad Ameerika omadega, kuid on sageli talveks paremini varustatud, meetermõõdustikus spidomeetriga ja Kanada dollarites odavamad. Laevavedu Halifaxist ja Montrealist Euroopasse on üks lühemaid üle Atlandi.",
+        "why": "Meetermõõdustikus näidikud, talvepaketid, mootori eelsoojendid ja hea roostekaitse; CAD-hinnad on sama mudeli puhul sageli USA omadest madalamad.",
+        "auctions": "Copart ja IAAI tegutsevad ka Kanadas; kahjustusteta autode puhul on võimalus osta edasimüüjalt või eraisikult. Pakkumisi tehakse vahendaja kaudu.",
+        "docs": "Registreerimis- / omanikutunnistus (või salvage-dokument), ostu-müügileping, konossement, Kanada ekspordideklaratsioon, ELi tollideklaratsioon, tõlked, ülevaatuse tõend.",
+        "tip": "Idaprovintsid (Ontario, Quebec) asuvad Montreali ja Halifaxi sadamatele kõige lähemal – sisemaavedu läänest on palju kallim.",
+        "faq1": {
+          "q": "Kui kaua kestab transport Kanadast?",
+          "a": "Halifaxist ja Montrealist umbes {{min}}–{{max}} päeva merel Põhjamere sadamatesse, lisaks transport sadamasse ja laeva ootamine."
+        },
+        "faq2": {
+          "q": "Kas Kanada auto vajab ümberehitust?",
+          "a": "Tavaliselt vähem kui USA auto: spidomeeter on juba meetermõõdustikus. Tuled (merevaigukollased tagumised suunatuled, külgmärgutuled) võivad siiski vajada ELi nõuetega kohandamist."
+        }
+      },
+      "JAPAN": {
+        "h1": "Auto import Jaapanist Eestisse",
+        "metaTitle": "Auto import Jaapanist Eestisse – JDM kulud, toll, käibemaks | CarImport.eu",
+        "metaDescription": "JDM-auto import Jaapanist: USS oksjonid, oksjonilehed, vedu Yokohamast, toll, käibemaks, parempoolne rool ja registreerimine. Täiskulu kalkulaator.",
+        "lead": "Jaapan on JDM-autode kodu: väike läbisõit, suurepärane seisukord ja mudelid, mida Euroopas kunagi ei müüdud. Oksjonilehed kirjeldavad iga autot üksikasjalikult – kuid autod on parempoolse rooliga ja teekond on pikk.",
+        "why": "Väga hea seisukord tänu rangetele ülevaatustele (shaken), ausale oksjonihindamisele ning ainulaadsetele sportautodele ja kei-autodele. Hinnad jeenides on atraktiivsed.",
+        "auctions": "USS on suurim oksjonivõrk; teised on TAA, CAA ja JU. Ostad eksportija kaudu, kes tõlgib oksjonilehe ja korraldab ekspordiks registrist kustutamise.",
+        "docs": "Ekspordisertifikaat (registrist kustutamine), oksjonileht ja arve, konossement, ELi tollideklaratsioon, tõlked, ülevaatuse tõend.",
+        "tip": "Enne ostmist kontrolli, kas sinu riik piirab parempoolse rooliga autosid ja kuidas ülevaatus neid käsitleb.",
+        "faq1": {
+          "q": "Kui kaua kestab transport Jaapanist?",
+          "a": "Läbi Suessi kanali umbes {{min}}–{{max}} päeva merel sõltuvalt ELi sadamast – Vahemere sadamad on kiireimad. Lisa aeg ekspordidokumentide jaoks."
+        },
+        "faq2": {
+          "q": "Kas parempoolse rooliga autot saab registreerida?",
+          "a": "Enamikus ELi riikides jah, mõnikord esitulede reguleerimisega. Mõned riigid piiravad parempoolse rooliga autode alalist registreerimist – kontrolli enne ostu kohalikke reegleid."
+        }
+      },
+      "UAE": {
+        "h1": "Auto import Dubaist (AÜE) Eestisse",
+        "metaTitle": "Auto import Dubaist (AÜE) Eestisse – kulud, toll, käibemaks | CarImport.eu",
+        "metaDescription": "Auto import Dubaist ja AÜEst: Emirates Auction ja edasimüüjad, GCC spec, vedu Jebel Alist, toll, käibemaks ja registreerimine. Täiskulu kalkulaator.",
+        "lead": "Dubai on väikese läbisõiduga, sageli vaevu kasutatud premium- ja sportautode turg. GCC-spetsifikatsiooniga autod on ehitatud kuumuse jaoks ja neid müüakse atraktiivse hinnaga.",
+        "why": "Luksus- ja sportmudelid, väike läbisõit ja kuiv kliima (rooste puudub). Hinnad dirhamites on seotud USA dollariga.",
+        "auctions": "Emirates Auction ning edasimüüjad Dubais ja Sharjah's; kohalik eksportija korraldab ekspordisertifikaadi ja laevaveo Jebel Alist.",
+        "docs": "Ekspordisertifikaat, arve, konossement, ELi tollideklaratsioon, tõlked, ülevaatuse tõend.",
+        "tip": "Kuumus kulutab kummidetaile ja salongi – küsi fotosid tihenditest, rehvidest ja armatuurlauast.",
+        "faq1": {
+          "q": "Kui kaua kestab transport Dubaist?",
+          "a": "Jebel Alist läbi Suessi umbes {{min}}–{{max}} päeva merel sõltuvalt ELi sadamast; Vahemere sadamad on kõige lähemal."
+        },
+        "faq2": {
+          "q": "Mis on GCC-spetsifikatsiooniga auto?",
+          "a": "Pärsia lahe turu jaoks ehitatud auto: tugevam jahutus ja kliimaseade, mõnikord erinev heitgaasivarustus. Selle saab ELis registreerida pärast tehnoülevaatust."
+        }
+      },
+      "UK": {
+        "h1": "Auto import Ühendkuningriigist Eestisse",
+        "metaTitle": "Auto import Ühendkuningriigist pärast Brexitit – toll, käibemaks | CarImport.eu",
+        "metaDescription": "Auto import Ühendkuningriigist Eestisse pärast Brexitit: tollimaks ja sooduspäritolu, käibemaks, parempoolne rool, lühike vedu ja registreerimine.",
+        "lead": "Pärast Brexitit on Ühendkuningriigist toodud auto import väljastpoolt ELi: kehtivad tollideklaratsioon, tollimaks ja impordikäibemaks. Teekond on lühike ning Ühendkuningriigis või ELis valmistatud autod võivad kvalifitseeruda 0% tollimaksule.",
+        "why": "Suur kasutatud autode turg, head hooldusajalood ja lühike vedu RoRo-laeva või parvlaevaga. Arvestada tuleb parempoolse rooliga.",
+        "auctions": "Copart UK, BCA, Manheim UK ja edasimüüjad. Käibemaksukohustuslasest edasimüüjalt ostes saab Ühendkuningriigi käibemaksu ekspordil tagasi.",
+        "docs": "V5C registreerimistunnistus, arve, ekspordideklaratsioon, sooduspäritolu deklaratsioon (0% tollimaksu jaoks), ELi tollideklaratsioon, tõlked, ülevaatuse tõend.",
+        "tip": "Küsi müüjalt sooduspäritolu deklaratsiooni – ELi ja Ühendkuningriigi kaubanduslepingu alusel võib see Ühendkuningriigis või ELis valmistatud autode tollimaksu nullini vähendada.",
+        "faq1": {
+          "q": "Kui kaua kestab transport Ühendkuningriigist?",
+          "a": "Ainult {{min}}–{{max}} päeva meritsi (RoRo või parvlaev), lisaks tolliformaalsused mõlemal poolel."
+        },
+        "faq2": {
+          "q": "Kas Ühendkuningriigi autolt tuleb maksta tollimaksu?",
+          "a": "Jah, 10% – välja arvatud juhul, kui autol on ELi ja Ühendkuningriigi lepingu alusel tõendatud sooduspäritolu (valmistatud Ühendkuningriigis või ELis); siis võib tollimaks olla 0%. Impordikäibemaks tuleb tasuda alati."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: auto import väljastpoolt ELi",
+      "metaTitle": "{{country}} – auto import: käibemaks {{vat}}%, registreerimine | CarImport.eu",
+      "metaDescription": "Auto import USAst, Kanadast, Jaapanist, AÜEst või Ühendkuningriigist, sihtriik {{country}}: käibemaks {{vat}}%, registreerimine, ülevaatus, sadamad ja täishind.",
+      "lead": "Kõik, mis on oluline imporditud auto registreerimisel – riik: {{country}}. Maksud, asutused, ülevaatus ja odavaimad sadamad.",
+      "facts": {
+        "title": "Põhiandmed",
+        "vat": "Impordikäibemaks (standardmäär)",
+        "currency": "Valuuta",
+        "registrationTax": "Ühekordne maks registreerimisel",
+        "noTax": "puudub",
+        "authority": "Registreeriv asutus",
+        "inspection": "Ülevaatus enne registreerimist",
+        "deadline": "Registreerimise tähtaeg",
+        "deadlineValue": "{{days}} päeva",
+        "noDeadline": "vaata kohalikke reegleid"
+      },
+      "p1": "Tollimaks on kõigis ELi riikides sama: sõiduautodel 10% CIF-väärtusest. Impordikäibemaks makstakse riigis, kus auto tollivormistus toimub – siin vormistades {{vat}}%.",
+      "p2": "Tollivormistus mõnes teises madalama käibemaksuga ELi riigis võib ka lisatranspordiga olla odavam – kalkulaator võrdleb kõiki sadamaid uksest ukseni.",
+      "p3": "Kohalikud registreerimismaksud ja ülevaatused ei ole ELis ühtlustatud; arvesta nende kulu ja ajaga enne ostu.",
+      "portsTitle": "Lähimad tollivormistussadamad",
+      "portsNote": "Hinnanguline teekaugus asustuse keskpunktini – riik: {{country}}.",
+      "originsTitle": "Kust osta",
+      "faq1": {
+        "q": "Kui palju käibemaksu maksan imporditud autolt?",
+        "a": "Kui auto tollivormistus toimub siin ({{country}}), siis {{vat}}% tolliväärtusest, millele lisanduvad tollimaks ja transpordikulud sihtkohani. Mujal ELis vormistades kehtib selle riigi impordikäibemaks."
+      },
+      "faq2": {
+        "q": "Kus imporditud autot registreerida?",
+        "a": "Asutuses {{authority}}, pärast ülevaatust ({{inspection}}) ning tõlgitud ostu- ja tollidokumentidega."
+      }
+    },
+    "port": {
+      "h1": "Sadam {{port}} ({{country}}): imporditud autode tollivormistus",
+      "metaTitle": "{{port}} – auto import, toll, käibemaks {{vat}}% | CarImport.eu",
+      "metaDescription": "Imporditud auto tollivormistus sadamas {{port}} ({{country}}): terminali- ja agenditasud, käibemaks {{vat}}%, laevasõit USAst, Jaapanist ja AÜEst, kaugused.",
+      "lead": "{{port}} on tollivormistussadam – riik: {{country}}. Siin on selle tasud, laevasõidu kestused ja teekaugused – ning kas tasub oma auto siin tollist läbi viia.",
+      "facts": {
+        "title": "Sadam lühidalt",
+        "country": "Riik",
+        "region": "Merepiirkond",
+        "vat": "Impordikäibemaks siin vormistades",
+        "unloading": "Terminali käitlus ja konteineri tühjendamine",
+        "agency": "Tolliagent",
+        "perCar": "auto kohta"
+      },
+      "sailingTitle": "Laevasõidu kestus – sadam {{port}}",
+      "sailingNote": "Jagatud konteiner peamistest ekspordisadamatest; RoRo võtab paar päeva kauem.",
+      "days": "{{min}}–{{max}} päeva",
+      "distancesTitle": "Teekaugus – sadam {{port}}",
+      "alternativesTitle": "Teised lähedased sadamad",
+      "p1": "Tollivormistus sadamas {{port}} tähendab impordikäibemaksu tasumist riigis {{country}} ({{vat}}%). Kui registreerid auto mõnes teises ELi riigis, toimetatakse see sinna maanteed pidi.",
+      "p2": "Kalkulaator võrdleb sadamat {{port}} kõigi teiste ELi sadamatega sinu aadressi jaoks ja näitab odavaimat varianti.",
+      "faq1": {
+        "q": "Kui palju maksab auto tollivormistus – sadam {{port}}?",
+        "a": "Terminali käitlus ja konteineri tühjendamine umbes {{unloading}}, tolliagent umbes {{agency}}, lisaks tollimaks ja impordikäibemaks {{vat}}%."
+      },
+      "faq2": {
+        "q": "Kas autot saab siin tollist läbi viia ja registreerida mõnes teises ELi riigis?",
+        "a": "Jah. Eraisik maksab impordikäibemaksu siin; käibemaksukohustuslasest ettevõte saab kasutada tolliprotseduuri 4200 ja arvestada käibemaksu oma riigis."
+      }
+    },
+    "cta": {
+      "title": "Arvuta oma auto täpne hind",
+      "text": "Sisesta ainult oma aadress – ülejäänu pakume ise välja ja arvutame iga sadama hinna uksest ukseni.",
+      "button": "Ava kalkulaator"
+    },
+    "related": "Seotud juhendid",
+    "disclaimer": "Teave on üksnes orienteeruv; lõplikud summad määravad maksu- ja tolliasutused. Määrad vastavalt kalkulaatoris kasutatavatele."
   }
 }

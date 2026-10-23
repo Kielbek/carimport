@@ -1010,5 +1010,252 @@
     "hint": "Os montantes do leilão (USD, JPY, AED…) são convertidos à taxa atual do banco central. A moeda não altera o cálculo dos impostos – os impostos são sempre liquidados pelo país de desalfandegamento.",
     "groupEu": "Moedas da UE",
     "groupOther": "Outras"
+  },
+  "guide": {
+    "nav": {
+      "title": "Guias de importação",
+      "origins": "Importar por país de compra",
+      "countries": "Importar para países da UE",
+      "ports": "Portos de desalfandegamento na UE",
+      "all": "Todos os guias"
+    },
+    "hub": {
+      "origins": {
+        "title": "Guias para importar um carro: EUA, Canadá, Japão, EAU e Reino Unido",
+        "lead": "Guias passo a passo para cada país onde pode comprar um carro: leilões, documentos, prazos de transporte, direitos aduaneiros, IVA e matrícula em Portugal – com os custos reais na sua calculadora.",
+        "metaTitle": "Guias de importação – EUA, Canadá, Japão, EAU, Reino Unido | CarImport.eu",
+        "metaDescription": "Como importar um carro dos EUA, Canadá, Japão, EAU ou Reino Unido para Portugal: leilões, documentos, transporte, direitos, IVA e matrícula passo a passo."
+      },
+      "countries": {
+        "title": "Importar um carro para cada país da UE",
+        "lead": "Taxa de IVA, imposto de matrícula, entidade competente, inspeção e portos de desalfandegamento mais próximos para os 27 Estados-Membros da UE.",
+        "metaTitle": "Importar um carro para países da UE – IVA, matrícula, portos | CarImport.eu",
+        "metaDescription": "IVA na importação, impostos de matrícula, entidades, inspeções e portos mais próximos dos 27 países da UE – compare e calcule o custo total do carro importado.",
+        "yours": "O seu país"
+      },
+      "ports": {
+        "title": "Portos de desalfandegamento na UE para carros importados",
+        "lead": "Todos os {{count}} portos marítimos da UE onde são desalfandegados carros de fora da UE: taxas, IVA, tempos de viagem desde os EUA, Canadá, Japão, EAU e Reino Unido, e distâncias rodoviárias.",
+        "metaTitle": "{{count}} portos da UE para importar carros – taxas, IVA | CarImport.eu",
+        "metaDescription": "Compare os {{count}} portos de desalfandegamento da UE: taxas de terminal e despachante, IVA na importação, tempos de viagem e distâncias rodoviárias até Portugal.",
+        "sortedFrom": "Ordenados por distância rodoviária até: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Passo a passo",
+        "costsTitle": "O que paga",
+        "portsTitle": "Portos de desalfandegamento mais próximos",
+        "docsTitle": "Documentos necessários",
+        "whyTitle": "Porquê comprar aqui",
+        "auctionsTitle": "Onde comprar",
+        "tipTitle": "Dica",
+        "step1": {
+          "title": "Compre o carro",
+          "text": "Ganhe o leilão ou compre a um stand. As comissões de leilão dependem do escalão de preço e do título – a calculadora aplica a tabela em vigor."
+        },
+        "step2": {
+          "title": "Transporte até ao porto de exportação",
+          "text": "Um camião leva o carro do parque até ao porto; os carros que não andam precisam de empilhador e guincho, com custo adicional."
+        },
+        "step3": {
+          "title": "Frete marítimo",
+          "text": "Contentor partilhado, contentor exclusivo ou RoRo. A viagem até à UE demora {{min}}–{{max}} dias, mais o carregamento e a espera pelo navio."
+        },
+        "step4": {
+          "title": "Desalfandegamento no porto da UE",
+          "text": "Um despachante apresenta a declaração aduaneira. Paga os direitos aduaneiros e o IVA na importação no país do porto – exceto se uma empresa utilizar o regime aduaneiro 4200."
+        },
+        "step5": {
+          "title": "Entrega na sua morada",
+          "text": "Camião porta-automóveis, reboque ou condução com matrícula temporária – com preço por quilómetro a partir do porto."
+        },
+        "step6": {
+          "title": "Inspeção e matrícula",
+          "text": "Inspeção técnica, traduções e matrícula no país onde reside, mais o eventual imposto local de matrícula."
+        },
+        "cost": {
+          "duty": "Direitos aduaneiros",
+          "dutyValue": "10% do valor CIF (pick-ups 22%, motociclos 6–8%, veículos históricos 0%)",
+          "vat": "IVA na importação",
+          "vatValue": "{{vat}}% – {{country}}",
+          "vatRange": "17–27% consoante o país de desalfandegamento",
+          "registration": "Imposto local na matrícula",
+          "none": "nenhum",
+          "shipping": "Tempo de viagem",
+          "shippingValue": "{{min}}–{{max}} dias",
+          "currency": "Moeda do leilão"
+        },
+        "portsNote": "Distância rodoviária do porto ao centro populacional do país: {{country}}. A calculadora orça cada porto porta a porta para a sua morada exata.",
+        "portsNoteEu": "A calculadora orça todos os portos da UE porta a porta para a sua morada exata e escolhe o mais barato.",
+        "faqPorts": {
+          "q": "Qual é o porto mais barato para mim?",
+          "a": "Depende da sua morada, do IVA na importação do país do porto e do calendário das partidas. A calculadora orça cada porto da UE porta a porta e apresenta-os do mais barato para o mais caro."
+        },
+        "faqBinding": {
+          "q": "O orçamento é vinculativo?",
+          "a": "Não. Baseia-se em taxas e tabelas de preços atuais; são as autoridades aduaneiras e tributárias que fixam os valores finais. O relatório em PDF indica todas as taxas e pressupostos para que possa comparar."
+        }
+      },
+      "USA": {
+        "h1": "Importar um carro dos EUA para Portugal",
+        "metaTitle": "Importar um carro dos EUA para Portugal – custos, direitos, IVA | CarImport.eu",
+        "metaDescription": "Como importar um carro dos EUA para Portugal: leilões Copart e IAAI, prazos de envio, 10% de direitos, IVA, documentos e matrícula. Calcule o custo total num minuto.",
+        "lead": "Os EUA são a maior origem de carros importados: milhões de veículos por ano na Copart e na IAAI, muitas vezes a preços bem abaixo do mercado europeu. Veja como funciona todo o processo e quanto custa realmente.",
+        "why": "Enorme oferta, preços baixos de carros sinistrados (salvage), motores potentes e versões bem equipadas raras na Europa. O senão: a iluminação americana e por vezes o velocímetro têm de ser adaptados, e reparar um carro sinistrado pode sair caro.",
+        "auctions": "A Copart e a IAAI (Insurance Auto Auctions) vendem sobretudo carros de seguradoras com título clean ou salvage; a Manheim e os stands vendem carros sem danos. Normalmente licita-se através de um intermediário com licença de leilão.",
+        "docs": "Título de propriedade (clean ou salvage), fatura / bill of sale, conhecimento de embarque (B/L), declaração de exportação americana (EEI/AES), declaração aduaneira no porto da UE, traduções do título e da fatura, certificado de inspeção.",
+        "tip": "Verifique o histórico do VIN (acidentes, inundações, quilometragem) antes de licitar e reserve uma margem para danos ocultos – a calculadora acrescenta-a como cenário de risco.",
+        "faq1": {
+          "q": "Quanto tempo demora o envio dos EUA?",
+          "a": "Da Costa Leste (Nova Jérsia, Savannah) cerca de {{min}} dias de viagem até aos portos do Mar do Norte; de Houston e da Califórnia até {{max}} dias. Acrescente 1–3 semanas para o transporte até ao porto e a espera pelo navio."
+        },
+        "faq2": {
+          "q": "Um título salvage é um problema na UE?",
+          "a": "Não – a UE não utiliza as marcas de título americanas. No entanto, o carro tem de passar na inspeção técnica após a reparação, por isso conte com uma reparação bem feita e com o risco de danos ocultos."
+        }
+      },
+      "CANADA": {
+        "h1": "Importar um carro do Canadá para Portugal",
+        "metaTitle": "Importar um carro do Canadá para Portugal – custos, direitos | CarImport.eu",
+        "metaDescription": "Importe um carro do Canadá para Portugal: Copart e IAAI Canadá, envio de Halifax e Montreal, 10% de direitos, IVA, documentos e matrícula. Calculadora do custo total.",
+        "lead": "Os carros canadianos são semelhantes aos americanos, mas muitas vezes mais bem preparados para o inverno, com velocímetro métrico e preços mais baixos em dólares canadianos. O envio de Halifax e Montreal para a Europa é dos mais curtos do Atlântico.",
+        "why": "Painéis de instrumentos métricos, pacotes de inverno, aquecedores de bloco e boa proteção anticorrosão; os preços em CAD são muitas vezes mais baixos do que nos EUA para o mesmo modelo.",
+        "auctions": "A Copart e a IAAI também operam no Canadá; para carros sem danos há stands e vendas entre particulares. As licitações são feitas através de um intermediário.",
+        "docs": "Registo / título de propriedade (ou título salvage), contrato de compra e venda, conhecimento de embarque (B/L), declaração de exportação canadiana, declaração aduaneira na UE, traduções, certificado de inspeção.",
+        "tip": "As províncias do leste (Ontário, Quebeque) são as mais próximas dos portos de Montreal e Halifax – o transporte terrestre a partir do oeste custa muito mais.",
+        "faq1": {
+          "q": "Quanto tempo demora o envio do Canadá?",
+          "a": "De Halifax e Montreal cerca de {{min}}–{{max}} dias de viagem até aos portos do Mar do Norte, mais o transporte até ao porto e a espera pelo navio."
+        },
+        "faq2": {
+          "q": "Um carro canadiano precisa de adaptação?",
+          "a": "Normalmente menos do que um americano: o velocímetro já é métrico. A iluminação (piscas traseiros âmbar, luzes de presença laterais) pode, ainda assim, ter de ser adaptada às regras da UE."
+        }
+      },
+      "JAPAN": {
+        "h1": "Importar um carro do Japão para Portugal",
+        "metaTitle": "Importar um carro do Japão para Portugal – JDM, direitos, IVA | CarImport.eu",
+        "metaDescription": "Importe um carro JDM do Japão para Portugal: leilões USS, auction sheets, envio de Yokohama, direitos, IVA, volante à direita e matrícula. Calculadora completa.",
+        "lead": "O Japão é a terra dos carros JDM: poucos quilómetros, excelente estado e modelos nunca vendidos na Europa. As auction sheets descrevem cada carro ao pormenor – mas os carros têm volante à direita e a viagem é longa.",
+        "why": "Muito bom estado graças às inspeções rigorosas (shaken), avaliações de leilão honestas e desportivos e kei cars únicos. Os preços em ienes são atrativos.",
+        "auctions": "A USS é a maior rede de leilões; outras são a TAA, a CAA e a JU. Compra-se através de um exportador que traduz a auction sheet e trata do cancelamento do registo para exportação.",
+        "docs": "Certificado de exportação (cancelamento do registo), auction sheet e fatura, conhecimento de embarque (B/L), declaração aduaneira na UE, traduções, certificado de inspeção.",
+        "tip": "Antes de comprar, verifique se o seu país restringe carros com volante à direita e como são tratados na inspeção.",
+        "faq1": {
+          "q": "Quanto tempo demora o envio do Japão?",
+          "a": "Pelo Canal do Suez cerca de {{min}}–{{max}} dias de viagem, consoante o porto da UE – os portos do Mediterrâneo são os mais rápidos. Acrescente o tempo dos documentos de exportação."
+        },
+        "faq2": {
+          "q": "Posso matricular um carro com volante à direita?",
+          "a": "Na maioria dos países da UE sim, por vezes com ajuste dos faróis. Alguns países limitam a matrícula definitiva de carros com volante à direita – verifique as regras locais antes de comprar."
+        }
+      },
+      "UAE": {
+        "h1": "Importar um carro do Dubai (EAU) para Portugal",
+        "metaTitle": "Importar um carro do Dubai (EAU) para Portugal – custos, IVA | CarImport.eu",
+        "metaDescription": "Importe um carro do Dubai e dos EAU para Portugal: Emirates Auction e stands, especificação GCC, envio de Jebel Ali, direitos, IVA e matrícula.",
+        "lead": "O Dubai é um mercado de carros premium e desportivos com poucos quilómetros, muitas vezes quase sem uso. Os carros com especificação GCC são construídos para o calor e vendidos a preços atrativos.",
+        "why": "Modelos de luxo e desportivos, baixa quilometragem e clima seco (sem ferrugem). Os preços em dirhams estão indexados ao dólar americano.",
+        "auctions": "Emirates Auction e stands no Dubai e em Sharjah; um exportador local trata do certificado de exportação e do envio a partir de Jebel Ali.",
+        "docs": "Certificado de exportação, fatura, conhecimento de embarque (B/L), declaração aduaneira na UE, traduções, certificado de inspeção.",
+        "tip": "O calor desgasta as borrachas e o interior – peça fotografias dos vedantes, pneus e tablier.",
+        "faq1": {
+          "q": "Quanto tempo demora o envio do Dubai?",
+          "a": "De Jebel Ali pelo Suez cerca de {{min}}–{{max}} dias de viagem, consoante o porto da UE; os portos do Mediterrâneo são os mais próximos."
+        },
+        "faq2": {
+          "q": "O que é um carro com especificação GCC?",
+          "a": "Um carro construído para o mercado do Golfo: arrefecimento e ar condicionado reforçados, por vezes com equipamento de emissões diferente. Pode ser matriculado na UE após a inspeção técnica."
+        }
+      },
+      "UK": {
+        "h1": "Importar um carro do Reino Unido para Portugal",
+        "metaTitle": "Importar um carro do Reino Unido após o Brexit – direitos, IVA | CarImport.eu",
+        "metaDescription": "Importe um carro do Reino Unido para Portugal após o Brexit: direitos e origem preferencial, IVA, volante à direita, envio curto e matrícula. Calculadora completa.",
+        "lead": "Desde o Brexit, um carro do Reino Unido é uma importação de fora da UE: aplicam-se declaração aduaneira, direitos e IVA na importação. A viagem é curta e os carros fabricados no Reino Unido ou na UE podem beneficiar de 0% de direitos.",
+        "why": "Um grande mercado de usados, bons históricos de manutenção e envio curto por RoRo ou ferry. É preciso ter em conta o volante à direita.",
+        "auctions": "Copart UK, BCA, Manheim UK e stands. Comprando a um stand registado para efeitos de IVA, o IVA britânico pode ser reembolsado na exportação.",
+        "docs": "Documento de registo V5C, fatura, declaração de exportação, declaração de origem preferencial (para 0% de direitos), declaração aduaneira na UE, traduções, certificado de inspeção.",
+        "tip": "Peça ao vendedor uma declaração de origem preferencial – ao abrigo do Acordo de Comércio e Cooperação UE–Reino Unido, pode reduzir os direitos a zero para carros fabricados no Reino Unido ou na UE.",
+        "faq1": {
+          "q": "Quanto tempo demora o transporte do Reino Unido?",
+          "a": "Apenas {{min}}–{{max}} dias por mar (RoRo ou ferry), mais as formalidades aduaneiras de ambos os lados."
+        },
+        "faq2": {
+          "q": "Pago direitos aduaneiros por um carro do Reino Unido?",
+          "a": "Sim, 10% – a menos que o carro tenha origem preferencial comprovada (fabricado no Reino Unido ou na UE) ao abrigo do acordo UE–Reino Unido, caso em que os direitos podem ser de 0%. O IVA na importação é sempre devido."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: importar um carro de fora da UE",
+      "metaTitle": "{{country}} – importar um carro: IVA {{vat}}%, matrícula, portos | CarImport.eu",
+      "metaDescription": "Importar um carro dos EUA, Canadá, Japão, EAU ou Reino Unido – país: {{country}}. IVA na importação {{vat}}%, matrícula, inspeção, portos e custo total.",
+      "lead": "Tudo o que importa para matricular um carro importado – país: {{country}}. Impostos, entidades, inspeção e os portos mais baratos.",
+      "facts": {
+        "title": "Dados essenciais",
+        "vat": "IVA na importação (taxa normal)",
+        "currency": "Moeda",
+        "registrationTax": "Imposto único na matrícula",
+        "noTax": "nenhum",
+        "authority": "Entidade de registo",
+        "inspection": "Inspeção antes da matrícula",
+        "deadline": "Prazo para matricular",
+        "deadlineValue": "{{days}} dias",
+        "noDeadline": "ver regras locais"
+      },
+      "p1": "Os direitos aduaneiros são iguais em todos os países da UE: 10% do valor CIF para automóveis ligeiros de passageiros. O IVA na importação é pago no país onde o carro é desalfandegado – {{vat}}% se o desalfandegar aqui.",
+      "p2": "Desalfandegar noutro país da UE com IVA mais baixo pode sair mais barato, mesmo com o transporte adicional – a calculadora compara todos os portos porta a porta.",
+      "p3": "Os impostos locais de matrícula e as inspeções não estão harmonizados na UE; planeie o seu custo e prazo antes de comprar.",
+      "portsTitle": "Portos de desalfandegamento mais próximos",
+      "portsNote": "Distância rodoviária estimada até ao centro populacional do país: {{country}}.",
+      "originsTitle": "Onde comprar",
+      "faq1": {
+        "q": "Quanto IVA pago por um carro importado?",
+        "a": "Se o carro for desalfandegado no país indicado ({{country}}), {{vat}}% do valor aduaneiro acrescido dos direitos e dos custos de transporte até ao destino. Se for desalfandegado noutro país da UE, aplica-se o IVA na importação desse país."
+      },
+      "faq2": {
+        "q": "Onde matriculo um carro importado?",
+        "a": "Na entidade competente ({{authority}}), após a inspeção ({{inspection}}) e com os documentos de compra e aduaneiros traduzidos."
+      }
+    },
+    "port": {
+      "h1": "Porto de {{port}} ({{country}}): desalfandegamento de carros importados",
+      "metaTitle": "{{port}} – importação de carros, alfândega, IVA {{vat}}% | CarImport.eu",
+      "metaDescription": "Desalfandegar um carro importado no porto de {{port}} ({{country}}): taxas de terminal e despachante, IVA na importação {{vat}}%, viagens desde os EUA, Japão e EAU.",
+      "lead": "{{port}} é um porto de desalfandegamento – país: {{country}}. Veja as taxas, os tempos de viagem e as distâncias rodoviárias – e se compensa desalfandegar aqui o seu carro.",
+      "facts": {
+        "title": "O porto em resumo",
+        "country": "País",
+        "region": "Zona marítima",
+        "vat": "IVA na importação se desalfandegado aqui",
+        "unloading": "Manuseamento no terminal e desconsolidação",
+        "agency": "Despachante aduaneiro",
+        "perCar": "por carro"
+      },
+      "sailingTitle": "Tempo de viagem até ao porto de {{port}}",
+      "sailingNote": "Contentor partilhado a partir dos principais portos de exportação; o RoRo demora mais alguns dias.",
+      "days": "{{min}}–{{max}} dias",
+      "distancesTitle": "Distâncias rodoviárias a partir do porto de {{port}}",
+      "alternativesTitle": "Outros portos próximos",
+      "p1": "Desalfandegar no porto de {{port}} significa pagar o IVA na importação do país do porto ({{country}}, {{vat}}%). Se matricular o carro noutro país da UE, este é depois entregue por estrada.",
+      "p2": "A calculadora compara o porto de {{port}} com todos os outros portos da UE para a sua morada e mostra a opção mais barata.",
+      "faq1": {
+        "q": "Quanto custa desalfandegar um carro no porto de {{port}}?",
+        "a": "Manuseamento no terminal e desconsolidação cerca de {{unloading}}, despachante cerca de {{agency}}, mais os direitos aduaneiros e o IVA na importação de {{vat}}%."
+      },
+      "faq2": {
+        "q": "Posso desalfandegar um carro aqui e matriculá-lo noutro país da UE?",
+        "a": "Sim. Um particular paga aqui o IVA na importação; uma empresa registada para efeitos de IVA pode utilizar o regime aduaneiro 4200 e liquidar o IVA no seu próprio país."
+      }
+    },
+    "cta": {
+      "title": "Calcule o custo exato do seu carro",
+      "text": "Indique apenas a sua morada – nós propomos o resto e orçamos cada porto porta a porta.",
+      "button": "Abrir a calculadora"
+    },
+    "related": "Guias relacionados",
+    "disclaimer": "Informação meramente indicativa; são as autoridades tributárias e aduaneiras que fixam os valores finais. Taxas tal como utilizadas pela calculadora."
   }
 }

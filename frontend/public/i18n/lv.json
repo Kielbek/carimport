@@ -1010,5 +1010,252 @@
     "hint": "Izsoles summas (USD, JPY, AED…) tiek pārrēķinātas pēc aktuālā centrālās bankas kursa. Valūta nemaina nodokļu aprēķinu – nodokļus vienmēr nosaka muitošanas valsts.",
     "groupEu": "ES valūtas",
     "groupOther": "Citas"
+  },
+  "guide": {
+    "nav": {
+      "title": "Importa ceļveži",
+      "origins": "Imports pēc iegādes valsts",
+      "countries": "Imports uz ES valstīm",
+      "ports": "ES muitošanas ostas",
+      "all": "Visi ceļveži"
+    },
+    "hub": {
+      "origins": {
+        "title": "Auto importa ceļveži: ASV, Kanāda, Japāna, AAE un Lielbritānija",
+        "lead": "Soli pa solim katrai valstij, kurā vari iegādāties auto: izsoles, dokumenti, piegādes laiks, muitas nodoklis, PVN un reģistrācija Latvijā – ar reālām izmaksām kalkulatorā.",
+        "metaTitle": "Auto importa ceļveži – ASV, Kanāda, Japāna, AAE, UK | CarImport.eu",
+        "metaDescription": "Kā ievest auto Latvijā no ASV, Kanādas, Japānas, AAE vai Lielbritānijas: izsoles, dokumenti, transports, muitas nodoklis, PVN un reģistrācija soli pa solim."
+      },
+      "countries": {
+        "title": "Auto imports uz katru ES valsti",
+        "lead": "PVN likme, reģistrācijas nodoklis, reģistrējošā iestāde, tehniskā apskate un tuvākās muitošanas ostas visām 27 ES dalībvalstīm.",
+        "metaTitle": "Auto imports uz ES valstīm – PVN, reģistrācija, ostas | CarImport.eu",
+        "metaDescription": "Importa PVN, reģistrācijas nodokļi, iestādes, tehniskās apskates un tuvākās ostas visās 27 ES valstīs – salīdzini un aprēķini importēta auto pilnās izmaksas.",
+        "yours": "Tava valsts"
+      },
+      "ports": {
+        "title": "ES muitošanas ostas importētiem auto",
+        "lead": "Visas {{count}} ES jūras ostas, kurās muito auto no valstīm ārpus ES: maksas, PVN, kuģošanas laiks no ASV, Kanādas, Japānas, AAE un Lielbritānijas, kā arī attālumi pa autoceļiem.",
+        "metaTitle": "{{count}} ES ostas auto importam – maksas, PVN, kuģošana | CarImport.eu",
+        "metaDescription": "Salīdzini visas {{count}} ES auto muitošanas ostas: termināļa un muitas brokera maksas, importa PVN, kuģošanas laiks un attālums pa autoceļiem līdz Latvijai.",
+        "sortedFrom": "Kārtots pēc attāluma pa autoceļiem līdz: {{country}}"
+      }
+    },
+    "origin": {
+      "common": {
+        "stepsTitle": "Soli pa solim",
+        "costsTitle": "Par ko tu maksā",
+        "portsTitle": "Tuvākās muitošanas ostas",
+        "docsTitle": "Nepieciešamie dokumenti",
+        "whyTitle": "Kāpēc pirkt šeit",
+        "auctionsTitle": "Kur pirkt",
+        "tipTitle": "Padoms",
+        "step1": {
+          "title": "Iegādājies auto",
+          "text": "Uzvari izsolē vai pērc no tirgotāja. Izsoles maksas ir atkarīgas no cenas kategorijas un īpašumtiesību dokumenta – kalkulators piemēro aktuālo cenrādi."
+        },
+        "step2": {
+          "title": "Transports uz eksporta ostu",
+          "text": "Kravas auto nogādā auto no laukuma uz ostu; nebraucošam auto vajag iekrāvēju un vinču, kas maksā papildus."
+        },
+        "step3": {
+          "title": "Jūras pārvadājums",
+          "text": "Koplietošanas konteiners, atsevišķs konteiners vai RoRo. Kuģošana uz ES ilgst {{min}}–{{max}} dienas, plus iekraušana un kuģa gaidīšana."
+        },
+        "step4": {
+          "title": "Muitošana ES ostā",
+          "text": "Muitas brokeris iesniedz muitas deklarāciju. Muitas nodokli un importa PVN tu maksā ostas valstī – ja vien uzņēmums neizmanto muitas procedūru 4200."
+        },
+        "step5": {
+          "title": "Piegāde uz tavu adresi",
+          "text": "Autovedējs, evakuators vai braukšana ar pagaidu numuriem – cena tiek aprēķināta par kilometru no ostas."
+        },
+        "step6": {
+          "title": "Tehniskā apskate un reģistrācija",
+          "text": "Tehniskā apskate, tulkojumi un reģistrācija tavā dzīvesvietas valstī, kā arī iespējamais vietējais reģistrācijas nodoklis."
+        },
+        "cost": {
+          "duty": "Muitas nodoklis",
+          "dutyValue": "10% no CIF vērtības (pikapi 22%, motocikli 6–8%, vēsturiski auto 0%)",
+          "vat": "Importa PVN",
+          "vatValue": "{{vat}}% – {{country}}",
+          "vatRange": "17–27% atkarībā no muitošanas valsts",
+          "registration": "Vietējais nodoklis reģistrācijā",
+          "none": "nav",
+          "shipping": "Kuģošanas laiks",
+          "shippingValue": "{{min}}–{{max}} dienas",
+          "currency": "Izsoles valūta"
+        },
+        "portsNote": "Attālums pa autoceļiem no ostas līdz valstij: {{country}} (iedzīvotāju centrs). Kalkulators aprēķina katras ostas cenu no durvīm līdz durvīm tavai precīzajai adresei.",
+        "portsNoteEu": "Kalkulators aprēķina visu ES ostu cenu no durvīm līdz durvīm tavai precīzajai adresei un izvēlas lētāko.",
+        "faqPorts": {
+          "q": "Kura osta man ir lētākā?",
+          "a": "Tas atkarīgs no tavas adreses, ostas valsts importa PVN un kuģu grafika. Kalkulators aprēķina katras ES ostas cenu no durvīm līdz durvīm un sakārto tās, sākot ar lētāko."
+        },
+        "faqBinding": {
+          "q": "Vai aprēķins ir saistošs?",
+          "a": "Nē. Tas balstās uz aktuālajām likmēm un cenrāžiem; galīgās summas nosaka muitas un nodokļu iestādes. PDF pārskatā norādītas visas likmes un pieņēmumi, lai tu varētu salīdzināt."
+        }
+      },
+      "USA": {
+        "h1": "Auto imports no ASV uz Latviju",
+        "metaTitle": "Auto imports no ASV uz Latviju – izmaksas, muita, PVN | CarImport.eu",
+        "metaDescription": "Kā ievest auto no ASV uz Latviju: Copart un IAAI izsoles, piegādes laiks, 10% muitas nodoklis, PVN, dokumenti un reģistrācija. Aprēķini izmaksas minūtē.",
+        "lead": "ASV ir lielākais importēto auto avots: Copart un IAAI katru gadu piedāvā miljoniem transportlīdzekļu, bieži par cenām krietni zem Eiropas tirgus. Lūk, kā izskatās viss process un cik tas patiesībā maksā.",
+        "why": "Milzīga izvēle, zemas cenas bojātiem (salvage) auto, jaudīgi dzinēji un labi aprīkotas versijas, kas Eiropā ir retums. Āķis: ASV lukturi un dažkārt arī spidometrs jāpārbūvē, un salvage auto remonts var būt dārgs.",
+        "auctions": "Copart un IAAI (Insurance Auto Auctions) pārdod galvenokārt apdrošināšanas auto ar tīru vai salvage īpašumtiesību dokumentu; Manheim un tirgotāji pārdod auto bez bojājumiem. Parasti solīšana notiek ar starpnieka palīdzību, kuram ir izsoles licence.",
+        "docs": "Īpašumtiesību dokuments (title – tīrs vai salvage), rēķins / pirkuma līgums, konosaments, ASV eksporta deklarācija (EEI/AES), muitas deklarācija ES ostā, title un rēķina tulkojumi, tehniskās apskates apliecinājums.",
+        "tip": "Pirms solīšanas pārbaudi VIN vēsturi (avārijas, plūdi, nobraukums) un paredzi rezervi slēptiem bojājumiem – kalkulators to pievieno kā riska scenāriju.",
+        "faq1": {
+          "q": "Cik ilgi notiek piegāde no ASV?",
+          "a": "No austrumu krasta (Ņūdžersija, Savanna) aptuveni {{min}} dienas jūrā līdz Ziemeļjūras ostām, no Hjūstonas un Kalifornijas līdz {{max}} dienām. Pieskaiti 1–3 nedēļas transportam līdz ostai un kuģa gaidīšanai."
+        },
+        "faq2": {
+          "q": "Vai salvage title ES ir problēma?",
+          "a": "Nē – ES neizmanto ASV title atzīmes. Tomēr pēc remonta auto jāiztur tehniskā apskate, tāpēc ieplāno kvalitatīvu remontu un slēpto bojājumu risku."
+        }
+      },
+      "CANADA": {
+        "h1": "Auto imports no Kanādas uz Latviju",
+        "metaTitle": "Auto imports no Kanādas uz Latviju – izmaksas, muita, PVN | CarImport.eu",
+        "metaDescription": "Auto imports no Kanādas: Copart un IAAI Canada, kuģošana no Halifaksas un Monreālas, 10% muitas nodoklis, PVN, dokumenti, reģistrācija. Izmaksu kalkulators.",
+        "lead": "Kanādas auto ir līdzīgi amerikāņu auto, taču bieži labāk sagatavoti ziemai, ar metrisku spidometru un zemākām cenām Kanādas dolāros. Kuģošana no Halifaksas un Monreālas uz Eiropu ir viena no īsākajām pāri Atlantijai.",
+        "why": "Metriski mērinstrumenti, ziemas pakotnes, dzinēja priekšsildītāji un laba pretkorozijas aizsardzība; cenas CAD par to pašu modeli bieži ir zemākas nekā ASV.",
+        "auctions": "Copart un IAAI darbojas arī Kanādā; auto bez bojājumiem var iegādāties no tirgotājiem vai privātpersonām. Solīšana notiek ar starpnieka palīdzību.",
+        "docs": "Reģistrācijas / īpašumtiesību apliecība (vai salvage title), pirkuma līgums, konosaments, Kanādas eksporta deklarācija, ES muitas deklarācija, tulkojumi, tehniskās apskates apliecinājums.",
+        "tip": "Austrumu provinces (Ontārio, Kvebeka) atrodas vistuvāk Monreālas un Halifaksas ostām – iekšzemes transports no rietumiem maksā krietni vairāk.",
+        "faq1": {
+          "q": "Cik ilgi notiek piegāde no Kanādas?",
+          "a": "No Halifaksas un Monreālas aptuveni {{min}}–{{max}} dienas jūrā līdz Ziemeļjūras ostām, plus transports līdz ostai un kuģa gaidīšana."
+        },
+        "faq2": {
+          "q": "Vai Kanādas auto jāpārbūvē?",
+          "a": "Parasti mazāk nekā ASV auto: spidometrs jau ir metrisks. Lukturi (dzintarkrāsas aizmugurējie pagrieziena rādītāji, sānu gabarītlukturi) tomēr var būt jāpielāgo ES prasībām."
+        }
+      },
+      "JAPAN": {
+        "h1": "Auto imports no Japānas uz Latviju",
+        "metaTitle": "Auto imports no Japānas uz Latviju – JDM, muita, PVN | CarImport.eu",
+        "metaDescription": "JDM auto imports no Japānas: USS izsoles, izsoles lapas, kuģošana no Jokohamas, muita, PVN, labās puses stūre un reģistrācija. Izmaksu kalkulators.",
+        "lead": "Japāna ir JDM auto dzimtene: mazs nobraukums, izcils stāvoklis un modeļi, kas Eiropā nekad nav pārdoti. Izsoles lapas sīki apraksta katru auto – taču auto ir ar labās puses stūri un ceļš ir garš.",
+        "why": "Ļoti labs stāvoklis, pateicoties stingrām tehniskajām apskatēm (shaken), godīgam izsoles vērtējumam un unikāliem sporta un kei auto. Cenas jenās ir pievilcīgas.",
+        "auctions": "USS ir lielākais izsoļu tīkls; citi ir TAA, CAA un JU. Tu pērc caur eksportētāju, kurš iztulko izsoles lapu un nokārto auto izslēgšanu no reģistra eksportam.",
+        "docs": "Eksporta sertifikāts (izslēgšana no reģistra), izsoles lapa un rēķins, konosaments, ES muitas deklarācija, tulkojumi, tehniskās apskates apliecinājums.",
+        "tip": "Pirms pirkuma pārbaudi, vai tava valsts ierobežo auto ar labās puses stūri un kā pret tiem attiecas tehniskajā apskatē.",
+        "faq1": {
+          "q": "Cik ilgi notiek piegāde no Japānas?",
+          "a": "Caur Suecas kanālu aptuveni {{min}}–{{max}} dienas jūrā atkarībā no ES ostas – Vidusjūras ostas ir ātrākās. Pieskaiti laiku eksporta dokumentu kārtošanai."
+        },
+        "faq2": {
+          "q": "Vai var reģistrēt auto ar labās puses stūri?",
+          "a": "Lielākajā daļā ES valstu jā, dažkārt ar lukturu regulēšanu. Dažas valstis ierobežo auto ar labās puses stūri pastāvīgai reģistrācijai – pirms pirkuma pārbaudi vietējos noteikumus."
+        }
+      },
+      "UAE": {
+        "h1": "Auto imports no Dubaijas (AAE) uz Latviju",
+        "metaTitle": "Auto imports no Dubaijas (AAE) uz Latviju – muita, PVN | CarImport.eu",
+        "metaDescription": "Auto imports no Dubaijas un AAE: Emirates Auction un tirgotāji, GCC spec, kuģošana no Jebel Ali, muitas nodoklis, PVN un reģistrācija. Izmaksu kalkulators.",
+        "lead": "Dubaija ir premium un sporta auto tirgus ar mazu nobraukumu, bieži gandrīz nelietotiem. GCC specifikācijas auto ir būvēti karstumam un tiek pārdoti par pievilcīgām cenām.",
+        "why": "Luksusa un sporta modeļi, mazs nobraukums un sauss klimats (bez rūsas). Cenas dirhamos ir piesaistītas ASV dolāram.",
+        "auctions": "Emirates Auction un tirgotāji Dubaijā un Šārdžā; vietējais eksportētājs nokārto eksporta sertifikātu un kuģošanu no Jebel Ali.",
+        "docs": "Eksporta sertifikāts, rēķins, konosaments, ES muitas deklarācija, tulkojumi, tehniskās apskates apliecinājums.",
+        "tip": "Karstums nodeldē gumijas detaļas un salonu – palūdz blīvējumu, riepu un paneļa fotogrāfijas.",
+        "faq1": {
+          "q": "Cik ilgi notiek piegāde no Dubaijas?",
+          "a": "No Jebel Ali caur Suecu aptuveni {{min}}–{{max}} dienas jūrā atkarībā no ES ostas; Vidusjūras ostas ir vistuvāk."
+        },
+        "faq2": {
+          "q": "Kas ir GCC specifikācijas auto?",
+          "a": "Persijas līča tirgum būvēts auto: jaudīgāka dzesēšana un kondicionieris, dažkārt atšķirīgs izmešu aprīkojums. To var reģistrēt ES pēc tehniskās apskates."
+        }
+      },
+      "UK": {
+        "h1": "Auto imports no Lielbritānijas uz Latviju",
+        "metaTitle": "Auto imports no Lielbritānijas pēc Brexit – muita, PVN | CarImport.eu",
+        "metaDescription": "Auto imports no Lielbritānijas uz Latviju pēc Brexit: muitas nodoklis un preferenciālā izcelsme, PVN, labās puses stūre, īsa piegāde un reģistrācija.",
+        "lead": "Kopš Brexit auto no Apvienotās Karalistes ir imports no valsts ārpus ES: jāiesniedz muitas deklarācija, jāmaksā muitas nodoklis un importa PVN. Ceļš ir īss, un Lielbritānijā vai ES ražoti auto var kvalificēties 0% muitas nodoklim.",
+        "why": "Liels lietoto auto tirgus, labas apkopes vēstures un īsa piegāde ar RoRo kuģi vai prāmi. Jārēķinās ar labās puses stūri.",
+        "auctions": "Copart UK, BCA, Manheim UK un tirgotāji. Pērkot no PVN reģistrēta tirgotāja, Lielbritānijas PVN eksportējot var atgūt.",
+        "docs": "V5C reģistrācijas apliecība, rēķins, eksporta deklarācija, paziņojums par preferenciālo izcelsmi (0% muitas nodoklim), ES muitas deklarācija, tulkojumi, tehniskās apskates apliecinājums.",
+        "tip": "Palūdz pārdevējam paziņojumu par preferenciālo izcelsmi – saskaņā ar ES un Apvienotās Karalistes tirdzniecības nolīgumu tas var samazināt muitas nodokli līdz nullei Lielbritānijā vai ES ražotiem auto.",
+        "faq1": {
+          "q": "Cik ilgi notiek transports no Lielbritānijas?",
+          "a": "Tikai {{min}}–{{max}} dienas pa jūru (RoRo vai prāmis), plus muitas formalitātes abās pusēs."
+        },
+        "faq2": {
+          "q": "Vai par auto no Lielbritānijas jāmaksā muitas nodoklis?",
+          "a": "Jā, 10% – ja vien auto nav pierādīta preferenciālā izcelsme (ražots Lielbritānijā vai ES) saskaņā ar ES un Apvienotās Karalistes nolīgumu; tad muitas nodoklis var būt 0%. Importa PVN jāmaksā vienmēr."
+        }
+      }
+    },
+    "country": {
+      "h1": "{{country}}: auto imports no valstīm ārpus ES",
+      "metaTitle": "{{country}} – auto imports: PVN {{vat}}%, reģistrācija, ostas | CarImport.eu",
+      "metaDescription": "Auto imports no ASV, Kanādas, Japānas, AAE vai Lielbritānijas, galamērķis {{country}}: importa PVN {{vat}}%, reģistrācija, apskate, tuvākās ostas un izmaksas.",
+      "lead": "Viss, kas svarīgs, reģistrējot importētu auto – valsts: {{country}}. Nodokļi, iestādes, tehniskā apskate un lētākās ostas.",
+      "facts": {
+        "title": "Galvenie fakti",
+        "vat": "Importa PVN (standarta likme)",
+        "currency": "Valūta",
+        "registrationTax": "Vienreizējs nodoklis reģistrācijā",
+        "noTax": "nav",
+        "authority": "Reģistrējošā iestāde",
+        "inspection": "Tehniskā apskate pirms reģistrācijas",
+        "deadline": "Reģistrācijas termiņš",
+        "deadlineValue": "{{days}} dienas",
+        "noDeadline": "skatīt vietējos noteikumus"
+      },
+      "p1": "Muitas nodoklis visās ES valstīs ir vienāds: vieglajiem auto 10% no CIF vērtības. Importa PVN maksā valstī, kurā auto tiek muitots – {{vat}}%, ja muito šeit.",
+      "p2": "Muitošana citā ES valstī ar zemāku PVN var būt lētāka pat ar papildu transportu – kalkulators salīdzina visas ostas no durvīm līdz durvīm.",
+      "p3": "Vietējie reģistrācijas nodokļi un tehniskās apskates ES nav saskaņotas; ieplāno to izmaksas un laiku pirms pirkuma.",
+      "portsTitle": "Tuvākās muitošanas ostas",
+      "portsNote": "Aptuvenais attālums pa autoceļiem līdz iedzīvotāju centram – valsts: {{country}}.",
+      "originsTitle": "Kur pirkt",
+      "faq1": {
+        "q": "Cik daudz PVN jāmaksā par importētu auto?",
+        "a": "Ja auto tiek muitots šeit ({{country}}), {{vat}}% no muitas vērtības, kurai pieskaita muitas nodokli un transporta izmaksas līdz galamērķim. Muitojot citur ES, piemēro attiecīgās valsts importa PVN."
+      },
+      "faq2": {
+        "q": "Kur reģistrēt importētu auto?",
+        "a": "Iestādē {{authority}}, pēc tehniskās apskates ({{inspection}}) un ar iztulkotiem pirkuma un muitas dokumentiem."
+      }
+    },
+    "port": {
+      "h1": "Osta {{port}} ({{country}}): importēto auto muitošana",
+      "metaTitle": "{{port}} – auto imports, muita, PVN {{vat}}% | CarImport.eu",
+      "metaDescription": "Importēta auto muitošana – osta {{port}} ({{country}}): termināļa un brokera maksas, PVN {{vat}}%, kuģošana no ASV, Japānas un AAE, attālumi.",
+      "lead": "{{port}} ir muitošanas osta – valsts: {{country}}. Šeit apkopotas tās maksas, kuģošanas laiki un attālumi pa autoceļiem – un vai ir vērts muitot auto tieši šeit.",
+      "facts": {
+        "title": "Osta īsumā",
+        "country": "Valsts",
+        "region": "Jūras reģions",
+        "vat": "Importa PVN, muitojot šeit",
+        "unloading": "Termināļa apstrāde un konteinera izkraušana",
+        "agency": "Muitas brokeris",
+        "perCar": "par auto"
+      },
+      "sailingTitle": "Kuģošanas laiks – osta {{port}}",
+      "sailingNote": "Koplietošanas konteiners no galvenajām eksporta ostām; RoRo aizņem dažas dienas ilgāk.",
+      "days": "{{min}}–{{max}} dienas",
+      "distancesTitle": "Attālums pa autoceļiem – osta {{port}}",
+      "alternativesTitle": "Citas tuvumā esošās ostas",
+      "p1": "Muitošana ostā {{port}} nozīmē importa PVN maksāšanu valstī {{country}} ({{vat}}%). Ja reģistrē auto citā ES valstī, tas tiek nogādāts pa autoceļiem.",
+      "p2": "Kalkulators salīdzina ostu {{port}} ar visām pārējām ES ostām tavai adresei un parāda lētāko variantu.",
+      "faq1": {
+        "q": "Cik maksā auto muitošana – osta {{port}}?",
+        "a": "Termināļa apstrāde un konteinera izkraušana aptuveni {{unloading}}, muitas brokeris aptuveni {{agency}}, plus muitas nodoklis un importa PVN {{vat}}%."
+      },
+      "faq2": {
+        "q": "Vai var muitot auto šeit un reģistrēt citā ES valstī?",
+        "a": "Jā. Privātpersona importa PVN maksā šeit; PVN reģistrēts uzņēmums var izmantot muitas procedūru 4200 un uzskaitīt PVN savā valstī."
+      }
+    },
+    "cta": {
+      "title": "Aprēķini precīzas izmaksas savam auto",
+      "text": "Ievadi tikai savu adresi – pārējo mēs piedāvāsim un aprēķināsim katras ostas cenu no durvīm līdz durvīm.",
+      "button": "Atvērt kalkulatoru"
+    },
+    "related": "Saistītie ceļveži",
+    "disclaimer": "Informācija ir tikai orientējoša; galīgās summas nosaka nodokļu un muitas iestādes. Likmes atbilstoši kalkulatorā izmantotajām."
   }
 }

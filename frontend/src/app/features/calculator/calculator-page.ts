@@ -14,7 +14,7 @@ import { AffiliateWidgets } from '../affiliates/affiliate-widgets';
 import { PartnerLeadForm } from '../leads/partner-lead-form';
 import { PaywallModal } from '../paywall/paywall-modal';
 import { CalculatorStore, LAST_INPUT_STEP, RESULT_STEP, WizardStep } from './calculator.store';
-import { ORIGINS } from './calculator.options';
+import { EU_COUNTRIES, ORIGINS } from './calculator.options';
 import { StepAfterImport } from './steps/step-after-import';
 import { StepCondition } from './steps/step-condition';
 import { StepDestination } from './steps/step-destination';
@@ -107,8 +107,10 @@ import { StepVehicle } from './steps/step-vehicle';
   `,
 })
 export class CalculatorPage implements OnInit {
-  /** ?from=USA deep link (footer, home page). */
+  /** Deep links from the footer, home page and guides: ?from=USA, ?to=DE (destination), ?port=DEBRV (EU port). */
   readonly from = input<string>();
+  readonly to = input<string>();
+  readonly port = input<string>();
 
   protected readonly store = inject(CalculatorStore);
   protected readonly page = inject(PageContext);
@@ -125,6 +127,15 @@ export class CalculatorPage implements OnInit {
     const from = this.from();
     if (from && ORIGINS.some((o) => o.code === from)) {
       this.store.selectOrigin(from as OriginCountry);
+    }
+    const to = this.to();
+    if (to && (EU_COUNTRIES as readonly string[]).includes(to)) {
+      this.store.setAddress(null);
+      this.store.patch({ destinationCountry: to, pricePerKm: null, postImportServices: null });
+    }
+    const port = this.port();
+    if (port && /^[A-Z]{5}$/.test(port)) {
+      this.store.choosePort(port);
     }
   }
 

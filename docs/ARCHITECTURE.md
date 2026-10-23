@@ -229,8 +229,8 @@ frontend/src/app/
 
 ### 3.0 Strona publiczna i SEO
 
-* **Static Site Generation** (`outputMode: "static"`): strona główna, kalkulator, „O nas” i polityka prywatności
-  są prerenderowane do HTML w 4 językach (16 plików). Google dostaje pełną treść, nagłówki i dane strukturalne bez
+* **Static Site Generation** (`outputMode: "static"`): strona główna, kalkulator, „O nas”, polityka prywatności
+  i poradniki są prerenderowane do HTML w 23 językach (1886 plików). Google dostaje pełną treść, nagłówki i dane strukturalne bez
   wykonywania JS; hosting to dowolny CDN. Strony osobiste (`/report/…`, `/result/…`) renderują się w przeglądarce
   i mają `noindex`.
 * **Zlokalizowane adresy**: `/pl/kalkulator`, `/en/calculator`, `/de/rechner`, `/uk/kalkuliator`; przełącznik języka
@@ -248,6 +248,20 @@ frontend/src/app/
   buforowany sprite `public/map/world.svg` (86 kB, ok. 30 kB po gzip) wstawiany przez `<use>`, więc dziedziczy kolory
   motywu. Trasy morskie (przez Panamę, Suez, Gibraltar, Skagerrak) i porty są w kodzie i trafiają do prerenderu;
   animacja przepływu i „statki” (`animateMotion`) mają prędkość proporcjonalną do czasu rejsu. Dane generuje `node tools/generate-world-map.mjs` (zmiana portów lub tras = ponowne uruchomienie).
+* **Poradniki SEO** (`features/guides`): ~78 podstron na język × 23 języki = 1794 strony + 92 strony główne
+  (razem 1886 prerenderowanych adresów, wszystkie w `sitemap.xml`):
+  * huby: import według kraju zakupu, kraje UE, porty odprawy (`/pl/import-auta`, `/pl/kraje-ue`, `/pl/porty`);
+  * 5 poradników „import z …” (`/pl/import-auta/stany-zjednoczone`, `/de/auto-import/vereinigte-staaten`) pisanych
+    pod kraj czytelnika (`LanguageInfo.home`: tytuł „…do Polski”/„…nach Deutschland”, VAT, podatek rejestracyjny,
+    najbliższe porty z kilometrami; EN i UA – perspektywa całej UE);
+  * 27 poradników krajów UE (VAT, waluta, lokalna nazwa podatku rejestracyjnego, urzędu i badania z
+    `country-facts.ts`, najbliższe porty, terminy);
+  * 43 poradniki portów (opłaty, VAT, czasy rejsu z każdego kraju pochodzenia, odległości do krajów UE, porty obok).
+  Dane (porty, VAT, czasy rejsu, odległości, zlokalizowane i transliterowane slugi) generuje
+  `node tools/generate-guide-data.mjs` z migracji Flyway – te same liczby, których używa kalkulator. Każda strona ma
+  własny title/description, canonical, hreflang (23 języki + x-default), JSON-LD Article + FAQPage + BreadcrumbList
+  (+ Country/Place z GeoCoordinates) oraz CTA do kalkulatora z parametrami (`?from=USA`, `?to=DE`, `?port=DEBRV`).
+  Teksty: klucze `guide.*` (165 na język) z placeholderami w mianowniku, żeby odmiana w językach fleksyjnych była poprawna.
 * **Pozycjonowanie**: serwis jest wyłącznie kalkulatorem – nie sprzedaje ani nie sprowadza aut. Strona główna sprzedaje
   wycenę: hero („Policz import auta, zanim zalicytujesz”), *Dlaczego warto* (od ręki, niezależnie, 43 porty, scenariusze,
   koszty po imporcie, raport), *Co uwzględniamy* (5 grup, 22 pozycje), tabela porównania z liczeniem na własną rękę

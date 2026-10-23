@@ -8,6 +8,20 @@ import { SITE } from '../site.config';
 
 export const FAQ_COUNT = 9;
 
+export interface CustomPage {
+  lang: Lang;
+  title: string;
+  description: string;
+  /** Path of this page (canonical). */
+  path: string;
+  /** Path of the same page in another language (hreflang). */
+  pathFor: (lang: Lang) => string;
+  breadcrumbs: { name: string; path: string }[];
+  faq: { q: string; a: string }[];
+  /** schema.org entity the article is about (a Place, a Country, ...). */
+  about?: Record<string, unknown>;
+}
+
 /**
  * Per-page head management for search engines and social previews: title, description, canonical, hreflang
  * alternates (+ x-default), Open Graph / Twitter and JSON-LD. Runs during prerendering, so crawlers get it as static
@@ -42,12 +56,71 @@ export class SeoService {
     this.setJsonLd(page, lang, pageTitle, description, url, t);
   }
 
+  /**
+   * Data-driven pages (the SEO guides): the page supplies its own title, description, language alternates,
+   * breadcrumb trail and FAQ; we add canonical, hreflang, Open Graph and an Article + FAQPage + BreadcrumbList graph.
+   */
+  applyCustom(page: CustomPage): void {
+    const url = SITE.url + page.path;
+    this.title.setTitle(page.title);
+    this.meta.updateTag({ name: 'description', content: page.description });
+    this.meta.updateTag({ name: 'robots', content: 'index,follow,max-image-preview:large' });
+    this.meta.updateTag({ property: 'og:type', content: 'article' });
+    this.meta.updateTag({ property: 'og:site_name', content: SITE.name });
+    this.meta.updateTag({ property: 'og:title', content: page.title });
+    this.meta.updateTag({ property: 'og:description', content: page.description });
+    this.meta.updateTag({ property: 'og:url', content: url });
+    this.meta.updateTag({ property: 'og:locale', content: LANGUAGE_BY_CODE[page.lang].og });
+    this.meta.updateTag({ property: 'og:image', content: SITE.url + SITE.ogImage });
+    this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
+
+    this.writeLinks(url, (l) => SITE.url + page.pathFor(l));
+    const graph: Record<string, unknown>[] = [
+      ...this.baseGraph(page.lang),
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: page.breadcrumbs.map((b, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: b.name,
+          item: SITE.url + b.path,
+        })),
+      },
+      {
+        '@type': 'Article',
+        headline: page.title,
+        description: page.description,
+        inLanguage: page.lang,
+        mainEntityOfPage: url,
+        image: SITE.url + SITE.ogImage,
+        author: { '@id': `${SITE.url}/#org` },
+        publisher: { '@id': `${SITE.url}/#org` },
+        ...(page.about ? { about: page.about } : {}),
+      },
+    ];
+    if (page.faq.length) {
+      graph.push({
+        '@type': 'FAQPage',
+        mainEntity: page.faq.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      });
+    }
+    this.writeJsonLd(graph);
+  }
+
   /** Pages that must not be indexed (personal report, quote links). */
   noindex(): void {
     this.meta.updateTag({ name: 'robots', content: 'noindex,nofollow' });
   }
 
   private setLinks(page: Page, canonical: string): void {
+    this.writeLinks(canonical, (l) => SITE.url + pathFor(page, l));
+  }
+
+  private writeLinks(canonical: string, alternate: (lang: Lang) => string): void {
     const head = this.document.head;
     head.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang]').forEach((l) => l.remove());
     const add = (attrs: Record<string, string>) => {
@@ -57,16 +130,13 @@ export class SeoService {
     };
     add({ rel: 'canonical', href: canonical });
     for (const l of SUPPORTED_LANGS) {
-      add({ rel: 'alternate', hreflang: l, href: SITE.url + pathFor(page, l) });
+      add({ rel: 'alternate', hreflang: l, href: alternate(l) });
     }
-    add({ rel: 'alternate', hreflang: 'x-default', href: SITE.url + pathFor(page, 'en') });
+    add({ rel: 'alternate', hreflang: 'x-default', href: alternate('en') });
   }
 
   private setJsonLd(page: Page, lang: Lang, name: string, description: string, url: string, t: (k: string) => string) {
-    const graph: Record<string, unknown>[] = [
-      { '@type': 'Organization', '@id': `${SITE.url}/#org`, name: SITE.name, url: SITE.url, email: SITE.email },
-      { '@type': 'WebSite', '@id': `${SITE.url}/#website`, url: SITE.url, name: SITE.name, inLanguage: lang, publisher: { '@id': `${SITE.url}/#org` } },
-    ];
+    const graph: Record<string, unknown>[] = this.baseGraph(lang);
     if (page === 'home' || page === 'calculator') {
       const own = LANGUAGE_BY_CODE[lang].currency;
       const currency = isDisplayCurrency(own) ? own : 'EUR';
@@ -115,7 +185,24 @@ export class SeoService {
       isPartOf: { '@id': `${SITE.url}/#website` },
       ...(page === 'about' ? { about: { '@id': `${SITE.url}/#org` } } : {}),
     });
+    this.writeJsonLd(graph);
+  }
 
+  private baseGraph(lang: Lang): Record<string, unknown>[] {
+    return [
+      { '@type': 'Organization', '@id': `${SITE.url}/#org`, name: SITE.name, url: SITE.url, email: SITE.email },
+      {
+        '@type': 'WebSite',
+        '@id': `${SITE.url}/#website`,
+        url: SITE.url,
+        name: SITE.name,
+        inLanguage: lang,
+        publisher: { '@id': `${SITE.url}/#org` },
+      },
+    ];
+  }
+
+  private writeJsonLd(graph: Record<string, unknown>[]): void {
     let script = this.document.head.querySelector<HTMLScriptElement>('script#ld-json');
     if (!script) {
       script = this.document.createElement('script');
