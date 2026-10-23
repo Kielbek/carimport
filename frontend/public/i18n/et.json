@@ -1,0 +1,1014 @@
+{
+  "affiliate": {
+    "CURRENCY_EXCHANGE": "Soodsam valuutavahetus",
+    "CURRENCY_EXCHANGE_HINT": "Maksa auto eest ilma panga marginaalita",
+    "FINANCING": "Liising või laen",
+    "FINANCING_HINT": "Rahasta importi ja makse",
+    "VIN_CHECK": "Kontrolli VIN-koodi ajalugu",
+    "VIN_CHECK_HINT": "Kahjud, läbisõit, vargusteated",
+    "sponsored": "Sponsoreeritud",
+    "title": "Sul võib vaja minna ka"
+  },
+  "app": {
+    "headline": "Kui palju imporditud auto tegelikult maksab?",
+    "tagline": "Oksjonid USA-s, Kanadas, Jaapanis, Dubais või Ühendkuningriigis → ELi tollimaks, aktsiis ja käibemaks. Tulemus kohe, ilma registreerumiseta."
+  },
+  "auction": {
+    "COPART": "Copart",
+    "DEALER": "Edasimüüja / eraisik",
+    "EMIRATES_AUCTION": "Emirates Auction",
+    "IAAI": "IAAI",
+    "USS": "USS Jaapan"
+  },
+  "buyer": {
+    "COMPANY": "Ettevõte",
+    "PRIVATE": "Eraisik"
+  },
+  "category": {
+    "MOTORCYCLE": "Mootorratas",
+    "PASSENGER_CAR": "Sõiduauto",
+    "PICKUP_TRUCK": "Pikap",
+    "REGISTRATION": "Pärast importi ja registreerimine",
+    "SUV": "Maastur (SUV)",
+    "TAXES": "ELi tollimaks ja maksud",
+    "TRANSPORT": "Transport ja logistika",
+    "VAN": "Kaubik",
+    "VEHICLE": "Sõiduk ja oksjon",
+    "RISK": "Riskid teel"
+  },
+  "condition": {
+    "ENGINE_STARTS": "Mootor käivitub",
+    "ENGINE_STARTS_HINT": "Ei liigu omal jõul",
+    "NON_RUNNING": "Kahjustatud / Salvage",
+    "NON_RUNNING_HINT": "Vajab vintsiga puksiirautot",
+    "RUN_AND_DRIVE": "Run & Drive",
+    "RUN_AND_DRIVE_HINT": "Käivitub ja sõidab"
+  },
+  "cost": {
+    "AUCTION_AGENT_COMMISSION": "Ekspordiagendi vahendustasu",
+    "AUCTION_BUYER_FEE": "Oksjoni ostjatasu",
+    "AUCTION_ENVIRONMENTAL_FEE": "Keskkonnatasu",
+    "AUCTION_EXPORT_DOCS": "Ekspordidokumendid",
+    "AUCTION_GATE_FEE": "Väravatasu (gate fee)",
+    "AUCTION_RECYCLING_FEE": "Ringlussevõtu tasu (Jaapan)",
+    "AUCTION_SERVICE_FEE": "Oksjoni teenustasu",
+    "AUCTION_TITLE_HANDLING_FEE": "Omandidokumendi (title) käsitlemise tasu",
+    "AUCTION_VIRTUAL_BID_FEE": "Veebipakkumise tasu",
+    "CARGO_INSURANCE": "Kaubakindlustus",
+    "CUSTOMS_AGENCY": "Tolliagendi teenus",
+    "CUSTOMS_DUTY": "Tollimaks",
+    "EXCISE_TAX": "Aktsiisimaks",
+    "FORKLIFT_LOADING": "Laadimine tõstukiga",
+    "IMPORT_VAT": "Impordikäibemaks",
+    "INDIVIDUAL_APPROVAL": "Üksikkinnitus (§21 StVZO)",
+    "INLAND_TRANSPORT": "Sisemaavedu sadamasse",
+    "INTRA_EU_ACQUISITION_VAT": "ELi-sisese soetamise käibemaks (pöördmaksustamine, mahaarvatav)",
+    "INTRA_EU_TRANSPORT": "Autoveok sadamast sihtkohta",
+    "OCEAN_FREIGHT": "Merevedu",
+    "PORT_UNLOADING": "Mahalaadimine sadamas ja terminal",
+    "PURCHASE_PRICE": "Ostuhind (võitnud pakkumine)",
+    "RDW_INSPECTION": "RDW ülevaatus",
+    "RECYCLING_FEE": "Ringlussevõtu tasu",
+    "REGISTRATION_FEE": "Registreerimistasud",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Esitulede reguleerimine (parempoolne rool)",
+    "SWORN_TRANSLATION": "Dokumentide vandetõlge",
+    "TECHNICAL_INSPECTION": "Tehnoülevaatus",
+    "US_LIGHTING_CONVERSION": "Tulede ümberehitus (USA versioon)",
+    "WINCH_CONTAINER_LOADING": "Konteinerisse laadimine vintsiga",
+    "DELIVERY_CAR_CARRIER": "Autoveok sadamast ukseni",
+    "DELIVERY_TOW_TRUCK": "Puksiirauto sadamast ukseni",
+    "DELIVERY_SELF_DRIVE": "Kojusõit ajutiste numbrimärkidega (kütus, numbrimärgid, lühiajaline kindlustus)",
+    "TECHNICAL_INSPECTION_IMPORT": "Imporditud sõiduki tehnoülevaatus",
+    "REG_TEMPORARY_PERMIT": "Ajutine registreerimisluba",
+    "REG_TEMPORARY_PLATES": "Ajutised numbrimärgid",
+    "REG_CERTIFICATE": "Registreerimistunnistus",
+    "REG_PLATES": "Numbrimärgid",
+    "REG_STICKER": "Kontrollkleebis",
+    "REAR_FOG_LIGHT": "Tagumise udutule paigaldus",
+    "SPEEDOMETER_KMH": "Spidomeetri ümberseadistamine km/h peale",
+    "SERVICE_INSPECTION": "Hooldus ja vedelike vahetus",
+    "GEOMETRY_ALIGNMENT": "Rattageomeetria reguleerimine",
+    "DETAILING": "Puhastus ja detailing",
+    "EXPERT_VALUATION": "Eksperthinnang (nt kaskokindlustuse jaoks)",
+    "REPAIR_ESTIMATE": "Remont (sinu hinnang)",
+    "INSURANCE_FIRST_YEAR": "Kindlustus – esimene aasta (sinu summa)",
+    "RISK_PORT_STORAGE": "Hoiustamine sadamas (hiline äravedu, dokumendid)",
+    "RISK_CUSTOMS_INSPECTION": "Tollikontroll / konteineri röntgen",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Tolliväärtuse vaidlustamine (täiendav tollimaks ja käibemaks)",
+    "RISK_VESSEL_ROLLOVER": "Ümberpaigutus hilisemale laevale (hoiustamine ekspordisadamas)",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transpordikahju – kindlustuse omavastutus",
+    "RISK_HIDDEN_DAMAGE": "Varjatud kahjud, mida oksjonil näha polnud",
+    "RISK_TITLE_DELAY": "Omandidokumendi (title) viivitus (lisahoiustamine)",
+    "RISK_EXPORT_DOCS_DELAY": "Ekspordidokumentide viivitus"
+  },
+  "doc": {
+    "billOfLading": "Konossement (Bill of Lading)",
+    "companyRegistryExtract": "Äriregistri väljavõte",
+    "customsDeclarationSad": "Tollideklaratsioon (SAD)",
+    "customsPowerOfAttorney": "Volikiri tolliagendile",
+    "eoriNumber": "Importija EORI-number",
+    "evChargingPortAdapterNote": "Kontrolli laadimispesa standardit (NACS/CCS1 → CCS2)",
+    "historicExpertOpinion": "Ekspertarvamus ajaloolise sõiduki staatuse kohta",
+    "insurancePolicy": "Kaubakindlustuse poliis",
+    "invoice": "Oksjoni arve / müügileping",
+    "ownership": {
+      "japanExportCertificate": "Jaapani ekspordisertifikaat (Export Certificate, registrist kustutamine)",
+      "title": "Originaal-Title (omandit tõendav dokument)",
+      "uaeExportCertificate": "AÜE ekspordisertifikaat (RTA)",
+      "v5c": "Ühendkuningriigi registreerimisdokument V5C (logbook)"
+    },
+    "pl": {
+      "exciseDeclarationAkcUs": "Aktsiisideklaratsioon AKC-U/S ja maksetõend",
+      "exciseExemptionConfirmation": "Aktsiisivabastuse kinnitus (elektriauto)",
+      "recyclingFeeConfirmation": "Ringlussevõtu tasu maksmise kinnitus"
+    },
+    "procedure4200VatIdAndProofOfTransport": "Protseduur 4200: ostja ELi käibemaksukohustuslasena registreerimise number ja veotõend",
+    "registrationApplication": "Sõiduki registreerimise taotlus",
+    "salvageTitleRepairEvidence": "Remondidokumentatsioon (salvage title)",
+    "swornTranslation": "Välismaiste dokumentide vandetõlked",
+    "technicalInspection": "Tehnoülevaatuse tõend",
+    "transportInvoices": "Transpordi- ja mereveoarved",
+    "usExportAesItn": "USA ekspordideklaratsioon (AES/ITN)",
+    "vatPaymentProof": "Käibemaksu tasumise tõend"
+  },
+  "error": {
+    "auction": {
+      "noSchedule": "Oksjonitasude hinnakiri puudub.",
+      "unsupported": "Seda oksjonimaja ei toetata."
+    },
+    "excise": {
+      "rateNotFound": "Selle konfiguratsiooni jaoks puudub aktsiisimäär."
+    },
+    "port": {
+      "unknown": "Tundmatu sihtsadam."
+    },
+    "procedure4200": {
+      "notAvailableInPort": "Protseduur 4200 ei ole selles sadamas saadaval.",
+      "sameCountry": "Protseduur 4200 eeldab tollivormistust muus riigis kui sihtriik."
+    },
+    "route": {
+      "unavailable": "Selle valiku jaoks puudub laevaliin."
+    },
+    "tariff": {
+      "notFound": "Sõidukit ei õnnestunud tollitariifistikus klassifitseerida."
+    },
+    "taxProfile": {
+      "missing": "Valitud riigi maksumäärad puuduvad."
+    }
+  },
+  "fuel": {
+    "DIESEL": "Diisel",
+    "EV": "Elektriauto",
+    "HEV": "Hübriid",
+    "HYDROGEN": "Vesinik",
+    "LPG": "LPG (vedelgaas)",
+    "MHEV": "Pehme hübriid (mild hybrid)",
+    "PETROL": "Bensiin",
+    "PHEV": "Pistikhübriid"
+  },
+  "lead": {
+    "consentMarketing": "Saada mulle impordipakkumisi ja nõuandeid (valikuline).",
+    "consentTransfer": "Nõustun, et minu andmed ja kalkulatsioon edastatakse pakkumise koostamiseks ühele kontrollitud partnerile (IKÜM art 6 lg 1 p a).",
+    "email": "E-post",
+    "message": "Oksjoni link või lisateave",
+    "name": "Ees- ja perekonnanimi",
+    "phone": "Telefon (valikuline)",
+    "submit": "Saada päring",
+    "subtitle": "CarImport.eu ise autosid ei impordi. Soovi korral edastame sinu kalkulatsiooni ühele kontrollitud impordiettevõttele, kes koostab sulle pakkumise. Ilma kohustusteta.",
+    "thanks": "Aitäh!",
+    "thanksHint": "Impordiettevõte võtab sinuga ühendust 1 tööpäeva jooksul.",
+    "title": "Päring impordiettevõttele (valikuline)"
+  },
+  "origin": {
+    "CANADA": "Kanada",
+    "JAPAN": "Jaapan",
+    "UAE": "AÜE / Dubai",
+    "UK": "Ühendkuningriik",
+    "USA": "USA"
+  },
+  "paywall": {
+    "blikHint": "Maksa BLIK-i, Przelewy24 või kaardiga.",
+    "currency": "Makse valuuta",
+    "email": "E-post (saadame raporti lingi)",
+    "fullName": "Ees- ja perekonnanimi (trükitakse raportile)",
+    "pay": "Jätka maksmisega",
+    "redirecting": "Suunan ümber…",
+    "secure": "Turvaline makse Stripe’i kaudu. Me ei salvesta kunagi kaardiandmeid.",
+    "subtitle": "Täpsed summad, maksustamise alused ja määrad, dokumendid – sinu nimega PDF-is.",
+    "terms": "Nõustun tingimustega ja palun digitaalse sisu viivitamatut üleandmist, loobudes taganemisõigusest.",
+    "title": "Täielik impordiraport"
+  },
+  "report": {
+    "amount": "Summa",
+    "back": "Tagasi kalkulaatorisse",
+    "base": "Alus",
+    "download": "Laadi PDF alla",
+    "expired": "Makse jäi lõpetamata.",
+    "generating": "PDF-i koostamine…",
+    "item": "Kirje",
+    "rate": "Määr",
+    "refunded": "See tellimus on tagasi makstud.",
+    "stage": "Etapp",
+    "title": "Sõiduki impordikulude raport",
+    "total": "Kogukulu kohaletoimetatuna",
+    "waiting": "Kinnitame sinu makset…",
+    "delivery": "Kohaletoimetamine",
+    "leadTime": "Aeg registreerimiseni",
+    "days": "päeva",
+    "scenarios": "Kolm kulustsenaariumi",
+    "timeline": "Ajakava",
+    "plan": "Mida teha pärast importi – samm-sammult",
+    "step": "Samm",
+    "deadline": "Tähtaeg",
+    "riskDetail": "Tõenäosus {{p}}%, kulu selle toimumisel: {{min}}–{{max}} {{cur}}",
+    "userAmount": "sinu sisestatud summa",
+    "scenarioMethod": "Keskmine stsenaarium arvestab riske ootusväärtusena (tõenäosus × keskmine kulu); pessimistlik eeldab, et iga risk realiseerub ülemise kuluga."
+  },
+  "result": {
+    "chart": "Kulude struktuur",
+    "exciseIncluded": "Aktsiis sisaldub",
+    "fx": "NBP kursid seisuga {{date}}",
+    "paid1": "Täpsed oksjonitasud",
+    "paid2": "Tollimaks, aktsiis ja käibemaks",
+    "paid3": "Dokumentide kontrollnimekiri",
+    "paid4": "Isikustatud PDF-raport",
+    "partner": "Soovid pakkumist impordiettevõttelt?",
+    "rangeHint": "Vahemik arvestab valuutakursside ja veotariifide kõikumisega.",
+    "title": "Hinnanguline kogukulu kohaletoimetatuna",
+    "transit": "Merel {{days}} päeva",
+    "unlock": "Ava täielik raport – {{price}}",
+    "updating": "Uuendan…",
+    "short": "Kogukulu",
+    "calculating": "Arvutan kõik kirjed ja stsenaariumid…",
+    "edit": "Muuda andmeid",
+    "structure": "Kulude struktuur (keskmine stsenaarium)",
+    "timeline": "Aeg: {{min}}–{{max}} päeva registreerimiseni",
+    "included": "Mis on hinnas",
+    "risks": "Mis võib teel juhtuda",
+    "risksLead": "Igal riskil on tõenäosus ja kuluvahemik. Keskmine stsenaarium arvestab neid proportsionaalselt, pessimistlik täies ulatuses. Summad leiad raportist.",
+    "probability": "Tõenäosus",
+    "reportEyebrow": "Raport uksest ukseni",
+    "reportTitle": "Iga kirje sendi täpsusega – kolmes stsenaariumis",
+    "reportItem1": "Oksjonitasud, transport, merevedu ja kindlustus",
+    "reportItem2": "Tollimaks, aktsiis ja käibemaks koos aluste ja määradega",
+    "reportItem3": "Kohaletoimetamine: km × tariif, laadimine, miinimum",
+    "reportItem4": "Registreerimistasud ja teenused pärast importi",
+    "reportItem5": "Riskid koos summadega: optimistlik, keskmine, pessimistlik",
+    "reportItem6": "Samm-sammuline plaan koos tähtaegade ja dokumentide nimekirjaga",
+    "cheapestPort": "odavaim sadam"
+  },
+  "shipping": {
+    "CONTAINER_EXCLUSIVE": "Eraldi konteiner",
+    "CONTAINER_SHARED": "Jagatud konteiner",
+    "RORO": "RoRo"
+  },
+  "title": {
+    "CLEAN": "Puhas omandidokument (clean title)",
+    "SALVAGE": "Salvage / mittetaastatav"
+  },
+  "validation": {
+    "auctionHouse": {
+      "notInOrigin": "See oksjonimaja ei tegutse valitud riigis."
+    },
+    "engineCc": {
+      "required": "Palun sisesta mootori töömaht."
+    },
+    "procedure4200": {
+      "companyOnly": "Protseduur 4200 on saadaval ainult kehtiva ELi käibemaksukohustuslasena registreerimise numbriga ettevõtetele."
+    }
+  },
+  "warning": {
+    "dealer": {
+      "verifyExportDocuments": "Edasimüüjalt ostes veendu, et saad kaasa ekspordidokumendid."
+    },
+    "historic": {
+      "expertOpinionRequired": "Kollektsioonisõiduki staatus (0% tollimaks) nõuab ekspertarvamust ja toll võib selle vaidlustada."
+    },
+    "intraEuTransport": {
+      "notPriced": "Veohind sadamast sihtkohta puudub – kulu ei ole arvestatud."
+    },
+    "newMeansOfTransport": {
+      "vatInDestination": "Uus transpordivahend (≤6 kuud või ≤6000 km): käibemaks tuleb tasuda ka registreerimisriigis."
+    },
+    "nl": {
+      "bpmNotIncluded": "Hollandi registreerimismaks BPM ei ole arvestatud."
+    },
+    "pl": {
+      "clearedForOtherMemberState": "Tollivormistus Poolas registreerimiseks mujal – kontrolli sihtriigi registreerimismakse.",
+      "exciseDeclarationWithin14Days": "Poola aktsiis tasutakse maksuametis (AKC-U/S) 14 päeva jooksul pärast saabumist.",
+      "pickupMayBeReclassified": "Sõiduautona registreeritud pikap võib olla aktsiisiga maksustatav – kontrolli tüübikinnitust."
+    },
+    "procedure4200": {
+      "reverseChargeDeductible": "Protseduur 4200: käibemaks arvestatakse ise sihtriigis (pöördmaksustamine, käibemaksukohustuslastest ettevõtetele neutraalne)."
+    },
+    "registrationTax": {
+      "notModelled": "Sihtriigi registreerimismaksu ei ole veel mudelisse lisatud."
+    },
+    "delivery": {
+      "portPickup": "Valitud on vastuvõtt sadamas – maanteetransport koju ei ole arvestatud.",
+      "selfDriveNotRunning": "Mittesõitva autoga ei saa ajutiste numbrimärkidega sõita – vali puksiirauto."
+    }
+  },
+  "wizard": {
+    "auction": "Oksjonimaja",
+    "back": "Tagasi",
+    "bid": "Võitnud pakkumine",
+    "buyer": "Ostja",
+    "category": "Sõiduki tüüp",
+    "condition": "Sõiduki seisukord",
+    "destination": "Registreerimisriik",
+    "engineCc": "Mootori töömaht",
+    "exciseRate": "PL aktsiis: {{rate}}%",
+    "exciseWarning": "Üle 2000 cm³ tõuseb aktsiisimäär: {{from}}% asemel {{to}}% – vahe ulatub sageli tuhandetesse!",
+    "finish": "Täielik raport",
+    "forklift": "tõstuk / vints",
+    "fuel": "Jõuallikas",
+    "historic": "Ajalooline sõiduk originaalseisukorras",
+    "historicHint": "30+ aastat, muutmata: 0% tollimaks ja vähendatud käibemaks.",
+    "next": "Edasi",
+    "origin": "Osturiik",
+    "port": "Tollivormistuse sadam ELis",
+    "procedure4200": "Tolliprotseduur 4200",
+    "procedure4200Hint": "ELi käibemaksukohustuslastest ettevõtetele: piiril käibemaksu ei tasuta, sihtriigis pöördmaksustamine.",
+    "shipping": "Mereveo viis",
+    "step1": "Kust",
+    "step2": "Sõiduk",
+    "step3": "Seisukord ja hind",
+    "title": "Omandidokumendi (title) tüüp",
+    "year": "Valmistamisaasta",
+    "zone": "Platsi asukoht (osariik / provints)",
+    "zoneOther": "Muu / ei tea",
+    "advanced": "Täpsemad valikud",
+    "step4": "Sihtkoht ja kohaletoimetamine",
+    "step5": "Pärast importi",
+    "step6": "Kuluraport",
+    "calculate": "Arvuta kogukulu",
+    "departurePort": "Lähtesadam",
+    "departureAuto": "Automaatne – odavaim marsruut",
+    "departureHint": "Vali konkreetne sadam, kui ekspediitor on selle juba nimetanud.",
+    "delivery": "Transport sadamast sinu ukseni",
+    "distance": "Kaugus sadamast sinu aadressini",
+    "pricePerKm": "Kilomeetri hind",
+    "tariffUnknown": "Selle riigi kohta kilomeetritariif puudub – kasutatakse kindlat hinda.",
+    "repair": "Remondikulu",
+    "repairHintRunner": "Pakume sellele seisukorrale ja omandidokumendi tüübile tüüpilise summa (värvimine, rehvid). Kas sul on töökoja hinnapakkumine? Sisesta see.",
+    "repairHintDamaged": "Pakume selle seisukorra jaoks tüüpilise remondisumma (umbes 30–40% hinnast). Kas sul on töökoja hinnapakkumine? Sisesta see – varjatud kahjusid arvestatakse eraldi riskina.",
+    "afterImportLead": "Kõik, mida tuleb teha ja maksta sadamast numbrimärkideni. Kohustuslikud kirjed on alati arvestatud, ülejäänu valid ise.",
+    "statutory": "Kohustuslik (riigilõivud)",
+    "optional": "Valikuline",
+    "recommended": "soovitatav",
+    "optionsLoading": "Laadin sinu marsruudi teenuseid…",
+    "noServices": "Selle riigi kohta meil veel üksikasjalikku registreerimise hinnakirja ei ole – raport loetleb sammud.",
+    "insurance": "Esimese aasta liikluskindlustus",
+    "insuranceHint": "Pakume selle riigi liikluskindlustuse pakkumiste mediaani äsja registreeritud autole. Kas sul on oma pakkumine? Sisesta see.",
+    "address": "Kohaletoimetamise aadress",
+    "addressPlaceholder": "nt Tallinn, Pärnu mnt 5 või sihtnumber",
+    "addressChange": "Muuda",
+    "addressHint": "Ainus väli, mille ise sisestad. Aadressi põhjal arvutame kilomeetrid igast sadamast ja valime odavaima.",
+    "portRankingAddress": "Kõik ELi sadamad ({{count}}) hinnastatud sinu aadressini – odavaim eespool.",
+    "portRankingCountry": "Kõik ELi sadamad ({{count}}) hinnastatud registreerimisriigini – täpsete kilomeetrite saamiseks sisesta aadress.",
+    "portRankingLoading": "Hinnastan kõiki ELi sadamaid…",
+    "portCheapest": "odavaim",
+    "portAuto": "Tagasi odavaimale",
+    "portsAll": "Näita kõiki ELi sadamaid ({{count}})",
+    "portsLess": "Ahenda sadamate loend",
+    "days": "päeva",
+    "portRankingNote": "Kogukulu uksest ukseni, keskmine stsenaarium: merevedu, tollivormistus ja käibemaks sadamariigis, kohaletoimetamine aadressile ja tasud pärast importi.",
+    "distanceRouted": "Maanteemarsruut sadamast {{port}} sinu aadressini.",
+    "distanceEstimated": "Hinnang sadamast {{port}} sinu aadressini (linnulennult × 1,25).",
+    "distanceTypical": "Tüüpiline kaugus sadamast {{port}} – täpse arvu saamiseks sisesta ülal aadress.",
+    "tariffShort": "Turg: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} laadimine, min {{minimum}} {{cur}}."
+  },
+  "layout": {
+    "topbar": "Sõltumatu kalkulaator autode impordikulude arvutamiseks USA-st, Kanadast, Jaapanist, AÜE-st ja Ühendkuningriigist 27 ELi riiki",
+    "forBusiness": "Impordiettevõtetele",
+    "home": "Avaleht",
+    "nav": "Peamenüü",
+    "calculator": "Kalkulaator",
+    "howItWorks": "Kuidas see töötab",
+    "pricing": "Hinnad",
+    "faq": "KKK",
+    "cta": "Arvuta kulu",
+    "menu": "Menüü",
+    "close": "Sulge",
+    "breadcrumb": "Navigatsioonirada",
+    "themeLight": "Lülitu heledale teemale",
+    "themeDark": "Lülitu tumedale teemale",
+    "about": "Meist",
+    "why": "Miks meie",
+    "what": "Mida arvutame",
+    "ctaHint": "Tasuta, ilma registreerumiseta",
+    "language": "Keel"
+  },
+  "footer": {
+    "about": "Sõltumatu kalkulaator väljastpoolt ELi toodavate autode impordikulude arvutamiseks. Me ei müü ega impordi autosid – arvutame välja, kui palju need tegelikult maksavad.",
+    "calculators": "Impordikalkulaatorid",
+    "importFrom": {
+      "USA": "Auto USA-st",
+      "CANADA": "Auto Kanadast",
+      "JAPAN": "Auto Jaapanist",
+      "UAE": "Auto Dubaist (AÜE)",
+      "UK": "Auto Ühendkuningriigist"
+    },
+    "service": "Teenus",
+    "privacy": "Privaatsuspoliitika",
+    "language": "Keel",
+    "payments": "Maksed Stripe’i kaudu (kaart, BLIK, Przelewy24). Me ei salvesta kunagi kaardiandmeid.",
+    "rights": "Kõik õigused kaitstud.",
+    "disclaimer": "Arvutused on informatiivsed ega ole tolliotsus ega maksunõustamine."
+  },
+  "cookies": {
+    "title": "Küpsised",
+    "text": "Kasutame saidi toimimiseks vajalikke küpsiseid ja sinu nõusolekul analüütikaküpsiseid. Üksikasjad:",
+    "accept": "Nõustu kõigiga",
+    "necessary": "Ainult vajalikud"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Autode impordi kalkulaator",
+      "title1": "Tea impordikulu",
+      "title2": "enne kui pakkumise teed",
+      "lead": "Sõltumatu kalkulaator, mis näitab minutiga, kui palju maksab tegelikult auto toomine USA-st, Kanadast, Jaapanist, AÜE-st või Ühendkuningriigist – oksjonihinnast kuni numbrimärkideni sinu riigis.",
+      "cta": "Arvuta tasuta",
+      "secondary": "Mida täpselt arvutame",
+      "visual": "Must Ford Mustang kollases neoonvalguses USA lipu taustal",
+      "point1": "Kohene hinnang – ilma registreerumise, telefonikõne ja hinnapakkumise ootamiseta",
+      "point2": "Üle 40 kulukirje, 43 ELi sadamat ja tänased valuutakursid",
+      "point3": "Me ei müü autosid ega võta vahendustasu – numbrid on ausad"
+    },
+    "how": {
+      "eyebrow": "Kuidas see töötab",
+      "title": "Ideest täissummani nelja sammuga",
+      "s1": {
+        "title": "Kust ostad",
+        "text": "USA, Kanada, Jaapan, AÜE või Ühendkuningriik – ning oksjon või edasimüüja."
+      },
+      "s2": {
+        "title": "Milline auto",
+        "text": "Tüüp, kütus, mootori maht, aasta ja seisukord – need määravad maksud."
+      },
+      "s3": {
+        "title": "Sinu aadress",
+        "text": "Ainus väli, mille ise sisestad. Arvutame kilomeetrid ja odavaima sadama."
+      },
+      "s4": {
+        "title": "Tulemus ja raport",
+        "text": "Kolm stsenaariumi tasuta ja sendi täpsusega PDF, kui oled ostuks valmis."
+      },
+      "step": "Samm"
+    },
+    "costs": {
+      "eyebrow": "Millest hind koosneb",
+      "title": "Tollimaks, aktsiis ja käibemaks arvutatud samas järjekorras nagu tollis",
+      "lead": "Iga maks on järgmise maksu alus, seega on järjekord oluline. Tollivormistuse sadam määrab käibemaksumäära, registreerimisriik aktsiisi.",
+      "cif": {
+        "title": "Tolliväärtus (CIF)",
+        "formula": "hind + oksjonitasu + transport + merevedu + kindlustus",
+        "text": "Kõik, mida maksad, kuni auto jõuab ELi sadamasse."
+      },
+      "duty": {
+        "title": "Tollimaks (TARIC)",
+        "formula": "CIF × 10% sõiduautod · 22% pikapid · 0% klassikud",
+        "text": "Määr sõltub HS-koodist; mootorrattad 6–8%."
+      },
+      "excise": {
+        "title": "Aktsiis (PL)",
+        "formula": "(CIF + tollimaks) × 3,1% kuni 2,0 l · 18,6% üle selle",
+        "text": "Hübriidid 1,55% / 9,3%, elektriautod 0%. Tasutakse registreerimisriigis."
+      },
+      "vat": {
+        "title": "Impordikäibemaks",
+        "formula": "(CIF + tollimaks + aktsiis* + mahalaadimine) × tollivormistusriigi määr",
+        "text": "*Aktsiis arvestatakse ainult siis, kui tollivormistus toimub registreerimisriigis."
+      }
+    },
+    "ports": {
+      "title": "Käibemaksumäär sõltub tollivormistuse sadamast",
+      "text": "Kalkulaator hinnastab kõik 43 ELi tollivormistuse sadamat uksest ukseni: käibemaks sadamariigis, merevedu, kohaletoimetamine sinu aadressile ja tasud pärast importi. Tollivormistus Saksamaal tähendab 23% asemel 19% käibemaksu, kuid lisandub autoveok – allpool on mõned näited, ülejäänu võrdleb kalkulaator.",
+      "port": "Sadam",
+      "country": "Tollivormistuse riik"
+    },
+    "pricing": {
+      "eyebrow": "Hinnad",
+      "title": "Alusta tasuta, maksa ainult kindluse eest"
+    },
+    "final": {
+      "title": "Arvuta oma import minutiga",
+      "text": "Ilma registreerumise ja kohustusteta. Kui auto osutub liiga kalliks, oled just raha säästnud. Kui see tasub end ära, teed pakkumise rahulikult, teades täiskulu.",
+      "title1": "Kontrolli enne ostmist.",
+      "title2": "See võtab minuti.",
+      "cta": "Arvuta impordikulu",
+      "about": "Kes me oleme"
+    },
+    "strip": {
+      "brand": {
+        "title": "CarImport.eu —",
+        "text": "sõltumatu impordikalkulaator"
+      },
+      "instant": {
+        "title": "Tulemus minutiga",
+        "text": "Sisestad ainult aadressi, ülejäänu pakume meie"
+      },
+      "items": {
+        "title": "40+ kulukirjet",
+        "text": "Oksjonist registreerimise ja riskideni"
+      },
+      "ports": {
+        "title": "43 ELi sadamat",
+        "text": "Valime sinu aadressi jaoks odavaima"
+      }
+    },
+    "map": {
+      "eyebrow": "Impordimarsruudid",
+      "title": "Sadamatest üle maailma otse ELi",
+      "lead": "Ekspordisadamad USA-s, Kanadas, Jaapanis, AÜE-s ja Ühendkuningriigis ning laevateed läbi Panama, Suessi ja Gibraltari ELi tollivormistuse sadamatesse.",
+      "aria": "Kaart meremarsruutidest USA-st, Kanadast, Jaapanist, AÜE-st ja Ühendkuningriigist ELi sadamatesse",
+      "eu": "Euroopa Liit",
+      "legendEu": "ELi riigid (registreerimine)",
+      "legendOrigin": "Osturiigid",
+      "legendRoute": "Meremarsruut",
+      "scroll": "Kogu kaardi nägemiseks libista",
+      "days": "päeva"
+    },
+    "numbers": {
+      "eyebrow": "CarImport.eu arvudes",
+      "title": "Arvud iga kalkulatsiooni taga",
+      "n1": {
+        "value": "5",
+        "label": "päritoluriiki: USA, Kanada, Jaapan, AÜE ja Ühendkuningriik"
+      },
+      "n2": {
+        "value": "27",
+        "label": "ELi riiki, kus saad auto registreerida"
+      },
+      "n3": {
+        "value": "43",
+        "label": "tollivormistuse sadamat 22 ELi riigis – valime sinu aadressi jaoks odavaima"
+      },
+      "n4": {
+        "value": "4",
+        "label": "keelt: poola, inglise, saksa, ukraina"
+      }
+    },
+    "why": {
+      "eyebrow": "Miks seda kasutada",
+      "title": "Tea, mida maksad – enne kui vajutad „Paku“",
+      "lead": "Impordi kalleim osa on kulud, millest keegi enne ostu ei rääkinud. Kalkulaator toob need päevavalgele enne, kui kulutad esimese dollari.",
+      "preview": {
+        "tag": "Kalkulaator",
+        "title": "Täiskulu uksest ukseni kuue sammuga",
+        "text": "Oksjon, transport, tollimaks, aktsiis, käibemaks, registreerimine ja riskid – kolmes stsenaariumis.",
+        "alt": "Impordikulude kalkulaatori ekraanipilt"
+      },
+      "instant": {
+        "tag": "Kohe",
+        "title": "Hinnang minutiga, mitte kahe päevaga",
+        "text": "Ei mingeid kontaktivorme ega müügikõne ootamist. Iga väli on eeltäidetud ettepanekuga – muudad ainult seda, mida tead paremini."
+      },
+      "independent": {
+        "tag": "Sõltumatu",
+        "title": "Me ei müü autosid ega vedu",
+        "text": "Me ei teeni vedajatelt ega oksjonitelt marginaali, seega pole meil põhjust kulusid alahinnata. Kõik saavad sama tulemuse."
+      },
+      "ports": {
+        "tag": "43 sadamat",
+        "title": "Odavaim marsruut sinu aadressini",
+        "text": "Hinnastame iga ELi tollivormistuse sadama uksest ukseni ja näitame sulle vahet."
+      },
+      "scenarios": {
+        "tag": "Stsenaariumid",
+        "title": "Optimistlik, keskmine, pessimistlik",
+        "text": "Valuutakursid, viivitused ja riskid teel – näed realistlikku vahemikku, mitte ühte „maagilist“ numbrit."
+      },
+      "after": {
+        "tag": "Pärast importi",
+        "title": "Ka registreerimine ja paberimajandus",
+        "text": "Tehnoülevaatus, tõlked, tulede ümberehitus, riigilõivud ja kindlustus – koos tähtaegadega."
+      },
+      "report": {
+        "tag": "PDF-raport",
+        "title": "Iga sent mustvalgel",
+        "text": "4,99 € eest isikustatud raport iga määra, maksustamise aluse ja tegevuskavaga pärast importi."
+      }
+    },
+    "what": {
+      "eyebrow": "Mida arvestame",
+      "title": "Kõik, millest kujuneb auto hind sinu ukse ees",
+      "lead": "Enamik kalkulaatoreid peatub tollimaksu ja käibemaksu juures. Meie arvestame kogu teekonna – oksjoniplatsist numbrimärkideni – ja lisame, mis võib valesti minna.",
+      "cta": "Proovi oma autoga",
+      "purchase": {
+        "title": "Ost",
+        "i1": "Võitnud pakkumine või edasimüüja hind",
+        "i2": "Copart, IAAI, Manheim, USS tasud hinnaastmete järgi",
+        "i3": "Clean / salvage title ja seisukord",
+        "i4": "Hinnanguline remondikulu"
+      },
+      "transport": {
+        "title": "Transport",
+        "i1": "Oksjoniplatsilt ekspordisadamasse",
+        "i2": "Konteiner- või RoRo-vedu",
+        "i3": "Kaubakindlustus",
+        "i4": "Mahalaadimis- ja terminalitasud",
+        "i5": "Puksiirauto või autoveok sinu aadressile"
+      },
+      "taxes": {
+        "title": "Tollimaks ja maksud",
+        "i1": "Tollimaks TARIC-u järgi (10%, pikapid 22%)",
+        "i2": "Aktsiis mootori ja kütuse tüübi järgi",
+        "i3": "Käibemaks tollivormistuse sadama riigis",
+        "i4": "Sama päeva keskpanga vahetuskurss"
+      },
+      "after": {
+        "title": "Pärast importi",
+        "i1": "Tehnoülevaatus ja kinnitus",
+        "i2": "Dokumentide vandetõlked",
+        "i3": "Registreerimine, numbrimärgid ja riigilõivud",
+        "i4": "Tulede ja spidomeetri ümberehitus",
+        "i5": "Esimese aasta liikluskindlustus"
+      },
+      "risks": {
+        "title": "Riskid",
+        "i1": "Hoiustamine sadamas ja hilinevad laevad",
+        "i2": "Tollikontroll ja väärtuse kontroll",
+        "i3": "Varjatud kahjud ja transpordikahjud",
+        "i4": "Hilinev title ja ekspordidokumendid"
+      }
+    },
+    "compare": {
+      "eyebrow": "Võrdlus",
+      "title": "Miks umbkaudsest arvutusest ei piisa",
+      "self": "Ise",
+      "broker": "Maakleri pakkumine",
+      "r1": "Oksjonitasud kehtivate astmete järgi",
+      "r2": "Kõigi 43 ELi sadama võrdlus",
+      "r3": "Tänane kurss + puhver kõikumiste jaoks",
+      "r4": "Aktsiis ja käibemaks tollivormistus- ja registreerimisriigi järgi",
+      "r5": "Riskid ja kolm kulustsenaariumi",
+      "r6": "Registreerimine ja paberimajandus pärast importi",
+      "r7": "Ilma marginaali ja varjatud vahendustasuta",
+      "note": "~ tähendab „tavaliselt osaliselt“. Maaklerite pakkumised sisaldavad sageli nende marginaali ega näita kulude jaotust."
+    }
+  },
+  "pricing": {
+    "popular": "Populaarseim",
+    "free": {
+      "name": "Kiire hinnang",
+      "price": "Tasuta",
+      "f1": "Kogukulu vahemik",
+      "f2": "Kulude struktuuri diagramm",
+      "f3": "Transiidiaeg ja hoiatused",
+      "f4": "Ilma registreerumiseta",
+      "cta": "Arvuta tasuta"
+    },
+    "report": {
+      "name": "PDF-raport",
+      "price": "4,99 €",
+      "f1": "Iga kirje sendi täpsusega",
+      "f2": "Oksjonitasud hinnaastmete järgi",
+      "f3": "Tollimaks, aktsiis ja käibemaks koos aluste ja määradega",
+      "f4": "Dokumentide kontrollnimekiri ja isikustatud PDF",
+      "cta": "Arvuta ja ava raport"
+    },
+    "partner": {
+      "name": "Impordiettevõtetele",
+      "price": "Aktsepteeritud päringu eest",
+      "f1": "Ostjad, kellel on valmis auto kalkulatsioon",
+      "f2": "IKÜM-i nõusolek kogutud enne edastamist",
+      "f3": "Ainult päringud, mille aktsepteerid",
+      "f4": "Ilma kuutasuta",
+      "cta": "Hakka partneriks"
+    }
+  },
+  "faq": {
+    "eyebrow": "Küsimused ja vastused",
+    "title": "Korduma kippuvad küsimused",
+    "lead": "Ei leia vastust? Kalkulaator näitab iga eeldust ja PDF-raport iga määra ja alust.",
+    "q1": {
+      "q": "Kui suur on tollimaks USA-st toodud autole?",
+      "a": "Sõiduautodele (KN 8703) on tollimaks 10% CIF-tolliväärtusest, pikapitele ja väikeveokitele (8704) 22% ning mootorratastele 6–8%. Üle 30 aasta vanused originaalseisukorras kollektsioonisõidukid võivad kvalifitseeruda 0% määrale. Tolliväärtus on ostuhind koos oksjonitasude, ELi piirini transpordi ja kindlustusega."
+    },
+    "q2": {
+      "q": "Milline aktsiis kehtib auto importimisel Poola?",
+      "a": "Sisepõlemismootoriga autod kuni 2000 cm³: 3,1%, üle 2000 cm³: 18,6%. Hübriidid: 1,55% kuni 2000 cm³ ja 9,3% kuni 3500 cm³. Pistikhübriidid kuni 2000 cm³ ja elektriautod on maksust vabastatud. Maksustatav väärtus on tolliväärtus pluss tollimaks, ümberarvestatuna Poola zlottidesse (PLN)."
+    },
+    "q3": {
+      "q": "Kus on parem autot tollivormistada: Bremerhavenis, Rotterdamis või Gdynias?",
+      "a": "Impordikäibemaksu võtab tollivormistuse riik: Saksamaal 19%, Hollandis 21% ja Poolas 23%. Tollivormistus Saksamaal vähendab käibemaksu, kuid lisandub autoveok Poola ja aktsiis tuleb eraldi tasuda maksuametis 14 päeva jooksul. Kalkulaator võrdleb sinu auto jaoks kõiki variante."
+    },
+    "q4": {
+      "q": "Mis on tolliprotseduur 4200?",
+      "a": "See on vabasse ringlusse lubamine käibemaksuvabastusega impordiriigis, kui auto liigub otse käibemaksukohustuslasest ettevõttele teises ELi liikmesriigis. Ostja arvestab käibemaksu oma riigis pöördmaksustamise korras, seega on see käibemaksukohustuslastest ettevõtetele neutraalne. Eraisikutele see ei ole kättesaadav."
+    },
+    "q5": {
+      "q": "Kui kaua kestab vedu Euroopasse?",
+      "a": "USA idaranniku ja Kanada sadamatest umbes 2–3 nädalat merel, Californiast umbes 5 nädalat, Jaapanist 6–7 nädalat, AÜE-st 3–4 nädalat ja Ühendkuningriigist mõni päev. Lisandub transport oksjoniplatsilt sadamasse ja tollivormistus."
+    },
+    "q6": {
+      "q": "Kust pärinevad valuutakursid?",
+      "a": "Kasutame NBP (Poola keskpanga) keskmisi kursse, mis laaditakse automaatselt igal tööpäeval. Kuna maksad auto eest päevi või nädalaid pärast kalkulatsiooni, arvestab tasuta vahemik valuutakõikumistega."
+    },
+    "q7": {
+      "q": "Mida sisaldab tasuline PDF-raport?",
+      "a": "Iga kirje sendi täpsusega: oksjonitasud astmete järgi, transport, tolliväärtus, tollimaks, aktsiis ja käibemaks koos aluste ja määradega, vajalike dokumentide nimekiri ja isikustatud PDF allalaadimiseks. Maksa BLIK-i, kaardi või Przelewy24 kaudu."
+    },
+    "q8": {
+      "q": "Kas kalkulaatori tulemus on siduv?",
+      "a": "Ei. See on hinnang, mis põhineb kehtivatel määradel ja hinnakirjadel. Lõplikud summad määravad toll ja maksuamet, kes võivad näiteks tolliväärtust kontrollida. Raport loetleb kõik eeldused, nii et seda on lihtne ametliku otsusega võrrelda."
+    },
+    "q9": {
+      "q": "Kas CarImport.eu impordib autosid?",
+      "a": "Ei. Oleme ainult kalkulaator – me ei osta, veda ega tollivormista autosid ega võta oksjonitelt või vedajatelt vahendustasu. Tänu sellele on hinnang sõltumatu. Soovi korral võid hinnangu edastada kontrollitud impordiettevõttele, kuid see on alati sinu valik."
+    }
+  },
+  "calc": {
+    "title": "Autode impordikulude kalkulaator",
+    "lead": "Kuus sammu: päritolu, sõiduk, seisukord, sihtkoht, pärast importi ja raport. Tulemus selgub lõpus – kolmes stsenaariumis.",
+    "currency": "Tulemuse valuuta",
+    "progress": "Edenemine"
+  },
+  "seo": {
+    "home": {
+      "title": "Auto impordikulude kalkulaator – USA, Jaapan, Dubai → EL | CarImport.eu",
+      "description": "Sõltumatu kalkulaator auto importimiseks USA-st, Kanadast, Jaapanist, AÜE-st ja Ühendkuningriigist: oksjon, vedu, tollimaks, aktsiis, käibemaks, registreerimine ja riskid. Kohene hinnang, ilma registreerumiseta."
+    },
+    "calculator": {
+      "title": "Imporditud autode tollimaksu, aktsiisi ja käibemaksu kalkulaator | CarImport.eu",
+      "description": "Vali riik, oksjon, sadam ja sõiduk — reaalajas kalkulaator näitab kulude vahemikku ja jaotust: hind, vedu, tollimaks, aktsiis, käibemaks ja registreerimine."
+    },
+    "privacy": {
+      "title": "Privaatsuspoliitika | CarImport.eu",
+      "description": "Kuidas CarImport.eu töötleb isikuandmeid: maksed, raportid, partneripäringud ja küpsised."
+    },
+    "about": {
+      "title": "Meist – sõltumatu autode impordi kalkulaator | CarImport.eu",
+      "description": "Kes me oleme, kust pärinevad meie andmed ja kuidas me raha teenime. CarImport.eu ei müü ega impordi autosid – see arvutab kogu impordikulu ausalt ja sõltumatult."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Õiguslik teave",
+    "title": "Privaatsuspoliitika",
+    "s1": {
+      "title": "Vastutav töötleja",
+      "text": "Isikuandmete vastutav töötleja on CarImport.eu haldaja. Andmekaitse küsimustes võta meiega ühendust e-posti aadressil {{email}}."
+    },
+    "s2": {
+      "title": "Milliseid andmeid töötleme",
+      "text": "Kalkulatsiooni sisendandmed (ilma isikuandmeteta) ning raporti ostmisel sinu nimi ja e-posti aadress. Partnerivorm kogub lisaks telefoninumbri ja sõnumi. Me ei töötle kunagi kaardiandmeid — seda teeb Stripe."
+    },
+    "s3": {
+      "title": "Eesmärgid ja õiguslikud alused",
+      "text": "Raporti ostu täitmine (IKÜM art 6 lg 1 p b), raamatupidamiskohustuste täitmine (p c), sinu päringu edastamine partnerile sinu nõusoleku alusel (p a) ning analüütika küpsiste bänneris antud nõusoleku alusel."
+    },
+    "s4": {
+      "title": "Vastuvõtjad",
+      "text": "Stripe Payments Europe (maksed), meie majutus- ja e-posti teenuse pakkujad ning — partnerivormi puhul — üks kontrollitud impordiettevõte, ainult sinu nõusolekul."
+    },
+    "s5": {
+      "title": "Küpsised",
+      "text": "Vajalikud küpsised ja brauseri salvestusruum jätavad meelde sinu keele, teema, kalkulaatori edenemise ja juurdepääsu ostetud raportile. Analüütika käivitub alles pärast seda, kui klõpsad „Nõustu kõigiga“."
+    },
+    "s6": {
+      "title": "Sinu õigused",
+      "text": "Sul on õigus tutvuda oma andmetega, neid parandada ja kustutada, piirata nende töötlemist, kanda need üle ja esitada vastuväiteid, võtta nõusolek igal ajal tagasi ning esitada kaebus andmekaitse järelevalveasutusele. Kirjuta meile: {{email}}."
+    }
+  },
+  "delivery": {
+    "PORT_PICKUP": "Vastuvõtt sadamas",
+    "CAR_CARRIER": "Autoveok",
+    "TOW_TRUCK": "Puksiirauto",
+    "SELF_DRIVE": "Ajutiste numbrimärkidega"
+  },
+  "scenario": {
+    "0": "Optimistlik",
+    "1": "Keskmine",
+    "2": "Pessimistlik"
+  },
+  "scenarioHint": {
+    "0": "Madalaimad tariifid, soodne valuutakurss, midagi ei lähe valesti",
+    "1": "Tüüpilised tariifid + tõenäosusega kaalutud riskid",
+    "2": "Kõrgeimad tariifid, nõrgem valuutakurss, riskid realiseeruvad"
+  },
+  "timeline": {
+    "INLAND": "Platsilt äravedu ja transport sadamasse",
+    "OCEAN": "Merevedu (sh laeva ootamine)",
+    "CLEARANCE": "Mahalaadimine ja tollivormistus",
+    "DELIVERY": "Kohaletoimetamine sinu ukseni",
+    "REGISTRATION": "Ettevalmistus ja registreerimine"
+  },
+  "plan": {
+    "deadline": {
+      "beforeRelease": "Enne sadamast väljastamist",
+      "14days": "14 päeva jooksul pärast Poola saabumist",
+      "beforeInspection": "Enne tehnoülevaatust",
+      "beforeRegistration": "Enne registreerimist",
+      "pl30days": "30 päeva jooksul pärast importi (trahv kuni 1000 PLN)",
+      "fromRegistration": "Alates registreerimisest / ajutistest numbrimärkidest",
+      "national": "Registreerimisriigi eeskirjade järgi",
+      "none": "Seadusest tulenev tähtaeg puudub"
+    },
+    "step": {
+      "clearance": {
+        "title": "Tollivormistus sadamas",
+        "text": "Tolliagent esitab tollideklaratsiooni (SAD); sina tasud tollimaksu ja impordikäibemaksu. Vaja: arve, konossement, title/ekspordisertifikaat, EORI."
+      },
+      "pl": {
+        "excise": {
+          "title": "Aktsiisideklaratsioon ja aktsiisi tasumine (AKC-U/S)",
+          "text": "Esita maksuametile (või elektrooniliselt) ja tasu aktsiis; kinnitust on vaja registreerimiseks."
+        },
+        "exciseExemption": {
+          "title": "Aktsiisivabastuse deklareerimine (elektriauto)",
+          "text": "Elektriautod on aktsiisist vabastatud, kuid AKC-U/S deklaratsioon tuleb siiski esitada."
+        },
+        "inspection": {
+          "title": "Tehnoülevaatus ülevaatuspunktis",
+          "text": "Imporditud sõiduki esmane ülevaatus koos VIN-koodi tuvastamisega; tulemus kantakse keskregistrisse."
+        },
+        "recycling": {
+          "title": "Ringlussevõtu tasu 500 PLN",
+          "text": "Tasutakse Riiklikule Keskkonnafondile imporditud auto esmasel registreerimisel."
+        },
+        "registration": {
+          "title": "Registreerimine sõidukite registreerimisasutuses",
+          "text": "Taotlus, omandit tõendav dokument koos tõlkega, aktsiis, ülevaatus, ringlussevõtu tasu, käibemaksu/tollimaksu tasumise tõend; saad ajutise loa ja numbrimärgid."
+        }
+      },
+      "translations": {
+        "title": "Vandetõlked",
+        "text": "Välismaine title/registreerimisdokument, arve ja ekspordidokument – vandetõlgi poolt."
+      },
+      "lighting": {
+        "title": "Tulede ümberehitus ELi standarditele",
+        "text": "Merevaigukollased tagumised suunatuled, tagumine udutuli, esitulede reguleerimine – ilma selleta auto ülevaatust ei läbi."
+      },
+      "insurance": {
+        "title": "Liikluskindlustus",
+        "text": "Kohustuslik alates registreerimisest; kaskokindlustus tasub sõlmida pärast eksperthinnangut."
+      },
+      "de": {
+        "approval": {
+          "title": "Üksikkinnitus (§21 StVZO)",
+          "text": "Täielik ekspertülevaatus (TÜV/DEKRA) väljastpoolt ELi pärit autodele; registreerimiseks nõutav."
+        },
+        "registration": {
+          "title": "Registreerimine (Zulassung)",
+          "text": "Kindlustuse eVB-number, tollivormistuse tõend, eksperdi aruanne, SEPA otsekorraldus sõidukimaksu tasumiseks."
+        }
+      },
+      "generic": {
+        "inspection": {
+          "title": "Ülevaatus / üksikkinnitus",
+          "text": "Ulatus sõltub riigist – väljastpoolt ELi pärit autod vajavad sageli üksikkinnitust."
+        },
+        "registrationTax": {
+          "title": "Riiklik registreerimismaks",
+          "text": "Nt BPM Hollandis, NoVA Austrias, malus Prantsusmaal – kontrolli enne ostmist."
+        },
+        "registration": {
+          "title": "Sõiduki registreerimine",
+          "text": "Taotle koos tollivormistuse tõendi, ülevaatuse ja kindlustusega."
+        }
+      },
+      "evCharging": {
+        "title": "Laadimispesa",
+        "text": "USA autodel on NACS/CCS1 – vajad adapterit või CCS2/Type 2 pesa paigaldamist."
+      }
+    }
+  },
+  "deliveryHint": {
+    "CAR_CARRIER": "Sõitvatele autodele odavaim",
+    "TOW_TRUCK": "Eraldi puksiirauto, ka mittesõitvatele autodele",
+    "SELF_DRIVE": "Ajutised numbrimärgid + kindlustus; ainult sõitvatele autodele",
+    "PORT_PICKUP": "Korraldad transpordi ise"
+  },
+  "serviceHint": {
+    "SWORN_TRANSLATION": "Title, arve ja ekspordidokument",
+    "US_LIGHTING_CONVERSION": "ELi nõuetele vastavad suunatuled ja tuled",
+    "RHD_HEADLIGHT_ADJUSTMENT": "Parempoolse rooliga auto",
+    "REAR_FOG_LIGHT": "Nõutav ülevaatusel",
+    "SPEEDOMETER_KMH": "Spidomeeter miilides – mugavus ja edasimüügiväärtus",
+    "SERVICE_INSPECTION": "Õli, filtrid, vedelikud, pidurid pärast pikka teekonda",
+    "GEOMETRY_ALIGNMENT": "Soovitatav pärast veermiku remonti",
+    "DETAILING": "Pesu, salongi puhastus, värvi poleerimine",
+    "EXPERT_VALUATION": "Kasulik kaskokindlustuse ja edasimüügi jaoks"
+  },
+  "riskInfo": {
+    "RISK_PORT_STORAGE": "Terminal võtab pärast tasuta perioodi tasu iga päeva eest, nt kui dokumendid või transport hilinevad.",
+    "RISK_CUSTOMS_INSPECTION": "Juhuslik või sihipärane kontroll: konteineri tühjendamine, röntgen, täiendavad terminalitasud.",
+    "RISK_CUSTOMS_VALUE_CHALLENGE": "Kui hind tundub liiga madal, võib toll kasutada kõrgemat väärtust – tollimaks ja käibemaks tõusevad.",
+    "RISK_VESSEL_ROLLOVER": "Laev on ülebroneeritud ja konteiner läheb järgmisega – lisahoiustamine ekspordisadamas.",
+    "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transpordikahju katab poliis, millest arvatakse maha omavastutus.",
+    "RISK_HIDDEN_DAMAGE": "Rikked, mida oksjoni fotodel ei näe – mida halvem seisukord, seda suurem risk.",
+    "RISK_TITLE_DELAY": "Oksjon saadab omandidokumendi (title) hilinemisega – auto ootab platsil või sadamas.",
+    "RISK_EXPORT_DOCS_DELAY": "Registrist kustutamine ja ekspordidokumendid võtavad tavapärasest kauem aega."
+  },
+  "docStage": {
+    "PURCHASE": "Ost",
+    "SHIPPING": "Vedu",
+    "CUSTOMS": "Tollivormistus",
+    "REGISTRATION": "Registreerimine"
+  },
+  "proposal": {
+    "tag": "Ettepanek",
+    "restore": "Kasuta ettepanekut",
+    "was": "ettepanek: {{value}} {{unit}}"
+  },
+  "region": {
+    "NORTH_SEA": "Põhjameri",
+    "BALTIC": "Läänemeri ja Skandinaavia",
+    "ATLANTIC": "Atlandi ookean",
+    "WEST_MED": "Vahemere lääneosa",
+    "EAST_MED": "Aadria meri, Egeuse meri ja Must meri"
+  },
+  "about": {
+    "eyebrow": "Meist",
+    "title1": "Arvutame autode importi.",
+    "title2": "Autosid me ei müü.",
+    "lead": "CarImport.eu on sõltumatu kalkulaator, mis arvutab väljastpoolt Euroopa Liitu auto toomise kulu. Lõime selle, et igaüks – mitte ainult kümneaastase kogemusega edasimüüja – teaks enne ostu, kui palju ta tegelikult maksab.",
+    "story": {
+      "eyebrow": "Kuidas see algas",
+      "title": "Pettumusest varjatud kulude pärast",
+      "p1": "USA oksjonilt pärit auto paistab soodne – kuni lisad oksjonitasud, transpordi sadamasse, mereveo, tollimaksu, aktsiisi, käibemaksu, mahalaadimise, puksiirauto, tõlked, tehnoülevaatuse ja registreerimise. Iga kirje on „väike“, kokku võivad need hinna kahekordistada.",
+      "p2": "Teave on laiali oksjonite hinnakirjades, tollitariifistikes, valuutakursitabelites ja 27 riigi eeskirjades. Maaklerite pakkumised annavad tavaliselt ühe summa ilma jaotuseta – ja nende marginaal on juba sees.",
+      "p3": "Ehitasime tööriista, mis toob kõik kokku, arvutab kehtivate määradega ja näitab iga eeldust. Ilma registreerumise ja müügiesindaja kõneta."
+    },
+    "role": {
+      "eyebrow": "Ausalt sellest, mis me oleme",
+      "title": "Oleme kalkulaator. Ainult kalkulaator.",
+      "is": "Mis me oleme",
+      "is1": "Sõltumatu kalkulaator kogu impordikulu arvutamiseks",
+      "is2": "43 ELi tollivormistuse sadama võrdlus sinu aadressi jaoks",
+      "is3": "Üksikasjaliku PDF-raporti allikas koos iga määraga",
+      "is4": "Sammude ja dokumentide nimekiri pärast importi",
+      "isNot": "Mis me ei ole",
+      "isNot1": "Me ei ole importija ega edasimüüja – me ei müü autosid",
+      "isNot2": "Me ei korralda vedu ega tollivormistust",
+      "isNot3": "Ei mingit vahendustasu oksjonitelt, vedajatelt ega tolliagentidelt",
+      "isNot4": "Me ei ole ametiasutus ega maksunõustaja – tulemus on hinnang"
+    },
+    "data": {
+      "eyebrow": "Kust numbrid pärinevad",
+      "title": "Kehtivad määrad, mitte „umbes“",
+      "lead": "Iga summa tulemuses põhineb konkreetsel määral, mida raport näitab. Andmeid uuendatakse automaatselt või alati, kui seadus muutub.",
+      "customs": {
+        "title": "ELi tollitariifistik",
+        "text": "Tollimaksumäärad KN-koodi (TARIC) järgi sõiduautodele, pikapitele, mootorratastele ja ajaloolistele sõidukitele."
+      },
+      "fx": {
+        "title": "Keskpankade kursid",
+        "text": "Viitekursid, mis laaditakse igal tööpäeval, koos puhvriga kõikumiste jaoks kuni maksmiseni."
+      },
+      "fees": {
+        "title": "Oksjonite ja vedajate hinnakirjad",
+        "text": "Copart, IAAI, Manheim ja USS tasuastmed, mereveotariifid, sadamatasud ja transpordi kilomeetrihinnad."
+      },
+      "law": {
+        "title": "Riiklikud eeskirjad",
+        "text": "Aktsiis, 27 riigi käibemaksumäärad, registreerimistasud ja kohustuslikud kontrollid – koos õigusliku alusega raportis."
+      }
+    },
+    "money": {
+      "eyebrow": "Kuidas me raha teenime",
+      "title": "Läbipaistvalt – sest see puudutab usaldust",
+      "lead": "Kalkulaatori tulemus ei sõltu sellest, kes meile maksab või kui palju. Teenime kolmel viisil, kõik avalikult:",
+      "m1": {
+        "title": "PDF-raport – 4,99 €",
+        "text": "Tasuta tulemus näitab vahemikku ja kulude struktuuri. Üksikasjaliku raporti iga kirjega ostad ainult siis, kui seda vajad."
+      },
+      "m2": {
+        "title": "Valikuline päring impordiettevõttele",
+        "text": "Ainult sinu soovil edastame sinu hinnangu ühele kontrollitud ettevõttele. Meile maksab tema, mitte sina – ja ainult sinu nõusolekul."
+      },
+      "m3": {
+        "title": "Märgistatud partnerlingid",
+        "text": "Nt VIN-kontroll või valuutavahetus. Alati märgistatud, ei mõjuta kunagi hinnangut."
+      }
+    },
+    "values": {
+      "eyebrow": "Mis meid juhib",
+      "transparency": {
+        "title": "Läbipaistvus",
+        "text": "Igal numbril on allikas ja alus. Kui midagi on hinnang, ütleme seda otse."
+      },
+      "independence": {
+        "title": "Sõltumatus",
+        "text": "Meil pole huvi selle vastu, kas ostad auto või kes selle sulle impordib."
+      },
+      "precision": {
+        "title": "Täpsus",
+        "text": "Arvutame sendi täpsusega, kuid näitame ka vahemikku – sest import ei ole täppismatemaatika."
+      }
+    },
+    "cta": {
+      "title": "Kontrolli oma autot minutiga",
+      "text": "Kas sul on küsimus või märkasid aegunud määra? Kirjuta aadressil {{email}}"
+    }
+  },
+  "currency": {
+    "label": "Tulemuse valuuta",
+    "title": "Millises valuutas kulusid näidata?",
+    "hint": "Oksjonisummad (USD, JPY, AED…) arvestatakse ümber keskpanga kehtiva kursiga. Valuuta ei muuda maksude arvutamist – makse määrab alati tollivormistuse riik.",
+    "groupEu": "ELi valuutad",
+    "groupOther": "Muud"
+  }
+}
