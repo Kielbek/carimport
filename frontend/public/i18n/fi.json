@@ -398,7 +398,8 @@
     "why": "Miksi me",
     "what": "Mitä laskemme",
     "ctaHint": "Maksuton, ilman rekisteröitymistä",
-    "language": "Kieli"
+    "language": "Kieli",
+    "blog": "Blogi"
   },
   "footer": {
     "about": "Riippumaton laskuri EU:n ulkopuolelta tuotavien autojen tuontikustannuksille. Emme myy emmekä tuo autoja – laskemme, mitä ne oikeasti maksavat.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Aiheeseen liittyvät oppaat",
     "disclaimer": "Tiedot ovat suuntaa antavia; lopulliset summat määräävät vero- ja tulliviranomaiset. Verokannat laskurin käyttämien mukaan."
+  },
+  "blog": {
+    "title": "Autontuontiblogi",
+    "lead": "Käytännön artikkeleita autojen tuonnista Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista ja Isosta-Britanniasta: todelliset kustannukset, huutokaupat, tulli, rekisteröinti ja vältettävät virheet.",
+    "metaTitle": "Autontuontiblogi – kustannukset, huutokaupat, tulli, rekisteröinti | CarImport.eu",
+    "metaDescription": "Oppaita ja artikkeleita auton tuonnista EU:hun: paljonko se todella maksaa, miten ostaa Copartista ja IAAI:sta, tulli, arvonlisävero ja rekisteröinti.",
+    "all": "Kaikki",
+    "minutes": "{{n}} min lukuaika",
+    "related": "Lue myös",
+    "latest": "Blogista",
+    "latestLead": "Vastauksia kysymyksiin, joita kysytään ennen auton tuontia.",
+    "more": "Kaikki artikkelit",
+    "empty": "Artikkelit tällä kielellä ovat tulossa pian.",
+    "category": {
+      "costs": "Kustannukset",
+      "buying": "Ostaminen",
+      "customs": "Tulli ja verot",
+      "registration": "Rekisteröinti",
+      "logistics": "Kuljetus ja satamat"
+    }
   }
 }

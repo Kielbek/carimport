@@ -398,7 +398,8 @@
     "why": "Miks meie",
     "what": "Mida arvutame",
     "ctaHint": "Tasuta, ilma registreerumiseta",
-    "language": "Keel"
+    "language": "Keel",
+    "blog": "Blogi"
   },
   "footer": {
     "about": "Sõltumatu kalkulaator väljastpoolt ELi toodavate autode impordikulude arvutamiseks. Me ei müü ega impordi autosid – arvutame välja, kui palju need tegelikult maksavad.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Seotud juhendid",
     "disclaimer": "Teave on üksnes orienteeruv; lõplikud summad määravad maksu- ja tolliasutused. Määrad vastavalt kalkulaatoris kasutatavatele."
+  },
+  "blog": {
+    "title": "Autoimpordi blogi",
+    "lead": "Praktilised artiklid autode impordist USA-st, Kanadast, Jaapanist, AÜE-st ja Ühendkuningriigist: tegelikud kulud, oksjonid, toll, registreerimine ja vead, mida vältida.",
+    "metaTitle": "Autoimpordi blogi – kulud, oksjonid, toll, registreerimine | CarImport.eu",
+    "metaDescription": "Juhendid ja artiklid auto impordist ELi: kui palju see tegelikult maksab, kuidas osta Copartist ja IAAI-st, tollimaks, käibemaks ja registreerimine.",
+    "all": "Kõik",
+    "minutes": "{{n}} min lugemist",
+    "related": "Loe ka",
+    "latest": "Blogist",
+    "latestLead": "Vastused küsimustele, mida küsitakse enne auto importimist.",
+    "more": "Kõik artiklid",
+    "empty": "Selles keeles artiklid ilmuvad peagi.",
+    "category": {
+      "costs": "Kulud",
+      "buying": "Ostmine",
+      "customs": "Toll ja maksud",
+      "registration": "Registreerimine",
+      "logistics": "Transport ja sadamad"
+    }
   }
 }

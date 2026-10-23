@@ -398,7 +398,8 @@
     "why": "Miért mi",
     "what": "Mit számolunk",
     "ctaHint": "Ingyenes, regisztráció nélkül",
-    "language": "Nyelv"
+    "language": "Nyelv",
+    "blog": "Blog"
   },
   "footer": {
     "about": "Független kalkulátor az EU-n kívülről behozott autók importköltségeihez. Nem árulunk és nem importálunk autókat – kiszámoljuk, mennyibe kerülnek valójában.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Kapcsolódó útmutatók",
     "disclaimer": "Az információk csak tájékoztató jellegűek; a végső összegekről az adó- és vámhatóságok döntenek. A kulcsok a kalkulátor által használt értékek."
+  },
+  "blog": {
+    "title": "Autóimport blog",
+    "lead": "Gyakorlati cikkek az USA-ból, Kanadából, Japánból, az Egyesült Arab Emírségekből és az Egyesült Királyságból történő autóbehozatalról: valós költségek, aukciók, vám, forgalomba helyezés és a leggyakoribb hibák.",
+    "metaTitle": "Autóimport blog – költségek, aukciók, vám, forgalomba helyezés | CarImport.eu",
+    "metaDescription": "Útmutatók és cikkek az autóbehozatalról az EU-ba: mennyibe kerül valójában, hogyan vásároljon a Copart és az IAAI aukcióin, vám, áfa és forgalomba helyezés.",
+    "all": "Összes",
+    "minutes": "{{n}} perc olvasás",
+    "related": "Olvassa el ezt is",
+    "latest": "A blogból",
+    "latestLead": "Válaszok azokra a kérdésekre, amelyeket autóbehozatal előtt mindenki feltesz.",
+    "more": "Összes cikk",
+    "empty": "Ezen a nyelven hamarosan érkeznek a cikkek.",
+    "category": {
+      "costs": "Költségek",
+      "buying": "Vásárlás",
+      "customs": "Vám és adók",
+      "registration": "Forgalomba helyezés",
+      "logistics": "Szállítás és kikötők"
+    }
   }
 }

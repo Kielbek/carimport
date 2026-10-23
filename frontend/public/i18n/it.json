@@ -398,7 +398,8 @@
     "why": "Perché noi",
     "what": "Cosa calcoliamo",
     "ctaHint": "Gratis, senza registrazione",
-    "language": "Lingua"
+    "language": "Lingua",
+    "blog": "Blog"
   },
   "footer": {
     "about": "Calcolatore indipendente dei costi di importazione di auto da Paesi extra UE. Non vendiamo né importiamo auto – calcoliamo quanto costano davvero.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Guide correlate",
     "disclaimer": "Informazioni puramente indicative; gli importi definitivi sono stabiliti dalle autorità fiscali e doganali. Aliquote come utilizzate dal calcolatore."
+  },
+  "blog": {
+    "title": "Blog sull’importazione di auto",
+    "lead": "Articoli pratici sull’importazione di auto da USA, Canada, Giappone, EAU e Regno Unito: costi reali, aste, dogana, immatricolazione e gli errori da evitare.",
+    "metaTitle": "Blog importazione auto – costi, aste, dogana, immatricolazione | CarImport.eu",
+    "metaDescription": "Guide e articoli sull’importazione di un’auto in Italia e nell’UE: quanto costa davvero, come comprare su Copart e IAAI, dazio, IVA e immatricolazione.",
+    "all": "Tutti",
+    "minutes": "{{n}} min di lettura",
+    "related": "Leggi anche",
+    "latest": "Dal blog",
+    "latestLead": "Risposte alle domande che ci si pone prima di importare un’auto.",
+    "more": "Tutti gli articoli",
+    "empty": "Gli articoli in questa lingua arriveranno presto.",
+    "category": {
+      "costs": "Costi",
+      "buying": "Acquisto",
+      "customs": "Dogana e tasse",
+      "registration": "Immatricolazione",
+      "logistics": "Spedizione e porti"
+    }
   }
 }

@@ -398,7 +398,8 @@
     "why": "Prečo my",
     "what": "Čo počítame",
     "ctaHint": "Zadarmo, bez registrácie",
-    "language": "Jazyk"
+    "language": "Jazyk",
+    "blog": "Blog"
   },
   "footer": {
     "about": "Nezávislá kalkulačka nákladov na dovoz áut z krajín mimo EÚ. Autá nepredávame ani nedovážame – počítame, koľko naozaj stoja.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Súvisiaci sprievodcovia",
     "disclaimer": "Informácie majú len orientačný charakter; konečné sumy určujú daňové a colné úrady. Sadzby zodpovedajú tým, ktoré používa kalkulačka."
+  },
+  "blog": {
+    "title": "Blog o dovoze áut",
+    "lead": "Praktické články o dovoze áut z USA, Kanady, Japonska, SAE a Spojeného kráľovstva: skutočné náklady, aukcie, clo, registrácia a chyby, ktorým sa oplatí vyhnúť.",
+    "metaTitle": "Blog o dovoze áut – náklady, aukcie, clo, registrácia | CarImport.eu",
+    "metaDescription": "Návody a články o dovoze auta do EÚ: koľko to naozaj stojí, ako kúpiť auto na Copart a IAAI, clo, DPH a registrácia na Slovensku.",
+    "all": "Všetko",
+    "minutes": "{{n}} min čítania",
+    "related": "Prečítajte si aj",
+    "latest": "Z blogu",
+    "latestLead": "Odpovede na otázky, ktoré si ľudia kladú pred dovozom auta.",
+    "more": "Všetky články",
+    "empty": "Články v tomto jazyku pripravujeme.",
+    "category": {
+      "costs": "Náklady",
+      "buying": "Kúpa",
+      "customs": "Clo a dane",
+      "registration": "Registrácia",
+      "logistics": "Doprava a prístavy"
+    }
   }
 }
