@@ -301,5 +301,938 @@
         "a": "Mõnda autot saab osta oma kontoga, kuid paljud nõuavad edasimüüja litsentsi. Seetõttu kasutab enamik Euroopa ostjaid vahendajat."
       }
     ]
+  },
+  {
+    "id": "salvage-title",
+    "slug": "salvage-dokumendiga-auto-usast-mida-peab-teadma",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-12",
+    "minutes": 3,
+    "title": "Salvage-dokumendiga auto USA-st: mida pead teadma?",
+    "metaTitle": "Salvage-auto USA-st – riskid ja kulud Eestis | CarImport.eu",
+    "description": "Mida tähendavad clean, salvage, rebuilt ja parts only dokumendid, kas salvage-auto saab Eestis registreerida ja kui palju remondiks varuda.",
+    "lead": "Enamikul Coparti ja IAAI autodest on salvage-dokument – sellepärast ongi need nii odavad. ELis, ka Eestis, ei takista dokumendi märge iseenesest registreerimist, kuid see ütleb palju riski kohta, mida ostad. Selles artiklis selgitame, mida märked tähendavad ja kuidas remonti eelarvestada.",
+    "blocks": [
+      {
+        "h2": "Dokumentide tüübid lühidalt"
+      },
+      {
+        "ul": [
+          "Clean – kogukahju ei ole registreeritud",
+          "Salvage – kindlustusselts on auto kuulutanud kogukahjuks (avarii, üleujutus, leitud varastatud auto, rahe)",
+          "Rebuilt / reconstructed – endine salvage-auto, mis on USA-s remonditud ja uuesti üle vaadatud",
+          "Certificate of destruction / parts only / non-repairable – mõeldud varuosadeks; väldi, kui soovid autot registreerida"
+        ]
+      },
+      {
+        "p": "Title on Ameerika omandidokument ja iga osariik kasutab oma märkeid. Sama kahjustus võib seega eri osariikides viia erineva märkeni. Kogukahju tähendab vaid seda, et kindlustusseltsi hinnangul oleks remont USA-s olnud auto väärtusega võrreldes liiga kallis – mitte tingimata seda, et auto on romu."
+      },
+      {
+        "h2": "Kas salvage-autot saab Eestis registreerida?"
+      },
+      {
+        "p": "Jah. ELi riigid ei kasuta USA dokumendimärkeid; oluline on, et remonditud auto läbiks registreerimiseelse ülevaatuse ning vastaks ELi valgustus- ja ohutusnõuetele. Eestis registreerib sõidukeid Transpordiamet, mis dokumendi tüüpi iseenesest ei küsi. Salvage-ajalugu võib siiski vähendada järelturu väärtust ja mõned kindlustusseltsid küsivad selle kohta."
+      },
+      {
+        "p": "Ülevaataja kontrollib auto identifitseerimisandmeid, tulesid, pidureid, heitgaase ja ohutusseadmeid. Kui turvapadjad on avanenud, tuleb need vahetada ja veakoodid kustutada. Struktuursed remonditööd tasub dokumenteerida fotode ja arvetega, et saaksid neid vajadusel ülevaatusel ja hiljem ostjale näidata."
+      },
+      {
+        "h2": "Kus tegelik risk peitub"
+      },
+      {
+        "p": "Fotod näitavad nähtavat kahjustust, mitte seda, mis selle taga on: kõverad raamid, avanenud turvapadjad koos anduritega, elektroonika pärast üleujutust, puuduvad osad. Üleujutatud autod on kõige riskantsemad – korrosioon ja elektririkked ilmnevad alles nädalate pärast. Eesti talv ja soolatud teed süvendavad varjatud korrosiooni veelgi."
+      },
+      {
+        "tip": "Mittesõitvate autode puhul planeeri remondiks 30–40% hinnast ja hoia lisavaru varjatud kahjustuste jaoks. Kalkulaator pakub need summad automaatselt välja."
+      },
+      {
+        "h2": "Remondieelarve praktikas"
+      },
+      {
+        "table": {
+          "head": [
+            "Kahjustuse tüüp",
+            "Risk",
+            "Arvesta"
+          ],
+          "rows": [
+            [
+              "Väike tagakahjustus, turvapadjad terved",
+              "madal",
+              "osad + värvimine"
+            ],
+            [
+              "Esikahjustus, turvapadjad avanenud",
+              "keskmine",
+              "turvapadjad, andurid, radiaator"
+            ],
+            [
+              "Küljekahjustus, piilarid",
+              "kõrge",
+              "struktuurne remont"
+            ],
+            [
+              "Üleujutus",
+              "väga kõrge",
+              "elektrisüsteem, korrosioon – väldi"
+            ],
+            [
+              "Ei sõida (non-runner)",
+              "teadmata",
+              "30–40% hinnast + varu"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Varuosade hinnad ja saadavus erinevad palju. Ameerika mudeli osad võivad Eestis olla kallid või tuleb need tellida USA-st, mis lisab aega ja veokulusid. Kontrolli enne pakkumist, kas tuled, põrkerauad ja andurid on saadaval ELi versioonina."
+      },
+      {
+        "h2": "Müüja ütleb palju"
+      },
+      {
+        "p": "Kindlustusseltside müüdavad autod on peaaegu alati avarii-, üleujutus- või rahekahjustusega autod, mille eest kindlustushüvitis on juba makstud. Rendifirmade ja edasimüüjate autod võivad olla clean-dokumendiga, vaid kulumise või väikeste riketega, kuid on ka kallimad. Leitud varastatud autod (theft recovery) võivad olla peaaegu terved, kuid neilt puuduvad sageli võtmed, raadio või veljed."
+      },
+      {
+        "h2": "Kuidas riski vähendada"
+      },
+      {
+        "ol": [
+          "Kontrolli VIN-ajalugu varasemate avariide ja üleujutuse märgete suhtes (Carfax, AutoCheck).",
+          "Eelista autosid, millel on ainult esi- või tagakahjustus ilma turvapatjade avanemiseta.",
+          "Küsi enne pakkumist remondihinnangut mudelit tundvalt kereremonditöökojalt.",
+          "Kontrolli varuosade saadavust ja hindu Eestis.",
+          "Jäta eelarvesse varu: odavaim auto on sageli kõige kallim projekt."
+        ]
+      },
+      {
+        "h2": "Kui auto jõuab Eestisse"
+      },
+      {
+        "ol": [
+          "Kontrolli autot kohe sadamas või pärast kohaletoimetamist ja pildista võimalikud transpordikahjustused.",
+          "Vii auto imporditud autosid tundvasse töökotta ning vaata läbi remondi- ja ümberehitustööd.",
+          "Tee tulede, spidomeetri ja muude nõuete muudatused enne ülevaatust.",
+          "Broneeri registreerimiseelne ülevaatus ja kogu dokumendid: title, ostuarve, tollideklaratsioon ja tõlked.",
+          "Registreeri auto Transpordiametis ja maksa registreerimistasu."
+        ]
+      },
+      {
+        "p": "Kui remont venib, võib auto seista kaua enne, kui see on sõidukorras. Arvesta ka oma ajaga: paljud entusiastid alahindavad, kui palju õhtuid ja osatellimusi üks salvage-projekt nõuab."
+      },
+      {
+        "h2": "Salvage-auto ja maksud"
+      },
+      {
+        "p": "Tollimaks ja käibemaks arvutatakse makstud hinnast ja transpordikuludest, olenemata dokumendist. Odav kahjustatud auto tähendab seega ka väiksemat tollimaksu ja käibemaksu. Registreerimistasu sõltub Eesti riiklikest reeglitest ja auto andmetest. Kalkulaator näitab makse ja võrdleb kõiki 43 ELi sadamat ukseni – sisestad ainult oma aadressi. Projekt on õnnestunud alles siis, kui kogusumma – auto, tasud, maksud, remont ja oma töö – jääb selgelt alla sarnase Eestis müüdava auto hinna. Kui vahe on väike, on sageli mõistlikum osta terve auto otse kohalikult turult ja säästa aega ning närve."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kas salvage-dokument mõjutab tollimaksu?",
+        "a": "Ei. Tollimaks ja käibemaks põhinevad makstud hinnal ja transpordikuludel, olenemata dokumendist."
+      },
+      {
+        "q": "Kas rebuilt-dokument on parem?",
+        "a": "See näitab, et auto on USA-s remonditud ja üle vaadatud, kuid remondi kvaliteet on erinev. Kontrolli seda nagu iga kahjustatud autot."
+      },
+      {
+        "q": "Kas salvage-autot saab Eestis kindlustada?",
+        "a": "Tavaliselt jah, kui auto on üle vaadatud ja registreeritud, kuid mõned kindlustusseltsid küsivad kahjude ajaloo kohta. Küsi tingimusi enne ostu."
+      }
+    ]
+  },
+  {
+    "id": "customs-vat",
+    "slug": "auto-import-tollimaks-ja-kaibemaks-kuidas-neid-arvutatakse",
+    "category": "customs",
+    "origin": null,
+    "date": "2026-10-08",
+    "minutes": 3,
+    "title": "Imporditud auto tollimaks ja käibemaks: kuidas neid arvutatakse?",
+    "metaTitle": "Auto tollimaks ja käibemaks – nii need arvutatakse | CarImport.eu",
+    "description": "Kuidas arvutatakse imporditud auto tollimaks ja käibemaks: tolliväärtus (CIF), tollimaksumäärad, Eesti 24% käibemaks, registreerimistasu ja protseduur 4200.",
+    "lead": "Tollis arvutab enamik esmakordseid importijaid oma numbrid valesti. Kaks reeglit selgitavad peaaegu kõike: tollimaksu arvestatakse CIF-väärtuselt ja käibemaksu selle peale riigis, kus auto tollitakse. Eestis lisandub registreerimisel veel registreerimistasu.",
+    "blocks": [
+      {
+        "h2": "Tolliväärtus: mis sinna kuulub"
+      },
+      {
+        "p": "ELi välisest riigist ostetud auto tolliväärtus on tehinguväärtus pluss kulud auto toomiseks ELi piirini: oksjonitasud, transport ekspordisadamasse, merevedu ja kindlustus. Piirijärgsed kulud – mahalaadimine ja transport ELi sees – tolliväärtuse hulka ei kuulu. Seda nimetatakse CIF-väärtuseks (cost, insurance, freight)."
+      },
+      {
+        "p": "Tolliväärtus märgitakse tollideklaratsioonile ja Eestis tegeleb tollivormistusega Maksu- ja Tolliamet (MTA). Eraisik võib deklaratsiooni esitada ise või kasutada tolliagenti, mis on konteinerveo puhul kõige tavalisem. Dollarisummad teisendatakse eurodeks tolli kasutatava kursiga."
+      },
+      {
+        "h2": "Tollimaksumäärad"
+      },
+      {
+        "table": {
+          "head": [
+            "Sõiduk",
+            "CN-kood",
+            "Tollimaks"
+          ],
+          "rows": [
+            [
+              "Sõiduauto, maastur",
+              "8703",
+              "10%"
+            ],
+            [
+              "Pikap, kerge veoauto",
+              "8704",
+              "22%"
+            ],
+            [
+              "Mootorratas",
+              "8711",
+              "6–8%"
+            ],
+            [
+              "Kollektsioonisõiduk (30+ aastat, originaal)",
+              "9705",
+              "0%"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Pikap on tolli seisukohast kallis: 22% tuleb sageli üllatusena, kui ostja on arvestanud sõiduauto 10%-ga. Otsustav on sõiduki ehitus ja klassifikatsioon, mitte see, kuidas seda kasutatakse. Kollektsioonisõiduki 0% eeldab, et auto on üle 30 aasta vana, originaalseisukorras ja ajalooliselt huvipakkuv; ümberehitatud autod tingimustele tavaliselt ei vasta."
+      },
+      {
+        "h2": "Impordi käibemaks"
+      },
+      {
+        "p": "Käibemaksu arvestatakse tolliväärtusest, tollimaksust ja transpordikuludest kuni esimese sihtkohani ELis. See makstakse liikmesriigis, kus auto vabasse ringlusse lubatakse, selle riigi standardmääraga. Eestis on see 24%. Kui auto tollitakse näiteks Soomes, makstakse Soome 25,5%, Lätis või Leedus 21%."
+      },
+      {
+        "p": "Mõned riigid võtavad hiljem ka aktsiisi või registreerimismaksu – need on riiklikud ja erinevad palju. Eestis on selleks registreerimistasu, mille suurus sõltub Eesti riiklikest reeglitest ja auto andmetest. Registreerimistasu makstakse Eestis ka siis, kui auto tollitakse mõnes teises ELi riigis."
+      },
+      {
+        "h2": "Arvutusnäide"
+      },
+      {
+        "table": {
+          "head": [
+            "",
+            "EUR"
+          ],
+          "rows": [
+            [
+              "Tolliväärtus (CIF)",
+              "12 000"
+            ],
+            [
+              "Tollimaks 10%",
+              "1 200"
+            ],
+            [
+              "Mahalaadimine ja transport sihtkohta",
+              "700"
+            ],
+            [
+              "Käibemaksu alus",
+              "13 900"
+            ],
+            [
+              "Käibemaks 24%",
+              "3 336"
+            ],
+            [
+              "Tollimaks + käibemaks",
+              "4 536"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Näites on auto tolliväärtus 12 000 eurot. Tollimaks ja käibemaks kokku on 4 536 eurot ehk umbes 38% tolliväärtusest – ja registreerimistasu tuleb veel lisaks. Sama auto Saksamaa 19%-ga maksaks käibemaksu umbes 2 641 eurot, kuid siis tuleb arvestada ka pikema transpordiga Eestisse. Kalkulaator võrdleb kõiki 43 ELi sadamat ukseni ja sina sisestad ainult oma aadressi."
+      },
+      {
+        "h2": "Mis sadamas toimub"
+      },
+      {
+        "p": "Kui konteiner sadamasse jõuab, tühjendatakse see terminalis ja tolliagent esitab auto dokumentide põhjal tollideklaratsiooni. Vaja on ostuarvet või oksjoni kviitungit, veoarvet, konossementi ning title'it või ekspordisertifikaati. Toll võib auto kontrolliks valida – siis kontrollitakse VIN-koodi ja võrreldakse auto seisukorda deklareeritud väärtusega. Kui tollimaks ja käibemaks on makstud, auto vabastatakse ja võid selle koju viia."
+      },
+      {
+        "p": "Hoid sadamas maksab tavaliselt päeva kaupa, seega tasub dokumendid agendile saata juba enne laeva saabumist. Puuduv title või ebaselge arve võib tollivormistust päevi edasi lükata."
+      },
+      {
+        "h2": "Sama arvutus dollarites"
+      },
+      {
+        "p": "Kui ostad auto 10 000 dollari eest ja tolliväärtus koos tasude ja veoga on 13 030 dollarit, on tollimaks 1303 dollarit. Lisades umbes 1000 dollarit mahalaadimist ja kohaletoimetamist, on käibemaksu alus 15 333 dollarit ja Eesti 24% käibemaks umbes 3680 dollarit eurodeks teisendatuna. Tollimaks ja käibemaks kokku on seega ligi 5000 dollarit juba enne registreerimistasu."
+      },
+      {
+        "h2": "Tolliprotseduur 4200"
+      },
+      {
+        "p": "Käibemaksukohustuslasest ettevõte, kes impordib auto, mis liigub otse edasi teise ELi riiki, võib selle tollida protseduuriga 4200: saabumisriigis impordi käibemaksu ei maksta ja ostja deklareerib käibemaksu oma riigis pöördmaksustamise korras. Eraisikud seda protseduuri kasutada ei saa. Kui ostad auto Eesti maaletoojalt, kes on selle nii toonud, sisaldub käibemaks tavaliselt juba müügihinnas."
+      },
+      {
+        "tip": "Hoia alles ostuarve, oksjonitasude kviitungid, veoarve ja konossement (bill of lading) – toll võib deklareeritud väärtuse kahtluse alla seada ja need dokumendid tõendavad seda."
+      },
+      {
+        "h2": "Levinumad vead tollivormistusel"
+      },
+      {
+        "ul": [
+          "Merevedu ja kindlustus jäetakse tolliväärtusest välja – need kuuluvad sinna alati",
+          "Käibemaks arvutatakse ainult auto hinnast, mitte kogu alusest",
+          "Pikapit arvestatakse sõiduauto 10% tollimaksuga",
+          "Registreerimistasu jäetakse eelarvest välja, sest seda tollideklaratsioonil ei ole",
+          "Kviitungid puuduvad ja toll hindab väärtuse ise"
+        ]
+      },
+      {
+        "p": "Kui pead neid reegleid meeles, on tollivormistus üllatavalt lihtne. Kõige raskem osa on tavaliselt registreerimistasu ja sadama valik, sest need sõltuvad auto andmetest ja sinu aadressist. Seepärast tasub kogu summa välja arvutada enne pakkumist, mitte alles siis, kui auto on juba sadamas ja hoiutasu jookseb."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kas toll võib minu auto väärtust tõsta?",
+        "a": "Jah, kui deklareeritud hind tundub ebarealistlikult madal. Oksjoni tulemus ja maksetõendid lahendavad asja tavaliselt."
+      },
+      {
+        "q": "Kas elektriautode tollimaks on madalam?",
+        "a": "Ei, ka täiselektrilised sõiduautod maksavad 10%. Mõnes riigis on elektriautode registreerimismaks madalam."
+      },
+      {
+        "q": "Kes tollib auto Eestis?",
+        "a": "Maksu- ja Tolliamet. Eraisik võib deklaratsiooni esitada ise, kuid konteinerveo puhul kasutatakse tavaliselt tolliagenti. Registreerimise eest vastutab Transpordiamet."
+      }
+    ]
+  },
+  {
+    "id": "registration",
+    "slug": "imporditud-auto-registreerimine-eestis-dokumendid-ja-ulevaatus",
+    "category": "registration",
+    "origin": null,
+    "date": "2026-10-04",
+    "minutes": 3,
+    "title": "Imporditud auto registreerimine Eestis: dokumendid, ülevaatus ja registreerimistasu",
+    "metaTitle": "Imporditud auto registreerimine Eestis – samm-sammult | CarImport.eu",
+    "description": "Milliseid dokumente vajad, mida registreerimiseelsel ülevaatusel kontrollitakse ja mida muuta, kui registreerid USA-st või Jaapanist toodud auto Eestis.",
+    "lead": "Tollivormistus on alles pool tööst. Enne kui auto saab Eestis numbrimärgid, peab see vastama ELi tehnilistele nõuetele, läbima Transpordiameti registreerimiseelse ülevaatuse ja sul on vaja hulka dokumente – enamik neist tõlgituna. Lisaks tuleb tasuda registreerimistasu.",
+    "blocks": [
+      {
+        "h2": "Kes mida Eestis teeb"
+      },
+      {
+        "table": {
+          "head": [
+            "Etapp",
+            "Asutus või osapool"
+          ],
+          "rows": [
+            [
+              "Tollivormistus, tollimaks ja impordi käibemaks",
+              "Maksu- ja Tolliamet"
+            ],
+            [
+              "Registreerimiseelne ülevaatus",
+              "Transpordiamet"
+            ],
+            [
+              "Registreerimine ja registreerimistasu",
+              "Transpordiamet"
+            ],
+            [
+              "Liikluskindlustus",
+              "kindlustusselts"
+            ],
+            [
+              "Ümberehitustööd",
+              "imporditud autosid tundev töökoda"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Praktikas liigud järjekorras: tollivormistus sadamas, auto ümberehitustööd, registreerimiseelne ülevaatus, registreerimine ja registreerimistasu ning lõpuks kindlustus. Ülevaatus ja registreerimine toimuvad Transpordiameti teenindusbüroos, kuhu tuleb aeg ette broneerida."
+      },
+      {
+        "h2": "Vajalikud dokumendid"
+      },
+      {
+        "ul": [
+          "Title või ekspordisertifikaat ning ostuarve",
+          "Tollideklaratsioon, millest nähtub makstud tollimaks ja käibemaks",
+          "Konossement (bill of lading)",
+          "Võõrkeelsete dokumentide tõlked, kui neid nõutakse",
+          "Ülevaatuse tulemus / vastavuse kinnitus",
+          "Kindlustuspoliis ja isikut tõendav dokument"
+        ]
+      },
+      {
+        "p": "Hoia originaaldokumente hoolikalt. Title on Ameerika omandidokument; Jaapanist toodud autode puhul on selleks ekspordisertifikaat (export certificate). Kui dokumendid on jaapani keeles, vajad nende tõlget."
+      },
+      {
+        "h2": "Tehnilised muudatused"
+      },
+      {
+        "p": "USA autodel tuleb tavaliselt muuta tulesid: punased tagumised suunatuled ja külgtuled ei vasta ELi nõuetele ning esituledel võib olla vale valgusmuster. Spidomeeter peab näitama km/h. Tagumine udutuli on kohustuslik. Jaapani autod on parempoolse rooliga, mida enamik riike aktsepteerib reguleeritud esituledega."
+      },
+      {
+        "ul": [
+          "Tagumised suunatuled kollaseks ja pidurituledest eraldi",
+          "Külgtulede muutmine või eemaldamine",
+          "Esitulede reguleerimine või vahetamine ELi heakskiiduga tulede vastu",
+          "Spidomeeter km/h skaalale",
+          "Tagumine udutuli",
+          "Vajadusel rehvid ja turvavööd nõuetekohaseks"
+        ]
+      },
+      {
+        "h2": "Registreerimiseelne ülevaatus"
+      },
+      {
+        "p": "ELi tüübikinnituseta auto läbib üksikkinnituse või põhjaliku esmase ülevaatuse. Eestis on see registreerimiseelne ülevaatus Transpordiametis. Ülevaataja kontrollib identifitseerimisandmeid (VIN), tulesid, heitgaase ja ohutusseadmeid ning võrdleb autot dokumentidega. Planeeri see etapp koos imporditud autosid tundva töökojaga, sest mittevastavus tähendab uut külastust ja lisakulusid."
+      },
+      {
+        "h2": "Ülevaatuseks valmistumine"
+      },
+      {
+        "ul": [
+          "Küsi Transpordiametist eelnevalt, mida imporditud auto ülevaatusel kontrollitakse",
+          "Võta kaasa kõik dokumendid originaalis ja tõlgituna",
+          "Veendu, et armatuurlaual ei põle veatuled, eriti turvapadja ja ABS-i tuli",
+          "Kontrolli rehvide seisukorda ja talvel talverehve",
+          "Kui autot on remonditud, võta kaasa remondiarved ja fotod",
+          "Broneeri aeg varakult, sest imporditud auto ülevaatus võtab tavalisest kauem"
+        ]
+      },
+      {
+        "h2": "Registreerimine ja registreerimistasu"
+      },
+      {
+        "p": "Ülevaatuse tulemusega registreerid auto Transpordiametis. Eestis tuleb registreerimisel tasuda registreerimistasu, mille suurus sõltub Eesti riiklikest reeglitest ja auto andmetest – seepärast ei anna me siin protsenti ega summat. Kalkulaator näitab registreerimistasu mõju eraldi, kui sisestad auto andmed. Lisaks tasud riigilõivu toimingute ja numbrimärkide eest. Ära unusta liikluskindlustust enne, kui auto avalikule teele läheb."
+      },
+      {
+        "tip": "Küsi töökojalt enne ostu vajalike muudatuste nimekirja – mõnel mudelil maksavad ümberehitused palju rohkem kui teisel."
+      },
+      {
+        "h2": "Parempoolse rooliga autod Jaapanist"
+      },
+      {
+        "p": "Jaapanist toodud JDM-autod on parempoolse rooliga. Eestis neid registreeritakse, kui esituled on reguleeritud või vahetatud parempoolse liikluse jaoks. Kontrolli ka, et spidomeeter näitaks km/h, tagumine udutuli oleks õiges kohas ning ksenoon- või LED-tulede puhul toimiks tulede pesu ja kõrguse reguleerimine."
+      },
+      {
+        "h2": "Mida registreerimine maksab"
+      },
+      {
+        "p": "Suurim kulu on sageli registreerimistasu, mille suurus erineb auto kaupa palju. Lisaks tulevad ülevaatuse hind, võimalike ümberehitustööde kulud, tõlked, riigilõivud ja numbrimärgid. USA autode ümberehitused maksavad sageli mõnisada eurot, kuid mõnel mudelil on tulede vahetus märksa kallim. Seepärast tasub muudatused välja selgitada enne pakkumist."
+      },
+      {
+        "h2": "Vanad ja kollektsiooniautod"
+      },
+      {
+        "p": "Üle 30 aasta vana, originaalseisukorras auto võib olla kollektsioonisõidukina tollimaksuvaba, kuid see tuleb Eestis siiski üle vaadata ja registreerida. Vanade Ameerika autode puhul on tulede muutmine sageli lihtsam, kuid dokumendid võivad puududa. Selgita enne ostu välja, kas autol on title või muu omandit tõendav dokument, sest ilma selleta on registreerimine keeruline või võimatu. Küsi müüjalt dokumentide koopiad juba enne pakkumist."
+      },
+      {
+        "h2": "Tüüpiline ajakava"
+      },
+      {
+        "ol": [
+          "Nädal 0: auto jõuab sadamasse ja tollitakse.",
+          "Nädalad 1–2: transport koju ja ümberehitustööd töökojas.",
+          "Nädalad 2–3: registreerimiseelne ülevaatus ja vajadusel parandused.",
+          "Nädalad 3–4: registreerimine, registreerimistasu ja numbrimärgid."
+        ]
+      },
+      {
+        "p": "Ajakava sõltub palju auto seisukorrast ja sellest, kui kiiresti osad kätte saab. Kogukulu arvutamisel võrdleb kalkulaator kõiki 43 ELi sadamat ukseni – sisestad ainult oma aadressi ja näed juba enne pakkumist, mida auto registreeritult sinu õuel maksab, ja otsustada, kas import tasub end ära või on mõistlikum osta sarnane auto Eestist."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kas vajan vastavustunnistust (CoC)?",
+        "a": "USA või Jaapani turu jaoks ehitatud autodel ELi CoC-d ei ole. Need registreeritakse üksikkinnituse või registreerimiseelse ülevaatuse kaudu."
+      },
+      {
+        "q": "Kas võin auto sadamast koju sõita?",
+        "a": "Ainult ajutiste numbrimärkide ja kindlustusega ning ainult siis, kui auto on liiklusküpne. Muul juhul kasuta autovedu või puksiiri."
+      },
+      {
+        "q": "Kas registreerimistasu tuleb maksta ka vanema auto eest?",
+        "a": "Registreerimistasu suurus sõltub Eesti riiklikest reeglitest ja auto andmetest. Kalkulaator näitab selle mõju sinu auto kohta."
+      }
+    ]
+  },
+  {
+    "id": "port-choice",
+    "slug": "muuga-riia-voi-klaipeda-millises-sadamas-auto-tollida",
+    "category": "logistics",
+    "origin": null,
+    "date": "2026-09-30",
+    "minutes": 3,
+    "title": "Muuga, Riia või Klaipėda? Kuidas valida imporditud auto tollimise sadam",
+    "metaTitle": "Muuga, Riia või Klaipėda – kus auto tollida? | CarImport.eu",
+    "description": "Muuga, Riia, Klaipėda või Helsingi? Nii muudab tollimise sadam imporditud auto käibemaksu, sadamatasusid, merereisi aega ja kohaletoimetamise hinda.",
+    "lead": "Eestisse toodava auto saab tollida Muuga sadamas Tallinna lähedal – aga sama hästi ükskõik millises 43 ELi sadamast. Sadam määrab käibemaksumäära, sadamatasud ja selle, kui pika maa auto maanteel läbib. Eesti 24% käibemaks on kõrgem kui Lätis ja Leedus, seega tasub võrrelda.",
+    "blocks": [
+      {
+        "h2": "Lähimad tollimise sadamad Eestist"
+      },
+      {
+        "table": {
+          "head": [
+            "Sadam",
+            "Riik",
+            "Kaugus (km)",
+            "Käibemaks",
+            "Merereis USA-st (päeva)"
+          ],
+          "rows": [
+            [
+              "Tallinn (Muuga)",
+              "Eesti",
+              "16",
+              "24%",
+              "21–42"
+            ],
+            [
+              "Helsingi (Vuosaari)",
+              "Soome",
+              "112",
+              "25,5%",
+              "21–42"
+            ],
+            [
+              "Hanko",
+              "Soome",
+              "137",
+              "25,5%",
+              "20–41"
+            ],
+            [
+              "Riia",
+              "Läti",
+              "345",
+              "21%",
+              "20–41"
+            ],
+            [
+              "Klaipėda",
+              "Leedu",
+              "584",
+              "21%",
+              "19–40"
+            ],
+            [
+              "Gdynia",
+              "Poola",
+              "827",
+              "23%",
+              "21–40"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Kaugused on arvutatud Eesti rahvastikukeskmest, praktikas Tallinna piirkonnast. Kui elad Tartus, Pärnus või Viljandis, on kohaletoimetamine Muugalt pikem, kuid Riia võib olla lähemal. Helsingi ja Hanko puhul kuulub teekonda praamisõit üle Soome lahe."
+      },
+      {
+        "h2": "Kolm asja, mida sadam muudab"
+      },
+      {
+        "ol": [
+          "Impordi käibemaks: maksad sadamariigi määra – Eestis 24%, Soomes 25,5%, Lätis ja Leedus 21%, Poolas 23% ja Saksamaal 19%.",
+          "Tasud: terminalitasu, konteineri tühjendamine ja tolliagent erinevad sadamati.",
+          "Transpordi vahemaa: madalama käibemaksuga sadam võib olla sinu kodust kaugel."
+        ]
+      },
+      {
+        "h2": "Millal on välismaine sadam soodsam"
+      },
+      {
+        "p": "Kui koduriigi käibemaksumäär on kõrge, võib tollimine madalama määraga riigis säästa rohkem, kui lisatransport maksab. Eestist vaadates on ilmne alternatiiv Riia: vahe on 3 protsendipunkti ja teekond Via Balticat mööda on lühike. 15 000-eurose käibemaksu aluse puhul tähendab see umbes 450 eurot. Klaipėda annab sama säästu, kuid on kaugemal. Helsingi ja Hanko on Eesti ostjale kallimad, sest Soome 25,5% on kõrgem kui Eesti 24%."
+      },
+      {
+        "p": "Pea meeles, et registreerimistasu makstakse igal juhul Eestis, kui auto siin registreeritakse. See ei sõltu tollimise sadamast. Seepärast tuleb võrdlus teha ukseni: käibemaks, sadamatasud, transport ja registreerimistasu kokku."
+      },
+      {
+        "h2": "Näide: sama auto kolme sadama kaudu"
+      },
+      {
+        "table": {
+          "head": [
+            "Sadam",
+            "Käibemaks 15 000 € alusest",
+            "Kohaletoimetamine"
+          ],
+          "rows": [
+            [
+              "Tallinn (Muuga)",
+              "3 600 €",
+              "lühike"
+            ],
+            [
+              "Riia",
+              "3 150 €",
+              "umbes 345 km"
+            ],
+            [
+              "Helsingi (Vuosaari)",
+              "3 825 €",
+              "praam + lühike sõit"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Tabel näitab ainult käibemaksu vahet. Sadamatasud ja transport erinevad ning kalkulaator lisab need automaatselt. Sageli võidab Muuga lihtsusega: auto tollitakse Eestis, dokumendid on eesti keeles ja kohaletoimetamine on odav. Välismaine sadam tasub end ära, kui auto on kallis ja maksusääst kasvab suureks. Näiteks 40 000-eurose aluse puhul on Riia ja Tallinna vahe juba umbes 1200 eurot, mis katab kergesti autoveo Lätist ja Läti tolliagendi tasu."
+      },
+      {
+        "h2": "Aga Bremerhaven või Hamburg?"
+      },
+      {
+        "p": "Saksamaa 19% käibemaks tundub ahvatlev: 15 000-eurose aluse puhul on see 2850 eurot ehk 750 eurot vähem kui Eestis. Saksamaalt Eestisse on aga üle tuhande kilomeetri ja selline autovedu maksab kergesti sadu eurosid. Kallimate autode puhul võib sääst siiski olla tõeline, eriti kui vedu õnnestub korraldada mitme auto koormas. Odavamate autode puhul vahe tavaliselt kaob."
+      },
+      {
+        "h2": "Sadamatasud ja agendid"
+      },
+      {
+        "p": "Terminalitasu ja konteineri tühjendamine maksavad tavaliselt 400–500 eurot ning tolliagent umbes 250 eurot, kuid hinnad erinevad sadamati ja teenusepakkujati. Väiksemates sadamates tühjendatakse konteinereid harvemini, nii et auto võib kauem oodata. Küsi alati koguhinda tühjendamisest ukseni, mitte ainult terminalitasu."
+      },
+      {
+        "h2": "Millal on Muuga parim valik"
+      },
+      {
+        "ul": [
+          "Auto on odav, mistõttu maksusääst välismaal jääb väikeseks",
+          "Soovid tollivormistuse teha eesti keeles ja ilma välismaise agendita",
+          "Auto ei ole sõidukorras ja vajab puksiiri",
+          "Elad Tallinnas või Põhja-Eestis"
+        ]
+      },
+      {
+        "p": "Lõuna-Eesti elanikule võib Riia olla mugavam ka praktilistel põhjustel: näiteks Valgast on Riiga lähemal kui Muugale ja Tartustki ei ole vahe suur, nii et lisatransport on väike ja käibemaksusääst jääb peaaegu täielikult alles. Kui autovedu Riiast tuleb mitme auto koormas, väheneb transpordi hind veelgi."
+      },
+      {
+        "h2": "Merereisid"
+      },
+      {
+        "p": "USA idarannikult on kiireimad Põhjamere sadamad, umbes kaks nädalat. Läänemerele, sealhulgas Muugale ja Riiga, liigub konteiner sageli Põhjamere jaotussadama kaudu, nii et teekond võtab umbes 3–6 nädalat. Jaapanist ja AÜE-st tulevad laevad läbi Suessi kanali, seega on Vahemere sadamad nagu Koper, Genova või Pireus nädal või rohkem kiiremad kui Põhjamere omad. Jaapanist Tallinna on konteiner teel tavaliselt umbes seitse nädalat."
+      },
+      {
+        "h2": "Praktilised asjad välismaises sadamas"
+      },
+      {
+        "ul": [
+          "Vajad tolliagenti sadamariigis – küsi hind ja ajakava ette",
+          "Tollideklaratsioon ja maksekviitungid on sadamariigi keeles; hoia need registreerimiseks alles",
+          "Registreerimata auto vajab Eestisse jõudmiseks autovedu või ajutisi numbrimärke",
+          "Arvesta ka oma ajaga ja võimaliku sõiduga sadamasse"
+        ]
+      },
+      {
+        "tip": "Sisesta oma aadress kalkulaatorisse: see arvutab iga 43 ELi sadama hinna ukseni ja valib automaatselt soodsaima. Näed käibemaksu, sadamatasud ja transpordi iga sadama kohta kõrvuti."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kas võin auto tollida teises riigis ja registreerida Eestis?",
+        "a": "Jah. Maksad impordi käibemaksu sadamariigis ja registreerid auto Eestis tollidokumentide alusel. Registreerimistasu makstakse Eestis."
+      },
+      {
+        "q": "Millised sadamad käsitlevad kõige rohkem USA autosid?",
+        "a": "Bremerhaven, Rotterdam, Antwerpen ja Hamburg Põhjamerel ning Läänemere sadamad nagu Gdynia ja Klaipėda. Eestisse jõuavad konteinerid Muuga sadamasse."
+      },
+      {
+        "q": "Kas Riia tasub alati ära?",
+        "a": "Mitte alati. Käibemaksu vahe on 3 protsendipunkti, nii et odavamate autode puhul võivad autovedu ja Läti tolliagent säästu ära süüa."
+      }
+    ]
+  },
+  {
+    "id": "japan-jdm",
+    "slug": "jdm-auto-toomine-jaapanist-eestisse-oksjonileht-ja-kulud",
+    "category": "buying",
+    "origin": "JAPAN",
+    "date": "2026-09-25",
+    "minutes": 3,
+    "title": "JDM-auto toomine Jaapanist Eestisse: oksjonileht, hinded ja kulud",
+    "metaTitle": "JDM-auto toomine Jaapanist Eestisse – kulud | CarImport.eu",
+    "description": "Auto toomine Jaapanist Eestisse: kuidas Jaapani autooksjonid toimivad, kuidas lugeda oksjonilehte ja hindeid ning mida JDM-auto import maksab.",
+    "lead": "Jaapani autooksjonid on kuulsad ausa hindamise ja suurepärases seisukorras autode poolest. Usaldusväärse eksportijaga on JDM-auto ostmine turvalisem kui pimesi ostmine USA oksjonitelt – kui mõistad oksjonilehte. Selles juhendis käime läbi kogu ahela Jaapanist Eestisse.",
+    "blocks": [
+      {
+        "h2": "Kuidas Jaapanist ostmine käib"
+      },
+      {
+        "p": "Oksjonid nagu USS, TAA, CAA ja JU on avatud ainult litsentseeritud edasimüüjatele. Ostad eksportija kaudu: valid autod, määrad maksimaalse pakkumise ja eksportija pakub, maksab, kustutab auto ekspordiks Jaapani registrist ja saadab selle teele. Igal nädalal müüakse oksjonitel kümneid tuhandeid autosid, nii et valik on tohutu ja hinnad on sageli soodsad, eriti vanemate sportautode ja kei-autode puhul."
+      },
+      {
+        "p": "Hea eksportija saadab sulle enne pakkumist oksjonilehe (auction sheet) ja fotod, tõlgib ülevaataja märkmed ja ütleb ausalt, kui auto ei vasta sinu soovidele. Küsi, mida tema tasu sisaldab: pakkumine, sisemaa transport, ekspordidokumendid, merevedu ja kindlustus."
+      },
+      {
+        "h2": "Oksjonilehe lugemine"
+      },
+      {
+        "ul": [
+          "Üldhinne: 6–5 peaaegu uus, 4,5–4 väga hea, 3,5 keskmine, R/RA remonditud avariiauto",
+          "Salongi hinne: A–D",
+          "Kerekaart: A = kriimustus, U = mõlk, W = lainetus/remont, S = rooste, C = korrosioon, number näitab suurust",
+          "Ülevaataja märkmed – lase need alati tõlkida"
+        ]
+      },
+      {
+        "tip": "R- või RA-hinne ei ole alati halb, kuid küsi, mida on remonditud – raami remont on hoopis teine lugu kui vahetatud põrkeraud."
+      },
+      {
+        "h2": "Hinded praktikas"
+      },
+      {
+        "table": {
+          "head": [
+            "Hinne",
+            "Mida see tähendab",
+            "Sobib, kui"
+          ],
+          "rows": [
+            [
+              "6–5",
+              "peaaegu uus, vähe sõidetud",
+              "soovid parimat seisukorda"
+            ],
+            [
+              "4,5–4",
+              "väga hea, vähene kulumine",
+              "soovid igapäevaautot ilma üllatusteta"
+            ],
+            [
+              "3,5",
+              "keskmine, nähtavad jäljed",
+              "oled valmis taastama"
+            ],
+            [
+              "R / RA",
+              "remonditud avariiauto",
+              "tead, mida on remonditud"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Hinne on ühe ülevaataja hinnang ja oksjonite vahel on erinevusi. Seepärast on kerekaart ja ülevaataja märkmed sama olulised kui number. Palu eksportijalt võimalusel lisafotosid põhjast ja mootoriruumist."
+      },
+      {
+        "h2": "Kulud ja ajakava"
+      },
+      {
+        "p": "Lisa eksportija tasu, sisemaa transport Jaapanis, ekspordidokumendid ja merevedu. Laevad liiguvad läbi Suessi kanali: Põhjamerele umbes 5–6 nädalat, Vahemere sadamatesse vähem. Muuga sadamasse on konteiner teel tavaliselt umbes seitse nädalat. Sõiduautode tollimaks on 10% ja impordi käibemaks makstakse tollimise riigis – Eestis 24%. Lisaks tasutakse Eestis registreerimisel registreerimistasu, mille suurus sõltub auto andmetest ja Eesti riiklikest reeglitest."
+      },
+      {
+        "ol": [
+          "Auto hind ja oksjonitasu",
+          "Eksportija tasu ja sisemaa transport Jaapanis",
+          "Ekspordidokumendid ja merevedu konteineris",
+          "Merekindlustus",
+          "Tollimaks 10% ja käibemaks 24% (kui tollitakse Eestis)",
+          "Sadamatasud, tolliagent ja kohaletoimetamine",
+          "Ümberehitused, registreerimiseelne ülevaatus ja registreerimistasu"
+        ]
+      },
+      {
+        "h2": "Kuidas eksportijat valida"
+      },
+      {
+        "ul": [
+          "Eksportija saadab enne iga pakkumist oksjonilehe ja tõlke",
+          "Tasu ja kõik kulud on kirjalikult lahti kirjutatud",
+          "Eksportijal on kogemusi tarnetega Euroopasse ja Läänemerele",
+          "Maksed tehakse ettevõtte kontole ja iga makse kohta saad kviitungi",
+          "Klientide kogemusi leiab ka mujalt kui eksportija enda lehelt"
+        ]
+      },
+      {
+        "h2": "Vanad JDM-klassikud"
+      },
+      {
+        "p": "Üle 30 aasta vana, originaalseisukorras auto võib olla kollektsioonisõidukina tollimaksuvaba (CN-kood 9705). Paljud 1990. aastate Jaapani sportautod on nüüd vanusepiiri ületanud, kuid ümberehitatud autod kollektsioonisõidukiks tavaliselt ei kvalifitseeru. Käibemaks makstakse siiski. Vanade autode puhul on oksjonilehe roostemärked eriti olulised, sest remont on kallis ja osi võib olla raske leida. Küsi eksportijalt põhja fotosid ja kui võimalik, lase autot enne pakkumist kohapeal lisaks kontrollida."
+      },
+      {
+        "h2": "Tüüpiline ajakava"
+      },
+      {
+        "p": "Pärast oksjonit maksab eksportija auto, veab selle sadamasse ja vormistab ekspordidokumendid, mis võtab tavaliselt 1–3 nädalat. Seejärel ootab auto konteinerit ja laeva ning merereis Eestisse kestab umbes seitse nädalat. Tollivormistus, ümberehitused, ülevaatus ja registreerimine võtavad veel mõne nädala. Kokkuvõttes tasub pakkumisest registreerimiseni arvestada 2–3 kuuga, nii et suveks mõeldud auto tuleks osta juba talvel."
+      },
+      {
+        "h2": "Parempoolne rool"
+      },
+      {
+        "p": "Enamik ELi riike registreerib parempoolse rooliga autosid, tavaliselt pärast esitulede reguleerimist. Mõni riik piirab nende alalist registreerimist – kontrolli riiklikke reegleid enne ostu. Eestis parempoolse rooliga autosid registreeritakse ning Transpordiameti registreerimiseelsel ülevaatusel kontrollitakse eriti tulesid, spidomeetrit ja ohutusseadmeid."
+      },
+      {
+        "h2": "Eesti talv ja Jaapani auto"
+      },
+      {
+        "p": "Paljud Jaapani siseturu mudelid on ehitatud pehmemasse kliimasse. Kontrolli, kas küte on tõhus ja kas sobivas mõõdus talverehve on saada. Hokkaidolt pärit autod on sageli külmaks varustatud, kuid neil võib olla teesoolast põhjustatud roostet. Roostetõrje tasub teha kohe pärast auto saabumist, enne esimest Eesti talve. Kogukulu arvutamisel võrdleb kalkulaator kõiki 43 ELi sadamat ukseni, ka Vahemere sadamaid – sisestad ainult oma aadressi."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kas Jaapani autode läbisõit on usaldusväärne?",
+        "a": "Üldiselt jah – oksjonilehed ja ekspordisertifikaadid fikseerivad läbisõidu ning näidu keeramine on teiste turgudega võrreldes haruldane."
+      },
+      {
+        "q": "Aga rooste?",
+        "a": "Põhja-Jaapanist (Hokkaidolt) pärit autodel võib olla teesoolast tingitud põhjarooste; oksjonileht märgib selle tähega S või C."
+      },
+      {
+        "q": "Kui kaua on auto Jaapanist Eestisse teel?",
+        "a": "Merereis Muuga sadamasse kestab tavaliselt umbes seitse nädalat. Lisaks kulub aega transpordile pärast oksjonit, ekspordidokumentidele ja tollivormistusele."
+      }
+    ]
+  },
+  {
+    "id": "checklist",
+    "slug": "kontrollnimekiri-enne-pakkumist-valismaa-autooksjonil",
+    "category": "buying",
+    "origin": null,
+    "date": "2026-09-20",
+    "minutes": 3,
+    "title": "12-punktiline kontrollnimekiri enne välismaal autole pakkumist",
+    "metaTitle": "Kontrollnimekiri enne auto ostu USA-st või Jaapanist | CarImport.eu",
+    "description": "12 kontrolli, mis kaitsevad su eelarvet, kui ostad auto välismaa oksjonilt: VIN-ajalugu, dokument, kahjustused, tasud, transport, maksud ja registreerimine.",
+    "lead": "Oksjon annab otsustamiseks minuteid. Need kaksteist punkti võtavad ühe õhtu ja säästavad sind kõige kallimatest vigadest. Nimekiri on koostatud Eesti ostjale, kelle arvutuses on 24% käibemaks ja registreerimistasu.",
+    "blocks": [
+      {
+        "h2": "Kontrollnimekiri"
+      },
+      {
+        "ol": [
+          "Telli VIN-ajaloo raport (Carfax, AutoCheck): avariid, üleujutus, läbisõit, vargus.",
+          "Kontrolli dokumendi tüüpi – väldi parts only ja non-repairable dokumente.",
+          "Uuri iga fotot: paneelide vahed, turvapadjad, veepiirid, mootoriruum.",
+          "Loe seisukorra märgiseid kui infot, mitte garantiid.",
+          "Kontrolli platsi asukohta ja kaugust ekspordisadamast.",
+          "Arvuta kõik oksjoni- ja vahendustasud oma pakkumise tasemel.",
+          "Arvuta täielik hind ukseni: merevedu, tollimaks, käibemaks, sadam, kohaletoimetamine.",
+          "Võrdle oma aadressi jaoks tollimise sadamaid – Muuga, Riia, Helsingi ja teised.",
+          "Hangi remondihinnang ja varuosade hinnad Eestis.",
+          "Selgita välja, mida tuleb registreerimiseks muuta (tuled, spidomeeter) ja kui suur on registreerimistasu.",
+          "Planeeri ajakava: makse- ja äraveotähtajad, merereis, registreerimiseelne ülevaatus.",
+          "Määra maksimaalne pakkumine – ja pea sellest kinni."
+        ]
+      },
+      {
+        "tip": "Tee punktid 6–8 kalkulaatoris: see liidab kõik tasud ja maksud ning näitab optimistlikku, keskmist ja pessimistlikku kogusummat. Kalkulaator võrdleb kõiki 43 ELi sadamat ukseni – sisestad ainult oma aadressi."
+      },
+      {
+        "h2": "Punktid lähemalt"
+      },
+      {
+        "h3": "VIN-ajalugu ja dokument"
+      },
+      {
+        "p": "VIN-raport näitab, kas autol on varasemaid avariisid, üleujutuse märkeid või kahtlane läbisõit. See maksab vähe võrreldes sellega, mida võid kaotada. Dokument (title) näitab, kuidas kindlustusselts autot klassifitseeris: salvage on tavaline ja Eestis registreeritav, kuid parts only ja non-repairable tähendavad, et autot ei ole enam mõeldud teele."
+      },
+      {
+        "h3": "Fotod ja seisukorra märgised"
+      },
+      {
+        "p": "Oksjonifotod näitavad ainult pinda. Otsi märke kõverast raamist, avanenud turvapatjadest ja veest salongis. Run and Drive tähendab vaid, et auto liikus vastuvõtul – see ei ütle, kas auto on liiklusküpne või läbib Transpordiameti ülevaatuse."
+      },
+      {
+        "h3": "Asukoht ja transport"
+      },
+      {
+        "p": "Platsi asukoht mõjutab hinda rohkem, kui paljud arvavad. Idaranniku platsidelt New Jersey või Savannah' sadamasse maksab vedu paarsada dollarit, Kesk-Läänest või läänerannikult idarannikule aga üle 1000 dollari. Mittesõitva auto eest võetakse lisaks laadimistasu."
+      },
+      {
+        "h3": "Tasud, maksud ja sadam"
+      },
+      {
+        "p": "Ostjatasu, internetipakkumise tasu, väravatasu ja vahendaja tasu võivad kokku ületada 1000 dollarit. Sellele lisanduvad merevedu, tollimaks 10%, käibemaks 24% (kui auto tollitakse Eestis), sadamatasud ja kohaletoimetamine. Registreerimistasu tuleb eraldi. Riia või Klaipėda 21% võib käibemaksu vähendada, kuid transport tuleb arvesse võtta."
+      },
+      {
+        "h3": "Valuuta ja maksmine"
+      },
+      {
+        "p": "Oksjon, vahendaja ja merevedu arveldatakse dollarites, tollimaks, käibemaks, sadamatasud ja registreerimistasu aga eurodes. Arvuta pakkumine ettevaatliku kursiga ja kontrolli oma panga valuutamarginaali. Mõneprotsendine kursivahe tähendab 10 000-dollarise auto puhul sadu eurosid."
+      },
+      {
+        "h3": "Ajakava"
+      },
+      {
+        "p": "Makse tuleb tavaliselt teha 2–3 tööpäeva jooksul ja tasuta hoiuaeg on lühike. Merereis Läänemerele kestab USA-st umbes 3–6 nädalat ja Jaapanist umbes seitse nädalat. Tollivormistus, ümberehitused, registreerimiseelne ülevaatus ja registreerimine võtavad veel mõne nädala. Kahe-kolme kuu kogukestus pakkumisest registreerimiseni on tavaline ja üks hilinenud laev võib sellele nädalaid lisada. Kui vajad autot suveks, alusta varakult."
+      },
+      {
+        "h3": "Remont ja registreerimine"
+      },
+      {
+        "p": "Küsi remondihinnangut töökojalt, mis tunneb mudelit ja imporditud autosid. Selgita samal ajal välja, milliseid tulesid ja mõõdikuid tuleb muuta. Mõnel mudelil on muudatused odavad, teisel maksavad need sadu eurosid. Registreerimistasu suurus sõltub auto andmetest ja Eesti riiklikest reeglitest, nii et kontrolli seda enne pakkumist."
+      },
+      {
+        "h2": "Levinumad vead"
+      },
+      {
+        "ul": [
+          "Pakud Eesti turuhinna tasemeni, arvestamata tasusid ja makse",
+          "Unustad hoiutasud, kui äravedu viibib",
+          "Alahindad väikesena näiva esikahjustuse remonti",
+          "Jätad registreerimistasu eelarvest välja",
+          "Valid sadama ainult käibemaksu järgi, arvestamata transporti"
+        ]
+      },
+      {
+        "h2": "Näide: kuidas maksimaalset pakkumist arvutada"
+      },
+      {
+        "table": {
+          "head": [
+            "Samm",
+            "Mida teed"
+          ],
+          "rows": [
+            [
+              "1",
+              "Selgita välja sarnase auto hind Eestis"
+            ],
+            [
+              "2",
+              "Lahuta registreerimistasu, registreerimine ja ümberehitused"
+            ],
+            [
+              "3",
+              "Lahuta remondihinnang ja 10–15% varu"
+            ],
+            [
+              "4",
+              "Lahuta sadam, transport, käibemaks ja tollimaks"
+            ],
+            [
+              "5",
+              "Lahuta merevedu, sisemaa vedu ja oksjonitasud"
+            ],
+            [
+              "6",
+              "Ülejäänud summa on sinu maksimaalne pakkumine dollarites"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Kui ülejäänud summa on väiksem kui auto tõenäoline hind oksjonil, jäta auto vahele. Oksjoneid toimub igal nädalal ja ükski auto ei ole nii ainulaadne, et selle pärast tasuks üle maksta. Kirjuta maksimaalne pakkumine enne oksjoni algust üles ja sisesta see vahendaja süsteemi, et sa ei teeks otsust kiirustades. Distsipliin on kõige olulisem tegur, mis eristab õnnestunud importi kallist veast."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kui palju tasub varuks hoida?",
+        "a": "Vähemalt 10–15% kogusummast üllatuste jaoks, mittesõitvate autode puhul rohkem."
+      },
+      {
+        "q": "Kas VIN-raportist piisab?",
+        "a": "See on hädavajalik, kuid mitte täielik – kombineeri see fotode, seisukorra raporti ja remondihinnanguga."
+      },
+      {
+        "q": "Kas registreerimistasu tuleb enne pakkumist välja selgitada?",
+        "a": "Jah. Registreerimistasu võib olla märkimisväärne osa kogusummast ja selle suurus sõltub auto andmetest. Arvesta see sisse enne maksimaalse pakkumise määramist."
+      }
+    ]
   }
 ]

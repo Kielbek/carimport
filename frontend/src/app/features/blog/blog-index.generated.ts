@@ -10,6 +10,7 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
     "el": "poso-kostizei-na-fereis-aftokinito-apo-ameriki",
     "en": "how-much-does-it-cost-to-import-a-car-from-the-usa",
     "es": "cuanto-cuesta-importar-un-coche-de-estados-unidos-a-espana",
+    "et": "kui-palju-maksab-auto-toomine-usast-eestisse",
     "fi": "paljonko-maksaa-tuoda-auto-yhdysvalloista-suomeen",
     "fr": "combien-coute-importer-une-voiture-des-usa",
     "hr": "koliko-kosta-uvoz-auta-iz-amerike",
@@ -34,6 +35,7 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
     "el": "pos-na-agoraseis-aftokinito-apo-copart-kai-iaai-apo-tin-ellada",
     "en": "how-to-buy-a-car-at-copart-or-iaai-from-europe",
     "es": "como-comprar-un-coche-en-copart-o-iaai-desde-espana",
+    "et": "kuidas-osta-autot-copartist-voi-iaai-oksjonilt-eestist",
     "fi": "auton-osto-copart-ja-iaai-huutokaupasta-suomesta",
     "fr": "acheter-une-voiture-sur-copart-ou-iaai-depuis-la-france",
     "hr": "kako-kupiti-auto-na-copartu-ili-iaai-iz-hrvatske",
@@ -58,6 +60,7 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
     "el": "aftokinito-me-salvage-title-apo-ameriki-ti-prepei-na-xerete",
     "en": "salvage-title-cars-from-the-usa-what-you-need-to-know",
     "es": "coches-con-titulo-salvage-de-estados-unidos-se-pueden-matricular-en-espana",
+    "et": "salvage-dokumendiga-auto-usast-mida-peab-teadma",
     "fi": "salvage-title-auto-yhdysvalloista-riskit-ja-rekisterointi",
     "fr": "voiture-salvage-usa-importer-et-immatriculer-en-france",
     "hr": "salvage-auto-iz-amerike-sto-trebate-znati",
@@ -82,6 +85,7 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
     "el": "dasmos-kai-fpa-eisagogis-aftokinitou-stin-ellada",
     "en": "customs-duty-and-vat-on-imported-cars-explained",
     "es": "aranceles-e-iva-al-importar-un-coche-de-estados-unidos",
+    "et": "auto-import-tollimaks-ja-kaibemaks-kuidas-neid-arvutatakse",
     "fi": "auton-tuonti-tulli-ja-arvonlisavero-miten-ne-lasketaan",
     "fr": "droits-de-douane-et-tva-importation-voiture-usa",
     "hr": "carina-i-pdv-za-uvoz-automobila-izracun",
@@ -106,6 +110,7 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
     "el": "taxinomisi-eisagomenou-aftokinitou-stin-ellada-dikaiologitika",
     "en": "registering-an-imported-car-in-the-eu-documents-and-steps",
     "es": "matricular-un-coche-importado-de-estados-unidos-en-espana-documentos-y-pasos",
+    "et": "imporditud-auto-registreerimine-eestis-dokumendid-ja-ulevaatus",
     "fi": "tuontiauton-rekisterointi-suomessa-asiakirjat-ja-katsastus",
     "fr": "immatriculer-une-voiture-importee-des-usa-en-france-carte-grise",
     "hr": "registracija-uvezenog-auta-iz-amerike-dokumenti-i-postupak",
@@ -130,6 +135,7 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
     "el": "peiraias-i-thessaloniki-se-poio-limani-na-ektelonisete-to-aftokinito",
     "en": "bremerhaven-rotterdam-or-antwerp-choosing-a-port",
     "es": "valencia-bilbao-o-algeciras-que-puerto-elegir-para-importar-un-coche",
+    "et": "muuga-riia-voi-klaipeda-millises-sadamas-auto-tollida",
     "fi": "helsinki-hanko-vai-tallinna-mihin-satamaan-tuontiauto-tullataan",
     "fr": "le-havre-anvers-ou-zeebrugge-quel-port-pour-importer-sa-voiture",
     "hr": "rijeka-koper-ili-trst-u-kojoj-luci-ocariniti-auto",
@@ -154,6 +160,7 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
     "el": "eisagogi-jdm-aftokinitou-apo-iaponia-auction-sheet-kai-kostos",
     "en": "importing-a-jdm-car-from-japan-auction-sheets-and-costs",
     "es": "importar-un-coche-de-japon-a-espana-jdm-hoja-de-subasta-y-costes",
+    "et": "jdm-auto-toomine-jaapanist-eestisse-oksjonileht-ja-kulud",
     "fi": "jdm-auton-tuonti-japanista-suomeen-huutokauppalomake-ja-kustannukset",
     "fr": "importer-une-voiture-du-japon-jdm-feuille-enchere-et-cout",
     "hr": "uvoz-auta-iz-japana-jdm-aukcije-i-troskovi",
@@ -178,6 +185,7 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
     "el": "lista-elegchou-prin-agorasete-aftokinito-se-dimoprasia-exoterikou",
     "en": "checklist-before-you-bid-on-an-imported-car",
     "es": "checklist-antes-de-pujar-por-un-coche-importado",
+    "et": "kontrollnimekiri-enne-pakkumist-valismaa-autooksjonil",
     "fi": "tarkistuslista-ennen-tarjousta-ulkomaisesta-autohuutokaupasta",
     "fr": "checklist-avant-d-encherir-sur-une-voiture-importee",
     "hr": "kontrolni-popis-prije-licitiranja-za-auto-iz-inozemstva",
@@ -200,4 +208,4 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
 export const BLOG_DATES: Record<string, string> = {"total-cost":"2026-10-20","copart-iaai":"2026-10-16","salvage-title":"2026-10-12","customs-vat":"2026-10-08","registration":"2026-10-04","port-choice":"2026-09-30","japan-jdm":"2026-09-25","checklist":"2026-09-20"};
 
 /** Languages that have at least one article. */
-export const BLOG_LANGS: string[] = ["bg","cs","da","de","el","en","es","fi","fr","hr","hu","it","lt","lv","nl","pl","pt","ro","sk","sl","sv","uk"];
+export const BLOG_LANGS: string[] = ["bg","cs","da","de","el","en","es","et","fi","fr","hr","hu","it","lt","lv","nl","pl","pt","ro","sk","sl","sv","uk"];
