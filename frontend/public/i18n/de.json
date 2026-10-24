@@ -255,7 +255,18 @@
     "reportItem4": "Zulassungsgebühren und Leistungen nach Import",
     "reportItem5": "Risiken mit Beträgen: optimistisch, durchschnittlich, pessimistisch",
     "reportItem6": "Schritt-für-Schritt-Plan mit Fristen und Dokumentenliste",
-    "cheapestPort": "günstigster Hafen"
+    "cheapestPort": "günstigster Hafen",
+    "lockedEyebrow": "Vollständiger Bericht",
+    "lockedTitle": "Volle Kosten bis vor die Haustür",
+    "lockedLead": "Optimistisches, mittleres und pessimistisches Szenario plus {{count}} weitere Positionen: Transport, Lieferung, Zulassung und versteckte Kosten.",
+    "unlockNote": "PDF sofort · sichere Zahlung",
+    "freeTitle": "Zoll, Einfuhrumsatzsteuer und Steuern – kostenlos",
+    "freeLead": "Verzollung in {{port}}. Die Beträge, die Sie auf Papier ausrechnen könnten.",
+    "freeBadge": "Kostenlos",
+    "freeBase": "Berechnet auf den Zollwert (Preis, Auktionsgebühren, Transport in die EU und Versicherung) zum heutigen Kurs.",
+    "lockedListTitle": "Ebenfalls berechnet – im Bericht",
+    "riskTag": "Risiko",
+    "moreLocked": "+ {{count}} weitere Positionen, inkl. versteckter Kosten"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exklusiver Container",
@@ -1278,5 +1289,28 @@
       "registration": "Zulassung",
       "logistics": "Versand & Häfen"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Steuern & Hafengebühren",
+    "extra": "+{{amount}} {{cur}} von Tür zu Tür",
+    "cheapestDoor": "am günstigsten von Tür zu Tür",
+    "rankingNote": "Sortiert nach den vollen Kosten von Tür zu Tür (Steuern, Fracht, Hafen, Lieferung an Ihre Adresse). Pro Hafen sehen Sie Steuern und Gebühren; die volle Aufschlüsselung steht im Bericht.",
+    "title": "Verzollung in {{port}}: Steuern und Gebühren",
+    "dutyWhere": "In jedem EU-Hafen gleich – 10 % des Zollwerts (CIF)",
+    "vatWhere": "Zahlbar im Land des Hafens: {{country}}",
+    "nationalWhere": "Zahlbar im Zulassungsland ({{country}}) – egal welcher Hafen",
+    "notPriced": "Lokale Zulassungssteuer – Land: {{country}}; abhängig von CO₂ oder Preis, nicht enthalten",
+    "portFees": "Hafengebühren",
+    "portFeesWhat": "Terminal, Entladung und Zollagent",
+    "total": "Steuern und Gebühren",
+    "howTitle": "So rechnen wir",
+    "how1": "Zollwert (CIF) = Preis + Auktionsgebühren + Transport bis zum EU-Hafen + Versicherung.",
+    "how2": "Zoll: 10 % des Zollwerts (Pickups 22 %, Motorräder 6–8 %) – in jedem EU-Hafen gleich.",
+    "how3": "Die Einfuhrumsatzsteuer zahlen Sie im Land des Hafens zu dessen Satz auf Zollwert + Zoll + Transport bis zu Ihrer Adresse. Ein Gebrauchtwagen, der außerhalb von {{country}} verzollt wird, zahlt zu Hause keine Umsatzsteuer mehr.",
+    "how4": "Nationale Steuern des Zulassungslandes zahlen Sie zu Hause – unabhängig vom Hafen.",
+    "how5": "Das Ranking addiert Fracht, Hafengebühren und Lieferung pro km zu Ihrer Adresse – die günstigste Summe steht oben.",
+    "bestLabel": "Günstigster Hafen:",
+    "bestSelected": "gewählt",
+    "bestChoose": "Wählen – {{amount}} {{cur}} sparen"
   }
 }

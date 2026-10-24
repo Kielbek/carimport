@@ -255,7 +255,18 @@
     "reportItem4": "Registration fees and after-import services",
     "reportItem5": "Risks with amounts: optimistic, average, pessimistic",
     "reportItem6": "Step-by-step plan with deadlines and document list",
-    "cheapestPort": "cheapest port"
+    "cheapestPort": "cheapest port",
+    "lockedEyebrow": "Full report",
+    "lockedTitle": "Full cost to your door",
+    "lockedLead": "Optimistic, average and pessimistic scenario plus {{count}} more positions: transport, delivery, registration and hidden costs.",
+    "unlockNote": "Instant PDF · secure payment",
+    "freeTitle": "Customs, VAT and taxes – free",
+    "freeLead": "Clearance in {{port}}. The amounts you could work out on paper.",
+    "freeBadge": "Free",
+    "freeBase": "Calculated on the customs value (price, auction fees, transport to the EU and insurance) at today’s exchange rates.",
+    "lockedListTitle": "Also calculated – in the report",
+    "riskTag": "risk",
+    "moreLocked": "+ {{count}} more positions, incl. hidden costs"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exclusive container",
@@ -1278,5 +1289,28 @@
       "registration": "Registration",
       "logistics": "Shipping & ports"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Taxes & port fees",
+    "extra": "+{{amount}} {{cur}} door to door",
+    "cheapestDoor": "cheapest door to door",
+    "rankingNote": "Sorted by the full door-to-door cost (taxes, freight, port, delivery to your address). Each port shows its taxes and port fees; the full breakdown is in the report.",
+    "title": "Clearing in {{port}}: taxes and fees",
+    "dutyWhere": "Same in every EU port – 10% of the customs value (CIF)",
+    "vatWhere": "Paid in the country of the port: {{country}}",
+    "nationalWhere": "Paid in the country of registration ({{country}}) – whichever port you choose",
+    "notPriced": "Local registration tax in {{country}} – depends on CO₂ or price, not included",
+    "portFees": "Port fees",
+    "portFeesWhat": "Terminal handling, unloading and customs agent",
+    "total": "Taxes and fees",
+    "howTitle": "How we calculate it",
+    "how1": "Customs value (CIF) = price + auction fees + transport to the EU port + insurance.",
+    "how2": "Customs duty: 10% of the customs value (pickups 22%, motorcycles 6–8%) – identical in every EU port.",
+    "how3": "Import VAT is paid in the country of the port, at its rate, on customs value + duty + transport to your address. A used car cleared outside {{country}} does not pay VAT again at home.",
+    "how4": "National taxes of the country of registration (e.g. Polish excise) are paid at home whichever port you use.",
+    "how5": "The ranking adds freight, port fees and delivery per km to your address – the cheapest total comes first.",
+    "bestLabel": "Best value port:",
+    "bestSelected": "selected",
+    "bestChoose": "Choose – save {{amount}} {{cur}}"
   }
 }

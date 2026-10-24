@@ -255,7 +255,18 @@
     "reportItem4": "Opłaty rejestracyjne i usługi po imporcie",
     "reportItem5": "Ryzyka z kwotami: optymistycznie, średnio, pesymistycznie",
     "reportItem6": "Plan krok po kroku z terminami i lista dokumentów",
-    "cheapestPort": "najtańszy port"
+    "cheapestPort": "najtańszy port",
+    "lockedEyebrow": "Pełny raport",
+    "lockedTitle": "Pełny koszt pod Twój dom",
+    "lockedLead": "Scenariusz optymistyczny, średni i pesymistyczny oraz {{count}} kolejnych pozycji: transport, dowóz, rejestracja i koszty ukryte.",
+    "unlockNote": "PDF od razu · bezpieczna płatność",
+    "freeTitle": "Cło, VAT i podatki – za darmo",
+    "freeLead": "Odprawa w porcie {{port}}. Kwoty, które policzysz na kartce.",
+    "freeBadge": "Bezpłatnie",
+    "freeBase": "Liczone od wartości celnej (cena, opłaty aukcyjne, transport do UE i ubezpieczenie) po dzisiejszym kursie.",
+    "lockedListTitle": "Policzyliśmy też – w raporcie",
+    "riskTag": "ryzyko",
+    "moreLocked": "+ {{count}} kolejnych pozycji, w tym koszty ukryte"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Kontener na wyłączność",
@@ -1278,5 +1289,28 @@
       "registration": "Rejestracja",
       "logistics": "Transport i porty"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Podatki i opłaty portowe",
+    "extra": "+{{amount}} {{cur}} od drzwi do drzwi",
+    "cheapestDoor": "najtaniej od drzwi do drzwi",
+    "rankingNote": "Kolejność według pełnego kosztu od drzwi do drzwi (podatki, fracht, port, dowóz pod Twój adres). Przy każdym porcie widzisz jego podatki i opłaty; pełne rozbicie jest w raporcie.",
+    "title": "Odprawa w porcie {{port}}: podatki i opłaty",
+    "dutyWhere": "Takie samo w każdym porcie UE – 10% wartości celnej (CIF)",
+    "vatWhere": "Płacisz w kraju portu: {{country}}",
+    "nationalWhere": "Płacisz w kraju rejestracji ({{country}}) – bez względu na wybrany port",
+    "notPriced": "Lokalny podatek rejestracyjny – kraj: {{country}}; zależy od CO₂ lub ceny, nie wliczony",
+    "portFees": "Opłaty portowe",
+    "portFeesWhat": "Obsługa terminalu, rozładunek i agencja celna",
+    "total": "Podatki i opłaty",
+    "howTitle": "Jak to liczymy",
+    "how1": "Wartość celna (CIF) = cena + opłaty aukcyjne + transport do portu w UE + ubezpieczenie.",
+    "how2": "Cło: 10% wartości celnej (pickupy 22%, motocykle 6–8%) – takie samo w każdym porcie UE.",
+    "how3": "VAT importowy płacisz w kraju portu, według jego stawki, od wartości celnej + cła + transportu do Twojego adresu. Używane auto odprawione poza krajem: {{country}} nie płaci VAT drugi raz w kraju.",
+    "how4": "Podatki kraju rejestracji (np. polska akcyza) płacisz w kraju – niezależnie od portu.",
+    "how5": "Ranking dolicza fracht, opłaty portowe i dowóz za km pod Twój adres – najtańsza suma jest na górze.",
+    "bestLabel": "Najbardziej opłacalny port:",
+    "bestSelected": "wybrany",
+    "bestChoose": "Wybierz – oszczędzasz {{amount}} {{cur}}"
   }
 }

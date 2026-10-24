@@ -29,10 +29,19 @@ import org.springframework.stereotype.Service;
 @Service
 public class SuggestionService {
 
-    /** One EU port, priced door to door (expected scenario, rounded like the free result). */
+    /**
+     * One EU port. Ranked by the full door-to-door cost (expected scenario), but only the free part is exposed: the
+     * taxes and port fees of clearing there, the road distance and how much more it costs than the cheapest port.
+     * The door-to-door total itself is what the paid report sells.
+     *
+     * @param extraVsBest door-to-door difference to the cheapest port, rounded to 10 (0 for the cheapest)
+     */
     public record PortSuggestion(String code, String name, String countryCode, EuPort.Region region, double lat,
-                                 double lon, Integer distanceKm, GeoService.Method distanceMethod, BigDecimal total,
-                                 int daysMin, int daysMax) {
+                                 double lon, Integer distanceKm, GeoService.Method distanceMethod, TaxSummary taxes,
+                                 BigDecimal extraVsBest, int daysMin, int daysMax) {
+    }
+
+    private record Priced(EuPort port, GeoService.Distance distance, CalculationResult result) {
     }
 
     public record Suggestions(String recommendedPort, List<PortSuggestion> ports, DeliveryMode deliveryMode,
@@ -58,18 +67,24 @@ public class SuggestionService {
                 .map(home -> geo.distances(ports.stream().map(EuPort::location).toList(), home))
                 .orElse(null);
 
-        List<PortSuggestion> priced = new ArrayList<>();
+        List<Priced> results = new ArrayList<>();
         for (int i = 0; i < ports.size(); i++) {
             EuPort port = ports.get(i);
             GeoService.Distance distance = distances == null ? null : distances.get(i);
             Integer km = distance == null ? null : distance.km();
-            calculate(request.withPort(port.getCode(), km), fx).ifPresent(r -> priced.add(new PortSuggestion(
-                    port.getCode(), port.getName(), port.getCountryCode(), port.getRegion(),
-                    port.location().lat(), port.location().lon(), r.deliveryKm(),
-                    distance == null ? GeoService.Method.ESTIMATED : distance.method(),
-                    PublicQuoteView.roundToStep(r.total()), r.timeline().totalMin(), r.timeline().totalMax())));
+            calculate(request.withPort(port.getCode(), km), fx).ifPresent(r -> results.add(new Priced(port, distance, r)));
         }
-        priced.sort(Comparator.comparing(PortSuggestion::total).thenComparing(PortSuggestion::daysMax));
+        results.sort(Comparator.comparing((Priced p) -> p.result().total().amount())
+                .thenComparing(p -> p.result().timeline().totalMax()));
+        BigDecimal cheapest = results.isEmpty() ? BigDecimal.ZERO : results.getFirst().result().total().amount();
+        List<PortSuggestion> priced = results.stream().map(p -> new PortSuggestion(
+                p.port().getCode(), p.port().getName(), p.port().getCountryCode(), p.port().getRegion(),
+                p.port().location().lat(), p.port().location().lon(), p.result().deliveryKm(),
+                p.distance() == null ? GeoService.Method.ESTIMATED : p.distance().method(),
+                TaxSummary.of(p.result(), p.port().getCountryCode(), request.destinationCountry()),
+                p.result().total().amount().subtract(cheapest).setScale(-1, RoundingMode.HALF_UP).max(BigDecimal.ZERO)
+                        .setScale(0, RoundingMode.UNNECESSARY),
+                p.result().timeline().totalMin(), p.result().timeline().totalMax())).toList();
         String best = priced.isEmpty() ? request.euPortCode() : priced.getFirst().code();
 
         PortSuggestion bestPort = priced.isEmpty() ? null : priced.getFirst();

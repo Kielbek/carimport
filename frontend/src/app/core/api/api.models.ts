@@ -71,8 +71,10 @@ export interface PortSuggestion {
   lon: number;
   distanceKm: number | null;
   distanceMethod: 'ROUTED' | 'ESTIMATED';
-  /** Expected total, rounded to 100, display currency. */
-  total: number;
+  /** Duty, VAT of the port country, national taxes of the destination and port fees (display currency). */
+  taxes: TaxSummary;
+  /** How much more this port costs door to door than the cheapest one (0 for the cheapest). */
+  extraVsBest: number;
   daysMin: number;
   daysMax: number;
 }
@@ -94,19 +96,38 @@ export interface Timeline {
 }
 
 /** Free tier: rounded scenario totals, shares, what is included (names only) and which risks were considered. */
+/** One tax line of the free result: rate as a fraction, the country that levies it, whole-unit amount. */
+export interface TaxItem {
+  code: string;
+  rate: number | null;
+  country: string;
+  amount: number;
+}
+
+/** The free "on paper" part: duty, import VAT of the port country, national taxes of the destination, port fees. */
+export interface TaxSummary {
+  duty: TaxItem;
+  vat: TaxItem;
+  national: TaxItem[];
+  portFees: number;
+  total: number;
+}
+
+/**
+ * Free result: only the simple taxes; the door-to-door total, scenarios, transport, delivery, registration and hidden
+ * costs are computed but only listed by name (lockedItems) - the paid report shows them.
+ */
 export interface PublicQuoteView {
   quoteId: string | null;
-  rangeMin: number;
-  rangeMax: number;
   currency: DisplayCurrency;
-  scenarios: { optimistic: number; average: number; pessimistic: number };
-  sharePercent: Record<CostCategory, number>;
-  includedItems: Partial<Record<CostCategory, string[]>>;
-  risks: { code: string; probabilityPercent: number }[];
-  exciseApplies: boolean;
+  taxes: TaxSummary;
+  clearancePort: string;
+  clearanceCountry: string;
+  destinationCountry: string;
+  lockedItems: Partial<Record<CostCategory, string[]>>;
+  risks: string[];
+  lockedCount: number;
   transitDays: number;
-  timeline: Timeline;
-  deliveryKm: number;
   fxDate: string;
   warnings: string[];
   expiresAt: string | null;

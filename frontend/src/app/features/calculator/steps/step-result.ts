@@ -1,25 +1,22 @@
 import { Component, computed, inject, output } from '@angular/core';
-import { toSignal } from '@angular/core/rxjs-interop';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
-import { map, startWith, switchMap } from 'rxjs';
 import { CostCategory } from '../../../core/api/api.models';
 import { reportPrice } from '../../../core/currency/currencies';
+import { CountryNamePipe } from '../../../core/format/country-name.pipe';
 import { LanguageService } from '../../../core/i18n/language.service';
-import { CountUpDirective } from '../../../shared/count-up.directive';
 import { Icon } from '../../../shared/icon/icon';
 import { CalculatorStore } from '../calculator.store';
-import { DEPARTURE_PORTS, FALLBACK_PORTS } from '../calculator.options';
-import { CATEGORY_COLORS, CostDonut } from '../result/cost-donut';
-
-const CATEGORIES: CostCategory[] = ['VEHICLE', 'TRANSPORT', 'TAXES', 'REGISTRATION', 'RISK'];
+import { DEPARTURE_PORTS } from '../calculator.options';
 
 /**
- * Step 6 - the free result: three scenarios, structure, lead time, everything included (names), risks considered
- * (with probability), then the paid report and the partner CTA. Amounts per line are only in the paid report.
+ * Step 6 - the free result. Free: the taxes anyone could work out on paper (duty, import VAT of the port country,
+ * national tax of the destination, port fees). Locked and blurred: the door-to-door total in three scenarios and every
+ * other position - the server does not send those amounts, the blurred figures are placeholders. The purchase sits at
+ * the top and, on phones, in a bar that is always visible.
  */
 @Component({
   selector: 'app-step-result',
-  imports: [TranslatePipe, CountUpDirective, Icon, CostDonut],
+  imports: [TranslatePipe, Icon, CountryNamePipe],
   template: `
     @if (store.calculating()) {
       <div class="py-20 text-center">
@@ -38,95 +35,113 @@ const CATEGORIES: CostCategory[] = ['VEHICLE', 'TRANSPORT', 'TAXES', 'REGISTRATI
         <app-icon name="arrow-right" [size]="14" />
         <span>{{ departure() }}</span>
         <app-icon name="arrow-right" [size]="14" />
-        <span>{{ euPort() }}</span>
+        <span>{{ r.clearancePort }}</span>
         <app-icon name="arrow-right" [size]="14" />
-        <span>{{ s().destinationCountry }}</span>
-        @if (r.deliveryKm) { <span>· {{ r.deliveryKm }} km</span> }
+        <span>{{ s().destinationAddress ?? (r.destinationCountry | countryName: lang.locale()) }}</span>
       </p>
 
-      <!-- scenarios -->
-      <div class="mt-6 grid gap-4 md:grid-cols-3">
-        @for (sc of scenarios; track sc.key; let i = $index) {
-          <div class="rounded-[4px] p-6" [class]="i === 1 ? 'bg-ink-2 text-white ring-1 ring-brand' : 'border border-line'">
-            <p class="text-[13px] font-semibold uppercase tracking-[0.06em]" [class]="i === 1 ? 'text-brand' : 'text-muted'">{{ 'scenario.' + i | translate }}</p>
-            <p class="mt-3 text-[30px] font-extrabold leading-none tabular-nums" [class.text-brand]="i === 1">
-              <span [appCountUp]="r.scenarios[sc.key]" [currency]="r.currency" [locale]="lang.locale()"></span>
-            </p>
-            <p class="mt-3 text-xs leading-relaxed" [class]="i === 1 ? 'text-white/70' : 'text-muted'">{{ 'scenarioHint.' + i | translate }}</p>
+      <!-- the full cost: locked, with the purchase at the top -->
+      <section class="theme-dark relative mt-6 overflow-hidden rounded-[4px] bg-panel p-6 text-fg sm:p-8">
+        <div class="flex flex-wrap items-start justify-between gap-6">
+          <div class="max-w-xl">
+            <p class="eyebrow">{{ 'result.lockedEyebrow' | translate }}</p>
+            <h3 class="mt-3 text-[26px] font-extrabold leading-tight">{{ 'result.lockedTitle' | translate }}</h3>
+            <p class="mt-2 text-sm text-fg/75">{{ 'result.lockedLead' | translate: { count: r.lockedCount } }}</p>
           </div>
-        }
-      </div>
-
-      <!-- structure + timeline -->
-      <div class="mt-10 grid gap-10 lg:grid-cols-2">
-        <section>
-          <h3 class="text-lg font-extrabold">{{ 'result.structure' | translate }}</h3>
-          <div class="mt-5 grid grid-cols-[8rem_1fr] items-center gap-6">
-            <app-cost-donut [shares]="r.sharePercent" [labels]="labels()" [ariaLabel]="'result.chart' | translate" />
-            <ul class="space-y-2.5 text-sm">
-              @for (c of categories; track c) {
-                <li class="flex items-center justify-between gap-2">
-                  <span class="flex items-center gap-2"><span class="size-2.5 shrink-0 rounded-[2px]" [style.background]="colors[c]"></span>{{ labels()[c] }}</span>
-                  <span class="font-bold tabular-nums">{{ r.sharePercent[c] }}%</span>
-                </li>
-              }
-            </ul>
+          <div class="w-full sm:w-auto">
+            <button type="button" class="btn btn-primary w-full !py-3.5 text-base sm:w-auto" (click)="unlock.emit()">
+              <app-icon name="lock" [size]="18" /> {{ 'result.unlock' | translate: { price: reportPrice() } }}
+            </button>
+            <p class="mt-2 text-center text-xs text-fg/60">{{ 'result.unlockNote' | translate }}</p>
           </div>
-        </section>
-        <section>
-          <h3 class="text-lg font-extrabold">{{ 'result.timeline' | translate: { min: r.timeline.totalMin, max: r.timeline.totalMax } }}</h3>
-          <ol class="mt-5 space-y-3">
-            @for (st of r.timeline.stages; track st.code) {
-              <li>
-                <div class="flex justify-between text-sm"><span>{{ 'timeline.' + st.code | translate }}</span>
-                  <span class="font-semibold tabular-nums">{{ st.minDays }}–{{ st.maxDays }} {{ 'report.days' | translate }}</span></div>
-                <div class="mt-1.5 h-1.5 rounded-full bg-line">
-                  <div class="h-full rounded-full bg-brand" [style.width.%]="(st.maxDays / r.timeline.totalMax) * 100"></div>
-                </div>
-              </li>
-            }
-          </ol>
-        </section>
-      </div>
-
-      <!-- included -->
-      <section class="mt-12">
-        <h3 class="text-lg font-extrabold">{{ 'result.included' | translate }}</h3>
-        <div class="mt-5 grid gap-6 md:grid-cols-2">
-          @for (c of itemCategories(); track c) {
-            <div>
-              <p class="label">{{ 'category.' + c | translate }}</p>
-              <ul class="space-y-1.5 text-sm">
-                @for (code of r.includedItems[c]; track code) {
-                  <li class="flex gap-2"><app-icon name="check" [size]="16" class="mt-0.5 text-brand-text" />{{ 'cost.' + code | translate }}</li>
-                }
-              </ul>
+        </div>
+        <div class="mt-6 grid gap-3 sm:grid-cols-3" aria-hidden="true">
+          @for (i of [0, 1, 2]; track i) {
+            <div class="rounded-[4px] p-4" [class]="i === 1 ? 'bg-ink-2 ring-1 ring-brand' : 'border border-line'">
+              <p class="text-[12px] font-semibold uppercase tracking-[0.06em]" [class]="i === 1 ? 'text-brand' : 'text-fg/60'">{{ 'scenario.' + i | translate }}</p>
+              <p class="mt-2 select-none text-[28px] font-extrabold leading-none tabular-nums blur-[7px]">{{ fake(i + 7) }} {{ r.currency }}</p>
             </div>
           }
         </div>
+        <ul class="mt-6 grid gap-2 text-sm text-fg/85 sm:grid-cols-2">
+          @for (n of [1, 2, 3, 4, 5, 6]; track n) {
+            <li class="flex gap-2.5"><app-icon name="check" [size]="16" class="mt-0.5 shrink-0 text-brand" />{{ 'result.reportItem' + n | translate }}</li>
+          }
+        </ul>
       </section>
 
-      <!-- risks -->
-      @if (r.risks.length) {
-        <section class="mt-12">
-          <h3 class="text-lg font-extrabold">{{ 'result.risks' | translate }}</h3>
-          <p class="mt-2 text-sm text-muted">{{ 'result.risksLead' | translate }}</p>
-          <ul class="mt-5 divide-y divide-line border-y border-line">
-            @for (risk of r.risks; track risk.code) {
-              <li class="grid gap-2 py-4 sm:grid-cols-[1fr_180px] sm:items-center">
-                <div>
-                  <p class="font-semibold">{{ 'cost.' + risk.code | translate }}</p>
-                  <p class="mt-0.5 text-xs text-muted">{{ 'riskInfo.' + risk.code | translate }}</p>
-                </div>
-                <div>
-                  <div class="flex justify-between text-xs"><span class="text-muted">{{ 'result.probability' | translate }}</span><span class="font-bold">{{ risk.probabilityPercent }}%</span></div>
-                  <div class="mt-1 h-1.5 rounded-full bg-line"><div class="h-full rounded-full bg-brand" [style.width.%]="risk.probabilityPercent"></div></div>
-                </div>
+      <!-- free: what anyone can work out on paper -->
+      <section class="mt-10">
+        <div class="flex flex-wrap items-end justify-between gap-3">
+          <div>
+            <h3 class="text-lg font-extrabold">{{ 'result.freeTitle' | translate }}</h3>
+            <p class="mt-1 text-sm text-muted">{{ 'result.freeLead' | translate: { port: r.clearancePort } }}</p>
+          </div>
+          <span class="badge !bg-success/15 !text-success">{{ 'result.freeBadge' | translate }}</span>
+        </div>
+        <table class="mt-5 w-full text-[15px]">
+          <tbody>
+            <tr class="border-b border-line">
+              <td class="py-3 pr-3">{{ 'cost.CUSTOMS_DUTY' | translate }} <span class="text-muted">{{ pct(r.taxes.duty.rate) }}</span>
+                <span class="block text-xs text-muted">{{ 'portCost.dutyWhere' | translate }}</span></td>
+              <td class="py-3 text-right font-bold tabular-nums">{{ money(r.taxes.duty.amount, r.currency) }}</td>
+            </tr>
+            <tr class="border-b border-line">
+              <td class="py-3 pr-3">{{ 'cost.IMPORT_VAT' | translate }} <span class="text-muted">{{ pct(r.taxes.vat.rate) }}</span>
+                <span class="block text-xs text-muted">{{ 'portCost.vatWhere' | translate: { country: (r.taxes.vat.country | countryName: lang.locale()) } }}</span></td>
+              <td class="py-3 text-right font-bold tabular-nums">{{ money(r.taxes.vat.amount, r.currency) }}</td>
+            </tr>
+            @for (t of r.taxes.national; track t.code) {
+              <tr class="border-b border-line">
+                <td class="py-3 pr-3">{{ 'cost.' + t.code | translate }} <span class="text-muted">{{ pct(t.rate) }}</span>
+                  <span class="block text-xs text-muted">{{ 'portCost.nationalWhere' | translate: { country: (t.country | countryName: lang.locale()) } }}</span></td>
+                <td class="py-3 text-right font-bold tabular-nums">{{ money(t.amount, r.currency) }}</td>
+              </tr>
+            }
+            <tr class="border-b border-line">
+              <td class="py-3 pr-3">{{ 'portCost.portFees' | translate }}
+                <span class="block text-xs text-muted">{{ 'portCost.portFeesWhat' | translate }}</span></td>
+              <td class="py-3 text-right font-bold tabular-nums">{{ money(r.taxes.portFees, r.currency) }}</td>
+            </tr>
+            <tr>
+              <td class="pt-4 font-extrabold">{{ 'portCost.total' | translate }}</td>
+              <td class="pt-4 text-right text-xl font-extrabold tabular-nums text-brand-text">{{ money(r.taxes.total, r.currency) }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="mt-3 text-xs text-muted">{{ 'result.freeBase' | translate }}</p>
+      </section>
+
+      <!-- locked: everything else, by name only -->
+      <section class="mt-10">
+        <h3 class="text-lg font-extrabold">{{ 'result.lockedListTitle' | translate }}</h3>
+        <div class="relative mt-4">
+          <ul class="divide-y divide-line border-y border-line">
+            @for (row of lockedRows().slice(0, 10); track row.code; let i = $index) {
+              <li class="flex items-center justify-between gap-4 py-3 text-[15px]">
+                <span class="flex items-center gap-2.5">
+                  <app-icon name="lock" [size]="14" class="shrink-0 text-muted" />
+                  {{ 'cost.' + row.code | translate }}
+                  @if (row.risk) { <span class="badge">{{ 'result.riskTag' | translate }}</span> }
+                </span>
+                <span class="select-none font-bold tabular-nums blur-[6px]" aria-hidden="true">{{ fake(i) }} {{ r.currency }}</span>
+              </li>
+            }
+            @if (lockedRows().length > 10) {
+              <li class="flex items-center gap-2.5 py-3 text-[15px] font-semibold text-muted">
+                <app-icon name="lock" [size]="14" /> {{ 'result.moreLocked' | translate: { count: lockedRows().length - 10 } }}
               </li>
             }
           </ul>
-        </section>
-      }
+          <div class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-bg to-transparent"></div>
+        </div>
+        <div class="mt-5 flex flex-wrap items-center gap-4">
+          <button type="button" class="btn btn-primary" (click)="unlock.emit()">
+            <app-icon name="lock" [size]="17" /> {{ 'result.unlock' | translate: { price: reportPrice() } }}
+          </button>
+          <button type="button" class="btn btn-outline" (click)="partner.emit()">{{ 'result.partner' | translate }}</button>
+        </div>
+      </section>
 
       @if (r.warnings.length) {
         <section class="mt-10 space-y-2">
@@ -135,26 +150,14 @@ const CATEGORIES: CostCategory[] = ['VEHICLE', 'TRANSPORT', 'TAXES', 'REGISTRATI
           }
         </section>
       }
+      <p class="mt-8 text-xs text-muted">{{ 'result.fx' | translate: { date: r.fxDate } }}</p>
 
-      <!-- paid report -->
-      <section class="theme-dark mt-12 grid gap-8 rounded-[4px] bg-panel p-7 text-fg sm:p-10 lg:grid-cols-[1.2fr_1fr] lg:items-center">
-        <div>
-          <p class="eyebrow">{{ 'result.reportEyebrow' | translate }}</p>
-          <h3 class="mt-4 text-[28px] font-extrabold leading-tight">{{ 'result.reportTitle' | translate }}</h3>
-          <ul class="mt-6 space-y-2.5 text-sm text-fg/85">
-            @for (n of [1, 2, 3, 4, 5, 6]; track n) {
-              <li class="flex gap-3"><app-icon name="check" [size]="18" class="text-brand" />{{ 'result.reportItem' + n | translate }}</li>
-            }
-          </ul>
-        </div>
-        <div class="space-y-3">
-          <button type="button" class="btn btn-primary w-full" (click)="unlock.emit()">
-            <app-icon name="lock" [size]="17" /> {{ 'result.unlock' | translate: { price: reportPrice() } }}
-          </button>
-          <button type="button" class="btn btn-outline w-full" (click)="partner.emit()">{{ 'result.partner' | translate }}</button>
-          <p class="pt-2 text-center text-xs text-fg/60">{{ 'result.fx' | translate: { date: r.fxDate } }}</p>
-        </div>
-      </section>
+      <!-- phones: the purchase always in reach -->
+      <div class="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-bg/95 p-3 backdrop-blur md:hidden">
+        <button type="button" class="btn btn-primary w-full" (click)="unlock.emit()">
+          <app-icon name="lock" [size]="17" /> {{ 'result.unlock' | translate: { price: reportPrice() } }}
+        </button>
+      </div>
     }
   `,
 })
@@ -168,36 +171,37 @@ export class StepResult {
   readonly partner = output<void>();
   readonly edit = output<number>();
 
-  protected readonly categories = CATEGORIES;
-  protected readonly colors = CATEGORY_COLORS;
-  protected readonly scenarios = [{ key: 'optimistic' }, { key: 'average' }, { key: 'pessimistic' }] as const;
+  /** Every locked position (transport, delivery, registration, ...) and the risks, names only. */
+  protected readonly lockedRows = computed(() => {
+    const r = this.store.result();
+    if (!r) {
+      return [];
+    }
+    const order: CostCategory[] = ['VEHICLE', 'TRANSPORT', 'TAXES', 'REGISTRATION'];
+    return [
+      ...order.flatMap((c) => (r.lockedItems[c] ?? []).map((code) => ({ code, risk: false }))),
+      ...r.risks.map((code) => ({ code, risk: true })),
+    ];
+  });
 
-  protected readonly itemCategories = computed(() =>
-    (['VEHICLE', 'TRANSPORT', 'TAXES', 'REGISTRATION'] as CostCategory[]).filter(
-      (c) => this.store.result()?.includedItems[c]?.length,
-    ),
-  );
   protected readonly departure = computed(() => {
     const code = this.s().departurePort;
     return code ? (DEPARTURE_PORTS[code] ?? code) : this.translate.instant('result.cheapestPort');
   });
-  protected readonly euPort = computed(
-    () =>
-      this.store.selectedPort()?.name ??
-      FALLBACK_PORTS.find((p) => p.code === this.s().euPortCode)?.name ??
-      this.s().euPortCode,
-  );
-
-  protected readonly labels = toSignal(
-    this.translate.onLangChange.pipe(
-      startWith(null),
-      switchMap(() => this.translate.stream(CATEGORIES.map((c) => `category.${c}`))),
-      map((t: Record<string, string>) =>
-        Object.fromEntries(CATEGORIES.map((c) => [c, t[`category.${c}`]])) as Record<CostCategory, string>,
-      ),
-    ),
-    { initialValue: { VEHICLE: '', TRANSPORT: '', TAXES: '', REGISTRATION: '', RISK: '' } },
-  );
 
   protected readonly reportPrice = computed(() => reportPrice(this.s().displayCurrency, this.lang.locale()));
+
+  /** A plausible-looking blurred figure - the real amounts are never sent to the browser before payment. */
+  protected fake(seed: number): string {
+    const n = 1000 + ((seed * 7919 + 3571) % 89) * 211;
+    return new Intl.NumberFormat(this.lang.locale()).format(seed > 6 ? n * 7 : n);
+  }
+
+  protected pct(rate: number | null): string {
+    return rate == null ? '' : new Intl.NumberFormat(this.lang.locale(), { style: 'percent', maximumFractionDigits: 2 }).format(rate);
+  }
+
+  protected money(amount: number, currency: string): string {
+    return new Intl.NumberFormat(this.lang.locale(), { style: 'currency', currency, maximumFractionDigits: 0 }).format(amount);
+  }
 }

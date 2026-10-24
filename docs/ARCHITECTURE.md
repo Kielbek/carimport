@@ -122,13 +122,24 @@ Pliki: `calculation/CalculationEngine.java`, `calculation/step/*`, `calculation/
 * **Nowy środek transportu** (≤ 6 mies. / ≤ 6000 km) odprawiony w innym kraju → ostrzeżenie, że VAT należy się też
   w kraju rejestracji.
 
-### 2.3 Darmowy przedział vs. raport płatny
+### 2.3 Wynik darmowy vs. raport płatny
 
 `CalculationEngine.calculateRange()` liczy trzy scenariusze (`Scenario`): **LOW** (minimalne stawki frachtu, kurs −1,5%),
-**EXPECTED** (środek przedziałów – to jest raport płatny), **HIGH** (maksymalne stawki, kurs +2,5%, pozycje szacunkowe
-+25%). `PublicQuoteView` zwraca tylko przedział zaokrąglony **na zewnątrz** do pełnych setek oraz udziały kategorii
-w pełnych procentach (metoda największych reszt – zawsze sumują się do 100%). Dokładne kwoty nigdy nie opuszczają
-serwera bez płatności.
+**EXPECTED** (środek przedziałów), **HIGH** (maksymalne stawki, kurs +2,5%, pozycje szacunkowe +25%).
+
+**Za darmo** (`PublicQuoteView` + `TaxSummary`) są tylko kwoty, które da się policzyć „na kartce”: cło (stawka i kwota),
+VAT importowy w kraju portu (stawka, kraj, kwota), podatki kraju rejestracji (np. polska akcyza – stawka, kwota) i opłaty
+portowe. **Wszystko inne** – suma od drzwi do drzwi w trzech scenariuszach, opłaty aukcyjne, fracht, dowóz (km), rejestracja,
+usługi i ryzyka – jest liczone, ale serwer wysyła tylko nazwy pozycji (`lockedItems`, `risks`, `lockedCount`). Frontend
+pokazuje je zamazane (rozmyte liczby są atrapą, prawdziwe kwoty nie trafiają do przeglądarki przed płatnością), z
+przyciskiem zakupu na górze wyniku i stałym paskiem zakupu na telefonie.
+
+**Ranking portów** (`POST /quotes/suggestions`) sortuje po pełnym koszcie od drzwi do drzwi, ale ujawnia dla każdego portu
+tylko `TaxSummary` i dopłatę względem najtańszego (`extraVsBest`). Reguła, którą pokazuje UI (sekcja „Jak liczymy”):
+cło jest takie samo w całej UE; VAT płaci się w kraju portu według jego stawki (używane auto nie płaci VAT drugi raz
+w kraju rejestracji); podatki kraju rejestracji (akcyza PL) płaci się w kraju zawsze, niezależnie od portu. Krajowe
+podatki rejestracyjne innych państw (NoVA, BPM, registreringsafgift, autovero, ISV, VRT, …) zależą od CO₂/ceny – nie są
+jeszcze wyceniane, a UI nazywa je i oznacza jako „nie wliczony”.
 
 ### 2.4 Przykład policzony ręcznie (test `fullChainForPetrolAbove2000ccClearedInGdynia`)
 
