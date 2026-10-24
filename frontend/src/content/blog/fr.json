@@ -1,0 +1,398 @@
+[
+  {
+    "id": "total-cost",
+    "slug": "combien-coute-importer-une-voiture-des-usa",
+    "category": "costs",
+    "origin": "USA",
+    "date": "2026-10-20",
+    "minutes": 5,
+    "title": "Combien coûte vraiment l’importation d’une voiture des USA en France ?",
+    "metaTitle": "Importer une voiture des USA : combien ça coûte ? | CarImport.eu",
+    "description": "Combien coûte l’importation d’une voiture des USA en France ? Enchère, frais Copart, fret, droits de douane 10 %, TVA 20 % et carte grise : le calcul complet.",
+    "lead": "Le prix affiché sur Copart ou IAAI n’est qu’un point de départ. Une fois la voiture dédouanée, homologuée et immatriculée devant chez vous, vous aurez souvent payé 1,6 à 2 fois le prix d’adjudication. Voici, ligne par ligne, où part cet argent quand on importe une voiture des États-Unis en France.",
+    "blocks": [
+      {
+        "h2": "La réponse courte"
+      },
+      {
+        "p": "Pour une voiture particulière achetée 10 000 $ aux enchères américaines, comptez au total environ 16 000 à 19 000 $ (soit grosso modo 15 000 à 17 500 € selon le taux de change) pour un véhicule livré en France, avant carte grise. Après le prix de la voiture elle-même, les postes les plus lourds sont la TVA à l’importation de 20 %, les droits de douane de 10 % et le transport. Les réparations d’un véhicule accidenté viennent en plus, tout comme la taxe régionale et l’éventuel malus écologique au moment de l’immatriculation."
+      },
+      {
+        "h2": "1. L’achat : enchère et frais de vente"
+      },
+      {
+        "p": "Copart et IAAI facturent des frais acheteur (buyer fee) qui augmentent avec le prix, auxquels s’ajoutent des frais fixes d’enchère en ligne, de sortie de parc (gate fee) et environnementaux. Les grilles diffèrent entre les titres clean et salvage. Si vous passez par un intermédiaire – ce qui est le cas de la plupart des acheteurs français – ajoutez sa commission."
+      },
+      {
+        "ul": [
+          "Frais acheteur : progressifs, souvent 600 à 1 000 $ pour une voiture à 10 000 $",
+          "Frais d’enchère en ligne et gate fee : environ 100 à 200 $",
+          "Commission de l’intermédiaire : en général 200 à 500 $ par voiture",
+          "Frais de stockage : facturés à la journée si vous payez ou enlevez la voiture en retard"
+        ]
+      },
+      {
+        "h2": "2. Le transport jusqu’au port américain"
+      },
+      {
+        "p": "Un camion porte-voitures emmène le véhicule du parc d’enchères jusqu’au port d’export : New Jersey, Savannah, Houston ou Los Angeles. La distance compte beaucoup : un parc proche du port coûte quelques centaines de dollars, une traversée du pays plus de 1 000 $. Une voiture qui ne roule pas nécessite un chariot élévateur et un treuil, ce qui entraîne un supplément."
+      },
+      {
+        "h2": "3. Le fret maritime et l’assurance"
+      },
+      {
+        "p": "Le conteneur partagé (en général 3 à 4 voitures) est l’option sûre la moins chère : environ 1 000 à 1 600 $ par voiture depuis la côte Est vers les ports de la mer du Nord ou vers Le Havre. Le RoRo coûte moins pour une voiture roulante, mais la protège moins bien. L’assurance maritime représente environ 1,5 % de la valeur et fait partie de la valeur en douane."
+      },
+      {
+        "h2": "4. Les droits de douane"
+      },
+      {
+        "p": "Les droits sont calculés sur la valeur en douane, c’est-à-dire la valeur CIF : prix d’achat, frais d’enchère, transport jusqu’à la frontière de l’UE et assurance. Pour une voiture particulière, le taux est de 10 % (code NC 8703), pour un pick-up de 22 %, pour une moto de 6 à 8 %. Une voiture de plus de 30 ans dans son état d’origine peut entrer sans droits comme véhicule de collection."
+      },
+      {
+        "h2": "5. La TVA à l’importation : 20 % si vous dédouanez en France"
+      },
+      {
+        "p": "La TVA est due sur la valeur en douane, augmentée des droits et des frais de transport jusqu’au premier lieu de destination dans l’UE. Le taux appliqué est celui du pays où la voiture est dédouanée : 20 % en France, 21 % en Belgique et aux Pays-Bas, 19 % en Allemagne, 17 % au Luxembourg. C’est pourquoi le choix du port de dédouanement peut faire varier la facture de plusieurs centaines d’euros."
+      },
+      {
+        "h2": "6. Port, livraison et carte grise"
+      },
+      {
+        "p": "Au port européen, vous payez la manutention au terminal et le dépotage du conteneur (environ 400 à 500 €) ainsi qu’un commissionnaire en douane (environ 250 €). La voiture rejoint ensuite votre adresse en camion porte-voitures ou en dépanneuse, facturée au kilomètre. Viennent enfin les coûts français : mise aux normes, réception à titre isolé auprès de la DREAL, contrôle technique, traductions et certificat d’immatriculation demandé via l’ANTS, avec la taxe régionale et, selon les émissions de CO₂ et le poids, le malus écologique."
+      },
+      {
+        "h2": "Exemple chiffré : une voiture à 10 000 $"
+      },
+      {
+        "table": {
+          "head": [
+            "Poste",
+            "Montant (USD)"
+          ],
+          "rows": [
+            [
+              "Prix d’adjudication",
+              "10 000"
+            ],
+            [
+              "Frais d’enchère et d’intermédiaire",
+              "1 200"
+            ],
+            [
+              "Transport jusqu’au port",
+              "450"
+            ],
+            [
+              "Fret en conteneur partagé",
+              "1 200"
+            ],
+            [
+              "Assurance maritime",
+              "180"
+            ],
+            [
+              "Valeur en douane (CIF)",
+              "13 030"
+            ],
+            [
+              "Droits de douane 10 %",
+              "1 303"
+            ],
+            [
+              "Port, dépotage, transitaire et livraison",
+              "≈ 1 000"
+            ],
+            [
+              "Base de TVA (CIF + droits + port et livraison)",
+              "15 333"
+            ],
+            [
+              "TVA à l’importation 20 % (France)",
+              "3 067"
+            ],
+            [
+              "Total avant carte grise",
+              "≈ 18 400"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "L’exemple utilise des chiffres ronds pour donner un ordre de grandeur. La taxe régionale et le malus écologique ne figurent pas dans le tableau : leur montant dépend de la région, de la puissance fiscale et des émissions de la voiture, selon les règles françaises en vigueur. Le calculateur les affiche pour votre véhicule précis, avec le taux de change du jour."
+      },
+      {
+        "tip": "Prévoyez une marge de 10 à 15 % pour les imprévus : frais de stockage, navire retardé, contrôle douanier ou dégâts cachés. Le calculateur intègre ces risques dans son scénario pessimiste."
+      },
+      {
+        "h2": "Comment payer moins"
+      },
+      {
+        "ol": [
+          "Achetez près d’un port d’export pour réduire le transport terrestre aux États-Unis.",
+          "Choisissez un conteneur partagé plutôt qu’un conteneur exclusif.",
+          "Comparez les ports de dédouanement : Le Havre, Anvers, Zeebrugge ou Rotterdam ne coûtent pas la même chose une fois la route jusqu’à chez vous comptée.",
+          "Vérifiez les paliers de frais d’enchère : quelques dollars au-dessus d’un seuil peuvent faire grimper les frais.",
+          "Payez l’enchère en dollars avec un service de change à faible marge plutôt que par votre banque.",
+          "Anticipez le malus : à prix égal, un modèle moins émetteur peut coûter beaucoup moins cher à immatriculer."
+        ]
+      },
+      {
+        "p": "Le plus simple reste de faire le calcul porte à porte : vous saisissez seulement votre adresse, et le calculateur compare les 43 ports de l’UE, avec leur TVA, leurs frais portuaires et la distance routière jusqu’à chez vous."
+      }
+    ],
+    "faq": [
+      {
+        "q": "La TVA à l’importation est-elle récupérable pour un particulier ?",
+        "a": "Non. Un particulier supporte la TVA à l’importation comme un coût définitif. Une entreprise assujettie peut en général la déduire, ou utiliser le régime douanier 4200 si la voiture est destinée à un autre pays de l’UE."
+      },
+      {
+        "q": "Paie-t-on aussi la TVA sur les frais de transport ?",
+        "a": "Oui. La base de TVA comprend la valeur en douane, les droits de douane et les frais de transport jusqu’au premier lieu de destination dans l’UE."
+      },
+      {
+        "q": "Le malus écologique s’applique-t-il à une voiture importée des USA ?",
+        "a": "Oui, une voiture importée qui est immatriculée pour la première fois en France est soumise aux règles françaises de la carte grise, y compris la taxe régionale et le malus selon ses caractéristiques. Le calculateur l’estime lorsque les données du véhicule le permettent."
+      }
+    ]
+  },
+  {
+    "id": "copart-iaai",
+    "slug": "acheter-une-voiture-sur-copart-ou-iaai-depuis-la-france",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-16",
+    "minutes": 3,
+    "title": "Comment acheter une voiture sur Copart ou IAAI depuis la France ?",
+    "metaTitle": "Acheter sur Copart ou IAAI depuis la France | CarImport.eu",
+    "description": "Acheter une voiture sur Copart ou IAAI depuis la France : intermédiaire, dépôt, enchères, frais cachés, délais de paiement et d’enlèvement, étape par étape.",
+    "lead": "Copart et IAAI vendent des centaines de milliers de voitures chaque mois, et une part croissante part vers l’Europe. Voici comment enchérir depuis la France, quels frais prévoir et quels délais ne surtout pas manquer.",
+    "blocks": [
+      {
+        "h2": "Faut-il passer par un intermédiaire ?"
+      },
+      {
+        "p": "Dans la plupart des cas, oui. De nombreux lots ne peuvent être achetés qu’avec une licence de professionnel de l’automobile, et certains États américains limitent l’achat de véhicules salvage. C’est pourquoi la majorité des acheteurs européens enchérissent via un broker enregistré (on parle aussi d’agent ou d’importateur), qui place les offres en votre nom sous sa licence. Il facture une commission fixe par voiture et, souvent, organise aussi le transport et l’export."
+      },
+      {
+        "p": "Avant de signer, comparez plusieurs intermédiaires : montant de la commission, frais de documents, délais de paiement, assurance pendant le transport, et surtout ce qui se passe si la voiture arrive avec des dégâts supplémentaires. Un intermédiaire sérieux vous donne un contrat écrit et un récapitulatif de tous les frais avant la première enchère."
+      },
+      {
+        "h2": "Étape par étape"
+      },
+      {
+        "ol": [
+          "Choisissez un intermédiaire et signez le contrat ; vous obtenez l’accès aux enchères via son compte.",
+          "Versez le dépôt de garantie, généralement environ 10 % de votre enchère maximale.",
+          "Trouvez la voiture, lisez le rapport d’état et vérifiez l’historique du VIN (Carfax, AutoCheck).",
+          "Fixez votre enchère maximale frais compris, et pas seulement le prix d’adjudication.",
+          "Enchérissez en pré-enchère ou en direct ; l’offre la plus haute gagne si elle atteint le prix de réserve du vendeur.",
+          "Payez dans le délai imparti (souvent 2 à 3 jours ouvrés) par virement en dollars.",
+          "Organisez l’enlèvement rapidement : le stockage gratuit est court, ensuite des frais journaliers s’appliquent.",
+          "La voiture part au port et le titre de propriété est transmis à l’exportateur pour les formalités douanières."
+        ]
+      },
+      {
+        "h2": "Bien lire une annonce"
+      },
+      {
+        "ul": [
+          "Type de titre : clean, salvage, rebuilt ou certificate of destruction / parts only",
+          "Dommage principal et secondaire, état des airbags, statut du compteur",
+          "Mentions Run and Drive, Engine Starts, Enhanced Vehicles : constatées à l’arrivée au parc, sans garantie",
+          "Présence des clés, emplacement du parc et distance jusqu’au port d’export",
+          "Type de vendeur : compagnie d’assurance, concessionnaire, loueur"
+        ]
+      },
+      {
+        "tip": "« Run and Drive » signifie que la voiture a démarré et avancé lors de son arrivée au parc. Cela ne veut pas dire qu’elle est apte à rouler : prévoyez un contrôle complet chez un garagiste après l’arrivée en France."
+      },
+      {
+        "h2": "Les frais qui surprennent les débutants"
+      },
+      {
+        "p": "En plus des frais acheteur, les ventes ajoutent des frais d’enchère en ligne, de sortie de parc, environnementaux et de traitement du titre. Un paiement ou un enlèvement en retard coûte plus cher, et des frais de remise en vente s’appliquent si vous ne payez pas. L’intermédiaire ajoute sa commission et parfois des frais de documents et d’export."
+      },
+      {
+        "table": {
+          "head": [
+            "Frais",
+            "Ordre de grandeur"
+          ],
+          "rows": [
+            [
+              "Frais acheteur (voiture à 10 000 $)",
+              "600 – 1 000 $"
+            ],
+            [
+              "Enchère en ligne et gate fee",
+              "100 – 200 $"
+            ],
+            [
+              "Commission de l’intermédiaire",
+              "200 – 500 $"
+            ],
+            [
+              "Stockage après le délai gratuit",
+              "facturé par jour"
+            ],
+            [
+              "Paiement en retard",
+              "pénalité fixe ou en %"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Combien enchérir ?"
+      },
+      {
+        "p": "Raisonnez à l’envers. Partez du prix que la voiture vous coûtera une fois devant chez vous – droits de douane de 10 %, TVA à l’importation de 20 % si elle est dédouanée en France, transport, carte grise avec taxe régionale et éventuel malus – et de la valeur qu’elle aura sur le marché français après réparation. La différence représente votre budget maximal ; le calculateur la convertit en enchère en dollars."
+      },
+      {
+        "p": "N’oubliez pas le taux de change : entre le jour de l’enchère et le virement, le dollar peut bouger. Une marge de quelques pour cent évite les mauvaises surprises, tout comme une réserve pour les réparations et les frais d’homologation."
+      },
+      {
+        "h2": "Combien de temps faut-il compter ?"
+      },
+      {
+        "p": "Entre l’enchère gagnée et la voiture au port européen, il faut en général 4 à 8 semaines. Le paiement et l’enlèvement prennent 1 à 2 semaines, le transport jusqu’au port et le chargement 1 à 3 semaines, la traversée 2 à 5 semaines selon le port de départ et celui d’arrivée. Il faut ensuite ajouter le dédouanement, la livraison chez vous et la procédure d’immatriculation en France."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Peut-on annuler après avoir remporté l’enchère ?",
+        "a": "En général non, sans pénalité. Si vous ne payez pas, le dépôt de garantie est perdu et des frais de remise en vente peuvent s’ajouter."
+      },
+      {
+        "q": "Combien de temps entre l’enchère et la voiture en Europe ?",
+        "a": "Habituellement 4 à 8 semaines : 1 à 2 semaines pour le paiement et l’enlèvement, 1 à 3 semaines pour le transport et le chargement, 2 à 5 semaines de mer."
+      },
+      {
+        "q": "Un particulier peut-il acheter directement sur Copart ?",
+        "a": "Certains lots sont ouverts au public, mais beaucoup exigent une licence professionnelle. Pour un acheteur en France, un intermédiaire donne accès à presque tout le catalogue et gère l’export."
+      }
+    ]
+  },
+  {
+    "id": "salvage-title",
+    "slug": "voiture-salvage-usa-importer-et-immatriculer-en-france",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-12",
+    "minutes": 3,
+    "title": "Voiture « salvage » des USA : peut-on l’importer et l’immatriculer en France ?",
+    "metaTitle": "Voiture salvage des USA : ce qu’il faut savoir | CarImport.eu",
+    "description": "Titre salvage, rebuilt ou parts only : peut-on immatriculer en France une voiture accidentée achetée aux USA ? Risques, réparations et conseils avant d’enchérir.",
+    "lead": "La plupart des voitures vendues sur Copart et IAAI ont un titre salvage, et c’est précisément pour cela qu’elles sont si bon marché. En France, la mention salvage n’empêche pas en soi l’immatriculation, mais elle en dit long sur le risque que vous achetez.",
+    "blocks": [
+      {
+        "h2": "Les types de titres en bref"
+      },
+      {
+        "p": "Aux États-Unis, chaque voiture possède un titre de propriété (title) délivré par l’État. Quand un assureur déclare le véhicule économiquement irréparable, le titre reçoit une mention (brand) qui suit la voiture. Voici les principales :"
+      },
+      {
+        "ul": [
+          "Clean : aucune perte totale enregistrée",
+          "Salvage : déclarée en perte totale par un assureur (collision, inondation, vol retrouvé, grêle)",
+          "Rebuilt ou reconstructed : ancienne voiture salvage réparée puis réinspectée aux États-Unis",
+          "Certificate of destruction, parts only ou non-repairable : destinée aux pièces détachées ; à éviter si vous voulez immatriculer la voiture"
+        ]
+      },
+      {
+        "h2": "Une voiture salvage peut-elle être immatriculée en France ?"
+      },
+      {
+        "p": "Oui. Les pays de l’UE n’utilisent pas les mentions des titres américains. Ce qui compte, c’est que la voiture réparée passe la réception à titre isolé auprès de la DREAL et le contrôle technique, et qu’elle respecte les exigences européennes en matière d’éclairage et de sécurité. L’historique salvage peut en revanche peser sur la valeur de revente, et certains assureurs posent la question lors de la souscription."
+      },
+      {
+        "p": "Le titre reste néanmoins un document indispensable : c’est lui qui prouve la propriété et qui accompagne la voiture à l’export puis au dédouanement. Un titre de type parts only ou un certificate of destruction pose des problèmes à l’export et peut bloquer toute la procédure d’immatriculation."
+      },
+      {
+        "h2": "Où se cache le vrai risque"
+      },
+      {
+        "p": "Les photos montrent les dégâts visibles, pas ce qu’il y a derrière : châssis tordu, airbags déclenchés et leurs capteurs, électronique noyée, pièces manquantes. Les voitures inondées sont les plus risquées : la corrosion et les pannes électriques apparaissent souvent plusieurs semaines plus tard, quand la voiture est déjà en France."
+      },
+      {
+        "table": {
+          "head": [
+            "Type de dommage",
+            "Niveau de risque",
+            "À vérifier"
+          ],
+          "rows": [
+            [
+              "Avant ou arrière léger",
+              "Modéré",
+              "Longerons, radiateurs, capteurs d’aide à la conduite"
+            ],
+            [
+              "Grêle",
+              "Faible à modéré",
+              "Coût du débosselage, vitrages"
+            ],
+            [
+              "Choc latéral",
+              "Élevé",
+              "Montants, airbags rideaux, géométrie"
+            ],
+            [
+              "Inondation (flood)",
+              "Très élevé",
+              "Calculateurs, faisceaux, corrosion"
+            ],
+            [
+              "Vol retrouvé",
+              "Variable",
+              "Pièces manquantes, serrures, clés"
+            ]
+          ]
+        }
+      },
+      {
+        "tip": "Prévoyez un budget de réparation de 30 à 40 % du prix pour les voitures qui ne roulent pas, plus une réserve pour les dégâts cachés. Le calculateur propose ces montants automatiquement."
+      },
+      {
+        "h2": "Comment réduire le risque"
+      },
+      {
+        "ol": [
+          "Vérifiez l’historique du VIN (Carfax, AutoCheck) : accidents antérieurs, inondations, kilométrage.",
+          "Privilégiez les voitures endommagées uniquement à l’avant ou à l’arrière, sans déclenchement d’airbags.",
+          "Faites établir un devis par un carrossier qui connaît le modèle avant d’enchérir.",
+          "Vérifiez la disponibilité et le prix des pièces en France : certaines pièces américaines doivent être commandées outre-Atlantique.",
+          "Renseignez-vous sur les modifications nécessaires pour l’homologation (feux, compteur en km/h).",
+          "Gardez de la marge dans le budget : la voiture la moins chère est souvent le projet le plus coûteux."
+        ]
+      },
+      {
+        "h2": "Ce qui se passe après l’arrivée en France"
+      },
+      {
+        "p": "Une fois dédouanée, la voiture doit être réparée avant toute démarche d’homologation. Faites réaliser les travaux par un professionnel et conservez toutes les factures de pièces et de main-d’œuvre : elles prouvent la qualité de la remise en état et rassurent un futur acheteur. Le technicien chargé de la réception à titre isolé vérifiera l’identification du véhicule (VIN), l’éclairage, la sécurité et la conformité générale. Si la structure a été touchée, un contrôle de géométrie et un rapport d’expert sont vivement conseillés avant de passer au contrôle technique et de demander le certificat d’immatriculation à l’ANTS."
+      },
+      {
+        "h2": "Salvage ou clean : que choisir ?"
+      },
+      {
+        "p": "Une voiture clean coûte plus cher à l’achat mais réduit fortement l’incertitude, ce qui compte si vous voulez la revendre ou si vous n’avez pas de garagiste de confiance. Une voiture salvage peut être une bonne affaire pour un passionné capable d’évaluer les dégâts et d’effectuer les réparations lui-même. Dans les deux cas, les droits de douane et la TVA sont calculés de la même façon, sur le prix payé et le transport."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Le titre salvage change-t-il les droits de douane ?",
+        "a": "Non. Les droits et la TVA sont calculés sur le prix payé et les frais de transport, quel que soit le titre."
+      },
+      {
+        "q": "Un titre rebuilt est-il préférable ?",
+        "a": "Il montre que la voiture a été réparée et contrôlée aux États-Unis, mais la qualité de la réparation varie beaucoup. Inspectez-la comme n’importe quelle voiture accidentée."
+      },
+      {
+        "q": "Faut-il déclarer l’historique salvage à son assureur français ?",
+        "a": "Répondez honnêtement aux questions posées lors de la souscription. Certains assureurs demandent si le véhicule a subi un sinistre important ; une fausse déclaration peut poser problème en cas d’accident."
+      }
+    ]
+  }
+]

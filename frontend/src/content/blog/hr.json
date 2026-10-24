@@ -1,0 +1,305 @@
+[
+  {
+    "id": "total-cost",
+    "slug": "koliko-kosta-uvoz-auta-iz-amerike",
+    "category": "costs",
+    "origin": "USA",
+    "date": "2026-10-20",
+    "minutes": 4,
+    "title": "Koliko stvarno košta uvoz auta iz Amerike u Hrvatsku?",
+    "metaTitle": "Koliko košta uvoz auta iz Amerike? Izračun troškova | CarImport.eu",
+    "description": "Koliko košta uvoz auta iz Amerike u Hrvatsku: aukcijske naknade, prijevoz, brod, carina 10 %, PDV 25 %, luka, PPMV i registracija – s primjerom izračuna.",
+    "lead": "Cijena na Copartu ili IAAI-ju samo je početak. Dok automobil ne stoji registriran ispred vaše kuće, obično platite 1,6 do 2 puta više od iznosa za koji ste ga kupili na aukciji. U nastavku pokazujemo gdje odlazi svaki euro – stavku po stavku, s hrvatskim PDV-om od 25 %.",
+    "blocks": [
+      {
+        "h2": "Kratki odgovor"
+      },
+      {
+        "p": "Za tipičan osobni automobil kupljen na američkoj aukciji za 10.000 dolara računajte s ukupnim iznosom od otprilike 19.000 do 21.000 dolara do trenutka kada je auto u Hrvatskoj i spreman za registraciju – bez popravaka i bez PPMV-a. Najveće stavke nakon same cijene vozila su uvozni PDV, carina i prijevoz. Popravak oštećenog automobila dolazi povrh toga, kao i posebni porez na motorna vozila (PPMV) ako ga vaš automobil plaća."
+      },
+      {
+        "p": "Hrvatska ima jednu od najviših stopa PDV-a u Europskoj uniji – 25 %. Zato je kod uvoza iz SAD-a posebno važno točno znati od čega se sastoji porezna osnovica i u kojoj se luci auto ocarinjuje."
+      },
+      {
+        "h2": "1. Kupnja: ponuda i aukcijske naknade"
+      },
+      {
+        "p": "Copart i IAAI naplaćuju kupcu naknadu (buyer fee) koja raste s cijenom vozila, uz to i fiksne naknade za online licitiranje, izlaz s parkirališta (gate fee) i ekološku naknadu. Vozila s čistim (clean) i oštećenim (salvage) naslovom imaju različite tablice naknada. Ako licitirate preko brokera, dodajte i njegovu proviziju."
+      },
+      {
+        "ul": [
+          "Naknada kupca: ovisi o cijeni, kod auta od 10.000 dolara često 600 do 1.000 dolara",
+          "Naknada za virtualno licitiranje i gate fee: oko 100 do 200 dolara",
+          "Provizija brokera: obično 200 do 500 dolara po vozilu",
+          "Ležarina (storage): naplaćuje se po danu ako kasnite s plaćanjem ili preuzimanjem"
+        ]
+      },
+      {
+        "h2": "2. Prijevoz do izvozne luke"
+      },
+      {
+        "p": "Kamion odvozi automobil s aukcijskog parkirališta do izvozne luke – najčešće New Jersey, Savannah, Houston ili Los Angeles. Udaljenost je presudna: parkiralište blizu luke stoji nekoliko stotina dolara, prijevoz preko pola kontinenta više od 1.000 dolara. Automobil koji ne vozi treba viličar i vitlo, što donosi dodatnu naknadu."
+      },
+      {
+        "h2": "3. Pomorski prijevoz i osiguranje"
+      },
+      {
+        "p": "Zajednički kontejner (obično 3 do 4 automobila) najjeftinija je sigurna opcija: oko 1.000 do 1.600 dolara po autu s istočne obale SAD-a do europskih luka. RoRo prijevoz jeftiniji je za vozne automobile, ali je vozilo manje zaštićeno. Za hrvatske kupce zanimljive su jadranske luke Rijeka, Koper i Trst, ali i sjevernomorske luke poput Bremerhavena, ovisno o brodskim linijama. Pomorsko osiguranje iznosi oko 1,5 % vrijednosti automobila i ulazi u carinsku vrijednost."
+      },
+      {
+        "h2": "4. Carina"
+      },
+      {
+        "p": "Carina se obračunava na carinsku vrijednost, tj. CIF vrijednost: cijena, aukcijske naknade, prijevoz do granice EU-a i osiguranje. Za osobne automobile stopa iznosi 10 % (tarifna oznaka 8703), za pickupe 22 %, za motocikle 6 do 8 %. Automobili starije od 30 godina u originalnom stanju mogu kao kolekcionarska vozila biti oslobođeni carine."
+      },
+      {
+        "h2": "5. Uvozni PDV – u državi carinjenja"
+      },
+      {
+        "p": "PDV se obračunava na carinsku vrijednost uvećanu za carinu i troškove prijevoza do prvog odredišta u EU-u. Stopa je ona države u kojoj se automobil ocarinjuje – u Hrvatskoj 25 %, u susjednoj Sloveniji i Italiji 22 %. Upravo zato izbor luke može promijeniti konačni iznos za nekoliko stotina eura."
+      },
+      {
+        "h2": "6. Luka, dostava i registracija"
+      },
+      {
+        "p": "U europskoj luci plaćate lučke manipulativne troškove i istovar kontejnera (oko 400 do 500 eura) te carinskog posrednika (špeditera, oko 250 eura). Zatim automobil putuje do vaše adrese autotransporterom ili šlep-službom, a cijena ovisi o kilometrima. Na kraju slijede domaći troškovi: tehnički pregled i ispitivanje vozila u CVH, prijevodi dokumenata, registracija u MUP-u i – za većinu automobila – PPMV."
+      },
+      {
+        "h2": "Primjer: automobil od 10.000 dolara"
+      },
+      {
+        "table": {
+          "head": [
+            "Stavka",
+            "Iznos (USD)"
+          ],
+          "rows": [
+            [
+              "Pobjednička ponuda",
+              "10.000"
+            ],
+            [
+              "Aukcijske naknade i broker",
+              "1.200"
+            ],
+            [
+              "Prijevoz do luke u SAD-u",
+              "450"
+            ],
+            [
+              "Zajednički kontejner",
+              "1.200"
+            ],
+            [
+              "Pomorsko osiguranje",
+              "180"
+            ],
+            [
+              "Carinska vrijednost (CIF)",
+              "13.030"
+            ],
+            [
+              "Carina 10 %",
+              "1.303"
+            ],
+            [
+              "PDV 25 % na (CIF + carina + ~1.000 luka i dostava)",
+              "3.833"
+            ],
+            [
+              "Luka, istovar i špediter",
+              "750"
+            ],
+            [
+              "Dostava do vaše adrese",
+              "500"
+            ],
+            [
+              "Ukupno prije PPMV-a i registracije",
+              "≈ 19.400"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Osnovica za PDV u ovom primjeru iznosi 13.030 + 1.303 + oko 1.000 dolara troškova luke i dostave, dakle 15.333 dolara, a 25 % od toga je 3.833 dolara. Brojevi su zaokruženi i služe za orijentaciju. Tečaj dolara prema euru, država carinjenja, vrsta automobila i vaša adresa mijenjaju rezultat – kalkulator ga izračunava za vaš konkretan automobil, u eurima."
+      },
+      {
+        "h2": "PPMV – posebni porez na motorna vozila"
+      },
+      {
+        "p": "Kod prve registracije u Hrvatskoj većina osobnih automobila plaća PPMV (posebni porez na motorna vozila). Njegov iznos ovisi o nacionalnim pravilima i podacima o vozilu, a ne o tome gdje ste auto kupili, pa ga ovdje ne procjenjujemo napamet. Kalkulator CarImport.eu prikazuje PPMV zasebno u izračunu, tako da odmah vidite koliko on mijenja ukupnu cijenu."
+      },
+      {
+        "tip": "Planirajte rezervu od 10 do 15 % za iznenađenja: ležarinu, zakašnjeli brod, carinski pregled ili skrivena oštećenja. Kalkulator te rizike prikazuje u pesimističnom scenariju."
+      },
+      {
+        "h2": "Kako platiti manje"
+      },
+      {
+        "ol": [
+          "Kupujte blizu izvozne luke kako biste uštedjeli na prijevozu unutar SAD-a.",
+          "Birajte zajednički kontejner umjesto ekskluzivnog.",
+          "Usporedite luke carinjenja: niži PDV u Sloveniji ili Italiji (22 %) ponekad nadmaši dodatni cestovni prijevoz.",
+          "Provjerite pragove aukcijskih naknada – nekoliko dolara iznad praga može povećati naknadu.",
+          "Aukciju platite u dolarima uz povoljan tečaj i nisku maržu banke ili mjenjačnice."
+        ]
+      },
+      {
+        "p": "Kalkulator uspoređuje svih 43 luke EU-a od vrata do vrata: vi upisujete samo svoju adresu, a on izračunava kilometre, lučke troškove, PDV svake države i bira najpovoljniju varijantu."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Mogu li kao privatna osoba dobiti povrat uvoznog PDV-a?",
+        "a": "Ne. Privatna osoba plaća uvozni PDV kao konačni trošak. Tvrtka u sustavu PDV-a u pravilu ga može odbiti kao pretporez ili koristiti carinski postupak 4200 kada automobil odmah ide u drugu državu EU-a."
+      },
+      {
+        "q": "Plaća li se PDV i na troškove prijevoza?",
+        "a": "Da. Osnovica za PDV uključuje carinsku vrijednost, carinu i troškove prijevoza do prvog odredišta u EU-u."
+      },
+      {
+        "q": "Koliko košta PPMV za uvezeni auto?",
+        "a": "Ovisi o podacima o vozilu i važećim nacionalnim pravilima. Kalkulator ga prikazuje kao zasebnu stavku za vaš automobil."
+      }
+    ]
+  },
+  {
+    "id": "copart-iaai",
+    "slug": "kako-kupiti-auto-na-copartu-ili-iaai-iz-hrvatske",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-16",
+    "minutes": 3,
+    "title": "Kako kupiti auto na Copartu ili IAAI-ju iz Hrvatske",
+    "metaTitle": "Kupnja auta na Copartu i IAAI-ju iz Hrvatske – vodič | CarImport.eu",
+    "description": "Kako kupiti auto na Copartu ili IAAI-ju iz Hrvatske: registracija, depozit, broker, licitiranje, rokovi plaćanja i ležarina – korak po korak.",
+    "lead": "Copart i IAAI svaki mjesec prodaju stotine tisuća automobila, a velik dio njih završi kod kupaca u Europi. Objašnjavamo kako licitiranje iz Hrvatske funkcionira u praksi, koje naknade postoje i koje rokove nikako ne smijete propustiti.",
+    "blocks": [
+      {
+        "h2": "Trebate li brokera?"
+      },
+      {
+        "p": "Mnoga vozila na američkim aukcijama mogu kupiti samo trgovci s licencom, a neke savezne države ograničavaju tko smije kupovati salvage vozila. Zato većina europskih kupaca licitira preko registriranog brokera (zovu ga i agent ili uvoznik), koji ponude daje u vaše ime na svoju licencu. Broker naplaćuje fiksnu proviziju po automobilu, a često nudi i organizaciju prijevoza do luke i pomorskog prijevoza."
+      },
+      {
+        "p": "Pri izboru brokera gledajte transparentnost naknada, iskustvo s izvozom u Europu i to dobivate li sve račune i dokumente koje kasnije trebate za carinu u Hrvatskoj ili u luci carinjenja. Broker koji ne želi pokazati račun aukcije nije dobar znak."
+      },
+      {
+        "h2": "Korak po korak"
+      },
+      {
+        "ol": [
+          "Odaberite brokera i potpišite ugovor; dobivate pristup licitiranju preko njegova računa.",
+          "Uplatite sigurnosni depozit – obično oko 10 % vaše maksimalne ponude.",
+          "Pronađite automobil, pročitajte izvješće o stanju i provjerite povijest po VIN-u (Carfax, AutoCheck).",
+          "Odredite maksimalnu ponudu uključujući sve naknade i poreze – ne samo cijenu na čekiću.",
+          "Licitirajte u preliminarnom krugu ili uživo; najviša ponuda pobjeđuje ako dosegne minimalnu cijenu prodavatelja.",
+          "Platite u roku (obično 2 do 3 radna dana) bankovnom doznakom u dolarima.",
+          "Brzo organizirajte preuzimanje – besplatna ležarina traje kratko, zatim se naplaćuje dnevna naknada.",
+          "Automobil se prevozi do luke, a naslov (title) ide izvozniku radi carinjenja izvoza."
+        ]
+      },
+      {
+        "h2": "Kako čitati oglas"
+      },
+      {
+        "ul": [
+          "Vrsta naslova: clean, salvage, rebuilt ili certificate of destruction / parts only",
+          "Primarno i sekundarno oštećenje, zračni jastuci, stanje kilometraže (odometer)",
+          "Oznake Run and Drive, Engine Starts, Enhanced Vehicles – provjerene samo pri prijemu vozila, nisu jamstvo",
+          "Ključevi, lokacija parkirališta i njegova udaljenost od izvozne luke",
+          "Vrsta prodavatelja: osiguravajuće društvo, trgovac, rent-a-car tvrtka"
+        ]
+      },
+      {
+        "tip": "„Run and Drive” znači da se automobil pri prijemu upalio i pomaknuo naprijed. To ne znači da je ispravan za vožnju – nakon dolaska u Hrvatsku planirajte temeljit pregled u servisu prije tehničkog pregleda."
+      },
+      {
+        "h2": "Naknade koje iznenade nove kupce"
+      },
+      {
+        "p": "Osim naknade kupca, aukcije dodaju naknade za internetsko licitiranje, izlaz s parkirališta, ekološku naknadu i naknadu za obradu naslova. Kašnjenje s plaćanjem i preuzimanjem dodatno se naplaćuje, a ako ne platite, slijedi i naknada za ponovno izlaganje vozila (relisting). Broker dodaje svoju proviziju i ponekad naknadu za dokumente i izvoz."
+      },
+      {
+        "table": {
+          "head": [
+            "Naknada",
+            "Okvirni iznos",
+            "Kada se plaća"
+          ],
+          "rows": [
+            [
+              "Naknada kupca (buyer fee)",
+              "600–1.000 USD kod auta od 10.000 USD",
+              "Uz cijenu vozila"
+            ],
+            [
+              "Virtualno licitiranje i gate fee",
+              "100–200 USD",
+              "Uz cijenu vozila"
+            ],
+            [
+              "Provizija brokera",
+              "200–500 USD",
+              "Po kupljenom vozilu"
+            ],
+            [
+              "Ležarina",
+              "Po danu",
+              "Nakon isteka besplatnih dana"
+            ],
+            [
+              "Kazna za kašnjenje / relisting",
+              "Ovisi o aukciji",
+              "Ako ne platite na vrijeme"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Koliko ponuditi"
+      },
+      {
+        "p": "Računajte unatrag. Krenite od cijene koju automobil smije imati kada stoji ispred vaše kuće – uključujući carinu, PDV od 25 % ako carinite u Hrvatskoj, prijevoz, PPMV i registraciju – i od vrijednosti koju će imati na hrvatskom tržištu nakon popravka. Razlika je vaš maksimum, a kalkulator ga pretvara u ponudu u dolarima."
+      },
+      {
+        "p": "Pritom ne zaboravite tečaj: aukciju plaćate u dolarima, a svi troškovi u Hrvatskoj su u eurima. Nekoliko postotaka razlike u tečaju ili bankovnoj marži kod skupljeg automobila znači stotine eura."
+      },
+      {
+        "h2": "Dokumenti koje trebate sačuvati"
+      },
+      {
+        "p": "Za carinu i kasniju registraciju u Hrvatskoj trebat će vam cijeli papirnati trag kupnje. Carinska vrijednost temelji se na stvarno plaćenoj cijeni, pa carina može tražiti dokaz ako joj se iznos čini preniskim. Zato od brokera tražite sve dokumente u elektroničkom obliku i čuvajte ih dok automobil ne dobije hrvatske tablice."
+      },
+      {
+        "ul": [
+          "Račun aukcije (invoice) s cijenom i svim naknadama",
+          "Potvrda o bankovnoj uplati u dolarima",
+          "Naslov (title) ili izvozni certifikat i račun brokera",
+          "Teretnica (bill of lading) i račun za pomorski prijevoz"
+        ]
+      },
+      {
+        "h2": "Koliko traje cijeli postupak"
+      },
+      {
+        "p": "Od pobjede na aukciji do automobila u europskoj luci obično prođe 4 do 8 tjedana. Plaćanje i preuzimanje traju 1 do 2 tjedna, prijevoz do luke i ukrcaj 1 do 3 tjedna, a plovidba 2 do 5 tjedana, ovisno o tome ide li brod u Bremerhaven ili u jadranske luke poput Rijeke ili Kopra. Kalkulator uspoređuje svih 43 luke EU-a od vrata do vrata – upisujete samo adresu."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Mogu li odustati nakon što pobijedim na aukciji?",
+        "a": "U pravilu ne bez posljedica. Ako ne platite, gubite depozit, a mogu se naplatiti i naknade za ponovno izlaganje vozila."
+      },
+      {
+        "q": "Koliko traje od pobjede na aukciji do auta u Europi?",
+        "a": "Obično 4 do 8 tjedana: plaćanje i preuzimanje 1 do 2 tjedna, prijevoz do luke i ukrcaj 1 do 3 tjedna, plovidba 2 do 5 tjedana."
+      },
+      {
+        "q": "Mogu li licitirati na Copartu bez brokera?",
+        "a": "Za dio vozila da, ali mnoga zahtijevaju trgovačku licencu. Zato većina kupaca iz Hrvatske koristi registriranog brokera."
+      }
+    ]
+  }
+]
