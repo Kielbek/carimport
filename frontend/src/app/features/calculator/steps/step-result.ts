@@ -110,6 +110,9 @@ import { DEPARTURE_PORTS } from '../calculator.options';
           </tbody>
         </table>
         <p class="mt-3 text-xs text-muted">{{ 'result.freeBase' | translate }}</p>
+        @if (r.taxes.customsFxDate) {
+          <p class="mt-1 text-xs text-muted">{{ 'result.customsFx' | translate: { date: r.taxes.customsFxDate } }}</p>
+        }
       </section>
 
       <!-- locked: everything else, by name only -->

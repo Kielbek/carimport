@@ -270,7 +270,8 @@
     "freeBase": "Berechnet auf den Zollwert (Preis, Auktionsgebühren, Transport in die EU und Versicherung) zum heutigen Kurs.",
     "lockedListTitle": "Ebenfalls berechnet – im Bericht",
     "riskTag": "Risiko",
-    "moreLocked": "+ {{count}} weitere Positionen, inkl. versteckter Kosten"
+    "moreLocked": "+ {{count}} weitere Positionen, inkl. versteckter Kosten",
+    "customsFx": "Zoll und Einfuhrumsatzsteuer werden vom Zollwert berechnet, umgerechnet zum Zollkurs des Monats – Kurs vom {{date}} (vorletzter Mittwoch des Vormonats)."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exklusiver Container",

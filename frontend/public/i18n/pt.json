@@ -270,7 +270,8 @@
     "freeBase": "Calculado sobre o valor aduaneiro (preço, taxas de leilão, transporte para a UE e seguro) à taxa de câmbio de hoje.",
     "lockedListTitle": "Também calculado – no relatório",
     "riskTag": "risco",
-    "moreLocked": "+ {{count}} rubricas adicionais, incl. custos ocultos"
+    "moreLocked": "+ {{count}} rubricas adicionais, incl. custos ocultos",
+    "customsFx": "Os direitos e o IVA são calculados sobre o valor aduaneiro convertido à taxa de câmbio aduaneira do mês – a de {{date}} (penúltima quarta-feira do mês anterior)."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Contentor exclusivo",

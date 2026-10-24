@@ -270,7 +270,8 @@
     "freeBase": "Liczone od wartości celnej (cena, opłaty aukcyjne, transport do UE i ubezpieczenie) po dzisiejszym kursie.",
     "lockedListTitle": "Policzyliśmy też – w raporcie",
     "riskTag": "ryzyko",
-    "moreLocked": "+ {{count}} kolejnych pozycji, w tym koszty ukryte"
+    "moreLocked": "+ {{count}} kolejnych pozycji, w tym koszty ukryte",
+    "customsFx": "Cło i VAT liczymy od wartości celnej przeliczonej po kursie celnym obowiązującym w tym miesiącu – z dnia {{date}} (przedostatnia środa poprzedniego miesiąca)."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Kontener na wyłączność",

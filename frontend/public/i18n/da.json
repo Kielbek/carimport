@@ -270,7 +270,8 @@
     "freeBase": "Beregnet af toldværdien (pris, auktionsgebyrer, transport til EU og forsikring) til dagens valutakurs.",
     "lockedListTitle": "Også beregnet – i rapporten",
     "riskTag": "risiko",
-    "moreLocked": "+ {{count}} poster mere, inkl. skjulte omkostninger"
+    "moreLocked": "+ {{count}} poster mere, inkl. skjulte omkostninger",
+    "customsFx": "Told og moms beregnes af toldværdien omregnet til månedens toldkurs – kursen fra {{date}} (næstsidste onsdag i forrige måned)."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Egen container",

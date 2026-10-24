@@ -270,7 +270,8 @@
     "freeBase": "Calcolato sul valore in dogana (prezzo, commissioni d’asta, trasporto nell’UE e assicurazione) al cambio di oggi.",
     "lockedListTitle": "Calcolato anche – nel report",
     "riskTag": "rischio",
-    "moreLocked": "+ altre {{count}} voci, inclusi i costi nascosti"
+    "moreLocked": "+ altre {{count}} voci, inclusi i costi nascosti",
+    "customsFx": "Dazio e IVA sono calcolati sul valore in dogana convertito al tasso di cambio doganale del mese, quello del {{date}} (penultimo mercoledì del mese precedente)."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Container esclusivo",

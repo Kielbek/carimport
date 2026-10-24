@@ -38,8 +38,10 @@ public class CustomsDutyStep implements CalculationStep {
 
         Money duty = ctx.roundTax(ctx.customsValue().percent(tariff.getDutyRate()), ctx.clearanceTax());
         ctx.duty(duty);
-        ctx.add(CostLine.tax(CODE, ctx.customsValue(), tariff.getDutyRate(), duty,
-                Map.of("hsCode", tariff.getHsCode())));
+        // the date is shown only when the month's customs rates were loaded, not when today's stood in for them
+        Map<String, String> params = ctx.fx().customs() == null ? Map.of("hsCode", tariff.getHsCode())
+                : Map.of("hsCode", tariff.getHsCode(), "customsFxDate", ctx.fx().customs().effectiveDate().toString());
+        ctx.add(CostLine.tax(CODE, ctx.customsValue(), tariff.getDutyRate(), duty, params));
     }
 
     private static CustomsTariff classify(CalculationContext ctx, boolean historic) {

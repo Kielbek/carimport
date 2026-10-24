@@ -270,7 +270,8 @@
     "freeBase": "Laskettu tullausarvosta (hinta, huutokauppamaksut, kuljetus EU:hun ja vakuutus) päivän valuuttakurssilla.",
     "lockedListTitle": "Lasketaan myös – raportissa",
     "riskTag": "riski",
-    "moreLocked": "+ {{count}} muuta erää, mm. piilokulut"
+    "moreLocked": "+ {{count}} muuta erää, mm. piilokulut",
+    "customsFx": "Tulli ja arvonlisävero lasketaan tullausarvosta kuukauden tullikurssilla – {{date}} kurssilla (edellisen kuun toiseksi viimeinen keskiviikko)."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Oma kontti",

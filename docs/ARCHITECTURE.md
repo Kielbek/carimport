@@ -139,6 +139,14 @@ tylko `TaxSummary` i dopłatę względem najtańszego (`extraVsBest`). Reguła, 
 cło jest takie samo w całej UE; VAT płaci się w kraju portu według jego stawki (używane auto nie płaci VAT drugi raz
 w kraju rejestracji); podatki kraju rejestracji płaci się w kraju zawsze, niezależnie od portu.
 
+**Kurs celny** (art. 53 UKC, art. 146 rozp. 2015/2447): wartość celną przeliczamy po kursie obowiązującym w danym
+miesiącu – z przedostatniej środy poprzedniego miesiąca (`FxRates.customsRateDay`). `ExchangeRateService.latest()`
+dokłada do bieżących kursów migawkę `customs` z tego dnia, `FxSyncJob.ensureCustomsRateDay` dociąga brakującą tabelę
+z archiwum NBP (przy starcie i po każdej synchronizacji). Zakup i koszty płacone dziś zostają po bieżącym kursie,
+a scenariusz z przesunięciem kursu nie rusza kursu celnego. Dla odprawy w strefie euro urzędowym źródłem jest EBC –
+używamy kursów krzyżowych NBP z tego samego dnia (różnica rzędu ułamka procenta). Bez historii kursów (brak sieci)
+wartość celna liczy się po bieżącym kursie, a interfejs nie pokazuje daty kursu celnego.
+
 **Podatek rejestracyjny kraju rejestracji** (`RegistrationTaxStep`, wzory w `RegistrationTaxes`) – trzy grupy krajów:
 
 | Grupa | Kraje | Co robi kalkulator |
@@ -463,7 +471,7 @@ pozostaje PENDING, poprawny webhook → READY i PDF 30 KB, duplikat zdarzenia �
   (`termsAccepted`) i zapisywana przy zamówieniu z datą i wersją (`terms_accepted_at`, `terms_version`).
 * **Dalej**: CSP, Spring Security dla panelu admina (zarządzanie taryfami + `@CacheEvict` cache `tariffs`),
   powiadomienia partnerów o leadach.
-* **Rozszerzenia silnika**: wzory dla krajów z grupy „oficjalny kalkulator” (HU, HR, GR, …), dopłata wagowa FR; kurs celny UE
-  (miesięczny, przedostatnia środa EBC) jako osobny `RateType`; panel B2B dla partnerów z rozliczeniem prowizji.
+* **Rozszerzenia silnika**: wzory dla krajów z grupy „oficjalny kalkulator” (HU, HR, GR, …); kursy EBC dla odpraw
+  w strefie euro; panel B2B dla partnerów z rozliczeniem prowizji.
 * **SEO – dalej**: blog/poradniki per kraj i marka (long tail: „import Toyoty z USA”), strony docelowe per kraj
   pochodzenia z prerenderowanym przykładem wyceny, Search Console + monitoring Core Web Vitals.

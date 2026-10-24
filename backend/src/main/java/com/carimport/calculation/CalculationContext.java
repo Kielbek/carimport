@@ -90,6 +90,18 @@ public final class CalculationContext {
                 .reduce(zero(), Money::plus);
     }
 
+    /**
+     * The CIF components converted at the customs rate of the month (Art. 53 UCC) instead of today's: each line's
+     * amount in its original currency, then into the clearance currency.
+     */
+    public Money sumOfCifComponentsAtCustomsRate() {
+        FxRates customs = fx.forCustoms();
+        return lines.stream()
+                .filter(l -> cifLineCodes.contains(l.code()))
+                .map(l -> customs.convert(l.original(), baseCurrency()))
+                .reduce(zero(), Money::plus);
+    }
+
     public BigDecimal pick(BigDecimal min, BigDecimal max) {
         return scenario.pick(min, max);
     }

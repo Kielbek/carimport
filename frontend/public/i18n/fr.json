@@ -270,7 +270,8 @@
     "freeBase": "Calculé sur la valeur en douane (prix, frais d’enchères, transport vers l’UE et assurance) au taux de change du jour.",
     "lockedListTitle": "Également calculé – dans le rapport",
     "riskTag": "risque",
-    "moreLocked": "+ {{count}} postes supplémentaires, dont les coûts cachés"
+    "moreLocked": "+ {{count}} postes supplémentaires, dont les coûts cachés",
+    "customsFx": "Les droits et la TVA sont calculés sur la valeur en douane convertie au taux de change douanier du mois – taux du {{date}} (avant-dernier mercredi du mois précédent)."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Conteneur exclusif",

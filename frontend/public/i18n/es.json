@@ -270,7 +270,8 @@
     "freeBase": "Calculado sobre el valor en aduana (precio, tasas de subasta, transporte a la UE y seguro) al tipo de cambio de hoy.",
     "lockedListTitle": "También calculado – en el informe",
     "riskTag": "riesgo",
-    "moreLocked": "+ {{count}} partidas más, incl. costes ocultos"
+    "moreLocked": "+ {{count}} partidas más, incl. costes ocultos",
+    "customsFx": "El arancel y el IVA se calculan sobre el valor en aduana convertido al tipo de cambio aduanero del mes, el del {{date}} (penúltimo miércoles del mes anterior)."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Contenedor exclusivo",

@@ -270,7 +270,8 @@
     "freeBase": "Izračunano od carinske vrednosti (cena, dražbene provizije, prevoz v EU in zavarovanje) po današnjem tečaju.",
     "lockedListTitle": "Izračunano tudi – v poročilu",
     "riskTag": "tveganje",
-    "moreLocked": "+ še {{count}} postavk, vključno s skritimi stroški"
+    "moreLocked": "+ še {{count}} postavk, vključno s skritimi stroški",
+    "customsFx": "Carino in DDV izračunamo od carinske vrednosti, preračunane po carinskem tečaju meseca – tečaju z dne {{date}} (predzadnja sreda prejšnjega meseca)."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Lasten zabojnik",
