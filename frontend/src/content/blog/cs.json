@@ -566,5 +566,144 @@
         "a": "Ano. DPH zaplatíte v Německu podle německé sazby a auto pak přihlásíte v Česku s celními doklady."
       }
     ]
+  },
+  {
+    "id": "registration",
+    "slug": "registrace-auta-z-usa-doklady-a-postup",
+    "category": "registration",
+    "origin": null,
+    "date": "2026-10-04",
+    "minutes": 3,
+    "title": "Registrace auta z USA v Česku – doklady a postup krok za krokem",
+    "metaTitle": "Registrace auta z USA – doklady, STK a postup | CarImport.eu",
+    "description": "Registrace auta z USA v Česku: potřebné doklady, technické úpravy osvětlení, STK – evidenční kontrola, schválení technické způsobilosti a registr vozidel.",
+    "lead": "Proclením je hotová teprve polovina práce. Než auto z USA dostane české značky, musí splnit evropské technické požadavky, projít STK a vy musíte dát dohromady sadu dokladů – většinu z nich se soudním překladem. Tady je celá cesta v pořadí, v jakém ji projdete.",
+    "blocks": [
+      {
+        "h2": "Pořadí kroků"
+      },
+      {
+        "ol": [
+          "Proclení v přístavu: zaplacení cla a DPH (v Česku nebo v zemi proclení).",
+          "Soudní překlady titulu, faktury a dalších cizojazyčných dokladů.",
+          "Technické úpravy – především osvětlení a tachometr.",
+          "Individuální schválení technické způsobilosti a STK – evidenční kontrola a technická prohlídka.",
+          "Povinné ručení – nutné ještě před jízdou po silnici.",
+          "Žádost o registraci v registru vozidel na obecním úřadě obce s rozšířenou působností (ORP)."
+        ]
+      },
+      {
+        "h2": "Doklady, které budete potřebovat"
+      },
+      {
+        "table": {
+          "head": [
+            "Doklad",
+            "K čemu",
+            "Poznámka"
+          ],
+          "rows": [
+            [
+              "Titul (title) nebo vývozní osvědčení",
+              "doklad o vlastnictví a údajích auta",
+              "soudní překlad"
+            ],
+            [
+              "Kupní faktura / potvrzení z aukce",
+              "doklad o nabytí a ceně",
+              "soudní překlad"
+            ],
+            [
+              "Celní prohlášení",
+              "doklad o zaplacení cla a DPH",
+              "od celního deklaranta"
+            ],
+            [
+              "Konosament (bill of lading)",
+              "doklad o přepravě",
+              "hodí se při proclení"
+            ],
+            [
+              "Protokol z STK a doklad o schválení",
+              "technická způsobilost",
+              "ze stanice technické kontroly"
+            ],
+            [
+              "Občanský průkaz, zelená karta",
+              "totožnost a pojištění",
+              "–"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Technické úpravy amerických aut"
+      },
+      {
+        "p": "Americká auta obvykle potřebují upravit osvětlení: červené zadní blinkry a boční obrysová světla nesplňují předpisy EU a světlomety mohou vyžadovat jiné rozložení potkávacích světel. Tachometr musí ukazovat km/h a zadní mlhové světlo je povinné. Auta z Japonska mají volant vpravo; v Česku je lze zaregistrovat, obvykle po seřízení nebo výměně světlometů."
+      },
+      {
+        "p": "Cena úprav hodně závisí na modelu. U některých aut stačí vyměnit žárovky a kryty, u jiných je potřeba přeprogramovat řídicí jednotky nebo vyměnit celé svítilny. Zkušený servis zná typická řešení a předem vám řekne, kolik to bude stát."
+      },
+      {
+        "tip": "Než auto koupíte, požádejte servis o seznam nutných úprav – u některých modelů stojí přestavba mnohem víc než u jiných."
+      },
+      {
+        "h2": "Schválení a STK – evidenční kontrola"
+      },
+      {
+        "p": "Auto bez evropského typového schválení prochází individuálním schválením technické způsobilosti a na stanici technické kontroly evidenční kontrolou spolu s technickou prohlídkou. Technik ověřuje identifikaci (VIN), osvětlení, brzdy, emise a bezpečnostní výbavu a potvrzuje technické údaje potřebné pro zápis do registru. Tento krok je nejlepší naplánovat se servisem, který zná dovezená auta a ví, co STK vyžaduje. Vezměte s sebou kompletní přeložené doklady a celní prohlášení; po větší opravě se hodí i dokumentace opravy a faktury za díly."
+      },
+      {
+        "h2": "Registrace v registru vozidel"
+      },
+      {
+        "p": "S protokolem z STK, dokladem o schválení a celními doklady podáte žádost v registru vozidel na obecním úřadě obce s rozšířenou působností. Česko nemá zvláštní registrační daň – platíte správní poplatky za zápis, registrační značky a osvědčení o registraci podle platného sazebníku. Kalkulačka tyto položky zahrne do výsledku spolu s překlady a STK."
+      },
+      {
+        "h2": "Jak dostat auto z přístavu domů"
+      },
+      {
+        "p": "Auto přímo z kontejneru nemá české značky ani platnou STK, takže nejjednodušší je odtahovka z přístavu domů nebo rovnou do servisu. Pokud je auto pojízdné, lze uvažovat o převozních značkách s krátkodobým pojištěním, ale vyžaduje to další návštěvu úřadu a u havarovaného auta to nedává smysl. Kalkulačka ocení dovoz odtahovkou podle vzdálenosti od zvoleného přístavu."
+      },
+      {
+        "h2": "Jak dlouho registrace trvá?"
+      },
+      {
+        "p": "Při kompletních dokladech zabere samotná formální část obvykle několik týdnů: soudní překlady pár dní, úpravy od jednoho dne po několik týdnů (podle dostupnosti dílů), schválení a STK zpravidla několik dní až týden a registrace na úřadě ORP většinou jednu návštěvu, pokud je vše v pořádku. Nejvíc času se obvykle ztratí opravou a čekáním na díly z USA. Pokud auto potřebujete k určitému datu, plánujte s rezervou."
+      },
+      {
+        "h2": "Auto proclené v jiné zemi EU"
+      },
+      {
+        "p": "Pokud jste auto proclili například v Hamburku nebo Bremerhavenu, DPH jste už zaplatili v Německu a v Česku ho znovu neplatíte. K registraci ale potřebujete celní doklady z německého celního úřadu, případně s překladem. Postup na STK i v registru vozidel je jinak stejný jako u auta procleného v Česku."
+      },
+      {
+        "h2": "Nejčastější problémy"
+      },
+      {
+        "ul": [
+          "Chybějící soudní překlad některého dokladu – úřad ho nepřijme",
+          "Nečitelné nebo neshodné VIN po opravě",
+          "Osvětlení v americké verzi, které na STK neprojde",
+          "Neúplné celní doklady při proclení v jiné zemi EU",
+          "Podcenění času potřebného na díly a úpravy"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Potřebuji prohlášení o shodě (CoC)?",
+        "a": "Auta vyrobená pro trh USA nebo Japonska evropské CoC nemají. Registrují se na základě individuálního schválení technické způsobilosti a STK."
+      },
+      {
+        "q": "Mohu z přístavu dojet autem domů?",
+        "a": "Jen na převozní značky s pojištěním a jen pokud je auto pojízdné. Jinak použijte odtahovku nebo autopřepravník."
+      },
+      {
+        "q": "Platí se v Česku při registraci dovezeného auta daň?",
+        "a": "Zvláštní registrační daň Česko nemá. Platíte clo a DPH při proclení a správní poplatky při registraci."
+      }
+    ]
   }
 ]
