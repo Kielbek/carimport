@@ -271,7 +271,8 @@
     "lockedListTitle": "Lasketaan myös – raportissa",
     "riskTag": "riski",
     "moreLocked": "+ {{count}} muuta erää, mm. piilokulut",
-    "customsFx": "Tulli ja arvonlisävero lasketaan tullausarvosta kuukauden tullikurssilla – {{date}} kurssilla (edellisen kuun toiseksi viimeinen keskiviikko)."
+    "customsFx": "Tulli ja arvonlisävero lasketaan tullausarvosta kuukauden tullikurssilla – {{date}} kurssilla (edellisen kuun toiseksi viimeinen keskiviikko).",
+    "sample": "Katso esimerkkiraportti (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Oma kontti",

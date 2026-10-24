@@ -271,7 +271,8 @@
     "lockedListTitle": "Också beräknat – i rapporten",
     "riskTag": "risk",
     "moreLocked": "+ {{count}} poster till, inkl. dolda kostnader",
-    "customsFx": "Tull och moms beräknas på tullvärdet omräknat till månadens tullkurs – kursen den {{date}} (näst sista onsdagen i föregående månad)."
+    "customsFx": "Tull och moms beräknas på tullvärdet omräknat till månadens tullkurs – kursen den {{date}} (näst sista onsdagen i föregående månad).",
+    "sample": "Se en exempelrapport (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Egen container",

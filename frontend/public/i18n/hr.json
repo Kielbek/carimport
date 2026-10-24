@@ -271,7 +271,8 @@
     "lockedListTitle": "Izračunali smo i – u izvješću",
     "riskTag": "rizik",
     "moreLocked": "+ još {{count}} stavki, uključujući skrivene troškove",
-    "customsFx": "Carina i PDV računaju se od carinske vrijednosti preračunate po carinskom tečaju mjeseca – tečaju od {{date}} (pretposljednja srijeda prethodnog mjeseca)."
+    "customsFx": "Carina i PDV računaju se od carinske vrijednosti preračunate po carinskom tečaju mjeseca – tečaju od {{date}} (pretposljednja srijeda prethodnog mjeseca).",
+    "sample": "Pogledajte primjer izvješća (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Vlastiti kontejner",

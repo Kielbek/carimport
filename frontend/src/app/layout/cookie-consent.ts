@@ -1,6 +1,7 @@
 import { Component, afterNextRender, computed, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
+import { AnalyticsService } from '../core/analytics/analytics.service';
 import { LanguageService } from '../core/i18n/language.service';
 import { pathFor } from '../core/routing/paths';
 
@@ -32,6 +33,7 @@ export type Consent = 'all' | 'necessary';
 })
 export class CookieConsent {
   private readonly lang = inject(LanguageService);
+  private readonly analytics = inject(AnalyticsService);
   protected readonly visible = signal(false);
   protected readonly privacy = computed(() => pathFor('privacy', this.lang.current()));
 
@@ -39,6 +41,7 @@ export class CookieConsent {
     afterNextRender(() => {
       try {
         this.visible.set(!localStorage.getItem(KEY));
+        this.analytics.init();
       } catch {
         this.visible.set(true);
       }
@@ -52,6 +55,6 @@ export class CookieConsent {
       // not persisted; banner returns next visit
     }
     this.visible.set(false);
-    // analytics/marketing tags are loaded only after consent === 'all' (tag manager consent mode)
+    this.analytics.init(); // loads the analytics provider only when the choice was 'all'
   }
 }

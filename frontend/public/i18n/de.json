@@ -271,7 +271,8 @@
     "lockedListTitle": "Ebenfalls berechnet – im Bericht",
     "riskTag": "Risiko",
     "moreLocked": "+ {{count}} weitere Positionen, inkl. versteckter Kosten",
-    "customsFx": "Zoll und Einfuhrumsatzsteuer werden vom Zollwert berechnet, umgerechnet zum Zollkurs des Monats – Kurs vom {{date}} (vorletzter Mittwoch des Vormonats)."
+    "customsFx": "Zoll und Einfuhrumsatzsteuer werden vom Zollwert berechnet, umgerechnet zum Zollkurs des Monats – Kurs vom {{date}} (vorletzter Mittwoch des Vormonats).",
+    "sample": "Musterbericht ansehen (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exklusiver Container",

@@ -271,7 +271,8 @@
     "lockedListTitle": "Szintén kiszámolva – a jelentésben",
     "riskTag": "kockázat",
     "moreLocked": "+ további {{count}} tétel, köztük a rejtett költségek",
-    "customsFx": "A vámot és az áfát a hónap vámárfolyamán átszámított vámértékből számoljuk – a {{date}} napi árfolyamon (az előző hónap utolsó előtti szerdája)."
+    "customsFx": "A vámot és az áfát a hónap vámárfolyamán átszámított vámértékből számoljuk – a {{date}} napi árfolyamon (az előző hónap utolsó előtti szerdája).",
+    "sample": "Mintajelentés megtekintése (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Saját (kizárólagos) konténer",

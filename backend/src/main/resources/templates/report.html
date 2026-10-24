@@ -26,9 +26,12 @@
         .boxes .v { font-size: 15pt; font-weight: bold; }
         .warn { background: #fff8db; border-left: 3px solid #ffc000; padding: 1.5mm 3mm; margin: 1mm 0; }
         .disclaimer { margin-top: 8mm; font-size: 7.5pt; color: #6b6b72; }
+        .watermark { position: fixed; top: 62mm; left: 0; width: 100%; text-align: center; font-size: 96pt;
+            font-weight: bold; color: #fff0c2; transform: rotate(-18deg); z-index: -1; }
     </style>
 </head>
 <body>
+<div th:if="${sample}" class="watermark" th:text="#{report.sample}">SAMPLE</div>
 <h1 th:text="#{report.title}">Report</h1>
 
 <table class="meta">

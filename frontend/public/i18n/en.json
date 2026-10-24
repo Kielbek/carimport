@@ -271,7 +271,8 @@
     "lockedListTitle": "Also calculated – in the report",
     "riskTag": "risk",
     "moreLocked": "+ {{count}} more positions, incl. hidden costs",
-    "customsFx": "Duty and VAT are assessed on the customs value converted at the customs exchange rate of the month – the rate of {{date}} (penultimate Wednesday of the previous month)."
+    "customsFx": "Duty and VAT are assessed on the customs value converted at the customs exchange rate of the month – the rate of {{date}} (penultimate Wednesday of the previous month).",
+    "sample": "See a sample report (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exclusive container",

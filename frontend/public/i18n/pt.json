@@ -271,7 +271,8 @@
     "lockedListTitle": "Também calculado – no relatório",
     "riskTag": "risco",
     "moreLocked": "+ {{count}} rubricas adicionais, incl. custos ocultos",
-    "customsFx": "Os direitos e o IVA são calculados sobre o valor aduaneiro convertido à taxa de câmbio aduaneira do mês – a de {{date}} (penúltima quarta-feira do mês anterior)."
+    "customsFx": "Os direitos e o IVA são calculados sobre o valor aduaneiro convertido à taxa de câmbio aduaneira do mês – a de {{date}} (penúltima quarta-feira do mês anterior).",
+    "sample": "Ver um relatório de exemplo (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Contentor exclusivo",

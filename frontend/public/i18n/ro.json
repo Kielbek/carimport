@@ -271,7 +271,8 @@
     "lockedListTitle": "Calculat și – în raport",
     "riskTag": "risc",
     "moreLocked": "+ încă {{count}} poziții, inclusiv costuri ascunse",
-    "customsFx": "Taxa vamală și TVA se calculează la valoarea în vamă convertită la cursul vamal al lunii – cursul din {{date}} (penultima miercuri a lunii precedente)."
+    "customsFx": "Taxa vamală și TVA se calculează la valoarea în vamă convertită la cursul vamal al lunii – cursul din {{date}} (penultima miercuri a lunii precedente).",
+    "sample": "Vezi un raport exemplu (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Container exclusiv",

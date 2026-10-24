@@ -271,7 +271,8 @@
     "lockedListTitle": "Vypočítali sme aj – v reporte",
     "riskTag": "riziko",
     "moreLocked": "+ ďalších {{count}} položiek vrátane skrytých nákladov",
-    "customsFx": "Clo a DPH počítame z colnej hodnoty prepočítanej colným kurzom mesiaca – kurzom zo dňa {{date}} (predposledná streda predchádzajúceho mesiaca)."
+    "customsFx": "Clo a DPH počítame z colnej hodnoty prepočítanej colným kurzom mesiaca – kurzom zo dňa {{date}} (predposledná streda predchádzajúceho mesiaca).",
+    "sample": "Ukážka reportu (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Vlastný kontajner",

@@ -38,6 +38,22 @@ Trzy kontenery: PostgreSQL, API (`backend/Dockerfile`) i nginx ze statyczną str
 (Caddy, Traefik, load balancer, Cloudflare). CI (`.github/workflows/ci.yml`) uruchamia testy backendu, sprawdza
 kompletność tłumaczeń, buduje stronę i oba obrazy przy każdym pushu.
 
+### Przykładowe raporty i analityka
+
+`frontend/public/samples/report-{lang}.pdf` to raporty pokazowe (ten sam samochód sprowadzany do kraju danego języka,
+ze znakiem wodnym), linkowane przy przycisku zakupu. Po zmianie stawek lub szablonu wygeneruj je ponownie z działającą
+bazą:
+
+```bash
+cd backend && mvn package -DskipTests
+java -jar target/carimport-backend-0.1.0-SNAPSHOT.jar --spring.profiles.active=samples --samples.dir=../frontend/public/samples
+```
+
+Analityka konwersji (`core/analytics`) ładuje się dopiero po zgodzie na cookies analityczne. Włącza się ją w
+`SITE.analytics` (`plausible` z domeną albo `ga4` z identyfikatorem G-…) i dopisuje host dostawcy do CSP w
+`frontend/nginx.conf`. Zdarzenia: kroki kalkulatora, VIN, wycena, otwarcie płatności, przykładowy raport, start
+płatności, zakup, zapytanie do partnera – bez danych osobowych i bez tokenu z adresu raportu.
+
 ## Testy
 
 ```bash

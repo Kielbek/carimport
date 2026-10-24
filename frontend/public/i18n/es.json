@@ -271,7 +271,8 @@
     "lockedListTitle": "También calculado – en el informe",
     "riskTag": "riesgo",
     "moreLocked": "+ {{count}} partidas más, incl. costes ocultos",
-    "customsFx": "El arancel y el IVA se calculan sobre el valor en aduana convertido al tipo de cambio aduanero del mes, el del {{date}} (penúltimo miércoles del mes anterior)."
+    "customsFx": "El arancel y el IVA se calculan sobre el valor en aduana convertido al tipo de cambio aduanero del mes, el del {{date}} (penúltimo miércoles del mes anterior).",
+    "sample": "Ver un informe de ejemplo (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Contenedor exclusivo",

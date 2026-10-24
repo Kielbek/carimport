@@ -271,7 +271,8 @@
     "lockedListTitle": "Calcolato anche – nel report",
     "riskTag": "rischio",
     "moreLocked": "+ altre {{count}} voci, inclusi i costi nascosti",
-    "customsFx": "Dazio e IVA sono calcolati sul valore in dogana convertito al tasso di cambio doganale del mese, quello del {{date}} (penultimo mercoledì del mese precedente)."
+    "customsFx": "Dazio e IVA sono calcolati sul valore in dogana convertito al tasso di cambio doganale del mese, quello del {{date}} (penultimo mercoledì del mese precedente).",
+    "sample": "Vedi un report di esempio (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Container esclusivo",

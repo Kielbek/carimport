@@ -271,7 +271,8 @@
     "lockedListTitle": "Policzyliśmy też – w raporcie",
     "riskTag": "ryzyko",
     "moreLocked": "+ {{count}} kolejnych pozycji, w tym koszty ukryte",
-    "customsFx": "Cło i VAT liczymy od wartości celnej przeliczonej po kursie celnym obowiązującym w tym miesiącu – z dnia {{date}} (przedostatnia środa poprzedniego miesiąca)."
+    "customsFx": "Cło i VAT liczymy od wartości celnej przeliczonej po kursie celnym obowiązującym w tym miesiącu – z dnia {{date}} (przedostatnia środa poprzedniego miesiąca).",
+    "sample": "Zobacz przykładowy raport (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Kontener na wyłączność",

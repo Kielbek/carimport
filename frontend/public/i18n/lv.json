@@ -271,7 +271,8 @@
     "lockedListTitle": "Aprēķināts arī – atskaitē",
     "riskTag": "risks",
     "moreLocked": "+ vēl {{count}} pozīcijas, t. sk. slēptās izmaksas",
-    "customsFx": "Muitu un PVN aprēķina no muitas vērtības, kas pārrēķināta pēc mēneša muitas kursa – {{date}} kursa (iepriekšējā mēneša priekšpēdējā trešdiena)."
+    "customsFx": "Muitu un PVN aprēķina no muitas vērtības, kas pārrēķināta pēc mēneša muitas kursa – {{date}} kursa (iepriekšējā mēneša priekšpēdējā trešdiena).",
+    "sample": "Skatīt atskaites paraugu (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Atsevišķs konteiners",

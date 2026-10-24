@@ -271,7 +271,8 @@
     "lockedListTitle": "Également calculé – dans le rapport",
     "riskTag": "risque",
     "moreLocked": "+ {{count}} postes supplémentaires, dont les coûts cachés",
-    "customsFx": "Les droits et la TVA sont calculés sur la valeur en douane convertie au taux de change douanier du mois – taux du {{date}} (avant-dernier mercredi du mois précédent)."
+    "customsFx": "Les droits et la TVA sont calculés sur la valeur en douane convertie au taux de change douanier du mois – taux du {{date}} (avant-dernier mercredi du mois précédent).",
+    "sample": "Voir un exemple de rapport (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Conteneur exclusif",

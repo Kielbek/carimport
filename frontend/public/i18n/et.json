@@ -271,7 +271,8 @@
     "lockedListTitle": "Arvutatud ka – aruandes",
     "riskTag": "risk",
     "moreLocked": "+ veel {{count}} kuluartiklit, sh varjatud kulud",
-    "customsFx": "Toll ja käibemaks arvutatakse tolliväärtuselt kuu tollikursiga – {{date}} kursiga (eelmise kuu eelviimane kolmapäev)."
+    "customsFx": "Toll ja käibemaks arvutatakse tolliväärtuselt kuu tollikursiga – {{date}} kursiga (eelmise kuu eelviimane kolmapäev).",
+    "sample": "Vaata näidisaruannet (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Eraldi konteiner",

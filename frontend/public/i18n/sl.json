@@ -271,7 +271,8 @@
     "lockedListTitle": "Izračunano tudi – v poročilu",
     "riskTag": "tveganje",
     "moreLocked": "+ še {{count}} postavk, vključno s skritimi stroški",
-    "customsFx": "Carino in DDV izračunamo od carinske vrednosti, preračunane po carinskem tečaju meseca – tečaju z dne {{date}} (predzadnja sreda prejšnjega meseca)."
+    "customsFx": "Carino in DDV izračunamo od carinske vrednosti, preračunane po carinskem tečaju meseca – tečaju z dne {{date}} (predzadnja sreda prejšnjega meseca).",
+    "sample": "Oglejte si primer poročila (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Lasten zabojnik",
