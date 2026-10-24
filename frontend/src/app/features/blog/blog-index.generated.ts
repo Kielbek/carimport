@@ -3,16 +3,47 @@
 /** Article id -> language -> slug. */
 export const BLOG_INDEX: Record<string, Record<string, string>> = {
   "total-cost": {
-    "en": "how-much-does-it-cost-to-import-a-car-from-the-usa"
+    "de": "auto-aus-den-usa-importieren-kosten",
+    "el": "poso-kostizei-na-fereis-aftokinito-apo-ameriki",
+    "en": "how-much-does-it-cost-to-import-a-car-from-the-usa",
+    "fi": "paljonko-maksaa-tuoda-auto-yhdysvalloista-suomeen",
+    "fr": "combien-coute-importer-une-voiture-des-usa",
+    "hr": "koliko-kosta-uvoz-auta-iz-amerike",
+    "it": "quanto-costa-importare-auto-dagli-usa",
+    "lv": "auto-ievesana-no-asv-izmaksas-cik-maksa",
+    "pl": "ile-kosztuje-sprowadzenie-auta-z-usa",
+    "ro": "cat-costa-sa-aduci-o-masina-din-america-in-romania",
+    "sk": "kolko-stoji-dovoz-auta-z-usa-na-slovensko",
+    "sv": "vad-kostar-det-att-importera-bil-fran-usa"
   },
   "copart-iaai": {
-    "en": "how-to-buy-a-car-at-copart-or-iaai-from-europe"
+    "de": "copart-iaai-auto-kaufen-aus-deutschland-anleitung",
+    "el": "pos-na-agoraseis-aftokinito-apo-copart-kai-iaai-apo-tin-ellada",
+    "en": "how-to-buy-a-car-at-copart-or-iaai-from-europe",
+    "fi": "auton-osto-copart-ja-iaai-huutokaupasta-suomesta",
+    "fr": "acheter-une-voiture-sur-copart-ou-iaai-depuis-la-france",
+    "hr": "kako-kupiti-auto-na-copartu-ili-iaai-iz-hrvatske",
+    "it": "come-comprare-auto-copart-iaai-dall-italia",
+    "lv": "ka-nopirkt-auto-copart-vai-iaai-izsole-no-latvijas",
+    "pl": "jak-kupic-auto-na-copart-i-iaai-z-polski",
+    "ro": "cum-cumperi-o-masina-de-la-copart-sau-iaai-din-romania",
+    "sk": "ako-kupit-auto-na-copart-alebo-iaai-zo-slovenska",
+    "sv": "kopa-bil-pa-copart-och-iaai-fran-sverige"
   },
   "salvage-title": {
-    "en": "salvage-title-cars-from-the-usa-what-you-need-to-know"
+    "de": "salvage-title-auto-aus-usa-risiken-zulassung-deutschland",
+    "en": "salvage-title-cars-from-the-usa-what-you-need-to-know",
+    "fr": "voiture-salvage-usa-importer-et-immatriculer-en-france",
+    "hr": "salvage-auto-iz-amerike-sto-trebate-znati",
+    "it": "auto-salvage-dagli-usa-cosa-sapere",
+    "ro": "masini-cu-titlu-salvage-din-america-riscuri-si-inmatriculare",
+    "sk": "auto-zo-salvage-titulom-z-usa-co-treba-vediet",
+    "sv": "salvage-title-bil-fran-usa-registrera-i-sverige"
   },
   "customs-vat": {
-    "en": "customs-duty-and-vat-on-imported-cars-explained"
+    "en": "customs-duty-and-vat-on-imported-cars-explained",
+    "fr": "droits-de-douane-et-tva-importation-voiture-usa",
+    "ro": "taxa-vamala-si-tva-la-importul-unei-masini-din-afara-ue"
   },
   "registration": {
     "en": "registering-an-imported-car-in-the-eu-documents-and-steps"
@@ -32,4 +63,4 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
 export const BLOG_DATES: Record<string, string> = {"total-cost":"2026-10-20","copart-iaai":"2026-10-16","salvage-title":"2026-10-12","customs-vat":"2026-10-08","registration":"2026-10-04","port-choice":"2026-09-30","japan-jdm":"2026-09-25","checklist":"2026-09-20"};
 
 /** Languages that have at least one article. */
-export const BLOG_LANGS: string[] = ["en"];
+export const BLOG_LANGS: string[] = ["de","el","en","fi","fr","hr","it","lv","pl","ro","sk","sv"];
