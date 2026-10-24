@@ -784,7 +784,7 @@
         "h2": "A legközelebbi kikötők Magyarországhoz"
       },
       {
-        "p": "A táblázat távolságai Budapesttől közúton számítva értendők. Győrből, Pécsről vagy Debrecenből mások a számok – ezért a kalkulátor az Ön pontos címétől számol."
+        "p": "A táblázat távolságai Budapesttől közúton számítva értendők. Győrből, Pécsről vagy Debrecenből mások a számok – ezért a kalkulátor az Ön pontos címétől számol. A kirakodás és a vámügynök díja Koperben kb. 640, Rijekában kb. 650, Triesztben kb. 700 euró."
       },
       {
         "table": {
@@ -838,7 +838,7 @@
         "h2": "Mikor olcsóbb egy „külföldi” kikötő?"
       },
       {
-        "p": "Magyarországon a legmagasabb az áfa az Unióban, 27%. Ha az autó Koperben vagy Triesztben kerül szabad forgalomba, 22%-ot fizet. A különbség öt százalékpont, ami egy átlagos amerikai autónál több száz euró, drágább autónál ezer euró fölött is lehet. Mivel a legközelebbi magyar „kikötő” sincs közelebb, mint az adriai kikötők, a hosszabb közúti út itt gyakran nem is merül fel – a vámkezelés helye pedig szabadon választható."
+        "p": "Magyarországon a legmagasabb az áfa az Unióban, 27%. Ha az autó Koperben vagy Triesztben kerül szabad forgalomba, 22%-ot fizet. A különbség öt százalékpont, ami egy átlagos amerikai autónál több száz euró, drágább autónál ezer euró fölött is lehet. Mivel Magyarországnak nincs tengeri kikötője, az autó mindenképp egy külföldi kikötőn át érkezik, így a kikötői vámkezelés nem jár többlet közúti úttal – a vámkezelés helye pedig szabadon választható. Az autó tehát ugyanazon az úton jön haza, csak az áfát egy másik ország kapja."
       },
       {
         "p": "Egy dologra figyeljen: a regisztrációs adó magyar adó, és a hazai forgalomba helyezéskor kell megfizetni, függetlenül attól, hol vámkezelték az autót. Az összehasonlításnak ezért háztól házig kell történnie – áfa, kikötői díjak, szállítás és hazai adók együtt."
@@ -895,6 +895,22 @@
         "p": "Az USA keleti partjáról az északi-tengeri kikötők a leggyorsabbak (kb. 2 hét). Az adriai kikötőkbe – Koperbe, Triesztbe és Rijekába – az amerikai hajóút a járattól és az átrakásoktól függően nagyjából 18–39 nap, a lengyel kikötőkbe hasonló, 18–40 nap. Japánból és az Egyesült Arab Emírségekből a hajók a Szuezi-csatornán át jönnek, így az adriai kikötők egy-két héttel gyorsabbak: az Emírségekből kb. 17 nap, Japánból kb. 33 nap Koperig, míg Gdańskig kb. 30, illetve 48 nap."
       },
       {
+        "h2": "Koper, Trieszt és Rijeka röviden"
+      },
+      {
+        "p": "Koper rendszeres járműjáratokkal és nagy autóterminállal rendelkezik, ezért sok magyar és horvát vevőnek szánt autó is itt köt ki. Trieszt hasonló távolságra van Budapesttől, és szintén 22%-os áfával vámkezel, ami jó alternatívát jelent, ha a hajójárat oda kedvezőbb. Rijeka a legközelebbi adriai kikötő Budapesthez, de a horvát 25%-os áfa miatt az előnye a rövidebb úton kívül kisebb. Hogy melyik a valóban legolcsóbb, az a járattól, a konténertől és az Ön címétől függ."
+      },
+      {
+        "h2": "Kikötőválasztás három lépésben"
+      },
+      {
+        "ol": [
+          "Adja meg a címét a kalkulátorban, és válassza ki, honnan érkezik az autó.",
+          "Hasonlítsa össze a háztól házig számított teljes költséget Koper, Trieszt, Rijeka és a többi kikötő esetében.",
+          "Egyeztessen a brókerrel vagy a szállítmányozóval a járat elérhetőségéről és a hajózási időről."
+        ]
+      },
+      {
         "h2": "Mire figyeljen még?"
       },
       {
@@ -921,6 +937,280 @@
       {
         "q": "Miért nem érdemes Magyarországon vámkezelni?",
         "a": "Mert a 27%-os áfa a legmagasabb az EU-ban. Ha a szomszédos országban vámkezel, általában több száz eurót spórolhat; a kalkulátor megmutatja a pontos különbséget."
+      }
+    ]
+  },
+  {
+    "id": "japan-jdm",
+    "slug": "jdm-auto-behozatala-japanbol-aukcios-lap-es-koltsegek",
+    "category": "buying",
+    "origin": "JAPAN",
+    "date": "2026-09-25",
+    "minutes": 3,
+    "title": "JDM autó behozatala Japánból: aukciós lap, osztályzatok és költségek",
+    "metaTitle": "Autó behozatala Japánból – JDM aukciók és költségek | CarImport.eu",
+    "description": "JDM autó behozatala Japánból: hogyan működnek a japán aukciók, hogyan olvassa az aukciós lapot, mit jelent a jobbkormány, és mennyibe kerül a behozatal.",
+    "lead": "A japán aukciók a korrekt osztályozásról és a kiváló állapotú autókról híresek. Megbízható exportőrrel egy JDM autó vásárlása biztonságosabb, mint vakon licitálni az amerikai aukciókon – feltéve, hogy érti az aukciós lapot.",
+    "blocks": [
+      {
+        "h2": "Hogyan működik a vásárlás Japánban?"
+      },
+      {
+        "p": "Az olyan aukciók, mint a USS, a TAA, a CAA és a JU, csak engedéllyel rendelkező kereskedők előtt nyitottak. Exportőrön keresztül vásárol: Ön kiválasztja az autókat és megadja a maximális licitet, az exportőr licitál, fizet, kiviteli célra kivonja az autót a forgalomból és megszervezi a hajózást. A japán aukciókon hetente több tízezer jármű cserél gazdát, a kis kei autóktól a Nissan Skyline-on, a Toyota Suprán vagy a Mazda RX-7-en át a családi egyterűekig."
+      },
+      {
+        "p": "Egy jó exportőr licitálás előtt elküldi az aukciós lapot fordítással, további fotókat és az összes díj átlátható elszámolását. A fizetés általában előre vagy a nyertes licit után történik, jenben vagy dollárban. A letét befizetése előtt nézze meg, mióta működik az exportőr, van-e tapasztalata uniós vevőkkel, és megküldi-e a vámkezeléshez szükséges összes dokumentumot."
+      },
+      {
+        "h2": "Hogyan olvassa az aukciós lapot?"
+      },
+      {
+        "ul": [
+          "Összesített osztályzat: 6–5 szinte új, 4,5–4 nagyon jó, 3,5 átlagos, R/RA javított balesetes autó",
+          "Belső tér osztályzata: A-tól D-ig",
+          "Karosszériatérkép: A = karc, U = horpadás, W = hullámosság/javítás, S = rozsda, C = korrózió, a méretet jelölő számmal",
+          "A vizsgáló megjegyzései – mindig kérjen fordítást"
+        ]
+      },
+      {
+        "table": {
+          "head": [
+            "Osztályzat",
+            "Jelentés",
+            "Kinek ajánlott"
+          ],
+          "rows": [
+            [
+              "6 / 5 / S",
+              "Szinte új, minimális nyomok",
+              "Akik kiváló állapotot keresnek"
+            ],
+            [
+              "4,5 / 4",
+              "Nagyon jó, apró használati nyomok",
+              "A legtöbb vevőnek"
+            ],
+            [
+              "3,5 / 3",
+              "Átlagos, látható nyomok",
+              "A megjegyzések alapos átolvasásával"
+            ],
+            [
+              "R / RA",
+              "Javított kár",
+              "Csak a javítás részletes leírásával"
+            ]
+          ]
+        }
+      },
+      {
+        "tip": "Az R vagy RA osztályzat nem mindig rossz, de kérdezze meg, mit javítottak – egy alváz- vagy hossztartójavítás egészen más történet, mint egy kicserélt lökhárító."
+      },
+      {
+        "h2": "Költségek és időtartam"
+      },
+      {
+        "p": "Számolja hozzá az exportőr díját, a japán belföldi szállítást, az exportdokumentumokat és a tengeri fuvart. A hajók a Szuezi-csatornán keresztül jönnek: kb. 5–6 hét az Északi-tengerig, az adriai kikötőkig kevesebb – Koperig vagy Rijekáig kb. 33 nap. Személyautóknál a vám 10%, az import áfát pedig a vámkezelés országában kell megfizetni: Koperben vagy Triesztben 22%, Magyarországon 27%. Ezt követi itthon a regisztrációs adó és a forgalomba helyezés a kormányablakban."
+      },
+      {
+        "ul": [
+          "Aukciós ár és aukciós díj",
+          "Az exportőr díja és a japán belföldi szállítás",
+          "Exporttanúsítvány és forgalomból való kivonás",
+          "Tengeri szállítás (konténer vagy RoRo) és biztosítás",
+          "10% vám, a vámkezelés országának áfája, kikötő és vámügynök",
+          "Regisztrációs adó, forgalomba helyezés előtti vizsgálat és forgalomba helyezés"
+        ]
+      },
+      {
+        "h2": "Vásárlás Japánból lépésről lépésre"
+      },
+      {
+        "ol": [
+          "Válasszon uniós exportban tapasztalt exportőrt, és nézze meg a véleményeket.",
+          "Fizesse be a letétet, és kérjen hozzáférést az aukciós kereséshez.",
+          "Küldje el az exportőrnek a kiválasztott autók listáját és a maximális liciteket.",
+          "Kérje el az aukciós lap fordítását és további fotókat.",
+          "Nyertes licit után fizesse ki az autót és a díjakat a megadott határidőn belül.",
+          "Az exportőr kivonja az autót a forgalomból, kiállítja az exporttanúsítványt és hajóra rakja.",
+          "Az autót a választott kikötőben vámkezelik, majd kiszállítják Önhöz."
+        ]
+      },
+      {
+        "h2": "Mire figyeljen régebbi sportautóknál?"
+      },
+      {
+        "p": "A népszerű kilencvenes évekbeli JDM modelleket gyakran átalakították: más turbó, kipufogó, futómű vagy elektronika. Ezek megnehezíthetik a forgalomba helyezés előtti vizsgálatot, mert minden módosítást dokumentálni és jóváhagyatni kell. A 30 évnél idősebb, eredeti állapotú autók gyűjteményi járműként vámmentesek lehetnek, de csak akkor, ha lényegesen nem alakították át őket."
+      },
+      {
+        "h2": "Jobbkormány"
+      },
+      {
+        "p": "A legtöbb uniós ország forgalomba helyezi a jobbkormányos autókat, általában a fényszórók beállítása után. Néhány ország korlátozza őket tartós forgalomba helyezésnél – vásárlás előtt tisztázza a magyar szabályokat, és egyeztessen egy műhellyel, mit kell átalakítani az Ön modelljén. Gondoljon a gyakorlati oldalra is: előzésnél és autópálya-kapuknál a jobbkormány némi megszokást igényel."
+      },
+      {
+        "h2": "Miért szeretik a vevők Japánt?"
+      },
+      {
+        "p": "Japánban szigorú a műszaki vizsga (shaken), a kilométeróra-állást pedig az aukciós lapok és az exporttanúsítványok rögzítik. Ezért a kilométer-visszatekerés ritkább, mint más piacokon. Sok modellt csak Japánban forgalmaztak, így a JDM autók gyakran jobban tartják az értéküket európai megfelelőiknél. A kalkulátor mind a 43 uniós kikötőt összehasonlítja háztól házig; Önnek csak a címét kell megadnia."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Megbízható a japán autók kilométeróra-állása?",
+        "a": "Általában igen – az aukciós lapok és az exporttanúsítványok rögzítik, és a visszatekerés más piacokhoz képest ritka."
+      },
+      {
+        "q": "Mi a helyzet a rozsdával?",
+        "a": "Az észak-japán (Hokkaido) autók alja a téli útsózás miatt rozsdás lehet; az aukciós lap ezt S vagy C betűvel jelöli."
+      },
+      {
+        "q": "Melyik kikötő a legjobb egy japán autónak?",
+        "a": "Magyarország felől általában Koper vagy Trieszt: a Szuezi-csatorna miatt gyorsabbak az északi-tengeri kikötőknél, és 22% az áfa. A kalkulátor a költségeket is összeveti."
+      }
+    ]
+  },
+  {
+    "id": "checklist",
+    "slug": "ellenorzo-lista-licitalas-elott-kulfoldi-auto",
+    "category": "buying",
+    "origin": null,
+    "date": "2026-09-20",
+    "minutes": 3,
+    "title": "12 pontos ellenőrzőlista, mielőtt külföldi autóra licitál",
+    "metaTitle": "Ellenőrzőlista licitálás előtt – autó az USA-ból, Japánból | CarImport.eu",
+    "description": "Tizenkét ellenőrzés, mielőtt amerikai vagy japán autóra licitál: VIN-előélet, okmány, sérülések, díjak, szállítás, vám, áfa és regisztrációs adó.",
+    "lead": "Az aukción percei vannak dönteni. Ez a tizenkét pont egy estét vesz igénybe, és megóvja a legdrágább hibáktól – a rejtett árvízkártól az elfelejtett regisztrációs adóig.",
+    "blocks": [
+      {
+        "h2": "A 12 pontos lista"
+      },
+      {
+        "ol": [
+          "Kérjen VIN-alapú előéleti jelentést: balesetek, árvíz, kilométeróra, lopás.",
+          "Ellenőrizze az okmány típusát – kerülje a parts only és non-repairable okmányokat.",
+          "Nézzen meg minden fotót: illesztési hézagok, légzsákok, vízvonalak, motortér.",
+          "Az állapotjelöléseket információként kezelje, ne garanciaként.",
+          "Ellenőrizze a telephely helyét és távolságát az exportkikötőtől.",
+          "Számolja ki az összes aukciós díjat és a bróker jutalékát az Ön licitszintjén.",
+          "Számolja ki a teljes költséget háztól házig: hajó, vám, áfa, kikötő, kiszállítás.",
+          "Hasonlítsa össze a vámkezelési kikötőket az Ön címére.",
+          "Kérjen javítási árajánlatot és alkatrészárakat Magyarországon.",
+          "Ellenőrizze, mit kell átalakítani a forgalomba helyezéshez (lámpák, sebességmérő).",
+          "Tervezze meg az időzítést: fizetési és elszállítási határidők, hajózás, vizsga.",
+          "Határozza meg a maximális licitet – és tartsa is magát hozzá."
+        ]
+      },
+      {
+        "p": "A lista nem elmélet: minden pontja egy valós hibának felel meg, amelyet a magyar vevők az első behozatalnál a leggyakrabban elkövetnek. Minden autónál menjen végig rajta külön, akkor is, ha siet."
+      },
+      {
+        "tip": "A 6–8. lépést végezze el a kalkulátorban: összeadja az összes díjat és adót, és optimista, átlagos és pesszimista végösszeget mutat."
+      },
+      {
+        "h2": "A legfontosabb pontok részletesen"
+      },
+      {
+        "h3": "Előélet a VIN alapján"
+      },
+      {
+        "p": "Egy Carfax vagy AutoCheck jelentés néhány tíz dollárba kerül, és ez a legolcsóbb biztosítás, amit vásárolhat. Megmutatja a korábbi károkat, az árvízbejegyzéseket, a tulajdonosváltásokat és a kilométeróra-állásokat. Ha a jelentésben szereplő futásteljesítmény nem egyezik a műszerfal fotóján láthatóval, lépjen vissza."
+      },
+      {
+        "h3": "Fotók és a sérülés leírása"
+      },
+      {
+        "p": "Figyelje az ajtók, sárvédők és a motorháztető közti egyenetlen hézagokat – ezek deformációra utalnak. A kioldott légzsákok drága modulokat és érzékelőket jelentenek. Az utastérben látható iszap vagy vízvonal szinte mindig árvizet jelent. A hirdetésben szereplő elsődleges és másodlagos sérülés csak az eladó durva becslése."
+      },
+      {
+        "h3": "A telephely helye"
+      },
+      {
+        "p": "Ugyanaz az autó New Jersey-ben és Kaliforniában több száz dollár különbséget jelenthet csak a kikötőig tartó szállításban. A keleti parti és texasi telephelyek általában kedvezőbbek, mert onnan indulnak az európai járatok. Nézze meg azt is, hány nap ingyenes tárolást ad az aukció."
+      },
+      {
+        "h3": "Aukciós díjak"
+      },
+      {
+        "p": "A vevői díj sávosan emelkedik. Egy licit, amely néhány dollárral egy határ fölé kerül, az egész sávra megemelheti a díjat, ezért érdemes kicsivel a határ alatt maradni. Adja hozzá az online licitdíjat, a gate fee-t és a bróker jutalékát, így látja, valójában mennyibe kerül az autó az aukción."
+      },
+      {
+        "h3": "Időzítés és határidők"
+      },
+      {
+        "p": "Az aukció általában 2–3 munkanapon belül kéri a fizetést, és az ingyenes tárolás rövid. A hajózás, a vámkezelés, az átalakítás és a vizsga együtt több hétig tarthat. Ha az autóra egy adott időpontra van szüksége, tervezzen tartalékot."
+      },
+      {
+        "h3": "Teljes költség háztól házig"
+      },
+      {
+        "p": "A legnagyobb hiba a hazai piaci árig licitálni a költségek nélkül. A 10% vám, a magyarországi 27%-os vagy a koperi és trieszti 22%-os áfa, a kikötői díjak, a kiszállítás és a regisztrációs adó megduplázhatja az aukciós árat. A kalkulátor mind a 43 uniós kikötőt összehasonlítja háztól házig – Önnek csak a címét kell megadnia."
+      },
+      {
+        "h3": "Forgalomba helyezés Magyarországon"
+      },
+      {
+        "p": "Az amerikai autóknál át kell alakítani a világítást és km/h-s sebességmérő kell, a forgalomba helyezés előtti vizsgálathoz pedig hiteles fordítások szükségesek. Licitálás előtt kérje el a műhelytől az átalakítások listáját, mert a költségek modellenként nagyon eltérnek."
+      },
+      {
+        "h3": "Maximális licit"
+      },
+      {
+        "p": "Az összeget az aukció előtt határozza meg, és ne változtasson rajta a licitálás hevében. Mindig lesz újabb autó; a túlfizetett autó a forgalomba helyezés után is túlfizetett marad."
+      },
+      {
+        "h2": "A leggyakoribb hibák"
+      },
+      {
+        "ul": [
+          "Licitálás a piaci árig díjak és adók nélkül",
+          "Elfelejtett tárolási díj, ha késik az elszállítás",
+          "A „kisebb” elülső sérülés javításának alábecslése",
+          "A regisztrációs adó figyelmen kívül hagyása",
+          "Olyan modell vásárlása, amelyhez Európában nincs alkatrész"
+        ]
+      },
+      {
+        "h2": "Mekkora tartalékot hagyjon?"
+      },
+      {
+        "p": "A tartalék azt fedezi, ami a fotókon nem látszik, és ami nem Önön múlik: késő hajó, vámvizsgálat, többlet tárolási díj, rejtett sérülés vagy drágább alkatrészek. Minél kevesebbet tud az autóról, annál nagyobb tartalék kell."
+      },
+      {
+        "table": {
+          "head": [
+            "Autó típusa",
+            "Javasolt tartalék"
+          ],
+          "rows": [
+            [
+              "Működő autó, clean okmány",
+              "A teljes költség 10%-a"
+            ],
+            [
+              "Salvage, kisebb sérülés, működik",
+              "10–15%"
+            ],
+            [
+              "Nem működik vagy ismeretlen a kár",
+              "15% vagy több, plusz a vételár 30–40%-a javításra"
+            ]
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "Mennyi pénzt tartsak tartalékban?",
+        "a": "Legalább a teljes összeg 10–15%-át a meglepetésekre, nem működő autóknál többet."
+      },
+      {
+        "q": "Elég a VIN-jelentés?",
+        "a": "Nélkülözhetetlen, de nem teljes – kombinálja a fotókkal, az állapotjelentéssel és egy javítási árajánlattal."
+      },
+      {
+        "q": "Mennyivel előre tervezzek?",
+        "a": "A nyertes licittől a forgalomba helyezésig számoljon 2–3 hónappal, beleértve a hajózást, a vámkezelést és a vizsgát."
       }
     ]
   }
