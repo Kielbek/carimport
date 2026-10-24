@@ -757,5 +757,171 @@
         "a": "Igen. A regisztrációs adó a magyarországi forgalomba helyezéshez kötődik, függetlenül attól, hol vámkezelték az autót."
       }
     ]
+  },
+  {
+    "id": "port-choice",
+    "slug": "koper-trieszt-vagy-rijeka-melyik-kikotoben-vamkezeljuk-az-autot",
+    "category": "logistics",
+    "origin": null,
+    "date": "2026-09-30",
+    "minutes": 3,
+    "title": "Koper, Trieszt vagy Rijeka? Melyik kikötőben vámkezelje a behozott autót",
+    "metaTitle": "Koper, Trieszt vagy Rijeka? Kikötőválasztás autóimporthoz | CarImport.eu",
+    "description": "Koper, Trieszt vagy Rijeka: hogyan változtatja meg a vámkezelés kikötője az áfát (27% helyett 22%), a díjakat, a hajózási időt és a kiszállítást.",
+    "lead": "Az amerikai autók többsége Bremerhavenben, Rotterdamban vagy Antwerpenben köt ki, de a 43 uniós kikötő bármelyikében vámkezelhetők. Magyar vevők számára a legközelebbiek Rijeka, Trieszt és Koper – és mivel Magyarországon 27% az áfa, a kikötő választása itt többet számít, mint bárhol máshol az EU-ban.",
+    "blocks": [
+      {
+        "h2": "Három dolog, amit a kikötő megváltoztat"
+      },
+      {
+        "ol": [
+          "Import áfa: a kikötő országának kulcsát fizeti – Szlovéniában (Koper) és Olaszországban (Trieszt) 22%, Horvátországban (Rijeka) 25%, Lengyelországban 23%, Magyarországon 27%.",
+          "Díjak: a kikötői kezelés, a konténerkirakodás és a vámügynök díja kikötőnként eltér.",
+          "Közúti távolság: az alacsonyabb áfájú kikötő messzebb lehet az otthonától."
+        ]
+      },
+      {
+        "h2": "A legközelebbi kikötők Magyarországhoz"
+      },
+      {
+        "p": "A táblázat távolságai Budapesttől közúton számítva értendők. Győrből, Pécsről vagy Debrecenből mások a számok – ezért a kalkulátor az Ön pontos címétől számol."
+      },
+      {
+        "table": {
+          "head": [
+            "Kikötő",
+            "Ország",
+            "Áfa",
+            "Távolság Budapesttől"
+          ],
+          "rows": [
+            [
+              "Rijeka",
+              "Horvátország",
+              "25%",
+              "535 km"
+            ],
+            [
+              "Trieszt (Trieste)",
+              "Olaszország",
+              "22%",
+              "568 km"
+            ],
+            [
+              "Koper",
+              "Szlovénia",
+              "22%",
+              "575 km"
+            ],
+            [
+              "Szczecin / Świnoujście",
+              "Lengyelország",
+              "23%",
+              "914 km"
+            ],
+            [
+              "Gdańsk",
+              "Lengyelország",
+              "23%",
+              "960 km"
+            ],
+            [
+              "Gdynia",
+              "Lengyelország",
+              "23%",
+              "979 km"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Mikor olcsóbb egy „külföldi” kikötő?"
+      },
+      {
+        "p": "Magyarországon a legmagasabb az áfa az Unióban, 27%. Ha az autó Koperben vagy Triesztben kerül szabad forgalomba, 22%-ot fizet. A különbség öt százalékpont, ami egy átlagos amerikai autónál több száz euró, drágább autónál ezer euró fölött is lehet. Mivel a legközelebbi magyar „kikötő” sincs közelebb, mint az adriai kikötők, a hosszabb közúti út itt gyakran nem is merül fel – a vámkezelés helye pedig szabadon választható."
+      },
+      {
+        "p": "Egy dologra figyeljen: a regisztrációs adó magyar adó, és a hazai forgalomba helyezéskor kell megfizetni, függetlenül attól, hol vámkezelték az autót. Az összehasonlításnak ezért háztól házig kell történnie – áfa, kikötői díjak, szállítás és hazai adók együtt."
+      },
+      {
+        "h2": "Példa: ugyanaz az autó négy változatban"
+      },
+      {
+        "p": "Vegyünk egy amerikai autót 13 030 dolláros CIF értékkel és 1303 dolláros vámmal. Kb. 1000 dollár kikötői és kiszállítási költséggel az áfaalap kb. 15 333 dollár."
+      },
+      {
+        "table": {
+          "head": [
+            "Vámkezelés",
+            "Áfakulcs",
+            "Import áfa (USD)",
+            "Különbség a 27%-hoz képest"
+          ],
+          "rows": [
+            [
+              "Magyarország",
+              "27%",
+              "4 140",
+              "–"
+            ],
+            [
+              "Rijeka",
+              "25%",
+              "3 833",
+              "−307"
+            ],
+            [
+              "Gdańsk / Gdynia / Szczecin",
+              "23%",
+              "3 527",
+              "−613"
+            ],
+            [
+              "Koper / Trieszt",
+              "22%",
+              "3 373",
+              "−767"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Ebben a példában Koper vagy Trieszt a legkedvezőbb, mert a legalacsonyabb áfa a legközelebbi kikötőkkel párosul. A lengyel kikötők akkor jöhetnek szóba, ha az autó amúgy is északi útvonalon érkezik, vagy ha Ön Északkelet-Magyarországon lakik."
+      },
+      {
+        "h2": "Hajózási idő"
+      },
+      {
+        "p": "Az USA keleti partjáról az északi-tengeri kikötők a leggyorsabbak (kb. 2 hét). Az adriai kikötőkbe – Koperbe, Triesztbe és Rijekába – az amerikai hajóút a járattól és az átrakásoktól függően nagyjából 18–39 nap, a lengyel kikötőkbe hasonló, 18–40 nap. Japánból és az Egyesült Arab Emírségekből a hajók a Szuezi-csatornán át jönnek, így az adriai kikötők egy-két héttel gyorsabbak: az Emírségekből kb. 17 nap, Japánból kb. 33 nap Koperig, míg Gdańskig kb. 30, illetve 48 nap."
+      },
+      {
+        "h2": "Mire figyeljen még?"
+      },
+      {
+        "ul": [
+          "Egy másik uniós ország vámokmánya teljes értékű a magyarországi forgalomba helyezéshez.",
+          "Új járműveknél (legfeljebb 6 hónap vagy 6000 km) a forgalomba helyezés országában külön áfaszabályok érvényesek.",
+          "A hajójáratok és konténerek elérhetősége néha jobban meghatározza a kikötőt, mint az ár.",
+          "A kikötői tárolásért naponta fizetni kell – a gyors vámkezelés pénzt spórol."
+        ]
+      },
+      {
+        "tip": "Adja meg a címét a kalkulátorban: mind a 43 uniós kikötőt háztól házig beárazza, és automatikusan kiválasztja a legolcsóbbat."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Vámkezelhetem az autót Szlovéniában, és forgalomba helyezhetem Magyarországon?",
+        "a": "Igen. Az import áfát a kikötő országában fizeti, az autót pedig a vámokmányokkal Magyarországon helyezi forgalomba; a regisztrációs adót itthon kell megfizetni."
+      },
+      {
+        "q": "Mely kikötők fogadják a legtöbb amerikai autót?",
+        "a": "Az Északi-tengeren Bremerhaven, Rotterdam, Antwerpen és Hamburg, Közép-Európa felé pedig az adriai Koper és Trieszt, valamint a balti Gdynia."
+      },
+      {
+        "q": "Miért nem érdemes Magyarországon vámkezelni?",
+        "a": "Mert a 27%-os áfa a legmagasabb az EU-ban. Ha a szomszédos országban vámkezel, általában több száz eurót spórolhat; a kalkulátor megmutatja a pontos különbséget."
+      }
+    ]
   }
 ]
