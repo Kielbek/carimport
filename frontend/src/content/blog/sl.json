@@ -9,7 +9,7 @@
     "title": "Koliko stane uvoz avtomobila iz ZDA v Slovenijo? Dejanski izračun stroškov",
     "metaTitle": "Koliko stane uvoz avtomobila iz ZDA v Slovenijo? | CarImport.eu",
     "description": "Koliko stane uvoz avtomobila iz ZDA v Slovenijo: provizije dražb, prevoz, ladijski prevoz, carina 10 %, DDV 22 %, pristanišče in DMV – s primerom za 10.000 $.",
-    "lead": "Cena na Copartu ali IAAI je šele začetek. Ko avto stoji registriran pred vašo hišo, ste zanj običajno plačali 1,6- do 2-kratnik izklicane cene. Poglejmo, kam gre denar – postavko za postavko – in kaj to pomeni za kupca v Sloveniji.",
+    "lead": "Cena na Copartu ali IAAI je šele začetek. Ko avto stoji registriran pred vašo hišo, ste zanj običajno plačali 1,6- do 2-kratnik cene, dosežene na dražbi. Poglejmo, kam gre denar – postavko za postavko – in kaj to pomeni za kupca v Sloveniji.",
     "blocks": [
       {
         "h2": "Kratek odgovor"
@@ -75,7 +75,7 @@
           ],
           "rows": [
             [
-              "Izklicana cena",
+              "Zmagovalna ponudba",
               "10.000"
             ],
             [
@@ -213,7 +213,7 @@
         "h2": "Copart ali IAAI – v čem je razlika?"
       },
       {
-        "p": "Obe dražbi delujeta podobno in ponujata predvsem avtomobile zavarovalnic. Copart ima več lokacij in večjo izbiro, IAAI pa pogosto podrobnejše fotografije in razširjene opise stanja. Provizije kupca se razlikujejo po cenovnih razredih, zato je smiselno primerjati skupno ceno konkretnega avtomobila, ne le izklicne cene. Pri obeh so roki kratki in vsak dan zamude se pozna na računu."
+        "p": "Obe dražbi delujeta podobno in ponujata predvsem avtomobile zavarovalnic. Copart ima več lokacij in večjo izbiro, IAAI pa pogosto podrobnejše fotografije in razširjene opise stanja. Provizije kupca se razlikujejo po cenovnih razredih, zato je smiselno primerjati skupno ceno konkretnega avtomobila, ne le dosežene cene. Pri obeh so roki kratki in vsak dan zamude se pozna na računu."
       },
       {
         "h2": "Pristojbine, ki presenetijo začetnike"
@@ -1002,6 +1002,125 @@
       {
         "q": "Katero pristanišče je najboljše za avto z Japonske v Slovenijo?",
         "a": "Najpogosteje Koper ali Trst – plovba je krajša, pot domov pa kratka. Kalkulator primerja vseh 43 pristanišč EU za vaš naslov."
+      }
+    ]
+  },
+  {
+    "id": "checklist",
+    "slug": "kontrolni-seznam-pred-nakupom-avtomobila-iz-zda-na-drazbi",
+    "category": "buying",
+    "origin": null,
+    "date": "2026-09-20",
+    "minutes": 3,
+    "title": "12 točk, ki jih preverite, preden licitirate za avto v tujini",
+    "metaTitle": "Kontrolni seznam pred nakupom avtomobila iz ZDA ali Japonske | CarImport.eu",
+    "description": "Dvanajst preverjanj, ki varujejo vaš proračun pri nakupu avtomobila na dražbi v ZDA ali na Japonskem: zgodovina VIN, naslov, poškodbe, carina, DDV in DMV.",
+    "lead": "Na dražbi imate za odločitev le nekaj minut. Teh dvanajst točk vam vzame en večer in vas obvaruje pred najdražjimi napakami pri uvozu avtomobila v Slovenijo.",
+    "blocks": [
+      {
+        "h2": "Zakaj se kontrolni seznam splača"
+      },
+      {
+        "p": "Uvoz avtomobila iz ZDA ali z Japonske je niz odločitev, od katerih vsaka stane denar. Če nekaj spregledate pred dražbo, tega pozneje praviloma ne morete več popraviti – zmagan avto morate plačati, tudi če ugotovite, da je prevoz iz skladišča dražji, kot ste pričakovali, ali da predelava luči stane več kot polovico prihranka. Kontrolni seznam vas prisili, da vse pomembne postavke preletite v miru, dokler še lahko izbirate."
+      },
+      {
+        "p": "Točke si sledijo v logičnem zaporedju: najprej preverite sam avto, nato preračunate denar in na koncu premislite, kaj vas čaka po prihodu v Slovenijo. Če katere izmed točk ne morete izpolniti – na primer manjkajo fotografije motornega prostora ali poročilo VIN kaže poplavo –, je to razlog, da avto izpustite."
+      },
+      {
+        "h2": "Pred dražbo: avto in njegova zgodovina"
+      },
+      {
+        "ol": [
+          "Naročite zgodovino po VIN (Carfax, AutoCheck): nesreče, poplave, stanje števca, kraja. Poročilo stane nekaj dolarjev in prihrani tisoče.",
+          "Preverite vrsto naslova – izognite se naslovom parts only in non-repairable, s katerimi avtomobila ne boste registrirali.",
+          "Preučite vsako fotografijo: reže med deli karoserije, zračne blazine, sledi vode, motorni prostor in notranjost.",
+          "Oznake stanja (Run and Drive, Engine Starts) jemljite kot informacijo, ne kot garancijo – preverjene so bile le ob sprejemu v skladišče."
+        ]
+      },
+      {
+        "h2": "Denar: provizije, prevoz in davki"
+      },
+      {
+        "ol": [
+          "Ugotovite lokacijo skladišča in razdaljo do izvoznega pristanišča – prevoz po ZDA lahko stane od nekaj sto do več kot 1.000 dolarjev.",
+          "Seštejte vse provizije dražbe in posrednika za višino vaše ponudbe, ne le dosežene cene.",
+          "Izračunajte skupno ceno z uvozom: ladijski prevoz, carina 10 %, DDV (v Sloveniji 22 %), pristanišče in dostava domov.",
+          "Primerjajte pristanišča carinjenja za vaš naslov – Koper, Trst, Reka in druga se razlikujejo po DDV in razdalji."
+        ]
+      },
+      {
+        "h2": "Po uvozu: popravilo in registracija"
+      },
+      {
+        "ol": [
+          "Pridobite oceno popravila in cene delov v Sloveniji – zlasti pri modelih, ki se v Evropi niso prodajali.",
+          "Preverite, kaj je treba na avtu spremeniti za registracijo: luči, števec v km/h, zadnja meglenka.",
+          "Načrtujte roke: plačilo in prevzem, plovbo, ugotavljanje skladnosti, tehnični pregled, DMV in registracijo na upravni enoti.",
+          "Določite najvišjo ponudbo – in se je držite."
+        ]
+      },
+      {
+        "tip": "Točke 6–8 opravite v kalkulatorju CarImport.eu: sešteje vse provizije in davke, primerja vseh 43 pristanišč EU od vrat do vrat in pokaže optimističen, povprečen in pesimističen izračun. Vnesete le naslov."
+      },
+      {
+        "h2": "Kako določiti najvišjo ponudbo"
+      },
+      {
+        "p": "Začnite s ceno, po kateri primerljiv avto kupite v Sloveniji pri trgovcu ali na oglasnem portalu. Od nje odštejte stroške popravila, registracije in DMV ter rezervo za presenečenja. Ostane znesek, ki ga sme stati avto, dostavljen do vas po carinjenju. Od tega odštejte carino, DDV, ladijski prevoz, prevoz in pristaniške stroške – dobite zgornjo mejo za ceno na dražbi s provizijami. Če se izračun ne izide z razumno rezervo, avto izpustite; jutri bo na dražbi nov."
+      },
+      {
+        "table": {
+          "head": [
+            "Rezerva",
+            "Kdaj jo izbrati"
+          ],
+          "rows": [
+            [
+              "10 %",
+              "vozen avto z lažjo, dobro dokumentirano poškodbo"
+            ],
+            [
+              "15 %",
+              "običajna poškodba, manj znan model ali dražji deli"
+            ],
+            [
+              "20 % in več",
+              "avto, ki ne vozi, avto brez ključev ali po poplavi"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Predhodna ponudba ali licitiranje v živo?"
+      },
+      {
+        "p": "Na Copartu in IAAI lahko oddate predhodno ponudbo (preliminary bid) pred začetkom dražbe ali licitirate v živo. Predhodna ponudba je za začetnike varnejša: mejo določite vnaprej, s hladno glavo, sistem pa licitira le do tega zneska. Pri licitiranju v živo se zlahka pustite zanesti in dodate še nekaj sto dolarjev – ti pa na koncu pomenijo več, saj se od njih plačajo višja provizija, carina in DDV."
+      },
+      {
+        "h2": "Najpogostejše napake"
+      },
+      {
+        "ul": [
+          "Licitiranje do tržne cene brez upoštevanja provizij in davkov",
+          "Pozabljena skladiščnina, ko se prevzem iz skladišča zamakne",
+          "Podcenjeno popravilo „manjše“ sprednje poškodbe, za katero se skrivajo hladilniki, senzorji in zračne blazine",
+          "Prezrt DMV in stroški predelave luči v Sloveniji",
+          "Preračun po bančnem tečaju namesto dejanskega tečaja pri plačilu v dolarjih"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Koliko naj imam v rezervi?",
+        "a": "Vsaj 10–15 % skupnega zneska za presenečenja, pri avtomobilih, ki ne vozijo, več."
+      },
+      {
+        "q": "Ali zadošča poročilo VIN?",
+        "a": "Je nujno, a ne popolno – kombinirajte ga s fotografijami, poročilom o stanju in oceno popravila."
+      },
+      {
+        "q": "Koliko časa traja celoten uvoz?",
+        "a": "Iz ZDA običajno 4–8 tednov po zmagi, z Japonske nekoliko dlje. Nato računajte še s prilagoditvami, tehničnim pregledom in registracijo."
       }
     ]
   }
