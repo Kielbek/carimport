@@ -394,5 +394,276 @@
         "a": "Répondez honnêtement aux questions posées lors de la souscription. Certains assureurs demandent si le véhicule a subi un sinistre important ; une fausse déclaration peut poser problème en cas d’accident."
       }
     ]
+  },
+  {
+    "id": "customs-vat",
+    "slug": "droits-de-douane-et-tva-importation-voiture-usa",
+    "category": "customs",
+    "origin": null,
+    "date": "2026-10-08",
+    "minutes": 4,
+    "title": "Droits de douane et TVA sur une voiture importée hors UE : le calcul expliqué",
+    "metaTitle": "Droits de douane et TVA à l’import d’une voiture | CarImport.eu",
+    "description": "Droits de douane de 10 %, TVA à l’importation de 20 % en France, valeur CIF, régime 4200 : comment se calculent les taxes sur une voiture importée des USA.",
+    "lead": "C’est à la douane que la plupart des primo-importateurs se trompent dans leurs calculs. Deux règles expliquent presque tout : les droits sont calculés sur la valeur CIF, et la TVA vient s’y ajouter dans le pays de dédouanement – 20 % si la voiture est dédouanée en France.",
+    "blocks": [
+      {
+        "h2": "La valeur en douane : ce qu’elle comprend"
+      },
+      {
+        "p": "La valeur en douane d’une voiture achetée hors de l’UE est sa valeur transactionnelle, augmentée des frais nécessaires pour l’acheminer jusqu’à la frontière de l’Union : frais d’enchère, transport jusqu’au port d’export, fret maritime et assurance. Les frais engagés après la frontière – déchargement, transport à l’intérieur de l’UE – n’en font pas partie. Ils comptent en revanche dans la base de TVA, comme on le verra plus loin."
+      },
+      {
+        "ul": [
+          "Prix d’adjudication ou prix d’achat facturé",
+          "Frais acheteur, frais d’enchère en ligne et commission de l’intermédiaire",
+          "Transport du parc d’enchères au port d’export",
+          "Fret maritime jusqu’au port européen",
+          "Assurance transport"
+        ]
+      },
+      {
+        "h2": "Les taux de droits de douane"
+      },
+      {
+        "p": "Les droits de douane sont fixés au niveau européen par le tarif douanier commun : ils sont donc identiques en France, en Belgique ou aux Pays-Bas. Seul le type de véhicule fait varier le taux."
+      },
+      {
+        "table": {
+          "head": [
+            "Véhicule",
+            "Code NC",
+            "Droits"
+          ],
+          "rows": [
+            [
+              "Voiture particulière, SUV",
+              "8703",
+              "10 %"
+            ],
+            [
+              "Pick-up, utilitaire léger",
+              "8704",
+              "22 %"
+            ],
+            [
+              "Moto",
+              "8711",
+              "6 – 8 %"
+            ],
+            [
+              "Véhicule de collection (plus de 30 ans, d’origine)",
+              "9705",
+              "0 %"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Le classement en véhicule de collection exige que la voiture soit dans son état d’origine, sans modification substantielle. Dans ce cas, la TVA à l’importation peut aussi bénéficier d’un régime particulier ; renseignez-vous auprès de la douane avant l’arrivée de la voiture."
+      },
+      {
+        "h2": "La TVA à l’importation"
+      },
+      {
+        "p": "La TVA est calculée sur la valeur en douane, augmentée des droits et des frais de transport jusqu’au premier lieu de destination dans l’UE. Elle est payée dans l’État membre où la voiture est mise en libre pratique, au taux normal de ce pays : 20 % en France, 21 % en Belgique et aux Pays-Bas, 19 % en Allemagne, 17 % au Luxembourg. La France applique ensuite ses propres taxes nationales lors de l’immatriculation : la taxe régionale et, selon le véhicule, le malus écologique. Elles sont dues au moment de la demande de certificat d’immatriculation auprès de l’ANTS, quel que soit le pays où la voiture a été dédouanée."
+      },
+      {
+        "h2": "Exemple chiffré"
+      },
+      {
+        "table": {
+          "head": [
+            "",
+            "EUR"
+          ],
+          "rows": [
+            [
+              "Valeur en douane (CIF)",
+              "12 000"
+            ],
+            [
+              "Droits de douane 10 %",
+              "1 200"
+            ],
+            [
+              "Déchargement et livraison à destination",
+              "700"
+            ],
+            [
+              "Base de TVA",
+              "13 900"
+            ],
+            [
+              "TVA à l’importation 20 % (France)",
+              "2 780"
+            ],
+            [
+              "Droits + TVA",
+              "3 980"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Si la même voiture était dédouanée à Anvers ou à Rotterdam, à 21 %, la TVA serait de 2 919 €, soit 139 € de plus. À l’inverse, un dédouanement en Allemagne à 19 % la ramènerait à 2 641 €. La différence doit toujours être comparée au coût de la route jusqu’à chez vous."
+      },
+      {
+        "h2": "Comment se déroule le dédouanement"
+      },
+      {
+        "p": "Dans la pratique, c’est un commissionnaire en douane qui dépose la déclaration d’importation pour vous au port d’arrivée. Il a besoin du titre américain, de la facture d’achat, du connaissement et de la facture de fret. Il calcule les droits et la TVA, vous les facture avec ses honoraires (souvent autour de 250 €), puis la douane libère la voiture. Vous recevez alors la déclaration en douane acquittée, indispensable pour la suite des démarches en France. Comptez quelques jours si le dossier est complet ; un contrôle physique ou une demande de justificatifs peut prolonger le délai et générer des frais de stockage au terminal."
+      },
+      {
+        "h2": "Le régime douanier 4200"
+      },
+      {
+        "p": "Une entreprise assujettie à la TVA qui importe une voiture destinée directement à un autre pays de l’UE peut la dédouaner sous le régime 4200 : aucune TVA à l’importation n’est payée dans le pays d’arrivée, et l’acheteur déclare la TVA dans son propre pays selon le mécanisme d’autoliquidation. Un particulier ne peut pas utiliser ce régime."
+      },
+      {
+        "h2": "Les documents à garder"
+      },
+      {
+        "ul": [
+          "Facture d’achat ou bordereau d’adjudication",
+          "Reçus des frais d’enchère et de l’intermédiaire",
+          "Facture de fret et connaissement (bill of lading)",
+          "Preuves de paiement (virements)",
+          "Déclaration en douane et quittance des droits et de la TVA"
+        ]
+      },
+      {
+        "tip": "Conservez tous ces justificatifs : la douane peut contester la valeur déclarée, et ces documents la prouvent. La quittance de dédouanement vous sera également demandée pour l’immatriculation."
+      }
+    ],
+    "faq": [
+      {
+        "q": "La douane peut-elle réévaluer ma voiture ?",
+        "a": "Oui, si le prix déclaré paraît anormalement bas. La preuve du résultat de l’enchère et des paiements suffit généralement à régler la question."
+      },
+      {
+        "q": "Les droits sont-ils plus bas pour une voiture électrique ?",
+        "a": "Non, une voiture particulière 100 % électrique paie aussi 10 % de droits. En revanche, les taxes françaises à l’immatriculation peuvent être plus favorables pour un véhicule électrique."
+      },
+      {
+        "q": "Peut-on dédouaner en Belgique et immatriculer en France ?",
+        "a": "Oui. Vous payez la TVA belge à l’importation, puis vous immatriculez la voiture en France avec les documents de dédouanement. La TVA n’est pas due une seconde fois."
+      }
+    ]
+  },
+  {
+    "id": "registration",
+    "slug": "immatriculer-une-voiture-importee-des-usa-en-france-carte-grise",
+    "category": "registration",
+    "origin": null,
+    "date": "2026-10-04",
+    "minutes": 3,
+    "title": "Immatriculer en France une voiture importée des USA : documents et étapes",
+    "metaTitle": "Carte grise d’une voiture importée des USA : étapes | CarImport.eu",
+    "description": "Carte grise d’une voiture importée des USA : réception à titre isolé DREAL, contrôle technique, demande ANTS, taxe régionale, malus et délai d’un mois.",
+    "lead": "Le dédouanement n’est que la moitié du travail. Avant d’obtenir sa carte grise, la voiture doit satisfaire aux exigences techniques européennes, et vous devez réunir un dossier complet – dont plusieurs documents traduits. Voici les étapes en France, de la mise aux normes jusqu’au certificat d’immatriculation.",
+    "blocks": [
+      {
+        "h2": "Le délai : un mois après l’importation"
+      },
+      {
+        "p": "Une voiture importée doit être immatriculée en France dans un délai d’un mois (30 jours) après son arrivée. En pratique, la réception à titre isolé et les adaptations techniques prennent souvent plus de temps : préparez le dossier dès l’achat, et non quand la voiture est déjà au port. Pendant cette période, la voiture ne peut circuler que dans un cadre légal, par exemple avec une immatriculation provisoire et une assurance."
+      },
+      {
+        "h2": "Les documents nécessaires"
+      },
+      {
+        "ul": [
+          "Le titre américain (title) ou le certificat d’export, et la facture d’achat",
+          "La déclaration en douane prouvant le paiement des droits et de la TVA (certificat de dédouanement 846 A)",
+          "Le connaissement (bill of lading)",
+          "Les traductions par un traducteur assermenté des documents en langue étrangère",
+          "Le procès-verbal de réception à titre isolé délivré par la DREAL",
+          "Un contrôle technique de moins de six mois pour une voiture de plus de quatre ans",
+          "Un justificatif d’identité, de domicile et une attestation d’assurance"
+        ]
+      },
+      {
+        "h2": "La mise aux normes européennes"
+      },
+      {
+        "p": "Les voitures américaines doivent généralement être adaptées au niveau de l’éclairage : les clignotants arrière rouges et les feux de position latéraux ne respectent pas les règles européennes, et les phares peuvent nécessiter un faisceau différent. Le compteur doit afficher les km/h. Un feu antibrouillard arrière est obligatoire. Les voitures japonaises ont le volant à droite, ce que la France accepte avec des phares réglés pour la conduite à droite."
+      },
+      {
+        "table": {
+          "head": [
+            "Point",
+            "Voiture des USA",
+            "Voiture du Japon"
+          ],
+          "rows": [
+            [
+              "Clignotants arrière",
+              "Souvent rouges, à remplacer par orange",
+              "Généralement conformes"
+            ],
+            [
+              "Feux de croisement",
+              "Faisceau à adapter",
+              "Faisceau à adapter (conduite à gauche)"
+            ],
+            [
+              "Compteur",
+              "En miles, à passer en km/h",
+              "En km/h"
+            ],
+            [
+              "Antibrouillard arrière",
+              "Souvent absent, à ajouter",
+              "Parfois absent"
+            ],
+            [
+              "Volant",
+              "À gauche",
+              "À droite, accepté"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "La réception à titre isolé (DREAL)"
+      },
+      {
+        "p": "Une voiture sans réception européenne, ce qui est le cas de presque toutes les voitures construites pour le marché américain ou japonais, passe par une réception à titre isolé. Le dossier est instruit par la DREAL de votre région (DRIEAT en Île-de-France). L’inspecteur vérifie l’identification (VIN), l’éclairage, les émissions et les équipements de sécurité. Il demande souvent des attestations du constructeur ou d’un laboratoire pour certains points. Préparez cette étape avec un garage habitué aux importations : il sait quelles pièces commander et quels justificatifs rassembler."
+      },
+      {
+        "h2": "La demande de carte grise auprès de l’ANTS"
+      },
+      {
+        "p": "Avec le procès-verbal de réception et le contrôle technique, vous demandez le certificat d’immatriculation en ligne sur le site de l’ANTS, directement ou via un professionnel habilité. Au moment de la demande, vous payez la taxe régionale, calculée selon la puissance fiscale et la région, et, selon les émissions de CO₂ et le poids, le malus écologique. Ces montants dépendent des règles françaises en vigueur ; le calculateur les estime pour votre véhicule."
+      },
+      {
+        "ol": [
+          "Faire adapter la voiture (éclairage, compteur, antibrouillard).",
+          "Obtenir la réception à titre isolé auprès de la DREAL.",
+          "Passer le contrôle technique si la voiture a plus de quatre ans.",
+          "Faire traduire les documents étrangers par un traducteur assermenté.",
+          "Déposer la demande de certificat d’immatriculation sur le site de l’ANTS et payer les taxes.",
+          "Faire poser les plaques et circuler avec le certificat provisoire en attendant la carte grise définitive."
+        ]
+      },
+      {
+        "tip": "Demandez au garage la liste des modifications nécessaires avant d’acheter : sur certains modèles, la mise aux normes coûte bien plus cher que sur d’autres."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Ai-je besoin d’un certificat de conformité (COC) ?",
+        "a": "Les voitures construites pour les États-Unis ou le Japon n’ont pas de COC européen. Elles sont immatriculées via une réception à titre isolé auprès de la DREAL."
+      },
+      {
+        "q": "Puis-je rentrer du port en roulant ?",
+        "a": "Seulement avec une immatriculation provisoire et une assurance, et si la voiture est en état de rouler. Sinon, utilisez un camion porte-voitures ou une dépanneuse."
+      },
+      {
+        "q": "Le malus s’applique-t-il si la voiture est d’occasion ?",
+        "a": "Une voiture importée immatriculée pour la première fois en France relève des règles françaises de la carte grise. Selon ses caractéristiques et son âge, un malus peut s’appliquer ; le calculateur l’indique lorsque les données le permettent."
+      }
+    ]
   }
 ]

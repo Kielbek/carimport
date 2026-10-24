@@ -301,5 +301,287 @@
         "a": "Za dio vozila da, ali mnoga zahtijevaju trgovačku licencu. Zato većina kupaca iz Hrvatske koristi registriranog brokera."
       }
     ]
+  },
+  {
+    "id": "salvage-title",
+    "slug": "salvage-auto-iz-amerike-sto-trebate-znati",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-12",
+    "minutes": 3,
+    "title": "Salvage auto iz Amerike: što trebate znati prije kupnje",
+    "metaTitle": "Salvage auto iz Amerike – rizici, troškovi, registracija | CarImport.eu",
+    "description": "Što znače clean, salvage, rebuilt i parts only naslovi, može li se salvage auto iz Amerike registrirati u Hrvatskoj i koliko novca ostaviti za popravak.",
+    "lead": "Većina automobila na Copartu i IAAI-ju ima salvage naslov – upravo zato su toliko jeftini. U Hrvatskoj i ostatku EU-a sama oznaka naslova ne sprječava registraciju, ali puno govori o riziku koji kupujete.",
+    "blocks": [
+      {
+        "h2": "Vrste naslova ukratko"
+      },
+      {
+        "p": "Naslov (title) američki je dokument o vlasništvu vozila, a njegova oznaka (brand) bilježi ozbiljne događaje u povijesti automobila. Za kupca iz Hrvatske to je prvi filtar pri odabiru."
+      },
+      {
+        "ul": [
+          "Clean – nije zabilježena totalna šteta",
+          "Salvage – osiguravatelj je vozilo proglasio totalnom štetom (sudar, poplava, pronađeno nakon krađe, tuča)",
+          "Rebuilt / reconstructed – bivši salvage automobil popravljen i ponovno pregledan u SAD-u",
+          "Certificate of destruction / parts only / non-repairable – namijenjeno za dijelove; izbjegavajte ako auto želite registrirati"
+        ]
+      },
+      {
+        "table": {
+          "head": [
+            "Naslov",
+            "Može li se registrirati u EU-u",
+            "Razina rizika"
+          ],
+          "rows": [
+            [
+              "Clean",
+              "Da, nakon pregleda",
+              "Niska do srednja"
+            ],
+            [
+              "Salvage",
+              "Da, nakon popravka i pregleda",
+              "Srednja do visoka"
+            ],
+            [
+              "Rebuilt",
+              "Da, nakon pregleda",
+              "Srednja – ovisi o kvaliteti popravka"
+            ],
+            [
+              "Parts only / non-repairable",
+              "U praksi ne",
+              "Vrlo visoka"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Može li se salvage auto registrirati u Hrvatskoj?"
+      },
+      {
+        "p": "Da. Države EU-a ne koriste američke oznake naslova; važno je da popravljeni automobil prođe tehnički pregled i ispitivanje u CVH te ispunjava europske zahtjeve za svjetla i sigurnost. Salvage povijest ipak može smanjiti vrijednost pri preprodaji, a neka osiguravajuća društva pitaju za nju pri sklapanju kasko osiguranja."
+      },
+      {
+        "p": "Carina i PDV ne ovise o naslovu: obračunavaju se na plaćenu cijenu i troškove prijevoza. Jeftiniji salvage automobil zato plaća i manju carinu i manji PDV od 25 %, ali popravak ste dužni platiti sami."
+      },
+      {
+        "h2": "Gdje se krije stvarni rizik"
+      },
+      {
+        "p": "Fotografije pokazuju vidljivu štetu, a ne ono što je iza nje: savijene nosače i šasiju, aktivirane zračne jastuke i njihove senzore, elektroniku nakon poplave, dijelove koji nedostaju. Automobili nakon poplave najrizičniji su – korozija i električni kvarovi pojavljuju se tek tjednima kasnije, često kad je auto već registriran."
+      },
+      {
+        "p": "Posebno oprezno s modelima koji u Europi nisu prodavani u istoj izvedbi. Dijelovi za američke verzije – svjetla, branici, senzori – mogu se morati naručivati iz SAD-a, što produljuje popravak za tjedne i poskupljuje ga."
+      },
+      {
+        "tip": "Za automobile koji ne voze planirajte popravak na 30 do 40 % kupovne cijene i dodatnu rezervu za skrivena oštećenja. Kalkulator te iznose predlaže automatski."
+      },
+      {
+        "h2": "Kako smanjiti rizik"
+      },
+      {
+        "ol": [
+          "Provjerite povijest po VIN-u (Carfax, AutoCheck) – ranije nesreće, poplave, kilometraža.",
+          "Birajte automobile samo s prednjim ili stražnjim oštećenjem, bez aktiviranih zračnih jastuka.",
+          "Prije licitiranja zatražite procjenu popravka od servisa ili limarske radionice koja poznaje model.",
+          "Provjerite dostupnost i cijene dijelova u Hrvatskoj.",
+          "Ostavite prostora u proračunu: najjeftiniji automobil često je najskuplji projekt."
+        ]
+      },
+      {
+        "h2": "Kako prepoznati automobil nakon poplave"
+      },
+      {
+        "p": "Poplavljeni automobili često se prodaju kao da imaju samo manju štetu, a u oglasu piše „Water/Flood” tek kao sekundarno oštećenje ili nikako. Prije licitiranja pažljivo pregledajte sve fotografije i povijest vozila. Upozoravajući znakovi su sljedeći:"
+      },
+      {
+        "ul": [
+          "Vidljiva linija vode ili mulj na tapecirungu, pragovima i u prtljažniku",
+          "Hrđa na vijcima sjedala, pedalama i donjem dijelu armaturne ploče",
+          "Zamagljena svjetla i instrumenti, vlaga ispod tepiha",
+          "Lokacija aukcije u području koje je nedavno pogodio uragan ili poplava",
+          "Zapis o poplavi u izvješću Carfax ili AutoCheck"
+        ]
+      },
+      {
+        "p": "Ako sumnjate u poplavu, odustanite. Popravak elektronike, kabelskih instalacija i upravljačkih jedinica može koštati više od samog automobila, a kvarovi se mogu vraćati godinama."
+      },
+      {
+        "h2": "Preprodaja i osiguranje u Hrvatskoj"
+      },
+      {
+        "p": "Salvage povijest ostaje zapisana uz VIN i budući kupac je lako može pronaći. Računajte s tim da će automobil pri prodaji vrijediti manje od istog modela bez takve povijesti. Prije kupnje provjerite i kod svog osiguravatelja uvjete kasko osiguranja za uvezena, prethodno oštećena vozila."
+      },
+      {
+        "h2": "Isplati li se salvage auto?"
+      },
+      {
+        "p": "Može, ako znate što kupujete. Najbolji kandidati su automobili s manjim kozmetičkim oštećenjem ili oni koje je osiguravatelj otpisao zbog visoke cijene dijelova, a ne zbog strukturalne štete. Najgori su oni s poplavom, oštećenjem krova ili stupova i višestrukim aktiviranim zračnim jastucima. Izračunajte ukupni trošak – kupnju, prijevoz, carinu, PDV, PPMV, popravak i registraciju – i usporedite ga s cijenom istog modela na hrvatskom tržištu. Kalkulator uspoređuje svih 43 luke EU-a od vrata do vrata; vi upisujete samo svoju adresu."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Utječe li salvage naslov na carinu?",
+        "a": "Ne. Carina i PDV obračunavaju se na plaćenu cijenu i troškove prijevoza, bez obzira na vrstu naslova."
+      },
+      {
+        "q": "Je li rebuilt naslov bolji?",
+        "a": "Pokazuje da je automobil popravljen i pregledan u SAD-u, ali kvaliteta popravka varira. Pregledajte ga kao svaki oštećeni automobil."
+      },
+      {
+        "q": "Hoće li CVH odbiti salvage auto?",
+        "a": "Ne zbog naslova. Odlučuju tehničko stanje i usklađenost s europskim zahtjevima na pregledu."
+      }
+    ]
+  },
+  {
+    "id": "customs-vat",
+    "slug": "carina-i-pdv-za-uvoz-automobila-izracun",
+    "category": "customs",
+    "origin": null,
+    "date": "2026-10-08",
+    "minutes": 3,
+    "title": "Carina i PDV na uvoz automobila: kako se računaju?",
+    "metaTitle": "Carina i PDV na uvoz automobila – kako se računa | CarImport.eu",
+    "description": "Kako se računa carina na uvoz automobila izvan EU-a: carinska vrijednost (CIF), stope carine, PDV 25 % u Hrvatskoj, PPMV i postupak 4200 – s primjerom.",
+    "lead": "Carina je mjesto na kojem većina onih koji prvi put uvoze auto pogriješi u računici. Dva pravila objašnjavaju gotovo sve: carina se plaća na CIF vrijednost, a PDV povrh nje u državi carinjenja. U Hrvatskoj nakon toga dolazi još i PPMV.",
+    "blocks": [
+      {
+        "h2": "Carinska vrijednost: što ulazi u nju"
+      },
+      {
+        "p": "Carinska vrijednost automobila kupljenog izvan EU-a jest njegova transakcijska vrijednost uvećana za troškove dovoza do granice EU-a: aukcijske naknade, prijevoz do izvozne luke, pomorski prijevoz i osiguranje. To se zove CIF vrijednost (cost, insurance, freight). Troškovi nakon granice – istovar, prijevoz unutar EU-a – nisu dio carinske vrijednosti, ali ulaze u osnovicu za PDV."
+      },
+      {
+        "p": "Vrijednost se iskazuje u eurima. Iznose u dolarima carina preračunava po tečaju koji vrijedi za carinske svrhe u trenutku carinjenja, pa konačni iznos ovisi i o kretanju tečaja dolara."
+      },
+      {
+        "h2": "Stope carine"
+      },
+      {
+        "table": {
+          "head": [
+            "Vozilo",
+            "Tarifna oznaka",
+            "Carina"
+          ],
+          "rows": [
+            [
+              "Osobni automobil, SUV",
+              "8703",
+              "10 %"
+            ],
+            [
+              "Pickup, lako teretno vozilo",
+              "8704",
+              "22 %"
+            ],
+            [
+              "Motocikl",
+              "8711",
+              "6–8 %"
+            ],
+            [
+              "Kolekcionarsko vozilo (30+ godina, originalno)",
+              "9705",
+              "0 %"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Pickupi poput Forda F-150 ili Rama zbog stope od 22 % mogu biti znatno skuplji za uvoz nego što se čini na prvi pogled. Ključno je kako je vozilo razvrstano u carinskoj tarifi, pa to provjerite prije kupnje."
+      },
+      {
+        "h2": "Uvozni PDV"
+      },
+      {
+        "p": "PDV se obračunava na carinsku vrijednost uvećanu za carinu i troškove prijevoza do prvog odredišta u EU-u. Plaća se u državi članici u kojoj se automobil pušta u slobodni promet, po općoj stopi te države. Ako automobil ocarinite u Hrvatskoj, stopa je 25 % i postupak vodi Carinska uprava; ako ga ocarinite u Kopru ili Trstu, plaćate slovenski odnosno talijanski PDV od 22 %."
+      },
+      {
+        "h2": "Primjer izračuna"
+      },
+      {
+        "table": {
+          "head": [
+            "",
+            "EUR"
+          ],
+          "rows": [
+            [
+              "Carinska vrijednost (CIF)",
+              "12.000"
+            ],
+            [
+              "Carina 10 %",
+              "1.200"
+            ],
+            [
+              "Istovar i dostava do odredišta",
+              "700"
+            ],
+            [
+              "Osnovica za PDV",
+              "13.900"
+            ],
+            [
+              "Uvozni PDV 25 %",
+              "3.475"
+            ],
+            [
+              "Carina + PDV",
+              "4.675"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Kod istog automobila ocarinjenog u državi s PDV-om od 22 % uvozni PDV bio bi 3.058 eura, dakle 417 eura manje. Tu razliku treba usporediti s dodatnim cestovnim prijevozom i troškovima luke – zato kalkulator računa sve luke od vrata do vrata."
+      },
+      {
+        "h2": "PPMV nakon carinjenja"
+      },
+      {
+        "p": "Carina i PDV nisu kraj. Za prvu registraciju u Hrvatskoj većina osobnih automobila plaća PPMV (posebni porez na motorna vozila). To je nacionalni porez koji se ne plaća u luci carinjenja nego u Hrvatskoj, bez obzira na to gdje je automobil ocarinjen. Iznos ovisi o nacionalnim pravilima i podacima o vozilu, a kalkulator ga prikazuje kao zasebnu stavku."
+      },
+      {
+        "h2": "Carinski postupak 4200"
+      },
+      {
+        "p": "Tvrtka u sustavu PDV-a koja uvozi automobil koji odmah ide u drugu državu EU-a može ga ocariniti u postupku 4200: u državi dolaska ne plaća se uvozni PDV, a kupac obračunava PDV u svojoj državi po načelu prijenosa porezne obveze (reverse charge). Privatne osobe taj postupak ne mogu koristiti."
+      },
+      {
+        "h2": "Najčešće greške"
+      },
+      {
+        "ul": [
+          "Računanje PDV-a samo na cijenu automobila, bez carine i prijevoza",
+          "Zaboravljene aukcijske naknade, koje su dio carinske vrijednosti",
+          "Pogrešno razvrstavanje pickupa kao osobnog automobila",
+          "Zanemarivanje PPMV-a pri usporedbi s cijenom auta u Hrvatskoj"
+        ]
+      },
+      {
+        "tip": "Sačuvajte račun aukcije, potvrde o plaćenim naknadama, račun za pomorski prijevoz i teretnicu (bill of lading) – carina može osporiti prijavljenu vrijednost, a ti je dokumenti dokazuju."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Može li carina povećati vrijednost mog automobila?",
+        "a": "Da, ako se prijavljena cijena čini nerealno niskom. Dokaz o rezultatu aukcije i uplatama obično rješava stvar."
+      },
+      {
+        "q": "Je li carina niža za električne automobile?",
+        "a": "Ne, i osobni električni automobili plaćaju 10 % carine. Razlike mogu postojati kod nacionalnih poreza poput PPMV-a."
+      },
+      {
+        "q": "Plaćam li PDV dvaput ako carinim u Sloveniji?",
+        "a": "Ne za rabljeni automobil: PDV platite u Sloveniji, a u Hrvatskoj registrirate auto s carinskim dokumentima i plaćate PPMV. Za nova prijevozna sredstva (do 6 mjeseci ili 6.000 km) vrijede posebna pravila PDV-a u državi registracije."
+      }
+    ]
   }
 ]

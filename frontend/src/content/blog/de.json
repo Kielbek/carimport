@@ -273,5 +273,127 @@
         "a": "Für manche Fahrzeuge ja, über ein eigenes Konto. Viele Lose, vor allem Salvage-Fahrzeuge in bestimmten Bundesstaaten, sind aber nur mit Händlerlizenz zugänglich – deshalb nutzen die meisten Käufer aus Europa einen Broker."
       }
     ]
+  },
+  {
+    "id": "salvage-title",
+    "slug": "salvage-title-auto-aus-usa-risiken-zulassung-deutschland",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-12",
+    "minutes": 3,
+    "title": "Salvage Title: Was Sie über Unfallautos aus den USA wissen müssen",
+    "metaTitle": "Salvage Title aus den USA – Risiken, Kosten, Zulassung | CarImport.eu",
+    "description": "Was Clean, Salvage, Rebuilt und Parts Only bedeuten, ob ein Salvage-Auto in Deutschland zugelassen wird und wie Sie Reparaturen einplanen.",
+    "lead": "Die meisten Autos bei Copart und IAAI haben einen Salvage Title – genau deshalb sind sie so günstig. In Deutschland verhindert dieser Vermerk die Zulassung nicht, er sagt aber viel über das Risiko aus, das Sie mitkaufen.",
+    "blocks": [
+      {
+        "h2": "Die Title-Arten im Überblick"
+      },
+      {
+        "p": "Der Title ist das US-amerikanische Eigentumsdokument eines Fahrzeugs, vergleichbar mit dem Fahrzeugbrief. Je nach Vorgeschichte trägt er einen Vermerk, der in der Branche als Title Brand bezeichnet wird."
+      },
+      {
+        "table": {
+          "head": [
+            "Title",
+            "Bedeutung",
+            "Für den Import nach Deutschland"
+          ],
+          "rows": [
+            [
+              "Clean",
+              "Kein Totalschaden registriert",
+              "Unproblematisch, aber teurer"
+            ],
+            [
+              "Salvage",
+              "Von einer Versicherung zum Totalschaden erklärt (Unfall, Hochwasser, Diebstahl, Hagel)",
+              "Zulassungsfähig nach Reparatur und Gutachten"
+            ],
+            [
+              "Rebuilt / Reconstructed",
+              "Früheres Salvage-Auto, in den USA repariert und erneut geprüft",
+              "Zulassungsfähig, Reparaturqualität prüfen"
+            ],
+            [
+              "Certificate of Destruction / Parts Only / Non-Repairable",
+              "Nur zur Teileverwertung bestimmt",
+              "Meiden, wenn Sie das Auto zulassen wollen"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Kann ein Salvage-Auto in Deutschland zugelassen werden?"
+      },
+      {
+        "p": "Ja. Deutsche Behörden verwenden die US-Title-Vermerke nicht. Entscheidend ist, dass das reparierte Auto das Vollgutachten nach §21 StVZO bei TÜV oder DEKRA besteht und die europäischen Anforderungen an Beleuchtung und Sicherheit erfüllt. Danach meldet die Zulassungsstelle das Fahrzeug an wie jedes andere Importauto. Die Salvage-Vorgeschichte kann allerdings den Wiederverkaufswert senken, und manche Versicherer fragen bei Vollkasko danach."
+      },
+      {
+        "p": "Wichtig ist eine fachgerechte Reparatur. Ein Prüfer sieht sich sicherheitsrelevante Bereiche wie Rahmen, Airbag-System, Bremsen und Lenkung genau an. Unsachgemäß reparierte Strukturteile führen dazu, dass das Gutachten verweigert wird – und dann wird die Nachbesserung teuer."
+      },
+      {
+        "p": "Planen Sie auch die Dokumente ein: Für Zoll und Zulassung brauchen Sie den Original-Title oder das Exportdokument, die Rechnung der Auktion und den Frachtbrief. Bei Salvage-Autos dauert die Ausstellung oder Übertragung des Titles manchmal länger, was die Verschiffung verzögern kann."
+      },
+      {
+        "h2": "Wo das eigentliche Risiko liegt"
+      },
+      {
+        "p": "Die Fotos zeigen den sichtbaren Schaden, nicht das, was dahinter steckt: verzogene Rahmen, ausgelöste Airbags samt Sensoren und Steuergerät, Elektronikschäden nach Hochwasser, fehlende Teile. Hochwasserautos sind die riskantesten – Korrosion und elektrische Fehler zeigen sich oft erst Wochen später. Auch Diebstahl-Rückläufer können ausgebaute Teile oder beschädigte Schlösser haben, die auf den Bildern nicht auffallen."
+      },
+      {
+        "tip": "Kalkulieren Sie bei nicht fahrbereiten Autos Reparaturkosten von 30–40 % des Kaufpreises und behalten Sie eine Reserve für versteckte Schäden. Der Rechner von CarImport.eu schlägt diese Beträge automatisch vor."
+      },
+      {
+        "h2": "Typische Schadensbilder und was sie bedeuten"
+      },
+      {
+        "ul": [
+          "Front End: häufigster Schaden; teuer wird es, wenn Kühler, Airbags und Längsträger betroffen sind.",
+          "Rear End: oft günstiger zu reparieren, aber Kofferraumboden und Rahmen prüfen.",
+          "Side: Säulen und Türen sind tragende Teile, Reparatur ist aufwendig.",
+          "Water/Flood: Elektronik, Steuergeräte und Kabelbäume gefährdet, Spätschäden sehr wahrscheinlich.",
+          "Hail: meist nur Karosserie, oft gut kalkulierbar, Smart-Repair kann reichen.",
+          "Theft Recovery: auf fehlende Teile, Schlösser und Zündschloss achten.",
+          "Mechanical: Motor- oder Getriebeschaden, Diagnose aus der Ferne kaum möglich."
+        ]
+      },
+      {
+        "p": "Die Angabe zum Schaden stammt vom Versicherer oder vom Auktionshaus und ist eine grobe Einordnung, kein Gutachten. Ein als „Minor Dent“ beschriebenes Auto kann trotzdem einen verzogenen Träger haben. Lesen Sie die Beschreibung deshalb immer zusammen mit allen Fotos und der VIN-Historie."
+      },
+      {
+        "h2": "So senken Sie das Risiko"
+      },
+      {
+        "ol": [
+          "Prüfen Sie die VIN-Historie bei Carfax oder AutoCheck auf frühere Unfälle und Hochwassermeldungen.",
+          "Bevorzugen Sie Autos mit reinem Front- oder Heckschaden ohne ausgelöste Airbags.",
+          "Holen Sie vor dem Bieten einen Kostenvoranschlag bei einer Werkstatt ein, die das Modell kennt.",
+          "Prüfen Sie Verfügbarkeit und Preise der Ersatzteile in Deutschland.",
+          "Fragen Sie TÜV oder DEKRA vorab, welche Umbauten für das Vollgutachten nötig sind.",
+          "Lassen Sie Luft im Budget: Das billigste Auto ist oft das teuerste Projekt."
+        ]
+      },
+      {
+        "h2": "Lohnt sich ein Salvage-Auto überhaupt?"
+      },
+      {
+        "p": "Das hängt vom Schaden und vom Modell ab. Bei leichten Front- oder Heckschäden an gefragten Modellen, die es in Deutschland teuer zu kaufen gibt, kann die Rechnung aufgehen – selbst nach Zoll, 19 % Einfuhrumsatzsteuer und Reparatur. Bei Hochwasserschäden, Rahmenschäden oder Modellen mit schwer erhältlichen Teilen geht sie selten auf. Vergleichen Sie den Gesamtpreis vor Ihrer Tür immer mit dem Preis eines vergleichbaren Autos auf dem deutschen Gebrauchtwagenmarkt. Der Rechner zeigt Ihnen die gesamten Importkosten für Ihre Adresse – er vergleicht alle 43 EU-Häfen von Tür zu Tür, Sie geben nur Ihre Adresse ein."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Beeinflusst ein Salvage Title den Zoll?",
+        "a": "Nein. Zoll und Einfuhrumsatzsteuer richten sich nach dem gezahlten Preis und den Transportkosten, unabhängig vom Title."
+      },
+      {
+        "q": "Ist ein Rebuilt Title besser?",
+        "a": "Er zeigt, dass das Auto in den USA repariert und geprüft wurde, aber die Qualität der Reparatur schwankt stark. Prüfen Sie es wie jedes Unfallauto."
+      },
+      {
+        "q": "Muss ich beim Verkauf in Deutschland die Salvage-Vorgeschichte angeben?",
+        "a": "Ein bekannter erheblicher Unfallschaden sollte beim Verkauf offen gelegt werden. Ehrlichkeit schützt Sie hier auch vor späteren Streitigkeiten mit dem Käufer."
+      }
+    ]
   }
 ]

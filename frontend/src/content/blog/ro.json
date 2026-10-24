@@ -361,5 +361,277 @@
         "a": "RAR verifică starea tehnică și identificarea mașinii, nu titlul american. Istoricul poate fi însă văzut de oricine verifică VIN-ul, inclusiv de viitorii cumpărători."
       }
     ]
+  },
+  {
+    "id": "customs-vat",
+    "slug": "taxa-vamala-si-tva-la-importul-unei-masini-din-afara-ue",
+    "category": "customs",
+    "origin": null,
+    "date": "2026-10-08",
+    "minutes": 3,
+    "title": "Taxa vamală și TVA la importul unei mașini din afara UE",
+    "metaTitle": "Taxa vamală și TVA la mașini importate din SUA | CarImport.eu",
+    "description": "Cum se calculează taxa vamală și TVA-ul de 21% la importul unei mașini în România: valoarea CIF, cotele vamale, procedura 4200 și un exemplu concret.",
+    "lead": "La vamă își greșesc calculele cei mai mulți dintre cei care importă prima dată. Două reguli explică aproape totul: taxa vamală se calculează la valoarea CIF, iar TVA-ul se adaugă peste ea, în țara în care se face vămuirea. În România asta înseamnă 10% taxă vamală pentru autoturisme și 21% TVA.",
+    "blocks": [
+      {
+        "h2": "Valoarea în vamă: ce include"
+      },
+      {
+        "p": "Valoarea în vamă a unei mașini cumpărate din afara UE este valoarea tranzacției plus costurile aducerii ei până la granița UE: taxele de licitație, transportul până în portul de export, transportul maritim și asigurarea. Costurile de după graniță – descărcarea, transportul în interiorul UE – nu intră în valoarea în vamă, dar intră, după cum vei vedea, în baza de calcul a TVA-ului."
+      },
+      {
+        "p": "Pentru mașinile cumpărate la licitații din SUA, prețul de adjudecare și taxele plătite către Copart sau IAAI se dovedesc cu factura licitației. Factura de transport (freight invoice) și conosamentul (bill of lading) arată costul transportului maritim. Toate aceste documente le dai comisionarului vamal, care întocmește declarația vamală la Autoritatea Vamală Română sau în țara în care vămuiești."
+      },
+      {
+        "h2": "Cotele taxei vamale"
+      },
+      {
+        "table": {
+          "head": [
+            "Vehicul",
+            "Cod NC",
+            "Taxă vamală"
+          ],
+          "rows": [
+            [
+              "Autoturism, SUV",
+              "8703",
+              "10%"
+            ],
+            [
+              "Pickup, camionetă",
+              "8704",
+              "22%"
+            ],
+            [
+              "Motocicletă",
+              "8711",
+              "6–8%"
+            ],
+            [
+              "Vehicul de colecție (30+ ani, original)",
+              "9705",
+              "0%"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Atenție la pickup-uri: un Ford F-150 sau un Dodge RAM este de regulă clasificat la codul 8704, cu taxă de 22%, nu de 10%. Clasificarea depinde de construcția vehiculului, așa că discut-o cu comisionarul vamal înainte să cumperi."
+      },
+      {
+        "h2": "TVA-ul de import"
+      },
+      {
+        "p": "TVA-ul se calculează la valoarea în vamă plus taxa vamală și costurile de transport până la prima destinație din UE. Se plătește în statul membru în care mașina este pusă în liberă circulație, la cota standard a acelei țări. În România cota standard este 21%; în Bulgaria este 20%, în Grecia 24%. Unele țări percep apoi și accize sau o taxă de înmatriculare – acestea sunt naționale și diferă mult. România nu are în prezent o astfel de taxă separată la înmatriculare."
+      },
+      {
+        "h2": "Exemplu de calcul pentru România"
+      },
+      {
+        "table": {
+          "head": [
+            "",
+            "EUR"
+          ],
+          "rows": [
+            [
+              "Valoarea în vamă (CIF)",
+              "12.000"
+            ],
+            [
+              "Taxă vamală 10%",
+              "1.200"
+            ],
+            [
+              "Descărcare și livrare până la destinație",
+              "700"
+            ],
+            [
+              "Baza TVA",
+              "13.900"
+            ],
+            [
+              "TVA de import 21%",
+              "2.919"
+            ],
+            [
+              "Taxă vamală + TVA",
+              "4.119"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Sumele se plătesc în lei, la cursul de schimb folosit de vamă pentru luna respectivă. În exemplu, la o mașină cu valoare CIF de 12.000 de euro, vama și TVA-ul adaugă peste 4.100 de euro – cam o treime din valoarea mașinii."
+      },
+      {
+        "h2": "Procedura vamală 4200"
+      },
+      {
+        "p": "O firmă înregistrată în scopuri de TVA care importă o mașină ce merge direct în altă țară din UE o poate vămui în procedura 4200: în țara de sosire nu se plătește TVA de import, iar cumpărătorul declară TVA-ul în propria țară prin taxare inversă. Persoanele fizice nu pot folosi această procedură. Pentru o persoană fizică din România, TVA-ul plătit la vamă este un cost final."
+      },
+      {
+        "h2": "Mașinile de colecție: 0% taxă vamală"
+      },
+      {
+        "p": "Un vehicul mai vechi de 30 de ani, în stare originală, cu motorul, șasiul și caroseria inițiale, poate fi clasificat la codul 9705 ca obiect de colecție. Taxa vamală este atunci 0%, iar TVA-ul de import se calculează după regulile țării de vămuire. Condiția este ca mașina să nu fi fost modificată substanțial; o mașină veche transformată, cu motor schimbat, rămâne de regulă un autoturism obișnuit cu 10% taxă vamală. Cere comisionarului vamal să confirme clasificarea înainte de cumpărare, pentru că diferența poate fi de mii de lei."
+      },
+      {
+        "h2": "Pe scurt: ce plătești și unde"
+      },
+      {
+        "ul": [
+          "Taxa vamală: 10% din valoarea CIF la autoturisme, în țara de vămuire",
+          "TVA de import: cota țării de vămuire, la CIF + taxă vamală + transport până la destinație",
+          "În România: DRPCIV pentru înmatriculare și RAR pentru omologarea individuală, după vămuire",
+          "Calculatorul compară toate cele 43 de porturi din UE de la ușă la ușă; tu introduci doar adresa"
+        ]
+      },
+      {
+        "tip": "Păstrează factura de cumpărare, chitanțele taxelor de licitație, factura de transport și conosamentul – vama poate contesta valoarea declarată, iar aceste documente o dovedesc."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Poate vama să crească valoarea mașinii mele?",
+        "a": "Da, dacă prețul declarat pare nerealist de mic. Dovada rezultatului licitației și a plăților rezolvă de obicei problema."
+      },
+      {
+        "q": "Taxa vamală este mai mică la mașinile electrice?",
+        "a": "Nu, și autoturismele electrice plătesc 10% taxă vamală. Diferențele apar la taxele naționale, nu la vamă."
+      },
+      {
+        "q": "Pot vămui mașina în Bulgaria și să o înmatriculez în România?",
+        "a": "Da. Plătești TVA-ul de import în țara de vămuire, iar cu documentele vamale înmatriculezi mașina în România. Merită doar dacă diferența de TVA și de costuri acoperă transportul."
+      }
+    ]
+  },
+  {
+    "id": "registration",
+    "slug": "inmatriculare-masina-adusa-din-america-acte-rar-drpciv",
+    "category": "registration",
+    "origin": null,
+    "date": "2026-10-04",
+    "minutes": 3,
+    "title": "Înmatricularea unei mașini aduse din America: acte, RAR și DRPCIV",
+    "metaTitle": "Înmatriculare mașină din SUA: acte, RAR, DRPCIV | CarImport.eu",
+    "description": "Ce acte îți trebuie, cum treci de omologarea individuală RAR și ce adaptezi (faruri, semnalizări, kilometraj) ca să înmatriculezi la DRPCIV o mașină din SUA.",
+    "lead": "Vămuirea este doar jumătate din treabă. Înainte să primească numere, mașina trebuie să îndeplinească cerințele tehnice europene, iar tu ai nevoie de un set de documente – cele mai multe traduse. În România drumul trece prin RAR și se încheie la DRPCIV.",
+    "blocks": [
+      {
+        "h2": "Documentele de care ai nevoie"
+      },
+      {
+        "ul": [
+          "Titlul (title) sau certificatul de export și factura de cumpărare",
+          "Declarația vamală care arată taxa vamală și TVA-ul plătite",
+          "Conosamentul (bill of lading)",
+          "Traduceri autorizate ale documentelor în limbi străine",
+          "Certificatul de omologare individuală / cartea de identitate a vehiculului (CIV) eliberate de RAR",
+          "Dovada asigurării RCA și actul de identitate",
+          "Dovada înregistrării mașinii la direcția de taxe și impozite locale"
+        ]
+      },
+      {
+        "h2": "Adaptarea tehnică"
+      },
+      {
+        "p": "Mașinile americane au de obicei nevoie de adaptarea iluminării: semnalizările spate roșii și lămpile laterale (side markers) nu respectă normele UE, iar farurile pot avea nevoie de alt fascicul. Vitezometrul trebuie să afișeze km/h. Lampa de ceață spate este obligatorie. Mașinile japoneze au volanul pe dreapta, ceea ce majoritatea țărilor acceptă cu farurile reglate – verifică însă condițiile exacte la RAR înainte de cumpărare."
+      },
+      {
+        "p": "Adaptările nu sunt doar o formalitate: la unele modele se rezolvă cu un modul electronic și câteva becuri, la altele trebuie schimbate stopurile complete sau reprogramat calculatorul de bord. Prețurile diferă mult, așa că întreabă un atelier specializat în importuri din SUA ce presupune modelul tău."
+      },
+      {
+        "h2": "Omologarea individuală la RAR"
+      },
+      {
+        "p": "O mașină fără omologare de tip UE trece prin omologare individuală. În România aceasta se face la RAR – Registrul Auto Român, unde inspectorul verifică identificarea (VIN), iluminarea, emisiile și echipamentele de siguranță. După o verificare reușită primești documentele necesare înmatriculării, inclusiv cartea de identitate a vehiculului. Planifică acest pas cu un atelier care cunoaște mașinile importate și care știe ce cere RAR pentru modelul respectiv."
+      },
+      {
+        "h2": "Înmatricularea la DRPCIV și termenul"
+      },
+      {
+        "p": "Cu documentele de la RAR înmatriculezi mașina la DRPCIV, prin serviciul public comunitar de înmatriculare din județul tău. Termenul legal pentru înmatricularea unei mașini importate este de 90 de zile. România nu are în prezent o taxă de înmatriculare separată, de tipul celor din alte state UE; plătești tarifele pentru certificatul de înmatriculare și plăcuțe, iar mașina intră apoi în evidența impozitului local anual."
+      },
+      {
+        "h2": "Pașii în ordine"
+      },
+      {
+        "table": {
+          "head": [
+            "Pas",
+            "Unde",
+            "Ce obții"
+          ],
+          "rows": [
+            [
+              "Vămuire",
+              "Vamă / comisionar vamal",
+              "Declarația vamală, taxa vamală și TVA plătite"
+            ],
+            [
+              "Adaptare tehnică",
+              "Atelier specializat",
+              "Iluminare și vitezometru conforme UE"
+            ],
+            [
+              "Omologare individuală",
+              "RAR",
+              "CIV și documentele pentru înmatriculare"
+            ],
+            [
+              "Fiscalizare",
+              "Primărie / taxe și impozite locale",
+              "Înregistrarea mașinii pentru impozitul anual"
+            ],
+            [
+              "Înmatriculare",
+              "DRPCIV",
+              "Certificat de înmatriculare și plăcuțe"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Dacă vămuiești în alt stat (de exemplu în Bulgaria, prin Varna), procedura de înmatriculare în România rămâne aceeași; ai nevoie doar de documentele vamale din țara respectivă, traduse. Calculatorul compară toate cele 43 de porturi din UE de la ușă la ușă – introduci doar adresa – și îți arată și costurile naționale."
+      },
+      {
+        "h2": "Greșeli frecvente la înmatriculare"
+      },
+      {
+        "ul": [
+          "Cumpărarea unui model la care adaptarea farurilor sau a stopurilor costă cât o reparație serioasă",
+          "Lipsa traducerilor autorizate pentru titlu și factura de cumpărare, care amână dosarul",
+          "Programarea la RAR înainte ca adaptările să fie complet terminate",
+          "Neglijarea termenului de 90 de zile când mașina stă mult în service pentru reparații",
+          "Documente vamale incomplete când mașina a fost vămuită în altă țară din UE"
+        ]
+      },
+      {
+        "h2": "Cât durează tot procesul"
+      },
+      {
+        "p": "De la sosirea mașinii în port până la plăcuțele de înmatriculare trec, de regulă, câteva săptămâni. Vămuirea durează câteva zile dacă documentele sunt complete. Reparațiile și adaptarea tehnică depind de model și de piese, iar programarea la RAR poate dura în unele județe. Ține cont de toate acestea când îți faci planul, mai ales dacă ai nevoie de mașină la o anumită dată."
+      },
+      {
+        "tip": "Cere atelierului lista modificărilor necesare înainte să cumperi – la unele modele conversiile costă mult mai mult decât la altele."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Am nevoie de certificat de conformitate (CoC)?",
+        "a": "Mașinile construite pentru SUA sau Japonia nu au CoC european. Ele se înmatriculează prin omologare individuală la RAR."
+      },
+      {
+        "q": "Pot conduce mașina acasă din port?",
+        "a": "Doar cu numere provizorii și asigurare și doar dacă mașina este în stare de circulație. Altfel folosește o platformă sau un transportor auto."
+      },
+      {
+        "q": "În cât timp trebuie să înmatriculez mașina importată?",
+        "a": "Termenul este de 90 de zile. Programează din timp omologarea la RAR, pentru că adaptările tehnice pot dura."
+      }
+    ]
   }
 ]

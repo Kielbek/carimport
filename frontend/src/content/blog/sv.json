@@ -245,5 +245,97 @@
         "a": "Vissa bilar kan köpas med ett vanligt medlemskap, men många kräver återförsäljarlicens. En broker ger tillgång till fler objekt och hjälper med export."
       }
     ]
+  },
+  {
+    "id": "salvage-title",
+    "slug": "salvage-title-bil-fran-usa-registrera-i-sverige",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-12",
+    "minutes": 3,
+    "title": "Salvage title-bilar från USA: det här behöver du veta",
+    "metaTitle": "Salvage title-bil från USA – går den att registrera? | CarImport.eu",
+    "description": "Kan en salvage title-bil från USA registreras i Sverige? Titeltyper, dolda skador, översvämningsbilar och hur du minskar risken innan du budar.",
+    "lead": "De flesta bilar på Copart och IAAI har en salvage title – det är därför de är så billiga. I Sverige hindrar själva titelstämpeln inte registrering, men den säger mycket om vilken risk du köper.",
+    "blocks": [
+      {
+        "h2": "Titeltyperna i korthet"
+      },
+      {
+        "ul": [
+          "Clean – ingen totalskada registrerad",
+          "Salvage – förklarad som totalskada av ett försäkringsbolag (kollision, översvämning, återfunnen stöldbil, hagel)",
+          "Rebuilt / reconstructed – en tidigare salvage-bil som reparerats och kontrollerats på nytt i USA",
+          "Certificate of destruction / parts only / non-repairable – avsedd för delar; undvik om du vill registrera bilen"
+        ]
+      },
+      {
+        "p": "Titeln utfärdas av delstaten, och reglerna skiljer sig mellan delstaterna. Samma typ av skada kan alltså ge salvage title i en delstat men inte i en annan. Läs därför alltid titeln tillsammans med skadebeskrivningen och bilderna."
+      },
+      {
+        "h2": "Kan en salvage-bil registreras i Sverige?"
+      },
+      {
+        "p": "Ja. Sverige och övriga EU-länder använder inte de amerikanska titelstämplarna. Det som avgör är att den reparerade bilen klarar registreringsbesiktningen och uppfyller EU:s krav på belysning och säkerhet, innan Transportstyrelsen registrerar den. Salvage-historiken kan däremot sänka andrahandsvärdet, och vissa försäkringsbolag frågar efter den när du tecknar försäkring. Var ärlig om historiken när du säljer bilen vidare."
+      },
+      {
+        "h2": "Där den verkliga risken finns"
+      },
+      {
+        "p": "Bilderna visar den synliga skadan, inte vad som döljer sig bakom: deformerade balkar, utlösta krockkuddar och deras sensorer, elektronik efter översvämning och delar som saknas. Översvämningsbilar är de mest riskabla – korrosion och elfel visar sig ofta först efter flera veckor, när bilen redan står i Sverige."
+      },
+      {
+        "ul": [
+          "Vattenlinjer i kupén, slam under mattor och rost på skruvar under instrumentbrädan tyder på översvämning",
+          "Ojämna spaltmått och nya svetsfogar kan tyda på kaross- eller balkskada",
+          "Utlösta krockkuddar kräver nya krockkuddar, sensorer och ofta styrenhet – en dyr post",
+          "Hagelskador ser dramatiska ut men är ofta mindre riskabla än strukturella skador"
+        ]
+      },
+      {
+        "tip": "Budgetera reparationer till 30–40 % av priset för bilar som inte går att köra, och håll en extra reserv för dolda skador. Kalkylatorn föreslår de beloppen automatiskt."
+      },
+      {
+        "h2": "Så minskar du risken"
+      },
+      {
+        "ol": [
+          "Kontrollera VIN-historiken (Carfax, AutoCheck) för tidigare olyckor och översvämningar.",
+          "Välj helst bilar med enbart front- eller bakskada, utan utlösta krockkuddar.",
+          "Be en verkstad som kan modellen om en reparationsuppskattning innan du budar.",
+          "Kolla tillgång och pris på reservdelar i Sverige – amerikanska versioner har ibland andra delar än europeiska.",
+          "Lämna utrymme i budgeten: den billigaste bilen blir ofta det dyraste projektet."
+        ]
+      },
+      {
+        "h2": "Vad händer vid registreringsbesiktningen?"
+      },
+      {
+        "p": "Besiktningsteknikern tittar inte på om bilen har haft salvage title, utan på hur den ser ut i dag. Identiteten kontrolleras mot VIN-numret, och sedan granskas bromsar, styrning, belysning, krockkuddar, avgaser och karossens hållfasthet. En slarvigt lagad balk eller en varningslampa för krockkuddarna leder till underkännande. Spara därför kvitton och bilder från reparationen; de gör det lättare att förklara vad som är åtgärdat. Om bilen underkänns får du åtgärda bristerna och boka en efterkontroll, vilket kostar både tid och pengar."
+      },
+      {
+        "p": "Planera reparationen så att den är klar innan du bokar besiktningen. Många väljer att låta en verkstad som är van vid amerikanska bilar göra både reparation och ombyggnad av belysningen i samma veva."
+      },
+      {
+        "h2": "Räkna på hela projektet"
+      },
+      {
+        "p": "En salvage-bil är billig att köpa men kostar lika mycket som en oskadd bil att frakta, förtulla och registrera. Tull på 10 % och svensk importmoms på 25 % beräknas på priset och transporten, inte på skadan. Lägg till reparationer, eventuella ombyggnader av belysning och en ny registreringsbesiktning om bilen inte godkänns första gången. Kalkylatorn räknar fram hela kostnaden och jämför samtidigt alla 43 EU-hamnar från dörr till dörr – du anger bara din adress. Jämför sedan totalen med vad en motsvarande bil kostar i Sverige."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Påverkar en salvage title tullen?",
+        "a": "Nej. Tull och moms beräknas på köpeskillingen och transportkostnaderna, oavsett titel."
+      },
+      {
+        "q": "Är en rebuilt title bättre?",
+        "a": "Den visar att bilen reparerats och kontrollerats i USA, men kvaliteten på reparationen varierar. Granska den som vilken skadad bil som helst."
+      },
+      {
+        "q": "Måste jag berätta om salvage-historiken när jag säljer bilen?",
+        "a": "Du bör vara öppen med bilens historik. Den syns ofta i VIN-rapporter, och att dölja en känd skada kan leda till krav från köparen."
+      }
+    ]
   }
 ]
