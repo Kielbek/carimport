@@ -398,7 +398,8 @@
     "why": "Kodėl mes",
     "what": "Ką skaičiuojame",
     "ctaHint": "Nemokamai, be registracijos",
-    "language": "Kalba"
+    "language": "Kalba",
+    "blog": "Tinklaraštis"
   },
   "footer": {
     "about": "Nepriklausoma automobilių iš ne ES šalių importo išlaidų skaičiuoklė. Automobilių neparduodame ir neimportuojame – apskaičiuojame, kiek jie iš tikrųjų kainuoja.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Susiję gidai",
     "disclaimer": "Informacija tik orientacinė; galutines sumas nustato mokesčių ir muitinės institucijos. Tarifai – kaip naudojami skaičiuoklėje."
+  },
+  "blog": {
+    "title": "Automobilių importo tinklaraštis",
+    "lead": "Praktiški straipsniai apie automobilių įvežimą iš JAV, Kanados, Japonijos, JAE ir Jungtinės Karalystės: realios išlaidos, aukcionai, muitinė, registracija ir klaidos, kurių verta vengti.",
+    "metaTitle": "Automobilių importo tinklaraštis – kainos, aukcionai, muitas | CarImport.eu",
+    "metaDescription": "Gidai ir straipsniai apie automobilio įvežimą į ES: kiek tai iš tikrųjų kainuoja, kaip pirkti Copart ir IAAI aukcionuose, muitas, PVM ir registracija.",
+    "all": "Visi",
+    "minutes": "{{n}} min skaitymo",
+    "related": "Skaitykite taip pat",
+    "latest": "Iš tinklaraščio",
+    "latestLead": "Atsakymai į klausimus, kuriuos žmonės užduoda prieš įsiveždami automobilį.",
+    "more": "Visi straipsniai",
+    "empty": "Straipsniai šia kalba netrukus bus paskelbti.",
+    "category": {
+      "costs": "Išlaidos",
+      "buying": "Pirkimas",
+      "customs": "Muitas ir mokesčiai",
+      "registration": "Registracija",
+      "logistics": "Transportas ir uostai"
+    }
   }
 }

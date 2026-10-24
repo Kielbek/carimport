@@ -398,7 +398,8 @@
     "why": "Waarom wij",
     "what": "Wat we berekenen",
     "ctaHint": "Gratis, zonder registratie",
-    "language": "Taal"
+    "language": "Taal",
+    "blog": "Blog"
   },
   "footer": {
     "about": "Onafhankelijke calculator voor de importkosten van auto’s van buiten de EU. Wij verkopen en importeren geen auto’s – wij berekenen wat ze echt kosten.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Gerelateerde gidsen",
     "disclaimer": "Informatie alleen ter oriëntatie; de belastingdienst en de douane stellen de definitieve bedragen vast. Tarieven zoals gebruikt door de calculator."
+  },
+  "blog": {
+    "title": "Blog over auto-import",
+    "lead": "Praktische artikelen over het importeren van auto’s uit de VS, Canada, Japan, de VAE en het VK: echte kosten, veilingen, douane, registratie en de fouten die je beter kunt vermijden.",
+    "metaTitle": "Blog over auto-import – kosten, veilingen, douane, RDW | CarImport.eu",
+    "metaDescription": "Gidsen en artikelen over het importeren van een auto in de EU: wat het echt kost, kopen bij Copart en IAAI, invoerrechten, btw, BPM en registratie.",
+    "all": "Alle",
+    "minutes": "{{n}} min lezen",
+    "related": "Lees ook",
+    "latest": "Van de blog",
+    "latestLead": "Antwoorden op de vragen die mensen stellen voordat ze een auto importeren.",
+    "more": "Alle artikelen",
+    "empty": "Artikelen in deze taal volgen binnenkort.",
+    "category": {
+      "costs": "Kosten",
+      "buying": "Kopen",
+      "customs": "Douane & belastingen",
+      "registration": "Registratie",
+      "logistics": "Verzending & havens"
+    }
   }
 }

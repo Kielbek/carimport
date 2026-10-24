@@ -398,7 +398,8 @@
     "why": "Por qué nosotros",
     "what": "Qué calculamos",
     "ctaHint": "Gratis, sin registro",
-    "language": "Idioma"
+    "language": "Idioma",
+    "blog": "Blog"
   },
   "footer": {
     "about": "Calculadora independiente de los costes de importación de coches de fuera de la UE. No vendemos ni importamos coches – calculamos lo que realmente cuestan.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Guías relacionadas",
     "disclaimer": "Información meramente orientativa; las autoridades tributarias y aduaneras fijan los importes definitivos. Tipos según los utiliza la calculadora."
+  },
+  "blog": {
+    "title": "Blog de importación de coches",
+    "lead": "Artículos prácticos sobre cómo importar coches de EE. UU., Canadá, Japón, los Emiratos y el Reino Unido: costes reales, subastas, aduana, matriculación y errores que conviene evitar.",
+    "metaTitle": "Blog de importación de coches – costes, subastas, aduana | CarImport.eu",
+    "metaDescription": "Guías y artículos sobre cómo importar un coche a la UE: cuánto cuesta de verdad, cómo comprar en Copart e IAAI, aranceles, IVA y matriculación.",
+    "all": "Todos",
+    "minutes": "{{n}} min de lectura",
+    "related": "Lee también",
+    "latest": "Del blog",
+    "latestLead": "Respuestas a las preguntas que todos se hacen antes de importar un coche.",
+    "more": "Todos los artículos",
+    "empty": "Pronto habrá artículos en este idioma.",
+    "category": {
+      "costs": "Costes",
+      "buying": "Compra",
+      "customs": "Aduana e impuestos",
+      "registration": "Matriculación",
+      "logistics": "Transporte y puertos"
+    }
   }
 }

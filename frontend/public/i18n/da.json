@@ -398,7 +398,8 @@
     "why": "Hvorfor os",
     "what": "Hvad vi beregner",
     "ctaHint": "Gratis, uden oprettelse",
-    "language": "Sprog"
+    "language": "Sprog",
+    "blog": "Blog"
   },
   "footer": {
     "about": "Uafhængig beregner af importomkostninger for biler fra lande uden for EU. Vi hverken sælger eller importerer biler – vi regner ud, hvad de reelt koster.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Relaterede guides",
     "disclaimer": "Oplysningerne er kun vejledende; skatte- og toldmyndighederne fastsætter de endelige beløb. Satser som anvendt i beregneren."
+  },
+  "blog": {
+    "title": "Blog om bilimport",
+    "lead": "Praktiske artikler om import af biler fra USA, Canada, Japan, De Forenede Arabiske Emirater og Storbritannien: reelle omkostninger, auktioner, told, registrering og de fejl, du bør undgå.",
+    "metaTitle": "Blog om bilimport – omkostninger, auktioner, told, registrering | CarImport.eu",
+    "metaDescription": "Guider og artikler om import af bil til Danmark og EU: hvad det reelt koster, hvordan du køber på Copart og IAAI, told, moms og registrering.",
+    "all": "Alle",
+    "minutes": "{{n}} min. læsning",
+    "related": "Læs også",
+    "latest": "Fra bloggen",
+    "latestLead": "Svar på de spørgsmål, folk stiller, før de importerer en bil.",
+    "more": "Alle artikler",
+    "empty": "Artikler på dansk er på vej.",
+    "category": {
+      "costs": "Omkostninger",
+      "buying": "Køb",
+      "customs": "Told og afgifter",
+      "registration": "Registrering",
+      "logistics": "Fragt og havne"
+    }
   }
 }

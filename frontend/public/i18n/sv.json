@@ -398,7 +398,8 @@
     "why": "Varför vi",
     "what": "Vad vi räknar med",
     "ctaHint": "Gratis, utan registrering",
-    "language": "Språk"
+    "language": "Språk",
+    "blog": "Blogg"
   },
   "footer": {
     "about": "Oberoende kalkylator för importkostnader för bilar från länder utanför EU. Vi varken säljer eller importerar bilar – vi räknar ut vad de verkligen kostar.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Relaterade guider",
     "disclaimer": "Informationen är endast vägledande; skatte- och tullmyndigheterna fastställer de slutliga beloppen. Satser enligt kalkylatorn."
+  },
+  "blog": {
+    "title": "Blogg om bilimport",
+    "lead": "Praktiska artiklar om att importera bil från USA, Kanada, Japan, Förenade Arabemiraten och Storbritannien: verkliga kostnader, auktioner, tull, registrering och misstagen du bör undvika.",
+    "metaTitle": "Blogg om bilimport – kostnader, auktioner, tull, registrering | CarImport.eu",
+    "metaDescription": "Guider och artiklar om att importera bil till Sverige och EU: vad det verkligen kostar, hur du köper på Copart och IAAI, tull, moms och registrering.",
+    "all": "Alla",
+    "minutes": "{{n}} min läsning",
+    "related": "Läs också",
+    "latest": "Från bloggen",
+    "latestLead": "Svar på frågorna man ställer innan man importerar en bil.",
+    "more": "Alla artiklar",
+    "empty": "Artiklar på svenska kommer snart.",
+    "category": {
+      "costs": "Kostnader",
+      "buying": "Köpa",
+      "customs": "Tull och skatter",
+      "registration": "Registrering",
+      "logistics": "Frakt och hamnar"
+    }
   }
 }

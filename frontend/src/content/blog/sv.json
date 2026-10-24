@@ -1,0 +1,977 @@
+[
+  {
+    "id": "total-cost",
+    "slug": "vad-kostar-det-att-importera-bil-fran-usa",
+    "category": "costs",
+    "origin": "USA",
+    "date": "2026-10-20",
+    "minutes": 4,
+    "title": "Vad kostar det egentligen att importera en bil från USA?",
+    "metaTitle": "Vad kostar det att importera bil från USA? | CarImport.eu",
+    "description": "Vad kostar det att importera bil från USA till Sverige? Auktionsavgifter, frakt, tull 10 %, importmoms 25 % och registrering – med räkneexempel.",
+    "lead": "Priset på Copart eller IAAI är bara början. När bilen står registrerad på uppfarten har du ofta betalat 1,6 till 2 gånger klubbslagspriset. Här går vi igenom vart pengarna tar vägen – post för post, med svensk moms och svenska myndigheter.",
+    "blocks": [
+      {
+        "h2": "Det korta svaret"
+      },
+      {
+        "p": "För en vanlig personbil som ropas in för 10 000 dollar på en amerikansk auktion bör du räkna med en totalkostnad på ungefär 19 000 dollar levererad till Sverige, före registrering. De största posterna efter själva bilen är importmomsen på 25 %, tullen på 10 % och transporten över Atlanten. Reparationer av skadade bilar kommer ovanpå. I kronor beror slutsumman på dollarkursen den dag du betalar – kalkylatorn räknar om allt till SEK."
+      },
+      {
+        "h2": "1. Köpet: bud plus auktionsavgifter"
+      },
+      {
+        "p": "Copart och IAAI tar ut en köparavgift som stiger med priset, plus fasta avgifter för internetbud, utlämning (gate fee) och miljöhantering. Bilar med clean title och salvage title har olika avgiftstabeller. Budar du via en broker tillkommer brokerns provision."
+      },
+      {
+        "ul": [
+          "Köparavgift: trappstegsvis efter pris, ofta 600–1 000 dollar på en bil för 10 000 dollar",
+          "Avgift för internetbud och gate fee: cirka 100–200 dollar",
+          "Brokerprovision: normalt 200–500 dollar per bil",
+          "Lagringsavgift: debiteras per dag om du betalar eller hämtar sent"
+        ]
+      },
+      {
+        "h2": "2. Transport till exporthamnen"
+      },
+      {
+        "p": "En lastbil kör bilen från auktionsplatsen till exporthamnen, oftast New Jersey, Savannah, Houston eller Los Angeles. Avståndet spelar roll: en uppställningsplats nära hamnen kostar några hundra dollar, en transport tvärs över kontinenten över 1 000 dollar. En bil som inte går att köra behöver gaffeltruck och vinsch, vilket ger ett tillägg."
+      },
+      {
+        "h2": "3. Sjöfrakt och försäkring"
+      },
+      {
+        "p": "Delad container (oftast 3–4 bilar) är det billigaste säkra alternativet: cirka 1 000–1 600 dollar per bil från östkusten till hamnarna i Nordsjön och Östersjön. RoRo är billigare för körbara bilar men ger sämre skydd. Transportförsäkringen kostar ungefär 1,5 % av bilens värde och ingår i tullvärdet."
+      },
+      {
+        "h2": "4. Tull"
+      },
+      {
+        "p": "Tullen beräknas på tullvärdet, det så kallade CIF-värdet: pris, auktionsavgifter, transport till EU:s gräns och försäkring. För personbilar är tullsatsen 10 % (KN-nummer 8703), för pickuper 22 % och för motorcyklar 6–8 %. Bilar äldre än 30 år i originalskick kan vara tullfria som samlarobjekt. Tullen hanteras av Tullverket om bilen förtullas i Sverige."
+      },
+      {
+        "h2": "5. Importmoms – i landet där bilen förtullas"
+      },
+      {
+        "p": "Moms tas ut på tullvärdet plus tull och transportkostnaderna till första bestämmelseort i EU. Satsen är den som gäller i landet där bilen förtullas – i Sverige 25 %, i EU som helhet från 17 % i Luxemburg till 27 % i Ungern. Därför kan valet av hamn ändra totalen med tusentals kronor, men jämförelsen måste göras från dörr till dörr."
+      },
+      {
+        "h2": "6. Hamn, leverans och registrering"
+      },
+      {
+        "p": "I EU-hamnen betalar du terminalhantering och lossning av containern samt ett tullombud. Därefter körs bilen hem till dig med biltransport eller bärgare, prissatt per kilometer. Till sist kommer de svenska kostnaderna: registreringsbesiktning hos ett besiktningsföretag, eventuella ombyggnader av belysning och registrering hos Transportstyrelsen. Sverige har ingen engångsskatt vid registrering, men den årliga fordonsskatten beror på bilens utsläpp och drivmedel – kontrollera den innan du köper."
+      },
+      {
+        "h2": "Exempel: en bil för 10 000 dollar"
+      },
+      {
+        "table": {
+          "head": [
+            "Post",
+            "Belopp (USD)"
+          ],
+          "rows": [
+            [
+              "Vinnande bud",
+              "10 000"
+            ],
+            [
+              "Auktions- och brokeravgifter",
+              "1 200"
+            ],
+            [
+              "Transport till hamnen",
+              "450"
+            ],
+            [
+              "Sjöfrakt, delad container",
+              "1 200"
+            ],
+            [
+              "Transportförsäkring",
+              "180"
+            ],
+            [
+              "Tullvärde (CIF)",
+              "13 030"
+            ],
+            [
+              "Tull 10 %",
+              "1 303"
+            ],
+            [
+              "Hamn, lossning, tullombud och leverans hem",
+              "≈ 1 000"
+            ],
+            [
+              "Momsunderlag (CIF + tull + hamn och leverans)",
+              "15 333"
+            ],
+            [
+              "Importmoms 25 %",
+              "3 833"
+            ],
+            [
+              "Totalt före registrering",
+              "≈ 19 170"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Exemplet bygger på avrundade siffror för att ge en känsla för nivåerna. Valutakursen, landet där bilen förtullas, biltypen och din adress påverkar resultatet. Kalkylatorn jämför alla 43 EU-hamnar från dörr till dörr – du anger bara din adress, så räknar den ut kostnaden för just din bil i kronor."
+      },
+      {
+        "tip": "Planera in en buffert på 10–15 % för överraskningar: lagringsavgifter, ett försenat fartyg, en tullkontroll eller dolda skador. Kalkylatorn visar de riskerna i sitt pessimistiska scenario."
+      },
+      {
+        "h2": "Så betalar du mindre"
+      },
+      {
+        "ol": [
+          "Köp nära en exporthamn för att spara på transporten inom USA.",
+          "Välj delad container i stället för en egen.",
+          "Jämför förtullningshamnar: lägre moms i ett annat EU-land kan väga upp den längre vägtransporten.",
+          "Kontrollera auktionens avgiftstrappor – några dollar över en gräns kan höja avgiften.",
+          "Betala auktionen i dollar via en valutatjänst med låg marginal i stället för bankens standardkurs."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kan en privatperson få tillbaka importmomsen?",
+        "a": "Nej. För en privatperson är importmomsen en slutlig kostnad. Ett momsregistrerat företag kan normalt dra av den, eller använda tullförfarande 4200 när bilen går vidare till ett annat EU-land."
+      },
+      {
+        "q": "Betalar jag moms även på frakten?",
+        "a": "Ja. Momsunderlaget omfattar tullvärdet, tullen och transportkostnaderna till första bestämmelseort i EU."
+      },
+      {
+        "q": "Finns det en registreringsskatt i Sverige?",
+        "a": "Nej, Sverige har ingen engångsskatt vid registrering. Du betalar registreringsbesiktning, avgifter till Transportstyrelsen och därefter årlig fordonsskatt."
+      }
+    ]
+  },
+  {
+    "id": "copart-iaai",
+    "slug": "kopa-bil-pa-copart-och-iaai-fran-sverige",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-16",
+    "minutes": 3,
+    "title": "Så köper du bil på Copart eller IAAI från Sverige",
+    "metaTitle": "Köpa bil på Copart och IAAI från Sverige – guide | CarImport.eu",
+    "description": "Så köper du bil på Copart eller IAAI från Sverige: broker, deposition, bud, avgifter och tidsfrister steg för steg – och hur mycket du kan bjuda.",
+    "lead": "Copart och IAAI säljer hundratusentals bilar varje månad, och många av dem går till köpare i Europa. Här är hur budgivningen fungerar när du sitter i Sverige, vilka avgifter som tillkommer och vilka tidsfrister du inte får missa.",
+    "blocks": [
+      {
+        "h2": "Behöver du en broker?"
+      },
+      {
+        "p": "Många objekt kan bara köpas med återförsäljarlicens, och vissa delstater begränsar vem som får köpa salvage-bilar. Därför budar de flesta europeiska köpare via en registrerad broker (även kallad agent eller importör) som lägger buden åt dig under sin licens. Brokern tar en fast provision per bil och sköter ofta även betalning, upphämtning och export."
+      },
+      {
+        "p": "Välj en broker som har arbetat med köpare i Norden, som tydligt redovisar alla avgifter i förväg och som kan visa hur depositionen hanteras. Fråga också vilka hamnar de skeppar till – det påverkar både fraktpriset och var bilen förtullas."
+      },
+      {
+        "h2": "Steg för steg"
+      },
+      {
+        "ol": [
+          "Välj broker och skriv avtal; du får tillgång till budgivning via deras konto.",
+          "Betala depositionen – oftast cirka 10 % av ditt maxbud.",
+          "Hitta bilen, läs skickrapporten och kontrollera VIN-historiken (till exempel Carfax eller AutoCheck).",
+          "Sätt ditt maxbud inklusive alla avgifter – inte bara klubbslagspriset.",
+          "Buda i förhandsrundan eller live; högsta budet vinner om det når säljarens reservationspris.",
+          "Betala inom fristen (oftast 2–3 bankdagar) via banköverföring i dollar.",
+          "Ordna upphämtning snabbt – den fria lagringstiden är kort, sedan tas en dagsavgift ut.",
+          "Bilen körs till hamnen och titeln skickas till exportören för tullhanteringen."
+        ]
+      },
+      {
+        "h2": "Så läser du en annons"
+      },
+      {
+        "ul": [
+          "Titeltyp: clean, salvage, rebuilt eller certificate of destruction / parts only",
+          "Primär och sekundär skada, krockkuddar, mätarställningens status",
+          "Etiketterna Run and Drive, Engine Starts och Enhanced Vehicles – kontrolleras bara vid inlämning, ingen garanti",
+          "Nycklar, var uppställningsplatsen ligger och hur långt det är till hamnen",
+          "Säljartyp: försäkringsbolag, bilhandlare, biluthyrningsfirma"
+        ]
+      },
+      {
+        "tip": "Run and Drive betyder att bilen startade och rullade framåt vid inlämningen. Det betyder inte att den är trafiksäker – planera för en teknisk kontroll när den kommit hem."
+      },
+      {
+        "h2": "Avgifter som överraskar nya köpare"
+      },
+      {
+        "p": "Utöver köparavgiften lägger auktionerna till avgifter för internetbud, utlämning, miljöhantering och titelhantering. Sen betalning och sen upphämtning kostar extra, och om du inte betalar alls tillkommer avgift för ny försäljning. Brokern lägger till sin provision och ibland en avgift för dokument och export. Fråga alltid efter en komplett lista innan du budar första gången."
+      },
+      {
+        "h2": "Hur mycket ska du buda?"
+      },
+      {
+        "p": "Räkna baklänges. Utgå från vad bilen får kosta levererad till din dörr – inklusive tull, 25 % importmoms, transport, registreringsbesiktning och ombyggnad – och från vad den är värd på den svenska marknaden efter eventuella reparationer. Skillnaden är ditt utrymme, och kalkylatorn omvandlar den till ett bud i dollar. Den jämför samtidigt alla 43 EU-hamnar från dörr till dörr; du anger bara din adress."
+      },
+      {
+        "p": "Kom ihåg att dollarkursen rör sig mellan budet och betalningen. Lägg gärna in några procents marginal om kronan är svag, och bestäm dig för ett tak innan auktionen startar. Det är lätt att rycka med i en livebudgivning."
+      },
+      {
+        "h2": "Copart eller IAAI – vad är skillnaden?"
+      },
+      {
+        "p": "Båda auktionerna säljer främst bilar från försäkringsbolag, och utbudet överlappar ofta. Copart har fler platser och ett mycket stort utbud, medan IAAI ibland har mer detaljerade bilder och skickrapporter. Avgiftstabellerna skiljer sig åt, så jämför den faktiska slutsumman för just ditt budnivå i stället för att välja auktion av vana. Bevaka gärna samma modell på båda under några veckor för att lära dig vilka priser som är realistiska."
+      },
+      {
+        "h2": "Hur lång tid tar det?"
+      },
+      {
+        "p": "Från vunnen auktion till bil i en europeisk hamn går det normalt 4–8 veckor. Till det kommer förtullning, transport hem och tid för registreringsbesiktning och registrering hos Transportstyrelsen. Räkna alltså med att bilen står på svenska skyltar tidigast efter två månader."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kan jag ångra köpet efter att ha vunnit?",
+        "a": "Normalt inte utan kostnad. Betalar du inte förlorar du depositionen, och avgifter för ny försäljning kan tillkomma."
+      },
+      {
+        "q": "Hur lång tid tar det från vunnen auktion till bilen i Europa?",
+        "a": "Oftast 4–8 veckor: betalning och upphämtning 1–2 veckor, transport till hamnen och lastning 1–3 veckor, sjöresa 2–5 veckor."
+      },
+      {
+        "q": "Kan jag köpa direkt på Copart utan broker?",
+        "a": "Vissa bilar kan köpas med ett vanligt medlemskap, men många kräver återförsäljarlicens. En broker ger tillgång till fler objekt och hjälper med export."
+      }
+    ]
+  },
+  {
+    "id": "salvage-title",
+    "slug": "salvage-title-bil-fran-usa-registrera-i-sverige",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-12",
+    "minutes": 3,
+    "title": "Salvage title-bilar från USA: det här behöver du veta",
+    "metaTitle": "Salvage title-bil från USA – går den att registrera? | CarImport.eu",
+    "description": "Kan en salvage title-bil från USA registreras i Sverige? Titeltyper, dolda skador, översvämningsbilar och hur du minskar risken innan du budar.",
+    "lead": "De flesta bilar på Copart och IAAI har en salvage title – det är därför de är så billiga. I Sverige hindrar själva titelstämpeln inte registrering, men den säger mycket om vilken risk du köper.",
+    "blocks": [
+      {
+        "h2": "Titeltyperna i korthet"
+      },
+      {
+        "ul": [
+          "Clean – ingen totalskada registrerad",
+          "Salvage – förklarad som totalskada av ett försäkringsbolag (kollision, översvämning, återfunnen stöldbil, hagel)",
+          "Rebuilt / reconstructed – en tidigare salvage-bil som reparerats och kontrollerats på nytt i USA",
+          "Certificate of destruction / parts only / non-repairable – avsedd för delar; undvik om du vill registrera bilen"
+        ]
+      },
+      {
+        "p": "Titeln utfärdas av delstaten, och reglerna skiljer sig mellan delstaterna. Samma typ av skada kan alltså ge salvage title i en delstat men inte i en annan. Läs därför alltid titeln tillsammans med skadebeskrivningen och bilderna."
+      },
+      {
+        "h2": "Kan en salvage-bil registreras i Sverige?"
+      },
+      {
+        "p": "Ja. Sverige och övriga EU-länder använder inte de amerikanska titelstämplarna. Det som avgör är att den reparerade bilen klarar registreringsbesiktningen och uppfyller EU:s krav på belysning och säkerhet, innan Transportstyrelsen registrerar den. Salvage-historiken kan däremot sänka andrahandsvärdet, och vissa försäkringsbolag frågar efter den när du tecknar försäkring. Var ärlig om historiken när du säljer bilen vidare."
+      },
+      {
+        "h2": "Där den verkliga risken finns"
+      },
+      {
+        "p": "Bilderna visar den synliga skadan, inte vad som döljer sig bakom: deformerade balkar, utlösta krockkuddar och deras sensorer, elektronik efter översvämning och delar som saknas. Översvämningsbilar är de mest riskabla – korrosion och elfel visar sig ofta först efter flera veckor, när bilen redan står i Sverige."
+      },
+      {
+        "ul": [
+          "Vattenlinjer i kupén, slam under mattor och rost på skruvar under instrumentbrädan tyder på översvämning",
+          "Ojämna spaltmått och nya svetsfogar kan tyda på kaross- eller balkskada",
+          "Utlösta krockkuddar kräver nya krockkuddar, sensorer och ofta styrenhet – en dyr post",
+          "Hagelskador ser dramatiska ut men är ofta mindre riskabla än strukturella skador"
+        ]
+      },
+      {
+        "tip": "Budgetera reparationer till 30–40 % av priset för bilar som inte går att köra, och håll en extra reserv för dolda skador. Kalkylatorn föreslår de beloppen automatiskt."
+      },
+      {
+        "h2": "Så minskar du risken"
+      },
+      {
+        "ol": [
+          "Kontrollera VIN-historiken (Carfax, AutoCheck) för tidigare olyckor och översvämningar.",
+          "Välj helst bilar med enbart front- eller bakskada, utan utlösta krockkuddar.",
+          "Be en verkstad som kan modellen om en reparationsuppskattning innan du budar.",
+          "Kolla tillgång och pris på reservdelar i Sverige – amerikanska versioner har ibland andra delar än europeiska.",
+          "Lämna utrymme i budgeten: den billigaste bilen blir ofta det dyraste projektet."
+        ]
+      },
+      {
+        "h2": "Vad händer vid registreringsbesiktningen?"
+      },
+      {
+        "p": "Besiktningsteknikern tittar inte på om bilen har haft salvage title, utan på hur den ser ut i dag. Identiteten kontrolleras mot VIN-numret, och sedan granskas bromsar, styrning, belysning, krockkuddar, avgaser och karossens hållfasthet. En slarvigt lagad balk eller en varningslampa för krockkuddarna leder till underkännande. Spara därför kvitton och bilder från reparationen; de gör det lättare att förklara vad som är åtgärdat. Om bilen underkänns får du åtgärda bristerna och boka en efterkontroll, vilket kostar både tid och pengar."
+      },
+      {
+        "p": "Planera reparationen så att den är klar innan du bokar besiktningen. Många väljer att låta en verkstad som är van vid amerikanska bilar göra både reparation och ombyggnad av belysningen i samma veva."
+      },
+      {
+        "h2": "Räkna på hela projektet"
+      },
+      {
+        "p": "En salvage-bil är billig att köpa men kostar lika mycket som en oskadd bil att frakta, förtulla och registrera. Tull på 10 % och svensk importmoms på 25 % beräknas på priset och transporten, inte på skadan. Lägg till reparationer, eventuella ombyggnader av belysning och en ny registreringsbesiktning om bilen inte godkänns första gången. Kalkylatorn räknar fram hela kostnaden och jämför samtidigt alla 43 EU-hamnar från dörr till dörr – du anger bara din adress. Jämför sedan totalen med vad en motsvarande bil kostar i Sverige."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Påverkar en salvage title tullen?",
+        "a": "Nej. Tull och moms beräknas på köpeskillingen och transportkostnaderna, oavsett titel."
+      },
+      {
+        "q": "Är en rebuilt title bättre?",
+        "a": "Den visar att bilen reparerats och kontrollerats i USA, men kvaliteten på reparationen varierar. Granska den som vilken skadad bil som helst."
+      },
+      {
+        "q": "Måste jag berätta om salvage-historiken när jag säljer bilen?",
+        "a": "Du bör vara öppen med bilens historik. Den syns ofta i VIN-rapporter, och att dölja en känd skada kan leda till krav från köparen."
+      }
+    ]
+  },
+  {
+    "id": "customs-vat",
+    "slug": "tull-och-moms-vid-import-av-bil",
+    "category": "customs",
+    "origin": null,
+    "date": "2026-10-08",
+    "minutes": 3,
+    "title": "Tull och moms vid import av bil – så räknar Tullverket",
+    "metaTitle": "Tull och moms vid import av bil från USA | CarImport.eu",
+    "description": "Tull och moms vid import av bil: vad som ingår i tullvärdet, tullsatser 10 %, 22 % och 0 %, importmoms 25 % i Sverige och ett räkneexempel steg för steg.",
+    "lead": "Förtullningen är där de flesta förstagångsimportörer räknar fel. Två regler förklarar nästan allt: tull tas ut på CIF-värdet, och moms läggs ovanpå i landet där bilen förtullas. I Sverige är det Tullverket som fattar beslut om tull och importmoms.",
+    "blocks": [
+      {
+        "h2": "Tullvärdet: vad som ingår"
+      },
+      {
+        "p": "Tullvärdet för en bil som köpts utanför EU är transaktionsvärdet plus kostnaderna för att föra bilen till EU:s gräns: auktionsavgifter, transport till exporthamnen, sjöfrakt och försäkring. Kostnader efter gränsen – lossning och transport inom EU – ingår inte i tullvärdet, men de kommer tillbaka i momsunderlaget."
+      },
+      {
+        "ul": [
+          "Ingår i tullvärdet: köpeskilling, köpar- och brokeravgifter, inlandstransport i USA, sjöfrakt, försäkring",
+          "Ingår inte i tullvärdet: lossning i EU-hamnen, tullombud, transport från hamnen hem",
+          "Ingår i momsunderlaget: tullvärdet, tullen och transporten till första bestämmelseort i EU"
+        ]
+      },
+      {
+        "h2": "Tullsatser"
+      },
+      {
+        "table": {
+          "head": [
+            "Fordon",
+            "KN-nummer",
+            "Tull"
+          ],
+          "rows": [
+            [
+              "Personbil, SUV",
+              "8703",
+              "10 %"
+            ],
+            [
+              "Pickup, lätt lastbil",
+              "8704",
+              "22 %"
+            ],
+            [
+              "Motorcykel",
+              "8711",
+              "6–8 %"
+            ],
+            [
+              "Samlarfordon (30+ år, originalskick)",
+              "9705",
+              "0 %"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Klassificeringen styrs av fordonets konstruktion, inte av vad det står i annonsen. En pickup med dubbelhytt kan i vissa fall räknas som personbil, men utgå från 22 % tills du vet säkert. Samlarfordon måste vara i väsentligen originalskick; en kraftigt modifierad veteranbil kan hamna i 8703 och få 10 % tull."
+      },
+      {
+        "h2": "Importmoms"
+      },
+      {
+        "p": "Moms beräknas på tullvärdet plus tullen och transportkostnaderna till första bestämmelseort i EU. Den betalas i det medlemsland där bilen övergår till fri omsättning, med det landets normalskattesats. I Sverige är satsen 25 %. Privatpersoner betalar importmomsen till Tullverket tillsammans med tullen, medan momsregistrerade företag redovisar importmomsen i sin momsdeklaration hos Skatteverket."
+      },
+      {
+        "p": "Vissa länder tar dessutom ut punktskatt eller registreringsskatt senare, och de skiljer sig mycket åt. Sverige har ingen sådan engångsskatt vid registrering, men den årliga fordonsskatten beror på bilens utsläpp och drivmedel."
+      },
+      {
+        "p": "Ett vanligt misstag är att räkna momsen bara på bilens pris. Eftersom både frakt, försäkring, tull och transporten till bestämmelseorten ingår i underlaget blir momsen i praktiken betydligt högre än 25 % av klubbslagspriset."
+      },
+      {
+        "h2": "Räkneexempel"
+      },
+      {
+        "table": {
+          "head": [
+            "",
+            "EUR"
+          ],
+          "rows": [
+            [
+              "Tullvärde (CIF)",
+              "12 000"
+            ],
+            [
+              "Tull 10 %",
+              "1 200"
+            ],
+            [
+              "Lossning och transport till bestämmelseorten",
+              "700"
+            ],
+            [
+              "Momsunderlag",
+              "13 900"
+            ],
+            [
+              "Importmoms 25 %",
+              "3 475"
+            ],
+            [
+              "Tull + moms",
+              "4 675"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Samma bil förtullad i ett land med 21 % moms skulle ge 2 919 euro i moms, alltså drygt 550 euro mindre. Men då tillkommer en längre vägtransport till Sverige, och för nästan nya bilar gäller särskilda regler (se nedan). Kalkylatorn jämför alla 43 EU-hamnar från dörr till dörr i kronor – du anger bara din adress."
+      },
+      {
+        "h2": "Så går förtullningen till"
+      },
+      {
+        "ol": [
+          "Fartyget anländer och containern lossas i hamnen; bilen läggs upp i tillfällig lagring.",
+          "Tullombudet lämnar en tulldeklaration med faktura, fraktdokument och titel som underlag.",
+          "Tullverket (eller tullmyndigheten i hamnlandet) fattar beslut om tull och importmoms.",
+          "Du betalar beloppen, och bilen släpps för fri omsättning i EU.",
+          "Med tullbeslutet som bevis kan bilen köras eller transporteras vidare och sedan registreras."
+        ]
+      },
+      {
+        "p": "Hela förloppet tar oftast några dagar om dokumenten är kompletta. Saknas en faktura eller stämmer inte VIN-numret i papperen med bilen kan det bli både fördröjning och extra lagringsavgifter i hamnen. Kontrollera därför papperen innan bilen lämnar USA."
+      },
+      {
+        "h2": "Tullförfarande 4200"
+      },
+      {
+        "p": "Ett momsregistrerat företag som importerar en bil som går direkt vidare till ett annat EU-land kan förtulla den enligt förfarande 4200: ingen importmoms betalas i ankomstlandet, och köparen redovisar momsen i sitt eget land genom omvänd skattskyldighet. Privatpersoner kan inte använda förfarandet."
+      },
+      {
+        "h2": "Nya transportmedel"
+      },
+      {
+        "p": "Om bilen räknas som ett nytt transportmedel enligt EU:s momsregler – i regel högst sex månader gammal eller körd högst 6 000 kilometer – ska momsen betalas i det land där bilen registreras. Det gäller även privatpersoner. För de flesta begagnade auktionsbilar spelar regeln ingen roll, men för nästan nya bilar kan den göra en billigare momshamn ointressant."
+      },
+      {
+        "tip": "Spara köpefakturan, kvitton på auktionsavgifter, fraktfakturan och konossementet (bill of lading). Tullverket kan ifrågasätta det deklarerade värdet, och de här dokumenten bevisar det."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kan Tullverket höja värdet på min bil?",
+        "a": "Ja, om det deklarerade priset verkar orimligt lågt. Bevis på auktionsresultatet och betalningarna brukar räcka för att reda ut det."
+      },
+      {
+        "q": "Är tullen lägre för elbilar?",
+        "a": "Nej, även rena elbilar betalar 10 % tull som personbilar. Skillnaden ligger i nationella skatter, som den svenska fordonsskatten."
+      },
+      {
+        "q": "Måste jag anlita ett tullombud?",
+        "a": "Det är inget krav, men de flesta använder ett tullombud i hamnen eftersom det gör deklarationen snabbare och minskar risken för fel."
+      }
+    ]
+  },
+  {
+    "id": "registration",
+    "slug": "registrera-importerad-bil-i-sverige-registreringsbesiktning",
+    "category": "registration",
+    "origin": null,
+    "date": "2026-10-04",
+    "minutes": 3,
+    "title": "Registrera en importerad bil i Sverige: dokument, registreringsbesiktning och steg",
+    "metaTitle": "Registrera importerad bil – registreringsbesiktning | CarImport.eu",
+    "description": "Så registrerar du en importerad bil i Sverige: dokument, ombyggnad av belysning, registreringsbesiktning och registrering hos Transportstyrelsen.",
+    "lead": "Förtullningen är bara halva jobbet. Innan bilen får svenska skyltar måste den uppfylla EU:s tekniska krav, klara registreringsbesiktningen och registreras hos Transportstyrelsen – och du behöver en rad dokument.",
+    "blocks": [
+      {
+        "h2": "Dokument du behöver"
+      },
+      {
+        "ul": [
+          "Titel eller exportintyg samt köpefaktura",
+          "Tullbeslut som visar att tull och importmoms är betalda",
+          "Konossement (bill of lading) eller annat fraktdokument",
+          "Översättningar av dokument på andra språk än engelska om besiktningsföretaget eller Transportstyrelsen begär det",
+          "Intyg från registreringsbesiktningen",
+          "Legitimation och, när bilen ska köras, trafikförsäkring"
+        ]
+      },
+      {
+        "p": "Se till att VIN-numret är identiskt i alla dokument och på bilen. Ett felskrivet tecken i en faktura eller titel är en av de vanligaste orsakerna till att ärendet stannar upp."
+      },
+      {
+        "h2": "Teknisk anpassning"
+      },
+      {
+        "p": "Amerikanska bilar behöver nästan alltid få belysningen anpassad: röda bakre blinkers och sidomarkeringsljus uppfyller inte EU:s regler, och strålkastarna kan behöva ett annat ljusmönster. Hastighetsmätaren måste visa km/h. En bakre dimlampa är obligatorisk. Japanska bilar är högerstyrda, vilket accepteras i Sverige, men strålkastarna måste vara anpassade för högertrafik."
+      },
+      {
+        "ul": [
+          "Bakre blinkers: ska lysa gult (orange), inte rött",
+          "Strålkastare: ljusbild för högertrafik och E-märkning",
+          "Bakre dimljus: krävs",
+          "Hastighetsmätare: ska visa km/h",
+          "Däck och fälgar: ska vara godkända för bilens vikt och hastighet"
+        ]
+      },
+      {
+        "h2": "Registreringsbesiktning"
+      },
+      {
+        "p": "En bil utan europeiskt typgodkännande genomgår en registreringsbesiktning hos ett ackrediterat besiktningsföretag. Teknikern kontrollerar identiteten (VIN), belysning, avgaser, bromsar och säkerhetsutrustning och att bilen stämmer med de tekniska uppgifter som ska registreras. För bilar som saknar europeiskt intyg om överensstämmelse kan du behöva ta fram tekniska underlag, till exempel om vikter och avgasvärden. Planera steget tillsammans med en verkstad som är van vid importbilar."
+      },
+      {
+        "tip": "Be verkstaden om en lista över nödvändiga ändringar innan du köper – ombyggnaden kostar mycket mer på vissa modeller än på andra."
+      },
+      {
+        "h2": "Registrering och skatter"
+      },
+      {
+        "p": "Med godkänd registreringsbesiktning registreras bilen i vägtrafikregistret hos Transportstyrelsen, och du får registreringsnummer och skyltar. Sverige har ingen engångsskatt vid registrering, till skillnad från till exempel Danmark eller Finland. Däremot betalar du avgifter för besiktning och registrering och därefter en årlig fordonsskatt som beror på bilens utsläpp och drivmedel. Hur stor den blir för just din bil kan du kontrollera innan du köper."
+      },
+      {
+        "h2": "Steg för steg"
+      },
+      {
+        "ol": [
+          "Förtulla bilen och spara tullbeslutet.",
+          "Transportera bilen hem på biltransport eller bärgare.",
+          "Låt en verkstad bygga om belysning och annat som krävs.",
+          "Boka registreringsbesiktning och ta med alla dokument.",
+          "Åtgärda eventuella anmärkningar och gör efterkontroll.",
+          "Registrera bilen hos Transportstyrelsen och teckna trafikförsäkring.",
+          "Hämta ut skyltarna och kör."
+        ]
+      },
+      {
+        "h2": "Vanliga misstag vid registreringen"
+      },
+      {
+        "ul": [
+          "Att boka registreringsbesiktning innan ombyggnaden är klar – ett underkännande kostar en ny tid och en efterkontroll",
+          "Att tappa bort tullbeslutet eller fraktdokumentet, som behövs för att visa att bilen är lagligt införd",
+          "Att inte kontrollera att avgasvärden och vikter finns dokumenterade för en ovanlig modell",
+          "Att räkna med att bilen kan köras på amerikanska skyltar i väntan på registrering",
+          "Att glömma att trafikförsäkringen måste vara på plats från första dagen bilen är registrerad"
+        ]
+      },
+      {
+        "p": "Den som förbereder sig väl brukar klara besiktningen på första försöket. Samla alla dokument i en mapp, både på papper och digitalt, och ta med originalen till besiktningen."
+      },
+      {
+        "h2": "Vad kostar registreringen?"
+      },
+      {
+        "p": "De största posterna är oftast ombyggnaden och tiden på verkstaden, inte själva avgifterna. Räkna med att några timmars arbete och reservdelar för belysning kan bli den dyraste delen på amerikanska bilar. Kalkylatorn lägger in en uppskattning för registreringen och visar hela kostnaden i kronor, efter att ha jämfört alla 43 EU-hamnar från dörr till dörr – du anger bara din adress."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Behöver jag ett intyg om överensstämmelse (CoC)?",
+        "a": "Bilar byggda för USA eller Japan har inget europeiskt CoC. De registreras i stället efter registreringsbesiktning och, vid behov, tekniska underlag om bilen."
+      },
+      {
+        "q": "Kan jag köra bilen hem från hamnen?",
+        "a": "Bara om den är trafiksäker, har giltig försäkring och tillfälliga skyltar eller motsvarande tillstånd. Annars använder du biltransport eller bärgare."
+      },
+      {
+        "q": "Måste en högerstyrd bil byggas om?",
+        "a": "Nej, högerstyrda bilar kan registreras i Sverige, men strålkastarna måste ge rätt ljusbild för högertrafik."
+      }
+    ]
+  },
+  {
+    "id": "port-choice",
+    "slug": "goteborg-bremerhaven-eller-baltikum-valja-hamn-for-bilimport",
+    "category": "logistics",
+    "origin": null,
+    "date": "2026-09-30",
+    "minutes": 3,
+    "title": "Göteborg, Bremerhaven eller en hamn i Baltikum? Så väljer du hamn för förtullning",
+    "metaTitle": "Göteborg, Bremerhaven eller Baltikum? Välj hamn | CarImport.eu",
+    "description": "Vilken hamn ska du välja när du importerar bil till Sverige? Göteborg, Bremerhaven, Hanko eller Tallinn – moms, hamnavgifter och vägtransport jämförda.",
+    "lead": "De flesta bilar från USA kommer in via Bremerhaven, Rotterdam eller Antwerpen, men för en svensk köpare ligger Göteborg, Malmö och hamnarna runt Östersjön närmare. Bilen kan förtullas i vilken som helst av 43 EU-hamnar, och hamnen avgör momssatsen, hamnavgifterna och hur långt bilen måste köras på väg.",
+    "blocks": [
+      {
+        "h2": "Tre saker som hamnen påverkar"
+      },
+      {
+        "ol": [
+          "Importmoms: du betalar momssatsen i hamnlandet – 25 % i Sverige och Danmark, 25,5 % i Finland, 24 % i Estland, 21 % i Lettland och Litauen och 19 % i Tyskland.",
+          "Avgifter: terminalhantering, lossning av containern och tullombud skiljer sig mellan hamnarna.",
+          "Vägtransport: hamnen med lägst moms kan ligga långt från din adress, och varje mil kostar."
+        ]
+      },
+      {
+        "h2": "De närmaste hamnarna från Stockholm"
+      },
+      {
+        "p": "Räknat från Stockholm ligger flera av de närmaste förtullningshamnarna på andra sidan Östersjön, eftersom färjorna gör resvägen kort. Från södra Sverige är Malmö, Köpenhamn och de tyska hamnarna närmare. Tabellen visar ungefärliga avstånd från Stockholm och momssatsen i respektive land."
+      },
+      {
+        "table": {
+          "head": [
+            "Hamn",
+            "Land",
+            "Avstånd från Stockholm",
+            "Moms"
+          ],
+          "rows": [
+            [
+              "Hanko",
+              "Finland",
+              "ca 351 km",
+              "25,5 %"
+            ],
+            [
+              "Tallinn (Muuga)",
+              "Estland",
+              "ca 487 km",
+              "24 %"
+            ],
+            [
+              "Göteborg",
+              "Sverige",
+              "ca 505 km",
+              "25 %"
+            ],
+            [
+              "Helsingfors (Vuosaari)",
+              "Finland",
+              "ca 513 km",
+              "25,5 %"
+            ],
+            [
+              "Riga",
+              "Lettland",
+              "ca 548 km",
+              "21 %"
+            ],
+            [
+              "Klaipėda",
+              "Litauen",
+              "ca 552 km",
+              "21 %"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Göteborg är det naturliga valet för många: bilen förtullas i Sverige med svensk moms, och den svenska tullprocessen är välkänd för de flesta tullombud. Malmö är ett alternativ för dig som bor i Skåne. Bremerhaven och Hamburg har däremot de tätaste linjerna från USA och ofta lägst fraktpris per bil."
+      },
+      {
+        "h2": "När en utländsk hamn blir billigare"
+      },
+      {
+        "p": "Eftersom Sverige har en hög momssats på 25 % kan det löna sig att förtulla bilen i ett land med lägre moms, till exempel Tyskland med 19 % eller Lettland och Litauen med 21 %. Momsen betalas då i hamnlandet och är slutlig för en privatperson; du registrerar sedan bilen i Sverige med tullbeslutet som underlag. På en bil med ett momsunderlag på 15 000 euro motsvarar sex procentenheter cirka 900 euro – men därifrån ska den längre vägtransporten, eventuell färja och dyrare hamnavgifter dras av."
+      },
+      {
+        "p": "Observera regeln om nya transportmedel: är bilen högst sex månader gammal eller körd högst 6 000 kilometer ska momsen betalas i Sverige, oavsett var den förtullas. För de flesta begagnade auktionsbilar gäller det inte."
+      },
+      {
+        "h2": "Kostnader att jämföra för varje hamn"
+      },
+      {
+        "ul": [
+          "Fraktpris från exporthamnen i USA – direktlinjer är billigare än omlastning",
+          "Terminalhantering och lossning av containern i den europeiska hamnen",
+          "Tullombudets arvode och eventuella avgifter för dokument",
+          "Importmoms enligt hamnlandets sats",
+          "Biltransport eller bärgare från hamnen hem, inklusive färja vid behov",
+          "Tid: varje extra vecka i hamn eller på väg kan ge lagringsavgifter"
+        ]
+      },
+      {
+        "p": "För dig i Norrland eller Mellansverige kan en finsk eller baltisk hamn med färja vara kortare än vägen från Göteborg, medan den som bor i Skåne ofta har närmast till Malmö, Köpenhamn eller Hamburg. Det finns därför ingen hamn som är bäst för alla svenska köpare – det beror på din adress."
+      },
+      {
+        "h2": "Seglingstider"
+      },
+      {
+        "p": "Från USA:s östkust är Nordsjöhamnarna snabbast, cirka två veckor. Till Göteborg och hamnarna i Östersjön tillkommer ofta omlastning i Bremerhaven eller Rotterdam, vilket kan ge några dagar eller en vecka extra. Från Japan och Förenade Arabemiraten går fartygen genom Suezkanalen, så Medelhavshamnar som Koper, Genua eller Pireus är en vecka eller mer snabbare än Nordsjön – men ligger långt från Sverige på väg."
+      },
+      {
+        "h2": "Räkna från dörr till dörr"
+      },
+      {
+        "p": "En jämförelse som bara tittar på momsen blir fel. Du behöver lägga ihop frakt till hamnen, hamnavgifter, tullombud, importmoms och transport hem till din adress för varje alternativ. Kalkylatorn gör just det: den räknar på alla 43 EU-hamnar från dörr till dörr och visar resultatet i kronor. Du anger bara din adress."
+      },
+      {
+        "tip": "Ange din adress i kalkylatorn: den prissätter varje EU-hamn från dörr till dörr och väljer automatiskt den billigaste."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kan jag förtulla bilen i Tyskland och registrera den i Sverige?",
+        "a": "Ja. Du betalar importmomsen i Tyskland och registrerar bilen i Sverige med tullhandlingarna. Undantaget är nya transportmedel, där momsen ska betalas i Sverige."
+      },
+      {
+        "q": "Vilka hamnar tar emot flest bilar från USA?",
+        "a": "Bremerhaven, Rotterdam, Antwerpen och Hamburg vid Nordsjön, samt Östersjöhamnar som Gdynia och Klaipėda. För svenska köpare är även Göteborg och Malmö vanliga."
+      },
+      {
+        "q": "Är Göteborg alltid bäst för en svensk köpare?",
+        "a": "Inte alltid. Göteborg ger kort vägtransport för många, men en hamn med lägre moms eller billigare frakt kan bli billigare totalt. Det avgör jämförelsen från dörr till dörr."
+      }
+    ]
+  },
+  {
+    "id": "japan-jdm",
+    "slug": "importera-jdm-bil-fran-japan-auktionsblad-och-kostnader",
+    "category": "buying",
+    "origin": "JAPAN",
+    "date": "2026-09-25",
+    "minutes": 3,
+    "title": "Importera JDM-bil från Japan: auktionsblad, betyg och kostnader",
+    "metaTitle": "Importera bil från Japan – JDM, auktionsblad, kostnad | CarImport.eu",
+    "description": "Så importerar du en JDM-bil från Japan till Sverige: USS- och TAA-auktioner, hur du läser auktionsbladet, betyg, frakt, tull, moms och högerstyrning.",
+    "lead": "Japanska bilauktioner är kända för ärlig bedömning och bilar i mycket gott skick. Med en pålitlig exportör är det tryggare att köpa en JDM-bil än att köpa blint på amerikanska auktioner – förutsatt att du förstår auktionsbladet.",
+    "blocks": [
+      {
+        "h2": "Så fungerar köpet i Japan"
+      },
+      {
+        "p": "Auktioner som USS, TAA, CAA och JU är öppna för licensierade handlare. Du köper därför via en exportör: du väljer bilar, sätter ett maxbud, och exportören budar, betalar, avregistrerar bilen för export och skeppar den. Exportören tar en fast avgift per bil och ordnar exportintyget, som senare behövs vid förtullning och registrering i Sverige."
+      },
+      {
+        "p": "Utbudet är enormt – tiotusentals bilar i veckan – och priserna är ofta låga jämfört med motsvarande bilar i Europa, särskilt för sportbilar, kei-bilar och välutrustade familjebilar som aldrig sålts här. Många svenska köpare söker klassiska JDM-modeller från 1990-talet, där bilar äldre än 30 år i originalskick kan förtullas som samlarfordon utan tull."
+      },
+      {
+        "h2": "Så läser du auktionsbladet"
+      },
+      {
+        "ul": [
+          "Totalbetyg: 6–5 nästan ny, 4,5–4 mycket bra, 3,5 medel, R/RA reparerad krockskada",
+          "Interiörbetyg: A till D",
+          "Karosskarta: A = repa, U = buckla, W = våg/lagning, S = rost, C = korrosion, med en siffra för storlek",
+          "Inspektörens anteckningar – låt alltid översätta dem"
+        ]
+      },
+      {
+        "tip": "Ett R- eller RA-betyg är inte alltid dåligt, men fråga vad som reparerats – en balkreparation är något helt annat än en utbytt stötfångare."
+      },
+      {
+        "h2": "Kostnader och tider"
+      },
+      {
+        "p": "Lägg till exportörens avgift, transport inom Japan, exportdokument och sjöfrakt. Fartygen går via Suezkanalen: cirka 5–6 veckor till Nordsjön, kortare tid till Medelhavshamnarna. Till Göteborg tillkommer ofta omlastning. Tullen är 10 % för personbilar och importmomsen betalas i landet där bilen förtullas – 25 % om det sker i Sverige."
+      },
+      {
+        "table": {
+          "head": [
+            "Post",
+            "Kommentar"
+          ],
+          "rows": [
+            [
+              "Klubbslagspris",
+              "I yen, enligt auktionsresultatet"
+            ],
+            [
+              "Exportörens avgift och auktionsavgift",
+              "Fast belopp per bil"
+            ],
+            [
+              "Transport inom Japan",
+              "Från auktionen till hamnen"
+            ],
+            [
+              "Sjöfrakt och försäkring",
+              "RoRo eller container, via Suez"
+            ],
+            [
+              "Tull",
+              "10 % av CIF-värdet, 0 % för samlarfordon 30+ år"
+            ],
+            [
+              "Importmoms",
+              "25 % i Sverige, på CIF + tull + transport till bestämmelseorten"
+            ],
+            [
+              "Registreringsbesiktning och ombyggnad",
+              "Strålkastare, ibland hastighetsmätare"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Så väljer du exportör"
+      },
+      {
+        "ul": [
+          "Be om referenser från köpare i Norden eller övriga EU",
+          "Kontrollera att exportören skickar originalauktionsbladet, inte bara en sammanfattning",
+          "Fråga om alla avgifter i förväg: auktion, transport, dokument, frakt och försäkring",
+          "Se till att du får exportintyget (export certificate) i original – det behövs för registreringen",
+          "Välj en exportör som erbjuder översättning av inspektörens anteckningar"
+        ]
+      },
+      {
+        "p": "En bra exportör hjälper dig också att hitta rätt bil: många kan kontrollera en bil på plats före auktionen eller ta fram extra bilder. Det kostar lite extra men kan spara mycket pengar om bilen visar sig ha dolda skador."
+      },
+      {
+        "h2": "Steg för steg från Japan till Sverige"
+      },
+      {
+        "ol": [
+          "Välj exportör och betala en deposition.",
+          "Sök bilar och få auktionsbladen översatta.",
+          "Sätt maxbud inklusive alla avgifter, tull och moms.",
+          "Betala bilen och exportörens faktura efter vunnen auktion.",
+          "Exportören avregistrerar bilen och bokar frakt.",
+          "Bilen förtullas i vald EU-hamn och transporteras hem.",
+          "Registreringsbesiktning och registrering hos Transportstyrelsen."
+        ]
+      },
+      {
+        "h2": "Högerstyrning"
+      },
+      {
+        "p": "Högerstyrda bilar kan registreras i Sverige, men strålkastarna måste ge rätt ljusbild för högertrafik. Hastighetsmätaren ska visa km/h, vilket japanska bilar oftast redan gör. Vissa japanska modeller saknar bakre dimljus som måste monteras i efterhand. Tänk också på att omkörningar blir svårare med ratten till höger på svenska landsvägar."
+      },
+      {
+        "h2": "Rost och vinterförhållanden"
+      },
+      {
+        "p": "Japanska bilar från södra och mellersta Japan har ofta mycket lite rost, eftersom vägarna där sällan saltas. Bilar från Hokkaido och norra Honshu kan däremot ha underredsrost. För en svensk köpare som planerar att köra bilen vintertid är det klokt att rostskydda underredet direkt efter ankomsten."
+      },
+      {
+        "p": "Kalkylatorn räknar ut hela kostnaden för en bil från Japan i kronor och jämför alla 43 EU-hamnar från dörr till dörr – du anger bara din adress. Där syns också om en Medelhavshamn med kortare seglingstid väger upp den längre vägtransporten till Sverige."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Är mätarställningarna på japanska bilar pålitliga?",
+        "a": "I regel ja – auktionsblad och exportintyg registrerar mätarställningen, och tillbakavridna mätare är ovanliga jämfört med andra marknader."
+      },
+      {
+        "q": "Hur är det med rost?",
+        "a": "Bilar från norra Japan (Hokkaido) kan ha underredsrost från vägsalt; auktionsbladet markerar det med S eller C."
+      },
+      {
+        "q": "Hur lång tid tar en import från Japan till Sverige?",
+        "a": "Räkna med 2–3 månader från köp till registrerad bil: export och lastning, 5–6 veckors sjöresa samt förtullning, besiktning och registrering."
+      }
+    ]
+  },
+  {
+    "id": "checklist",
+    "slug": "checklista-innan-du-budar-pa-bil-fran-usa",
+    "category": "buying",
+    "origin": null,
+    "date": "2026-09-20",
+    "minutes": 3,
+    "title": "Checklista i 12 punkter innan du budar på en bil utomlands",
+    "metaTitle": "Checklista innan du budar på bil från USA – 12 punkter | CarImport.eu",
+    "description": "Checklista innan du budar på en bil från USA, Kanada eller Japan: VIN-historik, titel, bilder, avgifter, tull, moms, hamn och registrering i Sverige.",
+    "lead": "En auktion ger dig några minuter att bestämma dig. De här tolv punkterna tar en kväll att gå igenom och skyddar dig mot de dyraste misstagen när du importerar bil till Sverige.",
+    "blocks": [
+      {
+        "h2": "De tolv punkterna"
+      },
+      {
+        "ol": [
+          "Ta fram en VIN-historik (Carfax eller AutoCheck): olyckor, översvämning, mätarställning, stöld.",
+          "Kontrollera titeltypen – undvik parts only och non-repairable.",
+          "Granska varje bild: spaltmått, krockkuddar, vattenlinjer, motorrum.",
+          "Läs skicketiketterna som information, inte som garanti.",
+          "Kontrollera var bilen står och hur långt det är till exporthamnen.",
+          "Räkna ut alla auktions- och brokeravgifter för din budnivå.",
+          "Ta fram hela kostnaden levererad: frakt, tull, moms, hamn, transport hem.",
+          "Jämför förtullningshamnar för din adress.",
+          "Få en reparationsuppskattning och reservdelspriser i Sverige.",
+          "Kontrollera vad som måste byggas om för att bilen ska registreras (belysning, hastighetsmätare).",
+          "Planera tiden: betalnings- och upphämtningsfrister, sjöresa, besiktning.",
+          "Bestäm ett maxbud – och håll dig till det."
+        ]
+      },
+      {
+        "tip": "Gör punkt 6–8 i kalkylatorn: den lägger ihop alla avgifter och skatter, jämför alla 43 EU-hamnar från dörr till dörr och visar optimistiskt, genomsnittligt och pessimistiskt totalbelopp. Du anger bara din adress."
+      },
+      {
+        "h2": "Före auktionen: bilen"
+      },
+      {
+        "p": "De första fyra punkterna handlar om själva bilen. En VIN-rapport visar tidigare skador, försäkringsärenden och mätarställningar, men den är aldrig komplett. Jämför rapporten med bilderna och skickrapporten och leta efter motsägelser: en bil som enligt rapporten bara har en lätt frontskada men visar utlösta krockkuddar på bilderna har sannolikt mer skador än det ser ut. Titeltypen avgör om bilen alls går att registrera. Certifikat för skrotning eller delar är en återvändsgränd för den som vill ha svenska skyltar."
+      },
+      {
+        "h2": "Före auktionen: pengarna"
+      },
+      {
+        "p": "Punkt 5–8 handlar om vad bilen kostar på vägen hem. Avståndet från uppställningsplatsen till hamnen kan skilja flera hundra dollar. Auktionsavgifterna stiger i trappsteg, så kontrollera dem för just ditt bud. Därefter kommer frakt, 10 % tull och 25 % importmoms om bilen förtullas i Sverige – momsen beräknas dessutom på frakten och tullen, inte bara på priset. Jämför också hamnar: en hamn med lägre moms kan bli billigare även om vägen hem blir längre."
+      },
+      {
+        "h2": "Före auktionen: Sverige"
+      },
+      {
+        "p": "Punkt 9–11 handlar om vad som händer när bilen kommit hem. Reservdelar till amerikanska versioner kan vara dyrare och ta längre tid att få tag på än delar till europeiska modeller. Belysningen måste nästan alltid byggas om innan registreringsbesiktningen, och bilen ska därefter registreras hos Transportstyrelsen. Sverige har ingen engångsskatt vid registrering, men kontrollera den årliga fordonsskatten för modellen. Räkna med att hela processen tar två till tre månader från vunnen auktion."
+      },
+      {
+        "h2": "De vanligaste misstagen"
+      },
+      {
+        "ul": [
+          "Att buda upp till marknadspriset utan att räkna med avgifter och skatter",
+          "Att glömma lagringsavgifter när upphämtningen försenas",
+          "Att underskatta reparationen av en \"lätt\" frontskada",
+          "Att strunta i registreringskostnader och ombyggnad i hemlandet",
+          "Att köpa en bil vars titel inte tillåter registrering",
+          "Att låta dollarkursen överraska – betalningen sker i dollar några dagar efter auktionen"
+        ]
+      },
+      {
+        "h2": "Håll dig till ditt maxbud"
+      },
+      {
+        "p": "Den tolfte punkten är den svåraste. Livebudgivning är byggd för att få dig att höja lite till, och det finns alltid en annan budgivare som är beredd att betala mer. Skriv ner ditt maxbud innan auktionen börjar, räknat från vad bilen får kosta levererad och registrerad i Sverige. Förlorar du en bil kommer det alltid en ny – det finns tusentals liknande bilar varje vecka."
+      },
+      {
+        "h2": "Efter auktionen"
+      },
+      {
+        "p": "När du har vunnit börjar klockan ticka. Betala inom fristen, ofta två till tre bankdagar, och se till att bilen hämtas innan den fria lagringstiden går ut. Be brokern om bilder när bilen lämnas till hamnen, och kontrollera att titeln och fakturan skickas till exportören. Spara alla kvitton – du behöver dem vid förtullningen, eftersom tullvärdet ska kunna styrkas med dokument."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Hur mycket ska jag ha i reserv?",
+        "a": "Minst 10–15 % av totalen för överraskningar, mer för bilar som inte går att köra."
+      },
+      {
+        "q": "Räcker det med en VIN-rapport?",
+        "a": "Den är nödvändig men inte komplett – kombinera den med bilderna, skickrapporten och en reparationsuppskattning."
+      },
+      {
+        "q": "Hur lång tid tar det innan bilen är registrerad i Sverige?",
+        "a": "Räkna med ungefär två till tre månader från vunnen auktion till svenska skyltar, beroende på frakt, förtullning och besiktning."
+      }
+    ]
+  }
+]
