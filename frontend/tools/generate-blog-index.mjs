@@ -6,9 +6,16 @@ import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 const dir = new URL('../src/content/blog/', import.meta.url);
 const index = {};
 const dates = {};
+// a language is published only when it has every article of the English set (drafts stay unpublished)
+const required = JSON.parse(readFileSync(new URL('en.json', dir), 'utf8')).map((a) => a.id);
 for (const file of readdirSync(dir).filter((f) => f.endsWith('.json')).sort()) {
   const lang = file.replace('.json', '');
   const articles = JSON.parse(readFileSync(new URL(file, dir), 'utf8'));
+  const missing = required.filter((id) => !articles.some((a) => a.id === id));
+  if (missing.length) {
+    console.log(`${lang}: draft, ${missing.length} article(s) missing - not published`);
+    continue;
+  }
   const slugs = new Set();
   for (const a of articles) {
     if (slugs.has(a.slug)) throw new Error(`${lang}: duplicate slug ${a.slug}`);
