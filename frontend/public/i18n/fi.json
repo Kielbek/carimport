@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "CoC-todistuksesta tai ikkunatarrasta. Useimmat EU:n rekisteröintiverot perustuvat niihin.",
     "powerKw": "Moottorin teho",
-    "powerKwHint": "kW:na (1 hv ≈ 0,74 kW). Käytetään Belgiassa, Italiassa ja Ranskassa."
+    "powerKwHint": "kW:na (1 hv ≈ 0,74 kW). Käytetään Belgiassa, Italiassa ja Ranskassa.",
+    "specTitle": "Mihin verot perustuvat",
+    "specLead": "Ehdotettu tyypin ja moottorin perusteella. Tarkat tiedot (VIN-tunnuksesta tai CoC-todistuksesta) tarkentavat rekisteröintiveroa huomattavasti.",
+    "mass": "Omamassa",
+    "massHint": "Kilogrammoina (kg). Merkitsee Ranskassa (painoon perustuva malus) ja Virossa."
   },
   "layout": {
     "topbar": "Riippumaton laskuri autojen tuontikustannuksille Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista ja Isosta-Britanniasta 27 EU-maahan",
@@ -1349,5 +1353,25 @@
     "deadline": "Määräaika: {{days}} päivää.",
     "canTitle": "Mitä voit tehdä",
     "canLead": "Laki ei vaadi näitä, mutta lähes jokainen tuonti tarvitsee jotain niistä. Suositellut kohdat on valittu – poista valinta siitä, minkä teet itse."
+  },
+  "vin": {
+    "label": "Onko sinulla VIN? Täytämme tiedot",
+    "placeholder": "17 merkkiä, esim. 1FA6P8CF7K5100001",
+    "fill": "Täytä VIN-tunnuksesta",
+    "hint": "Titlesta, tuulilasista tai huutokauppailmoituksesta. Japanista tulevissa autoissa on VIN-tunnuksen sijaan runkonumero – syötä niiden tiedot käsin.",
+    "filled": "Täytetty Yhdysvaltain ajoneuvotietokannasta (NHTSA) ja EPA:n tiedoista. Tarkista alla olevat kentät – voit yhä muuttaa mitä tahansa niistä.",
+    "filledOffline": "Luimme vain sen, mitä VIN itsessään sisältää. Muut jäävät ehdotuksiksemme – korjaa ne, jos tiedät tiedot.",
+    "clear": "Poista VIN",
+    "co2Epa": "EPA, muunnettu yksikköön g/km",
+    "massGvwr": "arvio painoluokan perusteella",
+    "madeIn": "Valmistusmaa",
+    "invalid": "VIN-tunnuksessa on 17 kirjainta ja numeroa (ei koskaan I, O tai Q). Tarkista, puuttuuko merkki tai onko yksi liikaa.",
+    "w": {
+      "checkDigit": "Tarkistusnumero ei täsmää – todennäköisesti kirjoitusvirhe. Vertaa VIN-tunnusta titleen.",
+      "notFound": "Ajoneuvotietokanta ei tunne tätä VIN-tunnusta (yleistä Pohjois-Amerikan ulkopuolella valmistetuille autoille). Käytimme sitä, mitä VIN itsessään sisältää.",
+      "offline": "Ajoneuvotietokanta ei vastaa juuri nyt. Käytimme sitä, mitä VIN itsessään sisältää – yritä myöhemmin uudelleen saadaksesi täydet tiedot.",
+      "noCo2": "EPA:lta ei löydy CO₂-arvoa tälle versiolle – pidämme arviomme. Jos sinulla on arvo CoC-todistuksesta, syötä se.",
+      "noPower": "Tämän VIN-tunnuksen tehoa ei ole tietokannassa – pidämme arviomme."
+    }
   }
 }

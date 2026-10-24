@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "Iz CoC dokumenta ili naljepnice na staklu. O njoj ovisi većina registracijskih poreza u EU.",
     "powerKw": "Snaga motora",
-    "powerKwHint": "U kW (1 KS ≈ 0,74 kW). Koristi se u Belgiji, Italiji i Francuskoj."
+    "powerKwHint": "U kW (1 KS ≈ 0,74 kW). Koristi se u Belgiji, Italiji i Francuskoj.",
+    "specTitle": "O čemu ovise porezi",
+    "specLead": "Predloženo prema tipu i motoru. Točni podaci (iz VIN-a ili CoC-a) znatno poboljšavaju točnost registracijskog poreza.",
+    "mass": "Masa praznog vozila",
+    "massHint": "U kg. Važna je u Francuskoj (malus prema masi) i Estoniji."
   },
   "layout": {
     "topbar": "Neovisni kalkulator troškova uvoza automobila iz SAD-a, Kanade, Japana, UAE-a i Ujedinjenog Kraljevstva u 27 država EU",
@@ -1349,5 +1353,25 @@
     "deadline": "Rok: {{days}} dana.",
     "canTitle": "Što možete učiniti",
     "canLead": "Zakon to ne traži, ali gotovo svaki uvoz treba nešto od ovoga. Preporučene stavke su označene – odznačite ono što radite sami."
+  },
+  "vin": {
+    "label": "Imate VIN? Popunit ćemo podatke",
+    "placeholder": "17 znakova, npr. 1FA6P8CF7K5100001",
+    "fill": "Popuni iz VIN-a",
+    "hint": "S vlasničke isprave, vjetrobranskog stakla ili oglasa na aukciji. Automobili iz Japana umjesto VIN-a imaju broj šasije – njihove podatke unesite ručno.",
+    "filled": "Popunjeno iz američke baze podataka o vozilima (NHTSA) i EPA-e. Provjerite polja u nastavku – svako i dalje možete promijeniti.",
+    "filledOffline": "Očitali smo samo ono što je kodirano u samom VIN-u. Ostalo ostaje kao naši prijedlozi – ispravite ih ako znate podatke.",
+    "clear": "Ukloni VIN",
+    "co2Epa": "EPA, preračunato u g/km",
+    "massGvwr": "procjena prema klasi mase",
+    "madeIn": "Proizvedeno u",
+    "invalid": "VIN ima 17 slova i znamenki (nikad I, O ni Q). Provjerite nedostaje li koji znak ili ga ima previše.",
+    "w": {
+      "checkDigit": "Kontrolna znamenka se ne podudara – vjerojatno tipfeler. Usporedite VIN s vlasničkom ispravom.",
+      "notFound": "Baza podataka o vozilima ne poznaje ovaj VIN (često kod automobila proizvedenih izvan Sjeverne Amerike). Upotrijebili smo ono što je kodirano u samom VIN-u.",
+      "offline": "Baza podataka o vozilima trenutačno ne odgovara. Upotrijebili smo ono što je kodirano u samom VIN-u – pokušajte kasnije za potpunu specifikaciju.",
+      "noCo2": "EPA ne navodi CO₂ za ovu verziju – zadržavamo našu procjenu. Ako imate vrijednost iz CoC-a, unesite je.",
+      "noPower": "Snaga za ovaj VIN nije u bazi podataka – zadržavamo našu procjenu."
+    }
   }
 }

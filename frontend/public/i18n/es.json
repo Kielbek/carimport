@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "Del CoC o de la etiqueta de la ventanilla. La mayoría de los impuestos de matriculación de la UE se basan en ellas.",
     "powerKw": "Potencia del motor",
-    "powerKwHint": "En kW (1 CV ≈ 0,74 kW). Se usa en Bélgica, Italia y Francia."
+    "powerKwHint": "En kW (1 CV ≈ 0,74 kW). Se usa en Bélgica, Italia y Francia.",
+    "specTitle": "De qué dependen los impuestos",
+    "specLead": "Propuesto según el tipo y el motor. Los datos exactos (del VIN o del CoC) hacen mucho más preciso el impuesto de matriculación.",
+    "mass": "Peso en vacío",
+    "massHint": "En kg. Cuenta en Francia (malus por peso) y en Estonia."
   },
   "layout": {
     "topbar": "Calculadora independiente de costes de importación de coches de EE. UU., Canadá, Japón, EAU y Reino Unido a los 27 países de la UE",
@@ -1349,5 +1353,25 @@
     "deadline": "Plazo: {{days}} días.",
     "canTitle": "Qué puedes hacer",
     "canLead": "No lo exige la ley, pero casi toda importación necesita algo de esto. Los conceptos recomendados están marcados – desmarca lo que hagas tú mismo."
+  },
+  "vin": {
+    "label": "¿Tienes el VIN? Rellenamos los datos",
+    "placeholder": "17 caracteres, p. ej. 1FA6P8CF7K5100001",
+    "fill": "Rellenar desde el VIN",
+    "hint": "Del title, del parabrisas o del anuncio de la subasta. Los coches de Japón tienen un número de chasis en lugar de VIN: introduce sus datos a mano.",
+    "filled": "Rellenado con la base de datos de vehículos de EE. UU. (NHTSA) y la EPA. Revisa los campos de abajo: aún puedes cambiar cualquiera.",
+    "filledOffline": "Solo hemos leído lo que codifica el propio VIN. El resto queda como propuesta nuestra: corrígelo si conoces los datos.",
+    "clear": "Quitar VIN",
+    "co2Epa": "EPA, convertido a g/km",
+    "massGvwr": "estimado según la clase de peso",
+    "madeIn": "Fabricado en",
+    "invalid": "Un VIN tiene 17 letras y cifras (nunca I, O ni Q). Comprueba si falta o sobra algún carácter.",
+    "w": {
+      "checkDigit": "El dígito de control no coincide: probablemente sea una errata. Compara el VIN con el title.",
+      "notFound": "La base de datos de vehículos no conoce este VIN (habitual en coches fabricados fuera de Norteamérica). Hemos usado lo que codifica el propio VIN.",
+      "offline": "La base de datos de vehículos no responde ahora mismo. Hemos usado lo que codifica el propio VIN: vuelve a intentarlo más tarde para obtener la especificación completa.",
+      "noCo2": "La EPA no da CO₂ para esta versión: mantenemos nuestra estimación. Si tienes el valor del CoC, introdúcelo.",
+      "noPower": "La potencia de este VIN no figura en la base de datos: mantenemos nuestra estimación."
+    }
   }
 }

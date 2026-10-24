@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "Aus dem CoC oder dem Fensteraufkleber. Die meisten Zulassungssteuern in der EU richten sich danach.",
     "powerKw": "Motorleistung",
-    "powerKwHint": "In kW (1 PS ≈ 0,74 kW). Relevant in Belgien, Italien und Frankreich."
+    "powerKwHint": "In kW (1 PS ≈ 0,74 kW). Relevant in Belgien, Italien und Frankreich.",
+    "specTitle": "Wonach sich die Steuern richten",
+    "specLead": "Vorgeschlagen nach Typ und Motor. Genaue Werte (aus der VIN oder dem CoC) machen die Zulassungssteuer deutlich genauer.",
+    "mass": "Leergewicht",
+    "massHint": "In kg. Relevant in Frankreich (Gewichtsmalus) und Estland."
   },
   "layout": {
     "topbar": "Unabhängiger Rechner für Importkosten von Autos aus den USA, Kanada, Japan, den VAE und UK in 27 EU-Länder",
@@ -1349,5 +1353,25 @@
     "deadline": "Frist: {{days}} Tage.",
     "canTitle": "Was Sie tun können",
     "canLead": "Gesetzlich nicht vorgeschrieben, aber fast jeder Import braucht etwas davon. Empfohlene Posten sind angehakt – entfernen Sie den Haken bei allem, was Sie selbst erledigen."
+  },
+  "vin": {
+    "label": "VIN zur Hand? Wir füllen die Daten aus",
+    "placeholder": "17 Zeichen, z. B. 1FA6P8CF7K5100001",
+    "fill": "Aus VIN ausfüllen",
+    "hint": "Aus dem Title, von der Windschutzscheibe oder aus dem Auktionsinserat. Autos aus Japan haben statt einer VIN eine Fahrgestellnummer – geben Sie deren Daten von Hand ein.",
+    "filled": "Aus der US-Fahrzeugdatenbank (NHTSA) und von der EPA ausgefüllt. Prüfen Sie die Felder unten – Sie können jedes davon noch ändern.",
+    "filledOffline": "Wir haben nur ausgelesen, was in der VIN selbst kodiert ist. Der Rest bleibt unser Vorschlag – korrigieren Sie ihn, wenn Sie die Daten kennen.",
+    "clear": "VIN entfernen",
+    "co2Epa": "EPA, umgerechnet in g/km",
+    "massGvwr": "geschätzt aus der Gewichtsklasse",
+    "madeIn": "Hergestellt in",
+    "invalid": "Eine VIN hat 17 Buchstaben und Ziffern (nie I, O oder Q). Prüfen Sie, ob ein Zeichen fehlt oder zu viel ist.",
+    "w": {
+      "checkDigit": "Die Prüfziffer stimmt nicht – vermutlich ein Tippfehler. Vergleichen Sie die VIN mit dem Title.",
+      "notFound": "Die Fahrzeugdatenbank kennt diese VIN nicht (häufig bei Autos, die außerhalb Nordamerikas gebaut wurden). Wir haben verwendet, was in der VIN selbst kodiert ist.",
+      "offline": "Die Fahrzeugdatenbank antwortet gerade nicht. Wir haben verwendet, was in der VIN selbst kodiert ist – versuchen Sie es später erneut, um die vollständigen Daten zu erhalten.",
+      "noCo2": "Kein CO₂-Wert der EPA für diese Version – wir behalten unsere Schätzung. Tragen Sie den Wert aus dem CoC ein, falls vorhanden.",
+      "noPower": "Die Leistung ist für diese VIN nicht in der Datenbank – wir behalten unsere Schätzung."
+    }
   }
 }

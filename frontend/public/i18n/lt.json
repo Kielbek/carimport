@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "Iš CoC arba lango lipduko. Nuo jos priklauso dauguma ES registracijos mokesčių.",
     "powerKw": "Variklio galia",
-    "powerKwHint": "kW (1 AG ≈ 0,74 kW). Naudojama Belgijoje, Italijoje ir Prancūzijoje."
+    "powerKwHint": "kW (1 AG ≈ 0,74 kW). Naudojama Belgijoje, Italijoje ir Prancūzijoje.",
+    "specTitle": "Nuo ko priklauso mokesčiai",
+    "specLead": "Pasiūlyta pagal tipą ir variklį. Tikslūs duomenys (iš VIN ar CoC) gerokai patikslina registracijos mokestį.",
+    "mass": "Nuosava masė",
+    "massHint": "kg. Svarbi Prancūzijoje (malus pagal svorį) ir Estijoje."
   },
   "layout": {
     "topbar": "Nepriklausoma automobilių importo iš JAV, Kanados, Japonijos, JAE ir JK į 27 ES šalis išlaidų skaičiuoklė",
@@ -1349,5 +1353,25 @@
     "deadline": "Terminas: {{days}} d.",
     "canTitle": "Ką galite padaryti",
     "canLead": "Įstatymas to nereikalauja, bet beveik kiekvienam importui kažko iš to prireikia. Rekomenduojamos pozicijos pažymėtos – nuimkite žymę nuo to, ką darysite patys."
+  },
+  "vin": {
+    "label": "Turite VIN? Užpildysime duomenis",
+    "placeholder": "17 simbolių, pvz., 1FA6P8CF7K5100001",
+    "fill": "Užpildyti pagal VIN",
+    "hint": "Iš nuosavybės dokumento, priekinio stiklo arba aukciono skelbimo. Automobiliai iš Japonijos vietoj VIN turi kėbulo numerį – jų duomenis įveskite ranka.",
+    "filled": "Užpildyta iš JAV transporto priemonių duomenų bazės (NHTSA) ir EPA. Patikrinkite toliau esančius laukus – bet kurį iš jų vis dar galite pakeisti.",
+    "filledOffline": "Nuskaitėme tik tai, kas užkoduota pačiame VIN. Kita lieka mūsų pasiūlymais – pataisykite, jei žinote duomenis.",
+    "clear": "Pašalinti VIN",
+    "co2Epa": "EPA, perskaičiuota į g/km",
+    "massGvwr": "įvertinta pagal svorio klasę",
+    "madeIn": "Pagaminta",
+    "invalid": "VIN sudaro 17 raidžių ir skaitmenų (niekada I, O ar Q). Patikrinkite, ar netrūksta simbolio ir nėra vieno per daug.",
+    "w": {
+      "checkDigit": "Kontrolinis skaitmuo nesutampa – tikriausiai rašybos klaida. Palyginkite VIN su nuosavybės dokumentu.",
+      "notFound": "Transporto priemonių duomenų bazė šio VIN nežino (dažna automobiliams, pagamintiems ne Šiaurės Amerikoje). Panaudojome tai, kas užkoduota pačiame VIN.",
+      "offline": "Transporto priemonių duomenų bazė šiuo metu neatsako. Panaudojome tai, kas užkoduota pačiame VIN – visai specifikacijai gauti bandykite vėliau.",
+      "noCo2": "EPA nepateikia šios versijos CO₂ vertės – paliekame savo įvertį. Jei turite CoC vertę, įveskite ją.",
+      "noPower": "Šio VIN galios duomenų bazėje nėra – paliekame savo įvertį."
+    }
   }
 }

@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "Fra CoC'en eller rudemærkatet. De fleste registreringsafgifter i EU bygger på den.",
     "powerKw": "Motoreffekt",
-    "powerKwHint": "I kW (1 hk ≈ 0,74 kW). Bruges i Belgien, Italien og Frankrig."
+    "powerKwHint": "I kW (1 hk ≈ 0,74 kW). Bruges i Belgien, Italien og Frankrig.",
+    "specTitle": "Det afhænger afgifterne af",
+    "specLead": "Foreslået ud fra type og motor. Præcise tal (fra VIN eller CoC) gør registreringsafgiften langt mere nøjagtig.",
+    "mass": "Egenvægt",
+    "massHint": "I kg. Tæller i Frankrig (vægtmalus) og Estland."
   },
   "layout": {
     "topbar": "Uafhængig beregner af omkostninger ved import af biler fra USA, Canada, Japan, UAE og Storbritannien til 27 EU-lande",
@@ -1349,5 +1353,25 @@
     "deadline": "Frist: {{days}} dage.",
     "canTitle": "Det kan du gøre",
     "canLead": "Ikke lovpligtigt, men næsten hver import har brug for noget af det. Anbefalede poster er markeret – fjern markeringen ved det, du klarer selv."
+  },
+  "vin": {
+    "label": "Har du VIN? Vi udfylder detaljerne",
+    "placeholder": "17 tegn, f.eks. 1FA6P8CF7K5100001",
+    "fill": "Udfyld fra VIN",
+    "hint": "Fra title, forruden eller auktionsopslaget. Biler fra Japan har et stelnummer i stedet for VIN – indtast deres data manuelt.",
+    "filled": "Udfyldt fra den amerikanske køretøjsdatabase (NHTSA) og EPA. Tjek felterne nedenfor – du kan stadig ændre dem alle.",
+    "filledOffline": "Vi har kun aflæst det, som selve VIN-nummeret indeholder. Resten forbliver vores forslag – ret dem, hvis du kender detaljerne.",
+    "clear": "Fjern VIN",
+    "co2Epa": "EPA, omregnet til g/km",
+    "massGvwr": "anslået ud fra vægtklassen",
+    "madeIn": "Produceret i",
+    "invalid": "Et VIN består af 17 bogstaver og cifre (aldrig I, O eller Q). Tjek, om der mangler et tegn eller er et for meget.",
+    "w": {
+      "checkDigit": "Kontrolcifferet passer ikke – sandsynligvis en tastefejl. Sammenlign VIN med title.",
+      "notFound": "Køretøjsdatabasen kender ikke dette VIN (almindeligt for biler bygget uden for Nordamerika). Vi har brugt det, som selve VIN-nummeret indeholder.",
+      "offline": "Køretøjsdatabasen svarer ikke lige nu. Vi har brugt det, som selve VIN-nummeret indeholder – prøv igen senere for at få den fulde specifikation.",
+      "noCo2": "EPA har ingen CO₂-værdi for denne version – vi beholder vores skøn. Brug værdien fra CoC'en, hvis du har den.",
+      "noPower": "Effekten for dette VIN findes ikke i databasen – vi beholder vores skøn."
+    }
   }
 }

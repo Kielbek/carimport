@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "Från CoC-intyget eller rutdekalen. De flesta registreringsskatter i EU bygger på det.",
     "powerKw": "Motoreffekt",
-    "powerKwHint": "I kW (1 hk ≈ 0,74 kW). Används i Belgien, Italien och Frankrike."
+    "powerKwHint": "I kW (1 hk ≈ 0,74 kW). Används i Belgien, Italien och Frankrike.",
+    "specTitle": "Vad skatterna baseras på",
+    "specLead": "Föreslaget utifrån typ och motor. Exakta uppgifter (från VIN eller CoC) gör registreringsskatten mycket mer exakt.",
+    "mass": "Tjänstevikt",
+    "massHint": "I kg. Räknas i Frankrike (viktmalus) och Estland."
   },
   "layout": {
     "topbar": "Oberoende kalkylator för kostnaden att importera bil från USA, Kanada, Japan, Förenade Arabemiraten och Storbritannien till 27 EU-länder",
@@ -1349,5 +1353,25 @@
     "deadline": "Tidsfrist: {{days}} dagar.",
     "canTitle": "Det här kan du göra",
     "canLead": "Inget lagkrav, men nästan varje import behöver något av det. Rekommenderade poster är förbockade – bocka ur det du gör själv."
+  },
+  "vin": {
+    "label": "Har du VIN? Vi fyller i uppgifterna",
+    "placeholder": "17 tecken, t.ex. 1FA6P8CF7K5100001",
+    "fill": "Fyll i från VIN",
+    "hint": "Från ägarhandlingen, vindrutan eller auktionsannonsen. Bilar från Japan har ett chassinummer i stället för VIN – ange deras uppgifter för hand.",
+    "filled": "Ifyllt från den amerikanska fordonsdatabasen (NHTSA) och EPA. Kontrollera fälten nedan – du kan fortfarande ändra vilket som helst.",
+    "filledOffline": "Vi har bara läst det som själva VIN-numret anger. Resten är fortfarande våra förslag – rätta dem om du känner till uppgifterna.",
+    "clear": "Ta bort VIN",
+    "co2Epa": "EPA, omräknat till g/km",
+    "massGvwr": "uppskattat från viktklassen",
+    "madeIn": "Tillverkad i",
+    "invalid": "Ett VIN har 17 bokstäver och siffror (aldrig I, O eller Q). Kontrollera om ett tecken saknas eller är för mycket.",
+    "w": {
+      "checkDigit": "Kontrollsiffran stämmer inte – troligen ett skrivfel. Jämför VIN med ägarhandlingen.",
+      "notFound": "Fordonsdatabasen känner inte till detta VIN (vanligt för bilar byggda utanför Nordamerika). Vi har använt det som själva VIN-numret anger.",
+      "offline": "Fordonsdatabasen svarar inte just nu. Vi har använt det som själva VIN-numret anger – försök igen senare för fullständiga uppgifter.",
+      "noCo2": "EPA har inget CO₂-värde för den här versionen – vi behåller vår uppskattning. Ange värdet från CoC-intyget om du har det.",
+      "noPower": "Effekten för detta VIN finns inte i databasen – vi behåller vår uppskattning."
+    }
   }
 }

@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "A CoC-ből vagy az ablakmatricáról. Az EU-ban a legtöbb regisztrációs adó ezen alapul.",
     "powerKw": "Motorteljesítmény",
-    "powerKwHint": "kW-ban (1 LE ≈ 0,74 kW). Belgiumban, Olaszországban és Franciaországban számít."
+    "powerKwHint": "kW-ban (1 LE ≈ 0,74 kW). Belgiumban, Olaszországban és Franciaországban számít.",
+    "specTitle": "Mitől függnek az adók",
+    "specLead": "A típus és a motor alapján javasolt értékek. A pontos adatok (a VIN-ből vagy a CoC-ből) jóval pontosabbá teszik a regisztrációs adót.",
+    "mass": "Saját tömeg",
+    "massHint": "kg-ban. Franciaországban (súly utáni malus) és Észtországban számít."
   },
   "layout": {
     "topbar": "Független kalkulátor az USA-ból, Kanadából, Japánból, az Egyesült Arab Emírségekből és az Egyesült Királyságból 27 uniós országba történő autóimport költségeihez",
@@ -1349,5 +1353,25 @@
     "deadline": "Határidő: {{days}} nap.",
     "canTitle": "Választható teendők",
     "canLead": "Jogszabály nem írja elő, de szinte minden behozatalhoz kell valami ezekből. Az ajánlott tételek be vannak jelölve – vegye ki a jelölést abból, amit saját maga intéz."
+  },
+  "vin": {
+    "label": "Megvan a VIN? Kitöltjük az adatokat",
+    "placeholder": "17 karakter, pl. 1FA6P8CF7K5100001",
+    "fill": "Kitöltés VIN alapján",
+    "hint": "A title-ből, a szélvédőről vagy az aukciós hirdetésből. A japán autóknak VIN helyett alvázszámuk van – ezek adatait kézzel adja meg.",
+    "filled": "Kitöltve az amerikai járműadatbázisból (NHTSA) és az EPA adataiból. Ellenőrizze az alábbi mezőket – bármelyiket módosíthatja.",
+    "filledOffline": "Csak azt olvastuk ki, amit maga a VIN kódol. A többi a mi javaslatunk marad – javítsa, ha ismeri az adatokat.",
+    "clear": "VIN törlése",
+    "co2Epa": "EPA, g/km-re átszámítva",
+    "massGvwr": "becslés a súlyosztály alapján",
+    "madeIn": "Gyártási ország",
+    "invalid": "A VIN 17 betűből és számjegyből áll (soha nem I, O vagy Q). Ellenőrizze, nem hiányzik-e vagy nincs-e egy karakterrel több.",
+    "w": {
+      "checkDigit": "Az ellenőrző számjegy nem egyezik – valószínűleg elírás. Vesse össze a VIN-t a title-lel.",
+      "notFound": "A járműadatbázis nem ismeri ezt a VIN-t (gyakori az Észak-Amerikán kívül gyártott autóknál). Azt használtuk, amit maga a VIN kódol.",
+      "offline": "A járműadatbázis most nem válaszol. Azt használtuk, amit maga a VIN kódol – a teljes specifikációért próbálja újra később.",
+      "noCo2": "Az EPA nem ad meg CO₂-értéket ehhez a változathoz – megtartjuk a becslésünket. Ha megvan a CoC-ben szereplő érték, adja meg.",
+      "noPower": "Ehhez a VIN-hez nincs teljesítményadat az adatbázisban – megtartjuk a becslésünket."
+    }
   }
 }

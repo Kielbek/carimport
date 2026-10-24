@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "Z dokladu CoC alebo nálepky na okne. Závisí od nich väčšina registračných daní v EÚ.",
     "powerKw": "Výkon motora",
-    "powerKwHint": "V kW (1 k ≈ 0,74 kW). Počíta sa s ním v Belgicku, Taliansku a Francúzsku."
+    "powerKwHint": "V kW (1 k ≈ 0,74 kW). Počíta sa s ním v Belgicku, Taliansku a Francúzsku.",
+    "specTitle": "Od čoho závisia dane",
+    "specLead": "Navrhnuté podľa typu a motora. Presné údaje (z VIN alebo CoC) výrazne spresnia výpočet registračnej dane.",
+    "mass": "Pohotovostná hmotnosť",
+    "massHint": "V kg. Počíta sa s ňou vo Francúzsku (malus za hmotnosť) a v Estónsku."
   },
   "layout": {
     "topbar": "Nezávislá kalkulačka nákladov na dovoz áut z USA, Kanady, Japonska, SAE a Spojeného kráľovstva do 27 krajín EÚ",
@@ -1349,5 +1353,25 @@
     "deadline": "Lehota: {{days}} dní.",
     "canTitle": "Čo môžete urobiť",
     "canLead": "Zákon to nevyžaduje, ale takmer každý dovoz potrebuje niečo z toho. Odporúčané položky sú zaškrtnuté – odškrtnite, čo urobíte sami."
+  },
+  "vin": {
+    "label": "Máte VIN? Doplníme údaje",
+    "placeholder": "17 znakov, napr. 1FA6P8CF7K5100001",
+    "fill": "Doplniť z VIN",
+    "hint": "Z titulu, z čelného skla alebo z inzerátu aukcie. Autá z Japonska majú namiesto VIN číslo karosérie – ich údaje zadajte ručne.",
+    "filled": "Doplnené z americkej databázy vozidiel (NHTSA) a EPA. Skontrolujte polia nižšie – každé môžete zmeniť.",
+    "filledOffline": "Prečítali sme len to, čo je zakódované priamo vo VIN. Zvyšok ostáva ako naše návrhy – opravte ich, ak údaje poznáte.",
+    "clear": "Odstrániť VIN",
+    "co2Epa": "EPA, prepočítané na g/km",
+    "massGvwr": "odhad z hmotnostnej triedy",
+    "madeIn": "Vyrobené v",
+    "invalid": "VIN má 17 písmen a číslic (nikdy I, O ani Q). Skontrolujte, či nejaký znak nechýba alebo neprebýva.",
+    "w": {
+      "checkDigit": "Kontrolná číslica nesedí – pravdepodobne preklep. Porovnajte VIN s titulom.",
+      "notFound": "Databáza vozidiel tento VIN nepozná (bežné pri autách vyrobených mimo Severnej Ameriky). Použili sme to, čo je zakódované priamo vo VIN.",
+      "offline": "Databáza vozidiel momentálne neodpovedá. Použili sme to, čo je zakódované priamo vo VIN – pre úplnú špecifikáciu to skúste neskôr.",
+      "noCo2": "EPA pre túto verziu neuvádza CO₂ – ponechávame náš odhad. Ak máte hodnotu z CoC, zadajte ju.",
+      "noPower": "Výkon pre tento VIN v databáze nie je – ponechávame náš odhad."
+    }
   }
 }

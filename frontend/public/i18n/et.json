@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "CoC-dokumendist või aknakleebiselt. Enamik ELi registreerimismakse põhineb sellel.",
     "powerKw": "Mootori võimsus",
-    "powerKwHint": "kW-des (1 hj ≈ 0,74 kW). Kasutatakse Belgias, Itaalias ja Prantsusmaal."
+    "powerKwHint": "kW-des (1 hj ≈ 0,74 kW). Kasutatakse Belgias, Itaalias ja Prantsusmaal.",
+    "specTitle": "Millest maksud sõltuvad",
+    "specLead": "Pakutud tüübi ja mootori põhjal. Täpsed andmed (VIN-ist või CoC-st) muudavad registreerimismaksu arvutuse palju täpsemaks.",
+    "mass": "Tühimass",
+    "massHint": "kg-des. Loeb Prantsusmaal (massipõhine malus) ja Eestis."
   },
   "layout": {
     "topbar": "Sõltumatu kalkulaator autode impordikulude arvutamiseks USA-st, Kanadast, Jaapanist, AÜE-st ja Ühendkuningriigist 27 ELi riiki",
@@ -1349,5 +1353,25 @@
     "deadline": "Tähtaeg: {{days}} päeva.",
     "canTitle": "Mida saad teha",
     "canLead": "Seadus seda ei nõua, kuid peaaegu iga import vajab midagi sellest. Soovitatud kirjed on märgitud – eemalda märge sellelt, mida teed ise."
+  },
+  "vin": {
+    "label": "Kas VIN on olemas? Täidame andmed",
+    "placeholder": "17 märki, nt 1FA6P8CF7K5100001",
+    "fill": "Täida VIN-i järgi",
+    "hint": "Title'ist, esiklaasilt või oksjonikuulutusest. Jaapani autodel on VIN-i asemel keretunnus – sisesta nende andmed käsitsi.",
+    "filled": "Täidetud USA sõidukiandmebaasist (NHTSA) ja EPA andmetest. Kontrolli allolevaid välju – saad igaüht neist veel muuta.",
+    "filledOffline": "Lugesime ainult seda, mis on VIN-i enda sisse kodeeritud. Ülejäänu jääb meie ettepanekuks – paranda, kui tead andmeid.",
+    "clear": "Eemalda VIN",
+    "co2Epa": "EPA, teisendatud g/km-ks",
+    "massGvwr": "hinnang kaaluklassi põhjal",
+    "madeIn": "Valmistatud",
+    "invalid": "VIN koosneb 17 tähest ja numbrist (mitte kunagi I, O ega Q). Kontrolli, kas mõni märk puudub või on üleliigne.",
+    "w": {
+      "checkDigit": "Kontrollnumber ei klapi – tõenäoliselt trükiviga. Võrdle VIN-i title'iga.",
+      "notFound": "Sõidukiandmebaas ei tunne seda VIN-i (tavaline väljaspool Põhja-Ameerikat ehitatud autode puhul). Kasutasime seda, mis on VIN-i enda sisse kodeeritud.",
+      "offline": "Sõidukiandmebaas ei vasta praegu. Kasutasime seda, mis on VIN-i enda sisse kodeeritud – täieliku spetsifikatsiooni saamiseks proovi hiljem uuesti.",
+      "noCo2": "EPA ei anna selle versiooni CO₂ väärtust – jätame oma hinnangu. Kui sul on CoC väärtus, sisesta see.",
+      "noPower": "Selle VIN-i võimsust andmebaasis ei ole – jätame oma hinnangu."
+    }
   }
 }

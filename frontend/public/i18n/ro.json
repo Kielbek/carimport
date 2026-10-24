@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "Din CoC sau de pe eticheta de pe geam. De ele depind majoritatea taxelor de înmatriculare din UE.",
     "powerKw": "Puterea motorului",
-    "powerKwHint": "În kW (1 CP ≈ 0,74 kW). Contează în Belgia, Italia și Franța."
+    "powerKwHint": "În kW (1 CP ≈ 0,74 kW). Contează în Belgia, Italia și Franța.",
+    "specTitle": "De ce depind taxele",
+    "specLead": "Propus pe baza tipului și a motorului. Datele exacte (din VIN sau CoC) fac taxa de înmatriculare mult mai precisă.",
+    "mass": "Masa proprie",
+    "massHint": "În kg. Contează în Franța (malus pentru greutate) și în Estonia."
   },
   "layout": {
     "topbar": "Calculator independent al costurilor de import auto din SUA, Canada, Japonia, EAU și Regatul Unit în cele 27 de țări UE",
@@ -1349,5 +1353,25 @@
     "deadline": "Termen: {{days}} zile.",
     "canTitle": "Ce poți face",
     "canLead": "Legea nu le cere, dar aproape orice import are nevoie de ceva de aici. Pozițiile recomandate sunt bifate – debifează ce faci singur."
+  },
+  "vin": {
+    "label": "Ai VIN-ul? Completăm noi datele",
+    "placeholder": "17 caractere, de ex. 1FA6P8CF7K5100001",
+    "fill": "Completează din VIN",
+    "hint": "De pe title, de pe parbriz sau din anunțul licitației. Mașinile din Japonia au un număr de șasiu în loc de VIN – introdu-le datele manual.",
+    "filled": "Completat din baza de date americană a vehiculelor (NHTSA) și de la EPA. Verifică câmpurile de mai jos – poți modifica oricare dintre ele.",
+    "filledOffline": "Am citit doar ce codifică VIN-ul în sine. Restul rămân propunerile noastre – corectează-le dacă știi datele.",
+    "clear": "Elimină VIN-ul",
+    "co2Epa": "EPA, convertit în g/km",
+    "massGvwr": "estimat după clasa de greutate",
+    "madeIn": "Fabricat în",
+    "invalid": "Un VIN are 17 litere și cifre (niciodată I, O sau Q). Verifică dacă lipsește sau e în plus un caracter.",
+    "w": {
+      "checkDigit": "Cifra de control nu se potrivește – probabil o greșeală de tastare. Compară VIN-ul cu title-ul.",
+      "notFound": "Baza de date a vehiculelor nu cunoaște acest VIN (frecvent la mașinile fabricate în afara Americii de Nord). Am folosit ce codifică VIN-ul în sine.",
+      "offline": "Baza de date a vehiculelor nu răspunde momentan. Am folosit ce codifică VIN-ul în sine – încearcă mai târziu pentru specificația completă.",
+      "noCo2": "EPA nu oferă CO₂ pentru această versiune – păstrăm estimarea noastră. Dacă ai valoarea din CoC, introdu-o.",
+      "noPower": "Puterea pentru acest VIN nu apare în baza de date – păstrăm estimarea noastră."
+    }
   }
 }

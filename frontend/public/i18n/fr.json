@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "Sur le CoC ou l’étiquette collée sur la vitre. La plupart des taxes d’immatriculation de l’UE en dépendent.",
     "powerKw": "Puissance du moteur",
-    "powerKwHint": "En kW (1 ch ≈ 0,74 kW). Prise en compte en Belgique, en Italie et en France."
+    "powerKwHint": "En kW (1 ch ≈ 0,74 kW). Prise en compte en Belgique, en Italie et en France.",
+    "specTitle": "Ce qui détermine les taxes",
+    "specLead": "Proposé d’après le type et le moteur. Des valeurs précises (du VIN ou du CoC) rendent la taxe d’immatriculation bien plus exacte.",
+    "mass": "Poids à vide",
+    "massHint": "En kg. Pris en compte en France (malus au poids) et en Estonie."
   },
   "layout": {
     "topbar": "Calculateur indépendant des coûts d’importation de voitures des États-Unis, du Canada, du Japon, des EAU et du Royaume-Uni vers les 27 pays de l’UE",
@@ -1349,5 +1353,25 @@
     "deadline": "Délai : {{days}} jours.",
     "canTitle": "Ce que vous pouvez faire",
     "canLead": "Rien n’est obligatoire, mais presque chaque import en a besoin en partie. Les postes recommandés sont cochés – décochez ce que vous faites vous-même."
+  },
+  "vin": {
+    "label": "Vous avez le VIN ? Nous remplissons les détails",
+    "placeholder": "17 caractères, p. ex. 1FA6P8CF7K5100001",
+    "fill": "Remplir à partir du VIN",
+    "hint": "Sur le title, le pare-brise ou l’annonce de l’enchère. Les voitures du Japon ont un numéro de châssis au lieu d’un VIN – saisissez leurs données à la main.",
+    "filled": "Rempli à partir de la base de données américaine des véhicules (NHTSA) et de l’EPA. Vérifiez les champs ci-dessous – vous pouvez encore tous les modifier.",
+    "filledOffline": "Nous n’avons lu que ce que le VIN lui-même encode. Le reste reste nos propositions – corrigez-les si vous connaissez les détails.",
+    "clear": "Supprimer le VIN",
+    "co2Epa": "EPA, converti en g/km",
+    "massGvwr": "estimé d’après la classe de poids",
+    "madeIn": "Fabriqué en",
+    "invalid": "Un VIN compte 17 lettres et chiffres (jamais I, O ni Q). Vérifiez s’il manque un caractère ou s’il y en a un de trop.",
+    "w": {
+      "checkDigit": "Le chiffre de contrôle ne correspond pas – sans doute une faute de frappe. Comparez le VIN avec le title.",
+      "notFound": "La base de données des véhicules ne connaît pas ce VIN (fréquent pour les voitures construites hors d’Amérique du Nord). Nous avons utilisé ce que le VIN lui-même encode.",
+      "offline": "La base de données des véhicules ne répond pas pour le moment. Nous avons utilisé ce que le VIN lui-même encode – réessayez plus tard pour obtenir la fiche technique complète.",
+      "noCo2": "Pas de valeur de CO₂ de l’EPA pour cette version – nous gardons notre estimation. Saisissez la valeur du CoC si vous l’avez.",
+      "noPower": "La puissance de ce VIN ne figure pas dans la base de données – nous gardons notre estimation."
+    }
   }
 }

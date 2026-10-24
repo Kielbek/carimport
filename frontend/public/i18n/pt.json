@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "Do CoC ou do autocolante no vidro. A maioria dos impostos de registo na UE baseia-se nelas.",
     "powerKw": "Potência do motor",
-    "powerKwHint": "Em kW (1 cv ≈ 0,74 kW). Conta na Bélgica, em Itália e em França."
+    "powerKwHint": "Em kW (1 cv ≈ 0,74 kW). Conta na Bélgica, em Itália e em França.",
+    "specTitle": "Do que dependem os impostos",
+    "specLead": "Proposto com base no tipo e no motor. Dados exatos (do VIN ou do CoC) tornam o imposto de registo muito mais preciso.",
+    "mass": "Peso em vazio",
+    "massHint": "Em kg. Conta em França (malus de peso) e na Estónia."
   },
   "layout": {
     "topbar": "Calculadora independente dos custos de importação de carros dos EUA, Canadá, Japão, EAU e Reino Unido para 27 países da UE",
@@ -1349,5 +1353,25 @@
     "deadline": "Prazo: {{days}} dias.",
     "canTitle": "O que pode fazer",
     "canLead": "Não é exigido por lei, mas quase todas as importações precisam de algo disto. Os itens recomendados estão assinalados – desmarque o que fizer por conta própria."
+  },
+  "vin": {
+    "label": "Tem o VIN? Nós preenchemos os dados",
+    "placeholder": "17 caracteres, p. ex. 1FA6P8CF7K5100001",
+    "fill": "Preencher a partir do VIN",
+    "hint": "Do title, do para-brisas ou do anúncio do leilão. Os carros do Japão têm um número de chassis em vez de VIN – introduza os dados manualmente.",
+    "filled": "Preenchido a partir da base de dados de veículos dos EUA (NHTSA) e da EPA. Verifique os campos abaixo – pode ainda alterar qualquer um deles.",
+    "filledOffline": "Lemos apenas o que o próprio VIN codifica. O resto fica como proposta nossa – corrija-o se conhecer os dados.",
+    "clear": "Remover VIN",
+    "co2Epa": "EPA, convertido para g/km",
+    "massGvwr": "estimado pela classe de peso",
+    "madeIn": "Fabricado em",
+    "invalid": "Um VIN tem 17 letras e algarismos (nunca I, O ou Q). Verifique se falta ou sobra algum carácter.",
+    "w": {
+      "checkDigit": "O dígito de controlo não corresponde – provavelmente um erro de digitação. Compare o VIN com o title.",
+      "notFound": "A base de dados de veículos não conhece este VIN (comum em carros fabricados fora da América do Norte). Usámos o que o próprio VIN codifica.",
+      "offline": "A base de dados de veículos não está a responder neste momento. Usámos o que o próprio VIN codifica – tente mais tarde para obter a especificação completa.",
+      "noCo2": "A EPA não indica CO₂ para esta versão – mantemos a nossa estimativa. Se tiver o valor do CoC, introduza-o.",
+      "noPower": "A potência deste VIN não consta da base de dados – mantemos a nossa estimativa."
+    }
   }
 }

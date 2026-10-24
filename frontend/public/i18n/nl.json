@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "Van het CoC of de raamsticker. De meeste registratiebelastingen in de EU zijn erop gebaseerd.",
     "powerKw": "Motorvermogen",
-    "powerKwHint": "In kW (1 pk ≈ 0,74 kW). Telt mee in België, Italië en Frankrijk."
+    "powerKwHint": "In kW (1 pk ≈ 0,74 kW). Telt mee in België, Italië en Frankrijk.",
+    "specTitle": "Waar de belastingen op gebaseerd zijn",
+    "specLead": "Voorgesteld op basis van type en motor. Exacte gegevens (uit de VIN of het CoC) maken de registratiebelasting veel nauwkeuriger.",
+    "mass": "Leeggewicht",
+    "massHint": "In kg. Telt mee in Frankrijk (gewichtsmalus) en Estland."
   },
   "layout": {
     "topbar": "Onafhankelijke calculator voor de importkosten van auto’s uit de VS, Canada, Japan, de VAE en het VK naar 27 EU-landen",
@@ -1349,5 +1353,25 @@
     "deadline": "Termijn: {{days}} dagen.",
     "canTitle": "Wat u kunt doen",
     "canLead": "Niet wettelijk verplicht, maar bijna elke import heeft er iets van nodig. Aanbevolen posten zijn aangevinkt – vink uit wat u zelf doet."
+  },
+  "vin": {
+    "label": "VIN bij de hand? Wij vullen de gegevens in",
+    "placeholder": "17 tekens, bijv. 1FA6P8CF7K5100001",
+    "fill": "Invullen via VIN",
+    "hint": "Van de title, de voorruit of de veilingadvertentie. Auto’s uit Japan hebben een chassisnummer in plaats van een VIN – vul hun gegevens handmatig in.",
+    "filled": "Ingevuld vanuit de Amerikaanse voertuigdatabase (NHTSA) en de EPA. Controleer de velden hieronder – u kunt ze nog allemaal wijzigen.",
+    "filledOffline": "We hebben alleen gelezen wat in de VIN zelf staat. De rest blijft ons voorstel – corrigeer dit als u de gegevens kent.",
+    "clear": "VIN verwijderen",
+    "co2Epa": "EPA, omgerekend naar g/km",
+    "massGvwr": "geschat op basis van de gewichtsklasse",
+    "madeIn": "Gebouwd in",
+    "invalid": "Een VIN heeft 17 letters en cijfers (nooit I, O of Q). Controleer of er een teken ontbreekt of te veel is.",
+    "w": {
+      "checkDigit": "Het controlecijfer klopt niet – waarschijnlijk een typefout. Vergelijk de VIN met de title.",
+      "notFound": "De voertuigdatabase kent deze VIN niet (vaak bij auto’s die buiten Noord-Amerika zijn gebouwd). We hebben gebruikt wat in de VIN zelf staat.",
+      "offline": "De voertuigdatabase reageert momenteel niet. We hebben gebruikt wat in de VIN zelf staat – probeer het later opnieuw voor de volledige specificatie.",
+      "noCo2": "Geen CO₂-waarde van de EPA voor deze versie – we houden onze schatting aan. Vul de waarde van het CoC in als u die heeft.",
+      "noPower": "Het vermogen staat voor deze VIN niet in de database – we houden onze schatting aan."
+    }
   }
 }

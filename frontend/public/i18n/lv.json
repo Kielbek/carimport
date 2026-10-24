@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "No CoC vai loga uzlīmes. Lielākā daļa ES reģistrācijas nodokļu balstās uz tiem.",
     "powerKw": "Dzinēja jauda",
-    "powerKwHint": "kW (1 ZS ≈ 0,74 kW). Izmanto Beļģijā, Itālijā un Francijā."
+    "powerKwHint": "kW (1 ZS ≈ 0,74 kW). Izmanto Beļģijā, Itālijā un Francijā.",
+    "specTitle": "No kā atkarīgi nodokļi",
+    "specLead": "Ieteikts pēc tipa un dzinēja. Precīzi dati (no VIN vai CoC) padara reģistrācijas nodokļa aprēķinu daudz precīzāku.",
+    "mass": "Pašmasa",
+    "massHint": "kg. Ņem vērā Francijā (svara malus) un Igaunijā."
   },
   "layout": {
     "topbar": "Neatkarīgs kalkulators automašīnu importa izmaksām no ASV, Kanādas, Japānas, AAE un Apvienotās Karalistes uz 27 ES valstīm",
@@ -1349,5 +1353,25 @@
     "deadline": "Termiņš: {{days}} d.",
     "canTitle": "Ko jūs varat darīt",
     "canLead": "Likums to neprasa, bet gandrīz katram importam kaut kas no šī ir vajadzīgs. Ieteicamās pozīcijas ir atzīmētas – noņemiet atzīmi tam, ko darāt paši."
+  },
+  "vin": {
+    "label": "Jums ir VIN? Mēs aizpildīsim datus",
+    "placeholder": "17 rakstzīmes, piem., 1FA6P8CF7K5100001",
+    "fill": "Aizpildīt pēc VIN",
+    "hint": "No title, vējstikla vai izsoles sludinājuma. Automašīnām no Japānas VIN vietā ir šasijas numurs – ievadiet to datus manuāli.",
+    "filled": "Aizpildīts no ASV transportlīdzekļu datubāzes (NHTSA) un EPA. Pārbaudiet laukus zemāk – jebkuru no tiem joprojām varat mainīt.",
+    "filledOffline": "Nolasījām tikai to, kas ir kodēts pašā VIN. Pārējais paliek kā mūsu ieteikumi – izlabojiet, ja zināt datus.",
+    "clear": "Noņemt VIN",
+    "co2Epa": "EPA, pārrēķināts g/km",
+    "massGvwr": "aplēsts pēc svara klases",
+    "madeIn": "Ražots",
+    "invalid": "VIN ir 17 burti un cipari (nekad I, O vai Q). Pārbaudiet, vai netrūkst vai nav lieka kāda rakstzīme.",
+    "w": {
+      "checkDigit": "Kontrolcipars nesakrīt – visticamāk, drukas kļūda. Salīdziniet VIN ar title.",
+      "notFound": "Transportlīdzekļu datubāze šo VIN nezina (bieži automašīnām, kas ražotas ārpus Ziemeļamerikas). Izmantojām to, kas ir kodēts pašā VIN.",
+      "offline": "Transportlīdzekļu datubāze pašlaik neatbild. Izmantojām to, kas ir kodēts pašā VIN – mēģiniet vēlāk, lai iegūtu pilnu specifikāciju.",
+      "noCo2": "EPA nenorāda CO₂ šai versijai – paturam savu aplēsi. Ja jums ir vērtība no CoC, ievadiet to.",
+      "noPower": "Šī VIN jauda datubāzē nav norādīta – paturam savu aplēsi."
+    }
   }
 }
