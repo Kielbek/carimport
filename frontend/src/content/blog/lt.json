@@ -598,5 +598,328 @@
         "a": "Taip. PVM sumokėsite Latvijoje (taip pat 21 %), o su muitinės dokumentais automobilį užregistruosite Regitroje."
       }
     ]
+  },
+  {
+    "id": "registration",
+    "slug": "ivezto-automobilio-registracija-regitroje-dokumentai",
+    "category": "registration",
+    "origin": null,
+    "date": "2026-10-04",
+    "minutes": 3,
+    "title": "Įvežto automobilio registracija Regitroje: dokumentai, techninė apžiūra ir žingsniai",
+    "metaTitle": "Automobilio iš JAV ar Japonijos registracija Regitroje | CarImport.eu",
+    "description": "Kokių dokumentų reikia, kokią techninę apžiūrą reikia praeiti ir ką pritaikyti (žibintai, spidometras), registruojant Regitroje automobilį iš JAV ar Japonijos.",
+    "lead": "Išmuitinimas – tik pusė darbo. Kad automobilis gautų Lietuvos numerius, jis turi atitikti ES techninius reikalavimus, o jums reikės dokumentų rinkinio – daugumos jų su vertimais. Paaiškiname, kaip įvežtas automobilis registruojamas Regitroje.",
+    "blocks": [
+      {
+        "h2": "Reikalingi dokumentai"
+      },
+      {
+        "ul": [
+          "Title arba eksporto pažymėjimas ir pirkimo sąskaita",
+          "Muitinės deklaracija, patvirtinanti muito ir PVM sumokėjimą",
+          "Konosamentas (bill of lading)",
+          "Užsienio kalba surašytų dokumentų vertimai į lietuvių kalbą",
+          "Techninės apžiūros ar atitikties įvertinimo patvirtinimas",
+          "Privalomasis civilinės atsakomybės draudimas ir asmens dokumentas"
+        ]
+      },
+      {
+        "p": "Prieš vizitą Regitroje pasitikrinkite aktualų dokumentų sąrašą, nes reikalavimai automobiliams iš trečiųjų šalių gali skirtis nuo reikalavimų automobiliams iš kitos ES šalies. Jei automobilį registruoja įmonė, reikės ir įmonės rekvizitų bei atstovo įgaliojimo."
+      },
+      {
+        "h2": "Techninis pritaikymas"
+      },
+      {
+        "p": "JAV automobiliams paprastai reikia pritaikyti apšvietimą: raudoni galiniai posūkio žibintai ir šoniniai gabaritai neatitinka ES taisyklių, o priekiniams žibintams gali prireikti kito šviesos pluošto. Spidometras turi rodyti km/h. Galinis rūko žibintas privalomas. Japonijos automobiliai yra su vairu dešinėje – Lietuvoje jie paprastai priimami sureguliavus žibintus."
+      },
+      {
+        "ul": [
+          "Galiniai posūkio žibintai – geltoni",
+          "Priekinių žibintų šviesos pluoštas – eismui dešine kelio puse",
+          "Galinis rūko žibintas",
+          "Spidometras su km/h skale",
+          "Pažeistų saugos sistemų (pagalvės, diržai) atkūrimas"
+        ]
+      },
+      {
+        "h2": "Techninė apžiūra ir atitiktis"
+      },
+      {
+        "p": "Automobilis be ES tipo patvirtinimo praeina individualų atitikties įvertinimą arba išsamią pirminę patikrą. Prieš registraciją Lietuvoje atliekama techninė apžiūra, kurios metu tikrinamas identifikavimas (VIN), apšvietimas, išmetamosios dujos ir saugos įranga. Šį žingsnį verta planuoti su servisu, turinčiu patirties su importuotais automobiliais – jis žinos, kokių pakeitimų reikia konkrečiam modeliui."
+      },
+      {
+        "h2": "Registracija ir mokesčiai"
+      },
+      {
+        "p": "Su apžiūros rezultatu automobilį registruojate Regitroje. Pirmosios registracijos metu mokamas registracijos mokestis ir numerių kaina. Registracijos mokesčio dydį nustato Lietuvos teisės aktai ir jis laikui bėgant keičiasi, todėl čia jo nenurodome – skaičiuoklė jį parodo konkrečiam automobiliui."
+      },
+      {
+        "h2": "Registracijos žingsniai iš eilės"
+      },
+      {
+        "ol": [
+          "Automobilio išmuitinimas ir muitinės dokumentų gavimas.",
+          "Dokumentų vertimas į lietuvių kalbą.",
+          "Techninis pritaikymas servise (žibintai, spidometras, rūko žibintas).",
+          "Privalomojo draudimo sutarties sudarymas.",
+          "Techninė apžiūra ir atitikties patikra.",
+          "Registracija Regitroje ir numerių gavimas.",
+          "Mokesčių sumokėjimas ir registracijos liudijimo gavimas."
+        ]
+      },
+      {
+        "h2": "Registracijos išlaidų apžvalga"
+      },
+      {
+        "table": {
+          "head": [
+            "Eilutė",
+            "Nuo ko priklauso"
+          ],
+          "rows": [
+            [
+              "Vertimai",
+              "Dokumentų kiekis ir apimtis"
+            ],
+            [
+              "Techninis pritaikymas",
+              "Modelis ir reikalingi pakeitimai"
+            ],
+            [
+              "Techninė apžiūra",
+              "Apžiūros centro kainynas"
+            ],
+            [
+              "Registracijos mokestis",
+              "Lietuvos teisės aktai ir automobilio parametrai"
+            ],
+            [
+              "Numeriai",
+              "Regitros kainynas"
+            ],
+            [
+              "Privalomasis draudimas",
+              "Draudikas, automobilis ir vairuotojas"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Dažniausios registracijos problemos"
+      },
+      {
+        "ul": [
+          "Trūksta dokumento ar vertimo – vizitą tenka atidėti",
+          "VIN ant kėbulo pažeistas ar sunkiai įskaitomas po avarijos",
+          "Nepritaikytas apšvietimas, todėl automobilis nepraeina techninės apžiūros",
+          "Išsiskleidusios pagalvės ir šviečiantis klaidos indikatorius",
+          "Spidometras rodo tik mylias per valandą",
+          "Išmetamųjų dujų rodikliai neatitinka normų po remonto ar variklio pakeitimų"
+        ]
+      },
+      {
+        "p": "Daugumos šių problemų galima išvengti, jei prieš techninę apžiūrą automobilį patikrina servisas, jau ruošęs importuotus automobilius. Nemažai servisų Lietuvoje siūlo pilną paslaugą: žibintų perdarymą, spidometro perprogramavimą, diagnostiką ir net palydėjimą į Regitrą. Tai kainuoja papildomai, bet sutaupo laiko ir sumažina riziką, kad apžiūrą teks kartoti."
+      },
+      {
+        "h2": "Kiek viskas užtrunka"
+      },
+      {
+        "p": "Jei dokumentai tvarkingi, o automobilis važiuojantis, nuo išmuitinimo iki numerių gali praeiti kelios savaitės. Ilgiausiai paprastai užtrunka techninis pritaikymas ir dalių laukimas, ypač JAV modeliams, kuriems europietiškus žibintus tenka užsakyti. Jei automobilis buvo apgadintas, remontas gali trukti mėnesius. Planuokite laiko ir vertimams bei vizito Regitroje rezervacijai."
+      },
+      {
+        "p": "Jei automobilį įsigijote kaip įmonė, patikrinkite ir apskaitos pusę: PVM mokėtojas importo PVM paprastai gali atskaityti, bet tik tada, kai automobilis naudojamas ekonominėje veikloje, o muitinės dokumentuose importuotoju nurodyta įmonė. Privačiam asmeniui PVM yra galutinė išlaida, todėl jį reikia įtraukti į biudžetą dar prieš statant aukcione, kartu su registracijos mokesčiu ir techninio pritaikymo išlaidomis. Taip pat atminkite, kad po registracijos automobilio naudojimas Lietuvoje gali būti susijęs ir su kitais periodiniais mokėjimais, kuriuos verta išsiaiškinti iš anksto."
+      },
+      {
+        "tip": "Prieš pirkdami paklauskite serviso reikalingų pakeitimų sąrašo – kai kurių modelių pritaikymas kainuoja daug daugiau nei kitų."
+      },
+      {
+        "h2": "Jei automobilis išmuitintas kitoje šalyje"
+      },
+      {
+        "p": "Jei automobilį išmuitinote, pavyzdžiui, Rygoje ar Bremerhavene, PVM jau sumokėtas toje šalyje, o Regitroje reikės pateikti ten išduotus muitinės dokumentus. Likęs procesas – techninė apžiūra, pritaikymas ir registracija – toks pat. Skaičiuoklėje užtenka įvesti adresą, ir ji apskaičiuoja, kuris iš 43 ES uostų jums bendrai pigiausias."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Ar reikia atitikties sertifikato (CoC)?",
+        "a": "JAV ar Japonijos rinkai pagaminti automobiliai neturi ES CoC. Jie registruojami per individualų atitikties įvertinimą arba nacionalinę patikros procedūrą."
+      },
+      {
+        "q": "Ar galima iš uosto parvažiuoti savo automobiliu?",
+        "a": "Tik su laikinais numeriais ir draudimu, ir tik jei automobilis techniškai tvarkingas. Kitu atveju naudokitės autovežiu ar evakuatoriumi."
+      },
+      {
+        "q": "Ar Lietuvoje galima registruoti automobilį su vairu dešinėje?",
+        "a": "Paprastai taip, pritaikius žibintus. Prieš pirkdami vis dėlto pasitikrinkite aktualius Regitros reikalavimus."
+      }
+    ]
+  },
+  {
+    "id": "port-choice",
+    "slug": "klaipeda-ryga-ar-gdanskas-kuriame-uoste-ismuitinti-automobili",
+    "category": "logistics",
+    "origin": null,
+    "date": "2026-09-30",
+    "minutes": 3,
+    "title": "Klaipėda, Ryga ar Gdanskas? Kuriame uoste išmuitinti automobilį iš JAV",
+    "metaTitle": "Klaipėda, Ryga ar Gdanskas – kur išmuitinti automobilį? | CarImport.eu",
+    "description": "Kaip išmuitinimo uostas keičia PVM, uosto mokesčius, plaukimo laiką ir pristatymo kainą iki Lietuvos – ir kaip rasti pigiausią iš 43 ES uostų jūsų adresui.",
+    "lead": "Lietuvos pirkėjui artimiausi uostai – Klaipėda, Ryga, Gdanskas ir Gdynė, tačiau automobilį galima išmuitinti bet kuriame iš 43 ES uostų. Uostas lemia PVM tarifą, uosto mokesčius ir tai, kiek automobiliui teks važiuoti keliu iki jūsų namų.",
+    "blocks": [
+      {
+        "h2": "Artimiausi uostai nuo Kauno"
+      },
+      {
+        "table": {
+          "head": [
+            "Uostas",
+            "Šalis",
+            "PVM",
+            "Atstumas keliu nuo Kauno"
+          ],
+          "rows": [
+            [
+              "Klaipėda",
+              "Lietuva",
+              "21 %",
+              "247 km"
+            ],
+            [
+              "Ryga",
+              "Latvija",
+              "21 %",
+              "290 km"
+            ],
+            [
+              "Gdanskas",
+              "Lenkija",
+              "23 %",
+              "426 km"
+            ],
+            [
+              "Gdynė",
+              "Lenkija",
+              "23 %",
+              "433 km"
+            ],
+            [
+              "Talinas (Muuga)",
+              "Estija",
+              "24 %",
+              "644 km"
+            ],
+            [
+              "Hanko",
+              "Suomija",
+              "25,5 %",
+              "688 km"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Klaipėda yra artimiausias ir logiškiausias pasirinkimas daugumai Lietuvos pirkėjų: PVM 21 %, procedūros lietuvių kalba, o daugelis konteinerių su automobiliais iš JAV atplaukia būtent čia. Ryga turi tą patį PVM tarifą ir kartais konkuruoja kaina. Lenkijos uostai ir ypač Talinas bei Suomija dėl didesnio PVM paprastai neapsimoka."
+      },
+      {
+        "h2": "Trys dalykai, kuriuos keičia uostas"
+      },
+      {
+        "ol": [
+          "Importo PVM: mokate uosto šalies tarifą – 21 % Lietuvoje ir Latvijoje, 23 % Lenkijoje, 24 % Estijoje, 25,5 % Suomijoje.",
+          "Mokesčiai: terminalo paslaugos, iškrovimas ir muitinės tarpininkas kiekviename uoste kainuoja skirtingai.",
+          "Atstumas keliu: uostas su mažesniu PVM gali būti toli nuo jūsų namų, o pristatymas kainuoja už kiekvieną kilometrą."
+        ]
+      },
+      {
+        "h2": "Kada „užsienio“ uostas pigesnis"
+      },
+      {
+        "p": "Lietuvoje PVM 21 % – mažiau nei daugumoje kaimyninių šalių. Todėl išmuitinti su didesniu PVM Lenkijoje, Estijoje ar Suomijoje beveik niekada neapsimoka. Tačiau dideli Šiaurės jūros uostai, pavyzdžiui, Bremerhavenas su 19 % PVM, gali būti įdomūs: PVM dviem procentiniais punktais mažesnis, o laivai iš JAV ten atplaukia greičiau. Kita vertus, reikia skaičiuoti ilgą kelią sausuma – apie tūkstantį kilometrų iki Lietuvos – ir pristatymo kainą."
+      },
+      {
+        "h2": "Pavyzdys: Klaipėda prieš Bremerhaveną"
+      },
+      {
+        "p": "Tarkime, PVM bazė yra 15 333 $. Išmuitinus Klaipėdoje su 21 % PVM, mokestis yra 3 220 $. Bremerhavene su 19 % – 2 913 $, t. y. apie 300 $ mažiau. Tačiau po to automobilį autovežiu reikia vežti iš Vokietijos į Lietuvą, o tai paprastai kainuoja tiek pat ar daugiau nei šis sutaupymas. Be to, išmuitinimą teks tvarkyti šalyje, kurios kalbos ir procedūrų nežinote. Brangesniems automobiliams PVM skirtumas didėja, todėl verta skaičiuoti kiekvieną kartą iš naujo."
+      },
+      {
+        "h2": "Plaukimo laikas"
+      },
+      {
+        "p": "Iš JAV rytinės pakrantės greičiausiai pasiekiami Šiaurės jūros uostai (apie 2 savaites). Į Baltijos uostus kroviniai dažnai perkraunami, todėl kelionė iki Klaipėdos ar Rygos trunka apie 3–6 savaites. Iš Japonijos ir JAE laivai plaukia per Sueco kanalą, todėl Viduržemio jūros uostai, pavyzdžiui, Koperis, Genuja ar Pirėjas, savaite ar daugiau greitesni nei Šiaurės jūra, bet labai toli nuo Lietuvos."
+      },
+      {
+        "table": {
+          "head": [
+            "Uostas",
+            "Iš JAV (dienos)",
+            "Iš Japonijos (dienos)"
+          ],
+          "rows": [
+            [
+              "Klaipėda",
+              "19–40",
+              "46"
+            ],
+            [
+              "Ryga",
+              "20–41",
+              "47"
+            ],
+            [
+              "Gdanskas",
+              "21–40",
+              "48"
+            ],
+            [
+              "Bremerhavenas",
+              "14–35",
+              "42"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Uosto mokesčiai ir pristatymas"
+      },
+      {
+        "p": "Iškrovimas ir terminalo mokesčiai Baltijos uostuose panašūs – Klaipėdoje apie 400 eurų, Rygoje apie 420 eurų, muitinės tarpininkas apie 250–260 eurų. Didesnis skirtumas atsiranda pristatant: iš Klaipėdos iki Vakarų Lietuvos adreso automobilis atvežamas pigiai, o gyvenantiems Vilniuje ar Šiaurės Lietuvoje Ryga kartais yra beveik tokiu pat atstumu."
+      },
+      {
+        "h2": "Kada rinktis Klaipėdą, kada Rygą"
+      },
+      {
+        "ul": [
+          "Klaipėda – daugumai pirkėjų, ypač Vakarų ir Vidurio Lietuvoje, su paprasčiausiu procesu lietuvių kalba",
+          "Ryga – jei jūsų vežėjas siūlo pigesnį konteinerį tiesiai į Rygą arba gyvenate Šiaurės Lietuvoje",
+          "Šiaurės jūros uostai – jei automobilis labai brangus arba reikia greičiausio laivo",
+          "Viduržemio jūros uostai – paprastai tik automobiliams iš Japonijos ar JAE, ir tai retai"
+        ]
+      },
+      {
+        "p": "Svarbu atsiminti, kad nepriklausomai nuo išmuitinimo šalies, automobilis registruojamas Lietuvoje Regitroje ir čia mokamas registracijos mokestis. Uosto pasirinkimas keičia tik importo PVM, uosto mokesčius ir pristatymo išlaidas, o ne Lietuvos mokesčius."
+      },
+      {
+        "p": "Nepamirškite ir laiko. Jei automobilio reikia greitai, uosto pasirinkimas lemia ne tik kainą, bet ir laukimą: kelios papildomos dienos uoste reiškia saugojimo mokesčius, o laivų vėlavimai žiemą Baltijos jūroje nėra reti. Skaičiuoklės pesimistinis scenarijus šiuos vėlavimus įvertina. Taip pat verta paklausti vežėjo, kaip dažnai jo konteineriai plaukia į pasirinktą uostą – retesni reisai gali pridėti savaitę ar dvi laukimo dar JAV uoste, kol konteineris bus užpildytas."
+      },
+      {
+        "tip": "Įveskite adresą skaičiuoklėje: ji apskaičiuoja visus 43 ES uostus „nuo durų iki durų“ ir automatiškai parenka pigiausią."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Ar galiu išmuitinti automobilį kitoje šalyje ir registruoti Lietuvoje?",
+        "a": "Taip. Importo PVM sumokate uosto šalyje, o automobilį registruojate Regitroje su muitinės dokumentais."
+      },
+      {
+        "q": "Kurie uostai priima daugiausiai automobilių iš JAV?",
+        "a": "Bremerhavenas, Roterdamas, Antverpenas ir Hamburgas prie Šiaurės jūros, taip pat Baltijos uostai, pavyzdžiui, Gdynė ir Klaipėda, aptarnaujantys Vidurio ir Rytų Europą."
+      },
+      {
+        "q": "Ar Ryga pigesnė už Klaipėdą?",
+        "a": "Abiejuose PVM 21 %, todėl skirtumą lemia uosto mokesčiai, pervežimo tarifai ir atstumas iki jūsų adreso. Skaičiuoklė tai palygina automatiškai."
+      }
+    ]
   }
 ]
