@@ -3,28 +3,132 @@
 /** Article id -> language -> slug. */
 export const BLOG_INDEX: Record<string, Record<string, string>> = {
   "total-cost": {
-    "en": "how-much-does-it-cost-to-import-a-car-from-the-usa"
+    "bg": "kolko-struva-vnos-na-kola-ot-amerika-v-balgariya",
+    "de": "auto-aus-den-usa-importieren-kosten",
+    "el": "poso-kostizei-na-fereis-aftokinito-apo-ameriki",
+    "en": "how-much-does-it-cost-to-import-a-car-from-the-usa",
+    "es": "cuanto-cuesta-importar-un-coche-de-estados-unidos-a-espana",
+    "fi": "paljonko-maksaa-tuoda-auto-yhdysvalloista-suomeen",
+    "fr": "combien-coute-importer-une-voiture-des-usa",
+    "hr": "koliko-kosta-uvoz-auta-iz-amerike",
+    "it": "quanto-costa-importare-auto-dagli-usa",
+    "lv": "auto-ievesana-no-asv-izmaksas-cik-maksa",
+    "pl": "ile-kosztuje-sprowadzenie-auta-z-usa",
+    "ro": "cat-costa-sa-aduci-o-masina-din-america-in-romania",
+    "sk": "kolko-stoji-dovoz-auta-z-usa-na-slovensko",
+    "sv": "vad-kostar-det-att-importera-bil-fran-usa"
   },
   "copart-iaai": {
-    "en": "how-to-buy-a-car-at-copart-or-iaai-from-europe"
+    "bg": "kak-da-kupya-kola-ot-copart-ili-iaai-ot-balgariya",
+    "de": "copart-iaai-auto-kaufen-aus-deutschland-anleitung",
+    "el": "pos-na-agoraseis-aftokinito-apo-copart-kai-iaai-apo-tin-ellada",
+    "en": "how-to-buy-a-car-at-copart-or-iaai-from-europe",
+    "es": "como-comprar-un-coche-en-copart-o-iaai-desde-espana",
+    "fi": "auton-osto-copart-ja-iaai-huutokaupasta-suomesta",
+    "fr": "acheter-une-voiture-sur-copart-ou-iaai-depuis-la-france",
+    "hr": "kako-kupiti-auto-na-copartu-ili-iaai-iz-hrvatske",
+    "it": "come-comprare-auto-copart-iaai-dall-italia",
+    "lv": "ka-nopirkt-auto-copart-vai-iaai-izsole-no-latvijas",
+    "pl": "jak-kupic-auto-na-copart-i-iaai-z-polski",
+    "ro": "cum-cumperi-o-masina-de-la-copart-sau-iaai-din-romania",
+    "sk": "ako-kupit-auto-na-copart-alebo-iaai-zo-slovenska",
+    "sv": "kopa-bil-pa-copart-och-iaai-fran-sverige"
   },
   "salvage-title": {
-    "en": "salvage-title-cars-from-the-usa-what-you-need-to-know"
+    "bg": "koli-sas-salvage-titla-ot-amerika-riskove-i-registratsiya",
+    "de": "salvage-title-auto-aus-usa-risiken-zulassung-deutschland",
+    "el": "aftokinito-me-salvage-title-apo-ameriki-ti-prepei-na-xerete",
+    "en": "salvage-title-cars-from-the-usa-what-you-need-to-know",
+    "es": "coches-con-titulo-salvage-de-estados-unidos-se-pueden-matricular-en-espana",
+    "fi": "salvage-title-auto-yhdysvalloista-riskit-ja-rekisterointi",
+    "fr": "voiture-salvage-usa-importer-et-immatriculer-en-france",
+    "hr": "salvage-auto-iz-amerike-sto-trebate-znati",
+    "it": "auto-salvage-dagli-usa-cosa-sapere",
+    "lv": "salvage-title-auto-no-asv-riski-un-izmaksas",
+    "pl": "auto-z-usa-z-tytulem-salvage-co-trzeba-wiedziec",
+    "ro": "masini-cu-titlu-salvage-din-america-riscuri-si-inmatriculare",
+    "sk": "auto-zo-salvage-titulom-z-usa-co-treba-vediet",
+    "sv": "salvage-title-bil-fran-usa-registrera-i-sverige"
   },
   "customs-vat": {
-    "en": "customs-duty-and-vat-on-imported-cars-explained"
+    "bg": "mito-i-dds-pri-vnos-na-kola-izvan-es",
+    "de": "einfuhrumsatzsteuer-und-zoll-auto-usa-berechnen",
+    "el": "dasmos-kai-fpa-eisagogis-aftokinitou-stin-ellada",
+    "en": "customs-duty-and-vat-on-imported-cars-explained",
+    "es": "aranceles-e-iva-al-importar-un-coche-de-estados-unidos",
+    "fi": "auton-tuonti-tulli-ja-arvonlisavero-miten-ne-lasketaan",
+    "fr": "droits-de-douane-et-tva-importation-voiture-usa",
+    "hr": "carina-i-pdv-za-uvoz-automobila-izracun",
+    "it": "dazio-e-iva-importazione-auto-come-si-calcolano",
+    "lv": "muitas-nodoklis-un-pvn-ievedot-auto-latvija",
+    "pl": "clo-akcyza-i-vat-na-samochod-z-usa",
+    "ro": "taxa-vamala-si-tva-la-importul-unei-masini-din-afara-ue",
+    "sk": "clo-a-dph-pri-dovoze-auta-na-slovensko",
+    "sv": "tull-och-moms-vid-import-av-bil"
   },
   "registration": {
-    "en": "registering-an-imported-car-in-the-eu-documents-and-steps"
+    "bg": "registratsiya-na-vnesena-kola-ot-amerika-v-kat-dokumenti",
+    "de": "us-auto-zulassen-vollabnahme-21-stvzo-ablauf",
+    "el": "taxinomisi-eisagomenou-aftokinitou-stin-ellada-dikaiologitika",
+    "en": "registering-an-imported-car-in-the-eu-documents-and-steps",
+    "es": "matricular-un-coche-importado-de-estados-unidos-en-espana-documentos-y-pasos",
+    "fi": "tuontiauton-rekisterointi-suomessa-asiakirjat-ja-katsastus",
+    "fr": "immatriculer-une-voiture-importee-des-usa-en-france-carte-grise",
+    "hr": "registracija-uvezenog-auta-iz-amerike-dokumenti-i-postupak",
+    "it": "immatricolare-auto-importata-usa-giappone-documenti",
+    "lv": "ievesta-auto-registracija-csdd-dokumenti-un-soli",
+    "pl": "rejestracja-auta-z-usa-dokumenty-i-krok-po-kroku",
+    "ro": "inmatriculare-masina-adusa-din-america-acte-rar-drpciv",
+    "sk": "prihlasenie-dovezeneho-auta-z-usa-na-slovensku-doklady",
+    "sv": "registrera-importerad-bil-i-sverige-registreringsbesiktning"
   },
   "port-choice": {
-    "en": "bremerhaven-rotterdam-or-antwerp-choosing-a-port"
+    "bg": "solun-varna-ili-konstantsa-koe-pristanishte-za-vnos-na-kola",
+    "de": "bremerhaven-oder-hamburg-welcher-hafen-fuer-auto-import",
+    "el": "peiraias-i-thessaloniki-se-poio-limani-na-ektelonisete-to-aftokinito",
+    "en": "bremerhaven-rotterdam-or-antwerp-choosing-a-port",
+    "es": "valencia-bilbao-o-algeciras-que-puerto-elegir-para-importar-un-coche",
+    "fi": "helsinki-hanko-vai-tallinna-mihin-satamaan-tuontiauto-tullataan",
+    "fr": "le-havre-anvers-ou-zeebrugge-quel-port-pour-importer-sa-voiture",
+    "hr": "rijeka-koper-ili-trst-u-kojoj-luci-ocariniti-auto",
+    "it": "livorno-genova-la-spezia-o-koper-quale-porto-scegliere",
+    "lv": "riga-klaipeda-vai-tallina-kura-osta-muitot-auto",
+    "pl": "gdynia-bremerhaven-czy-rotterdam-gdzie-odprawic-auto-z-usa",
+    "ro": "constanta-sau-varna-in-ce-port-vamuiesti-masina-adusa-din-sua",
+    "sk": "koper-rijeka-alebo-bremerhaven-kde-preclit-auto-na-slovensko",
+    "sv": "goteborg-bremerhaven-eller-baltikum-valja-hamn-for-bilimport"
   },
   "japan-jdm": {
-    "en": "importing-a-jdm-car-from-japan-auction-sheets-and-costs"
+    "bg": "vnos-na-jdm-kola-ot-yaponiya-list-ot-targa-otsenki-i-razhodi",
+    "de": "jdm-auto-aus-japan-importieren-auction-sheet-kosten",
+    "el": "eisagogi-jdm-aftokinitou-apo-iaponia-auction-sheet-kai-kostos",
+    "en": "importing-a-jdm-car-from-japan-auction-sheets-and-costs",
+    "es": "importar-un-coche-de-japon-a-espana-jdm-hoja-de-subasta-y-costes",
+    "fi": "jdm-auton-tuonti-japanista-suomeen-huutokauppalomake-ja-kustannukset",
+    "fr": "importer-une-voiture-du-japon-jdm-feuille-enchere-et-cout",
+    "hr": "uvoz-auta-iz-japana-jdm-aukcije-i-troskovi",
+    "it": "importare-auto-jdm-dal-giappone-aste-costi",
+    "lv": "jdm-auto-no-japanas-uz-latviju-izsoles-lapas-un-izmaksas",
+    "pl": "import-auta-z-japonii-arkusz-aukcyjny-i-koszty",
+    "ro": "import-masina-jdm-din-japonia-foaia-de-licitatie-si-costuri",
+    "sk": "dovoz-jdm-auta-z-japonska-aukcne-listy-a-naklady",
+    "sv": "importera-jdm-bil-fran-japan-auktionsblad-och-kostnader"
   },
   "checklist": {
-    "en": "checklist-before-you-bid-on-an-imported-car"
+    "bg": "proverki-predi-da-naddavate-za-kola-ot-amerika-ili-yaponiya",
+    "de": "checkliste-auto-aus-usa-kaufen-vor-dem-bieten",
+    "el": "lista-elegchou-prin-agorasete-aftokinito-se-dimoprasia-exoterikou",
+    "en": "checklist-before-you-bid-on-an-imported-car",
+    "es": "checklist-antes-de-pujar-por-un-coche-importado",
+    "fi": "tarkistuslista-ennen-tarjousta-ulkomaisesta-autohuutokaupasta",
+    "fr": "checklist-avant-d-encherir-sur-une-voiture-importee",
+    "hr": "kontrolni-popis-prije-licitiranja-za-auto-iz-inozemstva",
+    "it": "checklist-prima-di-fare-offerta-auto-asta-usa",
+    "lv": "parbaudes-saraksts-pirms-auto-pirksanas-izsole-asv-japana",
+    "pl": "lista-kontrolna-przed-licytacja-auta-z-usa",
+    "ro": "checklist-inainte-sa-licitezi-pe-o-masina-din-america-sau-japonia",
+    "sk": "checklist-pred-kupou-auta-z-usa-na-aukcii",
+    "sv": "checklista-innan-du-budar-pa-bil-fran-usa"
   }
 };
 
@@ -32,4 +136,4 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
 export const BLOG_DATES: Record<string, string> = {"total-cost":"2026-10-20","copart-iaai":"2026-10-16","salvage-title":"2026-10-12","customs-vat":"2026-10-08","registration":"2026-10-04","port-choice":"2026-09-30","japan-jdm":"2026-09-25","checklist":"2026-09-20"};
 
 /** Languages that have at least one article. */
-export const BLOG_LANGS: string[] = ["en"];
+export const BLOG_LANGS: string[] = ["bg","de","el","en","es","fi","fr","hr","it","lv","pl","ro","sk","sv"];

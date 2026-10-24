@@ -557,7 +557,7 @@
     "category": "registration",
     "origin": null,
     "date": "2026-10-04",
-    "minutes": 3,
+    "minutes": 4,
     "title": "Immatriculer en France une voiture importée des USA : documents et étapes",
     "metaTitle": "Carte grise d’une voiture importée des USA : étapes | CarImport.eu",
     "description": "Carte grise d’une voiture importée des USA : réception à titre isolé DREAL, contrôle technique, demande ANTS, taxe régionale, malus et délai d’un mois.",
@@ -648,6 +648,12 @@
         ]
       },
       {
+        "h2": "Combien de temps et quel budget prévoir ?"
+      },
+      {
+        "p": "Entre l’arrivée de la voiture au port et la carte grise définitive, comptez plusieurs semaines. La durée dépend surtout de la réception à titre isolé : disponibilité des rendez-vous à la DREAL, pièces à commander pour l’éclairage, attestations à obtenir. Côté budget, prévoyez les pièces et la main-d’œuvre de mise aux normes, les traductions assermentées, le contrôle technique, les frais de dossier de la réception et, enfin, la taxe régionale et l’éventuel malus. Ces derniers peuvent représenter une part importante du coût total pour une grosse cylindrée américaine : faites le calcul avant d’enchérir, pas après."
+      },
+      {
         "tip": "Demandez au garage la liste des modifications nécessaires avant d’acheter : sur certains modèles, la mise aux normes coûte bien plus cher que sur d’autres."
       }
     ],
@@ -663,6 +669,370 @@
       {
         "q": "Le malus s’applique-t-il si la voiture est d’occasion ?",
         "a": "Une voiture importée immatriculée pour la première fois en France relève des règles françaises de la carte grise. Selon ses caractéristiques et son âge, un malus peut s’appliquer ; le calculateur l’indique lorsque les données le permettent."
+      }
+    ]
+  },
+  {
+    "id": "port-choice",
+    "slug": "le-havre-anvers-ou-zeebrugge-quel-port-pour-importer-sa-voiture",
+    "category": "logistics",
+    "origin": null,
+    "date": "2026-09-30",
+    "minutes": 3,
+    "title": "Le Havre, Anvers ou Zeebrugge ? Quel port choisir pour dédouaner sa voiture",
+    "metaTitle": "Le Havre, Anvers ou Zeebrugge : quel port choisir ? | CarImport.eu",
+    "description": "Le Havre, Anvers, Zeebrugge, Rotterdam ou Marseille-Fos : quel port choisir pour importer une voiture en France ? TVA 20 % ou 21 %, frais portuaires et route.",
+    "lead": "Les voitures américaines destinées à la France arrivent le plus souvent au Havre, à Anvers, à Zeebrugge ou à Rotterdam, mais elles peuvent être dédouanées dans n’importe lequel des 43 ports de l’UE. Le port détermine le taux de TVA, les frais portuaires et la distance que la voiture parcourt ensuite par la route.",
+    "blocks": [
+      {
+        "h2": "Trois choses que le port change"
+      },
+      {
+        "ol": [
+          "La TVA à l’importation : vous payez le taux du pays du port – 20 % en France, 21 % en Belgique et aux Pays-Bas, 19 % en Allemagne, jusqu’à 25 % en Scandinavie.",
+          "Les frais : manutention au terminal, dépotage du conteneur et commissionnaire en douane varient d’un port à l’autre.",
+          "La distance routière : un port plus avantageux sur le papier peut se trouver loin de chez vous."
+        ]
+      },
+      {
+        "h2": "Les ports les plus proches de la France"
+      },
+      {
+        "p": "Depuis Paris, six ports se trouvent à moins de 500 km par la route. Le Havre est de loin le plus proche, mais les ports belges et néerlandais sont très bien desservis par les lignes venant des États-Unis."
+      },
+      {
+        "table": {
+          "head": [
+            "Port",
+            "Pays et TVA",
+            "Distance de Paris",
+            "Traversée depuis les USA"
+          ],
+          "rows": [
+            [
+              "Le Havre",
+              "France, 20 %",
+              "221 km",
+              "12 à 33 jours"
+            ],
+            [
+              "Zeebrugge",
+              "Belgique, 21 %",
+              "352 km",
+              "13 à 34 jours"
+            ],
+            [
+              "Vlissingen",
+              "Pays-Bas, 21 %",
+              "376 km",
+              "13 à 34 jours"
+            ],
+            [
+              "Anvers",
+              "Belgique, 21 %",
+              "380 km",
+              "13 à 34 jours"
+            ],
+            [
+              "Rotterdam",
+              "Pays-Bas, 21 %",
+              "458 km",
+              "13 à 34 jours"
+            ],
+            [
+              "Saint-Nazaire (Montoir)",
+              "France, 20 %",
+              "471 km",
+              "13 à 34 jours"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Le Havre ou un port belge : le vrai calcul"
+      },
+      {
+        "p": "Pour un habitant de la France, dédouaner au Havre ou à Saint-Nazaire a un avantage évident : la TVA française de 20 % est plus basse que les 21 % de la Belgique et des Pays-Bas. Sur notre exemple d’une voiture à 10 000 $, avec une base de TVA d’environ 15 300 $, la différence est d’environ 150 $. Mais les frais portuaires des ports belges sont souvent un peu plus bas, et la fréquence des départs y est plus élevée. Pour une adresse à Lille ou dans le Nord, Zeebrugge ou Anvers peuvent donc revenir au même prix, voire moins cher. Pour la Normandie, la Bretagne ou l’Île-de-France, Le Havre et Saint-Nazaire l’emportent en général."
+      },
+      {
+        "p": "Les frais portuaires ne sont pas négligeables non plus : déchargement, dépotage et commissionnaire représentent ensemble plusieurs centaines d’euros, avec des écarts d’une centaine d’euros entre ports voisins. Ajoutez-y le transport routier, qui se paie au kilomètre, et le choix du port devient un vrai calcul d’optimisation plutôt qu’une question d’habitude."
+      },
+      {
+        "h2": "Quand un port étranger est-il plus avantageux ?"
+      },
+      {
+        "p": "Si le taux de TVA du pays du port est plus bas que celui de la France, le dédouanement à l’étranger peut faire économiser plus que le surcoût de la route. C’est le cas de l’Allemagne à 19 %, mais Bremerhaven et Hambourg sont loin de la plupart des régions françaises, sauf peut-être pour l’Alsace et la Lorraine. Attention : la taxe régionale et le malus écologique restent dus en France au moment de l’immatriculation, quel que soit le port. La comparaison doit donc se faire porte à porte."
+      },
+      {
+        "h2": "Et le sud de la France ?"
+      },
+      {
+        "p": "Depuis la côte Est des États-Unis, les ports de la mer du Nord et de la Manche sont les plus rapides, avec environ deux semaines de mer. Depuis le Japon et les Émirats, les navires passent par Suez : Marseille-Fos, Gênes ou Barcelone sont alors une semaine ou plus en avance sur Le Havre. Pour une adresse en Provence, en Occitanie ou en Rhône-Alpes, Marseille-Fos permet en plus de dédouaner à 20 % tout en réduisant fortement le trajet routier."
+      },
+      {
+        "h2": "Ce qu’il faut comparer pour chaque port"
+      },
+      {
+        "ul": [
+          "La TVA du pays du port appliquée à la base complète (CIF + droits + transport)",
+          "Les frais de terminal, de dépotage et du commissionnaire en douane",
+          "Le prix du camion porte-voitures jusqu’à votre adresse, au kilomètre",
+          "La durée de traversée et la fréquence des départs depuis votre port américain",
+          "Les frais de stockage si le dédouanement prend du retard"
+        ]
+      },
+      {
+        "tip": "Saisissez simplement votre adresse dans le calculateur : il compare les 43 ports de l’UE porte à porte et choisit automatiquement le moins cher."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Peut-on dédouaner la voiture dans un autre pays et l’immatriculer en France ?",
+        "a": "Oui. Vous payez la TVA à l’importation dans le pays du port, puis vous immatriculez la voiture en France avec les documents de dédouanement. La TVA française n’est pas due une seconde fois."
+      },
+      {
+        "q": "Quels ports reçoivent le plus de voitures des États-Unis ?",
+        "a": "Bremerhaven, Rotterdam, Anvers et Hambourg en mer du Nord ; pour la France, Le Havre est aussi bien desservi. Les ports de la Baltique comme Gdynia et Klaipėda servent surtout l’Europe centrale et orientale."
+      },
+      {
+        "q": "Le port le plus proche est-il toujours le moins cher ?",
+        "a": "Pas forcément. Un port un peu plus éloigné peut avoir des frais plus bas ou des départs plus fréquents. Seul un calcul porte à porte, TVA comprise, permet de trancher."
+      }
+    ]
+  },
+  {
+    "id": "japan-jdm",
+    "slug": "importer-une-voiture-du-japon-jdm-feuille-enchere-et-cout",
+    "category": "buying",
+    "origin": "JAPAN",
+    "date": "2026-09-25",
+    "minutes": 3,
+    "title": "Importer une voiture JDM du Japon en France : feuille d’enchère, notes et coût",
+    "metaTitle": "Importer une voiture du Japon (JDM) : guide et coûts | CarImport.eu",
+    "description": "Importer une voiture JDM du Japon en France : enchères USS et TAA, lecture de la feuille d’enchère, notes, délais, droits de 10 %, TVA 20 % et volant à droite.",
+    "lead": "Les enchères japonaises sont réputées pour leurs notes honnêtes et des voitures en excellent état. Avec un exportateur fiable, acheter une voiture JDM est souvent plus sûr que d’acheter à l’aveugle sur les enchères américaines, à condition de savoir lire la feuille d’enchère.",
+    "blocks": [
+      {
+        "h2": "Comment fonctionne l’achat au Japon"
+      },
+      {
+        "p": "Les grandes ventes aux enchères comme USS, TAA, CAA et JU sont réservées aux professionnels licenciés. Vous achetez donc par l’intermédiaire d’un exportateur : vous sélectionnez les voitures, fixez une enchère maximale, et l’exportateur enchérit, paie, radie la voiture du registre japonais en vue de l’export et l’expédie vers l’Europe."
+      },
+      {
+        "p": "Choisissez un exportateur qui fournit la feuille d’enchère originale et sa traduction, des photos supplémentaires sur demande et un contrat clair sur les frais. Méfiez-vous des offres trop alléchantes sans historique vérifiable : la confiance dans l’exportateur est la base de tout l’achat."
+      },
+      {
+        "h2": "Lire la feuille d’enchère"
+      },
+      {
+        "ul": [
+          "Note globale : 6 à 5 quasi neuve, 4,5 à 4 très bon état, 3,5 état moyen, R ou RA voiture accidentée réparée",
+          "Note intérieure : de A à D",
+          "Plan de carrosserie : A = rayure, U = bosse, W = ondulation ou réparation, S = rouille, C = corrosion, avec un chiffre pour la taille",
+          "Remarques de l’inspecteur : à faire traduire systématiquement"
+        ]
+      },
+      {
+        "table": {
+          "head": [
+            "Note",
+            "Signification",
+            "Pour qui ?"
+          ],
+          "rows": [
+            [
+              "6 – 5",
+              "Quasi neuve, très faible kilométrage",
+              "Collectionneurs, budget élevé"
+            ],
+            [
+              "4,5 – 4",
+              "Très bon état, défauts mineurs",
+              "Le meilleur compromis"
+            ],
+            [
+              "3,5",
+              "État moyen, usure visible",
+              "Acheteurs prêts à faire quelques travaux"
+            ],
+            [
+              "R / RA",
+              "Accident réparé",
+              "Seulement après explications détaillées"
+            ]
+          ]
+        }
+      },
+      {
+        "tip": "Une note R ou RA n’est pas toujours mauvaise, mais demandez ce qui a été réparé : une réparation de châssis n’a rien à voir avec un pare-chocs remplacé."
+      },
+      {
+        "h2": "Coûts et délais"
+      },
+      {
+        "p": "Ajoutez au prix d’adjudication la commission de l’exportateur, le transport terrestre au Japon, les documents d’export et le fret. Les navires passent par Suez : environ 5 à 6 semaines jusqu’à la mer du Nord ou au Havre, moins jusqu’aux ports méditerranéens comme Marseille-Fos. Les droits de douane sont de 10 % pour une voiture particulière, et la TVA à l’importation est payée dans le pays de dédouanement – 20 % en France. La carte grise française s’ajoute ensuite, avec la taxe régionale et, selon le véhicule, le malus écologique."
+      },
+      {
+        "p": "Pour les voitures de plus de 30 ans dans leur état d’origine, le classement en véhicule de collection peut supprimer les droits de douane. C’est un point important pour les classiques japonaises des années 1990 qui atteignent cet âge, très recherchées par les passionnés."
+      },
+      {
+        "h2": "Les étapes de l’achat, du Japon à la France"
+      },
+      {
+        "ol": [
+          "Choisir un exportateur et verser un acompte.",
+          "Sélectionner les voitures et recevoir les feuilles d’enchère traduites.",
+          "Fixer une enchère maximale, frais d’export et coûts en France compris.",
+          "Payer la voiture et les frais de l’exportateur après l’enchère gagnée.",
+          "Recevoir le certificat d’export et le connaissement une fois la voiture chargée.",
+          "Dédouaner au port d’arrivée, payer les droits et la TVA.",
+          "Faire adapter les phares, passer la réception à titre isolé et demander la carte grise."
+        ]
+      },
+      {
+        "p": "À chaque étape, gardez une copie de tous les documents. Le certificat d’export japonais, traduit par un traducteur assermenté, remplace le titre américain dans le dossier de réception et d’immatriculation."
+      },
+      {
+        "h2": "Le volant à droite"
+      },
+      {
+        "p": "La France immatricule les voitures à volant à droite, généralement après adaptation des phares pour la circulation à droite. La réception à titre isolé auprès de la DREAL reste nécessaire, comme pour une voiture américaine, car les modèles japonais n’ont en général pas de réception européenne. Pensez aussi à l’usage quotidien : dépasser, passer un péage ou un drive est moins pratique avec le volant à droite."
+      },
+      {
+        "h2": "Les modèles JDM les plus recherchés"
+      },
+      {
+        "p": "Sportives des années 1990, petites keicars, monospaces et 4x4 introuvables en Europe : le marché japonais offre des modèles qui n’ont jamais été vendus en France. Vérifiez avant l’achat la disponibilité des pièces, notamment pour les versions spécifiques au Japon, et la faisabilité de l’homologation : certains moteurs ou équipements peuvent compliquer la réception à titre isolé."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Les kilométrages japonais sont-ils fiables ?",
+        "a": "En général oui : les feuilles d’enchère et les certificats d’export enregistrent le kilométrage, et les compteurs trafiqués sont rares par rapport à d’autres marchés."
+      },
+      {
+        "q": "Et la rouille ?",
+        "a": "Les voitures du nord du Japon (Hokkaido) peuvent présenter de la rouille sous la caisse à cause du sel de déneigement ; la feuille d’enchère l’indique par S ou C."
+      },
+      {
+        "q": "Combien de temps faut-il pour recevoir une voiture du Japon en France ?",
+        "a": "Comptez en général deux à trois mois au total : achat et export au Japon, environ cinq à six semaines de mer via Suez, puis dédouanement, livraison et homologation."
+      }
+    ]
+  },
+  {
+    "id": "checklist",
+    "slug": "checklist-avant-d-encherir-sur-une-voiture-importee",
+    "category": "buying",
+    "origin": null,
+    "date": "2026-09-20",
+    "minutes": 3,
+    "title": "Checklist en 12 points avant d’enchérir sur une voiture à l’étranger",
+    "metaTitle": "Checklist avant d’enchérir sur une voiture importée | CarImport.eu",
+    "description": "Avant d’enchérir sur Copart, IAAI ou au Japon : la checklist en 12 points pour importer une voiture en France sans mauvaise surprise sur le prix final.",
+    "lead": "Une enchère vous laisse quelques minutes pour décider. Ces douze points demandent une soirée de préparation et vous évitent les erreurs les plus coûteuses, de l’historique du VIN jusqu’à la carte grise française.",
+    "blocks": [
+      {
+        "h2": "Les 12 points à vérifier"
+      },
+      {
+        "ol": [
+          "Commandez un rapport d’historique du VIN (Carfax, AutoCheck) : accidents, inondation, kilométrage, vol.",
+          "Vérifiez le type de titre : évitez les certificats parts only et non-repairable.",
+          "Étudiez chaque photo : écarts de carrosserie, airbags, traces d’eau, compartiment moteur.",
+          "Lisez les mentions d’état comme une information, pas comme une garantie.",
+          "Vérifiez l’emplacement du parc et sa distance jusqu’au port d’export.",
+          "Calculez tous les frais d’enchère et d’intermédiaire pour votre niveau d’offre.",
+          "Obtenez le coût complet rendu chez vous : fret, droits de 10 %, TVA, port, livraison.",
+          "Comparez les ports de dédouanement pour votre adresse : Le Havre, Anvers, Zeebrugge, Rotterdam.",
+          "Demandez un devis de réparation et le prix des pièces en France.",
+          "Vérifiez ce qu’il faut modifier pour l’homologation (feux, compteur en km/h, antibrouillard).",
+          "Planifiez le calendrier : délais de paiement et d’enlèvement, traversée, réception à titre isolé, carte grise dans le mois.",
+          "Fixez une enchère maximale, et tenez-vous-y."
+        ]
+      },
+      {
+        "tip": "Faites les points 6 à 8 dans le calculateur : il additionne tous les frais et taxes et affiche un total optimiste, moyen et pessimiste."
+      },
+      {
+        "h2": "Pourquoi chaque point compte"
+      },
+      {
+        "p": "Les points 1 à 4 portent sur la voiture elle-même. Un rapport VIN coûte quelques dollars et peut révéler une inondation ou un compteur trafiqué que les photos ne montrent pas. Les points 5 à 8 portent sur l’argent : ce sont eux qui font qu’une voiture affichée à 10 000 $ finit à plus de 18 000 $ rendue en France. Les points 9 à 12 portent sur l’après-achat, souvent oublié : réparations, homologation et délais."
+      },
+      {
+        "p": "En France, il faut aussi garder en tête les taxes d’immatriculation. La taxe régionale et, selon les émissions de CO₂ et le poids, le malus écologique peuvent transformer une bonne affaire en mauvais calcul, surtout pour les gros moteurs américains. Intégrez-les dans votre enchère maximale dès le départ."
+      },
+      {
+        "h2": "Les erreurs les plus fréquentes"
+      },
+      {
+        "ul": [
+          "Enchérir jusqu’au prix du marché sans compter les frais et les taxes",
+          "Oublier les frais de stockage quand l’enlèvement est retardé",
+          "Sous-estimer la réparation d’un dommage avant « léger »",
+          "Ignorer la taxe régionale et le malus écologique à l’immatriculation en France",
+          "Négliger le coût et la durée de la réception à titre isolé auprès de la DREAL",
+          "Payer en dollars via sa banque avec une marge de change élevée"
+        ]
+      },
+      {
+        "h2": "Le budget de réserve"
+      },
+      {
+        "table": {
+          "head": [
+            "Type de voiture",
+            "Réserve conseillée"
+          ],
+          "rows": [
+            [
+              "Voiture clean, roulante",
+              "10 % du total"
+            ],
+            [
+              "Salvage, dommage léger, roulante",
+              "15 % du total"
+            ],
+            [
+              "Salvage, ne roule pas",
+              "20 % ou plus, plus le devis de réparation"
+            ],
+            [
+              "Inondée",
+              "À éviter, ou réserve très élevée"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "La réserve couvre les imprévus : un navire retardé qui allonge le stockage au terminal, un contrôle douanier, une pièce introuvable ou un dommage caché découvert au démontage. Si elle n’est pas utilisée, tant mieux ; si elle manque, le projet devient vite plus cher que l’achat d’une voiture équivalente en France."
+      },
+      {
+        "h2": "Le jour de l’enchère"
+      },
+      {
+        "p": "Préparez votre liste de voitures à l’avance, avec pour chacune une enchère maximale calculée frais et taxes compris. Pendant la vente, les prix montent vite et il est tentant d’ajouter quelques centaines de dollars. Rappelez-vous que chaque dollar de plus augmente aussi les frais d’enchère, les droits de douane et la TVA. Si le prix dépasse votre limite, laissez partir la voiture : il y en aura d’autres la semaine suivante."
+      },
+      {
+        "h2": "Après la victoire : les premières 48 heures"
+      },
+      {
+        "p": "Une fois l’enchère remportée, tout va vite. Vérifiez la facture de la vente et celle de l’intermédiaire, payez dans le délai indiqué, souvent deux à trois jours ouvrés, et confirmez immédiatement l’enlèvement pour éviter les frais de stockage. Demandez des photos à l’arrivée au port américain et au chargement : elles servent de preuve si des dégâts apparaissent pendant le transport. Enfin, réservez dès maintenant un créneau chez le garage qui fera la mise aux normes, car la carte grise doit être demandée dans le mois qui suit l’importation."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quelle réserve faut-il prévoir ?",
+        "a": "Au moins 10 à 15 % du total pour les imprévus, davantage pour une voiture qui ne roule pas."
+      },
+      {
+        "q": "Un rapport VIN suffit-il ?",
+        "a": "Il est indispensable mais pas complet : combinez-le avec les photos, le rapport d’état et un devis de réparation."
+      },
+      {
+        "q": "Faut-il calculer la carte grise avant d’enchérir ?",
+        "a": "Oui. La taxe régionale et le malus écologique dépendent de la voiture et peuvent peser lourd ; le calculateur vous aide à les anticiper."
       }
     ]
   }

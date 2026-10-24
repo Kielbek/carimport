@@ -398,7 +398,8 @@
     "why": "Pourquoi nous",
     "what": "Ce que nous calculons",
     "ctaHint": "Gratuit, sans inscription",
-    "language": "Langue"
+    "language": "Langue",
+    "blog": "Blog"
   },
   "footer": {
     "about": "Calculateur indépendant des coûts d’importation de voitures hors UE. Nous ne vendons ni n’importons de voitures – nous calculons ce qu’elles coûtent vraiment.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Guides associés",
     "disclaimer": "Informations données à titre indicatif ; les montants définitifs sont fixés par les autorités fiscales et douanières. Taux tels qu’utilisés par le calculateur."
+  },
+  "blog": {
+    "title": "Blog sur l’importation de voitures",
+    "lead": "Des articles pratiques sur l’importation de voitures des USA, du Canada, du Japon, des Émirats et du Royaume-Uni : coûts réels, enchères, douane, immatriculation et erreurs à éviter.",
+    "metaTitle": "Blog import auto – coûts, enchères, douane, carte grise | CarImport.eu",
+    "metaDescription": "Guides et articles sur l’importation d’une voiture dans l’UE : combien ça coûte vraiment, comment acheter sur Copart et IAAI, droits de douane, TVA et immatriculation.",
+    "all": "Tous",
+    "minutes": "{{n}} min de lecture",
+    "related": "À lire aussi",
+    "latest": "Sur le blog",
+    "latestLead": "Les réponses aux questions que l’on se pose avant d’importer une voiture.",
+    "more": "Tous les articles",
+    "empty": "Les articles dans cette langue arrivent bientôt.",
+    "category": {
+      "costs": "Coûts",
+      "buying": "Achat",
+      "customs": "Douane et taxes",
+      "registration": "Immatriculation",
+      "logistics": "Transport et ports"
+    }
   }
 }
