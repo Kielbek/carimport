@@ -419,5 +419,720 @@
         "a": "Kontrola originality overuje identitu auta, nie stav elektroniky. Auto po záplave môže formálne prejsť, ale skryté poruchy sa prejavia neskôr – preto je to najrizikovejšia kategória."
       }
     ]
+  },
+  {
+    "id": "customs-vat",
+    "slug": "clo-a-dph-pri-dovoze-auta-na-slovensko",
+    "category": "customs",
+    "origin": null,
+    "date": "2026-10-08",
+    "minutes": 3,
+    "title": "Clo a DPH pri dovoze auta na Slovensko: ako sa počítajú",
+    "metaTitle": "Clo a DPH pri dovoze auta z USA na Slovensko | CarImport.eu",
+    "description": "Ako sa počíta clo a DPH pri dovoze auta na Slovensko: colná hodnota CIF, sadzby cla, DPH 23 %, colný režim 4200 a príklad výpočtu krok za krokom.",
+    "lead": "Pri cle sa väčšina začínajúcich dovozcov pomýli vo výpočtoch. Takmer všetko vysvetľujú dve pravidlá: clo sa platí z hodnoty CIF a DPH sa k nej pripočíta v krajine, kde auto preclíte – na Slovensku je to 23 %.",
+    "blocks": [
+      {
+        "h2": "Kto auto preclieva"
+      },
+      {
+        "p": "Na Slovensku colné konanie vedie colný úrad, ktorý patrí pod Finančnú správu SR. Auto z krajiny mimo EÚ (USA, Kanada, Japonsko, SAE či Spojené kráľovstvo) musí byť prepustené do voľného obehu – až potom ho môžete zaregistrovať. V praxi colné vyhlásenie podáva colný deklarant, ktorý zastupuje vás alebo prepravcu. Ak sa auto preclí v prístave v inej krajine, napríklad v Bremerhavene alebo Koperi, platí sa clo a DPH tam a na Slovensko prichádza už ako preclené."
+      },
+      {
+        "h2": "Colná hodnota: čo do nej patrí"
+      },
+      {
+        "p": "Colná hodnota auta kúpeného mimo EÚ je jeho transakčná hodnota plus náklady na jeho dopravu na hranicu EÚ: aukčné poplatky, doprava do exportného prístavu, lodné a poistenie. Náklady za hranicou – vykládka, doprava v rámci EÚ – do colnej hodnoty nepatria, vstupujú však do základu DPH."
+      },
+      {
+        "ul": [
+          "Vydražená cena alebo kúpna cena auta",
+          "Poplatky aukcie a brokera",
+          "Doprava z areálu do exportného prístavu",
+          "Lodná preprava (kontajner alebo RoRo)",
+          "Námorné poistenie"
+        ]
+      },
+      {
+        "h2": "Sadzby cla"
+      },
+      {
+        "table": {
+          "head": [
+            "Vozidlo",
+            "Kód KN",
+            "Clo"
+          ],
+          "rows": [
+            [
+              "Osobné auto, SUV",
+              "8703",
+              "10 %"
+            ],
+            [
+              "Pickup, ľahké nákladné auto",
+              "8704",
+              "22 %"
+            ],
+            [
+              "Motocykel",
+              "8711",
+              "6 – 8 %"
+            ],
+            [
+              "Historické vozidlo (30+ rokov, pôvodný stav)",
+              "9705",
+              "0 %"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Sadzby cla sú v celej EÚ rovnaké, pretože colný sadzobník je spoločný. Pri pickupoch ako Ford F-150 či RAM sa oplatí overiť zaradenie: ak auto colne spadá pod úžitkové vozidlá, clo je 22 % namiesto 10 %. Pri historických vozidlách colný úrad posudzuje vek aj pôvodnosť – prestavané či výrazne upravené auto nárok na 0 % stratiť môže."
+      },
+      {
+        "h2": "Dovozná DPH"
+      },
+      {
+        "p": "DPH sa počíta z colnej hodnoty zvýšenej o clo a o náklady na dopravu do prvého miesta určenia v EÚ. Platí sa v členskom štáte, kde je auto prepustené do voľného obehu, a to v základnej sadzbe tohto štátu – na Slovensku 23 %. Pri registrácii na Slovensku sa potom platí registračný poplatok; ide o vnútroštátny poplatok, ktorý s colným konaním nesúvisí a jeho výška sa riadi slovenskými pravidlami."
+      },
+      {
+        "h2": "Príklad výpočtu pri preclení na Slovensku"
+      },
+      {
+        "table": {
+          "head": [
+            "",
+            "EUR"
+          ],
+          "rows": [
+            [
+              "Colná hodnota (CIF)",
+              "12 000"
+            ],
+            [
+              "Clo 10 %",
+              "1 200"
+            ],
+            [
+              "Vykládka a doprava na miesto určenia",
+              "700"
+            ],
+            [
+              "Základ DPH",
+              "13 900"
+            ],
+            [
+              "Dovozná DPH 23 %",
+              "3 197"
+            ],
+            [
+              "Clo + DPH spolu",
+              "4 397"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Pri rovnakom aute by DPH v Nemecku (19 %) bola 2 641 eur, v Holandsku či Belgicku (21 %) 2 919 eur. Rozdiel voči Slovensku je teda niekoľko stoviek eur – treba ho však porovnať s dlhšou cestou z prístavu domov. Kalkulačka CarImport.eu prepočíta všetkých 43 prístavov EÚ od dverí k dverám, stačí zadať adresu."
+      },
+      {
+        "h2": "Doklady na preclenie"
+      },
+      {
+        "ul": [
+          "Kúpna faktúra alebo potvrdenie o výsledku aukcie (invoice)",
+          "Originálny titul alebo vývozný doklad z USA",
+          "Nákladný list (bill of lading) a faktúra za lodnú prepravu",
+          "Doklady o zaplatení aukčných poplatkov a poistenia",
+          "Plnomocenstvo pre colného deklaranta a váš doklad totožnosti"
+        ]
+      },
+      {
+        "h2": "Najčastejšie chyby pri výpočte"
+      },
+      {
+        "p": "Prvou chybou je počítať clo len z vydraženej ceny. Do colnej hodnoty patria aj aukčné poplatky, doprava po USA, lodné a poistenie – pri aute za 10 000 dolárov to býva aj o 3 000 dolárov viac. Druhou chybou je zabudnúť, že DPH sa platí aj z cla, teda „daň z dane“. Treťou je prepočet kurzu: colný úrad používa úradný kurz určený na colné účely, nie kurz, za ktorý ste menili peniaze."
+      },
+      {
+        "p": "Ak chcete mať istotu, nechajte si sumu vypočítať v kalkulačke ešte pred dražbou. Uvidíte clo, DPH aj prístavné poplatky pre konkrétne auto a môžete porovnať preclenie na Slovensku s preclením v prístave inej krajiny."
+      },
+      {
+        "h2": "Colný režim 4200"
+      },
+      {
+        "p": "Firma registrovaná pre DPH, ktorá dováža auto pokračujúce hneď do inej krajiny EÚ, ho môže precliť v režime 4200: v krajine príchodu sa neplatí dovozná DPH a kupujúci ju priznáva vo svojej krajine prenesením daňovej povinnosti. Súkromné osoby tento režim použiť nemôžu – zaplatia DPH tam, kde auto preclia."
+      },
+      {
+        "tip": "Odložte si faktúru z aukcie, doklady o poplatkoch, faktúru za lodnú prepravu a nákladný list (bill of lading). Colný úrad môže deklarovanú hodnotu spochybniť a tieto doklady ju preukážu."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Môže colný úrad zvýšiť hodnotu môjho auta?",
+        "a": "Áno, ak sa deklarovaná cena zdá nereálne nízka. Spravidla to vyrieši doklad o výsledku aukcie a o platbách."
+      },
+      {
+        "q": "Je clo nižšie pre elektromobily?",
+        "a": "Nie, aj batériové elektrické osobné autá platia 10 % clo a DPH v plnej sadzbe. Rozdiely môžu byť až pri vnútroštátnych registračných poplatkoch."
+      },
+      {
+        "q": "Môžem auto precliť v Nemecku a prihlásiť na Slovensku?",
+        "a": "Áno. DPH zaplatíte v krajine preclenia a s colnými dokladmi auto prihlásite na dopravnom inšpektoráte na Slovensku."
+      }
+    ]
+  },
+  {
+    "id": "registration",
+    "slug": "prihlasenie-dovezeneho-auta-z-usa-na-slovensku-doklady",
+    "category": "registration",
+    "origin": null,
+    "date": "2026-10-04",
+    "minutes": 3,
+    "title": "Prihlásenie dovezeného auta z USA na Slovensku: doklady a postup",
+    "metaTitle": "Prihlásenie auta dovezeného z USA alebo Japonska | CarImport.eu",
+    "description": "Ako prihlásiť auto dovezené z USA alebo Japonska na Slovensku: doklady, kontrola originality, STK, úpravy svetiel, registračný poplatok a lehota 30 dní.",
+    "lead": "Preclenie je len polovica práce. Kým auto dostane slovenské evidenčné čísla, musí spĺňať technické požiadavky EÚ a vy potrebujete sadu dokladov – väčšinu z nich preložených do slovenčiny. Tu je postup, ako na to.",
+    "blocks": [
+      {
+        "h2": "Postup v skratke"
+      },
+      {
+        "ol": [
+          "Auto preclíte – na Slovensku alebo v prístave inej krajiny EÚ – a získate colné doklady o zaplatení cla a DPH.",
+          "Zabezpečíte úradné preklady zahraničných dokladov.",
+          "Necháte auto technicky upraviť podľa európskych predpisov (svetlá, tachometer, hmlové svetlo).",
+          "Absolvujete kontrolu originality a STK, prípadne schválenie jednotlivého vozidla.",
+          "Uzavriete povinné zmluvné poistenie (PZP).",
+          "Auto prihlásite na dopravnom inšpektoráte a zaplatíte registračný poplatok."
+        ]
+      },
+      {
+        "h2": "Doklady, ktoré budete potrebovať"
+      },
+      {
+        "table": {
+          "head": [
+            "Doklad",
+            "Na čo slúži"
+          ],
+          "rows": [
+            [
+              "Titul alebo vývozný doklad a kúpna faktúra",
+              "preukázanie vlastníctva a pôvodu auta"
+            ],
+            [
+              "Colné vyhlásenie s potvrdením o zaplatení cla a DPH",
+              "dôkaz, že auto je v EÚ legálne prepustené do voľného obehu"
+            ],
+            [
+              "Nákladný list (bill of lading)",
+              "doklad o preprave z krajiny pôvodu"
+            ],
+            [
+              "Úradné preklady cudzojazyčných dokladov",
+              "požiadavka slovenských úradov"
+            ],
+            [
+              "Osvedčenie o kontrole originality a protokol STK",
+              "technická spôsobilosť a identita auta"
+            ],
+            [
+              "Potvrdenie o PZP a doklad totožnosti",
+              "podmienka prihlásenia"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Technické úpravy amerických a japonských áut"
+      },
+      {
+        "p": "Americké autá zvyčajne potrebujú upraviť osvetlenie: červené zadné smerovky a bočné obrysové svetlá nevyhovujú pravidlám EÚ a svetlomety môžu potrebovať iný tvar svetelného lúča. Tachometer musí ukazovať km/h, prípadne aspoň mať km/h ako hlavnú stupnicu. Zadné hmlové svetlo je povinné – mnohé americké autá ho vôbec nemajú. Pri niektorých modeloch treba riešiť aj prepínanie jazyka a jednotiek v palubnom počítači."
+      },
+      {
+        "p": "Japonské autá majú volant vpravo. Slovensko ich spravidla prihlási po úprave svetlometov, ktoré musia svietiť pre pravostrannú premávku. Pred kúpou sa oplatí overiť, či pre konkrétny model existujú homologizované svetlomety a koľko stoja."
+      },
+      {
+        "h2": "Kontrola originality, STK a schválenie"
+      },
+      {
+        "p": "Auto bez európskeho typového schválenia prechádza na Slovensku kontrolou originality a technickou kontrolou (STK), pri vozidlách z tretích krajín často aj schválením jednotlivého vozidla. Kontrola originality overí identitu auta – VIN, štítky, karosériu a zhodu s dokladmi. STK skontroluje osvetlenie, emisie, brzdy a bezpečnostnú výbavu. Tento krok si naplánujte so servisom, ktorý má skúsenosti s dovezenými autami a vie, čo technici vyžadujú."
+      },
+      {
+        "tip": "Ešte pred kúpou si od servisu vypýtajte zoznam potrebných úprav. Prestavba niektorých modelov stojí oveľa viac než pri iných – a nečakaný výdavok za svetlomety vie zjesť celú úsporu z dovozu."
+      },
+      {
+        "h2": "Registrácia a registračný poplatok"
+      },
+      {
+        "p": "S osvedčením o kontrole originality a protokolom STK auto prihlásite na dopravnom inšpektoráte podľa miesta trvalého pobytu alebo sídla firmy. Lehota na prihlásenie dovezeného auta je 30 dní. Pri prihlásení sa platí registračný poplatok, ktorého výška sa riadi slovenskými predpismi a parametrami auta – kalkulačka CarImport.eu ho pre vaše auto vypočíta ako samostatnú položku. Okrem toho zaplatíte za tabuľky s evidenčným číslom a za vydanie dokladov."
+      },
+      {
+        "p": "Ak bolo auto preclené v inej krajine EÚ, napríklad v Nemecku, Taliansku či Chorvátsku, postup na Slovensku je rovnaký – namiesto slovenského colného vyhlásenia predložíte doklad z krajiny preclenia s potvrdením o zaplatení DPH."
+      },
+      {
+        "h2": "S akými nákladmi počítať"
+      },
+      {
+        "p": "Náklady na prihlásenie sa skladajú z viacerých menších položiek, ktoré sa však rýchlo sčítajú. Ide o úradné preklady titulu a faktúry, technické úpravy v servise, poplatky za kontrolu originality a STK, prípadne schválenie jednotlivého vozidla, registračný poplatok a evidenčné čísla. Najväčšou neznámou býva cena úprav – pri niektorých amerických autách stačí vymeniť žiarovky a doplniť hmlové svetlo, pri iných treba kupovať nové svetlomety alebo preprogramovať riadiacu jednotku."
+      },
+      {
+        "p": "Kalkulačka CarImport.eu zahŕňa do celkovej ceny dovozu aj odhad slovenských nákladov na registráciu. Vďaka tomu vidíte konečnú sumu za auto s evidenčnými číslami ešte predtým, než na aukcii prihodíte."
+      },
+      {
+        "h2": "Časté chyby"
+      },
+      {
+        "ul": [
+          "Chýbajúci originálny titul – bez neho neprejdete colným konaním ani registráciou",
+          "Neoverené preklady namiesto úradných prekladov",
+          "Úpravy svetiel v servise, ktorý nepozná požiadavky technikov",
+          "Podcenenie lehoty 30 dní pri čakaní na diely z USA"
+        ]
+      },
+      {
+        "h2": "Ako dlho to celé trvá"
+      },
+      {
+        "p": "Pri dobre pripravenom aute zaberie úprava, kontrola originality a STK niekoľko dní až dva týždne, ak treba čakať na diely, aj dlhšie. Počítajte s tým pri plánovaní lehoty 30 dní a ak potrebujete auto presunúť z prístavu po vlastnej osi, vybavte si dočasné evidenčné čísla a poistenie."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Potrebujem certifikát zhody (CoC)?",
+        "a": "Autá vyrobené pre USA alebo Japonsko európsky CoC nemajú. Prihlasujú sa cez schválenie jednotlivého vozidla, kontrolu originality a STK."
+      },
+      {
+        "q": "Môžem auto z prístavu odviezť po vlastnej osi?",
+        "a": "Len s dočasnými evidenčnými číslami a poistením, a len ak je auto technicky spôsobilé. Inak použite autoprepravník alebo odťahovku."
+      },
+      {
+        "q": "Aká je lehota na prihlásenie dovezeného auta?",
+        "a": "Na Slovensku 30 dní. Úpravy a kontroly si preto naplánujte hneď po preclení."
+      }
+    ]
+  },
+  {
+    "id": "port-choice",
+    "slug": "koper-rijeka-alebo-bremerhaven-kde-preclit-auto-na-slovensko",
+    "category": "logistics",
+    "origin": null,
+    "date": "2026-09-30",
+    "minutes": 3,
+    "title": "Koper, Rijeka alebo Bremerhaven? Kde precliť auto dovážané na Slovensko",
+    "metaTitle": "Koper, Rijeka či Bremerhaven? Kde precliť auto z USA | CarImport.eu",
+    "description": "Koper, Rijeka, Terst alebo Bremerhaven? Ako prístav preclenia mení DPH, poplatky, dĺžku plavby a dopravu na Slovensko – a ako nájsť najlacnejší zo 43 prístavov.",
+    "lead": "Slovensko nemá more, takže každé auto z USA, Japonska alebo Emirátov k nám prichádza cez prístav v inej krajine. Najbližšie sú Rijeka, Terst a Koper, veľa áut však pláva aj do Bremerhavenu či poľských prístavov. Prístav rozhoduje o sadzbe DPH, o poplatkoch aj o tom, koľko kilometrov auto prejde po ceste.",
+    "blocks": [
+      {
+        "h2": "Najbližšie prístavy pre Slovensko"
+      },
+      {
+        "p": "Podľa cestnej vzdialenosti do stredu Slovenska sú najbližšími prístavmi preclenia jadranské prístavy, nasledujú poľské prístavy na Baltskom mori. Nemecké a holandské prístavy v Severnom mori sú ďalej, majú však najviac liniek z USA a najkratšiu plavbu z východného pobrežia."
+      },
+      {
+        "table": {
+          "head": [
+            "Prístav",
+            "Krajina",
+            "Vzdialenosť na Slovensko",
+            "DPH v krajine prístavu"
+          ],
+          "rows": [
+            [
+              "Rijeka",
+              "Chorvátsko",
+              "≈ 470 km",
+              "25 %"
+            ],
+            [
+              "Terst",
+              "Taliansko",
+              "≈ 475 km",
+              "22 %"
+            ],
+            [
+              "Koper",
+              "Slovinsko",
+              "≈ 485 km",
+              "22 %"
+            ],
+            [
+              "Štetín / Svinoústie",
+              "Poľsko",
+              "≈ 770 km",
+              "23 %"
+            ],
+            [
+              "Gdansk",
+              "Poľsko",
+              "≈ 880 km",
+              "23 %"
+            ],
+            [
+              "Gdyňa",
+              "Poľsko",
+              "≈ 895 km",
+              "23 %"
+            ],
+            [
+              "Bremerhaven",
+              "Nemecko",
+              "vyše 1 000 km",
+              "19 %"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Tri veci, ktoré prístav mení"
+      },
+      {
+        "ol": [
+          "Dovoznú DPH: platíte sadzbu krajiny prístavu – 19 % v Nemecku, 21 % v Holandsku a Belgicku, 22 % v Taliansku a Slovinsku, 25 % v Chorvátsku. Na Slovensku je to 23 %.",
+          "Poplatky: manipulácia v termináli, vykládka kontajnera a colný deklarant sa v jednotlivých prístavoch líšia o desiatky až stovky eur.",
+          "Vzdialenosť po ceste: prístav s nižšou DPH môže byť od vášho domu ďaleko a doprava autoprepravníkom sa účtuje podľa kilometrov."
+        ]
+      },
+      {
+        "h2": "Kedy sa oplatí „zahraničný“ prístav"
+      },
+      {
+        "p": "Slovenská sadzba DPH 23 % patrí k vyšším v EÚ. Pri základe DPH okolo 14 000 eur (auto za 10 000 dolárov vrátane poplatkov, dopravy a cla) znamená každý percentuálny bod približne 140 eur. Preclenie v Nemecku s 19 % tak môže ušetriť okolo 560 eur na DPH, preclenie v Koperi alebo Terste s 22 % zhruba 140 eur. Naopak, preclenie v Rijeke s 25 % by vás stálo asi o 280 eur viac než doma – Rijeka sa preto oplatí najmä ako prístav vykládky s tranzitom a preclením inde."
+      },
+      {
+        "p": "Úspora na DPH však nie je všetko. Z Bremerhavenu vezie autoprepravník auto na Slovensko vyše 1 000 kilometrov, z Koperu približne polovicu. Rozdiel v doprave dokáže úsporu na DPH čiastočne alebo úplne vymazať. Rozhoduje preto celková suma od dverí k dverám, nie samotná sadzba."
+      },
+      {
+        "h2": "Dĺžka plavby"
+      },
+      {
+        "p": "Z východného pobrežia USA sú najrýchlejšie prístavy v Severnom mori – Bremerhaven, Rotterdam či Antverpy, s plavbou zhruba od dvoch týždňov. Do Koperu, Terstu a Rijeky trvá plavba z USA dlhšie, približne od 18 dní. Pri autách z Japonska a Spojených arabských emirátov je to naopak: lode idú cez Suezský prieplav, takže jadranské prístavy sú o týždeň a viac rýchlejšie. Z Japonska do Koperu je to asi 33 dní, do Bremerhavenu okolo 42 dní; zo SAE do Koperu približne 17 dní oproti 25 dňom do Bremerhavenu."
+      },
+      {
+        "table": {
+          "head": [
+            "Pôvod auta",
+            "Najrýchlejšia trasa na Slovensko"
+          ],
+          "rows": [
+            [
+              "USA, Kanada",
+              "Severné more (Bremerhaven, Rotterdam, Antverpy)"
+            ],
+            [
+              "Japonsko",
+              "Jadran (Koper, Terst, Rijeka)"
+            ],
+            [
+              "SAE",
+              "Jadran (Koper, Terst, Rijeka)"
+            ],
+            [
+              "Spojené kráľovstvo",
+              "Antverpy, Rotterdam, Zeebrugge"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Severné more alebo Jadran?"
+      },
+      {
+        "p": "Pre kupujúcich z východného Slovenska, napríklad z Košíc či Prešova, sú vzdialenosti iné ako pre Bratislavu alebo Trnavu. Zo západu je to do Koperu aj do Terstu bližšie, z východu sa môžu viac oplatiť poľské prístavy, prípadne doprava kamiónom z Nemecka, ktorá ide cez Česko. Preto nemá zmysel hľadať jeden „najlepší“ prístav pre celé Slovensko – výsledok sa líši od adresy k adrese."
+      },
+      {
+        "p": "Do hry vstupujú aj poplatky v prístave. Jadranské terminály patria k cenovo priaznivým, nemecké bývajú o niečo drahšie, no majú viac pravidelných liniek a kratšie čakanie na vykládku. Pri aute, ktoré nutne potrebujete na registráciu v lehote, môže byť rýchlejšia linka cennejšia než pár desiatok eur na poplatkoch."
+      },
+      {
+        "h2": "Na čo myslieť pri preclení v zahraničí"
+      },
+      {
+        "ul": [
+          "DPH zaplatená v inej krajine EÚ je pre súkromnú osobu konečná, na Slovensku sa už znova neplatí.",
+          "Na prihlásenie na Slovensku potrebujete colné doklady z krajiny preclenia s potvrdením o zaplatení cla a DPH.",
+          "Registračný poplatok sa platí na Slovensku vždy, bez ohľadu na prístav.",
+          "Colného deklaranta v zahraničnom prístave zvyčajne zabezpečí prepravca alebo broker."
+        ]
+      },
+      {
+        "tip": "Zadajte do kalkulačky svoju adresu: ocení všetkých 43 prístavov EÚ od dverí k dverám a najlacnejší vyberie automaticky – vrátane DPH, poplatkov prístavu a dopravy až k vám domov."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Môžem auto precliť v inej krajine a prihlásiť ho na Slovensku?",
+        "a": "Áno. DPH zaplatíte v krajine prístavu a auto prihlásite na Slovensku s colnými dokladmi z tejto krajiny."
+      },
+      {
+        "q": "Ktorý prístav je pre Slovensko najbližší?",
+        "a": "Podľa cestnej vzdialenosti Rijeka, Terst a Koper – všetky približne 470 až 485 km od stredu Slovenska."
+      },
+      {
+        "q": "Oplatí sa precliť auto v Nemecku kvôli nižšej DPH?",
+        "a": "Niekedy áno: 19 % oproti 23 % ušetrí stovky eur, no doprava z Bremerhavenu je dlhšia. Kalkulačka obe možnosti porovná pre vašu adresu."
+      }
+    ]
+  },
+  {
+    "id": "japan-jdm",
+    "slug": "dovoz-jdm-auta-z-japonska-aukcne-listy-a-naklady",
+    "category": "buying",
+    "origin": "JAPAN",
+    "date": "2026-09-25",
+    "minutes": 3,
+    "title": "Dovoz JDM auta z Japonska: aukčné listy, hodnotenia a náklady",
+    "metaTitle": "Dovoz auta z Japonska – aukčné listy a náklady | CarImport.eu",
+    "description": "Ako fungujú japonské aukcie áut, ako čítať aukčný list a jeho hodnotenia, čo znamená pravostranné riadenie pri registrácii na Slovensku a koľko stojí JDM dovoz.",
+    "lead": "Japonské aukcie sú známe poctivým hodnotením a autami vo výbornom stave. So spoľahlivým exportérom je kúpa JDM auta bezpečnejšia než kúpa naslepo z amerických aukcií – ak rozumiete aukčnému listu. Vysvetlíme, ako na to a s akými nákladmi počítať pri dovoze na Slovensko.",
+    "blocks": [
+      {
+        "h2": "Prečo práve Japonsko"
+      },
+      {
+        "p": "Japonci autá menia často, prísne technické kontroly (shaken) robia starnúce autá drahými na údržbu a na trhu je preto veľa mladých, dobre udržiavaných áut s nízkym nájazdom. Fanúšikov lákajú hlavne modely, ktoré sa v Európe nikdy oficiálne nepredávali – športové kupé, kei cars, luxusné sedany či terénne autá pre japonský trh. Práve tieto autá sa označujú skratkou JDM (Japanese Domestic Market)."
+      },
+      {
+        "h2": "Ako funguje nákup v Japonsku"
+      },
+      {
+        "p": "Aukcie ako USS, TAA, CAA a JU sú otvorené len licencovaným predajcom. Kupujete preto cez exportéra: vyberiete si autá, stanovíte maximálnu ponuku a exportér za vás prihadzuje, zaplatí, odhlási auto z japonskej evidencie na vývoz a odošle ho loďou do Európy."
+      },
+      {
+        "ol": [
+          "Vyberte si exportéra s dobrými referenciami z Európy a jasným cenníkom.",
+          "Zložte zálohu a získajte prístup k aukčným listom.",
+          "Vyberte autá a nechajte si preložiť poznámky inšpektora.",
+          "Stanovte maximálnu ponuku v jenoch vrátane všetkých nákladov.",
+          "Po výhre zaplaťte auto a poplatky exportéra.",
+          "Exportér zabezpečí vývozné doklady, dopravu do prístavu a lodnú prepravu."
+        ]
+      },
+      {
+        "h2": "Ako vybrať exportéra"
+      },
+      {
+        "p": "Exportér je pri japonskom dovoze kľúčový partner – má prístup na aukcie, platí za vás a zodpovedá za vývozné doklady. Dobrý exportér vám pošle originálny aukčný list ešte pred dražbou, preloží poznámky inšpektora a na požiadanie urobí ďalšie fotografie auta priamo v areáli. Pýtajte sa na celkový cenník: poplatok za kúpu, dopravu do prístavu, vývozné doklady a lodné. Pozor na ponuky, kde je poplatok podozrivo nízky a rozdiel sa potom objaví v „ďalších nákladoch“."
+      },
+      {
+        "p": "Overte si aj to, ako exportér posiela autá do Európy – v kontajneri alebo na lodi RoRo – a do ktorých prístavov. Ak má pravidelné linky do Koperu alebo Terstu, ušetríte čas aj dopravu na Slovensko. Platby posielajte vždy na firemný účet uvedený v zmluve, nie na súkromné účty."
+      },
+      {
+        "h2": "Ako čítať aukčný list"
+      },
+      {
+        "ul": [
+          "Celkové hodnotenie: 6 – 5 takmer nové, 4,5 – 4 veľmi dobré, 3,5 priemerné, R/RA opravované po nehode",
+          "Hodnotenie interiéru: A až D",
+          "Mapa karosérie: A = škrabanec, U = preliačina, W = vlna/oprava, S = hrdza, C = korózia, s číslom pre veľkosť",
+          "Poznámky inšpektora – vždy si ich nechajte preložiť"
+        ]
+      },
+      {
+        "tip": "Hodnotenie R alebo RA nemusí byť zlé, ale pýtajte sa, čo bolo opravené – oprava rámu je iný príbeh než vymenený nárazník."
+      },
+      {
+        "h2": "Náklady a čas"
+      },
+      {
+        "p": "K cene auta pripočítajte poplatok exportéra, dopravu po Japonsku, vývozné doklady a lodné. Lode idú cez Suezský prieplav: približne 5 – 6 týždňov do Severného mora, menej do Stredomoria. Pre Slovensko je to výhoda – Koper a Terst sú od nás okolo 480 km a plavba z Japonska do nich trvá asi 33 dní, kým do Bremerhavenu okolo 42 dní. Clo je pri osobných autách 10 % a dovozná DPH sa platí v krajine preclenia – na Slovensku 23 %, v Slovinsku a Taliansku 22 %."
+      },
+      {
+        "table": {
+          "head": [
+            "Položka",
+            "Čo do nej patrí"
+          ],
+          "rows": [
+            [
+              "Cena auta",
+              "výsledok aukcie v jenoch"
+            ],
+            [
+              "Poplatky",
+              "aukčný poplatok, poplatok exportéra, vývozné doklady"
+            ],
+            [
+              "Doprava",
+              "doprava do prístavu v Japonsku, lodné, poistenie"
+            ],
+            [
+              "Clo",
+              "10 % z colnej hodnoty CIF"
+            ],
+            [
+              "DPH",
+              "sadzba krajiny preclenia z CIF + clo + doprava v EÚ"
+            ],
+            [
+              "Slovensko",
+              "kontrola originality, STK, registračný poplatok"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Pravostranné riadenie"
+      },
+      {
+        "p": "Väčšina krajín EÚ autá s volantom vpravo prihlási, zvyčajne po úprave svetlometov. Niektoré krajiny ich pri trvalej registrácii obmedzujú – pred kúpou si overte aktuálne slovenské pravidlá a so servisom preberte, čo bude treba upraviť. Pri prihlásení na dopravnom inšpektoráte platí rovnaká lehota 30 dní a rovnaký postup s kontrolou originality a STK ako pri autách z USA."
+      },
+      {
+        "h2": "Na čo si dať pozor"
+      },
+      {
+        "ul": [
+          "Kurz jenu – medzi výhrou a platbou sa môže pohnúť",
+          "Diely na modely, ktoré sa v Európe nepredávali, môžu byť drahé a dlho sa čakajú",
+          "Navigácia, rádio a menu bývajú v japončine",
+          "Emisná norma a parametre auta môžu ovplyvniť registračný poplatok"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Sú japonské nájazdy spoľahlivé?",
+        "a": "Vo všeobecnosti áno – aukčné listy aj vývozné certifikáty zaznamenávajú stav tachometra a stáčanie je v porovnaní s inými trhmi zriedkavé."
+      },
+      {
+        "q": "A čo hrdza?",
+        "a": "Autá zo severu Japonska (Hokkaido) môžu mať hrdzavý podvozok od cestnej soli; aukčný list ju označuje ako S alebo C."
+      },
+      {
+        "q": "Ktorým prístavom je najlepšie doviezť auto z Japonska na Slovensko?",
+        "a": "Často jadranským – Koper alebo Terst –, pretože plavba je kratšia a cesta na Slovensko krátka. Kalkulačka porovná všetkých 43 prístavov EÚ pre vašu adresu."
+      }
+    ]
+  },
+  {
+    "id": "checklist",
+    "slug": "checklist-pred-kupou-auta-z-usa-na-aukcii",
+    "category": "buying",
+    "origin": null,
+    "date": "2026-09-20",
+    "minutes": 3,
+    "title": "12 bodov, ktoré skontrolovať pred prihodením na auto zo zahraničia",
+    "metaTitle": "Checklist pred kúpou auta z USA alebo Japonska | CarImport.eu",
+    "description": "Dvanásť kontrol, ktoré chránia váš rozpočet pri kúpe auta na aukcii v USA či Japonsku: história VIN, titul, poškodenie, poplatky, clo, DPH a registrácia.",
+    "lead": "Na aukcii máte na rozhodnutie len pár minút. Týchto dvanásť bodov vám zaberie jeden večer a ochráni vás pred najdrahšími chybami pri dovoze auta na Slovensko.",
+    "blocks": [
+      {
+        "h2": "Prečo sa checklist oplatí"
+      },
+      {
+        "p": "Dovoz auta z USA alebo Japonska je séria rozhodnutí, z ktorých každé stojí peniaze. Ak niečo prehliadnete pred dražbou, neskôr to už spravidla nenapravíte – vydražené auto musíte zaplatiť, aj keď zistíte, že doprava z areálu je drahšia, než ste čakali, alebo že prestavba svetiel stojí viac než polovica úspory. Kontrolný zoznam vás donúti prejsť všetky dôležité položky v pokoji, ešte keď máte na výber."
+      },
+      {
+        "p": "Body sú zoradené tak, ako na seba nadväzujú: najprv overíte samotné auto, potom spočítate peniaze a nakoniec si premyslíte, čo vás čaká po príchode na Slovensko. Ak niektorý bod nedokážete splniť, napríklad k autu chýbajú fotografie motorového priestoru alebo VIN report ukazuje záplavu, je to dôvod auto vynechať."
+      },
+      {
+        "h2": "Pred dražbou: auto a jeho história"
+      },
+      {
+        "ol": [
+          "Vytiahnite si históriu podľa VIN (Carfax, AutoCheck): nehody, záplavy, stav tachometra, krádež. Report stojí pár dolárov a ušetrí vám tisíce.",
+          "Skontrolujte typ titulu – vyhnite sa titulom parts only a non-repairable, s ktorými auto na Slovensku neprihlásite.",
+          "Preštudujte každú fotografiu: medzery medzi dielmi karosérie, airbagy, stopy po vode, motorový priestor a interiér.",
+          "Štítky o stave (Run and Drive, Engine Starts) berte ako informáciu, nie ako záruku – overené boli len pri príjme do areálu."
+        ]
+      },
+      {
+        "h2": "Peniaze: poplatky, doprava a dane"
+      },
+      {
+        "ol": [
+          "Zistite polohu areálu a vzdialenosť do exportného prístavu – doprava po USA môže stáť od pár stoviek po viac než 1 000 dolárov.",
+          "Spočítajte všetky poplatky aukcie a brokera pre výšku vašej ponuky, nielen vydraženú cenu.",
+          "Zistite celkovú cenu s dovozom: lodné, clo 10 %, DPH (na Slovensku 23 %), prístav a doprava domov.",
+          "Porovnajte prístavy preclenia pre vašu adresu – Koper, Terst, Rijeka, Bremerhaven a ďalšie sa líšia sadzbou DPH aj vzdialenosťou."
+        ]
+      },
+      {
+        "h2": "Po dovoze: oprava a registrácia"
+      },
+      {
+        "ol": [
+          "Vypýtajte si odhad opravy a ceny dielov na Slovensku – najmä pri modeloch, ktoré sa v Európe nepredávali.",
+          "Overte, čo treba na aute zmeniť pre prihlásenie: svetlá, tachometer v km/h, zadné hmlové svetlo.",
+          "Naplánujte si termíny: lehoty na platbu a odvoz, plavbu, kontrolu originality, STK a 30-dňovú lehotu na prihlásenie na dopravnom inšpektoráte.",
+          "Stanovte si maximálnu ponuku – a dodržte ju."
+        ]
+      },
+      {
+        "tip": "Body 6 – 8 vybavíte v kalkulačke CarImport.eu: spočíta všetky poplatky a dane, porovná všetkých 43 prístavov EÚ od dverí k dverám a ukáže optimistický, priemerný aj pesimistický odhad. Stačí zadať adresu."
+      },
+      {
+        "h2": "Ako stanoviť maximálnu ponuku"
+      },
+      {
+        "p": "Začnite cenou, za ktorú porovnateľné auto kúpite na Slovensku v bazári alebo na inzertnom portáli. Odpočítajte od nej náklady na opravu, registráciu a rezervu na prekvapenia. Zostane vám suma, ktorú môže stáť auto doručené k vám domov po preclení. Od nej odpočítajte clo, DPH, lodné, dopravu a prístavné poplatky – a dostanete strop pre aukčnú cenu vrátane poplatkov. Ak sa výpočet nevyjde s rozumnou rezervou, auto nechajte tak, na aukcii bude zajtra ďalšie."
+      },
+      {
+        "table": {
+          "head": [
+            "Rezerva",
+            "Kedy ju zvoliť"
+          ],
+          "rows": [
+            [
+              "10 %",
+              "pojazdné auto s ľahkým, dobre zdokumentovaným poškodením"
+            ],
+            [
+              "15 %",
+              "bežné poškodenie, menej známy model alebo drahšie diely"
+            ],
+            [
+              "20 % a viac",
+              "nepojazdné auto, auto bez kľúčov alebo po záplave"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Dražba: predbežná ponuka alebo naživo?"
+      },
+      {
+        "p": "Na Copart aj IAAI môžete zadať predbežnú ponuku (preliminary bid) pred začiatkom aukcie alebo prihadzovať naživo. Predbežná ponuka je pre začiatočníkov bezpečnejšia: zadáte svoj strop vopred, s chladnou hlavou, a systém za vás prihadzuje len do tejto sumy. Pri živej dražbe je ľahké nechať sa strhnúť a pridať „ešte pár stoviek“. Tie však na konci znamenajú viac, pretože sa z nich platí aj vyšší aukčný poplatok, clo a DPH."
+      },
+      {
+        "h2": "Doklady, ktoré si postrážiť"
+      },
+      {
+        "ul": [
+          "Faktúra z aukcie a potvrdenia o platbách",
+          "Originálny titul, ktorý ide s autom k exportérovi",
+          "Nákladný list (bill of lading)",
+          "Colné doklady o zaplatení cla a DPH"
+        ]
+      },
+      {
+        "h2": "Najčastejšie chyby"
+      },
+      {
+        "ul": [
+          "Prihadzovanie až po trhovú cenu bez započítania poplatkov a daní",
+          "Zabudnuté skladné, keď sa odvoz z areálu oneskorí",
+          "Podcenenie opravy „drobného“ predného poškodenia, za ktorým sa skrývajú chladiče, senzory a airbagy",
+          "Ignorovanie registračného poplatku na Slovensku a nákladov na úpravy svetiel",
+          "Prepočet podľa kurzu z banky namiesto reálneho kurzu pri platbe v dolároch"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Koľko si mám nechať v rezerve?",
+        "a": "Aspoň 10 – 15 % celkovej sumy na prekvapenia, pri nepojazdných autách viac."
+      },
+      {
+        "q": "Stačí VIN report?",
+        "a": "Je nevyhnutný, ale nie úplný – kombinujte ho s fotografiami, správou o stave a odhadom opravy."
+      },
+      {
+        "q": "Ako dlho trvá celý dovoz?",
+        "a": "Z USA zvyčajne 4 – 8 týždňov po výhre, z Japonska o niečo dlhšie. Potom počítajte s úpravami, kontrolou originality, STK a prihlásením."
+      }
+    ]
   }
 ]

@@ -333,7 +333,7 @@
         ]
       },
       {
-        "p": "Szkoda całkowita w USA nie oznacza, że auto jest rozbite w drobny mak. Ubezpieczyciel uznaje ją, gdy koszt naprawy według amerykańskich stawek przekracza określony procent wartości auta. Robocizna w amerykańskim warsztacie jest droga, więc tytuł salvage dostają też auta z umiarkowanymi uszkodzeniami – i to na nich zarabiają importerzy."
+        "p": "Szkoda całkowita w USA nie oznacza, że auto jest rozbite w drobny mak. Ubezpieczyciel uznaje ją, gdy koszt naprawy według amerykańskich stawek przekracza określony procent wartości auta. Robocizna w amerykańskim warsztacie jest droga, więc tytuł salvage dostają też auta z umiarkowanymi uszkodzeniami – i to na nich zarabiają importerzy. Osobną grupą są auta odzyskane po kradzieży (theft recovery) – czasem niemal bez uszkodzeń, czasem bez kół, foteli czy multimediów. W ich przypadku dokładnie czytaj opis i oglądaj zdjęcia wnętrza."
       },
       {
         "h2": "Czy auto z tytułem salvage można zarejestrować w Polsce?"
@@ -432,6 +432,767 @@
       {
         "q": "Czy auto po powodzi da się zarejestrować w Polsce?",
         "a": "Formalnie tak, jeśli przejdzie badanie techniczne, ale ryzyko ukrytych usterek elektroniki i korozji jest bardzo wysokie."
+      }
+    ]
+  },
+  {
+    "id": "customs-vat",
+    "slug": "clo-akcyza-i-vat-na-samochod-z-usa",
+    "category": "customs",
+    "origin": null,
+    "date": "2026-10-08",
+    "minutes": 3,
+    "title": "Cło, akcyza i VAT na samochód z USA – jak to policzyć?",
+    "metaTitle": "Cło, akcyza i VAT na samochód z USA – jak liczyć | CarImport.eu",
+    "description": "Akcyza na samochód z USA, cło 10% i VAT 23%: co wchodzi do wartości celnej, jak liczyć podstawę, stawki akcyzy i termin AKC-U/S. Przykład w złotówkach.",
+    "lead": "To przy odprawie najczęściej mylą się osoby, które sprowadzają auto po raz pierwszy. W Polsce prawie wszystko wyjaśniają trzy zasady: cło liczy się od wartości CIF, akcyzę od wartości celnej z cłem, a VAT na samym końcu – od sumy wszystkiego razem z transportem do miejsca przeznaczenia.",
+    "blocks": [
+      {
+        "h2": "Wartość celna: co do niej wchodzi"
+      },
+      {
+        "p": "Wartość celna auta kupionego poza UE to cena transakcyjna plus koszty dostarczenia go do granicy Unii: opłaty aukcyjne, transport do portu eksportowego, fracht morski i ubezpieczenie. Koszty powstałe po przekroczeniu granicy – rozładunek, transport po UE – nie są jej częścią, ale wrócą przy liczeniu VAT. Odprawę prowadzi urząd celno-skarbowy Krajowej Administracji Skarbowej, zwykle za pośrednictwem agencji celnej w porcie."
+      },
+      {
+        "h2": "Stawki cła"
+      },
+      {
+        "table": {
+          "head": [
+            "Pojazd",
+            "Kod CN",
+            "Cło"
+          ],
+          "rows": [
+            [
+              "Samochód osobowy, SUV",
+              "8703",
+              "10%"
+            ],
+            [
+              "Pickup, lekka ciężarówka",
+              "8704",
+              "22%"
+            ],
+            [
+              "Motocykl",
+              "8711",
+              "6–8%"
+            ],
+            [
+              "Pojazd kolekcjonerski (30+ lat, oryginalny stan)",
+              "9705",
+              "0%"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Auta elektryczne i hybrydy płacą takie samo cło jak spalinowe – 10% dla samochodów osobowych. Pickupy, popularne wśród aut z USA, wpadają w wyższą stawkę 22%, co mocno zmienia rachunek przy modelach takich jak Ford F-150 czy RAM."
+      },
+      {
+        "h2": "Akcyza na samochód z USA"
+      },
+      {
+        "p": "Akcyzę płacisz w Polsce przed rejestracją auta. Jej podstawą jest wartość celna powiększona o cło, a stawka zależy od pojemności silnika i rodzaju napędu."
+      },
+      {
+        "table": {
+          "head": [
+            "Rodzaj auta",
+            "Stawka akcyzy"
+          ],
+          "rows": [
+            [
+              "Spalinowe do 2000 cm³",
+              "3,1%"
+            ],
+            [
+              "Spalinowe powyżej 2000 cm³",
+              "18,6%"
+            ],
+            [
+              "Hybryda do 2000 cm³",
+              "1,55%"
+            ],
+            [
+              "Hybryda powyżej 2000 cm³",
+              "9,3%"
+            ],
+            [
+              "Hybryda plug-in do 2000 cm³",
+              "0%"
+            ],
+            [
+              "Elektryczne",
+              "0%"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Deklarację AKC-U/S składasz w ciągu 14 dni od dnia powstania obowiązku podatkowego, a potwierdzenie zapłaty akcyzy jest potrzebne w wydziale komunikacji. Jeśli auto zostało odprawione w innym kraju UE, na przykład w Niemczech, akcyzę i tak płacisz w Polsce."
+      },
+      {
+        "h2": "VAT importowy 23%"
+      },
+      {
+        "p": "VAT liczy się od wartości celnej powiększonej o cło, akcyzę i koszty transportu do pierwszego miejsca przeznaczenia w UE. Płacisz go w państwie, w którym auto zostaje dopuszczone do obrotu, według stawki podstawowej tego kraju – w Polsce 23%. Przy odprawie w Polsce VAT obejmuje więc również akcyzę. Dla osoby prywatnej to koszt ostateczny, natomiast czynny podatnik VAT może zwykle odliczyć podatek naliczony – choć przy samochodach osobowych w firmie obowiązują w Polsce ograniczenia odliczenia, o które warto zapytać księgowego."
+      },
+      {
+        "h2": "Przykład w złotówkach"
+      },
+      {
+        "table": {
+          "head": [
+            "",
+            "Do 2000 cm³ (PLN)",
+            "Powyżej 2000 cm³ (PLN)"
+          ],
+          "rows": [
+            [
+              "Wartość celna (CIF)",
+              "50 000",
+              "50 000"
+            ],
+            [
+              "Cło 10%",
+              "5 000",
+              "5 000"
+            ],
+            [
+              "Podstawa akcyzy (CIF + cło)",
+              "55 000",
+              "55 000"
+            ],
+            [
+              "Akcyza 3,1% / 18,6%",
+              "1 705",
+              "10 230"
+            ],
+            [
+              "Rozładunek i dowóz do miejsca przeznaczenia",
+              "3 000",
+              "3 000"
+            ],
+            [
+              "Podstawa VAT",
+              "59 705",
+              "68 230"
+            ],
+            [
+              "VAT 23%",
+              "13 732",
+              "15 693"
+            ],
+            [
+              "Cło + akcyza + VAT",
+              "20 437",
+              "30 923"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Ta sama cena na aukcji, a różnica w podatkach przekracza 10 000 zł – tylko z powodu pojemności silnika. Dlatego przy autach z USA zawsze najpierw sprawdzaj, czy silnik ma do 2000 cm³, czy więcej."
+      },
+      {
+        "h2": "Jak przebiega odprawa krok po kroku"
+      },
+      {
+        "ol": [
+          "Statek zawija do portu, kontener trafia na terminal i jest rozładowywany.",
+          "Agencja celna przygotowuje zgłoszenie celne na podstawie faktury, potwierdzeń opłat, konosamentu i tytułu własności.",
+          "Urząd celno-skarbowy weryfikuje zgłoszenie; czasem zarządza oględziny auta lub prosi o dodatkowe dokumenty.",
+          "Płacisz cło i VAT importowy (przy odprawie w Polsce), a auto zostaje dopuszczone do obrotu.",
+          "Składasz deklarację AKC-U/S i płacisz akcyzę w ciągu 14 dni.",
+          "Z dokumentem odprawy i potwierdzeniem akcyzy jedziesz na badanie techniczne, a potem do wydziału komunikacji."
+        ]
+      },
+      {
+        "h2": "Najczęstsze błędy przy liczeniu podatków"
+      },
+      {
+        "ul": [
+          "Liczenie cła tylko od ceny młotkowej, bez opłat aukcyjnych, frachtu i ubezpieczenia",
+          "Pominięcie akcyzy w podstawie VAT – przy odprawie w Polsce VAT nalicza się także od akcyzy",
+          "Zapominanie o koszcie transportu do miejsca przeznaczenia, który też wchodzi do podstawy VAT",
+          "Założenie, że odprawa w Niemczech zwalnia z polskiej akcyzy – nie zwalnia",
+          "Brak dokumentów potwierdzających cenę, przez co urząd przyjmuje wyższą wartość"
+        ]
+      },
+      {
+        "p": "Większość tych pomyłek wynika z liczenia „na szybko” w arkuszu. Kalkulator stosuje właściwą kolejność: najpierw wartość celna, potem cło, akcyza i na końcu VAT – i porównuje odprawę we wszystkich 43 portach UE dla Twojego adresu."
+      },
+      {
+        "h2": "Procedura celna 4200"
+      },
+      {
+        "p": "Firma zarejestrowana jako podatnik VAT, która importuje auto jadące od razu do innego kraju UE, może je odprawić w procedurze 4200: w kraju przybycia nie płaci VAT importowego, a nabywca rozlicza podatek u siebie w ramach odwrotnego obciążenia. Osoby prywatne nie mogą z niej korzystać."
+      },
+      {
+        "tip": "Zachowaj fakturę zakupu, potwierdzenia opłat aukcyjnych, fakturę za fracht i konosament (bill of lading). Urząd może zakwestionować zadeklarowaną wartość, a te dokumenty ją potwierdzają."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Czy urząd celny może podnieść wartość mojego auta?",
+        "a": "Tak, jeśli zadeklarowana cena wygląda na nierealnie niską. Zwykle wystarcza dowód wyniku aukcji i potwierdzenia płatności."
+      },
+      {
+        "q": "Ile wynosi akcyza na auto elektryczne z USA?",
+        "a": "0%. Auta elektryczne i hybrydy plug-in do 2000 cm³ nie płacą akcyzy, ale cło 10% i VAT obowiązują."
+      },
+      {
+        "q": "Ile mam czasu na złożenie AKC-U/S?",
+        "a": "Deklarację AKC-U/S trzeba złożyć i zapłacić akcyzę w ciągu 14 dni."
+      }
+    ]
+  },
+  {
+    "id": "registration",
+    "slug": "rejestracja-auta-z-usa-dokumenty-i-krok-po-kroku",
+    "category": "registration",
+    "origin": null,
+    "date": "2026-10-04",
+    "minutes": 3,
+    "title": "Rejestracja auta z USA w Polsce – dokumenty i krok po kroku",
+    "metaTitle": "Rejestracja auta z USA – dokumenty, badanie, terminy | CarImport.eu",
+    "description": "Rejestracja auta z USA w Polsce: dokumenty, badanie techniczne pojazdu sprowadzonego, akcyza AKC-U/S, przeróbki oświetlenia i termin 30 dni.",
+    "lead": "Odprawa celna to dopiero połowa drogi. Zanim auto z USA dostanie polskie tablice, musi spełnić europejskie wymagania techniczne, przejść badanie techniczne pojazdu sprowadzonego, a Ty musisz skompletować dokumenty – większość z nich przetłumaczoną przez tłumacza przysięgłego. Oto cała ścieżka w kolejności, w jakiej ją przejdziesz.",
+    "blocks": [
+      {
+        "h2": "Kolejność kroków"
+      },
+      {
+        "ol": [
+          "Odprawa celna w porcie: zapłata cła i VAT (lub VAT w innym kraju UE, jeśli tam odprawiasz).",
+          "Deklaracja AKC-U/S i zapłata akcyzy w ciągu 14 dni.",
+          "Tłumaczenia przysięgłe tytułu własności, faktury i innych dokumentów obcojęzycznych.",
+          "Przeróbki techniczne – przede wszystkim oświetlenie i licznik.",
+          "Badanie techniczne pojazdu sprowadzonego na okręgowej stacji kontroli pojazdów.",
+          "Polisa OC – obowiązkowa przed wyjazdem na drogę.",
+          "Wniosek o rejestrację w wydziale komunikacji w ciągu 30 dni."
+        ]
+      },
+      {
+        "h2": "Dokumenty, których będziesz potrzebować"
+      },
+      {
+        "table": {
+          "head": [
+            "Dokument",
+            "Po co",
+            "Uwagi"
+          ],
+          "rows": [
+            [
+              "Tytuł własności (title) lub świadectwo eksportowe",
+              "dowód własności i danych auta",
+              "tłumaczenie przysięgłe"
+            ],
+            [
+              "Faktura zakupu / potwierdzenie z aukcji",
+              "dowód nabycia i wartości",
+              "tłumaczenie przysięgłe"
+            ],
+            [
+              "Zgłoszenie celne (SAD / dokument odprawy)",
+              "dowód zapłaty cła i VAT",
+              "z agencji celnej"
+            ],
+            [
+              "Potwierdzenie zapłaty akcyzy (AKC-U/S)",
+              "wymagane przed rejestracją",
+              "z urzędu skarbowego"
+            ],
+            [
+              "Konosament (bill of lading)",
+              "dowód transportu",
+              "przydatny przy odprawie"
+            ],
+            [
+              "Zaświadczenie z badania technicznego",
+              "dopuszczenie auta do ruchu",
+              "ze stacji kontroli pojazdów"
+            ],
+            [
+              "Dowód osobisty, polisa OC",
+              "tożsamość i ubezpieczenie",
+              "–"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Przeróbki techniczne aut z USA"
+      },
+      {
+        "p": "Auta amerykańskie zwykle wymagają dostosowania oświetlenia: czerwone tylne kierunkowskazy i boczne światła obrysowe nie spełniają przepisów UE, a reflektory mogą wymagać innego układu świateł mijania. Licznik musi pokazywać km/h, a tylne światło przeciwmgielne jest obowiązkowe. Auta z Japonii mają kierownicę po prawej stronie; w Polsce można je zarejestrować, zwykle po regulacji lub wymianie reflektorów."
+      },
+      {
+        "p": "Koszt przeróbek bardzo zależy od modelu. W niektórych autach wystarczy zmiana żarówek i kloszy, w innych trzeba przeprogramować sterowniki lub wymienić całe lampy. Doświadczony warsztat zna typowe rozwiązania i powie Ci z góry, ile to kosztuje."
+      },
+      {
+        "tip": "Zanim kupisz auto, poproś warsztat o listę wymaganych przeróbek – przy niektórych modelach kosztują znacznie więcej niż przy innych."
+      },
+      {
+        "h2": "Badanie techniczne pojazdu sprowadzonego"
+      },
+      {
+        "p": "Auto bez europejskiej homologacji przechodzi w Polsce pierwsze badanie techniczne pojazdu sprowadzonego na okręgowej stacji kontroli pojazdów. Diagnosta sprawdza identyfikację (numer VIN), oświetlenie, hamulce, emisję spalin i wyposażenie bezpieczeństwa oraz ustala dane techniczne potrzebne do rejestracji. Ten krok najlepiej zaplanować z warsztatem, który zna auta z importu i wie, czego stacja oczekuje. Na badanie zabierz komplet przetłumaczonych dokumentów i dokument odprawy celnej. Jeśli auto ma za sobą poważną naprawę, diagnosta może dokładniej sprawdzić nadwozie i numery identyfikacyjne, dlatego warto mieć przy sobie dokumentację naprawy i faktury za części."
+      },
+      {
+        "h2": "Akcyza i rejestracja w wydziale komunikacji"
+      },
+      {
+        "p": "W Polsce nie ma osobnego podatku rejestracyjnego – jego rolę pełni akcyza (AKC-U/S): 3,1% do 2000 cm³, 18,6% powyżej, hybrydy 1,55% / 9,3%, a hybrydy plug-in do 2000 cm³ i auta elektryczne 0%. Podstawą jest wartość celna z cłem, a deklarację składasz w ciągu 14 dni. Z potwierdzeniem zapłaty akcyzy, zaświadczeniem z badania i dokumentami odprawy składasz wniosek w wydziale komunikacji starostwa lub urzędu miasta. Na rejestrację sprowadzonego auta masz 30 dni. Płacisz opłaty za tablice, dowód rejestracyjny i nalepkę kontrolną."
+      },
+      {
+        "h2": "Jak przewieźć auto z portu do domu"
+      },
+      {
+        "p": "Auto prosto z kontenera nie ma polskich tablic ani ważnego badania, więc najprostszym rozwiązaniem jest laweta z portu pod dom lub od razu do warsztatu. Jeśli auto jest sprawne, możesz też wystąpić o tablice tymczasowe i wykupić krótkoterminowe OC, ale wymaga to dodatkowej wizyty w urzędzie i nie ma sensu przy aucie uszkodzonym. Kalkulator wycenia dowóz lawetą według odległości od wybranego portu."
+      },
+      {
+        "h2": "Ile trwa rejestracja?"
+      },
+      {
+        "p": "Przy kompletnych dokumentach sama formalna część zajmuje zwykle kilka tygodni: tłumaczenia przysięgłe kilka dni, przeróbki od jednego dnia do kilku tygodni (zależnie od dostępności części), badanie techniczne jeden dzień, a w wydziale komunikacji dostajesz najpierw pozwolenie czasowe, a dowód rejestracyjny po jego wyprodukowaniu. Najwięcej czasu traci się zwykle na naprawę i czekanie na części z USA."
+      },
+      {
+        "h2": "Najczęstsze problemy"
+      },
+      {
+        "ul": [
+          "Brak tłumaczenia przysięgłego któregoś dokumentu – urząd go nie przyjmie",
+          "Przekroczenie 14 dni na AKC-U/S lub 30 dni na rejestrację",
+          "Niezgodny lub nieczytelny numer VIN po naprawie",
+          "Oświetlenie w wersji amerykańskiej, które nie przejdzie badania",
+          "Brak potwierdzenia zapłaty akcyzy przy składaniu wniosku"
+        ]
+      },
+      {
+        "p": "Kalkulator uwzględnia akcyzę, badanie, tłumaczenia i opłaty rejestracyjne w końcowym wyniku, więc widzisz pełny koszt jeszcze przed licytacją."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Czy potrzebuję świadectwa zgodności (CoC)?",
+        "a": "Auta wyprodukowane na rynek USA lub Japonii nie mają europejskiego CoC. Rejestruje się je na podstawie badania technicznego pojazdu sprowadzonego."
+      },
+      {
+        "q": "Czy mogę pojechać autem z portu do domu?",
+        "a": "Tylko na tablicach tymczasowych z ubezpieczeniem i tylko wtedy, gdy auto jest sprawne. W innym przypadku skorzystaj z lawety."
+      },
+      {
+        "q": "Ile mam czasu na rejestrację auta z USA?",
+        "a": "Na złożenie wniosku w wydziale komunikacji masz 30 dni, a deklarację akcyzową AKC-U/S trzeba złożyć w ciągu 14 dni."
+      }
+    ]
+  },
+  {
+    "id": "port-choice",
+    "slug": "gdynia-bremerhaven-czy-rotterdam-gdzie-odprawic-auto-z-usa",
+    "category": "logistics",
+    "origin": null,
+    "date": "2026-09-30",
+    "minutes": 3,
+    "title": "Gdynia, Bremerhaven czy Rotterdam? Gdzie odprawić auto z USA",
+    "metaTitle": "Gdynia, Bremerhaven czy Rotterdam? Wybór portu | CarImport.eu",
+    "description": "Gdynia czy Bremerhaven? Porównujemy porty dla auta z USA do Polski: VAT 23% kontra 19% w Niemczech, opłaty portowe, czas rejsu i dowóz lawetą do domu.",
+    "lead": "Auta z USA do Polski najczęściej płyną do Gdyni, Gdańska lub Szczecina albo do Bremerhaven i Rotterdamu, ale odprawić je można w każdym z 43 portów UE. Port decyduje o stawce VAT, opłatach terminalowych i o tym, jak daleko auto pojedzie lawetą. Sprawdzamy, kiedy opłaca się polski port, a kiedy niemiecki.",
+    "blocks": [
+      {
+        "h2": "Trzy rzeczy, które zmienia wybór portu"
+      },
+      {
+        "ol": [
+          "VAT importowy: płacisz stawkę kraju odprawy – 23% w Polsce, 19% w Niemczech, 21% w Holandii, Belgii i na Litwie, 25% w Szwecji i Danii.",
+          "Opłaty: obsługa terminalu, rozładunek kontenera i agencja celna różnią się między portami.",
+          "Odległość drogowa: port z niższym VAT może leżeć daleko od Twojego domu."
+        ]
+      },
+      {
+        "p": "Jest też czwarta, polska specyfika: akcyzę zawsze płacisz w Polsce, niezależnie od tego, gdzie auto przeszło odprawę. Port za granicą może więc obniżyć VAT, ale nie akcyzę."
+      },
+      {
+        "h2": "Najbliższe porty dla Polski"
+      },
+      {
+        "table": {
+          "head": [
+            "Port",
+            "Kraj i VAT",
+            "Odległość do centrum Polski",
+            "Rejs z USA (dni)"
+          ],
+          "rows": [
+            [
+              "Gdańsk",
+              "Polska, 23%",
+              "373 km",
+              "21–40"
+            ],
+            [
+              "Gdynia",
+              "Polska, 23%",
+              "393 km",
+              "21–40"
+            ],
+            [
+              "Szczecin / Świnoujście",
+              "Polska, 23%",
+              "473 km",
+              "18–39"
+            ],
+            [
+              "Klaipėda",
+              "Litwa, 21%",
+              "566 km",
+              "19–40"
+            ],
+            [
+              "Hamburg",
+              "Niemcy, 19%",
+              "837 km",
+              "15–36"
+            ],
+            [
+              "Bremerhaven",
+              "Niemcy, 19%",
+              "949 km",
+              "14–35"
+            ],
+            [
+              "Rotterdam",
+              "Holandia, 21%",
+              "1313 km",
+              "13–34"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Gdynia czy Bremerhaven – przykład"
+      },
+      {
+        "p": "Weźmy auto z naszego przykładu kosztów: wartość celna 13 030 USD, cło 1303 USD, ok. 1000 USD na port i dowóz, silnik do 2000 cm³. Przy odprawie w Gdyni VAT 23% liczony jest także od akcyzy i wynosi ok. 3629 USD. Przy odprawie w Bremerhaven VAT 19% od ok. 15 333 USD to ok. 2913 USD, a akcyzę 444 USD dopłacasz w Polsce."
+      },
+      {
+        "table": {
+          "head": [
+            "Kraj odprawy",
+            "Stawka VAT",
+            "VAT (USD)",
+            "Różnica vs Polska"
+          ],
+          "rows": [
+            [
+              "Polska (Gdynia, Gdańsk, Szczecin)",
+              "23%",
+              "3 629",
+              "–"
+            ],
+            [
+              "Litwa (Klaipėda)",
+              "21%",
+              "3 220",
+              "ok. 410 mniej"
+            ],
+            [
+              "Niemcy (Bremerhaven, Hamburg)",
+              "19%",
+              "2 913",
+              "ok. 715 mniej"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Różnica na VAT rzędu kilkuset dolarów musi pokryć dłuższy dowóz lawetą – z Bremerhaven to ponad 500 km więcej niż z Gdyni – oraz inne opłaty portowe. W portach polskich kalkulator przyjmuje ok. 1250–1300 zł za rozładunek i ok. 800 zł za agencję celną, w Bremerhaven ok. 450 EUR i 250 EUR. Przy aucie z dużym silnikiem i droższym egzemplarzu przewaga niższego VAT rośnie, przy tanim aucie łatwo ją przejada transport."
+      },
+      {
+        "h2": "Kiedy port za granicą jest tańszy"
+      },
+      {
+        "p": "Im droższe auto, tym większa oszczędność na VAT i tym częściej opłaca się Bremerhaven lub Hamburg. Mieszkając na zachodzie Polski, masz do Hamburga bliżej niż mieszkańcy Lublina, więc rachunek wygląda inaczej dla każdego adresu. Porównanie zawsze trzeba robić od drzwi do drzwi, bo do każdego portu dochodzi inny koszt dowozu. Warto też sprawdzić Klaipėdę: VAT na Litwie wynosi 21%, a odległość do wschodniej Polski jest niewielka, więc dla mieszkańców Podlasia czy Warmii bywa to ciekawa alternatywa dla Gdyni."
+      },
+      {
+        "h2": "Kiedy wybrać polski port"
+      },
+      {
+        "ul": [
+          "Auto jest tanie, a różnica w VAT wynosi kilkaset złotych, które pochłonie dłuższy transport",
+          "Mieszkasz na Pomorzu, Kujawach lub w centrum kraju, blisko Gdyni lub Gdańska",
+          "Chcesz załatwić odprawę po polsku, z agencją celną, z którą łatwo się skontaktować",
+          "Auto jest niejeżdżące i każdy dodatkowy kilometr lawety z wyciągarką kosztuje więcej",
+          "Zależy Ci na prostocie: jedna odprawa, jeden kraj, polskie dokumenty od razu"
+        ]
+      },
+      {
+        "h2": "Kiedy rozważyć Bremerhaven lub Hamburg"
+      },
+      {
+        "ul": [
+          "Auto jest droższe, a 4 punkty procentowe VAT to już ponad tysiąc dolarów",
+          "Mieszkasz w zachodniej Polsce, gdzie dystans do Hamburga jest zbliżony do dystansu do Gdyni",
+          "Zależy Ci na krótszym rejsie i większym wyborze połączeń z USA",
+          "Twój broker i tak wysyła kontenery do Niemiec i ma tam sprawdzoną agencję"
+        ]
+      },
+      {
+        "p": "Pamiętaj, że przy odprawie za granicą dostajesz dokumenty celne w języku danego kraju, które w Polsce mogą wymagać tłumaczenia przysięgłego. To niewielki, ale realny koszt i dodatkowy czas."
+      },
+      {
+        "h2": "Czas rejsu"
+      },
+      {
+        "p": "Ze Wschodniego Wybrzeża USA najszybciej dopłyniesz do portów Morza Północnego – Rotterdam i Bremerhaven to zwykle około 2 tygodni na samym morzu. Do Gdyni i Gdańska kontenery często idą z przeładunkiem, więc rejs trwa dłużej. Z Japonii i ZEA statki płyną przez Kanał Sueski, więc porty śródziemnomorskie, jak Koper, są o tydzień lub więcej szybsze niż Morze Północne czy Bałtyk."
+      },
+      {
+        "tip": "Wpisz swój adres w kalkulatorze: wycenia każdy z 43 portów UE od drzwi do drzwi i automatycznie wybiera najtańszy."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Czy mogę odprawić auto w Niemczech i zarejestrować je w Polsce?",
+        "a": "Tak. Płacisz VAT importowy w Niemczech, akcyzę w Polsce, a auto rejestrujesz w wydziale komunikacji na podstawie dokumentów celnych."
+      },
+      {
+        "q": "Który port jest najlepszy dla auta z USA do Polski?",
+        "a": "Nie ma jednego najlepszego. Gdynia i Gdańsk są najbliżej, Bremerhaven i Hamburg mają niższy VAT 19% i krótszy rejs. Decyduje Twój adres i wartość auta."
+      },
+      {
+        "q": "Czy odprawa w Niemczech zwalnia z akcyzy?",
+        "a": "Nie. Akcyzę płacisz w Polsce zawsze, gdy rejestrujesz tu auto osobowe."
+      }
+    ]
+  },
+  {
+    "id": "japan-jdm",
+    "slug": "import-auta-z-japonii-arkusz-aukcyjny-i-koszty",
+    "category": "buying",
+    "origin": "JAPAN",
+    "date": "2026-09-25",
+    "minutes": 3,
+    "title": "Import auta z Japonii: arkusz aukcyjny, oceny i koszty sprowadzenia JDM",
+    "metaTitle": "Import auta z Japonii – arkusz aukcyjny i koszty JDM | CarImport.eu",
+    "description": "Import auta z Japonii do Polski: jak działają aukcje USS i TAA, jak czytać arkusz aukcyjny, ile kosztuje transport, cło, akcyza i VAT oraz rejestracja RHD.",
+    "lead": "Japońskie aukcje słyną z rzetelnych ocen i aut w świetnym stanie. Z wiarygodnym eksporterem zakup auta JDM bywa bezpieczniejszy niż kupowanie w ciemno na aukcjach w USA – pod warunkiem, że rozumiesz arkusz aukcyjny. Wyjaśniamy, jak to działa i ile kosztuje sprowadzenie auta z Japonii do Polski.",
+    "blocks": [
+      {
+        "h2": "Jak wygląda zakup w Japonii"
+      },
+      {
+        "p": "Aukcje takie jak USS, TAA, CAA i JU są dostępne dla licencjonowanych dealerów. Kupujesz przez eksportera: wybierasz auta, ustalasz maksymalną ofertę, a eksporter licytuje, płaci, wyrejestrowuje auto na eksport i wysyła je do Europy. Co tydzień przez aukcje przechodzą dziesiątki tysięcy aut, więc nawet rzadkie modele JDM pojawiają się regularnie."
+      },
+      {
+        "p": "Dobry eksporter przesyła Ci arkusz aukcyjny jeszcze przed licytacją, tłumaczy uwagi inspektora i może poprosić o dodatkowe zdjęcia. Zapytaj o pełne rozliczenie: prowizję, transport wewnątrz Japonii, dokumenty eksportowe i fracht."
+      },
+      {
+        "h2": "Jak czytać arkusz aukcyjny"
+      },
+      {
+        "ul": [
+          "Ocena ogólna: 6–5 prawie nowe, 4,5–4 bardzo dobre, 3,5 przeciętne, R/RA auto po naprawionym wypadku",
+          "Ocena wnętrza: od A do D",
+          "Mapa nadwozia: A = rysa, U = wgniecenie, W = falowanie/naprawa lakiernicza, S = rdza, C = korozja, z cyfrą oznaczającą wielkość",
+          "Uwagi inspektora – zawsze zleć ich tłumaczenie"
+        ]
+      },
+      {
+        "tip": "Ocena R lub RA nie zawsze oznacza złe auto, ale zapytaj, co dokładnie naprawiano – naprawa ramy to zupełnie co innego niż wymieniony zderzak."
+      },
+      {
+        "h2": "Koszty sprowadzenia auta z Japonii"
+      },
+      {
+        "p": "Do ceny z aukcji doliczasz opłatę aukcyjną, prowizję eksportera, transport w Japonii, dokumenty eksportowe, fracht i ubezpieczenie. Razem tworzą wartość celną CIF, od której liczy się cło 10% dla aut osobowych. Potem dochodzi akcyza – 3,1% do 2000 cm³ i 18,6% powyżej – oraz VAT importowy w kraju odprawy, w Polsce 23%, liczony także od akcyzy."
+      },
+      {
+        "table": {
+          "head": [
+            "Pozycja",
+            "Na co wpływa"
+          ],
+          "rows": [
+            [
+              "Cena z aukcji + opłata aukcyjna",
+              "wartość celna"
+            ],
+            [
+              "Prowizja eksportera, transport w Japonii, dokumenty",
+              "wartość celna"
+            ],
+            [
+              "Fracht i ubezpieczenie",
+              "wartość celna"
+            ],
+            [
+              "Cło 10%",
+              "podstawa akcyzy i VAT"
+            ],
+            [
+              "Akcyza 3,1% / 18,6% (hybrydy 1,55% / 9,3%)",
+              "podstawa VAT"
+            ],
+            [
+              "VAT 23% przy odprawie w Polsce",
+              "koszt końcowy dla osoby prywatnej"
+            ],
+            [
+              "Port, agencja celna, dowóz, rejestracja",
+              "koszt po odprawie"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Popularne JDM-y z silnikami do 2000 cm³, jak Honda Civic Type R czy Subaru Impreza WRX, korzystają z niższej akcyzy. Nissan Skyline czy Toyota Supra z silnikami 2,5–3,0 l wpadają w stawkę 18,6%, co trzeba uwzględnić przy ustalaniu limitu licytacji. Wiele japońskich aut to hybrydy – dla nich akcyza jest o połowę niższa."
+      },
+      {
+        "h2": "Czas transportu i wybór portu"
+      },
+      {
+        "p": "Statki z Japonii płyną przez Kanał Sueski: około 6–7 tygodni do Gdyni czy Bremerhaven, krócej do portów śródziemnomorskich. Koper w Słowenii to ok. 33 dni rejsu, Gdynia ok. 48 dni. Dla auta z Japonii warto więc porównać nie tylko Gdynię i Bremerhaven, ale też Koper – kalkulator robi to dla wszystkich 43 portów UE, wystarczy wpisać adres."
+      },
+      {
+        "h2": "Kierownica po prawej stronie"
+      },
+      {
+        "p": "W Polsce można zarejestrować auto z kierownicą po prawej stronie. Zwykle wymaga to regulacji lub wymiany reflektorów, aby nie oślepiały kierowców jadących z naprzeciwka. Licznik w km/h japońskie auta zazwyczaj już mają. Przed zakupem sprawdź w warsztacie, ile kosztuje dostosowanie oświetlenia w konkretnym modelu, i licz się z tym, że auto RHD sprzedaje się w Polsce trudniej niż wersja europejska."
+      },
+      {
+        "h2": "Dokumenty z Japonii"
+      },
+      {
+        "p": "Podstawowym dokumentem jest japońskie świadectwo wyrejestrowania na eksport (Export Certificate), które zawiera numer nadwozia, datę pierwszej rejestracji i przebieg. Do tego dochodzi faktura eksportera i konosament. Wszystkie dokumenty w języku obcym trzeba w Polsce przetłumaczyć przysięgle – zarówno na potrzeby odprawy celnej, jak i rejestracji w wydziale komunikacji. Japońskie auta nie mają europejskiego CoC, więc przechodzą badanie techniczne pojazdu sprowadzonego, tak samo jak auta z USA. Akcyzę deklarujesz w AKC-U/S w ciągu 14 dni, a na rejestrację masz 30 dni."
+      },
+      {
+        "h2": "Na co jeszcze uważać"
+      },
+      {
+        "ul": [
+          "Auta z Hokkaido i północnej Japonii mogą mieć rdzę podwozia od soli drogowej",
+          "Modele z rynku japońskiego mogą mieć inne wyposażenie i nawigację tylko po japońsku",
+          "Części do wersji JDM bywają droższe i trudniej dostępne niż do wersji europejskich",
+          "Auta modyfikowane trzeba sprawdzić pod kątem badania technicznego w Polsce – obniżone zawieszenie, głośny wydech czy inne felgi mogą wymagać przywrócenia do stanu fabrycznego"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Czy przebiegi japońskich aut są wiarygodne?",
+        "a": "Na ogół tak – arkusze aukcyjne i świadectwa eksportowe zapisują przebieg, a cofanie liczników zdarza się rzadko w porównaniu z innymi rynkami."
+      },
+      {
+        "q": "A co z rdzą?",
+        "a": "Auta z północnej Japonii (Hokkaido) mogą mieć rdzę podwozia od soli drogowej; arkusz oznacza ją literami S lub C."
+      },
+      {
+        "q": "Ile trwa import auta z Japonii do Polski?",
+        "a": "Zwykle 2–3 miesiące: zakup i transport do portu w Japonii, około 6–7 tygodni rejsu do Bałtyku lub Morza Północnego, potem odprawa i rejestracja."
+      }
+    ]
+  },
+  {
+    "id": "checklist",
+    "slug": "lista-kontrolna-przed-licytacja-auta-z-usa",
+    "category": "buying",
+    "origin": null,
+    "date": "2026-09-20",
+    "minutes": 3,
+    "title": "12 rzeczy do sprawdzenia przed licytacją auta z USA",
+    "metaTitle": "Przed licytacją auta z USA – lista 12 punktów | CarImport.eu",
+    "description": "Lista kontrolna przed licytacją auta z USA na Copart lub IAAI: historia VIN, tytuł, zdjęcia, opłaty, cło, akcyza, VAT, port i przeróbki do rejestracji.",
+    "lead": "Na aukcji masz kilka minut na decyzję. Te dwanaście punktów zajmie Ci jeden wieczór, a uchroni przed najdroższymi błędami przy sprowadzaniu auta z USA, Kanady czy Japonii. Wydrukuj listę i przejdź ją przy każdym aucie, na które chcesz złożyć ofertę.",
+    "blocks": [
+      {
+        "h2": "Lista kontrolna: 12 punktów"
+      },
+      {
+        "ol": [
+          "Sprawdź raport historii VIN (Carfax, AutoCheck): wypadki, zalanie, przebieg, kradzież.",
+          "Sprawdź rodzaj tytułu – omijaj certyfikaty parts only i non-repairable.",
+          "Przejrzyj każde zdjęcie: szczeliny między elementami, poduszki powietrzne, ślady wody, komorę silnika.",
+          "Traktuj etykiety stanu (Run and Drive, Engine Starts) jako informację, a nie gwarancję.",
+          "Sprawdź lokalizację placu i odległość do portu eksportowego.",
+          "Policz wszystkie opłaty aukcyjne i prowizję brokera dla Twojego poziomu oferty.",
+          "Policz pełny koszt pod domem: fracht, cło, akcyzę, VAT 23%, port i dowóz.",
+          "Porównaj porty odprawy dla swojego adresu – Gdynia, Gdańsk, Bremerhaven, Hamburg i inne.",
+          "Zdobądź wycenę naprawy i ceny części w Polsce.",
+          "Sprawdź, co trzeba przerobić do rejestracji (oświetlenie, licznik w km/h).",
+          "Zaplanuj terminy: płatność i odbiór, rejs, AKC-U/S w 14 dni, rejestracja w 30 dni.",
+          "Ustal maksymalną ofertę – i trzymaj się jej."
+        ]
+      },
+      {
+        "tip": "Punkty 6–8 zrób w kalkulatorze: sumuje wszystkie opłaty i podatki, porównuje 43 porty UE od drzwi do drzwi i pokazuje wynik optymistyczny, średni i pesymistyczny. Wpisujesz tylko adres."
+      },
+      {
+        "h2": "Dlaczego każdy punkt ma znaczenie"
+      },
+      {
+        "p": "Raport VIN i zdjęcia mówią, co się stało z autem, ale nie wszystko. Rodzaj tytułu decyduje, czy auto w ogóle da się legalnie zarejestrować. Lokalizacja placu potrafi zmienić koszt transportu w USA z 300 do ponad 1000 USD. Opłaty aukcyjne rosną progowo, więc oferta o kilka dolarów wyższa może kosztować dużo więcej. A pełny koszt pod domem – z cłem 10%, akcyzą i VAT 23% – często okazuje się o połowę wyższy niż wynikałoby z samej ceny."
+      },
+      {
+        "p": "Szczególnie w Polsce nie wolno pominąć pojemności silnika. Akcyza 3,1% do 2000 cm³ i 18,6% powyżej to różnica, która przy aucie za 10 000 USD wynosi ponad 2000 USD jeszcze przed VAT. Kto licytuje Mustanga GT tak samo jak Forda Focusa, szybko się o tym przekona."
+      },
+      {
+        "h2": "Na co patrzeć na zdjęciach"
+      },
+      {
+        "ul": [
+          "Nierówne szczeliny między maską, błotnikami i drzwiami – mogą świadczyć o uszkodzeniu konstrukcji",
+          "Kontrolki na desce rozdzielczej po uruchomieniu i stan poduszek powietrznych",
+          "Linia błota lub wody na tapicerce, w bagażniku i pod deską – typowy ślad zalania",
+          "Wycieki płynów pod autem i stan chłodnicy przy uszkodzonym przodzie",
+          "Stan opon i felg, które przy uszkodzeniu bocznym często kryją problem z zawieszeniem",
+          "Brakujące elementy: kluczyki, koło zapasowe, moduły multimediów"
+        ]
+      },
+      {
+        "p": "Jeśli zdjęć jest mało albo są nieostre, poproś brokera o dodatkowe ujęcia lub inspekcję na placu. Kosztuje to niewiele w porównaniu z ryzykiem kupienia auta z ukrytą szkodą."
+      },
+      {
+        "h2": "Najczęstsze błędy"
+      },
+      {
+        "ul": [
+          "Licytowanie do ceny rynkowej w Polsce bez doliczenia opłat i podatków",
+          "Zapominanie o opłatach za postój, gdy odbiór się opóźnia",
+          "Niedoszacowanie naprawy „drobnego” uszkodzenia przodu",
+          "Pominięcie akcyzy lub liczenie jej według złej stawki",
+          "Zakup auta, którego oświetlenie lub wersja wymaga kosztownych przeróbek",
+          "Brak rezerwy na opóźniony statek, kontrolę celną i ukryte usterki"
+        ]
+      },
+      {
+        "h2": "Ile licytować – prosta zasada"
+      },
+      {
+        "p": "Weź cenę, za jaką podobne auto po naprawie sprzedaje się w Polsce. Odejmij koszt naprawy, przeróbek i rejestracji, swoją rezerwę na niespodzianki i oczekiwany zysk lub oszczędność. To, co zostanie, to maksymalny koszt pod domem. Kalkulator zamienia go na maksymalną ofertę w dolarach, cofając po kolei VAT, akcyzę, cło, fracht i opłaty aukcyjne."
+      },
+      {
+        "h2": "Ile czasu zarezerwować"
+      },
+      {
+        "p": "Od wygranej licytacji do auta pod domem mija zwykle 4–8 tygodni z USA i 2–3 miesiące z Japonii. Potem dochodzi naprawa, przeróbki, badanie techniczne pojazdu sprowadzonego i rejestracja w wydziale komunikacji. Jeśli auto ma być gotowe na konkretny termin, licz z zapasem – opóźnione statki i kolejki w portach zdarzają się częściej, niż się wydaje."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Ile pieniędzy trzymać w rezerwie?",
+        "a": "Co najmniej 10–15% całkowitego kosztu na niespodzianki, a przy autach niejeżdżących więcej."
+      },
+      {
+        "q": "Czy raport VIN wystarczy?",
+        "a": "Jest niezbędny, ale niekompletny – połącz go ze zdjęciami, raportem stanu i wyceną naprawy."
+      },
+      {
+        "q": "Czy warto kupować auto z USA w 2026 roku?",
+        "a": "Może się opłacać, jeśli policzysz pełny koszt z akcyzą i VAT oraz realny koszt naprawy. Bez tego łatwo zapłacić więcej niż za podobne auto kupione w Polsce."
       }
     ]
   }

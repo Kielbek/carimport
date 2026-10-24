@@ -398,7 +398,8 @@
     "why": "Warum wir",
     "what": "Was wir rechnen",
     "ctaHint": "Kostenlos, ohne Anmeldung",
-    "language": "Sprache"
+    "language": "Sprache",
+    "blog": "Blog"
   },
   "footer": {
     "about": "Unabhängiger Rechner für die Importkosten von Autos außerhalb der EU. Wir verkaufen und importieren keine Autos – wir rechnen aus, was sie wirklich kosten.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Verwandte Ratgeber",
     "disclaimer": "Informationen nur zur Orientierung; die endgültigen Beträge legen Steuer- und Zollbehörden fest. Sätze wie im Rechner verwendet."
+  },
+  "blog": {
+    "title": "Blog zum Autoimport",
+    "lead": "Praktische Artikel zum Import von Autos aus den USA, Kanada, Japan, den VAE und Großbritannien: echte Kosten, Auktionen, Zoll, Zulassung und die Fehler, die Sie vermeiden sollten.",
+    "metaTitle": "Blog zum Autoimport – Kosten, Auktionen, Zoll, Zulassung | CarImport.eu",
+    "metaDescription": "Ratgeber und Artikel zum Autoimport in die EU: was es wirklich kostet, wie man bei Copart und IAAI kauft, Zoll, Einfuhrumsatzsteuer und Zulassung.",
+    "all": "Alle",
+    "minutes": "{{n}} Min. Lesezeit",
+    "related": "Lesen Sie auch",
+    "latest": "Aus dem Blog",
+    "latestLead": "Antworten auf die Fragen, die man sich vor einem Autoimport stellt.",
+    "more": "Alle Artikel",
+    "empty": "Artikel in dieser Sprache folgen in Kürze.",
+    "category": {
+      "costs": "Kosten",
+      "buying": "Kauf",
+      "customs": "Zoll & Steuern",
+      "registration": "Zulassung",
+      "logistics": "Versand & Häfen"
+    }
   }
 }

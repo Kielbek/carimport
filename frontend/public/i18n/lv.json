@@ -398,7 +398,8 @@
     "why": "Kāpēc mēs",
     "what": "Ko mēs aprēķinām",
     "ctaHint": "Bez maksas, bez reģistrācijas",
-    "language": "Valoda"
+    "language": "Valoda",
+    "blog": "Blogs"
   },
   "footer": {
     "about": "Neatkarīgs importa izmaksu kalkulators automašīnām no valstīm ārpus ES. Mēs automašīnas nepārdodam un neimportējam – mēs aprēķinām, cik tās patiesībā maksā.",
@@ -1257,5 +1258,25 @@
     },
     "related": "Saistītie ceļveži",
     "disclaimer": "Informācija ir tikai orientējoša; galīgās summas nosaka nodokļu un muitas iestādes. Likmes atbilstoši kalkulatorā izmantotajām."
+  },
+  "blog": {
+    "title": "Auto importa blogs",
+    "lead": "Praktiski raksti par auto ievešanu no ASV, Kanādas, Japānas, AAE un Lielbritānijas: reālās izmaksas, izsoles, muita, reģistrācija un kļūdas, no kurām izvairīties.",
+    "metaTitle": "Auto importa blogs – izmaksas, izsoles, muita, reģistrācija | CarImport.eu",
+    "metaDescription": "Ceļveži un raksti par auto ievešanu ES: cik tas patiesībā maksā, kā pirkt Copart un IAAI izsolēs, muitas nodoklis, PVN un reģistrācija.",
+    "all": "Visi",
+    "minutes": "{{n}} min lasīšanai",
+    "related": "Lasiet arī",
+    "latest": "No bloga",
+    "latestLead": "Atbildes uz jautājumiem, ko cilvēki uzdod pirms auto ievešanas.",
+    "more": "Visi raksti",
+    "empty": "Raksti šajā valodā drīzumā būs pieejami.",
+    "category": {
+      "costs": "Izmaksas",
+      "buying": "Pirkšana",
+      "customs": "Muita un nodokļi",
+      "registration": "Reģistrācija",
+      "logistics": "Pārvadājumi un ostas"
+    }
   }
 }

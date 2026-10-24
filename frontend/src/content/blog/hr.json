@@ -555,6 +555,27 @@
         "p": "Tvrtka u sustavu PDV-a koja uvozi automobil koji odmah ide u drugu državu EU-a može ga ocariniti u postupku 4200: u državi dolaska ne plaća se uvozni PDV, a kupac obračunava PDV u svojoj državi po načelu prijenosa porezne obveze (reverse charge). Privatne osobe taj postupak ne mogu koristiti."
       },
       {
+        "h2": "Kako izgleda carinjenje u praksi"
+      },
+      {
+        "p": "Privatna osoba carinjenje gotovo uvijek prepušta carinskom posredniku (špediteru) u luci. On podnosi carinsku deklaraciju u vaše ime, prilaže račune i teretnicu, a vi uplaćujete carinu i PDV prije nego što se automobil pusti iz luke. Uobičajeni redoslijed izgleda ovako:"
+      },
+      {
+        "ol": [
+          "Brod stiže u luku, kontejner se istovaruje i automobil se vadi iz njega.",
+          "Špediter od vas preuzima punomoć, račun aukcije, račun za prijevoz, teretnicu i naslov.",
+          "Podnosi se carinska deklaracija za puštanje u slobodni promet.",
+          "Carina obračunava carinu i PDV, a vi ih plaćate.",
+          "Dobivate carinsku deklaraciju koja dokazuje plaćanje – nju trebate za registraciju u MUP-u."
+        ]
+      },
+      {
+        "h2": "Kolekcionarska vozila starija od 30 godina"
+      },
+      {
+        "p": "Automobili stariji od 30 godina u originalnom, neizmijenjenom stanju mogu se razvrstati pod tarifnu oznaku 9705 kao kolekcionarski predmeti, bez carine. Uvjet je da vozilo nije bitno preinačeno i da ima povijesnu vrijednost; carina to može tražiti dokazati. PDV se i dalje plaća."
+      },
+      {
         "h2": "Najčešće greške"
       },
       {
@@ -581,6 +602,594 @@
       {
         "q": "Plaćam li PDV dvaput ako carinim u Sloveniji?",
         "a": "Ne za rabljeni automobil: PDV platite u Sloveniji, a u Hrvatskoj registrirate auto s carinskim dokumentima i plaćate PPMV. Za nova prijevozna sredstva (do 6 mjeseci ili 6.000 km) vrijede posebna pravila PDV-a u državi registracije."
+      }
+    ]
+  },
+  {
+    "id": "registration",
+    "slug": "registracija-uvezenog-auta-iz-amerike-dokumenti-i-postupak",
+    "category": "registration",
+    "origin": null,
+    "date": "2026-10-04",
+    "minutes": 3,
+    "title": "Registracija uvezenog auta iz Amerike: dokumenti i postupak",
+    "metaTitle": "Registracija uvezenog auta – CVH, PPMV, MUP | CarImport.eu",
+    "description": "Registracija uvezenog auta iz Amerike: potrebni dokumenti, pregled u CVH, prilagodba svjetala i brzinomjera, PPMV i registracija u MUP-u.",
+    "lead": "Carinjenje je tek pola posla. Prije nego što automobil dobije hrvatske tablice, mora ispuniti europske tehničke zahtjeve, a vi morate skupiti niz dokumenata – većinu prevedenih. Evo kako taj put izgleda od luke do MUP-a.",
+    "blocks": [
+      {
+        "h2": "Tri institucije koje trebate znati"
+      },
+      {
+        "table": {
+          "head": [
+            "Korak",
+            "Tko je nadležan",
+            "Što dobivate"
+          ],
+          "rows": [
+            [
+              "Carinjenje, carina i PDV",
+              "Carinska uprava (u luci carinjenja)",
+              "Carinska deklaracija"
+            ],
+            [
+              "Tehnički pregled i ispitivanje vozila",
+              "CVH – tehnički pregled (stanice za tehnički pregled)",
+              "Dokaz o sukladnosti i tehničkoj ispravnosti"
+            ],
+            [
+              "Poseban porez",
+              "PPMV (posebni porez na motorna vozila)",
+              "Potvrda o plaćenom PPMV-u"
+            ],
+            [
+              "Registracija",
+              "MUP – registracija vozila",
+              "Prometna dozvola i tablice"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Redoslijed je važan: bez carinske deklaracije nema pregleda, bez pregleda nema registracije. Svaki korak ima svoje dokumente i troškove, pa ih vrijedi unaprijed uključiti u proračun."
+      },
+      {
+        "h2": "Dokumenti koje ćete trebati"
+      },
+      {
+        "ul": [
+          "Naslov (title) ili izvozni certifikat i račun o kupnji",
+          "Carinska deklaracija koja dokazuje plaćenu carinu i PDV",
+          "Teretnica (bill of lading)",
+          "Ovjereni prijevodi dokumenata na stranom jeziku (sudski tumač)",
+          "Potvrda o tehničkom pregledu i sukladnosti vozila",
+          "Dokaz o plaćenom PPMV-u, ako se plaća",
+          "Polica obveznog osiguranja od automobilske odgovornosti i osobna iskaznica"
+        ]
+      },
+      {
+        "p": "Dokumente čuvajte u originalu i u preslici. Ako ste auto ocarinili u Kopru ili Trstu, trebat će vam carinska deklaracija te države; prijevod i dalje radi ovlašteni sudski tumač."
+      },
+      {
+        "h2": "Tehnička prilagodba"
+      },
+      {
+        "p": "Američki automobili obično trebaju prilagodbu svjetala: crveni stražnji pokazivači smjera i bočna svjetla (side markers) ne odgovaraju europskim pravilima, a farovi mogu zahtijevati drugačiji snop svjetla. Brzinomjer mora pokazivati km/h. Stražnje svjetlo za maglu je obavezno. Japanski automobili imaju volan s desne strane, što je u većini država dopušteno uz podešene farove."
+      },
+      {
+        "ul": [
+          "Zamjena ili preinaka stražnjih pokazivača smjera u narančaste",
+          "Stražnje svjetlo za maglu",
+          "Farovi s europskim snopom ili podešavanjem",
+          "Brzinomjer i instrumenti u km/h",
+          "Ponekad zrcala, oznake na staklima i gume s europskom homologacijom"
+        ]
+      },
+      {
+        "h2": "Pregled i odobrenje u CVH"
+      },
+      {
+        "p": "Automobil bez europske homologacije tipa prolazi pojedinačno odobrenje ili temeljit prvi pregled. U Hrvatskoj je to posao CVH-a (Centar za vozila Hrvatske) i stanica za tehnički pregled. Ispitivač provjerava identifikaciju (VIN), svjetla, emisije i sigurnosnu opremu. Ovaj korak planirajte s radionicom koja poznaje uvezene automobile i zna što CVH traži za određeni model."
+      },
+      {
+        "p": "Ako automobil nije vozan ili nema tablice, do pregleda ga prevezite autotransporterom ili šlep-službom. Vožnja bez registracije nije dopuštena."
+      },
+      {
+        "h2": "Registracija i PPMV"
+      },
+      {
+        "p": "S potvrdom o pregledu i plaćenim porezima automobil registrirate u MUP-u. Pri prvoj registraciji u Hrvatskoj većina osobnih automobila plaća PPMV – posebni porez na motorna vozila. Iznos ovisi o nacionalnim pravilima i podacima o vozilu, a ne o luci u kojoj je auto ocarinjen. Kalkulator CarImport.eu prikazuje PPMV zasebno, pa ga vidite prije nego što licitirate. Uz to plaćate pristojbe za tablice i dokumente te obvezno osiguranje."
+      },
+      {
+        "p": "Raspitajte se o važećim rokovima i postupku prije nego što automobil stigne – pravila se mijenjaju, a čekanje na termin pregleda zna potrajati."
+      },
+      {
+        "h2": "Automobili iz Japana i volan na desnoj strani"
+      },
+      {
+        "p": "JDM automobili iz Japana imaju volan na desnoj strani. Takav se automobil u pravilu može registrirati, ali farove treba prilagoditi desnom prometu kako ne bi zasljepljivali vozače iz suprotnog smjera. Prije kupnje provjerite s CVH-om ili iskusnom radionicom što konkretno traže za vaš model, jer pravila za trajnu registraciju mogu se razlikovati."
+      },
+      {
+        "h2": "Česte zamke pri registraciji"
+      },
+      {
+        "ul": [
+          "Prijevodi koje nije napravio ovlašteni sudski tumač",
+          "Carinska deklaracija na drugo ime od onoga na koje se registrira automobil",
+          "Preinake svjetala koje nisu odobrene za taj model",
+          "VIN na vozilu oštećen pri sudaru ili nečitljiv",
+          "Podcijenjen trošak PPMV-a u ukupnom proračunu"
+        ]
+      },
+      {
+        "p": "Najbolje je cijeli put isplanirati prije licitiranja. Kalkulator uspoređuje svih 43 luke EU-a od vrata do vrata – vi upisujete samo svoju adresu – i u izračun uključuje i domaće troškove nakon carinjenja, tako da znate ukupnu cijenu do tablica."
+      },
+      {
+        "h2": "Redoslijed koraka"
+      },
+      {
+        "ol": [
+          "Carinjenje u luci i plaćanje carine i PDV-a.",
+          "Prijevoz automobila do radionice u Hrvatskoj.",
+          "Prilagodba svjetala, brzinomjera i ostale opreme.",
+          "Prijevod dokumenata kod sudskog tumača.",
+          "Tehnički pregled i ispitivanje vozila u CVH.",
+          "Plaćanje PPMV-a.",
+          "Osiguranje i registracija u MUP-u."
+        ]
+      },
+      {
+        "tip": "Prije kupnje zatražite od radionice popis potrebnih preinaka – kod nekih modela prilagodba stoji znatno više nego kod drugih."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Trebam li potvrdu o sukladnosti (CoC)?",
+        "a": "Automobili proizvedeni za SAD ili Japan nemaju europski CoC. Registriraju se putem pojedinačnog odobrenja ili nacionalnog postupka ispitivanja vozila, u Hrvatskoj preko CVH-a."
+      },
+      {
+        "q": "Mogu li automobil voziti kući iz luke?",
+        "a": "Samo s privremenim tablicama i osiguranjem te ako je automobil ispravan. Inače koristite autotransporter ili šlep-službu."
+      },
+      {
+        "q": "Plaća li se PPMV ako sam auto ocarinio u Sloveniji?",
+        "a": "Da. PPMV je hrvatski porez vezan uz registraciju u Hrvatskoj, bez obzira na to gdje je automobil ocarinjen."
+      }
+    ]
+  },
+  {
+    "id": "port-choice",
+    "slug": "rijeka-koper-ili-trst-u-kojoj-luci-ocariniti-auto",
+    "category": "logistics",
+    "origin": null,
+    "date": "2026-09-30",
+    "minutes": 3,
+    "title": "Rijeka, Koper ili Trst? U kojoj luci ocariniti uvezeni auto",
+    "metaTitle": "Rijeka, Koper ili Trst? Najbolja luka za carinjenje auta | CarImport.eu",
+    "description": "Rijeka, Koper ili Trst: kako luka carinjenja mijenja PDV (25 % u Hrvatskoj, 22 % u Sloveniji i Italiji), lučke troškove, vrijeme plovidbe i dostavu do vas.",
+    "lead": "Automobili iz SAD-a najčešće stižu u Bremerhaven, Rotterdam ili Antwerpen, ali mogu se ocariniti u bilo kojoj od 43 luke EU-a. Za kupce iz Hrvatske najbliže su Rijeka, Trst i Koper – a luka odlučuje o stopi PDV-a, lučkim troškovima i duljini cestovnog prijevoza.",
+    "blocks": [
+      {
+        "h2": "Tri stvari koje luka mijenja"
+      },
+      {
+        "ol": [
+          "Uvozni PDV: plaćate stopu države luke – 25 % u Hrvatskoj (Rijeka), 22 % u Sloveniji (Koper) i Italiji (Trst, Genova, La Spezia, Livorno).",
+          "Naknade: lučka manipulacija, istovar kontejnera i carinski posrednik razlikuju se od luke do luke.",
+          "Cestovna udaljenost: luka s nižim PDV-om može biti dalje od vaše kuće."
+        ]
+      },
+      {
+        "h2": "Najbliže luke za Hrvatsku"
+      },
+      {
+        "p": "Udaljenosti u tablici računate su cestom od Zagreba. Za Split, Osijek ili Pulu brojke su drugačije – zato kalkulator računa od vaše točne adrese."
+      },
+      {
+        "table": {
+          "head": [
+            "Luka",
+            "Država",
+            "PDV",
+            "Udaljenost od Zagreba",
+            "Istovar + špediter"
+          ],
+          "rows": [
+            [
+              "Rijeka",
+              "Hrvatska",
+              "25 %",
+              "165 km",
+              "≈ 650 EUR"
+            ],
+            [
+              "Trst (Trieste)",
+              "Italija",
+              "22 %",
+              "217 km",
+              "≈ 700 EUR"
+            ],
+            [
+              "Koper",
+              "Slovenija",
+              "22 %",
+              "222 km",
+              "≈ 640 EUR"
+            ],
+            [
+              "Livorno",
+              "Italija",
+              "22 %",
+              "643 km",
+              "≈ 700 EUR"
+            ],
+            [
+              "La Spezia",
+              "Italija",
+              "22 %",
+              "649 km",
+              "≈ 710 EUR"
+            ],
+            [
+              "Genova",
+              "Italija",
+              "22 %",
+              "722 km",
+              "≈ 720 EUR"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Kada je „strana” luka jeftinija"
+      },
+      {
+        "p": "Hrvatska ima visoku stopu PDV-a od 25 %, a susjedne Slovenija i Italija 22 %. Razlika od tri postotna boda kod automobila iz našeg primjera (osnovica za PDV oko 15.300 dolara) iznosi oko 460 dolara. Koper i Trst udaljeni su od Zagreba tek 50-ak kilometara više od Rijeke, pa dodatni cestovni prijevoz često stoji manje od uštede na PDV-u. Za skuplje automobile razlika raste proporcionalno."
+      },
+      {
+        "p": "Pazite na jedno: PPMV je hrvatski porez i plaća se pri registraciji u Hrvatskoj bez obzira na to gdje ste automobil ocarinili. Usporedba zato mora biti od vrata do vrata – PDV, lučki troškovi, prijevoz i domaći porezi zajedno."
+      },
+      {
+        "h2": "Vrijeme plovidbe"
+      },
+      {
+        "p": "S istočne obale SAD-a najbrže se stiže u sjevernomorske luke (oko 2 tjedna). Do jadranskih luka Rijeke, Kopra i Trsta plovidba iz SAD-a traje otprilike 18 do 39 dana, ovisno o liniji i presjedanjima. Iz Japana i UAE-a brodovi plove kroz Sueski kanal, pa su jadranske i mediteranske luke tjedan ili više brže od Sjevernog mora: iz UAE-a oko 17 dana, iz Japana oko 33 dana do Rijeke ili Kopra."
+      },
+      {
+        "h2": "Koper – najveća automobilska luka na Jadranu"
+      },
+      {
+        "p": "Koper ima redovite linije za vozila i velik terminal za automobile, pa se tamo često iskrcavaju i automobili namijenjeni kupcima iz Hrvatske i Mađarske. Rijeka je najbliža većini Hrvatske i omogućuje carinjenje kod kuće, što nekim kupcima pojednostavljuje papirologiju. Trst je dobra alternativa s talijanskim PDV-om od 22 %. Koja je luka stvarno najjeftinija, ovisi o liniji, kontejneru i vašoj adresi."
+      },
+      {
+        "h2": "Primjer usporedbe: Rijeka ili Koper"
+      },
+      {
+        "p": "Uzmimo automobil iz SAD-a s CIF vrijednošću od 13.030 dolara i carinom od 1.303 dolara. Uz približno 1.000 dolara troškova luke i dostave osnovica za PDV iznosi oko 15.333 dolara."
+      },
+      {
+        "ul": [
+          "Carinjenje u Rijeci: PDV 25 % = oko 3.833 dolara",
+          "Carinjenje u Kopru: PDV 22 % = oko 3.373 dolara",
+          "Razlika u PDV-u: oko 460 dolara u korist Kopra",
+          "Dodatni cestovni put do Zagreba: oko 57 km više"
+        ]
+      },
+      {
+        "p": "Kod ovakvog primjera Koper je obično povoljniji, osim ako je linija do Rijeke jeftinija ili brža. Kod automobila od 30.000 dolara razlika u PDV-u već prelazi 1.000 dolara. Za kupce iz Dalmacije ili Slavonije računica se mijenja, jer se mijenja i udaljenost do svake luke."
+      },
+      {
+        "h2": "Kako odabrati luku u tri koraka"
+      },
+      {
+        "ol": [
+          "Upišite adresu u kalkulator i odaberite podrijetlo automobila.",
+          "Usporedite ukupni trošak od vrata do vrata za Rijeku, Koper, Trst i ostale luke.",
+          "Provjerite s brokerom ili špediterom dostupnost linije i rok plovidbe za odabranu luku."
+        ]
+      },
+      {
+        "h2": "Na što još paziti"
+      },
+      {
+        "ul": [
+          "Carinska deklaracija druge države EU-a potpuno je valjana za registraciju u Hrvatskoj.",
+          "Novi automobili (do 6 mjeseci ili 6.000 km) imaju posebna pravila PDV-a u državi registracije.",
+          "Dostupnost brodskih linija i kontejnera ponekad diktira luku više od cijene.",
+          "Ležarina u luci naplaćuje se po danu – brzo carinjenje štedi novac."
+        ]
+      },
+      {
+        "tip": "Upišite svoju adresu u kalkulator: on izračunava svaku od 43 luke EU-a od vrata do vrata i automatski bira najpovoljniju."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Mogu li auto ocariniti u Sloveniji ili Italiji, a registrirati ga u Hrvatskoj?",
+        "a": "Da. Uvozni PDV platite u državi luke, a automobil registrirate u Hrvatskoj s carinskim dokumentima; PPMV se plaća u Hrvatskoj."
+      },
+      {
+        "q": "Koje luke primaju najviše automobila iz SAD-a?",
+        "a": "Bremerhaven, Rotterdam, Antwerpen i Hamburg na Sjevernom moru, a za jugoistočnu Europu jadranske luke Koper, Trst i Rijeka."
+      },
+      {
+        "q": "Je li Rijeka uvijek najbolji izbor za Zagreb?",
+        "a": "Ne nužno. Najkraći je put, ali PDV od 25 % može ga učiniti skupljim od Kopra ili Trsta. Kalkulator uspoređuje sve varijante."
+      }
+    ]
+  },
+  {
+    "id": "japan-jdm",
+    "slug": "uvoz-auta-iz-japana-jdm-aukcije-i-troskovi",
+    "category": "buying",
+    "origin": "JAPAN",
+    "date": "2026-09-25",
+    "minutes": 3,
+    "title": "Uvoz JDM auta iz Japana: aukcijski listovi, ocjene i troškovi",
+    "metaTitle": "Uvoz auta iz Japana – JDM aukcije, ocjene, troškovi | CarImport.eu",
+    "description": "Uvoz auta iz Japana u Hrvatsku: kako rade japanske aukcije, kako čitati aukcijski list i ocjene, što znači volan desno i koliko košta uvoz JDM automobila.",
+    "lead": "Japanske aukcije poznate su po poštenom ocjenjivanju i automobilima u odličnom stanju. Uz pouzdanog izvoznika kupnja JDM automobila sigurnija je od kupnje naslijepo na američkim aukcijama – pod uvjetom da razumijete aukcijski list.",
+    "blocks": [
+      {
+        "h2": "Kako funkcionira kupnja u Japanu"
+      },
+      {
+        "p": "Aukcije poput USS, TAA, CAA i JU otvorene su samo licenciranim trgovcima. Kupujete preko izvoznika: vi birate automobile i određujete maksimalnu ponudu, a izvoznik licitira, plaća, odjavljuje automobil za izvoz i organizira brod. Na tjednoj razini na japanskim aukcijama prodaju se desetci tisuća vozila, od malih kei automobila do sportskih modela poput Nissana Skyline, Toyote Supre ili Mazde RX-7."
+      },
+      {
+        "p": "Dobar izvoznik šalje vam aukcijski list s prijevodom, dodatne fotografije i jasan obračun svih naknada prije licitiranja. Plaćanje se obično vrši unaprijed ili nakon pobjede, u jenima ili dolarima. Prije uplate depozita provjerite koliko dugo izvoznik posluje, ima li iskustva s kupcima iz EU-a i šalje li sve dokumente potrebne za carinjenje u Hrvatskoj."
+      },
+      {
+        "h2": "Kako čitati aukcijski list"
+      },
+      {
+        "ul": [
+          "Ukupna ocjena: 6–5 gotovo novo, 4,5–4 vrlo dobro, 3,5 prosječno, R/RA popravljeni automobil nakon nesreće",
+          "Ocjena unutrašnjosti: od A do D",
+          "Skica karoserije: A = ogrebotina, U = udubljenje, W = valovitost/popravak, S = hrđa, C = korozija, s brojem za veličinu",
+          "Bilješke ispitivača – uvijek tražite prijevod"
+        ]
+      },
+      {
+        "table": {
+          "head": [
+            "Ocjena",
+            "Značenje",
+            "Za koga"
+          ],
+          "rows": [
+            [
+              "6 / 5 / S",
+              "Gotovo novo, minimalni tragovi",
+              "Kupci koji žele vrhunsko stanje"
+            ],
+            [
+              "4,5 / 4",
+              "Vrlo dobro, sitni tragovi korištenja",
+              "Većina kupaca"
+            ],
+            [
+              "3,5 / 3",
+              "Prosječno, vidljivi tragovi",
+              "Uz pažljiv pregled bilješki"
+            ],
+            [
+              "R / RA",
+              "Popravljena šteta",
+              "Samo uz detaljan opis popravka"
+            ]
+          ]
+        }
+      },
+      {
+        "tip": "Ocjena R ili RA nije uvijek loša, ali pitajte što je popravljeno – popravak nosača ili šasije sasvim je druga priča od zamijenjenog branika."
+      },
+      {
+        "h2": "Troškovi i trajanje"
+      },
+      {
+        "p": "Dodajte naknadu izvoznika, prijevoz unutar Japana, izvozne dokumente i pomorski prijevoz. Brodovi plove kroz Sueski kanal: oko 5 do 6 tjedana do Sjevernog mora, a manje do jadranskih luka – do Rijeke ili Kopra oko 33 dana. Carina za osobne automobile iznosi 10 %, a uvozni PDV plaća se u državi carinjenja: 25 % u Rijeci ili 22 % u Kopru i Trstu. Nakon toga u Hrvatskoj slijedi PPMV i registracija u MUP-u."
+      },
+      {
+        "ul": [
+          "Cijena na aukciji i aukcijska naknada",
+          "Naknada izvoznika i prijevoz unutar Japana",
+          "Izvozni certifikat i odjava",
+          "Pomorski prijevoz (kontejner ili RoRo) i osiguranje",
+          "Carina 10 %, PDV države carinjenja, luka i špediter",
+          "PPMV, tehnički pregled u CVH i registracija"
+        ]
+      },
+      {
+        "h2": "Kupnja iz Japana korak po korak"
+      },
+      {
+        "ol": [
+          "Odaberite izvoznika s iskustvom u izvozu u EU i provjerite recenzije.",
+          "Uplatite depozit i dobijte pristup pretraživanju aukcija.",
+          "Pošaljite izvozniku popis automobila i maksimalne ponude.",
+          "Zatražite prijevod aukcijskog lista i dodatne fotografije za odabrana vozila.",
+          "Nakon pobjede platite automobil i naknade u dogovorenom roku.",
+          "Izvoznik odjavljuje vozilo, izdaje izvozni certifikat i ukrcava ga na brod.",
+          "Automobil se carini u odabranoj luci i dovozi do vas."
+        ]
+      },
+      {
+        "h2": "Na što paziti kod starijih sportskih modela"
+      },
+      {
+        "p": "Popularni JDM modeli iz devedesetih godina često su modificirani: drugi turbopunjači, ispuh, ovjes ili elektronika. Takve preinake mogu otežati tehnički pregled u CVH, jer svaka izmjena mora biti dokumentirana i odobrena. Automobili stariji od 30 godina u originalnom stanju mogu biti oslobođeni carine kao kolekcionarska vozila, ali samo ako nisu bitno izmijenjeni."
+      },
+      {
+        "h2": "Volan na desnoj strani"
+      },
+      {
+        "p": "Većina država EU-a registrira automobile s volanom na desnoj strani, obično nakon podešavanja farova. Neke ih ograničavaju za trajnu registraciju – prije kupnje provjerite pravila u Hrvatskoj i s CVH-om ili radionicom razjasnite što treba prilagoditi za vaš model. Uzmite u obzir i praktičnu stranu: pretjecanje i naplatne kućice na autocesti s volanom desno zahtijevaju malo navikavanja."
+      },
+      {
+        "h2": "Zašto kupci vole Japan"
+      },
+      {
+        "p": "Japanski automobili imaju strogo kontrolirane tehničke preglede (shaken), a kilometraža se bilježi u aukcijskim listovima i izvoznim certifikatima. Zbog toga su prevare s kilometražom rjeđe nego na drugim tržištima. Mnogi modeli prodavani su samo u Japanu, pa se JDM automobili često drže vrijednosti bolje od europskih ekvivalenata. Kalkulator uspoređuje svih 43 luke EU-a od vrata do vrata; vi upisujete samo adresu."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Je li kilometraža japanskih automobila pouzdana?",
+        "a": "Uglavnom da – aukcijski listovi i izvozni certifikati bilježe kilometražu, a vraćanje kilometara rijetko je u usporedbi s drugim tržištima."
+      },
+      {
+        "q": "Što je s hrđom?",
+        "a": "Automobili sa sjevera Japana (Hokkaido) mogu imati hrđu na podvozju zbog soli na cestama; aukcijski list označava je slovom S ili C."
+      },
+      {
+        "q": "Koja je luka najbolja za auto iz Japana?",
+        "a": "Za Hrvatsku su to obično jadranske luke Rijeka i Koper, koje su zbog Sueskog kanala brže od sjevernomorskih. Kalkulator uspoređuje i trošak."
+      }
+    ]
+  },
+  {
+    "id": "checklist",
+    "slug": "kontrolni-popis-prije-licitiranja-za-auto-iz-inozemstva",
+    "category": "buying",
+    "origin": null,
+    "date": "2026-09-20",
+    "minutes": 3,
+    "title": "12 provjera prije nego što licitirate za auto iz inozemstva",
+    "metaTitle": "Popis provjera prije licitiranja za auto iz SAD-a i Japana | CarImport.eu",
+    "description": "Dvanaest provjera prije licitiranja za auto iz SAD-a ili Japana: povijest po VIN-u, naslov, oštećenja, naknade, prijevoz, carina, PDV, PPMV i registracija.",
+    "lead": "Aukcija vam daje nekoliko minuta za odluku. Ovih dvanaest točaka uzima jednu večer, a štiti vas od najskupljih pogrešaka – od skrivene poplave do zaboravljenog PPMV-a.",
+    "blocks": [
+      {
+        "h2": "Popis u 12 točaka"
+      },
+      {
+        "ol": [
+          "Napravite izvješće o povijesti po VIN-u: nesreće, poplava, kilometraža, krađa.",
+          "Provjerite vrstu naslova – izbjegavajte parts only i non-repairable.",
+          "Proučite svaku fotografiju: razmaci između dijelova karoserije, zračni jastuci, tragovi vode, motorni prostor.",
+          "Oznake stanja čitajte kao informaciju, ne kao jamstvo.",
+          "Provjerite lokaciju parkirališta i udaljenost do izvozne luke.",
+          "Izračunajte sve aukcijske naknade i proviziju brokera za vašu razinu ponude.",
+          "Izračunajte ukupni trošak do vrata: brod, carina, PDV, luka, dostava.",
+          "Usporedite luke carinjenja za svoju adresu.",
+          "Zatražite procjenu popravka i cijene dijelova u Hrvatskoj.",
+          "Provjerite što automobil mora promijeniti za registraciju (svjetla, brzinomjer).",
+          "Isplanirajte vrijeme: rokove plaćanja i preuzimanja, plovidbu, tehnički pregled.",
+          "Odredite maksimalnu ponudu – i držite je se."
+        ]
+      },
+      {
+        "p": "Popis nije teorija: svaka točka odgovara stvarnoj pogrešci koju kupci iz Hrvatske najčešće rade pri prvom uvozu. Prođite ga za svaki automobil posebno, čak i kada se žurite."
+      },
+      {
+        "tip": "Korake 6 do 8 napravite u kalkulatoru: on zbraja sve naknade i poreze te prikazuje optimističan, prosječan i pesimističan ukupni iznos."
+      },
+      {
+        "h2": "Detaljnije o najvažnijim točkama"
+      },
+      {
+        "h3": "Povijest vozila po VIN-u"
+      },
+      {
+        "p": "Izvješće Carfax ili AutoCheck stoji nekoliko desetaka dolara i najjeftinije je osiguranje koje možete kupiti. Pokazuje ranije štete, zapise o poplavi, promjene vlasnika i očitanja kilometraže. Ako se kilometraža u izvješću ne slaže s onom na fotografiji instrumenata, odustanite."
+      },
+      {
+        "h3": "Fotografije i opis štete"
+      },
+      {
+        "p": "Gledajte neravne razmake između vrata, blatobrana i haube – to su znakovi deformacije. Aktivirani zračni jastuci znače skupe module i senzore. Mulj ili vodena linija u unutrašnjosti gotovo uvijek znače poplavu. Primarno i sekundarno oštećenje u oglasu samo su gruba procjena prodavatelja."
+      },
+      {
+        "h3": "Ukupni trošak do vrata"
+      },
+      {
+        "p": "Najveća pogreška je licitirati do tržišne cijene u Hrvatskoj bez troškova. Carina od 10 %, PDV od 25 % u Rijeci ili 22 % u Kopru i Trstu, lučki troškovi, dostava i PPMV mogu udvostručiti cijenu s aukcije. Kalkulator uspoređuje svih 43 luke EU-a od vrata do vrata – vi upisujete samo adresu."
+      },
+      {
+        "h3": "Registracija u Hrvatskoj"
+      },
+      {
+        "p": "Američki automobili trebaju prilagodbu svjetala i brzinomjera u km/h, a za tehnički pregled i ispitivanje u CVH potrebni su prevedeni dokumenti. Zatražite od radionice popis preinaka prije licitiranja, jer se troškovi jako razlikuju po modelu."
+      },
+      {
+        "h3": "Lokacija parkirališta"
+      },
+      {
+        "p": "Isti automobil na parkiralištu u New Jerseyju i u Kaliforniji može imati razliku od više stotina dolara samo u prijevozu do luke. Za kupce iz Hrvatske najčešće su povoljnije lokacije na istočnoj obali i u Teksasu, odakle idu linije prema Europi. Provjerite i koliko dana besplatne ležarine nudi aukcija."
+      },
+      {
+        "h3": "Aukcijske naknade"
+      },
+      {
+        "p": "Naknada kupca raste u stupnjevima. Ponuda koja je nekoliko dolara iznad praga može podići naknadu za cijeli razred, pa vrijedi licitirati malo ispod praga. Dodajte naknade za online licitiranje, gate fee i proviziju brokera, tako da znate stvarnu cijenu automobila na aukciji."
+      },
+      {
+        "h3": "Vrijeme i rokovi"
+      },
+      {
+        "p": "Aukcija obično traži plaćanje u 2 do 3 radna dana, a besplatna ležarina traje kratko. Brod, carinjenje, preinake i pregled u CVH zajedno mogu trajati nekoliko tjedana. Ako vam automobil treba do određenog datuma, planirajte rezervu."
+      },
+      {
+        "h3": "Maksimalna ponuda"
+      },
+      {
+        "p": "Odredite iznos prije aukcije i ne mijenjajte ga u žaru licitiranja. Uvijek će biti novih automobila; preplaćeni automobil ostaje preplaćen i nakon registracije."
+      },
+      {
+        "h2": "Najčešće pogreške"
+      },
+      {
+        "ul": [
+          "Licitiranje do tržišne cijene bez uračunatih naknada i poreza",
+          "Zaboravljena ležarina kada kasni preuzimanje",
+          "Podcjenjivanje popravka „manjeg” prednjeg oštećenja",
+          "Zanemarivanje PPMV-a u Hrvatskoj",
+          "Kupnja modela za koji u Europi nema dijelova"
+        ]
+      },
+      {
+        "h2": "Koliko rezerve ostaviti"
+      },
+      {
+        "p": "Rezerva pokriva ono što se ne vidi na fotografijama i ono što ne ovisi o vama: zakašnjeli brod, carinski pregled, dodatnu ležarinu, skriveno oštećenje ili skuplje dijelove. Što manje znate o automobilu, to veća rezerva treba biti. Okvirne vrijednosti su sljedeće:"
+      },
+      {
+        "table": {
+          "head": [
+            "Vrsta automobila",
+            "Preporučena rezerva"
+          ],
+          "rows": [
+            [
+              "Vozni automobil, clean naslov",
+              "10 % ukupnog troška"
+            ],
+            [
+              "Salvage, manja šteta, vozi",
+              "10–15 %"
+            ],
+            [
+              "Ne vozi ili nepoznata šteta",
+              "15 % i više, plus 30–40 % cijene za popravak"
+            ]
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "Koliko novca trebam ostaviti u rezervi?",
+        "a": "Najmanje 10 do 15 % ukupnog iznosa za iznenađenja, a više za automobile koji ne voze."
+      },
+      {
+        "q": "Je li izvješće po VIN-u dovoljno?",
+        "a": "Nužno je, ali nije potpuno – kombinirajte ga s fotografijama, izvješćem o stanju i procjenom popravka."
+      },
+      {
+        "q": "Koliko dugo unaprijed trebam planirati?",
+        "a": "Računajte s 2 do 3 mjeseca od pobjede na aukciji do registracije, uključujući plovidbu, carinjenje i pregled."
       }
     ]
   }
