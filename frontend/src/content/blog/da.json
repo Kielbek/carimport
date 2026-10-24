@@ -875,5 +875,98 @@
         "a": "Regn med 2–3 måneder fra køb til indregistreret bil: eksport og indlastning, 5–6 ugers sejlads samt fortoldning, syn og registrering."
       }
     ]
+  },
+  {
+    "id": "checklist",
+    "slug": "tjekliste-for-du-byder-pa-en-bil-fra-usa",
+    "category": "buying",
+    "origin": null,
+    "date": "2026-09-20",
+    "minutes": 3,
+    "title": "Tjekliste i 12 punkter, før du byder på en bil i udlandet",
+    "metaTitle": "Tjekliste før du byder på en bil fra USA – 12 punkter | CarImport.eu",
+    "description": "Tjekliste før du byder på en bil fra USA, Canada eller Japan: VIN-historik, titel, billeder, gebyrer, told, moms, havn og registreringsafgift i Danmark.",
+    "lead": "En auktion giver dig få minutter til at beslutte dig. De tolv punkter her tager en aften at gennemgå og beskytter dig mod de dyreste fejl, når du importerer en bil til Danmark.",
+    "blocks": [
+      {
+        "h2": "De tolv punkter"
+      },
+      {
+        "ol": [
+          "Hent en VIN-historik (Carfax eller AutoCheck): ulykker, oversvømmelse, kilometerstand, tyveri.",
+          "Tjek titeltypen – undgå parts only og non-repairable.",
+          "Gennemgå hvert billede: spalter, airbags, vandlinjer, motorrum.",
+          "Læs tilstandsmærkaterne som information, ikke som garanti.",
+          "Tjek, hvor bilen står, og hvor langt der er til eksporthavnen.",
+          "Beregn alle auktions- og brokergebyrer for dit budniveau.",
+          "Find den samlede pris leveret: fragt, told, moms, havn, transport hjem.",
+          "Sammenlign fortoldningshavne for din adresse.",
+          "Få et reparationsoverslag og reservedelspriser i Danmark.",
+          "Undersøg, hvad der skal ombygges, for at bilen kan indregistreres (lygter, speedometer), og hvad registreringsafgiften bliver.",
+          "Planlæg tiden: betalings- og afhentningsfrister, sejlads, syn.",
+          "Fastsæt et maksimalt bud – og hold dig til det."
+        ]
+      },
+      {
+        "tip": "Lav punkt 6–8 i beregneren: den lægger alle gebyrer og afgifter sammen, sammenligner alle 43 EU-havne fra dør til dør og viser et optimistisk, gennemsnitligt og pessimistisk beløb. Du indtaster blot din adresse."
+      },
+      {
+        "h2": "Før auktionen: bilen"
+      },
+      {
+        "p": "De første fire punkter handler om selve bilen. En VIN-rapport viser tidligere skader, forsikringssager og kilometerstande, men den er aldrig komplet. Sammenlign rapporten med billederne og tilstandsrapporten, og kig efter modsigelser: en bil, der ifølge rapporten kun har en let frontskade, men som har udløste airbags på billederne, har sandsynligvis flere skader, end det ser ud til. Titeltypen afgør, om bilen overhovedet kan indregistreres. En skrotningsattest eller en parts only-titel er en blindgyde, hvis du vil have danske nummerplader."
+      },
+      {
+        "h2": "Før auktionen: pengene"
+      },
+      {
+        "p": "Punkt 5–8 handler om, hvad bilen koster på vejen hjem. Afstanden fra auktionspladsen til havnen kan betyde flere hundrede dollar. Auktionsgebyrerne stiger i trin, så tjek dem for netop dit bud. Derefter kommer fragt, 10 % told og 25 % importmoms, hvis bilen fortoldes i Danmark – og momsen beregnes også af fragten og tolden, ikke kun af prisen. Sammenlign havne: en havn med lavere moms kan blive billigere, selv om vejen hjem bliver længere."
+      },
+      {
+        "h2": "Før auktionen: Danmark"
+      },
+      {
+        "p": "Punkt 9–11 handler om, hvad der sker, når bilen er kommet hjem. Reservedele til amerikanske versioner kan være dyrere og tage længere tid at skaffe end dele til europæiske modeller. Lygterne skal næsten altid ombygges før syn (registreringssyn), og derefter skal registreringsafgiften betales og bilen registreres via Motorstyrelsen. Registreringsafgiften afhænger af bilens værdi og de gældende regler og kan let blive den største post af alle, så undersøg den, før du byder. Regn med, at hele forløbet tager to til tre måneder fra vundet auktion."
+      },
+      {
+        "h2": "De mest almindelige fejl"
+      },
+      {
+        "ul": [
+          "At byde op til markedsprisen uden at regne gebyrer og afgifter med",
+          "At glemme opbevaringsgebyrer, når afhentningen bliver forsinket",
+          "At undervurdere reparationen af en \"mindre\" frontskade",
+          "At overse registreringsafgiften i Danmark",
+          "At købe en bil, hvis titel ikke tillader indregistrering",
+          "At lade dollarkursen overraske – betalingen sker i dollar nogle dage efter auktionen"
+        ]
+      },
+      {
+        "h2": "Efter auktionen"
+      },
+      {
+        "p": "Når du har vundet, begynder uret at tikke. Betal inden fristen, ofte to til tre bankdage, og sørg for, at bilen bliver hentet, før den gratis opbevaringstid udløber. Bed brokeren om billeder, når bilen afleveres i havnen, og tjek, at titlen og fakturaen sendes til eksportøren. Gem alle kvitteringer – du skal bruge dem ved fortoldningen, fordi toldværdien skal kunne dokumenteres."
+      },
+      {
+        "h2": "Hold dig til dit maksimale bud"
+      },
+      {
+        "p": "Det tolvte punkt er det sværeste. Livebudgivning er indrettet til at få dig til at byde lidt mere, og der er altid en anden byder, der vil betale mere. Skriv dit maksimale bud ned, før auktionen begynder, beregnet ud fra hvad bilen må koste leveret og indregistreret i Danmark. Taber du en bil, kommer der altid en ny – der er tusindvis af lignende biler hver uge."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Hvor meget skal jeg have i reserve?",
+        "a": "Mindst 10–15 % af totalen til overraskelser, mere for biler, der ikke kan køre."
+      },
+      {
+        "q": "Er en VIN-rapport nok?",
+        "a": "Den er nødvendig, men ikke komplet – kombinér den med billederne, tilstandsrapporten og et reparationsoverslag."
+      },
+      {
+        "q": "Hvor lang tid går der, før bilen er indregistreret i Danmark?",
+        "a": "Regn med cirka to til tre måneder fra vundet auktion til danske nummerplader, afhængigt af fragt, fortoldning, syn og registrering."
+      }
+    ]
   }
 ]
