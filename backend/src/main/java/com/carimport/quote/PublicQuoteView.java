@@ -43,7 +43,7 @@ public record PublicQuoteView(
         Instant expiresAt) {
 
     private static final BigDecimal ROUNDING_STEP = new BigDecimal("100");
-    private static final Set<String> FREE_CODES = Set.of("CUSTOMS_DUTY", "IMPORT_VAT", "EXCISE_TAX", "PORT_UNLOADING",
+    private static final Set<String> FREE_CODES = Set.of("CUSTOMS_DUTY", "IMPORT_VAT", "EXCISE_TAX", "REGISTRATION_TAX", "PORT_UNLOADING",
             "CUSTOMS_AGENCY");
 
     public static PublicQuoteView of(UUID quoteId, QuoteRange range, String destinationCountry, Instant expiresAt) {

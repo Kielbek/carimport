@@ -4,8 +4,11 @@ import com.carimport.calculation.CalculationEngine;
 import com.carimport.calculation.CalculationException;
 import com.carimport.calculation.CalculationRequest;
 import com.carimport.calculation.CalculationResult;
+import com.carimport.calculation.Proposals;
 import com.carimport.calculation.Scenario;
 import com.carimport.calculation.TariffCatalog;
+import com.carimport.calculation.registration.RegistrationTaxes;
+import com.carimport.calculation.step.RegistrationTaxStep;
 import com.carimport.domain.DeliveryMode;
 import com.carimport.fx.ExchangeRateService;
 import com.carimport.fx.FxRates;
@@ -44,8 +47,15 @@ public class SuggestionService {
     private record Priced(EuPort port, GeoService.Distance distance, CalculationResult result) {
     }
 
+    /**
+     * @param registrationTax how the registration country's one-off tax is handled: EXCISE (Polish excise, always
+     *                        computed), NONE (no such tax), ESTIMATED (our formula, see registrationTaxEstimate) or
+     *                        OFFICIAL_CALCULATOR (the buyer types it from registrationTaxUrl)
+     */
     public record Suggestions(String recommendedPort, List<PortSuggestion> ports, DeliveryMode deliveryMode,
-                              BigDecimal repairEstimate, BigDecimal insuranceEstimate, String currency) {
+                              BigDecimal repairEstimate, BigDecimal insuranceEstimate, String currency,
+                              int co2Estimate, int powerKwEstimate, String registrationTax,
+                              BigDecimal registrationTaxEstimate, String registrationTaxUrl) {
     }
 
     private final CalculationEngine engine;
@@ -93,7 +103,29 @@ public class SuggestionService {
         return new Suggestions(best, priced, request.withProposedEstimates().effectiveDeliveryMode(),
                 proposal.map(r -> displayAmount(r, "REPAIR_ESTIMATE")).orElse(BigDecimal.ZERO),
                 proposal.map(r -> displayAmount(r, "INSURANCE_FIRST_YEAR")).orElse(BigDecimal.ZERO),
-                request.displayCurrency().name());
+                request.displayCurrency().name(),
+                Proposals.co2(request.fuelType(), request.engineCc(), request.vehicleCategory()),
+                Proposals.powerKw(request.fuelType(), request.engineCc()),
+                registrationTaxMode(request.destinationCountry()),
+                proposal.flatMap(r -> wholeAmount(r, RegistrationTaxStep.CODE)).orElse(null),
+                RegistrationTaxes.OFFICIAL_CALCULATOR.get(request.destinationCountry()));
+    }
+
+    private static String registrationTaxMode(String country) {
+        if ("PL".equals(country)) {
+            return "EXCISE";
+        }
+        if (RegistrationTaxes.NONE.contains(country)) {
+            return "NONE";
+        }
+        return RegistrationTaxes.modelled(country) ? "ESTIMATED" : "OFFICIAL_CALCULATOR";
+    }
+
+    private static Optional<BigDecimal> wholeAmount(CalculationResult result, String code) {
+        return result.lines().stream()
+                .filter(l -> l.line().code().equals(code) && l.display().amount() != null)
+                .findFirst()
+                .map(l -> l.display().amount().setScale(0, RoundingMode.HALF_UP));
     }
 
     private Optional<CalculationResult> calculate(CalculationRequest request, FxRates fx) {

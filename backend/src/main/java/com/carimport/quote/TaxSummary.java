@@ -24,7 +24,7 @@ public record TaxSummary(Item duty, Item vat, List<Item> national, BigDecimal po
     public record Item(String code, BigDecimal rate, String country, BigDecimal amount) {
     }
 
-    private static final List<String> NATIONAL = List.of("EXCISE_TAX");
+    private static final List<String> NATIONAL = List.of("EXCISE_TAX", "REGISTRATION_TAX");
     private static final List<String> PORT_FEES = List.of("PORT_UNLOADING", "CUSTOMS_AGENCY");
 
     public static TaxSummary of(CalculationResult result, String clearanceCountry, String destinationCountry) {

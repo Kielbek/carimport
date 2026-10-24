@@ -16,6 +16,7 @@ import com.carimport.calculation.step.InsuranceStep;
 import com.carimport.calculation.step.OceanFreightStep;
 import com.carimport.calculation.step.PortClearanceStep;
 import com.carimport.calculation.step.PurchasePriceStep;
+import com.carimport.calculation.step.RegistrationTaxStep;
 import com.carimport.calculation.step.RiskStep;
 import com.carimport.calculation.step.RoutePlanningStep;
 import com.carimport.calculation.strategy.DealerPurchaseStrategy;
@@ -70,7 +71,7 @@ public class CalculationEngineTest {
                     new PortClearanceStep(),
                     new ImportVatStep(List.of(new StandardEuClearanceVatStrategy(), new GermanClearanceVatStrategy(),
                             new DutchClearanceVatStrategy(), new PolishClearanceVatStrategy())),
-                    new DeliveryStep(), new DestinationFeesStep(), new RiskStep()),
+                    new RegistrationTaxStep(), new DeliveryStep(), new DestinationFeesStep(), new RiskStep()),
             new InMemoryTariffCatalog(),
             Clock.fixed(Instant.parse("2026-10-21T10:00:00Z"), ZoneOffset.UTC));
 
@@ -90,14 +91,14 @@ public class CalculationEngineTest {
         return new CalculationRequest(OriginCountry.USA, AuctionHouse.COPART, TitleType.SALVAGE, "NJ", null,
                 new BigDecimal("10000"), VehicleCategory.PASSENGER_CAR, fuel, cc, 2021, false,
                 VehicleCondition.RUN_AND_DRIVE, ShippingMethod.CONTAINER_SHARED, "PLGDY", "PL", BuyerType.PRIVATE,
-                CustomsProcedure.STANDARD_4000, CurrencyCode.PLN, null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null);
+                CustomsProcedure.STANDARD_4000, CurrencyCode.PLN, null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null, null, null, null);
     }
 
     static CalculationRequest with(CalculationRequest r, String euPort, BuyerType buyer, CustomsProcedure procedure) {
         return new CalculationRequest(r.originCountry(), r.auctionHouse(), r.titleType(), r.pickupZone(),
                 r.departurePort(), r.bidPrice(), r.vehicleCategory(), r.fuelType(), r.engineCc(), r.productionYear(),
                 r.historicOriginalCondition(), r.condition(), r.shippingMethod(), euPort, r.destinationCountry(), buyer,
-                procedure, r.displayCurrency(), null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null);
+                procedure, r.displayCurrency(), null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null, null, null, null);
     }
 
     static CostLine line(CalculationResult result, String code) {
@@ -171,12 +172,34 @@ public class CalculationEngineTest {
     }
 
     @Test
+    void registrationTaxOfTheDestinationIsAddedAndTheBuyersOwnFigureWins() {
+        CalculationRequest base = copartToGdynia(FuelType.PETROL, 1998);
+        CalculationRequest toNl = new CalculationRequest(base.originCountry(), base.auctionHouse(), base.titleType(),
+                base.pickupZone(), null, base.bidPrice(), base.vehicleCategory(), base.fuelType(), base.engineCc(),
+                base.productionYear(), false, base.condition(), base.shippingMethod(), "DEBRV", "NL",
+                base.buyerType(), base.customsProcedure(), CurrencyCode.EUR, null, 100, null, BigDecimal.ZERO,
+                BigDecimal.ZERO, null, null, null, null, 150, null, null);
+        CostLine bpm = line(engine.calculate(toNl, Scenario.EXPECTED, FX), "REGISTRATION_TAX");
+        assertThat(bpm.params()).containsEntry("country", "NL").containsEntry("method", "NL_BPM_2026");
+        assertThat(bpm.original().amount()).isPositive();
+
+        CalculationRequest own = new CalculationRequest(toNl.originCountry(), toNl.auctionHouse(), toNl.titleType(),
+                toNl.pickupZone(), null, toNl.bidPrice(), toNl.vehicleCategory(), toNl.fuelType(), toNl.engineCc(),
+                toNl.productionYear(), false, toNl.condition(), toNl.shippingMethod(), "DEBRV", "NL",
+                toNl.buyerType(), toNl.customsProcedure(), CurrencyCode.EUR, null, 100, null, BigDecimal.ZERO,
+                BigDecimal.ZERO, null, null, null, null, 150, null, new BigDecimal("4321"));
+        CostLine typed = line(engine.calculate(own, Scenario.EXPECTED, FX), "REGISTRATION_TAX");
+        assertThat(typed.original().amount()).isEqualByComparingTo("4321");
+        assertThat(typed.params()).containsEntry("type", "USER");
+    }
+
+    @Test
     void historicCarIsDutyFreeWithReducedVat() {
         CalculationRequest base = copartToGdynia(FuelType.PETROL, 2500);
         CalculationRequest historic = new CalculationRequest(base.originCountry(), base.auctionHouse(),
                 base.titleType(), base.pickupZone(), null, base.bidPrice(), base.vehicleCategory(), base.fuelType(),
                 base.engineCc(), 1990, true, base.condition(), base.shippingMethod(), base.euPortCode(),
-                base.destinationCountry(), base.buyerType(), base.customsProcedure(), base.displayCurrency(), null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null);
+                base.destinationCountry(), base.buyerType(), base.customsProcedure(), base.displayCurrency(), null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null, null, null, null);
         CalculationResult r = engine.calculate(historic, Scenario.EXPECTED, FX);
 
         assertThat(r.historic()).isTrue();
@@ -234,7 +257,7 @@ public class CalculationEngineTest {
                 base.titleType(), base.pickupZone(), null, base.bidPrice(), base.vehicleCategory(), base.fuelType(),
                 base.engineCc(), base.productionYear(), false, VehicleCondition.NON_RUNNING, base.shippingMethod(),
                 base.euPortCode(), base.destinationCountry(), base.buyerType(), base.customsProcedure(),
-                base.displayCurrency(), null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null);
+                base.displayCurrency(), null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null, null, null, null);
         CalculationResult runner = engine.calculate(base, Scenario.EXPECTED, FX);
         CalculationResult nonRunner = engine.calculate(damaged, Scenario.EXPECTED, FX);
 
@@ -249,7 +272,7 @@ public class CalculationEngineTest {
         CalculationRequest req = new CalculationRequest(OriginCountry.JAPAN, AuctionHouse.USS, TitleType.CLEAN, null,
                 null, new BigDecimal("2000000"), VehicleCategory.PASSENGER_CAR, FuelType.HEV, 1800, 2019, false,
                 VehicleCondition.RUN_AND_DRIVE, ShippingMethod.CONTAINER_SHARED, "PLGDY", "PL", BuyerType.PRIVATE,
-                CustomsProcedure.STANDARD_4000, CurrencyCode.EUR, null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null);
+                CustomsProcedure.STANDARD_4000, CurrencyCode.EUR, null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null, null, null, null);
         CalculationResult r = engine.calculate(req, Scenario.EXPECTED, FX);
 
         assertThat(line(r, "AUCTION_AGENT_COMMISSION").original().amount()).isEqualByComparingTo("80000");
@@ -265,7 +288,7 @@ public class CalculationEngineTest {
                 r.historicOriginalCondition(), r.condition(), r.shippingMethod(), r.euPortCode(), r.destinationCountry(),
                 r.buyerType(), r.customsProcedure(), r.displayCurrency(), mode, km,
                 perKm == null ? null : new BigDecimal(perKm), repair == null ? BigDecimal.ZERO : new BigDecimal(repair),
-                BigDecimal.ZERO, services, null, null, null);
+                BigDecimal.ZERO, services, null, null, null, null, null, null);
     }
 
     @Nested
@@ -307,7 +330,7 @@ public class CalculationEngineTest {
                     base.engineCc(), base.productionYear(), false, base.condition(), base.shippingMethod(),
                     base.euPortCode(), base.destinationCountry(), base.buyerType(), base.customsProcedure(),
                     base.displayCurrency(), base.deliveryMode(), null, null, BigDecimal.ZERO, BigDecimal.ZERO, null,
-                    "Kraków, Polska", krakow.lat(), krakow.lon());
+                    "Kraków, Polska", krakow.lat(), krakow.lon(), null, null, null);
 
             CalculationResult r = engine.calculate(req, Scenario.EXPECTED, FX);
 
@@ -369,7 +392,7 @@ public class CalculationEngineTest {
                 base.titleType(), base.pickupZone(), null, base.bidPrice(), base.vehicleCategory(), base.fuelType(),
                 base.engineCc(), base.productionYear(), false, VehicleCondition.NON_RUNNING, base.shippingMethod(),
                 base.euPortCode(), base.destinationCountry(), base.buyerType(), base.customsProcedure(),
-                base.displayCurrency(), null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null);
+                base.displayCurrency(), null, null, null, BigDecimal.ZERO, BigDecimal.ZERO, null, null, null, null, null, null, null);
 
         assertThat(damaged.effectiveDeliveryMode()).isEqualTo(DeliveryMode.TOW_TRUCK);
         assertThat(base.effectiveDeliveryMode()).isEqualTo(DeliveryMode.CAR_CARRIER);

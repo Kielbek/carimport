@@ -5,6 +5,8 @@ import com.carimport.calculation.step.DeliveryStep;
 import com.carimport.domain.AuctionHouse;
 import com.carimport.domain.DeliveryMode;
 import com.carimport.domain.OriginCountry;
+import com.carimport.fx.ExchangeRateService;
+import com.carimport.fx.FxRates;
 import com.carimport.reference.EuCountryTaxProfile;
 import com.carimport.reference.EuCountryTaxProfileRepository;
 import com.carimport.reference.EuPort;
@@ -12,8 +14,11 @@ import com.carimport.reference.EuPortRepository;
 import com.carimport.reference.InlandTransportRate;
 import java.math.BigDecimal;
 import java.time.Duration;
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 import org.springframework.http.CacheControl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -45,14 +50,31 @@ public class ReferenceDataController {
                                Integer typicalDistanceKm) {
     }
 
+    /** NBP mid rates: PLN per unit of each currency (PLN itself = 1). */
+    public record FxOption(LocalDate date, Map<String, BigDecimal> plnPerUnit) {
+    }
+
     private final EuPortRepository ports;
     private final EuCountryTaxProfileRepository taxes;
     private final TariffCatalog catalog;
+    private final ExchangeRateService fx;
 
-    public ReferenceDataController(EuPortRepository ports, EuCountryTaxProfileRepository taxes, TariffCatalog catalog) {
+    public ReferenceDataController(EuPortRepository ports, EuCountryTaxProfileRepository taxes, TariffCatalog catalog,
+                                   ExchangeRateService fx) {
         this.ports = ports;
         this.taxes = taxes;
         this.catalog = catalog;
+        this.fx = fx;
+    }
+
+    /** Lets the wizard convert amounts the user typed when they switch the result currency. */
+    @GetMapping("/fx")
+    public ResponseEntity<FxOption> fx() {
+        FxRates rates = fx.latest();
+        Map<String, BigDecimal> body = new TreeMap<>();
+        rates.plnPerUnit().forEach((c, r) -> body.put(c.name(), r));
+        return ResponseEntity.ok().cacheControl(CacheControl.maxAge(Duration.ofHours(1)))
+                .body(new FxOption(rates.effectiveDate(), body));
     }
 
     /** Amounts of after-import services are not exposed here - they are part of the paid report. */
