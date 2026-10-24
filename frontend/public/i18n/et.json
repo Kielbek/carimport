@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Aktsiisimaks",
     "FORKLIFT_LOADING": "Laadimine tõstukiga",
     "IMPORT_VAT": "Impordikäibemaks",
-    "INDIVIDUAL_APPROVAL": "Üksikkinnitus (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Üksikkinnitus / impordiülevaatus",
     "INLAND_TRANSPORT": "Sisemaavedu sadamasse",
     "INTRA_EU_ACQUISITION_VAT": "ELi-sisese soetamise käibemaks (pöördmaksustamine, mahaarvatav)",
     "INTRA_EU_TRANSPORT": "Autoveok sadamast sihtkohta",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transpordikahju – kindlustuse omavastutus",
     "RISK_HIDDEN_DAMAGE": "Varjatud kahjud, mida oksjonil näha polnud",
     "RISK_TITLE_DELAY": "Omandidokumendi (title) viivitus (lisahoiustamine)",
-    "RISK_EXPORT_DOCS_DELAY": "Ekspordidokumentide viivitus"
+    "RISK_EXPORT_DOCS_DELAY": "Ekspordidokumentide viivitus",
+    "REGISTRATION_TAX": "Registreerimismaks",
+    "COC_CERTIFICATE": "Tootja andmeleht / CoC"
   },
   "doc": {
     "billOfLading": "Konossement (Bill of Lading)",
@@ -388,7 +390,11 @@
     "distanceRouted": "Maanteemarsruut sadamast {{port}} sinu aadressini.",
     "distanceEstimated": "Hinnang sadamast {{port}} sinu aadressini (linnulennult × 1,25).",
     "distanceTypical": "Tüüpiline kaugus sadamast {{port}} – täpse arvu saamiseks sisesta ülal aadress.",
-    "tariffShort": "Turg: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} laadimine, min {{minimum}} {{cur}}."
+    "tariffShort": "Turg: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} laadimine, min {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "CoC-dokumendist või aknakleebiselt. Enamik ELi registreerimismakse põhineb sellel.",
+    "powerKw": "Mootori võimsus",
+    "powerKwHint": "kW-des (1 hj ≈ 0,74 kW). Kasutatakse Belgias, Itaalias ja Prantsusmaal."
   },
   "layout": {
     "topbar": "Sõltumatu kalkulaator autode impordikulude arvutamiseks USA-st, Kanadast, Jaapanist, AÜE-st ja Ühendkuningriigist 27 ELi riiki",
@@ -902,7 +908,18 @@
     "SERVICE_INSPECTION": "Õli, filtrid, vedelikud, pidurid pärast pikka teekonda",
     "GEOMETRY_ALIGNMENT": "Soovitatav pärast veermiku remonti",
     "DETAILING": "Pesu, salongi puhastus, värvi poleerimine",
-    "EXPERT_VALUATION": "Kasulik kaskokindlustuse ja edasimüügi jaoks"
+    "EXPERT_VALUATION": "Kasulik kaskokindlustuse ja edasimüügi jaoks",
+    "INDIVIDUAL_APPROVAL": "Väljaspool ELi asuvale turule ehitatud autol pole ELi tüübikinnitust – volitatud ülevaatuspunkt kontrollib seda ELi nõuete järgi ({{inspection}}).",
+    "REGISTRATION_FEE": "Ametlikud tasud – {{authority}}: registreerimistunnistus ja numbrimärgid.",
+    "RDW_INSPECTION": "RDW kontrollib imporditud autot ja selle identiteeti enne Hollandi registreerimist.",
+    "TECHNICAL_INSPECTION_IMPORT": "Välismaalt toodud auto laiendatud tehnoülevaatus ülevaatuspunktis.",
+    "REG_TEMPORARY_PERMIT": "Ajutine luba ajaks, kuni registreerimistunnistus valmib.",
+    "REG_TEMPORARY_PLATES": "Ajutised numbrimärgid, mis antakse koos ajutise loaga.",
+    "REG_CERTIFICATE": "Registreerimistunnistus ise.",
+    "REG_PLATES": "Alalised numbrimärgid.",
+    "REG_STICKER": "Kontrollkleebis tuuleklaasil.",
+    "RECYCLING_FEE": "Ühekordne tasu auto eest, mille tõi riiki isik, kellel pole ringlussevõtuvõrgustikku.",
+    "COC_CERTIFICATE": "Vajalik kinnitamiseks ja registreerimiseks, kui autol pole ELi vastavussertifikaati."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Terminal võtab pärast tasuta perioodi tasu iga päeva eest, nt kui dokumendid või transport hilinevad.",
@@ -1312,5 +1329,25 @@
     "bestLabel": "Soodsaim sadam:",
     "bestSelected": "valitud",
     "bestChoose": "Vali – säästad {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Mida pead tegema – {{country}}",
+    "noRegTaxName": "Registreerimismaks",
+    "tax": {
+      "EXCISE": "Aktsiis {{rate}}% tolliväärtusest koos tollimaksuga. Esita AKC-U/S deklaratsioon ja maksa maksuametis 14 päeva jooksul pärast auto toomist – enne registreerimist.",
+      "NONE": "Registreerimisriik ({{country}}): ühekordset maksu registreerimisel ei ole – ainult allolevad ametlikud tasud.",
+      "ESTIMATED": "Hindame seda CO₂ ({{co2}} g/km), võimsuse ({{kw}} kW), auto vanuse ja väärtuse järgi selle aasta tabeli alusel. Viimane sõna on maksuametil – kui tead nende summat, sisesta see.",
+      "OFFICIAL": "See maks sõltub liiga paljudest üksikasjadest, et seda ausalt hinnata. Arvuta see ametlikus kalkulaatoris ja sisesta summa – lisame selle arvutusse."
+    },
+    "taxAmount": "Registreerimismaks",
+    "taxOwnHint": "Jäta meie hinnang või sisesta maksuameti summa.",
+    "taxTypeHint": "Summa ametlikust kalkulaatorist. Tühi = ei arvestata.",
+    "officialCalculator": "Ametlik kalkulaator",
+    "amountInReport": "summa aruandes",
+    "registerTitle": "Registreeri auto – {{authority}}",
+    "registerText": "Koos ülevaatuse ({{inspection}}), maksu tasumise tõendi, tollidokumentide ja omandidokumendiga (title).",
+    "deadline": "Tähtaeg: {{days}} päeva.",
+    "canTitle": "Mida saad teha",
+    "canLead": "Seadus seda ei nõua, kuid peaaegu iga import vajab midagi sellest. Soovitatud kirjed on märgitud – eemalda märge sellelt, mida teed ise."
   }
 }

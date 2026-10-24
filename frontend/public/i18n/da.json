@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Punktafgift",
     "FORKLIFT_LOADING": "Lastning med gaffeltruck",
     "IMPORT_VAT": "Importmoms",
-    "INDIVIDUAL_APPROVAL": "Individuel godkendelse (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Individuel godkendelse / importsyn",
     "INLAND_TRANSPORT": "Landtransport til havnen",
     "INTRA_EU_ACQUISITION_VAT": "Moms af EU-erhvervelse (omvendt betalingspligt, fradragsberettiget)",
     "INTRA_EU_TRANSPORT": "Autotransporter fra havn til destination",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transportskade – selvrisiko på forsikringen",
     "RISK_HIDDEN_DAMAGE": "Skjulte skader, der ikke kunne ses på auktionen",
     "RISK_TITLE_DELAY": "Forsinket title (ekstra oplagring)",
-    "RISK_EXPORT_DOCS_DELAY": "Forsinkede eksportdokumenter"
+    "RISK_EXPORT_DOCS_DELAY": "Forsinkede eksportdokumenter",
+    "REGISTRATION_TAX": "Registreringsafgift",
+    "COC_CERTIFICATE": "Producentens datablad / CoC"
   },
   "doc": {
     "billOfLading": "Konnossement (Bill of Lading)",
@@ -388,7 +390,11 @@
     "distanceRouted": "Køreruten fra {{port}} til din adresse.",
     "distanceEstimated": "Overslag fra {{port}} til din adresse (luftlinje × 1,25).",
     "distanceTypical": "Typisk afstand fra {{port}} – angiv adressen ovenfor for et præcist tal.",
-    "tariffShort": "Markedspris: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} for lastning, min. {{minimum}} {{cur}}."
+    "tariffShort": "Markedspris: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} for lastning, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Fra CoC'en eller rudemærkatet. De fleste registreringsafgifter i EU bygger på den.",
+    "powerKw": "Motoreffekt",
+    "powerKwHint": "I kW (1 hk ≈ 0,74 kW). Bruges i Belgien, Italien og Frankrig."
   },
   "layout": {
     "topbar": "Uafhængig beregner af omkostninger ved import af biler fra USA, Canada, Japan, UAE og Storbritannien til 27 EU-lande",
@@ -902,7 +908,18 @@
     "SERVICE_INSPECTION": "Olie, filtre, væsker, bremser efter en lang rejse",
     "GEOMETRY_ALIGNMENT": "Anbefales efter reparationer af undervognen",
     "DETAILING": "Vask, indvendig rengøring, lakpolering",
-    "EXPERT_VALUATION": "Nyttig til kaskoforsikring og gensalg"
+    "EXPERT_VALUATION": "Nyttig til kaskoforsikring og gensalg",
+    "INDIVIDUAL_APPROVAL": "En bil bygget til et marked uden for EU har ingen EU-typegodkendelse – en godkendt synsvirksomhed kontrollerer den efter EU-reglerne ({{inspection}}).",
+    "REGISTRATION_FEE": "Officielle gebyrer – {{authority}}: registreringsattest og nummerplader.",
+    "RDW_INSPECTION": "RDW kontrollerer den importerede bil og dens identitet, før den får en hollandsk registrering.",
+    "TECHNICAL_INSPECTION_IMPORT": "Udvidet syn af en bil hentet fra udlandet, hos en synsvirksomhed.",
+    "REG_TEMPORARY_PERMIT": "Midlertidig tilladelse, indtil registreringsattesten er klar.",
+    "REG_TEMPORARY_PLATES": "Midlertidige plader, der udleveres med den midlertidige tilladelse.",
+    "REG_CERTIFICATE": "Selve registreringsattesten.",
+    "REG_PLATES": "Permanente nummerplader.",
+    "REG_STICKER": "Kontrolmærkat på forruden.",
+    "RECYCLING_FEE": "Engangsgebyr for en bil, der er bragt ind af en person uden eget genanvendelsesnetværk.",
+    "COC_CERTIFICATE": "Nødvendigt til godkendelse og registrering, når bilen ikke har et EU-overensstemmelsescertifikat."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Terminalen opkræver betaling pr. dag efter den gratis periode, f.eks. når dokumenter eller transport er forsinket.",
@@ -1312,5 +1329,25 @@
     "bestLabel": "Mest fordelagtige havn:",
     "bestSelected": "valgt",
     "bestChoose": "Vælg – spar {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Det skal du gøre – {{country}}",
+    "noRegTaxName": "Registreringsafgift",
+    "tax": {
+      "EXCISE": "Punktafgift på {{rate}} % af toldværdien plus told. Indsend AKC-U/S-angivelsen, og betal på skattekontoret senest 14 dage efter, at bilen er bragt ind – før registreringen.",
+      "NONE": "Registreringsland ({{country}}): ingen engangsafgift ved registrering – kun de officielle gebyrer nedenfor.",
+      "ESTIMATED": "Vi anslår den ud fra CO₂ ({{co2}} g/km), effekt ({{kw}} kW), bilens alder og værdi efter årets skala. Skattemyndigheden har det sidste ord – kender du deres beløb, så indtast det.",
+      "OFFICIAL": "Denne afgift afhænger af for mange detaljer til et retvisende skøn. Beregn den i den officielle beregner, og indtast beløbet – vi lægger det til beregningen."
+    },
+    "taxAmount": "Registreringsafgift",
+    "taxOwnHint": "Behold vores skøn, eller indtast beløbet fra skattemyndigheden.",
+    "taxTypeHint": "Beløb fra den officielle beregner. Tomt = ikke medregnet.",
+    "officialCalculator": "Officiel beregner",
+    "amountInReport": "beløb i rapporten",
+    "registerTitle": "Registrér bilen – {{authority}}",
+    "registerText": "Med synet ({{inspection}}), bevis for betalt afgift, tolddokumenterne og ejerbeviset (title).",
+    "deadline": "Frist: {{days}} dage.",
+    "canTitle": "Det kan du gøre",
+    "canLead": "Ikke lovpligtigt, men næsten hver import har brug for noget af det. Anbefalede poster er markeret – fjern markeringen ved det, du klarer selv."
   }
 }

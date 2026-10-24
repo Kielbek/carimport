@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Trošarina",
     "FORKLIFT_LOADING": "Nakladanje z viličarjem",
     "IMPORT_VAT": "Uvozni DDV",
-    "INDIVIDUAL_APPROVAL": "Posamična odobritev (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Posamična odobritev / uvozni pregled",
     "INLAND_TRANSPORT": "Kopenski prevoz do pristanišča",
     "INTRA_EU_ACQUISITION_VAT": "DDV od pridobitve znotraj EU (obrnjena davčna obveznost, odbitni)",
     "INTRA_EU_TRANSPORT": "Avtotransporter od pristanišča do cilja",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Poškodba med prevozom – soudeležba pri zavarovanju",
     "RISK_HIDDEN_DAMAGE": "Skrite poškodbe, ki na dražbi niso vidne",
     "RISK_TITLE_DELAY": "Zamuda lastniške listine (dodatno skladiščenje)",
-    "RISK_EXPORT_DOCS_DELAY": "Zamuda izvoznih dokumentov"
+    "RISK_EXPORT_DOCS_DELAY": "Zamuda izvoznih dokumentov",
+    "REGISTRATION_TAX": "Registracijski davek",
+    "COC_CERTIFICATE": "Podatkovni list proizvajalca / CoC"
   },
   "doc": {
     "billOfLading": "Pomorski tovorni list (Bill of Lading)",
@@ -388,7 +390,11 @@
     "distanceRouted": "Cestna pot od {{port}} do vašega naslova.",
     "distanceEstimated": "Ocena od {{port}} do vašega naslova (zračna razdalja × 1,25).",
     "distanceTypical": "Tipična razdalja od {{port}} – za natančen podatek zgoraj vnesite naslov.",
-    "tariffShort": "Trg: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} nakladanje, min. {{minimum}} {{cur}}."
+    "tariffShort": "Trg: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} nakladanje, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Iz dokumenta CoC ali nalepke na steklu. Od njih je odvisna večina registracijskih davkov v EU.",
+    "powerKw": "Moč motorja",
+    "powerKwHint": "V kW (1 KM ≈ 0,74 kW). Upošteva se v Belgiji, Italiji in Franciji."
   },
   "layout": {
     "topbar": "Neodvisni kalkulator stroškov uvoza avtomobilov iz ZDA, Kanade, Japonske, ZAE in Združenega kraljestva v 27 držav EU",
@@ -902,7 +908,18 @@
     "SERVICE_INSPECTION": "Olje, filtri, tekočine, zavore po dolgi poti",
     "GEOMETRY_ALIGNMENT": "Priporočljivo po popravilu podvozja",
     "DETAILING": "Pranje, čiščenje notranjosti, poliranje laka",
-    "EXPERT_VALUATION": "Koristno za kasko zavarovanje in prodajo"
+    "EXPERT_VALUATION": "Koristno za kasko zavarovanje in prodajo",
+    "INDIVIDUAL_APPROVAL": "Avto, izdelan za trg zunaj EU, nima EU homologacije tipa – pooblaščena postaja ga preveri po pravilih EU ({{inspection}}).",
+    "REGISTRATION_FEE": "Uradne pristojbine – {{authority}}: prometno dovoljenje in registrske tablice.",
+    "RDW_INSPECTION": "RDW preveri uvoženi avto in njegovo identiteto, preden dobi nizozemsko registracijo.",
+    "TECHNICAL_INSPECTION_IMPORT": "Razširjeni tehnični pregled avta, pripeljanega iz tujine, na postaji za tehnične preglede.",
+    "REG_TEMPORARY_PERMIT": "Začasno dovoljenje za čas, dokler prometno dovoljenje ni pripravljeno.",
+    "REG_TEMPORARY_PLATES": "Začasne tablice, izdane skupaj z začasnim dovoljenjem.",
+    "REG_CERTIFICATE": "Samo prometno dovoljenje.",
+    "REG_PLATES": "Trajne registrske tablice.",
+    "REG_STICKER": "Kontrolna nalepka na vetrobranskem steklu.",
+    "RECYCLING_FEE": "Enkratna pristojbina za avto, ki ga je pripeljal nekdo brez mreže za recikliranje.",
+    "COC_CERTIFICATE": "Potreben za odobritev in registracijo, če avto nima EU certifikata o skladnosti."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Terminal po izteku brezplačnega obdobja zaračunava ležarino na dan, npr. ko zamujajo dokumenti ali prevoz.",
@@ -1312,5 +1329,25 @@
     "bestLabel": "Najugodnejše pristanišče:",
     "bestSelected": "izbrano",
     "bestChoose": "Izberite – prihranite {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Kaj morate storiti – {{country}}",
+    "noRegTaxName": "Registracijski davek",
+    "tax": {
+      "EXCISE": "Trošarina {{rate}} % od carinske vrednosti skupaj s carino. Oddajte napoved AKC-U/S in plačajte na davčnem uradu v 14 dneh od vnosa avta – pred registracijo.",
+      "NONE": "Država registracije ({{country}}): ob registraciji ni enkratnega davka – le uradne pristojbine spodaj.",
+      "ESTIMATED": "Ocenimo ga iz CO₂ ({{co2}} g/km), moči ({{kw}} kW), starosti in vrednosti avta po letošnji lestvici. Zadnjo besedo ima davčni urad – če poznate njegov znesek, ga vnesite.",
+      "OFFICIAL": "Ta davek je odvisen od preveč podrobnosti za pošteno oceno. Izračunajte ga v uradnem kalkulatorju in vnesite znesek – prišteli ga bomo k izračunu."
+    },
+    "taxAmount": "Registracijski davek",
+    "taxOwnHint": "Pustite našo oceno ali vnesite znesek davčnega urada.",
+    "taxTypeHint": "Znesek iz uradnega kalkulatorja. Prazno = ni vključeno.",
+    "officialCalculator": "Uradni kalkulator",
+    "amountInReport": "znesek v poročilu",
+    "registerTitle": "Registrirajte avto – {{authority}}",
+    "registerText": "S pregledom ({{inspection}}), potrdilom o plačanem davku, carinskimi dokumenti in lastniško listino (title).",
+    "deadline": "Rok: {{days}} dni.",
+    "canTitle": "Kaj lahko storite",
+    "canLead": "Zakon tega ne zahteva, a skoraj vsak uvoz potrebuje kaj od tega. Priporočene postavke so označene – odznačite, kar boste naredili sami."
   }
 }

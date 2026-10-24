@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Droit d’accise",
     "FORKLIFT_LOADING": "Chargement par chariot élévateur",
     "IMPORT_VAT": "TVA à l’importation",
-    "INDIVIDUAL_APPROVAL": "Réception individuelle (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Réception individuelle / contrôle à l’importation",
     "INLAND_TRANSPORT": "Transport terrestre jusqu’au port",
     "INTRA_EU_ACQUISITION_VAT": "TVA sur acquisition intracommunautaire (autoliquidation, déductible)",
     "INTRA_EU_TRANSPORT": "Camion porte-voitures du port à la destination",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Dommages de transport – franchise d’assurance",
     "RISK_HIDDEN_DAMAGE": "Dommages cachés non visibles lors de l’enchère",
     "RISK_TITLE_DELAY": "Retard du titre (stockage supplémentaire)",
-    "RISK_EXPORT_DOCS_DELAY": "Retard des documents d’exportation"
+    "RISK_EXPORT_DOCS_DELAY": "Retard des documents d’exportation",
+    "REGISTRATION_TAX": "Taxe d’immatriculation",
+    "COC_CERTIFICATE": "Fiche technique du constructeur / CoC"
   },
   "doc": {
     "billOfLading": "Connaissement (Bill of Lading)",
@@ -388,7 +390,11 @@
     "distanceRouted": "Itinéraire routier de {{port}} à votre adresse.",
     "distanceEstimated": "Estimation de {{port}} à votre adresse (vol d’oiseau × 1,25).",
     "distanceTypical": "Distance typique depuis {{port}} – saisissez l’adresse ci-dessus pour un chiffre exact.",
-    "tariffShort": "Marché : {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} de chargement, min. {{minimum}} {{cur}}."
+    "tariffShort": "Marché : {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} de chargement, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Sur le CoC ou l’étiquette collée sur la vitre. La plupart des taxes d’immatriculation de l’UE en dépendent.",
+    "powerKw": "Puissance du moteur",
+    "powerKwHint": "En kW (1 ch ≈ 0,74 kW). Prise en compte en Belgique, en Italie et en France."
   },
   "layout": {
     "topbar": "Calculateur indépendant des coûts d’importation de voitures des États-Unis, du Canada, du Japon, des EAU et du Royaume-Uni vers les 27 pays de l’UE",
@@ -902,7 +908,18 @@
     "SERVICE_INSPECTION": "Huile, filtres, fluides, freins après un long voyage",
     "GEOMETRY_ALIGNMENT": "Recommandé après des réparations de suspension",
     "DETAILING": "Lavage, nettoyage intérieur, correction de peinture",
-    "EXPERT_VALUATION": "Utile pour l’assurance tous risques et la revente"
+    "EXPERT_VALUATION": "Utile pour l’assurance tous risques et la revente",
+    "INDIVIDUAL_APPROVAL": "Une voiture conçue pour un marché hors UE n’a pas de réception par type européenne – un centre agréé la contrôle selon les règles de l’UE ({{inspection}}).",
+    "REGISTRATION_FEE": "Frais officiels – {{authority}} : certificat d’immatriculation et plaques.",
+    "RDW_INSPECTION": "Le RDW contrôle la voiture importée et son identité avant de lui attribuer une immatriculation néerlandaise.",
+    "TECHNICAL_INSPECTION_IMPORT": "Contrôle technique approfondi d’une voiture importée de l’étranger, dans un centre de contrôle.",
+    "REG_TEMPORARY_PERMIT": "Certificat provisoire valable jusqu’à ce que le certificat d’immatriculation soit prêt.",
+    "REG_TEMPORARY_PLATES": "Plaques provisoires remises avec le certificat provisoire.",
+    "REG_CERTIFICATE": "Le certificat d’immatriculation lui-même.",
+    "REG_PLATES": "Plaques d’immatriculation définitives.",
+    "REG_STICKER": "Vignette de contrôle sur le pare-brise.",
+    "RECYCLING_FEE": "Taxe unique pour une voiture importée par une personne sans réseau de recyclage.",
+    "COC_CERTIFICATE": "Nécessaire pour la réception et l’immatriculation si la voiture n’a pas de certificat de conformité européen."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Le terminal facture chaque jour au-delà de la période gratuite, p. ex. en cas de retard des documents ou du transport.",
@@ -1312,5 +1329,25 @@
     "bestLabel": "Port le plus avantageux :",
     "bestSelected": "sélectionné",
     "bestChoose": "Choisir – économisez {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Ce que vous devez faire – {{country}}",
+    "noRegTaxName": "Taxe d’immatriculation",
+    "tax": {
+      "EXCISE": "Accise de {{rate}} % sur la valeur en douane, droits compris. Déposez la déclaration AKC-U/S et payez au centre des impôts dans les 14 jours suivant l’entrée de la voiture – avant l’immatriculation.",
+      "NONE": "Pays d’immatriculation ({{country}}) : aucune taxe unique à l’immatriculation – seulement les frais officiels ci-dessous.",
+      "ESTIMATED": "Nous l’estimons à partir du CO₂ ({{co2}} g/km), de la puissance ({{kw}} kW), de l’âge et de la valeur de la voiture, selon le barème de cette année. L’administration fiscale a le dernier mot – si vous connaissez son montant, saisissez-le.",
+      "OFFICIAL": "Cette taxe dépend de trop de détails pour être estimée correctement. Calculez-la avec le simulateur officiel et saisissez le montant – nous l’ajouterons au calcul."
+    },
+    "taxAmount": "Taxe d’immatriculation",
+    "taxOwnHint": "Gardez notre estimation ou saisissez le montant indiqué par l’administration fiscale.",
+    "taxTypeHint": "Montant issu du simulateur officiel. Vide = non inclus.",
+    "officialCalculator": "Simulateur officiel",
+    "amountInReport": "montant dans le rapport",
+    "registerTitle": "Immatriculer la voiture – {{authority}}",
+    "registerText": "Avec le contrôle ({{inspection}}), la preuve du paiement de la taxe, les documents douaniers et le titre de propriété (title).",
+    "deadline": "Délai : {{days}} jours.",
+    "canTitle": "Ce que vous pouvez faire",
+    "canLead": "Rien n’est obligatoire, mais presque chaque import en a besoin en partie. Les postes recommandés sont cochés – décochez ce que vous faites vous-même."
   }
 }

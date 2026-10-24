@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Verbrauchsteuer",
     "FORKLIFT_LOADING": "Verladung per Gabelstapler",
     "IMPORT_VAT": "Einfuhrumsatzsteuer",
-    "INDIVIDUAL_APPROVAL": "Einzelabnahme (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Einzelabnahme / Importprüfung",
     "INLAND_TRANSPORT": "Landtransport zum Hafen",
     "INTRA_EU_ACQUISITION_VAT": "Erwerbsteuer (Reverse Charge, abziehbar)",
     "INTRA_EU_TRANSPORT": "Autotransport vom Hafen ins Zielland",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transportschaden – Selbstbeteiligung",
     "RISK_HIDDEN_DAMAGE": "Versteckte Mängel, die auf der Auktion nicht sichtbar waren",
     "RISK_TITLE_DELAY": "Verzögerung des Title (zusätzliche Lagerung)",
-    "RISK_EXPORT_DOCS_DELAY": "Verzögerung der Exportdokumente"
+    "RISK_EXPORT_DOCS_DELAY": "Verzögerung der Exportdokumente",
+    "REGISTRATION_TAX": "Zulassungssteuer",
+    "COC_CERTIFICATE": "Herstellerdatenblatt / CoC"
   },
   "doc": {
     "billOfLading": "Konnossement (Bill of Lading)",
@@ -388,7 +390,11 @@
     "distanceRouted": "Straßenroute von {{port}} zu Ihrer Adresse.",
     "distanceEstimated": "Schätzung von {{port}} zu Ihrer Adresse (Luftlinie × 1,25).",
     "distanceTypical": "Typische Entfernung ab {{port}} – Adresse oben eingeben für einen genauen Wert.",
-    "tariffShort": "Markt: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} Verladung, min. {{minimum}} {{cur}}."
+    "tariffShort": "Markt: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} Verladung, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Aus dem CoC oder dem Fensteraufkleber. Die meisten Zulassungssteuern in der EU richten sich danach.",
+    "powerKw": "Motorleistung",
+    "powerKwHint": "In kW (1 PS ≈ 0,74 kW). Relevant in Belgien, Italien und Frankreich."
   },
   "layout": {
     "topbar": "Unabhängiger Rechner für Importkosten von Autos aus den USA, Kanada, Japan, den VAE und UK in 27 EU-Länder",
@@ -902,7 +908,18 @@
     "SERVICE_INSPECTION": "Öl, Filter, Flüssigkeiten, Bremsen nach langem Transport",
     "GEOMETRY_ALIGNMENT": "Empfohlen nach Fahrwerksreparatur",
     "DETAILING": "Wäsche, Innenreinigung, Lackkorrektur",
-    "EXPERT_VALUATION": "Nützlich für Vollkasko und Verkauf"
+    "EXPERT_VALUATION": "Nützlich für Vollkasko und Verkauf",
+    "INDIVIDUAL_APPROVAL": "Ein Auto für einen Markt außerhalb der EU hat keine EU-Typgenehmigung – eine anerkannte Prüfstelle prüft es nach EU-Vorschriften ({{inspection}}).",
+    "REGISTRATION_FEE": "Amtliche Gebühren – {{authority}}: Zulassungsbescheinigung und Kennzeichen.",
+    "RDW_INSPECTION": "Die RDW prüft das importierte Auto und seine Identität, bevor es ein niederländisches Kennzeichen erhält.",
+    "TECHNICAL_INSPECTION_IMPORT": "Erweiterte technische Prüfung eines aus dem Ausland eingeführten Autos bei einer Prüfstelle.",
+    "REG_TEMPORARY_PERMIT": "Vorläufige Zulassung für die Zeit, bis die Zulassungsbescheinigung fertig ist.",
+    "REG_TEMPORARY_PLATES": "Vorläufige Kennzeichen, die mit der vorläufigen Zulassung ausgegeben werden.",
+    "REG_CERTIFICATE": "Die Zulassungsbescheinigung selbst.",
+    "REG_PLATES": "Dauerhafte Kennzeichenschilder.",
+    "REG_STICKER": "Prüfplakette an der Windschutzscheibe.",
+    "RECYCLING_FEE": "Einmalige Gebühr für ein Auto, das jemand ohne eigenes Rücknahmesystem einführt.",
+    "COC_CERTIFICATE": "Für Genehmigung und Zulassung nötig, wenn das Auto keine EU-Übereinstimmungsbescheinigung hat."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Das Terminal berechnet jeden Tag nach der freien Zeit, z. B. bei verspäteten Papieren.",
@@ -1312,5 +1329,25 @@
     "bestLabel": "Günstigster Hafen:",
     "bestSelected": "gewählt",
     "bestChoose": "Wählen – {{amount}} {{cur}} sparen"
+  },
+  "after": {
+    "mustTitle": "Was Sie tun müssen – {{country}}",
+    "noRegTaxName": "Zulassungssteuer",
+    "tax": {
+      "EXCISE": "Verbrauchsteuer von {{rate}} % auf den Zollwert zuzüglich Zoll. Reichen Sie die Erklärung AKC-U/S ein und zahlen Sie beim Finanzamt innerhalb von 14 Tagen nach der Verbringung des Autos – vor der Zulassung.",
+      "NONE": "Das Zulassungsland ({{country}}) erhebt bei der Zulassung keine einmalige Steuer – nur die amtlichen Gebühren unten.",
+      "ESTIMATED": "Wir schätzen sie anhand von CO₂ ({{co2}} g/km), Leistung ({{kw}} kW), Alter und Wert des Autos nach dem diesjährigen Tarif. Maßgeblich ist das Finanzamt – kennen Sie dessen Betrag, tragen Sie ihn ein.",
+      "OFFICIAL": "Diese Steuer hängt von zu vielen Details ab, um sie seriös zu schätzen. Berechnen Sie sie im offiziellen Rechner und tragen Sie den Betrag ein – wir rechnen ihn mit ein."
+    },
+    "taxAmount": "Zulassungssteuer",
+    "taxOwnHint": "Übernehmen Sie unsere Schätzung oder tragen Sie den Betrag vom Finanzamt ein.",
+    "taxTypeHint": "Betrag aus dem offiziellen Rechner. Leer = nicht berücksichtigt.",
+    "officialCalculator": "Offizieller Rechner",
+    "amountInReport": "Betrag im Bericht",
+    "registerTitle": "Auto zulassen – {{authority}}",
+    "registerText": "Mit der Prüfung ({{inspection}}), dem Steuernachweis, den Zollpapieren und dem Eigentumsnachweis (Title).",
+    "deadline": "Frist: {{days}} Tage.",
+    "canTitle": "Was Sie tun können",
+    "canLead": "Gesetzlich nicht vorgeschrieben, aber fast jeder Import braucht etwas davon. Empfohlene Posten sind angehakt – entfernen Sie den Haken bei allem, was Sie selbst erledigen."
   }
 }

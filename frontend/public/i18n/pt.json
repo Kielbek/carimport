@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Imposto especial de consumo",
     "FORKLIFT_LOADING": "Carregamento com empilhador",
     "IMPORT_VAT": "IVA na importação",
-    "INDIVIDUAL_APPROVAL": "Homologação individual (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Homologação individual / inspeção de importação",
     "INLAND_TRANSPORT": "Transporte terrestre até ao porto",
     "INTRA_EU_ACQUISITION_VAT": "IVA na aquisição intracomunitária (autoliquidação, dedutível)",
     "INTRA_EU_TRANSPORT": "Camião porta-automóveis do porto ao destino",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Danos no transporte – franquia do seguro",
     "RISK_HIDDEN_DAMAGE": "Danos ocultos não visíveis no leilão",
     "RISK_TITLE_DELAY": "Atraso do Title (armazenagem adicional)",
-    "RISK_EXPORT_DOCS_DELAY": "Atraso dos documentos de exportação"
+    "RISK_EXPORT_DOCS_DELAY": "Atraso dos documentos de exportação",
+    "REGISTRATION_TAX": "Imposto de registo",
+    "COC_CERTIFICATE": "Ficha técnica do fabricante / CoC"
   },
   "doc": {
     "billOfLading": "Conhecimento de embarque (Bill of Lading)",
@@ -388,7 +390,11 @@
     "distanceRouted": "Percurso rodoviário de {{port}} até à sua morada.",
     "distanceEstimated": "Estimativa de {{port}} até à sua morada (linha reta × 1,25).",
     "distanceTypical": "Distância típica a partir de {{port}} – introduza a morada acima para obter um valor exato.",
-    "tariffShort": "Mercado: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} de carregamento, mín. {{minimum}} {{cur}}."
+    "tariffShort": "Mercado: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} de carregamento, mín. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Do CoC ou do autocolante no vidro. A maioria dos impostos de registo na UE baseia-se nelas.",
+    "powerKw": "Potência do motor",
+    "powerKwHint": "Em kW (1 cv ≈ 0,74 kW). Conta na Bélgica, em Itália e em França."
   },
   "layout": {
     "topbar": "Calculadora independente dos custos de importação de carros dos EUA, Canadá, Japão, EAU e Reino Unido para 27 países da UE",
@@ -902,7 +908,18 @@
     "SERVICE_INSPECTION": "Óleo, filtros, fluidos, travões após uma longa viagem",
     "GEOMETRY_ALIGNMENT": "Recomendado após reparações na suspensão",
     "DETAILING": "Lavagem, limpeza do interior, polimento da pintura",
-    "EXPERT_VALUATION": "Útil para o seguro de danos próprios e a revenda"
+    "EXPERT_VALUATION": "Útil para o seguro de danos próprios e a revenda",
+    "INDIVIDUAL_APPROVAL": "Um carro fabricado para um mercado fora da UE não tem homologação europeia – um centro autorizado verifica-o segundo as regras da UE ({{inspection}}).",
+    "REGISTRATION_FEE": "Taxas oficiais – {{authority}}: certificado de matrícula e chapas.",
+    "RDW_INSPECTION": "O RDW verifica o carro importado e a sua identidade antes de lhe atribuir matrícula neerlandesa.",
+    "TECHNICAL_INSPECTION_IMPORT": "Inspeção técnica alargada de um carro trazido do estrangeiro, num centro de inspeção.",
+    "REG_TEMPORARY_PERMIT": "Licença provisória válida até o certificado de matrícula estar pronto.",
+    "REG_TEMPORARY_PLATES": "Chapas provisórias entregues com a licença provisória.",
+    "REG_CERTIFICATE": "O próprio certificado de matrícula.",
+    "REG_PLATES": "Chapas de matrícula definitivas.",
+    "REG_STICKER": "Selo de controlo no para-brisas.",
+    "RECYCLING_FEE": "Taxa única para um carro introduzido por quem não tem rede de reciclagem.",
+    "COC_CERTIFICATE": "Necessária para a homologação e a matrícula quando o carro não tem certificado de conformidade europeu."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "O terminal cobra por dia após o período gratuito, p. ex. quando os documentos ou o transporte se atrasam.",
@@ -1312,5 +1329,25 @@
     "bestLabel": "Porto mais vantajoso:",
     "bestSelected": "selecionado",
     "bestChoose": "Escolher – poupe {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "O que tem de fazer – {{country}}",
+    "noRegTaxName": "Imposto de registo",
+    "tax": {
+      "EXCISE": "Imposto especial de {{rate}}% sobre o valor aduaneiro acrescido de direitos. Entregue a declaração AKC-U/S e pague nas Finanças no prazo de 14 dias após a entrada do carro – antes da matrícula.",
+      "NONE": "País de matrícula ({{country}}): sem imposto único na matrícula – apenas as taxas oficiais abaixo.",
+      "ESTIMATED": "Estimamo-lo a partir do CO₂ ({{co2}} g/km), da potência ({{kw}} kW), da idade e do valor do carro, com a tabela deste ano. A última palavra é das Finanças – se souber o valor, introduza-o.",
+      "OFFICIAL": "Este imposto depende de demasiados detalhes para uma estimativa fiável. Calcule-o no simulador oficial e introduza o valor – nós somamo-lo ao cálculo."
+    },
+    "taxAmount": "Imposto de registo",
+    "taxOwnHint": "Mantenha a nossa estimativa ou introduza o valor das Finanças.",
+    "taxTypeHint": "Valor do simulador oficial. Vazio = não incluído.",
+    "officialCalculator": "Simulador oficial",
+    "amountInReport": "valor no relatório",
+    "registerTitle": "Matricular o carro – {{authority}}",
+    "registerText": "Com a inspeção ({{inspection}}), o comprovativo de pagamento do imposto, os documentos aduaneiros e o título de propriedade (title).",
+    "deadline": "Prazo: {{days}} dias.",
+    "canTitle": "O que pode fazer",
+    "canLead": "Não é exigido por lei, mas quase todas as importações precisam de algo disto. Os itens recomendados estão assinalados – desmarque o que fizer por conta própria."
   }
 }

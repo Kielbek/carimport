@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Jövedéki adó",
     "FORKLIFT_LOADING": "Targoncás rakodás",
     "IMPORT_VAT": "Import áfa",
-    "INDIVIDUAL_APPROVAL": "Egyedi forgalomba helyezési engedély (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Egyedi forgalomba helyezési engedély / behozatali vizsga",
     "INLAND_TRANSPORT": "Belföldi szállítás a kikötőig",
     "INTRA_EU_ACQUISITION_VAT": "Közösségen belüli beszerzés áfája (fordított adózás, levonható)",
     "INTRA_EU_TRANSPORT": "Autószállító a kikötőtől a célállomásig",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Szállítási kár – biztosítási önrész",
     "RISK_HIDDEN_DAMAGE": "Az aukción nem látható rejtett sérülés",
     "RISK_TITLE_DELAY": "Késik a tulajdoni okmány (többlet tárolás)",
-    "RISK_EXPORT_DOCS_DELAY": "Késnek az exportdokumentumok"
+    "RISK_EXPORT_DOCS_DELAY": "Késnek az exportdokumentumok",
+    "REGISTRATION_TAX": "Regisztrációs adó",
+    "COC_CERTIFICATE": "Gyártói adatlap / CoC"
   },
   "doc": {
     "billOfLading": "Hajóraklevél (Bill of Lading)",
@@ -388,7 +390,11 @@
     "distanceRouted": "Közúti útvonal a címéig, indulás: {{port}}.",
     "distanceEstimated": "Becslés a címéig, indulás: {{port}} (légvonal × 1,25).",
     "distanceTypical": "Jellemző távolság, kikötő: {{port}} – a pontos értékhez adja meg fent a címet.",
-    "tariffShort": "Piaci ár: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} rakodás, min. {{minimum}} {{cur}}."
+    "tariffShort": "Piaci ár: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} rakodás, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "A CoC-ből vagy az ablakmatricáról. Az EU-ban a legtöbb regisztrációs adó ezen alapul.",
+    "powerKw": "Motorteljesítmény",
+    "powerKwHint": "kW-ban (1 LE ≈ 0,74 kW). Belgiumban, Olaszországban és Franciaországban számít."
   },
   "layout": {
     "topbar": "Független kalkulátor az USA-ból, Kanadából, Japánból, az Egyesült Arab Emírségekből és az Egyesült Királyságból 27 uniós országba történő autóimport költségeihez",
@@ -902,7 +908,18 @@
     "SERVICE_INSPECTION": "Olaj, szűrők, folyadékok, fékek a hosszú út után",
     "GEOMETRY_ALIGNMENT": "Futóműjavítás után ajánlott",
     "DETAILING": "Mosás, belső takarítás, fényezés-polírozás",
-    "EXPERT_VALUATION": "Hasznos a casco biztosításhoz és az eladáshoz"
+    "EXPERT_VALUATION": "Hasznos a casco biztosításhoz és az eladáshoz",
+    "INDIVIDUAL_APPROVAL": "Az EU-n kívüli piacra gyártott autónak nincs uniós típusjóváhagyása – egy kijelölt állomás az uniós szabályok szerint ellenőrzi ({{inspection}}).",
+    "REGISTRATION_FEE": "Hatósági díjak – {{authority}}: forgalmi engedély és rendszámtáblák.",
+    "RDW_INSPECTION": "Az RDW ellenőrzi a behozott autót és azonosságát, mielőtt holland rendszámot kap.",
+    "TECHNICAL_INSPECTION_IMPORT": "Külföldről behozott autó bővített műszaki vizsgája vizsgaállomáson.",
+    "REG_TEMPORARY_PERMIT": "Ideiglenes engedély arra az időre, amíg elkészül a forgalmi engedély.",
+    "REG_TEMPORARY_PLATES": "Az ideiglenes engedéllyel együtt kiadott ideiglenes rendszám.",
+    "REG_CERTIFICATE": "Maga a forgalmi engedély.",
+    "REG_PLATES": "Végleges rendszámtáblák.",
+    "REG_STICKER": "Ellenőrző matrica a szélvédőn.",
+    "RECYCLING_FEE": "Egyszeri díj olyan autóért, amelyet újrahasznosítási hálózattal nem rendelkező személy hozott be.",
+    "COC_CERTIFICATE": "Az engedélyezéshez és a forgalomba helyezéshez kell, ha az autónak nincs uniós megfelelőségi nyilatkozata."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "A terminál a díjmentes időszak után napi díjat számít fel, pl. ha a dokumentumok vagy a szállítás késnek.",
@@ -1312,5 +1329,25 @@
     "bestLabel": "Legkedvezőbb kikötő:",
     "bestSelected": "kiválasztva",
     "bestChoose": "Kiválasztás – {{amount}} {{cur}} megtakarítás"
+  },
+  "after": {
+    "mustTitle": "Kötelező teendők – {{country}}",
+    "noRegTaxName": "Regisztrációs adó",
+    "tax": {
+      "EXCISE": "{{rate}}% jövedéki adó a vámértékre, vámmal együtt. Nyújtsa be az AKC-U/S bevallást, és fizessen az adóhivatalban az autó behozatalától számított 14 napon belül – a forgalomba helyezés előtt.",
+      "NONE": "Forgalomba helyezés országa ({{country}}): nincs egyszeri adó a forgalomba helyezéskor – csak az alábbi hatósági díjak.",
+      "ESTIMATED": "A CO₂-kibocsátásból ({{co2}} g/km), a teljesítményből ({{kw}} kW), az autó korából és értékéből becsüljük az idei táblázat szerint. A végső szó az adóhivatalé – ha ismeri az általuk megadott összeget, írja be.",
+      "OFFICIAL": "Ez az adó túl sok részlettől függ ahhoz, hogy tisztességesen megbecsüljük. Számolja ki a hivatalos kalkulátorban, és írja be az összeget – hozzáadjuk a számításhoz."
+    },
+    "taxAmount": "Regisztrációs adó",
+    "taxOwnHint": "Hagyja meg a becslésünket, vagy írja be az adóhivataltól kapott összeget.",
+    "taxTypeHint": "Összeg a hivatalos kalkulátorból. Üres = nincs beszámítva.",
+    "officialCalculator": "Hivatalos kalkulátor",
+    "amountInReport": "összeg a jelentésben",
+    "registerTitle": "Forgalomba helyezés – {{authority}}",
+    "registerText": "A vizsgával ({{inspection}}), az adófizetés igazolásával, a vámokmányokkal és a tulajdonjogot igazoló okirattal (title).",
+    "deadline": "Határidő: {{days}} nap.",
+    "canTitle": "Választható teendők",
+    "canLead": "Jogszabály nem írja elő, de szinte minden behozatalhoz kell valami ezekből. Az ajánlott tételek be vannak jelölve – vegye ki a jelölést abból, amit saját maga intéz."
   }
 }

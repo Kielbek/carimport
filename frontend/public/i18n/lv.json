@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Akcīzes nodoklis",
     "FORKLIFT_LOADING": "Iekraušana ar iekrāvēju",
     "IMPORT_VAT": "Importa PVN",
-    "INDIVIDUAL_APPROVAL": "Individuālā apstiprināšana (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Individuālā apstiprināšana / importa apskate",
     "INLAND_TRANSPORT": "Iekšzemes transports līdz ostai",
     "INTRA_EU_ACQUISITION_VAT": "ES iekšienes iegādes PVN (apgrieztā maksāšana, atskaitāms)",
     "INTRA_EU_TRANSPORT": "Autovedējs no ostas līdz galamērķim",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Pārvadāšanas bojājumi – apdrošināšanas pašrisks",
     "RISK_HIDDEN_DAMAGE": "Slēpti bojājumi, kas izsolē nebija redzami",
     "RISK_TITLE_DELAY": "Īpašumtiesību dokumenta (title) kavēšanās (papildu glabāšana)",
-    "RISK_EXPORT_DOCS_DELAY": "Eksporta dokumentu kavēšanās"
+    "RISK_EXPORT_DOCS_DELAY": "Eksporta dokumentu kavēšanās",
+    "REGISTRATION_TAX": "Reģistrācijas nodoklis",
+    "COC_CERTIFICATE": "Ražotāja datu lapa / CoC"
   },
   "doc": {
     "billOfLading": "Konosaments (Bill of Lading)",
@@ -388,7 +390,11 @@
     "distanceRouted": "Autoceļa maršruts no ostas {{port}} līdz jūsu adresei.",
     "distanceEstimated": "Aprēķins no ostas {{port}} līdz jūsu adresei (taisnā līnijā × 1,25).",
     "distanceTypical": "Tipisks attālums no ostas {{port}} – precīzam skaitlim ievadiet adresi augstāk.",
-    "tariffShort": "Tirgus: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} iekraušana, min. {{minimum}} {{cur}}."
+    "tariffShort": "Tirgus: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} iekraušana, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "No CoC vai loga uzlīmes. Lielākā daļa ES reģistrācijas nodokļu balstās uz tiem.",
+    "powerKw": "Dzinēja jauda",
+    "powerKwHint": "kW (1 ZS ≈ 0,74 kW). Izmanto Beļģijā, Itālijā un Francijā."
   },
   "layout": {
     "topbar": "Neatkarīgs kalkulators automašīnu importa izmaksām no ASV, Kanādas, Japānas, AAE un Apvienotās Karalistes uz 27 ES valstīm",
@@ -902,7 +908,18 @@
     "SERVICE_INSPECTION": "Eļļa, filtri, šķidrumi, bremzes pēc ilga ceļa",
     "GEOMETRY_ALIGNMENT": "Ieteicams pēc piekares remonta",
     "DETAILING": "Mazgāšana, salona tīrīšana, krāsojuma pulēšana",
-    "EXPERT_VALUATION": "Noderīgs KASKO apdrošināšanai un pārdošanai"
+    "EXPERT_VALUATION": "Noderīgs KASKO apdrošināšanai un pārdošanai",
+    "INDIVIDUAL_APPROVAL": "Auto, kas ražots tirgum ārpus ES, nav ES tipa apstiprinājuma – pilnvarota stacija to pārbauda atbilstoši ES noteikumiem ({{inspection}}).",
+    "REGISTRATION_FEE": "Oficiālās maksas – {{authority}}: reģistrācijas apliecība un numurzīmes.",
+    "RDW_INSPECTION": "RDW pārbauda importēto auto un tā identitāti, pirms tas saņem Nīderlandes reģistrāciju.",
+    "TECHNICAL_INSPECTION_IMPORT": "Paplašināta tehniskā apskate no ārzemēm ievestam auto, apskates stacijā.",
+    "REG_TEMPORARY_PERMIT": "Pagaidu atļauja laikam, līdz reģistrācijas apliecība ir gatava.",
+    "REG_TEMPORARY_PLATES": "Pagaidu numurzīmes, ko izsniedz kopā ar pagaidu atļauju.",
+    "REG_CERTIFICATE": "Pati reģistrācijas apliecība.",
+    "REG_PLATES": "Pastāvīgās numurzīmes.",
+    "REG_STICKER": "Kontroles uzlīme uz vējstikla.",
+    "RECYCLING_FEE": "Vienreizēja maksa par auto, ko ievedusi persona bez pārstrādes tīkla.",
+    "COC_CERTIFICATE": "Nepieciešama apstiprināšanai un reģistrācijai, ja auto nav ES atbilstības sertifikāta."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Termināls pēc bezmaksas perioda iekasē maksu par katru dienu, piem., ja kavējas dokumenti vai transports.",
@@ -1312,5 +1329,25 @@
     "bestLabel": "Izdevīgākā osta:",
     "bestSelected": "izvēlēta",
     "bestChoose": "Izvēlieties – ietaupiet {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Kas jums jādara – {{country}}",
+    "noRegTaxName": "Reģistrācijas nodoklis",
+    "tax": {
+      "EXCISE": "Akcīze {{rate}}% apmērā no muitas vērtības kopā ar muitas nodokli. Iesniedziet deklarāciju AKC-U/S un samaksājiet nodokļu iestādē 14 dienu laikā pēc auto ievešanas – pirms reģistrācijas.",
+      "NONE": "Reģistrācijas valsts ({{country}}): reģistrējot nav vienreizēja nodokļa – tikai zemāk norādītās oficiālās maksas.",
+      "ESTIMATED": "Mēs to aplēšam pēc CO₂ ({{co2}} g/km), jaudas ({{kw}} kW), auto vecuma un vērtības saskaņā ar šī gada tabulu. Galavārds ir nodokļu iestādei – ja zināt tās summu, ievadiet to.",
+      "OFFICIAL": "Šis nodoklis atkarīgs no pārāk daudzām detaļām, lai to godīgi aplēstu. Aprēķiniet to oficiālajā kalkulatorā un ievadiet summu – mēs to pieskaitīsim aprēķinam."
+    },
+    "taxAmount": "Reģistrācijas nodoklis",
+    "taxOwnHint": "Atstājiet mūsu aplēsi vai ievadiet summu no nodokļu iestādes.",
+    "taxTypeHint": "Summa no oficiālā kalkulatora. Tukšs = netiek ieskaitīts.",
+    "officialCalculator": "Oficiālais kalkulators",
+    "amountInReport": "summa pārskatā",
+    "registerTitle": "Reģistrējiet auto – {{authority}}",
+    "registerText": "Ar apskati ({{inspection}}), nodokļa samaksas apliecinājumu, muitas dokumentiem un īpašumtiesību dokumentu (title).",
+    "deadline": "Termiņš: {{days}} d.",
+    "canTitle": "Ko jūs varat darīt",
+    "canLead": "Likums to neprasa, bet gandrīz katram importam kaut kas no šī ir vajadzīgs. Ieteicamās pozīcijas ir atzīmētas – noņemiet atzīmi tam, ko darāt paši."
   }
 }

@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Accisa",
     "FORKLIFT_LOADING": "Carico con carrello elevatore",
     "IMPORT_VAT": "IVA all’importazione",
-    "INDIVIDUAL_APPROVAL": "Omologazione individuale (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Omologazione individuale / revisione di importazione",
     "INLAND_TRANSPORT": "Trasporto interno fino al porto",
     "INTRA_EU_ACQUISITION_VAT": "IVA su acquisto intracomunitario (inversione contabile, detraibile)",
     "INTRA_EU_TRANSPORT": "Bisarca dal porto alla destinazione",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Danni durante il trasporto – franchigia assicurativa",
     "RISK_HIDDEN_DAMAGE": "Danni nascosti non visibili all’asta",
     "RISK_TITLE_DELAY": "Ritardo del Title (sosta aggiuntiva)",
-    "RISK_EXPORT_DOCS_DELAY": "Ritardo dei documenti di esportazione"
+    "RISK_EXPORT_DOCS_DELAY": "Ritardo dei documenti di esportazione",
+    "REGISTRATION_TAX": "Tassa di immatricolazione",
+    "COC_CERTIFICATE": "Scheda dati del costruttore / CoC"
   },
   "doc": {
     "billOfLading": "Polizza di carico (Bill of Lading)",
@@ -388,7 +390,11 @@
     "distanceRouted": "Percorso stradale da {{port}} al tuo indirizzo.",
     "distanceEstimated": "Stima da {{port}} al tuo indirizzo (linea d’aria × 1,25).",
     "distanceTypical": "Distanza tipica da {{port}} – inserisci l’indirizzo qui sopra per un valore esatto.",
-    "tariffShort": "Mercato: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} di carico, min. {{minimum}} {{cur}}."
+    "tariffShort": "Mercato: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} di carico, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Dal CoC o dall’etichetta sul finestrino. Da qui dipende la maggior parte delle tasse di immatricolazione nell’UE.",
+    "powerKw": "Potenza del motore",
+    "powerKwHint": "In kW (1 CV ≈ 0,74 kW). Conta in Belgio, Italia e Francia."
   },
   "layout": {
     "topbar": "Calcolatore indipendente dei costi di importazione auto da USA, Canada, Giappone, EAU e Regno Unito verso 27 Paesi UE",
@@ -902,7 +908,18 @@
     "SERVICE_INSPECTION": "Olio, filtri, liquidi, freni dopo un lungo viaggio",
     "GEOMETRY_ALIGNMENT": "Consigliata dopo riparazioni alle sospensioni",
     "DETAILING": "Lavaggio, pulizia interni, lucidatura della carrozzeria",
-    "EXPERT_VALUATION": "Utile per la kasko e la rivendita"
+    "EXPERT_VALUATION": "Utile per la kasko e la rivendita",
+    "INDIVIDUAL_APPROVAL": "Un’auto costruita per un mercato extra UE non ha l’omologazione europea – un centro autorizzato la verifica secondo le norme UE ({{inspection}}).",
+    "REGISTRATION_FEE": "Spese ufficiali – {{authority}}: carta di circolazione e targhe.",
+    "RDW_INSPECTION": "L’RDW controlla l’auto importata e la sua identità prima di assegnarle una targa olandese.",
+    "TECHNICAL_INSPECTION_IMPORT": "Revisione tecnica approfondita di un’auto portata dall’estero, presso un centro di revisione.",
+    "REG_TEMPORARY_PERMIT": "Permesso provvisorio valido finché la carta di circolazione non è pronta.",
+    "REG_TEMPORARY_PLATES": "Targhe provvisorie consegnate con il permesso provvisorio.",
+    "REG_CERTIFICATE": "La carta di circolazione vera e propria.",
+    "REG_PLATES": "Targhe definitive.",
+    "REG_STICKER": "Contrassegno di controllo sul parabrezza.",
+    "RECYCLING_FEE": "Contributo una tantum per un’auto introdotta da chi non ha una rete di riciclo.",
+    "COC_CERTIFICATE": "Serve per l’omologazione e l’immatricolazione se l’auto non ha il certificato di conformità UE."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Il terminal addebita una tariffa giornaliera dopo il periodo di franchigia, ad es. quando i documenti o il trasporto sono in ritardo.",
@@ -1312,5 +1329,25 @@
     "bestLabel": "Porto più conveniente:",
     "bestSelected": "selezionato",
     "bestChoose": "Scegli – risparmi {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Cosa devi fare – {{country}}",
+    "noRegTaxName": "Tassa di immatricolazione",
+    "tax": {
+      "EXCISE": "Accisa del {{rate}}% sul valore in dogana più il dazio. Presenta la dichiarazione AKC-U/S e paga all’ufficio delle imposte entro 14 giorni dall’ingresso dell’auto – prima dell’immatricolazione.",
+      "NONE": "Paese di immatricolazione ({{country}}): nessuna tassa una tantum all’immatricolazione – solo le spese ufficiali qui sotto.",
+      "ESTIMATED": "La stimiamo in base a CO₂ ({{co2}} g/km), potenza ({{kw}} kW), età e valore dell’auto, secondo la tabella di quest’anno. L’ultima parola spetta all’ufficio delle imposte – se conosci il loro importo, inseriscilo.",
+      "OFFICIAL": "Questa tassa dipende da troppi dettagli per stimarla in modo affidabile. Calcolala con il calcolatore ufficiale e inserisci l’importo – lo aggiungeremo al calcolo."
+    },
+    "taxAmount": "Tassa di immatricolazione",
+    "taxOwnHint": "Lascia la nostra stima o inserisci l’importo dell’ufficio delle imposte.",
+    "taxTypeHint": "Importo dal calcolatore ufficiale. Vuoto = non incluso.",
+    "officialCalculator": "Calcolatore ufficiale",
+    "amountInReport": "importo nel report",
+    "registerTitle": "Immatricola l’auto – {{authority}}",
+    "registerText": "Con la revisione ({{inspection}}), la prova del pagamento della tassa, i documenti doganali e il titolo di proprietà (title).",
+    "deadline": "Scadenza: {{days}} giorni.",
+    "canTitle": "Cosa puoi fare",
+    "canLead": "Non è obbligatorio per legge, ma quasi ogni importazione ne richiede una parte. Le voci consigliate sono spuntate – togli la spunta a ciò che fai da te."
   }
 }

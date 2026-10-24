@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Spotrebná daň",
     "FORKLIFT_LOADING": "Nakládka vysokozdvižným vozíkom",
     "IMPORT_VAT": "DPH pri dovoze",
-    "INDIVIDUAL_APPROVAL": "Individuálne schválenie (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Individuálne schválenie / dovozná kontrola",
     "INLAND_TRANSPORT": "Vnútrozemská doprava do prístavu",
     "INTRA_EU_ACQUISITION_VAT": "DPH z nadobudnutia tovaru v rámci EÚ (reverse charge, odpočítateľná)",
     "INTRA_EU_TRANSPORT": "Autoprepravník z prístavu do cieľovej krajiny",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Poškodenie pri preprave – spoluúčasť poistenia",
     "RISK_HIDDEN_DAMAGE": "Skryté vady neviditeľné na aukcii",
     "RISK_TITLE_DELAY": "Oneskorenie titulu (ďalšie skladné)",
-    "RISK_EXPORT_DOCS_DELAY": "Oneskorenie exportných dokladov"
+    "RISK_EXPORT_DOCS_DELAY": "Oneskorenie exportných dokladov",
+    "REGISTRATION_TAX": "Registračná daň",
+    "COC_CERTIFICATE": "Technický list výrobcu / CoC"
   },
   "doc": {
     "billOfLading": "Konosament (Bill of Lading)",
@@ -388,7 +390,11 @@
     "distanceRouted": "Cestná trasa z {{port}} na vašu adresu.",
     "distanceEstimated": "Odhad z {{port}} na vašu adresu (vzdušná čiara × 1,25).",
     "distanceTypical": "Obvyklá vzdialenosť z {{port}} – pre presný údaj zadajte adresu vyššie.",
-    "tariffShort": "Trh: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} nakládka, min. {{minimum}} {{cur}}."
+    "tariffShort": "Trh: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} nakládka, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Z dokladu CoC alebo nálepky na okne. Závisí od nich väčšina registračných daní v EÚ.",
+    "powerKw": "Výkon motora",
+    "powerKwHint": "V kW (1 k ≈ 0,74 kW). Počíta sa s ním v Belgicku, Taliansku a Francúzsku."
   },
   "layout": {
     "topbar": "Nezávislá kalkulačka nákladov na dovoz áut z USA, Kanady, Japonska, SAE a Spojeného kráľovstva do 27 krajín EÚ",
@@ -902,7 +908,18 @@
     "SERVICE_INSPECTION": "Olej, filtre, kvapaliny, brzdy po dlhej ceste",
     "GEOMETRY_ALIGNMENT": "Odporúčané po opravách podvozku",
     "DETAILING": "Umytie, čistenie interiéru, korekcia laku",
-    "EXPERT_VALUATION": "Užitočné pre havarijné poistenie a ďalší predaj"
+    "EXPERT_VALUATION": "Užitočné pre havarijné poistenie a ďalší predaj",
+    "INDIVIDUAL_APPROVAL": "Auto vyrobené pre trh mimo EÚ nemá európske typové schválenie – autorizovaná stanica ho preverí podľa pravidiel EÚ ({{inspection}}).",
+    "REGISTRATION_FEE": "Úradné poplatky – {{authority}}: osvedčenie o evidencii a tabuľky s evidenčným číslom.",
+    "RDW_INSPECTION": "RDW preverí dovezené auto a jeho identitu skôr, než dostane holandskú registráciu.",
+    "TECHNICAL_INSPECTION_IMPORT": "Rozšírená technická kontrola auta dovezeného zo zahraničia na stanici technickej kontroly.",
+    "REG_TEMPORARY_PERMIT": "Dočasné povolenie na čas, kým nebude osvedčenie o evidencii hotové.",
+    "REG_TEMPORARY_PLATES": "Dočasné evidenčné čísla vydávané s dočasným povolením.",
+    "REG_CERTIFICATE": "Samotné osvedčenie o evidencii.",
+    "REG_PLATES": "Trvalé tabuľky s evidenčným číslom.",
+    "REG_STICKER": "Kontrolná nálepka na čelné sklo.",
+    "RECYCLING_FEE": "Jednorazový poplatok za auto dovezené niekým, kto nemá sieť na recykláciu.",
+    "COC_CERTIFICATE": "Potrebný na schválenie a registráciu, ak auto nemá európsky certifikát zhody."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Terminál po uplynutí bezplatnej doby účtuje poplatok za každý deň, napr. keď sa oneskoria doklady alebo doprava.",
@@ -1312,5 +1329,25 @@
     "bestLabel": "Najvýhodnejší prístav:",
     "bestSelected": "vybrané",
     "bestChoose": "Vybrať – ušetríte {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Čo musíte urobiť – {{country}}",
+    "noRegTaxName": "Registračná daň",
+    "tax": {
+      "EXCISE": "Spotrebná daň {{rate}} % z colnej hodnoty vrátane cla. Podajte priznanie AKC-U/S a zaplaťte na daňovom úrade do 14 dní od dovozu auta – pred registráciou.",
+      "NONE": "Krajina registrácie ({{country}}): žiadna jednorazová daň pri registrácii – len úradné poplatky nižšie.",
+      "ESTIMATED": "Odhadujeme ju z CO₂ ({{co2}} g/km), výkonu ({{kw}} kW), veku a hodnoty auta podľa tohtoročnej tabuľky. Rozhoduje daňový úrad – ak poznáte jeho sumu, zadajte ju.",
+      "OFFICIAL": "Táto daň závisí od priveľa detailov na to, aby sa dala poctivo odhadnúť. Vypočítajte ju v oficiálnej kalkulačke a zadajte sumu – pripočítame ju do výpočtu."
+    },
+    "taxAmount": "Registračná daň",
+    "taxOwnHint": "Ponechajte náš odhad alebo zadajte sumu od daňového úradu.",
+    "taxTypeHint": "Suma z oficiálnej kalkulačky. Prázdne = nezapočítané.",
+    "officialCalculator": "Oficiálna kalkulačka",
+    "amountInReport": "suma v reporte",
+    "registerTitle": "Zaregistrujte auto – {{authority}}",
+    "registerText": "S kontrolou ({{inspection}}), dokladom o zaplatení dane, colnými dokladmi a titulom (doklad o vlastníctve).",
+    "deadline": "Lehota: {{days}} dní.",
+    "canTitle": "Čo môžete urobiť",
+    "canLead": "Zákon to nevyžaduje, ale takmer každý dovoz potrebuje niečo z toho. Odporúčané položky sú zaškrtnuté – odškrtnite, čo urobíte sami."
   }
 }
