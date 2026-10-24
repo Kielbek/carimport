@@ -4,6 +4,7 @@
 export const BLOG_INDEX: Record<string, Record<string, string>> = {
   "total-cost": {
     "bg": "kolko-struva-vnos-na-kola-ot-amerika-v-balgariya",
+    "da": "hvad-koster-det-at-importere-en-bil-fra-usa",
     "de": "auto-aus-den-usa-importieren-kosten",
     "el": "poso-kostizei-na-fereis-aftokinito-apo-ameriki",
     "en": "how-much-does-it-cost-to-import-a-car-from-the-usa",
@@ -14,12 +15,14 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
     "it": "quanto-costa-importare-auto-dagli-usa",
     "lv": "auto-ievesana-no-asv-izmaksas-cik-maksa",
     "pl": "ile-kosztuje-sprowadzenie-auta-z-usa",
+    "pt": "quanto-custa-importar-um-carro-dos-eua-para-portugal",
     "ro": "cat-costa-sa-aduci-o-masina-din-america-in-romania",
     "sk": "kolko-stoji-dovoz-auta-z-usa-na-slovensko",
     "sv": "vad-kostar-det-att-importera-bil-fran-usa"
   },
   "copart-iaai": {
     "bg": "kak-da-kupya-kola-ot-copart-ili-iaai-ot-balgariya",
+    "da": "kob-bil-pa-copart-og-iaai-fra-danmark",
     "de": "copart-iaai-auto-kaufen-aus-deutschland-anleitung",
     "el": "pos-na-agoraseis-aftokinito-apo-copart-kai-iaai-apo-tin-ellada",
     "en": "how-to-buy-a-car-at-copart-or-iaai-from-europe",
@@ -30,12 +33,14 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
     "it": "come-comprare-auto-copart-iaai-dall-italia",
     "lv": "ka-nopirkt-auto-copart-vai-iaai-izsole-no-latvijas",
     "pl": "jak-kupic-auto-na-copart-i-iaai-z-polski",
+    "pt": "como-comprar-carro-na-copart-ou-iaai-a-partir-de-portugal",
     "ro": "cum-cumperi-o-masina-de-la-copart-sau-iaai-din-romania",
     "sk": "ako-kupit-auto-na-copart-alebo-iaai-zo-slovenska",
     "sv": "kopa-bil-pa-copart-och-iaai-fran-sverige"
   },
   "salvage-title": {
     "bg": "koli-sas-salvage-titla-ot-amerika-riskove-i-registratsiya",
+    "da": "salvage-title-bil-fra-usa-kan-den-indregistreres-i-danmark",
     "de": "salvage-title-auto-aus-usa-risiken-zulassung-deutschland",
     "el": "aftokinito-me-salvage-title-apo-ameriki-ti-prepei-na-xerete",
     "en": "salvage-title-cars-from-the-usa-what-you-need-to-know",
@@ -46,12 +51,14 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
     "it": "auto-salvage-dagli-usa-cosa-sapere",
     "lv": "salvage-title-auto-no-asv-riski-un-izmaksas",
     "pl": "auto-z-usa-z-tytulem-salvage-co-trzeba-wiedziec",
+    "pt": "carros-salvage-dos-eua-o-que-precisa-de-saber",
     "ro": "masini-cu-titlu-salvage-din-america-riscuri-si-inmatriculare",
     "sk": "auto-zo-salvage-titulom-z-usa-co-treba-vediet",
     "sv": "salvage-title-bil-fran-usa-registrera-i-sverige"
   },
   "customs-vat": {
     "bg": "mito-i-dds-pri-vnos-na-kola-izvan-es",
+    "da": "told-og-moms-ved-import-af-bil",
     "de": "einfuhrumsatzsteuer-und-zoll-auto-usa-berechnen",
     "el": "dasmos-kai-fpa-eisagogis-aftokinitou-stin-ellada",
     "en": "customs-duty-and-vat-on-imported-cars-explained",
@@ -62,12 +69,14 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
     "it": "dazio-e-iva-importazione-auto-come-si-calcolano",
     "lv": "muitas-nodoklis-un-pvn-ievedot-auto-latvija",
     "pl": "clo-akcyza-i-vat-na-samochod-z-usa",
+    "pt": "direitos-aduaneiros-e-iva-na-importacao-de-carros",
     "ro": "taxa-vamala-si-tva-la-importul-unei-masini-din-afara-ue",
     "sk": "clo-a-dph-pri-dovoze-auta-na-slovensko",
     "sv": "tull-och-moms-vid-import-av-bil"
   },
   "registration": {
     "bg": "registratsiya-na-vnesena-kola-ot-amerika-v-kat-dokumenti",
+    "da": "indregistrering-af-importeret-bil-syn-og-registreringsafgift",
     "de": "us-auto-zulassen-vollabnahme-21-stvzo-ablauf",
     "el": "taxinomisi-eisagomenou-aftokinitou-stin-ellada-dikaiologitika",
     "en": "registering-an-imported-car-in-the-eu-documents-and-steps",
@@ -78,12 +87,14 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
     "it": "immatricolare-auto-importata-usa-giappone-documenti",
     "lv": "ievesta-auto-registracija-csdd-dokumenti-un-soli",
     "pl": "rejestracja-auta-z-usa-dokumenty-i-krok-po-kroku",
+    "pt": "legalizar-carro-importado-dos-eua-ou-japao-documentos",
     "ro": "inmatriculare-masina-adusa-din-america-acte-rar-drpciv",
     "sk": "prihlasenie-dovezeneho-auta-z-usa-na-slovensku-doklady",
     "sv": "registrera-importerad-bil-i-sverige-registreringsbesiktning"
   },
   "port-choice": {
     "bg": "solun-varna-ili-konstantsa-koe-pristanishte-za-vnos-na-kola",
+    "da": "kobenhavn-aarhus-eller-hamburg-valg-af-havn-ved-bilimport",
     "de": "bremerhaven-oder-hamburg-welcher-hafen-fuer-auto-import",
     "el": "peiraias-i-thessaloniki-se-poio-limani-na-ektelonisete-to-aftokinito",
     "en": "bremerhaven-rotterdam-or-antwerp-choosing-a-port",
@@ -94,12 +105,14 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
     "it": "livorno-genova-la-spezia-o-koper-quale-porto-scegliere",
     "lv": "riga-klaipeda-vai-tallina-kura-osta-muitot-auto",
     "pl": "gdynia-bremerhaven-czy-rotterdam-gdzie-odprawic-auto-z-usa",
+    "pt": "lisboa-leixoes-ou-algeciras-que-porto-escolher",
     "ro": "constanta-sau-varna-in-ce-port-vamuiesti-masina-adusa-din-sua",
     "sk": "koper-rijeka-alebo-bremerhaven-kde-preclit-auto-na-slovensko",
     "sv": "goteborg-bremerhaven-eller-baltikum-valja-hamn-for-bilimport"
   },
   "japan-jdm": {
     "bg": "vnos-na-jdm-kola-ot-yaponiya-list-ot-targa-otsenki-i-razhodi",
+    "da": "importere-jdm-bil-fra-japan-auktionsark-og-pris",
     "de": "jdm-auto-aus-japan-importieren-auction-sheet-kosten",
     "el": "eisagogi-jdm-aftokinitou-apo-iaponia-auction-sheet-kai-kostos",
     "en": "importing-a-jdm-car-from-japan-auction-sheets-and-costs",
@@ -110,12 +123,14 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
     "it": "importare-auto-jdm-dal-giappone-aste-costi",
     "lv": "jdm-auto-no-japanas-uz-latviju-izsoles-lapas-un-izmaksas",
     "pl": "import-auta-z-japonii-arkusz-aukcyjny-i-koszty",
+    "pt": "importar-carro-jdm-do-japao-leiloes-e-custos",
     "ro": "import-masina-jdm-din-japonia-foaia-de-licitatie-si-costuri",
     "sk": "dovoz-jdm-auta-z-japonska-aukcne-listy-a-naklady",
     "sv": "importera-jdm-bil-fran-japan-auktionsblad-och-kostnader"
   },
   "checklist": {
     "bg": "proverki-predi-da-naddavate-za-kola-ot-amerika-ili-yaponiya",
+    "da": "tjekliste-for-du-byder-pa-en-bil-fra-usa",
     "de": "checkliste-auto-aus-usa-kaufen-vor-dem-bieten",
     "el": "lista-elegchou-prin-agorasete-aftokinito-se-dimoprasia-exoterikou",
     "en": "checklist-before-you-bid-on-an-imported-car",
@@ -126,6 +141,7 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
     "it": "checklist-prima-di-fare-offerta-auto-asta-usa",
     "lv": "parbaudes-saraksts-pirms-auto-pirksanas-izsole-asv-japana",
     "pl": "lista-kontrolna-przed-licytacja-auta-z-usa",
+    "pt": "checklist-antes-de-licitar-carro-em-leilao-nos-eua",
     "ro": "checklist-inainte-sa-licitezi-pe-o-masina-din-america-sau-japonia",
     "sk": "checklist-pred-kupou-auta-z-usa-na-aukcii",
     "sv": "checklista-innan-du-budar-pa-bil-fran-usa"
@@ -136,4 +152,4 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
 export const BLOG_DATES: Record<string, string> = {"total-cost":"2026-10-20","copart-iaai":"2026-10-16","salvage-title":"2026-10-12","customs-vat":"2026-10-08","registration":"2026-10-04","port-choice":"2026-09-30","japan-jdm":"2026-09-25","checklist":"2026-09-20"};
 
 /** Languages that have at least one article. */
-export const BLOG_LANGS: string[] = ["bg","de","el","en","es","fi","fr","hr","it","lv","pl","ro","sk","sv"];
+export const BLOG_LANGS: string[] = ["bg","da","de","el","en","es","fi","fr","hr","it","lv","pl","pt","ro","sk","sv"];
