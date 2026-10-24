@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Akcyza",
     "FORKLIFT_LOADING": "Załadunek wózkiem widłowym",
     "IMPORT_VAT": "VAT importowy",
-    "INDIVIDUAL_APPROVAL": "Homologacja jednostkowa (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Homologacja jednostkowa / badanie importowe",
     "INLAND_TRANSPORT": "Transport lądowy do portu",
     "INTRA_EU_ACQUISITION_VAT": "VAT WNT (odwrotne obciążenie, do odliczenia)",
     "INTRA_EU_TRANSPORT": "Transport lawetą z portu do kraju",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Szkoda w transporcie – udział własny w polisie",
     "RISK_HIDDEN_DAMAGE": "Ukryte usterki niewidoczne na aukcji",
     "RISK_TITLE_DELAY": "Opóźnienie dokumentu Title (dodatkowy postój)",
-    "RISK_EXPORT_DOCS_DELAY": "Opóźnienie dokumentów eksportowych"
+    "RISK_EXPORT_DOCS_DELAY": "Opóźnienie dokumentów eksportowych",
+    "REGISTRATION_TAX": "Podatek rejestracyjny",
+    "COC_CERTIFICATE": "Karta danych producenta / CoC"
   },
   "doc": {
     "billOfLading": "Konosament (Bill of Lading)",
@@ -388,7 +390,11 @@
     "distanceRouted": "Trasa drogowa z portu {{port}} pod Twój adres.",
     "distanceEstimated": "Szacunek z portu {{port}} pod Twój adres (linia prosta × 1,25).",
     "distanceTypical": "Typowa odległość z portu {{port}} – podaj adres powyżej, by policzyć dokładnie.",
-    "tariffShort": "Rynek: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} załadunek, min. {{minimum}} {{cur}}."
+    "tariffShort": "Rynek: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} załadunek, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Z dokumentu CoC lub naklejki z okna. Od niej zależy większość podatków rejestracyjnych w UE.",
+    "powerKw": "Moc silnika",
+    "powerKwHint": "W kW (1 KM ≈ 0,74 kW). Liczy się w Belgii, we Włoszech i we Francji."
   },
   "layout": {
     "topbar": "Niezależny kalkulator kosztów importu aut z USA, Kanady, Japonii, ZEA i UK do 27 krajów UE",
@@ -902,7 +908,18 @@
     "SERVICE_INSPECTION": "Olej, filtry, płyny, hamulce po długim transporcie",
     "GEOMETRY_ALIGNMENT": "Zalecane po naprawie zawieszenia",
     "DETAILING": "Mycie, pranie wnętrza, korekta lakieru",
-    "EXPERT_VALUATION": "Przydatna do AC i przy sprzedaży"
+    "EXPERT_VALUATION": "Przydatna do AC i przy sprzedaży",
+    "INDIVIDUAL_APPROVAL": "Auto z rynku spoza UE nie ma europejskiej homologacji – uprawniona stacja sprawdza je pod kątem przepisów UE ({{inspection}}).",
+    "REGISTRATION_FEE": "Opłaty urzędowe – {{authority}}: dowód rejestracyjny i tablice.",
+    "RDW_INSPECTION": "RDW sprawdza sprowadzone auto i jego tożsamość przed nadaniem holenderskiej rejestracji.",
+    "TECHNICAL_INSPECTION_IMPORT": "Rozszerzone badanie techniczne auta sprowadzonego z zagranicy na stacji kontroli pojazdów.",
+    "REG_TEMPORARY_PERMIT": "Pozwolenie czasowe na czas oczekiwania na dowód rejestracyjny.",
+    "REG_TEMPORARY_PLATES": "Tablice tymczasowe wydawane z pozwoleniem czasowym.",
+    "REG_CERTIFICATE": "Sam dowód rejestracyjny.",
+    "REG_PLATES": "Stałe tablice rejestracyjne.",
+    "REG_STICKER": "Naklejka kontrolna na szybę.",
+    "RECYCLING_FEE": "Jednorazowa opłata za auto wprowadzone przez osobę bez sieci recyklingu.",
+    "COC_CERTIFICATE": "Potrzebna do homologacji i rejestracji, gdy auto nie ma europejskiego świadectwa zgodności."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Terminal liczy postój za każdy dzień po okresie bezpłatnym, np. przy opóźnieniu dokumentów lub transportu.",
@@ -1312,5 +1329,25 @@
     "bestLabel": "Najbardziej opłacalny port:",
     "bestSelected": "wybrany",
     "bestChoose": "Wybierz – oszczędzasz {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Co musisz zrobić – {{country}}",
+    "noRegTaxName": "Podatek rejestracyjny",
+    "tax": {
+      "EXCISE": "Akcyza {{rate}}% od wartości celnej z cłem. Złóż deklarację AKC-U/S i zapłać w urzędzie skarbowym w ciągu 14 dni od wprowadzenia auta – przed rejestracją.",
+      "NONE": "Kraj rejestracji ({{country}}) nie pobiera jednorazowego podatku przy rejestracji – płacisz tylko opłaty urzędowe poniżej.",
+      "ESTIMATED": "Szacujemy go z emisji CO₂ ({{co2}} g/km), mocy ({{kw}} kW), wieku i wartości auta według tegorocznej tabeli. Ostateczną kwotę ustala urząd – jeśli ją znasz, wpisz ją.",
+      "OFFICIAL": "Ten podatek zależy od zbyt wielu szczegółów, żeby go rzetelnie oszacować. Policz go w oficjalnym kalkulatorze i wpisz kwotę – doliczymy ją do wyliczenia."
+    },
+    "taxAmount": "Podatek rejestracyjny",
+    "taxOwnHint": "Zostaw nasz szacunek albo wpisz kwotę z urzędu.",
+    "taxTypeHint": "Kwota z oficjalnego kalkulatora. Puste = nie wliczamy.",
+    "officialCalculator": "Oficjalny kalkulator",
+    "amountInReport": "kwota w raporcie",
+    "registerTitle": "Zarejestruj auto – {{authority}}",
+    "registerText": "Z badaniem ({{inspection}}), dowodem zapłaty podatku, dokumentami celnymi i tytułem własności.",
+    "deadline": "Termin: {{days}} dni.",
+    "canTitle": "Co możesz zrobić",
+    "canLead": "Nie wymaga tego prawo, ale prawie każdy import potrzebuje czegoś z tej listy. Zalecane pozycje są zaznaczone – odznacz to, co zrobisz sam."
   }
 }

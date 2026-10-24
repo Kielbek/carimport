@@ -99,7 +99,7 @@ const TOP = 5;
           <app-icon name="loader" [size]="18" class="animate-spin" /> {{ 'wizard.portRankingLoading' | translate }}
         </div>
       } @else {
-        <ol class="mt-4 divide-y divide-line overflow-hidden rounded-[4px] border border-line" [class.opacity-60]="store.suggestionsLoading()">
+        <ol class="mt-4 divide-y divide-line overflow-hidden rounded-[4px] border border-line" [class.opacity-60]="store.suggestionsLoading() || !store.suggestionsCurrent()">
           @for (p of visible(); track p.code; let i = $index) {
             <li>
               <button type="button" class="grid w-full grid-cols-[1.5rem_minmax(0,1fr)_auto] items-center gap-x-3 gap-y-1 px-4 py-3 text-left transition hover:bg-panel-2 sm:grid-cols-[1.5rem_minmax(0,1fr)_7rem_6rem_9rem]"
@@ -194,7 +194,7 @@ const TOP = 5;
                       <td class="py-2 text-right font-semibold tabular-nums">{{ t.amount | localNumber: lang.locale() }}</td>
                     </tr>
                   }
-                  @if (!p.taxes.national.length && registrationTax()) {
+                  @if (!p.taxes.national.length && registrationTax() && store.suggestions()?.registrationTax === 'OFFICIAL_CALCULATOR') {
                     <tr class="border-b border-line">
                       <td class="py-2 pr-3">{{ registrationTax() }}
                         <span class="block text-xs text-muted">{{ 'portCost.notPriced' | translate: { country: (s().destinationCountry | countryName: lang.locale()) } }}</span></td>
@@ -409,7 +409,13 @@ export class StepDestination {
     if (this.s().destinationAddress) {
       this.store.setAddress(null);
     }
-    this.store.patch({ destinationCountry: code, deliveryDistanceKm: null, pricePerKm: null, postImportServices: null });
+    this.store.patch({
+      destinationCountry: code,
+      deliveryDistanceKm: null,
+      pricePerKm: null,
+      postImportServices: null,
+      registrationTaxOwn: null,
+    });
   }
 
   protected pct(rate: number | null): string {

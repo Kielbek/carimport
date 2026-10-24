@@ -5,6 +5,7 @@ import { LanguageService } from '../../../core/i18n/language.service';
 import { Icon } from '../../../shared/icon/icon';
 import { CalculatorStore } from '../calculator.store';
 import { CATEGORIES, EXCISE_THRESHOLD_CC, FUELS } from '../calculator.options';
+import { ProposalInput } from '../proposal-input';
 
 const CC_MIN = 50;
 const CC_MAX = 7000;
@@ -12,7 +13,7 @@ const CC_MAX = 7000;
 /** Step 2 - vehicle type, drivetrain, displacement slider with the live excise-threshold warning. */
 @Component({
   selector: 'app-step-vehicle',
-  imports: [TranslatePipe, LocalNumberPipe, Icon],
+  imports: [TranslatePipe, LocalNumberPipe, Icon, ProposalInput],
   template: `
     <fieldset>
       <legend class="label">{{ 'wizard.category' | translate }}</legend>
@@ -71,6 +72,14 @@ const CC_MAX = 7000;
         <label class="label" for="year">{{ 'wizard.year' | translate }}</label>
         <input id="year" type="number" class="input" min="1900" [max]="currentYear" [value]="s().productionYear"
                (input)="store.patch({ productionYear: +$any($event.target).value })" />
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <app-proposal-input inputId="co2" label="wizard.co2" unit="g/km" [step]="1" hint="wizard.co2Hint"
+                            [value]="s().co2Gkm" [proposal]="store.co2Proposal()"
+                            (changed)="store.patch({ co2Gkm: $event })" />
+        <app-proposal-input inputId="kw" label="wizard.powerKw" unit="kW" [step]="1" hint="wizard.powerKwHint"
+                            [value]="s().powerKw" [proposal]="store.powerProposal()"
+                            (changed)="store.patch({ powerKw: $event })" />
       </div>
       @if (store.canBeHistoric()) {
         <label class="flex cursor-pointer items-start gap-3 rounded-[6px] border border-brand/60 bg-brand/10 p-4"

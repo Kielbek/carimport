@@ -49,6 +49,12 @@ export interface CalculationRequest {
   destinationAddress: string | null;
   destinationLat: number | null;
   destinationLon: number | null;
+  /** WLTP CO₂ g/km from the CoC; null = estimated from fuel and displacement. */
+  co2Gkm: number | null;
+  /** Engine power in kW; null = estimated. */
+  powerKw: number | null;
+  /** Registration tax the buyer computed themselves (display currency); null = our estimate. */
+  registrationTaxOwn: number | null;
 }
 
 export type PortRegion = 'NORTH_SEA' | 'ATLANTIC' | 'BALTIC' | 'WEST_MED' | 'EAST_MED';
@@ -87,6 +93,12 @@ export interface Suggestions {
   repairEstimate: number;
   insuranceEstimate: number;
   currency: string;
+  co2Estimate: number;
+  powerKwEstimate: number;
+  /** EXCISE (Polish excise), NONE, ESTIMATED (our formula) or OFFICIAL_CALCULATOR (buyer types it). */
+  registrationTax: 'EXCISE' | 'NONE' | 'ESTIMATED' | 'OFFICIAL_CALCULATOR';
+  registrationTaxEstimate: number | null;
+  registrationTaxUrl: string | null;
 }
 
 export interface Timeline {

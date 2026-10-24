@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Excise tax",
     "FORKLIFT_LOADING": "Forklift loading",
     "IMPORT_VAT": "Import VAT",
-    "INDIVIDUAL_APPROVAL": "Individual approval (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Individual approval / import inspection",
     "INLAND_TRANSPORT": "Inland transport to port",
     "INTRA_EU_ACQUISITION_VAT": "Intra-EU acquisition VAT (reverse charge, deductible)",
     "INTRA_EU_TRANSPORT": "Car carrier from port to destination",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transit damage – insurance deductible",
     "RISK_HIDDEN_DAMAGE": "Hidden damage not visible at auction",
     "RISK_TITLE_DELAY": "Title delay (extra storage)",
-    "RISK_EXPORT_DOCS_DELAY": "Export document delay"
+    "RISK_EXPORT_DOCS_DELAY": "Export document delay",
+    "REGISTRATION_TAX": "Registration tax",
+    "COC_CERTIFICATE": "Manufacturer's data sheet / CoC"
   },
   "doc": {
     "billOfLading": "Bill of Lading",
@@ -388,7 +390,11 @@
     "distanceRouted": "Road route from {{port}} to your address.",
     "distanceEstimated": "Estimate from {{port}} to your address (straight line × 1.25).",
     "distanceTypical": "Typical distance from {{port}} – enter the address above for an exact figure.",
-    "tariffShort": "Market: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} loading, min. {{minimum}} {{cur}}."
+    "tariffShort": "Market: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} loading, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "From the CoC or window sticker. Most registration taxes in the EU are based on it.",
+    "powerKw": "Engine power",
+    "powerKwHint": "In kW (1 hp ≈ 0.74 kW). Used in Belgium, Italy and France."
   },
   "layout": {
     "topbar": "Independent calculator of car import costs from the USA, Canada, Japan, UAE and UK to 27 EU countries",
@@ -902,7 +908,18 @@
     "SERVICE_INSPECTION": "Oil, filters, fluids, brakes after a long trip",
     "GEOMETRY_ALIGNMENT": "Recommended after suspension repairs",
     "DETAILING": "Wash, interior cleaning, paint correction",
-    "EXPERT_VALUATION": "Useful for comprehensive insurance and resale"
+    "EXPERT_VALUATION": "Useful for comprehensive insurance and resale",
+    "INDIVIDUAL_APPROVAL": "A car built for a market outside the EU has no EU type approval – an approved station checks it against EU rules ({{inspection}}).",
+    "REGISTRATION_FEE": "Official fees at {{authority}}: registration certificate and number plates.",
+    "RDW_INSPECTION": "The RDW checks the imported car and its identity before it gets a Dutch registration.",
+    "TECHNICAL_INSPECTION_IMPORT": "Extended technical inspection of a car brought in from abroad, at a vehicle inspection station.",
+    "REG_TEMPORARY_PERMIT": "Temporary permit for the time until the registration certificate is ready.",
+    "REG_TEMPORARY_PLATES": "Temporary plates handed out with the temporary permit.",
+    "REG_CERTIFICATE": "The registration certificate itself.",
+    "REG_PLATES": "Permanent number plates.",
+    "REG_STICKER": "Control sticker on the windscreen.",
+    "RECYCLING_FEE": "One-off fee for a car brought in by someone without a recycling network.",
+    "COC_CERTIFICATE": "Needed for approval and registration when the car has no EU certificate of conformity."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "The terminal charges per day after the free period, e.g. when documents or transport are late.",
@@ -1312,5 +1329,25 @@
     "bestLabel": "Best value port:",
     "bestSelected": "selected",
     "bestChoose": "Choose – save {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "What you must do in {{country}}",
+    "noRegTaxName": "Registration tax",
+    "tax": {
+      "EXCISE": "Excise of {{rate}}% of the customs value plus duty. File the AKC-U/S declaration and pay at the tax office within 14 days of bringing the car in – before registration.",
+      "NONE": "{{country}} charges no one-off tax at registration – only the official fees below.",
+      "ESTIMATED": "We estimate it from CO₂ ({{co2}} g/km), power ({{kw}} kW), the age and value of the car, using this year's schedule. The tax office has the final word – if you have their figure, type it in.",
+      "OFFICIAL": "This tax depends on too many details to estimate fairly. Work it out in the official calculator and type the amount – we will add it to the calculation."
+    },
+    "taxAmount": "Registration tax",
+    "taxOwnHint": "Leave our estimate or type the amount from the tax office.",
+    "taxTypeHint": "Amount from the official calculator. Empty = not included.",
+    "officialCalculator": "Official calculator",
+    "amountInReport": "amount in the report",
+    "registerTitle": "Register the car – {{authority}}",
+    "registerText": "With the inspection ({{inspection}}), proof of tax paid, the customs documents and the title.",
+    "deadline": "Deadline: {{days}} days.",
+    "canTitle": "What you can do",
+    "canLead": "Not required by law, but almost every import needs some of it. Recommended items are ticked – untick what you do yourself."
   }
 }

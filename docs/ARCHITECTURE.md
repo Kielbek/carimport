@@ -137,9 +137,25 @@ przyciskiem zakupu na górze wyniku i stałym paskiem zakupu na telefonie.
 **Ranking portów** (`POST /quotes/suggestions`) sortuje po pełnym koszcie od drzwi do drzwi, ale ujawnia dla każdego portu
 tylko `TaxSummary` i dopłatę względem najtańszego (`extraVsBest`). Reguła, którą pokazuje UI (sekcja „Jak liczymy”):
 cło jest takie samo w całej UE; VAT płaci się w kraju portu według jego stawki (używane auto nie płaci VAT drugi raz
-w kraju rejestracji); podatki kraju rejestracji (akcyza PL) płaci się w kraju zawsze, niezależnie od portu. Krajowe
-podatki rejestracyjne innych państw (NoVA, BPM, registreringsafgift, autovero, ISV, VRT, …) zależą od CO₂/ceny – nie są
-jeszcze wyceniane, a UI nazywa je i oznacza jako „nie wliczony”.
+w kraju rejestracji); podatki kraju rejestracji płaci się w kraju zawsze, niezależnie od portu.
+
+**Podatek rejestracyjny kraju rejestracji** (`RegistrationTaxStep`, wzory w `RegistrationTaxes`) – trzy grupy krajów:
+
+| Grupa | Kraje | Co robi kalkulator |
+|---|---|---|
+| akcyza wchodząca do podstawy VAT | PL | `PolishExciseStrategy` (stawka z tabeli, zawsze liczona) |
+| brak jednorazowego podatku | BG, CZ, DE, LU, RO, SE | tylko opłaty urzędowe z `destination_fee` |
+| szacunek ze wzoru | AT (NoVA 2026), BE (TMC Walonia/Bruksela), DK (registreringsafgift 2026), EE, ES (IEDMT), FI (autovero), FR (malus 2026 + taxe régionale), IE (VRT), IT (IPT), NL (BPM 2026 z tabelą amortyzacji), PT (ISV), SI (DMV) | kwota z CO₂ WLTP, mocy, wieku i wartości (CIF + cło) |
+| oficjalny kalkulator | CY, GR, HR, HU, LT, LV, MT, SK | link do urzędu, użytkownik wpisuje kwotę (`registrationTaxOwn`) |
+
+CO₂ i moc to nowe pola wizarda z propozycją (`Proposals.co2/powerKw`); własna kwota podatku zawsze wygrywa ze
+szacunkiem. Wzory są uproszczone (bez dopłat wagowych, wariantów regionalnych, NOx w IE) i oznaczone w linii
+parametrem `method` – przy zmianie stawek na nowy rok aktualizuje się tylko `RegistrationTaxes` + test.
+
+**Po imporcie** (`V5__eu_after_import.sql`): dla każdego z 27 krajów obowiązkowe homologacja/badanie importowe
+i opłaty rejestracyjne oraz opcjonalne usługi (oświetlenie US, reflektory RHD, karta danych/CoC, serwis, geometria,
+tłumaczenia, detailing) – typowe kwoty w walucie lokalnej, `estimate = TRUE`. Krok 5 pokazuje je jako listę
+„Co musisz zrobić” (podatek → opłaty → rejestracja w urzędzie z terminem → OC) i „Co możesz zrobić”.
 
 ### 2.4 Przykład policzony ręcznie (test `fullChainForPetrolAbove2000ccClearedInGdynia`)
 
@@ -424,7 +440,7 @@ pozostaje PENDING, poprawny webhook → READY i PDF 30 KB, duplikat zdarzenia �
 * **Bezpieczeństwo API**: rate-limit `/quotes/preview` i `/leads` na bramie (np. Bucket4j/Cloudflare), CORS tylko dla
   domeny SPA, CSP, Spring Security dla panelu admina (zarządzanie taryfami + `@CacheEvict` cache `tariffs`).
 * **E-mail** z linkiem do raportu (w miejscu oznaczonym w `ReportGenerationService`) i powiadomienia partnerów o leadach.
-* **Rozszerzenia silnika**: kolejne `ExciseStrategy` (NL BPM, AT NoVA, FR malus) bez zmian w pipeline; kurs celny UE
+* **Rozszerzenia silnika**: wzory dla krajów z grupy „oficjalny kalkulator” (HU, HR, GR, …), dopłata wagowa FR; kurs celny UE
   (miesięczny, przedostatnia środa EBC) jako osobny `RateType`; panel B2B dla partnerów z rozliczeniem prowizji.
 * **SEO – dalej**: blog/poradniki per kraj i marka (long tail: „import Toyoty z USA”), strony docelowe per kraj
   pochodzenia z prerenderowanym przykładem wyceny, Search Console + monitoring Core Web Vitals.

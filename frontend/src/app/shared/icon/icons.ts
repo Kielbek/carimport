@@ -1,7 +1,7 @@
 import {
   Anchor, ArrowLeft, ArrowLeftRight, ArrowRight, Atom, BadgePercent, Banknote, BatteryCharging, Building2, Calculator,
   Car, CarFront, ChartPie, Check, ChevronDown, CircleCheck, Clock, Construction, Container, Cookie, Download, Droplet,
-  FileText, Flag, Flame, Forklift, Fuel, Globe, LoaderCircle, MapPin, Navigation, Handshake, Info, Key, Landmark, Languages, Leaf, ListChecks, Lock, Mail,
+  ExternalLink, FileText, Flag, Flame, Forklift, Fuel, Globe, LoaderCircle, MapPin, Navigation, Handshake, Info, Key, Landmark, Languages, Leaf, ListChecks, Lock, Mail,
   Menu, Monitor, Moon, Motorbike, MoveRight, Plug, Receipt, Route, Scale, Search, Ship, ShieldCheck, Sparkles, Sun, Timer,
   TriangleAlert, Truck, User, Van, Wallet, X, Zap,
 } from 'lucide-angular';
@@ -17,7 +17,7 @@ export const ICONS = {
   anchor: Anchor, 'arrow-left': ArrowLeft, 'arrow-right': ArrowRight, 'arrow-long': MoveRight, exchange: ArrowLeftRight, atom: Atom,
   percent: BadgePercent, banknote: Banknote, building: Building2, calculator: Calculator, check: Check,
   'check-circle': CircleCheck, 'chevron-down': ChevronDown, clock: Clock, container: Container, cookie: Cookie,
-  download: Download, document: FileText, globe: Globe, handshake: Handshake, info: Info, landmark: Landmark,
+  download: Download, document: FileText, 'external-link': ExternalLink, globe: Globe, handshake: Handshake, info: Info, landmark: Landmark,
   languages: Languages, list: ListChecks, lock: Lock, mail: Mail, menu: Menu, 'map-pin': MapPin, navigation: Navigation, loader: LoaderCircle, monitor: Monitor, moon: Moon,
   pie: ChartPie, receipt: Receipt, route: Route, scale: Scale, search: Search, ship: Ship, shield: ShieldCheck,
   sparkles: Sparkles, sun: Sun, timer: Timer, user: User, wallet: Wallet, warning: TriangleAlert, x: X,
