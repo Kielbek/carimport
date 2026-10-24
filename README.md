@@ -26,11 +26,23 @@ stripe listen --forward-to localhost:8080/api/v1/webhooks/stripe   # wypisze STR
 
 Kursy walut pobiera `FxSyncJob` z API NBP w dni robocze ok. 12:20 i 23:20 (Europe/Warsaw).
 
+## Produkcja
+
+```bash
+cp .env.example .env        # uzupełnij: hasło bazy, domena, dane firmy, klucze Stripe, SMTP, geokoder/router
+docker compose -f docker-compose.prod.yml --env-file .env up -d --build
+```
+
+Trzy kontenery: PostgreSQL, API (`backend/Dockerfile`) i nginx ze statyczną stroną, który przekazuje `/api` do API
+(`frontend/Dockerfile`, `frontend/nginx.conf` – cache, nagłówki bezpieczeństwa, CSP). TLS terminuje warstwa przed nim
+(Caddy, Traefik, load balancer, Cloudflare). CI (`.github/workflows/ci.yml`) uruchamia testy backendu, sprawdza
+kompletność tłumaczeń, buduje stronę i oba obrazy przy każdym pushu.
+
 ## Testy
 
 ```bash
 cd backend && mvn test     # silnik kalkulacji (kwoty liczone ręcznie), widok darmowy, render PDF w 4 językach
-cd frontend && npx ng build
+cd frontend && node tools/check-i18n.mjs && npx ng build
 ```
 
 > Dane referencyjne w `V2__reference_data.sql` (stawki aukcji, fracht, VAT kolekcjonerski) to **realistyczne
