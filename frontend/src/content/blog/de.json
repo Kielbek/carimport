@@ -395,5 +395,630 @@
         "a": "Ein bekannter erheblicher Unfallschaden sollte beim Verkauf offen gelegt werden. Ehrlichkeit schützt Sie hier auch vor späteren Streitigkeiten mit dem Käufer."
       }
     ]
+  },
+  {
+    "id": "customs-vat",
+    "slug": "einfuhrumsatzsteuer-und-zoll-auto-usa-berechnen",
+    "category": "customs",
+    "origin": null,
+    "date": "2026-10-08",
+    "minutes": 3,
+    "title": "Zoll und Einfuhrumsatzsteuer beim Auto aus den USA – so wird gerechnet",
+    "metaTitle": "Einfuhrumsatzsteuer & Zoll beim Auto-Import erklärt | CarImport.eu",
+    "description": "Einfuhrumsatzsteuer beim Auto aus den USA: wie Zollwert (CIF), 10 % Zoll, 19 % EUSt und Verfahren 4200 funktionieren – mit Beispielrechnung.",
+    "lead": "Beim Zoll verrechnen sich die meisten Erstimporteure. Zwei Regeln erklären fast alles: Der Zoll wird auf den CIF-Wert erhoben, und die Einfuhrumsatzsteuer kommt obendrauf – in Deutschland mit 19 %.",
+    "blocks": [
+      {
+        "h2": "Der Zollwert: was dazugehört"
+      },
+      {
+        "p": "Der Zollwert eines außerhalb der EU gekauften Autos ist der Transaktionswert plus die Kosten bis zur EU-Grenze: Auktionsgebühren, Transport zum Exporthafen, Seefracht und Versicherung. Kosten nach der Grenze – Entladung im Hafen, Transport innerhalb der EU – gehören nicht dazu. Man spricht deshalb vom CIF-Wert (Cost, Insurance, Freight)."
+      },
+      {
+        "p": "Weil das Auto in Dollar gekauft wird, rechnet der Zoll den Betrag mit dem amtlichen Zollkurs in Euro um. Schon deshalb kann der Endbetrag leicht von Ihrer eigenen Rechnung abweichen."
+      },
+      {
+        "p": "Ein Beispiel: Ein Auto für 10.000 Dollar mit 1.200 Dollar Gebühren, 450 Dollar Inlandstransport, 1.200 Dollar Fracht und 180 Dollar Versicherung hat einen Zollwert von 13.030 Dollar. Darauf werden 10 % Zoll erhoben, also 1.303 Dollar – nicht nur auf die 10.000 Dollar Kaufpreis."
+      },
+      {
+        "h2": "Die Zollsätze"
+      },
+      {
+        "table": {
+          "head": [
+            "Fahrzeug",
+            "Zolltarifnummer",
+            "Zoll"
+          ],
+          "rows": [
+            [
+              "Pkw, SUV",
+              "8703",
+              "10 %"
+            ],
+            [
+              "Pickup, leichter Lkw",
+              "8704",
+              "22 %"
+            ],
+            [
+              "Motorrad",
+              "8711",
+              "6–8 %"
+            ],
+            [
+              "Sammlerfahrzeug (30+ Jahre, Originalzustand)",
+              "9705",
+              "0 %"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Pickups wie Ford F-150 oder RAM werden in der Regel als Nutzfahrzeug mit 22 % verzollt. Ob ein Fahrzeug als Sammlerstück mit 0 % gilt, hängt nicht nur vom Alter ab, sondern auch vom weitgehend originalen Zustand. Sammlerfahrzeuge profitieren zudem von einem ermäßigten Einfuhrumsatzsteuersatz – das prüft der Zoll im Einzelfall."
+      },
+      {
+        "h2": "Einfuhrumsatzsteuer: 19 % in Deutschland"
+      },
+      {
+        "p": "Die Einfuhrumsatzsteuer (EUSt) wird auf den Zollwert plus Zoll plus die Transportkosten bis zum ersten Bestimmungsort in der EU berechnet. Sie wird in dem Mitgliedstaat fällig, in dem das Auto in den freien Verkehr überführt wird, zum dortigen Regelsatz. Verzollen Sie in Bremerhaven, Hamburg oder Emden, sind es 19 %. Wird das Auto in Rotterdam oder Antwerpen abgefertigt, zahlen Sie 21 % in den Niederlanden bzw. Belgien. Eine einmalige Zulassungssteuer kommt in Deutschland nicht hinzu, anders als etwa die BPM in den Niederlanden oder die NoVA in Österreich."
+      },
+      {
+        "h2": "Beispielrechnung"
+      },
+      {
+        "table": {
+          "head": [
+            "",
+            "EUR"
+          ],
+          "rows": [
+            [
+              "Zollwert (CIF)",
+              "12.000"
+            ],
+            [
+              "Zoll 10 %",
+              "1.200"
+            ],
+            [
+              "Entladung und Transport zum Bestimmungsort",
+              "700"
+            ],
+            [
+              "Bemessungsgrundlage EUSt",
+              "13.900"
+            ],
+            [
+              "Einfuhrumsatzsteuer 19 %",
+              "2.641"
+            ],
+            [
+              "Zoll + EUSt",
+              "3.841"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Zum Vergleich: Bei einer Verzollung in den Niederlanden mit 21 % wären es 2.919 Euro Einfuhrumsatzsteuer, also 278 Euro mehr. Deshalb lohnt sich für Käufer in Deutschland die Verzollung im Inland."
+      },
+      {
+        "h2": "Wie die Verzollung praktisch abläuft"
+      },
+      {
+        "ol": [
+          "Das Auto kommt im Hafen an und wird aus dem Container entladen.",
+          "Ein Zollagent (Spediteur) erstellt die Zollanmeldung beim zuständigen Zollamt.",
+          "Sie oder der Agent zahlen Zoll und Einfuhrumsatzsteuer.",
+          "Sie erhalten den Zollbescheid bzw. die Unbedenklichkeitsbescheinigung für die Zulassung.",
+          "Das Auto wird freigegeben und zu Ihnen transportiert."
+        ]
+      },
+      {
+        "p": "Für die Zulassungsstelle ist der Nachweis über die Verzollung wichtig. Bewahren Sie ihn zusammen mit der Kaufrechnung sorgfältig auf."
+      },
+      {
+        "h2": "Häufige Fehler bei Zoll und Einfuhrumsatzsteuer"
+      },
+      {
+        "ul": [
+          "Die Einfuhrumsatzsteuer nur auf den Kaufpreis rechnen – tatsächlich zählen Gebühren, Fracht, Versicherung, Zoll und der Transport bis zum Bestimmungsort mit.",
+          "Die Auktionsgebühren in der Rechnung weglassen: Sie gehören zum Zollwert und fehlen sonst später als Nachweis.",
+          "Einen Pickup als Pkw kalkulieren und dann von 22 % Zoll überrascht werden.",
+          "In einem Nachbarhafen verzollen und den höheren Steuersatz übersehen.",
+          "Vergessen, dass Wechselkursschwankungen zwischen Zuschlag und Verzollung den Euro-Betrag verändern."
+        ]
+      },
+      {
+        "p": "Wer diese Punkte vorher prüft, erlebt bei der Zollanmeldung selten Überraschungen. Bei Unsicherheiten zur Einreihung, etwa bei Wohnmobilen, Quads oder umgebauten Fahrzeugen, kann eine verbindliche Zolltarifauskunft beim Zoll Klarheit schaffen, bevor Sie kaufen."
+      },
+      {
+        "h2": "Zollverfahren 4200"
+      },
+      {
+        "p": "Ein umsatzsteuerlich registriertes Unternehmen, das ein Auto einführt, das direkt in ein anderes EU-Land weitergeht, kann es im Verfahren 4200 abfertigen: Im Ankunftsland wird keine Einfuhrumsatzsteuer gezahlt, und der Erwerber versteuert in seinem Land im Reverse-Charge-Verfahren. Privatpersonen können dieses Verfahren nicht nutzen."
+      },
+      {
+        "tip": "Bewahren Sie Kaufrechnung, Quittungen der Auktionsgebühren, Frachtrechnung und Bill of Lading auf – der Zoll kann den angegebenen Wert anzweifeln, und diese Dokumente belegen ihn."
+      },
+      {
+        "p": "Der Rechner von CarImport.eu berechnet Zoll und Einfuhrumsatzsteuer automatisch mit dem Satz des Verzollungslandes. Sie geben nur Ihre Adresse ein, und er vergleicht alle 43 EU-Häfen von Tür zu Tür."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kann der Zoll den Wert meines Autos erhöhen?",
+        "a": "Ja, wenn der angegebene Preis unrealistisch niedrig erscheint. Ein Nachweis des Auktionsergebnisses und der Zahlungen klärt das in der Regel."
+      },
+      {
+        "q": "Ist der Zoll für Elektroautos niedriger?",
+        "a": "Nein, auch batterieelektrische Pkw zahlen 10 % Zoll und 19 % Einfuhrumsatzsteuer."
+      },
+      {
+        "q": "Kann ich die Einfuhrumsatzsteuer als Privatperson zurückfordern?",
+        "a": "Nein. Nur vorsteuerabzugsberechtigte Unternehmen können sie als Vorsteuer geltend machen."
+      }
+    ]
+  },
+  {
+    "id": "registration",
+    "slug": "us-auto-zulassen-vollabnahme-21-stvzo-ablauf",
+    "category": "registration",
+    "origin": null,
+    "date": "2026-10-04",
+    "minutes": 3,
+    "title": "US-Auto zulassen: Vollabnahme, Dokumente und Ablauf in Deutschland",
+    "metaTitle": "US-Auto zulassen: Vollabnahme nach §21 StVZO erklärt | CarImport.eu",
+    "description": "US-Auto zulassen in Deutschland: welche Dokumente Sie brauchen, wie die Vollabnahme nach §21 StVZO bei TÜV oder DEKRA abläuft und was umgebaut werden muss.",
+    "lead": "Die Verzollung ist nur die halbe Miete. Bevor das Auto Kennzeichen bekommt, muss es die deutschen technischen Anforderungen erfüllen, und Sie brauchen eine Reihe von Dokumenten. Hier ist der Weg von der Hafenabholung bis zur Zulassungsstelle.",
+    "blocks": [
+      {
+        "h2": "Diese Dokumente brauchen Sie"
+      },
+      {
+        "ul": [
+          "US-Title oder Exportbescheinigung und die Kaufrechnung der Auktion",
+          "Zollbescheid bzw. Nachweis über gezahlten Zoll und Einfuhrumsatzsteuer",
+          "Bill of Lading (Konnossement)",
+          "Gutachten nach §21 StVZO (Vollgutachten) von TÜV oder DEKRA",
+          "Übersetzungen fremdsprachiger Dokumente, falls die Behörde sie verlangt",
+          "eVB-Nummer Ihrer Kfz-Versicherung",
+          "Personalausweis oder Reisepass und SEPA-Lastschriftmandat für die Kfz-Steuer"
+        ]
+      },
+      {
+        "p": "Fehlt eines dieser Papiere, schickt die Zulassungsstelle Sie wieder nach Hause. Prüfen Sie deshalb vor dem Termin, ob Fahrgestellnummer und Fahrzeugdaten auf Title, Rechnung, Zollbescheid und Gutachten exakt übereinstimmen."
+      },
+      {
+        "h2": "Warum ein Vollgutachten nötig ist"
+      },
+      {
+        "p": "Autos, die für den US-Markt gebaut wurden, haben keine EU-Typgenehmigung und kein europäisches CoC-Papier. Deshalb reicht eine normale Hauptuntersuchung nicht: Das Auto braucht eine Einzelbetriebserlaubnis über ein Vollgutachten nach §21 StVZO, oft „Vollabnahme“ genannt. Ein amtlich anerkannter Prüfer von TÜV oder DEKRA prüft dabei, ob das Fahrzeug den deutschen Vorschriften entspricht, und erstellt die Daten für die Zulassungsbescheinigung. Die Hauptuntersuchung (HU) wird in der Regel gleich mit erledigt."
+      },
+      {
+        "h2": "Was bei US-Autos meist umgebaut werden muss"
+      },
+      {
+        "ul": [
+          "Blinker: rote Heckblinker und kombinierte Brems-/Blinkleuchten müssen auf gelbe Blinker umgerüstet werden.",
+          "Seitenmarkierungsleuchten: werden oft deaktiviert oder angepasst.",
+          "Scheinwerfer: US-Scheinwerfer haben ein anderes Lichtbild und brauchen eventuell eine Anpassung oder EU-Scheinwerfer.",
+          "Nebelschlussleuchte: in der EU vorgeschrieben, bei US-Autos häufig nachzurüsten.",
+          "Tacho: muss km/h anzeigen, meist per Software oder Zusatzskala lösbar.",
+          "Abgas und Geräusch: Nachweise werden über Herstellerdaten oder Messungen erbracht.",
+          "Reifen und Felgen: Traglast und Geschwindigkeitsindex müssen passen."
+        ]
+      },
+      {
+        "p": "Der Aufwand hängt stark vom Modell ab. Bei manchen Autos genügt ein einfaches Umrüstset, bei anderen sind Steuergeräte oder Scheinwerfer zu tauschen. Hilfreich ist ein Datenblatt des Herstellers oder ein Vergleich mit einem baugleichen EU-Modell."
+      },
+      {
+        "tip": "Fragen Sie eine Werkstatt, die US-Autos umrüstet, oder direkt TÜV bzw. DEKRA nach der Liste der nötigen Umbauten – am besten vor dem Kauf. Bei manchen Modellen kostet die Umrüstung ein Vielfaches anderer."
+      },
+      {
+        "h2": "Autos aus Japan, Kanada und den VAE"
+      },
+      {
+        "p": "Für japanische Autos gilt dasselbe Verfahren mit Vollgutachten. Rechtslenker sind in Deutschland zulassungsfähig, die Scheinwerfer müssen aber auf Rechtsverkehr eingestellt oder getauscht werden. Kanadische Fahrzeuge haben oft bereits eine km/h-Anzeige und teilweise gelbe Blinker, was die Umrüstung erleichtert. Autos aus den VAE sind häufig nach Golf-Spezifikation (GCC) gebaut und ähneln technisch oft US-Modellen. Bei Autos aus Großbritannien helfen die europäischen Wurzeln: Viele haben Unterlagen, die einer EU-Typgenehmigung nahekommen, trotzdem verlangt die Zulassungsstelle nach dem Brexit eine Prüfung. In jedem Fall gilt: Je näher das Fahrzeug an einem in Europa verkauften Modell ist, desto einfacher und günstiger wird die Vollabnahme."
+      },
+      {
+        "h2": "Ablauf Schritt für Schritt"
+      },
+      {
+        "ol": [
+          "Auto nach der Verzollung per Transporter oder mit Kurzzeitkennzeichen zur Werkstatt bringen.",
+          "Umbauten durchführen lassen (Beleuchtung, Tacho, gegebenenfalls Scheinwerfer).",
+          "Termin für das Vollgutachten nach §21 StVZO bei TÜV oder DEKRA vereinbaren.",
+          "Gutachten und eventuell die HU-Bescheinigung erhalten.",
+          "Versicherung abschließen und eVB-Nummer erhalten.",
+          "Termin bei der Zulassungsstelle Ihres Wohnorts mit allen Unterlagen wahrnehmen.",
+          "Kennzeichen prägen lassen, Plaketten erhalten – das Auto ist zugelassen."
+        ]
+      },
+      {
+        "h2": "Kosten und Steuern bei der Zulassung"
+      },
+      {
+        "p": "Deutschland erhebt keine einmalige Zulassungssteuer auf importierte Autos, anders als die Niederlande mit der BPM oder Österreich mit der NoVA. Sie zahlen die Kosten für Umbauten und Gutachten, die Gebühren der Zulassungsstelle und die Kennzeichen. Danach fällt die jährliche Kfz-Steuer an, die vom Hubraum und vom CO₂-Ausstoß abhängt. Eine gesetzliche Frist, innerhalb der ein importiertes Auto zugelassen werden muss, sehen die Angaben für Deutschland nicht vor – solange es nicht zugelassen ist, darf es aber nicht auf öffentlichen Straßen fahren."
+      },
+      {
+        "p": "Der Rechner von CarImport.eu zeigt Ihnen die Kosten bis vor die Tür, einschließlich Zoll, 19 % Einfuhrumsatzsteuer und Transport. Sie geben nur Ihre Adresse ein, er vergleicht alle 43 EU-Häfen von Tür zu Tür."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Brauche ich ein CoC-Papier?",
+        "a": "Für die USA oder Japan gebaute Autos haben kein EU-CoC. Sie werden stattdessen über eine Einzelbetriebserlaubnis mit Vollgutachten nach §21 StVZO zugelassen."
+      },
+      {
+        "q": "Kann ich das Auto vom Hafen nach Hause fahren?",
+        "a": "Nur mit Kurzzeitkennzeichen und Versicherung und nur, wenn es verkehrssicher ist. Sonst nutzen Sie einen Autotransporter oder Abschleppwagen."
+      },
+      {
+        "q": "Wie lange dauert die Zulassung eines US-Autos?",
+        "a": "Mit Umbauten, Gutachten und Termin bei der Zulassungsstelle meist zwei bis sechs Wochen, abhängig von Werkstatt, Teileverfügbarkeit und Terminlage."
+      }
+    ]
+  },
+  {
+    "id": "port-choice",
+    "slug": "bremerhaven-oder-hamburg-welcher-hafen-fuer-auto-import",
+    "category": "logistics",
+    "origin": null,
+    "date": "2026-09-30",
+    "minutes": 3,
+    "title": "Bremerhaven oder Hamburg? Welcher Hafen sich für den Autoimport lohnt",
+    "metaTitle": "Bremerhaven oder Hamburg? Der beste Hafen für Ihr Auto | CarImport.eu",
+    "description": "Bremerhaven oder Hamburg, Emden, Rotterdam oder Antwerpen: wie der Hafen Einfuhrumsatzsteuer, Gebühren und Lieferkosten für Käufer in Deutschland verändert.",
+    "lead": "Die meisten Autos aus den USA landen für deutsche Käufer in Bremerhaven, Hamburg, Rotterdam oder Antwerpen. Verzollt werden können sie aber in jedem der 43 EU-Häfen. Der Hafen entscheidet über den Steuersatz, die Hafengebühren und wie weit das Auto noch auf der Straße fährt.",
+    "blocks": [
+      {
+        "h2": "Drei Dinge, die der Hafen verändert"
+      },
+      {
+        "ol": [
+          "Einfuhrumsatzsteuer: Sie zahlen den Satz des Hafenlandes – 19 % in Deutschland, 21 % in den Niederlanden und Belgien, 25 % in Dänemark.",
+          "Gebühren: Terminal, Entladung des Containers und Zollagent unterscheiden sich von Hafen zu Hafen.",
+          "Straßenentfernung: Ein Hafen mit günstigen Gebühren kann weit von Ihrer Adresse entfernt liegen."
+        ]
+      },
+      {
+        "h2": "Die nächsten Häfen für Deutschland"
+      },
+      {
+        "p": "Gemessen vom Bevölkerungsschwerpunkt Deutschlands liegen sechs Häfen innerhalb von rund 500 Straßenkilometern. Überraschend: Antwerpen ist im Schnitt sogar am nächsten, weil viele Deutsche im Westen und Südwesten wohnen. Für Norddeutschland sind Bremerhaven, Hamburg und Emden natürlich deutlich näher."
+      },
+      {
+        "table": {
+          "head": [
+            "Hafen",
+            "Land",
+            "Straße bis zum Schwerpunkt Deutschlands",
+            "Einfuhrumsatzsteuer"
+          ],
+          "rows": [
+            [
+              "Antwerpen",
+              "Belgien",
+              "≈ 416 km",
+              "21 %"
+            ],
+            [
+              "Amsterdam",
+              "Niederlande",
+              "≈ 465 km",
+              "21 %"
+            ],
+            [
+              "Emden",
+              "Deutschland",
+              "≈ 468 km",
+              "19 %"
+            ],
+            [
+              "Rotterdam",
+              "Niederlande",
+              "≈ 472 km",
+              "21 %"
+            ],
+            [
+              "Bremerhaven",
+              "Deutschland",
+              "≈ 478 km",
+              "19 %"
+            ],
+            [
+              "Vlissingen",
+              "Niederlande",
+              "≈ 483 km",
+              "21 %"
+            ],
+            [
+              "Hamburg",
+              "Deutschland",
+              "je nach Adresse",
+              "19 %"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Bremerhaven oder Hamburg?"
+      },
+      {
+        "p": "Bremerhaven ist einer der größten Autohäfen Europas und das Ziel vieler Container- und RoRo-Linien von der US-Ostküste. Die Überfahrt dauert ab etwa zwei Wochen. Hamburg wird ebenfalls regelmäßig angelaufen, die Fahrtzeit ist ähnlich, die Terminalgebühren sind tendenziell etwas höher. Emden ist vor allem für RoRo und Neuwagen bekannt und hat günstige Entladekosten. Für Käufer in Norddeutschland entscheidet meist die Entfernung zur eigenen Adresse; im Süden spielen die Unterschiede zwischen den deutschen Häfen eine kleinere Rolle als der Transportpreis bis nach Bayern oder Baden-Württemberg."
+      },
+      {
+        "h2": "Lohnt sich Rotterdam oder Antwerpen?"
+      },
+      {
+        "p": "Rotterdam und Antwerpen haben dichte Fahrpläne und oft günstige Containerfrachten. Wenn Sie dort verzollen, zahlen Sie aber 21 % Einfuhrumsatzsteuer statt 19 %. Bei einer Bemessungsgrundlage von 15.000 Euro sind das 300 Euro mehr. Diese Differenz holen niedrigere Hafengebühren selten wieder herein. Wer im Westen wohnt, etwa im Rheinland, kann trotzdem profitieren, wenn das Auto in einem Beneluxhafen ankommt und in Deutschland verzollt wird – zum Beispiel im Versandverfahren. Das erfordert einen Spediteur, der den Transit organisiert."
+      },
+      {
+        "h2": "Wann ein ausländischer Hafen günstiger ist"
+      },
+      {
+        "p": "Für Käufer in Deutschland ist das selten der Fall, denn 19 % gehören zu den niedrigeren Sätzen in der EU. Nur wenige Länder liegen darunter, etwa Luxemburg mit 17 % oder Malta mit 18 %, und die sind für ein Auto aus den USA keine praktische Route. In Nachbarländern wie Polen (23 %), Dänemark (25 %) oder Tschechien (21 %) ist es umgekehrt: Dort kann die Verzollung in einem deutschen Hafen Geld sparen. Denken Sie aber daran, dass ein im Ausland verzolltes Auto in Deutschland trotzdem das Vollgutachten braucht."
+      },
+      {
+        "h2": "So vergleichen Sie die Häfen richtig"
+      },
+      {
+        "ol": [
+          "Fragen Sie nach der Seefracht pro Auto bis zum jeweiligen Hafen, nicht nur nach dem günstigsten Angebot.",
+          "Addieren Sie Terminal-, Entlade- und Zollagentengebühren des Hafens.",
+          "Rechnen Sie die Einfuhrumsatzsteuer mit dem Satz des Hafenlandes auf CIF-Wert plus Zoll plus Transport.",
+          "Holen Sie einen Preis für den Autotransporter vom Hafen bis zu Ihrer Adresse ein.",
+          "Berücksichtigen Sie die Fahrzeit: Ein langsamerer Hafen bindet Ihr Geld länger und verzögert die Zulassung."
+        ]
+      },
+      {
+        "p": "Erst die Summe dieser Posten zeigt, welcher Hafen für Ihre Adresse wirklich am günstigsten ist. Ein Unterschied von 50 Euro bei den Hafengebühren ist schnell durch 100 zusätzliche Straßenkilometer aufgezehrt."
+      },
+      {
+        "h2": "Fahrzeiten aus Japan und den VAE"
+      },
+      {
+        "p": "Von der US-Ostküste sind die Nordseehäfen am schnellsten, etwa zwei Wochen. Aus Japan und den VAE fahren die Schiffe durch den Suezkanal, sodass Mittelmeerhäfen wie Koper, Genua oder Triest eine Woche oder mehr schneller sind. Für Süddeutschland kann Koper bei einem JDM-Import interessant sein; die Straßenstrecke ist dann allerdings länger, und es gilt der slowenische Steuersatz von 22 %."
+      },
+      {
+        "tip": "Geben Sie Ihre Adresse in den Rechner ein: Er vergleicht alle 43 EU-Häfen von Tür zu Tür – Fracht, Hafengebühren, Einfuhrumsatzsteuer und Straßentransport – und wählt automatisch den günstigsten."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kann ich das Auto in einem anderen Land verzollen und in Deutschland zulassen?",
+        "a": "Ja. Sie zahlen die Einfuhrumsatzsteuer im Hafenland und lassen das Auto mit den Zollpapieren in Deutschland zu. Bei einem höheren Satz im Ausland zahlen Sie allerdings mehr."
+      },
+      {
+        "q": "Welche Häfen wickeln die meisten Autos aus den USA ab?",
+        "a": "Bremerhaven, Rotterdam, Antwerpen und Hamburg an der Nordsee sowie Ostseehäfen wie Gdynia und Klaipėda für Mittel- und Osteuropa."
+      },
+      {
+        "q": "Ist Bremerhaven günstiger als Hamburg?",
+        "a": "Die Entladegebühren in Bremerhaven sind meist etwas niedriger, der Unterschied ist aber klein. Entscheidend sind die Fracht der jeweiligen Linie und die Entfernung zu Ihrer Adresse."
+      }
+    ]
+  },
+  {
+    "id": "japan-jdm",
+    "slug": "jdm-auto-aus-japan-importieren-auction-sheet-kosten",
+    "category": "buying",
+    "origin": "JAPAN",
+    "date": "2026-09-25",
+    "minutes": 3,
+    "title": "JDM-Auto aus Japan importieren: Auction Sheet, Noten und Kosten",
+    "metaTitle": "JDM-Auto aus Japan importieren – Auction Sheet & Kosten | CarImport.eu",
+    "description": "Auto aus Japan importieren: wie japanische Auktionen funktionieren, wie Sie ein Auction Sheet lesen und was ein JDM-Import nach Deutschland kostet.",
+    "lead": "Japanische Auktionen sind bekannt für ehrliche Bewertungen und Autos in sehr gutem Zustand. Mit einem zuverlässigen Exporteur ist ein JDM-Kauf sicherer als ein Blindkauf bei US-Auktionen – vorausgesetzt, Sie verstehen das Auction Sheet.",
+    "blocks": [
+      {
+        "h2": "Wie der Kauf in Japan funktioniert"
+      },
+      {
+        "p": "Auktionen wie USS, TAA, CAA und JU sind lizenzierten Händlern vorbehalten. Sie kaufen deshalb über einen Exporteur: Sie wählen Autos aus, legen ein Höchstgebot fest, und der Exporteur bietet, bezahlt, meldet das Auto für den Export ab und verschifft es. Viele Exporteure bieten Zugang zu Auktionslisten mit Tausenden Fahrzeugen pro Woche, inklusive Fotos und Auction Sheet. Vereinbaren Sie vorab schriftlich, welche Gebühren anfallen und in welcher Währung Sie zahlen – meist in Yen oder Dollar."
+      },
+      {
+        "h2": "Den richtigen Exporteur finden"
+      },
+      {
+        "p": "Der Exporteur ist Ihr wichtigster Partner, denn Sie sehen das Auto vor dem Kauf nicht selbst. Ein guter Exporteur übersetzt das Auction Sheet vollständig, schickt zusätzliche Fotos und sagt Ihnen offen, wenn ein Auto nicht zu Ihren Wünschen passt."
+      },
+      {
+        "ul": [
+          "Transparente Gebührenliste mit allen Posten bis zur Verladung im Hafen",
+          "Erfahrung mit Verschiffungen nach Deutschland oder in die EU",
+          "Vollständige Übersetzung des Auction Sheets inklusive Prüfernotizen",
+          "Klare Regeln zu Anzahlung, Zahlungsfristen und Stornierung",
+          "Erreichbarkeit auf Englisch oder Deutsch und schnelle Antworten",
+          "Referenzen anderer europäischer Käufer"
+        ]
+      },
+      {
+        "p": "Seien Sie vorsichtig bei Angeboten, die deutlich unter dem üblichen Auktionsniveau liegen, und überweisen Sie nur an Firmenkonten, deren Inhaber Sie überprüft haben."
+      },
+      {
+        "h2": "Das Auction Sheet lesen"
+      },
+      {
+        "p": "Jedes Auto wird vor der Auktion von einem unabhängigen Prüfer des Auktionshauses begutachtet. Das Ergebnis ist das Auction Sheet, ein Blatt auf Japanisch mit Noten, einer Karosserieskizze und Anmerkungen."
+      },
+      {
+        "ul": [
+          "Gesamtnote: 6–5 fast neu, 4,5–4 sehr gut, 3,5 durchschnittlich, R/RA reparierter Unfallwagen",
+          "Innenraumnote: A bis D",
+          "Karosserieskizze: A = Kratzer, U = Delle, W = Welle/Nachlackierung, S = Rost, C = Korrosion, jeweils mit einer Zahl für die Größe",
+          "Anmerkungen des Prüfers – lassen Sie sie immer übersetzen",
+          "Kilometerstand, Erstzulassungsjahr, Ausstattungscodes und Farbcode"
+        ]
+      },
+      {
+        "tip": "Eine Note R oder RA ist nicht automatisch schlecht, aber fragen Sie, was repariert wurde – eine Rahmenreparatur ist etwas ganz anderes als eine getauschte Stoßstange."
+      },
+      {
+        "h2": "Kosten und Zeitplan"
+      },
+      {
+        "p": "Zum Zuschlag kommen die Gebühr des Exporteurs, der Transport innerhalb Japans, Exportdokumente und die Seefracht. Die Schiffe fahren durch den Suezkanal: rund sechs Wochen bis Bremerhaven oder Hamburg, gut vier bis fünf Wochen bis zu Mittelmeerhäfen wie Koper oder Genua. Für Pkw beträgt der Zoll 10 %, die Einfuhrumsatzsteuer wird im Verzollungsland fällig – in Deutschland 19 % auf Zollwert, Zoll und Transport bis zum Bestimmungsort."
+      },
+      {
+        "table": {
+          "head": [
+            "Posten",
+            "Worauf es ankommt"
+          ],
+          "rows": [
+            [
+              "Zuschlag und Auktionsgebühr",
+              "in Yen, nach Auktionshaus unterschiedlich"
+            ],
+            [
+              "Exporteur-Gebühr",
+              "fester Betrag pro Auto"
+            ],
+            [
+              "Transport in Japan und Exportpapiere",
+              "je nach Entfernung zum Hafen"
+            ],
+            [
+              "Seefracht und Versicherung",
+              "Container oder RoRo, Teil des Zollwerts"
+            ],
+            [
+              "Zoll",
+              "10 % für Pkw, 0 % für Sammlerfahrzeuge über 30 Jahre"
+            ],
+            [
+              "Einfuhrumsatzsteuer",
+              "19 % bei Verzollung in Deutschland"
+            ],
+            [
+              "Vollgutachten und Umbauten",
+              "abhängig vom Modell"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Planen Sie außerdem Puffer für Verzögerungen ein: Schiffe aus Asien laufen oft mehrere Häfen an, und Umladungen können die Ankunft um ein bis zwei Wochen verschieben. Das Standgeld im Hafen fällt nach Ablauf der Freizeit auch dann an, wenn die Verzögerung nicht Ihre Schuld ist."
+      },
+      {
+        "h2": "Rechtslenker in Deutschland"
+      },
+      {
+        "p": "Rechtsgelenkte Autos sind in Deutschland zulassungsfähig. Die Scheinwerfer müssen in der Regel auf Rechtsverkehr eingestellt oder getauscht werden, und wie jedes Importauto ohne EU-Typgenehmigung braucht ein JDM-Fahrzeug ein Vollgutachten nach §21 StVZO bei TÜV oder DEKRA. Ein Tacho in km/h ist bei japanischen Autos bereits Standard, was die Umrüstung oft einfacher macht als bei US-Autos. Im Alltag sollten Sie bedenken, dass Überholen auf Landstraßen und Mautstellen mit Rechtslenker etwas Übung erfordern."
+      },
+      {
+        "h2": "Beliebte JDM-Modelle und worauf Sie achten sollten"
+      },
+      {
+        "p": "Gefragt sind vor allem Sportwagen und Kei-Cars, die in Europa nie offiziell verkauft wurden, sowie gepflegte Limousinen und Kombis aus den 1990er- und 2000er-Jahren. Bei Modellen, die älter als 30 Jahre sind, kann der Zoll entfallen, wenn sie als Sammlerfahrzeug im Originalzustand gelten, und ein H-Kennzeichen kommt in Frage. Prüfen Sie bei jüngeren Fahrzeugen, ob Abgas- und Geräuschnachweise für das Vollgutachten beschafft werden können, und ob Ersatzteile in Europa verfügbar sind."
+      },
+      {
+        "p": "Der Rechner von CarImport.eu kalkuliert auch Importe aus Japan. Sie geben nur Ihre Adresse ein, und er vergleicht alle 43 EU-Häfen von Tür zu Tür – inklusive der schnelleren Mittelmeerhäfen."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Sind japanische Kilometerstände zuverlässig?",
+        "a": "Im Allgemeinen ja – Auction Sheets und Exportbescheinigungen dokumentieren den Kilometerstand, und Manipulationen sind im Vergleich zu anderen Märkten selten."
+      },
+      {
+        "q": "Wie sieht es mit Rost aus?",
+        "a": "Autos aus Nordjapan (Hokkaido) können Unterbodenrost durch Streusalz haben; das Sheet markiert ihn mit S oder C."
+      },
+      {
+        "q": "Wie lange dauert ein Import aus Japan nach Deutschland?",
+        "a": "Vom Zuschlag bis zur Ankunft meist acht bis zehn Wochen: Abmeldung und Transport in Japan, rund sechs Wochen Überfahrt in die Nordsee, dann Verzollung und Lieferung."
+      }
+    ]
+  },
+  {
+    "id": "checklist",
+    "slug": "checkliste-auto-aus-usa-kaufen-vor-dem-bieten",
+    "category": "buying",
+    "origin": null,
+    "date": "2026-09-20",
+    "minutes": 3,
+    "title": "Checkliste: 12 Punkte, bevor Sie auf ein Auto aus den USA oder Japan bieten",
+    "metaTitle": "Checkliste vor dem Bieten auf ein Auto aus den USA | CarImport.eu",
+    "description": "Zwölf Prüfpunkte, die Ihr Budget schützen, wenn Sie ein Auto im Ausland ersteigern: VIN-Historie, Title, Schäden, Gebühren, Transport, Steuern und Zulassung.",
+    "lead": "Bei einer Auktion haben Sie oft nur Minuten für die Entscheidung. Diese zwölf Punkte kosten Sie einen Abend Vorbereitung und bewahren Sie vor den teuersten Fehlern beim Autoimport nach Deutschland.",
+    "blocks": [
+      {
+        "h2": "Die 12 Punkte im Überblick"
+      },
+      {
+        "ol": [
+          "VIN-Historie prüfen: Lassen Sie einen Bericht von Carfax oder AutoCheck laufen und achten Sie auf Unfälle, Hochwasser, Kilometerstand und Diebstahl.",
+          "Title-Art kontrollieren: Meiden Sie Parts Only und Non-Repairable, wenn Sie das Auto in Deutschland zulassen wollen.",
+          "Jedes Foto studieren: Spaltmaße, Airbags, Wasserränder, Motorraum und Unterboden verraten oft mehr als der Text.",
+          "Zustandslabels als Information lesen, nicht als Garantie: Run and Drive heißt nur, dass das Auto beim Check-in fuhr.",
+          "Standort des Yards prüfen: Die Entfernung zum Exporthafen bestimmt die Transportkosten in den USA.",
+          "Alle Auktions- und Broker-Gebühren für Ihre Gebotshöhe ausrechnen, inklusive Gate Fee und Online-Gebühr.",
+          "Die gesamten Kosten bis vor die Tür ermitteln: Fracht, 10 % Zoll, 19 % Einfuhrumsatzsteuer, Hafen und Zustellung.",
+          "Häfen für Ihre Adresse vergleichen: Bremerhaven, Hamburg, Emden, Rotterdam oder Antwerpen.",
+          "Einen Kostenvoranschlag für die Reparatur und Ersatzteilpreise in Deutschland einholen.",
+          "Klären, was für die Zulassung umgebaut werden muss: Blinker, Scheinwerfer, Nebelschlussleuchte, Tacho – und das Vollgutachten nach §21 StVZO.",
+          "Den Zeitplan planen: Zahlungs- und Abholfristen, Überfahrt, Verzollung, Werkstatt und Termin bei der Zulassungsstelle.",
+          "Ein Höchstgebot festlegen – und dabei bleiben, auch wenn die Auktion spannend wird."
+        ]
+      },
+      {
+        "tip": "Die Schritte 6 bis 8 erledigt der Rechner von CarImport.eu für Sie: Sie geben nur Ihre Adresse ein, er vergleicht alle 43 EU-Häfen von Tür zu Tür, addiert alle Gebühren und Steuern und zeigt ein optimistisches, ein durchschnittliches und ein pessimistisches Ergebnis."
+      },
+      {
+        "h2": "Warum die Reihenfolge wichtig ist"
+      },
+      {
+        "p": "Die ersten fünf Punkte sortieren Autos aus, die gar nicht erst in Frage kommen. Es lohnt sich nicht, Gebühren und Steuern für ein Hochwasserauto mit Parts-Only-Title auszurechnen. Erst wenn ein Auto diese Hürden nimmt, rechnen Sie die vollständigen Kosten durch. Die Punkte 9 und 10 betreffen die Zeit nach der Ankunft und werden am häufigsten unterschätzt: Eine Reparatur, die in den USA nach Kleinigkeit aussieht, kann in einer deutschen Werkstatt viel Geld kosten, und manche Umrüstungen für das Vollgutachten sind aufwendiger als gedacht."
+      },
+      {
+        "h2": "Beispiel: So entsteht ein realistisches Höchstgebot"
+      },
+      {
+        "p": "Angenommen, ein vergleichbares Auto kostet in Deutschland zugelassen 25.000 Euro. Ziehen Sie davon die geschätzten Kosten für Reparatur, Umbauten, Vollgutachten und Zulassung ab, dann Lieferung, Hafen, Einfuhrumsatzsteuer, Zoll, Seefracht, Transport in den USA und die Auktionsgebühren. Behalten Sie zusätzlich eine Reserve von 10–15 %. Was übrig bleibt, ist Ihr Höchstgebot in Dollar. Liegt es unter dem aktuellen Gebot, lassen Sie das Auto ziehen – es kommen jede Woche neue."
+      },
+      {
+        "h2": "Nach dem Zuschlag: die ersten Tage"
+      },
+      {
+        "p": "Auch nach dem Zuschlag gibt es eine kurze Checkliste. Bezahlen Sie die Auktion innerhalb der Frist, damit keine Verzugsgebühren anfallen. Beauftragen Sie sofort die Abholung, denn die kostenlose Standzeit auf dem Yard ist kurz. Lassen Sie sich Fotos bei der Abholung schicken, um den Zustand zu dokumentieren, und klären Sie mit dem Broker, wann der Title beim Exporteur eintrifft. Buchen Sie die Seefracht erst, wenn alle Papiere vollständig sind, sonst wartet das Auto im Hafen und verursacht weitere Kosten. Informieren Sie schließlich Ihre Werkstatt und vereinbaren Sie einen Termin für Umbauten und Vollgutachten, damit das Auto nach der Ankunft nicht wochenlang ungenutzt steht."
+      },
+      {
+        "h2": "Die häufigsten Fehler"
+      },
+      {
+        "ul": [
+          "Bis zum deutschen Marktpreis mitbieten, ohne Gebühren und Steuern einzurechnen",
+          "Standgeld vergessen, wenn sich die Abholung verzögert",
+          "Reparaturen an einem „leichten“ Frontschaden unterschätzen",
+          "Die Kosten für Umrüstung und Vollgutachten nicht einplanen",
+          "Den Wechselkurs zwischen Zuschlag und Verzollung ignorieren",
+          "In einem ausländischen Hafen mit höherer Einfuhrumsatzsteuer verzollen"
+        ]
+      },
+      {
+        "h2": "Dokumente, die Sie aufbewahren sollten"
+      },
+      {
+        "p": "Sammeln Sie von Anfang an alle Unterlagen in einem Ordner: Auktionsrechnung, Zahlungsbelege, Gebührenquittungen, Title, Frachtrechnung, Bill of Lading, Versicherungspolice und Zollbescheid. Der Zoll kann den angegebenen Wert prüfen, und die Zulassungsstelle braucht einen Teil davon im Original. Wer hier ordentlich arbeitet, spart später Zeit und Ärger."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Wie viel Reserve sollte ich einplanen?",
+        "a": "Mindestens 10–15 % der Gesamtsumme für Überraschungen, bei nicht fahrbereiten Autos mehr."
+      },
+      {
+        "q": "Reicht ein VIN-Bericht?",
+        "a": "Er ist unverzichtbar, aber nicht vollständig – kombinieren Sie ihn mit den Fotos, dem Zustandsbericht und einem Kostenvoranschlag für die Reparatur."
+      },
+      {
+        "q": "Lohnt sich ein Import aus den USA überhaupt noch?",
+        "a": "Bei vielen Modellen ja, vor allem bei gefragten Ausstattungen oder Modellen, die es in Deutschland kaum gibt. Rechnen Sie aber immer mit den vollen Kosten bis vor die Tür und vergleichen Sie mit dem deutschen Gebrauchtwagenmarkt."
+      }
+    ]
   }
 ]

@@ -516,6 +516,12 @@
         "p": "Un’azienda con partita IVA che importa un’auto destinata direttamente a un altro Paese UE può sdoganarla con il regime 4200: nel Paese di arrivo non paga l’IVA all’importazione, e l’acquirente assolve l’IVA nel proprio Paese con l’inversione contabile (reverse charge). I privati non possono usarlo: per loro l’IVA all’importazione è un costo definitivo."
       },
       {
+        "h2": "Quando e come si pagano dazio e IVA"
+      },
+      {
+        "p": "Dazio e IVA si pagano al momento dello sdoganamento, prima che l’auto lasci il porto. Lo spedizioniere ti invia il conto con le imposte e la sua parcella; finché non paghi, l’auto resta in custodia doganale e il terminal può addebitare giorni di sosta. Per questo conviene avere pronti tutti i documenti già quando la nave è in viaggio: fattura d’asta, titolo americano, polizza di carico e prova del pagamento del nolo. Se la dogana decide un controllo fisico del container, i tempi si allungano di qualche giorno e possono aggiungersi spese di ispezione."
+      },
+      {
         "h2": "Gli errori più comuni"
       },
       {
@@ -542,6 +548,563 @@
       {
         "q": "Un privato può sdoganare da solo senza spedizioniere?",
         "a": "In teoria sì, ma la dichiarazione doganale è tecnica e nei porti quasi tutti si affidano a uno spedizioniere, che costa circa 250–280 euro."
+      }
+    ]
+  },
+  {
+    "id": "registration",
+    "slug": "immatricolare-auto-importata-usa-giappone-documenti",
+    "category": "registration",
+    "origin": null,
+    "date": "2026-10-04",
+    "minutes": 3,
+    "title": "Come immatricolare in Italia un’auto importata dagli USA o dal Giappone",
+    "metaTitle": "Immatricolare un’auto importata: documenti e passaggi | CarImport.eu",
+    "description": "Nazionalizzazione di un’auto importata extra UE: documenti, omologazione in Motorizzazione Civile, PRA, IPT, modifiche a luci e tachimetro.",
+    "lead": "Lo sdoganamento è solo metà del lavoro. Prima di avere le targhe italiane, l’auto deve rispettare i requisiti tecnici europei e tu devi preparare una serie di documenti, quasi tutti tradotti. Ecco come funziona la nazionalizzazione di un’auto americana o giapponese.",
+    "blocks": [
+      {
+        "h2": "Chi fa cosa in Italia"
+      },
+      {
+        "p": "La nazionalizzazione coinvolge due uffici. La Motorizzazione Civile verifica che il veicolo sia conforme (revisione o omologazione) e rilascia la carta di circolazione con le targhe. Il PRA registra la proprietà e incassa l’IPT, l’imposta provinciale di trascrizione. Molti si affidano a un’agenzia di pratiche auto, che gestisce prenotazioni, moduli e pagamenti."
+      },
+      {
+        "table": {
+          "head": [
+            "Passo",
+            "Chi",
+            "Cosa serve"
+          ],
+          "rows": [
+            [
+              "Sdoganamento",
+              "Agenzia delle Dogane e dei Monopoli (tramite spedizioniere)",
+              "Fattura, titolo, polizza di carico"
+            ],
+            [
+              "Adeguamento tecnico",
+              "Officina specializzata",
+              "Elenco modifiche, ricambi omologati"
+            ],
+            [
+              "Revisione / omologazione",
+              "Motorizzazione Civile",
+              "Documenti tecnici, auto adeguata"
+            ],
+            [
+              "Iscrizione e IPT",
+              "PRA",
+              "Documenti di proprietà, pagamento IPT"
+            ],
+            [
+              "Targhe e carta di circolazione",
+              "Motorizzazione Civile",
+              "Esito positivo dei controlli"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "I documenti che ti serviranno"
+      },
+      {
+        "ul": [
+          "Titolo americano (title) o certificato di esportazione giapponese e la fattura d’acquisto",
+          "Documento doganale che prova il pagamento di dazio e IVA",
+          "Polizza di carico (bill of lading)",
+          "Traduzioni giurate dei documenti in lingua straniera",
+          "Certificato di revisione o di omologazione / conformità",
+          "Documento d’identità, codice fiscale e polizza assicurativa"
+        ]
+      },
+      {
+        "h2": "L’adeguamento tecnico"
+      },
+      {
+        "p": "Le auto americane di solito devono adeguare l’illuminazione: frecce posteriori rosse e luci laterali non rispettano le regole europee, e i fari possono richiedere un fascio luminoso diverso. Il tachimetro deve indicare i km/h. Il retronebbia è obbligatorio. Le auto giapponesi hanno la guida a destra, accettata in Italia con i fari regolati per la circolazione a destra."
+      },
+      {
+        "p": "Chiedi all’officina un preventivo scritto prima dell’asta. Su alcuni modelli basta cambiare le lampade e i gruppi ottici posteriori; su altri servono centraline riprogrammate o fari europei originali, e il conto sale molto."
+      },
+      {
+        "h2": "Le voci di costo da mettere in conto"
+      },
+      {
+        "ul": [
+          "Traduzioni giurate del titolo americano o del certificato giapponese e della fattura",
+          "Ricambi e manodopera per l’adeguamento di luci, tachimetro e retronebbia",
+          "Diritti e prenotazione per la revisione o l’omologazione in Motorizzazione Civile",
+          "IPT, emolumenti PRA, bolli e targhe",
+          "Eventuale agenzia di pratiche auto e trasporto dell’auto tra porto, officina e Motorizzazione",
+          "Assicurazione RC auto dal giorno dell’immatricolazione"
+        ]
+      },
+      {
+        "p": "Molte di queste voci sono piccole prese singolarmente, ma insieme possono pesare quanto il trasporto via nave. Mettile nel budget fin dall’inizio, insieme a una riserva per un eventuale secondo passaggio in Motorizzazione se il primo controllo non va a buon fine."
+      },
+      {
+        "h2": "Revisione e omologazione"
+      },
+      {
+        "p": "Un’auto senza omologazione europea passa per un’omologazione individuale o per una prima revisione approfondita presso la Motorizzazione Civile. L’ispettore controlla l’identificazione (VIN), l’illuminazione, le emissioni e le dotazioni di sicurezza. A volte serve la documentazione tecnica del costruttore o una relazione di un ente tecnico: organizza questo passaggio con un’officina che conosce le auto importate."
+      },
+      {
+        "h2": "Immatricolazione, IPT e scadenze"
+      },
+      {
+        "p": "Con l’esito positivo dei controlli si procede all’immatricolazione. Al PRA paghi l’IPT, che dipende dalla potenza del veicolo e dalla provincia di residenza; a questo si aggiungono gli emolumenti e i bolli per le pratiche e le targhe. Non riportiamo qui gli importi perché cambiano con le regole nazionali e provinciali: il calcolatore li stima per la tua auto. Per la nazionalizzazione di un veicolo importato è previsto un termine di 60 giorni: pianifica i tempi in anticipo."
+      },
+      {
+        "tip": "Chiedi all’officina l’elenco delle modifiche necessarie prima di comprare: l’adeguamento di alcuni modelli costa molto più di altri."
+      },
+      {
+        "h2": "Quanto tempo ci vuole"
+      },
+      {
+        "p": "Dall’arrivo al porto alle targhe passano di solito alcune settimane: qualche giorno per lo sdoganamento e la consegna, una o due settimane per l’adeguamento in officina, poi l’attesa per la prenotazione in Motorizzazione. Nel frattempo l’auto non può circolare con le targhe straniere o senza targhe, quindi portala dal porto all’officina con una bisarca o un carro attrezzi."
+      },
+      {
+        "p": "Il calcolatore di CarImport.eu mette in fila tutti questi costi, dalla dogana all’immatricolazione, e confronta i 43 porti UE porta a porta: ti basta inserire il tuo indirizzo."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Mi serve il certificato di conformità (CoC)?",
+        "a": "Le auto costruite per gli USA o il Giappone non hanno un CoC europeo. Si immatricolano invece tramite omologazione individuale o la procedura nazionale di revisione."
+      },
+      {
+        "q": "Posso guidare l’auto dal porto fino a casa?",
+        "a": "Solo con targhe provvisorie e assicurazione, e solo se l’auto è in condizione di circolare. Altrimenti usa una bisarca o un carro attrezzi."
+      },
+      {
+        "q": "Entro quanto tempo devo immatricolare un’auto importata?",
+        "a": "Per la nazionalizzazione di un veicolo importato il termine è di 60 giorni. Conviene iniziare l’adeguamento tecnico subito dopo lo sdoganamento."
+      }
+    ]
+  },
+  {
+    "id": "port-choice",
+    "slug": "livorno-genova-la-spezia-o-koper-quale-porto-scegliere",
+    "category": "logistics",
+    "origin": null,
+    "date": "2026-09-30",
+    "minutes": 3,
+    "title": "Livorno, La Spezia, Genova o Koper? Come scegliere il porto di sdoganamento",
+    "metaTitle": "Livorno, Genova o Koper? Quale porto per sdoganare l’auto | CarImport.eu",
+    "description": "Livorno, La Spezia, Genova, Koper o Bremerhaven: come il porto di sdoganamento cambia IVA, spese portuali, tempi di nave e consegna in Italia.",
+    "lead": "Le auto dirette in Italia sbarcano spesso a Livorno, La Spezia o Genova, ma si possono sdoganare in uno qualsiasi dei 43 porti dell’UE. Il porto decide l’aliquota IVA, le spese portuali e quanta strada farà l’auto fino a casa tua.",
+    "blocks": [
+      {
+        "h2": "I porti più vicini all’Italia"
+      },
+      {
+        "p": "Dal centro Italia (prendiamo Firenze come riferimento) i porti di sdoganamento più vicini su strada sono questi. Per il Nord-Est contano soprattutto Trieste e Koper, per il Sud anche Gioia Tauro."
+      },
+      {
+        "table": {
+          "head": [
+            "Porto",
+            "Paese",
+            "IVA",
+            "Distanza su strada",
+            "Navigazione dagli USA",
+            "Dal Giappone"
+          ],
+          "rows": [
+            [
+              "Livorno",
+              "Italia",
+              "22%",
+              "≈ 100 km",
+              "16–37 giorni",
+              "≈ 32 giorni"
+            ],
+            [
+              "La Spezia",
+              "Italia",
+              "22%",
+              "≈ 150 km",
+              "16–37 giorni",
+              "≈ 32 giorni"
+            ],
+            [
+              "Genova",
+              "Italia",
+              "22%",
+              "≈ 250 km",
+              "16–37 giorni",
+              "≈ 32 giorni"
+            ],
+            [
+              "Koper",
+              "Slovenia",
+              "22%",
+              "≈ 350 km",
+              "18–39 giorni",
+              "≈ 33 giorni"
+            ],
+            [
+              "Trieste",
+              "Italia",
+              "22%",
+              "≈ 360 km",
+              "18–39 giorni",
+              "≈ 33 giorni"
+            ],
+            [
+              "Rijeka",
+              "Croazia",
+              "25%",
+              "≈ 380 km",
+              "18–39 giorni",
+              "≈ 33 giorni"
+            ],
+            [
+              "Bremerhaven",
+              "Germania",
+              "19%",
+              "≈ 1.380 km",
+              "14–35 giorni",
+              "≈ 42 giorni"
+            ],
+            [
+              "Rotterdam",
+              "Paesi Bassi",
+              "21%",
+              "≈ 1.320 km",
+              "13–34 giorni",
+              "≈ 40 giorni"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Tre cose che il porto cambia"
+      },
+      {
+        "ol": [
+          "L’IVA all’importazione: paghi l’aliquota del Paese del porto. Il 22% in Italia e in Slovenia, il 25% in Croazia, il 19% in Germania, il 21% nei Paesi Bassi e in Belgio.",
+          "Le spese: movimentazione al terminal, svuotamento del container e spedizioniere doganale variano da porto a porto, di solito tra 650 e 750 euro in totale.",
+          "La distanza su strada: il porto con l’IVA più bassa può essere lontano da casa tua."
+        ]
+      },
+      {
+        "h2": "Conviene sdoganare in Germania?"
+      },
+      {
+        "p": "La domanda è frequente, perché l’IVA tedesca al 19% è tre punti sotto quella italiana. Su una base imponibile di 15.000 euro la differenza vale circa 450 euro. Ma da Bremerhaven a Firenze ci sono quasi 1.400 km di strada, e il trasporto su bisarca su quella distanza spesso costa quanto o più del risparmio. Per chi abita al Nord, vicino al Brennero, il conto può essere diverso. Ricorda poi che l’IPT e l’immatricolazione si pagano comunque in Italia: il confronto va fatto porta a porta, non solo sull’aliquota."
+      },
+      {
+        "h2": "Koper e Trieste: l’alternativa per il Nord-Est"
+      },
+      {
+        "p": "Koper ha la stessa IVA dell’Italia (22%) e spese portuali leggermente più basse. Per chi vive in Friuli-Venezia Giulia, Veneto o Lombardia orientale può essere più vicino dei porti tirrenici. Sdoganare in Slovenia significa pagare l’IVA slovena e poi immatricolare l’auto in Italia con i documenti doganali sloveni, che vanno tradotti."
+      },
+      {
+        "h2": "E chi abita al Sud?"
+      },
+      {
+        "p": "Per la Calabria, la Sicilia e la Puglia il porto di Gioia Tauro può accorciare molto il trasporto su strada. I tempi di navigazione dagli USA sono simili a quelli degli altri porti tirrenici, mentre dal Giappone e dagli Emirati è tra i più rapidi d’Europa grazie alla rotta di Suez. Le spese portuali sono in linea con Livorno. Non tutti gli spedizionieri però offrono container condivisi verso ogni porto: chiedi sempre quali partenze sono disponibili e con quale frequenza, perché un container che parte una volta al mese può farti perdere più tempo di quanto risparmi in chilometri."
+      },
+      {
+        "h2": "Le spese portuali a confronto"
+      },
+      {
+        "p": "Nei porti italiani lo scarico e la movimentazione costano circa 420–440 euro e lo spedizioniere circa 280 euro. A Koper e Rijeka il totale è un po’ più basso, intorno a 640–650 euro, mentre a Bremerhaven si arriva a circa 700 euro. Sono differenze piccole rispetto all’IVA e alla strada, ma su più auto all’anno si sommano."
+      },
+      {
+        "h2": "I tempi di navigazione"
+      },
+      {
+        "p": "Dalla costa est degli USA i porti del Mare del Nord sono i più rapidi, circa due settimane nel caso migliore. I porti italiani arrivano qualche giorno dopo. Dal Giappone e dagli Emirati invece le navi passano per Suez, e i porti del Mediterraneo come Livorno, Genova o Koper sono una settimana o più avanti rispetto a Rotterdam o Bremerhaven: per un’auto JDM il porto italiano è quasi sempre la scelta più logica."
+      },
+      {
+        "h2": "Come decidere in pratica"
+      },
+      {
+        "ul": [
+          "Abiti al Centro o al Sud: Livorno, La Spezia o Genova sono di solito le scelte più convenienti",
+          "Abiti al Nord-Est: confronta Trieste e Koper",
+          "Importi dal Giappone o dagli EAU: preferisci un porto mediterraneo",
+          "Hai una società con partita IVA: valuta il regime 4200 se l’auto va rivenduta in un altro Paese UE"
+        ]
+      },
+      {
+        "tip": "Inserisci il tuo indirizzo nel calcolatore: confronta tutti i 43 porti UE porta a porta e sceglie automaticamente il più conveniente."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Posso sdoganare l’auto all’estero e immatricolarla in Italia?",
+        "a": "Sì. Paghi l’IVA all’importazione nel Paese del porto e immatricoli l’auto in Italia con i documenti doganali."
+      },
+      {
+        "q": "Quali porti gestiscono più auto dagli USA?",
+        "a": "Bremerhaven, Rotterdam, Anversa e Amburgo nel Mare del Nord. Per l’Italia sono molto usati anche Livorno, La Spezia e Genova."
+      },
+      {
+        "q": "Sdoganare a Koper costa meno che in Italia?",
+        "a": "L’IVA è la stessa (22%) e le spese portuali sono di poco inferiori. Conviene soprattutto se abiti nel Nord-Est, vicino al confine sloveno."
+      }
+    ]
+  },
+  {
+    "id": "japan-jdm",
+    "slug": "importare-auto-jdm-dal-giappone-aste-costi",
+    "category": "buying",
+    "origin": "JAPAN",
+    "date": "2026-09-25",
+    "minutes": 3,
+    "title": "Importare un’auto JDM dal Giappone: auction sheet, voti e costi",
+    "metaTitle": "Importare un’auto JDM dal Giappone: aste e costi | CarImport.eu",
+    "description": "Come funzionano le aste giapponesi, come leggere l’auction sheet e i voti, cosa significa la guida a destra in Italia e quanto costa importare un’auto JDM.",
+    "lead": "Le aste giapponesi sono famose per valutazioni oneste e auto in ottime condizioni. Con un esportatore affidabile, comprare un’auto JDM è più sicuro che comprare alla cieca dalle aste americane, a patto di saper leggere l’auction sheet.",
+    "blocks": [
+      {
+        "h2": "Come si compra in Giappone"
+      },
+      {
+        "p": "Aste come USS, TAA, CAA e JU sono riservate ai commercianti con licenza. Si compra quindi tramite un esportatore: tu scegli le auto e fissi un’offerta massima, l’esportatore fa l’offerta, paga, cancella l’auto dal registro giapponese per l’esportazione e la spedisce. In cambio chiede una commissione fissa per auto."
+      },
+      {
+        "p": "Ogni settimana passano all’asta decine di migliaia di veicoli, dalle kei car alle sportive degli anni Novanta come Skyline, Supra o RX-7. Per le sportive più ricercate la concorrenza è internazionale e i prezzi salgono in fretta: decidi il tuo massimo con calma, prima dell’asta."
+      },
+      {
+        "h2": "Come scegliere l’esportatore"
+      },
+      {
+        "ol": [
+          "Chiedi da quanti anni lavora con clienti europei e fatti indicare referenze verificabili.",
+          "Pretendi l’auction sheet originale e la sua traduzione completa prima di ogni offerta.",
+          "Fatti spiegare per iscritto tutte le commissioni: offerta, trasporto interno, documenti, nolo.",
+          "Verifica come avviene il pagamento e in quale valuta: yen o euro, con quale cambio.",
+          "Chiedi foto aggiuntive dopo l’acquisto, soprattutto del sottoscocca, prima dell’imbarco."
+        ]
+      },
+      {
+        "p": "Un esportatore serio non promette affari impossibili e ti sconsiglia anche le auto che non valgono il prezzo. Diffida di chi chiede pagamenti anticipati senza contratto o non fornisce l’auction sheet."
+      },
+      {
+        "h2": "Come leggere l’auction sheet"
+      },
+      {
+        "ul": [
+          "Voto generale: 6–5 quasi nuova, 4,5–4 molto buona, 3,5 nella media, R/RA auto incidentata e riparata",
+          "Voto degli interni: da A a D",
+          "Mappa della carrozzeria: A = graffio, U = ammaccatura, W = ondulazione/riparazione, S = ruggine, C = corrosione, con un numero per l’entità",
+          "Note dell’ispettore: falle sempre tradurre"
+        ]
+      },
+      {
+        "tip": "Un voto R o RA non è sempre negativo, ma chiedi cosa è stato riparato: una riparazione del telaio è un’altra storia rispetto a un paraurti sostituito."
+      },
+      {
+        "h2": "Costi e tempi"
+      },
+      {
+        "p": "Al prezzo d’asta aggiungi la commissione dell’esportatore, il trasporto interno in Giappone, i documenti di esportazione e il nolo. Le navi passano per Suez: circa 4–5 settimane verso i porti italiani come Livorno, Genova o Gioia Tauro, e 5–6 settimane verso il Mare del Nord. Il dazio è il 10% per le autovetture e l’IVA all’importazione si paga nel Paese di sdoganamento: il 22% se sdogani in Italia."
+      },
+      {
+        "table": {
+          "head": [
+            "Voce",
+            "Cosa comprende"
+          ],
+          "rows": [
+            [
+              "Prezzo d’asta",
+              "Offerta vincente in yen"
+            ],
+            [
+              "Commissione dell’esportatore",
+              "Offerta, pagamento, pratiche"
+            ],
+            [
+              "Trasporto interno e documenti",
+              "Dal piazzale d’asta al porto, certificato di esportazione"
+            ],
+            [
+              "Nolo e assicurazione",
+              "Container o RoRo fino al porto UE"
+            ],
+            [
+              "Dazio 10%",
+              "Sul valore CIF"
+            ],
+            [
+              "IVA 22%",
+              "Su CIF + dazio + trasporto fino a destinazione"
+            ],
+            [
+              "Nazionalizzazione",
+              "Omologazione, IPT, targhe"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "La guida a destra in Italia"
+      },
+      {
+        "p": "L’Italia immatricola le auto con guida a destra, di solito dopo la regolazione dei fari per la circolazione a destra. In Motorizzazione Civile l’auto passa per la revisione o l’omologazione come qualsiasi veicolo extra UE. Considera però che un’auto con guida a destra è meno pratica nei sorpassi e può avere un mercato di rivendita più piccolo. Per una sportiva da weekend o da collezione di solito non è un problema; per un’auto da usare ogni giorno pensaci bene."
+      },
+      {
+        "h2": "Le auto con più di 30 anni"
+      },
+      {
+        "p": "Molte JDM classiche hanno ormai più di 30 anni. Se sono in condizioni originali possono essere classificate come veicoli da collezione con il codice NC 9705, e il dazio scende allo 0%. L’IVA all’importazione resta dovuta. Modifiche pesanti al motore o alla carrozzeria possono far perdere lo status di veicolo da collezione: chiedi sempre al venditore cosa è originale e cosa no."
+      },
+      {
+        "h2": "Gli errori da evitare"
+      },
+      {
+        "ul": [
+          "Comprare senza la traduzione completa dell’auction sheet",
+          "Sottovalutare la ruggine delle auto provenienti da Hokkaido",
+          "Dimenticare che il cambio yen-euro può muoversi tra l’asta e il pagamento",
+          "Scegliere un porto del Nord Europa e allungare inutilmente i tempi"
+        ]
+      },
+      {
+        "p": "Il calcolatore di CarImport.eu confronta tutti i 43 porti UE porta a porta anche per le auto dal Giappone: inserisci il tuo indirizzo e vedi il costo completo."
+      }
+    ],
+    "faq": [
+      {
+        "q": "I chilometraggi giapponesi sono affidabili?",
+        "a": "In generale sì: auction sheet e certificati di esportazione registrano i chilometri, e le manomissioni sono rare rispetto ad altri mercati."
+      },
+      {
+        "q": "E la ruggine?",
+        "a": "Le auto del nord del Giappone (Hokkaido) possono avere ruggine sul sottoscocca per il sale stradale; l’auction sheet la segna come S o C."
+      },
+      {
+        "q": "Quanto ci vuole per ricevere un’auto dal Giappone in Italia?",
+        "a": "Calcola circa 2–3 mesi in tutto: asta, pagamento e documenti, trasporto al porto, poi 4–5 settimane di nave verso un porto italiano."
+      }
+    ]
+  },
+  {
+    "id": "checklist",
+    "slug": "checklist-prima-di-fare-offerta-auto-asta-usa",
+    "category": "buying",
+    "origin": null,
+    "date": "2026-09-20",
+    "minutes": 3,
+    "title": "Checklist in 12 punti prima di fare un’offerta su un’auto all’estero",
+    "metaTitle": "Checklist prima di un’offerta su un’auto dagli USA | CarImport.eu",
+    "description": "Dodici controlli che proteggono il tuo budget quando compri un’auto all’asta negli USA o in Giappone: VIN, titolo, danni, commissioni, IVA e immatricolazione.",
+    "lead": "Un’asta ti lascia pochi minuti per decidere. Questi dodici punti richiedono una serata e ti evitano gli errori più costosi, quelli che trasformano un affare in un’auto che costa più di una comprata in Italia.",
+    "blocks": [
+      {
+        "h2": "La checklist"
+      },
+      {
+        "ol": [
+          "Fai un controllo della storia del VIN su Carfax o AutoCheck: incidenti, alluvioni, chilometraggio, furto.",
+          "Controlla il tipo di titolo: evita i certificati parts only e non-repairable.",
+          "Studia ogni foto: allineamento dei pannelli, airbag, linee d’acqua, vano motore.",
+          "Leggi le etichette sulle condizioni come un’informazione, non come una garanzia.",
+          "Verifica dove si trova il piazzale e quanto dista dal porto d’imbarco.",
+          "Calcola tutte le commissioni d’asta e del broker per il tuo livello di offerta.",
+          "Ottieni il costo completo a destinazione: nolo, dazio, IVA al 22%, porto, consegna.",
+          "Confronta i porti di sdoganamento per il tuo indirizzo.",
+          "Chiedi un preventivo di riparazione e i prezzi dei ricambi in Italia.",
+          "Verifica cosa va modificato per l’immatricolazione (luci, tachimetro, retronebbia).",
+          "Pianifica i tempi: scadenze di pagamento e ritiro, navigazione, revisione in Motorizzazione Civile.",
+          "Fissa un’offerta massima e rispettala."
+        ]
+      },
+      {
+        "tip": "Fai i passi 6–8 nel calcolatore: somma tutte le commissioni e le imposte e mostra i totali ottimistico, medio e pessimistico."
+      },
+      {
+        "h2": "Perché ogni punto conta"
+      },
+      {
+        "h3": "Storia e titolo (punti 1–4)"
+      },
+      {
+        "p": "Il rapporto sul VIN costa poco e può rivelare un’alluvione, un chilometraggio manomesso o più incidenti precedenti. Il titolo dice se l’auto potrà tornare su strada. Le foto e le etichette come Run and Drive completano il quadro, ma restano descrizioni fatte all’ingresso nel piazzale: nessuno ti garantisce che l’auto funzioni davvero."
+      },
+      {
+        "h3": "Costi e logistica (punti 5–8)"
+      },
+      {
+        "p": "Un piazzale in Texas e uno in New Jersey possono differire di centinaia di dollari solo per il trasporto al porto. Le commissioni d’asta crescono a scaglioni, e l’IVA in Italia si calcola anche su nolo, dazio e consegna. Il porto di sdoganamento cambia l’aliquota e la strada fino a casa: Livorno, Genova, Koper o un porto del Nord Europa possono dare totali diversi per lo stesso indirizzo."
+      },
+      {
+        "h3": "Riparazione e immatricolazione (punti 9–11)"
+      },
+      {
+        "p": "Un preventivo di una carrozzeria italiana che conosce il modello è il modo migliore per evitare sorprese. Anche l’adeguamento tecnico ha un costo: luci posteriori, tachimetro in km/h e retronebbia. Poi ci sono la revisione o l’omologazione, l’IPT e le pratiche al PRA, con il termine di 60 giorni per la nazionalizzazione."
+      },
+      {
+        "h3": "Disciplina (punto 12)"
+      },
+      {
+        "p": "L’ultimo punto è il più difficile. Durante l’asta in diretta è facile superare il budget “solo di 200 dollari”. Con dazio, IVA e commissioni quei 200 dollari diventano quasi 300. Inserisci la tua offerta massima in anticipo e lasciala lavorare."
+      },
+      {
+        "h2": "Gli errori più comuni"
+      },
+      {
+        "ul": [
+          "Offrire fino al prezzo di mercato italiano senza contare commissioni e imposte",
+          "Dimenticare i costi di deposito quando il ritiro slitta",
+          "Sottovalutare le riparazioni di un danno anteriore “leggero”",
+          "Ignorare l’IPT e i costi di immatricolazione in Italia",
+          "Non considerare il cambio euro-dollaro tra l’asta e il pagamento"
+        ]
+      },
+      {
+        "h2": "Dopo aver vinto: i primi giorni"
+      },
+      {
+        "p": "Anche dopo l’asta la checklist continua. Paga entro la scadenza per evitare penali, conferma subito al broker il ritiro per non pagare giorni di deposito e chiedi una copia del titolo e della fattura. Quando l’auto è imbarcata, fatti mandare la polizza di carico e prepara con lo spedizioniere i documenti per la dogana. Intanto prenota l’officina per l’adeguamento e informati sui tempi di attesa in Motorizzazione Civile nella tua provincia: così l’auto non resta ferma settimane dopo lo sbarco e i 60 giorni per la nazionalizzazione non diventano un problema."
+      },
+      {
+        "h2": "Quanto tenere di riserva"
+      },
+      {
+        "table": {
+          "head": [
+            "Tipo di auto",
+            "Riserva consigliata"
+          ],
+          "rows": [
+            [
+              "Clean title, marciante",
+              "10% del totale"
+            ],
+            [
+              "Salvage con danno leggero",
+              "15% del totale"
+            ],
+            [
+              "Non marciante o alluvionata",
+              "20% o più, più il preventivo di riparazione"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Il calcolatore di CarImport.eu confronta tutti i 43 porti UE porta a porta: inserisci il tuo indirizzo e ottieni il costo completo prima di fare l’offerta."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Quanto dovrei tenere di riserva?",
+        "a": "Almeno il 10–15% del totale per gli imprevisti, di più per le auto non marcianti."
+      },
+      {
+        "q": "Basta un report sul VIN?",
+        "a": "È indispensabile ma non completo: va combinato con le foto, il rapporto sulle condizioni e un preventivo di riparazione."
+      },
+      {
+        "q": "Conviene davvero importare un’auto dagli USA?",
+        "a": "Dipende dal modello. Per auto rare o molto più care in Italia spesso sì; per auto comuni il risparmio può sparire tra imposte, trasporto e riparazioni. Fai sempre il conto completo prima."
       }
     ]
   }

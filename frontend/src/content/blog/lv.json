@@ -389,6 +389,18 @@
         "p": "Muitas nodoklis un PVN nav atkarīgi no title veida – tos rēķina no samaksātās cenas un transporta izmaksām. Tāpēc arī lēts salvage auto Latvijā tiek aplikts ar 10% muitu un 21% PVN no visas CIF vērtības. Kopējās izmaksas līdz jūsu adresei, ieskaitot ostas maksas un piegādi, kalkulators aprēķina, kad ievadāt adresi – tas salīdzina visas 43 ES ostas."
       },
       {
+        "h2": "Kā pārbaudīt auto pēc ierašanās"
+      },
+      {
+        "p": "Kad auto ir nonācis Latvijā, pirms remonta sākšanas nododiet to servisā pilnai diagnostikai. Lūdziet izmērīt virsbūves ģeometriju, nolasīt kļūdu kodus visos vadības blokos, pārbaudīt drošības spilvenu sistēmu un apskatīt apakšdaļu uz pacēlāja. Ja auto bija plūdos, pārbaudiet savienotājus, vadu kūļus un salona elektroniku. Šī pārbaude maksā salīdzinoši maz, bet ļauj precīzi saplānot remontu un izvairīties no pārsteigumiem tehniskajā apskatē."
+      },
+      {
+        "p": "Pēc remonta auto jāsagatavo atbilstoši ES prasībām: jāpielāgo apgaismojums, jāpārliecinās, ka spidometrs rāda km/h, un jāpārbauda, vai visas drošības sistēmas darbojas. Tikai tad dodieties uz tehnisko apskati un reģistrāciju CSDD. Rūpīgi saglabājiet remonta rēķinus – tie palīdzēs, pārdodot auto nākotnē, jo pircējs redzēs, kas un kur tika darīts."
+      },
+      {
+        "p": "Arī apdrošināšana ir jāplāno iepriekš. Jūras pārvadājuma apdrošināšana parasti sedz bojājumus vai pazušanu ceļā, nevis esošos bojājumus, ar kuriem auto tika pārdots. Tāpēc pirms iekraušanas lūdziet ostā vai laukumā uzņemt fotogrāfijas – tās palīdzēs, ja ceļā auto cietīs vēl vairāk."
+      },
+      {
         "h2": "Kad salvage auto ir laba izvēle"
       },
       {
@@ -521,6 +533,33 @@
         "p": "Ja to pašu auto muitotu Tallinā ar 24% PVN, PVN būtu 3 336 eiro, bet Somijā ar 25,5% – 3 545 eiro. Tāpēc Latvijas vai Lietuvas osta ar 21% bieži ir izdevīgāka par kaimiņvalstīm."
       },
       {
+        "h2": "Kā muitošana notiek praksē"
+      },
+      {
+        "p": "Kad kuģis ar jūsu auto ierodas ostā, ekspeditors vai muitas brokeris saņem kravas dokumentus un sagatavo importa deklarāciju. Deklarācijā norāda auto aprakstu, VIN, KN kodu, muitas vērtību un tās sastāvdaļas. Muitas nodokli un PVN parasti samaksā brokeris un pēc tam izraksta rēķinu jums, vai arī jūs tos pārskaitāt tieši pirms auto izlaišanas. Pēc muitošanas jūs saņemat dokumentu, kas apliecina nodokļu samaksu – to vajadzēs CSDD reģistrācijai."
+      },
+      {
+        "p": "Ja muitas iestāde izvēlas auto fiziskai pārbaudei, process var aizkavēties par dažām dienām, un ostā var rasties papildu stāvēšanas maksas. Tāpēc ir svarīgi, lai visi dokumenti būtu sagatavoti jau iepriekš un lai rēķinos norādītās summas sakristu ar faktiskajiem maksājumiem."
+      },
+      {
+        "h2": "Biežākās kļūdas aprēķinos"
+      },
+      {
+        "ul": [
+          "Muitas nodokli rēķina tikai no auto cenas, aizmirstot izsoles maksas un jūras pārvadājumu",
+          "PVN rēķina bez muitas nodokļa un piegādes izmaksām",
+          "Pikapu uzskata par vieglo auto, lai gan muita var būt 22%",
+          "Neņem vērā valūtas kursu muitošanas dienā – muita dolāru summas pārrēķina eiro",
+          "Aizmirst par reģistrācijas nodevu CSDD un tehnisko apskati"
+        ]
+      },
+      {
+        "h2": "Kolekcijas auto un vecāki modeļi"
+      },
+      {
+        "p": "Auto, kas vecāks par 30 gadiem, ir oriģinālā stāvoklī un bez būtiskām izmaiņām dzinējā, šasijā vai virsbūvē, var klasificēt kā kolekcijas priekšmetu ar KN kodu 9705. Tad muitas nodoklis ir 0%. Muita var prasīt pierādījumus par auto oriģinalitāti, piemēram, fotogrāfijas, eksperta atzinumu vai vēsturiskos dokumentus. Ja auto ir pārbūvēts, piemēram, ar citu dzinēju, atbrīvojums parasti netiek piemērots, un jārēķinās ar parasto 10% likmi."
+      },
+      {
         "h2": "Muitas procedūra 4200"
       },
       {
@@ -554,6 +593,619 @@
       {
         "q": "Vai varu muitot auto Lietuvā un reģistrēt Latvijā?",
         "a": "Jā. PVN samaksāsiet Lietuvā (arī 21%), un ar muitas dokumentiem auto reģistrēsiet CSDD."
+      }
+    ]
+  },
+  {
+    "id": "registration",
+    "slug": "ievesta-auto-registracija-csdd-dokumenti-un-soli",
+    "category": "registration",
+    "origin": null,
+    "date": "2026-10-04",
+    "minutes": 3,
+    "title": "Ievesta auto reģistrācija CSDD: dokumenti, tehniskā apskate un soļi",
+    "metaTitle": "Auto no ASV vai Japānas reģistrācija CSDD | CarImport.eu",
+    "description": "Kādi dokumenti vajadzīgi, kāda tehniskā apskate jāiziet un kas jāpielāgo (lukturi, spidometrs), reģistrējot CSDD auto, kas ievests no ASV vai Japānas.",
+    "lead": "Muitošana ir tikai puse darba. Pirms auto saņem Latvijas numura zīmes, tam jāatbilst ES tehniskajām prasībām, un jums vajadzīgs dokumentu komplekts – lielākā daļa no tiem tulkoti. Šeit skaidrojam, kā ievests auto tiek reģistrēts CSDD.",
+    "blocks": [
+      {
+        "h2": "Dokumenti, kas būs vajadzīgi"
+      },
+      {
+        "ul": [
+          "Title vai eksporta sertifikāts un pirkuma rēķins",
+          "Muitas deklarācija, kas apliecina muitas nodokļa un PVN samaksu",
+          "Konosaments (bill of lading)",
+          "Svešvalodā rakstītu dokumentu tulkojumi latviešu valodā",
+          "Tehniskās apskates vai atbilstības novērtējuma apliecinājums",
+          "OCTA apdrošināšana un personu apliecinošs dokuments"
+        ]
+      },
+      {
+        "p": "Pirms vizītes CSDD pārbaudiet aktuālo dokumentu sarakstu, jo prasības ārpus ES ievestiem auto var atšķirties no prasībām auto, kas ievests no citas ES valsts. Ja auto reģistrē uzņēmums, vajadzīgi arī uzņēmuma rekvizīti un pilnvara pārstāvim."
+      },
+      {
+        "h2": "Tehniskā pielāgošana"
+      },
+      {
+        "p": "ASV auto parasti jāpielāgo apgaismojums: sarkanie aizmugurējie pagrieziena rādītāji un sānu gabarītlukturi neatbilst ES prasībām, un priekšējiem lukturiem var būt nepieciešams cits gaismas kūlis. Spidometram jārāda km/h. Obligāts ir aizmugurējais miglas lukturis. Japānas auto ir ar labās puses stūri, ko Latvijā parasti pieņem pēc lukturu regulēšanas."
+      },
+      {
+        "ul": [
+          "Aizmugurējie pagrieziena rādītāji – dzeltenā krāsā",
+          "Priekšējo lukturu gaismas kūlis – Eiropas satiksmei",
+          "Aizmugurējais miglas lukturis",
+          "Spidometrs ar km/h skalu",
+          "Bojātu drošības sistēmu (spilveni, jostas) atjaunošana"
+        ]
+      },
+      {
+        "h2": "Tehniskā apskate un atbilstība"
+      },
+      {
+        "p": "Auto bez ES tipa apstiprinājuma iziet individuālu atbilstības novērtējumu vai rūpīgu pirmreizējo pārbaudi. Latvijā pirms reģistrācijas tiek veikta tehniskā apskate CSDD, kurā pārbauda identifikāciju (VIN), apgaismojumu, izmešus un drošības aprīkojumu. Šo soli ieteicams plānot kopā ar servisu, kam ir pieredze ar importētiem auto – tas zinās, kādas izmaiņas konkrētam modelim vajadzīgas."
+      },
+      {
+        "h2": "Reģistrācija un nodevas"
+      },
+      {
+        "p": "Ar apskates rezultātu jūs reģistrējat auto CSDD. Pirmreizējās reģistrācijas laikā jāmaksā reģistrācijas nodeva un numura zīmju maksa. Reģistrācijas nodevas apmēru nosaka Latvijas normatīvie akti, un tas laika gaitā mainās, tāpēc to šeit neminam – kalkulators to parāda konkrētam auto. Papildus reģistrācijai Latvijā jārēķinās arī ar ikgadējiem maksājumiem, kas saistīti ar auto ekspluatāciju."
+      },
+      {
+        "h2": "Reģistrācijas soļi secībā"
+      },
+      {
+        "ol": [
+          "Auto nomuitošana un muitas dokumentu saņemšana.",
+          "Dokumentu tulkošana latviešu valodā.",
+          "Tehniskā pielāgošana servisā (lukturi, spidometrs, miglas lukturis).",
+          "OCTA apdrošināšanas noformēšana.",
+          "Tehniskā apskate un atbilstības pārbaude CSDD.",
+          "Reģistrācija CSDD un numura zīmju saņemšana.",
+          "Nodevu samaksa un reģistrācijas apliecības saņemšana."
+        ]
+      },
+      {
+        "h2": "Reģistrācijas izmaksu pārskats"
+      },
+      {
+        "table": {
+          "head": [
+            "Pozīcija",
+            "No kā atkarīgs"
+          ],
+          "rows": [
+            [
+              "Tulkojumi",
+              "Dokumentu skaits un apjoms"
+            ],
+            [
+              "Tehniskā pielāgošana",
+              "Modelis un nepieciešamās izmaiņas"
+            ],
+            [
+              "Tehniskā apskate",
+              "CSDD cenrādis"
+            ],
+            [
+              "Reģistrācijas nodeva",
+              "Latvijas normatīvie akti un auto parametri"
+            ],
+            [
+              "Numura zīmes",
+              "CSDD cenrādis"
+            ],
+            [
+              "OCTA",
+              "Apdrošinātājs, auto un vadītājs"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Ja auto iegādājāties kā uzņēmums, pārbaudiet arī grāmatvedības pusi: importa PVN PVN maksātājs parasti var atskaitīt, bet tikai tad, ja auto tiek izmantots saimnieciskajā darbībā un muitas dokumentos kā importētājs norādīts uzņēmums. Privātpersonai PVN ir galīgās izmaksas, tāpēc tas jāiekļauj budžetā jau pirms solīšanas izsolē, kopā ar reģistrācijas nodevu un tehniskās pielāgošanas izmaksām."
+      },
+      {
+        "tip": "Pirms pirkuma pajautājiet servisam nepieciešamo pārveidojumu sarakstu – dažiem modeļiem pielāgošana maksā daudz vairāk nekā citiem."
+      },
+      {
+        "h2": "Biežākās problēmas reģistrācijā"
+      },
+      {
+        "ul": [
+          "Trūkst kāda dokumenta vai tulkojuma – vizīte CSDD jāatliek",
+          "VIN uz virsbūves ir bojāts vai grūti nolasāms pēc avārijas",
+          "Nav pielāgots apgaismojums, tāpēc auto neiziet tehnisko apskati",
+          "Nostrādājuši drošības spilveni un kļūdas indikators panelī deg",
+          "Spidometrs rāda tikai jūdzes stundā",
+          "Izmešu rādītāji neatbilst normām pēc remonta vai dzinēja izmaiņām"
+        ]
+      },
+      {
+        "p": "Lielāko daļu šo problēmu var novērst, ja auto pirms tehniskās apskates pārbauda serviss, kas jau ir sagatavojis importētus auto. Daudzi servisi Latvijā piedāvā pilnu pakalpojumu: lukturu pārbūvi, spidometra pārprogrammēšanu, diagnostiku un pat pavadīšanu uz CSDD. Tas maksā papildus, bet ietaupa laiku un samazina risku, ka apskate būs jāatkārto."
+      },
+      {
+        "h2": "Cik ilgi tas viss aizņem"
+      },
+      {
+        "p": "Ja dokumenti ir kārtībā un auto ir braucošs, no muitošanas līdz numura zīmēm var paiet dažas nedēļas. Visilgāk parasti aizņem tehniskā pielāgošana un rezerves daļu gaidīšana, īpaši ASV modeļiem, kuru Eiropas versijas lukturi jāpasūta. Ja auto bija bojāts, remonts var ilgt mēnešus. Plānojiet arī laiku tulkojumiem un vizītes rezervēšanai CSDD."
+      },
+      {
+        "h2": "Ja auto muitots citā valstī"
+      },
+      {
+        "p": "Ja auto nomuitojāt, piemēram, Klaipēdā vai Bremerhavenē, PVN jau ir samaksāts tajā valstī, un CSDD jums jāuzrāda tur izsniegtie muitas dokumenti. Pārējais process – tehniskā apskate, pielāgošana un reģistrācija – ir tāds pats. Kalkulatorā pietiek ievadīt adresi, un tas aprēķina, kura no 43 ES ostām jums kopumā ir izdevīgākā."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Vai vajadzīgs atbilstības sertifikāts (CoC)?",
+        "a": "ASV vai Japānas tirgum ražotiem auto nav ES CoC. Tie tiek reģistrēti, izmantojot individuālu atbilstības novērtējumu vai nacionālo pārbaudes procedūru."
+      },
+      {
+        "q": "Vai no ostas var braukt ar auto mājās?",
+        "a": "Tikai ar pagaidu numuriem un apdrošināšanu, un tikai tad, ja auto ir tehniskā kārtībā. Pretējā gadījumā izmantojiet autovedēju vai evakuatoru."
+      },
+      {
+        "q": "Vai Latvijā var reģistrēt auto ar labās puses stūri?",
+        "a": "Parasti jā, pēc lukturu pielāgošanas. Pirms pirkuma tomēr pārbaudiet aktuālās CSDD prasības."
+      }
+    ]
+  },
+  {
+    "id": "port-choice",
+    "slug": "riga-klaipeda-vai-tallina-kura-osta-muitot-auto",
+    "category": "logistics",
+    "origin": null,
+    "date": "2026-09-30",
+    "minutes": 3,
+    "title": "Rīga, Klaipēda vai Tallina? Kurā ostā muitot auto no ASV",
+    "metaTitle": "Rīga, Klaipēda vai Tallina – kur muitot auto? | CarImport.eu",
+    "description": "Kā muitošanas osta maina PVN, ostas maksas, kuģa ceļa laiku un piegādes izmaksas līdz Latvijai – un kā atrast lētāko no 43 ES ostām jūsu adresei.",
+    "lead": "Latvijas pircējam tuvākās ostas ir Rīga, Klaipēda un Tallina, bet auto var muitot jebkurā no 43 ES ostām. Osta nosaka PVN likmi, ostas maksas un to, cik tālu auto būs jāved pa ceļu līdz jūsu mājām.",
+    "blocks": [
+      {
+        "h2": "Tuvākās ostas no Rīgas"
+      },
+      {
+        "table": {
+          "head": [
+            "Osta",
+            "Valsts",
+            "PVN",
+            "Attālums no Rīgas pa ceļu"
+          ],
+          "rows": [
+            [
+              "Rīga",
+              "Latvija",
+              "21%",
+              "5 km"
+            ],
+            [
+              "Klaipēda",
+              "Lietuva",
+              "21%",
+              "287 km"
+            ],
+            [
+              "Tallina (Muuga)",
+              "Igaunija",
+              "24%",
+              "360 km"
+            ],
+            [
+              "Hanko",
+              "Somija",
+              "25,5%",
+              "408 km"
+            ],
+            [
+              "Helsinki (Vuosaari)",
+              "Somija",
+              "25,5%",
+              "460 km"
+            ],
+            [
+              "Gdiņa",
+              "Polija",
+              "23%",
+              "549 km"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Rīga ir tuvākā un loģiskākā izvēle lielākajai daļai Latvijas pircēju: PVN ir 21%, un piegāde pa ceļu ir minimāla. Klaipēdai ir tāda pati PVN likme, un tā bieži ir konkurētspējīga, jo daudzi konteineri ar auto no ASV tiek piegādāti tieši tur. Tallina un Somijas ostas parasti nav izdevīgas PVN dēļ."
+      },
+      {
+        "h2": "Trīs lietas, ko maina osta"
+      },
+      {
+        "ol": [
+          "Importa PVN: maksājat ostas valsts likmi – 21% Latvijā un Lietuvā, 24% Igaunijā, 25,5% Somijā, 23% Polijā.",
+          "Maksas: termināla pakalpojumi, izkraušana un muitas brokeris katrā ostā maksā atšķirīgi.",
+          "Attālums pa ceļu: osta ar zemāku PVN var būt tālu no jūsu mājām, un piegāde maksā par katru kilometru."
+        ]
+      },
+      {
+        "h2": "Kad “ārzemju” osta ir lētāka"
+      },
+      {
+        "p": "Latvijā PVN ir 21%, kas ir zemāk nekā lielākajā daļā kaimiņvalstu. Tāpēc muitošana ar augstāku PVN Tallinā vai Somijā gandrīz nekad neatmaksājas. Toties lielas Ziemeļjūras ostas, piemēram, Bremerhavene ar 19% PVN, var būt interesantas: PVN ir par diviem procentpunktiem zemāks, un kuģi no ASV tur ierodas ātrāk. Pret to jāliek ilgāks ceļš pa sauszemi – vairāk nekā 1 000 km līdz Latvijai – un piegādes izmaksas."
+      },
+      {
+        "p": "Salīdzināšana vienmēr jāveic “no durvīm līdz durvīm”: PVN starpība uz 15 000 $ PVN bāzes ir ap 300 $, bet auto pārvadājums no Vācijas uz Latviju var maksāt līdzīgi vai vairāk. Rezultāts ir atkarīgs no auto vērtības un jūsu adreses."
+      },
+      {
+        "h2": "Kuģa ceļa laiks"
+      },
+      {
+        "p": "No ASV austrumu krasta visātrāk sasniedzamas Ziemeļjūras ostas (ap 2 nedēļām). Uz Baltijas ostām kravas bieži tiek pārkrautas, tāpēc ceļš līdz Rīgai vai Klaipēdai ilgst apmēram 3–6 nedēļas. No Japānas un AAE kuģi iet caur Suecu, tāpēc Vidusjūras ostas, piemēram, Kopera, Dženova vai Pireja, ir par nedēļu vai vairāk ātrākas nekā Ziemeļjūra, bet tālas no Latvijas."
+      },
+      {
+        "table": {
+          "head": [
+            "Osta",
+            "No ASV (dienas)",
+            "No Japānas (dienas)"
+          ],
+          "rows": [
+            [
+              "Rīga",
+              "20–41",
+              "47"
+            ],
+            [
+              "Klaipēda",
+              "19–40",
+              "46"
+            ],
+            [
+              "Tallina",
+              "21–42",
+              "48"
+            ],
+            [
+              "Bremerhavene",
+              "14–35",
+              "42"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Ostas maksas un piegāde"
+      },
+      {
+        "p": "Izkraušana un termināla maksas Baltijas ostās ir līdzīgas – ap 400–430 eiro, muitas brokeris ap 250–260 eiro. Lielāka atšķirība rodas piegādē: no Rīgas ostas līdz adresei Latvijā auto nogādā lēti, no Klaipēdas – par dažiem simtiem kilometru vairāk. Ja dzīvojat Kurzemē vai Zemgalē, Klaipēda dažkārt ir tikpat tuvu kā Rīga."
+      },
+      {
+        "h2": "Piemērs: Rīga pret Bremerhaveni"
+      },
+      {
+        "p": "Pieņemsim, ka PVN bāze ir 15 333 $. Muitojot Rīgā ar 21% PVN, nodoklis ir 3 220 $. Muitojot Bremerhavenē ar 19%, tas ir 2 913 $ – par aptuveni 300 $ mazāk. Taču pēc tam auto jāved no Vācijas uz Latviju vairāk nekā tūkstoš kilometru ar autovedēju, kas parasti maksā tikpat vai vairāk nekā šis ietaupījums. Turklāt jums būs jākārto muitošana valstī, kuras valodu un procedūras nepazīstat. Dārgākiem auto PVN starpība kļūst lielāka, tāpēc vērts rēķināt katru reizi no jauna."
+      },
+      {
+        "h2": "Kad izvēlēties Rīgu, kad Klaipēdu"
+      },
+      {
+        "ul": [
+          "Rīga – ja dzīvojat Rīgā, Vidzemē vai Latgalē un gribat vienkāršāko procesu latviešu valodā",
+          "Klaipēda – ja jūsu pārvadātājs piedāvā lētāku konteineru tieši uz Klaipēdu vai dzīvojat Kurzemē vai Zemgalē",
+          "Ziemeļjūras ostas – ja auto ir ļoti dārgs vai vajadzīgs ātrākais kuģa ceļš",
+          "Vidusjūras ostas – parasti tikai auto no Japānas vai AAE, un arī tad reti"
+        ]
+      },
+      {
+        "p": "Svarīgi atcerēties, ka neatkarīgi no muitošanas valsts auto reģistrācija notiek Latvijā CSDD, un šeit jāmaksā reģistrācijas nodeva. Ostas izvēle maina tikai importa PVN, ostas maksas un piegādes izmaksas, nevis Latvijas nodevas."
+      },
+      {
+        "p": "Neaizmirstiet arī par laiku. Ja auto vajag ātri, ostas izvēle ietekmē ne tikai cenu, bet arī gaidīšanu: dažas papildu dienas ostā nozīmē stāvēšanas maksas, bet kuģa kavēšanās ziemā Baltijas jūrā nav retums. Kalkulatora pesimistiskais scenārijs šīs aizkaves ņem vērā."
+      },
+      {
+        "tip": "Ievadiet adresi kalkulatorā: tas aprēķina visas 43 ES ostas “no durvīm līdz durvīm” un automātiski izvēlas lētāko."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Vai varu muitot auto citā valstī un reģistrēt Latvijā?",
+        "a": "Jā. Importa PVN samaksājat ostas valstī, un auto reģistrējat CSDD ar muitas dokumentiem."
+      },
+      {
+        "q": "Kuras ostas apstrādā visvairāk auto no ASV?",
+        "a": "Bremerhavene, Roterdama, Antverpene un Hamburga Ziemeļjūrā, kā arī Baltijas ostas, piemēram, Gdiņa un Klaipēda, kas apkalpo Centrālo un Austrumeiropu."
+      },
+      {
+        "q": "Vai Klaipēda ir lētāka par Rīgu?",
+        "a": "PVN abās ir 21%, tāpēc atšķirību nosaka ostas maksas, pārvadājuma tarifi un attālums līdz jūsu adresei. Kalkulators to salīdzina automātiski."
+      }
+    ]
+  },
+  {
+    "id": "japan-jdm",
+    "slug": "jdm-auto-no-japanas-uz-latviju-izsoles-lapas-un-izmaksas",
+    "category": "buying",
+    "origin": "JAPAN",
+    "date": "2026-09-25",
+    "minutes": 3,
+    "title": "JDM auto ievešana no Japānas: izsoles lapas, vērtējumi un izmaksas",
+    "metaTitle": "JDM auto no Japānas – izsoles lapas un izmaksas | CarImport.eu",
+    "description": "Kā darbojas Japānas auto izsoles, kā lasīt izsoles lapu un vērtējumus, ko labās puses stūre nozīmē reģistrācijai CSDD un cik maksā JDM auto ievešana.",
+    "lead": "Japānas izsoles ir slavenas ar godīgu vērtēšanu un auto izcilā stāvoklī. Ar uzticamu eksportētāju JDM auto pirkšana ir drošāka nekā pirkšana “uz aklo” ASV izsolēs – ja saprotat izsoles lapu.",
+    "blocks": [
+      {
+        "h2": "Kā notiek pirkšana Japānā"
+      },
+      {
+        "p": "Izsoles, piemēram, USS, TAA, CAA un JU, ir pieejamas licencētiem dīleriem. Jūs pērkat caur eksportētāju: izvēlaties auto, nosakāt maksimālo solījumu, un eksportētājs solī, samaksā, noņem auto no uzskaites eksportam un nosūta to. Daudzi eksportētāji piedāvā arī auto pirkšanu no dīleru noliktavām, kur cena ir fiksēta, bet parasti augstāka nekā izsolē."
+      },
+      {
+        "p": "Izsoles notiek katru dienu, un vienā nedēļā tiek piedāvāti desmitiem tūkstošu auto. Tas nozīmē lielu izvēli arī retiem modeļiem – sporta kupejām, kompaktiem minivenu modeļiem, hibrīdiem un apvidus auto, kas Eiropā oficiāli netika pārdoti."
+      },
+      {
+        "h2": "Kā lasīt izsoles lapu"
+      },
+      {
+        "ul": [
+          "Kopējais vērtējums: 6–5 gandrīz jauns, 4,5–4 ļoti labs, 3,5 vidējs, R/RA saremontēts pēc avārijas",
+          "Salona vērtējums: no A līdz D",
+          "Virsbūves karte: A = skrāpējums, U = iespiedums, W = viļņojums/remonts, S = rūsa, C = korozija, ar skaitli izmēram",
+          "Inspektora piezīmes – vienmēr lūdziet tās pārtulkot"
+        ]
+      },
+      {
+        "tip": "R vai RA vērtējums ne vienmēr ir slikts, taču pajautājiet, kas tika remontēts – rāmja remonts ir pavisam cits stāsts nekā nomainīts bamperis."
+      },
+      {
+        "h2": "Vērtējumi tabulā"
+      },
+      {
+        "table": {
+          "head": [
+            "Vērtējums",
+            "Nozīme",
+            "Ieteikums"
+          ],
+          "rows": [
+            [
+              "6, 5",
+              "Gandrīz jauns, minimāls nobraukums",
+              "Augsta cena, maz riska"
+            ],
+            [
+              "4,5",
+              "Ļoti labs stāvoklis",
+              "Labākā cenas un kvalitātes attiecība"
+            ],
+            [
+              "4",
+              "Labs, nelieli defekti",
+              "Pārbaudiet virsbūves karti"
+            ],
+            [
+              "3,5",
+              "Vidējs, redzami nolietojuma pēdas",
+              "Rēķinieties ar kosmētisko remontu"
+            ],
+            [
+              "R, RA",
+              "Avārijas remonts",
+              "Noskaidrojiet, kas tieši remontēts"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Izmaksas un laiks"
+      },
+      {
+        "p": "Pieskaitiet eksportētāja maksu, iekšzemes transportu Japānā, eksporta dokumentus un jūras pārvadājumu. Kuģi iet caur Suecu: aptuveni 5–6 nedēļas līdz Ziemeļjūrai, mazāk līdz Vidusjūras ostām, bet līdz Rīgai vai Klaipēdai pēc ostu datiem ap 46–47 dienām. Muitas nodoklis vieglajam auto ir 10%, un importa PVN maksā muitošanas valstī – Latvijā 21%."
+      },
+      {
+        "ul": [
+          "Auto cena izsolē jenās",
+          "Izsoles maksa un eksportētāja komisija",
+          "Transports Japānā līdz ostai",
+          "Eksporta dokumenti un noņemšana no uzskaites",
+          "Jūras pārvadājums un apdrošināšana",
+          "Muitas nodoklis 10% un PVN 21% Latvijā",
+          "Ostas maksas, piegāde, tehniskā apskate un reģistrācija CSDD"
+        ]
+      },
+      {
+        "p": "Kalkulators aprēķina visas šīs pozīcijas eiro un salīdzina 43 ES ostas līdz jūsu adresei. JDM auto gadījumā tas var parādīt, ka Vidusjūras osta ar ātrāku kuģi nav izdevīga, jo piegāde pa ceļu līdz Latvijai ir pārāk dārga."
+      },
+      {
+        "h2": "Labās puses stūre"
+      },
+      {
+        "p": "Lielākā daļa ES valstu, arī Latvija, reģistrē auto ar labās puses stūri, parasti pēc lukturu regulēšanas. Dažas valstis pastāvīgai reģistrācijai tos ierobežo – pirms pirkuma pārbaudiet aktuālās CSDD prasības. Ikdienā labās puses stūre apgrūtina apdzīšanu un maksāšanu stāvvietās, kas jāņem vērā, ja auto paredzēts ikdienas braukšanai."
+      },
+      {
+        "h2": "Populāri JDM modeļi un ko pārbaudīt"
+      },
+      {
+        "p": "Latvijas entuziasti no Japānas visbiežāk ved sporta auto, piemēram, Nissan Skyline, Toyota Supra vai Mazda RX-7, Honda un Subaru modeļus, kā arī praktiskus hibrīdus un kompaktos minivenus. Sporta auto bieži ir modificēti, tāpēc izsoles lapā meklējiet piezīmes par neoriģinālām detaļām: izplūdes sistēmu, balstiekārtu, turbīnu vai elektroniku. Šādas izmaiņas var sarežģīt tehnisko apskati un reģistrāciju CSDD, jo izmešiem un trokšņa līmenim jāatbilst prasībām."
+      },
+      {
+        "p": "Pievērsiet uzmanību arī vecumam. Auto, kas vecāki par 30 gadiem un ir oriģinālā stāvoklī, var tikt klasificēti kā kolekcijas priekšmeti ar 0% muitas nodokli. Daudzi kulta JDM modeļi no deviņdesmito gadu sākuma šo robežu jau ir sasnieguši, kas var ievērojami samazināt kopējās izmaksas. Tomēr oriģinalitāte būs jāpierāda, un modificētiem auto šis atbrīvojums parasti nav pieejams."
+      },
+      {
+        "h2": "Japāna salīdzinājumā ar ASV"
+      },
+      {
+        "ul": [
+          "Japānā izsoles lapas ir detalizētākas, un vērtējumi godīgāki",
+          "ASV izvēle ir lielāka, bet bieži ar salvage title un smagiem bojājumiem",
+          "Ceļš no Japānas ir ilgāks – 6–7 nedēļas līdz Baltijai",
+          "Japānas auto ir ar labās puses stūri, ASV – ar kreisās",
+          "Muita un PVN ir vienādi: 10% un 21% Latvijā"
+        ]
+      },
+      {
+        "h2": "Kā izvēlēties eksportētāju"
+      },
+      {
+        "ol": [
+          "Pārbaudiet, cik ilgi uzņēmums darbojas un vai tam ir atsauksmes no Eiropas klientiem.",
+          "Lūdziet pilnu izsoles lapu un tās tulkojumu katram auto.",
+          "Noskaidrojiet visas maksas iepriekš – komisiju, dokumentus, transportu.",
+          "Pārliecinieties, ka eksportētājs sūta auto uz Eiropu regulāri.",
+          "Vienojieties par apmaksas kārtību un termiņiem rakstiski."
+        ]
+      },
+      {
+        "p": "Labs eksportētājs ne tikai solī, bet arī palīdz izvērtēt auto: pirms izsoles apskata to, nofotografē detalizēti un godīgi pasaka, ja vērtējums neatbilst realitātei."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Vai Japānas auto nobraukums ir uzticams?",
+        "a": "Parasti jā – izsoles lapās un eksporta sertifikātos nobraukums tiek fiksēts, un tā attīšana ir reta salīdzinājumā ar citiem tirgiem."
+      },
+      {
+        "q": "Kā ir ar rūsu?",
+        "a": "Auto no Japānas ziemeļiem (Hokaido) var būt apakšdaļas rūsa no ceļa sāls; izsoles lapā tā atzīmēta ar S vai C."
+      },
+      {
+        "q": "Cik ilgi auto no Japānas ceļo līdz Latvijai?",
+        "a": "Jūras ceļš līdz Rīgai ilgst aptuveni 47 dienas; kopā ar izsoli, dokumentiem un muitošanu rēķinieties ar 2–3 mēnešiem."
+      }
+    ]
+  },
+  {
+    "id": "checklist",
+    "slug": "parbaudes-saraksts-pirms-auto-pirksanas-izsole-asv-japana",
+    "category": "buying",
+    "origin": null,
+    "date": "2026-09-20",
+    "minutes": 3,
+    "title": "12 punktu pārbaudes saraksts pirms solīšanas par auto ārzemēs",
+    "metaTitle": "Pārbaudes saraksts pirms auto pirkšanas no ASV | CarImport.eu",
+    "description": "Divpadsmit pārbaudes, kas pasargā jūsu budžetu, pērkot auto izsolē ASV vai Japānā: VIN vēsture, title, bojājumi, maksas, transports, nodokļi un reģistrācija.",
+    "lead": "Izsolē lēmums jāpieņem dažās minūtēs. Šie divpadsmit punkti aizņem vienu vakaru un pasargā no dārgākajām kļūdām, ievedot auto no ASV, Kanādas vai Japānas uz Latviju.",
+    "blocks": [
+      {
+        "h2": "Saraksts: 12 pārbaudes pirms solīšanas"
+      },
+      {
+        "ol": [
+          "Pasūtiet VIN vēstures atskaiti Carfax vai AutoCheck: avārijas, plūdi, nobraukums, zādzība.",
+          "Pārbaudiet title veidu – izvairieties no parts only un non-repairable dokumentiem.",
+          "Izpētiet katru fotogrāfiju: spraugas starp detaļām, spilveni, ūdens līnijas, motora nodalījums.",
+          "Lasiet stāvokļa atzīmes kā informāciju, nevis garantiju.",
+          "Pārbaudiet laukuma atrašanās vietu un attālumu līdz eksporta ostai.",
+          "Aprēķiniet visas izsoles un brokera maksas savam solījuma līmenim.",
+          "Aprēķiniet pilnās izmaksas: pārvadājums, muita, PVN, osta, piegāde.",
+          "Salīdziniet muitošanas ostas savai adresei.",
+          "Iegūstiet remonta tāmi un rezerves daļu cenas Latvijā.",
+          "Pārbaudiet, kas jāmaina reģistrācijai CSDD (lukturi, spidometrs).",
+          "Saplānojiet laiku: apmaksas un izņemšanas termiņi, kuģa ceļš, tehniskā apskate.",
+          "Nosakiet maksimālo solījumu – un turieties pie tā."
+        ]
+      },
+      {
+        "tip": "Soļus 6–8 veiciet kalkulatorā: tas saskaita visas maksas un nodokļus un parāda optimistisko, vidējo un pesimistisko kopsummu. Jums jāievada tikai adrese – tas salīdzina visas 43 ES ostas."
+      },
+      {
+        "h2": "Ko katrs punkts dod"
+      },
+      {
+        "p": "VIN atskaite un title pārbaude atsijā auto ar slēptu vēsturi, piemēram, plūdu auto vai auto ar attītu nobraukumu. Fotogrāfiju un stāvokļa atzīmju izpēte palīdz novērtēt remonta apjomu. Laukuma atrašanās vieta nosaka iekšzemes transporta cenu ASV, kas var svārstīties no dažiem simtiem līdz vairāk nekā tūkstoš dolāriem. Maksu un nodokļu aprēķins parāda, cik auto patiesībā maksās Latvijā ar 10% muitu un 21% PVN."
+      },
+      {
+        "p": "Remonta tāme un rezerves daļu cenas Latvijā bieži ir izšķirošas: dažiem ASV modeļiem detaļas jāpasūta no ASV, un tās ceļo vairākas nedēļas. Reģistrācijas prasību pārbaude ļauj iepriekš zināt, cik maksās lukturu pielāgošana un spidometra pārprogrammēšana, un vai auto vispār var iziet tehnisko apskati CSDD bez lieliem ieguldījumiem."
+      },
+      {
+        "h2": "Biežākās kļūdas"
+      },
+      {
+        "ul": [
+          "Solīšana līdz tirgus cenai, neieskaitot maksas un nodokļus",
+          "Aizmirstas stāvvietas maksas, ja izņemšana aizkavējas",
+          "Par zemu novērtēts “neliela” priekšējā bojājuma remonts",
+          "Ignorēta reģistrācijas nodeva un tehniskās pielāgošanas izmaksas Latvijā",
+          "Pikaps uzskatīts par vieglo auto, lai gan muita var būt 22%",
+          "Neņemts vērā valūtas kurss un bankas komisija par maksājumu dolāros"
+        ]
+      },
+      {
+        "h2": "Rezerves budžets"
+      },
+      {
+        "table": {
+          "head": [
+            "Auto stāvoklis",
+            "Ieteicamā rezerve"
+          ],
+          "rows": [
+            [
+              "Clean title, braucošs",
+              "10% no kopsummas"
+            ],
+            [
+              "Salvage, braucošs",
+              "10–15% no kopsummas"
+            ],
+            [
+              "Salvage, nebraucošs",
+              "15–20% vai vairāk"
+            ],
+            [
+              "Plūdu auto",
+              "Neiesakām bez pieredzes"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Rezerve nav pesimisms, bet reālisms. Kuģi kavējas, muita dažkārt izvēlas auto pārbaudei, un pēc izkraušanas bieži atklājas bojājumi, kas fotogrāfijās nebija redzami. Ja rezerve paliek neizmantota, tas ir labs pārsteigums."
+      },
+      {
+        "h2": "Vai auto ir tā vērts?"
+      },
+      {
+        "p": "Pirms solīšanas atbildiet uz vienkāršu jautājumu: cik maksā līdzīgs auto Latvijā vai citā ES valstī, jau reģistrēts un tehniskā kārtībā? Ja pilnās izmaksas – auto, maksas, transports, muita, PVN, remonts, tehniskā apskate un reģistrācija – ir tuvu šai cenai, imports nav tā vērts, jo uzņematies risku un gaidīšanu par niecīgu ietaupījumu. Imports atmaksājas, ja starpība ir vismaz 15–20% vai ja tādu auto Eiropā vispār nav iespējams nopirkt."
+      },
+      {
+        "p": "Atcerieties arī tālākpārdošanu. Auto ar ASV vēsturi un salvage atzīmi Latvijas tirgū parasti tiek vērtēti zemāk, un pircēji arvien biežāk pārbauda VIN vēsturi. Ja plānojat auto pēc dažiem gadiem pārdot, tas jāņem vērā jau tagad, novērtējot, cik zaudēsiet vērtībā salīdzinājumā ar Eiropā pirktu auto."
+      },
+      {
+        "h2": "Dokumenti, kas jāsaglabā no pirmās dienas"
+      },
+      {
+        "ul": [
+          "Izsoles rēķins un apmaksas apliecinājums",
+          "Brokera līgums un rēķini par komisiju un transportu",
+          "Title vai eksporta sertifikāts",
+          "Konosaments un pārvadājuma rēķins",
+          "Apdrošināšanas polise pārvadājumam",
+          "Fotogrāfijas no izsoles un pirms iekraušanas"
+        ]
+      },
+      {
+        "p": "Šie dokumenti vajadzīgi muitai, lai pierādītu muitas vērtību, un CSDD reģistrācijai. Glabājiet tos gan papīrā, gan digitāli vienā mapē. Ja vēlāk auto pārdosiet, pilna dokumentu mape palielina pircēja uzticību un palīdz pamatot cenu, jo vēsture ir caurspīdīga un pierādāma."
+      },
+      {
+        "h2": "Pēc uzvaras izsolē"
+      },
+      {
+        "p": "Kad esat uzvarējis, rīkojieties ātri: samaksājiet termiņā, sazinieties ar brokeri par izņemšanu un pārliecinieties, ka title dokuments tiek nodots eksportētājam. Saglabājiet visus rēķinus un maksājumu apstiprinājumus muitai. Kamēr auto ir ceļā, sameklējiet servisu Latvijā, kas pielāgos auto, un sāciet tulkot dokumentus – tā ietaupīsiet nedēļas pēc auto ierašanās."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Cik daudz jātur rezervē?",
+        "a": "Vismaz 10–15% no kopsummas neparedzētiem izdevumiem, nebraucošiem auto vairāk."
+      },
+      {
+        "q": "Vai ar VIN atskaiti pietiek?",
+        "a": "Tā ir būtiska, bet nav pilnīga – apvienojiet to ar fotogrāfijām, stāvokļa aprakstu un remonta tāmi."
+      },
+      {
+        "q": "Vai var auto apskatīt pirms solīšanas?",
+        "a": "Dažos laukumos var, vai arī brokeris var nosūtīt inspektoru par maksu. No Latvijas tas parasti nav praktiski, tāpēc vēl svarīgākas ir fotogrāfijas un VIN atskaite."
       }
     ]
   }
