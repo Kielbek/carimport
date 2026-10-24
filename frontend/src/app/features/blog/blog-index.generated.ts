@@ -4,6 +4,7 @@
 export const BLOG_INDEX: Record<string, Record<string, string>> = {
   "total-cost": {
     "bg": "kolko-struva-vnos-na-kola-ot-amerika-v-balgariya",
+    "cs": "kolik-stoji-dovoz-auta-z-usa",
     "da": "hvad-koster-det-at-importere-en-bil-fra-usa",
     "de": "auto-aus-den-usa-importieren-kosten",
     "el": "poso-kostizei-na-fereis-aftokinito-apo-ameriki",
@@ -26,6 +27,7 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
   },
   "copart-iaai": {
     "bg": "kak-da-kupya-kola-ot-copart-ili-iaai-ot-balgariya",
+    "cs": "jak-koupit-auto-na-copartu-a-iaai-z-ceska",
     "da": "kob-bil-pa-copart-og-iaai-fra-danmark",
     "de": "copart-iaai-auto-kaufen-aus-deutschland-anleitung",
     "el": "pos-na-agoraseis-aftokinito-apo-copart-kai-iaai-apo-tin-ellada",
@@ -48,6 +50,7 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
   },
   "salvage-title": {
     "bg": "koli-sas-salvage-titla-ot-amerika-riskove-i-registratsiya",
+    "cs": "auto-z-usa-s-titulem-salvage-co-potrebujete-vedet",
     "da": "salvage-title-bil-fra-usa-kan-den-indregistreres-i-danmark",
     "de": "salvage-title-auto-aus-usa-risiken-zulassung-deutschland",
     "el": "aftokinito-me-salvage-title-apo-ameriki-ti-prepei-na-xerete",
@@ -70,6 +73,7 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
   },
   "customs-vat": {
     "bg": "mito-i-dds-pri-vnos-na-kola-izvan-es",
+    "cs": "clo-a-dph-pri-dovozu-auta-z-usa",
     "da": "told-og-moms-ved-import-af-bil",
     "de": "einfuhrumsatzsteuer-und-zoll-auto-usa-berechnen",
     "el": "dasmos-kai-fpa-eisagogis-aftokinitou-stin-ellada",
@@ -92,6 +96,7 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
   },
   "registration": {
     "bg": "registratsiya-na-vnesena-kola-ot-amerika-v-kat-dokumenti",
+    "cs": "registrace-auta-z-usa-doklady-a-postup",
     "da": "indregistrering-af-importeret-bil-syn-og-registreringsafgift",
     "de": "us-auto-zulassen-vollabnahme-21-stvzo-ablauf",
     "el": "taxinomisi-eisagomenou-aftokinitou-stin-ellada-dikaiologitika",
@@ -114,6 +119,7 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
   },
   "port-choice": {
     "bg": "solun-varna-ili-konstantsa-koe-pristanishte-za-vnos-na-kola",
+    "cs": "hamburg-bremerhaven-nebo-koper-kde-proclit-auto-z-usa",
     "da": "kobenhavn-aarhus-eller-hamburg-valg-af-havn-ved-bilimport",
     "de": "bremerhaven-oder-hamburg-welcher-hafen-fuer-auto-import",
     "el": "peiraias-i-thessaloniki-se-poio-limani-na-ektelonisete-to-aftokinito",
@@ -136,6 +142,7 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
   },
   "japan-jdm": {
     "bg": "vnos-na-jdm-kola-ot-yaponiya-list-ot-targa-otsenki-i-razhodi",
+    "cs": "dovoz-auta-z-japonska-aukcni-list-a-naklady",
     "da": "importere-jdm-bil-fra-japan-auktionsark-og-pris",
     "de": "jdm-auto-aus-japan-importieren-auction-sheet-kosten",
     "el": "eisagogi-jdm-aftokinitou-apo-iaponia-auction-sheet-kai-kostos",
@@ -158,6 +165,7 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
   },
   "checklist": {
     "bg": "proverki-predi-da-naddavate-za-kola-ot-amerika-ili-yaponiya",
+    "cs": "kontrolni-seznam-pred-prihozem-na-auto-z-usa",
     "da": "tjekliste-for-du-byder-pa-en-bil-fra-usa",
     "de": "checkliste-auto-aus-usa-kaufen-vor-dem-bieten",
     "el": "lista-elegchou-prin-agorasete-aftokinito-se-dimoprasia-exoterikou",
@@ -184,4 +192,4 @@ export const BLOG_INDEX: Record<string, Record<string, string>> = {
 export const BLOG_DATES: Record<string, string> = {"total-cost":"2026-10-20","copart-iaai":"2026-10-16","salvage-title":"2026-10-12","customs-vat":"2026-10-08","registration":"2026-10-04","port-choice":"2026-09-30","japan-jdm":"2026-09-25","checklist":"2026-09-20"};
 
 /** Languages that have at least one article. */
-export const BLOG_LANGS: string[] = ["bg","da","de","el","en","es","fi","fr","hr","hu","it","lt","lv","nl","pl","pt","ro","sk","sl","sv"];
+export const BLOG_LANGS: string[] = ["bg","cs","da","de","el","en","es","fi","fr","hr","hu","it","lt","lv","nl","pl","pt","ro","sk","sl","sv"];
