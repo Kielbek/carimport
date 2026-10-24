@@ -1,0 +1,249 @@
+[
+  {
+    "id": "total-cost",
+    "slug": "vad-kostar-det-att-importera-bil-fran-usa",
+    "category": "costs",
+    "origin": "USA",
+    "date": "2026-10-20",
+    "minutes": 4,
+    "title": "Vad kostar det egentligen att importera en bil från USA?",
+    "metaTitle": "Vad kostar det att importera bil från USA? | CarImport.eu",
+    "description": "Vad kostar det att importera bil från USA till Sverige? Auktionsavgifter, frakt, tull 10 %, importmoms 25 % och registrering – med räkneexempel.",
+    "lead": "Priset på Copart eller IAAI är bara början. När bilen står registrerad på uppfarten har du ofta betalat 1,6 till 2 gånger klubbslagspriset. Här går vi igenom vart pengarna tar vägen – post för post, med svensk moms och svenska myndigheter.",
+    "blocks": [
+      {
+        "h2": "Det korta svaret"
+      },
+      {
+        "p": "För en vanlig personbil som ropas in för 10 000 dollar på en amerikansk auktion bör du räkna med en totalkostnad på ungefär 19 000 dollar levererad till Sverige, före registrering. De största posterna efter själva bilen är importmomsen på 25 %, tullen på 10 % och transporten över Atlanten. Reparationer av skadade bilar kommer ovanpå. I kronor beror slutsumman på dollarkursen den dag du betalar – kalkylatorn räknar om allt till SEK."
+      },
+      {
+        "h2": "1. Köpet: bud plus auktionsavgifter"
+      },
+      {
+        "p": "Copart och IAAI tar ut en köparavgift som stiger med priset, plus fasta avgifter för internetbud, utlämning (gate fee) och miljöhantering. Bilar med clean title och salvage title har olika avgiftstabeller. Budar du via en broker tillkommer brokerns provision."
+      },
+      {
+        "ul": [
+          "Köparavgift: trappstegsvis efter pris, ofta 600–1 000 dollar på en bil för 10 000 dollar",
+          "Avgift för internetbud och gate fee: cirka 100–200 dollar",
+          "Brokerprovision: normalt 200–500 dollar per bil",
+          "Lagringsavgift: debiteras per dag om du betalar eller hämtar sent"
+        ]
+      },
+      {
+        "h2": "2. Transport till exporthamnen"
+      },
+      {
+        "p": "En lastbil kör bilen från auktionsplatsen till exporthamnen, oftast New Jersey, Savannah, Houston eller Los Angeles. Avståndet spelar roll: en uppställningsplats nära hamnen kostar några hundra dollar, en transport tvärs över kontinenten över 1 000 dollar. En bil som inte går att köra behöver gaffeltruck och vinsch, vilket ger ett tillägg."
+      },
+      {
+        "h2": "3. Sjöfrakt och försäkring"
+      },
+      {
+        "p": "Delad container (oftast 3–4 bilar) är det billigaste säkra alternativet: cirka 1 000–1 600 dollar per bil från östkusten till hamnarna i Nordsjön och Östersjön. RoRo är billigare för körbara bilar men ger sämre skydd. Transportförsäkringen kostar ungefär 1,5 % av bilens värde och ingår i tullvärdet."
+      },
+      {
+        "h2": "4. Tull"
+      },
+      {
+        "p": "Tullen beräknas på tullvärdet, det så kallade CIF-värdet: pris, auktionsavgifter, transport till EU:s gräns och försäkring. För personbilar är tullsatsen 10 % (KN-nummer 8703), för pickuper 22 % och för motorcyklar 6–8 %. Bilar äldre än 30 år i originalskick kan vara tullfria som samlarobjekt. Tullen hanteras av Tullverket om bilen förtullas i Sverige."
+      },
+      {
+        "h2": "5. Importmoms – i landet där bilen förtullas"
+      },
+      {
+        "p": "Moms tas ut på tullvärdet plus tull och transportkostnaderna till första bestämmelseort i EU. Satsen är den som gäller i landet där bilen förtullas – i Sverige 25 %, i EU som helhet från 17 % i Luxemburg till 27 % i Ungern. Därför kan valet av hamn ändra totalen med tusentals kronor, men jämförelsen måste göras från dörr till dörr."
+      },
+      {
+        "h2": "6. Hamn, leverans och registrering"
+      },
+      {
+        "p": "I EU-hamnen betalar du terminalhantering och lossning av containern samt ett tullombud. Därefter körs bilen hem till dig med biltransport eller bärgare, prissatt per kilometer. Till sist kommer de svenska kostnaderna: registreringsbesiktning hos ett besiktningsföretag, eventuella ombyggnader av belysning och registrering hos Transportstyrelsen. Sverige har ingen engångsskatt vid registrering, men den årliga fordonsskatten beror på bilens utsläpp och drivmedel – kontrollera den innan du köper."
+      },
+      {
+        "h2": "Exempel: en bil för 10 000 dollar"
+      },
+      {
+        "table": {
+          "head": [
+            "Post",
+            "Belopp (USD)"
+          ],
+          "rows": [
+            [
+              "Vinnande bud",
+              "10 000"
+            ],
+            [
+              "Auktions- och brokeravgifter",
+              "1 200"
+            ],
+            [
+              "Transport till hamnen",
+              "450"
+            ],
+            [
+              "Sjöfrakt, delad container",
+              "1 200"
+            ],
+            [
+              "Transportförsäkring",
+              "180"
+            ],
+            [
+              "Tullvärde (CIF)",
+              "13 030"
+            ],
+            [
+              "Tull 10 %",
+              "1 303"
+            ],
+            [
+              "Hamn, lossning, tullombud och leverans hem",
+              "≈ 1 000"
+            ],
+            [
+              "Momsunderlag (CIF + tull + hamn och leverans)",
+              "15 333"
+            ],
+            [
+              "Importmoms 25 %",
+              "3 833"
+            ],
+            [
+              "Totalt före registrering",
+              "≈ 19 170"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Exemplet bygger på avrundade siffror för att ge en känsla för nivåerna. Valutakursen, landet där bilen förtullas, biltypen och din adress påverkar resultatet. Kalkylatorn jämför alla 43 EU-hamnar från dörr till dörr – du anger bara din adress, så räknar den ut kostnaden för just din bil i kronor."
+      },
+      {
+        "tip": "Planera in en buffert på 10–15 % för överraskningar: lagringsavgifter, ett försenat fartyg, en tullkontroll eller dolda skador. Kalkylatorn visar de riskerna i sitt pessimistiska scenario."
+      },
+      {
+        "h2": "Så betalar du mindre"
+      },
+      {
+        "ol": [
+          "Köp nära en exporthamn för att spara på transporten inom USA.",
+          "Välj delad container i stället för en egen.",
+          "Jämför förtullningshamnar: lägre moms i ett annat EU-land kan väga upp den längre vägtransporten.",
+          "Kontrollera auktionens avgiftstrappor – några dollar över en gräns kan höja avgiften.",
+          "Betala auktionen i dollar via en valutatjänst med låg marginal i stället för bankens standardkurs."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kan en privatperson få tillbaka importmomsen?",
+        "a": "Nej. För en privatperson är importmomsen en slutlig kostnad. Ett momsregistrerat företag kan normalt dra av den, eller använda tullförfarande 4200 när bilen går vidare till ett annat EU-land."
+      },
+      {
+        "q": "Betalar jag moms även på frakten?",
+        "a": "Ja. Momsunderlaget omfattar tullvärdet, tullen och transportkostnaderna till första bestämmelseort i EU."
+      },
+      {
+        "q": "Finns det en registreringsskatt i Sverige?",
+        "a": "Nej, Sverige har ingen engångsskatt vid registrering. Du betalar registreringsbesiktning, avgifter till Transportstyrelsen och därefter årlig fordonsskatt."
+      }
+    ]
+  },
+  {
+    "id": "copart-iaai",
+    "slug": "kopa-bil-pa-copart-och-iaai-fran-sverige",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-16",
+    "minutes": 3,
+    "title": "Så köper du bil på Copart eller IAAI från Sverige",
+    "metaTitle": "Köpa bil på Copart och IAAI från Sverige – guide | CarImport.eu",
+    "description": "Så köper du bil på Copart eller IAAI från Sverige: broker, deposition, bud, avgifter och tidsfrister steg för steg – och hur mycket du kan bjuda.",
+    "lead": "Copart och IAAI säljer hundratusentals bilar varje månad, och många av dem går till köpare i Europa. Här är hur budgivningen fungerar när du sitter i Sverige, vilka avgifter som tillkommer och vilka tidsfrister du inte får missa.",
+    "blocks": [
+      {
+        "h2": "Behöver du en broker?"
+      },
+      {
+        "p": "Många objekt kan bara köpas med återförsäljarlicens, och vissa delstater begränsar vem som får köpa salvage-bilar. Därför budar de flesta europeiska köpare via en registrerad broker (även kallad agent eller importör) som lägger buden åt dig under sin licens. Brokern tar en fast provision per bil och sköter ofta även betalning, upphämtning och export."
+      },
+      {
+        "p": "Välj en broker som har arbetat med köpare i Norden, som tydligt redovisar alla avgifter i förväg och som kan visa hur depositionen hanteras. Fråga också vilka hamnar de skeppar till – det påverkar både fraktpriset och var bilen förtullas."
+      },
+      {
+        "h2": "Steg för steg"
+      },
+      {
+        "ol": [
+          "Välj broker och skriv avtal; du får tillgång till budgivning via deras konto.",
+          "Betala depositionen – oftast cirka 10 % av ditt maxbud.",
+          "Hitta bilen, läs skickrapporten och kontrollera VIN-historiken (till exempel Carfax eller AutoCheck).",
+          "Sätt ditt maxbud inklusive alla avgifter – inte bara klubbslagspriset.",
+          "Buda i förhandsrundan eller live; högsta budet vinner om det når säljarens reservationspris.",
+          "Betala inom fristen (oftast 2–3 bankdagar) via banköverföring i dollar.",
+          "Ordna upphämtning snabbt – den fria lagringstiden är kort, sedan tas en dagsavgift ut.",
+          "Bilen körs till hamnen och titeln skickas till exportören för tullhanteringen."
+        ]
+      },
+      {
+        "h2": "Så läser du en annons"
+      },
+      {
+        "ul": [
+          "Titeltyp: clean, salvage, rebuilt eller certificate of destruction / parts only",
+          "Primär och sekundär skada, krockkuddar, mätarställningens status",
+          "Etiketterna Run and Drive, Engine Starts och Enhanced Vehicles – kontrolleras bara vid inlämning, ingen garanti",
+          "Nycklar, var uppställningsplatsen ligger och hur långt det är till hamnen",
+          "Säljartyp: försäkringsbolag, bilhandlare, biluthyrningsfirma"
+        ]
+      },
+      {
+        "tip": "Run and Drive betyder att bilen startade och rullade framåt vid inlämningen. Det betyder inte att den är trafiksäker – planera för en teknisk kontroll när den kommit hem."
+      },
+      {
+        "h2": "Avgifter som överraskar nya köpare"
+      },
+      {
+        "p": "Utöver köparavgiften lägger auktionerna till avgifter för internetbud, utlämning, miljöhantering och titelhantering. Sen betalning och sen upphämtning kostar extra, och om du inte betalar alls tillkommer avgift för ny försäljning. Brokern lägger till sin provision och ibland en avgift för dokument och export. Fråga alltid efter en komplett lista innan du budar första gången."
+      },
+      {
+        "h2": "Hur mycket ska du buda?"
+      },
+      {
+        "p": "Räkna baklänges. Utgå från vad bilen får kosta levererad till din dörr – inklusive tull, 25 % importmoms, transport, registreringsbesiktning och ombyggnad – och från vad den är värd på den svenska marknaden efter eventuella reparationer. Skillnaden är ditt utrymme, och kalkylatorn omvandlar den till ett bud i dollar. Den jämför samtidigt alla 43 EU-hamnar från dörr till dörr; du anger bara din adress."
+      },
+      {
+        "p": "Kom ihåg att dollarkursen rör sig mellan budet och betalningen. Lägg gärna in några procents marginal om kronan är svag, och bestäm dig för ett tak innan auktionen startar. Det är lätt att rycka med i en livebudgivning."
+      },
+      {
+        "h2": "Copart eller IAAI – vad är skillnaden?"
+      },
+      {
+        "p": "Båda auktionerna säljer främst bilar från försäkringsbolag, och utbudet överlappar ofta. Copart har fler platser och ett mycket stort utbud, medan IAAI ibland har mer detaljerade bilder och skickrapporter. Avgiftstabellerna skiljer sig åt, så jämför den faktiska slutsumman för just ditt budnivå i stället för att välja auktion av vana. Bevaka gärna samma modell på båda under några veckor för att lära dig vilka priser som är realistiska."
+      },
+      {
+        "h2": "Hur lång tid tar det?"
+      },
+      {
+        "p": "Från vunnen auktion till bil i en europeisk hamn går det normalt 4–8 veckor. Till det kommer förtullning, transport hem och tid för registreringsbesiktning och registrering hos Transportstyrelsen. Räkna alltså med att bilen står på svenska skyltar tidigast efter två månader."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kan jag ångra köpet efter att ha vunnit?",
+        "a": "Normalt inte utan kostnad. Betalar du inte förlorar du depositionen, och avgifter för ny försäljning kan tillkomma."
+      },
+      {
+        "q": "Hur lång tid tar det från vunnen auktion till bilen i Europa?",
+        "a": "Oftast 4–8 veckor: betalning och upphämtning 1–2 veckor, transport till hamnen och lastning 1–3 veckor, sjöresa 2–5 veckor."
+      },
+      {
+        "q": "Kan jag köpa direkt på Copart utan broker?",
+        "a": "Vissa bilar kan köpas med ett vanligt medlemskap, men många kräver återförsäljarlicens. En broker ger tillgång till fler objekt och hjälper med export."
+      }
+    ]
+  }
+]
