@@ -705,5 +705,397 @@
         "a": "Zvláštní registrační daň Česko nemá. Platíte clo a DPH při proclení a správní poplatky při registraci."
       }
     ]
+  },
+  {
+    "id": "port-choice",
+    "slug": "hamburg-bremerhaven-nebo-koper-kde-proclit-auto-z-usa",
+    "category": "logistics",
+    "origin": null,
+    "date": "2026-09-30",
+    "minutes": 3,
+    "title": "Hamburg, Bremerhaven, nebo Koper? Kde proclít auto z USA",
+    "metaTitle": "Hamburg, Bremerhaven, nebo Koper? Výběr přístavu | CarImport.eu",
+    "description": "Hamburg, Bremerhaven, Štětín nebo Koper? Porovnáváme přístavy pro auto z USA do Česka: DPH 21 % vs. 19 % v Německu, poplatky, plavba a dovoz domů.",
+    "lead": "Česko nemá moře, takže auto z USA vždy proclíváte v cizím přístavu – nejčastěji v Hamburku, Bremerhavenu, polském Štětíně nebo ve slovinském Koperu. Proclít ho ale můžete v kterémkoli ze 43 přístavů EU. Přístav rozhoduje o sazbě DPH, poplatcích na terminálu a o tom, jak daleko pojede auto po silnici.",
+    "blocks": [
+      {
+        "h2": "Tři věci, které volba přístavu mění"
+      },
+      {
+        "ol": [
+          "DPH z dovozu: platíte sazbu země proclení – 19 % v Německu, 21 % v Česku, 22 % ve Slovinsku a Itálii, 23 % v Polsku, 25 % v Chorvatsku.",
+          "Poplatky: obsluha terminálu, vykládka kontejneru a celní deklarant se mezi přístavy liší.",
+          "Vzdálenost po silnici: přístav s nižším DPH může být od vašeho domova daleko."
+        ]
+      },
+      {
+        "p": "Auto můžete také dovézt v tranzitu a proclít až v Česku se sazbou 21 %. Často je ale jednodušší a levnější proclít ho přímo v přístavu – a u německých přístavů navíc s nižší sazbou."
+      },
+      {
+        "h2": "Nejbližší přístavy pro Česko"
+      },
+      {
+        "table": {
+          "head": [
+            "Přístav",
+            "Země a DPH",
+            "Vzdálenost do středu Česka",
+            "Plavba z USA (dny)"
+          ],
+          "rows": [
+            [
+              "Štětín / Svinoústí",
+              "Polsko, 23 %",
+              "466 km",
+              "18–39"
+            ],
+            [
+              "Hamburg",
+              "Německo, 19 %",
+              "616 km",
+              "15–36"
+            ],
+            [
+              "Terst",
+              "Itálie, 22 %",
+              "622 km",
+              "18–39"
+            ],
+            [
+              "Koper",
+              "Slovinsko, 22 %",
+              "632 km",
+              "18–39"
+            ],
+            [
+              "Rijeka",
+              "Chorvatsko, 25 %",
+              "660 km",
+              "18–39"
+            ],
+            [
+              "Bremerhaven",
+              "Německo, 19 %",
+              "697 km",
+              "14–35"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Co to znamená v číslech"
+      },
+      {
+        "p": "Vezměme auto z našeho příkladu nákladů: celní hodnota 13 030 USD, clo 1 303 USD a zhruba 1 000 USD za přístav a dovoz, tedy základ DPH asi 15 333 USD. Rozdíl mezi zeměmi je pak čistě v sazbě:"
+      },
+      {
+        "table": {
+          "head": [
+            "Země proclení",
+            "Sazba DPH",
+            "DPH (USD)",
+            "Rozdíl proti Česku"
+          ],
+          "rows": [
+            [
+              "Německo (Hamburg, Bremerhaven)",
+              "19 %",
+              "2 913",
+              "cca 307 méně"
+            ],
+            [
+              "Česko (tranzit, proclení doma)",
+              "21 %",
+              "3 220",
+              "–"
+            ],
+            [
+              "Slovinsko, Itálie (Koper, Terst)",
+              "22 %",
+              "3 373",
+              "cca 153 více"
+            ],
+            [
+              "Polsko (Štětín)",
+              "23 %",
+              "3 527",
+              "cca 307 více"
+            ],
+            [
+              "Chorvatsko (Rijeka)",
+              "25 %",
+              "3 833",
+              "cca 613 více"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Hamburg je od středu Česka jen o 150 km dál než Štětín, a přitom má o 4 procentní body nižší DPH. Proto pro většinu aut z USA vychází německé přístavy nejlépe. Polský Štětín je sice nejblíž, ale vyšší DPH 23 % a poplatky kolem 1 250 zł za vykládku a 800 zł za deklaranta jeho výhodu obvykle smažou. V Hamburku počítá kalkulačka přibližně s 480 EUR za vykládku a 250 EUR za deklaranta, v Bremerhavenu 450 EUR a 250 EUR."
+      },
+      {
+        "h2": "Kdy dává smysl Koper nebo Terst"
+      },
+      {
+        "p": "Z východního pobřeží USA jsou nejrychlejší přístavy v Severním moři – Bremerhaven a Hamburg zhruba dva týdny čisté plavby. U aut z Japonska a SAE je to naopak: lodě plují Suezským průplavem, takže Koper a Terst jsou o týden i víc rychlejší. Koper je z Japonska asi 33 dní plavby, Hamburg 41 dní. Pro obyvatele jižní Moravy je navíc Koper vzdálenostně srovnatelný s Hamburkem. Vyšší DPH 22 % ale znamená, že se vyplatí hlavně tehdy, když vám jde o čas nebo když auto přijíždí z Asie či Blízkého východu."
+      },
+      {
+        "h2": "Proclení v přístavu, nebo tranzit do Česka?"
+      },
+      {
+        "p": "Při tranzitu jede auto z přístavu pod celním dohledem až k celnímu úřadu v Česku, kde se teprve proclí. Výhodou je, že vše řešíte doma, s českým deklarantem a v češtině. Nevýhodou je vyšší DPH 21 % oproti německým 19 %, poplatek za tranzitní doklad a nutnost dovézt auto ve lhůtě a nepoškozené k úřadu. Proclení přímo v německém přístavu bývá pro soukromou osobu jednodušší i levnější – zvlášť když broker spolupracuje s ověřeným deklarantem v Hamburku či Bremerhavenu."
+      },
+      {
+        "p": "Rozdíl 307 USD na DPH v našem příkladu roste s cenou auta. U vozu za 30 000 USD, kde základ DPH přesáhne 40 000 USD, už jde zhruba o 800 dolarů, tedy podle kurzu o necelých dvacet tisíc korun. Naopak u levného auta s vysokými náklady na odtah může rozdíl v DPH zcela pohltit doprava."
+      },
+      {
+        "h2": "Na co ještě myslet"
+      },
+      {
+        "ul": [
+          "Celní doklady ze zahraničí mohou v Česku vyžadovat překlad pro registraci.",
+          "Nepojízdné auto se vyplatí vozit co nejkratší trasou – každý kilometr odtahovky s navijákem stojí víc.",
+          "Ověřte si, kam váš broker kontejnery skutečně posílá; ne každý přístav má pravidelné spoje z vašeho exportního přístavu.",
+          "Při delší plavbě počítejte s pozdějším termínem registrace a delším vázáním peněz.",
+          "Zkontrolujte, zda deklarant v zahraničním přístavu vystaví doklady, které český registr vozidel bez problémů přijme."
+        ]
+      },
+      {
+        "tip": "Zadejte do kalkulačky svou adresu: ocení každý ze 43 přístavů EU od dveří ke dveřím a automaticky vybere nejlevnější."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Mohu auto proclít v Německu a zaregistrovat ho v Česku?",
+        "a": "Ano. DPH z dovozu zaplatíte v Německu a auto pak zaregistrujete v Česku na základě celních dokladů."
+      },
+      {
+        "q": "Který přístav je pro auto z USA do Česka nejlepší?",
+        "a": "Nejčastěji Hamburg nebo Bremerhaven – kombinují krátkou plavbu z USA a DPH 19 %. Rozhoduje ale vaše adresa, hodnota auta a odkud auto přijíždí."
+      },
+      {
+        "q": "Vyplatí se Štětín, když je nejblíž?",
+        "a": "Většinou ne: polské DPH 23 % je vyšší než české i německé a poplatky v přístavu nejsou nízké. Spočítejte si to v kalkulačce pro svou adresu."
+      }
+    ]
+  },
+  {
+    "id": "japan-jdm",
+    "slug": "dovoz-auta-z-japonska-aukcni-list-a-naklady",
+    "category": "buying",
+    "origin": "JAPAN",
+    "date": "2026-09-25",
+    "minutes": 3,
+    "title": "Dovoz auta z Japonska: aukční list, hodnocení a náklady na JDM",
+    "metaTitle": "Dovoz auta z Japonska – aukční list a náklady JDM | CarImport.eu",
+    "description": "Dovoz auta z Japonska do Česka: jak fungují aukce USS a TAA, jak číst aukční list, kolik stojí doprava, clo a DPH a registrace auta s volantem vpravo.",
+    "lead": "Japonské aukce jsou proslulé poctivým hodnocením a auty ve výborném stavu. Se spolehlivým exportérem je nákup JDM auta bezpečnější než kupovat naslepo na amerických aukcích – pokud rozumíte aukčnímu listu. Vysvětlujeme, jak to funguje a kolik stojí dovoz auta z Japonska do Česka.",
+    "blocks": [
+      {
+        "h2": "Jak probíhá nákup v Japonsku"
+      },
+      {
+        "p": "Aukce jako USS, TAA, CAA a JU jsou přístupné licencovaným dealerům. Kupujete přes exportéra: vyberete auta, stanovíte maximální nabídku a exportér přihazuje, platí, vyřadí auto z japonské evidence pro vývoz a odešle ho do Evropy. Každý týden projdou aukcemi desetitisíce aut, takže i vzácné JDM modely se objevují pravidelně."
+      },
+      {
+        "p": "Dobrý exportér vám pošle aukční list ještě před aukcí, přeloží poznámky inspektora a může zajistit další fotky. Zeptejte se na kompletní vyúčtování: provizi, dopravu po Japonsku, vývozní doklady a námořní přepravu."
+      },
+      {
+        "h2": "Jak číst aukční list"
+      },
+      {
+        "ul": [
+          "Celkové hodnocení: 6–5 téměř nové, 4,5–4 velmi dobré, 3,5 průměrné, R/RA auto po opravené nehodě",
+          "Hodnocení interiéru: A až D",
+          "Mapa karoserie: A = škrábanec, U = promáčklina, W = zvlnění/oprava laku, S = rez, C = koroze, s číslem udávajícím velikost",
+          "Poznámky inspektora – vždy si je nechte přeložit"
+        ]
+      },
+      {
+        "tip": "Hodnocení R nebo RA nemusí znamenat špatné auto, ale zeptejte se, co přesně se opravovalo – oprava rámu je něco úplně jiného než vyměněný nárazník."
+      },
+      {
+        "h2": "Náklady na dovoz auta z Japonska"
+      },
+      {
+        "p": "K ceně z aukce připočtěte aukční poplatek, provizi exportéra, dopravu po Japonsku, vývozní doklady, námořní přepravu a pojištění. Společně tvoří celní hodnotu CIF, ze které se počítá clo 10 % u osobních aut. Poté následuje DPH z dovozu v zemi proclení – v Česku 21 %, v Německu 19 %, ve Slovinsku 22 %. Zvláštní registrační daň Česko nemá, takže na rozdíl od Polska nehraje roli objem motoru."
+      },
+      {
+        "p": "To je pro české zájemce o JDM dobrá zpráva: Nissan Skyline, Toyota Supra nebo Mazda RX-7 se při dovozu zdaní stejně jako malé hatchbacky – rozhoduje jen celní hodnota. U aut starších 30 let v původním stavu může navíc odpadnout i clo, protože se mohou zařadit jako sběratelské vozy. Původnost stavu si ale nechte potvrdit dopředu, upravené kusy tuto podmínku často nesplní."
+      },
+      {
+        "table": {
+          "head": [
+            "Položka",
+            "Na co má vliv"
+          ],
+          "rows": [
+            [
+              "Cena z aukce + aukční poplatek",
+              "celní hodnota"
+            ],
+            [
+              "Provize exportéra, doprava v Japonsku, doklady",
+              "celní hodnota"
+            ],
+            [
+              "Námořní přeprava a pojištění",
+              "celní hodnota"
+            ],
+            [
+              "Clo 10 %",
+              "základ DPH"
+            ],
+            [
+              "DPH podle země proclení",
+              "konečný náklad pro soukromou osobu"
+            ],
+            [
+              "Přístav, deklarant, dovoz, STK, registrace",
+              "náklady po proclení"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Doba přepravy a volba přístavu"
+      },
+      {
+        "p": "Lodě z Japonska plují Suezským průplavem, takže středomořské přístavy jsou výrazně blíž. Koper a Terst jsou zhruba 33 dní plavby, Hamburg a Bremerhaven 41–42 dní, polský Štětín asi 45 dní. Pro auto z Japonska do Česka tak Koper často vychází nejrychleji, i když Slovinsko má DPH 22 % oproti 19 % v Německu. Kalkulačka porovná všech 43 přístavů EU od dveří ke dveřím – stačí zadat adresu."
+      },
+      {
+        "h2": "Volant vpravo"
+      },
+      {
+        "p": "Auto s volantem vpravo lze v Česku zaregistrovat. Obvykle je nutné seřídit nebo vyměnit světlomety, aby neoslňovaly protijedoucí řidiče. Tachometr v km/h japonská auta většinou už mají. Před nákupem si v servisu ověřte, kolik úprava osvětlení u konkrétního modelu stojí, a počítejte s tím, že auto RHD se v Česku prodává hůř než evropská verze."
+      },
+      {
+        "h2": "Doklady z Japonska"
+      },
+      {
+        "p": "Základním dokladem je japonské osvědčení o vyřazení pro vývoz (Export Certificate) s číslem karoserie, datem první registrace a stavem tachometru. K tomu faktura exportéra a konosament. Cizojazyčné doklady je v Česku nutné soudně přeložit pro proclení i pro registr vozidel. Japonská auta nemají evropské CoC, a proto procházejí individuálním schválením a STK – evidenční kontrolou stejně jako auta z USA."
+      },
+      {
+        "h2": "Na co si dát pozor"
+      },
+      {
+        "ul": [
+          "Auta z Hokkaida a severního Japonska mohou mít zrezivělý podvozek od posypové soli",
+          "Modely pro japonský trh mohou mít jinou výbavu a navigaci jen v japonštině",
+          "Díly pro JDM verze bývají dražší a hůř dostupné než pro evropské verze",
+          "Upravená auta je třeba prověřit kvůli STK – snížený podvozek, hlasitý výfuk nebo jiná kola může být nutné vrátit do původního stavu"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Jsou nájezdy japonských aut spolehlivé?",
+        "a": "Obecně ano – aukční listy a vývozní osvědčení nájezd zaznamenávají a stáčení tachometrů je oproti jiným trhům vzácné."
+      },
+      {
+        "q": "A co rez?",
+        "a": "Auta ze severního Japonska (Hokkaido) mohou mít rez na podvozku od posypové soli; aukční list ji značí písmeny S nebo C."
+      },
+      {
+        "q": "Jak dlouho trvá dovoz auta z Japonska do Česka?",
+        "a": "Obvykle 2–3 měsíce: nákup a doprava do přístavu v Japonsku, zhruba 5–6 týdnů plavby, pak proclení, dovoz, STK a registrace."
+      }
+    ]
+  },
+  {
+    "id": "checklist",
+    "slug": "kontrolni-seznam-pred-prihozem-na-auto-z-usa",
+    "category": "buying",
+    "origin": null,
+    "date": "2026-09-20",
+    "minutes": 3,
+    "title": "12 bodů, které zkontrolovat, než přihodíte na auto z USA",
+    "metaTitle": "Než přihodíte na auto z USA – kontrolní seznam | CarImport.eu",
+    "description": "Kontrolní seznam před přihozem na Copartu nebo IAAI: historie VIN, titul, fotky, poplatky, clo, DPH, přístav a úpravy pro registraci v Česku.",
+    "lead": "Na aukci máte na rozhodnutí pár minut. Těchto dvanáct bodů vám zabere jeden večer a ušetří vás nejdražších chyb při dovozu auta z USA, Kanady nebo Japonska. Projděte si je u každého auta, na které chcete podat nabídku.",
+    "blocks": [
+      {
+        "h2": "Kontrolní seznam: 12 bodů"
+      },
+      {
+        "ol": [
+          "Prověřte historii podle VIN (Carfax, AutoCheck): nehody, zaplavení, nájezd, krádež.",
+          "Zkontrolujte typ titulu – vyhněte se certifikátům parts only a non-repairable.",
+          "Prohlédněte si každou fotku: spáry mezi díly, airbagy, stopy po vodě, motorový prostor.",
+          "Štítky stavu (Run and Drive, Engine Starts) berte jako informaci, ne jako záruku.",
+          "Ověřte umístění areálu a vzdálenost k exportnímu přístavu.",
+          "Spočítejte všechny aukční poplatky a provizi brokera pro vaši výši nabídky.",
+          "Spočítejte celkovou cenu před domem: přepravu, clo, DPH, přístav a dovoz.",
+          "Porovnejte přístavy proclení pro svou adresu – Hamburg, Bremerhaven, Koper a další.",
+          "Získejte odhad opravy a ceny dílů v Česku.",
+          "Zjistěte, co je nutné upravit pro registraci (osvětlení, tachometr v km/h).",
+          "Naplánujte termíny: platbu a vyzvednutí, plavbu, STK a registraci.",
+          "Stanovte maximální nabídku – a držte se jí."
+        ]
+      },
+      {
+        "tip": "Body 6–8 udělejte v kalkulačce: sečte všechny poplatky a daně, porovná 43 přístavů EU od dveří ke dveřím a ukáže optimistický, průměrný a pesimistický výsledek. Zadáváte jen adresu."
+      },
+      {
+        "h2": "Proč na každém bodu záleží"
+      },
+      {
+        "p": "Zpráva podle VIN a fotky prozradí, co se s autem stalo, ale ne všechno. Typ titulu rozhoduje, zda půjde auto vůbec legálně zaregistrovat. Umístění areálu může změnit cenu dopravy v USA z 300 na více než 1 000 USD. Aukční poplatky rostou po pásmech, takže nabídka vyšší o pár dolarů může stát mnohem víc. A celková cena před domem – s clem 10 % a DPH 21 % – bývá o polovinu vyšší, než by odpovídalo samotné ceně příklepu. Odhad opravy a seznam úprav pro registraci pak ukážou, zda se auto po připočtení všech nákladů vůbec vyplatí, nebo zda je lepší počkat na další aukci. Podobných aut se na Copartu a IAAI objevuje každý týden dost, takže ztracená příležitost obvykle není žádná katastrofa."
+      },
+      {
+        "h2": "Na co se dívat na fotkách"
+      },
+      {
+        "ul": [
+          "Nerovnoměrné spáry mezi kapotou, blatníky a dveřmi – mohou ukazovat na poškození konstrukce",
+          "Kontrolky na přístrojové desce po nastartování a stav airbagů",
+          "Čára bláta nebo vody na čalounění, v kufru a pod palubní deskou – typická stopa zaplavení",
+          "Úniky kapalin pod autem a stav chladiče u poškozené přední části",
+          "Stav pneumatik a kol, které u bočního nárazu často skrývají problém s podvozkem",
+          "Chybějící věci: klíče, rezervní kolo, multimediální jednotky"
+        ]
+      },
+      {
+        "p": "Pokud je fotek málo nebo jsou neostré, požádejte brokera o další snímky nebo prohlídku v areálu. Stojí to málo v porovnání s rizikem, že koupíte auto se skrytou škodou."
+      },
+      {
+        "h2": "Nejčastější chyby"
+      },
+      {
+        "ul": [
+          "Přihazování až do tržní ceny v Česku bez započtení poplatků a daní",
+          "Zapomenuté parkovné, když se vyzvednutí zpozdí",
+          "Podceněná oprava „drobného“ poškození přídě",
+          "Nákup auta, jehož osvětlení nebo verze vyžaduje drahé úpravy",
+          "Žádná rezerva na zpožděnou loď, celní kontrolu a skryté vady"
+        ]
+      },
+      {
+        "h2": "Kolik přihodit – jednoduché pravidlo"
+      },
+      {
+        "p": "Vezměte cenu, za kterou se podobné auto po opravě prodává v Česku. Odečtěte náklady na opravu, úpravy a registraci, rezervu na nečekané výdaje a očekávaný zisk nebo úsporu. Co zbude, je maximální cena před domem. Kalkulačka ji převede na maximální nabídku v dolarech – postupně odečte DPH, clo, přepravu i aukční poplatky."
+      },
+      {
+        "h2": "Kolik času si vyhradit"
+      },
+      {
+        "p": "Od vyhrané aukce k autu před domem uplyne obvykle 4–8 týdnů z USA a 2–3 měsíce z Japonska. Potom následuje oprava, úpravy, STK – evidenční kontrola a registrace v registru vozidel. Pokud má být auto připravené k určitému datu, počítejte s rezervou – zpožděné lodě a fronty v přístavech jsou častější, než se zdá."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kolik peněz si nechat v rezervě?",
+        "a": "Alespoň 10–15 % celkových nákladů na nečekané výdaje, u nepojízdných aut víc."
+      },
+      {
+        "q": "Stačí zpráva podle VIN?",
+        "a": "Je nezbytná, ale ne úplná – kombinujte ji s fotkami, zprávou o stavu a odhadem opravy."
+      },
+      {
+        "q": "Vyplatí se v roce 2026 dovážet auto z USA?",
+        "a": "Může, pokud spočítáte celkové náklady s clem a DPH a reálnou cenu opravy. Bez toho snadno zaplatíte víc než za podobné auto koupené v Česku."
+      }
+    ]
   }
 ]
