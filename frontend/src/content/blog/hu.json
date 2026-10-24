@@ -1,0 +1,761 @@
+[
+  {
+    "id": "total-cost",
+    "slug": "mennyibe-kerul-egy-auto-behozatala-amerikabol",
+    "category": "costs",
+    "origin": "USA",
+    "date": "2026-10-20",
+    "minutes": 4,
+    "title": "Mennyibe kerül valójában egy autó behozatala Amerikából?",
+    "metaTitle": "Mennyibe kerül autó behozatala Amerikából? Költségek | CarImport.eu",
+    "description": "Mennyibe kerül autó behozatala Amerikából Magyarországra: aukciós díjak, szállítás, hajó, 10% vám, 27% áfa, kikötő, regisztrációs adó – példával.",
+    "lead": "A Copart vagy az IAAI aukcióján látott ár csak a kezdet. Mire az autó forgalomba helyezve áll a háza előtt, általában a leütési ár 1,6–2-szeresét fizeti ki. Megmutatjuk, hová megy a pénz – tételről tételre, a magyar 27%-os áfával számolva.",
+    "blocks": [
+      {
+        "h2": "A rövid válasz"
+      },
+      {
+        "p": "Egy amerikai aukción 10 000 dollárért megvett átlagos személyautónál nagyjából 19 500–21 500 dolláros végösszeggel számoljon, mire az autó Magyarországon van és forgalomba helyezhető – javítás és regisztrációs adó nélkül. Az autó ára után a legnagyobb tételek az import áfa, a vám és a szállítás. A sérült autók javítása ezen felül jön."
+      },
+      {
+        "p": "Magyarországon a legmagasabb az áfa az Európai Unióban: 27%. Ezért amerikai autó behozatalánál különösen fontos pontosan tudni, miből áll az adóalap, és melyik kikötőben vámkezelik az autót. Mivel az aukciót dollárban fizeti, a forint árfolyama is sokat számít: néhány forintos elmozdulás egy drágább autónál több tízezer forintot jelent."
+      },
+      {
+        "h2": "1. A vásárlás: licit és aukciós díjak"
+      },
+      {
+        "p": "A Copart és az IAAI vevői díjat (buyer fee) számol fel, amely az árral együtt nő, emellett fix díjakat is az online licitálásért, a telephely elhagyásáért (gate fee) és környezetvédelmi díjat. A tiszta (clean) és a sérült (salvage) okmányú autókra eltérő díjtáblázat vonatkozik. Ha brókeren keresztül licitál, a bróker jutalékát is adja hozzá."
+      },
+      {
+        "ul": [
+          "Vevői díj: árfüggő, egy 10 000 dolláros autónál gyakran 600–1000 dollár",
+          "Virtuális licitdíj és gate fee: kb. 100–200 dollár",
+          "Bróker jutaléka: általában 200–500 dollár autónként",
+          "Tárolási díj: naponta számolják, ha késve fizet vagy késve szállíttatja el az autót"
+        ]
+      },
+      {
+        "h2": "2. Szállítás az exportkikötőig"
+      },
+      {
+        "p": "Kamion viszi az autót az aukciós telephelyről az exportkikötőbe – jellemzően New Jersey, Savannah, Houston vagy Los Angeles. A távolság döntő: egy kikötőhöz közeli telephely néhány száz dollár, egy kontinensen átívelő út több mint 1000 dollár. A nem működőképes autóhoz targonca és csörlő kell, ez felárral jár."
+      },
+      {
+        "h2": "3. Tengeri szállítás és biztosítás"
+      },
+      {
+        "p": "A közös konténer (általában 3–4 autó) a legolcsóbb biztonságos megoldás: kb. 1000–1600 dollár autónként az USA keleti partjáról az európai kikötőkig. A RoRo olcsóbb a működő autóknál, de kevésbé védett. Magyar vevőknek az adriai kikötők – Koper, Trieszt, Rijeka – a legközelebbiek, de a balti lengyel kikötők és a német Bremerhaven is szóba jöhetnek. A tengeri biztosítás az autó értékének kb. 1,5%-a, és a vámértékbe is beleszámít."
+      },
+      {
+        "h2": "4. Vám"
+      },
+      {
+        "p": "A vámot a vámértékre, azaz a CIF értékre számítják: vételár, aukciós díjak, szállítás az EU határáig és biztosítás. Személyautóknál 10% (8703-as vámtarifaszám), pickupoknál 22%, motoroknál 6–8%. A 30 évnél idősebb, eredeti állapotú autók gyűjteményi darabként vámmentesek lehetnek."
+      },
+      {
+        "h2": "5. Import áfa – a vámkezelés országában"
+      },
+      {
+        "p": "Az áfát a vámérték, a vám és az EU-n belüli első rendeltetési helyig tartó szállítás költségeinek összegére számítják. A mérték annak az országnak a kulcsa, ahol az autót vámkezelik – Magyarországon 27%, Szlovéniában és Olaszországban 22%, Horvátországban 25%. Ezért a kikötő megválasztása több száz euróval is módosíthatja a végösszeget."
+      },
+      {
+        "h2": "6. Kikötő, kiszállítás és forgalomba helyezés"
+      },
+      {
+        "p": "Az európai kikötőben kikötői kezelési díjat és konténerkirakodást (kb. 400–500 euró), valamint vámügynököt (kb. 250 euró) fizet. Ezután az autó autószállítóval vagy trélerrel jut el az Ön címére, kilométer alapú díjért. Végül jönnek a hazai költségek: a forgalomba helyezés előtti vizsgálat, fordítások, a regisztrációs adó és az ügyintézés a kormányablakban."
+      },
+      {
+        "h2": "Példa: egy 10 000 dolláros autó"
+      },
+      {
+        "table": {
+          "head": [
+            "Tétel",
+            "Összeg (USD)"
+          ],
+          "rows": [
+            [
+              "Nyertes licit",
+              "10 000"
+            ],
+            [
+              "Aukciós és brókerdíjak",
+              "1 200"
+            ],
+            [
+              "Szállítás a kikötőig az USA-ban",
+              "450"
+            ],
+            [
+              "Közös konténeres tengeri szállítás",
+              "1 200"
+            ],
+            [
+              "Tengeri biztosítás",
+              "180"
+            ],
+            [
+              "Vámérték (CIF)",
+              "13 030"
+            ],
+            [
+              "Vám 10%",
+              "1 303"
+            ],
+            [
+              "Áfa 27% a (CIF + vám + kb. 1000 kikötő és kiszállítás) összegre",
+              "4 140"
+            ],
+            [
+              "Kikötő, kirakodás és vámügynök",
+              "750"
+            ],
+            [
+              "Kiszállítás az Ön címére",
+              "500"
+            ],
+            [
+              "Összesen regisztrációs adó és forgalomba helyezés előtt",
+              "≈ 19 700"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Az áfaalap ebben a példában 13 030 + 1303 + kb. 1000 dollár kikötői és kiszállítási költség, azaz 15 333 dollár, ennek 27%-a 4140 dollár. A számok kerekítettek, tájékoztató jellegűek. A dollár–forint árfolyam, a vámkezelés országa, az autó típusa és az Ön címe megváltoztatja az eredményt – a kalkulátor az Ön konkrét autójára számolja ki."
+      },
+      {
+        "h2": "Regisztrációs adó"
+      },
+      {
+        "p": "Az első hazai forgalomba helyezéskor regisztrációs adót kell fizetni. Ennek összege a hazai szabályoktól és az autó adataitól függ, nem attól, hol vásárolta vagy vámkezeltette az autót, ezért itt nem becsüljük fejből. A CarImport.eu kalkulátora a regisztrációs adót külön tételként mutatja, így azonnal látja, mennyivel módosítja a teljes árat."
+      },
+      {
+        "tip": "Tervezzen 10–15% tartalékot a meglepetésekre: tárolási díj, késő hajó, vámvizsgálat vagy rejtett sérülés. A kalkulátor ezeket a kockázatokat a pesszimista forgatókönyvben mutatja."
+      },
+      {
+        "h2": "Hogyan fizethet kevesebbet?"
+      },
+      {
+        "ol": [
+          "Vásároljon exportkikötőhöz közel, így spórol az amerikai belföldi szállításon.",
+          "Válasszon közös konténert a kizárólagos helyett.",
+          "Hasonlítsa össze a vámkezelési kikötőket: Koperben vagy Triesztben 22% az áfa a hazai 27% helyett, ez gyakran többet ér, mint a hosszabb közúti út.",
+          "Figyelje az aukciós díjsávokat – néhány dollárral egy határ fölött a díj is nőhet.",
+          "Az aukciót dollárban, alacsony árrésű pénzváltással fizesse."
+        ]
+      },
+      {
+        "p": "A kalkulátor mind a 43 uniós kikötőt összehasonlítja háztól házig: Önnek csak a címét kell megadnia, a kilométereket, a kikötői díjakat és az egyes országok áfáját a kalkulátor számolja ki, és kiválasztja a legolcsóbb változatot."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Visszaigényelheti-e magánszemély az import áfát?",
+        "a": "Nem. Magánszemélynél az import áfa végleges költség. Az áfaregisztrált cég általában levonhatja, vagy használhatja a 4200-as vámeljárást, ha az autó rögtön egy másik uniós országba megy tovább."
+      },
+      {
+        "q": "A szállítási költség után is kell áfát fizetni?",
+        "a": "Igen. Az áfaalap tartalmazza a vámértéket, a vámot és az EU-n belüli első rendeltetési helyig tartó szállítás költségeit."
+      },
+      {
+        "q": "Mennyi a regisztrációs adó egy behozott autónál?",
+        "a": "Az autó adataitól és a hatályos hazai szabályoktól függ. A kalkulátor külön tételként mutatja az Ön autójára."
+      }
+    ]
+  },
+  {
+    "id": "copart-iaai",
+    "slug": "hogyan-vasaroljon-autot-a-copart-es-iaai-aukciokon-magyarorszagrol",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-16",
+    "minutes": 3,
+    "title": "Hogyan vásároljon autót a Copart és az IAAI aukcióin Magyarországról?",
+    "metaTitle": "Copart és IAAI vásárlás Magyarországról – lépésről lépésre | CarImport.eu",
+    "description": "Hogyan vásároljon autót a Copart vagy az IAAI aukcióin Magyarországról: regisztráció, letét, bróker, licitálás, fizetési határidők és tárolási díjak.",
+    "lead": "A Copart és az IAAI havonta több százezer autót értékesít, ezek jelentős része európai vevőkhöz kerül. Elmagyarázzuk, hogyan működik a licitálás Magyarországról a gyakorlatban, milyen díjakkal kell számolnia, és mely határidőket nem szabad elmulasztania.",
+    "blocks": [
+      {
+        "h2": "Szüksége van brókerre?"
+      },
+      {
+        "p": "Az amerikai aukciókon sok autót csak kereskedői engedéllyel lehet megvásárolni, és egyes államok korlátozzák, ki vehet salvage járművet. Ezért az európai vevők többsége regisztrált brókeren (ügynökön vagy importőrön) keresztül licitál, aki az Ön nevében, a saját engedélyével teszi meg az ajánlatokat. A bróker autónként fix jutalékot számol fel, és gyakran a kikötőig tartó szállítást és a tengeri fuvart is megszervezi."
+      },
+      {
+        "p": "Brókerválasztáskor figyeljen a díjak átláthatóságára, az európai exportban szerzett tapasztalatra, és arra, hogy minden számlát és dokumentumot megkap-e, amelyre később a vámkezelésnél és a forgalomba helyezésnél szüksége lesz. Ha egy bróker nem hajlandó megmutatni az aukciós számlát, az nem jó jel."
+      },
+      {
+        "h2": "Lépésről lépésre"
+      },
+      {
+        "ol": [
+          "Válasszon brókert és írja alá a szerződést; a bróker fiókján keresztül hozzáférést kap a licitáláshoz.",
+          "Fizesse be a biztosítéki letétet – általában a maximális licit kb. 10%-át.",
+          "Keresse meg az autót, olvassa el az állapotjelentést, és ellenőrizze az előéletet a VIN alapján (Carfax, AutoCheck).",
+          "Határozza meg a maximális licitet az összes díjjal és adóval együtt – ne csak a leütési árat nézze.",
+          "Licitáljon az előzetes körben vagy élőben; a legmagasabb ajánlat nyer, ha eléri az eladó minimálárát.",
+          "Fizessen határidőn belül (általában 2–3 munkanap) dollárban, banki átutalással.",
+          "Gyorsan szervezze meg az elszállítást – az ingyenes tárolás rövid, utána napi díjat számolnak.",
+          "Az autót a kikötőbe szállítják, az okmány (title) pedig az exportőrhöz kerül a kiviteli vámkezeléshez."
+        ]
+      },
+      {
+        "h2": "Hogyan olvassa a hirdetést?"
+      },
+      {
+        "ul": [
+          "Okmány típusa: clean, salvage, rebuilt vagy certificate of destruction / parts only",
+          "Elsődleges és másodlagos sérülés, légzsákok, a kilométeróra állapota",
+          "Run and Drive, Engine Starts, Enhanced Vehicles jelölések – csak az átvételkor ellenőrzött állapot, nem garancia",
+          "Kulcsok megléte, a telephely helye és távolsága az exportkikötőtől",
+          "Eladó típusa: biztosító, kereskedő, autókölcsönző"
+        ]
+      },
+      {
+        "tip": "A „Run and Drive” annyit jelent, hogy az autó az átvételkor beindult és előre tudott menni. Ez nem jelenti azt, hogy közlekedésre alkalmas – megérkezés után tervezzen be alapos szervizes átvizsgálást a forgalomba helyezés előtti vizsgálat előtt."
+      },
+      {
+        "h2": "Díjak, amelyek meglepik az új vevőket"
+      },
+      {
+        "p": "A vevői díjon túl az aukciók online licitdíjat, gate fee-t, környezetvédelmi díjat és okmánykezelési díjat is felszámolnak. A késedelmes fizetés és elszállítás pluszköltség, ha pedig nem fizet, újrahirdetési díj (relisting) is járhat. A bróker hozzáadja a jutalékát, és néha a dokumentumokért és az exportért is külön díjat kér."
+      },
+      {
+        "table": {
+          "head": [
+            "Díj",
+            "Irányár",
+            "Mikor fizetendő"
+          ],
+          "rows": [
+            [
+              "Vevői díj (buyer fee)",
+              "600–1000 USD egy 10 000 USD-s autónál",
+              "A vételárral együtt"
+            ],
+            [
+              "Virtuális licitdíj és gate fee",
+              "100–200 USD",
+              "A vételárral együtt"
+            ],
+            [
+              "Bróker jutaléka",
+              "200–500 USD",
+              "Megvásárolt autónként"
+            ],
+            [
+              "Tárolási díj",
+              "Naponta",
+              "Az ingyenes napok után"
+            ],
+            [
+              "Késedelmi / újrahirdetési díj",
+              "Aukciótól függ",
+              "Ha nem fizet időben"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Mennyit licitáljon?"
+      },
+      {
+        "p": "Számoljon visszafelé. Induljon ki abból, mennyibe kerülhet az autó a háza előtt – vámmal, áfával (Magyarországon 27%, Koperben vagy Triesztben 22%), szállítással, regisztrációs adóval és forgalomba helyezéssel együtt –, valamint abból, mennyit ér majd javítás után a hazai piacon. A különbség a maximuma, amelyet a kalkulátor dolláros licitté alakít."
+      },
+      {
+        "p": "Ne feledkezzen meg az árfolyamról sem: az aukciót dollárban fizeti, a hazai költségek viszont forintban jelentkeznek. Néhány százalékos árfolyam- vagy banki árréskülönbség egy drágább autónál komoly összeg."
+      },
+      {
+        "h2": "Mely dokumentumokat őrizze meg?"
+      },
+      {
+        "p": "A vámkezeléshez és a forgalomba helyezéshez a vásárlás teljes papírnyomára szüksége lesz. A vámérték a ténylegesen kifizetett áron alapul, ezért a vámhatóság bizonyítékot kérhet, ha az összeget túl alacsonynak találja. Kérje el a brókertől az összes dokumentumot elektronikusan, és őrizze meg őket, amíg az autó magyar rendszámot nem kap."
+      },
+      {
+        "ul": [
+          "Az aukció számlája (invoice) a vételárral és az összes díjjal",
+          "A dolláros banki átutalás igazolása",
+          "Az okmány (title) vagy exporttanúsítvány és a bróker számlája",
+          "A hajóraklevél (bill of lading) és a tengeri fuvar számlája"
+        ]
+      },
+      {
+        "h2": "Mennyi ideig tart?"
+      },
+      {
+        "p": "A nyertes licittől az európai kikötőig általában 4–8 hét telik el: fizetés és elszállítás 1–2 hét, kikötőbe szállítás és berakodás 1–3 hét, hajózás 2–5 hét, attól függően, hogy a hajó Bremerhavenbe vagy az Adriára, Koperbe vagy Rijekába tart. A kalkulátor mind a 43 uniós kikötőt összehasonlítja háztól házig – Önnek csak a címét kell megadnia."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Visszaléphetek a nyertes licit után?",
+        "a": "Általában nem következmények nélkül. Ha nem fizet, elveszíti a letétet, és újrahirdetési díjat is felszámolhatnak."
+      },
+      {
+        "q": "Mennyi idő alatt ér Európába az autó a nyertes licit után?",
+        "a": "Jellemzően 4–8 hét: fizetés és elszállítás 1–2 hét, kikötőbe szállítás és berakodás 1–3 hét, hajózás 2–5 hét."
+      },
+      {
+        "q": "Licitálhatok a Coparton bróker nélkül?",
+        "a": "Egyes autóknál igen, de sokhoz kereskedői engedély kell. Ezért a magyar vevők többsége regisztrált brókert használ."
+      }
+    ]
+  },
+  {
+    "id": "salvage-title",
+    "slug": "salvage-auto-amerikabol-amit-tudni-kell",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-12",
+    "minutes": 3,
+    "title": "Salvage autó Amerikából: amit vásárlás előtt tudnia kell",
+    "metaTitle": "Salvage autó Amerikából – kockázatok, költségek | CarImport.eu",
+    "description": "Mit jelent a clean, salvage, rebuilt és parts only okmány, forgalomba helyezhető-e egy salvage autó Magyarországon, és mennyit tegyen félre javításra.",
+    "lead": "A Copart és az IAAI autóinak többsége salvage okmányú – ezért olyan olcsók. Magyarországon és az EU többi részén maga az okmány jelölése nem akadálya a forgalomba helyezésnek, de sokat elárul arról, milyen kockázatot vásárol.",
+    "blocks": [
+      {
+        "h2": "Az okmánytípusok röviden"
+      },
+      {
+        "p": "A title az amerikai tulajdoni okmány, a rajta szereplő jelölés (brand) pedig az autó előéletének súlyos eseményeit rögzíti. Magyar vevőként ez az első szűrő a választásnál. Az okmány típusát a hirdetés mindig feltünteti, de a pontos részleteket érdemes a VIN-alapú jelentésből is ellenőrizni."
+      },
+      {
+        "ul": [
+          "Clean – nincs rögzített totálkár",
+          "Salvage – a biztosító totálkárosnak nyilvánította (ütközés, árvíz, lopás utáni megtalálás, jégeső)",
+          "Rebuilt / reconstructed – egykori salvage autó, amelyet az USA-ban megjavítottak és újra átvizsgáltak",
+          "Certificate of destruction / parts only / non-repairable – alkatrésznek szánt autó; kerülje, ha forgalomba szeretné helyezni"
+        ]
+      },
+      {
+        "table": {
+          "head": [
+            "Okmány",
+            "Forgalomba helyezhető az EU-ban?",
+            "Kockázat"
+          ],
+          "rows": [
+            [
+              "Clean",
+              "Igen, vizsgálat után",
+              "Alacsony–közepes"
+            ],
+            [
+              "Salvage",
+              "Igen, javítás és vizsgálat után",
+              "Közepes–magas"
+            ],
+            [
+              "Rebuilt",
+              "Igen, vizsgálat után",
+              "Közepes – a javítás minőségétől függ"
+            ],
+            [
+              "Parts only / non-repairable",
+              "A gyakorlatban nem",
+              "Nagyon magas"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Forgalomba helyezhető egy salvage autó Magyarországon?"
+      },
+      {
+        "p": "Igen. Az uniós országok nem használják az amerikai okmányjelöléseket; az számít, hogy a megjavított autó megfeleljen a forgalomba helyezés előtti vizsgálaton, valamint az európai világítási és biztonsági előírásoknak. A salvage előélet azonban csökkentheti a viszonteladási értéket, és egyes biztosítók rákérdeznek a casco megkötésekor."
+      },
+      {
+        "p": "A vám és az áfa nem függ az okmánytól: a kifizetett ár és a szállítási költségek alapján számítják. Egy olcsóbb salvage autó tehát kevesebb vámot és kevesebb 27%-os áfát fizet, a javítás költsége viszont teljes egészében Önt terheli."
+      },
+      {
+        "h2": "Hol rejlik a valódi kockázat?"
+      },
+      {
+        "p": "A fotók a látható sérülést mutatják, nem azt, ami mögötte van: elhajlott alvázat és hossztartókat, kioldott légzsákokat és érzékelőiket, árvíz utáni elektronikát, hiányzó alkatrészeket. Az árvizes autók a legkockázatosabbak – a korrózió és az elektromos hibák gyakran csak hetekkel később jelentkeznek, sokszor már a forgalomba helyezés után."
+      },
+      {
+        "p": "Legyen különösen óvatos olyan modelleknél, amelyeket Európában nem ugyanebben a kivitelben forgalmaztak. Az amerikai változatok alkatrészeit – lámpákat, lökhárítókat, érzékelőket – gyakran az USA-ból kell rendelni, ami hetekkel meghosszabbítja és megdrágítja a javítást."
+      },
+      {
+        "tip": "Nem működőképes autóknál a vételár 30–40%-ával számoljon javításra, és tartson külön tartalékot a rejtett sérülésekre. A kalkulátor ezeket az összegeket automatikusan javasolja."
+      },
+      {
+        "h2": "Hogyan ismerje fel az árvizes autót?"
+      },
+      {
+        "ul": [
+          "Látható vízvonal vagy iszap a kárpiton, a küszöbökön és a csomagtartóban",
+          "Rozsda az ülések csavarjain, a pedálokon és a műszerfal alsó részén",
+          "Bepárásodott lámpák és műszerek, nedvesség a szőnyeg alatt",
+          "Az aukció helyszíne nemrég hurrikán vagy árvíz sújtotta területen van",
+          "Árvízbejegyzés a Carfax vagy az AutoCheck jelentésben"
+        ]
+      },
+      {
+        "p": "Ha árvízre gyanakszik, lépjen vissza. Az elektronika, a kábelkötegek és a vezérlőegységek javítása többe kerülhet, mint maga az autó, és a hibák évekig visszatérhetnek."
+      },
+      {
+        "h2": "Viszonteladás és biztosítás"
+      },
+      {
+        "p": "A salvage előélet a VIN-hez kötve megmarad, és egy későbbi vevő könnyen megtalálhatja. Számoljon azzal, hogy eladáskor az autó kevesebbet ér majd, mint ugyanaz a modell ilyen előélet nélkül. Vásárlás előtt érdeklődjön a biztosítójánál is, milyen feltételekkel köt casco biztosítást behozott, korábban sérült autóra, és kér-e előzetes szemlét."
+      },
+      {
+        "h2": "Hogyan csökkentse a kockázatot?"
+      },
+      {
+        "ol": [
+          "Ellenőrizze az előéletet a VIN alapján (Carfax, AutoCheck): korábbi balesetek, árvíz, kilométeróra.",
+          "Részesítse előnyben a csak elöl vagy hátul sérült, légzsák-kioldás nélküli autókat.",
+          "Licitálás előtt kérjen javítási árajánlatot egy, a modellt ismerő karosszérialakatostól.",
+          "Ellenőrizze az alkatrészek elérhetőségét és árát Magyarországon.",
+          "Hagyjon mozgásteret a költségvetésben: a legolcsóbb autó gyakran a legdrágább projekt."
+        ]
+      },
+      {
+        "h2": "Megéri a salvage autó?"
+      },
+      {
+        "p": "Megérheti, ha tudja, mit vásárol. A legjobb jelöltek a kisebb, esztétikai sérüléssel rendelkező autók, vagy azok, amelyeket a biztosító a drága alkatrészek miatt írt le, nem szerkezeti kár miatt. A legrosszabbak az árvizes, a tető- vagy oszlopsérült és a több kioldott légzsákos autók. Számolja ki a teljes költséget – vásárlás, szállítás, vám, áfa, regisztrációs adó, javítás és forgalomba helyezés –, és vesse össze ugyanannak a modellnek a hazai árával. A kalkulátor mind a 43 uniós kikötőt összehasonlítja háztól házig; Önnek csak a címét kell megadnia."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Befolyásolja a salvage okmány a vámot?",
+        "a": "Nem. A vámot és az áfát a kifizetett ár és a szállítási költségek alapján számítják, az okmány típusától függetlenül."
+      },
+      {
+        "q": "Jobb a rebuilt okmány?",
+        "a": "Azt mutatja, hogy az autót az USA-ban megjavították és átvizsgálták, de a javítás minősége változó. Vizsgálja meg úgy, mint bármely sérült autót."
+      },
+      {
+        "q": "Elutasíthatják a salvage autót a vizsgálaton?",
+        "a": "Nem az okmány miatt. A műszaki állapot és az európai előírásoknak való megfelelés dönt."
+      }
+    ]
+  },
+  {
+    "id": "customs-vat",
+    "slug": "vam-es-afa-autoimportnal-hogyan-szamoljak",
+    "category": "customs",
+    "origin": null,
+    "date": "2026-10-08",
+    "minutes": 3,
+    "title": "Vám és áfa autó behozatalánál: hogyan számolják?",
+    "metaTitle": "Vám és import áfa autóbehozatalnál – így számolják | CarImport.eu",
+    "description": "Hogyan számolják a vámot és az áfát autó behozatalánál az EU-n kívülről: vámérték (CIF), vámtételek, 27% áfa, regisztrációs adó és 4200-as eljárás – példával.",
+    "lead": "A vámnál rontják el a legtöbben a számítást, akik először hoznak be autót. Két szabály szinte mindent megmagyaráz: a vámot a CIF értékre számítják, az áfát pedig erre ráépülve, a vámkezelés országában. Magyarországon ezután jön még a regisztrációs adó.",
+    "blocks": [
+      {
+        "h2": "Vámérték: mi tartozik bele?"
+      },
+      {
+        "p": "Az EU-n kívül vásárolt autó vámértéke az ügyleti érték, megnövelve az EU határáig felmerült költségekkel: aukciós díjak, szállítás az exportkikötőig, tengeri fuvar és biztosítás. Ezt nevezik CIF értéknek (cost, insurance, freight). A határ utáni költségek – kirakodás, EU-n belüli szállítás – nem részei a vámértéknek, de az áfaalapba beletartoznak."
+      },
+      {
+        "p": "Az értéket euróban állapítják meg. A dolláros összegeket a vámkezelés időpontjában vámcélokra érvényes árfolyamon számítják át, így a végösszeg a dollár árfolyamától is függ."
+      },
+      {
+        "h2": "Vámtételek"
+      },
+      {
+        "table": {
+          "head": [
+            "Jármű",
+            "Vámtarifaszám",
+            "Vám"
+          ],
+          "rows": [
+            [
+              "Személyautó, SUV",
+              "8703",
+              "10%"
+            ],
+            [
+              "Pickup, kisteherautó",
+              "8704",
+              "22%"
+            ],
+            [
+              "Motorkerékpár",
+              "8711",
+              "6–8%"
+            ],
+            [
+              "Gyűjteményi jármű (30+ év, eredeti)",
+              "9705",
+              "0%"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "A pickupok, például a Ford F-150 vagy a Ram, a 22%-os tétel miatt jóval drágábbak lehetnek behozatalkor, mint elsőre gondolná. Döntő, hogyan sorolják be a járművet a vámtarifába, ezért ezt vásárlás előtt ellenőrizze. A 30 év feletti, eredeti állapotú járművek külön kategóriát alkotnak, erről lejjebb olvashat."
+      },
+      {
+        "h2": "Import áfa"
+      },
+      {
+        "p": "Az áfát a vámérték, a vám és az EU-n belüli első rendeltetési helyig tartó szállítás költségeinek összegére számítják. Abban a tagállamban kell megfizetni, ahol az autót szabad forgalomba bocsátják, az ottani általános kulccsal. Ha Magyarországon vámkezel, a kulcs 27% és az eljárást a NAV (Nemzeti Adó- és Vámhivatal) folytatja le; ha Koperben vagy Triesztben, a szlovén, illetve olasz 22%-os áfát fizeti."
+      },
+      {
+        "h2": "Számítási példa"
+      },
+      {
+        "table": {
+          "head": [
+            "",
+            "EUR"
+          ],
+          "rows": [
+            [
+              "Vámérték (CIF)",
+              "12 000"
+            ],
+            [
+              "Vám 10%",
+              "1 200"
+            ],
+            [
+              "Kirakodás és kiszállítás a rendeltetési helyig",
+              "700"
+            ],
+            [
+              "Áfaalap",
+              "13 900"
+            ],
+            [
+              "Import áfa 27%",
+              "3 753"
+            ],
+            [
+              "Vám + áfa",
+              "4 953"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Ugyanennél az autónál 22%-os áfájú országban vámkezelve az import áfa 3058 euró lenne, vagyis 695 euróval kevesebb. Ezt a különbséget kell összevetni a többlet közúti szállítással és a kikötői díjakkal – ezért számolja a kalkulátor az összes kikötőt háztól házig."
+      },
+      {
+        "h2": "Regisztrációs adó a vámkezelés után"
+      },
+      {
+        "p": "A vám és az áfa nem a vége. Az első hazai forgalomba helyezéskor regisztrációs adót kell fizetni. Ez hazai adó, amelyet nem a vámkezelés kikötőjében, hanem Magyarországon kell megfizetni, függetlenül attól, hol vámkezelték az autót. Összege a hazai szabályoktól és az autó adataitól függ; a kalkulátor külön tételként mutatja."
+      },
+      {
+        "h2": "Hogyan zajlik a vámkezelés a gyakorlatban?"
+      },
+      {
+        "p": "Magánszemélyként a vámkezelést szinte mindig a kikötői vámügynökre bízza. Ő nyújtja be az Ön nevében a vámárú-nyilatkozatot, csatolja a számlákat és a hajóraklevelet, Ön pedig megfizeti a vámot és az áfát, mielőtt az autót kiadják a kikötőből."
+      },
+      {
+        "ol": [
+          "A hajó befut, a konténert kirakodják, az autót kiveszik belőle.",
+          "A vámügynök átveszi a meghatalmazást, az aukciós számlát, a fuvarszámlát, a hajóraklevelet és a title-t.",
+          "Benyújtják a szabad forgalomba bocsátásra vonatkozó vámárú-nyilatkozatot.",
+          "A vámhatóság kiszámítja a vámot és az áfát, Ön megfizeti.",
+          "Megkapja a fizetést igazoló vámhatározatot – erre a forgalomba helyezéshez szüksége lesz."
+        ]
+      },
+      {
+        "h2": "4200-as vámeljárás"
+      },
+      {
+        "p": "Az áfaregisztrált cég, amely olyan autót hoz be, amely azonnal egy másik uniós országba megy tovább, a 4200-as eljárásban vámkezelheti: az érkezési országban nem fizet import áfát, a vevő pedig a saját országában fordított adózással (reverse charge) számolja el az áfát. Magánszemélyek ezt az eljárást nem használhatják."
+      },
+      {
+        "h2": "30 évnél idősebb gyűjteményi járművek"
+      },
+      {
+        "p": "A 30 évnél idősebb, eredeti, lényegesen nem átalakított állapotú autók a 9705-ös vámtarifaszám alá sorolhatók gyűjteményi darabként, vám nélkül. Feltétel, hogy a jármű ne legyen jelentősen módosítva és történeti értékkel bírjon; ezt a vámhatóság igazoltathatja. Az áfát ilyenkor is meg kell fizetni. Amerikai veterán autóknál, például régi Mustangoknál vagy Corvette-eknél ez jelentős megtakarítás lehet."
+      },
+      {
+        "h2": "Gyakori hibák"
+      },
+      {
+        "ul": [
+          "Az áfát csak az autó árára számolják, vám és szállítás nélkül",
+          "Kimaradnak az aukciós díjak, pedig a vámérték részei",
+          "A pickupot tévesen személyautóként sorolják be",
+          "A regisztrációs adó kimarad a hazai árral való összevetésből"
+        ]
+      },
+      {
+        "tip": "Őrizze meg az aukciós számlát, a díjak befizetési igazolásait, a tengeri fuvar számláját és a hajóraklevelet (bill of lading) – a vámhatóság vitathatja a bevallott értéket, ezek a dokumentumok pedig igazolják."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Megemelheti a vámhatóság az autóm értékét?",
+        "a": "Igen, ha a bevallott ár irreálisan alacsonynak tűnik. Az aukció eredményének és a befizetéseknek az igazolása általában rendezi a kérdést."
+      },
+      {
+        "q": "Alacsonyabb a vám az elektromos autóknál?",
+        "a": "Nem, az elektromos személyautók is 10% vámot fizetnek. Eltérések a hazai adóknál, például a regisztrációs adónál lehetnek."
+      },
+      {
+        "q": "Kétszer fizetek áfát, ha Szlovéniában vámkezelek?",
+        "a": "Használt autónál nem: az áfát Szlovéniában fizeti, Magyarországon pedig a vámokmányokkal helyezi forgalomba az autót és megfizeti a regisztrációs adót. Új járműnél (legfeljebb 6 hónap vagy 6000 km) a forgalomba helyezés országában külön áfaszabályok érvényesek."
+      }
+    ]
+  },
+  {
+    "id": "registration",
+    "slug": "amerikai-auto-forgalomba-helyezese-dokumentumok-es-lepesek",
+    "category": "registration",
+    "origin": null,
+    "date": "2026-10-04",
+    "minutes": 3,
+    "title": "Behozott autó forgalomba helyezése: dokumentumok és lépések",
+    "metaTitle": "Amerikai autó forgalomba helyezése – vizsga, regadó | CarImport.eu",
+    "description": "Amerikai autó forgalomba helyezése: szükséges dokumentumok, forgalomba helyezés előtti vizsgálat, lámpák átalakítása, regisztrációs adó és kormányablak.",
+    "lead": "A vámkezelés csak a munka fele. Mielőtt az autó magyar rendszámot kap, meg kell felelnie az európai műszaki előírásoknak, Önnek pedig össze kell gyűjtenie egy sor dokumentumot – többségüket hiteles fordításban. Így néz ki az út a kikötőtől a kormányablakig.",
+    "blocks": [
+      {
+        "h2": "Az intézmények, amelyekkel dolga lesz"
+      },
+      {
+        "table": {
+          "head": [
+            "Lépés",
+            "Ki illetékes",
+            "Mit kap"
+          ],
+          "rows": [
+            [
+              "Vámkezelés, vám és áfa",
+              "Vámhatóság a vámkezelés országában (Magyarországon NAV)",
+              "Vámhatározat / vámárú-nyilatkozat"
+            ],
+            [
+              "Műszaki vizsgálat",
+              "Forgalomba helyezés előtti vizsgálat",
+              "Műszaki adatlap, vizsgálati igazolás"
+            ],
+            [
+              "Hazai adó",
+              "Regisztrációs adó (NAV)",
+              "Az adó megfizetésének igazolása"
+            ],
+            [
+              "Forgalomba helyezés",
+              "Kormányablak",
+              "Forgalmi engedély, törzskönyv, rendszám"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "A sorrend fontos: vámokmány nélkül nincs vizsga, vizsga nélkül nincs forgalomba helyezés. Minden lépésnek megvannak a maga dokumentumai és költségei, ezért érdemes előre beépíteni őket a költségvetésbe."
+      },
+      {
+        "h2": "Szükséges dokumentumok"
+      },
+      {
+        "ul": [
+          "Title vagy exporttanúsítvány és a vásárlási számla",
+          "Vámokmány, amely igazolja a megfizetett vámot és áfát",
+          "Hajóraklevél (bill of lading)",
+          "Az idegen nyelvű dokumentumok hiteles fordítása",
+          "A forgalomba helyezés előtti vizsgálat igazolása",
+          "A regisztrációs adó megfizetésének igazolása",
+          "Kötelező gépjármű-felelősségbiztosítás és személyazonosító okmány"
+        ]
+      },
+      {
+        "p": "A dokumentumokat eredetiben és másolatban is őrizze meg. Ha az autót Koperben vagy Triesztben vámkezelte, az ottani vámokmányra lesz szüksége; a fordítást ilyenkor is hivatalos fordítónak kell elkészítenie."
+      },
+      {
+        "h2": "Műszaki átalakítás"
+      },
+      {
+        "p": "Az amerikai autók világítását általában át kell alakítani: a piros hátsó irányjelzők és az oldalsó helyzetjelzők (side markers) nem felelnek meg az uniós előírásoknak, a fényszórók pedig más fényképet igényelhetnek. A sebességmérőnek km/h-t kell mutatnia. A hátsó ködlámpa kötelező. A japán autók jobbkormányosak, ezt a legtöbb ország elfogadja beállított fényszórókkal."
+      },
+      {
+        "ul": [
+          "Hátsó irányjelzők cseréje vagy átalakítása borostyánsárgára",
+          "Hátsó ködlámpa beépítése",
+          "Európai fényképű vagy beállított fényszórók",
+          "Sebességmérő és műszerek km/h-ban",
+          "Néha tükrök, üvegjelölések és európai jóváhagyású gumik"
+        ]
+      },
+      {
+        "h2": "Vizsgálat és jóváhagyás"
+      },
+      {
+        "p": "Az európai típusjóváhagyás nélküli autó egyedi jóváhagyáson vagy alapos első vizsgálaton megy át – Magyarországon ez a forgalomba helyezés előtti vizsgálat. A vizsgabiztos ellenőrzi az azonosítást (VIN), a világítást, a károsanyag-kibocsátást és a biztonsági felszereltséget. Ezt a lépést olyan műhellyel tervezze meg, amely ismeri a behozott autókat és tudja, mit kérnek az adott modellnél."
+      },
+      {
+        "p": "Ha az autó nem működőképes vagy nincs rendszáma, a vizsgára autószállítóval vagy trélerrel vigye. Rendszám nélkül közlekedni nem szabad."
+      },
+      {
+        "h2": "Regisztrációs adó és forgalomba helyezés"
+      },
+      {
+        "p": "A vizsgálati igazolással és a megfizetett adókkal az autót a kormányablakban helyezheti forgalomba. Az első hazai forgalomba helyezéskor regisztrációs adót kell fizetni, amelyet a NAV állapít meg. Összege a hazai szabályoktól és az autó adataitól függ, nem attól, melyik kikötőben vámkezelték az autót. A CarImport.eu kalkulátora a regisztrációs adót külön mutatja, így licitálás előtt látja. Ezen felül a rendszám és az okmányok díját, valamint a kötelező biztosítást kell fizetnie."
+      },
+      {
+        "p": "Az aktuális határidőkről és az eljárás részleteiről érdeklődjön, mielőtt az autó megérkezik – a szabályok változnak, és a vizsgaidőpontra várni is kell."
+      },
+      {
+        "h2": "Japán autók és a jobbkormány"
+      },
+      {
+        "p": "A japán JDM autók jobbkormányosak. Az ilyen autó általában forgalomba helyezhető, de a fényszórókat a jobb oldali közlekedéshez kell igazítani, hogy ne vakítsák a szembejövőket. Vásárlás előtt egyeztessen egy tapasztalt műhellyel, mit kérnek konkrétan az Ön modelljénél."
+      },
+      {
+        "h2": "Gyakori buktatók"
+      },
+      {
+        "ul": [
+          "Nem hiteles fordítás",
+          "A vámokmány más névre szól, mint akire az autót forgalomba helyezik",
+          "Az adott modellhez nem jóváhagyott lámpaátalakítás",
+          "Ütközésben sérült vagy olvashatatlan VIN",
+          "Alábecsült regisztrációs adó a költségvetésben"
+        ]
+      },
+      {
+        "h2": "Mennyi időt tervezzen?"
+      },
+      {
+        "p": "A kikötői vámkezeléstől a rendszámig általában néhány hét telik el. Az átalakítás alkatrészeinek beszerzése, a fordítások és a vizsgaidőpont mind időt vesz igénybe, különösen ritkább modelleknél. Ha az autóra egy adott időpontra van szüksége, ne a hajó érkezésétől, hanem a forgalomba helyezés várható napjától számoljon visszafelé, és tervezzen tartalékot."
+      },
+      {
+        "h2": "A lépések sorrendje"
+      },
+      {
+        "ol": [
+          "Vámkezelés a kikötőben, vám és áfa megfizetése.",
+          "Az autó szállítása egy magyarországi műhelybe.",
+          "A világítás, a sebességmérő és egyéb felszerelések átalakítása.",
+          "A dokumentumok hiteles fordítása.",
+          "Forgalomba helyezés előtti vizsgálat.",
+          "A regisztrációs adó megfizetése.",
+          "Biztosítás és forgalomba helyezés a kormányablakban."
+        ]
+      },
+      {
+        "tip": "Vásárlás előtt kérje el a műhelytől a szükséges átalakítások listáját – egyes modelleknél az átalakítás sokkal többe kerül, mint másoknál. A kalkulátor mind a 43 uniós kikötőt összehasonlítja háztól házig, Önnek csak a címét kell megadnia."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Szükségem van megfelelőségi nyilatkozatra (CoC)?",
+        "a": "Az USA-ba vagy Japánba gyártott autóknak nincs európai CoC-je. Egyedi jóváhagyással vagy hazai vizsgálati eljárással helyezik őket forgalomba."
+      },
+      {
+        "q": "Hazavezethetem az autót a kikötőből?",
+        "a": "Csak ideiglenes rendszámmal és biztosítással, és csak ha az autó közlekedésre alkalmas. Egyébként autószállítót vagy trélert használjon."
+      },
+      {
+        "q": "Kell regisztrációs adót fizetni, ha Szlovéniában vámkezeltem?",
+        "a": "Igen. A regisztrációs adó a magyarországi forgalomba helyezéshez kötődik, függetlenül attól, hol vámkezelték az autót."
+      }
+    ]
+  }
+]

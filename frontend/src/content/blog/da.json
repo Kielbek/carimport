@@ -1,0 +1,879 @@
+[
+  {
+    "id": "total-cost",
+    "slug": "hvad-koster-det-at-importere-en-bil-fra-usa",
+    "category": "costs",
+    "origin": "USA",
+    "date": "2026-10-20",
+    "minutes": 3,
+    "title": "Hvad koster det egentlig at importere en bil fra USA?",
+    "metaTitle": "Hvad koster det at importere en bil fra USA? | CarImport.eu",
+    "description": "Hvad koster det at importere en bil fra USA til Danmark? Auktionsgebyrer, fragt, told 10 %, importmoms 25 % og registreringsafgift – med regneeksempel.",
+    "lead": "Prisen på Copart eller IAAI er kun begyndelsen. Når bilen holder indregistreret i indkørslen, har du ofte betalt 1,6 til 2 gange hammerslagsprisen – og i Danmark kommer registreringsafgiften oveni. Her gennemgår vi, hvor pengene går hen, post for post.",
+    "blocks": [
+      {
+        "h2": "Det korte svar"
+      },
+      {
+        "p": "For en almindelig personbil, der købes for 10.000 dollar på en amerikansk auktion, skal du regne med omkring 19.000 dollar leveret i Danmark før registrering. De største poster efter selve bilen er importmomsen på 25 %, tolden på 10 % og transporten over Atlanten. Derefter kommer registreringsafgiften, som i Danmark ofte er den største enkeltpost af alle, og reparationer af skadede biler. Hvor meget det bliver i kroner, afhænger af dollarkursen den dag, du betaler – beregneren regner det hele om til DKK."
+      },
+      {
+        "h2": "1. Købet: bud plus auktionsgebyrer"
+      },
+      {
+        "p": "Copart og IAAI opkræver et købergebyr, der stiger med prisen, plus faste gebyrer for internetbud, udlevering (gate fee) og miljøhåndtering. Biler med clean title og salvage title har forskellige gebyrtabeller. Byder du gennem en broker, kommer brokerens provision oveni."
+      },
+      {
+        "ul": [
+          "Købergebyr: trinvist efter pris, ofte 600–1.000 dollar på en bil til 10.000 dollar",
+          "Gebyr for internetbud og gate fee: cirka 100–200 dollar",
+          "Brokerprovision: typisk 200–500 dollar pr. bil",
+          "Opbevaring: betales pr. dag, hvis du betaler eller afhenter for sent"
+        ]
+      },
+      {
+        "h2": "2. Transport til eksporthavnen"
+      },
+      {
+        "p": "En lastbil kører bilen fra auktionspladsen til eksporthavnen, typisk New Jersey, Savannah, Houston eller Los Angeles. Afstanden betyder noget: en plads tæt på havnen koster et par hundrede dollar, en tur tværs over kontinentet over 1.000 dollar. En bil, der ikke kan køre, kræver gaffeltruck og spil, hvilket giver et tillæg."
+      },
+      {
+        "h2": "3. Søfragt og forsikring"
+      },
+      {
+        "p": "Delt container (som regel 3–4 biler) er den billigste sikre løsning: cirka 1.000–1.600 dollar pr. bil fra østkysten til havnene ved Nordsøen og Østersøen. RoRo er billigere for kørende biler, men bilen er mindre beskyttet. Transportforsikring koster omkring 1,5 % af bilens værdi og indgår i toldværdien."
+      },
+      {
+        "h2": "4. Told"
+      },
+      {
+        "p": "Told beregnes af toldværdien, den såkaldte CIF-værdi: pris, auktionsgebyrer, transport til EU’s grænse og forsikring. For personbiler er satsen 10 % (KN-kode 8703), for pickupper 22 % og for motorcykler 6–8 %. Biler over 30 år i original stand kan være toldfri som samlerobjekter. Fortoldes bilen i Danmark, er det Toldstyrelsen, der behandler angivelsen."
+      },
+      {
+        "h2": "5. Importmoms – i landet, hvor bilen fortoldes"
+      },
+      {
+        "p": "Moms beregnes af toldværdien plus told og transportomkostningerne til første bestemmelsessted i EU. Satsen er den, der gælder i det land, hvor bilen fortoldes – i Danmark 25 %, i EU som helhed fra 17 % i Luxembourg til 27 % i Ungarn. Derfor kan valget af havn ændre totalen med tusindvis af kroner, men sammenligningen skal laves fra dør til dør."
+      },
+      {
+        "h2": "6. Havn, levering og registrering"
+      },
+      {
+        "p": "I EU-havnen betaler du for terminalhåndtering og udlosning af containeren samt en toldspeditør. Derefter køres bilen hjem til dig med autotransporter eller kranbil, prissat pr. kilometer. Til sidst kommer de danske omkostninger: syn (registreringssyn), eventuelle ombygninger af lygterne, nummerplader og registreringsafgiften, som Motorstyrelsen administrerer. Registreringsafgiften afhænger af bilens værdi og de gældende danske regler, så den indgår ikke i eksemplet nedenfor – beregneren viser den for din konkrete bil."
+      },
+      {
+        "h2": "Eksempel: en bil til 10.000 dollar"
+      },
+      {
+        "table": {
+          "head": [
+            "Post",
+            "Beløb (USD)"
+          ],
+          "rows": [
+            [
+              "Vindende bud",
+              "10.000"
+            ],
+            [
+              "Auktions- og brokergebyrer",
+              "1.200"
+            ],
+            [
+              "Transport til havnen",
+              "450"
+            ],
+            [
+              "Søfragt, delt container",
+              "1.200"
+            ],
+            [
+              "Transportforsikring",
+              "180"
+            ],
+            [
+              "Toldværdi (CIF)",
+              "13.030"
+            ],
+            [
+              "Told 10 %",
+              "1.303"
+            ],
+            [
+              "Havn, udlosning, toldspeditør og levering",
+              "≈ 1.000"
+            ],
+            [
+              "Momsgrundlag (CIF + told + havn og levering)",
+              "15.333"
+            ],
+            [
+              "Importmoms 25 %",
+              "3.833"
+            ],
+            [
+              "I alt før registreringsafgift og syn",
+              "≈ 19.170"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Eksemplet bruger afrundede tal for at give et indtryk af niveauet. Valutakursen, landet hvor bilen fortoldes, biltypen og din adresse ændrer resultatet. Beregneren sammenligner alle 43 EU-havne fra dør til dør – du indtaster blot din adresse, og så regner den det hele ud for netop din bil i kroner."
+      },
+      {
+        "tip": "Læg en buffer på 10–15 % ind til overraskelser: opbevaringsgebyrer, et forsinket skib, en toldkontrol eller skjulte skader. Beregneren viser de risici i sit pessimistiske scenarie."
+      },
+      {
+        "h2": "Sådan betaler du mindre"
+      },
+      {
+        "ol": [
+          "Køb tæt på en eksporthavn for at spare på transporten i USA.",
+          "Vælg delt container frem for en eksklusiv.",
+          "Sammenlign fortoldningshavne: lavere moms i et andet EU-land kan opveje den længere vejtransport.",
+          "Tjek auktionens gebyrtrin – nogle få dollar over en grænse kan hæve gebyret.",
+          "Betal auktionen i dollar via en valutatjeneste med lav margin i stedet for bankens standardkurs.",
+          "Undersøg registreringsafgiften, før du byder – den kan ændre hele regnestykket."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kan en privatperson få importmomsen tilbage?",
+        "a": "Nej. For en privatperson er importmomsen en endelig udgift. En momsregistreret virksomhed kan som regel fradrage den eller bruge toldprocedure 4200, når bilen sendes videre til et andet EU-land."
+      },
+      {
+        "q": "Betaler jeg også moms af fragten?",
+        "a": "Ja. Momsgrundlaget omfatter toldværdien, tolden og transportomkostningerne til første bestemmelsessted i EU."
+      },
+      {
+        "q": "Skal jeg betale registreringsafgift af en importeret bil?",
+        "a": "Ja, en bil der skal indregistreres i Danmark, skal som udgangspunkt betale registreringsafgift. Beløbet afhænger af bilens værdi og de gældende regler, og beregneren viser det for din bil."
+      }
+    ]
+  },
+  {
+    "id": "copart-iaai",
+    "slug": "kob-bil-pa-copart-og-iaai-fra-danmark",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-16",
+    "minutes": 3,
+    "title": "Sådan køber du en bil på Copart eller IAAI fra Danmark",
+    "metaTitle": "Køb bil på Copart og IAAI fra Danmark – guide | CarImport.eu",
+    "description": "Sådan køber du bil på Copart eller IAAI fra Danmark: broker, depositum, bud, gebyrer og frister trin for trin – og hvor meget du kan byde.",
+    "lead": "Copart og IAAI sælger hundredtusindvis af biler hver måned, og mange af dem går til købere i Europa. Her kan du læse, hvordan budgivningen fungerer, når du sidder i Danmark, hvilke gebyrer der kommer oveni, og hvilke frister du ikke må overse.",
+    "blocks": [
+      {
+        "h2": "Har du brug for en broker?"
+      },
+      {
+        "p": "Mange biler kan kun købes med forhandlerlicens, og nogle delstater begrænser, hvem der må købe salvage-biler. Derfor byder de fleste europæiske købere gennem en registreret broker (også kaldet agent eller importør), som afgiver buddene på dine vegne under sin licens. Brokeren tager en fast provision pr. bil og står ofte også for betaling, afhentning og eksport."
+      },
+      {
+        "p": "Vælg en broker, der har erfaring med købere i Norden, som oplyser alle gebyrer på forhånd, og som kan forklare, hvordan depositummet håndteres. Spørg også, hvilke havne de sejler til – det påvirker både fragtprisen og hvor bilen fortoldes."
+      },
+      {
+        "h2": "Trin for trin"
+      },
+      {
+        "ol": [
+          "Vælg en broker og underskriv aftalen; du får adgang til budgivning via deres konto.",
+          "Betal depositum – typisk omkring 10 % af dit maksimale bud.",
+          "Find bilen, læs tilstandsrapporten og tjek VIN-historikken (for eksempel Carfax eller AutoCheck).",
+          "Fastsæt dit maksimale bud inklusive alle gebyrer – ikke kun hammerslagsprisen.",
+          "Byd i forrunden eller live; det højeste bud vinder, hvis det når sælgers mindstepris.",
+          "Betal inden fristen (som regel 2–3 bankdage) via bankoverførsel i dollar.",
+          "Sørg for hurtig afhentning – den gratis opbevaringstid er kort, derefter betaler du pr. dag.",
+          "Bilen køres til havnen, og titlen sendes til eksportøren til toldbehandlingen."
+        ]
+      },
+      {
+        "h2": "Sådan læser du en annonce"
+      },
+      {
+        "ul": [
+          "Titeltype: clean, salvage, rebuilt eller certificate of destruction / parts only",
+          "Primær og sekundær skade, airbags, kilometertællerens status",
+          "Mærkaterne Run and Drive, Engine Starts og Enhanced Vehicles – tjekkes kun ved indlevering, ingen garanti",
+          "Nøgler, hvor pladsen ligger, og hvor langt der er til havnen",
+          "Sælgertype: forsikringsselskab, forhandler, udlejningsfirma"
+        ]
+      },
+      {
+        "tip": "Run and Drive betyder, at bilen startede og kørte fremad ved indleveringen. Det betyder ikke, at den er færdselssikker – regn med et teknisk eftersyn, når den er kommet hjem."
+      },
+      {
+        "h2": "Gebyrer, der overrasker nye købere"
+      },
+      {
+        "p": "Ud over købergebyret lægger auktionerne gebyrer for internetbud, udlevering, miljøhåndtering og titelhåndtering oveni. For sen betaling og for sen afhentning koster ekstra, og betaler du slet ikke, kommer der gebyr for gensalg. Brokeren lægger sin provision til og nogle gange et gebyr for dokumenter og eksport. Bed altid om en komplet liste, før du byder første gang."
+      },
+      {
+        "h2": "Copart eller IAAI – hvad er forskellen?"
+      },
+      {
+        "p": "Begge auktioner sælger primært biler fra forsikringsselskaber, og udbuddet overlapper ofte. Copart har flere pladser og et meget stort udbud, mens IAAI nogle gange har mere detaljerede billeder og tilstandsrapporter. Gebyrtabellerne er forskellige, så sammenlign den samlede pris ved netop dit budniveau i stedet for at vælge auktion af vane. Følg gerne den samme model på begge i et par uger for at lære, hvilke priser der er realistiske."
+      },
+      {
+        "h2": "Hvor meget skal du byde?"
+      },
+      {
+        "p": "Regn baglæns. Tag udgangspunkt i, hvad bilen må koste leveret ved din dør – inklusive told, 25 % importmoms, transport, syn, ombygning og registreringsafgift – og i hvad den er værd på det danske marked efter eventuelle reparationer. Forskellen er dit råderum, og beregneren omsætter den til et bud i dollar. Samtidig sammenligner den alle 43 EU-havne fra dør til dør; du indtaster bare din adresse."
+      },
+      {
+        "p": "Husk, at registreringsafgiften i Danmark kan gøre en tilsyneladende billig bil dyr. Undersøg derfor altid afgiften, før du byder, og læg nogle procents margin ind, hvis kronen er svag over for dollaren. Beslut dig for et loft, inden auktionen starter – det er let at blive revet med i en livebudgivning."
+      },
+      {
+        "h2": "Hvor lang tid tager det?"
+      },
+      {
+        "p": "Fra vundet auktion til bil i en europæisk havn går der normalt 4–8 uger. Dertil kommer fortoldning, transport hjem, syn og registrering hos Motorstyrelsen. Regn altså med, at bilen tidligst har danske nummerplader efter to måneder."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kan jeg fortryde købet efter at have vundet?",
+        "a": "Normalt ikke uden omkostninger. Betaler du ikke, mister du depositummet, og der kan komme gebyrer for gensalg."
+      },
+      {
+        "q": "Hvor lang tid går der fra vundet auktion til bilen i Europa?",
+        "a": "Typisk 4–8 uger: betaling og afhentning 1–2 uger, transport til havnen og indlastning 1–3 uger, sejlads 2–5 uger."
+      },
+      {
+        "q": "Kan jeg købe direkte på Copart uden broker?",
+        "a": "Nogle biler kan købes med et almindeligt medlemskab, men mange kræver forhandlerlicens. En broker giver adgang til flere biler og hjælper med eksporten."
+      }
+    ]
+  },
+  {
+    "id": "salvage-title",
+    "slug": "salvage-title-bil-fra-usa-kan-den-indregistreres-i-danmark",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-12",
+    "minutes": 3,
+    "title": "Salvage title-biler fra USA: det skal du vide",
+    "metaTitle": "Salvage title-bil fra USA – kan den indregistreres? | CarImport.eu",
+    "description": "Kan en salvage title-bil fra USA indregistreres i Danmark? Titeltyper, skjulte skader, oversvømmede biler og sådan mindsker du risikoen, før du byder.",
+    "lead": "De fleste biler på Copart og IAAI har en salvage title – det er derfor, de er så billige. I Danmark forhindrer selve titelstemplet ikke registrering, men det siger meget om den risiko, du køber.",
+    "blocks": [
+      {
+        "h2": "Titeltyperne kort fortalt"
+      },
+      {
+        "ul": [
+          "Clean – ingen totalskade registreret",
+          "Salvage – erklæret totalskadet af et forsikringsselskab (kollision, oversvømmelse, genfundet efter tyveri, hagl)",
+          "Rebuilt / reconstructed – en tidligere salvage-bil, der er repareret og kontrolleret igen i USA",
+          "Certificate of destruction / parts only / non-repairable – beregnet til reservedele; undgå den, hvis du vil indregistrere bilen"
+        ]
+      },
+      {
+        "p": "Titlen udstedes af delstaten, og reglerne varierer fra stat til stat. Den samme skade kan altså give salvage title i én stat, men ikke i en anden. Læs derfor altid titlen sammen med skadesbeskrivelsen og billederne."
+      },
+      {
+        "h2": "Kan en salvage-bil indregistreres i Danmark?"
+      },
+      {
+        "p": "Ja. Danmark og de øvrige EU-lande bruger ikke de amerikanske titelstempler. Det afgørende er, at den reparerede bil består syn (registreringssyn) og opfylder EU’s krav til lygter og sikkerhed, før Motorstyrelsen kan registrere den. Salvage-historikken kan dog sænke gensalgsværdien, og nogle forsikringsselskaber spørger til den, når du tegner forsikring. Vær ærlig om historikken, når du sælger bilen videre."
+      },
+      {
+        "h2": "Hvor den egentlige risiko ligger"
+      },
+      {
+        "p": "Billederne viser den synlige skade, ikke hvad der gemmer sig bagved: skæve vanger, udløste airbags og deres sensorer, elektronik efter oversvømmelse og manglende dele. Oversvømmede biler er de mest risikable – korrosion og elfejl viser sig ofte først efter flere uger, når bilen allerede står i Danmark."
+      },
+      {
+        "ul": [
+          "Vandlinjer i kabinen, mudder under måtterne og rust på skruer under instrumentbrættet tyder på oversvømmelse",
+          "Ujævne spalter og nye svejsninger kan tyde på skader på karrosseri eller vanger",
+          "Udløste airbags kræver nye airbags, sensorer og ofte styreenhed – en dyr post",
+          "Haglskader ser voldsomme ud, men er ofte mindre risikable end strukturelle skader"
+        ]
+      },
+      {
+        "tip": "Budgettér reparationer til 30–40 % af prisen for biler, der ikke kan køre, og hold en ekstra reserve til skjulte skader. Beregneren foreslår de beløb automatisk."
+      },
+      {
+        "h2": "Hvad sker der til syn?"
+      },
+      {
+        "p": "Synsmanden ser ikke på, om bilen har haft salvage title, men på hvordan den er i dag. Identiteten tjekkes mod stelnummeret (VIN), og derefter kontrolleres bremser, styretøj, lygter, airbags, udstødning og karrosseriets styrke. En sjusket repareret vange eller en advarselslampe for airbags betyder, at bilen bliver kasseret, så du skal til omsyn. Gem kvitteringer og billeder fra reparationen; de gør det lettere at dokumentere, hvad der er udbedret."
+      },
+      {
+        "h2": "Sådan mindsker du risikoen"
+      },
+      {
+        "ol": [
+          "Tjek VIN-historikken (Carfax, AutoCheck) for tidligere ulykker og oversvømmelser.",
+          "Vælg helst biler med kun front- eller bagskade og uden udløste airbags.",
+          "Få et reparationsoverslag fra et værksted, der kender modellen, før du byder.",
+          "Undersøg pris og tilgængelighed på reservedele i Danmark – amerikanske versioner har nogle gange andre dele end europæiske.",
+          "Hold luft i budgettet: den billigste bil bliver ofte det dyreste projekt."
+        ]
+      },
+      {
+        "h2": "Regn på hele projektet"
+      },
+      {
+        "p": "En salvage-bil er billig at købe, men koster lige så meget at fragte, fortolde og indregistrere som en uskadt bil. Told på 10 % og dansk importmoms på 25 % beregnes af prisen og transporten, ikke af skaden. Registreringsafgiften afhænger af bilens værdi og de danske regler, og det er værd at undersøge, hvordan en skadet og repareret bil vurderes. Læg reparationer, ombygning af lygter og et eventuelt omsyn oveni. Beregneren regner den samlede pris ud og sammenligner samtidig alle 43 EU-havne fra dør til dør – du indtaster bare din adresse."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Påvirker en salvage title tolden?",
+        "a": "Nej. Told og moms beregnes af købsprisen og transportomkostningerne, uanset titlen."
+      },
+      {
+        "q": "Er en rebuilt title bedre?",
+        "a": "Den viser, at bilen er repareret og kontrolleret i USA, men kvaliteten af reparationen varierer. Gennemgå den som enhver anden skadet bil."
+      },
+      {
+        "q": "Skal jeg oplyse om salvage-historikken, når jeg sælger bilen?",
+        "a": "Du bør være åben om bilens historik. Den fremgår ofte af VIN-rapporter, og at skjule en kendt skade kan give krav fra køberen."
+      }
+    ]
+  },
+  {
+    "id": "customs-vat",
+    "slug": "told-og-moms-ved-import-af-bil",
+    "category": "customs",
+    "origin": null,
+    "date": "2026-10-08",
+    "minutes": 3,
+    "title": "Told og moms ved import af bil – sådan beregnes det",
+    "metaTitle": "Told og moms ved import af bil fra USA | CarImport.eu",
+    "description": "Told og moms ved import af bil: hvad toldværdien omfatter, toldsatser på 10 %, 22 % og 0 %, importmoms på 25 % i Danmark og et regneeksempel trin for trin.",
+    "lead": "Fortoldningen er stedet, hvor de fleste førstegangsimportører regner forkert. To regler forklarer næsten alt: told opkræves af CIF-værdien, og moms lægges oveni i det land, hvor bilen fortoldes. I Danmark er det Toldstyrelsen, der behandler toldangivelsen, mens registreringsafgiften kommer senere hos Motorstyrelsen.",
+    "blocks": [
+      {
+        "h2": "Toldværdien: hvad indgår?"
+      },
+      {
+        "p": "Toldværdien for en bil købt uden for EU er transaktionsværdien plus omkostningerne ved at bringe bilen til EU’s grænse: auktionsgebyrer, transport til eksporthavnen, søfragt og forsikring. Omkostninger efter grænsen – udlosning og transport inden for EU – indgår ikke i toldværdien, men de kommer igen i momsgrundlaget."
+      },
+      {
+        "ul": [
+          "Indgår i toldværdien: købspris, køber- og brokergebyrer, transport i USA, søfragt, forsikring",
+          "Indgår ikke i toldværdien: udlosning i EU-havnen, toldspeditør, transport fra havnen og hjem",
+          "Indgår i momsgrundlaget: toldværdien, tolden og transporten til første bestemmelsessted i EU"
+        ]
+      },
+      {
+        "h2": "Toldsatser"
+      },
+      {
+        "table": {
+          "head": [
+            "Køretøj",
+            "KN-kode",
+            "Told"
+          ],
+          "rows": [
+            [
+              "Personbil, SUV",
+              "8703",
+              "10 %"
+            ],
+            [
+              "Pickup, let lastbil",
+              "8704",
+              "22 %"
+            ],
+            [
+              "Motorcykel",
+              "8711",
+              "6–8 %"
+            ],
+            [
+              "Samlerkøretøj (30+ år, original stand)",
+              "9705",
+              "0 %"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Klassificeringen afhænger af køretøjets konstruktion, ikke af hvad der står i annoncen. En pickup med dobbeltkabine kan i nogle tilfælde regnes som personbil, men gå ud fra 22 %, indtil du ved det med sikkerhed. Et samlerkøretøj skal være i væsentligt original stand; en kraftigt ombygget veteranbil kan ende i 8703 med 10 % told."
+      },
+      {
+        "h2": "Importmoms"
+      },
+      {
+        "p": "Moms beregnes af toldværdien plus tolden og transportomkostningerne til første bestemmelsessted i EU. Den betales i det medlemsland, hvor bilen overgår til fri omsætning, med landets normalsats. I Danmark er satsen 25 %. Et almindeligt fejltrin er kun at regne momsen af bilens pris: fordi fragt, forsikring, told og transporten til bestemmelsesstedet også indgår, bliver momsen i praksis langt højere end 25 % af hammerslagsprisen."
+      },
+      {
+        "p": "Oven i told og moms kommer i Danmark registreringsafgiften, som er en national afgift og ikke en del af fortoldningen. Den afhænger af bilens værdi og de gældende regler og opkræves, når bilen skal indregistreres. Mange andre EU-lande har også en registrerings- eller punktafgift, men reglerne er meget forskellige."
+      },
+      {
+        "h2": "Regneeksempel"
+      },
+      {
+        "table": {
+          "head": [
+            "",
+            "EUR"
+          ],
+          "rows": [
+            [
+              "Toldværdi (CIF)",
+              "12.000"
+            ],
+            [
+              "Told 10 %",
+              "1.200"
+            ],
+            [
+              "Udlosning og transport til bestemmelsesstedet",
+              "700"
+            ],
+            [
+              "Momsgrundlag",
+              "13.900"
+            ],
+            [
+              "Importmoms 25 %",
+              "3.475"
+            ],
+            [
+              "Told + moms",
+              "4.675"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Den samme bil fortoldet i et land med 19 % moms, for eksempel Tyskland, ville give 2.641 euro i moms – godt 830 euro mindre. Men så kommer en længere vejtransport til Danmark, og for næsten nye biler gælder særlige regler (se nedenfor). Beregneren sammenligner alle 43 EU-havne fra dør til dør i kroner – du indtaster bare din adresse."
+      },
+      {
+        "h2": "Sådan foregår fortoldningen"
+      },
+      {
+        "ol": [
+          "Skibet ankommer, containeren losses, og bilen sættes på midlertidigt lager.",
+          "Toldspeditøren indgiver en toldangivelse med faktura, fragtdokumenter og titel som bilag.",
+          "Toldmyndigheden i havnelandet – i Danmark Toldstyrelsen – fastsætter told og importmoms.",
+          "Du betaler beløbene, og bilen frigives til fri omsætning i EU.",
+          "Med toldpapirerne som dokumentation kan bilen transporteres videre og derefter synes og registreres."
+        ]
+      },
+      {
+        "p": "Hele forløbet tager som regel nogle få dage, hvis papirerne er i orden. Mangler der en faktura, eller passer stelnummeret i dokumenterne ikke med bilen, kan det give forsinkelse og ekstra opbevaringsgebyrer i havnen. Tjek derfor papirerne grundigt, inden bilen forlader USA, og send kopier til toldspeditøren i god tid før skibet ankommer."
+      },
+      {
+        "h2": "Toldprocedure 4200"
+      },
+      {
+        "p": "En momsregistreret virksomhed, der importerer en bil, som går direkte videre til et andet EU-land, kan fortolde den under procedure 4200: der betales ingen importmoms i ankomstlandet, og køberen afregner momsen i sit eget land efter reglerne om omvendt betalingspligt. Privatpersoner kan ikke bruge proceduren."
+      },
+      {
+        "h2": "Nye transportmidler"
+      },
+      {
+        "p": "Hvis bilen efter EU’s momsregler er et nyt transportmiddel – som hovedregel højst seks måneder gammel eller kørt højst 6.000 kilometer – skal momsen betales i det land, hvor bilen registreres. Det gælder også privatpersoner. For de fleste brugte auktionsbiler er reglen uden betydning, men for næsten nye biler kan den gøre en billigere momshavn uinteressant."
+      },
+      {
+        "tip": "Gem købsfakturaen, kvitteringer for auktionsgebyrer, fragtfakturaen og konnossementet (bill of lading). Toldmyndighederne kan anfægte den angivne værdi, og disse dokumenter beviser den."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kan toldmyndighederne hæve værdien af min bil?",
+        "a": "Ja, hvis den angivne pris virker urealistisk lav. Dokumentation for auktionsresultatet og betalingerne plejer at løse det."
+      },
+      {
+        "q": "Er tolden lavere for elbiler?",
+        "a": "Nej, også rene elbiler betaler 10 % told som personbiler. Forskellen ligger i nationale afgifter som registreringsafgiften."
+      },
+      {
+        "q": "Skal jeg bruge en toldspeditør?",
+        "a": "Det er ikke et krav, men de fleste bruger en toldspeditør i havnen, fordi det gør angivelsen hurtigere og mindsker risikoen for fejl."
+      }
+    ]
+  },
+  {
+    "id": "registration",
+    "slug": "indregistrering-af-importeret-bil-syn-og-registreringsafgift",
+    "category": "registration",
+    "origin": null,
+    "date": "2026-10-04",
+    "minutes": 3,
+    "title": "Indregistrering af en importeret bil: dokumenter, syn og registreringsafgift",
+    "metaTitle": "Indregistrering af importeret bil – syn og afgift | CarImport.eu",
+    "description": "Sådan indregistrerer du en importeret bil i Danmark: dokumenter, ombygning af lygter, registreringssyn, registreringsafgift og Motorstyrelsen trin for trin.",
+    "lead": "Fortoldningen er kun halvdelen af arbejdet. Før bilen får danske nummerplader, skal den opfylde EU’s tekniske krav, bestå syn (registreringssyn), have betalt registreringsafgift og registreres via Motorstyrelsen – og du skal bruge en række dokumenter.",
+    "blocks": [
+      {
+        "h2": "Dokumenter, du skal bruge"
+      },
+      {
+        "ul": [
+          "Titel eller eksportattest samt købsfaktura",
+          "Toldpapirer, der viser, at told og importmoms er betalt",
+          "Konnossement (bill of lading) eller andet fragtdokument",
+          "Oversættelser af dokumenter på andre sprog end engelsk, hvis synsvirksomheden eller Motorstyrelsen beder om det",
+          "Synsrapport fra registreringssynet",
+          "Legitimation og ansvarsforsikring, når bilen skal køre"
+        ]
+      },
+      {
+        "p": "Sørg for, at stelnummeret (VIN) er identisk i alle dokumenter og på bilen. Et forkert tegn i en faktura eller titel er en af de mest almindelige årsager til, at sagen går i stå."
+      },
+      {
+        "h2": "Teknisk tilpasning"
+      },
+      {
+        "p": "Amerikanske biler skal næsten altid have lygterne tilpasset: røde blinklys bagpå og sidemarkeringslys opfylder ikke EU’s regler, og forlygterne kan have brug for et andet lysbillede. Speedometeret skal vise km/t. En tågebaglygte er obligatorisk. Japanske biler er højrestyrede, hvilket som udgangspunkt accepteres i Danmark, men forlygterne skal være indrettet til højrekørsel."
+      },
+      {
+        "ul": [
+          "Blinklys bagpå: skal lyse gult (orange), ikke rødt",
+          "Forlygter: lysbillede til højrekørsel og E-mærkning",
+          "Tågebaglygte: påkrævet",
+          "Speedometer: skal vise km/t",
+          "Dæk og fælge: skal være godkendt til bilens vægt og hastighed"
+        ]
+      },
+      {
+        "h2": "Syn (registreringssyn)"
+      },
+      {
+        "p": "En bil uden europæisk typegodkendelse skal til registreringssyn hos en synsvirksomhed. Synsmanden kontrollerer identiteten (stelnummer), lygter, udstødning, bremser og sikkerhedsudstyr, og at bilen svarer til de tekniske oplysninger, der skal registreres. For biler uden europæisk typeattest kan du få brug for teknisk dokumentation, for eksempel om vægte og udstødningsværdier. Planlæg trinnet sammen med et værksted, der kender importbiler."
+      },
+      {
+        "tip": "Bed værkstedet om en liste over nødvendige ændringer, før du køber – ombygningen koster langt mere på nogle modeller end på andre."
+      },
+      {
+        "p": "Godt forberedte importører består som regel syn i første forsøg. Saml alle dokumenter i én mappe, både på papir og digitalt, og tag originalerne med til synet. Fortæl synsvirksomheden på forhånd, at det drejer sig om en bil importeret fra et land uden for EU, så de kan afsætte den nødvendige tid."
+      },
+      {
+        "h2": "Registreringsafgift og registrering"
+      },
+      {
+        "p": "Når bilen er godkendt til syn, skal registreringsafgiften betales, før den kan registreres og få nummerplader. Registreringsafgiften administreres af Motorstyrelsen og afhænger af bilens afgiftspligtige værdi og de gældende danske regler. For brugte importbiler fastsættes værdien ud fra, hvad tilsvarende biler koster på det danske marked, og du kan bede Motorstyrelsen om en forhåndsvurdering, før du køber. Det er den sikreste måde at undgå en ubehagelig overraskelse på, fordi afgiften ofte er den største enkeltpost i hele importen."
+      },
+      {
+        "p": "Ud over afgiften betaler du for syn og nummerplader og derefter den løbende ejer- eller vægtafgift. Beregneren viser registreringsafgiften for din bil som en del af den samlede pris."
+      },
+      {
+        "h2": "Trin for trin"
+      },
+      {
+        "ol": [
+          "Fortold bilen og gem toldpapirerne.",
+          "Transportér bilen hjem med autotransporter eller kranbil.",
+          "Lad et værksted ombygge lygter og andet, der kræves.",
+          "Book registreringssyn og tag alle dokumenter med.",
+          "Udbedr eventuelle fejl og gå til omsyn.",
+          "Få værdien fastsat og betal registreringsafgiften.",
+          "Registrér bilen, tegn ansvarsforsikring og hent nummerpladerne."
+        ]
+      },
+      {
+        "h2": "Typiske fejl ved indregistreringen"
+      },
+      {
+        "ul": [
+          "At booke syn, før ombygningen er færdig – en kassation koster et omsyn",
+          "At miste toldpapirerne eller fragtdokumentet, som viser, at bilen er lovligt indført",
+          "At købe bilen uden at have undersøgt registreringsafgiften",
+          "At regne med, at bilen kan køre på amerikanske nummerplader i ventetiden",
+          "At glemme, at ansvarsforsikringen skal være på plads fra første dag"
+        ]
+      },
+      {
+        "p": "Hvad det hele koster, afhænger mest af ombygningen og registreringsafgiften, ikke af gebyrerne. Beregneren sammenligner alle 43 EU-havne fra dør til dør og viser den samlede pris i kroner – du indtaster blot din adresse."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Skal jeg have en typeattest (CoC)?",
+        "a": "Biler bygget til USA eller Japan har ingen europæisk CoC. De registreres i stedet efter registreringssyn og om nødvendigt teknisk dokumentation for bilen."
+      },
+      {
+        "q": "Kan jeg køre bilen hjem fra havnen?",
+        "a": "Kun hvis den er færdselssikker, forsikret og har prøveskilte eller tilsvarende tilladelse. Ellers skal du bruge autotransporter eller kranbil."
+      },
+      {
+        "q": "Kan jeg få oplyst registreringsafgiften, før jeg køber?",
+        "a": "Ja, du kan bede Motorstyrelsen om en forhåndsvurdering af en brugt bil. Beregneren giver også et skøn som en del af den samlede pris."
+      }
+    ]
+  },
+  {
+    "id": "port-choice",
+    "slug": "kobenhavn-aarhus-eller-hamburg-valg-af-havn-ved-bilimport",
+    "category": "logistics",
+    "origin": null,
+    "date": "2026-09-30",
+    "minutes": 3,
+    "title": "København, Aarhus eller Hamburg? Sådan vælger du havn til fortoldning",
+    "metaTitle": "København, Aarhus eller Hamburg? Vælg den rigtige havn | CarImport.eu",
+    "description": "Hvilken havn skal du vælge, når du importerer en bil til Danmark? København, Aarhus, Malmö eller Hamburg – moms, havnegebyrer og vejtransport sammenlignet.",
+    "lead": "De fleste biler fra USA kommer ind via Bremerhaven, Rotterdam eller Antwerpen, men for en dansk køber ligger København, Aarhus, Malmö og Hamburg tættere på. Bilen kan fortoldes i enhver af 43 EU-havne, og havnen afgør momssatsen, havnegebyrerne og hvor langt bilen skal køres på landevejen.",
+    "blocks": [
+      {
+        "h2": "Tre ting, havnen ændrer"
+      },
+      {
+        "ol": [
+          "Importmoms: du betaler momssatsen i havnelandet – 25 % i Danmark og Sverige, 23 % i Polen og 19 % i Tyskland.",
+          "Gebyrer: terminalhåndtering, udlosning af containeren og toldspeditør varierer fra havn til havn.",
+          "Vejtransport: havnen med den laveste moms kan ligge langt fra din adresse, og hver kilometer koster."
+        ]
+      },
+      {
+        "h2": "De nærmeste havne fra København"
+      },
+      {
+        "p": "Fra hovedstaden ligger både de danske havne og nabolandenes havne tæt på. Tabellen viser omtrentlige afstande ad vej fra København og momssatsen i det pågældende land. Bor du i Jylland, rykker Aarhus og Hamburg naturligvis tættere på, mens Malmö og Göteborg kommer længere væk."
+      },
+      {
+        "table": {
+          "head": [
+            "Havn",
+            "Land",
+            "Afstand fra København",
+            "Moms"
+          ],
+          "rows": [
+            [
+              "København",
+              "Danmark",
+              "ca. 5 km",
+              "25 %"
+            ],
+            [
+              "Malmö",
+              "Sverige",
+              "ca. 33 km",
+              "25 %"
+            ],
+            [
+              "Aarhus",
+              "Danmark",
+              "ca. 194 km",
+              "25 %"
+            ],
+            [
+              "Göteborg",
+              "Sverige",
+              "ca. 285 km",
+              "25 %"
+            ],
+            [
+              "Szczecin / Świnoujście",
+              "Polen",
+              "ca. 351 km",
+              "23 %"
+            ],
+            [
+              "Hamburg",
+              "Tyskland",
+              "ca. 363 km",
+              "19 %"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "København og Aarhus er det naturlige valg for mange: bilen fortoldes i Danmark med dansk moms, og vejen hjem er kort. Malmö og Göteborg giver ingen momsfordel, fordi Sverige også har 25 %. Hamburg og Bremerhaven har til gengæld de tætteste ruter fra USA og ofte den laveste fragtpris pr. bil – og Tyskland har kun 19 % moms."
+      },
+      {
+        "h2": "Hvornår en udenlandsk havn er billigere"
+      },
+      {
+        "p": "Fordi Danmark har en høj momssats på 25 %, kan det betale sig at fortolde bilen i et land med lavere moms, typisk Tyskland med 19 %. Momsen betales så i havnelandet og er endelig for en privatperson; du indregistrerer derefter bilen i Danmark med toldpapirerne som dokumentation. På en bil med et momsgrundlag på 15.000 euro svarer seks procentpoint til omkring 900 euro – men herfra skal den længere vejtransport og eventuelt højere havnegebyrer trækkes."
+      },
+      {
+        "p": "Husk, at registreringsafgiften betales i Danmark uanset hvor bilen fortoldes. Valget af havn ændrer altså momsen og transporten, men ikke den danske afgift. Er bilen et nyt transportmiddel – som hovedregel højst seks måneder gammel eller kørt højst 6.000 kilometer – skal momsen desuden betales i Danmark. For de fleste brugte auktionsbiler gælder det ikke."
+      },
+      {
+        "h2": "Omkostninger at sammenligne for hver havn"
+      },
+      {
+        "ul": [
+          "Fragtpris fra eksporthavnen i USA – direkte ruter er billigere end omladning",
+          "Terminalhåndtering og udlosning af containeren i den europæiske havn",
+          "Toldspeditørens honorar og eventuelle dokumentgebyrer",
+          "Importmoms efter havnelandets sats",
+          "Autotransporter eller kranbil fra havnen og hjem, inklusive bro eller færge",
+          "Tid: hver ekstra uge i havnen eller på vejen kan give opbevaringsgebyrer"
+        ]
+      },
+      {
+        "p": "Der findes derfor ingen havn, der er bedst for alle danske købere. Bor du på Sjælland, er København eller Malmö ofte oplagte, mens en køber i Sønderjylland kan have kortere til Hamburg end til København. En køber i Nordjylland vil typisk se på Aarhus. Det afgørende er din adresse og bilens type."
+      },
+      {
+        "h2": "Sejltider"
+      },
+      {
+        "p": "Fra USA’s østkyst er Nordsøhavnene hurtigst, omkring to uger. Til København og Aarhus kommer der ofte omladning i Bremerhaven eller Rotterdam, hvilket kan give nogle dage eller en uge ekstra. Fra Japan og De Forenede Arabiske Emirater sejler skibene gennem Suezkanalen, så Middelhavshavne som Koper, Genova eller Piræus er en uge eller mere hurtigere end Nordsøen – men ligger langt fra Danmark ad landevejen."
+      },
+      {
+        "h2": "Regn fra dør til dør"
+      },
+      {
+        "p": "En sammenligning, der kun ser på momsen, bliver forkert. For hvert alternativ skal du lægge fragt, havnegebyrer, toldspeditør, importmoms og transport hjem til din adresse sammen. Det er præcis, hvad beregneren gør: den regner på alle 43 EU-havne fra dør til dør og viser resultatet i kroner. Du indtaster blot din adresse."
+      },
+      {
+        "tip": "Indtast din adresse i beregneren: den prissætter hver EU-havn fra dør til dør og vælger automatisk den billigste."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kan jeg fortolde bilen i Tyskland og indregistrere den i Danmark?",
+        "a": "Ja. Du betaler importmomsen i Tyskland og indregistrerer bilen i Danmark med toldpapirerne. Registreringsafgiften betales stadig i Danmark, og for nye transportmidler skal momsen betales her."
+      },
+      {
+        "q": "Hvilke havne modtager flest biler fra USA?",
+        "a": "Bremerhaven, Rotterdam, Antwerpen og Hamburg ved Nordsøen samt Østersøhavne som Gdynia og Klaipėda. For danske købere er også København og Aarhus almindelige."
+      },
+      {
+        "q": "Er København altid billigst for en dansk køber?",
+        "a": "Ikke altid. København giver kort transport for mange, men en havn med lavere moms eller billigere fragt kan blive billigere samlet set. Det afgør sammenligningen fra dør til dør."
+      }
+    ]
+  },
+  {
+    "id": "japan-jdm",
+    "slug": "importere-jdm-bil-fra-japan-auktionsark-og-pris",
+    "category": "buying",
+    "origin": "JAPAN",
+    "date": "2026-09-25",
+    "minutes": 3,
+    "title": "Import af JDM-bil fra Japan: auktionsark, karakterer og pris",
+    "metaTitle": "Importere bil fra Japan – JDM, auktionsark og pris | CarImport.eu",
+    "description": "Sådan importerer du en JDM-bil fra Japan til Danmark: USS- og TAA-auktioner, auktionsark og karakterer, fragt, told, moms, registreringsafgift og højrestyring.",
+    "lead": "Japanske bilauktioner er kendt for ærlige vurderinger og biler i meget fin stand. Med en pålidelig eksportør er det tryggere at købe en JDM-bil end at købe blindt på amerikanske auktioner – hvis du forstår auktionsarket.",
+    "blocks": [
+      {
+        "h2": "Sådan foregår købet i Japan"
+      },
+      {
+        "p": "Auktioner som USS, TAA, CAA og JU er åbne for autoriserede forhandlere. Du køber derfor gennem en eksportør: du vælger biler og sætter et maksimalt bud, og eksportøren byder, betaler, afmelder bilen til eksport og sender den af sted. Eksportøren tager et fast gebyr pr. bil og skaffer eksportattesten, som du senere skal bruge til fortoldning og registrering i Danmark."
+      },
+      {
+        "p": "Udbuddet er enormt – titusindvis af biler om ugen – og priserne er ofte lave sammenlignet med tilsvarende biler i Europa, især for sportsvogne, kei-biler og veludstyrede familiebiler, der aldrig er solgt her. Mange danske købere leder efter klassiske JDM-modeller fra 1990’erne, hvor biler over 30 år i original stand kan fortoldes som samlerkøretøjer uden told."
+      },
+      {
+        "h2": "Sådan læser du auktionsarket"
+      },
+      {
+        "ul": [
+          "Samlet karakter: 6–5 næsten ny, 4,5–4 meget god, 3,5 middel, R/RA repareret skadebil",
+          "Interiørkarakter: A til D",
+          "Karrosserikort: A = ridse, U = bule, W = bølge/reparation, S = rust, C = korrosion, med et tal for størrelsen",
+          "Inspektørens bemærkninger – få dem altid oversat"
+        ]
+      },
+      {
+        "tip": "En R- eller RA-karakter er ikke altid dårlig, men spørg, hvad der er repareret – en vangereparation er noget helt andet end en udskiftet kofanger."
+      },
+      {
+        "h2": "Sådan vælger du eksportør"
+      },
+      {
+        "ul": [
+          "Bed om referencer fra købere i Norden eller resten af EU",
+          "Tjek, at eksportøren sender det originale auktionsark og ikke kun et resumé",
+          "Spørg til alle gebyrer på forhånd: auktion, transport, dokumenter, fragt og forsikring",
+          "Sørg for at få eksportattesten (export certificate) i original – den skal bruges til registreringen",
+          "Vælg en eksportør, der tilbyder oversættelse af inspektørens bemærkninger"
+        ]
+      },
+      {
+        "h2": "Omkostninger og tid"
+      },
+      {
+        "p": "Læg eksportørens gebyr, transport i Japan, eksportdokumenter og fragt til. Skibene sejler via Suezkanalen: omkring 5–6 uger til Nordsøen og kortere til Middelhavshavnene. Til København og Aarhus kommer der ofte omladning til. Tolden er 10 % for personbiler, og importmomsen betales i det land, hvor bilen fortoldes – 25 %, hvis det sker i Danmark. Derefter kommer registreringsafgiften, som afhænger af bilens værdi og de danske regler."
+      },
+      {
+        "table": {
+          "head": [
+            "Post",
+            "Bemærkning"
+          ],
+          "rows": [
+            [
+              "Hammerslagspris",
+              "I yen, efter auktionsresultatet"
+            ],
+            [
+              "Eksportørens gebyr og auktionsgebyr",
+              "Fast beløb pr. bil"
+            ],
+            [
+              "Transport i Japan",
+              "Fra auktionen til havnen"
+            ],
+            [
+              "Søfragt og forsikring",
+              "RoRo eller container, via Suez"
+            ],
+            [
+              "Told",
+              "10 % af CIF-værdien, 0 % for samlerkøretøjer over 30 år"
+            ],
+            [
+              "Importmoms",
+              "25 % i Danmark af CIF + told + transport til bestemmelsesstedet"
+            ],
+            [
+              "Syn, ombygning og registreringsafgift",
+              "Efter danske regler"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Trin for trin fra Japan til Danmark"
+      },
+      {
+        "ol": [
+          "Vælg eksportør og betal et depositum.",
+          "Søg biler og få auktionsarkene oversat.",
+          "Sæt dit maksimale bud inklusive alle gebyrer, told, moms og registreringsafgift.",
+          "Betal bilen og eksportørens faktura efter vundet auktion.",
+          "Eksportøren afmelder bilen og booker fragt.",
+          "Bilen fortoldes i den valgte EU-havn og transporteres hjem.",
+          "Registreringssyn, betaling af registreringsafgift og registrering via Motorstyrelsen."
+        ]
+      },
+      {
+        "p": "En god eksportør kan også hjælpe dig med at finde den rigtige bil: mange kan besigtige en bil før auktionen eller tage ekstra billeder. Det koster lidt ekstra, men kan spare mange penge."
+      },
+      {
+        "h2": "Højrestyring"
+      },
+      {
+        "p": "Højrestyrede biler kan indregistreres i Danmark, men forlygterne skal give det rigtige lysbillede til højrekørsel. Speedometeret skal vise km/t, hvilket japanske biler som regel allerede gør. Nogle japanske modeller mangler tågebaglygte, som skal eftermonteres. Overhaling på landevejen bliver også sværere med rattet i højre side."
+      },
+      {
+        "h2": "Rust og vintervejr"
+      },
+      {
+        "p": "Biler fra det sydlige og centrale Japan har ofte meget lidt rust, fordi vejene sjældent saltes. Biler fra Hokkaido og det nordlige Honshu kan derimod have rust i undervognen. Skal bilen køre i den danske vinter, er det klogt at rustbeskytte undervognen kort efter ankomsten."
+      },
+      {
+        "p": "Beregneren regner den samlede pris for en bil fra Japan ud i kroner og sammenligner alle 43 EU-havne fra dør til dør – du indtaster bare din adresse. Her kan du også se, om en Middelhavshavn med kortere sejltid opvejer den længere vejtransport til Danmark."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Er kilometerstanden på japanske biler pålidelig?",
+        "a": "Som regel ja – auktionsark og eksportattester registrerer kilometerstanden, og tilbagerullede tællere er sjældne sammenlignet med andre markeder."
+      },
+      {
+        "q": "Hvad med rust?",
+        "a": "Biler fra det nordlige Japan (Hokkaido) kan have rust i undervognen fra vejsalt; auktionsarket markerer det med S eller C."
+      },
+      {
+        "q": "Hvor lang tid tager en import fra Japan til Danmark?",
+        "a": "Regn med 2–3 måneder fra køb til indregistreret bil: eksport og indlastning, 5–6 ugers sejlads samt fortoldning, syn og registrering."
+      }
+    ]
+  }
+]
