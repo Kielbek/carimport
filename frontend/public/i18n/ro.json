@@ -255,7 +255,18 @@
     "reportItem4": "Taxe de înmatriculare și servicii după import",
     "reportItem5": "Riscuri cu sume: optimist, mediu, pesimist",
     "reportItem6": "Plan pas cu pas cu termene și lista documentelor",
-    "cheapestPort": "cel mai ieftin port"
+    "cheapestPort": "cel mai ieftin port",
+    "lockedEyebrow": "Raport complet",
+    "lockedTitle": "Costul total până la ușa ta",
+    "lockedLead": "Scenariu optimist, mediu și pesimist plus încă {{count}} poziții: transport, livrare, înmatriculare și costuri ascunse.",
+    "unlockNote": "PDF imediat · plată securizată",
+    "freeTitle": "Taxe vamale, TVA și impozite – gratuit",
+    "freeLead": "Vămuire în {{port}}. Sumele pe care le-ai putea calcula pe hârtie.",
+    "freeBadge": "Gratuit",
+    "freeBase": "Calculat la valoarea în vamă (preț, taxe de licitație, transport în UE și asigurare) la cursul de schimb de azi.",
+    "lockedListTitle": "Calculat și – în raport",
+    "riskTag": "risc",
+    "moreLocked": "+ încă {{count}} poziții, inclusiv costuri ascunse"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Container exclusiv",
@@ -1278,5 +1289,28 @@
       "registration": "Înmatriculare",
       "logistics": "Transport și porturi"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Taxe și tarife portuare",
+    "extra": "+{{amount}} {{cur}} din ușă în ușă",
+    "cheapestDoor": "cel mai ieftin din ușă în ușă",
+    "rankingNote": "Sortat după costul total din ușă în ușă (taxe, navlu, port, livrare la adresa ta). Fiecare port își arată taxele și tarifele portuare; detalierea completă este în raport.",
+    "title": "Vămuire în {{port}}: taxe și tarife",
+    "dutyWhere": "La fel în toate porturile UE – 10% din valoarea în vamă (CIF)",
+    "vatWhere": "Se plătește în țara portului: {{country}}",
+    "nationalWhere": "Se plătesc în țara de înmatriculare ({{country}}), indiferent de port",
+    "notPriced": "Taxă locală de înmatriculare – țara: {{country}}; depinde de CO₂ sau de preț, neinclusă",
+    "portFees": "Tarife portuare",
+    "portFeesWhat": "Manipulare în terminal, descărcare și agent vamal",
+    "total": "Taxe și tarife",
+    "howTitle": "Cum calculăm",
+    "how1": "Valoarea în vamă (CIF) = preț + taxe de licitație + transport până în portul UE + asigurare.",
+    "how2": "Taxe vamale: 10% din valoarea în vamă (pickup-uri 22%, motociclete 6–8%) – identice în toate porturile UE.",
+    "how3": "TVA la import se plătește în țara portului, la cota acesteia, la valoarea în vamă + taxe vamale + transport până la adresa ta. O mașină second-hand vămuită în afara țării de înmatriculare ({{country}}) nu mai plătește TVA încă o dată acasă.",
+    "how4": "Taxele naționale ale țării de înmatriculare (de ex. acciza poloneză) se plătesc acasă, indiferent de port.",
+    "how5": "Clasamentul adaugă navlul, tarifele portuare și livrarea pe km până la adresa ta – totalul cel mai ieftin apare primul.",
+    "bestLabel": "Cel mai avantajos port:",
+    "bestSelected": "selectat",
+    "bestChoose": "Alege – economisești {{amount}} {{cur}}"
   }
 }

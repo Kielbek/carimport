@@ -255,7 +255,18 @@
     "reportItem4": "Registratiekosten en diensten na de import",
     "reportItem5": "Risico’s met bedragen: optimistisch, gemiddeld, pessimistisch",
     "reportItem6": "Stappenplan met termijnen en lijst met documenten",
-    "cheapestPort": "goedkoopste haven"
+    "cheapestPort": "goedkoopste haven",
+    "lockedEyebrow": "Volledig rapport",
+    "lockedTitle": "Volledige kosten tot aan uw deur",
+    "lockedLead": "Optimistisch, gemiddeld en pessimistisch scenario plus {{count}} extra posten: transport, levering, registratie en verborgen kosten.",
+    "unlockNote": "Direct een pdf · veilige betaling",
+    "freeTitle": "Invoerrecht, btw en belastingen – gratis",
+    "freeLead": "Inklaring in {{port}}. De bedragen die u zelf op papier kunt uitrekenen.",
+    "freeBadge": "Gratis",
+    "freeBase": "Berekend over de douanewaarde (prijs, veilingkosten, transport naar de EU en verzekering) tegen de wisselkoers van vandaag.",
+    "lockedListTitle": "Ook berekend – in het rapport",
+    "riskTag": "risico",
+    "moreLocked": "+ {{count}} extra posten, incl. verborgen kosten"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Eigen container",
@@ -1278,5 +1289,28 @@
       "registration": "Registratie",
       "logistics": "Verzending & havens"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Belastingen & havenkosten",
+    "extra": "+{{amount}} {{cur}} van deur tot deur",
+    "cheapestDoor": "goedkoopst van deur tot deur",
+    "rankingNote": "Gesorteerd op de volledige kosten van deur tot deur (belastingen, vracht, haven, levering op uw adres). Per haven ziet u de belastingen en havenkosten; de volledige uitsplitsing staat in het rapport.",
+    "title": "Inklaring in {{port}}: belastingen en kosten",
+    "dutyWhere": "In elke EU-haven gelijk – 10% van de douanewaarde (CIF)",
+    "vatWhere": "Betaald in het land van de haven: {{country}}",
+    "nationalWhere": "Betaald in het land van registratie ({{country}}), welke haven u ook kiest",
+    "notPriced": "Lokale registratiebelasting – land: {{country}}; afhankelijk van CO₂ of prijs, niet inbegrepen",
+    "portFees": "Havenkosten",
+    "portFeesWhat": "Terminalafhandeling, lossen en douane-expediteur",
+    "total": "Belastingen en kosten",
+    "howTitle": "Zo rekenen we",
+    "how1": "Douanewaarde (CIF) = prijs + veilingkosten + transport naar de EU-haven + verzekering.",
+    "how2": "Invoerrecht: 10% van de douanewaarde (pick-ups 22%, motoren 6–8%) – in elke EU-haven gelijk.",
+    "how3": "De invoer-btw betaalt u in het land van de haven, tegen het daar geldende tarief, over douanewaarde + invoerrecht + transport naar uw adres. Een gebruikte auto die buiten {{country}} is ingeklaard, betaalt thuis niet opnieuw btw.",
+    "how4": "Nationale belastingen van het land van registratie (bijv. de Poolse accijns) betaalt u thuis, welke haven u ook kiest.",
+    "how5": "De ranking telt vracht, havenkosten en levering per km naar uw adres op – het goedkoopste totaal staat bovenaan.",
+    "bestLabel": "Voordeligste haven:",
+    "bestSelected": "gekozen",
+    "bestChoose": "Kies – bespaar {{amount}} {{cur}}"
   }
 }

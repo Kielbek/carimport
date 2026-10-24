@@ -255,7 +255,18 @@
     "reportItem4": "Rekisteröintimaksut ja tuonnin jälkeiset palvelut",
     "reportItem5": "Riskit summineen: optimistinen, keskimääräinen, pessimistinen",
     "reportItem6": "Vaiheittainen suunnitelma määräaikoineen ja asiakirjaluetteloineen",
-    "cheapestPort": "edullisin satama"
+    "cheapestPort": "edullisin satama",
+    "lockedEyebrow": "Koko raportti",
+    "lockedTitle": "Koko hinta perille asti",
+    "lockedLead": "Optimistinen, keskimääräinen ja pessimistinen skenaario sekä {{count}} muuta erää: kuljetus, toimitus, rekisteröinti ja piilokulut.",
+    "unlockNote": "PDF heti · turvallinen maksu",
+    "freeTitle": "Tulli, ALV ja verot – ilmaiseksi",
+    "freeLead": "Tullaussatama: {{port}}. Summat, jotka voisit laskea itse paperilla.",
+    "freeBadge": "Ilmainen",
+    "freeBase": "Laskettu tullausarvosta (hinta, huutokauppamaksut, kuljetus EU:hun ja vakuutus) päivän valuuttakurssilla.",
+    "lockedListTitle": "Lasketaan myös – raportissa",
+    "riskTag": "riski",
+    "moreLocked": "+ {{count}} muuta erää, mm. piilokulut"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Oma kontti",
@@ -1278,5 +1289,28 @@
       "registration": "Rekisteröinti",
       "logistics": "Kuljetus ja satamat"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Verot ja satamamaksut",
+    "extra": "+{{amount}} {{cur}} ovelta ovelle",
+    "cheapestDoor": "edullisin ovelta ovelle",
+    "rankingNote": "Järjestetty kokonaiskustannuksen mukaan ovelta ovelle (verot, rahti, satama, toimitus osoitteeseesi). Jokaisen sataman kohdalla näet sen verot ja satamamaksut; täydellinen erittely on raportissa.",
+    "title": "Tullaus – {{port}}: verot ja maksut",
+    "dutyWhere": "Sama kaikissa EU-satamissa – 10 % tullausarvosta (CIF)",
+    "vatWhere": "Maksetaan sataman maassa: {{country}}",
+    "nationalWhere": "Maksetaan rekisteröintimaassa ({{country}}) satamasta riippumatta",
+    "notPriced": "Paikallinen rekisteröintivero – maa: {{country}}; riippuu CO₂:sta tai hinnasta, ei sisälly",
+    "portFees": "Satamamaksut",
+    "portFeesWhat": "Terminaalikäsittely, purku ja tulliasiamies",
+    "total": "Verot ja maksut",
+    "howTitle": "Näin laskemme",
+    "how1": "Tullausarvo (CIF) = hinta + huutokauppamaksut + kuljetus EU-satamaan + vakuutus.",
+    "how2": "Tulli: 10 % tullausarvosta (pickupit 22 %, moottoripyörät 6–8 %) – sama kaikissa EU-satamissa.",
+    "how3": "Maahantuonnin ALV maksetaan sataman maassa sen verokannalla tullausarvosta + tullista + kuljetuksesta osoitteeseesi. Käytetystä autosta, joka on tullattu muualla kuin rekisteröintimaassa ({{country}}), ei makseta ALV:tä uudelleen kotimaassa.",
+    "how4": "Rekisteröintimaan kansalliset verot (esim. Puolan valmistevero) maksetaan kotimaassa satamasta riippumatta.",
+    "how5": "Järjestykseen lisätään rahti, satamamaksut ja toimitus kilometreittäin osoitteeseesi – edullisin summa on ensimmäisenä.",
+    "bestLabel": "Edullisin satama:",
+    "bestSelected": "valittu",
+    "bestChoose": "Valitse – säästä {{amount}} {{cur}}"
   }
 }

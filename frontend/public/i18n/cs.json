@@ -255,7 +255,18 @@
     "reportItem4": "Registrační poplatky a služby po dovozu",
     "reportItem5": "Rizika v částkách: optimistický, průměrný, pesimistický scénář",
     "reportItem6": "Plán krok za krokem se lhůtami a seznamem dokumentů",
-    "cheapestPort": "nejlevnější přístav"
+    "cheapestPort": "nejlevnější přístav",
+    "lockedEyebrow": "Úplný report",
+    "lockedTitle": "Celkové náklady až k vašim dveřím",
+    "lockedLead": "Optimistický, průměrný a pesimistický scénář a dalších {{count}} položek: doprava, dovoz, registrace a skryté náklady.",
+    "unlockNote": "PDF ihned · bezpečná platba",
+    "freeTitle": "Clo, DPH a daně – zdarma",
+    "freeLead": "Proclení – přístav {{port}}. Částky, které byste spočítali na papíře.",
+    "freeBadge": "Zdarma",
+    "freeBase": "Počítáno z celní hodnoty (cena, aukční poplatky, doprava do EU a pojištění) podle dnešního kurzu.",
+    "lockedListTitle": "Spočítali jsme také – v reportu",
+    "riskTag": "riziko",
+    "moreLocked": "+ dalších {{count}} položek vč. skrytých nákladů"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Vlastní kontejner",
@@ -1278,5 +1289,28 @@
       "registration": "Registrace",
       "logistics": "Doprava a přístavy"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Daně a přístavní poplatky",
+    "extra": "+{{amount}} {{cur}} ode dveří ke dveřím",
+    "cheapestDoor": "nejlevněji ode dveří ke dveřím",
+    "rankingNote": "Seřazeno podle celkových nákladů ode dveří ke dveřím (daně, námořní doprava, přístav, dovoz na vaši adresu). U každého přístavu vidíte jeho daně a poplatky; úplný rozpis je v reportu.",
+    "title": "Proclení – přístav {{port}}: daně a poplatky",
+    "dutyWhere": "Stejné ve všech přístavech EU – 10 % celní hodnoty (CIF)",
+    "vatWhere": "Platí se v zemi přístavu: {{country}}",
+    "nationalWhere": "Platí se v zemi registrace ({{country}}) – bez ohledu na zvolený přístav",
+    "notPriced": "Místní registrační daň – země: {{country}}; závisí na CO₂ nebo ceně, není zahrnuta",
+    "portFees": "Přístavní poplatky",
+    "portFeesWhat": "Manipulace v terminálu, vykládka a celní deklarant",
+    "total": "Daně a poplatky",
+    "howTitle": "Jak počítáme",
+    "how1": "Celní hodnota (CIF) = cena + aukční poplatky + doprava do přístavu EU + pojištění.",
+    "how2": "Clo: 10 % celní hodnoty (pick-upy 22 %, motocykly 6–8 %) – stejné ve všech přístavech EU.",
+    "how3": "DPH při dovozu platíte v zemi přístavu, podle její sazby, z celní hodnoty + cla + dopravy na vaši adresu. Ojeté auto proclené mimo zemi registrace ({{country}}) doma DPH znovu neplatí.",
+    "how4": "Národní daně země registrace (např. polskou spotřební daň) platíte doma – bez ohledu na přístav.",
+    "how5": "Pořadí připočítává námořní dopravu, přístavní poplatky a dovoz za km na vaši adresu – nejlevnější součet je nahoře.",
+    "bestLabel": "Nejvýhodnější přístav:",
+    "bestSelected": "vybráno",
+    "bestChoose": "Vybrat – ušetříte {{amount}} {{cur}}"
   }
 }

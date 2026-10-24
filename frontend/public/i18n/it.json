@@ -255,7 +255,18 @@
     "reportItem4": "Spese di immatricolazione e servizi dopo l’importazione",
     "reportItem5": "Rischi con importi: ottimistico, medio, pessimistico",
     "reportItem6": "Piano passo dopo passo con scadenze ed elenco dei documenti",
-    "cheapestPort": "porto più conveniente"
+    "cheapestPort": "porto più conveniente",
+    "lockedEyebrow": "Report completo",
+    "lockedTitle": "Costo totale fino a casa tua",
+    "lockedLead": "Scenario ottimistico, medio e pessimistico più altre {{count}} voci: trasporto, consegna, immatricolazione e costi nascosti.",
+    "unlockNote": "PDF immediato · pagamento sicuro",
+    "freeTitle": "Dazio, IVA e imposte – gratis",
+    "freeLead": "Sdoganamento a {{port}}. Gli importi che potresti calcolare su carta.",
+    "freeBadge": "Gratis",
+    "freeBase": "Calcolato sul valore in dogana (prezzo, commissioni d’asta, trasporto nell’UE e assicurazione) al cambio di oggi.",
+    "lockedListTitle": "Calcolato anche – nel report",
+    "riskTag": "rischio",
+    "moreLocked": "+ altre {{count}} voci, inclusi i costi nascosti"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Container esclusivo",
@@ -1278,5 +1289,28 @@
       "registration": "Immatricolazione",
       "logistics": "Spedizione e porti"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Imposte e diritti portuali",
+    "extra": "+{{amount}} {{cur}} porta a porta",
+    "cheapestDoor": "il più economico porta a porta",
+    "rankingNote": "Ordinati per costo totale porta a porta (imposte, nolo, porto, consegna al tuo indirizzo). Ogni porto mostra imposte e diritti portuali; il dettaglio completo è nel report.",
+    "title": "Sdoganamento a {{port}}: imposte e diritti",
+    "dutyWhere": "Uguale in ogni porto UE – 10% del valore in dogana (CIF)",
+    "vatWhere": "Si paga nel paese del porto: {{country}}",
+    "nationalWhere": "Si pagano nel paese di immatricolazione ({{country}}), qualunque sia il porto",
+    "notPriced": "Imposta di immatricolazione locale – paese: {{country}}; dipende da CO₂ o prezzo, non inclusa",
+    "portFees": "Diritti portuali",
+    "portFeesWhat": "Movimentazione al terminal, scarico e spedizioniere doganale",
+    "total": "Imposte e diritti",
+    "howTitle": "Come lo calcoliamo",
+    "how1": "Valore in dogana (CIF) = prezzo + commissioni d’asta + trasporto fino al porto UE + assicurazione.",
+    "how2": "Dazio doganale: 10% del valore in dogana (pickup 22%, moto 6–8%) – identico in ogni porto UE.",
+    "how3": "L’IVA all’importazione si paga nel paese del porto, con la sua aliquota, su valore in dogana + dazio + trasporto fino al tuo indirizzo. Un’auto usata sdoganata fuori dal paese {{country}} non paga di nuovo l’IVA in patria.",
+    "how4": "Le imposte nazionali del paese di immatricolazione (es. l’accisa polacca) si pagano in patria, qualunque porto si scelga.",
+    "how5": "La classifica aggiunge nolo, diritti portuali e consegna al km fino al tuo indirizzo – il totale più economico è in cima.",
+    "bestLabel": "Porto più conveniente:",
+    "bestSelected": "selezionato",
+    "bestChoose": "Scegli – risparmi {{amount}} {{cur}}"
   }
 }

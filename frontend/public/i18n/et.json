@@ -255,7 +255,18 @@
     "reportItem4": "Registreerimistasud ja teenused pärast importi",
     "reportItem5": "Riskid koos summadega: optimistlik, keskmine, pessimistlik",
     "reportItem6": "Samm-sammuline plaan koos tähtaegade ja dokumentide nimekirjaga",
-    "cheapestPort": "odavaim sadam"
+    "cheapestPort": "odavaim sadam",
+    "lockedEyebrow": "Täielik aruanne",
+    "lockedTitle": "Kogukulu kuni sinu ukseni",
+    "lockedLead": "Optimistlik, keskmine ja pessimistlik stsenaarium ning veel {{count}} kuluartiklit: transport, kohaletoimetamine, registreerimine ja varjatud kulud.",
+    "unlockNote": "PDF kohe · turvaline makse",
+    "freeTitle": "Tollimaks, käibemaks ja maksud – tasuta",
+    "freeLead": "Tollivormistuse sadam: {{port}}. Summad, mida saaksid ise paberil välja arvutada.",
+    "freeBadge": "Tasuta",
+    "freeBase": "Arvutatud tolliväärtuselt (hind, oksjonitasud, transport ELi ja kindlustus) tänase vahetuskursiga.",
+    "lockedListTitle": "Arvutatud ka – aruandes",
+    "riskTag": "risk",
+    "moreLocked": "+ veel {{count}} kuluartiklit, sh varjatud kulud"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Eraldi konteiner",
@@ -1278,5 +1289,28 @@
       "registration": "Registreerimine",
       "logistics": "Transport ja sadamad"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Maksud ja sadamatasud",
+    "extra": "+{{amount}} {{cur}} uksest ukseni",
+    "cheapestDoor": "odavaim uksest ukseni",
+    "rankingNote": "Järjestatud kogukulu järgi uksest ukseni (maksud, prakt, sadam, kohaletoimetamine sinu aadressile). Iga sadama juures on näha selle maksud ja sadamatasud; täielik jaotus on aruandes.",
+    "title": "Tollivormistus – {{port}}: maksud ja tasud",
+    "dutyWhere": "Igas ELi sadamas sama – 10% tolliväärtusest (CIF)",
+    "vatWhere": "Makstakse sadama riigis: {{country}}",
+    "nationalWhere": "Makstakse registreerimisriigis ({{country}}) – sõltumata sadamast",
+    "notPriced": "Kohalik registreerimistasu – riik: {{country}}; sõltub CO₂-st või hinnast, ei sisaldu",
+    "portFees": "Sadamatasud",
+    "portFeesWhat": "Terminaliteenus, mahalaadimine ja tolliagent",
+    "total": "Maksud ja tasud",
+    "howTitle": "Kuidas me arvutame",
+    "how1": "Tolliväärtus (CIF) = hind + oksjonitasud + transport ELi sadamani + kindlustus.",
+    "how2": "Tollimaks: 10% tolliväärtusest (pikapid 22%, mootorrattad 6–8%) – igas ELi sadamas sama.",
+    "how3": "Impordikäibemaks makstakse sadama riigis selle maksumääraga tolliväärtuselt + tollimaksult + transpordilt sinu aadressini. Kasutatud auto, mis on tollivormistatud väljaspool registreerimisriiki ({{country}}), ei maksa kodus uuesti käibemaksu.",
+    "how4": "Registreerimisriigi riiklikud maksud (nt Poola aktsiis) makstakse kodus – sõltumata sadamast.",
+    "how5": "Pingerida liidab prakti, sadamatasud ja kohaletoimetamise kilomeetri kaupa sinu aadressini – odavaim summa on esimene.",
+    "bestLabel": "Soodsaim sadam:",
+    "bestSelected": "valitud",
+    "bestChoose": "Vali – säästad {{amount}} {{cur}}"
   }
 }

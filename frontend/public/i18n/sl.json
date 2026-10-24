@@ -255,7 +255,18 @@
     "reportItem4": "Registracijske pristojbine in storitve po uvozu",
     "reportItem5": "Tveganja z zneski: optimistično, povprečno, pesimistično",
     "reportItem6": "Načrt po korakih z roki in seznamom dokumentov",
-    "cheapestPort": "najcenejše pristanišče"
+    "cheapestPort": "najcenejše pristanišče",
+    "lockedEyebrow": "Celotno poročilo",
+    "lockedTitle": "Celoten strošek do vašega praga",
+    "lockedLead": "Optimistični, povprečni in pesimistični scenarij ter še {{count}} postavk: prevoz, dostava, registracija in skriti stroški.",
+    "unlockNote": "PDF takoj · varno plačilo",
+    "freeTitle": "Carina, DDV in davki – brezplačno",
+    "freeLead": "Carinjenje – pristanišče {{port}}. Zneski, ki bi jih lahko izračunali na papirju.",
+    "freeBadge": "Brezplačno",
+    "freeBase": "Izračunano od carinske vrednosti (cena, dražbene provizije, prevoz v EU in zavarovanje) po današnjem tečaju.",
+    "lockedListTitle": "Izračunano tudi – v poročilu",
+    "riskTag": "tveganje",
+    "moreLocked": "+ še {{count}} postavk, vključno s skritimi stroški"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Lasten zabojnik",
@@ -1278,5 +1289,28 @@
       "registration": "Registracija",
       "logistics": "Prevoz in pristanišča"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Dajatve in pristaniški stroški",
+    "extra": "+{{amount}} {{cur}} od vrat do vrat",
+    "cheapestDoor": "najceneje od vrat do vrat",
+    "rankingNote": "Razvrščeno po skupnem strošku od vrat do vrat (dajatve, prevoznina, pristanišče, dostava na vaš naslov). Pri vsakem pristanišču vidite njegove dajatve in pristaniške stroške; celotna razčlenitev je v poročilu.",
+    "title": "Carinjenje – pristanišče {{port}}: dajatve in stroški",
+    "dutyWhere": "Enaka v vseh pristaniščih EU – 10 % carinske vrednosti (CIF)",
+    "vatWhere": "Plača se v državi pristanišča: {{country}}",
+    "nationalWhere": "Plača se v državi registracije ({{country}}) – ne glede na izbrano pristanišče",
+    "notPriced": "Lokalni davek ob registraciji – država: {{country}}; odvisen od CO₂ ali cene, ni vključen",
+    "portFees": "Pristaniški stroški",
+    "portFeesWhat": "Manipulacija na terminalu, raztovarjanje in carinski zastopnik",
+    "total": "Dajatve in stroški",
+    "howTitle": "Kako računamo",
+    "how1": "Carinska vrednost (CIF) = cena + dražbene provizije + prevoz do pristanišča EU + zavarovanje.",
+    "how2": "Carina: 10 % carinske vrednosti (pickupi 22 %, motorna kolesa 6–8 %) – enaka v vseh pristaniščih EU.",
+    "how3": "Uvozni DDV plačate v državi pristanišča, po njeni stopnji, od carinske vrednosti + carine + prevoza do vašega naslova. Rabljeni avto, ocarinjen zunaj države registracije ({{country}}), doma ne plača DDV ponovno.",
+    "how4": "Nacionalne davke države registracije (npr. poljsko trošarino) plačate doma – ne glede na pristanišče.",
+    "how5": "Razvrstitev prišteje prevoznino, pristaniške stroške in dostavo na km do vašega naslova – najcenejši znesek je na vrhu.",
+    "bestLabel": "Najugodnejše pristanišče:",
+    "bestSelected": "izbrano",
+    "bestChoose": "Izberite – prihranite {{amount}} {{cur}}"
   }
 }

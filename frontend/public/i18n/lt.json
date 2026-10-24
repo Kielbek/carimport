@@ -255,7 +255,18 @@
     "reportItem4": "Registracijos mokesčiai ir paslaugos po importo",
     "reportItem5": "Rizikos su sumomis: optimistinis, vidutinis, pesimistinis",
     "reportItem6": "Žingsnis po žingsnio planas su terminais ir dokumentų sąrašu",
-    "cheapestPort": "pigiausias uostas"
+    "cheapestPort": "pigiausias uostas",
+    "lockedEyebrow": "Visa ataskaita",
+    "lockedTitle": "Visa kaina iki jūsų durų",
+    "lockedLead": "Optimistinis, vidutinis ir pesimistinis scenarijus bei dar {{count}} pozicijos: transportas, pristatymas, registracija ir paslėptos išlaidos.",
+    "unlockNote": "PDF iš karto · saugus mokėjimas",
+    "freeTitle": "Muitas, PVM ir mokesčiai – nemokamai",
+    "freeLead": "Muitinio įforminimo uostas: {{port}}. Sumos, kurias galėtumėte apskaičiuoti ant popieriaus.",
+    "freeBadge": "Nemokamai",
+    "freeBase": "Apskaičiuota nuo muitinės vertės (kaina, aukciono mokesčiai, transportas į ES ir draudimas) šiandienos valiutos kursu.",
+    "lockedListTitle": "Taip pat apskaičiuota – ataskaitoje",
+    "riskTag": "rizika",
+    "moreLocked": "+ dar {{count}} pozicijos, įskaitant paslėptas išlaidas"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Atskiras konteineris",
@@ -1278,5 +1289,28 @@
       "registration": "Registracija",
       "logistics": "Transportas ir uostai"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Mokesčiai ir uosto rinkliavos",
+    "extra": "+{{amount}} {{cur}} nuo durų iki durų",
+    "cheapestDoor": "pigiausia nuo durų iki durų",
+    "rankingNote": "Surikiuota pagal visą kainą nuo durų iki durų (mokesčiai, frachtas, uostas, pristatymas jūsų adresu). Prie kiekvieno uosto matote jo mokesčius ir uosto rinkliavas; visas išskaidymas – ataskaitoje.",
+    "title": "Muitinis įforminimas – {{port}}: mokesčiai ir rinkliavos",
+    "dutyWhere": "Vienodas visuose ES uostuose – 10 % muitinės vertės (CIF)",
+    "vatWhere": "Mokamas uosto šalyje: {{country}}",
+    "nationalWhere": "Mokami registracijos šalyje ({{country}}) – nepriklausomai nuo uosto",
+    "notPriced": "Vietinis registracijos mokestis – šalis: {{country}}; priklauso nuo CO₂ ar kainos, neįskaičiuotas",
+    "portFees": "Uosto rinkliavos",
+    "portFeesWhat": "Terminalo aptarnavimas, iškrovimas ir muitinės tarpininkas",
+    "total": "Mokesčiai ir rinkliavos",
+    "howTitle": "Kaip skaičiuojame",
+    "how1": "Muitinė vertė (CIF) = kaina + aukciono mokesčiai + transportas iki ES uosto + draudimas.",
+    "how2": "Muitas: 10 % muitinės vertės (pikapai 22 %, motociklai 6–8 %) – vienodas visuose ES uostuose.",
+    "how3": "Importo PVM mokamas uosto šalyje jos tarifu nuo muitinės vertės + muito + transporto iki jūsų adreso. Naudotas automobilis, įformintas ne registracijos šalyje ({{country}}), namuose PVM antrą kartą nemoka.",
+    "how4": "Registracijos šalies nacionaliniai mokesčiai (pvz., Lenkijos akcizas) mokami namuose – nepriklausomai nuo uosto.",
+    "how5": "Reitingas prideda frachtą, uosto rinkliavas ir pristatymą už km iki jūsų adreso – pigiausia suma yra pirma.",
+    "bestLabel": "Palankiausias uostas:",
+    "bestSelected": "pasirinktas",
+    "bestChoose": "Pasirinkite – sutaupysite {{amount}} {{cur}}"
   }
 }

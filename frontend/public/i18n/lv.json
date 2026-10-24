@@ -255,7 +255,18 @@
     "reportItem4": "Reģistrācijas maksas un pakalpojumi pēc importa",
     "reportItem5": "Riski ar summām: optimistisks, vidējs, pesimistisks",
     "reportItem6": "Plāns soli pa solim ar termiņiem un dokumentu sarakstu",
-    "cheapestPort": "lētākā osta"
+    "cheapestPort": "lētākā osta",
+    "lockedEyebrow": "Pilna atskaite",
+    "lockedTitle": "Pilnās izmaksas līdz jūsu durvīm",
+    "lockedLead": "Optimistiskais, vidējais un pesimistiskais scenārijs un vēl {{count}} pozīcijas: transports, piegāde, reģistrācija un slēptās izmaksas.",
+    "unlockNote": "PDF uzreiz · droša apmaksa",
+    "freeTitle": "Muita, PVN un nodokļi – bez maksas",
+    "freeLead": "Muitošanas osta: {{port}}. Summas, ko varētu aprēķināt uz papīra.",
+    "freeBadge": "Bez maksas",
+    "freeBase": "Aprēķināts no muitas vērtības (cena, izsoles maksas, transports uz ES un apdrošināšana) pēc šodienas valūtas kursa.",
+    "lockedListTitle": "Aprēķināts arī – atskaitē",
+    "riskTag": "risks",
+    "moreLocked": "+ vēl {{count}} pozīcijas, t. sk. slēptās izmaksas"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Atsevišķs konteiners",
@@ -1278,5 +1289,28 @@
       "registration": "Reģistrācija",
       "logistics": "Pārvadājumi un ostas"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Nodokļi un ostas maksas",
+    "extra": "+{{amount}} {{cur}} no durvīm līdz durvīm",
+    "cheapestDoor": "lētākais no durvīm līdz durvīm",
+    "rankingNote": "Sakārtots pēc pilnajām izmaksām no durvīm līdz durvīm (nodokļi, frakts, osta, piegāde uz jūsu adresi). Pie katras ostas redzami tās nodokļi un ostas maksas; pilns sadalījums ir atskaitē.",
+    "title": "Muitošana – {{port}}: nodokļi un maksas",
+    "dutyWhere": "Vienāds visās ES ostās – 10% no muitas vērtības (CIF)",
+    "vatWhere": "Maksā ostas valstī: {{country}}",
+    "nationalWhere": "Maksā reģistrācijas valstī ({{country}}) – neatkarīgi no ostas",
+    "notPriced": "Vietējais reģistrācijas nodoklis – valsts: {{country}}; atkarīgs no CO₂ vai cenas, nav iekļauts",
+    "portFees": "Ostas maksas",
+    "portFeesWhat": "Termināļa apkalpošana, izkraušana un muitas aģents",
+    "total": "Nodokļi un maksas",
+    "howTitle": "Kā mēs aprēķinām",
+    "how1": "Muitas vērtība (CIF) = cena + izsoles maksas + transports līdz ES ostai + apdrošināšana.",
+    "how2": "Muitas nodoklis: 10% no muitas vērtības (pikapi 22%, motocikli 6–8%) – vienāds visās ES ostās.",
+    "how3": "Importa PVN maksā ostas valstī pēc tās likmes no muitas vērtības + muitas nodokļa + transporta līdz jūsu adresei. Lietots auto, kas muitots ārpus reģistrācijas valsts ({{country}}), mājās PVN vēlreiz nemaksā.",
+    "how4": "Reģistrācijas valsts nacionālos nodokļus (piem., Polijas akcīzi) maksā mājās – neatkarīgi no ostas.",
+    "how5": "Reitingā pieskaita frakti, ostas maksas un piegādi par km līdz jūsu adresei – lētākā summa ir pirmā.",
+    "bestLabel": "Izdevīgākā osta:",
+    "bestSelected": "izvēlēta",
+    "bestChoose": "Izvēlieties – ietaupiet {{amount}} {{cur}}"
   }
 }

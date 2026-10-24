@@ -255,7 +255,18 @@
     "reportItem4": "Forgalomba helyezési díjak és behozatal utáni szolgáltatások",
     "reportItem5": "Kockázatok összegekkel: optimista, átlagos, pesszimista",
     "reportItem6": "Lépésenkénti terv határidőkkel és dokumentumlistával",
-    "cheapestPort": "legolcsóbb kikötő"
+    "cheapestPort": "legolcsóbb kikötő",
+    "lockedEyebrow": "Teljes jelentés",
+    "lockedTitle": "Teljes költség az Ön ajtajáig",
+    "lockedLead": "Optimista, átlagos és pesszimista forgatókönyv, valamint további {{count}} tétel: szállítás, kiszállítás, forgalomba helyezés és rejtett költségek.",
+    "unlockNote": "Azonnali PDF · biztonságos fizetés",
+    "freeTitle": "Vám, áfa és adók – ingyen",
+    "freeLead": "Vámkezelés – kikötő: {{port}}. Azok az összegek, amelyeket papíron is kiszámolhatna.",
+    "freeBadge": "Ingyenes",
+    "freeBase": "A vámérték (ár, aukciós díjak, szállítás az EU-ba és biztosítás) alapján, a mai árfolyamon számolva.",
+    "lockedListTitle": "Szintén kiszámolva – a jelentésben",
+    "riskTag": "kockázat",
+    "moreLocked": "+ további {{count}} tétel, köztük a rejtett költségek"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Saját (kizárólagos) konténer",
@@ -1278,5 +1289,28 @@
       "registration": "Forgalomba helyezés",
       "logistics": "Szállítás és kikötők"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Adók és kikötői díjak",
+    "extra": "+{{amount}} {{cur}} háztól házig",
+    "cheapestDoor": "legolcsóbb háztól házig",
+    "rankingNote": "A teljes háztól házig költség szerint rendezve (adók, fuvar, kikötő, kiszállítás az Ön címére). Minden kikötőnél látja annak adóit és kikötői díjait; a teljes bontás a jelentésben található.",
+    "title": "Vámkezelés – kikötő: {{port}} – adók és díjak",
+    "dutyWhere": "Minden uniós kikötőben azonos – a vámérték (CIF) 10%-a",
+    "vatWhere": "A kikötő országában fizetendő: {{country}}",
+    "nationalWhere": "A forgalomba helyezés országában fizetendő ({{country}}) – bármelyik kikötőt is választja",
+    "notPriced": "Helyi regisztrációs adó – ország: {{country}}; a CO₂-től vagy az ártól függ, nincs benne",
+    "portFees": "Kikötői díjak",
+    "portFeesWhat": "Terminálkezelés, kirakodás és vámügynök",
+    "total": "Adók és díjak",
+    "howTitle": "Így számolunk",
+    "how1": "Vámérték (CIF) = ár + aukciós díjak + szállítás az uniós kikötőig + biztosítás.",
+    "how2": "Vám: a vámérték 10%-a (pickupok 22%, motorkerékpárok 6–8%) – minden uniós kikötőben azonos.",
+    "how3": "Az import áfát a kikötő országában, annak kulcsa szerint kell megfizetni a vámérték + vám + az Ön címéig tartó szállítás után. A forgalomba helyezés országán ({{country}}) kívül vámkezelt használt autó után otthon nem kell újra áfát fizetni.",
+    "how4": "A forgalomba helyezés országának nemzeti adóit (pl. a lengyel jövedéki adót) otthon kell megfizetni – kikötőtől függetlenül.",
+    "how5": "A rangsor hozzáadja a fuvart, a kikötői díjakat és a km-alapú kiszállítást az Ön címéig – a legolcsóbb összeg áll az élen.",
+    "bestLabel": "Legkedvezőbb kikötő:",
+    "bestSelected": "kiválasztva",
+    "bestChoose": "Kiválasztás – {{amount}} {{cur}} megtakarítás"
   }
 }

@@ -255,7 +255,18 @@
     "reportItem4": "Registreringsgebyrer og ydelser efter importen",
     "reportItem5": "Risici med beløb: optimistisk, gennemsnitligt, pessimistisk",
     "reportItem6": "Trin-for-trin-plan med frister og dokumentliste",
-    "cheapestPort": "billigste havn"
+    "cheapestPort": "billigste havn",
+    "lockedEyebrow": "Fuld rapport",
+    "lockedTitle": "Den fulde pris til din dør",
+    "lockedLead": "Optimistisk, gennemsnitligt og pessimistisk scenarie plus {{count}} poster mere: transport, levering, registrering og skjulte omkostninger.",
+    "unlockNote": "PDF med det samme · sikker betaling",
+    "freeTitle": "Told, moms og afgifter – gratis",
+    "freeLead": "Fortoldning i {{port}}. De beløb, du selv kunne regne ud på papir.",
+    "freeBadge": "Gratis",
+    "freeBase": "Beregnet af toldværdien (pris, auktionsgebyrer, transport til EU og forsikring) til dagens valutakurs.",
+    "lockedListTitle": "Også beregnet – i rapporten",
+    "riskTag": "risiko",
+    "moreLocked": "+ {{count}} poster mere, inkl. skjulte omkostninger"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Egen container",
@@ -1278,5 +1289,28 @@
       "registration": "Registrering",
       "logistics": "Fragt og havne"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Afgifter & havnegebyrer",
+    "extra": "+{{amount}} {{cur}} dør til dør",
+    "cheapestDoor": "billigst dør til dør",
+    "rankingNote": "Sorteret efter den samlede pris fra dør til dør (afgifter, fragt, havn, levering til din adresse). Hver havn viser sine afgifter og havnegebyrer; den fulde opdeling står i rapporten.",
+    "title": "Fortoldning i {{port}}: afgifter og gebyrer",
+    "dutyWhere": "Ens i alle EU-havne – 10 % af toldværdien (CIF)",
+    "vatWhere": "Betales i havnens land: {{country}}",
+    "nationalWhere": "Betales i registreringslandet ({{country}}) – uanset hvilken havn du vælger",
+    "notPriced": "Lokal registreringsafgift – land: {{country}}; afhænger af CO₂ eller pris, ikke medregnet",
+    "portFees": "Havnegebyrer",
+    "portFeesWhat": "Terminalhåndtering, losning og toldspeditør",
+    "total": "Afgifter og gebyrer",
+    "howTitle": "Sådan beregner vi",
+    "how1": "Toldværdi (CIF) = pris + auktionsgebyrer + transport til EU-havnen + forsikring.",
+    "how2": "Told: 10 % af toldværdien (pickupper 22 %, motorcykler 6–8 %) – ens i alle EU-havne.",
+    "how3": "Importmoms betales i havnens land, med dets sats, af toldværdi + told + transport til din adresse. En brugt bil, der fortoldes uden for {{country}}, betaler ikke moms igen derhjemme.",
+    "how4": "Registreringslandets nationale afgifter (f.eks. polsk punktafgift) betales derhjemme – uanset havn.",
+    "how5": "Rangeringen lægger fragt, havnegebyrer og levering pr. km til din adresse til – den billigste sum står øverst.",
+    "bestLabel": "Mest fordelagtige havn:",
+    "bestSelected": "valgt",
+    "bestChoose": "Vælg – spar {{amount}} {{cur}}"
   }
 }

@@ -255,7 +255,18 @@
     "reportItem4": "Taxas de matrícula e serviços pós-importação",
     "reportItem5": "Riscos com montantes: otimista, médio, pessimista",
     "reportItem6": "Plano passo a passo com prazos e lista de documentos",
-    "cheapestPort": "porto mais barato"
+    "cheapestPort": "porto mais barato",
+    "lockedEyebrow": "Relatório completo",
+    "lockedTitle": "Custo total até à sua porta",
+    "lockedLead": "Cenário otimista, médio e pessimista e mais {{count}} rubricas: transporte, entrega, matrícula e custos ocultos.",
+    "unlockNote": "PDF imediato · pagamento seguro",
+    "freeTitle": "Direitos aduaneiros, IVA e impostos – grátis",
+    "freeLead": "Desalfandegamento em {{port}}. Os valores que poderia calcular no papel.",
+    "freeBadge": "Grátis",
+    "freeBase": "Calculado sobre o valor aduaneiro (preço, taxas de leilão, transporte para a UE e seguro) à taxa de câmbio de hoje.",
+    "lockedListTitle": "Também calculado – no relatório",
+    "riskTag": "risco",
+    "moreLocked": "+ {{count}} rubricas adicionais, incl. custos ocultos"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Contentor exclusivo",
@@ -1278,5 +1289,28 @@
       "registration": "Legalização",
       "logistics": "Transporte e portos"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Impostos e taxas portuárias",
+    "extra": "+{{amount}} {{cur}} porta a porta",
+    "cheapestDoor": "o mais barato porta a porta",
+    "rankingNote": "Ordenado pelo custo total porta a porta (impostos, frete, porto, entrega na sua morada). Cada porto mostra os seus impostos e taxas portuárias; a discriminação completa está no relatório.",
+    "title": "Desalfandegamento em {{port}}: impostos e taxas",
+    "dutyWhere": "Igual em todos os portos da UE – 10% do valor aduaneiro (CIF)",
+    "vatWhere": "Pago no país do porto: {{country}}",
+    "nationalWhere": "Pagos no país de matrícula ({{country}}), seja qual for o porto",
+    "notPriced": "Imposto de registo local – país: {{country}}; depende do CO₂ ou do preço, não incluído",
+    "portFees": "Taxas portuárias",
+    "portFeesWhat": "Manuseamento no terminal, descarga e despachante aduaneiro",
+    "total": "Impostos e taxas",
+    "howTitle": "Como calculamos",
+    "how1": "Valor aduaneiro (CIF) = preço + taxas de leilão + transporte até ao porto da UE + seguro.",
+    "how2": "Direito aduaneiro: 10% do valor aduaneiro (pick-ups 22%, motociclos 6–8%) – idêntico em todos os portos da UE.",
+    "how3": "O IVA na importação é pago no país do porto, à sua taxa, sobre valor aduaneiro + direito + transporte até à sua morada. Um carro usado desalfandegado fora do país {{country}} não volta a pagar IVA em casa.",
+    "how4": "Os impostos nacionais do país de matrícula (p. ex. o imposto especial polaco) pagam-se em casa, seja qual for o porto.",
+    "how5": "O ranking soma frete, taxas portuárias e entrega por km até à sua morada – o total mais barato aparece primeiro.",
+    "bestLabel": "Porto mais vantajoso:",
+    "bestSelected": "selecionado",
+    "bestChoose": "Escolher – poupe {{amount}} {{cur}}"
   }
 }

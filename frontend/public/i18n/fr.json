@@ -255,7 +255,18 @@
     "reportItem4": "Frais d’immatriculation et services après importation",
     "reportItem5": "Risques chiffrés : optimiste, moyen, pessimiste",
     "reportItem6": "Plan étape par étape avec échéances et liste des documents",
-    "cheapestPort": "port le moins cher"
+    "cheapestPort": "port le moins cher",
+    "lockedEyebrow": "Rapport complet",
+    "lockedTitle": "Coût total jusqu’à votre porte",
+    "lockedLead": "Scénario optimiste, moyen et pessimiste, plus {{count}} postes supplémentaires : transport, livraison, immatriculation et coûts cachés.",
+    "unlockNote": "PDF immédiat · paiement sécurisé",
+    "freeTitle": "Droits de douane, TVA et taxes – gratuit",
+    "freeLead": "Dédouanement à {{port}}. Les montants que vous pourriez calculer sur papier.",
+    "freeBadge": "Gratuit",
+    "freeBase": "Calculé sur la valeur en douane (prix, frais d’enchères, transport vers l’UE et assurance) au taux de change du jour.",
+    "lockedListTitle": "Également calculé – dans le rapport",
+    "riskTag": "risque",
+    "moreLocked": "+ {{count}} postes supplémentaires, dont les coûts cachés"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Conteneur exclusif",
@@ -1278,5 +1289,28 @@
       "registration": "Immatriculation",
       "logistics": "Transport et ports"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Taxes et frais portuaires",
+    "extra": "+{{amount}} {{cur}} porte à porte",
+    "cheapestDoor": "le moins cher porte à porte",
+    "rankingNote": "Classé selon le coût total porte à porte (taxes, fret, port, livraison à votre adresse). Chaque port affiche ses taxes et frais portuaires ; le détail complet figure dans le rapport.",
+    "title": "Dédouanement à {{port}} : taxes et frais",
+    "dutyWhere": "Identique dans tous les ports de l’UE – 10 % de la valeur en douane (CIF)",
+    "vatWhere": "Payée dans le pays du port : {{country}}",
+    "nationalWhere": "Payées dans le pays d’immatriculation ({{country}}), quel que soit le port",
+    "notPriced": "Taxe d’immatriculation locale – pays : {{country}} ; dépend du CO₂ ou du prix, non incluse",
+    "portFees": "Frais portuaires",
+    "portFeesWhat": "Manutention au terminal, déchargement et commissionnaire en douane",
+    "total": "Taxes et frais",
+    "howTitle": "Notre méthode de calcul",
+    "how1": "Valeur en douane (CIF) = prix + frais d’enchères + transport jusqu’au port de l’UE + assurance.",
+    "how2": "Droits de douane : 10 % de la valeur en douane (pick-up 22 %, motos 6–8 %) – identiques dans tous les ports de l’UE.",
+    "how3": "La TVA à l’importation est payée dans le pays du port, à son taux, sur la valeur en douane + droits + transport jusqu’à votre adresse. Une voiture d’occasion dédouanée hors du pays {{country}} ne repaie pas la TVA chez vous.",
+    "how4": "Les taxes nationales du pays d’immatriculation (p. ex. l’accise polonaise) se paient chez vous, quel que soit le port.",
+    "how5": "Le classement ajoute le fret, les frais portuaires et la livraison au km jusqu’à votre adresse – le total le moins cher arrive en tête.",
+    "bestLabel": "Port le plus avantageux :",
+    "bestSelected": "sélectionné",
+    "bestChoose": "Choisir – économisez {{amount}} {{cur}}"
   }
 }

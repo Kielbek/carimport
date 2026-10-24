@@ -255,7 +255,18 @@
     "reportItem4": "Registracijske naknade i usluge nakon uvoza",
     "reportItem5": "Rizici s iznosima: optimistično, prosječno, pesimistično",
     "reportItem6": "Plan korak po korak s rokovima i popisom dokumenata",
-    "cheapestPort": "najpovoljnija luka"
+    "cheapestPort": "najpovoljnija luka",
+    "lockedEyebrow": "Cjelovito izvješće",
+    "lockedTitle": "Ukupni trošak do vaših vrata",
+    "lockedLead": "Optimističan, prosječan i pesimističan scenarij te još {{count}} stavki: prijevoz, dostava, registracija i skriveni troškovi.",
+    "unlockNote": "PDF odmah · sigurno plaćanje",
+    "freeTitle": "Carina, PDV i porezi – besplatno",
+    "freeLead": "Carinjenje – luka {{port}}. Iznosi koje biste mogli izračunati na papiru.",
+    "freeBadge": "Besplatno",
+    "freeBase": "Izračunano na carinsku vrijednost (cijena, aukcijske naknade, prijevoz u EU i osiguranje) po današnjem tečaju.",
+    "lockedListTitle": "Izračunali smo i – u izvješću",
+    "riskTag": "rizik",
+    "moreLocked": "+ još {{count}} stavki, uključujući skrivene troškove"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Vlastiti kontejner",
@@ -1278,5 +1289,28 @@
       "registration": "Registracija",
       "logistics": "Prijevoz i luke"
     }
+  },
+  "portCost": {
+    "taxesAndFees": "Porezi i lučke naknade",
+    "extra": "+{{amount}} {{cur}} od vrata do vrata",
+    "cheapestDoor": "najjeftinije od vrata do vrata",
+    "rankingNote": "Poredano prema ukupnom trošku od vrata do vrata (porezi, vozarina, luka, dostava na vašu adresu). Uz svaku luku vidite njezine poreze i lučke naknade; cjelovita raščlamba nalazi se u izvješću.",
+    "title": "Carinjenje – luka {{port}}: porezi i naknade",
+    "dutyWhere": "Jednako u svim lukama EU-a – 10 % carinske vrijednosti (CIF)",
+    "vatWhere": "Plaća se u zemlji luke: {{country}}",
+    "nationalWhere": "Plaća se u zemlji registracije ({{country}}) – bez obzira na odabranu luku",
+    "notPriced": "Lokalni porez pri registraciji – zemlja: {{country}}; ovisi o CO₂ ili cijeni, nije uključen",
+    "portFees": "Lučke naknade",
+    "portFeesWhat": "Manipulacija na terminalu, istovar i carinski zastupnik",
+    "total": "Porezi i naknade",
+    "howTitle": "Kako računamo",
+    "how1": "Carinska vrijednost (CIF) = cijena + aukcijske naknade + prijevoz do luke u EU-u + osiguranje.",
+    "how2": "Carina: 10 % carinske vrijednosti (pickupi 22 %, motocikli 6–8 %) – jednaka u svim lukama EU-a.",
+    "how3": "PDV pri uvozu plaćate u zemlji luke, po njezinoj stopi, na carinsku vrijednost + carinu + prijevoz do vaše adrese. Rabljeni automobil ocarinjen izvan zemlje registracije ({{country}}) kod kuće ne plaća ponovno PDV.",
+    "how4": "Nacionalne poreze zemlje registracije (npr. poljsku trošarinu) plaćate kod kuće – bez obzira na luku.",
+    "how5": "Poredak pribraja vozarinu, lučke naknade i dostavu po km do vaše adrese – najjeftiniji zbroj je na vrhu.",
+    "bestLabel": "Najisplativija luka:",
+    "bestSelected": "odabrano",
+    "bestChoose": "Odaberite – uštedite {{amount}} {{cur}}"
   }
 }
