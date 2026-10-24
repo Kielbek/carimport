@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "Valitulle maalle ei ole verokantoja."
-    }
+    },
+    "rateLimited": "Liian monta pyyntöä lyhyessä ajassa – odota hetki ja yritä uudelleen."
   },
   "fuel": {
     "DIESEL": "Diesel",
@@ -197,8 +198,9 @@
     "redirecting": "Uudelleenohjataan…",
     "secure": "Turvallinen maksu Stripen kautta. Emme koskaan tallenna korttitietoja.",
     "subtitle": "Tarkat summat, veroperusteet ja verokannat, asiakirjat – PDF-raportissa omalla nimelläsi.",
-    "terms": "Hyväksyn ehdot ja pyydän digitaalisen sisällön toimittamista välittömästi, jolloin luovun peruuttamisoikeudesta.",
-    "title": "Täydellinen tuontiraportti"
+    "terms": "Hyväksyn ehdot ja pyydän nimenomaisesti, että raportti toimitetaan ennen 14 päivän peruuttamisajan päättymistä. Ymmärrän, että menetän peruuttamisoikeuteni, kun raportti on toimitettu.",
+    "title": "Täydellinen tuontiraportti",
+    "termsLink": "Ehdot"
   },
   "report": {
     "amount": "Summa",
@@ -437,7 +439,8 @@
     "language": "Kieli",
     "payments": "Maksut Stripen kautta (kortti, BLIK, Przelewy24). Emme koskaan tallenna korttitietoja.",
     "rights": "Kaikki oikeudet pidätetään.",
-    "disclaimer": "Laskelmat ovat suuntaa antavia, eivätkä ne ole tullipäätös tai veroneuvontaa."
+    "disclaimer": "Laskelmat ovat suuntaa antavia, eivätkä ne ole tullipäätös tai veroneuvontaa.",
+    "terms": "Käyttöehdot"
   },
   "cookies": {
     "title": "Evästeet",
@@ -764,6 +767,10 @@
     "about": {
       "title": "Meistä – riippumaton autontuontilaskuri | CarImport.eu",
       "description": "Keitä olemme, mistä tietomme tulevat ja miten ansaitsemme rahaa. CarImport.eu ei myy eikä tuo autoja – se laskee tuonnin kokonaiskustannuksen rehellisesti ja riippumattomasti."
+    },
+    "terms": {
+      "title": "Käyttöehdot | CarImport.eu",
+      "description": "Autojen tuontikustannuslaskurin ja PDF-raportin ehdot: myyjä, maksu, toimitus, peruuttaminen ja reklamaatiot."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "Ajoneuvotietokanta ei vastaa juuri nyt. Käytimme sitä, mitä VIN itsessään sisältää – yritä myöhemmin uudelleen saadaksesi täydet tiedot.",
       "noCo2": "EPA:lta ei löydy CO₂-arvoa tälle versiolle – pidämme arviomme. Jos sinulla on arvo CoC-todistuksesta, syötä se.",
       "noPower": "Tämän VIN-tunnuksen tehoa ei ole tietokannassa – pidämme arviomme."
+    }
+  },
+  "terms": {
+    "eyebrow": "Käyttöehdot",
+    "title": "Palvelun käyttöehdot ja raporttien myyntiehdot",
+    "version": "Versio {{version}}",
+    "s1": {
+      "title": "Myyjä ja yhteystiedot",
+      "text": "Palvelua {{site}} ylläpitää {{company}}, {{address}}, Y-tunnus {{taxId}}, {{registry}} (jäljempänä Myyjä).\nYhteydenotot kaikissa asioissa, myös reklamaatiot: {{email}}. Vastaamme 14 päivän kuluessa."
+    },
+    "s2": {
+      "title": "Mikä palvelu on",
+      "text": "Palvelu on riippumaton laskuri, jolla lasketaan Euroopan unionin ulkopuolelta tuotavien autojen tuontikustannukset. Myyjä ei myy, osta eikä tuo maahan ajoneuvoja eikä toimi tulliasiamiehenä.\nLaskuri on maksuton eikä vaadi rekisteröitymistä. Maksullinen on ainoastaan kohdassa 4 kuvattu PDF-raportti."
+    },
+    "s3": {
+      "title": "Laskelmien luonne",
+      "text": "Laskelmat ovat ainoastaan suuntaa antavia. Ne perustuvat laskelmapäivänä voimassa olevaan lainsäädäntöön, verokantoihin ja valuuttakursseihin (NBP), käyttäjän antamiin tietoihin sekä palvelujen tyypillisiin hintoihin.\nLaskelma ei ole tulli- tai veroviranomaisen päätös, sitova tariffitieto eikä oikeudellinen tai verotuksellinen neuvonta. Lopulliset summat määräävät toimivaltaiset viranomaiset, kuljetusliikkeet ja muut palveluntarjoajat."
+    },
+    "s4": {
+      "title": "Maksullinen raportti – tilaus ja hinta",
+      "text": "Raportti on PDF-muotoista digitaalista sisältöä, joka laaditaan automaattisesti valitulle laskelmalle ja jossa on ostajan nimi.\nHinta näytetään ennen ostoa valitussa valuutassa, ja se on lopullinen hinta. Maksun käsittelee Stripe (kortti, BLIK, Przelewy24 ja muut maksun yhteydessä näytettävät maksutavat). Myyjä ei tallenna korttitietoja.\nSopimus syntyy, kun maksu on vahvistettu."
+    },
+    "s5": {
+      "title": "Toimitus",
+      "text": "Raportti on saatavilla raporttisivulla heti maksun vahvistamisen jälkeen, ja se lähetetään annettuun sähköpostiosoitteeseen liitteenä henkilökohtaisen linkin kanssa.\nTekniset vaatimukset: verkkoselain, jossa JavaScript on käytössä, toimiva sähköpostiosoite ja PDF-tiedostojen lukuohjelma.\nRaportin linkki on henkilökohtainen – älä jaa sitä muille."
+    },
+    "s6": {
+      "title": "Peruuttamisoikeus",
+      "text": "Kuluttaja voi peruuttaa etämyyntisopimuksen 14 päivän kuluessa ilmoittamatta syytä.\nPeruuttamisoikeutta ei ole, kun digitaalisen sisällön toimittaminen on aloitettu kuluttajan nimenomaisella ennakkosuostumuksella ja kuluttaja on vahvistanut ymmärtävänsä menettävänsä näin peruuttamisoikeutensa (direktiivin 2011/83/EU 16 artiklan m alakohta). Ostaja antaa tämän suostumuksen ja vahvistuksen tilauksen yhteydessä ja saa niistä vahvistuksen raportin sisältävässä sähköpostiviestissä.\nSamoja sääntöjä sovelletaan luonnolliseen henkilöön, joka tekee suoraan elinkeinotoimintaansa liittyvän sopimuksen, kun sopimus ei ole hänelle ammatillinen."
+    },
+    "s7": {
+      "title": "Reklamaatiot",
+      "text": "Myyjä vastaa raportin sopimuksenmukaisuudesta. Jos raporttia ei ole toimitettu, sitä ei voi lukea tai se ei vastaa maksettua laskelmaa, kirjoita osoitteeseen {{email}} ja ilmoita tilausnumero tai ostossa käytetty sähköpostiosoite.\nMyyjä käsittelee reklamaation 14 päivän kuluessa. Jos reklamaatio on aiheellinen, Myyjä toimittaa korjatun raportin tai, jos se ei ole mahdollista, palauttaa hinnan.\nKuluttaja voi käyttää tuomioistuimen ulkopuolista riidanratkaisua, esimerkiksi oman maansa kuluttajariitoja ratkaisevaa elintä tai kuluttajansuojaviranomaista."
+    },
+    "s8": {
+      "title": "Vastuu",
+      "text": "Myyjä huolehtii siitä, että verokannat ja tiedot ovat ajantasaisia ja oikeita, mutta ei vastaa päätöksistä, jotka on tehty pelkästään laskelmien perusteella, eikä eroista, jotka johtuvat viranomaisten päätöksistä, laskelmapäivän jälkeisistä lainsäädännön ja valuuttakurssien muutoksista, palveluntarjoajien hinnoista tai käyttäjän antamista virheellisistä tiedoista.\nTämä ei rajoita kuluttajan pakottavan lainsäädännön mukaisia oikeuksia."
+    },
+    "s9": {
+      "title": "Kumppanit",
+      "text": "Palvelussa voidaan esittää kumppaneiden tarjouksia (esim. valuutanvaihto, ajoneuvon historia, maahantuojat). Osa linkeistä on kumppanuuslinkkejä – Myyjä voi saada niistä palkkion, mikä ei vaikuta laskelmiin.\nYhteystiedot luovutetaan kumppanille vain, kun käyttäjä lähettää tarjouspyyntölomakkeen ja antaa siihen suostumuksensa. Sopimukset kumppaneiden kanssa tehdään suoraan niiden kanssa."
+    },
+    "s10": {
+      "title": "Henkilötiedot",
+      "text": "Henkilötietojen ja evästeiden käsittely kuvataan tietosuojaselosteessa."
+    },
+    "s11": {
+      "title": "Loppumääräykset",
+      "text": "Ehdot ovat maksutta saatavilla tällä sivulla muodossa, joka mahdollistaa niiden tallentamisen ja tulostamisen.\nEhtojen muutokset eivät koske sopimuksia, jotka on tehty ennen muutosten voimaantuloa.\nSovelletaan Puolan lakia, kuitenkaan riistämättä kuluttajalta sitä suojaa, joka hänelle kuuluu hänen vakinaisen asuinmaansa pakottavan lainsäädännön nojalla."
     }
   }
 }

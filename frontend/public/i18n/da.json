@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "Der findes ingen afgiftssatser for det valgte land."
-    }
+    },
+    "rateLimited": "For mange forespørgsler på kort tid – vent et øjeblik, og prøv igen."
   },
   "fuel": {
     "DIESEL": "Diesel",
@@ -197,8 +198,9 @@
     "redirecting": "Viderestiller…",
     "secure": "Sikker betaling via Stripe. Vi gemmer aldrig kortoplysninger.",
     "subtitle": "Præcise beløb, beregningsgrundlag og satser, dokumenter – i en PDF med dit navn.",
-    "terms": "Jeg accepterer vilkårene og anmoder om øjeblikkelig levering af digitalt indhold, hvorved jeg giver afkald på fortrydelsesretten.",
-    "title": "Fuld importrapport"
+    "terms": "Jeg accepterer handelsbetingelserne og anmoder udtrykkeligt om, at rapporten leveres, inden fortrydelsesfristen på 14 dage udløber. Jeg anerkender, at jeg mister min fortrydelsesret, når rapporten er leveret.",
+    "title": "Fuld importrapport",
+    "termsLink": "Handelsbetingelser"
   },
   "report": {
     "amount": "Beløb",
@@ -437,7 +439,8 @@
     "language": "Sprog",
     "payments": "Betaling via Stripe (kort, BLIK, Przelewy24). Vi gemmer aldrig kortoplysninger.",
     "rights": "Alle rettigheder forbeholdes.",
-    "disclaimer": "Beregningerne er vejledende og er hverken en toldafgørelse eller skatterådgivning."
+    "disclaimer": "Beregningerne er vejledende og er hverken en toldafgørelse eller skatterådgivning.",
+    "terms": "Handelsbetingelser"
   },
   "cookies": {
     "title": "Cookies",
@@ -764,6 +767,10 @@
     "about": {
       "title": "Om os – en uafhængig beregner til bilimport | CarImport.eu",
       "description": "Hvem vi er, hvor vores data kommer fra, og hvordan vi tjener penge. CarImport.eu hverken sælger eller importerer biler – vi beregner den fulde importpris ærligt og uafhængigt."
+    },
+    "terms": {
+      "title": "Handelsbetingelser | CarImport.eu",
+      "description": "Betingelser for beregneren af importomkostninger for biler og PDF-rapporten: sælger, betaling, levering, fortrydelse og reklamationer."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "Køretøjsdatabasen svarer ikke lige nu. Vi har brugt det, som selve VIN-nummeret indeholder – prøv igen senere for at få den fulde specifikation.",
       "noCo2": "EPA har ingen CO₂-værdi for denne version – vi beholder vores skøn. Brug værdien fra CoC'en, hvis du har den.",
       "noPower": "Effekten for dette VIN findes ikke i databasen – vi beholder vores skøn."
+    }
+  },
+  "terms": {
+    "eyebrow": "Handelsbetingelser",
+    "title": "Vilkår for brug af tjenesten og handelsbetingelser for køb af rapporter",
+    "version": "Version af {{version}}",
+    "s1": {
+      "title": "Sælger og kontakt",
+      "text": "{{site}} drives af {{company}}, {{address}}, CVR-nr. {{taxId}}, {{registry}} (herefter »Sælger«).\nKontakt i alle sager, også reklamationer: {{email}}. Vi svarer inden for 14 dage."
+    },
+    "s2": {
+      "title": "Hvad tjenesten er",
+      "text": "Tjenesten er en uafhængig beregner af omkostningerne ved import af biler fra lande uden for Den Europæiske Union. Sælger sælger, køber eller importerer ikke køretøjer og fungerer ikke som toldagent.\nBeregneren er gratis og kræver ingen registrering. Kun den PDF-rapport, der er beskrevet i punkt 4, er betalingspligtig."
+    },
+    "s3": {
+      "title": "Beregningernes karakter",
+      "text": "Beregningerne er udelukkende vejledende. De bygger på lovgivning, satser og valutakurser (NBP) gældende på dagen for beregningen, på de data, brugeren har indtastet, og på typiske priser for tjenesteydelser.\nEn beregning er ikke en afgørelse fra en told- eller skattemyndighed, en bindende tarifoplysning eller juridisk eller skattemæssig rådgivning. De endelige beløb fastsættes af de kompetente myndigheder, transportører og andre tjenesteudbydere."
+    },
+    "s4": {
+      "title": "Betalt rapport – bestilling og pris",
+      "text": "Rapporten er digitalt indhold i PDF-format, som udarbejdes automatisk for den valgte beregning og er forsynet med købers navn.\nPrisen vises før købet i den valgte valuta og er den endelige pris. Betalingen håndteres af Stripe (kort, BLIK, Przelewy24 og de øvrige metoder, der vises ved betalingen). Sælger opbevarer ikke kortoplysninger.\nAftalen indgås, når betalingen er bekræftet."
+    },
+    "s5": {
+      "title": "Levering",
+      "text": "Rapporten er tilgængelig på rapportsiden straks efter bekræftelse af betalingen og sendes til den oplyste e-mailadresse som vedhæftet fil sammen med et personligt link.\nTekniske krav: en webbrowser med JavaScript aktiveret, en aktiv e-mailadresse og et program til visning af PDF-filer.\nLinket til rapporten er personligt – del det ikke med andre."
+    },
+    "s6": {
+      "title": "Fortrydelsesret",
+      "text": "En forbruger kan fortryde en aftale indgået ved fjernsalg inden for 14 dage uden at angive nogen grund.\nFortrydelsesretten gælder ikke, når leveringen af digitalt indhold er påbegyndt med forbrugerens udtrykkelige forudgående samtykke og dennes anerkendelse af, at fortrydelsesretten dermed bortfalder (artikel 16, litra m), i direktiv 2011/83/EU). Køber giver dette samtykke og denne anerkendelse ved bestillingen og modtager en bekræftelse heraf i e-mailen med rapporten.\nDe samme regler gælder for en fysisk person, der indgår en aftale med direkte tilknytning til sin erhvervsvirksomhed, når aftalen ikke har erhvervsmæssig karakter for vedkommende."
+    },
+    "s7": {
+      "title": "Reklamationer",
+      "text": "Sælger er ansvarlig for, at rapporten er i overensstemmelse med aftalen. Hvis rapporten ikke er leveret, ikke kan læses eller ikke svarer til den betalte beregning, så skriv til {{email}} og oplys ordrenummeret eller den e-mailadresse, der blev brugt ved købet.\nSælger behandler en reklamation inden for 14 dage. Er den berettiget, leverer Sælger en rettet rapport eller, hvis det ikke er muligt, tilbagebetaler prisen.\nForbrugere kan benytte udenretlig tvistbilæggelse, f.eks. et klagenævn for forbrugere eller forbrugermyndigheden i deres land."
+    },
+    "s8": {
+      "title": "Ansvar",
+      "text": "Sælger sørger for, at satser og data er aktuelle og korrekte, men er ikke ansvarlig for beslutninger, der alene træffes på grundlag af beregningerne, eller for afvigelser som følge af myndighedsafgørelser, ændringer i lovgivning og valutakurser efter beregningsdagen, tjenesteudbyderes priser eller forkerte data indtastet af brugeren.\nDette begrænser ikke forbrugerens rettigheder efter ufravigelig lovgivning."
+    },
+    "s9": {
+      "title": "Partnere",
+      "text": "Tjenesten kan vise tilbud fra partnere (f.eks. valutaveksling, køretøjshistorik, importører). Nogle links er affiliate-links – Sælger kan modtage provision, hvilket ikke påvirker beregningerne.\nKontaktoplysninger videregives kun til en partner, når brugeren sender en forespørgselsformular og giver samtykke hertil. Aftaler med partnere indgås direkte med dem."
+    },
+    "s10": {
+      "title": "Personoplysninger",
+      "text": "Hvordan personoplysninger og cookies behandles, er beskrevet i privatlivspolitikken."
+    },
+    "s11": {
+      "title": "Afsluttende bestemmelser",
+      "text": "Handelsbetingelserne er gratis tilgængelige på denne side i en form, der gør det muligt at downloade og udskrive dem.\nÆndringer af handelsbetingelserne berører ikke aftaler, der er indgået, før ændringerne træder i kraft.\nPolsk ret finder anvendelse, uden at forbrugeren derved fratages den beskyttelse, som de ufravigelige regler i lovgivningen i forbrugerens sædvanlige opholdsland giver."
     }
   }
 }

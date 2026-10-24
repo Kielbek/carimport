@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "Valitud riigi maksumäärad puuduvad."
-    }
+    },
+    "rateLimited": "Liiga palju päringuid lühikese aja jooksul – oota hetk ja proovi uuesti."
   },
   "fuel": {
     "DIESEL": "Diisel",
@@ -197,8 +198,9 @@
     "redirecting": "Suunan ümber…",
     "secure": "Turvaline makse Stripe’i kaudu. Me ei salvesta kunagi kaardiandmeid.",
     "subtitle": "Täpsed summad, maksustamise alused ja määrad, dokumendid – sinu nimega PDF-is.",
-    "terms": "Nõustun tingimustega ja palun digitaalse sisu viivitamatut üleandmist, loobudes taganemisõigusest.",
-    "title": "Täielik impordiraport"
+    "terms": "Nõustun tingimustega ja palun sõnaselgelt raporti üleandmist enne 14-päevase taganemistähtaja möödumist. Olen teadlik, et raporti üleandmisega kaotan taganemisõiguse.",
+    "title": "Täielik impordiraport",
+    "termsLink": "Tingimused"
   },
   "report": {
     "amount": "Summa",
@@ -437,7 +439,8 @@
     "language": "Keel",
     "payments": "Maksed Stripe’i kaudu (kaart, BLIK, Przelewy24). Me ei salvesta kunagi kaardiandmeid.",
     "rights": "Kõik õigused kaitstud.",
-    "disclaimer": "Arvutused on informatiivsed ega ole tolliotsus ega maksunõustamine."
+    "disclaimer": "Arvutused on informatiivsed ega ole tolliotsus ega maksunõustamine.",
+    "terms": "Tingimused"
   },
   "cookies": {
     "title": "Küpsised",
@@ -764,6 +767,10 @@
     "about": {
       "title": "Meist – sõltumatu autode impordi kalkulaator | CarImport.eu",
       "description": "Kes me oleme, kust pärinevad meie andmed ja kuidas me raha teenime. CarImport.eu ei müü ega impordi autosid – see arvutab kogu impordikulu ausalt ja sõltumatult."
+    },
+    "terms": {
+      "title": "Tingimused | CarImport.eu",
+      "description": "Autode impordikulude kalkulaatori ja PDF-raporti tingimused: müüja, makse, üleandmine, taganemine ja pretensioonid."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "Sõidukiandmebaas ei vasta praegu. Kasutasime seda, mis on VIN-i enda sisse kodeeritud – täieliku spetsifikatsiooni saamiseks proovi hiljem uuesti.",
       "noCo2": "EPA ei anna selle versiooni CO₂ väärtust – jätame oma hinnangu. Kui sul on CoC väärtus, sisesta see.",
       "noPower": "Selle VIN-i võimsust andmebaasis ei ole – jätame oma hinnangu."
+    }
+  },
+  "terms": {
+    "eyebrow": "Tingimused",
+    "title": "Teenuse kasutamise ja raportite müügi tingimused",
+    "version": "Versioon seisuga {{version}}",
+    "s1": {
+      "title": "Müüja ja kontaktandmed",
+      "text": "Teenust {{site}} haldab {{company}}, {{address}}, KMKR nr {{taxId}}, {{registry}} (edaspidi müüja).\nKontakt kõigis küsimustes, sh pretensioonide esitamiseks: {{email}}. Vastame 14 päeva jooksul."
+    },
+    "s2": {
+      "title": "Mis on teenus",
+      "text": "Teenus on sõltumatu kalkulaator väljastpoolt Euroopa Liitu toodavate autode impordikulude arvutamiseks. Müüja ei müü, osta ega impordi sõidukeid ega tegutse tolliagendina.\nKalkulaator on tasuta ega nõua registreerimist. Tasuline on üksnes punktis 4 kirjeldatud PDF-raport."
+    },
+    "s3": {
+      "title": "Arvutuste olemus",
+      "text": "Arvutused on üksnes informatiivsed. Need põhinevad arvutuse kuupäeval kehtivatel õigusaktidel, määradel ja valuutakurssidel (NBP), kasutaja sisestatud andmetel ning teenuste tavapärastel hindadel.\nArvutus ei ole tolli- ega maksuhalduri otsus, siduv tariifiinformatsioon ega õigus- või maksunõustamine. Lõplikud summad määravad pädevad asutused, vedajad ja muud teenuseosutajad."
+    },
+    "s4": {
+      "title": "Tasuline raport – tellimus ja hind",
+      "text": "Raport on PDF-vormingus digitaalne sisu, mis koostatakse automaatselt valitud arvutuse kohta ja millele on märgitud ostja nimi.\nHind kuvatakse enne ostu valitud valuutas ja see on lõpphind. Makseid töötleb Stripe (kaart, BLIK, Przelewy24 ja muud maksmisel kuvatavad viisid). Müüja ei säilita kaardiandmeid.\nLeping loetakse sõlmituks makse kinnitamise hetkel."
+    },
+    "s5": {
+      "title": "Üleandmine",
+      "text": "Raport on raporti lehel kättesaadav kohe pärast makse kinnitamist ning see saadetakse märgitud e-posti aadressile manusena koos isikliku lingiga.\nTehnilised nõuded: veebibrauser, milles on JavaScript lubatud, toimiv e-posti aadress ja PDF-failide lugemise programm.\nRaporti link on isiklik – ära jaga seda teistega."
+    },
+    "s6": {
+      "title": "Taganemisõigus",
+      "text": "Tarbija võib sidevahendi abil sõlmitud lepingust taganeda 14 päeva jooksul põhjust avaldamata.\nTaganemisõigus ei kehti, kui digitaalse sisu üleandmist on alustatud tarbija sõnaselgel eelneval nõusolekul ja tarbija on kinnitanud, et on teadlik taganemisõiguse kaotamisest (direktiivi 2011/83/EL artikli 16 punkt m). Ostja annab selle nõusoleku ja kinnituse tellimuse esitamisel ning saab nende kohta kinnituse raportiga e-kirjas.\nSamu reegleid kohaldatakse füüsilisele isikule, kes sõlmib otseselt tema majandustegevusega seotud lepingu, kui leping ei ole tema jaoks kutsealase iseloomuga."
+    },
+    "s7": {
+      "title": "Pretensioonid",
+      "text": "Müüja vastutab raporti lepingutingimustele vastavuse eest. Kui raportit ei ole üle antud, seda ei saa lugeda või see ei vasta tasutud arvutusele, kirjuta aadressil {{email}} ja märgi tellimuse number või ostul kasutatud e-posti aadress.\nMüüja lahendab pretensiooni 14 päeva jooksul. Kui pretensioon on põhjendatud, annab müüja üle parandatud raporti või, kui see ei ole võimalik, tagastab hinna.\nTarbija võib kasutada kohtuväliseid vaidluste lahendamise viise, näiteks pöörduda oma riigi tarbijavaidluste lahendamise organi või tarbijakaitseasutuse poole."
+    },
+    "s8": {
+      "title": "Vastutus",
+      "text": "Müüja hoolitseb selle eest, et määrad ja andmed oleksid ajakohased ja õiged, kuid ei vastuta otsuste eest, mis on tehtud üksnes arvutuste põhjal, ega erinevuste eest, mis tulenevad ametiasutuste otsustest, pärast arvutuse kuupäeva toimunud õigusaktide ja valuutakursside muudatustest, teenuseosutajate hindadest või kasutaja sisestatud ebaõigetest andmetest.\nSee ei piira tarbija õigusi, mis tulenevad imperatiivsetest õigusnormidest."
+    },
+    "s9": {
+      "title": "Partnerid",
+      "text": "Teenuses võidakse kuvada partnerite pakkumisi (nt valuutavahetus, sõiduki ajalugu, importijad). Osa linke on partnerlingid – müüja võib saada vahendustasu, mis ei mõjuta arvutusi.\nKontaktandmed edastatakse partnerile üksnes siis, kui kasutaja saadab päringuvormi ja annab selleks nõusoleku. Lepingud partneritega sõlmitakse otse nendega."
+    },
+    "s10": {
+      "title": "Isikuandmed",
+      "text": "Isikuandmete ja küpsiste töötlemist kirjeldatakse privaatsuspoliitikas."
+    },
+    "s11": {
+      "title": "Lõppsätted",
+      "text": "Tingimused on sellel lehel tasuta kättesaadavad kujul, mis võimaldab neid alla laadida ja printida.\nTingimuste muudatused ei mõjuta lepinguid, mis on sõlmitud enne muudatuste jõustumist.\nKohaldatakse Poola õigust, ilma et tarbijalt võetaks kaitse, mis talle on tagatud tema alalise elukoha riigi imperatiivsete õigusnormidega."
     }
   }
 }

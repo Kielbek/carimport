@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "Aucun taux de taxe pour le pays sélectionné."
-    }
+    },
+    "rateLimited": "Trop de requêtes en peu de temps – patientez un instant et réessayez."
   },
   "fuel": {
     "DIESEL": "Diesel",
@@ -197,8 +198,9 @@
     "redirecting": "Redirection…",
     "secure": "Paiement sécurisé par Stripe. Nous ne conservons jamais les données de carte.",
     "subtitle": "Montants exacts, assiettes et taux de taxation, documents – dans un PDF à votre nom.",
-    "terms": "J’accepte les conditions générales et demande la fourniture immédiate du contenu numérique, en renonçant au délai de rétractation.",
-    "title": "Rapport d’importation complet"
+    "terms": "J’accepte les conditions générales et je demande expressément que le rapport me soit fourni avant l’expiration du délai de rétractation de 14 jours. Je reconnais perdre mon droit de rétractation une fois le rapport fourni.",
+    "title": "Rapport d’importation complet",
+    "termsLink": "Conditions générales"
   },
   "report": {
     "amount": "Montant",
@@ -437,7 +439,8 @@
     "language": "Langue",
     "payments": "Paiements via Stripe (carte, BLIK, Przelewy24). Nous ne conservons jamais les données de carte.",
     "rights": "Tous droits réservés.",
-    "disclaimer": "Les calculs sont fournis à titre informatif et ne constituent ni une décision douanière ni un conseil fiscal."
+    "disclaimer": "Les calculs sont fournis à titre informatif et ne constituent ni une décision douanière ni un conseil fiscal.",
+    "terms": "CGV"
   },
   "cookies": {
     "title": "Cookies",
@@ -764,6 +767,10 @@
     "about": {
       "title": "À propos – un calculateur indépendant d’importation automobile | CarImport.eu",
       "description": "Qui nous sommes, d’où viennent nos données et comment nous gagnons de l’argent. CarImport.eu ne vend ni n’importe de voitures – il calcule le coût complet d’importation de manière honnête et indépendante."
+    },
+    "terms": {
+      "title": "Conditions générales | CarImport.eu",
+      "description": "Conditions générales du calculateur de frais d’importation de voitures et du rapport PDF : vendeur, paiement, fourniture, rétractation et réclamations."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "La base de données des véhicules ne répond pas pour le moment. Nous avons utilisé ce que le VIN lui-même encode – réessayez plus tard pour obtenir la fiche technique complète.",
       "noCo2": "Pas de valeur de CO₂ de l’EPA pour cette version – nous gardons notre estimation. Saisissez la valeur du CoC si vous l’avez.",
       "noPower": "La puissance de ce VIN ne figure pas dans la base de données – nous gardons notre estimation."
+    }
+  },
+  "terms": {
+    "eyebrow": "Conditions générales",
+    "title": "Conditions générales d’utilisation et de vente des rapports",
+    "version": "Version du {{version}}",
+    "s1": {
+      "title": "Vendeur et contact",
+      "text": "Le site {{site}} est exploité par {{company}}, {{address}}, numéro de TVA {{taxId}}, {{registry}} (ci-après « le Vendeur »).\nContact pour toute question, y compris les réclamations : {{email}}. Nous répondons dans un délai de 14 jours."
+    },
+    "s2": {
+      "title": "Objet du service",
+      "text": "Le service est un calculateur indépendant des frais d’importation de voitures en provenance de pays situés hors de l’Union européenne. Le Vendeur ne vend, n’achète ni n’importe de véhicules et n’agit pas en qualité de commissionnaire en douane.\nLe calculateur est gratuit et ne nécessite aucune inscription. Seul le rapport PDF décrit à l’article 4 est payant."
+    },
+    "s3": {
+      "title": "Nature des calculs",
+      "text": "Les calculs ont une valeur purement indicative. Ils reposent sur la réglementation, les taux et les taux de change (NBP) en vigueur au jour de l’estimation, sur les données saisies par l’utilisateur et sur les prix habituels des prestations.\nUn calcul ne constitue ni une décision d’une autorité douanière ou fiscale, ni un renseignement tarifaire contraignant, ni un conseil juridique ou fiscal. Les montants définitifs sont fixés par les autorités compétentes, les transporteurs et les autres prestataires."
+    },
+    "s4": {
+      "title": "Rapport payant – commande et prix",
+      "text": "Le rapport est un contenu numérique au format PDF, généré automatiquement pour l’estimation choisie et portant le nom de l’acheteur.\nLe prix est indiqué avant l’achat dans la devise choisie et constitue un prix final. Le paiement est traité par Stripe (carte, BLIK, Przelewy24 et les autres moyens affichés lors du paiement). Le Vendeur ne conserve aucune donnée de carte.\nLe contrat est conclu au moment de la confirmation du paiement."
+    },
+    "s5": {
+      "title": "Fourniture",
+      "text": "Le rapport est disponible sur la page du rapport immédiatement après la confirmation du paiement et est envoyé à l’adresse e-mail indiquée, en pièce jointe accompagnée d’un lien personnel.\nConfiguration technique requise : un navigateur web avec JavaScript activé, une adresse e-mail active et un lecteur de fichiers PDF.\nLe lien vers le rapport est personnel – veuillez ne pas le communiquer à des tiers."
+    },
+    "s6": {
+      "title": "Droit de rétractation",
+      "text": "Le consommateur peut se rétracter d’un contrat conclu à distance dans un délai de 14 jours, sans avoir à motiver sa décision.\nCe droit ne s’applique plus dès lors que la fourniture du contenu numérique a commencé avec l’accord préalable et exprès du consommateur et sa reconnaissance qu’il perd ainsi son droit de rétractation (article 16, point m), de la directive 2011/83/UE). L’acheteur donne cet accord et cette reconnaissance lors de la commande et en reçoit la confirmation dans l’e-mail contenant le rapport.\nLes mêmes règles s’appliquent à une personne physique qui conclut un contrat directement lié à son activité professionnelle lorsque ce contrat ne revêt pas pour elle un caractère professionnel."
+    },
+    "s7": {
+      "title": "Réclamations",
+      "text": "Le Vendeur est responsable de la conformité du rapport au contrat. Si le rapport n’a pas été fourni, est illisible ou ne correspond pas à l’estimation payée, écrivez à {{email}} en indiquant le numéro de commande ou l’adresse e-mail utilisée lors de l’achat.\nLe Vendeur traite la réclamation dans un délai de 14 jours. Si elle est fondée, le Vendeur fournit un rapport corrigé ou, si cela n’est pas possible, rembourse le prix.\nLe consommateur peut recourir à un mode de règlement extrajudiciaire des litiges, par exemple un médiateur de la consommation ou l’autorité de protection des consommateurs de son pays."
+    },
+    "s8": {
+      "title": "Responsabilité",
+      "text": "Le Vendeur veille à ce que les taux et les données soient à jour et exacts, mais n’est pas responsable des décisions prises sur la seule base des calculs, ni des écarts résultant de décisions des autorités, de modifications de la réglementation et des taux de change postérieures au jour de l’estimation, des prix des prestataires ou de données erronées saisies par l’utilisateur.\nLa présente clause ne limite pas les droits que le consommateur tient des dispositions impératives."
+    },
+    "s9": {
+      "title": "Partenaires",
+      "text": "Le service peut présenter des offres de partenaires (par ex. change de devises, historique du véhicule, importateurs). Certains liens sont des liens d’affiliation – le Vendeur peut percevoir une commission, ce qui n’influence pas les calculs.\nLes coordonnées ne sont transmises à un partenaire que lorsque l’utilisateur envoie un formulaire de demande et y consent. Les contrats avec les partenaires sont conclus directement avec ceux-ci."
+    },
+    "s10": {
+      "title": "Données personnelles",
+      "text": "Les modalités de traitement des données personnelles et des cookies sont décrites dans la politique de confidentialité."
+    },
+    "s11": {
+      "title": "Dispositions finales",
+      "text": "Les conditions générales sont accessibles gratuitement sur cette page, sous une forme permettant de les télécharger et de les imprimer.\nLes modifications des conditions générales ne s’appliquent pas aux contrats conclus avant leur entrée en vigueur.\nLe droit polonais est applicable, sans que le consommateur soit privé de la protection que lui assurent les dispositions impératives de la loi du pays de sa résidence habituelle."
     }
   }
 }

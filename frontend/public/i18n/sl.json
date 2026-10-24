@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "Za izbrano državo ni davčnih stopenj."
-    }
+    },
+    "rateLimited": "Preveč zahtev v kratkem času – počakajte trenutek in poskusite znova."
   },
   "fuel": {
     "DIESEL": "Dizel",
@@ -197,8 +198,9 @@
     "redirecting": "Preusmerjanje …",
     "secure": "Varno plačilo prek Stripe. Podatkov o kartici nikoli ne shranjujemo.",
     "subtitle": "Natančni zneski, davčne osnove in stopnje, dokumenti – v PDF-ju z vašim imenom.",
-    "terms": "Sprejemam pogoje in zahtevam takojšnjo dostavo digitalne vsebine, s čimer se odpovedujem pravici do odstopa.",
-    "title": "Celotno poročilo o uvozu"
+    "terms": "Sprejemam splošne pogoje in izrecno zahtevam dobavo poročila pred iztekom 14-dnevnega roka za odstop od pogodbe. Potrjujem, da z dobavo poročila izgubim pravico do odstopa od pogodbe.",
+    "title": "Celotno poročilo o uvozu",
+    "termsLink": "Splošni pogoji"
   },
   "report": {
     "amount": "Znesek",
@@ -437,7 +439,8 @@
     "language": "Jezik",
     "payments": "Plačila prek Stripe (kartica, BLIK, Przelewy24). Podatkov o kartici nikoli ne shranjujemo.",
     "rights": "Vse pravice pridržane.",
-    "disclaimer": "Izračuni so informativni in niso carinska odločba niti davčni nasvet."
+    "disclaimer": "Izračuni so informativni in niso carinska odločba niti davčni nasvet.",
+    "terms": "Pogoji"
   },
   "cookies": {
     "title": "Piškotki",
@@ -764,6 +767,10 @@
     "about": {
       "title": "O nas – neodvisni kalkulator uvoza avtomobilov | CarImport.eu",
       "description": "Kdo smo, od kod so naši podatki in kako zaslužimo. CarImport.eu avtomobilov ne prodaja in ne uvaža – celoten strošek uvoza izračuna pošteno in neodvisno."
+    },
+    "terms": {
+      "title": "Splošni pogoji | CarImport.eu",
+      "description": "Pogoji kalkulatorja stroškov uvoza avtomobilov in poročila PDF: prodajalec, plačilo, dobava, odstop od pogodbe in reklamacije."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "Baza podatkov o vozilih trenutno ne odgovarja. Uporabili smo, kar je zakodirano v samem VIN – za celotno specifikacijo poskusite pozneje.",
       "noCo2": "EPA za to različico ne navaja CO₂ – ohranimo našo oceno. Če imate vrednost iz CoC, jo vnesite.",
       "noPower": "Moči za ta VIN v bazi podatkov ni – ohranimo našo oceno."
+    }
+  },
+  "terms": {
+    "eyebrow": "Splošni pogoji",
+    "title": "Splošni pogoji uporabe storitve in prodaje poročil",
+    "version": "Različica z dne {{version}}",
+    "s1": {
+      "title": "Prodajalec in kontakt",
+      "text": "Storitev {{site}} upravlja {{company}}, {{address}}, ID za DDV {{taxId}}, {{registry}} (v nadaljevanju: prodajalec).\nKontakt za vse zadeve, tudi za reklamacije: {{email}}. Odgovorimo v 14 dneh."
+    },
+    "s2": {
+      "title": "Kaj je storitev",
+      "text": "Storitev je neodvisen kalkulator stroškov uvoza avtomobilov iz držav zunaj Evropske unije. Prodajalec ne prodaja, ne kupuje in ne uvaža vozil ter ne deluje kot carinski zastopnik.\nKalkulator je brezplačen in ne zahteva registracije. Plačljivo je le poročilo PDF, opisano v točki 4."
+    },
+    "s3": {
+      "title": "Narava izračunov",
+      "text": "Izračuni so zgolj informativni. Temeljijo na predpisih, stopnjah in tečajih (NBP), ki veljajo na dan izračuna, na podatkih, ki jih vnese uporabnik, ter na običajnih cenah storitev.\nIzračun ni odločba carinskega ali davčnega organa, zavezujoča tarifna informacija niti pravni ali davčni nasvet. Končne zneske določijo pristojni organi, prevozniki in drugi ponudniki storitev."
+    },
+    "s4": {
+      "title": "Plačljivo poročilo – naročilo in cena",
+      "text": "Poročilo je digitalna vsebina v formatu PDF, ki se samodejno pripravi za izbrani izračun in vsebuje ime kupca.\nCena je prikazana pred nakupom v izbrani valuti in je končna. Plačilo obdela Stripe (kartica, BLIK, Przelewy24 in drugi načini, prikazani ob plačilu). Prodajalec ne hrani podatkov o karticah.\nPogodba je sklenjena v trenutku potrditve plačila."
+    },
+    "s5": {
+      "title": "Dobava",
+      "text": "Poročilo je na voljo na strani poročila takoj po potrditvi plačila in se pošlje na navedeni e-poštni naslov kot priponka skupaj z osebno povezavo.\nTehnične zahteve: spletni brskalnik z omogočenim JavaScriptom, delujoč e-poštni naslov in program za branje datotek PDF.\nPovezava do poročila je osebna – ne delite je z drugimi."
+    },
+    "s6": {
+      "title": "Pravica do odstopa od pogodbe",
+      "text": "Potrošnik lahko v 14 dneh brez navedbe razloga odstopi od pogodbe, sklenjene na daljavo.\nTa pravica ne velja, ko se je dobava digitalne vsebine začela z izrecnim predhodnim soglasjem potrošnika in z njegovo potrditvijo, da s tem izgubi pravico do odstopa od pogodbe (točka (m) člena 16 Direktive 2011/83/EU). Kupec to soglasje in potrditev poda ob naročilu, njuno potrdilo pa prejme v e-poštnem sporočilu s poročilom.\nEnaka pravila veljajo za fizično osebo, ki sklene pogodbo, neposredno povezano z njeno pridobitno dejavnostjo, kadar pogodba zanjo nima poklicne narave."
+    },
+    "s7": {
+      "title": "Reklamacije",
+      "text": "Prodajalec odgovarja za skladnost poročila s pogodbo. Če poročilo ni bilo dobavljeno, ga ni mogoče prebrati ali ne ustreza plačanemu izračunu, pišite na {{email}} in navedite številko naročila ali e-poštni naslov, uporabljen pri nakupu.\nProdajalec reklamacijo obravnava v 14 dneh. Če je utemeljena, prodajalec dobavi popravljeno poročilo ali, če to ni mogoče, vrne kupnino.\nPotrošniki lahko uporabijo izvensodno reševanje sporov, na primer prek izvajalca izvensodnega reševanja potrošniških sporov ali organa za varstvo potrošnikov v svoji državi."
+    },
+    "s8": {
+      "title": "Odgovornost",
+      "text": "Prodajalec skrbi, da so stopnje in podatki ažurni in pravilni, vendar ne odgovarja za odločitve, sprejete izključno na podlagi izračunov, niti za razlike, ki izhajajo iz odločitev organov, sprememb predpisov in tečajev po dnevu izračuna, cen ponudnikov storitev ali napačnih podatkov, ki jih je vnesel uporabnik.\nTo ne omejuje pravic potrošnika, ki izhajajo iz prisilnih predpisov."
+    },
+    "s9": {
+      "title": "Partnerji",
+      "text": "Storitev lahko prikazuje ponudbe partnerjev (npr. menjava valut, zgodovina vozila, uvozniki). Nekatere povezave so partnerske – prodajalec lahko prejme provizijo, kar ne vpliva na izračune.\nKontaktni podatki se partnerju posredujejo le, ko uporabnik pošlje obrazec za povpraševanje in v to privoli. Pogodbe s partnerji se sklenejo neposredno z njimi."
+    },
+    "s10": {
+      "title": "Osebni podatki",
+      "text": "Način obdelave osebnih podatkov in piškotkov je opisan v politiki zasebnosti."
+    },
+    "s11": {
+      "title": "Končne določbe",
+      "text": "Splošni pogoji so na tej strani brezplačno na voljo v obliki, ki omogoča njihov prenos in tiskanje.\nSpremembe splošnih pogojev ne veljajo za pogodbe, sklenjene pred njihovo uveljavitvijo.\nUporablja se poljsko pravo, pri čemer potrošnik ne izgubi varstva, ki mu ga zagotavljajo prisilni predpisi države njegovega običajnega prebivališča."
     }
   }
 }

@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "Não existem taxas de imposto para o país selecionado."
-    }
+    },
+    "rateLimited": "Demasiados pedidos em pouco tempo – aguarde um momento e tente novamente."
   },
   "fuel": {
     "DIESEL": "Gasóleo",
@@ -197,8 +198,9 @@
     "redirecting": "A redirecionar…",
     "secure": "Pagamento seguro através da Stripe. Nunca guardamos os dados do cartão.",
     "subtitle": "Montantes exatos, bases tributáveis e taxas, documentos – num PDF em seu nome.",
-    "terms": "Aceito os termos e solicito o fornecimento imediato do conteúdo digital, renunciando ao direito de livre resolução.",
-    "title": "Relatório completo de importação"
+    "terms": "Aceito os termos e condições e solicito expressamente que o relatório seja fornecido antes do termo do prazo de 14 dias para o exercício do direito de livre resolução. Tomo conhecimento de que, uma vez fornecido o relatório, perco o direito de livre resolução.",
+    "title": "Relatório completo de importação",
+    "termsLink": "Termos e condições"
   },
   "report": {
     "amount": "Montante",
@@ -437,7 +439,8 @@
     "language": "Idioma",
     "payments": "Pagamentos através da Stripe (cartão, BLIK, Przelewy24). Nunca guardamos os dados do cartão.",
     "rights": "Todos os direitos reservados.",
-    "disclaimer": "Os cálculos têm caráter informativo e não constituem uma decisão aduaneira nem aconselhamento fiscal."
+    "disclaimer": "Os cálculos têm caráter informativo e não constituem uma decisão aduaneira nem aconselhamento fiscal.",
+    "terms": "Termos e condições"
   },
   "cookies": {
     "title": "Cookies",
@@ -764,6 +767,10 @@
     "about": {
       "title": "Sobre nós – uma calculadora independente de importação de carros | CarImport.eu",
       "description": "Quem somos, de onde vêm os nossos dados e como ganhamos dinheiro. A CarImport.eu não vende nem importa carros – calcula o custo total de importação de forma honesta e independente."
+    },
+    "terms": {
+      "title": "Termos e condições | CarImport.eu",
+      "description": "Termos e condições da calculadora de custos de importação de carros e do relatório PDF: vendedor, pagamento, fornecimento, livre resolução e reclamações."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "A base de dados de veículos não está a responder neste momento. Usámos o que o próprio VIN codifica – tente mais tarde para obter a especificação completa.",
       "noCo2": "A EPA não indica CO₂ para esta versão – mantemos a nossa estimativa. Se tiver o valor do CoC, introduza-o.",
       "noPower": "A potência deste VIN não consta da base de dados – mantemos a nossa estimativa."
+    }
+  },
+  "terms": {
+    "eyebrow": "Termos e condições",
+    "title": "Termos e condições de utilização do serviço e de venda de relatórios",
+    "version": "Versão de {{version}}",
+    "s1": {
+      "title": "Vendedor e contacto",
+      "text": "O {{site}} é explorado por {{company}}, {{address}}, NIF {{taxId}}, {{registry}} (doravante «Vendedor»).\nContacto para qualquer assunto, incluindo reclamações: {{email}}. Respondemos no prazo de 14 dias."
+    },
+    "s2": {
+      "title": "O que é o serviço",
+      "text": "O serviço é uma calculadora independente dos custos de importação de carros de fora da União Europeia. O Vendedor não vende, não compra nem importa veículos e não atua como despachante aduaneiro.\nA calculadora é gratuita e não exige registo. Apenas o relatório PDF descrito no ponto 4 é pago."
+    },
+    "s3": {
+      "title": "Natureza dos cálculos",
+      "text": "Os cálculos têm caráter meramente informativo. Baseiam-se na legislação, nas taxas e nas taxas de câmbio (NBP) em vigor na data da estimativa, nos dados introduzidos pelo utilizador e nos preços habituais dos serviços.\nUm cálculo não constitui uma decisão de uma autoridade aduaneira ou tributária, uma informação pautal vinculativa nem aconselhamento jurídico ou fiscal. Os montantes definitivos são fixados pelas autoridades competentes, pelos transportadores e pelos demais prestadores de serviços."
+    },
+    "s4": {
+      "title": "Relatório pago – encomenda e preço",
+      "text": "O relatório é um conteúdo digital em formato PDF, elaborado automaticamente para a estimativa escolhida e com o nome do comprador.\nO preço é indicado antes da compra na moeda escolhida e é o preço final. O pagamento é processado pela Stripe (cartão, BLIK, Przelewy24 e os demais meios apresentados no momento do pagamento). O Vendedor não guarda dados de cartões.\nO contrato considera-se celebrado no momento da confirmação do pagamento."
+    },
+    "s5": {
+      "title": "Fornecimento",
+      "text": "O relatório fica disponível na página do relatório imediatamente após a confirmação do pagamento e é enviado para o endereço de e-mail indicado, em anexo e acompanhado de um link pessoal.\nRequisitos técnicos: um navegador web com JavaScript ativado, um endereço de e-mail ativo e um leitor de ficheiros PDF.\nO link para o relatório é pessoal – não o partilhe com terceiros."
+    },
+    "s6": {
+      "title": "Direito de livre resolução",
+      "text": "O consumidor pode resolver um contrato celebrado à distância no prazo de 14 dias, sem necessidade de indicar o motivo.\nEste direito não se aplica uma vez iniciado o fornecimento do conteúdo digital com o consentimento prévio e expresso do consumidor e o reconhecimento de que, desse modo, perde o direito de livre resolução (artigo 16.º, alínea m), da Diretiva 2011/83/UE). O comprador presta este consentimento e reconhecimento ao efetuar a encomenda e recebe a respetiva confirmação no e-mail com o relatório.\nAs mesmas regras aplicam-se à pessoa singular que celebre um contrato diretamente relacionado com a sua atividade empresarial, quando o contrato não tenha para ela natureza profissional."
+    },
+    "s7": {
+      "title": "Reclamações",
+      "text": "O Vendedor é responsável pela conformidade do relatório com o contrato. Se o relatório não tiver sido fornecido, não puder ser lido ou não corresponder à estimativa paga, escreva para {{email}} indicando o número da encomenda ou o endereço de e-mail utilizado na compra.\nO Vendedor trata a reclamação no prazo de 14 dias. Se for procedente, o Vendedor fornece um relatório corrigido ou, se tal não for possível, reembolsa o preço.\nO consumidor pode recorrer a meios de resolução extrajudicial de litígios, por exemplo a uma entidade de resolução alternativa de litígios de consumo ou à autoridade de defesa do consumidor do seu país."
+    },
+    "s8": {
+      "title": "Responsabilidade",
+      "text": "O Vendedor zela por que as taxas e os dados estejam atualizados e corretos, mas não é responsável por decisões tomadas exclusivamente com base nos cálculos nem por diferenças resultantes de decisões das autoridades, de alterações legislativas e cambiais posteriores à data da estimativa, de preços dos prestadores de serviços ou de dados incorretos introduzidos pelo utilizador.\nO disposto não limita os direitos do consumidor decorrentes de normas imperativas."
+    },
+    "s9": {
+      "title": "Parceiros",
+      "text": "O serviço pode apresentar ofertas de parceiros (p. ex., câmbio de moeda, historial do veículo, importadores). Alguns links são links de afiliados – o Vendedor pode receber uma comissão, o que não influencia os cálculos.\nOs dados de contacto só são transmitidos a um parceiro quando o utilizador envia um formulário de pedido de informação e dá o seu consentimento. Os contratos com parceiros são celebrados diretamente com eles."
+    },
+    "s10": {
+      "title": "Dados pessoais",
+      "text": "A forma como os dados pessoais e os cookies são tratados está descrita na política de privacidade."
+    },
+    "s11": {
+      "title": "Disposições finais",
+      "text": "Os termos e condições estão disponíveis gratuitamente nesta página, num formato que permite descarregá-los e imprimi-los.\nAs alterações dos termos e condições não se aplicam aos contratos celebrados antes da sua entrada em vigor.\nÉ aplicável a lei polaca, sem que o consumidor fique privado da proteção que lhe é conferida pelas disposições imperativas da lei do país da sua residência habitual."
     }
   }
 }

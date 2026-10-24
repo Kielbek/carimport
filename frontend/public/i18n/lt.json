@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "Pasirinktai šaliai nėra mokesčių tarifų."
-    }
+    },
+    "rateLimited": "Per daug užklausų per trumpą laiką – palaukite akimirką ir bandykite dar kartą."
   },
   "fuel": {
     "DIESEL": "Dyzelinas",
@@ -197,8 +198,9 @@
     "redirecting": "Nukreipiama…",
     "secure": "Saugus mokėjimas per Stripe. Mes niekada nesaugome kortelės duomenų.",
     "subtitle": "Tikslios sumos, mokesčių bazės ir tarifai, dokumentai – PDF formatu su jūsų vardu.",
-    "terms": "Sutinku su sąlygomis ir prašau skaitmeninį turinį pateikti nedelsiant, atsisakydamas teisės atsisakyti sutarties.",
-    "title": "Išsami importo ataskaita"
+    "terms": "Sutinku su taisyklėmis ir aiškiai prašau pateikti ataskaitą nepasibaigus 14 dienų sutarties atsisakymo laikotarpiui. Suprantu, kad pateikus ataskaitą netenku teisės atsisakyti sutarties.",
+    "title": "Išsami importo ataskaita",
+    "termsLink": "Taisyklės"
   },
   "report": {
     "amount": "Suma",
@@ -437,7 +439,8 @@
     "language": "Kalba",
     "payments": "Mokėjimai per Stripe (kortelė, BLIK, Przelewy24). Mes niekada nesaugome kortelės duomenų.",
     "rights": "Visos teisės saugomos.",
-    "disclaimer": "Skaičiavimai yra informacinio pobūdžio ir nėra nei muitinės sprendimas, nei mokesčių konsultacija."
+    "disclaimer": "Skaičiavimai yra informacinio pobūdžio ir nėra nei muitinės sprendimas, nei mokesčių konsultacija.",
+    "terms": "Taisyklės"
   },
   "cookies": {
     "title": "Slapukai",
@@ -764,6 +767,10 @@
     "about": {
       "title": "Apie mus – nepriklausoma automobilių importo skaičiuoklė | CarImport.eu",
       "description": "Kas mes esame, iš kur gauname duomenis ir kaip uždirbame. CarImport.eu automobilių neparduoda ir neimportuoja – sąžiningai ir nepriklausomai apskaičiuoja visą importo kainą."
+    },
+    "terms": {
+      "title": "Taisyklės | CarImport.eu",
+      "description": "Automobilių importo išlaidų skaičiuoklės ir PDF ataskaitos taisyklės: pardavėjas, mokėjimas, pateikimas, sutarties atsisakymas ir pretenzijos."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "Transporto priemonių duomenų bazė šiuo metu neatsako. Panaudojome tai, kas užkoduota pačiame VIN – visai specifikacijai gauti bandykite vėliau.",
       "noCo2": "EPA nepateikia šios versijos CO₂ vertės – paliekame savo įvertį. Jei turite CoC vertę, įveskite ją.",
       "noPower": "Šio VIN galios duomenų bazėje nėra – paliekame savo įvertį."
+    }
+  },
+  "terms": {
+    "eyebrow": "Taisyklės",
+    "title": "Paslaugos naudojimo ir ataskaitų pardavimo taisyklės",
+    "version": "Redakcija nuo {{version}}",
+    "s1": {
+      "title": "Pardavėjas ir kontaktai",
+      "text": "Svetainę {{site}} administruoja {{company}}, {{address}}, PVM mokėtojo kodas {{taxId}}, {{registry}} (toliau – Pardavėjas).\nKontaktai visais klausimais, taip pat pretenzijoms: {{email}}. Atsakome per 14 dienų."
+    },
+    "s2": {
+      "title": "Kas yra paslauga",
+      "text": "Paslauga – tai nepriklausoma automobilių importo iš ne Europos Sąjungos šalių išlaidų skaičiuoklė. Pardavėjas neparduoda, neperka ir neimportuoja transporto priemonių ir neveikia kaip muitinės tarpininkas.\nSkaičiuoklė yra nemokama ir nereikalauja registracijos. Mokama yra tik 4 punkte aprašyta PDF ataskaita."
+    },
+    "s3": {
+      "title": "Skaičiavimų pobūdis",
+      "text": "Skaičiavimai yra tik informacinio pobūdžio. Jie pagrįsti skaičiavimo dieną galiojančiais teisės aktais, tarifais ir valiutų kursais (NBP), naudotojo įvestais duomenimis ir įprastomis paslaugų kainomis.\nSkaičiavimas nėra muitinės ar mokesčių administratoriaus sprendimas, privaloma tarifinė informacija ar teisinė arba mokestinė konsultacija. Galutines sumas nustato kompetentingos institucijos, vežėjai ir kiti paslaugų teikėjai."
+    },
+    "s4": {
+      "title": "Mokama ataskaita – užsakymas ir kaina",
+      "text": "Ataskaita yra PDF formato skaitmeninis turinys, automatiškai parengiamas pagal pasirinktą skaičiavimą ir pažymėtas pirkėjo vardu ir pavarde.\nKaina nurodoma prieš pirkimą pasirinkta valiuta ir yra galutinė. Mokėjimus tvarko Stripe (kortelė, BLIK, Przelewy24 ir kiti mokėjimo metu rodomi būdai). Pardavėjas nesaugo kortelių duomenų.\nSutartis sudaroma patvirtinus mokėjimą."
+    },
+    "s5": {
+      "title": "Pateikimas",
+      "text": "Ataskaita pasiekiama ataskaitos puslapyje iš karto po mokėjimo patvirtinimo ir siunčiama nurodytu el. pašto adresu kaip priedas kartu su asmenine nuoroda.\nTechniniai reikalavimai: interneto naršyklė su įjungtu JavaScript, veikiantis el. pašto adresas ir PDF failų peržiūros programa.\nNuoroda į ataskaitą yra asmeninė – neperduokite jos kitiems asmenims."
+    },
+    "s6": {
+      "title": "Teisė atsisakyti sutarties",
+      "text": "Vartotojas gali atsisakyti nuotolinės sutarties per 14 dienų nenurodydamas priežasties.\nŠi teisė netaikoma, kai skaitmeninio turinio teikimas pradėtas gavus aiškų išankstinį vartotojo sutikimą ir jo patvirtinimą, kad jis taip netenka teisės atsisakyti sutarties (Direktyvos 2011/83/ES 16 straipsnio m punktas). Pirkėjas šį sutikimą ir patvirtinimą pateikia užsakydamas ir gauna jų patvirtinimą el. laiške su ataskaita.\nTos pačios taisyklės taikomos fiziniam asmeniui, sudarančiam sutartį, tiesiogiai susijusią su jo ūkine veikla, kai sutartis jam nėra profesinio pobūdžio."
+    },
+    "s7": {
+      "title": "Pretenzijos",
+      "text": "Pardavėjas atsako už ataskaitos atitiktį sutarčiai. Jei ataskaita nebuvo pateikta, jos neįmanoma perskaityti arba ji neatitinka apmokėto skaičiavimo, rašykite adresu {{email}} ir nurodykite užsakymo numerį arba pirkimui naudotą el. pašto adresą.\nPardavėjas pretenziją išnagrinėja per 14 dienų. Jei ji pagrįsta, Pardavėjas pateikia pataisytą ataskaitą arba, jei tai neįmanoma, grąžina kainą.\nVartotojai gali pasinaudoti neteisminio ginčų sprendimo būdais, pavyzdžiui, kreiptis į savo šalies vartotojų ginčų sprendimo instituciją ar vartotojų teisių apsaugos instituciją."
+    },
+    "s8": {
+      "title": "Atsakomybė",
+      "text": "Pardavėjas rūpinasi, kad tarifai ir duomenys būtų aktualūs ir teisingi, tačiau neatsako už sprendimus, priimtus vien remiantis skaičiavimais, ir už skirtumus, atsiradusius dėl institucijų sprendimų, teisės aktų ir valiutų kursų pasikeitimų po skaičiavimo dienos, paslaugų teikėjų kainų ar naudotojo įvestų klaidingų duomenų.\nTai neriboja vartotojo teisių, kylančių iš imperatyviųjų teisės normų."
+    },
+    "s9": {
+      "title": "Partneriai",
+      "text": "Paslaugoje gali būti pateikiami partnerių pasiūlymai (pvz., valiutos keitimas, transporto priemonės istorija, importuotojai). Dalis nuorodų yra partnerių nuorodos – Pardavėjas gali gauti komisinį mokestį, kuris neturi įtakos skaičiavimams.\nKontaktiniai duomenys partneriui perduodami tik tada, kai naudotojas išsiunčia užklausos formą ir su tuo sutinka. Sutartys su partneriais sudaromos tiesiogiai su jais."
+    },
+    "s10": {
+      "title": "Asmens duomenys",
+      "text": "Asmens duomenų ir slapukų tvarkymas aprašytas privatumo politikoje."
+    },
+    "s11": {
+      "title": "Baigiamosios nuostatos",
+      "text": "Taisyklės nemokamai pateikiamos šiame puslapyje tokia forma, kuri leidžia jas atsisiųsti ir atsispausdinti.\nTaisyklių pakeitimai netaikomi sutartims, sudarytoms iki jų įsigaliojimo.\nTaikoma Lenkijos teisė, tačiau vartotojas nepraranda apsaugos, kurią jam suteikia jo įprastinės gyvenamosios vietos valstybės imperatyviosios teisės normos."
     }
   }
 }

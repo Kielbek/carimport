@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "Za odabranu državu nema poreznih stopa."
-    }
+    },
+    "rateLimited": "Previše zahtjeva u kratkom vremenu – pričekajte trenutak i pokušajte ponovno."
   },
   "fuel": {
     "DIESEL": "Dizel",
@@ -197,8 +198,9 @@
     "redirecting": "Preusmjeravanje…",
     "secure": "Sigurno plaćanje putem Stripea. Podatke o kartici nikada ne pohranjujemo.",
     "subtitle": "Točni iznosi, porezne osnovice i stope, dokumenti – u PDF-u s vašim imenom.",
-    "terms": "Prihvaćam uvjete i tražim trenutnu isporuku digitalnog sadržaja, čime se odričem prava na jednostrani raskid.",
-    "title": "Cjelovito izvješće o uvozu"
+    "terms": "Prihvaćam opće uvjete i izričito zahtijevam isporuku izvješća prije isteka 14-dnevnog roka za jednostrani raskid ugovora. Potvrđujem da isporukom izvješća gubim pravo na jednostrani raskid ugovora.",
+    "title": "Cjelovito izvješće o uvozu",
+    "termsLink": "Opći uvjeti"
   },
   "report": {
     "amount": "Iznos",
@@ -437,7 +439,8 @@
     "language": "Jezik",
     "payments": "Plaćanja putem Stripea (kartica, BLIK, Przelewy24). Podatke o kartici nikada ne pohranjujemo.",
     "rights": "Sva prava pridržana.",
-    "disclaimer": "Izračuni su informativni i nisu carinsko rješenje niti porezni savjet."
+    "disclaimer": "Izračuni su informativni i nisu carinsko rješenje niti porezni savjet.",
+    "terms": "Uvjeti"
   },
   "cookies": {
     "title": "Kolačići",
@@ -764,6 +767,10 @@
     "about": {
       "title": "O nama – neovisni kalkulator uvoza automobila | CarImport.eu",
       "description": "Tko smo, odakle dolaze naši podaci i kako zarađujemo. CarImport.eu ne prodaje niti uvozi automobile – ukupni trošak uvoza izračunava pošteno i neovisno."
+    },
+    "terms": {
+      "title": "Opći uvjeti | CarImport.eu",
+      "description": "Uvjeti kalkulatora troškova uvoza automobila i PDF izvješća: prodavatelj, plaćanje, isporuka, jednostrani raskid i prigovori."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "Baza podataka o vozilima trenutačno ne odgovara. Upotrijebili smo ono što je kodirano u samom VIN-u – pokušajte kasnije za potpunu specifikaciju.",
       "noCo2": "EPA ne navodi CO₂ za ovu verziju – zadržavamo našu procjenu. Ako imate vrijednost iz CoC-a, unesite je.",
       "noPower": "Snaga za ovaj VIN nije u bazi podataka – zadržavamo našu procjenu."
+    }
+  },
+  "terms": {
+    "eyebrow": "Opći uvjeti",
+    "title": "Opći uvjeti korištenja usluge i prodaje izvješća",
+    "version": "Verzija od {{version}}",
+    "s1": {
+      "title": "Prodavatelj i kontakt",
+      "text": "Uslugu {{site}} pruža {{company}}, {{address}}, PDV ID broj {{taxId}}, {{registry}} (u daljnjem tekstu: Prodavatelj).\nKontakt za sva pitanja, uključujući prigovore: {{email}}. Odgovaramo u roku od 14 dana."
+    },
+    "s2": {
+      "title": "Što je usluga",
+      "text": "Usluga je neovisni kalkulator troškova uvoza automobila iz zemalja izvan Europske unije. Prodavatelj ne prodaje, ne kupuje i ne uvozi vozila te ne djeluje kao carinski zastupnik.\nKalkulator je besplatan i ne zahtijeva registraciju. Plaća se isključivo PDF izvješće opisano u točki 4."
+    },
+    "s3": {
+      "title": "Priroda izračuna",
+      "text": "Izračuni su isključivo informativni. Temelje se na propisima, stopama i tečajevima (NBP) koji vrijede na dan izračuna, na podacima koje je unio korisnik te na uobičajenim cijenama usluga.\nIzračun nije rješenje carinskog ili poreznog tijela, obvezujuća tarifna informacija niti pravni ili porezni savjet. Konačne iznose utvrđuju nadležna tijela, prijevoznici i drugi pružatelji usluga."
+    },
+    "s4": {
+      "title": "Plaćeno izvješće – narudžba i cijena",
+      "text": "Izvješće je digitalni sadržaj u PDF formatu koji se automatski izrađuje za odabrani izračun i na kojem je navedeno ime kupca.\nCijena je prikazana prije kupnje u odabranoj valuti i konačna je. Plaćanje obrađuje Stripe (kartica, BLIK, Przelewy24 i drugi načini prikazani pri plaćanju). Prodavatelj ne pohranjuje podatke o karticama.\nUgovor je sklopljen u trenutku potvrde plaćanja."
+    },
+    "s5": {
+      "title": "Isporuka",
+      "text": "Izvješće je dostupno na stranici izvješća odmah nakon potvrde plaćanja i šalje se na navedenu adresu e-pošte kao privitak zajedno s osobnom poveznicom.\nTehnički zahtjevi: web-preglednik s uključenim JavaScriptom, aktivna adresa e-pošte i program za čitanje PDF datoteka.\nPoveznica na izvješće je osobna – nemojte je dijeliti s drugima."
+    },
+    "s6": {
+      "title": "Pravo na jednostrani raskid ugovora",
+      "text": "Potrošač može jednostrano raskinuti ugovor sklopljen na daljinu u roku od 14 dana bez navođenja razloga.\nTo pravo ne postoji nakon što je isporuka digitalnog sadržaja započela uz izričitu prethodnu suglasnost potrošača i njegovu potvrdu da time gubi pravo na jednostrani raskid ugovora (članak 16. točka (m) Direktive 2011/83/EU). Kupac daje tu suglasnost i potvrdu pri narudžbi te njihovu potvrdu prima u e-poruci s izvješćem.\nIsta pravila primjenjuju se na fizičku osobu koja sklapa ugovor izravno povezan s njezinom poslovnom djelatnošću kada ugovor za nju nema profesionalni karakter."
+    },
+    "s7": {
+      "title": "Prigovori",
+      "text": "Prodavatelj odgovara za usklađenost izvješća s ugovorom. Ako izvješće nije isporučeno, ne može se pročitati ili ne odgovara plaćenom izračunu, pišite na {{email}} i navedite broj narudžbe ili adresu e-pošte korištenu pri kupnji.\nProdavatelj rješava prigovor u roku od 14 dana. Ako je opravdan, Prodavatelj isporučuje ispravljeno izvješće ili, ako to nije moguće, vraća cijenu.\nPotrošači se mogu koristiti izvansudskim rješavanjem sporova, primjerice putem tijela za alternativno rješavanje potrošačkih sporova ili tijela za zaštitu potrošača u svojoj zemlji."
+    },
+    "s8": {
+      "title": "Odgovornost",
+      "text": "Prodavatelj se brine da stope i podaci budu ažurni i točni, ali ne odgovara za odluke donesene isključivo na temelju izračuna niti za razlike nastale zbog odluka tijela, izmjena propisa i tečajeva nakon dana izračuna, cijena pružatelja usluga ili netočnih podataka koje je unio korisnik.\nTime se ne ograničavaju prava potrošača na temelju prisilnih propisa."
+    },
+    "s9": {
+      "title": "Partneri",
+      "text": "Usluga može prikazivati ponude partnera (npr. mjenjačnica, povijest vozila, uvoznici). Neke su poveznice partnerske – Prodavatelj može primiti proviziju, što ne utječe na izračune.\nKontaktni podaci prosljeđuju se partneru samo kada korisnik pošalje obrazac upita i na to pristane. Ugovori s partnerima sklapaju se izravno s njima."
+    },
+    "s10": {
+      "title": "Osobni podaci",
+      "text": "Način obrade osobnih podataka i kolačića opisan je u politici privatnosti."
+    },
+    "s11": {
+      "title": "Završne odredbe",
+      "text": "Opći uvjeti besplatno su dostupni na ovoj stranici u obliku koji omogućuje njihovo preuzimanje i ispis.\nIzmjene općih uvjeta ne primjenjuju se na ugovore sklopljene prije njihova stupanja na snagu.\nPrimjenjuje se poljsko pravo, pri čemu potrošač ne gubi zaštitu koju mu pružaju prisilni propisi države u kojoj ima uobičajeno boravište."
     }
   }
 }
