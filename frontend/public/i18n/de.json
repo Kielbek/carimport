@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Verbrauchsteuer",
     "FORKLIFT_LOADING": "Verladung per Gabelstapler",
     "IMPORT_VAT": "Einfuhrumsatzsteuer",
-    "INDIVIDUAL_APPROVAL": "Einzelabnahme (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Einzelabnahme / Importprüfung",
     "INLAND_TRANSPORT": "Landtransport zum Hafen",
     "INTRA_EU_ACQUISITION_VAT": "Erwerbsteuer (Reverse Charge, abziehbar)",
     "INTRA_EU_TRANSPORT": "Autotransport vom Hafen ins Zielland",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transportschaden – Selbstbeteiligung",
     "RISK_HIDDEN_DAMAGE": "Versteckte Mängel, die auf der Auktion nicht sichtbar waren",
     "RISK_TITLE_DELAY": "Verzögerung des Title (zusätzliche Lagerung)",
-    "RISK_EXPORT_DOCS_DELAY": "Verzögerung der Exportdokumente"
+    "RISK_EXPORT_DOCS_DELAY": "Verzögerung der Exportdokumente",
+    "REGISTRATION_TAX": "Zulassungssteuer",
+    "COC_CERTIFICATE": "Herstellerdatenblatt / CoC"
   },
   "doc": {
     "billOfLading": "Konnossement (Bill of Lading)",
@@ -255,7 +257,18 @@
     "reportItem4": "Zulassungsgebühren und Leistungen nach Import",
     "reportItem5": "Risiken mit Beträgen: optimistisch, durchschnittlich, pessimistisch",
     "reportItem6": "Schritt-für-Schritt-Plan mit Fristen und Dokumentenliste",
-    "cheapestPort": "günstigster Hafen"
+    "cheapestPort": "günstigster Hafen",
+    "lockedEyebrow": "Vollständiger Bericht",
+    "lockedTitle": "Volle Kosten bis vor die Haustür",
+    "lockedLead": "Optimistisches, mittleres und pessimistisches Szenario plus {{count}} weitere Positionen: Transport, Lieferung, Zulassung und versteckte Kosten.",
+    "unlockNote": "PDF sofort · sichere Zahlung",
+    "freeTitle": "Zoll, Einfuhrumsatzsteuer und Steuern – kostenlos",
+    "freeLead": "Verzollung in {{port}}. Die Beträge, die Sie auf Papier ausrechnen könnten.",
+    "freeBadge": "Kostenlos",
+    "freeBase": "Berechnet auf den Zollwert (Preis, Auktionsgebühren, Transport in die EU und Versicherung) zum heutigen Kurs.",
+    "lockedListTitle": "Ebenfalls berechnet – im Bericht",
+    "riskTag": "Risiko",
+    "moreLocked": "+ {{count}} weitere Positionen, inkl. versteckter Kosten"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exklusiver Container",
@@ -377,7 +390,15 @@
     "distanceRouted": "Straßenroute von {{port}} zu Ihrer Adresse.",
     "distanceEstimated": "Schätzung von {{port}} zu Ihrer Adresse (Luftlinie × 1,25).",
     "distanceTypical": "Typische Entfernung ab {{port}} – Adresse oben eingeben für einen genauen Wert.",
-    "tariffShort": "Markt: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} Verladung, min. {{minimum}} {{cur}}."
+    "tariffShort": "Markt: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} Verladung, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Aus dem CoC oder dem Fensteraufkleber. Die meisten Zulassungssteuern in der EU richten sich danach.",
+    "powerKw": "Motorleistung",
+    "powerKwHint": "In kW (1 PS ≈ 0,74 kW). Relevant in Belgien, Italien und Frankreich.",
+    "specTitle": "Wonach sich die Steuern richten",
+    "specLead": "Vorgeschlagen nach Typ und Motor. Genaue Werte (aus der VIN oder dem CoC) machen die Zulassungssteuer deutlich genauer.",
+    "mass": "Leergewicht",
+    "massHint": "In kg. Relevant in Frankreich (Gewichtsmalus) und Estland."
   },
   "layout": {
     "topbar": "Unabhängiger Rechner für Importkosten von Autos aus den USA, Kanada, Japan, den VAE und UK in 27 EU-Länder",
@@ -891,7 +912,18 @@
     "SERVICE_INSPECTION": "Öl, Filter, Flüssigkeiten, Bremsen nach langem Transport",
     "GEOMETRY_ALIGNMENT": "Empfohlen nach Fahrwerksreparatur",
     "DETAILING": "Wäsche, Innenreinigung, Lackkorrektur",
-    "EXPERT_VALUATION": "Nützlich für Vollkasko und Verkauf"
+    "EXPERT_VALUATION": "Nützlich für Vollkasko und Verkauf",
+    "INDIVIDUAL_APPROVAL": "Ein Auto für einen Markt außerhalb der EU hat keine EU-Typgenehmigung – eine anerkannte Prüfstelle prüft es nach EU-Vorschriften ({{inspection}}).",
+    "REGISTRATION_FEE": "Amtliche Gebühren – {{authority}}: Zulassungsbescheinigung und Kennzeichen.",
+    "RDW_INSPECTION": "Die RDW prüft das importierte Auto und seine Identität, bevor es ein niederländisches Kennzeichen erhält.",
+    "TECHNICAL_INSPECTION_IMPORT": "Erweiterte technische Prüfung eines aus dem Ausland eingeführten Autos bei einer Prüfstelle.",
+    "REG_TEMPORARY_PERMIT": "Vorläufige Zulassung für die Zeit, bis die Zulassungsbescheinigung fertig ist.",
+    "REG_TEMPORARY_PLATES": "Vorläufige Kennzeichen, die mit der vorläufigen Zulassung ausgegeben werden.",
+    "REG_CERTIFICATE": "Die Zulassungsbescheinigung selbst.",
+    "REG_PLATES": "Dauerhafte Kennzeichenschilder.",
+    "REG_STICKER": "Prüfplakette an der Windschutzscheibe.",
+    "RECYCLING_FEE": "Einmalige Gebühr für ein Auto, das jemand ohne eigenes Rücknahmesystem einführt.",
+    "COC_CERTIFICATE": "Für Genehmigung und Zulassung nötig, wenn das Auto keine EU-Übereinstimmungsbescheinigung hat."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Das Terminal berechnet jeden Tag nach der freien Zeit, z. B. bei verspäteten Papieren.",
@@ -1277,6 +1309,69 @@
       "customs": "Zoll & Steuern",
       "registration": "Zulassung",
       "logistics": "Versand & Häfen"
+    }
+  },
+  "portCost": {
+    "taxesAndFees": "Steuern & Hafengebühren",
+    "extra": "+{{amount}} {{cur}} von Tür zu Tür",
+    "cheapestDoor": "am günstigsten von Tür zu Tür",
+    "rankingNote": "Sortiert nach den vollen Kosten von Tür zu Tür (Steuern, Fracht, Hafen, Lieferung an Ihre Adresse). Pro Hafen sehen Sie Steuern und Gebühren; die volle Aufschlüsselung steht im Bericht.",
+    "title": "Verzollung in {{port}}: Steuern und Gebühren",
+    "dutyWhere": "In jedem EU-Hafen gleich – 10 % des Zollwerts (CIF)",
+    "vatWhere": "Zahlbar im Land des Hafens: {{country}}",
+    "nationalWhere": "Zahlbar im Zulassungsland ({{country}}) – egal welcher Hafen",
+    "notPriced": "Lokale Zulassungssteuer – Land: {{country}}; abhängig von CO₂ oder Preis, nicht enthalten",
+    "portFees": "Hafengebühren",
+    "portFeesWhat": "Terminal, Entladung und Zollagent",
+    "total": "Steuern und Gebühren",
+    "howTitle": "So rechnen wir",
+    "how1": "Zollwert (CIF) = Preis + Auktionsgebühren + Transport bis zum EU-Hafen + Versicherung.",
+    "how2": "Zoll: 10 % des Zollwerts (Pickups 22 %, Motorräder 6–8 %) – in jedem EU-Hafen gleich.",
+    "how3": "Die Einfuhrumsatzsteuer zahlen Sie im Land des Hafens zu dessen Satz auf Zollwert + Zoll + Transport bis zu Ihrer Adresse. Ein Gebrauchtwagen, der außerhalb von {{country}} verzollt wird, zahlt zu Hause keine Umsatzsteuer mehr.",
+    "how4": "Nationale Steuern des Zulassungslandes zahlen Sie zu Hause – unabhängig vom Hafen.",
+    "how5": "Das Ranking addiert Fracht, Hafengebühren und Lieferung pro km zu Ihrer Adresse – die günstigste Summe steht oben.",
+    "bestLabel": "Günstigster Hafen:",
+    "bestSelected": "gewählt",
+    "bestChoose": "Wählen – {{amount}} {{cur}} sparen"
+  },
+  "after": {
+    "mustTitle": "Was Sie tun müssen – {{country}}",
+    "noRegTaxName": "Zulassungssteuer",
+    "tax": {
+      "EXCISE": "Verbrauchsteuer von {{rate}} % auf den Zollwert zuzüglich Zoll. Reichen Sie die Erklärung AKC-U/S ein und zahlen Sie beim Finanzamt innerhalb von 14 Tagen nach der Verbringung des Autos – vor der Zulassung.",
+      "NONE": "Das Zulassungsland ({{country}}) erhebt bei der Zulassung keine einmalige Steuer – nur die amtlichen Gebühren unten.",
+      "ESTIMATED": "Wir schätzen sie anhand von CO₂ ({{co2}} g/km), Leistung ({{kw}} kW), Alter und Wert des Autos nach dem diesjährigen Tarif. Maßgeblich ist das Finanzamt – kennen Sie dessen Betrag, tragen Sie ihn ein.",
+      "OFFICIAL": "Diese Steuer hängt von zu vielen Details ab, um sie seriös zu schätzen. Berechnen Sie sie im offiziellen Rechner und tragen Sie den Betrag ein – wir rechnen ihn mit ein."
+    },
+    "taxAmount": "Zulassungssteuer",
+    "taxOwnHint": "Übernehmen Sie unsere Schätzung oder tragen Sie den Betrag vom Finanzamt ein.",
+    "taxTypeHint": "Betrag aus dem offiziellen Rechner. Leer = nicht berücksichtigt.",
+    "officialCalculator": "Offizieller Rechner",
+    "amountInReport": "Betrag im Bericht",
+    "registerTitle": "Auto zulassen – {{authority}}",
+    "registerText": "Mit der Prüfung ({{inspection}}), dem Steuernachweis, den Zollpapieren und dem Eigentumsnachweis (Title).",
+    "deadline": "Frist: {{days}} Tage.",
+    "canTitle": "Was Sie tun können",
+    "canLead": "Gesetzlich nicht vorgeschrieben, aber fast jeder Import braucht etwas davon. Empfohlene Posten sind angehakt – entfernen Sie den Haken bei allem, was Sie selbst erledigen."
+  },
+  "vin": {
+    "label": "VIN zur Hand? Wir füllen die Daten aus",
+    "placeholder": "17 Zeichen, z. B. 1FA6P8CF7K5100001",
+    "fill": "Aus VIN ausfüllen",
+    "hint": "Aus dem Title, von der Windschutzscheibe oder aus dem Auktionsinserat. Autos aus Japan haben statt einer VIN eine Fahrgestellnummer – geben Sie deren Daten von Hand ein.",
+    "filled": "Aus der US-Fahrzeugdatenbank (NHTSA) und von der EPA ausgefüllt. Prüfen Sie die Felder unten – Sie können jedes davon noch ändern.",
+    "filledOffline": "Wir haben nur ausgelesen, was in der VIN selbst kodiert ist. Der Rest bleibt unser Vorschlag – korrigieren Sie ihn, wenn Sie die Daten kennen.",
+    "clear": "VIN entfernen",
+    "co2Epa": "EPA, umgerechnet in g/km",
+    "massGvwr": "geschätzt aus der Gewichtsklasse",
+    "madeIn": "Hergestellt in",
+    "invalid": "Eine VIN hat 17 Buchstaben und Ziffern (nie I, O oder Q). Prüfen Sie, ob ein Zeichen fehlt oder zu viel ist.",
+    "w": {
+      "checkDigit": "Die Prüfziffer stimmt nicht – vermutlich ein Tippfehler. Vergleichen Sie die VIN mit dem Title.",
+      "notFound": "Die Fahrzeugdatenbank kennt diese VIN nicht (häufig bei Autos, die außerhalb Nordamerikas gebaut wurden). Wir haben verwendet, was in der VIN selbst kodiert ist.",
+      "offline": "Die Fahrzeugdatenbank antwortet gerade nicht. Wir haben verwendet, was in der VIN selbst kodiert ist – versuchen Sie es später erneut, um die vollständigen Daten zu erhalten.",
+      "noCo2": "Kein CO₂-Wert der EPA für diese Version – wir behalten unsere Schätzung. Tragen Sie den Wert aus dem CoC ein, falls vorhanden.",
+      "noPower": "Die Leistung ist für diese VIN nicht in der Datenbank – wir behalten unsere Schätzung."
     }
   }
 }

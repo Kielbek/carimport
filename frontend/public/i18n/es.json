@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Impuesto especial",
     "FORKLIFT_LOADING": "Carga con carretilla elevadora",
     "IMPORT_VAT": "IVA de importación",
-    "INDIVIDUAL_APPROVAL": "Homologación individual (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Homologación individual / inspección de importación",
     "INLAND_TRANSPORT": "Transporte terrestre hasta el puerto",
     "INTRA_EU_ACQUISITION_VAT": "IVA de adquisición intracomunitaria (inversión del sujeto pasivo, deducible)",
     "INTRA_EU_TRANSPORT": "Camión portavehículos del puerto al destino",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Daños en tránsito – franquicia del seguro",
     "RISK_HIDDEN_DAMAGE": "Daños ocultos no visibles en la subasta",
     "RISK_TITLE_DELAY": "Retraso del título (almacenaje adicional)",
-    "RISK_EXPORT_DOCS_DELAY": "Retraso de los documentos de exportación"
+    "RISK_EXPORT_DOCS_DELAY": "Retraso de los documentos de exportación",
+    "REGISTRATION_TAX": "Impuesto de matriculación",
+    "COC_CERTIFICATE": "Ficha técnica del fabricante / CoC"
   },
   "doc": {
     "billOfLading": "Conocimiento de embarque (Bill of Lading)",
@@ -255,7 +257,18 @@
     "reportItem4": "Tasas de matriculación y servicios tras la importación",
     "reportItem5": "Riesgos con importes: optimista, medio, pesimista",
     "reportItem6": "Plan paso a paso con plazos y lista de documentos",
-    "cheapestPort": "puerto más barato"
+    "cheapestPort": "puerto más barato",
+    "lockedEyebrow": "Informe completo",
+    "lockedTitle": "Coste total hasta tu puerta",
+    "lockedLead": "Escenario optimista, medio y pesimista y {{count}} partidas más: transporte, entrega, matriculación y costes ocultos.",
+    "unlockNote": "PDF al instante · pago seguro",
+    "freeTitle": "Aranceles, IVA e impuestos – gratis",
+    "freeLead": "Despacho en {{port}}. Los importes que podrías calcular en papel.",
+    "freeBadge": "Gratis",
+    "freeBase": "Calculado sobre el valor en aduana (precio, tasas de subasta, transporte a la UE y seguro) al tipo de cambio de hoy.",
+    "lockedListTitle": "También calculado – en el informe",
+    "riskTag": "riesgo",
+    "moreLocked": "+ {{count}} partidas más, incl. costes ocultos"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Contenedor exclusivo",
@@ -377,7 +390,15 @@
     "distanceRouted": "Ruta por carretera de {{port}} a tu dirección.",
     "distanceEstimated": "Estimación de {{port}} a tu dirección (línea recta × 1,25).",
     "distanceTypical": "Distancia típica desde {{port}} – introduce la dirección arriba para obtener una cifra exacta.",
-    "tariffShort": "Mercado: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} de carga, mín. {{minimum}} {{cur}}."
+    "tariffShort": "Mercado: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} de carga, mín. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Del CoC o de la etiqueta de la ventanilla. La mayoría de los impuestos de matriculación de la UE se basan en ellas.",
+    "powerKw": "Potencia del motor",
+    "powerKwHint": "En kW (1 CV ≈ 0,74 kW). Se usa en Bélgica, Italia y Francia.",
+    "specTitle": "De qué dependen los impuestos",
+    "specLead": "Propuesto según el tipo y el motor. Los datos exactos (del VIN o del CoC) hacen mucho más preciso el impuesto de matriculación.",
+    "mass": "Peso en vacío",
+    "massHint": "En kg. Cuenta en Francia (malus por peso) y en Estonia."
   },
   "layout": {
     "topbar": "Calculadora independiente de costes de importación de coches de EE. UU., Canadá, Japón, EAU y Reino Unido a los 27 países de la UE",
@@ -891,7 +912,18 @@
     "SERVICE_INSPECTION": "Aceite, filtros, fluidos y frenos tras un largo viaje",
     "GEOMETRY_ALIGNMENT": "Recomendado tras reparaciones de la suspensión",
     "DETAILING": "Lavado, limpieza interior, corrección de pintura",
-    "EXPERT_VALUATION": "Útil para el seguro a todo riesgo y la reventa"
+    "EXPERT_VALUATION": "Útil para el seguro a todo riesgo y la reventa",
+    "INDIVIDUAL_APPROVAL": "Un coche fabricado para un mercado fuera de la UE no tiene homologación de tipo europea – una estación autorizada lo revisa según las normas de la UE ({{inspection}}).",
+    "REGISTRATION_FEE": "Tasas oficiales – {{authority}}: permiso de circulación y placas de matrícula.",
+    "RDW_INSPECTION": "La RDW revisa el coche importado y su identidad antes de asignarle una matrícula neerlandesa.",
+    "TECHNICAL_INSPECTION_IMPORT": "Inspección técnica ampliada de un coche traído del extranjero, en una estación de inspección.",
+    "REG_TEMPORARY_PERMIT": "Permiso provisional hasta que esté listo el permiso de circulación.",
+    "REG_TEMPORARY_PLATES": "Placas provisionales que se entregan con el permiso provisional.",
+    "REG_CERTIFICATE": "El permiso de circulación en sí.",
+    "REG_PLATES": "Placas de matrícula definitivas.",
+    "REG_STICKER": "Adhesivo de control en el parabrisas.",
+    "RECYCLING_FEE": "Tasa única por un coche importado por alguien sin red de reciclaje.",
+    "COC_CERTIFICATE": "Necesaria para la homologación y la matriculación si el coche no tiene certificado de conformidad europeo."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "La terminal cobra por día tras el periodo gratuito, p. ej. cuando los documentos o el transporte se retrasan.",
@@ -1277,6 +1309,69 @@
       "customs": "Aduana e impuestos",
       "registration": "Matriculación",
       "logistics": "Transporte y puertos"
+    }
+  },
+  "portCost": {
+    "taxesAndFees": "Impuestos y tasas portuarias",
+    "extra": "+{{amount}} {{cur}} puerta a puerta",
+    "cheapestDoor": "el más barato puerta a puerta",
+    "rankingNote": "Ordenado por el coste total puerta a puerta (impuestos, flete, puerto, entrega en tu dirección). Cada puerto muestra sus impuestos y tasas portuarias; el desglose completo está en el informe.",
+    "title": "Despacho en {{port}}: impuestos y tasas",
+    "dutyWhere": "Igual en todos los puertos de la UE: 10 % del valor en aduana (CIF)",
+    "vatWhere": "Se paga en el país del puerto: {{country}}",
+    "nationalWhere": "Se paga en el país de matriculación ({{country}}), sea cual sea el puerto",
+    "notPriced": "Impuesto de matriculación local – país: {{country}}; depende del CO₂ o del precio, no incluido",
+    "portFees": "Tasas portuarias",
+    "portFeesWhat": "Manipulación en terminal, descarga y agente de aduanas",
+    "total": "Impuestos y tasas",
+    "howTitle": "Cómo lo calculamos",
+    "how1": "Valor en aduana (CIF) = precio + tasas de subasta + transporte hasta el puerto de la UE + seguro.",
+    "how2": "Arancel aduanero: 10 % del valor en aduana (pickups 22 %, motocicletas 6–8 %), idéntico en todos los puertos de la UE.",
+    "how3": "El IVA de importación se paga en el país del puerto, a su tipo, sobre valor en aduana + arancel + transporte hasta tu dirección. Un coche usado despachado fuera del país {{country}} no vuelve a pagar IVA en casa.",
+    "how4": "Los impuestos nacionales del país de matriculación (p. ej. el impuesto especial polaco) se pagan en casa, sea cual sea el puerto.",
+    "how5": "La clasificación suma flete, tasas portuarias y entrega por km hasta tu dirección: el total más barato aparece primero.",
+    "bestLabel": "Puerto más rentable:",
+    "bestSelected": "seleccionado",
+    "bestChoose": "Elegir – ahorra {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Qué tienes que hacer – {{country}}",
+    "noRegTaxName": "Impuesto de matriculación",
+    "tax": {
+      "EXCISE": "Impuesto especial del {{rate}} % sobre el valor en aduana más el arancel. Presenta la declaración AKC-U/S y paga en la oficina tributaria en un plazo de 14 días desde la entrada del coche – antes de matricularlo.",
+      "NONE": "País de matriculación ({{country}}): no hay impuesto único al matricular – solo las tasas oficiales de abajo.",
+      "ESTIMATED": "Lo estimamos a partir del CO₂ ({{co2}} g/km), la potencia ({{kw}} kW), la antigüedad y el valor del coche, con la tabla de este año. La última palabra la tiene Hacienda – si conoces su importe, introdúcelo.",
+      "OFFICIAL": "Este impuesto depende de demasiados detalles para estimarlo con rigor. Calcúlalo en la calculadora oficial e introduce el importe – lo sumaremos al cálculo."
+    },
+    "taxAmount": "Impuesto de matriculación",
+    "taxOwnHint": "Deja nuestra estimación o introduce el importe de Hacienda.",
+    "taxTypeHint": "Importe de la calculadora oficial. Vacío = no incluido.",
+    "officialCalculator": "Calculadora oficial",
+    "amountInReport": "importe en el informe",
+    "registerTitle": "Matricula el coche – {{authority}}",
+    "registerText": "Con la inspección ({{inspection}}), el justificante de pago del impuesto, los documentos de aduana y el título de propiedad (title).",
+    "deadline": "Plazo: {{days}} días.",
+    "canTitle": "Qué puedes hacer",
+    "canLead": "No lo exige la ley, pero casi toda importación necesita algo de esto. Los conceptos recomendados están marcados – desmarca lo que hagas tú mismo."
+  },
+  "vin": {
+    "label": "¿Tienes el VIN? Rellenamos los datos",
+    "placeholder": "17 caracteres, p. ej. 1FA6P8CF7K5100001",
+    "fill": "Rellenar desde el VIN",
+    "hint": "Del title, del parabrisas o del anuncio de la subasta. Los coches de Japón tienen un número de chasis en lugar de VIN: introduce sus datos a mano.",
+    "filled": "Rellenado con la base de datos de vehículos de EE. UU. (NHTSA) y la EPA. Revisa los campos de abajo: aún puedes cambiar cualquiera.",
+    "filledOffline": "Solo hemos leído lo que codifica el propio VIN. El resto queda como propuesta nuestra: corrígelo si conoces los datos.",
+    "clear": "Quitar VIN",
+    "co2Epa": "EPA, convertido a g/km",
+    "massGvwr": "estimado según la clase de peso",
+    "madeIn": "Fabricado en",
+    "invalid": "Un VIN tiene 17 letras y cifras (nunca I, O ni Q). Comprueba si falta o sobra algún carácter.",
+    "w": {
+      "checkDigit": "El dígito de control no coincide: probablemente sea una errata. Compara el VIN con el title.",
+      "notFound": "La base de datos de vehículos no conoce este VIN (habitual en coches fabricados fuera de Norteamérica). Hemos usado lo que codifica el propio VIN.",
+      "offline": "La base de datos de vehículos no responde ahora mismo. Hemos usado lo que codifica el propio VIN: vuelve a intentarlo más tarde para obtener la especificación completa.",
+      "noCo2": "La EPA no da CO₂ para esta versión: mantenemos nuestra estimación. Si tienes el valor del CoC, introdúcelo.",
+      "noPower": "La potencia de este VIN no figura en la base de datos: mantenemos nuestra estimación."
     }
   }
 }

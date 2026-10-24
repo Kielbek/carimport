@@ -36,18 +36,36 @@ class SuggestionServiceTest {
                 base.titleType(), base.pickupZone(), null, base.bidPrice(), base.vehicleCategory(), base.fuelType(),
                 base.engineCc(), base.productionYear(), false, base.condition(), base.shippingMethod(), "DEBRV", "PL",
                 base.buyerType(), base.customsProcedure(), base.displayCurrency(), null, null, null, null, null, null,
-                "Warszawa, Polska", 52.2297, 21.0122);
+                "Warszawa, Polska", 52.2297, 21.0122, null, null, null, null, null, null);
 
         SuggestionService.Suggestions s = service(geo).suggest(toWarsaw);
 
         assertThat(s.ports()).extracting(SuggestionService.PortSuggestion::code)
                 .containsExactlyInAnyOrder("PLGDY", "DEBRV");
-        assertThat(s.ports()).isSortedAccordingTo((a, b) -> a.total().compareTo(b.total()));
+        assertThat(s.ports()).isSortedAccordingTo((a, b) -> a.extraVsBest().compareTo(b.extraVsBest()));
+        assertThat(s.ports().getFirst().extraVsBest()).isZero();
         assertThat(s.recommendedPort()).isEqualTo(s.ports().getFirst().code());
+
+        // VAT follows the port, the Polish excise follows the destination - whichever port is used
+        SuggestionService.PortSuggestion bremerhaven = s.ports().stream().filter(p -> p.code().equals("DEBRV"))
+                .findFirst().orElseThrow();
+        assertThat(bremerhaven.taxes().vat().country()).isEqualTo("DE");
+        assertThat(bremerhaven.taxes().vat().rate()).isEqualByComparingTo("0.19");
+        assertThat(bremerhaven.taxes().national()).singleElement()
+                .satisfies(t -> assertThat(t.country()).isEqualTo("PL"));
         SuggestionService.PortSuggestion gdynia = s.ports().stream().filter(p -> p.code().equals("PLGDY"))
                 .findFirst().orElseThrow();
         assertThat(gdynia.distanceKm()).isEqualTo(350);
         assertThat(gdynia.distanceMethod()).isEqualTo(GeoService.Method.ROUTED);
+        assertThat(gdynia.taxes().vat().country()).isEqualTo("PL");
+        assertThat(gdynia.taxes().vat().rate()).isEqualByComparingTo("0.23");
+        assertThat(gdynia.taxes().national()).singleElement().satisfies(t -> {
+            assertThat(t.code()).isEqualTo("EXCISE_TAX");
+            assertThat(t.country()).isEqualTo("PL");
+        });
+        assertThat(gdynia.taxes().total()).isEqualByComparingTo(gdynia.taxes().duty().amount()
+                .add(gdynia.taxes().vat().amount()).add(gdynia.taxes().portFees())
+                .add(gdynia.taxes().national().getFirst().amount()));
         assertThat(s.deliveryMode()).isEqualTo(DeliveryMode.CAR_CARRIER);
         assertThat(s.repairEstimate()).isPositive();
         assertThat(s.insuranceEstimate()).isEqualByComparingTo("1200");

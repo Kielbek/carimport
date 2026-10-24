@@ -1,6 +1,6 @@
 import { Lang } from '../i18n/language.service';
 
-export type Page = 'home' | 'calculator' | 'about' | 'privacy';
+export type Page = 'home' | 'calculator' | 'about' | 'privacy' | 'terms';
 
 /** Localized URL slugs - "/pl/kalkulator" ranks for Polish queries far better than "/pl/calculator". */
 export const SLUGS: Record<Exclude<Page, 'home'>, Record<Lang, string>> = {
@@ -22,6 +22,12 @@ export const SLUGS: Record<Exclude<Page, 'home'>, Record<Lang, string>> = {
     hr: 'privatnost', hu: 'adatvedelem', it: 'privacy', lt: 'privatumas', lv: 'privatums', nl: 'privacy',
     pl: 'polityka-prywatnosci', pt: 'privacidade', ro: 'confidentialitate', sk: 'ochrana-sukromia', sl: 'zasebnost',
     sv: 'integritet', uk: 'polityka-konfidentsiinosti',
+  },
+  terms: {
+    bg: 'obshti-usloviya', cs: 'obchodni-podminky', da: 'handelsbetingelser', de: 'agb', el: 'oroi-xrisis',
+    en: 'terms', es: 'condiciones', et: 'tingimused', fi: 'kayttoehdot', fr: 'cgv', hr: 'uvjeti', hu: 'aszf',
+    it: 'termini', lt: 'taisykles', lv: 'noteikumi', nl: 'voorwaarden', pl: 'regulamin', pt: 'termos',
+    ro: 'termeni', sk: 'obchodne-podmienky', sl: 'pogoji', sv: 'villkor', uk: 'umovy',
   },
 };
 

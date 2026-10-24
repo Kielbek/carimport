@@ -18,6 +18,7 @@ const pages = [
   { key: 'calculator', slugs: slugBlock('calculator'), freq: 'weekly', priority: '0.9' },
   { key: 'about', slugs: slugBlock('about'), freq: 'monthly', priority: '0.6' },
   { key: 'privacy', slugs: slugBlock('privacy'), freq: 'yearly', priority: '0.2' },
+  { key: 'terms', slugs: slugBlock('terms'), freq: 'yearly', priority: '0.2' },
 ];
 // SEO guides: hubs and items, slugs from core/routing/guide-paths.ts and the generated guide data
 const guidePathsTs = src('core/routing/guide-paths.ts');

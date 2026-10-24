@@ -122,13 +122,51 @@ Pliki: `calculation/CalculationEngine.java`, `calculation/step/*`, `calculation/
 * **Nowy środek transportu** (≤ 6 mies. / ≤ 6000 km) odprawiony w innym kraju → ostrzeżenie, że VAT należy się też
   w kraju rejestracji.
 
-### 2.3 Darmowy przedział vs. raport płatny
+### 2.3 Wynik darmowy vs. raport płatny
 
 `CalculationEngine.calculateRange()` liczy trzy scenariusze (`Scenario`): **LOW** (minimalne stawki frachtu, kurs −1,5%),
-**EXPECTED** (środek przedziałów – to jest raport płatny), **HIGH** (maksymalne stawki, kurs +2,5%, pozycje szacunkowe
-+25%). `PublicQuoteView` zwraca tylko przedział zaokrąglony **na zewnątrz** do pełnych setek oraz udziały kategorii
-w pełnych procentach (metoda największych reszt – zawsze sumują się do 100%). Dokładne kwoty nigdy nie opuszczają
-serwera bez płatności.
+**EXPECTED** (środek przedziałów), **HIGH** (maksymalne stawki, kurs +2,5%, pozycje szacunkowe +25%).
+
+**Za darmo** (`PublicQuoteView` + `TaxSummary`) są tylko kwoty, które da się policzyć „na kartce”: cło (stawka i kwota),
+VAT importowy w kraju portu (stawka, kraj, kwota), podatki kraju rejestracji (np. polska akcyza – stawka, kwota) i opłaty
+portowe. **Wszystko inne** – suma od drzwi do drzwi w trzech scenariuszach, opłaty aukcyjne, fracht, dowóz (km), rejestracja,
+usługi i ryzyka – jest liczone, ale serwer wysyła tylko nazwy pozycji (`lockedItems`, `risks`, `lockedCount`). Frontend
+pokazuje je zamazane (rozmyte liczby są atrapą, prawdziwe kwoty nie trafiają do przeglądarki przed płatnością), z
+przyciskiem zakupu na górze wyniku i stałym paskiem zakupu na telefonie.
+
+**Ranking portów** (`POST /quotes/suggestions`) sortuje po pełnym koszcie od drzwi do drzwi, ale ujawnia dla każdego portu
+tylko `TaxSummary` i dopłatę względem najtańszego (`extraVsBest`). Reguła, którą pokazuje UI (sekcja „Jak liczymy”):
+cło jest takie samo w całej UE; VAT płaci się w kraju portu według jego stawki (używane auto nie płaci VAT drugi raz
+w kraju rejestracji); podatki kraju rejestracji płaci się w kraju zawsze, niezależnie od portu.
+
+**Podatek rejestracyjny kraju rejestracji** (`RegistrationTaxStep`, wzory w `RegistrationTaxes`) – trzy grupy krajów:
+
+| Grupa | Kraje | Co robi kalkulator |
+|---|---|---|
+| akcyza wchodząca do podstawy VAT | PL | `PolishExciseStrategy` (stawka z tabeli, zawsze liczona) |
+| brak jednorazowego podatku | BG, CZ, DE, LU, RO, SE | tylko opłaty urzędowe z `destination_fee` |
+| szacunek ze wzoru | AT (NoVA 2026), BE (TMC Walonia/Bruksela), DK (registreringsafgift 2026), EE, ES (IEDMT), FI (autovero), FR (malus 2026 + taxe régionale), IE (VRT), IT (IPT), NL (BPM 2026 z tabelą amortyzacji), PT (ISV), SI (DMV) | kwota z CO₂ WLTP, mocy, wieku i wartości (CIF + cło) |
+| oficjalny kalkulator | CY, GR, HR, HU, LT, LV, MT, SK | link do urzędu, użytkownik wpisuje kwotę (`registrationTaxOwn`) |
+
+CO₂ i moc to nowe pola wizarda z propozycją (`Proposals.co2/powerKw`); własna kwota podatku zawsze wygrywa ze
+szacunkiem. Wzory są uproszczone (bez dopłat wagowych, wariantów regionalnych, NOx w IE) i oznaczone w linii
+parametrem `method` – przy zmianie stawek na nowy rok aktualizuje się tylko `RegistrationTaxes` + test.
+
+**VIN → dane auta** (`GET /api/v1/vehicle/vin/{vin}`, pakiet `vehicle`): `Vin` offline sprawdza format, cyfrę
+kontrolną (obowiązkową dla aut z Ameryki Płn. – łapie literówki), rocznik (10. znak + reguła cyklu z 7. znaku), markę
+(WMI) i kraj produkcji. `NhtsaVinClient` (vPIC, darmowe) dodaje model, wersję, nadwozie → kategorię, pojemność,
+cylindry, paliwo/elektryfikację, moc i masę (masa własna albo ¾ środka klasy GVWR). `EpaCo2Client` szuka CO₂ w bazie
+EPA (rok + marka → modele zaczynające się od nazwy z vPIC → warianty z tą samą pojemnością i liczbą cylindrów → średnia
+`co2TailpipeGpm`, przeliczona na g/km; to wartość EPA, bliska, ale nie równa WLTP). Każde źródło jest opcjonalne:
+wynik mówi, czego brakuje (`warnings`), a pola, których źródła nie podają, zostają propozycjami kalkulatora. Wyniki
+trzyma ograniczony cache LRU (5 000 VIN-ów; błędy sieci nie są cache'owane). Adresy: `app.vehicle.vpic-url`,
+`app.vehicle.epa-url` (puste = źródło wyłączone). Masa własna to nowe pole wizarda (malus od wagi FR 2026, składnik
+masy EE). VIN i opis auta trafiają do raportu PDF.
+
+**Po imporcie** (`V5__eu_after_import.sql`): dla każdego z 27 krajów obowiązkowe homologacja/badanie importowe
+i opłaty rejestracyjne oraz opcjonalne usługi (oświetlenie US, reflektory RHD, karta danych/CoC, serwis, geometria,
+tłumaczenia, detailing) – typowe kwoty w walucie lokalnej, `estimate = TRUE`. Krok 5 pokazuje je jako listę
+„Co musisz zrobić” (podatek → opłaty → rejestracja w urzędzie z terminem → OC) i „Co możesz zrobić”.
 
 ### 2.4 Przykład policzony ręcznie (test `fullChainForPetrolAbove2000ccClearedInGdynia`)
 
@@ -410,10 +448,22 @@ pozostaje PENDING, poprawny webhook → READY i PDF 30 KB, duplikat zdarzenia �
 
 ## 5. Produkcja i dalszy rozwój
 
-* **Bezpieczeństwo API**: rate-limit `/quotes/preview` i `/leads` na bramie (np. Bucket4j/Cloudflare), CORS tylko dla
-  domeny SPA, CSP, Spring Security dla panelu admina (zarządzanie taryfami + `@CacheEvict` cache `tariffs`).
-* **E-mail** z linkiem do raportu (w miejscu oznaczonym w `ReportGenerationService`) i powiadomienia partnerów o leadach.
-* **Rozszerzenia silnika**: kolejne `ExciseStrategy` (NL BPM, AT NoVA, FR malus) bez zmian w pipeline; kurs celny UE
+* **Limity zapytań** (`RateLimitFilter`): token bucket na klienta (adres IP po `forward-headers-strategy`) i regułę –
+  propozycje portów 20 naraz / 40 na min, wycena 10/20, VIN 5/10, adresy 30/60, płatność 5/5, zapytania do partnerów
+  3/2, reszta API 120/300; odpowiedź 429 z `Retry-After` i `messageKey: error.rateLimited`. Webhook Stripe jest
+  wyłączony (chroni go podpis). Limity są w pamięci jednego węzła – przy kilku węzłach następny krok to limiter na bramie
+  (Cloudflare) albo w Redisie.
+* **E-mail z raportem** (`ReportMailer`, `ReportMailTriggers`): po zapisaniu PDF (`ReportReadyEvent`, po commicie)
+  wysyłamy PDF w załączniku i osobisty link z drugim tokenem (`email_token_hash`, niezależny od przeglądarki, która
+  płaciła). Dowolny dostawca SMTP przez `spring.mail.*` (`SMTP_HOST`, …); pusty host = e-mail wyłączony. Nieudane wysyłki
+  ponawia harmonogram (do 6 prób). Mail zawiera potwierdzenie zgody na dostarczenie treści cyfrowej przed upływem
+  terminu odstąpienia (trwały nośnik, art. 8 ust. 7 dyrektywy 2011/83/UE).
+* **Regulamin** (`/pl/regulamin` i odpowiedniki w 23 językach): dane sprzedawcy w `SITE.company` (frontend) i
+  `app.company` (backend) – **do uzupełnienia przed startem**. Zgoda z okna płatności jest wymagana przez API
+  (`termsAccepted`) i zapisywana przy zamówieniu z datą i wersją (`terms_accepted_at`, `terms_version`).
+* **Dalej**: CSP, Spring Security dla panelu admina (zarządzanie taryfami + `@CacheEvict` cache `tariffs`),
+  powiadomienia partnerów o leadach.
+* **Rozszerzenia silnika**: wzory dla krajów z grupy „oficjalny kalkulator” (HU, HR, GR, …), dopłata wagowa FR; kurs celny UE
   (miesięczny, przedostatnia środa EBC) jako osobny `RateType`; panel B2B dla partnerów z rozliczeniem prowizji.
 * **SEO – dalej**: blog/poradniki per kraj i marka (long tail: „import Toyoty z USA”), strony docelowe per kraj
   pochodzenia z prerenderowanym przykładem wyceny, Search Console + monitoring Core Web Vitals.

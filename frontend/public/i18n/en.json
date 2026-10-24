@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Excise tax",
     "FORKLIFT_LOADING": "Forklift loading",
     "IMPORT_VAT": "Import VAT",
-    "INDIVIDUAL_APPROVAL": "Individual approval (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Individual approval / import inspection",
     "INLAND_TRANSPORT": "Inland transport to port",
     "INTRA_EU_ACQUISITION_VAT": "Intra-EU acquisition VAT (reverse charge, deductible)",
     "INTRA_EU_TRANSPORT": "Car carrier from port to destination",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transit damage – insurance deductible",
     "RISK_HIDDEN_DAMAGE": "Hidden damage not visible at auction",
     "RISK_TITLE_DELAY": "Title delay (extra storage)",
-    "RISK_EXPORT_DOCS_DELAY": "Export document delay"
+    "RISK_EXPORT_DOCS_DELAY": "Export document delay",
+    "REGISTRATION_TAX": "Registration tax",
+    "COC_CERTIFICATE": "Manufacturer's data sheet / CoC"
   },
   "doc": {
     "billOfLading": "Bill of Lading",
@@ -154,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "No tax rates for the selected country."
-    }
+    },
+    "rateLimited": "Too many requests in a short time – wait a moment and try again."
   },
   "fuel": {
     "DIESEL": "Diesel",
@@ -195,8 +198,9 @@
     "redirecting": "Redirecting…",
     "secure": "Secure payment by Stripe. We never store card data.",
     "subtitle": "Exact amounts, tax bases and rates, documents – in a PDF with your name.",
-    "terms": "I accept the terms and request immediate delivery of digital content, waiving the withdrawal period.",
-    "title": "Full import report"
+    "terms": "I accept the terms and ask for the report to be delivered before the 14-day withdrawal period ends. I acknowledge that I lose the right of withdrawal once it is delivered.",
+    "title": "Full import report",
+    "termsLink": "Terms"
   },
   "report": {
     "amount": "Amount",
@@ -255,7 +259,18 @@
     "reportItem4": "Registration fees and after-import services",
     "reportItem5": "Risks with amounts: optimistic, average, pessimistic",
     "reportItem6": "Step-by-step plan with deadlines and document list",
-    "cheapestPort": "cheapest port"
+    "cheapestPort": "cheapest port",
+    "lockedEyebrow": "Full report",
+    "lockedTitle": "Full cost to your door",
+    "lockedLead": "Optimistic, average and pessimistic scenario plus {{count}} more positions: transport, delivery, registration and hidden costs.",
+    "unlockNote": "Instant PDF · secure payment",
+    "freeTitle": "Customs, VAT and taxes – free",
+    "freeLead": "Clearance in {{port}}. The amounts you could work out on paper.",
+    "freeBadge": "Free",
+    "freeBase": "Calculated on the customs value (price, auction fees, transport to the EU and insurance) at today’s exchange rates.",
+    "lockedListTitle": "Also calculated – in the report",
+    "riskTag": "risk",
+    "moreLocked": "+ {{count}} more positions, incl. hidden costs"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exclusive container",
@@ -377,7 +392,15 @@
     "distanceRouted": "Road route from {{port}} to your address.",
     "distanceEstimated": "Estimate from {{port}} to your address (straight line × 1.25).",
     "distanceTypical": "Typical distance from {{port}} – enter the address above for an exact figure.",
-    "tariffShort": "Market: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} loading, min. {{minimum}} {{cur}}."
+    "tariffShort": "Market: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} loading, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "From the CoC or window sticker. Most registration taxes in the EU are based on it.",
+    "powerKw": "Engine power",
+    "powerKwHint": "In kW (1 hp ≈ 0.74 kW). Used in Belgium, Italy and France.",
+    "specTitle": "What the taxes are based on",
+    "specLead": "Proposed from the type and engine. Precise figures (from the VIN or the CoC) make the registration tax far more accurate.",
+    "mass": "Curb weight",
+    "massHint": "Kerb weight in kg. Counts in France (weight malus) and Estonia."
   },
   "layout": {
     "topbar": "Independent calculator of car import costs from the USA, Canada, Japan, UAE and UK to 27 EU countries",
@@ -416,7 +439,8 @@
     "language": "Language",
     "payments": "Payments by Stripe (card, BLIK, Przelewy24). We never store card data.",
     "rights": "All rights reserved.",
-    "disclaimer": "Calculations are informational and are neither a customs decision nor tax advice."
+    "disclaimer": "Calculations are informational and are neither a customs decision nor tax advice.",
+    "terms": "Terms"
   },
   "cookies": {
     "title": "Cookies",
@@ -743,6 +767,10 @@
     "about": {
       "title": "About us – an independent car import calculator | CarImport.eu",
       "description": "Who we are, where our data comes from and how we earn money. CarImport.eu neither sells nor imports cars – it calculates the full import cost honestly and independently."
+    },
+    "terms": {
+      "title": "Terms | CarImport.eu",
+      "description": "Terms for the car import cost calculator and the PDF report: seller, payment, delivery, withdrawal and complaints."
     }
   },
   "privacy": {
@@ -891,7 +919,18 @@
     "SERVICE_INSPECTION": "Oil, filters, fluids, brakes after a long trip",
     "GEOMETRY_ALIGNMENT": "Recommended after suspension repairs",
     "DETAILING": "Wash, interior cleaning, paint correction",
-    "EXPERT_VALUATION": "Useful for comprehensive insurance and resale"
+    "EXPERT_VALUATION": "Useful for comprehensive insurance and resale",
+    "INDIVIDUAL_APPROVAL": "A car built for a market outside the EU has no EU type approval – an approved station checks it against EU rules ({{inspection}}).",
+    "REGISTRATION_FEE": "Official fees at {{authority}}: registration certificate and number plates.",
+    "RDW_INSPECTION": "The RDW checks the imported car and its identity before it gets a Dutch registration.",
+    "TECHNICAL_INSPECTION_IMPORT": "Extended technical inspection of a car brought in from abroad, at a vehicle inspection station.",
+    "REG_TEMPORARY_PERMIT": "Temporary permit for the time until the registration certificate is ready.",
+    "REG_TEMPORARY_PLATES": "Temporary plates handed out with the temporary permit.",
+    "REG_CERTIFICATE": "The registration certificate itself.",
+    "REG_PLATES": "Permanent number plates.",
+    "REG_STICKER": "Control sticker on the windscreen.",
+    "RECYCLING_FEE": "One-off fee for a car brought in by someone without a recycling network.",
+    "COC_CERTIFICATE": "Needed for approval and registration when the car has no EU certificate of conformity."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "The terminal charges per day after the free period, e.g. when documents or transport are late.",
@@ -1277,6 +1316,118 @@
       "customs": "Customs & taxes",
       "registration": "Registration",
       "logistics": "Shipping & ports"
+    }
+  },
+  "portCost": {
+    "taxesAndFees": "Taxes & port fees",
+    "extra": "+{{amount}} {{cur}} door to door",
+    "cheapestDoor": "cheapest door to door",
+    "rankingNote": "Sorted by the full door-to-door cost (taxes, freight, port, delivery to your address). Each port shows its taxes and port fees; the full breakdown is in the report.",
+    "title": "Clearing in {{port}}: taxes and fees",
+    "dutyWhere": "Same in every EU port – 10% of the customs value (CIF)",
+    "vatWhere": "Paid in the country of the port: {{country}}",
+    "nationalWhere": "Paid in the country of registration ({{country}}) – whichever port you choose",
+    "notPriced": "Local registration tax in {{country}} – depends on CO₂ or price, not included",
+    "portFees": "Port fees",
+    "portFeesWhat": "Terminal handling, unloading and customs agent",
+    "total": "Taxes and fees",
+    "howTitle": "How we calculate it",
+    "how1": "Customs value (CIF) = price + auction fees + transport to the EU port + insurance.",
+    "how2": "Customs duty: 10% of the customs value (pickups 22%, motorcycles 6–8%) – identical in every EU port.",
+    "how3": "Import VAT is paid in the country of the port, at its rate, on customs value + duty + transport to your address. A used car cleared outside {{country}} does not pay VAT again at home.",
+    "how4": "National taxes of the country of registration (e.g. Polish excise) are paid at home whichever port you use.",
+    "how5": "The ranking adds freight, port fees and delivery per km to your address – the cheapest total comes first.",
+    "bestLabel": "Best value port:",
+    "bestSelected": "selected",
+    "bestChoose": "Choose – save {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "What you must do in {{country}}",
+    "noRegTaxName": "Registration tax",
+    "tax": {
+      "EXCISE": "Excise of {{rate}}% of the customs value plus duty. File the AKC-U/S declaration and pay at the tax office within 14 days of bringing the car in – before registration.",
+      "NONE": "{{country}} charges no one-off tax at registration – only the official fees below.",
+      "ESTIMATED": "We estimate it from CO₂ ({{co2}} g/km), power ({{kw}} kW), the age and value of the car, using this year's schedule. The tax office has the final word – if you have their figure, type it in.",
+      "OFFICIAL": "This tax depends on too many details to estimate fairly. Work it out in the official calculator and type the amount – we will add it to the calculation."
+    },
+    "taxAmount": "Registration tax",
+    "taxOwnHint": "Leave our estimate or type the amount from the tax office.",
+    "taxTypeHint": "Amount from the official calculator. Empty = not included.",
+    "officialCalculator": "Official calculator",
+    "amountInReport": "amount in the report",
+    "registerTitle": "Register the car – {{authority}}",
+    "registerText": "With the inspection ({{inspection}}), proof of tax paid, the customs documents and the title.",
+    "deadline": "Deadline: {{days}} days.",
+    "canTitle": "What you can do",
+    "canLead": "Not required by law, but almost every import needs some of it. Recommended items are ticked – untick what you do yourself."
+  },
+  "vin": {
+    "label": "Have the VIN? We'll fill in the details",
+    "placeholder": "17 characters, e.g. 1FA6P8CF7K5100001",
+    "fill": "Fill in from VIN",
+    "hint": "From the title, the windscreen or the auction listing. Cars from Japan have a chassis number instead of a VIN – enter their details by hand.",
+    "filled": "Filled in from the US vehicle database (NHTSA) and the EPA. Check the fields below – you can still change any of them.",
+    "filledOffline": "We only read what the VIN itself encodes. The rest stays as our proposals – correct them if you know the details.",
+    "clear": "Remove VIN",
+    "co2Epa": "EPA, converted to g/km",
+    "massGvwr": "estimated from the weight class",
+    "madeIn": "Built in",
+    "invalid": "A VIN has 17 letters and digits (never I, O or Q). Check for a missing or extra character.",
+    "w": {
+      "checkDigit": "The check digit does not match – probably a typo. Compare the VIN with the title.",
+      "notFound": "The vehicle database does not know this VIN (common for cars built outside North America). We used what the VIN itself encodes.",
+      "offline": "The vehicle database is not responding right now. We used what the VIN itself encodes – try again later for the full specification.",
+      "noCo2": "No EPA CO₂ figure for this version – we keep our estimate. Use the CoC figure if you have it.",
+      "noPower": "Power is not in the database for this VIN – we keep our estimate."
+    }
+  },
+  "terms": {
+    "eyebrow": "Terms",
+    "title": "Terms of service and sale of reports",
+    "version": "Version of {{version}}",
+    "s1": {
+      "title": "Seller and contact",
+      "text": "{{site}} is run by {{company}}, {{address}}, tax ID {{taxId}}, {{registry}} (the Seller).\nContact for any matter, including complaints: {{email}}. We reply within 14 days."
+    },
+    "s2": {
+      "title": "What the service is",
+      "text": "The service is an independent calculator of the cost of importing cars from outside the European Union. The Seller does not sell, buy or import vehicles and does not act as a customs agent.\nThe calculator is free and needs no registration. Only the PDF report described in section 4 is paid."
+    },
+    "s3": {
+      "title": "Nature of the calculations",
+      "text": "The calculations are for information. They are based on the law, rates and exchange rates (NBP) on the day of the quote, on the data entered by the user and on typical prices of services.\nA calculation is not a decision of a customs or tax authority, a binding tariff information or legal or tax advice. Final amounts are set by the competent authorities, carriers and other service providers."
+    },
+    "s4": {
+      "title": "Paid report – order and price",
+      "text": "The report is digital content in PDF format, prepared automatically for the chosen quote and bearing the buyer's name.\nThe price is shown before purchase in the chosen currency and is the final price. Payment is handled by Stripe (card, BLIK, Przelewy24 and the other methods shown at checkout). The Seller does not store card data.\nThe contract is concluded when the payment is confirmed."
+    },
+    "s5": {
+      "title": "Delivery",
+      "text": "The report is available immediately after the payment is confirmed on the report page and is sent to the e-mail address given, as an attachment with a personal link.\nTechnical requirements: a web browser with JavaScript enabled, an active e-mail address and a PDF reader.\nThe link to the report is personal – do not share it with others."
+    },
+    "s6": {
+      "title": "Right of withdrawal",
+      "text": "A consumer may withdraw from a distance contract within 14 days without giving a reason.\nThis right does not apply once the supply of digital content has begun with the consumer's express prior consent and their acknowledgement that they thereby lose the right of withdrawal (Art. 16(m) of Directive 2011/83/EU). The buyer gives this consent and acknowledgement when ordering and receives a confirmation of it in the e-mail with the report.\nThe same rules apply to a natural person concluding a contract directly related to their business when the contract is not of a professional nature for them."
+    },
+    "s7": {
+      "title": "Complaints",
+      "text": "The Seller is liable for the report's conformity with the contract. If the report was not delivered, cannot be read or does not match the quote paid for, write to {{email}} with the order number or the e-mail address used for the purchase.\nThe Seller handles a complaint within 14 days. If it is justified, the Seller delivers a corrected report or, where that is not possible, refunds the price.\nConsumers may use out-of-court dispute resolution, for example a local consumer ombudsman or the consumer protection authority of their country."
+    },
+    "s8": {
+      "title": "Liability",
+      "text": "The Seller takes care that rates and data are current and correct, but is not liable for decisions taken solely on the basis of the calculations or for differences caused by decisions of authorities, changes in law and exchange rates after the day of the quote, prices of service providers or incorrect data entered by the user.\nThis does not limit consumer rights under mandatory law."
+    },
+    "s9": {
+      "title": "Partners",
+      "text": "The service may show offers of partners (e.g. currency exchange, vehicle history, importers). Some links are affiliate links – the Seller may receive a commission, which does not affect the calculations.\nContact details are passed to a partner only when the user sends an enquiry form and consents to it. Contracts with partners are concluded directly with them."
+    },
+    "s10": {
+      "title": "Personal data",
+      "text": "How personal data and cookies are processed is described in the privacy policy."
+    },
+    "s11": {
+      "title": "Final provisions",
+      "text": "The terms are available free of charge on this page in a form that allows them to be downloaded and printed.\nChanges to the terms do not affect contracts concluded before they take effect.\nPolish law applies, without depriving a consumer of the protection of the mandatory law of the country of their habitual residence."
     }
   }
 }

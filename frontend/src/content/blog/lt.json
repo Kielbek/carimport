@@ -898,7 +898,7 @@
         ]
       },
       {
-        "p": "Svarbu atsiminti, kad nepriklausomai nuo išmuitinimo šalies, automobilis registruojamas Lietuvoje Regitroje ir čia mokamas registracijos mokestis. Uosto pasirinkimas keičia tik importo PVM, uosto mokesčius ir pristatymo išlaidas, o ne Lietuvos mokesčius."
+        "p": "Svarbu atsiminti, kad nepriklausomai nuo išmuitinimo šalies, automobilis registruojamas Lietuvoje Regitroje ir čia mokamas registracijos mokestis. Uosto pasirinkimas keičia tik importo PVM, uosto mokesčius ir pristatymo išlaidas, o ne Lietuvos mokesčius. Todėl lyginant uostus registracijos išlaidos visada lieka tos pačios, ir sprendimą lemia tik PVM skirtumas, uosto kainos bei kelionė iki jūsų namų."
       },
       {
         "p": "Nepamirškite ir laiko. Jei automobilio reikia greitai, uosto pasirinkimas lemia ne tik kainą, bet ir laukimą: kelios papildomos dienos uoste reiškia saugojimo mokesčius, o laivų vėlavimai žiemą Baltijos jūroje nėra reti. Skaičiuoklės pesimistinis scenarijus šiuos vėlavimus įvertina. Taip pat verta paklausti vežėjo, kaip dažnai jo konteineriai plaukia į pasirinktą uostą – retesni reisai gali pridėti savaitę ar dvi laukimo dar JAV uoste, kol konteineris bus užpildytas."
@@ -919,6 +919,293 @@
       {
         "q": "Ar Ryga pigesnė už Klaipėdą?",
         "a": "Abiejuose PVM 21 %, todėl skirtumą lemia uosto mokesčiai, pervežimo tarifai ir atstumas iki jūsų adreso. Skaičiuoklė tai palygina automatiškai."
+      }
+    ]
+  },
+  {
+    "id": "japan-jdm",
+    "slug": "jdm-automobilis-is-japonijos-aukciono-lapai-ir-kainos",
+    "category": "buying",
+    "origin": "JAPAN",
+    "date": "2026-09-25",
+    "minutes": 3,
+    "title": "JDM automobilio įvežimas iš Japonijos: aukciono lapai, įvertinimai ir išlaidos",
+    "metaTitle": "JDM automobilis iš Japonijos – aukciono lapai ir kainos | CarImport.eu",
+    "description": "Kaip veikia Japonijos automobilių aukcionai, kaip skaityti aukciono lapą ir įvertinimus, ką vairas dešinėje reiškia registracijai ir kiek kainuoja JDM importas.",
+    "lead": "Japonijos aukcionai garsėja sąžiningu vertinimu ir puikios būklės automobiliais. Su patikimu eksportuotoju JDM automobilio pirkimas saugesnis nei pirkimas „aklai“ JAV aukcionuose – jei suprantate aukciono lapą.",
+    "blocks": [
+      {
+        "h2": "Kaip vyksta pirkimas Japonijoje"
+      },
+      {
+        "p": "Aukcionai, tokie kaip USS, TAA, CAA ir JU, prieinami licencijuotiems prekiautojams. Perkate per eksportuotoją: išsirenkate automobilius, nustatote maksimalų statymą, o eksportuotojas stato, sumoka, išregistruoja automobilį eksportui ir jį išsiunčia. Daug eksportuotojų siūlo ir pirkimą iš prekiautojų sandėlių, kur kaina fiksuota, bet paprastai didesnė nei aukcione."
+      },
+      {
+        "p": "Aukcionai vyksta kasdien, o per savaitę pasiūloma dešimtys tūkstančių automobilių. Tai reiškia didelį pasirinkimą ir retiems modeliams – sportiniams kupė, kompaktiškiems vienatūriams, hibridams ir visureigiams, kurie Europoje oficialiai nebuvo parduodami."
+      },
+      {
+        "h2": "Kaip skaityti aukciono lapą"
+      },
+      {
+        "ul": [
+          "Bendras įvertinimas: 6–5 beveik naujas, 4,5–4 labai geras, 3,5 vidutinis, R/RA remontuotas po avarijos",
+          "Salono įvertinimas: nuo A iki D",
+          "Kėbulo schema: A = įbrėžimas, U = įlenkimas, W = banguotumas / remontas, S = rūdys, C = korozija, su skaičiumi dydžiui",
+          "Inspektoriaus pastabos – visada paprašykite jas išversti"
+        ]
+      },
+      {
+        "tip": "R ar RA įvertinimas ne visada blogai, tačiau paklauskite, kas buvo remontuota – rėmo remontas yra visai kas kita nei pakeistas buferis."
+      },
+      {
+        "h2": "Įvertinimai lentelėje"
+      },
+      {
+        "table": {
+          "head": [
+            "Įvertinimas",
+            "Reikšmė",
+            "Patarimas"
+          ],
+          "rows": [
+            [
+              "6, 5",
+              "Beveik naujas, minimali rida",
+              "Aukšta kaina, maža rizika"
+            ],
+            [
+              "4,5",
+              "Labai gera būklė",
+              "Geriausias kainos ir kokybės santykis"
+            ],
+            [
+              "4",
+              "Gera, smulkūs defektai",
+              "Patikrinkite kėbulo schemą"
+            ],
+            [
+              "3,5",
+              "Vidutinė, matomas nusidėvėjimas",
+              "Skaičiuokite kosmetinį remontą"
+            ],
+            [
+              "R, RA",
+              "Avarijos remontas",
+              "Išsiaiškinkite, kas tiksliai remontuota"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Išlaidos ir laikas"
+      },
+      {
+        "p": "Pridėkite eksportuotojo mokestį, vidaus transportą Japonijoje, eksporto dokumentus ir jūrų pervežimą. Laivai plaukia per Sueco kanalą: apie 5–6 savaites iki Šiaurės jūros, mažiau iki Viduržemio jūros uostų, o iki Klaipėdos pagal uosto duomenis apie 46 dienas. Lengvajam automobiliui taikomas 10 % muitas, o importo PVM mokamas išmuitinimo šalyje – Lietuvoje 21 %."
+      },
+      {
+        "ul": [
+          "Automobilio kaina aukcione jenomis",
+          "Aukciono mokestis ir eksportuotojo komisinis",
+          "Transportas Japonijoje iki uosto",
+          "Eksporto dokumentai ir išregistravimas",
+          "Jūrų pervežimas ir draudimas",
+          "Muitas 10 % ir PVM 21 % Lietuvoje",
+          "Uosto mokesčiai, pristatymas, techninė apžiūra ir registracija Regitroje"
+        ]
+      },
+      {
+        "p": "Skaičiuoklė visas šias eilutes apskaičiuoja eurais ir palygina 43 ES uostus iki jūsų adreso. JDM automobilio atveju ji gali parodyti, kad Viduržemio jūros uostas su greitesniu laivu neapsimoka, nes pristatymas keliu iki Lietuvos per brangus."
+      },
+      {
+        "h2": "Vairas dešinėje"
+      },
+      {
+        "p": "Dauguma ES šalių, taip pat Lietuva, registruoja automobilius su vairu dešinėje, paprastai sureguliavus žibintus. Kai kurios šalys juos riboja nuolatinei registracijai – prieš pirkdami pasitikrinkite aktualius Regitros reikalavimus. Kasdien vairas dešinėje apsunkina lenkimą ir atsiskaitymą automobilių stovėjimo aikštelėse, į tai verta atsižvelgti, jei automobilis skirtas kasdieniam važinėjimui."
+      },
+      {
+        "h2": "Populiarūs JDM modeliai ir ką patikrinti"
+      },
+      {
+        "p": "Lietuvos entuziastai iš Japonijos dažniausiai veža sportinius automobilius, pavyzdžiui, Nissan Skyline, Toyota Supra ar Mazda RX-7, Honda ir Subaru modelius, taip pat praktiškus hibridus ir kompaktiškus vienatūrius. Sportiniai automobiliai dažnai modifikuoti, todėl aukciono lape ieškokite pastabų apie neoriginalias dalis: išmetimo sistemą, pakabą, turbiną ar elektroniką. Tokie pakeitimai gali apsunkinti techninę apžiūrą ir registraciją, nes išmetamosios dujos ir triukšmas turi atitikti reikalavimus."
+      },
+      {
+        "p": "Atkreipkite dėmesį ir į amžių. Senesni nei 30 metų originalios būklės automobiliai gali būti klasifikuojami kaip kolekciniai daiktai su 0 % muitu. Daug kultinių JDM modelių iš dešimtojo dešimtmečio pradžios šią ribą jau pasiekė. Vis dėlto originalumą teks įrodyti, o modifikuotiems automobiliams ši lengvata paprastai netaikoma."
+      },
+      {
+        "h2": "Japonija ar JAV?"
+      },
+      {
+        "ul": [
+          "Japonijoje aukciono lapai išsamesni, o įvertinimai sąžiningesni",
+          "JAV pasirinkimas didesnis, bet dažnai su salvage title ir rimtais pažeidimais",
+          "Kelionė iš Japonijos ilgesnė – 6–7 savaitės iki Baltijos",
+          "Japonijos automobiliai su vairu dešinėje, JAV – kairėje",
+          "Muitas ir PVM vienodi: 10 % ir 21 % Lietuvoje"
+        ]
+      },
+      {
+        "p": "Geras eksportuotojas ne tik stato, bet ir padeda įvertinti automobilį: prieš aukcioną jį apžiūri, detaliai nufotografuoja ir sąžiningai pasako, jei įvertinimas neatitinka tikrovės. Toks pagalbininkas ypač vertingas, jei perkate pirmą kartą ir dar neturite patirties skaityti aukciono lapų."
+      },
+      {
+        "h2": "Kaip išsirinkti eksportuotoją"
+      },
+      {
+        "ol": [
+          "Patikrinkite, kiek laiko įmonė veikia ir ar turi atsiliepimų iš Europos klientų.",
+          "Paprašykite pilno aukciono lapo ir jo vertimo kiekvienam automobiliui.",
+          "Iš anksto išsiaiškinkite visus mokesčius – komisinį, dokumentus, transportą.",
+          "Įsitikinkite, kad eksportuotojas reguliariai siunčia automobilius į Europą.",
+          "Apmokėjimo tvarką ir terminus suderinkite raštu."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Ar Japonijos automobilių rida patikima?",
+        "a": "Paprastai taip – aukciono lapuose ir eksporto pažymėjimuose rida užfiksuojama, o jos atsukimas retas, palyginti su kitomis rinkomis."
+      },
+      {
+        "q": "O kaip su rūdimis?",
+        "a": "Automobiliai iš šiaurės Japonijos (Hokaido) gali turėti apačios rūdžių nuo kelių druskos; aukciono lape jos pažymimos S arba C."
+      },
+      {
+        "q": "Kiek laiko automobilis keliauja iš Japonijos į Lietuvą?",
+        "a": "Jūrų kelionė iki Klaipėdos trunka apie 46 dienas; su aukcionu, dokumentais ir išmuitinimu skaičiuokite 2–3 mėnesius."
+      }
+    ]
+  },
+  {
+    "id": "checklist",
+    "slug": "patikros-sarasas-pries-perkant-automobili-aukcione-uzsienyje",
+    "category": "buying",
+    "origin": null,
+    "date": "2026-09-20",
+    "minutes": 3,
+    "title": "12 punktų patikros sąrašas prieš statant už automobilį užsienyje",
+    "metaTitle": "Patikros sąrašas prieš perkant automobilį iš JAV | CarImport.eu",
+    "description": "Dvylika patikrų, saugančių jūsų biudžetą perkant automobilį aukcione JAV ar Japonijoje: VIN istorija, title, pažeidimai, mokesčiai, transportas ir registracija.",
+    "lead": "Aukcione sprendimą reikia priimti per kelias minutes. Šie dvylika punktų užima vieną vakarą ir apsaugo nuo brangiausių klaidų, kai automobilį atsivežate iš JAV, Kanados ar Japonijos į Lietuvą.",
+    "blocks": [
+      {
+        "h2": "Sąrašas: 12 patikrų prieš statant"
+      },
+      {
+        "ol": [
+          "Užsisakykite VIN istorijos ataskaitą Carfax ar AutoCheck: avarijos, potvyniai, rida, vagystė.",
+          "Patikrinkite title tipą – venkite parts only ir non-repairable dokumentų.",
+          "Išnagrinėkite kiekvieną nuotrauką: tarpai tarp detalių, pagalvės, vandens linijos, variklio skyrius.",
+          "Būklės žymas skaitykite kaip informaciją, o ne garantiją.",
+          "Patikrinkite aikštelės vietą ir atstumą iki eksporto uosto.",
+          "Apskaičiuokite visus aukciono ir brokerio mokesčius savo statymo lygiui.",
+          "Apskaičiuokite visas išlaidas: pervežimas, muitas, PVM, uostas, pristatymas.",
+          "Palyginkite išmuitinimo uostus savo adresui.",
+          "Gaukite remonto sąmatą ir dalių kainas Lietuvoje.",
+          "Patikrinkite, ką reikia pakeisti registracijai Regitroje (žibintai, spidometras).",
+          "Suplanuokite laiką: apmokėjimo ir paėmimo terminai, plaukimas, techninė apžiūra.",
+          "Nustatykite maksimalų statymą – ir jo laikykitės."
+        ]
+      },
+      {
+        "tip": "6–8 žingsnius atlikite skaičiuoklėje: ji sudeda visus mokesčius ir parodo optimistinę, vidutinę ir pesimistinę sumą. Įvedate tik adresą – ji palygina visus 43 ES uostus."
+      },
+      {
+        "h2": "Ką duoda kiekvienas punktas"
+      },
+      {
+        "p": "VIN ataskaita ir title patikra atsijoja automobilius su paslėpta istorija, pavyzdžiui, skendusius ar su atsukta rida. Nuotraukų ir būklės žymų analizė padeda įvertinti remonto apimtį. Aikštelės vieta lemia vidaus transporto kainą JAV, kuri svyruoja nuo kelių šimtų iki daugiau nei tūkstančio dolerių. Mokesčių skaičiavimas parodo, kiek automobilis iš tikrųjų kainuos Lietuvoje su 10 % muitu ir 21 % PVM."
+      },
+      {
+        "p": "Remonto sąmata ir dalių kainos Lietuvoje dažnai būna lemiamos: kai kurių JAV modelių dalis tenka užsisakyti iš JAV, ir jos keliauja kelias savaites. Registracijos reikalavimų patikra leidžia iš anksto žinoti, kiek kainuos žibintų pritaikymas ir spidometro perprogramavimas ir ar automobilis apskritai gali praeiti techninę apžiūrą be didelių investicijų."
+      },
+      {
+        "h2": "Dažniausios klaidos"
+      },
+      {
+        "ul": [
+          "Statoma iki rinkos kainos, neįskaičiuojant mokesčių",
+          "Pamirštami saugojimo mokesčiai, kai paėmimas vėluoja",
+          "Nuvertinamas „nedidelio“ priekio pažeidimo remontas",
+          "Ignoruojamas registracijos mokestis ir techninio pritaikymo išlaidos Lietuvoje",
+          "Pikapas laikomas lengvuoju automobiliu, nors muitas gali būti 22 %",
+          "Neatsižvelgiama į valiutos kursą ir banko mokestį už mokėjimą doleriais"
+        ]
+      },
+      {
+        "h2": "Atsargos biudžetas"
+      },
+      {
+        "table": {
+          "head": [
+            "Automobilio būklė",
+            "Rekomenduojama atsarga"
+          ],
+          "rows": [
+            [
+              "Clean title, važiuojantis",
+              "10 % visos sumos"
+            ],
+            [
+              "Salvage, važiuojantis",
+              "10–15 % visos sumos"
+            ],
+            [
+              "Salvage, nevažiuojantis",
+              "15–20 % ar daugiau"
+            ],
+            [
+              "Skendęs automobilis",
+              "Be patirties nerekomenduojame"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Atsarga – ne pesimizmas, o realizmas. Laivai vėluoja, muitinė kartais atrenka automobilį patikrai, o po iškrovimo dažnai paaiškėja pažeidimų, kurių nuotraukose nebuvo matyti. Jei atsarga lieka nepanaudota, tai maloni staigmena."
+      },
+      {
+        "h2": "Ar automobilis vertas pastangų?"
+      },
+      {
+        "p": "Prieš statydami atsakykite į paprastą klausimą: kiek kainuoja panašus automobilis Lietuvoje ar kitoje ES šalyje, jau registruotas ir techniškai tvarkingas? Jei visos išlaidos – automobilis, mokesčiai, transportas, muitas, PVM, remontas, techninė apžiūra ir registracija – artimos šiai kainai, importas neapsimoka, nes prisiimate riziką ir laukimą dėl menko sutaupymo. Importas apsimoka, kai skirtumas yra bent 15–20 % arba kai tokio automobilio Europoje apskritai neįmanoma nusipirkti."
+      },
+      {
+        "h2": "Dokumentai, kuriuos reikia saugoti nuo pirmos dienos"
+      },
+      {
+        "ul": [
+          "Aukciono sąskaita ir apmokėjimo patvirtinimas",
+          "Brokerio sutartis ir sąskaitos už komisinį bei transportą",
+          "Title arba eksporto pažymėjimas",
+          "Konosamentas ir pervežimo sąskaita",
+          "Pervežimo draudimo polisas",
+          "Nuotraukos iš aukciono ir prieš pakrovimą"
+        ]
+      },
+      {
+        "p": "Šiuos dokumentus reikės muitinei muitinei vertei įrodyti ir registracijai Regitroje. Laikykite juos ir popieriuje, ir skaitmeniniu pavidalu viename aplanke. Jei vėliau automobilį parduosite, pilnas dokumentų aplankas padidins pirkėjo pasitikėjimą ir padės pagrįsti kainą, nes istorija skaidri ir įrodoma."
+      },
+      {
+        "p": "Taip pat prisiminkite perpardavimą. Automobiliai su JAV istorija ir salvage žyma Lietuvos rinkoje paprastai vertinami žemiau, o pirkėjai vis dažniau tikrina VIN istoriją. Jei planuojate automobilį po kelerių metų parduoti, į tai atsižvelkite jau dabar, įvertindami, kiek vertės prarasite, palyginti su Europoje pirktu automobiliu."
+      },
+      {
+        "h2": "Po laimėjimo aukcione"
+      },
+      {
+        "p": "Laimėję veikite greitai: sumokėkite laiku, susisiekite su brokeriu dėl paėmimo ir įsitikinkite, kad title dokumentas perduotas eksportuotojui. Kol automobilis plaukia, susiraskite servisą Lietuvoje, kuris jį pritaikys, ir pradėkite versti dokumentus – taip sutaupysite savaičių po automobilio atvykimo."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kiek reikia turėti atsargai?",
+        "a": "Bent 10–15 % visos sumos netikėtumams, nevažiuojantiems automobiliams daugiau."
+      },
+      {
+        "q": "Ar užtenka VIN ataskaitos?",
+        "a": "Ji būtina, bet ne visa – derinkite ją su nuotraukomis, būklės aprašymu ir remonto sąmata."
+      },
+      {
+        "q": "Ar galima apžiūrėti automobilį prieš statant?",
+        "a": "Kai kuriose aikštelėse galima, arba brokeris už mokestį gali nusiųsti inspektorių. Iš Lietuvos tai paprastai nepraktiška, todėl nuotraukos ir VIN ataskaita dar svarbesnės."
       }
     ]
   }

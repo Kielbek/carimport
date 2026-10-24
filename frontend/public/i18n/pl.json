@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Akcyza",
     "FORKLIFT_LOADING": "Załadunek wózkiem widłowym",
     "IMPORT_VAT": "VAT importowy",
-    "INDIVIDUAL_APPROVAL": "Homologacja jednostkowa (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Homologacja jednostkowa / badanie importowe",
     "INLAND_TRANSPORT": "Transport lądowy do portu",
     "INTRA_EU_ACQUISITION_VAT": "VAT WNT (odwrotne obciążenie, do odliczenia)",
     "INTRA_EU_TRANSPORT": "Transport lawetą z portu do kraju",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Szkoda w transporcie – udział własny w polisie",
     "RISK_HIDDEN_DAMAGE": "Ukryte usterki niewidoczne na aukcji",
     "RISK_TITLE_DELAY": "Opóźnienie dokumentu Title (dodatkowy postój)",
-    "RISK_EXPORT_DOCS_DELAY": "Opóźnienie dokumentów eksportowych"
+    "RISK_EXPORT_DOCS_DELAY": "Opóźnienie dokumentów eksportowych",
+    "REGISTRATION_TAX": "Podatek rejestracyjny",
+    "COC_CERTIFICATE": "Karta danych producenta / CoC"
   },
   "doc": {
     "billOfLading": "Konosament (Bill of Lading)",
@@ -154,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "Brak stawek podatkowych dla wybranego kraju."
-    }
+    },
+    "rateLimited": "Zbyt wiele zapytań w krótkim czasie – odczekaj chwilę i spróbuj ponownie."
   },
   "fuel": {
     "DIESEL": "Diesel",
@@ -195,8 +198,9 @@
     "redirecting": "Przekierowanie…",
     "secure": "Bezpieczna płatność Stripe. Nie przechowujemy danych karty.",
     "subtitle": "Kwoty co do grosza, podstawy i stawki podatków, dokumenty – w PDF z Twoim nazwiskiem.",
-    "terms": "Akceptuję regulamin i żądam dostarczenia treści cyfrowej przed upływem terminu odstąpienia.",
-    "title": "Pełny raport importu"
+    "terms": "Akceptuję regulamin i żądam dostarczenia raportu przed upływem 14-dniowego terminu na odstąpienie od umowy. Przyjmuję do wiadomości, że po jego dostarczeniu tracę prawo odstąpienia.",
+    "title": "Pełny raport importu",
+    "termsLink": "Regulamin"
   },
   "report": {
     "amount": "Kwota",
@@ -255,7 +259,18 @@
     "reportItem4": "Opłaty rejestracyjne i usługi po imporcie",
     "reportItem5": "Ryzyka z kwotami: optymistycznie, średnio, pesymistycznie",
     "reportItem6": "Plan krok po kroku z terminami i lista dokumentów",
-    "cheapestPort": "najtańszy port"
+    "cheapestPort": "najtańszy port",
+    "lockedEyebrow": "Pełny raport",
+    "lockedTitle": "Pełny koszt pod Twój dom",
+    "lockedLead": "Scenariusz optymistyczny, średni i pesymistyczny oraz {{count}} kolejnych pozycji: transport, dowóz, rejestracja i koszty ukryte.",
+    "unlockNote": "PDF od razu · bezpieczna płatność",
+    "freeTitle": "Cło, VAT i podatki – za darmo",
+    "freeLead": "Odprawa w porcie {{port}}. Kwoty, które policzysz na kartce.",
+    "freeBadge": "Bezpłatnie",
+    "freeBase": "Liczone od wartości celnej (cena, opłaty aukcyjne, transport do UE i ubezpieczenie) po dzisiejszym kursie.",
+    "lockedListTitle": "Policzyliśmy też – w raporcie",
+    "riskTag": "ryzyko",
+    "moreLocked": "+ {{count}} kolejnych pozycji, w tym koszty ukryte"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Kontener na wyłączność",
@@ -377,7 +392,15 @@
     "distanceRouted": "Trasa drogowa z portu {{port}} pod Twój adres.",
     "distanceEstimated": "Szacunek z portu {{port}} pod Twój adres (linia prosta × 1,25).",
     "distanceTypical": "Typowa odległość z portu {{port}} – podaj adres powyżej, by policzyć dokładnie.",
-    "tariffShort": "Rynek: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} załadunek, min. {{minimum}} {{cur}}."
+    "tariffShort": "Rynek: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} załadunek, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Z dokumentu CoC lub naklejki z okna. Od niej zależy większość podatków rejestracyjnych w UE.",
+    "powerKw": "Moc silnika",
+    "powerKwHint": "W kW (1 KM ≈ 0,74 kW). Liczy się w Belgii, we Włoszech i we Francji.",
+    "specTitle": "Od czego zależą podatki",
+    "specLead": "Proponujemy wartości z typu i silnika. Dokładne dane (z VIN lub CoC) mocno poprawiają wyliczenie podatku rejestracyjnego.",
+    "mass": "Masa własna",
+    "massHint": "W kg. Liczy się we Francji (malus od wagi) i w Estonii."
   },
   "layout": {
     "topbar": "Niezależny kalkulator kosztów importu aut z USA, Kanady, Japonii, ZEA i UK do 27 krajów UE",
@@ -416,7 +439,8 @@
     "language": "Język",
     "payments": "Płatności obsługuje Stripe (karta, BLIK, Przelewy24). Nie przechowujemy danych kart.",
     "rights": "Wszelkie prawa zastrzeżone.",
-    "disclaimer": "Wyliczenia mają charakter informacyjny i nie stanowią decyzji organu celnego ani porady podatkowej."
+    "disclaimer": "Wyliczenia mają charakter informacyjny i nie stanowią decyzji organu celnego ani porady podatkowej.",
+    "terms": "Regulamin"
   },
   "cookies": {
     "title": "Pliki cookie",
@@ -743,6 +767,10 @@
     "about": {
       "title": "O nas – niezależny kalkulator importu aut | CarImport.eu",
       "description": "Kim jesteśmy, skąd bierzemy dane i jak zarabiamy. CarImport.eu nie sprzedaje ani nie sprowadza aut – liczy pełny koszt importu uczciwie i niezależnie."
+    },
+    "terms": {
+      "title": "Regulamin | CarImport.eu",
+      "description": "Zasady korzystania z kalkulatora kosztów importu i zakupu raportu PDF: sprzedawca, płatność, dostarczenie, odstąpienie od umowy i reklamacje."
     }
   },
   "privacy": {
@@ -891,7 +919,18 @@
     "SERVICE_INSPECTION": "Olej, filtry, płyny, hamulce po długim transporcie",
     "GEOMETRY_ALIGNMENT": "Zalecane po naprawie zawieszenia",
     "DETAILING": "Mycie, pranie wnętrza, korekta lakieru",
-    "EXPERT_VALUATION": "Przydatna do AC i przy sprzedaży"
+    "EXPERT_VALUATION": "Przydatna do AC i przy sprzedaży",
+    "INDIVIDUAL_APPROVAL": "Auto z rynku spoza UE nie ma europejskiej homologacji – uprawniona stacja sprawdza je pod kątem przepisów UE ({{inspection}}).",
+    "REGISTRATION_FEE": "Opłaty urzędowe – {{authority}}: dowód rejestracyjny i tablice.",
+    "RDW_INSPECTION": "RDW sprawdza sprowadzone auto i jego tożsamość przed nadaniem holenderskiej rejestracji.",
+    "TECHNICAL_INSPECTION_IMPORT": "Rozszerzone badanie techniczne auta sprowadzonego z zagranicy na stacji kontroli pojazdów.",
+    "REG_TEMPORARY_PERMIT": "Pozwolenie czasowe na czas oczekiwania na dowód rejestracyjny.",
+    "REG_TEMPORARY_PLATES": "Tablice tymczasowe wydawane z pozwoleniem czasowym.",
+    "REG_CERTIFICATE": "Sam dowód rejestracyjny.",
+    "REG_PLATES": "Stałe tablice rejestracyjne.",
+    "REG_STICKER": "Naklejka kontrolna na szybę.",
+    "RECYCLING_FEE": "Jednorazowa opłata za auto wprowadzone przez osobę bez sieci recyklingu.",
+    "COC_CERTIFICATE": "Potrzebna do homologacji i rejestracji, gdy auto nie ma europejskiego świadectwa zgodności."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Terminal liczy postój za każdy dzień po okresie bezpłatnym, np. przy opóźnieniu dokumentów lub transportu.",
@@ -1277,6 +1316,118 @@
       "customs": "Cło i podatki",
       "registration": "Rejestracja",
       "logistics": "Transport i porty"
+    }
+  },
+  "portCost": {
+    "taxesAndFees": "Podatki i opłaty portowe",
+    "extra": "+{{amount}} {{cur}} od drzwi do drzwi",
+    "cheapestDoor": "najtaniej od drzwi do drzwi",
+    "rankingNote": "Kolejność według pełnego kosztu od drzwi do drzwi (podatki, fracht, port, dowóz pod Twój adres). Przy każdym porcie widzisz jego podatki i opłaty; pełne rozbicie jest w raporcie.",
+    "title": "Odprawa w porcie {{port}}: podatki i opłaty",
+    "dutyWhere": "Takie samo w każdym porcie UE – 10% wartości celnej (CIF)",
+    "vatWhere": "Płacisz w kraju portu: {{country}}",
+    "nationalWhere": "Płacisz w kraju rejestracji ({{country}}) – bez względu na wybrany port",
+    "notPriced": "Lokalny podatek rejestracyjny – kraj: {{country}}; zależy od CO₂ lub ceny, nie wliczony",
+    "portFees": "Opłaty portowe",
+    "portFeesWhat": "Obsługa terminalu, rozładunek i agencja celna",
+    "total": "Podatki i opłaty",
+    "howTitle": "Jak to liczymy",
+    "how1": "Wartość celna (CIF) = cena + opłaty aukcyjne + transport do portu w UE + ubezpieczenie.",
+    "how2": "Cło: 10% wartości celnej (pickupy 22%, motocykle 6–8%) – takie samo w każdym porcie UE.",
+    "how3": "VAT importowy płacisz w kraju portu, według jego stawki, od wartości celnej + cła + transportu do Twojego adresu. Używane auto odprawione poza krajem: {{country}} nie płaci VAT drugi raz w kraju.",
+    "how4": "Podatki kraju rejestracji (np. polska akcyza) płacisz w kraju – niezależnie od portu.",
+    "how5": "Ranking dolicza fracht, opłaty portowe i dowóz za km pod Twój adres – najtańsza suma jest na górze.",
+    "bestLabel": "Najbardziej opłacalny port:",
+    "bestSelected": "wybrany",
+    "bestChoose": "Wybierz – oszczędzasz {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Co musisz zrobić – {{country}}",
+    "noRegTaxName": "Podatek rejestracyjny",
+    "tax": {
+      "EXCISE": "Akcyza {{rate}}% od wartości celnej z cłem. Złóż deklarację AKC-U/S i zapłać w urzędzie skarbowym w ciągu 14 dni od wprowadzenia auta – przed rejestracją.",
+      "NONE": "Kraj rejestracji ({{country}}) nie pobiera jednorazowego podatku przy rejestracji – płacisz tylko opłaty urzędowe poniżej.",
+      "ESTIMATED": "Szacujemy go z emisji CO₂ ({{co2}} g/km), mocy ({{kw}} kW), wieku i wartości auta według tegorocznej tabeli. Ostateczną kwotę ustala urząd – jeśli ją znasz, wpisz ją.",
+      "OFFICIAL": "Ten podatek zależy od zbyt wielu szczegółów, żeby go rzetelnie oszacować. Policz go w oficjalnym kalkulatorze i wpisz kwotę – doliczymy ją do wyliczenia."
+    },
+    "taxAmount": "Podatek rejestracyjny",
+    "taxOwnHint": "Zostaw nasz szacunek albo wpisz kwotę z urzędu.",
+    "taxTypeHint": "Kwota z oficjalnego kalkulatora. Puste = nie wliczamy.",
+    "officialCalculator": "Oficjalny kalkulator",
+    "amountInReport": "kwota w raporcie",
+    "registerTitle": "Zarejestruj auto – {{authority}}",
+    "registerText": "Z badaniem ({{inspection}}), dowodem zapłaty podatku, dokumentami celnymi i tytułem własności.",
+    "deadline": "Termin: {{days}} dni.",
+    "canTitle": "Co możesz zrobić",
+    "canLead": "Nie wymaga tego prawo, ale prawie każdy import potrzebuje czegoś z tej listy. Zalecane pozycje są zaznaczone – odznacz to, co zrobisz sam."
+  },
+  "vin": {
+    "label": "Masz VIN? Uzupełnimy dane",
+    "placeholder": "17 znaków, np. 1FA6P8CF7K5100001",
+    "fill": "Uzupełnij z VIN",
+    "hint": "Z title, szyby lub ogłoszenia aukcji. Auta z Japonii mają numer nadwozia zamiast VIN – ich dane wpisz ręcznie.",
+    "filled": "Uzupełniliśmy dane z amerykańskiej bazy pojazdów (NHTSA) i EPA. Sprawdź pola poniżej – każde możesz zmienić.",
+    "filledOffline": "Odczytaliśmy tylko to, co zapisane w samym VIN. Reszta zostaje jako nasze propozycje – popraw je, jeśli znasz dane.",
+    "clear": "Usuń VIN",
+    "co2Epa": "EPA, przeliczone na g/km",
+    "massGvwr": "szacunek z klasy masy",
+    "madeIn": "Wyprodukowany",
+    "invalid": "VIN ma 17 liter i cyfr (nigdy I, O ani Q). Sprawdź, czy nie brakuje lub nie ma za dużo znaków.",
+    "w": {
+      "checkDigit": "Cyfra kontrolna się nie zgadza – prawdopodobnie literówka. Porównaj VIN z title.",
+      "notFound": "Baza pojazdów nie zna tego VIN (częste dla aut spoza Ameryki Północnej). Użyliśmy tego, co zapisane w samym VIN.",
+      "offline": "Baza pojazdów chwilowo nie odpowiada. Użyliśmy tego, co zapisane w samym VIN – spróbuj później, by dostać pełną specyfikację.",
+      "noCo2": "EPA nie podaje CO₂ dla tej wersji – zostaje nasz szacunek. Jeśli masz wartość z CoC, wpisz ją.",
+      "noPower": "Baza nie podaje mocy dla tego VIN – zostaje nasz szacunek."
+    }
+  },
+  "terms": {
+    "eyebrow": "Regulamin",
+    "title": "Regulamin serwisu i sprzedaży raportów",
+    "version": "Wersja z dnia {{version}}",
+    "s1": {
+      "title": "Sprzedawca i kontakt",
+      "text": "Serwis {{site}} prowadzi {{company}}, {{address}}, NIP {{taxId}}, {{registry}} (dalej: Sprzedawca).\nKontakt w każdej sprawie, także reklamacje: {{email}}. Odpowiadamy w ciągu 14 dni."
+    },
+    "s2": {
+      "title": "Czym jest serwis",
+      "text": "Serwis to niezależny kalkulator kosztów importu samochodów spoza Unii Europejskiej. Sprzedawca nie sprzedaje, nie kupuje ani nie sprowadza pojazdów i nie działa jako agencja celna.\nKalkulator jest bezpłatny i nie wymaga rejestracji. Płatny jest wyłącznie raport PDF opisany w pkt 4."
+    },
+    "s3": {
+      "title": "Charakter wyliczeń",
+      "text": "Wyliczenia mają charakter informacyjny. Opierają się na przepisach, stawkach i kursach walut (NBP) z dnia wyceny oraz na danych podanych przez użytkownika i typowych cenach usług.\nWyliczenie nie jest decyzją organu celnego ani podatkowego, wiążącą informacją taryfową ani poradą prawną lub podatkową. Ostateczne kwoty ustalają właściwe urzędy oraz przewoźnicy i inni usługodawcy."
+    },
+    "s4": {
+      "title": "Raport płatny – zamówienie i cena",
+      "text": "Raport to treść cyfrowa w formacie PDF przygotowywana automatycznie dla wybranej wyceny i opatrzona imieniem i nazwiskiem kupującego.\nCena jest podana przed zakupem w wybranej walucie i jest ceną końcową. Płatność obsługuje Stripe (karta, BLIK, Przelewy24 i inne metody wyświetlone przy płatności). Sprzedawca nie przechowuje danych kart.\nUmowa zostaje zawarta z chwilą potwierdzenia płatności."
+    },
+    "s5": {
+      "title": "Dostarczenie",
+      "text": "Raport jest dostępny od razu po potwierdzeniu płatności na stronie raportu i wysyłany na podany adres e-mail jako załącznik wraz z osobistym linkiem.\nWymagania techniczne: przeglądarka internetowa z włączonym JavaScriptem, aktywny adres e-mail i program do odczytu plików PDF.\nLink do raportu jest osobisty – nie należy go udostępniać osobom trzecim."
+    },
+    "s6": {
+      "title": "Prawo odstąpienia od umowy",
+      "text": "Konsument może odstąpić od umowy zawartej na odległość w ciągu 14 dni bez podania przyczyny.\nPrawo to nie przysługuje, jeżeli dostarczanie treści cyfrowej rozpoczęło się za wyraźną i uprzednią zgodą konsumenta, który został poinformowany, że po spełnieniu świadczenia traci prawo odstąpienia, i przyjął to do wiadomości (art. 38 ust. 1 pkt 13 ustawy o prawach konsumenta). Taką zgodę i oświadczenie kupujący składa przy zamówieniu, a ich potwierdzenie otrzymuje w wiadomości e-mail z raportem.\nTe same zasady stosuje się do osoby fizycznej zawierającej umowę bezpośrednio związaną z jej działalnością gospodarczą, gdy umowa nie ma dla niej charakteru zawodowego."
+    },
+    "s7": {
+      "title": "Reklamacje",
+      "text": "Sprzedawca odpowiada za zgodność raportu z umową. Jeżeli raport nie został dostarczony, jest nieczytelny albo nie odpowiada wycenie, za którą zapłacono, napisz na {{email}}, podając numer zamówienia lub adres e-mail użyty przy zakupie.\nSprzedawca rozpatruje reklamację w ciągu 14 dni. Jeśli jest zasadna, dostarcza poprawiony raport, a gdy nie jest to możliwe – zwraca zapłaconą cenę.\nKonsument może skorzystać z pozasądowych sposobów rozwiązywania sporów, np. pomocy miejskiego lub powiatowego rzecznika konsumentów albo wojewódzkiego inspektoratu Inspekcji Handlowej."
+    },
+    "s8": {
+      "title": "Odpowiedzialność",
+      "text": "Sprzedawca dokłada starań, aby stawki i dane były aktualne i poprawne, ale nie odpowiada za decyzje podjęte wyłącznie na podstawie wyliczeń ani za rozbieżności wynikające z decyzji urzędów, zmian przepisów i kursów po dniu wyceny, cen usługodawców lub błędnych danych podanych przez użytkownika.\nPostanowienie to nie ogranicza praw konsumenta wynikających z bezwzględnie obowiązujących przepisów."
+    },
+    "s9": {
+      "title": "Partnerzy",
+      "text": "Serwis może przedstawiać oferty partnerów (np. wymiana walut, historia pojazdu, importerzy). Część linków jest afiliacyjna – Sprzedawca może otrzymać prowizję, co nie wpływa na wyliczenia.\nDane kontaktowe są przekazywane partnerowi wyłącznie po wysłaniu formularza zapytania i za zgodą użytkownika. Umowy z partnerami zawiera się bezpośrednio z nimi."
+    },
+    "s10": {
+      "title": "Dane osobowe",
+      "text": "Zasady przetwarzania danych osobowych i plików cookie opisuje polityka prywatności."
+    },
+    "s11": {
+      "title": "Postanowienia końcowe",
+      "text": "Regulamin jest dostępny bezpłatnie na tej stronie w formie, która umożliwia jego pobranie i wydrukowanie.\nZmiana regulaminu nie dotyczy umów zawartych przed jej wejściem w życie.\nPrawem właściwym jest prawo polskie, co nie pozbawia konsumenta ochrony przysługującej mu na podstawie bezwzględnie obowiązujących przepisów państwa jego zwykłego pobytu."
     }
   }
 }

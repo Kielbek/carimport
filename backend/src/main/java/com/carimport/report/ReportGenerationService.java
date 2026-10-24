@@ -7,6 +7,7 @@ import java.time.Clock;
 import java.util.UUID;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -22,9 +23,11 @@ public class ReportGenerationService {
     private final PdfReportRenderer renderer;
     private final ReportStorage storage;
     private final Clock clock;
+    private final ApplicationEventPublisher events;
 
     public ReportGenerationService(ReportOrderRepository orders, QuoteRepository quotes, PdfReportRenderer renderer,
-                                   ReportStorage storage, Clock clock) {
+                                   ReportStorage storage, Clock clock, ApplicationEventPublisher events) {
+        this.events = events;
         this.orders = orders;
         this.quotes = quotes;
         this.renderer = renderer;
@@ -45,7 +48,7 @@ public class ReportGenerationService {
             String key = storage.store("reports/" + order.getPaidAt().toString().substring(0, 7) + "/"
                     + order.getId() + ".pdf", pdf);
             order.markReady(key, clock.instant());
-            // e-mail with the deep link is sent here (Spring Mail / transactional e-mail provider)
+            events.publishEvent(new ReportReadyEvent(order.getId())); // e-mail goes out after this commits
             log.info("Report {} generated ({} bytes)", orderId, pdf.length);
         } catch (RuntimeException e) {
             log.error("Report {} generation failed (attempt {})", orderId, order.getGenerationAttempts(), e);

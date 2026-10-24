@@ -3,13 +3,13 @@ package com.carimport.report;
 import com.carimport.calculation.CalculationResult;
 import com.carimport.calculation.QuoteRange;
 import com.carimport.domain.CurrencyCode;
-import com.carimport.payment.AccessTokens;
 import com.carimport.payment.CheckoutService;
 import com.carimport.payment.ReportOrder;
 import com.carimport.payment.ReportOrderRepository;
 import com.carimport.quote.QuoteRepository;
 import com.stripe.exception.StripeException;
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.AssertTrue;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -35,7 +35,9 @@ public class ReportOrderController {
 
     public record CheckoutRequest(@NotNull UUID quoteId, @Email @NotBlank String email,
                                   @NotBlank @Size(max = 120) String fullName, @NotNull CurrencyCode currency,
-                                  @NotBlank String locale) {
+                                  @NotBlank String locale,
+                                  @AssertTrue(message = "{validation.terms.required}") boolean termsAccepted,
+                                  @NotBlank @Size(max = 20) String termsVersion) {
     }
 
     public record CheckoutResponse(UUID orderId, String accessToken, String checkoutUrl) {
@@ -73,7 +75,8 @@ public class ReportOrderController {
 
     @PostMapping("/checkout")
     public CheckoutResponse checkout(@Valid @RequestBody CheckoutRequest req) throws StripeException {
-        var result = checkout.startCheckout(req.quoteId(), req.email(), req.fullName(), req.locale(), req.currency());
+        var result = checkout.startCheckout(req.quoteId(), req.email(), req.fullName(), req.locale(), req.currency(),
+                req.termsVersion());
         return new CheckoutResponse(result.orderId(), result.accessToken(), result.checkoutUrl());
     }
 
@@ -116,7 +119,7 @@ public class ReportOrderController {
         String token = authorization != null && authorization.startsWith("Bearer ")
                 ? authorization.substring(7) : null;
         return orders.findById(id)
-                .filter(o -> AccessTokens.matches(token, o.getAccessTokenHash()))
+                .filter(o -> o.acceptsToken(token))
                 // same response for "missing" and "wrong token" - no order enumeration
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }

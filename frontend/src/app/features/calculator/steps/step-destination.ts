@@ -13,6 +13,7 @@ import { Icon } from '../../../shared/icon/icon';
 import { CalculatorStore } from '../calculator.store';
 import { DELIVERY_MODES, EU_COUNTRIES } from '../calculator.options';
 import { ProposalInput } from '../proposal-input';
+import { COUNTRY_FACTS } from '../../guides/country-facts';
 
 const REGIONS: PortRegion[] = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'];
 const TOP = 5;
@@ -98,7 +99,7 @@ const TOP = 5;
           <app-icon name="loader" [size]="18" class="animate-spin" /> {{ 'wizard.portRankingLoading' | translate }}
         </div>
       } @else {
-        <ol class="mt-4 divide-y divide-line overflow-hidden rounded-[4px] border border-line" [class.opacity-60]="store.suggestionsLoading()">
+        <ol class="mt-4 divide-y divide-line overflow-hidden rounded-[4px] border border-line" [class.opacity-60]="store.suggestionsLoading() || !store.suggestionsCurrent()">
           @for (p of visible(); track p.code; let i = $index) {
             <li>
               <button type="button" class="grid w-full grid-cols-[1.5rem_minmax(0,1fr)_auto] items-center gap-x-3 gap-y-1 px-4 py-3 text-left transition hover:bg-panel-2 sm:grid-cols-[1.5rem_minmax(0,1fr)_7rem_6rem_9rem]"
@@ -124,10 +125,12 @@ const TOP = 5;
                 </span>
                 <span class="hidden text-sm text-muted sm:block">{{ p.daysMin }}–{{ p.daysMax }} {{ 'wizard.days' | translate }}</span>
                 <span class="text-right">
-                  <span class="block font-bold">≈ {{ p.total | localNumber: lang.locale() }} {{ currency() }}</span>
-                  @if (p.code !== best()) {
-                    <span class="block text-xs text-muted">+{{ p.total - bestTotal() | localNumber: lang.locale() }}</span>
-                  }
+                  <span class="block text-[11px] text-muted">{{ 'portCost.taxesAndFees' | translate }}</span>
+                  <span class="block font-bold">{{ p.taxes.total | localNumber: lang.locale() }} {{ currency() }}</span>
+                  <span class="block text-xs" [class]="p.extraVsBest ? 'text-muted' : 'font-semibold text-brand-text'">
+                    @if (p.extraVsBest) { {{ 'portCost.extra' | translate: { amount: (p.extraVsBest | localNumber: lang.locale()), cur: currency() } }} }
+                    @else { {{ 'portCost.cheapestDoor' | translate }} }
+                  </span>
                   <span class="block text-xs text-muted sm:hidden">{{ p.distanceKm | localNumber: lang.locale() }} km · {{ p.daysMin }}–{{ p.daysMax }} {{ 'wizard.days' | translate }}</span>
                 </span>
               </button>
@@ -154,7 +157,7 @@ const TOP = 5;
                         <app-flag [code]="p.countryCode" class="w-5 shrink-0" />
                         <span class="min-w-0 flex-1 truncate">{{ p.name }}</span>
                         <span class="text-xs text-muted">{{ p.distanceKm | localNumber: lang.locale() }} km</span>
-                        <span class="w-24 text-right font-semibold">≈ {{ p.total | localNumber: lang.locale() }}</span>
+                        <span class="w-28 text-right font-semibold">{{ p.taxes.total | localNumber: lang.locale() }}</span>
                       </button>
                     </li>
                   }
@@ -163,7 +166,68 @@ const TOP = 5;
             }
           </div>
         }
-        <p class="mt-3 text-xs text-muted">{{ 'wizard.portRankingNote' | translate }}</p>
+        <p class="mt-3 text-xs text-muted">{{ 'portCost.rankingNote' | translate }}</p>
+
+        <!-- what clearing in the selected port costs, and why -->
+        @if (store.selectedPort(); as p) {
+          <div class="mt-6 grid gap-6 rounded-[4px] border border-line p-5 lg:grid-cols-[1.1fr_1fr]">
+            <div>
+              <h4 class="flex items-center gap-2 font-extrabold">
+                <app-flag [code]="p.countryCode" class="w-6" /> {{ 'portCost.title' | translate: { port: p.name } }}
+              </h4>
+              <table class="mt-4 w-full text-sm">
+                <tbody>
+                  <tr class="border-b border-line">
+                    <td class="py-2 pr-3">{{ 'cost.CUSTOMS_DUTY' | translate }} <span class="text-muted">{{ pct(p.taxes.duty.rate) }}</span>
+                      <span class="block text-xs text-muted">{{ 'portCost.dutyWhere' | translate }}</span></td>
+                    <td class="py-2 text-right font-semibold tabular-nums">{{ p.taxes.duty.amount | localNumber: lang.locale() }}</td>
+                  </tr>
+                  <tr class="border-b border-line">
+                    <td class="py-2 pr-3">{{ 'cost.IMPORT_VAT' | translate }} <span class="text-muted">{{ pct(p.taxes.vat.rate) }}</span>
+                      <span class="block text-xs text-muted">{{ 'portCost.vatWhere' | translate: { country: (p.taxes.vat.country | countryName: lang.locale()) } }}</span></td>
+                    <td class="py-2 text-right font-semibold tabular-nums">{{ p.taxes.vat.amount | localNumber: lang.locale() }}</td>
+                  </tr>
+                  @for (t of p.taxes.national; track t.code) {
+                    <tr class="border-b border-line">
+                      <td class="py-2 pr-3">{{ 'cost.' + t.code | translate }} <span class="text-muted">{{ pct(t.rate) }}</span>
+                        <span class="block text-xs text-muted">{{ 'portCost.nationalWhere' | translate: { country: (t.country | countryName: lang.locale()) } }}</span></td>
+                      <td class="py-2 text-right font-semibold tabular-nums">{{ t.amount | localNumber: lang.locale() }}</td>
+                    </tr>
+                  }
+                  @if (!p.taxes.national.length && registrationTax() && store.suggestions()?.registrationTax === 'OFFICIAL_CALCULATOR') {
+                    <tr class="border-b border-line">
+                      <td class="py-2 pr-3">{{ registrationTax() }}
+                        <span class="block text-xs text-muted">{{ 'portCost.notPriced' | translate: { country: (s().destinationCountry | countryName: lang.locale()) } }}</span></td>
+                      <td class="py-2 text-right text-muted">–</td>
+                    </tr>
+                  }
+                  <tr class="border-b border-line">
+                    <td class="py-2 pr-3">{{ 'portCost.portFees' | translate }}
+                      <span class="block text-xs text-muted">{{ 'portCost.portFeesWhat' | translate }}</span></td>
+                    <td class="py-2 text-right font-semibold tabular-nums">{{ p.taxes.portFees | localNumber: lang.locale() }}</td>
+                  </tr>
+                  <tr>
+                    <td class="pt-3 font-extrabold">{{ 'portCost.total' | translate }}</td>
+                    <td class="pt-3 text-right text-lg font-extrabold tabular-nums">{{ p.taxes.total | localNumber: lang.locale() }} {{ currency() }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <details class="group rounded-[4px] bg-panel-2 p-4 text-sm leading-relaxed lg:self-start" open>
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-3 font-bold">
+                <span class="flex items-center gap-2"><app-icon name="info" [size]="16" class="text-brand-text" /> {{ 'portCost.howTitle' | translate }}</span>
+                <app-icon name="chevron-down" [size]="16" class="transition group-open:rotate-180" />
+              </summary>
+              <ol class="mt-3 list-decimal space-y-2 pl-5 text-fg/85">
+                <li>{{ 'portCost.how1' | translate }}</li>
+                <li>{{ 'portCost.how2' | translate }}</li>
+                <li>{{ 'portCost.how3' | translate: { country: (s().destinationCountry | countryName: lang.locale()) } }}</li>
+                <li>{{ 'portCost.how4' | translate }}</li>
+                <li>{{ 'portCost.how5' | translate }}</li>
+              </ol>
+            </details>
+          </div>
+        }
       }
     </section>
 
@@ -194,6 +258,26 @@ const TOP = 5;
                             [hintParams]="{ port: portName() }"
                             [value]="s().deliveryDistanceKm" [proposal]="store.proposedDistance()"
                             (changed)="store.patch({ deliveryDistanceKm: $event })" />
+        @if (bestPort(); as b) {
+          <div class="flex flex-wrap items-center justify-between gap-3 rounded-[4px] border px-4 py-3 text-sm sm:col-span-2"
+               [class]="b.code === s().euPortCode ? 'border-brand/40 bg-brand/5' : 'border-brand bg-brand/10'">
+            <span class="flex items-center gap-2.5">
+              <app-icon name="sparkles" [size]="16" class="text-brand-text" />
+              <span>
+                <span class="font-bold">{{ 'portCost.bestLabel' | translate }}</span>
+                <app-flag [code]="b.countryCode" class="mx-1.5 w-5 align-[-2px]" /> <span class="font-semibold">{{ b.name }}</span>
+                <span class="text-muted"> · {{ b.distanceKm | localNumber: lang.locale() }} km</span>
+              </span>
+            </span>
+            @if (b.code === s().euPortCode) {
+              <span class="flex items-center gap-1.5 text-xs font-semibold text-brand-text"><app-icon name="check" [size]="14" [stroke]="3" /> {{ 'portCost.bestSelected' | translate }}</span>
+            } @else {
+              <button type="button" class="btn btn-primary !px-3 !py-1.5 text-xs" (click)="store.useRecommendedPort()">
+                {{ 'portCost.bestChoose' | translate: { amount: (savingVsSelected() | localNumber: lang.locale()), cur: currency() } }}
+              </button>
+            }
+          </div>
+        }
         <div>
           @if (store.roadRate(); as r) {
             <app-proposal-input inputId="rate" label="wizard.pricePerKm" [unit]="r.currency + '/km'" [step]="0.05"
@@ -243,7 +327,11 @@ export class StepDestination {
   protected readonly all = signal(false);
   protected readonly ranking = computed(() => this.store.suggestions()?.ports ?? []);
   protected readonly best = computed(() => this.ranking()[0]?.code ?? null);
-  protected readonly bestTotal = computed(() => this.ranking()[0]?.total ?? 0);
+  protected readonly bestPort = computed(() => this.ranking()[0] ?? null);
+  /** Door-to-door saving of the cheapest port against the selected one. */
+  protected readonly savingVsSelected = computed(() => this.store.selectedPort()?.extraVsBest ?? 0);
+  /** Local registration tax of the destination when the calculator does not price it (named only). */
+  protected readonly registrationTax = computed(() => COUNTRY_FACTS[this.s().destinationCountry]?.registrationTax ?? null);
   protected readonly currency = computed(() => this.store.suggestions()?.currency ?? this.s().displayCurrency);
   /** Top 5, plus the selected port if it is further down. */
   protected readonly visible = computed(() => {
@@ -321,7 +409,17 @@ export class StepDestination {
     if (this.s().destinationAddress) {
       this.store.setAddress(null);
     }
-    this.store.patch({ destinationCountry: code, deliveryDistanceKm: null, pricePerKm: null, postImportServices: null });
+    this.store.patch({
+      destinationCountry: code,
+      deliveryDistanceKm: null,
+      pricePerKm: null,
+      postImportServices: null,
+      registrationTaxOwn: null,
+    });
+  }
+
+  protected pct(rate: number | null): string {
+    return rate == null ? '' : new Intl.NumberFormat(this.lang.locale(), { style: 'percent', maximumFractionDigits: 2 }).format(rate);
   }
 
   protected value(e: Event): string {

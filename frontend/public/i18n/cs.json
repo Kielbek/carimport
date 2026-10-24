@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Spotřební daň",
     "FORKLIFT_LOADING": "Nakládka vysokozdvižným vozíkem",
     "IMPORT_VAT": "DPH při dovozu",
-    "INDIVIDUAL_APPROVAL": "Individuální schválení (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Individuální schválení / dovozní kontrola",
     "INLAND_TRANSPORT": "Vnitrozemská doprava do přístavu",
     "INTRA_EU_ACQUISITION_VAT": "DPH z pořízení zboží v rámci EU (reverse charge, odpočitatelná)",
     "INTRA_EU_TRANSPORT": "Autotransportér z přístavu do cílové země",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Poškození při přepravě – spoluúčast pojištění",
     "RISK_HIDDEN_DAMAGE": "Skryté vady neviditelné na aukci",
     "RISK_TITLE_DELAY": "Zpoždění titulu (další skladné)",
-    "RISK_EXPORT_DOCS_DELAY": "Zpoždění exportních dokumentů"
+    "RISK_EXPORT_DOCS_DELAY": "Zpoždění exportních dokumentů",
+    "REGISTRATION_TAX": "Registrační daň",
+    "COC_CERTIFICATE": "Technický list výrobce / CoC"
   },
   "doc": {
     "billOfLading": "Konosament (Bill of Lading)",
@@ -255,7 +257,18 @@
     "reportItem4": "Registrační poplatky a služby po dovozu",
     "reportItem5": "Rizika v částkách: optimistický, průměrný, pesimistický scénář",
     "reportItem6": "Plán krok za krokem se lhůtami a seznamem dokumentů",
-    "cheapestPort": "nejlevnější přístav"
+    "cheapestPort": "nejlevnější přístav",
+    "lockedEyebrow": "Úplný report",
+    "lockedTitle": "Celkové náklady až k vašim dveřím",
+    "lockedLead": "Optimistický, průměrný a pesimistický scénář a dalších {{count}} položek: doprava, dovoz, registrace a skryté náklady.",
+    "unlockNote": "PDF ihned · bezpečná platba",
+    "freeTitle": "Clo, DPH a daně – zdarma",
+    "freeLead": "Proclení – přístav {{port}}. Částky, které byste spočítali na papíře.",
+    "freeBadge": "Zdarma",
+    "freeBase": "Počítáno z celní hodnoty (cena, aukční poplatky, doprava do EU a pojištění) podle dnešního kurzu.",
+    "lockedListTitle": "Spočítali jsme také – v reportu",
+    "riskTag": "riziko",
+    "moreLocked": "+ dalších {{count}} položek vč. skrytých nákladů"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Vlastní kontejner",
@@ -377,7 +390,15 @@
     "distanceRouted": "Silniční trasa z {{port}} na vaši adresu.",
     "distanceEstimated": "Odhad z {{port}} na vaši adresu (vzdušná čára × 1,25).",
     "distanceTypical": "Obvyklá vzdálenost z {{port}} – pro přesný údaj zadejte adresu výše.",
-    "tariffShort": "Trh: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} nakládka, min. {{minimum}} {{cur}}."
+    "tariffShort": "Trh: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} nakládka, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Z dokumentu CoC nebo nálepky na okně. Odvíjí se od nich většina registračních daní v EU.",
+    "powerKw": "Výkon motoru",
+    "powerKwHint": "V kW (1 k ≈ 0,74 kW). Počítá se s ním v Belgii, Itálii a Francii.",
+    "specTitle": "Na čem závisí daně",
+    "specLead": "Navrženo podle typu a motoru. Přesné údaje (z VIN nebo CoC) výrazně zpřesní výpočet registrační daně.",
+    "mass": "Pohotovostní hmotnost",
+    "massHint": "V kg. Počítá se s ní ve Francii (malus za hmotnost) a v Estonsku."
   },
   "layout": {
     "topbar": "Nezávislá kalkulačka nákladů na dovoz aut z USA, Kanady, Japonska, SAE a Velké Británie do 27 zemí EU",
@@ -891,7 +912,18 @@
     "SERVICE_INSPECTION": "Olej, filtry, kapaliny, brzdy po dlouhé cestě",
     "GEOMETRY_ALIGNMENT": "Doporučeno po opravách podvozku",
     "DETAILING": "Mytí, čištění interiéru, korekce laku",
-    "EXPERT_VALUATION": "Užitečné pro havarijní pojištění a další prodej"
+    "EXPERT_VALUATION": "Užitečné pro havarijní pojištění a další prodej",
+    "INDIVIDUAL_APPROVAL": "Auto vyrobené pro trh mimo EU nemá evropské schválení typu – autorizovaná stanice ho prověří podle pravidel EU ({{inspection}}).",
+    "REGISTRATION_FEE": "Úřední poplatky – {{authority}}: osvědčení o registraci a registrační značky.",
+    "RDW_INSPECTION": "RDW prověří dovezené auto a jeho identitu dříve, než dostane nizozemskou registraci.",
+    "TECHNICAL_INSPECTION_IMPORT": "Rozšířená technická kontrola auta dovezeného ze zahraničí na stanici technické kontroly.",
+    "REG_TEMPORARY_PERMIT": "Dočasné povolení na dobu, než bude osvědčení o registraci hotové.",
+    "REG_TEMPORARY_PLATES": "Dočasné značky vydávané s dočasným povolením.",
+    "REG_CERTIFICATE": "Samotné osvědčení o registraci.",
+    "REG_PLATES": "Trvalé registrační značky.",
+    "REG_STICKER": "Kontrolní nálepka na čelní sklo.",
+    "RECYCLING_FEE": "Jednorázový poplatek za auto dovezené někým, kdo nemá síť pro recyklaci.",
+    "COC_CERTIFICATE": "Potřebný ke schválení a registraci, pokud auto nemá evropský certifikát shody."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Terminál po uplynutí bezplatné doby účtuje poplatek za každý den, např. když se zpozdí dokumenty nebo doprava.",
@@ -1277,6 +1309,69 @@
       "customs": "Clo a daně",
       "registration": "Registrace",
       "logistics": "Doprava a přístavy"
+    }
+  },
+  "portCost": {
+    "taxesAndFees": "Daně a přístavní poplatky",
+    "extra": "+{{amount}} {{cur}} ode dveří ke dveřím",
+    "cheapestDoor": "nejlevněji ode dveří ke dveřím",
+    "rankingNote": "Seřazeno podle celkových nákladů ode dveří ke dveřím (daně, námořní doprava, přístav, dovoz na vaši adresu). U každého přístavu vidíte jeho daně a poplatky; úplný rozpis je v reportu.",
+    "title": "Proclení – přístav {{port}}: daně a poplatky",
+    "dutyWhere": "Stejné ve všech přístavech EU – 10 % celní hodnoty (CIF)",
+    "vatWhere": "Platí se v zemi přístavu: {{country}}",
+    "nationalWhere": "Platí se v zemi registrace ({{country}}) – bez ohledu na zvolený přístav",
+    "notPriced": "Místní registrační daň – země: {{country}}; závisí na CO₂ nebo ceně, není zahrnuta",
+    "portFees": "Přístavní poplatky",
+    "portFeesWhat": "Manipulace v terminálu, vykládka a celní deklarant",
+    "total": "Daně a poplatky",
+    "howTitle": "Jak počítáme",
+    "how1": "Celní hodnota (CIF) = cena + aukční poplatky + doprava do přístavu EU + pojištění.",
+    "how2": "Clo: 10 % celní hodnoty (pick-upy 22 %, motocykly 6–8 %) – stejné ve všech přístavech EU.",
+    "how3": "DPH při dovozu platíte v zemi přístavu, podle její sazby, z celní hodnoty + cla + dopravy na vaši adresu. Ojeté auto proclené mimo zemi registrace ({{country}}) doma DPH znovu neplatí.",
+    "how4": "Národní daně země registrace (např. polskou spotřební daň) platíte doma – bez ohledu na přístav.",
+    "how5": "Pořadí připočítává námořní dopravu, přístavní poplatky a dovoz za km na vaši adresu – nejlevnější součet je nahoře.",
+    "bestLabel": "Nejvýhodnější přístav:",
+    "bestSelected": "vybráno",
+    "bestChoose": "Vybrat – ušetříte {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Co musíte udělat – {{country}}",
+    "noRegTaxName": "Registrační daň",
+    "tax": {
+      "EXCISE": "Spotřební daň {{rate}} % z celní hodnoty včetně cla. Podejte přiznání AKC-U/S a zaplaťte na finančním úřadě do 14 dnů od dovozu auta – před registrací.",
+      "NONE": "Země registrace ({{country}}): žádná jednorázová daň při registraci – jen úřední poplatky níže.",
+      "ESTIMATED": "Odhadujeme ji z CO₂ ({{co2}} g/km), výkonu ({{kw}} kW), stáří a hodnoty auta podle letošního sazebníku. Rozhoduje finanční úřad – pokud znáte jeho částku, zadejte ji.",
+      "OFFICIAL": "Tato daň závisí na příliš mnoha detailech, než aby šla poctivě odhadnout. Spočítejte ji v oficiální kalkulačce a zadejte částku – připočteme ji do výpočtu."
+    },
+    "taxAmount": "Registrační daň",
+    "taxOwnHint": "Ponechte náš odhad, nebo zadejte částku od finančního úřadu.",
+    "taxTypeHint": "Částka z oficiální kalkulačky. Prázdné = nezapočteno.",
+    "officialCalculator": "Oficiální kalkulačka",
+    "amountInReport": "částka v reportu",
+    "registerTitle": "Zaregistrujte auto – {{authority}}",
+    "registerText": "S kontrolou ({{inspection}}), dokladem o zaplacení daně, celními doklady a titulem (doklad o vlastnictví).",
+    "deadline": "Lhůta: {{days}} dní.",
+    "canTitle": "Co můžete udělat",
+    "canLead": "Zákon to nevyžaduje, ale téměř každý dovoz potřebuje něco z toho. Doporučené položky jsou zaškrtnuté – odškrtněte, co uděláte sami."
+  },
+  "vin": {
+    "label": "Máte VIN? Doplníme údaje",
+    "placeholder": "17 znaků, např. 1FA6P8CF7K5100001",
+    "fill": "Doplnit z VIN",
+    "hint": "Z titulu, z čelního skla nebo z inzerátu aukce. Auta z Japonska mají místo VIN číslo karoserie – jejich údaje zadejte ručně.",
+    "filled": "Doplněno z americké databáze vozidel (NHTSA) a EPA. Zkontrolujte pole níže – každé můžete změnit.",
+    "filledOffline": "Přečetli jsme jen to, co je zakódováno přímo ve VIN. Zbytek zůstává jako naše návrhy – opravte je, pokud údaje znáte.",
+    "clear": "Odstranit VIN",
+    "co2Epa": "EPA, přepočteno na g/km",
+    "massGvwr": "odhad z hmotnostní třídy",
+    "madeIn": "Vyrobeno v",
+    "invalid": "VIN má 17 písmen a číslic (nikdy I, O ani Q). Zkontrolujte, zda nějaký znak nechybí nebo nepřebývá.",
+    "w": {
+      "checkDigit": "Kontrolní číslice nesouhlasí – nejspíš překlep. Porovnejte VIN s titulem.",
+      "notFound": "Databáze vozidel tento VIN nezná (běžné u aut vyrobených mimo Severní Ameriku). Použili jsme to, co je zakódováno přímo ve VIN.",
+      "offline": "Databáze vozidel teď neodpovídá. Použili jsme to, co je zakódováno přímo ve VIN – pro úplnou specifikaci to zkuste později.",
+      "noCo2": "EPA pro tuto verzi neuvádí CO₂ – ponecháváme náš odhad. Máte-li hodnotu z CoC, zadejte ji.",
+      "noPower": "Výkon pro tento VIN v databázi není – ponecháváme náš odhad."
     }
   }
 }

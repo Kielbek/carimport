@@ -45,7 +45,7 @@ public class CheckoutService {
 
     @Transactional
     public CheckoutResult startCheckout(UUID quoteId, String email, String fullName, String locale,
-                                        CurrencyCode currency) throws StripeException {
+                                        CurrencyCode currency, String termsVersion) throws StripeException {
         Instant now = clock.instant();
         Quote quote = quotes.findById(quoteId)
                 .filter(q -> !q.isExpired(now))
@@ -56,8 +56,10 @@ public class CheckoutService {
         }
 
         String token = AccessTokens.generate();
-        ReportOrder order = orders.save(new ReportOrder(quote.getId(), email, fullName, locale, price, currency,
-                AccessTokens.hash(token), now));
+        ReportOrder created = new ReportOrder(quote.getId(), email, fullName, locale, price, currency,
+                AccessTokens.hash(token), now);
+        created.acceptTerms(termsVersion, now);
+        ReportOrder order = orders.save(created);
 
         String returnBase = props.frontendUrl() + "/" + locale + "/report/" + order.getId();
         SessionCreateParams params = SessionCreateParams.builder()

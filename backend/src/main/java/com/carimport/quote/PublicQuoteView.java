@@ -18,61 +18,64 @@ import java.util.Set;
 import java.util.UUID;
 
 /**
- * Free tier: rounded totals of the three scenarios, whole-percent category shares, the lead time, which positions are
- * included (names only) and which risks were considered (with probability). Deliberately carries no amounts per line,
- * rates or tax bases - those are what the paid report sells, so they never leave the server unpaid.
+ * Free tier: the numbers anyone could work out on paper - customs duty, import VAT of the port country, the national
+ * tax of the country of registration and the port fees, each with rate and country - plus the names of everything
+ * else the full calculation includes. The door-to-door total, the three scenarios, transport and delivery, registration
+ * and hidden costs are what the paid report sells, so they never leave the server unpaid.
+ *
+ * @param lockedItems names (cost.* codes) of the positions computed but only shown in the report, per category
+ * @param risks       risk codes considered (names only)
+ * @param lockedCount number of report lines that are hidden in the free result
  */
 public record PublicQuoteView(
         UUID quoteId,
-        BigDecimal rangeMin,
-        BigDecimal rangeMax,
         CurrencyCode currency,
-        Scenarios scenarios,
-        Map<CostCategory, Integer> sharePercent,
-        Map<CostCategory, List<String>> includedItems,
-        List<RiskInfo> risks,
-        boolean exciseApplies,
+        TaxSummary taxes,
+        String clearancePort,
+        String clearanceCountry,
+        String destinationCountry,
+        Map<CostCategory, List<String>> lockedItems,
+        List<String> risks,
+        int lockedCount,
         int transitDays,
-        CalculationResult.Timeline timeline,
-        int deliveryKm,
         LocalDate fxDate,
         Set<String> warnings,
         Instant expiresAt) {
 
-    /** Optimistic is rounded down, pessimistic up, average to the nearest step. */
-    public record Scenarios(BigDecimal optimistic, BigDecimal average, BigDecimal pessimistic) {
-    }
-
-    public record RiskInfo(String code, int probabilityPercent) {
-    }
-
     private static final BigDecimal ROUNDING_STEP = new BigDecimal("100");
+    private static final Set<String> FREE_CODES = Set.of("CUSTOMS_DUTY", "IMPORT_VAT", "EXCISE_TAX", "REGISTRATION_TAX", "PORT_UNLOADING",
+            "CUSTOMS_AGENCY");
 
-    public static PublicQuoteView of(UUID quoteId, QuoteRange range, Instant expiresAt) {
+    public static PublicQuoteView of(UUID quoteId, QuoteRange range, String destinationCountry, Instant expiresAt) {
         CalculationResult expected = range.expected();
-        Map<CostCategory, List<String>> items = new EnumMap<>(CostCategory.class);
-        List<RiskInfo> risks = new ArrayList<>();
+        String clearanceCountry = expected.lines().stream()
+                .filter(l -> l.line().code().equals("IMPORT_VAT"))
+                .map(l -> l.line().params().get("country"))
+                .findFirst().orElse(destinationCountry);
+        Map<CostCategory, List<String>> locked = new EnumMap<>(CostCategory.class);
+        List<String> risks = new ArrayList<>();
+        int lockedCount = 0;
         for (CalculationResult.Line l : expected.lines()) {
             if (l.line().category() == CostCategory.RISK) {
-                risks.add(new RiskInfo(l.line().code(), Integer.parseInt(l.line().params().get("probability"))));
-            } else if (l.line().includedInTotal()) {
-                items.computeIfAbsent(l.line().category(), c -> new ArrayList<>()).add(l.line().code());
+                risks.add(l.line().code());
+                lockedCount++;
+            } else if (l.line().includedInTotal() && !FREE_CODES.contains(l.line().code())
+                    && !l.line().code().equals("PURCHASE_PRICE")) {
+                locked.computeIfAbsent(l.line().category(), c -> new ArrayList<>()).add(l.line().code());
+                lockedCount++;
             }
         }
         return new PublicQuoteView(
                 quoteId,
-                floorToStep(range.low().total()),
-                ceilToStep(range.high().total()),
                 expected.displayCurrency(),
-                new Scenarios(floorToStep(range.low().total()), roundToStep(expected.total()),
-                        ceilToStep(range.high().total())),
-                shares(expected.totalsByCategory(), expected.total()),
-                items,
+                TaxSummary.of(expected, clearanceCountry, destinationCountry),
+                expected.route().euPortName(),
+                clearanceCountry,
+                destinationCountry,
+                locked,
                 risks,
-                expected.lines().stream().anyMatch(l -> l.line().code().equals("EXCISE_TAX") && !l.display().isZero()),
+                lockedCount,
                 expected.route().transitDays(),
-                expected.timeline(),
-                expected.deliveryKm(),
                 expected.fxDate(),
                 expected.warnings(),
                 expiresAt);

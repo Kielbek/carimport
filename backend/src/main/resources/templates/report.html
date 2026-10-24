@@ -46,6 +46,12 @@
         <td th:text="${result.timeline().totalMin()} + '–' + ${result.timeline().totalMax()} + ' ' + #{report.days}">days</td>
         <td class="k" th:text="${request.destinationAddress() != null} ? #{report.address} : ''"></td>
         <td th:text="${request.destinationAddress()}"></td></tr>
+    <tr><td class="k" th:text="#{report.vehicle}">Vehicle</td>
+        <td colspan="3" th:text="${(request.vehicleDescription() != null ? request.vehicleDescription() + ' · ' : '')
+                + (request.vin() != null ? 'VIN ' + request.vin() + ' · ' : '')
+                + request.engineCc() + ' cm³ · ' + request.effectivePowerKw() + ' kW · CO₂ ' + request.effectiveCo2()
+                + ' g/km · ' + request.effectiveMassKg() + ' kg'}">vehicle</td>
+        <td></td><td></td></tr>
 </table>
 
 <th:block th:if="${table != null}">

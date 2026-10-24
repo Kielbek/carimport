@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Accize",
     "FORKLIFT_LOADING": "Încărcare cu stivuitorul",
     "IMPORT_VAT": "TVA la import",
-    "INDIVIDUAL_APPROVAL": "Omologare individuală (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Omologare individuală / inspecție de import",
     "INLAND_TRANSPORT": "Transport intern până în port",
     "INTRA_EU_ACQUISITION_VAT": "TVA la achiziția intracomunitară (taxare inversă, deductibilă)",
     "INTRA_EU_TRANSPORT": "Trailer auto din port până la destinație",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Daune în transport – franșiza asigurării",
     "RISK_HIDDEN_DAMAGE": "Daune ascunse, nevizibile la licitație",
     "RISK_TITLE_DELAY": "Întârzierea titlului (depozitare suplimentară)",
-    "RISK_EXPORT_DOCS_DELAY": "Întârzierea documentelor de export"
+    "RISK_EXPORT_DOCS_DELAY": "Întârzierea documentelor de export",
+    "REGISTRATION_TAX": "Taxă de înmatriculare",
+    "COC_CERTIFICATE": "Fișa tehnică a producătorului / CoC"
   },
   "doc": {
     "billOfLading": "Conosament (Bill of Lading)",
@@ -255,7 +257,18 @@
     "reportItem4": "Taxe de înmatriculare și servicii după import",
     "reportItem5": "Riscuri cu sume: optimist, mediu, pesimist",
     "reportItem6": "Plan pas cu pas cu termene și lista documentelor",
-    "cheapestPort": "cel mai ieftin port"
+    "cheapestPort": "cel mai ieftin port",
+    "lockedEyebrow": "Raport complet",
+    "lockedTitle": "Costul total până la ușa ta",
+    "lockedLead": "Scenariu optimist, mediu și pesimist plus încă {{count}} poziții: transport, livrare, înmatriculare și costuri ascunse.",
+    "unlockNote": "PDF imediat · plată securizată",
+    "freeTitle": "Taxe vamale, TVA și impozite – gratuit",
+    "freeLead": "Vămuire în {{port}}. Sumele pe care le-ai putea calcula pe hârtie.",
+    "freeBadge": "Gratuit",
+    "freeBase": "Calculat la valoarea în vamă (preț, taxe de licitație, transport în UE și asigurare) la cursul de schimb de azi.",
+    "lockedListTitle": "Calculat și – în raport",
+    "riskTag": "risc",
+    "moreLocked": "+ încă {{count}} poziții, inclusiv costuri ascunse"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Container exclusiv",
@@ -377,7 +390,15 @@
     "distanceRouted": "Traseu rutier de la {{port}} până la adresa ta.",
     "distanceEstimated": "Estimare de la {{port}} până la adresa ta (linie dreaptă × 1,25).",
     "distanceTypical": "Distanța tipică de la {{port}} – introdu adresa mai sus pentru o valoare exactă.",
-    "tariffShort": "Piață: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} încărcare, min. {{minimum}} {{cur}}."
+    "tariffShort": "Piață: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} încărcare, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Din CoC sau de pe eticheta de pe geam. De ele depind majoritatea taxelor de înmatriculare din UE.",
+    "powerKw": "Puterea motorului",
+    "powerKwHint": "În kW (1 CP ≈ 0,74 kW). Contează în Belgia, Italia și Franța.",
+    "specTitle": "De ce depind taxele",
+    "specLead": "Propus pe baza tipului și a motorului. Datele exacte (din VIN sau CoC) fac taxa de înmatriculare mult mai precisă.",
+    "mass": "Masa proprie",
+    "massHint": "În kg. Contează în Franța (malus pentru greutate) și în Estonia."
   },
   "layout": {
     "topbar": "Calculator independent al costurilor de import auto din SUA, Canada, Japonia, EAU și Regatul Unit în cele 27 de țări UE",
@@ -891,7 +912,18 @@
     "SERVICE_INSPECTION": "Ulei, filtre, lichide, frâne după un drum lung",
     "GEOMETRY_ALIGNMENT": "Recomandată după reparații la suspensie",
     "DETAILING": "Spălare, curățarea interiorului, corecția vopselei",
-    "EXPERT_VALUATION": "Util pentru CASCO și la revânzare"
+    "EXPERT_VALUATION": "Util pentru CASCO și la revânzare",
+    "INDIVIDUAL_APPROVAL": "O mașină construită pentru o piață din afara UE nu are omologare de tip UE – o stație autorizată o verifică după regulile UE ({{inspection}}).",
+    "REGISTRATION_FEE": "Taxe oficiale – {{authority}}: certificat de înmatriculare și plăcuțe.",
+    "RDW_INSPECTION": "RDW verifică mașina importată și identitatea ei înainte ca aceasta să primească numere olandeze.",
+    "TECHNICAL_INSPECTION_IMPORT": "Inspecție tehnică extinsă a unei mașini aduse din străinătate, la o stație de inspecție.",
+    "REG_TEMPORARY_PERMIT": "Autorizație provizorie până când certificatul de înmatriculare este gata.",
+    "REG_TEMPORARY_PLATES": "Numere provizorii eliberate odată cu autorizația provizorie.",
+    "REG_CERTIFICATE": "Certificatul de înmatriculare propriu-zis.",
+    "REG_PLATES": "Plăcuțe de înmatriculare definitive.",
+    "REG_STICKER": "Autocolant de control pe parbriz.",
+    "RECYCLING_FEE": "Taxă unică pentru o mașină adusă de cineva fără rețea de reciclare.",
+    "COC_CERTIFICATE": "Necesară pentru omologare și înmatriculare când mașina nu are certificat de conformitate UE."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Terminalul taxează pe zi după perioada gratuită, de ex. când documentele sau transportul întârzie.",
@@ -1277,6 +1309,69 @@
       "customs": "Vamă și taxe",
       "registration": "Înmatriculare",
       "logistics": "Transport și porturi"
+    }
+  },
+  "portCost": {
+    "taxesAndFees": "Taxe și tarife portuare",
+    "extra": "+{{amount}} {{cur}} din ușă în ușă",
+    "cheapestDoor": "cel mai ieftin din ușă în ușă",
+    "rankingNote": "Sortat după costul total din ușă în ușă (taxe, navlu, port, livrare la adresa ta). Fiecare port își arată taxele și tarifele portuare; detalierea completă este în raport.",
+    "title": "Vămuire în {{port}}: taxe și tarife",
+    "dutyWhere": "La fel în toate porturile UE – 10% din valoarea în vamă (CIF)",
+    "vatWhere": "Se plătește în țara portului: {{country}}",
+    "nationalWhere": "Se plătesc în țara de înmatriculare ({{country}}), indiferent de port",
+    "notPriced": "Taxă locală de înmatriculare – țara: {{country}}; depinde de CO₂ sau de preț, neinclusă",
+    "portFees": "Tarife portuare",
+    "portFeesWhat": "Manipulare în terminal, descărcare și agent vamal",
+    "total": "Taxe și tarife",
+    "howTitle": "Cum calculăm",
+    "how1": "Valoarea în vamă (CIF) = preț + taxe de licitație + transport până în portul UE + asigurare.",
+    "how2": "Taxe vamale: 10% din valoarea în vamă (pickup-uri 22%, motociclete 6–8%) – identice în toate porturile UE.",
+    "how3": "TVA la import se plătește în țara portului, la cota acesteia, la valoarea în vamă + taxe vamale + transport până la adresa ta. O mașină second-hand vămuită în afara țării de înmatriculare ({{country}}) nu mai plătește TVA încă o dată acasă.",
+    "how4": "Taxele naționale ale țării de înmatriculare (de ex. acciza poloneză) se plătesc acasă, indiferent de port.",
+    "how5": "Clasamentul adaugă navlul, tarifele portuare și livrarea pe km până la adresa ta – totalul cel mai ieftin apare primul.",
+    "bestLabel": "Cel mai avantajos port:",
+    "bestSelected": "selectat",
+    "bestChoose": "Alege – economisești {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Ce trebuie să faci – {{country}}",
+    "noRegTaxName": "Taxă de înmatriculare",
+    "tax": {
+      "EXCISE": "Acciză de {{rate}}% din valoarea în vamă plus taxa vamală. Depune declarația AKC-U/S și plătește la fisc în 14 zile de la intrarea mașinii – înainte de înmatriculare.",
+      "NONE": "Țara de înmatriculare ({{country}}): fără taxă unică la înmatriculare – doar taxele oficiale de mai jos.",
+      "ESTIMATED": "O estimăm din CO₂ ({{co2}} g/km), putere ({{kw}} kW), vechimea și valoarea mașinii, după grila din acest an. Ultimul cuvânt îl are fiscul – dacă știi suma, introdu-o.",
+      "OFFICIAL": "Taxa aceasta depinde de prea multe detalii ca s-o estimăm corect. Calculeaz-o în calculatorul oficial și introdu suma – o adăugăm la calcul."
+    },
+    "taxAmount": "Taxă de înmatriculare",
+    "taxOwnHint": "Păstrează estimarea noastră sau introdu suma de la fisc.",
+    "taxTypeHint": "Suma din calculatorul oficial. Gol = neinclus.",
+    "officialCalculator": "Calculator oficial",
+    "amountInReport": "suma din raport",
+    "registerTitle": "Înmatriculează mașina – {{authority}}",
+    "registerText": "Cu inspecția ({{inspection}}), dovada plății taxei, actele vamale și actul de proprietate (title).",
+    "deadline": "Termen: {{days}} zile.",
+    "canTitle": "Ce poți face",
+    "canLead": "Legea nu le cere, dar aproape orice import are nevoie de ceva de aici. Pozițiile recomandate sunt bifate – debifează ce faci singur."
+  },
+  "vin": {
+    "label": "Ai VIN-ul? Completăm noi datele",
+    "placeholder": "17 caractere, de ex. 1FA6P8CF7K5100001",
+    "fill": "Completează din VIN",
+    "hint": "De pe title, de pe parbriz sau din anunțul licitației. Mașinile din Japonia au un număr de șasiu în loc de VIN – introdu-le datele manual.",
+    "filled": "Completat din baza de date americană a vehiculelor (NHTSA) și de la EPA. Verifică câmpurile de mai jos – poți modifica oricare dintre ele.",
+    "filledOffline": "Am citit doar ce codifică VIN-ul în sine. Restul rămân propunerile noastre – corectează-le dacă știi datele.",
+    "clear": "Elimină VIN-ul",
+    "co2Epa": "EPA, convertit în g/km",
+    "massGvwr": "estimat după clasa de greutate",
+    "madeIn": "Fabricat în",
+    "invalid": "Un VIN are 17 litere și cifre (niciodată I, O sau Q). Verifică dacă lipsește sau e în plus un caracter.",
+    "w": {
+      "checkDigit": "Cifra de control nu se potrivește – probabil o greșeală de tastare. Compară VIN-ul cu title-ul.",
+      "notFound": "Baza de date a vehiculelor nu cunoaște acest VIN (frecvent la mașinile fabricate în afara Americii de Nord). Am folosit ce codifică VIN-ul în sine.",
+      "offline": "Baza de date a vehiculelor nu răspunde momentan. Am folosit ce codifică VIN-ul în sine – încearcă mai târziu pentru specificația completă.",
+      "noCo2": "EPA nu oferă CO₂ pentru această versiune – păstrăm estimarea noastră. Dacă ai valoarea din CoC, introdu-o.",
+      "noPower": "Puterea pentru acest VIN nu apare în baza de date – păstrăm estimarea noastră."
     }
   }
 }

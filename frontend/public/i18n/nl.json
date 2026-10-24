@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Accijns",
     "FORKLIFT_LOADING": "Laden met heftruck",
     "IMPORT_VAT": "Invoer-btw",
-    "INDIVIDUAL_APPROVAL": "Individuele goedkeuring (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Individuele goedkeuring / importkeuring",
     "INLAND_TRANSPORT": "Binnenlands transport naar de haven",
     "INTRA_EU_ACQUISITION_VAT": "Btw op intracommunautaire verwerving (verlegd, aftrekbaar)",
     "INTRA_EU_TRANSPORT": "Autotransporter van haven naar bestemming",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transportschade – eigen risico verzekering",
     "RISK_HIDDEN_DAMAGE": "Verborgen schade die op de veiling niet zichtbaar was",
     "RISK_TITLE_DELAY": "Vertraging title (extra opslag)",
-    "RISK_EXPORT_DOCS_DELAY": "Vertraging exportdocumenten"
+    "RISK_EXPORT_DOCS_DELAY": "Vertraging exportdocumenten",
+    "REGISTRATION_TAX": "Registratiebelasting",
+    "COC_CERTIFICATE": "Gegevensblad van de fabrikant / CoC"
   },
   "doc": {
     "billOfLading": "Cognossement (Bill of Lading)",
@@ -255,7 +257,18 @@
     "reportItem4": "Registratiekosten en diensten na de import",
     "reportItem5": "Risico’s met bedragen: optimistisch, gemiddeld, pessimistisch",
     "reportItem6": "Stappenplan met termijnen en lijst met documenten",
-    "cheapestPort": "goedkoopste haven"
+    "cheapestPort": "goedkoopste haven",
+    "lockedEyebrow": "Volledig rapport",
+    "lockedTitle": "Volledige kosten tot aan uw deur",
+    "lockedLead": "Optimistisch, gemiddeld en pessimistisch scenario plus {{count}} extra posten: transport, levering, registratie en verborgen kosten.",
+    "unlockNote": "Direct een pdf · veilige betaling",
+    "freeTitle": "Invoerrecht, btw en belastingen – gratis",
+    "freeLead": "Inklaring in {{port}}. De bedragen die u zelf op papier kunt uitrekenen.",
+    "freeBadge": "Gratis",
+    "freeBase": "Berekend over de douanewaarde (prijs, veilingkosten, transport naar de EU en verzekering) tegen de wisselkoers van vandaag.",
+    "lockedListTitle": "Ook berekend – in het rapport",
+    "riskTag": "risico",
+    "moreLocked": "+ {{count}} extra posten, incl. verborgen kosten"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Eigen container",
@@ -377,7 +390,15 @@
     "distanceRouted": "Route over de weg van {{port}} naar uw adres.",
     "distanceEstimated": "Schatting van {{port}} naar uw adres (hemelsbreed × 1,25).",
     "distanceTypical": "Gebruikelijke afstand vanaf {{port}} – vul hierboven het adres in voor een exact getal.",
-    "tariffShort": "Markt: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} laden, min. {{minimum}} {{cur}}."
+    "tariffShort": "Markt: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} laden, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Van het CoC of de raamsticker. De meeste registratiebelastingen in de EU zijn erop gebaseerd.",
+    "powerKw": "Motorvermogen",
+    "powerKwHint": "In kW (1 pk ≈ 0,74 kW). Telt mee in België, Italië en Frankrijk.",
+    "specTitle": "Waar de belastingen op gebaseerd zijn",
+    "specLead": "Voorgesteld op basis van type en motor. Exacte gegevens (uit de VIN of het CoC) maken de registratiebelasting veel nauwkeuriger.",
+    "mass": "Leeggewicht",
+    "massHint": "In kg. Telt mee in Frankrijk (gewichtsmalus) en Estland."
   },
   "layout": {
     "topbar": "Onafhankelijke calculator voor de importkosten van auto’s uit de VS, Canada, Japan, de VAE en het VK naar 27 EU-landen",
@@ -891,7 +912,18 @@
     "SERVICE_INSPECTION": "Olie, filters, vloeistoffen, remmen na een lange reis",
     "GEOMETRY_ALIGNMENT": "Aanbevolen na reparaties aan de wielophanging",
     "DETAILING": "Wassen, interieurreiniging, lakcorrectie",
-    "EXPERT_VALUATION": "Handig voor een allriskverzekering en bij doorverkoop"
+    "EXPERT_VALUATION": "Handig voor een allriskverzekering en bij doorverkoop",
+    "INDIVIDUAL_APPROVAL": "Een auto gebouwd voor een markt buiten de EU heeft geen Europese typegoedkeuring – een erkend keuringsstation toetst hem aan de EU-regels ({{inspection}}).",
+    "REGISTRATION_FEE": "Officiële kosten – {{authority}}: kentekenbewijs en kentekenplaten.",
+    "RDW_INSPECTION": "De RDW keurt de geïmporteerde auto en controleert de identiteit voordat hij een Nederlands kenteken krijgt.",
+    "TECHNICAL_INSPECTION_IMPORT": "Uitgebreide technische keuring van een auto uit het buitenland, bij een keuringsstation.",
+    "REG_TEMPORARY_PERMIT": "Tijdelijk bewijs voor de periode tot het kentekenbewijs klaar is.",
+    "REG_TEMPORARY_PLATES": "Tijdelijke platen die bij het tijdelijke bewijs worden verstrekt.",
+    "REG_CERTIFICATE": "Het kentekenbewijs zelf.",
+    "REG_PLATES": "Definitieve kentekenplaten.",
+    "REG_STICKER": "Controlesticker op de voorruit.",
+    "RECYCLING_FEE": "Eenmalige bijdrage voor een auto die is ingevoerd door iemand zonder recyclingnetwerk.",
+    "COC_CERTIFICATE": "Nodig voor goedkeuring en registratie als de auto geen Europees certificaat van overeenstemming heeft."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "De terminal rekent na de vrije periode per dag, bijv. als documenten of transport te laat zijn.",
@@ -1277,6 +1309,69 @@
       "customs": "Douane & belastingen",
       "registration": "Registratie",
       "logistics": "Verzending & havens"
+    }
+  },
+  "portCost": {
+    "taxesAndFees": "Belastingen & havenkosten",
+    "extra": "+{{amount}} {{cur}} van deur tot deur",
+    "cheapestDoor": "goedkoopst van deur tot deur",
+    "rankingNote": "Gesorteerd op de volledige kosten van deur tot deur (belastingen, vracht, haven, levering op uw adres). Per haven ziet u de belastingen en havenkosten; de volledige uitsplitsing staat in het rapport.",
+    "title": "Inklaring in {{port}}: belastingen en kosten",
+    "dutyWhere": "In elke EU-haven gelijk – 10% van de douanewaarde (CIF)",
+    "vatWhere": "Betaald in het land van de haven: {{country}}",
+    "nationalWhere": "Betaald in het land van registratie ({{country}}), welke haven u ook kiest",
+    "notPriced": "Lokale registratiebelasting – land: {{country}}; afhankelijk van CO₂ of prijs, niet inbegrepen",
+    "portFees": "Havenkosten",
+    "portFeesWhat": "Terminalafhandeling, lossen en douane-expediteur",
+    "total": "Belastingen en kosten",
+    "howTitle": "Zo rekenen we",
+    "how1": "Douanewaarde (CIF) = prijs + veilingkosten + transport naar de EU-haven + verzekering.",
+    "how2": "Invoerrecht: 10% van de douanewaarde (pick-ups 22%, motoren 6–8%) – in elke EU-haven gelijk.",
+    "how3": "De invoer-btw betaalt u in het land van de haven, tegen het daar geldende tarief, over douanewaarde + invoerrecht + transport naar uw adres. Een gebruikte auto die buiten {{country}} is ingeklaard, betaalt thuis niet opnieuw btw.",
+    "how4": "Nationale belastingen van het land van registratie (bijv. de Poolse accijns) betaalt u thuis, welke haven u ook kiest.",
+    "how5": "De ranking telt vracht, havenkosten en levering per km naar uw adres op – het goedkoopste totaal staat bovenaan.",
+    "bestLabel": "Voordeligste haven:",
+    "bestSelected": "gekozen",
+    "bestChoose": "Kies – bespaar {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Wat u moet doen – {{country}}",
+    "noRegTaxName": "Registratiebelasting",
+    "tax": {
+      "EXCISE": "Accijns van {{rate}}% over de douanewaarde plus invoerrechten. Dien de AKC-U/S-aangifte in en betaal bij de belastingdienst binnen 14 dagen nadat de auto is binnengebracht – vóór de registratie.",
+      "NONE": "Registratieland ({{country}}): geen eenmalige belasting bij registratie – alleen de officiële kosten hieronder.",
+      "ESTIMATED": "We schatten die op basis van CO₂ ({{co2}} g/km), vermogen ({{kw}} kW), leeftijd en waarde van de auto, volgens de tabel van dit jaar. De belastingdienst heeft het laatste woord – kent u hun bedrag, vul het dan in.",
+      "OFFICIAL": "Deze belasting hangt van te veel details af voor een eerlijke schatting. Bereken haar met de officiële rekentool en vul het bedrag in – wij tellen het mee in de berekening."
+    },
+    "taxAmount": "Registratiebelasting",
+    "taxOwnHint": "Laat onze schatting staan of vul het bedrag van de belastingdienst in.",
+    "taxTypeHint": "Bedrag uit de officiële rekentool. Leeg = niet meegeteld.",
+    "officialCalculator": "Officiële rekentool",
+    "amountInReport": "bedrag in het rapport",
+    "registerTitle": "Auto registreren – {{authority}}",
+    "registerText": "Met de keuring ({{inspection}}), bewijs van betaalde belasting, de douanedocumenten en het eigendomsbewijs (title).",
+    "deadline": "Termijn: {{days}} dagen.",
+    "canTitle": "Wat u kunt doen",
+    "canLead": "Niet wettelijk verplicht, maar bijna elke import heeft er iets van nodig. Aanbevolen posten zijn aangevinkt – vink uit wat u zelf doet."
+  },
+  "vin": {
+    "label": "VIN bij de hand? Wij vullen de gegevens in",
+    "placeholder": "17 tekens, bijv. 1FA6P8CF7K5100001",
+    "fill": "Invullen via VIN",
+    "hint": "Van de title, de voorruit of de veilingadvertentie. Auto’s uit Japan hebben een chassisnummer in plaats van een VIN – vul hun gegevens handmatig in.",
+    "filled": "Ingevuld vanuit de Amerikaanse voertuigdatabase (NHTSA) en de EPA. Controleer de velden hieronder – u kunt ze nog allemaal wijzigen.",
+    "filledOffline": "We hebben alleen gelezen wat in de VIN zelf staat. De rest blijft ons voorstel – corrigeer dit als u de gegevens kent.",
+    "clear": "VIN verwijderen",
+    "co2Epa": "EPA, omgerekend naar g/km",
+    "massGvwr": "geschat op basis van de gewichtsklasse",
+    "madeIn": "Gebouwd in",
+    "invalid": "Een VIN heeft 17 letters en cijfers (nooit I, O of Q). Controleer of er een teken ontbreekt of te veel is.",
+    "w": {
+      "checkDigit": "Het controlecijfer klopt niet – waarschijnlijk een typefout. Vergelijk de VIN met de title.",
+      "notFound": "De voertuigdatabase kent deze VIN niet (vaak bij auto’s die buiten Noord-Amerika zijn gebouwd). We hebben gebruikt wat in de VIN zelf staat.",
+      "offline": "De voertuigdatabase reageert momenteel niet. We hebben gebruikt wat in de VIN zelf staat – probeer het later opnieuw voor de volledige specificatie.",
+      "noCo2": "Geen CO₂-waarde van de EPA voor deze versie – we houden onze schatting aan. Vul de waarde van het CoC in als u die heeft.",
+      "noPower": "Het vermogen staat voor deze VIN niet in de database – we houden onze schatting aan."
     }
   }
 }

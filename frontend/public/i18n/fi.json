@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Valmistevero",
     "FORKLIFT_LOADING": "Lastaus trukilla",
     "IMPORT_VAT": "Maahantuonnin ALV",
-    "INDIVIDUAL_APPROVAL": "Yksittäishyväksyntä (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Yksittäishyväksyntä / tuontikatsastus",
     "INLAND_TRANSPORT": "Maakuljetus satamaan",
     "INTRA_EU_ACQUISITION_VAT": "Yhteisöhankinnan ALV (käännetty verovelvollisuus, vähennyskelpoinen)",
     "INTRA_EU_TRANSPORT": "Autonkuljetusauto satamasta määränpäähän",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Kuljetusvaurio – vakuutuksen omavastuu",
     "RISK_HIDDEN_DAMAGE": "Piilevät vauriot, jotka eivät näy huutokaupassa",
     "RISK_TITLE_DELAY": "Omistusasiakirjan viivästys (lisävarastointi)",
-    "RISK_EXPORT_DOCS_DELAY": "Vientiasiakirjojen viivästys"
+    "RISK_EXPORT_DOCS_DELAY": "Vientiasiakirjojen viivästys",
+    "REGISTRATION_TAX": "Rekisteröintivero",
+    "COC_CERTIFICATE": "Valmistajan tietolomake / CoC"
   },
   "doc": {
     "billOfLading": "Konossementti (Bill of Lading)",
@@ -255,7 +257,18 @@
     "reportItem4": "Rekisteröintimaksut ja tuonnin jälkeiset palvelut",
     "reportItem5": "Riskit summineen: optimistinen, keskimääräinen, pessimistinen",
     "reportItem6": "Vaiheittainen suunnitelma määräaikoineen ja asiakirjaluetteloineen",
-    "cheapestPort": "edullisin satama"
+    "cheapestPort": "edullisin satama",
+    "lockedEyebrow": "Koko raportti",
+    "lockedTitle": "Koko hinta perille asti",
+    "lockedLead": "Optimistinen, keskimääräinen ja pessimistinen skenaario sekä {{count}} muuta erää: kuljetus, toimitus, rekisteröinti ja piilokulut.",
+    "unlockNote": "PDF heti · turvallinen maksu",
+    "freeTitle": "Tulli, ALV ja verot – ilmaiseksi",
+    "freeLead": "Tullaussatama: {{port}}. Summat, jotka voisit laskea itse paperilla.",
+    "freeBadge": "Ilmainen",
+    "freeBase": "Laskettu tullausarvosta (hinta, huutokauppamaksut, kuljetus EU:hun ja vakuutus) päivän valuuttakurssilla.",
+    "lockedListTitle": "Lasketaan myös – raportissa",
+    "riskTag": "riski",
+    "moreLocked": "+ {{count}} muuta erää, mm. piilokulut"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Oma kontti",
@@ -377,7 +390,15 @@
     "distanceRouted": "Tiereitti osoitteeseesi, lähtösatama: {{port}}.",
     "distanceEstimated": "Arvio osoitteeseesi, lähtösatama: {{port}} (linnuntie × 1,25).",
     "distanceTypical": "Tyypillinen etäisyys, satama: {{port}} – anna osoite yllä tarkkaa lukua varten.",
-    "tariffShort": "Markkinahinta: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} lastaus, väh. {{minimum}} {{cur}}."
+    "tariffShort": "Markkinahinta: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} lastaus, väh. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "CoC-todistuksesta tai ikkunatarrasta. Useimmat EU:n rekisteröintiverot perustuvat niihin.",
+    "powerKw": "Moottorin teho",
+    "powerKwHint": "kW:na (1 hv ≈ 0,74 kW). Käytetään Belgiassa, Italiassa ja Ranskassa.",
+    "specTitle": "Mihin verot perustuvat",
+    "specLead": "Ehdotettu tyypin ja moottorin perusteella. Tarkat tiedot (VIN-tunnuksesta tai CoC-todistuksesta) tarkentavat rekisteröintiveroa huomattavasti.",
+    "mass": "Omamassa",
+    "massHint": "Kilogrammoina (kg). Merkitsee Ranskassa (painoon perustuva malus) ja Virossa."
   },
   "layout": {
     "topbar": "Riippumaton laskuri autojen tuontikustannuksille Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista ja Isosta-Britanniasta 27 EU-maahan",
@@ -891,7 +912,18 @@
     "SERVICE_INSPECTION": "Öljy, suodattimet, nesteet, jarrut pitkän matkan jälkeen",
     "GEOMETRY_ALIGNMENT": "Suositellaan alustakorjausten jälkeen",
     "DETAILING": "Pesu, sisäpuhdistus, maalipinnan korjaus",
-    "EXPERT_VALUATION": "Hyödyllinen kaskovakuutusta ja jälleenmyyntiä varten"
+    "EXPERT_VALUATION": "Hyödyllinen kaskovakuutusta ja jälleenmyyntiä varten",
+    "INDIVIDUAL_APPROVAL": "EU:n ulkopuolisille markkinoille valmistetulla autolla ei ole EU-tyyppihyväksyntää – hyväksytty asema tarkastaa sen EU-sääntöjen mukaan ({{inspection}}).",
+    "REGISTRATION_FEE": "Viralliset maksut – {{authority}}: rekisteröintitodistus ja rekisterikilvet.",
+    "RDW_INSPECTION": "RDW tarkastaa tuodun auton ja sen tunnistetiedot ennen hollantilaista rekisteröintiä.",
+    "TECHNICAL_INSPECTION_IMPORT": "Ulkomailta tuodun auton laajennettu katsastus katsastusasemalla.",
+    "REG_TEMPORARY_PERMIT": "Väliaikainen lupa siihen asti, kunnes rekisteröintitodistus on valmis.",
+    "REG_TEMPORARY_PLATES": "Väliaikaiset kilvet, jotka annetaan väliaikaisen luvan kanssa.",
+    "REG_CERTIFICATE": "Itse rekisteröintitodistus.",
+    "REG_PLATES": "Pysyvät rekisterikilvet.",
+    "REG_STICKER": "Tarkastustarra tuulilasiin.",
+    "RECYCLING_FEE": "Kertamaksu autosta, jonka on tuonut maahan joku ilman omaa kierrätysverkostoa.",
+    "COC_CERTIFICATE": "Tarvitaan hyväksyntään ja rekisteröintiin, jos autolla ei ole EU-vaatimustenmukaisuustodistusta."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Terminaali veloittaa päivämaksun maksuttoman ajan jälkeen, esim. kun asiakirjat tai kuljetus myöhästyvät.",
@@ -1277,6 +1309,69 @@
       "customs": "Tulli ja verot",
       "registration": "Rekisteröinti",
       "logistics": "Kuljetus ja satamat"
+    }
+  },
+  "portCost": {
+    "taxesAndFees": "Verot ja satamamaksut",
+    "extra": "+{{amount}} {{cur}} ovelta ovelle",
+    "cheapestDoor": "edullisin ovelta ovelle",
+    "rankingNote": "Järjestetty kokonaiskustannuksen mukaan ovelta ovelle (verot, rahti, satama, toimitus osoitteeseesi). Jokaisen sataman kohdalla näet sen verot ja satamamaksut; täydellinen erittely on raportissa.",
+    "title": "Tullaus – {{port}}: verot ja maksut",
+    "dutyWhere": "Sama kaikissa EU-satamissa – 10 % tullausarvosta (CIF)",
+    "vatWhere": "Maksetaan sataman maassa: {{country}}",
+    "nationalWhere": "Maksetaan rekisteröintimaassa ({{country}}) satamasta riippumatta",
+    "notPriced": "Paikallinen rekisteröintivero – maa: {{country}}; riippuu CO₂:sta tai hinnasta, ei sisälly",
+    "portFees": "Satamamaksut",
+    "portFeesWhat": "Terminaalikäsittely, purku ja tulliasiamies",
+    "total": "Verot ja maksut",
+    "howTitle": "Näin laskemme",
+    "how1": "Tullausarvo (CIF) = hinta + huutokauppamaksut + kuljetus EU-satamaan + vakuutus.",
+    "how2": "Tulli: 10 % tullausarvosta (pickupit 22 %, moottoripyörät 6–8 %) – sama kaikissa EU-satamissa.",
+    "how3": "Maahantuonnin ALV maksetaan sataman maassa sen verokannalla tullausarvosta + tullista + kuljetuksesta osoitteeseesi. Käytetystä autosta, joka on tullattu muualla kuin rekisteröintimaassa ({{country}}), ei makseta ALV:tä uudelleen kotimaassa.",
+    "how4": "Rekisteröintimaan kansalliset verot (esim. Puolan valmistevero) maksetaan kotimaassa satamasta riippumatta.",
+    "how5": "Järjestykseen lisätään rahti, satamamaksut ja toimitus kilometreittäin osoitteeseesi – edullisin summa on ensimmäisenä.",
+    "bestLabel": "Edullisin satama:",
+    "bestSelected": "valittu",
+    "bestChoose": "Valitse – säästä {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Mitä sinun on tehtävä – {{country}}",
+    "noRegTaxName": "Rekisteröintivero",
+    "tax": {
+      "EXCISE": "Valmistevero {{rate}} % tullausarvosta tulleineen. Jätä AKC-U/S-ilmoitus ja maksa verotoimistoon 14 päivän kuluessa auton tuonnista – ennen rekisteröintiä.",
+      "NONE": "Rekisteröintimaa ({{country}}): ei kertaluonteista veroa rekisteröinnissä – vain alla olevat viralliset maksut.",
+      "ESTIMATED": "Arvioimme sen CO₂-päästöjen ({{co2}} g/km), tehon ({{kw}} kW) sekä auton iän ja arvon perusteella tämän vuoden taulukolla. Viimeisen sanan sanoo verottaja – jos tiedät sen summan, syötä se.",
+      "OFFICIAL": "Vero riippuu liian monesta yksityiskohdasta luotettavaa arviota varten. Laske se virallisella laskurilla ja syötä summa – lisäämme sen laskelmaan."
+    },
+    "taxAmount": "Rekisteröintivero",
+    "taxOwnHint": "Jätä arviomme tai syötä verottajan summa.",
+    "taxTypeHint": "Summa virallisesta laskurista. Tyhjä = ei mukana.",
+    "officialCalculator": "Virallinen laskuri",
+    "amountInReport": "summa raportissa",
+    "registerTitle": "Rekisteröi auto – {{authority}}",
+    "registerText": "Mukaan katsastus ({{inspection}}), todistus maksetusta verosta, tulliasiakirjat ja omistusasiakirja (title).",
+    "deadline": "Määräaika: {{days}} päivää.",
+    "canTitle": "Mitä voit tehdä",
+    "canLead": "Laki ei vaadi näitä, mutta lähes jokainen tuonti tarvitsee jotain niistä. Suositellut kohdat on valittu – poista valinta siitä, minkä teet itse."
+  },
+  "vin": {
+    "label": "Onko sinulla VIN? Täytämme tiedot",
+    "placeholder": "17 merkkiä, esim. 1FA6P8CF7K5100001",
+    "fill": "Täytä VIN-tunnuksesta",
+    "hint": "Titlesta, tuulilasista tai huutokauppailmoituksesta. Japanista tulevissa autoissa on VIN-tunnuksen sijaan runkonumero – syötä niiden tiedot käsin.",
+    "filled": "Täytetty Yhdysvaltain ajoneuvotietokannasta (NHTSA) ja EPA:n tiedoista. Tarkista alla olevat kentät – voit yhä muuttaa mitä tahansa niistä.",
+    "filledOffline": "Luimme vain sen, mitä VIN itsessään sisältää. Muut jäävät ehdotuksiksemme – korjaa ne, jos tiedät tiedot.",
+    "clear": "Poista VIN",
+    "co2Epa": "EPA, muunnettu yksikköön g/km",
+    "massGvwr": "arvio painoluokan perusteella",
+    "madeIn": "Valmistusmaa",
+    "invalid": "VIN-tunnuksessa on 17 kirjainta ja numeroa (ei koskaan I, O tai Q). Tarkista, puuttuuko merkki tai onko yksi liikaa.",
+    "w": {
+      "checkDigit": "Tarkistusnumero ei täsmää – todennäköisesti kirjoitusvirhe. Vertaa VIN-tunnusta titleen.",
+      "notFound": "Ajoneuvotietokanta ei tunne tätä VIN-tunnusta (yleistä Pohjois-Amerikan ulkopuolella valmistetuille autoille). Käytimme sitä, mitä VIN itsessään sisältää.",
+      "offline": "Ajoneuvotietokanta ei vastaa juuri nyt. Käytimme sitä, mitä VIN itsessään sisältää – yritä myöhemmin uudelleen saadaksesi täydet tiedot.",
+      "noCo2": "EPA:lta ei löydy CO₂-arvoa tälle versiolle – pidämme arviomme. Jos sinulla on arvo CoC-todistuksesta, syötä se.",
+      "noPower": "Tämän VIN-tunnuksen tehoa ei ole tietokannassa – pidämme arviomme."
     }
   }
 }

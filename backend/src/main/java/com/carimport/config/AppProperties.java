@@ -13,7 +13,10 @@ public record AppProperties(
         Stripe stripe,
         Report report,
         List<AffiliateOffer> affiliates,
-        Geo geo) {
+        Geo geo,
+        Vehicle vehicle,
+        Mail mail,
+        Company company) {
 
     public record Stripe(String apiKey, String webhookSecret) {
     }
@@ -33,6 +36,35 @@ public record AppProperties(
             timeout = timeout == null ? Duration.ofSeconds(4) : timeout;
             userAgent = userAgent == null ? "carimport" : userAgent;
         }
+    }
+
+    /** VIN decoding (NHTSA vPIC) and CO₂ lookup (US EPA fueleconomy.gov); empty URL = that source is off. */
+    public record Vehicle(String vpicUrl, String epaUrl, String userAgent, Duration timeout) {
+
+        public Vehicle {
+            timeout = timeout == null ? Duration.ofSeconds(6) : timeout;
+            userAgent = userAgent == null ? "carimport" : userAgent;
+        }
+    }
+
+    /** Sender of transactional e-mail; delivery itself is configured under spring.mail (any SMTP provider). */
+    public record Mail(String from, String replyTo) {
+    }
+
+    public Mail mail() {
+        return mail == null ? new Mail("CarImport.eu <raport@carimport.eu>", null) : mail;
+    }
+
+    /** Seller identity printed in e-mails and the terms (same values as the frontend site config). */
+    public record Company(String name, String address, String taxId, String email) {
+    }
+
+    public Company company() {
+        return company == null ? new Company("CarImport.eu", "", "", "kontakt@carimport.eu") : company;
+    }
+
+    public Vehicle vehicle() {
+        return vehicle == null ? new Vehicle(null, null, null, null) : vehicle;
     }
 
     public Geo geo() {

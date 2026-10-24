@@ -34,7 +34,7 @@ public class QuoteService {
     /** Live preview for the wizard - nothing is stored. */
     public PublicQuoteView preview(CalculationRequest request) {
         QuoteRange range = engine.calculateRange(request, rates.latest());
-        return PublicQuoteView.of(null, range, null);
+        return PublicQuoteView.of(null, range, request.destinationCountry(), null);
     }
 
     /** Freezes the calculation so it can be bought as a report or attached to a partner lead. */
@@ -48,7 +48,7 @@ public class QuoteService {
                 PublicQuoteView.ceilToStep(range.high().total()),
                 locale, now, now.plus(VALIDITY));
         repository.save(quote);
-        return PublicQuoteView.of(quote.getId(), range, quote.getExpiresAt());
+        return PublicQuoteView.of(quote.getId(), range, request.destinationCountry(), quote.getExpiresAt());
     }
 
     @Transactional(readOnly = true)

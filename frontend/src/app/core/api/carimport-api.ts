@@ -12,6 +12,7 @@ import {
   PublicQuoteView,
   RouteOptions,
   Suggestions,
+  VinDecoding,
 } from './api.models';
 
 /** Thin typed client for /api/v1. Accept-Language is added by the language interceptor. */
@@ -41,6 +42,15 @@ export class CarImportApi {
     return this.http.get<RouteOptions>(`${this.base}/reference/options`, { params: { origin, destination, euPort } });
   }
 
+  decodeVin(vin: string): Observable<VinDecoding> {
+    return this.http.get<VinDecoding>(`${this.base}/vehicle/vin/${encodeURIComponent(vin)}`);
+  }
+
+  /** NBP mid rates as PLN per unit; PLN itself is 1. */
+  fx(): Observable<{ date: string; plnPerUnit: Record<string, number> }> {
+    return this.http.get<{ date: string; plnPerUnit: Record<string, number> }>(`${this.base}/reference/fx`);
+  }
+
   ports(): Observable<PortOption[]> {
     return this.http.get<PortOption[]>(`${this.base}/reference/ports`);
   }
@@ -51,6 +61,8 @@ export class CarImportApi {
     fullName: string;
     currency: DisplayCurrency;
     locale: string;
+    termsAccepted: boolean;
+    termsVersion: string;
   }): Observable<{ orderId: string; accessToken: string; checkoutUrl: string }> {
     return this.http.post<{ orderId: string; accessToken: string; checkoutUrl: string }>(
       `${this.base}/reports/checkout`,

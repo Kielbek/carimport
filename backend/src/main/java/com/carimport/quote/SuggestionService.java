@@ -4,8 +4,11 @@ import com.carimport.calculation.CalculationEngine;
 import com.carimport.calculation.CalculationException;
 import com.carimport.calculation.CalculationRequest;
 import com.carimport.calculation.CalculationResult;
+import com.carimport.calculation.Proposals;
 import com.carimport.calculation.Scenario;
 import com.carimport.calculation.TariffCatalog;
+import com.carimport.calculation.registration.RegistrationTaxes;
+import com.carimport.calculation.step.RegistrationTaxStep;
 import com.carimport.domain.DeliveryMode;
 import com.carimport.fx.ExchangeRateService;
 import com.carimport.fx.FxRates;
@@ -29,14 +32,30 @@ import org.springframework.stereotype.Service;
 @Service
 public class SuggestionService {
 
-    /** One EU port, priced door to door (expected scenario, rounded like the free result). */
+    /**
+     * One EU port. Ranked by the full door-to-door cost (expected scenario), but only the free part is exposed: the
+     * taxes and port fees of clearing there, the road distance and how much more it costs than the cheapest port.
+     * The door-to-door total itself is what the paid report sells.
+     *
+     * @param extraVsBest door-to-door difference to the cheapest port, rounded to 10 (0 for the cheapest)
+     */
     public record PortSuggestion(String code, String name, String countryCode, EuPort.Region region, double lat,
-                                 double lon, Integer distanceKm, GeoService.Method distanceMethod, BigDecimal total,
-                                 int daysMin, int daysMax) {
+                                 double lon, Integer distanceKm, GeoService.Method distanceMethod, TaxSummary taxes,
+                                 BigDecimal extraVsBest, int daysMin, int daysMax) {
     }
 
+    private record Priced(EuPort port, GeoService.Distance distance, CalculationResult result) {
+    }
+
+    /**
+     * @param registrationTax how the registration country's one-off tax is handled: EXCISE (Polish excise, always
+     *                        computed), NONE (no such tax), ESTIMATED (our formula, see registrationTaxEstimate) or
+     *                        OFFICIAL_CALCULATOR (the buyer types it from registrationTaxUrl)
+     */
     public record Suggestions(String recommendedPort, List<PortSuggestion> ports, DeliveryMode deliveryMode,
-                              BigDecimal repairEstimate, BigDecimal insuranceEstimate, String currency) {
+                              BigDecimal repairEstimate, BigDecimal insuranceEstimate, String currency,
+                              int co2Estimate, int powerKwEstimate, int massKgEstimate, String registrationTax,
+                              BigDecimal registrationTaxEstimate, String registrationTaxUrl) {
     }
 
     private final CalculationEngine engine;
@@ -58,18 +77,24 @@ public class SuggestionService {
                 .map(home -> geo.distances(ports.stream().map(EuPort::location).toList(), home))
                 .orElse(null);
 
-        List<PortSuggestion> priced = new ArrayList<>();
+        List<Priced> results = new ArrayList<>();
         for (int i = 0; i < ports.size(); i++) {
             EuPort port = ports.get(i);
             GeoService.Distance distance = distances == null ? null : distances.get(i);
             Integer km = distance == null ? null : distance.km();
-            calculate(request.withPort(port.getCode(), km), fx).ifPresent(r -> priced.add(new PortSuggestion(
-                    port.getCode(), port.getName(), port.getCountryCode(), port.getRegion(),
-                    port.location().lat(), port.location().lon(), r.deliveryKm(),
-                    distance == null ? GeoService.Method.ESTIMATED : distance.method(),
-                    PublicQuoteView.roundToStep(r.total()), r.timeline().totalMin(), r.timeline().totalMax())));
+            calculate(request.withPort(port.getCode(), km), fx).ifPresent(r -> results.add(new Priced(port, distance, r)));
         }
-        priced.sort(Comparator.comparing(PortSuggestion::total).thenComparing(PortSuggestion::daysMax));
+        results.sort(Comparator.comparing((Priced p) -> p.result().total().amount())
+                .thenComparing(p -> p.result().timeline().totalMax()));
+        BigDecimal cheapest = results.isEmpty() ? BigDecimal.ZERO : results.getFirst().result().total().amount();
+        List<PortSuggestion> priced = results.stream().map(p -> new PortSuggestion(
+                p.port().getCode(), p.port().getName(), p.port().getCountryCode(), p.port().getRegion(),
+                p.port().location().lat(), p.port().location().lon(), p.result().deliveryKm(),
+                p.distance() == null ? GeoService.Method.ESTIMATED : p.distance().method(),
+                TaxSummary.of(p.result(), p.port().getCountryCode(), request.destinationCountry()),
+                p.result().total().amount().subtract(cheapest).setScale(-1, RoundingMode.HALF_UP).max(BigDecimal.ZERO)
+                        .setScale(0, RoundingMode.UNNECESSARY),
+                p.result().timeline().totalMin(), p.result().timeline().totalMax())).toList();
         String best = priced.isEmpty() ? request.euPortCode() : priced.getFirst().code();
 
         PortSuggestion bestPort = priced.isEmpty() ? null : priced.getFirst();
@@ -78,7 +103,30 @@ public class SuggestionService {
         return new Suggestions(best, priced, request.withProposedEstimates().effectiveDeliveryMode(),
                 proposal.map(r -> displayAmount(r, "REPAIR_ESTIMATE")).orElse(BigDecimal.ZERO),
                 proposal.map(r -> displayAmount(r, "INSURANCE_FIRST_YEAR")).orElse(BigDecimal.ZERO),
-                request.displayCurrency().name());
+                request.displayCurrency().name(),
+                Proposals.co2(request.fuelType(), request.engineCc(), request.vehicleCategory()),
+                Proposals.powerKw(request.fuelType(), request.engineCc()),
+                Proposals.massKg(request.vehicleCategory(), request.fuelType(), request.engineCc()),
+                registrationTaxMode(request.destinationCountry()),
+                proposal.flatMap(r -> wholeAmount(r, RegistrationTaxStep.CODE)).orElse(null),
+                RegistrationTaxes.OFFICIAL_CALCULATOR.get(request.destinationCountry()));
+    }
+
+    private static String registrationTaxMode(String country) {
+        if ("PL".equals(country)) {
+            return "EXCISE";
+        }
+        if (RegistrationTaxes.NONE.contains(country)) {
+            return "NONE";
+        }
+        return RegistrationTaxes.modelled(country) ? "ESTIMATED" : "OFFICIAL_CALCULATOR";
+    }
+
+    private static Optional<BigDecimal> wholeAmount(CalculationResult result, String code) {
+        return result.lines().stream()
+                .filter(l -> l.line().code().equals(code) && l.display().amount() != null)
+                .findFirst()
+                .map(l -> l.display().amount().setScale(0, RoundingMode.HALF_UP));
     }
 
     private Optional<CalculationResult> calculate(CalculationRequest request, FxRates fx) {

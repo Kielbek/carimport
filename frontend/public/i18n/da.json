@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Punktafgift",
     "FORKLIFT_LOADING": "Lastning med gaffeltruck",
     "IMPORT_VAT": "Importmoms",
-    "INDIVIDUAL_APPROVAL": "Individuel godkendelse (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Individuel godkendelse / importsyn",
     "INLAND_TRANSPORT": "Landtransport til havnen",
     "INTRA_EU_ACQUISITION_VAT": "Moms af EU-erhvervelse (omvendt betalingspligt, fradragsberettiget)",
     "INTRA_EU_TRANSPORT": "Autotransporter fra havn til destination",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transportskade – selvrisiko på forsikringen",
     "RISK_HIDDEN_DAMAGE": "Skjulte skader, der ikke kunne ses på auktionen",
     "RISK_TITLE_DELAY": "Forsinket title (ekstra oplagring)",
-    "RISK_EXPORT_DOCS_DELAY": "Forsinkede eksportdokumenter"
+    "RISK_EXPORT_DOCS_DELAY": "Forsinkede eksportdokumenter",
+    "REGISTRATION_TAX": "Registreringsafgift",
+    "COC_CERTIFICATE": "Producentens datablad / CoC"
   },
   "doc": {
     "billOfLading": "Konnossement (Bill of Lading)",
@@ -255,7 +257,18 @@
     "reportItem4": "Registreringsgebyrer og ydelser efter importen",
     "reportItem5": "Risici med beløb: optimistisk, gennemsnitligt, pessimistisk",
     "reportItem6": "Trin-for-trin-plan med frister og dokumentliste",
-    "cheapestPort": "billigste havn"
+    "cheapestPort": "billigste havn",
+    "lockedEyebrow": "Fuld rapport",
+    "lockedTitle": "Den fulde pris til din dør",
+    "lockedLead": "Optimistisk, gennemsnitligt og pessimistisk scenarie plus {{count}} poster mere: transport, levering, registrering og skjulte omkostninger.",
+    "unlockNote": "PDF med det samme · sikker betaling",
+    "freeTitle": "Told, moms og afgifter – gratis",
+    "freeLead": "Fortoldning i {{port}}. De beløb, du selv kunne regne ud på papir.",
+    "freeBadge": "Gratis",
+    "freeBase": "Beregnet af toldværdien (pris, auktionsgebyrer, transport til EU og forsikring) til dagens valutakurs.",
+    "lockedListTitle": "Også beregnet – i rapporten",
+    "riskTag": "risiko",
+    "moreLocked": "+ {{count}} poster mere, inkl. skjulte omkostninger"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Egen container",
@@ -377,7 +390,15 @@
     "distanceRouted": "Køreruten fra {{port}} til din adresse.",
     "distanceEstimated": "Overslag fra {{port}} til din adresse (luftlinje × 1,25).",
     "distanceTypical": "Typisk afstand fra {{port}} – angiv adressen ovenfor for et præcist tal.",
-    "tariffShort": "Markedspris: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} for lastning, min. {{minimum}} {{cur}}."
+    "tariffShort": "Markedspris: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} for lastning, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Fra CoC'en eller rudemærkatet. De fleste registreringsafgifter i EU bygger på den.",
+    "powerKw": "Motoreffekt",
+    "powerKwHint": "I kW (1 hk ≈ 0,74 kW). Bruges i Belgien, Italien og Frankrig.",
+    "specTitle": "Det afhænger afgifterne af",
+    "specLead": "Foreslået ud fra type og motor. Præcise tal (fra VIN eller CoC) gør registreringsafgiften langt mere nøjagtig.",
+    "mass": "Egenvægt",
+    "massHint": "I kg. Tæller i Frankrig (vægtmalus) og Estland."
   },
   "layout": {
     "topbar": "Uafhængig beregner af omkostninger ved import af biler fra USA, Canada, Japan, UAE og Storbritannien til 27 EU-lande",
@@ -891,7 +912,18 @@
     "SERVICE_INSPECTION": "Olie, filtre, væsker, bremser efter en lang rejse",
     "GEOMETRY_ALIGNMENT": "Anbefales efter reparationer af undervognen",
     "DETAILING": "Vask, indvendig rengøring, lakpolering",
-    "EXPERT_VALUATION": "Nyttig til kaskoforsikring og gensalg"
+    "EXPERT_VALUATION": "Nyttig til kaskoforsikring og gensalg",
+    "INDIVIDUAL_APPROVAL": "En bil bygget til et marked uden for EU har ingen EU-typegodkendelse – en godkendt synsvirksomhed kontrollerer den efter EU-reglerne ({{inspection}}).",
+    "REGISTRATION_FEE": "Officielle gebyrer – {{authority}}: registreringsattest og nummerplader.",
+    "RDW_INSPECTION": "RDW kontrollerer den importerede bil og dens identitet, før den får en hollandsk registrering.",
+    "TECHNICAL_INSPECTION_IMPORT": "Udvidet syn af en bil hentet fra udlandet, hos en synsvirksomhed.",
+    "REG_TEMPORARY_PERMIT": "Midlertidig tilladelse, indtil registreringsattesten er klar.",
+    "REG_TEMPORARY_PLATES": "Midlertidige plader, der udleveres med den midlertidige tilladelse.",
+    "REG_CERTIFICATE": "Selve registreringsattesten.",
+    "REG_PLATES": "Permanente nummerplader.",
+    "REG_STICKER": "Kontrolmærkat på forruden.",
+    "RECYCLING_FEE": "Engangsgebyr for en bil, der er bragt ind af en person uden eget genanvendelsesnetværk.",
+    "COC_CERTIFICATE": "Nødvendigt til godkendelse og registrering, når bilen ikke har et EU-overensstemmelsescertifikat."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Terminalen opkræver betaling pr. dag efter den gratis periode, f.eks. når dokumenter eller transport er forsinket.",
@@ -1277,6 +1309,69 @@
       "customs": "Told og afgifter",
       "registration": "Registrering",
       "logistics": "Fragt og havne"
+    }
+  },
+  "portCost": {
+    "taxesAndFees": "Afgifter & havnegebyrer",
+    "extra": "+{{amount}} {{cur}} dør til dør",
+    "cheapestDoor": "billigst dør til dør",
+    "rankingNote": "Sorteret efter den samlede pris fra dør til dør (afgifter, fragt, havn, levering til din adresse). Hver havn viser sine afgifter og havnegebyrer; den fulde opdeling står i rapporten.",
+    "title": "Fortoldning i {{port}}: afgifter og gebyrer",
+    "dutyWhere": "Ens i alle EU-havne – 10 % af toldværdien (CIF)",
+    "vatWhere": "Betales i havnens land: {{country}}",
+    "nationalWhere": "Betales i registreringslandet ({{country}}) – uanset hvilken havn du vælger",
+    "notPriced": "Lokal registreringsafgift – land: {{country}}; afhænger af CO₂ eller pris, ikke medregnet",
+    "portFees": "Havnegebyrer",
+    "portFeesWhat": "Terminalhåndtering, losning og toldspeditør",
+    "total": "Afgifter og gebyrer",
+    "howTitle": "Sådan beregner vi",
+    "how1": "Toldværdi (CIF) = pris + auktionsgebyrer + transport til EU-havnen + forsikring.",
+    "how2": "Told: 10 % af toldværdien (pickupper 22 %, motorcykler 6–8 %) – ens i alle EU-havne.",
+    "how3": "Importmoms betales i havnens land, med dets sats, af toldværdi + told + transport til din adresse. En brugt bil, der fortoldes uden for {{country}}, betaler ikke moms igen derhjemme.",
+    "how4": "Registreringslandets nationale afgifter (f.eks. polsk punktafgift) betales derhjemme – uanset havn.",
+    "how5": "Rangeringen lægger fragt, havnegebyrer og levering pr. km til din adresse til – den billigste sum står øverst.",
+    "bestLabel": "Mest fordelagtige havn:",
+    "bestSelected": "valgt",
+    "bestChoose": "Vælg – spar {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Det skal du gøre – {{country}}",
+    "noRegTaxName": "Registreringsafgift",
+    "tax": {
+      "EXCISE": "Punktafgift på {{rate}} % af toldværdien plus told. Indsend AKC-U/S-angivelsen, og betal på skattekontoret senest 14 dage efter, at bilen er bragt ind – før registreringen.",
+      "NONE": "Registreringsland ({{country}}): ingen engangsafgift ved registrering – kun de officielle gebyrer nedenfor.",
+      "ESTIMATED": "Vi anslår den ud fra CO₂ ({{co2}} g/km), effekt ({{kw}} kW), bilens alder og værdi efter årets skala. Skattemyndigheden har det sidste ord – kender du deres beløb, så indtast det.",
+      "OFFICIAL": "Denne afgift afhænger af for mange detaljer til et retvisende skøn. Beregn den i den officielle beregner, og indtast beløbet – vi lægger det til beregningen."
+    },
+    "taxAmount": "Registreringsafgift",
+    "taxOwnHint": "Behold vores skøn, eller indtast beløbet fra skattemyndigheden.",
+    "taxTypeHint": "Beløb fra den officielle beregner. Tomt = ikke medregnet.",
+    "officialCalculator": "Officiel beregner",
+    "amountInReport": "beløb i rapporten",
+    "registerTitle": "Registrér bilen – {{authority}}",
+    "registerText": "Med synet ({{inspection}}), bevis for betalt afgift, tolddokumenterne og ejerbeviset (title).",
+    "deadline": "Frist: {{days}} dage.",
+    "canTitle": "Det kan du gøre",
+    "canLead": "Ikke lovpligtigt, men næsten hver import har brug for noget af det. Anbefalede poster er markeret – fjern markeringen ved det, du klarer selv."
+  },
+  "vin": {
+    "label": "Har du VIN? Vi udfylder detaljerne",
+    "placeholder": "17 tegn, f.eks. 1FA6P8CF7K5100001",
+    "fill": "Udfyld fra VIN",
+    "hint": "Fra title, forruden eller auktionsopslaget. Biler fra Japan har et stelnummer i stedet for VIN – indtast deres data manuelt.",
+    "filled": "Udfyldt fra den amerikanske køretøjsdatabase (NHTSA) og EPA. Tjek felterne nedenfor – du kan stadig ændre dem alle.",
+    "filledOffline": "Vi har kun aflæst det, som selve VIN-nummeret indeholder. Resten forbliver vores forslag – ret dem, hvis du kender detaljerne.",
+    "clear": "Fjern VIN",
+    "co2Epa": "EPA, omregnet til g/km",
+    "massGvwr": "anslået ud fra vægtklassen",
+    "madeIn": "Produceret i",
+    "invalid": "Et VIN består af 17 bogstaver og cifre (aldrig I, O eller Q). Tjek, om der mangler et tegn eller er et for meget.",
+    "w": {
+      "checkDigit": "Kontrolcifferet passer ikke – sandsynligvis en tastefejl. Sammenlign VIN med title.",
+      "notFound": "Køretøjsdatabasen kender ikke dette VIN (almindeligt for biler bygget uden for Nordamerika). Vi har brugt det, som selve VIN-nummeret indeholder.",
+      "offline": "Køretøjsdatabasen svarer ikke lige nu. Vi har brugt det, som selve VIN-nummeret indeholder – prøv igen senere for at få den fulde specifikation.",
+      "noCo2": "EPA har ingen CO₂-værdi for denne version – vi beholder vores skøn. Brug værdien fra CoC'en, hvis du har den.",
+      "noPower": "Effekten for dette VIN findes ikke i databasen – vi beholder vores skøn."
     }
   }
 }

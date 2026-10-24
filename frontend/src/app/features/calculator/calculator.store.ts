@@ -13,9 +13,10 @@ import {
   PublicQuoteView,
   RouteOptions,
   Suggestions,
+  VinDecoding,
 } from '../../core/api/api.models';
 import { CarImportApi } from '../../core/api/carimport-api';
-import { isDisplayCurrency } from '../../core/currency/currencies';
+import { DisplayCurrency, isDisplayCurrency } from '../../core/currency/currencies';
 import { LanguageService } from '../../core/i18n/language.service';
 import { LanguageInfo } from '../../core/i18n/languages';
 import { EXCISE_THRESHOLD_CC, ORIGINS } from './calculator.options';
@@ -53,8 +54,14 @@ const DEFAULTS: WizardState = {
   destinationAddress: null,
   destinationLat: null,
   destinationLon: null,
+  co2Gkm: null,
+  powerKw: null,
+  registrationTaxOwn: null,
+  massKg: null,
+  vin: null,
+  vehicleDescription: null,
 };
-const STORAGE_KEY = 'carimport.wizard.v3';
+const STORAGE_KEY = 'carimport.wizard.v4';
 const PORT_MODE_KEY = 'carimport.wizard.portMode';
 
 /**
@@ -92,7 +99,7 @@ export class CalculatorStore {
 
   /** Inputs that change the proposals - the proposed fields themselves and the port are left out. */
   private readonly suggestionKey = computed(() => {
-    const { euPortCode, deliveryDistanceKm, repairEstimate, insuranceEstimate, ...rest } = this.state();
+    const { euPortCode, deliveryDistanceKm, repairEstimate, insuranceEstimate, registrationTaxOwn, ...rest } = this.state();
     return JSON.stringify(rest);
   });
 
@@ -117,8 +124,23 @@ export class CalculatorStore {
     this.state().condition === 'RUN_AND_DRIVE' ? 'CAR_CARRIER' : 'TOW_TRUCK',
   );
   readonly deliveryMode = computed<DeliveryMode>(() => this.state().deliveryMode ?? this.proposedDeliveryMode());
-  readonly repairProposal = computed(() => this.suggestions()?.repairEstimate ?? null);
-  readonly insuranceProposal = computed(() => this.suggestions()?.insuranceEstimate ?? null);
+  /** False between a currency switch and the refreshed proposals - old amounts must not show under the new code. */
+  readonly suggestionsCurrent = computed(() => this.suggestions()?.currency === this.state().displayCurrency);
+  readonly repairProposal = computed(() => (this.suggestionsCurrent() ? this.suggestions()!.repairEstimate : null));
+  readonly insuranceProposal = computed(() =>
+    this.suggestionsCurrent() ? this.suggestions()!.insuranceEstimate : null,
+  );
+  readonly registrationTaxProposal = computed(() =>
+    this.suggestionsCurrent() ? (this.suggestions()!.registrationTaxEstimate ?? null) : null,
+  );
+  readonly co2Proposal = computed(() => this.suggestions()?.co2Estimate ?? null);
+  readonly powerProposal = computed(() => this.suggestions()?.powerKwEstimate ?? null);
+  readonly massProposal = computed(() => this.suggestions()?.massKgEstimate ?? null);
+
+  /** Last VIN lookup in this visit: what was found, to show next to the filled fields. */
+  readonly vinResult = signal<VinDecoding | null>(null);
+  readonly vinLoading = signal(false);
+  readonly vinError = signal<string | null>(null);
 
   /** What is sent: the user's overrides, and for the distance the routed one from the ranking. */
   readonly request = computed<CalculationRequest>(() => {
@@ -228,6 +250,57 @@ export class CalculatorStore {
     });
   }
 
+  /**
+   * Looks the VIN up and fills every field the sources state (category, fuel, displacement, year, power, CO₂, weight);
+   * whatever they do not know stays as the calculator's proposal.
+   */
+  lookupVin(raw: string): void {
+    const vin = raw.replace(/[\s-]/g, '').toUpperCase();
+    this.vinError.set(null);
+    if (!/^[A-HJ-NPR-Z0-9]{17}$/.test(vin)) {
+      this.vinError.set('vin.invalid');
+      return;
+    }
+    this.vinLoading.set(true);
+    this.api
+      .decodeVin(vin)
+      .pipe(
+        map((d) => ({ d, err: null as string | null })),
+        catchError((e: HttpErrorResponse) =>
+          of({ d: null, err: e.status === 429 ? 'error.rateLimited' : e.status === 400 ? 'vin.invalid' : 'vin.w.offline' }),
+        ),
+      )
+      .subscribe(({ d, err }) => {
+        this.vinLoading.set(false);
+        if (!d) {
+          this.vinError.set(err);
+          return;
+        }
+        this.vinResult.set(d);
+        this.applyVin(d);
+      });
+  }
+
+  private applyVin(d: VinDecoding): void {
+    const s = this.state();
+    const changes: Partial<WizardState> = { vin: d.vin, vehicleDescription: d.description || null };
+    if (d.vehicleCategory) changes.vehicleCategory = d.vehicleCategory;
+    if (d.fuelType) changes.fuelType = d.fuelType;
+    if (d.engineCc != null) changes.engineCc = d.engineCc;
+    if (d.modelYear) changes.productionYear = d.modelYear;
+    // fields not stated go back to the proposal rather than keeping values typed for another car
+    changes.powerKw = d.powerKw ?? (s.vin && s.vin !== d.vin ? null : s.powerKw);
+    changes.co2Gkm = d.co2Gkm ?? (s.vin && s.vin !== d.vin ? null : s.co2Gkm);
+    changes.massKg = d.massKg ?? (s.vin && s.vin !== d.vin ? null : s.massKg);
+    this.patch(changes);
+  }
+
+  clearVin(): void {
+    this.vinResult.set(null);
+    this.vinError.set(null);
+    this.patch({ vin: null, vehicleDescription: null });
+  }
+
   choosePort(code: string): void {
     this.setPortMode('MANUAL');
     this.patch({ euPortCode: code, deliveryDistanceKm: null });
@@ -254,8 +327,49 @@ export class CalculatorStore {
       destinationLon: place.lon,
       destinationCountry: place.countryCode,
       deliveryDistanceKm: null,
-      ...(countryChanged ? { pricePerKm: null, postImportServices: null } : {}),
+      ...(countryChanged ? { pricePerKm: null, postImportServices: null, registrationTaxOwn: null } : {}),
     });
+  }
+
+  /**
+   * Result currency switch. Amounts the user typed (repair, insurance) are in the display currency, so they are
+   * converted at the NBP rate rather than silently re-labelled; on the result step the quote is recalculated.
+   */
+  setDisplayCurrency(currency: DisplayCurrency): void {
+    const s = this.state();
+    if (currency === s.displayCurrency) {
+      return;
+    }
+    const typed = s.repairEstimate != null || s.insuranceEstimate != null || s.registrationTaxOwn != null;
+    const apply = (rate: number | null) => {
+      const convert = (v: number | null) => (v == null || rate == null ? null : roundAmount(v * rate));
+      this.patch({
+        displayCurrency: currency,
+        ...(typed
+          ? {
+              repairEstimate: convert(s.repairEstimate),
+              insuranceEstimate: convert(s.insuranceEstimate),
+              registrationTaxOwn: convert(s.registrationTaxOwn),
+            }
+          : {}),
+      });
+      if (this.step() === RESULT_STEP) {
+        this.calculate();
+      }
+    };
+    if (!typed || !this.browser) {
+      apply(null);
+      return;
+    }
+    this.api
+      .fx()
+      .pipe(catchError(() => of(null)))
+      .subscribe((fx) => {
+        const from = fx?.plnPerUnit[s.displayCurrency] ?? (s.displayCurrency === 'PLN' ? 1 : null);
+        const to = fx?.plnPerUnit[currency] ?? (currency === 'PLN' ? 1 : null);
+        // without rates the typed amounts go back to the proposals, which come in the new currency
+        apply(from != null && to != null ? from / to : null);
+      });
   }
 
   private setPortMode(mode: 'AUTO' | 'MANUAL'): void {
@@ -339,6 +453,11 @@ export class CalculatorStore {
     }
     return this.api.createQuote(this.request()).pipe(tap((q) => this.result.set(q)));
   }
+}
+
+/** Converted amounts are rounded like the proposals: to 10 units, or to 1 below 100. */
+function roundAmount(v: number): number {
+  return v >= 100 ? Math.round(v / 10) * 10 : Math.round(v);
 }
 
 function restorePortMode(): 'AUTO' | 'MANUAL' {

@@ -58,6 +58,7 @@ import { Logo } from './logo';
             <li><a [routerLink]="home()" fragment="pricing" class="hover:text-brand-text">{{ 'layout.pricing' | translate }}</a></li>
             <li><a [routerLink]="home()" fragment="faq" class="hover:text-brand-text">{{ 'layout.faq' | translate }}</a></li>
             <li><a [routerLink]="home()" fragment="pricing" class="hover:text-brand-text">{{ 'layout.forBusiness' | translate }}</a></li>
+            <li><a [routerLink]="terms()" class="hover:text-brand-text">{{ 'footer.terms' | translate }}</a></li>
             <li><a [routerLink]="privacy()" class="hover:text-brand-text">{{ 'footer.privacy' | translate }}</a></li>
           </ul>
         </div>
@@ -104,4 +105,5 @@ export class SiteFooter {
     return new Intl.DisplayNames([this.lang.locale()], { type: 'region' }).of(code) ?? code;
   }
   protected readonly privacy = computed(() => pathFor('privacy', this.lang.current()));
+  protected readonly terms = computed(() => pathFor('terms', this.lang.current()));
 }

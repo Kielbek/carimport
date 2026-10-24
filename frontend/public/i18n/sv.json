@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Punktskatt",
     "FORKLIFT_LOADING": "Lastning med gaffeltruck",
     "IMPORT_VAT": "Importmoms",
-    "INDIVIDUAL_APPROVAL": "Enskilt godkännande (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Enskilt godkännande / importbesiktning",
     "INLAND_TRANSPORT": "Landtransport till hamnen",
     "INTRA_EU_ACQUISITION_VAT": "Moms på unionsinternt förvärv (omvänd skattskyldighet, avdragsgill)",
     "INTRA_EU_TRANSPORT": "Biltransport från hamnen till destinationen",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Transportskada – självrisk",
     "RISK_HIDDEN_DAMAGE": "Dolda skador som inte syns på auktionen",
     "RISK_TITLE_DELAY": "Försenad ägarhandling (extra lagring)",
-    "RISK_EXPORT_DOCS_DELAY": "Försenade exporthandlingar"
+    "RISK_EXPORT_DOCS_DELAY": "Försenade exporthandlingar",
+    "REGISTRATION_TAX": "Registreringsskatt",
+    "COC_CERTIFICATE": "Tillverkarens datablad / CoC"
   },
   "doc": {
     "billOfLading": "Konossement (Bill of Lading)",
@@ -255,7 +257,18 @@
     "reportItem4": "Registreringsavgifter och tjänster efter import",
     "reportItem5": "Risker med belopp: optimistiskt, medel, pessimistiskt",
     "reportItem6": "Steg-för-steg-plan med tidsfrister och lista över handlingar",
-    "cheapestPort": "billigaste hamnen"
+    "cheapestPort": "billigaste hamnen",
+    "lockedEyebrow": "Fullständig rapport",
+    "lockedTitle": "Hela kostnaden till din dörr",
+    "lockedLead": "Optimistiskt, genomsnittligt och pessimistiskt scenario plus {{count}} poster till: transport, leverans, registrering och dolda kostnader.",
+    "unlockNote": "PDF direkt · säker betalning",
+    "freeTitle": "Tull, moms och skatter – gratis",
+    "freeLead": "Förtullning i {{port}}. Beloppen du själv kan räkna ut på papper.",
+    "freeBadge": "Gratis",
+    "freeBase": "Beräknat på tullvärdet (pris, auktionsavgifter, transport till EU och försäkring) efter dagens växelkurs.",
+    "lockedListTitle": "Också beräknat – i rapporten",
+    "riskTag": "risk",
+    "moreLocked": "+ {{count}} poster till, inkl. dolda kostnader"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Egen container",
@@ -377,7 +390,15 @@
     "distanceRouted": "Vägrutt från {{port}} till din adress.",
     "distanceEstimated": "Uppskattning från {{port}} till din adress (fågelvägen × 1,25).",
     "distanceTypical": "Typiskt avstånd från {{port}} – ange adressen ovan för en exakt siffra.",
-    "tariffShort": "Marknad: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} för lastning, min. {{minimum}} {{cur}}."
+    "tariffShort": "Marknad: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} för lastning, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Från CoC-intyget eller rutdekalen. De flesta registreringsskatter i EU bygger på det.",
+    "powerKw": "Motoreffekt",
+    "powerKwHint": "I kW (1 hk ≈ 0,74 kW). Används i Belgien, Italien och Frankrike.",
+    "specTitle": "Vad skatterna baseras på",
+    "specLead": "Föreslaget utifrån typ och motor. Exakta uppgifter (från VIN eller CoC) gör registreringsskatten mycket mer exakt.",
+    "mass": "Tjänstevikt",
+    "massHint": "I kg. Räknas i Frankrike (viktmalus) och Estland."
   },
   "layout": {
     "topbar": "Oberoende kalkylator för kostnaden att importera bil från USA, Kanada, Japan, Förenade Arabemiraten och Storbritannien till 27 EU-länder",
@@ -891,7 +912,18 @@
     "SERVICE_INSPECTION": "Olja, filter, vätskor, bromsar efter en lång resa",
     "GEOMETRY_ALIGNMENT": "Rekommenderas efter reparationer av hjulupphängningen",
     "DETAILING": "Tvätt, invändig rengöring, lackpolering",
-    "EXPERT_VALUATION": "Användbart för helförsäkring och vid försäljning"
+    "EXPERT_VALUATION": "Användbart för helförsäkring och vid försäljning",
+    "INDIVIDUAL_APPROVAL": "En bil byggd för en marknad utanför EU saknar EU-typgodkännande – en godkänd station kontrollerar den mot EU-reglerna ({{inspection}}).",
+    "REGISTRATION_FEE": "Officiella avgifter – {{authority}}: registreringsbevis och registreringsskyltar.",
+    "RDW_INSPECTION": "RDW kontrollerar den importerade bilen och dess identitet innan den får nederländsk registrering.",
+    "TECHNICAL_INSPECTION_IMPORT": "Utökad besiktning av en bil som förts in från utlandet, på en besiktningsstation.",
+    "REG_TEMPORARY_PERMIT": "Tillfälligt tillstånd tills registreringsbeviset är klart.",
+    "REG_TEMPORARY_PLATES": "Tillfälliga skyltar som lämnas ut med det tillfälliga tillståndet.",
+    "REG_CERTIFICATE": "Själva registreringsbeviset.",
+    "REG_PLATES": "Permanenta registreringsskyltar.",
+    "REG_STICKER": "Kontrollmärke på vindrutan.",
+    "RECYCLING_FEE": "Engångsavgift för en bil som förts in av någon utan eget återvinningsnätverk.",
+    "COC_CERTIFICATE": "Behövs för godkännande och registrering när bilen saknar EU-intyg om överensstämmelse."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Terminalen tar betalt per dag efter den avgiftsfria perioden, t.ex. när handlingar eller transport är försenade.",
@@ -1277,6 +1309,69 @@
       "customs": "Tull och skatter",
       "registration": "Registrering",
       "logistics": "Frakt och hamnar"
+    }
+  },
+  "portCost": {
+    "taxesAndFees": "Skatter & hamnavgifter",
+    "extra": "+{{amount}} {{cur}} dörr till dörr",
+    "cheapestDoor": "billigast dörr till dörr",
+    "rankingNote": "Sorterat efter den totala kostnaden dörr till dörr (skatter, frakt, hamn, leverans till din adress). Varje hamn visar sina skatter och hamnavgifter; hela uppdelningen finns i rapporten.",
+    "title": "Förtullning i {{port}}: skatter och avgifter",
+    "dutyWhere": "Samma i alla EU-hamnar – 10 % av tullvärdet (CIF)",
+    "vatWhere": "Betalas i hamnens land: {{country}}",
+    "nationalWhere": "Betalas i registreringslandet ({{country}}) – oavsett vilken hamn du väljer",
+    "notPriced": "Lokal registreringsskatt – land: {{country}}; beror på CO₂ eller pris, ingår inte",
+    "portFees": "Hamnavgifter",
+    "portFeesWhat": "Terminalhantering, lossning och tullombud",
+    "total": "Skatter och avgifter",
+    "howTitle": "Så räknar vi",
+    "how1": "Tullvärde (CIF) = pris + auktionsavgifter + transport till EU-hamnen + försäkring.",
+    "how2": "Tull: 10 % av tullvärdet (pickuper 22 %, motorcyklar 6–8 %) – samma i alla EU-hamnar.",
+    "how3": "Importmomsen betalas i hamnens land, enligt dess skattesats, på tullvärde + tull + transport till din adress. En begagnad bil som förtullas utanför {{country}} betalar inte moms igen hemma.",
+    "how4": "Registreringslandets nationella skatter (t.ex. polsk punktskatt) betalas hemma – oavsett hamn.",
+    "how5": "Rankningen lägger till frakt, hamnavgifter och leverans per km till din adress – den billigaste summan står först.",
+    "bestLabel": "Mest lönsamma hamn:",
+    "bestSelected": "vald",
+    "bestChoose": "Välj – spara {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Det här måste du göra – {{country}}",
+    "noRegTaxName": "Registreringsskatt",
+    "tax": {
+      "EXCISE": "Punktskatt på {{rate}} % av tullvärdet plus tull. Lämna in AKC-U/S-deklarationen och betala på skattekontoret inom 14 dagar från att bilen förts in – före registreringen.",
+      "NONE": "Registreringsland ({{country}}): ingen engångsskatt vid registrering – bara de officiella avgifterna nedan.",
+      "ESTIMATED": "Vi uppskattar den utifrån CO₂ ({{co2}} g/km), effekt ({{kw}} kW), bilens ålder och värde enligt årets tabell. Skattemyndigheten har sista ordet – om du har deras belopp, ange det.",
+      "OFFICIAL": "Den här skatten beror på för många detaljer för en rättvisande uppskattning. Räkna ut den i den officiella kalkylatorn och ange beloppet – vi lägger till det i beräkningen."
+    },
+    "taxAmount": "Registreringsskatt",
+    "taxOwnHint": "Behåll vår uppskattning eller ange beloppet från skattemyndigheten.",
+    "taxTypeHint": "Belopp från den officiella kalkylatorn. Tomt = ingår inte.",
+    "officialCalculator": "Officiell kalkylator",
+    "amountInReport": "belopp i rapporten",
+    "registerTitle": "Registrera bilen – {{authority}}",
+    "registerText": "Med besiktningen ({{inspection}}), bevis på betald skatt, tullhandlingarna och ägarhandlingen (title).",
+    "deadline": "Tidsfrist: {{days}} dagar.",
+    "canTitle": "Det här kan du göra",
+    "canLead": "Inget lagkrav, men nästan varje import behöver något av det. Rekommenderade poster är förbockade – bocka ur det du gör själv."
+  },
+  "vin": {
+    "label": "Har du VIN? Vi fyller i uppgifterna",
+    "placeholder": "17 tecken, t.ex. 1FA6P8CF7K5100001",
+    "fill": "Fyll i från VIN",
+    "hint": "Från ägarhandlingen, vindrutan eller auktionsannonsen. Bilar från Japan har ett chassinummer i stället för VIN – ange deras uppgifter för hand.",
+    "filled": "Ifyllt från den amerikanska fordonsdatabasen (NHTSA) och EPA. Kontrollera fälten nedan – du kan fortfarande ändra vilket som helst.",
+    "filledOffline": "Vi har bara läst det som själva VIN-numret anger. Resten är fortfarande våra förslag – rätta dem om du känner till uppgifterna.",
+    "clear": "Ta bort VIN",
+    "co2Epa": "EPA, omräknat till g/km",
+    "massGvwr": "uppskattat från viktklassen",
+    "madeIn": "Tillverkad i",
+    "invalid": "Ett VIN har 17 bokstäver och siffror (aldrig I, O eller Q). Kontrollera om ett tecken saknas eller är för mycket.",
+    "w": {
+      "checkDigit": "Kontrollsiffran stämmer inte – troligen ett skrivfel. Jämför VIN med ägarhandlingen.",
+      "notFound": "Fordonsdatabasen känner inte till detta VIN (vanligt för bilar byggda utanför Nordamerika). Vi har använt det som själva VIN-numret anger.",
+      "offline": "Fordonsdatabasen svarar inte just nu. Vi har använt det som själva VIN-numret anger – försök igen senare för fullständiga uppgifter.",
+      "noCo2": "EPA har inget CO₂-värde för den här versionen – vi behåller vår uppskattning. Ange värdet från CoC-intyget om du har det.",
+      "noPower": "Effekten för detta VIN finns inte i databasen – vi behåller vår uppskattning."
     }
   }
 }

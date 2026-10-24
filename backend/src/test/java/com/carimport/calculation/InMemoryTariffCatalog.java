@@ -98,6 +98,7 @@ public class InMemoryTariffCatalog implements TariffCatalog {
 
         taxes.add(new EuCountryTaxProfile("PL", CurrencyCode.PLN, bd("0.23"), bd("0.08"), true));
         taxes.add(new EuCountryTaxProfile("DE", CurrencyCode.EUR, bd("0.19"), bd("0.07"), false));
+        taxes.add(new EuCountryTaxProfile("NL", CurrencyCode.EUR, bd("0.21"), bd("0.09"), false));
 
         for (FuelType f : List.of(FuelType.PETROL, FuelType.DIESEL)) {
             excise.add(new ExciseRate("PL", f, 0, 2000, bd("0.031")));

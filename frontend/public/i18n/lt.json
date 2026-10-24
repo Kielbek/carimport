@@ -60,7 +60,7 @@
     "EXCISE_TAX": "Akcizas",
     "FORKLIFT_LOADING": "Pakrovimas šakiniu krautuvu",
     "IMPORT_VAT": "Importo PVM",
-    "INDIVIDUAL_APPROVAL": "Individualus patvirtinimas (§21 StVZO)",
+    "INDIVIDUAL_APPROVAL": "Individualus patvirtinimas / importo apžiūra",
     "INLAND_TRANSPORT": "Sausumos transportas iki uosto",
     "INTRA_EU_ACQUISITION_VAT": "Prekių įsigijimo ES viduje PVM (atvirkštinis apmokestinimas, atskaitomas)",
     "INTRA_EU_TRANSPORT": "Autovežis iš uosto iki paskirties vietos",
@@ -99,7 +99,9 @@
     "RISK_TRANSIT_DAMAGE_DEDUCTIBLE": "Žala transportuojant – draudimo išskaita",
     "RISK_HIDDEN_DAMAGE": "Paslėpti defektai, nematomi aukcione",
     "RISK_TITLE_DELAY": "Nuosavybės dokumento vėlavimas (papildomas saugojimas)",
-    "RISK_EXPORT_DOCS_DELAY": "Eksporto dokumentų vėlavimas"
+    "RISK_EXPORT_DOCS_DELAY": "Eksporto dokumentų vėlavimas",
+    "REGISTRATION_TAX": "Registracijos mokestis",
+    "COC_CERTIFICATE": "Gamintojo duomenų lapas / CoC"
   },
   "doc": {
     "billOfLading": "Konosamentas (Bill of Lading)",
@@ -255,7 +257,18 @@
     "reportItem4": "Registracijos mokesčiai ir paslaugos po importo",
     "reportItem5": "Rizikos su sumomis: optimistinis, vidutinis, pesimistinis",
     "reportItem6": "Žingsnis po žingsnio planas su terminais ir dokumentų sąrašu",
-    "cheapestPort": "pigiausias uostas"
+    "cheapestPort": "pigiausias uostas",
+    "lockedEyebrow": "Visa ataskaita",
+    "lockedTitle": "Visa kaina iki jūsų durų",
+    "lockedLead": "Optimistinis, vidutinis ir pesimistinis scenarijus bei dar {{count}} pozicijos: transportas, pristatymas, registracija ir paslėptos išlaidos.",
+    "unlockNote": "PDF iš karto · saugus mokėjimas",
+    "freeTitle": "Muitas, PVM ir mokesčiai – nemokamai",
+    "freeLead": "Muitinio įforminimo uostas: {{port}}. Sumos, kurias galėtumėte apskaičiuoti ant popieriaus.",
+    "freeBadge": "Nemokamai",
+    "freeBase": "Apskaičiuota nuo muitinės vertės (kaina, aukciono mokesčiai, transportas į ES ir draudimas) šiandienos valiutos kursu.",
+    "lockedListTitle": "Taip pat apskaičiuota – ataskaitoje",
+    "riskTag": "rizika",
+    "moreLocked": "+ dar {{count}} pozicijos, įskaitant paslėptas išlaidas"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Atskiras konteineris",
@@ -377,7 +390,15 @@
     "distanceRouted": "Kelio maršrutas nuo uosto ({{port}}) iki jūsų adreso.",
     "distanceEstimated": "Įvertis nuo uosto ({{port}}) iki jūsų adreso (tiesi linija × 1,25).",
     "distanceTypical": "Tipinis atstumas nuo uosto ({{port}}) – tiksliam skaičiui įveskite adresą aukščiau.",
-    "tariffShort": "Rinka: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} už pakrovimą, min. {{minimum}} {{cur}}."
+    "tariffShort": "Rinka: {{min}}–{{max}} {{cur}}/km + {{fixed}} {{cur}} už pakrovimą, min. {{minimum}} {{cur}}.",
+    "co2": "CO₂ (WLTP)",
+    "co2Hint": "Iš CoC arba lango lipduko. Nuo jos priklauso dauguma ES registracijos mokesčių.",
+    "powerKw": "Variklio galia",
+    "powerKwHint": "kW (1 AG ≈ 0,74 kW). Naudojama Belgijoje, Italijoje ir Prancūzijoje.",
+    "specTitle": "Nuo ko priklauso mokesčiai",
+    "specLead": "Pasiūlyta pagal tipą ir variklį. Tikslūs duomenys (iš VIN ar CoC) gerokai patikslina registracijos mokestį.",
+    "mass": "Nuosava masė",
+    "massHint": "kg. Svarbi Prancūzijoje (malus pagal svorį) ir Estijoje."
   },
   "layout": {
     "topbar": "Nepriklausoma automobilių importo iš JAV, Kanados, Japonijos, JAE ir JK į 27 ES šalis išlaidų skaičiuoklė",
@@ -891,7 +912,18 @@
     "SERVICE_INSPECTION": "Alyva, filtrai, skysčiai, stabdžiai po ilgos kelionės",
     "GEOMETRY_ALIGNMENT": "Rekomenduojama po važiuoklės remonto",
     "DETAILING": "Plovimas, salono valymas, dažų poliravimas",
-    "EXPERT_VALUATION": "Naudinga KASKO draudimui ir perpardavimui"
+    "EXPERT_VALUATION": "Naudinga KASKO draudimui ir perpardavimui",
+    "INDIVIDUAL_APPROVAL": "Automobilis, pagamintas ne ES rinkai, neturi ES tipo patvirtinimo – įgaliota stotis jį patikrina pagal ES taisykles ({{inspection}}).",
+    "REGISTRATION_FEE": "Oficialios rinkliavos – {{authority}}: registracijos liudijimas ir numerio ženklai.",
+    "RDW_INSPECTION": "RDW patikrina importuotą automobilį ir jo tapatybę prieš suteikdama Nyderlandų registraciją.",
+    "TECHNICAL_INSPECTION_IMPORT": "Išplėstinė iš užsienio įvežto automobilio techninė apžiūra apžiūros stotyje.",
+    "REG_TEMPORARY_PERMIT": "Laikinas leidimas, kol bus parengtas registracijos liudijimas.",
+    "REG_TEMPORARY_PLATES": "Laikini numeriai, išduodami kartu su laikinu leidimu.",
+    "REG_CERTIFICATE": "Pats registracijos liudijimas.",
+    "REG_PLATES": "Nuolatiniai valstybinio numerio ženklai.",
+    "REG_STICKER": "Kontrolinis lipdukas ant priekinio stiklo.",
+    "RECYCLING_FEE": "Vienkartinis mokestis už automobilį, kurį įvežė asmuo, neturintis perdirbimo tinklo.",
+    "COC_CERTIFICATE": "Reikalingas patvirtinimui ir registracijai, kai automobilis neturi ES atitikties sertifikato."
   },
   "riskInfo": {
     "RISK_PORT_STORAGE": "Pasibaigus nemokamam laikotarpiui terminalas ima mokestį už kiekvieną dieną, pvz., kai vėluoja dokumentai ar transportas.",
@@ -1277,6 +1309,69 @@
       "customs": "Muitas ir mokesčiai",
       "registration": "Registracija",
       "logistics": "Transportas ir uostai"
+    }
+  },
+  "portCost": {
+    "taxesAndFees": "Mokesčiai ir uosto rinkliavos",
+    "extra": "+{{amount}} {{cur}} nuo durų iki durų",
+    "cheapestDoor": "pigiausia nuo durų iki durų",
+    "rankingNote": "Surikiuota pagal visą kainą nuo durų iki durų (mokesčiai, frachtas, uostas, pristatymas jūsų adresu). Prie kiekvieno uosto matote jo mokesčius ir uosto rinkliavas; visas išskaidymas – ataskaitoje.",
+    "title": "Muitinis įforminimas – {{port}}: mokesčiai ir rinkliavos",
+    "dutyWhere": "Vienodas visuose ES uostuose – 10 % muitinės vertės (CIF)",
+    "vatWhere": "Mokamas uosto šalyje: {{country}}",
+    "nationalWhere": "Mokami registracijos šalyje ({{country}}) – nepriklausomai nuo uosto",
+    "notPriced": "Vietinis registracijos mokestis – šalis: {{country}}; priklauso nuo CO₂ ar kainos, neįskaičiuotas",
+    "portFees": "Uosto rinkliavos",
+    "portFeesWhat": "Terminalo aptarnavimas, iškrovimas ir muitinės tarpininkas",
+    "total": "Mokesčiai ir rinkliavos",
+    "howTitle": "Kaip skaičiuojame",
+    "how1": "Muitinė vertė (CIF) = kaina + aukciono mokesčiai + transportas iki ES uosto + draudimas.",
+    "how2": "Muitas: 10 % muitinės vertės (pikapai 22 %, motociklai 6–8 %) – vienodas visuose ES uostuose.",
+    "how3": "Importo PVM mokamas uosto šalyje jos tarifu nuo muitinės vertės + muito + transporto iki jūsų adreso. Naudotas automobilis, įformintas ne registracijos šalyje ({{country}}), namuose PVM antrą kartą nemoka.",
+    "how4": "Registracijos šalies nacionaliniai mokesčiai (pvz., Lenkijos akcizas) mokami namuose – nepriklausomai nuo uosto.",
+    "how5": "Reitingas prideda frachtą, uosto rinkliavas ir pristatymą už km iki jūsų adreso – pigiausia suma yra pirma.",
+    "bestLabel": "Palankiausias uostas:",
+    "bestSelected": "pasirinktas",
+    "bestChoose": "Pasirinkite – sutaupysite {{amount}} {{cur}}"
+  },
+  "after": {
+    "mustTitle": "Ką privalote padaryti – {{country}}",
+    "noRegTaxName": "Registracijos mokestis",
+    "tax": {
+      "EXCISE": "{{rate}}% akcizas nuo muitinės vertės su muitu. Pateikite AKC-U/S deklaraciją ir sumokėkite mokesčių inspekcijoje per 14 dienų nuo automobilio įvežimo – prieš registraciją.",
+      "NONE": "Registracijos šalis ({{country}}): vienkartinio mokesčio registruojant nėra – tik toliau nurodytos oficialios rinkliavos.",
+      "ESTIMATED": "Jį apskaičiuojame pagal CO₂ ({{co2}} g/km), galią ({{kw}} kW), automobilio amžių ir vertę pagal šių metų lentelę. Galutinį žodį taria mokesčių inspekcija – jei žinote jos sumą, įveskite ją.",
+      "OFFICIAL": "Šis mokestis priklauso nuo per daug detalių, kad jį būtų galima patikimai įvertinti. Apskaičiuokite jį oficialioje skaičiuoklėje ir įveskite sumą – pridėsime ją prie skaičiavimo."
+    },
+    "taxAmount": "Registracijos mokestis",
+    "taxOwnHint": "Palikite mūsų įvertį arba įveskite mokesčių inspekcijos sumą.",
+    "taxTypeHint": "Suma iš oficialios skaičiuoklės. Tuščia = neįtraukiama.",
+    "officialCalculator": "Oficiali skaičiuoklė",
+    "amountInReport": "suma ataskaitoje",
+    "registerTitle": "Užregistruokite automobilį – {{authority}}",
+    "registerText": "Su apžiūra ({{inspection}}), mokesčio sumokėjimo įrodymu, muitinės dokumentais ir nuosavybės dokumentu (title).",
+    "deadline": "Terminas: {{days}} d.",
+    "canTitle": "Ką galite padaryti",
+    "canLead": "Įstatymas to nereikalauja, bet beveik kiekvienam importui kažko iš to prireikia. Rekomenduojamos pozicijos pažymėtos – nuimkite žymę nuo to, ką darysite patys."
+  },
+  "vin": {
+    "label": "Turite VIN? Užpildysime duomenis",
+    "placeholder": "17 simbolių, pvz., 1FA6P8CF7K5100001",
+    "fill": "Užpildyti pagal VIN",
+    "hint": "Iš nuosavybės dokumento, priekinio stiklo arba aukciono skelbimo. Automobiliai iš Japonijos vietoj VIN turi kėbulo numerį – jų duomenis įveskite ranka.",
+    "filled": "Užpildyta iš JAV transporto priemonių duomenų bazės (NHTSA) ir EPA. Patikrinkite toliau esančius laukus – bet kurį iš jų vis dar galite pakeisti.",
+    "filledOffline": "Nuskaitėme tik tai, kas užkoduota pačiame VIN. Kita lieka mūsų pasiūlymais – pataisykite, jei žinote duomenis.",
+    "clear": "Pašalinti VIN",
+    "co2Epa": "EPA, perskaičiuota į g/km",
+    "massGvwr": "įvertinta pagal svorio klasę",
+    "madeIn": "Pagaminta",
+    "invalid": "VIN sudaro 17 raidžių ir skaitmenų (niekada I, O ar Q). Patikrinkite, ar netrūksta simbolio ir nėra vieno per daug.",
+    "w": {
+      "checkDigit": "Kontrolinis skaitmuo nesutampa – tikriausiai rašybos klaida. Palyginkite VIN su nuosavybės dokumentu.",
+      "notFound": "Transporto priemonių duomenų bazė šio VIN nežino (dažna automobiliams, pagamintiems ne Šiaurės Amerikoje). Panaudojome tai, kas užkoduota pačiame VIN.",
+      "offline": "Transporto priemonių duomenų bazė šiuo metu neatsako. Panaudojome tai, kas užkoduota pačiame VIN – visai specifikacijai gauti bandykite vėliau.",
+      "noCo2": "EPA nepateikia šios versijos CO₂ vertės – paliekame savo įvertį. Jei turite CoC vertę, įveskite ją.",
+      "noPower": "Šio VIN galios duomenų bazėje nėra – paliekame savo įvertį."
     }
   }
 }

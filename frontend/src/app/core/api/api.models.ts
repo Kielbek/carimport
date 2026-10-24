@@ -49,6 +49,17 @@ export interface CalculationRequest {
   destinationAddress: string | null;
   destinationLat: number | null;
   destinationLon: number | null;
+  /** WLTP CO₂ g/km from the CoC; null = estimated from fuel and displacement. */
+  co2Gkm: number | null;
+  /** Engine power in kW; null = estimated. */
+  powerKw: number | null;
+  /** Registration tax the buyer computed themselves (display currency); null = our estimate. */
+  registrationTaxOwn: number | null;
+  /** Curb weight in kg; null = estimated. */
+  massKg: number | null;
+  /** VIN the data came from and the decoded make/model - shown in the report. */
+  vin: string | null;
+  vehicleDescription: string | null;
 }
 
 export type PortRegion = 'NORTH_SEA' | 'ATLANTIC' | 'BALTIC' | 'WEST_MED' | 'EAST_MED';
@@ -71,8 +82,10 @@ export interface PortSuggestion {
   lon: number;
   distanceKm: number | null;
   distanceMethod: 'ROUTED' | 'ESTIMATED';
-  /** Expected total, rounded to 100, display currency. */
-  total: number;
+  /** Duty, VAT of the port country, national taxes of the destination and port fees (display currency). */
+  taxes: TaxSummary;
+  /** How much more this port costs door to door than the cheapest one (0 for the cheapest). */
+  extraVsBest: number;
   daysMin: number;
   daysMax: number;
 }
@@ -85,6 +98,13 @@ export interface Suggestions {
   repairEstimate: number;
   insuranceEstimate: number;
   currency: string;
+  co2Estimate: number;
+  powerKwEstimate: number;
+  massKgEstimate: number;
+  /** EXCISE (Polish excise), NONE, ESTIMATED (our formula) or OFFICIAL_CALCULATOR (buyer types it). */
+  registrationTax: 'EXCISE' | 'NONE' | 'ESTIMATED' | 'OFFICIAL_CALCULATOR';
+  registrationTaxEstimate: number | null;
+  registrationTaxUrl: string | null;
 }
 
 export interface Timeline {
@@ -94,19 +114,38 @@ export interface Timeline {
 }
 
 /** Free tier: rounded scenario totals, shares, what is included (names only) and which risks were considered. */
+/** One tax line of the free result: rate as a fraction, the country that levies it, whole-unit amount. */
+export interface TaxItem {
+  code: string;
+  rate: number | null;
+  country: string;
+  amount: number;
+}
+
+/** The free "on paper" part: duty, import VAT of the port country, national taxes of the destination, port fees. */
+export interface TaxSummary {
+  duty: TaxItem;
+  vat: TaxItem;
+  national: TaxItem[];
+  portFees: number;
+  total: number;
+}
+
+/**
+ * Free result: only the simple taxes; the door-to-door total, scenarios, transport, delivery, registration and hidden
+ * costs are computed but only listed by name (lockedItems) - the paid report shows them.
+ */
 export interface PublicQuoteView {
   quoteId: string | null;
-  rangeMin: number;
-  rangeMax: number;
   currency: DisplayCurrency;
-  scenarios: { optimistic: number; average: number; pessimistic: number };
-  sharePercent: Record<CostCategory, number>;
-  includedItems: Partial<Record<CostCategory, string[]>>;
-  risks: { code: string; probabilityPercent: number }[];
-  exciseApplies: boolean;
+  taxes: TaxSummary;
+  clearancePort: string;
+  clearanceCountry: string;
+  destinationCountry: string;
+  lockedItems: Partial<Record<CostCategory, string[]>>;
+  risks: string[];
+  lockedCount: number;
   transitDays: number;
-  timeline: Timeline;
-  deliveryKm: number;
   fxDate: string;
   warnings: string[];
   expiresAt: string | null;
@@ -186,4 +225,29 @@ export interface ApiProblem {
   detail?: string;
   messageKey?: string;
   errors?: Record<string, string>;
+}
+
+/** GET /vehicle/vin/{vin}: only what the sources state; null fields stay as the calculator's proposals. */
+export interface VinDecoding {
+  vin: string;
+  /** NHTSA = found in the US vehicle database; OFFLINE = only what the VIN itself encodes. */
+  source: 'NHTSA' | 'OFFLINE';
+  checkDigitValid: boolean;
+  modelYear: number | null;
+  make: string | null;
+  model: string | null;
+  trim: string | null;
+  bodyClass: string | null;
+  vehicleCategory: VehicleCategory | null;
+  fuelType: FuelType | null;
+  engineCc: number | null;
+  cylinders: number | null;
+  powerKw: number | null;
+  co2Gkm: number | null;
+  co2Source: 'EPA' | null;
+  massKg: number | null;
+  massSource: 'CURB' | 'GVWR' | null;
+  manufacturedIn: string | null;
+  warnings: string[];
+  description: string;
 }
