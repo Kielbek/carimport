@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "Z dokumentu CoC lub naklejki z okna. Od niej zależy większość podatków rejestracyjnych w UE.",
     "powerKw": "Moc silnika",
-    "powerKwHint": "W kW (1 KM ≈ 0,74 kW). Liczy się w Belgii, we Włoszech i we Francji."
+    "powerKwHint": "W kW (1 KM ≈ 0,74 kW). Liczy się w Belgii, we Włoszech i we Francji.",
+    "specTitle": "Od czego zależą podatki",
+    "specLead": "Proponujemy wartości z typu i silnika. Dokładne dane (z VIN lub CoC) mocno poprawiają wyliczenie podatku rejestracyjnego.",
+    "mass": "Masa własna",
+    "massHint": "W kg. Liczy się we Francji (malus od wagi) i w Estonii."
   },
   "layout": {
     "topbar": "Niezależny kalkulator kosztów importu aut z USA, Kanady, Japonii, ZEA i UK do 27 krajów UE",
@@ -1349,5 +1353,25 @@
     "deadline": "Termin: {{days}} dni.",
     "canTitle": "Co możesz zrobić",
     "canLead": "Nie wymaga tego prawo, ale prawie każdy import potrzebuje czegoś z tej listy. Zalecane pozycje są zaznaczone – odznacz to, co zrobisz sam."
+  },
+  "vin": {
+    "label": "Masz VIN? Uzupełnimy dane",
+    "placeholder": "17 znaków, np. 1FA6P8CF7K5100001",
+    "fill": "Uzupełnij z VIN",
+    "hint": "Z title, szyby lub ogłoszenia aukcji. Auta z Japonii mają numer nadwozia zamiast VIN – ich dane wpisz ręcznie.",
+    "filled": "Uzupełniliśmy dane z amerykańskiej bazy pojazdów (NHTSA) i EPA. Sprawdź pola poniżej – każde możesz zmienić.",
+    "filledOffline": "Odczytaliśmy tylko to, co zapisane w samym VIN. Reszta zostaje jako nasze propozycje – popraw je, jeśli znasz dane.",
+    "clear": "Usuń VIN",
+    "co2Epa": "EPA, przeliczone na g/km",
+    "massGvwr": "szacunek z klasy masy",
+    "madeIn": "Wyprodukowany",
+    "invalid": "VIN ma 17 liter i cyfr (nigdy I, O ani Q). Sprawdź, czy nie brakuje lub nie ma za dużo znaków.",
+    "w": {
+      "checkDigit": "Cyfra kontrolna się nie zgadza – prawdopodobnie literówka. Porównaj VIN z title.",
+      "notFound": "Baza pojazdów nie zna tego VIN (częste dla aut spoza Ameryki Północnej). Użyliśmy tego, co zapisane w samym VIN.",
+      "offline": "Baza pojazdów chwilowo nie odpowiada. Użyliśmy tego, co zapisane w samym VIN – spróbuj później, by dostać pełną specyfikację.",
+      "noCo2": "EPA nie podaje CO₂ dla tej wersji – zostaje nasz szacunek. Jeśli masz wartość z CoC, wpisz ją.",
+      "noPower": "Baza nie podaje mocy dla tego VIN – zostaje nasz szacunek."
+    }
   }
 }

@@ -24,7 +24,7 @@ import java.util.Set;
 public final class RegistrationTaxes {
 
     /** What the formula needs; values are in the currency of the registration country. */
-    public record Input(String country, FuelType fuel, int co2, int powerKw, int engineCc, int ageYears,
+    public record Input(String country, FuelType fuel, int co2, int powerKw, int engineCc, int massKg, int ageYears,
                         BigDecimal netValue, BigDecimal vatRate) {
 
         /** Value including VAT - the base of the Nordic and Irish taxes. */
@@ -116,13 +116,18 @@ public final class RegistrationTaxes {
         return new Assessment(bd(tax), null, "DK_REG_2026");
     }
 
-    /** Registreerimistasu: 300 € + 5 / 40 / 60 / 80 € per g in the 1-117 / 118-150 / 151-200 / 201+ bands, by age to 0.2. */
+    /**
+     * Registreerimistasu: 300 € + 5 / 40 / 60 / 80 € per g in the 1-117 / 118-150 / 151-200 / 201+ bands + 4 € per kg
+     * above 2 000 kg (2 400 kg for EVs), capped at 4 000 €, all scaled by age down to 0.2 at 15 years.
+     */
     static Assessment estonia(Input in) {
         int g = in.co2();
         double co2 = 5.0 * Math.min(g, 117) + 40.0 * clamp(g - 117, 0, 33) + 60.0 * clamp(g - 150, 0, 50)
                 + 80.0 * Math.max(0, g - 200);
+        int massFrom = in.fuel().isZeroEmission() ? 2400 : in.fuel() == FuelType.PHEV ? 2200 : 2000;
+        double mass = Math.min(4000, 4.0 * Math.max(0, in.massKg() - massFrom));
         double age = Math.max(0.2, 1 - 0.8 * Math.min(in.ageYears(), 15) / 15.0);
-        return new Assessment(bd((300 + co2) * age), null, "EE_REG_2025");
+        return new Assessment(bd((300 + co2 + mass) * age), null, "EE_REG_2025");
     }
 
     /** IEDMT (Spain, mainland): 0 % up to 120 g, 4.75 % to 159 g, 9.75 % to 199 g, 14.75 % from 200 g. */
@@ -142,13 +147,18 @@ public final class RegistrationTaxes {
     /**
      * France: malus CO₂ 2026 (from 108 g, 80 000 € cap above 191 g; minus 10 % for every started year of age) plus the
      * regional tax of ~55 € per fiscal horsepower (CV = CO₂/45 + (kW/40)^1.6; half for cars over 10 years).
-     * The weight malus (from 1.5 t) is not included.
+     * Plus the 2026 weight malus: 10 / 15 / 20 / 25 / 30 € per kg in the 1 500 / 1 700 / 1 800 / 1 900 / 2 000 kg
+     * bands (marginal), same age reduction; zero-emission cars are exempt.
      */
     static Assessment france(Input in) {
         double malus = in.fuel().isZeroEmission() ? 0 : interpolate(in.co2(), new double[][] {
                 {107, 0}, {108, 50}, {113, 170}, {124, 450}, {131, 1074}, {140, 2205}, {150, 4279},
                 {160, 7577}, {170, 12_460}, {180, 19_385}, {191, 30_000}, {192, 80_000}});
-        malus *= Math.max(0, 1 - 0.1 * in.ageYears());
+        double kg = in.massKg();
+        double weight = in.fuel().isZeroEmission() ? 0
+                : 10.0 * clamp(kg - 1500, 0, 200) + 15.0 * clamp(kg - 1700, 0, 100) + 20.0 * clamp(kg - 1800, 0, 100)
+                + 25.0 * clamp(kg - 1900, 0, 100) + 30.0 * Math.max(0, kg - 2000);
+        malus = (malus + weight) * Math.max(0, 1 - 0.1 * in.ageYears());
         double cv = Math.round(in.co2() / 45.0 + Math.pow(in.powerKw() / 40.0, 1.6));
         double regional = Math.max(1, cv) * 55 * (in.ageYears() > 10 ? 0.5 : 1);
         return new Assessment(bd(malus + regional), null, "FR_MALUS_2026");

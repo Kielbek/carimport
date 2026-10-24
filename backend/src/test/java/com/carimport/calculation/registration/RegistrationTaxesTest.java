@@ -11,7 +11,13 @@ class RegistrationTaxesTest {
 
     private static RegistrationTaxes.Input car(String country, FuelType fuel, int co2, int kw, int cc, int age,
                                                String value, String vat) {
-        return new RegistrationTaxes.Input(country, fuel, co2, kw, cc, age, new BigDecimal(value), new BigDecimal(vat));
+        return car(country, fuel, co2, kw, cc, 1400, age, value, vat);
+    }
+
+    private static RegistrationTaxes.Input car(String country, FuelType fuel, int co2, int kw, int cc, int kg, int age,
+                                               String value, String vat) {
+        return new RegistrationTaxes.Input(country, fuel, co2, kw, cc, kg, age, new BigDecimal(value),
+                new BigDecimal(vat));
     }
 
     private static BigDecimal tax(RegistrationTaxes.Input in) {
@@ -43,6 +49,14 @@ class RegistrationTaxesTest {
     void austrianNovaUsesCo2RateMalusAndDeduction() {
         // 175 g: (175 − 91) / 5 = 16.8 % of 30 000 = 5 040, malus 20 × 80 = 1 600, minus 350 → 6 290
         assertThat(tax(car("AT", FuelType.PETROL, 175, 150, 2000, 3, "30000", "0.2"))).isEqualByComparingTo("6290");
+    }
+
+    @Test
+    void frenchWeightMalusIsMarginalByBand() {
+        // same car at 1 400 kg and at 1 950 kg: 200×10 + 100×15 + 100×20 + 50×25 = 6 750 € more (new car)
+        BigDecimal light = tax(car("FR", FuelType.PETROL, 150, 110, 2000, 1400, 0, "30000", "0.2"));
+        BigDecimal heavy = tax(car("FR", FuelType.PETROL, 150, 110, 2000, 1950, 0, "30000", "0.2"));
+        assertThat(heavy.subtract(light)).isEqualByComparingTo("6750");
     }
 
     @Test

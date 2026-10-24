@@ -13,7 +13,8 @@ public record AppProperties(
         Stripe stripe,
         Report report,
         List<AffiliateOffer> affiliates,
-        Geo geo) {
+        Geo geo,
+        Vehicle vehicle) {
 
     public record Stripe(String apiKey, String webhookSecret) {
     }
@@ -33,6 +34,19 @@ public record AppProperties(
             timeout = timeout == null ? Duration.ofSeconds(4) : timeout;
             userAgent = userAgent == null ? "carimport" : userAgent;
         }
+    }
+
+    /** VIN decoding (NHTSA vPIC) and CO₂ lookup (US EPA fueleconomy.gov); empty URL = that source is off. */
+    public record Vehicle(String vpicUrl, String epaUrl, String userAgent, Duration timeout) {
+
+        public Vehicle {
+            timeout = timeout == null ? Duration.ofSeconds(6) : timeout;
+            userAgent = userAgent == null ? "carimport" : userAgent;
+        }
+    }
+
+    public Vehicle vehicle() {
+        return vehicle == null ? new Vehicle(null, null, null, null) : vehicle;
     }
 
     public Geo geo() {

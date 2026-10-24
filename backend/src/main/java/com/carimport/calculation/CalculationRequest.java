@@ -46,6 +46,9 @@ import java.util.Set;
  * @param powerKw            engine power; null = estimated from fuel and displacement
  * @param registrationTaxOwn the registration tax the buyer computed themselves (display currency), e.g. from an
  *                           official calculator; null = our estimate where the country is modelled
+ * @param massKg             curb weight; null = estimated from category, fuel and displacement
+ * @param vin                VIN the vehicle data was read from (shown in the report)
+ * @param vehicleDescription make, model and trim as decoded from the VIN or typed (shown in the report)
  */
 public record CalculationRequest(
         @NotNull OriginCountry originCountry,
@@ -77,7 +80,10 @@ public record CalculationRequest(
         @DecimalMin("-180") @DecimalMax("180") Double destinationLon,
         @Min(0) @Max(900) Integer co2Gkm,
         @Min(1) @Max(1500) Integer powerKw,
-        @DecimalMin("0") @DecimalMax("100000000") BigDecimal registrationTaxOwn) {
+        @DecimalMin("0") @DecimalMax("100000000") BigDecimal registrationTaxOwn,
+        @Min(50) @Max(10000) Integer massKg,
+        @Pattern(regexp = "[A-HJ-NPR-Z0-9]{11,17}") String vin,
+        @Size(max = 120) String vehicleDescription) {
 
     public static final int HISTORIC_MIN_AGE = 30;
 
@@ -101,7 +107,7 @@ public record CalculationRequest(
                 vehicleCategory, fuelType, engineCc, productionYear, historicOriginalCondition, condition,
                 shippingMethod, port, destinationCountry, buyerType, customsProcedure, displayCurrency, deliveryMode,
                 distanceKm, pricePerKm, repairEstimate, insuranceEstimate, postImportServices, destinationAddress,
-                destinationLat, destinationLon, co2Gkm, powerKw, registrationTaxOwn);
+                destinationLat, destinationLon, co2Gkm, powerKw, registrationTaxOwn, massKg, vin, vehicleDescription);
     }
 
     /** The same request with repair, insurance and registration tax left to the calculator's proposal. */
@@ -110,7 +116,7 @@ public record CalculationRequest(
                 vehicleCategory, fuelType, engineCc, productionYear, historicOriginalCondition, condition,
                 shippingMethod, euPortCode, destinationCountry, buyerType, customsProcedure, displayCurrency,
                 deliveryMode, deliveryDistanceKm, pricePerKm, null, null, postImportServices, destinationAddress,
-                destinationLat, destinationLon, co2Gkm, powerKw, null);
+                destinationLat, destinationLon, co2Gkm, powerKw, null, massKg, vin, vehicleDescription);
     }
 
     public int effectiveCo2() {
@@ -119,6 +125,10 @@ public record CalculationRequest(
 
     public int effectivePowerKw() {
         return powerKw != null ? powerKw : Proposals.powerKw(fuelType, engineCc);
+    }
+
+    public int effectiveMassKg() {
+        return massKg != null ? massKg : Proposals.massKg(vehicleCategory, fuelType, engineCc);
     }
 
     public boolean qualifiesAsHistoric(Year now) {

@@ -13,6 +13,7 @@ import {
   PublicQuoteView,
   RouteOptions,
   Suggestions,
+  VinDecoding,
 } from '../../core/api/api.models';
 import { CarImportApi } from '../../core/api/carimport-api';
 import { DisplayCurrency, isDisplayCurrency } from '../../core/currency/currencies';
@@ -56,6 +57,9 @@ const DEFAULTS: WizardState = {
   co2Gkm: null,
   powerKw: null,
   registrationTaxOwn: null,
+  massKg: null,
+  vin: null,
+  vehicleDescription: null,
 };
 const STORAGE_KEY = 'carimport.wizard.v4';
 const PORT_MODE_KEY = 'carimport.wizard.portMode';
@@ -131,6 +135,12 @@ export class CalculatorStore {
   );
   readonly co2Proposal = computed(() => this.suggestions()?.co2Estimate ?? null);
   readonly powerProposal = computed(() => this.suggestions()?.powerKwEstimate ?? null);
+  readonly massProposal = computed(() => this.suggestions()?.massKgEstimate ?? null);
+
+  /** Last VIN lookup in this visit: what was found, to show next to the filled fields. */
+  readonly vinResult = signal<VinDecoding | null>(null);
+  readonly vinLoading = signal(false);
+  readonly vinError = signal<string | null>(null);
 
   /** What is sent: the user's overrides, and for the distance the routed one from the ranking. */
   readonly request = computed<CalculationRequest>(() => {
@@ -238,6 +248,52 @@ export class CalculatorStore {
         }
       });
     });
+  }
+
+  /**
+   * Looks the VIN up and fills every field the sources state (category, fuel, displacement, year, power, CO₂, weight);
+   * whatever they do not know stays as the calculator's proposal.
+   */
+  lookupVin(raw: string): void {
+    const vin = raw.replace(/[\s-]/g, '').toUpperCase();
+    this.vinError.set(null);
+    if (!/^[A-HJ-NPR-Z0-9]{17}$/.test(vin)) {
+      this.vinError.set('vin.invalid');
+      return;
+    }
+    this.vinLoading.set(true);
+    this.api
+      .decodeVin(vin)
+      .pipe(catchError(() => of(null)))
+      .subscribe((d) => {
+        this.vinLoading.set(false);
+        if (!d) {
+          this.vinError.set('vin.w.offline');
+          return;
+        }
+        this.vinResult.set(d);
+        this.applyVin(d);
+      });
+  }
+
+  private applyVin(d: VinDecoding): void {
+    const s = this.state();
+    const changes: Partial<WizardState> = { vin: d.vin, vehicleDescription: d.description || null };
+    if (d.vehicleCategory) changes.vehicleCategory = d.vehicleCategory;
+    if (d.fuelType) changes.fuelType = d.fuelType;
+    if (d.engineCc != null) changes.engineCc = d.engineCc;
+    if (d.modelYear) changes.productionYear = d.modelYear;
+    // fields not stated go back to the proposal rather than keeping values typed for another car
+    changes.powerKw = d.powerKw ?? (s.vin && s.vin !== d.vin ? null : s.powerKw);
+    changes.co2Gkm = d.co2Gkm ?? (s.vin && s.vin !== d.vin ? null : s.co2Gkm);
+    changes.massKg = d.massKg ?? (s.vin && s.vin !== d.vin ? null : s.massKg);
+    this.patch(changes);
+  }
+
+  clearVin(): void {
+    this.vinResult.set(null);
+    this.vinError.set(null);
+    this.patch({ vin: null, vehicleDescription: null });
   }
 
   choosePort(code: string): void {

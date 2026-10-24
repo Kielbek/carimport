@@ -1,5 +1,6 @@
 import { Component, computed, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
+import { CountryNamePipe } from '../../../core/format/country-name.pipe';
 import { LocalNumberPipe } from '../../../core/format/local-number.pipe';
 import { LanguageService } from '../../../core/i18n/language.service';
 import { Icon } from '../../../shared/icon/icon';
@@ -13,8 +14,50 @@ const CC_MAX = 7000;
 /** Step 2 - vehicle type, drivetrain, displacement slider with the live excise-threshold warning. */
 @Component({
   selector: 'app-step-vehicle',
-  imports: [TranslatePipe, LocalNumberPipe, Icon, ProposalInput],
+  imports: [TranslatePipe, LocalNumberPipe, CountryNamePipe, Icon, ProposalInput],
   template: `
+    <!-- VIN -->
+    <section class="mb-9 rounded-[6px] border border-line bg-panel p-5">
+      <label class="label" for="vin">{{ 'vin.label' | translate }}</label>
+      <form class="flex flex-col gap-2 sm:flex-row" (submit)="$event.preventDefault(); store.lookupVin(vinInput.value)">
+        <input #vinInput id="vin" class="input font-mono uppercase tracking-wider" maxlength="20" autocomplete="off"
+               spellcheck="false" [placeholder]="'vin.placeholder' | translate" [value]="s().vin ?? ''"
+               aria-describedby="vin-hint" />
+        <button type="submit" class="btn btn-primary shrink-0" [disabled]="store.vinLoading()">
+          @if (store.vinLoading()) { <app-icon name="loader" [size]="18" class="animate-spin" /> } @else { <app-icon name="search" [size]="18" /> }
+          {{ 'vin.fill' | translate }}
+        </button>
+      </form>
+      <p id="vin-hint" class="mt-2 text-xs text-muted">{{ 'vin.hint' | translate }}</p>
+
+      @if (store.vinError(); as err) {
+        <p class="mt-3 flex items-start gap-2 text-sm text-danger" role="alert"><app-icon name="warning" [size]="16" class="mt-0.5 shrink-0" /> {{ err | translate }}</p>
+      }
+
+      @if (store.vinResult(); as d) {
+        <div class="mt-4 rounded-[4px] bg-panel-2 p-4" animate.enter="reveal-enter" aria-live="polite">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <p class="text-lg font-extrabold">{{ d.description || d.vin }}</p>
+            <button type="button" class="text-xs font-semibold text-brand-text hover:underline" (click)="store.clearVin()">{{ 'vin.clear' | translate }}</button>
+          </div>
+          <p class="mt-1 text-sm text-muted">{{ (d.source === 'NHTSA' ? 'vin.filled' : 'vin.filledOffline') | translate }}</p>
+          <dl class="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 text-sm sm:grid-cols-4">
+            @if (d.modelYear) { <div><dt class="text-xs text-muted">{{ 'wizard.year' | translate }}</dt><dd class="font-semibold">{{ d.modelYear }}</dd></div> }
+            @if (d.vehicleCategory) { <div><dt class="text-xs text-muted">{{ 'wizard.category' | translate }}</dt><dd class="font-semibold">{{ 'category.' + d.vehicleCategory | translate }}</dd></div> }
+            @if (d.fuelType) { <div><dt class="text-xs text-muted">{{ 'wizard.fuel' | translate }}</dt><dd class="font-semibold">{{ 'fuel.' + d.fuelType | translate }}</dd></div> }
+            @if (d.engineCc) { <div><dt class="text-xs text-muted">{{ 'wizard.engineCc' | translate }}</dt><dd class="font-semibold">{{ d.engineCc | localNumber: lang.locale() }} cm³@if (d.cylinders) { · {{ d.cylinders }} cyl }</dd></div> }
+            @if (d.powerKw) { <div><dt class="text-xs text-muted">{{ 'wizard.powerKw' | translate }}</dt><dd class="font-semibold">{{ d.powerKw }} kW</dd></div> }
+            @if (d.co2Gkm != null) { <div><dt class="text-xs text-muted">CO₂</dt><dd class="font-semibold">{{ d.co2Gkm }} g/km <span class="text-xs font-normal text-muted">· {{ 'vin.co2Epa' | translate }}</span></dd></div> }
+            @if (d.massKg) { <div><dt class="text-xs text-muted">{{ 'wizard.mass' | translate }}</dt><dd class="font-semibold">{{ d.massKg | localNumber: lang.locale() }} kg@if (d.massSource === 'GVWR') { <span class="text-xs font-normal text-muted"> · {{ 'vin.massGvwr' | translate }}</span> }</dd></div> }
+            @if (d.manufacturedIn) { <div><dt class="text-xs text-muted">{{ 'vin.madeIn' | translate }}</dt><dd class="font-semibold">{{ d.manufacturedIn | countryName: lang.locale() }}</dd></div> }
+          </dl>
+          @for (w of d.warnings; track w) {
+            <p class="mt-2 flex items-start gap-2 text-xs text-fg/85"><app-icon name="warning" [size]="14" class="mt-0.5 shrink-0 text-brand-text" /> {{ 'vin.w.' + w.replace('vin.', '') | translate }}</p>
+          }
+        </div>
+      }
+    </section>
+
     <fieldset>
       <legend class="label">{{ 'wizard.category' | translate }}</legend>
       <div class="grid grid-cols-3 gap-3 sm:grid-cols-5">
@@ -73,14 +116,6 @@ const CC_MAX = 7000;
         <input id="year" type="number" class="input" min="1900" [max]="currentYear" [value]="s().productionYear"
                (input)="store.patch({ productionYear: +$any($event.target).value })" />
       </div>
-      <div class="grid grid-cols-2 gap-4">
-        <app-proposal-input inputId="co2" label="wizard.co2" unit="g/km" [step]="1" hint="wizard.co2Hint"
-                            [value]="s().co2Gkm" [proposal]="store.co2Proposal()"
-                            (changed)="store.patch({ co2Gkm: $event })" />
-        <app-proposal-input inputId="kw" label="wizard.powerKw" unit="kW" [step]="1" hint="wizard.powerKwHint"
-                            [value]="s().powerKw" [proposal]="store.powerProposal()"
-                            (changed)="store.patch({ powerKw: $event })" />
-      </div>
       @if (store.canBeHistoric()) {
         <label class="flex cursor-pointer items-start gap-3 rounded-[6px] border border-brand/60 bg-brand/10 p-4"
                animate.enter="reveal-enter" animate.leave="reveal-leave">
@@ -93,6 +128,23 @@ const CC_MAX = 7000;
         </label>
       }
     </div>
+
+    <!-- what registration taxes are based on -->
+    <fieldset class="mt-8">
+      <legend class="label">{{ 'wizard.specTitle' | translate }}</legend>
+      <p class="-mt-1 mb-4 text-xs text-muted">{{ 'wizard.specLead' | translate }}</p>
+      <div class="grid gap-5 sm:grid-cols-3">
+        <app-proposal-input inputId="co2" label="wizard.co2" unit="g/km" [step]="1" hint="wizard.co2Hint"
+                            [value]="s().co2Gkm" [proposal]="store.co2Proposal()"
+                            (changed)="store.patch({ co2Gkm: $event })" />
+        <app-proposal-input inputId="kw" label="wizard.powerKw" unit="kW" [step]="1" hint="wizard.powerKwHint"
+                            [value]="s().powerKw" [proposal]="store.powerProposal()"
+                            (changed)="store.patch({ powerKw: $event })" />
+        <app-proposal-input inputId="mass" label="wizard.mass" unit="kg" [step]="10" hint="wizard.massHint"
+                            [value]="s().massKg" [proposal]="store.massProposal()"
+                            (changed)="store.patch({ massKg: $event })" />
+      </div>
+    </fieldset>
   `,
 })
 export class StepVehicle {

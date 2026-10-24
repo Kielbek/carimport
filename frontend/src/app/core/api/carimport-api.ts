@@ -12,6 +12,7 @@ import {
   PublicQuoteView,
   RouteOptions,
   Suggestions,
+  VinDecoding,
 } from './api.models';
 
 /** Thin typed client for /api/v1. Accept-Language is added by the language interceptor. */
@@ -39,6 +40,10 @@ export class CarImportApi {
 
   routeOptions(origin: string, destination: string, euPort: string): Observable<RouteOptions> {
     return this.http.get<RouteOptions>(`${this.base}/reference/options`, { params: { origin, destination, euPort } });
+  }
+
+  decodeVin(vin: string): Observable<VinDecoding> {
+    return this.http.get<VinDecoding>(`${this.base}/vehicle/vin/${encodeURIComponent(vin)}`);
   }
 
   /** NBP mid rates as PLN per unit; PLN itself is 1. */

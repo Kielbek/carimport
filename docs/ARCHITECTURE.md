@@ -152,6 +152,17 @@ CO₂ i moc to nowe pola wizarda z propozycją (`Proposals.co2/powerKw`); własn
 szacunkiem. Wzory są uproszczone (bez dopłat wagowych, wariantów regionalnych, NOx w IE) i oznaczone w linii
 parametrem `method` – przy zmianie stawek na nowy rok aktualizuje się tylko `RegistrationTaxes` + test.
 
+**VIN → dane auta** (`GET /api/v1/vehicle/vin/{vin}`, pakiet `vehicle`): `Vin` offline sprawdza format, cyfrę
+kontrolną (obowiązkową dla aut z Ameryki Płn. – łapie literówki), rocznik (10. znak + reguła cyklu z 7. znaku), markę
+(WMI) i kraj produkcji. `NhtsaVinClient` (vPIC, darmowe) dodaje model, wersję, nadwozie → kategorię, pojemność,
+cylindry, paliwo/elektryfikację, moc i masę (masa własna albo ¾ środka klasy GVWR). `EpaCo2Client` szuka CO₂ w bazie
+EPA (rok + marka → modele zaczynające się od nazwy z vPIC → warianty z tą samą pojemnością i liczbą cylindrów → średnia
+`co2TailpipeGpm`, przeliczona na g/km; to wartość EPA, bliska, ale nie równa WLTP). Każde źródło jest opcjonalne:
+wynik mówi, czego brakuje (`warnings`), a pola, których źródła nie podają, zostają propozycjami kalkulatora. Wyniki
+trzyma ograniczony cache LRU (5 000 VIN-ów; błędy sieci nie są cache'owane). Adresy: `app.vehicle.vpic-url`,
+`app.vehicle.epa-url` (puste = źródło wyłączone). Masa własna to nowe pole wizarda (malus od wagi FR 2026, składnik
+masy EE). VIN i opis auta trafiają do raportu PDF.
+
 **Po imporcie** (`V5__eu_after_import.sql`): dla każdego z 27 krajów obowiązkowe homologacja/badanie importowe
 i opłaty rejestracyjne oraz opcjonalne usługi (oświetlenie US, reflektory RHD, karta danych/CoC, serwis, geometria,
 tłumaczenia, detailing) – typowe kwoty w walucie lokalnej, `estimate = TRUE`. Krok 5 pokazuje je jako listę

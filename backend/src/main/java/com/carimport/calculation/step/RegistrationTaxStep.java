@@ -55,7 +55,7 @@ public class RegistrationTaxStep implements CalculationStep {
         int age = Math.max(0, ctx.calculationDate().getYear() - req.productionYear());
 
         RegistrationTaxes.assess(new RegistrationTaxes.Input(country, req.fuelType(), req.effectiveCo2(),
-                req.effectivePowerKw(), req.engineCc(), age, value.amount(), vat)).ifPresent(a -> {
+                req.effectivePowerKw(), req.engineCc(), req.effectiveMassKg(), age, value.amount(), vat)).ifPresent(a -> {
             Money tax = Money.of(a.amount(), local);
             ctx.add(new CostLine(CODE, CostCategory.TAXES, tax, ctx.toBase(tax), value, a.rate(), true,
                     CalculationContext.params(
@@ -65,6 +65,7 @@ public class RegistrationTaxStep implements CalculationStep {
                             "co2", String.valueOf(req.effectiveCo2()),
                             "co2Proposed", String.valueOf(req.co2Gkm() == null),
                             "powerKw", String.valueOf(req.effectivePowerKw()),
+                            "massKg", String.valueOf(req.effectiveMassKg()),
                             "ageYears", String.valueOf(age))));
         });
     }

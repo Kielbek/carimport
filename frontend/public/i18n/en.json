@@ -394,7 +394,11 @@
     "co2": "CO₂ (WLTP)",
     "co2Hint": "From the CoC or window sticker. Most registration taxes in the EU are based on it.",
     "powerKw": "Engine power",
-    "powerKwHint": "In kW (1 hp ≈ 0.74 kW). Used in Belgium, Italy and France."
+    "powerKwHint": "In kW (1 hp ≈ 0.74 kW). Used in Belgium, Italy and France.",
+    "specTitle": "What the taxes are based on",
+    "specLead": "Proposed from the type and engine. Precise figures (from the VIN or the CoC) make the registration tax far more accurate.",
+    "mass": "Curb weight",
+    "massHint": "Kerb weight in kg. Counts in France (weight malus) and Estonia."
   },
   "layout": {
     "topbar": "Independent calculator of car import costs from the USA, Canada, Japan, UAE and UK to 27 EU countries",
@@ -1349,5 +1353,25 @@
     "deadline": "Deadline: {{days}} days.",
     "canTitle": "What you can do",
     "canLead": "Not required by law, but almost every import needs some of it. Recommended items are ticked – untick what you do yourself."
+  },
+  "vin": {
+    "label": "Have the VIN? We'll fill in the details",
+    "placeholder": "17 characters, e.g. 1FA6P8CF7K5100001",
+    "fill": "Fill in from VIN",
+    "hint": "From the title, the windscreen or the auction listing. Cars from Japan have a chassis number instead of a VIN – enter their details by hand.",
+    "filled": "Filled in from the US vehicle database (NHTSA) and the EPA. Check the fields below – you can still change any of them.",
+    "filledOffline": "We only read what the VIN itself encodes. The rest stays as our proposals – correct them if you know the details.",
+    "clear": "Remove VIN",
+    "co2Epa": "EPA, converted to g/km",
+    "massGvwr": "estimated from the weight class",
+    "madeIn": "Built in",
+    "invalid": "A VIN has 17 letters and digits (never I, O or Q). Check for a missing or extra character.",
+    "w": {
+      "checkDigit": "The check digit does not match – probably a typo. Compare the VIN with the title.",
+      "notFound": "The vehicle database does not know this VIN (common for cars built outside North America). We used what the VIN itself encodes.",
+      "offline": "The vehicle database is not responding right now. We used what the VIN itself encodes – try again later for the full specification.",
+      "noCo2": "No EPA CO₂ figure for this version – we keep our estimate. Use the CoC figure if you have it.",
+      "noPower": "Power is not in the database for this VIN – we keep our estimate."
+    }
   }
 }

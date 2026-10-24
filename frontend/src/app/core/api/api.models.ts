@@ -55,6 +55,11 @@ export interface CalculationRequest {
   powerKw: number | null;
   /** Registration tax the buyer computed themselves (display currency); null = our estimate. */
   registrationTaxOwn: number | null;
+  /** Curb weight in kg; null = estimated. */
+  massKg: number | null;
+  /** VIN the data came from and the decoded make/model - shown in the report. */
+  vin: string | null;
+  vehicleDescription: string | null;
 }
 
 export type PortRegion = 'NORTH_SEA' | 'ATLANTIC' | 'BALTIC' | 'WEST_MED' | 'EAST_MED';
@@ -95,6 +100,7 @@ export interface Suggestions {
   currency: string;
   co2Estimate: number;
   powerKwEstimate: number;
+  massKgEstimate: number;
   /** EXCISE (Polish excise), NONE, ESTIMATED (our formula) or OFFICIAL_CALCULATOR (buyer types it). */
   registrationTax: 'EXCISE' | 'NONE' | 'ESTIMATED' | 'OFFICIAL_CALCULATOR';
   registrationTaxEstimate: number | null;
@@ -219,4 +225,29 @@ export interface ApiProblem {
   detail?: string;
   messageKey?: string;
   errors?: Record<string, string>;
+}
+
+/** GET /vehicle/vin/{vin}: only what the sources state; null fields stay as the calculator's proposals. */
+export interface VinDecoding {
+  vin: string;
+  /** NHTSA = found in the US vehicle database; OFFLINE = only what the VIN itself encodes. */
+  source: 'NHTSA' | 'OFFLINE';
+  checkDigitValid: boolean;
+  modelYear: number | null;
+  make: string | null;
+  model: string | null;
+  trim: string | null;
+  bodyClass: string | null;
+  vehicleCategory: VehicleCategory | null;
+  fuelType: FuelType | null;
+  engineCc: number | null;
+  cylinders: number | null;
+  powerKw: number | null;
+  co2Gkm: number | null;
+  co2Source: 'EPA' | null;
+  massKg: number | null;
+  massSource: 'CURB' | 'GVWR' | null;
+  manufacturedIn: string | null;
+  warnings: string[];
+  description: string;
 }

@@ -92,6 +92,30 @@ public final class Proposals {
         return Math.max(40, (int) Math.round(engineCc / 1000.0 * perLitre));
     }
 
+    /**
+     * Typical curb weight: 1 150 kg + 120 kg per litre for a car, more for SUVs, vans and pickups, plus the battery
+     * of electrified drivetrains. A 2.0 petrol sedan lands near 1 390 kg, a 5.0 V8 near 1 750 kg.
+     */
+    public static int massKg(VehicleCategory category, FuelType fuel, int engineCc) {
+        if (category == VehicleCategory.MOTORCYCLE) {
+            return 220;
+        }
+        double kg = 1150 + engineCc * 0.12;
+        kg += switch (category) {
+            case SUV -> 350;
+            case VAN -> 450;
+            case PICKUP_TRUCK -> 700;
+            default -> 0;
+        };
+        kg += switch (fuel) {
+            case EV, HYDROGEN -> 600;
+            case PHEV -> 250;
+            case HEV, MHEV -> 80;
+            default -> 0;
+        };
+        return (int) (Math.round(kg / 10.0) * 10);
+    }
+
     private Proposals() {
     }
 }

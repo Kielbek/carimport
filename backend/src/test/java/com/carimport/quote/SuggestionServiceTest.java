@@ -36,7 +36,7 @@ class SuggestionServiceTest {
                 base.titleType(), base.pickupZone(), null, base.bidPrice(), base.vehicleCategory(), base.fuelType(),
                 base.engineCc(), base.productionYear(), false, base.condition(), base.shippingMethod(), "DEBRV", "PL",
                 base.buyerType(), base.customsProcedure(), base.displayCurrency(), null, null, null, null, null, null,
-                "Warszawa, Polska", 52.2297, 21.0122, null, null, null);
+                "Warszawa, Polska", 52.2297, 21.0122, null, null, null, null, null, null);
 
         SuggestionService.Suggestions s = service(geo).suggest(toWarsaw);
 

@@ -54,7 +54,7 @@ public class SuggestionService {
      */
     public record Suggestions(String recommendedPort, List<PortSuggestion> ports, DeliveryMode deliveryMode,
                               BigDecimal repairEstimate, BigDecimal insuranceEstimate, String currency,
-                              int co2Estimate, int powerKwEstimate, String registrationTax,
+                              int co2Estimate, int powerKwEstimate, int massKgEstimate, String registrationTax,
                               BigDecimal registrationTaxEstimate, String registrationTaxUrl) {
     }
 
@@ -106,6 +106,7 @@ public class SuggestionService {
                 request.displayCurrency().name(),
                 Proposals.co2(request.fuelType(), request.engineCc(), request.vehicleCategory()),
                 Proposals.powerKw(request.fuelType(), request.engineCc()),
+                Proposals.massKg(request.vehicleCategory(), request.fuelType(), request.engineCc()),
                 registrationTaxMode(request.destinationCountry()),
                 proposal.flatMap(r -> wholeAmount(r, RegistrationTaxStep.CODE)).orElse(null),
                 RegistrationTaxes.OFFICIAL_CALCULATOR.get(request.destinationCountry()));
