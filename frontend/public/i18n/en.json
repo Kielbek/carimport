@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "No tax rates for the selected country."
-    }
+    },
+    "rateLimited": "Too many requests in a short time – wait a moment and try again."
   },
   "fuel": {
     "DIESEL": "Diesel",
@@ -197,8 +198,9 @@
     "redirecting": "Redirecting…",
     "secure": "Secure payment by Stripe. We never store card data.",
     "subtitle": "Exact amounts, tax bases and rates, documents – in a PDF with your name.",
-    "terms": "I accept the terms and request immediate delivery of digital content, waiving the withdrawal period.",
-    "title": "Full import report"
+    "terms": "I accept the terms and ask for the report to be delivered before the 14-day withdrawal period ends. I acknowledge that I lose the right of withdrawal once it is delivered.",
+    "title": "Full import report",
+    "termsLink": "Terms"
   },
   "report": {
     "amount": "Amount",
@@ -437,7 +439,8 @@
     "language": "Language",
     "payments": "Payments by Stripe (card, BLIK, Przelewy24). We never store card data.",
     "rights": "All rights reserved.",
-    "disclaimer": "Calculations are informational and are neither a customs decision nor tax advice."
+    "disclaimer": "Calculations are informational and are neither a customs decision nor tax advice.",
+    "terms": "Terms"
   },
   "cookies": {
     "title": "Cookies",
@@ -764,6 +767,10 @@
     "about": {
       "title": "About us – an independent car import calculator | CarImport.eu",
       "description": "Who we are, where our data comes from and how we earn money. CarImport.eu neither sells nor imports cars – it calculates the full import cost honestly and independently."
+    },
+    "terms": {
+      "title": "Terms | CarImport.eu",
+      "description": "Terms for the car import cost calculator and the PDF report: seller, payment, delivery, withdrawal and complaints."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "The vehicle database is not responding right now. We used what the VIN itself encodes – try again later for the full specification.",
       "noCo2": "No EPA CO₂ figure for this version – we keep our estimate. Use the CoC figure if you have it.",
       "noPower": "Power is not in the database for this VIN – we keep our estimate."
+    }
+  },
+  "terms": {
+    "eyebrow": "Terms",
+    "title": "Terms of service and sale of reports",
+    "version": "Version of {{version}}",
+    "s1": {
+      "title": "Seller and contact",
+      "text": "{{site}} is run by {{company}}, {{address}}, tax ID {{taxId}}, {{registry}} (the Seller).\nContact for any matter, including complaints: {{email}}. We reply within 14 days."
+    },
+    "s2": {
+      "title": "What the service is",
+      "text": "The service is an independent calculator of the cost of importing cars from outside the European Union. The Seller does not sell, buy or import vehicles and does not act as a customs agent.\nThe calculator is free and needs no registration. Only the PDF report described in section 4 is paid."
+    },
+    "s3": {
+      "title": "Nature of the calculations",
+      "text": "The calculations are for information. They are based on the law, rates and exchange rates (NBP) on the day of the quote, on the data entered by the user and on typical prices of services.\nA calculation is not a decision of a customs or tax authority, a binding tariff information or legal or tax advice. Final amounts are set by the competent authorities, carriers and other service providers."
+    },
+    "s4": {
+      "title": "Paid report – order and price",
+      "text": "The report is digital content in PDF format, prepared automatically for the chosen quote and bearing the buyer's name.\nThe price is shown before purchase in the chosen currency and is the final price. Payment is handled by Stripe (card, BLIK, Przelewy24 and the other methods shown at checkout). The Seller does not store card data.\nThe contract is concluded when the payment is confirmed."
+    },
+    "s5": {
+      "title": "Delivery",
+      "text": "The report is available immediately after the payment is confirmed on the report page and is sent to the e-mail address given, as an attachment with a personal link.\nTechnical requirements: a web browser with JavaScript enabled, an active e-mail address and a PDF reader.\nThe link to the report is personal – do not share it with others."
+    },
+    "s6": {
+      "title": "Right of withdrawal",
+      "text": "A consumer may withdraw from a distance contract within 14 days without giving a reason.\nThis right does not apply once the supply of digital content has begun with the consumer's express prior consent and their acknowledgement that they thereby lose the right of withdrawal (Art. 16(m) of Directive 2011/83/EU). The buyer gives this consent and acknowledgement when ordering and receives a confirmation of it in the e-mail with the report.\nThe same rules apply to a natural person concluding a contract directly related to their business when the contract is not of a professional nature for them."
+    },
+    "s7": {
+      "title": "Complaints",
+      "text": "The Seller is liable for the report's conformity with the contract. If the report was not delivered, cannot be read or does not match the quote paid for, write to {{email}} with the order number or the e-mail address used for the purchase.\nThe Seller handles a complaint within 14 days. If it is justified, the Seller delivers a corrected report or, where that is not possible, refunds the price.\nConsumers may use out-of-court dispute resolution, for example a local consumer ombudsman or the consumer protection authority of their country."
+    },
+    "s8": {
+      "title": "Liability",
+      "text": "The Seller takes care that rates and data are current and correct, but is not liable for decisions taken solely on the basis of the calculations or for differences caused by decisions of authorities, changes in law and exchange rates after the day of the quote, prices of service providers or incorrect data entered by the user.\nThis does not limit consumer rights under mandatory law."
+    },
+    "s9": {
+      "title": "Partners",
+      "text": "The service may show offers of partners (e.g. currency exchange, vehicle history, importers). Some links are affiliate links – the Seller may receive a commission, which does not affect the calculations.\nContact details are passed to a partner only when the user sends an enquiry form and consents to it. Contracts with partners are concluded directly with them."
+    },
+    "s10": {
+      "title": "Personal data",
+      "text": "How personal data and cookies are processed is described in the privacy policy."
+    },
+    "s11": {
+      "title": "Final provisions",
+      "text": "The terms are available free of charge on this page in a form that allows them to be downloaded and printed.\nChanges to the terms do not affect contracts concluded before they take effect.\nPolish law applies, without depriving a consumer of the protection of the mandatory law of the country of their habitual residence."
     }
   }
 }

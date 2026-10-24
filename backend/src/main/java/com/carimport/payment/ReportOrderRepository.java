@@ -15,4 +15,8 @@ public interface ReportOrderRepository extends JpaRepository<ReportOrder, UUID> 
 
     List<ReportOrder> findTop50ByStatusInAndPaidAtBeforeAndGenerationAttemptsLessThan(
             Collection<ReportOrder.Status> statuses, Instant paidBefore, int maxAttempts);
+
+    /** Ready reports whose e-mail has not gone out yet (mail server down, node restarted). */
+    List<ReportOrder> findTop50ByStatusAndEmailSentAtIsNullAndReadyAtBeforeAndEmailAttemptsLessThan(
+            ReportOrder.Status status, Instant readyBefore, int maxAttempts);
 }

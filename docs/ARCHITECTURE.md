@@ -448,9 +448,21 @@ pozostaje PENDING, poprawny webhook → READY i PDF 30 KB, duplikat zdarzenia �
 
 ## 5. Produkcja i dalszy rozwój
 
-* **Bezpieczeństwo API**: rate-limit `/quotes/preview` i `/leads` na bramie (np. Bucket4j/Cloudflare), CORS tylko dla
-  domeny SPA, CSP, Spring Security dla panelu admina (zarządzanie taryfami + `@CacheEvict` cache `tariffs`).
-* **E-mail** z linkiem do raportu (w miejscu oznaczonym w `ReportGenerationService`) i powiadomienia partnerów o leadach.
+* **Limity zapytań** (`RateLimitFilter`): token bucket na klienta (adres IP po `forward-headers-strategy`) i regułę –
+  propozycje portów 20 naraz / 40 na min, wycena 10/20, VIN 5/10, adresy 30/60, płatność 5/5, zapytania do partnerów
+  3/2, reszta API 120/300; odpowiedź 429 z `Retry-After` i `messageKey: error.rateLimited`. Webhook Stripe jest
+  wyłączony (chroni go podpis). Limity są w pamięci jednego węzła – przy kilku węzłach następny krok to limiter na bramie
+  (Cloudflare) albo w Redisie.
+* **E-mail z raportem** (`ReportMailer`, `ReportMailTriggers`): po zapisaniu PDF (`ReportReadyEvent`, po commicie)
+  wysyłamy PDF w załączniku i osobisty link z drugim tokenem (`email_token_hash`, niezależny od przeglądarki, która
+  płaciła). Dowolny dostawca SMTP przez `spring.mail.*` (`SMTP_HOST`, …); pusty host = e-mail wyłączony. Nieudane wysyłki
+  ponawia harmonogram (do 6 prób). Mail zawiera potwierdzenie zgody na dostarczenie treści cyfrowej przed upływem
+  terminu odstąpienia (trwały nośnik, art. 8 ust. 7 dyrektywy 2011/83/UE).
+* **Regulamin** (`/pl/regulamin` i odpowiedniki w 23 językach): dane sprzedawcy w `SITE.company` (frontend) i
+  `app.company` (backend) – **do uzupełnienia przed startem**. Zgoda z okna płatności jest wymagana przez API
+  (`termsAccepted`) i zapisywana przy zamówieniu z datą i wersją (`terms_accepted_at`, `terms_version`).
+* **Dalej**: CSP, Spring Security dla panelu admina (zarządzanie taryfami + `@CacheEvict` cache `tariffs`),
+  powiadomienia partnerów o leadach.
 * **Rozszerzenia silnika**: wzory dla krajów z grupy „oficjalny kalkulator” (HU, HR, GR, …), dopłata wagowa FR; kurs celny UE
   (miesięczny, przedostatnia środa EBC) jako osobny `RateType`; panel B2B dla partnerów z rozliczeniem prowizji.
 * **SEO – dalej**: blog/poradniki per kraj i marka (long tail: „import Toyoty z USA”), strony docelowe per kraj

@@ -264,11 +264,16 @@ export class CalculatorStore {
     this.vinLoading.set(true);
     this.api
       .decodeVin(vin)
-      .pipe(catchError(() => of(null)))
-      .subscribe((d) => {
+      .pipe(
+        map((d) => ({ d, err: null as string | null })),
+        catchError((e: HttpErrorResponse) =>
+          of({ d: null, err: e.status === 429 ? 'error.rateLimited' : e.status === 400 ? 'vin.invalid' : 'vin.w.offline' }),
+        ),
+      )
+      .subscribe(({ d, err }) => {
         this.vinLoading.set(false);
         if (!d) {
-          this.vinError.set('vin.w.offline');
+          this.vinError.set(err);
           return;
         }
         this.vinResult.set(d);

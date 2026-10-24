@@ -67,6 +67,23 @@ public class ReportOrder {
     @Column(name = "ready_at")
     private Instant readyAt;
 
+    /** Hash of the token in the e-mailed link; the checkout token stays valid alongside it. */
+    @Column(name = "email_token_hash", length = 64)
+    private String emailTokenHash;
+
+    @Column(name = "email_sent_at")
+    private Instant emailSentAt;
+
+    @Column(name = "email_attempts", nullable = false)
+    private int emailAttempts;
+
+    /** Consent to the terms and to delivery before the withdrawal period ends, with the terms version. */
+    @Column(name = "terms_accepted_at")
+    private Instant termsAcceptedAt;
+
+    @Column(name = "terms_version", length = 20)
+    private String termsVersion;
+
     @Version
     private long version;
 
@@ -126,11 +143,38 @@ public class ReportOrder {
         this.stripeSessionId = sessionId;
     }
 
+    public void acceptTerms(String version, Instant now) {
+        this.termsVersion = version;
+        this.termsAcceptedAt = now;
+    }
+
+    /** Either the token from the checkout redirect or the one from the e-mail. */
+    public boolean acceptsToken(String token) {
+        return AccessTokens.matches(token, accessTokenHash)
+                || (emailTokenHash != null && AccessTokens.matches(token, emailTokenHash));
+    }
+
+    /** Called before each delivery attempt; returns the plain token for the link (a new one each attempt). */
+    public String issueEmailToken() {
+        String token = AccessTokens.generate();
+        emailTokenHash = AccessTokens.hash(token);
+        emailAttempts++;
+        return token;
+    }
+
+    public void markEmailSent(Instant now) {
+        emailSentAt = now;
+    }
+
     public boolean isUnlocked() {
         return status == Status.PAID || status == Status.GENERATING || status == Status.READY
                 || status == Status.FAILED;
     }
 
+    public Instant getEmailSentAt() { return emailSentAt; }
+    public Instant getTermsAcceptedAt() { return termsAcceptedAt; }
+    public String getTermsVersion() { return termsVersion; }
+    public int getEmailAttempts() { return emailAttempts; }
     public UUID getId() { return id; }
     public UUID getQuoteId() { return quoteId; }
     public String getEmail() { return email; }
@@ -144,4 +188,5 @@ public class ReportOrder {
     public String getPdfStorageKey() { return pdfStorageKey; }
     public int getGenerationAttempts() { return generationAttempts; }
     public Instant getPaidAt() { return paidAt; }
+    public Instant getReadyAt() { return readyAt; }
 }

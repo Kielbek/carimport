@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title th:text="#{mail.report.subject}">Report</title></head>
+<body style="margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-serif;color:#18181b;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f2f2f2;padding:24px 12px;">
+  <tr><td align="center">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#ffffff;border-radius:6px;">
+      <tr><td style="background:#18181b;color:#ffc000;padding:18px 28px;font-weight:bold;font-size:18px;letter-spacing:.5px;">CARIMPORT</td></tr>
+      <tr><td style="padding:28px;font-size:15px;line-height:1.55;">
+        <p style="margin:0 0 14px;" th:text="#{mail.report.greeting(${name})}">Hello,</p>
+        <p style="margin:0 0 14px;" th:text="#{mail.report.intro}">Your report is attached.</p>
+        <p th:if="${vehicle != null}" style="margin:0 0 14px;color:#52525b;" th:text="#{mail.report.vehicle(${vehicle})}">Vehicle</p>
+        <p style="margin:22px 0;">
+          <a th:href="${link}" style="display:inline-block;background:#ffc000;color:#18181b;text-decoration:none;font-weight:bold;padding:13px 22px;border-radius:4px;"
+             th:text="#{mail.report.button}">Open the report</a>
+        </p>
+        <p style="margin:0 0 14px;font-size:13px;color:#52525b;" th:text="#{mail.report.keep}">Keep this e-mail.</p>
+        <p style="margin:0 0 14px;font-size:13px;color:#52525b;" th:text="#{mail.report.questions}">Questions? Reply.</p>
+        <p th:if="${termsVersion != null}" style="margin:0;font-size:12px;color:#71717a;" th:text="#{mail.report.consent(${termsVersion})}">Consent</p>
+      </td></tr>
+      <tr><td style="padding:16px 28px;border-top:1px solid #e4e4e7;font-size:11px;color:#71717a;line-height:1.5;">
+        <span th:text="${company.name()}">CarImport.eu</span><span th:if="${!#strings.isEmpty(company.address())}" th:text="' · ' + ${company.address()}"></span><span th:if="${!#strings.isEmpty(company.taxId())}" th:text="' · ' + ${company.taxId()}"></span><br>
+        <span th:text="#{report.disclaimer}">Disclaimer</span>
+      </td></tr>
+    </table>
+  </td></tr>
+</table>
+</body>
+</html>

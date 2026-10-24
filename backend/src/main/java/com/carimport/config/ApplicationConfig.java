@@ -14,6 +14,9 @@ import org.springframework.cache.interceptor.SimpleKey;
 import org.springframework.cache.interceptor.SimpleKeyGenerator;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
+import org.thymeleaf.templatemode.TemplateMode;
+import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
+import org.thymeleaf.templateresolver.ITemplateResolver;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -45,6 +48,19 @@ public class ApplicationConfig implements WebMvcConfigurer {
     @Bean
     HibernatePropertiesCustomizer jsonFormatMapper(ObjectMapper objectMapper) {
         return props -> props.put(AvailableSettings.JSON_FORMAT_MAPPER, new JacksonJsonFormatMapper(objectMapper));
+    }
+
+    /** Plain-text e-mail bodies (templates/*.txt), next to Spring Boot's HTML resolver. */
+    @Bean
+    ITemplateResolver textTemplateResolver() {
+        ClassLoaderTemplateResolver resolver = new ClassLoaderTemplateResolver();
+        resolver.setPrefix("templates/");
+        resolver.setTemplateMode(TemplateMode.TEXT);
+        resolver.setCharacterEncoding("UTF-8");
+        resolver.setResolvablePatterns(java.util.Set.of("*.txt"));
+        resolver.setCheckExistence(true);
+        resolver.setOrder(0);
+        return resolver;
     }
 
     /** Cache key = method name + arguments, for caches shared by several methods. */

@@ -61,6 +61,8 @@ export class CarImportApi {
     fullName: string;
     currency: DisplayCurrency;
     locale: string;
+    termsAccepted: boolean;
+    termsVersion: string;
   }): Observable<{ orderId: string; accessToken: string; checkoutUrl: string }> {
     return this.http.post<{ orderId: string; accessToken: string; checkoutUrl: string }>(
       `${this.base}/reports/checkout`,

@@ -6,6 +6,8 @@ import { DisplayCurrency } from '../../core/api/api.models';
 import { CarImportApi } from '../../core/api/carimport-api';
 import { DISPLAY_CURRENCIES, reportPrice } from '../../core/currency/currencies';
 import { LanguageService } from '../../core/i18n/language.service';
+import { pathFor } from '../../core/routing/paths';
+import { SITE } from '../../core/site.config';
 import { Icon } from '../../shared/icon/icon';
 import { CalculatorStore } from '../calculator/calculator.store';
 import { rememberOrder } from '../report/order-tokens';
@@ -50,10 +52,13 @@ import { rememberOrder } from '../report/order-tokens';
         </div>
         <label class="flex cursor-pointer items-start gap-2.5 text-xs leading-relaxed text-muted">
           <input type="checkbox" formControlName="terms" class="checkbox" />
-          <span>{{ 'paywall.terms' | translate }}</span>
+          <span>
+            {{ 'paywall.terms' | translate }}
+            <a [href]="termsUrl()" target="_blank" rel="noopener" class="font-semibold text-brand-text underline underline-offset-2">{{ 'paywall.termsLink' | translate }}</a>
+          </span>
         </label>
         @if (error()) {
-          <p class="rounded-[4px] bg-danger-soft p-3 text-sm text-danger">{{ error() }}</p>
+          <p class="rounded-[4px] bg-danger-soft p-3 text-sm text-danger">{{ error()! | translate }}</p>
         }
         <button type="submit" class="btn btn-primary w-full" [disabled]="form.invalid || busy()">
           {{ busy() ? ('paywall.redirecting' | translate) : ('paywall.pay' | translate) }}
@@ -69,6 +74,7 @@ export class PaywallModal {
   private readonly lang = inject(LanguageService);
 
   readonly closed = output<void>();
+  protected readonly termsUrl = computed(() => pathFor('terms', this.lang.current()));
   protected readonly busy = signal(false);
   protected readonly error = signal<string | null>(null);
   /** The result currency first, then the euro, then the rest - each labelled with its price. */
@@ -93,7 +99,15 @@ export class PaywallModal {
       .freeze()
       .pipe(
         switchMap((quote) =>
-          this.api.startCheckout({ quoteId: quote.quoteId!, email, fullName, currency, locale: this.lang.current() }),
+          this.api.startCheckout({
+            quoteId: quote.quoteId!,
+            email,
+            fullName,
+            currency,
+            locale: this.lang.current(),
+            termsAccepted: true,
+            termsVersion: SITE.termsVersion,
+          }),
         ),
       )
       .subscribe({
@@ -103,7 +117,7 @@ export class PaywallModal {
         },
         error: (e) => {
           this.busy.set(false);
-          this.error.set(e?.error?.detail ?? 'Payment could not be started');
+          this.error.set(e?.status === 429 ? 'error.rateLimited' : (e?.error?.detail ?? 'Payment could not be started'));
         },
       });
   }

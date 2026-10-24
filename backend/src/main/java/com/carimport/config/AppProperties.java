@@ -14,7 +14,9 @@ public record AppProperties(
         Report report,
         List<AffiliateOffer> affiliates,
         Geo geo,
-        Vehicle vehicle) {
+        Vehicle vehicle,
+        Mail mail,
+        Company company) {
 
     public record Stripe(String apiKey, String webhookSecret) {
     }
@@ -43,6 +45,22 @@ public record AppProperties(
             timeout = timeout == null ? Duration.ofSeconds(6) : timeout;
             userAgent = userAgent == null ? "carimport" : userAgent;
         }
+    }
+
+    /** Sender of transactional e-mail; delivery itself is configured under spring.mail (any SMTP provider). */
+    public record Mail(String from, String replyTo) {
+    }
+
+    public Mail mail() {
+        return mail == null ? new Mail("CarImport.eu <raport@carimport.eu>", null) : mail;
+    }
+
+    /** Seller identity printed in e-mails and the terms (same values as the frontend site config). */
+    public record Company(String name, String address, String taxId, String email) {
+    }
+
+    public Company company() {
+        return company == null ? new Company("CarImport.eu", "", "", "kontakt@carimport.eu") : company;
     }
 
     public Vehicle vehicle() {

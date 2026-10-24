@@ -1,0 +1,16 @@
+[(#{mail.report.greeting(${name})})]
+
+[(#{mail.report.intro})]
+[# th:if="${vehicle != null}"][(#{mail.report.vehicle(${vehicle})})]
+[/]
+[(#{mail.report.button})]: [(${link})]
+
+[(#{mail.report.keep})]
+[(#{mail.report.questions})]
+[# th:if="${termsVersion != null}"]
+[(#{mail.report.consent(${termsVersion})})]
+[/]
+
+--
+[(${company.name()})]
+[(#{report.disclaimer})]
