@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "Keine Steuersätze für das gewählte Land."
-    }
+    },
+    "rateLimited": "Zu viele Anfragen in kurzer Zeit – bitte warten Sie einen Moment und versuchen Sie es erneut."
   },
   "fuel": {
     "DIESEL": "Diesel",
@@ -197,8 +198,9 @@
     "redirecting": "Weiterleitung…",
     "secure": "Sichere Zahlung über Stripe. Keine Kartendaten bei uns.",
     "subtitle": "Exakte Beträge, Bemessungsgrundlagen, Dokumente – als PDF mit Ihrem Namen.",
-    "terms": "Ich akzeptiere die AGB und verlange die sofortige Lieferung digitaler Inhalte.",
-    "title": "Vollständiger Importbericht"
+    "terms": "Ich akzeptiere die AGB und verlange ausdrücklich, dass der Bericht vor Ablauf der 14-tägigen Widerrufsfrist geliefert wird. Mir ist bekannt, dass ich mit der Lieferung mein Widerrufsrecht verliere.",
+    "title": "Vollständiger Importbericht",
+    "termsLink": "AGB"
   },
   "report": {
     "amount": "Betrag",
@@ -437,7 +439,8 @@
     "language": "Sprache",
     "payments": "Zahlungen über Stripe (Karte, BLIK, Przelewy24). Keine Kartendaten bei uns.",
     "rights": "Alle Rechte vorbehalten.",
-    "disclaimer": "Berechnungen dienen der Information und sind weder Zollbescheid noch Steuerberatung."
+    "disclaimer": "Berechnungen dienen der Information und sind weder Zollbescheid noch Steuerberatung.",
+    "terms": "AGB"
   },
   "cookies": {
     "title": "Cookies",
@@ -764,6 +767,10 @@
     "about": {
       "title": "Über uns – unabhängiger Auto-Import-Rechner | CarImport.eu",
       "description": "Wer wir sind, woher unsere Daten stammen und wie wir Geld verdienen. CarImport.eu verkauft und importiert keine Autos – es berechnet die vollen Importkosten ehrlich und unabhängig."
+    },
+    "terms": {
+      "title": "AGB | CarImport.eu",
+      "description": "Allgemeine Geschäftsbedingungen für den Importkostenrechner und den PDF-Bericht: Verkäufer, Zahlung, Lieferung, Widerruf und Reklamationen."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "Die Fahrzeugdatenbank antwortet gerade nicht. Wir haben verwendet, was in der VIN selbst kodiert ist – versuchen Sie es später erneut, um die vollständigen Daten zu erhalten.",
       "noCo2": "Kein CO₂-Wert der EPA für diese Version – wir behalten unsere Schätzung. Tragen Sie den Wert aus dem CoC ein, falls vorhanden.",
       "noPower": "Die Leistung ist für diese VIN nicht in der Datenbank – wir behalten unsere Schätzung."
+    }
+  },
+  "terms": {
+    "eyebrow": "AGB",
+    "title": "Allgemeine Geschäftsbedingungen für die Nutzung des Dienstes und den Kauf von Berichten",
+    "version": "Fassung vom {{version}}",
+    "s1": {
+      "title": "Verkäufer und Kontakt",
+      "text": "{{site}} wird betrieben von {{company}}, {{address}}, USt-IdNr. {{taxId}}, {{registry}} (nachfolgend „Verkäufer“).\nKontakt in allen Angelegenheiten, auch für Reklamationen: {{email}}. Wir antworten innerhalb von 14 Tagen."
+    },
+    "s2": {
+      "title": "Gegenstand des Dienstes",
+      "text": "Der Dienst ist ein unabhängiger Rechner für die Kosten des Imports von Autos aus Ländern außerhalb der Europäischen Union. Der Verkäufer verkauft, kauft oder importiert keine Fahrzeuge und ist nicht als Zollagent tätig.\nDer Rechner ist kostenlos und erfordert keine Registrierung. Kostenpflichtig ist ausschließlich der in Abschnitt 4 beschriebene PDF-Bericht."
+    },
+    "s3": {
+      "title": "Art der Berechnungen",
+      "text": "Die Berechnungen dienen ausschließlich der Information. Sie beruhen auf den am Tag der Kalkulation geltenden Rechtsvorschriften, Sätzen und Wechselkursen (NBP), auf den vom Nutzer eingegebenen Daten sowie auf üblichen Preisen für Dienstleistungen.\nEine Berechnung ist weder ein Bescheid einer Zoll- oder Steuerbehörde noch eine verbindliche Zolltarifauskunft noch eine Rechts- oder Steuerberatung. Die endgültigen Beträge werden von den zuständigen Behörden, Transportunternehmen und sonstigen Dienstleistern festgelegt."
+    },
+    "s4": {
+      "title": "Kostenpflichtiger Bericht – Bestellung und Preis",
+      "text": "Der Bericht ist ein digitaler Inhalt im PDF-Format, der automatisch für die gewählte Kalkulation erstellt wird und den Namen des Käufers trägt.\nDer Preis wird vor dem Kauf in der gewählten Währung angezeigt und ist ein Endpreis. Die Zahlung wird über Stripe abgewickelt (Karte, BLIK, Przelewy24 und weitere beim Bezahlvorgang angezeigte Zahlungsarten). Der Verkäufer speichert keine Kartendaten.\nDer Vertrag kommt mit der Bestätigung der Zahlung zustande."
+    },
+    "s5": {
+      "title": "Lieferung",
+      "text": "Der Bericht steht unmittelbar nach Bestätigung der Zahlung auf der Berichtsseite zur Verfügung und wird an die angegebene E-Mail-Adresse als Anhang zusammen mit einem persönlichen Link gesendet.\nTechnische Voraussetzungen: ein Webbrowser mit aktiviertem JavaScript, eine aktive E-Mail-Adresse und ein Programm zum Öffnen von PDF-Dateien.\nDer Link zum Bericht ist persönlich – bitte geben Sie ihn nicht an Dritte weiter."
+    },
+    "s6": {
+      "title": "Widerrufsrecht",
+      "text": "Verbraucher können einen Fernabsatzvertrag binnen 14 Tagen ohne Angabe von Gründen widerrufen.\nDas Widerrufsrecht erlischt, sobald mit der Bereitstellung der digitalen Inhalte begonnen wurde, nachdem der Verbraucher dem ausdrücklich zugestimmt und seine Kenntnis davon bestätigt hat, dass er dadurch sein Widerrufsrecht verliert (Art. 16 Buchst. m der Richtlinie 2011/83/EU). Der Käufer erteilt diese Zustimmung und Bestätigung bei der Bestellung und erhält eine Bestätigung darüber in der E-Mail mit dem Bericht.\nDieselben Regeln gelten für eine natürliche Person, die einen Vertrag abschließt, der unmittelbar mit ihrer gewerblichen Tätigkeit zusammenhängt, sofern der Vertrag für sie keinen beruflichen Charakter hat."
+    },
+    "s7": {
+      "title": "Reklamationen",
+      "text": "Der Verkäufer haftet für die Vertragsmäßigkeit des Berichts. Wurde der Bericht nicht geliefert, ist er nicht lesbar oder entspricht er nicht der bezahlten Kalkulation, schreiben Sie bitte an {{email}} unter Angabe der Bestellnummer oder der beim Kauf verwendeten E-Mail-Adresse.\nDer Verkäufer bearbeitet eine Reklamation innerhalb von 14 Tagen. Ist sie begründet, liefert der Verkäufer einen berichtigten Bericht oder erstattet, falls dies nicht möglich ist, den Preis.\nVerbraucher können außergerichtliche Streitbeilegungsverfahren nutzen, etwa eine Verbraucherschlichtungsstelle oder die Verbraucherschutzbehörde ihres Landes."
+    },
+    "s8": {
+      "title": "Haftung",
+      "text": "Der Verkäufer achtet darauf, dass Sätze und Daten aktuell und richtig sind, haftet jedoch nicht für Entscheidungen, die allein auf Grundlage der Berechnungen getroffen werden, und nicht für Abweichungen infolge behördlicher Entscheidungen, nach dem Tag der Kalkulation eingetretener Änderungen von Rechtsvorschriften und Wechselkursen, der Preise von Dienstleistern oder fehlerhafter Angaben des Nutzers.\nDie Rechte von Verbrauchern nach zwingendem Recht bleiben hiervon unberührt."
+    },
+    "s9": {
+      "title": "Partner",
+      "text": "Der Dienst kann Angebote von Partnern anzeigen (z. B. Geldwechsel, Fahrzeughistorie, Importeure). Einige Links sind Affiliate-Links – der Verkäufer kann eine Provision erhalten, was die Berechnungen nicht beeinflusst.\nKontaktdaten werden an einen Partner nur weitergegeben, wenn der Nutzer ein Anfrageformular absendet und darin einwilligt. Verträge mit Partnern werden direkt mit diesen geschlossen."
+    },
+    "s10": {
+      "title": "Personenbezogene Daten",
+      "text": "Wie personenbezogene Daten und Cookies verarbeitet werden, ist in der Datenschutzerklärung beschrieben."
+    },
+    "s11": {
+      "title": "Schlussbestimmungen",
+      "text": "Die AGB sind auf dieser Seite kostenlos in einer Form abrufbar, die ihr Herunterladen und Ausdrucken ermöglicht.\nÄnderungen der AGB gelten nicht für Verträge, die vor ihrem Inkrafttreten geschlossen wurden.\nEs gilt polnisches Recht, wobei Verbrauchern nicht der Schutz entzogen wird, der ihnen durch die zwingenden Bestimmungen des Rechts des Staates ihres gewöhnlichen Aufenthalts gewährt wird."
     }
   }
 }

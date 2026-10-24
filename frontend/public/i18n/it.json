@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "Nessuna aliquota fiscale per il Paese selezionato."
-    }
+    },
+    "rateLimited": "Troppe richieste in poco tempo: attendi un momento e riprova."
   },
   "fuel": {
     "DIESEL": "Diesel",
@@ -197,8 +198,9 @@
     "redirecting": "Reindirizzamento…",
     "secure": "Pagamento sicuro tramite Stripe. Non conserviamo mai i dati della carta.",
     "subtitle": "Importi esatti, basi imponibili e aliquote, documenti – in un PDF intestato a te.",
-    "terms": "Accetto i termini e chiedo la fornitura immediata del contenuto digitale, rinunciando al diritto di recesso.",
-    "title": "Report completo sull’importazione"
+    "terms": "Accetto le condizioni generali e chiedo espressamente che il report mi sia fornito prima della scadenza del periodo di recesso di 14 giorni. Prendo atto che, una volta fornito il report, perdo il diritto di recesso.",
+    "title": "Report completo sull’importazione",
+    "termsLink": "Condizioni generali"
   },
   "report": {
     "amount": "Importo",
@@ -437,7 +439,8 @@
     "language": "Lingua",
     "payments": "Pagamenti tramite Stripe (carta, BLIK, Przelewy24). Non conserviamo mai i dati della carta.",
     "rights": "Tutti i diritti riservati.",
-    "disclaimer": "I calcoli hanno carattere informativo e non costituiscono né una decisione doganale né una consulenza fiscale."
+    "disclaimer": "I calcoli hanno carattere informativo e non costituiscono né una decisione doganale né una consulenza fiscale.",
+    "terms": "Condizioni"
   },
   "cookies": {
     "title": "Cookie",
@@ -764,6 +767,10 @@
     "about": {
       "title": "Chi siamo – un calcolatore indipendente per l’importazione di auto | CarImport.eu",
       "description": "Chi siamo, da dove provengono i nostri dati e come guadagniamo. CarImport.eu non vende né importa auto – calcola il costo completo di importazione in modo onesto e indipendente."
+    },
+    "terms": {
+      "title": "Condizioni generali | CarImport.eu",
+      "description": "Condizioni del calcolatore dei costi di importazione auto e del report PDF: venditore, pagamento, fornitura, recesso e reclami."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "Il database dei veicoli al momento non risponde. Abbiamo usato ciò che è codificato nel VIN stesso – riprova più tardi per la specifica completa.",
       "noCo2": "Nessun valore di CO₂ dell’EPA per questa versione – manteniamo la nostra stima. Se hai il valore del CoC, inseriscilo.",
       "noPower": "La potenza per questo VIN non è nel database – manteniamo la nostra stima."
+    }
+  },
+  "terms": {
+    "eyebrow": "Condizioni generali",
+    "title": "Condizioni generali di utilizzo del servizio e di vendita dei report",
+    "version": "Versione del {{version}}",
+    "s1": {
+      "title": "Venditore e contatti",
+      "text": "{{site}} è gestito da {{company}}, {{address}}, partita IVA {{taxId}}, {{registry}} (di seguito: il «Venditore»).\nContatto per qualsiasi questione, compresi i reclami: {{email}}. Rispondiamo entro 14 giorni."
+    },
+    "s2": {
+      "title": "Che cos’è il servizio",
+      "text": "Il servizio è un calcolatore indipendente dei costi di importazione di auto da paesi esterni all’Unione europea. Il Venditore non vende, non acquista né importa veicoli e non opera come spedizioniere doganale.\nIl calcolatore è gratuito e non richiede registrazione. È a pagamento soltanto il report PDF descritto al punto 4."
+    },
+    "s3": {
+      "title": "Natura dei calcoli",
+      "text": "I calcoli hanno carattere puramente informativo. Si basano sulla normativa, sulle aliquote e sui tassi di cambio (NBP) vigenti alla data della stima, sui dati inseriti dall’utente e sui prezzi tipici dei servizi.\nUn calcolo non costituisce un provvedimento dell’autorità doganale o tributaria, né un’informazione tariffaria vincolante, né una consulenza legale o fiscale. Gli importi definitivi sono stabiliti dalle autorità competenti, dai vettori e dagli altri fornitori di servizi."
+    },
+    "s4": {
+      "title": "Report a pagamento – ordine e prezzo",
+      "text": "Il report è un contenuto digitale in formato PDF, generato automaticamente per la stima scelta e recante il nome dell’acquirente.\nIl prezzo è indicato prima dell’acquisto nella valuta scelta ed è il prezzo finale. Il pagamento è gestito da Stripe (carta, BLIK, Przelewy24 e gli altri metodi indicati al momento del pagamento). Il Venditore non conserva i dati delle carte.\nIl contratto si conclude al momento della conferma del pagamento."
+    },
+    "s5": {
+      "title": "Fornitura",
+      "text": "Il report è disponibile nella pagina del report subito dopo la conferma del pagamento e viene inviato all’indirizzo e-mail indicato come allegato, insieme a un link personale.\nRequisiti tecnici: un browser web con JavaScript abilitato, un indirizzo e-mail attivo e un programma per la lettura dei file PDF.\nIl link al report è personale – non condividerlo con terzi."
+    },
+    "s6": {
+      "title": "Diritto di recesso",
+      "text": "Il consumatore può recedere da un contratto a distanza entro 14 giorni senza dover fornire alcuna motivazione.\nTale diritto non si applica una volta iniziata la fornitura del contenuto digitale con il previo consenso espresso del consumatore e con la sua accettazione del fatto che in tal modo perde il diritto di recesso (articolo 16, lettera m), della direttiva 2011/83/UE). L’acquirente presta tale consenso e accettazione al momento dell’ordine e ne riceve conferma nell’e-mail contenente il report.\nLe stesse regole si applicano alla persona fisica che conclude un contratto direttamente connesso alla propria attività imprenditoriale, qualora il contratto non abbia per essa carattere professionale."
+    },
+    "s7": {
+      "title": "Reclami",
+      "text": "Il Venditore è responsabile della conformità del report al contratto. Se il report non è stato fornito, non è leggibile o non corrisponde alla stima pagata, scrivi a {{email}} indicando il numero dell’ordine o l’indirizzo e-mail utilizzato per l’acquisto.\nIl Venditore gestisce il reclamo entro 14 giorni. Se il reclamo è fondato, il Venditore fornisce un report corretto oppure, se ciò non è possibile, rimborsa il prezzo.\nIl consumatore può ricorrere a procedure di risoluzione extragiudiziale delle controversie, ad esempio a un organismo di conciliazione per i consumatori o all’autorità per la tutela dei consumatori del proprio paese."
+    },
+    "s8": {
+      "title": "Responsabilità",
+      "text": "Il Venditore si adopera affinché aliquote e dati siano aggiornati e corretti, ma non risponde delle decisioni prese esclusivamente sulla base dei calcoli né delle differenze derivanti da provvedimenti delle autorità, da modifiche normative e dei tassi di cambio successive alla data della stima, dai prezzi dei fornitori di servizi o da dati errati inseriti dall’utente.\nCiò non limita i diritti del consumatore previsti dalle norme imperative."
+    },
+    "s9": {
+      "title": "Partner",
+      "text": "Il servizio può presentare offerte di partner (ad es. cambio valuta, storia del veicolo, importatori). Alcuni link sono link di affiliazione – il Venditore può ricevere una commissione, che non influisce sui calcoli.\nI dati di contatto sono trasmessi a un partner solo quando l’utente invia un modulo di richiesta e vi acconsente. I contratti con i partner sono conclusi direttamente con loro."
+    },
+    "s10": {
+      "title": "Dati personali",
+      "text": "Le modalità di trattamento dei dati personali e dei cookie sono descritte nell’informativa sulla privacy."
+    },
+    "s11": {
+      "title": "Disposizioni finali",
+      "text": "Le condizioni generali sono disponibili gratuitamente su questa pagina in una forma che ne consente il download e la stampa.\nLe modifiche delle condizioni generali non si applicano ai contratti conclusi prima della loro entrata in vigore.\nSi applica la legge polacca, fermo restando che il consumatore non è privato della tutela garantitagli dalle norme imperative della legge del paese in cui ha la residenza abituale."
     }
   }
 }

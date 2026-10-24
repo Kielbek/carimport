@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "Izvēlētajai valstij nav nodokļu likmju."
-    }
+    },
+    "rateLimited": "Pārāk daudz pieprasījumu īsā laikā – lūdzu, uzgaidiet brīdi un mēģiniet vēlreiz."
   },
   "fuel": {
     "DIESEL": "Dīzelis",
@@ -197,8 +198,9 @@
     "redirecting": "Pāradresācija…",
     "secure": "Drošs maksājums ar Stripe. Mēs nekad neglabājam kartes datus.",
     "subtitle": "Precīzas summas, nodokļu bāzes un likmes, dokumenti – PDF formātā ar jūsu vārdu.",
-    "terms": "Piekrītu noteikumiem un lūdzu nekavējoties piegādāt digitālo saturu, atsakoties no atteikuma tiesībām.",
-    "title": "Pilna importa atskaite"
+    "terms": "Es piekrītu noteikumiem un nepārprotami lūdzu piegādāt atskaiti pirms 14 dienu atteikuma termiņa beigām. Apzinos, ka pēc atskaites piegādes zaudēju atteikuma tiesības.",
+    "title": "Pilna importa atskaite",
+    "termsLink": "Noteikumi"
   },
   "report": {
     "amount": "Summa",
@@ -437,7 +439,8 @@
     "language": "Valoda",
     "payments": "Maksājumi caur Stripe (karte, BLIK, Przelewy24). Mēs nekad neglabājam kartes datus.",
     "rights": "Visas tiesības aizsargātas.",
-    "disclaimer": "Aprēķini ir informatīvi un nav ne muitas lēmums, ne nodokļu konsultācija."
+    "disclaimer": "Aprēķini ir informatīvi un nav ne muitas lēmums, ne nodokļu konsultācija.",
+    "terms": "Noteikumi"
   },
   "cookies": {
     "title": "Sīkdatnes",
@@ -764,6 +767,10 @@
     "about": {
       "title": "Par mums – neatkarīgs auto importa kalkulators | CarImport.eu",
       "description": "Kas mēs esam, no kurienes ņemam datus un kā pelnām. CarImport.eu nepārdod un neimportē automašīnas – tas godīgi un neatkarīgi aprēķina pilnas importa izmaksas."
+    },
+    "terms": {
+      "title": "Noteikumi | CarImport.eu",
+      "description": "Automašīnu importa izmaksu kalkulatora un PDF atskaites noteikumi: pārdevējs, maksājums, piegāde, atteikuma tiesības un pretenzijas."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "Transportlīdzekļu datubāze pašlaik neatbild. Izmantojām to, kas ir kodēts pašā VIN – mēģiniet vēlāk, lai iegūtu pilnu specifikāciju.",
       "noCo2": "EPA nenorāda CO₂ šai versijai – paturam savu aplēsi. Ja jums ir vērtība no CoC, ievadiet to.",
       "noPower": "Šī VIN jauda datubāzē nav norādīta – paturam savu aplēsi."
+    }
+  },
+  "terms": {
+    "eyebrow": "Noteikumi",
+    "title": "Pakalpojuma lietošanas un atskaišu pārdošanas noteikumi",
+    "version": "Redakcija uz {{version}}",
+    "s1": {
+      "title": "Pārdevējs un kontakti",
+      "text": "Vietni {{site}} uztur {{company}}, {{address}}, PVN reģ. Nr. {{taxId}}, {{registry}} (turpmāk – Pārdevējs).\nKontakti jebkurā jautājumā, arī pretenziju iesniegšanai: {{email}}. Mēs atbildam 14 dienu laikā."
+    },
+    "s2": {
+      "title": "Kas ir pakalpojums",
+      "text": "Pakalpojums ir neatkarīgs kalkulators automašīnu importa izmaksu aprēķināšanai no valstīm ārpus Eiropas Savienības. Pārdevējs nepārdod, nepērk un neimportē transportlīdzekļus un nedarbojas kā muitas aģents.\nKalkulators ir bezmaksas un neprasa reģistrāciju. Maksas ir tikai 4. punktā aprakstītā PDF atskaite."
+    },
+    "s3": {
+      "title": "Aprēķinu raksturs",
+      "text": "Aprēķini ir tikai informatīvi. Tie balstās uz tiesību aktiem, likmēm un valūtas kursiem (NBP), kas ir spēkā aprēķina dienā, uz lietotāja ievadītajiem datiem un uz pakalpojumu tipiskajām cenām.\nAprēķins nav muitas vai nodokļu iestādes lēmums, saistoša tarifu informācija, ne arī juridiska vai nodokļu konsultācija. Galīgās summas nosaka kompetentās iestādes, pārvadātāji un citi pakalpojumu sniedzēji."
+    },
+    "s4": {
+      "title": "Maksas atskaite – pasūtījums un cena",
+      "text": "Atskaite ir digitālais saturs PDF formātā, kas tiek automātiski sagatavots izvēlētajam aprēķinam un kurā norādīts pircēja vārds un uzvārds.\nCena tiek norādīta pirms pirkuma izvēlētajā valūtā un ir galīgā cena. Maksājumus apstrādā Stripe (karte, BLIK, Przelewy24 un citi maksāšanas brīdī parādītie veidi). Pārdevējs neglabā karšu datus.\nLīgums tiek noslēgts brīdī, kad maksājums ir apstiprināts."
+    },
+    "s5": {
+      "title": "Piegāde",
+      "text": "Atskaite ir pieejama atskaites lapā uzreiz pēc maksājuma apstiprināšanas un tiek nosūtīta uz norādīto e-pasta adresi kā pielikums kopā ar personīgu saiti.\nTehniskās prasības: tīmekļa pārlūks ar iespējotu JavaScript, aktīva e-pasta adrese un programma PDF failu lasīšanai.\nSaite uz atskaiti ir personīga – nenododiet to citām personām."
+    },
+    "s6": {
+      "title": "Atteikuma tiesības",
+      "text": "Patērētājs var atkāpties no distances līguma 14 dienu laikā, nenorādot iemeslu.\nŠīs tiesības nav piemērojamas, ja digitālā satura piegāde ir sākta ar patērētāja nepārprotamu iepriekšēju piekrišanu un patērētāja apliecinājumu, ka viņš tādējādi zaudē atteikuma tiesības (Direktīvas 2011/83/ES 16. panta m) punkts). Pircējs sniedz šo piekrišanu un apliecinājumu, veicot pasūtījumu, un saņem to apstiprinājumu e-pasta vēstulē ar atskaiti.\nTie paši noteikumi attiecas uz fizisku personu, kas slēdz līgumu, kurš ir tieši saistīts ar tās saimniecisko darbību, ja līgumam tai nav profesionāla rakstura."
+    },
+    "s7": {
+      "title": "Pretenzijas",
+      "text": "Pārdevējs atbild par atskaites atbilstību līgumam. Ja atskaite nav piegādāta, to nevar izlasīt vai tā neatbilst apmaksātajam aprēķinam, rakstiet uz {{email}}, norādot pasūtījuma numuru vai pirkumam izmantoto e-pasta adresi.\nPārdevējs izskata pretenziju 14 dienu laikā. Ja tā ir pamatota, Pārdevējs piegādā labotu atskaiti vai, ja tas nav iespējams, atmaksā cenu.\nPatērētāji var izmantot ārpustiesas strīdu risināšanas iespējas, piemēram, vērsties savas valsts patērētāju strīdu risināšanas institūcijā vai patērētāju tiesību aizsardzības iestādē."
+    },
+    "s8": {
+      "title": "Atbildība",
+      "text": "Pārdevējs rūpējas, lai likmes un dati būtu aktuāli un pareizi, taču neatbild par lēmumiem, kas pieņemti tikai uz aprēķinu pamata, un par atšķirībām, ko izraisījuši iestāžu lēmumi, tiesību aktu un valūtas kursu izmaiņas pēc aprēķina dienas, pakalpojumu sniedzēju cenas vai lietotāja ievadīti nepareizi dati.\nTas neierobežo patērētāja tiesības, kas izriet no obligātajām tiesību normām."
+    },
+    "s9": {
+      "title": "Partneri",
+      "text": "Pakalpojumā var tikt rādīti partneru piedāvājumi (piem., valūtas maiņa, transportlīdzekļa vēsture, importētāji). Daļa saišu ir partneru saites – Pārdevējs var saņemt komisijas maksu, kas neietekmē aprēķinus.\nKontaktinformācija partnerim tiek nodota tikai tad, ja lietotājs nosūta pieprasījuma veidlapu un tam piekrīt. Līgumi ar partneriem tiek slēgti tieši ar viņiem."
+    },
+    "s10": {
+      "title": "Personas dati",
+      "text": "Personas datu un sīkdatņu apstrāde ir aprakstīta privātuma politikā."
+    },
+    "s11": {
+      "title": "Noslēguma noteikumi",
+      "text": "Noteikumi šajā lapā ir pieejami bez maksas tādā veidā, kas ļauj tos lejupielādēt un izdrukāt.\nNoteikumu grozījumi neattiecas uz līgumiem, kas noslēgti pirms grozījumu stāšanās spēkā.\nPiemēro Polijas tiesības, neliedzot patērētājam aizsardzību, ko tam sniedz tās valsts obligātās tiesību normas, kurā ir viņa pastāvīgā dzīvesvieta."
     }
   }
 }

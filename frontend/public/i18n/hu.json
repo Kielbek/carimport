@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "A kiválasztott országhoz nincsenek adókulcsok."
-    }
+    },
+    "rateLimited": "Túl sok kérés rövid idő alatt – várjon egy kicsit, és próbálja újra."
   },
   "fuel": {
     "DIESEL": "Dízel",
@@ -197,8 +198,9 @@
     "redirecting": "Átirányítás…",
     "secure": "Biztonságos fizetés a Stripe-on keresztül. Kártyaadatokat soha nem tárolunk.",
     "subtitle": "Pontos összegek, adóalapok és adókulcsok, dokumentumok – az Ön nevére szóló PDF-ben.",
-    "terms": "Elfogadom a feltételeket, és kérem a digitális tartalom azonnali teljesítését, lemondva az elállási jogról.",
-    "title": "Teljes importjelentés"
+    "terms": "Elfogadom az ÁSZF-et, és kifejezetten kérem, hogy a jelentést a 14 napos elállási határidő lejárta előtt teljesítsék. Tudomásul veszem, hogy a jelentés teljesítésével elveszítem az elállási jogomat.",
+    "title": "Teljes importjelentés",
+    "termsLink": "ÁSZF"
   },
   "report": {
     "amount": "Összeg",
@@ -437,7 +439,8 @@
     "language": "Nyelv",
     "payments": "Fizetés a Stripe-on keresztül (kártya, BLIK, Przelewy24). Kártyaadatokat soha nem tárolunk.",
     "rights": "Minden jog fenntartva.",
-    "disclaimer": "A számítások tájékoztató jellegűek, nem minősülnek vámhatósági határozatnak vagy adótanácsadásnak."
+    "disclaimer": "A számítások tájékoztató jellegűek, nem minősülnek vámhatósági határozatnak vagy adótanácsadásnak.",
+    "terms": "ÁSZF"
   },
   "cookies": {
     "title": "Sütik",
@@ -764,6 +767,10 @@
     "about": {
       "title": "Rólunk – független autóimport-kalkulátor | CarImport.eu",
       "description": "Kik vagyunk, honnan származnak az adataink és miből élünk. A CarImport.eu nem árul és nem importál autókat – őszintén és függetlenül kiszámolja a teljes importköltséget."
+    },
+    "terms": {
+      "title": "ÁSZF | CarImport.eu",
+      "description": "Az autóimport-költségkalkulátor és a PDF-jelentés feltételei: eladó, fizetés, teljesítés, elállás és panaszkezelés."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "A járműadatbázis most nem válaszol. Azt használtuk, amit maga a VIN kódol – a teljes specifikációért próbálja újra később.",
       "noCo2": "Az EPA nem ad meg CO₂-értéket ehhez a változathoz – megtartjuk a becslésünket. Ha megvan a CoC-ben szereplő érték, adja meg.",
       "noPower": "Ehhez a VIN-hez nincs teljesítményadat az adatbázisban – megtartjuk a becslésünket."
+    }
+  },
+  "terms": {
+    "eyebrow": "ÁSZF",
+    "title": "A szolgáltatás használatának és a jelentések értékesítésének általános szerződési feltételei",
+    "version": "Hatályos: {{version}}",
+    "s1": {
+      "title": "Az eladó és elérhetőségei",
+      "text": "A(z) {{site}} üzemeltetője: {{company}}, {{address}}, adószám: {{taxId}}, {{registry}} (a továbbiakban: Eladó).\nKapcsolat bármilyen ügyben, panasz esetén is: {{email}}. 14 napon belül válaszolunk."
+    },
+    "s2": {
+      "title": "A szolgáltatás tárgya",
+      "text": "A szolgáltatás független kalkulátor az Európai Unión kívülről behozott autók importköltségeinek kiszámítására. Az Eladó nem értékesít, nem vásárol és nem importál járműveket, és nem jár el vámügynökként.\nA kalkulátor ingyenes, és nem igényel regisztrációt. Kizárólag a 4. pontban leírt PDF-jelentés díjköteles."
+    },
+    "s3": {
+      "title": "A számítások jellege",
+      "text": "A számítások kizárólag tájékoztató jellegűek. A kalkuláció napján hatályos jogszabályokon, adókulcsokon és árfolyamokon (NBP), a felhasználó által megadott adatokon, valamint a szolgáltatások szokásos árain alapulnak.\nA számítás nem minősül vám- vagy adóhatósági határozatnak, kötelező érvényű tarifális felvilágosításnak, sem jogi vagy adótanácsadásnak. A végleges összegeket az illetékes hatóságok, a fuvarozók és más szolgáltatók állapítják meg."
+    },
+    "s4": {
+      "title": "Fizetős jelentés – megrendelés és ár",
+      "text": "A jelentés PDF formátumú digitális tartalom, amely a kiválasztott kalkulációhoz automatikusan készül, és a vevő nevét tartalmazza.\nAz árat a vásárlás előtt a kiválasztott pénznemben tüntetjük fel; ez a végső ár. A fizetést a Stripe kezeli (kártya, BLIK, Przelewy24 és a fizetéskor megjelenített egyéb módok). Az Eladó nem tárol kártyaadatokat.\nA szerződés a fizetés visszaigazolásának pillanatában jön létre."
+    },
+    "s5": {
+      "title": "Teljesítés",
+      "text": "A jelentés a fizetés visszaigazolása után azonnal elérhető a jelentés oldalán, és a megadott e-mail-címre is elküldjük mellékletként, személyes linkkel együtt.\nMűszaki feltételek: engedélyezett JavaScripttel rendelkező webböngésző, működő e-mail-cím és PDF-olvasó program.\nA jelentés linkje személyes – kérjük, ne ossza meg másokkal."
+    },
+    "s6": {
+      "title": "Elállási jog",
+      "text": "A fogyasztó a távollévők között kötött szerződéstől 14 napon belül indokolás nélkül elállhat.\nEz a jog nem illeti meg a fogyasztót, ha a digitális tartalom szolgáltatása a fogyasztó kifejezett előzetes beleegyezésével és annak tudomásulvételével kezdődött meg, hogy ezáltal elveszíti elállási jogát (a 2011/83/EU irányelv 16. cikkének m) pontja). A vevő ezt a beleegyezést és tudomásulvételt a megrendeléskor adja meg, és annak visszaigazolását a jelentést tartalmazó e-mailben kapja meg.\nUgyanezek a szabályok vonatkoznak arra a természetes személyre, aki a gazdasági tevékenységével közvetlenül összefüggő szerződést köt, ha a szerződés számára nem szakmai jellegű."
+    },
+    "s7": {
+      "title": "Panaszkezelés",
+      "text": "Az Eladó felel a jelentés szerződésszerűségéért. Ha a jelentés nem érkezett meg, nem olvasható, vagy nem felel meg a kifizetett kalkulációnak, kérjük, írjon a(z) {{email}} címre, megadva a rendelésszámot vagy a vásárláskor használt e-mail-címet.\nAz Eladó a panaszt 14 napon belül kivizsgálja. Ha az megalapozott, az Eladó javított jelentést szolgáltat, vagy ha ez nem lehetséges, visszatéríti az árat.\nA fogyasztó bírósági eljáráson kívüli vitarendezést is igénybe vehet, például a saját országában működő fogyasztói vitarendező testületet vagy fogyasztóvédelmi hatóságot."
+    },
+    "s8": {
+      "title": "Felelősség",
+      "text": "Az Eladó gondoskodik arról, hogy az adókulcsok és adatok naprakészek és helyesek legyenek, de nem felel a kizárólag a számítások alapján hozott döntésekért, sem a hatósági döntésekből, a kalkuláció napját követő jogszabály- és árfolyamváltozásokból, a szolgáltatók áraiból vagy a felhasználó által megadott hibás adatokból eredő eltérésekért.\nEz nem korlátozza a fogyasztót a kógens jogszabályok alapján megillető jogokat."
+    },
+    "s9": {
+      "title": "Partnerek",
+      "text": "A szolgáltatás partnerek ajánlatait is megjelenítheti (pl. valutaváltás, járműelőzmények, importőrök). Egyes linkek partnerlinkek – az Eladó jutalékot kaphat, ez azonban nem befolyásolja a számításokat.\nA kapcsolattartási adatokat csak akkor adjuk át egy partnernek, ha a felhasználó elküld egy ajánlatkérő űrlapot, és ehhez hozzájárul. A partnerekkel kötött szerződések közvetlenül velük jönnek létre."
+    },
+    "s10": {
+      "title": "Személyes adatok",
+      "text": "A személyes adatok és a sütik kezelésének módját az adatvédelmi tájékoztató ismerteti."
+    },
+    "s11": {
+      "title": "Záró rendelkezések",
+      "text": "Az ÁSZF ezen az oldalon díjmentesen, letölthető és kinyomtatható formában érhető el.\nAz ÁSZF módosítása nem érinti a hatálybalépése előtt megkötött szerződéseket.\nA lengyel jog az irányadó, ez azonban nem fosztja meg a fogyasztót attól a védelemtől, amelyet szokásos tartózkodási helye szerinti állam kógens jogszabályai biztosítanak számára."
     }
   }
 }

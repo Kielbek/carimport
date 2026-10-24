@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "Nu există cote de impozitare pentru țara selectată."
-    }
+    },
+    "rateLimited": "Prea multe cereri într-un timp scurt – așteaptă puțin și încearcă din nou."
   },
   "fuel": {
     "DIESEL": "Diesel",
@@ -197,8 +198,9 @@
     "redirecting": "Redirecționare…",
     "secure": "Plată securizată prin Stripe. Nu stocăm niciodată datele cardului.",
     "subtitle": "Sume exacte, baze de impozitare și cote, documente – într-un PDF pe numele tău.",
-    "terms": "Accept termenii și solicit livrarea imediată a conținutului digital, renunțând la dreptul de retragere.",
-    "title": "Raport complet de import"
+    "terms": "Accept termenii și condițiile și solicit în mod expres furnizarea raportului înainte de expirarea perioadei de retragere de 14 zile. Iau la cunoștință că, odată cu furnizarea raportului, îmi pierd dreptul de retragere.",
+    "title": "Raport complet de import",
+    "termsLink": "Termeni și condiții"
   },
   "report": {
     "amount": "Sumă",
@@ -437,7 +439,8 @@
     "language": "Limbă",
     "payments": "Plăți prin Stripe (card, BLIK, Przelewy24). Nu stocăm niciodată datele cardului.",
     "rights": "Toate drepturile rezervate.",
-    "disclaimer": "Calculele au caracter informativ și nu reprezintă o decizie vamală sau consultanță fiscală."
+    "disclaimer": "Calculele au caracter informativ și nu reprezintă o decizie vamală sau consultanță fiscală.",
+    "terms": "Termeni și condiții"
   },
   "cookies": {
     "title": "Cookie-uri",
@@ -764,6 +767,10 @@
     "about": {
       "title": "Despre noi – un calculator independent de import auto | CarImport.eu",
       "description": "Cine suntem, de unde provin datele noastre și cum câștigăm bani. CarImport.eu nu vinde și nu importă mașini – calculează costul complet al importului, corect și independent."
+    },
+    "terms": {
+      "title": "Termeni și condiții | CarImport.eu",
+      "description": "Termenii calculatorului costurilor de import auto și ai raportului PDF: vânzător, plată, furnizare, retragere și reclamații."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "Baza de date a vehiculelor nu răspunde momentan. Am folosit ce codifică VIN-ul în sine – încearcă mai târziu pentru specificația completă.",
       "noCo2": "EPA nu oferă CO₂ pentru această versiune – păstrăm estimarea noastră. Dacă ai valoarea din CoC, introdu-o.",
       "noPower": "Puterea pentru acest VIN nu apare în baza de date – păstrăm estimarea noastră."
+    }
+  },
+  "terms": {
+    "eyebrow": "Termeni și condiții",
+    "title": "Termeni și condiții de utilizare a serviciului și de vânzare a rapoartelor",
+    "version": "Versiunea din {{version}}",
+    "s1": {
+      "title": "Vânzătorul și datele de contact",
+      "text": "{{site}} este administrat de {{company}}, {{address}}, CIF {{taxId}}, {{registry}} (denumită în continuare „Vânzătorul”).\nContact pentru orice problemă, inclusiv reclamații: {{email}}. Răspundem în termen de 14 zile."
+    },
+    "s2": {
+      "title": "Ce este serviciul",
+      "text": "Serviciul este un calculator independent al costurilor de import al autoturismelor din afara Uniunii Europene. Vânzătorul nu vinde, nu cumpără și nu importă vehicule și nu acționează ca agent vamal.\nCalculatorul este gratuit și nu necesită înregistrare. Doar raportul PDF descris la punctul 4 este contra cost."
+    },
+    "s3": {
+      "title": "Natura calculelor",
+      "text": "Calculele au caracter exclusiv informativ. Ele se bazează pe legislația, cotele și cursurile de schimb (NBP) în vigoare la data estimării, pe datele introduse de utilizator și pe prețurile obișnuite ale serviciilor.\nUn calcul nu reprezintă o decizie a unei autorități vamale sau fiscale, o informație tarifară obligatorie ori consultanță juridică sau fiscală. Sumele finale sunt stabilite de autoritățile competente, de transportatori și de ceilalți prestatori de servicii."
+    },
+    "s4": {
+      "title": "Raportul contra cost – comanda și prețul",
+      "text": "Raportul este un conținut digital în format PDF, generat automat pentru estimarea aleasă și care poartă numele cumpărătorului.\nPrețul este afișat înainte de cumpărare în moneda aleasă și este prețul final. Plata este procesată de Stripe (card, BLIK, Przelewy24 și celelalte metode afișate la plată). Vânzătorul nu stochează datele cardurilor.\nContractul se încheie în momentul confirmării plății."
+    },
+    "s5": {
+      "title": "Furnizarea",
+      "text": "Raportul este disponibil pe pagina raportului imediat după confirmarea plății și este trimis la adresa de e-mail indicată, ca atașament, împreună cu un link personal.\nCerințe tehnice: un browser web cu JavaScript activat, o adresă de e-mail activă și un program de citire a fișierelor PDF.\nLinkul către raport este personal – nu îl partaja cu alte persoane."
+    },
+    "s6": {
+      "title": "Dreptul de retragere",
+      "text": "Consumatorul se poate retrage dintr-un contract la distanță în termen de 14 zile, fără a invoca vreun motiv.\nAcest drept nu se aplică după ce furnizarea conținutului digital a început cu acordul prealabil expres al consumatorului și cu confirmarea faptului că acesta își pierde astfel dreptul de retragere (articolul 16 litera (m) din Directiva 2011/83/UE). Cumpărătorul își exprimă acest acord și această confirmare la plasarea comenzii și primește confirmarea lor în e-mailul cu raportul.\nAceleași reguli se aplică persoanei fizice care încheie un contract direct legat de activitatea sa economică, atunci când contractul nu are pentru aceasta caracter profesional."
+    },
+    "s7": {
+      "title": "Reclamații",
+      "text": "Vânzătorul răspunde pentru conformitatea raportului cu contractul. Dacă raportul nu a fost furnizat, nu poate fi citit sau nu corespunde estimării plătite, scrie la {{email}}, indicând numărul comenzii sau adresa de e-mail folosită la cumpărare.\nVânzătorul soluționează reclamația în termen de 14 zile. Dacă aceasta este întemeiată, Vânzătorul furnizează un raport corectat sau, dacă acest lucru nu este posibil, rambursează prețul.\nConsumatorul poate apela la proceduri de soluționare extrajudiciară a litigiilor, de exemplu la o entitate de soluționare alternativă a litigiilor de consum sau la autoritatea pentru protecția consumatorilor din țara sa."
+    },
+    "s8": {
+      "title": "Răspunderea",
+      "text": "Vânzătorul se îngrijește ca cotele și datele să fie actuale și corecte, dar nu răspunde pentru deciziile luate exclusiv pe baza calculelor și nici pentru diferențele rezultate din decizii ale autorităților, din modificări ale legislației și ale cursurilor de schimb ulterioare datei estimării, din prețurile prestatorilor de servicii sau din date eronate introduse de utilizator.\nAceastă prevedere nu limitează drepturile consumatorului prevăzute de dispozițiile legale imperative."
+    },
+    "s9": {
+      "title": "Parteneri",
+      "text": "Serviciul poate prezenta oferte ale partenerilor (de ex. schimb valutar, istoricul vehiculului, importatori). Unele linkuri sunt linkuri de afiliere – Vânzătorul poate primi un comision, ceea ce nu influențează calculele.\nDatele de contact sunt transmise unui partener numai atunci când utilizatorul trimite un formular de solicitare și își dă acordul. Contractele cu partenerii se încheie direct cu aceștia."
+    },
+    "s10": {
+      "title": "Datele cu caracter personal",
+      "text": "Modul în care sunt prelucrate datele cu caracter personal și modulele cookie este descris în politica de confidențialitate."
+    },
+    "s11": {
+      "title": "Dispoziții finale",
+      "text": "Termenii și condițiile sunt disponibile gratuit pe această pagină, într-o formă care permite descărcarea și tipărirea lor.\nModificările termenilor și condițiilor nu se aplică contractelor încheiate înainte de intrarea lor în vigoare.\nSe aplică legea poloneză, fără ca consumatorul să fie privat de protecția acordată de dispozițiile imperative ale legii țării în care își are reședința obișnuită."
     }
   }
 }

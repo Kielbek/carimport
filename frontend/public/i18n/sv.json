@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "Inga skattesatser för det valda landet."
-    }
+    },
+    "rateLimited": "För många förfrågningar på kort tid – vänta en stund och försök igen."
   },
   "fuel": {
     "DIESEL": "Diesel",
@@ -197,8 +198,9 @@
     "redirecting": "Omdirigerar…",
     "secure": "Säker betalning via Stripe. Vi lagrar aldrig kortuppgifter.",
     "subtitle": "Exakta belopp, beskattningsunderlag och skattesatser, handlingar – i en PDF med ditt namn.",
-    "terms": "Jag godkänner villkoren och begär omedelbar leverans av digitalt innehåll och avstår därmed från ångerrätten.",
-    "title": "Fullständig importrapport"
+    "terms": "Jag godkänner villkoren och begär uttryckligen att rapporten levereras innan ångerfristen på 14 dagar har löpt ut. Jag är medveten om att jag förlorar min ångerrätt när rapporten har levererats.",
+    "title": "Fullständig importrapport",
+    "termsLink": "Villkor"
   },
   "report": {
     "amount": "Belopp",
@@ -437,7 +439,8 @@
     "language": "Språk",
     "payments": "Betalningar via Stripe (kort, BLIK, Przelewy24). Vi lagrar aldrig kortuppgifter.",
     "rights": "Alla rättigheter förbehållna.",
-    "disclaimer": "Beräkningarna är vägledande och utgör varken ett tullbeslut eller skatterådgivning."
+    "disclaimer": "Beräkningarna är vägledande och utgör varken ett tullbeslut eller skatterådgivning.",
+    "terms": "Villkor"
   },
   "cookies": {
     "title": "Cookies",
@@ -764,6 +767,10 @@
     "about": {
       "title": "Om oss – en oberoende kalkylator för bilimport | CarImport.eu",
       "description": "Vilka vi är, var våra data kommer ifrån och hur vi tjänar pengar. CarImport.eu varken säljer eller importerar bilar – den räknar ut hela importkostnaden ärligt och oberoende."
+    },
+    "terms": {
+      "title": "Villkor | CarImport.eu",
+      "description": "Villkor för kalkylatorn för importkostnader för bilar och PDF-rapporten: säljare, betalning, leverans, ångerrätt och reklamationer."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "Fordonsdatabasen svarar inte just nu. Vi har använt det som själva VIN-numret anger – försök igen senare för fullständiga uppgifter.",
       "noCo2": "EPA har inget CO₂-värde för den här versionen – vi behåller vår uppskattning. Ange värdet från CoC-intyget om du har det.",
       "noPower": "Effekten för detta VIN finns inte i databasen – vi behåller vår uppskattning."
+    }
+  },
+  "terms": {
+    "eyebrow": "Villkor",
+    "title": "Användarvillkor och köpvillkor för rapporter",
+    "version": "Version från {{version}}",
+    "s1": {
+      "title": "Säljare och kontakt",
+      "text": "{{site}} drivs av {{company}}, {{address}}, momsreg.nr {{taxId}}, {{registry}} (nedan ”Säljaren”).\nKontakt i alla ärenden, även reklamationer: {{email}}. Vi svarar inom 14 dagar."
+    },
+    "s2": {
+      "title": "Vad tjänsten är",
+      "text": "Tjänsten är en oberoende kalkylator för kostnaderna för att importera bilar från länder utanför Europeiska unionen. Säljaren säljer, köper eller importerar inte fordon och agerar inte som tullombud.\nKalkylatorn är kostnadsfri och kräver ingen registrering. Endast den PDF-rapport som beskrivs i avsnitt 4 är avgiftsbelagd."
+    },
+    "s3": {
+      "title": "Beräkningarnas karaktär",
+      "text": "Beräkningarna är endast vägledande. De bygger på lagstiftning, satser och växelkurser (NBP) som gäller på dagen för beräkningen, på de uppgifter som användaren har angett och på typiska priser för tjänster.\nEn beräkning är inte ett beslut av en tull- eller skattemyndighet, inte ett bindande klassificeringsbesked och inte juridisk eller skattemässig rådgivning. De slutliga beloppen fastställs av behöriga myndigheter, transportörer och andra tjänsteleverantörer."
+    },
+    "s4": {
+      "title": "Betald rapport – beställning och pris",
+      "text": "Rapporten är digitalt innehåll i PDF-format som tas fram automatiskt för den valda beräkningen och är försedd med köparens namn.\nPriset visas före köpet i den valda valutan och är slutpriset. Betalningen hanteras av Stripe (kort, BLIK, Przelewy24 och övriga metoder som visas vid betalningen). Säljaren lagrar inga kortuppgifter.\nAvtalet ingås när betalningen har bekräftats."
+    },
+    "s5": {
+      "title": "Leverans",
+      "text": "Rapporten är tillgänglig på rapportsidan direkt efter att betalningen har bekräftats och skickas till den angivna e-postadressen som bilaga tillsammans med en personlig länk.\nTekniska krav: en webbläsare med JavaScript aktiverat, en aktiv e-postadress och ett program för att läsa PDF-filer.\nLänken till rapporten är personlig – dela den inte med andra."
+    },
+    "s6": {
+      "title": "Ångerrätt",
+      "text": "En konsument kan frånträda ett distansavtal inom 14 dagar utan att ange något skäl.\nÅngerrätten gäller inte när leveransen av digitalt innehåll har påbörjats med konsumentens uttryckliga förhandsgodkännande och konsumentens bekräftelse på att ångerrätten därmed går förlorad (artikel 16 m i direktiv 2011/83/EU). Köparen lämnar detta samtycke och denna bekräftelse vid beställningen och får en bekräftelse på det i e-postmeddelandet med rapporten.\nSamma regler gäller för en fysisk person som ingår ett avtal med direkt anknytning till sin näringsverksamhet, om avtalet inte har yrkesmässig karaktär för personen."
+    },
+    "s7": {
+      "title": "Reklamationer",
+      "text": "Säljaren ansvarar för att rapporten överensstämmer med avtalet. Om rapporten inte har levererats, inte går att läsa eller inte motsvarar den betalda beräkningen, skriv till {{email}} och ange ordernumret eller den e-postadress som användes vid köpet.\nSäljaren behandlar en reklamation inom 14 dagar. Om den är befogad levererar Säljaren en rättad rapport eller, om det inte är möjligt, återbetalar priset.\nKonsumenter kan använda alternativ tvistlösning utanför domstol, till exempel en nämnd för konsumenttvister eller konsumentskyddsmyndigheten i sitt land."
+    },
+    "s8": {
+      "title": "Ansvar",
+      "text": "Säljaren ser till att satser och uppgifter är aktuella och korrekta men ansvarar inte för beslut som fattas enbart på grundval av beräkningarna eller för avvikelser till följd av myndighetsbeslut, ändringar i lagstiftning och växelkurser efter dagen för beräkningen, tjänsteleverantörers priser eller felaktiga uppgifter som användaren har angett.\nDetta begränsar inte konsumentens rättigheter enligt tvingande lag."
+    },
+    "s9": {
+      "title": "Partner",
+      "text": "Tjänsten kan visa erbjudanden från partner (t.ex. valutaväxling, fordonshistorik, importörer). Vissa länkar är affiliatelänkar – Säljaren kan få provision, vilket inte påverkar beräkningarna.\nKontaktuppgifter lämnas till en partner endast när användaren skickar ett förfrågningsformulär och samtycker till det. Avtal med partner ingås direkt med dem."
+    },
+    "s10": {
+      "title": "Personuppgifter",
+      "text": "Hur personuppgifter och kakor behandlas beskrivs i integritetspolicyn."
+    },
+    "s11": {
+      "title": "Slutbestämmelser",
+      "text": "Villkoren finns kostnadsfritt tillgängliga på denna sida i en form som gör det möjligt att ladda ner och skriva ut dem.\nÄndringar av villkoren påverkar inte avtal som har ingåtts innan ändringarna träder i kraft.\nPolsk lag tillämpas, utan att konsumenten berövas det skydd som tillförsäkras genom tvingande bestämmelser i lagen i det land där konsumenten har sin vanliga vistelseort."
     }
   }
 }

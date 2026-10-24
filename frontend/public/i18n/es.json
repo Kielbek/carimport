@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "No hay tipos impositivos para el país seleccionado."
-    }
+    },
+    "rateLimited": "Demasiadas solicitudes en poco tiempo: espera un momento y vuelve a intentarlo."
   },
   "fuel": {
     "DIESEL": "Diésel",
@@ -197,8 +198,9 @@
     "redirecting": "Redirigiendo…",
     "secure": "Pago seguro con Stripe. Nunca almacenamos los datos de la tarjeta.",
     "subtitle": "Importes exactos, bases imponibles y tipos, documentos – en un PDF a tu nombre.",
-    "terms": "Acepto las condiciones y solicito la entrega inmediata del contenido digital, renunciando al derecho de desistimiento.",
-    "title": "Informe de importación completo"
+    "terms": "Acepto las condiciones generales y solicito expresamente que el informe se me entregue antes de que finalice el plazo de desistimiento de 14 días. Reconozco que, una vez entregado, pierdo el derecho de desistimiento.",
+    "title": "Informe de importación completo",
+    "termsLink": "Condiciones generales"
   },
   "report": {
     "amount": "Importe",
@@ -437,7 +439,8 @@
     "language": "Idioma",
     "payments": "Pagos con Stripe (tarjeta, BLIK, Przelewy24). Nunca almacenamos los datos de la tarjeta.",
     "rights": "Todos los derechos reservados.",
-    "disclaimer": "Los cálculos son informativos y no constituyen una resolución aduanera ni asesoramiento fiscal."
+    "disclaimer": "Los cálculos son informativos y no constituyen una resolución aduanera ni asesoramiento fiscal.",
+    "terms": "Condiciones"
   },
   "cookies": {
     "title": "Cookies",
@@ -764,6 +767,10 @@
     "about": {
       "title": "Quiénes somos – una calculadora independiente de importación de coches | CarImport.eu",
       "description": "Quiénes somos, de dónde salen nuestros datos y cómo ganamos dinero. CarImport.eu no vende ni importa coches – calcula el coste total de importación de forma honesta e independiente."
+    },
+    "terms": {
+      "title": "Condiciones generales | CarImport.eu",
+      "description": "Condiciones de la calculadora de costes de importación de coches y del informe PDF: vendedor, pago, entrega, desistimiento y reclamaciones."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "La base de datos de vehículos no responde ahora mismo. Hemos usado lo que codifica el propio VIN: vuelve a intentarlo más tarde para obtener la especificación completa.",
       "noCo2": "La EPA no da CO₂ para esta versión: mantenemos nuestra estimación. Si tienes el valor del CoC, introdúcelo.",
       "noPower": "La potencia de este VIN no figura en la base de datos: mantenemos nuestra estimación."
+    }
+  },
+  "terms": {
+    "eyebrow": "Condiciones generales",
+    "title": "Condiciones generales de uso del servicio y de venta de informes",
+    "version": "Versión del {{version}}",
+    "s1": {
+      "title": "Vendedor y contacto",
+      "text": "{{site}} es gestionado por {{company}}, {{address}}, NIF {{taxId}}, {{registry}} (en adelante, el «Vendedor»).\nContacto para cualquier asunto, incluidas las reclamaciones: {{email}}. Respondemos en un plazo de 14 días."
+    },
+    "s2": {
+      "title": "Qué es el servicio",
+      "text": "El servicio es una calculadora independiente del coste de importar coches desde fuera de la Unión Europea. El Vendedor no vende, compra ni importa vehículos y no actúa como agente de aduanas.\nLa calculadora es gratuita y no requiere registro. Solo es de pago el informe PDF descrito en el apartado 4."
+    },
+    "s3": {
+      "title": "Naturaleza de los cálculos",
+      "text": "Los cálculos tienen carácter meramente informativo. Se basan en la normativa, los tipos y los tipos de cambio (NBP) vigentes en la fecha de la estimación, en los datos introducidos por el usuario y en los precios habituales de los servicios.\nUn cálculo no constituye una resolución de una autoridad aduanera o tributaria, ni una información arancelaria vinculante, ni asesoramiento jurídico o fiscal. Los importes definitivos los determinan las autoridades competentes, los transportistas y los demás prestadores de servicios."
+    },
+    "s4": {
+      "title": "Informe de pago – pedido y precio",
+      "text": "El informe es un contenido digital en formato PDF, elaborado automáticamente para la estimación elegida y que lleva el nombre del comprador.\nEl precio se indica antes de la compra en la moneda elegida y es el precio final. El pago lo gestiona Stripe (tarjeta, BLIK, Przelewy24 y los demás métodos mostrados al pagar). El Vendedor no almacena datos de tarjetas.\nEl contrato se celebra en el momento en que se confirma el pago."
+    },
+    "s5": {
+      "title": "Entrega",
+      "text": "El informe está disponible en la página del informe inmediatamente después de confirmarse el pago y se envía a la dirección de correo electrónico indicada como archivo adjunto, junto con un enlace personal.\nRequisitos técnicos: un navegador web con JavaScript activado, una dirección de correo electrónico activa y un lector de archivos PDF.\nEl enlace al informe es personal: no lo compartas con terceros."
+    },
+    "s6": {
+      "title": "Derecho de desistimiento",
+      "text": "El consumidor puede desistir de un contrato a distancia en un plazo de 14 días sin necesidad de justificación.\nEste derecho no se aplica una vez iniciado el suministro del contenido digital con el consentimiento previo y expreso del consumidor y con su reconocimiento de que, en consecuencia, pierde el derecho de desistimiento (artículo 16, letra m), de la Directiva 2011/83/UE). El comprador presta este consentimiento y reconocimiento al realizar el pedido y recibe su confirmación en el correo electrónico con el informe.\nLas mismas normas se aplican a la persona física que celebre un contrato directamente relacionado con su actividad empresarial cuando dicho contrato no tenga para ella carácter profesional."
+    },
+    "s7": {
+      "title": "Reclamaciones",
+      "text": "El Vendedor responde de la conformidad del informe con el contrato. Si el informe no se ha entregado, no puede leerse o no corresponde a la estimación pagada, escribe a {{email}} indicando el número de pedido o la dirección de correo electrónico utilizada en la compra.\nEl Vendedor tramita la reclamación en un plazo de 14 días. Si es fundada, el Vendedor entrega un informe corregido o, cuando ello no sea posible, reembolsa el precio.\nEl consumidor puede recurrir a sistemas extrajudiciales de resolución de litigios, por ejemplo un servicio de mediación o arbitraje de consumo o la autoridad de protección de los consumidores de su país."
+    },
+    "s8": {
+      "title": "Responsabilidad",
+      "text": "El Vendedor procura que los tipos y los datos estén actualizados y sean correctos, pero no responde de las decisiones adoptadas exclusivamente sobre la base de los cálculos ni de las diferencias derivadas de resoluciones de las autoridades, de cambios normativos y de tipos de cambio posteriores a la fecha de la estimación, de los precios de los prestadores de servicios o de datos erróneos introducidos por el usuario.\nLo anterior no limita los derechos del consumidor previstos en las normas imperativas."
+    },
+    "s9": {
+      "title": "Socios",
+      "text": "El servicio puede mostrar ofertas de socios (p. ej., cambio de divisas, historial del vehículo, importadores). Algunos enlaces son de afiliación: el Vendedor puede recibir una comisión, lo que no influye en los cálculos.\nLos datos de contacto solo se transmiten a un socio cuando el usuario envía un formulario de consulta y da su consentimiento. Los contratos con los socios se celebran directamente con ellos."
+    },
+    "s10": {
+      "title": "Datos personales",
+      "text": "La forma en que se tratan los datos personales y las cookies se describe en la política de privacidad."
+    },
+    "s11": {
+      "title": "Disposiciones finales",
+      "text": "Las condiciones generales están disponibles gratuitamente en esta página en un formato que permite descargarlas e imprimirlas.\nLas modificaciones de las condiciones generales no afectan a los contratos celebrados antes de su entrada en vigor.\nSe aplica la legislación polaca, sin que ello prive al consumidor de la protección que le otorgan las disposiciones imperativas de la ley del país de su residencia habitual."
     }
   }
 }

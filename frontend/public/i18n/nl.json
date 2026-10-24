@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "Geen belastingtarieven voor het gekozen land."
-    }
+    },
+    "rateLimited": "Te veel verzoeken in korte tijd – wacht even en probeer het opnieuw."
   },
   "fuel": {
     "DIESEL": "Diesel",
@@ -197,8 +198,9 @@
     "redirecting": "U wordt doorgestuurd…",
     "secure": "Veilig betalen via Stripe. Wij slaan nooit kaartgegevens op.",
     "subtitle": "Exacte bedragen, maatstaven van heffing en tarieven, documenten – in een pdf op uw naam.",
-    "terms": "Ik accepteer de voorwaarden en verzoek om onmiddellijke levering van de digitale inhoud, waarbij ik afstand doe van het herroepingsrecht.",
-    "title": "Volledig importrapport"
+    "terms": "Ik ga akkoord met de algemene voorwaarden en verzoek uitdrukkelijk om levering van het rapport vóór het einde van de herroepingstermijn van 14 dagen. Ik erken dat ik mijn herroepingsrecht verlies zodra het rapport is geleverd.",
+    "title": "Volledig importrapport",
+    "termsLink": "Algemene voorwaarden"
   },
   "report": {
     "amount": "Bedrag",
@@ -437,7 +439,8 @@
     "language": "Taal",
     "payments": "Betalingen via Stripe (creditcard, BLIK, Przelewy24). Wij slaan nooit kaartgegevens op.",
     "rights": "Alle rechten voorbehouden.",
-    "disclaimer": "De berekeningen zijn informatief en vormen geen douanebeschikking of belastingadvies."
+    "disclaimer": "De berekeningen zijn informatief en vormen geen douanebeschikking of belastingadvies.",
+    "terms": "Algemene voorwaarden"
   },
   "cookies": {
     "title": "Cookies",
@@ -764,6 +767,10 @@
     "about": {
       "title": "Over ons – een onafhankelijke calculator voor auto-import | CarImport.eu",
       "description": "Wie wij zijn, waar onze gegevens vandaan komen en hoe wij geld verdienen. CarImport.eu verkoopt en importeert geen auto’s – het berekent de volledige importkosten eerlijk en onafhankelijk."
+    },
+    "terms": {
+      "title": "Algemene voorwaarden | CarImport.eu",
+      "description": "Voorwaarden voor de calculator van importkosten van auto’s en het PDF-rapport: verkoper, betaling, levering, herroeping en klachten."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "De voertuigdatabase reageert momenteel niet. We hebben gebruikt wat in de VIN zelf staat – probeer het later opnieuw voor de volledige specificatie.",
       "noCo2": "Geen CO₂-waarde van de EPA voor deze versie – we houden onze schatting aan. Vul de waarde van het CoC in als u die heeft.",
       "noPower": "Het vermogen staat voor deze VIN niet in de database – we houden onze schatting aan."
+    }
+  },
+  "terms": {
+    "eyebrow": "Algemene voorwaarden",
+    "title": "Algemene voorwaarden voor het gebruik van de dienst en de verkoop van rapporten",
+    "version": "Versie van {{version}}",
+    "s1": {
+      "title": "Verkoper en contact",
+      "text": "{{site}} wordt geëxploiteerd door {{company}}, {{address}}, btw-nummer {{taxId}}, {{registry}} (hierna: de Verkoper).\nContact voor alle zaken, ook klachten: {{email}}. Wij antwoorden binnen 14 dagen."
+    },
+    "s2": {
+      "title": "Wat de dienst is",
+      "text": "De dienst is een onafhankelijke calculator van de kosten van het importeren van auto’s van buiten de Europese Unie. De Verkoper verkoopt, koopt of importeert geen voertuigen en treedt niet op als douane-expediteur.\nDe calculator is gratis en vereist geen registratie. Alleen het in artikel 4 beschreven PDF-rapport is betaald."
+    },
+    "s3": {
+      "title": "Aard van de berekeningen",
+      "text": "De berekeningen zijn uitsluitend informatief. Zij zijn gebaseerd op de wetgeving, tarieven en wisselkoersen (NBP) die gelden op de dag van de berekening, op de door de gebruiker ingevoerde gegevens en op gangbare prijzen van diensten.\nEen berekening is geen besluit van een douane- of belastingautoriteit, geen bindende tariefinlichting en geen juridisch of fiscaal advies. De definitieve bedragen worden vastgesteld door de bevoegde autoriteiten, vervoerders en andere dienstverleners."
+    },
+    "s4": {
+      "title": "Betaald rapport – bestelling en prijs",
+      "text": "Het rapport is digitale inhoud in PDF-formaat die automatisch wordt opgesteld voor de gekozen berekening en de naam van de koper vermeldt.\nDe prijs wordt vóór de aankoop in de gekozen valuta getoond en is de eindprijs. De betaling wordt verwerkt door Stripe (kaart, BLIK, Przelewy24 en de andere methoden die bij het afrekenen worden getoond). De Verkoper slaat geen kaartgegevens op.\nDe overeenkomst komt tot stand op het moment dat de betaling is bevestigd."
+    },
+    "s5": {
+      "title": "Levering",
+      "text": "Het rapport is direct na bevestiging van de betaling beschikbaar op de rapportpagina en wordt als bijlage met een persoonlijke link naar het opgegeven e-mailadres verzonden.\nTechnische vereisten: een webbrowser met ingeschakeld JavaScript, een actief e-mailadres en een programma om PDF-bestanden te lezen.\nDe link naar het rapport is persoonlijk – deel deze niet met anderen."
+    },
+    "s6": {
+      "title": "Herroepingsrecht",
+      "text": "Een consument kan een overeenkomst op afstand binnen 14 dagen zonder opgave van redenen herroepen.\nDit recht geldt niet meer zodra de levering van digitale inhoud is begonnen met uitdrukkelijke voorafgaande toestemming van de consument en diens erkenning dat hij daardoor zijn herroepingsrecht verliest (artikel 16, onder m), van Richtlijn 2011/83/EU). De koper geeft deze toestemming en erkenning bij het bestellen en ontvangt daarvan een bevestiging in de e-mail met het rapport.\nDezelfde regels gelden voor een natuurlijke persoon die een overeenkomst sluit die rechtstreeks verband houdt met zijn bedrijfsactiviteit, wanneer de overeenkomst voor hem geen beroepsmatig karakter heeft."
+    },
+    "s7": {
+      "title": "Klachten",
+      "text": "De Verkoper is verantwoordelijk voor de conformiteit van het rapport met de overeenkomst. Als het rapport niet is geleverd, niet kan worden gelezen of niet overeenkomt met de betaalde berekening, schrijf dan naar {{email}} met vermelding van het bestelnummer of het bij de aankoop gebruikte e-mailadres.\nDe Verkoper behandelt een klacht binnen 14 dagen. Is de klacht gegrond, dan levert de Verkoper een gecorrigeerd rapport of, als dat niet mogelijk is, betaalt hij de prijs terug.\nConsumenten kunnen gebruikmaken van buitengerechtelijke geschilbeslechting, bijvoorbeeld via een geschillencommissie voor consumenten of de consumentenautoriteit van hun land."
+    },
+    "s8": {
+      "title": "Aansprakelijkheid",
+      "text": "De Verkoper zorgt ervoor dat tarieven en gegevens actueel en juist zijn, maar is niet aansprakelijk voor beslissingen die uitsluitend op basis van de berekeningen worden genomen, noch voor verschillen als gevolg van besluiten van autoriteiten, wijzigingen in wetgeving en wisselkoersen na de dag van de berekening, prijzen van dienstverleners of onjuiste gegevens die de gebruiker heeft ingevoerd.\nDit beperkt de rechten van consumenten op grond van dwingend recht niet."
+    },
+    "s9": {
+      "title": "Partners",
+      "text": "De dienst kan aanbiedingen van partners tonen (bijv. valutawissel, voertuighistorie, importeurs). Sommige links zijn affiliatelinks – de Verkoper kan een commissie ontvangen, wat geen invloed heeft op de berekeningen.\nContactgegevens worden alleen aan een partner doorgegeven wanneer de gebruiker een aanvraagformulier verstuurt en daarmee instemt. Overeenkomsten met partners worden rechtstreeks met hen gesloten."
+    },
+    "s10": {
+      "title": "Persoonsgegevens",
+      "text": "Hoe persoonsgegevens en cookies worden verwerkt, staat beschreven in het privacybeleid."
+    },
+    "s11": {
+      "title": "Slotbepalingen",
+      "text": "De algemene voorwaarden zijn kosteloos beschikbaar op deze pagina in een vorm die het mogelijk maakt ze te downloaden en af te drukken.\nWijzigingen van de algemene voorwaarden gelden niet voor overeenkomsten die vóór de inwerkingtreding ervan zijn gesloten.\nOp deze voorwaarden is Pools recht van toepassing, zonder dat de consument de bescherming verliest die hem wordt geboden door de dwingende bepalingen van het recht van het land waar hij zijn gewone verblijfplaats heeft."
     }
   }
 }

@@ -156,7 +156,8 @@
     },
     "taxProfile": {
       "missing": "Pre vybranú krajinu nemáme daňové sadzby."
-    }
+    },
+    "rateLimited": "Príliš veľa požiadaviek v krátkom čase – chvíľu počkajte a skúste to znova."
   },
   "fuel": {
     "DIESEL": "Diesel",
@@ -197,8 +198,9 @@
     "redirecting": "Presmerúvame…",
     "secure": "Bezpečná platba cez Stripe. Údaje o karte nikdy neukladáme.",
     "subtitle": "Presné sumy, základy dane a sadzby, doklady – v PDF na vaše meno.",
-    "terms": "Súhlasím s obchodnými podmienkami a žiadam o okamžité dodanie digitálneho obsahu, čím sa vzdávam práva na odstúpenie od zmluvy.",
-    "title": "Kompletný report dovozu"
+    "terms": "Súhlasím s obchodnými podmienkami a výslovne žiadam o dodanie reportu pred uplynutím 14-dňovej lehoty na odstúpenie od zmluvy. Beriem na vedomie, že dodaním reportu strácam právo na odstúpenie od zmluvy.",
+    "title": "Kompletný report dovozu",
+    "termsLink": "Obchodné podmienky"
   },
   "report": {
     "amount": "Suma",
@@ -437,7 +439,8 @@
     "language": "Jazyk",
     "payments": "Platby cez Stripe (karta, BLIK, Przelewy24). Údaje o karte nikdy neukladáme.",
     "rights": "Všetky práva vyhradené.",
-    "disclaimer": "Výpočty majú informatívny charakter a nie sú colným rozhodnutím ani daňovým poradenstvom."
+    "disclaimer": "Výpočty majú informatívny charakter a nie sú colným rozhodnutím ani daňovým poradenstvom.",
+    "terms": "Obchodné podmienky"
   },
   "cookies": {
     "title": "Cookies",
@@ -764,6 +767,10 @@
     "about": {
       "title": "O nás – nezávislá kalkulačka dovozu áut | CarImport.eu",
       "description": "Kto sme, odkiaľ berieme dáta a ako zarábame. CarImport.eu autá nepredáva ani nedováža – poctivo a nezávisle počíta celkové náklady na dovoz."
+    },
+    "terms": {
+      "title": "Obchodné podmienky | CarImport.eu",
+      "description": "Obchodné podmienky kalkulačky nákladov na dovoz áut a PDF reportu: predávajúci, platba, dodanie, odstúpenie od zmluvy a reklamácie."
     }
   },
   "privacy": {
@@ -1372,6 +1379,55 @@
       "offline": "Databáza vozidiel momentálne neodpovedá. Použili sme to, čo je zakódované priamo vo VIN – pre úplnú špecifikáciu to skúste neskôr.",
       "noCo2": "EPA pre túto verziu neuvádza CO₂ – ponechávame náš odhad. Ak máte hodnotu z CoC, zadajte ju.",
       "noPower": "Výkon pre tento VIN v databáze nie je – ponechávame náš odhad."
+    }
+  },
+  "terms": {
+    "eyebrow": "Obchodné podmienky",
+    "title": "Obchodné podmienky používania služby a predaja reportov",
+    "version": "Verzia zo dňa {{version}}",
+    "s1": {
+      "title": "Predávajúci a kontakt",
+      "text": "Službu {{site}} prevádzkuje {{company}}, {{address}}, IČ DPH {{taxId}}, {{registry}} (ďalej len „predávajúci“).\nKontakt vo všetkých záležitostiach vrátane reklamácií: {{email}}. Odpovedáme do 14 dní."
+    },
+    "s2": {
+      "title": "Čo je služba",
+      "text": "Služba je nezávislá kalkulačka nákladov na dovoz automobilov z krajín mimo Európskej únie. Predávajúci nepredáva, nekupuje ani nedováža vozidlá a nepôsobí ako colný deklarant.\nKalkulačka je bezplatná a nevyžaduje registráciu. Platený je iba PDF report opísaný v bode 4."
+    },
+    "s3": {
+      "title": "Povaha výpočtov",
+      "text": "Výpočty majú iba informatívny charakter. Vychádzajú z právnych predpisov, sadzieb a výmenných kurzov (NBP) platných ku dňu kalkulácie, z údajov zadaných používateľom a z obvyklých cien služieb.\nVýpočet nie je rozhodnutím colného ani daňového orgánu, záväznou informáciou o nomenklatúrnom zatriedení tovaru ani právnym či daňovým poradenstvom. Konečné sumy určujú príslušné úrady, dopravcovia a ďalší poskytovatelia služieb."
+    },
+    "s4": {
+      "title": "Platený report – objednávka a cena",
+      "text": "Report je digitálny obsah vo formáte PDF, ktorý sa automaticky vytvára pre zvolenú kalkuláciu a obsahuje meno kupujúceho.\nCena je uvedená pred nákupom vo zvolenej mene a je konečná. Platbu spracúva Stripe (karta, BLIK, Przelewy24 a ďalšie spôsoby zobrazené pri platbe). Predávajúci neuchováva údaje o platobných kartách.\nZmluva je uzavretá okamihom potvrdenia platby."
+    },
+    "s5": {
+      "title": "Dodanie",
+      "text": "Report je dostupný na stránke reportu ihneď po potvrdení platby a je zaslaný na uvedenú e-mailovú adresu ako príloha spolu s osobným odkazom.\nTechnické požiadavky: webový prehliadač so zapnutým JavaScriptom, funkčná e-mailová adresa a program na čítanie súborov PDF.\nOdkaz na report je osobný – nezdieľajte ho s inými osobami."
+    },
+    "s6": {
+      "title": "Odstúpenie od zmluvy",
+      "text": "Spotrebiteľ môže odstúpiť od zmluvy uzavretej na diaľku do 14 dní bez uvedenia dôvodu.\nToto právo sa neuplatňuje, ak sa poskytovanie digitálneho obsahu začalo s výslovným predchádzajúcim súhlasom spotrebiteľa a s jeho potvrdením, že tým stráca právo na odstúpenie od zmluvy (čl. 16 písm. m) smernice 2011/83/EÚ). Kupujúci tento súhlas a potvrdenie udeľuje pri objednávke a ich potvrdenie dostane v e-maile s reportom.\nRovnaké pravidlá sa vzťahujú na fyzickú osobu, ktorá uzatvára zmluvu priamo súvisiacu s jej podnikateľskou činnosťou, ak zmluva pre ňu nemá profesijnú povahu."
+    },
+    "s7": {
+      "title": "Reklamácie",
+      "text": "Predávajúci zodpovedá za súlad reportu so zmluvou. Ak report nebol dodaný, nedá sa prečítať alebo nezodpovedá zaplatenej kalkulácii, napíšte na {{email}} a uveďte číslo objednávky alebo e-mailovú adresu použitú pri nákupe.\nPredávajúci vybaví reklamáciu do 14 dní. Ak je oprávnená, dodá opravený report, a ak to nie je možné, vráti zaplatenú cenu.\nSpotrebiteľ môže využiť alternatívne riešenie sporov, napríklad prostredníctvom subjektu alternatívneho riešenia spotrebiteľských sporov alebo orgánu ochrany spotrebiteľa vo svojej krajine."
+    },
+    "s8": {
+      "title": "Zodpovednosť",
+      "text": "Predávajúci dbá na to, aby sadzby a údaje boli aktuálne a správne, nezodpovedá však za rozhodnutia prijaté výlučne na základe výpočtov ani za rozdiely vyplývajúce z rozhodnutí úradov, zmien právnych predpisov a výmenných kurzov po dni kalkulácie, cien poskytovateľov služieb alebo chybných údajov zadaných používateľom.\nTým nie sú dotknuté práva spotrebiteľa vyplývajúce z kogentných ustanovení právnych predpisov."
+    },
+    "s9": {
+      "title": "Partneri",
+      "text": "Služba môže zobrazovať ponuky partnerov (napr. zmenáreň, história vozidla, dovozcovia). Niektoré odkazy sú affiliate odkazy – predávajúci môže dostať províziu, čo nemá vplyv na výpočty.\nKontaktné údaje sa partnerovi odovzdávajú iba vtedy, keď používateľ odošle dopytový formulár a udelí na to súhlas. Zmluvy s partnermi sa uzatvárajú priamo s nimi."
+    },
+    "s10": {
+      "title": "Osobné údaje",
+      "text": "Spôsob spracúvania osobných údajov a súborov cookie opisujú zásady ochrany osobných údajov."
+    },
+    "s11": {
+      "title": "Záverečné ustanovenia",
+      "text": "Obchodné podmienky sú na tejto stránke bezplatne dostupné vo forme, ktorá umožňuje ich stiahnutie a vytlačenie.\nZmeny obchodných podmienok sa nevzťahujú na zmluvy uzavreté pred nadobudnutím ich účinnosti.\nPoužije sa poľské právo, pričom spotrebiteľ nie je zbavený ochrany, ktorú mu poskytujú kogentné ustanovenia právneho poriadku štátu jeho obvyklého pobytu."
     }
   }
 }
