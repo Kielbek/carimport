@@ -242,6 +242,15 @@
         }
       },
       {
+        "h2": "Copart alebo IAAI – v čom je rozdiel?"
+      },
+      {
+        "p": "Obe aukcie fungujú podobne a ponúkajú hlavne autá od poisťovní. Copart má viac areálov a väčší výber, IAAI zase často podrobnejšie fotky a rozšírené popisy stavu. Poplatky kupujúceho sa líšia v jednotlivých cenových pásmach, preto sa oplatí porovnať celkovú cenu konkrétneho auta, nie len vydraženú sumu. Pri oboch platí, že rozhodujú lehoty: platba aj odvoz sú krátke a každý deň omeškania sa prejaví na faktúre."
+      },
+      {
+        "p": "Ak máte na výber dve podobné autá, uprednostnite to, ktoré stojí bližšie k exportnému prístavu na východnom pobreží, napríklad v New Jersey alebo Georgii. Plavba do Európy je odtiaľ najkratšia a doprava po USA lacnejšia."
+      },
+      {
         "h2": "Koľko prihodiť"
       },
       {
@@ -274,6 +283,140 @@
       {
         "q": "Môžem na Copart dražiť bez brokera?",
         "a": "Pri časti áut áno, ale mnohé loty vyžadujú licenciu predajcu. Broker vám sprístupní všetky autá a vybaví aj papiere k exportu."
+      }
+    ]
+  },
+  {
+    "id": "salvage-title",
+    "slug": "auto-zo-salvage-titulom-z-usa-co-treba-vediet",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-12",
+    "minutes": 3,
+    "title": "Auto so salvage titulom z USA: čo treba vedieť pred kúpou",
+    "metaTitle": "Salvage title auto z USA – riziká, náklady, registrácia | CarImport.eu",
+    "description": "Čo znamenajú tituly clean, salvage, rebuilt a parts only, dá sa havarované auto z USA prihlásiť na Slovensku a koľko si odložiť na opravy a skryté vady.",
+    "lead": "Väčšina áut na Copart a IAAI má salvage titul – práve preto sú také lacné. Na Slovensku samotné označenie titulu registráciu nezablokuje, ale veľa prezrádza o riziku, ktoré kupujete.",
+    "blocks": [
+      {
+        "h2": "Typy titulov v skratke"
+      },
+      {
+        "p": "Titul (title) je americký doklad o vlastníctve auta. Okrem mena vlastníka obsahuje aj takzvanú „značku“ (brand), ktorá hovorí o histórii auta. Pre kupujúceho z Európy je to najrýchlejší signál, s akým autom má do činenia."
+      },
+      {
+        "ul": [
+          "Clean – nie je zaznamenaná totálna škoda",
+          "Salvage – poisťovňa auto vyhlásila za totálnu škodu (nehoda, záplava, nájdené po krádeži, krupobitie)",
+          "Rebuilt / reconstructed – bývalé salvage auto opravené a znovu skontrolované v USA",
+          "Certificate of destruction / parts only / non-repairable – určené na diely; ak chcete auto prihlásiť, vyhnite sa mu"
+        ]
+      },
+      {
+        "h2": "Dá sa salvage auto prihlásiť na Slovensku?"
+      },
+      {
+        "p": "Áno. Krajiny EÚ americké značky titulov nepoužívajú. Rozhoduje, či opravené auto prejde kontrolou originality a STK a či spĺňa európske požiadavky na osvetlenie a bezpečnosť. Registráciu potom vybavíte na dopravnom inšpektoráte do 30 dní. Salvage história však môže znížiť hodnotu auta pri ďalšom predaji a niektoré poisťovne sa na ňu pýtajú pri havarijnom poistení."
+      },
+      {
+        "p": "Pozor na doklady: na registráciu aj na preclenie potrebujete originálny titul alebo vývozný doklad. Auto s certifikátom zničenia sa v USA nedá legálne prepísať a ani v Európe s ním nebudete mať pokoj – časť krajín takéto autá odmieta prihlásiť."
+      },
+      {
+        "h2": "Prečo sú salvage autá také lacné"
+      },
+      {
+        "p": "Keď poisťovňa v USA vyplatí majiteľovi hodnotu auta, auto prechádza do jej vlastníctva a ona ho čo najrýchlejšie predá na aukcii. Totálna škoda v americkom zmysle pritom neznamená, že auto je zrelé na šrot: poisťovňa ju vyhlási vtedy, keď by oprava v americkom servise stála väčšiu časť hodnoty auta. Práca v amerických servisoch je drahá, preto aj relatívne malé poškodenie mladšieho auta môže skončiť ako salvage."
+      },
+      {
+        "p": "Pre kupujúceho zo Slovenska z toho vyplýva príležitosť aj riziko. Ak je oprava jednoduchá a diely sú dostupné, rozdiel oproti cene v Európe môže byť značný. Ak však podceníte rozsah poškodenia, rozpočet sa rýchlo rozpadne – a clo, DPH a doprava sa platia bez ohľadu na to, či auto nakoniec opravíte."
+      },
+      {
+        "h2": "Čo si vypýtať pred dražbou"
+      },
+      {
+        "ul": [
+          "Všetky fotografie vo vysokom rozlíšení, ideálne aj z podvozku a motorového priestoru",
+          "Informáciu, či má auto kľúče a či motor pri príjme naštartoval",
+          "Záznam z VIN reportu o predchádzajúcich nehodách a stave tachometra",
+          "Odhad opravy so zoznamom dielov a ich cenou na Slovensku"
+        ]
+      },
+      {
+        "h2": "Kde je skutočné riziko"
+      },
+      {
+        "p": "Fotografie ukazujú viditeľné poškodenie, nie to, čo je za ním: ohnutý rám, vystrelené airbagy a ich snímače, elektroniku po zaplavení, chýbajúce diely. Najrizikovejšie sú autá po povodni – korózia a poruchy elektroniky sa objavia až po týždňoch. Riziko zvyšujú aj autá bez kľúčov a autá, pri ktorých chýba informácia o stave motora."
+      },
+      {
+        "table": {
+          "head": [
+            "Typ poškodenia",
+            "Riziko",
+            "Na čo si dať pozor"
+          ],
+          "rows": [
+            [
+              "Ľahký náraz vpredu alebo vzadu",
+              "nízke až stredné",
+              "chladiče, senzory, svetlá, nosníky"
+            ],
+            [
+              "Bočný náraz",
+              "stredné",
+              "stĺpiky, prahy, bočné airbagy"
+            ],
+            [
+              "Prevrátenie",
+              "vysoké",
+              "strecha, geometria karosérie"
+            ],
+            [
+              "Záplava (flood)",
+              "veľmi vysoké",
+              "elektronika, korózia, zápach, kabeláž"
+            ],
+            [
+              "Krupobitie",
+              "nízke",
+              "cena opravy plechov a skiel"
+            ]
+          ]
+        }
+      },
+      {
+        "tip": "Na opravy nepojazdných áut počítajte 30 – 40 % z ceny auta a majte ďalšiu rezervu na skryté vady. Kalkulačka tieto sumy navrhne automaticky."
+      },
+      {
+        "h2": "Ako znížiť riziko"
+      },
+      {
+        "ol": [
+          "Overte históriu podľa VIN – predchádzajúce nehody a záznamy o záplavách (Carfax, AutoCheck).",
+          "Uprednostnite autá len s predným alebo zadným poškodením a bez vystrelených airbagov.",
+          "Pred dražbou si dajte vypracovať odhad opravy v servise, ktorý model pozná.",
+          "Overte dostupnosť a ceny dielov na Slovensku a v okolitých krajinách.",
+          "Nechajte si v rozpočte priestor: najlacnejšie auto býva často najdrahší projekt."
+        ]
+      },
+      {
+        "h2": "Oplatí sa to?"
+      },
+      {
+        "p": "Salvage auto sa oplatí najmä vtedy, keď ho viete opraviť sami alebo máte spoľahlivý servis a keď je poškodenie jasne viditeľné a ohraničené. Celková cena dovozu (clo 10 % a DPH 23 % sa počítajú z ceny auta aj dopravy) musí byť spolu s opravou citeľne nižšia než cena porovnateľného auta na slovenskom trhu – inak sa riziko neoplatí. Kalkulačka vám ukáže celkové náklady vrátane dopravy z najvýhodnejšieho zo 43 prístavov EÚ až na vašu adresu."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Ovplyvňuje salvage titul výšku cla?",
+        "a": "Nie. Clo aj DPH sa počítajú z ceny zaplatenej za auto a z nákladov na dopravu bez ohľadu na typ titulu."
+      },
+      {
+        "q": "Je rebuilt titul lepší?",
+        "a": "Ukazuje, že auto bolo v USA opravené a skontrolované, kvalita opravy sa však veľmi líši. Prezrite ho ako akékoľvek havarované auto."
+      },
+      {
+        "q": "Prejde auto po záplave kontrolou originality?",
+        "a": "Kontrola originality overuje identitu auta, nie stav elektroniky. Auto po záplave môže formálne prejsť, ale skryté poruchy sa prejavia neskôr – preto je to najrizikovejšia kategória."
       }
     ]
   }

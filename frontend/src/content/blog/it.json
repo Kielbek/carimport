@@ -278,5 +278,271 @@
         "a": "Sì, ma senza licenza da commerciante molti lotti non sono accessibili. Per questo la maggior parte dei privati italiani passa da un broker."
       }
     ]
+  },
+  {
+    "id": "salvage-title",
+    "slug": "auto-salvage-dagli-usa-cosa-sapere",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-12",
+    "minutes": 3,
+    "title": "Auto con titolo salvage dagli USA: cosa devi sapere",
+    "metaTitle": "Auto salvage dagli USA: rischi, costi e immatricolazione | CarImport.eu",
+    "description": "Titoli clean, salvage, rebuilt e parts only: se un’auto salvage dagli USA si può immatricolare in Italia e quanto mettere da parte per le riparazioni.",
+    "lead": "La maggior parte delle auto su Copart e IAAI ha un titolo salvage: è per questo che costano così poco. In Italia e nell’UE il titolo in sé non impedisce l’immatricolazione, ma dice molto sul rischio che stai comprando.",
+    "blocks": [
+      {
+        "h2": "I tipi di titolo in breve"
+      },
+      {
+        "p": "Negli Stati Uniti il title è il documento di proprietà dell’auto, e il suo “marchio” racconta la storia del veicolo. Quando un’assicurazione dichiara un’auto perdita totale, il titolo diventa salvage. Ogni Stato ha regole un po’ diverse, ma le categorie principali sono queste:"
+      },
+      {
+        "ul": [
+          "Clean: nessuna perdita totale registrata",
+          "Salvage: dichiarata perdita totale da un’assicurazione (incidente, alluvione, furto ritrovato, grandine)",
+          "Rebuilt / reconstructed: un’ex salvage riparata e ricontrollata negli USA",
+          "Certificate of destruction / parts only / non-repairable: destinata ai ricambi; da evitare se vuoi immatricolare l’auto"
+        ]
+      },
+      {
+        "h2": "Un’auto salvage si può immatricolare in Italia?"
+      },
+      {
+        "p": "Sì. I Paesi dell’UE non usano i marchi dei titoli americani: conta che l’auto riparata superi la revisione o l’omologazione presso la Motorizzazione Civile e rispetti i requisiti europei su luci e sicurezza. La storia salvage può però ridurre il valore di rivendita, e alcune compagnie assicurative chiedono informazioni sul passato del veicolo."
+      },
+      {
+        "p": "Diverso è il caso dei titoli parts only o non-repairable: in molti Stati americani quei veicoli non possono più tornare su strada e l’esportazione come auto completa può diventare un problema. Se il tuo obiettivo è circolare in Italia, lasciali ai ricambisti."
+      },
+      {
+        "h2": "Dove sta il vero rischio"
+      },
+      {
+        "p": "Le foto mostrano il danno visibile, non quello che c’è dietro: telai piegati, airbag esplosi con i relativi sensori, elettronica dopo un allagamento, pezzi mancanti. Le auto alluvionate sono le più rischiose: corrosione e guasti elettrici compaiono settimane dopo. Anche i danni da grandine sembrano innocui, ma su tetto e cofano in alluminio la riparazione può costare più del previsto."
+      },
+      {
+        "table": {
+          "head": [
+            "Tipo di danno",
+            "Rischio",
+            "Cosa controllare"
+          ],
+          "rows": [
+            [
+              "Anteriore leggero, airbag intatti",
+              "Medio-basso",
+              "Radiatori, fari, traverse, sensori ADAS"
+            ],
+            [
+              "Posteriore",
+              "Medio-basso",
+              "Pianale, bagagliaio, longheroni"
+            ],
+            [
+              "Laterale",
+              "Medio-alto",
+              "Montanti, porte, airbag a tendina"
+            ],
+            [
+              "Alluvione (flood)",
+              "Alto",
+              "Linee d’acqua, corrosione, centraline"
+            ],
+            [
+              "Ribaltamento (rollover)",
+              "Molto alto",
+              "Tetto, montanti, geometria della scocca"
+            ]
+          ]
+        }
+      },
+      {
+        "tip": "Prevedi riparazioni pari al 30–40% del prezzo per le auto non marcianti e tieni una riserva in più per i danni nascosti. Il calcolatore propone automaticamente questi importi."
+      },
+      {
+        "h2": "Come ridurre il rischio"
+      },
+      {
+        "ol": [
+          "Controlla la storia del VIN su Carfax o AutoCheck: incidenti precedenti e segnalazioni di alluvione.",
+          "Preferisci auto con danni solo anteriori o posteriori, senza airbag esplosi.",
+          "Chiedi un preventivo di riparazione a una carrozzeria che conosce il modello, prima dell’asta.",
+          "Verifica disponibilità e prezzi dei ricambi in Italia: alcuni modelli americani hanno pezzi solo su ordinazione dagli USA.",
+          "Lascia spazio nel budget: l’auto più economica è spesso il progetto più costoso."
+        ]
+      },
+      {
+        "h2": "Un esempio di budget"
+      },
+      {
+        "p": "Immagina una berlina con danno anteriore comprata a 7.000 dollari. Con commissioni, trasporto, nave, dazio e IVA al 22% arriva sotto casa a circa 13.000–14.000 dollari. Se il preventivo della carrozzeria è di 3.000 euro e tieni una riserva di altri 1.000 euro per i danni nascosti, il totale va confrontato con il prezzo della stessa auto sul mercato italiano dell’usato. Solo se resta un margine chiaro, l’operazione ha senso. Senza margine, meglio cercare un’auto clean o un altro lotto."
+      },
+      {
+        "h2": "Il conto finale cambia con il titolo?"
+      },
+      {
+        "p": "Dazio e IVA non cambiano: si pagano sul prezzo effettivo e sulle spese di trasporto, qualunque sia il titolo. Cambiano invece il prezzo d’acquisto, molto più basso per una salvage, e il costo delle riparazioni, che devi aggiungere tu. Per confrontare un’auto clean con una salvage, mettile entrambe nel calcolatore e aggiungi il preventivo di riparazione: spesso la differenza reale è molto più piccola di quella che vedi all’asta."
+      },
+      {
+        "p": "Ricorda infine che in Italia un’auto riparata deve superare i controlli tecnici previsti prima dell’immatricolazione: se la riparazione è fatta male, li rifai, e paghi di nuovo. Scegli quindi un’officina che conosce le auto importate e che può documentare il lavoro svolto con foto e fatture."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Il titolo salvage influisce sul dazio?",
+        "a": "No. Dazio e IVA si basano sul prezzo pagato e sulle spese di trasporto, qualunque sia il titolo."
+      },
+      {
+        "q": "Un titolo rebuilt è meglio?",
+        "a": "Dimostra che l’auto è stata riparata e ispezionata negli USA, ma la qualità della riparazione varia. Ispezionala come qualsiasi auto incidentata."
+      },
+      {
+        "q": "Devo dichiarare in Italia che l’auto era salvage?",
+        "a": "Il titolo americano fa parte dei documenti dell’importazione, quindi la storia resta tracciabile. Conviene essere trasparenti anche in caso di rivendita."
+      }
+    ]
+  },
+  {
+    "id": "customs-vat",
+    "slug": "dazio-e-iva-importazione-auto-come-si-calcolano",
+    "category": "customs",
+    "origin": null,
+    "date": "2026-10-08",
+    "minutes": 3,
+    "title": "Dazio e IVA sull’importazione di un’auto: come si calcolano",
+    "metaTitle": "Dazio e IVA importazione auto: come si calcolano | CarImport.eu",
+    "description": "Dazio e IVA sull’importazione di un’auto extra UE: valore in dogana CIF, aliquote del dazio, IVA al 22% in Italia e regime 4200, con un esempio di calcolo.",
+    "lead": "La dogana è il punto in cui chi importa per la prima volta sbaglia più spesso i conti. Due regole spiegano quasi tutto: il dazio si paga sul valore CIF, e l’IVA si aggiunge sopra, nel Paese in cui l’auto viene sdoganata.",
+    "blocks": [
+      {
+        "h2": "Il valore in dogana: cosa comprende"
+      },
+      {
+        "p": "Il valore in dogana di un’auto comprata fuori dall’UE è il valore di transazione più i costi per portarla fino alla frontiera dell’Unione: commissioni d’asta, trasporto al porto d’imbarco, nolo marittimo e assicurazione. Le spese successive alla frontiera, come lo scarico nel porto e il trasporto all’interno dell’UE, non ne fanno parte. In pratica è il valore CIF (cost, insurance, freight)."
+      },
+      {
+        "p": "Il valore si dichiara in euro: la dogana converte gli importi in dollari, yen o dirham con il tasso di cambio doganale del periodo. Per questo lo stesso prezzo d’asta può dare un dazio leggermente diverso da un mese all’altro."
+      },
+      {
+        "h2": "Le aliquote del dazio"
+      },
+      {
+        "p": "Il dazio è uguale in tutta l’Unione europea, perché la tariffa doganale è comune. Cambia solo in base al tipo di veicolo:"
+      },
+      {
+        "table": {
+          "head": [
+            "Veicolo",
+            "Codice NC",
+            "Dazio"
+          ],
+          "rows": [
+            [
+              "Autovettura, SUV",
+              "8703",
+              "10%"
+            ],
+            [
+              "Pick-up, autocarro leggero",
+              "8704",
+              "22%"
+            ],
+            [
+              "Moto",
+              "8711",
+              "6–8%"
+            ],
+            [
+              "Veicolo da collezione (oltre 30 anni, originale)",
+              "9705",
+              "0%"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "L’IVA all’importazione in Italia"
+      },
+      {
+        "p": "L’IVA si calcola sul valore in dogana più il dazio e le spese di trasporto fino alla prima destinazione nell’UE. Si paga nello Stato membro in cui l’auto viene immessa in libera pratica, all’aliquota ordinaria di quel Paese. Se sdogani a Livorno, La Spezia, Genova o Trieste paghi l’IVA italiana al 22%. Se sdogani a Bremerhaven paghi il 19% tedesco, a Rotterdam o Anversa il 21%, a Koper il 22% sloveno."
+      },
+      {
+        "p": "In Italia la dichiarazione doganale passa per l’Agenzia delle Dogane e dei Monopoli, di solito tramite uno spedizioniere doganale che presenta la pratica per tuo conto. Dopo lo sdoganamento ricevi il documento che prova il pagamento di dazio e IVA: ti servirà per l’immatricolazione presso la Motorizzazione Civile e il PRA, dove si paga anche l’IPT (imposta provinciale di trascrizione)."
+      },
+      {
+        "h2": "Esempio di calcolo con IVA al 22%"
+      },
+      {
+        "table": {
+          "head": [
+            "",
+            "EUR"
+          ],
+          "rows": [
+            [
+              "Valore in dogana (CIF)",
+              "12.000"
+            ],
+            [
+              "Dazio 10%",
+              "1.200"
+            ],
+            [
+              "Scarico e consegna a destinazione",
+              "700"
+            ],
+            [
+              "Base imponibile IVA",
+              "13.900"
+            ],
+            [
+              "IVA all’importazione 22%",
+              "3.058"
+            ],
+            [
+              "Dazio + IVA",
+              "4.258"
+            ]
+          ]
+        }
+      },
+      {
+        "p": "Lo stesso esempio con l’IVA tedesca al 19% darebbe 2.641 euro di IVA, cioè 417 euro in meno. Il risparmio però va confrontato con il costo del trasporto su strada dalla Germania fino a casa tua: per questo serve un confronto porta a porta."
+      },
+      {
+        "h2": "Il regime doganale 4200"
+      },
+      {
+        "p": "Un’azienda con partita IVA che importa un’auto destinata direttamente a un altro Paese UE può sdoganarla con il regime 4200: nel Paese di arrivo non paga l’IVA all’importazione, e l’acquirente assolve l’IVA nel proprio Paese con l’inversione contabile (reverse charge). I privati non possono usarlo: per loro l’IVA all’importazione è un costo definitivo."
+      },
+      {
+        "h2": "Gli errori più comuni"
+      },
+      {
+        "ul": [
+          "Calcolare l’IVA solo sul prezzo d’asta, dimenticando nolo, assicurazione, dazio e trasporto",
+          "Dichiarare un prezzo inferiore a quello pagato: la dogana può rettificare il valore e applicare sanzioni",
+          "Classificare un pick-up come autovettura: il dazio corretto è il 22%, non il 10%",
+          "Dimenticare che l’IPT si paga dopo, in fase di immatricolazione"
+        ]
+      },
+      {
+        "tip": "Conserva la fattura d’acquisto, le ricevute delle commissioni d’asta, la fattura del nolo e la polizza di carico (bill of lading): la dogana può contestare il valore dichiarato e questi documenti lo dimostrano."
+      }
+    ],
+    "faq": [
+      {
+        "q": "La dogana può alzare il valore della mia auto?",
+        "a": "Sì, se il prezzo dichiarato sembra irrealisticamente basso. Di solito basta la prova del risultato d’asta e dei pagamenti per chiudere la questione."
+      },
+      {
+        "q": "Il dazio è più basso per le auto elettriche?",
+        "a": "No, anche le autovetture elettriche pagano il 10%. Alcuni Paesi applicano però imposte di immatricolazione più basse per le elettriche."
+      },
+      {
+        "q": "Un privato può sdoganare da solo senza spedizioniere?",
+        "a": "In teoria sì, ma la dichiarazione doganale è tecnica e nei porti quasi tutti si affidano a uno spedizioniere, che costa circa 250–280 euro."
+      }
+    ]
   }
 ]

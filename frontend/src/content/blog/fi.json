@@ -163,5 +163,149 @@
         "a": "Kyllä. Tullausmaa ratkaisee arvonlisäveron, mutta autovero maksetaan Suomessa, kun auto rekisteröidään ja otetaan käyttöön täällä."
       }
     ]
+  },
+  {
+    "id": "copart-iaai",
+    "slug": "auton-osto-copart-ja-iaai-huutokaupasta-suomesta",
+    "category": "buying",
+    "origin": "USA",
+    "date": "2026-10-16",
+    "minutes": 3,
+    "title": "Miten ostaa auto Copartista tai IAAI:sta Suomesta käsin?",
+    "metaTitle": "Auton osto Copartista tai IAAI:sta Suomesta – opas | CarImport.eu",
+    "description": "Näin ostat auton Copart- tai IAAI-huutokaupasta Suomesta: välittäjä, takuumaksu, tarjoaminen, maksuajat ja säilytysmaksut askel askeleelta.",
+    "lead": "Copart ja IAAI myyvät satoja tuhansia autoja joka kuukausi, ja moni niistä päätyy eurooppalaiselle ostajalle. Tässä oppaassa kerromme, miten tarjoaminen Suomesta käsin toimii ja mitä maksuja ja määräaikoja et saa unohtaa.",
+    "blocks": [
+      {
+        "h2": "Tarvitsetko välittäjän?"
+      },
+      {
+        "p": "Monet kohteet voi ostaa vain jälleenmyyjäluvalla, ja jotkin osavaltiot rajoittavat, kuka saa ostaa salvage-autoja. Siksi useimmat eurooppalaiset ostajat tarjoavat rekisteröidyn välittäjän kautta (broker, agentti tai maahantuoja), joka tekee tarjoukset puolestasi oman lupansa alla. Välittäjä perii kiinteän palkkion autolta."
+      },
+      {
+        "p": "Valitse välittäjä huolella. Kysy, mitä palkkioon sisältyy: pelkkä tarjoaminen vai myös maksu huutokaupalle, nouto, kuljetus satamaan, vientiasiakirjat ja rahti. Pyydä esimerkkilasku edellisestä kaupasta ja tarkista, onko välittäjällä kokemusta autoista, jotka menevät Itämerelle ja Suomeen."
+      },
+      {
+        "p": "Hyvä välittäjä myös kertoo rehellisesti, jos auto ei kannata: liian kaukana satamasta, epäselvä title tai vaurio, jonka korjaus maksaa enemmän kuin auton arvo Suomessa. Jos välittäjä painostaa tarjoamaan nopeasti tai ei halua näyttää maksuerittelyä etukäteen, etsi toinen. Välittäjän ei pitäisi saada provisiota siitä, että tarjoat enemmän."
+      },
+      {
+        "h2": "Askel askeleelta"
+      },
+      {
+        "ol": [
+          "Valitse välittäjä ja allekirjoita sopimus; saat pääsyn tarjoamiseen heidän tilinsä kautta.",
+          "Maksa takuumaksu – yleensä noin 10 % enimmäistarjouksestasi.",
+          "Etsi auto, lue kuntoraportti ja tarkista VIN-historia.",
+          "Aseta enimmäistarjous kaikkine maksuineen – ei pelkkää vasarahintaa.",
+          "Tarjoa ennakkokierroksella tai livenä; korkein tarjous voittaa, jos se ylittää myyjän minimihinnan.",
+          "Maksa määräajassa (yleensä 2–3 arkipäivää) pankkisiirrolla.",
+          "Järjestä nouto nopeasti – ilmainen säilytysaika on lyhyt, sen jälkeen peritään päivämaksu.",
+          "Auto kuljetetaan satamaan, ja omistusasiakirja (title) menee viejälle tullausta varten."
+        ]
+      },
+      {
+        "h2": "Näin luet ilmoitusta"
+      },
+      {
+        "ul": [
+          "Titlen tyyppi: clean, salvage, rebuilt tai certificate of destruction / parts only",
+          "Ensisijainen ja toissijainen vaurio, turvatyynyt, matkamittarin tila",
+          "Run and Drive-, Engine Starts- ja Enhanced Vehicles -merkinnät – todennettu vain vastaanotossa, ei takuuta",
+          "Avaimet mukana, pihan sijainti ja etäisyys satamaan",
+          "Myyjän tyyppi: vakuutusyhtiö, jälleenmyyjä, vuokraamo"
+        ]
+      },
+      {
+        "tip": "Run and Drive tarkoittaa, että auto käynnistyi ja liikkui eteenpäin vastaanotossa. Se ei tarkoita, että auto olisi liikennekelpoinen – varaudu tekniseen tarkastukseen saapumisen jälkeen."
+      },
+      {
+        "h2": "Maksut, jotka yllättävät uuden ostajan"
+      },
+      {
+        "p": "Ostajamaksun lisäksi huutokaupat lisäävät internet-tarjous-, portti-, ympäristö- ja asiakirjamaksuja. Myöhästynyt maksu ja myöhästynyt nouto maksavat lisää, ja jos jätät maksamatta, peritään uudelleenlistausmaksu. Välittäjä lisää palkkionsa ja joskus maksun asiakirjoista ja viennistä."
+      },
+      {
+        "table": {
+          "head": [
+            "Maksu",
+            "Tyypillinen suuruus"
+          ],
+          "rows": [
+            [
+              "Ostajamaksu (10 000 dollarin auto)",
+              "600–1 000 USD"
+            ],
+            [
+              "Internet-tarjous- ja porttimaksu",
+              "100–200 USD"
+            ],
+            [
+              "Välittäjän palkkio",
+              "200–500 USD"
+            ],
+            [
+              "Säilytys ilmaisajan jälkeen",
+              "päivämaksu"
+            ],
+            [
+              "Maksamatta jättäminen",
+              "takuumaksu menetetään + uudelleenlistausmaksu"
+            ]
+          ]
+        }
+      },
+      {
+        "h2": "Kuvat ja kuntoraportti tarkemmin"
+      },
+      {
+        "p": "Huutokaupan kuvat on otettu nopeasti pihalla, ja ne näyttävät vain sen, mikä näkyy päältä. Katso jokainen kuva suurennettuna: paneelien raot, vanteiden ja renkaiden kunto, turvatyynyjen paikat, moottoritila ja sisätilojen vesirajat. Jos kuvissa näkyy mutaa istuimilla tai korroosiota ruuveissa, epäile tulvavauriota. Vertaa myös VIN-numeroa ilmoituksessa ja kuvissa, ja hae auton historia Carfaxista tai AutoCheckista ennen tarjoamista."
+      },
+      {
+        "p": "Monet välittäjät tarjoavat lisämaksusta tarkastuksen paikan päällä. Se maksaa yleensä vähemmän kuin yksi yllättävä vaurio, joten kalliimmissa autoissa se kannattaa melkein aina."
+      },
+      {
+        "h2": "Maksaminen ja valuutta"
+      },
+      {
+        "p": "Huutokauppa ja välittäjä laskuttavat dollareina, ja maksu tehdään yleensä kansainvälisenä pankkisiirtona. Suomalaisen pankin valuuttamarginaali ja siirtokulut kannattaa tarkistaa etukäteen, sillä myöhästynyt maksu johtaa myöhästymismaksuun. Säilytä kaikki kuitit ja laskut: Tulli voi pyytää todisteita ilmoitetusta arvosta, ja Vero tarvitsee tietoja autoveroa varten."
+      },
+      {
+        "h2": "Yleisimmät virheet"
+      },
+      {
+        "ul": [
+          "Tarjoat Suomen markkinahinnan tasolle laskematta maksuja, veroja ja autoveroa",
+          "Unohdat säilytysmaksut, kun nouto viivästyy",
+          "Aliarvioit pieneltä näyttävän etuvaurion korjauksen",
+          "Valitset pihan kaukana satamasta ja maksat kalliin maakuljetuksen"
+        ]
+      },
+      {
+        "h2": "Paljonko kannattaa tarjota?"
+      },
+      {
+        "p": "Laske takaperin: lähde siitä, mitä auto maksaa kotiovellasi Suomessa – tulli, 25,5 %:n arvonlisävero, kuljetus, rekisteröintikatsastus ja autovero mukaan lukien – ja mikä sen arvo on Suomen markkinoilla korjausten jälkeen. Erotus on enimmäistarjouksesi, ja laskuri muuntaa sen tarjoukseksi dollareina. Laskuri vertaa samalla kaikkia 43 EU-satamaa ovelta ovelle, joten annat vain osoitteesi."
+      },
+      {
+        "h2": "Aikataulu Suomeen"
+      },
+      {
+        "p": "Huutokaupan voitosta siihen, että auto on Suomessa, kuluu tavallisesti 5–9 viikkoa. Maksu ja nouto vievät 1–2 viikkoa, kuljetus satamaan ja lastaus 1–3 viikkoa ja merimatka Itämerelle 3–6 viikkoa, koska kontti kulkee usein Pohjanmeren sataman kautta Helsinkiin tai Hankoon. Varaa lisäksi aikaa tullaukselle, rekisteröintikatsastukselle ja autoveron käsittelylle. Jos tarvitset auton tiettyyn päivään mennessä, esimerkiksi kesäksi, aloita etsiminen vähintään kolme kuukautta etukäteen."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Voinko perua kaupan voiton jälkeen?",
+        "a": "Yleensä et ilman seuraamuksia. Jos jätät maksamatta, takuumaksu menetetään ja voidaan periä uudelleenlistausmaksu."
+      },
+      {
+        "q": "Kauanko kestää voitosta siihen, että auto on Suomessa?",
+        "a": "Tyypillisesti 5–9 viikkoa: maksu ja nouto 1–2 viikkoa, kuljetus satamaan ja lastaus 1–3 viikkoa ja merimatka 3–6 viikkoa."
+      },
+      {
+        "q": "Voiko Copartista ostaa ilman välittäjää?",
+        "a": "Joitakin kohteita voi ostaa omalla tilillä, mutta monet vaativat jälleenmyyjäluvan. Siksi useimmat eurooppalaiset käyttävät välittäjää."
+      }
+    ]
   }
 ]
