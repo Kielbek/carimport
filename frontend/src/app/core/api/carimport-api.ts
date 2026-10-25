@@ -6,7 +6,7 @@ import {
   CalculationRequest,
   DisplayCurrency,
   FullReport,
-  OrderStatus,
+  OrderProgress,
   Place,
   PortOption,
   PublicQuoteView,
@@ -70,8 +70,13 @@ export class CarImportApi {
     );
   }
 
-  orderStatus(orderId: string, token: string): Observable<{ status: OrderStatus; downloadable: boolean }> {
-    return this.http.get<{ status: OrderStatus; downloadable: boolean }>(`${this.base}/reports/orders/${orderId}`, {
+  orderStatus(orderId: string, token: string): Observable<OrderProgress> {
+    return this.http.get<OrderProgress>(`${this.base}/reports/orders/${orderId}`, { headers: bearer(token) });
+  }
+
+  /** Asks the server to check the payment with Stripe right away (the webhook may come later or not at all). */
+  confirmOrder(orderId: string, token: string, sessionId: string): Observable<OrderProgress> {
+    return this.http.post<OrderProgress>(`${this.base}/reports/orders/${orderId}/confirm`, { sessionId }, {
       headers: bearer(token),
     });
   }

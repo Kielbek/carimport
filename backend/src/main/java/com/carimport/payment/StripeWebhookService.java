@@ -9,10 +9,8 @@ import com.stripe.model.checkout.Session;
 import com.stripe.net.Webhook;
 import java.time.Clock;
 import java.util.Optional;
-import java.util.UUID;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -33,16 +31,15 @@ public class StripeWebhookService {
     private final AppProperties props;
     private final ReportOrderRepository orders;
     private final ProcessedWebhookEventRepository processed;
-    private final ApplicationEventPublisher events;
+    private final OrderPayments payments;
     private final Clock clock;
 
     public StripeWebhookService(AppProperties props, ReportOrderRepository orders,
-                                ProcessedWebhookEventRepository processed, ApplicationEventPublisher events,
-                                Clock clock) {
+                                ProcessedWebhookEventRepository processed, OrderPayments payments, Clock clock) {
         this.props = props;
         this.orders = orders;
         this.processed = processed;
-        this.events = events;
+        this.payments = payments;
         this.clock = clock;
     }
 
@@ -62,10 +59,10 @@ public class StripeWebhookService {
             case "checkout.session.completed" -> session(event).ifPresent(s -> {
                 // card and BLIK are paid at this point; P24 may still be "unpaid" and settle asynchronously
                 if ("paid".equals(s.getPaymentStatus())) {
-                    markPaid(s);
+                    payments.markPaid(s);
                 }
             });
-            case "checkout.session.async_payment_succeeded" -> session(event).ifPresent(this::markPaid);
+            case "checkout.session.async_payment_succeeded" -> session(event).ifPresent(payments::markPaid);
             case "checkout.session.async_payment_failed", "checkout.session.expired" -> session(event)
                     .flatMap(s -> orders.findByStripeSessionId(s.getId()))
                     .ifPresent(ReportOrder::markExpired);
@@ -73,22 +70,6 @@ public class StripeWebhookService {
                     .flatMap(c -> orders.findByStripePaymentIntentId(c.getPaymentIntent()))
                     .ifPresent(ReportOrder::markRefunded);
             default -> log.debug("Unhandled Stripe event type {}", event.getType());
-        }
-    }
-
-    private void markPaid(Session session) {
-        UUID orderId = UUID.fromString(session.getClientReferenceId());
-        ReportOrder order = orders.findById(orderId)
-                .orElseThrow(() -> new IllegalStateException("Unknown order " + orderId));
-        boolean amountOk = session.getAmountTotal() != null && session.getAmountTotal() == order.getAmountMinor();
-        boolean currencyOk = order.getCurrency().name().equalsIgnoreCase(session.getCurrency());
-        if (!amountOk || !currencyOk) {
-            log.error("Order {} paid {} {} but expected {} {} - not unlocking", orderId, session.getAmountTotal(),
-                    session.getCurrency(), order.getAmountMinor(), order.getCurrency());
-            return;
-        }
-        if (order.markPaid(session.getPaymentIntent(), clock.instant())) {
-            events.publishEvent(new ReportOrderPaidEvent(order.getId()));
         }
     }
 

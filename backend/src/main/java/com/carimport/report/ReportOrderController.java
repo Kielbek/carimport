@@ -4,6 +4,7 @@ import com.carimport.calculation.CalculationResult;
 import com.carimport.calculation.QuoteRange;
 import com.carimport.domain.CurrencyCode;
 import com.carimport.payment.CheckoutService;
+import com.carimport.payment.PaymentConfirmationService;
 import com.carimport.payment.ReportOrder;
 import com.carimport.payment.ReportOrderRepository;
 import com.carimport.quote.QuoteRepository;
@@ -43,7 +44,16 @@ public class ReportOrderController {
     public record CheckoutResponse(UUID orderId, String accessToken, String checkoutUrl) {
     }
 
-    public record OrderStatus(UUID orderId, ReportOrder.Status status, boolean downloadable) {
+    /**
+     * @param emailTo   where the report goes, masked (j***@gmail.com)
+     * @param emailSent the e-mail with the PDF and the link has left; false while pending or when e-mail is off
+     * @param mailEnabled e-mail delivery is configured - otherwise the page does not promise one
+     */
+    public record OrderStatus(UUID orderId, ReportOrder.Status status, boolean downloadable, String emailTo,
+                              boolean emailSent, boolean mailEnabled) {
+    }
+
+    public record ConfirmRequest(@NotBlank @Size(max = 255) String sessionId) {
     }
 
     /**
@@ -61,10 +71,15 @@ public class ReportOrderController {
     private final ReportStorage storage;
     private final DocumentChecklistService checklist;
     private final AfterImportPlanService planner;
+    private final PaymentConfirmationService confirmation;
+    private final ReportMailer mailer;
 
     public ReportOrderController(CheckoutService checkout, ReportOrderRepository orders, QuoteRepository quotes,
                                  ReportStorage storage, DocumentChecklistService checklist,
-                                 AfterImportPlanService planner) {
+                                 AfterImportPlanService planner, PaymentConfirmationService confirmation,
+                                 ReportMailer mailer) {
+        this.confirmation = confirmation;
+        this.mailer = mailer;
         this.checkout = checkout;
         this.orders = orders;
         this.quotes = quotes;
@@ -80,11 +95,33 @@ public class ReportOrderController {
         return new CheckoutResponse(result.orderId(), result.accessToken(), result.checkoutUrl());
     }
 
-    /** Polled by the success page until READY (the redirect from Stripe can beat the webhook). */
+    /** Polled by the success page until READY and the e-mail is out. */
     @GetMapping("/orders/{id}")
     public OrderStatus status(@PathVariable UUID id, @RequestHeader(HttpHeaders.AUTHORIZATION) String auth) {
-        ReportOrder order = authorize(id, auth);
-        return new OrderStatus(order.getId(), order.getStatus(), order.getStatus() == ReportOrder.Status.READY);
+        return statusOf(authorize(id, auth));
+    }
+
+    /**
+     * Called once by the success page with the session id from Stripe's redirect: checks the payment with Stripe
+     * directly, so the report does not depend on the webhook arriving.
+     */
+    @PostMapping("/orders/{id}/confirm")
+    public OrderStatus confirm(@PathVariable UUID id, @RequestHeader(HttpHeaders.AUTHORIZATION) String auth,
+                               @Valid @RequestBody ConfirmRequest req) {
+        authorize(id, auth);
+        confirmation.confirm(id, req.sessionId());
+        return statusOf(orders.findById(id).orElseThrow());
+    }
+
+    private OrderStatus statusOf(ReportOrder order) {
+        return new OrderStatus(order.getId(), order.getStatus(), order.getStatus() == ReportOrder.Status.READY,
+                mask(order.getEmail()), order.getEmailSentAt() != null, mailer.enabled());
+    }
+
+    /** j***@gmail.com - enough to recognise the address, useless to anyone holding a screenshot. */
+    static String mask(String email) {
+        int at = email.indexOf('@');
+        return at <= 0 ? "***" : email.charAt(0) + "***" + email.substring(at);
     }
 
     /** Unlocked, exact breakdown rendered in the app (same data as the PDF). */

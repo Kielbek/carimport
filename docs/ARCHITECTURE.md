@@ -461,6 +461,11 @@ pozostaje PENDING, poprawny webhook → READY i PDF 30 KB, duplikat zdarzenia �
   3/2, reszta API 120/300; odpowiedź 429 z `Retry-After` i `messageKey: error.rateLimited`. Webhook Stripe jest
   wyłączony (chroni go podpis). Limity są w pamięci jednego węzła – przy kilku węzłach następny krok to limiter na bramie
   (Cloudflare) albo w Redisie.
+* **Potwierdzenie płatności** (`PaymentConfirmationService`, `POST /reports/orders/{id}/confirm`): po powrocie ze
+  Stripe strona raportu wysyła `session_id`, serwer pobiera sesję z API Stripe i – jeśli należy do zamówienia i jest
+  opłacona na właściwą kwotę – odblokowuje je (`OrderPayments`, ta sama logika co webhook; drugi z nich to no-op).
+  Raport nie czeka więc na webhook. Strona pokazuje kolejno: płatność → PDF → e-mail (gdy włączony), a potem raport
+  z przyciskiem pobierania; status zamówienia zwraca zamaskowany adres i czy mail już wyszedł.
 * **E-mail z raportem** (`ReportMailer`, `ReportMailTriggers`): po zapisaniu PDF (`ReportReadyEvent`, po commicie)
   wysyłamy PDF w załączniku i osobisty link z drugim tokenem (`email_token_hash`, niezależny od przeglądarki, która
   płaciła). Dowolny dostawca SMTP przez `spring.mail.*` (`SMTP_HOST`, …); pusty host = e-mail wyłączony. Nieudane wysyłki

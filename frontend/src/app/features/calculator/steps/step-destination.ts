@@ -206,9 +206,17 @@ const TOP = 5;
                       <span class="block text-xs text-muted">{{ 'portCost.portFeesWhat' | translate }}</span></td>
                     <td class="py-2 text-right font-semibold tabular-nums">{{ p.taxes.portFees | localNumber: lang.locale() }}</td>
                   </tr>
+                  <tr class="border-b border-line">
+                    <td class="py-2 pr-3 font-semibold">{{ 'portCost.total' | translate }}</td>
+                    <td class="py-2 text-right font-semibold tabular-nums">{{ p.taxes.total | localNumber: lang.locale() }}</td>
+                  </tr>
+                  <tr class="border-b border-line">
+                    <td class="py-2 pr-3">{{ 'result.carPrice' | translate }}</td>
+                    <td class="py-2 text-right font-semibold tabular-nums">{{ p.taxes.carPrice | localNumber: lang.locale() }}</td>
+                  </tr>
                   <tr>
-                    <td class="pt-3 font-extrabold">{{ 'portCost.total' | translate }}</td>
-                    <td class="pt-3 text-right text-lg font-extrabold tabular-nums">{{ p.taxes.total | localNumber: lang.locale() }} {{ currency() }}</td>
+                    <td class="pt-3 font-extrabold">{{ 'result.totalWithCar' | translate }}</td>
+                    <td class="pt-3 text-right text-lg font-extrabold tabular-nums">{{ p.taxes.totalWithCar | localNumber: lang.locale() }} {{ currency() }}</td>
                   </tr>
                 </tbody>
               </table>
