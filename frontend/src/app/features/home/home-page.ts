@@ -2,6 +2,7 @@ import { Component, computed, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { CountryNamePipe } from '../../core/format/country-name.pipe';
+import { AnalyticsService } from '../../core/analytics/analytics.service';
 import { LanguageService } from '../../core/i18n/language.service';
 import { pathFor } from '../../core/routing/paths';
 import { Flag } from '../../shared/flag/flag';
@@ -271,6 +272,9 @@ interface CostGroup { key: string; icon: IconName; items: number }
                 <a [href]="'mailto:' + partnerMail" class="btn btn-outline mt-8">{{ 'pricing.partner.cta' | translate }}</a>
               } @else {
                 <a [routerLink]="calculator()" class="btn mt-8" [class]="plan.featured ? 'btn-primary' : 'btn-outline'">{{ 'pricing.' + plan.key + '.cta' | translate }}</a>
+                @if (plan.featured) {
+                  <p class="mt-3 text-center text-sm"><a [href]="'/samples/report-' + lang.current() + '.pdf'" target="_blank" rel="noopener" (click)="analytics.track('sample_report_opened')" class="text-brand-text inline-flex items-center gap-1.5 font-semibold underline underline-offset-2 hover:no-underline"><app-icon name="document" [size]="15" /> {{ 'result.sample' | translate }}</a></p>
+                }
               }
             </article>
           }
@@ -329,6 +333,7 @@ export class HomePage {
   protected readonly blog = computed(() => `/${this.lang.current()}/blog`);
 
   protected readonly lang = inject(LanguageService);
+  protected readonly analytics = inject(AnalyticsService);
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly about = computed(() => pathFor('about', this.lang.current()));
   protected readonly partnerMail = 'partnerzy@carimport.eu';

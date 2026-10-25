@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 import org.springframework.stereotype.Component;
+import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestClient;
 
 /**
@@ -27,10 +28,25 @@ public class NbpRateClient {
     }
 
     public List<ExchangeRate> fetchTable(String table) {
-        NbpTable[] response = http.get()
+        return toRates(http.get()
                 .uri("/exchangerates/tables/{table}?format=json", table)
                 .retrieve()
-                .body(NbpTable[].class);
+                .body(NbpTable[].class));
+    }
+
+    /** The table published on {@code date}; empty when there was none (holiday, or table B on another weekday). */
+    public List<ExchangeRate> fetchTable(String table, LocalDate date) {
+        try {
+            return toRates(http.get()
+                    .uri("/exchangerates/tables/{table}/{date}?format=json", table, date)
+                    .retrieve()
+                    .body(NbpTable[].class));
+        } catch (HttpClientErrorException.NotFound e) {
+            return List.of();
+        }
+    }
+
+    private static List<ExchangeRate> toRates(NbpTable[] response) {
         if (response == null || response.length == 0) {
             return List.of();
         }

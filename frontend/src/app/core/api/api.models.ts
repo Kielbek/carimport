@@ -129,6 +129,8 @@ export interface TaxSummary {
   national: TaxItem[];
   portFees: number;
   total: number;
+  /** Day whose rates customs applies this month (penultimate Wednesday of the last one); null = today's rates. */
+  customsFxDate: string | null;
 }
 
 /**

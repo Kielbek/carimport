@@ -36,8 +36,14 @@ public class PdfReportRenderer {
     }
 
     public byte[] render(ReportOrder order, Quote quote) {
+        return render(order, quote, false);
+    }
+
+    /** @param sample watermark every page - the public example linked from the paywall */
+    public byte[] render(ReportOrder order, Quote quote, boolean sample) {
         Locale locale = Locale.forLanguageTag(order.getLocale());
         Context ctx = new Context(locale);
+        ctx.setVariable("sample", sample);
         ctx.setVariable("order", order);
         ctx.setVariable("quote", quote);
         ctx.setVariable("result", quote.getResult());

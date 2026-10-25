@@ -2,6 +2,7 @@ import { Component, inject, output, signal } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TranslatePipe } from '@ngx-translate/core';
 import { catchError, of, switchMap } from 'rxjs';
+import { AnalyticsService } from '../../core/analytics/analytics.service';
 import { CarImportApi } from '../../core/api/carimport-api';
 import { Icon } from '../../shared/icon/icon';
 import { CalculatorStore } from '../calculator/calculator.store';
@@ -46,6 +47,7 @@ import { CalculatorStore } from '../calculator/calculator.store';
 export class PartnerLeadForm {
   private readonly store = inject(CalculatorStore);
   private readonly api = inject(CarImportApi);
+  private readonly analytics = inject(AnalyticsService);
   readonly closed = output<void>();
   protected readonly busy = signal(false);
   protected readonly sent = signal(false);
@@ -77,6 +79,12 @@ export class PartnerLeadForm {
           }),
         ),
       )
-      .subscribe({ next: () => this.sent.set(true), error: () => this.busy.set(false) });
+      .subscribe({
+        next: () => {
+          this.sent.set(true);
+          this.analytics.track('partner_lead_sent');
+        },
+        error: () => this.busy.set(false),
+      });
   }
 }

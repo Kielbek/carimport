@@ -270,7 +270,9 @@
     "freeBase": "Apskaičiuota nuo muitinės vertės (kaina, aukciono mokesčiai, transportas į ES ir draudimas) šiandienos valiutos kursu.",
     "lockedListTitle": "Taip pat apskaičiuota – ataskaitoje",
     "riskTag": "rizika",
-    "moreLocked": "+ dar {{count}} pozicijos, įskaitant paslėptas išlaidas"
+    "moreLocked": "+ dar {{count}} pozicijos, įskaitant paslėptas išlaidas",
+    "customsFx": "Muitas ir PVM skaičiuojami nuo muitinės vertės, perskaičiuotos mėnesio muitinės kursu – {{date}} kursu (priešpaskutinis praėjusio mėnesio trečiadienis).",
+    "sample": "Peržiūrėti ataskaitos pavyzdį (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Atskiras konteineris",

@@ -270,7 +270,9 @@
     "freeBase": "Aprēķināts no muitas vērtības (cena, izsoles maksas, transports uz ES un apdrošināšana) pēc šodienas valūtas kursa.",
     "lockedListTitle": "Aprēķināts arī – atskaitē",
     "riskTag": "risks",
-    "moreLocked": "+ vēl {{count}} pozīcijas, t. sk. slēptās izmaksas"
+    "moreLocked": "+ vēl {{count}} pozīcijas, t. sk. slēptās izmaksas",
+    "customsFx": "Muitu un PVN aprēķina no muitas vērtības, kas pārrēķināta pēc mēneša muitas kursa – {{date}} kursa (iepriekšējā mēneša priekšpēdējā trešdiena).",
+    "sample": "Skatīt atskaites paraugu (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Atsevišķs konteiners",

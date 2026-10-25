@@ -134,6 +134,27 @@ public class CalculationEngineTest {
     }
 
     @Test
+    void customsValueUsesTheCustomsRateOfTheMonthAndAStressScenarioDoesNotMoveIt() {
+        FxRates customs = new FxRates(LocalDate.of(2026, 9, 23), "TEST-customs", Map.of(
+                CurrencyCode.USD, new BigDecimal("4.10"),
+                CurrencyCode.EUR, new BigDecimal("4.25"),
+                CurrencyCode.JPY, new BigDecimal("0.027")));
+        CalculationResult r = engine.calculate(copartToGdynia(FuelType.PETROL, 2500), Scenario.EXPECTED,
+                FX.withCustoms(customs));
+
+        // the USD components (12 790 USD = 51 160 PLN at 4.00) at 4.10, the insurance (671.40 PLN) unchanged
+        assertThat(r.customsValue().amount()).isEqualByComparingTo("53110.40");
+        assertThat(line(r, "CUSTOMS_DUTY").amount().amount()).isEqualByComparingTo("5311");
+        assertThat(line(r, "CUSTOMS_DUTY").params()).containsEntry("customsFxDate", "2026-09-23");
+        // the purchase itself is still paid at today's rate
+        assertThat(line(r, "PURCHASE_PRICE").amount().amount()).isEqualByComparingTo("40000");
+
+        FxRates stressed = FX.withCustoms(customs).withShift(CurrencyCode.USD, new BigDecimal("1.02"));
+        assertThat(stressed.plnPerUnit().get(CurrencyCode.USD)).isEqualByComparingTo("4.08");
+        assertThat(stressed.forCustoms().plnPerUnit().get(CurrencyCode.USD)).isEqualByComparingTo("4.10");
+    }
+
+    @Test
     void exciseJumpsAt2001cc() {
         BigDecimal at2000 = line(engine.calculate(copartToGdynia(FuelType.PETROL, 2000), Scenario.EXPECTED, FX),
                 "EXCISE_TAX").rate();

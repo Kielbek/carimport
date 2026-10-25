@@ -3,6 +3,7 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { CostCategory } from '../../../core/api/api.models';
 import { reportPrice } from '../../../core/currency/currencies';
 import { CountryNamePipe } from '../../../core/format/country-name.pipe';
+import { AnalyticsService } from '../../../core/analytics/analytics.service';
 import { LanguageService } from '../../../core/i18n/language.service';
 import { Icon } from '../../../shared/icon/icon';
 import { CalculatorStore } from '../calculator.store';
@@ -53,6 +54,7 @@ import { DEPARTURE_PORTS } from '../calculator.options';
               <app-icon name="lock" [size]="18" /> {{ 'result.unlock' | translate: { price: reportPrice() } }}
             </button>
             <p class="mt-2 text-center text-xs text-fg/60">{{ 'result.unlockNote' | translate }}</p>
+            <p class="mt-3 text-center text-sm"><a [href]="'/samples/report-' + lang.current() + '.pdf'" target="_blank" rel="noopener" (click)="analytics.track('sample_report_opened')" class="text-brand inline-flex items-center gap-1.5 font-semibold underline underline-offset-2 hover:no-underline"><app-icon name="document" [size]="15" /> {{ 'result.sample' | translate }}</a></p>
           </div>
         </div>
         <div class="mt-6 grid gap-3 sm:grid-cols-3" aria-hidden="true">
@@ -110,6 +112,9 @@ import { DEPARTURE_PORTS } from '../calculator.options';
           </tbody>
         </table>
         <p class="mt-3 text-xs text-muted">{{ 'result.freeBase' | translate }}</p>
+        @if (r.taxes.customsFxDate) {
+          <p class="mt-1 text-xs text-muted">{{ 'result.customsFx' | translate: { date: r.taxes.customsFxDate } }}</p>
+        }
       </section>
 
       <!-- locked: everything else, by name only -->
@@ -164,6 +169,7 @@ import { DEPARTURE_PORTS } from '../calculator.options';
 export class StepResult {
   protected readonly store = inject(CalculatorStore);
   protected readonly lang = inject(LanguageService);
+  protected readonly analytics = inject(AnalyticsService);
   private readonly translate = inject(TranslateService);
   protected readonly s = this.store.state;
 

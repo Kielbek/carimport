@@ -5,6 +5,7 @@ import { switchMap } from 'rxjs';
 import { DisplayCurrency } from '../../core/api/api.models';
 import { CarImportApi } from '../../core/api/carimport-api';
 import { DISPLAY_CURRENCIES, reportPrice } from '../../core/currency/currencies';
+import { AnalyticsService } from '../../core/analytics/analytics.service';
 import { LanguageService } from '../../core/i18n/language.service';
 import { pathFor } from '../../core/routing/paths';
 import { SITE } from '../../core/site.config';
@@ -28,6 +29,7 @@ import { rememberOrder } from '../report/order-tokens';
       <span class="grid size-12 place-items-center rounded-[6px] bg-brand text-brand-ink"><app-icon name="document" [size]="24" /></span>
       <h2 id="paywall-title" class="mt-5 text-2xl font-extrabold">{{ 'paywall.title' | translate }}</h2>
       <p class="mt-2 text-sm leading-relaxed text-muted">{{ 'paywall.subtitle' | translate }}</p>
+      <p class="mt-2 text-sm"><a [href]="'/samples/report-' + lang.current() + '.pdf'" target="_blank" rel="noopener" (click)="analytics.track('sample_report_opened')" class="text-brand-text inline-flex items-center gap-1.5 font-semibold underline underline-offset-2 hover:no-underline"><app-icon name="document" [size]="15" /> {{ 'result.sample' | translate }}</a></p>
 
       <form class="mt-6 space-y-4" [formGroup]="form" (ngSubmit)="pay()">
         <div>
@@ -71,7 +73,8 @@ import { rememberOrder } from '../report/order-tokens';
 export class PaywallModal {
   private readonly store = inject(CalculatorStore);
   private readonly api = inject(CarImportApi);
-  private readonly lang = inject(LanguageService);
+  protected readonly lang = inject(LanguageService);
+  protected readonly analytics = inject(AnalyticsService);
 
   readonly closed = output<void>();
   protected readonly termsUrl = computed(() => pathFor('terms', this.lang.current()));
@@ -93,6 +96,7 @@ export class PaywallModal {
 
   protected pay(): void {
     this.busy.set(true);
+    this.analytics.track('checkout_started', { currency: this.form.getRawValue().currency });
     this.error.set(null);
     const { fullName, email, currency } = this.form.getRawValue();
     this.store

@@ -270,7 +270,9 @@
     "freeBase": "Berekend over de douanewaarde (prijs, veilingkosten, transport naar de EU en verzekering) tegen de wisselkoers van vandaag.",
     "lockedListTitle": "Ook berekend – in het rapport",
     "riskTag": "risico",
-    "moreLocked": "+ {{count}} extra posten, incl. verborgen kosten"
+    "moreLocked": "+ {{count}} extra posten, incl. verborgen kosten",
+    "customsFx": "Douanerechten en btw worden berekend over de douanewaarde, omgerekend tegen de douanekoers van de maand – de koers van {{date}} (voorlaatste woensdag van de vorige maand).",
+    "sample": "Bekijk een voorbeeldrapport (PDF)"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Eigen container",

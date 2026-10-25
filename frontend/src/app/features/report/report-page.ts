@@ -2,6 +2,7 @@ import { Component, OnInit, computed, inject, input, signal } from '@angular/cor
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { filter, map, switchMap, take, takeWhile, timer } from 'rxjs';
+import { AnalyticsService } from '../../core/analytics/analytics.service';
 import { CalculationResult, CostCategory, CostLine, FullReport, OrderStatus } from '../../core/api/api.models';
 import { CarImportApi } from '../../core/api/carimport-api';
 import { LocalNumberPipe } from '../../core/format/local-number.pipe';
@@ -148,6 +149,7 @@ export class ReportPage implements OnInit {
 
   protected readonly lang = inject(LanguageService);
   private readonly api = inject(CarImportApi);
+  private readonly analytics = inject(AnalyticsService);
 
   protected readonly home = computed(() => pathFor('home', this.lang.current()));
   protected readonly status = signal<OrderStatus | null>(null);
@@ -181,6 +183,20 @@ export class ReportPage implements OnInit {
   });
   protected readonly rowsOf = (c: CostCategory) => this.rows().filter((r) => r.line.category === c);
   protected readonly docsOf = (stage: string) => this.report()?.documents.filter((d) => d.stage === stage) ?? [];
+  /** One conversion per order, also when the page is reopened from the e-mail. */
+  private trackPurchaseOnce(): void {
+    const key = 'carimport.purchase.' + this.orderId();
+    try {
+      if (localStorage.getItem(key)) {
+        return;
+      }
+      localStorage.setItem(key, '1');
+    } catch {
+      return;
+    }
+    this.analytics.track('purchase');
+  }
+
   protected readonly unlocked = computed(() => ['PAID', 'GENERATING', 'READY', 'FAILED'].includes(this.status() ?? ''));
 
   ngOnInit(): void {
@@ -202,6 +218,9 @@ export class ReportPage implements OnInit {
       )
       .subscribe((s) => {
         this.status.set(s);
+        if (this.unlocked()) {
+          this.trackPurchaseOnce();
+        }
         if (this.unlocked() && !this.report()) {
           this.loadReport();
         }

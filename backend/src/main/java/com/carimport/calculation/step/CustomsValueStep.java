@@ -5,7 +5,8 @@ import org.springframework.stereotype.Component;
 
 /**
  * Customs value on CIF basis (Art. 70-71 UCC): transaction value + auction commission + all transport and insurance
- * costs up to the place where the goods enter the EU customs territory. Produces no cost line of its own.
+ * costs up to the place where the goods enter the EU customs territory, converted at the customs exchange rate of the
+ * month (Art. 53 UCC, Art. 146 UCC-IA). Produces no cost line of its own.
  */
 @Component
 public class CustomsValueStep implements CalculationStep {
@@ -17,6 +18,6 @@ public class CustomsValueStep implements CalculationStep {
 
     @Override
     public void apply(CalculationContext ctx) {
-        ctx.customsValue(ctx.sumOfCifComponents().rounded());
+        ctx.customsValue(ctx.sumOfCifComponentsAtCustomsRate().rounded());
     }
 }

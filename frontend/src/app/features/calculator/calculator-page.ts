@@ -1,6 +1,7 @@
 import { Component, OnInit, computed, inject, input, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
+import { AnalyticsService } from '../../core/analytics/analytics.service';
 import { OriginCountry } from '../../core/api/api.models';
 import { LanguageService } from '../../core/i18n/language.service';
 import { PageContext } from '../../core/routing/page-context';
@@ -79,7 +80,7 @@ import { StepVehicle } from './steps/step-vehicle';
             @case (3) { <app-step-condition class="step-enter" /> }
             @case (4) { <app-step-destination class="step-enter" /> }
             @case (5) { <app-step-after-import class="step-enter" /> }
-            @case (6) { <app-step-result class="step-enter" (unlock)="paywall.set(true)" (partner)="lead.set(true)" (edit)="go(1 - store.step())" /> }
+            @case (6) { <app-step-result class="step-enter" (unlock)="openPaywall()" (partner)="lead.set(true)" (edit)="go(1 - store.step())" /> }
           }
         </div>
 
@@ -121,6 +122,12 @@ export class CalculatorPage implements OnInit {
   protected readonly lastInput = LAST_INPUT_STEP;
   protected readonly resultStep = RESULT_STEP;
   protected readonly paywall = signal(false);
+  private readonly analytics = inject(AnalyticsService);
+
+  protected openPaywall(): void {
+    this.paywall.set(true);
+    this.analytics.track('paywall_opened');
+  }
   protected readonly lead = signal(false);
 
   ngOnInit(): void {

@@ -17,6 +17,7 @@ import {
 } from '../../core/api/api.models';
 import { CarImportApi } from '../../core/api/carimport-api';
 import { DisplayCurrency, isDisplayCurrency } from '../../core/currency/currencies';
+import { AnalyticsService } from '../../core/analytics/analytics.service';
 import { LanguageService } from '../../core/i18n/language.service';
 import { LanguageInfo } from '../../core/i18n/languages';
 import { EXCISE_THRESHOLD_CC, ORIGINS } from './calculator.options';
@@ -86,6 +87,7 @@ export class CalculatorStore {
   private readonly browser = isPlatformBrowser(inject(PLATFORM_ID));
 
   private readonly lang = inject(LanguageService);
+  private readonly analytics = inject(AnalyticsService);
   readonly state = signal<WizardState>(restore(this.lang.info()));
   readonly step = signal<WizardStep>(1);
   readonly calculating = signal(false);
@@ -278,6 +280,7 @@ export class CalculatorStore {
         }
         this.vinResult.set(d);
         this.applyVin(d);
+        this.analytics.track('vin_lookup', { source: d.source });
       });
   }
 
@@ -420,6 +423,7 @@ export class CalculatorStore {
 
   goTo(step: WizardStep): void {
     this.step.set(step);
+    this.analytics.track('calculator_step', { step });
     if (step === RESULT_STEP && !this.result()) {
       this.calculate();
     }
@@ -439,6 +443,9 @@ export class CalculatorStore {
         catchError((e: HttpErrorResponse) => of({ view: null, error: (e.error as ApiProblem) ?? { status: e.status } })),
       )
       .subscribe(({ view, error }) => {
+        if (view) {
+          this.analytics.track('quote_calculated', { destination: view.destinationCountry, port: view.clearancePort });
+        }
         this.result.set(view);
         this.error.set(error);
         this.calculating.set(false);

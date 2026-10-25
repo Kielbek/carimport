@@ -17,8 +17,10 @@ import java.util.Optional;
  * @param national taxes owed in the country of registration whatever the port (e.g. Polish excise)
  * @param portFees terminal handling, devanning and customs agent in that port
  * @param total    sum of the above
+ * @param customsFxDate the day whose exchange rates customs applies this month (penultimate Wednesday of the last one)
  */
-public record TaxSummary(Item duty, Item vat, List<Item> national, BigDecimal portFees, BigDecimal total) {
+public record TaxSummary(Item duty, Item vat, List<Item> national, BigDecimal portFees, BigDecimal total,
+                         String customsFxDate) {
 
     /** One tax: code (cost.* key), rate as a fraction, the country that levies it, amount. */
     public record Item(String code, BigDecimal rate, String country, BigDecimal amount) {
@@ -37,7 +39,12 @@ public record TaxSummary(Item duty, Item vat, List<Item> national, BigDecimal po
         BigDecimal fees = sum(result, PORT_FEES);
         BigDecimal total = duty.amount().add(vat.amount()).add(fees)
                 .add(national.stream().map(Item::amount).reduce(BigDecimal.ZERO, BigDecimal::add));
-        return new TaxSummary(duty, vat, national, fees, total);
+        String customsFxDate = result.lines().stream()
+                .filter(l -> l.line().code().equals("CUSTOMS_DUTY"))
+                .findFirst()
+                .map(l -> l.line().params().get("customsFxDate"))
+                .orElse(null);
+        return new TaxSummary(duty, vat, national, fees, total, customsFxDate);
     }
 
     private static Optional<Item> item(CalculationResult result, String code, String country) {
