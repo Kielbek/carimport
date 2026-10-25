@@ -7,7 +7,7 @@ COPY src src
 RUN mvn -B -ntp package -DskipTests
 
 FROM eclipse-temurin:21-jre
-RUN useradd --system --uid 10001 app && mkdir -p /data/reports && chown app /data/reports
+RUN useradd --system --uid 10001 app && mkdir -p /data/reports /data/logs && chown app /data/reports /data/logs
 WORKDIR /app
 COPY --from=build /src/target/carimport-backend-*.jar app.jar
 USER app

@@ -53,3 +53,5 @@ jobs:
       - uses: actions/checkout@v4
       - run: docker build -t carimport-api backend
       - run: docker build -t carimport-web frontend
+      - name: nginx config is valid
+        run: docker run --rm --add-host api:127.0.0.1 carimport-web nginx -t

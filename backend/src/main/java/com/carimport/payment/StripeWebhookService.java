@@ -55,6 +55,7 @@ public class StripeWebhookService {
         }
         processed.save(new ProcessedWebhookEvent(event.getId(), event.getType(), clock.instant()));
 
+        log.info("Stripe event {} {}", event.getType(), event.getId());
         switch (event.getType()) {
             case "checkout.session.completed" -> session(event).ifPresent(s -> {
                 // card and BLIK are paid at this point; P24 may still be "unpaid" and settle asynchronously
@@ -65,10 +66,16 @@ public class StripeWebhookService {
             case "checkout.session.async_payment_succeeded" -> session(event).ifPresent(payments::markPaid);
             case "checkout.session.async_payment_failed", "checkout.session.expired" -> session(event)
                     .flatMap(s -> orders.findByStripeSessionId(s.getId()))
-                    .ifPresent(ReportOrder::markExpired);
+                    .ifPresent(o -> {
+                        log.info("Order {} expired or payment failed", o.getId());
+                        o.markExpired();
+                    });
             case "charge.refunded" -> object(event, Charge.class)
                     .flatMap(c -> orders.findByStripePaymentIntentId(c.getPaymentIntent()))
-                    .ifPresent(ReportOrder::markRefunded);
+                    .ifPresent(o -> {
+                        log.info("Order {} refunded", o.getId());
+                        o.markRefunded();
+                    });
             default -> log.debug("Unhandled Stripe event type {}", event.getType());
         }
     }

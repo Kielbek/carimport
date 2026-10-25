@@ -4,10 +4,15 @@ import com.carimport.calculation.CalculationException;
 import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 import org.springframework.context.MessageSource;
+import com.carimport.web.logging.RequestLoggingFilter;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
+import org.springframework.web.ErrorResponse;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -15,6 +20,8 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 /** RFC 9457 problem details; {@code messageKey} lets the SPA translate, {@code detail} is pre-translated. */
 @RestControllerAdvice
 public class ApiExceptionHandler {
+
+    private static final Logger log = LoggerFactory.getLogger(ApiExceptionHandler.class);
 
     private final MessageSource messages;
 
@@ -46,5 +53,20 @@ public class ApiExceptionHandler {
     @ExceptionHandler(IllegalArgumentException.class)
     public ProblemDetail badRequest(IllegalArgumentException e) {
         return ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, e.getMessage());
+    }
+
+    /**
+     * Everything else. Spring's own errors (404, 405, 415, ...) keep their status; a real failure is logged with its
+     * stack trace and the client gets only the request id to quote to support.
+     */
+    @ExceptionHandler(Exception.class)
+    public ProblemDetail unexpected(Exception e) {
+        if (e instanceof ErrorResponse known) {
+            return known.getBody();
+        }
+        log.error("Unhandled error", e);
+        ProblemDetail problem = ProblemDetail.forStatus(HttpStatus.INTERNAL_SERVER_ERROR);
+        problem.setProperty("requestId", MDC.get(RequestLoggingFilter.MDC_KEY));
+        return problem;
     }
 }

@@ -14,6 +14,8 @@ import java.time.Instant;
 import java.util.List;
 import java.util.Locale;
 import java.util.UUID;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -24,6 +26,8 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service
 public class CheckoutService {
+
+    private static final Logger log = LoggerFactory.getLogger(CheckoutService.class);
 
     public record CheckoutResult(UUID orderId, String accessToken, String checkoutUrl) {
     }
@@ -96,6 +100,8 @@ public class CheckoutService {
                 .build();
         Session session = Session.create(params, options);
         order.attachSession(session.getId());
+        log.info("Order {} created for quote {}: {} {} ({}), session {}", order.getId(), quote.getId(), price, currency,
+                locale, session.getId());
         return new CheckoutResult(order.getId(), token, session.getUrl());
     }
 
