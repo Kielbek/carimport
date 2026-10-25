@@ -806,7 +806,7 @@
     "title": "Privacybeleid",
     "s1": {
       "title": "Verwerkingsverantwoordelijke",
-      "text": "De verwerkingsverantwoordelijke is de exploitant van Carglo. Voor vragen over gegevensbescherming kunt u contact met ons opnemen via {{email}}."
+      "text": "Verwerkingsverantwoordelijke voor je gegevens is {{seller}}, exploitant van de dienst Carglo. Voor vragen over gegevensbescherming mail je naar {{email}}."
     },
     "s2": {
       "title": "Welke gegevens wij verwerken",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Uw rechten",
       "text": "U heeft het recht op inzage, rectificatie, wissing, beperking, overdraagbaarheid en bezwaar, het recht om uw toestemming op elk moment in te trekken en het recht om een klacht in te dienen bij uw toezichthoudende autoriteit voor gegevensbescherming. Schrijf ons: {{email}}."
+    },
+    "s7": {
+      "title": "Nieuwsbrief",
+      "text": "Als je je inschrijft, verwerken we je e-mailadres, taal en de datum en versie van je toestemming om de nieuwsbrief te versturen (art. 6, lid 1, onder a AVG). Het adres komt pas op de lijst nadat je het bevestigt via de link die we je mailen. Je kunt je altijd afmelden via de link in elk bericht of door te mailen naar {{email}}; we stoppen dan direct met verzenden en bewaren alleen het bewijs van de toestemming en de intrekking ervan."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Versie van {{version}}",
     "s1": {
       "title": "Verkoper en contact",
-      "text": "{{site}} wordt geëxploiteerd door {{company}}, {{address}}, btw-nummer {{taxId}}, {{registry}} (hierna: de Verkoper).\nContact voor alle zaken, ook klachten: {{email}}. Wij antwoorden binnen 14 dagen."
+      "text": "{{site}} wordt geëxploiteerd door {{seller}} (hierna: de Verkoper).\nContact voor alle zaken, ook klachten: {{email}}. Wij antwoorden binnen 14 dagen."
     },
     "s2": {
       "title": "Wat de dienst is",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Slotbepalingen",
       "text": "De algemene voorwaarden zijn kosteloos beschikbaar op deze pagina in een vorm die het mogelijk maakt ze te downloaden en af te drukken.\nWijzigingen van de algemene voorwaarden gelden niet voor overeenkomsten die vóór de inwerkingtreding ervan zijn gesloten.\nOp deze voorwaarden is Pools recht van toepassing, zonder dat de consument de bescherming verliest die hem wordt geboden door de dwingende bepalingen van het recht van het land waar hij zijn gewone verblijfplaats heeft."
-    }
+    },
+    "taxIdLabel": "btw-nummer"
+  },
+  "newsletter": {
+    "title": "Importnieuws rechtstreeks in je inbox",
+    "lead": "Eén keer per maand: wijzigingen in invoerrechten en belastingen, vrachtprijzen en nieuwe gidsen. Geen spam, afmelden met één klik.",
+    "email": "Je e-mailadres",
+    "consent": "Ik wil de Carglo-nieuwsbrief per e-mail ontvangen. Ik kan me altijd afmelden via de link in elk bericht.",
+    "submit": "Inschrijven",
+    "sent": "Bijna klaar – kijk in je inbox en klik op de link om je inschrijving te bevestigen.",
+    "error": "Inschrijven is niet gelukt. Probeer het later opnieuw.",
+    "confirmTitle": "Nieuwsbrief",
+    "working": "Een ogenblik…",
+    "confirmed": "Je inschrijving is bevestigd. Bedankt!",
+    "unsubscribed": "Je bent afgemeld en ontvangt geen nieuwsbrieven meer.",
+    "invalid": "Deze link is ongeldig of al gebruikt."
   }
 }

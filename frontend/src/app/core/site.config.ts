@@ -6,14 +6,18 @@ export const SITE = {
   ogImage: '/og-image.png',
   /**
    * The seller, as required in the terms and for consumer contracts. FILL IN BEFORE LAUNCH - same values as
-   * app.company in the backend application.yml (printed in the report e-mail).
+   * COMPANY_* in .env (printed in the report e-mail). Empty taxId / registry are left out of the text, so a private
+   * person selling without a registered business (PL: działalność nierejestrowana) fills in only name and address:
+   *   name: 'Jan Kowalski (działalność nierejestrowana)', address: 'ul. Przykładowa 1, 00-001 Warszawa'
    */
   company: {
-    name: '[nazwa firmy / imię i nazwisko przedsiębiorcy]',
-    address: '[adres siedziby]',
-    taxId: '[NIP]',
-    registry: '[KRS / CEIDG]',
+    name: '[imię i nazwisko]',
+    address: '[adres do korespondencji]',
+    taxId: '',
+    registry: '',
   },
+  /** Enquiries to import companies; off until a partner has signed (the result page then hides the button). */
+  partners: false as boolean,
   /**
    * Conversion analytics, loaded only after consent to analytics cookies. provider null = off.
    * plausible: id = the site's domain in Plausible; ga4: id = the measurement ID (G-XXXXXXX).

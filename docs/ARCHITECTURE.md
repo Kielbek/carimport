@@ -26,6 +26,7 @@ Moduły backendu (`backend/src/main/java/com/carimport/`):
 | `payment`      | Zamówienia raportu, Stripe Checkout, webhook                                     |
 | `report`       | Lista dokumentów, render PDF, storage, API pobierania                            |
 | `lead`, `affiliate` | Monetyzacja B2B: leady do partnerów, przekierowania afiliacyjne             |
+| `newsletter`   | Zapis z double opt-in (token potwierdzenia jako hash), wypis tokenem, mail potwierdzający |
 
 ---
 
@@ -468,7 +469,7 @@ pozostaje PENDING, poprawny webhook → READY i PDF 30 KB, duplikat zdarzenia �
 
 * **Limity zapytań** (`RateLimitFilter`): token bucket na klienta (adres IP po `forward-headers-strategy`) i regułę –
   propozycje portów 20 naraz / 40 na min, wycena 10/20, VIN 5/10, adresy 30/60, płatność 5/5, zapytania do partnerów
-  3/2, reszta API 120/300; odpowiedź 429 z `Retry-After` i `messageKey: error.rateLimited`. Webhook Stripe jest
+  3/2, newsletter (zapis, potwierdzenie, wypis) 5/3, reszta API 120/300; odpowiedź 429 z `Retry-After` i `messageKey: error.rateLimited`. Webhook Stripe jest
   wyłączony (chroni go podpis). Limity są w pamięci jednego węzła – przy kilku węzłach następny krok to limiter na bramie
   (Cloudflare) albo w Redisie.
 * **Potwierdzenie płatności** (`PaymentConfirmationService`, `POST /reports/orders/{id}/confirm`): po powrocie ze

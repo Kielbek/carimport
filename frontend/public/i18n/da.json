@@ -806,7 +806,7 @@
     "title": "Privatlivspolitik",
     "s1": {
       "title": "Dataansvarlig",
-      "text": "Dataansvarlig er operatøren af Carglo. I spørgsmål om databeskyttelse kan du kontakte os på {{email}}."
+      "text": "Dataansvarlig for dine oplysninger er {{seller}}, der driver tjenesten Carglo. Om databeskyttelse kan du skrive til {{email}}."
     },
     "s2": {
       "title": "Hvilke oplysninger vi behandler",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Dine rettigheder",
       "text": "Du har ret til indsigt, berigtigelse, sletning, begrænsning, dataportabilitet og indsigelse, til når som helst at trække dit samtykke tilbage og til at klage til din databeskyttelsesmyndighed (i Danmark Datatilsynet). Skriv til os: {{email}}."
+    },
+    "s7": {
+      "title": "Nyhedsbrev",
+      "text": "Hvis du tilmelder dig, behandler vi din e-mailadresse, dit sprog samt dato og version af dit samtykke for at sende nyhedsbrevet (art. 6, stk. 1, litra a, GDPR). Adressen kommer først på listen, når du bekræfter den via det link, vi sender dig. Du kan altid afmelde dig via linket i hver mail eller ved at skrive til {{email}}; vi stopper udsendelsen med det samme og gemmer kun registreringen af samtykket og tilbagekaldelsen som dokumentation."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Version af {{version}}",
     "s1": {
       "title": "Sælger og kontakt",
-      "text": "{{site}} drives af {{company}}, {{address}}, CVR-nr. {{taxId}}, {{registry}} (herefter »Sælger«).\nKontakt i alle sager, også reklamationer: {{email}}. Vi svarer inden for 14 dage."
+      "text": "{{site}} drives af {{seller}} (herefter »Sælger«).\nKontakt i alle sager, også reklamationer: {{email}}. Vi svarer inden for 14 dage."
     },
     "s2": {
       "title": "Hvad tjenesten er",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Afsluttende bestemmelser",
       "text": "Handelsbetingelserne er gratis tilgængelige på denne side i en form, der gør det muligt at downloade og udskrive dem.\nÆndringer af handelsbetingelserne berører ikke aftaler, der er indgået, før ændringerne træder i kraft.\nPolsk ret finder anvendelse, uden at forbrugeren derved fratages den beskyttelse, som de ufravigelige regler i lovgivningen i forbrugerens sædvanlige opholdsland giver."
-    }
+    },
+    "taxIdLabel": "CVR-nr."
+  },
+  "newsletter": {
+    "title": "Importnyheder direkte i din indbakke",
+    "lead": "Én gang om måneden: ændringer i told og afgifter, fragtpriser og nye guides. Ingen spam, afmelding med ét klik.",
+    "email": "Din e-mail",
+    "consent": "Jeg vil gerne modtage Carglos nyhedsbrev på e-mail. Jeg kan altid afmelde mig via linket i hver mail.",
+    "submit": "Tilmeld",
+    "sent": "Næsten færdig – tjek din indbakke, og klik på linket for at bekræfte tilmeldingen.",
+    "error": "Tilmeldingen mislykkedes. Prøv igen senere.",
+    "confirmTitle": "Nyhedsbrev",
+    "working": "Et øjeblik…",
+    "confirmed": "Din tilmelding er bekræftet. Tak!",
+    "unsubscribed": "Du er afmeldt og modtager ikke flere nyhedsbreve.",
+    "invalid": "Linket er ugyldigt eller allerede brugt."
   }
 }

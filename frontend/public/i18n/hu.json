@@ -806,7 +806,7 @@
     "title": "Adatvédelmi tájékoztató",
     "s1": {
       "title": "Adatkezelő",
-      "text": "Az adatkezelő a Carglo üzemeltetője. Adatvédelmi ügyekben írjon nekünk erre a címre: {{email}}."
+      "text": "Adatai kezelője {{seller}}, a Carglo szolgáltatás üzemeltetője. Adatvédelmi ügyekben írjon a(z) {{email}} címre."
     },
     "s2": {
       "title": "Milyen adatokat kezelünk",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Az Ön jogai",
       "text": "Önnek joga van a hozzáféréshez, a helyesbítéshez, a törléshez, a korlátozáshoz, az adathordozhatósághoz és a tiltakozáshoz, hozzájárulását bármikor visszavonhatja, és panaszt tehet az adatvédelmi hatóságnál. Írjon nekünk: {{email}}."
+    },
+    "s7": {
+      "title": "Hírlevél",
+      "text": "Feliratkozás esetén e-mail-címét, nyelvét, valamint hozzájárulása dátumát és verzióját kezeljük a hírlevél küldése céljából (GDPR 6. cikk (1) bekezdés a) pont). A cím csak azután kerül a listára, hogy az elküldött linkkel megerősíti. Bármikor leiratkozhat az egyes üzenetekben található linkkel vagy a(z) {{email}} címre írva; a küldést azonnal leállítjuk, és csak a hozzájárulás és visszavonása tényét őrizzük meg bizonyítékként."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Hatályos: {{version}}",
     "s1": {
       "title": "Az eladó és elérhetőségei",
-      "text": "A(z) {{site}} üzemeltetője: {{company}}, {{address}}, adószám: {{taxId}}, {{registry}} (a továbbiakban: Eladó).\nKapcsolat bármilyen ügyben, panasz esetén is: {{email}}. 14 napon belül válaszolunk."
+      "text": "A(z) {{site}} üzemeltetője: {{seller}} (a továbbiakban: Eladó).\nKapcsolat bármilyen ügyben, panasz esetén is: {{email}}. 14 napon belül válaszolunk."
     },
     "s2": {
       "title": "A szolgáltatás tárgya",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Záró rendelkezések",
       "text": "Az ÁSZF ezen az oldalon díjmentesen, letölthető és kinyomtatható formában érhető el.\nAz ÁSZF módosítása nem érinti a hatálybalépése előtt megkötött szerződéseket.\nA lengyel jog az irányadó, ez azonban nem fosztja meg a fogyasztót attól a védelemtől, amelyet szokásos tartózkodási helye szerinti állam kógens jogszabályai biztosítanak számára."
-    }
+    },
+    "taxIdLabel": "adószám:"
+  },
+  "newsletter": {
+    "title": "Importhírek egyenesen a postafiókjába",
+    "lead": "Havonta egyszer: vám- és adóváltozások, fuvardíjak és új útmutatók. Spam nélkül, egy kattintással leiratkozhat.",
+    "email": "Az Ön e-mail-címe",
+    "consent": "Hozzájárulok, hogy e-mailben megkapjam a Carglo hírlevelét. Bármikor leiratkozhatok az egyes üzenetekben található linkkel.",
+    "submit": "Feliratkozom",
+    "sent": "Mindjárt kész – nézze meg a postafiókját, és kattintson a linkre a feliratkozás megerősítéséhez.",
+    "error": "A feliratkozás nem sikerült. Kérjük, próbálja újra később.",
+    "confirmTitle": "Hírlevél",
+    "working": "Egy pillanat…",
+    "confirmed": "Feliratkozását megerősítettük. Köszönjük!",
+    "unsubscribed": "Leiratkozott, több hírlevelet nem kap.",
+    "invalid": "Ez a link érvénytelen, vagy már felhasználták."
   }
 }

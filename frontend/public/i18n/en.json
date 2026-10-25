@@ -806,7 +806,7 @@
     "title": "Privacy policy",
     "s1": {
       "title": "Data controller",
-      "text": "The data controller is the operator of Carglo. For data protection matters contact us at {{email}}."
+      "text": "The controller of your data is {{seller}}, operator of the Carglo service. For data protection matters write to {{email}}."
     },
     "s2": {
       "title": "What data we process",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Your rights",
       "text": "You have the right to access, rectify, erase, restrict, port and object, to withdraw consent at any time and to complain to your data protection authority. Write to us: {{email}}."
+    },
+    "s7": {
+      "title": "Newsletter",
+      "text": "If you sign up, we process your e-mail address, language and the date and version of your consent in order to send the newsletter (Art. 6(1)(a) GDPR). The address joins the list only after you confirm it with the link we e-mail you. You can unsubscribe at any time with the link in every message or by writing to {{email}}; we then stop sending immediately and keep only the record of the consent and its withdrawal as proof."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Version of {{version}}",
     "s1": {
       "title": "Seller and contact",
-      "text": "{{site}} is run by {{company}}, {{address}}, tax ID {{taxId}}, {{registry}} (the Seller).\nContact for any matter, including complaints: {{email}}. We reply within 14 days."
+      "text": "{{site}} is run by {{seller}} (the Seller).\nContact for any matter, including complaints: {{email}}. We reply within 14 days."
     },
     "s2": {
       "title": "What the service is",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Final provisions",
       "text": "The terms are available free of charge on this page in a form that allows them to be downloaded and printed.\nChanges to the terms do not affect contracts concluded before they take effect.\nPolish law applies, without depriving a consumer of the protection of the mandatory law of the country of their habitual residence."
-    }
+    },
+    "taxIdLabel": "tax ID"
+  },
+  "newsletter": {
+    "title": "Import news straight to your inbox",
+    "lead": "Once a month: changes in duties and taxes, freight prices and new guides. No spam, unsubscribe in one click.",
+    "email": "Your e-mail",
+    "consent": "I agree to receive the Carglo newsletter by e-mail. I can unsubscribe at any time using the link in every message.",
+    "submit": "Subscribe",
+    "sent": "Almost done – check your inbox and click the link to confirm your subscription.",
+    "error": "Could not sign you up right now. Please try again later.",
+    "confirmTitle": "Newsletter",
+    "working": "One moment…",
+    "confirmed": "Your subscription is confirmed. Thank you!",
+    "unsubscribed": "You have been unsubscribed. You will not receive any more newsletters.",
+    "invalid": "This link is invalid or has already been used."
   }
 }

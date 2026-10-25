@@ -806,7 +806,7 @@
     "title": "Politika zasebnosti",
     "s1": {
       "title": "Upravljavec podatkov",
-      "text": "Upravljavec podatkov je upravljavec spletnega mesta Carglo. Za vprašanja glede varstva podatkov nam pišite na {{email}}."
+      "text": "Upravljavec vaših podatkov je {{seller}}, ki upravlja storitev Carglo. Za vprašanja o varstvu podatkov pišite na {{email}}."
     },
     "s2": {
       "title": "Katere podatke obdelujemo",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Vaše pravice",
       "text": "Imate pravico do dostopa, popravka, izbrisa, omejitve obdelave, prenosljivosti in ugovora, pravico, da kadar koli prekličete privolitev, ter pravico do pritožbe pri nadzornem organu za varstvo podatkov. Pišite nam: {{email}}."
+    },
+    "s7": {
+      "title": "E-novice",
+      "text": "Če se prijavite, obdelujemo vaš e-poštni naslov, jezik ter datum in različico privolitve za pošiljanje e-novic (člen 6(1)(a) GDPR). Naslov se uvrsti na seznam šele, ko ga potrdite s povezavo, ki vam jo pošljemo. Kadar koli se lahko odjavite prek povezave v vsakem sporočilu ali s pisanjem na {{email}}; pošiljanje takoj ustavimo in hranimo le zapis o privolitvi in njenem preklicu kot dokaz."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Različica z dne {{version}}",
     "s1": {
       "title": "Prodajalec in kontakt",
-      "text": "Storitev {{site}} upravlja {{company}}, {{address}}, ID za DDV {{taxId}}, {{registry}} (v nadaljevanju: prodajalec).\nKontakt za vse zadeve, tudi za reklamacije: {{email}}. Odgovorimo v 14 dneh."
+      "text": "Storitev {{site}} upravlja {{seller}} (v nadaljevanju: prodajalec).\nKontakt za vse zadeve, tudi za reklamacije: {{email}}. Odgovorimo v 14 dneh."
     },
     "s2": {
       "title": "Kaj je storitev",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Končne določbe",
       "text": "Splošni pogoji so na tej strani brezplačno na voljo v obliki, ki omogoča njihov prenos in tiskanje.\nSpremembe splošnih pogojev ne veljajo za pogodbe, sklenjene pred njihovo uveljavitvijo.\nUporablja se poljsko pravo, pri čemer potrošnik ne izgubi varstva, ki mu ga zagotavljajo prisilni predpisi države njegovega običajnega prebivališča."
-    }
+    },
+    "taxIdLabel": "ID za DDV"
+  },
+  "newsletter": {
+    "title": "Novice o uvozu naravnost v vaš e-poštni predal",
+    "lead": "Enkrat na mesec: spremembe carin in davkov, cene prevoza in novi vodniki. Brez nezaželene pošte, odjava z enim klikom.",
+    "email": "Vaš e-poštni naslov",
+    "consent": "Strinjam se s prejemanjem e-novic Carglo po e-pošti. Kadar koli se lahko odjavim prek povezave v vsakem sporočilu.",
+    "submit": "Prijava",
+    "sent": "Skoraj končano – preverite e-pošto in kliknite povezavo za potrditev prijave.",
+    "error": "Prijava ni uspela. Poskusite znova pozneje.",
+    "confirmTitle": "E-novice",
+    "working": "Trenutek…",
+    "confirmed": "Vaša prijava je potrjena. Hvala!",
+    "unsubscribed": "Odjavljeni ste in ne boste več prejemali e-novic.",
+    "invalid": "Ta povezava ni veljavna ali je bila že uporabljena."
   }
 }

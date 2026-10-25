@@ -1,6 +1,6 @@
-# Production stack on one host: PostgreSQL, API, nginx with the static site. Secrets come from .env (see .env.example).
-#   docker compose -f docker-compose.prod.yml --env-file .env up -d --build
-# Put TLS in front (Caddy, Traefik, a load balancer or Cloudflare) and forward to port 80.
+# Production stack on one host: Caddy (HTTPS) -> nginx with the static site -> API -> PostgreSQL, plus daily backups.
+# Secrets and the domain come from .env (see .env.example).
+#   docker compose -f docker-compose.prod.yml up -d --build
 # docker's own log files are capped (5 x 20 MB per container) so a busy month cannot fill the disk
 x-logging: &logging
   driver: json-file
@@ -39,9 +39,43 @@ services:
     restart: unless-stopped
     logging: *logging
     depends_on: [api]
-    ports: ["80:80"]
+
+  proxy:
+    image: caddy:2.8-alpine
+    restart: unless-stopped
+    logging: *logging
+    depends_on: [web]
+    ports: ["80:80", "443:443", "443:443/udp"]
+    environment:
+      DOMAIN: ${DOMAIN:?set DOMAIN}
+      ACME_EMAIL: ${ACME_EMAIL:?set ACME_EMAIL}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+  backup:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    logging: *logging
+    depends_on:
+      db: { condition: service_healthy }
+    environment:
+      PGHOST: db
+      PGUSER: carimport
+      PGDATABASE: carimport
+      PGPASSWORD: ${DB_PASSWORD:?set DB_PASSWORD}
+      BACKUP_TIME: ${BACKUP_TIME:-02:30}
+      BACKUP_KEEP_DAYS: ${BACKUP_KEEP_DAYS:-14}
+    entrypoint: ["/bin/sh", "/backup.sh"]
+    volumes:
+      - ./deploy/backup.sh:/backup.sh:ro
+      - ./backups:/backups
+      - reports:/data/reports:ro
 
 volumes:
   pgdata:
   reports:
   logs:
+  caddy_data:
+  caddy_config:

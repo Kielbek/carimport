@@ -11,6 +11,7 @@ export type AnalyticsEvent =
   | 'quote_calculated'
   | 'paywall_opened'
   | 'sample_report_opened'
+  | 'newsletter_signup'
   | 'checkout_started'
   | 'purchase'
   | 'partner_lead_sent';

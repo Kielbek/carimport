@@ -806,7 +806,7 @@
     "title": "Polityka prywatności",
     "s1": {
       "title": "Administrator danych",
-      "text": "Administratorem danych jest operator serwisu Carglo. W sprawach ochrony danych skontaktuj się z nami pod adresem {{email}}."
+      "text": "Administratorem danych jest {{seller}}, prowadzący serwis Carglo. W sprawach ochrony danych napisz na {{email}}."
     },
     "s2": {
       "title": "Jakie dane przetwarzamy",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Twoje prawa",
       "text": "Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia, sprzeciwu i cofnięcia zgody w dowolnym momencie, a także skargi do Prezesa UODO. Napisz do nas: {{email}}."
+    },
+    "s7": {
+      "title": "Newsletter",
+      "text": "Jeśli zapiszesz się na newsletter, przetwarzamy Twój adres e-mail, język oraz datę i wersję zgody w celu wysyłki newslettera (art. 6 ust. 1 lit. a RODO). Adres trafia na listę dopiero po potwierdzeniu linkiem wysłanym na Twoją skrzynkę. Możesz się wypisać w każdej chwili linkiem w każdej wiadomości lub pisząc na {{email}} – wtedy natychmiast przestajemy wysyłać, a zachowujemy jedynie zapis zgody i jej wycofania jako dowód."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Wersja z dnia {{version}}",
     "s1": {
       "title": "Sprzedawca i kontakt",
-      "text": "Serwis {{site}} prowadzi {{company}}, {{address}}, NIP {{taxId}}, {{registry}} (dalej: Sprzedawca).\nKontakt w każdej sprawie, także reklamacje: {{email}}. Odpowiadamy w ciągu 14 dni."
+      "text": "Serwis {{site}} prowadzi {{seller}} (dalej: Sprzedawca).\nKontakt w każdej sprawie, także reklamacje: {{email}}. Odpowiadamy w ciągu 14 dni."
     },
     "s2": {
       "title": "Czym jest serwis",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Postanowienia końcowe",
       "text": "Regulamin jest dostępny bezpłatnie na tej stronie w formie, która umożliwia jego pobranie i wydrukowanie.\nZmiana regulaminu nie dotyczy umów zawartych przed jej wejściem w życie.\nPrawem właściwym jest prawo polskie, co nie pozbawia konsumenta ochrony przysługującej mu na podstawie bezwzględnie obowiązujących przepisów państwa jego zwykłego pobytu."
-    }
+    },
+    "taxIdLabel": "NIP"
+  },
+  "newsletter": {
+    "title": "Nowości o imporcie prosto na maila",
+    "lead": "Raz w miesiącu: zmiany w cłach i podatkach, ceny frachtu i nowe poradniki. Bez spamu, wypis jednym kliknięciem.",
+    "email": "Twój e-mail",
+    "consent": "Zgadzam się na otrzymywanie newslettera Carglo na e-mail. Mogę się wypisać w każdej chwili linkiem w każdej wiadomości.",
+    "submit": "Zapisz się",
+    "sent": "Prawie gotowe – sprawdź skrzynkę i kliknij link, aby potwierdzić zapis.",
+    "error": "Nie udało się zapisać. Spróbuj ponownie za chwilę.",
+    "confirmTitle": "Newsletter",
+    "working": "Chwileczkę…",
+    "confirmed": "Zapis potwierdzony. Dziękujemy!",
+    "unsubscribed": "Wypisaliśmy Cię z newslettera. Nie otrzymasz już kolejnych wiadomości.",
+    "invalid": "Ten link jest nieprawidłowy albo został już użyty."
   }
 }

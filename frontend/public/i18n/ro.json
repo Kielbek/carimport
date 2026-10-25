@@ -806,7 +806,7 @@
     "title": "Politica de confidențialitate",
     "s1": {
       "title": "Operatorul de date",
-      "text": "Operatorul de date este administratorul Carglo. Pentru aspecte privind protecția datelor ne poți contacta la {{email}}."
+      "text": "Operatorul datelor tale este {{seller}}, care administrează serviciul Carglo. Pentru chestiuni privind protecția datelor scrie la {{email}}."
     },
     "s2": {
       "title": "Ce date prelucrăm",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Drepturile tale",
       "text": "Ai dreptul de acces, rectificare, ștergere, restricționare, portabilitate și opoziție, dreptul de a-ți retrage oricând consimțământul și dreptul de a depune o plângere la autoritatea de supraveghere a protecției datelor. Scrie-ne: {{email}}."
+    },
+    "s7": {
+      "title": "Newsletter",
+      "text": "Dacă te abonezi, prelucrăm adresa ta de e-mail, limba și data și versiunea consimțământului pentru a-ți trimite newsletterul (art. 6 alin. (1) lit. a) GDPR). Adresa intră pe listă numai după ce o confirmi prin linkul pe care ți-l trimitem. Te poți dezabona oricând folosind linkul din fiecare mesaj sau scriind la {{email}}; trimiterea încetează imediat și păstrăm doar evidența consimțământului și a retragerii lui ca dovadă."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Versiunea din {{version}}",
     "s1": {
       "title": "Vânzătorul și datele de contact",
-      "text": "{{site}} este administrat de {{company}}, {{address}}, CIF {{taxId}}, {{registry}} (denumită în continuare „Vânzătorul”).\nContact pentru orice problemă, inclusiv reclamații: {{email}}. Răspundem în termen de 14 zile."
+      "text": "{{site}} este administrat de {{seller}} (denumită în continuare „Vânzătorul”).\nContact pentru orice problemă, inclusiv reclamații: {{email}}. Răspundem în termen de 14 zile."
     },
     "s2": {
       "title": "Ce este serviciul",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Dispoziții finale",
       "text": "Termenii și condițiile sunt disponibile gratuit pe această pagină, într-o formă care permite descărcarea și tipărirea lor.\nModificările termenilor și condițiilor nu se aplică contractelor încheiate înainte de intrarea lor în vigoare.\nSe aplică legea poloneză, fără ca consumatorul să fie privat de protecția acordată de dispozițiile imperative ale legii țării în care își are reședința obișnuită."
-    }
+    },
+    "taxIdLabel": "CIF"
+  },
+  "newsletter": {
+    "title": "Noutăți despre import direct în căsuța ta",
+    "lead": "O dată pe lună: modificări ale taxelor vamale și impozitelor, prețuri de transport și ghiduri noi. Fără spam, dezabonare cu un clic.",
+    "email": "E-mailul tău",
+    "consent": "Sunt de acord să primesc newsletterul Carglo prin e-mail. Mă pot dezabona oricând folosind linkul din fiecare mesaj.",
+    "submit": "Mă abonez",
+    "sent": "Aproape gata – verifică-ți căsuța de e-mail și apasă pe link pentru a confirma abonarea.",
+    "error": "Abonarea nu a reușit. Încearcă din nou mai târziu.",
+    "confirmTitle": "Newsletter",
+    "working": "O clipă…",
+    "confirmed": "Abonarea ta este confirmată. Mulțumim!",
+    "unsubscribed": "Te-ai dezabonat și nu vei mai primi newslettere.",
+    "invalid": "Acest link nu este valid sau a fost deja folosit."
   }
 }

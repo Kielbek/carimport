@@ -1,0 +1,8 @@
+[(#{mail.newsletter.intro})]
+
+[(#{mail.newsletter.button})]: [(${link})]
+
+[(#{mail.newsletter.ignore})]
+
+--
+[(${company.name()})]

@@ -34,7 +34,7 @@ export class PageContext {
       leaf = leaf.firstChild;
     }
     const data = leaf.snapshot.data;
-    const page = data['page'] as Page | 'report' | 'guide' | 'blog' | undefined;
+    const page = data['page'] as Page | 'report' | 'newsletter' | 'guide' | 'blog' | undefined;
     if (page === 'guide' || page === 'blog') {
       return; // guide and blog pages set their own head tags and language links
     }

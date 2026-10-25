@@ -806,7 +806,7 @@
     "title": "Zásady ochrany osobních údajů",
     "s1": {
       "title": "Správce údajů",
-      "text": "Správcem osobních údajů je provozovatel Carglo. V záležitostech ochrany osobních údajů nás kontaktujte na {{email}}."
+      "text": "Správcem vašich údajů je {{seller}}, provozovatel služby Carglo. Ve věcech ochrany osobních údajů pište na {{email}}."
     },
     "s2": {
       "title": "Jaké údaje zpracováváme",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Vaše práva",
       "text": "Máte právo na přístup, opravu, výmaz, omezení zpracování, přenositelnost a vznesení námitky, právo kdykoli odvolat souhlas a podat stížnost u dozorového úřadu pro ochranu osobních údajů. Napište nám: {{email}}."
+    },
+    "s7": {
+      "title": "Newsletter",
+      "text": "Pokud se přihlásíte, zpracováváme vaši e-mailovou adresu, jazyk a datum a verzi souhlasu za účelem zasílání newsletteru (čl. 6 odst. 1 písm. a GDPR). Adresa se na seznam dostane až po potvrzení odkazem, který vám pošleme. Odhlásit se můžete kdykoli odkazem v každé zprávě nebo e-mailem na {{email}}; zasílání ihned ukončíme a uchováme jen záznam o souhlasu a jeho odvolání jako důkaz."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Verze ze dne {{version}}",
     "s1": {
       "title": "Prodávající a kontakt",
-      "text": "Službu {{site}} provozuje {{company}}, {{address}}, DIČ {{taxId}}, {{registry}} (dále jen „prodávající“).\nKontakt ve všech záležitostech, včetně reklamací: {{email}}. Odpovídáme do 14 dnů."
+      "text": "Službu {{site}} provozuje {{seller}} (dále jen „prodávající“).\nKontakt ve všech záležitostech, včetně reklamací: {{email}}. Odpovídáme do 14 dnů."
     },
     "s2": {
       "title": "Co je služba",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Závěrečná ustanovení",
       "text": "Obchodní podmínky jsou na této stránce zdarma k dispozici ve formě, která umožňuje jejich stažení a vytištění.\nZměny obchodních podmínek se nevztahují na smlouvy uzavřené před nabytím jejich účinnosti.\nPoužije se polské právo, aniž by tím byl spotřebitel zbaven ochrany, kterou mu poskytují kogentní ustanovení právního řádu státu jeho obvyklého pobytu."
-    }
+    },
+    "taxIdLabel": "DIČ"
+  },
+  "newsletter": {
+    "title": "Novinky o dovozu přímo do e-mailu",
+    "lead": "Jednou měsíčně: změny cel a daní, ceny přepravy a nové průvodce. Žádný spam, odhlášení jedním kliknutím.",
+    "email": "Váš e-mail",
+    "consent": "Souhlasím se zasíláním newsletteru Carglo e-mailem. Kdykoli se mohu odhlásit odkazem v každé zprávě.",
+    "submit": "Přihlásit se",
+    "sent": "Skoro hotovo – zkontrolujte schránku a kliknutím na odkaz potvrďte přihlášení.",
+    "error": "Přihlášení se nezdařilo. Zkuste to prosím později.",
+    "confirmTitle": "Newsletter",
+    "working": "Okamžik…",
+    "confirmed": "Přihlášení je potvrzeno. Děkujeme!",
+    "unsubscribed": "Byli jste odhlášeni a další newslettery už nedostanete.",
+    "invalid": "Tento odkaz je neplatný nebo už byl použit."
   }
 }

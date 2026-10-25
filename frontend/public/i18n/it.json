@@ -806,7 +806,7 @@
     "title": "Informativa sulla privacy",
     "s1": {
       "title": "Titolare del trattamento",
-      "text": "Il titolare del trattamento è il gestore di Carglo. Per questioni relative alla protezione dei dati contattaci all’indirizzo {{email}}."
+      "text": "Il titolare del trattamento dei tuoi dati è {{seller}}, gestore del servizio Carglo. Per questioni relative ai dati personali scrivi a {{email}}."
     },
     "s2": {
       "title": "Quali dati trattiamo",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "I tuoi diritti",
       "text": "Hai il diritto di accesso, rettifica, cancellazione, limitazione, portabilità e opposizione, di revocare il consenso in qualsiasi momento e di proporre reclamo all’autorità di controllo per la protezione dei dati. Scrivici: {{email}}."
+    },
+    "s7": {
+      "title": "Newsletter",
+      "text": "Se ti iscrivi, trattiamo il tuo indirizzo e-mail, la lingua e la data e versione del consenso per inviarti la newsletter (art. 6, par. 1, lett. a GDPR). L'indirizzo entra nella lista solo dopo la conferma tramite il link che ti inviamo. Puoi disiscriverti in qualsiasi momento con il link presente in ogni messaggio o scrivendo a {{email}}; l'invio cessa subito e conserviamo solo la prova del consenso e della sua revoca."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Versione del {{version}}",
     "s1": {
       "title": "Venditore e contatti",
-      "text": "{{site}} è gestito da {{company}}, {{address}}, partita IVA {{taxId}}, {{registry}} (di seguito: il «Venditore»).\nContatto per qualsiasi questione, compresi i reclami: {{email}}. Rispondiamo entro 14 giorni."
+      "text": "{{site}} è gestito da {{seller}} (di seguito: il «Venditore»).\nContatto per qualsiasi questione, compresi i reclami: {{email}}. Rispondiamo entro 14 giorni."
     },
     "s2": {
       "title": "Che cos’è il servizio",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Disposizioni finali",
       "text": "Le condizioni generali sono disponibili gratuitamente su questa pagina in una forma che ne consente il download e la stampa.\nLe modifiche delle condizioni generali non si applicano ai contratti conclusi prima della loro entrata in vigore.\nSi applica la legge polacca, fermo restando che il consumatore non è privato della tutela garantitagli dalle norme imperative della legge del paese in cui ha la residenza abituale."
-    }
+    },
+    "taxIdLabel": "partita IVA"
+  },
+  "newsletter": {
+    "title": "Le novità sull'importazione nella tua casella",
+    "lead": "Una volta al mese: novità su dazi e imposte, prezzi dei noli e nuove guide. Niente spam, disiscrizione con un clic.",
+    "email": "La tua e-mail",
+    "consent": "Acconsento a ricevere la newsletter di Carglo via e-mail. Posso disiscrivermi in qualsiasi momento tramite il link presente in ogni messaggio.",
+    "submit": "Iscriviti",
+    "sent": "Quasi fatto: controlla la tua casella e clicca sul link per confermare l'iscrizione.",
+    "error": "Non è stato possibile completare l'iscrizione. Riprova più tardi.",
+    "confirmTitle": "Newsletter",
+    "working": "Un momento…",
+    "confirmed": "La tua iscrizione è confermata. Grazie!",
+    "unsubscribed": "Sei stato disiscritto e non riceverai altre newsletter.",
+    "invalid": "Questo link non è valido o è già stato utilizzato."
   }
 }

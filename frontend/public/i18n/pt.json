@@ -806,7 +806,7 @@
     "title": "Política de privacidade",
     "s1": {
       "title": "Responsável pelo tratamento",
-      "text": "O responsável pelo tratamento dos dados é o operador da Carglo. Para questões de proteção de dados, contacte-nos através de {{email}}."
+      "text": "O responsável pelo tratamento dos seus dados é {{seller}}, que explora o serviço Carglo. Para questões de proteção de dados escreva para {{email}}."
     },
     "s2": {
       "title": "Que dados tratamos",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Os seus direitos",
       "text": "Tem direito de acesso, retificação, apagamento, limitação, portabilidade e oposição, de retirar o consentimento a qualquer momento e de apresentar reclamação à autoridade de controlo de proteção de dados. Escreva-nos: {{email}}."
+    },
+    "s7": {
+      "title": "Newsletter",
+      "text": "Se subscrever, tratamos o seu endereço de e-mail, o idioma e a data e versão do seu consentimento para enviar a newsletter (art. 6.º, n.º 1, alínea a) do RGPD). O endereço só entra na lista depois de o confirmar através da ligação que lhe enviamos. Pode cancelar a qualquer momento através da ligação em cada mensagem ou escrevendo para {{email}}; o envio termina de imediato e guardamos apenas o registo do consentimento e da sua retirada como prova."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Versão de {{version}}",
     "s1": {
       "title": "Vendedor e contacto",
-      "text": "O {{site}} é explorado por {{company}}, {{address}}, NIF {{taxId}}, {{registry}} (doravante «Vendedor»).\nContacto para qualquer assunto, incluindo reclamações: {{email}}. Respondemos no prazo de 14 dias."
+      "text": "O {{site}} é explorado por {{seller}} (doravante «Vendedor»).\nContacto para qualquer assunto, incluindo reclamações: {{email}}. Respondemos no prazo de 14 dias."
     },
     "s2": {
       "title": "O que é o serviço",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Disposições finais",
       "text": "Os termos e condições estão disponíveis gratuitamente nesta página, num formato que permite descarregá-los e imprimi-los.\nAs alterações dos termos e condições não se aplicam aos contratos celebrados antes da sua entrada em vigor.\nÉ aplicável a lei polaca, sem que o consumidor fique privado da proteção que lhe é conferida pelas disposições imperativas da lei do país da sua residência habitual."
-    }
+    },
+    "taxIdLabel": "NIF"
+  },
+  "newsletter": {
+    "title": "Novidades sobre importação no seu e-mail",
+    "lead": "Uma vez por mês: alterações em direitos e impostos, preços de frete e novos guias. Sem spam, cancelamento com um clique.",
+    "email": "O seu e-mail",
+    "consent": "Aceito receber a newsletter da Carglo por e-mail. Posso cancelar a subscrição a qualquer momento através da ligação incluída em cada mensagem.",
+    "submit": "Subscrever",
+    "sent": "Quase pronto – verifique a sua caixa de correio e clique na ligação para confirmar a subscrição.",
+    "error": "Não foi possível concluir a subscrição. Tente novamente mais tarde.",
+    "confirmTitle": "Newsletter",
+    "working": "Um momento…",
+    "confirmed": "A sua subscrição está confirmada. Obrigado!",
+    "unsubscribed": "A sua subscrição foi cancelada. Não receberá mais newsletters.",
+    "invalid": "Esta ligação é inválida ou já foi utilizada."
   }
 }

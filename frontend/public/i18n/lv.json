@@ -806,7 +806,7 @@
     "title": "Privātuma politika",
     "s1": {
       "title": "Pārzinis",
-      "text": "Personas datu pārzinis ir Carglo uzturētājs. Datu aizsardzības jautājumos sazinieties ar mums: {{email}}."
+      "text": "Jūsu datu pārzinis ir {{seller}}, kas uztur pakalpojumu Carglo. Datu aizsardzības jautājumos rakstiet uz {{email}}."
     },
     "s2": {
       "title": "Kādus datus mēs apstrādājam",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Jūsu tiesības",
       "text": "Jums ir tiesības piekļūt saviem datiem, tos labot, dzēst, ierobežot to apstrādi, pārnest tos un iebilst pret apstrādi, jebkurā laikā atsaukt piekrišanu un iesniegt sūdzību datu aizsardzības uzraudzības iestādē. Rakstiet mums: {{email}}."
+    },
+    "s7": {
+      "title": "Jaunumi",
+      "text": "Ja pierakstāties, mēs apstrādājam jūsu e-pasta adresi, valodu un piekrišanas datumu un versiju, lai sūtītu jaunumus (VDAR 6. panta 1. punkta a) apakšpunkts). Adrese tiek iekļauta sarakstā tikai pēc tam, kad to apstiprināt ar saiti, ko jums nosūtām. Jebkurā laikā varat atteikties, izmantojot saiti katrā vēstulē vai rakstot uz {{email}}; sūtīšana tiek pārtraukta nekavējoties, un mēs saglabājam tikai ierakstu par piekrišanu un tās atsaukšanu kā pierādījumu."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Redakcija uz {{version}}",
     "s1": {
       "title": "Pārdevējs un kontakti",
-      "text": "Vietni {{site}} uztur {{company}}, {{address}}, PVN reģ. Nr. {{taxId}}, {{registry}} (turpmāk – Pārdevējs).\nKontakti jebkurā jautājumā, arī pretenziju iesniegšanai: {{email}}. Mēs atbildam 14 dienu laikā."
+      "text": "Vietni {{site}} uztur {{seller}} (turpmāk – Pārdevējs).\nKontakti jebkurā jautājumā, arī pretenziju iesniegšanai: {{email}}. Mēs atbildam 14 dienu laikā."
     },
     "s2": {
       "title": "Kas ir pakalpojums",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Noslēguma noteikumi",
       "text": "Noteikumi šajā lapā ir pieejami bez maksas tādā veidā, kas ļauj tos lejupielādēt un izdrukāt.\nNoteikumu grozījumi neattiecas uz līgumiem, kas noslēgti pirms grozījumu stāšanās spēkā.\nPiemēro Polijas tiesības, neliedzot patērētājam aizsardzību, ko tam sniedz tās valsts obligātās tiesību normas, kurā ir viņa pastāvīgā dzīvesvieta."
-    }
+    },
+    "taxIdLabel": "PVN reģ. Nr."
+  },
+  "newsletter": {
+    "title": "Importa jaunumi tieši jūsu e-pastā",
+    "lead": "Reizi mēnesī: muitas un nodokļu izmaiņas, kravu pārvadājumu cenas un jauni ceļveži. Bez surogātpasta, atteikšanās ar vienu klikšķi.",
+    "email": "Jūsu e-pasts",
+    "consent": "Piekrītu saņemt Carglo jaunumus e-pastā. Jebkurā laikā varu atteikties, izmantojot saiti katrā vēstulē.",
+    "submit": "Pierakstīties",
+    "sent": "Gandrīz gatavs – pārbaudiet e-pastu un noklikšķiniet uz saites, lai apstiprinātu pierakstu.",
+    "error": "Pierakstīties neizdevās. Lūdzu, mēģiniet vēlāk.",
+    "confirmTitle": "Jaunumi",
+    "working": "Mirkli…",
+    "confirmed": "Jūsu pieraksts ir apstiprināts. Paldies!",
+    "unsubscribed": "Jūs esat atteicies un vairs nesaņemsiet jaunumus.",
+    "invalid": "Šī saite nav derīga vai jau ir izmantota."
   }
 }
