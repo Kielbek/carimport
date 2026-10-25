@@ -2,7 +2,7 @@ import { Component, OnInit, computed, inject, input, signal } from '@angular/cor
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { AnalyticsService } from '../../core/analytics/analytics.service';
-import { OriginCountry } from '../../core/api/api.models';
+import { AuctionHouse, FuelType, OriginCountry, VehicleCategory } from '../../core/api/api.models';
 import { LanguageService } from '../../core/i18n/language.service';
 import { PageContext } from '../../core/routing/page-context';
 import { pathFor } from '../../core/routing/paths';
@@ -14,6 +14,7 @@ import { Icon } from '../../shared/icon/icon';
 import { AffiliateWidgets } from '../affiliates/affiliate-widgets';
 import { PartnerLeadForm } from '../leads/partner-lead-form';
 import { PaywallModal } from '../paywall/paywall-modal';
+import { GUIDE_MODELS } from '../guides/model-data.generated';
 import { CalculatorStore, LAST_INPUT_STEP, RESULT_STEP, WizardStep } from './calculator.store';
 import { EU_COUNTRIES, ORIGINS } from './calculator.options';
 import { StepAfterImport } from './steps/step-after-import';
@@ -108,10 +109,12 @@ import { StepVehicle } from './steps/step-vehicle';
   `,
 })
 export class CalculatorPage implements OnInit {
-  /** Deep links from the footer, home page and guides: ?from=USA, ?to=DE (destination), ?port=DEBRV (EU port). */
+  /** Deep links from the footer, home page and guides: ?from=USA, ?to=DE (destination), ?port=DEBRV (EU port), ?model=. */
   readonly from = input<string>();
   readonly to = input<string>();
   readonly port = input<string>();
+  /** ?model=ford-mustang from the model cost pages: the example car's data as the starting point. */
+  readonly model = input<string>();
 
   protected readonly store = inject(CalculatorStore);
   protected readonly page = inject(PageContext);
@@ -139,6 +142,26 @@ export class CalculatorPage implements OnInit {
     if (to && (EU_COUNTRIES as readonly string[]).includes(to)) {
       this.store.setAddress(null);
       this.store.patch({ destinationCountry: to, pricePerKm: null, postImportServices: null });
+    }
+    const model = GUIDE_MODELS.find((m) => m.id === this.model());
+    if (model) {
+      this.store.selectOrigin(model.origin as OriginCountry);
+      this.store.patch({
+        auctionHouse: model.auction as AuctionHouse,
+        pickupZone: model.zone,
+        bidPrice: model.price,
+        titleType: 'CLEAN',
+        condition: 'RUN_AND_DRIVE',
+        vehicleCategory: model.category as VehicleCategory,
+        fuelType: model.fuel as FuelType,
+        engineCc: model.cc,
+        productionYear: model.year,
+        powerKw: model.kw,
+        co2Gkm: model.co2,
+        massKg: model.kg,
+        vin: null,
+        vehicleDescription: `${model.year} ${model.make} ${model.model}`,
+      });
     }
     const port = this.port();
     if (port && /^[A-Z]{5}$/.test(port)) {

@@ -19,22 +19,27 @@ const pages = [
   { key: 'about', slugs: slugBlock('about'), freq: 'monthly', priority: '0.6' },
   { key: 'privacy', slugs: slugBlock('privacy'), freq: 'yearly', priority: '0.2' },
   { key: 'terms', slugs: slugBlock('terms'), freq: 'yearly', priority: '0.2' },
+  { key: 'taxes', slugs: slugBlock('taxes'), freq: 'monthly', priority: '0.8' },
+  { key: 'method', slugs: slugBlock('method'), freq: 'monthly', priority: '0.5' },
 ];
 // SEO guides: hubs and items, slugs from core/routing/guide-paths.ts and the generated guide data
 const guidePathsTs = src('core/routing/guide-paths.ts');
 const guideData = src('features/guides/guide-data.generated.ts');
-const sections = Object.fromEntries([...guidePathsTs.matchAll(/^  ([a-z]{2}): \{ origins: '([^']+)', countries: '([^']+)', ports: '([^']+)' \}/gm)]
-  .map((m) => [m[1], { origins: m[2], countries: m[3], ports: m[4] }]));
+const sections = Object.fromEntries([...guidePathsTs.matchAll(/^  ([a-z]{2}): \{ origins: '([^']+)', countries: '([^']+)', ports: '([^']+)', models: '([^']+)' \}/gm)]
+  .map((m) => [m[1], { origins: m[2], countries: m[3], ports: m[4], models: m[5] }]));
 const json = (name) => JSON.parse(guideData.match(new RegExp(`export const ${name}[^=]*= (.*);`))[1]);
 const countrySlugs = json('COUNTRY_SLUGS');
 const originSlugs = json('ORIGIN_SLUGS');
 const ports = json('GUIDE_PORTS');
+const modelData = src('features/guides/model-data.generated.ts');
+const models = JSON.parse(modelData.match(/export const GUIDE_MODELS[^=]*= (.*);/)[1]);
 const items = {
   origins: Object.keys(originSlugs.en).map((o) => (l) => originSlugs[l][o]),
   countries: Object.keys(countrySlugs.en).map((c) => (l) => countrySlugs[l][c]),
   ports: ports.map((p) => () => p.slug),
+  models: models.map((m) => () => m.id),
 };
-for (const section of ['origins', 'countries', 'ports']) {
+for (const section of ['origins', 'countries', 'ports', 'models']) {
   pages.push({ key: section, slugs: Object.fromEntries(langs.map((l) => [l, sections[l][section]])), freq: 'weekly', priority: '0.8' });
   for (const item of items[section]) {
     pages.push({ key: section, slugs: Object.fromEntries(langs.map((l) => [l, `${sections[l][section]}/${item(l)}`])), freq: 'monthly', priority: '0.7' });

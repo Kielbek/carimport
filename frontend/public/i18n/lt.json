@@ -450,7 +450,9 @@
     "what": "Ką skaičiuojame",
     "ctaHint": "Nemokamai, be registracijos",
     "language": "Kalba",
-    "blog": "Tinklaraštis"
+    "blog": "Tinklaraštis",
+    "taxes": "Muito ir mokesčių skaičiuoklė",
+    "method": "Kaip skaičiuojame"
   },
   "footer": {
     "about": "Nepriklausoma automobilių iš ne ES šalių importo išlaidų skaičiuoklė. Automobilių neparduodame ir neimportuojame – apskaičiuojame, kiek jie iš tikrųjų kainuoja.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "Taisyklės | Carglo",
       "description": "Automobilių importo išlaidų skaičiuoklės ir PDF ataskaitos taisyklės: pardavėjas, mokėjimas, pateikimas, sutarties atsisakymas ir pretenzijos."
+    },
+    "taxes": {
+      "title": "Muito skaičiuoklė importuojamam automobiliui – muitas, PVM, taršos mokestis | Carglo",
+      "description": "Apskaičiuokite muitą, importo PVM ir registracijos mokestį automobiliui iš JAV, Kanados, Japonijos, JAE ar Jungtinės Karalystės bet kuriai ES šaliai. Nemokamai ir aktualiai."
+    },
+    "method": {
+      "title": "Kaip skaičiuojame automobilio importo kainą – šaltiniai ir metodas | Carglo",
+      "description": "Iš kur mūsų tarifai, kaip vertiname transportą ir ko rezultatas negali žinoti. Visa Carglo skaičiuoklės metodika."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Importas pagal pirkimo šalį",
       "countries": "Importas į ES šalis",
       "ports": "ES muitinio įforminimo uostai",
-      "all": "Visi gidai"
+      "all": "Visi gidai",
+      "models": "Importo kaina pagal modelį"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} ES uostai automobilių importui – mokesčiai, PVM | Carglo",
         "metaDescription": "Palyginkite visus {{count}} ES automobilių muitinio įforminimo uostus: terminalo ir muitinės tarpininko mokesčiai, importo PVM, plaukimo trukmė ir atstumas iki Lietuvos.",
         "sortedFrom": "Surūšiuota pagal atstumą keliais iki: {{country}}"
+      },
+      "models": {
+        "title": "Kiek kainuoja populiaraus automobilio importas?",
+        "lead": "Išlaidų iki durų pavyzdžiai dažniausiai importuojamiems modeliams, apskaičiuoti šaliai: {{country}} – su dabartiniais mokesčiais, kursais ir frachtu.",
+        "metaTitle": "Automobilio importo kaina pagal modelį – {{models}} pavyzdžių | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra ir kiti: visa importo kaina su muitu, PVM, nacionaliniais mokesčiais ir transportu. Apskaičiuokite savo automobilį nemokamai."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Atidaryti skaičiuoklę"
     },
     "related": "Susiję gidai",
-    "disclaimer": "Informacija tik orientacinė; galutines sumas nustato mokesčių ir muitinės institucijos. Tarifai – kaip naudojami skaičiuoklėje."
+    "disclaimer": "Informacija tik orientacinė; galutines sumas nustato mokesčių ir muitinės institucijos. Tarifai – kaip naudojami skaičiuoklėje.",
+    "model": {
+      "metaTitle": "{{car}} importas {{from}} – kaina | Carglo",
+      "metaDescription": "Kiek kainuoja {{year}} m. {{car}} importas {{from}}? Apie {{total}} su muitu, PVM, mokesčiais ir transportu. Peržiūrėkite išskaidymą ir apskaičiuokite savo automobilį.",
+      "h1": "{{car}} importas {{from}}: kiek tai iš tikrųjų kainuoja",
+      "lead": "{{year}} m. {{car}}, pirktas už {{price}}, įregistruotas kainuoja apie {{total}} (šalis: {{country}}) – su pirkimu, transportu, muitu, PVM ir nacionaliniais mokesčiais.",
+      "summaryTitle": "Bendra kaina – {{country}}",
+      "summaryRange": "Realus intervalas: {{low}} – {{high}}",
+      "specs": {
+        "year": "Metai",
+        "engine": "Variklis",
+        "power": "Galia",
+        "hp": "AG",
+        "fuel": "Kuras",
+        "price": "Įprasta kaina – {{origin}}"
+      },
+      "table": {
+        "title": "Išlaidų išskaidymas",
+        "price": "Automobilis su aukciono ar pardavėjo mokesčiais",
+        "transport": "Transportas iki durų (sausuma, laivas, uostas)",
+        "duty": "Muitas",
+        "vat": "Importo PVM {{vatRate}} % ({{portCountry}})",
+        "registration": "Registracija, techninė apžiūra ir formalumai",
+        "other": "Draudimas ir kitos išlaidos",
+        "total": "Iš viso"
+      },
+      "note": "Pavyzdys apskaičiuotas {{date}} šaliai: {{country}}, skaičiuoklės tarifais. Jūsų automobilio kaina, būklė, vieta ir maršrutas keičia rezultatą.",
+      "p1": "Muitas skaičiuojamas nuo muitinės vertės – kainos su transportu iki ES sienos –, čia {{duty}}. Importo PVM {{vatRate}} % mokamas įforminimo šalyje ({{portCountry}}, uostas {{port}}): {{vat}}.",
+      "p2National": "Prie to prisideda eilutė „{{nationalName}}“: {{national}}. Ji priklauso nuo variklio, išmetamųjų teršalų ar vertės ir dažnai lemia, ar importas apsimoka.",
+      "p2None": "Šioje šalyje ({{country}}) už šį automobilį nemokamas registracijos ar akcizo mokestis – po muito ir PVM lieka tik registracijos išlaidos, apie {{registration}}.",
+      "p3": "Automobilis paimamas regione {{zone}} ir plukdomas iš {{departure}} į {{port}}. Nuo pirkimo iki registracijos skaičiuokite {{daysMin}}–{{daysMax}} d.",
+      "othersTitle": "Kiti populiarūs modeliai",
+      "faq1": {
+        "q": "Kiek kainuoja {{car}} importas?",
+        "a": "{{year}} m. {{car}}, pirktas už {{price}}, iš viso kainuoja apie {{total}} (intervalas {{low}} – {{high}}) su transportu, muitu {{duty}}, PVM {{vat}} ir registracija."
+      },
+      "faq2": {
+        "q": "Kokius mokesčius moku už importuotą {{car}}?",
+        "a": "Muitą ({{duty}}), importo PVM {{vatRate}} % ({{vat}}) ir, priklausomai nuo šalies, registracijos ar akcizo mokestį. Skaičiuoklė parodys tikslias sumas jūsų automobiliui."
+      },
+      "from": {
+        "USA": "iš JAV",
+        "CANADA": "iš Kanados",
+        "JAPAN": "iš Japonijos",
+        "UAE": "iš JAE",
+        "UK": "iš Jungtinės Karalystės"
+      }
+    }
   },
   "blog": {
     "title": "Automobilių importo tinklaraštis",
@@ -1482,5 +1546,71 @@
     "confirmed": "Jūsų prenumerata patvirtinta. Ačiū!",
     "unsubscribed": "Jūs atsisakėte prenumeratos ir naujienlaiškių nebegausite.",
     "invalid": "Ši nuoroda negalioja arba jau buvo panaudota."
+  },
+  "taxes": {
+    "eyebrow": "Nemokamas įrankis",
+    "title": "Importuojamo automobilio muito, PVM ir registracijos mokesčio skaičiuoklė",
+    "lead": "Įveskite automobilio iš JAV, Kanados, Japonijos, JAE ar Jungtinės Karalystės kainą ir variklį ir pamatykite mokesčius bet kuriai ES šaliai – pagal šio mėnesio muitinės kursą.",
+    "origin": "Pirkta",
+    "price": "Pirkimo kaina ({{currency}})",
+    "year": "Pagaminimo metai",
+    "fuel": "Kuras",
+    "engine": "Variklio tūris (cm³)",
+    "power": "Galia (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "neprivaloma",
+    "destination": "Registracijos šalis",
+    "submit": "Apskaičiuoti mokesčius",
+    "calculating": "Skaičiuojama…",
+    "resultTitle": "Šio automobilio mokesčiai",
+    "duty": "Muitas {{rate}} %",
+    "vat": "Importo PVM {{rate}} % ({{country}})",
+    "noNational": "{{country}}: šiam automobiliui nėra registracijos ar akcizo mokesčio",
+    "total": "Mokesčiai iš viso",
+    "note": "Muitinės vertė apima įprastą transportą iki {{port}}. Muitas ir PVM skaičiuojami pagal šio mėnesio muitinės kursą.",
+    "fullCost": "Visa kaina iki durų",
+    "error": "Apskaičiuoti nepavyko. Patikrinkite duomenis ir bandykite dar kartą.",
+    "empty": "Užpildykite automobilio duomenis ir spauskite „Apskaičiuoti mokesčius“.",
+    "p1Title": "Muitas",
+    "p1": "Lengvasis automobilis iš ne ES šalių moka 10 % muitą (pikapai ir furgonai iki 22 %) nuo muitinės vertės: pirkimo kainos su transportu ir draudimu iki ES sienos. Senesni nei 30 metų originalios būklės automobiliai gali būti istoriniai – su 0 % muitu ir mažesniu PVM.",
+    "p2Title": "Importo PVM",
+    "p2": "PVM mokamas įforminimo šalyje nuo muitinės vertės kartu su muitu. Paprastai tai didžiausias mokestis – nuo 17 % iki 27 % priklausomai nuo šalies.",
+    "p3Title": "Akcizas ir registracijos mokestis",
+    "p3": "Daug ES šalių registruojant prideda savo mokestį: taršos mokestį Lietuvoje, akcizą Lenkijoje, BPM Nyderlanduose, NoVA Austrijoje, malus Prancūzijoje ir kitus. Kai kurios šalys nieko neima.",
+    "countriesTitle": "Mokesčiai ir registracija pagal šalis"
+  },
+  "method": {
+    "eyebrow": "Metodika",
+    "title": "Kaip skaičiuojame automobilio importo kainą",
+    "lead": "Carglo įvertina kiekvieną žingsnį nuo aukciono iki registracijos pagal tas pačias taisykles, kurias taiko institucijos ir vežėjai. Štai iš kur skaičiai ir kur jie yra įvertinimai.",
+    "updated": "Tarifai ir taisyklės paskutinį kartą patikrinti: {{date}}",
+    "s1": {
+      "title": "Ką apima skaičiavimas",
+      "text": "Pirkimą su aukciono ar pardavėjo mokesčiais, transportą iki uosto, jūrų frachtą ir draudimą, uosto ir muitinės tarpininko mokesčius, muitą, importo PVM, nacionalinius mokesčius, pristatymą jūsų adresu ir techninę apžiūrą bei registraciją jūsų šalyje.\nKiekvienas rezultatas turi tris scenarijus – optimistinį, tikėtiną ir pesimistinį –, nes transporto kainos ir kai kurie mokesčiai svyruoja."
+    },
+    "s2": {
+      "title": "Muitas ir PVM",
+      "text": "Muito tarifai atitinka ES kombinuotąją nomenklatūrą (TARIC): 10 % lengviesiems automobiliams, iki 22 % pikapams ir furgonams, taip pat istorinių transporto priemonių, senesnių nei 30 metų, taisyklės. Muitinės vertė – kaina su transportu ir draudimu iki ES sienos.\nUžsienio valiutas perskaičiuojame pagal mėnesio muitinės kursą (praėjusio mėnesio priešpaskutinio trečiadienio kursai), kitas sumas – pagal dabartinius centrinio banko kursus."
+    },
+    "s3": {
+      "title": "Nacionaliniai mokesčiai",
+      "text": "Registracijos ir akcizo mokesčius modeliuojame pagal kiekvienos šalies teisę: variklio tūris, CO₂, galia, masė, amžius ir vertė – kaip reikalauja šalis. Kipre, Graikijoje, Kroatijoje ir Maltoje mokestis nustatomas oficialiomis skaičiuoklėmis – ten prašome sumos arba rodome intervalą.\nĮvedus CO₂ ir galią iš dokumentų, rezultatas tikslus; kitaip juos įvertiname pagal variklį ir kurą."
+    },
+    "s4": {
+      "title": "Transportas ir mokesčiai",
+      "text": "Sausumos transportą pirkimo šalyje vertiname pagal atstumą tarp paėmimo regiono ir išplaukimo uosto, taikydami įprastus vežėjų tarifus. Jūrų frachtas, uosto ir agentų mokesčiai – įprastos kiekvieno maršruto ir ES uosto kainos.\nŠios eilutės yra įvertinimai – ekspeditoriaus pasiūlymas jūsų automobiliui gali skirtis, todėl rodome intervalą."
+    },
+    "s5": {
+      "title": "Uosto pasirinkimas",
+      "text": "Skaičiuoklė įvertina kiekvieną ES uostą iki durų – frachtą, uosto mokesčius, uosto šalies PVM ir pristatymą jūsų adresu – ir pasiūlo pigiausią. Galite pasirinkti kitą uostą ir palyginti."
+    },
+    "s6": {
+      "title": "Ko skaičiavimas negali žinoti",
+      "text": "Tikrosios automobilio būklės, paslėptų pažeidimų, aukcionų kainų pokyčių, valiutų kursų svyravimų po skaičiavimo ir individualių institucijų sprendimų. Rezultatas yra informacinis – tai nėra muitinės sprendimas ar mokesčių konsultacija."
+    },
+    "s7": {
+      "title": "Nepriklausomumas",
+      "text": "Carglo neparduoda, neperka ir neimportuoja automobilių ir neima komisinių iš importuotojų už rezultatą. Uždirbame iš mokamos PDF ataskaitos. Pastebėjote klaidą ar pasenusį tarifą? Rašykite {{email}} – pataisysime."
+    }
   }
 }

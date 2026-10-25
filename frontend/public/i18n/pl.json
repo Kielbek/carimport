@@ -450,7 +450,9 @@
     "what": "Co liczymy",
     "ctaHint": "Za darmo, bez rejestracji",
     "language": "Język",
-    "blog": "Blog"
+    "blog": "Blog",
+    "taxes": "Kalkulator cła i akcyzy",
+    "method": "Jak liczymy"
   },
   "footer": {
     "about": "Niezależny kalkulator kosztów importu samochodów spoza UE. Nie sprzedajemy ani nie sprowadzamy aut – liczymy, ile naprawdę kosztują.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "Regulamin | Carglo",
       "description": "Zasady korzystania z kalkulatora kosztów importu i zakupu raportu PDF: sprzedawca, płatność, dostarczenie, odstąpienie od umowy i reklamacje."
+    },
+    "taxes": {
+      "title": "Kalkulator cła, akcyzy i VAT na samochód z USA | Carglo",
+      "description": "Oblicz cło, VAT importowy i akcyzę lub podatek rejestracyjny za auto z USA, Kanady, Japonii, ZEA lub UK dla każdego kraju UE. Za darmo, z aktualnymi stawkami."
+    },
+    "method": {
+      "title": "Jak liczymy koszt importu auta – źródła i metoda | Carglo",
+      "description": "Skąd pochodzą stawki, jak szacujemy transport i czego wynik nie wie. Pełna metodologia kalkulatora Carglo."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Import według kraju zakupu",
       "countries": "Import do krajów UE",
       "ports": "Porty odprawy w UE",
-      "all": "Wszystkie poradniki"
+      "all": "Wszystkie poradniki",
+      "models": "Koszt importu wg modelu"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} porty UE do importu aut – opłaty, VAT, czas rejsu | Carglo",
         "metaDescription": "Porównaj wszystkie {{count}} porty odprawy aut w UE: opłaty terminalowe i agencji celnej, VAT importowy, czas rejsu i odległość drogowa do Polski.",
         "sortedFrom": "Według odległości drogowej do: {{country}}"
+      },
+      "models": {
+        "title": "Ile kosztuje sprowadzenie popularnego auta?",
+        "lead": "Przykładowe koszty „pod drzwi” dla najczęściej sprowadzanych modeli, policzone dla kraju: {{country}} – z aktualnymi podatkami, kursami i frachtem.",
+        "metaTitle": "Koszt importu auta wg modelu – {{models}} przykładów | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra i inne: pełny koszt importu z cłem, VAT, akcyzą i transportem. Policz za darmo swoje auto."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Otwórz kalkulator"
     },
     "related": "Powiązane poradniki",
-    "disclaimer": "Informacje orientacyjne; ostateczne kwoty ustalają urzędy celne i skarbowe. Stawki takie, jak w kalkulatorze."
+    "disclaimer": "Informacje orientacyjne; ostateczne kwoty ustalają urzędy celne i skarbowe. Stawki takie, jak w kalkulatorze.",
+    "model": {
+      "metaTitle": "Import {{car}} {{from}} – ile kosztuje? | Carglo",
+      "metaDescription": "Ile kosztuje sprowadzenie {{car}} ({{year}}) {{from}}? Ok. {{total}} z cłem, VAT, akcyzą i transportem. Zobacz rozbicie kosztów i policz swoje auto.",
+      "h1": "Import {{car}} {{from}}: ile to naprawdę kosztuje",
+      "lead": "{{car}} z {{year}} r. kupiony za {{price}} kosztuje ok. {{total}} po rejestracji (kraj: {{country}}) – z zakupem, transportem, cłem, VAT i podatkami krajowymi.",
+      "summaryTitle": "Łączny koszt – {{country}}",
+      "summaryRange": "Realny przedział: {{low}} – {{high}}",
+      "specs": {
+        "year": "Rocznik",
+        "engine": "Silnik",
+        "power": "Moc",
+        "hp": "KM",
+        "fuel": "Paliwo",
+        "price": "Typowa cena – {{origin}}"
+      },
+      "table": {
+        "title": "Rozbicie kosztów",
+        "price": "Auto z opłatami aukcji lub dealera",
+        "transport": "Transport pod dom (ląd, statek, port)",
+        "duty": "Cło",
+        "vat": "VAT importowy {{vatRate}}% ({{portCountry}})",
+        "registration": "Rejestracja, badanie i formalności",
+        "other": "Ubezpieczenie i inne koszty",
+        "total": "Razem"
+      },
+      "note": "Przykład policzony {{date}} dla kraju: {{country}}, stawkami kalkulatora. Cena, stan, lokalizacja i trasa Twojego auta zmieniają wynik.",
+      "p1": "Cło nalicza się od wartości celnej – ceny auta z transportem do granicy UE – tu {{duty}}. VAT importowy {{vatRate}}% płaci się w kraju odprawy ({{portCountry}}, port {{port}}): {{vat}}.",
+      "p2National": "Do tego dochodzi pozycja „{{nationalName}}”: {{national}}. Zależy od silnika, emisji lub wartości auta, więc często to ona decyduje, czy import się opłaca.",
+      "p2None": "W tym kraju ({{country}}) za to auto nie płaci się akcyzy ani podatku rejestracyjnego – po cle i VAT zostają tylko koszty rejestracji, ok. {{registration}}.",
+      "p3": "Auto jest odbierane w regionie {{zone}} i płynie z portu {{departure}} do portu {{port}}. Od zakupu do rejestracji licz {{daysMin}}–{{daysMax}} dni.",
+      "othersTitle": "Inne popularne modele",
+      "faq1": {
+        "q": "Ile kosztuje sprowadzenie {{car}}?",
+        "a": "{{car}} z {{year}} r. kupiony za {{price}} to łącznie ok. {{total}} (przedział {{low}} – {{high}}) z transportem, cłem {{duty}}, VAT {{vat}} i rejestracją."
+      },
+      "faq2": {
+        "q": "Jakie podatki zapłacę za sprowadzony {{car}}?",
+        "a": "Cło ({{duty}}), VAT importowy {{vatRate}}% ({{vat}}) oraz – zależnie od kraju – akcyzę lub podatek rejestracyjny. Kalkulator pokaże dokładne kwoty dla Twojego auta."
+      },
+      "from": {
+        "USA": "z USA",
+        "CANADA": "z Kanady",
+        "JAPAN": "z Japonii",
+        "UAE": "z ZEA",
+        "UK": "z Wielkiej Brytanii"
+      }
+    }
   },
   "blog": {
     "title": "Blog o imporcie aut",
@@ -1482,5 +1546,71 @@
     "confirmed": "Zapis potwierdzony. Dziękujemy!",
     "unsubscribed": "Wypisaliśmy Cię z newslettera. Nie otrzymasz już kolejnych wiadomości.",
     "invalid": "Ten link jest nieprawidłowy albo został już użyty."
+  },
+  "taxes": {
+    "eyebrow": "Darmowe narzędzie",
+    "title": "Kalkulator cła, akcyzy i VAT na sprowadzane auto",
+    "lead": "Wpisz cenę i silnik auta z USA, Kanady, Japonii, ZEA lub UK i zobacz podatki dla dowolnego kraju UE – z celnym kursem walut na ten miesiąc.",
+    "origin": "Kupione w",
+    "price": "Cena zakupu ({{currency}})",
+    "year": "Rok produkcji",
+    "fuel": "Paliwo",
+    "engine": "Pojemność silnika (cm³)",
+    "power": "Moc (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "opcjonalnie",
+    "destination": "Kraj rejestracji",
+    "submit": "Oblicz podatki",
+    "calculating": "Liczę…",
+    "resultTitle": "Podatki za to auto",
+    "duty": "Cło {{rate}}%",
+    "vat": "VAT importowy {{rate}}% ({{country}})",
+    "noNational": "{{country}}: brak akcyzy i podatku rejestracyjnego dla tego auta",
+    "total": "Podatki razem",
+    "note": "Wartość celna obejmuje typowy transport do portu {{port}}. Cło i VAT liczone są po celnym kursie walut z tego miesiąca.",
+    "fullCost": "Pełny koszt pod dom",
+    "error": "Nie udało się policzyć. Sprawdź dane i spróbuj ponownie.",
+    "empty": "Uzupełnij dane auta i kliknij „Oblicz podatki”.",
+    "p1Title": "Cło",
+    "p1": "Samochód osobowy spoza UE płaci 10% cła (pick-upy i dostawczaki do 22%) od wartości celnej: ceny zakupu z transportem i ubezpieczeniem do granicy UE. Auta ponad 30-letnie w oryginalnym stanie mogą być zabytkowe – z cłem 0% i niższym VAT.",
+    "p2Title": "VAT importowy",
+    "p2": "VAT płaci się w kraju odprawy celnej, od wartości celnej powiększonej o cło. To zwykle największy podatek – od 17% do 27% zależnie od kraju.",
+    "p3Title": "Akcyza i podatek rejestracyjny",
+    "p3": "Wiele krajów UE dolicza własny podatek przy rejestracji: akcyzę w Polsce (3,1% lub 18,6% zależnie od pojemności), BPM w Holandii, NoVA w Austrii, malus CO₂ we Francji i inne. Niektóre kraje nie pobierają nic.",
+    "countriesTitle": "Podatki i rejestracja w poszczególnych krajach"
+  },
+  "method": {
+    "eyebrow": "Metodologia",
+    "title": "Jak liczymy koszt importu auta",
+    "lead": "Carglo wycenia każdy etap od aukcji do rejestracji według tych samych zasad, których używają urzędy i przewoźnicy. Oto skąd pochodzą liczby i gdzie są szacunkiem.",
+    "updated": "Stawki i przepisy sprawdzone: {{date}}",
+    "s1": {
+      "title": "Co obejmuje wyliczenie",
+      "text": "Zakup z opłatami aukcji lub dealera, transport do portu, fracht morski i ubezpieczenie, opłaty portowe i agencji celnej, cło, VAT importowy, podatki krajowe, dowóz pod Twój adres oraz badanie i rejestrację w Twoim kraju.\nKażdy wynik ma trzy scenariusze – optymistyczny, oczekiwany i pesymistyczny – bo ceny transportu i część opłat się wahają."
+    },
+    "s2": {
+      "title": "Cło i VAT",
+      "text": "Stawki cła pochodzą z Nomenklatury Scalonej UE (TARIC): 10% dla aut osobowych, do 22% dla pick-upów i dostawczych, oraz zasady dla pojazdów zabytkowych ponad 30-letnich. Wartość celna to cena z transportem i ubezpieczeniem do granicy UE.\nCeny w obcych walutach przeliczamy celnym kursem obowiązującym w danym miesiącu (kursy z przedostatniej środy poprzedniego miesiąca), pozostałe kwoty – bieżącymi kursami banku centralnego."
+    },
+    "s3": {
+      "title": "Podatki krajowe",
+      "text": "Akcyzę i podatki rejestracyjne liczymy według przepisów każdego kraju: pojemność, CO₂, moc, masa, wiek i wartość – tak, jak wymaga dany kraj. Na Cyprze, w Grecji, Chorwacji i na Malcie podatek wynika z oficjalnych kalkulatorów – tam prosimy o kwotę albo pokazujemy przedział.\nGdy podasz CO₂ i moc z dokumentów, wynik jest dokładny; w przeciwnym razie szacujemy je z silnika i paliwa."
+    },
+    "s4": {
+      "title": "Transport i opłaty",
+      "text": "Transport lądowy w kraju zakupu wyceniamy z odległości między regionem odbioru a portem wyjścia według typowych taryf przewoźników. Fracht morski, opłaty portowe i agencji to typowe ceny dla każdej trasy i portu w UE.\nTe pozycje są szacunkiem – oferta spedytora dla Twojego auta może się różnić, dlatego pokazujemy przedział."
+    },
+    "s5": {
+      "title": "Wybór portu",
+      "text": "Kalkulator wycenia każdy port w UE „pod drzwi” – fracht, opłaty portowe, VAT kraju portu i dowóz pod Twój adres – i proponuje najtańszy. Możesz wybrać inny port i porównać."
+    },
+    "s6": {
+      "title": "Czego wyliczenie nie wie",
+      "text": "Rzeczywistego stanu auta, ukrytych uszkodzeń, zmian cen na aukcjach, ruchów kursów walut po wycenie ani indywidualnych decyzji urzędów. Wynik ma charakter informacyjny – nie jest decyzją celną ani poradą podatkową."
+    },
+    "s7": {
+      "title": "Niezależność",
+      "text": "Carglo nie sprzedaje, nie kupuje i nie sprowadza aut i nie bierze prowizji od importerów za wynik. Zarabiamy na płatnym raporcie PDF. Widzisz błąd albo nieaktualną stawkę? Napisz na {{email}} – poprawimy."
+    }
   }
 }

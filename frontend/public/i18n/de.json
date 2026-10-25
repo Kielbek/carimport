@@ -450,7 +450,9 @@
     "what": "Was wir rechnen",
     "ctaHint": "Kostenlos, ohne Anmeldung",
     "language": "Sprache",
-    "blog": "Blog"
+    "blog": "Blog",
+    "taxes": "Zoll- und Steuerrechner",
+    "method": "So rechnen wir"
   },
   "footer": {
     "about": "Unabhängiger Rechner für die Importkosten von Autos außerhalb der EU. Wir verkaufen und importieren keine Autos – wir rechnen aus, was sie wirklich kosten.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "AGB | Carglo",
       "description": "Allgemeine Geschäftsbedingungen für den Importkostenrechner und den PDF-Bericht: Verkäufer, Zahlung, Lieferung, Widerruf und Reklamationen."
+    },
+    "taxes": {
+      "title": "Zollrechner Auto-Import – Zoll, Einfuhrumsatzsteuer, Zulassungssteuer | Carglo",
+      "description": "Berechnen Sie Zoll, Einfuhrumsatzsteuer und Zulassungs- oder Verbrauchsteuer für ein Auto aus den USA, Kanada, Japan, den VAE oder UK für jedes EU-Land. Kostenlos und aktuell."
+    },
+    "method": {
+      "title": "So berechnen wir die Kosten des Autoimports – Quellen und Methode | Carglo",
+      "description": "Woher unsere Sätze stammen, wie wir den Transport schätzen und was das Ergebnis nicht wissen kann. Die vollständige Methodik des Carglo-Rechners."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Import nach Kaufland",
       "countries": "Import in EU-Länder",
       "ports": "Abfertigungshäfen in der EU",
-      "all": "Alle Ratgeber"
+      "all": "Alle Ratgeber",
+      "models": "Importkosten nach Modell"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} EU-Häfen für Autoimporte – Gebühren, EUSt, Fahrzeit | Carglo",
         "metaDescription": "Alle {{count}} EU-Abfertigungshäfen für Autos im Vergleich: Terminal- und Zollagenturgebühren, Einfuhrumsatzsteuer, Fahrzeiten und Entfernung nach Deutschland.",
         "sortedFrom": "Sortiert nach Straßenentfernung zu: {{country}}"
+      },
+      "models": {
+        "title": "Was kostet der Import eines beliebten Autos?",
+        "lead": "Beispiele bis vor die Haustür für die meistimportierten Modelle, berechnet für {{country}} mit aktuellen Steuern, Kursen und Frachtpreisen.",
+        "metaTitle": "Auto-Importkosten nach Modell – {{models}} Beispiele | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra und mehr: die vollen Importkosten mit Zoll, Einfuhrumsatzsteuer, nationalen Steuern und Transport. Berechnen Sie Ihr Auto kostenlos."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Zum Rechner"
     },
     "related": "Verwandte Ratgeber",
-    "disclaimer": "Informationen nur zur Orientierung; die endgültigen Beträge legen Steuer- und Zollbehörden fest. Sätze wie im Rechner verwendet."
+    "disclaimer": "Informationen nur zur Orientierung; die endgültigen Beträge legen Steuer- und Zollbehörden fest. Sätze wie im Rechner verwendet.",
+    "model": {
+      "metaTitle": "{{car}} {{from}} importieren – Kosten | Carglo",
+      "metaDescription": "Was kostet der Import eines {{car}} ({{year}}) {{from}}? Rund {{total}} mit Zoll, Einfuhrumsatzsteuer, Steuern und Transport. Aufschlüsselung ansehen und eigenes Auto berechnen.",
+      "h1": "{{car}} {{from}} importieren: was es wirklich kostet",
+      "lead": "Ein {{car}} von {{year}}, gekauft für {{price}}, kostet zugelassen rund {{total}} (Land: {{country}}) – Kauf, Transport, Zoll, Einfuhrumsatzsteuer und nationale Steuern inklusive.",
+      "summaryTitle": "Gesamtkosten – {{country}}",
+      "summaryRange": "Realistische Spanne: {{low}} – {{high}}",
+      "specs": {
+        "year": "Baujahr",
+        "engine": "Motor",
+        "power": "Leistung",
+        "hp": "PS",
+        "fuel": "Kraftstoff",
+        "price": "Typischer Preis – {{origin}}"
+      },
+      "table": {
+        "title": "Kostenaufstellung",
+        "price": "Auto mit Auktions- oder Händlergebühren",
+        "transport": "Transport bis vor die Tür (Land, Schiff, Hafen)",
+        "duty": "Zoll",
+        "vat": "Einfuhrumsatzsteuer {{vatRate}} % ({{portCountry}})",
+        "registration": "Zulassung, Prüfung und Formalitäten",
+        "other": "Versicherung und sonstige Kosten",
+        "total": "Gesamt"
+      },
+      "note": "Beispiel berechnet am {{date}} für {{country}} mit den Sätzen des Rechners. Preis, Zustand, Standort und Route Ihres Autos verändern das Ergebnis.",
+      "p1": "Zoll wird auf den Zollwert erhoben – Preis plus Transport bis zur EU-Grenze – hier {{duty}}. Die Einfuhrumsatzsteuer von {{vatRate}} % fällt im Land der Verzollung an ({{portCountry}}, Hafen {{port}}): {{vat}}.",
+      "p2National": "Hinzu kommt die Position „{{nationalName}}“: {{national}}. Sie hängt von Motor, Emissionen oder Wert ab und entscheidet oft darüber, ob sich der Import lohnt.",
+      "p2None": "In diesem Land ({{country}}) fällt für dieses Auto keine Zulassungs- oder Verbrauchsteuer an – nach Zoll und Einfuhrumsatzsteuer bleiben nur die Zulassungskosten von rund {{registration}}.",
+      "p3": "Das Auto wird in {{zone}} abgeholt und von {{departure}} nach {{port}} verschifft. Vom Kauf bis zur Zulassung rechnen Sie mit {{daysMin}}–{{daysMax}} Tagen.",
+      "othersTitle": "Weitere beliebte Modelle",
+      "faq1": {
+        "q": "Was kostet der Import eines {{car}}?",
+        "a": "Ein {{car}} von {{year}}, gekauft für {{price}}, kostet insgesamt rund {{total}} (Spanne {{low}} – {{high}}) inklusive Transport, Zoll {{duty}}, Einfuhrumsatzsteuer {{vat}} und Zulassung."
+      },
+      "faq2": {
+        "q": "Welche Steuern zahle ich für einen importierten {{car}}?",
+        "a": "Zoll ({{duty}}), Einfuhrumsatzsteuer {{vatRate}} % ({{vat}}) und je nach Land eine Zulassungs- oder Verbrauchsteuer. Der Rechner zeigt die genauen Beträge für Ihr Auto."
+      },
+      "from": {
+        "USA": "aus den USA",
+        "CANADA": "aus Kanada",
+        "JAPAN": "aus Japan",
+        "UAE": "aus den VAE",
+        "UK": "aus Großbritannien"
+      }
+    }
   },
   "blog": {
     "title": "Blog zum Autoimport",
@@ -1482,5 +1546,71 @@
     "confirmed": "Ihre Anmeldung ist bestätigt. Vielen Dank!",
     "unsubscribed": "Sie wurden abgemeldet und erhalten keine weiteren Newsletter.",
     "invalid": "Dieser Link ist ungültig oder wurde bereits verwendet."
+  },
+  "taxes": {
+    "eyebrow": "Kostenloses Tool",
+    "title": "Zollrechner für Importautos: Zoll, Einfuhrumsatzsteuer und Zulassungssteuer",
+    "lead": "Geben Sie Preis und Motor eines Autos aus den USA, Kanada, Japan, den VAE oder UK ein und sehen Sie die Steuern für jedes EU-Land – mit dem Zollkurs dieses Monats.",
+    "origin": "Gekauft in",
+    "price": "Kaufpreis ({{currency}})",
+    "year": "Baujahr",
+    "fuel": "Kraftstoff",
+    "engine": "Hubraum (cm³)",
+    "power": "Leistung (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "optional",
+    "destination": "Zulassung in",
+    "submit": "Steuern berechnen",
+    "calculating": "Wird berechnet…",
+    "resultTitle": "Steuern für dieses Auto",
+    "duty": "Zoll {{rate}} %",
+    "vat": "Einfuhrumsatzsteuer {{rate}} % ({{country}})",
+    "noNational": "{{country}}: keine Zulassungs- oder Verbrauchsteuer für dieses Auto",
+    "total": "Steuern gesamt",
+    "note": "Der Zollwert enthält den typischen Transport bis {{port}}. Zoll und Einfuhrumsatzsteuer folgen dem Zollkurs dieses Monats.",
+    "fullCost": "Vollständige Kosten bis vor die Tür",
+    "error": "Die Berechnung ist fehlgeschlagen. Prüfen Sie die Angaben und versuchen Sie es erneut.",
+    "empty": "Geben Sie die Daten des Autos ein und klicken Sie auf „Steuern berechnen“.",
+    "p1Title": "Zoll",
+    "p1": "Ein Pkw von außerhalb der EU zahlt 10 % Zoll (Pick-ups und Transporter bis 22 %) auf den Zollwert: Kaufpreis plus Transport und Versicherung bis zur EU-Grenze. Autos über 30 Jahre im Originalzustand können als historisch gelten – mit 0 % Zoll und ermäßigter Einfuhrumsatzsteuer.",
+    "p2Title": "Einfuhrumsatzsteuer",
+    "p2": "Die Steuer wird im Land der Verzollung auf Zollwert plus Zoll erhoben. Sie ist meist der größte Einzelposten – zwischen 17 % und 27 % je nach Land.",
+    "p3Title": "Verbrauch- und Zulassungssteuer",
+    "p3": "Viele EU-Länder erheben bei der Zulassung eine eigene Steuer: die Akzise in Polen (3,1 % oder 18,6 % nach Hubraum), die BPM in den Niederlanden, die NoVA in Österreich, den CO₂-Malus in Frankreich und weitere. Manche Länder erheben nichts – auch Deutschland nicht.",
+    "countriesTitle": "Steuern und Zulassung nach Land"
+  },
+  "method": {
+    "eyebrow": "Methodik",
+    "title": "So berechnen wir die Kosten des Autoimports",
+    "lead": "Carglo bepreist jeden Schritt von der Auktion bis zur Zulassung nach denselben Regeln, die Behörden und Spediteure anwenden. Hier steht, woher die Zahlen kommen und wo sie Schätzungen sind.",
+    "updated": "Sätze und Vorschriften zuletzt geprüft: {{date}}",
+    "s1": {
+      "title": "Was die Berechnung umfasst",
+      "text": "Den Kauf mit Auktions- oder Händlergebühren, den Transport zum Hafen, Seefracht und Versicherung, Hafen- und Zollagenturgebühren, Zoll, Einfuhrumsatzsteuer, nationale Steuern, die Lieferung an Ihre Adresse sowie Prüfung und Zulassung in Ihrem Land.\nJedes Ergebnis hat drei Szenarien – optimistisch, erwartet und pessimistisch –, weil Transportpreise und einige Gebühren schwanken."
+    },
+    "s2": {
+      "title": "Zoll und Einfuhrumsatzsteuer",
+      "text": "Die Zollsätze folgen der Kombinierten Nomenklatur der EU (TARIC): 10 % für Pkw, bis 22 % für Pick-ups und Transporter, dazu die Regeln für historische Fahrzeuge über 30 Jahre. Der Zollwert ist der Preis plus Transport und Versicherung bis zur EU-Grenze.\nFremdwährungen rechnen wir mit dem im Monat gültigen Zollkurs um (Kurse des vorletzten Mittwochs des Vormonats), andere Beträge mit aktuellen Zentralbankkursen."
+    },
+    "s3": {
+      "title": "Nationale Steuern",
+      "text": "Zulassungs- und Verbrauchsteuern bilden wir nach dem Recht jedes Landes ab: Hubraum, CO₂, Leistung, Gewicht, Alter und Wert – so, wie es das Land verlangt. In Zypern, Griechenland, Kroatien und Malta ergibt sich die Steuer aus amtlichen Rechnern – dort fragen wir nach dem Betrag oder zeigen eine Spanne.\nWenn Sie CO₂ und Leistung aus den Papieren eingeben, ist das Ergebnis exakt; sonst schätzen wir sie aus Motor und Kraftstoff."
+    },
+    "s4": {
+      "title": "Transport und Gebühren",
+      "text": "Den Landtransport im Kaufland bepreisen wir aus der Entfernung zwischen Abholregion und Abfahrtshafen mit typischen Spediteurstarifen. Seefracht, Hafen- und Agenturgebühren sind typische Preise je Route und EU-Hafen.\nDiese Positionen sind Schätzungen – das Angebot eines Spediteurs für Ihr Auto kann abweichen, deshalb zeigen wir eine Spanne."
+    },
+    "s5": {
+      "title": "Wahl des Hafens",
+      "text": "Der Rechner bepreist jeden EU-Hafen bis vor die Tür – Fracht, Hafengebühren, die Einfuhrumsatzsteuer des Hafenlandes und die Lieferung an Ihre Adresse – und schlägt den günstigsten vor. Sie können einen anderen Hafen wählen und vergleichen."
+    },
+    "s6": {
+      "title": "Was die Berechnung nicht wissen kann",
+      "text": "Den tatsächlichen Zustand des Autos, versteckte Schäden, Preisänderungen bei Auktionen, Kursbewegungen nach der Berechnung und individuelle Entscheidungen der Behörden. Das Ergebnis ist eine Information, keine Zollentscheidung und keine Steuerberatung."
+    },
+    "s7": {
+      "title": "Unabhängigkeit",
+      "text": "Carglo verkauft, kauft und verschifft keine Autos und nimmt von Importeuren keine Provision für das Ergebnis. Wir verdienen am kostenpflichtigen PDF-Bericht. Fehler oder veralteter Satz entdeckt? Schreiben Sie an {{email}} – wir korrigieren es."
+    }
   }
 }

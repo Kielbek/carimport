@@ -199,7 +199,14 @@ export class SeoService {
 
   private baseGraph(lang: Lang): Record<string, unknown>[] {
     return [
-      { '@type': 'Organization', '@id': `${SITE.url}/#org`, name: SITE.name, url: SITE.url, email: SITE.email },
+      {
+        '@type': 'Organization',
+        '@id': `${SITE.url}/#org`,
+        name: SITE.name,
+        url: SITE.url,
+        email: SITE.email,
+        logo: { '@type': 'ImageObject', url: `${SITE.url}/icons/icon-512.png`, width: 512, height: 512 },
+      },
       {
         '@type': 'WebSite',
         '@id': `${SITE.url}/#website`,

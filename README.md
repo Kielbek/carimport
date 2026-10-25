@@ -60,6 +60,19 @@ docker compose -f docker-compose.prod.yml exec -T db pg_restore -U carimport -d 
 docker compose -f docker-compose.prod.yml run --rm -v "$PWD/backups:/b" --entrypoint sh api -c 'tar -xzf /b/reports-RRRRMMDD-GGMM.tar.gz -C /data'
 ```
 
+### Strony SEO: modele, kalkulator podatków, metodologia
+
+* **Koszt importu wg modelu** (`/pl/koszt-importu/ford-mustang`, `/de/importkosten/...`, 16 modeli × 23 języki): lista
+  modeli w `frontend/tools/models.json`, przykładowe koszty liczy prawdziwy silnik dla kraju każdego języka:
+  ```bash
+  cd backend && java -jar target/carimport-backend-*.jar --spring.profiles.active=models
+  # -> frontend/src/app/features/guides/model-data.generated.ts, potem: cd ../frontend && node tools/generate-sitemap.mjs
+  ```
+  Uruchamiaj po zmianie stawek lub listy modeli (np. raz w miesiącu). Link „Policz dokładnie” otwiera kalkulator
+  wypełniony danymi modelu (`?model=ford-mustang`).
+* **Kalkulator cła, akcyzy i VAT** (`/pl/kalkulator-cla-i-akcyzy`) – same podatki z tego samego silnika (`/quotes/preview`).
+* **Jak liczymy** (`/pl/jak-liczymy`) – źródła i założenia; datę przeglądu stawek ustawia `SITE.ratesReviewed`.
+
 ### Newsletter
 
 Formularz w stopce każdej strony, z podwójnym potwierdzeniem (double opt-in): adres trafia na listę dopiero po
