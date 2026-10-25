@@ -118,7 +118,10 @@ class ReportMailerTest {
         String body = bodies((Multipart) m.getContent());
         assertThat(body).contains("Dzień dobry Jan Kowalski", "Carglo Sp. z o.o.", "NIP 1234567890",
                 "regulamin w wersji z dnia 2026-10-24",
-                "import-report-" + order.getId() + ".pdf");
+                "import-report-" + order.getId() + ".pdf", "cid:logo");
+        var raw = new java.io.ByteArrayOutputStream();
+        m.writeTo(raw);
+        assertThat(raw.toString()).contains("Content-ID: <logo>");   // the header logo travels inside the message
         Matcher link = Pattern.compile("https://carimport\\.eu/pl/report/" + order.getId() + "#token=([A-Za-z0-9_-]{43})")
                 .matcher(body);
         assertThat(link.find()).isTrue();

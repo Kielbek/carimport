@@ -17,6 +17,7 @@ import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.MessageSource;
 import org.springframework.core.io.ByteArrayResource;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.mail.MailException;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -37,6 +38,8 @@ import org.thymeleaf.context.Context;
 public class ReportMailer {
 
     private static final Logger log = LoggerFactory.getLogger(ReportMailer.class);
+    /** Header lockup embedded in the message (cid:logo) - remote images are blocked by most mail clients. */
+    private static final ClassPathResource LOGO = new ClassPathResource("mail/logo.png");
 
     private final ReportOrderRepository orders;
     private final QuoteRepository quotes;
@@ -110,6 +113,7 @@ public class ReportMailer {
         helper.setTo(order.getEmail());
         helper.setSubject(messages.getMessage("mail.report.subject", null, locale));
         helper.setText(templates.process("mail/report.txt", ctx), templates.process("mail/report", ctx));
+        helper.addInline("logo", LOGO, "image/png");
         try (InputStream pdf = storage.open(order.getPdfStorageKey())) {
             helper.addAttachment("import-report-" + order.getId() + ".pdf", new ByteArrayResource(pdf.readAllBytes()),
                     "application/pdf");
