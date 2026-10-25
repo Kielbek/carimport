@@ -294,7 +294,10 @@
     "tileCar": "Auto",
     "tileTransport": "Transport do {{port}}",
     "tileTaxes": "Cło, podatki, port",
-    "tileDelivery": "Dowóz do domu"
+    "tileDelivery": "Dowóz do domu",
+    "approx": "ok.",
+    "span": "zwykle {{min}} – {{max}}",
+    "estimateNote": "Transport i dowóz to szacunek z typowych stawek, zaokrąglony do 100. Dokładne kwoty, pozycja po pozycji, są w pełnym raporcie."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Kontener na wyłączność",

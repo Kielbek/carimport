@@ -286,10 +286,18 @@
     "moreLocked": "+ dalších {{count}} položek vč. skrytých nákladů",
     "customsFx": "Clo a DPH počítáme z celní hodnoty přepočtené celním kurzem měsíce – kurzem ze dne {{date}} (předposlední středa předchozího měsíce).",
     "sample": "Ukázka reportu (PDF)",
-    "carPrice": "Cena vozu",
-    "carPriceWhat": "Váš příhoz nebo kupní cena, přepočtená",
-    "totalWithCar": "Vůz + daně a přístavní poplatky",
-    "totalWithCarWhat": "Bez dopravy, aukčních poplatků, dovozu a registrace – ty jsou v kompletním reportu"
+    "carPrice": "Vůz s aukčními poplatky",
+    "carPriceWhat": "Vaše nabídka nebo kupní cena plus poplatky aukce, přepočteno",
+    "totalWithCar": "Vůz až k vašim dveřím",
+    "totalWithCarWhat": "Vůz, doprava, clo, DPH a národní daně, přístavní poplatky a dovoz. Registrace, služby po dovozu, opravy a rizika jsou v kompletním reportu.",
+    "freeEyebrow": "Váš výsledek",
+    "tileCar": "Vůz",
+    "tileTransport": "Doprava – {{port}}",
+    "tileTaxes": "Clo, daně, přístav",
+    "tileDelivery": "Dovoz domů",
+    "approx": "cca",
+    "span": "obvykle {{min}} – {{max}}",
+    "estimateNote": "Doprava a dovoz jsou odhad podle běžných sazeb, zaokrouhlený na 100. Přesné částky po položkách najdete v úplném reportu."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Vlastní kontejner",
@@ -1358,7 +1366,13 @@
     "how5": "Pořadí připočítává námořní dopravu, přístavní poplatky a dovoz za km na vaši adresu – nejlevnější součet je nahoře.",
     "bestLabel": "Nejvýhodnější přístav:",
     "bestSelected": "vybráno",
-    "bestChoose": "Vybrat – ušetříte {{amount}} {{cur}}"
+    "bestChoose": "Vybrat – ušetříte {{amount}} {{cur}}",
+    "routeLabel": "Doprava, daně a dovoz",
+    "transportToPort": "Doprava do přístavu {{port}}",
+    "transportToPortWhat": "Vyzvednutí v aukci, převoz do vývozního přístavu, námořní doprava a pojištění",
+    "delivery": "Dovoz z přístavu k vám",
+    "deliveryWhat": "{{km}} km autopřepravníkem nebo odtahovkou",
+    "routeTotal": "Náklady trasy – závisí na přístavu"
   },
   "after": {
     "mustTitle": "Co musíte udělat – {{country}}",

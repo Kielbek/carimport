@@ -68,7 +68,9 @@ public record PublicQuoteView(
         return new PublicQuoteView(
                 quoteId,
                 expected.displayCurrency(),
-                TaxSummary.of(expected, clearanceCountry, destinationCountry),
+                TaxSummary.of(expected, clearanceCountry, destinationCountry).withSpan(
+                        TaxSummary.of(range.low(), clearanceCountry, destinationCountry),
+                        TaxSummary.of(range.high(), clearanceCountry, destinationCountry)),
                 expected.route().euPortName(),
                 clearanceCountry,
                 destinationCountry,

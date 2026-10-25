@@ -47,7 +47,12 @@ import { DEPARTURE_PORTS } from '../calculator.options';
           <div>
             <p class="eyebrow">{{ 'result.freeEyebrow' | translate }}</p>
             <h3 id="result-total" class="mt-2 text-base font-bold text-fg/85">{{ 'result.totalWithCar' | translate }}</h3>
-            <p class="mt-1 text-[clamp(2.2rem,6vw,3.2rem)] font-extrabold leading-none tabular-nums text-brand-text">{{ money(r.taxes.totalWithCar, r.currency) }}</p>
+            <p class="mt-1 text-[clamp(2.2rem,6vw,3.2rem)] font-extrabold leading-none tabular-nums text-brand-text">
+              <span class="mr-1 align-middle text-[0.45em] font-bold text-muted">{{ 'result.approx' | translate }}</span>{{ money(r.taxes.totalWithCar, r.currency) }}
+            </p>
+            @if (r.taxes.estimateMin != null && r.taxes.estimateMax != null) {
+              <p class="mt-2 text-sm font-semibold text-fg/80">{{ 'result.span' | translate: { min: money(r.taxes.estimateMin, r.currency), max: money(r.taxes.estimateMax, r.currency) } }}</p>
+            }
             <p class="mt-2 max-w-xl text-sm text-muted">{{ 'result.totalWithCarWhat' | translate }}</p>
           </div>
           <span class="badge !bg-success/15 !text-success">{{ 'result.freeBadge' | translate }}</span>
@@ -57,7 +62,10 @@ import { DEPARTURE_PORTS } from '../calculator.options';
           @for (t of tiles(r); track t.key) {
             <div class="rounded-[4px] bg-panel-2 p-4">
               <p class="text-xs font-semibold uppercase tracking-[0.05em] text-muted">{{ t.label | translate: { port: r.clearancePort } }}</p>
-              <p class="mt-1.5 text-xl font-extrabold tabular-nums">{{ money(t.amount, r.currency) }}</p>
+              <p class="mt-1.5 text-xl font-extrabold tabular-nums">
+                @if (t.estimate) { <span class="text-sm font-bold text-muted">{{ 'result.approx' | translate }}</span> }
+                {{ money(t.amount, r.currency) }}
+              </p>
             </div>
           }
         </div>
@@ -72,7 +80,7 @@ import { DEPARTURE_PORTS } from '../calculator.options';
             <tr class="border-b border-line">
               <td class="py-2.5 pr-3">{{ 'portCost.transportToPort' | translate: { port: r.clearancePort } }}
                 <span class="block text-xs text-muted">{{ 'portCost.transportToPortWhat' | translate }}</span></td>
-              <td class="py-2.5 text-right font-semibold tabular-nums">{{ money(r.taxes.transportToPort, r.currency) }}</td>
+              <td class="py-2.5 text-right font-semibold tabular-nums"><span class="text-xs text-muted">{{ 'result.approx' | translate }}</span> {{ money(r.taxes.transportToPort, r.currency) }}</td>
             </tr>
             <tr class="border-b border-line">
               <td class="py-2.5 pr-3">{{ 'cost.CUSTOMS_DUTY' | translate }} <span class="text-muted">{{ pct(r.taxes.duty.rate) }}</span>
@@ -98,15 +106,16 @@ import { DEPARTURE_PORTS } from '../calculator.options';
             </tr>
             <tr class="border-b border-line">
               <td class="py-2.5 pr-3">{{ 'portCost.delivery' | translate }}</td>
-              <td class="py-2.5 text-right font-semibold tabular-nums">{{ money(r.taxes.delivery, r.currency) }}</td>
+              <td class="py-2.5 text-right font-semibold tabular-nums"><span class="text-xs text-muted">{{ 'result.approx' | translate }}</span> {{ money(r.taxes.delivery, r.currency) }}</td>
             </tr>
             <tr>
               <td class="pt-3 font-extrabold">{{ 'result.totalWithCar' | translate }}</td>
-              <td class="pt-3 text-right text-lg font-extrabold tabular-nums text-brand-text">{{ money(r.taxes.totalWithCar, r.currency) }}</td>
+              <td class="pt-3 text-right text-lg font-extrabold tabular-nums text-brand-text"><span class="text-xs text-muted">{{ 'result.approx' | translate }}</span> {{ money(r.taxes.totalWithCar, r.currency) }}</td>
             </tr>
           </tbody>
         </table>
-        <p class="mt-3 text-xs text-muted">{{ 'result.freeBase' | translate }}</p>
+        <p class="mt-3 text-xs text-muted">{{ 'result.estimateNote' | translate }}</p>
+        <p class="mt-1 text-xs text-muted">{{ 'result.freeBase' | translate }}</p>
         @if (r.taxes.customsFxDate) {
           <p class="mt-1 text-xs text-muted">{{ 'result.customsFx' | translate: { date: r.taxes.customsFxDate } }}</p>
         }
@@ -235,12 +244,12 @@ export class StepResult {
   }
 
   /** The four parts of the total, as tiles above the detailed rows. */
-  protected tiles(r: PublicQuoteView): { key: string; label: string; amount: number }[] {
+  protected tiles(r: PublicQuoteView): { key: string; label: string; amount: number; estimate: boolean }[] {
     return [
-      { key: 'car', label: 'result.tileCar', amount: r.taxes.carPrice },
-      { key: 'transport', label: 'result.tileTransport', amount: r.taxes.transportToPort },
-      { key: 'taxes', label: 'result.tileTaxes', amount: r.taxes.total },
-      { key: 'delivery', label: 'result.tileDelivery', amount: r.taxes.delivery },
+      { key: 'car', label: 'result.tileCar', amount: r.taxes.carPrice, estimate: false },
+      { key: 'transport', label: 'result.tileTransport', amount: r.taxes.transportToPort, estimate: true },
+      { key: 'taxes', label: 'result.tileTaxes', amount: r.taxes.total, estimate: false },
+      { key: 'delivery', label: 'result.tileDelivery', amount: r.taxes.delivery, estimate: true },
     ];
   }
 

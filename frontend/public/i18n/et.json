@@ -286,10 +286,18 @@
     "moreLocked": "+ veel {{count}} kuluartiklit, sh varjatud kulud",
     "customsFx": "Toll ja käibemaks arvutatakse tolliväärtuselt kuu tollikursiga – {{date}} kursiga (eelmise kuu eelviimane kolmapäev).",
     "sample": "Vaata näidisaruannet (PDF)",
-    "carPrice": "Auto hind",
-    "carPriceWhat": "Sinu pakkumine või ostuhind, ümber arvestatud",
-    "totalWithCar": "Auto + maksud ja sadamatasud",
-    "totalWithCarWhat": "Ilma transpordi, oksjonitasude, kohaletoimetamise ja registreerimiseta – need on täielikus raportis"
+    "carPrice": "Auto koos oksjonitasudega",
+    "carPriceWhat": "Sinu pakkumine või ostuhind koos oksjoni tasudega, ümber arvestatud",
+    "totalWithCar": "Auto sinu ukse ees",
+    "totalWithCarWhat": "Auto, transport, tollimaks, käibemaks ja riiklikud maksud, sadamatasud ja kohaletoimetamine. Registreerimine, impordijärgsed teenused, remont ja riskid on täielikus raportis.",
+    "freeEyebrow": "Sinu tulemus",
+    "tileCar": "Auto",
+    "tileTransport": "Transport – {{port}}",
+    "tileTaxes": "Toll, maksud, sadam",
+    "tileDelivery": "Kojutoimetus",
+    "approx": "u",
+    "span": "tavaliselt {{min}} – {{max}}",
+    "estimateNote": "Transport ja kohaletoimetamine on hinnang tavapäraste hindade järgi, ümardatud 100-ni. Täpsed summad rida-realt on täielikus aruandes."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Eraldi konteiner",
@@ -1358,7 +1366,13 @@
     "how5": "Pingerida liidab prakti, sadamatasud ja kohaletoimetamise kilomeetri kaupa sinu aadressini – odavaim summa on esimene.",
     "bestLabel": "Soodsaim sadam:",
     "bestSelected": "valitud",
-    "bestChoose": "Vali – säästad {{amount}} {{cur}}"
+    "bestChoose": "Vali – säästad {{amount}} {{cur}}",
+    "routeLabel": "Transport, maksud ja kohaletoimetamine",
+    "transportToPort": "Transport sadamasse {{port}}",
+    "transportToPortWhat": "Oksjonilt pealevõtmine, vedu ekspordisadamasse, merepraht ja kindlustus",
+    "delivery": "Kohaletoimetamine sadamast sinuni",
+    "deliveryWhat": "{{km}} km autoveoki või puksiirautoga",
+    "routeTotal": "Marsruudi kogusumma – sõltub sadamast"
   },
   "after": {
     "mustTitle": "Mida pead tegema – {{country}}",

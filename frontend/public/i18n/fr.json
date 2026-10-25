@@ -286,10 +286,18 @@
     "moreLocked": "+ {{count}} postes supplémentaires, dont les coûts cachés",
     "customsFx": "Les droits et la TVA sont calculés sur la valeur en douane convertie au taux de change douanier du mois – taux du {{date}} (avant-dernier mercredi du mois précédent).",
     "sample": "Voir un exemple de rapport (PDF)",
-    "carPrice": "Prix de la voiture",
-    "carPriceWhat": "Votre enchère ou prix d’achat, converti",
-    "totalWithCar": "Voiture + taxes et frais portuaires",
-    "totalWithCarWhat": "Hors transport, frais d’enchère, livraison et immatriculation – ils figurent dans le rapport complet"
+    "carPrice": "Voiture avec frais d’enchère",
+    "carPriceWhat": "Votre enchère ou prix d’achat plus les frais de l’enchère, convertis",
+    "totalWithCar": "Voiture livrée à votre porte",
+    "totalWithCarWhat": "Voiture, transport, droits de douane, TVA et taxes nationales, frais portuaires et livraison. L’immatriculation, les services après import, les réparations et les risques figurent dans le rapport complet.",
+    "freeEyebrow": "Votre résultat",
+    "tileCar": "Voiture",
+    "tileTransport": "Transport – {{port}}",
+    "tileTaxes": "Droits, taxes, port",
+    "tileDelivery": "Livraison",
+    "approx": "env.",
+    "span": "généralement {{min}} – {{max}}",
+    "estimateNote": "Le transport et la livraison sont des estimations sur la base de tarifs habituels, arrondies à 100. Les montants exacts, poste par poste, figurent dans le rapport complet."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Conteneur exclusif",
@@ -1358,7 +1366,13 @@
     "how5": "Le classement ajoute le fret, les frais portuaires et la livraison au km jusqu’à votre adresse – le total le moins cher arrive en tête.",
     "bestLabel": "Port le plus avantageux :",
     "bestSelected": "sélectionné",
-    "bestChoose": "Choisir – économisez {{amount}} {{cur}}"
+    "bestChoose": "Choisir – économisez {{amount}} {{cur}}",
+    "routeLabel": "Transport, taxes et livraison",
+    "transportToPort": "Transport jusqu’à {{port}}",
+    "transportToPortWhat": "Enlèvement à l’enchère, acheminement vers le port d’export, fret maritime et assurance",
+    "delivery": "Livraison du port jusqu’à vous",
+    "deliveryWhat": "{{km}} km en porte-voitures ou dépanneuse",
+    "routeTotal": "Total du trajet – dépend du port"
   },
   "after": {
     "mustTitle": "Ce que vous devez faire – {{country}}",

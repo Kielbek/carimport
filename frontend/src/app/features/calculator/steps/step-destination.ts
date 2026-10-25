@@ -126,7 +126,7 @@ const TOP = 5;
                 <span class="hidden text-sm text-muted sm:block">{{ p.daysMin }}–{{ p.daysMax }} {{ 'wizard.days' | translate }}</span>
                 <span class="text-right">
                   <span class="block text-[11px] text-muted">{{ 'portCost.routeLabel' | translate }}</span>
-                  <span class="block font-bold">{{ p.taxes.routeTotal | localNumber: lang.locale() }} {{ currency() }}</span>
+                  <span class="block font-bold"><span class="text-xs font-semibold text-muted">{{ 'result.approx' | translate }}</span> {{ p.taxes.routeTotal | localNumber: lang.locale() }} {{ currency() }}</span>
                   <span class="block text-xs" [class]="p.extraVsBest ? 'text-muted' : 'font-semibold text-brand-text'">
                     @if (p.extraVsBest) { {{ 'portCost.extra' | translate: { amount: (p.extraVsBest | localNumber: lang.locale()), cur: currency() } }} }
                     @else { {{ 'portCost.cheapestDoor' | translate }} }
@@ -157,7 +157,7 @@ const TOP = 5;
                         <app-flag [code]="p.countryCode" class="w-5 shrink-0" />
                         <span class="min-w-0 flex-1 truncate">{{ p.name }}</span>
                         <span class="text-xs text-muted">{{ p.distanceKm | localNumber: lang.locale() }} km</span>
-                        <span class="w-28 text-right font-semibold">{{ p.taxes.routeTotal | localNumber: lang.locale() }}</span>
+                        <span class="w-28 text-right font-semibold">≈ {{ p.taxes.routeTotal | localNumber: lang.locale() }}</span>
                       </button>
                     </li>
                   }
@@ -180,7 +180,7 @@ const TOP = 5;
                   <tr class="border-b border-line">
                     <td class="py-2 pr-3">{{ 'portCost.transportToPort' | translate: { port: p.name } }}
                       <span class="block text-xs text-muted">{{ 'portCost.transportToPortWhat' | translate }}</span></td>
-                    <td class="py-2 text-right font-semibold tabular-nums">{{ p.taxes.transportToPort | localNumber: lang.locale() }}</td>
+                    <td class="py-2 text-right font-semibold tabular-nums"><span class="text-xs text-muted">{{ 'result.approx' | translate }}</span> {{ p.taxes.transportToPort | localNumber: lang.locale() }}</td>
                   </tr>
                   <tr class="border-b border-line">
                     <td class="py-2 pr-3">{{ 'cost.CUSTOMS_DUTY' | translate }} <span class="text-muted">{{ pct(p.taxes.duty.rate) }}</span>
@@ -214,11 +214,11 @@ const TOP = 5;
                   <tr class="border-b border-line">
                     <td class="py-2 pr-3">{{ 'portCost.delivery' | translate }}
                       <span class="block text-xs text-muted">{{ 'portCost.deliveryWhat' | translate: { km: (p.distanceKm | localNumber: lang.locale()) } }}</span></td>
-                    <td class="py-2 text-right font-semibold tabular-nums">{{ p.taxes.delivery | localNumber: lang.locale() }}</td>
+                    <td class="py-2 text-right font-semibold tabular-nums"><span class="text-xs text-muted">{{ 'result.approx' | translate }}</span> {{ p.taxes.delivery | localNumber: lang.locale() }}</td>
                   </tr>
                   <tr class="border-b border-line">
                     <td class="py-2 pr-3 font-semibold">{{ 'portCost.routeTotal' | translate }}</td>
-                    <td class="py-2 text-right font-semibold tabular-nums">{{ p.taxes.routeTotal | localNumber: lang.locale() }}</td>
+                    <td class="py-2 text-right font-semibold tabular-nums"><span class="text-xs text-muted">{{ 'result.approx' | translate }}</span> {{ p.taxes.routeTotal | localNumber: lang.locale() }}</td>
                   </tr>
                   <tr class="border-b border-line">
                     <td class="py-2 pr-3">{{ 'result.carPrice' | translate }}</td>
@@ -226,7 +226,7 @@ const TOP = 5;
                   </tr>
                   <tr>
                     <td class="pt-3 font-extrabold">{{ 'result.totalWithCar' | translate }}</td>
-                    <td class="pt-3 text-right text-lg font-extrabold tabular-nums">{{ p.taxes.totalWithCar | localNumber: lang.locale() }} {{ currency() }}</td>
+                    <td class="pt-3 text-right text-lg font-extrabold tabular-nums"><span class="text-xs text-muted">{{ 'result.approx' | translate }}</span> {{ p.taxes.totalWithCar | localNumber: lang.locale() }} {{ currency() }}</td>
                   </tr>
                 </tbody>
               </table>

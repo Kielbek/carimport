@@ -286,10 +286,18 @@
     "moreLocked": "+ še {{count}} postavk, vključno s skritimi stroški",
     "customsFx": "Carino in DDV izračunamo od carinske vrednosti, preračunane po carinskem tečaju meseca – tečaju z dne {{date}} (predzadnja sreda prejšnjega meseca).",
     "sample": "Oglejte si primer poročila (PDF)",
-    "carPrice": "Cena avtomobila",
-    "carPriceWhat": "Vaša ponudba ali kupnina, preračunana",
-    "totalWithCar": "Avtomobil + dajatve in pristaniški stroški",
-    "totalWithCarWhat": "Brez prevoza, provizij dražbe, dostave in registracije – ti so v celotnem poročilu"
+    "carPrice": "Avtomobil z dražbenimi provizijami",
+    "carPriceWhat": "Vaša ponudba ali nakupna cena skupaj s provizijami dražbe, preračunano",
+    "totalWithCar": "Avtomobil do vaših vrat",
+    "totalWithCarWhat": "Avtomobil, prevoz, carina, DDV in nacionalne dajatve, pristaniški stroški in dostava. Registracija, storitve po uvozu, popravila in tveganja so v celotnem poročilu.",
+    "freeEyebrow": "Vaš rezultat",
+    "tileCar": "Avtomobil",
+    "tileTransport": "Prevoz – {{port}}",
+    "tileTaxes": "Carina, dajatve, pristanišče",
+    "tileDelivery": "Dostava domov",
+    "approx": "pribl.",
+    "span": "običajno {{min}} – {{max}}",
+    "estimateNote": "Prevoz in dostava sta ocena po običajnih cenah, zaokrožena na 100. Natančni zneski po postavkah so v celotnem poročilu."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Lasten zabojnik",
@@ -1358,7 +1366,13 @@
     "how5": "Razvrstitev prišteje prevoznino, pristaniške stroške in dostavo na km do vašega naslova – najcenejši znesek je na vrhu.",
     "bestLabel": "Najugodnejše pristanišče:",
     "bestSelected": "izbrano",
-    "bestChoose": "Izberite – prihranite {{amount}} {{cur}}"
+    "bestChoose": "Izberite – prihranite {{amount}} {{cur}}",
+    "routeLabel": "Prevoz, dajatve in dostava",
+    "transportToPort": "Prevoz do pristanišča {{port}}",
+    "transportToPortWhat": "Prevzem na dražbi, prevoz do izvoznega pristanišča, pomorska prevoznina in zavarovanje",
+    "delivery": "Dostava iz pristanišča do vas",
+    "deliveryWhat": "{{km}} km s tovornjakom za avtomobile ali vlečnim vozilom",
+    "routeTotal": "Strošek poti – odvisen od pristanišča"
   },
   "after": {
     "mustTitle": "Kaj morate storiti – {{country}}",

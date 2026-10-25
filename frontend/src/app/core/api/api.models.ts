@@ -141,6 +141,10 @@ export interface TaxSummary {
   routeTotal: number;
   /** Car + route: at the door, before registration, repairs and risks. */
   totalWithCar: number;
+  /** Optimistic and pessimistic door price (result only; null in the port ranking). Transport, delivery and the
+   *  totals are estimates rounded to 100 - the exact amounts are in the paid report. */
+  estimateMin: number | null;
+  estimateMax: number | null;
 }
 
 /**

@@ -286,10 +286,18 @@
     "moreLocked": "+ vēl {{count}} pozīcijas, t. sk. slēptās izmaksas",
     "customsFx": "Muitu un PVN aprēķina no muitas vērtības, kas pārrēķināta pēc mēneša muitas kursa – {{date}} kursa (iepriekšējā mēneša priekšpēdējā trešdiena).",
     "sample": "Skatīt atskaites paraugu (PDF)",
-    "carPrice": "Automašīnas cena",
-    "carPriceWhat": "Jūsu likme vai pirkuma cena, pārrēķināta",
-    "totalWithCar": "Automašīna + nodokļi un ostas maksas",
-    "totalWithCarWhat": "Bez transporta, izsoles maksām, piegādes un reģistrācijas – tās ir pilnajā atskaitē"
+    "carPrice": "Automašīna ar izsoles maksām",
+    "carPriceWhat": "Jūsu solījums vai pirkuma cena plus izsoles maksas, pārrēķināts",
+    "totalWithCar": "Automašīna līdz jūsu durvīm",
+    "totalWithCarWhat": "Automašīna, transports, muitas nodoklis, PVN un valsts nodokļi, ostas maksas un piegāde. Reģistrācija, pakalpojumi pēc importa, remonts un riski ir pilnajā atskaitē.",
+    "freeEyebrow": "Jūsu rezultāts",
+    "tileCar": "Automašīna",
+    "tileTransport": "Transports – {{port}}",
+    "tileTaxes": "Muita, nodokļi, osta",
+    "tileDelivery": "Piegāde mājās",
+    "approx": "ap.",
+    "span": "parasti {{min}} – {{max}}",
+    "estimateNote": "Transports un piegāde ir aplēse pēc tipiskiem tarifiem, noapaļota līdz 100. Precīzas summas pa pozīcijām ir pilnajā atskaitē."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Atsevišķs konteiners",
@@ -1358,7 +1366,13 @@
     "how5": "Reitingā pieskaita frakti, ostas maksas un piegādi par km līdz jūsu adresei – lētākā summa ir pirmā.",
     "bestLabel": "Izdevīgākā osta:",
     "bestSelected": "izvēlēta",
-    "bestChoose": "Izvēlieties – ietaupiet {{amount}} {{cur}}"
+    "bestChoose": "Izvēlieties – ietaupiet {{amount}} {{cur}}",
+    "routeLabel": "Transports, nodokļi un piegāde",
+    "transportToPort": "Transports līdz ostai {{port}}",
+    "transportToPortWhat": "Saņemšana izsolē, pārvadājums līdz eksporta ostai, jūras frakts un apdrošināšana",
+    "delivery": "Piegāde no ostas līdz jums",
+    "deliveryWhat": "{{km}} km ar autovedēju vai evakuatoru",
+    "routeTotal": "Maršruta kopsumma – atkarīga no ostas"
   },
   "after": {
     "mustTitle": "Kas jums jādara – {{country}}",

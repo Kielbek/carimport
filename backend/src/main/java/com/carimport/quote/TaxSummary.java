@@ -26,10 +26,18 @@ import java.util.function.Predicate;
  * @param routeTotal      everything that changes with the port: transport to it + duty, VAT and national taxes +
  *                        port fees + delivery home - the number the port ranking compares
  * @param totalWithCar    car + route: what the car costs at the door before registration, repairs and risks
+ * @param estimateMin     totalWithCar in the optimistic scenario (only on the result, null in the port ranking)
+ * @param estimateMax     totalWithCar in the pessimistic scenario
+ *
+ * Duty, VAT, national taxes and port fees are exact - anyone can work them out on paper. Transport, delivery and the
+ * totals are estimates rounded to {@value #ESTIMATE_STEP}: the exact amounts are what the paid report itemises.
  */
 public record TaxSummary(Item duty, Item vat, List<Item> national, BigDecimal portFees, BigDecimal total,
                          String customsFxDate, BigDecimal carPrice, BigDecimal transportToPort, BigDecimal delivery,
-                         BigDecimal routeTotal, BigDecimal totalWithCar) {
+                         BigDecimal routeTotal, BigDecimal totalWithCar, BigDecimal estimateMin,
+                         BigDecimal estimateMax) {
+
+    public static final int ESTIMATE_STEP = 100;
 
     /** One tax: code (cost.* key), rate as a fraction, the country that levies it, amount. */
     public record Item(String code, BigDecimal rate, String country, BigDecimal amount) {
@@ -59,8 +67,21 @@ public record TaxSummary(Item duty, Item vat, List<Item> national, BigDecimal po
         BigDecimal transportToPort = category(result, CostCategory.TRANSPORT, c -> !c.startsWith("DELIVERY_")
                 && !c.equals("INTRA_EU_TRANSPORT") && !PORT_FEES.contains(c));
         BigDecimal routeTotal = transportToPort.add(total).add(delivery);
-        return new TaxSummary(duty, vat, national, fees, total, customsFxDate, carPrice, transportToPort, delivery,
-                routeTotal, carPrice.add(routeTotal));
+        return new TaxSummary(duty, vat, national, fees, total, customsFxDate, carPrice, estimate(transportToPort),
+                estimate(delivery), estimate(routeTotal), estimate(carPrice.add(routeTotal)), null, null);
+    }
+
+    /** The same summary with the optimistic-pessimistic span of the door price, from the other two scenarios. */
+    public TaxSummary withSpan(TaxSummary optimistic, TaxSummary pessimistic) {
+        BigDecimal lo = optimistic.totalWithCar().min(totalWithCar);
+        BigDecimal hi = pessimistic.totalWithCar().max(totalWithCar);
+        return new TaxSummary(duty, vat, national, portFees, total, customsFxDate, carPrice, transportToPort, delivery,
+                routeTotal, totalWithCar, lo, hi);
+    }
+
+    private static BigDecimal estimate(BigDecimal amount) {
+        return amount.divide(BigDecimal.valueOf(ESTIMATE_STEP), 0, RoundingMode.HALF_UP)
+                .multiply(BigDecimal.valueOf(ESTIMATE_STEP));
     }
 
     private static BigDecimal category(CalculationResult result, CostCategory category, Predicate<String> code) {

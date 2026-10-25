@@ -286,10 +286,18 @@
     "moreLocked": "+ ďalších {{count}} položiek vrátane skrytých nákladov",
     "customsFx": "Clo a DPH počítame z colnej hodnoty prepočítanej colným kurzom mesiaca – kurzom zo dňa {{date}} (predposledná streda predchádzajúceho mesiaca).",
     "sample": "Ukážka reportu (PDF)",
-    "carPrice": "Cena vozidla",
-    "carPriceWhat": "Váš príhoz alebo kúpna cena, prepočítaná",
-    "totalWithCar": "Vozidlo + dane a prístavné poplatky",
-    "totalWithCarWhat": "Bez dopravy, aukčných poplatkov, dovozu a registrácie – tie sú v kompletnom reporte"
+    "carPrice": "Vozidlo s aukčnými poplatkami",
+    "carPriceWhat": "Vaša ponuka alebo kúpna cena plus poplatky aukcie, prepočítané",
+    "totalWithCar": "Vozidlo až k vašim dverám",
+    "totalWithCarWhat": "Vozidlo, doprava, clo, DPH a národné dane, prístavné poplatky a dovoz. Registrácia, služby po dovoze, opravy a riziká sú v kompletnom reporte.",
+    "freeEyebrow": "Váš výsledok",
+    "tileCar": "Vozidlo",
+    "tileTransport": "Doprava – {{port}}",
+    "tileTaxes": "Clo, dane, prístav",
+    "tileDelivery": "Dovoz domov",
+    "approx": "cca",
+    "span": "zvyčajne {{min}} – {{max}}",
+    "estimateNote": "Doprava a dovoz sú odhad podľa bežných sadzieb, zaokrúhlený na 100. Presné sumy po položkách nájdete v úplnom reporte."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Vlastný kontajner",
@@ -1358,7 +1366,13 @@
     "how5": "Poradie pripočítava námornú dopravu, prístavné poplatky a dovoz za km na vašu adresu – najlacnejší súčet je hore.",
     "bestLabel": "Najvýhodnejší prístav:",
     "bestSelected": "vybrané",
-    "bestChoose": "Vybrať – ušetríte {{amount}} {{cur}}"
+    "bestChoose": "Vybrať – ušetríte {{amount}} {{cur}}",
+    "routeLabel": "Doprava, dane a dovoz",
+    "transportToPort": "Doprava do prístavu {{port}}",
+    "transportToPortWhat": "Vyzdvihnutie na aukcii, preprava do vývozného prístavu, námorná doprava a poistenie",
+    "delivery": "Dovoz z prístavu k vám",
+    "deliveryWhat": "{{km}} km autoprepravníkom alebo odťahovkou",
+    "routeTotal": "Náklady trasy – závisia od prístavu"
   },
   "after": {
     "mustTitle": "Čo musíte urobiť – {{country}}",

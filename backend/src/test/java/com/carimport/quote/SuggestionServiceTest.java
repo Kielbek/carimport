@@ -69,15 +69,18 @@ class SuggestionServiceTest {
         // the number shown per port is the route cost, so its differences are the ranking's differences
         java.math.BigDecimal bestRoute = s.ports().getFirst().taxes().routeTotal();
         for (SuggestionService.PortSuggestion p : s.ports()) {
-            assertThat(p.taxes().routeTotal()).isEqualByComparingTo(p.taxes().transportToPort()
-                    .add(p.taxes().total()).add(p.taxes().delivery()));
+            // transport, delivery and totals are estimates rounded to 100; taxes stay exact
+            assertThat(p.taxes().routeTotal().remainder(new java.math.BigDecimal("100"))).isZero();
+            assertThat(p.taxes().routeTotal().subtract(p.taxes().transportToPort().add(p.taxes().total())
+                    .add(p.taxes().delivery())).abs()).isLessThanOrEqualTo(new java.math.BigDecimal("150"));
             assertThat(p.taxes().routeTotal().subtract(bestRoute).subtract(p.extraVsBest()).abs())
-                    .isLessThanOrEqualTo(new java.math.BigDecimal("10"));
+                    .isLessThanOrEqualTo(new java.math.BigDecimal("110"));
         }
         assertThat(gdynia.taxes().transportToPort()).isPositive();
         assertThat(gdynia.taxes().delivery()).isPositive();
-        assertThat(gdynia.taxes().totalWithCar()).isEqualByComparingTo(gdynia.taxes().carPrice()
-                .add(gdynia.taxes().routeTotal()));
+        assertThat(gdynia.taxes().totalWithCar().subtract(gdynia.taxes().carPrice().add(gdynia.taxes().routeTotal()))
+                .abs()).isLessThanOrEqualTo(new java.math.BigDecimal("100"));
+        assertThat(gdynia.taxes().estimateMin()).isNull();
         assertThat(s.deliveryMode()).isEqualTo(DeliveryMode.CAR_CARRIER);
         assertThat(s.repairEstimate()).isPositive();
         assertThat(s.insuranceEstimate()).isEqualByComparingTo("1200");

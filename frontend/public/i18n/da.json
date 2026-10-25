@@ -286,10 +286,18 @@
     "moreLocked": "+ {{count}} poster mere, inkl. skjulte omkostninger",
     "customsFx": "Told og moms beregnes af toldværdien omregnet til månedens toldkurs – kursen fra {{date}} (næstsidste onsdag i forrige måned).",
     "sample": "Se en eksempelrapport (PDF)",
-    "carPrice": "Bilens pris",
-    "carPriceWhat": "Dit bud eller din købspris, omregnet",
-    "totalWithCar": "Bil + afgifter og havnegebyrer",
-    "totalWithCarWhat": "Uden transport, auktionsgebyrer, levering og registrering – de står i den fulde rapport"
+    "carPrice": "Bil med auktionsgebyrer",
+    "carPriceWhat": "Dit bud eller din købspris plus auktionens gebyrer, omregnet",
+    "totalWithCar": "Bil leveret til din dør",
+    "totalWithCarWhat": "Bil, transport, told, moms og nationale afgifter, havnegebyrer og levering. Registrering, ydelser efter import, reparationer og risici står i den fulde rapport.",
+    "freeEyebrow": "Dit resultat",
+    "tileCar": "Bil",
+    "tileTransport": "Transport til {{port}}",
+    "tileTaxes": "Told, afgifter, havn",
+    "tileDelivery": "Levering hjem",
+    "approx": "ca.",
+    "span": "typisk {{min}} – {{max}}",
+    "estimateNote": "Transport og levering er skøn ud fra typiske takster, afrundet til 100. De præcise beløb, post for post, står i den fulde rapport."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Egen container",
@@ -1358,7 +1366,13 @@
     "how5": "Rangeringen lægger fragt, havnegebyrer og levering pr. km til din adresse til – den billigste sum står øverst.",
     "bestLabel": "Mest fordelagtige havn:",
     "bestSelected": "valgt",
-    "bestChoose": "Vælg – spar {{amount}} {{cur}}"
+    "bestChoose": "Vælg – spar {{amount}} {{cur}}",
+    "routeLabel": "Transport, afgifter og levering",
+    "transportToPort": "Transport til {{port}}",
+    "transportToPortWhat": "Afhentning på auktionen, kørsel til udskibningshavnen, søfragt og forsikring",
+    "delivery": "Levering fra havnen til dig",
+    "deliveryWhat": "{{km}} km med autotransporter eller kranvogn",
+    "routeTotal": "Rutens samlede pris – afhænger af havnen"
   },
   "after": {
     "mustTitle": "Det skal du gøre – {{country}}",

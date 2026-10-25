@@ -294,7 +294,10 @@
     "tileCar": "Car",
     "tileTransport": "Transport to {{port}}",
     "tileTaxes": "Duty, taxes, port",
-    "tileDelivery": "Delivery home"
+    "tileDelivery": "Delivery home",
+    "approx": "approx.",
+    "span": "usually {{min}} – {{max}}",
+    "estimateNote": "Transport and delivery are estimates from typical rates, rounded to 100. The exact amounts, item by item, are in the full report."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exclusive container",

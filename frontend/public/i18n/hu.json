@@ -286,10 +286,18 @@
     "moreLocked": "+ további {{count}} tétel, köztük a rejtett költségek",
     "customsFx": "A vámot és az áfát a hónap vámárfolyamán átszámított vámértékből számoljuk – a {{date}} napi árfolyamon (az előző hónap utolsó előtti szerdája).",
     "sample": "Mintajelentés megtekintése (PDF)",
-    "carPrice": "Az autó ára",
-    "carPriceWhat": "Az Ön licitje vagy vételára, átszámítva",
-    "totalWithCar": "Autó + adók és kikötői díjak",
-    "totalWithCarWhat": "Szállítás, aukciós díjak, kiszállítás és forgalomba helyezés nélkül – ezek a teljes jelentésben szerepelnek"
+    "carPrice": "Autó aukciós díjakkal",
+    "carPriceWhat": "Az Ön ajánlata vagy vételára plusz az aukció díjai, átszámítva",
+    "totalWithCar": "Autó az Ön ajtajáig",
+    "totalWithCarWhat": "Autó, szállítás, vám, áfa és nemzeti adók, kikötői díjak és kiszállítás. A forgalomba helyezés, az import utáni szolgáltatások, a javítások és a kockázatok a teljes jelentésben szerepelnek.",
+    "freeEyebrow": "Az Ön eredménye",
+    "tileCar": "Autó",
+    "tileTransport": "Szállítás – {{port}}",
+    "tileTaxes": "Vám, adók, kikötő",
+    "tileDelivery": "Házhoz szállítás",
+    "approx": "kb.",
+    "span": "általában {{min}} – {{max}}",
+    "estimateNote": "A szállítás és a házhoz szállítás becslés a szokásos díjak alapján, 100-ra kerekítve. A pontos összegek tételesen a teljes jelentésben vannak."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Saját (kizárólagos) konténer",
@@ -1358,7 +1366,13 @@
     "how5": "A rangsor hozzáadja a fuvart, a kikötői díjakat és a km-alapú kiszállítást az Ön címéig – a legolcsóbb összeg áll az élen.",
     "bestLabel": "Legkedvezőbb kikötő:",
     "bestSelected": "kiválasztva",
-    "bestChoose": "Kiválasztás – {{amount}} {{cur}} megtakarítás"
+    "bestChoose": "Kiválasztás – {{amount}} {{cur}} megtakarítás",
+    "routeLabel": "Szállítás, adók és kiszállítás",
+    "transportToPort": "Szállítás a(z) {{port}} kikötőig",
+    "transportToPortWhat": "Átvétel az aukción, fuvar az exportkikötőbe, tengeri fuvar és biztosítás",
+    "delivery": "Kiszállítás a kikötőből Önhöz",
+    "deliveryWhat": "{{km}} km autószállítóval vagy trélerrel",
+    "routeTotal": "Útvonal összesen – a kikötőtől függ"
   },
   "after": {
     "mustTitle": "Kötelező teendők – {{country}}",

@@ -286,10 +286,18 @@
     "moreLocked": "+ dar {{count}} pozicijos, įskaitant paslėptas išlaidas",
     "customsFx": "Muitas ir PVM skaičiuojami nuo muitinės vertės, perskaičiuotos mėnesio muitinės kursu – {{date}} kursu (priešpaskutinis praėjusio mėnesio trečiadienis).",
     "sample": "Peržiūrėti ataskaitos pavyzdį (PDF)",
-    "carPrice": "Automobilio kaina",
-    "carPriceWhat": "Jūsų statymas arba pirkimo kaina, perskaičiuota",
-    "totalWithCar": "Automobilis + mokesčiai ir uosto rinkliavos",
-    "totalWithCarWhat": "Be transporto, aukciono mokesčių, pristatymo ir registracijos – jie yra išsamioje ataskaitoje"
+    "carPrice": "Automobilis su aukciono mokesčiais",
+    "carPriceWhat": "Jūsų statymas arba pirkimo kaina plius aukciono mokesčiai, perskaičiuota",
+    "totalWithCar": "Automobilis iki jūsų durų",
+    "totalWithCarWhat": "Automobilis, transportas, muitas, PVM ir nacionaliniai mokesčiai, uosto rinkliavos ir pristatymas. Registracija, paslaugos po importo, remontas ir rizikos – išsamioje ataskaitoje.",
+    "freeEyebrow": "Jūsų rezultatas",
+    "tileCar": "Automobilis",
+    "tileTransport": "Transportas – {{port}}",
+    "tileTaxes": "Muitas, mokesčiai, uostas",
+    "tileDelivery": "Pristatymas namo",
+    "approx": "apie",
+    "span": "paprastai {{min}} – {{max}}",
+    "estimateNote": "Transportas ir pristatymas – įvertis pagal įprastus įkainius, suapvalintas iki 100. Tikslios sumos pagal kiekvieną poziciją – pilnoje ataskaitoje."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Atskiras konteineris",
@@ -1358,7 +1366,13 @@
     "how5": "Reitingas prideda frachtą, uosto rinkliavas ir pristatymą už km iki jūsų adreso – pigiausia suma yra pirma.",
     "bestLabel": "Palankiausias uostas:",
     "bestSelected": "pasirinktas",
-    "bestChoose": "Pasirinkite – sutaupysite {{amount}} {{cur}}"
+    "bestChoose": "Pasirinkite – sutaupysite {{amount}} {{cur}}",
+    "routeLabel": "Transportas, mokesčiai ir pristatymas",
+    "transportToPort": "Transportas iki uosto {{port}}",
+    "transportToPortWhat": "Paėmimas aukcione, pervežimas į eksporto uostą, jūrų frachtas ir draudimas",
+    "delivery": "Pristatymas iš uosto iki jūsų",
+    "deliveryWhat": "{{km}} km autovežiu arba evakuatoriumi",
+    "routeTotal": "Maršruto suma – priklauso nuo uosto"
   },
   "after": {
     "mustTitle": "Ką privalote padaryti – {{country}}",
