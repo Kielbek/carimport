@@ -37,18 +37,20 @@ public final class RegistrationTaxes {
     public record Assessment(BigDecimal amount, BigDecimal rate, String method) {
     }
 
-    public static final Set<String> NONE = Set.of("BG", "CZ", "DE", "LU", "RO", "SE");
+    /** LV: only the CSDD registration fee (~15-20 €) and the annual operation tax - no one-off tax at registration. */
+    public static final Set<String> NONE = Set.of("BG", "CZ", "DE", "LU", "LV", "RO", "SE");
 
     /** Countries with a registration tax we do not estimate, with the official place to compute it. */
+    /**
+     * Countries whose tax depends on data the wizard cannot have or whose schedule could not be verified: HR (PPMV
+     * value component from the new-car list price), GR (scale on the pre-depreciation retail value), CY (no published
+     * schedule), MT (percentages of Transport Malta's own registration value and the car's length).
+     */
     public static final Map<String, String> OFFICIAL_CALCULATOR = Map.of(
             "CY", "https://www.mof.gov.cy/mof/customs/customs.nsf",
             "GR", "https://www.aade.gr",
             "HR", "https://www.porezna-uprava.hr",
-            "HU", "https://nav.gov.hu/vam/regisztracios-ado",
-            "LT", "https://www.regitra.lt/en/services/vehicle-registration/registration-tax-fee/",
-            "LV", "https://www.csdd.lv",
-            "MT", "https://www.transport.gov.mt",
-            "SK", "https://www.minv.sk");
+            "MT", "https://www.transport.gov.mt");
 
     public static Optional<Assessment> assess(Input in) {
         Assessment a = switch (in.country()) {
@@ -64,6 +66,9 @@ public final class RegistrationTaxes {
             case "NL" -> netherlands(in);
             case "PT" -> portugal(in);
             case "SI" -> slovenia(in);
+            case "SK" -> slovakia(in);
+            case "LT" -> lithuania(in);
+            case "HU" -> hungary(in);
             default -> null;
         };
         return Optional.ofNullable(a).map(x -> new Assessment(x.amount().setScale(0, RoundingMode.HALF_UP).max(BigDecimal.ZERO),
@@ -72,7 +77,7 @@ public final class RegistrationTaxes {
 
     public static boolean modelled(String country) {
         return switch (country) {
-            case "AT", "BE", "DK", "EE", "ES", "FI", "FR", "IE", "IT", "NL", "PT", "SI" -> true;
+            case "AT", "BE", "DK", "EE", "ES", "FI", "FR", "HU", "IE", "IT", "LT", "NL", "PT", "SI", "SK" -> true;
             default -> false;
         };
     }
@@ -269,6 +274,72 @@ public final class RegistrationTaxes {
         }
         double rate = (in.fuel() == FuelType.DIESEL ? diesel : petrol)[band];
         return new Assessment(bd(in.netValue().doubleValue() * rate / 100), bd(rate / 100), "SI_DMV");
+    }
+
+    /**
+     * Slovakia (fee item 65, Act 145/1995, since 1 July 2023): power band × ecological coefficient of the emission
+     * class, at least 33 €; electric cars a flat 33 €. A car from outside the EU has no Euro class in its papers - the
+     * class of its model year is used (6d from 2018, 6b-c 2015-17, 5 2011-14, 4 2006-10, 3 2001-05, 2 1997-2000).
+     */
+    static Assessment slovakia(Input in) {
+        if (in.fuel().isZeroEmission()) {
+            return new Assessment(bd(33), null, "SK_POPLATOK");
+        }
+        int kw = in.powerKw();
+        double base = kw <= 80 ? 33 : kw <= 90 ? 60 : kw <= 100 ? 90 : kw <= 110 ? 120 : kw <= 125 ? 200
+                : kw <= 140 ? 300 : kw <= 155 ? 500 : kw <= 170 ? 700 : kw <= 210 ? 900 : 1000;
+        int age = in.ageYears();
+        double ecological = in.fuel() == FuelType.PHEV ? 0.20
+                : age >= 40 ? 0.10 : age <= 8 ? 0.40 : age <= 11 ? 0.45 : age <= 15 ? 0.50 : age <= 20 ? 0.60
+                : age <= 25 ? 0.70 : age <= 29 ? 0.80 : 1.00;
+        return new Assessment(bd(Math.max(33, base * ecological)), bd(ecological), "SK_POPLATOK");
+    }
+
+    /**
+     * Lithuania (pollution tax at registration, 2026): nothing up to 130 g/km, then 21.63 € per started 10 g band
+     * for petrol and hybrids, twice that for diesel, 90 % for gas; electric and plug-ins free.
+     */
+    static Assessment lithuania(Input in) {
+        if (in.fuel().isZeroEmission() || in.fuel() == FuelType.PHEV) {
+            return new Assessment(BigDecimal.ZERO, null, "LT_TARSA_2026");
+        }
+        int bands = (int) Math.ceil(Math.max(0, in.co2() - 130) / 10.0);
+        double factor = in.fuel() == FuelType.DIESEL ? 2 : in.fuel() == FuelType.LPG ? 0.9 : 1;
+        return new Assessment(bd(bands * 21.63 * factor), null, "LT_TARSA_2026");
+    }
+
+    /**
+     * Hungary (since 1 March 2025, HUF): 47 000 Ft × a multiplier for power and environmental class × (1 − the
+     * statutory depreciation for the months since first registration). Multipliers for the best class: 1 up to
+     * 80 kW, 1.5 to 100, 2 to 120, 3 to 140, 4.5 to 180, 6 to 250, 9 above; older classes multiply them by 1.5 /
+     * 6 / 12 / 24. The bands above 140 kW are an estimate; electric cars are exempt.
+     */
+    static Assessment hungary(Input in) {
+        if (in.fuel().isZeroEmission()) {
+            return new Assessment(BigDecimal.ZERO, null, "HU_REGADO_2026");
+        }
+        int kw = in.powerKw();
+        double power = kw <= 80 ? 1 : kw <= 100 ? 1.5 : kw <= 120 ? 2 : kw <= 140 ? 3 : kw <= 180 ? 4.5
+                : kw <= 250 ? 6 : 9;
+        int age = in.ageYears();
+        boolean hybrid = in.fuel() == FuelType.HEV || in.fuel() == FuelType.MHEV || in.fuel() == FuelType.PHEV;
+        double environment = hybrid || age <= 11 ? 1 : age <= 15 ? 1.5 : age <= 20 ? 6 : age <= 25 ? 12 : 24;
+        // only the model year is known - assume first registration in its middle
+        double depreciation = 0.01 * interpolateSteps(age * 12 + 6, new int[] {
+                0, 1, 3, 5, 7, 13, 19, 25, 31, 37, 49, 61, 73, 85, 97, 109, 121, 133, 145, 157, 169}, new double[] {
+                0, 3, 8, 13, 18, 23, 28, 33, 38, 45, 53, 59, 65, 70, 74, 78, 81, 84, 86, 88, 90});
+        return new Assessment(bd(47_000 * power * environment * (1 - depreciation)), null, "HU_REGADO_2026");
+    }
+
+    /** Step lookup: the value of the last threshold not above {@code x}. */
+    private static double interpolateSteps(int x, int[] from, double[] value) {
+        double v = value[0];
+        for (int i = 0; i < from.length; i++) {
+            if (x >= from[i]) {
+                v = value[i];
+            }
+        }
+        return v;
     }
 
     private static double clamp(double v, double min, double max) {

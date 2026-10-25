@@ -30,7 +30,7 @@ export const COUNTRY_FACTS: Record<string, CountryFacts> = {
   HU: { registrationTax: 'Regisztrációs adó', authority: 'Kormányablak / NAV', inspection: 'Forgalomba helyezés előtti vizsgálat', deadlineDays: null },
   IE: { registrationTax: 'VRT (Vehicle Registration Tax)', authority: 'Revenue / NCTS', inspection: 'VRT inspection, NCT', deadlineDays: 30 },
   IT: { registrationTax: 'IPT (imposta provinciale di trascrizione)', authority: 'Motorizzazione Civile / PRA', inspection: 'Revisione / omologazione', deadlineDays: 60 },
-  LV: { registrationTax: 'Reģistrācijas nodeva', authority: 'CSDD', inspection: 'Tehniskā apskate', deadlineDays: null },
+  LV: { registrationTax: null, authority: 'CSDD', inspection: 'Tehniskā apskate', deadlineDays: null },
   LT: { registrationTax: 'Registracijos mokestis', authority: 'Regitra', inspection: 'Techninė apžiūra', deadlineDays: null },
   LU: { registrationTax: null, authority: 'SNCA', inspection: 'Contrôle technique SNCA', deadlineDays: null },
   MT: { registrationTax: 'Registration tax', authority: 'Transport Malta', inspection: 'VRT (Vehicle Roadworthiness Test)', deadlineDays: null },
