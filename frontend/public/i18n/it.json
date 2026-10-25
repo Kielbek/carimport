@@ -226,7 +226,20 @@
     "deadline": "Scadenza",
     "riskDetail": "Probabilità {{p}}%, costo se si verifica: {{min}}–{{max}} {{cur}}",
     "userAmount": "importo da te inserito",
-    "scenarioMethod": "Lo scenario medio include i rischi come valore atteso (probabilità × costo medio); quello pessimistico presume che ogni rischio si verifichi al costo massimo."
+    "scenarioMethod": "Lo scenario medio include i rischi come valore atteso (probabilità × costo medio); quello pessimistico presume che ogni rischio si verifichi al costo massimo.",
+    "progress": {
+      "title": "Il tuo report è in arrivo",
+      "paying": "Conferma del pagamento con Stripe in corso…",
+      "paid": "Pagamento confermato",
+      "generating": "Stiamo preparando il tuo report PDF…",
+      "ready": "Report PDF pronto",
+      "emailSending": "Invio del report e di un link a {{email}}…",
+      "emailSent": "Abbiamo inviato il report e un link a {{email}}",
+      "doneTitle": "Fatto – il tuo report è qui sotto",
+      "downloadBelow": "Puoi scaricarlo qui in qualsiasi momento.",
+      "slow": "Ci sta mettendo più del solito. Aggiorna tra un attimo – se l’e-mail è configurata, il report arriverà anche nella tua casella di posta.",
+      "refresh": "Controlla di nuovo"
+    }
   },
   "result": {
     "chart": "Struttura dei costi",
@@ -272,7 +285,11 @@
     "riskTag": "rischio",
     "moreLocked": "+ altre {{count}} voci, inclusi i costi nascosti",
     "customsFx": "Dazio e IVA sono calcolati sul valore in dogana convertito al tasso di cambio doganale del mese, quello del {{date}} (penultimo mercoledì del mese precedente).",
-    "sample": "Vedi un report di esempio (PDF)"
+    "sample": "Vedi un report di esempio (PDF)",
+    "carPrice": "Prezzo dell’auto",
+    "carPriceWhat": "La tua offerta o il prezzo d’acquisto, convertito",
+    "totalWithCar": "Auto + imposte e diritti portuali",
+    "totalWithCarWhat": "Esclusi trasporto, commissioni d’asta, consegna e immatricolazione – sono nel report completo"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Container esclusivo",

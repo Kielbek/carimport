@@ -226,7 +226,20 @@
     "deadline": "Deadline",
     "riskDetail": "Probability {{p}}%, cost if it happens: {{min}}–{{max}} {{cur}}",
     "userAmount": "amount you entered",
-    "scenarioMethod": "The average scenario includes risks as expected value (probability × mid cost); the pessimistic one assumes every risk happens at its upper cost."
+    "scenarioMethod": "The average scenario includes risks as expected value (probability × mid cost); the pessimistic one assumes every risk happens at its upper cost.",
+    "progress": {
+      "title": "Your report is on its way",
+      "paying": "Confirming your payment with Stripe…",
+      "paid": "Payment confirmed",
+      "generating": "Preparing your PDF report…",
+      "ready": "PDF report ready",
+      "emailSending": "Sending the report and a link to {{email}}…",
+      "emailSent": "We sent the report and a link to {{email}}",
+      "doneTitle": "Done – your report is below",
+      "downloadBelow": "You can download it here at any time.",
+      "slow": "This is taking longer than usual. Refresh in a moment – if e-mail is set up, the report will also reach your inbox.",
+      "refresh": "Check again"
+    }
   },
   "result": {
     "chart": "Cost structure",
@@ -272,7 +285,11 @@
     "riskTag": "risk",
     "moreLocked": "+ {{count}} more positions, incl. hidden costs",
     "customsFx": "Duty and VAT are assessed on the customs value converted at the customs exchange rate of the month – the rate of {{date}} (penultimate Wednesday of the previous month).",
-    "sample": "See a sample report (PDF)"
+    "sample": "See a sample report (PDF)",
+    "carPrice": "Car price",
+    "carPriceWhat": "Your bid or purchase price, converted",
+    "totalWithCar": "Car + taxes and port fees",
+    "totalWithCarWhat": "Without transport, auction fees, delivery and registration – those are in the full report"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exclusive container",

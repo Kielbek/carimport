@@ -226,7 +226,20 @@
     "deadline": "Rok",
     "riskDetail": "Verjetnost {{p}} %, strošek, če se zgodi: {{min}}–{{max}} {{cur}}",
     "userAmount": "znesek, ki ste ga vnesli",
-    "scenarioMethod": "Povprečni scenarij upošteva tveganja kot pričakovano vrednost (verjetnost × srednji strošek); pesimistični predpostavlja, da se vsako tveganje uresniči po zgornjem strošku."
+    "scenarioMethod": "Povprečni scenarij upošteva tveganja kot pričakovano vrednost (verjetnost × srednji strošek); pesimistični predpostavlja, da se vsako tveganje uresniči po zgornjem strošku.",
+    "progress": {
+      "title": "Vaše poročilo je na poti",
+      "paying": "Potrjujemo vaše plačilo prek storitve Stripe …",
+      "paid": "Plačilo potrjeno",
+      "generating": "Pripravljamo vaše poročilo PDF …",
+      "ready": "Poročilo PDF je pripravljeno",
+      "emailSending": "Pošiljamo poročilo in povezavo na {{email}} …",
+      "emailSent": "Poročilo in povezavo smo poslali na {{email}}",
+      "doneTitle": "Končano – vaše poročilo je spodaj",
+      "downloadBelow": "Tukaj ga lahko kadar koli prenesete.",
+      "slow": "To traja dlje kot običajno. Čez trenutek osvežite stran – če je e-pošta nastavljena, bo poročilo prispelo tudi v vaš nabiralnik.",
+      "refresh": "Preveri znova"
+    }
   },
   "result": {
     "chart": "Struktura stroškov",
@@ -272,7 +285,11 @@
     "riskTag": "tveganje",
     "moreLocked": "+ še {{count}} postavk, vključno s skritimi stroški",
     "customsFx": "Carino in DDV izračunamo od carinske vrednosti, preračunane po carinskem tečaju meseca – tečaju z dne {{date}} (predzadnja sreda prejšnjega meseca).",
-    "sample": "Oglejte si primer poročila (PDF)"
+    "sample": "Oglejte si primer poročila (PDF)",
+    "carPrice": "Cena avtomobila",
+    "carPriceWhat": "Vaša ponudba ali kupnina, preračunana",
+    "totalWithCar": "Avtomobil + dajatve in pristaniški stroški",
+    "totalWithCarWhat": "Brez prevoza, provizij dražbe, dostave in registracije – ti so v celotnem poročilu"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Lasten zabojnik",

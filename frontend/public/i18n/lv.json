@@ -226,7 +226,20 @@
     "deadline": "Termiņš",
     "riskDetail": "Varbūtība {{p}}%, izmaksas, ja tas notiek: {{min}}–{{max}} {{cur}}",
     "userAmount": "jūsu ievadītā summa",
-    "scenarioMethod": "Vidējais scenārijs ietver riskus kā sagaidāmo vērtību (varbūtība × vidējās izmaksas); pesimistiskais pieņem, ka katrs risks īstenojas ar augstākajām izmaksām."
+    "scenarioMethod": "Vidējais scenārijs ietver riskus kā sagaidāmo vērtību (varbūtība × vidējās izmaksas); pesimistiskais pieņem, ka katrs risks īstenojas ar augstākajām izmaksām.",
+    "progress": {
+      "title": "Jūsu atskaite ir ceļā",
+      "paying": "Apstiprinām jūsu maksājumu ar Stripe…",
+      "paid": "Maksājums apstiprināts",
+      "generating": "Sagatavojam jūsu PDF atskaiti…",
+      "ready": "PDF atskaite ir gatava",
+      "emailSending": "Sūtām atskaiti un saiti uz {{email}}…",
+      "emailSent": "Nosūtījām atskaiti un saiti uz {{email}}",
+      "doneTitle": "Gatavs – jūsu atskaite ir zemāk",
+      "downloadBelow": "Varat to lejupielādēt šeit jebkurā laikā.",
+      "slow": "Tas aizņem ilgāk nekā parasti. Pēc brīža atsvaidziniet lapu – ja e-pasts ir iestatīts, atskaite pienāks arī jūsu pastkastītē.",
+      "refresh": "Pārbaudīt vēlreiz"
+    }
   },
   "result": {
     "chart": "Izmaksu struktūra",
@@ -272,7 +285,11 @@
     "riskTag": "risks",
     "moreLocked": "+ vēl {{count}} pozīcijas, t. sk. slēptās izmaksas",
     "customsFx": "Muitu un PVN aprēķina no muitas vērtības, kas pārrēķināta pēc mēneša muitas kursa – {{date}} kursa (iepriekšējā mēneša priekšpēdējā trešdiena).",
-    "sample": "Skatīt atskaites paraugu (PDF)"
+    "sample": "Skatīt atskaites paraugu (PDF)",
+    "carPrice": "Automašīnas cena",
+    "carPriceWhat": "Jūsu likme vai pirkuma cena, pārrēķināta",
+    "totalWithCar": "Automašīna + nodokļi un ostas maksas",
+    "totalWithCarWhat": "Bez transporta, izsoles maksām, piegādes un reģistrācijas – tās ir pilnajā atskaitē"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Atsevišķs konteiners",

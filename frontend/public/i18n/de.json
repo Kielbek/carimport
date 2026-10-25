@@ -226,7 +226,20 @@
     "deadline": "Frist",
     "riskDetail": "Wahrscheinlichkeit {{p}} %, Kosten bei Eintritt: {{min}}–{{max}} {{cur}}",
     "userAmount": "von Ihnen angegebener Betrag",
-    "scenarioMethod": "Das Durchschnittsszenario enthält Risiken als Erwartungswert (Wahrscheinlichkeit × mittlere Kosten); das pessimistische nimmt an, dass alle Risiken mit Höchstkosten eintreten."
+    "scenarioMethod": "Das Durchschnittsszenario enthält Risiken als Erwartungswert (Wahrscheinlichkeit × mittlere Kosten); das pessimistische nimmt an, dass alle Risiken mit Höchstkosten eintreten.",
+    "progress": {
+      "title": "Ihr Bericht ist unterwegs",
+      "paying": "Zahlung wird bei Stripe bestätigt…",
+      "paid": "Zahlung bestätigt",
+      "generating": "Ihr PDF-Bericht wird erstellt…",
+      "ready": "PDF-Bericht fertig",
+      "emailSending": "Bericht und Link werden an {{email}} gesendet…",
+      "emailSent": "Wir haben den Bericht und einen Link an {{email}} gesendet",
+      "doneTitle": "Fertig – Ihr Bericht steht unten",
+      "downloadBelow": "Sie können ihn hier jederzeit herunterladen.",
+      "slow": "Das dauert länger als üblich. Laden Sie die Seite gleich neu – ist der E-Mail-Versand eingerichtet, kommt der Bericht auch in Ihr Postfach.",
+      "refresh": "Erneut prüfen"
+    }
   },
   "result": {
     "chart": "Kostenstruktur",
@@ -272,7 +285,11 @@
     "riskTag": "Risiko",
     "moreLocked": "+ {{count}} weitere Positionen, inkl. versteckter Kosten",
     "customsFx": "Zoll und Einfuhrumsatzsteuer werden vom Zollwert berechnet, umgerechnet zum Zollkurs des Monats – Kurs vom {{date}} (vorletzter Mittwoch des Vormonats).",
-    "sample": "Musterbericht ansehen (PDF)"
+    "sample": "Musterbericht ansehen (PDF)",
+    "carPrice": "Fahrzeugpreis",
+    "carPriceWhat": "Ihr Gebot bzw. Kaufpreis, umgerechnet",
+    "totalWithCar": "Fahrzeug + Steuern & Hafengebühren",
+    "totalWithCarWhat": "Ohne Transport, Auktionsgebühren, Lieferung und Zulassung – diese stehen im vollen Bericht"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exklusiver Container",

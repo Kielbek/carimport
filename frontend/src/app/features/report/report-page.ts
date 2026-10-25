@@ -1,9 +1,9 @@
 import { Component, OnInit, computed, inject, input, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { filter, map, switchMap, take, takeWhile, timer } from 'rxjs';
+import { catchError, filter, of, switchMap, take, takeWhile, tap, timer } from 'rxjs';
 import { AnalyticsService } from '../../core/analytics/analytics.service';
-import { CalculationResult, CostCategory, CostLine, FullReport, OrderStatus } from '../../core/api/api.models';
+import { CalculationResult, CostCategory, CostLine, FullReport, OrderProgress, OrderStatus } from '../../core/api/api.models';
 import { CarImportApi } from '../../core/api/carimport-api';
 import { LocalNumberPipe } from '../../core/format/local-number.pipe';
 import { MoneyPipe } from '../../core/format/money.pipe';
@@ -18,8 +18,9 @@ const CATEGORIES: CostCategory[] = ['VEHICLE', 'TRANSPORT', 'TAXES', 'REGISTRATI
 interface Row { code: string; line: CostLine; amounts: number[] }
 
 /**
- * Stripe success_url lands here. The browser may arrive before the webhook, so the page polls the order status
- * (max ~90 s) and never trusts the redirect itself as proof of payment.
+ * Stripe success_url lands here (and the link in the report e-mail). Coming back from Stripe the page asks the server
+ * to check the payment with Stripe directly - the redirect itself is never proof - then follows the order through
+ * payment → PDF → e-mail and shows the report with its download button.
  */
 @Component({
   selector: 'app-report-page',
@@ -32,14 +33,53 @@ interface Row { code: string; line: CostLine; amounts: number[] }
         <p class="card mt-8 p-6">{{ 'report.refunded' | translate }}</p>
       } @else if (status() === 'EXPIRED') {
         <p class="mt-8 rounded-[6px] bg-danger-soft p-6 text-danger">{{ 'report.expired' | translate }}</p>
-      } @else if (!unlocked()) {
-        <div class="mt-20 text-center">
-          <div class="mx-auto size-12 animate-spin rounded-full border-4 border-line border-t-brand"></div>
-          <p class="mt-5 font-semibold">{{ 'report.waiting' | translate }}</p>
-        </div>
+      } @else if (!done()) {
+        <!-- payment → PDF → e-mail, each step ticked off as it completes -->
+        <section class="card mx-auto mt-12 max-w-xl p-7" aria-live="polite">
+          <h1 class="text-xl font-extrabold">{{ 'report.progress.title' | translate }}</h1>
+          <ol class="mt-6 space-y-4">
+            @for (step of steps(); track step.key) {
+              <li class="flex items-center gap-3">
+                @if (step.state === 'done') {
+                  <app-icon name="check-circle" [size]="22" class="shrink-0 text-success" />
+                } @else if (step.state === 'active') {
+                  <span class="size-[22px] shrink-0 animate-spin rounded-full border-[3px] border-line border-t-brand"></span>
+                } @else {
+                  <span class="size-[22px] shrink-0 rounded-full border-2 border-line"></span>
+                }
+                <span [class.text-muted]="step.state === 'todo'" [class.font-semibold]="step.state === 'active'">
+                  {{ step.label | translate: { email: progress()?.emailTo ?? '' } }}
+                </span>
+              </li>
+            }
+          </ol>
+          @if (slow()) {
+            <p class="mt-6 rounded-[4px] bg-panel-2 p-4 text-sm">{{ 'report.progress.slow' | translate }}</p>
+            <button type="button" class="btn btn-outline mt-4" (click)="reload()">{{ 'report.progress.refresh' | translate }}</button>
+          }
+        </section>
       }
 
-      @if (report(); as r) {
+      @if (done() && progress(); as p) {
+        <section class="mt-8 flex flex-col items-start gap-4 rounded-[6px] border border-success/40 bg-success/10 p-6 sm:flex-row sm:items-center sm:justify-between"
+                 animate.enter="reveal-enter">
+          <div class="flex items-start gap-3">
+            <app-icon name="check-circle" [size]="26" class="mt-0.5 shrink-0 text-success" />
+            <div>
+              <p class="text-lg font-extrabold">{{ 'report.progress.doneTitle' | translate }}</p>
+              <p class="mt-1 text-sm text-fg/85">
+                @if (p.emailSent) { {{ 'report.progress.emailSent' | translate: { email: p.emailTo } }} }
+                @else { {{ 'report.progress.downloadBelow' | translate }} }
+              </p>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary shrink-0" (click)="download()">
+            <app-icon name="download" [size]="18" /> {{ 'report.download' | translate }}
+          </button>
+        </section>
+      }
+
+      @if (shownReport(); as r) {
         <header class="mt-8 flex flex-wrap items-end justify-between gap-4" animate.enter="reveal-enter">
           <div>
             <p class="eyebrow">HS {{ r.result.hsCode }} · {{ r.result.route.departurePort }} → {{ r.result.route.euPortName }}</p>
@@ -153,6 +193,36 @@ export class ReportPage implements OnInit {
 
   protected readonly home = computed(() => pathFor('home', this.lang.current()));
   protected readonly status = signal<OrderStatus | null>(null);
+  protected readonly progress = signal<OrderProgress | null>(null);
+  protected readonly slow = signal(false);
+  /** The report is downloadable and, when e-mail is on, has been sent. */
+  protected readonly done = computed(() => {
+    const p = this.progress();
+    return !!p && p.status === 'READY' && (p.emailSent || !p.mailEnabled);
+  });
+  /** The report appears once everything is done (or when it takes unusually long, so nothing stays hidden). */
+  protected readonly shownReport = computed(() => (this.done() || this.slow() ? this.report() : null));
+  protected readonly steps = computed(() => {
+    const p = this.progress();
+    const paid = this.unlocked();
+    const ready = p?.status === 'READY';
+    const list: { key: string; label: string; state: 'done' | 'active' | 'todo' }[] = [
+      { key: 'pay', label: paid ? 'report.progress.paid' : 'report.progress.paying', state: paid ? 'done' : 'active' },
+      {
+        key: 'pdf',
+        label: ready ? 'report.progress.ready' : 'report.progress.generating',
+        state: ready ? 'done' : paid ? 'active' : 'todo',
+      },
+    ];
+    if (p?.mailEnabled) {
+      list.push({
+        key: 'mail',
+        label: p.emailSent ? 'report.progress.emailSent' : 'report.progress.emailSending',
+        state: p.emailSent ? 'done' : ready ? 'active' : 'todo',
+      });
+    }
+    return list;
+  });
   protected readonly report = signal<FullReport | null>(null);
   protected readonly categories = CATEGORIES;
   protected readonly stages = STAGES;
@@ -202,29 +272,59 @@ export class ReportPage implements OnInit {
   ngOnInit(): void {
     // the token travels in the URL fragment (never sent to servers); move it to storage and clean the address bar
     const fragment = new URLSearchParams(window.location.hash.slice(1));
+    const sessionId = new URLSearchParams(window.location.search).get('session_id');
     const fromUrl = fragment.get('token');
     if (fromUrl) {
       rememberOrder(this.orderId(), fromUrl);
+    }
+    if (fromUrl || sessionId) {
       history.replaceState(null, '', window.location.pathname);
     }
     this.token = fromUrl ?? recallOrder(this.orderId()) ?? '';
 
+    // back from Stripe: have the server check the payment with Stripe now instead of waiting for the webhook
+    const first = sessionId
+      ? this.api.confirmOrder(this.orderId(), this.token, sessionId).pipe(catchError(() => of(null)))
+      : of(null);
+    first.subscribe((p) => {
+      if (p) {
+        this.apply(p);
+      }
+      this.poll();
+    });
+  }
+
+  protected reload(): void {
+    this.slow.set(false);
+    this.poll();
+  }
+
+  /** Every 2 s for up to 3 minutes, until the PDF is ready and the e-mail is out (or e-mail is off). */
+  private poll(): void {
     timer(0, 2000)
       .pipe(
-        take(45),
-        switchMap(() => this.api.orderStatus(this.orderId(), this.token)),
-        map((s) => s.status),
-        takeWhile((s) => s !== 'READY' && s !== 'EXPIRED' && s !== 'REFUNDED', true),
+        take(90),
+        switchMap(() => this.api.orderStatus(this.orderId(), this.token).pipe(catchError(() => of(null)))),
+        filter((p): p is OrderProgress => p !== null),
+        tap((p) => this.apply(p)),
+        takeWhile((p) => !this.finished(p), true),
       )
-      .subscribe((s) => {
-        this.status.set(s);
-        if (this.unlocked()) {
-          this.trackPurchaseOnce();
-        }
-        if (this.unlocked() && !this.report()) {
-          this.loadReport();
-        }
-      });
+      .subscribe({ complete: () => this.slow.set(!this.done()) });
+  }
+
+  private apply(p: OrderProgress): void {
+    this.progress.set(p);
+    this.status.set(p.status);
+    if (this.unlocked()) {
+      this.trackPurchaseOnce();
+    }
+    if (this.unlocked() && !this.report() && !this.loadingReport) {
+      this.loadReport();
+    }
+  }
+
+  private finished(p: OrderProgress): boolean {
+    return ['EXPIRED', 'REFUNDED'].includes(p.status) || (p.status === 'READY' && (p.emailSent || !p.mailEnabled));
   }
 
   protected download(): void {
@@ -238,7 +338,10 @@ export class ReportPage implements OnInit {
     });
   }
 
+  private loadingReport = false;
+
   private loadReport(): void {
+    this.loadingReport = true;
     this.api
       .fullReport(this.orderId(), this.token)
       .pipe(filter(Boolean))

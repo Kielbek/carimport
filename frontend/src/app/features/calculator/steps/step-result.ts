@@ -84,6 +84,11 @@ import { DEPARTURE_PORTS } from '../calculator.options';
         <table class="mt-5 w-full text-[15px]">
           <tbody>
             <tr class="border-b border-line">
+              <td class="py-3 pr-3">{{ 'result.carPrice' | translate }}
+                <span class="block text-xs text-muted">{{ 'result.carPriceWhat' | translate }}</span></td>
+              <td class="py-3 text-right font-bold tabular-nums">{{ money(r.taxes.carPrice, r.currency) }}</td>
+            </tr>
+            <tr class="border-b border-line">
               <td class="py-3 pr-3">{{ 'cost.CUSTOMS_DUTY' | translate }} <span class="text-muted">{{ pct(r.taxes.duty.rate) }}</span>
                 <span class="block text-xs text-muted">{{ 'portCost.dutyWhere' | translate }}</span></td>
               <td class="py-3 text-right font-bold tabular-nums">{{ money(r.taxes.duty.amount, r.currency) }}</td>
@@ -105,9 +110,14 @@ import { DEPARTURE_PORTS } from '../calculator.options';
                 <span class="block text-xs text-muted">{{ 'portCost.portFeesWhat' | translate }}</span></td>
               <td class="py-3 text-right font-bold tabular-nums">{{ money(r.taxes.portFees, r.currency) }}</td>
             </tr>
+            <tr class="border-b border-line">
+              <td class="py-3 pr-3 font-semibold">{{ 'portCost.total' | translate }}</td>
+              <td class="py-3 text-right font-bold tabular-nums">{{ money(r.taxes.total, r.currency) }}</td>
+            </tr>
             <tr>
-              <td class="pt-4 font-extrabold">{{ 'portCost.total' | translate }}</td>
-              <td class="pt-4 text-right text-xl font-extrabold tabular-nums text-brand-text">{{ money(r.taxes.total, r.currency) }}</td>
+              <td class="pt-4 font-extrabold">{{ 'result.totalWithCar' | translate }}
+                <span class="block text-xs font-normal text-muted">{{ 'result.totalWithCarWhat' | translate }}</span></td>
+              <td class="pt-4 text-right text-xl font-extrabold tabular-nums text-brand-text">{{ money(r.taxes.totalWithCar, r.currency) }}</td>
             </tr>
           </tbody>
         </table>

@@ -226,7 +226,20 @@
     "deadline": "Termijn",
     "riskDetail": "Kans {{p}}%, kosten als het gebeurt: {{min}}–{{max}} {{cur}}",
     "userAmount": "door u ingevoerd bedrag",
-    "scenarioMethod": "Het gemiddelde scenario rekent risico’s mee als verwachtingswaarde (kans × gemiddelde kosten); het pessimistische scenario gaat ervan uit dat elk risico zich voordoet tegen de hoogste kosten."
+    "scenarioMethod": "Het gemiddelde scenario rekent risico’s mee als verwachtingswaarde (kans × gemiddelde kosten); het pessimistische scenario gaat ervan uit dat elk risico zich voordoet tegen de hoogste kosten.",
+    "progress": {
+      "title": "Uw rapport is onderweg",
+      "paying": "Uw betaling wordt bij Stripe bevestigd…",
+      "paid": "Betaling bevestigd",
+      "generating": "Uw PDF-rapport wordt voorbereid…",
+      "ready": "PDF-rapport klaar",
+      "emailSending": "Rapport en link worden verstuurd naar {{email}}…",
+      "emailSent": "Wij hebben het rapport en een link naar {{email}} gestuurd",
+      "doneTitle": "Klaar – uw rapport staat hieronder",
+      "downloadBelow": "U kunt het hier altijd downloaden.",
+      "slow": "Dit duurt langer dan normaal. Vernieuw zo meteen – als e-mail is ingesteld, komt het rapport ook in uw inbox.",
+      "refresh": "Opnieuw controleren"
+    }
   },
   "result": {
     "chart": "Kostenopbouw",
@@ -272,7 +285,11 @@
     "riskTag": "risico",
     "moreLocked": "+ {{count}} extra posten, incl. verborgen kosten",
     "customsFx": "Douanerechten en btw worden berekend over de douanewaarde, omgerekend tegen de douanekoers van de maand – de koers van {{date}} (voorlaatste woensdag van de vorige maand).",
-    "sample": "Bekijk een voorbeeldrapport (PDF)"
+    "sample": "Bekijk een voorbeeldrapport (PDF)",
+    "carPrice": "Autoprijs",
+    "carPriceWhat": "Uw bod of aankoopprijs, omgerekend",
+    "totalWithCar": "Auto + belastingen & havenkosten",
+    "totalWithCarWhat": "Zonder transport, veilingkosten, levering en registratie – die staan in het volledige rapport"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Eigen container",

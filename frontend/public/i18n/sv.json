@@ -226,7 +226,20 @@
     "deadline": "Tidsfrist",
     "riskDetail": "Sannolikhet {{p}} %, kostnad om det inträffar: {{min}}–{{max}} {{cur}}",
     "userAmount": "belopp du angett",
-    "scenarioMethod": "Medelscenariot räknar in riskerna som förväntat värde (sannolikhet × medelkostnad); det pessimistiska utgår från att varje risk inträffar till sin högsta kostnad."
+    "scenarioMethod": "Medelscenariot räknar in riskerna som förväntat värde (sannolikhet × medelkostnad); det pessimistiska utgår från att varje risk inträffar till sin högsta kostnad.",
+    "progress": {
+      "title": "Din rapport är på väg",
+      "paying": "Bekräftar din betalning hos Stripe…",
+      "paid": "Betalning bekräftad",
+      "generating": "Förbereder din PDF-rapport…",
+      "ready": "PDF-rapporten är klar",
+      "emailSending": "Skickar rapporten och en länk till {{email}}…",
+      "emailSent": "Vi har skickat rapporten och en länk till {{email}}",
+      "doneTitle": "Klart – din rapport finns nedan",
+      "downloadBelow": "Du kan ladda ner den här när som helst.",
+      "slow": "Det tar längre tid än vanligt. Uppdatera om en stund – om e-post är inställd kommer rapporten även till din inkorg.",
+      "refresh": "Kontrollera igen"
+    }
   },
   "result": {
     "chart": "Kostnadsstruktur",
@@ -272,7 +285,11 @@
     "riskTag": "risk",
     "moreLocked": "+ {{count}} poster till, inkl. dolda kostnader",
     "customsFx": "Tull och moms beräknas på tullvärdet omräknat till månadens tullkurs – kursen den {{date}} (näst sista onsdagen i föregående månad).",
-    "sample": "Se en exempelrapport (PDF)"
+    "sample": "Se en exempelrapport (PDF)",
+    "carPrice": "Bilens pris",
+    "carPriceWhat": "Ditt bud eller köpesumma, omräknat",
+    "totalWithCar": "Bil + skatter & hamnavgifter",
+    "totalWithCarWhat": "Utan transport, auktionsavgifter, leverans och registrering – de finns i hela rapporten"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Egen container",

@@ -226,7 +226,20 @@
     "deadline": "Termin",
     "riskDetail": "Prawdopodobieństwo {{p}}%, koszt jeśli wystąpi: {{min}}–{{max}} {{cur}}",
     "userAmount": "kwota podana przez Ciebie",
-    "scenarioMethod": "Scenariusz średni zawiera ryzyka jako wartość oczekiwaną (prawdopodobieństwo × średni koszt); pesymistyczny zakłada, że wszystkie ryzyka wystąpią w górnej granicy kosztu."
+    "scenarioMethod": "Scenariusz średni zawiera ryzyka jako wartość oczekiwaną (prawdopodobieństwo × średni koszt); pesymistyczny zakłada, że wszystkie ryzyka wystąpią w górnej granicy kosztu.",
+    "progress": {
+      "title": "Przygotowujemy Twój raport",
+      "paying": "Potwierdzamy płatność w Stripe…",
+      "paid": "Płatność potwierdzona",
+      "generating": "Przygotowujemy raport PDF…",
+      "ready": "Raport PDF gotowy",
+      "emailSending": "Wysyłamy raport z linkiem na {{email}}…",
+      "emailSent": "Wysłaliśmy raport z linkiem na {{email}}",
+      "doneTitle": "Gotowe – Twój raport jest poniżej",
+      "downloadBelow": "W każdej chwili pobierzesz go tutaj.",
+      "slow": "To trwa dłużej niż zwykle. Sprawdź ponownie za chwilę – jeśli wysyłka e-mail jest włączona, raport trafi też do Twojej skrzynki.",
+      "refresh": "Sprawdź ponownie"
+    }
   },
   "result": {
     "chart": "Struktura kosztów",
@@ -272,7 +285,11 @@
     "riskTag": "ryzyko",
     "moreLocked": "+ {{count}} kolejnych pozycji, w tym koszty ukryte",
     "customsFx": "Cło i VAT liczymy od wartości celnej przeliczonej po kursie celnym obowiązującym w tym miesiącu – z dnia {{date}} (przedostatnia środa poprzedniego miesiąca).",
-    "sample": "Zobacz przykładowy raport (PDF)"
+    "sample": "Zobacz przykładowy raport (PDF)",
+    "carPrice": "Cena samochodu",
+    "carPriceWhat": "Twoja oferta lub cena zakupu, przeliczona",
+    "totalWithCar": "Auto + podatki i opłaty portowe",
+    "totalWithCarWhat": "Bez transportu, opłat aukcyjnych, dowozu i rejestracji – te są w pełnym raporcie"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Kontener na wyłączność",

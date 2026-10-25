@@ -226,7 +226,20 @@
     "deadline": "Lhůta",
     "riskDetail": "Pravděpodobnost {{p}} %, náklad, pokud nastane: {{min}}–{{max}} {{cur}}",
     "userAmount": "vámi zadaná částka",
-    "scenarioMethod": "Průměrný scénář započítává rizika jako očekávanou hodnotu (pravděpodobnost × střední náklad); pesimistický předpokládá, že nastanou všechna rizika v horní výši nákladů."
+    "scenarioMethod": "Průměrný scénář započítává rizika jako očekávanou hodnotu (pravděpodobnost × střední náklad); pesimistický předpokládá, že nastanou všechna rizika v horní výši nákladů.",
+    "progress": {
+      "title": "Váš report je na cestě",
+      "paying": "Ověřujeme vaši platbu ve Stripe…",
+      "paid": "Platba potvrzena",
+      "generating": "Připravujeme váš PDF report…",
+      "ready": "PDF report je hotový",
+      "emailSending": "Posíláme report a odkaz na {{email}}…",
+      "emailSent": "Report a odkaz jsme poslali na {{email}}",
+      "doneTitle": "Hotovo – váš report najdete níže",
+      "downloadBelow": "Kdykoli si ho zde můžete stáhnout.",
+      "slow": "Trvá to déle než obvykle. Za chvíli stránku obnovte – pokud je nastaven e-mail, report vám dorazí i do schránky.",
+      "refresh": "Zkontrolovat znovu"
+    }
   },
   "result": {
     "chart": "Struktura nákladů",
@@ -272,7 +285,11 @@
     "riskTag": "riziko",
     "moreLocked": "+ dalších {{count}} položek vč. skrytých nákladů",
     "customsFx": "Clo a DPH počítáme z celní hodnoty přepočtené celním kurzem měsíce – kurzem ze dne {{date}} (předposlední středa předchozího měsíce).",
-    "sample": "Ukázka reportu (PDF)"
+    "sample": "Ukázka reportu (PDF)",
+    "carPrice": "Cena vozu",
+    "carPriceWhat": "Váš příhoz nebo kupní cena, přepočtená",
+    "totalWithCar": "Vůz + daně a přístavní poplatky",
+    "totalWithCarWhat": "Bez dopravy, aukčních poplatků, dovozu a registrace – ty jsou v kompletním reportu"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Vlastní kontejner",

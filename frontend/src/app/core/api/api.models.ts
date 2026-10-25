@@ -131,6 +131,9 @@ export interface TaxSummary {
   total: number;
   /** Day whose rates customs applies this month (penultimate Wednesday of the last one); null = today's rates. */
   customsFxDate: string | null;
+  /** Purchase price in the display currency, and car + the taxes and port fees above. */
+  carPrice: number;
+  totalWithCar: number;
 }
 
 /**
@@ -202,6 +205,18 @@ export interface FullReport {
 }
 
 export type OrderStatus = 'PENDING' | 'PAID' | 'GENERATING' | 'READY' | 'FAILED' | 'EXPIRED' | 'REFUNDED';
+
+/** GET /reports/orders/{id}: payment, PDF and e-mail state of a bought report. */
+export interface OrderProgress {
+  orderId: string;
+  status: OrderStatus;
+  downloadable: boolean;
+  /** Masked address the report goes to, e.g. j***@gmail.com. */
+  emailTo: string;
+  emailSent: boolean;
+  /** E-mail delivery is configured on the server. */
+  mailEnabled: boolean;
+}
 
 export interface PortOption {
   code: string;

@@ -226,7 +226,20 @@
     "deadline": "Határidő",
     "riskDetail": "Valószínűség: {{p}}%, költség, ha bekövetkezik: {{min}}–{{max}} {{cur}}",
     "userAmount": "Ön által megadott összeg",
-    "scenarioMethod": "Az átlagos forgatókönyv a kockázatokat várható értékként veszi figyelembe (valószínűség × közepes költség); a pesszimista feltételezi, hogy minden kockázat a felső költséggel bekövetkezik."
+    "scenarioMethod": "Az átlagos forgatókönyv a kockázatokat várható értékként veszi figyelembe (valószínűség × közepes költség); a pesszimista feltételezi, hogy minden kockázat a felső költséggel bekövetkezik.",
+    "progress": {
+      "title": "A jelentése úton van",
+      "paying": "Fizetés megerősítése a Stripe-nál…",
+      "paid": "Fizetés megerősítve",
+      "generating": "PDF-jelentése készül…",
+      "ready": "A PDF-jelentés elkészült",
+      "emailSending": "A jelentést és egy linket küldünk ide: {{email}}…",
+      "emailSent": "Elküldtük a jelentést és egy linket ide: {{email}}",
+      "doneTitle": "Kész – a jelentése lent található",
+      "downloadBelow": "Itt bármikor letöltheti.",
+      "slow": "Ez a szokásosnál tovább tart. Frissítsen egy kis idő múlva – ha az e-mail be van állítva, a jelentés a postafiókjába is megérkezik.",
+      "refresh": "Ellenőrzés újra"
+    }
   },
   "result": {
     "chart": "Költségszerkezet",
@@ -272,7 +285,11 @@
     "riskTag": "kockázat",
     "moreLocked": "+ további {{count}} tétel, köztük a rejtett költségek",
     "customsFx": "A vámot és az áfát a hónap vámárfolyamán átszámított vámértékből számoljuk – a {{date}} napi árfolyamon (az előző hónap utolsó előtti szerdája).",
-    "sample": "Mintajelentés megtekintése (PDF)"
+    "sample": "Mintajelentés megtekintése (PDF)",
+    "carPrice": "Az autó ára",
+    "carPriceWhat": "Az Ön licitje vagy vételára, átszámítva",
+    "totalWithCar": "Autó + adók és kikötői díjak",
+    "totalWithCarWhat": "Szállítás, aukciós díjak, kiszállítás és forgalomba helyezés nélkül – ezek a teljes jelentésben szerepelnek"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Saját (kizárólagos) konténer",
