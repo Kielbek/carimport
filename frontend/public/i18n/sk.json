@@ -806,7 +806,7 @@
     "title": "Zásady ochrany osobných údajov",
     "s1": {
       "title": "Prevádzkovateľ",
-      "text": "Prevádzkovateľom osobných údajov je prevádzkovateľ Carglo. V záležitostiach ochrany osobných údajov nás kontaktujte na {{email}}."
+      "text": "Prevádzkovateľom vašich údajov je {{seller}}, ktorý prevádzkuje službu Carglo. Vo veciach ochrany osobných údajov píšte na {{email}}."
     },
     "s2": {
       "title": "Aké údaje spracúvame",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Vaše práva",
       "text": "Máte právo na prístup, opravu, vymazanie, obmedzenie spracúvania, prenosnosť a namietanie, právo kedykoľvek odvolať súhlas a podať sťažnosť dozornému orgánu pre ochranu osobných údajov. Napíšte nám: {{email}}."
+    },
+    "s7": {
+      "title": "Newsletter",
+      "text": "Ak sa prihlásite, spracúvame vašu e-mailovú adresu, jazyk a dátum a verziu súhlasu na účely zasielania newslettera (čl. 6 ods. 1 písm. a GDPR). Adresa sa do zoznamu dostane až po potvrdení odkazom, ktorý vám pošleme. Odhlásiť sa môžete kedykoľvek odkazom v každej správe alebo e-mailom na {{email}}; zasielanie okamžite ukončíme a uchováme len záznam o súhlase a jeho odvolaní ako dôkaz."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Verzia zo dňa {{version}}",
     "s1": {
       "title": "Predávajúci a kontakt",
-      "text": "Službu {{site}} prevádzkuje {{company}}, {{address}}, IČ DPH {{taxId}}, {{registry}} (ďalej len „predávajúci“).\nKontakt vo všetkých záležitostiach vrátane reklamácií: {{email}}. Odpovedáme do 14 dní."
+      "text": "Službu {{site}} prevádzkuje {{seller}} (ďalej len „predávajúci“).\nKontakt vo všetkých záležitostiach vrátane reklamácií: {{email}}. Odpovedáme do 14 dní."
     },
     "s2": {
       "title": "Čo je služba",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Záverečné ustanovenia",
       "text": "Obchodné podmienky sú na tejto stránke bezplatne dostupné vo forme, ktorá umožňuje ich stiahnutie a vytlačenie.\nZmeny obchodných podmienok sa nevzťahujú na zmluvy uzavreté pred nadobudnutím ich účinnosti.\nPoužije sa poľské právo, pričom spotrebiteľ nie je zbavený ochrany, ktorú mu poskytujú kogentné ustanovenia právneho poriadku štátu jeho obvyklého pobytu."
-    }
+    },
+    "taxIdLabel": "IČ DPH"
+  },
+  "newsletter": {
+    "title": "Novinky o dovoze priamo do e-mailu",
+    "lead": "Raz mesačne: zmeny ciel a daní, ceny prepravy a nové sprievodcovia. Žiadny spam, odhlásenie jedným kliknutím.",
+    "email": "Váš e-mail",
+    "consent": "Súhlasím so zasielaním newslettera Carglo e-mailom. Kedykoľvek sa môžem odhlásiť odkazom v každej správe.",
+    "submit": "Prihlásiť sa",
+    "sent": "Takmer hotovo – skontrolujte schránku a kliknutím na odkaz potvrďte prihlásenie.",
+    "error": "Prihlásenie sa nepodarilo. Skúste to prosím neskôr.",
+    "confirmTitle": "Newsletter",
+    "working": "Moment…",
+    "confirmed": "Prihlásenie je potvrdené. Ďakujeme!",
+    "unsubscribed": "Boli ste odhlásení a ďalšie newslettery už nedostanete.",
+    "invalid": "Tento odkaz je neplatný alebo už bol použitý."
   }
 }

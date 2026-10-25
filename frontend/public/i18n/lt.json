@@ -806,7 +806,7 @@
     "title": "Privatumo politika",
     "s1": {
       "title": "Duomenų valdytojas",
-      "text": "Duomenų valdytojas yra Carglo operatorius. Duomenų apsaugos klausimais rašykite adresu {{email}}."
+      "text": "Jūsų duomenų valdytojas yra {{seller}}, administruojantis paslaugą Carglo. Duomenų apsaugos klausimais rašykite {{email}}."
     },
     "s2": {
       "title": "Kokius duomenis tvarkome",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Jūsų teisės",
       "text": "Turite teisę susipažinti su duomenimis, juos ištaisyti, ištrinti, apriboti tvarkymą, perkelti ir nesutikti, bet kada atšaukti sutikimą ir pateikti skundą duomenų apsaugos priežiūros institucijai. Rašykite mums: {{email}}."
+    },
+    "s7": {
+      "title": "Naujienlaiškis",
+      "text": "Jei užsiprenumeruojate, tvarkome jūsų el. pašto adresą, kalbą ir sutikimo datą bei versiją, kad galėtume siųsti naujienlaiškį (BDAR 6 straipsnio 1 dalies a punktas). Adresas įtraukiamas į sąrašą tik jums jį patvirtinus nuoroda, kurią atsiunčiame. Bet kada galite atsisakyti per nuorodą kiekviename laiške arba parašę {{email}}; siuntimą nutraukiame iš karto ir saugome tik sutikimo ir jo atšaukimo įrašą kaip įrodymą."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Redakcija nuo {{version}}",
     "s1": {
       "title": "Pardavėjas ir kontaktai",
-      "text": "Svetainę {{site}} administruoja {{company}}, {{address}}, PVM mokėtojo kodas {{taxId}}, {{registry}} (toliau – Pardavėjas).\nKontaktai visais klausimais, taip pat pretenzijoms: {{email}}. Atsakome per 14 dienų."
+      "text": "Svetainę {{site}} administruoja {{seller}} (toliau – Pardavėjas).\nKontaktai visais klausimais, taip pat pretenzijoms: {{email}}. Atsakome per 14 dienų."
     },
     "s2": {
       "title": "Kas yra paslauga",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Baigiamosios nuostatos",
       "text": "Taisyklės nemokamai pateikiamos šiame puslapyje tokia forma, kuri leidžia jas atsisiųsti ir atsispausdinti.\nTaisyklių pakeitimai netaikomi sutartims, sudarytoms iki jų įsigaliojimo.\nTaikoma Lenkijos teisė, tačiau vartotojas nepraranda apsaugos, kurią jam suteikia jo įprastinės gyvenamosios vietos valstybės imperatyviosios teisės normos."
-    }
+    },
+    "taxIdLabel": "PVM mokėtojo kodas"
+  },
+  "newsletter": {
+    "title": "Importo naujienos tiesiai į jūsų pašto dėžutę",
+    "lead": "Kartą per mėnesį: muitų ir mokesčių pokyčiai, krovinių gabenimo kainos ir nauji gidai. Jokio šlamšto, atsisakymas vienu paspaudimu.",
+    "email": "Jūsų el. paštas",
+    "consent": "Sutinku gauti Carglo naujienlaiškį el. paštu. Bet kada galiu atsisakyti per nuorodą kiekviename laiške.",
+    "submit": "Prenumeruoti",
+    "sent": "Beveik baigta – patikrinkite pašto dėžutę ir spustelėkite nuorodą, kad patvirtintumėte prenumeratą.",
+    "error": "Užsiprenumeruoti nepavyko. Bandykite vėliau.",
+    "confirmTitle": "Naujienlaiškis",
+    "working": "Akimirką…",
+    "confirmed": "Jūsų prenumerata patvirtinta. Ačiū!",
+    "unsubscribed": "Jūs atsisakėte prenumeratos ir naujienlaiškių nebegausite.",
+    "invalid": "Ši nuoroda negalioja arba jau buvo panaudota."
   }
 }

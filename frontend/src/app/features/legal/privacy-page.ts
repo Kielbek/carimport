@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { TranslatePipe } from '@ngx-translate/core';
+import { Component, inject } from '@angular/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { LanguageService } from '../../core/i18n/language.service';
 import { SITE } from '../../core/site.config';
 
 /** Privacy policy (GDPR information clause). Text lives in the translation files; legal review required before launch. */
@@ -13,13 +14,23 @@ import { SITE } from '../../core/site.config';
       @for (n of sections; track n) {
         <section class="mt-10">
           <h2 class="text-xl font-extrabold">{{ 'privacy.s' + n + '.title' | translate }}</h2>
-          <p class="mt-3 leading-relaxed text-muted">{{ 'privacy.s' + n + '.text' | translate: { email: email } }}</p>
+          <p class="mt-3 leading-relaxed text-muted">{{ 'privacy.s' + n + '.text' | translate: { email: email, seller: seller() } }}</p>
         </section>
       }
     </article>
   `,
 })
 export class PrivacyPage {
-  protected readonly sections = [1, 2, 3, 4, 5, 6];
+  protected readonly sections = [1, 2, 3, 4, 5, 6, 7];
   protected readonly email = SITE.email;
+  private readonly translate = inject(TranslateService);
+  private readonly lang = inject(LanguageService);
+
+  /** The controller: name and address of the seller (tax ID only when there is one). */
+  protected seller(): string {
+    this.lang.current();
+    const c = SITE.company;
+    const tax = c.taxId ? `${this.translate.instant('terms.taxIdLabel')} ${c.taxId}` : '';
+    return [c.name, c.address, tax].filter(Boolean).join(', ');
+  }
 }

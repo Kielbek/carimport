@@ -806,7 +806,7 @@
     "title": "Tietosuojaseloste",
     "s1": {
       "title": "Rekisterinpitäjä",
-      "text": "Rekisterinpitäjä on Carglo-palvelun ylläpitäjä. Tietosuoja-asioissa ota yhteyttä osoitteeseen {{email}}."
+      "text": "Tietojesi rekisterinpitäjä on {{seller}}, joka ylläpitää Carglo-palvelua. Tietosuoja-asioissa kirjoita osoitteeseen {{email}}."
     },
     "s2": {
       "title": "Mitä tietoja käsittelemme",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Oikeutesi",
       "text": "Sinulla on oikeus tarkastaa, oikaista ja poistaa tietosi, rajoittaa niiden käsittelyä, siirtää ne järjestelmästä toiseen ja vastustaa käsittelyä, peruuttaa suostumuksesi milloin tahansa sekä tehdä valitus tietosuojaviranomaiselle. Kirjoita meille: {{email}}."
+    },
+    "s7": {
+      "title": "Uutiskirje",
+      "text": "Jos tilaat uutiskirjeen, käsittelemme sähköpostiosoitettasi, kieltäsi sekä suostumuksesi päivämäärää ja versiota uutiskirjeen lähettämiseksi (tietosuoja-asetuksen 6 artiklan 1 kohdan a alakohta). Osoite lisätään listalle vasta, kun vahvistat sen lähettämästämme linkistä. Voit peruuttaa tilauksen milloin tahansa jokaisessa viestissä olevasta linkistä tai kirjoittamalla osoitteeseen {{email}}; lähetys loppuu heti, ja säilytämme vain merkinnän suostumuksesta ja sen peruuttamisesta todisteena."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Versio {{version}}",
     "s1": {
       "title": "Myyjä ja yhteystiedot",
-      "text": "Palvelua {{site}} ylläpitää {{company}}, {{address}}, Y-tunnus {{taxId}}, {{registry}} (jäljempänä Myyjä).\nYhteydenotot kaikissa asioissa, myös reklamaatiot: {{email}}. Vastaamme 14 päivän kuluessa."
+      "text": "Palvelua {{site}} ylläpitää {{seller}} (jäljempänä Myyjä).\nYhteydenotot kaikissa asioissa, myös reklamaatiot: {{email}}. Vastaamme 14 päivän kuluessa."
     },
     "s2": {
       "title": "Mikä palvelu on",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Loppumääräykset",
       "text": "Ehdot ovat maksutta saatavilla tällä sivulla muodossa, joka mahdollistaa niiden tallentamisen ja tulostamisen.\nEhtojen muutokset eivät koske sopimuksia, jotka on tehty ennen muutosten voimaantuloa.\nSovelletaan Puolan lakia, kuitenkaan riistämättä kuluttajalta sitä suojaa, joka hänelle kuuluu hänen vakinaisen asuinmaansa pakottavan lainsäädännön nojalla."
-    }
+    },
+    "taxIdLabel": "Y-tunnus"
+  },
+  "newsletter": {
+    "title": "Tuontiuutiset suoraan sähköpostiisi",
+    "lead": "Kerran kuussa: tullien ja verojen muutokset, rahtihinnat ja uudet oppaat. Ei roskapostia, peruutus yhdellä napsautuksella.",
+    "email": "Sähköpostiosoitteesi",
+    "consent": "Haluan vastaanottaa Carglon uutiskirjeen sähköpostitse. Voin peruuttaa tilauksen milloin tahansa jokaisessa viestissä olevasta linkistä.",
+    "submit": "Tilaa",
+    "sent": "Melkein valmista – tarkista sähköpostisi ja vahvista tilaus napsauttamalla linkkiä.",
+    "error": "Tilaus ei onnistunut. Yritä myöhemmin uudelleen.",
+    "confirmTitle": "Uutiskirje",
+    "working": "Hetkinen…",
+    "confirmed": "Tilauksesi on vahvistettu. Kiitos!",
+    "unsubscribed": "Tilaus on peruttu, etkä saa enää uutiskirjeitä.",
+    "invalid": "Linkki on virheellinen tai jo käytetty."
   }
 }

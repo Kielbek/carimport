@@ -806,7 +806,7 @@
     "title": "Política de privacidad",
     "s1": {
       "title": "Responsable del tratamiento",
-      "text": "El responsable del tratamiento de los datos es el titular de Carglo. Para cuestiones de protección de datos, escríbenos a {{email}}."
+      "text": "El responsable del tratamiento de tus datos es {{seller}}, titular del servicio Carglo. Para cuestiones de protección de datos escribe a {{email}}."
     },
     "s2": {
       "title": "Qué datos tratamos",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Tus derechos",
       "text": "Tienes derecho de acceso, rectificación, supresión, limitación, portabilidad y oposición, a retirar tu consentimiento en cualquier momento y a presentar una reclamación ante tu autoridad de protección de datos. Escríbenos: {{email}}."
+    },
+    "s7": {
+      "title": "Boletín",
+      "text": "Si te suscribes, tratamos tu dirección de correo, tu idioma y la fecha y versión de tu consentimiento para enviarte el boletín (art. 6.1.a RGPD). La dirección se añade a la lista solo después de que la confirmes con el enlace que te enviamos. Puedes darte de baja en cualquier momento con el enlace de cada mensaje o escribiendo a {{email}}; dejamos de enviar de inmediato y solo conservamos el registro del consentimiento y su retirada como prueba."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Versión del {{version}}",
     "s1": {
       "title": "Vendedor y contacto",
-      "text": "{{site}} es gestionado por {{company}}, {{address}}, NIF {{taxId}}, {{registry}} (en adelante, el «Vendedor»).\nContacto para cualquier asunto, incluidas las reclamaciones: {{email}}. Respondemos en un plazo de 14 días."
+      "text": "{{site}} es gestionado por {{seller}} (en adelante, el «Vendedor»).\nContacto para cualquier asunto, incluidas las reclamaciones: {{email}}. Respondemos en un plazo de 14 días."
     },
     "s2": {
       "title": "Qué es el servicio",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Disposiciones finales",
       "text": "Las condiciones generales están disponibles gratuitamente en esta página en un formato que permite descargarlas e imprimirlas.\nLas modificaciones de las condiciones generales no afectan a los contratos celebrados antes de su entrada en vigor.\nSe aplica la legislación polaca, sin que ello prive al consumidor de la protección que le otorgan las disposiciones imperativas de la ley del país de su residencia habitual."
-    }
+    },
+    "taxIdLabel": "NIF"
+  },
+  "newsletter": {
+    "title": "Novedades sobre importación en tu correo",
+    "lead": "Una vez al mes: cambios en aranceles e impuestos, precios de flete y nuevas guías. Sin spam, baja con un clic.",
+    "email": "Tu correo electrónico",
+    "consent": "Acepto recibir el boletín de Carglo por correo electrónico. Puedo darme de baja en cualquier momento con el enlace de cada mensaje.",
+    "submit": "Suscribirme",
+    "sent": "Casi listo: revisa tu correo y haz clic en el enlace para confirmar la suscripción.",
+    "error": "No se ha podido completar la suscripción. Inténtalo de nuevo más tarde.",
+    "confirmTitle": "Boletín",
+    "working": "Un momento…",
+    "confirmed": "Tu suscripción está confirmada. ¡Gracias!",
+    "unsubscribed": "Te has dado de baja. No recibirás más boletines.",
+    "invalid": "Este enlace no es válido o ya se ha utilizado."
   }
 }

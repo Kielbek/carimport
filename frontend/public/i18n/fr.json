@@ -806,7 +806,7 @@
     "title": "Politique de confidentialité",
     "s1": {
       "title": "Responsable du traitement",
-      "text": "Le responsable du traitement des données est l’exploitant de Carglo. Pour toute question relative à la protection des données, contactez-nous à {{email}}."
+      "text": "Le responsable du traitement de vos données est {{seller}}, exploitant du service Carglo. Pour toute question relative à vos données, écrivez à {{email}}."
     },
     "s2": {
       "title": "Quelles données nous traitons",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Vos droits",
       "text": "Vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation, de portabilité et d’opposition, du droit de retirer votre consentement à tout moment et d’introduire une réclamation auprès de votre autorité de protection des données. Écrivez-nous : {{email}}."
+    },
+    "s7": {
+      "title": "Newsletter",
+      "text": "Si vous vous inscrivez, nous traitons votre adresse e-mail, votre langue ainsi que la date et la version de votre consentement afin d'envoyer la newsletter (art. 6, par. 1, point a) du RGPD). L'adresse n'est ajoutée à la liste qu'après confirmation via le lien envoyé par e-mail. Vous pouvez vous désinscrire à tout moment via le lien présent dans chaque message ou en écrivant à {{email}} ; l'envoi cesse immédiatement et nous conservons uniquement la preuve du consentement et de son retrait."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Version du {{version}}",
     "s1": {
       "title": "Vendeur et contact",
-      "text": "Le site {{site}} est exploité par {{company}}, {{address}}, numéro de TVA {{taxId}}, {{registry}} (ci-après « le Vendeur »).\nContact pour toute question, y compris les réclamations : {{email}}. Nous répondons dans un délai de 14 jours."
+      "text": "Le site {{site}} est exploité par {{seller}} (ci-après « le Vendeur »).\nContact pour toute question, y compris les réclamations : {{email}}. Nous répondons dans un délai de 14 jours."
     },
     "s2": {
       "title": "Objet du service",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Dispositions finales",
       "text": "Les conditions générales sont accessibles gratuitement sur cette page, sous une forme permettant de les télécharger et de les imprimer.\nLes modifications des conditions générales ne s’appliquent pas aux contrats conclus avant leur entrée en vigueur.\nLe droit polonais est applicable, sans que le consommateur soit privé de la protection que lui assurent les dispositions impératives de la loi du pays de sa résidence habituelle."
-    }
+    },
+    "taxIdLabel": "numéro de TVA"
+  },
+  "newsletter": {
+    "title": "L'actualité de l'import dans votre boîte mail",
+    "lead": "Une fois par mois : évolutions des droits et taxes, prix du fret et nouveaux guides. Pas de spam, désinscription en un clic.",
+    "email": "Votre e-mail",
+    "consent": "J'accepte de recevoir la newsletter Carglo par e-mail. Je peux me désinscrire à tout moment via le lien présent dans chaque message.",
+    "submit": "S'inscrire",
+    "sent": "Presque terminé – consultez votre boîte mail et cliquez sur le lien pour confirmer votre inscription.",
+    "error": "L'inscription a échoué. Veuillez réessayer plus tard.",
+    "confirmTitle": "Newsletter",
+    "working": "Un instant…",
+    "confirmed": "Votre inscription est confirmée. Merci !",
+    "unsubscribed": "Vous êtes désinscrit et ne recevrez plus la newsletter.",
+    "invalid": "Ce lien est invalide ou a déjà été utilisé."
   }
 }

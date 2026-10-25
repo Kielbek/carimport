@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title th:text="#{mail.newsletter.subject}">Confirm</title></head>
+<body style="margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-serif;color:#18181b;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f2f2f2;padding:24px 12px;">
+  <tr><td align="center">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#ffffff;border-radius:6px;">
+      <tr><td style="background:#18181b;color:#ffc000;padding:16px 28px;font-weight:bold;font-size:18px;letter-spacing:.5px;"><img src="cid:logo" width="200" height="56" alt="Carglo" style="display:block;border:0;color:#ffc000;"></td></tr>
+      <tr><td style="padding:28px;font-size:15px;line-height:1.55;">
+        <p style="margin:0 0 14px;" th:text="#{mail.newsletter.intro}">Confirm your subscription.</p>
+        <p style="margin:22px 0;">
+          <a th:href="${link}" style="display:inline-block;background:#ffc000;color:#18181b;text-decoration:none;font-weight:bold;padding:13px 22px;border-radius:4px;"
+             th:text="#{mail.newsletter.button}">Confirm</a>
+        </p>
+        <p style="margin:0;font-size:13px;color:#52525b;" th:text="#{mail.newsletter.ignore}">Ignore if not you.</p>
+      </td></tr>
+      <tr><td style="padding:16px 28px;border-top:1px solid #e4e4e7;font-size:11px;color:#71717a;line-height:1.5;">
+        <span th:text="${company.name()}">Carglo</span><span th:if="${!#strings.isEmpty(company.address())}" th:text="' · ' + ${company.address()}"></span>
+      </td></tr>
+    </table>
+  </td></tr>
+</table>
+</body>
+</html>

@@ -29,14 +29,61 @@ Kursy walut pobiera `FxSyncJob` z API NBP w dni robocze ok. 12:20 i 23:20 (Europ
 ## Produkcja
 
 ```bash
-cp .env.example .env        # uzupełnij: hasło bazy, domena, dane firmy, klucze Stripe, SMTP, geokoder/router
-docker compose -f docker-compose.prod.yml --env-file .env up -d --build
+cp .env.example .env        # uzupełnij: hasło bazy, DOMAIN, ACME_EMAIL, dane sprzedawcy, Stripe, SMTP
+docker compose -f docker-compose.prod.yml up -d --build
 ```
 
-Trzy kontenery: PostgreSQL, API (`backend/Dockerfile`) i nginx ze statyczną stroną, który przekazuje `/api` do API
-(`frontend/Dockerfile`, `frontend/nginx.conf` – cache, nagłówki bezpieczeństwa, CSP). TLS terminuje warstwa przed nim
-(Caddy, Traefik, load balancer, Cloudflare). CI (`.github/workflows/ci.yml`) uruchamia testy backendu, sprawdza
-kompletność tłumaczeń, buduje stronę i oba obrazy przy każdym pushu.
+Kontenery: **Caddy** (HTTPS, porty 80/443) → **nginx** ze statyczną stroną, który przekazuje `/api`
+(`frontend/nginx.conf` – cache, nagłówki bezpieczeństwa, CSP) → **API** (`backend/Dockerfile`) → **PostgreSQL**,
+oraz **backup**. CI (`.github/workflows/ci.yml`) uruchamia testy backendu, sprawdza tłumaczenia, buduje stronę i oba
+obrazy, sprawdza konfigurację nginx.
+
+### HTTPS
+
+Caddy (`deploy/Caddyfile`) sam pobiera i odnawia certyfikat Let's Encrypt dla `DOMAIN` (oraz przekierowuje `www.`).
+Przed pierwszym startem: rekordy DNS A dla `cargloapp.com` i `www.cargloapp.com` wskazują na serwer, porty 80 i 443
+są otwarte. Test na własnym komputerze: `DOMAIN=localhost` (certyfikat lokalny, przeglądarka pokaże ostrzeżenie).
+
+### Kopie zapasowe
+
+Kontener `backup` (`deploy/backup.sh`) robi kopię przy starcie i codziennie o `BACKUP_TIME` (UTC): baza
+(`pg_dump`) i wygenerowane raporty trafiają do katalogu `./backups` na serwerze, przechowywane `BACKUP_KEEP_DAYS` dni.
+**Kopiuj `./backups` poza serwer** (np. `rsync -a serwer:carimport/backups/ ~/carglo-backups/` z domowego
+komputera albo `rclone` do chmury) – kopia na tym samym dysku nie chroni przed awarią serwera.
+
+```bash
+ls -lh backups/                                                       # lista kopii
+docker compose -f docker-compose.prod.yml logs backup                 # czy kopia się udała
+# odtworzenie bazy z kopii (nadpisuje bieżące dane):
+docker compose -f docker-compose.prod.yml exec -T db pg_restore -U carimport -d carimport --clean --if-exists < backups/db-RRRRMMDD-GGMM.dump
+# odtworzenie raportów:
+docker compose -f docker-compose.prod.yml run --rm -v "$PWD/backups:/b" --entrypoint sh api -c 'tar -xzf /b/reports-RRRRMMDD-GGMM.tar.gz -C /data'
+```
+
+### Newsletter
+
+Formularz w stopce każdej strony, z podwójnym potwierdzeniem (double opt-in): adres trafia na listę dopiero po
+kliknięciu linku z maila; zapisujemy datę i wersję zgody. Wymaga skonfigurowanego SMTP. Wysyłka samych newsletterów
+nie przez Gmaila (limit ~500 maili dziennie, ryzyko blokady) – eksportuj listę do MailerLite / Brevo / Mailchimp
+(darmowe progi) albo podłącz takiego dostawcę jako SMTP. Każdy wysłany newsletter musi zawierać link wypisu:
+`https://cargloapp.com/<język>/newsletter#unsubscribe=<unsubscribe_token>`.
+
+```bash
+docker compose -f docker-compose.prod.yml exec db psql -U carimport -c \
+  "\copy (SELECT email, locale, confirmed_at, unsubscribe_token FROM newsletter_subscriber WHERE status = 'CONFIRMED') TO STDOUT WITH CSV HEADER" > subskrybenci.csv
+```
+
+### Sprzedawca bez firmy
+
+Bez zarejestrowanej działalności (w Polsce: działalność nierejestrowana, gdy przychód nie przekracza 75 %
+minimalnego wynagrodzenia miesięcznie) w `site.config.ts` i `COMPANY_NAME` / `COMPANY_ADDRESS` podaj imię i nazwisko
+oraz adres do korespondencji, a `taxId` / `registry` zostaw puste – regulamin i polityka prywatności pominą je.
+
+### Partnerzy
+
+Formularz „zapytanie do firmy importowej” jest wyłączony (`SITE.partners = false`), a demonstracyjny partner z danych
+startowych nieaktywny (V8). Po podpisaniu umowy z partnerem: wpis w tabeli `partner` (+ kraje docelowe i pochodzenia)
+i `partners: true`.
 
 ### Logi
 

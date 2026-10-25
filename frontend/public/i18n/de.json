@@ -806,7 +806,7 @@
     "title": "Datenschutzerklärung",
     "s1": {
       "title": "Verantwortlicher",
-      "text": "Verantwortlich ist der Betreiber von Carglo. Kontakt in Datenschutzfragen: {{email}}."
+      "text": "Verantwortlicher für Ihre Daten ist {{seller}}, Betreiber des Dienstes Carglo. In Datenschutzfragen schreiben Sie an {{email}}."
     },
     "s2": {
       "title": "Welche Daten wir verarbeiten",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Ihre Rechte",
       "text": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Übertragbarkeit, Widerspruch, Widerruf der Einwilligung und Beschwerde bei der Aufsichtsbehörde. Kontakt: {{email}}."
+    },
+    "s7": {
+      "title": "Newsletter",
+      "text": "Wenn Sie sich anmelden, verarbeiten wir Ihre E-Mail-Adresse, Sprache sowie Datum und Version Ihrer Einwilligung, um den Newsletter zu versenden (Art. 6 Abs. 1 lit. a DSGVO). Die Adresse kommt erst auf die Liste, wenn Sie sie über den zugesandten Link bestätigen. Sie können sich jederzeit über den Link in jeder Nachricht oder per E-Mail an {{email}} abmelden; der Versand endet sofort, wir bewahren nur den Nachweis der Einwilligung und ihres Widerrufs auf."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Fassung vom {{version}}",
     "s1": {
       "title": "Verkäufer und Kontakt",
-      "text": "{{site}} wird betrieben von {{company}}, {{address}}, USt-IdNr. {{taxId}}, {{registry}} (nachfolgend „Verkäufer“).\nKontakt in allen Angelegenheiten, auch für Reklamationen: {{email}}. Wir antworten innerhalb von 14 Tagen."
+      "text": "{{site}} wird betrieben von {{seller}} (nachfolgend „Verkäufer“).\nKontakt in allen Angelegenheiten, auch für Reklamationen: {{email}}. Wir antworten innerhalb von 14 Tagen."
     },
     "s2": {
       "title": "Gegenstand des Dienstes",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Schlussbestimmungen",
       "text": "Die AGB sind auf dieser Seite kostenlos in einer Form abrufbar, die ihr Herunterladen und Ausdrucken ermöglicht.\nÄnderungen der AGB gelten nicht für Verträge, die vor ihrem Inkrafttreten geschlossen wurden.\nEs gilt polnisches Recht, wobei Verbrauchern nicht der Schutz entzogen wird, der ihnen durch die zwingenden Bestimmungen des Rechts des Staates ihres gewöhnlichen Aufenthalts gewährt wird."
-    }
+    },
+    "taxIdLabel": "USt-IdNr."
+  },
+  "newsletter": {
+    "title": "Import-News direkt ins Postfach",
+    "lead": "Einmal im Monat: Änderungen bei Zöllen und Steuern, Frachtpreise und neue Ratgeber. Kein Spam, Abmeldung mit einem Klick.",
+    "email": "Ihre E-Mail-Adresse",
+    "consent": "Ich möchte den Carglo-Newsletter per E-Mail erhalten. Ich kann mich jederzeit über den Link in jeder Nachricht abmelden.",
+    "submit": "Anmelden",
+    "sent": "Fast geschafft – prüfen Sie Ihr Postfach und klicken Sie auf den Link, um die Anmeldung zu bestätigen.",
+    "error": "Die Anmeldung hat nicht geklappt. Bitte versuchen Sie es später erneut.",
+    "confirmTitle": "Newsletter",
+    "working": "Einen Moment…",
+    "confirmed": "Ihre Anmeldung ist bestätigt. Vielen Dank!",
+    "unsubscribed": "Sie wurden abgemeldet und erhalten keine weiteren Newsletter.",
+    "invalid": "Dieser Link ist ungültig oder wurde bereits verwendet."
   }
 }

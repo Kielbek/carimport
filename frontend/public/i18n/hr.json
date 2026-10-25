@@ -806,7 +806,7 @@
     "title": "Politika privatnosti",
     "s1": {
       "title": "Voditelj obrade",
-      "text": "Voditelj obrade podataka je operater stranice Carglo. Za pitanja zaštite podataka obratite nam se na {{email}}."
+      "text": "Voditelj obrade vaših podataka je {{seller}}, koji upravlja uslugom Carglo. Za pitanja o zaštiti podataka pišite na {{email}}."
     },
     "s2": {
       "title": "Koje podatke obrađujemo",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Vaša prava",
       "text": "Imate pravo na pristup, ispravak, brisanje, ograničenje obrade, prenosivost i prigovor, pravo da u bilo kojem trenutku povučete privolu te pravo na pritužbu nadzornom tijelu za zaštitu podataka. Pišite nam: {{email}}."
+    },
+    "s7": {
+      "title": "Newsletter",
+      "text": "Ako se prijavite, obrađujemo vašu adresu e-pošte, jezik te datum i verziju privole radi slanja newslettera (čl. 6. st. 1. t. a) GDPR-a). Adresa ulazi na popis tek nakon što je potvrdite poveznicom koju vam pošaljemo. Odjaviti se možete u bilo kojem trenutku putem poveznice u svakoj poruci ili pisanjem na {{email}}; slanje odmah prestaje, a čuvamo samo zapis o privoli i njezinu povlačenju kao dokaz."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Verzija od {{version}}",
     "s1": {
       "title": "Prodavatelj i kontakt",
-      "text": "Uslugu {{site}} pruža {{company}}, {{address}}, PDV ID broj {{taxId}}, {{registry}} (u daljnjem tekstu: Prodavatelj).\nKontakt za sva pitanja, uključujući prigovore: {{email}}. Odgovaramo u roku od 14 dana."
+      "text": "Uslugu {{site}} pruža {{seller}} (u daljnjem tekstu: Prodavatelj).\nKontakt za sva pitanja, uključujući prigovore: {{email}}. Odgovaramo u roku od 14 dana."
     },
     "s2": {
       "title": "Što je usluga",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Završne odredbe",
       "text": "Opći uvjeti besplatno su dostupni na ovoj stranici u obliku koji omogućuje njihovo preuzimanje i ispis.\nIzmjene općih uvjeta ne primjenjuju se na ugovore sklopljene prije njihova stupanja na snagu.\nPrimjenjuje se poljsko pravo, pri čemu potrošač ne gubi zaštitu koju mu pružaju prisilni propisi države u kojoj ima uobičajeno boravište."
-    }
+    },
+    "taxIdLabel": "PDV ID broj"
+  },
+  "newsletter": {
+    "title": "Novosti o uvozu izravno u vaš sandučić",
+    "lead": "Jednom mjesečno: promjene carina i poreza, cijene prijevoza i novi vodiči. Bez neželjene pošte, odjava jednim klikom.",
+    "email": "Vaša e-pošta",
+    "consent": "Pristajem primati Carglo newsletter e-poštom. Mogu se odjaviti u bilo kojem trenutku putem poveznice u svakoj poruci.",
+    "submit": "Prijavi se",
+    "sent": "Još malo – provjerite sandučić i kliknite poveznicu kako biste potvrdili prijavu.",
+    "error": "Prijava nije uspjela. Pokušajte ponovno kasnije.",
+    "confirmTitle": "Newsletter",
+    "working": "Trenutak…",
+    "confirmed": "Vaša je prijava potvrđena. Hvala!",
+    "unsubscribed": "Odjavljeni ste i više nećete primati newsletter.",
+    "invalid": "Ova poveznica nije valjana ili je već iskorištena."
   }
 }

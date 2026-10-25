@@ -806,7 +806,7 @@
     "title": "Privaatsuspoliitika",
     "s1": {
       "title": "Vastutav töötleja",
-      "text": "Isikuandmete vastutav töötleja on Carglo haldaja. Andmekaitse küsimustes võta meiega ühendust e-posti aadressil {{email}}."
+      "text": "Sinu andmete vastutav töötleja on {{seller}}, kes haldab teenust Carglo. Andmekaitse küsimustes kirjuta aadressil {{email}}."
     },
     "s2": {
       "title": "Milliseid andmeid töötleme",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Sinu õigused",
       "text": "Sul on õigus tutvuda oma andmetega, neid parandada ja kustutada, piirata nende töötlemist, kanda need üle ja esitada vastuväiteid, võtta nõusolek igal ajal tagasi ning esitada kaebus andmekaitse järelevalveasutusele. Kirjuta meile: {{email}}."
+    },
+    "s7": {
+      "title": "Uudiskiri",
+      "text": "Kui liitud, töötleme sinu e-posti aadressi, keelt ning nõusoleku kuupäeva ja versiooni uudiskirja saatmiseks (IKÜM artikli 6 lõike 1 punkt a). Aadress lisatakse nimekirja alles pärast seda, kui kinnitad selle meie saadetud lingiga. Võid igal ajal loobuda iga kirja lingi kaudu või kirjutades aadressil {{email}}; saatmine lõpeb kohe ja säilitame tõendina ainult nõusoleku ja selle tagasivõtmise kirje."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Versioon seisuga {{version}}",
     "s1": {
       "title": "Müüja ja kontaktandmed",
-      "text": "Teenust {{site}} haldab {{company}}, {{address}}, KMKR nr {{taxId}}, {{registry}} (edaspidi müüja).\nKontakt kõigis küsimustes, sh pretensioonide esitamiseks: {{email}}. Vastame 14 päeva jooksul."
+      "text": "Teenust {{site}} haldab {{seller}} (edaspidi müüja).\nKontakt kõigis küsimustes, sh pretensioonide esitamiseks: {{email}}. Vastame 14 päeva jooksul."
     },
     "s2": {
       "title": "Mis on teenus",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Lõppsätted",
       "text": "Tingimused on sellel lehel tasuta kättesaadavad kujul, mis võimaldab neid alla laadida ja printida.\nTingimuste muudatused ei mõjuta lepinguid, mis on sõlmitud enne muudatuste jõustumist.\nKohaldatakse Poola õigust, ilma et tarbijalt võetaks kaitse, mis talle on tagatud tema alalise elukoha riigi imperatiivsete õigusnormidega."
-    }
+    },
+    "taxIdLabel": "KMKR nr"
+  },
+  "newsletter": {
+    "title": "Impordiuudised otse sinu postkasti",
+    "lead": "Kord kuus: tollimaksude ja maksude muudatused, veohinnad ja uued juhendid. Ilma rämpspostita, loobumine ühe klõpsuga.",
+    "email": "Sinu e-post",
+    "consent": "Nõustun saama Carglo uudiskirja e-postiga. Saan igal ajal loobuda iga kirja lingi kaudu.",
+    "submit": "Liitu",
+    "sent": "Peaaegu valmis – vaata oma postkasti ja klõpsa lingil, et liitumine kinnitada.",
+    "error": "Liitumine ebaõnnestus. Proovi hiljem uuesti.",
+    "confirmTitle": "Uudiskiri",
+    "working": "Hetk…",
+    "confirmed": "Sinu liitumine on kinnitatud. Aitäh!",
+    "unsubscribed": "Oled uudiskirjast loobunud ega saa enam kirju.",
+    "invalid": "See link on vigane või juba kasutatud."
   }
 }

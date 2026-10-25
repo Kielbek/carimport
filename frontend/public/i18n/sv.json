@@ -806,7 +806,7 @@
     "title": "Integritetspolicy",
     "s1": {
       "title": "Personuppgiftsansvarig",
-      "text": "Personuppgiftsansvarig är operatören av Carglo. I dataskyddsfrågor når du oss på {{email}}."
+      "text": "Personuppgiftsansvarig är {{seller}}, som driver tjänsten Carglo. I dataskyddsfrågor skriver du till {{email}}."
     },
     "s2": {
       "title": "Vilka uppgifter vi behandlar",
@@ -827,6 +827,10 @@
     "s6": {
       "title": "Dina rättigheter",
       "text": "Du har rätt till tillgång, rättelse, radering, begränsning, dataportabilitet och att invända, att när som helst återkalla ditt samtycke och att klaga hos din dataskyddsmyndighet. Skriv till oss: {{email}}."
+    },
+    "s7": {
+      "title": "Nyhetsbrev",
+      "text": "Om du prenumererar behandlar vi din e-postadress, ditt språk samt datum och version av ditt samtycke för att skicka nyhetsbrevet (art. 6.1 a GDPR). Adressen hamnar på listan först när du bekräftar den via länken vi mejlar. Du kan när som helst avregistrera dig via länken i varje utskick eller genom att skriva till {{email}}; utskicken upphör direkt och vi sparar bara uppgiften om samtycket och återkallelsen som bevis."
     }
   },
   "delivery": {
@@ -1421,7 +1425,7 @@
     "version": "Version från {{version}}",
     "s1": {
       "title": "Säljare och kontakt",
-      "text": "{{site}} drivs av {{company}}, {{address}}, momsreg.nr {{taxId}}, {{registry}} (nedan ”Säljaren”).\nKontakt i alla ärenden, även reklamationer: {{email}}. Vi svarar inom 14 dagar."
+      "text": "{{site}} drivs av {{seller}} (nedan ”Säljaren”).\nKontakt i alla ärenden, även reklamationer: {{email}}. Vi svarar inom 14 dagar."
     },
     "s2": {
       "title": "Vad tjänsten är",
@@ -1462,6 +1466,21 @@
     "s11": {
       "title": "Slutbestämmelser",
       "text": "Villkoren finns kostnadsfritt tillgängliga på denna sida i en form som gör det möjligt att ladda ner och skriva ut dem.\nÄndringar av villkoren påverkar inte avtal som har ingåtts innan ändringarna träder i kraft.\nPolsk lag tillämpas, utan att konsumenten berövas det skydd som tillförsäkras genom tvingande bestämmelser i lagen i det land där konsumenten har sin vanliga vistelseort."
-    }
+    },
+    "taxIdLabel": "momsreg.nr"
+  },
+  "newsletter": {
+    "title": "Importnyheter direkt i din inkorg",
+    "lead": "En gång i månaden: ändringar i tullar och skatter, fraktpriser och nya guider. Ingen spam, avregistrering med ett klick.",
+    "email": "Din e-postadress",
+    "consent": "Jag vill få Carglos nyhetsbrev via e-post. Jag kan när som helst avregistrera mig via länken i varje utskick.",
+    "submit": "Prenumerera",
+    "sent": "Nästan klart – kolla din inkorg och klicka på länken för att bekräfta prenumerationen.",
+    "error": "Det gick inte att registrera dig. Försök igen senare.",
+    "confirmTitle": "Nyhetsbrev",
+    "working": "Ett ögonblick…",
+    "confirmed": "Din prenumeration är bekräftad. Tack!",
+    "unsubscribed": "Du är avregistrerad och får inga fler nyhetsbrev.",
+    "invalid": "Länken är ogiltig eller har redan använts."
   }
 }

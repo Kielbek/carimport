@@ -8,12 +8,16 @@ import { SITE } from '../core/site.config';
 import { Flag } from '../shared/flag/flag';
 import { Icon } from '../shared/icon/icon';
 import { Logo } from './logo';
+import { NewsletterSignup } from '../features/newsletter/newsletter-signup';
 
 @Component({
   selector: 'app-site-footer',
-  imports: [RouterLink, TranslatePipe, Logo, Flag, Icon],
+  imports: [RouterLink, TranslatePipe, Logo, Flag, Icon, NewsletterSignup],
   template: `
     <footer class="mt-20 border-t border-line">
+      <div class="border-b border-line bg-panel">
+        <div class="site py-10"><app-newsletter-signup source="footer" /></div>
+      </div>
       <div class="site grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr]">
         <div>
           <app-logo />

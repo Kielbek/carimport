@@ -8,6 +8,7 @@ import { LanguageService } from '../../../core/i18n/language.service';
 import { Icon } from '../../../shared/icon/icon';
 import { CalculatorStore } from '../calculator.store';
 import { DEPARTURE_PORTS } from '../calculator.options';
+import { SITE } from '../../../core/site.config';
 
 /**
  * Step 6 - the free result. Free: the taxes anyone could work out on paper (duty, import VAT of the port country,
@@ -112,7 +113,9 @@ import { DEPARTURE_PORTS } from '../calculator.options';
           <button type="button" class="btn btn-primary" (click)="unlock.emit()">
             <app-icon name="lock" [size]="17" /> {{ 'result.unlock' | translate: { price: reportPrice() } }}
           </button>
-          <button type="button" class="btn btn-outline" (click)="partner.emit()">{{ 'result.partner' | translate }}</button>
+          @if (partners) {
+            <button type="button" class="btn btn-outline" (click)="partner.emit()">{{ 'result.partner' | translate }}</button>
+          }
         </div>
       </section>
 
@@ -140,6 +143,7 @@ export class StepResult {
   protected readonly analytics = inject(AnalyticsService);
   private readonly translate = inject(TranslateService);
   protected readonly s = this.store.state;
+  protected readonly partners = SITE.partners;
 
   readonly unlock = output<void>();
   readonly partner = output<void>();

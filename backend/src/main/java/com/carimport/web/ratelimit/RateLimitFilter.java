@@ -46,6 +46,7 @@ public class RateLimitFilter extends OncePerRequestFilter {
             new Rule("geo", "GET", "/api/v1/geo/", 30, 60),
             new Rule("checkout", "POST", "/api/v1/reports/checkout", 5, 5),
             new Rule("leads", "POST", "/api/v1/leads", 3, 2),
+            new Rule("newsletter", "POST", "/api/v1/newsletter", 5, 3),
             new Rule("api", null, "/api/", 120, 300));
 
     private static final String WEBHOOK = "/api/v1/webhooks/";

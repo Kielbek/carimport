@@ -93,6 +93,19 @@ export class CarImportApi {
     return this.http.post<{ leadId: string }>(`${this.base}/leads`, body);
   }
 
+  /** Double opt-in: 202 = confirmation e-mail on its way (also for an address already on the list). */
+  newsletterSubscribe(body: { email: string; locale: string; source: string; consent: boolean; website: string }): Observable<void> {
+    return this.http.post<void>(`${this.base}/newsletter`, body);
+  }
+
+  newsletterConfirm(token: string): Observable<void> {
+    return this.http.post<void>(`${this.base}/newsletter/confirm`, { token });
+  }
+
+  newsletterUnsubscribe(token: string): Observable<void> {
+    return this.http.post<void>(`${this.base}/newsletter/unsubscribe`, { token });
+  }
+
   affiliates(origin: string, country: string, locale: string): Observable<AffiliateOffer[]> {
     return this.http.get<AffiliateOffer[]>(`${this.base}/affiliates`, { params: { origin, country, locale } });
   }
