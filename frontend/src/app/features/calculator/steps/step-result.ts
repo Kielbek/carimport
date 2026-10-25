@@ -1,6 +1,6 @@
 import { Component, computed, inject, output } from '@angular/core';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
-import { CostCategory, PublicQuoteView } from '../../../core/api/api.models';
+import { CostCategory } from '../../../core/api/api.models';
 import { reportPrice } from '../../../core/currency/currencies';
 import { CountryNamePipe } from '../../../core/format/country-name.pipe';
 import { AnalyticsService } from '../../../core/analytics/analytics.service';
@@ -41,9 +41,9 @@ import { DEPARTURE_PORTS } from '../calculator.options';
         <span>{{ s().destinationAddress ?? (r.destinationCountry | countryName: lang.locale()) }}</span>
       </p>
 
-      <!-- the result: car to the door, before registration, repairs and risks - free -->
-      <section class="mt-6 rounded-[6px] border-2 border-brand bg-panel p-6 sm:p-8" aria-labelledby="result-total">
-        <div class="flex flex-wrap items-start justify-between gap-4">
+      <!-- the result and the purchase in one card, above the fold: one rough number, the detail is what is sold -->
+      <section class="mt-5 overflow-hidden rounded-[6px] border-2 border-brand bg-panel" aria-labelledby="result-total">
+        <div class="grid gap-6 p-6 sm:p-7 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-center">
           <div>
             <p class="eyebrow">{{ 'result.freeEyebrow' | translate }}</p>
             <h3 id="result-total" class="mt-2 text-base font-bold text-fg/85">{{ 'result.totalWithCar' | translate }}</h3>
@@ -53,103 +53,35 @@ import { DEPARTURE_PORTS } from '../calculator.options';
             @if (r.taxes.estimateMin != null && r.taxes.estimateMax != null) {
               <p class="mt-2 text-sm font-semibold text-fg/80">{{ 'result.span' | translate: { min: money(r.taxes.estimateMin, r.currency), max: money(r.taxes.estimateMax, r.currency) } }}</p>
             }
-            <p class="mt-2 max-w-xl text-sm text-muted">{{ 'result.totalWithCarWhat' | translate }}</p>
+            <p class="mt-3 max-w-xl text-sm text-muted">{{ 'result.minimalNote' | translate }}</p>
           </div>
-          <span class="badge !bg-success/15 !text-success">{{ 'result.freeBadge' | translate }}</span>
-        </div>
-
-        <div class="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-4">
-          @for (t of tiles(r); track t.key) {
-            <div class="rounded-[4px] bg-panel-2 p-4">
-              <p class="text-xs font-semibold uppercase tracking-[0.05em] text-muted">{{ t.label | translate: { port: r.clearancePort } }}</p>
-              <p class="mt-1.5 text-xl font-extrabold tabular-nums">
-                @if (t.estimate) { <span class="text-sm font-bold text-muted">{{ 'result.approx' | translate }}</span> }
-                {{ money(t.amount, r.currency) }}
-              </p>
-            </div>
-          }
-        </div>
-
-        <table class="mt-6 w-full text-[14px]">
-          <tbody>
-            <tr class="border-b border-line">
-              <td class="py-2.5 pr-3">{{ 'result.carPrice' | translate }}
-                <span class="block text-xs text-muted">{{ 'result.carPriceWhat' | translate }}</span></td>
-              <td class="py-2.5 text-right font-semibold tabular-nums">{{ money(r.taxes.carPrice, r.currency) }}</td>
-            </tr>
-            <tr class="border-b border-line">
-              <td class="py-2.5 pr-3">{{ 'portCost.transportToPort' | translate: { port: r.clearancePort } }}
-                <span class="block text-xs text-muted">{{ 'portCost.transportToPortWhat' | translate }}</span></td>
-              <td class="py-2.5 text-right font-semibold tabular-nums"><span class="text-xs text-muted">{{ 'result.approx' | translate }}</span> {{ money(r.taxes.transportToPort, r.currency) }}</td>
-            </tr>
-            <tr class="border-b border-line">
-              <td class="py-2.5 pr-3">{{ 'cost.CUSTOMS_DUTY' | translate }} <span class="text-muted">{{ pct(r.taxes.duty.rate) }}</span>
-                <span class="block text-xs text-muted">{{ 'portCost.dutyWhere' | translate }}</span></td>
-              <td class="py-2.5 text-right font-semibold tabular-nums">{{ money(r.taxes.duty.amount, r.currency) }}</td>
-            </tr>
-            <tr class="border-b border-line">
-              <td class="py-2.5 pr-3">{{ 'cost.IMPORT_VAT' | translate }} <span class="text-muted">{{ pct(r.taxes.vat.rate) }}</span>
-                <span class="block text-xs text-muted">{{ 'portCost.vatWhere' | translate: { country: (r.taxes.vat.country | countryName: lang.locale()) } }}</span></td>
-              <td class="py-2.5 text-right font-semibold tabular-nums">{{ money(r.taxes.vat.amount, r.currency) }}</td>
-            </tr>
-            @for (t of r.taxes.national; track t.code) {
-              <tr class="border-b border-line">
-                <td class="py-2.5 pr-3">{{ 'cost.' + t.code | translate }} <span class="text-muted">{{ pct(t.rate) }}</span>
-                  <span class="block text-xs text-muted">{{ 'portCost.nationalWhere' | translate: { country: (t.country | countryName: lang.locale()) } }}</span></td>
-                <td class="py-2.5 text-right font-semibold tabular-nums">{{ money(t.amount, r.currency) }}</td>
-              </tr>
-            }
-            <tr class="border-b border-line">
-              <td class="py-2.5 pr-3">{{ 'portCost.portFees' | translate }}
-                <span class="block text-xs text-muted">{{ 'portCost.portFeesWhat' | translate }}</span></td>
-              <td class="py-2.5 text-right font-semibold tabular-nums">{{ money(r.taxes.portFees, r.currency) }}</td>
-            </tr>
-            <tr class="border-b border-line">
-              <td class="py-2.5 pr-3">{{ 'portCost.delivery' | translate }}</td>
-              <td class="py-2.5 text-right font-semibold tabular-nums"><span class="text-xs text-muted">{{ 'result.approx' | translate }}</span> {{ money(r.taxes.delivery, r.currency) }}</td>
-            </tr>
-            <tr>
-              <td class="pt-3 font-extrabold">{{ 'result.totalWithCar' | translate }}</td>
-              <td class="pt-3 text-right text-lg font-extrabold tabular-nums text-brand-text"><span class="text-xs text-muted">{{ 'result.approx' | translate }}</span> {{ money(r.taxes.totalWithCar, r.currency) }}</td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="mt-3 text-xs text-muted">{{ 'result.estimateNote' | translate }}</p>
-        <p class="mt-1 text-xs text-muted">{{ 'result.freeBase' | translate }}</p>
-        @if (r.taxes.customsFxDate) {
-          <p class="mt-1 text-xs text-muted">{{ 'result.customsFx' | translate: { date: r.taxes.customsFxDate } }}</p>
-        }
-      </section>
-
-      <!-- the full cost: locked, right under the result -->
-      <section class="theme-dark relative mt-6 overflow-hidden rounded-[4px] bg-panel p-6 text-fg sm:p-8">
-        <div class="flex flex-wrap items-start justify-between gap-6">
-          <div class="max-w-xl">
-            <p class="eyebrow">{{ 'result.lockedEyebrow' | translate }}</p>
-            <h3 class="mt-3 text-[26px] font-extrabold leading-tight">{{ 'result.lockedTitle' | translate }}</h3>
-            <p class="mt-2 text-sm text-fg/75">{{ 'result.lockedLead' | translate: { count: r.lockedCount } }}</p>
-          </div>
-          <div class="w-full sm:w-auto">
-            <button type="button" class="btn btn-primary w-full !py-3.5 text-base sm:w-auto" (click)="unlock.emit()">
+          <div class="rounded-[4px] bg-panel-2 p-5">
+            <p class="font-extrabold leading-snug">{{ 'result.lockedTitle' | translate }}</p>
+            <p class="mt-1 text-xs text-muted">{{ 'result.lockedLead' | translate: { count: r.lockedCount } }}</p>
+            <button type="button" class="btn btn-primary mt-4 w-full !py-3.5 text-base" (click)="unlock.emit()">
               <app-icon name="lock" [size]="18" /> {{ 'result.unlock' | translate: { price: reportPrice() } }}
             </button>
-            <p class="mt-2 text-center text-xs text-fg/60">{{ 'result.unlockNote' | translate }}</p>
-            <p class="mt-3 text-center text-sm"><a [href]="'/samples/report-' + lang.current() + '.pdf'" target="_blank" rel="noopener" (click)="analytics.track('sample_report_opened')" class="text-brand inline-flex items-center gap-1.5 font-semibold underline underline-offset-2 hover:no-underline"><app-icon name="document" [size]="15" /> {{ 'result.sample' | translate }}</a></p>
+            <p class="mt-2 text-center text-xs text-muted">{{ 'result.unlockNote' | translate }}</p>
+            <p class="mt-2 text-center text-sm"><a [href]="'/samples/report-' + lang.current() + '.pdf'" target="_blank" rel="noopener" (click)="analytics.track('sample_report_opened')" class="text-brand-text inline-flex items-center gap-1.5 font-semibold underline underline-offset-2 hover:no-underline"><app-icon name="document" [size]="15" /> {{ 'result.sample' | translate }}</a></p>
           </div>
         </div>
-        <div class="mt-6 grid gap-3 sm:grid-cols-3" aria-hidden="true">
-          @for (i of [0, 1, 2]; track i) {
-            <div class="rounded-[4px] p-4" [class]="i === 1 ? 'bg-ink-2 ring-1 ring-brand' : 'border border-line'">
-              <p class="text-[12px] font-semibold uppercase tracking-[0.06em]" [class]="i === 1 ? 'text-brand' : 'text-fg/60'">{{ 'scenario.' + i | translate }}</p>
-              <p class="mt-2 select-none text-[28px] font-extrabold leading-none tabular-nums blur-[7px]">{{ fake(i + 7) }} {{ r.currency }}</p>
-            </div>
-          }
+
+        <!-- what the report adds, blurred -->
+        <div class="theme-dark bg-panel px-6 py-6 text-fg sm:px-7">
+          <div class="grid gap-3 sm:grid-cols-3" aria-hidden="true">
+            @for (i of [0, 1, 2]; track i) {
+              <div class="rounded-[4px] p-4" [class]="i === 1 ? 'bg-ink-2 ring-1 ring-brand' : 'border border-line'">
+                <p class="text-[12px] font-semibold uppercase tracking-[0.06em]" [class]="i === 1 ? 'text-brand' : 'text-fg/60'">{{ 'scenario.' + i | translate }}</p>
+                <p class="mt-2 select-none text-[26px] font-extrabold leading-none tabular-nums blur-[7px]">{{ fake(i + 7) }} {{ r.currency }}</p>
+              </div>
+            }
+          </div>
+          <ul class="mt-5 grid gap-2 text-sm text-fg/85 sm:grid-cols-2">
+            @for (n of [1, 2, 3, 4, 5, 6]; track n) {
+              <li class="flex gap-2.5"><app-icon name="check" [size]="16" class="mt-0.5 shrink-0 text-brand" />{{ 'result.reportItem' + n | translate }}</li>
+            }
+          </ul>
         </div>
-        <ul class="mt-6 grid gap-2 text-sm text-fg/85 sm:grid-cols-2">
-          @for (n of [1, 2, 3, 4, 5, 6]; track n) {
-            <li class="flex gap-2.5"><app-icon name="check" [size]="16" class="mt-0.5 shrink-0 text-brand" />{{ 'result.reportItem' + n | translate }}</li>
-          }
-        </ul>
       </section>
 
 
@@ -241,16 +173,6 @@ export class StepResult {
 
   protected pct(rate: number | null): string {
     return rate == null ? '' : new Intl.NumberFormat(this.lang.locale(), { style: 'percent', maximumFractionDigits: 2 }).format(rate);
-  }
-
-  /** The four parts of the total, as tiles above the detailed rows. */
-  protected tiles(r: PublicQuoteView): { key: string; label: string; amount: number; estimate: boolean }[] {
-    return [
-      { key: 'car', label: 'result.tileCar', amount: r.taxes.carPrice, estimate: false },
-      { key: 'transport', label: 'result.tileTransport', amount: r.taxes.transportToPort, estimate: true },
-      { key: 'taxes', label: 'result.tileTaxes', amount: r.taxes.total, estimate: false },
-      { key: 'delivery', label: 'result.tileDelivery', amount: r.taxes.delivery, estimate: true },
-    ];
   }
 
   protected money(amount: number, currency: string): string {

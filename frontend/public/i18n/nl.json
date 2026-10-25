@@ -297,7 +297,8 @@
     "tileDelivery": "Levering thuis",
     "approx": "ca.",
     "span": "meestal {{min}} – {{max}}",
-    "estimateNote": "Transport en levering zijn schattingen op basis van gangbare tarieven, afgerond op 100. De exacte bedragen, post voor post, staan in het volledige rapport."
+    "estimateNote": "Transport en levering zijn schattingen op basis van gangbare tarieven, afgerond op 100. De exacte bedragen, post voor post, staan in het volledige rapport.",
+    "minimalNote": "Een ruwe schatting voor deze route. Wat elke post precies kost – transport, invoerrechten, btw, registratie en risico’s – staat in het rapport."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Eigen container",

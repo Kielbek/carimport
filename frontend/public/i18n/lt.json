@@ -297,7 +297,8 @@
     "tileDelivery": "Pristatymas namo",
     "approx": "apie",
     "span": "paprastai {{min}} – {{max}}",
-    "estimateNote": "Transportas ir pristatymas – įvertis pagal įprastus įkainius, suapvalintas iki 100. Tikslios sumos pagal kiekvieną poziciją – pilnoje ataskaitoje."
+    "estimateNote": "Transportas ir pristatymas – įvertis pagal įprastus įkainius, suapvalintas iki 100. Tikslios sumos pagal kiekvieną poziciją – pilnoje ataskaitoje.",
+    "minimalNote": "Apytikslis šio maršruto įvertis. Kiek tiksliai kainuoja kiekviena pozicija – transportas, muitas, PVM, registracija ir rizikos – parodo ataskaita."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Atskiras konteineris",

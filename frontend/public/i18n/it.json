@@ -297,7 +297,8 @@
     "tileDelivery": "Consegna a casa",
     "approx": "circa",
     "span": "di solito {{min}} – {{max}}",
-    "estimateNote": "Trasporto e consegna sono stime su tariffe tipiche, arrotondate a 100. Gli importi esatti, voce per voce, sono nel report completo."
+    "estimateNote": "Trasporto e consegna sono stime su tariffe tipiche, arrotondate a 100. Gli importi esatti, voce per voce, sono nel report completo.",
+    "minimalNote": "Una stima indicativa per questo percorso. Quanto costa esattamente ogni voce – trasporto, dazio, IVA, immatricolazione e rischi – lo mostra il report."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Container esclusivo",

@@ -297,7 +297,8 @@
     "tileDelivery": "Piegāde mājās",
     "approx": "ap.",
     "span": "parasti {{min}} – {{max}}",
-    "estimateNote": "Transports un piegāde ir aplēse pēc tipiskiem tarifiem, noapaļota līdz 100. Precīzas summas pa pozīcijām ir pilnajā atskaitē."
+    "estimateNote": "Transports un piegāde ir aplēse pēc tipiskiem tarifiem, noapaļota līdz 100. Precīzas summas pa pozīcijām ir pilnajā atskaitē.",
+    "minimalNote": "Aptuvena aplēse šim maršrutam. Cik precīzi maksā katra pozīcija – transports, muita, PVN, reģistrācija un riski – rāda atskaite."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Atsevišķs konteiners",

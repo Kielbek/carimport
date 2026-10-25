@@ -297,7 +297,8 @@
     "tileDelivery": "Entrega em casa",
     "approx": "aprox.",
     "span": "normalmente {{min}} – {{max}}",
-    "estimateNote": "O transporte e a entrega são estimativas com base em tarifas habituais, arredondadas a 100. Os valores exatos, rubrica a rubrica, estão no relatório completo."
+    "estimateNote": "O transporte e a entrega são estimativas com base em tarifas habituais, arredondadas a 100. Os valores exatos, rubrica a rubrica, estão no relatório completo.",
+    "minimalNote": "Uma estimativa aproximada para esta rota. Quanto custa exatamente cada rubrica – transporte, direitos, IVA, registo e riscos – mostra o relatório."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Contentor exclusivo",

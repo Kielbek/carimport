@@ -297,7 +297,8 @@
     "tileDelivery": "Hemleverans",
     "approx": "ca",
     "span": "oftast {{min}} – {{max}}",
-    "estimateNote": "Transport och leverans är uppskattningar utifrån vanliga priser, avrundade till 100. De exakta beloppen, post för post, finns i den fullständiga rapporten."
+    "estimateNote": "Transport och leverans är uppskattningar utifrån vanliga priser, avrundade till 100. De exakta beloppen, post för post, finns i den fullständiga rapporten.",
+    "minimalNote": "En grov uppskattning för den här rutten. Vad varje post kostar exakt – transport, tull, moms, registrering och risker – visar rapporten."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Egen container",

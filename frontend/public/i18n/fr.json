@@ -297,7 +297,8 @@
     "tileDelivery": "Livraison",
     "approx": "env.",
     "span": "généralement {{min}} – {{max}}",
-    "estimateNote": "Le transport et la livraison sont des estimations sur la base de tarifs habituels, arrondies à 100. Les montants exacts, poste par poste, figurent dans le rapport complet."
+    "estimateNote": "Le transport et la livraison sont des estimations sur la base de tarifs habituels, arrondies à 100. Les montants exacts, poste par poste, figurent dans le rapport complet.",
+    "minimalNote": "Une estimation approximative pour cet itinéraire. Le coût exact de chaque poste – transport, droits, TVA, immatriculation et risques – figure dans le rapport."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Conteneur exclusif",
