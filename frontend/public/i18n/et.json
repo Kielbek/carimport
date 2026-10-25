@@ -297,7 +297,8 @@
     "tileDelivery": "Kojutoimetus",
     "approx": "u",
     "span": "tavaliselt {{min}} – {{max}}",
-    "estimateNote": "Transport ja kohaletoimetamine on hinnang tavapäraste hindade järgi, ümardatud 100-ni. Täpsed summad rida-realt on täielikus aruandes."
+    "estimateNote": "Transport ja kohaletoimetamine on hinnang tavapäraste hindade järgi, ümardatud 100-ni. Täpsed summad rida-realt on täielikus aruandes.",
+    "minimalNote": "Ligikaudne hinnang sellele marsruudile. Kui palju iga rida täpselt maksab – transport, toll, käibemaks, registreerimine ja riskid – näitab aruanne."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Eraldi konteiner",

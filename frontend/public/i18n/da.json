@@ -297,7 +297,8 @@
     "tileDelivery": "Levering hjem",
     "approx": "ca.",
     "span": "typisk {{min}} – {{max}}",
-    "estimateNote": "Transport og levering er skøn ud fra typiske takster, afrundet til 100. De præcise beløb, post for post, står i den fulde rapport."
+    "estimateNote": "Transport og levering er skøn ud fra typiske takster, afrundet til 100. De præcise beløb, post for post, står i den fulde rapport.",
+    "minimalNote": "Et groft skøn for denne rute. Hvad hver post præcist koster – transport, told, moms, registrering og risici – står i rapporten."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Egen container",

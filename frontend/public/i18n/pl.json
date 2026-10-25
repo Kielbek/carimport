@@ -297,7 +297,8 @@
     "tileDelivery": "Dowóz do domu",
     "approx": "ok.",
     "span": "zwykle {{min}} – {{max}}",
-    "estimateNote": "Transport i dowóz to szacunek z typowych stawek, zaokrąglony do 100. Dokładne kwoty, pozycja po pozycji, są w pełnym raporcie."
+    "estimateNote": "Transport i dowóz to szacunek z typowych stawek, zaokrąglony do 100. Dokładne kwoty, pozycja po pozycji, są w pełnym raporcie.",
+    "minimalNote": "Szacunek dla tej trasy. Ile dokładnie kosztuje każda pozycja – transport, cło, VAT, rejestracja i ryzyka – pokazuje raport."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Kontener na wyłączność",

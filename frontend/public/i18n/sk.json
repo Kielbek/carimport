@@ -297,7 +297,8 @@
     "tileDelivery": "Dovoz domov",
     "approx": "cca",
     "span": "zvyčajne {{min}} – {{max}}",
-    "estimateNote": "Doprava a dovoz sú odhad podľa bežných sadzieb, zaokrúhlený na 100. Presné sumy po položkách nájdete v úplnom reporte."
+    "estimateNote": "Doprava a dovoz sú odhad podľa bežných sadzieb, zaokrúhlený na 100. Presné sumy po položkách nájdete v úplnom reporte.",
+    "minimalNote": "Hrubý odhad pre túto trasu. Koľko presne stojí každá položka – doprava, clo, DPH, registrácia a riziká – ukáže report."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Vlastný kontajner",

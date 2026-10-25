@@ -297,7 +297,8 @@
     "tileDelivery": "Dostava kući",
     "approx": "opr.",
     "span": "obično {{min}} – {{max}}",
-    "estimateNote": "Prijevoz i dostava procjena su prema uobičajenim cijenama, zaokružena na 100. Točni iznosi po stavkama nalaze se u cjelovitom izvješću."
+    "estimateNote": "Prijevoz i dostava procjena su prema uobičajenim cijenama, zaokružena na 100. Točni iznosi po stavkama nalaze se u cjelovitom izvješću.",
+    "minimalNote": "Gruba procjena za ovu rutu. Koliko točno košta svaka stavka – prijevoz, carina, PDV, registracija i rizici – prikazuje izvješće."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Vlastiti kontejner",

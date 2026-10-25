@@ -297,7 +297,8 @@
     "tileDelivery": "Házhoz szállítás",
     "approx": "kb.",
     "span": "általában {{min}} – {{max}}",
-    "estimateNote": "A szállítás és a házhoz szállítás becslés a szokásos díjak alapján, 100-ra kerekítve. A pontos összegek tételesen a teljes jelentésben vannak."
+    "estimateNote": "A szállítás és a házhoz szállítás becslés a szokásos díjak alapján, 100-ra kerekítve. A pontos összegek tételesen a teljes jelentésben vannak.",
+    "minimalNote": "Durva becslés erre az útvonalra. Hogy pontosan mennyibe kerül minden tétel – szállítás, vám, áfa, forgalomba helyezés és kockázatok –, azt a jelentés mutatja meg."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Saját (kizárólagos) konténer",

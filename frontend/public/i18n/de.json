@@ -297,7 +297,8 @@
     "tileDelivery": "Lieferung nach Hause",
     "approx": "ca.",
     "span": "meist {{min}} – {{max}}",
-    "estimateNote": "Transport und Zustellung sind Schätzungen aus üblichen Tarifen, auf 100 gerundet. Die genauen Beträge, Posten für Posten, stehen im vollständigen Bericht."
+    "estimateNote": "Transport und Zustellung sind Schätzungen aus üblichen Tarifen, auf 100 gerundet. Die genauen Beträge, Posten für Posten, stehen im vollständigen Bericht.",
+    "minimalNote": "Eine grobe Schätzung für diese Route. Was jeder Posten genau kostet – Transport, Zoll, Einfuhrumsatzsteuer, Zulassung und Risiken – steht im Bericht."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exklusiver Container",

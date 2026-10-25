@@ -297,7 +297,8 @@
     "tileDelivery": "Livrare acasă",
     "approx": "aprox.",
     "span": "de obicei {{min}} – {{max}}",
-    "estimateNote": "Transportul și livrarea sunt estimări după tarife obișnuite, rotunjite la 100. Sumele exacte, pe fiecare poziție, sunt în raportul complet."
+    "estimateNote": "Transportul și livrarea sunt estimări după tarife obișnuite, rotunjite la 100. Sumele exacte, pe fiecare poziție, sunt în raportul complet.",
+    "minimalNote": "O estimare aproximativă pentru acest traseu. Cât costă exact fiecare poziție – transport, taxă vamală, TVA, înmatriculare și riscuri – arată raportul."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Container exclusiv",

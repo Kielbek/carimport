@@ -297,7 +297,8 @@
     "tileDelivery": "Dostava domov",
     "approx": "pribl.",
     "span": "običajno {{min}} – {{max}}",
-    "estimateNote": "Prevoz in dostava sta ocena po običajnih cenah, zaokrožena na 100. Natančni zneski po postavkah so v celotnem poročilu."
+    "estimateNote": "Prevoz in dostava sta ocena po običajnih cenah, zaokrožena na 100. Natančni zneski po postavkah so v celotnem poročilu.",
+    "minimalNote": "Groba ocena za to pot. Koliko točno stane vsaka postavka – prevoz, carina, DDV, registracija in tveganja – pokaže poročilo."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Lasten zabojnik",
