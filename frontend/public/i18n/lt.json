@@ -226,7 +226,20 @@
     "deadline": "Terminas",
     "riskDetail": "Tikimybė {{p}}%, kaina įvykus: {{min}}–{{max}} {{cur}}",
     "userAmount": "jūsų įvesta suma",
-    "scenarioMethod": "Vidutinis scenarijus rizikas įtraukia kaip tikėtiną vertę (tikimybė × vidutinė kaina); pesimistinis daro prielaidą, kad kiekviena rizika įvyksta didžiausia kaina."
+    "scenarioMethod": "Vidutinis scenarijus rizikas įtraukia kaip tikėtiną vertę (tikimybė × vidutinė kaina); pesimistinis daro prielaidą, kad kiekviena rizika įvyksta didžiausia kaina.",
+    "progress": {
+      "title": "Jūsų ataskaita jau ruošiama",
+      "paying": "Tvirtinamas jūsų mokėjimas per Stripe…",
+      "paid": "Mokėjimas patvirtintas",
+      "generating": "Ruošiama jūsų PDF ataskaita…",
+      "ready": "PDF ataskaita paruošta",
+      "emailSending": "Siunčiame ataskaitą ir nuorodą adresu {{email}}…",
+      "emailSent": "Išsiuntėme ataskaitą ir nuorodą adresu {{email}}",
+      "doneTitle": "Atlikta – jūsų ataskaita žemiau",
+      "downloadBelow": "Ją bet kada galite atsisiųsti čia.",
+      "slow": "Tai užtrunka ilgiau nei įprastai. Po akimirkos atnaujinkite puslapį – jei el. paštas sukonfigūruotas, ataskaita atkeliaus ir į jūsų pašto dėžutę.",
+      "refresh": "Patikrinti dar kartą"
+    }
   },
   "result": {
     "chart": "Išlaidų struktūra",
@@ -272,7 +285,11 @@
     "riskTag": "rizika",
     "moreLocked": "+ dar {{count}} pozicijos, įskaitant paslėptas išlaidas",
     "customsFx": "Muitas ir PVM skaičiuojami nuo muitinės vertės, perskaičiuotos mėnesio muitinės kursu – {{date}} kursu (priešpaskutinis praėjusio mėnesio trečiadienis).",
-    "sample": "Peržiūrėti ataskaitos pavyzdį (PDF)"
+    "sample": "Peržiūrėti ataskaitos pavyzdį (PDF)",
+    "carPrice": "Automobilio kaina",
+    "carPriceWhat": "Jūsų statymas arba pirkimo kaina, perskaičiuota",
+    "totalWithCar": "Automobilis + mokesčiai ir uosto rinkliavos",
+    "totalWithCarWhat": "Be transporto, aukciono mokesčių, pristatymo ir registracijos – jie yra išsamioje ataskaitoje"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Atskiras konteineris",

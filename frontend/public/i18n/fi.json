@@ -226,7 +226,20 @@
     "deadline": "Määräaika",
     "riskDetail": "Todennäköisyys {{p}} %, kustannus toteutuessaan: {{min}}–{{max}} {{cur}}",
     "userAmount": "syöttämäsi summa",
-    "scenarioMethod": "Keskimääräinen skenaario sisältää riskit odotusarvona (todennäköisyys × keskikustannus); pessimistinen olettaa jokaisen riskin toteutuvan ylärajan kustannuksella."
+    "scenarioMethod": "Keskimääräinen skenaario sisältää riskit odotusarvona (todennäköisyys × keskikustannus); pessimistinen olettaa jokaisen riskin toteutuvan ylärajan kustannuksella.",
+    "progress": {
+      "title": "Raporttisi on tulossa",
+      "paying": "Vahvistetaan maksuasi Stripessä…",
+      "paid": "Maksu vahvistettu",
+      "generating": "Valmistellaan PDF-raporttiasi…",
+      "ready": "PDF-raportti valmis",
+      "emailSending": "Lähetetään raportti ja linkki osoitteeseen {{email}}…",
+      "emailSent": "Lähetimme raportin ja linkin osoitteeseen {{email}}",
+      "doneTitle": "Valmis – raporttisi on alla",
+      "downloadBelow": "Voit ladata sen täältä milloin tahansa.",
+      "slow": "Tämä kestää tavallista kauemmin. Päivitä hetken kuluttua – jos sähköposti on käytössä, raportti tulee myös postilaatikkoosi.",
+      "refresh": "Tarkista uudelleen"
+    }
   },
   "result": {
     "chart": "Kustannusrakenne",
@@ -272,7 +285,11 @@
     "riskTag": "riski",
     "moreLocked": "+ {{count}} muuta erää, mm. piilokulut",
     "customsFx": "Tulli ja arvonlisävero lasketaan tullausarvosta kuukauden tullikurssilla – {{date}} kurssilla (edellisen kuun toiseksi viimeinen keskiviikko).",
-    "sample": "Katso esimerkkiraportti (PDF)"
+    "sample": "Katso esimerkkiraportti (PDF)",
+    "carPrice": "Auton hinta",
+    "carPriceWhat": "Huutosi tai ostohinta muunnettuna",
+    "totalWithCar": "Auto + verot ja satamamaksut",
+    "totalWithCarWhat": "Ilman kuljetusta, huutokauppamaksuja, toimitusta ja rekisteröintiä – ne ovat täydessä raportissa"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Oma kontti",

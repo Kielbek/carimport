@@ -226,7 +226,20 @@
     "deadline": "Frist",
     "riskDetail": "Sandsynlighed {{p}} %, omkostning hvis det sker: {{min}}–{{max}} {{cur}}",
     "userAmount": "beløb, du har indtastet",
-    "scenarioMethod": "Det gennemsnitlige scenarie medregner risici som forventet værdi (sandsynlighed × middelomkostning); det pessimistiske antager, at alle risici indtræffer med den højeste omkostning."
+    "scenarioMethod": "Det gennemsnitlige scenarie medregner risici som forventet værdi (sandsynlighed × middelomkostning); det pessimistiske antager, at alle risici indtræffer med den højeste omkostning.",
+    "progress": {
+      "title": "Din rapport er på vej",
+      "paying": "Bekræfter din betaling hos Stripe…",
+      "paid": "Betaling bekræftet",
+      "generating": "Forbereder din PDF-rapport…",
+      "ready": "PDF-rapporten er klar",
+      "emailSending": "Sender rapporten og et link til {{email}}…",
+      "emailSent": "Vi har sendt rapporten og et link til {{email}}",
+      "doneTitle": "Færdig – din rapport er herunder",
+      "downloadBelow": "Du kan downloade den her når som helst.",
+      "slow": "Det tager længere tid end normalt. Opdater om lidt – hvis e-mail er sat op, får du også rapporten i din indbakke.",
+      "refresh": "Tjek igen"
+    }
   },
   "result": {
     "chart": "Omkostningsstruktur",
@@ -272,7 +285,11 @@
     "riskTag": "risiko",
     "moreLocked": "+ {{count}} poster mere, inkl. skjulte omkostninger",
     "customsFx": "Told og moms beregnes af toldværdien omregnet til månedens toldkurs – kursen fra {{date}} (næstsidste onsdag i forrige måned).",
-    "sample": "Se en eksempelrapport (PDF)"
+    "sample": "Se en eksempelrapport (PDF)",
+    "carPrice": "Bilens pris",
+    "carPriceWhat": "Dit bud eller din købspris, omregnet",
+    "totalWithCar": "Bil + afgifter og havnegebyrer",
+    "totalWithCarWhat": "Uden transport, auktionsgebyrer, levering og registrering – de står i den fulde rapport"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Egen container",

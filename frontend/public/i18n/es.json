@@ -226,7 +226,20 @@
     "deadline": "Plazo",
     "riskDetail": "Probabilidad {{p}} %, coste si ocurre: {{min}}–{{max}} {{cur}}",
     "userAmount": "importe introducido por ti",
-    "scenarioMethod": "El escenario medio incluye los riesgos como valor esperado (probabilidad × coste medio); el pesimista supone que cada riesgo se produce con su coste máximo."
+    "scenarioMethod": "El escenario medio incluye los riesgos como valor esperado (probabilidad × coste medio); el pesimista supone que cada riesgo se produce con su coste máximo.",
+    "progress": {
+      "title": "Tu informe está en camino",
+      "paying": "Confirmando tu pago con Stripe…",
+      "paid": "Pago confirmado",
+      "generating": "Preparando tu informe PDF…",
+      "ready": "Informe PDF listo",
+      "emailSending": "Enviando el informe y un enlace a {{email}}…",
+      "emailSent": "Hemos enviado el informe y un enlace a {{email}}",
+      "doneTitle": "Listo – tu informe está abajo",
+      "downloadBelow": "Puedes descargarlo aquí cuando quieras.",
+      "slow": "Está tardando más de lo habitual. Actualiza en un momento – si el correo está configurado, el informe también llegará a tu bandeja de entrada.",
+      "refresh": "Comprobar de nuevo"
+    }
   },
   "result": {
     "chart": "Estructura de costes",
@@ -272,7 +285,11 @@
     "riskTag": "riesgo",
     "moreLocked": "+ {{count}} partidas más, incl. costes ocultos",
     "customsFx": "El arancel y el IVA se calculan sobre el valor en aduana convertido al tipo de cambio aduanero del mes, el del {{date}} (penúltimo miércoles del mes anterior).",
-    "sample": "Ver un informe de ejemplo (PDF)"
+    "sample": "Ver un informe de ejemplo (PDF)",
+    "carPrice": "Precio del coche",
+    "carPriceWhat": "Tu puja o precio de compra, convertido",
+    "totalWithCar": "Coche + impuestos y tasas portuarias",
+    "totalWithCarWhat": "Sin transporte, tasas de subasta, entrega ni matriculación – están en el informe completo"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Contenedor exclusivo",

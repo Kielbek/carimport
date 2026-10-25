@@ -226,7 +226,20 @@
     "deadline": "Rok",
     "riskDetail": "Vjerojatnost {{p}} %, trošak ako se dogodi: {{min}}–{{max}} {{cur}}",
     "userAmount": "iznos koji ste unijeli",
-    "scenarioMethod": "Prosječni scenarij uključuje rizike kao očekivanu vrijednost (vjerojatnost × srednji trošak); pesimistični pretpostavlja da se svaki rizik ostvari po gornjem trošku."
+    "scenarioMethod": "Prosječni scenarij uključuje rizike kao očekivanu vrijednost (vjerojatnost × srednji trošak); pesimistični pretpostavlja da se svaki rizik ostvari po gornjem trošku.",
+    "progress": {
+      "title": "Vaše izvješće je na putu",
+      "paying": "Potvrđujemo vaše plaćanje putem usluge Stripe…",
+      "paid": "Plaćanje potvrđeno",
+      "generating": "Pripremamo vaše PDF izvješće…",
+      "ready": "PDF izvješće je spremno",
+      "emailSending": "Šaljemo izvješće i poveznicu na {{email}}…",
+      "emailSent": "Poslali smo izvješće i poveznicu na {{email}}",
+      "doneTitle": "Gotovo – vaše izvješće nalazi se ispod",
+      "downloadBelow": "Ovdje ga možete preuzeti u bilo kojem trenutku.",
+      "slow": "Ovo traje dulje nego obično. Osvježite stranicu za trenutak – ako je e-pošta postavljena, izvješće će stići i u vaš sandučić.",
+      "refresh": "Provjeri ponovno"
+    }
   },
   "result": {
     "chart": "Struktura troškova",
@@ -272,7 +285,11 @@
     "riskTag": "rizik",
     "moreLocked": "+ još {{count}} stavki, uključujući skrivene troškove",
     "customsFx": "Carina i PDV računaju se od carinske vrijednosti preračunate po carinskom tečaju mjeseca – tečaju od {{date}} (pretposljednja srijeda prethodnog mjeseca).",
-    "sample": "Pogledajte primjer izvješća (PDF)"
+    "sample": "Pogledajte primjer izvješća (PDF)",
+    "carPrice": "Cijena automobila",
+    "carPriceWhat": "Vaša ponuda ili kupoprodajna cijena, preračunata",
+    "totalWithCar": "Automobil + porezi i lučke naknade",
+    "totalWithCarWhat": "Bez prijevoza, aukcijskih naknada, dostave i registracije – oni su u cjelovitom izvješću"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Vlastiti kontejner",

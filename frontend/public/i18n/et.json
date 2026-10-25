@@ -226,7 +226,20 @@
     "deadline": "Tähtaeg",
     "riskDetail": "Tõenäosus {{p}}%, kulu selle toimumisel: {{min}}–{{max}} {{cur}}",
     "userAmount": "sinu sisestatud summa",
-    "scenarioMethod": "Keskmine stsenaarium arvestab riske ootusväärtusena (tõenäosus × keskmine kulu); pessimistlik eeldab, et iga risk realiseerub ülemise kuluga."
+    "scenarioMethod": "Keskmine stsenaarium arvestab riske ootusväärtusena (tõenäosus × keskmine kulu); pessimistlik eeldab, et iga risk realiseerub ülemise kuluga.",
+    "progress": {
+      "title": "Sinu raport on teel",
+      "paying": "Kinnitame sinu makset Stripe’is…",
+      "paid": "Makse kinnitatud",
+      "generating": "Koostame sinu PDF-raportit…",
+      "ready": "PDF-raport on valmis",
+      "emailSending": "Saadame raporti ja lingi aadressile {{email}}…",
+      "emailSent": "Saatsime raporti ja lingi aadressile {{email}}",
+      "doneTitle": "Valmis – sinu raport on allpool",
+      "downloadBelow": "Saad selle siit igal ajal alla laadida.",
+      "slow": "See võtab tavalisest kauem aega. Värskenda hetke pärast – kui e-post on seadistatud, jõuab raport ka sinu postkasti.",
+      "refresh": "Kontrolli uuesti"
+    }
   },
   "result": {
     "chart": "Kulude struktuur",
@@ -272,7 +285,11 @@
     "riskTag": "risk",
     "moreLocked": "+ veel {{count}} kuluartiklit, sh varjatud kulud",
     "customsFx": "Toll ja käibemaks arvutatakse tolliväärtuselt kuu tollikursiga – {{date}} kursiga (eelmise kuu eelviimane kolmapäev).",
-    "sample": "Vaata näidisaruannet (PDF)"
+    "sample": "Vaata näidisaruannet (PDF)",
+    "carPrice": "Auto hind",
+    "carPriceWhat": "Sinu pakkumine või ostuhind, ümber arvestatud",
+    "totalWithCar": "Auto + maksud ja sadamatasud",
+    "totalWithCarWhat": "Ilma transpordi, oksjonitasude, kohaletoimetamise ja registreerimiseta – need on täielikus raportis"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Eraldi konteiner",

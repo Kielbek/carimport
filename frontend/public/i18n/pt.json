@@ -226,7 +226,20 @@
     "deadline": "Prazo",
     "riskDetail": "Probabilidade {{p}}%, custo se acontecer: {{min}}–{{max}} {{cur}}",
     "userAmount": "montante introduzido por si",
-    "scenarioMethod": "O cenário médio inclui os riscos como valor esperado (probabilidade × custo médio); o pessimista assume que todos os riscos acontecem ao custo máximo."
+    "scenarioMethod": "O cenário médio inclui os riscos como valor esperado (probabilidade × custo médio); o pessimista assume que todos os riscos acontecem ao custo máximo.",
+    "progress": {
+      "title": "O seu relatório está a caminho",
+      "paying": "A confirmar o seu pagamento na Stripe…",
+      "paid": "Pagamento confirmado",
+      "generating": "A preparar o seu relatório PDF…",
+      "ready": "Relatório PDF pronto",
+      "emailSending": "A enviar o relatório e um link para {{email}}…",
+      "emailSent": "Enviámos o relatório e um link para {{email}}",
+      "doneTitle": "Concluído – o seu relatório está abaixo",
+      "downloadBelow": "Pode descarregá-lo aqui a qualquer momento.",
+      "slow": "Está a demorar mais do que o habitual. Atualize daqui a pouco – se o e-mail estiver configurado, o relatório chegará também à sua caixa de entrada.",
+      "refresh": "Verificar novamente"
+    }
   },
   "result": {
     "chart": "Estrutura de custos",
@@ -272,7 +285,11 @@
     "riskTag": "risco",
     "moreLocked": "+ {{count}} rubricas adicionais, incl. custos ocultos",
     "customsFx": "Os direitos e o IVA são calculados sobre o valor aduaneiro convertido à taxa de câmbio aduaneira do mês – a de {{date}} (penúltima quarta-feira do mês anterior).",
-    "sample": "Ver um relatório de exemplo (PDF)"
+    "sample": "Ver um relatório de exemplo (PDF)",
+    "carPrice": "Preço do carro",
+    "carPriceWhat": "A sua licitação ou preço de compra, convertido",
+    "totalWithCar": "Carro + impostos e taxas portuárias",
+    "totalWithCarWhat": "Sem transporte, taxas de leilão, entrega e matrícula – estão no relatório completo"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Contentor exclusivo",

@@ -226,7 +226,20 @@
     "deadline": "Échéance",
     "riskDetail": "Probabilité {{p}} %, coût s’il se réalise : {{min}}–{{max}} {{cur}}",
     "userAmount": "montant saisi par vous",
-    "scenarioMethod": "Le scénario moyen intègre les risques en espérance mathématique (probabilité × coût médian) ; le scénario pessimiste suppose que chaque risque se réalise à son coût maximal."
+    "scenarioMethod": "Le scénario moyen intègre les risques en espérance mathématique (probabilité × coût médian) ; le scénario pessimiste suppose que chaque risque se réalise à son coût maximal.",
+    "progress": {
+      "title": "Votre rapport arrive",
+      "paying": "Confirmation de votre paiement auprès de Stripe…",
+      "paid": "Paiement confirmé",
+      "generating": "Préparation de votre rapport PDF…",
+      "ready": "Rapport PDF prêt",
+      "emailSending": "Envoi du rapport et d’un lien à {{email}}…",
+      "emailSent": "Nous avons envoyé le rapport et un lien à {{email}}",
+      "doneTitle": "Terminé – votre rapport est ci-dessous",
+      "downloadBelow": "Vous pouvez le télécharger ici à tout moment.",
+      "slow": "Cela prend plus de temps que d’habitude. Actualisez dans un instant – si l’e-mail est configuré, le rapport arrivera aussi dans votre boîte de réception.",
+      "refresh": "Vérifier à nouveau"
+    }
   },
   "result": {
     "chart": "Structure des coûts",
@@ -272,7 +285,11 @@
     "riskTag": "risque",
     "moreLocked": "+ {{count}} postes supplémentaires, dont les coûts cachés",
     "customsFx": "Les droits et la TVA sont calculés sur la valeur en douane convertie au taux de change douanier du mois – taux du {{date}} (avant-dernier mercredi du mois précédent).",
-    "sample": "Voir un exemple de rapport (PDF)"
+    "sample": "Voir un exemple de rapport (PDF)",
+    "carPrice": "Prix de la voiture",
+    "carPriceWhat": "Votre enchère ou prix d’achat, converti",
+    "totalWithCar": "Voiture + taxes et frais portuaires",
+    "totalWithCarWhat": "Hors transport, frais d’enchère, livraison et immatriculation – ils figurent dans le rapport complet"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Conteneur exclusif",
