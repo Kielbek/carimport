@@ -134,8 +134,12 @@ usługi i ryzyka – jest liczone, ale serwer wysyła tylko nazwy pozycji (`lock
 pokazuje je zamazane (rozmyte liczby są atrapą, prawdziwe kwoty nie trafiają do przeglądarki przed płatnością), z
 przyciskiem zakupu na górze wyniku i stałym paskiem zakupu na telefonie.
 
-**Ranking portów** (`POST /quotes/suggestions`) sortuje po pełnym koszcie od drzwi do drzwi, ale ujawnia dla każdego portu
-tylko `TaxSummary` i dopłatę względem najtańszego (`extraVsBest`). Reguła, którą pokazuje UI (sekcja „Jak liczymy”):
+**Ranking portów** (`POST /quotes/suggestions`) sortuje po pełnym koszcie od drzwi do drzwi i pokazuje przy każdym
+porcie `TaxSummary.routeTotal` – wszystko, co zależy od portu: transport do niego (odbiór z aukcji, dowóz do portu
+wyjścia, fracht, ubezpieczenie), cło, VAT, podatki krajowe, opłaty portowe i dowóz do domu. Pozostałe koszty (auto
+z opłatami aukcji, rejestracja, naprawy, ryzyka) są w każdym porcie takie same, więc różnice `routeTotal` są
+różnicami rankingu (`extraVsBest`). Darmowy wynik pokazuje „auto pod domem” = auto z opłatami aukcji + trasa;
+pełny raport dodaje rozbicie pozycji, trzy scenariusze, rejestrację i usługi, naprawy, ubezpieczenie i ryzyka. Reguła, którą pokazuje UI (sekcja „Jak liczymy”):
 cło jest takie samo w całej UE; VAT płaci się w kraju portu według jego stawki (używane auto nie płaci VAT drugi raz
 w kraju rejestracji); podatki kraju rejestracji płaci się w kraju zawsze, niezależnie od portu.
 

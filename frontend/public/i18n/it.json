@@ -286,10 +286,18 @@
     "moreLocked": "+ altre {{count}} voci, inclusi i costi nascosti",
     "customsFx": "Dazio e IVA sono calcolati sul valore in dogana convertito al tasso di cambio doganale del mese, quello del {{date}} (penultimo mercoledì del mese precedente).",
     "sample": "Vedi un report di esempio (PDF)",
-    "carPrice": "Prezzo dell’auto",
-    "carPriceWhat": "La tua offerta o il prezzo d’acquisto, convertito",
-    "totalWithCar": "Auto + imposte e diritti portuali",
-    "totalWithCarWhat": "Esclusi trasporto, commissioni d’asta, consegna e immatricolazione – sono nel report completo"
+    "carPrice": "Auto con commissioni d’asta",
+    "carPriceWhat": "La tua offerta o il prezzo d’acquisto più le commissioni dell’asta, convertiti",
+    "totalWithCar": "Auto consegnata a casa tua",
+    "totalWithCarWhat": "Auto, trasporto, dazio, IVA e imposte nazionali, diritti portuali e consegna. Immatricolazione, servizi post-importazione, riparazioni e rischi sono nel report completo.",
+    "freeEyebrow": "Il tuo risultato",
+    "tileCar": "Auto",
+    "tileTransport": "Trasporto – {{port}}",
+    "tileTaxes": "Dazio, imposte, porto",
+    "tileDelivery": "Consegna a casa",
+    "approx": "circa",
+    "span": "di solito {{min}} – {{max}}",
+    "estimateNote": "Trasporto e consegna sono stime su tariffe tipiche, arrotondate a 100. Gli importi esatti, voce per voce, sono nel report completo."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Container esclusivo",
@@ -1358,7 +1366,13 @@
     "how5": "La classifica aggiunge nolo, diritti portuali e consegna al km fino al tuo indirizzo – il totale più economico è in cima.",
     "bestLabel": "Porto più conveniente:",
     "bestSelected": "selezionato",
-    "bestChoose": "Scegli – risparmi {{amount}} {{cur}}"
+    "bestChoose": "Scegli – risparmi {{amount}} {{cur}}",
+    "routeLabel": "Trasporto, imposte e consegna",
+    "transportToPort": "Trasporto fino a {{port}}",
+    "transportToPortWhat": "Ritiro all’asta, trasporto al porto di esportazione, nolo marittimo e assicurazione",
+    "delivery": "Consegna dal porto a te",
+    "deliveryWhat": "{{km}} km con bisarca o carro attrezzi",
+    "routeTotal": "Totale del percorso – dipende dal porto"
   },
   "after": {
     "mustTitle": "Cosa devi fare – {{country}}",

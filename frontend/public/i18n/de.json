@@ -286,10 +286,18 @@
     "moreLocked": "+ {{count}} weitere Positionen, inkl. versteckter Kosten",
     "customsFx": "Zoll und Einfuhrumsatzsteuer werden vom Zollwert berechnet, umgerechnet zum Zollkurs des Monats – Kurs vom {{date}} (vorletzter Mittwoch des Vormonats).",
     "sample": "Musterbericht ansehen (PDF)",
-    "carPrice": "Fahrzeugpreis",
-    "carPriceWhat": "Ihr Gebot bzw. Kaufpreis, umgerechnet",
-    "totalWithCar": "Fahrzeug + Steuern & Hafengebühren",
-    "totalWithCarWhat": "Ohne Transport, Auktionsgebühren, Lieferung und Zulassung – diese stehen im vollen Bericht"
+    "carPrice": "Fahrzeug inkl. Auktionsgebühren",
+    "carPriceWhat": "Ihr Gebot oder Kaufpreis plus Auktionsgebühren, umgerechnet",
+    "totalWithCar": "Fahrzeug bis vor Ihre Haustür",
+    "totalWithCarWhat": "Fahrzeug, Transport, Zoll, USt und nationale Steuern, Hafengebühren und Lieferung. Zulassung, Leistungen nach dem Import, Reparaturen und Risiken finden Sie im vollen Bericht.",
+    "freeEyebrow": "Ihr Ergebnis",
+    "tileCar": "Fahrzeug",
+    "tileTransport": "Transport nach {{port}}",
+    "tileTaxes": "Zoll, Steuern, Hafen",
+    "tileDelivery": "Lieferung nach Hause",
+    "approx": "ca.",
+    "span": "meist {{min}} – {{max}}",
+    "estimateNote": "Transport und Zustellung sind Schätzungen aus üblichen Tarifen, auf 100 gerundet. Die genauen Beträge, Posten für Posten, stehen im vollständigen Bericht."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exklusiver Container",
@@ -1358,7 +1366,13 @@
     "how5": "Das Ranking addiert Fracht, Hafengebühren und Lieferung pro km zu Ihrer Adresse – die günstigste Summe steht oben.",
     "bestLabel": "Günstigster Hafen:",
     "bestSelected": "gewählt",
-    "bestChoose": "Wählen – {{amount}} {{cur}} sparen"
+    "bestChoose": "Wählen – {{amount}} {{cur}} sparen",
+    "routeLabel": "Transport, Steuern und Zustellung",
+    "transportToPort": "Transport nach {{port}}",
+    "transportToPortWhat": "Abholung bei der Auktion, Transport zum Exporthafen, Seefracht und Versicherung",
+    "delivery": "Lieferung vom Hafen zu Ihnen",
+    "deliveryWhat": "{{km}} km per Autotransporter oder Abschleppwagen",
+    "routeTotal": "Routensumme – hängt vom Hafen ab"
   },
   "after": {
     "mustTitle": "Was Sie tun müssen – {{country}}",

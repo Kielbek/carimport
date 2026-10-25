@@ -286,10 +286,18 @@
     "moreLocked": "+ {{count}} partidas más, incl. costes ocultos",
     "customsFx": "El arancel y el IVA se calculan sobre el valor en aduana convertido al tipo de cambio aduanero del mes, el del {{date}} (penúltimo miércoles del mes anterior).",
     "sample": "Ver un informe de ejemplo (PDF)",
-    "carPrice": "Precio del coche",
-    "carPriceWhat": "Tu puja o precio de compra, convertido",
-    "totalWithCar": "Coche + impuestos y tasas portuarias",
-    "totalWithCarWhat": "Sin transporte, tasas de subasta, entrega ni matriculación – están en el informe completo"
+    "carPrice": "Coche con tasas de subasta",
+    "carPriceWhat": "Tu puja o precio de compra más las tasas de la subasta, convertidos",
+    "totalWithCar": "Coche entregado en tu puerta",
+    "totalWithCarWhat": "Coche, transporte, arancel, IVA e impuestos nacionales, tasas portuarias y entrega. La matriculación, los servicios tras la importación, las reparaciones y los riesgos están en el informe completo.",
+    "freeEyebrow": "Tu resultado",
+    "tileCar": "Coche",
+    "tileTransport": "Transporte a {{port}}",
+    "tileTaxes": "Arancel, impuestos, puerto",
+    "tileDelivery": "Entrega a domicilio",
+    "approx": "aprox.",
+    "span": "normalmente {{min}} – {{max}}",
+    "estimateNote": "El transporte y la entrega son estimaciones con tarifas habituales, redondeadas a 100. Los importes exactos, partida por partida, están en el informe completo."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Contenedor exclusivo",
@@ -1358,7 +1366,13 @@
     "how5": "La clasificación suma flete, tasas portuarias y entrega por km hasta tu dirección: el total más barato aparece primero.",
     "bestLabel": "Puerto más rentable:",
     "bestSelected": "seleccionado",
-    "bestChoose": "Elegir – ahorra {{amount}} {{cur}}"
+    "bestChoose": "Elegir – ahorra {{amount}} {{cur}}",
+    "routeLabel": "Transporte, impuestos y entrega",
+    "transportToPort": "Transporte hasta {{port}}",
+    "transportToPortWhat": "Recogida en la subasta, traslado al puerto de exportación, flete marítimo y seguro",
+    "delivery": "Entrega del puerto hasta ti",
+    "deliveryWhat": "{{km}} km en camión portacoches o grúa",
+    "routeTotal": "Total de la ruta – depende del puerto"
   },
   "after": {
     "mustTitle": "Qué tienes que hacer – {{country}}",

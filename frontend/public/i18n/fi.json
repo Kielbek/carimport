@@ -286,10 +286,18 @@
     "moreLocked": "+ {{count}} muuta erää, mm. piilokulut",
     "customsFx": "Tulli ja arvonlisävero lasketaan tullausarvosta kuukauden tullikurssilla – {{date}} kurssilla (edellisen kuun toiseksi viimeinen keskiviikko).",
     "sample": "Katso esimerkkiraportti (PDF)",
-    "carPrice": "Auton hinta",
-    "carPriceWhat": "Huutosi tai ostohinta muunnettuna",
-    "totalWithCar": "Auto + verot ja satamamaksut",
-    "totalWithCarWhat": "Ilman kuljetusta, huutokauppamaksuja, toimitusta ja rekisteröintiä – ne ovat täydessä raportissa"
+    "carPrice": "Auto huutokauppamaksuineen",
+    "carPriceWhat": "Tarjouksesi tai ostohinta sekä huutokaupan maksut, muunnettuna",
+    "totalWithCar": "Auto ovellesi toimitettuna",
+    "totalWithCarWhat": "Auto, kuljetus, tulli, ALV ja kansalliset verot, satamamaksut ja toimitus. Rekisteröinti, tuonnin jälkeiset palvelut, korjaukset ja riskit ovat täydellisessä raportissa.",
+    "freeEyebrow": "Tuloksesi",
+    "tileCar": "Auto",
+    "tileTransport": "Kuljetus – {{port}}",
+    "tileTaxes": "Tulli, verot, satama",
+    "tileDelivery": "Kotiinkuljetus",
+    "approx": "n.",
+    "span": "yleensä {{min}} – {{max}}",
+    "estimateNote": "Kuljetus ja toimitus ovat arvioita tavallisista hinnoista, pyöristettynä sataan. Tarkat summat erä erältä ovat täydessä raportissa."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Oma kontti",
@@ -1358,7 +1366,13 @@
     "how5": "Järjestykseen lisätään rahti, satamamaksut ja toimitus kilometreittäin osoitteeseesi – edullisin summa on ensimmäisenä.",
     "bestLabel": "Edullisin satama:",
     "bestSelected": "valittu",
-    "bestChoose": "Valitse – säästä {{amount}} {{cur}}"
+    "bestChoose": "Valitse – säästä {{amount}} {{cur}}",
+    "routeLabel": "Kuljetus, verot ja toimitus",
+    "transportToPort": "Kuljetus satamaan {{port}}",
+    "transportToPortWhat": "Nouto huutokaupasta, kuljetus vientisatamaan, merirahti ja vakuutus",
+    "delivery": "Toimitus satamasta sinulle",
+    "deliveryWhat": "{{km}} km autonkuljetusautolla tai hinausautolla",
+    "routeTotal": "Reitin kokonaissumma – riippuu satamasta"
   },
   "after": {
     "mustTitle": "Mitä sinun on tehtävä – {{country}}",

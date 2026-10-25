@@ -286,10 +286,18 @@
     "moreLocked": "+ još {{count}} stavki, uključujući skrivene troškove",
     "customsFx": "Carina i PDV računaju se od carinske vrijednosti preračunate po carinskom tečaju mjeseca – tečaju od {{date}} (pretposljednja srijeda prethodnog mjeseca).",
     "sample": "Pogledajte primjer izvješća (PDF)",
-    "carPrice": "Cijena automobila",
-    "carPriceWhat": "Vaša ponuda ili kupoprodajna cijena, preračunata",
-    "totalWithCar": "Automobil + porezi i lučke naknade",
-    "totalWithCarWhat": "Bez prijevoza, aukcijskih naknada, dostave i registracije – oni su u cjelovitom izvješću"
+    "carPrice": "Automobil s aukcijskim naknadama",
+    "carPriceWhat": "Vaša ponuda ili kupovna cijena plus naknade aukcije, preračunato",
+    "totalWithCar": "Automobil do vaših vrata",
+    "totalWithCarWhat": "Automobil, prijevoz, carina, PDV i nacionalni porezi, lučke naknade i dostava. Registracija, usluge nakon uvoza, popravci i rizici nalaze se u cjelovitom izvješću.",
+    "freeEyebrow": "Vaš rezultat",
+    "tileCar": "Automobil",
+    "tileTransport": "Prijevoz – {{port}}",
+    "tileTaxes": "Carina, porezi, luka",
+    "tileDelivery": "Dostava kući",
+    "approx": "opr.",
+    "span": "obično {{min}} – {{max}}",
+    "estimateNote": "Prijevoz i dostava procjena su prema uobičajenim cijenama, zaokružena na 100. Točni iznosi po stavkama nalaze se u cjelovitom izvješću."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Vlastiti kontejner",
@@ -1358,7 +1366,13 @@
     "how5": "Poredak pribraja vozarinu, lučke naknade i dostavu po km do vaše adrese – najjeftiniji zbroj je na vrhu.",
     "bestLabel": "Najisplativija luka:",
     "bestSelected": "odabrano",
-    "bestChoose": "Odaberite – uštedite {{amount}} {{cur}}"
+    "bestChoose": "Odaberite – uštedite {{amount}} {{cur}}",
+    "routeLabel": "Prijevoz, porezi i dostava",
+    "transportToPort": "Prijevoz do luke {{port}}",
+    "transportToPortWhat": "Preuzimanje na aukciji, prijevoz do izvozne luke, pomorska vozarina i osiguranje",
+    "delivery": "Dostava iz luke do vas",
+    "deliveryWhat": "{{km}} km autotransporterom ili šlep-službom",
+    "routeTotal": "Trošak rute – ovisi o luci"
   },
   "after": {
     "mustTitle": "Što morate učiniti – {{country}}",

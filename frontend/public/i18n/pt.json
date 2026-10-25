@@ -286,10 +286,18 @@
     "moreLocked": "+ {{count}} rubricas adicionais, incl. custos ocultos",
     "customsFx": "Os direitos e o IVA são calculados sobre o valor aduaneiro convertido à taxa de câmbio aduaneira do mês – a de {{date}} (penúltima quarta-feira do mês anterior).",
     "sample": "Ver um relatório de exemplo (PDF)",
-    "carPrice": "Preço do carro",
-    "carPriceWhat": "A sua licitação ou preço de compra, convertido",
-    "totalWithCar": "Carro + impostos e taxas portuárias",
-    "totalWithCarWhat": "Sem transporte, taxas de leilão, entrega e matrícula – estão no relatório completo"
+    "carPrice": "Carro com taxas do leilão",
+    "carPriceWhat": "A sua licitação ou preço de compra mais as taxas do leilão, convertidos",
+    "totalWithCar": "Carro entregue à sua porta",
+    "totalWithCarWhat": "Carro, transporte, direitos aduaneiros, IVA e impostos nacionais, taxas portuárias e entrega. Matrícula, serviços pós-importação, reparações e riscos estão no relatório completo.",
+    "freeEyebrow": "O seu resultado",
+    "tileCar": "Carro",
+    "tileTransport": "Transporte – {{port}}",
+    "tileTaxes": "Direitos, impostos, porto",
+    "tileDelivery": "Entrega em casa",
+    "approx": "aprox.",
+    "span": "normalmente {{min}} – {{max}}",
+    "estimateNote": "O transporte e a entrega são estimativas com base em tarifas habituais, arredondadas a 100. Os valores exatos, rubrica a rubrica, estão no relatório completo."
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Contentor exclusivo",
@@ -1358,7 +1366,13 @@
     "how5": "O ranking soma frete, taxas portuárias e entrega por km até à sua morada – o total mais barato aparece primeiro.",
     "bestLabel": "Porto mais vantajoso:",
     "bestSelected": "selecionado",
-    "bestChoose": "Escolher – poupe {{amount}} {{cur}}"
+    "bestChoose": "Escolher – poupe {{amount}} {{cur}}",
+    "routeLabel": "Transporte, impostos e entrega",
+    "transportToPort": "Transporte até {{port}}",
+    "transportToPortWhat": "Recolha no leilão, transporte até ao porto de exportação, frete marítimo e seguro",
+    "delivery": "Entrega do porto até si",
+    "deliveryWhat": "{{km}} km em camião porta-automóveis ou reboque",
+    "routeTotal": "Total do percurso – depende do porto"
   },
   "after": {
     "mustTitle": "O que tem de fazer – {{country}}",
