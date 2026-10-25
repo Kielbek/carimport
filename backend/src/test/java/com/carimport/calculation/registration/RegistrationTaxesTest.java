@@ -60,6 +60,38 @@ class RegistrationTaxesTest {
     }
 
     @Test
+    void slovakFeeIsPowerBandTimesEcologicalCoefficient() {
+        // 96 kW → 90 €; a 2017 car (age 9, Euro 6b-c) × 0.45 = 40.50 € → 41
+        assertThat(tax(car("SK", FuelType.PETROL, 150, 96, 1600, 9, "20000", "0.23"))).isEqualByComparingTo("41");
+        // 343 kW → 1 000 €; a 2019 car (Euro 6d) × 0.40
+        assertThat(tax(car("SK", FuelType.PETROL, 314, 343, 4951, 7, "20000", "0.23"))).isEqualByComparingTo("400");
+        // never below 33 €; electric 33 €
+        assertThat(tax(car("SK", FuelType.PETROL, 120, 70, 1200, 3, "20000", "0.23"))).isEqualByComparingTo("33");
+        assertThat(tax(car("SK", FuelType.EV, 0, 300, 0, 1, "40000", "0.23"))).isEqualByComparingTo("33");
+    }
+
+    @Test
+    void lithuanianTaxPerStartedTenGramsAbove130() {
+        assertThat(tax(car("LT", FuelType.PETROL, 130, 100, 1500, 3, "20000", "0.21"))).isEqualByComparingTo("0");
+        assertThat(tax(car("LT", FuelType.PETROL, 141, 100, 1500, 3, "20000", "0.21"))).isEqualByComparingTo("43");
+        assertThat(tax(car("LT", FuelType.PETROL, 275, 300, 5000, 3, "20000", "0.21"))).isEqualByComparingTo("324");
+        assertThat(tax(car("LT", FuelType.DIESEL, 165, 140, 2000, 3, "20000", "0.21"))).isEqualByComparingTo("173");
+    }
+
+    @Test
+    void hungarianTaxDepreciatesWithAge() {
+        // 90 kW (× 1.5), a 5-year-old car: 61-72 months → 59 % off: 47 000 × 1.5 × 0.41 = 28 905 Ft
+        assertThat(tax(car("HU", FuelType.PETROL, 140, 90, 1600, 5, "8000000", "0.27"))).isEqualByComparingTo("28905");
+        assertThat(tax(car("HU", FuelType.EV, 0, 200, 0, 1, "15000000", "0.27"))).isEqualByComparingTo("0");
+    }
+
+    @Test
+    void latviaHasNoRegistrationTax() {
+        assertThat(RegistrationTaxes.NONE).contains("LV");
+        assertThat(RegistrationTaxes.assess(car("LV", FuelType.PETROL, 200, 150, 2000, 3, "20000", "0.21"))).isEmpty();
+    }
+
+    @Test
     void spanishIedmtBands() {
         assertThat(tax(car("ES", FuelType.PETROL, 120, 100, 1500, 2, "20000", "0.21"))).isEqualByComparingTo("0");
         assertThat(tax(car("ES", FuelType.PETROL, 175, 150, 2000, 2, "20000", "0.21"))).isEqualByComparingTo("1950");
@@ -74,8 +106,8 @@ class RegistrationTaxesTest {
     @Test
     void countriesWithoutTaxOrWithOfficialCalculatorAreNotEstimated() {
         assertThat(RegistrationTaxes.assess(car("DE", FuelType.PETROL, 175, 150, 2000, 3, "30000", "0.19"))).isEmpty();
-        assertThat(RegistrationTaxes.assess(car("HU", FuelType.PETROL, 175, 150, 2000, 3, "30000", "0.27"))).isEmpty();
-        assertThat(RegistrationTaxes.OFFICIAL_CALCULATOR).containsKey("HU");
+        assertThat(RegistrationTaxes.assess(car("HR", FuelType.PETROL, 175, 150, 2000, 3, "30000", "0.25"))).isEmpty();
+        assertThat(RegistrationTaxes.OFFICIAL_CALCULATOR).containsOnlyKeys("CY", "GR", "HR", "MT");
         assertThat(RegistrationTaxes.NONE).contains("DE", "CZ", "SE");
     }
 }

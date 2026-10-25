@@ -152,9 +152,9 @@ wartość celna liczy się po bieżącym kursie, a interfejs nie pokazuje daty k
 | Grupa | Kraje | Co robi kalkulator |
 |---|---|---|
 | akcyza wchodząca do podstawy VAT | PL | `PolishExciseStrategy` (stawka z tabeli, zawsze liczona) |
-| brak jednorazowego podatku | BG, CZ, DE, LU, RO, SE | tylko opłaty urzędowe z `destination_fee` |
-| szacunek ze wzoru | AT (NoVA 2026), BE (TMC Walonia/Bruksela), DK (registreringsafgift 2026), EE, ES (IEDMT), FI (autovero), FR (malus 2026 + taxe régionale), IE (VRT), IT (IPT), NL (BPM 2026 z tabelą amortyzacji), PT (ISV), SI (DMV) | kwota z CO₂ WLTP, mocy, wieku i wartości (CIF + cło) |
-| oficjalny kalkulator | CY, GR, HR, HU, LT, LV, MT, SK | link do urzędu, użytkownik wpisuje kwotę (`registrationTaxOwn`) |
+| brak jednorazowego podatku | BG, CZ, DE, LU, LV, RO, SE | tylko opłaty urzędowe z `destination_fee` (LV: opłata CSDD ~15–20 € + roczny podatek) |
+| szacunek ze wzoru | AT (NoVA 2026), BE (TMC Walonia/Bruksela), DK (registreringsafgift 2026), EE, ES (IEDMT), FI (autovero), FR (malus 2026 + taxe régionale + malus wagowy), HU (regadó 2026: 47 000 Ft × moc × klasa × amortyzacja), IE (VRT), IT (IPT), LT (taršos mokestis 2026), NL (BPM 2026 z tabelą amortyzacji), PT (ISV), SI (DMV), SK (poplatok: moc × współczynnik ekologiczny) | kwota z CO₂ WLTP, mocy, masy, wieku i wartości (CIF + cło) |
+| oficjalny kalkulator | CY, GR, HR, MT | link do urzędu, użytkownik wpisuje kwotę (`registrationTaxOwn`): HR liczy od ceny nowego auta, GR od wartości detalicznej przed amortyzacją, MT od wyceny Transport Malta i długości auta, CY nie publikuje tabeli |
 
 CO₂ i moc to nowe pola wizarda z propozycją (`Proposals.co2/powerKw`); własna kwota podatku zawsze wygrywa ze
 szacunkiem. Wzory są uproszczone (bez dopłat wagowych, wariantów regionalnych, NOx w IE) i oznaczone w linii
@@ -471,7 +471,8 @@ pozostaje PENDING, poprawny webhook → READY i PDF 30 KB, duplikat zdarzenia �
   (`termsAccepted`) i zapisywana przy zamówieniu z datą i wersją (`terms_accepted_at`, `terms_version`).
 * **Dalej**: CSP, Spring Security dla panelu admina (zarządzanie taryfami + `@CacheEvict` cache `tariffs`),
   powiadomienia partnerów o leadach.
-* **Rozszerzenia silnika**: wzory dla krajów z grupy „oficjalny kalkulator” (HU, HR, GR, …); kursy EBC dla odpraw
+* **Rozszerzenia silnika**: wzory dla HR, GR, CY, MT (wymagają ceny nowego auta / wyceny urzędowej / długości);
+  potwierdzenie mnożników HU powyżej 140 kW w tekście ustawy; kursy EBC dla odpraw
   w strefie euro; panel B2B dla partnerów z rozliczeniem prowizji.
 * **SEO – dalej**: blog/poradniki per kraj i marka (long tail: „import Toyoty z USA”), strony docelowe per kraj
   pochodzenia z prerenderowanym przykładem wyceny, Search Console + monitoring Core Web Vitals.
