@@ -252,6 +252,12 @@ Frynt trzyma port w trybie AUTO (podąża za najtańszym) do czasu, aż użytkow
 Stawki frachtu do nowych portów są wyprowadzone z linii do Rotterdamu (Gdańsk – z Gdyni) współczynnikami trasy:
 Atlantyk (USA/Kanada/UK) taniej na Morze Północne, Suez (Japonia/ZEA) taniej i szybciej na Morze Śródziemne, Bałtyk – feeder.
 
+**Lokalizacja odbioru** (`V7__pickup_zones.sql`, generowane przez `backend/tools/generate_pickup_zones.py`): stawka lawety
+z placu do każdego portu wyjścia dla 50 stanów USA + DC, 10 prowincji Kanady, 8 regionów Japonii, 7 emiratów i 12 regionów
+Wielkiej Brytanii – z odległości (centroid regionu → port, ×współczynnik drogowy) i typowej taryfy przewoźnika (stała + za km,
+widełki, dopłata za auto niejeżdżące). To szacunki; zmiana taryfy = edycja `TARIFF` i ponowne wygenerowanie migracji.
+Wizard pokazuje pełną nazwę i skrót („California (CA)”); „Inna / nie wiem” = stawka krajowa `*`.
+
 ## 3. Frontend (Angular 21: standalone, Signals, control flow, zoneless, SSG)
 
 ```
