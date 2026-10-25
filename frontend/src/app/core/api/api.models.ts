@@ -131,8 +131,15 @@ export interface TaxSummary {
   total: number;
   /** Day whose rates customs applies this month (penultimate Wednesday of the last one); null = today's rates. */
   customsFxDate: string | null;
-  /** Purchase price in the display currency, and car + the taxes and port fees above. */
+  /** Purchase price with the auction's fees - the same through every port. */
   carPrice: number;
+  /** Pickup, inland haul, ocean freight and insurance to this port. */
+  transportToPort: number;
+  /** From the port to the delivery address. */
+  delivery: number;
+  /** Everything that changes with the port: transport + duty, VAT, national taxes, port fees + delivery. */
+  routeTotal: number;
+  /** Car + route: at the door, before registration, repairs and risks. */
   totalWithCar: number;
 }
 

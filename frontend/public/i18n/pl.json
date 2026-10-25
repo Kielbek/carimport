@@ -286,10 +286,15 @@
     "moreLocked": "+ {{count}} kolejnych pozycji, w tym koszty ukryte",
     "customsFx": "Cło i VAT liczymy od wartości celnej przeliczonej po kursie celnym obowiązującym w tym miesiącu – z dnia {{date}} (przedostatnia środa poprzedniego miesiąca).",
     "sample": "Zobacz przykładowy raport (PDF)",
-    "carPrice": "Cena samochodu",
-    "carPriceWhat": "Twoja oferta lub cena zakupu, przeliczona",
-    "totalWithCar": "Auto + podatki i opłaty portowe",
-    "totalWithCarWhat": "Bez transportu, opłat aukcyjnych, dowozu i rejestracji – te są w pełnym raporcie"
+    "carPrice": "Auto z opłatami aukcyjnymi",
+    "carPriceWhat": "Twoja oferta lub cena zakupu plus opłaty aukcji, przeliczone",
+    "totalWithCar": "Auto pod Twoim domem",
+    "totalWithCarWhat": "Auto, transport, cło, VAT i podatki krajowe, opłaty portowe i dowóz. Rejestracja, usługi po imporcie, naprawy i ryzyka są w pełnym raporcie.",
+    "freeEyebrow": "Twój wynik",
+    "tileCar": "Auto",
+    "tileTransport": "Transport do {{port}}",
+    "tileTaxes": "Cło, podatki, port",
+    "tileDelivery": "Dowóz do domu"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Kontener na wyłączność",
@@ -1358,7 +1363,13 @@
     "how5": "Ranking dolicza fracht, opłaty portowe i dowóz za km pod Twój adres – najtańsza suma jest na górze.",
     "bestLabel": "Najbardziej opłacalny port:",
     "bestSelected": "wybrany",
-    "bestChoose": "Wybierz – oszczędzasz {{amount}} {{cur}}"
+    "bestChoose": "Wybierz – oszczędzasz {{amount}} {{cur}}",
+    "routeLabel": "Transport, podatki i dowóz",
+    "transportToPort": "Transport do portu {{port}}",
+    "transportToPortWhat": "Odbiór z aukcji, dowóz do portu wyjścia, fracht morski i ubezpieczenie",
+    "delivery": "Dowóz z portu do Ciebie",
+    "deliveryWhat": "{{km}} km autotransporterem lub lawetą",
+    "routeTotal": "Koszt trasy – zależy od portu"
   },
   "after": {
     "mustTitle": "Co musisz zrobić – {{country}}",

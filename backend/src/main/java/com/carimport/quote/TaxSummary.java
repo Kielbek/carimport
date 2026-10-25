@@ -1,10 +1,12 @@
 package com.carimport.quote;
 
 import com.carimport.calculation.CalculationResult;
+import com.carimport.calculation.CostCategory;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Predicate;
 
 /**
  * The "back of an envelope" part of a calculation, free for everyone: customs duty, import VAT (in the country of the
@@ -18,11 +20,16 @@ import java.util.Optional;
  * @param portFees terminal handling, devanning and customs agent in that port
  * @param total    sum of the above
  * @param customsFxDate the day whose exchange rates customs applies this month (penultimate Wednesday of the last one)
- * @param carPrice      the hammer price / purchase price itself, in the display currency
- * @param totalWithCar  car price + the taxes and port fees above (transport, fees and hidden costs are in the report)
+ * @param carPrice        purchase price with the auction's fees (the same through every port)
+ * @param transportToPort pickup at the auction, inland haul, ocean freight and cargo insurance to this EU port
+ * @param delivery        from the port to the delivery address
+ * @param routeTotal      everything that changes with the port: transport to it + duty, VAT and national taxes +
+ *                        port fees + delivery home - the number the port ranking compares
+ * @param totalWithCar    car + route: what the car costs at the door before registration, repairs and risks
  */
 public record TaxSummary(Item duty, Item vat, List<Item> national, BigDecimal portFees, BigDecimal total,
-                         String customsFxDate, BigDecimal carPrice, BigDecimal totalWithCar) {
+                         String customsFxDate, BigDecimal carPrice, BigDecimal transportToPort, BigDecimal delivery,
+                         BigDecimal routeTotal, BigDecimal totalWithCar) {
 
     /** One tax: code (cost.* key), rate as a fraction, the country that levies it, amount. */
     public record Item(String code, BigDecimal rate, String country, BigDecimal amount) {
@@ -46,8 +53,22 @@ public record TaxSummary(Item duty, Item vat, List<Item> national, BigDecimal po
                 .findFirst()
                 .map(l -> l.line().params().get("customsFxDate"))
                 .orElse(null);
-        BigDecimal carPrice = sum(result, List.of("PURCHASE_PRICE"));
-        return new TaxSummary(duty, vat, national, fees, total, customsFxDate, carPrice, carPrice.add(total));
+        BigDecimal carPrice = category(result, CostCategory.VEHICLE, c -> true);
+        BigDecimal delivery = category(result, CostCategory.TRANSPORT, c -> c.startsWith("DELIVERY_")
+                || c.equals("INTRA_EU_TRANSPORT"));
+        BigDecimal transportToPort = category(result, CostCategory.TRANSPORT, c -> !c.startsWith("DELIVERY_")
+                && !c.equals("INTRA_EU_TRANSPORT") && !PORT_FEES.contains(c));
+        BigDecimal routeTotal = transportToPort.add(total).add(delivery);
+        return new TaxSummary(duty, vat, national, fees, total, customsFxDate, carPrice, transportToPort, delivery,
+                routeTotal, carPrice.add(routeTotal));
+    }
+
+    private static BigDecimal category(CalculationResult result, CostCategory category, Predicate<String> code) {
+        return result.lines().stream()
+                .filter(l -> l.line().category() == category && l.line().includedInTotal() && code.test(l.line().code()))
+                .map(l -> l.display().amount())
+                .reduce(BigDecimal.ZERO, BigDecimal::add)
+                .setScale(0, RoundingMode.HALF_UP);
     }
 
     private static Optional<Item> item(CalculationResult result, String code, String country) {

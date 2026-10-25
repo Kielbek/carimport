@@ -66,6 +66,18 @@ class SuggestionServiceTest {
         assertThat(gdynia.taxes().total()).isEqualByComparingTo(gdynia.taxes().duty().amount()
                 .add(gdynia.taxes().vat().amount()).add(gdynia.taxes().portFees())
                 .add(gdynia.taxes().national().getFirst().amount()));
+        // the number shown per port is the route cost, so its differences are the ranking's differences
+        java.math.BigDecimal bestRoute = s.ports().getFirst().taxes().routeTotal();
+        for (SuggestionService.PortSuggestion p : s.ports()) {
+            assertThat(p.taxes().routeTotal()).isEqualByComparingTo(p.taxes().transportToPort()
+                    .add(p.taxes().total()).add(p.taxes().delivery()));
+            assertThat(p.taxes().routeTotal().subtract(bestRoute).subtract(p.extraVsBest()).abs())
+                    .isLessThanOrEqualTo(new java.math.BigDecimal("10"));
+        }
+        assertThat(gdynia.taxes().transportToPort()).isPositive();
+        assertThat(gdynia.taxes().delivery()).isPositive();
+        assertThat(gdynia.taxes().totalWithCar()).isEqualByComparingTo(gdynia.taxes().carPrice()
+                .add(gdynia.taxes().routeTotal()));
         assertThat(s.deliveryMode()).isEqualTo(DeliveryMode.CAR_CARRIER);
         assertThat(s.repairEstimate()).isPositive();
         assertThat(s.insuranceEstimate()).isEqualByComparingTo("1200");

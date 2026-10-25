@@ -1,6 +1,6 @@
 import { Component, computed, inject, output } from '@angular/core';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
-import { CostCategory } from '../../../core/api/api.models';
+import { CostCategory, PublicQuoteView } from '../../../core/api/api.models';
 import { reportPrice } from '../../../core/currency/currencies';
 import { CountryNamePipe } from '../../../core/format/country-name.pipe';
 import { AnalyticsService } from '../../../core/analytics/analytics.service';
@@ -41,7 +41,78 @@ import { DEPARTURE_PORTS } from '../calculator.options';
         <span>{{ s().destinationAddress ?? (r.destinationCountry | countryName: lang.locale()) }}</span>
       </p>
 
-      <!-- the full cost: locked, with the purchase at the top -->
+      <!-- the result: car to the door, before registration, repairs and risks - free -->
+      <section class="mt-6 rounded-[6px] border-2 border-brand bg-panel p-6 sm:p-8" aria-labelledby="result-total">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div>
+            <p class="eyebrow">{{ 'result.freeEyebrow' | translate }}</p>
+            <h3 id="result-total" class="mt-2 text-base font-bold text-fg/85">{{ 'result.totalWithCar' | translate }}</h3>
+            <p class="mt-1 text-[clamp(2.2rem,6vw,3.2rem)] font-extrabold leading-none tabular-nums text-brand-text">{{ money(r.taxes.totalWithCar, r.currency) }}</p>
+            <p class="mt-2 max-w-xl text-sm text-muted">{{ 'result.totalWithCarWhat' | translate }}</p>
+          </div>
+          <span class="badge !bg-success/15 !text-success">{{ 'result.freeBadge' | translate }}</span>
+        </div>
+
+        <div class="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-4">
+          @for (t of tiles(r); track t.key) {
+            <div class="rounded-[4px] bg-panel-2 p-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.05em] text-muted">{{ t.label | translate: { port: r.clearancePort } }}</p>
+              <p class="mt-1.5 text-xl font-extrabold tabular-nums">{{ money(t.amount, r.currency) }}</p>
+            </div>
+          }
+        </div>
+
+        <table class="mt-6 w-full text-[14px]">
+          <tbody>
+            <tr class="border-b border-line">
+              <td class="py-2.5 pr-3">{{ 'result.carPrice' | translate }}
+                <span class="block text-xs text-muted">{{ 'result.carPriceWhat' | translate }}</span></td>
+              <td class="py-2.5 text-right font-semibold tabular-nums">{{ money(r.taxes.carPrice, r.currency) }}</td>
+            </tr>
+            <tr class="border-b border-line">
+              <td class="py-2.5 pr-3">{{ 'portCost.transportToPort' | translate: { port: r.clearancePort } }}
+                <span class="block text-xs text-muted">{{ 'portCost.transportToPortWhat' | translate }}</span></td>
+              <td class="py-2.5 text-right font-semibold tabular-nums">{{ money(r.taxes.transportToPort, r.currency) }}</td>
+            </tr>
+            <tr class="border-b border-line">
+              <td class="py-2.5 pr-3">{{ 'cost.CUSTOMS_DUTY' | translate }} <span class="text-muted">{{ pct(r.taxes.duty.rate) }}</span>
+                <span class="block text-xs text-muted">{{ 'portCost.dutyWhere' | translate }}</span></td>
+              <td class="py-2.5 text-right font-semibold tabular-nums">{{ money(r.taxes.duty.amount, r.currency) }}</td>
+            </tr>
+            <tr class="border-b border-line">
+              <td class="py-2.5 pr-3">{{ 'cost.IMPORT_VAT' | translate }} <span class="text-muted">{{ pct(r.taxes.vat.rate) }}</span>
+                <span class="block text-xs text-muted">{{ 'portCost.vatWhere' | translate: { country: (r.taxes.vat.country | countryName: lang.locale()) } }}</span></td>
+              <td class="py-2.5 text-right font-semibold tabular-nums">{{ money(r.taxes.vat.amount, r.currency) }}</td>
+            </tr>
+            @for (t of r.taxes.national; track t.code) {
+              <tr class="border-b border-line">
+                <td class="py-2.5 pr-3">{{ 'cost.' + t.code | translate }} <span class="text-muted">{{ pct(t.rate) }}</span>
+                  <span class="block text-xs text-muted">{{ 'portCost.nationalWhere' | translate: { country: (t.country | countryName: lang.locale()) } }}</span></td>
+                <td class="py-2.5 text-right font-semibold tabular-nums">{{ money(t.amount, r.currency) }}</td>
+              </tr>
+            }
+            <tr class="border-b border-line">
+              <td class="py-2.5 pr-3">{{ 'portCost.portFees' | translate }}
+                <span class="block text-xs text-muted">{{ 'portCost.portFeesWhat' | translate }}</span></td>
+              <td class="py-2.5 text-right font-semibold tabular-nums">{{ money(r.taxes.portFees, r.currency) }}</td>
+            </tr>
+            <tr class="border-b border-line">
+              <td class="py-2.5 pr-3">{{ 'portCost.delivery' | translate }}</td>
+              <td class="py-2.5 text-right font-semibold tabular-nums">{{ money(r.taxes.delivery, r.currency) }}</td>
+            </tr>
+            <tr>
+              <td class="pt-3 font-extrabold">{{ 'result.totalWithCar' | translate }}</td>
+              <td class="pt-3 text-right text-lg font-extrabold tabular-nums text-brand-text">{{ money(r.taxes.totalWithCar, r.currency) }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="mt-3 text-xs text-muted">{{ 'result.freeBase' | translate }}</p>
+        @if (r.taxes.customsFxDate) {
+          <p class="mt-1 text-xs text-muted">{{ 'result.customsFx' | translate: { date: r.taxes.customsFxDate } }}</p>
+        }
+      </section>
+
+      <!-- the full cost: locked, right under the result -->
       <section class="theme-dark relative mt-6 overflow-hidden rounded-[4px] bg-panel p-6 text-fg sm:p-8">
         <div class="flex flex-wrap items-start justify-between gap-6">
           <div class="max-w-xl">
@@ -72,60 +143,6 @@ import { DEPARTURE_PORTS } from '../calculator.options';
         </ul>
       </section>
 
-      <!-- free: what anyone can work out on paper -->
-      <section class="mt-10">
-        <div class="flex flex-wrap items-end justify-between gap-3">
-          <div>
-            <h3 class="text-lg font-extrabold">{{ 'result.freeTitle' | translate }}</h3>
-            <p class="mt-1 text-sm text-muted">{{ 'result.freeLead' | translate: { port: r.clearancePort } }}</p>
-          </div>
-          <span class="badge !bg-success/15 !text-success">{{ 'result.freeBadge' | translate }}</span>
-        </div>
-        <table class="mt-5 w-full text-[15px]">
-          <tbody>
-            <tr class="border-b border-line">
-              <td class="py-3 pr-3">{{ 'result.carPrice' | translate }}
-                <span class="block text-xs text-muted">{{ 'result.carPriceWhat' | translate }}</span></td>
-              <td class="py-3 text-right font-bold tabular-nums">{{ money(r.taxes.carPrice, r.currency) }}</td>
-            </tr>
-            <tr class="border-b border-line">
-              <td class="py-3 pr-3">{{ 'cost.CUSTOMS_DUTY' | translate }} <span class="text-muted">{{ pct(r.taxes.duty.rate) }}</span>
-                <span class="block text-xs text-muted">{{ 'portCost.dutyWhere' | translate }}</span></td>
-              <td class="py-3 text-right font-bold tabular-nums">{{ money(r.taxes.duty.amount, r.currency) }}</td>
-            </tr>
-            <tr class="border-b border-line">
-              <td class="py-3 pr-3">{{ 'cost.IMPORT_VAT' | translate }} <span class="text-muted">{{ pct(r.taxes.vat.rate) }}</span>
-                <span class="block text-xs text-muted">{{ 'portCost.vatWhere' | translate: { country: (r.taxes.vat.country | countryName: lang.locale()) } }}</span></td>
-              <td class="py-3 text-right font-bold tabular-nums">{{ money(r.taxes.vat.amount, r.currency) }}</td>
-            </tr>
-            @for (t of r.taxes.national; track t.code) {
-              <tr class="border-b border-line">
-                <td class="py-3 pr-3">{{ 'cost.' + t.code | translate }} <span class="text-muted">{{ pct(t.rate) }}</span>
-                  <span class="block text-xs text-muted">{{ 'portCost.nationalWhere' | translate: { country: (t.country | countryName: lang.locale()) } }}</span></td>
-                <td class="py-3 text-right font-bold tabular-nums">{{ money(t.amount, r.currency) }}</td>
-              </tr>
-            }
-            <tr class="border-b border-line">
-              <td class="py-3 pr-3">{{ 'portCost.portFees' | translate }}
-                <span class="block text-xs text-muted">{{ 'portCost.portFeesWhat' | translate }}</span></td>
-              <td class="py-3 text-right font-bold tabular-nums">{{ money(r.taxes.portFees, r.currency) }}</td>
-            </tr>
-            <tr class="border-b border-line">
-              <td class="py-3 pr-3 font-semibold">{{ 'portCost.total' | translate }}</td>
-              <td class="py-3 text-right font-bold tabular-nums">{{ money(r.taxes.total, r.currency) }}</td>
-            </tr>
-            <tr>
-              <td class="pt-4 font-extrabold">{{ 'result.totalWithCar' | translate }}
-                <span class="block text-xs font-normal text-muted">{{ 'result.totalWithCarWhat' | translate }}</span></td>
-              <td class="pt-4 text-right text-xl font-extrabold tabular-nums text-brand-text">{{ money(r.taxes.totalWithCar, r.currency) }}</td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="mt-3 text-xs text-muted">{{ 'result.freeBase' | translate }}</p>
-        @if (r.taxes.customsFxDate) {
-          <p class="mt-1 text-xs text-muted">{{ 'result.customsFx' | translate: { date: r.taxes.customsFxDate } }}</p>
-        }
-      </section>
 
       <!-- locked: everything else, by name only -->
       <section class="mt-10">
@@ -215,6 +232,16 @@ export class StepResult {
 
   protected pct(rate: number | null): string {
     return rate == null ? '' : new Intl.NumberFormat(this.lang.locale(), { style: 'percent', maximumFractionDigits: 2 }).format(rate);
+  }
+
+  /** The four parts of the total, as tiles above the detailed rows. */
+  protected tiles(r: PublicQuoteView): { key: string; label: string; amount: number }[] {
+    return [
+      { key: 'car', label: 'result.tileCar', amount: r.taxes.carPrice },
+      { key: 'transport', label: 'result.tileTransport', amount: r.taxes.transportToPort },
+      { key: 'taxes', label: 'result.tileTaxes', amount: r.taxes.total },
+      { key: 'delivery', label: 'result.tileDelivery', amount: r.taxes.delivery },
+    ];
   }
 
   protected money(amount: number, currency: string): string {

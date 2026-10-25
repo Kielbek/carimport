@@ -286,10 +286,15 @@
     "moreLocked": "+ {{count}} more positions, incl. hidden costs",
     "customsFx": "Duty and VAT are assessed on the customs value converted at the customs exchange rate of the month – the rate of {{date}} (penultimate Wednesday of the previous month).",
     "sample": "See a sample report (PDF)",
-    "carPrice": "Car price",
-    "carPriceWhat": "Your bid or purchase price, converted",
-    "totalWithCar": "Car + taxes and port fees",
-    "totalWithCarWhat": "Without transport, auction fees, delivery and registration – those are in the full report"
+    "carPrice": "Car with auction fees",
+    "carPriceWhat": "Your bid or purchase price plus the auction’s fees, converted",
+    "totalWithCar": "Car delivered to your door",
+    "totalWithCarWhat": "Car, transport, duty, VAT and national taxes, port fees and delivery. Registration, after-import services, repairs and risks are in the full report.",
+    "freeEyebrow": "Your result",
+    "tileCar": "Car",
+    "tileTransport": "Transport to {{port}}",
+    "tileTaxes": "Duty, taxes, port",
+    "tileDelivery": "Delivery home"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exclusive container",
@@ -1358,7 +1363,13 @@
     "how5": "The ranking adds freight, port fees and delivery per km to your address – the cheapest total comes first.",
     "bestLabel": "Best value port:",
     "bestSelected": "selected",
-    "bestChoose": "Choose – save {{amount}} {{cur}}"
+    "bestChoose": "Choose – save {{amount}} {{cur}}",
+    "routeLabel": "Transport, taxes and delivery",
+    "transportToPort": "Transport to {{port}}",
+    "transportToPortWhat": "Pickup at the auction, haul to the export port, ocean freight and insurance",
+    "delivery": "Delivery from the port to you",
+    "deliveryWhat": "{{km}} km by car carrier or tow truck",
+    "routeTotal": "Route total – changes with the port"
   },
   "after": {
     "mustTitle": "What you must do in {{country}}",
