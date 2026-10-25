@@ -177,7 +177,7 @@
     "name": "Volledige naam",
     "phone": "Telefoon (optioneel)",
     "submit": "Aanvraag versturen",
-    "subtitle": "CarImport.eu importeert zelf geen auto’s. Als u dat wilt, sturen wij uw berekening door naar één geverifieerd importbedrijf, dat een offerte voor u opstelt. Geheel vrijblijvend.",
+    "subtitle": "Carglo importeert zelf geen auto’s. Als u dat wilt, sturen wij uw berekening door naar één geverifieerd importbedrijf, dat een offerte voor u opstelt. Geheel vrijblijvend.",
     "thanks": "Hartelijk dank!",
     "thanksHint": "Het importbedrijf neemt binnen 1 werkdag contact met u op.",
     "title": "Aanvraag bij een importbedrijf (optioneel)"
@@ -555,7 +555,7 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu —",
+        "title": "Carglo —",
         "text": "onafhankelijke importcalculator"
       },
       "instant": {
@@ -584,7 +584,7 @@
       "days": "dagen"
     },
     "numbers": {
-      "eyebrow": "CarImport.eu in cijfers",
+      "eyebrow": "Carglo in cijfers",
       "title": "De cijfers achter elke berekening",
       "n1": {
         "value": "5",
@@ -769,7 +769,7 @@
       "a": "Nee. Het is een schatting op basis van actuele tarieven en prijslijsten. De definitieve bedragen worden vastgesteld door de douane en de belastingdienst, die bijvoorbeeld de douanewaarde kunnen controleren. Het rapport vermeldt alle aannames, zodat u het eenvoudig met de officiële beschikking kunt vergelijken."
     },
     "q9": {
-      "q": "Importeert CarImport.eu auto’s?",
+      "q": "Importeert Carglo auto’s?",
       "a": "Nee. Wij zijn alleen een calculator – wij kopen, verschepen en klaren geen auto’s in, en wij ontvangen geen commissie van veilingen of vervoerders. Zo blijft de schatting onafhankelijk. Als u wilt, kunt u de berekening doorsturen naar een geverifieerd importbedrijf, maar dat is altijd uw eigen keuze."
     }
   },
@@ -781,23 +781,23 @@
   },
   "seo": {
     "home": {
-      "title": "Calculator importkosten auto – VS, Japan, Dubai naar de EU | CarImport.eu",
+      "title": "Calculator importkosten auto – VS, Japan, Dubai naar de EU | Carglo",
       "description": "Onafhankelijke calculator voor het importeren van een auto uit de VS, Canada, Japan, de VAE en het VK: veiling, verscheping, invoerrechten, accijns, btw, registratie en risico’s. Direct een schatting, zonder registratie."
     },
     "calculator": {
-      "title": "Calculator invoerrechten, accijns & btw voor importauto’s | CarImport.eu",
+      "title": "Calculator invoerrechten, accijns & btw voor importauto’s | Carglo",
       "description": "Kies het land, de veiling, de haven en het voertuig — de live calculator toont de kostenbandbreedte en de specificatie: prijs, verscheping, invoerrechten, accijns, btw en registratie."
     },
     "privacy": {
-      "title": "Privacybeleid | CarImport.eu",
-      "description": "Hoe CarImport.eu persoonsgegevens verwerkt: betalingen, rapporten, aanvragen bij partners en cookies."
+      "title": "Privacybeleid | Carglo",
+      "description": "Hoe Carglo persoonsgegevens verwerkt: betalingen, rapporten, aanvragen bij partners en cookies."
     },
     "about": {
-      "title": "Over ons – een onafhankelijke calculator voor auto-import | CarImport.eu",
-      "description": "Wie wij zijn, waar onze gegevens vandaan komen en hoe wij geld verdienen. CarImport.eu verkoopt en importeert geen auto’s – het berekent de volledige importkosten eerlijk en onafhankelijk."
+      "title": "Over ons – een onafhankelijke calculator voor auto-import | Carglo",
+      "description": "Wie wij zijn, waar onze gegevens vandaan komen en hoe wij geld verdienen. Carglo verkoopt en importeert geen auto’s – het berekent de volledige importkosten eerlijk en onafhankelijk."
     },
     "terms": {
-      "title": "Algemene voorwaarden | CarImport.eu",
+      "title": "Algemene voorwaarden | Carglo",
       "description": "Voorwaarden voor de calculator van importkosten van auto’s en het PDF-rapport: verkoper, betaling, levering, herroeping en klachten."
     }
   },
@@ -806,7 +806,7 @@
     "title": "Privacybeleid",
     "s1": {
       "title": "Verwerkingsverantwoordelijke",
-      "text": "De verwerkingsverantwoordelijke is de exploitant van CarImport.eu. Voor vragen over gegevensbescherming kunt u contact met ons opnemen via {{email}}."
+      "text": "De verwerkingsverantwoordelijke is de exploitant van Carglo. Voor vragen over gegevensbescherming kunt u contact met ons opnemen via {{email}}."
     },
     "s2": {
       "title": "Welke gegevens wij verwerken",
@@ -992,7 +992,7 @@
     "eyebrow": "Over ons",
     "title1": "Wij berekenen auto-import.",
     "title2": "Wij verkopen geen auto’s.",
-    "lead": "CarImport.eu is een onafhankelijke calculator voor de kosten van een auto van buiten de Europese Unie. We hebben hem gebouwd zodat iedereen – niet alleen een handelaar met tien jaar ervaring – vóór de aankoop weet wat hij of zij echt gaat betalen.",
+    "lead": "Carglo is een onafhankelijke calculator voor de kosten van een auto van buiten de Europese Unie. We hebben hem gebouwd zodat iedereen – niet alleen een handelaar met tien jaar ervaring – vóór de aankoop weet wat hij of zij echt gaat betalen.",
     "story": {
       "eyebrow": "Hoe het begon",
       "title": "Uit frustratie over verborgen kosten",
@@ -1091,20 +1091,20 @@
       "origins": {
         "title": "Gidsen voor auto-import: VS, Canada, Japan, VAE en het VK",
         "lead": "Stapsgewijze gidsen voor elk land waar u een auto kunt kopen: veilingen, documenten, transporttijd, invoerrechten, btw en registratie in Nederland – met de echte kosten in uw calculator.",
-        "metaTitle": "Gidsen auto-import – VS, Canada, Japan, VAE, VK | CarImport.eu",
+        "metaTitle": "Gidsen auto-import – VS, Canada, Japan, VAE, VK | Carglo",
         "metaDescription": "Een auto uit de VS, Canada, Japan, de VAE of het VK naar Nederland importeren: veilingen, documenten, transport, invoerrechten, btw en registratie uitgelegd."
       },
       "countries": {
         "title": "Een auto importeren in elk EU-land",
         "lead": "Btw-tarief, registratiebelasting, registratie-instantie, keuring en de dichtstbijzijnde inklaringshavens voor alle 27 EU-lidstaten.",
-        "metaTitle": "Auto-import naar EU-landen – btw, registratie, havens | CarImport.eu",
+        "metaTitle": "Auto-import naar EU-landen – btw, registratie, havens | Carglo",
         "metaDescription": "Invoer-btw, registratiebelastingen, instanties, keuringen en de dichtstbijzijnde havens voor alle 27 EU-landen – vergelijk en bereken de totale importkosten.",
         "yours": "Uw land"
       },
       "ports": {
         "title": "Inklaringshavens in de EU voor geïmporteerde auto’s",
         "lead": "Alle {{count}} EU-zeehavens waar auto’s van buiten de EU worden ingeklaard: kosten, btw, vaartijden vanuit de VS, Canada, Japan, de VAE en het VK, en afstanden over de weg.",
-        "metaTitle": "{{count}} EU-havens voor auto-import – kosten, btw, vaartijden | CarImport.eu",
+        "metaTitle": "{{count}} EU-havens voor auto-import – kosten, btw, vaartijden | Carglo",
         "metaDescription": "Vergelijk alle {{count}} EU-inklaringshavens voor auto’s: terminal- en douane-agentkosten, invoer-btw, vaartijden en afstand over de weg naar Nederland.",
         "sortedFrom": "Gesorteerd op afstand over de weg naar: {{country}}"
       }
@@ -1167,7 +1167,7 @@
       },
       "USA": {
         "h1": "Een auto uit de VS naar Nederland importeren",
-        "metaTitle": "Auto uit de VS naar Nederland importeren – kosten, btw | CarImport.eu",
+        "metaTitle": "Auto uit de VS naar Nederland importeren – kosten, btw | Carglo",
         "metaDescription": "Een auto uit de VS importeren: Copart- en IAAI-veilingen, transporttijd, 10% invoerrechten, invoer-btw, documenten en registratie. Totale kosten in een minuut.",
         "lead": "De VS zijn de grootste bron van importauto’s: miljoenen voertuigen per jaar bij Copart en IAAI, vaak tegen prijzen ver onder de Europese markt. Zo verloopt het hele proces – en dit kost het echt.",
         "why": "Enorme keuze, lage prijzen voor schadeauto’s (salvage), sterke motoren en goed uitgeruste versies die in Europa zeldzaam zijn. Het nadeel: de Amerikaanse verlichting en soms de snelheidsmeter moeten worden omgebouwd, en het herstel van salvage-auto’s kan duur zijn.",
@@ -1185,7 +1185,7 @@
       },
       "CANADA": {
         "h1": "Een auto uit Canada naar Nederland importeren",
-        "metaTitle": "Auto uit Canada naar Nederland importeren – kosten, btw | CarImport.eu",
+        "metaTitle": "Auto uit Canada naar Nederland importeren – kosten, btw | Carglo",
         "metaDescription": "Een auto uit Canada importeren: Copart en IAAI Canada, verscheping vanuit Halifax en Montreal, 10% invoerrechten, btw, documenten en registratie. Calculator.",
         "lead": "Canadese auto’s lijken op Amerikaanse, maar zijn vaak beter voorbereid op de winter, met metrische snelheidsmeters en lagere prijzen in Canadese dollars. De overtocht vanuit Halifax en Montreal naar Europa is een van de kortste over de Atlantische Oceaan.",
         "why": "Metrische instrumenten, winterpakketten, motorvoorverwarmers en goede roestbescherming; prijzen in CAD liggen voor hetzelfde model vaak lager dan in de VS.",
@@ -1203,7 +1203,7 @@
       },
       "JAPAN": {
         "h1": "Een auto uit Japan naar Nederland importeren",
-        "metaTitle": "JDM-auto uit Japan naar Nederland – kosten, rechten, btw | CarImport.eu",
+        "metaTitle": "JDM-auto uit Japan naar Nederland – kosten, rechten, btw | Carglo",
         "metaDescription": "Een JDM-auto uit Japan importeren: USS-veilingen, auction sheets, verscheping vanuit Yokohama, invoerrechten, btw, rechtsgestuurd en registratie. Calculator.",
         "lead": "Japan is de thuisbasis van JDM-auto’s: lage kilometerstanden, uitstekende staat en modellen die nooit in Europa zijn verkocht. Auction sheets beschrijven elke auto tot in detail – maar de auto’s zijn rechtsgestuurd en de reis is lang.",
         "why": "Zeer goede staat dankzij strenge keuringen (shaken), eerlijke veilingbeoordelingen en unieke sportauto’s en kei cars. De prijzen in yen zijn aantrekkelijk.",
@@ -1221,7 +1221,7 @@
       },
       "UAE": {
         "h1": "Een auto uit Dubai (VAE) naar Nederland importeren",
-        "metaTitle": "Auto uit Dubai (VAE) naar Nederland – kosten, rechten, btw | CarImport.eu",
+        "metaTitle": "Auto uit Dubai (VAE) naar Nederland – kosten, rechten, btw | Carglo",
         "metaDescription": "Een auto uit Dubai en de VAE importeren: Emirates Auction en dealers, GCC-specificatie, verscheping vanuit Jebel Ali, invoerrechten, btw en registratie.",
         "lead": "Dubai is een markt voor premium- en sportauto’s met lage kilometerstanden, vaak nauwelijks gebruikt. Auto’s met GCC-specificatie zijn gebouwd voor hitte en worden tegen aantrekkelijke prijzen verkocht.",
         "why": "Luxe- en sportmodellen, lage kilometerstanden en een droog klimaat (geen roest). De dirham is gekoppeld aan de Amerikaanse dollar.",
@@ -1239,7 +1239,7 @@
       },
       "UK": {
         "h1": "Een auto uit het VK naar Nederland importeren",
-        "metaTitle": "Auto uit het VK naar Nederland na de Brexit – kosten, btw | CarImport.eu",
+        "metaTitle": "Auto uit het VK naar Nederland na de Brexit – kosten, btw | Carglo",
         "metaDescription": "Een auto uit het VK importeren na de Brexit: invoerrechten en preferentiële oorsprong, btw, rechtsgestuurd, kort transport en registratie in Nederland.",
         "lead": "Sinds de Brexit is een auto uit het Verenigd Koninkrijk een import van buiten de EU: douaneaangifte, invoerrechten en invoer-btw zijn van toepassing. De reis is kort, en auto’s die in het VK of de EU zijn gemaakt, kunnen in aanmerking komen voor 0% invoerrechten.",
         "why": "Een grote occasionmarkt, goede onderhoudshistorie en kort transport per RoRo of veerboot. Houd rekening met het rechtsgestuurde stuur.",
@@ -1258,7 +1258,7 @@
     },
     "country": {
       "h1": "{{country}}: een auto importeren van buiten de EU",
-      "metaTitle": "{{country}} – auto-import: btw {{vat}}%, registratie, havens | CarImport.eu",
+      "metaTitle": "{{country}} – auto-import: btw {{vat}}%, registratie, havens | Carglo",
       "metaDescription": "Een auto uit de VS, Canada, Japan, de VAE of het VK importeren naar {{country}}: invoer-btw {{vat}}%, registratie, keuring, havens en totale kosten.",
       "lead": "Alles wat telt bij het registreren van een importauto in {{country}}: belastingen, instanties, keuring en de goedkoopste havens.",
       "facts": {
@@ -1290,7 +1290,7 @@
     },
     "port": {
       "h1": "Haven van {{port}} ({{country}}): inklaring van importauto’s",
-      "metaTitle": "{{port}} – auto-import, inklaring, btw {{vat}}% | CarImport.eu",
+      "metaTitle": "{{port}} – auto-import, inklaring, btw {{vat}}% | Carglo",
       "metaDescription": "Een importauto inklaren in {{port}} ({{country}}): terminal- en agentkosten, invoer-btw {{vat}}%, vaartijden vanuit de VS, Japan en de VAE, afstanden.",
       "lead": "{{port}} is een inklaringshaven in {{country}}. Hier vindt u de kosten, vaartijden en afstanden over de weg – en of het loont om uw auto hier in te klaren.",
       "facts": {
@@ -1329,7 +1329,7 @@
   "blog": {
     "title": "Blog over auto-import",
     "lead": "Praktische artikelen over het importeren van auto’s uit de VS, Canada, Japan, de VAE en het VK: echte kosten, veilingen, douane, registratie en de fouten die je beter kunt vermijden.",
-    "metaTitle": "Blog over auto-import – kosten, veilingen, douane, RDW | CarImport.eu",
+    "metaTitle": "Blog over auto-import – kosten, veilingen, douane, RDW | Carglo",
     "metaDescription": "Gidsen en artikelen over het importeren van een auto in de EU: wat het echt kost, kopen bij Copart en IAAI, invoerrechten, btw, BPM en registratie.",
     "all": "Alle",
     "minutes": "{{n}} min lezen",

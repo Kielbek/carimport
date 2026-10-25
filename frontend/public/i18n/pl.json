@@ -177,7 +177,7 @@
     "name": "Imię i nazwisko",
     "phone": "Telefon (opcjonalnie)",
     "submit": "Wyślij zapytanie",
-    "subtitle": "CarImport.eu nie sprowadza aut. Jeśli chcesz, przekażemy Twoją wycenę jednej zweryfikowanej firmie importowej, która przygotuje ofertę. Bez zobowiązań.",
+    "subtitle": "Carglo nie sprowadza aut. Jeśli chcesz, przekażemy Twoją wycenę jednej zweryfikowanej firmie importowej, która przygotuje ofertę. Bez zobowiązań.",
     "thanks": "Dziękujemy!",
     "thanksHint": "Firma importowa odezwie się w ciągu 1 dnia roboczego.",
     "title": "Zapytanie do firmy importowej (opcjonalnie)"
@@ -555,7 +555,7 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu —",
+        "title": "Carglo —",
         "text": "niezależny kalkulator importu"
       },
       "instant": {
@@ -584,7 +584,7 @@
       "days": "dni"
     },
     "numbers": {
-      "eyebrow": "CarImport.eu w liczbach",
+      "eyebrow": "Carglo w liczbach",
       "title": "Liczby, które stoją za każdą wyceną",
       "n1": {
         "value": "5",
@@ -769,7 +769,7 @@
       "a": "Nie. To szacunek oparty na aktualnych stawkach i cennikach. Ostateczne kwoty ustalają urząd celny i skarbowy — mogą np. zweryfikować wartość celną. Raport wskazuje wszystkie założenia, dzięki czemu łatwo porównać go z decyzją urzędu."
     },
     "q9": {
-      "q": "Czy CarImport.eu sprowadza samochody?",
+      "q": "Czy Carglo sprowadza samochody?",
       "a": "Nie. Jesteśmy wyłącznie kalkulatorem – nie kupujemy, nie transportujemy i nie odprawiamy aut, nie bierzemy prowizji od aukcji ani przewoźników. Dzięki temu wycena jest niezależna. Jeśli chcesz, możesz przekazać wycenę zweryfikowanej firmie importowej, ale to zawsze Twoja decyzja."
     }
   },
@@ -781,23 +781,23 @@
   },
   "seo": {
     "home": {
-      "title": "Kalkulator importu auta z USA, Japonii i Dubaju | CarImport.eu",
+      "title": "Kalkulator importu auta z USA, Japonii i Dubaju | Carglo",
       "description": "Niezależny kalkulator importu auta z USA, Kanady, Japonii, ZEA i UK: aukcja, transport, cło, akcyza, VAT, rejestracja i ryzyka. Wycena od ręki, bez rejestracji."
     },
     "calculator": {
-      "title": "Kalkulator cła, akcyzy i VAT na auto z zagranicy | CarImport.eu",
+      "title": "Kalkulator cła, akcyzy i VAT na auto z zagranicy | Carglo",
       "description": "Wybierz kraj, aukcję, port odprawy i parametry auta — kalkulator na żywo pokaże przedział kosztów i strukturę: cena, transport, cło, akcyza, VAT, rejestracja."
     },
     "privacy": {
-      "title": "Polityka prywatności | CarImport.eu",
-      "description": "Jak przetwarzamy dane osobowe w serwisie CarImport.eu: płatności, raporty, zapytania do partnerów i pliki cookie."
+      "title": "Polityka prywatności | Carglo",
+      "description": "Jak przetwarzamy dane osobowe w serwisie Carglo: płatności, raporty, zapytania do partnerów i pliki cookie."
     },
     "about": {
-      "title": "O nas – niezależny kalkulator importu aut | CarImport.eu",
-      "description": "Kim jesteśmy, skąd bierzemy dane i jak zarabiamy. CarImport.eu nie sprzedaje ani nie sprowadza aut – liczy pełny koszt importu uczciwie i niezależnie."
+      "title": "O nas – niezależny kalkulator importu aut | Carglo",
+      "description": "Kim jesteśmy, skąd bierzemy dane i jak zarabiamy. Carglo nie sprzedaje ani nie sprowadza aut – liczy pełny koszt importu uczciwie i niezależnie."
     },
     "terms": {
-      "title": "Regulamin | CarImport.eu",
+      "title": "Regulamin | Carglo",
       "description": "Zasady korzystania z kalkulatora kosztów importu i zakupu raportu PDF: sprzedawca, płatność, dostarczenie, odstąpienie od umowy i reklamacje."
     }
   },
@@ -806,7 +806,7 @@
     "title": "Polityka prywatności",
     "s1": {
       "title": "Administrator danych",
-      "text": "Administratorem danych jest operator serwisu CarImport.eu. W sprawach ochrony danych skontaktuj się z nami pod adresem {{email}}."
+      "text": "Administratorem danych jest operator serwisu Carglo. W sprawach ochrony danych skontaktuj się z nami pod adresem {{email}}."
     },
     "s2": {
       "title": "Jakie dane przetwarzamy",
@@ -992,7 +992,7 @@
     "eyebrow": "O nas",
     "title1": "Liczymy import aut.",
     "title2": "Nie sprzedajemy ich.",
-    "lead": "CarImport.eu to niezależny kalkulator kosztów sprowadzenia samochodu spoza Unii Europejskiej. Powstał po to, żeby każdy – nie tylko handlarz z dziesięcioletnim doświadczeniem – wiedział przed zakupem, ile naprawdę zapłaci.",
+    "lead": "Carglo to niezależny kalkulator kosztów sprowadzenia samochodu spoza Unii Europejskiej. Powstał po to, żeby każdy – nie tylko handlarz z dziesięcioletnim doświadczeniem – wiedział przed zakupem, ile naprawdę zapłaci.",
     "story": {
       "eyebrow": "Skąd się wzięliśmy",
       "title": "Z frustracji ukrytymi kosztami",
@@ -1091,20 +1091,20 @@
       "origins": {
         "title": "Poradniki importu auta: USA, Kanada, Japonia, ZEA i Wielka Brytania",
         "lead": "Krok po kroku dla każdego kraju, w którym kupisz auto: aukcje, dokumenty, czas transportu, cło, VAT i rejestracja w Polsce – z prawdziwymi kosztami w kalkulatorze.",
-        "metaTitle": "Poradniki importu auta – USA, Kanada, Japonia, ZEA, UK | CarImport.eu",
+        "metaTitle": "Poradniki importu auta – USA, Kanada, Japonia, ZEA, UK | Carglo",
         "metaDescription": "Jak sprowadzić auto z USA, Kanady, Japonii, ZEA lub Wielkiej Brytanii do Polski: aukcje, dokumenty, transport, cło, akcyza, VAT i rejestracja krok po kroku."
       },
       "countries": {
         "title": "Import auta do krajów Unii Europejskiej",
         "lead": "Stawka VAT, podatek rejestracyjny, urząd, badanie techniczne i najbliższe porty odprawy dla wszystkich 27 państw UE.",
-        "metaTitle": "Import auta do krajów UE – VAT, rejestracja, porty | CarImport.eu",
+        "metaTitle": "Import auta do krajów UE – VAT, rejestracja, porty | Carglo",
         "metaDescription": "VAT importowy, podatki rejestracyjne, urzędy, badania techniczne i najbliższe porty dla wszystkich 27 krajów UE – porównaj i policz pełny koszt auta z importu.",
         "yours": "Twój kraj"
       },
       "ports": {
         "title": "Porty odprawy w UE dla aut z importu",
         "lead": "Wszystkie {{count}} porty morskie w UE, w których odprawisz auto spoza Unii: opłaty, VAT, czas rejsu z USA, Kanady, Japonii, ZEA i UK oraz odległości drogowe.",
-        "metaTitle": "{{count}} porty UE do importu aut – opłaty, VAT, czas rejsu | CarImport.eu",
+        "metaTitle": "{{count}} porty UE do importu aut – opłaty, VAT, czas rejsu | Carglo",
         "metaDescription": "Porównaj wszystkie {{count}} porty odprawy aut w UE: opłaty terminalowe i agencji celnej, VAT importowy, czas rejsu i odległość drogowa do Polski.",
         "sortedFrom": "Według odległości drogowej do: {{country}}"
       }
@@ -1167,7 +1167,7 @@
       },
       "USA": {
         "h1": "Import auta z USA do Polski",
-        "metaTitle": "Import auta z USA do Polski – koszty, cło, akcyza, VAT | CarImport.eu",
+        "metaTitle": "Import auta z USA do Polski – koszty, cło, akcyza, VAT | Carglo",
         "metaDescription": "Jak sprowadzić auto z USA do Polski: aukcje Copart i IAAI, czas transportu, 10% cła, akcyza, VAT, dokumenty i rejestracja. Policz pełny koszt w minutę.",
         "lead": "USA to największe źródło aut z importu: miliony pojazdów rocznie na Copart i IAAI, często w cenach dużo niższych niż w Polsce. Zobacz, jak wygląda cały proces i ile naprawdę kosztuje.",
         "why": "Ogromny wybór, niskie ceny aut uszkodzonych (salvage), mocne silniki i bogate wersje rzadkie w Europie. Haczyk: amerykańskie oświetlenie, a czasem licznik trzeba przerobić, a naprawa aut po szkodzie bywa droga.",
@@ -1185,7 +1185,7 @@
       },
       "CANADA": {
         "h1": "Import auta z Kanady do Polski",
-        "metaTitle": "Import auta z Kanady do Polski – koszty, cło, akcyza, VAT | CarImport.eu",
+        "metaTitle": "Import auta z Kanady do Polski – koszty, cło, akcyza, VAT | Carglo",
         "metaDescription": "Sprowadzenie auta z Kanady: Copart i IAAI Canada, transport z Halifax i Montrealu, 10% cła, akcyza, VAT, dokumenty i rejestracja. Kalkulator pełnego kosztu.",
         "lead": "Kanadyjskie auta są podobne do amerykańskich, ale często lepiej przygotowane do zimy, z licznikami w km/h i tańsze w dolarach kanadyjskich. Rejs z Halifax i Montrealu do Europy to jedna z najkrótszych tras przez Atlantyk.",
         "why": "Liczniki metryczne, pakiety zimowe, podgrzewacze silnika i dobre zabezpieczenie antykorozyjne; ceny w CAD bywają niższe niż w USA za ten sam model.",
@@ -1203,7 +1203,7 @@
       },
       "JAPAN": {
         "h1": "Import auta z Japonii do Polski",
-        "metaTitle": "Import auta z Japonii (JDM) do Polski – koszty, cło, VAT | CarImport.eu",
+        "metaTitle": "Import auta z Japonii (JDM) do Polski – koszty, cło, VAT | Carglo",
         "metaDescription": "Sprowadzenie auta JDM z Japonii: aukcje USS, arkusze aukcyjne, transport z Jokohamy, cło, akcyza, VAT, kierownica po prawej i rejestracja. Kalkulator kosztów.",
         "lead": "Japonia to ojczyzna aut JDM: niskie przebiegi, świetny stan i modele nigdy niesprzedawane w Europie. Arkusze aukcyjne opisują każde auto szczegółowo – ale kierownica jest po prawej, a podróż długa.",
         "why": "Bardzo dobry stan dzięki surowym przeglądom (shaken), rzetelne oceny aukcyjne i unikalne auta sportowe oraz kei cars. Ceny w jenach są atrakcyjne.",
@@ -1221,7 +1221,7 @@
       },
       "UAE": {
         "h1": "Import auta z Dubaju (ZEA) do Polski",
-        "metaTitle": "Import auta z Dubaju (ZEA) do Polski – koszty, cło, VAT | CarImport.eu",
+        "metaTitle": "Import auta z Dubaju (ZEA) do Polski – koszty, cło, VAT | Carglo",
         "metaDescription": "Sprowadzenie auta z Dubaju i ZEA: Emirates Auction i dealerzy, specyfikacja GCC, transport z Jebel Ali, cło, akcyza, VAT i rejestracja. Kalkulator kosztów.",
         "lead": "Dubaj to rynek aut premium i sportowych z niskim przebiegiem, często prawie nieużywanych. Auta w specyfikacji GCC są przystosowane do upałów i sprzedawane w atrakcyjnych cenach.",
         "why": "Modele luksusowe i sportowe, niskie przebiegi i suchy klimat (brak korozji). Kurs dirhama jest powiązany z dolarem.",
@@ -1239,7 +1239,7 @@
       },
       "UK": {
         "h1": "Import auta z Wielkiej Brytanii do Polski",
-        "metaTitle": "Import auta z UK po Brexicie – koszty, cło, akcyza, VAT | CarImport.eu",
+        "metaTitle": "Import auta z UK po Brexicie – koszty, cło, akcyza, VAT | Carglo",
         "metaDescription": "Sprowadzenie auta z Wielkiej Brytanii po Brexicie: cło i preferencyjne pochodzenie, VAT, akcyza, kierownica po prawej, krótki transport i rejestracja.",
         "lead": "Po Brexicie auto z Wielkiej Brytanii to import spoza UE: obowiązuje zgłoszenie celne, cło i VAT importowy. Podróż jest krótka, a auta wyprodukowane w UK lub UE mogą mieć 0% cła.",
         "why": "Duży rynek aut używanych, dobre historie serwisowe i krótki transport RoRo lub promem. Trzeba wziąć pod uwagę kierownicę po prawej.",
@@ -1258,7 +1258,7 @@
     },
     "country": {
       "h1": "{{country}}: import auta spoza UE",
-      "metaTitle": "{{country}} – import auta: VAT {{vat}}%, rejestracja, porty | CarImport.eu",
+      "metaTitle": "{{country}} – import auta: VAT {{vat}}%, rejestracja, porty | Carglo",
       "metaDescription": "Import auta z USA, Kanady, Japonii, ZEA lub UK – kraj docelowy: {{country}}. VAT importowy {{vat}}%, rejestracja, badanie, najbliższe porty i pełny koszt.",
       "lead": "Wszystko, co ważne przy rejestracji auta z importu – kraj: {{country}}. Podatki, urzędy, badanie techniczne i najtańsze porty.",
       "facts": {
@@ -1290,7 +1290,7 @@
     },
     "port": {
       "h1": "Port {{port}} ({{country}}): odprawa celna auta z importu",
-      "metaTitle": "{{port}} – import auta, odprawa celna, VAT {{vat}}% | CarImport.eu",
+      "metaTitle": "{{port}} – import auta, odprawa celna, VAT {{vat}}% | Carglo",
       "metaDescription": "Odprawa auta w porcie {{port}} ({{country}}): opłaty terminalowe i agencji celnej, VAT importowy {{vat}}%, czas rejsu z USA, Japonii i ZEA, odległości.",
       "lead": "{{port}} to port odprawy – kraj: {{country}}. Sprawdź opłaty, czas rejsu i odległości drogowe – i czy opłaca się tu odprawić auto.",
       "facts": {
@@ -1329,7 +1329,7 @@
   "blog": {
     "title": "Blog o imporcie aut",
     "lead": "Praktyczne artykuły o sprowadzaniu aut z USA, Kanady, Japonii, ZEA i Wielkiej Brytanii: realne koszty, aukcje, cło, akcyza, rejestracja i błędy, których warto uniknąć.",
-    "metaTitle": "Blog o imporcie aut – koszty, aukcje, cło, rejestracja | CarImport.eu",
+    "metaTitle": "Blog o imporcie aut – koszty, aukcje, cło, rejestracja | Carglo",
     "metaDescription": "Poradniki i artykuły o sprowadzaniu auta do Polski: ile naprawdę kosztuje import, jak kupić na Copart i IAAI, cło, akcyza, VAT i rejestracja.",
     "all": "Wszystkie",
     "minutes": "{{n}} min czytania",

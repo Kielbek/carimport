@@ -1,4 +1,4 @@
-# CarImport.eu – kalkulator kosztów importu pojazdów do UE
+# Carglo – kalkulator kosztów importu pojazdów do UE
 
 SaaS do wyceny importu aut z USA, Kanady, Japonii, ZEA i UK do dowolnego kraju UE: opłaty aukcyjne, transport,
 wartość celna CIF, cło (TARIC), akcyza, VAT importowy zależny od portu odprawy, rejestracja.

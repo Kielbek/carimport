@@ -177,7 +177,7 @@
     "name": "Nom et prénom",
     "phone": "Téléphone (facultatif)",
     "submit": "Envoyer la demande",
-    "subtitle": "CarImport.eu n’importe pas de voitures. Si vous le souhaitez, nous transmettrons votre estimation à une société d’importation vérifiée, qui vous préparera une offre. Sans engagement.",
+    "subtitle": "Carglo n’importe pas de voitures. Si vous le souhaitez, nous transmettrons votre estimation à une société d’importation vérifiée, qui vous préparera une offre. Sans engagement.",
     "thanks": "Merci !",
     "thanksHint": "La société d’importation vous recontactera sous 1 jour ouvré.",
     "title": "Demande à une société d’importation (facultatif)"
@@ -555,7 +555,7 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu —",
+        "title": "Carglo —",
         "text": "calculateur d’importation indépendant"
       },
       "instant": {
@@ -584,7 +584,7 @@
       "days": "jours"
     },
     "numbers": {
-      "eyebrow": "CarImport.eu en chiffres",
+      "eyebrow": "Carglo en chiffres",
       "title": "Les chiffres derrière chaque estimation",
       "n1": {
         "value": "5",
@@ -769,7 +769,7 @@
       "a": "Non. Il s’agit d’une estimation fondée sur les taux et barèmes en vigueur. Les montants définitifs sont fixés par la douane et l’administration fiscale, qui peuvent par exemple vérifier la valeur en douane. Le rapport liste toutes les hypothèses, ce qui permet de le comparer facilement à la décision officielle."
     },
     "q9": {
-      "q": "CarImport.eu importe-t-il des voitures ?",
+      "q": "Carglo importe-t-il des voitures ?",
       "a": "Non. Nous sommes uniquement un calculateur – nous n’achetons, n’expédions ni ne dédouanons de voitures, et nous ne touchons aucune commission des enchères ou des transporteurs. Cela garantit l’indépendance de l’estimation. Si vous le souhaitez, vous pouvez transmettre l’estimation à une société d’importation vérifiée, mais c’est toujours votre choix."
     }
   },
@@ -781,23 +781,23 @@
   },
   "seo": {
     "home": {
-      "title": "Calculateur du coût d’importation automobile – USA, Japon, Dubaï vers l’UE | CarImport.eu",
+      "title": "Calculateur du coût d’importation automobile – USA, Japon, Dubaï vers l’UE | Carglo",
       "description": "Calculateur indépendant pour importer une voiture des États-Unis, du Canada, du Japon, des EAU et du Royaume-Uni : enchère, transport, droits de douane, accise, TVA, immatriculation et risques. Estimation immédiate, sans inscription."
     },
     "calculator": {
-      "title": "Calculateur de droits de douane, accise et TVA pour voitures importées | CarImport.eu",
+      "title": "Calculateur de droits de douane, accise et TVA pour voitures importées | Carglo",
       "description": "Choisissez le pays, l’enchère, le port et le véhicule — le calculateur en direct affiche la fourchette et le détail des coûts : prix, transport, droits de douane, accise, TVA et immatriculation."
     },
     "privacy": {
-      "title": "Politique de confidentialité | CarImport.eu",
-      "description": "Comment CarImport.eu traite les données personnelles : paiements, rapports, demandes aux partenaires et cookies."
+      "title": "Politique de confidentialité | Carglo",
+      "description": "Comment Carglo traite les données personnelles : paiements, rapports, demandes aux partenaires et cookies."
     },
     "about": {
-      "title": "À propos – un calculateur indépendant d’importation automobile | CarImport.eu",
-      "description": "Qui nous sommes, d’où viennent nos données et comment nous gagnons de l’argent. CarImport.eu ne vend ni n’importe de voitures – il calcule le coût complet d’importation de manière honnête et indépendante."
+      "title": "À propos – un calculateur indépendant d’importation automobile | Carglo",
+      "description": "Qui nous sommes, d’où viennent nos données et comment nous gagnons de l’argent. Carglo ne vend ni n’importe de voitures – il calcule le coût complet d’importation de manière honnête et indépendante."
     },
     "terms": {
-      "title": "Conditions générales | CarImport.eu",
+      "title": "Conditions générales | Carglo",
       "description": "Conditions générales du calculateur de frais d’importation de voitures et du rapport PDF : vendeur, paiement, fourniture, rétractation et réclamations."
     }
   },
@@ -806,7 +806,7 @@
     "title": "Politique de confidentialité",
     "s1": {
       "title": "Responsable du traitement",
-      "text": "Le responsable du traitement des données est l’exploitant de CarImport.eu. Pour toute question relative à la protection des données, contactez-nous à {{email}}."
+      "text": "Le responsable du traitement des données est l’exploitant de Carglo. Pour toute question relative à la protection des données, contactez-nous à {{email}}."
     },
     "s2": {
       "title": "Quelles données nous traitons",
@@ -992,7 +992,7 @@
     "eyebrow": "À propos",
     "title1": "Nous calculons l’importation de voitures.",
     "title2": "Nous ne vendons pas de voitures.",
-    "lead": "CarImport.eu est un calculateur indépendant du coût de l’importation d’une voiture depuis l’extérieur de l’Union européenne. Nous l’avons créé pour que chacun – et pas seulement un professionnel avec dix ans d’expérience – sache avant d’acheter ce qu’il paiera vraiment.",
+    "lead": "Carglo est un calculateur indépendant du coût de l’importation d’une voiture depuis l’extérieur de l’Union européenne. Nous l’avons créé pour que chacun – et pas seulement un professionnel avec dix ans d’expérience – sache avant d’acheter ce qu’il paiera vraiment.",
     "story": {
       "eyebrow": "Comment tout a commencé",
       "title": "Par frustration face aux coûts cachés",
@@ -1091,20 +1091,20 @@
       "origins": {
         "title": "Guides d’importation de voiture : États-Unis, Canada, Japon, Émirats et Royaume-Uni",
         "lead": "Des guides étape par étape pour chaque pays où acheter une voiture : enchères, documents, délais de transport, droits de douane, TVA et immatriculation en France – avec les coûts réels dans votre calculateur.",
-        "metaTitle": "Guides import auto – États-Unis, Canada, Japon, EAU, UK | CarImport.eu",
+        "metaTitle": "Guides import auto – États-Unis, Canada, Japon, EAU, UK | Carglo",
         "metaDescription": "Importer une voiture des États-Unis, du Canada, du Japon, des EAU ou du Royaume-Uni en France : enchères, documents, transport, douane, TVA et immatriculation."
       },
       "countries": {
         "title": "Importer une voiture dans chaque pays de l’UE",
         "lead": "Taux de TVA, taxe d’immatriculation, autorité compétente, contrôle technique et ports de dédouanement les plus proches pour les 27 États membres de l’UE.",
-        "metaTitle": "Import auto dans les pays de l’UE – TVA, immatriculation, ports | CarImport.eu",
+        "metaTitle": "Import auto dans les pays de l’UE – TVA, immatriculation, ports | Carglo",
         "metaDescription": "TVA à l’importation, taxes d’immatriculation, autorités, contrôles et ports les plus proches pour les 27 pays de l’UE – comparez et calculez le coût total.",
         "yours": "Votre pays"
       },
       "ports": {
         "title": "Ports de dédouanement de l’UE pour les voitures importées",
         "lead": "Les {{count}} ports maritimes de l’UE où sont dédouanées les voitures venant de pays tiers : frais, TVA, temps de traversée depuis les États-Unis, le Canada, le Japon, les EAU et le Royaume-Uni, et distances routières.",
-        "metaTitle": "{{count}} ports UE pour l’import auto – frais, TVA, traversée | CarImport.eu",
+        "metaTitle": "{{count}} ports UE pour l’import auto – frais, TVA, traversée | Carglo",
         "metaDescription": "Comparez les {{count}} ports de dédouanement auto de l’UE : frais de terminal et d’agent en douane, TVA à l’importation, traversées et distance jusqu’en France.",
         "sortedFrom": "Triés par distance routière vers : {{country}}"
       }
@@ -1167,7 +1167,7 @@
       },
       "USA": {
         "h1": "Importer une voiture des États-Unis en France",
-        "metaTitle": "Importer une voiture des USA en France – coûts, douane, TVA | CarImport.eu",
+        "metaTitle": "Importer une voiture des USA en France – coûts, douane, TVA | Carglo",
         "metaDescription": "Importer une voiture des États-Unis : enchères Copart et IAAI, délai de transport, 10 % de droits, TVA, documents et immatriculation. Coût total en une minute.",
         "lead": "Les États-Unis sont la première source de voitures importées : des millions de véhicules chaque année sur Copart et IAAI, souvent bien moins chers que sur le marché européen. Voici comment se déroule tout le processus et ce qu’il coûte vraiment.",
         "why": "Un choix immense, des prix bas pour les véhicules accidentés (salvage), des moteurs puissants et des versions bien équipées, rares en Europe. Le revers : l’éclairage américain et parfois le compteur doivent être adaptés, et la réparation d’un véhicule salvage peut coûter cher.",
@@ -1185,7 +1185,7 @@
       },
       "CANADA": {
         "h1": "Importer une voiture du Canada en France",
-        "metaTitle": "Importer une voiture du Canada en France – coûts, douane, TVA | CarImport.eu",
+        "metaTitle": "Importer une voiture du Canada en France – coûts, douane, TVA | Carglo",
         "metaDescription": "Importer une voiture du Canada : Copart et IAAI Canada, expédition depuis Halifax et Montréal, 10 % de droits, TVA, documents, immatriculation. Calculateur.",
         "lead": "Les voitures canadiennes ressemblent aux américaines, mais sont souvent mieux équipées pour l’hiver, avec des compteurs métriques et des prix plus bas en dollars canadiens. La traversée depuis Halifax et Montréal vers l’Europe est l’une des plus courtes de l’Atlantique.",
         "why": "Instruments métriques, packs hiver, chauffe-moteurs et bonne protection anticorrosion ; les prix en CAD sont souvent inférieurs à ceux des États-Unis pour le même modèle.",
@@ -1203,7 +1203,7 @@
       },
       "JAPAN": {
         "h1": "Importer une voiture du Japon en France",
-        "metaTitle": "Importer une JDM du Japon en France – coûts, douane, TVA | CarImport.eu",
+        "metaTitle": "Importer une JDM du Japon en France – coûts, douane, TVA | Carglo",
         "metaDescription": "Importer une JDM du Japon : enchères USS, fiches d’enchère, expédition depuis Yokohama, douane, TVA, conduite à droite et immatriculation. Calculateur de coût.",
         "lead": "Le Japon est le berceau des voitures JDM : faible kilométrage, excellent état et modèles jamais vendus en Europe. Les fiches d’enchère décrivent chaque voiture en détail – mais le volant est à droite et le voyage est long.",
         "why": "Très bon état grâce à des contrôles stricts (shaken), des notations d’enchère fiables et des sportives et kei cars uniques. Les prix en yens sont attractifs.",
@@ -1221,7 +1221,7 @@
       },
       "UAE": {
         "h1": "Importer une voiture de Dubaï (Émirats arabes unis) en France",
-        "metaTitle": "Importer une voiture de Dubaï (EAU) en France – coûts, TVA | CarImport.eu",
+        "metaTitle": "Importer une voiture de Dubaï (EAU) en France – coûts, TVA | Carglo",
         "metaDescription": "Importer une voiture de Dubaï et des EAU : Emirates Auction et concessionnaires, spécification GCC, expédition depuis Jebel Ali, douane, TVA, immatriculation.",
         "lead": "Dubaï est un marché de voitures premium et sportives à faible kilométrage, souvent à peine utilisées. Les voitures en spécification GCC sont conçues pour la chaleur et vendues à des prix attractifs.",
         "why": "Modèles de luxe et sportifs, faible kilométrage et climat sec (pas de rouille). Le dirham est arrimé au dollar américain.",
@@ -1239,7 +1239,7 @@
       },
       "UK": {
         "h1": "Importer une voiture du Royaume-Uni en France",
-        "metaTitle": "Importer une voiture du Royaume-Uni en France après le Brexit | CarImport.eu",
+        "metaTitle": "Importer une voiture du Royaume-Uni en France après le Brexit | Carglo",
         "metaDescription": "Importer une voiture du Royaume-Uni après le Brexit : droits de douane et origine préférentielle, TVA, conduite à droite, transport court et immatriculation.",
         "lead": "Depuis le Brexit, une voiture du Royaume-Uni est une importation d’un pays tiers : déclaration en douane, droits de douane et TVA à l’importation s’appliquent. Le trajet est court, et les voitures fabriquées au Royaume-Uni ou dans l’UE peuvent bénéficier de 0 % de droits.",
         "why": "Un vaste marché de l’occasion, de bons historiques d’entretien et un transport court en RoRo ou en ferry. La conduite à droite est à prendre en compte.",
@@ -1258,7 +1258,7 @@
     },
     "country": {
       "h1": "{{country}} : importer une voiture d’un pays hors UE",
-      "metaTitle": "{{country}} – import auto : TVA {{vat}} %, immatriculation, ports | CarImport.eu",
+      "metaTitle": "{{country}} – import auto : TVA {{vat}} %, immatriculation, ports | Carglo",
       "metaDescription": "Import d’une voiture des États-Unis, du Canada, du Japon, des EAU ou du Royaume-Uni – pays : {{country}}. TVA {{vat}} %, immatriculation, ports, coût total.",
       "lead": "Tout ce qui compte pour immatriculer une voiture importée – pays : {{country}}. Taxes, autorités, contrôle technique et ports les moins chers.",
       "facts": {
@@ -1290,7 +1290,7 @@
     },
     "port": {
       "h1": "{{port}} ({{country}}) : dédouanement des voitures importées",
-      "metaTitle": "{{port}} – import auto, dédouanement, TVA {{vat}} % | CarImport.eu",
+      "metaTitle": "{{port}} – import auto, dédouanement, TVA {{vat}} % | Carglo",
       "metaDescription": "Dédouaner une voiture au port : {{port}} ({{country}}). Frais de terminal et d’agent, TVA {{vat}} %, traversées depuis USA, Japon et EAU, distances.",
       "lead": "{{port}} est un port de dédouanement – pays : {{country}}. Voici ses frais, ses temps de traversée et ses distances routières – et s’il vaut la peine d’y dédouaner votre voiture.",
       "facts": {
@@ -1329,7 +1329,7 @@
   "blog": {
     "title": "Blog sur l’importation de voitures",
     "lead": "Des articles pratiques sur l’importation de voitures des USA, du Canada, du Japon, des Émirats et du Royaume-Uni : coûts réels, enchères, douane, immatriculation et erreurs à éviter.",
-    "metaTitle": "Blog import auto – coûts, enchères, douane, carte grise | CarImport.eu",
+    "metaTitle": "Blog import auto – coûts, enchères, douane, carte grise | Carglo",
     "metaDescription": "Guides et articles sur l’importation d’une voiture dans l’UE : combien ça coûte vraiment, comment acheter sur Copart et IAAI, droits de douane, TVA et immatriculation.",
     "all": "Tous",
     "minutes": "{{n}} min de lecture",

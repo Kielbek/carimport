@@ -99,8 +99,8 @@ class ReportMailerTest {
         when(provider.getIfAvailable()).thenReturn(smtp);
         when(provider.getObject()).thenReturn(smtp);
         AppProperties props = new AppProperties("https://carimport.eu", List.of("pl"), null, null, List.of(), null, null,
-                new AppProperties.Mail("CarImport.eu <raport@carimport.eu>", "kontakt@carimport.eu"),
-                new AppProperties.Company("CarImport Sp. z o.o.", "ul. Testowa 1, 00-001 Warszawa", "NIP 1234567890",
+                new AppProperties.Mail("Carglo <raport@carimport.eu>", "kontakt@carimport.eu"),
+                new AppProperties.Company("Carglo Sp. z o.o.", "ul. Testowa 1, 00-001 Warszawa", "NIP 1234567890",
                         "kontakt@carimport.eu"));
         return new ReportMailer(orders, quotes, storage, provider, engine, messages, props,
                 Clock.fixed(NOW, ZoneOffset.UTC), host);
@@ -116,7 +116,7 @@ class ReportMailerTest {
         assertThat(m.getAllRecipients()[0].toString()).isEqualTo("jan@example.com");
 
         String body = bodies((Multipart) m.getContent());
-        assertThat(body).contains("Dzień dobry Jan Kowalski", "CarImport Sp. z o.o.", "NIP 1234567890",
+        assertThat(body).contains("Dzień dobry Jan Kowalski", "Carglo Sp. z o.o.", "NIP 1234567890",
                 "regulamin w wersji z dnia 2026-10-24",
                 "import-report-" + order.getId() + ".pdf");
         Matcher link = Pattern.compile("https://carimport\\.eu/pl/report/" + order.getId() + "#token=([A-Za-z0-9_-]{43})")

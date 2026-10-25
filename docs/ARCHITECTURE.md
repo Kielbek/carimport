@@ -1,4 +1,4 @@
-# Architektura CarImport.eu
+# Architektura Carglo
 
 Dokument opisuje cztery filary systemu: **model danych**, **silnik kalkulacyjny**, **frontend z Angular Signals**
 oraz **i18n + płatności (Stripe → PDF)**. Każda sekcja wskazuje pliki, w których rozwiązanie jest zaimplementowane.
@@ -316,7 +316,7 @@ frontend/src/app/
   wycenę: hero („Policz import auta, zanim zalicytujesz”), *Dlaczego warto* (od ręki, niezależnie, 43 porty, scenariusze,
   koszty po imporcie, raport), *Co uwzględniamy* (5 grup, 22 pozycje), tabela porównania z liczeniem na własną rękę
   i wyceną pośrednika, mapa, liczby, *Jak to działa*, koszty i porty, cennik (trzecia kolumna to oferta B2B dla firm
-  importowych), FAQ (w tym „Czy CarImport.eu sprowadza auta?”) i końcowe CTA. Każda sekcja kończy się wejściem do kalkulatora.
+  importowych), FAQ (w tym „Czy Carglo sprowadza auta?”) i końcowe CTA. Każda sekcja kończy się wejściem do kalkulatora.
 * **„O nas”** (`/pl/o-nas`, `/en/about`, `/de/ueber-uns`, `/uk/pro-nas`): historia, czym jesteśmy i czym nie jesteśmy,
   źródła danych, jawny model przychodów (raport, opcjonalne zapytanie do firmy importowej za zgodą, oznaczone linki partnerskie),
   wartości. JSON-LD `AboutPage`.

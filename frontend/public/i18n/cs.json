@@ -177,7 +177,7 @@
     "name": "Jméno a příjmení",
     "phone": "Telefon (nepovinné)",
     "submit": "Odeslat poptávku",
-    "subtitle": "CarImport.eu auta nedováží. Pokud si to přejete, předáme vaši kalkulaci jedné ověřené dovozní firmě, která vám připraví nabídku. Bez závazků.",
+    "subtitle": "Carglo auta nedováží. Pokud si to přejete, předáme vaši kalkulaci jedné ověřené dovozní firmě, která vám připraví nabídku. Bez závazků.",
     "thanks": "Děkujeme!",
     "thanksHint": "Dovozní firma se vám ozve do 1 pracovního dne.",
     "title": "Poptávka u dovozní firmy (nepovinné)"
@@ -555,7 +555,7 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu —",
+        "title": "Carglo —",
         "text": "nezávislá kalkulačka dovozu"
       },
       "instant": {
@@ -584,7 +584,7 @@
       "days": "dní"
     },
     "numbers": {
-      "eyebrow": "CarImport.eu v číslech",
+      "eyebrow": "Carglo v číslech",
       "title": "Čísla za každou kalkulací",
       "n1": {
         "value": "5",
@@ -769,7 +769,7 @@
       "a": "Ne. Jde o odhad založený na aktuálních sazbách a cenících. Konečné částky stanoví celní a finanční úřad, který může například ověřit celní hodnotu. Report uvádí všechny předpoklady, takže je snadné jej porovnat s úředním rozhodnutím."
     },
     "q9": {
-      "q": "Dováží CarImport.eu auta?",
+      "q": "Dováží Carglo auta?",
       "a": "Ne. Jsme pouze kalkulačka – auta nekupujeme, nepřepravujeme ani neproclíváme a nebereme provize od aukcí ani dopravců. Díky tomu je odhad nezávislý. Pokud chcete, můžete kalkulaci předat ověřené dovozní firmě, ale vždy je to jen vaše volba."
     }
   },
@@ -781,23 +781,23 @@
   },
   "seo": {
     "home": {
-      "title": "Kalkulačka nákladů na dovoz auta – z USA, Japonska, Dubaje do EU | CarImport.eu",
+      "title": "Kalkulačka nákladů na dovoz auta – z USA, Japonska, Dubaje do EU | Carglo",
       "description": "Nezávislá kalkulačka dovozu auta z USA, Kanady, Japonska, SAE a Velké Británie: aukce, přeprava, clo, spotřební daň, DPH, registrace a rizika. Okamžitý odhad, bez registrace."
     },
     "calculator": {
-      "title": "Kalkulačka cla, spotřební daně a DPH pro dovezená auta | CarImport.eu",
+      "title": "Kalkulačka cla, spotřební daně a DPH pro dovezená auta | Carglo",
       "description": "Vyberte zemi, aukci, přístav a vozidlo — živá kalkulačka ukáže rozpětí a rozpis nákladů: cena, přeprava, clo, spotřební daň, DPH a registrace."
     },
     "privacy": {
-      "title": "Zásady ochrany osobních údajů | CarImport.eu",
-      "description": "Jak CarImport.eu zpracovává osobní údaje: platby, reporty, poptávky pro partnery a cookies."
+      "title": "Zásady ochrany osobních údajů | Carglo",
+      "description": "Jak Carglo zpracovává osobní údaje: platby, reporty, poptávky pro partnery a cookies."
     },
     "about": {
-      "title": "O nás – nezávislá kalkulačka dovozu aut | CarImport.eu",
-      "description": "Kdo jsme, odkud bereme data a jak vyděláváme. CarImport.eu auta neprodává ani nedováží – poctivě a nezávisle počítá celkové náklady na dovoz."
+      "title": "O nás – nezávislá kalkulačka dovozu aut | Carglo",
+      "description": "Kdo jsme, odkud bereme data a jak vyděláváme. Carglo auta neprodává ani nedováží – poctivě a nezávisle počítá celkové náklady na dovoz."
     },
     "terms": {
-      "title": "Obchodní podmínky | CarImport.eu",
+      "title": "Obchodní podmínky | Carglo",
       "description": "Obchodní podmínky kalkulačky nákladů na dovoz aut a PDF reportu: prodávající, platba, dodání, odstoupení od smlouvy a reklamace."
     }
   },
@@ -806,7 +806,7 @@
     "title": "Zásady ochrany osobních údajů",
     "s1": {
       "title": "Správce údajů",
-      "text": "Správcem osobních údajů je provozovatel CarImport.eu. V záležitostech ochrany osobních údajů nás kontaktujte na {{email}}."
+      "text": "Správcem osobních údajů je provozovatel Carglo. V záležitostech ochrany osobních údajů nás kontaktujte na {{email}}."
     },
     "s2": {
       "title": "Jaké údaje zpracováváme",
@@ -992,7 +992,7 @@
     "eyebrow": "O nás",
     "title1": "Počítáme dovoz aut.",
     "title2": "Auta neprodáváme.",
-    "lead": "CarImport.eu je nezávislá kalkulačka nákladů na dovoz auta ze zemí mimo Evropskou unii. Vytvořili jsme ji, aby každý – nejen obchodník s desetiletou praxí – věděl už před koupí, kolik skutečně zaplatí.",
+    "lead": "Carglo je nezávislá kalkulačka nákladů na dovoz auta ze zemí mimo Evropskou unii. Vytvořili jsme ji, aby každý – nejen obchodník s desetiletou praxí – věděl už před koupí, kolik skutečně zaplatí.",
     "story": {
       "eyebrow": "Jak to začalo",
       "title": "Z frustrace ze skrytých nákladů",
@@ -1091,20 +1091,20 @@
       "origins": {
         "title": "Průvodci dovozem auta: USA, Kanada, Japonsko, SAE a Velká Británie",
         "lead": "Postup krok za krokem pro každou zemi, kde můžete auto koupit: aukce, doklady, doba přepravy, clo, DPH a registrace v Česku – se skutečnými náklady v kalkulačce.",
-        "metaTitle": "Průvodci dovozem auta – USA, Kanada, Japonsko, SAE, UK | CarImport.eu",
+        "metaTitle": "Průvodci dovozem auta – USA, Kanada, Japonsko, SAE, UK | Carglo",
         "metaDescription": "Jak dovézt auto z USA, Kanady, Japonska, SAE nebo Velké Británie do Česka: aukce, doklady, přeprava, clo, DPH a registrace krok za krokem."
       },
       "countries": {
         "title": "Dovoz auta do jednotlivých zemí EU",
         "lead": "Sazba DPH, registrační daň, registrační úřad, technická kontrola a nejbližší přístavy proclení pro všech 27 členských států EU.",
-        "metaTitle": "Dovoz auta do zemí EU – DPH, registrace, přístavy | CarImport.eu",
+        "metaTitle": "Dovoz auta do zemí EU – DPH, registrace, přístavy | Carglo",
         "metaDescription": "Dovozní DPH, registrační daně, úřady, technické kontroly a nejbližší přístavy pro všech 27 zemí EU – porovnejte a spočítejte celkovou cenu dovezeného auta.",
         "yours": "Vaše země"
       },
       "ports": {
         "title": "Přístavy proclení v EU pro dovážená auta",
         "lead": "Všechny námořní přístavy EU ({{count}}), kde se proclívají auta ze zemí mimo EU: poplatky, DPH, doba plavby z USA, Kanady, Japonska, SAE a UK a silniční vzdálenosti.",
-        "metaTitle": "Přístavy EU pro dovoz aut ({{count}}) – poplatky, DPH, plavba | CarImport.eu",
+        "metaTitle": "Přístavy EU pro dovoz aut ({{count}}) – poplatky, DPH, plavba | Carglo",
         "metaDescription": "Porovnejte všechny přístavy proclení aut v EU ({{count}}): poplatky terminálu a celního zástupce, dovozní DPH, doba plavby a silniční vzdálenost do Česka.",
         "sortedFrom": "Seřazeno podle silniční vzdálenosti do: {{country}}"
       }
@@ -1167,7 +1167,7 @@
       },
       "USA": {
         "h1": "Dovoz auta z USA do Česka",
-        "metaTitle": "Dovoz auta z USA do Česka – náklady, clo, DPH | CarImport.eu",
+        "metaTitle": "Dovoz auta z USA do Česka – náklady, clo, DPH | Carglo",
         "metaDescription": "Jak dovézt auto z USA do Česka: aukce Copart a IAAI, doba přepravy, 10% clo, dovozní DPH, doklady a registrace. Spočítejte celkovou cenu za minutu.",
         "lead": "USA jsou největším zdrojem dovážených aut: miliony vozidel ročně na Copart a IAAI, často za ceny hluboko pod evropským trhem. Podívejte se, jak celý proces vypadá a kolik skutečně stojí.",
         "why": "Obrovský výběr, nízké ceny poškozených (salvage) aut, silné motory a bohatě vybavené verze, které jsou v Evropě vzácné. Háček: americká světla a někdy i tachometr je nutné přestavět a oprava havarovaných aut může být drahá.",
@@ -1185,7 +1185,7 @@
       },
       "CANADA": {
         "h1": "Dovoz auta z Kanady do Česka",
-        "metaTitle": "Dovoz auta z Kanady do Česka – náklady, clo, DPH | CarImport.eu",
+        "metaTitle": "Dovoz auta z Kanady do Česka – náklady, clo, DPH | Carglo",
         "metaDescription": "Dovoz auta z Kanady do Česka: Copart a IAAI Canada, přeprava z Halifaxu a Montrealu, 10% clo, DPH, doklady a registrace. Kalkulačka celkových nákladů.",
         "lead": "Kanadská auta se podobají americkým, ale bývají lépe připravena na zimu, mají metrické tachometry a nižší ceny v kanadských dolarech. Plavba z Halifaxu a Montrealu do Evropy patří k nejkratším přes Atlantik.",
         "why": "Metrické přístroje, zimní pakety, předehřev motoru a dobrá ochrana proti korozi; ceny v CAD bývají u stejného modelu nižší než v USA.",
@@ -1203,7 +1203,7 @@
       },
       "JAPAN": {
         "h1": "Dovoz auta z Japonska do Česka",
-        "metaTitle": "Dovoz auta z Japonska do Česka – JDM, clo, DPH | CarImport.eu",
+        "metaTitle": "Dovoz auta z Japonska do Česka – JDM, clo, DPH | Carglo",
         "metaDescription": "Dovoz JDM auta z Japonska do Česka: aukce USS, aukční listy, přeprava z Jokohamy, clo, DPH, pravostranné řízení a registrace. Kalkulačka celkových nákladů.",
         "lead": "Japonsko je domovem JDM aut: nízký nájezd, výborný stav a modely, které se v Evropě nikdy neprodávaly. Aukční listy popisují každé auto do detailu – auta však mají řízení vpravo a cesta je dlouhá.",
         "why": "Velmi dobrý stav díky přísným kontrolám (shaken), poctivé aukční hodnocení a jedinečné sportovní a kei vozy. Ceny v jenech jsou atraktivní.",
@@ -1221,7 +1221,7 @@
       },
       "UAE": {
         "h1": "Dovoz auta z Dubaje (SAE) do Česka",
-        "metaTitle": "Dovoz auta z Dubaje (SAE) do Česka – náklady, clo, DPH | CarImport.eu",
+        "metaTitle": "Dovoz auta z Dubaje (SAE) do Česka – náklady, clo, DPH | Carglo",
         "metaDescription": "Dovoz auta z Dubaje a SAE do Česka: Emirates Auction a prodejci, specifikace GCC, přeprava z Jebel Ali, clo, DPH a registrace. Kalkulačka nákladů.",
         "lead": "Dubaj je trhem prémiových a sportovních aut s nízkým nájezdem, často téměř nepoužívaných. Auta ve specifikaci GCC jsou stavěná do horka a prodávají se za atraktivní ceny.",
         "why": "Luxusní a sportovní modely, nízký nájezd a suché klima (žádná koroze). Ceny v dirhamech jsou navázané na americký dolar.",
@@ -1239,7 +1239,7 @@
       },
       "UK": {
         "h1": "Dovoz auta z Velké Británie do Česka",
-        "metaTitle": "Dovoz auta z UK do Česka po brexitu – clo, DPH | CarImport.eu",
+        "metaTitle": "Dovoz auta z UK do Česka po brexitu – clo, DPH | Carglo",
         "metaDescription": "Dovoz auta z Velké Británie do Česka po brexitu: clo a preferenční původ, DPH, řízení vpravo, krátká přeprava a registrace. Kalkulačka celkových nákladů.",
         "lead": "Od brexitu je auto ze Spojeného království dovozem ze země mimo EU: platí celní prohlášení, clo a dovozní DPH. Cesta je krátká a auta vyrobená v UK nebo EU mohou mít nárok na nulové clo.",
         "why": "Velký trh ojetých aut, dobře doložená servisní historie a krátká přeprava lodí RoRo nebo trajektem. Je třeba počítat s řízením vpravo.",
@@ -1258,7 +1258,7 @@
     },
     "country": {
       "h1": "{{country}}: dovoz auta ze zemí mimo EU",
-      "metaTitle": "{{country}} – dovoz auta: DPH {{vat}} %, registrace, přístavy | CarImport.eu",
+      "metaTitle": "{{country}} – dovoz auta: DPH {{vat}} %, registrace, přístavy | Carglo",
       "metaDescription": "{{country}} – dovoz auta z USA, Kanady, Japonska, SAE nebo UK: dovozní DPH {{vat}} %, registrace, technická kontrola, nejbližší přístavy a celkové náklady.",
       "lead": "Vše důležité pro registraci dovezeného auta (země: {{country}}): daně, úřady, technická kontrola a nejlevnější přístavy.",
       "facts": {
@@ -1290,7 +1290,7 @@
     },
     "port": {
       "h1": "Přístav {{port}} ({{country}}): proclení dovážených aut",
-      "metaTitle": "{{port}} – dovoz auta, proclení, DPH {{vat}} % | CarImport.eu",
+      "metaTitle": "{{port}} – dovoz auta, proclení, DPH {{vat}} % | Carglo",
       "metaDescription": "Proclení dovezeného auta v přístavu {{port}} ({{country}}): poplatky terminálu a zástupce, dovozní DPH {{vat}} %, doba plavby z USA, Japonska a SAE, vzdálenosti.",
       "lead": "{{port}} je přístav proclení – {{country}}. Zde najdete jeho poplatky, dobu plavby a silniční vzdálenosti – a zda se vyplatí proclít auto právě tady.",
       "facts": {
@@ -1329,7 +1329,7 @@
   "blog": {
     "title": "Blog o dovozu aut",
     "lead": "Praktické články o dovozu aut z USA, Kanady, Japonska, SAE a Velké Británie: skutečné náklady, aukce, clo, registrace a chyby, kterým se vyhnout.",
-    "metaTitle": "Blog o dovozu aut – náklady, aukce, clo, registrace | CarImport.eu",
+    "metaTitle": "Blog o dovozu aut – náklady, aukce, clo, registrace | Carglo",
     "metaDescription": "Návody a články o dovozu auta do EU: kolik to skutečně stojí, jak koupit auto na Copartu a IAAI, clo, DPH a registrace v Česku.",
     "all": "Vše",
     "minutes": "{{n}} min čtení",

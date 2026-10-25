@@ -177,7 +177,7 @@
     "name": "Name",
     "phone": "Telefon (optional)",
     "submit": "Anfrage senden",
-    "subtitle": "CarImport.eu importiert keine Autos. Auf Wunsch geben wir Ihre Kalkulation an eine geprüfte Importfirma weiter, die ein Angebot erstellt. Unverbindlich.",
+    "subtitle": "Carglo importiert keine Autos. Auf Wunsch geben wir Ihre Kalkulation an eine geprüfte Importfirma weiter, die ein Angebot erstellt. Unverbindlich.",
     "thanks": "Vielen Dank!",
     "thanksHint": "Die Importfirma meldet sich innerhalb eines Werktags.",
     "title": "Anfrage an eine Importfirma (optional)"
@@ -555,7 +555,7 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu —",
+        "title": "Carglo —",
         "text": "unabhängiger Import-Rechner"
       },
       "instant": {
@@ -584,7 +584,7 @@
       "days": "Tage"
     },
     "numbers": {
-      "eyebrow": "CarImport.eu in Zahlen",
+      "eyebrow": "Carglo in Zahlen",
       "title": "Die Zahlen hinter jeder Kalkulation",
       "n1": {
         "value": "5",
@@ -769,7 +769,7 @@
       "a": "Nein. Es ist eine Schätzung auf Basis aktueller Sätze. Endgültige Beträge legen Zoll- und Finanzamt fest, die z. B. den Zollwert prüfen können. Der Bericht nennt alle Annahmen."
     },
     "q9": {
-      "q": "Importiert CarImport.eu Autos?",
+      "q": "Importiert Carglo Autos?",
       "a": "Nein. Wir sind ausschließlich ein Rechner – wir kaufen, transportieren und verzollen keine Autos und nehmen keine Provision von Auktionen oder Spediteuren. So bleibt die Kalkulation unabhängig. Auf Wunsch können Sie sie an eine geprüfte Importfirma weitergeben, das entscheiden immer Sie."
     }
   },
@@ -781,23 +781,23 @@
   },
   "seo": {
     "home": {
-      "title": "Autoimport-Rechner – USA, Japan, Dubai in die EU | CarImport.eu",
+      "title": "Autoimport-Rechner – USA, Japan, Dubai in die EU | Carglo",
       "description": "Unabhängiger Rechner für den Autoimport aus den USA, Kanada, Japan, den VAE und UK: Auktion, Transport, Zoll, Steuern, Zulassung und Risiken. Sofort, ohne Anmeldung."
     },
     "calculator": {
-      "title": "Rechner für Zoll, Verbrauchsteuer & USt beim Autoimport | CarImport.eu",
+      "title": "Rechner für Zoll, Verbrauchsteuer & USt beim Autoimport | Carglo",
       "description": "Land, Auktion, Hafen und Fahrzeug wählen — der Live-Rechner zeigt Kostenspanne und Struktur: Preis, Transport, Zoll, Verbrauchsteuer, USt, Zulassung."
     },
     "privacy": {
-      "title": "Datenschutzerklärung | CarImport.eu",
-      "description": "Wie CarImport.eu personenbezogene Daten verarbeitet: Zahlungen, Berichte, Partneranfragen und Cookies."
+      "title": "Datenschutzerklärung | Carglo",
+      "description": "Wie Carglo personenbezogene Daten verarbeitet: Zahlungen, Berichte, Partneranfragen und Cookies."
     },
     "about": {
-      "title": "Über uns – unabhängiger Auto-Import-Rechner | CarImport.eu",
-      "description": "Wer wir sind, woher unsere Daten stammen und wie wir Geld verdienen. CarImport.eu verkauft und importiert keine Autos – es berechnet die vollen Importkosten ehrlich und unabhängig."
+      "title": "Über uns – unabhängiger Auto-Import-Rechner | Carglo",
+      "description": "Wer wir sind, woher unsere Daten stammen und wie wir Geld verdienen. Carglo verkauft und importiert keine Autos – es berechnet die vollen Importkosten ehrlich und unabhängig."
     },
     "terms": {
-      "title": "AGB | CarImport.eu",
+      "title": "AGB | Carglo",
       "description": "Allgemeine Geschäftsbedingungen für den Importkostenrechner und den PDF-Bericht: Verkäufer, Zahlung, Lieferung, Widerruf und Reklamationen."
     }
   },
@@ -806,7 +806,7 @@
     "title": "Datenschutzerklärung",
     "s1": {
       "title": "Verantwortlicher",
-      "text": "Verantwortlich ist der Betreiber von CarImport.eu. Kontakt in Datenschutzfragen: {{email}}."
+      "text": "Verantwortlich ist der Betreiber von Carglo. Kontakt in Datenschutzfragen: {{email}}."
     },
     "s2": {
       "title": "Welche Daten wir verarbeiten",
@@ -992,7 +992,7 @@
     "eyebrow": "Über uns",
     "title1": "Wir rechnen Autoimporte.",
     "title2": "Wir verkaufen keine Autos.",
-    "lead": "CarImport.eu ist ein unabhängiger Rechner für die Kosten eines Autos von außerhalb der EU. Damit jeder – nicht nur ein Händler mit zehn Jahren Erfahrung – vor dem Kauf weiß, was er wirklich zahlt.",
+    "lead": "Carglo ist ein unabhängiger Rechner für die Kosten eines Autos von außerhalb der EU. Damit jeder – nicht nur ein Händler mit zehn Jahren Erfahrung – vor dem Kauf weiß, was er wirklich zahlt.",
     "story": {
       "eyebrow": "Wie alles begann",
       "title": "Aus Frust über versteckte Kosten",
@@ -1091,20 +1091,20 @@
       "origins": {
         "title": "Ratgeber Autoimport: USA, Kanada, Japan, VAE und Großbritannien",
         "lead": "Schritt-für-Schritt-Ratgeber für jedes Kaufland: Auktionen, Dokumente, Transportdauer, Zoll, Einfuhrumsatzsteuer und Zulassung in Deutschland – mit den echten Kosten im Rechner.",
-        "metaTitle": "Ratgeber Autoimport – USA, Kanada, Japan, VAE, UK | CarImport.eu",
+        "metaTitle": "Ratgeber Autoimport – USA, Kanada, Japan, VAE, UK | Carglo",
         "metaDescription": "Auto aus den USA, Kanada, Japan, den VAE oder UK nach Deutschland importieren: Auktionen, Dokumente, Transport, Zoll, EUSt und Zulassung Schritt für Schritt."
       },
       "countries": {
         "title": "Autoimport in die einzelnen EU-Länder",
         "lead": "Umsatzsteuersatz, Zulassungssteuer, Zulassungsbehörde, Fahrzeugprüfung und die nächsten Abfertigungshäfen für alle 27 EU-Mitgliedstaaten.",
-        "metaTitle": "Autoimport in EU-Länder – EUSt, Zulassung, Häfen | CarImport.eu",
+        "metaTitle": "Autoimport in EU-Länder – EUSt, Zulassung, Häfen | Carglo",
         "metaDescription": "Einfuhrumsatzsteuer, Zulassungssteuern, Behörden, Prüfungen und die nächsten Häfen für alle 27 EU-Länder – vergleichen und Importkosten berechnen.",
         "yours": "Ihr Land"
       },
       "ports": {
         "title": "EU-Abfertigungshäfen für Importautos",
         "lead": "Alle {{count}} EU-Seehäfen, in denen Autos aus Drittländern verzollt werden: Gebühren, Einfuhrumsatzsteuer, Fahrzeiten aus den USA, Kanada, Japan, den VAE und UK sowie Straßenentfernungen.",
-        "metaTitle": "{{count}} EU-Häfen für Autoimporte – Gebühren, EUSt, Fahrzeit | CarImport.eu",
+        "metaTitle": "{{count}} EU-Häfen für Autoimporte – Gebühren, EUSt, Fahrzeit | Carglo",
         "metaDescription": "Alle {{count}} EU-Abfertigungshäfen für Autos im Vergleich: Terminal- und Zollagenturgebühren, Einfuhrumsatzsteuer, Fahrzeiten und Entfernung nach Deutschland.",
         "sortedFrom": "Sortiert nach Straßenentfernung zu: {{country}}"
       }
@@ -1167,7 +1167,7 @@
       },
       "USA": {
         "h1": "Auto aus den USA nach Deutschland importieren",
-        "metaTitle": "Auto aus den USA nach Deutschland – Kosten, Zoll, EUSt | CarImport.eu",
+        "metaTitle": "Auto aus den USA nach Deutschland – Kosten, Zoll, EUSt | Carglo",
         "metaDescription": "Auto aus den USA nach Deutschland importieren: Copart und IAAI, Transportdauer, 10 % Zoll, Einfuhrumsatzsteuer, Dokumente, Zulassung. Gesamtkosten in 1 Minute.",
         "lead": "Die USA sind die größte Quelle für Importautos: Millionen Fahrzeuge jährlich bei Copart und IAAI, oft deutlich günstiger als auf dem europäischen Markt. So läuft der gesamte Prozess ab – und das kostet er wirklich.",
         "why": "Riesige Auswahl, niedrige Preise für Unfallwagen (Salvage), starke Motoren und gut ausgestattete Versionen, die in Europa selten sind. Der Haken: Die US-Beleuchtung und manchmal der Tacho müssen umgerüstet werden, und die Reparatur von Salvage-Fahrzeugen kann teuer werden.",
@@ -1185,7 +1185,7 @@
       },
       "CANADA": {
         "h1": "Auto aus Kanada nach Deutschland importieren",
-        "metaTitle": "Auto aus Kanada nach Deutschland – Kosten, Zoll, EUSt | CarImport.eu",
+        "metaTitle": "Auto aus Kanada nach Deutschland – Kosten, Zoll, EUSt | Carglo",
         "metaDescription": "Auto aus Kanada nach Deutschland: Copart und IAAI Canada, Verschiffung ab Halifax und Montreal, 10 % Zoll, EUSt, Dokumente, Zulassung. Gesamtkostenrechner.",
         "lead": "Kanadische Autos ähneln US-Fahrzeugen, sind aber oft besser für den Winter gerüstet, haben metrische Tachos und sind in kanadischen Dollar günstiger. Die Verschiffung ab Halifax und Montreal nach Europa gehört zu den kürzesten Atlantikrouten.",
         "why": "Metrische Kombiinstrumente, Winterpakete, Motorvorwärmer und guter Rostschutz; die Preise in CAD liegen für dasselbe Modell oft unter denen in den USA.",
@@ -1203,7 +1203,7 @@
       },
       "JAPAN": {
         "h1": "Auto aus Japan nach Deutschland importieren",
-        "metaTitle": "JDM-Auto aus Japan nach Deutschland – Kosten, Zoll, EUSt | CarImport.eu",
+        "metaTitle": "JDM-Auto aus Japan nach Deutschland – Kosten, Zoll, EUSt | Carglo",
         "metaDescription": "JDM-Auto aus Japan nach Deutschland: USS-Auktionen, Auction Sheets, Verschiffung ab Yokohama, Zoll, EUSt, Rechtslenker und Zulassung. Gesamtkostenrechner.",
         "lead": "Japan ist die Heimat der JDM-Autos: geringe Laufleistung, hervorragender Zustand und Modelle, die in Europa nie verkauft wurden. Auction Sheets beschreiben jedes Auto im Detail – allerdings sind es Rechtslenker und der Weg ist lang.",
         "why": "Sehr guter Zustand dank strenger Prüfungen (Shaken), ehrliche Auktionsbewertungen und einzigartige Sportwagen und Kei-Cars. Die Preise in Yen sind attraktiv.",
@@ -1221,7 +1221,7 @@
       },
       "UAE": {
         "h1": "Auto aus Dubai (VAE) nach Deutschland importieren",
-        "metaTitle": "Auto aus Dubai (VAE) nach Deutschland – Kosten, Zoll, EUSt | CarImport.eu",
+        "metaTitle": "Auto aus Dubai (VAE) nach Deutschland – Kosten, Zoll, EUSt | Carglo",
         "metaDescription": "Auto aus Dubai und den VAE nach Deutschland: Emirates Auction und Händler, GCC-Spezifikation, Verschiffung ab Jebel Ali, Zoll, EUSt, Zulassung. Kostenrechner.",
         "lead": "Dubai ist ein Markt für Premium- und Sportwagen mit geringer Laufleistung, oft kaum gefahren. Autos in GCC-Spezifikation sind für Hitze gebaut und werden zu attraktiven Preisen verkauft.",
         "why": "Luxus- und Sportmodelle, geringe Laufleistung und trockenes Klima (kein Rost). Der Dirham ist an den US-Dollar gekoppelt.",
@@ -1239,7 +1239,7 @@
       },
       "UK": {
         "h1": "Auto aus Großbritannien nach Deutschland importieren",
-        "metaTitle": "Auto aus UK nach Deutschland – Brexit, Kosten, Zoll, EUSt | CarImport.eu",
+        "metaTitle": "Auto aus UK nach Deutschland – Brexit, Kosten, Zoll, EUSt | Carglo",
         "metaDescription": "Auto aus Großbritannien nach dem Brexit importieren: Zoll und Präferenzursprung, EUSt, Rechtslenker, kurzer Transport und Zulassung in Deutschland.",
         "lead": "Seit dem Brexit ist ein Auto aus dem Vereinigten Königreich ein Import aus einem Drittland: Zollanmeldung, Zoll und Einfuhrumsatzsteuer fallen an. Der Weg ist kurz, und für in UK oder der EU hergestellte Autos kann 0 % Zoll gelten.",
         "why": "Großer Gebrauchtwagenmarkt, gute Servicehistorien und kurzer Transport per RoRo oder Fähre. Das Rechtslenkerthema sollte bedacht werden.",
@@ -1258,7 +1258,7 @@
     },
     "country": {
       "h1": "{{country}}: Auto aus Drittländern importieren",
-      "metaTitle": "{{country}} – Autoimport: EUSt {{vat}} %, Zulassung, Häfen | CarImport.eu",
+      "metaTitle": "{{country}} – Autoimport: EUSt {{vat}} %, Zulassung, Häfen | Carglo",
       "metaDescription": "Autoimport aus USA, Kanada, Japan, VAE oder UK – Zielland: {{country}}. Einfuhrumsatzsteuer {{vat}} %, Zulassung, Prüfung, nächste Häfen und Gesamtkosten.",
       "lead": "Alles, was bei der Zulassung eines Importautos zählt – Land: {{country}}. Steuern, Behörden, Prüfung und die günstigsten Häfen.",
       "facts": {
@@ -1290,7 +1290,7 @@
     },
     "port": {
       "h1": "Hafen {{port}} ({{country}}): Verzollung von Importautos",
-      "metaTitle": "{{port}} – Autoimport, Verzollung, EUSt {{vat}} % | CarImport.eu",
+      "metaTitle": "{{port}} – Autoimport, Verzollung, EUSt {{vat}} % | Carglo",
       "metaDescription": "Importauto im Hafen {{port}} ({{country}}) verzollen: Terminal- und Agenturgebühren, EUSt {{vat}} %, Fahrzeiten aus USA, Japan und VAE, Entfernungen.",
       "lead": "{{port}} ist ein Abfertigungshafen – Land: {{country}}. Hier finden Sie Gebühren, Fahrzeiten und Straßenentfernungen – und ob sich die Verzollung Ihres Autos hier lohnt.",
       "facts": {
@@ -1329,7 +1329,7 @@
   "blog": {
     "title": "Blog zum Autoimport",
     "lead": "Praktische Artikel zum Import von Autos aus den USA, Kanada, Japan, den VAE und Großbritannien: echte Kosten, Auktionen, Zoll, Zulassung und die Fehler, die Sie vermeiden sollten.",
-    "metaTitle": "Blog zum Autoimport – Kosten, Auktionen, Zoll, Zulassung | CarImport.eu",
+    "metaTitle": "Blog zum Autoimport – Kosten, Auktionen, Zoll, Zulassung | Carglo",
     "metaDescription": "Ratgeber und Artikel zum Autoimport in die EU: was es wirklich kostet, wie man bei Copart und IAAI kauft, Zoll, Einfuhrumsatzsteuer und Zulassung.",
     "all": "Alle",
     "minutes": "{{n}} Min. Lesezeit",

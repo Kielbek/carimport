@@ -177,7 +177,7 @@
     "name": "Ees- ja perekonnanimi",
     "phone": "Telefon (valikuline)",
     "submit": "Saada päring",
-    "subtitle": "CarImport.eu ise autosid ei impordi. Soovi korral edastame sinu kalkulatsiooni ühele kontrollitud impordiettevõttele, kes koostab sulle pakkumise. Ilma kohustusteta.",
+    "subtitle": "Carglo ise autosid ei impordi. Soovi korral edastame sinu kalkulatsiooni ühele kontrollitud impordiettevõttele, kes koostab sulle pakkumise. Ilma kohustusteta.",
     "thanks": "Aitäh!",
     "thanksHint": "Impordiettevõte võtab sinuga ühendust 1 tööpäeva jooksul.",
     "title": "Päring impordiettevõttele (valikuline)"
@@ -555,7 +555,7 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu —",
+        "title": "Carglo —",
         "text": "sõltumatu impordikalkulaator"
       },
       "instant": {
@@ -584,7 +584,7 @@
       "days": "päeva"
     },
     "numbers": {
-      "eyebrow": "CarImport.eu arvudes",
+      "eyebrow": "Carglo arvudes",
       "title": "Arvud iga kalkulatsiooni taga",
       "n1": {
         "value": "5",
@@ -769,7 +769,7 @@
       "a": "Ei. See on hinnang, mis põhineb kehtivatel määradel ja hinnakirjadel. Lõplikud summad määravad toll ja maksuamet, kes võivad näiteks tolliväärtust kontrollida. Raport loetleb kõik eeldused, nii et seda on lihtne ametliku otsusega võrrelda."
     },
     "q9": {
-      "q": "Kas CarImport.eu impordib autosid?",
+      "q": "Kas Carglo impordib autosid?",
       "a": "Ei. Oleme ainult kalkulaator – me ei osta, veda ega tollivormista autosid ega võta oksjonitelt või vedajatelt vahendustasu. Tänu sellele on hinnang sõltumatu. Soovi korral võid hinnangu edastada kontrollitud impordiettevõttele, kuid see on alati sinu valik."
     }
   },
@@ -781,23 +781,23 @@
   },
   "seo": {
     "home": {
-      "title": "Auto impordikulude kalkulaator – USA, Jaapan, Dubai → EL | CarImport.eu",
+      "title": "Auto impordikulude kalkulaator – USA, Jaapan, Dubai → EL | Carglo",
       "description": "Sõltumatu kalkulaator auto importimiseks USA-st, Kanadast, Jaapanist, AÜE-st ja Ühendkuningriigist: oksjon, vedu, tollimaks, aktsiis, käibemaks, registreerimine ja riskid. Kohene hinnang, ilma registreerumiseta."
     },
     "calculator": {
-      "title": "Imporditud autode tollimaksu, aktsiisi ja käibemaksu kalkulaator | CarImport.eu",
+      "title": "Imporditud autode tollimaksu, aktsiisi ja käibemaksu kalkulaator | Carglo",
       "description": "Vali riik, oksjon, sadam ja sõiduk — reaalajas kalkulaator näitab kulude vahemikku ja jaotust: hind, vedu, tollimaks, aktsiis, käibemaks ja registreerimine."
     },
     "privacy": {
-      "title": "Privaatsuspoliitika | CarImport.eu",
-      "description": "Kuidas CarImport.eu töötleb isikuandmeid: maksed, raportid, partneripäringud ja küpsised."
+      "title": "Privaatsuspoliitika | Carglo",
+      "description": "Kuidas Carglo töötleb isikuandmeid: maksed, raportid, partneripäringud ja küpsised."
     },
     "about": {
-      "title": "Meist – sõltumatu autode impordi kalkulaator | CarImport.eu",
-      "description": "Kes me oleme, kust pärinevad meie andmed ja kuidas me raha teenime. CarImport.eu ei müü ega impordi autosid – see arvutab kogu impordikulu ausalt ja sõltumatult."
+      "title": "Meist – sõltumatu autode impordi kalkulaator | Carglo",
+      "description": "Kes me oleme, kust pärinevad meie andmed ja kuidas me raha teenime. Carglo ei müü ega impordi autosid – see arvutab kogu impordikulu ausalt ja sõltumatult."
     },
     "terms": {
-      "title": "Tingimused | CarImport.eu",
+      "title": "Tingimused | Carglo",
       "description": "Autode impordikulude kalkulaatori ja PDF-raporti tingimused: müüja, makse, üleandmine, taganemine ja pretensioonid."
     }
   },
@@ -806,7 +806,7 @@
     "title": "Privaatsuspoliitika",
     "s1": {
       "title": "Vastutav töötleja",
-      "text": "Isikuandmete vastutav töötleja on CarImport.eu haldaja. Andmekaitse küsimustes võta meiega ühendust e-posti aadressil {{email}}."
+      "text": "Isikuandmete vastutav töötleja on Carglo haldaja. Andmekaitse küsimustes võta meiega ühendust e-posti aadressil {{email}}."
     },
     "s2": {
       "title": "Milliseid andmeid töötleme",
@@ -992,7 +992,7 @@
     "eyebrow": "Meist",
     "title1": "Arvutame autode importi.",
     "title2": "Autosid me ei müü.",
-    "lead": "CarImport.eu on sõltumatu kalkulaator, mis arvutab väljastpoolt Euroopa Liitu auto toomise kulu. Lõime selle, et igaüks – mitte ainult kümneaastase kogemusega edasimüüja – teaks enne ostu, kui palju ta tegelikult maksab.",
+    "lead": "Carglo on sõltumatu kalkulaator, mis arvutab väljastpoolt Euroopa Liitu auto toomise kulu. Lõime selle, et igaüks – mitte ainult kümneaastase kogemusega edasimüüja – teaks enne ostu, kui palju ta tegelikult maksab.",
     "story": {
       "eyebrow": "Kuidas see algas",
       "title": "Pettumusest varjatud kulude pärast",
@@ -1091,20 +1091,20 @@
       "origins": {
         "title": "Auto impordi juhendid: USA, Kanada, Jaapan, AÜE ja Ühendkuningriik",
         "lead": "Samm-sammulised juhendid iga riigi kohta, kust saad auto osta: oksjonid, dokumendid, transpordiaeg, tollimaks, käibemaks ja registreerimine Eestis – tegelike kuludega kalkulaatoris.",
-        "metaTitle": "Auto impordi juhendid – USA, Kanada, Jaapan, AÜE, UK | CarImport.eu",
+        "metaTitle": "Auto impordi juhendid – USA, Kanada, Jaapan, AÜE, UK | Carglo",
         "metaDescription": "Kuidas tuua auto Eestisse USAst, Kanadast, Jaapanist, AÜEst või Ühendkuningriigist: oksjonid, dokumendid, transport, toll, käibemaks ja registreerimine."
       },
       "countries": {
         "title": "Auto import igasse ELi riiki",
         "lead": "Käibemaksumäär, registreerimismaks, registreeriv asutus, ülevaatus ja lähimad tollivormistussadamad kõigi 27 ELi liikmesriigi kohta.",
-        "metaTitle": "Auto import ELi riikidesse – käibemaks, registreerimine | CarImport.eu",
+        "metaTitle": "Auto import ELi riikidesse – käibemaks, registreerimine | Carglo",
         "metaDescription": "Impordikäibemaks, registreerimismaksud, asutused, ülevaatused ja lähimad sadamad kõigis 27 ELi riigis – võrdle ja arvuta imporditud auto täishind.",
         "yours": "Sinu riik"
       },
       "ports": {
         "title": "ELi tollivormistussadamad imporditud autodele",
         "lead": "Kõik {{count}} ELi meresadamat, kus vormistatakse väljastpoolt ELi toodud autosid: tasud, käibemaks, laevasõidu kestus USAst, Kanadast, Jaapanist, AÜEst ja Ühendkuningriigist ning teekaugused.",
-        "metaTitle": "{{count}} ELi sadamat auto impordiks – tasud, käibemaks | CarImport.eu",
+        "metaTitle": "{{count}} ELi sadamat auto impordiks – tasud, käibemaks | Carglo",
         "metaDescription": "Võrdle kõiki {{count}} ELi autode tollivormistussadamat: terminali- ja tolliagendi tasud, impordikäibemaks, laevasõidu kestus ja teekaugus Eestisse.",
         "sortedFrom": "Sorteeritud teekauguse järgi riigini: {{country}}"
       }
@@ -1167,7 +1167,7 @@
       },
       "USA": {
         "h1": "Auto import USAst Eestisse",
-        "metaTitle": "Auto import USAst Eestisse – kulud, toll, käibemaks | CarImport.eu",
+        "metaTitle": "Auto import USAst Eestisse – kulud, toll, käibemaks | Carglo",
         "metaDescription": "Kuidas tuua auto USAst Eestisse: Copart ja IAAI oksjonid, transpordiaeg, 10% toll, käibemaks, dokumendid ja registreerimine. Arvuta täishind minutiga.",
         "lead": "USA on imporditud autode suurim allikas: Copartis ja IAAI-s on igal aastal miljoneid sõidukeid, sageli Euroopa turust tunduvalt odavamalt. Siin on näha, kuidas kogu protsess käib ja mis see tegelikult maksab.",
         "why": "Tohutu valik, madalad hinnad kahjustatud (salvage) autodele, võimsad mootorid ja hästi varustatud versioonid, mida Euroopas napib. Konks: USA tuled ja mõnikord ka spidomeeter tuleb ümber ehitada ning salvage-autode remont võib olla kallis.",
@@ -1185,7 +1185,7 @@
       },
       "CANADA": {
         "h1": "Auto import Kanadast Eestisse",
-        "metaTitle": "Auto import Kanadast Eestisse – kulud, toll, käibemaks | CarImport.eu",
+        "metaTitle": "Auto import Kanadast Eestisse – kulud, toll, käibemaks | Carglo",
         "metaDescription": "Auto import Kanadast: Copart ja IAAI Canada, vedu Halifaxist ja Montrealist, 10% toll, käibemaks, dokumendid ja registreerimine. Täiskulu kalkulaator.",
         "lead": "Kanada autod sarnanevad Ameerika omadega, kuid on sageli talveks paremini varustatud, meetermõõdustikus spidomeetriga ja Kanada dollarites odavamad. Laevavedu Halifaxist ja Montrealist Euroopasse on üks lühemaid üle Atlandi.",
         "why": "Meetermõõdustikus näidikud, talvepaketid, mootori eelsoojendid ja hea roostekaitse; CAD-hinnad on sama mudeli puhul sageli USA omadest madalamad.",
@@ -1203,7 +1203,7 @@
       },
       "JAPAN": {
         "h1": "Auto import Jaapanist Eestisse",
-        "metaTitle": "Auto import Jaapanist Eestisse – JDM kulud, toll, käibemaks | CarImport.eu",
+        "metaTitle": "Auto import Jaapanist Eestisse – JDM kulud, toll, käibemaks | Carglo",
         "metaDescription": "JDM-auto import Jaapanist: USS oksjonid, oksjonilehed, vedu Yokohamast, toll, käibemaks, parempoolne rool ja registreerimine. Täiskulu kalkulaator.",
         "lead": "Jaapan on JDM-autode kodu: väike läbisõit, suurepärane seisukord ja mudelid, mida Euroopas kunagi ei müüdud. Oksjonilehed kirjeldavad iga autot üksikasjalikult – kuid autod on parempoolse rooliga ja teekond on pikk.",
         "why": "Väga hea seisukord tänu rangetele ülevaatustele (shaken), ausale oksjonihindamisele ning ainulaadsetele sportautodele ja kei-autodele. Hinnad jeenides on atraktiivsed.",
@@ -1221,7 +1221,7 @@
       },
       "UAE": {
         "h1": "Auto import Dubaist (AÜE) Eestisse",
-        "metaTitle": "Auto import Dubaist (AÜE) Eestisse – kulud, toll, käibemaks | CarImport.eu",
+        "metaTitle": "Auto import Dubaist (AÜE) Eestisse – kulud, toll, käibemaks | Carglo",
         "metaDescription": "Auto import Dubaist ja AÜEst: Emirates Auction ja edasimüüjad, GCC spec, vedu Jebel Alist, toll, käibemaks ja registreerimine. Täiskulu kalkulaator.",
         "lead": "Dubai on väikese läbisõiduga, sageli vaevu kasutatud premium- ja sportautode turg. GCC-spetsifikatsiooniga autod on ehitatud kuumuse jaoks ja neid müüakse atraktiivse hinnaga.",
         "why": "Luksus- ja sportmudelid, väike läbisõit ja kuiv kliima (rooste puudub). Hinnad dirhamites on seotud USA dollariga.",
@@ -1239,7 +1239,7 @@
       },
       "UK": {
         "h1": "Auto import Ühendkuningriigist Eestisse",
-        "metaTitle": "Auto import Ühendkuningriigist pärast Brexitit – toll, käibemaks | CarImport.eu",
+        "metaTitle": "Auto import Ühendkuningriigist pärast Brexitit – toll, käibemaks | Carglo",
         "metaDescription": "Auto import Ühendkuningriigist Eestisse pärast Brexitit: tollimaks ja sooduspäritolu, käibemaks, parempoolne rool, lühike vedu ja registreerimine.",
         "lead": "Pärast Brexitit on Ühendkuningriigist toodud auto import väljastpoolt ELi: kehtivad tollideklaratsioon, tollimaks ja impordikäibemaks. Teekond on lühike ning Ühendkuningriigis või ELis valmistatud autod võivad kvalifitseeruda 0% tollimaksule.",
         "why": "Suur kasutatud autode turg, head hooldusajalood ja lühike vedu RoRo-laeva või parvlaevaga. Arvestada tuleb parempoolse rooliga.",
@@ -1258,7 +1258,7 @@
     },
     "country": {
       "h1": "{{country}}: auto import väljastpoolt ELi",
-      "metaTitle": "{{country}} – auto import: käibemaks {{vat}}%, registreerimine | CarImport.eu",
+      "metaTitle": "{{country}} – auto import: käibemaks {{vat}}%, registreerimine | Carglo",
       "metaDescription": "Auto import USAst, Kanadast, Jaapanist, AÜEst või Ühendkuningriigist, sihtriik {{country}}: käibemaks {{vat}}%, registreerimine, ülevaatus, sadamad ja täishind.",
       "lead": "Kõik, mis on oluline imporditud auto registreerimisel – riik: {{country}}. Maksud, asutused, ülevaatus ja odavaimad sadamad.",
       "facts": {
@@ -1290,7 +1290,7 @@
     },
     "port": {
       "h1": "Sadam {{port}} ({{country}}): imporditud autode tollivormistus",
-      "metaTitle": "{{port}} – auto import, toll, käibemaks {{vat}}% | CarImport.eu",
+      "metaTitle": "{{port}} – auto import, toll, käibemaks {{vat}}% | Carglo",
       "metaDescription": "Imporditud auto tollivormistus sadamas {{port}} ({{country}}): terminali- ja agenditasud, käibemaks {{vat}}%, laevasõit USAst, Jaapanist ja AÜEst, kaugused.",
       "lead": "{{port}} on tollivormistussadam – riik: {{country}}. Siin on selle tasud, laevasõidu kestused ja teekaugused – ning kas tasub oma auto siin tollist läbi viia.",
       "facts": {
@@ -1329,7 +1329,7 @@
   "blog": {
     "title": "Autoimpordi blogi",
     "lead": "Praktilised artiklid autode impordist USA-st, Kanadast, Jaapanist, AÜE-st ja Ühendkuningriigist: tegelikud kulud, oksjonid, toll, registreerimine ja vead, mida vältida.",
-    "metaTitle": "Autoimpordi blogi – kulud, oksjonid, toll, registreerimine | CarImport.eu",
+    "metaTitle": "Autoimpordi blogi – kulud, oksjonid, toll, registreerimine | Carglo",
     "metaDescription": "Juhendid ja artiklid auto impordist ELi: kui palju see tegelikult maksab, kuidas osta Copartist ja IAAI-st, tollimaks, käibemaks ja registreerimine.",
     "all": "Kõik",
     "minutes": "{{n}} min lugemist",
