@@ -10,11 +10,15 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.Optional;
 import java.util.UUID;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class QuoteService {
+
+    private static final Logger log = LoggerFactory.getLogger(QuoteService.class);
 
     /** A quote's FX snapshot is honoured for 48h; afterwards the wizard asks the user to recalculate. */
     static final Duration VALIDITY = Duration.ofHours(48);
@@ -48,6 +52,8 @@ public class QuoteService {
                 PublicQuoteView.ceilToStep(range.high().total()),
                 locale, now, now.plus(VALIDITY));
         repository.save(quote);
+        log.info("Quote {} {} -> {} via {}, {}", quote.getId(), request.originCountry(), request.destinationCountry(),
+                request.euPortCode(), locale);
         return PublicQuoteView.of(quote.getId(), range, request.destinationCountry(), quote.getExpiresAt());
     }
 

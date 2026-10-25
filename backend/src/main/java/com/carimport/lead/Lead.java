@@ -82,5 +82,6 @@ public class Lead {
     public UUID getId() { return id; }
     public String getDestinationCountry() { return destinationCountry; }
     public String getOriginCountry() { return originCountry; }
+    public Long getPartnerId() { return partnerId; }
     public Status getStatus() { return status; }
 }

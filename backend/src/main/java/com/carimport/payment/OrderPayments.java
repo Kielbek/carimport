@@ -40,6 +40,8 @@ public class OrderPayments {
             return;
         }
         if (order.markPaid(session.getPaymentIntent(), clock.instant())) {
+            log.info("Order {} paid: {} {} (session {})", orderId, session.getAmountTotal(), session.getCurrency(),
+                    session.getId());
             events.publishEvent(new ReportOrderPaidEvent(order.getId()));
         }
     }

@@ -4,6 +4,8 @@ import java.time.Clock;
 import java.time.Instant;
 import java.util.Comparator;
 import java.util.UUID;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,6 +15,8 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service
 public class LeadService {
+
+    private static final Logger log = LoggerFactory.getLogger(LeadService.class);
 
     private final LeadRepository leads;
     private final PartnerRepository partners;
@@ -37,6 +41,10 @@ public class LeadService {
                     p.leadAssigned(now);
                     // partner notification (e-mail / partner webhook) is published as an event here
                 });
-        return leads.save(lead).getId();
+        UUID id = leads.save(lead).getId();
+        // no name, e-mail or phone in the log - the lead row has them
+        log.info("Lead {} {} -> {}, partner {}", id, lead.getOriginCountry(), lead.getDestinationCountry(),
+                lead.getPartnerId() == null ? "none" : lead.getPartnerId());
+        return id;
     }
 }

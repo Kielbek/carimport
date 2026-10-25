@@ -38,6 +38,28 @@ Trzy kontenery: PostgreSQL, API (`backend/Dockerfile`) i nginx ze statyczną str
 (Caddy, Traefik, load balancer, Cloudflare). CI (`.github/workflows/ci.yml`) uruchamia testy backendu, sprawdza
 kompletność tłumaczeń, buduje stronę i oba obrazy przy każdym pushu.
 
+### Logi
+
+Każde żądanie API dostaje identyfikator (`X-Request-Id`, nadawany przez nginx). Widać go w logu nginx (`rid=…`),
+w każdej linii API (`INFO [id]`) i w nagłówku odpowiedzi, a przy błędzie 500 także w treści odpowiedzi
+(`requestId`). Jeden `grep` pokazuje więc całą historię żądania.
+
+```bash
+docker compose -f docker-compose.prod.yml logs -f api           # API na żywo
+docker compose -f docker-compose.prod.yml logs -f web           # nginx (dostęp do strony)
+docker compose -f docker-compose.prod.yml logs api | grep ERROR # tylko błędy
+docker compose -f docker-compose.prod.yml exec api sh -c 'grep "Order " /data/logs/api.log'   # zamówienia i płatności
+docker compose -f docker-compose.prod.yml exec api sh -c 'grep <request-id> /data/logs/api.log'
+```
+
+* **Dostęp** (logger `access`): metoda, ścieżka, status, czas, IP – bez parametrów zapytania (tam jest id sesji Stripe).
+* **Zdarzenia**: wycena, zamówienie, płatność (kwota, sesja), wygaśnięcie, zwrot, zdarzenie Stripe, wygenerowanie PDF,
+  wysyłka maila, zgłoszenie do firmy importowej. Bez imion, e-maili i telefonów.
+* **Błędy**: nieobsłużony wyjątek → `ERROR Unhandled error` z pełnym stack trace.
+* **Rotacja**: plik `/data/logs/api.log` (wolumen `logs`): 20 MB na plik, 14 dni, maks. 1 GB. Logi Dockera
+  (`docker compose logs`): 5 × 20 MB na kontener.
+* **Poziomy** w `.env`: `LOG_LEVEL=DEBUG` (kod aplikacji), `ACCESS_LOG_LEVEL=WARN` (tylko odpowiedzi 5xx).
+
 ### Przykładowe raporty i analityka
 
 `frontend/public/samples/report-{lang}.pdf` to raporty pokazowe (ten sam samochód sprowadzany do kraju danego języka,
