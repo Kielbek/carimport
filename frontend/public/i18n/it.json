@@ -450,7 +450,9 @@
     "what": "Cosa calcoliamo",
     "ctaHint": "Gratis, senza registrazione",
     "language": "Lingua",
-    "blog": "Blog"
+    "blog": "Blog",
+    "taxes": "Calcolatore di dazi e tasse",
+    "method": "Come calcoliamo"
   },
   "footer": {
     "about": "Calcolatore indipendente dei costi di importazione di auto da Paesi extra UE. Non vendiamo né importiamo auto – calcoliamo quanto costano davvero.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "Condizioni generali | Carglo",
       "description": "Condizioni del calcolatore dei costi di importazione auto e del report PDF: venditore, pagamento, fornitura, recesso e reclami."
+    },
+    "taxes": {
+      "title": "Calcolo dazi per importare un'auto – IVA, imposta di immatricolazione | Carglo",
+      "description": "Calcola il dazio, l'IVA all'importazione e l'imposta di immatricolazione di un'auto da USA, Canada, Giappone, EAU o Regno Unito per qualsiasi paese UE. Gratis e aggiornato."
+    },
+    "method": {
+      "title": "Come calcoliamo il costo di importazione di un'auto – fonti e metodo | Carglo",
+      "description": "Da dove vengono le nostre tariffe, come stimiamo il trasporto e cosa il risultato non può sapere. La metodologia completa del calcolatore Carglo."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Importare per Paese d'acquisto",
       "countries": "Importare nei Paesi UE",
       "ports": "Porti di sdoganamento UE",
-      "all": "Tutte le guide"
+      "all": "Tutte le guide",
+      "models": "Costo di importazione per modello"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} porti UE per importare auto – tariffe, IVA, tempi | Carglo",
         "metaDescription": "Confronta tutti i {{count}} porti di sdoganamento UE: tariffe di terminal e spedizioniere doganale, IVA all'importazione, tempi di navigazione e distanze dall'Italia.",
         "sortedFrom": "Ordinati per distanza stradale da: {{country}}"
+      },
+      "models": {
+        "title": "Quanto costa importare un'auto popolare?",
+        "lead": "Esempi porta a porta per i modelli più importati, calcolati per: {{country}}, con tasse, cambi e noli attuali.",
+        "metaTitle": "Costo di importazione auto per modello – {{models}} esempi | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra e altri: il costo completo di importazione con dazio, IVA, tasse nazionali e trasporto. Calcola gratis la tua auto."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Apri il calcolatore"
     },
     "related": "Guide correlate",
-    "disclaimer": "Informazioni puramente indicative; gli importi definitivi sono stabiliti dalle autorità fiscali e doganali. Aliquote come utilizzate dal calcolatore."
+    "disclaimer": "Informazioni puramente indicative; gli importi definitivi sono stabiliti dalle autorità fiscali e doganali. Aliquote come utilizzate dal calcolatore.",
+    "model": {
+      "metaTitle": "Importare una {{car}} {{from}} – costo | Carglo",
+      "metaDescription": "Quanto costa importare una {{car}} del {{year}} {{from}}? Circa {{total}} con dazio, IVA, tasse e trasporto. Vedi il dettaglio e calcola la tua auto.",
+      "h1": "Importare una {{car}} {{from}}: quanto costa davvero",
+      "lead": "Una {{car}} del {{year}} comprata a {{price}} costa circa {{total}} immatricolata (paese: {{country}}): acquisto, trasporto, dazio, IVA e tasse nazionali inclusi.",
+      "summaryTitle": "Costo totale – {{country}}",
+      "summaryRange": "Intervallo realistico: {{low}} – {{high}}",
+      "specs": {
+        "year": "Anno",
+        "engine": "Motore",
+        "power": "Potenza",
+        "hp": "CV",
+        "fuel": "Alimentazione",
+        "price": "Prezzo tipico – {{origin}}"
+      },
+      "table": {
+        "title": "Dettaglio dei costi",
+        "price": "Auto con commissioni d'asta o del venditore",
+        "transport": "Trasporto fino a casa (terra, nave, porto)",
+        "duty": "Dazio",
+        "vat": "IVA all'importazione {{vatRate}}% ({{portCountry}})",
+        "registration": "Immatricolazione, revisione e pratiche",
+        "other": "Assicurazione e altri costi",
+        "total": "Totale"
+      },
+      "note": "Esempio calcolato il {{date}} per: {{country}}, con le tariffe del calcolatore. Prezzo, condizioni, posizione e percorso della tua auto cambiano il risultato.",
+      "p1": "Il dazio si applica al valore in dogana – prezzo più trasporto fino al confine UE – qui {{duty}}. L'IVA all'importazione del {{vatRate}}% si paga nel paese di sdoganamento ({{portCountry}}, porto di {{port}}): {{vat}}.",
+      "p2National": "A questo si aggiunge la voce «{{nationalName}}»: {{national}}. Dipende da motore, emissioni o valore e spesso decide se l'importazione conviene.",
+      "p2None": "In questo paese ({{country}}) l'auto non paga imposta di immatricolazione né accisa: dopo dazio e IVA restano solo i costi di immatricolazione, circa {{registration}}.",
+      "p3": "L'auto viene ritirata in {{zone}} e spedita da {{departure}} a {{port}}. Dall'acquisto all'immatricolazione calcola {{daysMin}}–{{daysMax}} giorni.",
+      "othersTitle": "Altri modelli popolari",
+      "faq1": {
+        "q": "Quanto costa importare una {{car}}?",
+        "a": "Una {{car}} del {{year}} comprata a {{price}} costa in totale circa {{total}} (intervallo {{low}} – {{high}}), con trasporto, dazio {{duty}}, IVA {{vat}} e immatricolazione."
+      },
+      "faq2": {
+        "q": "Quali tasse si pagano su una {{car}} importata?",
+        "a": "Il dazio ({{duty}}), l'IVA all'importazione del {{vatRate}}% ({{vat}}) e, a seconda del paese, un'imposta di immatricolazione o un'accisa. Il calcolatore mostra gli importi esatti per la tua auto."
+      },
+      "from": {
+        "USA": "dagli USA",
+        "CANADA": "dal Canada",
+        "JAPAN": "dal Giappone",
+        "UAE": "dagli Emirati Arabi",
+        "UK": "dal Regno Unito"
+      }
+    }
   },
   "blog": {
     "title": "Blog sull’importazione di auto",
@@ -1482,5 +1546,71 @@
     "confirmed": "La tua iscrizione è confermata. Grazie!",
     "unsubscribed": "Sei stato disiscritto e non riceverai altre newsletter.",
     "invalid": "Questo link non è valido o è già stato utilizzato."
+  },
+  "taxes": {
+    "eyebrow": "Strumento gratuito",
+    "title": "Calcolo di dazio, IVA e imposta di immatricolazione per auto importate",
+    "lead": "Inserisci prezzo e motore di un'auto da USA, Canada, Giappone, EAU o Regno Unito e vedi le tasse per qualsiasi paese UE, con il cambio doganale di questo mese.",
+    "origin": "Acquistata in",
+    "price": "Prezzo d'acquisto ({{currency}})",
+    "year": "Anno di produzione",
+    "fuel": "Alimentazione",
+    "engine": "Cilindrata (cm³)",
+    "power": "Potenza (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "facoltativo",
+    "destination": "Paese di immatricolazione",
+    "submit": "Calcola le tasse",
+    "calculating": "Calcolo…",
+    "resultTitle": "Tasse su quest'auto",
+    "duty": "Dazio {{rate}}%",
+    "vat": "IVA all'importazione {{rate}}% ({{country}})",
+    "noNational": "{{country}}: nessuna imposta di immatricolazione o accisa per quest'auto",
+    "total": "Totale tasse",
+    "note": "Il valore in dogana include un trasporto tipico fino a {{port}}. Dazio e IVA seguono il cambio doganale del mese.",
+    "fullCost": "Costo completo porta a porta",
+    "error": "Il calcolo non è riuscito. Controlla i dati e riprova.",
+    "empty": "Inserisci i dati dell'auto e premi «Calcola le tasse».",
+    "p1Title": "Dazio",
+    "p1": "Un'autovettura extra UE paga il 10% di dazio (pick-up e furgoni fino al 22%) sul valore in dogana: prezzo d'acquisto più trasporto e assicurazione fino al confine UE. Le auto con più di 30 anni in condizioni originali possono essere storiche, con dazio 0% e IVA ridotta.",
+    "p2Title": "IVA all'importazione",
+    "p2": "L'IVA si paga nel paese di sdoganamento, sul valore in dogana più il dazio. Di solito è l'imposta più pesante: dal 17% al 27% a seconda del paese.",
+    "p3Title": "Accisa e imposta di immatricolazione",
+    "p3": "Molti paesi UE aggiungono una propria imposta all'immatricolazione: l'IPT in Italia, l'accisa in Polonia, la BPM nei Paesi Bassi, la NoVA in Austria, il malus in Francia e altre. Alcuni paesi non chiedono nulla.",
+    "countriesTitle": "Tasse e immatricolazione paese per paese"
+  },
+  "method": {
+    "eyebrow": "Metodologia",
+    "title": "Come calcoliamo il costo di importazione di un'auto",
+    "lead": "Carglo calcola ogni passaggio, dall'asta all'immatricolazione, con le stesse regole usate da autorità e trasportatori. Ecco da dove vengono i numeri e dove sono stime.",
+    "updated": "Tariffe e norme verificate il: {{date}}",
+    "s1": {
+      "title": "Cosa comprende il calcolo",
+      "text": "L'acquisto con commissioni d'asta o del venditore, il trasporto al porto, il nolo marittimo e l'assicurazione, le spese portuali e dello spedizioniere doganale, il dazio, l'IVA all'importazione, le tasse nazionali, la consegna al tuo indirizzo e la revisione e immatricolazione nel tuo paese.\nOgni risultato ha tre scenari – ottimistico, atteso e pessimistico – perché i prezzi del trasporto e alcune spese variano."
+    },
+    "s2": {
+      "title": "Dazio e IVA",
+      "text": "Le aliquote seguono la Nomenclatura Combinata UE (TARIC): 10% per le autovetture, fino al 22% per pick-up e furgoni, e le regole per i veicoli storici oltre 30 anni. Il valore in dogana è il prezzo più trasporto e assicurazione fino al confine UE.\nLe valute sono convertite al cambio doganale del mese (cambi del penultimo mercoledì del mese precedente), gli altri importi ai cambi attuali della banca centrale."
+    },
+    "s3": {
+      "title": "Tasse nazionali",
+      "text": "Imposte di immatricolazione e accise sono modellate secondo la legge di ciascun paese: cilindrata, CO₂, potenza, peso, età e valore, come richiede il paese. A Cipro, in Grecia, Croazia e Malta l'imposta deriva da calcolatori ufficiali: lì chiediamo l'importo o mostriamo un intervallo.\nSe inserisci CO₂ e potenza dai documenti, il risultato è esatto; altrimenti li stimiamo da motore e alimentazione."
+    },
+    "s4": {
+      "title": "Trasporto e spese",
+      "text": "Il trasporto terrestre nel paese d'acquisto è calcolato dalla distanza tra la regione di ritiro e il porto di partenza con tariffe tipiche dei trasportatori. Nolo marittimo, spese portuali e d'agenzia sono prezzi tipici per rotta e porto UE.\nQueste voci sono stime: il preventivo di uno spedizioniere per la tua auto può differire, per questo mostriamo un intervallo."
+    },
+    "s5": {
+      "title": "Scelta del porto",
+      "text": "Il calcolatore valuta ogni porto UE porta a porta – nolo, spese portuali, IVA del paese del porto e consegna al tuo indirizzo – e propone il più conveniente. Puoi scegliere un altro porto e confrontare."
+    },
+    "s6": {
+      "title": "Cosa il calcolo non può sapere",
+      "text": "Le reali condizioni dell'auto, i danni nascosti, le variazioni di prezzo alle aste, i movimenti dei cambi dopo il calcolo e le decisioni individuali delle autorità. Il risultato è informativo, non una decisione doganale né una consulenza fiscale."
+    },
+    "s7": {
+      "title": "Indipendenza",
+      "text": "Carglo non vende, compra né spedisce auto e non prende commissioni dagli importatori per il risultato. Guadagniamo con il report PDF a pagamento. Hai trovato un errore o una tariffa non aggiornata? Scrivi a {{email}}: correggiamo."
+    }
   }
 }

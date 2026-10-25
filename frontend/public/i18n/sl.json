@@ -450,7 +450,9 @@
     "what": "Kaj izračunamo",
     "ctaHint": "Brezplačno, brez registracije",
     "language": "Jezik",
-    "blog": "Blog"
+    "blog": "Blog",
+    "taxes": "Kalkulator carine in davkov",
+    "method": "Kako računamo"
   },
   "footer": {
     "about": "Neodvisni kalkulator stroškov uvoza avtomobilov izven EU. Avtomobilov ne prodajamo in ne uvažamo – izračunamo, koliko v resnici stanejo.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "Splošni pogoji | Carglo",
       "description": "Pogoji kalkulatorja stroškov uvoza avtomobilov in poročila PDF: prodajalec, plačilo, dobava, odstop od pogodbe in reklamacije."
+    },
+    "taxes": {
+      "title": "Kalkulator carine za avto iz ZDA – carina, DDV, DMV | Carglo",
+      "description": "Izračunajte carino, uvozni DDV in davek na motorna vozila za avto iz ZDA, Kanade, Japonske, ZAE ali Združenega kraljestva za katero koli državo EU. Brezplačno in sveže."
+    },
+    "method": {
+      "title": "Kako računamo stroške uvoza avtomobila – viri in metoda | Carglo",
+      "description": "Od kod so naše stopnje, kako ocenjujemo prevoz in česa rezultat ne more vedeti. Celotna metodologija kalkulatorja Carglo."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Uvoz po državi nakupa",
       "countries": "Uvoz v države EU",
       "ports": "Pristanišča carinjenja v EU",
-      "all": "Vsi vodniki"
+      "all": "Vsi vodniki",
+      "models": "Cena uvoza po modelu"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} pristanišč EU za uvoz avtomobilov – stroški, DDV, plovba | Carglo",
         "metaDescription": "Primerjajte vseh {{count}} pristanišč EU za carinjenje avtomobilov: stroški terminala in carinskega zastopnika, uvozni DDV, trajanje plovbe in razdalja do Slovenije.",
         "sortedFrom": "Razvrščeno po cestni razdalji do: {{country}}"
+      },
+      "models": {
+        "title": "Koliko stane uvoz priljubljenega avtomobila?",
+        "lead": "Primeri stroškov do vrat za najpogosteje uvožene modele, izračunani za državo: {{country}} – z aktualnimi davki, tečaji in prevozninami.",
+        "metaTitle": "Cena uvoza avtomobila po modelu – {{models}} primerov | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra in drugi: celotni stroški uvoza s carino, DDV, nacionalnimi davki in prevozom. Brezplačno izračunajte svoj avto."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Odpri kalkulator"
     },
     "related": "Sorodni vodniki",
-    "disclaimer": "Informacije so zgolj okvirne; končne zneske določijo davčni in carinski organi. Stopnje, kot jih uporablja kalkulator."
+    "disclaimer": "Informacije so zgolj okvirne; končne zneske določijo davčni in carinski organi. Stopnje, kot jih uporablja kalkulator.",
+    "model": {
+      "metaTitle": "Uvoz {{car}} {{from}} – koliko stane | Carglo",
+      "metaDescription": "Koliko stane uvoz vozila {{car}} ({{year}}) {{from}}? Približno {{total}} s carino, DDV, davki in prevozom. Oglejte si razčlenitev in izračunajte svoj avto.",
+      "h1": "Uvoz {{car}} {{from}}: koliko res stane",
+      "lead": "{{car}} letnik {{year}}, kupljen za {{price}}, stane po registraciji približno {{total}} (država: {{country}}) – z nakupom, prevozom, carino, DDV in nacionalnimi davki.",
+      "summaryTitle": "Skupni stroški – {{country}}",
+      "summaryRange": "Realen razpon: {{low}} – {{high}}",
+      "specs": {
+        "year": "Letnik",
+        "engine": "Motor",
+        "power": "Moč",
+        "hp": "KM",
+        "fuel": "Gorivo",
+        "price": "Tipična cena – {{origin}}"
+      },
+      "table": {
+        "title": "Razčlenitev stroškov",
+        "price": "Avto s provizijami dražbe ali prodajalca",
+        "transport": "Prevoz do vrat (kopno, ladja, pristanišče)",
+        "duty": "Carina",
+        "vat": "Uvozni DDV {{vatRate}} % ({{portCountry}})",
+        "registration": "Registracija, tehnični pregled in formalnosti",
+        "other": "Zavarovanje in drugi stroški",
+        "total": "Skupaj"
+      },
+      "note": "Primer izračunan {{date}} za državo: {{country}}, s stopnjami kalkulatorja. Cena, stanje, lokacija in pot vašega avta spremenijo rezultat.",
+      "p1": "Carina se obračuna od carinske vrednosti – cene s prevozom do meje EU – tukaj {{duty}}. Uvozni DDV {{vatRate}} % se plača v državi carinjenja ({{portCountry}}, pristanišče {{port}}): {{vat}}.",
+      "p2National": "K temu pride postavka »{{nationalName}}«: {{national}}. Odvisna je od motorja, izpustov ali vrednosti, zato pogosto odloči, ali se uvoz splača.",
+      "p2None": "V tej državi ({{country}}) se za ta avto ne plača registracijski ali trošarinski davek – po carini in DDV ostanejo le stroški registracije, približno {{registration}}.",
+      "p3": "Avto se prevzame v regiji {{zone}} in odpluje iz pristanišča {{departure}} v pristanišče {{port}}. Od nakupa do registracije računajte {{daysMin}}–{{daysMax}} dni.",
+      "othersTitle": "Drugi priljubljeni modeli",
+      "faq1": {
+        "q": "Koliko stane uvoz vozila {{car}}?",
+        "a": "{{car}} letnik {{year}}, kupljen za {{price}}, skupaj stane približno {{total}} (razpon {{low}} – {{high}}), s prevozom, carino {{duty}}, DDV {{vat}} in registracijo."
+      },
+      "faq2": {
+        "q": "Katere davke plačam za uvožen {{car}}?",
+        "a": "Carino ({{duty}}), uvozni DDV {{vatRate}} % ({{vat}}) in odvisno od države še davek na motorna vozila ali trošarino. Kalkulator pokaže natančne zneske za vaš avto."
+      },
+      "from": {
+        "USA": "iz ZDA",
+        "CANADA": "iz Kanade",
+        "JAPAN": "z Japonske",
+        "UAE": "iz ZAE",
+        "UK": "iz Združenega kraljestva"
+      }
+    }
   },
   "blog": {
     "title": "Blog o uvozu avtomobilov",
@@ -1482,5 +1546,71 @@
     "confirmed": "Vaša prijava je potrjena. Hvala!",
     "unsubscribed": "Odjavljeni ste in ne boste več prejemali e-novic.",
     "invalid": "Ta povezava ni veljavna ali je bila že uporabljena."
+  },
+  "taxes": {
+    "eyebrow": "Brezplačno orodje",
+    "title": "Kalkulator carine, DDV in davka na motorna vozila za uvožen avto",
+    "lead": "Vnesite ceno in motor avta iz ZDA, Kanade, Japonske, ZAE ali Združenega kraljestva in poglejte davke za katero koli državo EU – s carinskim tečajem za ta mesec.",
+    "origin": "Kupljeno v",
+    "price": "Nakupna cena ({{currency}})",
+    "year": "Letnik",
+    "fuel": "Gorivo",
+    "engine": "Prostornina motorja (cm³)",
+    "power": "Moč (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "neobvezno",
+    "destination": "Država registracije",
+    "submit": "Izračunaj davke",
+    "calculating": "Računam…",
+    "resultTitle": "Davki za ta avto",
+    "duty": "Carina {{rate}} %",
+    "vat": "Uvozni DDV {{rate}} % ({{country}})",
+    "noNational": "{{country}}: za ta avto ni registracijskega davka ali trošarine",
+    "total": "Davki skupaj",
+    "note": "Carinska vrednost vključuje tipičen prevoz do pristanišča {{port}}. Carina in DDV sledita carinskemu tečaju tega meseca.",
+    "fullCost": "Celotni stroški do vrat",
+    "error": "Izračun ni uspel. Preverite podatke in poskusite znova.",
+    "empty": "Izpolnite podatke o avtu in kliknite »Izračunaj davke«.",
+    "p1Title": "Carina",
+    "p1": "Osebni avto izven EU plača 10 % carine (pickupi in dostavniki do 22 %) od carinske vrednosti: nakupne cene s prevozom in zavarovanjem do meje EU. Avtomobili, starejši od 30 let, v originalnem stanju so lahko starodobniki – z 0 % carine in znižanim DDV.",
+    "p2Title": "Uvozni DDV",
+    "p2": "DDV se plača v državi carinjenja, od carinske vrednosti, povečane za carino. Običajno je to največji davek – od 17 % do 27 %, odvisno od države.",
+    "p3Title": "Trošarina in registracijski davek",
+    "p3": "Številne države EU ob registraciji dodajo svoj davek: davek na motorna vozila (DMV) v Sloveniji, trošarino na Poljskem, BPM na Nizozemskem, NoVA v Avstriji, malus v Franciji in drugi. Nekatere države ne zaračunajo ničesar.",
+    "countriesTitle": "Davki in registracija po državah"
+  },
+  "method": {
+    "eyebrow": "Metodologija",
+    "title": "Kako računamo stroške uvoza avtomobila",
+    "lead": "Carglo ovrednoti vsak korak od dražbe do registracije po enakih pravilih, kot jih uporabljajo organi in prevozniki. Tukaj je, od kod so številke in kje gre za oceno.",
+    "updated": "Stopnje in predpisi nazadnje preverjeni: {{date}}",
+    "s1": {
+      "title": "Kaj izračun vključuje",
+      "text": "Nakup s provizijami dražbe ali prodajalca, prevoz do pristanišča, pomorski prevoz in zavarovanje, pristaniške pristojbine in stroške carinskega zastopnika, carino, uvozni DDV, nacionalne davke, dostavo na vaš naslov ter tehnični pregled in registracijo v vaši državi.\nVsak rezultat ima tri scenarije – optimističnega, pričakovanega in pesimističnega – ker cene prevoza in nekatere pristojbine nihajo."
+    },
+    "s2": {
+      "title": "Carina in DDV",
+      "text": "Carinske stopnje sledijo kombinirani nomenklaturi EU (TARIC): 10 % za osebna vozila, do 22 % za pickupe in dostavnike ter pravila za starodobna vozila, starejša od 30 let. Carinska vrednost je cena s prevozom in zavarovanjem do meje EU.\nTuje valute preračunavamo po carinskem tečaju, veljavnem v mesecu (tečaji predzadnje srede prejšnjega meseca), druge zneske po aktualnih tečajih centralne banke."
+    },
+    "s3": {
+      "title": "Nacionalni davki",
+      "text": "Registracijske davke in trošarine modeliramo po zakonodaji vsake države: prostornina, CO₂, moč, masa, starost in vrednost – kot zahteva država. Na Cipru, v Grčiji, na Hrvaškem in na Malti davek izhaja iz uradnih kalkulatorjev – tam vprašamo za znesek ali prikažemo razpon.\nČe vnesete CO₂ in moč iz dokumentov, je rezultat natančen; sicer ju ocenimo iz motorja in goriva."
+    },
+    "s4": {
+      "title": "Prevoz in pristojbine",
+      "text": "Kopenski prevoz v državi nakupa ovrednotimo po razdalji med regijo prevzema in odhodnim pristaniščem s tipičnimi tarifami prevoznikov. Pomorski prevoz ter pristaniške in agencijske pristojbine so tipične cene za vsako pot in pristanišče EU.\nTe postavke so ocene – ponudba špediterja za vaš avto se lahko razlikuje, zato prikažemo razpon."
+    },
+    "s5": {
+      "title": "Izbira pristanišča",
+      "text": "Kalkulator ovrednoti vsako pristanišče EU do vrat – prevoz, pristaniške pristojbine, DDV države pristanišča in dostavo na vaš naslov – in predlaga najcenejše. Lahko izberete drugo pristanišče in primerjate."
+    },
+    "s6": {
+      "title": "Česa izračun ne more vedeti",
+      "text": "Dejanskega stanja avta, skritih poškodb, sprememb cen na dražbah, gibanja tečajev po izračunu in posameznih odločitev organov. Rezultat je informativen – ni carinska odločba ne davčni nasvet."
+    },
+    "s7": {
+      "title": "Neodvisnost",
+      "text": "Carglo avtomobilov ne prodaja, kupuje ali uvaža in od uvoznikov ne prejema provizij za rezultat. Zaslužimo s plačljivim poročilom PDF. Ste našli napako ali zastarelo stopnjo? Pišite na {{email}} – popravili bomo."
+    }
   }
 }

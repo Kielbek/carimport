@@ -450,7 +450,9 @@
     "what": "O que calculamos",
     "ctaHint": "Grátis, sem registo",
     "language": "Idioma",
-    "blog": "Blog"
+    "blog": "Blog",
+    "taxes": "Calculadora de direitos e impostos",
+    "method": "Como calculamos"
   },
   "footer": {
     "about": "Calculadora independente dos custos de importação de carros de fora da UE. Não vendemos nem importamos carros – calculamos quanto custam realmente.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "Termos e condições | Carglo",
       "description": "Termos e condições da calculadora de custos de importação de carros e do relatório PDF: vendedor, pagamento, fornecimento, livre resolução e reclamações."
+    },
+    "taxes": {
+      "title": "Calculadora de impostos para importar um carro – direitos, IVA, ISV | Carglo",
+      "description": "Calcule os direitos aduaneiros, o IVA de importação e o imposto sobre veículos de um carro dos EUA, Canadá, Japão, EAU ou Reino Unido para qualquer país da UE. Grátis e atualizado."
+    },
+    "method": {
+      "title": "Como calculamos o custo de importar um carro – fontes e método | Carglo",
+      "description": "De onde vêm as nossas taxas, como estimamos o transporte e o que o resultado não pode saber. A metodologia completa da calculadora Carglo."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Importar por país de compra",
       "countries": "Importar para países da UE",
       "ports": "Portos de desalfandegamento na UE",
-      "all": "Todos os guias"
+      "all": "Todos os guias",
+      "models": "Custo de importação por modelo"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} portos da UE para importar carros – taxas, IVA | Carglo",
         "metaDescription": "Compare os {{count}} portos de desalfandegamento da UE: taxas de terminal e despachante, IVA na importação, tempos de viagem e distâncias rodoviárias até Portugal.",
         "sortedFrom": "Ordenados por distância rodoviária até: {{country}}"
+      },
+      "models": {
+        "title": "Quanto custa importar um carro popular?",
+        "lead": "Exemplos porta a porta dos modelos mais importados, calculados para: {{country}}, com impostos, câmbios e fretes atuais.",
+        "metaTitle": "Custo de importar um carro por modelo – {{models}} exemplos | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra e mais: o custo total de importação com direitos, IVA, impostos nacionais e transporte. Calcule o seu carro grátis."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Abrir a calculadora"
     },
     "related": "Guias relacionados",
-    "disclaimer": "Informação meramente indicativa; são as autoridades tributárias e aduaneiras que fixam os valores finais. Taxas tal como utilizadas pela calculadora."
+    "disclaimer": "Informação meramente indicativa; são as autoridades tributárias e aduaneiras que fixam os valores finais. Taxas tal como utilizadas pela calculadora.",
+    "model": {
+      "metaTitle": "Importar um {{car}} {{from}} – custo | Carglo",
+      "metaDescription": "Quanto custa importar um {{car}} de {{year}} {{from}}? Cerca de {{total}} com direitos, IVA, impostos e transporte. Veja o detalhe e calcule o seu carro.",
+      "h1": "Importar um {{car}} {{from}}: quanto custa realmente",
+      "lead": "Um {{car}} de {{year}} comprado por {{price}} custa cerca de {{total}} matriculado (país: {{country}}) – compra, transporte, direitos, IVA e impostos nacionais incluídos.",
+      "summaryTitle": "Custo total – {{country}}",
+      "summaryRange": "Intervalo realista: {{low}} – {{high}}",
+      "specs": {
+        "year": "Ano",
+        "engine": "Motor",
+        "power": "Potência",
+        "hp": "cv",
+        "fuel": "Combustível",
+        "price": "Preço típico – {{origin}}"
+      },
+      "table": {
+        "title": "Detalhe dos custos",
+        "price": "Carro com comissões de leilão ou de stand",
+        "transport": "Transporte até à sua porta (terra, navio, porto)",
+        "duty": "Direitos aduaneiros",
+        "vat": "IVA de importação {{vatRate}}% ({{portCountry}})",
+        "registration": "Matrícula, inspeção e formalidades",
+        "other": "Seguro e outros custos",
+        "total": "Total"
+      },
+      "note": "Exemplo calculado em {{date}} para: {{country}}, com as taxas da calculadora. O preço, o estado, a localização e a rota do seu carro alteram o resultado.",
+      "p1": "Os direitos incidem sobre o valor aduaneiro – preço mais transporte até à fronteira da UE –, aqui {{duty}}. O IVA de importação de {{vatRate}}% paga-se no país de desalfandegamento ({{portCountry}}, porto de {{port}}): {{vat}}.",
+      "p2National": "Acresce a rubrica «{{nationalName}}»: {{national}}. Depende do motor, das emissões ou do valor e muitas vezes decide se a importação compensa.",
+      "p2None": "Neste país ({{country}}) este carro não paga imposto de matrícula nem especial – depois dos direitos e do IVA restam apenas os custos de matrícula, cerca de {{registration}}.",
+      "p3": "O carro é recolhido em {{zone}} e enviado de {{departure}} para {{port}}. Da compra à matrícula conte com {{daysMin}}–{{daysMax}} dias.",
+      "othersTitle": "Outros modelos populares",
+      "faq1": {
+        "q": "Quanto custa importar um {{car}}?",
+        "a": "Um {{car}} de {{year}} comprado por {{price}} fica em cerca de {{total}} no total (intervalo {{low}} – {{high}}), com transporte, direitos {{duty}}, IVA {{vat}} e matrícula."
+      },
+      "faq2": {
+        "q": "Que impostos pago por um {{car}} importado?",
+        "a": "Os direitos aduaneiros ({{duty}}), o IVA de importação de {{vatRate}}% ({{vat}}) e, conforme o país, um imposto de matrícula ou especial. A calculadora mostra os valores exatos para o seu carro."
+      },
+      "from": {
+        "USA": "dos EUA",
+        "CANADA": "do Canadá",
+        "JAPAN": "do Japão",
+        "UAE": "dos EAU",
+        "UK": "do Reino Unido"
+      }
+    }
   },
   "blog": {
     "title": "Blog sobre importação de carros",
@@ -1482,5 +1546,71 @@
     "confirmed": "A sua subscrição está confirmada. Obrigado!",
     "unsubscribed": "A sua subscrição foi cancelada. Não receberá mais newsletters.",
     "invalid": "Esta ligação é inválida ou já foi utilizada."
+  },
+  "taxes": {
+    "eyebrow": "Ferramenta gratuita",
+    "title": "Calculadora de direitos, IVA e ISV para carros importados",
+    "lead": "Introduza o preço e o motor de um carro dos EUA, Canadá, Japão, EAU ou Reino Unido e veja os impostos para qualquer país da UE – com a taxa de câmbio aduaneira deste mês.",
+    "origin": "Comprado em",
+    "price": "Preço de compra ({{currency}})",
+    "year": "Ano de fabrico",
+    "fuel": "Combustível",
+    "engine": "Cilindrada (cm³)",
+    "power": "Potência (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "opcional",
+    "destination": "País de matrícula",
+    "submit": "Calcular impostos",
+    "calculating": "A calcular…",
+    "resultTitle": "Impostos deste carro",
+    "duty": "Direitos aduaneiros {{rate}}%",
+    "vat": "IVA de importação {{rate}}% ({{country}})",
+    "noNational": "{{country}}: sem imposto de matrícula nem especial para este carro",
+    "total": "Total de impostos",
+    "note": "O valor aduaneiro inclui um transporte típico até {{port}}. Direitos e IVA seguem a taxa de câmbio aduaneira do mês.",
+    "fullCost": "Custo total porta a porta",
+    "error": "Não foi possível calcular. Verifique os dados e tente novamente.",
+    "empty": "Preencha os dados do carro e clique em «Calcular impostos».",
+    "p1Title": "Direitos aduaneiros",
+    "p1": "Um ligeiro de passageiros de fora da UE paga 10% de direitos (pick-ups e comerciais até 22%) sobre o valor aduaneiro: preço de compra mais transporte e seguro até à fronteira da UE. Carros com mais de 30 anos em estado original podem ser clássicos, com 0% de direitos e IVA reduzido.",
+    "p2Title": "IVA de importação",
+    "p2": "O IVA paga-se no país de desalfandegamento, sobre o valor aduaneiro mais os direitos. É normalmente o imposto mais pesado – entre 17% e 27% conforme o país.",
+    "p3Title": "Imposto especial e de matrícula",
+    "p3": "Muitos países da UE acrescentam um imposto próprio na matrícula: o ISV em Portugal, a BPM nos Países Baixos, a NoVA na Áustria, o malus em França, o imposto especial na Polónia e outros. Alguns países não cobram nada.",
+    "countriesTitle": "Impostos e matrícula país a país"
+  },
+  "method": {
+    "eyebrow": "Metodologia",
+    "title": "Como calculamos o custo de importar um carro",
+    "lead": "A Carglo calcula cada etapa, do leilão à matrícula, com as mesmas regras usadas pelas autoridades e transportadores. Eis de onde vêm os números e onde são estimativas.",
+    "updated": "Taxas e regras verificadas em: {{date}}",
+    "s1": {
+      "title": "O que o cálculo inclui",
+      "text": "A compra com comissões de leilão ou de stand, o transporte até ao porto, o frete marítimo e o seguro, as taxas portuárias e do despachante, os direitos aduaneiros, o IVA de importação, os impostos nacionais, a entrega na sua morada e a inspeção e matrícula no seu país.\nCada resultado tem três cenários – otimista, esperado e pessimista – porque os preços do transporte e algumas taxas variam."
+    },
+    "s2": {
+      "title": "Direitos aduaneiros e IVA",
+      "text": "As taxas seguem a Nomenclatura Combinada da UE (TARIC): 10% para ligeiros de passageiros, até 22% para pick-ups e comerciais, e as regras dos veículos clássicos com mais de 30 anos. O valor aduaneiro é o preço mais transporte e seguro até à fronteira da UE.\nAs moedas estrangeiras são convertidas à taxa de câmbio aduaneira do mês (taxas da penúltima quarta-feira do mês anterior) e os restantes valores às taxas atuais do banco central."
+    },
+    "s3": {
+      "title": "Impostos nacionais",
+      "text": "Os impostos de matrícula e especiais são modelados segundo a lei de cada país: cilindrada, CO₂, potência, peso, idade e valor, conforme o país exige. Em Chipre, Grécia, Croácia e Malta o imposto resulta de calculadoras oficiais – aí pedimos o valor ou mostramos um intervalo.\nSe introduzir o CO₂ e a potência dos documentos, o resultado é exato; caso contrário estimamo-los a partir do motor e do combustível."
+    },
+    "s4": {
+      "title": "Transporte e taxas",
+      "text": "O transporte terrestre no país de compra é calculado pela distância entre a região de recolha e o porto de partida com tarifas típicas de transportadores. O frete marítimo e as taxas portuárias e de despachante são preços típicos por rota e porto da UE.\nEstas rubricas são estimativas – a proposta de um transitário para o seu carro pode ser diferente, por isso mostramos um intervalo."
+    },
+    "s5": {
+      "title": "Escolha do porto",
+      "text": "A calculadora avalia cada porto da UE porta a porta – frete, taxas portuárias, IVA do país do porto e entrega na sua morada – e propõe o mais barato. Pode escolher outro porto e comparar."
+    },
+    "s6": {
+      "title": "O que o cálculo não pode saber",
+      "text": "O estado real do carro, danos ocultos, alterações de preço nos leilões, variações cambiais depois do cálculo e decisões individuais das autoridades. O resultado é informativo, não é uma decisão aduaneira nem aconselhamento fiscal."
+    },
+    "s7": {
+      "title": "Independência",
+      "text": "A Carglo não vende, compra nem envia carros e não recebe comissões de importadores pelo resultado. Ganhamos com o relatório PDF pago. Encontrou um erro ou uma taxa desatualizada? Escreva para {{email}} – corrigimos."
+    }
   }
 }

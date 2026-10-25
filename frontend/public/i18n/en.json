@@ -450,7 +450,9 @@
     "what": "What we count",
     "ctaHint": "Free, no sign-up",
     "language": "Language",
-    "blog": "Blog"
+    "blog": "Blog",
+    "taxes": "Customs & tax calculator",
+    "method": "How we calculate"
   },
   "footer": {
     "about": "Independent calculator of import costs for cars from outside the EU. We neither sell nor import cars – we work out what they really cost.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "Terms | Carglo",
       "description": "Terms for the car import cost calculator and the PDF report: seller, payment, delivery, withdrawal and complaints."
+    },
+    "taxes": {
+      "title": "Car import tax calculator – customs duty, VAT, excise | Carglo",
+      "description": "Calculate customs duty, import VAT and registration or excise tax on a car from the USA, Canada, Japan, UAE or UK for any EU country. Free, with current rates."
+    },
+    "method": {
+      "title": "How we calculate the car import cost – sources and method | Carglo",
+      "description": "Where our rates come from, how we estimate transport and what the result can and cannot tell you. The full methodology of the Carglo calculator."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Import by country of purchase",
       "countries": "Import to EU countries",
       "ports": "EU ports of clearance",
-      "all": "All guides"
+      "all": "All guides",
+      "models": "Import cost by car model"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} EU ports for car imports – fees, VAT, sailing times | Carglo",
         "metaDescription": "Compare all {{count}} EU ports of clearance for cars: terminal and customs agent fees, import VAT, sailing times and road distances to your country.",
         "sortedFrom": "Sorted by road distance to: {{country}}"
+      },
+      "models": {
+        "title": "How much does it cost to import a popular car?",
+        "lead": "Door-to-door examples for the most imported models, priced for {{country}} with current taxes, exchange rates and freight.",
+        "metaTitle": "Car import cost by model – {{models}} examples | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra and more: the full import cost with duty, VAT, local taxes and shipping. Calculate your own car for free."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Open the calculator"
     },
     "related": "Related guides",
-    "disclaimer": "Information for orientation only; tax and customs authorities decide the final amounts. Rates as used by the calculator."
+    "disclaimer": "Information for orientation only; tax and customs authorities decide the final amounts. Rates as used by the calculator.",
+    "model": {
+      "metaTitle": "Import a {{car}} {{from}} – full cost | Carglo",
+      "metaDescription": "How much does it cost to import a {{year}} {{car}} {{from}}? About {{total}} with duty, VAT, taxes and shipping. See the breakdown and calculate your car.",
+      "h1": "Importing a {{car}} {{from}}: what it really costs",
+      "lead": "A {{year}} {{car}} bought for {{price}} costs about {{total}} registered in {{country}} – purchase, shipping, duty, VAT and local taxes included.",
+      "summaryTitle": "Total cost in {{country}}",
+      "summaryRange": "Realistic range: {{low}} – {{high}}",
+      "specs": {
+        "year": "Year",
+        "engine": "Engine",
+        "power": "Power",
+        "hp": "hp",
+        "fuel": "Fuel",
+        "price": "Typical price in {{origin}}"
+      },
+      "table": {
+        "title": "Cost breakdown",
+        "price": "Car with auction or dealer fees",
+        "transport": "Transport to your door (inland, ship, port)",
+        "duty": "Customs duty",
+        "vat": "Import VAT {{vatRate}}% ({{portCountry}})",
+        "registration": "Registration, inspection and paperwork",
+        "other": "Insurance and other costs",
+        "total": "Total"
+      },
+      "note": "Example calculated on {{date}} for {{country}} with the calculator's rates. The price, condition, location and route of your car change the result.",
+      "p1": "Customs duty is charged on the customs value – the price plus transport to the EU border – here {{duty}}. Import VAT of {{vatRate}}% is paid in {{portCountry}}, where the car is cleared at {{port}}: {{vat}}.",
+      "p2National": "On top comes {{nationalName}}: {{national}}. It depends on the engine, emissions or value, so it is often the item that decides whether the import pays off.",
+      "p2None": "{{country}} charges no registration or excise tax on this car, so after duty and VAT only the registration costs of about {{registration}} remain.",
+      "p3": "The car is collected in {{zone}} and shipped from {{departure}} to {{port}}. From purchase to registration plan on {{daysMin}}–{{daysMax}} days.",
+      "othersTitle": "Other popular models",
+      "faq1": {
+        "q": "How much does it cost to import a {{car}}?",
+        "a": "For a {{year}} {{car}} bought for {{price}}, about {{total}} in total (range {{low}} – {{high}}), including shipping, customs duty {{duty}}, VAT {{vat}} and registration."
+      },
+      "faq2": {
+        "q": "Which taxes do I pay on an imported {{car}}?",
+        "a": "Customs duty ({{duty}}), import VAT of {{vatRate}}% ({{vat}}) and, depending on the country, a registration or excise tax. The calculator shows the exact amounts for your car."
+      },
+      "from": {
+        "USA": "from the USA",
+        "CANADA": "from Canada",
+        "JAPAN": "from Japan",
+        "UAE": "from the UAE",
+        "UK": "from the UK"
+      }
+    }
   },
   "blog": {
     "title": "Car import blog",
@@ -1482,5 +1546,71 @@
     "confirmed": "Your subscription is confirmed. Thank you!",
     "unsubscribed": "You have been unsubscribed. You will not receive any more newsletters.",
     "invalid": "This link is invalid or has already been used."
+  },
+  "taxes": {
+    "eyebrow": "Free tool",
+    "title": "Car import tax calculator: customs duty, VAT and excise",
+    "lead": "Enter the price and engine of a car from the USA, Canada, Japan, the UAE or the UK and see the taxes for any EU country – with this month's customs exchange rates.",
+    "origin": "Bought in",
+    "price": "Purchase price ({{currency}})",
+    "year": "Year of manufacture",
+    "fuel": "Fuel",
+    "engine": "Engine size (cm³)",
+    "power": "Power (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "optional",
+    "destination": "Registered in",
+    "submit": "Calculate taxes",
+    "calculating": "Calculating…",
+    "resultTitle": "Taxes on this car",
+    "duty": "Customs duty {{rate}}%",
+    "vat": "Import VAT {{rate}}% ({{country}})",
+    "noNational": "{{country}}: no registration or excise tax on this car",
+    "total": "Taxes in total",
+    "note": "The customs value includes typical transport to {{port}}. Duty and VAT follow the customs exchange rate of this month.",
+    "fullCost": "Full door-to-door cost",
+    "error": "The calculation failed. Check the values and try again.",
+    "empty": "Fill in the car and press \"Calculate taxes\".",
+    "p1Title": "Customs duty",
+    "p1": "A passenger car from outside the EU pays 10% customs duty (pickups and vans up to 22%) on the customs value: the purchase price plus transport and insurance to the EU border. Cars over 30 years old in original condition can qualify as historic with 0% duty and reduced VAT.",
+    "p2Title": "Import VAT",
+    "p2": "VAT is paid in the country where the car is cleared, on the customs value plus duty. It is usually the biggest single tax – between 17% and 27% depending on the country.",
+    "p3Title": "Excise and registration tax",
+    "p3": "Many EU countries add their own tax at registration: excise in Poland (3.1% or 18.6% by engine size), BPM in the Netherlands, NoVA in Austria, a CO₂ malus in France and others. Some countries charge nothing.",
+    "countriesTitle": "Taxes and registration country by country"
+  },
+  "method": {
+    "eyebrow": "Methodology",
+    "title": "How we calculate the cost of importing a car",
+    "lead": "Carglo prices every step from the auction to registration with the same rules the authorities and carriers use. Here is where the numbers come from and where they are estimates.",
+    "updated": "Rates and rules last reviewed: {{date}}",
+    "s1": {
+      "title": "What the calculation includes",
+      "text": "The purchase with auction or dealer fees, transport to the port, ocean freight and insurance, port and customs agency fees, customs duty, import VAT, national taxes, delivery to your address, and the inspection and registration in your country.\nEvery result has three scenarios – optimistic, expected and pessimistic – because transport prices and some fees vary."
+    },
+    "s2": {
+      "title": "Customs duty and VAT",
+      "text": "Duty rates follow the EU Combined Nomenclature (TARIC): 10% for passenger cars, up to 22% for pickups and vans, and the historic-vehicle rules for cars over 30 years old. The customs value is the price plus transport and insurance to the EU border.\nForeign prices are converted with the customs exchange rate valid for the month (rates of the penultimate Wednesday of the previous month), other amounts with the current central bank rates."
+    },
+    "s3": {
+      "title": "National taxes",
+      "text": "Registration and excise taxes are modelled from each country's law: engine size, CO₂, power, weight, age and value, as the country requires. For Cyprus, Greece, Croatia and Malta the tax depends on official calculators – there we ask for the amount or show a range.\nWhen you enter CO₂ and power from the documents, the result is exact; otherwise we estimate them from the engine and fuel."
+    },
+    "s4": {
+      "title": "Transport and fees",
+      "text": "Inland haul in the country of purchase is priced from the distance between the pickup region and the departure port with typical carrier tariffs. Ocean freight, port and agency fees are typical prices for each route and EU port.\nThese items are estimates – a forwarder's quote for your car can differ, which is why we show a range."
+    },
+    "s5": {
+      "title": "Choosing the port",
+      "text": "The calculator prices every EU port door to door – freight, port fees, the VAT of the port country and delivery to your address – and proposes the cheapest. You can choose another port and compare."
+    },
+    "s6": {
+      "title": "What the calculation cannot know",
+      "text": "The real condition of the car, hidden damage, auction price changes, exchange rate movements after the quote and individual decisions of the authorities. The result is information, not a customs decision or tax advice."
+    },
+    "s7": {
+      "title": "Independence",
+      "text": "Carglo does not sell, buy or ship cars and takes no commission from importers for the result. We earn from the paid PDF report. Found a mistake or an outdated rate? Write to {{email}} – we correct it."
+    }
   }
 }

@@ -25,6 +25,8 @@ export const SITE = {
    * *.google-analytics.com) when switching it on.
    */
   analytics: { provider: null as 'plausible' | 'ga4' | null, id: '' },
+  /** Last review of tax rules, tariffs and freight rates - shown on the methodology page. */
+  ratesReviewed: '2026-10-25',
   /** Date and version of the terms; bump when the text changes (stored with every order). */
   termsVersion: '2026-10-24',
 } as const;

@@ -450,7 +450,9 @@
     "what": "Ce calculăm",
     "ctaHint": "Gratuit, fără înregistrare",
     "language": "Limbă",
-    "blog": "Blog"
+    "blog": "Blog",
+    "taxes": "Calculator taxe vamale",
+    "method": "Cum calculăm"
   },
   "footer": {
     "about": "Calculator independent al costurilor de import pentru mașini din afara UE. Nu vindem și nu importăm mașini – calculăm cât costă de fapt.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "Termeni și condiții | Carglo",
       "description": "Termenii calculatorului costurilor de import auto și ai raportului PDF: vânzător, plată, furnizare, retragere și reclamații."
+    },
+    "taxes": {
+      "title": "Calculator taxe vamale mașină din SUA – taxă vamală, TVA | Carglo",
+      "description": "Calculează taxa vamală, TVA-ul de import și taxa de înmatriculare pentru o mașină din SUA, Canada, Japonia, EAU sau Regatul Unit pentru orice țară din UE. Gratuit și actualizat."
+    },
+    "method": {
+      "title": "Cum calculăm costul importului unei mașini – surse și metodă | Carglo",
+      "description": "De unde vin tarifele noastre, cum estimăm transportul și ce nu poate ști rezultatul. Metodologia completă a calculatorului Carglo."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Import după țara de cumpărare",
       "countries": "Import în țările UE",
       "ports": "Porturi de vămuire din UE",
-      "all": "Toate ghidurile"
+      "all": "Toate ghidurile",
+      "models": "Costul importului pe model"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} porturi UE pentru import auto – taxe, TVA, transport | Carglo",
         "metaDescription": "Compară toate cele {{count}} porturi de vămuire auto din UE: taxe de terminal și comisionar, TVA la import, durata transportului și distanța până în România.",
         "sortedFrom": "Sortate după distanța rutieră până la: {{country}}"
+      },
+      "models": {
+        "title": "Cât costă importul unei mașini populare?",
+        "lead": "Exemple de costuri până la ușă pentru cele mai importate modele, calculate pentru: {{country}} – cu taxele, cursurile și tarifele de transport actuale.",
+        "metaTitle": "Costul importului unei mașini pe model – {{models}} exemple | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra și altele: costul complet al importului cu taxă vamală, TVA, taxe naționale și transport. Calculează-ți gratuit mașina."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Deschide calculatorul"
     },
     "related": "Ghiduri similare",
-    "disclaimer": "Informații cu caracter orientativ; sumele finale sunt stabilite de autoritățile fiscale și vamale. Cotele sunt cele folosite de calculator."
+    "disclaimer": "Informații cu caracter orientativ; sumele finale sunt stabilite de autoritățile fiscale și vamale. Cotele sunt cele folosite de calculator.",
+    "model": {
+      "metaTitle": "Import {{car}} {{from}} – cât costă | Carglo",
+      "metaDescription": "Cât costă importul unui {{car}} din {{year}} {{from}}? Aproximativ {{total}} cu taxă vamală, TVA, taxe și transport. Vezi defalcarea și calculează-ți mașina.",
+      "h1": "Import {{car}} {{from}}: cât costă de fapt",
+      "lead": "Un {{car}} din {{year}}, cumpărat cu {{price}}, costă înmatriculat aproximativ {{total}} (țara: {{country}}) – cu achiziția, transportul, taxa vamală, TVA-ul și taxele naționale.",
+      "summaryTitle": "Cost total – {{country}}",
+      "summaryRange": "Interval realist: {{low}} – {{high}}",
+      "specs": {
+        "year": "An",
+        "engine": "Motor",
+        "power": "Putere",
+        "hp": "CP",
+        "fuel": "Combustibil",
+        "price": "Preț tipic – {{origin}}"
+      },
+      "table": {
+        "title": "Defalcarea costurilor",
+        "price": "Mașina cu comisioane de licitație sau de dealer",
+        "transport": "Transport până la ușă (uscat, navă, port)",
+        "duty": "Taxă vamală",
+        "vat": "TVA la import {{vatRate}}% ({{portCountry}})",
+        "registration": "Înmatriculare, inspecție și formalități",
+        "other": "Asigurare și alte costuri",
+        "total": "Total"
+      },
+      "note": "Exemplu calculat pe {{date}} pentru: {{country}}, cu tarifele calculatorului. Prețul, starea, locația și ruta mașinii tale schimbă rezultatul.",
+      "p1": "Taxa vamală se aplică la valoarea în vamă – preț plus transport până la granița UE – aici {{duty}}. TVA-ul de import de {{vatRate}}% se plătește în țara de vămuire ({{portCountry}}, portul {{port}}): {{vat}}.",
+      "p2National": "La acestea se adaugă poziția „{{nationalName}}”: {{national}}. Depinde de motor, emisii sau valoare și de multe ori decide dacă importul merită.",
+      "p2None": "În această țară ({{country}}) mașina nu plătește taxă de înmatriculare sau accize – după taxa vamală și TVA rămân doar costurile de înmatriculare, aproximativ {{registration}}.",
+      "p3": "Mașina este preluată din {{zone}} și expediată din {{departure}} la {{port}}. De la achiziție la înmatriculare socotește {{daysMin}}–{{daysMax}} de zile.",
+      "othersTitle": "Alte modele populare",
+      "faq1": {
+        "q": "Cât costă importul unui {{car}}?",
+        "a": "Un {{car}} din {{year}}, cumpărat cu {{price}}, costă în total aproximativ {{total}} (interval {{low}} – {{high}}), cu transport, taxă vamală {{duty}}, TVA {{vat}} și înmatriculare."
+      },
+      "faq2": {
+        "q": "Ce taxe plătesc pentru un {{car}} importat?",
+        "a": "Taxa vamală ({{duty}}), TVA-ul de import de {{vatRate}}% ({{vat}}) și, în funcție de țară, o taxă de înmatriculare sau accize. Calculatorul arată sumele exacte pentru mașina ta."
+      },
+      "from": {
+        "USA": "din SUA",
+        "CANADA": "din Canada",
+        "JAPAN": "din Japonia",
+        "UAE": "din EAU",
+        "UK": "din Regatul Unit"
+      }
+    }
   },
   "blog": {
     "title": "Blog despre importul de mașini",
@@ -1482,5 +1546,71 @@
     "confirmed": "Abonarea ta este confirmată. Mulțumim!",
     "unsubscribed": "Te-ai dezabonat și nu vei mai primi newslettere.",
     "invalid": "Acest link nu este valid sau a fost deja folosit."
+  },
+  "taxes": {
+    "eyebrow": "Instrument gratuit",
+    "title": "Calculator taxă vamală, TVA și taxe de înmatriculare pentru mașini importate",
+    "lead": "Introdu prețul și motorul unei mașini din SUA, Canada, Japonia, EAU sau Regatul Unit și vezi taxele pentru orice țară din UE – cu cursul vamal al acestei luni.",
+    "origin": "Cumpărată în",
+    "price": "Preț de achiziție ({{currency}})",
+    "year": "Anul fabricației",
+    "fuel": "Combustibil",
+    "engine": "Capacitate cilindrică (cm³)",
+    "power": "Putere (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "opțional",
+    "destination": "Țara înmatriculării",
+    "submit": "Calculează taxele",
+    "calculating": "Se calculează…",
+    "resultTitle": "Taxele pentru această mașină",
+    "duty": "Taxă vamală {{rate}}%",
+    "vat": "TVA la import {{rate}}% ({{country}})",
+    "noNational": "{{country}}: fără taxă de înmatriculare sau accize pentru această mașină",
+    "total": "Total taxe",
+    "note": "Valoarea în vamă include un transport tipic până la {{port}}. Taxa vamală și TVA-ul urmează cursul vamal al lunii.",
+    "fullCost": "Cost complet până la ușă",
+    "error": "Calculul nu a reușit. Verifică datele și încearcă din nou.",
+    "empty": "Completează datele mașinii și apasă „Calculează taxele”.",
+    "p1Title": "Taxa vamală",
+    "p1": "Un autoturism din afara UE plătește 10% taxă vamală (pick-up-uri și utilitare până la 22%) din valoarea în vamă: prețul de achiziție plus transportul și asigurarea până la granița UE. Mașinile de peste 30 de ani în stare originală pot fi istorice – cu taxă vamală 0% și TVA redus.",
+    "p2Title": "TVA la import",
+    "p2": "TVA-ul se plătește în țara de vămuire, la valoarea în vamă plus taxa vamală. De obicei este cea mai mare taxă – între 17% și 27%, în funcție de țară.",
+    "p3Title": "Accize și taxă de înmatriculare",
+    "p3": "Multe țări din UE adaugă propria taxă la înmatriculare: accize în Polonia, BPM în Țările de Jos, NoVA în Austria, malus în Franța și altele. România și alte câteva țări nu percep o astfel de taxă.",
+    "countriesTitle": "Taxe și înmatriculare pe țări"
+  },
+  "method": {
+    "eyebrow": "Metodologie",
+    "title": "Cum calculăm costul importului unei mașini",
+    "lead": "Carglo evaluează fiecare pas, de la licitație la înmatriculare, după aceleași reguli folosite de autorități și transportatori. Iată de unde vin cifrele și unde sunt estimări.",
+    "updated": "Tarife și reguli verificate ultima dată: {{date}}",
+    "s1": {
+      "title": "Ce include calculul",
+      "text": "Achiziția cu comisioane de licitație sau dealer, transportul până la port, navlul maritim și asigurarea, taxele portuare și de comisionar vamal, taxa vamală, TVA-ul de import, taxele naționale, livrarea la adresa ta și inspecția și înmatricularea în țara ta.\nFiecare rezultat are trei scenarii – optimist, așteptat și pesimist – pentru că prețurile transportului și unele taxe variază."
+    },
+    "s2": {
+      "title": "Taxă vamală și TVA",
+      "text": "Cotele urmează Nomenclatura Combinată a UE (TARIC): 10% pentru autoturisme, până la 22% pentru pick-up-uri și utilitare, plus regulile pentru vehiculele istorice de peste 30 de ani. Valoarea în vamă este prețul plus transportul și asigurarea până la granița UE.\nValutele sunt convertite la cursul vamal valabil în lună (cursurile din penultima miercuri a lunii anterioare), celelalte sume la cursurile actuale ale băncii centrale."
+    },
+    "s3": {
+      "title": "Taxe naționale",
+      "text": "Taxele de înmatriculare și accizele sunt modelate după legea fiecărei țări: capacitate cilindrică, CO₂, putere, masă, vechime și valoare – așa cum cere țara. În Cipru, Grecia, Croația și Malta taxa rezultă din calculatoare oficiale – acolo cerem suma sau afișăm un interval.\nDacă introduci CO₂ și puterea din documente, rezultatul este exact; altfel le estimăm din motor și combustibil."
+    },
+    "s4": {
+      "title": "Transport și taxe",
+      "text": "Transportul terestru în țara de achiziție este evaluat după distanța dintre regiunea de preluare și portul de plecare, cu tarife tipice ale transportatorilor. Navlul maritim și taxele portuare și de agenție sunt prețuri tipice pentru fiecare rută și port din UE.\nAceste poziții sunt estimări – oferta unui expeditor pentru mașina ta poate diferi, de aceea afișăm un interval."
+    },
+    "s5": {
+      "title": "Alegerea portului",
+      "text": "Calculatorul evaluează fiecare port din UE până la ușă – navlu, taxe portuare, TVA-ul țării portului și livrarea la adresa ta – și îl propune pe cel mai ieftin. Poți alege alt port și compara."
+    },
+    "s6": {
+      "title": "Ce nu poate ști calculul",
+      "text": "Starea reală a mașinii, daunele ascunse, schimbările de preț la licitații, mișcările cursului după calcul și deciziile individuale ale autorităților. Rezultatul are caracter informativ – nu este o decizie vamală și nici consultanță fiscală."
+    },
+    "s7": {
+      "title": "Independență",
+      "text": "Carglo nu vinde, nu cumpără și nu importă mașini și nu primește comisioane de la importatori pentru rezultat. Câștigăm din raportul PDF plătit. Ai găsit o greșeală sau un tarif depășit? Scrie la {{email}} – corectăm."
+    }
   }
 }

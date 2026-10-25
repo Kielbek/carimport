@@ -450,7 +450,9 @@
     "what": "Wat we berekenen",
     "ctaHint": "Gratis, zonder registratie",
     "language": "Taal",
-    "blog": "Blog"
+    "blog": "Blog",
+    "taxes": "Invoerrechten- en belastingcalculator",
+    "method": "Zo rekenen we"
   },
   "footer": {
     "about": "Onafhankelijke calculator voor de importkosten van auto’s van buiten de EU. Wij verkopen en importeren geen auto’s – wij berekenen wat ze echt kosten.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "Algemene voorwaarden | Carglo",
       "description": "Voorwaarden voor de calculator van importkosten van auto’s en het PDF-rapport: verkoper, betaling, levering, herroeping en klachten."
+    },
+    "taxes": {
+      "title": "Invoerrechten berekenen voor een importauto – btw, BPM | Carglo",
+      "description": "Bereken invoerrechten, invoer-btw en BPM of registratiebelasting voor een auto uit de VS, Canada, Japan, de VAE of het VK voor elk EU-land. Gratis en actueel."
+    },
+    "method": {
+      "title": "Zo berekenen we de kosten van een importauto – bronnen en methode | Carglo",
+      "description": "Waar onze tarieven vandaan komen, hoe we transport schatten en wat de uitkomst niet kan weten. De volledige methodiek van de Carglo-calculator."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Import per land van aankoop",
       "countries": "Import naar EU-landen",
       "ports": "Inklaringshavens in de EU",
-      "all": "Alle gidsen"
+      "all": "Alle gidsen",
+      "models": "Importkosten per model"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} EU-havens voor auto-import – kosten, btw, vaartijden | Carglo",
         "metaDescription": "Vergelijk alle {{count}} EU-inklaringshavens voor auto’s: terminal- en douane-agentkosten, invoer-btw, vaartijden en afstand over de weg naar Nederland.",
         "sortedFrom": "Gesorteerd op afstand over de weg naar: {{country}}"
+      },
+      "models": {
+        "title": "Wat kost het importeren van een populaire auto?",
+        "lead": "Voorbeelden tot aan de deur voor de meest geïmporteerde modellen, berekend voor {{country}} met actuele belastingen, koersen en vracht.",
+        "metaTitle": "Importkosten van een auto per model – {{models}} voorbeelden | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra en meer: de volledige importkosten met invoerrechten, btw, BPM en transport. Bereken gratis je eigen auto."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Open de calculator"
     },
     "related": "Gerelateerde gidsen",
-    "disclaimer": "Informatie alleen ter oriëntatie; de belastingdienst en de douane stellen de definitieve bedragen vast. Tarieven zoals gebruikt door de calculator."
+    "disclaimer": "Informatie alleen ter oriëntatie; de belastingdienst en de douane stellen de definitieve bedragen vast. Tarieven zoals gebruikt door de calculator.",
+    "model": {
+      "metaTitle": "{{car}} {{from}} importeren – kosten | Carglo",
+      "metaDescription": "Wat kost het om een {{car}} uit {{year}} {{from}} te importeren? Ongeveer {{total}} met invoerrechten, btw, belastingen en transport. Bekijk de opbouw en bereken je auto.",
+      "h1": "{{car}} {{from}} importeren: wat het echt kost",
+      "lead": "Een {{car}} uit {{year}}, gekocht voor {{price}}, kost op kenteken ongeveer {{total}} (land: {{country}}) – aankoop, transport, invoerrechten, btw en nationale belastingen inbegrepen.",
+      "summaryTitle": "Totale kosten – {{country}}",
+      "summaryRange": "Realistische bandbreedte: {{low}} – {{high}}",
+      "specs": {
+        "year": "Bouwjaar",
+        "engine": "Motor",
+        "power": "Vermogen",
+        "hp": "pk",
+        "fuel": "Brandstof",
+        "price": "Typische prijs – {{origin}}"
+      },
+      "table": {
+        "title": "Kostenopbouw",
+        "price": "Auto met veiling- of dealerkosten",
+        "transport": "Transport tot je deur (land, schip, haven)",
+        "duty": "Invoerrechten",
+        "vat": "Invoer-btw {{vatRate}}% ({{portCountry}})",
+        "registration": "Registratie, keuring en papierwerk",
+        "other": "Verzekering en overige kosten",
+        "total": "Totaal"
+      },
+      "note": "Voorbeeld berekend op {{date}} voor {{country}} met de tarieven van de calculator. Prijs, staat, locatie en route van je auto veranderen de uitkomst.",
+      "p1": "Invoerrechten worden geheven over de douanewaarde – prijs plus transport tot de EU-grens – hier {{duty}}. De invoer-btw van {{vatRate}}% betaal je in het land van inklaring ({{portCountry}}, haven {{port}}): {{vat}}.",
+      "p2National": "Daarbij komt de post ‘{{nationalName}}’: {{national}}. Die hangt af van motor, uitstoot of waarde en bepaalt vaak of de import loont.",
+      "p2None": "In dit land ({{country}}) betaalt deze auto geen registratiebelasting of accijns – na invoerrechten en btw blijven alleen de registratiekosten van ongeveer {{registration}} over.",
+      "p3": "De auto wordt opgehaald in {{zone}} en verscheept van {{departure}} naar {{port}}. Reken van aankoop tot registratie op {{daysMin}}–{{daysMax}} dagen.",
+      "othersTitle": "Andere populaire modellen",
+      "faq1": {
+        "q": "Wat kost het importeren van een {{car}}?",
+        "a": "Een {{car}} uit {{year}}, gekocht voor {{price}}, kost in totaal ongeveer {{total}} (bandbreedte {{low}} – {{high}}), inclusief transport, invoerrechten {{duty}}, btw {{vat}} en registratie."
+      },
+      "faq2": {
+        "q": "Welke belastingen betaal ik op een geïmporteerde {{car}}?",
+        "a": "Invoerrechten ({{duty}}), invoer-btw van {{vatRate}}% ({{vat}}) en afhankelijk van het land een registratiebelasting of accijns, zoals de BPM. De calculator toont de exacte bedragen voor jouw auto."
+      },
+      "from": {
+        "USA": "uit de VS",
+        "CANADA": "uit Canada",
+        "JAPAN": "uit Japan",
+        "UAE": "uit de VAE",
+        "UK": "uit het VK"
+      }
+    }
   },
   "blog": {
     "title": "Blog over auto-import",
@@ -1482,5 +1546,71 @@
     "confirmed": "Je inschrijving is bevestigd. Bedankt!",
     "unsubscribed": "Je bent afgemeld en ontvangt geen nieuwsbrieven meer.",
     "invalid": "Deze link is ongeldig of al gebruikt."
+  },
+  "taxes": {
+    "eyebrow": "Gratis tool",
+    "title": "Invoerrechten, btw en BPM berekenen voor een importauto",
+    "lead": "Vul prijs en motor in van een auto uit de VS, Canada, Japan, de VAE of het VK en zie de belastingen voor elk EU-land – met de douanekoers van deze maand.",
+    "origin": "Gekocht in",
+    "price": "Aankoopprijs ({{currency}})",
+    "year": "Bouwjaar",
+    "fuel": "Brandstof",
+    "engine": "Cilinderinhoud (cm³)",
+    "power": "Vermogen (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "optioneel",
+    "destination": "Registratie in",
+    "submit": "Belastingen berekenen",
+    "calculating": "Bezig met berekenen…",
+    "resultTitle": "Belastingen op deze auto",
+    "duty": "Invoerrechten {{rate}}%",
+    "vat": "Invoer-btw {{rate}}% ({{country}})",
+    "noNational": "{{country}}: geen registratiebelasting of accijns voor deze auto",
+    "total": "Belastingen totaal",
+    "note": "De douanewaarde bevat typisch transport tot {{port}}. Invoerrechten en btw volgen de douanekoers van deze maand.",
+    "fullCost": "Volledige kosten tot aan de deur",
+    "error": "Berekenen is mislukt. Controleer de gegevens en probeer het opnieuw.",
+    "empty": "Vul de gegevens van de auto in en klik op ‘Belastingen berekenen’.",
+    "p1Title": "Invoerrechten",
+    "p1": "Een personenauto van buiten de EU betaalt 10% invoerrechten (pick-ups en bestelauto's tot 22%) over de douanewaarde: aankoopprijs plus transport en verzekering tot de EU-grens. Auto's ouder dan 30 jaar in originele staat kunnen als historisch gelden – met 0% invoerrechten en verlaagde btw.",
+    "p2Title": "Invoer-btw",
+    "p2": "Btw betaal je in het land van inklaring, over de douanewaarde plus invoerrechten. Meestal is dit de grootste belasting – tussen 17% en 27% afhankelijk van het land.",
+    "p3Title": "BPM, accijns en registratiebelasting",
+    "p3": "Veel EU-landen heffen bij registratie een eigen belasting: de BPM in Nederland, de accijns in Polen, de NoVA in Oostenrijk, de CO₂-malus in Frankrijk en andere. Sommige landen heffen niets.",
+    "countriesTitle": "Belastingen en registratie per land"
+  },
+  "method": {
+    "eyebrow": "Methodiek",
+    "title": "Zo berekenen we de kosten van het importeren van een auto",
+    "lead": "Carglo rekent elke stap, van veiling tot registratie, met dezelfde regels die overheden en vervoerders gebruiken. Hier lees je waar de cijfers vandaan komen en waar het schattingen zijn.",
+    "updated": "Tarieven en regels laatst gecontroleerd: {{date}}",
+    "s1": {
+      "title": "Wat de berekening omvat",
+      "text": "De aankoop met veiling- of dealerkosten, transport naar de haven, zeevracht en verzekering, haven- en douane-expediteurkosten, invoerrechten, invoer-btw, nationale belastingen, levering op je adres en de keuring en registratie in je land.\nElke uitkomst heeft drie scenario's – optimistisch, verwacht en pessimistisch – omdat transportprijzen en sommige kosten schommelen."
+    },
+    "s2": {
+      "title": "Invoerrechten en btw",
+      "text": "De tarieven volgen de Gecombineerde Nomenclatuur van de EU (TARIC): 10% voor personenauto's, tot 22% voor pick-ups en bestelauto's, en de regels voor historische voertuigen ouder dan 30 jaar. De douanewaarde is de prijs plus transport en verzekering tot de EU-grens.\nVreemde valuta rekenen we om tegen de douanekoers van de maand (koersen van de voorlaatste woensdag van de vorige maand), andere bedragen tegen de actuele koersen van de centrale bank."
+    },
+    "s3": {
+      "title": "Nationale belastingen",
+      "text": "Registratiebelasting en accijns modelleren we volgens de wet van elk land: cilinderinhoud, CO₂, vermogen, gewicht, leeftijd en waarde, zoals het land vereist. In Cyprus, Griekenland, Kroatië en Malta volgt de belasting uit officiële calculators – daar vragen we het bedrag of tonen we een bandbreedte.\nAls je CO₂ en vermogen uit de papieren invult, is de uitkomst exact; anders schatten we ze op basis van motor en brandstof."
+    },
+    "s4": {
+      "title": "Transport en kosten",
+      "text": "Het vervoer over land in het land van aankoop berekenen we uit de afstand tussen ophaalregio en vertrekhaven met typische vervoerderstarieven. Zeevracht, haven- en agentkosten zijn typische prijzen per route en EU-haven.\nDeze posten zijn schattingen – de offerte van een expediteur voor jouw auto kan afwijken, daarom tonen we een bandbreedte."
+    },
+    "s5": {
+      "title": "Keuze van de haven",
+      "text": "De calculator rekent elke EU-haven tot aan de deur door – vracht, havenkosten, de btw van het havenland en levering op je adres – en stelt de goedkoopste voor. Je kunt een andere haven kiezen en vergelijken."
+    },
+    "s6": {
+      "title": "Wat de berekening niet kan weten",
+      "text": "De werkelijke staat van de auto, verborgen schade, prijswijzigingen op veilingen, koersbewegingen na de berekening en individuele beslissingen van overheden. De uitkomst is informatief, geen douanebeslissing en geen belastingadvies."
+    },
+    "s7": {
+      "title": "Onafhankelijkheid",
+      "text": "Carglo verkoopt, koopt en verscheept geen auto's en ontvangt geen commissie van importeurs voor de uitkomst. We verdienen aan het betaalde PDF-rapport. Een fout of verouderd tarief gezien? Mail naar {{email}} – we passen het aan."
+    }
   }
 }

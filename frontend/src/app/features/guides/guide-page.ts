@@ -11,6 +11,9 @@ import { Flag } from '../../shared/flag/flag';
 import { Icon } from '../../shared/icon/icon';
 import { IconName } from '../../shared/icon/icons';
 import { COUNTRY_FACTS } from './country-facts';
+import { GUIDE_MODELS, MODEL_EXAMPLES, MODEL_EXAMPLES_DATE } from './model-data.generated';
+import { GuideModel, ModelExample } from './model-types';
+import { DEPARTURE_PORTS, ORIGINS, PICKUP_ZONES } from '../calculator/calculator.options';
 import {
   GUIDE_COUNTRIES,
   GUIDE_ORIGINS,
@@ -322,6 +325,96 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
               }
             }
           }
+
+          @case ('models') {
+            @if (!r.item) {
+              <header class="mt-6 max-w-3xl">
+                <p class="eyebrow">{{ 'guide.nav.title' | translate }}</p>
+                <h1 class="h-section mt-4">{{ 'guide.hub.models.title' | translate }}</h1>
+                <p class="lead mt-4">{{ 'guide.hub.models.lead' | translate: { country: countryName(destination()) } }}</p>
+              </header>
+              <ul class="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                @for (m of models; track m.id) {
+                  <li>
+                    <a [routerLink]="link({ section: 'models', item: m.id })" class="flex items-center gap-3 rounded-[4px] border border-line p-4 transition hover:border-brand">
+                      <app-flag [code]="m.origin" class="w-8" />
+                      <span class="min-w-0 flex-1">
+                        <span class="block truncate font-bold">{{ m.make }} {{ m.model }}</span>
+                        <span class="text-xs text-muted">{{ m.year }} · {{ m.engine }}</span>
+                      </span>
+                      <span class="text-sm font-bold tabular-nums text-brand-text">≈ {{ money(exampleOf(m.id).total, exampleOf(m.id).currency) }}</span>
+                    </a>
+                  </li>
+                }
+              </ul>
+              <p class="mt-4 text-xs text-muted">{{ 'guide.model.note' | translate: { date: examplesDate, country: countryName(destination()) } }}</p>
+            } @else {
+              <!-- ============ MODEL GUIDE ============ -->
+              @if (model(); as m) {
+                @if (example(); as e) {
+                  <header class="mt-6 grid gap-6 md:grid-cols-[1fr_auto] md:items-start">
+                    <div class="max-w-3xl">
+                      <h1 class="h-section">{{ 'guide.model.h1' | translate: params() }}</h1>
+                      <p class="lead mt-4">{{ 'guide.model.lead' | translate: params() }}</p>
+                    </div>
+                    <app-flag [code]="m.origin" class="hidden w-24 md:block" />
+                  </header>
+
+                  <div class="mt-10 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)]">
+                    <section class="rounded-[6px] border-2 border-brand bg-panel p-6">
+                      <p class="eyebrow">{{ 'guide.model.summaryTitle' | translate: params() }}</p>
+                      <p class="mt-3 text-[clamp(2rem,5vw,2.8rem)] font-extrabold leading-none tabular-nums text-brand-text">≈ {{ money(e.total, e.currency) }}</p>
+                      <p class="mt-2 text-sm font-semibold text-fg/80">{{ 'guide.model.summaryRange' | translate: params() }}</p>
+                      <dl class="mt-6 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+                        <div><dt class="text-muted">{{ 'guide.model.specs.year' | translate }}</dt><dd class="font-semibold">{{ m.year }}</dd></div>
+                        <div><dt class="text-muted">{{ 'guide.model.specs.engine' | translate }}</dt><dd class="font-semibold">{{ m.engine }}{{ m.cc ? ' · ' + num(m.cc) + ' cm³' : '' }}</dd></div>
+                        <div><dt class="text-muted">{{ 'guide.model.specs.power' | translate }}</dt><dd class="font-semibold">{{ m.kw }} kW ({{ hp(m.kw) }} {{ 'guide.model.specs.hp' | translate }})</dd></div>
+                        <div><dt class="text-muted">{{ 'guide.model.specs.fuel' | translate }}</dt><dd class="font-semibold">{{ 'fuel.' + m.fuel | translate }}{{ m.co2 ? ' · ' + m.co2 + ' g/km CO₂' : '' }}</dd></div>
+                        <div class="col-span-2"><dt class="text-muted">{{ 'guide.model.specs.price' | translate: params() }}</dt><dd class="font-semibold">{{ money(m.price, originCurrency(m.origin)) }}</dd></div>
+                      </dl>
+                    </section>
+
+                    <section>
+                      <h2 class="text-2xl font-extrabold">{{ 'guide.model.table.title' | translate: params() }}</h2>
+                      <table class="mt-5 w-full text-[15px]">
+                        <tbody class="divide-y divide-line border-y border-line">
+                          <tr><th scope="row" class="py-2.5 text-left font-normal">{{ 'guide.model.table.price' | translate }}</th><td class="py-2.5 text-right tabular-nums">{{ money(e.price, e.currency) }}</td></tr>
+                          <tr><th scope="row" class="py-2.5 text-left font-normal">{{ 'guide.model.table.transport' | translate }}</th><td class="py-2.5 text-right tabular-nums">{{ money(e.transport, e.currency) }}</td></tr>
+                          <tr><th scope="row" class="py-2.5 text-left font-normal">{{ 'guide.model.table.duty' | translate }}</th><td class="py-2.5 text-right tabular-nums">{{ money(e.duty, e.currency) }}</td></tr>
+                          <tr><th scope="row" class="py-2.5 text-left font-normal">{{ 'guide.model.table.vat' | translate: params() }}</th><td class="py-2.5 text-right tabular-nums">{{ money(e.vat, e.currency) }}</td></tr>
+                          @for (n of e.national; track n.code) {
+                            <tr><th scope="row" class="py-2.5 text-left font-normal">{{ 'cost.' + n.code | translate }}</th><td class="py-2.5 text-right tabular-nums">{{ money(n.amount, e.currency) }}</td></tr>
+                          }
+                          <tr><th scope="row" class="py-2.5 text-left font-normal">{{ 'guide.model.table.registration' | translate }}</th><td class="py-2.5 text-right tabular-nums">{{ money(e.registration, e.currency) }}</td></tr>
+                          @if (e.other > 0) {
+                            <tr><th scope="row" class="py-2.5 text-left font-normal">{{ 'guide.model.table.other' | translate }}</th><td class="py-2.5 text-right tabular-nums">{{ money(e.other, e.currency) }}</td></tr>
+                          }
+                          <tr class="font-extrabold"><th scope="row" class="py-3 text-left">{{ 'guide.model.table.total' | translate }}</th><td class="py-3 text-right tabular-nums">≈ {{ money(e.total, e.currency) }}</td></tr>
+                        </tbody>
+                      </table>
+                      <p class="mt-3 text-xs text-muted">{{ 'guide.model.note' | translate: params() }}</p>
+                    </section>
+                  </div>
+
+                  <section class="mt-12 space-y-4 leading-relaxed text-fg/90">
+                    <p>{{ 'guide.model.p1' | translate: params() }}</p>
+                    <p>{{ (e.national.length ? 'guide.model.p2National' : 'guide.model.p2None') | translate: params() }}</p>
+                    <p>{{ 'guide.model.p3' | translate: params() }}</p>
+                  </section>
+
+                  <section class="mt-12">
+                    <h2 class="text-2xl font-extrabold">{{ 'guide.model.othersTitle' | translate }}</h2>
+                    <div class="mt-5 flex flex-wrap gap-3">
+                      @for (o of otherModels(); track o.id) {
+                        <a [routerLink]="link({ section: 'models', item: o.id })" class="chip"><app-flag [code]="o.origin" class="w-5" /> {{ o.make }} {{ o.model }}</a>
+                      }
+                    </div>
+                    <p class="mt-5 text-sm"><a [routerLink]="link({ section: 'origins', item: m.origin })" class="font-semibold text-brand-text underline underline-offset-2">{{ 'guide.origin.' + m.origin + '.h1' | translate }}</a></p>
+                  </section>
+                }
+              }
+            }
+          }
         }
 
         <!-- FAQ -->
@@ -388,7 +481,9 @@ export class GuidePage {
 
   protected readonly origins = GUIDE_ORIGINS;
   protected readonly ports = GUIDE_PORTS;
-  protected readonly sections: GuideSection[] = ['origins', 'countries', 'ports'];
+  protected readonly sections: GuideSection[] = ['origins', 'countries', 'ports', 'models'];
+  protected readonly models = GUIDE_MODELS;
+  protected readonly examplesDate = MODEL_EXAMPLES_DATE;
   protected readonly stepIcons = STEP_ICONS;
 
   protected readonly ref = computed(() => resolveGuide(this.lang.current(), this.section() ?? '', this.item() ?? null));
@@ -411,6 +506,22 @@ export class GuidePage {
     const c = this.country();
     return c ? COUNTRY_FACTS[c.code] : null;
   });
+  /** Country the model examples are priced for: the language's calculator default (English: Germany). */
+  protected readonly destination = computed(() => this.lang.info().country);
+  protected readonly model = computed<GuideModel | null>(() => {
+    const r = this.ref();
+    return r?.section === 'models' && r.item ? GUIDE_MODELS.find((m) => m.id === r.item)! : null;
+  });
+  protected readonly example = computed<ModelExample | null>(() => {
+    const m = this.model();
+    return m ? this.exampleOf(m.id) : null;
+  });
+  /** Six other models, same origin first. */
+  protected readonly otherModels = computed(() => {
+    const m = this.model();
+    return m ? GUIDE_MODELS.filter((o) => o.id !== m.id).sort((a, b) => Number(b.origin === m.origin) - Number(a.origin === m.origin)).slice(0, 8) : [];
+  });
+
   protected readonly port = computed<GuidePort | null>(() => {
     const r = this.ref();
     return r?.section === 'ports' && r.item ? this.portOf(r.item) : null;
@@ -475,8 +586,39 @@ export class GuidePage {
       .slice(0, 6);
   });
 
-  /** Placeholder values for country and port texts. */
+  /** Placeholder values for country, port and model texts. */
   protected readonly params = computed<Record<string, unknown>>(() => {
+    const m = this.model();
+    const e = this.example();
+    if (m && e) {
+      const cur = e.currency;
+      const national = e.national.reduce((sum, n) => sum + n.amount, 0);
+      return {
+        car: `${m.make} ${m.model}`,
+        year: m.year,
+        engine: m.engine,
+        origin: this.translate.instant(`origin.${m.origin}`),
+        from: this.translate.instant(`guide.model.from.${m.origin}`),
+        country: this.countryName(this.destination()),
+        price: this.money(m.price, this.originCurrency(m.origin)),
+        total: this.money(e.total, cur),
+        low: this.money(e.low, cur),
+        high: this.money(e.high, cur),
+        duty: this.money(e.duty, cur),
+        vat: this.money(e.vat, cur),
+        vatRate: this.pct(e.vatRate),
+        portCountry: this.countryName(e.portCode.slice(0, 2)),
+        port: e.port,
+        national: this.money(national, cur),
+        nationalName: e.national.length ? this.translate.instant(`cost.${e.national[0].code}`) : '',
+        registration: this.money(e.registration, cur),
+        zone: PICKUP_ZONES[m.origin].find((z) => z.code === m.zone)?.name ?? m.zone,
+        departure: DEPARTURE_PORTS[e.departure] ?? e.departure,
+        daysMin: e.days[0],
+        daysMax: e.days[1],
+        date: this.examplesDate,
+      };
+    }
     const c = this.country();
     if (c) {
       const f = COUNTRY_FACTS[c.code];
@@ -501,7 +643,8 @@ export class GuidePage {
     if (!r?.item) {
       return {};
     }
-    return r.section === 'origins' ? { from: r.item } : r.section === 'countries' ? { to: r.item } : { port: r.item };
+    return r.section === 'origins' ? { from: r.item } : r.section === 'countries' ? { to: r.item }
+      : r.section === 'models' ? { model: r.item } : { port: r.item };
   });
 
   protected readonly crumbs = computed(() => {
@@ -540,6 +683,8 @@ export class GuidePage {
         return [pair('guide.country.faq1'), pair('guide.country.faq2'), pair('guide.origin.common.faqPorts')];
       case 'ports':
         return [pair('guide.port.faq1'), pair('guide.port.faq2'), pair('guide.origin.common.faqBinding')];
+      case 'models':
+        return [pair('guide.model.faq1'), pair('guide.model.faq2'), pair('guide.origin.common.faqBinding')];
     }
   });
 
@@ -554,14 +699,16 @@ export class GuidePage {
 
   private applySeo(r: GuideRef, lang: Lang): void {
     const t = (k: string, p?: Record<string, unknown>) => this.translate.instant(k, p) as string;
-    const p = { ...this.params(), count: GUIDE_PORTS.length };
+    const p = { ...this.params(), count: GUIDE_PORTS.length, models: GUIDE_MODELS.length, country: this.params()['country'] ?? this.countryName(this.destination()) };
     const [title, description] = !r.item
       ? [t(`guide.hub.${r.section}.metaTitle`, p), t(`guide.hub.${r.section}.metaDescription`, p)]
       : r.section === 'origins'
         ? [t(`guide.origin.${r.item}.metaTitle`), t(`guide.origin.${r.item}.metaDescription`)]
         : r.section === 'countries'
           ? [t('guide.country.metaTitle', p), t('guide.country.metaDescription', p)]
-          : [t('guide.port.metaTitle', p), t('guide.port.metaDescription', p)];
+          : r.section === 'models'
+            ? [t('guide.model.metaTitle', p), t('guide.model.metaDescription', p)]
+            : [t('guide.port.metaTitle', p), t('guide.port.metaDescription', p)];
     const about =
       r.section === 'countries' && r.item
         ? { '@type': 'Country', name: this.countryName(r.item) }
@@ -597,7 +744,24 @@ export class GuidePage {
         return this.countryName(r.item!);
       case 'ports':
         return this.portOf(r.item!).name;
+      case 'models': {
+        const m = GUIDE_MODELS.find((x) => x.id === r.item)!;
+        return `${m.make} ${m.model}`;
+      }
     }
+  }
+
+  protected exampleOf(id: string): ModelExample {
+    return MODEL_EXAMPLES[id][this.destination()];
+  }
+
+  protected originCurrency(origin: string): string {
+    return ORIGINS.find((o) => o.code === origin)!.currency;
+  }
+
+  /** Metric horsepower. */
+  protected hp(kw: number): number {
+    return Math.round(kw * 1.35962);
   }
 
   protected countryName(code: string): string {

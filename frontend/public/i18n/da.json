@@ -450,7 +450,9 @@
     "what": "Hvad vi beregner",
     "ctaHint": "Gratis, uden oprettelse",
     "language": "Sprog",
-    "blog": "Blog"
+    "blog": "Blog",
+    "taxes": "Told- og afgiftsberegner",
+    "method": "Sådan beregner vi"
   },
   "footer": {
     "about": "Uafhængig beregner af importomkostninger for biler fra lande uden for EU. Vi hverken sælger eller importerer biler – vi regner ud, hvad de reelt koster.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "Handelsbetingelser | Carglo",
       "description": "Betingelser for beregneren af importomkostninger for biler og PDF-rapporten: sælger, betaling, levering, fortrydelse og reklamationer."
+    },
+    "taxes": {
+      "title": "Toldberegner til importbil – told, moms, registreringsafgift | Carglo",
+      "description": "Beregn told, importmoms og registreringsafgift for en bil fra USA, Canada, Japan, De Forenede Arabiske Emirater eller Storbritannien til ethvert EU-land. Gratis og opdateret."
+    },
+    "method": {
+      "title": "Sådan beregner vi prisen på bilimport – kilder og metode | Carglo",
+      "description": "Hvor vores satser kommer fra, hvordan vi anslår transporten, og hvad resultatet ikke kan vide. Den fulde metode bag Carglo-beregneren."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Import efter købsland",
       "countries": "Import til EU-lande",
       "ports": "Fortoldningshavne i EU",
-      "all": "Alle guides"
+      "all": "Alle guides",
+      "models": "Importpris pr. model"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} EU-havne til bilimport – gebyrer, moms, sejltid | Carglo",
         "metaDescription": "Sammenlign alle {{count}} fortoldningshavne for biler i EU: terminal- og speditørgebyrer, importmoms, sejltider og vejafstande til Danmark.",
         "sortedFrom": "Sorteret efter vejafstand til: {{country}}"
+      },
+      "models": {
+        "title": "Hvad koster det at importere en populær bil?",
+        "lead": "Eksempler på priser helt til døren for de mest importerede modeller, beregnet for {{country}} med aktuelle afgifter, kurser og fragt.",
+        "metaTitle": "Pris på bilimport pr. model – {{models}} eksempler | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra og flere: den fulde importpris med told, moms, registreringsafgift og transport. Beregn din egen bil gratis."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Åbn beregneren"
     },
     "related": "Relaterede guides",
-    "disclaimer": "Oplysningerne er kun vejledende; skatte- og toldmyndighederne fastsætter de endelige beløb. Satser som anvendt i beregneren."
+    "disclaimer": "Oplysningerne er kun vejledende; skatte- og toldmyndighederne fastsætter de endelige beløb. Satser som anvendt i beregneren.",
+    "model": {
+      "metaTitle": "Importér en {{car}} {{from}} – pris | Carglo",
+      "metaDescription": "Hvad koster det at importere en {{car}} fra {{year}} {{from}}? Ca. {{total}} med told, moms, afgifter og transport. Se opdelingen og beregn din bil.",
+      "h1": "Import af {{car}} {{from}}: hvad det reelt koster",
+      "lead": "En {{car}} fra {{year}} købt for {{price}} koster ca. {{total}} indregistreret (land: {{country}}) – med køb, transport, told, moms og nationale afgifter.",
+      "summaryTitle": "Samlet pris – {{country}}",
+      "summaryRange": "Realistisk interval: {{low}} – {{high}}",
+      "specs": {
+        "year": "Årgang",
+        "engine": "Motor",
+        "power": "Effekt",
+        "hp": "hk",
+        "fuel": "Brændstof",
+        "price": "Typisk pris – {{origin}}"
+      },
+      "table": {
+        "title": "Prisopdeling",
+        "price": "Bil med auktions- eller forhandlergebyrer",
+        "transport": "Transport til døren (land, skib, havn)",
+        "duty": "Told",
+        "vat": "Importmoms {{vatRate}} % ({{portCountry}})",
+        "registration": "Indregistrering, syn og papirarbejde",
+        "other": "Forsikring og andre omkostninger",
+        "total": "I alt"
+      },
+      "note": "Eksempel beregnet {{date}} for {{country}} med beregnerens satser. Din bils pris, stand, placering og rute ændrer resultatet.",
+      "p1": "Told beregnes af toldværdien – prisen plus transport til EU’s grænse – her {{duty}}. Importmomsen på {{vatRate}} % betales i fortoldningslandet ({{portCountry}}, havnen {{port}}): {{vat}}.",
+      "p2National": "Dertil kommer posten »{{nationalName}}«: {{national}}. Den afhænger af motor, udledning eller værdi og afgør ofte, om importen kan betale sig.",
+      "p2None": "I dette land ({{country}}) betaler bilen ingen registrerings- eller punktafgift – efter told og moms er der kun indregistreringen tilbage, ca. {{registration}}.",
+      "p3": "Bilen afhentes i {{zone}} og sejles fra {{departure}} til {{port}}. Regn med {{daysMin}}–{{daysMax}} dage fra køb til indregistrering.",
+      "othersTitle": "Andre populære modeller",
+      "faq1": {
+        "q": "Hvad koster det at importere en {{car}}?",
+        "a": "En {{car}} fra {{year}} købt for {{price}} koster i alt ca. {{total}} (interval {{low}} – {{high}}) med transport, told {{duty}}, moms {{vat}} og indregistrering."
+      },
+      "faq2": {
+        "q": "Hvilke afgifter betaler jeg for en importeret {{car}}?",
+        "a": "Told ({{duty}}), importmoms på {{vatRate}} % ({{vat}}) og afhængigt af landet en registrerings- eller punktafgift. Beregneren viser de nøjagtige beløb for din bil."
+      },
+      "from": {
+        "USA": "fra USA",
+        "CANADA": "fra Canada",
+        "JAPAN": "fra Japan",
+        "UAE": "fra Emiraterne",
+        "UK": "fra Storbritannien"
+      }
+    }
   },
   "blog": {
     "title": "Blog om bilimport",
@@ -1482,5 +1546,71 @@
     "confirmed": "Din tilmelding er bekræftet. Tak!",
     "unsubscribed": "Du er afmeldt og modtager ikke flere nyhedsbreve.",
     "invalid": "Linket er ugyldigt eller allerede brugt."
+  },
+  "taxes": {
+    "eyebrow": "Gratis værktøj",
+    "title": "Beregner til told, moms og registreringsafgift på importbiler",
+    "lead": "Indtast pris og motor på en bil fra USA, Canada, Japan, Emiraterne eller Storbritannien, og se afgifterne for ethvert EU-land – med denne måneds toldkurs.",
+    "origin": "Købt i",
+    "price": "Købspris ({{currency}})",
+    "year": "Produktionsår",
+    "fuel": "Brændstof",
+    "engine": "Slagvolumen (cm³)",
+    "power": "Effekt (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "valgfrit",
+    "destination": "Indregistreres i",
+    "submit": "Beregn afgifter",
+    "calculating": "Beregner…",
+    "resultTitle": "Afgifter på denne bil",
+    "duty": "Told {{rate}} %",
+    "vat": "Importmoms {{rate}} % ({{country}})",
+    "noNational": "{{country}}: ingen registrerings- eller punktafgift på denne bil",
+    "total": "Afgifter i alt",
+    "note": "Toldværdien indeholder typisk transport til {{port}}. Told og moms følger månedens toldkurs.",
+    "fullCost": "Fuld pris helt til døren",
+    "error": "Beregningen mislykkedes. Tjek oplysningerne, og prøv igen.",
+    "empty": "Udfyld bilens data, og klik på »Beregn afgifter«.",
+    "p1Title": "Told",
+    "p1": "En personbil fra et land uden for EU betaler 10 % told (pickups og varebiler op til 22 %) af toldværdien: købspris plus transport og forsikring til EU’s grænse. Biler over 30 år i original stand kan være veteranbiler – med 0 % told og nedsat moms.",
+    "p2Title": "Importmoms",
+    "p2": "Moms betales i fortoldningslandet af toldværdien plus told. Det er som regel den største enkeltafgift – mellem 17 % og 27 % afhængigt af landet.",
+    "p3Title": "Registrerings- og punktafgift",
+    "p3": "Mange EU-lande lægger deres egen afgift på ved indregistrering: registreringsafgiften i Danmark, punktafgiften i Polen, BPM i Holland, NoVA i Østrig, malus i Frankrig og flere. Nogle lande opkræver intet.",
+    "countriesTitle": "Afgifter og indregistrering land for land"
+  },
+  "method": {
+    "eyebrow": "Metode",
+    "title": "Sådan beregner vi prisen på at importere en bil",
+    "lead": "Carglo prissætter hvert trin fra auktion til indregistrering efter de samme regler, som myndigheder og transportører bruger. Her kan du se, hvor tallene kommer fra, og hvor de er skøn.",
+    "updated": "Satser og regler senest kontrolleret: {{date}}",
+    "s1": {
+      "title": "Hvad beregningen omfatter",
+      "text": "Købet med auktions- eller forhandlergebyrer, transport til havnen, søfragt og forsikring, havne- og speditørgebyrer, told, importmoms, nationale afgifter, levering til din adresse samt syn og indregistrering i dit land.\nHvert resultat har tre scenarier – optimistisk, forventet og pessimistisk – fordi transportpriser og nogle gebyrer svinger."
+    },
+    "s2": {
+      "title": "Told og moms",
+      "text": "Toldsatserne følger EU’s kombinerede nomenklatur (TARIC): 10 % for personbiler, op til 22 % for pickups og varebiler samt reglerne for veteranbiler over 30 år. Toldværdien er prisen plus transport og forsikring til EU’s grænse.\nUdenlandsk valuta omregnes med månedens toldkurs (kurserne fra næstsidste onsdag i forrige måned), øvrige beløb med centralbankens aktuelle kurser."
+    },
+    "s3": {
+      "title": "Nationale afgifter",
+      "text": "Registrerings- og punktafgifter modelleres efter hvert lands lovgivning: slagvolumen, CO₂, effekt, vægt, alder og værdi – sådan som landet kræver det. På Cypern, i Grækenland, Kroatien og på Malta følger afgiften af officielle beregnere – der beder vi om beløbet eller viser et interval.\nIndtaster du CO₂ og effekt fra papirerne, er resultatet præcist; ellers anslår vi dem ud fra motor og brændstof."
+    },
+    "s4": {
+      "title": "Transport og gebyrer",
+      "text": "Landtransporten i købslandet prissættes ud fra afstanden mellem afhentningsregion og afgangshavn med typiske transportørtariffer. Søfragt samt havne- og agentgebyrer er typiske priser for hver rute og EU-havn.\nDisse poster er skøn – en speditørs tilbud på din bil kan afvige, derfor viser vi et interval."
+    },
+    "s5": {
+      "title": "Valg af havn",
+      "text": "Beregneren prissætter hver EU-havn helt til døren – fragt, havnegebyrer, havnelandets moms og levering til din adresse – og foreslår den billigste. Du kan vælge en anden havn og sammenligne."
+    },
+    "s6": {
+      "title": "Hvad beregningen ikke kan vide",
+      "text": "Bilens reelle stand, skjulte skader, prisændringer på auktioner, valutakursbevægelser efter beregningen og myndighedernes individuelle afgørelser. Resultatet er vejledende – det er hverken en toldafgørelse eller skatterådgivning."
+    },
+    "s7": {
+      "title": "Uafhængighed",
+      "text": "Carglo sælger, køber og importerer ikke biler og tager ingen provision fra importører for resultatet. Vi tjener på den betalte PDF-rapport. Har du fundet en fejl eller en forældet sats? Skriv til {{email}} – så retter vi den."
+    }
   }
 }

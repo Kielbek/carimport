@@ -450,7 +450,9 @@
     "what": "Što izračunavamo",
     "ctaHint": "Besplatno, bez registracije",
     "language": "Jezik",
-    "blog": "Blog"
+    "blog": "Blog",
+    "taxes": "Kalkulator carine i poreza",
+    "method": "Kako računamo"
   },
   "footer": {
     "about": "Neovisni kalkulator troškova uvoza automobila izvan EU. Automobile ne prodajemo niti uvozimo – izračunavamo koliko zaista koštaju.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "Opći uvjeti | Carglo",
       "description": "Uvjeti kalkulatora troškova uvoza automobila i PDF izvješća: prodavatelj, plaćanje, isporuka, jednostrani raskid i prigovori."
+    },
+    "taxes": {
+      "title": "Kalkulator carine za auto iz SAD-a – carina, PDV, poseban porez | Carglo",
+      "description": "Izračunajte carinu, uvozni PDV i poseban porez na motorna vozila za auto iz SAD-a, Kanade, Japana, UAE-a ili Ujedinjenog Kraljevstva za bilo koju zemlju EU-a. Besplatno i ažurno."
+    },
+    "method": {
+      "title": "Kako računamo trošak uvoza automobila – izvori i metoda | Carglo",
+      "description": "Odakle su naše stope, kako procjenjujemo prijevoz i što rezultat ne može znati. Cjelovita metodologija Carglo kalkulatora."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Uvoz prema zemlji kupnje",
       "countries": "Uvoz u zemlje EU-a",
       "ports": "Luke carinjenja u EU-u",
-      "all": "Svi vodiči"
+      "all": "Svi vodiči",
+      "models": "Cijena uvoza po modelu"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} luka EU-a za uvoz automobila – naknade, PDV, plovidba | Carglo",
         "metaDescription": "Usporedite svih {{count}} luka carinjenja automobila u EU-u: naknade terminala i carinskog zastupnika, uvozni PDV, trajanje plovidbe i udaljenost do Hrvatske.",
         "sortedFrom": "Poredano po cestovnoj udaljenosti do: {{country}}"
+      },
+      "models": {
+        "title": "Koliko košta uvoz popularnog automobila?",
+        "lead": "Primjeri troškova do vrata za najčešće uvožene modele, izračunani za zemlju: {{country}} – s aktualnim porezima, tečajevima i vozarinama.",
+        "metaTitle": "Cijena uvoza automobila po modelu – {{models}} primjera | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra i drugi: ukupni trošak uvoza s carinom, PDV-om, nacionalnim porezima i prijevozom. Izračunajte svoj auto besplatno."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Otvori kalkulator"
     },
     "related": "Povezani vodiči",
-    "disclaimer": "Informacije služe samo za orijentaciju; konačne iznose određuju porezna i carinska tijela. Stope kakve koristi kalkulator."
+    "disclaimer": "Informacije služe samo za orijentaciju; konačne iznose određuju porezna i carinska tijela. Stope kakve koristi kalkulator.",
+    "model": {
+      "metaTitle": "Uvoz {{car}} {{from}} – koliko košta | Carglo",
+      "metaDescription": "Koliko košta uvoz vozila {{car}} ({{year}}) {{from}}? Oko {{total}} s carinom, PDV-om, porezima i prijevozom. Pogledajte razradu i izračunajte svoj auto.",
+      "h1": "Uvoz {{car}} {{from}}: koliko stvarno košta",
+      "lead": "{{car}} iz {{year}}. kupljen za {{price}} nakon registracije košta oko {{total}} (zemlja: {{country}}) – s kupnjom, prijevozom, carinom, PDV-om i nacionalnim porezima.",
+      "summaryTitle": "Ukupni trošak – {{country}}",
+      "summaryRange": "Realan raspon: {{low}} – {{high}}",
+      "specs": {
+        "year": "Godište",
+        "engine": "Motor",
+        "power": "Snaga",
+        "hp": "KS",
+        "fuel": "Gorivo",
+        "price": "Tipična cijena – {{origin}}"
+      },
+      "table": {
+        "title": "Razrada troškova",
+        "price": "Auto s naknadama aukcije ili prodavatelja",
+        "transport": "Prijevoz do vrata (kopno, brod, luka)",
+        "duty": "Carina",
+        "vat": "Uvozni PDV {{vatRate}} % ({{portCountry}})",
+        "registration": "Registracija, pregled i formalnosti",
+        "other": "Osiguranje i ostali troškovi",
+        "total": "Ukupno"
+      },
+      "note": "Primjer izračunan {{date}} za zemlju: {{country}}, stopama kalkulatora. Cijena, stanje, lokacija i ruta vašeg auta mijenjaju rezultat.",
+      "p1": "Carina se obračunava na carinsku vrijednost – cijenu s prijevozom do granice EU-a – ovdje {{duty}}. Uvozni PDV od {{vatRate}} % plaća se u zemlji carinjenja ({{portCountry}}, luka {{port}}): {{vat}}.",
+      "p2National": "Tome se dodaje stavka „{{nationalName}}”: {{national}}. Ovisi o motoru, emisijama ili vrijednosti pa često odlučuje isplati li se uvoz.",
+      "p2None": "U ovoj zemlji ({{country}}) za ovaj auto ne plaća se registracijski ni posebni porez – nakon carine i PDV-a ostaju samo troškovi registracije, oko {{registration}}.",
+      "p3": "Auto se preuzima u regiji {{zone}} i plovi iz luke {{departure}} u luku {{port}}. Od kupnje do registracije računajte {{daysMin}}–{{daysMax}} dana.",
+      "othersTitle": "Ostali popularni modeli",
+      "faq1": {
+        "q": "Koliko košta uvoz vozila {{car}}?",
+        "a": "{{car}} iz {{year}}. kupljen za {{price}} ukupno izlazi oko {{total}} (raspon {{low}} – {{high}}), s prijevozom, carinom {{duty}}, PDV-om {{vat}} i registracijom."
+      },
+      "faq2": {
+        "q": "Koje poreze plaćam za uvezeni {{car}}?",
+        "a": "Carinu ({{duty}}), uvozni PDV od {{vatRate}} % ({{vat}}) i ovisno o zemlji registracijski ili posebni porez. Kalkulator prikazuje točne iznose za vaš auto."
+      },
+      "from": {
+        "USA": "iz SAD-a",
+        "CANADA": "iz Kanade",
+        "JAPAN": "iz Japana",
+        "UAE": "iz UAE-a",
+        "UK": "iz Ujedinjenog Kraljevstva"
+      }
+    }
   },
   "blog": {
     "title": "Blog o uvozu automobila",
@@ -1482,5 +1546,71 @@
     "confirmed": "Vaša je prijava potvrđena. Hvala!",
     "unsubscribed": "Odjavljeni ste i više nećete primati newsletter.",
     "invalid": "Ova poveznica nije valjana ili je već iskorištena."
+  },
+  "taxes": {
+    "eyebrow": "Besplatan alat",
+    "title": "Kalkulator carine, PDV-a i posebnog poreza za uvezeni auto",
+    "lead": "Unesite cijenu i motor auta iz SAD-a, Kanade, Japana, UAE-a ili Ujedinjenog Kraljevstva i pogledajte poreze za bilo koju zemlju EU-a – s carinskim tečajem za ovaj mjesec.",
+    "origin": "Kupljeno u",
+    "price": "Kupovna cijena ({{currency}})",
+    "year": "Godina proizvodnje",
+    "fuel": "Gorivo",
+    "engine": "Obujam motora (cm³)",
+    "power": "Snaga (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "neobavezno",
+    "destination": "Zemlja registracije",
+    "submit": "Izračunaj poreze",
+    "calculating": "Računam…",
+    "resultTitle": "Porezi za ovaj auto",
+    "duty": "Carina {{rate}} %",
+    "vat": "Uvozni PDV {{rate}} % ({{country}})",
+    "noNational": "{{country}}: nema registracijskog ni posebnog poreza za ovaj auto",
+    "total": "Porezi ukupno",
+    "note": "Carinska vrijednost uključuje tipičan prijevoz do luke {{port}}. Carina i PDV prate carinski tečaj ovog mjeseca.",
+    "fullCost": "Ukupni trošak do vrata",
+    "error": "Izračun nije uspio. Provjerite podatke i pokušajte ponovno.",
+    "empty": "Unesite podatke o autu i kliknite „Izračunaj poreze”.",
+    "p1Title": "Carina",
+    "p1": "Osobni automobil izvan EU-a plaća 10 % carine (pick-upovi i dostavna vozila do 22 %) na carinsku vrijednost: kupovnu cijenu s prijevozom i osiguranjem do granice EU-a. Automobili stariji od 30 godina u izvornom stanju mogu biti oldtimeri – s 0 % carine i sniženim PDV-om.",
+    "p2Title": "Uvozni PDV",
+    "p2": "PDV se plaća u zemlji carinjenja, na carinsku vrijednost uvećanu za carinu. Obično je to najveći porez – od 17 % do 27 % ovisno o zemlji.",
+    "p3Title": "Poseban porez i registracija",
+    "p3": "Mnoge zemlje EU-a pri registraciji dodaju vlastiti porez: poseban porez na motorna vozila u Hrvatskoj, trošarinu u Poljskoj, BPM u Nizozemskoj, NoVA u Austriji, malus u Francuskoj i druge. Neke zemlje ne naplaćuju ništa.",
+    "countriesTitle": "Porezi i registracija po zemljama"
+  },
+  "method": {
+    "eyebrow": "Metodologija",
+    "title": "Kako računamo trošak uvoza automobila",
+    "lead": "Carglo vrednuje svaki korak od aukcije do registracije prema istim pravilima koja koriste tijela i prijevoznici. Evo odakle su brojke i gdje su procjene.",
+    "updated": "Stope i propisi posljednji put provjereni: {{date}}",
+    "s1": {
+      "title": "Što izračun obuhvaća",
+      "text": "Kupnju s naknadama aukcije ili prodavatelja, prijevoz do luke, pomorsku vozarinu i osiguranje, lučke naknade i naknade carinskog zastupnika, carinu, uvozni PDV, nacionalne poreze, dostavu na vašu adresu te pregled i registraciju u vašoj zemlji.\nSvaki rezultat ima tri scenarija – optimistični, očekivani i pesimistični – jer cijene prijevoza i neke naknade variraju."
+    },
+    "s2": {
+      "title": "Carina i PDV",
+      "text": "Carinske stope prate Kombiniranu nomenklaturu EU-a (TARIC): 10 % za osobna vozila, do 22 % za pick-upove i dostavna vozila te pravila za oldtimere starije od 30 godina. Carinska vrijednost je cijena s prijevozom i osiguranjem do granice EU-a.\nStrane valute preračunavamo carinskim tečajem koji vrijedi u mjesecu (tečajevi pretposljednje srijede prethodnog mjeseca), ostale iznose aktualnim tečajevima središnje banke."
+    },
+    "s3": {
+      "title": "Nacionalni porezi",
+      "text": "Registracijske poreze i trošarine modeliramo prema zakonima svake zemlje: obujam, CO₂, snaga, masa, starost i vrijednost – kako zemlja zahtijeva. Na Cipru, u Grčkoj, Hrvatskoj i na Malti porez proizlazi iz službenih kalkulatora – ondje tražimo iznos ili prikazujemo raspon.\nAko unesete CO₂ i snagu iz dokumenata, rezultat je točan; inače ih procjenjujemo iz motora i goriva."
+    },
+    "s4": {
+      "title": "Prijevoz i naknade",
+      "text": "Kopneni prijevoz u zemlji kupnje vrednujemo prema udaljenosti između regije preuzimanja i polazne luke s tipičnim tarifama prijevoznika. Pomorska vozarina te lučke i agencijske naknade tipične su cijene za svaku rutu i luku EU-a.\nTe su stavke procjene – ponuda špeditera za vaš auto može se razlikovati, zato prikazujemo raspon."
+    },
+    "s5": {
+      "title": "Odabir luke",
+      "text": "Kalkulator vrednuje svaku luku EU-a do vrata – vozarinu, lučke naknade, PDV zemlje luke i dostavu na vašu adresu – i predlaže najjeftiniju. Možete odabrati drugu luku i usporediti."
+    },
+    "s6": {
+      "title": "Što izračun ne može znati",
+      "text": "Stvarno stanje auta, skrivena oštećenja, promjene cijena na aukcijama, kretanja tečaja nakon izračuna ni pojedinačne odluke tijela. Rezultat je informativan – nije carinska odluka ni porezni savjet."
+    },
+    "s7": {
+      "title": "Neovisnost",
+      "text": "Carglo ne prodaje, ne kupuje i ne uvozi automobile i ne uzima proviziju od uvoznika za rezultat. Zarađujemo na plaćenom PDF izvješću. Primijetili ste pogrešku ili zastarjelu stopu? Pišite na {{email}} – ispravit ćemo."
+    }
   }
 }

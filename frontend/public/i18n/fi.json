@@ -450,7 +450,9 @@
     "what": "Mitä laskemme",
     "ctaHint": "Maksuton, ilman rekisteröitymistä",
     "language": "Kieli",
-    "blog": "Blogi"
+    "blog": "Blogi",
+    "taxes": "Tulli- ja verolaskuri",
+    "method": "Näin laskemme"
   },
   "footer": {
     "about": "Riippumaton laskuri EU:n ulkopuolelta tuotavien autojen tuontikustannuksille. Emme myy emmekä tuo autoja – laskemme, mitä ne oikeasti maksavat.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "Käyttöehdot | Carglo",
       "description": "Autojen tuontikustannuslaskurin ja PDF-raportin ehdot: myyjä, maksu, toimitus, peruuttaminen ja reklamaatiot."
+    },
+    "taxes": {
+      "title": "Tullilaskuri tuontiautolle – tulli, arvonlisävero, autovero | Carglo",
+      "description": "Laske tulli, tuonnin arvonlisävero ja autovero autolle Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista tai Isosta-Britanniasta mihin tahansa EU-maahan. Ilmainen ja ajantasainen."
+    },
+    "method": {
+      "title": "Näin laskemme auton tuonnin kustannukset – lähteet ja menetelmä | Carglo",
+      "description": "Mistä hintamme tulevat, miten arvioimme kuljetuksen ja mitä tulos ei voi tietää. Carglo-laskurin koko menetelmä."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Tuonti ostomaan mukaan",
       "countries": "Tuonti EU-maihin",
       "ports": "Tullaussatamat EU:ssa",
-      "all": "Kaikki oppaat"
+      "all": "Kaikki oppaat",
+      "models": "Tuontihinta malleittain"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} EU-satamaa autojen tuontiin – maksut, ALV, merimatka | Carglo",
         "metaDescription": "Vertaile kaikkia {{count}} EU:n autojen tullaussatamaa: terminaali- ja tulliasiamiesmaksut, tuonnin ALV, merimatkan kesto ja tieetäisyys Suomeen.",
         "sortedFrom": "Lajiteltu tieetäisyyden mukaan, kohde: {{country}}"
+      },
+      "models": {
+        "title": "Paljonko suositun auton tuonti maksaa?",
+        "lead": "Esimerkkejä kustannuksista ovelle asti tuoduimmille malleille, laskettu maalle {{country}} ajantasaisilla veroilla, kursseilla ja rahdeilla.",
+        "metaTitle": "Auton tuontihinta malleittain – {{models}} esimerkkiä | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra ja muut: tuonnin koko hinta tulleineen, arvonlisäveroineen, autoveroineen ja kuljetuksineen. Laske oma autosi ilmaiseksi."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Avaa laskuri"
     },
     "related": "Aiheeseen liittyvät oppaat",
-    "disclaimer": "Tiedot ovat suuntaa antavia; lopulliset summat määräävät vero- ja tulliviranomaiset. Verokannat laskurin käyttämien mukaan."
+    "disclaimer": "Tiedot ovat suuntaa antavia; lopulliset summat määräävät vero- ja tulliviranomaiset. Verokannat laskurin käyttämien mukaan.",
+    "model": {
+      "metaTitle": "{{car}} tuonti {{from}} – hinta | Carglo",
+      "metaDescription": "Paljonko vuoden {{year}} {{car}} -auton tuonti {{from}} maksaa? Noin {{total}} tulleineen, arvonlisäveroineen, veroineen ja kuljetuksineen. Katso erittely ja laske oma autosi.",
+      "h1": "{{car}} tuonti {{from}}: mitä se oikeasti maksaa",
+      "lead": "Vuoden {{year}} {{car}}, joka on ostettu hintaan {{price}}, maksaa rekisteröitynä noin {{total}} (maa: {{country}}) – osto, kuljetus, tulli, arvonlisävero ja kansalliset verot mukaan luettuina.",
+      "summaryTitle": "Kokonaishinta – {{country}}",
+      "summaryRange": "Realistinen vaihteluväli: {{low}} – {{high}}",
+      "specs": {
+        "year": "Vuosimalli",
+        "engine": "Moottori",
+        "power": "Teho",
+        "hp": "hv",
+        "fuel": "Käyttövoima",
+        "price": "Tyypillinen hinta – {{origin}}"
+      },
+      "table": {
+        "title": "Kustannuserittely",
+        "price": "Auto huutokauppa- tai myyjäkuluineen",
+        "transport": "Kuljetus ovelle (maa, laiva, satama)",
+        "duty": "Tulli",
+        "vat": "Tuonnin arvonlisävero {{vatRate}} % ({{portCountry}})",
+        "registration": "Rekisteröinti, katsastus ja paperityöt",
+        "other": "Vakuutus ja muut kulut",
+        "total": "Yhteensä"
+      },
+      "note": "Esimerkki laskettu {{date}} maalle {{country}} laskurin hinnoilla. Autosi hinta, kunto, sijainti ja reitti muuttavat tulosta.",
+      "p1": "Tulli lasketaan tullausarvosta – hinta ja kuljetus EU:n rajalle – tässä {{duty}}. Tuonnin arvonlisävero {{vatRate}} % maksetaan tullausmaassa ({{portCountry}}, satama {{port}}): {{vat}}.",
+      "p2National": "Lisäksi tulee erä ”{{nationalName}}”: {{national}}. Se riippuu moottorista, päästöistä tai arvosta ja ratkaisee usein, kannattaako tuonti.",
+      "p2None": "Tässä maassa ({{country}}) autosta ei makseta rekisteröinti- tai valmisteveroa – tullin ja arvonlisäveron jälkeen jäävät vain rekisteröintikulut, noin {{registration}}.",
+      "p3": "Auto noudetaan alueelta {{zone}} ja laivataan satamasta {{departure}} satamaan {{port}}. Ostosta rekisteröintiin varaa {{daysMin}}–{{daysMax}} päivää.",
+      "othersTitle": "Muita suosittuja malleja",
+      "faq1": {
+        "q": "Paljonko {{car}} -auton tuonti maksaa?",
+        "a": "Vuoden {{year}} {{car}}, joka on ostettu hintaan {{price}}, maksaa yhteensä noin {{total}} (väli {{low}} – {{high}}) kuljetuksen, tullin {{duty}}, arvonlisäveron {{vat}} ja rekisteröinnin kanssa."
+      },
+      "faq2": {
+        "q": "Mitä veroja maksan tuodusta {{car}} -autosta?",
+        "a": "Tullin ({{duty}}), tuonnin arvonlisäveron {{vatRate}} % ({{vat}}) ja maasta riippuen auto- tai valmisteveron. Laskuri näyttää tarkat summat sinun autollesi."
+      },
+      "from": {
+        "USA": "Yhdysvalloista",
+        "CANADA": "Kanadasta",
+        "JAPAN": "Japanista",
+        "UAE": "Arabiemiirikunnista",
+        "UK": "Isosta-Britanniasta"
+      }
+    }
   },
   "blog": {
     "title": "Autontuontiblogi",
@@ -1482,5 +1546,71 @@
     "confirmed": "Tilauksesi on vahvistettu. Kiitos!",
     "unsubscribed": "Tilaus on peruttu, etkä saa enää uutiskirjeitä.",
     "invalid": "Linkki on virheellinen tai jo käytetty."
+  },
+  "taxes": {
+    "eyebrow": "Ilmainen työkalu",
+    "title": "Tuontiauton tulli-, arvonlisävero- ja autoverolaskuri",
+    "lead": "Syötä Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista tai Isosta-Britanniasta tuotavan auton hinta ja moottori ja näe verot mihin tahansa EU-maahan – tämän kuun tullikurssilla.",
+    "origin": "Ostomaa",
+    "price": "Ostohinta ({{currency}})",
+    "year": "Valmistusvuosi",
+    "fuel": "Käyttövoima",
+    "engine": "Iskutilavuus (cm³)",
+    "power": "Teho (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "valinnainen",
+    "destination": "Rekisteröintimaa",
+    "submit": "Laske verot",
+    "calculating": "Lasketaan…",
+    "resultTitle": "Tämän auton verot",
+    "duty": "Tulli {{rate}} %",
+    "vat": "Tuonnin arvonlisävero {{rate}} % ({{country}})",
+    "noNational": "{{country}}: ei rekisteröinti- tai valmisteveroa tälle autolle",
+    "total": "Verot yhteensä",
+    "note": "Tullausarvo sisältää tyypillisen kuljetuksen satamaan {{port}}. Tulli ja arvonlisävero lasketaan kuluvan kuun tullikurssilla.",
+    "fullCost": "Koko hinta ovelle asti",
+    "error": "Laskenta epäonnistui. Tarkista tiedot ja yritä uudelleen.",
+    "empty": "Täytä auton tiedot ja valitse ”Laske verot”.",
+    "p1Title": "Tulli",
+    "p1": "EU:n ulkopuolelta tuleva henkilöauto maksaa 10 % tullia (lava-autot ja pakettiautot jopa 22 %) tullausarvosta: ostohinta sekä kuljetus ja vakuutus EU:n rajalle. Yli 30 vuotta vanhat alkuperäiskuntoiset autot voivat olla museoautoja – 0 % tulli ja alennettu arvonlisävero.",
+    "p2Title": "Tuonnin arvonlisävero",
+    "p2": "Arvonlisävero maksetaan tullausmaassa tullausarvon ja tullin summasta. Se on yleensä suurin yksittäinen vero – maasta riippuen 17–27 %.",
+    "p3Title": "Valmiste- ja autovero",
+    "p3": "Monet EU-maat perivät rekisteröinnissä oman veronsa: autovero Suomessa, valmistevero Puolassa, BPM Alankomaissa, NoVA Itävallassa, malus Ranskassa ja muut. Osa maista ei peri mitään.",
+    "countriesTitle": "Verot ja rekisteröinti maittain"
+  },
+  "method": {
+    "eyebrow": "Menetelmä",
+    "title": "Näin laskemme auton tuonnin kustannukset",
+    "lead": "Carglo hinnoittelee jokaisen vaiheen huutokaupasta rekisteröintiin samoilla säännöillä, joita viranomaiset ja kuljetusyhtiöt käyttävät. Tässä kerrotaan, mistä luvut tulevat ja missä ne ovat arvioita.",
+    "updated": "Hinnat ja säännöt tarkistettu viimeksi: {{date}}",
+    "s1": {
+      "title": "Mitä laskelma sisältää",
+      "text": "Oston huutokauppa- tai myyjäkuluineen, kuljetuksen satamaan, merirahdin ja vakuutuksen, satama- ja tulliasiamieskulut, tullin, tuonnin arvonlisäveron, kansalliset verot, toimituksen osoitteeseesi sekä katsastuksen ja rekisteröinnin omassa maassasi.\nJokaisessa tuloksessa on kolme skenaariota – optimistinen, odotettu ja pessimistinen – koska kuljetushinnat ja jotkin maksut vaihtelevat."
+    },
+    "s2": {
+      "title": "Tulli ja arvonlisävero",
+      "text": "Tullit noudattavat EU:n yhdistettyä nimikkeistöä (TARIC): 10 % henkilöautoille, enintään 22 % lava- ja pakettiautoille sekä yli 30-vuotiaiden museoajoneuvojen säännöt. Tullausarvo on hinta sekä kuljetus ja vakuutus EU:n rajalle.\nUlkomaiset valuutat muunnetaan kuukauden tullikurssilla (edellisen kuun toiseksi viimeisen keskiviikon kurssit), muut summat keskuspankin ajantasaisilla kursseilla."
+    },
+    "s3": {
+      "title": "Kansalliset verot",
+      "text": "Rekisteröinti- ja valmisteverot mallinnetaan kunkin maan lainsäädännön mukaan: iskutilavuus, CO₂, teho, paino, ikä ja arvo – maan vaatimusten mukaan. Kyproksella, Kreikassa, Kroatiassa ja Maltalla vero perustuu virallisiin laskureihin – niissä kysymme summan tai näytämme vaihteluvälin.\nKun syötät CO₂-arvon ja tehon asiakirjoista, tulos on tarkka; muuten arvioimme ne moottorin ja käyttövoiman perusteella."
+    },
+    "s4": {
+      "title": "Kuljetus ja maksut",
+      "text": "Maakuljetus ostomaassa hinnoitellaan noutoalueen ja lähtösataman välisen etäisyyden perusteella tyypillisillä kuljetusyhtiöiden tariffeilla. Merirahti sekä satama- ja agenttimaksut ovat tyypillisiä hintoja kullekin reitille ja EU-satamalle.\nNämä erät ovat arvioita – huolitsijan tarjous autollesi voi poiketa, siksi näytämme vaihteluvälin."
+    },
+    "s5": {
+      "title": "Sataman valinta",
+      "text": "Laskuri hinnoittelee jokaisen EU-sataman ovelle asti – rahdin, satamamaksut, satamamaan arvonlisäveron ja toimituksen osoitteeseesi – ja ehdottaa edullisinta. Voit valita toisen sataman ja vertailla."
+    },
+    "s6": {
+      "title": "Mitä laskelma ei voi tietää",
+      "text": "Auton todellista kuntoa, piileviä vaurioita, huutokauppahintojen muutoksia, valuuttakurssien liikkeitä laskennan jälkeen eikä viranomaisten yksittäisiä päätöksiä. Tulos on suuntaa antava – se ei ole tullipäätös eikä veroneuvonta."
+    },
+    "s7": {
+      "title": "Riippumattomuus",
+      "text": "Carglo ei myy, osta eikä tuo autoja eikä ota maahantuojilta palkkioita tuloksesta. Ansaitsemme maksullisella PDF-raportilla. Löysitkö virheen tai vanhentuneen hinnan? Kirjoita osoitteeseen {{email}} – korjaamme sen."
+    }
   }
 }

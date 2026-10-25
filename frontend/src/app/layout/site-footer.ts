@@ -62,6 +62,8 @@ import { NewsletterSignup } from '../features/newsletter/newsletter-signup';
             <li><a [routerLink]="home()" fragment="pricing" class="hover:text-brand-text">{{ 'layout.pricing' | translate }}</a></li>
             <li><a [routerLink]="home()" fragment="faq" class="hover:text-brand-text">{{ 'layout.faq' | translate }}</a></li>
             <li><a [routerLink]="home()" fragment="pricing" class="hover:text-brand-text">{{ 'layout.forBusiness' | translate }}</a></li>
+            <li><a [routerLink]="taxes()" class="hover:text-brand-text">{{ 'layout.taxes' | translate }}</a></li>
+            <li><a [routerLink]="method()" class="hover:text-brand-text">{{ 'layout.method' | translate }}</a></li>
             <li><a [routerLink]="terms()" class="hover:text-brand-text">{{ 'footer.terms' | translate }}</a></li>
             <li><a [routerLink]="privacy()" class="hover:text-brand-text">{{ 'footer.privacy' | translate }}</a></li>
           </ul>
@@ -98,7 +100,7 @@ export class SiteFooter {
   protected readonly home = computed(() => pathFor('home', this.lang.current()));
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly about = computed(() => pathFor('about', this.lang.current()));
-  protected readonly guideSections: GuideSection[] = ['origins', 'countries', 'ports'];
+  protected readonly guideSections: GuideSection[] = ['origins', 'countries', 'ports', 'models'];
   protected readonly homeCountry = computed(() => this.lang.info().home);
 
   protected guide(ref: GuideRef): string {
@@ -110,4 +112,6 @@ export class SiteFooter {
   }
   protected readonly privacy = computed(() => pathFor('privacy', this.lang.current()));
   protected readonly terms = computed(() => pathFor('terms', this.lang.current()));
+  protected readonly taxes = computed(() => pathFor('taxes', this.lang.current()));
+  protected readonly method = computed(() => pathFor('method', this.lang.current()));
 }

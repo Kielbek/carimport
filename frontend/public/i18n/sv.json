@@ -450,7 +450,9 @@
     "what": "Vad vi räknar med",
     "ctaHint": "Gratis, utan registrering",
     "language": "Språk",
-    "blog": "Blogg"
+    "blog": "Blogg",
+    "taxes": "Tull- och skattekalkylator",
+    "method": "Så räknar vi"
   },
   "footer": {
     "about": "Oberoende kalkylator för importkostnader för bilar från länder utanför EU. Vi varken säljer eller importerar bilar – vi räknar ut vad de verkligen kostar.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "Villkor | Carglo",
       "description": "Villkor för kalkylatorn för importkostnader för bilar och PDF-rapporten: säljare, betalning, leverans, ångerrätt och reklamationer."
+    },
+    "taxes": {
+      "title": "Tullkalkylator för importbil – tull, moms, skatt | Carglo",
+      "description": "Räkna ut tull, importmoms och registreringsskatt för en bil från USA, Kanada, Japan, Förenade Arabemiraten eller Storbritannien till valfritt EU-land. Gratis och aktuellt."
+    },
+    "method": {
+      "title": "Så räknar vi kostnaden för bilimport – källor och metod | Carglo",
+      "description": "Var våra satser kommer ifrån, hur vi uppskattar transporten och vad resultatet inte kan veta. Hela metoden bakom Carglos kalkylator."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Import efter inköpsland",
       "countries": "Import till EU-länder",
       "ports": "Förtullningshamnar i EU",
-      "all": "Alla guider"
+      "all": "Alla guider",
+      "models": "Importkostnad per modell"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} EU-hamnar för bilimport – avgifter, moms, sjötid | Carglo",
         "metaDescription": "Jämför alla {{count}} förtullningshamnar för bilar i EU: terminal- och tullombudsavgifter, importmoms, sjötransporttider och vägavstånd till Sverige.",
         "sortedFrom": "Sorterat efter vägavstånd till: {{country}}"
+      },
+      "models": {
+        "title": "Vad kostar det att importera en populär bil?",
+        "lead": "Exempel på kostnaden ända fram till dörren för de mest importerade modellerna, beräknade för {{country}} med aktuella skatter, kurser och frakt.",
+        "metaTitle": "Kostnad för bilimport per modell – {{models}} exempel | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra och fler: hela importkostnaden med tull, moms, nationella skatter och transport. Räkna gratis på din egen bil."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Öppna kalkylatorn"
     },
     "related": "Relaterade guider",
-    "disclaimer": "Informationen är endast vägledande; skatte- och tullmyndigheterna fastställer de slutliga beloppen. Satser enligt kalkylatorn."
+    "disclaimer": "Informationen är endast vägledande; skatte- och tullmyndigheterna fastställer de slutliga beloppen. Satser enligt kalkylatorn.",
+    "model": {
+      "metaTitle": "Importera en {{car}} {{from}} – kostnad | Carglo",
+      "metaDescription": "Vad kostar det att importera en {{car}} från {{year}} {{from}}? Cirka {{total}} med tull, moms, skatter och transport. Se uppdelningen och räkna på din bil.",
+      "h1": "Importera en {{car}} {{from}}: vad det verkligen kostar",
+      "lead": "En {{car}} från {{year}} köpt för {{price}} kostar registrerad cirka {{total}} (land: {{country}}) – med köp, transport, tull, moms och nationella skatter.",
+      "summaryTitle": "Total kostnad – {{country}}",
+      "summaryRange": "Realistiskt spann: {{low}} – {{high}}",
+      "specs": {
+        "year": "Årsmodell",
+        "engine": "Motor",
+        "power": "Effekt",
+        "hp": "hk",
+        "fuel": "Drivmedel",
+        "price": "Typiskt pris – {{origin}}"
+      },
+      "table": {
+        "title": "Kostnadsuppdelning",
+        "price": "Bil med auktions- eller handlaravgifter",
+        "transport": "Transport till dörren (land, fartyg, hamn)",
+        "duty": "Tull",
+        "vat": "Importmoms {{vatRate}} % ({{portCountry}})",
+        "registration": "Registrering, besiktning och pappersarbete",
+        "other": "Försäkring och övriga kostnader",
+        "total": "Totalt"
+      },
+      "note": "Exempel beräknat {{date}} för {{country}} med kalkylatorns satser. Din bils pris, skick, plats och rutt ändrar resultatet.",
+      "p1": "Tull tas ut på tullvärdet – priset plus transport till EU:s gräns – här {{duty}}. Importmomsen på {{vatRate}} % betalas i förtullningslandet ({{portCountry}}, hamnen {{port}}): {{vat}}.",
+      "p2National": "Till det kommer posten ”{{nationalName}}”: {{national}}. Den beror på motor, utsläpp eller värde och avgör ofta om importen lönar sig.",
+      "p2None": "I det här landet ({{country}}) betalar bilen ingen registrerings- eller punktskatt – efter tull och moms återstår bara registreringskostnaderna, cirka {{registration}}.",
+      "p3": "Bilen hämtas i {{zone}} och skeppas från {{departure}} till {{port}}. Räkna med {{daysMin}}–{{daysMax}} dagar från köp till registrering.",
+      "othersTitle": "Fler populära modeller",
+      "faq1": {
+        "q": "Vad kostar det att importera en {{car}}?",
+        "a": "En {{car}} från {{year}} köpt för {{price}} kostar totalt cirka {{total}} (spann {{low}} – {{high}}) med transport, tull {{duty}}, moms {{vat}} och registrering."
+      },
+      "faq2": {
+        "q": "Vilka skatter betalar jag för en importerad {{car}}?",
+        "a": "Tull ({{duty}}), importmoms på {{vatRate}} % ({{vat}}) och beroende på land en registrerings- eller punktskatt. Kalkylatorn visar exakta belopp för din bil."
+      },
+      "from": {
+        "USA": "från USA",
+        "CANADA": "från Kanada",
+        "JAPAN": "från Japan",
+        "UAE": "från Förenade Arabemiraten",
+        "UK": "från Storbritannien"
+      }
+    }
   },
   "blog": {
     "title": "Blogg om bilimport",
@@ -1482,5 +1546,71 @@
     "confirmed": "Din prenumeration är bekräftad. Tack!",
     "unsubscribed": "Du är avregistrerad och får inga fler nyhetsbrev.",
     "invalid": "Länken är ogiltig eller har redan använts."
+  },
+  "taxes": {
+    "eyebrow": "Gratis verktyg",
+    "title": "Kalkylator för tull, moms och skatt på importbilar",
+    "lead": "Ange pris och motor för en bil från USA, Kanada, Japan, Förenade Arabemiraten eller Storbritannien och se skatterna för valfritt EU-land – med månadens tullkurs.",
+    "origin": "Köpt i",
+    "price": "Köpeskilling ({{currency}})",
+    "year": "Tillverkningsår",
+    "fuel": "Drivmedel",
+    "engine": "Slagvolym (cm³)",
+    "power": "Effekt (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "valfritt",
+    "destination": "Registreras i",
+    "submit": "Beräkna skatter",
+    "calculating": "Beräknar…",
+    "resultTitle": "Skatter på den här bilen",
+    "duty": "Tull {{rate}} %",
+    "vat": "Importmoms {{rate}} % ({{country}})",
+    "noNational": "{{country}}: ingen registrerings- eller punktskatt på den här bilen",
+    "total": "Skatter totalt",
+    "note": "Tullvärdet inkluderar typisk transport till {{port}}. Tull och moms följer månadens tullkurs.",
+    "fullCost": "Hela kostnaden till dörren",
+    "error": "Beräkningen misslyckades. Kontrollera uppgifterna och försök igen.",
+    "empty": "Fyll i bilens uppgifter och klicka på ”Beräkna skatter”.",
+    "p1Title": "Tull",
+    "p1": "En personbil från ett land utanför EU betalar 10 % tull (pickuper och skåpbilar upp till 22 %) på tullvärdet: köpeskilling plus transport och försäkring till EU:s gräns. Bilar över 30 år i originalskick kan räknas som veteranbilar – med 0 % tull och sänkt moms.",
+    "p2Title": "Importmoms",
+    "p2": "Momsen betalas i förtullningslandet, på tullvärdet plus tull. Det är oftast den största enskilda skatten – mellan 17 % och 27 % beroende på land.",
+    "p3Title": "Punkt- och registreringsskatt",
+    "p3": "Många EU-länder lägger på en egen skatt vid registreringen: punktskatten i Polen, BPM i Nederländerna, NoVA i Österrike, malus i Frankrike med flera. Sverige tar inte ut någon registreringsskatt, men bonus–malus påverkar fordonsskatten.",
+    "countriesTitle": "Skatter och registrering land för land"
+  },
+  "method": {
+    "eyebrow": "Metod",
+    "title": "Så räknar vi kostnaden för att importera en bil",
+    "lead": "Carglo prissätter varje steg från auktion till registrering med samma regler som myndigheter och transportörer använder. Här ser du var siffrorna kommer ifrån och var de är uppskattningar.",
+    "updated": "Satser och regler senast kontrollerade: {{date}}",
+    "s1": {
+      "title": "Vad beräkningen omfattar",
+      "text": "Köpet med auktions- eller handlaravgifter, transport till hamnen, sjöfrakt och försäkring, hamn- och tullombudsavgifter, tull, importmoms, nationella skatter, leverans till din adress samt besiktning och registrering i ditt land.\nVarje resultat har tre scenarier – optimistiskt, förväntat och pessimistiskt – eftersom transportpriser och vissa avgifter varierar."
+    },
+    "s2": {
+      "title": "Tull och moms",
+      "text": "Tullsatserna följer EU:s kombinerade nomenklatur (TARIC): 10 % för personbilar, upp till 22 % för pickuper och skåpbilar samt reglerna för veteranfordon äldre än 30 år. Tullvärdet är priset plus transport och försäkring till EU:s gräns.\nUtländsk valuta räknas om med månadens tullkurs (kurserna från näst sista onsdagen i föregående månad), övriga belopp med centralbankens aktuella kurser."
+    },
+    "s3": {
+      "title": "Nationella skatter",
+      "text": "Registrerings- och punktskatter modelleras efter varje lands lagstiftning: slagvolym, CO₂, effekt, vikt, ålder och värde – så som landet kräver. På Cypern, i Grekland, Kroatien och på Malta följer skatten av officiella kalkylatorer – där ber vi om beloppet eller visar ett spann.\nOm du anger CO₂ och effekt från papperen blir resultatet exakt; annars uppskattar vi dem utifrån motor och drivmedel."
+    },
+    "s4": {
+      "title": "Transport och avgifter",
+      "text": "Landtransporten i köplandet prissätts utifrån avståndet mellan upphämtningsregion och avgångshamn med typiska transportörstariffer. Sjöfrakt samt hamn- och agentavgifter är typiska priser för varje rutt och EU-hamn.\nDe här posterna är uppskattningar – en speditörs offert för din bil kan skilja sig, därför visar vi ett spann."
+    },
+    "s5": {
+      "title": "Val av hamn",
+      "text": "Kalkylatorn prissätter varje EU-hamn ända till dörren – frakt, hamnavgifter, hamnlandets moms och leverans till din adress – och föreslår den billigaste. Du kan välja en annan hamn och jämföra."
+    },
+    "s6": {
+      "title": "Vad beräkningen inte kan veta",
+      "text": "Bilens verkliga skick, dolda skador, prisförändringar på auktioner, valutarörelser efter beräkningen och myndigheternas enskilda beslut. Resultatet är vägledande – det är varken ett tullbeslut eller skatterådgivning."
+    },
+    "s7": {
+      "title": "Oberoende",
+      "text": "Carglo säljer, köper och importerar inte bilar och tar ingen provision från importörer för resultatet. Vi tjänar på den betalda PDF-rapporten. Har du hittat ett fel eller en inaktuell sats? Skriv till {{email}} – vi rättar det."
+    }
   }
 }

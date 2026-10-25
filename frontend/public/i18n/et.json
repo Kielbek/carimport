@@ -450,7 +450,9 @@
     "what": "Mida arvutame",
     "ctaHint": "Tasuta, ilma registreerumiseta",
     "language": "Keel",
-    "blog": "Blogi"
+    "blog": "Blogi",
+    "taxes": "Tolli- ja maksukalkulaator",
+    "method": "Kuidas me arvutame"
   },
   "footer": {
     "about": "Sõltumatu kalkulaator väljastpoolt ELi toodavate autode impordikulude arvutamiseks. Me ei müü ega impordi autosid – arvutame välja, kui palju need tegelikult maksavad.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "Tingimused | Carglo",
       "description": "Autode impordikulude kalkulaatori ja PDF-raporti tingimused: müüja, makse, üleandmine, taganemine ja pretensioonid."
+    },
+    "taxes": {
+      "title": "Tollimaksu kalkulaator importautole – toll, käibemaks, registreerimistasu | Carglo",
+      "description": "Arvuta tollimaks, impordi käibemaks ja registreerimistasu autole USA-st, Kanadast, Jaapanist, AÜE-st või Ühendkuningriigist mis tahes ELi riiki. Tasuta ja ajakohane."
+    },
+    "method": {
+      "title": "Kuidas arvutame auto impordi kulu – allikad ja meetod | Carglo",
+      "description": "Kust meie määrad pärinevad, kuidas hindame transporti ja mida tulemus ei saa teada. Carglo kalkulaatori täielik metoodika."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Import osturiigi järgi",
       "countries": "Import ELi riikidesse",
       "ports": "ELi tollivormistussadamad",
-      "all": "Kõik juhendid"
+      "all": "Kõik juhendid",
+      "models": "Impordi hind mudeli järgi"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} ELi sadamat auto impordiks – tasud, käibemaks | Carglo",
         "metaDescription": "Võrdle kõiki {{count}} ELi autode tollivormistussadamat: terminali- ja tolliagendi tasud, impordikäibemaks, laevasõidu kestus ja teekaugus Eestisse.",
         "sortedFrom": "Sorteeritud teekauguse järgi riigini: {{country}}"
+      },
+      "models": {
+        "title": "Kui palju maksab populaarse auto import?",
+        "lead": "Näited kuludest kuni ukseni kõige enam imporditud mudelitele, arvutatud riigile: {{country}} – ajakohaste maksude, kursside ja veohindadega.",
+        "metaTitle": "Auto impordi hind mudeli järgi – {{models}} näidet | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra ja teised: impordi täishind koos tollimaksu, käibemaksu, riiklike maksude ja transpordiga. Arvuta oma auto tasuta."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Ava kalkulaator"
     },
     "related": "Seotud juhendid",
-    "disclaimer": "Teave on üksnes orienteeruv; lõplikud summad määravad maksu- ja tolliasutused. Määrad vastavalt kalkulaatoris kasutatavatele."
+    "disclaimer": "Teave on üksnes orienteeruv; lõplikud summad määravad maksu- ja tolliasutused. Määrad vastavalt kalkulaatoris kasutatavatele.",
+    "model": {
+      "metaTitle": "{{car}} import {{from}} – hind | Carglo",
+      "metaDescription": "Kui palju maksab {{year}}. aasta {{car}} import {{from}}? Umbes {{total}} koos tolli, käibemaksu, maksude ja transpordiga. Vaata jaotust ja arvuta oma auto.",
+      "h1": "{{car}} import {{from}}: mida see tegelikult maksab",
+      "lead": "{{year}}. aasta {{car}}, ostetud hinnaga {{price}}, maksab registreeritult umbes {{total}} (riik: {{country}}) – koos ostu, transpordi, tolli, käibemaksu ja riiklike maksudega.",
+      "summaryTitle": "Koguhind – {{country}}",
+      "summaryRange": "Realistlik vahemik: {{low}} – {{high}}",
+      "specs": {
+        "year": "Aasta",
+        "engine": "Mootor",
+        "power": "Võimsus",
+        "hp": "hj",
+        "fuel": "Kütus",
+        "price": "Tüüpiline hind – {{origin}}"
+      },
+      "table": {
+        "title": "Kulude jaotus",
+        "price": "Auto koos oksjoni- või müüjatasudega",
+        "transport": "Transport ukseni (maismaa, laev, sadam)",
+        "duty": "Tollimaks",
+        "vat": "Impordi käibemaks {{vatRate}}% ({{portCountry}})",
+        "registration": "Registreerimine, ülevaatus ja paberimajandus",
+        "other": "Kindlustus ja muud kulud",
+        "total": "Kokku"
+      },
+      "note": "Näide arvutatud {{date}} riigile: {{country}}, kalkulaatori määradega. Sinu auto hind, seisukord, asukoht ja marsruut muudavad tulemust.",
+      "p1": "Tollimaks arvutatakse tolliväärtuselt – hind koos transpordiga ELi piirini –, siin {{duty}}. Impordi käibemaks {{vatRate}}% makstakse tollivormistuse riigis ({{portCountry}}, sadam {{port}}): {{vat}}.",
+      "p2National": "Lisaks tuleb kirje „{{nationalName}}“: {{national}}. See sõltub mootorist, heitmetest või väärtusest ja otsustab sageli, kas import tasub end ära.",
+      "p2None": "Selles riigis ({{country}}) ei maksa see auto registreerimis- ega aktsiisimaksu – pärast tolli ja käibemaksu jäävad vaid registreerimiskulud, umbes {{registration}}.",
+      "p3": "Auto võetakse peale piirkonnas {{zone}} ja laevatatakse sadamast {{departure}} sadamasse {{port}}. Ostust registreerimiseni arvesta {{daysMin}}–{{daysMax}} päevaga.",
+      "othersTitle": "Teised populaarsed mudelid",
+      "faq1": {
+        "q": "Kui palju maksab {{car}} import?",
+        "a": "{{year}}. aasta {{car}}, ostetud hinnaga {{price}}, maksab kokku umbes {{total}} (vahemik {{low}} – {{high}}) koos transpordi, tollimaksu {{duty}}, käibemaksu {{vat}} ja registreerimisega."
+      },
+      "faq2": {
+        "q": "Milliseid makse maksan imporditud {{car}} eest?",
+        "a": "Tollimaksu ({{duty}}), impordi käibemaksu {{vatRate}}% ({{vat}}) ja riigist sõltuvalt registreerimis- või aktsiisimaksu. Kalkulaator näitab sinu auto täpseid summasid."
+      },
+      "from": {
+        "USA": "USA-st",
+        "CANADA": "Kanadast",
+        "JAPAN": "Jaapanist",
+        "UAE": "AÜE-st",
+        "UK": "Ühendkuningriigist"
+      }
+    }
   },
   "blog": {
     "title": "Autoimpordi blogi",
@@ -1482,5 +1546,71 @@
     "confirmed": "Sinu liitumine on kinnitatud. Aitäh!",
     "unsubscribed": "Oled uudiskirjast loobunud ega saa enam kirju.",
     "invalid": "See link on vigane või juba kasutatud."
+  },
+  "taxes": {
+    "eyebrow": "Tasuta tööriist",
+    "title": "Importauto tollimaksu, käibemaksu ja registreerimistasu kalkulaator",
+    "lead": "Sisesta USA-st, Kanadast, Jaapanist, AÜE-st või Ühendkuningriigist pärit auto hind ja mootor ning vaata makse mis tahes ELi riigi jaoks – selle kuu tollikursiga.",
+    "origin": "Ostetud",
+    "price": "Ostuhind ({{currency}})",
+    "year": "Valmistamisaasta",
+    "fuel": "Kütus",
+    "engine": "Mootori maht (cm³)",
+    "power": "Võimsus (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "valikuline",
+    "destination": "Registreerimisriik",
+    "submit": "Arvuta maksud",
+    "calculating": "Arvutan…",
+    "resultTitle": "Selle auto maksud",
+    "duty": "Tollimaks {{rate}}%",
+    "vat": "Impordi käibemaks {{rate}}% ({{country}})",
+    "noNational": "{{country}}: sellel autol puudub registreerimis- või aktsiisimaks",
+    "total": "Maksud kokku",
+    "note": "Tolliväärtus sisaldab tüüpilist transporti sadamani {{port}}. Tollimaks ja käibemaks arvutatakse selle kuu tollikursiga.",
+    "fullCost": "Täishind kuni ukseni",
+    "error": "Arvutamine ebaõnnestus. Kontrolli andmeid ja proovi uuesti.",
+    "empty": "Sisesta auto andmed ja vajuta „Arvuta maksud“.",
+    "p1Title": "Tollimaks",
+    "p1": "Väljastpoolt ELi pärit sõiduauto maksab 10% tollimaksu (pikapid ja kaubikud kuni 22%) tolliväärtuselt: ostuhind koos transpordi ja kindlustusega ELi piirini. Üle 30 aasta vanad originaalseisukorras autod võivad olla ajaloolised – 0% tolliga ja alandatud käibemaksuga.",
+    "p2Title": "Impordi käibemaks",
+    "p2": "Käibemaks makstakse tollivormistuse riigis tolliväärtuselt koos tollimaksuga. See on tavaliselt suurim maks – riigiti 17–27%.",
+    "p3Title": "Aktsiis ja registreerimistasu",
+    "p3": "Paljud ELi riigid lisavad registreerimisel oma maksu: registreerimistasu Eestis, aktsiis Poolas, BPM Hollandis, NoVA Austrias, malus Prantsusmaal ja teised. Mõned riigid ei võta midagi.",
+    "countriesTitle": "Maksud ja registreerimine riigiti"
+  },
+  "method": {
+    "eyebrow": "Metoodika",
+    "title": "Kuidas me arvutame auto impordi kulu",
+    "lead": "Carglo hindab iga sammu oksjonist registreerimiseni samade reeglite järgi, mida kasutavad ametid ja vedajad. Siit näed, kust numbrid pärinevad ja kus on tegu hinnanguga.",
+    "updated": "Määrad ja reeglid viimati kontrollitud: {{date}}",
+    "s1": {
+      "title": "Mida arvutus hõlmab",
+      "text": "Ostu koos oksjoni- või müüjatasudega, transporti sadamasse, merevedu ja kindlustust, sadama- ja tolliagenditasusid, tollimaksu, impordi käibemaksu, riiklikke makse, kohaletoimetamist sinu aadressile ning ülevaatust ja registreerimist sinu riigis.\nIgal tulemusel on kolm stsenaariumi – optimistlik, oodatav ja pessimistlik –, sest veohinnad ja osa tasusid kõiguvad."
+    },
+    "s2": {
+      "title": "Tollimaks ja käibemaks",
+      "text": "Tollimäärad järgivad ELi kombineeritud nomenklatuuri (TARIC): 10% sõiduautodele, kuni 22% pikapitele ja kaubikutele ning üle 30 aasta vanade ajalooliste sõidukite reeglid. Tolliväärtus on hind koos transpordi ja kindlustusega ELi piirini.\nVälisvaluuta arvestame ümber kuu tollikursiga (eelmise kuu eelviimase kolmapäeva kursid), muud summad keskpanga kehtivate kurssidega."
+    },
+    "s3": {
+      "title": "Riiklikud maksud",
+      "text": "Registreerimis- ja aktsiisimaksud modelleerime iga riigi seaduste järgi: mootori maht, CO₂, võimsus, mass, vanus ja väärtus – nagu riik nõuab. Küprosel, Kreekas, Horvaatias ja Maltal tuleneb maks ametlikest kalkulaatoritest – seal küsime summat või näitame vahemikku.\nKui sisestad CO₂ ja võimsuse dokumentidest, on tulemus täpne; muidu hindame need mootori ja kütuse põhjal."
+    },
+    "s4": {
+      "title": "Transport ja tasud",
+      "text": "Maismaatranspordi osturiigis hindame pealevõtupiirkonna ja lähtesadama vahemaa põhjal tüüpiliste vedajatariifidega. Merevedu ning sadama- ja agenditasud on iga marsruudi ja ELi sadama tüüpilised hinnad.\nNeed kirjed on hinnangud – ekspedeerija pakkumine sinu autole võib erineda, seepärast näitame vahemikku."
+    },
+    "s5": {
+      "title": "Sadama valik",
+      "text": "Kalkulaator hindab iga ELi sadamat kuni ukseni – veo, sadamatasud, sadamariigi käibemaksu ja kohaletoimetamise sinu aadressile – ning pakub soodsaimat. Võid valida teise sadama ja võrrelda."
+    },
+    "s6": {
+      "title": "Mida arvutus ei saa teada",
+      "text": "Auto tegelikku seisukorda, varjatud kahjustusi, oksjonihindade muutusi, valuutakursside liikumist pärast arvutust ega ametite üksikotsuseid. Tulemus on informatiivne – see ei ole tolliotsus ega maksunõustamine."
+    },
+    "s7": {
+      "title": "Sõltumatus",
+      "text": "Carglo ei müü, osta ega impordi autosid ega võta importijatelt tulemuse eest vahendustasu. Teenime tasulise PDF-aruandega. Leidsid vea või aegunud määra? Kirjuta aadressil {{email}} – parandame."
+    }
   }
 }

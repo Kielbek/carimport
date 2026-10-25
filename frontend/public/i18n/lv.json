@@ -450,7 +450,9 @@
     "what": "Ko mēs aprēķinām",
     "ctaHint": "Bez maksas, bez reģistrācijas",
     "language": "Valoda",
-    "blog": "Blogs"
+    "blog": "Blogs",
+    "taxes": "Muitas un nodokļu kalkulators",
+    "method": "Kā mēs rēķinām"
   },
   "footer": {
     "about": "Neatkarīgs importa izmaksu kalkulators automašīnām no valstīm ārpus ES. Mēs automašīnas nepārdodam un neimportējam – mēs aprēķinām, cik tās patiesībā maksā.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "Noteikumi | Carglo",
       "description": "Automašīnu importa izmaksu kalkulatora un PDF atskaites noteikumi: pārdevējs, maksājums, piegāde, atteikuma tiesības un pretenzijas."
+    },
+    "taxes": {
+      "title": "Muitas kalkulators importa auto – muita, PVN, reģistrācija | Carglo",
+      "description": "Aprēķiniet muitu, importa PVN un reģistrācijas nodokli auto no ASV, Kanādas, Japānas, AAE vai Lielbritānijas jebkurai ES valstij. Bez maksas un aktuāli."
+    },
+    "method": {
+      "title": "Kā mēs aprēķinām auto importa izmaksas – avoti un metode | Carglo",
+      "description": "No kurienes nāk mūsu likmes, kā novērtējam transportu un ko rezultāts nevar zināt. Pilna Carglo kalkulatora metodoloģija."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Imports pēc iegādes valsts",
       "countries": "Imports uz ES valstīm",
       "ports": "ES muitošanas ostas",
-      "all": "Visi ceļveži"
+      "all": "Visi ceļveži",
+      "models": "Importa izmaksas pēc modeļa"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} ES ostas auto importam – maksas, PVN, kuģošana | Carglo",
         "metaDescription": "Salīdzini visas {{count}} ES auto muitošanas ostas: termināļa un muitas brokera maksas, importa PVN, kuģošanas laiks un attālums pa autoceļiem līdz Latvijai.",
         "sortedFrom": "Kārtots pēc attāluma pa autoceļiem līdz: {{country}}"
+      },
+      "models": {
+        "title": "Cik maksā populāra auto imports?",
+        "lead": "Izmaksu piemēri līdz durvīm visvairāk importētajiem modeļiem, aprēķināti valstij: {{country}} – ar aktuālajiem nodokļiem, kursiem un frakti.",
+        "metaTitle": "Auto importa izmaksas pēc modeļa – {{models}} piemēri | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra un citi: pilnas importa izmaksas ar muitu, PVN, valsts nodokļiem un transportu. Aprēķiniet savu auto bez maksas."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Atvērt kalkulatoru"
     },
     "related": "Saistītie ceļveži",
-    "disclaimer": "Informācija ir tikai orientējoša; galīgās summas nosaka nodokļu un muitas iestādes. Likmes atbilstoši kalkulatorā izmantotajām."
+    "disclaimer": "Informācija ir tikai orientējoša; galīgās summas nosaka nodokļu un muitas iestādes. Likmes atbilstoši kalkulatorā izmantotajām.",
+    "model": {
+      "metaTitle": "{{car}} imports {{from}} – cik maksā | Carglo",
+      "metaDescription": "Cik maksā {{year}}. gada {{car}} imports {{from}}? Aptuveni {{total}} ar muitu, PVN, nodokļiem un transportu. Skatiet sadalījumu un aprēķiniet savu auto.",
+      "h1": "{{car}} imports {{from}}: cik tas maksā patiesībā",
+      "lead": "{{year}}. gada {{car}}, nopirkts par {{price}}, pēc reģistrācijas izmaksā aptuveni {{total}} (valsts: {{country}}) – ar pirkumu, transportu, muitu, PVN un valsts nodokļiem.",
+      "summaryTitle": "Kopējās izmaksas – {{country}}",
+      "summaryRange": "Reāls diapazons: {{low}} – {{high}}",
+      "specs": {
+        "year": "Gads",
+        "engine": "Dzinējs",
+        "power": "Jauda",
+        "hp": "ZS",
+        "fuel": "Degviela",
+        "price": "Tipiskā cena – {{origin}}"
+      },
+      "table": {
+        "title": "Izmaksu sadalījums",
+        "price": "Auto ar izsoles vai pārdevēja maksām",
+        "transport": "Transports līdz durvīm (sauszeme, kuģis, osta)",
+        "duty": "Muita",
+        "vat": "Importa PVN {{vatRate}}% ({{portCountry}})",
+        "registration": "Reģistrācija, tehniskā apskate un formalitātes",
+        "other": "Apdrošināšana un citas izmaksas",
+        "total": "Kopā"
+      },
+      "note": "Piemērs aprēķināts {{date}} valstij: {{country}}, ar kalkulatora likmēm. Jūsu auto cena, stāvoklis, atrašanās vieta un maršruts maina rezultātu.",
+      "p1": "Muitu aprēķina no muitas vērtības – cena kopā ar transportu līdz ES robežai –, šeit {{duty}}. Importa PVN {{vatRate}}% maksā muitošanas valstī ({{portCountry}}, osta {{port}}): {{vat}}.",
+      "p2National": "Klāt nāk pozīcija “{{nationalName}}”: {{national}}. Tā ir atkarīga no dzinēja, izmešiem vai vērtības un bieži izšķir, vai imports atmaksājas.",
+      "p2None": "Šajā valstī ({{country}}) par šo auto nemaksā reģistrācijas vai akcīzes nodokli – pēc muitas un PVN paliek tikai reģistrācijas izmaksas, aptuveni {{registration}}.",
+      "p3": "Auto tiek paņemts reģionā {{zone}} un nosūtīts pa jūru no {{departure}} uz {{port}}. No pirkuma līdz reģistrācijai rēķiniet {{daysMin}}–{{daysMax}} dienas.",
+      "othersTitle": "Citi populāri modeļi",
+      "faq1": {
+        "q": "Cik maksā {{car}} imports?",
+        "a": "{{year}}. gada {{car}}, nopirkts par {{price}}, kopā izmaksā aptuveni {{total}} (diapazons {{low}} – {{high}}) ar transportu, muitu {{duty}}, PVN {{vat}} un reģistrāciju."
+      },
+      "faq2": {
+        "q": "Kādus nodokļus maksāju par importētu {{car}}?",
+        "a": "Muitu ({{duty}}), importa PVN {{vatRate}}% ({{vat}}) un atkarībā no valsts reģistrācijas vai akcīzes nodokli. Kalkulators parāda precīzas summas jūsu auto."
+      },
+      "from": {
+        "USA": "no ASV",
+        "CANADA": "no Kanādas",
+        "JAPAN": "no Japānas",
+        "UAE": "no AAE",
+        "UK": "no Lielbritānijas"
+      }
+    }
   },
   "blog": {
     "title": "Auto importa blogs",
@@ -1482,5 +1546,71 @@
     "confirmed": "Jūsu pieraksts ir apstiprināts. Paldies!",
     "unsubscribed": "Jūs esat atteicies un vairs nesaņemsiet jaunumus.",
     "invalid": "Šī saite nav derīga vai jau ir izmantota."
+  },
+  "taxes": {
+    "eyebrow": "Bezmaksas rīks",
+    "title": "Importa auto muitas, PVN un reģistrācijas nodokļa kalkulators",
+    "lead": "Ievadiet auto no ASV, Kanādas, Japānas, AAE vai Lielbritānijas cenu un dzinēju un redziet nodokļus jebkurai ES valstij – ar šī mēneša muitas kursu.",
+    "origin": "Nopirkts",
+    "price": "Pirkuma cena ({{currency}})",
+    "year": "Izlaides gads",
+    "fuel": "Degviela",
+    "engine": "Dzinēja tilpums (cm³)",
+    "power": "Jauda (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "nav obligāti",
+    "destination": "Reģistrācijas valsts",
+    "submit": "Aprēķināt nodokļus",
+    "calculating": "Aprēķina…",
+    "resultTitle": "Šī auto nodokļi",
+    "duty": "Muita {{rate}}%",
+    "vat": "Importa PVN {{rate}}% ({{country}})",
+    "noNational": "{{country}}: šim auto nav reģistrācijas vai akcīzes nodokļa",
+    "total": "Nodokļi kopā",
+    "note": "Muitas vērtība ietver tipisku transportu līdz {{port}}. Muita un PVN tiek rēķināti pēc šī mēneša muitas kursa.",
+    "fullCost": "Pilnas izmaksas līdz durvīm",
+    "error": "Aprēķins neizdevās. Pārbaudiet datus un mēģiniet vēlreiz.",
+    "empty": "Aizpildiet auto datus un nospiediet “Aprēķināt nodokļus”.",
+    "p1Title": "Muita",
+    "p1": "Vieglais auto no valstīm ārpus ES maksā 10% muitu (pikapi un furgoni līdz 22%) no muitas vērtības: pirkuma cena kopā ar transportu un apdrošināšanu līdz ES robežai. Vairāk nekā 30 gadus veci auto oriģinālā stāvoklī var būt vēsturiski – ar 0% muitu un samazinātu PVN.",
+    "p2Title": "Importa PVN",
+    "p2": "PVN maksā muitošanas valstī no muitas vērtības kopā ar muitu. Parasti tas ir lielākais nodoklis – atkarībā no valsts no 17% līdz 27%.",
+    "p3Title": "Akcīze un reģistrācijas nodoklis",
+    "p3": "Daudzas ES valstis reģistrācijā pievieno savu nodokli: akcīzi Polijā, BPM Nīderlandē, NoVA Austrijā, malus Francijā un citus. Latvijā un dažās citās valstīs šāda nodokļa nav.",
+    "countriesTitle": "Nodokļi un reģistrācija pa valstīm"
+  },
+  "method": {
+    "eyebrow": "Metodoloģija",
+    "title": "Kā mēs aprēķinām auto importa izmaksas",
+    "lead": "Carglo novērtē katru soli no izsoles līdz reģistrācijai pēc tiem pašiem noteikumiem, ko izmanto iestādes un pārvadātāji. Šeit redzams, no kurienes nāk skaitļi un kur tie ir aplēses.",
+    "updated": "Likmes un noteikumi pēdējo reizi pārbaudīti: {{date}}",
+    "s1": {
+      "title": "Ko aprēķins ietver",
+      "text": "Pirkumu ar izsoles vai pārdevēja maksām, transportu līdz ostai, jūras fraktu un apdrošināšanu, ostas un muitas brokera maksas, muitu, importa PVN, valsts nodokļus, piegādi uz jūsu adresi un tehnisko apskati un reģistrāciju jūsu valstī.\nKatram rezultātam ir trīs scenāriji – optimistisks, sagaidāmais un pesimistisks –, jo transporta cenas un dažas maksas svārstās."
+    },
+    "s2": {
+      "title": "Muita un PVN",
+      "text": "Muitas likmes atbilst ES Kombinētajai nomenklatūrai (TARIC): 10% vieglajiem auto, līdz 22% pikapiem un furgoniem, kā arī noteikumi vēsturiskiem transportlīdzekļiem, kas vecāki par 30 gadiem. Muitas vērtība ir cena kopā ar transportu un apdrošināšanu līdz ES robežai.\nĀrvalstu valūtas pārrēķinām pēc mēneša muitas kursa (iepriekšējā mēneša priekšpēdējās trešdienas kursi), pārējās summas pēc centrālās bankas aktuālajiem kursiem."
+    },
+    "s3": {
+      "title": "Valsts nodokļi",
+      "text": "Reģistrācijas un akcīzes nodokļus modelējam pēc katras valsts likumiem: dzinēja tilpums, CO₂, jauda, masa, vecums un vērtība – kā nosaka valsts. Kiprā, Grieķijā, Horvātijā un Maltā nodoklis izriet no oficiāliem kalkulatoriem – tur mēs prasām summu vai rādām diapazonu.\nJa ievadāt CO₂ un jaudu no dokumentiem, rezultāts ir precīzs; pretējā gadījumā tos novērtējam pēc dzinēja un degvielas."
+    },
+    "s4": {
+      "title": "Transports un maksas",
+      "text": "Sauszemes transportu pirkuma valstī novērtējam pēc attāluma starp paņemšanas reģionu un izbraukšanas ostu ar tipiskiem pārvadātāju tarifiem. Jūras frakts un ostas un aģentu maksas ir tipiskas cenas katram maršrutam un ES ostai.\nŠīs pozīcijas ir aplēses – ekspeditora piedāvājums jūsu auto var atšķirties, tāpēc rādām diapazonu."
+    },
+    "s5": {
+      "title": "Ostas izvēle",
+      "text": "Kalkulators novērtē katru ES ostu līdz durvīm – fraktu, ostas maksas, ostas valsts PVN un piegādi uz jūsu adresi – un piedāvā lētāko. Varat izvēlēties citu ostu un salīdzināt."
+    },
+    "s6": {
+      "title": "Ko aprēķins nevar zināt",
+      "text": "Auto patieso stāvokli, slēptus bojājumus, izsoļu cenu izmaiņas, valūtas kursu svārstības pēc aprēķina un iestāžu individuālos lēmumus. Rezultāts ir informatīvs – tas nav muitas lēmums vai nodokļu konsultācija."
+    },
+    "s7": {
+      "title": "Neatkarība",
+      "text": "Carglo nepārdod, nepērk un neimportē auto un neņem komisiju no importētājiem par rezultātu. Mēs pelnām ar maksas PDF atskaiti. Pamanījāt kļūdu vai novecojušu likmi? Rakstiet uz {{email}} – mēs to izlabosim."
+    }
   }
 }

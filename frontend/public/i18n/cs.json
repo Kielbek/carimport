@@ -450,7 +450,9 @@
     "what": "Co počítáme",
     "ctaHint": "Zdarma, bez registrace",
     "language": "Jazyk",
-    "blog": "Blog"
+    "blog": "Blog",
+    "taxes": "Kalkulačka cla a daní",
+    "method": "Jak počítáme"
   },
   "footer": {
     "about": "Nezávislá kalkulačka nákladů na dovoz aut ze zemí mimo EU. Auta neprodáváme ani nedovážíme – počítáme, kolik doopravdy stojí.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "Obchodní podmínky | Carglo",
       "description": "Obchodní podmínky kalkulačky nákladů na dovoz aut a PDF reportu: prodávající, platba, dodání, odstoupení od smlouvy a reklamace."
+    },
+    "taxes": {
+      "title": "Kalkulačka cla na auto z USA – clo, DPH, registrační poplatek | Carglo",
+      "description": "Spočítejte clo, dovozní DPH a registrační daň za auto z USA, Kanady, Japonska, SAE nebo Velké Británie pro libovolnou zemi EU. Zdarma a aktuálně."
+    },
+    "method": {
+      "title": "Jak počítáme náklady na dovoz auta – zdroje a metoda | Carglo",
+      "description": "Odkud bereme sazby, jak odhadujeme dopravu a co výsledek vědět nemůže. Kompletní metodika kalkulačky Carglo."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Dovoz podle země nákupu",
       "countries": "Dovoz do zemí EU",
       "ports": "Přístavy proclení v EU",
-      "all": "Všichni průvodci"
+      "all": "Všichni průvodci",
+      "models": "Cena dovozu podle modelu"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "Přístavy EU pro dovoz aut ({{count}}) – poplatky, DPH, plavba | Carglo",
         "metaDescription": "Porovnejte všechny přístavy proclení aut v EU ({{count}}): poplatky terminálu a celního zástupce, dovozní DPH, doba plavby a silniční vzdálenost do Česka.",
         "sortedFrom": "Seřazeno podle silniční vzdálenosti do: {{country}}"
+      },
+      "models": {
+        "title": "Kolik stojí dovoz oblíbeného auta?",
+        "lead": "Příklady nákladů až ke dveřím pro nejčastěji dovážené modely, spočítané pro zemi: {{country}} – s aktuálními daněmi, kurzy a cenami dopravy.",
+        "metaTitle": "Cena dovozu auta podle modelu – {{models}} příkladů | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra a další: celkové náklady na dovoz s clem, DPH, národními daněmi a dopravou. Spočítejte si své auto zdarma."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Otevřít kalkulačku"
     },
     "related": "Související průvodci",
-    "disclaimer": "Informace mají pouze orientační charakter; konečné částky určují finanční a celní úřady. Sazby odpovídají těm, které používá kalkulačka."
+    "disclaimer": "Informace mají pouze orientační charakter; konečné částky určují finanční a celní úřady. Sazby odpovídají těm, které používá kalkulačka.",
+    "model": {
+      "metaTitle": "Dovoz {{car}} {{from}} – kolik stojí | Carglo",
+      "metaDescription": "Kolik stojí dovoz vozu {{car}} ({{year}}) {{from}}? Asi {{total}} s clem, DPH, daněmi a dopravou. Podívejte se na rozpis a spočítejte své auto.",
+      "h1": "Dovoz {{car}} {{from}}: kolik to opravdu stojí",
+      "lead": "{{car}} z roku {{year}} koupený za {{price}} vyjde po registraci asi na {{total}} (země: {{country}}) – včetně nákupu, dopravy, cla, DPH a národních daní.",
+      "summaryTitle": "Celkové náklady – {{country}}",
+      "summaryRange": "Reálné rozpětí: {{low}} – {{high}}",
+      "specs": {
+        "year": "Rok výroby",
+        "engine": "Motor",
+        "power": "Výkon",
+        "hp": "k",
+        "fuel": "Palivo",
+        "price": "Typická cena – {{origin}}"
+      },
+      "table": {
+        "title": "Rozpis nákladů",
+        "price": "Auto s poplatky aukce nebo prodejce",
+        "transport": "Doprava až ke dveřím (souš, loď, přístav)",
+        "duty": "Clo",
+        "vat": "Dovozní DPH {{vatRate}} % ({{portCountry}})",
+        "registration": "Registrace, STK a formality",
+        "other": "Pojištění a ostatní náklady",
+        "total": "Celkem"
+      },
+      "note": "Příklad spočítaný {{date}} pro zemi: {{country}}, sazbami kalkulačky. Cena, stav, umístění a trasa vašeho auta výsledek mění.",
+      "p1": "Clo se počítá z celní hodnoty – ceny auta s dopravou na hranici EU – zde {{duty}}. Dovozní DPH {{vatRate}} % se platí v zemi proclení ({{portCountry}}, přístav {{port}}): {{vat}}.",
+      "p2National": "K tomu přistupuje položka „{{nationalName}}“: {{national}}. Závisí na motoru, emisích nebo hodnotě auta, a proto často rozhoduje, zda se dovoz vyplatí.",
+      "p2None": "V této zemi ({{country}}) se za toto auto neplatí registrační daň ani spotřební daň – po clu a DPH zbývají jen náklady na registraci, asi {{registration}}.",
+      "p3": "Auto se vyzvedává v oblasti {{zone}} a pluje z přístavu {{departure}} do přístavu {{port}}. Od nákupu do registrace počítejte s {{daysMin}}–{{daysMax}} dny.",
+      "othersTitle": "Další oblíbené modely",
+      "faq1": {
+        "q": "Kolik stojí dovoz vozu {{car}}?",
+        "a": "{{car}} z roku {{year}} koupený za {{price}} vyjde celkem asi na {{total}} (rozpětí {{low}} – {{high}}) včetně dopravy, cla {{duty}}, DPH {{vat}} a registrace."
+      },
+      "faq2": {
+        "q": "Jaké daně zaplatím za dovezený {{car}}?",
+        "a": "Clo ({{duty}}), dovozní DPH {{vatRate}} % ({{vat}}) a podle země registrační nebo spotřební daň. Kalkulačka ukáže přesné částky pro vaše auto."
+      },
+      "from": {
+        "USA": "z USA",
+        "CANADA": "z Kanady",
+        "JAPAN": "z Japonska",
+        "UAE": "ze SAE",
+        "UK": "z Velké Británie"
+      }
+    }
   },
   "blog": {
     "title": "Blog o dovozu aut",
@@ -1482,5 +1546,71 @@
     "confirmed": "Přihlášení je potvrzeno. Děkujeme!",
     "unsubscribed": "Byli jste odhlášeni a další newslettery už nedostanete.",
     "invalid": "Tento odkaz je neplatný nebo už byl použit."
+  },
+  "taxes": {
+    "eyebrow": "Nástroj zdarma",
+    "title": "Kalkulačka cla, DPH a registrační daně za dovezené auto",
+    "lead": "Zadejte cenu a motor auta z USA, Kanady, Japonska, SAE nebo Velké Británie a uvidíte daně pro libovolnou zemi EU – s celním kurzem pro tento měsíc.",
+    "origin": "Koupeno v",
+    "price": "Kupní cena ({{currency}})",
+    "year": "Rok výroby",
+    "fuel": "Palivo",
+    "engine": "Objem motoru (cm³)",
+    "power": "Výkon (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "nepovinné",
+    "destination": "Země registrace",
+    "submit": "Spočítat daně",
+    "calculating": "Počítám…",
+    "resultTitle": "Daně za toto auto",
+    "duty": "Clo {{rate}} %",
+    "vat": "Dovozní DPH {{rate}} % ({{country}})",
+    "noNational": "{{country}}: bez registrační a spotřební daně pro toto auto",
+    "total": "Daně celkem",
+    "note": "Celní hodnota zahrnuje typickou dopravu do přístavu {{port}}. Clo a DPH se počítají celním kurzem tohoto měsíce.",
+    "fullCost": "Celkové náklady až ke dveřím",
+    "error": "Výpočet se nezdařil. Zkontrolujte údaje a zkuste to znovu.",
+    "empty": "Vyplňte údaje o autě a klikněte na „Spočítat daně“.",
+    "p1Title": "Clo",
+    "p1": "Osobní auto ze zemí mimo EU platí 10 % cla (pick-upy a dodávky až 22 %) z celní hodnoty: kupní ceny s dopravou a pojištěním na hranici EU. Auta starší 30 let v původním stavu mohou být historická – s nulovým clem a sníženou DPH.",
+    "p2Title": "Dovozní DPH",
+    "p2": "DPH se platí v zemi proclení z celní hodnoty navýšené o clo. Obvykle jde o největší daň – 17 % až 27 % podle země.",
+    "p3Title": "Spotřební a registrační daň",
+    "p3": "Mnoho zemí EU přidává při registraci vlastní daň: spotřební daň v Polsku, BPM v Nizozemsku, NoVA v Rakousku, malus ve Francii a další. Česko kromě ekologického poplatku u starších aut žádnou registrační daň nevybírá.",
+    "countriesTitle": "Daně a registrace podle země"
+  },
+  "method": {
+    "eyebrow": "Metodika",
+    "title": "Jak počítáme náklady na dovoz auta",
+    "lead": "Carglo oceňuje každý krok od aukce po registraci podle stejných pravidel, která používají úřady a dopravci. Tady je, odkud čísla pocházejí a kde jde o odhad.",
+    "updated": "Sazby a předpisy naposledy ověřeny: {{date}}",
+    "s1": {
+      "title": "Co výpočet zahrnuje",
+      "text": "Nákup s poplatky aukce nebo prodejce, dopravu do přístavu, námořní přepravu a pojištění, přístavní poplatky a poplatky celního zástupce, clo, dovozní DPH, národní daně, dovoz na vaši adresu a technickou kontrolu a registraci ve vaší zemi.\nKaždý výsledek má tři scénáře – optimistický, očekávaný a pesimistický – protože ceny dopravy a některé poplatky kolísají."
+    },
+    "s2": {
+      "title": "Clo a DPH",
+      "text": "Celní sazby vycházejí z kombinované nomenklatury EU (TARIC): 10 % pro osobní auta, až 22 % pro pick-upy a dodávky a pravidla pro historická vozidla starší 30 let. Celní hodnota je cena s dopravou a pojištěním na hranici EU.\nCizí měny přepočítáváme celním kurzem platným pro daný měsíc (kurzy předposlední středy předchozího měsíce), ostatní částky aktuálními kurzy centrální banky."
+    },
+    "s3": {
+      "title": "Národní daně",
+      "text": "Registrační a spotřební daně modelujeme podle zákonů jednotlivých zemí: objem, CO₂, výkon, hmotnost, stáří a hodnota – tak, jak to země vyžaduje. Na Kypru, v Řecku, Chorvatsku a na Maltě daň vyplývá z oficiálních kalkulaček – tam se ptáme na částku nebo ukazujeme rozpětí.\nKdyž zadáte CO₂ a výkon z dokladů, je výsledek přesný; jinak je odhadneme z motoru a paliva."
+    },
+    "s4": {
+      "title": "Doprava a poplatky",
+      "text": "Pozemní dopravu v zemi nákupu oceňujeme podle vzdálenosti mezi oblastí vyzvednutí a přístavem odplutí s typickými tarify dopravců. Námořní přeprava a přístavní a agenturní poplatky jsou typické ceny pro každou trasu a přístav EU.\nTyto položky jsou odhady – nabídka speditéra pro vaše auto se může lišit, proto ukazujeme rozpětí."
+    },
+    "s5": {
+      "title": "Volba přístavu",
+      "text": "Kalkulačka ocení každý přístav EU až ke dveřím – přepravu, přístavní poplatky, DPH země přístavu a dovoz na vaši adresu – a navrhne nejlevnější. Můžete zvolit jiný přístav a porovnat."
+    },
+    "s6": {
+      "title": "Co výpočet vědět nemůže",
+      "text": "Skutečný stav auta, skrytá poškození, změny cen na aukcích, pohyby kurzů po výpočtu ani individuální rozhodnutí úřadů. Výsledek je informativní – není celním rozhodnutím ani daňovým poradenstvím."
+    },
+    "s7": {
+      "title": "Nezávislost",
+      "text": "Carglo auta neprodává, nekupuje ani nedováží a za výsledek nebere od dovozců provize. Vyděláváme na placeném PDF reportu. Našli jste chybu nebo zastaralou sazbu? Napište na {{email}} – opravíme ji."
+    }
   }
 }

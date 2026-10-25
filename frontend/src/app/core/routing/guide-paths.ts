@@ -1,41 +1,42 @@
 import { COUNTRY_SLUGS, GUIDE_PORTS, GuideOrigin, ORIGIN_SLUGS } from '../../features/guides/guide-data.generated';
+import { GUIDE_MODELS } from '../../features/guides/model-data.generated';
 import { Lang, SUPPORTED_LANGS } from '../i18n/languages';
 
-export type GuideSection = 'origins' | 'countries' | 'ports';
+export type GuideSection = 'origins' | 'countries' | 'ports' | 'models';
 
 /**
  * Localized section slugs of the SEO guides, per language:
- *   /pl/import-auta/stany-zjednoczone, /pl/kraje-ue/niemcy, /pl/porty/bremerhaven
+ *   /pl/import-auta/stany-zjednoczone, /pl/kraje-ue/niemcy, /pl/porty/bremerhaven, /pl/koszt-importu/ford-mustang
  */
 export const GUIDE_SECTIONS: Record<Lang, Record<GuideSection, string>> = {
-  bg: { origins: 'vnos-na-kola', countries: 'strani-es', ports: 'pristanishta' },
-  cs: { origins: 'dovoz-auta', countries: 'zeme-eu', ports: 'pristavy' },
-  da: { origins: 'bilimport', countries: 'eu-lande', ports: 'havne' },
-  de: { origins: 'auto-import', countries: 'eu-laender', ports: 'haefen' },
-  el: { origins: 'eisagogi-autokinitou', countries: 'chores-ee', ports: 'limania' },
-  en: { origins: 'car-import', countries: 'eu-countries', ports: 'ports' },
-  es: { origins: 'importar-coche', countries: 'paises-ue', ports: 'puertos' },
-  et: { origins: 'auto-import', countries: 'el-riigid', ports: 'sadamad' },
-  fi: { origins: 'auton-tuonti', countries: 'eu-maat', ports: 'satamat' },
-  fr: { origins: 'importer-voiture', countries: 'pays-ue', ports: 'ports' },
-  hr: { origins: 'uvoz-automobila', countries: 'zemlje-eu', ports: 'luke' },
-  hu: { origins: 'auto-import', countries: 'eu-orszagok', ports: 'kikotok' },
-  it: { origins: 'importare-auto', countries: 'paesi-ue', ports: 'porti' },
-  lt: { origins: 'automobilio-importas', countries: 'es-salys', ports: 'uostai' },
-  lv: { origins: 'auto-imports', countries: 'es-valstis', ports: 'ostas' },
-  nl: { origins: 'auto-importeren', countries: 'eu-landen', ports: 'havens' },
-  pl: { origins: 'import-auta', countries: 'kraje-ue', ports: 'porty' },
-  pt: { origins: 'importar-carro', countries: 'paises-ue', ports: 'portos' },
-  ro: { origins: 'import-auto', countries: 'tari-ue', ports: 'porturi' },
-  sk: { origins: 'dovoz-auta', countries: 'krajiny-eu', ports: 'pristavy' },
-  sl: { origins: 'uvoz-avtomobila', countries: 'drzave-eu', ports: 'pristanisca' },
-  sv: { origins: 'importera-bil', countries: 'eu-lander', ports: 'hamnar' },
-  uk: { origins: 'import-avto', countries: 'krainy-yes', ports: 'porty' },
+  bg: { origins: 'vnos-na-kola', countries: 'strani-es', ports: 'pristanishta', models: 'tsena-vnos' },
+  cs: { origins: 'dovoz-auta', countries: 'zeme-eu', ports: 'pristavy', models: 'cena-dovozu' },
+  da: { origins: 'bilimport', countries: 'eu-lande', ports: 'havne', models: 'importpris' },
+  de: { origins: 'auto-import', countries: 'eu-laender', ports: 'haefen', models: 'importkosten' },
+  el: { origins: 'eisagogi-autokinitou', countries: 'chores-ee', ports: 'limania', models: 'kostos-eisagogis' },
+  en: { origins: 'car-import', countries: 'eu-countries', ports: 'ports', models: 'import-cost' },
+  es: { origins: 'importar-coche', countries: 'paises-ue', ports: 'puertos', models: 'coste-importacion' },
+  et: { origins: 'auto-import', countries: 'el-riigid', ports: 'sadamad', models: 'impordi-hind' },
+  fi: { origins: 'auton-tuonti', countries: 'eu-maat', ports: 'satamat', models: 'tuontihinta' },
+  fr: { origins: 'importer-voiture', countries: 'pays-ue', ports: 'ports', models: 'cout-import' },
+  hr: { origins: 'uvoz-automobila', countries: 'zemlje-eu', ports: 'luke', models: 'cijena-uvoza' },
+  hu: { origins: 'auto-import', countries: 'eu-orszagok', ports: 'kikotok', models: 'import-koltseg' },
+  it: { origins: 'importare-auto', countries: 'paesi-ue', ports: 'porti', models: 'costo-importazione' },
+  lt: { origins: 'automobilio-importas', countries: 'es-salys', ports: 'uostai', models: 'importo-kaina' },
+  lv: { origins: 'auto-imports', countries: 'es-valstis', ports: 'ostas', models: 'importa-izmaksas' },
+  nl: { origins: 'auto-importeren', countries: 'eu-landen', ports: 'havens', models: 'importkosten' },
+  pl: { origins: 'import-auta', countries: 'kraje-ue', ports: 'porty', models: 'koszt-importu' },
+  pt: { origins: 'importar-carro', countries: 'paises-ue', ports: 'portos', models: 'custo-importacao' },
+  ro: { origins: 'import-auto', countries: 'tari-ue', ports: 'porturi', models: 'cost-import' },
+  sk: { origins: 'dovoz-auta', countries: 'krajiny-eu', ports: 'pristavy', models: 'cena-dovozu' },
+  sl: { origins: 'uvoz-avtomobila', countries: 'drzave-eu', ports: 'pristanisca', models: 'cena-uvoza' },
+  sv: { origins: 'importera-bil', countries: 'eu-lander', ports: 'hamnar', models: 'importkostnad' },
+  uk: { origins: 'import-avto', countries: 'krainy-yes', ports: 'porty', models: 'vartist-importu' },
 };
 
 export interface GuideRef {
   section: GuideSection;
-  /** Origin (USA, ...), country code (DE, ...) or port code (DEBRV, ...); null = the section's hub page. */
+  /** Origin (USA, ...), country code (DE, ...), port code (DEBRV, ...) or model id; null = the section's hub page. */
   item: string | null;
 }
 
@@ -53,6 +54,8 @@ export function itemSlug(section: GuideSection, item: string, lang: Lang): strin
       return COUNTRY_SLUGS[lang][item];
     case 'ports':
       return GUIDE_PORTS.find((p) => p.code === item)!.slug;
+    case 'models':
+      return item;
   }
 }
 
@@ -79,6 +82,8 @@ export function itemsOf(section: GuideSection): string[] {
       return Object.keys(COUNTRY_SLUGS['en']);
     case 'ports':
       return GUIDE_PORTS.map((p) => p.code);
+    case 'models':
+      return GUIDE_MODELS.map((m) => m.id);
   }
 }
 

@@ -450,7 +450,9 @@
     "what": "Mit számolunk",
     "ctaHint": "Ingyenes, regisztráció nélkül",
     "language": "Nyelv",
-    "blog": "Blog"
+    "blog": "Blog",
+    "taxes": "Vám- és adókalkulátor",
+    "method": "Így számolunk"
   },
   "footer": {
     "about": "Független kalkulátor az EU-n kívülről behozott autók importköltségeihez. Nem árulunk és nem importálunk autókat – kiszámoljuk, mennyibe kerülnek valójában.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "ÁSZF | Carglo",
       "description": "Az autóimport-költségkalkulátor és a PDF-jelentés feltételei: eladó, fizetés, teljesítés, elállás és panaszkezelés."
+    },
+    "taxes": {
+      "title": "Vámkalkulátor importautóhoz – vám, áfa, regisztrációs adó | Carglo",
+      "description": "Számolja ki a vámot, az import áfát és a regisztrációs adót egy USA-ból, Kanadából, Japánból, az Emírségekből vagy az Egyesült Királyságból hozott autóra bármely EU-országban. Ingyenes és naprakész."
+    },
+    "method": {
+      "title": "Így számoljuk az autóimport költségét – források és módszer | Carglo",
+      "description": "Honnan származnak a díjtételek, hogyan becsüljük a szállítást, és mit nem tudhat az eredmény. A Carglo kalkulátor teljes módszertana."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Import a vásárlás országa szerint",
       "countries": "Import az uniós országokba",
       "ports": "Uniós vámkezelő kikötők",
-      "all": "Összes útmutató"
+      "all": "Összes útmutató",
+      "models": "Importköltség modellenként"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} uniós kikötő autóimporthoz – díjak, áfa, hajózási idő | Carglo",
         "metaDescription": "Hasonlítsa össze mind a(z) {{count}} uniós vámkezelő kikötőt: terminál- és vámügynöki díjak, behozatali áfa, hajózási idő és közúti távolság Magyarországig.",
         "sortedFrom": "Közúti távolság szerint rendezve, célország: {{country}}"
+      },
+      "models": {
+        "title": "Mennyibe kerül egy népszerű autó behozatala?",
+        "lead": "Háztól házig példák a leggyakrabban importált modellekre, kiszámolva erre az országra: {{country}} – aktuális adókkal, árfolyamokkal és fuvardíjakkal.",
+        "metaTitle": "Autóimport költsége modellenként – {{models}} példa | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra és mások: a teljes importköltség vámmal, áfával, nemzeti adókkal és szállítással. Számolja ki ingyen a saját autóját."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "A kalkulátor megnyitása"
     },
     "related": "Kapcsolódó útmutatók",
-    "disclaimer": "Az információk csak tájékoztató jellegűek; a végső összegekről az adó- és vámhatóságok döntenek. A kulcsok a kalkulátor által használt értékek."
+    "disclaimer": "Az információk csak tájékoztató jellegűek; a végső összegekről az adó- és vámhatóságok döntenek. A kulcsok a kalkulátor által használt értékek.",
+    "model": {
+      "metaTitle": "{{car}} import {{from}} – mennyibe kerül | Carglo",
+      "metaDescription": "Mennyibe kerül egy {{year}}-es {{car}} behozatala {{from}}? Kb. {{total}} vámmal, áfával, adókkal és szállítással. Nézze meg a bontást, és számolja ki az autóját.",
+      "h1": "{{car}} behozatala {{from}}: mennyibe kerül valójában",
+      "lead": "Egy {{year}}-es {{car}}, amelyet {{price}} áron vettek, forgalomba helyezve kb. {{total}} (ország: {{country}}) – vásárlással, szállítással, vámmal, áfával és nemzeti adókkal.",
+      "summaryTitle": "Teljes költség – {{country}}",
+      "summaryRange": "Reális sáv: {{low}} – {{high}}",
+      "specs": {
+        "year": "Évjárat",
+        "engine": "Motor",
+        "power": "Teljesítmény",
+        "hp": "LE",
+        "fuel": "Üzemanyag",
+        "price": "Tipikus ár – {{origin}}"
+      },
+      "table": {
+        "title": "Költségbontás",
+        "price": "Autó aukciós vagy kereskedői díjakkal",
+        "transport": "Szállítás az ajtóig (szárazföld, hajó, kikötő)",
+        "duty": "Vám",
+        "vat": "Import áfa {{vatRate}}% ({{portCountry}})",
+        "registration": "Forgalomba helyezés, vizsga és ügyintézés",
+        "other": "Biztosítás és egyéb költségek",
+        "total": "Összesen"
+      },
+      "note": "Példa, számítva: {{date}}, erre az országra: {{country}}, a kalkulátor díjtételeivel. Az Ön autójának ára, állapota, helye és útvonala módosítja az eredményt.",
+      "p1": "A vámot a vámértékre számítják – az ár és az EU határáig tartó szállítás összege –, itt {{duty}}. A {{vatRate}}%-os import áfát a vámkezelés országában kell megfizetni ({{portCountry}}, {{port}} kikötő): {{vat}}.",
+      "p2National": "Ehhez jön a(z) „{{nationalName}}” tétel: {{national}}. A motortól, a kibocsátástól vagy az értéktől függ, ezért gyakran ez dönti el, megéri-e az import.",
+      "p2None": "Ebben az országban ({{country}}) erre az autóra nincs regisztrációs adó vagy jövedéki adó – vám és áfa után csak a forgalomba helyezés költsége marad, kb. {{registration}}.",
+      "p3": "Az autót {{zone}} régióban veszik át, és {{departure}} kikötőből {{port}} kikötőbe hajózzák. A vásárlástól a forgalomba helyezésig {{daysMin}}–{{daysMax}} nappal számoljon.",
+      "othersTitle": "További népszerű modellek",
+      "faq1": {
+        "q": "Mennyibe kerül egy {{car}} behozatala?",
+        "a": "Egy {{year}}-es, {{price}} áron vett {{car}} összesen kb. {{total}} (sáv: {{low}} – {{high}}), szállítással, {{duty}} vámmal, {{vat}} áfával és forgalomba helyezéssel."
+      },
+      "faq2": {
+        "q": "Milyen adókat fizetek egy behozott {{car}} után?",
+        "a": "Vámot ({{duty}}), {{vatRate}}% import áfát ({{vat}}) és országtól függően regisztrációs vagy jövedéki adót. A kalkulátor megmutatja a pontos összegeket az Ön autójára."
+      },
+      "from": {
+        "USA": "az USA-ból",
+        "CANADA": "Kanadából",
+        "JAPAN": "Japánból",
+        "UAE": "az Emírségekből",
+        "UK": "az Egyesült Királyságból"
+      }
+    }
   },
   "blog": {
     "title": "Autóimport blog",
@@ -1482,5 +1546,71 @@
     "confirmed": "Feliratkozását megerősítettük. Köszönjük!",
     "unsubscribed": "Leiratkozott, több hírlevelet nem kap.",
     "invalid": "Ez a link érvénytelen, vagy már felhasználták."
+  },
+  "taxes": {
+    "eyebrow": "Ingyenes eszköz",
+    "title": "Vám-, áfa- és regisztrációsadó-kalkulátor importautókhoz",
+    "lead": "Adja meg egy USA-ból, Kanadából, Japánból, az Emírségekből vagy az Egyesült Királyságból hozott autó árát és motorját, és nézze meg az adókat bármely EU-országra – az e havi vámárfolyammal.",
+    "origin": "Vásárlás helye",
+    "price": "Vételár ({{currency}})",
+    "year": "Gyártási év",
+    "fuel": "Üzemanyag",
+    "engine": "Hengerűrtartalom (cm³)",
+    "power": "Teljesítmény (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "nem kötelező",
+    "destination": "Forgalomba helyezés országa",
+    "submit": "Adók kiszámítása",
+    "calculating": "Számolás…",
+    "resultTitle": "Az autó adói",
+    "duty": "Vám {{rate}}%",
+    "vat": "Import áfa {{rate}}% ({{country}})",
+    "noNational": "{{country}}: erre az autóra nincs regisztrációs vagy jövedéki adó",
+    "total": "Adók összesen",
+    "note": "A vámérték tartalmazza a tipikus szállítást {{port}} kikötőig. A vám és az áfa az e havi vámárfolyamot követi.",
+    "fullCost": "Teljes költség háztól házig",
+    "error": "A számítás nem sikerült. Ellenőrizze az adatokat, és próbálja újra.",
+    "empty": "Töltse ki az autó adatait, és kattintson az „Adók kiszámítása” gombra.",
+    "p1Title": "Vám",
+    "p1": "Az EU-n kívülről érkező személyautó 10% vámot fizet (pickupok és kisteherautók 22%-ig) a vámérték után: vételár plusz szállítás és biztosítás az EU határáig. A 30 évnél idősebb, eredeti állapotú autók veterán járműnek minősülhetnek – 0% vámmal és csökkentett áfával.",
+    "p2Title": "Import áfa",
+    "p2": "Az áfát a vámkezelés országában kell megfizetni, a vámmal növelt vámérték után. Általában ez a legnagyobb adó – országtól függően 17% és 27% között.",
+    "p3Title": "Jövedéki és regisztrációs adó",
+    "p3": "Sok EU-ország saját adót vet ki a forgalomba helyezéskor: regisztrációs adót Magyarországon, jövedéki adót Lengyelországban, BPM-et Hollandiában, NoVA-t Ausztriában, malust Franciaországban és másokat. Egyes országok semmit sem szednek.",
+    "countriesTitle": "Adók és forgalomba helyezés országonként"
+  },
+  "method": {
+    "eyebrow": "Módszertan",
+    "title": "Így számoljuk az autóimport költségét",
+    "lead": "A Carglo az aukciótól a forgalomba helyezésig minden lépést ugyanazokkal a szabályokkal áraz, amelyeket a hatóságok és a fuvarozók használnak. Itt látható, honnan származnak a számok, és hol becslések.",
+    "updated": "Díjtételek és szabályok utolsó ellenőrzése: {{date}}",
+    "s1": {
+      "title": "Mit tartalmaz a számítás",
+      "text": "A vásárlást aukciós vagy kereskedői díjakkal, a kikötőig tartó szállítást, a tengeri fuvart és biztosítást, a kikötői és vámügynöki díjakat, a vámot, az import áfát, a nemzeti adókat, a kiszállítást az Ön címére, valamint a műszaki vizsgát és a forgalomba helyezést az Ön országában.\nMinden eredménynek három forgatókönyve van – optimista, várható és pesszimista –, mert a szállítási árak és egyes díjak ingadoznak."
+    },
+    "s2": {
+      "title": "Vám és áfa",
+      "text": "A vámtételek az EU Kombinált Nómenklatúráját (TARIC) követik: 10% személyautóra, 22%-ig pickupokra és kisteherautókra, valamint a 30 évnél idősebb veteránjárművek szabályai. A vámérték az ár plusz a szállítás és biztosítás az EU határáig.\nA devizákat a hónapra érvényes vámárfolyamon váltjuk át (az előző hónap utolsó előtti szerdájának árfolyamai), a többi összeget a jegybank aktuális árfolyamain."
+    },
+    "s3": {
+      "title": "Nemzeti adók",
+      "text": "A regisztrációs és jövedéki adókat az egyes országok jogszabályai szerint modellezzük: hengerűrtartalom, CO₂, teljesítmény, tömeg, kor és érték – ahogy az ország előírja. Cipruson, Görögországban, Horvátországban és Máltán az adó hivatalos kalkulátorokból adódik – ott az összeget kérjük, vagy sávot mutatunk.\nHa a CO₂-t és a teljesítményt a dokumentumokból adja meg, az eredmény pontos; különben a motorból és az üzemanyagból becsüljük."
+    },
+    "s4": {
+      "title": "Szállítás és díjak",
+      "text": "A vásárlás országán belüli szárazföldi szállítást az átvételi régió és az indulási kikötő távolsága alapján, tipikus fuvarozói tarifákkal árazzuk. A tengeri fuvar, a kikötői és ügynöki díjak útvonalanként és EU-kikötőnként tipikus árak.\nEzek a tételek becslések – egy szállítmányozó ajánlata az Ön autójára eltérhet, ezért sávot mutatunk."
+    },
+    "s5": {
+      "title": "A kikötő kiválasztása",
+      "text": "A kalkulátor minden EU-kikötőt háztól házig áraz – fuvar, kikötői díjak, a kikötő országának áfája és kiszállítás az Ön címére – és a legolcsóbbat javasolja. Választhat másik kikötőt, és összehasonlíthatja."
+    },
+    "s6": {
+      "title": "Amit a számítás nem tudhat",
+      "text": "Az autó valós állapotát, a rejtett sérüléseket, az aukciós árak változását, a számítás utáni árfolyammozgásokat és a hatóságok egyedi döntéseit. Az eredmény tájékoztató jellegű – nem vámhatározat és nem adótanácsadás."
+    },
+    "s7": {
+      "title": "Függetlenség",
+      "text": "A Carglo nem árul, nem vásárol és nem importál autókat, és az eredményért nem kap jutalékot importőröktől. A fizetős PDF-jelentésből élünk. Hibát vagy elavult díjtételt talált? Írjon a {{email}} címre – javítjuk."
+    }
   }
 }

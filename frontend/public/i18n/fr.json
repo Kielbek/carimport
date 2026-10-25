@@ -450,7 +450,9 @@
     "what": "Ce que nous calculons",
     "ctaHint": "Gratuit, sans inscription",
     "language": "Langue",
-    "blog": "Blog"
+    "blog": "Blog",
+    "taxes": "Calculateur de droits et taxes",
+    "method": "Notre méthode"
   },
   "footer": {
     "about": "Calculateur indépendant des coûts d’importation de voitures hors UE. Nous ne vendons ni n’importons de voitures – nous calculons ce qu’elles coûtent vraiment.",
@@ -799,6 +801,14 @@
     "terms": {
       "title": "Conditions générales | Carglo",
       "description": "Conditions générales du calculateur de frais d’importation de voitures et du rapport PDF : vendeur, paiement, fourniture, rétractation et réclamations."
+    },
+    "taxes": {
+      "title": "Calcul des droits de douane sur une voiture importée – TVA, malus | Carglo",
+      "description": "Calculez les droits de douane, la TVA à l'importation et la taxe d'immatriculation d'une voiture des États-Unis, du Canada, du Japon, des EAU ou du Royaume-Uni pour tout pays de l'UE. Gratuit et à jour."
+    },
+    "method": {
+      "title": "Comment nous calculons le coût d'import d'une voiture – sources et méthode | Carglo",
+      "description": "D'où viennent nos taux, comment nous estimons le transport et ce que le résultat ne peut pas savoir. La méthodologie complète du calculateur Carglo."
     }
   },
   "privacy": {
@@ -1089,7 +1099,8 @@
       "origins": "Importer selon le pays d’achat",
       "countries": "Importer dans les pays de l’UE",
       "ports": "Ports de dédouanement de l’UE",
-      "all": "Tous les guides"
+      "all": "Tous les guides",
+      "models": "Coût d'import par modèle"
     },
     "hub": {
       "origins": {
@@ -1111,6 +1122,12 @@
         "metaTitle": "{{count}} ports UE pour l’import auto – frais, TVA, traversée | Carglo",
         "metaDescription": "Comparez les {{count}} ports de dédouanement auto de l’UE : frais de terminal et d’agent en douane, TVA à l’importation, traversées et distance jusqu’en France.",
         "sortedFrom": "Triés par distance routière vers : {{country}}"
+      },
+      "models": {
+        "title": "Combien coûte l'import d'une voiture populaire ?",
+        "lead": "Exemples porte à porte pour les modèles les plus importés, calculés pour : {{country}}, avec les taxes, les taux de change et le fret actuels.",
+        "metaTitle": "Coût d'import d'une voiture par modèle – {{models}} exemples | Carglo",
+        "metaDescription": "Mustang, Challenger, RAM, Tesla, Supra et plus : le coût complet de l'import avec droits, TVA, taxes nationales et transport. Calculez votre voiture gratuitement."
       }
     },
     "origin": {
@@ -1328,7 +1345,54 @@
       "button": "Ouvrir le calculateur"
     },
     "related": "Guides associés",
-    "disclaimer": "Informations données à titre indicatif ; les montants définitifs sont fixés par les autorités fiscales et douanières. Taux tels qu’utilisés par le calculateur."
+    "disclaimer": "Informations données à titre indicatif ; les montants définitifs sont fixés par les autorités fiscales et douanières. Taux tels qu’utilisés par le calculateur.",
+    "model": {
+      "metaTitle": "Importer une {{car}} {{from}} – coût | Carglo",
+      "metaDescription": "Combien coûte l'import d'une {{car}} de {{year}} {{from}} ? Environ {{total}} avec droits, TVA, taxes et transport. Voir le détail et calculer votre voiture.",
+      "h1": "Importer une {{car}} {{from}} : ce que ça coûte vraiment",
+      "lead": "Une {{car}} de {{year}} achetée {{price}} coûte environ {{total}} immatriculée (pays : {{country}}) – achat, transport, droits, TVA et taxes nationales compris.",
+      "summaryTitle": "Coût total – {{country}}",
+      "summaryRange": "Fourchette réaliste : {{low}} – {{high}}",
+      "specs": {
+        "year": "Année",
+        "engine": "Moteur",
+        "power": "Puissance",
+        "hp": "ch",
+        "fuel": "Carburant",
+        "price": "Prix typique – {{origin}}"
+      },
+      "table": {
+        "title": "Détail des coûts",
+        "price": "Voiture avec frais d'enchère ou de vendeur",
+        "transport": "Transport jusqu'à chez vous (terre, bateau, port)",
+        "duty": "Droits de douane",
+        "vat": "TVA à l'importation {{vatRate}} % ({{portCountry}})",
+        "registration": "Immatriculation, contrôle et formalités",
+        "other": "Assurance et autres frais",
+        "total": "Total"
+      },
+      "note": "Exemple calculé le {{date}} pour : {{country}}, avec les taux du calculateur. Le prix, l'état, l'emplacement et l'itinéraire de votre voiture changent le résultat.",
+      "p1": "Les droits de douane portent sur la valeur en douane – le prix plus le transport jusqu'à la frontière de l'UE – ici {{duty}}. La TVA à l'importation de {{vatRate}} % est payée dans le pays de dédouanement ({{portCountry}}, port de {{port}}) : {{vat}}.",
+      "p2National": "S'y ajoute le poste « {{nationalName}} » : {{national}}. Il dépend du moteur, des émissions ou de la valeur et décide souvent si l'import est rentable.",
+      "p2None": "Dans ce pays ({{country}}), cette voiture ne paie ni taxe d'immatriculation ni accise – après droits et TVA, il ne reste que les frais d'immatriculation, environ {{registration}}.",
+      "p3": "La voiture est enlevée dans la région {{zone}} et expédiée de {{departure}} à {{port}}. De l'achat à l'immatriculation, comptez {{daysMin}} à {{daysMax}} jours.",
+      "othersTitle": "Autres modèles populaires",
+      "faq1": {
+        "q": "Combien coûte l'import d'une {{car}} ?",
+        "a": "Une {{car}} de {{year}} achetée {{price}} revient à environ {{total}} au total (fourchette {{low}} – {{high}}), transport, droits {{duty}}, TVA {{vat}} et immatriculation compris."
+      },
+      "faq2": {
+        "q": "Quelles taxes paie-t-on sur une {{car}} importée ?",
+        "a": "Les droits de douane ({{duty}}), la TVA à l'importation de {{vatRate}} % ({{vat}}) et, selon le pays, une taxe d'immatriculation ou une accise. Le calculateur donne les montants exacts pour votre voiture."
+      },
+      "from": {
+        "USA": "des États-Unis",
+        "CANADA": "du Canada",
+        "JAPAN": "du Japon",
+        "UAE": "des Émirats arabes unis",
+        "UK": "du Royaume-Uni"
+      }
+    }
   },
   "blog": {
     "title": "Blog sur l’importation de voitures",
@@ -1482,5 +1546,71 @@
     "confirmed": "Votre inscription est confirmée. Merci !",
     "unsubscribed": "Vous êtes désinscrit et ne recevrez plus la newsletter.",
     "invalid": "Ce lien est invalide ou a déjà été utilisé."
+  },
+  "taxes": {
+    "eyebrow": "Outil gratuit",
+    "title": "Calcul des droits de douane, de la TVA et des taxes sur une voiture importée",
+    "lead": "Saisissez le prix et le moteur d'une voiture des États-Unis, du Canada, du Japon, des EAU ou du Royaume-Uni et voyez les taxes pour tout pays de l'UE – au taux de change douanier du mois.",
+    "origin": "Achetée en",
+    "price": "Prix d'achat ({{currency}})",
+    "year": "Année de fabrication",
+    "fuel": "Carburant",
+    "engine": "Cylindrée (cm³)",
+    "power": "Puissance (kW)",
+    "co2": "CO₂ (g/km, WLTP)",
+    "optional": "facultatif",
+    "destination": "Pays d'immatriculation",
+    "submit": "Calculer les taxes",
+    "calculating": "Calcul…",
+    "resultTitle": "Taxes sur cette voiture",
+    "duty": "Droits de douane {{rate}} %",
+    "vat": "TVA à l'importation {{rate}} % ({{country}})",
+    "noNational": "{{country}} : pas de taxe d'immatriculation ni d'accise pour cette voiture",
+    "total": "Total des taxes",
+    "note": "La valeur en douane inclut un transport typique jusqu'à {{port}}. Droits et TVA suivent le taux de change douanier du mois.",
+    "fullCost": "Coût complet porte à porte",
+    "error": "Le calcul a échoué. Vérifiez les données et réessayez.",
+    "empty": "Renseignez la voiture puis cliquez sur « Calculer les taxes ».",
+    "p1Title": "Droits de douane",
+    "p1": "Une voiture particulière hors UE paie 10 % de droits (pick-up et utilitaires jusqu'à 22 %) sur la valeur en douane : prix d'achat plus transport et assurance jusqu'à la frontière de l'UE. Les voitures de plus de 30 ans d'origine peuvent être de collection – 0 % de droits et TVA réduite.",
+    "p2Title": "TVA à l'importation",
+    "p2": "La TVA est payée dans le pays de dédouanement, sur la valeur en douane majorée des droits. C'est en général la taxe la plus lourde – de 17 % à 27 % selon le pays.",
+    "p3Title": "Accise et taxe d'immatriculation",
+    "p3": "Beaucoup de pays de l'UE ajoutent leur propre taxe à l'immatriculation : le malus CO₂ et au poids en France, l'accise en Pologne, la BPM aux Pays-Bas, la NoVA en Autriche et d'autres. Certains pays ne prélèvent rien.",
+    "countriesTitle": "Taxes et immatriculation par pays"
+  },
+  "method": {
+    "eyebrow": "Méthodologie",
+    "title": "Comment nous calculons le coût d'import d'une voiture",
+    "lead": "Carglo chiffre chaque étape, de l'enchère à l'immatriculation, avec les mêmes règles que les administrations et les transporteurs. Voici d'où viennent les chiffres et où ce sont des estimations.",
+    "updated": "Taux et règles vérifiés le : {{date}}",
+    "s1": {
+      "title": "Ce que comprend le calcul",
+      "text": "L'achat avec les frais d'enchère ou de vendeur, le transport jusqu'au port, le fret maritime et l'assurance, les frais de port et de transitaire, les droits de douane, la TVA à l'importation, les taxes nationales, la livraison à votre adresse ainsi que le contrôle et l'immatriculation dans votre pays.\nChaque résultat comporte trois scénarios – optimiste, attendu et pessimiste – car les prix du transport et certains frais varient."
+    },
+    "s2": {
+      "title": "Droits de douane et TVA",
+      "text": "Les taux suivent la nomenclature combinée de l'UE (TARIC) : 10 % pour les voitures particulières, jusqu'à 22 % pour les pick-up et utilitaires, et les règles des véhicules de collection de plus de 30 ans. La valeur en douane est le prix plus le transport et l'assurance jusqu'à la frontière de l'UE.\nLes devises sont converties au taux douanier du mois (taux de l'avant-dernier mercredi du mois précédent), les autres montants aux taux actuels de la banque centrale."
+    },
+    "s3": {
+      "title": "Taxes nationales",
+      "text": "Les taxes d'immatriculation et accises sont modélisées selon la loi de chaque pays : cylindrée, CO₂, puissance, poids, âge et valeur, selon ce qu'exige le pays. À Chypre, en Grèce, en Croatie et à Malte, la taxe dépend de calculateurs officiels – nous demandons alors le montant ou affichons une fourchette.\nSi vous saisissez le CO₂ et la puissance des papiers, le résultat est exact ; sinon nous les estimons à partir du moteur et du carburant."
+    },
+    "s4": {
+      "title": "Transport et frais",
+      "text": "Le transport terrestre dans le pays d'achat est chiffré selon la distance entre la région d'enlèvement et le port de départ, avec des tarifs de transporteurs typiques. Le fret maritime et les frais de port et de transitaire sont des prix typiques par itinéraire et par port de l'UE.\nCes postes sont des estimations – le devis d'un transitaire pour votre voiture peut différer, c'est pourquoi nous montrons une fourchette."
+    },
+    "s5": {
+      "title": "Choix du port",
+      "text": "Le calculateur chiffre chaque port de l'UE porte à porte – fret, frais portuaires, TVA du pays du port et livraison à votre adresse – et propose le moins cher. Vous pouvez choisir un autre port et comparer."
+    },
+    "s6": {
+      "title": "Ce que le calcul ne peut pas savoir",
+      "text": "L'état réel de la voiture, les dommages cachés, l'évolution des prix aux enchères, les variations de change après le calcul et les décisions individuelles des administrations. Le résultat est une information, pas une décision douanière ni un conseil fiscal."
+    },
+    "s7": {
+      "title": "Indépendance",
+      "text": "Carglo ne vend, n'achète ni n'expédie de voitures et ne touche aucune commission des importateurs sur le résultat. Nous vivons du rapport PDF payant. Une erreur ou un taux dépassé ? Écrivez à {{email}} – nous corrigeons."
+    }
   }
 }
