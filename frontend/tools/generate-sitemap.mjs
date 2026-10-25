@@ -3,7 +3,7 @@
 // with the router. Run after adding a language or a page:  node tools/generate-sitemap.mjs
 import { readFileSync, writeFileSync } from 'node:fs';
 
-const SITE = 'https://carimport.eu';
+const SITE = 'https://cargloapp.com';
 const src = (p) => readFileSync(new URL(`../src/app/${p}`, import.meta.url), 'utf8');
 
 const langs = [...src('core/i18n/languages.ts').matchAll(/\{ code: '([a-z]{2})'/g)].map((m) => m[1]);

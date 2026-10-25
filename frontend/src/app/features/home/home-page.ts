@@ -336,7 +336,7 @@ export class HomePage {
   protected readonly analytics = inject(AnalyticsService);
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly about = computed(() => pathFor('about', this.lang.current()));
-  protected readonly partnerMail = 'partnerzy@carimport.eu';
+  protected readonly partnerMail = 'cargloapp@gmail.com';
   protected readonly strip = ['instant', 'items', 'ports'];
 
   /** Two tall tiles next to the wide preview, then a row of four, the last one inverted. */

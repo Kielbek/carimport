@@ -1,8 +1,8 @@
 /** Public site identity used for canonical URLs, hreflang, Open Graph and structured data. Change per deployment. */
 export const SITE = {
-  url: 'https://carimport.eu',
+  url: 'https://cargloapp.com',
   name: 'Carglo',
-  email: 'kontakt@carimport.eu',
+  email: 'cargloapp@gmail.com',
   ogImage: '/og-image.png',
   /**
    * The seller, as required in the terms and for consumer contracts. FILL IN BEFORE LAUNCH - same values as
