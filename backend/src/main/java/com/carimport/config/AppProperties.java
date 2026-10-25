@@ -52,7 +52,7 @@ public record AppProperties(
     }
 
     public Mail mail() {
-        return mail == null ? new Mail("CarImport.eu <raport@carimport.eu>", null) : mail;
+        return mail == null ? new Mail("Carglo <raport@carimport.eu>", null) : mail;
     }
 
     /** Seller identity printed in e-mails and the terms (same values as the frontend site config). */
@@ -60,7 +60,7 @@ public record AppProperties(
     }
 
     public Company company() {
-        return company == null ? new Company("CarImport.eu", "", "", "kontakt@carimport.eu") : company;
+        return company == null ? new Company("Carglo", "", "", "kontakt@carimport.eu") : company;
     }
 
     public Vehicle vehicle() {

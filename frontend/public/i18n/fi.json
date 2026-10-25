@@ -177,7 +177,7 @@
     "name": "Koko nimi",
     "phone": "Puhelin (valinnainen)",
     "submit": "Lähetä pyyntö",
-    "subtitle": "CarImport.eu ei tuo autoja maahan. Halutessasi välitämme laskelmasi yhdelle varmennetulle tuontiyritykselle, joka laatii sinulle tarjouksen. Ei sitoumuksia.",
+    "subtitle": "Carglo ei tuo autoja maahan. Halutessasi välitämme laskelmasi yhdelle varmennetulle tuontiyritykselle, joka laatii sinulle tarjouksen. Ei sitoumuksia.",
     "thanks": "Kiitos!",
     "thanksHint": "Tuontiyritys ottaa sinuun yhteyttä yhden arkipäivän kuluessa.",
     "title": "Tarjouspyyntö tuontiyritykselle (valinnainen)"
@@ -555,7 +555,7 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu —",
+        "title": "Carglo —",
         "text": "riippumaton tuontilaskuri"
       },
       "instant": {
@@ -584,7 +584,7 @@
       "days": "päivää"
     },
     "numbers": {
-      "eyebrow": "CarImport.eu lukuina",
+      "eyebrow": "Carglo lukuina",
       "title": "Luvut jokaisen laskelman takana",
       "n1": {
         "value": "5",
@@ -769,7 +769,7 @@
       "a": "Ei. Se on arvio, joka perustuu voimassa oleviin verokantoihin ja hinnastoihin. Lopulliset summat vahvistavat tulli ja verohallinto, jotka voivat esimerkiksi tarkistaa tulliarvon. Raportti luettelee kaikki oletukset, joten sitä on helppo verrata viralliseen päätökseen."
     },
     "q9": {
-      "q": "Tuoko CarImport.eu autoja maahan?",
+      "q": "Tuoko Carglo autoja maahan?",
       "a": "Ei. Olemme pelkkä laskuri – emme osta, kuljeta emmekä tulliselvitä autoja, emmekä ota palkkioita huutokaupoilta tai rahdinkuljettajilta. Siksi arvio pysyy riippumattomana. Halutessasi voit välittää arvion varmennetulle tuontiyritykselle, mutta se on aina sinun valintasi."
     }
   },
@@ -781,23 +781,23 @@
   },
   "seo": {
     "home": {
-      "title": "Autontuonnin kustannuslaskuri – USA, Japani, Dubai → EU | CarImport.eu",
+      "title": "Autontuonnin kustannuslaskuri – USA, Japani, Dubai → EU | Carglo",
       "description": "Riippumaton laskuri auton tuontiin Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista ja Isosta-Britanniasta: huutokauppa, laivaus, tulli, valmistevero, ALV, rekisteröinti ja riskit. Välitön arvio ilman rekisteröitymistä."
     },
     "calculator": {
-      "title": "Tulli-, valmistevero- ja ALV-laskuri tuontiautoille | CarImport.eu",
+      "title": "Tulli-, valmistevero- ja ALV-laskuri tuontiautoille | Carglo",
       "description": "Valitse maa, huutokauppa, satama ja ajoneuvo — reaaliaikainen laskuri näyttää kustannusten vaihteluvälin ja erittelyn: hinta, laivaus, tulli, valmistevero, ALV ja rekisteröinti."
     },
     "privacy": {
-      "title": "Tietosuojaseloste | CarImport.eu",
-      "description": "Miten CarImport.eu käsittelee henkilötietoja: maksut, raportit, kumppanikyselyt ja evästeet."
+      "title": "Tietosuojaseloste | Carglo",
+      "description": "Miten Carglo käsittelee henkilötietoja: maksut, raportit, kumppanikyselyt ja evästeet."
     },
     "about": {
-      "title": "Meistä – riippumaton autontuontilaskuri | CarImport.eu",
-      "description": "Keitä olemme, mistä tietomme tulevat ja miten ansaitsemme rahaa. CarImport.eu ei myy eikä tuo autoja – se laskee tuonnin kokonaiskustannuksen rehellisesti ja riippumattomasti."
+      "title": "Meistä – riippumaton autontuontilaskuri | Carglo",
+      "description": "Keitä olemme, mistä tietomme tulevat ja miten ansaitsemme rahaa. Carglo ei myy eikä tuo autoja – se laskee tuonnin kokonaiskustannuksen rehellisesti ja riippumattomasti."
     },
     "terms": {
-      "title": "Käyttöehdot | CarImport.eu",
+      "title": "Käyttöehdot | Carglo",
       "description": "Autojen tuontikustannuslaskurin ja PDF-raportin ehdot: myyjä, maksu, toimitus, peruuttaminen ja reklamaatiot."
     }
   },
@@ -806,7 +806,7 @@
     "title": "Tietosuojaseloste",
     "s1": {
       "title": "Rekisterinpitäjä",
-      "text": "Rekisterinpitäjä on CarImport.eu-palvelun ylläpitäjä. Tietosuoja-asioissa ota yhteyttä osoitteeseen {{email}}."
+      "text": "Rekisterinpitäjä on Carglo-palvelun ylläpitäjä. Tietosuoja-asioissa ota yhteyttä osoitteeseen {{email}}."
     },
     "s2": {
       "title": "Mitä tietoja käsittelemme",
@@ -992,7 +992,7 @@
     "eyebrow": "Meistä",
     "title1": "Laskemme autojen tuonnin.",
     "title2": "Emme myy autoja.",
-    "lead": "CarImport.eu on riippumaton laskuri, joka laskee, mitä auton tuominen Euroopan unionin ulkopuolelta maksaa. Rakensimme sen, jotta kuka tahansa – eikä vain kymmenen vuoden kokemuksen omaava kauppias – tietäisi ennen ostoa, mitä oikeasti maksaa.",
+    "lead": "Carglo on riippumaton laskuri, joka laskee, mitä auton tuominen Euroopan unionin ulkopuolelta maksaa. Rakensimme sen, jotta kuka tahansa – eikä vain kymmenen vuoden kokemuksen omaava kauppias – tietäisi ennen ostoa, mitä oikeasti maksaa.",
     "story": {
       "eyebrow": "Miten kaikki alkoi",
       "title": "Turhautumisesta piilokuluihin",
@@ -1091,20 +1091,20 @@
       "origins": {
         "title": "Auton tuontioppaat: Yhdysvallat, Kanada, Japani, Arabiemiirikunnat ja Iso-Britannia",
         "lead": "Vaiheittaiset oppaat jokaiseen maahan, josta voit ostaa auton: huutokaupat, asiakirjat, kuljetusaika, tulli, arvonlisävero ja rekisteröinti Suomessa – todelliset kustannukset näet laskurista.",
-        "metaTitle": "Auton tuontioppaat – USA, Kanada, Japani, Arabiemiirikunnat, UK | CarImport.eu",
+        "metaTitle": "Auton tuontioppaat – USA, Kanada, Japani, Arabiemiirikunnat, UK | Carglo",
         "metaDescription": "Näin tuot auton Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista tai Iso-Britanniasta Suomeen: huutokaupat, asiakirjat, rahti, tulli, ALV ja rekisteröinti."
       },
       "countries": {
         "title": "Auton tuonti kuhunkin EU-maahan",
         "lead": "Arvonlisäverokanta, rekisteröintivero, rekisteröintiviranomainen, katsastus ja lähimmät tullaussatamat kaikille 27 EU-maalle.",
-        "metaTitle": "Auton tuonti EU-maihin – ALV, rekisteröinti, satamat | CarImport.eu",
+        "metaTitle": "Auton tuonti EU-maihin – ALV, rekisteröinti, satamat | Carglo",
         "metaDescription": "Tuonnin arvonlisävero, rekisteröintiverot, viranomaiset, katsastukset ja lähimmät satamat kaikille 27 EU-maalle – vertaile ja laske tuontiauton kokonaishinta.",
         "yours": "Oma maasi"
       },
       "ports": {
         "title": "EU:n tullaussatamat tuontiautoille",
         "lead": "Kaikki {{count}} EU:n satamaa, joissa EU:n ulkopuolelta tulevat autot tullataan: maksut, ALV, merimatkan kesto Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista ja Iso-Britanniasta sekä tieetäisyydet.",
-        "metaTitle": "{{count}} EU-satamaa autojen tuontiin – maksut, ALV, merimatka | CarImport.eu",
+        "metaTitle": "{{count}} EU-satamaa autojen tuontiin – maksut, ALV, merimatka | Carglo",
         "metaDescription": "Vertaile kaikkia {{count}} EU:n autojen tullaussatamaa: terminaali- ja tulliasiamiesmaksut, tuonnin ALV, merimatkan kesto ja tieetäisyys Suomeen.",
         "sortedFrom": "Lajiteltu tieetäisyyden mukaan, kohde: {{country}}"
       }
@@ -1167,7 +1167,7 @@
       },
       "USA": {
         "h1": "Auton tuonti Yhdysvalloista Suomeen",
-        "metaTitle": "Auton tuonti Yhdysvalloista Suomeen – kulut, tulli, ALV | CarImport.eu",
+        "metaTitle": "Auton tuonti Yhdysvalloista Suomeen – kulut, tulli, ALV | Carglo",
         "metaDescription": "Näin tuot auton Yhdysvalloista: Copart- ja IAAI-huutokaupat, kuljetusaika, 10 % tulli, tuonnin ALV, asiakirjat ja rekisteröinti. Laske kokonaiskulut minuutissa.",
         "lead": "Yhdysvallat on tuontiautojen suurin lähde: Copartissa ja IAAI:ssa myydään vuosittain miljoonia ajoneuvoja, usein selvästi Euroopan markkinahintoja halvemmalla. Näin koko prosessi etenee ja tämän se todella maksaa.",
         "why": "Valtava valikoima, edulliset hinnat vaurioituneille (salvage) autoille, tehokkaat moottorit ja hyvin varustellut versiot, jotka ovat Euroopassa harvinaisia. Haittapuolet: yhdysvaltalaiset valot ja joskus nopeusmittari on muutettava, ja salvage-autojen korjaukset voivat tulla kalliiksi.",
@@ -1185,7 +1185,7 @@
       },
       "CANADA": {
         "h1": "Auton tuonti Kanadasta Suomeen",
-        "metaTitle": "Auton tuonti Kanadasta Suomeen – kulut, tulli, ALV | CarImport.eu",
+        "metaTitle": "Auton tuonti Kanadasta Suomeen – kulut, tulli, ALV | Carglo",
         "metaDescription": "Auton tuonti Kanadasta: Copart ja IAAI Canada, rahti Halifaxista ja Montrealista, 10 % tulli, ALV, asiakirjat ja rekisteröinti. Kokonaiskulujen laskuri.",
         "lead": "Kanadalaiset autot muistuttavat yhdysvaltalaisia, mutta ne on usein varusteltu paremmin talveen, niissä on metriset nopeusmittarit ja hinnat Kanadan dollareissa ovat edullisempia. Merimatka Halifaxista ja Montrealista Eurooppaan on Atlantin lyhyimpiä.",
         "why": "Metriset mittaristot, talvipaketit, lohkolämmittimet ja hyvä ruostesuojaus; hinnat Kanadan dollareissa ovat usein samasta mallista alemmat kuin Yhdysvalloissa.",
@@ -1203,7 +1203,7 @@
       },
       "JAPAN": {
         "h1": "Auton tuonti Japanista Suomeen",
-        "metaTitle": "Auton tuonti Japanista Suomeen – JDM, tulli, ALV | CarImport.eu",
+        "metaTitle": "Auton tuonti Japanista Suomeen – JDM, tulli, ALV | Carglo",
         "metaDescription": "JDM-auton tuonti Japanista: USS-huutokaupat, huutokauppaselosteet, rahti Yokohamasta, tulli, ALV, oikeanpuoleinen ohjaus ja rekisteröinti. Kululaskuri.",
         "lead": "Japani on JDM-autojen kotimaa: matalat mittarilukemat, erinomainen kunto ja malleja, joita ei ole koskaan myyty Euroopassa. Huutokauppaselosteet kuvaavat jokaisen auton yksityiskohtaisesti – mutta autot ovat oikealta ohjattavia ja matka on pitkä.",
         "why": "Erittäin hyvä kunto tiukkojen katsastusten (shaken) ansiosta, rehellinen huutokauppaluokitus sekä ainutlaatuiset urheiluautot ja kei-autot. Hinnat jeneinä ovat houkuttelevia.",
@@ -1221,7 +1221,7 @@
       },
       "UAE": {
         "h1": "Auton tuonti Dubaista (Arabiemiirikunnat) Suomeen",
-        "metaTitle": "Auton tuonti Dubaista Suomeen – kulut, tulli, ALV | CarImport.eu",
+        "metaTitle": "Auton tuonti Dubaista Suomeen – kulut, tulli, ALV | Carglo",
         "metaDescription": "Auton tuonti Dubaista ja Arabiemiirikunnista: Emirates Auction ja jälleenmyyjät, GCC-spec, rahti Jebel Alista, tulli, ALV ja rekisteröinti. Kululaskuri.",
         "lead": "Dubai on premium- ja urheiluautojen markkina, jossa mittarilukemat ovat matalia ja autot usein lähes käyttämättömiä. GCC-mallin autot on rakennettu kuumuuteen ja niitä myydään houkuttelevin hinnoin.",
         "why": "Luksus- ja urheilumallit, matalat mittarilukemat ja kuiva ilmasto (ei ruostetta). Dirhamin kurssi on sidottu Yhdysvaltain dollariin.",
@@ -1239,7 +1239,7 @@
       },
       "UK": {
         "h1": "Auton tuonti Iso-Britanniasta Suomeen",
-        "metaTitle": "Auton tuonti Iso-Britanniasta Brexitin jälkeen – tulli, ALV | CarImport.eu",
+        "metaTitle": "Auton tuonti Iso-Britanniasta Brexitin jälkeen – tulli, ALV | Carglo",
         "metaDescription": "Auton tuonti Iso-Britanniasta Brexitin jälkeen: tulli ja etuuskohteluun oikeuttava alkuperä, ALV, oikeanpuoleinen ohjaus, lyhyt rahti ja rekisteröinti.",
         "lead": "Brexitin jälkeen Iso-Britanniasta ostettu auto on tuontia EU:n ulkopuolelta: tulli-ilmoitus, tulli ja tuonnin arvonlisävero tulevat maksettaviksi. Matka on lyhyt, ja Iso-Britanniassa tai EU:ssa valmistetut autot voivat olla oikeutettuja 0 % tulliin.",
         "why": "Suuret käytettyjen autojen markkinat, hyvät huoltohistoriat ja lyhyt rahti RoRo-aluksella tai lautalla. Oikeanpuoleinen ohjaus on otettava huomioon.",
@@ -1258,7 +1258,7 @@
     },
     "country": {
       "h1": "{{country}}: auton tuonti EU:n ulkopuolelta",
-      "metaTitle": "{{country}} – auton tuonti: ALV {{vat}} %, rekisteröinti, satamat | CarImport.eu",
+      "metaTitle": "{{country}} – auton tuonti: ALV {{vat}} %, rekisteröinti, satamat | Carglo",
       "metaDescription": "Auton tuonti Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista tai Iso-Britanniasta, kohdemaa {{country}}: ALV {{vat}} %, rekisteröinti, katsastus, satamat ja kulut.",
       "lead": "Kaikki olennainen, kun rekisteröit tuontiauton – kohdemaa: {{country}}. Verot, viranomaiset, katsastus ja edullisimmat satamat.",
       "facts": {
@@ -1290,7 +1290,7 @@
     },
     "port": {
       "h1": "Satama {{port}} ({{country}}): tuontiautojen tullaus",
-      "metaTitle": "{{port}} – auton tuonti, tullaus, ALV {{vat}} % | CarImport.eu",
+      "metaTitle": "{{port}} – auton tuonti, tullaus, ALV {{vat}} % | Carglo",
       "metaDescription": "Tuontiauton tullaus, satama {{port}} ({{country}}): terminaali- ja tulliasiamiesmaksut, tuonnin ALV {{vat}} %, merimatkat Yhdysvalloista, Japanista ja Arabiemiirikunnista.",
       "lead": "{{port}} on tullaussatama, maa: {{country}}. Tässä sen maksut, merimatkojen kestot ja tieetäisyydet – ja kannattaako autosi tullata täällä.",
       "facts": {
@@ -1329,7 +1329,7 @@
   "blog": {
     "title": "Autontuontiblogi",
     "lead": "Käytännön artikkeleita autojen tuonnista Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista ja Isosta-Britanniasta: todelliset kustannukset, huutokaupat, tulli, rekisteröinti ja vältettävät virheet.",
-    "metaTitle": "Autontuontiblogi – kustannukset, huutokaupat, tulli, rekisteröinti | CarImport.eu",
+    "metaTitle": "Autontuontiblogi – kustannukset, huutokaupat, tulli, rekisteröinti | Carglo",
     "metaDescription": "Oppaita ja artikkeleita auton tuonnista EU:hun: paljonko se todella maksaa, miten ostaa Copartista ja IAAI:sta, tulli, arvonlisävero ja rekisteröinti.",
     "all": "Kaikki",
     "minutes": "{{n}} min lukuaika",

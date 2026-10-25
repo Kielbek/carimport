@@ -16,7 +16,7 @@ interface Benefit { key: string; icon: IconName; highlight?: boolean }
 interface CostGroup { key: string; icon: IconName; items: number }
 
 /**
- * Landing page, prerendered per language. CarImport.eu is a calculator only - it neither sells nor imports cars - so
+ * Landing page, prerendered per language. Carglo is a calculator only - it neither sells nor imports cars - so
  * the page sells the calculation: instant, independent, complete, and ends every section with a way into it.
  */
 @Component({
@@ -138,7 +138,7 @@ interface CostGroup { key: string; icon: IconName; items: number }
                 <th class="py-3 pr-4 font-semibold"></th>
                 <th class="w-36 py-3 text-center font-semibold">{{ 'home.compare.self' | translate }}</th>
                 <th class="w-36 py-3 text-center font-semibold">{{ 'home.compare.broker' | translate }}</th>
-                <th class="w-36 bg-brand/10 py-3 text-center font-semibold text-brand-text">CarImport.eu</th>
+                <th class="w-36 bg-brand/10 py-3 text-center font-semibold text-brand-text">Carglo</th>
               </tr>
             </thead>
             <tbody>

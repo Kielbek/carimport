@@ -177,7 +177,7 @@
     "name": "Full name",
     "phone": "Phone (optional)",
     "submit": "Send request",
-    "subtitle": "CarImport.eu does not import cars. If you wish, we’ll pass your estimate to one verified import company, which will prepare an offer. No obligation.",
+    "subtitle": "Carglo does not import cars. If you wish, we’ll pass your estimate to one verified import company, which will prepare an offer. No obligation.",
     "thanks": "Thank you!",
     "thanksHint": "The import company will get back to you within 1 business day.",
     "title": "Enquiry to an import company (optional)"
@@ -555,7 +555,7 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu —",
+        "title": "Carglo —",
         "text": "independent import calculator"
       },
       "instant": {
@@ -584,7 +584,7 @@
       "days": "days"
     },
     "numbers": {
-      "eyebrow": "CarImport.eu in numbers",
+      "eyebrow": "Carglo in numbers",
       "title": "The numbers behind every quote",
       "n1": {
         "value": "5",
@@ -769,7 +769,7 @@
       "a": "No. It is an estimate based on current rates and price lists. Final amounts are set by customs and the tax office, which may for example verify the customs value. The report lists all assumptions, so it is easy to compare with the official decision."
     },
     "q9": {
-      "q": "Does CarImport.eu import cars?",
+      "q": "Does Carglo import cars?",
       "a": "No. We are only a calculator – we don’t buy, ship or clear cars, and we take no commission from auctions or carriers. That keeps the estimate independent. If you want, you can pass the estimate to a verified import company, but that is always your choice."
     }
   },
@@ -781,23 +781,23 @@
   },
   "seo": {
     "home": {
-      "title": "Car import cost calculator – USA, Japan, Dubai to EU | CarImport.eu",
+      "title": "Car import cost calculator – USA, Japan, Dubai to EU | Carglo",
       "description": "Independent calculator for importing a car from the USA, Canada, Japan, UAE and UK: auction, shipping, duty, excise, VAT, registration and risks. Instant estimate, no sign-up."
     },
     "calculator": {
-      "title": "Duty, excise & VAT calculator for imported cars | CarImport.eu",
+      "title": "Duty, excise & VAT calculator for imported cars | Carglo",
       "description": "Pick the country, auction, port and vehicle — the live calculator shows the cost range and breakdown: price, shipping, duty, excise, VAT and registration."
     },
     "privacy": {
-      "title": "Privacy policy | CarImport.eu",
-      "description": "How CarImport.eu processes personal data: payments, reports, partner enquiries and cookies."
+      "title": "Privacy policy | Carglo",
+      "description": "How Carglo processes personal data: payments, reports, partner enquiries and cookies."
     },
     "about": {
-      "title": "About us – an independent car import calculator | CarImport.eu",
-      "description": "Who we are, where our data comes from and how we earn money. CarImport.eu neither sells nor imports cars – it calculates the full import cost honestly and independently."
+      "title": "About us – an independent car import calculator | Carglo",
+      "description": "Who we are, where our data comes from and how we earn money. Carglo neither sells nor imports cars – it calculates the full import cost honestly and independently."
     },
     "terms": {
-      "title": "Terms | CarImport.eu",
+      "title": "Terms | Carglo",
       "description": "Terms for the car import cost calculator and the PDF report: seller, payment, delivery, withdrawal and complaints."
     }
   },
@@ -806,7 +806,7 @@
     "title": "Privacy policy",
     "s1": {
       "title": "Data controller",
-      "text": "The data controller is the operator of CarImport.eu. For data protection matters contact us at {{email}}."
+      "text": "The data controller is the operator of Carglo. For data protection matters contact us at {{email}}."
     },
     "s2": {
       "title": "What data we process",
@@ -992,7 +992,7 @@
     "eyebrow": "About us",
     "title1": "We calculate car imports.",
     "title2": "We don’t sell cars.",
-    "lead": "CarImport.eu is an independent calculator of the cost of bringing a car from outside the European Union. We built it so that anyone – not just a dealer with ten years of experience – knows before buying what they will really pay.",
+    "lead": "Carglo is an independent calculator of the cost of bringing a car from outside the European Union. We built it so that anyone – not just a dealer with ten years of experience – knows before buying what they will really pay.",
     "story": {
       "eyebrow": "How it started",
       "title": "Out of frustration with hidden costs",
@@ -1091,20 +1091,20 @@
       "origins": {
         "title": "Car import guides: USA, Canada, Japan, UAE and the UK",
         "lead": "Step-by-step guides for each country you can buy a car in: auctions, documents, shipping time, customs duty, VAT and registration – with the real costs in your calculator.",
-        "metaTitle": "Car import guides – USA, Canada, Japan, UAE, UK | CarImport.eu",
+        "metaTitle": "Car import guides – USA, Canada, Japan, UAE, UK | Carglo",
         "metaDescription": "How to import a car from the USA, Canada, Japan, the UAE or the UK into the EU: auctions, documents, shipping, duty, VAT and registration explained step by step."
       },
       "countries": {
         "title": "Importing a car into each EU country",
         "lead": "VAT rate, registration tax, registration authority, inspection and nearest ports of clearance for all 27 EU member states.",
-        "metaTitle": "Car import to EU countries – VAT, registration, ports | CarImport.eu",
+        "metaTitle": "Car import to EU countries – VAT, registration, ports | Carglo",
         "metaDescription": "Import VAT, registration taxes, authorities, inspections and the nearest ports for all 27 EU countries – compare and calculate the full cost of an imported car.",
         "yours": "Your country"
       },
       "ports": {
         "title": "EU ports of clearance for imported cars",
         "lead": "All {{count}} EU sea ports where cars from outside the EU are cleared: fees, VAT, sailing times from the USA, Canada, Japan, the UAE and the UK, and road distances.",
-        "metaTitle": "{{count}} EU ports for car imports – fees, VAT, sailing times | CarImport.eu",
+        "metaTitle": "{{count}} EU ports for car imports – fees, VAT, sailing times | Carglo",
         "metaDescription": "Compare all {{count}} EU ports of clearance for cars: terminal and customs agent fees, import VAT, sailing times and road distances to your country.",
         "sortedFrom": "Sorted by road distance to: {{country}}"
       }
@@ -1167,7 +1167,7 @@
       },
       "USA": {
         "h1": "Importing a car from the USA to the EU",
-        "metaTitle": "Import a car from the USA to Europe – costs, duty, VAT | CarImport.eu",
+        "metaTitle": "Import a car from the USA to Europe – costs, duty, VAT | Carglo",
         "metaDescription": "How to import a car from the USA: Copart and IAAI auctions, shipping time, 10% duty, import VAT, documents and registration. Calculate the full cost in a minute.",
         "lead": "The USA is the biggest source of imported cars: millions of vehicles on Copart and IAAI every year, often at prices far below the European market. Here is what the whole process looks like and what it really costs.",
         "why": "Huge choice, low prices for damaged (salvage) cars, strong engines and well-equipped versions that are rare in Europe. The catch: US lighting and sometimes the speedometer must be converted, and repairs of salvage cars can be expensive.",
@@ -1185,7 +1185,7 @@
       },
       "CANADA": {
         "h1": "Importing a car from Canada to the EU",
-        "metaTitle": "Import a car from Canada to Europe – costs, duty, VAT | CarImport.eu",
+        "metaTitle": "Import a car from Canada to Europe – costs, duty, VAT | Carglo",
         "metaDescription": "Import a car from Canada: Copart and IAAI Canada, shipping from Halifax and Montreal, 10% duty, VAT, documents and registration. Full cost calculator.",
         "lead": "Canadian cars are similar to American ones but often better prepared for winter, with metric speedometers and lower prices in Canadian dollars. Shipping from Halifax and Montreal to Europe is among the shortest across the Atlantic.",
         "why": "Metric instrument clusters, winter packages, block heaters and good rust protection; prices in CAD are often lower than in the USA for the same model.",
@@ -1203,7 +1203,7 @@
       },
       "JAPAN": {
         "h1": "Importing a car from Japan to the EU",
-        "metaTitle": "Import a car from Japan to Europe – JDM costs, duty, VAT | CarImport.eu",
+        "metaTitle": "Import a car from Japan to Europe – JDM costs, duty, VAT | Carglo",
         "metaDescription": "Import a JDM car from Japan: USS auctions, auction sheets, shipping from Yokohama, duty, VAT, right-hand drive and registration. Full cost calculator.",
         "lead": "Japan is the home of JDM cars: low mileage, excellent condition and models never sold in Europe. Auction sheets describe every car in detail – but the cars are right-hand drive and the journey is long.",
         "why": "Very good condition thanks to strict inspections (shaken), honest auction grading and unique sports and kei cars. Prices in yen are attractive.",
@@ -1221,7 +1221,7 @@
       },
       "UAE": {
         "h1": "Importing a car from Dubai (UAE) to the EU",
-        "metaTitle": "Import a car from Dubai (UAE) to Europe – costs, duty, VAT | CarImport.eu",
+        "metaTitle": "Import a car from Dubai (UAE) to Europe – costs, duty, VAT | Carglo",
         "metaDescription": "Import a car from Dubai and the UAE: Emirates Auction and dealers, GCC spec, shipping from Jebel Ali, duty, VAT and registration. Full cost calculator.",
         "lead": "Dubai is a market of premium and sports cars with low mileage, often barely used. GCC-spec cars are built for heat and sold at attractive prices.",
         "why": "Luxury and sports models, low mileage and dry climate (no rust). Prices in dirhams are pegged to the US dollar.",
@@ -1239,7 +1239,7 @@
       },
       "UK": {
         "h1": "Importing a car from the UK to the EU",
-        "metaTitle": "Import a car from the UK after Brexit – costs, duty, VAT | CarImport.eu",
+        "metaTitle": "Import a car from the UK after Brexit – costs, duty, VAT | Carglo",
         "metaDescription": "Import a car from the UK after Brexit: customs duty and preferential origin, VAT, right-hand drive, short shipping and registration. Full cost calculator.",
         "lead": "Since Brexit a car from the United Kingdom is an import from outside the EU: customs declaration, duty and import VAT apply. The journey is short, and cars made in the UK or the EU may qualify for 0% duty.",
         "why": "A large used-car market, good service histories and short shipping by RoRo or ferry. Right-hand drive needs to be considered.",
@@ -1258,7 +1258,7 @@
     },
     "country": {
       "h1": "{{country}}: importing a car from outside the EU",
-      "metaTitle": "{{country}} – car import: VAT {{vat}}%, registration, ports | CarImport.eu",
+      "metaTitle": "{{country}} – car import: VAT {{vat}}%, registration, ports | Carglo",
       "metaDescription": "Importing a car into {{country}} from the USA, Canada, Japan, the UAE or the UK: import VAT {{vat}}%, registration, inspection, nearest ports and the full cost.",
       "lead": "Everything that matters when you register an imported car in {{country}}: tax, authorities, inspection and the cheapest ports.",
       "facts": {
@@ -1290,7 +1290,7 @@
     },
     "port": {
       "h1": "Port of {{port}} ({{country}}): customs clearance of imported cars",
-      "metaTitle": "{{port}} – car import, customs, VAT {{vat}}% | CarImport.eu",
+      "metaTitle": "{{port}} – car import, customs, VAT {{vat}}% | Carglo",
       "metaDescription": "Clearing an imported car in {{port}} ({{country}}): terminal and agent fees, import VAT {{vat}}%, sailing times from the USA, Japan and the UAE, distances.",
       "lead": "{{port}} is a port of clearance in {{country}}. Here are its fees, sailing times and road distances – and whether it is worth clearing your car here.",
       "facts": {
@@ -1329,7 +1329,7 @@
   "blog": {
     "title": "Car import blog",
     "lead": "Practical articles about importing cars from the USA, Canada, Japan, the UAE and the UK: real costs, auctions, customs, registration and the mistakes to avoid.",
-    "metaTitle": "Car import blog – costs, auctions, customs, registration | CarImport.eu",
+    "metaTitle": "Car import blog – costs, auctions, customs, registration | Carglo",
     "metaDescription": "Guides and articles about importing a car into the EU: how much it really costs, how to buy at Copart and IAAI, customs duty, VAT and registration.",
     "all": "All",
     "minutes": "{{n}} min read",

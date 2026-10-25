@@ -177,7 +177,7 @@
     "name": "Fulde navn",
     "phone": "Telefon (valgfrit)",
     "submit": "Send forespørgsel",
-    "subtitle": "CarImport.eu importerer ikke biler. Hvis du ønsker det, videregiver vi dit overslag til én verificeret importvirksomhed, som udarbejder et tilbud. Helt uforpligtende.",
+    "subtitle": "Carglo importerer ikke biler. Hvis du ønsker det, videregiver vi dit overslag til én verificeret importvirksomhed, som udarbejder et tilbud. Helt uforpligtende.",
     "thanks": "Tak!",
     "thanksHint": "Importvirksomheden vender tilbage til dig inden for 1 hverdag.",
     "title": "Forespørgsel til en importvirksomhed (valgfrit)"
@@ -555,7 +555,7 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu —",
+        "title": "Carglo —",
         "text": "uafhængig importberegner"
       },
       "instant": {
@@ -584,7 +584,7 @@
       "days": "dage"
     },
     "numbers": {
-      "eyebrow": "CarImport.eu i tal",
+      "eyebrow": "Carglo i tal",
       "title": "Tallene bag hvert overslag",
       "n1": {
         "value": "5",
@@ -769,7 +769,7 @@
       "a": "Nej. Det er et overslag baseret på aktuelle satser og prislister. De endelige beløb fastsættes af toldmyndighederne og skattemyndighederne, som f.eks. kan efterprøve toldværdien. Rapporten viser alle forudsætninger, så den er nem at sammenligne med den officielle afgørelse."
     },
     "q9": {
-      "q": "Importerer CarImport.eu biler?",
+      "q": "Importerer Carglo biler?",
       "a": "Nej. Vi er kun en beregner – vi køber, sender og fortolder ikke biler, og vi tager ingen provision fra auktioner eller speditører. Det holder overslaget uafhængigt. Hvis du vil, kan du videregive overslaget til en verificeret importvirksomhed, men det er altid dit valg."
     }
   },
@@ -781,23 +781,23 @@
   },
   "seo": {
     "home": {
-      "title": "Beregner til bilimport – USA, Japan, Dubai til EU | CarImport.eu",
+      "title": "Beregner til bilimport – USA, Japan, Dubai til EU | Carglo",
       "description": "Uafhængig beregner til import af bil fra USA, Canada, Japan, UAE og Storbritannien: auktion, fragt, told, punktafgift, moms, registrering og risici. Øjeblikkeligt overslag, uden oprettelse."
     },
     "calculator": {
-      "title": "Beregner til told, punktafgift & moms på importbiler | CarImport.eu",
+      "title": "Beregner til told, punktafgift & moms på importbiler | Carglo",
       "description": "Vælg land, auktion, havn og køretøj — beregneren viser med det samme prisintervallet og opdelingen: pris, fragt, told, punktafgift, moms og registrering."
     },
     "privacy": {
-      "title": "Privatlivspolitik | CarImport.eu",
-      "description": "Sådan behandler CarImport.eu personoplysninger: betalinger, rapporter, forespørgsler til partnere og cookies."
+      "title": "Privatlivspolitik | Carglo",
+      "description": "Sådan behandler Carglo personoplysninger: betalinger, rapporter, forespørgsler til partnere og cookies."
     },
     "about": {
-      "title": "Om os – en uafhængig beregner til bilimport | CarImport.eu",
-      "description": "Hvem vi er, hvor vores data kommer fra, og hvordan vi tjener penge. CarImport.eu hverken sælger eller importerer biler – vi beregner den fulde importpris ærligt og uafhængigt."
+      "title": "Om os – en uafhængig beregner til bilimport | Carglo",
+      "description": "Hvem vi er, hvor vores data kommer fra, og hvordan vi tjener penge. Carglo hverken sælger eller importerer biler – vi beregner den fulde importpris ærligt og uafhængigt."
     },
     "terms": {
-      "title": "Handelsbetingelser | CarImport.eu",
+      "title": "Handelsbetingelser | Carglo",
       "description": "Betingelser for beregneren af importomkostninger for biler og PDF-rapporten: sælger, betaling, levering, fortrydelse og reklamationer."
     }
   },
@@ -806,7 +806,7 @@
     "title": "Privatlivspolitik",
     "s1": {
       "title": "Dataansvarlig",
-      "text": "Dataansvarlig er operatøren af CarImport.eu. I spørgsmål om databeskyttelse kan du kontakte os på {{email}}."
+      "text": "Dataansvarlig er operatøren af Carglo. I spørgsmål om databeskyttelse kan du kontakte os på {{email}}."
     },
     "s2": {
       "title": "Hvilke oplysninger vi behandler",
@@ -992,7 +992,7 @@
     "eyebrow": "Om os",
     "title1": "Vi beregner bilimport.",
     "title2": "Vi sælger ikke biler.",
-    "lead": "CarImport.eu er en uafhængig beregner af omkostningerne ved at hente en bil fra lande uden for Den Europæiske Union. Vi har bygget den, så alle – ikke kun en forhandler med ti års erfaring – ved, hvad de reelt kommer til at betale, før de køber.",
+    "lead": "Carglo er en uafhængig beregner af omkostningerne ved at hente en bil fra lande uden for Den Europæiske Union. Vi har bygget den, så alle – ikke kun en forhandler med ti års erfaring – ved, hvad de reelt kommer til at betale, før de køber.",
     "story": {
       "eyebrow": "Sådan startede det",
       "title": "Ud af frustration over skjulte omkostninger",
@@ -1091,20 +1091,20 @@
       "origins": {
         "title": "Guides til bilimport: USA, Canada, Japan, De Forenede Arabiske Emirater og Storbritannien",
         "lead": "Trin-for-trin-guides for hvert land, du kan købe bil i: auktioner, dokumenter, transporttid, told, moms og registrering i Danmark – med de reelle omkostninger i beregneren.",
-        "metaTitle": "Guides til bilimport – USA, Canada, Japan, UAE, UK | CarImport.eu",
+        "metaTitle": "Guides til bilimport – USA, Canada, Japan, UAE, UK | Carglo",
         "metaDescription": "Sådan importerer du en bil fra USA, Canada, Japan, Emiraterne eller Storbritannien til Danmark: auktioner, dokumenter, fragt, told, moms og registrering."
       },
       "countries": {
         "title": "Bilimport til hvert EU-land",
         "lead": "Momssats, registreringsafgift, registreringsmyndighed, syn og nærmeste fortoldningshavne for alle 27 EU-lande.",
-        "metaTitle": "Bilimport til EU-lande – moms, registrering, havne | CarImport.eu",
+        "metaTitle": "Bilimport til EU-lande – moms, registrering, havne | Carglo",
         "metaDescription": "Importmoms, registreringsafgifter, myndigheder, syn og nærmeste havne for alle 27 EU-lande – sammenlign og beregn den samlede pris på en importeret bil.",
         "yours": "Dit land"
       },
       "ports": {
         "title": "Fortoldningshavne i EU for importerede biler",
         "lead": "Alle {{count}} havne i EU, hvor biler fra lande uden for EU fortoldes: gebyrer, moms, sejltider fra USA, Canada, Japan, Emiraterne og Storbritannien samt vejafstande.",
-        "metaTitle": "{{count}} EU-havne til bilimport – gebyrer, moms, sejltid | CarImport.eu",
+        "metaTitle": "{{count}} EU-havne til bilimport – gebyrer, moms, sejltid | Carglo",
         "metaDescription": "Sammenlign alle {{count}} fortoldningshavne for biler i EU: terminal- og speditørgebyrer, importmoms, sejltider og vejafstande til Danmark.",
         "sortedFrom": "Sorteret efter vejafstand til: {{country}}"
       }
@@ -1167,7 +1167,7 @@
       },
       "USA": {
         "h1": "Import af bil fra USA til Danmark",
-        "metaTitle": "Importér bil fra USA til Danmark – pris, told, moms | CarImport.eu",
+        "metaTitle": "Importér bil fra USA til Danmark – pris, told, moms | Carglo",
         "metaDescription": "Sådan importerer du en bil fra USA: Copart- og IAAI-auktioner, fragttid, 10 % told, importmoms, dokumenter og registrering. Beregn den samlede pris på et minut.",
         "lead": "USA er den største kilde til importerede biler: millioner af køretøjer på Copart og IAAI hvert år, ofte til priser langt under det europæiske marked. Her kan du se, hvordan hele processen foregår, og hvad den reelt koster.",
         "why": "Kæmpe udvalg, lave priser på skadede (salvage) biler, stærke motorer og veludstyrede versioner, der er sjældne i Europa. Ulempen: amerikansk lys og nogle gange speedometeret skal ombygges, og reparation af salvage-biler kan blive dyr.",
@@ -1185,7 +1185,7 @@
       },
       "CANADA": {
         "h1": "Import af bil fra Canada til Danmark",
-        "metaTitle": "Importér bil fra Canada til Danmark – pris, told, moms | CarImport.eu",
+        "metaTitle": "Importér bil fra Canada til Danmark – pris, told, moms | Carglo",
         "metaDescription": "Importér bil fra Canada: Copart og IAAI Canada, fragt fra Halifax og Montreal, 10 % told, moms, dokumenter og registrering. Beregner til den samlede pris.",
         "lead": "Canadiske biler ligner amerikanske, men er ofte bedre rustet til vinter, har metriske speedometre og lavere priser i canadiske dollar. Sejladsen fra Halifax og Montreal til Europa er en af de korteste over Atlanten.",
         "why": "Metriske instrumenter, vinterpakker, motorvarmere og god rustbeskyttelse; priserne i CAD er ofte lavere end i USA for den samme model.",
@@ -1203,7 +1203,7 @@
       },
       "JAPAN": {
         "h1": "Import af bil fra Japan til Danmark",
-        "metaTitle": "Importér bil fra Japan til Danmark – JDM, told, moms | CarImport.eu",
+        "metaTitle": "Importér bil fra Japan til Danmark – JDM, told, moms | Carglo",
         "metaDescription": "Importér en JDM-bil fra Japan: USS-auktioner, auktionsrapporter, fragt fra Yokohama, told, moms, højrestyring og registrering. Beregner til den samlede pris.",
         "lead": "Japan er JDM-bilernes hjemland: lave kilometertal, fremragende stand og modeller, der aldrig er solgt i Europa. Auktionsrapporterne beskriver hver bil i detaljer – men bilerne er højrestyrede, og rejsen er lang.",
         "why": "Meget god stand takket være strenge syn (shaken), ærlig auktionsvurdering og unikke sportsvogne og kei-biler. Priserne i yen er attraktive.",
@@ -1221,7 +1221,7 @@
       },
       "UAE": {
         "h1": "Import af bil fra Dubai (De Forenede Arabiske Emirater) til Danmark",
-        "metaTitle": "Importér bil fra Dubai (UAE) til Danmark – pris, told, moms | CarImport.eu",
+        "metaTitle": "Importér bil fra Dubai (UAE) til Danmark – pris, told, moms | Carglo",
         "metaDescription": "Importér bil fra Dubai og Emiraterne: Emirates Auction og forhandlere, GCC-spec, fragt fra Jebel Ali, told, moms og registrering. Beregner til den samlede pris.",
         "lead": "Dubai er et marked for premium- og sportsvogne med lave kilometertal, ofte næsten ubrugte. Biler i GCC-specifikation er bygget til varme og sælges til attraktive priser.",
         "why": "Luksus- og sportsmodeller, lave kilometertal og tørt klima (ingen rust). Priserne i dirham er knyttet til den amerikanske dollar.",
@@ -1239,7 +1239,7 @@
       },
       "UK": {
         "h1": "Import af bil fra Storbritannien til Danmark",
-        "metaTitle": "Importér bil fra Storbritannien efter Brexit – told, moms | CarImport.eu",
+        "metaTitle": "Importér bil fra Storbritannien efter Brexit – told, moms | Carglo",
         "metaDescription": "Importér bil fra Storbritannien efter Brexit: told og præferenceoprindelse, moms, højrestyring, kort fragt og registrering. Beregner til den samlede pris.",
         "lead": "Efter Brexit er en bil fra Storbritannien en import fra et land uden for EU: toldangivelse, told og importmoms gælder. Rejsen er kort, og biler produceret i Storbritannien eller EU kan opnå 0 % told.",
         "why": "Et stort brugtbilsmarked, god servicehistorik og kort fragt med RoRo eller færge. Højrestyringen skal tages med i overvejelserne.",
@@ -1258,7 +1258,7 @@
     },
     "country": {
       "h1": "{{country}}: import af bil fra lande uden for EU",
-      "metaTitle": "{{country}} – bilimport: moms {{vat}} %, registrering, havne | CarImport.eu",
+      "metaTitle": "{{country}} – bilimport: moms {{vat}} %, registrering, havne | Carglo",
       "metaDescription": "Import af bil til {{country}} fra USA, Canada, Japan, Emiraterne eller Storbritannien: importmoms {{vat}} %, registrering, syn, nærmeste havne og den samlede pris.",
       "lead": "Alt, hvad der er vigtigt, når du registrerer en importeret bil i {{country}}: afgifter, myndigheder, syn og de billigste havne.",
       "facts": {
@@ -1290,7 +1290,7 @@
     },
     "port": {
       "h1": "Havnen i {{port}} ({{country}}): fortoldning af importerede biler",
-      "metaTitle": "{{port}} – bilimport, fortoldning, moms {{vat}} % | CarImport.eu",
+      "metaTitle": "{{port}} – bilimport, fortoldning, moms {{vat}} % | Carglo",
       "metaDescription": "Fortoldning af en importeret bil i {{port}} ({{country}}): terminal- og speditørgebyrer, importmoms {{vat}} %, sejltider fra USA, Japan og Emiraterne, afstande.",
       "lead": "{{port}} er en fortoldningshavn i {{country}}. Her er gebyrerne, sejltiderne og vejafstandene – og om det kan betale sig at fortolde din bil her.",
       "facts": {
@@ -1329,7 +1329,7 @@
   "blog": {
     "title": "Blog om bilimport",
     "lead": "Praktiske artikler om import af biler fra USA, Canada, Japan, De Forenede Arabiske Emirater og Storbritannien: reelle omkostninger, auktioner, told, registrering og de fejl, du bør undgå.",
-    "metaTitle": "Blog om bilimport – omkostninger, auktioner, told, registrering | CarImport.eu",
+    "metaTitle": "Blog om bilimport – omkostninger, auktioner, told, registrering | Carglo",
     "metaDescription": "Guider og artikler om import af bil til Danmark og EU: hvad det reelt koster, hvordan du køber på Copart og IAAI, told, moms og registrering.",
     "all": "Alle",
     "minutes": "{{n}} min. læsning",

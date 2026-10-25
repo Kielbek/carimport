@@ -177,7 +177,7 @@
     "name": "Nume complet",
     "phone": "Telefon (opțional)",
     "submit": "Trimite cererea",
-    "subtitle": "CarImport.eu nu importă mașini. Dacă dorești, transmitem estimarea ta unei singure firme de import verificate, care îți va pregăti o ofertă. Fără nicio obligație.",
+    "subtitle": "Carglo nu importă mașini. Dacă dorești, transmitem estimarea ta unei singure firme de import verificate, care îți va pregăti o ofertă. Fără nicio obligație.",
     "thanks": "Mulțumim!",
     "thanksHint": "Firma de import te va contacta în cel mult o zi lucrătoare.",
     "title": "Cerere către o firmă de import (opțional)"
@@ -555,7 +555,7 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu —",
+        "title": "Carglo —",
         "text": "calculator independent de import"
       },
       "instant": {
@@ -584,7 +584,7 @@
       "days": "zile"
     },
     "numbers": {
-      "eyebrow": "CarImport.eu în cifre",
+      "eyebrow": "Carglo în cifre",
       "title": "Cifrele din spatele fiecărui calcul",
       "n1": {
         "value": "5",
@@ -769,7 +769,7 @@
       "a": "Nu. Este o estimare bazată pe cotele și listele de prețuri actuale. Sumele finale sunt stabilite de autoritatea vamală și de administrația fiscală, care pot, de exemplu, să verifice valoarea în vamă. Raportul enumeră toate ipotezele, așa că îl poți compara ușor cu decizia oficială."
     },
     "q9": {
-      "q": "CarImport.eu importă mașini?",
+      "q": "Carglo importă mașini?",
       "a": "Nu. Suntem doar un calculator – nu cumpărăm, nu transportăm și nu vămuim mașini și nu primim comisioane de la licitații sau transportatori. Astfel estimarea rămâne independentă. Dacă vrei, poți transmite estimarea unei firme de import verificate, dar asta este întotdeauna alegerea ta."
     }
   },
@@ -781,23 +781,23 @@
   },
   "seo": {
     "home": {
-      "title": "Calculator costuri import auto – SUA, Japonia, Dubai în UE | CarImport.eu",
+      "title": "Calculator costuri import auto – SUA, Japonia, Dubai în UE | Carglo",
       "description": "Calculator independent pentru importul unei mașini din SUA, Canada, Japonia, EAU și Regatul Unit: licitație, transport maritim, taxe vamale, accize, TVA, înmatriculare și riscuri. Estimare instantă, fără înregistrare."
     },
     "calculator": {
-      "title": "Calculator taxe vamale, accize și TVA pentru mașini importate | CarImport.eu",
+      "title": "Calculator taxe vamale, accize și TVA pentru mașini importate | Carglo",
       "description": "Alege țara, licitația, portul și vehiculul — calculatorul live arată intervalul de cost și defalcarea: preț, transport maritim, taxe vamale, accize, TVA și înmatriculare."
     },
     "privacy": {
-      "title": "Politica de confidențialitate | CarImport.eu",
-      "description": "Cum prelucrează CarImport.eu datele cu caracter personal: plăți, rapoarte, cereri către parteneri și cookie-uri."
+      "title": "Politica de confidențialitate | Carglo",
+      "description": "Cum prelucrează Carglo datele cu caracter personal: plăți, rapoarte, cereri către parteneri și cookie-uri."
     },
     "about": {
-      "title": "Despre noi – un calculator independent de import auto | CarImport.eu",
-      "description": "Cine suntem, de unde provin datele noastre și cum câștigăm bani. CarImport.eu nu vinde și nu importă mașini – calculează costul complet al importului, corect și independent."
+      "title": "Despre noi – un calculator independent de import auto | Carglo",
+      "description": "Cine suntem, de unde provin datele noastre și cum câștigăm bani. Carglo nu vinde și nu importă mașini – calculează costul complet al importului, corect și independent."
     },
     "terms": {
-      "title": "Termeni și condiții | CarImport.eu",
+      "title": "Termeni și condiții | Carglo",
       "description": "Termenii calculatorului costurilor de import auto și ai raportului PDF: vânzător, plată, furnizare, retragere și reclamații."
     }
   },
@@ -806,7 +806,7 @@
     "title": "Politica de confidențialitate",
     "s1": {
       "title": "Operatorul de date",
-      "text": "Operatorul de date este administratorul CarImport.eu. Pentru aspecte privind protecția datelor ne poți contacta la {{email}}."
+      "text": "Operatorul de date este administratorul Carglo. Pentru aspecte privind protecția datelor ne poți contacta la {{email}}."
     },
     "s2": {
       "title": "Ce date prelucrăm",
@@ -992,7 +992,7 @@
     "eyebrow": "Despre noi",
     "title1": "Calculăm importul de mașini.",
     "title2": "Nu vindem mașini.",
-    "lead": "CarImport.eu este un calculator independent al costului aducerii unei mașini din afara Uniunii Europene. L-am creat pentru ca oricine – nu doar un dealer cu zece ani de experiență – să știe înainte de cumpărare cât va plăti de fapt.",
+    "lead": "Carglo este un calculator independent al costului aducerii unei mașini din afara Uniunii Europene. L-am creat pentru ca oricine – nu doar un dealer cu zece ani de experiență – să știe înainte de cumpărare cât va plăti de fapt.",
     "story": {
       "eyebrow": "Cum a început",
       "title": "Din frustrarea provocată de costurile ascunse",
@@ -1091,20 +1091,20 @@
       "origins": {
         "title": "Ghiduri de import auto: SUA, Canada, Japonia, EAU și Regatul Unit",
         "lead": "Ghiduri pas cu pas pentru fiecare țară din care poți cumpăra o mașină: licitații, documente, durata transportului, taxe vamale, TVA și înmatricularea în România – cu costurile reale în calculator.",
-        "metaTitle": "Ghiduri de import auto – SUA, Canada, Japonia, EAU, UK | CarImport.eu",
+        "metaTitle": "Ghiduri de import auto – SUA, Canada, Japonia, EAU, UK | Carglo",
         "metaDescription": "Cum aduci o mașină din SUA, Canada, Japonia, EAU sau Regatul Unit în România: licitații, documente, transport, taxe vamale, TVA și înmatriculare, pas cu pas."
       },
       "countries": {
         "title": "Importul unei mașini în fiecare țară din UE",
         "lead": "Cota de TVA, taxa de înmatriculare, autoritatea de înmatriculare, inspecția tehnică și cele mai apropiate porturi de vămuire pentru toate cele 27 de state membre UE.",
-        "metaTitle": "Import auto în țările UE – TVA, înmatriculare, porturi | CarImport.eu",
+        "metaTitle": "Import auto în țările UE – TVA, înmatriculare, porturi | Carglo",
         "metaDescription": "TVA la import, taxe de înmatriculare, autorități, inspecții și cele mai apropiate porturi pentru toate cele 27 de țări UE – calculează costul total al mașinii.",
         "yours": "Țara ta"
       },
       "ports": {
         "title": "Porturi de vămuire din UE pentru mașini importate",
         "lead": "Toate cele {{count}} porturi maritime din UE în care se vămuiesc mașinile din afara UE: taxe, TVA, durata transportului maritim din SUA, Canada, Japonia, EAU și Regatul Unit și distanțe rutiere.",
-        "metaTitle": "{{count}} porturi UE pentru import auto – taxe, TVA, transport | CarImport.eu",
+        "metaTitle": "{{count}} porturi UE pentru import auto – taxe, TVA, transport | Carglo",
         "metaDescription": "Compară toate cele {{count}} porturi de vămuire auto din UE: taxe de terminal și comisionar, TVA la import, durata transportului și distanța până în România.",
         "sortedFrom": "Sortate după distanța rutieră până la: {{country}}"
       }
@@ -1167,7 +1167,7 @@
       },
       "USA": {
         "h1": "Importul unei mașini din SUA în România",
-        "metaTitle": "Import mașină din SUA în România – costuri, taxe vamale, TVA | CarImport.eu",
+        "metaTitle": "Import mașină din SUA în România – costuri, taxe vamale, TVA | Carglo",
         "metaDescription": "Cum imporți o mașină din SUA: licitații Copart și IAAI, transport, taxă vamală 10%, TVA la import, documente și înmatriculare. Costul total într-un minut.",
         "lead": "SUA sunt cea mai mare sursă de mașini importate: milioane de vehicule pe Copart și IAAI în fiecare an, adesea la prețuri mult sub piața europeană. Iată cum arată întregul proces și cât costă cu adevărat.",
         "why": "Ofertă uriașă, prețuri mici pentru mașinile avariate (salvage), motoare puternice și versiuni bine echipate, rare în Europa. Dezavantajul: iluminarea americană și uneori vitezometrul trebuie adaptate, iar repararea mașinilor salvage poate fi scumpă.",
@@ -1185,7 +1185,7 @@
       },
       "CANADA": {
         "h1": "Importul unei mașini din Canada în România",
-        "metaTitle": "Import mașină din Canada în România – costuri, taxe vamale, TVA | CarImport.eu",
+        "metaTitle": "Import mașină din Canada în România – costuri, taxe vamale, TVA | Carglo",
         "metaDescription": "Import mașină din Canada: Copart și IAAI Canada, transport din Halifax și Montreal, taxă vamală 10%, TVA, documente și înmatriculare. Calculator de cost total.",
         "lead": "Mașinile canadiene seamănă cu cele americane, dar sunt adesea mai bine pregătite pentru iarnă, au vitezometre metrice și prețuri mai mici în dolari canadieni. Transportul din Halifax și Montreal spre Europa este printre cele mai scurte peste Atlantic.",
         "why": "Bord metric, pachete de iarnă, preîncălzitoare de motor și protecție anticorozivă bună; prețurile în CAD sunt adesea mai mici decât în SUA pentru același model.",
@@ -1203,7 +1203,7 @@
       },
       "JAPAN": {
         "h1": "Importul unei mașini din Japonia în România",
-        "metaTitle": "Import mașină din Japonia în România – JDM, taxe vamale, TVA | CarImport.eu",
+        "metaTitle": "Import mașină din Japonia în România – JDM, taxe vamale, TVA | Carglo",
         "metaDescription": "Import mașină JDM din Japonia: licitații USS, fișe de licitație, transport din Yokohama, taxe vamale, TVA, volan pe dreapta și înmatriculare. Calculator.",
         "lead": "Japonia este patria mașinilor JDM: kilometraj mic, stare excelentă și modele nevândute niciodată în Europa. Fișele de licitație descriu fiecare mașină în detaliu – dar mașinile au volanul pe dreapta, iar drumul este lung.",
         "why": "Stare foarte bună datorită inspecțiilor stricte (shaken), evaluări corecte la licitație și mașini sport și kei unice. Prețurile în yeni sunt atractive.",
@@ -1221,7 +1221,7 @@
       },
       "UAE": {
         "h1": "Importul unei mașini din Dubai (EAU) în România",
-        "metaTitle": "Import mașină din Dubai (EAU) în România – costuri, taxe, TVA | CarImport.eu",
+        "metaTitle": "Import mașină din Dubai (EAU) în România – costuri, taxe, TVA | Carglo",
         "metaDescription": "Import mașină din Dubai și EAU: Emirates Auction și dealeri, specificație GCC, transport din Jebel Ali, taxe vamale, TVA și înmatriculare. Calculator.",
         "lead": "Dubai este piața mașinilor premium și sport cu kilometraj mic, adesea aproape nefolosite. Mașinile cu specificație GCC sunt construite pentru căldură și vândute la prețuri atractive.",
         "why": "Modele de lux și sport, kilometraj mic și climă uscată (fără rugină). Prețurile în dirhami sunt legate de dolarul american.",
@@ -1239,7 +1239,7 @@
       },
       "UK": {
         "h1": "Importul unei mașini din Regatul Unit în România",
-        "metaTitle": "Import mașină din Regatul Unit după Brexit – taxe vamale, TVA | CarImport.eu",
+        "metaTitle": "Import mașină din Regatul Unit după Brexit – taxe vamale, TVA | Carglo",
         "metaDescription": "Import mașină din Regatul Unit în România după Brexit: taxe vamale și origine preferențială, TVA, volan pe dreapta, transport scurt și înmatriculare.",
         "lead": "De la Brexit, o mașină din Regatul Unit este un import din afara UE: se aplică declarație vamală, taxe vamale și TVA la import. Drumul este scurt, iar mașinile fabricate în Regatul Unit sau în UE pot beneficia de taxă vamală 0%.",
         "why": "O piață mare de mașini second-hand, istorice de service bine documentate și transport scurt cu RoRo sau feribotul. Volanul pe dreapta trebuie luat în calcul.",
@@ -1258,7 +1258,7 @@
     },
     "country": {
       "h1": "{{country}}: importul unei mașini din afara UE",
-      "metaTitle": "{{country}} – import auto: TVA {{vat}}%, înmatriculare, porturi | CarImport.eu",
+      "metaTitle": "{{country}} – import auto: TVA {{vat}}%, înmatriculare, porturi | Carglo",
       "metaDescription": "Import auto din SUA, Canada, Japonia, EAU sau Regatul Unit – țara: {{country}}. TVA la import {{vat}}%, înmatriculare, inspecție, porturi, cost total.",
       "lead": "Tot ce contează când înmatriculezi o mașină importată – țara: {{country}}. Taxe, autorități, inspecție tehnică și cele mai ieftine porturi.",
       "facts": {
@@ -1290,7 +1290,7 @@
     },
     "port": {
       "h1": "Portul {{port}} ({{country}}): vămuirea mașinilor importate",
-      "metaTitle": "{{port}} – import auto, vămuire, TVA {{vat}}% | CarImport.eu",
+      "metaTitle": "{{port}} – import auto, vămuire, TVA {{vat}}% | Carglo",
       "metaDescription": "Vămuirea unei mașini importate în portul {{port}} ({{country}}): taxe de terminal și comisionar, TVA {{vat}}%, transport din SUA, Japonia și EAU, distanțe.",
       "lead": "{{port}} este un port de vămuire din țara: {{country}}. Iată taxele, duratele de transport maritim și distanțele rutiere – și dacă merită să îți vămuiești mașina aici.",
       "facts": {
@@ -1329,7 +1329,7 @@
   "blog": {
     "title": "Blog despre importul de mașini",
     "lead": "Articole practice despre importul de mașini din SUA, Canada, Japonia, Emiratele Arabe Unite și Marea Britanie: costuri reale, licitații, vamă, înmatriculare și greșelile pe care merită să le eviți.",
-    "metaTitle": "Blog import auto – costuri, licitații, vamă, înmatriculare | CarImport.eu",
+    "metaTitle": "Blog import auto – costuri, licitații, vamă, înmatriculare | Carglo",
     "metaDescription": "Ghiduri și articole despre importul unei mașini în România și UE: cât costă de fapt, cum cumperi de la Copart și IAAI, taxe vamale, TVA și înmatriculare.",
     "all": "Toate",
     "minutes": "{{n}} min de citit",

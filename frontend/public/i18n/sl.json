@@ -177,7 +177,7 @@
     "name": "Ime in priimek",
     "phone": "Telefon (neobvezno)",
     "submit": "Pošlji povpraševanje",
-    "subtitle": "CarImport.eu ne uvaža avtomobilov. Če želite, bomo vaš izračun posredovali enemu preverjenemu uvozniku, ki vam bo pripravil ponudbo. Brez obveznosti.",
+    "subtitle": "Carglo ne uvaža avtomobilov. Če želite, bomo vaš izračun posredovali enemu preverjenemu uvozniku, ki vam bo pripravil ponudbo. Brez obveznosti.",
     "thanks": "Hvala!",
     "thanksHint": "Uvoznik se vam bo oglasil v 1 delovnem dnevu.",
     "title": "Povpraševanje pri uvozniku (neobvezno)"
@@ -555,7 +555,7 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu —",
+        "title": "Carglo —",
         "text": "neodvisni kalkulator uvoza"
       },
       "instant": {
@@ -584,7 +584,7 @@
       "days": "dni"
     },
     "numbers": {
-      "eyebrow": "CarImport.eu v številkah",
+      "eyebrow": "Carglo v številkah",
       "title": "Številke za vsakim izračunom",
       "n1": {
         "value": "5",
@@ -769,7 +769,7 @@
       "a": "Ne. Gre za oceno na podlagi trenutnih stopenj in cenikov. Končne zneske določita carina in davčni urad, ki lahko na primer preverita carinsko vrednost. Poročilo navaja vse predpostavke, zato ga je enostavno primerjati z uradno odločbo."
     },
     "q9": {
-      "q": "Ali CarImport.eu uvaža avtomobile?",
+      "q": "Ali Carglo uvaža avtomobile?",
       "a": "Ne. Smo le kalkulator – avtomobilov ne kupujemo, ne prevažamo in ne carinimo ter ne jemljemo provizij od dražb ali prevoznikov. Zato je ocena neodvisna. Če želite, lahko izračun posredujete preverjenemu uvozniku, a to je vedno vaša odločitev."
     }
   },
@@ -781,23 +781,23 @@
   },
   "seo": {
     "home": {
-      "title": "Kalkulator stroškov uvoza avtomobila – ZDA, Japonska, Dubaj v EU | CarImport.eu",
+      "title": "Kalkulator stroškov uvoza avtomobila – ZDA, Japonska, Dubaj v EU | Carglo",
       "description": "Neodvisni kalkulator uvoza avtomobila iz ZDA, Kanade, Japonske, ZAE in Združenega kraljestva: dražba, ladijski prevoz, carina, trošarina, DDV, registracija in tveganja. Takojšnja ocena, brez registracije."
     },
     "calculator": {
-      "title": "Kalkulator carine, trošarine in DDV za uvožene avtomobile | CarImport.eu",
+      "title": "Kalkulator carine, trošarine in DDV za uvožene avtomobile | Carglo",
       "description": "Izberite državo, dražbo, pristanišče in vozilo — kalkulator v živo pokaže razpon stroškov in razčlenitev: cena, ladijski prevoz, carina, trošarina, DDV in registracija."
     },
     "privacy": {
-      "title": "Politika zasebnosti | CarImport.eu",
-      "description": "Kako CarImport.eu obdeluje osebne podatke: plačila, poročila, povpraševanja partnerjem in piškotki."
+      "title": "Politika zasebnosti | Carglo",
+      "description": "Kako Carglo obdeluje osebne podatke: plačila, poročila, povpraševanja partnerjem in piškotki."
     },
     "about": {
-      "title": "O nas – neodvisni kalkulator uvoza avtomobilov | CarImport.eu",
-      "description": "Kdo smo, od kod so naši podatki in kako zaslužimo. CarImport.eu avtomobilov ne prodaja in ne uvaža – celoten strošek uvoza izračuna pošteno in neodvisno."
+      "title": "O nas – neodvisni kalkulator uvoza avtomobilov | Carglo",
+      "description": "Kdo smo, od kod so naši podatki in kako zaslužimo. Carglo avtomobilov ne prodaja in ne uvaža – celoten strošek uvoza izračuna pošteno in neodvisno."
     },
     "terms": {
-      "title": "Splošni pogoji | CarImport.eu",
+      "title": "Splošni pogoji | Carglo",
       "description": "Pogoji kalkulatorja stroškov uvoza avtomobilov in poročila PDF: prodajalec, plačilo, dobava, odstop od pogodbe in reklamacije."
     }
   },
@@ -806,7 +806,7 @@
     "title": "Politika zasebnosti",
     "s1": {
       "title": "Upravljavec podatkov",
-      "text": "Upravljavec podatkov je upravljavec spletnega mesta CarImport.eu. Za vprašanja glede varstva podatkov nam pišite na {{email}}."
+      "text": "Upravljavec podatkov je upravljavec spletnega mesta Carglo. Za vprašanja glede varstva podatkov nam pišite na {{email}}."
     },
     "s2": {
       "title": "Katere podatke obdelujemo",
@@ -992,7 +992,7 @@
     "eyebrow": "O nas",
     "title1": "Izračunavamo uvoz avtomobilov.",
     "title2": "Avtomobilov ne prodajamo.",
-    "lead": "CarImport.eu je neodvisni kalkulator stroškov uvoza avtomobila izven Evropske unije. Zgradili smo ga, da bi vsak – ne le trgovec z desetletnimi izkušnjami – pred nakupom vedel, koliko bo v resnici plačal.",
+    "lead": "Carglo je neodvisni kalkulator stroškov uvoza avtomobila izven Evropske unije. Zgradili smo ga, da bi vsak – ne le trgovec z desetletnimi izkušnjami – pred nakupom vedel, koliko bo v resnici plačal.",
     "story": {
       "eyebrow": "Kako se je začelo",
       "title": "Iz frustracije zaradi skritih stroškov",
@@ -1091,20 +1091,20 @@
       "origins": {
         "title": "Vodniki za uvoz avtomobila: ZDA, Kanada, Japonska, ZAE in Združeno kraljestvo",
         "lead": "Vodniki po korakih za vsako državo, v kateri lahko kupite avtomobil: dražbe, dokumenti, trajanje prevoza, carina, DDV in registracija v Sloveniji – z dejanskimi stroški v vašem kalkulatorju.",
-        "metaTitle": "Vodniki za uvoz avtomobila – ZDA, Kanada, Japonska, ZAE, UK | CarImport.eu",
+        "metaTitle": "Vodniki za uvoz avtomobila – ZDA, Kanada, Japonska, ZAE, UK | Carglo",
         "metaDescription": "Kako uvoziti avtomobil iz ZDA, Kanade, Japonske, ZAE ali Združenega kraljestva v Slovenijo: dražbe, dokumenti, prevoz, carina, DDV in registracija po korakih."
       },
       "countries": {
         "title": "Uvoz avtomobila v posamezne države EU",
         "lead": "Stopnja DDV, davek ob registraciji, pristojni organ, tehnični pregled in najbližja pristanišča carinjenja za vseh 27 držav članic EU.",
-        "metaTitle": "Uvoz avtomobila v države EU – DDV, registracija, pristanišča | CarImport.eu",
+        "metaTitle": "Uvoz avtomobila v države EU – DDV, registracija, pristanišča | Carglo",
         "metaDescription": "Uvozni DDV, davki ob registraciji, organi, tehnični pregledi in najbližja pristanišča za vseh 27 držav EU – primerjajte in izračunajte celotne stroške uvoza.",
         "yours": "Vaša država"
       },
       "ports": {
         "title": "Pristanišča carinjenja v EU za uvožene avtomobile",
         "lead": "Vseh {{count}} morskih pristanišč EU, v katerih se carinijo avtomobili iz držav zunaj EU: stroški, DDV, trajanje plovbe iz ZDA, Kanade, Japonske, ZAE in UK ter cestne razdalje.",
-        "metaTitle": "{{count}} pristanišč EU za uvoz avtomobilov – stroški, DDV, plovba | CarImport.eu",
+        "metaTitle": "{{count}} pristanišč EU za uvoz avtomobilov – stroški, DDV, plovba | Carglo",
         "metaDescription": "Primerjajte vseh {{count}} pristanišč EU za carinjenje avtomobilov: stroški terminala in carinskega zastopnika, uvozni DDV, trajanje plovbe in razdalja do Slovenije.",
         "sortedFrom": "Razvrščeno po cestni razdalji do: {{country}}"
       }
@@ -1167,7 +1167,7 @@
       },
       "USA": {
         "h1": "Uvoz avtomobila iz ZDA v Slovenijo",
-        "metaTitle": "Uvoz avtomobila iz ZDA v Slovenijo – stroški, carina, DDV | CarImport.eu",
+        "metaTitle": "Uvoz avtomobila iz ZDA v Slovenijo – stroški, carina, DDV | Carglo",
         "metaDescription": "Kako uvoziti avtomobil iz ZDA v Slovenijo: dražbe Copart in IAAI, trajanje prevoza, 10 % carine, uvozni DDV, dokumenti in registracija. Izračunajte stroške.",
         "lead": "ZDA so največji vir uvoženih avtomobilov: vsako leto milijoni vozil na Copartu in IAAI, pogosto po cenah precej pod evropskim trgom. Tukaj je prikazano, kako poteka celoten postopek in koliko v resnici stane.",
         "why": "Ogromna izbira, nizke cene poškodovanih (salvage) avtomobilov, močni motorji in bogato opremljene izvedbe, ki so v Evropi redke. Past: ameriške luči in včasih tudi merilnik hitrosti je treba predelati, popravilo salvage avtomobila pa je lahko drago.",
@@ -1185,7 +1185,7 @@
       },
       "CANADA": {
         "h1": "Uvoz avtomobila iz Kanade v Slovenijo",
-        "metaTitle": "Uvoz avtomobila iz Kanade v Slovenijo – stroški, carina, DDV | CarImport.eu",
+        "metaTitle": "Uvoz avtomobila iz Kanade v Slovenijo – stroški, carina, DDV | Carglo",
         "metaDescription": "Uvoz avtomobila iz Kanade v Slovenijo: Copart in IAAI Canada, prevoz iz Halifaxa in Montreala, 10 % carine, DDV, dokumenti in registracija. Kalkulator stroškov.",
         "lead": "Kanadski avtomobili so podobni ameriškim, vendar so pogosto bolje pripravljeni na zimo, imajo merilnike hitrosti v kilometrih in nižje cene v kanadskih dolarjih. Prevoz iz Halifaxa in Montreala v Evropo je med najkrajšimi čez Atlantik.",
         "why": "Metrični instrumenti, zimski paketi, grelniki motorja in dobra protikorozijska zaščita; cene v CAD so za isti model pogosto nižje kot v ZDA.",
@@ -1203,7 +1203,7 @@
       },
       "JAPAN": {
         "h1": "Uvoz avtomobila iz Japonske v Slovenijo",
-        "metaTitle": "Uvoz avtomobila iz Japonske v Slovenijo – JDM, carina, DDV | CarImport.eu",
+        "metaTitle": "Uvoz avtomobila iz Japonske v Slovenijo – JDM, carina, DDV | Carglo",
         "metaDescription": "Uvoz JDM avtomobila iz Japonske v Slovenijo: dražbe USS, auction sheet, prevoz iz Jokohame, carina, DDV, desni volan in registracija. Kalkulator stroškov.",
         "lead": "Japonska je dom avtomobilov JDM: malo prevoženih kilometrov, odlično stanje in modeli, ki se v Evropi nikoli niso prodajali. Auction sheeti podrobno opisujejo vsak avtomobil – a avtomobili imajo volan na desni, pot pa je dolga.",
         "why": "Zelo dobro stanje zaradi strogih pregledov (shaken), poštenega ocenjevanja na dražbah ter edinstvenih športnih in kei avtomobilov. Cene v jenih so privlačne.",
@@ -1221,7 +1221,7 @@
       },
       "UAE": {
         "h1": "Uvoz avtomobila iz Dubaja (ZAE) v Slovenijo",
-        "metaTitle": "Uvoz avtomobila iz Dubaja (ZAE) v Slovenijo – carina, DDV | CarImport.eu",
+        "metaTitle": "Uvoz avtomobila iz Dubaja (ZAE) v Slovenijo – carina, DDV | Carglo",
         "metaDescription": "Uvoz avtomobila iz Dubaja in ZAE v Slovenijo: Emirates Auction in trgovci, specifikacija GCC, prevoz iz Jebel Alija, carina, DDV in registracija.",
         "lead": "Dubaj je trg premium in športnih avtomobilov z malo prevoženimi kilometri, pogosto komaj rabljenih. Avtomobili s specifikacijo GCC so narejeni za vročino in se prodajajo po privlačnih cenah.",
         "why": "Luksuzni in športni modeli, malo kilometrov in suho podnebje (brez rje). Cene v dirhamih so vezane na ameriški dolar.",
@@ -1239,7 +1239,7 @@
       },
       "UK": {
         "h1": "Uvoz avtomobila iz Združenega kraljestva v Slovenijo",
-        "metaTitle": "Uvoz avtomobila iz UK v Slovenijo po brexitu – carina, DDV | CarImport.eu",
+        "metaTitle": "Uvoz avtomobila iz UK v Slovenijo po brexitu – carina, DDV | Carglo",
         "metaDescription": "Uvoz avtomobila iz Združenega kraljestva v Slovenijo po brexitu: carina in preferencialno poreklo, DDV, desni volan, kratek prevoz in registracija.",
         "lead": "Od brexita je avtomobil iz Združenega kraljestva uvoz iz države zunaj EU: potrebni so carinska deklaracija, carina in uvozni DDV. Pot je kratka, avtomobili, izdelani v Združenem kraljestvu ali EU, pa so lahko upravičeni do 0 % carine.",
         "why": "Velik trg rabljenih avtomobilov, dobro vodene servisne knjižice in kratek prevoz z ladjo RoRo ali trajektom. Upoštevati je treba volan na desni.",
@@ -1258,7 +1258,7 @@
     },
     "country": {
       "h1": "{{country}}: uvoz avtomobila iz držav zunaj EU",
-      "metaTitle": "{{country}} – uvoz avtomobila: DDV {{vat}} %, registracija, pristanišča | CarImport.eu",
+      "metaTitle": "{{country}} – uvoz avtomobila: DDV {{vat}} %, registracija, pristanišča | Carglo",
       "metaDescription": "{{country}}: uvoz avtomobila iz ZDA, Kanade, Japonske, ZAE ali UK – uvozni DDV {{vat}} %, registracija, tehnični pregled, najbližja pristanišča in celotni stroški.",
       "lead": "{{country}} – vse, kar je pomembno, ko tukaj registrirate uvožen avtomobil: davki, pristojni organi, tehnični pregled in najcenejša pristanišča.",
       "facts": {
@@ -1290,7 +1290,7 @@
     },
     "port": {
       "h1": "Pristanišče {{port}} ({{country}}): carinjenje uvoženih avtomobilov",
-      "metaTitle": "{{port}} – uvoz avtomobila, carina, DDV {{vat}} % | CarImport.eu",
+      "metaTitle": "{{port}} – uvoz avtomobila, carina, DDV {{vat}} % | Carglo",
       "metaDescription": "Carinjenje uvoženega avtomobila v pristanišču {{port}} ({{country}}): stroški terminala in zastopnika, DDV {{vat}} %, plovba iz ZDA, Japonske in ZAE, razdalje.",
       "lead": "Pristanišče {{port}} je pristanišče carinjenja (država: {{country}}). Tukaj so njegovi stroški, trajanje plovbe in cestne razdalje – in ali se splača svoj avtomobil ocariniti tukaj.",
       "facts": {
@@ -1329,7 +1329,7 @@
   "blog": {
     "title": "Blog o uvozu avtomobilov",
     "lead": "Praktični članki o uvozu avtomobilov iz ZDA, Kanade, Japonske, ZAE in Združenega kraljestva: dejanski stroški, dražbe, carina, registracija in napake, ki se jim je vredno izogniti.",
-    "metaTitle": "Blog o uvozu avtomobilov – stroški, dražbe, carina | CarImport.eu",
+    "metaTitle": "Blog o uvozu avtomobilov – stroški, dražbe, carina | Carglo",
     "metaDescription": "Vodniki in članki o uvozu avtomobila v EU: koliko res stane, kako kupiti na Copart in IAAI, carina, DDV in registracija v Sloveniji.",
     "all": "Vse",
     "minutes": "{{n}} min branja",

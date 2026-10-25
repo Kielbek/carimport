@@ -177,7 +177,7 @@
     "name": "Teljes név",
     "phone": "Telefon (opcionális)",
     "submit": "Kérés elküldése",
-    "subtitle": "A CarImport.eu nem foglalkozik autóimporttal. Ha szeretné, a kalkulációját továbbítjuk egy ellenőrzött importcégnek, amely ajánlatot készít Önnek. Kötelezettség nélkül.",
+    "subtitle": "A Carglo nem foglalkozik autóimporttal. Ha szeretné, a kalkulációját továbbítjuk egy ellenőrzött importcégnek, amely ajánlatot készít Önnek. Kötelezettség nélkül.",
     "thanks": "Köszönjük!",
     "thanksHint": "Az importcég 1 munkanapon belül felveszi Önnel a kapcsolatot.",
     "title": "Ajánlatkérés importcégtől (opcionális)"
@@ -555,7 +555,7 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu —",
+        "title": "Carglo —",
         "text": "független importkalkulátor"
       },
       "instant": {
@@ -584,7 +584,7 @@
       "days": "nap"
     },
     "numbers": {
-      "eyebrow": "A CarImport.eu számokban",
+      "eyebrow": "A Carglo számokban",
       "title": "A számok minden kalkuláció mögött",
       "n1": {
         "value": "5",
@@ -769,7 +769,7 @@
       "a": "Nem. Ez egy becslés az aktuális kulcsok és díjszabások alapján. A végleges összegeket a vámhatóság és az adóhivatal állapítja meg, amelyek például ellenőrizhetik a vámértéket. A jelentés minden feltételezést felsorol, így könnyen összevethető a hivatalos határozattal."
     },
     "q9": {
-      "q": "A CarImport.eu importál autókat?",
+      "q": "A Carglo importál autókat?",
       "a": "Nem. Mi csak egy kalkulátor vagyunk – nem vásárolunk, nem szállítunk és nem vámkezelünk autókat, és nem veszünk fel jutalékot aukcióktól vagy fuvarozóktól. Így a becslés független marad. Ha szeretné, továbbíthatja a kalkulációt egy ellenőrzött importcégnek, de ez mindig az Ön döntése."
     }
   },
@@ -781,23 +781,23 @@
   },
   "seo": {
     "home": {
-      "title": "Autóimport-költségkalkulátor – USA, Japán, Dubaj → EU | CarImport.eu",
+      "title": "Autóimport-költségkalkulátor – USA, Japán, Dubaj → EU | Carglo",
       "description": "Független kalkulátor autóimporthoz az USA-ból, Kanadából, Japánból, az Egyesült Arab Emírségekből és az Egyesült Királyságból: aukció, szállítás, vám, jövedéki adó, áfa, forgalomba helyezés és kockázatok. Azonnali becslés, regisztráció nélkül."
     },
     "calculator": {
-      "title": "Vám-, jövedékiadó- és áfakalkulátor importautókhoz | CarImport.eu",
+      "title": "Vám-, jövedékiadó- és áfakalkulátor importautókhoz | Carglo",
       "description": "Válassza ki az országot, az aukciót, a kikötőt és a járművet — az élő kalkulátor megmutatja a költségsávot és a bontást: ár, szállítás, vám, jövedéki adó, áfa és forgalomba helyezés."
     },
     "privacy": {
-      "title": "Adatvédelmi tájékoztató | CarImport.eu",
-      "description": "Hogyan kezeli a CarImport.eu a személyes adatokat: fizetések, jelentések, partneri megkeresések és sütik."
+      "title": "Adatvédelmi tájékoztató | Carglo",
+      "description": "Hogyan kezeli a Carglo a személyes adatokat: fizetések, jelentések, partneri megkeresések és sütik."
     },
     "about": {
-      "title": "Rólunk – független autóimport-kalkulátor | CarImport.eu",
-      "description": "Kik vagyunk, honnan származnak az adataink és miből élünk. A CarImport.eu nem árul és nem importál autókat – őszintén és függetlenül kiszámolja a teljes importköltséget."
+      "title": "Rólunk – független autóimport-kalkulátor | Carglo",
+      "description": "Kik vagyunk, honnan származnak az adataink és miből élünk. A Carglo nem árul és nem importál autókat – őszintén és függetlenül kiszámolja a teljes importköltséget."
     },
     "terms": {
-      "title": "ÁSZF | CarImport.eu",
+      "title": "ÁSZF | Carglo",
       "description": "Az autóimport-költségkalkulátor és a PDF-jelentés feltételei: eladó, fizetés, teljesítés, elállás és panaszkezelés."
     }
   },
@@ -806,7 +806,7 @@
     "title": "Adatvédelmi tájékoztató",
     "s1": {
       "title": "Adatkezelő",
-      "text": "Az adatkezelő a CarImport.eu üzemeltetője. Adatvédelmi ügyekben írjon nekünk erre a címre: {{email}}."
+      "text": "Az adatkezelő a Carglo üzemeltetője. Adatvédelmi ügyekben írjon nekünk erre a címre: {{email}}."
     },
     "s2": {
       "title": "Milyen adatokat kezelünk",
@@ -992,7 +992,7 @@
     "eyebrow": "Rólunk",
     "title1": "Az autóimportot számoljuk.",
     "title2": "Autókat nem árulunk.",
-    "lead": "A CarImport.eu egy független kalkulátor, amely kiszámolja, mennyibe kerül egy autó behozatala az Európai Unión kívülről. Azért hoztuk létre, hogy bárki – ne csak a tízéves tapasztalattal rendelkező kereskedő – vásárlás előtt tudja, mennyit fizet valójában.",
+    "lead": "A Carglo egy független kalkulátor, amely kiszámolja, mennyibe kerül egy autó behozatala az Európai Unión kívülről. Azért hoztuk létre, hogy bárki – ne csak a tízéves tapasztalattal rendelkező kereskedő – vásárlás előtt tudja, mennyit fizet valójában.",
     "story": {
       "eyebrow": "Hogyan kezdődött",
       "title": "A rejtett költségek miatti bosszúságból",
@@ -1091,20 +1091,20 @@
       "origins": {
         "title": "Autóimport-útmutatók: USA, Kanada, Japán, Egyesült Arab Emírségek és Egyesült Királyság",
         "lead": "Lépésről lépésre minden országra, ahol autót vásárolhat: aukciók, dokumentumok, szállítási idő, vám, áfa és forgalomba helyezés Magyarországon – valós költségekkel a kalkulátorban.",
-        "metaTitle": "Autóimport-útmutatók – USA, Kanada, Japán, EAE, UK | CarImport.eu",
+        "metaTitle": "Autóimport-útmutatók – USA, Kanada, Japán, EAE, UK | Carglo",
         "metaDescription": "Autóimport az USA-ból, Kanadából, Japánból, az EAE-ből vagy az Egyesült Királyságból Magyarországra: aukciók, okmányok, szállítás, vám, áfa, forgalomba helyezés."
       },
       "countries": {
         "title": "Autóimport az egyes uniós országokba",
         "lead": "Áfakulcs, regisztrációs adó, nyilvántartó hatóság, műszaki vizsga és a legközelebbi vámkezelő kikötők mind a 27 uniós tagállamra.",
-        "metaTitle": "Autóimport az EU-országokba – áfa, forgalomba helyezés, kikötők | CarImport.eu",
+        "metaTitle": "Autóimport az EU-országokba – áfa, forgalomba helyezés, kikötők | Carglo",
         "metaDescription": "Behozatali áfa, regisztrációs adó, hatóságok, műszaki vizsga és legközelebbi kikötők mind a 27 EU-országra – számolja ki az importautó teljes költségét.",
         "yours": "Az Ön országa"
       },
       "ports": {
         "title": "Uniós vámkezelő kikötők importautókhoz",
         "lead": "Mind a(z) {{count}} uniós tengeri kikötő, ahol az EU-n kívülről érkező autókat vámkezelik: díjak, áfa, hajózási idő az USA-ból, Kanadából, Japánból, az EAE-ből és az Egyesült Királyságból, valamint közúti távolságok.",
-        "metaTitle": "{{count}} uniós kikötő autóimporthoz – díjak, áfa, hajózási idő | CarImport.eu",
+        "metaTitle": "{{count}} uniós kikötő autóimporthoz – díjak, áfa, hajózási idő | Carglo",
         "metaDescription": "Hasonlítsa össze mind a(z) {{count}} uniós vámkezelő kikötőt: terminál- és vámügynöki díjak, behozatali áfa, hajózási idő és közúti távolság Magyarországig.",
         "sortedFrom": "Közúti távolság szerint rendezve, célország: {{country}}"
       }
@@ -1167,7 +1167,7 @@
       },
       "USA": {
         "h1": "Autó behozatala az USA-ból Magyarországra",
-        "metaTitle": "Autóimport az USA-ból Magyarországra – költségek, vám, áfa | CarImport.eu",
+        "metaTitle": "Autóimport az USA-ból Magyarországra – költségek, vám, áfa | Carglo",
         "metaDescription": "Autó behozatala az USA-ból: Copart és IAAI aukciók, szállítási idő, 10% vám, behozatali áfa, okmányok és forgalomba helyezés. Teljes költség egy perc alatt.",
         "lead": "Az USA az importautók legnagyobb forrása: évente autók milliói a Copart és az IAAI aukcióin, gyakran jóval az európai piaci ár alatt. Így néz ki a teljes folyamat, és ennyibe kerül valójában.",
         "why": "Hatalmas választék, alacsony árak a sérült (salvage) autóknál, erős motorok és Európában ritka, jól felszerelt változatok. A hátrány: az amerikai világítást és néha a sebességmérőt át kell alakítani, a salvage autók javítása pedig drága lehet.",
@@ -1185,7 +1185,7 @@
       },
       "CANADA": {
         "h1": "Autó behozatala Kanadából Magyarországra",
-        "metaTitle": "Autóimport Kanadából Magyarországra – költségek, vám, áfa | CarImport.eu",
+        "metaTitle": "Autóimport Kanadából Magyarországra – költségek, vám, áfa | Carglo",
         "metaDescription": "Autó behozatala Kanadából: Copart és IAAI Canada, szállítás Halifaxból és Montrealból, 10% vám, áfa, okmányok és forgalomba helyezés. Teljes költségkalkulátor.",
         "lead": "A kanadai autók hasonlítanak az amerikaiakra, de gyakran jobban felkészítették őket a télre, metrikus sebességmérőjük van, és kanadai dollárban olcsóbbak. A hajóút Halifaxból és Montrealból Európába az egyik legrövidebb az Atlanti-óceánon át.",
         "why": "Metrikus műszerfal, téli csomagok, motorelőmelegítő és jó rozsdavédelem; ugyanaz a modell kanadai dollárban gyakran olcsóbb, mint az USA-ban.",
@@ -1203,7 +1203,7 @@
       },
       "JAPAN": {
         "h1": "Autó behozatala Japánból Magyarországra",
-        "metaTitle": "Autóimport Japánból Magyarországra – JDM, vám, áfa | CarImport.eu",
+        "metaTitle": "Autóimport Japánból Magyarországra – JDM, vám, áfa | Carglo",
         "metaDescription": "JDM autó behozatala Japánból: USS aukciók, aukciós lapok, szállítás Jokohamából, vám, áfa, jobbkormányos autók és forgalomba helyezés. Teljes költségkalkulátor.",
         "lead": "Japán a JDM autók hazája: alacsony futásteljesítmény, kiváló állapot és Európában soha nem forgalmazott modellek. Az aukciós lapok minden autót részletesen leírnak – az autók viszont jobbkormányosak, és az út hosszú.",
         "why": "Nagyon jó állapot a szigorú műszaki vizsgáknak (shaken) köszönhetően, megbízható aukciós értékelés, egyedi sport- és kei autók. A jenben megadott árak vonzók.",
@@ -1221,7 +1221,7 @@
       },
       "UAE": {
         "h1": "Autó behozatala Dubajból (EAE) Magyarországra",
-        "metaTitle": "Autóimport Dubajból (EAE) Magyarországra – vám, áfa | CarImport.eu",
+        "metaTitle": "Autóimport Dubajból (EAE) Magyarországra – vám, áfa | Carglo",
         "metaDescription": "Autóimport Dubajból és az EAE-ből: Emirates Auction és kereskedők, GCC-specifikáció, szállítás Jebel Aliból, vám, áfa, forgalomba helyezés. Költségkalkulátor.",
         "lead": "Dubaj a prémium- és sportautók piaca, alacsony futásteljesítménnyel, gyakran alig használt állapotban. A GCC-specifikációjú autókat a hőségre építik, és kedvező áron kínálják.",
         "why": "Luxus- és sportmodellek, alacsony futásteljesítmény és száraz éghajlat (nincs rozsda). A dirham árfolyama az amerikai dollárhoz van kötve.",
@@ -1239,7 +1239,7 @@
       },
       "UK": {
         "h1": "Autó behozatala az Egyesült Királyságból Magyarországra",
-        "metaTitle": "Autóimport az Egyesült Királyságból a Brexit után – vám, áfa | CarImport.eu",
+        "metaTitle": "Autóimport az Egyesült Királyságból a Brexit után – vám, áfa | Carglo",
         "metaDescription": "Autóimport az Egyesült Királyságból a Brexit után: vám és preferenciális származás, áfa, jobbkormány, rövid szállítás, forgalomba helyezés. Kalkulátor.",
         "lead": "A Brexit óta az Egyesült Királyságból hozott autó EU-n kívüli behozatalnak számít: vámáru-nyilatkozat, vám és behozatali áfa terheli. Az út rövid, és az Egyesült Királyságban vagy az EU-ban gyártott autók 0%-os vámra is jogosultak lehetnek.",
         "why": "Nagy használtautó-piac, jól vezetett szervizkönyvek és rövid szállítás RoRo-val vagy komppal. A jobbkormányt figyelembe kell venni.",
@@ -1258,7 +1258,7 @@
     },
     "country": {
       "h1": "{{country}}: autó behozatala az EU-n kívülről",
-      "metaTitle": "{{country}} – autóimport: áfa {{vat}}%, forgalomba helyezés | CarImport.eu",
+      "metaTitle": "{{country}} – autóimport: áfa {{vat}}%, forgalomba helyezés | Carglo",
       "metaDescription": "Autóimport az USA-ból, Kanadából, Japánból, az EAE-ből vagy az Egyesült Királyságból – célország: {{country}}. Áfa {{vat}}%, kikötők, teljes költség.",
       "lead": "Minden, ami számít, ha importautót helyez forgalomba – célország: {{country}}. Adók, hatóságok, műszaki vizsga és a legolcsóbb kikötők.",
       "facts": {
@@ -1290,7 +1290,7 @@
     },
     "port": {
       "h1": "{{port}} kikötő ({{country}}): importautók vámkezelése",
-      "metaTitle": "{{port}} – autóimport, vámkezelés, áfa {{vat}}% | CarImport.eu",
+      "metaTitle": "{{port}} – autóimport, vámkezelés, áfa {{vat}}% | Carglo",
       "metaDescription": "Importautó vámkezelése – kikötő: {{port}} ({{country}}). Terminál- és ügynöki díjak, áfa {{vat}}%, hajózási idő az USA-ból, Japánból és az EAE-ből.",
       "lead": "{{port}} vámkezelő kikötő, ország: {{country}}. Íme a díjai, a hajózási idők és a közúti távolságok – és hogy megéri-e itt vámkezeltetni az autót.",
       "facts": {
@@ -1329,7 +1329,7 @@
   "blog": {
     "title": "Autóimport blog",
     "lead": "Gyakorlati cikkek az USA-ból, Kanadából, Japánból, az Egyesült Arab Emírségekből és az Egyesült Királyságból történő autóbehozatalról: valós költségek, aukciók, vám, forgalomba helyezés és a leggyakoribb hibák.",
-    "metaTitle": "Autóimport blog – költségek, aukciók, vám, forgalomba helyezés | CarImport.eu",
+    "metaTitle": "Autóimport blog – költségek, aukciók, vám, forgalomba helyezés | Carglo",
     "metaDescription": "Útmutatók és cikkek az autóbehozatalról az EU-ba: mennyibe kerül valójában, hogyan vásároljon a Copart és az IAAI aukcióin, vám, áfa és forgalomba helyezés.",
     "all": "Összes",
     "minutes": "{{n}} perc olvasás",

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
       <path d="M4 26C9 10 17 2 28 2C39 2 48 11 53 26" stroke="currentColor" stroke-width="5" stroke-linecap="round" />
       <path d="M16 26C19 12 24 4 31 2M31 2C35 8 39 16 41 26" stroke="var(--brand)" stroke-width="3" stroke-linecap="round" />
     </svg>
-    <span class="mt-1 text-[15px] font-extrabold tracking-[0.06em]">CARIMPORT</span>
+    <span class="mt-1 text-[15px] font-extrabold tracking-[0.06em]">CARGLO</span>
   `,
   host: { class: 'inline-flex flex-col items-center leading-none' },
 })

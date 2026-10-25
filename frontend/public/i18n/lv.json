@@ -177,7 +177,7 @@
     "name": "Vārds, uzvārds",
     "phone": "Tālrunis (pēc izvēles)",
     "submit": "Nosūtīt pieprasījumu",
-    "subtitle": "CarImport.eu automašīnas neimportē. Ja vēlaties, nodosim jūsu aprēķinu vienam pārbaudītam importa uzņēmumam, kas sagatavos piedāvājumu. Bez saistībām.",
+    "subtitle": "Carglo automašīnas neimportē. Ja vēlaties, nodosim jūsu aprēķinu vienam pārbaudītam importa uzņēmumam, kas sagatavos piedāvājumu. Bez saistībām.",
     "thanks": "Paldies!",
     "thanksHint": "Importa uzņēmums ar jums sazināsies 1 darba dienas laikā.",
     "title": "Pieprasījums importa uzņēmumam (pēc izvēles)"
@@ -555,7 +555,7 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu —",
+        "title": "Carglo —",
         "text": "neatkarīgs importa kalkulators"
       },
       "instant": {
@@ -584,7 +584,7 @@
       "days": "dienas"
     },
     "numbers": {
-      "eyebrow": "CarImport.eu skaitļos",
+      "eyebrow": "Carglo skaitļos",
       "title": "Skaitļi aiz katra aprēķina",
       "n1": {
         "value": "5",
@@ -769,7 +769,7 @@
       "a": "Nē. Tas ir aprēķins, kas balstīts uz aktuālajām likmēm un cenrāžiem. Galīgās summas nosaka muita un nodokļu iestāde, kas, piemēram, var pārbaudīt muitas vērtību. Atskaitē ir uzskaitīti visi pieņēmumi, tāpēc to ir viegli salīdzināt ar oficiālo lēmumu."
     },
     "q9": {
-      "q": "Vai CarImport.eu importē automašīnas?",
+      "q": "Vai Carglo importē automašīnas?",
       "a": "Nē. Mēs esam tikai kalkulators – mēs nepērkam, nepārvadājam un nemuitojam automašīnas un neņemam komisiju no izsolēm vai pārvadātājiem. Tas nodrošina aprēķina neatkarību. Ja vēlaties, aprēķinu varat nodot pārbaudītam importa uzņēmumam, taču tā vienmēr ir jūsu izvēle."
     }
   },
@@ -781,23 +781,23 @@
   },
   "seo": {
     "home": {
-      "title": "Auto importa izmaksu kalkulators – ASV, Japāna, Dubaija → ES | CarImport.eu",
+      "title": "Auto importa izmaksu kalkulators – ASV, Japāna, Dubaija → ES | Carglo",
       "description": "Neatkarīgs kalkulators auto importam no ASV, Kanādas, Japānas, AAE un Apvienotās Karalistes: izsole, pārvadājums, muitas nodoklis, akcīze, PVN, reģistrācija un riski. Tūlītējs aprēķins, bez reģistrācijas."
     },
     "calculator": {
-      "title": "Importēto auto muitas nodokļa, akcīzes un PVN kalkulators | CarImport.eu",
+      "title": "Importēto auto muitas nodokļa, akcīzes un PVN kalkulators | Carglo",
       "description": "Izvēlieties valsti, izsoli, ostu un transportlīdzekli — tiešsaistes kalkulators parāda izmaksu diapazonu un sadalījumu: cena, pārvadājums, muitas nodoklis, akcīze, PVN un reģistrācija."
     },
     "privacy": {
-      "title": "Privātuma politika | CarImport.eu",
-      "description": "Kā CarImport.eu apstrādā personas datus: maksājumi, atskaites, partneru pieprasījumi un sīkdatnes."
+      "title": "Privātuma politika | Carglo",
+      "description": "Kā Carglo apstrādā personas datus: maksājumi, atskaites, partneru pieprasījumi un sīkdatnes."
     },
     "about": {
-      "title": "Par mums – neatkarīgs auto importa kalkulators | CarImport.eu",
-      "description": "Kas mēs esam, no kurienes ņemam datus un kā pelnām. CarImport.eu nepārdod un neimportē automašīnas – tas godīgi un neatkarīgi aprēķina pilnas importa izmaksas."
+      "title": "Par mums – neatkarīgs auto importa kalkulators | Carglo",
+      "description": "Kas mēs esam, no kurienes ņemam datus un kā pelnām. Carglo nepārdod un neimportē automašīnas – tas godīgi un neatkarīgi aprēķina pilnas importa izmaksas."
     },
     "terms": {
-      "title": "Noteikumi | CarImport.eu",
+      "title": "Noteikumi | Carglo",
       "description": "Automašīnu importa izmaksu kalkulatora un PDF atskaites noteikumi: pārdevējs, maksājums, piegāde, atteikuma tiesības un pretenzijas."
     }
   },
@@ -806,7 +806,7 @@
     "title": "Privātuma politika",
     "s1": {
       "title": "Pārzinis",
-      "text": "Personas datu pārzinis ir CarImport.eu uzturētājs. Datu aizsardzības jautājumos sazinieties ar mums: {{email}}."
+      "text": "Personas datu pārzinis ir Carglo uzturētājs. Datu aizsardzības jautājumos sazinieties ar mums: {{email}}."
     },
     "s2": {
       "title": "Kādus datus mēs apstrādājam",
@@ -992,7 +992,7 @@
     "eyebrow": "Par mums",
     "title1": "Mēs aprēķinām auto importu.",
     "title2": "Mēs nepārdodam automašīnas.",
-    "lead": "CarImport.eu ir neatkarīgs kalkulators, kas aprēķina izmaksas, lai atvestu auto no valstīm ārpus Eiropas Savienības. Mēs to izveidojām, lai ikviens – ne tikai dīleris ar desmit gadu pieredzi – pirms pirkuma zinātu, cik patiesībā maksās.",
+    "lead": "Carglo ir neatkarīgs kalkulators, kas aprēķina izmaksas, lai atvestu auto no valstīm ārpus Eiropas Savienības. Mēs to izveidojām, lai ikviens – ne tikai dīleris ar desmit gadu pieredzi – pirms pirkuma zinātu, cik patiesībā maksās.",
     "story": {
       "eyebrow": "Kā tas sākās",
       "title": "No neapmierinātības ar slēptajām izmaksām",
@@ -1091,20 +1091,20 @@
       "origins": {
         "title": "Auto importa ceļveži: ASV, Kanāda, Japāna, AAE un Lielbritānija",
         "lead": "Soli pa solim katrai valstij, kurā vari iegādāties auto: izsoles, dokumenti, piegādes laiks, muitas nodoklis, PVN un reģistrācija Latvijā – ar reālām izmaksām kalkulatorā.",
-        "metaTitle": "Auto importa ceļveži – ASV, Kanāda, Japāna, AAE, UK | CarImport.eu",
+        "metaTitle": "Auto importa ceļveži – ASV, Kanāda, Japāna, AAE, UK | Carglo",
         "metaDescription": "Kā ievest auto Latvijā no ASV, Kanādas, Japānas, AAE vai Lielbritānijas: izsoles, dokumenti, transports, muitas nodoklis, PVN un reģistrācija soli pa solim."
       },
       "countries": {
         "title": "Auto imports uz katru ES valsti",
         "lead": "PVN likme, reģistrācijas nodoklis, reģistrējošā iestāde, tehniskā apskate un tuvākās muitošanas ostas visām 27 ES dalībvalstīm.",
-        "metaTitle": "Auto imports uz ES valstīm – PVN, reģistrācija, ostas | CarImport.eu",
+        "metaTitle": "Auto imports uz ES valstīm – PVN, reģistrācija, ostas | Carglo",
         "metaDescription": "Importa PVN, reģistrācijas nodokļi, iestādes, tehniskās apskates un tuvākās ostas visās 27 ES valstīs – salīdzini un aprēķini importēta auto pilnās izmaksas.",
         "yours": "Tava valsts"
       },
       "ports": {
         "title": "ES muitošanas ostas importētiem auto",
         "lead": "Visas {{count}} ES jūras ostas, kurās muito auto no valstīm ārpus ES: maksas, PVN, kuģošanas laiks no ASV, Kanādas, Japānas, AAE un Lielbritānijas, kā arī attālumi pa autoceļiem.",
-        "metaTitle": "{{count}} ES ostas auto importam – maksas, PVN, kuģošana | CarImport.eu",
+        "metaTitle": "{{count}} ES ostas auto importam – maksas, PVN, kuģošana | Carglo",
         "metaDescription": "Salīdzini visas {{count}} ES auto muitošanas ostas: termināļa un muitas brokera maksas, importa PVN, kuģošanas laiks un attālums pa autoceļiem līdz Latvijai.",
         "sortedFrom": "Kārtots pēc attāluma pa autoceļiem līdz: {{country}}"
       }
@@ -1167,7 +1167,7 @@
       },
       "USA": {
         "h1": "Auto imports no ASV uz Latviju",
-        "metaTitle": "Auto imports no ASV uz Latviju – izmaksas, muita, PVN | CarImport.eu",
+        "metaTitle": "Auto imports no ASV uz Latviju – izmaksas, muita, PVN | Carglo",
         "metaDescription": "Kā ievest auto no ASV uz Latviju: Copart un IAAI izsoles, piegādes laiks, 10% muitas nodoklis, PVN, dokumenti un reģistrācija. Aprēķini izmaksas minūtē.",
         "lead": "ASV ir lielākais importēto auto avots: Copart un IAAI katru gadu piedāvā miljoniem transportlīdzekļu, bieži par cenām krietni zem Eiropas tirgus. Lūk, kā izskatās viss process un cik tas patiesībā maksā.",
         "why": "Milzīga izvēle, zemas cenas bojātiem (salvage) auto, jaudīgi dzinēji un labi aprīkotas versijas, kas Eiropā ir retums. Āķis: ASV lukturi un dažkārt arī spidometrs jāpārbūvē, un salvage auto remonts var būt dārgs.",
@@ -1185,7 +1185,7 @@
       },
       "CANADA": {
         "h1": "Auto imports no Kanādas uz Latviju",
-        "metaTitle": "Auto imports no Kanādas uz Latviju – izmaksas, muita, PVN | CarImport.eu",
+        "metaTitle": "Auto imports no Kanādas uz Latviju – izmaksas, muita, PVN | Carglo",
         "metaDescription": "Auto imports no Kanādas: Copart un IAAI Canada, kuģošana no Halifaksas un Monreālas, 10% muitas nodoklis, PVN, dokumenti, reģistrācija. Izmaksu kalkulators.",
         "lead": "Kanādas auto ir līdzīgi amerikāņu auto, taču bieži labāk sagatavoti ziemai, ar metrisku spidometru un zemākām cenām Kanādas dolāros. Kuģošana no Halifaksas un Monreālas uz Eiropu ir viena no īsākajām pāri Atlantijai.",
         "why": "Metriski mērinstrumenti, ziemas pakotnes, dzinēja priekšsildītāji un laba pretkorozijas aizsardzība; cenas CAD par to pašu modeli bieži ir zemākas nekā ASV.",
@@ -1203,7 +1203,7 @@
       },
       "JAPAN": {
         "h1": "Auto imports no Japānas uz Latviju",
-        "metaTitle": "Auto imports no Japānas uz Latviju – JDM, muita, PVN | CarImport.eu",
+        "metaTitle": "Auto imports no Japānas uz Latviju – JDM, muita, PVN | Carglo",
         "metaDescription": "JDM auto imports no Japānas: USS izsoles, izsoles lapas, kuģošana no Jokohamas, muita, PVN, labās puses stūre un reģistrācija. Izmaksu kalkulators.",
         "lead": "Japāna ir JDM auto dzimtene: mazs nobraukums, izcils stāvoklis un modeļi, kas Eiropā nekad nav pārdoti. Izsoles lapas sīki apraksta katru auto – taču auto ir ar labās puses stūri un ceļš ir garš.",
         "why": "Ļoti labs stāvoklis, pateicoties stingrām tehniskajām apskatēm (shaken), godīgam izsoles vērtējumam un unikāliem sporta un kei auto. Cenas jenās ir pievilcīgas.",
@@ -1221,7 +1221,7 @@
       },
       "UAE": {
         "h1": "Auto imports no Dubaijas (AAE) uz Latviju",
-        "metaTitle": "Auto imports no Dubaijas (AAE) uz Latviju – muita, PVN | CarImport.eu",
+        "metaTitle": "Auto imports no Dubaijas (AAE) uz Latviju – muita, PVN | Carglo",
         "metaDescription": "Auto imports no Dubaijas un AAE: Emirates Auction un tirgotāji, GCC spec, kuģošana no Jebel Ali, muitas nodoklis, PVN un reģistrācija. Izmaksu kalkulators.",
         "lead": "Dubaija ir premium un sporta auto tirgus ar mazu nobraukumu, bieži gandrīz nelietotiem. GCC specifikācijas auto ir būvēti karstumam un tiek pārdoti par pievilcīgām cenām.",
         "why": "Luksusa un sporta modeļi, mazs nobraukums un sauss klimats (bez rūsas). Cenas dirhamos ir piesaistītas ASV dolāram.",
@@ -1239,7 +1239,7 @@
       },
       "UK": {
         "h1": "Auto imports no Lielbritānijas uz Latviju",
-        "metaTitle": "Auto imports no Lielbritānijas pēc Brexit – muita, PVN | CarImport.eu",
+        "metaTitle": "Auto imports no Lielbritānijas pēc Brexit – muita, PVN | Carglo",
         "metaDescription": "Auto imports no Lielbritānijas uz Latviju pēc Brexit: muitas nodoklis un preferenciālā izcelsme, PVN, labās puses stūre, īsa piegāde un reģistrācija.",
         "lead": "Kopš Brexit auto no Apvienotās Karalistes ir imports no valsts ārpus ES: jāiesniedz muitas deklarācija, jāmaksā muitas nodoklis un importa PVN. Ceļš ir īss, un Lielbritānijā vai ES ražoti auto var kvalificēties 0% muitas nodoklim.",
         "why": "Liels lietoto auto tirgus, labas apkopes vēstures un īsa piegāde ar RoRo kuģi vai prāmi. Jārēķinās ar labās puses stūri.",
@@ -1258,7 +1258,7 @@
     },
     "country": {
       "h1": "{{country}}: auto imports no valstīm ārpus ES",
-      "metaTitle": "{{country}} – auto imports: PVN {{vat}}%, reģistrācija, ostas | CarImport.eu",
+      "metaTitle": "{{country}} – auto imports: PVN {{vat}}%, reģistrācija, ostas | Carglo",
       "metaDescription": "Auto imports no ASV, Kanādas, Japānas, AAE vai Lielbritānijas, galamērķis {{country}}: importa PVN {{vat}}%, reģistrācija, apskate, tuvākās ostas un izmaksas.",
       "lead": "Viss, kas svarīgs, reģistrējot importētu auto – valsts: {{country}}. Nodokļi, iestādes, tehniskā apskate un lētākās ostas.",
       "facts": {
@@ -1290,7 +1290,7 @@
     },
     "port": {
       "h1": "Osta {{port}} ({{country}}): importēto auto muitošana",
-      "metaTitle": "{{port}} – auto imports, muita, PVN {{vat}}% | CarImport.eu",
+      "metaTitle": "{{port}} – auto imports, muita, PVN {{vat}}% | Carglo",
       "metaDescription": "Importēta auto muitošana – osta {{port}} ({{country}}): termināļa un brokera maksas, PVN {{vat}}%, kuģošana no ASV, Japānas un AAE, attālumi.",
       "lead": "{{port}} ir muitošanas osta – valsts: {{country}}. Šeit apkopotas tās maksas, kuģošanas laiki un attālumi pa autoceļiem – un vai ir vērts muitot auto tieši šeit.",
       "facts": {
@@ -1329,7 +1329,7 @@
   "blog": {
     "title": "Auto importa blogs",
     "lead": "Praktiski raksti par auto ievešanu no ASV, Kanādas, Japānas, AAE un Lielbritānijas: reālās izmaksas, izsoles, muita, reģistrācija un kļūdas, no kurām izvairīties.",
-    "metaTitle": "Auto importa blogs – izmaksas, izsoles, muita, reģistrācija | CarImport.eu",
+    "metaTitle": "Auto importa blogs – izmaksas, izsoles, muita, reģistrācija | Carglo",
     "metaDescription": "Ceļveži un raksti par auto ievešanu ES: cik tas patiesībā maksā, kā pirkt Copart un IAAI izsolēs, muitas nodoklis, PVN un reģistrācija.",
     "all": "Visi",
     "minutes": "{{n}} min lasīšanai",

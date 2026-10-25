@@ -177,7 +177,7 @@
     "name": "Vardas ir pavardė",
     "phone": "Telefonas (neprivaloma)",
     "submit": "Siųsti užklausą",
-    "subtitle": "CarImport.eu automobilių neimportuoja. Jei norite, perduosime jūsų skaičiavimą vienai patikrintai importo įmonei, kuri parengs pasiūlymą. Jokių įsipareigojimų.",
+    "subtitle": "Carglo automobilių neimportuoja. Jei norite, perduosime jūsų skaičiavimą vienai patikrintai importo įmonei, kuri parengs pasiūlymą. Jokių įsipareigojimų.",
     "thanks": "Ačiū!",
     "thanksHint": "Importo įmonė susisieks su jumis per 1 darbo dieną.",
     "title": "Užklausa importo įmonei (neprivaloma)"
@@ -555,7 +555,7 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu —",
+        "title": "Carglo —",
         "text": "nepriklausoma importo skaičiuoklė"
       },
       "instant": {
@@ -584,7 +584,7 @@
       "days": "d."
     },
     "numbers": {
-      "eyebrow": "CarImport.eu skaičiais",
+      "eyebrow": "Carglo skaičiais",
       "title": "Skaičiai už kiekvieno skaičiavimo",
       "n1": {
         "value": "5",
@@ -769,7 +769,7 @@
       "a": "Ne. Tai įvertis, pagrįstas galiojančiais tarifais ir kainynais. Galutines sumas nustato muitinė ir mokesčių administratorius, kurie, pavyzdžiui, gali patikrinti muitinę vertę. Ataskaitoje išvardytos visos prielaidos, todėl ją lengva palyginti su oficialiu sprendimu."
     },
     "q9": {
-      "q": "Ar CarImport.eu importuoja automobilius?",
+      "q": "Ar Carglo importuoja automobilius?",
       "a": "Ne. Esame tik skaičiuoklė – automobilių neperkame, negabename ir neįforminame muitinėje, taip pat neimame komisinių iš aukcionų ar vežėjų. Todėl įvertis lieka nepriklausomas. Jei norite, galite perduoti skaičiavimą patikrintai importo įmonei, tačiau tai visada jūsų pasirinkimas."
     }
   },
@@ -781,23 +781,23 @@
   },
   "seo": {
     "home": {
-      "title": "Automobilių importo išlaidų skaičiuoklė – iš JAV, Japonijos, Dubajaus į ES | CarImport.eu",
+      "title": "Automobilių importo išlaidų skaičiuoklė – iš JAV, Japonijos, Dubajaus į ES | Carglo",
       "description": "Nepriklausoma automobilio importo iš JAV, Kanados, Japonijos, JAE ir JK skaičiuoklė: aukcionas, gabenimas, muitas, akcizas, PVM, registracija ir rizikos. Įvertis iškart, be registracijos."
     },
     "calculator": {
-      "title": "Importuotų automobilių muito, akcizo ir PVM skaičiuoklė | CarImport.eu",
+      "title": "Importuotų automobilių muito, akcizo ir PVM skaičiuoklė | Carglo",
       "description": "Pasirinkite šalį, aukcioną, uostą ir transporto priemonę — skaičiuoklė iškart parodo kainos intervalą ir išskaidymą: kaina, gabenimas, muitas, akcizas, PVM ir registracija."
     },
     "privacy": {
-      "title": "Privatumo politika | CarImport.eu",
-      "description": "Kaip CarImport.eu tvarko asmens duomenis: mokėjimai, ataskaitos, užklausos partneriams ir slapukai."
+      "title": "Privatumo politika | Carglo",
+      "description": "Kaip Carglo tvarko asmens duomenis: mokėjimai, ataskaitos, užklausos partneriams ir slapukai."
     },
     "about": {
-      "title": "Apie mus – nepriklausoma automobilių importo skaičiuoklė | CarImport.eu",
-      "description": "Kas mes esame, iš kur gauname duomenis ir kaip uždirbame. CarImport.eu automobilių neparduoda ir neimportuoja – sąžiningai ir nepriklausomai apskaičiuoja visą importo kainą."
+      "title": "Apie mus – nepriklausoma automobilių importo skaičiuoklė | Carglo",
+      "description": "Kas mes esame, iš kur gauname duomenis ir kaip uždirbame. Carglo automobilių neparduoda ir neimportuoja – sąžiningai ir nepriklausomai apskaičiuoja visą importo kainą."
     },
     "terms": {
-      "title": "Taisyklės | CarImport.eu",
+      "title": "Taisyklės | Carglo",
       "description": "Automobilių importo išlaidų skaičiuoklės ir PDF ataskaitos taisyklės: pardavėjas, mokėjimas, pateikimas, sutarties atsisakymas ir pretenzijos."
     }
   },
@@ -806,7 +806,7 @@
     "title": "Privatumo politika",
     "s1": {
       "title": "Duomenų valdytojas",
-      "text": "Duomenų valdytojas yra CarImport.eu operatorius. Duomenų apsaugos klausimais rašykite adresu {{email}}."
+      "text": "Duomenų valdytojas yra Carglo operatorius. Duomenų apsaugos klausimais rašykite adresu {{email}}."
     },
     "s2": {
       "title": "Kokius duomenis tvarkome",
@@ -992,7 +992,7 @@
     "eyebrow": "Apie mus",
     "title1": "Skaičiuojame automobilių importą.",
     "title2": "Automobilių neparduodame.",
-    "lead": "CarImport.eu – nepriklausoma automobilio atgabenimo iš ne Europos Sąjungos šalių išlaidų skaičiuoklė. Sukūrėme ją, kad kiekvienas – ne tik dešimtmetį patirties turintis prekiautojas – prieš pirkdamas žinotų, kiek iš tikrųjų sumokės.",
+    "lead": "Carglo – nepriklausoma automobilio atgabenimo iš ne Europos Sąjungos šalių išlaidų skaičiuoklė. Sukūrėme ją, kad kiekvienas – ne tik dešimtmetį patirties turintis prekiautojas – prieš pirkdamas žinotų, kiek iš tikrųjų sumokės.",
     "story": {
       "eyebrow": "Kaip viskas prasidėjo",
       "title": "Iš nusivylimo paslėptomis išlaidomis",
@@ -1091,20 +1091,20 @@
       "origins": {
         "title": "Automobilių importo gidai: JAV, Kanada, Japonija, JAE ir Jungtinė Karalystė",
         "lead": "Žingsnis po žingsnio kiekvienai šaliai, kurioje galite įsigyti automobilį: aukcionai, dokumentai, gabenimo trukmė, muitas, PVM ir registracija Lietuvoje – su realiomis išlaidomis skaičiuoklėje.",
-        "metaTitle": "Automobilių importo gidai – JAV, Kanada, Japonija, JAE, JK | CarImport.eu",
+        "metaTitle": "Automobilių importo gidai – JAV, Kanada, Japonija, JAE, JK | Carglo",
         "metaDescription": "Kaip įsivežti automobilį į Lietuvą iš JAV, Kanados, Japonijos, JAE ar Jungtinės Karalystės: aukcionai, dokumentai, gabenimas, muitas, PVM ir registracija."
       },
       "countries": {
         "title": "Automobilio importas į kiekvieną ES šalį",
         "lead": "PVM tarifas, registracijos mokestis, registruojanti institucija, techninė apžiūra ir artimiausi muitinio įforminimo uostai visoms 27 ES valstybėms narėms.",
-        "metaTitle": "Automobilių importas į ES šalis – PVM, registracija, uostai | CarImport.eu",
+        "metaTitle": "Automobilių importas į ES šalis – PVM, registracija, uostai | Carglo",
         "metaDescription": "Importo PVM, registracijos mokesčiai, institucijos, techninės apžiūros ir artimiausi uostai visose 27 ES šalyse – palyginkite ir apskaičiuokite visą kainą.",
         "yours": "Jūsų šalis"
       },
       "ports": {
         "title": "ES muitinio įforminimo uostai importuojamiems automobiliams",
         "lead": "Visi {{count}} ES jūrų uostai, kuriuose įforminami automobiliai iš ne ES šalių: mokesčiai, PVM, plaukimo trukmė iš JAV, Kanados, Japonijos, JAE ir Jungtinės Karalystės bei atstumai keliais.",
-        "metaTitle": "{{count}} ES uostai automobilių importui – mokesčiai, PVM | CarImport.eu",
+        "metaTitle": "{{count}} ES uostai automobilių importui – mokesčiai, PVM | Carglo",
         "metaDescription": "Palyginkite visus {{count}} ES automobilių muitinio įforminimo uostus: terminalo ir muitinės tarpininko mokesčiai, importo PVM, plaukimo trukmė ir atstumas iki Lietuvos.",
         "sortedFrom": "Surūšiuota pagal atstumą keliais iki: {{country}}"
       }
@@ -1167,7 +1167,7 @@
       },
       "USA": {
         "h1": "Automobilio importas iš JAV į Lietuvą",
-        "metaTitle": "Automobilio importas iš JAV į Lietuvą – kaina, muitas, PVM | CarImport.eu",
+        "metaTitle": "Automobilio importas iš JAV į Lietuvą – kaina, muitas, PVM | Carglo",
         "metaDescription": "Kaip įsivežti automobilį iš JAV į Lietuvą: Copart ir IAAI aukcionai, gabenimo trukmė, 10 % muitas, PVM, dokumentai ir registracija. Apskaičiuokite per minutę.",
         "lead": "JAV – didžiausias importuojamų automobilių šaltinis: Copart ir IAAI kasmet parduoda milijonus transporto priemonių, dažnai gerokai pigiau nei Europos rinkoje. Štai kaip atrodo visas procesas ir kiek jis iš tikrųjų kainuoja.",
         "why": "Didžiulis pasirinkimas, žemos apgadintų (salvage) automobilių kainos, galingi varikliai ir gerai įrengtos versijos, kurios Europoje retos. Tačiau JAV žibintus, o kartais ir spidometrą, reikia pritaikyti, o salvage automobilių remontas gali būti brangus.",
@@ -1185,7 +1185,7 @@
       },
       "CANADA": {
         "h1": "Automobilio importas iš Kanados į Lietuvą",
-        "metaTitle": "Automobilio importas iš Kanados į Lietuvą – muitas, PVM | CarImport.eu",
+        "metaTitle": "Automobilio importas iš Kanados į Lietuvą – muitas, PVM | Carglo",
         "metaDescription": "Automobilio importas iš Kanados: Copart ir IAAI Canada, gabenimas iš Halifakso ir Monrealio, 10 % muitas, PVM, dokumentai ir registracija. Skaičiuoklė.",
         "lead": "Kanados automobiliai panašūs į amerikietiškus, bet dažnai geriau paruošti žiemai, su metriniu spidometru ir mažesnėmis kainomis Kanados doleriais. Gabenimas iš Halifakso ir Monrealio į Europą – vienas trumpiausių per Atlantą.",
         "why": "Metriniai prietaisų skydeliai, žieminiai paketai, variklio pašildytuvai ir gera antikorozinė apsauga; kainos CAD už tą patį modelį dažnai mažesnės nei JAV.",
@@ -1203,7 +1203,7 @@
       },
       "JAPAN": {
         "h1": "Automobilio importas iš Japonijos į Lietuvą",
-        "metaTitle": "Automobilio importas iš Japonijos į Lietuvą – JDM, muitas | CarImport.eu",
+        "metaTitle": "Automobilio importas iš Japonijos į Lietuvą – JDM, muitas | Carglo",
         "metaDescription": "JDM automobilio importas iš Japonijos: USS aukcionai, aukciono lapai, gabenimas iš Jokohamos, muitas, PVM, dešinysis vairas ir registracija. Skaičiuoklė.",
         "lead": "Japonija – JDM automobilių tėvynė: maža rida, puiki būklė ir modeliai, kurie niekada nebuvo parduodami Europoje. Aukciono lapai išsamiai aprašo kiekvieną automobilį – tačiau automobiliai su dešiniuoju vairu, o kelionė ilga.",
         "why": "Labai gera būklė dėl griežtų techninių apžiūrų (shaken), sąžiningo aukciono vertinimo ir unikalių sportinių bei kei automobilių. Kainos jenomis patrauklios.",
@@ -1221,7 +1221,7 @@
       },
       "UAE": {
         "h1": "Automobilio importas iš Dubajaus (JAE) į Lietuvą",
-        "metaTitle": "Automobilio importas iš Dubajaus (JAE) į Lietuvą – muitas | CarImport.eu",
+        "metaTitle": "Automobilio importas iš Dubajaus (JAE) į Lietuvą – muitas | Carglo",
         "metaDescription": "Automobilio importas iš Dubajaus ir JAE: Emirates Auction ir prekybininkai, GCC spec, gabenimas iš Jebel Ali, muitas, PVM ir registracija. Skaičiuoklė.",
         "lead": "Dubajus – premium ir sportinių automobilių su maža rida rinka, dažnai beveik nenaudotų. GCC specifikacijos automobiliai sukurti karščiui ir parduodami patraukliomis kainomis.",
         "why": "Prabangūs ir sportiniai modeliai, maža rida ir sausas klimatas (be rūdžių). Kainos dirhamais susietos su JAV doleriu.",
@@ -1239,7 +1239,7 @@
       },
       "UK": {
         "h1": "Automobilio importas iš Jungtinės Karalystės į Lietuvą",
-        "metaTitle": "Automobilio importas iš JK po Brexit – muitas, PVM | CarImport.eu",
+        "metaTitle": "Automobilio importas iš JK po Brexit – muitas, PVM | Carglo",
         "metaDescription": "Automobilio importas iš Jungtinės Karalystės į Lietuvą po Brexit: muitas ir lengvatinė kilmė, PVM, dešinysis vairas, trumpas gabenimas ir registracija.",
         "lead": "Po Brexit automobilis iš Jungtinės Karalystės yra importas iš ne ES šalies: taikoma muitinės deklaracija, muitas ir importo PVM. Kelionė trumpa, o JK arba ES pagaminti automobiliai gali atitikti 0 % muito sąlygas.",
         "why": "Didelė naudotų automobilių rinka, geros techninės priežiūros istorijos ir trumpas gabenimas RoRo laivu ar keltu. Reikia atsižvelgti į dešinįjį vairą.",
@@ -1258,7 +1258,7 @@
     },
     "country": {
       "h1": "{{country}}: automobilio importas iš ne ES šalių",
-      "metaTitle": "{{country}} – automobilio importas: PVM {{vat}}%, registracija | CarImport.eu",
+      "metaTitle": "{{country}} – automobilio importas: PVM {{vat}}%, registracija | Carglo",
       "metaDescription": "Automobilio importas iš JAV, Kanados, Japonijos, JAE ar JK, paskirties šalis – {{country}}: importo PVM {{vat}}%, registracija, apžiūra, uostai ir visa kaina.",
       "lead": "Viskas, kas svarbu registruojant importuotą automobilį, šalis – {{country}}: mokesčiai, institucijos, techninė apžiūra ir pigiausi uostai.",
       "facts": {
@@ -1290,7 +1290,7 @@
     },
     "port": {
       "h1": "Uostas {{port}} ({{country}}): importuojamų automobilių muitinis įforminimas",
-      "metaTitle": "{{port}} – automobilio importas, muitas, PVM {{vat}}% | CarImport.eu",
+      "metaTitle": "{{port}} – automobilio importas, muitas, PVM {{vat}}% | Carglo",
       "metaDescription": "Importuoto automobilio įforminimas, uostas {{port}} ({{country}}): terminalo ir tarpininko mokesčiai, PVM {{vat}}%, plaukimas iš JAV, Japonijos ir JAE, atstumai.",
       "lead": "{{port}} – muitinio įforminimo uostas, šalis – {{country}}. Čia rasite jo mokesčius, plaukimo trukmę ir atstumus keliais – ir ar verta įforminti automobilį būtent čia.",
       "facts": {
@@ -1329,7 +1329,7 @@
   "blog": {
     "title": "Automobilių importo tinklaraštis",
     "lead": "Praktiški straipsniai apie automobilių įvežimą iš JAV, Kanados, Japonijos, JAE ir Jungtinės Karalystės: realios išlaidos, aukcionai, muitinė, registracija ir klaidos, kurių verta vengti.",
-    "metaTitle": "Automobilių importo tinklaraštis – kainos, aukcionai, muitas | CarImport.eu",
+    "metaTitle": "Automobilių importo tinklaraštis – kainos, aukcionai, muitas | Carglo",
     "metaDescription": "Gidai ir straipsniai apie automobilio įvežimą į ES: kiek tai iš tikrųjų kainuoja, kaip pirkti Copart ir IAAI aukcionuose, muitas, PVM ir registracija.",
     "all": "Visi",
     "minutes": "{{n}} min skaitymo",

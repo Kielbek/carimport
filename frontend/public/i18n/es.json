@@ -177,7 +177,7 @@
     "name": "Nombre y apellidos",
     "phone": "Teléfono (opcional)",
     "submit": "Enviar solicitud",
-    "subtitle": "CarImport.eu no importa coches. Si lo deseas, enviaremos tu estimación a una empresa importadora verificada, que te preparará una oferta. Sin compromiso.",
+    "subtitle": "Carglo no importa coches. Si lo deseas, enviaremos tu estimación a una empresa importadora verificada, que te preparará una oferta. Sin compromiso.",
     "thanks": "¡Gracias!",
     "thanksHint": "La empresa importadora se pondrá en contacto contigo en un plazo de 1 día hábil.",
     "title": "Consulta a una empresa importadora (opcional)"
@@ -555,7 +555,7 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu —",
+        "title": "Carglo —",
         "text": "calculadora de importación independiente"
       },
       "instant": {
@@ -584,7 +584,7 @@
       "days": "días"
     },
     "numbers": {
-      "eyebrow": "CarImport.eu en cifras",
+      "eyebrow": "Carglo en cifras",
       "title": "Las cifras detrás de cada cálculo",
       "n1": {
         "value": "5",
@@ -769,7 +769,7 @@
       "a": "No. Es una estimación basada en los tipos y tarifas vigentes. Los importes definitivos los fijan la aduana y la oficina tributaria, que pueden, por ejemplo, comprobar el valor en aduana. El informe enumera todos los supuestos, por lo que es fácil compararlo con la resolución oficial."
     },
     "q9": {
-      "q": "¿CarImport.eu importa coches?",
+      "q": "¿Carglo importa coches?",
       "a": "No. Solo somos una calculadora – no compramos, enviamos ni despachamos coches, y no cobramos comisiones de subastas ni de transportistas. Eso mantiene la estimación independiente. Si quieres, puedes enviar la estimación a una empresa importadora verificada, pero siempre es decisión tuya."
     }
   },
@@ -781,23 +781,23 @@
   },
   "seo": {
     "home": {
-      "title": "Calculadora de costes de importación de coches – EE. UU., Japón, Dubái a la UE | CarImport.eu",
+      "title": "Calculadora de costes de importación de coches – EE. UU., Japón, Dubái a la UE | Carglo",
       "description": "Calculadora independiente para importar un coche de EE. UU., Canadá, Japón, EAU y Reino Unido: subasta, envío, arancel, impuesto especial, IVA, matriculación y riesgos. Estimación inmediata, sin registro."
     },
     "calculator": {
-      "title": "Calculadora de arancel, impuesto especial e IVA para coches importados | CarImport.eu",
+      "title": "Calculadora de arancel, impuesto especial e IVA para coches importados | Carglo",
       "description": "Elige el país, la subasta, el puerto y el vehículo — la calculadora en tiempo real muestra el rango y el desglose de costes: precio, envío, arancel, impuesto especial, IVA y matriculación."
     },
     "privacy": {
-      "title": "Política de privacidad | CarImport.eu",
-      "description": "Cómo trata CarImport.eu los datos personales: pagos, informes, consultas a socios y cookies."
+      "title": "Política de privacidad | Carglo",
+      "description": "Cómo trata Carglo los datos personales: pagos, informes, consultas a socios y cookies."
     },
     "about": {
-      "title": "Quiénes somos – una calculadora independiente de importación de coches | CarImport.eu",
-      "description": "Quiénes somos, de dónde salen nuestros datos y cómo ganamos dinero. CarImport.eu no vende ni importa coches – calcula el coste total de importación de forma honesta e independiente."
+      "title": "Quiénes somos – una calculadora independiente de importación de coches | Carglo",
+      "description": "Quiénes somos, de dónde salen nuestros datos y cómo ganamos dinero. Carglo no vende ni importa coches – calcula el coste total de importación de forma honesta e independiente."
     },
     "terms": {
-      "title": "Condiciones generales | CarImport.eu",
+      "title": "Condiciones generales | Carglo",
       "description": "Condiciones de la calculadora de costes de importación de coches y del informe PDF: vendedor, pago, entrega, desistimiento y reclamaciones."
     }
   },
@@ -806,7 +806,7 @@
     "title": "Política de privacidad",
     "s1": {
       "title": "Responsable del tratamiento",
-      "text": "El responsable del tratamiento de los datos es el titular de CarImport.eu. Para cuestiones de protección de datos, escríbenos a {{email}}."
+      "text": "El responsable del tratamiento de los datos es el titular de Carglo. Para cuestiones de protección de datos, escríbenos a {{email}}."
     },
     "s2": {
       "title": "Qué datos tratamos",
@@ -992,7 +992,7 @@
     "eyebrow": "Quiénes somos",
     "title1": "Calculamos la importación de coches.",
     "title2": "No vendemos coches.",
-    "lead": "CarImport.eu es una calculadora independiente del coste de traer un coche de fuera de la Unión Europea. La creamos para que cualquiera – no solo un comerciante con diez años de experiencia – sepa antes de comprar cuánto pagará realmente.",
+    "lead": "Carglo es una calculadora independiente del coste de traer un coche de fuera de la Unión Europea. La creamos para que cualquiera – no solo un comerciante con diez años de experiencia – sepa antes de comprar cuánto pagará realmente.",
     "story": {
       "eyebrow": "Cómo empezó",
       "title": "Por la frustración con los costes ocultos",
@@ -1091,20 +1091,20 @@
       "origins": {
         "title": "Guías para importar un coche: EE. UU., Canadá, Japón, EAU y Reino Unido",
         "lead": "Guías paso a paso para cada país donde puedes comprar un coche: subastas, documentos, plazos de transporte, aranceles, IVA y matriculación en España, con los costes reales en tu calculadora.",
-        "metaTitle": "Guías de importación – EE. UU., Canadá, Japón, EAU, UK | CarImport.eu",
+        "metaTitle": "Guías de importación – EE. UU., Canadá, Japón, EAU, UK | Carglo",
         "metaDescription": "Cómo importar un coche de EE. UU., Canadá, Japón, EAU o Reino Unido a España: subastas, documentos, transporte, aranceles, IVA y matriculación paso a paso."
       },
       "countries": {
         "title": "Importar un coche a cada país de la UE",
         "lead": "Tipo de IVA, impuesto de matriculación, organismo competente, inspección técnica y puertos de despacho más cercanos para los 27 Estados miembros de la UE.",
-        "metaTitle": "Importar un coche a países de la UE – IVA, matriculación, puertos | CarImport.eu",
+        "metaTitle": "Importar un coche a países de la UE – IVA, matriculación, puertos | Carglo",
         "metaDescription": "IVA a la importación, impuestos de matriculación, organismos, inspecciones y puertos más cercanos de los 27 países de la UE: compara y calcula el coste total.",
         "yours": "Tu país"
       },
       "ports": {
         "title": "Puertos de despacho en la UE para coches importados",
         "lead": "Los {{count}} puertos marítimos de la UE donde se despachan coches de fuera de la UE: tasas, IVA, tiempos de travesía desde EE. UU., Canadá, Japón, EAU y Reino Unido, y distancias por carretera.",
-        "metaTitle": "{{count}} puertos de la UE para importar coches – tasas, IVA | CarImport.eu",
+        "metaTitle": "{{count}} puertos de la UE para importar coches – tasas, IVA | Carglo",
         "metaDescription": "Compara los {{count}} puertos de despacho de la UE: tasas de terminal y de agente de aduanas, IVA a la importación, travesías y distancias por carretera a España.",
         "sortedFrom": "Ordenados por distancia por carretera a: {{country}}"
       }
@@ -1167,7 +1167,7 @@
       },
       "USA": {
         "h1": "Importar un coche de Estados Unidos a España",
-        "metaTitle": "Importar un coche de EE. UU. a España – costes, aranceles, IVA | CarImport.eu",
+        "metaTitle": "Importar un coche de EE. UU. a España – costes, aranceles, IVA | Carglo",
         "metaDescription": "Cómo importar un coche de EE. UU. a España: subastas Copart e IAAI, plazos de envío, 10 % de arancel, IVA, documentos y matriculación. Calcula el coste en un minuto.",
         "lead": "Estados Unidos es la mayor fuente de coches importados: millones de vehículos al año en Copart e IAAI, a menudo a precios muy inferiores a los del mercado europeo. Así es todo el proceso y esto es lo que cuesta de verdad.",
         "why": "Enorme oferta, precios bajos de coches siniestrados (salvage), motores potentes y versiones bien equipadas poco habituales en Europa. La pega: hay que adaptar la iluminación estadounidense y a veces el velocímetro, y reparar un coche siniestrado puede salir caro.",
@@ -1185,7 +1185,7 @@
       },
       "CANADA": {
         "h1": "Importar un coche de Canadá a España",
-        "metaTitle": "Importar un coche de Canadá a España – costes, aranceles, IVA | CarImport.eu",
+        "metaTitle": "Importar un coche de Canadá a España – costes, aranceles, IVA | Carglo",
         "metaDescription": "Importa un coche de Canadá a España: Copart e IAAI Canadá, envío desde Halifax y Montreal, 10 % de arancel, IVA, documentos y matriculación. Calculadora del coste total.",
         "lead": "Los coches canadienses son parecidos a los estadounidenses, pero suelen estar mejor preparados para el invierno, llevan velocímetro métrico y tienen precios más bajos en dólares canadienses. El envío desde Halifax y Montreal a Europa es de los más cortos del Atlántico.",
         "why": "Cuadros de instrumentos métricos, paquetes de invierno, calefactores de bloque y buena protección anticorrosión; los precios en CAD suelen ser más bajos que en EE. UU. para el mismo modelo.",
@@ -1203,7 +1203,7 @@
       },
       "JAPAN": {
         "h1": "Importar un coche de Japón a España",
-        "metaTitle": "Importar un coche de Japón a España – JDM, aranceles, IVA | CarImport.eu",
+        "metaTitle": "Importar un coche de Japón a España – JDM, aranceles, IVA | Carglo",
         "metaDescription": "Importa un coche JDM de Japón a España: subastas USS, hojas de subasta, envío desde Yokohama, aranceles, IVA, volante a la derecha y matriculación. Calculadora completa.",
         "lead": "Japón es la cuna de los coches JDM: pocos kilómetros, un estado excelente y modelos que nunca se vendieron en Europa. Las hojas de subasta describen cada coche con detalle, pero llevan el volante a la derecha y el viaje es largo.",
         "why": "Muy buen estado gracias a las estrictas inspecciones (shaken), una valoración honesta en las subastas y deportivos y kei cars únicos. Los precios en yenes son atractivos.",
@@ -1221,7 +1221,7 @@
       },
       "UAE": {
         "h1": "Importar un coche de Dubái (EAU) a España",
-        "metaTitle": "Importar un coche de Dubái (EAU) a España – costes, aranceles | CarImport.eu",
+        "metaTitle": "Importar un coche de Dubái (EAU) a España – costes, aranceles | Carglo",
         "metaDescription": "Importa un coche de Dubái y los EAU a España: Emirates Auction y concesionarios, especificación GCC, envío desde Jebel Ali, aranceles, IVA y matriculación.",
         "lead": "Dubái es un mercado de coches premium y deportivos con pocos kilómetros, a menudo casi sin uso. Los coches con especificación GCC están preparados para el calor y se venden a precios atractivos.",
         "why": "Modelos de lujo y deportivos, poco kilometraje y clima seco (sin óxido). Los precios en dírhams están vinculados al dólar estadounidense.",
@@ -1239,7 +1239,7 @@
       },
       "UK": {
         "h1": "Importar un coche del Reino Unido a España",
-        "metaTitle": "Importar un coche del Reino Unido tras el Brexit – aranceles, IVA | CarImport.eu",
+        "metaTitle": "Importar un coche del Reino Unido tras el Brexit – aranceles, IVA | Carglo",
         "metaDescription": "Importa un coche del Reino Unido a España tras el Brexit: aranceles y origen preferencial, IVA, volante a la derecha, envío corto y matriculación. Calculadora completa.",
         "lead": "Desde el Brexit, un coche del Reino Unido es una importación de fuera de la UE: se aplican declaración aduanera, aranceles e IVA a la importación. El trayecto es corto y los coches fabricados en el Reino Unido o en la UE pueden acogerse a un arancel del 0 %.",
         "why": "Un gran mercado de coches usados, buenos historiales de mantenimiento y envío rápido en RoRo o ferri. Hay que tener en cuenta el volante a la derecha.",
@@ -1258,7 +1258,7 @@
     },
     "country": {
       "h1": "{{country}}: importar un coche de fuera de la UE",
-      "metaTitle": "{{country}} – importar un coche: IVA {{vat}} %, matriculación | CarImport.eu",
+      "metaTitle": "{{country}} – importar un coche: IVA {{vat}} %, matriculación | Carglo",
       "metaDescription": "Importar un coche desde EE. UU., Canadá, Japón, EAU o Reino Unido a {{country}}: IVA a la importación {{vat}} %, matriculación, inspección, puertos y coste total.",
       "lead": "Todo lo importante para matricular un coche importado en {{country}}: impuestos, organismos, inspección y los puertos más baratos.",
       "facts": {
@@ -1290,7 +1290,7 @@
     },
     "port": {
       "h1": "Puerto de {{port}} ({{country}}): despacho de aduanas de coches importados",
-      "metaTitle": "{{port}} – importar coches, aduana, IVA {{vat}} % | CarImport.eu",
+      "metaTitle": "{{port}} – importar coches, aduana, IVA {{vat}} % | Carglo",
       "metaDescription": "Despachar un coche importado en {{port}} ({{country}}): tasas de terminal y agente, IVA a la importación {{vat}} %, travesías desde EE. UU., Japón y EAU, distancias.",
       "lead": "{{port}} es un puerto de despacho en {{country}}. Aquí tienes sus tasas, tiempos de travesía y distancias por carretera, y si te conviene despachar aquí tu coche.",
       "facts": {
@@ -1329,7 +1329,7 @@
   "blog": {
     "title": "Blog de importación de coches",
     "lead": "Artículos prácticos sobre cómo importar coches de EE. UU., Canadá, Japón, los Emiratos y el Reino Unido: costes reales, subastas, aduana, matriculación y errores que conviene evitar.",
-    "metaTitle": "Blog de importación de coches – costes, subastas, aduana | CarImport.eu",
+    "metaTitle": "Blog de importación de coches – costes, subastas, aduana | Carglo",
     "metaDescription": "Guías y artículos sobre cómo importar un coche a la UE: cuánto cuesta de verdad, cómo comprar en Copart e IAAI, aranceles, IVA y matriculación.",
     "all": "Todos",
     "minutes": "{{n}} min de lectura",

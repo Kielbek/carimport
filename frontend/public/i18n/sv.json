@@ -177,7 +177,7 @@
     "name": "För- och efternamn",
     "phone": "Telefon (valfritt)",
     "submit": "Skicka förfrågan",
-    "subtitle": "CarImport.eu importerar inga bilar. Om du vill skickar vi din kalkyl vidare till ett kontrollerat importföretag som tar fram ett erbjudande. Helt utan förpliktelser.",
+    "subtitle": "Carglo importerar inga bilar. Om du vill skickar vi din kalkyl vidare till ett kontrollerat importföretag som tar fram ett erbjudande. Helt utan förpliktelser.",
     "thanks": "Tack!",
     "thanksHint": "Importföretaget hör av sig till dig inom 1 arbetsdag.",
     "title": "Förfrågan till ett importföretag (valfritt)"
@@ -555,7 +555,7 @@
     },
     "strip": {
       "brand": {
-        "title": "CarImport.eu —",
+        "title": "Carglo —",
         "text": "oberoende importkalkylator"
       },
       "instant": {
@@ -584,7 +584,7 @@
       "days": "dagar"
     },
     "numbers": {
-      "eyebrow": "CarImport.eu i siffror",
+      "eyebrow": "Carglo i siffror",
       "title": "Siffrorna bakom varje kalkyl",
       "n1": {
         "value": "5",
@@ -769,7 +769,7 @@
       "a": "Nej. Det är en uppskattning baserad på aktuella satser och prislistor. De slutliga beloppen fastställs av tullen och skattemyndigheten, som till exempel kan granska tullvärdet. Rapporten listar alla antaganden, så det är lätt att jämföra den med det officiella beslutet."
     },
     "q9": {
-      "q": "Importerar CarImport.eu bilar?",
+      "q": "Importerar Carglo bilar?",
       "a": "Nej. Vi är bara en kalkylator – vi köper, fraktar eller förtullar inga bilar och tar ingen provision från auktioner eller transportörer. Det håller uppskattningen oberoende. Om du vill kan du skicka kalkylen vidare till ett kontrollerat importföretag, men det är alltid ditt val."
     }
   },
@@ -781,23 +781,23 @@
   },
   "seo": {
     "home": {
-      "title": "Kalkylator för bilimport – USA, Japan, Dubai till EU | CarImport.eu",
+      "title": "Kalkylator för bilimport – USA, Japan, Dubai till EU | Carglo",
       "description": "Oberoende kalkylator för att importera bil från USA, Kanada, Japan, Förenade Arabemiraten och Storbritannien: auktion, frakt, tull, punktskatt, moms, registrering och risker. Uppskattning direkt, utan registrering."
     },
     "calculator": {
-      "title": "Kalkylator för tull, punktskatt och moms på importbilar | CarImport.eu",
+      "title": "Kalkylator för tull, punktskatt och moms på importbilar | Carglo",
       "description": "Välj land, auktion, hamn och fordon — kalkylatorn visar direkt kostnadsintervallet och uppdelningen: pris, frakt, tull, punktskatt, moms och registrering."
     },
     "privacy": {
-      "title": "Integritetspolicy | CarImport.eu",
-      "description": "Hur CarImport.eu behandlar personuppgifter: betalningar, rapporter, förfrågningar till partner och cookies."
+      "title": "Integritetspolicy | Carglo",
+      "description": "Hur Carglo behandlar personuppgifter: betalningar, rapporter, förfrågningar till partner och cookies."
     },
     "about": {
-      "title": "Om oss – en oberoende kalkylator för bilimport | CarImport.eu",
-      "description": "Vilka vi är, var våra data kommer ifrån och hur vi tjänar pengar. CarImport.eu varken säljer eller importerar bilar – den räknar ut hela importkostnaden ärligt och oberoende."
+      "title": "Om oss – en oberoende kalkylator för bilimport | Carglo",
+      "description": "Vilka vi är, var våra data kommer ifrån och hur vi tjänar pengar. Carglo varken säljer eller importerar bilar – den räknar ut hela importkostnaden ärligt och oberoende."
     },
     "terms": {
-      "title": "Villkor | CarImport.eu",
+      "title": "Villkor | Carglo",
       "description": "Villkor för kalkylatorn för importkostnader för bilar och PDF-rapporten: säljare, betalning, leverans, ångerrätt och reklamationer."
     }
   },
@@ -806,7 +806,7 @@
     "title": "Integritetspolicy",
     "s1": {
       "title": "Personuppgiftsansvarig",
-      "text": "Personuppgiftsansvarig är operatören av CarImport.eu. I dataskyddsfrågor når du oss på {{email}}."
+      "text": "Personuppgiftsansvarig är operatören av Carglo. I dataskyddsfrågor når du oss på {{email}}."
     },
     "s2": {
       "title": "Vilka uppgifter vi behandlar",
@@ -992,7 +992,7 @@
     "eyebrow": "Om oss",
     "title1": "Vi räknar på bilimport.",
     "title2": "Vi säljer inga bilar.",
-    "lead": "CarImport.eu är en oberoende kalkylator för kostnaden att ta hem en bil från länder utanför Europeiska unionen. Vi byggde den så att alla – inte bara en handlare med tio års erfarenhet – vet före köpet vad de verkligen kommer att betala.",
+    "lead": "Carglo är en oberoende kalkylator för kostnaden att ta hem en bil från länder utanför Europeiska unionen. Vi byggde den så att alla – inte bara en handlare med tio års erfarenhet – vet före köpet vad de verkligen kommer att betala.",
     "story": {
       "eyebrow": "Hur det började",
       "title": "Ur frustration över dolda kostnader",
@@ -1091,20 +1091,20 @@
       "origins": {
         "title": "Guider för bilimport: USA, Kanada, Japan, Förenade Arabemiraten och Storbritannien",
         "lead": "Steg-för-steg-guider för varje land där du kan köpa bil: auktioner, dokument, transporttid, tull, moms och registrering i Sverige – med de verkliga kostnaderna i kalkylatorn.",
-        "metaTitle": "Guider för bilimport – USA, Kanada, Japan, Arabemiraten, UK | CarImport.eu",
+        "metaTitle": "Guider för bilimport – USA, Kanada, Japan, Arabemiraten, UK | Carglo",
         "metaDescription": "Så importerar du en bil från USA, Kanada, Japan, Förenade Arabemiraten eller Storbritannien till Sverige: auktioner, dokument, frakt, tull, moms och registrering."
       },
       "countries": {
         "title": "Bilimport till varje EU-land",
         "lead": "Momssats, registreringsskatt, registreringsmyndighet, besiktning och närmaste förtullningshamnar för alla 27 EU-länder.",
-        "metaTitle": "Bilimport till EU-länder – moms, registrering, hamnar | CarImport.eu",
+        "metaTitle": "Bilimport till EU-länder – moms, registrering, hamnar | Carglo",
         "metaDescription": "Importmoms, registreringsskatter, myndigheter, besiktning och närmaste hamnar för alla 27 EU-länder – jämför och beräkna hela kostnaden för en importbil.",
         "yours": "Ditt land"
       },
       "ports": {
         "title": "Förtullningshamnar i EU för importbilar",
         "lead": "Alla {{count}} hamnar i EU där bilar från länder utanför EU förtullas: avgifter, moms, sjötransporttider från USA, Kanada, Japan, Förenade Arabemiraten och Storbritannien samt vägavstånd.",
-        "metaTitle": "{{count}} EU-hamnar för bilimport – avgifter, moms, sjötid | CarImport.eu",
+        "metaTitle": "{{count}} EU-hamnar för bilimport – avgifter, moms, sjötid | Carglo",
         "metaDescription": "Jämför alla {{count}} förtullningshamnar för bilar i EU: terminal- och tullombudsavgifter, importmoms, sjötransporttider och vägavstånd till Sverige.",
         "sortedFrom": "Sorterat efter vägavstånd till: {{country}}"
       }
@@ -1167,7 +1167,7 @@
       },
       "USA": {
         "h1": "Importera bil från USA till Sverige",
-        "metaTitle": "Importera bil från USA till Sverige – kostnad, tull, moms | CarImport.eu",
+        "metaTitle": "Importera bil från USA till Sverige – kostnad, tull, moms | Carglo",
         "metaDescription": "Så importerar du en bil från USA: Copart- och IAAI-auktioner, frakttid, 10 % tull, importmoms, dokument och registrering. Beräkna hela kostnaden på en minut.",
         "lead": "USA är den största källan till importbilar: miljontals fordon på Copart och IAAI varje år, ofta till priser långt under den europeiska marknaden. Så här ser hela processen ut och vad den verkligen kostar.",
         "why": "Enormt utbud, låga priser på skadade (salvage) bilar, starka motorer och välutrustade versioner som är ovanliga i Europa. Haken: amerikansk belysning och ibland hastighetsmätaren måste byggas om, och reparationer av salvage-bilar kan bli dyra.",
@@ -1185,7 +1185,7 @@
       },
       "CANADA": {
         "h1": "Importera bil från Kanada till Sverige",
-        "metaTitle": "Importera bil från Kanada till Sverige – kostnad, tull, moms | CarImport.eu",
+        "metaTitle": "Importera bil från Kanada till Sverige – kostnad, tull, moms | Carglo",
         "metaDescription": "Importera bil från Kanada: Copart och IAAI Canada, frakt från Halifax och Montreal, 10 % tull, moms, dokument och registrering. Kalkylator för hela kostnaden.",
         "lead": "Kanadensiska bilar liknar amerikanska men är ofta bättre rustade för vinter, med metriska hastighetsmätare och lägre priser i kanadensiska dollar. Sjötransporten från Halifax och Montreal till Europa är en av de kortaste över Atlanten.",
         "why": "Metriska instrument, vinterpaket, motorvärmare och bra rostskydd; priserna i CAD är ofta lägre än i USA för samma modell.",
@@ -1203,7 +1203,7 @@
       },
       "JAPAN": {
         "h1": "Importera bil från Japan till Sverige",
-        "metaTitle": "Importera bil från Japan till Sverige – JDM, tull, moms | CarImport.eu",
+        "metaTitle": "Importera bil från Japan till Sverige – JDM, tull, moms | Carglo",
         "metaDescription": "Importera en JDM-bil från Japan: USS-auktioner, auktionsprotokoll, frakt från Yokohama, tull, moms, högerstyrning och registrering. Kalkylator för hela kostnaden.",
         "lead": "Japan är JDM-bilarnas hemland: låga mätarställningar, utmärkt skick och modeller som aldrig sålts i Europa. Auktionsprotokollen beskriver varje bil i detalj – men bilarna är högerstyrda och resan är lång.",
         "why": "Mycket gott skick tack vare strikta besiktningar (shaken), ärlig auktionsgradering och unika sportbilar och kei-bilar. Priserna i yen är attraktiva.",
@@ -1221,7 +1221,7 @@
       },
       "UAE": {
         "h1": "Importera bil från Dubai (Förenade Arabemiraten) till Sverige",
-        "metaTitle": "Importera bil från Dubai till Sverige – kostnad, tull, moms | CarImport.eu",
+        "metaTitle": "Importera bil från Dubai till Sverige – kostnad, tull, moms | Carglo",
         "metaDescription": "Importera bil från Dubai och Förenade Arabemiraten: Emirates Auction och handlare, GCC-spec, frakt från Jebel Ali, tull, moms och registrering. Kostnadskalkylator.",
         "lead": "Dubai är en marknad för premium- och sportbilar med låga mätarställningar, ofta knappt använda. Bilar i GCC-utförande är byggda för hetta och säljs till attraktiva priser.",
         "why": "Lyx- och sportmodeller, låga mätarställningar och torrt klimat (ingen rost). Priserna i dirham är knutna till US-dollarn.",
@@ -1239,7 +1239,7 @@
       },
       "UK": {
         "h1": "Importera bil från Storbritannien till Sverige",
-        "metaTitle": "Importera bil från Storbritannien efter Brexit – tull, moms | CarImport.eu",
+        "metaTitle": "Importera bil från Storbritannien efter Brexit – tull, moms | Carglo",
         "metaDescription": "Importera bil från Storbritannien efter Brexit: tull och förmånsberättigande ursprung, moms, högerstyrning, kort frakt och registrering. Kostnadskalkylator.",
         "lead": "Sedan Brexit är en bil från Storbritannien en import från ett land utanför EU: tulldeklaration, tull och importmoms tillkommer. Resan är kort, och bilar tillverkade i Storbritannien eller EU kan kvalificera för 0 % tull.",
         "why": "En stor begagnatmarknad, bra servicehistorik och kort frakt med RoRo eller färja. Högerstyrningen måste tas med i beräkningen.",
@@ -1258,7 +1258,7 @@
     },
     "country": {
       "h1": "{{country}}: import av bil från länder utanför EU",
-      "metaTitle": "{{country}} – bilimport: moms {{vat}} %, registrering, hamnar | CarImport.eu",
+      "metaTitle": "{{country}} – bilimport: moms {{vat}} %, registrering, hamnar | Carglo",
       "metaDescription": "Importera bil till {{country}} från USA, Kanada, Japan, Arabemiraten eller Storbritannien: importmoms {{vat}} %, registrering, besiktning, hamnar och hela kostnaden.",
       "lead": "Allt som är viktigt när du registrerar en importbil i {{country}}: skatt, myndigheter, besiktning och de billigaste hamnarna.",
       "facts": {
@@ -1290,7 +1290,7 @@
     },
     "port": {
       "h1": "Hamnen {{port}} ({{country}}): förtullning av importbilar",
-      "metaTitle": "{{port}} – bilimport, förtullning, moms {{vat}} % | CarImport.eu",
+      "metaTitle": "{{port}} – bilimport, förtullning, moms {{vat}} % | Carglo",
       "metaDescription": "Förtulla en importbil i {{port}} ({{country}}): terminal- och ombudsavgifter, importmoms {{vat}} %, sjötider från USA, Japan och Arabemiraten samt avstånd.",
       "lead": "{{port}} är en förtullningshamn i {{country}}. Här är avgifterna, sjötransporttiderna och vägavstånden – och om det lönar sig att förtulla din bil här.",
       "facts": {
@@ -1329,7 +1329,7 @@
   "blog": {
     "title": "Blogg om bilimport",
     "lead": "Praktiska artiklar om att importera bil från USA, Kanada, Japan, Förenade Arabemiraten och Storbritannien: verkliga kostnader, auktioner, tull, registrering och misstagen du bör undvika.",
-    "metaTitle": "Blogg om bilimport – kostnader, auktioner, tull, registrering | CarImport.eu",
+    "metaTitle": "Blogg om bilimport – kostnader, auktioner, tull, registrering | Carglo",
     "metaDescription": "Guider och artiklar om att importera bil till Sverige och EU: vad det verkligen kostar, hur du köper på Copart och IAAI, tull, moms och registrering.",
     "all": "Alla",
     "minutes": "{{n}} min läsning",
