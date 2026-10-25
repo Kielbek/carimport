@@ -42,7 +42,7 @@ import { DEPARTURE_PORTS, ORIGINS, PICKUP_ZONES } from '../calculator.options';
           <label class="label" for="zone">{{ 'wizard.zone' | translate }}</label>
           <select id="zone" class="input" [value]="s().pickupZone ?? '*'" (change)="store.patch({ pickupZone: orNull($event, '*') })">
             <option value="*">{{ 'wizard.zoneOther' | translate }}</option>
-            @for (z of zones(); track z) { <option [value]="z" [selected]="z === s().pickupZone">{{ z }}</option> }
+            @for (z of zones(); track z.code) { <option [value]="z.code" [selected]="z.code === s().pickupZone">{{ z.name }} ({{ z.code }})</option> }
           </select>
         </div>
       }
@@ -61,7 +61,7 @@ export class StepOrigin {
   protected readonly store = inject(CalculatorStore);
   protected readonly s = this.store.state;
   protected readonly origins = ORIGINS;
-  protected readonly zones = computed(() => PICKUP_ZONES[this.s().originCountry] ?? []);
+  protected readonly zones = computed(() => PICKUP_ZONES[this.s().originCountry]);
   protected readonly departurePorts = computed(() => this.store.options()?.departurePorts ?? []);
 
   protected portName(code: string): string {
