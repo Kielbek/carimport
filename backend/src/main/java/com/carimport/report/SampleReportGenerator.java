@@ -94,7 +94,7 @@ public class SampleReportGenerator implements CommandLineRunner {
             QuoteRange range = engine.calculateRange(request, fx);
             Quote quote = new Quote(request, range, range.low().total().amount(),
                     range.high().total().amount(), lang, now, now.plusSeconds(3600));
-            ReportOrder order = new ReportOrder(quote.getId(), "sample@carimport.eu", e.getValue()[1], lang, 0,
+            ReportOrder order = new ReportOrder(quote.getId(), "sample@cargloapp.com", e.getValue()[1], lang, 0,
                     request.displayCurrency(), "x".repeat(64), now);
             order.markPaid("sample", now);
             Path file = dir.resolve("report-" + lang + ".pdf");

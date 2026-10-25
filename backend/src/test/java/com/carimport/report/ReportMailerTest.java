@@ -98,10 +98,10 @@ class ReportMailerTest {
         ObjectProvider<JavaMailSender> provider = mock(ObjectProvider.class);
         when(provider.getIfAvailable()).thenReturn(smtp);
         when(provider.getObject()).thenReturn(smtp);
-        AppProperties props = new AppProperties("https://carimport.eu", List.of("pl"), null, null, List.of(), null, null,
-                new AppProperties.Mail("Carglo <raport@carimport.eu>", "kontakt@carimport.eu"),
+        AppProperties props = new AppProperties("https://cargloapp.com", List.of("pl"), null, null, List.of(), null, null,
+                new AppProperties.Mail("Carglo <cargloapp@gmail.com>", "cargloapp@gmail.com"),
                 new AppProperties.Company("Carglo Sp. z o.o.", "ul. Testowa 1, 00-001 Warszawa", "NIP 1234567890",
-                        "kontakt@carimport.eu"));
+                        "cargloapp@gmail.com"));
         return new ReportMailer(orders, quotes, storage, provider, engine, messages, props,
                 Clock.fixed(NOW, ZoneOffset.UTC), host);
     }
@@ -122,7 +122,7 @@ class ReportMailerTest {
         var raw = new java.io.ByteArrayOutputStream();
         m.writeTo(raw);
         assertThat(raw.toString()).contains("Content-ID: <logo>");   // the header logo travels inside the message
-        Matcher link = Pattern.compile("https://carimport\\.eu/pl/report/" + order.getId() + "#token=([A-Za-z0-9_-]{43})")
+        Matcher link = Pattern.compile("https://cargloapp\\.com/pl/report/" + order.getId() + "#token=([A-Za-z0-9_-]{43})")
                 .matcher(body);
         assertThat(link.find()).isTrue();
         assertThat(order.acceptsToken(link.group(1))).isTrue();
