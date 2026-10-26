@@ -200,7 +200,8 @@
     "subtitle": "Točni iznosi, porezne osnovice i stope, dokumenti – u PDF-u s vašim imenom.",
     "terms": "Prihvaćam opće uvjete i izričito zahtijevam isporuku izvješća prije isteka 14-dnevnog roka za jednostrani raskid ugovora. Potvrđujem da isporukom izvješća gubim pravo na jednostrani raskid ugovora.",
     "title": "Cjelovito izvješće o uvozu",
-    "termsLink": "Opći uvjeti"
+    "termsLink": "Opći uvjeti",
+    "guarantee": "Jamstvo točnosti: prijavite pogrešku u izračunu u roku od 14 dana (npr. zastarjelu stopu ili nedostajuću obveznu naknadu) i ispravit ćemo izvješće ili vratiti cijeli iznos."
   },
   "report": {
     "amount": "Iznos",
@@ -298,7 +299,8 @@
     "approx": "opr.",
     "span": "obično {{min}} – {{max}}",
     "estimateNote": "Prijevoz i dostava procjena su prema uobičajenim cijenama, zaokružena na 100. Točni iznosi po stavkama nalaze se u cjelovitom izvješću.",
-    "minimalNote": "Gruba procjena za ovu rutu. Koliko točno košta svaka stavka – prijevoz, carina, PDV, registracija i rizici – prikazuje izvješće."
+    "minimalNote": "Gruba procjena za ovu rutu. Koliko točno košta svaka stavka – prijevoz, carina, PDV, registracija i rizici – prikazuje izvješće.",
+    "guarantee": "Jamstvo točnosti: pogreška u izvješću = ispravak ili povrat novca"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Vlastiti kontejner",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Prigovori",
-      "text": "Prodavatelj odgovara za usklađenost izvješća s ugovorom. Ako izvješće nije isporučeno, ne može se pročitati ili ne odgovara plaćenom izračunu, pišite na {{email}} i navedite broj narudžbe ili adresu e-pošte korištenu pri kupnji.\nProdavatelj rješava prigovor u roku od 14 dana. Ako je opravdan, Prodavatelj isporučuje ispravljeno izvješće ili, ako to nije moguće, vraća cijenu.\nPotrošači se mogu koristiti izvansudskim rješavanjem sporova, primjerice putem tijela za alternativno rješavanje potrošačkih sporova ili tijela za zaštitu potrošača u svojoj zemlji."
+      "text": "Prodavatelj odgovara za usklađenost izvješća s ugovorom. Ako izvješće nije isporučeno, ne može se pročitati ili ne odgovara plaćenom izračunu, pišite na {{email}} i navedite broj narudžbe ili adresu e-pošte korištenu pri kupnji.\nProdavatelj rješava prigovor u roku od 14 dana. Ako je opravdan, Prodavatelj isporučuje ispravljeno izvješće ili, ako to nije moguće, vraća cijenu.\nPotrošači se mogu koristiti izvansudskim rješavanjem sporova, primjerice putem tijela za alternativno rješavanje potrošačkih sporova ili tijela za zaštitu potrošača u svojoj zemlji.\nJamstvo točnosti: ako kupac u roku od 14 dana od kupnje prijavi pogrešku u izračunima izvješća – npr. zastarjelu stopu poreza ili naknade ili nedostajuću obveznu stavku –, prodavatelj u roku od 14 dana dostavlja ispravljeno izvješće ili, na zahtjev kupca, vraća cijelu plaćenu cijenu. Jamstvo ne obuhvaća razlike nastale zbog podataka koje je unio kupac, promjena propisa, tečajeva ili cijena pružatelja usluga nakon dana izračuna ni procijenjenu prirodu troškova prijevoza."
     },
     "s8": {
       "title": "Odgovornost",

@@ -200,7 +200,8 @@
     "subtitle": "Exact amounts, tax bases and rates, documents – in a PDF with your name.",
     "terms": "I accept the terms and ask for the report to be delivered before the 14-day withdrawal period ends. I acknowledge that I lose the right of withdrawal once it is delivered.",
     "title": "Full import report",
-    "termsLink": "Terms"
+    "termsLink": "Terms",
+    "guarantee": "Accuracy guarantee: report a calculation error within 14 days (e.g. an outdated rate or a missing mandatory fee) and we fix the report or refund the full price."
   },
   "report": {
     "amount": "Amount",
@@ -298,7 +299,8 @@
     "approx": "approx.",
     "span": "usually {{min}} – {{max}}",
     "estimateNote": "Transport and delivery are estimates from typical rates, rounded to 100. The exact amounts, item by item, are in the full report.",
-    "minimalNote": "A rough estimate for this route. What each item costs exactly – transport, duty, VAT, registration and risks – is in the report."
+    "minimalNote": "A rough estimate for this route. What each item costs exactly – transport, duty, VAT, registration and risks – is in the report.",
+    "guarantee": "Accuracy guarantee: a mistake in the report = a fix or your money back"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exclusive container",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Complaints",
-      "text": "The Seller is liable for the report's conformity with the contract. If the report was not delivered, cannot be read or does not match the quote paid for, write to {{email}} with the order number or the e-mail address used for the purchase.\nThe Seller handles a complaint within 14 days. If it is justified, the Seller delivers a corrected report or, where that is not possible, refunds the price.\nConsumers may use out-of-court dispute resolution, for example a local consumer ombudsman or the consumer protection authority of their country."
+      "text": "The Seller is liable for the report's conformity with the contract. If the report was not delivered, cannot be read or does not match the quote paid for, write to {{email}} with the order number or the e-mail address used for the purchase.\nThe Seller handles a complaint within 14 days. If it is justified, the Seller delivers a corrected report or, where that is not possible, refunds the price.\nConsumers may use out-of-court dispute resolution, for example a local consumer ombudsman or the consumer protection authority of their country.\nAccuracy guarantee: if, within 14 days of purchase, the buyer reports an error in the report's calculations – e.g. an outdated tax or fee rate or a missing mandatory item – the Seller delivers a corrected report within 14 days or, at the buyer's request, refunds the full price paid. The guarantee does not cover differences caused by data entered by the buyer, changes of law, exchange rates or service prices after the quote date, or the estimated nature of transport costs."
     },
     "s8": {
       "title": "Liability",

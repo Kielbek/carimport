@@ -1,0 +1,10 @@
+[(#{mail.report.greeting(${name})})]
+
+[(#{mail.refund.text(${amount}, ${orderNo})})]
+[(#{mail.refund.timing})]
+[(${full} ? #{mail.refund.full} : #{mail.refund.partial})]
+
+[(#{mail.refund.questions})]
+
+--
+[(${company.name()})]

@@ -200,7 +200,8 @@
     "subtitle": "Exakte Beträge, Bemessungsgrundlagen, Dokumente – als PDF mit Ihrem Namen.",
     "terms": "Ich akzeptiere die AGB und verlange ausdrücklich, dass der Bericht vor Ablauf der 14-tägigen Widerrufsfrist geliefert wird. Mir ist bekannt, dass ich mit der Lieferung mein Widerrufsrecht verliere.",
     "title": "Vollständiger Importbericht",
-    "termsLink": "AGB"
+    "termsLink": "AGB",
+    "guarantee": "Richtigkeitsgarantie: Melden Sie innerhalb von 14 Tagen einen Rechenfehler (z. B. einen veralteten Satz oder eine fehlende Pflichtgebühr) – wir korrigieren den Bericht oder erstatten den vollen Preis."
   },
   "report": {
     "amount": "Betrag",
@@ -298,7 +299,8 @@
     "approx": "ca.",
     "span": "meist {{min}} – {{max}}",
     "estimateNote": "Transport und Zustellung sind Schätzungen aus üblichen Tarifen, auf 100 gerundet. Die genauen Beträge, Posten für Posten, stehen im vollständigen Bericht.",
-    "minimalNote": "Eine grobe Schätzung für diese Route. Was jeder Posten genau kostet – Transport, Zoll, Einfuhrumsatzsteuer, Zulassung und Risiken – steht im Bericht."
+    "minimalNote": "Eine grobe Schätzung für diese Route. Was jeder Posten genau kostet – Transport, Zoll, Einfuhrumsatzsteuer, Zulassung und Risiken – steht im Bericht.",
+    "guarantee": "Richtigkeitsgarantie: Fehler im Bericht = Korrektur oder Geld zurück"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exklusiver Container",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Reklamationen",
-      "text": "Der Verkäufer haftet für die Vertragsmäßigkeit des Berichts. Wurde der Bericht nicht geliefert, ist er nicht lesbar oder entspricht er nicht der bezahlten Kalkulation, schreiben Sie bitte an {{email}} unter Angabe der Bestellnummer oder der beim Kauf verwendeten E-Mail-Adresse.\nDer Verkäufer bearbeitet eine Reklamation innerhalb von 14 Tagen. Ist sie begründet, liefert der Verkäufer einen berichtigten Bericht oder erstattet, falls dies nicht möglich ist, den Preis.\nVerbraucher können außergerichtliche Streitbeilegungsverfahren nutzen, etwa eine Verbraucherschlichtungsstelle oder die Verbraucherschutzbehörde ihres Landes."
+      "text": "Der Verkäufer haftet für die Vertragsmäßigkeit des Berichts. Wurde der Bericht nicht geliefert, ist er nicht lesbar oder entspricht er nicht der bezahlten Kalkulation, schreiben Sie bitte an {{email}} unter Angabe der Bestellnummer oder der beim Kauf verwendeten E-Mail-Adresse.\nDer Verkäufer bearbeitet eine Reklamation innerhalb von 14 Tagen. Ist sie begründet, liefert der Verkäufer einen berichtigten Bericht oder erstattet, falls dies nicht möglich ist, den Preis.\nVerbraucher können außergerichtliche Streitbeilegungsverfahren nutzen, etwa eine Verbraucherschlichtungsstelle oder die Verbraucherschutzbehörde ihres Landes.\nRichtigkeitsgarantie: Meldet der Käufer innerhalb von 14 Tagen nach dem Kauf einen Fehler in den Berechnungen des Berichts – z. B. einen veralteten Steuer- oder Gebührensatz oder eine fehlende Pflichtposition –, liefert der Verkäufer innerhalb von 14 Tagen einen korrigierten Bericht oder erstattet auf Wunsch des Käufers den vollen gezahlten Preis. Nicht erfasst sind Abweichungen aufgrund vom Käufer eingegebener Daten, Änderungen von Vorschriften, Wechselkursen oder Dienstleisterpreisen nach dem Tag der Berechnung sowie der geschätzte Charakter der Transportkosten."
     },
     "s8": {
       "title": "Haftung",

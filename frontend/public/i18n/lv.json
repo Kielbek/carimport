@@ -200,7 +200,8 @@
     "subtitle": "Precīzas summas, nodokļu bāzes un likmes, dokumenti – PDF formātā ar jūsu vārdu.",
     "terms": "Es piekrītu noteikumiem un nepārprotami lūdzu piegādāt atskaiti pirms 14 dienu atteikuma termiņa beigām. Apzinos, ka pēc atskaites piegādes zaudēju atteikuma tiesības.",
     "title": "Pilna importa atskaite",
-    "termsLink": "Noteikumi"
+    "termsLink": "Noteikumi",
+    "guarantee": "Pareizības garantija: ziņojiet par aprēķina kļūdu 14 dienu laikā (piem., novecojusi likme vai trūkstoša obligātā maksa), un mēs izlabosim atskaiti vai atmaksāsim visu cenu."
   },
   "report": {
     "amount": "Summa",
@@ -298,7 +299,8 @@
     "approx": "ap.",
     "span": "parasti {{min}} – {{max}}",
     "estimateNote": "Transports un piegāde ir aplēse pēc tipiskiem tarifiem, noapaļota līdz 100. Precīzas summas pa pozīcijām ir pilnajā atskaitē.",
-    "minimalNote": "Aptuvena aplēse šim maršrutam. Cik precīzi maksā katra pozīcija – transports, muita, PVN, reģistrācija un riski – rāda atskaite."
+    "minimalNote": "Aptuvena aplēse šim maršrutam. Cik precīzi maksā katra pozīcija – transports, muita, PVN, reģistrācija un riski – rāda atskaite.",
+    "guarantee": "Pareizības garantija: kļūda atskaitē = labojums vai naudas atmaksa"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Atsevišķs konteiners",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Pretenzijas",
-      "text": "Pārdevējs atbild par atskaites atbilstību līgumam. Ja atskaite nav piegādāta, to nevar izlasīt vai tā neatbilst apmaksātajam aprēķinam, rakstiet uz {{email}}, norādot pasūtījuma numuru vai pirkumam izmantoto e-pasta adresi.\nPārdevējs izskata pretenziju 14 dienu laikā. Ja tā ir pamatota, Pārdevējs piegādā labotu atskaiti vai, ja tas nav iespējams, atmaksā cenu.\nPatērētāji var izmantot ārpustiesas strīdu risināšanas iespējas, piemēram, vērsties savas valsts patērētāju strīdu risināšanas institūcijā vai patērētāju tiesību aizsardzības iestādē."
+      "text": "Pārdevējs atbild par atskaites atbilstību līgumam. Ja atskaite nav piegādāta, to nevar izlasīt vai tā neatbilst apmaksātajam aprēķinam, rakstiet uz {{email}}, norādot pasūtījuma numuru vai pirkumam izmantoto e-pasta adresi.\nPārdevējs izskata pretenziju 14 dienu laikā. Ja tā ir pamatota, Pārdevējs piegādā labotu atskaiti vai, ja tas nav iespējams, atmaksā cenu.\nPatērētāji var izmantot ārpustiesas strīdu risināšanas iespējas, piemēram, vērsties savas valsts patērētāju strīdu risināšanas institūcijā vai patērētāju tiesību aizsardzības iestādē.\nPareizības garantija: ja pircējs 14 dienu laikā pēc pirkuma ziņo par kļūdu atskaites aprēķinos – piem., novecojušu nodokļa vai maksas likmi vai trūkstošu obligātu pozīciju –, Pārdevējs 14 dienu laikā nodrošina labotu atskaiti vai pēc pircēja pieprasījuma atmaksā visu samaksāto cenu. Garantija neattiecas uz atšķirībām, kas radušās pircēja ievadīto datu, normatīvo aktu, valūtas kursu vai pakalpojumu sniedzēju cenu izmaiņu dēļ pēc aprēķina dienas, kā arī uz transporta izmaksu aptuveno raksturu."
     },
     "s8": {
       "title": "Atbildība",

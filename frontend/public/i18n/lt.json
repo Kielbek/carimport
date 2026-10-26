@@ -200,7 +200,8 @@
     "subtitle": "Tikslios sumos, mokesčių bazės ir tarifai, dokumentai – PDF formatu su jūsų vardu.",
     "terms": "Sutinku su taisyklėmis ir aiškiai prašau pateikti ataskaitą nepasibaigus 14 dienų sutarties atsisakymo laikotarpiui. Suprantu, kad pateikus ataskaitą netenku teisės atsisakyti sutarties.",
     "title": "Išsami importo ataskaita",
-    "termsLink": "Taisyklės"
+    "termsLink": "Taisyklės",
+    "guarantee": "Tikslumo garantija: praneškite apie skaičiavimo klaidą per 14 dienų (pvz., pasenusį tarifą ar trūkstamą privalomą mokestį) – pataisysime ataskaitą arba grąžinsime visą kainą."
   },
   "report": {
     "amount": "Suma",
@@ -298,7 +299,8 @@
     "approx": "apie",
     "span": "paprastai {{min}} – {{max}}",
     "estimateNote": "Transportas ir pristatymas – įvertis pagal įprastus įkainius, suapvalintas iki 100. Tikslios sumos pagal kiekvieną poziciją – pilnoje ataskaitoje.",
-    "minimalNote": "Apytikslis šio maršruto įvertis. Kiek tiksliai kainuoja kiekviena pozicija – transportas, muitas, PVM, registracija ir rizikos – parodo ataskaita."
+    "minimalNote": "Apytikslis šio maršruto įvertis. Kiek tiksliai kainuoja kiekviena pozicija – transportas, muitas, PVM, registracija ir rizikos – parodo ataskaita.",
+    "guarantee": "Tikslumo garantija: klaida ataskaitoje = pataisymas arba pinigų grąžinimas"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Atskiras konteineris",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Pretenzijos",
-      "text": "Pardavėjas atsako už ataskaitos atitiktį sutarčiai. Jei ataskaita nebuvo pateikta, jos neįmanoma perskaityti arba ji neatitinka apmokėto skaičiavimo, rašykite adresu {{email}} ir nurodykite užsakymo numerį arba pirkimui naudotą el. pašto adresą.\nPardavėjas pretenziją išnagrinėja per 14 dienų. Jei ji pagrįsta, Pardavėjas pateikia pataisytą ataskaitą arba, jei tai neįmanoma, grąžina kainą.\nVartotojai gali pasinaudoti neteisminio ginčų sprendimo būdais, pavyzdžiui, kreiptis į savo šalies vartotojų ginčų sprendimo instituciją ar vartotojų teisių apsaugos instituciją."
+      "text": "Pardavėjas atsako už ataskaitos atitiktį sutarčiai. Jei ataskaita nebuvo pateikta, jos neįmanoma perskaityti arba ji neatitinka apmokėto skaičiavimo, rašykite adresu {{email}} ir nurodykite užsakymo numerį arba pirkimui naudotą el. pašto adresą.\nPardavėjas pretenziją išnagrinėja per 14 dienų. Jei ji pagrįsta, Pardavėjas pateikia pataisytą ataskaitą arba, jei tai neįmanoma, grąžina kainą.\nVartotojai gali pasinaudoti neteisminio ginčų sprendimo būdais, pavyzdžiui, kreiptis į savo šalies vartotojų ginčų sprendimo instituciją ar vartotojų teisių apsaugos instituciją.\nTikslumo garantija: jei per 14 dienų nuo pirkimo pirkėjas praneša apie klaidą ataskaitos skaičiavimuose – pvz., pasenusį mokesčio ar rinkliavos tarifą arba trūkstamą privalomą eilutę –, Pardavėjas per 14 dienų pateikia pataisytą ataskaitą arba pirkėjo prašymu grąžina visą sumokėtą kainą. Garantija netaikoma skirtumams, atsiradusiems dėl pirkėjo įvestų duomenų, teisės aktų, valiutų kursų ar paslaugų teikėjų kainų pokyčių po skaičiavimo dienos, taip pat transporto išlaidų apytikriam pobūdžiui."
     },
     "s8": {
       "title": "Atsakomybė",

@@ -20,6 +20,10 @@ interface OrderRow {
   emailAttempts: number;
   generationAttempts: number;
   paymentIntent: string | null;
+  refundedMinor: number;
+  refundedAt: string | null;
+  refundReason: string | null;
+  refundableMinor: number;
 }
 interface OrderPage { orders: OrderRow[]; total: number; page: number; pages: number }
 interface Stats {
@@ -106,13 +110,15 @@ const AUTH_KEY = 'carglo.admin';
                         <td class="py-2.5 font-mono font-semibold">{{ o.number }}</td>
                         <td>{{ date(o.paidAt ?? o.createdAt) }}</td>
                         <td>{{ o.name }}<br><span class="text-muted">{{ o.email }} · {{ o.locale }}</span></td>
-                        <td class="tabular-nums">{{ money(o.amountMinor, o.currency) }}</td>
+                        <td class="tabular-nums">{{ money(o.amountMinor, o.currency) }}
+                          @if (o.refundedMinor) { <span class="block text-xs text-danger" [title]="o.refundReason ?? ''">zwrócono {{ money(o.refundedMinor, o.currency) }}</span> }</td>
                         <td><span class="badge" [class.!bg-danger-soft]="o.status === 'FAILED'">{{ statusPl[o.status] }}</span>
                           @if (o.generationAttempts > 1) { <span class="block text-xs text-muted">prób PDF: {{ o.generationAttempts }}</span> }</td>
                         <td>@if (o.emailSentAt) { {{ date(o.emailSentAt) }} } @else if (o.emailAttempts) { <span class="text-danger">nieudane ({{ o.emailAttempts }})</span> } @else { – }</td>
                         <td class="space-x-2 whitespace-nowrap text-right">
                           @if (o.status === 'READY') { <button type="button" class="btn btn-outline !px-3 !py-1.5 text-xs" [disabled]="busy()" (click)="act(o, 'resend')">Wyślij ponownie</button> }
                           @if (o.status === 'FAILED' || o.status === 'PAID') { <button type="button" class="btn btn-outline !px-3 !py-1.5 text-xs" [disabled]="busy()" (click)="act(o, 'regenerate')">Generuj PDF</button> }
+                          @if (o.refundableMinor > 0) { <button type="button" class="btn btn-outline !px-3 !py-1.5 text-xs" [disabled]="busy()" (click)="openRefund(o)">Zwrot</button> }
                           @if (o.paymentIntent) { <a class="text-xs font-semibold text-brand-text underline" target="_blank" rel="noopener" [href]="'https://dashboard.stripe.com/payments/' + o.paymentIntent">Stripe</a> }
                         </td>
                       </tr>
@@ -130,6 +136,34 @@ const AUTH_KEY = 'carglo.admin';
             }
           </section>
         </main>
+      }
+
+      @if (refundOf(); as o) {
+        <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4" role="dialog" aria-modal="true" aria-labelledby="rf-title">
+          <form class="card w-full max-w-md space-y-4 bg-panel p-6" (ngSubmit)="refund(o)">
+            <h2 id="rf-title" class="text-xl font-extrabold">Zwrot – zamówienie {{ o.number }}</h2>
+            <p class="text-sm text-muted">{{ o.name }} · {{ o.email }}<br>Zapłacono {{ money(o.amountMinor, o.currency) }}@if (o.refundedMinor) {, zwrócono już {{ money(o.refundedMinor, o.currency) }}}</p>
+            <div>
+              <label class="label" for="rf-amount">Kwota zwrotu ({{ o.currency }})</label>
+              <input id="rf-amount" class="input" type="number" name="amount" min="0.01" step="0.01" [max]="o.refundableMinor / 100" [(ngModel)]="refundAmount" required />
+              <p class="mt-1 text-xs text-muted">Cała kwota ({{ money(o.refundableMinor, o.currency) }}) blokuje dostęp do raportu. Mniejsza kwota (np. rekompensata) zostawia raport klientowi.</p>
+            </div>
+            <div>
+              <label class="label" for="rf-reason">Powód</label>
+              <select id="rf-reason" class="input" name="reason" [(ngModel)]="refundReason">
+                <option value="requested_by_customer">Prośba klienta / reklamacja</option>
+                <option value="duplicate">Podwójna płatność</option>
+                <option value="fraudulent">Oszustwo</option>
+              </select>
+            </div>
+            <div><label class="label" for="rf-note">Notatka (opcjonalnie)</label><input id="rf-note" class="input" name="note" maxlength="150" [(ngModel)]="refundNote" /></div>
+            <p class="text-xs text-muted">Pieniądze zwraca Stripe na kartę lub konto klienta (5–10 dni roboczych). Klient dostanie maila o zwrocie.</p>
+            <div class="flex justify-end gap-3">
+              <button type="button" class="btn btn-outline" (click)="refundOf.set(null)">Anuluj</button>
+              <button type="submit" class="btn btn-primary" [disabled]="busy() || !refundAmount || refundAmount * 100 > o.refundableMinor">Zwróć {{ refundAmount ? money(round(refundAmount * 100), o.currency) : '' }}</button>
+            </div>
+          </form>
+        </div>
       }
     </div>
   `,
@@ -150,6 +184,10 @@ export class AdminPage implements OnInit {
   protected readonly message = signal('');
   protected readonly stats = signal<Stats | null>(null);
   protected readonly page = signal<OrderPage | null>(null);
+  protected readonly refundOf = signal<OrderRow | null>(null);
+  protected refundAmount: number | null = null;
+  protected refundReason = 'requested_by_customer';
+  protected refundNote = '';
 
   constructor() {
     inject(Meta).updateTag({ name: 'robots', content: 'noindex,nofollow' });
@@ -240,6 +278,37 @@ export class AdminPage implements OnInit {
         this.failed(e);
       },
     });
+  }
+
+  protected openRefund(o: OrderRow): void {
+    this.refundAmount = o.refundableMinor / 100;
+    this.refundReason = 'requested_by_customer';
+    this.refundNote = '';
+    this.refundOf.set(o);
+  }
+
+  protected refund(o: OrderRow): void {
+    const amountMinor = this.round((this.refundAmount ?? 0) * 100);
+    this.busy.set(true);
+    this.http.post<OrderRow>(`/api/v1/admin/orders/${o.id}/refund`,
+      { amountMinor, reason: this.refundReason, note: this.refundNote }, { headers: this.headers() }).subscribe({
+      next: (row) => {
+        this.busy.set(false);
+        this.refundOf.set(null);
+        this.message.set(`Zwrot ${this.money(amountMinor, row.currency)} dla zamówienia ${row.number} zlecony w Stripe.`
+          + (row.status === 'REFUNDED' ? ' Dostęp do raportu zablokowany.' : ' Raport pozostaje dostępny.'));
+        this.refresh();
+      },
+      error: (e: HttpErrorResponse) => {
+        this.busy.set(false);
+        this.refundOf.set(null);
+        this.message.set(`Zwrot nie powiódł się: ${e.error?.detail ?? e.error?.title ?? e.message}`);
+      },
+    });
+  }
+
+  protected round(n: number): number {
+    return Math.round(n);
   }
 
   protected downloadCsv(): void {

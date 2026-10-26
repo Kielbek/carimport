@@ -200,7 +200,8 @@
     "subtitle": "Sume exacte, baze de impozitare și cote, documente – într-un PDF pe numele tău.",
     "terms": "Accept termenii și condițiile și solicit în mod expres furnizarea raportului înainte de expirarea perioadei de retragere de 14 zile. Iau la cunoștință că, odată cu furnizarea raportului, îmi pierd dreptul de retragere.",
     "title": "Raport complet de import",
-    "termsLink": "Termeni și condiții"
+    "termsLink": "Termeni și condiții",
+    "guarantee": "Garanție de corectitudine: semnalează o eroare de calcul în 14 zile (de ex. o cotă depășită sau o taxă obligatorie lipsă) și corectăm raportul sau returnăm prețul integral."
   },
   "report": {
     "amount": "Sumă",
@@ -298,7 +299,8 @@
     "approx": "aprox.",
     "span": "de obicei {{min}} – {{max}}",
     "estimateNote": "Transportul și livrarea sunt estimări după tarife obișnuite, rotunjite la 100. Sumele exacte, pe fiecare poziție, sunt în raportul complet.",
-    "minimalNote": "O estimare aproximativă pentru acest traseu. Cât costă exact fiecare poziție – transport, taxă vamală, TVA, înmatriculare și riscuri – arată raportul."
+    "minimalNote": "O estimare aproximativă pentru acest traseu. Cât costă exact fiecare poziție – transport, taxă vamală, TVA, înmatriculare și riscuri – arată raportul.",
+    "guarantee": "Garanție de corectitudine: o greșeală în raport = corectare sau banii înapoi"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Container exclusiv",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Reclamații",
-      "text": "Vânzătorul răspunde pentru conformitatea raportului cu contractul. Dacă raportul nu a fost furnizat, nu poate fi citit sau nu corespunde estimării plătite, scrie la {{email}}, indicând numărul comenzii sau adresa de e-mail folosită la cumpărare.\nVânzătorul soluționează reclamația în termen de 14 zile. Dacă aceasta este întemeiată, Vânzătorul furnizează un raport corectat sau, dacă acest lucru nu este posibil, rambursează prețul.\nConsumatorul poate apela la proceduri de soluționare extrajudiciară a litigiilor, de exemplu la o entitate de soluționare alternativă a litigiilor de consum sau la autoritatea pentru protecția consumatorilor din țara sa."
+      "text": "Vânzătorul răspunde pentru conformitatea raportului cu contractul. Dacă raportul nu a fost furnizat, nu poate fi citit sau nu corespunde estimării plătite, scrie la {{email}}, indicând numărul comenzii sau adresa de e-mail folosită la cumpărare.\nVânzătorul soluționează reclamația în termen de 14 zile. Dacă aceasta este întemeiată, Vânzătorul furnizează un raport corectat sau, dacă acest lucru nu este posibil, rambursează prețul.\nConsumatorul poate apela la proceduri de soluționare extrajudiciară a litigiilor, de exemplu la o entitate de soluționare alternativă a litigiilor de consum sau la autoritatea pentru protecția consumatorilor din țara sa.\nGaranție de corectitudine: dacă în 14 zile de la cumpărare cumpărătorul semnalează o eroare în calculele raportului – de ex. o cotă de taxă sau impozit depășită ori lipsa unei poziții obligatorii –, Vânzătorul livrează în 14 zile un raport corectat sau, la cererea cumpărătorului, returnează integral prețul plătit. Garanția nu acoperă diferențele cauzate de datele introduse de cumpărător, de modificări ale legislației, cursurilor de schimb sau prețurilor furnizorilor după data calculului, nici caracterul estimativ al costurilor de transport."
     },
     "s8": {
       "title": "Răspunderea",

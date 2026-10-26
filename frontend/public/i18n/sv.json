@@ -200,7 +200,8 @@
     "subtitle": "Exakta belopp, beskattningsunderlag och skattesatser, handlingar – i en PDF med ditt namn.",
     "terms": "Jag godkänner villkoren och begär uttryckligen att rapporten levereras innan ångerfristen på 14 dagar har löpt ut. Jag är medveten om att jag förlorar min ångerrätt när rapporten har levererats.",
     "title": "Fullständig importrapport",
-    "termsLink": "Villkor"
+    "termsLink": "Villkor",
+    "guarantee": "Korrekthetsgaranti: anmäl ett räknefel inom 14 dagar (t.ex. en inaktuell sats eller en saknad obligatorisk avgift), så rättar vi rapporten eller återbetalar hela priset."
   },
   "report": {
     "amount": "Belopp",
@@ -298,7 +299,8 @@
     "approx": "ca",
     "span": "oftast {{min}} – {{max}}",
     "estimateNote": "Transport och leverans är uppskattningar utifrån vanliga priser, avrundade till 100. De exakta beloppen, post för post, finns i den fullständiga rapporten.",
-    "minimalNote": "En grov uppskattning för den här rutten. Vad varje post kostar exakt – transport, tull, moms, registrering och risker – visar rapporten."
+    "minimalNote": "En grov uppskattning för den här rutten. Vad varje post kostar exakt – transport, tull, moms, registrering och risker – visar rapporten.",
+    "guarantee": "Korrekthetsgaranti: fel i rapporten = rättelse eller pengarna tillbaka"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Egen container",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Reklamationer",
-      "text": "Säljaren ansvarar för att rapporten överensstämmer med avtalet. Om rapporten inte har levererats, inte går att läsa eller inte motsvarar den betalda beräkningen, skriv till {{email}} och ange ordernumret eller den e-postadress som användes vid köpet.\nSäljaren behandlar en reklamation inom 14 dagar. Om den är befogad levererar Säljaren en rättad rapport eller, om det inte är möjligt, återbetalar priset.\nKonsumenter kan använda alternativ tvistlösning utanför domstol, till exempel en nämnd för konsumenttvister eller konsumentskyddsmyndigheten i sitt land."
+      "text": "Säljaren ansvarar för att rapporten överensstämmer med avtalet. Om rapporten inte har levererats, inte går att läsa eller inte motsvarar den betalda beräkningen, skriv till {{email}} och ange ordernumret eller den e-postadress som användes vid köpet.\nSäljaren behandlar en reklamation inom 14 dagar. Om den är befogad levererar Säljaren en rättad rapport eller, om det inte är möjligt, återbetalar priset.\nKonsumenter kan använda alternativ tvistlösning utanför domstol, till exempel en nämnd för konsumenttvister eller konsumentskyddsmyndigheten i sitt land.\nKorrekthetsgaranti: om köparen inom 14 dagar från köpet anmäler ett fel i rapportens beräkningar – t.ex. en inaktuell skatte- eller avgiftssats eller en saknad obligatorisk post – levererar Säljaren inom 14 dagar en rättad rapport eller återbetalar på köparens begäran hela det betalda priset. Garantin omfattar inte skillnader som beror på uppgifter köparen angett, ändrade regler, valutakurser eller leverantörspriser efter beräkningsdagen, eller transportkostnadernas uppskattade karaktär."
     },
     "s8": {
       "title": "Ansvar",

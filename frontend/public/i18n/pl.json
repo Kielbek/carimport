@@ -200,7 +200,8 @@
     "subtitle": "Kwoty co do grosza, podstawy i stawki podatków, dokumenty – w PDF z Twoim nazwiskiem.",
     "terms": "Akceptuję regulamin i żądam dostarczenia raportu przed upływem 14-dniowego terminu na odstąpienie od umowy. Przyjmuję do wiadomości, że po jego dostarczeniu tracę prawo odstąpienia.",
     "title": "Pełny raport importu",
-    "termsLink": "Regulamin"
+    "termsLink": "Regulamin",
+    "guarantee": "Gwarancja poprawności: zgłoś błąd w wyliczeniu w ciągu 14 dni (np. nieaktualną stawkę lub brakującą obowiązkową opłatę), a poprawimy raport albo zwrócimy całą kwotę."
   },
   "report": {
     "amount": "Kwota",
@@ -298,7 +299,8 @@
     "approx": "ok.",
     "span": "zwykle {{min}} – {{max}}",
     "estimateNote": "Transport i dowóz to szacunek z typowych stawek, zaokrąglony do 100. Dokładne kwoty, pozycja po pozycji, są w pełnym raporcie.",
-    "minimalNote": "Szacunek dla tej trasy. Ile dokładnie kosztuje każda pozycja – transport, cło, VAT, rejestracja i ryzyka – pokazuje raport."
+    "minimalNote": "Szacunek dla tej trasy. Ile dokładnie kosztuje każda pozycja – transport, cło, VAT, rejestracja i ryzyka – pokazuje raport.",
+    "guarantee": "Gwarancja poprawności: błąd w raporcie = poprawka albo zwrot pieniędzy"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Kontener na wyłączność",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Reklamacje",
-      "text": "Sprzedawca odpowiada za zgodność raportu z umową. Jeżeli raport nie został dostarczony, jest nieczytelny albo nie odpowiada wycenie, za którą zapłacono, napisz na {{email}}, podając numer zamówienia lub adres e-mail użyty przy zakupie.\nSprzedawca rozpatruje reklamację w ciągu 14 dni. Jeśli jest zasadna, dostarcza poprawiony raport, a gdy nie jest to możliwe – zwraca zapłaconą cenę.\nKonsument może skorzystać z pozasądowych sposobów rozwiązywania sporów, np. pomocy miejskiego lub powiatowego rzecznika konsumentów albo wojewódzkiego inspektoratu Inspekcji Handlowej."
+      "text": "Sprzedawca odpowiada za zgodność raportu z umową. Jeżeli raport nie został dostarczony, jest nieczytelny albo nie odpowiada wycenie, za którą zapłacono, napisz na {{email}}, podając numer zamówienia lub adres e-mail użyty przy zakupie.\nSprzedawca rozpatruje reklamację w ciągu 14 dni. Jeśli jest zasadna, dostarcza poprawiony raport, a gdy nie jest to możliwe – zwraca zapłaconą cenę.\nKonsument może skorzystać z pozasądowych sposobów rozwiązywania sporów, np. pomocy miejskiego lub powiatowego rzecznika konsumentów albo wojewódzkiego inspektoratu Inspekcji Handlowej.\nGwarancja poprawności: jeżeli w ciągu 14 dni od zakupu kupujący zgłosi błąd w wyliczeniach raportu – np. nieaktualną stawkę podatku lub opłaty albo brak obowiązkowej pozycji – Sprzedawca w ciągu 14 dni dostarcza poprawiony raport albo, na życzenie kupującego, zwraca całą zapłaconą cenę. Gwarancja nie obejmuje różnic wynikających z danych podanych przez kupującego, zmian przepisów, kursów walut lub cen usługodawców po dniu wyceny ani szacunkowego charakteru kosztów transportu."
     },
     "s8": {
       "title": "Odpowiedzialność",

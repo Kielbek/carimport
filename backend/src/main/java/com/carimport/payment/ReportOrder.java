@@ -52,6 +52,16 @@ public class ReportOrder {
     @Column(name = "stripe_payment_intent_id", length = 255)
     private String stripePaymentIntentId;
 
+    /** Total refunded so far, in minor units, as Stripe reports it (0 = none). */
+    @Column(name = "refunded_minor", nullable = false)
+    private long refundedMinor;
+
+    @Column(name = "refunded_at")
+    private Instant refundedAt;
+
+    @Column(name = "refund_reason", length = 200)
+    private String refundReason;
+
     @Column(name = "pdf_storage_key", length = 255)
     private String pdfStorageKey;
 
@@ -135,8 +145,31 @@ public class ReportOrder {
         }
     }
 
-    public void markRefunded() {
-        status = Status.REFUNDED;
+    /**
+     * Records the refunded total reported by Stripe. Idempotent: a total that is not higher than the recorded one
+     * changes nothing (returns false). Refunding the whole price revokes access (status REFUNDED); a partial refund
+     * - a goodwill gesture - keeps the report available.
+     */
+    public boolean recordRefund(long refundedTotalMinor, String reason, Instant now) {
+        if (refundedTotalMinor <= refundedMinor) {
+            return false;
+        }
+        refundedMinor = Math.min(refundedTotalMinor, amountMinor);
+        refundedAt = now;
+        if (reason != null && !reason.isBlank()) {
+            refundReason = reason.length() > 200 ? reason.substring(0, 200) : reason;
+        }
+        if (refundedMinor >= amountMinor) {
+            status = Status.REFUNDED;
+        }
+        return true;
+    }
+
+    /** Paid and not refunded in full - what can still be refunded. */
+    public long refundableMinor() {
+        boolean paid = status == Status.PAID || status == Status.GENERATING || status == Status.READY
+                || status == Status.FAILED;
+        return paid && stripePaymentIntentId != null ? amountMinor - refundedMinor : 0;
     }
 
     public void attachSession(String sessionId) {
@@ -191,6 +224,9 @@ public class ReportOrder {
     public Instant getReadyAt() { return readyAt; }
     public Instant getCreatedAt() { return createdAt; }
     public String getStripePaymentIntentId() { return stripePaymentIntentId; }
+    public long getRefundedMinor() { return refundedMinor; }
+    public Instant getRefundedAt() { return refundedAt; }
+    public String getRefundReason() { return refundReason; }
 
     /** Admin "send again": the next delivery goes out as if it were the first (fresh link, attempts reset). */
     public void resetEmailDelivery() {

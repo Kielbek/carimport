@@ -1,7 +1,9 @@
 package com.carimport.payment;
 
 import com.carimport.config.AppProperties;
+import com.stripe.model.Refund;
 import com.stripe.model.checkout.Session;
+import com.stripe.param.RefundCreateParams;
 import com.stripe.param.checkout.SessionCreateParams;
 import java.util.Map;
 import java.util.UUID;
@@ -46,6 +48,15 @@ public class FakeStripeSessions extends StripeSessions {
         s.setUrl(params.getSuccessUrl().replace("{CHECKOUT_SESSION_ID}", id));
         sessions.put(id, s);
         return s;
+    }
+
+    @Override
+    public Refund refund(RefundCreateParams params, String idempotencyKey) {
+        Refund r = new Refund();
+        r.setId("re_e2e_" + UUID.randomUUID().toString().replace("-", ""));
+        r.setAmount(params.getAmount());
+        r.setStatus("succeeded");
+        return r;
     }
 
     @Override

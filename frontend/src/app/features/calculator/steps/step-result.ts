@@ -63,6 +63,7 @@ import { SITE } from '../../../core/site.config';
               <app-icon name="lock" [size]="18" /> {{ 'result.unlock' | translate: { price: reportPrice() } }}
             </button>
             <p class="mt-2 text-center text-xs text-muted">{{ 'result.unlockNote' | translate }}</p>
+            <p class="mt-2 flex items-center justify-center gap-1.5 text-center text-xs font-semibold"><app-icon name="shield" [size]="14" class="text-brand-text" /> {{ 'result.guarantee' | translate }}</p>
             <p class="mt-2 text-center text-sm"><a [href]="'/samples/report-' + lang.current() + '.pdf'" target="_blank" rel="noopener" (click)="analytics.track('sample_report_opened')" class="text-brand-text inline-flex items-center gap-1.5 font-semibold underline underline-offset-2 hover:no-underline"><app-icon name="document" [size]="15" /> {{ 'result.sample' | translate }}</a></p>
           </div>
         </div>

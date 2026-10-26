@@ -200,7 +200,8 @@
     "subtitle": "Exacte bedragen, maatstaven van heffing en tarieven, documenten – in een pdf op uw naam.",
     "terms": "Ik ga akkoord met de algemene voorwaarden en verzoek uitdrukkelijk om levering van het rapport vóór het einde van de herroepingstermijn van 14 dagen. Ik erken dat ik mijn herroepingsrecht verlies zodra het rapport is geleverd.",
     "title": "Volledig importrapport",
-    "termsLink": "Algemene voorwaarden"
+    "termsLink": "Algemene voorwaarden",
+    "guarantee": "Juistheidsgarantie: meld binnen 14 dagen een rekenfout (bijv. een verouderd tarief of een ontbrekende verplichte heffing) en we corrigeren het rapport of betalen de volledige prijs terug."
   },
   "report": {
     "amount": "Bedrag",
@@ -298,7 +299,8 @@
     "approx": "ca.",
     "span": "meestal {{min}} – {{max}}",
     "estimateNote": "Transport en levering zijn schattingen op basis van gangbare tarieven, afgerond op 100. De exacte bedragen, post voor post, staan in het volledige rapport.",
-    "minimalNote": "Een ruwe schatting voor deze route. Wat elke post precies kost – transport, invoerrechten, btw, registratie en risico’s – staat in het rapport."
+    "minimalNote": "Een ruwe schatting voor deze route. Wat elke post precies kost – transport, invoerrechten, btw, registratie en risico’s – staat in het rapport.",
+    "guarantee": "Juistheidsgarantie: fout in het rapport = correctie of geld terug"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Eigen container",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Klachten",
-      "text": "De Verkoper is verantwoordelijk voor de conformiteit van het rapport met de overeenkomst. Als het rapport niet is geleverd, niet kan worden gelezen of niet overeenkomt met de betaalde berekening, schrijf dan naar {{email}} met vermelding van het bestelnummer of het bij de aankoop gebruikte e-mailadres.\nDe Verkoper behandelt een klacht binnen 14 dagen. Is de klacht gegrond, dan levert de Verkoper een gecorrigeerd rapport of, als dat niet mogelijk is, betaalt hij de prijs terug.\nConsumenten kunnen gebruikmaken van buitengerechtelijke geschilbeslechting, bijvoorbeeld via een geschillencommissie voor consumenten of de consumentenautoriteit van hun land."
+      "text": "De Verkoper is verantwoordelijk voor de conformiteit van het rapport met de overeenkomst. Als het rapport niet is geleverd, niet kan worden gelezen of niet overeenkomt met de betaalde berekening, schrijf dan naar {{email}} met vermelding van het bestelnummer of het bij de aankoop gebruikte e-mailadres.\nDe Verkoper behandelt een klacht binnen 14 dagen. Is de klacht gegrond, dan levert de Verkoper een gecorrigeerd rapport of, als dat niet mogelijk is, betaalt hij de prijs terug.\nConsumenten kunnen gebruikmaken van buitengerechtelijke geschilbeslechting, bijvoorbeeld via een geschillencommissie voor consumenten of de consumentenautoriteit van hun land.\nJuistheidsgarantie: meldt de koper binnen 14 dagen na aankoop een fout in de berekeningen van het rapport – bijv. een verouderd belasting- of heffingstarief of een ontbrekende verplichte post –, dan levert de Verkoper binnen 14 dagen een gecorrigeerd rapport of betaalt hij op verzoek van de koper de volledige betaalde prijs terug. De garantie geldt niet voor verschillen door gegevens die de koper invoerde, wijzigingen van regels, wisselkoersen of prijzen van dienstverleners na de datum van de berekening, of het geschatte karakter van transportkosten."
     },
     "s8": {
       "title": "Aansprakelijkheid",
