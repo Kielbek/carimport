@@ -61,6 +61,24 @@ public class FxSyncJob {
     }
 
     /**
+     * A fresh database, or a server that was down over the sync times, gets today's tables at startup instead of
+     * quoting with old (or no) rates until the next scheduled run.
+     */
+    @EventListener(ApplicationReadyEvent.class)
+    public void syncIfStale() {
+        LocalDate newest = repository.findFirstByCurrencyOrderByEffectiveDateDesc(CurrencyCode.USD)
+                .map(ExchangeRate::getEffectiveDate).orElse(null);
+        if (newest == null || newest.isBefore(LocalDate.now(clock).minusDays(3))) {
+            log.info("Exchange rates missing or older than 3 days ({}) - syncing now", newest);
+            try {
+                sync();
+            } catch (RuntimeException e) { // NBP unreachable must not stop the API from starting
+                log.warn("Startup exchange-rate sync failed - the scheduled sync will retry", e);
+            }
+        }
+    }
+
+    /**
      * Makes sure the rates customs applies this month are stored - the day lies in the previous month, so a fresh
      * database (or one that missed that day) fetches that table from NBP's archive. Runs at startup and after each sync.
      */

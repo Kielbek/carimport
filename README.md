@@ -98,6 +98,27 @@ Formularz „zapytanie do firmy importowej” jest wyłączony (`SITE.partners =
 startowych nieaktywny (V8). Po podpisaniu umowy z partnerem: wpis w tabeli `partner` (+ kraje docelowe i pochodzenia)
 i `partners: true`.
 
+### Panel administracyjny
+
+`https://cargloapp.com/admin` – logowanie kontem z `.env` (`ADMIN_USERNAME`, `ADMIN_PASSWORD`; bez hasła panel jest
+wyłączony). Liczby (zamówienia, przychód w miesiącu, błędy, newsletter, data kursów NBP, stan SMTP), lista zamówień
+z wyszukiwaniem i filtrem statusu, „Wyślij ponownie” (mail z raportem i nowym linkiem), „Generuj PDF” (po błędzie),
+link do płatności w Stripe i eksport newslettera do CSV. Hasło: długie i losowe (`openssl rand -base64 24`).
+
+### Alerty i monitoring
+
+Mail na `ALERT_EMAIL` (domyślnie adres kontaktowy), najwyżej raz na 30 min dla tego samego problemu, gdy: PDF się nie
+wygenerował, mail z raportem nie wychodzi 3 razy, kwota płatności nie zgadza się z zamówieniem, wystąpił nieobsłużony
+błąd API albo najnowsze kursy NBP mają ponad 4 dni. Każdy alert jest też w logu jako `ERROR ALERT`.
+Dostępność: dodaj w UptimeRobot / Better Stack monitor HTTP na `https://cargloapp.com/health` (UP = API i baza działają).
+
+### Test zakupu end-to-end
+
+CI (`e2e`) przy każdym pushu buduje API i stronę, uruchamia API z profilem `e2e` (symulowany Stripe – nigdy na
+produkcji) i przechodzi ścieżkę klienta w przeglądarce: kalkulator → wynik → płatność → strona raportu → pobranie PDF.
+Lokalnie: API z `--spring.profiles.active=e2e` i `FRONTEND_URL=http://localhost:4300`, potem
+`node frontend/e2e/serve.mjs 4300` i `node frontend/e2e/purchase.mjs`.
+
 ### Logi
 
 Każde żądanie API dostaje identyfikator (`X-Request-Id`, nadawany przez nginx). Widać go w logu nginx (`rid=…`),

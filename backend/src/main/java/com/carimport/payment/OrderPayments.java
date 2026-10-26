@@ -1,5 +1,6 @@
 package com.carimport.payment;
 
+import com.carimport.ops.OpsAlert;
 import com.stripe.model.checkout.Session;
 import java.time.Clock;
 import java.util.UUID;
@@ -37,6 +38,10 @@ public class OrderPayments {
         if (!amountOk || !currencyOk) {
             log.error("Order {} paid {} {} but expected {} {} - not unlocking", orderId, session.getAmountTotal(),
                     session.getCurrency(), order.getAmountMinor(), order.getCurrency());
+            events.publishEvent(new OpsAlert("amount:" + orderId, "Payment amount mismatch for order " + order.getNumber(),
+                    "Stripe session " + session.getId() + " paid " + session.getAmountTotal() + " " + session.getCurrency()
+                            + ", the order expects " + order.getAmountMinor() + " " + order.getCurrency()
+                            + ". The report was NOT unlocked. Check the session in the Stripe dashboard."));
             return;
         }
         if (order.markPaid(session.getPaymentIntent(), clock.instant())) {

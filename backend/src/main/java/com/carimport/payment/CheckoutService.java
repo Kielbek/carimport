@@ -6,7 +6,6 @@ import com.carimport.quote.Quote;
 import com.carimport.quote.QuoteRepository;
 import com.stripe.exception.StripeException;
 import com.stripe.model.checkout.Session;
-import com.stripe.net.RequestOptions;
 import com.stripe.param.checkout.SessionCreateParams;
 import java.time.Clock;
 import java.time.Duration;
@@ -37,9 +36,11 @@ public class CheckoutService {
     private final ReportOrderRepository orders;
     private final MessageSource messages;
     private final Clock clock;
+    private final StripeSessions stripe;
 
     public CheckoutService(AppProperties props, QuoteRepository quotes, ReportOrderRepository orders,
-                           MessageSource messages, Clock clock) {
+                           MessageSource messages, Clock clock, StripeSessions stripe) {
+        this.stripe = stripe;
         this.props = props;
         this.quotes = quotes;
         this.orders = orders;
@@ -80,6 +81,10 @@ public class CheckoutService {
                 .setCancelUrl(props.frontendUrl() + "/" + locale + "/result/" + quote.getId() + "?cancelled=1")
                 .setPaymentIntentData(SessionCreateParams.PaymentIntentData.builder()
                         .putMetadata("orderId", order.getId().toString())
+                        // Stripe e-mails the payment receipt (amount, date, method, seller) - the buyer's proof of purchase
+                        .setReceiptEmail(email)
+                        .setDescription(messages.getMessage("report.product.name", null, Locale.forLanguageTag(locale))
+                                + " #" + order.getId().toString().substring(0, 8).toUpperCase())
                         .build())
                 .addLineItem(SessionCreateParams.LineItem.builder()
                         .setQuantity(1L)
@@ -94,11 +99,7 @@ public class CheckoutService {
                         .build())
                 .build();
 
-        RequestOptions options = RequestOptions.builder()
-                .setApiKey(props.stripe().apiKey())
-                .setIdempotencyKey("checkout-" + order.getId())
-                .build();
-        Session session = Session.create(params, options);
+        Session session = stripe.create(params, "checkout-" + order.getId());
         order.attachSession(session.getId());
         log.info("Order {} created for quote {}: {} {} ({}), session {}", order.getId(), quote.getId(), price, currency,
                 locale, session.getId());

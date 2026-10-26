@@ -97,4 +97,6 @@ public class NewsletterSubscriber {
     public Status getStatus() { return status; }
     public String getUnsubscribeToken() { return unsubscribeToken; }
     public Instant getConfirmSentAt() { return confirmSentAt; }
+    public Instant getConfirmedAt() { return confirmedAt; }
+    public String getSource() { return source; }
 }

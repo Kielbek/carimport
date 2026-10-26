@@ -58,6 +58,7 @@ const blog: ServerRoute[] = [
  */
 export const serverRoutes: ServerRoute[] = [
   { path: '', renderMode: RenderMode.Client },
+  { path: 'admin', renderMode: RenderMode.Client },
   { path: ':lang', renderMode: RenderMode.Prerender, getPrerenderParams: allLangs },
   ...perLanguage(SLUGS.calculator),
   ...perLanguage(SLUGS.about),
