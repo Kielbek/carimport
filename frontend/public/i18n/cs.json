@@ -200,7 +200,8 @@
     "subtitle": "Přesné částky, základy daně a sazby, dokumenty – v PDF na vaše jméno.",
     "terms": "Souhlasím s obchodními podmínkami a výslovně žádám o dodání reportu před uplynutím 14denní lhůty pro odstoupení od smlouvy. Beru na vědomí, že dodáním reportu ztrácím právo na odstoupení od smlouvy.",
     "title": "Kompletní report dovozu",
-    "termsLink": "Obchodní podmínky"
+    "termsLink": "Obchodní podmínky",
+    "guarantee": "Záruka správnosti: nahlaste chybu ve výpočtu do 14 dnů (např. zastaralou sazbu nebo chybějící povinný poplatek) a report opravíme, nebo vrátíme celou částku."
   },
   "report": {
     "amount": "Částka",
@@ -298,7 +299,8 @@
     "approx": "cca",
     "span": "obvykle {{min}} – {{max}}",
     "estimateNote": "Doprava a dovoz jsou odhad podle běžných sazeb, zaokrouhlený na 100. Přesné částky po položkách najdete v úplném reportu.",
-    "minimalNote": "Hrubý odhad pro tuto trasu. Kolik přesně stojí každá položka – doprava, clo, DPH, registrace a rizika – ukáže report."
+    "minimalNote": "Hrubý odhad pro tuto trasu. Kolik přesně stojí každá položka – doprava, clo, DPH, registrace a rizika – ukáže report.",
+    "guarantee": "Záruka správnosti: chyba v reportu = oprava nebo vrácení peněz"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Vlastní kontejner",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Reklamace",
-      "text": "Prodávající odpovídá za soulad reportu se smlouvou. Pokud report nebyl dodán, nelze jej přečíst nebo neodpovídá zaplacené kalkulaci, napište na {{email}} a uveďte číslo objednávky nebo e-mailovou adresu použitou při nákupu.\nProdávající vyřídí reklamaci do 14 dnů. Je-li oprávněná, dodá opravený report, a není-li to možné, vrátí zaplacenou cenu.\nSpotřebitel může využít mimosoudní řešení sporů, například prostřednictvím subjektu pro mimosoudní řešení spotřebitelských sporů nebo orgánu ochrany spotřebitele ve své zemi."
+      "text": "Prodávající odpovídá za soulad reportu se smlouvou. Pokud report nebyl dodán, nelze jej přečíst nebo neodpovídá zaplacené kalkulaci, napište na {{email}} a uveďte číslo objednávky nebo e-mailovou adresu použitou při nákupu.\nProdávající vyřídí reklamaci do 14 dnů. Je-li oprávněná, dodá opravený report, a není-li to možné, vrátí zaplacenou cenu.\nSpotřebitel může využít mimosoudní řešení sporů, například prostřednictvím subjektu pro mimosoudní řešení spotřebitelských sporů nebo orgánu ochrany spotřebitele ve své zemi.\nZáruka správnosti: pokud kupující do 14 dnů od nákupu nahlásí chybu ve výpočtech reportu – např. zastaralou sazbu daně či poplatku nebo chybějící povinnou položku –, prodávající do 14 dnů dodá opravený report, nebo na přání kupujícího vrátí celou zaplacenou cenu. Záruka se nevztahuje na rozdíly způsobené údaji zadanými kupujícím, změnami předpisů, kurzů nebo cen poskytovatelů služeb po dni výpočtu ani na odhadovou povahu nákladů na dopravu."
     },
     "s8": {
       "title": "Odpovědnost",

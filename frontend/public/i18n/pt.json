@@ -200,7 +200,8 @@
     "subtitle": "Montantes exatos, bases tributáveis e taxas, documentos – num PDF em seu nome.",
     "terms": "Aceito os termos e condições e solicito expressamente que o relatório seja fornecido antes do termo do prazo de 14 dias para o exercício do direito de livre resolução. Tomo conhecimento de que, uma vez fornecido o relatório, perco o direito de livre resolução.",
     "title": "Relatório completo de importação",
-    "termsLink": "Termos e condições"
+    "termsLink": "Termos e condições",
+    "guarantee": "Garantia de exatidão: comunique um erro de cálculo em 14 dias (p. ex., uma taxa desatualizada ou um encargo obrigatório em falta) e corrigimos o relatório ou reembolsamos o preço total."
   },
   "report": {
     "amount": "Montante",
@@ -298,7 +299,8 @@
     "approx": "aprox.",
     "span": "normalmente {{min}} – {{max}}",
     "estimateNote": "O transporte e a entrega são estimativas com base em tarifas habituais, arredondadas a 100. Os valores exatos, rubrica a rubrica, estão no relatório completo.",
-    "minimalNote": "Uma estimativa aproximada para esta rota. Quanto custa exatamente cada rubrica – transporte, direitos, IVA, registo e riscos – mostra o relatório."
+    "minimalNote": "Uma estimativa aproximada para esta rota. Quanto custa exatamente cada rubrica – transporte, direitos, IVA, registo e riscos – mostra o relatório.",
+    "guarantee": "Garantia de exatidão: um erro no relatório = correção ou reembolso"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Contentor exclusivo",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Reclamações",
-      "text": "O Vendedor é responsável pela conformidade do relatório com o contrato. Se o relatório não tiver sido fornecido, não puder ser lido ou não corresponder à estimativa paga, escreva para {{email}} indicando o número da encomenda ou o endereço de e-mail utilizado na compra.\nO Vendedor trata a reclamação no prazo de 14 dias. Se for procedente, o Vendedor fornece um relatório corrigido ou, se tal não for possível, reembolsa o preço.\nO consumidor pode recorrer a meios de resolução extrajudicial de litígios, por exemplo a uma entidade de resolução alternativa de litígios de consumo ou à autoridade de defesa do consumidor do seu país."
+      "text": "O Vendedor é responsável pela conformidade do relatório com o contrato. Se o relatório não tiver sido fornecido, não puder ser lido ou não corresponder à estimativa paga, escreva para {{email}} indicando o número da encomenda ou o endereço de e-mail utilizado na compra.\nO Vendedor trata a reclamação no prazo de 14 dias. Se for procedente, o Vendedor fornece um relatório corrigido ou, se tal não for possível, reembolsa o preço.\nO consumidor pode recorrer a meios de resolução extrajudicial de litígios, por exemplo a uma entidade de resolução alternativa de litígios de consumo ou à autoridade de defesa do consumidor do seu país.\nGarantia de exatidão: se, nos 14 dias seguintes à compra, o comprador comunicar um erro nos cálculos do relatório – p. ex., uma taxa de imposto ou encargo desatualizada ou a falta de uma rubrica obrigatória –, o Vendedor entrega um relatório corrigido em 14 dias ou, a pedido do comprador, reembolsa o preço total pago. A garantia não abrange diferenças resultantes dos dados introduzidos pelo comprador, de alterações legais, cambiais ou de preços de prestadores após a data do cálculo, nem o carácter estimado dos custos de transporte."
     },
     "s8": {
       "title": "Responsabilidade",

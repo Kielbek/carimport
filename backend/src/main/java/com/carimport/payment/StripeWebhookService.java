@@ -32,10 +32,13 @@ public class StripeWebhookService {
     private final ReportOrderRepository orders;
     private final ProcessedWebhookEventRepository processed;
     private final OrderPayments payments;
+    private final OrderRefunds refunds;
     private final Clock clock;
 
     public StripeWebhookService(AppProperties props, ReportOrderRepository orders,
-                                ProcessedWebhookEventRepository processed, OrderPayments payments, Clock clock) {
+                                ProcessedWebhookEventRepository processed, OrderPayments payments,
+                                OrderRefunds refunds, Clock clock) {
+        this.refunds = refunds;
         this.props = props;
         this.orders = orders;
         this.processed = processed;
@@ -70,12 +73,10 @@ public class StripeWebhookService {
                         log.info("Order {} expired or payment failed", o.getId());
                         o.markExpired();
                     });
-            case "charge.refunded" -> object(event, Charge.class)
-                    .flatMap(c -> orders.findByStripePaymentIntentId(c.getPaymentIntent()))
-                    .ifPresent(o -> {
-                        log.info("Order {} refunded", o.getId());
-                        o.markRefunded();
-                    });
+            // full or partial, from the admin panel or the Stripe dashboard: Stripe reports the refunded total
+            case "charge.refunded" -> object(event, Charge.class).ifPresent(c -> orders
+                    .findByStripePaymentIntentId(c.getPaymentIntent())
+                    .ifPresent(o -> refunds.apply(o, c.getAmountRefunded(), "stripe")));
             default -> log.debug("Unhandled Stripe event type {}", event.getType());
         }
     }

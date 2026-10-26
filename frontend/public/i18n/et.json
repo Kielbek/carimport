@@ -200,7 +200,8 @@
     "subtitle": "Täpsed summad, maksustamise alused ja määrad, dokumendid – sinu nimega PDF-is.",
     "terms": "Nõustun tingimustega ja palun sõnaselgelt raporti üleandmist enne 14-päevase taganemistähtaja möödumist. Olen teadlik, et raporti üleandmisega kaotan taganemisõiguse.",
     "title": "Täielik impordiraport",
-    "termsLink": "Tingimused"
+    "termsLink": "Tingimused",
+    "guarantee": "Õigsuse garantii: teata arvutusveast 14 päeva jooksul (nt aegunud määr või puuduv kohustuslik tasu) ja me parandame aruande või tagastame kogu hinna."
   },
   "report": {
     "amount": "Summa",
@@ -298,7 +299,8 @@
     "approx": "u",
     "span": "tavaliselt {{min}} – {{max}}",
     "estimateNote": "Transport ja kohaletoimetamine on hinnang tavapäraste hindade järgi, ümardatud 100-ni. Täpsed summad rida-realt on täielikus aruandes.",
-    "minimalNote": "Ligikaudne hinnang sellele marsruudile. Kui palju iga rida täpselt maksab – transport, toll, käibemaks, registreerimine ja riskid – näitab aruanne."
+    "minimalNote": "Ligikaudne hinnang sellele marsruudile. Kui palju iga rida täpselt maksab – transport, toll, käibemaks, registreerimine ja riskid – näitab aruanne.",
+    "guarantee": "Õigsuse garantii: viga aruandes = parandus või raha tagasi"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Eraldi konteiner",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Pretensioonid",
-      "text": "Müüja vastutab raporti lepingutingimustele vastavuse eest. Kui raportit ei ole üle antud, seda ei saa lugeda või see ei vasta tasutud arvutusele, kirjuta aadressil {{email}} ja märgi tellimuse number või ostul kasutatud e-posti aadress.\nMüüja lahendab pretensiooni 14 päeva jooksul. Kui pretensioon on põhjendatud, annab müüja üle parandatud raporti või, kui see ei ole võimalik, tagastab hinna.\nTarbija võib kasutada kohtuväliseid vaidluste lahendamise viise, näiteks pöörduda oma riigi tarbijavaidluste lahendamise organi või tarbijakaitseasutuse poole."
+      "text": "Müüja vastutab raporti lepingutingimustele vastavuse eest. Kui raportit ei ole üle antud, seda ei saa lugeda või see ei vasta tasutud arvutusele, kirjuta aadressil {{email}} ja märgi tellimuse number või ostul kasutatud e-posti aadress.\nMüüja lahendab pretensiooni 14 päeva jooksul. Kui pretensioon on põhjendatud, annab müüja üle parandatud raporti või, kui see ei ole võimalik, tagastab hinna.\nTarbija võib kasutada kohtuväliseid vaidluste lahendamise viise, näiteks pöörduda oma riigi tarbijavaidluste lahendamise organi või tarbijakaitseasutuse poole.\nÕigsuse garantii: kui ostja teatab 14 päeva jooksul pärast ostu veast aruande arvutustes – nt aegunud maksu- või tasumäärast või puuduvast kohustuslikust kirjest –, esitab müüja 14 päeva jooksul parandatud aruande või tagastab ostja soovil kogu makstud hinna. Garantii ei hõlma erinevusi, mis tulenevad ostja sisestatud andmetest, õigusaktide, valuutakursside või teenusepakkujate hindade muutustest pärast arvutuse kuupäeva, ega transpordikulude hinnangulist iseloomu."
     },
     "s8": {
       "title": "Vastutus",

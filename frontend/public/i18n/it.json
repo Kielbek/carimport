@@ -200,7 +200,8 @@
     "subtitle": "Importi esatti, basi imponibili e aliquote, documenti – in un PDF intestato a te.",
     "terms": "Accetto le condizioni generali e chiedo espressamente che il report mi sia fornito prima della scadenza del periodo di recesso di 14 giorni. Prendo atto che, una volta fornito il report, perdo il diritto di recesso.",
     "title": "Report completo sull’importazione",
-    "termsLink": "Condizioni generali"
+    "termsLink": "Condizioni generali",
+    "guarantee": "Garanzia di correttezza: segnala un errore di calcolo entro 14 giorni (ad es. un'aliquota non aggiornata o una tassa obbligatoria mancante) e correggiamo il report o rimborsiamo l'intero prezzo."
   },
   "report": {
     "amount": "Importo",
@@ -298,7 +299,8 @@
     "approx": "circa",
     "span": "di solito {{min}} – {{max}}",
     "estimateNote": "Trasporto e consegna sono stime su tariffe tipiche, arrotondate a 100. Gli importi esatti, voce per voce, sono nel report completo.",
-    "minimalNote": "Una stima indicativa per questo percorso. Quanto costa esattamente ogni voce – trasporto, dazio, IVA, immatricolazione e rischi – lo mostra il report."
+    "minimalNote": "Una stima indicativa per questo percorso. Quanto costa esattamente ogni voce – trasporto, dazio, IVA, immatricolazione e rischi – lo mostra il report.",
+    "guarantee": "Garanzia di correttezza: un errore nel report = correzione o rimborso"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Container esclusivo",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Reclami",
-      "text": "Il Venditore è responsabile della conformità del report al contratto. Se il report non è stato fornito, non è leggibile o non corrisponde alla stima pagata, scrivi a {{email}} indicando il numero dell’ordine o l’indirizzo e-mail utilizzato per l’acquisto.\nIl Venditore gestisce il reclamo entro 14 giorni. Se il reclamo è fondato, il Venditore fornisce un report corretto oppure, se ciò non è possibile, rimborsa il prezzo.\nIl consumatore può ricorrere a procedure di risoluzione extragiudiziale delle controversie, ad esempio a un organismo di conciliazione per i consumatori o all’autorità per la tutela dei consumatori del proprio paese."
+      "text": "Il Venditore è responsabile della conformità del report al contratto. Se il report non è stato fornito, non è leggibile o non corrisponde alla stima pagata, scrivi a {{email}} indicando il numero dell’ordine o l’indirizzo e-mail utilizzato per l’acquisto.\nIl Venditore gestisce il reclamo entro 14 giorni. Se il reclamo è fondato, il Venditore fornisce un report corretto oppure, se ciò non è possibile, rimborsa il prezzo.\nIl consumatore può ricorrere a procedure di risoluzione extragiudiziale delle controversie, ad esempio a un organismo di conciliazione per i consumatori o all’autorità per la tutela dei consumatori del proprio paese.\nGaranzia di correttezza: se entro 14 giorni dall'acquisto l'acquirente segnala un errore nei calcoli del report – ad es. un'aliquota di imposta o tassa non aggiornata o una voce obbligatoria mancante – il Venditore fornisce un report corretto entro 14 giorni oppure, su richiesta dell'acquirente, rimborsa l'intero prezzo pagato. La garanzia non copre differenze dovute ai dati inseriti dall'acquirente, a modifiche di norme, cambi o prezzi dei fornitori successive alla data del calcolo, né il carattere stimato dei costi di trasporto."
     },
     "s8": {
       "title": "Responsabilità",

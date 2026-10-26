@@ -200,7 +200,8 @@
     "subtitle": "Importes exactos, bases imponibles y tipos, documentos – en un PDF a tu nombre.",
     "terms": "Acepto las condiciones generales y solicito expresamente que el informe se me entregue antes de que finalice el plazo de desistimiento de 14 días. Reconozco que, una vez entregado, pierdo el derecho de desistimiento.",
     "title": "Informe de importación completo",
-    "termsLink": "Condiciones generales"
+    "termsLink": "Condiciones generales",
+    "guarantee": "Garantía de exactitud: comunica un error de cálculo en 14 días (p. ej., un tipo desactualizado o una tasa obligatoria que falta) y corregiremos el informe o devolveremos el precio íntegro."
   },
   "report": {
     "amount": "Importe",
@@ -298,7 +299,8 @@
     "approx": "aprox.",
     "span": "normalmente {{min}} – {{max}}",
     "estimateNote": "El transporte y la entrega son estimaciones con tarifas habituales, redondeadas a 100. Los importes exactos, partida por partida, están en el informe completo.",
-    "minimalNote": "Una estimación aproximada para esta ruta. Cuánto cuesta exactamente cada partida – transporte, arancel, IVA, matriculación y riesgos – lo muestra el informe."
+    "minimalNote": "Una estimación aproximada para esta ruta. Cuánto cuesta exactamente cada partida – transporte, arancel, IVA, matriculación y riesgos – lo muestra el informe.",
+    "guarantee": "Garantía de exactitud: un error en el informe = corrección o devolución del dinero"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Contenedor exclusivo",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Reclamaciones",
-      "text": "El Vendedor responde de la conformidad del informe con el contrato. Si el informe no se ha entregado, no puede leerse o no corresponde a la estimación pagada, escribe a {{email}} indicando el número de pedido o la dirección de correo electrónico utilizada en la compra.\nEl Vendedor tramita la reclamación en un plazo de 14 días. Si es fundada, el Vendedor entrega un informe corregido o, cuando ello no sea posible, reembolsa el precio.\nEl consumidor puede recurrir a sistemas extrajudiciales de resolución de litigios, por ejemplo un servicio de mediación o arbitraje de consumo o la autoridad de protección de los consumidores de su país."
+      "text": "El Vendedor responde de la conformidad del informe con el contrato. Si el informe no se ha entregado, no puede leerse o no corresponde a la estimación pagada, escribe a {{email}} indicando el número de pedido o la dirección de correo electrónico utilizada en la compra.\nEl Vendedor tramita la reclamación en un plazo de 14 días. Si es fundada, el Vendedor entrega un informe corregido o, cuando ello no sea posible, reembolsa el precio.\nEl consumidor puede recurrir a sistemas extrajudiciales de resolución de litigios, por ejemplo un servicio de mediación o arbitraje de consumo o la autoridad de protección de los consumidores de su país.\nGarantía de exactitud: si en los 14 días siguientes a la compra el comprador comunica un error en los cálculos del informe –p. ej., un tipo de impuesto o tasa desactualizado o la falta de una partida obligatoria–, el Vendedor entrega un informe corregido en 14 días o, a petición del comprador, devuelve el precio íntegro pagado. La garantía no cubre diferencias debidas a los datos introducidos por el comprador, a cambios normativos, de tipos de cambio o de precios de proveedores posteriores a la fecha del cálculo, ni el carácter estimado de los costes de transporte."
     },
     "s8": {
       "title": "Responsabilidad",

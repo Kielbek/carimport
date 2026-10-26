@@ -200,7 +200,8 @@
     "subtitle": "Præcise beløb, beregningsgrundlag og satser, dokumenter – i en PDF med dit navn.",
     "terms": "Jeg accepterer handelsbetingelserne og anmoder udtrykkeligt om, at rapporten leveres, inden fortrydelsesfristen på 14 dage udløber. Jeg anerkender, at jeg mister min fortrydelsesret, når rapporten er leveret.",
     "title": "Fuld importrapport",
-    "termsLink": "Handelsbetingelser"
+    "termsLink": "Handelsbetingelser",
+    "guarantee": "Korrekthedsgaranti: meld en regnefejl inden for 14 dage (fx en forældet sats eller et manglende obligatorisk gebyr), så retter vi rapporten eller refunderer hele prisen."
   },
   "report": {
     "amount": "Beløb",
@@ -298,7 +299,8 @@
     "approx": "ca.",
     "span": "typisk {{min}} – {{max}}",
     "estimateNote": "Transport og levering er skøn ud fra typiske takster, afrundet til 100. De præcise beløb, post for post, står i den fulde rapport.",
-    "minimalNote": "Et groft skøn for denne rute. Hvad hver post præcist koster – transport, told, moms, registrering og risici – står i rapporten."
+    "minimalNote": "Et groft skøn for denne rute. Hvad hver post præcist koster – transport, told, moms, registrering og risici – står i rapporten.",
+    "guarantee": "Korrekthedsgaranti: fejl i rapporten = rettelse eller pengene tilbage"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Egen container",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Reklamationer",
-      "text": "Sælger er ansvarlig for, at rapporten er i overensstemmelse med aftalen. Hvis rapporten ikke er leveret, ikke kan læses eller ikke svarer til den betalte beregning, så skriv til {{email}} og oplys ordrenummeret eller den e-mailadresse, der blev brugt ved købet.\nSælger behandler en reklamation inden for 14 dage. Er den berettiget, leverer Sælger en rettet rapport eller, hvis det ikke er muligt, tilbagebetaler prisen.\nForbrugere kan benytte udenretlig tvistbilæggelse, f.eks. et klagenævn for forbrugere eller forbrugermyndigheden i deres land."
+      "text": "Sælger er ansvarlig for, at rapporten er i overensstemmelse med aftalen. Hvis rapporten ikke er leveret, ikke kan læses eller ikke svarer til den betalte beregning, så skriv til {{email}} og oplys ordrenummeret eller den e-mailadresse, der blev brugt ved købet.\nSælger behandler en reklamation inden for 14 dage. Er den berettiget, leverer Sælger en rettet rapport eller, hvis det ikke er muligt, tilbagebetaler prisen.\nForbrugere kan benytte udenretlig tvistbilæggelse, f.eks. et klagenævn for forbrugere eller forbrugermyndigheden i deres land.\nKorrekthedsgaranti: hvis køberen inden for 14 dage efter købet melder en fejl i rapportens beregninger – fx en forældet afgifts- eller gebyrsats eller en manglende obligatorisk post –, leverer Sælger inden for 14 dage en rettet rapport eller refunderer på købers anmodning hele den betalte pris. Garantien dækker ikke forskelle, der skyldes data indtastet af køberen, ændringer i regler, valutakurser eller leverandørpriser efter beregningsdatoen, eller transportomkostningernes skønnede karakter."
     },
     "s8": {
       "title": "Ansvar",

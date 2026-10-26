@@ -3,6 +3,7 @@ package com.carimport.admin;
 import com.carimport.fx.ExchangeRateService;
 import com.carimport.newsletter.NewsletterSubscriber;
 import com.carimport.newsletter.NewsletterSubscriberRepository;
+import com.carimport.payment.OrderRefunds;
 import com.carimport.payment.ReportOrder;
 import com.carimport.payment.ReportOrderRepository;
 import com.carimport.report.ReportGenerationService;
@@ -20,11 +21,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ProblemDetail;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -39,13 +43,20 @@ public class AdminController {
 
     public record OrderRow(UUID id, String number, Instant createdAt, Instant paidAt, String status, String email,
                            String name, String locale, long amountMinor, String currency, Instant emailSentAt,
-                           int emailAttempts, int generationAttempts, String paymentIntent) {
+                           int emailAttempts, int generationAttempts, String paymentIntent, long refundedMinor,
+                           Instant refundedAt, String refundReason, long refundableMinor) {
 
         static OrderRow of(ReportOrder o) {
             return new OrderRow(o.getId(), o.getNumber(), o.getCreatedAt(), o.getPaidAt(), o.getStatus().name(),
                     o.getEmail(), o.getFullName(), o.getLocale(), o.getAmountMinor(), o.getCurrency().name(),
-                    o.getEmailSentAt(), o.getEmailAttempts(), o.getGenerationAttempts(), o.getStripePaymentIntentId());
+                    o.getEmailSentAt(), o.getEmailAttempts(), o.getGenerationAttempts(), o.getStripePaymentIntentId(),
+                    o.getRefundedMinor(), o.getRefundedAt(), o.getRefundReason(), o.refundableMinor());
         }
+    }
+
+    /** amountMinor null = everything still refundable; reason: requested_by_customer, duplicate or fraudulent. */
+    public record RefundRequest(@jakarta.validation.constraints.Positive Long amountMinor, String reason,
+                                @jakarta.validation.constraints.Size(max = 150) String note) {
     }
 
     public record OrderPage(List<OrderRow> orders, long total, int page, int pages) {
@@ -63,11 +74,14 @@ public class AdminController {
     private final NewsletterSubscriberRepository subscribers;
     private final ReportMailer mailer;
     private final ReportGenerationService generator;
+    private final OrderRefunds refunds;
     private final ExchangeRateService rates;
     private final Clock clock;
 
     public AdminController(ReportOrderRepository orders, NewsletterSubscriberRepository subscribers, ReportMailer mailer,
-                           ReportGenerationService generator, ExchangeRateService rates, Clock clock) {
+                           ReportGenerationService generator, ExchangeRateService rates, Clock clock,
+                           OrderRefunds refunds) {
+        this.refunds = refunds;
         this.orders = orders;
         this.subscribers = subscribers;
         this.mailer = mailer;
@@ -109,6 +123,23 @@ public class AdminController {
         mailer.send(id);
         log.info("Admin: report e-mail of order {} sent again", id);
         return OrderRow.of(orders.findById(id).orElseThrow());
+    }
+
+    /**
+     * Refunds through Stripe (all or part) and e-mails the buyer. A full refund revokes access to the report; a
+     * partial one keeps it. Stripe errors (e.g. the payment is not refundable yet) come back as 502 with Stripe's message.
+     */
+    @PostMapping("/orders/{id}/refund")
+    public ResponseEntity<?> refund(@PathVariable UUID id, @jakarta.validation.Valid @RequestBody RefundRequest request) {
+        try {
+            ReportOrder order = refunds.refund(id, request.amountMinor(), request.reason(), request.note());
+            log.info("Admin: order {} refunded {} (total {})", id, request.amountMinor(), order.getRefundedMinor());
+            return ResponseEntity.ok(OrderRow.of(order));
+        } catch (com.stripe.exception.StripeException e) {
+            log.warn("Admin: refund of order {} rejected by Stripe: {}", id, e.getMessage());
+            ProblemDetail p = ProblemDetail.forStatusAndDetail(HttpStatus.BAD_GATEWAY, "Stripe: " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.BAD_GATEWAY).body(p);
+        }
     }
 
     /** Builds the PDF again after a failure (the e-mail follows automatically when it succeeds). */

@@ -200,7 +200,8 @@
     "subtitle": "Natančni zneski, davčne osnove in stopnje, dokumenti – v PDF-ju z vašim imenom.",
     "terms": "Sprejemam splošne pogoje in izrecno zahtevam dobavo poročila pred iztekom 14-dnevnega roka za odstop od pogodbe. Potrjujem, da z dobavo poročila izgubim pravico do odstopa od pogodbe.",
     "title": "Celotno poročilo o uvozu",
-    "termsLink": "Splošni pogoji"
+    "termsLink": "Splošni pogoji",
+    "guarantee": "Garancija pravilnosti: napako v izračunu prijavite v 14 dneh (npr. zastarelo stopnjo ali manjkajočo obvezno pristojbino) in poročilo popravimo ali vrnemo celotno kupnino."
   },
   "report": {
     "amount": "Znesek",
@@ -298,7 +299,8 @@
     "approx": "pribl.",
     "span": "običajno {{min}} – {{max}}",
     "estimateNote": "Prevoz in dostava sta ocena po običajnih cenah, zaokrožena na 100. Natančni zneski po postavkah so v celotnem poročilu.",
-    "minimalNote": "Groba ocena za to pot. Koliko točno stane vsaka postavka – prevoz, carina, DDV, registracija in tveganja – pokaže poročilo."
+    "minimalNote": "Groba ocena za to pot. Koliko točno stane vsaka postavka – prevoz, carina, DDV, registracija in tveganja – pokaže poročilo.",
+    "guarantee": "Garancija pravilnosti: napaka v poročilu = popravek ali vračilo denarja"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Lasten zabojnik",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Reklamacije",
-      "text": "Prodajalec odgovarja za skladnost poročila s pogodbo. Če poročilo ni bilo dobavljeno, ga ni mogoče prebrati ali ne ustreza plačanemu izračunu, pišite na {{email}} in navedite številko naročila ali e-poštni naslov, uporabljen pri nakupu.\nProdajalec reklamacijo obravnava v 14 dneh. Če je utemeljena, prodajalec dobavi popravljeno poročilo ali, če to ni mogoče, vrne kupnino.\nPotrošniki lahko uporabijo izvensodno reševanje sporov, na primer prek izvajalca izvensodnega reševanja potrošniških sporov ali organa za varstvo potrošnikov v svoji državi."
+      "text": "Prodajalec odgovarja za skladnost poročila s pogodbo. Če poročilo ni bilo dobavljeno, ga ni mogoče prebrati ali ne ustreza plačanemu izračunu, pišite na {{email}} in navedite številko naročila ali e-poštni naslov, uporabljen pri nakupu.\nProdajalec reklamacijo obravnava v 14 dneh. Če je utemeljena, prodajalec dobavi popravljeno poročilo ali, če to ni mogoče, vrne kupnino.\nPotrošniki lahko uporabijo izvensodno reševanje sporov, na primer prek izvajalca izvensodnega reševanja potrošniških sporov ali organa za varstvo potrošnikov v svoji državi.\nGarancija pravilnosti: če kupec v 14 dneh od nakupa prijavi napako v izračunih poročila – npr. zastarelo davčno stopnjo ali pristojbino ali manjkajočo obvezno postavko –, prodajalec v 14 dneh dostavi popravljeno poročilo ali na željo kupca vrne celotno plačano ceno. Garancija ne velja za razlike zaradi podatkov, ki jih je vnesel kupec, sprememb predpisov, tečajev ali cen ponudnikov storitev po dnevu izračuna, niti za ocenjeno naravo stroškov prevoza."
     },
     "s8": {
       "title": "Odgovornost",

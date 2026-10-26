@@ -200,7 +200,8 @@
     "subtitle": "Montants exacts, assiettes et taux de taxation, documents – dans un PDF à votre nom.",
     "terms": "J’accepte les conditions générales et je demande expressément que le rapport me soit fourni avant l’expiration du délai de rétractation de 14 jours. Je reconnais perdre mon droit de rétractation une fois le rapport fourni.",
     "title": "Rapport d’importation complet",
-    "termsLink": "Conditions générales"
+    "termsLink": "Conditions générales",
+    "guarantee": "Garantie d'exactitude : signalez une erreur de calcul sous 14 jours (par ex. un taux obsolète ou des frais obligatoires manquants) et nous corrigeons le rapport ou remboursons l'intégralité du prix."
   },
   "report": {
     "amount": "Montant",
@@ -298,7 +299,8 @@
     "approx": "env.",
     "span": "généralement {{min}} – {{max}}",
     "estimateNote": "Le transport et la livraison sont des estimations sur la base de tarifs habituels, arrondies à 100. Les montants exacts, poste par poste, figurent dans le rapport complet.",
-    "minimalNote": "Une estimation approximative pour cet itinéraire. Le coût exact de chaque poste – transport, droits, TVA, immatriculation et risques – figure dans le rapport."
+    "minimalNote": "Une estimation approximative pour cet itinéraire. Le coût exact de chaque poste – transport, droits, TVA, immatriculation et risques – figure dans le rapport.",
+    "guarantee": "Garantie d'exactitude : une erreur dans le rapport = correction ou remboursement"
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Conteneur exclusif",
@@ -1513,7 +1515,7 @@
     },
     "s7": {
       "title": "Réclamations",
-      "text": "Le Vendeur est responsable de la conformité du rapport au contrat. Si le rapport n’a pas été fourni, est illisible ou ne correspond pas à l’estimation payée, écrivez à {{email}} en indiquant le numéro de commande ou l’adresse e-mail utilisée lors de l’achat.\nLe Vendeur traite la réclamation dans un délai de 14 jours. Si elle est fondée, le Vendeur fournit un rapport corrigé ou, si cela n’est pas possible, rembourse le prix.\nLe consommateur peut recourir à un mode de règlement extrajudiciaire des litiges, par exemple un médiateur de la consommation ou l’autorité de protection des consommateurs de son pays."
+      "text": "Le Vendeur est responsable de la conformité du rapport au contrat. Si le rapport n’a pas été fourni, est illisible ou ne correspond pas à l’estimation payée, écrivez à {{email}} en indiquant le numéro de commande ou l’adresse e-mail utilisée lors de l’achat.\nLe Vendeur traite la réclamation dans un délai de 14 jours. Si elle est fondée, le Vendeur fournit un rapport corrigé ou, si cela n’est pas possible, rembourse le prix.\nLe consommateur peut recourir à un mode de règlement extrajudiciaire des litiges, par exemple un médiateur de la consommation ou l’autorité de protection des consommateurs de son pays.\nGarantie d'exactitude : si, dans les 14 jours suivant l'achat, l'acheteur signale une erreur dans les calculs du rapport – par exemple un taux de taxe ou de frais obsolète ou un poste obligatoire manquant –, le Vendeur fournit un rapport corrigé sous 14 jours ou, à la demande de l'acheteur, rembourse l'intégralité du prix payé. La garantie ne couvre pas les écarts dus aux données saisies par l'acheteur, aux changements de réglementation, de taux de change ou de prix des prestataires après la date du calcul, ni le caractère estimatif des frais de transport."
     },
     "s8": {
       "title": "Responsabilité",
