@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Despachado en Polonia para matricularse en otro país – comprueba los impuestos de matriculación del destino.",
       "exciseDeclarationWithin14Days": "El impuesto especial polaco se paga en la oficina tributaria (AKC-U/S) en un plazo de 14 días desde la llegada.",
-      "pickupMayBeReclassified": "Un pick-up matriculado como turismo puede estar sujeto al impuesto especial – comprueba la homologación."
+      "pickupMayBeReclassified": "Un pick-up matriculado como turismo puede estar sujeto al impuesto especial – comprueba la homologación.",
+      "historicNoExcise": "Vehículo de colección (NC 9705): sin impuesto especial polaco, siempre que la aduana acepte esta clasificación."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Régimen 4200: el IVA se autoliquida en el país de destino (inversión del sujeto pasivo, neutral para empresas registradas a efectos del IVA)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Has elegido la recogida en el puerto – el transporte por carretera hasta casa no está incluido.",
       "selfDriveNotRunning": "Un coche que no funciona no puede circular con matrícula provisional – elige una grúa."
+    },
+    "duty": {
+      "preferentialPossible": "Según el VIN, el coche se fabricó en el país de envío: con prueba de origen el arancel puede ser del 0 %. Marca «Fabricado en este país» en el paso del vehículo.",
+      "preferentialOriginProof": "Arancel del 0 % según el acuerdo comercial de la UE solo con una declaración de origen válida (o el conocimiento del importador); sin ella la aduana aplica el tipo completo.",
+      "usOriginProof": "El arancel del 0 % para coches fabricados en EE. UU. (Reglamento (UE) 2026/1455, hasta finales de 2029) exige una prueba de fabricación en EE. UU. aceptada por la aduana y transporte directo desde EE. UU.; una factura o un informe Carfax no bastan. Si no, 10 %."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "De qué dependen los impuestos",
     "specLead": "Propuesto según el tipo y el motor. Los datos exactos (del VIN o del CoC) hacen mucho más preciso el impuesto de matriculación.",
     "mass": "Peso en vacío",
-    "massHint": "En kg. Cuenta en Francia (malus por peso) y en Estonia."
+    "massHint": "En kg. Cuenta en Francia (malus por peso) y en Estonia.",
+    "preferentialOrigin": "Fabricado en este país: arancel 0 %",
+    "preferentialOriginHint": "Acuerdo comercial UE / acuerdo UE–EE. UU.: 0 % en lugar de 10 % si puedes demostrar dónde se fabricó el coche (no solo dónde se vendió). Decide la aduana; por prudencia, déjalo sin marcar.",
+    "preferentialVinMatch": "VIN: fabricado en este país"
   },
   "layout": {
     "topbar": "Calculadora independiente de costes de importación de coches de EE. UU., Canadá, Japón, EAU y Reino Unido a los 27 países de la UE",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Arancel (TARIC)",
-        "formula": "CIF × 10 % turismos · 22 % pick-ups · 0 % clásicos",
+        "formula": "CIF × 10 % turismos · 10–22 % pick-ups · 0 % clásicos",
         "text": "El tipo depende del código SA; motos 6–8 %."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Aranceles e impuestos",
-        "i1": "Arancel según TARIC (10 %, 22 % para pick-ups)",
+        "i1": "Arancel según TARIC (10 %, 10–22 % para pick-ups)",
         "i2": "Impuesto especial según motor y combustible",
         "i3": "IVA en el país del puerto de despacho",
         "i4": "Tipo de cambio del banco central del mismo día"
@@ -742,7 +751,7 @@
     "lead": "¿No encuentras tu respuesta? La calculadora muestra cada supuesto y el informe PDF cada tipo y cada base.",
     "q1": {
       "q": "¿Cuánto es el arancel de un coche de EE. UU.?",
-      "a": "Para los turismos (NC 8703) el arancel es del 10 % del valor en aduana CIF, del 22 % para pick-ups y camiones ligeros (8704) y del 6–8 % para motos. Los vehículos históricos de más de 30 años en estado original pueden acogerse al 0 %. El valor en aduana es el precio de compra más las tasas de subasta, el transporte hasta la frontera de la UE y el seguro."
+      "a": "Para los turismos (NC 8703) el arancel es del 10 % del valor en aduana CIF, del 10–22 % para pick-ups y camiones ligeros (8704) y del 6–8 % para motos. Los vehículos históricos de más de 30 años en estado original pueden acogerse al 0 %. El valor en aduana es el precio de compra más las tasas de subasta, el transporte hasta la frontera de la UE y el seguro. El arancel del 0 % para coches fabricados en EE. UU. (Reglamento (UE) 2026/1455, hasta finales de 2029) exige una prueba de fabricación en EE. UU. aceptada por la aduana y transporte directo desde EE. UU.; una factura o un informe Carfax no bastan. Si no, 10 %."
     },
     "q2": {
       "q": "¿Qué impuesto especial se aplica al importar un coche a Polonia?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Derechos de aduana",
-          "dutyValue": "10 % del valor CIF (pickups 22 %, motocicletas 6–8 %, vehículos históricos 0 %)",
+          "dutyValue": "10 % del valor CIF (pickups 10–22 %, motocicletas 6–8 %, vehículos históricos 0 %)",
           "vat": "IVA a la importación",
           "vatValue": "{{vat}} % – {{country}}",
           "vatRange": "17–27 % según el país de despacho",
@@ -1431,7 +1440,7 @@
     "total": "Impuestos y tasas",
     "howTitle": "Cómo lo calculamos",
     "how1": "Valor en aduana (CIF) = precio + tasas de subasta + transporte hasta el puerto de la UE + seguro.",
-    "how2": "Arancel aduanero: 10 % del valor en aduana (pickups 22 %, motocicletas 6–8 %), idéntico en todos los puertos de la UE.",
+    "how2": "Arancel aduanero: 10 % del valor en aduana (pickups 10–22 %, motocicletas 6–8 %), idéntico en todos los puertos de la UE.",
     "how3": "El IVA de importación se paga en el país del puerto, a su tipo, sobre valor en aduana + arancel + transporte hasta tu dirección. Un coche usado despachado fuera del país {{country}} no vuelve a pagar IVA en casa.",
     "how4": "Los impuestos nacionales del país de matriculación (p. ej. el impuesto especial polaco) se pagan en casa, sea cual sea el puerto.",
     "how5": "La clasificación suma flete, tasas portuarias y entrega por km hasta tu dirección: el total más barato aparece primero.",

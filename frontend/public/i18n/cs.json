@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Proclení v Polsku pro registraci v jiné zemi – ověřte registrační daně v cílové zemi.",
       "exciseDeclarationWithin14Days": "Polská spotřební daň se platí na finančním úřadě (AKC-U/S) do 14 dnů od příjezdu.",
-      "pickupMayBeReclassified": "Pick-up registrovaný jako osobní auto může podléhat spotřební dani – ověřte homologaci."
+      "pickupMayBeReclassified": "Pick-up registrovaný jako osobní auto může podléhat spotřební dani – ověřte homologaci.",
+      "historicNoExcise": "Sběratelské vozidlo (KN 9705): bez polské spotřební daně – pokud celní úřad toto zařazení uzná."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Celní režim 4200: DPH si přiznáte sami v cílové zemi (reverse charge, pro plátce DPH neutrální)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Zvoleno vyzvednutí v přístavu – silniční doprava domů není zahrnuta.",
       "selfDriveNotRunning": "Nepojízdné auto nelze přepravit po vlastní ose na dočasné značky – zvolte odtahovku."
+    },
+    "duty": {
+      "preferentialPossible": "Podle VIN bylo auto vyrobeno v zemi, odkud se odesílá – s doklady o původu může být clo 0 %. Zaškrtněte v kroku vozidla „Vyrobeno v této zemi“.",
+      "preferentialOriginProof": "Clo 0 % podle obchodní dohody EU jen s platným prohlášením o původu (nebo znalostí dovozce) – bez něj celní úřad uplatní plnou sazbu.",
+      "usOriginProof": "Clo 0 % na auta vyrobená v USA (nařízení (EU) 2026/1455, do konce roku 2029) vyžaduje celním úřadem uznaný doklad o výrobě v USA a přímou přepravu z USA – samotná faktura nebo Carfax nestačí. Jinak 10 %."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "Na čem závisí daně",
     "specLead": "Navrženo podle typu a motoru. Přesné údaje (z VIN nebo CoC) výrazně zpřesní výpočet registrační daně.",
     "mass": "Pohotovostní hmotnost",
-    "massHint": "V kg. Počítá se s ní ve Francii (malus za hmotnost) a v Estonsku."
+    "massHint": "V kg. Počítá se s ní ve Francii (malus za hmotnost) a v Estonsku.",
+    "preferentialOrigin": "Vyrobeno v této zemi – clo 0 %",
+    "preferentialOriginHint": "Obchodní dohoda EU / dohoda EU–USA: 0 % místo 10 %, pokud doložíte, kde bylo auto vyrobeno (nejen kde bylo prodáno). Rozhoduje celní úřad – pro jistotu nechte nezaškrtnuté.",
+    "preferentialVinMatch": "VIN: vyrobeno v této zemi"
   },
   "layout": {
     "topbar": "Nezávislá kalkulačka nákladů na dovoz aut z USA, Kanady, Japonska, SAE a Velké Británie do 27 zemí EU",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Clo (TARIC)",
-        "formula": "CIF × 10 % osobní auta · 22 % pick-upy · 0 % veterány",
+        "formula": "CIF × 10 % osobní auta · 10–22 % pick-upy · 0 % veterány",
         "text": "Sazba závisí na kódu HS; motocykly 6–8 %."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Clo a daně",
-        "i1": "Clo podle TARIC (10 %, u pick-upů 22 %)",
+        "i1": "Clo podle TARIC (10 %, u pick-upů 10–22 %)",
         "i2": "Spotřební daň podle motoru a paliva",
         "i3": "DPH v zemi přístavu proclení",
         "i4": "Kurz centrální banky ze stejného dne"
@@ -742,7 +751,7 @@
     "lead": "Nenašli jste odpověď? Kalkulačka ukazuje všechny předpoklady a PDF report každou sazbu a základ.",
     "q1": {
       "q": "Kolik činí clo na auto z USA?",
-      "a": "U osobních aut (KN 8703) je clo 10 % z celní hodnoty CIF, u pick-upů a lehkých nákladních vozidel (8704) 22 % a u motocyklů 6–8 %. Sběratelská vozidla starší 30 let v originálním stavu mohou mít nárok na 0 %. Celní hodnotu tvoří kupní cena plus aukční poplatky, doprava na hranici EU a pojištění."
+      "a": "U osobních aut (KN 8703) je clo 10 % z celní hodnoty CIF, u pick-upů a lehkých nákladních vozidel (8704) 10–22 % a u motocyklů 6–8 %. Sběratelská vozidla starší 30 let v originálním stavu mohou mít nárok na 0 %. Celní hodnotu tvoří kupní cena plus aukční poplatky, doprava na hranici EU a pojištění. Clo 0 % na auta vyrobená v USA (nařízení (EU) 2026/1455, do konce roku 2029) vyžaduje celním úřadem uznaný doklad o výrobě v USA a přímou přepravu z USA – samotná faktura nebo Carfax nestačí. Jinak 10 %."
     },
     "q2": {
       "q": "Jaká spotřební daň se platí při dovozu auta do Polska?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Clo",
-          "dutyValue": "10 % z hodnoty CIF (pick-upy 22 %, motocykly 6–8 %, historická vozidla 0 %)",
+          "dutyValue": "10 % z hodnoty CIF (pick-upy 10–22 %, motocykly 6–8 %, historická vozidla 0 %)",
           "vat": "Dovozní DPH",
           "vatValue": "{{vat}} % – {{country}}",
           "vatRange": "17–27 % podle země proclení",
@@ -1431,7 +1440,7 @@
     "total": "Daně a poplatky",
     "howTitle": "Jak počítáme",
     "how1": "Celní hodnota (CIF) = cena + aukční poplatky + doprava do přístavu EU + pojištění.",
-    "how2": "Clo: 10 % celní hodnoty (pick-upy 22 %, motocykly 6–8 %) – stejné ve všech přístavech EU.",
+    "how2": "Clo: 10 % celní hodnoty (pick-upy 10–22 %, motocykly 6–8 %) – stejné ve všech přístavech EU.",
     "how3": "DPH při dovozu platíte v zemi přístavu, podle její sazby, z celní hodnoty + cla + dopravy na vaši adresu. Ojeté auto proclené mimo zemi registrace ({{country}}) doma DPH znovu neplatí.",
     "how4": "Národní daně země registrace (např. polskou spotřební daň) platíte doma – bez ohledu na přístav.",
     "how5": "Pořadí připočítává námořní dopravu, přístavní poplatky a dovoz za km na vaši adresu – nejlevnější součet je nahoře.",

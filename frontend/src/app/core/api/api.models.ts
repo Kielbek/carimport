@@ -60,6 +60,8 @@ export interface CalculationRequest {
   /** VIN the data came from and the decoded make/model - shown in the report. */
   vin: string | null;
   vehicleDescription: string | null;
+  /** Claims 0 % duty: the car was built in the origin country and its origin can be proven. */
+  preferentialOrigin?: boolean | null;
 }
 
 export type PortRegion = 'NORTH_SEA' | 'ATLANTIC' | 'BALTIC' | 'WEST_MED' | 'EAST_MED';

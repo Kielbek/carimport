@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Vămuit în Polonia pentru înmatriculare în altă țară – verifică taxele de înmatriculare din țara de destinație.",
       "exciseDeclarationWithin14Days": "Accizele poloneze se plătesc la administrația fiscală (AKC-U/S) în termen de 14 zile de la sosire.",
-      "pickupMayBeReclassified": "Un pickup înmatriculat ca autoturism poate fi supus accizelor – verifică omologarea."
+      "pickupMayBeReclassified": "Un pickup înmatriculat ca autoturism poate fi supus accizelor – verifică omologarea.",
+      "historicNoExcise": "Vehicul de colecție (NC 9705): fără accize poloneze – dacă vama acceptă această clasificare."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Procedura 4200: TVA se autolichidează în țara de destinație (taxare inversă, neutră pentru firmele înregistrate în scopuri de TVA)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Ai ales ridicarea din port – transportul rutier până acasă nu este inclus.",
       "selfDriveNotRunning": "O mașină nefuncțională nu poate fi condusă cu numere provizorii – alege o platformă de tractare."
+    },
+    "duty": {
+      "preferentialPossible": "Conform VIN, mașina a fost fabricată în țara de expediere – cu dovada originii, taxa vamală poate fi 0%. Bifați „Fabricată în această țară” la pasul vehiculului.",
+      "preferentialOriginProof": "Taxă vamală 0% în baza acordului comercial UE doar cu o declarație de origine validă (sau cunoștințele importatorului) – altfel vama aplică cota integrală.",
+      "usOriginProof": "Taxa de 0% pentru mașinile fabricate în SUA (Regulamentul (UE) 2026/1455, până la sfârșitul lui 2029) cere o dovadă a fabricației în SUA acceptată de vamă și transport direct din SUA – o factură sau un raport Carfax nu sunt suficiente. Altfel 10%."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "De ce depind taxele",
     "specLead": "Propus pe baza tipului și a motorului. Datele exacte (din VIN sau CoC) fac taxa de înmatriculare mult mai precisă.",
     "mass": "Masa proprie",
-    "massHint": "În kg. Contează în Franța (malus pentru greutate) și în Estonia."
+    "massHint": "În kg. Contează în Franța (malus pentru greutate) și în Estonia.",
+    "preferentialOrigin": "Fabricată în această țară – taxă vamală 0%",
+    "preferentialOriginHint": "Acord comercial UE / înțelegerea UE–SUA: 0% în loc de 10% dacă puteți dovedi unde a fost fabricată mașina (nu doar unde a fost vândută). Decide vama – din prudență, lăsați nebifat.",
+    "preferentialVinMatch": "VIN: fabricată în această țară"
   },
   "layout": {
     "topbar": "Calculator independent al costurilor de import auto din SUA, Canada, Japonia, EAU și Regatul Unit în cele 27 de țări UE",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Taxe vamale (TARIC)",
-        "formula": "CIF × 10% autoturisme · 22% pickupuri · 0% clasice",
+        "formula": "CIF × 10% autoturisme · 10–22% pickupuri · 0% clasice",
         "text": "Cota depinde de codul SA (HS); motociclete 6–8%."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Taxe vamale și impozite",
-        "i1": "Taxe vamale conform TARIC (10%, 22% pentru pickupuri)",
+        "i1": "Taxe vamale conform TARIC (10%, 10–22% pentru pickupuri)",
         "i2": "Accize în funcție de motor și combustibil",
         "i3": "TVA în țara portului de vămuire",
         "i4": "Cursul băncii centrale din aceeași zi"
@@ -742,7 +751,7 @@
     "lead": "Nu găsești răspunsul? Calculatorul arată fiecare ipoteză, iar raportul PDF fiecare cotă și bază de impozitare.",
     "q1": {
       "q": "Cât sunt taxele vamale pentru o mașină din SUA?",
-      "a": "Pentru autoturisme (NC 8703) taxa vamală este de 10% din valoarea în vamă CIF, 22% pentru pickupuri și camionete (8704) și 6–8% pentru motociclete. Vehiculele de colecție mai vechi de 30 de ani, în stare originală, se pot încadra la 0%. Valoarea în vamă este prețul de achiziție plus taxele de licitație, transportul până la frontiera UE și asigurarea."
+      "a": "Pentru autoturisme (NC 8703) taxa vamală este de 10% din valoarea în vamă CIF, 10–22% pentru pickupuri și camionete (8704) și 6–8% pentru motociclete. Vehiculele de colecție mai vechi de 30 de ani, în stare originală, se pot încadra la 0%. Valoarea în vamă este prețul de achiziție plus taxele de licitație, transportul până la frontiera UE și asigurarea. Taxa de 0% pentru mașinile fabricate în SUA (Regulamentul (UE) 2026/1455, până la sfârșitul lui 2029) cere o dovadă a fabricației în SUA acceptată de vamă și transport direct din SUA – o factură sau un raport Carfax nu sunt suficiente. Altfel 10%."
     },
     "q2": {
       "q": "Ce accize se aplică la importul unei mașini în Polonia?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Taxe vamale",
-          "dutyValue": "10% din valoarea CIF (pickup-uri 22%, motociclete 6–8%, mașini istorice 0%)",
+          "dutyValue": "10% din valoarea CIF (pickup-uri 10–22%, motociclete 6–8%, mașini istorice 0%)",
           "vat": "TVA la import",
           "vatValue": "{{vat}}% – {{country}}",
           "vatRange": "17–27% în funcție de țara de vămuire",
@@ -1431,7 +1440,7 @@
     "total": "Taxe și tarife",
     "howTitle": "Cum calculăm",
     "how1": "Valoarea în vamă (CIF) = preț + taxe de licitație + transport până în portul UE + asigurare.",
-    "how2": "Taxe vamale: 10% din valoarea în vamă (pickup-uri 22%, motociclete 6–8%) – identice în toate porturile UE.",
+    "how2": "Taxe vamale: 10% din valoarea în vamă (pickup-uri 10–22%, motociclete 6–8%) – identice în toate porturile UE.",
     "how3": "TVA la import se plătește în țara portului, la cota acesteia, la valoarea în vamă + taxe vamale + transport până la adresa ta. O mașină second-hand vămuită în afara țării de înmatriculare ({{country}}) nu mai plătește TVA încă o dată acasă.",
     "how4": "Taxele naționale ale țării de înmatriculare (de ex. acciza poloneză) se plătesc acasă, indiferent de port.",
     "how5": "Clasamentul adaugă navlul, tarifele portuare și livrarea pe km până la adresa ta – totalul cel mai ieftin apare primul.",

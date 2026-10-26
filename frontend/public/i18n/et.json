@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Tollivormistus Poolas registreerimiseks mujal – kontrolli sihtriigi registreerimismakse.",
       "exciseDeclarationWithin14Days": "Poola aktsiis tasutakse maksuametis (AKC-U/S) 14 päeva jooksul pärast saabumist.",
-      "pickupMayBeReclassified": "Sõiduautona registreeritud pikap võib olla aktsiisiga maksustatav – kontrolli tüübikinnitust."
+      "pickupMayBeReclassified": "Sõiduautona registreeritud pikap võib olla aktsiisiga maksustatav – kontrolli tüübikinnitust.",
+      "historicNoExcise": "Kollektsioonisõiduk (KN 9705): Poola aktsiisi ei ole – kui toll selle klassifikatsiooni aktsepteerib."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Protseduur 4200: käibemaks arvestatakse ise sihtriigis (pöördmaksustamine, käibemaksukohustuslastest ettevõtetele neutraalne)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Valitud on vastuvõtt sadamas – maanteetransport koju ei ole arvestatud.",
       "selfDriveNotRunning": "Mittesõitva autoga ei saa ajutiste numbrimärkidega sõita – vali puksiirauto."
+    },
+    "duty": {
+      "preferentialPossible": "VIN-i järgi on auto toodetud lähteriigis – päritolutõendiga võib toll olla 0%. Märgi sõiduki sammus „Toodetud selles riigis“.",
+      "preferentialOriginProof": "0% toll ELi kaubanduslepingu alusel ainult kehtiva päritoludeklaratsiooniga (või importija teadmisega) – muidu rakendatakse täismäära.",
+      "usOriginProof": "0% toll USA-s toodetud autodele (määrus (EL) 2026/1455, kuni 2029. aasta lõpuni) nõuab tolli poolt aktsepteeritud tõendit USA-s tootmise kohta ja otsevedu USA-st – arve või Carfaxi raport üksi ei piisa. Muidu 10%."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "Millest maksud sõltuvad",
     "specLead": "Pakutud tüübi ja mootori põhjal. Täpsed andmed (VIN-ist või CoC-st) muudavad registreerimismaksu arvutuse palju täpsemaks.",
     "mass": "Tühimass",
-    "massHint": "kg-des. Loeb Prantsusmaal (massipõhine malus) ja Eestis."
+    "massHint": "kg-des. Loeb Prantsusmaal (massipõhine malus) ja Eestis.",
+    "preferentialOrigin": "Toodetud selles riigis – toll 0%",
+    "preferentialOriginHint": "ELi kaubandusleping / ELi–USA kokkulepe: 0% 10% asemel, kui suudad tõendada, kus auto toodeti (mitte ainult kus see müüdi). Otsustab toll – jäta igaks juhuks märkimata.",
+    "preferentialVinMatch": "VIN: toodetud selles riigis"
   },
   "layout": {
     "topbar": "Sõltumatu kalkulaator autode impordikulude arvutamiseks USA-st, Kanadast, Jaapanist, AÜE-st ja Ühendkuningriigist 27 ELi riiki",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Tollimaks (TARIC)",
-        "formula": "CIF × 10% sõiduautod · 22% pikapid · 0% klassikud",
+        "formula": "CIF × 10% sõiduautod · 10–22% pikapid · 0% klassikud",
         "text": "Määr sõltub HS-koodist; mootorrattad 6–8%."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Tollimaks ja maksud",
-        "i1": "Tollimaks TARIC-u järgi (10%, pikapid 22%)",
+        "i1": "Tollimaks TARIC-u järgi (10%, pikapid 10–22%)",
         "i2": "Aktsiis mootori ja kütuse tüübi järgi",
         "i3": "Käibemaks tollivormistuse sadama riigis",
         "i4": "Sama päeva keskpanga vahetuskurss"
@@ -742,7 +751,7 @@
     "lead": "Ei leia vastust? Kalkulaator näitab iga eeldust ja PDF-raport iga määra ja alust.",
     "q1": {
       "q": "Kui suur on tollimaks USA-st toodud autole?",
-      "a": "Sõiduautodele (KN 8703) on tollimaks 10% CIF-tolliväärtusest, pikapitele ja väikeveokitele (8704) 22% ning mootorratastele 6–8%. Üle 30 aasta vanused originaalseisukorras kollektsioonisõidukid võivad kvalifitseeruda 0% määrale. Tolliväärtus on ostuhind koos oksjonitasude, ELi piirini transpordi ja kindlustusega."
+      "a": "Sõiduautodele (KN 8703) on tollimaks 10% CIF-tolliväärtusest, pikapitele ja väikeveokitele (8704) 10–22% ning mootorratastele 6–8%. Üle 30 aasta vanused originaalseisukorras kollektsioonisõidukid võivad kvalifitseeruda 0% määrale. Tolliväärtus on ostuhind koos oksjonitasude, ELi piirini transpordi ja kindlustusega. 0% toll USA-s toodetud autodele (määrus (EL) 2026/1455, kuni 2029. aasta lõpuni) nõuab tolli poolt aktsepteeritud tõendit USA-s tootmise kohta ja otsevedu USA-st – arve või Carfaxi raport üksi ei piisa. Muidu 10%."
     },
     "q2": {
       "q": "Milline aktsiis kehtib auto importimisel Poola?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Tollimaks",
-          "dutyValue": "10% CIF-väärtusest (pikapid 22%, mootorrattad 6–8%, ajaloolised sõidukid 0%)",
+          "dutyValue": "10% CIF-väärtusest (pikapid 10–22%, mootorrattad 6–8%, ajaloolised sõidukid 0%)",
           "vat": "Impordikäibemaks",
           "vatValue": "{{vat}}% – {{country}}",
           "vatRange": "17–27% sõltuvalt tollivormistuse riigist",
@@ -1431,7 +1440,7 @@
     "total": "Maksud ja tasud",
     "howTitle": "Kuidas me arvutame",
     "how1": "Tolliväärtus (CIF) = hind + oksjonitasud + transport ELi sadamani + kindlustus.",
-    "how2": "Tollimaks: 10% tolliväärtusest (pikapid 22%, mootorrattad 6–8%) – igas ELi sadamas sama.",
+    "how2": "Tollimaks: 10% tolliväärtusest (pikapid 10–22%, mootorrattad 6–8%) – igas ELi sadamas sama.",
     "how3": "Impordikäibemaks makstakse sadama riigis selle maksumääraga tolliväärtuselt + tollimaksult + transpordilt sinu aadressini. Kasutatud auto, mis on tollivormistatud väljaspool registreerimisriiki ({{country}}), ei maksa kodus uuesti käibemaksu.",
     "how4": "Registreerimisriigi riiklikud maksud (nt Poola aktsiis) makstakse kodus – sõltumata sadamast.",
     "how5": "Pingerida liidab prakti, sadamatasud ja kohaletoimetamise kilomeetri kaupa sinu aadressini – odavaim summa on esimene.",

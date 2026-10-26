@@ -28,6 +28,10 @@ public class CustomsTariff {
     @Column(name = "electric_only")
     private Boolean electricOnly;
 
+    /** Null = any fuel; true = only diesel (compression ignition); false = only spark ignition. 8704 splits on it. */
+    @Column(name = "diesel_only")
+    private Boolean dieselOnly;
+
     @Column(name = "cc_from", nullable = false)
     private int ccFrom;
 
@@ -58,9 +62,18 @@ public class CustomsTariff {
         this.description = description;
     }
 
+    /** A non-historic row bound to diesel (true) or spark ignition (false). */
+    public static CustomsTariff byFuel(VehicleCategory vehicleCategory, boolean dieselOnly, int ccFrom, Integer ccTo,
+                                       String hsCode, BigDecimal dutyRate, String description) {
+        CustomsTariff t = new CustomsTariff(vehicleCategory, false, null, ccFrom, ccTo, hsCode, dutyRate, description);
+        t.dieselOnly = dieselOnly;
+        return t;
+    }
+
     public VehicleCategory getVehicleCategory() { return vehicleCategory; }
     public boolean isHistoric() { return historic; }
     public Boolean getElectricOnly() { return electricOnly; }
+    public Boolean getDieselOnly() { return dieselOnly; }
     public int getCcFrom() { return ccFrom; }
     public Integer getCcTo() { return ccTo; }
     public String getHsCode() { return hsCode; }

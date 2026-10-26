@@ -82,12 +82,15 @@ public final class RegistrationTaxes {
         };
     }
 
-    /** NoVA 2026: (CO₂ − 91) / 5 % of the net value, max 80 %, malus 80 € per g above 155, minus 350 €. */
+    /**
+     * NoVA 2026: (CO₂ − 91) / 5 % of the net value, rounded to whole percent, max 80 %, malus 80 € per g above 155,
+     * minus 350 €. The 91 g deduction drops by 3 g every 1 January (88 g in 2027).
+     */
     static Assessment austria(Input in) {
         if (in.fuel().isZeroEmission()) {
             return new Assessment(BigDecimal.ZERO, BigDecimal.ZERO, "NOVA_ZERO_EMISSION");
         }
-        double pct = Math.min(80, Math.max(0, (in.co2() - 91) / 5.0));
+        double pct = Math.min(80, Math.max(0, Math.round((in.co2() - 91) / 5.0)));
         double tax = in.netValue().doubleValue() * pct / 100 + Math.max(0, in.co2() - 155) * 80.0 - 350;
         return new Assessment(bd(tax), bd(pct / 100), "NOVA_2026");
     }

@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Dédouané en Pologne pour une immatriculation ailleurs – vérifiez les taxes d’immatriculation du pays de destination.",
       "exciseDeclarationWithin14Days": "L’accise polonaise se paie auprès de l’administration fiscale (AKC-U/S) dans les 14 jours suivant l’arrivée.",
-      "pickupMayBeReclassified": "Un pick-up immatriculé comme voiture particulière peut être soumis à l’accise – vérifiez l’homologation."
+      "pickupMayBeReclassified": "Un pick-up immatriculé comme voiture particulière peut être soumis à l’accise – vérifiez l’homologation.",
+      "historicNoExcise": "Véhicule de collection (NC 9705) : pas d'accise polonaise – si la douane accepte ce classement."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Régime 4200 : la TVA est autoliquidée dans le pays de destination (autoliquidation, neutre pour les entreprises assujetties à la TVA)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Retrait au port sélectionné – le transport routier jusqu’à chez vous n’est pas inclus.",
       "selfDriveNotRunning": "Une voiture qui ne roule pas ne peut pas circuler en plaques provisoires – choisissez une dépanneuse."
+    },
+    "duty": {
+      "preferentialPossible": "Le VIN indique que la voiture a été fabriquée dans le pays d'expédition – avec une preuve d'origine, le droit de douane peut être de 0 %. Cochez « Fabriquée dans ce pays » à l'étape du véhicule.",
+      "preferentialOriginProof": "Droit de 0 % au titre de l'accord commercial de l'UE uniquement avec une attestation d'origine valable (ou la connaissance de l'importateur) – sinon la douane applique le taux plein.",
+      "usOriginProof": "Le droit de 0 % sur les voitures fabriquées aux États-Unis (règlement (UE) 2026/1455, jusqu'à fin 2029) exige une preuve de fabrication américaine acceptée par la douane et un transport direct depuis les États-Unis – une facture ou un rapport Carfax ne suffit pas. Sinon 10 %."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "Ce qui détermine les taxes",
     "specLead": "Proposé d’après le type et le moteur. Des valeurs précises (du VIN ou du CoC) rendent la taxe d’immatriculation bien plus exacte.",
     "mass": "Poids à vide",
-    "massHint": "En kg. Pris en compte en France (malus au poids) et en Estonie."
+    "massHint": "En kg. Pris en compte en France (malus au poids) et en Estonie.",
+    "preferentialOrigin": "Fabriquée dans ce pays – droit de douane 0 %",
+    "preferentialOriginHint": "Accord commercial UE / accord UE–États-Unis : 0 % au lieu de 10 % si vous prouvez où la voiture a été fabriquée (pas seulement où elle a été vendue). La douane décide – par prudence, laissez décoché.",
+    "preferentialVinMatch": "VIN : fabriquée dans ce pays"
   },
   "layout": {
     "topbar": "Calculateur indépendant des coûts d’importation de voitures des États-Unis, du Canada, du Japon, des EAU et du Royaume-Uni vers les 27 pays de l’UE",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Droits de douane (TARIC)",
-        "formula": "CIF × 10 % voitures · 22 % pick-up · 0 % véhicules de collection",
+        "formula": "CIF × 10 % voitures · 10–22 % pick-up · 0 % véhicules de collection",
         "text": "Le taux dépend du code SH ; motos 6–8 %."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Droits et taxes",
-        "i1": "Droits de douane selon TARIC (10 %, 22 % pour les pick-up)",
+        "i1": "Droits de douane selon TARIC (10 %, 10–22 % pour les pick-up)",
         "i2": "Accise selon la cylindrée et le carburant",
         "i3": "TVA du pays du port de dédouanement",
         "i4": "Taux de change de la banque centrale du jour"
@@ -742,7 +751,7 @@
     "lead": "Vous ne trouvez pas votre réponse ? Le calculateur affiche chaque hypothèse et le rapport PDF chaque taux et chaque assiette.",
     "q1": {
       "q": "Quel est le montant des droits de douane sur une voiture importée des États-Unis ?",
-      "a": "Pour les voitures particulières (NC 8703), les droits de douane s’élèvent à 10 % de la valeur en douane CIF, à 22 % pour les pick-up et les véhicules utilitaires légers (8704) et à 6–8 % pour les motos. Les véhicules de collection de plus de 30 ans en état d’origine peuvent bénéficier d’un taux de 0 %. La valeur en douane correspond au prix d’achat majoré des frais d’enchère, du transport jusqu’à la frontière de l’UE et de l’assurance."
+      "a": "Pour les voitures particulières (NC 8703), les droits de douane s’élèvent à 10 % de la valeur en douane CIF, à 10–22 % pour les pick-up et les véhicules utilitaires légers (8704) et à 6–8 % pour les motos. Les véhicules de collection de plus de 30 ans en état d’origine peuvent bénéficier d’un taux de 0 %. La valeur en douane correspond au prix d’achat majoré des frais d’enchère, du transport jusqu’à la frontière de l’UE et de l’assurance. Le droit de 0 % sur les voitures fabriquées aux États-Unis (règlement (UE) 2026/1455, jusqu'à fin 2029) exige une preuve de fabrication américaine acceptée par la douane et un transport direct depuis les États-Unis – une facture ou un rapport Carfax ne suffit pas. Sinon 10 %."
     },
     "q2": {
       "q": "Quelle accise s’applique à l’importation d’une voiture en Pologne ?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Droits de douane",
-          "dutyValue": "10 % de la valeur CIF (pick-up 22 %, motos 6–8 %, véhicules de collection 0 %)",
+          "dutyValue": "10 % de la valeur CIF (pick-up 10–22 %, motos 6–8 %, véhicules de collection 0 %)",
           "vat": "TVA à l’importation",
           "vatValue": "{{vat}} % – {{country}}",
           "vatRange": "17–27 % selon le pays de dédouanement",
@@ -1431,7 +1440,7 @@
     "total": "Taxes et frais",
     "howTitle": "Notre méthode de calcul",
     "how1": "Valeur en douane (CIF) = prix + frais d’enchères + transport jusqu’au port de l’UE + assurance.",
-    "how2": "Droits de douane : 10 % de la valeur en douane (pick-up 22 %, motos 6–8 %) – identiques dans tous les ports de l’UE.",
+    "how2": "Droits de douane : 10 % de la valeur en douane (pick-up 10–22 %, motos 6–8 %) – identiques dans tous les ports de l’UE.",
     "how3": "La TVA à l’importation est payée dans le pays du port, à son taux, sur la valeur en douane + droits + transport jusqu’à votre adresse. Une voiture d’occasion dédouanée hors du pays {{country}} ne repaie pas la TVA chez vous.",
     "how4": "Les taxes nationales du pays d’immatriculation (p. ex. l’accise polonaise) se paient chez vous, quel que soit le port.",
     "how5": "Le classement ajoute le fret, les frais portuaires et la livraison au km jusqu’à votre adresse – le total le moins cher arrive en tête.",

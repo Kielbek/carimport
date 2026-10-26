@@ -147,7 +147,7 @@ public class ModelExampleGenerator implements CommandLineRunner {
                 ShippingMethod.CONTAINER_SHARED, port, country, BuyerType.PRIVATE, CustomsProcedure.STANDARD_4000,
                 currency, null, null, null, BigDecimal.ZERO, null, null, null, null, null,
                 m.get("co2").asInt(), m.get("kw").asInt(), null, m.get("kg").asInt(), null,
-                m.get("year").asInt() + " " + m.get("make").asText() + " " + m.get("model").asText());
+                m.get("year").asInt() + " " + m.get("make").asText() + " " + m.get("model").asText(), null);
     }
 
     private static BigDecimal category(CalculationResult r, CostCategory category) {

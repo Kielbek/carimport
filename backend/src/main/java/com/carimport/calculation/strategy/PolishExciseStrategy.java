@@ -38,6 +38,11 @@ public class PolishExciseStrategy implements ExciseStrategy {
             }
             return;
         }
+        if (ctx.historic()) {
+            // a collectors' item (CN 9705) is not a passenger car of CN 8703, so it is outside the Polish excise
+            ctx.warn("warning.pl.historicNoExcise");
+            return;
+        }
         ExciseRate rate = ctx.catalog().exciseRates("PL", req.fuelType()).stream()
                 .filter(r -> r.matches(req.engineCc()))
                 .findFirst()

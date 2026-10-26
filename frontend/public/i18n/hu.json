@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Lengyelországban vámkezelve, más országban történő forgalomba helyezéshez – ellenőrizze a célország regisztrációs adóit.",
       "exciseDeclarationWithin14Days": "A lengyel jövedéki adót az adóhivatalnál kell megfizetni (AKC-U/S) a beérkezéstől számított 14 napon belül.",
-      "pickupMayBeReclassified": "A személyautóként forgalomba helyezett pickup jövedéki adó alá eshet – ellenőrizze a típusjóváhagyást."
+      "pickupMayBeReclassified": "A személyautóként forgalomba helyezett pickup jövedéki adó alá eshet – ellenőrizze a típusjóváhagyást.",
+      "historicNoExcise": "Gyűjteményi jármű (KN 9705): nincs lengyel jövedéki adó – ha a vámhatóság elfogadja ezt a besorolást."
     },
     "procedure4200": {
       "reverseChargeDeductible": "4200-as eljárás: az áfát a célországban önadózással kell elszámolni (fordított adózás, áfaalany vállalkozásoknak semleges)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Kikötői átvétel kiválasztva – a hazaszállítás közúton nincs benne.",
       "selfDriveNotRunning": "Nem működő autóval nem lehet ideiglenes rendszámmal közlekedni – válasszon autómentőt."
+    },
+    "duty": {
+      "preferentialPossible": "A VIN szerint az autót a feladó országban gyártották – származási igazolással a vám 0% lehet. A jármű lépésben jelölje be: „Ebben az országban gyártották”.",
+      "preferentialOriginProof": "0% vám az EU kereskedelmi megállapodása alapján csak érvényes származási nyilatkozattal (vagy az importőr tudomása alapján) – enélkül a teljes kulcs jár.",
+      "usOriginProof": "Az USA-ban gyártott autók 0%-os vámja (2026/1455/EU rendelet, 2029 végéig) a vámhatóság által elfogadott, USA-beli gyártást igazoló bizonyítékot és az USA-ból való közvetlen szállítást igényel – egy számla vagy Carfax-jelentés önmagában nem elég. Különben 10%."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "Mitől függnek az adók",
     "specLead": "A típus és a motor alapján javasolt értékek. A pontos adatok (a VIN-ből vagy a CoC-ből) jóval pontosabbá teszik a regisztrációs adót.",
     "mass": "Saját tömeg",
-    "massHint": "kg-ban. Franciaországban (súly utáni malus) és Észtországban számít."
+    "massHint": "kg-ban. Franciaországban (súly utáni malus) és Észtországban számít.",
+    "preferentialOrigin": "Ebben az országban gyártották – 0% vám",
+    "preferentialOriginHint": "EU kereskedelmi megállapodás / EU–USA megállapodás: 10% helyett 0%, ha igazolni tudja, hol gyártották az autót (nem csak hol adták el). A vámhatóság dönt – a biztonság kedvéért hagyja üresen.",
+    "preferentialVinMatch": "VIN: ebben az országban gyártották"
   },
   "layout": {
     "topbar": "Független kalkulátor az USA-ból, Kanadából, Japánból, az Egyesült Arab Emírségekből és az Egyesült Királyságból 27 uniós országba történő autóimport költségeihez",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Vám (TARIC)",
-        "formula": "CIF × 10% személyautó · 22% pickup · 0% veterán",
+        "formula": "CIF × 10% személyautó · 10–22% pickup · 0% veterán",
         "text": "A kulcs a HS-kódtól függ; motorkerékpároknál 6–8%."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Vám és adók",
-        "i1": "Vám a TARIC szerint (10%, pickupoknál 22%)",
+        "i1": "Vám a TARIC szerint (10%, pickupoknál 10–22%)",
         "i2": "Jövedéki adó motor és üzemanyag szerint",
         "i3": "Áfa a vámkezelési kikötő országában",
         "i4": "Aznapi jegybanki árfolyam"
@@ -742,7 +751,7 @@
     "lead": "Nem találja a választ? A kalkulátor minden feltételezést, a PDF-jelentés pedig minden kulcsot és adóalapot megmutat.",
     "q1": {
       "q": "Mennyi a vám egy USA-ból behozott autóra?",
-      "a": "Személygépkocsiknál (KN 8703) a vám a CIF vámérték 10%-a, pickupoknál és könnyű tehergépkocsiknál (8704) 22%, motorkerékpároknál 6–8%. A 30 évnél idősebb, eredeti állapotú gyűjteményi járművek 0%-os vámtételre lehetnek jogosultak. A vámérték a vételár, valamint az aukciós díjak, az uniós határig történő szállítás és a biztosítás összege."
+      "a": "Személygépkocsiknál (KN 8703) a vám a CIF vámérték 10%-a, pickupoknál és könnyű tehergépkocsiknál (8704) 10–22%, motorkerékpároknál 6–8%. A 30 évnél idősebb, eredeti állapotú gyűjteményi járművek 0%-os vámtételre lehetnek jogosultak. A vámérték a vételár, valamint az aukciós díjak, az uniós határig történő szállítás és a biztosítás összege. Az USA-ban gyártott autók 0%-os vámja (2026/1455/EU rendelet, 2029 végéig) a vámhatóság által elfogadott, USA-beli gyártást igazoló bizonyítékot és az USA-ból való közvetlen szállítást igényel – egy számla vagy Carfax-jelentés önmagában nem elég. Különben 10%."
     },
     "q2": {
       "q": "Milyen jövedéki adó vonatkozik az autóimportra Lengyelországban?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Vám",
-          "dutyValue": "a CIF-érték 10%-a (pickupok 22%, motorkerékpárok 6–8%, veterán autók 0%)",
+          "dutyValue": "a CIF-érték 10%-a (pickupok 10–22%, motorkerékpárok 6–8%, veterán autók 0%)",
           "vat": "Behozatali áfa",
           "vatValue": "{{vat}}% – {{country}}",
           "vatRange": "17–27% a vámkezelés országától függően",
@@ -1431,7 +1440,7 @@
     "total": "Adók és díjak",
     "howTitle": "Így számolunk",
     "how1": "Vámérték (CIF) = ár + aukciós díjak + szállítás az uniós kikötőig + biztosítás.",
-    "how2": "Vám: a vámérték 10%-a (pickupok 22%, motorkerékpárok 6–8%) – minden uniós kikötőben azonos.",
+    "how2": "Vám: a vámérték 10%-a (pickupok 10–22%, motorkerékpárok 6–8%) – minden uniós kikötőben azonos.",
     "how3": "Az import áfát a kikötő országában, annak kulcsa szerint kell megfizetni a vámérték + vám + az Ön címéig tartó szállítás után. A forgalomba helyezés országán ({{country}}) kívül vámkezelt használt autó után otthon nem kell újra áfát fizetni.",
     "how4": "A forgalomba helyezés országának nemzeti adóit (pl. a lengyel jövedéki adót) otthon kell megfizetni – kikötőtől függetlenül.",
     "how5": "A rangsor hozzáadja a fuvart, a kikötői díjakat és a km-alapú kiszállítást az Ön címéig – a legolcsóbb összeg áll az élen.",

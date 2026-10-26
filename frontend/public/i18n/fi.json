@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Tulliselvitetty Puolassa rekisteröitäväksi muualla – tarkista määränpäämaan rekisteröintiverot.",
       "exciseDeclarationWithin14Days": "Puolan valmistevero maksetaan verotoimistoon (AKC-U/S) 14 päivän kuluessa saapumisesta.",
-      "pickupMayBeReclassified": "Henkilöautoksi rekisteröity pickup voi olla valmisteveron alainen – tarkista hyväksyntä."
+      "pickupMayBeReclassified": "Henkilöautoksi rekisteröity pickup voi olla valmisteveron alainen – tarkista hyväksyntä.",
+      "historicNoExcise": "Keräilyajoneuvo (CN 9705): ei Puolan valmisteveroa – jos tulli hyväksyy luokittelun."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Menettely 4200: ALV ilmoitetaan itse määränpäämaassa (käännetty verovelvollisuus, neutraali ALV-rekisteröidyille yrityksille)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Nouto satamasta valittu – maantiekuljetus kotiin ei sisälly.",
       "selfDriveNotRunning": "Ei-ajokuntoisella autolla ei voi ajaa siirtokilvillä – valitse hinausauto."
+    },
+    "duty": {
+      "preferentialPossible": "VIN-tunnuksen mukaan auto on valmistettu lähtömaassa – alkuperätodisteella tulli voi olla 0 %. Valitse ajoneuvovaiheessa ”Valmistettu tässä maassa”.",
+      "preferentialOriginProof": "0 %:n tulli EU:n kauppasopimuksen perusteella vain voimassa olevalla alkuperäilmoituksella (tai tuojan tiedolla) – muuten peritään täysi tulli.",
+      "usOriginProof": "0 %:n tulli Yhdysvalloissa valmistetuille autoille (asetus (EU) 2026/1455, vuoden 2029 loppuun) edellyttää tullin hyväksymää näyttöä valmistuksesta Yhdysvalloissa ja suoraa kuljetusta sieltä – lasku tai Carfax-raportti ei yksin riitä. Muuten 10 %."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "Mihin verot perustuvat",
     "specLead": "Ehdotettu tyypin ja moottorin perusteella. Tarkat tiedot (VIN-tunnuksesta tai CoC-todistuksesta) tarkentavat rekisteröintiveroa huomattavasti.",
     "mass": "Omamassa",
-    "massHint": "Kilogrammoina (kg). Merkitsee Ranskassa (painoon perustuva malus) ja Virossa."
+    "massHint": "Kilogrammoina (kg). Merkitsee Ranskassa (painoon perustuva malus) ja Virossa.",
+    "preferentialOrigin": "Valmistettu tässä maassa – tulli 0 %",
+    "preferentialOriginHint": "EU:n kauppasopimus / EU–USA-sopimus: 0 % 10 %:n sijaan, jos pystyt osoittamaan, missä auto on valmistettu (ei vain missä se myytiin). Tulli päättää – jätä varmuuden vuoksi valitsematta.",
+    "preferentialVinMatch": "VIN: valmistettu tässä maassa"
   },
   "layout": {
     "topbar": "Riippumaton laskuri autojen tuontikustannuksille Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista ja Isosta-Britanniasta 27 EU-maahan",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Tulli (TARIC)",
-        "formula": "CIF × 10 % henkilöautot · 22 % pickupit · 0 % museoajoneuvot",
+        "formula": "CIF × 10 % henkilöautot · 10–22 % pickupit · 0 % museoajoneuvot",
         "text": "Tullin määrä riippuu HS-koodista; moottoripyörät 6–8 %."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Tulli ja verot",
-        "i1": "Tulli TARICin mukaan (10 %, pickupit 22 %)",
+        "i1": "Tulli TARICin mukaan (10 %, pickupit 10–22 %)",
         "i2": "Valmistevero moottorin ja käyttövoiman mukaan",
         "i3": "ALV tulliselvityssataman maassa",
         "i4": "Saman päivän keskuspankin valuuttakurssi"
@@ -742,7 +751,7 @@
     "lead": "Etkö löydä vastausta? Laskuri näyttää jokaisen oletuksen ja PDF-raportti jokaisen verokannan ja veroperusteen.",
     "q1": {
       "q": "Paljonko tulli on Yhdysvalloista tuotavasta autosta?",
-      "a": "Henkilöautoista (CN 8703) tulli on 10 % CIF-tulliarvosta, pickupeista ja kevyistä kuorma-autoista (8704) 22 % ja moottoripyöristä 6–8 %. Yli 30 vuotta vanhat alkuperäiskuntoiset keräilyajoneuvot voivat olla oikeutettuja 0 %:n tulliin. Tulliarvo on ostohinta lisättynä huutokauppamaksuilla, kuljetuksella EU:n rajalle ja vakuutuksella."
+      "a": "Henkilöautoista (CN 8703) tulli on 10 % CIF-tulliarvosta, pickupeista ja kevyistä kuorma-autoista (8704) 10–22 % ja moottoripyöristä 6–8 %. Yli 30 vuotta vanhat alkuperäiskuntoiset keräilyajoneuvot voivat olla oikeutettuja 0 %:n tulliin. Tulliarvo on ostohinta lisättynä huutokauppamaksuilla, kuljetuksella EU:n rajalle ja vakuutuksella. 0 %:n tulli Yhdysvalloissa valmistetuille autoille (asetus (EU) 2026/1455, vuoden 2029 loppuun) edellyttää tullin hyväksymää näyttöä valmistuksesta Yhdysvalloissa ja suoraa kuljetusta sieltä – lasku tai Carfax-raportti ei yksin riitä. Muuten 10 %."
     },
     "q2": {
       "q": "Mikä valmistevero koskee auton tuontia Puolaan?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Tulli",
-          "dutyValue": "10 % CIF-arvosta (avolava-autot 22 %, moottoripyörät 6–8 %, museoajoneuvot 0 %)",
+          "dutyValue": "10 % CIF-arvosta (avolava-autot 10–22 %, moottoripyörät 6–8 %, museoajoneuvot 0 %)",
           "vat": "Tuonnin arvonlisävero",
           "vatValue": "{{vat}} % – {{country}}",
           "vatRange": "17–27 % tullausmaasta riippuen",
@@ -1431,7 +1440,7 @@
     "total": "Verot ja maksut",
     "howTitle": "Näin laskemme",
     "how1": "Tullausarvo (CIF) = hinta + huutokauppamaksut + kuljetus EU-satamaan + vakuutus.",
-    "how2": "Tulli: 10 % tullausarvosta (pickupit 22 %, moottoripyörät 6–8 %) – sama kaikissa EU-satamissa.",
+    "how2": "Tulli: 10 % tullausarvosta (pickupit 10–22 %, moottoripyörät 6–8 %) – sama kaikissa EU-satamissa.",
     "how3": "Maahantuonnin ALV maksetaan sataman maassa sen verokannalla tullausarvosta + tullista + kuljetuksesta osoitteeseesi. Käytetystä autosta, joka on tullattu muualla kuin rekisteröintimaassa ({{country}}), ei makseta ALV:tä uudelleen kotimaassa.",
     "how4": "Rekisteröintimaan kansalliset verot (esim. Puolan valmistevero) maksetaan kotimaassa satamasta riippumatta.",
     "how5": "Järjestykseen lisätään rahti, satamamaksut ja toimitus kilometreittäin osoitteeseesi – edullisin summa on ensimmäisenä.",

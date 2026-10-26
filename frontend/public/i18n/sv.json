@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Förtullad i Polen för registrering i ett annat land – kontrollera destinationslandets registreringsskatter.",
       "exciseDeclarationWithin14Days": "Polsk punktskatt betalas till skattekontoret (AKC-U/S) inom 14 dagar från ankomsten.",
-      "pickupMayBeReclassified": "En pickup som registreras som personbil kan bli punktskattepliktig – kontrollera typgodkännandet."
+      "pickupMayBeReclassified": "En pickup som registreras som personbil kan bli punktskattepliktig – kontrollera typgodkännandet.",
+      "historicNoExcise": "Samlarfordon (KN 9705): ingen polsk punktskatt – förutsatt att tullen godtar klassificeringen."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Förfarande 4200: momsen redovisas i destinationslandet (omvänd skattskyldighet, neutral för momsregistrerade företag)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Avhämtning i hamnen vald – vägtransport hem ingår inte.",
       "selfDriveNotRunning": "En bil som inte går kan inte köras på tillfälliga skyltar – välj bärgningsbil."
+    },
+    "duty": {
+      "preferentialPossible": "Enligt VIN är bilen byggd i avsändarlandet – med ursprungsbevis kan tullen bli 0 %. Kryssa i ”Byggd i detta land” i fordonssteget.",
+      "preferentialOriginProof": "0 % tull enligt EU:s handelsavtal endast med en giltig ursprungsförsäkran (eller importörens kännedom) – annars tas full sats ut.",
+      "usOriginProof": "0 % tull på bilar byggda i USA (förordning (EU) 2026/1455, till slutet av 2029) kräver bevis på amerikansk tillverkning som tullen godtar och direkt transport från USA – en faktura eller Carfax-rapport räcker inte. Annars 10 %."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "Vad skatterna baseras på",
     "specLead": "Föreslaget utifrån typ och motor. Exakta uppgifter (från VIN eller CoC) gör registreringsskatten mycket mer exakt.",
     "mass": "Tjänstevikt",
-    "massHint": "I kg. Räknas i Frankrike (viktmalus) och Estland."
+    "massHint": "I kg. Räknas i Frankrike (viktmalus) och Estland.",
+    "preferentialOrigin": "Byggd i detta land – 0 % tull",
+    "preferentialOriginHint": "EU:s handelsavtal / EU–USA-avtalet: 0 % i stället för 10 % om du kan bevisa var bilen byggdes (inte bara var den såldes). Tullen avgör – lämna rutan tom för säkerhets skull.",
+    "preferentialVinMatch": "VIN: byggd i detta land"
   },
   "layout": {
     "topbar": "Oberoende kalkylator för kostnaden att importera bil från USA, Kanada, Japan, Förenade Arabemiraten och Storbritannien till 27 EU-länder",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Tull (TARIC)",
-        "formula": "CIF × 10 % bilar · 22 % pickuper · 0 % veteranbilar",
+        "formula": "CIF × 10 % bilar · 10–22 % pickuper · 0 % veteranbilar",
         "text": "Satsen beror på HS-numret; motorcyklar 6–8 %."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Tull och skatter",
-        "i1": "Tull enligt TARIC (10 %, 22 % för pickuper)",
+        "i1": "Tull enligt TARIC (10 %, 10–22 % för pickuper)",
         "i2": "Punktskatt efter motor och bränsletyp",
         "i3": "Moms i förtullningshamnens land",
         "i4": "Centralbankens växelkurs samma dag"
@@ -742,7 +751,7 @@
     "lead": "Hittar du inte svaret? Kalkylatorn visar varje antagande och PDF-rapporten varje sats och underlag.",
     "q1": {
       "q": "Hur hög är tullen på en bil från USA?",
-      "a": "För personbilar (KN 8703) är tullen 10 % av tullvärdet (CIF), 22 % för pickuper och lätta lastbilar (8704) och 6–8 % för motorcyklar. Samlarfordon över 30 år i originalskick kan omfattas av 0 %. Tullvärdet är köpesumman plus auktionsavgifter, transport till EU:s gräns och försäkring."
+      "a": "För personbilar (KN 8703) är tullen 10 % av tullvärdet (CIF), 10–22 % för pickuper och lätta lastbilar (8704) och 6–8 % för motorcyklar. Samlarfordon över 30 år i originalskick kan omfattas av 0 %. Tullvärdet är köpesumman plus auktionsavgifter, transport till EU:s gräns och försäkring. 0 % tull på bilar byggda i USA (förordning (EU) 2026/1455, till slutet av 2029) kräver bevis på amerikansk tillverkning som tullen godtar och direkt transport från USA – en faktura eller Carfax-rapport räcker inte. Annars 10 %."
     },
     "q2": {
       "q": "Vilken punktskatt gäller vid import av en bil till Polen?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Tull",
-          "dutyValue": "10 % av CIF-värdet (pickuper 22 %, motorcyklar 6–8 %, veteranbilar 0 %)",
+          "dutyValue": "10 % av CIF-värdet (pickuper 10–22 %, motorcyklar 6–8 %, veteranbilar 0 %)",
           "vat": "Importmoms",
           "vatValue": "{{vat}} % – {{country}}",
           "vatRange": "17–27 % beroende på förtullningsland",
@@ -1431,7 +1440,7 @@
     "total": "Skatter och avgifter",
     "howTitle": "Så räknar vi",
     "how1": "Tullvärde (CIF) = pris + auktionsavgifter + transport till EU-hamnen + försäkring.",
-    "how2": "Tull: 10 % av tullvärdet (pickuper 22 %, motorcyklar 6–8 %) – samma i alla EU-hamnar.",
+    "how2": "Tull: 10 % av tullvärdet (pickuper 10–22 %, motorcyklar 6–8 %) – samma i alla EU-hamnar.",
     "how3": "Importmomsen betalas i hamnens land, enligt dess skattesats, på tullvärde + tull + transport till din adress. En begagnad bil som förtullas utanför {{country}} betalar inte moms igen hemma.",
     "how4": "Registreringslandets nationella skatter (t.ex. polsk punktskatt) betalas hemma – oavsett hamn.",
     "how5": "Rankningen lägger till frakt, hamnavgifter och leverans per km till din adress – den billigaste summan står först.",

@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "In Polen verzollt, Zulassung in einem anderen Land – Zulassungssteuern prüfen.",
       "exciseDeclarationWithin14Days": "Die polnische Verbrauchsteuer ist binnen 14 Tagen beim Finanzamt (AKC-U/S) zu zahlen.",
-      "pickupMayBeReclassified": "Ein als Pkw zugelassener Pickup kann verbrauchsteuerpflichtig sein."
+      "pickupMayBeReclassified": "Ein als Pkw zugelassener Pickup kann verbrauchsteuerpflichtig sein.",
+      "historicNoExcise": "Sammlerfahrzeug (KN 9705): keine polnische Verbrauchsteuer – sofern der Zoll diese Einreihung anerkennt."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Verfahren 4200: Die Steuer wird im Zielland per Reverse Charge erklärt (neutral für Unternehmer)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Abholung im Hafen gewählt – Transport nach Hause nicht enthalten.",
       "selfDriveNotRunning": "Ein nicht fahrbereites Auto kann nicht überführt werden – wählen Sie einen Abschleppwagen."
+    },
+    "duty": {
+      "preferentialPossible": "Laut FIN wurde das Auto im Versandland gebaut – mit Ursprungsnachweis kann der Zoll 0 % betragen. Kreuzen Sie im Fahrzeugschritt „In diesem Land gebaut“ an, um es zu berücksichtigen.",
+      "preferentialOriginProof": "0 % Zoll nach dem EU-Handelsabkommen nur mit gültiger Erklärung zum Ursprung (oder Kenntnis des Einführers) – ohne sie gilt der volle Satz.",
+      "usOriginProof": "0 % Zoll auf in den USA gebaute Autos (Verordnung (EU) 2026/1455, bis Ende 2029) erfordert einen vom Zoll anerkannten Nachweis der US-Herstellung und direkten Transport aus den USA – Rechnung oder Carfax-Bericht allein reichen nicht. Sonst 10 %."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "Wonach sich die Steuern richten",
     "specLead": "Vorgeschlagen nach Typ und Motor. Genaue Werte (aus der VIN oder dem CoC) machen die Zulassungssteuer deutlich genauer.",
     "mass": "Leergewicht",
-    "massHint": "In kg. Relevant in Frankreich (Gewichtsmalus) und Estland."
+    "massHint": "In kg. Relevant in Frankreich (Gewichtsmalus) und Estland.",
+    "preferentialOrigin": "In diesem Land gebaut – 0 % Zoll",
+    "preferentialOriginHint": "EU-Handelsabkommen / EU-US-Vereinbarung: 0 % statt 10 %, wenn Sie nachweisen können, wo das Auto gebaut wurde (nicht nur, wo es verkauft wurde). Der Zoll entscheidet – sicherheitshalber nicht ankreuzen.",
+    "preferentialVinMatch": "FIN: in diesem Land gebaut"
   },
   "layout": {
     "topbar": "Unabhängiger Rechner für Importkosten von Autos aus den USA, Kanada, Japan, den VAE und UK in 27 EU-Länder",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Zoll (TARIC)",
-        "formula": "CIF × 10 % Pkw · 22 % Pickup · 0 % Oldtimer",
+        "formula": "CIF × 10 % Pkw · 10–22 % Pickup · 0 % Oldtimer",
         "text": "Satz hängt vom HS-Code ab; Motorräder 6–8 %."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Zoll & Steuern",
-        "i1": "Zoll nach TARIC (10 %, 22 % für Pickups)",
+        "i1": "Zoll nach TARIC (10 %, 10–22 % für Pickups)",
         "i2": "Verbrauchsteuer nach Motor und Antrieb",
         "i3": "EUSt im Land des Zollhafens",
         "i4": "Tagesaktueller Referenzkurs"
@@ -742,7 +751,7 @@
     "lead": "Keine Antwort gefunden? Der Rechner zeigt alle Annahmen, der PDF-Bericht jeden Satz.",
     "q1": {
       "q": "Wie hoch ist der Zoll auf ein Auto aus den USA?",
-      "a": "Für Pkw (KN 8703) beträgt der Zoll 10 % des CIF-Zollwerts, für Pickups und leichte Lkw (8704) 22 %, für Motorräder 6–8 %. Oldtimer über 30 Jahre im Originalzustand können 0 % erhalten. Der Zollwert umfasst Kaufpreis, Auktionsgebühren, Transport bis zur EU-Grenze und Versicherung."
+      "a": "Für Pkw (KN 8703) beträgt der Zoll 10 % des CIF-Zollwerts, für Pickups und leichte Lkw (8704) 10–22 %, für Motorräder 6–8 %. Oldtimer über 30 Jahre im Originalzustand können 0 % erhalten. Der Zollwert umfasst Kaufpreis, Auktionsgebühren, Transport bis zur EU-Grenze und Versicherung. 0 % Zoll auf in den USA gebaute Autos (Verordnung (EU) 2026/1455, bis Ende 2029) erfordert einen vom Zoll anerkannten Nachweis der US-Herstellung und direkten Transport aus den USA – Rechnung oder Carfax-Bericht allein reichen nicht. Sonst 10 %."
     },
     "q2": {
       "q": "Welche Verbrauchsteuer gilt beim Import nach Polen?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Zoll",
-          "dutyValue": "10 % des CIF-Werts (Pickups 22 %, Motorräder 6–8 %, Oldtimer 0 %)",
+          "dutyValue": "10 % des CIF-Werts (Pickups 10–22 %, Motorräder 6–8 %, Oldtimer 0 %)",
           "vat": "Einfuhrumsatzsteuer",
           "vatValue": "{{vat}} % – {{country}}",
           "vatRange": "17–27 % je nach Land der Verzollung",
@@ -1431,7 +1440,7 @@
     "total": "Steuern und Gebühren",
     "howTitle": "So rechnen wir",
     "how1": "Zollwert (CIF) = Preis + Auktionsgebühren + Transport bis zum EU-Hafen + Versicherung.",
-    "how2": "Zoll: 10 % des Zollwerts (Pickups 22 %, Motorräder 6–8 %) – in jedem EU-Hafen gleich.",
+    "how2": "Zoll: 10 % des Zollwerts (Pickups 10–22 %, Motorräder 6–8 %) – in jedem EU-Hafen gleich.",
     "how3": "Die Einfuhrumsatzsteuer zahlen Sie im Land des Hafens zu dessen Satz auf Zollwert + Zoll + Transport bis zu Ihrer Adresse. Ein Gebrauchtwagen, der außerhalb von {{country}} verzollt wird, zahlt zu Hause keine Umsatzsteuer mehr.",
     "how4": "Nationale Steuern des Zulassungslandes zahlen Sie zu Hause – unabhängig vom Hafen.",
     "how5": "Das Ranking addiert Fracht, Hafengebühren und Lieferung pro km zu Ihrer Adresse – die günstigste Summe steht oben.",

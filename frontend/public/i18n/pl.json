@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Odprawa w Polsce dla auta rejestrowanego w innym kraju UE – sprawdź podatki rejestracyjne kraju docelowego.",
       "exciseDeclarationWithin14Days": "Akcyzę zapłacisz w polskim urzędzie skarbowym (AKC-U/S) w ciągu 14 dni od przywozu.",
-      "pickupMayBeReclassified": "Pickup zarejestrowany jako osobowy może podlegać akcyzie – sprawdź homologację."
+      "pickupMayBeReclassified": "Pickup zarejestrowany jako osobowy może podlegać akcyzie – sprawdź homologację.",
+      "historicNoExcise": "Pojazd kolekcjonerski (CN 9705) nie podlega polskiej akcyzie – o ile urząd celny uzna tę klasyfikację."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Procedura 4200: VAT rozliczasz w kraju docelowym w mechanizmie odwrotnego obciążenia (neutralny dla czynnego podatnika VAT)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Wybrano odbiór w porcie – transport do domu nie jest wliczony.",
       "selfDriveNotRunning": "Auto niejezdne nie może jechać na tablicach tymczasowych – wybierz lawetę."
+    },
+    "duty": {
+      "preferentialPossible": "Według VIN auto wyprodukowano w kraju, z którego jest wysyłane – z dowodem pochodzenia cło może wynieść 0%. Zaznacz „Auto wyprodukowane w tym kraju” w kroku pojazdu, aby to uwzględnić.",
+      "preferentialOriginProof": "Cło 0% z umowy handlowej UE tylko z ważną deklaracją pochodzenia (lub wiedzą importera o pochodzeniu) – bez niej urząd naliczy pełną stawkę.",
+      "usOriginProof": "Cło 0% na auta wyprodukowane w USA (rozporządzenie (UE) 2026/1455, do końca 2029) wymaga dowodu produkcji w USA uznanego przez urząd celny i transportu bezpośrednio z USA – sama faktura czy raport Carfax nie wystarczą. Bez tego cło wynosi 10%."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "Od czego zależą podatki",
     "specLead": "Proponujemy wartości z typu i silnika. Dokładne dane (z VIN lub CoC) mocno poprawiają wyliczenie podatku rejestracyjnego.",
     "mass": "Masa własna",
-    "massHint": "W kg. Liczy się we Francji (malus od wagi) i w Estonii."
+    "massHint": "W kg. Liczy się we Francji (malus od wagi) i w Estonii.",
+    "preferentialOrigin": "Auto wyprodukowane w tym kraju – cło 0%",
+    "preferentialOriginHint": "Umowa handlowa UE / porozumienie UE–USA: 0% zamiast 10%, jeśli udowodnisz, gdzie auto wyprodukowano (nie tylko gdzie je sprzedano). Decyduje urząd celny – dla bezpieczeństwa zostaw niezaznaczone.",
+    "preferentialVinMatch": "VIN: wyprodukowany w tym kraju"
   },
   "layout": {
     "topbar": "Niezależny kalkulator kosztów importu aut z USA, Kanady, Japonii, ZEA i UK do 27 krajów UE",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Cło (TARIC)",
-        "formula": "CIF × 10% osobowe · 22% pickup · 0% zabytki",
+        "formula": "CIF × 10% osobowe · 10–22% pickup · 0% zabytki",
         "text": "Stawka zależy od kodu HS pojazdu; motocykle 6–8%."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Cło i podatki",
-        "i1": "Cło według TARIC (10%, 22% dla pickupów)",
+        "i1": "Cło według TARIC (10%, 10–22% dla pickupów)",
         "i2": "Akcyza zależna od silnika i napędu",
         "i3": "VAT w kraju portu odprawy",
         "i4": "Kurs NBP / EBC z bieżącego dnia"
@@ -742,7 +751,7 @@
     "lead": "Nie znalazłeś odpowiedzi? Kalkulator pokazuje wszystkie założenia, a raport PDF — każdą stawkę i podstawę.",
     "q1": {
       "q": "Ile wynosi cło na samochód z USA?",
-      "a": "Dla samochodów osobowych (kod CN 8703) cło wynosi 10% wartości celnej CIF, dla pickupów i lekkich ciężarówek (8704) 22%, a dla motocykli 6–8%. Pojazdy kolekcjonerskie powyżej 30 lat w stanie oryginalnym mogą być objęte stawką 0%. Wartość celna to cena zakupu powiększona o opłaty aukcyjne, transport do granicy UE i ubezpieczenie."
+      "a": "Dla samochodów osobowych (kod CN 8703) cło wynosi 10% wartości celnej CIF, dla pickupów i lekkich ciężarówek (8704) 10–22%, a dla motocykli 6–8%. Pojazdy kolekcjonerskie powyżej 30 lat w stanie oryginalnym mogą być objęte stawką 0%. Wartość celna to cena zakupu powiększona o opłaty aukcyjne, transport do granicy UE i ubezpieczenie. Cło 0% na auta wyprodukowane w USA (rozporządzenie (UE) 2026/1455, do końca 2029) wymaga dowodu produkcji w USA uznanego przez urząd celny i transportu bezpośrednio z USA – sama faktura czy raport Carfax nie wystarczą. Bez tego cło wynosi 10%."
     },
     "q2": {
       "q": "Jaka akcyza obowiązuje przy imporcie auta do Polski?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Cło",
-          "dutyValue": "10% wartości celnej CIF (pickupy 22%, motocykle 6–8%, zabytki 0%)",
+          "dutyValue": "10% wartości celnej CIF (pickupy 10–22%, motocykle 6–8%, zabytki 0%)",
           "vat": "VAT importowy",
           "vatValue": "{{vat}}% – {{country}}",
           "vatRange": "17–27% zależnie od kraju odprawy",
@@ -1431,7 +1440,7 @@
     "total": "Podatki i opłaty",
     "howTitle": "Jak to liczymy",
     "how1": "Wartość celna (CIF) = cena + opłaty aukcyjne + transport do portu w UE + ubezpieczenie.",
-    "how2": "Cło: 10% wartości celnej (pickupy 22%, motocykle 6–8%) – takie samo w każdym porcie UE.",
+    "how2": "Cło: 10% wartości celnej (pickupy 10–22%, motocykle 6–8%) – takie samo w każdym porcie UE.",
     "how3": "VAT importowy płacisz w kraju portu, według jego stawki, od wartości celnej + cła + transportu do Twojego adresu. Używane auto odprawione poza krajem: {{country}} nie płaci VAT drugi raz w kraju.",
     "how4": "Podatki kraju rejestracji (np. polska akcyza) płacisz w kraju – niezależnie od portu.",
     "how5": "Ranking dolicza fracht, opłaty portowe i dowóz za km pod Twój adres – najtańsza suma jest na górze.",

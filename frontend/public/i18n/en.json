@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Cleared in Poland for registration elsewhere – check the destination's registration taxes.",
       "exciseDeclarationWithin14Days": "Polish excise is paid at the tax office (AKC-U/S) within 14 days of arrival.",
-      "pickupMayBeReclassified": "A pickup registered as a passenger car may be subject to excise – check the approval."
+      "pickupMayBeReclassified": "A pickup registered as a passenger car may be subject to excise – check the approval.",
+      "historicNoExcise": "Collector's vehicle (CN 9705): no Polish excise duty – provided customs accept this classification."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Procedure 4200: VAT is self-assessed in the destination country (reverse charge, neutral for VAT-registered businesses)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Port pickup selected – road transport home is not included.",
       "selfDriveNotRunning": "A non-running car cannot be driven on temporary plates – choose a tow truck."
+    },
+    "duty": {
+      "preferentialPossible": "The VIN shows the car was built in the country it ships from – with proof of origin the duty can be 0%. Tick “Made in this country” in the vehicle step to include it.",
+      "preferentialOriginProof": "0% duty under the EU trade agreement only with a valid statement on origin (or the importer's knowledge of the origin) – without it customs charge the full rate.",
+      "usOriginProof": "0% duty on US-built cars (Regulation (EU) 2026/1455, until the end of 2029) needs proof of US manufacture accepted by customs and direct shipment from the USA – an invoice or a Carfax report alone is not enough. Without it the duty is 10%."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "What the taxes are based on",
     "specLead": "Proposed from the type and engine. Precise figures (from the VIN or the CoC) make the registration tax far more accurate.",
     "mass": "Curb weight",
-    "massHint": "Kerb weight in kg. Counts in France (weight malus) and Estonia."
+    "massHint": "Kerb weight in kg. Counts in France (weight malus) and Estonia.",
+    "preferentialOrigin": "Car built in this country – 0% duty",
+    "preferentialOriginHint": "EU trade agreement / EU–US deal: 0% instead of 10% if you can prove where the car was built (not just where it was sold). Customs decide – leave it unticked to stay on the safe side.",
+    "preferentialVinMatch": "VIN: built in this country"
   },
   "layout": {
     "topbar": "Independent calculator of car import costs from the USA, Canada, Japan, UAE and UK to 27 EU countries",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Customs duty (TARIC)",
-        "formula": "CIF × 10% cars · 22% pickups · 0% classics",
+        "formula": "CIF × 10% cars · 10–22% pickups · 0% classics",
         "text": "The rate depends on the HS code; motorcycles 6–8%."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Duty & taxes",
-        "i1": "Duty per TARIC (10%, 22% for pickups)",
+        "i1": "Duty per TARIC (10%, 10–22% for pickups)",
         "i2": "Excise by engine and fuel type",
         "i3": "VAT in the port-of-clearance country",
         "i4": "Same-day central bank exchange rate"
@@ -742,7 +751,7 @@
     "lead": "Can’t find your answer? The calculator shows every assumption and the PDF report every rate and base.",
     "q1": {
       "q": "How much is customs duty on a car from the USA?",
-      "a": "For passenger cars (CN 8703) duty is 10% of the CIF customs value, 22% for pickups and light trucks (8704) and 6–8% for motorcycles. Collector vehicles over 30 years old in original condition may qualify for 0%. The customs value is the purchase price plus auction fees, transport to the EU border and insurance."
+      "a": "For passenger cars (CN 8703) duty is 10% of the CIF customs value, 10–22% for pickups and light trucks (8704) and 6–8% for motorcycles. Collector vehicles over 30 years old in original condition may qualify for 0%. The customs value is the purchase price plus auction fees, transport to the EU border and insurance. 0% duty on US-built cars (Regulation (EU) 2026/1455, until the end of 2029) needs proof of US manufacture accepted by customs and direct shipment from the USA – an invoice or a Carfax report alone is not enough. Without it the duty is 10%."
     },
     "q2": {
       "q": "What excise applies when importing a car to Poland?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Customs duty",
-          "dutyValue": "10% of the CIF value (pickups 22%, motorcycles 6–8%, historic cars 0%)",
+          "dutyValue": "10% of the CIF value (pickups 10–22%, motorcycles 6–8%, historic cars 0%)",
           "vat": "Import VAT",
           "vatValue": "{{vat}}% – {{country}}",
           "vatRange": "17–27% depending on the country of clearance",
@@ -1431,7 +1440,7 @@
     "total": "Taxes and fees",
     "howTitle": "How we calculate it",
     "how1": "Customs value (CIF) = price + auction fees + transport to the EU port + insurance.",
-    "how2": "Customs duty: 10% of the customs value (pickups 22%, motorcycles 6–8%) – identical in every EU port.",
+    "how2": "Customs duty: 10% of the customs value (pickups 10–22%, motorcycles 6–8%) – identical in every EU port.",
     "how3": "Import VAT is paid in the country of the port, at its rate, on customs value + duty + transport to your address. A used car cleared outside {{country}} does not pay VAT again at home.",
     "how4": "National taxes of the country of registration (e.g. Polish excise) are paid at home whichever port you use.",
     "how5": "The ranking adds freight, port fees and delivery per km to your address – the cheapest total comes first.",
