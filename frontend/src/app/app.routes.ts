@@ -32,6 +32,8 @@ const localized = (slugs: Record<string, string>, load: NonNullable<Route['loadC
 
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: () => inject(LanguageService).detect() },
+  // operator panel: Polish only, client-rendered, not indexed
+  { path: 'admin', loadComponent: () => import('./features/admin/admin-page').then((m) => m.AdminPage), data: { page: 'admin' } },
   {
     path: ':lang',
     canActivate: [languageGuard],

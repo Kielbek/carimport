@@ -7,6 +7,9 @@
 
 [(#{mail.report.keep})]
 [(#{mail.report.questions})]
+
+[(#{mail.report.orderTitle})]: [(#{mail.report.orderLine(${orderNo}, ${amount}, ${paidDate})})]
+[(#{mail.report.receiptNote})]
 [# th:if="${termsVersion != null}"]
 [(#{mail.report.consent(${termsVersion})})]
 [/]

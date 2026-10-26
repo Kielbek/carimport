@@ -103,7 +103,7 @@ class ReportMailerTest {
                 new AppProperties.Company("Carglo Sp. z o.o.", "ul. Testowa 1, 00-001 Warszawa", "NIP 1234567890",
                         "cargloapp@gmail.com"));
         return new ReportMailer(orders, quotes, storage, provider, engine, messages, props,
-                Clock.fixed(NOW, ZoneOffset.UTC), host);
+                Clock.fixed(NOW, ZoneOffset.UTC), host, event -> { });
     }
 
     @Test
@@ -118,7 +118,8 @@ class ReportMailerTest {
         String body = bodies((Multipart) m.getContent());
         assertThat(body).contains("Dzień dobry Jan Kowalski", "Carglo Sp. z o.o.", "NIP 1234567890",
                 "regulamin w wersji z dnia 2026-10-24",
-                "import-report-" + order.getId() + ".pdf", "cid:logo");
+                "import-report-" + order.getId() + ".pdf", "cid:logo", "Potwierdzenie zakupu",
+                "Zamówienie nr " + order.getId().toString().substring(0, 8).toUpperCase());
         var raw = new java.io.ByteArrayOutputStream();
         m.writeTo(raw);
         assertThat(raw.toString()).contains("Content-ID: <logo>");   // the header logo travels inside the message

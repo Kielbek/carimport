@@ -1,5 +1,6 @@
 package com.carimport.report;
 
+import com.carimport.ops.OpsAlert;
 import com.carimport.payment.ReportOrder;
 import com.carimport.payment.ReportOrderRepository;
 import com.carimport.quote.QuoteRepository;
@@ -53,6 +54,10 @@ public class ReportGenerationService {
         } catch (RuntimeException e) {
             log.error("Report {} generation failed (attempt {})", orderId, order.getGenerationAttempts(), e);
             order.markFailed();
+            events.publishEvent(new OpsAlert("report-failed:" + orderId, "Report PDF failed for order " + order.getNumber(),
+                    "The paid report of order " + orderId + " (" + order.getEmail() + ") could not be generated: " + e
+                            + "\nThe buyer sees an error on the report page. Fix the cause, then press 'Generate again' "
+                            + "in the admin panel or refund the payment in Stripe."));
         }
     }
 }

@@ -17,3 +17,6 @@ frontend/.angular/
 
 # database and report backups (deploy/backup.sh)
 /backups/
+
+# end-to-end test output
+frontend/e2e/out/

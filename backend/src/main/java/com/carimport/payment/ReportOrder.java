@@ -189,4 +189,15 @@ public class ReportOrder {
     public int getGenerationAttempts() { return generationAttempts; }
     public Instant getPaidAt() { return paidAt; }
     public Instant getReadyAt() { return readyAt; }
+    public Instant getCreatedAt() { return createdAt; }
+    public String getStripePaymentIntentId() { return stripePaymentIntentId; }
+
+    /** Admin "send again": the next delivery goes out as if it were the first (fresh link, attempts reset). */
+    public void resetEmailDelivery() {
+        emailSentAt = null;
+        emailAttempts = 0;
+    }
+
+    /** Short order number shown to the buyer (e-mail, Stripe receipt, admin panel). */
+    public String getNumber() { return id.toString().substring(0, 8).toUpperCase(); }
 }

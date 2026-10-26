@@ -8,13 +8,21 @@ import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 import java.io.IOException;
 import java.io.InputStream;
+import java.math.BigDecimal;
+import java.text.NumberFormat;
 import java.time.Clock;
+import java.time.Instant;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.util.Locale;
 import java.util.UUID;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Value;
+import com.carimport.ops.OpsAlert;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.MessageSource;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.ClassPathResource;
@@ -40,6 +48,7 @@ public class ReportMailer {
     private static final Logger log = LoggerFactory.getLogger(ReportMailer.class);
     /** Header lockup embedded in the message (cid:logo) - remote images are blocked by most mail clients. */
     private static final ClassPathResource LOGO = new ClassPathResource("mail/logo.png");
+    static final int ALERT_AFTER_ATTEMPTS = 3;
 
     private final ReportOrderRepository orders;
     private final QuoteRepository quotes;
@@ -50,10 +59,13 @@ public class ReportMailer {
     private final AppProperties props;
     private final Clock clock;
     private final String smtpHost;
+    private final ApplicationEventPublisher events;
 
     public ReportMailer(ReportOrderRepository orders, QuoteRepository quotes, ReportStorage storage,
                         ObjectProvider<JavaMailSender> sender, TemplateEngine templates, MessageSource messages,
-                        AppProperties props, Clock clock, @Value("${spring.mail.host:}") String smtpHost) {
+                        AppProperties props, Clock clock, @Value("${spring.mail.host:}") String smtpHost,
+                        ApplicationEventPublisher events) {
+        this.events = events;
         this.orders = orders;
         this.quotes = quotes;
         this.storage = storage;
@@ -67,6 +79,12 @@ public class ReportMailer {
 
     public boolean enabled() {
         return StringUtils.hasText(smtpHost) && sender.getIfAvailable() != null;
+    }
+
+    /** Admin "send again": a new e-mail with a fresh link, even when one went out before. */
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    public void resend(UUID orderId) {
+        orders.findById(orderId).orElseThrow().resetEmailDelivery();
     }
 
     /** Idempotent: an order is mailed once; a failed attempt is retried by {@link ReportMailTriggers}. */
@@ -87,6 +105,12 @@ public class ReportMailer {
         } catch (MailException | MessagingException | IOException e) {
             log.warn("Report e-mail for order {} failed (attempt {}): {}", orderId, order.getEmailAttempts(),
                     e.toString());
+            if (order.getEmailAttempts() >= ALERT_AFTER_ATTEMPTS) {
+                events.publishEvent(new OpsAlert("mail:" + orderId, "Report e-mail keeps failing for order " + order.getNumber(),
+                        "Attempt " + order.getEmailAttempts() + " to send the report of order " + orderId + " to "
+                                + order.getEmail() + " failed: " + e + "\nCheck the SMTP settings (SMTP_* in .env). "
+                                + "The buyer can still open the report from the page they paid on; 'Send again' is in the admin panel."));
+            }
         }
     }
 
@@ -103,6 +127,14 @@ public class ReportMailer {
         ctx.setVariable("company", props.company());
         // confirmation of the withdrawal-right waiver on a durable medium (Art. 8(7)(b) Directive 2011/83/EU)
         ctx.setVariable("termsVersion", order.getTermsVersion());
+        // purchase confirmation: number, amount and date (the payment receipt itself comes from Stripe)
+        ctx.setVariable("orderNo", order.getNumber());
+        NumberFormat money = NumberFormat.getCurrencyInstance(locale);
+        money.setCurrency(java.util.Currency.getInstance(order.getCurrency().name()));
+        ctx.setVariable("amount", money.format(BigDecimal.valueOf(order.getAmountMinor(), 2)));
+        Instant paid = order.getPaidAt() != null ? order.getPaidAt() : clock.instant();
+        ctx.setVariable("paidDate", DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM).withLocale(locale)
+                .format(paid.atZone(ZoneId.of("Europe/Warsaw"))));
 
         MimeMessage message = sender.getObject().createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
