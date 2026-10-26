@@ -73,7 +73,7 @@ import { NewsletterSignup } from '../features/newsletter/newsletter-signup';
           <h2 class="label">{{ 'footer.language' | translate }}</h2>
           <ul class="flex flex-wrap gap-1.5 text-sm">
             @for (l of langs; track l.code) {
-              <li><a [routerLink]="'/' + l.code" [attr.hreflang]="l.code" [attr.title]="l.native" class="chip !min-h-8 !px-2.5 text-xs" [class.chip--active]="l.code === lang.current()">{{ l.label }}</a></li>
+              <li><a [routerLink]="'/' + l.code" [attr.hreflang]="l.code" [attr.title]="l.native" class="chip !min-h-8 !px-2.5 text-xs" [class.chip--active]="l.code === lang.current()"><app-flag [code]="l.flag" class="w-4" /> {{ l.label }}</a></li>
             }
           </ul>
           <p class="mt-6 flex items-start gap-2 text-xs leading-relaxed text-muted">

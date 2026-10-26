@@ -24,7 +24,7 @@
                 "input": "public"
               },
               {
-                "glob": "{us,ca,jp,ae,gb,eu,pl,de,nl,be,cz,sk,lt,at,fr,it,es,lv,ee,fi,se,dk,ie,pt,hu,ro,bg,hr,si,gr,cy,mt,lu}.svg",
+                "glob": "{us,ca,jp,ae,gb,ua,eu,pl,de,nl,be,cz,sk,lt,at,fr,it,es,lv,ee,fi,se,dk,ie,pt,hu,ro,bg,hr,si,gr,cy,mt,lu}.svg",
                 "input": "node_modules/flag-icons/flags/4x3",
                 "output": "flags"
               }

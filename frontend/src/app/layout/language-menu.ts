@@ -2,17 +2,18 @@ import { Component, ElementRef, computed, inject, input, signal } from '@angular
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LANGUAGES, Lang, LanguageService } from '../core/i18n/language.service';
+import { Flag } from '../shared/flag/flag';
 import { Icon } from '../shared/icon/icon';
 
 /** Language dropdown. Links (not buttons) so crawlers discover every language version of the current page. */
 @Component({
   selector: 'app-language-menu',
-  imports: [RouterLink, TranslatePipe, Icon],
+  imports: [RouterLink, TranslatePipe, Icon, Flag],
   template: `
     <button type="button" (click)="open.set(!open())" [attr.aria-expanded]="open()" aria-haspopup="true"
             [attr.aria-label]="('layout.language' | translate) + ': ' + lang.info().native"
             class="flex h-10 items-center gap-1.5 px-1 text-[14px] font-medium transition hover:text-brand-text">
-      <app-icon name="globe" [size]="16" />
+      <app-flag [code]="lang.info().flag" class="w-5" />
       {{ lang.info().label }}
       <app-icon name="chevron-down" [size]="14" class="transition" [class.rotate-180]="open()" />
     </button>
@@ -26,7 +27,7 @@ import { Icon } from '../shared/icon/icon';
               <a [routerLink]="hrefFor()(l.code)" (click)="open.set(false)" [attr.hreflang]="l.code" [attr.lang]="l.code"
                  class="flex items-center justify-between gap-2 rounded-[2px] px-3 py-2 text-sm transition hover:bg-panel-2"
                  [class.bg-brand/10]="l.code === lang.current()" [class.font-bold]="l.code === lang.current()">
-                <span class="truncate">{{ l.native }}</span>
+                <span class="flex min-w-0 items-center gap-2.5"><app-flag [code]="l.flag" class="w-5" /><span class="truncate">{{ l.native }}</span></span>
                 <span class="text-[11px] text-muted">{{ l.label }}</span>
               </a>
             </li>
