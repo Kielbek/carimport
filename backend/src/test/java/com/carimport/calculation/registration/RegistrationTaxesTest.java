@@ -107,7 +107,7 @@ class RegistrationTaxesTest {
     void countriesWithoutTaxOrWithOfficialCalculatorAreNotEstimated() {
         assertThat(RegistrationTaxes.assess(car("DE", FuelType.PETROL, 175, 150, 2000, 3, "30000", "0.19"))).isEmpty();
         assertThat(RegistrationTaxes.assess(car("HR", FuelType.PETROL, 175, 150, 2000, 3, "30000", "0.25"))).isEmpty();
-        assertThat(RegistrationTaxes.OFFICIAL_CALCULATOR).containsOnlyKeys("CY", "GR", "HR", "MT");
+        assertThat(RegistrationTaxes.OFFICIAL_CALCULATOR).containsOnlyKeys("CY", "GR", "HR", "MT", "RO");
         assertThat(RegistrationTaxes.NONE).contains("DE", "CZ", "SE");
     }
 }
