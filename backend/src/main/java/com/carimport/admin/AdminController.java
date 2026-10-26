@@ -77,10 +77,12 @@ public class AdminController {
     private final OrderRefunds refunds;
     private final ExchangeRateService rates;
     private final Clock clock;
+    private final com.carimport.ops.MailCheck mailCheck;
 
     public AdminController(ReportOrderRepository orders, NewsletterSubscriberRepository subscribers, ReportMailer mailer,
                            ReportGenerationService generator, ExchangeRateService rates, Clock clock,
-                           OrderRefunds refunds) {
+                           OrderRefunds refunds, com.carimport.ops.MailCheck mailCheck) {
+        this.mailCheck = mailCheck;
         this.refunds = refunds;
         this.orders = orders;
         this.subscribers = subscribers;
@@ -140,6 +142,15 @@ public class AdminController {
             ProblemDetail p = ProblemDetail.forStatusAndDetail(HttpStatus.BAD_GATEWAY, "Stripe: " + e.getMessage());
             return ResponseEntity.status(HttpStatus.BAD_GATEWAY).body(p);
         }
+    }
+
+    public record MailTestRequest(@jakarta.validation.constraints.Size(max = 254) String to) {
+    }
+
+    /** Logs in to SMTP and sends a test message (to empty = ALERT_EMAIL/CONTACT_EMAIL); the result says what is wrong. */
+    @PostMapping("/mail/test")
+    public com.carimport.ops.MailCheck.Result mailTest(@jakarta.validation.Valid @RequestBody MailTestRequest request) {
+        return mailCheck.sendTest(request.to());
     }
 
     /** Builds the PDF again after a failure (the e-mail follows automatically when it succeeds). */

@@ -82,7 +82,9 @@ const AUTH_KEY = 'carglo.admin';
               <div class="card p-4"><p class="text-xs text-muted">Newsletter: potwierdzeni / niepotwierdzeni</p><p class="mt-1 text-2xl font-extrabold">{{ s.newsletterConfirmed }} / {{ s.newsletterPending }}</p>
                 <button type="button" class="mt-2 text-sm font-semibold text-brand-text underline" (click)="downloadCsv()">Pobierz CSV</button></div>
               <div class="card p-4"><p class="text-xs text-muted">Kursy NBP / wysyłka maili</p><p class="mt-1 text-lg font-extrabold">{{ s.fxDate }}</p>
-                <p class="text-sm" [class.text-danger]="!s.mailEnabled">{{ s.mailEnabled ? 'SMTP włączone' : 'SMTP wyłączone' }}</p></div>
+                <p class="text-sm" [class.text-danger]="!s.mailEnabled">{{ s.mailEnabled ? 'SMTP włączone' : 'SMTP wyłączone' }}</p>
+                <button type="button" class="mt-2 text-sm font-semibold text-brand-text underline" [disabled]="mailTesting()" (click)="testMail()">{{ mailTesting() ? 'Wysyłam…' : 'Wyślij testowy mail' }}</button>
+                @if (mailTest(); as t) { <p class="mt-2 break-words text-xs" [class.text-danger]="!t.ok" role="status">{{ t.message }}</p> }</div>
             </section>
           }
 
@@ -182,6 +184,8 @@ export class AdminPage implements OnInit {
   protected readonly busy = signal(false);
   protected readonly error = signal('');
   protected readonly message = signal('');
+  protected readonly mailTest = signal<{ ok: boolean; message: string } | null>(null);
+  protected readonly mailTesting = signal(false);
   protected readonly stats = signal<Stats | null>(null);
   protected readonly page = signal<OrderPage | null>(null);
   protected readonly refundOf = signal<OrderRow | null>(null);
@@ -309,6 +313,18 @@ export class AdminPage implements OnInit {
 
   protected round(n: number): number {
     return Math.round(n);
+  }
+
+  /** Logs in to SMTP and sends a test message to the given address (empty = the alerts/contact address). */
+  protected testMail(): void {
+    const to = prompt('Na jaki adres wysłać testowy mail? (puste = adres kontaktowy)', '');
+    if (to === null) return;
+    this.mailTesting.set(true);
+    this.mailTest.set(null);
+    this.http.post<{ ok: boolean; message: string }>('/api/v1/admin/mail/test', { to }, { headers: this.headers() }).subscribe({
+      next: (r) => { this.mailTest.set(r); this.mailTesting.set(false); },
+      error: (e) => { this.mailTest.set({ ok: false, message: `Błąd ${e.status}: ${e.error?.detail ?? e.message}` }); this.mailTesting.set(false); },
+    });
   }
 
   protected downloadCsv(): void {
