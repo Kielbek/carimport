@@ -25,7 +25,7 @@ interface CostGroup { key: string; icon: IconName; items: number }
   template: `
     <!-- HERO (always dark) -->
     <section class="theme-dark hero relative isolate overflow-hidden text-fg">
-      <div class="site relative grid min-h-[620px] items-center gap-6 pb-10 pt-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:pb-28">
+      <div class="site relative grid min-h-[660px] items-center gap-6 pb-10 pt-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:pb-44">
         <div class="relative z-10 max-w-[600px]">
           <p class="eyebrow">{{ 'home.hero.eyebrow' | translate }}</p>
           <h1 class="h-display mt-5">
@@ -51,15 +51,21 @@ interface CostGroup { key: string; icon: IconName; items: number }
                [alt]="'home.hero.visual' | translate" />
         </div>
 
-        <dl class="grid grid-cols-2 gap-5 border-t border-line pt-5 lg:absolute lg:inset-x-5 lg:bottom-0 lg:grid-cols-4 lg:border-0 lg:pb-6 lg:pt-0">
-          <div class="col-span-2 text-sm font-bold leading-tight lg:col-span-1">{{ 'home.strip.brand.title' | translate }}<br>{{ 'home.strip.brand.text' | translate }}</div>
-          @for (k of strip; track k) {
-            <div class="border-l border-line pl-4 lg:pl-8">
-              <dt class="font-bold">{{ 'home.strip.' + k + '.title' | translate }}</dt>
-              <dd class="mt-1 text-xs text-muted">{{ 'home.strip.' + k + '.text' | translate }}</dd>
-            </div>
-          }
-        </dl>
+        <!-- facts band: claim on the left, three facts in a frosted panel on the right -->
+        <div class="flex flex-col gap-5 lg:absolute lg:inset-x-5 lg:bottom-7 lg:flex-row lg:items-center lg:justify-between lg:gap-10">
+          <div class="shrink-0">
+            <p class="text-[17px] font-bold leading-snug">{{ 'home.strip.brand.title' | translate }}<br>{{ 'home.strip.brand.text' | translate }}</p>
+            <span class="mt-3 block h-px w-16 bg-fg/50" aria-hidden="true"></span>
+          </div>
+          <dl class="grid rounded-[10px] border border-white/10 bg-white/[0.04] px-6 py-4 backdrop-blur-md sm:grid-cols-3 sm:px-8 sm:py-5 lg:min-w-[640px]">
+            @for (k of strip; track k; let first = $first) {
+              <div class="py-3 sm:px-6 sm:py-0" [class]="first ? 'sm:pl-0' : 'border-t border-white/15 sm:border-l sm:border-t-0'">
+                <dt class="text-[16px] font-bold">{{ 'home.strip.' + k + '.title' | translate }}</dt>
+                <dd class="mt-1 text-[13px] text-fg/70">{{ 'home.strip.' + k + '.text' | translate }}</dd>
+              </div>
+            }
+          </dl>
+        </div>
       </div>
     </section>
 
