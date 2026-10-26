@@ -1,17 +1,15 @@
 import { Component } from '@angular/core';
 
-/** Brand mark: a map pin with a car - the trip from the auction yard to the buyer's door - and the wordmark beside it. */
+/** Brand mark: a route arcing across the ocean from the start to the destination pin, and the wordmark beside it. */
 @Component({
   selector: 'app-logo',
   template: `
-    <svg width="25" height="34" viewBox="10 3 44 59" aria-hidden="true" class="shrink-0">
-      <path d="M32 61C22 49 11 39 11 25A21 21 0 1 1 53 25C53 39 42 49 32 61Z" fill="var(--brand)" />
-      <path d="M20 31L23 21Q24 18 27 18L37 18Q40 18 41 21L44 31Q46 32 46 35L46 40L18 40L18 35Q18 32 20 31Z" fill="var(--brand-ink)" />
-      <path d="M24 29L26 22L38 22L40 29Z" fill="var(--brand)" />
-      <circle cx="23" cy="35" r="2.2" fill="var(--brand)" />
-      <circle cx="41" cy="35" r="2.2" fill="var(--brand)" />
-      <rect x="19" y="40" width="6" height="4" rx="1.5" fill="var(--brand-ink)" />
-      <rect x="39" y="40" width="6" height="4" rx="1.5" fill="var(--brand-ink)" />
+    <svg width="34" height="34" viewBox="1 0 66 66" aria-hidden="true" class="shrink-0">
+      <path d="M10 50 Q30 4 52 30" fill="none" stroke="var(--brand)" stroke-width="7" stroke-linecap="round" />
+      <path d="M10 50 Q30 4 52 30" fill="none" stroke="var(--brand-ink)" stroke-opacity=".55" stroke-width="1.6" stroke-dasharray="3 5" stroke-linecap="round" />
+      <circle cx="10" cy="50" r="6" fill="currentColor" />
+      <path d="M52 61C46 53 41 49 41 42A11 11 0 1 1 63 42C63 49 58 53 52 61Z" fill="currentColor" />
+      <circle cx="52" cy="42" r="4" fill="var(--brand)" />
     </svg>
     <span class="text-[25px] font-extrabold tracking-[-0.02em]">carglo</span>
   `,
