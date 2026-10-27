@@ -203,7 +203,8 @@
     "termsLink": "Tingimused",
     "guarantee": "Õigsuse garantii: teata arvutusveast 14 päeva jooksul (nt aegunud määr või puuduv kohustuslik tasu) ja me parandame aruande või tagastame kogu hinna.",
     "promoHint": "Kas sul on sooduskood? Sisesta see makselehel.",
-    "startFailed": "Makset ei õnnestunud alustada. Proovi hetke pärast uuesti – kui viga kordub, kirjuta meile."
+    "startFailed": "Makset ei õnnestunud alustada. Proovi hetke pärast uuesti – kui viga kordub, kirjuta meile.",
+    "methodsHint": "Maksa kaardi, Apple Pay või Google Payga."
   },
   "report": {
     "amount": "Summa",
@@ -493,7 +494,7 @@
     "service": "Teenus",
     "privacy": "Privaatsuspoliitika",
     "language": "Keel",
-    "payments": "Maksed Stripe’i kaudu (kaart, BLIK, Przelewy24). Me ei salvesta kunagi kaardiandmeid.",
+    "payments": "Maksed Stripe'i kaudu (kaart, Apple Pay, Google Pay). Me ei salvesta kaardiandmeid.",
     "rights": "Kõik õigused kaitstud.",
     "disclaimer": "Arvutused on informatiivsed ega ole tolliotsus ega maksunõustamine.",
     "terms": "Tingimused"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "Mida sisaldab tasuline PDF-raport?",
-      "a": "Iga kirje sendi täpsusega: oksjonitasud astmete järgi, transport, tolliväärtus, tollimaks, aktsiis ja käibemaks koos aluste ja määradega, vajalike dokumentide nimekiri ja isikustatud PDF allalaadimiseks. Maksa BLIK-i, kaardi või Przelewy24 kaudu."
+      "a": "Iga kirje sendi täpsusega: oksjonitasud astmete järgi, transport, tolliväärtus, tollimaks, aktsiis ja käibemaks koos aluste ja määradega, vajalike dokumentide nimekiri ja isikustatud PDF allalaadimiseks. Maksa kaardi, Apple Pay või Google Payga."
     },
     "q8": {
       "q": "Kas kalkulaatori tulemus on siduv?",

@@ -203,7 +203,8 @@
     "termsLink": "Terms",
     "guarantee": "Accuracy guarantee: report a calculation error within 14 days (e.g. an outdated rate or a missing mandatory fee) and we fix the report or refund the full price.",
     "promoHint": "Have a discount code? Enter it on the payment page.",
-    "startFailed": "The payment could not be started. Please try again in a moment – if it keeps failing, contact us."
+    "startFailed": "The payment could not be started. Please try again in a moment – if it keeps failing, contact us.",
+    "methodsHint": "Pay by card, Apple Pay, Google Pay or a local method such as iDEAL, Bancontact or BLIK."
   },
   "report": {
     "amount": "Amount",
@@ -493,7 +494,7 @@
     "service": "Service",
     "privacy": "Privacy policy",
     "language": "Language",
-    "payments": "Payments by Stripe (card, BLIK, Przelewy24). We never store card data.",
+    "payments": "Payments by Stripe (card, Apple Pay, Google Pay and local methods). We never store card data.",
     "rights": "All rights reserved.",
     "disclaimer": "Calculations are informational and are neither a customs decision nor tax advice.",
     "terms": "Terms"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "What does the paid PDF report include?",
-      "a": "Every item to the cent: auction fees by tier, transport, customs value, duty, excise and VAT with bases and rates, the list of required documents and a personal PDF to download. Pay by BLIK, card or Przelewy24."
+      "a": "Every item to the cent: auction fees by tier, transport, customs value, duty, excise and VAT with bases and rates, the list of required documents and a personal PDF to download. Pay by card, Apple Pay, Google Pay or a local method such as iDEAL, Bancontact or BLIK."
     },
     "q8": {
       "q": "Is the calculator result binding?",

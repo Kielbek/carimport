@@ -203,7 +203,8 @@
     "termsLink": "Ehdot",
     "guarantee": "Oikeellisuustakuu: ilmoita laskentavirheestä 14 päivän kuluessa (esim. vanhentunut verokanta tai puuttuva pakollinen maksu), niin korjaamme raportin tai palautamme koko hinnan.",
     "promoHint": "Onko sinulla alennuskoodi? Syötä se maksusivulla.",
-    "startFailed": "Maksua ei voitu aloittaa. Yritä hetken päästä uudelleen – jos virhe toistuu, ota meihin yhteyttä."
+    "startFailed": "Maksua ei voitu aloittaa. Yritä hetken päästä uudelleen – jos virhe toistuu, ota meihin yhteyttä.",
+    "methodsHint": "Maksa MobilePaylla, kortilla, Apple Paylla tai Google Paylla."
   },
   "report": {
     "amount": "Summa",
@@ -493,7 +494,7 @@
     "service": "Palvelu",
     "privacy": "Tietosuojaseloste",
     "language": "Kieli",
-    "payments": "Maksut Stripen kautta (kortti, BLIK, Przelewy24). Emme koskaan tallenna korttitietoja.",
+    "payments": "Maksut Stripen kautta (MobilePay, kortti, Apple Pay, Google Pay). Emme tallenna korttitietoja.",
     "rights": "Kaikki oikeudet pidätetään.",
     "disclaimer": "Laskelmat ovat suuntaa antavia, eivätkä ne ole tullipäätös tai veroneuvontaa.",
     "terms": "Käyttöehdot"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "Mitä maksullinen PDF-raportti sisältää?",
-      "a": "Jokaisen erän sentilleen: huutokauppamaksut portaittain, kuljetuksen, tulliarvon, tullin, valmisteveron ja ALV:n veroperusteineen ja -kantoineen, luettelon tarvittavista asiakirjoista sekä ladattavan henkilökohtaisen PDF:n. Maksa BLIKillä, kortilla tai Przelewy24:llä."
+      "a": "Jokaisen erän sentilleen: huutokauppamaksut portaittain, kuljetuksen, tulliarvon, tullin, valmisteveron ja ALV:n veroperusteineen ja -kantoineen, luettelon tarvittavista asiakirjoista sekä ladattavan henkilökohtaisen PDF:n. Maksa MobilePaylla, kortilla, Apple Paylla tai Google Paylla."
     },
     "q8": {
       "q": "Onko laskurin tulos sitova?",

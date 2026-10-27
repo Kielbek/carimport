@@ -203,7 +203,8 @@
     "termsLink": "Taisyklės",
     "guarantee": "Tikslumo garantija: praneškite apie skaičiavimo klaidą per 14 dienų (pvz., pasenusį tarifą ar trūkstamą privalomą mokestį) – pataisysime ataskaitą arba grąžinsime visą kainą.",
     "promoHint": "Turite nuolaidos kodą? Įveskite jį mokėjimo puslapyje.",
-    "startFailed": "Nepavyko pradėti mokėjimo. Bandykite netrukus – jei klaida kartojasi, parašykite mums."
+    "startFailed": "Nepavyko pradėti mokėjimo. Bandykite netrukus – jei klaida kartojasi, parašykite mums.",
+    "methodsHint": "Mokėkite kortele, Apple Pay arba Google Pay."
   },
   "report": {
     "amount": "Suma",
@@ -493,7 +494,7 @@
     "service": "Paslauga",
     "privacy": "Privatumo politika",
     "language": "Kalba",
-    "payments": "Mokėjimai per Stripe (kortelė, BLIK, Przelewy24). Mes niekada nesaugome kortelės duomenų.",
+    "payments": "Mokėjimus tvarko Stripe (kortelė, Apple Pay, Google Pay). Kortelių duomenų nesaugome.",
     "rights": "Visos teisės saugomos.",
     "disclaimer": "Skaičiavimai yra informacinio pobūdžio ir nėra nei muitinės sprendimas, nei mokesčių konsultacija.",
     "terms": "Taisyklės"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "Kas įeina į mokamą PDF ataskaitą?",
-      "a": "Kiekviena pozicija iki cento: aukciono mokesčiai pagal pakopas, transportas, muitinė vertė, muitas, akcizas ir PVM su bazėmis ir tarifais, reikalingų dokumentų sąrašas ir asmeninis PDF atsisiuntimui. Mokėti galima BLIK, kortele arba Przelewy24."
+      "a": "Kiekviena pozicija iki cento: aukciono mokesčiai pagal pakopas, transportas, muitinė vertė, muitas, akcizas ir PVM su bazėmis ir tarifais, reikalingų dokumentų sąrašas ir asmeninis PDF atsisiuntimui. Mokėkite kortele, Apple Pay arba Google Pay."
     },
     "q8": {
       "q": "Ar skaičiuoklės rezultatas yra privalomas?",

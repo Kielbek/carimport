@@ -203,7 +203,8 @@
     "termsLink": "Opći uvjeti",
     "guarantee": "Jamstvo točnosti: prijavite pogrešku u izračunu u roku od 14 dana (npr. zastarjelu stopu ili nedostajuću obveznu naknadu) i ispravit ćemo izvješće ili vratiti cijeli iznos.",
     "promoHint": "Imate kod za popust? Unosite ga na stranici za plaćanje.",
-    "startFailed": "Plaćanje nije moguće pokrenuti. Pokušajte ponovno za trenutak – ako se greška ponavlja, javite nam se."
+    "startFailed": "Plaćanje nije moguće pokrenuti. Pokušajte ponovno za trenutak – ako se greška ponavlja, javite nam se.",
+    "methodsHint": "Platite karticom, Apple Payem ili Google Payem."
   },
   "report": {
     "amount": "Iznos",
@@ -493,7 +494,7 @@
     "service": "Usluga",
     "privacy": "Politika privatnosti",
     "language": "Jezik",
-    "payments": "Plaćanja putem Stripea (kartica, BLIK, Przelewy24). Podatke o kartici nikada ne pohranjujemo.",
+    "payments": "Plaćanja obrađuje Stripe (kartica, Apple Pay, Google Pay). Ne čuvamo podatke o karticama.",
     "rights": "Sva prava pridržana.",
     "disclaimer": "Izračuni su informativni i nisu carinsko rješenje niti porezni savjet.",
     "terms": "Uvjeti"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "Što sadrži plaćeno PDF izvješće?",
-      "a": "Svaku stavku do centa: aukcijske naknade po razredima, prijevoz, carinsku vrijednost, carinu, trošarinu i PDV s osnovicama i stopama, popis potrebnih dokumenata i osobni PDF za preuzimanje. Plaćate BLIK-om, karticom ili putem Przelewy24."
+      "a": "Svaku stavku do centa: aukcijske naknade po razredima, prijevoz, carinsku vrijednost, carinu, trošarinu i PDV s osnovicama i stopama, popis potrebnih dokumenata i osobni PDF za preuzimanje. Platite karticom, Apple Payem ili Google Payem."
     },
     "q8": {
       "q": "Je li rezultat kalkulatora obvezujući?",

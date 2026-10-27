@@ -203,7 +203,8 @@
     "termsLink": "Noteikumi",
     "guarantee": "Pareizības garantija: ziņojiet par aprēķina kļūdu 14 dienu laikā (piem., novecojusi likme vai trūkstoša obligātā maksa), un mēs izlabosim atskaiti vai atmaksāsim visu cenu.",
     "promoHint": "Vai jums ir atlaides kods? Ievadiet to maksājuma lapā.",
-    "startFailed": "Maksājumu neizdevās sākt. Mēģiniet vēlreiz pēc brīža – ja kļūda atkārtojas, rakstiet mums."
+    "startFailed": "Maksājumu neizdevās sākt. Mēģiniet vēlreiz pēc brīža – ja kļūda atkārtojas, rakstiet mums.",
+    "methodsHint": "Maksājiet ar karti, Apple Pay vai Google Pay."
   },
   "report": {
     "amount": "Summa",
@@ -493,7 +494,7 @@
     "service": "Serviss",
     "privacy": "Privātuma politika",
     "language": "Valoda",
-    "payments": "Maksājumi caur Stripe (karte, BLIK, Przelewy24). Mēs nekad neglabājam kartes datus.",
+    "payments": "Maksājumus apstrādā Stripe (karte, Apple Pay, Google Pay). Karšu datus neglabājam.",
     "rights": "Visas tiesības aizsargātas.",
     "disclaimer": "Aprēķini ir informatīvi un nav ne muitas lēmums, ne nodokļu konsultācija.",
     "terms": "Noteikumi"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "Ko ietver maksas PDF atskaite?",
-      "a": "Katru pozīciju līdz centam: izsoles maksas pēc pakāpēm, transportu, muitas vērtību, muitas nodokli, akcīzi un PVN ar bāzēm un likmēm, nepieciešamo dokumentu sarakstu un personalizētu PDF lejupielādei. Maksājiet ar BLIK, karti vai Przelewy24."
+      "a": "Katru pozīciju līdz centam: izsoles maksas pēc pakāpēm, transportu, muitas vērtību, muitas nodokli, akcīzi un PVN ar bāzēm un likmēm, nepieciešamo dokumentu sarakstu un personalizētu PDF lejupielādei. Maksājiet ar karti, Apple Pay vai Google Pay."
     },
     "q8": {
       "q": "Vai kalkulatora rezultāts ir saistošs?",

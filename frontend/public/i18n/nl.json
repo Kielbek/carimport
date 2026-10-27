@@ -203,7 +203,8 @@
     "termsLink": "Algemene voorwaarden",
     "guarantee": "Juistheidsgarantie: meld binnen 14 dagen een rekenfout (bijv. een verouderd tarief of een ontbrekende verplichte heffing) en we corrigeren het rapport of betalen de volledige prijs terug.",
     "promoHint": "Heeft u een kortingscode? U vult die in op de betaalpagina.",
-    "startFailed": "De betaling kon niet worden gestart. Probeer het zo opnieuw – blijft het misgaan, neem dan contact met ons op."
+    "startFailed": "De betaling kon niet worden gestart. Probeer het zo opnieuw – blijft het misgaan, neem dan contact met ons op.",
+    "methodsHint": "Betaal met iDEAL, Bancontact, creditcard, Apple Pay of Google Pay."
   },
   "report": {
     "amount": "Bedrag",
@@ -493,7 +494,7 @@
     "service": "Service",
     "privacy": "Privacybeleid",
     "language": "Taal",
-    "payments": "Betalingen via Stripe (creditcard, BLIK, Przelewy24). Wij slaan nooit kaartgegevens op.",
+    "payments": "Betalingen via Stripe (iDEAL, Bancontact, creditcard, Apple Pay, Google Pay). Wij slaan nooit kaartgegevens op.",
     "rights": "Alle rechten voorbehouden.",
     "disclaimer": "De berekeningen zijn informatief en vormen geen douanebeschikking of belastingadvies.",
     "terms": "Algemene voorwaarden"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "Wat staat er in het betaalde pdf-rapport?",
-      "a": "Elke post tot op de cent: veilingkosten per staffel, transport, douanewaarde, invoerrechten, accijns en btw met grondslagen en tarieven, de lijst met benodigde documenten en een persoonlijke pdf om te downloaden. Betalen kan met BLIK, creditcard of Przelewy24."
+      "a": "Elke post tot op de cent: veilingkosten per staffel, transport, douanewaarde, invoerrechten, accijns en btw met grondslagen en tarieven, de lijst met benodigde documenten en een persoonlijke pdf om te downloaden. Betaal met iDEAL, Bancontact, creditcard, Apple Pay of Google Pay."
     },
     "q8": {
       "q": "Is het resultaat van de calculator bindend?",

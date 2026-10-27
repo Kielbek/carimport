@@ -203,7 +203,8 @@
     "termsLink": "Splošni pogoji",
     "guarantee": "Garancija pravilnosti: napako v izračunu prijavite v 14 dneh (npr. zastarelo stopnjo ali manjkajočo obvezno pristojbino) in poročilo popravimo ali vrnemo celotno kupnino.",
     "promoHint": "Imate kodo za popust? Vnesete jo na strani za plačilo.",
-    "startFailed": "Plačila ni bilo mogoče začeti. Poskusite znova čez trenutek – če se napaka ponavlja, nam pišite."
+    "startFailed": "Plačila ni bilo mogoče začeti. Poskusite znova čez trenutek – če se napaka ponavlja, nam pišite.",
+    "methodsHint": "Plačate s kartico, Apple Pay ali Google Pay."
   },
   "report": {
     "amount": "Znesek",
@@ -493,7 +494,7 @@
     "service": "Storitev",
     "privacy": "Politika zasebnosti",
     "language": "Jezik",
-    "payments": "Plačila prek Stripe (kartica, BLIK, Przelewy24). Podatkov o kartici nikoli ne shranjujemo.",
+    "payments": "Plačila obdeluje Stripe (kartica, Apple Pay, Google Pay). Podatkov o karticah ne hranimo.",
     "rights": "Vse pravice pridržane.",
     "disclaimer": "Izračuni so informativni in niso carinska odločba niti davčni nasvet.",
     "terms": "Pogoji"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "Kaj vključuje plačljivo poročilo PDF?",
-      "a": "Vsako postavko na cent natančno: provizije dražbe po razredih, prevoz, carinsko vrednost, carino, trošarino in DDV z osnovami in stopnjami, seznam potrebnih dokumentov in osebni PDF za prenos. Plačate z BLIK, kartico ali Przelewy24."
+      "a": "Vsako postavko na cent natančno: provizije dražbe po razredih, prevoz, carinsko vrednost, carino, trošarino in DDV z osnovami in stopnjami, seznam potrebnih dokumentov in osebni PDF za prenos. Plačate s kartico, Apple Pay ali Google Pay."
     },
     "q8": {
       "q": "Ali je rezultat kalkulatorja zavezujoč?",

@@ -203,7 +203,8 @@
     "termsLink": "Obchodné podmienky",
     "guarantee": "Záruka správnosti: nahláste chybu vo výpočte do 14 dní (napr. zastaranú sadzbu alebo chýbajúci povinný poplatok) a report opravíme alebo vrátime celú sumu.",
     "promoHint": "Máte zľavový kód? Zadáte ho na platobnej stránke.",
-    "startFailed": "Platbu sa nepodarilo začať. Skúste to o chvíľu znova – ak sa chyba opakuje, napíšte nám."
+    "startFailed": "Platbu sa nepodarilo začať. Skúste to o chvíľu znova – ak sa chyba opakuje, napíšte nám.",
+    "methodsHint": "Zaplatíte kartou, Apple Pay alebo Google Pay."
   },
   "report": {
     "amount": "Suma",
@@ -493,7 +494,7 @@
     "service": "Služba",
     "privacy": "Zásady ochrany osobných údajov",
     "language": "Jazyk",
-    "payments": "Platby cez Stripe (karta, BLIK, Przelewy24). Údaje o karte nikdy neukladáme.",
+    "payments": "Platby spracúva Stripe (karta, Apple Pay, Google Pay). Údaje o kartách neukladáme.",
     "rights": "Všetky práva vyhradené.",
     "disclaimer": "Výpočty majú informatívny charakter a nie sú colným rozhodnutím ani daňovým poradenstvom.",
     "terms": "Obchodné podmienky"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "Čo obsahuje platený PDF report?",
-      "a": "Každú položku na cent: aukčné poplatky podľa pásiem, dopravu, colnú hodnotu, clo, spotrebnú daň a DPH so základmi a sadzbami, zoznam potrebných dokladov a osobné PDF na stiahnutie. Plaťte cez BLIK, kartou alebo Przelewy24."
+      "a": "Každú položku na cent: aukčné poplatky podľa pásiem, dopravu, colnú hodnotu, clo, spotrebnú daň a DPH so základmi a sadzbami, zoznam potrebných dokladov a osobné PDF na stiahnutie. Zaplatíte kartou, Apple Pay alebo Google Pay."
     },
     "q8": {
       "q": "Je výsledok kalkulačky záväzný?",

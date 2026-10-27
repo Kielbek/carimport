@@ -203,7 +203,8 @@
     "termsLink": "Handelsbetingelser",
     "guarantee": "Korrekthedsgaranti: meld en regnefejl inden for 14 dage (fx en forældet sats eller et manglende obligatorisk gebyr), så retter vi rapporten eller refunderer hele prisen.",
     "promoHint": "Har du en rabatkode? Du indtaster den på betalingssiden.",
-    "startFailed": "Betalingen kunne ikke startes. Prøv igen om lidt – skriv til os, hvis fejlen fortsætter."
+    "startFailed": "Betalingen kunne ikke startes. Prøv igen om lidt – skriv til os, hvis fejlen fortsætter.",
+    "methodsHint": "Betal med MobilePay, kort, Apple Pay eller Google Pay."
   },
   "report": {
     "amount": "Beløb",
@@ -493,7 +494,7 @@
     "service": "Tjeneste",
     "privacy": "Privatlivspolitik",
     "language": "Sprog",
-    "payments": "Betaling via Stripe (kort, BLIK, Przelewy24). Vi gemmer aldrig kortoplysninger.",
+    "payments": "Betalinger via Stripe (MobilePay, kort, Apple Pay, Google Pay). Vi gemmer aldrig kortdata.",
     "rights": "Alle rettigheder forbeholdes.",
     "disclaimer": "Beregningerne er vejledende og er hverken en toldafgørelse eller skatterådgivning.",
     "terms": "Handelsbetingelser"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "Hvad indeholder den betalte PDF-rapport?",
-      "a": "Hver post på øren: auktionsgebyrer efter prisniveau, transport, toldværdi, told, punktafgift og moms med grundlag og satser, listen over nødvendige dokumenter og en personlig PDF til download. Betal med BLIK, kort eller Przelewy24."
+      "a": "Hver post på øren: auktionsgebyrer efter prisniveau, transport, toldværdi, told, punktafgift og moms med grundlag og satser, listen over nødvendige dokumenter og en personlig PDF til download. Betal med MobilePay, kort, Apple Pay eller Google Pay."
     },
     "q8": {
       "q": "Er beregnerens resultat bindende?",

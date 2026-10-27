@@ -48,9 +48,7 @@ import { rememberOrder } from '../report/order-tokens';
                       (click)="form.patchValue({ currency: c.code })">{{ c.label }}</button>
             }
           </div>
-          @if (form.value.currency === 'PLN') {
-            <p class="mt-2 text-xs text-muted">{{ 'paywall.blikHint' | translate }}</p>
-          }
+          <p class="mt-2 text-xs text-muted">{{ (form.value.currency === 'PLN' ? 'paywall.blikHint' : 'paywall.methodsHint') | translate }}</p>
         </div>
         <label class="flex cursor-pointer items-start gap-2.5 text-xs leading-relaxed text-muted">
           <input type="checkbox" formControlName="terms" class="checkbox" />

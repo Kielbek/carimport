@@ -203,7 +203,8 @@
     "termsLink": "Termos e condições",
     "guarantee": "Garantia de exatidão: comunique um erro de cálculo em 14 dias (p. ex., uma taxa desatualizada ou um encargo obrigatório em falta) e corrigimos o relatório ou reembolsamos o preço total.",
     "promoHint": "Tem um código de desconto? Introduza-o na página de pagamento.",
-    "startFailed": "Não foi possível iniciar o pagamento. Tente novamente daqui a pouco – se o erro persistir, contacte-nos."
+    "startFailed": "Não foi possível iniciar o pagamento. Tente novamente daqui a pouco – se o erro persistir, contacte-nos.",
+    "methodsHint": "Pague com Multibanco, cartão, Apple Pay ou Google Pay."
   },
   "report": {
     "amount": "Montante",
@@ -493,7 +494,7 @@
     "service": "Serviço",
     "privacy": "Política de privacidade",
     "language": "Idioma",
-    "payments": "Pagamentos através da Stripe (cartão, BLIK, Przelewy24). Nunca guardamos os dados do cartão.",
+    "payments": "Pagamentos via Stripe (Multibanco, cartão, Apple Pay, Google Pay). Não guardamos dados de cartões.",
     "rights": "Todos os direitos reservados.",
     "disclaimer": "Os cálculos têm caráter informativo e não constituem uma decisão aduaneira nem aconselhamento fiscal.",
     "terms": "Termos e condições"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "O que inclui o relatório PDF pago?",
-      "a": "Cada rubrica ao cêntimo: taxas de leilão por escalão, transporte, valor aduaneiro, direitos, imposto especial de consumo e IVA com bases e taxas, a lista dos documentos necessários e um PDF personalizado para descarregar. Pague com BLIK, cartão ou Przelewy24."
+      "a": "Cada rubrica ao cêntimo: taxas de leilão por escalão, transporte, valor aduaneiro, direitos, imposto especial de consumo e IVA com bases e taxas, a lista dos documentos necessários e um PDF personalizado para descarregar. Pague com Multibanco, cartão, Apple Pay ou Google Pay."
     },
     "q8": {
       "q": "O resultado da calculadora é vinculativo?",

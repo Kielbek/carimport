@@ -203,7 +203,8 @@
     "termsLink": "AGB",
     "guarantee": "Richtigkeitsgarantie: Melden Sie innerhalb von 14 Tagen einen Rechenfehler (z. B. einen veralteten Satz oder eine fehlende Pflichtgebühr) – wir korrigieren den Bericht oder erstatten den vollen Preis.",
     "promoHint": "Haben Sie einen Rabattcode? Sie geben ihn auf der Zahlungsseite ein.",
-    "startFailed": "Die Zahlung konnte nicht gestartet werden. Bitte versuchen Sie es gleich noch einmal – bei wiederholtem Fehler schreiben Sie uns."
+    "startFailed": "Die Zahlung konnte nicht gestartet werden. Bitte versuchen Sie es gleich noch einmal – bei wiederholtem Fehler schreiben Sie uns.",
+    "methodsHint": "Zahlung per Karte, PayPal, Apple Pay oder Google Pay."
   },
   "report": {
     "amount": "Betrag",
@@ -493,7 +494,7 @@
     "service": "Service",
     "privacy": "Datenschutzerklärung",
     "language": "Sprache",
-    "payments": "Zahlungen über Stripe (Karte, BLIK, Przelewy24). Keine Kartendaten bei uns.",
+    "payments": "Zahlungen über Stripe (Karte, PayPal, Apple Pay, Google Pay). Keine Kartendaten bei uns.",
     "rights": "Alle Rechte vorbehalten.",
     "disclaimer": "Berechnungen dienen der Information und sind weder Zollbescheid noch Steuerberatung.",
     "terms": "AGB"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "Was enthält der kostenpflichtige PDF-Bericht?",
-      "a": "Jede Position auf den Cent: Auktionsgebühren nach Stufen, Transport, Zollwert, Zoll, Verbrauchsteuer und USt mit Grundlagen und Sätzen, Dokumentenliste und persönliches PDF. Zahlung per Karte, BLIK oder Przelewy24."
+      "a": "Jede Position auf den Cent: Auktionsgebühren nach Stufen, Transport, Zollwert, Zoll, Verbrauchsteuer und USt mit Grundlagen und Sätzen, Dokumentenliste und persönliches PDF. Zahlung per Karte, PayPal, Apple Pay oder Google Pay."
     },
     "q8": {
       "q": "Ist das Ergebnis verbindlich?",

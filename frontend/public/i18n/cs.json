@@ -203,7 +203,8 @@
     "termsLink": "Obchodní podmínky",
     "guarantee": "Záruka správnosti: nahlaste chybu ve výpočtu do 14 dnů (např. zastaralou sazbu nebo chybějící povinný poplatek) a report opravíme, nebo vrátíme celou částku.",
     "promoHint": "Máte slevový kód? Zadáte ho na platební stránce.",
-    "startFailed": "Platbu se nepodařilo zahájit. Zkuste to za chvíli znovu – pokud se chyba opakuje, napište nám."
+    "startFailed": "Platbu se nepodařilo zahájit. Zkuste to za chvíli znovu – pokud se chyba opakuje, napište nám.",
+    "methodsHint": "Zaplatíte kartou, Apple Pay nebo Google Pay."
   },
   "report": {
     "amount": "Částka",
@@ -493,7 +494,7 @@
     "service": "Služba",
     "privacy": "Zásady ochrany osobních údajů",
     "language": "Jazyk",
-    "payments": "Platby přes Stripe (karta, BLIK, Przelewy24). Údaje o kartě nikdy neukládáme.",
+    "payments": "Platby zpracovává Stripe (karta, Apple Pay, Google Pay). Údaje o kartách neukládáme.",
     "rights": "Všechna práva vyhrazena.",
     "disclaimer": "Výpočty mají informativní charakter a nejsou celním rozhodnutím ani daňovým poradenstvím.",
     "terms": "Obchodní podmínky"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "Co obsahuje placený PDF report?",
-      "a": "Každou položku na haléř: aukční poplatky podle pásem, dopravu, celní hodnotu, clo, spotřební daň a DPH se základy a sazbami, seznam potřebných dokumentů a osobní PDF ke stažení. Plaťte přes BLIK, kartou nebo Przelewy24."
+      "a": "Každou položku na haléř: aukční poplatky podle pásem, dopravu, celní hodnotu, clo, spotřební daň a DPH se základy a sazbami, seznam potřebných dokumentů a osobní PDF ke stažení. Zaplatíte kartou, Apple Pay nebo Google Pay."
     },
     "q8": {
       "q": "Je výsledek kalkulačky závazný?",

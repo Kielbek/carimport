@@ -203,7 +203,8 @@
     "termsLink": "Villkor",
     "guarantee": "Korrekthetsgaranti: anmäl ett räknefel inom 14 dagar (t.ex. en inaktuell sats eller en saknad obligatorisk avgift), så rättar vi rapporten eller återbetalar hela priset.",
     "promoHint": "Har du en rabattkod? Du anger den på betalningssidan.",
-    "startFailed": "Betalningen kunde inte startas. Försök igen om en stund – kontakta oss om felet kvarstår."
+    "startFailed": "Betalningen kunde inte startas. Försök igen om en stund – kontakta oss om felet kvarstår.",
+    "methodsHint": "Betala med kort, Apple Pay eller Google Pay."
   },
   "report": {
     "amount": "Belopp",
@@ -493,7 +494,7 @@
     "service": "Tjänsten",
     "privacy": "Integritetspolicy",
     "language": "Språk",
-    "payments": "Betalningar via Stripe (kort, BLIK, Przelewy24). Vi lagrar aldrig kortuppgifter.",
+    "payments": "Betalningar via Stripe (kort, Apple Pay, Google Pay). Vi sparar aldrig kortuppgifter.",
     "rights": "Alla rättigheter förbehållna.",
     "disclaimer": "Beräkningarna är vägledande och utgör varken ett tullbeslut eller skatterådgivning.",
     "terms": "Villkor"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "Vad ingår i den betalda PDF-rapporten?",
-      "a": "Varje post på öret: auktionsavgifter enligt nivå, transport, tullvärde, tull, punktskatt och moms med underlag och satser, listan över nödvändiga handlingar och en personlig PDF att ladda ner. Betala med BLIK, kort eller Przelewy24."
+      "a": "Varje post på öret: auktionsavgifter enligt nivå, transport, tullvärde, tull, punktskatt och moms med underlag och satser, listan över nödvändiga handlingar och en personlig PDF att ladda ner. Betala med kort, Apple Pay eller Google Pay."
     },
     "q8": {
       "q": "Är kalkylatorns resultat bindande?",

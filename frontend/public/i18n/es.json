@@ -203,7 +203,8 @@
     "termsLink": "Condiciones generales",
     "guarantee": "Garantía de exactitud: comunica un error de cálculo en 14 días (p. ej., un tipo desactualizado o una tasa obligatoria que falta) y corregiremos el informe o devolveremos el precio íntegro.",
     "promoHint": "¿Tienes un código de descuento? Introdúcelo en la página de pago.",
-    "startFailed": "No se pudo iniciar el pago. Inténtalo de nuevo en un momento; si el error persiste, escríbenos."
+    "startFailed": "No se pudo iniciar el pago. Inténtalo de nuevo en un momento; si el error persiste, escríbenos.",
+    "methodsHint": "Paga con tarjeta, Apple Pay o Google Pay."
   },
   "report": {
     "amount": "Importe",
@@ -493,7 +494,7 @@
     "service": "Servicio",
     "privacy": "Política de privacidad",
     "language": "Idioma",
-    "payments": "Pagos con Stripe (tarjeta, BLIK, Przelewy24). Nunca almacenamos los datos de la tarjeta.",
+    "payments": "Pagos con Stripe (tarjeta, Apple Pay, Google Pay). No guardamos datos de tarjetas.",
     "rights": "Todos los derechos reservados.",
     "disclaimer": "Los cálculos son informativos y no constituyen una resolución aduanera ni asesoramiento fiscal.",
     "terms": "Condiciones"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "¿Qué incluye el informe PDF de pago?",
-      "a": "Cada concepto al céntimo: tasas de subasta por tramo, transporte, valor en aduana, arancel, impuesto especial e IVA con bases y tipos, la lista de documentos necesarios y un PDF personalizado para descargar. Paga con BLIK, tarjeta o Przelewy24."
+      "a": "Cada concepto al céntimo: tasas de subasta por tramo, transporte, valor en aduana, arancel, impuesto especial e IVA con bases y tipos, la lista de documentos necesarios y un PDF personalizado para descargar. Paga con tarjeta, Apple Pay o Google Pay."
     },
     "q8": {
       "q": "¿Es vinculante el resultado de la calculadora?",

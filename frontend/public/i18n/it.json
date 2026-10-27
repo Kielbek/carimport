@@ -203,7 +203,8 @@
     "termsLink": "Condizioni generali",
     "guarantee": "Garanzia di correttezza: segnala un errore di calcolo entro 14 giorni (ad es. un'aliquota non aggiornata o una tassa obbligatoria mancante) e correggiamo il report o rimborsiamo l'intero prezzo.",
     "promoHint": "Hai un codice sconto? Lo inserisci nella pagina di pagamento.",
-    "startFailed": "Non è stato possibile avviare il pagamento. Riprova tra poco – se l'errore persiste, scrivici."
+    "startFailed": "Non è stato possibile avviare il pagamento. Riprova tra poco – se l'errore persiste, scrivici.",
+    "methodsHint": "Paga con carta, PayPal, Apple Pay o Google Pay."
   },
   "report": {
     "amount": "Importo",
@@ -493,7 +494,7 @@
     "service": "Servizio",
     "privacy": "Informativa sulla privacy",
     "language": "Lingua",
-    "payments": "Pagamenti tramite Stripe (carta, BLIK, Przelewy24). Non conserviamo mai i dati della carta.",
+    "payments": "Pagamenti tramite Stripe (carta, PayPal, Apple Pay, Google Pay). Non conserviamo i dati delle carte.",
     "rights": "Tutti i diritti riservati.",
     "disclaimer": "I calcoli hanno carattere informativo e non costituiscono né una decisione doganale né una consulenza fiscale.",
     "terms": "Condizioni"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "Cosa include il report PDF a pagamento?",
-      "a": "Ogni voce al centesimo: commissioni d’asta per fascia, trasporto, valore in dogana, dazio, accisa e IVA con basi imponibili e aliquote, l’elenco dei documenti necessari e un PDF personalizzato da scaricare. Paga con BLIK, carta o Przelewy24."
+      "a": "Ogni voce al centesimo: commissioni d’asta per fascia, trasporto, valore in dogana, dazio, accisa e IVA con basi imponibili e aliquote, l’elenco dei documenti necessari e un PDF personalizzato da scaricare. Paga con carta, PayPal, Apple Pay o Google Pay."
     },
     "q8": {
       "q": "Il risultato del calcolatore è vincolante?",

@@ -203,7 +203,8 @@
     "termsLink": "ÁSZF",
     "guarantee": "Pontossági garancia: jelezze a számítási hibát 14 napon belül (pl. elavult kulcs vagy hiányzó kötelező díj), és kijavítjuk a jelentést vagy visszafizetjük a teljes árat.",
     "promoHint": "Van kedvezménykódja? A fizetési oldalon adhatja meg.",
-    "startFailed": "A fizetést nem sikerült elindítani. Próbálja újra kicsit később – ha a hiba ismétlődik, írjon nekünk."
+    "startFailed": "A fizetést nem sikerült elindítani. Próbálja újra kicsit később – ha a hiba ismétlődik, írjon nekünk.",
+    "methodsHint": "Fizetés bankkártyával, Apple Pay-jel vagy Google Pay-jel."
   },
   "report": {
     "amount": "Összeg",
@@ -493,7 +494,7 @@
     "service": "Szolgáltatás",
     "privacy": "Adatvédelmi tájékoztató",
     "language": "Nyelv",
-    "payments": "Fizetés a Stripe-on keresztül (kártya, BLIK, Przelewy24). Kártyaadatokat soha nem tárolunk.",
+    "payments": "A fizetést a Stripe kezeli (bankkártya, Apple Pay, Google Pay). Kártyaadatokat nem tárolunk.",
     "rights": "Minden jog fenntartva.",
     "disclaimer": "A számítások tájékoztató jellegűek, nem minősülnek vámhatósági határozatnak vagy adótanácsadásnak.",
     "terms": "ÁSZF"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "Mit tartalmaz a fizetős PDF-jelentés?",
-      "a": "Minden tételt fillérre pontosan: aukciós díjak sávok szerint, szállítás, vámérték, vám, jövedéki adó és áfa adóalapokkal és kulcsokkal, a szükséges dokumentumok listája és egy letölthető, személyre szóló PDF. Fizetés BLIK-kel, kártyával vagy Przelewy24-gyel."
+      "a": "Minden tételt fillérre pontosan: aukciós díjak sávok szerint, szállítás, vámérték, vám, jövedéki adó és áfa adóalapokkal és kulcsokkal, a szükséges dokumentumok listája és egy letölthető, személyre szóló PDF. Fizetés bankkártyával, Apple Pay-jel vagy Google Pay-jel."
     },
     "q8": {
       "q": "Kötelező érvényű a kalkulátor eredménye?",

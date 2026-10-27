@@ -203,7 +203,8 @@
     "termsLink": "Termeni și condiții",
     "guarantee": "Garanție de corectitudine: semnalează o eroare de calcul în 14 zile (de ex. o cotă depășită sau o taxă obligatorie lipsă) și corectăm raportul sau returnăm prețul integral.",
     "promoHint": "Aveți un cod de reducere? Îl introduceți pe pagina de plată.",
-    "startFailed": "Plata nu a putut fi inițiată. Încercați din nou imediat – dacă eroarea persistă, scrieți-ne."
+    "startFailed": "Plata nu a putut fi inițiată. Încercați din nou imediat – dacă eroarea persistă, scrieți-ne.",
+    "methodsHint": "Plătiți cu cardul, Apple Pay sau Google Pay."
   },
   "report": {
     "amount": "Sumă",
@@ -493,7 +494,7 @@
     "service": "Serviciu",
     "privacy": "Politica de confidențialitate",
     "language": "Limbă",
-    "payments": "Plăți prin Stripe (card, BLIK, Przelewy24). Nu stocăm niciodată datele cardului.",
+    "payments": "Plăți prin Stripe (card, Apple Pay, Google Pay). Nu stocăm datele cardurilor.",
     "rights": "Toate drepturile rezervate.",
     "disclaimer": "Calculele au caracter informativ și nu reprezintă o decizie vamală sau consultanță fiscală.",
     "terms": "Termeni și condiții"
@@ -790,7 +791,7 @@
     },
     "q7": {
       "q": "Ce include raportul PDF plătit?",
-      "a": "Fiecare poziție la cent: taxele de licitație pe tranșe, transportul, valoarea în vamă, taxele vamale, accizele și TVA cu baze și cote, lista documentelor necesare și un PDF personalizat de descărcat. Plata se face prin BLIK, card sau Przelewy24."
+      "a": "Fiecare poziție la cent: taxele de licitație pe tranșe, transportul, valoarea în vamă, taxele vamale, accizele și TVA cu baze și cote, lista documentelor necesare și un PDF personalizat de descărcat. Plătiți cu cardul, Apple Pay sau Google Pay."
     },
     "q8": {
       "q": "Rezultatul calculatorului este obligatoriu?",
