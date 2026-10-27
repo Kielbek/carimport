@@ -77,7 +77,7 @@ interface CostGroup { key: string; icon: IconName; items: number }
 
       <div class="mt-9 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
         <a [routerLink]="calculator()" class="group relative min-h-[312px] overflow-hidden rounded-[4px] bg-ink sm:col-span-2">
-          <img src="/images/calculator-preview.webp" width="1200" height="760" loading="lazy" decoding="async"
+          <img src="/images/mercedes_image.webp" width="1200" height="760" loading="lazy" decoding="async"
                [alt]="'home.why.preview.alt' | translate"
                class="absolute inset-0 h-full w-full object-cover object-left-top transition duration-500 group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black via-black/75 to-black/10"></div>
