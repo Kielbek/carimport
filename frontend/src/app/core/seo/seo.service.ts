@@ -31,6 +31,17 @@ export interface CustomPage {
   languages?: readonly Lang[];
 }
 
+/** Short page names for the breadcrumb trail (the menu labels), not the long SEO titles with the brand suffix. */
+const BREADCRUMB_LABEL: Record<Exclude<Page, 'home'>, string> = {
+  calculator: 'layout.calculator',
+  about: 'layout.about',
+  privacy: 'footer.privacy',
+  terms: 'footer.terms',
+  taxes: 'layout.taxes',
+  method: 'layout.method',
+  glossary: 'layout.glossary',
+};
+
 /**
  * Per-page head management for search engines and social previews: title, description, canonical, hreflang
  * alternates (+ x-default), Open Graph / Twitter and JSON-LD. Runs during prerendering, so crawlers get it as static
@@ -182,7 +193,7 @@ export class SeoService {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: SITE.name, item: SITE.url + pathFor('home', lang) },
-          { '@type': 'ListItem', position: 2, name, item: url },
+          { '@type': 'ListItem', position: 2, name: t(BREADCRUMB_LABEL[page]), item: url },
         ],
       });
     }
