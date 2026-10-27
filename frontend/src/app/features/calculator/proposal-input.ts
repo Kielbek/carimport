@@ -1,10 +1,12 @@
-import { Component, computed, input, output } from '@angular/core';
+import { Component, computed, input, output, signal } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { Icon } from '../../shared/icon/icon';
 
 /**
  * Number input pre-filled with the calculator's proposal. Untouched it shows the proposal with a "proposed" tag (the
  * request sends null and the server applies the same proposal); typing overrides it, and "use proposal" goes back.
+ * While the field has focus it shows exactly what was typed, so it can be cleared and retyped; left empty, it falls
+ * back to the proposal on blur.
  */
 @Component({
   selector: 'app-proposal-input',
@@ -24,8 +26,8 @@ import { Icon } from '../../shared/icon/icon';
     </div>
     <div class="relative">
       <input [id]="inputId()" type="number" [min]="0" [step]="step()" inputmode="decimal" class="input pr-20"
-             [class.text-muted]="value() == null" [value]="shown() ?? ''" [attr.aria-describedby]="inputId() + '-hint'"
-             (input)="emit($event)" />
+             [class.text-muted]="value() == null && draft() === null" [value]="draft() ?? shown() ?? ''"
+             [attr.aria-describedby]="inputId() + '-hint'" (input)="emit($event)" (blur)="draft.set(null)" />
       <span class="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-muted">{{ unit() }}</span>
     </div>
     <p class="mt-2 text-xs text-muted" [id]="inputId() + '-hint'">
@@ -49,9 +51,12 @@ export class ProposalInput {
   readonly changed = output<number | null>();
 
   protected readonly shown = computed(() => this.value() ?? this.proposal());
+  /** The text being typed; null when the field is not being edited. */
+  protected readonly draft = signal<string | null>(null);
 
   protected emit(e: Event): void {
     const v = (e.target as HTMLInputElement).value;
+    this.draft.set(v);
     this.changed.emit(v === '' ? null : Number(v));
   }
 }
