@@ -41,7 +41,7 @@ import { StepVehicle } from './steps/step-vehicle';
       <!-- minimal bar instead of the site header -->
       <div class="border-b border-line">
         <div class="mx-auto flex h-16 max-w-5xl items-center justify-between gap-2 px-3 sm:gap-4 sm:px-5">
-          <a [routerLink]="home()" class="min-w-0 shrink" [attr.aria-label]="'layout.home' | translate"><app-logo class="origin-left scale-[0.65] sm:scale-[0.8]" /></a>
+          <a [routerLink]="home()" class="min-w-0 shrink" [attr.aria-label]="'layout.home' | translate"><app-logo class="origin-left scale-[0.8] sm:scale-100" /></a>
           <div class="flex items-center gap-1 sm:gap-2">
             <app-currency-menu [value]="store.state().displayCurrency" (changed)="store.setDisplayCurrency($event)" />
             <app-language-menu [hrefFor]="page.hrefFor()" />
