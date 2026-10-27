@@ -25,6 +25,8 @@ services:
     build: backend
     restart: unless-stopped
     logging: *logging
+    # the JVM takes 75 % of this as heap; leaves room for PostgreSQL, nginx and Caddy on a 4 GB server
+    mem_limit: 1536m
     depends_on:
       db: { condition: service_healthy }
     env_file: .env
