@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Ukupno do vrata (prosjek)",
-      "range": "Raspon scenarija",
       "importCosts": "Troškovi uvoza",
       "importShare": "+{{pct}} na cijenu vozila i aukcije",
       "leadTime": "Vrijeme do registracije",
       "structure": "Kamo ide novac",
-      "scenarios": "Ukupni trošak u svakom scenariju",
       "topItems": "Najveće stavke troškova",
       "note": "Iznosi u {{cur}}, prosječni scenarij. Za pojedinosti prijeđite mišem preko grafikona.",
       "firm": "Minimalno vrijeme",
       "delay": "Moguće kašnjenje",
       "axis": "Os: dani od kupnje",
-      "breakdown": "Detaljan pregled troškova"
+      "breakdown": "Detaljan pregled troškova",
+      "rangeTitle": "Od optimističnog do pesimističnog scenarija",
+      "taxes": "Carine i porezi",
+      "fx": "Tečajevi (NBP) na dan {{date}}",
+      "documents": "Potrebni dokumenti"
+    },
+    "cover": {
+      "eyebrow": "Izvješće o troškovima uvoza",
+      "order": "Br. {{ref}}"
     }
   },
   "result": {

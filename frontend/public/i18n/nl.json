@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Totaal tot de deur (gemiddeld)",
-      "range": "Bandbreedte van de scenario's",
       "importCosts": "Importkosten",
       "importShare": "+{{pct}} bovenop de prijs van auto en veiling",
       "leadTime": "Tijd tot registratie",
       "structure": "Waar het geld naartoe gaat",
-      "scenarios": "Totale kosten per scenario",
       "topItems": "Grootste kostenposten",
       "note": "Bedragen in {{cur}}, gemiddeld scenario. Beweeg over de grafiek voor details.",
       "firm": "Minimale duur",
       "delay": "Mogelijke vertraging",
       "axis": "As: dagen vanaf aankoop",
-      "breakdown": "Gedetailleerd kostenoverzicht"
+      "breakdown": "Gedetailleerd kostenoverzicht",
+      "rangeTitle": "Van het optimistische tot het pessimistische scenario",
+      "taxes": "Invoerrechten en belastingen",
+      "fx": "Wisselkoersen (NBP) van {{date}}",
+      "documents": "Benodigde documenten"
+    },
+    "cover": {
+      "eyebrow": "Rapport importkosten",
+      "order": "Nr. {{ref}}"
     }
   },
   "result": {

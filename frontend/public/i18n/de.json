@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Gesamt bis vor die Tür (Mittel)",
-      "range": "Spanne der Szenarien",
       "importCosts": "Importkosten",
       "importShare": "+{{pct}} zum Fahrzeug- und Auktionspreis",
       "leadTime": "Dauer bis zur Zulassung",
       "structure": "Wohin das Geld geht",
-      "scenarios": "Gesamtkosten je Szenario",
       "topItems": "Größte Kostenpositionen",
       "note": "Beträge in {{cur}}, mittleres Szenario. Für Details mit der Maus über das Diagramm fahren.",
       "firm": "Mindestdauer",
       "delay": "Mögliche Verzögerung",
       "axis": "Achse: Tage ab Kauf",
-      "breakdown": "Detaillierte Kostenaufstellung"
+      "breakdown": "Detaillierte Kostenaufstellung",
+      "rangeTitle": "Vom optimistischen bis zum pessimistischen Szenario",
+      "taxes": "Zölle und Steuern",
+      "fx": "Wechselkurse (NBP) vom {{date}}",
+      "documents": "Erforderliche Dokumente"
+    },
+    "cover": {
+      "eyebrow": "Importkostenbericht",
+      "order": "Nr. {{ref}}"
     }
   },
   "result": {

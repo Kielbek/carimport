@@ -26,9 +26,10 @@ import java.util.Map;
 import javax.imageio.ImageIO;
 
 /**
- * Chart data for the PDF: cost structure (donut, drawn as a PNG because the PDF renderer has no SVG), the three
- * scenarios as stacked bars, the largest cost items and the timeline as a Gantt strip. Bars are plain HTML blocks
- * with percentage widths; every chart sits next to its numbers, so nothing is told by colour alone.
+ * Chart data for the PDF: cost structure (a thin ring, drawn as a PNG because the PDF renderer has no SVG), where the
+ * expected cost sits between the optimistic and the pessimistic scenario, the largest cost items and the timeline as
+ * a Gantt strip. Bars are plain HTML blocks with percentage widths; every chart sits next to its numbers, so nothing
+ * is told by colour alone.
  */
 public record ReportCharts(
         String donut,
@@ -36,29 +37,30 @@ public record ReportCharts(
         Money total,
         Money importCosts,
         BigDecimal importShare,
-        List<ScenarioBar> scenarios,
+        Money taxes,
+        Gauge gauge,
         List<ItemBar> items,
         List<StageBar> stages) {
 
-    /** Categorical colours in fixed order (one per category), validated for colour-blind separation. */
+    /** The brand's restrained palette: ink, graphite, gold, steel and mist, told apart by lightness as well as hue. */
     static final Map<CostCategory, String> COLORS = new EnumMap<>(Map.of(
-            CostCategory.VEHICLE, "#2a78d6",
-            CostCategory.TRANSPORT, "#eb6834",
-            CostCategory.TAXES, "#1baf7a",
-            CostCategory.REGISTRATION, "#eda100",
-            CostCategory.RISK, "#e87ba4"));
+            CostCategory.VEHICLE, "#101011",
+            CostCategory.TRANSPORT, "#5b5b63",
+            CostCategory.TAXES, "#ffc000",
+            CostCategory.REGISTRATION, "#a3a3ab",
+            CostCategory.RISK, "#d9d9de"));
 
     private static final int TOP_ITEMS = 7;
-    private static final int DONUT_PX = 600;
+    private static final int DONUT_PX = 720;
 
     public record Slice(CostCategory category, String color, Money amount, BigDecimal percent) {
     }
 
-    public record Segment(String color, BigDecimal width) {
-    }
-
-    /** @param rest empty space after the bar, as percent of the longest bar (the pessimistic total) */
-    public record ScenarioBar(int scenario, Money total, BigDecimal rest, List<Segment> segments) {
+    /**
+     * @param position where the expected total sits between the optimistic (0) and the pessimistic (100) one
+     * @param label    the same, kept clear of the end labels so the three amounts never overlap
+     */
+    public record Gauge(Money low, Money expected, Money high, BigDecimal position, BigDecimal label) {
     }
 
     public record ItemBar(CostLine line, String color, Money amount, BigDecimal width, BigDecimal percent) {
@@ -66,6 +68,11 @@ public record ReportCharts(
 
     /** Offset and widths as percent of the longest possible lead time: firm part (min days), then the possible delay. */
     public record StageBar(CalculationResult.Stage stage, BigDecimal offset, BigDecimal firm, BigDecimal delay) {
+    }
+
+    /** Colour of a category, for the keys in the cost table. */
+    public static String color(CostCategory category) {
+        return COLORS.get(category);
     }
 
     public static ReportCharts of(CalculationResult result, ScenarioTable table) {
@@ -78,23 +85,20 @@ public record ReportCharts(
                 slices.add(new Slice(c, COLORS.get(c), m, percent(m.amount(), total.amount())));
             }
         }
-        Money vehicle = byCategory.getOrDefault(CostCategory.VEHICLE, Money.zero(total.currency()));
+        Money zero = Money.zero(total.currency());
+        Money vehicle = byCategory.getOrDefault(CostCategory.VEHICLE, zero);
         Money importCosts = total.minus(vehicle);
 
-        List<ScenarioBar> scenarios = new ArrayList<>();
+        Gauge gauge = null;
         if (table != null) {
-            BigDecimal longest = max(table.totals()[0].amount(), table.totals()[1].amount(), table.totals()[2].amount());
-            for (int i = 0; i < 3; i++) {
-                List<Segment> segments = new ArrayList<>();
-                for (CostCategory c : CostCategory.values()) {
-                    BigDecimal v = table.categoryTotals().get(c)[i].amount();
-                    if (v.signum() > 0) {
-                        segments.add(new Segment(COLORS.get(c), percent(v, longest)));
-                    }
-                }
-                BigDecimal sum = segments.stream().map(Segment::width).reduce(BigDecimal.ZERO, BigDecimal::add);
-                scenarios.add(new ScenarioBar(i, table.totals()[i], BigDecimal.valueOf(100).subtract(sum), segments));
-            }
+            Money low = table.totals()[0];
+            Money high = table.totals()[2];
+            BigDecimal spread = high.amount().subtract(low.amount());
+            BigDecimal position = spread.signum() > 0
+                    ? percent(table.totals()[1].amount().subtract(low.amount()), spread)
+                    : BigDecimal.valueOf(50);
+            BigDecimal label = position.max(BigDecimal.valueOf(16)).min(BigDecimal.valueOf(84));
+            gauge = new Gauge(low, table.totals()[1], high, position, label);
         }
 
         List<CalculationResult.Line> top = result.lines().stream()
@@ -114,17 +118,18 @@ public record ReportCharts(
         }
 
         return new ReportCharts(slices.isEmpty() ? null : donut(slices), slices, total, importCosts,
-                percent(importCosts.amount(), vehicle.amount()), scenarios, items, stages);
+                percent(importCosts.amount(), vehicle.amount()), byCategory.getOrDefault(CostCategory.TAXES, zero),
+                gauge, items, stages);
     }
 
-    /** Ring chart clockwise from 12 o'clock with a thin white gap between the slices; the legend is HTML. */
+    /** Thin ring clockwise from 12 o'clock with a white gap between the slices; total and legend are HTML. */
     static String donut(List<Slice> slices) {
         BufferedImage img = new BufferedImage(DONUT_PX, DONUT_PX, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g = img.createGraphics();
         try {
             g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
             g.setRenderingHint(RenderingHints.KEY_STROKE_CONTROL, RenderingHints.VALUE_STROKE_PURE);
-            double pad = 6;
+            double pad = 4;
             double size = DONUT_PX - 2 * pad;
             double sum = slices.stream().mapToDouble(s -> s.amount().amount().doubleValue()).sum();
             double angle = 90;
@@ -139,13 +144,13 @@ public record ReportCharts(
             g.setColor(Color.WHITE);
             if (slices.size() > 1) {
                 double c = DONUT_PX / 2.0;
-                g.setStroke(new BasicStroke(7f));
+                g.setStroke(new BasicStroke(6f));
                 for (double a : cuts) {
                     double rad = Math.toRadians(a);
                     g.draw(new Line2D.Double(c, c, c + c * Math.cos(rad), c - c * Math.sin(rad)));
                 }
             }
-            double hole = size * 0.58;
+            double hole = size * 0.8;
             g.fill(new Ellipse2D.Double((DONUT_PX - hole) / 2, (DONUT_PX - hole) / 2, hole, hole));
         } finally {
             g.dispose();
@@ -167,13 +172,5 @@ public record ReportCharts(
 
     private static BigDecimal days(int days, int span) {
         return percent(BigDecimal.valueOf(days), BigDecimal.valueOf(span));
-    }
-
-    private static BigDecimal max(BigDecimal... values) {
-        BigDecimal m = BigDecimal.ZERO;
-        for (BigDecimal v : values) {
-            m = m.max(v);
-        }
-        return m;
     }
 }

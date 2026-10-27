@@ -42,12 +42,12 @@
   --map-land: #d8d8dc;
   --map-eu: #1f5eff;
   --map-origin: rgb(255 192 0 / 0.55);
-  /* chart categories (validated categorical order: blue, orange, aqua, yellow, magenta) */
-  --cat-1: #2a78d6;
-  --cat-2: #eb6834;
-  --cat-3: #1baf7a;
-  --cat-4: #eda100;
-  --cat-5: #e87ba4;
+  /* report chart categories: ink, graphite, gold, steel, mist (told apart by lightness as well as hue) */
+  --cat-1: #101011;
+  --cat-2: #5b5b63;
+  --cat-3: #ffc000;
+  --cat-4: #a3a3ab;
+  --cat-5: #d9d9de;
   color-scheme: light;
 }
 
@@ -64,11 +64,11 @@
   --fg: #f8f8f8;
   --muted: #a5a5ab;
   --brand: #ffc61a;
-  --cat-1: #3987e5;
-  --cat-2: #d95926;
-  --cat-3: #199e70;
-  --cat-4: #c98500;
-  --cat-5: #d55181;
+  --cat-1: #f2f2f3;
+  --cat-2: #9a9aa3;
+  --cat-3: #ffc61a;
+  --cat-4: #60606a;
+  --cat-5: #3f3f46;
   --brand-hover: #ffd34d;
   --brand-ink: #101011;
   --brand-text: #ffc61a;

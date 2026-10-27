@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Totalt till dörren (medel)",
-      "range": "Spann mellan scenarier",
       "importCosts": "Importkostnader",
       "importShare": "+{{pct}} utöver bil- och auktionspriset",
       "leadTime": "Tid till registrering",
       "structure": "Vart pengarna går",
-      "scenarios": "Total kostnad i varje scenario",
       "topItems": "Största kostnadsposter",
       "note": "Belopp i {{cur}}, genomsnittligt scenario. Håll muspekaren över diagrammet för detaljer.",
       "firm": "Minsta tid",
       "delay": "Möjlig försening",
       "axis": "Axel: dagar från köp",
-      "breakdown": "Detaljerad kostnadsuppdelning"
+      "breakdown": "Detaljerad kostnadsuppdelning",
+      "rangeTitle": "Från det optimistiska till det pessimistiska scenariot",
+      "taxes": "Tullar och skatter",
+      "fx": "Valutakurser (NBP) per {{date}}",
+      "documents": "Nödvändiga handlingar"
+    },
+    "cover": {
+      "eyebrow": "Rapport över importkostnader",
+      "order": "Nr {{ref}}"
     }
   },
   "result": {

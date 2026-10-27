@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Összesen házhoz (átlag)",
-      "range": "Forgatókönyvek sávja",
       "importCosts": "Importköltségek",
       "importShare": "+{{pct}} az autó és az aukció árához",
       "leadTime": "Idő a forgalomba helyezésig",
       "structure": "Hová megy a pénz",
-      "scenarios": "Teljes költség forgatókönyvenként",
       "topItems": "Legnagyobb költségtételek",
       "note": "Összegek {{cur}} pénznemben, átlagos forgatókönyv. A részletekért vigye az egeret a diagramra.",
       "firm": "Minimális idő",
       "delay": "Lehetséges késés",
       "axis": "Tengely: napok a vásárlástól",
-      "breakdown": "Részletes költségbontás"
+      "breakdown": "Részletes költségbontás",
+      "rangeTitle": "Az optimista és a pesszimista forgatókönyv között",
+      "taxes": "Vámok és adók",
+      "fx": "NBP-árfolyamok dátuma {{date}}",
+      "documents": "Szükséges dokumentumok"
+    },
+    "cover": {
+      "eyebrow": "Importköltség-jelentés",
+      "order": "Sz. {{ref}}"
     }
   },
   "result": {

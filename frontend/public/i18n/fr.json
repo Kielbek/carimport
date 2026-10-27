@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Total rendu (moyen)",
-      "range": "Fourchette des scénarios",
       "importCosts": "Frais d'importation",
       "importShare": "+{{pct}} sur le prix du véhicule et de l'enchère",
       "leadTime": "Délai jusqu'à l'immatriculation",
       "structure": "Où va l'argent",
-      "scenarios": "Coût total selon chaque scénario",
       "topItems": "Principaux postes de coût",
       "note": "Montants en {{cur}}, scénario moyen. Survolez le graphique pour les détails.",
       "firm": "Durée minimale",
       "delay": "Retard possible",
       "axis": "Axe : jours depuis l'achat",
-      "breakdown": "Détail des coûts"
+      "breakdown": "Détail des coûts",
+      "rangeTitle": "Du scénario optimiste au scénario pessimiste",
+      "taxes": "Droits et taxes",
+      "fx": "Taux de change (NBP) du {{date}}",
+      "documents": "Documents requis"
+    },
+    "cover": {
+      "eyebrow": "Rapport sur les coûts d'importation",
+      "order": "N° {{ref}}"
     }
   },
   "result": {

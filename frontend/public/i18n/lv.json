@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Kopā līdz durvīm (vidēji)",
-      "range": "Scenāriju diapazons",
       "importCosts": "Importa izmaksas",
       "importShare": "+{{pct}} pie auto un izsoles cenas",
       "leadTime": "Laiks līdz reģistrācijai",
       "structure": "Kur aiziet nauda",
-      "scenarios": "Kopējās izmaksas katrā scenārijā",
       "topItems": "Lielākās izmaksu pozīcijas",
       "note": "Summas valūtā {{cur}}, vidējais scenārijs. Novietojiet kursoru uz grafika, lai redzētu detaļas.",
       "firm": "Minimālais laiks",
       "delay": "Iespējama kavēšanās",
       "axis": "Ass: dienas no pirkuma",
-      "breakdown": "Detalizēts izmaksu sadalījums"
+      "breakdown": "Detalizēts izmaksu sadalījums",
+      "rangeTitle": "No optimistiskā līdz pesimistiskajam scenārijam",
+      "taxes": "Muitas un nodokļi",
+      "fx": "Valūtas kursi (NBP) uz {{date}}",
+      "documents": "Nepieciešamie dokumenti"
+    },
+    "cover": {
+      "eyebrow": "Importa izmaksu pārskats",
+      "order": "Nr. {{ref}}"
     }
   },
   "result": {

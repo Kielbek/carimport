@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Total puerta a puerta (medio)",
-      "range": "Rango de escenarios",
       "importCosts": "Costes de importación",
       "importShare": "+{{pct}} sobre el precio del coche y la subasta",
       "leadTime": "Tiempo hasta la matriculación",
       "structure": "A dónde va el dinero",
-      "scenarios": "Coste total en cada escenario",
       "topItems": "Partidas de coste más grandes",
       "note": "Importes en {{cur}}, escenario medio. Pasa el ratón por el gráfico para ver detalles.",
       "firm": "Tiempo mínimo",
       "delay": "Posible retraso",
       "axis": "Eje: días desde la compra",
-      "breakdown": "Desglose detallado de costes"
+      "breakdown": "Desglose detallado de costes",
+      "rangeTitle": "Del escenario optimista al pesimista",
+      "taxes": "Aranceles e impuestos",
+      "fx": "Tipos de cambio (NBP) del {{date}}",
+      "documents": "Documentos necesarios"
+    },
+    "cover": {
+      "eyebrow": "Informe de costes de importación",
+      "order": "N.º {{ref}}"
     }
   },
   "result": {

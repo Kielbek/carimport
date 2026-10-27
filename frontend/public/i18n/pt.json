@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Total até à porta (médio)",
-      "range": "Intervalo dos cenários",
       "importCosts": "Custos de importação",
       "importShare": "+{{pct}} sobre o preço do carro e do leilão",
       "leadTime": "Tempo até à matrícula",
       "structure": "Para onde vai o dinheiro",
-      "scenarios": "Custo total em cada cenário",
       "topItems": "Maiores rubricas de custo",
       "note": "Valores em {{cur}}, cenário médio. Passe o rato pelo gráfico para ver detalhes.",
       "firm": "Tempo mínimo",
       "delay": "Possível atraso",
       "axis": "Eixo: dias desde a compra",
-      "breakdown": "Discriminação detalhada dos custos"
+      "breakdown": "Discriminação detalhada dos custos",
+      "rangeTitle": "Do cenário otimista ao pessimista",
+      "taxes": "Direitos e impostos",
+      "fx": "Taxas de câmbio (NBP) de {{date}}",
+      "documents": "Documentos necessários"
+    },
+    "cover": {
+      "eyebrow": "Relatório de custos de importação",
+      "order": "N.º {{ref}}"
     }
   },
   "result": {

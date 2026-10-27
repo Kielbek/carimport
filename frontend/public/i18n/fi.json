@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Yhteensä ovelle (keskimäärin)",
-      "range": "Skenaarioiden vaihteluväli",
       "importCosts": "Tuontikulut",
       "importShare": "+{{pct}} auton ja huutokaupan hintaan",
       "leadTime": "Aika rekisteröintiin",
       "structure": "Mihin rahat menevät",
-      "scenarios": "Kokonaiskustannus kussakin skenaariossa",
       "topItems": "Suurimmat kuluerät",
       "note": "Summat valuutassa {{cur}}, keskimääräinen skenaario. Näet tiedot viemällä osoittimen kaavion päälle.",
       "firm": "Vähimmäisaika",
       "delay": "Mahdollinen viive",
       "axis": "Akseli: päiviä ostosta",
-      "breakdown": "Yksityiskohtainen kustannuserittely"
+      "breakdown": "Yksityiskohtainen kustannuserittely",
+      "rangeTitle": "Optimistisesta pessimistiseen skenaarioon",
+      "taxes": "Tullit ja verot",
+      "fx": "Valuuttakurssit (NBP), päivä {{date}}",
+      "documents": "Tarvittavat asiakirjat"
+    },
+    "cover": {
+      "eyebrow": "Tuontikustannusraportti",
+      "order": "Nro {{ref}}"
     }
   },
   "result": {

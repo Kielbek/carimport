@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Total până la ușă (mediu)",
-      "range": "Intervalul scenariilor",
       "importCosts": "Costuri de import",
       "importShare": "+{{pct}} peste prețul mașinii și al licitației",
       "leadTime": "Timp până la înmatriculare",
       "structure": "Unde se duc banii",
-      "scenarios": "Cost total în fiecare scenariu",
       "topItems": "Cele mai mari poziții de cost",
       "note": "Sume în {{cur}}, scenariul mediu. Treceți cu mouse-ul peste grafic pentru detalii.",
       "firm": "Timp minim",
       "delay": "Posibilă întârziere",
       "axis": "Axă: zile de la cumpărare",
-      "breakdown": "Defalcare detaliată a costurilor"
+      "breakdown": "Defalcare detaliată a costurilor",
+      "rangeTitle": "De la scenariul optimist la cel pesimist",
+      "taxes": "Taxe vamale și impozite",
+      "fx": "Cursuri de schimb (NBP) din {{date}}",
+      "documents": "Documente necesare"
+    },
+    "cover": {
+      "eyebrow": "Raport privind costurile de import",
+      "order": "Nr. {{ref}}"
     }
   },
   "result": {

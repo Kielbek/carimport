@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Totale fino a casa (medio)",
-      "range": "Intervallo degli scenari",
       "importCosts": "Costi di importazione",
       "importShare": "+{{pct}} sul prezzo dell'auto e dell'asta",
       "leadTime": "Tempo fino all'immatricolazione",
       "structure": "Dove vanno i soldi",
-      "scenarios": "Costo totale in ogni scenario",
       "topItems": "Voci di costo più alte",
       "note": "Importi in {{cur}}, scenario medio. Passa il mouse sul grafico per i dettagli.",
       "firm": "Tempo minimo",
       "delay": "Possibile ritardo",
       "axis": "Asse: giorni dall'acquisto",
-      "breakdown": "Dettaglio dei costi"
+      "breakdown": "Dettaglio dei costi",
+      "rangeTitle": "Dallo scenario ottimistico a quello pessimistico",
+      "taxes": "Dazi e imposte",
+      "fx": "Tassi di cambio (NBP) del {{date}}",
+      "documents": "Documenti necessari"
+    },
+    "cover": {
+      "eyebrow": "Report dei costi di importazione",
+      "order": "N. {{ref}}"
     }
   },
   "result": {

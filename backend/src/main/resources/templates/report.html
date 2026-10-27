@@ -4,143 +4,252 @@
     <meta charset="UTF-8"/>
     <title th:text="#{report.title}">Report</title>
     <style>
-        @page { size: A4 landscape; margin: 14mm 12mm 16mm 12mm;
-            @bottom-center { content: counter(page) " / " counter(pages); font-size: 8pt; color: #6b6b72; } }
-        body { font-family: 'Report Sans', sans-serif; font-size: 8.8pt; color: #101011; }
-        h1 { font-size: 17pt; margin: 0 0 3mm 0; }
-        h2 { font-size: 11.5pt; margin: 7mm 0 2mm 0; padding-bottom: 1mm; border-bottom: 1.5px solid #ffc000; page-break-after: avoid; }
-        .meta td { padding: 0.5mm 5mm 0.5mm 0; }
-        .meta td.k { color: #5d5d64; }
-        table.t { width: 100%; border-collapse: collapse; }
-        table.t th { text-align: left; background: #101011; color: #fff; padding: 1.6mm; font-size: 8pt; }
-        table.t td { padding: 1.3mm 1.6mm; border-bottom: 1px solid #e3e3e6; vertical-align: top; }
-        td.num, th.num { text-align: right; white-space: nowrap; }
-        tr { page-break-inside: avoid; }
-        tr.cat td { background: #f3f3f4; font-weight: bold; }
-        tr.info td { color: #6b6b72; font-style: italic; }
-        tr.total td { font-size: 10.5pt; font-weight: bold; background: #ffc000; padding: 2.2mm 1.6mm; }
-        td.avg, th.avg { background: #fff8db; }
-        tr.total td.avg { background: #ffd34d; }
-        .small { color: #6b6b72; font-size: 7.5pt; }
-        .boxes td { width: 33%; padding: 3mm; border: 1px solid #e3e3e6; }
-        .boxes .v { font-size: 15pt; font-weight: bold; }
-        .warn { background: #fff8db; border-left: 3px solid #ffc000; padding: 1.5mm 3mm; margin: 1mm 0; }
-        .disclaimer { margin-top: 8mm; font-size: 7.5pt; color: #6b6b72; }
+        @page { size: A4 landscape; margin: 17mm 14mm 15mm 14mm;
+            @top-left { content: element(header); }
+            @bottom-left { content: element(footer); }
+            @bottom-right { content: counter(page) " / " counter(pages); font-family: 'Report Display', 'Report Sans', sans-serif;
+                font-size: 7.5pt; color: #8a8a93; } }
+        @page :first { margin: 0 14mm 0 14mm; background-color: #101011;
+            @top-left { content: none; } @bottom-left { content: none; } @bottom-right { content: none; } }
+        body { margin: 0; font-family: 'Report Display', 'Report Sans', sans-serif; font-size: 8.4pt; color: #101011; line-height: 1.35; }
+        .run-header { position: running(header); width: 269mm; font-size: 7.5pt; color: #8a8a93; }
+        .run-footer { position: running(footer); font-size: 7.5pt; color: #8a8a93; }
+        .brand { font-weight: 800; letter-spacing: -0.2pt; color: #101011; }
+        .brand-dot { color: #ffc000; }
+        .cover .run-header .brand { color: #101011; font-size: 7.5pt; }
+
+        /* cover */
+        .cover { background: #101011; color: #ffffff; height: 172mm; padding: 19mm 6mm; page-break-after: always; }
+        .cover .brand { color: #ffffff; font-size: 15pt; }
+        .cover-top { width: 100%; border-collapse: collapse; }
+        .cover-top td { padding: 0; vertical-align: middle; }
+        .cover-top .site { text-align: right; color: #8a8a93; font-size: 8pt; letter-spacing: 0.6pt; }
+        .eyebrow { color: #ffc000; font-size: 7.5pt; font-weight: 700; letter-spacing: 1.6pt; text-transform: uppercase; }
+        .cover h1 { font-size: 27pt; font-weight: 800; line-height: 1.12; margin: 3mm 0 2.5mm 0; letter-spacing: -0.4pt; }
+        .cover .sub { color: #b4b4bb; font-size: 9pt; }
+        .cover .label { color: #8a8a93; font-size: 7.5pt; font-weight: 600; letter-spacing: 1pt; text-transform: uppercase; }
+        .cover .total { color: #ffc000; font-size: 40pt; font-weight: 800; letter-spacing: -0.8pt; line-height: 1; margin-top: 2mm; }
+        .cover .total .cur { font-size: 18pt; margin-left: 2mm; letter-spacing: 0; }
+        .kpis { width: 100%; border-collapse: collapse; }
+        .kpis td { width: 25%; vertical-align: top; padding: 3mm 6mm 0 0; border-top: 0.8pt solid #ffc000; }
+        .kpis .v { font-size: 14pt; font-weight: 700; margin-top: 1.5mm; color: #ffffff; }
+        .kpis .n { color: #8a8a93; font-size: 7.5pt; margin-top: 0.8mm; }
+        .cover-foot { margin-top: 9mm; color: #8a8a93; font-size: 7.5pt; }
+        .cover-foot b { color: #ffffff; font-weight: 600; }
+        .cover-foot .fine { margin-top: 2mm; color: #5d5d64; font-size: 6.8pt; }
+
+        /* expected total between the optimistic and the pessimistic scenario */
+        .gauge { position: relative; height: 22mm; }
+        .g-track { position: absolute; left: 0; right: 0; top: 10mm; height: 1.4mm; background: #3a3a40; border-radius: 1mm; }
+        .g-end { position: absolute; top: 8.6mm; width: 0.5mm; height: 4.2mm; background: #8a8a93; }
+        .g-mark { position: absolute; top: 7.5mm; width: 4.6mm; height: 4.6mm; margin-left: -3.2mm; border-radius: 3.2mm;
+            background: #ffc000; border: 0.9mm solid #101011; }
+        .g-lab { position: absolute; top: 14.5mm; font-size: 7.5pt; color: #8a8a93; }
+        .g-lab b { display: block; font-size: 10pt; color: #ffffff; font-weight: 700; }
+        .g-mid { top: 0; width: 40mm; margin-left: -20mm; text-align: center; }
+        .g-mid b { color: #ffc000; }
+        .gauge.light .g-track { background: #e6e6e9; }
+        .gauge.light .g-mark { border-color: #ffffff; }
+        .gauge.light .g-lab b { color: #101011; }
+        .gauge.light .g-mid b { color: #8f6500; }
+
+        /* sections */
+        .sec { margin: 0 0 4mm 0; padding-bottom: 2.2mm; border-bottom: 0.8pt solid #101011; page-break-after: avoid; }
+        .sec .no { color: #ffc000; font-size: 9pt; font-weight: 800; margin-right: 3mm; }
+        .sec .t { font-size: 14pt; font-weight: 800; letter-spacing: -0.2pt; }
+        .gap { height: 8mm; }
+        .meta { width: 100%; border-collapse: collapse; margin-bottom: 6mm; }
+        .meta td { padding: 1.4mm 4mm 1.4mm 0; border-bottom: 0.5pt solid #ececef; vertical-align: top; }
+        .meta td.k { color: #8a8a93; font-size: 7pt; text-transform: uppercase; letter-spacing: 0.6pt; width: 13%; }
         .cols { width: 100%; border-collapse: collapse; }
         .cols > tbody > tr > td, .cols > tr > td { vertical-align: top; padding: 0; }
-        .donut { width: 50mm; height: 50mm; }
-        .legend { border-collapse: collapse; width: 100%; }
-        .legend td { padding: 1mm 1.4mm; border-bottom: 1px solid #ececee; }
-        .key { display: inline-block; width: 3mm; height: 3mm; border-radius: 0.8mm; margin-right: 1.5mm; }
-        .headline { font-size: 18pt; font-weight: bold; margin: 0; }
-        h3 { font-size: 9.5pt; margin: 0 0 1.5mm 0; }
-        .bars { width: 100%; border-collapse: collapse; }
-        .bars td { padding: 0.9mm 1.4mm; vertical-align: middle; }
-        .bars td.label { width: 34%; }
-        .bars td.val { width: 18%; text-align: right; white-space: nowrap; }
-        .bar { height: 3.6mm; border-radius: 0 1mm 1mm 0; }
-        .stack, .gantt { width: 100%; border-collapse: collapse; table-layout: fixed; }
-        table.stack td, table.gantt td { height: 4.4mm; padding: 0; border-bottom: 0; border-right: 0.5mm solid #fff; }
-        table.stack td.rest, table.gantt td.rest, table.gantt td.off { border-right: 0; }
-        td.firm { background: #101011; }
-        td.delay { background: #c9c9cf; }
+        .card { border: 0.6pt solid #e6e6e9; border-radius: 2mm; padding: 6mm; }
+        h3 { font-size: 8pt; font-weight: 700; margin: 0 0 3mm 0; text-transform: uppercase; letter-spacing: 1pt; color: #6b6b72; }
+        .donut-wrap { position: relative; width: 60mm; height: 60mm; margin: 0 auto; }
+        .donut { width: 60mm; height: 60mm; }
+        .donut-c { position: absolute; left: 0; top: 22.5mm; width: 60mm; text-align: center; }
+        .donut-c .l { font-size: 6.8pt; color: #8a8a93; text-transform: uppercase; letter-spacing: 0.8pt; }
+        .donut-c .v { font-size: 15pt; font-weight: 800; margin-top: 0.6mm; }
+        .legend { border-collapse: collapse; width: 100%; margin-top: 6mm; }
+        .legend td { padding: 1.7mm 1mm; border-bottom: 0.5pt solid #ececef; }
+        .key { display: inline-block; width: 2.6mm; height: 2.6mm; border-radius: 0.6mm; margin-right: 2.2mm; }
+        .items { width: 100%; border-collapse: collapse; }
+        .items td { padding: 1.9mm 0 0 0; }
+        .items td.v { text-align: right; white-space: nowrap; }
+        .items .pct { color: #8a8a93; font-size: 7pt; margin-left: 1.5mm; }
+        .track { height: 1.6mm; background: #f1f1f3; border-radius: 0.8mm; margin-top: 1.2mm; }
+        .fill { height: 1.6mm; border-radius: 0.8mm; }
+        .note { color: #8a8a93; font-size: 7pt; margin-top: 4mm; }
+
+        /* tables */
+        table.t { width: 100%; border-collapse: collapse; }
+        table.t th { text-align: left; color: #6b6b72; font-size: 6.8pt; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.7pt; padding: 0 1.8mm 1.8mm 1.8mm; border-bottom: 0.8pt solid #101011; }
+        table.t td { padding: 1.6mm 1.8mm; border-bottom: 0.5pt solid #ececef; vertical-align: top; }
+        td.num, th.num { text-align: right; white-space: nowrap; }
+        tr { page-break-inside: avoid; }
+        tr.cat td { background: #f6f6f7; font-weight: 700; padding-top: 2mm; padding-bottom: 2mm; }
+        tr.info td { color: #8a8a93; font-style: italic; }
+        td.avg, th.avg { background: #fffaea; }
+        tr.cat td.avg { background: #fff3c7; }
+        tr.total td { background: #101011; color: #ffffff; font-size: 10pt; font-weight: 800; padding: 3mm 1.8mm; border: 0; }
+        tr.total td.avg { background: #101011; color: #ffc000; }
+        .small { color: #8a8a93; font-size: 7pt; }
+        table.gantt { width: 100%; border-collapse: collapse; table-layout: fixed; }
+        table.gantt td { height: 3.4mm; padding: 0; border: 0; }
+        td.firm { background: #ffc000; }
+        td.delay { background: #ffe8a3; }
+        td.rest, td.off { background: #f3f3f5; }
+        .num-dot { display: inline-block; width: 5.4mm; height: 5.4mm; border-radius: 2.7mm; background: #101011; color: #ffc000;
+            text-align: center; font-size: 7.5pt; font-weight: 800; line-height: 5.4mm; }
+        .docs { width: 100%; border-collapse: separate; border-spacing: 3mm 0; margin-left: -3mm; }
+        .docs td { width: 25%; vertical-align: top; border-top: 0.8pt solid #101011; padding: 2.5mm 0 0 0; }
+        .docs .h { font-weight: 800; font-size: 8.4pt; margin-bottom: 2mm; }
+        .doc { padding: 1mm 0 1mm 5mm; position: relative; }
+        .box { position: absolute; left: 0; top: 1.5mm; width: 2.6mm; height: 2.6mm; border: 0.6pt solid #a3a3ab; border-radius: 0.5mm; }
+        .warn { background: #fffaea; border-left: 0.9mm solid #ffc000; padding: 2mm 3.5mm; margin: 0 0 1.5mm 0; }
+        .disclaimer { margin-top: 8mm; padding-top: 3mm; border-top: 0.5pt solid #e6e6e9; font-size: 7pt; color: #8a8a93; }
         .watermark { position: fixed; top: 62mm; left: 0; width: 100%; text-align: center; font-size: 96pt;
-            font-weight: bold; color: #fff0c2; transform: rotate(-18deg); z-index: -1; }
+            font-weight: 800; color: #ffc000; opacity: 0.18; transform: rotate(-18deg); z-index: -1; }
     </style>
 </head>
 <body>
-<div th:if="${sample}" class="watermark" th:text="#{report.sample}">SAMPLE</div>
-<h1 th:text="#{report.title}">Report</h1>
+<!-- cover -->
+<div class="cover">
+<div class="run-header"><span class="brand">carglo</span><span class="brand-dot">.</span>
+        <span th:text="'  ·  ' + #{report.title}">title</span></div>
+    <div class="run-footer" th:text="${order.fullName} + '  ·  ' + #{report.cover.order(${reference})} + '  ·  ' + ${result.calculationDate()}">footer</div>
+    <div th:if="${sample}" class="watermark" th:text="#{report.sample}">SAMPLE</div>
+    <table class="cover-top"><tr>
+        <td><span class="brand">carglo</span><span class="brand" style="color: #ffc000;">.</span></td>
+        <td class="site">CARGLOAPP.COM</td>
+    </tr></table>
 
+    <div style="margin-top: 26mm;" class="eyebrow" th:text="#{report.cover.eyebrow} + '  ·  ' + #{report.cover.order(${reference})}">eyebrow</div>
+    <h1 th:text="#{report.title}">Report</h1>
+    <div class="sub" th:text="${(request.vehicleDescription() != null ? request.vehicleDescription() + '  ·  ' : '')
+            + result.route().departurePort() + ' → ' + result.route().euPortName() + ' → ' + request.destinationCountry()}">vehicle</div>
+
+    <table class="cols" style="margin-top: 12mm;"><tr>
+        <td style="width: 46%; padding-right: 12mm;">
+            <div class="label" th:text="#{report.total}">Total</div>
+            <div class="total"><span th:text="${#numbers.formatDecimal(charts.total().amount(), 1, 'DEFAULT', 0, 'DEFAULT')}">0</span><span class="cur" th:text="${result.displayCurrency()}">PLN</span></div>
+        </td>
+        <td style="vertical-align: bottom; padding-bottom: 1mm;">
+            <th:block th:if="${charts.gauge() != null}" th:with="g=${charts.gauge()}">
+                <div class="label" style="margin-bottom: 3mm;" th:text="#{report.range}">Range</div>
+                <div class="gauge">
+                    <div class="g-track"></div>
+                    <div class="g-end" style="left: 0;"></div>
+                    <div class="g-end" style="right: 0;"></div>
+                    <div class="g-mark" th:style="'left:' + ${g.position()} + '%'"></div>
+                    <div class="g-lab" style="left: 0;"><span th:text="#{scenario.0}">Opt</span>
+                        <b th:text="${#numbers.formatDecimal(g.low().amount(), 1, 'DEFAULT', 0, 'DEFAULT')}">0</b></div>
+                    <div class="g-lab g-mid" th:style="'left:' + ${g.label()} + '%'"><span th:text="#{scenario.1}">Avg</span>
+                        <b th:text="${#numbers.formatDecimal(g.expected().amount(), 1, 'DEFAULT', 0, 'DEFAULT')}">0</b></div>
+                    <div class="g-lab" style="right: 0; text-align: right;"><span th:text="#{scenario.2}">Pess</span>
+                        <b th:text="${#numbers.formatDecimal(g.high().amount(), 1, 'DEFAULT', 0, 'DEFAULT')}">0</b></div>
+                </div>
+            </th:block>
+        </td>
+    </tr></table>
+
+    <table class="kpis" style="margin-top: 20mm;"><tr>
+        <td><div class="label" th:text="#{report.importCosts}">Import costs</div>
+            <div class="v" th:text="${#numbers.formatDecimal(charts.importCosts().amount(), 1, 'DEFAULT', 0, 'DEFAULT')} + ' ' + ${result.displayCurrency()}">0</div>
+            <div class="n" th:if="${charts.importShare().signum() > 0}" th:text="#{report.importShareShort(${charts.importShare()})}">share</div></td>
+        <td><div class="label" th:text="#{report.taxesTotal}">Taxes</div>
+            <div class="v" th:text="${#numbers.formatDecimal(charts.taxes().amount(), 1, 'DEFAULT', 0, 'DEFAULT')} + ' ' + ${result.displayCurrency()}">0</div>
+            <div class="n" th:text="'HS ' + ${result.hsCode()}">HS</div></td>
+        <td><div class="label" th:text="#{report.leadTime}">Lead time</div>
+            <div class="v" th:text="${result.timeline().totalMin()} + '–' + ${result.timeline().totalMax()} + ' ' + #{report.days}">days</div>
+            <div class="n" th:text="#{'delivery.' + ${request.effectiveDeliveryMode()}} + ' · ' + ${result.deliveryKm()} + ' km'">delivery</div></td>
+        <td><div class="label" th:text="#{report.customsValue}">CIF</div>
+            <div class="v" th:text="${#numbers.formatDecimal(result.customsValue().amount(), 1, 'DEFAULT', 0, 'DEFAULT')} + ' ' + ${result.customsValue().currency()}">0</div>
+            <div class="n" th:text="#{report.fx} + ' ' + ${result.fxDate()}">fx</div></td>
+    </tr></table>
+
+    <div class="cover-foot">
+        <span th:text="#{report.preparedFor}">For</span> <b th:text="${order.fullName}">Name</b>
+        <span th:text="'  ·  ' + #{report.date} + ' '">date</span><b th:text="${result.calculationDate()}">2026-10-21</b>
+        <div class="fine" th:text="#{report.disclaimer}">Disclaimer</div>
+    </div>
+</div>
+
+<!-- 01 overview -->
+<div class="sec"><span class="no">01</span><span class="t" th:text="#{report.overview}">Overview</span></div>
 <table class="meta">
-    <tr><td class="k" th:text="#{report.preparedFor}">For</td><td><b th:text="${order.fullName}">Name</b></td>
-        <td class="k" th:text="#{report.date}">Date</td><td th:text="${result.calculationDate()}">2026-10-21</td>
-        <td class="k" th:text="#{report.fx}">FX</td><td th:text="${result.fxDate()}">2026-10-20</td></tr>
-    <tr><td class="k" th:text="#{report.route}">Route</td>
-        <td th:text="${result.route().departurePort()} + ' → ' + ${result.route().euPortName()} + ' → ' + ${request.destinationCountry()}">route</td>
-        <td class="k" th:text="#{report.hsCode}">HS</td><td th:text="${result.hsCode()}">8703</td>
-        <td class="k" th:text="#{report.customsValue}">CIF</td>
-        <td th:text="${#numbers.formatDecimal(result.customsValue().amount(), 1, 'DEFAULT', 2, 'DEFAULT')} + ' ' + ${result.customsValue().currency()}">0</td></tr>
-    <tr><td class="k" th:text="#{report.delivery}">Delivery</td>
-        <td th:text="#{'delivery.' + ${request.effectiveDeliveryMode()}} + ' · ' + ${result.deliveryKm()} + ' km'">mode</td>
-        <td class="k" th:text="#{report.leadTime}">Lead time</td>
-        <td th:text="${result.timeline().totalMin()} + '–' + ${result.timeline().totalMax()} + ' ' + #{report.days}">days</td>
-        <td class="k" th:text="${request.destinationAddress() != null} ? #{report.address} : ''"></td>
-        <td th:text="${request.destinationAddress()}"></td></tr>
     <tr><td class="k" th:text="#{report.vehicle}">Vehicle</td>
         <td colspan="3" th:text="${(request.vehicleDescription() != null ? request.vehicleDescription() + ' · ' : '')
                 + (request.vin() != null ? 'VIN ' + request.vin() + ' · ' : '')
                 + request.engineCc() + ' cm³ · ' + request.effectivePowerKw() + ' kW · CO₂ ' + request.effectiveCo2()
-                + ' g/km · ' + request.effectiveMassKg() + ' kg'}">vehicle</td>
-        <td></td><td></td></tr>
+                + ' g/km · ' + request.effectiveMassKg() + ' kg'}">vehicle</td></tr>
+    <tr><td class="k" th:text="#{report.route}">Route</td>
+        <td th:text="${result.route().departurePort()} + ' → ' + ${result.route().euPortName()} + ' → ' + ${request.destinationCountry()}">route</td>
+        <td class="k" th:text="${request.destinationAddress() != null} ? #{report.address} : #{report.hsCode}"></td>
+        <td th:text="${request.destinationAddress() != null} ? ${request.destinationAddress()} : ${result.hsCode()}"></td></tr>
 </table>
 
-<th:block th:if="${charts.donut() != null}">
-    <h2 th:text="#{report.overview}">Overview</h2>
-    <table class="cols"><tr>
-        <td style="width: 42%; padding-right: 8mm;">
-            <table class="cols"><tr>
-                <td style="width: 54mm;"><img class="donut" th:src="${charts.donut()}" alt=""/></td>
-                <td>
-                    <div class="small" th:text="#{report.total}">Total</div>
-                    <p class="headline" th:text="${#numbers.formatDecimal(charts.total().amount(), 1, 'DEFAULT', 0, 'DEFAULT')} + ' ' + ${result.displayCurrency()}">0</p>
-                    <div class="small" th:if="${charts.importShare().signum() > 0}"
-                         th:text="#{report.importShare(${#numbers.formatDecimal(charts.importCosts().amount(), 1, 'DEFAULT', 0, 'DEFAULT')}, ${result.displayCurrency()}, ${charts.importShare()})}">share</div>
-                </td>
-            </tr></table>
-            <h3 style="margin-top: 3mm;" th:text="#{report.structure}">Structure</h3>
+<table class="cols" th:if="${charts.donut() != null}"><tr>
+    <td style="width: 41%; padding-right: 6mm;">
+        <div class="card">
+            <h3 th:text="#{report.structure}">Structure</h3>
+            <div class="donut-wrap">
+                <img class="donut" th:src="${charts.donut()}" alt=""/>
+                <div class="donut-c">
+                    <div class="l" th:text="#{scenario.1}">Average</div>
+                    <div class="v" th:text="${#numbers.formatDecimal(charts.total().amount(), 1, 'DEFAULT', 0, 'DEFAULT')}">0</div>
+                    <div class="l" th:text="${result.displayCurrency()}">PLN</div>
+                </div>
+            </div>
             <table class="legend">
                 <tr th:each="s : ${charts.slices()}">
                     <td><span class="key" th:style="'background:' + ${s.color()}"></span><span th:text="#{'category.' + ${s.category()}}">cat</span></td>
-                    <td class="num" th:text="${#numbers.formatDecimal(s.amount().amount(), 1, 'DEFAULT', 0, 'DEFAULT')} + ' ' + ${result.displayCurrency()}">0</td>
-                    <td class="num" style="width: 14mm;"><b th:text="${#numbers.formatDecimal(s.percent(), 1, 'DEFAULT', 1, 'DEFAULT')} + ' %'">0 %</b></td>
+                    <td class="num" style="color: #6b6b72;" th:text="${#numbers.formatDecimal(s.amount().amount(), 1, 'DEFAULT', 0, 'DEFAULT')}">0</td>
+                    <td class="num" style="width: 13mm;"><b th:text="${#numbers.formatDecimal(s.percent(), 1, 'DEFAULT', 1, 'DEFAULT')} + ' %'">0 %</b></td>
                 </tr>
             </table>
-        </td>
-        <td>
-            <th:block th:if="${!charts.scenarios().isEmpty()}">
-                <h3 th:text="#{report.scenarioChart}">Scenarios</h3>
-                <table class="bars" style="margin-bottom: 4mm;">
-                    <tr th:each="b : ${charts.scenarios()}">
-                        <td class="label" th:text="#{'scenario.' + ${b.scenario()}}">scenario</td>
-                        <td>
-                            <table class="stack"><tr>
-                                <td th:each="seg : ${b.segments()}" th:style="'width:' + ${seg.width()} + '%; background:' + ${seg.color()}"></td>
-                                <td class="rest" th:if="${b.rest().signum() > 0}" th:style="'width:' + ${b.rest()} + '%'"></td>
-                            </tr></table>
-                        </td>
-                        <td class="val"><b th:text="${#numbers.formatDecimal(b.total().amount(), 1, 'DEFAULT', 0, 'DEFAULT')}">0</b></td>
-                    </tr>
-                </table>
-            </th:block>
+        </div>
+    </td>
+    <td>
+        <div class="card">
             <h3 th:text="#{report.topItems}">Largest items</h3>
-            <table class="bars">
+            <table class="items">
                 <tr th:each="it : ${charts.items()}">
-                    <td class="label">
-                        <span th:text="#{'cost.' + ${it.line().code()}}">Label</span>
-                        <span th:if="${it.line().params().get('localName') != null}" th:text="' (' + ${it.line().params().get('localName')} + ')'"></span>
+                    <td>
+                        <table class="cols"><tr>
+                            <td><span th:text="#{'cost.' + ${it.line().code()}}">Label</span></td>
+                            <td class="num"><b th:text="${#numbers.formatDecimal(it.amount().amount(), 1, 'DEFAULT', 0, 'DEFAULT')}">0</b>
+                                <span class="pct" th:text="${#numbers.formatDecimal(it.percent(), 1, 'DEFAULT', 1, 'DEFAULT')} + ' %'">0 %</span></td>
+                        </tr></table>
+                        <div class="track"><div class="fill" th:style="'width:' + ${it.width()} + '%; background:' + ${it.color()}"></div></div>
                     </td>
-                    <td><div class="bar" th:style="'width:' + ${it.width()} + '%; background:' + ${it.color()}"></div></td>
-                    <td class="val"><span th:text="${#numbers.formatDecimal(it.amount().amount(), 1, 'DEFAULT', 0, 'DEFAULT')}">0</span>
-                        <span class="small" th:text="' · ' + ${#numbers.formatDecimal(it.percent(), 1, 'DEFAULT', 1, 'DEFAULT')} + ' %'"></span></td>
                 </tr>
             </table>
-            <p class="small" th:text="#{report.chartNote(${result.displayCurrency()})}">note</p>
-        </td>
-    </tr></table>
-</th:block>
+            <th:block th:if="${charts.gauge() != null}" th:with="g=${charts.gauge()}">
+                <h3 style="margin-top: 7mm;" th:text="#{report.range}">Range</h3>
+                <div class="gauge light">
+                    <div class="g-track"></div>
+                    <div class="g-end" style="left: 0;"></div>
+                    <div class="g-end" style="right: 0;"></div>
+                    <div class="g-mark" th:style="'left:' + ${g.position()} + '%'"></div>
+                    <div class="g-lab" style="left: 0;"><span th:text="#{scenario.0}">Opt</span>
+                        <b th:text="${#numbers.formatDecimal(g.low().amount(), 1, 'DEFAULT', 0, 'DEFAULT')}">0</b></div>
+                    <div class="g-lab g-mid" th:style="'left:' + ${g.label()} + '%'"><span th:text="#{scenario.1}">Avg</span>
+                        <b th:text="${#numbers.formatDecimal(g.expected().amount(), 1, 'DEFAULT', 0, 'DEFAULT')}">0</b></div>
+                    <div class="g-lab" style="right: 0; text-align: right;"><span th:text="#{scenario.2}">Pess</span>
+                        <b th:text="${#numbers.formatDecimal(g.high().amount(), 1, 'DEFAULT', 0, 'DEFAULT')}">0</b></div>
+                </div>
+            </th:block>
+            <p class="note" th:text="#{report.chartNote(${result.displayCurrency()})}">note</p>
+        </div>
+    </td>
+</tr></table>
 
+<!-- 02 breakdown -->
+<div style="page-break-before: always;"></div>
+<div class="sec"><span class="no">02</span><span class="t" th:text="#{report.breakdown}">Breakdown</span></div>
 <th:block th:if="${table != null}">
-    <h2 th:text="#{report.scenarios}">Scenarios</h2>
-    <table class="boxes"><tr>
-        <td th:each="i : ${ {0, 1, 2} }">
-            <div class="small" th:text="#{'scenario.' + ${i}}">scenario</div>
-            <div class="v" th:text="${#numbers.formatDecimal(table.totals()[i].amount(), 1, 'DEFAULT', 2, 'DEFAULT')} + ' ' + ${result.displayCurrency()}">0</div>
-            <div class="small" th:text="#{'scenarioHint.' + ${i}}">hint</div>
-        </td>
-    </tr></table>
-
-    <h2 th:text="#{report.breakdown}">Breakdown</h2>
     <table class="t">
         <thead><tr>
             <th th:text="#{report.position}">Item</th>
@@ -154,7 +263,7 @@
         <tbody>
         <th:block th:each="cat : ${T(com.carimport.calculation.CostCategory).values()}" th:if="${!table.rowsOf(cat).isEmpty()}">
             <tr class="cat">
-                <td colspan="4" th:text="#{'category.' + ${cat}}">Category</td>
+                <td colspan="4"><span class="key" th:style="'background:' + ${T(com.carimport.report.ReportCharts).color(cat)}"></span><span th:text="#{'category.' + ${cat}}">Category</span></td>
                 <td class="num" th:text="${#numbers.formatDecimal(table.categoryTotals().get(cat)[0].amount(), 1, 'DEFAULT', 2, 'DEFAULT')}">0</td>
                 <td class="num avg" th:text="${#numbers.formatDecimal(table.categoryTotals().get(cat)[1].amount(), 1, 'DEFAULT', 2, 'DEFAULT')}">0</td>
                 <td class="num" th:text="${#numbers.formatDecimal(table.categoryTotals().get(cat)[2].amount(), 1, 'DEFAULT', 2, 'DEFAULT')}">0</td>
@@ -187,11 +296,10 @@
         </tr>
         </tbody>
     </table>
-    <p class="small" th:text="#{report.scenarioMethod}">method</p>
+    <p class="note" th:text="#{report.scenarioMethod}">method</p>
 </th:block>
 
 <th:block th:if="${table == null}">
-    <h2 th:text="#{report.breakdown}">Breakdown</h2>
     <table class="t">
         <tr th:each="l : ${result.lines()}">
             <td th:text="#{'cost.' + ${l.line().code()}}">Label</td>
@@ -202,15 +310,17 @@
     </table>
 </th:block>
 
+<!-- 03 timeline -->
+<div class="gap"></div>
 <div style="page-break-inside: avoid;">
-<h2 th:text="#{report.timeline}">Timeline</h2>
+<div class="sec"><span class="no">03</span><span class="t" th:text="#{report.timeline} + ': ' + ${result.timeline().totalMin()} + '–' + ${result.timeline().totalMax()} + ' ' + #{report.days}">Timeline</span></div>
 <table class="t">
-    <thead><tr><th style="width: 30%;" th:text="#{report.stage}">Stage</th><th class="num" style="width: 10%;" th:text="#{report.days}">Days</th>
-        <th th:text="#{report.timelineChart}">Gantt</th></tr></thead>
+    <thead><tr><th style="width: 30%;" th:text="#{report.stage}">Stage</th><th class="num" style="width: 9%;" th:text="#{report.days}">Days</th>
+        <th style="padding-left: 4mm;" th:text="#{report.timelineChart}">Days from purchase</th></tr></thead>
     <tr th:each="g : ${charts.stages()}">
         <td th:text="#{'timeline.' + ${g.stage().code()}}">stage</td>
         <td class="num" th:text="${g.stage().minDays()} + '–' + ${g.stage().maxDays()}">1–2</td>
-        <td style="vertical-align: middle;">
+        <td style="vertical-align: middle; padding-left: 4mm;">
             <table class="gantt"><tr>
                 <td class="off" th:if="${g.offset().signum() > 0}" th:style="'width:' + ${g.offset()} + '%'"></td>
                 <td class="firm" th:if="${g.firm().signum() > 0}" th:style="'width:' + ${g.firm()} + '%'"></td>
@@ -219,35 +329,40 @@
             </tr></table>
         </td>
     </tr>
-    <tr class="cat"><td th:text="#{report.total}">Total</td>
-        <td class="num" th:text="${result.timeline().totalMin()} + '–' + ${result.timeline().totalMax()}">0</td>
-        <td class="small" style="font-weight: normal;" th:text="#{report.timelineLegend}">legend</td></tr>
 </table>
+<p class="note"><span class="key" style="background: #ffc000;"></span><span th:text="#{report.timelineFirm}">min</span>
+    <span class="key" style="background: #ffe8a3; margin-left: 5mm;"></span><span th:text="#{report.timelineDelay}">delay</span></p>
 </div>
 
-<h2 th:text="#{report.plan}">After import</h2>
+<!-- 04 after import -->
+<div class="gap"></div>
+<div class="sec"><span class="no">04</span><span class="t" th:text="#{report.plan}">After import</span></div>
 <table class="t">
-    <thead><tr><th>#</th><th th:text="#{report.step}">Step</th><th th:text="#{report.deadline}">Deadline</th></tr></thead>
+    <thead><tr><th style="width: 8mm;"></th><th th:text="#{report.step}">Step</th><th style="width: 22%;" th:text="#{report.deadline}">Deadline</th></tr></thead>
     <tr th:each="p, it : ${plan}">
-        <td th:text="${it.count}">1</td>
-        <td><b th:text="#{${p.key()} + '.title'}">title</b><div class="small" th:text="#{${p.key()} + '.text'}">text</div></td>
+        <td><span class="num-dot" th:text="${it.count}">1</span></td>
+        <td><b th:text="#{${p.key()} + '.title'}">title</b><div class="small" style="margin-top: 0.6mm;" th:text="#{${p.key()} + '.text'}">text</div></td>
         <td th:text="#{${p.deadline()}}">deadline</td>
     </tr>
 </table>
 
-<h2 th:text="#{report.documents}">Documents</h2>
-<th:block th:each="stage : ${T(com.carimport.report.DocumentChecklistService.Stage).values()}">
-    <b th:text="#{'report.stage.' + ${stage}}">Stage</b>
-    <ul>
-        <li th:each="d : ${documents}" th:if="${d.stage() == stage}" th:text="#{${d.key()}}">doc</li>
-    </ul>
-</th:block>
+<!-- 05 documents -->
+<div class="gap"></div>
+<div style="page-break-inside: avoid;">
+<div class="sec"><span class="no">05</span><span class="t" th:text="#{report.documents}">Documents</span></div>
+<table class="docs"><tr>
+    <td th:each="stage : ${T(com.carimport.report.DocumentChecklistService.Stage).values()}">
+        <div class="h" th:text="#{'report.stage.' + ${stage}}">Stage</div>
+        <th:block th:each="d : ${documents}"><div class="doc" th:if="${d.stage() == stage}"><span class="box"></span><span th:text="#{${d.key()}}">doc</span></div></th:block>
+    </td>
+</tr></table>
+</div>
 
 <th:block th:if="${!result.warnings().isEmpty()}">
-    <h2 th:text="#{report.warnings}">Notes</h2>
+    <div class="gap"></div>
+    <div class="sec"><span class="no">06</span><span class="t" th:text="#{report.warnings}">Notes</span></div>
     <div class="warn" th:each="w : ${result.warnings()}" th:text="#{${w}}">warning</div>
 </th:block>
 
-<p class="disclaimer" th:text="#{report.disclaimer}">Disclaimer</p>
 </body>
 </html>

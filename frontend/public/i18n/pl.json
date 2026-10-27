@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Razem pod dom (średni)",
-      "range": "Rozpiętość scenariuszy",
       "importCosts": "Koszty importu",
       "importShare": "+{{pct}} do ceny auta z aukcją",
       "leadTime": "Czas do rejestracji",
       "structure": "Na co idą pieniądze",
-      "scenarios": "Łączny koszt w każdym scenariuszu",
       "topItems": "Największe pozycje kosztowe",
       "note": "Kwoty w {{cur}}, scenariusz średni. Najedź na wykres, aby zobaczyć szczegóły.",
       "firm": "Minimalny czas",
       "delay": "Możliwe opóźnienie",
       "axis": "Oś: dni od zakupu",
-      "breakdown": "Szczegółowe zestawienie kosztów"
+      "breakdown": "Szczegółowe zestawienie kosztów",
+      "rangeTitle": "Od scenariusza optymistycznego do pesymistycznego",
+      "taxes": "Cła i podatki",
+      "fx": "Kursy walut (NBP) z dnia {{date}}",
+      "documents": "Wymagane dokumenty"
+    },
+    "cover": {
+      "eyebrow": "Raport kosztów importu",
+      "order": "Nr {{ref}}"
     }
   },
   "result": {

@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Door-to-door total (average)",
-      "range": "Scenario range",
       "importCosts": "Import costs",
       "importShare": "+{{pct}} on top of the car and auction price",
       "leadTime": "Time to registration",
       "structure": "Where the money goes",
-      "scenarios": "Total cost in each scenario",
       "topItems": "Largest cost items",
       "note": "Amounts in {{cur}}, average scenario. Hover a chart for details.",
       "firm": "Minimum time",
       "delay": "Possible delay",
       "axis": "Axis: days from purchase",
-      "breakdown": "Detailed cost breakdown"
+      "breakdown": "Detailed cost breakdown",
+      "rangeTitle": "From the optimistic to the pessimistic scenario",
+      "taxes": "Duties and taxes",
+      "fx": "Exchange rates (NBP) of {{date}}",
+      "documents": "Required documents"
+    },
+    "cover": {
+      "eyebrow": "Import cost report",
+      "order": "No. {{ref}}"
     }
   },
   "result": {

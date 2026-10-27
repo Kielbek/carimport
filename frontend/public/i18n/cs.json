@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Celkem až domů (průměr)",
-      "range": "Rozpětí scénářů",
       "importCosts": "Náklady na dovoz",
       "importShare": "+{{pct}} k ceně vozu a aukce",
       "leadTime": "Doba do registrace",
       "structure": "Kam jdou peníze",
-      "scenarios": "Celkové náklady v každém scénáři",
       "topItems": "Největší nákladové položky",
       "note": "Částky v {{cur}}, průměrný scénář. Pro podrobnosti najeďte na graf.",
       "firm": "Minimální doba",
       "delay": "Možné zpoždění",
       "axis": "Osa: dny od nákupu",
-      "breakdown": "Podrobný rozpis nákladů"
+      "breakdown": "Podrobný rozpis nákladů",
+      "rangeTitle": "Od optimistického po pesimistický scénář",
+      "taxes": "Cla a daně",
+      "fx": "Kurzy (NBP) ke dni {{date}}",
+      "documents": "Potřebné dokumenty"
+    },
+    "cover": {
+      "eyebrow": "Zpráva o nákladech na dovoz",
+      "order": "Č. {{ref}}"
     }
   },
   "result": {

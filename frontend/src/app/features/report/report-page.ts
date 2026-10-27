@@ -11,7 +11,7 @@ import { pathFor } from '../../core/routing/paths';
 import { Icon } from '../../shared/icon/icon';
 import { LanguageService } from '../../core/i18n/language.service';
 import { recallOrder, rememberOrder } from './order-tokens';
-import { ReportCharts } from './report-charts';
+import { CATEGORY_COLOR, ReportCharts, ReportHeading, ReportTimeline } from './report-charts';
 
 const STAGES = ['PURCHASE', 'SHIPPING', 'CUSTOMS', 'REGISTRATION'] as const;
 const CATEGORIES: CostCategory[] = ['VEHICLE', 'TRANSPORT', 'TAXES', 'REGISTRATION', 'RISK'];
@@ -25,7 +25,7 @@ interface Row { code: string; line: CostLine; amounts: number[] }
  */
 @Component({
   selector: 'app-report-page',
-  imports: [TranslatePipe, MoneyPipe, LocalNumberPipe, RouterLink, Icon, ReportCharts],
+  imports: [TranslatePipe, MoneyPipe, LocalNumberPipe, RouterLink, Icon, ReportCharts, ReportHeading, ReportTimeline],
   template: `
     <div class="site max-w-5xl py-12">
       <a [routerLink]="home()" class="link-arrow text-sm"><app-icon name="arrow-left" [size]="16" /> {{ 'report.back' | translate }}</a>
@@ -74,30 +74,17 @@ interface Row { code: string; line: CostLine; amounts: number[] }
               </p>
             </div>
           </div>
-          <button type="button" class="btn btn-primary shrink-0" (click)="download()">
-            <app-icon name="download" [size]="18" /> {{ 'report.download' | translate }}
-          </button>
         </section>
       }
 
       @if (shownReport(); as r) {
-        <header class="mt-8 flex flex-wrap items-end justify-between gap-4" animate.enter="reveal-enter">
-          <div>
-            <p class="eyebrow">HS {{ r.result.hsCode }} · {{ r.result.route.departurePort }} → {{ r.result.route.euPortName }}</p>
-            <h1 class="h-section mt-3">{{ 'report.title' | translate }}</h1>
-          </div>
-          <button type="button" class="btn btn-primary" [disabled]="status() !== 'READY'" (click)="download()">
-            <app-icon name="download" [size]="18" />
-            {{ status() === 'READY' ? ('report.download' | translate) : ('report.generating' | translate) }}
-          </button>
-        </header>
+        <app-report-charts class="mt-8" [results]="results()" [main]="r.result" [locale]="lang.locale()" [orderId]="orderId()"
+                           [ready]="status() === 'READY'" (download)="download()" animate.enter="reveal-enter" />
 
-        <app-report-charts [results]="results()" [main]="r.result" [locale]="lang.locale()" animate.enter="reveal-enter" />
-
-        <h2 class="mt-12 text-xl font-extrabold">{{ 'report.charts.breakdown' | translate }}</h2>
-        <div class="card mt-4 overflow-x-auto">
+        <app-report-heading no="02" class="mt-14">{{ 'report.charts.breakdown' | translate }}</app-report-heading>
+        <div class="card mt-6 overflow-x-auto">
           <table class="w-full min-w-[760px] text-sm">
-            <thead class="bg-bg-soft text-left text-[12px] uppercase tracking-wider text-muted">
+            <thead class="border-b border-fg text-left text-[11px] uppercase tracking-[0.12em] text-muted">
               <tr>
                 <th class="px-5 py-3 font-semibold">{{ 'report.item' | translate }}</th>
                 <th class="px-5 py-3 text-right font-semibold">{{ 'report.base' | translate }}</th>
@@ -109,7 +96,7 @@ interface Row { code: string; line: CostLine; amounts: number[] }
               @for (c of categories; track c) {
                 @if (rowsOf(c).length) {
                   <tr class="border-t border-line bg-panel-2 font-semibold">
-                    <td class="px-5 py-3" colspan="3">{{ 'category.' + c | translate }}</td>
+                    <td class="px-5 py-3" colspan="3"><span class="mr-2.5 inline-block size-2.5 rounded-[2px]" [style.background]="color[c]"></span>{{ 'category.' + c | translate }}</td>
                     @for (res of results(); track $index) {
                       <td class="px-5 py-3 text-right tabular-nums">{{ res.totalsByCategory[c].amount | money: r.result.displayCurrency : lang.locale() : 2 }}</td>
                     }
@@ -138,7 +125,7 @@ interface Row { code: string; line: CostLine; amounts: number[] }
                   }
                 }
               }
-              <tr class="bg-ink-2 text-white">
+              <tr class="bg-[#101011] text-white">
                 <td class="p-4 text-base font-bold" colspan="3">{{ 'report.total' | translate }}</td>
                 @for (res of results(); track $index) {
                   <td class="p-4 text-right text-lg font-extrabold tabular-nums" [class.text-brand]="$index === 1 || results().length === 1">{{ res.total.amount | money: r.result.displayCurrency : lang.locale() : 2 }}</td>
@@ -149,26 +136,28 @@ interface Row { code: string; line: CostLine; amounts: number[] }
         </div>
         <p class="mt-3 text-xs text-muted">{{ 'report.scenarioMethod' | translate }}</p>
 
-        <section class="mt-12">
-          <h2 class="text-xl font-extrabold">{{ 'report.plan' | translate }}</h2>
-          <ol class="mt-4 divide-y divide-line border-y border-line">
-            @for (p of r.plan; track p.key; let i = $index) {
-              <li class="grid gap-2 py-4 sm:grid-cols-[2rem_1fr_220px]">
-                <span class="font-extrabold text-brand-text">{{ i + 1 }}</span>
-                <span><span class="block font-semibold">{{ p.key + '.title' | translate }}</span><span class="mt-1 block text-sm text-muted">{{ p.key + '.text' | translate }}</span></span>
-                <span class="text-sm font-medium">{{ p.deadline | translate }}</span>
-              </li>
-            }
-          </ol>
-        </section>
+        <app-report-heading no="03" class="mt-14">{{ 'report.timeline' | translate }}: {{ r.result.timeline.totalMin }}–{{ r.result.timeline.totalMax }} {{ 'report.days' | translate }}</app-report-heading>
+        <app-report-timeline class="mt-6" [result]="r.result" />
 
-        <section class="mt-10 grid gap-5 sm:grid-cols-2">
+        <app-report-heading no="04" class="mt-14">{{ 'report.plan' | translate }}</app-report-heading>
+        <ol class="mt-2">
+          @for (p of r.plan; track p.key; let i = $index) {
+            <li class="grid gap-x-5 gap-y-2 border-b border-line py-5 sm:grid-cols-[2.25rem_1fr_220px]">
+              <span class="grid size-8 place-items-center rounded-full bg-[#101011] text-sm font-extrabold text-brand">{{ i + 1 }}</span>
+              <span><span class="block font-bold">{{ p.key + '.title' | translate }}</span><span class="mt-1 block text-sm text-muted">{{ p.key + '.text' | translate }}</span></span>
+              <span class="text-sm font-semibold sm:text-right">{{ p.deadline | translate }}</span>
+            </li>
+          }
+        </ol>
+
+        <app-report-heading no="05" class="mt-14">{{ 'report.charts.documents' | translate }}</app-report-heading>
+        <section class="mt-6 grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
           @for (stage of stages; track stage) {
-            <div class="card p-6">
-              <h2 class="flex items-center gap-2 font-extrabold"><app-icon name="list" [size]="18" class="text-brand-text" />{{ 'docStage.' + stage | translate }}</h2>
-              <ul class="mt-4 space-y-2.5 text-sm">
+            <div class="border-t-2 border-fg pt-4">
+              <h3 class="font-extrabold">{{ 'docStage.' + stage | translate }}</h3>
+              <ul class="mt-4 space-y-3 text-sm">
                 @for (d of docsOf(stage); track d.key) {
-                  <li class="flex gap-2.5"><span class="mt-0.5 size-4 shrink-0 rounded-[3px] border border-line-strong"></span>{{ d.key | translate }}</li>
+                  <li class="flex gap-3"><span class="mt-0.5 size-4 shrink-0 rounded-[3px] border border-line-strong"></span>{{ d.key | translate }}</li>
                 }
               </ul>
             </div>
@@ -220,6 +209,7 @@ export class ReportPage implements OnInit {
   });
   protected readonly report = signal<FullReport | null>(null);
   protected readonly categories = CATEGORIES;
+  protected readonly color = CATEGORY_COLOR;
   protected readonly stages = STAGES;
   private token = '';
 

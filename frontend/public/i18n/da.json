@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "I alt til døren (gennemsnit)",
-      "range": "Spænd mellem scenarier",
       "importCosts": "Importomkostninger",
       "importShare": "+{{pct}} oven i bil- og auktionsprisen",
       "leadTime": "Tid til registrering",
       "structure": "Hvor pengene går hen",
-      "scenarios": "Samlet pris i hvert scenarie",
       "topItems": "Største omkostningsposter",
       "note": "Beløb i {{cur}}, gennemsnitligt scenarie. Hold musen over diagrammet for detaljer.",
       "firm": "Minimumstid",
       "delay": "Mulig forsinkelse",
       "axis": "Akse: dage fra køb",
-      "breakdown": "Detaljeret omkostningsoversigt"
+      "breakdown": "Detaljeret omkostningsoversigt",
+      "rangeTitle": "Fra det optimistiske til det pessimistiske scenarie",
+      "taxes": "Told og afgifter",
+      "fx": "Valutakurser (NBP) pr. {{date}}",
+      "documents": "Nødvendige dokumenter"
+    },
+    "cover": {
+      "eyebrow": "Rapport over importomkostninger",
+      "order": "Nr. {{ref}}"
     }
   },
   "result": {

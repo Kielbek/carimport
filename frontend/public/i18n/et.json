@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Kokku ukseni (keskmine)",
-      "range": "Stsenaariumide vahemik",
       "importCosts": "Impordikulud",
       "importShare": "+{{pct}} auto ja oksjoni hinnale",
       "leadTime": "Aeg registreerimiseni",
       "structure": "Kuhu raha läheb",
-      "scenarios": "Koguhind igas stsenaariumis",
       "topItems": "Suurimad kuluartiklid",
       "note": "Summad valuutas {{cur}}, keskmine stsenaarium. Üksikasjade nägemiseks vii kursor graafikule.",
       "firm": "Minimaalne aeg",
       "delay": "Võimalik viivitus",
       "axis": "Telg: päevi ostust",
-      "breakdown": "Üksikasjalik kulude jaotus"
+      "breakdown": "Üksikasjalik kulude jaotus",
+      "rangeTitle": "Optimistlikust pessimistliku stsenaariumini",
+      "taxes": "Tollimaksud ja maksud",
+      "fx": "Vahetuskursid (NBP) seisuga {{date}}",
+      "documents": "Vajalikud dokumendid"
+    },
+    "cover": {
+      "eyebrow": "Impordikulude aruanne",
+      "order": "Nr {{ref}}"
     }
   },
   "result": {

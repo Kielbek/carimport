@@ -23,6 +23,10 @@ public class PdfReportRenderer {
 
     private static final String FONT_REGULAR = "fonts/DejaVuSans.ttf";
     private static final String FONT_BOLD = "fonts/DejaVuSans-Bold.ttf";
+    /** Brand typeface (OFL); characters it lacks, such as Greek, fall back to DejaVu Sans. */
+    private static final String[][] DISPLAY = {
+            {"fonts/Montserrat-Regular.ttf", "400"}, {"fonts/Montserrat-SemiBold.ttf", "600"},
+            {"fonts/Montserrat-Bold.ttf", "700"}, {"fonts/Montserrat-ExtraBold.ttf", "800"}};
 
     private final TemplateEngine templates;
     private final DocumentChecklistService checklist;
@@ -54,14 +58,18 @@ public class PdfReportRenderer {
         ScenarioTable table = quote.getRange() != null ? ScenarioTable.of(quote.getRange()) : null;
         ctx.setVariable("table", table);
         ctx.setVariable("charts", ReportCharts.of(quote.getResult(), table));
+        ctx.setVariable("reference", order.getId().toString().substring(0, 8).toUpperCase(Locale.ROOT));
         ctx.setVariable("plan", planner.plan(quote.getRequest(), quote.getResult().route().euPortCode().substring(0, 2)));
         String html = templates.process("report", ctx);
 
         try (ByteArrayOutputStream out = new ByteArrayOutputStream()) {
             PdfRendererBuilder builder = new PdfRendererBuilder();
             builder.useFastMode();
-            registerFont(builder, FONT_REGULAR, 400);
-            registerFont(builder, FONT_BOLD, 700);
+            registerFont(builder, FONT_REGULAR, "Report Sans", 400);
+            registerFont(builder, FONT_BOLD, "Report Sans", 700);
+            for (String[] f : DISPLAY) {
+                registerFont(builder, f[0], "Report Display", Integer.parseInt(f[1]));
+            }
             builder.withHtmlContent(html, null);
             builder.toStream(out);
             builder.run();
@@ -71,7 +79,7 @@ public class PdfReportRenderer {
         }
     }
 
-    private static void registerFont(PdfRendererBuilder builder, String path, int weight) {
+    private static void registerFont(PdfRendererBuilder builder, String path, String family, int weight) {
         ClassPathResource font = new ClassPathResource(path);
         builder.useFont(() -> {
             try {
@@ -79,6 +87,6 @@ public class PdfReportRenderer {
             } catch (IOException e) {
                 throw new UncheckedIOException(e);
             }
-        }, "Report Sans", weight, BaseRendererBuilder.FontStyle.NORMAL, true);
+        }, family, weight, BaseRendererBuilder.FontStyle.NORMAL, true);
     }
 }

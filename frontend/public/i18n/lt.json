@@ -246,18 +246,24 @@
     },
     "charts": {
       "total": "Iš viso iki durų (vidutinis)",
-      "range": "Scenarijų intervalas",
       "importCosts": "Importo išlaidos",
       "importShare": "+{{pct}} prie automobilio ir aukciono kainos",
       "leadTime": "Laikas iki registracijos",
       "structure": "Kur eina pinigai",
-      "scenarios": "Bendra kaina kiekviename scenarijuje",
       "topItems": "Didžiausios išlaidų eilutės",
       "note": "Sumos valiuta {{cur}}, vidutinis scenarijus. Užveskite pelę ant diagramos, kad pamatytumėte detales.",
       "firm": "Minimalus laikas",
       "delay": "Galimas vėlavimas",
       "axis": "Ašis: dienos nuo pirkimo",
-      "breakdown": "Išsamus išlaidų suskirstymas"
+      "breakdown": "Išsamus išlaidų suskirstymas",
+      "rangeTitle": "Nuo optimistinio iki pesimistinio scenarijaus",
+      "taxes": "Muitai ir mokesčiai",
+      "fx": "NBP valiutų kursų data {{date}}",
+      "documents": "Reikalingi dokumentai"
+    },
+    "cover": {
+      "eyebrow": "Importo išlaidų ataskaita",
+      "order": "Nr. {{ref}}"
     }
   },
   "result": {
