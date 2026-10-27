@@ -450,7 +450,9 @@
     "massHint": "Kilogrammoina (kg). Merkitsee Ranskassa (painoon perustuva malus) ja Virossa.",
     "preferentialOrigin": "Valmistettu tässä maassa – tulli 0 %",
     "preferentialOriginHint": "EU:n kauppasopimus / EU–USA-sopimus: 0 % 10 %:n sijaan, jos pystyt osoittamaan, missä auto on valmistettu (ei vain missä se myytiin). Tulli päättää – jätä varmuuden vuoksi valitsematta.",
-    "preferentialVinMatch": "VIN: valmistettu tässä maassa"
+    "preferentialVinMatch": "VIN: valmistettu tässä maassa",
+    "ccPopular": "Yleiset moottorikoot",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Riippumaton laskuri autojen tuontikustannuksille Yhdysvalloista, Kanadasta, Japanista, Arabiemiirikunnista ja Isosta-Britanniasta 27 EU-maahan",
@@ -1699,5 +1701,9 @@
         "text": "Yli 30 vuotta vanha, alkuperäinen ja tuotannosta poistunut. Tulli 0 % – jos tulli hyväksyy luokittelun."
       }
     }
+  },
+  "select": {
+    "search": "Hae…",
+    "empty": "Ei tuloksia"
   }
 }

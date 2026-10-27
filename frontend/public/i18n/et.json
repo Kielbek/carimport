@@ -450,7 +450,9 @@
     "massHint": "kg-des. Loeb Prantsusmaal (massipõhine malus) ja Eestis.",
     "preferentialOrigin": "Toodetud selles riigis – toll 0%",
     "preferentialOriginHint": "ELi kaubandusleping / ELi–USA kokkulepe: 0% 10% asemel, kui suudad tõendada, kus auto toodeti (mitte ainult kus see müüdi). Otsustab toll – jäta igaks juhuks märkimata.",
-    "preferentialVinMatch": "VIN: toodetud selles riigis"
+    "preferentialVinMatch": "VIN: toodetud selles riigis",
+    "ccPopular": "Levinud mootorimahud",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Sõltumatu kalkulaator autode impordikulude arvutamiseks USA-st, Kanadast, Jaapanist, AÜE-st ja Ühendkuningriigist 27 ELi riiki",
@@ -1699,5 +1701,9 @@
         "text": "Üle 30 aasta vana, originaalne ja enam mitte toodetav. Toll 0% – kui toll klassifikatsiooni aktsepteerib."
       }
     }
+  },
+  "select": {
+    "search": "Otsi…",
+    "empty": "Tulemusi pole"
   }
 }

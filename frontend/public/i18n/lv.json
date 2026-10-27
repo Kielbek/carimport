@@ -450,7 +450,9 @@
     "massHint": "kg. Ņem vērā Francijā (svara malus) un Igaunijā.",
     "preferentialOrigin": "Ražots šajā valstī – muita 0 %",
     "preferentialOriginHint": "ES tirdzniecības nolīgums / ES–ASV vienošanās: 0 % 10 % vietā, ja varat pierādīt, kur auto ražots (ne tikai kur pārdots). Lemj muita – drošības pēc neatzīmējiet.",
-    "preferentialVinMatch": "VIN: ražots šajā valstī"
+    "preferentialVinMatch": "VIN: ražots šajā valstī",
+    "ccPopular": "Biežākie dzinēja tilpumi",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Neatkarīgs kalkulators automašīnu importa izmaksām no ASV, Kanādas, Japānas, AAE un Apvienotās Karalistes uz 27 ES valstīm",
@@ -1699,5 +1701,9 @@
         "text": "Vecāks par 30 gadiem, oriģināls un vairs neražots. Muita 0 % – ja muita atzīst klasifikāciju."
       }
     }
+  },
+  "select": {
+    "search": "Meklēt…",
+    "empty": "Nav rezultātu"
   }
 }

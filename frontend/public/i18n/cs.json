@@ -450,7 +450,9 @@
     "massHint": "V kg. Počítá se s ní ve Francii (malus za hmotnost) a v Estonsku.",
     "preferentialOrigin": "Vyrobeno v této zemi – clo 0 %",
     "preferentialOriginHint": "Obchodní dohoda EU / dohoda EU–USA: 0 % místo 10 %, pokud doložíte, kde bylo auto vyrobeno (nejen kde bylo prodáno). Rozhoduje celní úřad – pro jistotu nechte nezaškrtnuté.",
-    "preferentialVinMatch": "VIN: vyrobeno v této zemi"
+    "preferentialVinMatch": "VIN: vyrobeno v této zemi",
+    "ccPopular": "Běžné objemy motoru",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Nezávislá kalkulačka nákladů na dovoz aut z USA, Kanady, Japonska, SAE a Velké Británie do 27 zemí EU",
@@ -1699,5 +1701,9 @@
         "text": "Starší 30 let, v původním stavu a už nevyráběné. Clo 0 % – pokud celní úřad zařazení uzná."
       }
     }
+  },
+  "select": {
+    "search": "Hledat…",
+    "empty": "Žádné výsledky"
   }
 }

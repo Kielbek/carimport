@@ -450,7 +450,9 @@
     "massHint": "kg-ban. Franciaországban (súly utáni malus) és Észtországban számít.",
     "preferentialOrigin": "Ebben az országban gyártották – 0% vám",
     "preferentialOriginHint": "EU kereskedelmi megállapodás / EU–USA megállapodás: 10% helyett 0%, ha igazolni tudja, hol gyártották az autót (nem csak hol adták el). A vámhatóság dönt – a biztonság kedvéért hagyja üresen.",
-    "preferentialVinMatch": "VIN: ebben az országban gyártották"
+    "preferentialVinMatch": "VIN: ebben az országban gyártották",
+    "ccPopular": "Gyakori hengerűrtartalmak",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Független kalkulátor az USA-ból, Kanadából, Japánból, az Egyesült Arab Emírségekből és az Egyesült Királyságból 27 uniós országba történő autóimport költségeihez",
@@ -1699,5 +1701,9 @@
         "text": "30 évnél idősebb, eredeti állapotú és már nem gyártott. Vám 0% – ha a vámhatóság elfogadja a besorolást."
       }
     }
+  },
+  "select": {
+    "search": "Keresés…",
+    "empty": "Nincs találat"
   }
 }

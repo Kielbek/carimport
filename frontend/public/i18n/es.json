@@ -450,7 +450,9 @@
     "massHint": "En kg. Cuenta en Francia (malus por peso) y en Estonia.",
     "preferentialOrigin": "Fabricado en este país: arancel 0 %",
     "preferentialOriginHint": "Acuerdo comercial UE / acuerdo UE–EE. UU.: 0 % en lugar de 10 % si puedes demostrar dónde se fabricó el coche (no solo dónde se vendió). Decide la aduana; por prudencia, déjalo sin marcar.",
-    "preferentialVinMatch": "VIN: fabricado en este país"
+    "preferentialVinMatch": "VIN: fabricado en este país",
+    "ccPopular": "Cilindradas habituales",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Calculadora independiente de costes de importación de coches de EE. UU., Canadá, Japón, EAU y Reino Unido a los 27 países de la UE",
@@ -1699,5 +1701,9 @@
         "text": "Más de 30 años, en estado original y ya no fabricado. Arancel 0 % e IVA reducido (10 % en España), si la aduana acepta la clasificación."
       }
     }
+  },
+  "select": {
+    "search": "Buscar…",
+    "empty": "Sin resultados"
   }
 }

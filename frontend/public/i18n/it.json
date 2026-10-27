@@ -450,7 +450,9 @@
     "massHint": "In kg. Conta in Francia (malus sul peso) e in Estonia.",
     "preferentialOrigin": "Costruita in questo paese – dazio 0%",
     "preferentialOriginHint": "Accordo commerciale UE / intesa UE–USA: 0% invece del 10% se puoi provare dove è stata costruita l'auto (non solo dove è stata venduta). Decide la dogana: per prudenza lascia non spuntato.",
-    "preferentialVinMatch": "VIN: costruita in questo paese"
+    "preferentialVinMatch": "VIN: costruita in questo paese",
+    "ccPopular": "Cilindrate comuni",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Calcolatore indipendente dei costi di importazione auto da USA, Canada, Giappone, EAU e Regno Unito verso 27 Paesi UE",
@@ -1699,5 +1701,9 @@
         "text": "Oltre 30 anni, originale e non più prodotto. Dazio 0% e IVA ridotta (in Italia 5% dal 2025), se la dogana accetta la classificazione."
       }
     }
+  },
+  "select": {
+    "search": "Cerca…",
+    "empty": "Nessun risultato"
   }
 }

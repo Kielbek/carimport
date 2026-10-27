@@ -450,7 +450,9 @@
     "massHint": "kg. Svarbi Prancūzijoje (malus pagal svorį) ir Estijoje.",
     "preferentialOrigin": "Pagaminta šioje šalyje – muitas 0 %",
     "preferentialOriginHint": "ES prekybos susitarimas / ES–JAV susitarimas: 0 % vietoj 10 %, jei įrodysite, kur automobilis pagamintas (ne tik kur parduotas). Sprendžia muitinė – dėl saugumo nežymėkite.",
-    "preferentialVinMatch": "VIN: pagaminta šioje šalyje"
+    "preferentialVinMatch": "VIN: pagaminta šioje šalyje",
+    "ccPopular": "Dažni variklio tūriai",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Nepriklausoma automobilių importo iš JAV, Kanados, Japonijos, JAE ir JK į 27 ES šalis išlaidų skaičiuoklė",
@@ -1699,5 +1701,9 @@
         "text": "Senesnė nei 30 metų, originali ir nebegaminama. Muitas 0 % – jei muitinė pripažįsta klasifikaciją."
       }
     }
+  },
+  "select": {
+    "search": "Ieškoti…",
+    "empty": "Rezultatų nėra"
   }
 }

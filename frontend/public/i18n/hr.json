@@ -450,7 +450,9 @@
     "massHint": "U kg. Važna je u Francuskoj (malus prema masi) i Estoniji.",
     "preferentialOrigin": "Proizveden u ovoj zemlji – carina 0 %",
     "preferentialOriginHint": "Trgovinski sporazum EU-a / sporazum EU–SAD: 0 % umjesto 10 % ako dokažete gdje je automobil proizveden (ne samo gdje je prodan). Odlučuje carina – za svaki slučaj ostavite neoznačeno.",
-    "preferentialVinMatch": "VIN: proizveden u ovoj zemlji"
+    "preferentialVinMatch": "VIN: proizveden u ovoj zemlji",
+    "ccPopular": "Uobičajeni obujmi motora",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Neovisni kalkulator troškova uvoza automobila iz SAD-a, Kanade, Japana, UAE-a i Ujedinjenog Kraljevstva u 27 država EU",
@@ -1699,5 +1701,9 @@
         "text": "Starije od 30 godina, originalno i više se ne proizvodi. Carina 0 % – ako carina prihvati razvrstavanje."
       }
     }
+  },
+  "select": {
+    "search": "Traži…",
+    "empty": "Nema rezultata"
   }
 }

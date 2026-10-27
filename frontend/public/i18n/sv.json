@@ -450,7 +450,9 @@
     "massHint": "I kg. Räknas i Frankrike (viktmalus) och Estland.",
     "preferentialOrigin": "Byggd i detta land – 0 % tull",
     "preferentialOriginHint": "EU:s handelsavtal / EU–USA-avtalet: 0 % i stället för 10 % om du kan bevisa var bilen byggdes (inte bara var den såldes). Tullen avgör – lämna rutan tom för säkerhets skull.",
-    "preferentialVinMatch": "VIN: byggd i detta land"
+    "preferentialVinMatch": "VIN: byggd i detta land",
+    "ccPopular": "Vanliga motorstorlekar",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Oberoende kalkylator för kostnaden att importera bil från USA, Kanada, Japan, Förenade Arabemiraten och Storbritannien till 27 EU-länder",
@@ -1699,5 +1701,9 @@
         "text": "Över 30 år, originalskick och inte längre tillverkad. 0 % tull och 12 % moms i Sverige – om tullen godtar klassificeringen."
       }
     }
+  },
+  "select": {
+    "search": "Sök…",
+    "empty": "Inga träffar"
   }
 }

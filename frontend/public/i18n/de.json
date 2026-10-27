@@ -450,7 +450,9 @@
     "massHint": "In kg. Relevant in Frankreich (Gewichtsmalus) und Estland.",
     "preferentialOrigin": "In diesem Land gebaut – 0 % Zoll",
     "preferentialOriginHint": "EU-Handelsabkommen / EU-US-Vereinbarung: 0 % statt 10 %, wenn Sie nachweisen können, wo das Auto gebaut wurde (nicht nur, wo es verkauft wurde). Der Zoll entscheidet – sicherheitshalber nicht ankreuzen.",
-    "preferentialVinMatch": "FIN: in diesem Land gebaut"
+    "preferentialVinMatch": "FIN: in diesem Land gebaut",
+    "ccPopular": "Übliche Hubräume",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Unabhängiger Rechner für Importkosten von Autos aus den USA, Kanada, Japan, den VAE und UK in 27 EU-Länder",
@@ -1699,5 +1701,9 @@
         "text": "Über 30 Jahre alt, im Originalzustand und nicht mehr produziert. 0 % Zoll und in vielen Ländern ermäßigte USt (Deutschland 7 %) – sofern der Zoll die Einreihung anerkennt."
       }
     }
+  },
+  "select": {
+    "search": "Suchen…",
+    "empty": "Keine Treffer"
   }
 }

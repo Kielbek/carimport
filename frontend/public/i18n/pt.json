@@ -450,7 +450,9 @@
     "massHint": "Em kg. Conta em França (malus de peso) e na Estónia.",
     "preferentialOrigin": "Fabricado neste país – direito 0%",
     "preferentialOriginHint": "Acordo comercial UE / acordo UE–EUA: 0% em vez de 10% se conseguir provar onde o carro foi fabricado (não apenas onde foi vendido). A alfândega decide – por precaução, deixe desmarcado.",
-    "preferentialVinMatch": "VIN: fabricado neste país"
+    "preferentialVinMatch": "VIN: fabricado neste país",
+    "ccPopular": "Cilindradas comuns",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Calculadora independente dos custos de importação de carros dos EUA, Canadá, Japão, EAU e Reino Unido para 27 países da UE",
@@ -1699,5 +1701,9 @@
         "text": "Mais de 30 anos, original e já não produzido. Direitos 0 % e IVA reduzido (6 % em Portugal), se a alfândega aceitar a classificação."
       }
     }
+  },
+  "select": {
+    "search": "Pesquisar…",
+    "empty": "Sem resultados"
   }
 }

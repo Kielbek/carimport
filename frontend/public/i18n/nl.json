@@ -450,7 +450,9 @@
     "massHint": "In kg. Telt mee in Frankrijk (gewichtsmalus) en Estland.",
     "preferentialOrigin": "In dit land gebouwd – 0% invoerrecht",
     "preferentialOriginHint": "EU-handelsovereenkomst / EU-VS-akkoord: 0% in plaats van 10% als u kunt aantonen waar de auto is gebouwd (niet alleen waar hij is verkocht). De douane beslist – laat het voor de zekerheid uit.",
-    "preferentialVinMatch": "VIN: in dit land gebouwd"
+    "preferentialVinMatch": "VIN: in dit land gebouwd",
+    "ccPopular": "Gangbare cilinderinhouden",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Onafhankelijke calculator voor de importkosten van auto’s uit de VS, Canada, Japan, de VAE en het VK naar 27 EU-landen",
@@ -1699,5 +1701,9 @@
         "text": "Ouder dan 30 jaar, origineel en niet meer geproduceerd. 0% invoerrecht en 9% btw in Nederland – als de douane de indeling aanvaardt."
       }
     }
+  },
+  "select": {
+    "search": "Zoeken…",
+    "empty": "Geen resultaten"
   }
 }

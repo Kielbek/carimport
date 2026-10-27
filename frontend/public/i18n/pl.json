@@ -450,7 +450,9 @@
     "massHint": "W kg. Liczy się we Francji (malus od wagi) i w Estonii.",
     "preferentialOrigin": "Auto wyprodukowane w tym kraju – cło 0%",
     "preferentialOriginHint": "Umowa handlowa UE / porozumienie UE–USA: 0% zamiast 10%, jeśli udowodnisz, gdzie auto wyprodukowano (nie tylko gdzie je sprzedano). Decyduje urząd celny – dla bezpieczeństwa zostaw niezaznaczone.",
-    "preferentialVinMatch": "VIN: wyprodukowany w tym kraju"
+    "preferentialVinMatch": "VIN: wyprodukowany w tym kraju",
+    "ccPopular": "Popularne pojemności",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Niezależny kalkulator kosztów importu aut z USA, Kanady, Japonii, ZEA i UK do 27 krajów UE",
@@ -1699,5 +1701,9 @@
         "text": "Auto ponad 30-letnie, w oryginalnym stanie i już nieprodukowane. Cło 0%, w Polsce bez akcyzy i z VAT 8% – pod warunkiem, że urząd celny uzna tę klasyfikację."
       }
     }
+  },
+  "select": {
+    "search": "Szukaj…",
+    "empty": "Brak wyników"
   }
 }

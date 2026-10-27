@@ -1,7 +1,8 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { TranslatePipe } from '@ngx-translate/core';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { CalculationRequest, FuelType, OriginCountry, TaxSummary } from '../../core/api/api.models';
 import { CarImportApi } from '../../core/api/carimport-api';
 import { isDisplayCurrency } from '../../core/currency/currencies';
@@ -10,6 +11,7 @@ import { guidePath } from '../../core/routing/guide-paths';
 import { pathFor } from '../../core/routing/paths';
 import { Flag } from '../../shared/flag/flag';
 import { Icon } from '../../shared/icon/icon';
+import { Select, SelectOption } from '../../shared/select/select';
 import { EU_COUNTRIES, ORIGINS } from '../calculator/calculator.options';
 import { GUIDE_COUNTRIES } from '../guides/guide-data.generated';
 
@@ -22,7 +24,7 @@ const TAX_FUELS: FuelType[] = ['PETROL', 'DIESEL', 'LPG', 'HEV', 'PHEV', 'EV'];
  */
 @Component({
   selector: 'app-taxes-page',
-  imports: [FormsModule, RouterLink, TranslatePipe, Flag, Icon],
+  imports: [FormsModule, RouterLink, TranslatePipe, Flag, Icon, Select],
   template: `
     <article class="site max-w-5xl py-12 lg:py-16">
       <p class="eyebrow">{{ 'taxes.eyebrow' | translate }}</p>
@@ -51,9 +53,8 @@ const TAX_FUELS: FuelType[] = ['PETROL', 'DIESEL', 'LPG', 'HEV', 'PHEV', 'EV'];
           </div>
           <div>
             <label class="label" for="tx-fuel">{{ 'taxes.fuel' | translate }}</label>
-            <select id="tx-fuel" class="input" [ngModel]="fuel()" (ngModelChange)="fuel.set($event)" name="fuel">
-              @for (f of fuels; track f) { <option [value]="f">{{ 'fuel.' + f | translate }}</option> }
-            </select>
+            <app-select inputId="tx-fuel" [title]="'taxes.fuel' | translate" [options]="fuelOptions()" [value]="fuel()"
+                        (changed)="fuel.set($any($event))" />
           </div>
           @if (fuel() !== 'EV') {
             <div>
@@ -73,9 +74,8 @@ const TAX_FUELS: FuelType[] = ['PETROL', 'DIESEL', 'LPG', 'HEV', 'PHEV', 'EV'];
           }
           <div class="sm:col-span-2">
             <label class="label" for="tx-dest">{{ 'taxes.destination' | translate }}</label>
-            <select id="tx-dest" class="input" [ngModel]="destination()" (ngModelChange)="destination.set($event)" name="destination">
-              @for (c of countries(); track c.code) { <option [value]="c.code">{{ c.name }}</option> }
-            </select>
+            <app-select inputId="tx-dest" [title]="'taxes.destination' | translate" [options]="countryOptions()" [value]="destination()"
+                        (changed)="destination.set($event)" />
           </div>
           <button type="submit" class="btn btn-primary sm:col-span-2" [disabled]="busy()">
             <app-icon name="calculator" [size]="18" /> {{ (busy() ? 'taxes.calculating' : 'taxes.submit') | translate }}
@@ -136,7 +136,6 @@ export class TaxesPage {
   protected readonly lang = inject(LanguageService);
 
   protected readonly origins = ORIGINS;
-  protected readonly fuels = TAX_FUELS;
   protected readonly currentYear = new Date().getFullYear();
 
   protected readonly origin = signal<OriginCountry>('USA');
@@ -157,6 +156,14 @@ export class TaxesPage {
     [...EU_COUNTRIES]
       .map((code) => ({ code, name: this.countryName(code) }))
       .sort((a, b) => a.name.localeCompare(b.name, this.lang.locale())),
+  );
+  protected readonly countryOptions = computed<SelectOption[]>(() =>
+    this.countries().map((c) => ({ value: c.code, label: c.name, flag: c.code })),
+  );
+  private readonly fuelLabels = toSignal(inject(TranslateService).stream(TAX_FUELS.map((f) => 'fuel.' + f)),
+    { initialValue: {} as Record<string, string> });
+  protected readonly fuelOptions = computed<SelectOption[]>(() =>
+    TAX_FUELS.map((f) => ({ value: f, label: this.fuelLabels()['fuel.' + f] ?? f })),
   );
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly method = computed(() => pathFor('method', this.lang.current()));

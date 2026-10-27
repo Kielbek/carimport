@@ -450,7 +450,9 @@
     "massHint": "En kg. Pris en compte en France (malus au poids) et en Estonie.",
     "preferentialOrigin": "Fabriquée dans ce pays – droit de douane 0 %",
     "preferentialOriginHint": "Accord commercial UE / accord UE–États-Unis : 0 % au lieu de 10 % si vous prouvez où la voiture a été fabriquée (pas seulement où elle a été vendue). La douane décide – par prudence, laissez décoché.",
-    "preferentialVinMatch": "VIN : fabriquée dans ce pays"
+    "preferentialVinMatch": "VIN : fabriquée dans ce pays",
+    "ccPopular": "Cylindrées courantes",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Calculateur indépendant des coûts d’importation de voitures des États-Unis, du Canada, du Japon, des EAU et du Royaume-Uni vers les 27 pays de l’UE",
@@ -1699,5 +1701,9 @@
         "text": "Plus de 30 ans, d'origine et plus fabriqué. Droits 0 % et TVA réduite à 5,5 % en France – si la douane accepte ce classement."
       }
     }
+  },
+  "select": {
+    "search": "Rechercher…",
+    "empty": "Aucun résultat"
   }
 }

@@ -450,7 +450,9 @@
     "massHint": "I kg. Tæller i Frankrig (vægtmalus) og Estland.",
     "preferentialOrigin": "Bygget i dette land – 0 % told",
     "preferentialOriginHint": "EU-handelsaftale / EU–USA-aftale: 0 % i stedet for 10 %, hvis du kan bevise, hvor bilen er bygget (ikke kun hvor den blev solgt). Toldmyndigheden afgør det – lad den for en sikkerheds skyld være tom.",
-    "preferentialVinMatch": "VIN: bygget i dette land"
+    "preferentialVinMatch": "VIN: bygget i dette land",
+    "ccPopular": "Almindelige motorstørrelser",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Uafhængig beregner af omkostninger ved import af biler fra USA, Canada, Japan, UAE og Storbritannien til 27 EU-lande",
@@ -1699,5 +1701,9 @@
         "text": "Over 30 år, original og ikke længere produceret. 0 % told – hvis tolden accepterer tariferingen."
       }
     }
+  },
+  "select": {
+    "search": "Søg…",
+    "empty": "Ingen resultater"
   }
 }

@@ -87,15 +87,31 @@ const CC_MAX = 7000;
     @if (store.needsEngineCc()) {
       <div class="mt-8 rounded-[6px] border p-5 transition-colors duration-500" animate.enter="reveal-enter" animate.leave="reveal-leave"
            [class]="store.exciseThresholdCrossed() ? 'border-danger bg-danger-soft' : 'border-line bg-panel-2'">
-        <div class="flex items-baseline justify-between">
+        <div class="flex flex-wrap items-center justify-between gap-3">
           <label class="label !mb-0" for="cc">{{ 'wizard.engineCc' | translate }}</label>
-          <output for="cc" class="text-2xl font-extrabold tabular-nums">{{ s().engineCc | localNumber: lang.locale() }} cm³</output>
+          <div class="relative w-40">
+            <input id="cc" type="number" inputmode="numeric" min="50" max="10000" step="1"
+                   class="input !py-2 pr-14 text-right text-xl font-extrabold tabular-nums"
+                   [value]="s().engineCc" (input)="typed($any($event.target).value)" (blur)="$any($event.target).value = s().engineCc" />
+            <span class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-sm font-semibold text-muted">cm³</span>
+          </div>
         </div>
-        <input id="cc" type="range" [min]="ccMin" [max]="ccMax" step="1" class="cc-slider mt-5"
+        <input type="range" [min]="ccMin" [max]="ccMax" step="1" class="cc-slider mt-5" [attr.aria-label]="'wizard.engineCc' | translate"
                [class.cc-slider--over]="store.exciseThresholdCrossed()" [style.--fill]="fill() + '%'"
                [value]="s().engineCc" (input)="store.patch({ engineCc: +$any($event.target).value })" />
-        <div class="relative mt-1.5 h-4 text-[11px] text-muted">
-          <span class="absolute -translate-x-1/2 whitespace-nowrap" [style.left.%]="thresholdPct">▲ {{ threshold | localNumber: lang.locale() }} cm³</span>
+        @if (store.indicativeExciseRate() !== null) {
+          <div class="relative mt-1.5 h-4 text-[11px] text-muted">
+            <span class="absolute -translate-x-1/2 whitespace-nowrap" [style.left.%]="thresholdPct">▲ {{ threshold | localNumber: lang.locale() }} cm³</span>
+          </div>
+        }
+        <!-- common displacements: a tap instead of dragging the slider to the exact value -->
+        <div class="mt-4 flex flex-wrap gap-1.5" role="group" [attr.aria-label]="'wizard.ccPopular' | translate">
+          @for (c of popularCc; track c.cc) {
+            <button type="button" class="chip !px-3 !py-1.5 text-[13px]" [class.chip--active]="s().engineCc === c.cc"
+                    [title]="(c.cc | localNumber: lang.locale()) + ' cm³'" (click)="store.patch({ engineCc: c.cc })">
+              {{ litres(c.litres) }} {{ 'wizard.litre' | translate }}
+            </button>
+          }
         </div>
         @if (store.indicativeExciseRate(); as rate) {
           <p class="mt-3"><span class="badge" [class.badge--danger]="store.exciseThresholdCrossed()">
@@ -159,6 +175,26 @@ export class StepVehicle {
   protected readonly thresholdPct = ((EXCISE_THRESHOLD_CC - CC_MIN) / (CC_MAX - CC_MIN)) * 100;
   protected readonly fill = computed(() => ((this.s().engineCc - CC_MIN) / (CC_MAX - CC_MIN)) * 100);
   protected readonly currentYear = new Date().getFullYear();
+
+  /** Typical displacements behind the usual badges (2.0 is 1998 cm³ - below the Polish 2000 cm³ excise step). */
+  protected readonly popularCc = [
+    { litres: 1.0, cc: 999 }, { litres: 1.4, cc: 1395 }, { litres: 1.5, cc: 1498 }, { litres: 1.6, cc: 1598 },
+    { litres: 2.0, cc: 1998 }, { litres: 2.5, cc: 2488 }, { litres: 3.0, cc: 2996 }, { litres: 3.5, cc: 3456 },
+    { litres: 5.0, cc: 4951 }, { litres: 5.7, cc: 5654 }, { litres: 6.2, cc: 6162 },
+  ];
+
+  /** "1,6" / "1.6" - always one decimal, like the badge on the car. */
+  protected litres(v: number): string {
+    return new Intl.NumberFormat(this.lang.locale(), { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(v);
+  }
+
+  /** Typed value: applied once it is a plausible displacement, the field shows the stored one again on blur. */
+  protected typed(raw: string): void {
+    const cc = Math.round(Number(raw));
+    if (Number.isFinite(cc) && cc >= 50 && cc <= 10000) {
+      this.store.patch({ engineCc: cc });
+    }
+  }
 
   protected selectFuel(f: (typeof FUELS)[number]): void {
     const electric = f === 'EV' || f === 'HYDROGEN';

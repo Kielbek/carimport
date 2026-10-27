@@ -450,7 +450,9 @@
     "massHint": "Kerb weight in kg. Counts in France (weight malus) and Estonia.",
     "preferentialOrigin": "Car built in this country – 0% duty",
     "preferentialOriginHint": "EU trade agreement / EU–US deal: 0% instead of 10% if you can prove where the car was built (not just where it was sold). Customs decide – leave it unticked to stay on the safe side.",
-    "preferentialVinMatch": "VIN: built in this country"
+    "preferentialVinMatch": "VIN: built in this country",
+    "ccPopular": "Common engine sizes",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Independent calculator of car import costs from the USA, Canada, Japan, UAE and UK to 27 EU countries",
@@ -1699,5 +1701,9 @@
         "text": "A car over 30 years old, in original condition and no longer produced. Duty is 0% and VAT is reduced in many countries – only if customs accept the classification."
       }
     }
+  },
+  "select": {
+    "search": "Search…",
+    "empty": "No results"
   }
 }

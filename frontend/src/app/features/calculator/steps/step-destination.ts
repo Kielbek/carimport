@@ -13,6 +13,7 @@ import { Icon } from '../../../shared/icon/icon';
 import { CalculatorStore } from '../calculator.store';
 import { DELIVERY_MODES, EU_COUNTRIES } from '../calculator.options';
 import { ProposalInput } from '../proposal-input';
+import { Select, SelectOption } from '../../../shared/select/select';
 import { COUNTRY_FACTS } from '../../guides/country-facts';
 
 const REGIONS: PortRegion[] = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'];
@@ -25,7 +26,7 @@ const TOP = 5;
  */
 @Component({
   selector: 'app-step-destination',
-  imports: [TranslatePipe, CountryNamePipe, LocalNumberPipe, Flag, Icon, ProposalInput],
+  imports: [TranslatePipe, CountryNamePipe, LocalNumberPipe, Flag, Icon, ProposalInput, Select],
   template: `
     <!-- delivery address -->
     <div class="grid gap-6 sm:grid-cols-[minmax(0,1fr)_16rem]">
@@ -69,12 +70,8 @@ const TOP = 5;
 
       <div>
         <label class="label" for="dest">{{ 'wizard.destination' | translate }}</label>
-        <div class="flex items-center gap-3">
-          <app-flag [code]="s().destinationCountry" class="w-8 shrink-0" />
-          <select id="dest" class="input" [value]="s().destinationCountry" (change)="country(value($event))">
-            @for (c of countries(); track c.code) { <option [value]="c.code" [selected]="c.code === s().destinationCountry">{{ c.name }}</option> }
-          </select>
-        </div>
+        <app-select inputId="dest" [title]="'wizard.destination' | translate" [options]="countryOptions()"
+                    [value]="s().destinationCountry" (changed)="country($event)" />
       </div>
     </div>
 
@@ -376,6 +373,9 @@ export class StepDestination {
       a.name.localeCompare(b.name, this.lang.locale()),
     );
   });
+  protected readonly countryOptions = computed<SelectOption[]>(() =>
+    this.countries().map((c) => ({ value: c.code, label: c.name, flag: c.code })),
+  );
 
   constructor() {
     // the spinner stops whenever a new list arrives
@@ -438,9 +438,5 @@ export class StepDestination {
 
   protected pct(rate: number | null): string {
     return rate == null ? '' : new Intl.NumberFormat(this.lang.locale(), { style: 'percent', maximumFractionDigits: 2 }).format(rate);
-  }
-
-  protected value(e: Event): string {
-    return (e.target as HTMLSelectElement).value;
   }
 }

@@ -450,7 +450,9 @@
     "massHint": "În kg. Contează în Franța (malus pentru greutate) și în Estonia.",
     "preferentialOrigin": "Fabricată în această țară – taxă vamală 0%",
     "preferentialOriginHint": "Acord comercial UE / înțelegerea UE–SUA: 0% în loc de 10% dacă puteți dovedi unde a fost fabricată mașina (nu doar unde a fost vândută). Decide vama – din prudență, lăsați nebifat.",
-    "preferentialVinMatch": "VIN: fabricată în această țară"
+    "preferentialVinMatch": "VIN: fabricată în această țară",
+    "ccPopular": "Capacități cilindrice uzuale",
+    "litre": "l"
   },
   "layout": {
     "topbar": "Calculator independent al costurilor de import auto din SUA, Canada, Japonia, EAU și Regatul Unit în cele 27 de țări UE",
@@ -1699,5 +1701,9 @@
         "text": "Peste 30 de ani, în stare originală și ieșit din producție. Taxă vamală 0% – dacă vama acceptă clasificarea."
       }
     }
+  },
+  "select": {
+    "search": "Caută…",
+    "empty": "Niciun rezultat"
   }
 }
