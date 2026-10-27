@@ -23,19 +23,19 @@ interface CostGroup { key: string; icon: IconName; items: number }
   selector: 'app-home-page',
   imports: [RouterLink, TranslatePipe, CountryNamePipe, Flag, Icon, WorldMap, FaqSection],
   template: `
-    <!-- HERO (always dark) -->
-    <section class="theme-dark hero relative isolate overflow-hidden text-fg">
+    <!-- HERO: follows the light/dark theme -->
+    <section class="hero relative isolate overflow-hidden text-fg">
       <div class="site relative grid min-h-[660px] items-center gap-6 pb-10 pt-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:pb-44">
         <div class="relative z-10 max-w-[600px]">
           <p class="eyebrow">{{ 'home.hero.eyebrow' | translate }}</p>
           <h1 class="h-display mt-5">
-            <span class="block text-brand">{{ 'home.hero.title1' | translate }}</span>
+            <span class="block text-brand-text">{{ 'home.hero.title1' | translate }}</span>
             <span class="block">{{ 'home.hero.title2' | translate }}</span>
           </h1>
           <p class="mt-7 max-w-[540px] text-[16px] leading-[1.5] text-fg/95">{{ 'home.hero.lead' | translate }}</p>
           <ul class="mt-6 space-y-2 text-[14px] text-fg/90">
             @for (n of [1, 2, 3]; track n) {
-              <li class="flex items-start gap-2.5"><app-icon name="check" [size]="18" [stroke]="2.5" class="mt-0.5 shrink-0 text-brand" />{{ 'home.hero.point' + n | translate }}</li>
+              <li class="flex items-start gap-2.5"><app-icon name="check" [size]="18" [stroke]="2.5" class="mt-0.5 shrink-0 text-brand-text" />{{ 'home.hero.point' + n | translate }}</li>
             }
           </ul>
           <div class="mt-9 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
@@ -44,7 +44,7 @@ interface CostGroup { key: string; icon: IconName; items: number }
           </div>
         </div>
 
-        <div class="relative -mx-5 lg:-mr-24 lg:ml-0">
+        <div class="relative -mx-3 sm:-mx-5 lg:-mr-24 lg:ml-0">
           <img class="hero-car w-full" src="/images/hero-car-1600.webp"
                srcset="/images/hero-car-900.webp 900w, /images/hero-car-1600.webp 1600w"
                sizes="(min-width: 1024px) 60vw, 100vw" width="1600" height="835" fetchpriority="high" decoding="async"
@@ -57,9 +57,9 @@ interface CostGroup { key: string; icon: IconName; items: number }
             <p class="text-[17px] font-bold leading-snug">{{ 'home.strip.brand.title' | translate }}<br>{{ 'home.strip.brand.text' | translate }}</p>
             <span class="mt-3 block h-px w-14 bg-fg/40" aria-hidden="true"></span>
           </div>
-          <dl class="grid rounded-[10px] bg-[rgb(20_20_22/0.72)] px-6 py-4 shadow-[0_10px_40px_rgb(0_0_0/0.35)] backdrop-blur-xl sm:grid-cols-3 sm:px-10 sm:py-6 lg:mr-[calc(50%-50vw)] lg:min-w-[720px] lg:rounded-r-none lg:pr-[max(2.5rem,calc(50vw-50%+2.5rem))]">
+          <dl class="grid rounded-[10px] bg-[var(--hero-facts-bg)] px-6 py-4 shadow-[var(--hero-facts-shadow)] backdrop-blur-xl sm:grid-cols-3 sm:px-10 sm:py-6 lg:mr-[calc(50%-50vw)] lg:min-w-[720px] lg:rounded-r-none lg:pr-[max(2.5rem,calc(50vw-50%+2.5rem))]">
             @for (k of strip; track k; let first = $first) {
-              <div class="py-3 sm:px-8 sm:py-0" [class]="first ? 'sm:pl-0' : 'border-t border-white/10 sm:border-l sm:border-t-0 sm:border-white/20'">
+              <div class="py-3 sm:px-8 sm:py-0" [class]="first ? 'sm:pl-0' : 'border-t border-line sm:border-l sm:border-t-0'">
                 <dt class="text-[16px] font-bold">{{ 'home.strip.' + k + '.title' | translate }}</dt>
                 <dd class="mt-1 text-[13px] text-fg/70">{{ 'home.strip.' + k + '.text' | translate }}</dd>
               </div>

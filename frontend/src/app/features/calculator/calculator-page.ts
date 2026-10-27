@@ -40,7 +40,7 @@ import { StepVehicle } from './steps/step-vehicle';
     <div class="min-h-screen">
       <!-- minimal bar instead of the site header -->
       <div class="border-b border-line">
-        <div class="mx-auto flex h-16 max-w-5xl items-center justify-between gap-2 px-4 sm:gap-4 sm:px-5">
+        <div class="mx-auto flex h-16 max-w-5xl items-center justify-between gap-2 px-3 sm:gap-4 sm:px-5">
           <a [routerLink]="home()" class="min-w-0 shrink" [attr.aria-label]="'layout.home' | translate"><app-logo class="origin-left scale-[0.65] sm:scale-[0.8]" /></a>
           <div class="flex items-center gap-1 sm:gap-2">
             <app-currency-menu [value]="store.state().displayCurrency" (changed)="store.setDisplayCurrency($event)" />
@@ -53,7 +53,7 @@ import { StepVehicle } from './steps/step-vehicle';
         </div>
       </div>
 
-      <main class="mx-auto max-w-5xl px-5 pb-20 pt-10">
+      <main class="mx-auto max-w-5xl px-3 pb-20 pt-10 sm:px-5">
         <h1 class="h-section">{{ 'calc.title' | translate }}</h1>
         <p class="lead mt-3 max-w-2xl">{{ 'calc.lead' | translate }}</p>
 

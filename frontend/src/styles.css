@@ -31,6 +31,8 @@
   --success: #12935f;
   --hero-glow-1: rgb(255 192 0 / 0.12);
   --hero-glow-2: rgb(31 94 255 / 0.08);
+  --hero-facts-bg: rgb(255 255 255 / 0.8);
+  --hero-facts-shadow: 0 10px 40px rgb(16 16 17 / 0.1);
   --map-land: #d8d8dc;
   --map-eu: #1f5eff;
   --map-origin: rgb(255 192 0 / 0.55);
@@ -64,6 +66,8 @@
   --success: #2fd391;
   --hero-glow-1: rgb(255 198 26 / 0.16);
   --hero-glow-2: rgb(61 123 255 / 0.12);
+  --hero-facts-bg: rgb(20 20 22 / 0.72);
+  --hero-facts-shadow: 0 10px 40px rgb(0 0 0 / 0.35);
   --map-land: #26262a;
   --map-eu: #3d7bff;
   --map-origin: rgb(255 198 26 / 0.3);
@@ -122,7 +126,7 @@ body {
 @layer components {
 /* ---------- layout & typography (reference: wide heavy headings, plain uppercase labels) ---------- */
 .site {
-  @apply mx-auto w-full max-w-[1240px] px-5;
+  @apply mx-auto w-full max-w-[1240px] px-3 sm:px-5;
 }
 .eyebrow {
   @apply text-[15px] font-medium uppercase tracking-[0.05em] text-brand-text;
