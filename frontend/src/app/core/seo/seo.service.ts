@@ -4,7 +4,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { REPORT_PRICE_MINOR, isDisplayCurrency } from '../currency/currencies';
 import { LANGUAGE_BY_CODE, Lang, SUPPORTED_LANGS } from '../i18n/language.service';
 import { Page, pathFor } from '../routing/paths';
-import { SITE } from '../site.config';
+import { SITE, contactEmail } from '../site.config';
 import { GLOSSARY_TERMS } from '../../features/glossary/glossary-terms';
 
 export const FAQ_COUNT = 9;
@@ -231,7 +231,7 @@ export class SeoService {
         '@id': `${SITE.url}/#org`,
         name: SITE.name,
         url: SITE.url,
-        email: SITE.email,
+        email: contactEmail(lang),
         logo: { '@type': 'ImageObject', url: `${SITE.url}/icons/icon-512.png`, width: 512, height: 512 },
       },
       {

@@ -3,7 +3,7 @@ import { RouterLink } from '@angular/router';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../../core/i18n/language.service';
 import { pathFor } from '../../core/routing/paths';
-import { SITE } from '../../core/site.config';
+import { SITE, contactEmail } from '../../core/site.config';
 
 /**
  * Terms of service for the free calculator and the paid report (consumer sale of digital content). Text lives in the
@@ -43,7 +43,7 @@ export class TermsPage {
     const tax = c.taxId ? `${this.translate.instant('terms.taxIdLabel')} ${c.taxId}` : '';
     return {
       seller: [c.name, c.address, tax, c.registry].filter(Boolean).join(', '),
-      email: SITE.email,
+      email: contactEmail(this.lang.current()),
       site: SITE.url.replace('https://', ''),
       version: SITE.termsVersion,
     };

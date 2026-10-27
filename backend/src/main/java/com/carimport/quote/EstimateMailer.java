@@ -111,8 +111,8 @@ public class EstimateMailer {
         MimeMessage message = sender.getObject().createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
         helper.setFrom(props.mail().from());
-        if (StringUtils.hasText(props.mail().replyTo())) {
-            helper.setReplyTo(props.mail().replyTo());
+        if (StringUtils.hasText(props.mail().replyTo(language))) {
+            helper.setReplyTo(props.mail().replyTo(language));
         }
         helper.setTo(email);
         helper.setSubject(messages.getMessage("mail.estimate.subject", new Object[] {car}, locale));

@@ -88,8 +88,10 @@ app:
       USD: 549
       GBP: 449
   mail:
-    from: ${MAIL_FROM:Carglo <cargloapp@gmail.com>}
-    reply-to: ${MAIL_REPLY_TO:cargloapp@gmail.com}
+    from: ${MAIL_FROM:Carglo <kontakt@cargloapp.com>}
+    reply-to: ${MAIL_REPLY_TO:kontakt@cargloapp.com}
+    # set (e.g. cargloapp.com) to send replies to kontakt@ / contact@ / contacto@ ... in the recipient's language
+    contact-domain: ${CONTACT_DOMAIN:}
   # Operator panel (/admin): HTTP Basic account; empty password = the admin API is off
   admin:
     username: ${ADMIN_USERNAME:admin}
@@ -102,7 +104,7 @@ app:
     name: ${COMPANY_NAME:Carglo}
     address: ${COMPANY_ADDRESS:}
     tax-id: ${COMPANY_TAX_ID:}
-    email: ${CONTACT_EMAIL:cargloapp@gmail.com}
+    email: ${CONTACT_EMAIL:kontakt@cargloapp.com}
   vehicle:
     vpic-url: ${VPIC_URL:https://vpic.nhtsa.dot.gov/api}
     epa-url: ${EPA_URL:https://www.fueleconomy.gov/ws/rest}

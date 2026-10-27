@@ -47,12 +47,21 @@ public record AppProperties(
         }
     }
 
-    /** Sender of transactional e-mail; delivery itself is configured under spring.mail (any SMTP provider). */
-    public record Mail(String from, String replyTo) {
+    /**
+     * Sender of transactional e-mail; delivery itself is configured under spring.mail (any SMTP provider).
+     *
+     * @param contactDomain when set, replies go to the contact address in the recipient's language at this domain
+     *                      (kontakt@, contact@, ...) instead of replyTo
+     */
+    public record Mail(String from, String replyTo, String contactDomain) {
+
+        public String replyTo(String language) {
+            return contactDomain != null && !contactDomain.isBlank() ? ContactAddress.of(contactDomain.trim(), language) : replyTo;
+        }
     }
 
     public Mail mail() {
-        return mail == null ? new Mail("Carglo <cargloapp@gmail.com>", null) : mail;
+        return mail == null ? new Mail("Carglo <kontakt@cargloapp.com>", null, null) : mail;
     }
 
     /** Seller identity printed in e-mails and the terms (same values as the frontend site config). */
@@ -60,7 +69,7 @@ public record AppProperties(
     }
 
     public Company company() {
-        return company == null ? new Company("Carglo", "", "", "cargloapp@gmail.com") : company;
+        return company == null ? new Company("Carglo", "", "", "kontakt@cargloapp.com") : company;
     }
 
     public Vehicle vehicle() {

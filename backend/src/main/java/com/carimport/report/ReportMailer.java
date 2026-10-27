@@ -139,8 +139,8 @@ public class ReportMailer {
         MimeMessage message = sender.getObject().createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
         helper.setFrom(props.mail().from());
-        if (StringUtils.hasText(props.mail().replyTo())) {
-            helper.setReplyTo(props.mail().replyTo());
+        if (StringUtils.hasText(props.mail().replyTo(order.getLocale()))) {
+            helper.setReplyTo(props.mail().replyTo(order.getLocale()));
         }
         helper.setTo(order.getEmail());
         helper.setSubject(messages.getMessage("mail.report.subject", null, locale));

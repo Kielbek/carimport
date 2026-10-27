@@ -51,8 +51,8 @@ public class NewsletterMailer {
             MimeMessage message = sender.getObject().createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
             helper.setFrom(props.mail().from());
-            if (StringUtils.hasText(props.mail().replyTo())) {
-                helper.setReplyTo(props.mail().replyTo());
+            if (StringUtils.hasText(props.mail().replyTo(locale.getLanguage()))) {
+                helper.setReplyTo(props.mail().replyTo(locale.getLanguage()));
             }
             helper.setTo(subscriber.getEmail());
             helper.setSubject(messages.getMessage("mail.newsletter.subject", null, locale));

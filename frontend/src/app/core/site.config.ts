@@ -1,8 +1,25 @@
+/**
+ * The word for "contact" in each language: the address is kontakt@, contact@, contacto@ ... at SITE.emailDomain, all
+ * aliases of one mailbox at the mail host. Keep in step with ContactAddress.java (replies to the e-mails).
+ */
+export const CONTACT_LOCAL: Record<string, string> = {
+  en: 'contact', fr: 'contact', nl: 'contact', ro: 'contact',
+  pl: 'kontakt', de: 'kontakt', cs: 'kontakt', sk: 'kontakt', sv: 'kontakt', da: 'kontakt', hr: 'kontakt', sl: 'kontakt',
+  et: 'kontakt', uk: 'kontakt', bg: 'kontakt',
+  es: 'contacto', pt: 'contacto', it: 'contatti', hu: 'kapcsolat', lt: 'kontaktai', lv: 'kontakti', fi: 'yhteys',
+  el: 'epikoinonia',
+};
+
+/** Contact address in the reader's language, e.g. kontakt@cargloapp.com for Polish. */
+export function contactEmail(lang: string): string {
+  return `${CONTACT_LOCAL[lang] ?? 'contact'}@${SITE.emailDomain}`;
+}
+
 /** Public site identity used for canonical URLs, hreflang, Open Graph and structured data. Change per deployment. */
 export const SITE = {
   url: 'https://cargloapp.com',
   name: 'Carglo',
-  email: 'cargloapp@gmail.com',
+  emailDomain: 'cargloapp.com',
   ogImage: '/og-image.png',
   /**
    * The seller, as required in the terms and for consumer contracts. FILL IN BEFORE LAUNCH - same values as

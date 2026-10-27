@@ -4,7 +4,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { LANGUAGES, LanguageService } from '../core/i18n/language.service';
 import { GuideRef, GuideSection, guidePath } from '../core/routing/guide-paths';
 import { pathFor } from '../core/routing/paths';
-import { SITE } from '../core/site.config';
+import { SITE, contactEmail } from '../core/site.config';
 import { Flag } from '../shared/flag/flag';
 import { Icon } from '../shared/icon/icon';
 import { Logo } from './logo';
@@ -22,8 +22,8 @@ import { NewsletterSignup } from '../features/newsletter/newsletter-signup';
         <div>
           <app-logo />
           <p class="mt-5 max-w-xs text-sm leading-relaxed text-muted">{{ 'footer.about' | translate }}</p>
-          <a [href]="'mailto:' + email" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold hover:text-brand-text">
-            <app-icon name="mail" [size]="16" /> {{ email }}
+          <a [href]="'mailto:' + email()" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold hover:text-brand-text">
+            <app-icon name="mail" [size]="16" /> {{ email() }}
           </a>
         </div>
 
@@ -94,7 +94,7 @@ import { NewsletterSignup } from '../features/newsletter/newsletter-signup';
 export class SiteFooter {
   protected readonly lang = inject(LanguageService);
   protected readonly langs = LANGUAGES;
-  protected readonly email = SITE.email;
+  protected readonly email = computed(() => contactEmail(this.lang.current()));
   protected readonly name = SITE.name;
   protected readonly year = new Date().getFullYear();
   protected readonly origins = ['USA', 'CANADA', 'JAPAN', 'UAE', 'UK'].map((code) => ({ code }));

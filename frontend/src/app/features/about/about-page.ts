@@ -3,7 +3,7 @@ import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageService } from '../../core/i18n/language.service';
 import { pathFor } from '../../core/routing/paths';
-import { SITE } from '../../core/site.config';
+import { contactEmail } from '../../core/site.config';
 import { Icon } from '../../shared/icon/icon';
 import { IconName } from '../../shared/icon/icons';
 
@@ -130,7 +130,7 @@ import { IconName } from '../../shared/icon/icons';
       <div class="theme-dark flex flex-col items-start gap-6 rounded-[4px] bg-panel p-8 text-fg sm:p-10 lg:flex-row lg:items-center lg:justify-between lg:p-[50px]">
         <div>
           <h2 class="text-[28px] font-extrabold leading-tight">{{ 'about.cta.title' | translate }}</h2>
-          <p class="mt-3 max-w-xl text-fg/85">{{ 'about.cta.text' | translate: { email: email } }}</p>
+          <p class="mt-3 max-w-xl text-fg/85">{{ 'about.cta.text' | translate: { email: email() } }}</p>
         </div>
         <a [routerLink]="calculator()" class="btn btn-primary shrink-0"><app-icon name="calculator" [size]="18" /> {{ 'home.hero.cta' | translate }}</a>
       </div>
@@ -140,7 +140,7 @@ import { IconName } from '../../shared/icon/icons';
 export class AboutPage {
   private readonly lang = inject(LanguageService);
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
-  protected readonly email = SITE.email;
+  protected readonly email = computed(() => contactEmail(this.lang.current()));
 
   protected readonly sources: { key: string; icon: IconName }[] = [
     { key: 'customs', icon: 'landmark' },

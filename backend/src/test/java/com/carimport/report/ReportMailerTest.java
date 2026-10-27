@@ -99,7 +99,7 @@ class ReportMailerTest {
         when(provider.getIfAvailable()).thenReturn(smtp);
         when(provider.getObject()).thenReturn(smtp);
         AppProperties props = new AppProperties("https://cargloapp.com", List.of("pl"), null, null, List.of(), null, null,
-                new AppProperties.Mail("Carglo <cargloapp@gmail.com>", "cargloapp@gmail.com"),
+                new AppProperties.Mail("Carglo <kontakt@cargloapp.com>", "kontakt@cargloapp.com", "cargloapp.com"),
                 new AppProperties.Company("Carglo Sp. z o.o.", "ul. Testowa 1, 00-001 Warszawa", "NIP 1234567890",
                         "cargloapp@gmail.com"));
         return new ReportMailer(orders, quotes, storage, provider, engine, messages, props,
@@ -114,6 +114,7 @@ class ReportMailerTest {
         MimeMessage m = smtp.sent.getFirst();
         assertThat(m.getSubject()).isEqualTo("Twój raport kosztów importu auta jest gotowy");
         assertThat(m.getAllRecipients()[0].toString()).isEqualTo("jan@example.com");
+        assertThat(m.getReplyTo()[0].toString()).isEqualTo("kontakt@cargloapp.com");   // contact address in Polish
 
         String body = bodies((Multipart) m.getContent());
         assertThat(body).contains("Dzień dobry Jan Kowalski", "Carglo Sp. z o.o.", "NIP 1234567890",

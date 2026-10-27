@@ -80,7 +80,7 @@ class EstimateMailerTest {
         when(provider.getIfAvailable()).thenReturn(smtp);
         when(provider.getObject()).thenReturn(smtp);
         AppProperties props = new AppProperties("https://cargloapp.com", List.of("pl"), null, null, List.of(), null, null,
-                new AppProperties.Mail("Carglo <cargloapp@gmail.com>", "cargloapp@gmail.com"),
+                new AppProperties.Mail("Carglo <cargloapp@gmail.com>", "cargloapp@gmail.com", null),
                 new AppProperties.Company("Carglo", "", "", "cargloapp@gmail.com"));
         return new EstimateMailer(quotes, provider, engine, messages, props, "smtp.example.com");
     }

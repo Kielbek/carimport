@@ -3,7 +3,7 @@ import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageService } from '../../core/i18n/language.service';
 import { pathFor } from '../../core/routing/paths';
-import { SITE } from '../../core/site.config';
+import { SITE, contactEmail } from '../../core/site.config';
 
 /** How the calculation works: sources, assumptions and limits - the trust page for search and for buyers. */
 @Component({
@@ -18,7 +18,7 @@ import { SITE } from '../../core/site.config';
       @for (n of sections; track n) {
         <section class="mt-10">
           <h2 class="text-xl font-extrabold">{{ n }}. {{ 'method.s' + n + '.title' | translate }}</h2>
-          @for (p of paragraphs('method.s' + n + '.text' | translate: { email: email }); track $index) {
+          @for (p of paragraphs('method.s' + n + '.text' | translate: { email: email() }); track $index) {
             <p class="mt-3 leading-relaxed text-fg/85">{{ p }}</p>
           }
         </section>
@@ -33,7 +33,7 @@ import { SITE } from '../../core/site.config';
 export class MethodPage {
   private readonly lang = inject(LanguageService);
   protected readonly sections = [1, 2, 3, 4, 5, 6, 7];
-  protected readonly email = SITE.email;
+  protected readonly email = computed(() => contactEmail(this.lang.current()));
   protected readonly reviewed = SITE.ratesReviewed;
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly taxes = computed(() => pathFor('taxes', this.lang.current()));
