@@ -201,7 +201,8 @@
     "terms": "Acepto las condiciones generales y solicito expresamente que el informe se me entregue antes de que finalice el plazo de desistimiento de 14 días. Reconozco que, una vez entregado, pierdo el derecho de desistimiento.",
     "title": "Informe de importación completo",
     "termsLink": "Condiciones generales",
-    "guarantee": "Garantía de exactitud: comunica un error de cálculo en 14 días (p. ej., un tipo desactualizado o una tasa obligatoria que falta) y corregiremos el informe o devolveremos el precio íntegro."
+    "guarantee": "Garantía de exactitud: comunica un error de cálculo en 14 días (p. ej., un tipo desactualizado o una tasa obligatoria que falta) y corregiremos el informe o devolveremos el precio íntegro.",
+    "promoHint": "¿Tienes un código de descuento? Introdúcelo en la página de pago."
   },
   "report": {
     "amount": "Importe",
@@ -300,7 +301,16 @@
     "span": "normalmente {{min}} – {{max}}",
     "estimateNote": "El transporte y la entrega son estimaciones con tarifas habituales, redondeadas a 100. Los importes exactos, partida por partida, están en el informe completo.",
     "minimalNote": "Una estimación aproximada para esta ruta. Cuánto cuesta exactamente cada partida – transporte, arancel, IVA, matriculación y riesgos – lo muestra el informe.",
-    "guarantee": "Garantía de exactitud: un error en el informe = corrección o devolución del dinero"
+    "guarantee": "Garantía de exactitud: un error en el informe = corrección o devolución del dinero",
+    "email": {
+      "title": "Enviarme esta estimación por e-mail",
+      "lead": "Recibirás un resumen y un enlace que reabre la calculadora con el mismo coche: útil para comparar varios lotes.",
+      "submit": "Enviar",
+      "newsletter": "Quiero recibir también el boletín (una vez al mes, confirmación por enlace).",
+      "sent": "Enviado: revisa tu bandeja (y spam).",
+      "error": "No se pudo enviar. Inténtalo de nuevo en un momento.",
+      "limit": "Esta estimación ya se ha enviado varias veces. Recalcula para enviar una nueva."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Contenedor exclusivo",
@@ -464,7 +474,8 @@
     "blog": "Blog",
     "taxes": "Calculadora de aranceles e impuestos",
     "method": "Cómo calculamos",
-    "toTop": "Volver arriba"
+    "toTop": "Volver arriba",
+    "glossary": "Glosario"
   },
   "footer": {
     "about": "Calculadora independiente de los costes de importación de coches de fuera de la UE. No vendemos ni importamos coches – calculamos lo que realmente cuestan.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Cómo calculamos el coste de importar un coche – fuentes y método | Carglo",
       "description": "De dónde salen nuestras tarifas, cómo estimamos el transporte y qué no puede saber el resultado. La metodología completa de la calculadora Carglo."
+    },
+    "glossary": {
+      "title": "Glosario de importación: CIF, TARIC, salvage title, IVA de importación | Carglo",
+      "description": "CIF, valor en aduana, códigos TARIC, clean y salvage title, IVA de importación, régimen 4200, Ro-Ro y COC explicados de forma sencilla."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Independencia",
       "text": "Carglo no vende, compra ni envía coches y no cobra comisiones de importadores por el resultado. Ganamos con el informe PDF de pago. ¿Has visto un error o una tarifa desactualizada? Escribe a {{email}} y lo corregimos."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Glosario",
+    "title": "Glosario de importación de coches",
+    "lead": "Los términos que encontrarás al comprar un coche en una subasta de EE. UU., Canadá, Japón o Reino Unido e importarlo a la UE, explicados en una o dos frases.",
+    "cta": "Calcular el coste total",
+    "terms": {
+      "cif": {
+        "name": "CIF / valor en aduana",
+        "text": "Cost, Insurance and Freight: precio del coche con comisiones de subasta, transporte, flete y seguro hasta la frontera de la UE. Sobre este valor se calcula el arancel."
+      },
+      "taric": {
+        "name": "TARIC y código SA",
+        "text": "El arancel aduanero de la UE. El código fija el tipo: 8703 turismos 10 %, 8704 pick-ups y furgonetas 10–22 %, 8711 motos 6–8 %, 9705 vehículos de colección 0 %."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "Título de propiedad de EE. UU. o Canadá sin registro de siniestro total. El coche se matricula sin inspecciones adicionales de su historial."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Título emitido cuando la aseguradora declaró siniestro total. Tras la reparación y la inspección técnica se puede importar y matricular en la UE; con «non-repairable», normalmente no."
+      },
+      "buyerFee": {
+        "name": "Comisiones de subasta",
+        "text": "Lo que Copart, IAAI o USS suman al precio de remate: comisión de comprador por tramos, tasa de puja online, gate y environmental fee. Forman parte del valor en aduana."
+      },
+      "importVat": {
+        "name": "IVA de importación",
+        "text": "IVA del país donde se despacha el coche, sobre el valor en aduana más el arancel. En un coche usado es definitivo, aunque se matricule en otro país de la UE."
+      },
+      "nationalTax": {
+        "name": "Impuesto de matriculación",
+        "text": "Impuesto único del país de matriculación: IEDMT en España según CO₂, BPM en Países Bajos, malus en Francia, impuesto especial en Polonia. Alemania y Suecia no lo tienen."
+      },
+      "proc4200": {
+        "name": "Régimen aduanero 4200",
+        "text": "Despacho en un país de la UE con exención de IVA allí e inversión del sujeto pasivo en el país de destino. Solo para empresas con NIF-IVA."
+      },
+      "customsRate": {
+        "name": "Tipo de cambio aduanero",
+        "text": "El tipo que la aduana aplica todo el mes para convertir la factura, fijado con los tipos del penúltimo miércoles del mes anterior, no el del día."
+      },
+      "roro": {
+        "name": "Ro-Ro o contenedor",
+        "text": "Ro-Ro: el coche sube al barco rodando – más barato, pero debe arrancar. Contenedor: a menudo compartido con 2–4 coches – más seguro y también para coches que no arrancan."
+      },
+      "coc": {
+        "name": "COC y homologación individual",
+        "text": "El certificado de conformidad acredita la homologación UE. Los coches de EE. UU. no lo tienen y necesitan homologación individual en ITV con cambios de luces."
+      },
+      "collector": {
+        "name": "Vehículo de colección (NC 9705)",
+        "text": "Más de 30 años, en estado original y ya no fabricado. Arancel 0 % e IVA reducido (10 % en España), si la aduana acepta la clasificación."
+      }
     }
   }
 }

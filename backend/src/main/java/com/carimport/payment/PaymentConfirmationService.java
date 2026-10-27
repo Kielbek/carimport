@@ -45,7 +45,7 @@ public class PaymentConfirmationService {
             log.error("Session {} does not belong to order {}", sessionId, orderId);
             return;
         }
-        if ("paid".equals(session.getPaymentStatus())) {
+        if (OrderPayments.settled(session)) {
             payments.markPaid(session);
         } else if ("expired".equals(session.getStatus())) {
             order.markExpired();

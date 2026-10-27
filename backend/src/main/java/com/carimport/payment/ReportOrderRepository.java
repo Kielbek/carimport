@@ -30,7 +30,7 @@ public interface ReportOrderRepository extends JpaRepository<ReportOrder, UUID> 
 
     /** Net revenue per currency since a moment (fully refunded orders excluded, partial refunds deducted): [currency, sum, count]. */
     @Query("""
-            select o.currency, sum(o.amountMinor - o.refundedMinor), count(o) from ReportOrder o
+            select o.currency, sum(o.amountMinor - o.discountMinor - o.refundedMinor), count(o) from ReportOrder o
             where o.paidAt >= :since and o.status in (com.carimport.payment.ReportOrder.Status.PAID,
                 com.carimport.payment.ReportOrder.Status.GENERATING, com.carimport.payment.ReportOrder.Status.READY,
                 com.carimport.payment.ReportOrder.Status.FAILED)

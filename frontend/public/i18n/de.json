@@ -201,7 +201,8 @@
     "terms": "Ich akzeptiere die AGB und verlange ausdrücklich, dass der Bericht vor Ablauf der 14-tägigen Widerrufsfrist geliefert wird. Mir ist bekannt, dass ich mit der Lieferung mein Widerrufsrecht verliere.",
     "title": "Vollständiger Importbericht",
     "termsLink": "AGB",
-    "guarantee": "Richtigkeitsgarantie: Melden Sie innerhalb von 14 Tagen einen Rechenfehler (z. B. einen veralteten Satz oder eine fehlende Pflichtgebühr) – wir korrigieren den Bericht oder erstatten den vollen Preis."
+    "guarantee": "Richtigkeitsgarantie: Melden Sie innerhalb von 14 Tagen einen Rechenfehler (z. B. einen veralteten Satz oder eine fehlende Pflichtgebühr) – wir korrigieren den Bericht oder erstatten den vollen Preis.",
+    "promoHint": "Haben Sie einen Rabattcode? Sie geben ihn auf der Zahlungsseite ein."
   },
   "report": {
     "amount": "Betrag",
@@ -300,7 +301,16 @@
     "span": "meist {{min}} – {{max}}",
     "estimateNote": "Transport und Zustellung sind Schätzungen aus üblichen Tarifen, auf 100 gerundet. Die genauen Beträge, Posten für Posten, stehen im vollständigen Bericht.",
     "minimalNote": "Eine grobe Schätzung für diese Route. Was jeder Posten genau kostet – Transport, Zoll, Einfuhrumsatzsteuer, Zulassung und Risiken – steht im Bericht.",
-    "guarantee": "Richtigkeitsgarantie: Fehler im Bericht = Korrektur oder Geld zurück"
+    "guarantee": "Richtigkeitsgarantie: Fehler im Bericht = Korrektur oder Geld zurück",
+    "email": {
+      "title": "Diese Schätzung per E-Mail senden",
+      "lead": "Sie erhalten eine Zusammenfassung und einen Link, der den Rechner mit demselben Auto öffnet – praktisch beim Vergleich mehrerer Lose.",
+      "submit": "Senden",
+      "newsletter": "Auch den Newsletter erhalten (einmal im Monat, Bestätigung per Link).",
+      "sent": "Gesendet – prüfen Sie Ihr Postfach (auch Spam).",
+      "error": "Senden fehlgeschlagen. Bitte gleich noch einmal versuchen.",
+      "limit": "Diese Schätzung wurde bereits mehrmals gesendet. Rechnen Sie neu, um eine neue zu senden."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exklusiver Container",
@@ -464,7 +474,8 @@
     "blog": "Blog",
     "taxes": "Zoll- und Steuerrechner",
     "method": "So rechnen wir",
-    "toTop": "Nach oben"
+    "toTop": "Nach oben",
+    "glossary": "Glossar"
   },
   "footer": {
     "about": "Unabhängiger Rechner für die Importkosten von Autos außerhalb der EU. Wir verkaufen und importieren keine Autos – wir rechnen aus, was sie wirklich kosten.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "So berechnen wir die Kosten des Autoimports – Quellen und Methode | Carglo",
       "description": "Woher unsere Sätze stammen, wie wir den Transport schätzen und was das Ergebnis nicht wissen kann. Die vollständige Methodik des Carglo-Rechners."
+    },
+    "glossary": {
+      "title": "Glossar Autoimport: CIF, TARIC, Salvage Title, Einfuhrumsatzsteuer | Carglo",
+      "description": "CIF, Zollwert, TARIC-Codes, Clean und Salvage Title, Einfuhrumsatzsteuer, Verfahren 4200, Ro-Ro und CoC einfach erklärt."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Unabhängigkeit",
       "text": "Carglo verkauft, kauft und verschifft keine Autos und nimmt von Importeuren keine Provision für das Ergebnis. Wir verdienen am kostenpflichtigen PDF-Bericht. Fehler oder veralteter Satz entdeckt? Schreiben Sie an {{email}} – wir korrigieren es."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Glossar",
+    "title": "Glossar zum Autoimport",
+    "lead": "Die Begriffe, die Ihnen beim Kauf eines Autos auf einer Auktion in den USA, Kanada, Japan oder Großbritannien und beim Import in die EU begegnen – in ein, zwei Sätzen erklärt.",
+    "cta": "Gesamtkosten berechnen",
+    "terms": {
+      "cif": {
+        "name": "CIF / Zollwert",
+        "text": "Cost, Insurance and Freight: Kaufpreis mit Auktionsgebühren, Transport, Fracht und Versicherung bis zur EU-Grenze. Auf diesen Zollwert wird der Zoll berechnet."
+      },
+      "taric": {
+        "name": "TARIC und HS-Code",
+        "text": "Der Zolltarif der EU. Der Code bestimmt den Zollsatz: 8703 Pkw 10 %, 8704 Pick-ups und Transporter 10–22 %, 8711 Motorräder 6–8 %, 9705 Sammlerfahrzeuge 0 %."
+      },
+      "cleanTitle": {
+        "name": "Clean Title",
+        "text": "US- oder kanadisches Eigentumsdokument ohne Totalschadenvermerk. Das Auto lässt sich ohne zusätzliche Prüfung der Unfallhistorie zulassen."
+      },
+      "salvageTitle": {
+        "name": "Salvage Title",
+        "text": "Wird ausgestellt, wenn die Versicherung einen Totalschaden festgestellt hat. Nach Reparatur und technischer Prüfung ist Import und Zulassung in der EU möglich; bei „non-repairable“ meist nicht."
+      },
+      "buyerFee": {
+        "name": "Auktionsgebühren des Käufers",
+        "text": "Was Copart, IAAI oder USS auf den Zuschlag aufschlagen: gestaffelte Käufergebühr, Online-Gebotsgebühr, Gate- und Umweltgebühr. Sie gehören zum Zollwert."
+      },
+      "importVat": {
+        "name": "Einfuhrumsatzsteuer",
+        "text": "Die USt des Landes, in dem das Auto verzollt wird, auf Zollwert plus Zoll. Bei einem Gebrauchtwagen ist sie endgültig, auch wenn das Auto in einem anderen EU-Land zugelassen wird."
+      },
+      "nationalTax": {
+        "name": "Zulassungssteuer",
+        "text": "Einmalige Steuer des Zulassungslandes: Verbrauchsteuer in Polen, BPM in den Niederlanden, Malus in Frankreich, NoVA in Österreich. Deutschland, Tschechien und Schweden haben keine."
+      },
+      "proc4200": {
+        "name": "Zollverfahren 4200",
+        "text": "Verzollung in einem EU-Land mit USt-Befreiung dort und Besteuerung im Bestimmungsland (Reverse Charge). Nur für Unternehmen mit USt-IdNr."
+      },
+      "customsRate": {
+        "name": "Zollkurs",
+        "text": "Der Kurs, mit dem der Zoll einen ganzen Monat lang die Rechnung umrechnet – festgelegt anhand der Kurse vom vorletzten Mittwoch des Vormonats, nicht der Tageskurs."
+      },
+      "roro": {
+        "name": "Ro-Ro oder Container",
+        "text": "Ro-Ro: Das Auto fährt selbst aufs Schiff – günstiger, muss aber fahrbereit sein. Container: oft geteilt mit 2–4 Autos – sicherer und auch für nicht fahrbereite Autos."
+      },
+      "coc": {
+        "name": "CoC und Einzelabnahme",
+        "text": "Die Übereinstimmungsbescheinigung (CoC) belegt die EU-Typgenehmigung. US-Autos haben keine und brauchen eine Einzelabnahme nach § 21 StVZO mit Umbau von Licht und Tacho."
+      },
+      "collector": {
+        "name": "Sammlerfahrzeug (KN 9705)",
+        "text": "Über 30 Jahre alt, im Originalzustand und nicht mehr produziert. 0 % Zoll und in vielen Ländern ermäßigte USt (Deutschland 7 %) – sofern der Zoll die Einreihung anerkennt."
+      }
     }
   }
 }

@@ -201,7 +201,8 @@
     "terms": "Prihvaćam opće uvjete i izričito zahtijevam isporuku izvješća prije isteka 14-dnevnog roka za jednostrani raskid ugovora. Potvrđujem da isporukom izvješća gubim pravo na jednostrani raskid ugovora.",
     "title": "Cjelovito izvješće o uvozu",
     "termsLink": "Opći uvjeti",
-    "guarantee": "Jamstvo točnosti: prijavite pogrešku u izračunu u roku od 14 dana (npr. zastarjelu stopu ili nedostajuću obveznu naknadu) i ispravit ćemo izvješće ili vratiti cijeli iznos."
+    "guarantee": "Jamstvo točnosti: prijavite pogrešku u izračunu u roku od 14 dana (npr. zastarjelu stopu ili nedostajuću obveznu naknadu) i ispravit ćemo izvješće ili vratiti cijeli iznos.",
+    "promoHint": "Imate kod za popust? Unosite ga na stranici za plaćanje."
   },
   "report": {
     "amount": "Iznos",
@@ -300,7 +301,16 @@
     "span": "obično {{min}} – {{max}}",
     "estimateNote": "Prijevoz i dostava procjena su prema uobičajenim cijenama, zaokružena na 100. Točni iznosi po stavkama nalaze se u cjelovitom izvješću.",
     "minimalNote": "Gruba procjena za ovu rutu. Koliko točno košta svaka stavka – prijevoz, carina, PDV, registracija i rizici – prikazuje izvješće.",
-    "guarantee": "Jamstvo točnosti: pogreška u izvješću = ispravak ili povrat novca"
+    "guarantee": "Jamstvo točnosti: pogreška u izvješću = ispravak ili povrat novca",
+    "email": {
+      "title": "Pošalji mi ovu procjenu e-poštom",
+      "lead": "Dobit ćete sažetak i poveznicu koja otvara kalkulator s istim automobilom – korisno kad uspoređujete više vozila.",
+      "submit": "Pošalji",
+      "newsletter": "Želim i newsletter (jednom mjesečno, potvrda poveznicom).",
+      "sent": "Poslano – provjerite pretinac (i neželjenu poštu).",
+      "error": "Slanje nije uspjelo. Pokušajte ponovno za trenutak.",
+      "limit": "Ova je procjena već poslana nekoliko puta. Ponovno izračunajte da biste poslali novu."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Vlastiti kontejner",
@@ -464,7 +474,8 @@
     "blog": "Blog",
     "taxes": "Kalkulator carine i poreza",
     "method": "Kako računamo",
-    "toTop": "Na vrh"
+    "toTop": "Na vrh",
+    "glossary": "Pojmovnik"
   },
   "footer": {
     "about": "Neovisni kalkulator troškova uvoza automobila izvan EU. Automobile ne prodajemo niti uvozimo – izračunavamo koliko zaista koštaju.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Kako računamo trošak uvoza automobila – izvori i metoda | Carglo",
       "description": "Odakle su naše stope, kako procjenjujemo prijevoz i što rezultat ne može znati. Cjelovita metodologija Carglo kalkulatora."
+    },
+    "glossary": {
+      "title": "Pojmovnik uvoza: CIF, TARIC, salvage title, uvozni PDV | Carglo",
+      "description": "CIF, carinska vrijednost, TARIC oznake, clean i salvage title, uvozni PDV, postupak 4200, Ro-Ro i CoC jednostavno objašnjeni."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Neovisnost",
       "text": "Carglo ne prodaje, ne kupuje i ne uvozi automobile i ne uzima proviziju od uvoznika za rezultat. Zarađujemo na plaćenom PDF izvješću. Primijetili ste pogrešku ili zastarjelu stopu? Pišite na {{email}} – ispravit ćemo."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Pojmovnik",
+    "title": "Pojmovnik uvoza automobila",
+    "lead": "Pojmovi na koje nailazite kupujući automobil na dražbi u SAD-u, Kanadi, Japanu ili Velikoj Britaniji i uvozeći ga u EU – objašnjeni u jednoj ili dvije rečenice.",
+    "cta": "Izračunaj ukupni trošak",
+    "terms": {
+      "cif": {
+        "name": "CIF / carinska vrijednost",
+        "text": "Cost, Insurance and Freight: cijena automobila s aukcijskim naknadama, prijevozom, vozarinom i osiguranjem do granice EU. Na nju se obračunava carina."
+      },
+      "taric": {
+        "name": "TARIC i HS oznaka",
+        "text": "Carinska tarifa EU. Oznaka određuje stopu: 8703 osobni automobili 10 %, 8704 pick-upovi i kombiji 10–22 %, 8711 motocikli 6–8 %, 9705 kolekcionarska vozila 0 %."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "Američka ili kanadska isprava o vlasništvu bez zabilješke o totalnoj šteti. Automobil se registrira bez dodatnih provjera povijesti nezgoda."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Izdaje se kad osiguravatelj proglasi totalnu štetu. Nakon popravka i tehničkog pregleda može se uvesti i registrirati u EU; s „non-repairable” obično ne."
+      },
+      "buyerFee": {
+        "name": "Aukcijske naknade",
+        "text": "Ono što Copart, IAAI ili USS dodaju postignutoj cijeni: stupnjevana naknada kupca, online ponuda, gate i ekološka naknada. Ulaze u carinsku vrijednost."
+      },
+      "importVat": {
+        "name": "Uvozni PDV",
+        "text": "PDV zemlje u kojoj se automobil carini, na carinsku vrijednost uvećanu za carinu. Za rabljeni automobil je konačan, čak i ako se registrira u drugoj zemlji EU."
+      },
+      "nationalTax": {
+        "name": "Posebni porez",
+        "text": "Jednokratni porez zemlje registracije: PPMV u Hrvatskoj, BPM u Nizozemskoj, malus u Francuskoj, trošarina u Poljskoj. Njemačka i Švedska ga nemaju."
+      },
+      "proc4200": {
+        "name": "Carinski postupak 4200",
+        "text": "Carinjenje u jednoj zemlji EU s oslobođenjem od PDV-a i prijenosom porezne obveze u odredišnu zemlju. Samo za obveznike PDV-a."
+      },
+      "customsRate": {
+        "name": "Carinski tečaj",
+        "text": "Tečaj kojim carina cijeli mjesec preračunava račun – prema tečajevima pretposljednje srijede prethodnog mjeseca, a ne današnji."
+      },
+      "roro": {
+        "name": "Ro-Ro ili kontejner",
+        "text": "Ro-Ro: automobil sam ulazi na brod – jeftinije, ali mora voziti. Kontejner: često dijeljen s 2–4 automobila – sigurnije i za nevozna vozila."
+      },
+      "coc": {
+        "name": "CoC i pojedinačno odobrenje",
+        "text": "Potvrda o sukladnosti (CoC) dokazuje EU homologaciju. Američki automobili je nemaju pa trebaju pojedinačno odobrenje i prilagodbu svjetala."
+      },
+      "collector": {
+        "name": "Kolekcionarsko vozilo (KN 9705)",
+        "text": "Starije od 30 godina, originalno i više se ne proizvodi. Carina 0 % – ako carina prihvati razvrstavanje."
+      }
     }
   }
 }

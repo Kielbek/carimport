@@ -201,7 +201,8 @@
     "terms": "Akceptuję regulamin i żądam dostarczenia raportu przed upływem 14-dniowego terminu na odstąpienie od umowy. Przyjmuję do wiadomości, że po jego dostarczeniu tracę prawo odstąpienia.",
     "title": "Pełny raport importu",
     "termsLink": "Regulamin",
-    "guarantee": "Gwarancja poprawności: zgłoś błąd w wyliczeniu w ciągu 14 dni (np. nieaktualną stawkę lub brakującą obowiązkową opłatę), a poprawimy raport albo zwrócimy całą kwotę."
+    "guarantee": "Gwarancja poprawności: zgłoś błąd w wyliczeniu w ciągu 14 dni (np. nieaktualną stawkę lub brakującą obowiązkową opłatę), a poprawimy raport albo zwrócimy całą kwotę.",
+    "promoHint": "Masz kod rabatowy? Wpiszesz go na stronie płatności."
   },
   "report": {
     "amount": "Kwota",
@@ -300,7 +301,16 @@
     "span": "zwykle {{min}} – {{max}}",
     "estimateNote": "Transport i dowóz to szacunek z typowych stawek, zaokrąglony do 100. Dokładne kwoty, pozycja po pozycji, są w pełnym raporcie.",
     "minimalNote": "Szacunek dla tej trasy. Ile dokładnie kosztuje każda pozycja – transport, cło, VAT, rejestracja i ryzyka – pokazuje raport.",
-    "guarantee": "Gwarancja poprawności: błąd w raporcie = poprawka albo zwrot pieniędzy"
+    "guarantee": "Gwarancja poprawności: błąd w raporcie = poprawka albo zwrot pieniędzy",
+    "email": {
+      "title": "Wyślij mi tę wycenę na maila",
+      "lead": "Dostaniesz podsumowanie i link, który otworzy kalkulator z tym samym autem – przydatne, gdy porównujesz kilka lotów.",
+      "submit": "Wyślij",
+      "newsletter": "Chcę też dostawać newsletter (raz w miesiącu, potwierdzenie linkiem w mailu).",
+      "sent": "Wysłane – sprawdź skrzynkę (także spam).",
+      "error": "Nie udało się wysłać. Spróbuj ponownie za chwilę.",
+      "limit": "Tę wycenę wysłano już kilka razy. Policz ją ponownie, aby wysłać nową."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Kontener na wyłączność",
@@ -464,7 +474,8 @@
     "blog": "Blog",
     "taxes": "Kalkulator cła i akcyzy",
     "method": "Jak liczymy",
-    "toTop": "Do góry"
+    "toTop": "Do góry",
+    "glossary": "Słowniczek"
   },
   "footer": {
     "about": "Niezależny kalkulator kosztów importu samochodów spoza UE. Nie sprzedajemy ani nie sprowadzamy aut – liczymy, ile naprawdę kosztują.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Jak liczymy koszt importu auta – źródła i metoda | Carglo",
       "description": "Skąd pochodzą stawki, jak szacujemy transport i czego wynik nie wie. Pełna metodologia kalkulatora Carglo."
+    },
+    "glossary": {
+      "title": "Słowniczek importu auta: CIF, TARIC, salvage title, VAT importowy | Carglo",
+      "description": "CIF, wartość celna, kody TARIC, clean i salvage title, VAT importowy, procedura 4200, Ro-Ro i CoC – proste wyjaśnienia przy imporcie auta do UE."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Niezależność",
       "text": "Carglo nie sprzedaje, nie kupuje i nie sprowadza aut i nie bierze prowizji od importerów za wynik. Zarabiamy na płatnym raporcie PDF. Widzisz błąd albo nieaktualną stawkę? Napisz na {{email}} – poprawimy."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Słowniczek",
+    "title": "Słowniczek importu auta",
+    "lead": "Pojęcia, które spotkasz, kupując auto na aukcji w USA, Kanadzie, Japonii czy Wielkiej Brytanii i sprowadzając je do UE – wyjaśnione w jednym, dwóch zdaniach.",
+    "cta": "Policz pełny koszt",
+    "terms": {
+      "cif": {
+        "name": "CIF / wartość celna",
+        "text": "Cost, Insurance and Freight: cena auta z opłatami aukcyjnymi, transportem, frachtem i ubezpieczeniem do granicy UE. To wartość celna, od której liczy się cło."
+      },
+      "taric": {
+        "name": "TARIC i kod HS",
+        "text": "Taryfa celna UE. Kod pojazdu decyduje o stawce cła: 8703 osobowe 10%, 8704 pickupy i dostawcze 10–22%, 8711 motocykle 6–8%, 9705 pojazdy kolekcjonerskie 0%."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "Amerykański lub kanadyjski dokument własności bez wpisu o szkodzie całkowitej. Auto zarejestrujesz bez dodatkowych badań historii wypadkowej."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Dokument wydawany, gdy ubezpieczyciel uznał auto za szkodę całkowitą. Po naprawie i badaniu technicznym można je sprowadzić i zarejestrować w UE; z „non-repairable” zwykle już nie."
+      },
+      "buyerFee": {
+        "name": "Opłaty aukcyjne kupującego",
+        "text": "To, co Copart, IAAI czy USS doliczają do wylicytowanej ceny: progowa opłata kupującego, opłata za licytację online, gate i environmental fee. Wchodzą do wartości celnej."
+      },
+      "importVat": {
+        "name": "VAT importowy",
+        "text": "VAT pobierany przez kraj, w którym auto przechodzi odprawę, od wartości celnej powiększonej o cło. Dla używanego auta zapłacony tam VAT jest ostateczny, nawet jeśli rejestrujesz je w innym kraju UE."
+      },
+      "nationalTax": {
+        "name": "Akcyza / podatek rejestracyjny",
+        "text": "Jednorazowy podatek kraju rejestracji: akcyza w Polsce (3,1% lub 18,6%), BPM w Holandii, malus we Francji, NoVA w Austrii. Niemcy, Czechy i Szwecja go nie mają."
+      },
+      "proc4200": {
+        "name": "Procedura celna 4200",
+        "text": "Odprawa w jednym kraju UE ze zwolnieniem z VAT i rozliczeniem VAT w kraju docelowym (odwrotne obciążenie). Tylko dla firm z numerem VAT UE."
+      },
+      "customsRate": {
+        "name": "Kurs celny",
+        "text": "Kurs, po którym urząd celny przez cały miesiąc przelicza fakturę na złote czy euro – ustalany z kursów z przedostatniej środy poprzedniego miesiąca, a nie dzisiejszy."
+      },
+      "roro": {
+        "name": "Ro-Ro czy kontener",
+        "text": "Ro-Ro: auto wjeżdża na statek o własnych siłach – taniej, ale musi być sprawne. Kontener: auto w kontenerze, często z 2–4 innymi – bezpieczniej, także dla niejezdnych."
+      },
+      "coc": {
+        "name": "CoC i homologacja",
+        "text": "Świadectwo zgodności (CoC) potwierdza, że auto spełnia homologację UE. Auta z USA go nie mają, więc potrzebują badania technicznego z przeróbką świateł i licznika."
+      },
+      "collector": {
+        "name": "Pojazd kolekcjonerski (CN 9705)",
+        "text": "Auto ponad 30-letnie, w oryginalnym stanie i już nieprodukowane. Cło 0%, w Polsce bez akcyzy i z VAT 8% – pod warunkiem, że urząd celny uzna tę klasyfikację."
+      }
     }
   }
 }

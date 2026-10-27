@@ -201,7 +201,8 @@
     "terms": "Aceito os termos e condições e solicito expressamente que o relatório seja fornecido antes do termo do prazo de 14 dias para o exercício do direito de livre resolução. Tomo conhecimento de que, uma vez fornecido o relatório, perco o direito de livre resolução.",
     "title": "Relatório completo de importação",
     "termsLink": "Termos e condições",
-    "guarantee": "Garantia de exatidão: comunique um erro de cálculo em 14 dias (p. ex., uma taxa desatualizada ou um encargo obrigatório em falta) e corrigimos o relatório ou reembolsamos o preço total."
+    "guarantee": "Garantia de exatidão: comunique um erro de cálculo em 14 dias (p. ex., uma taxa desatualizada ou um encargo obrigatório em falta) e corrigimos o relatório ou reembolsamos o preço total.",
+    "promoHint": "Tem um código de desconto? Introduza-o na página de pagamento."
   },
   "report": {
     "amount": "Montante",
@@ -300,7 +301,16 @@
     "span": "normalmente {{min}} – {{max}}",
     "estimateNote": "O transporte e a entrega são estimativas com base em tarifas habituais, arredondadas a 100. Os valores exatos, rubrica a rubrica, estão no relatório completo.",
     "minimalNote": "Uma estimativa aproximada para esta rota. Quanto custa exatamente cada rubrica – transporte, direitos, IVA, registo e riscos – mostra o relatório.",
-    "guarantee": "Garantia de exatidão: um erro no relatório = correção ou reembolso"
+    "guarantee": "Garantia de exatidão: um erro no relatório = correção ou reembolso",
+    "email": {
+      "title": "Enviar esta estimativa para o meu e-mail",
+      "lead": "Recebe um resumo e um link que reabre a calculadora com o mesmo carro – útil para comparar vários lotes.",
+      "submit": "Enviar",
+      "newsletter": "Quero também a newsletter (uma vez por mês, confirmação por link).",
+      "sent": "Enviado – verifique a caixa de entrada (e spam).",
+      "error": "Não foi possível enviar. Tente novamente daqui a pouco.",
+      "limit": "Esta estimativa já foi enviada várias vezes. Recalcule para enviar uma nova."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Contentor exclusivo",
@@ -464,7 +474,8 @@
     "blog": "Blog",
     "taxes": "Calculadora de direitos e impostos",
     "method": "Como calculamos",
-    "toTop": "Voltar ao topo"
+    "toTop": "Voltar ao topo",
+    "glossary": "Glossário"
   },
   "footer": {
     "about": "Calculadora independente dos custos de importação de carros de fora da UE. Não vendemos nem importamos carros – calculamos quanto custam realmente.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Como calculamos o custo de importar um carro – fontes e método | Carglo",
       "description": "De onde vêm as nossas taxas, como estimamos o transporte e o que o resultado não pode saber. A metodologia completa da calculadora Carglo."
+    },
+    "glossary": {
+      "title": "Glossário de importação: CIF, TARIC, salvage title, IVA de importação | Carglo",
+      "description": "CIF, valor aduaneiro, códigos TARIC, clean e salvage title, IVA de importação, regime 4200, Ro-Ro e COC explicados de forma simples."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Independência",
       "text": "A Carglo não vende, compra nem envia carros e não recebe comissões de importadores pelo resultado. Ganhamos com o relatório PDF pago. Encontrou um erro ou uma taxa desatualizada? Escreva para {{email}} – corrigimos."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Glossário",
+    "title": "Glossário da importação automóvel",
+    "lead": "Os termos que encontra ao comprar um carro em leilão nos EUA, Canadá, Japão ou Reino Unido e importá-lo para a UE – explicados numa ou duas frases.",
+    "cta": "Calcular o custo total",
+    "terms": {
+      "cif": {
+        "name": "CIF / valor aduaneiro",
+        "text": "Cost, Insurance and Freight: preço do carro com taxas do leilão, transporte, frete e seguro até à fronteira da UE. É sobre este valor que se calculam os direitos."
+      },
+      "taric": {
+        "name": "TARIC e código SH",
+        "text": "A pauta aduaneira da UE. O código define a taxa: 8703 ligeiros 10 %, 8704 pick-ups e comerciais 10–22 %, 8711 motos 6–8 %, 9705 veículos de coleção 0 %."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "Título de propriedade dos EUA ou do Canadá sem registo de perda total. O carro matricula-se sem inspeções adicionais ao historial de acidentes."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Emitido quando a seguradora declarou perda total. Após reparação e inspeção pode ser importado e matriculado na UE; com «non-repairable», normalmente não."
+      },
+      "buyerFee": {
+        "name": "Taxas do leilão",
+        "text": "O que a Copart, IAAI ou USS somam ao preço de arrematação: taxa do comprador por escalões, licitação online, gate e environmental fee. Fazem parte do valor aduaneiro."
+      },
+      "importVat": {
+        "name": "IVA de importação",
+        "text": "IVA do país onde o carro é desalfandegado, sobre o valor aduaneiro mais direitos. Num usado é definitivo, mesmo que o carro seja matriculado noutro país da UE."
+      },
+      "nationalTax": {
+        "name": "Imposto de matrícula",
+        "text": "Imposto único do país de matrícula: ISV em Portugal, BPM nos Países Baixos, malus em França, imposto especial na Polónia. Alemanha e Suécia não o têm."
+      },
+      "proc4200": {
+        "name": "Regime aduaneiro 4200",
+        "text": "Desalfandegamento num país da UE com isenção de IVA e autoliquidação no país de destino. Só para empresas registadas para IVA."
+      },
+      "customsRate": {
+        "name": "Câmbio aduaneiro",
+        "text": "A taxa que a alfândega usa durante todo o mês para converter a fatura, fixada com os câmbios da penúltima quarta-feira do mês anterior, e não a do dia."
+      },
+      "roro": {
+        "name": "Ro-Ro ou contentor",
+        "text": "Ro-Ro: o carro entra no navio pelos próprios meios – mais barato, mas tem de andar. Contentor: muitas vezes partilhado com 2–4 carros – mais seguro e também para carros que não andam."
+      },
+      "coc": {
+        "name": "COC e homologação individual",
+        "text": "O certificado de conformidade prova a homologação UE. Os carros dos EUA não o têm e precisam de homologação individual com alteração das luzes."
+      },
+      "collector": {
+        "name": "Veículo de coleção (NC 9705)",
+        "text": "Mais de 30 anos, original e já não produzido. Direitos 0 % e IVA reduzido (6 % em Portugal), se a alfândega aceitar a classificação."
+      }
     }
   }
 }

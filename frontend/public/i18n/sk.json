@@ -201,7 +201,8 @@
     "terms": "Súhlasím s obchodnými podmienkami a výslovne žiadam o dodanie reportu pred uplynutím 14-dňovej lehoty na odstúpenie od zmluvy. Beriem na vedomie, že dodaním reportu strácam právo na odstúpenie od zmluvy.",
     "title": "Kompletný report dovozu",
     "termsLink": "Obchodné podmienky",
-    "guarantee": "Záruka správnosti: nahláste chybu vo výpočte do 14 dní (napr. zastaranú sadzbu alebo chýbajúci povinný poplatok) a report opravíme alebo vrátime celú sumu."
+    "guarantee": "Záruka správnosti: nahláste chybu vo výpočte do 14 dní (napr. zastaranú sadzbu alebo chýbajúci povinný poplatok) a report opravíme alebo vrátime celú sumu.",
+    "promoHint": "Máte zľavový kód? Zadáte ho na platobnej stránke."
   },
   "report": {
     "amount": "Suma",
@@ -300,7 +301,16 @@
     "span": "zvyčajne {{min}} – {{max}}",
     "estimateNote": "Doprava a dovoz sú odhad podľa bežných sadzieb, zaokrúhlený na 100. Presné sumy po položkách nájdete v úplnom reporte.",
     "minimalNote": "Hrubý odhad pre túto trasu. Koľko presne stojí každá položka – doprava, clo, DPH, registrácia a riziká – ukáže report.",
-    "guarantee": "Záruka správnosti: chyba v reporte = oprava alebo vrátenie peňazí"
+    "guarantee": "Záruka správnosti: chyba v reporte = oprava alebo vrátenie peňazí",
+    "email": {
+      "title": "Poslať mi tento odhad e-mailom",
+      "lead": "Dostanete zhrnutie a odkaz, ktorý otvorí kalkulačku s rovnakým autom – praktické pri porovnávaní viacerých áut.",
+      "submit": "Odoslať",
+      "newsletter": "Chcem dostávať aj newsletter (raz mesačne, potvrdenie odkazom).",
+      "sent": "Odoslané – skontrolujte schránku (aj spam).",
+      "error": "Odoslanie zlyhalo. Skúste to o chvíľu znova.",
+      "limit": "Tento odhad už bol odoslaný niekoľkokrát. Prepočítajte ho a pošlite nový."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Vlastný kontajner",
@@ -464,7 +474,8 @@
     "blog": "Blog",
     "taxes": "Kalkulačka cla a daní",
     "method": "Ako počítame",
-    "toTop": "Nahor"
+    "toTop": "Nahor",
+    "glossary": "Slovník"
   },
   "footer": {
     "about": "Nezávislá kalkulačka nákladov na dovoz áut z krajín mimo EÚ. Autá nepredávame ani nedovážame – počítame, koľko naozaj stoja.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Ako počítame náklady na dovoz auta – zdroje a metóda | Carglo",
       "description": "Odkiaľ berieme sadzby, ako odhadujeme dopravu a čo výsledok nemôže vedieť. Kompletná metodika kalkulačky Carglo."
+    },
+    "glossary": {
+      "title": "Slovník dovozu áut: CIF, TARIC, salvage title, DPH z dovozu | Carglo",
+      "description": "CIF, colná hodnota, kódy TARIC, clean a salvage title, DPH z dovozu, režim 4200, Ro-Ro a COC jednoducho vysvetlené."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Nezávislosť",
       "text": "Carglo autá nepredáva, nekupuje ani nedováža a za výsledok neberie od dovozcov provízie. Zarábame na platenom PDF reporte. Našli ste chybu alebo zastaranú sadzbu? Napíšte na {{email}} – opravíme ju."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Slovník",
+    "title": "Slovník dovozu áut",
+    "lead": "Pojmy, s ktorými sa stretnete pri kúpe auta na aukcii v USA, Kanade, Japonsku alebo Británii a jeho dovoze do EÚ – vysvetlené jednou dvoma vetami.",
+    "cta": "Vypočítať celkové náklady",
+    "terms": {
+      "cif": {
+        "name": "CIF / colná hodnota",
+        "text": "Cost, Insurance and Freight: cena auta s aukčnými poplatkami, dopravou, námorným prepravným a poistením k hranici EÚ. Z nej sa počíta clo."
+      },
+      "taric": {
+        "name": "TARIC a kód HS",
+        "text": "Colný sadzobník EÚ. Kód určuje sadzbu: 8703 osobné autá 10 %, 8704 pick-upy a dodávky 10–22 %, 8711 motocykle 6–8 %, 9705 zberateľské vozidlá 0 %."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "Americký alebo kanadský doklad o vlastníctve bez záznamu o totálnej škode. Auto sa registruje bez ďalšieho skúmania histórie nehôd."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Vydáva sa, keď poisťovňa uznala totálnu škodu. Po oprave a technickej kontrole možno auto doviezť a registrovať v EÚ; s „non-repairable“ zvyčajne nie."
+      },
+      "buyerFee": {
+        "name": "Aukčné poplatky",
+        "text": "Čo Copart, IAAI alebo USS pripočítajú k vydraženej cene: stupňovitý poplatok kupujúceho, online príhoz, gate a environmentálny poplatok. Patria do colnej hodnoty."
+      },
+      "importVat": {
+        "name": "DPH z dovozu",
+        "text": "DPH krajiny, kde sa auto preclieva, z colnej hodnoty a cla. Pri jazdenom aute je konečná, aj keď sa auto registruje v inej krajine EÚ."
+      },
+      "nationalTax": {
+        "name": "Registračný poplatok",
+        "text": "Jednorazová daň krajiny registrácie: registračný poplatok na Slovensku, BPM v Holandsku, malus vo Francúzsku, spotrebná daň v Poľsku. Nemecko a Švédsko ju nemajú."
+      },
+      "proc4200": {
+        "name": "Colný režim 4200",
+        "text": "Preclenie v jednej krajine EÚ s oslobodením od DPH a prenesením daňovej povinnosti do cieľovej krajiny. Len pre platiteľov DPH."
+      },
+      "customsRate": {
+        "name": "Colný kurz",
+        "text": "Kurz, ktorým colný úrad celý mesiac prepočítava faktúru – určený podľa kurzov z predposlednej stredy predchádzajúceho mesiaca, nie dnešný kurz."
+      },
+      "roro": {
+        "name": "Ro-Ro alebo kontajner",
+        "text": "Ro-Ro: auto vojde na loď samo – lacnejšie, ale musí jazdiť. Kontajner: často zdieľaný s 2–4 autami – bezpečnejšie a aj pre nepojazdné autá."
+      },
+      "coc": {
+        "name": "COC a jednotlivé schválenie",
+        "text": "Certifikát zhody (COC) dokladá typové schválenie EÚ. Autá z USA ho nemajú, preto potrebujú jednotlivé schválenie a úpravu svetiel."
+      },
+      "collector": {
+        "name": "Zberateľské vozidlo (KN 9705)",
+        "text": "Staršie ako 30 rokov, v pôvodnom stave a už nevyrábané. Clo 0 % – ak colný úrad zatriedenie uzná."
+      }
     }
   }
 }

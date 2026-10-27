@@ -201,7 +201,8 @@
     "terms": "Sprejemam splošne pogoje in izrecno zahtevam dobavo poročila pred iztekom 14-dnevnega roka za odstop od pogodbe. Potrjujem, da z dobavo poročila izgubim pravico do odstopa od pogodbe.",
     "title": "Celotno poročilo o uvozu",
     "termsLink": "Splošni pogoji",
-    "guarantee": "Garancija pravilnosti: napako v izračunu prijavite v 14 dneh (npr. zastarelo stopnjo ali manjkajočo obvezno pristojbino) in poročilo popravimo ali vrnemo celotno kupnino."
+    "guarantee": "Garancija pravilnosti: napako v izračunu prijavite v 14 dneh (npr. zastarelo stopnjo ali manjkajočo obvezno pristojbino) in poročilo popravimo ali vrnemo celotno kupnino.",
+    "promoHint": "Imate kodo za popust? Vnesete jo na strani za plačilo."
   },
   "report": {
     "amount": "Znesek",
@@ -300,7 +301,16 @@
     "span": "običajno {{min}} – {{max}}",
     "estimateNote": "Prevoz in dostava sta ocena po običajnih cenah, zaokrožena na 100. Natančni zneski po postavkah so v celotnem poročilu.",
     "minimalNote": "Groba ocena za to pot. Koliko točno stane vsaka postavka – prevoz, carina, DDV, registracija in tveganja – pokaže poročilo.",
-    "guarantee": "Garancija pravilnosti: napaka v poročilu = popravek ali vračilo denarja"
+    "guarantee": "Garancija pravilnosti: napaka v poročilu = popravek ali vračilo denarja",
+    "email": {
+      "title": "Pošlji mi to oceno po e-pošti",
+      "lead": "Prejeli boste povzetek in povezavo, ki odpre kalkulator z istim avtom – priročno pri primerjavi več avtov.",
+      "submit": "Pošlji",
+      "newsletter": "Želim prejemati tudi novice (enkrat mesečno, potrditev s povezavo).",
+      "sent": "Poslano – preverite nabiralnik (tudi vsiljeno pošto).",
+      "error": "Pošiljanje ni uspelo. Poskusite znova čez trenutek.",
+      "limit": "Ta ocena je bila že večkrat poslana. Preračunajte, da pošljete novo."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Lasten zabojnik",
@@ -464,7 +474,8 @@
     "blog": "Blog",
     "taxes": "Kalkulator carine in davkov",
     "method": "Kako računamo",
-    "toTop": "Na vrh"
+    "toTop": "Na vrh",
+    "glossary": "Slovar"
   },
   "footer": {
     "about": "Neodvisni kalkulator stroškov uvoza avtomobilov izven EU. Avtomobilov ne prodajamo in ne uvažamo – izračunamo, koliko v resnici stanejo.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Kako računamo stroške uvoza avtomobila – viri in metoda | Carglo",
       "description": "Od kod so naše stopnje, kako ocenjujemo prevoz in česa rezultat ne more vedeti. Celotna metodologija kalkulatorja Carglo."
+    },
+    "glossary": {
+      "title": "Slovar uvoza avtomobilov: CIF, TARIC, salvage title, uvozni DDV | Carglo",
+      "description": "CIF, carinska vrednost, oznake TARIC, clean in salvage title, uvozni DDV, postopek 4200, Ro-Ro in CoC preprosto razloženi."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Neodvisnost",
       "text": "Carglo avtomobilov ne prodaja, kupuje ali uvaža in od uvoznikov ne prejema provizij za rezultat. Zaslužimo s plačljivim poročilom PDF. Ste našli napako ali zastarelo stopnjo? Pišite na {{email}} – popravili bomo."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Slovar",
+    "title": "Slovar uvoza avtomobilov",
+    "lead": "Pojmi, s katerimi se srečate pri nakupu avta na dražbi v ZDA, Kanadi, na Japonskem ali v Združenem kraljestvu in pri uvozu v EU – razloženi v enem ali dveh stavkih.",
+    "cta": "Izračunaj skupne stroške",
+    "terms": {
+      "cif": {
+        "name": "CIF / carinska vrednost",
+        "text": "Cost, Insurance and Freight: cena avta s provizijami dražbe, prevozom, vozarino in zavarovanjem do meje EU. Od nje se obračuna carina."
+      },
+      "taric": {
+        "name": "TARIC in oznaka HS",
+        "text": "Carinska tarifa EU. Oznaka določa stopnjo: 8703 osebni avtomobili 10 %, 8704 pick-upi in kombiji 10–22 %, 8711 motorna kolesa 6–8 %, 9705 zbirateljska vozila 0 %."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "Ameriška ali kanadska listina o lastništvu brez zaznamka o totalni škodi. Avto se registrira brez dodatnih pregledov zgodovine nesreč."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Izda se, ko zavarovalnica razglasi totalno škodo. Po popravilu in tehničnem pregledu se ga lahko uvozi in registrira v EU; z »non-repairable« običajno ne."
+      },
+      "buyerFee": {
+        "name": "Dražbene provizije",
+        "text": "Kar Copart, IAAI ali USS dodajo dosegnjeni ceni: stopenjska provizija kupca, spletna ponudba, gate in okoljska taksa. Spadajo v carinsko vrednost."
+      },
+      "importVat": {
+        "name": "Uvozni DDV",
+        "text": "DDV države, v kateri se avto ocarini, od carinske vrednosti skupaj s carino. Za rabljeni avto je dokončen, tudi če ga registrirate v drugi državi EU."
+      },
+      "nationalTax": {
+        "name": "Davek na motorna vozila",
+        "text": "Enkratni davek države registracije: DMV v Sloveniji, BPM na Nizozemskem, malus v Franciji, trošarina na Poljskem. Nemčija in Švedska ga nimata."
+      },
+      "proc4200": {
+        "name": "Carinski postopek 4200",
+        "text": "Carinjenje v eni državi EU z oprostitvijo DDV in obrnjeno davčno obveznostjo v namembni državi. Samo za zavezance za DDV."
+      },
+      "customsRate": {
+        "name": "Carinski tečaj",
+        "text": "Tečaj, s katerim carina ves mesec preračunava račun – po tečajih predzadnje srede prejšnjega meseca, ne današnji."
+      },
+      "roro": {
+        "name": "Ro-Ro ali zabojnik",
+        "text": "Ro-Ro: avto zapelje na ladjo sam – ceneje, a mora voziti. Zabojnik: pogosto deljen z 2–4 avti – varneje in tudi za nevozna vozila."
+      },
+      "coc": {
+        "name": "CoC in posamična odobritev",
+        "text": "Potrdilo o skladnosti (CoC) dokazuje homologacijo EU. Ameriški avtomobili ga nimajo, zato potrebujejo posamično odobritev in predelavo luči."
+      },
+      "collector": {
+        "name": "Zbirateljsko vozilo (KN 9705)",
+        "text": "Starejše od 30 let, izvirno in ne več v proizvodnji. Carina 0 % – če carina sprejme uvrstitev."
+      }
     }
   }
 }

@@ -88,4 +88,40 @@ class PaymentConfirmationServiceTest {
         service.confirm(order.getId(), "cs_test_1");
         verify(sessions, never()).retrieve(any());
     }
+
+    private Session discounted(String paymentStatus, long paid, long discount) {
+        Session s = session(paymentStatus, paid, "pln");
+        Session.TotalDetails totals = new Session.TotalDetails();
+        totals.setAmountDiscount(discount);
+        s.setTotalDetails(totals);
+        Session.Discount d = new Session.Discount();
+        d.setPromotionCode("promo_FORUM20");
+        s.setDiscounts(java.util.List.of(d));
+        return s;
+    }
+
+    @Test
+    void promotionCodeDiscountStillUnlocksAndIsRecorded() throws Exception {
+        when(sessions.retrieve("cs_test_1")).thenReturn(discounted("paid", 1520, 380));
+
+        service.confirm(order.getId(), "cs_test_1");
+
+        assertThat(order.getStatus()).isEqualTo(ReportOrder.Status.PAID);
+        assertThat(order.getDiscountMinor()).isEqualTo(380);
+        assertThat(order.paidMinor()).isEqualTo(1520);
+        assertThat(order.getPromotionCode()).isEqualTo("promo_FORUM20");
+        assertThat(order.refundableMinor()).isEqualTo(1520);
+    }
+
+    @Test
+    void freeOrderFromAFullDiscountUnlocksButAMismatchDoesNot() throws Exception {
+        when(sessions.retrieve("cs_test_1")).thenReturn(discounted("paid", 1000, 380));
+        service.confirm(order.getId(), "cs_test_1");
+        assertThat(order.getStatus()).isEqualTo(ReportOrder.Status.PENDING);
+
+        when(sessions.retrieve("cs_test_1")).thenReturn(discounted("no_payment_required", 0, 1900));
+        service.confirm(order.getId(), "cs_test_1");
+        assertThat(order.getStatus()).isEqualTo(ReportOrder.Status.PAID);
+        assertThat(order.paidMinor()).isZero();
+    }
 }

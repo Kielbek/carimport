@@ -201,7 +201,8 @@
     "terms": "I accept the terms and ask for the report to be delivered before the 14-day withdrawal period ends. I acknowledge that I lose the right of withdrawal once it is delivered.",
     "title": "Full import report",
     "termsLink": "Terms",
-    "guarantee": "Accuracy guarantee: report a calculation error within 14 days (e.g. an outdated rate or a missing mandatory fee) and we fix the report or refund the full price."
+    "guarantee": "Accuracy guarantee: report a calculation error within 14 days (e.g. an outdated rate or a missing mandatory fee) and we fix the report or refund the full price.",
+    "promoHint": "Have a discount code? Enter it on the payment page."
   },
   "report": {
     "amount": "Amount",
@@ -300,7 +301,16 @@
     "span": "usually {{min}} – {{max}}",
     "estimateNote": "Transport and delivery are estimates from typical rates, rounded to 100. The exact amounts, item by item, are in the full report.",
     "minimalNote": "A rough estimate for this route. What each item costs exactly – transport, duty, VAT, registration and risks – is in the report.",
-    "guarantee": "Accuracy guarantee: a mistake in the report = a fix or your money back"
+    "guarantee": "Accuracy guarantee: a mistake in the report = a fix or your money back",
+    "email": {
+      "title": "Send this estimate to my e-mail",
+      "lead": "You get a summary and a link that reopens the calculator with the same car – handy when comparing several lots.",
+      "submit": "Send",
+      "newsletter": "Also send me the newsletter (once a month, confirmation link by e-mail).",
+      "sent": "Sent – check your inbox (and spam).",
+      "error": "Could not send. Please try again in a moment.",
+      "limit": "This estimate has already been sent several times. Recalculate to send a new one."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Exclusive container",
@@ -464,7 +474,8 @@
     "blog": "Blog",
     "taxes": "Customs & tax calculator",
     "method": "How we calculate",
-    "toTop": "Back to top"
+    "toTop": "Back to top",
+    "glossary": "Glossary"
   },
   "footer": {
     "about": "Independent calculator of import costs for cars from outside the EU. We neither sell nor import cars – we work out what they really cost.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "How we calculate the car import cost – sources and method | Carglo",
       "description": "Where our rates come from, how we estimate transport and what the result can and cannot tell you. The full methodology of the Carglo calculator."
+    },
+    "glossary": {
+      "title": "Car import glossary: CIF, TARIC, salvage title, import VAT | Carglo",
+      "description": "CIF, customs value, TARIC codes, clean and salvage titles, import VAT, procedure 4200, Ro-Ro and CoC explained simply for importing a car into the EU."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Independence",
       "text": "Carglo does not sell, buy or ship cars and takes no commission from importers for the result. We earn from the paid PDF report. Found a mistake or an outdated rate? Write to {{email}} – we correct it."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Glossary",
+    "title": "Car import glossary",
+    "lead": "The terms you meet when buying a car at a US, Canadian, Japanese or UK auction and bringing it into the EU – explained in a sentence or two.",
+    "cta": "Calculate the full cost",
+    "terms": {
+      "cif": {
+        "name": "CIF / customs value",
+        "text": "Cost, Insurance and Freight: the price of the car plus auction fees, transport, freight and insurance up to the EU border. It is the customs value on which duty is charged."
+      },
+      "taric": {
+        "name": "TARIC and HS code",
+        "text": "The EU customs tariff. The vehicle's code sets the duty: 8703 passenger cars 10%, 8704 pickups and vans 10–22%, 8711 motorcycles 6–8%, 9705 collector's vehicles 0%."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "A US or Canadian ownership document with no record of a total loss. The car can be registered without extra inspections of its accident history."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "A title given after the insurer declared the car a total loss. It can be imported and registered in the EU after repair and a technical inspection; non-repairable titles usually cannot."
+      },
+      "buyerFee": {
+        "name": "Auction buyer's fee",
+        "text": "What Copart, IAAI or USS add to the hammer price: a sliding buyer fee, internet bid fee, gate and environmental fees. They are part of the customs value."
+      },
+      "importVat": {
+        "name": "Import VAT",
+        "text": "VAT charged by the country where the car is cleared through customs, on the customs value plus duty. For a used car the VAT paid there is final, even if the car is registered in another EU country."
+      },
+      "nationalTax": {
+        "name": "Registration tax / excise",
+        "text": "A one-off tax of the country of registration: excise in Poland, BPM in the Netherlands, the malus in France, NoVA in Austria. Germany, Czechia and Sweden have none."
+      },
+      "proc4200": {
+        "name": "Customs procedure 4200",
+        "text": "Clearance in one EU country with VAT exempt there and paid in the destination country by reverse charge. Only for VAT-registered companies."
+      },
+      "customsRate": {
+        "name": "Customs exchange rate",
+        "text": "The rate customs uses for the whole month to convert the invoice into euros or złoty – set from the rates of the penultimate Wednesday of the previous month, not today's rate."
+      },
+      "roro": {
+        "name": "Ro-Ro or container",
+        "text": "Ro-Ro: the car is driven onto the ship – cheaper, but it must run. Container: the car is loaded into a container, often shared with 2–4 others – safer and also for non-runners."
+      },
+      "coc": {
+        "name": "CoC and individual approval",
+        "text": "The Certificate of Conformity proves the car meets EU type approval. US cars have none, so they need an individual approval or a technical inspection with lighting and speedometer changes."
+      },
+      "collector": {
+        "name": "Collector's vehicle (CN 9705)",
+        "text": "A car over 30 years old, in original condition and no longer produced. Duty is 0% and VAT is reduced in many countries – only if customs accept the classification."
+      }
     }
   }
 }

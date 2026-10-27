@@ -5,6 +5,7 @@ import { REPORT_PRICE_MINOR, isDisplayCurrency } from '../currency/currencies';
 import { LANGUAGE_BY_CODE, Lang, SUPPORTED_LANGS } from '../i18n/language.service';
 import { Page, pathFor } from '../routing/paths';
 import { SITE } from '../site.config';
+import { GLOSSARY_TERMS } from '../../features/glossary/glossary-terms';
 
 export const FAQ_COUNT = 9;
 
@@ -183,6 +184,21 @@ export class SeoService {
           { '@type': 'ListItem', position: 1, name: SITE.name, item: SITE.url + pathFor('home', lang) },
           { '@type': 'ListItem', position: 2, name, item: url },
         ],
+      });
+    }
+    if (page === 'glossary') {
+      graph.push({
+        '@type': 'DefinedTermSet',
+        '@id': `${url}#terms`,
+        name,
+        inLanguage: lang,
+        hasDefinedTerm: GLOSSARY_TERMS.map((id) => ({
+          '@type': 'DefinedTerm',
+          '@id': `${url}#${id}`,
+          name: t(`glossary.terms.${id}.name`),
+          description: t(`glossary.terms.${id}.text`),
+          inDefinedTermSet: `${url}#terms`,
+        })),
       });
     }
     graph.push({

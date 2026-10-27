@@ -5,6 +5,7 @@ import { reportPrice } from '../../../core/currency/currencies';
 import { CountryNamePipe } from '../../../core/format/country-name.pipe';
 import { AnalyticsService } from '../../../core/analytics/analytics.service';
 import { LanguageService } from '../../../core/i18n/language.service';
+import { EstimateEmail } from '../estimate-email';
 import { Icon } from '../../../shared/icon/icon';
 import { CalculatorStore } from '../calculator.store';
 import { DEPARTURE_PORTS } from '../calculator.options';
@@ -18,7 +19,7 @@ import { SITE } from '../../../core/site.config';
  */
 @Component({
   selector: 'app-step-result',
-  imports: [TranslatePipe, Icon, CountryNamePipe],
+  imports: [TranslatePipe, Icon, CountryNamePipe, EstimateEmail],
   template: `
     @if (store.calculating()) {
       <div class="py-20 text-center">
@@ -86,6 +87,9 @@ import { SITE } from '../../../core/site.config';
         </div>
       </section>
 
+      @if (r.quoteId) {
+        <app-estimate-email [quoteId]="r.quoteId" />
+      }
 
       <!-- locked: everything else, by name only -->
       <section class="mt-10">

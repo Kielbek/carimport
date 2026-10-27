@@ -14,6 +14,7 @@ export type AnalyticsEvent =
   | 'newsletter_signup'
   | 'newsletter_popup_shown'
   | 'newsletter_popup_dismissed'
+  | 'estimate_emailed'
   | 'checkout_started'
   | 'purchase'
   | 'partner_lead_sent';

@@ -71,6 +71,8 @@ public class CheckoutService {
                 .setMode(SessionCreateParams.Mode.PAYMENT)
                 .addAllPaymentMethodType(paymentMethods(currency))
                 .setCustomerEmail(email)
+                // discount codes are created in the Stripe dashboard (Products > Coupons > Promotion codes)
+                .setAllowPromotionCodes(true)
                 .setClientReferenceId(order.getId().toString())
                 .putMetadata("orderId", order.getId().toString())
                 .putMetadata("quoteId", quote.getId().toString())

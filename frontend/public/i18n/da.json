@@ -201,7 +201,8 @@
     "terms": "Jeg accepterer handelsbetingelserne og anmoder udtrykkeligt om, at rapporten leveres, inden fortrydelsesfristen på 14 dage udløber. Jeg anerkender, at jeg mister min fortrydelsesret, når rapporten er leveret.",
     "title": "Fuld importrapport",
     "termsLink": "Handelsbetingelser",
-    "guarantee": "Korrekthedsgaranti: meld en regnefejl inden for 14 dage (fx en forældet sats eller et manglende obligatorisk gebyr), så retter vi rapporten eller refunderer hele prisen."
+    "guarantee": "Korrekthedsgaranti: meld en regnefejl inden for 14 dage (fx en forældet sats eller et manglende obligatorisk gebyr), så retter vi rapporten eller refunderer hele prisen.",
+    "promoHint": "Har du en rabatkode? Du indtaster den på betalingssiden."
   },
   "report": {
     "amount": "Beløb",
@@ -300,7 +301,16 @@
     "span": "typisk {{min}} – {{max}}",
     "estimateNote": "Transport og levering er skøn ud fra typiske takster, afrundet til 100. De præcise beløb, post for post, står i den fulde rapport.",
     "minimalNote": "Et groft skøn for denne rute. Hvad hver post præcist koster – transport, told, moms, registrering og risici – står i rapporten.",
-    "guarantee": "Korrekthedsgaranti: fejl i rapporten = rettelse eller pengene tilbage"
+    "guarantee": "Korrekthedsgaranti: fejl i rapporten = rettelse eller pengene tilbage",
+    "email": {
+      "title": "Send dette overslag til min e-mail",
+      "lead": "Du får et resumé og et link, der åbner beregneren med samme bil – praktisk, når du sammenligner flere biler.",
+      "submit": "Send",
+      "newsletter": "Send mig også nyhedsbrevet (én gang om måneden, bekræftelse via link).",
+      "sent": "Sendt – tjek din indbakke (og spam).",
+      "error": "Kunne ikke sende. Prøv igen om lidt.",
+      "limit": "Dette overslag er allerede sendt flere gange. Beregn igen for at sende et nyt."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Egen container",
@@ -464,7 +474,8 @@
     "blog": "Blog",
     "taxes": "Told- og afgiftsberegner",
     "method": "Sådan beregner vi",
-    "toTop": "Til toppen"
+    "toTop": "Til toppen",
+    "glossary": "Ordliste"
   },
   "footer": {
     "about": "Uafhængig beregner af importomkostninger for biler fra lande uden for EU. Vi hverken sælger eller importerer biler – vi regner ud, hvad de reelt koster.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Sådan beregner vi prisen på bilimport – kilder og metode | Carglo",
       "description": "Hvor vores satser kommer fra, hvordan vi anslår transporten, og hvad resultatet ikke kan vide. Den fulde metode bag Carglo-beregneren."
+    },
+    "glossary": {
+      "title": "Ordliste for bilimport: CIF, TARIC, salvage title, importmoms | Carglo",
+      "description": "CIF, toldværdi, TARIC-koder, clean og salvage title, importmoms, procedure 4200, Ro-Ro og CoC forklaret enkelt."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Uafhængighed",
       "text": "Carglo sælger, køber og importerer ikke biler og tager ingen provision fra importører for resultatet. Vi tjener på den betalte PDF-rapport. Har du fundet en fejl eller en forældet sats? Skriv til {{email}} – så retter vi den."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Ordliste",
+    "title": "Ordliste for bilimport",
+    "lead": "De begreber, du møder, når du køber en bil på auktion i USA, Canada, Japan eller Storbritannien og importerer den til EU – forklaret i en eller to sætninger.",
+    "cta": "Beregn den samlede pris",
+    "terms": {
+      "cif": {
+        "name": "CIF / toldværdi",
+        "text": "Cost, Insurance and Freight: bilens pris med auktionsgebyrer, transport, fragt og forsikring til EU's grænse. Tolden beregnes af denne værdi."
+      },
+      "taric": {
+        "name": "TARIC og HS-kode",
+        "text": "EU's toldtarif. Koden afgør tolden: 8703 personbiler 10 %, 8704 pickupper og varebiler 10–22 %, 8711 motorcykler 6–8 %, 9705 samlerkøretøjer 0 %."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "Amerikansk eller canadisk ejerdokument uden notat om totalskade. Bilen kan registreres uden ekstra undersøgelse af skadeshistorikken."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Udstedes, når forsikringen har erklæret bilen totalskadet. Efter reparation og syn kan den importeres og registreres i EU; med „non-repairable“ normalt ikke."
+      },
+      "buyerFee": {
+        "name": "Auktionsgebyrer",
+        "text": "Det, Copart, IAAI eller USS lægger oven i hammerslaget: købergebyr efter trin, onlinebudgebyr, gate- og miljøgebyr. De indgår i toldværdien."
+      },
+      "importVat": {
+        "name": "Importmoms",
+        "text": "Moms i det land, hvor bilen fortoldes, af toldværdi plus told. For en brugt bil er den endelig, også hvis bilen registreres i et andet EU-land."
+      },
+      "nationalTax": {
+        "name": "Registreringsafgift",
+        "text": "Engangsafgift i registreringslandet: registreringsafgift i Danmark, BPM i Holland, malus i Frankrig, punktafgift i Polen. Tyskland og Sverige har ingen."
+      },
+      "proc4200": {
+        "name": "Toldprocedure 4200",
+        "text": "Fortoldning i ét EU-land med momsfritagelse dér og omvendt betalingspligt i bestemmelseslandet. Kun for momsregistrerede virksomheder."
+      },
+      "customsRate": {
+        "name": "Toldkurs",
+        "text": "Den kurs, tolden bruger hele måneden til at omregne fakturaen – fastsat ud fra kurserne næstsidste onsdag i forrige måned, ikke dagens kurs."
+      },
+      "roro": {
+        "name": "Ro-Ro eller container",
+        "text": "Ro-Ro: bilen kører selv ombord – billigere, men den skal kunne køre. Container: ofte delt med 2–4 biler – sikrere og også for biler, der ikke kører."
+      },
+      "coc": {
+        "name": "CoC og enkeltgodkendelse",
+        "text": "Overensstemmelsesattesten (CoC) dokumenterer EU-typegodkendelse. Amerikanske biler har ingen og skal enkeltgodkendes med ændring af lys."
+      },
+      "collector": {
+        "name": "Samlerkøretøj (KN 9705)",
+        "text": "Over 30 år, original og ikke længere produceret. 0 % told – hvis tolden accepterer tariferingen."
+      }
     }
   }
 }

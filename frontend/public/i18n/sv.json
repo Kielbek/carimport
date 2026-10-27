@@ -201,7 +201,8 @@
     "terms": "Jag godkänner villkoren och begär uttryckligen att rapporten levereras innan ångerfristen på 14 dagar har löpt ut. Jag är medveten om att jag förlorar min ångerrätt när rapporten har levererats.",
     "title": "Fullständig importrapport",
     "termsLink": "Villkor",
-    "guarantee": "Korrekthetsgaranti: anmäl ett räknefel inom 14 dagar (t.ex. en inaktuell sats eller en saknad obligatorisk avgift), så rättar vi rapporten eller återbetalar hela priset."
+    "guarantee": "Korrekthetsgaranti: anmäl ett räknefel inom 14 dagar (t.ex. en inaktuell sats eller en saknad obligatorisk avgift), så rättar vi rapporten eller återbetalar hela priset.",
+    "promoHint": "Har du en rabattkod? Du anger den på betalningssidan."
   },
   "report": {
     "amount": "Belopp",
@@ -300,7 +301,16 @@
     "span": "oftast {{min}} – {{max}}",
     "estimateNote": "Transport och leverans är uppskattningar utifrån vanliga priser, avrundade till 100. De exakta beloppen, post för post, finns i den fullständiga rapporten.",
     "minimalNote": "En grov uppskattning för den här rutten. Vad varje post kostar exakt – transport, tull, moms, registrering och risker – visar rapporten.",
-    "guarantee": "Korrekthetsgaranti: fel i rapporten = rättelse eller pengarna tillbaka"
+    "guarantee": "Korrekthetsgaranti: fel i rapporten = rättelse eller pengarna tillbaka",
+    "email": {
+      "title": "Skicka beräkningen till min e-post",
+      "lead": "Du får en sammanfattning och en länk som öppnar kalkylatorn med samma bil – smidigt när du jämför flera bilar.",
+      "submit": "Skicka",
+      "newsletter": "Skicka även nyhetsbrevet (en gång i månaden, bekräftelse via länk).",
+      "sent": "Skickat – kolla inkorgen (och skräpposten).",
+      "error": "Det gick inte att skicka. Försök igen om en stund.",
+      "limit": "Beräkningen har redan skickats flera gånger. Räkna om för att skicka en ny."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Egen container",
@@ -464,7 +474,8 @@
     "blog": "Blogg",
     "taxes": "Tull- och skattekalkylator",
     "method": "Så räknar vi",
-    "toTop": "Till toppen"
+    "toTop": "Till toppen",
+    "glossary": "Ordlista"
   },
   "footer": {
     "about": "Oberoende kalkylator för importkostnader för bilar från länder utanför EU. Vi varken säljer eller importerar bilar – vi räknar ut vad de verkligen kostar.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Så räknar vi kostnaden för bilimport – källor och metod | Carglo",
       "description": "Var våra satser kommer ifrån, hur vi uppskattar transporten och vad resultatet inte kan veta. Hela metoden bakom Carglos kalkylator."
+    },
+    "glossary": {
+      "title": "Ordlista bilimport: CIF, TARIC, salvage title, importmoms | Carglo",
+      "description": "CIF, tullvärde, TARIC-koder, clean och salvage title, importmoms, förfarande 4200, Ro-Ro och CoC enkelt förklarat."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Oberoende",
       "text": "Carglo säljer, köper och importerar inte bilar och tar ingen provision från importörer för resultatet. Vi tjänar på den betalda PDF-rapporten. Har du hittat ett fel eller en inaktuell sats? Skriv till {{email}} – vi rättar det."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Ordlista",
+    "title": "Ordlista för bilimport",
+    "lead": "Begreppen du möter när du köper en bil på auktion i USA, Kanada, Japan eller Storbritannien och importerar den till EU – förklarade i en eller två meningar.",
+    "cta": "Räkna ut totalkostnaden",
+    "terms": {
+      "cif": {
+        "name": "CIF / tullvärde",
+        "text": "Cost, Insurance and Freight: bilens pris med auktionsavgifter, transport, frakt och försäkring till EU-gränsen. Tullen beräknas på detta värde."
+      },
+      "taric": {
+        "name": "TARIC och HS-nummer",
+        "text": "EU:s tulltaxa. Numret avgör tullen: 8703 personbilar 10 %, 8704 pickuper och skåpbilar 10–22 %, 8711 motorcyklar 6–8 %, 9705 samlarfordon 0 %."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "Amerikanskt eller kanadensiskt ägardokument utan notering om totalskada. Bilen kan registreras utan extra granskning av skadehistoriken."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Utfärdas när försäkringsbolaget förklarat bilen totalskadad. Efter reparation och besiktning kan den importeras och registreras i EU; med ”non-repairable” oftast inte."
+      },
+      "buyerFee": {
+        "name": "Auktionsavgifter",
+        "text": "Det Copart, IAAI eller USS lägger på klubbat pris: trappad köparavgift, onlinebudavgift, gate- och miljöavgift. De ingår i tullvärdet."
+      },
+      "importVat": {
+        "name": "Importmoms",
+        "text": "Moms i landet där bilen förtullas, på tullvärde plus tull. För en begagnad bil är den slutlig, även om bilen registreras i ett annat EU-land."
+      },
+      "nationalTax": {
+        "name": "Registreringsskatt",
+        "text": "Engångsskatt i registreringslandet: BPM i Nederländerna, malus i Frankrike, punktskatt i Polen. Sverige, Tyskland och Tjeckien har ingen."
+      },
+      "proc4200": {
+        "name": "Tullförfarande 4200",
+        "text": "Förtullning i ett EU-land med momsbefrielse där och omvänd skattskyldighet i destinationslandet. Endast för momsregistrerade företag."
+      },
+      "customsRate": {
+        "name": "Tullkurs",
+        "text": "Kursen tullen använder hela månaden för att räkna om fakturan – fastställd från kurserna näst sista onsdagen i föregående månad, inte dagens kurs."
+      },
+      "roro": {
+        "name": "Ro-Ro eller container",
+        "text": "Ro-Ro: bilen körs ombord – billigare, men den måste gå. Container: ofta delad med 2–4 bilar – säkrare och även för bilar som inte går."
+      },
+      "coc": {
+        "name": "CoC och ursprungskontroll",
+        "text": "Intyget om överensstämmelse (CoC) visar EU-typgodkännande. Amerikanska bilar saknar det och kräver registreringsbesiktning med ändrad belysning."
+      },
+      "collector": {
+        "name": "Samlarfordon (KN 9705)",
+        "text": "Över 30 år, originalskick och inte längre tillverkad. 0 % tull och 12 % moms i Sverige – om tullen godtar klassificeringen."
+      }
     }
   }
 }

@@ -201,7 +201,8 @@
     "terms": "Accetto le condizioni generali e chiedo espressamente che il report mi sia fornito prima della scadenza del periodo di recesso di 14 giorni. Prendo atto che, una volta fornito il report, perdo il diritto di recesso.",
     "title": "Report completo sull’importazione",
     "termsLink": "Condizioni generali",
-    "guarantee": "Garanzia di correttezza: segnala un errore di calcolo entro 14 giorni (ad es. un'aliquota non aggiornata o una tassa obbligatoria mancante) e correggiamo il report o rimborsiamo l'intero prezzo."
+    "guarantee": "Garanzia di correttezza: segnala un errore di calcolo entro 14 giorni (ad es. un'aliquota non aggiornata o una tassa obbligatoria mancante) e correggiamo il report o rimborsiamo l'intero prezzo.",
+    "promoHint": "Hai un codice sconto? Lo inserisci nella pagina di pagamento."
   },
   "report": {
     "amount": "Importo",
@@ -300,7 +301,16 @@
     "span": "di solito {{min}} – {{max}}",
     "estimateNote": "Trasporto e consegna sono stime su tariffe tipiche, arrotondate a 100. Gli importi esatti, voce per voce, sono nel report completo.",
     "minimalNote": "Una stima indicativa per questo percorso. Quanto costa esattamente ogni voce – trasporto, dazio, IVA, immatricolazione e rischi – lo mostra il report.",
-    "guarantee": "Garanzia di correttezza: un errore nel report = correzione o rimborso"
+    "guarantee": "Garanzia di correttezza: un errore nel report = correzione o rimborso",
+    "email": {
+      "title": "Inviami questa stima via e-mail",
+      "lead": "Riceverai un riepilogo e un link che riapre il calcolatore con la stessa auto: utile per confrontare più lotti.",
+      "submit": "Invia",
+      "newsletter": "Voglio ricevere anche la newsletter (una volta al mese, conferma via link).",
+      "sent": "Inviata – controlla la posta (anche lo spam).",
+      "error": "Invio non riuscito. Riprova tra poco.",
+      "limit": "Questa stima è già stata inviata più volte. Ricalcola per inviarne una nuova."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Container esclusivo",
@@ -464,7 +474,8 @@
     "blog": "Blog",
     "taxes": "Calcolatore di dazi e tasse",
     "method": "Come calcoliamo",
-    "toTop": "Torna su"
+    "toTop": "Torna su",
+    "glossary": "Glossario"
   },
   "footer": {
     "about": "Calcolatore indipendente dei costi di importazione di auto da Paesi extra UE. Non vendiamo né importiamo auto – calcoliamo quanto costano davvero.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Come calcoliamo il costo di importazione di un'auto – fonti e metodo | Carglo",
       "description": "Da dove vengono le nostre tariffe, come stimiamo il trasporto e cosa il risultato non può sapere. La metodologia completa del calcolatore Carglo."
+    },
+    "glossary": {
+      "title": "Glossario importazione auto: CIF, TARIC, salvage title, IVA all'importazione | Carglo",
+      "description": "CIF, valore in dogana, codici TARIC, clean e salvage title, IVA all'importazione, regime 4200, Ro-Ro e COC spiegati in modo semplice."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Indipendenza",
       "text": "Carglo non vende, compra né spedisce auto e non prende commissioni dagli importatori per il risultato. Guadagniamo con il report PDF a pagamento. Hai trovato un errore o una tariffa non aggiornata? Scrivi a {{email}}: correggiamo."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Glossario",
+    "title": "Glossario dell'importazione auto",
+    "lead": "I termini che incontri comprando un'auto all'asta negli USA, in Canada, Giappone o Regno Unito e importandola nell'UE, spiegati in una o due frasi.",
+    "cta": "Calcola il costo totale",
+    "terms": {
+      "cif": {
+        "name": "CIF / valore in dogana",
+        "text": "Cost, Insurance and Freight: prezzo dell'auto con commissioni d'asta, trasporto, nolo e assicurazione fino al confine UE. Su questo valore si calcola il dazio."
+      },
+      "taric": {
+        "name": "TARIC e codice SA",
+        "text": "La tariffa doganale UE. Il codice fissa il dazio: 8703 autovetture 10%, 8704 pick-up e furgoni 10–22%, 8711 moto 6–8%, 9705 veicoli da collezione 0%."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "Titolo di proprietà USA o canadese senza annotazione di perdita totale. L'auto si immatricola senza ulteriori verifiche sulla storia degli incidenti."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Rilasciato quando l'assicurazione ha dichiarato la perdita totale. Dopo riparazione e collaudo si può importare e immatricolare nell'UE; con «non-repairable» di solito no."
+      },
+      "buyerFee": {
+        "name": "Commissioni d'asta",
+        "text": "Ciò che Copart, IAAI o USS aggiungono al prezzo di aggiudicazione: commissione acquirente a scaglioni, offerta online, gate ed environmental fee. Fanno parte del valore in dogana."
+      },
+      "importVat": {
+        "name": "IVA all'importazione",
+        "text": "IVA del paese in cui l'auto viene sdoganata, su valore in dogana più dazio. Per un'auto usata è definitiva, anche se l'auto viene immatricolata in un altro paese UE."
+      },
+      "nationalTax": {
+        "name": "Imposta di immatricolazione",
+        "text": "Imposta una tantum del paese di immatricolazione: IPT in Italia in base ai kW, BPM nei Paesi Bassi, malus in Francia, accisa in Polonia. Germania e Svezia non ne hanno."
+      },
+      "proc4200": {
+        "name": "Regime doganale 4200",
+        "text": "Sdoganamento in un paese UE con esenzione IVA e inversione contabile nel paese di destinazione. Solo per imprese con partita IVA."
+      },
+      "customsRate": {
+        "name": "Cambio doganale",
+        "text": "Il tasso con cui la dogana converte la fattura per tutto il mese, fissato sui cambi del penultimo mercoledì del mese precedente, non quello del giorno."
+      },
+      "roro": {
+        "name": "Ro-Ro o container",
+        "text": "Ro-Ro: l'auto sale a bordo da sola – costa meno, ma deve funzionare. Container: spesso condiviso con 2–4 auto – più sicuro e anche per auto non marcianti."
+      },
+      "coc": {
+        "name": "COC e omologazione",
+        "text": "Il certificato di conformità attesta l'omologazione UE. Le auto americane non l'hanno e richiedono la nazionalizzazione con collaudo e modifica delle luci."
+      },
+      "collector": {
+        "name": "Veicolo da collezione (NC 9705)",
+        "text": "Oltre 30 anni, originale e non più prodotto. Dazio 0% e IVA ridotta (in Italia 5% dal 2025), se la dogana accetta la classificazione."
+      }
     }
   }
 }

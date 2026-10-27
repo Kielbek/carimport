@@ -201,7 +201,8 @@
     "terms": "Hyväksyn ehdot ja pyydän nimenomaisesti, että raportti toimitetaan ennen 14 päivän peruuttamisajan päättymistä. Ymmärrän, että menetän peruuttamisoikeuteni, kun raportti on toimitettu.",
     "title": "Täydellinen tuontiraportti",
     "termsLink": "Ehdot",
-    "guarantee": "Oikeellisuustakuu: ilmoita laskentavirheestä 14 päivän kuluessa (esim. vanhentunut verokanta tai puuttuva pakollinen maksu), niin korjaamme raportin tai palautamme koko hinnan."
+    "guarantee": "Oikeellisuustakuu: ilmoita laskentavirheestä 14 päivän kuluessa (esim. vanhentunut verokanta tai puuttuva pakollinen maksu), niin korjaamme raportin tai palautamme koko hinnan.",
+    "promoHint": "Onko sinulla alennuskoodi? Syötä se maksusivulla."
   },
   "report": {
     "amount": "Summa",
@@ -300,7 +301,16 @@
     "span": "yleensä {{min}} – {{max}}",
     "estimateNote": "Kuljetus ja toimitus ovat arvioita tavallisista hinnoista, pyöristettynä sataan. Tarkat summat erä erältä ovat täydessä raportissa.",
     "minimalNote": "Karkea arvio tälle reitille. Mitä kukin erä tarkalleen maksaa – kuljetus, tulli, alv, rekisteröinti ja riskit – näkyy raportissa.",
-    "guarantee": "Oikeellisuustakuu: virhe raportissa = korjaus tai rahat takaisin"
+    "guarantee": "Oikeellisuustakuu: virhe raportissa = korjaus tai rahat takaisin",
+    "email": {
+      "title": "Lähetä tämä arvio sähköpostiini",
+      "lead": "Saat yhteenvedon ja linkin, joka avaa laskurin samalla autolla – kätevä, kun vertailet useita autoja.",
+      "submit": "Lähetä",
+      "newsletter": "Haluan myös uutiskirjeen (kerran kuussa, vahvistus linkillä).",
+      "sent": "Lähetetty – tarkista saapuneet (ja roskaposti).",
+      "error": "Lähetys epäonnistui. Yritä hetken päästä uudelleen.",
+      "limit": "Tämä arvio on jo lähetetty useita kertoja. Laske uudelleen lähettääksesi uuden."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Oma kontti",
@@ -464,7 +474,8 @@
     "blog": "Blogi",
     "taxes": "Tulli- ja verolaskuri",
     "method": "Näin laskemme",
-    "toTop": "Takaisin ylös"
+    "toTop": "Takaisin ylös",
+    "glossary": "Sanasto"
   },
   "footer": {
     "about": "Riippumaton laskuri EU:n ulkopuolelta tuotavien autojen tuontikustannuksille. Emme myy emmekä tuo autoja – laskemme, mitä ne oikeasti maksavat.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Näin laskemme auton tuonnin kustannukset – lähteet ja menetelmä | Carglo",
       "description": "Mistä hintamme tulevat, miten arvioimme kuljetuksen ja mitä tulos ei voi tietää. Carglo-laskurin koko menetelmä."
+    },
+    "glossary": {
+      "title": "Auton tuonnin sanasto: CIF, TARIC, salvage title, tuonnin ALV | Carglo",
+      "description": "CIF, tullausarvo, TARIC-koodit, clean ja salvage title, tuonnin ALV, menettely 4200, Ro-Ro ja CoC selitettynä."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Riippumattomuus",
       "text": "Carglo ei myy, osta eikä tuo autoja eikä ota maahantuojilta palkkioita tuloksesta. Ansaitsemme maksullisella PDF-raportilla. Löysitkö virheen tai vanhentuneen hinnan? Kirjoita osoitteeseen {{email}} – korjaamme sen."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Sanasto",
+    "title": "Auton tuonnin sanasto",
+    "lead": "Käsitteet, joihin törmäät ostaessasi auton huutokaupasta Yhdysvalloista, Kanadasta, Japanista tai Britanniasta ja tuodessasi sen EU:hun – selitettynä parilla lauseella.",
+    "cta": "Laske kokonaishinta",
+    "terms": {
+      "cif": {
+        "name": "CIF / tullausarvo",
+        "text": "Cost, Insurance and Freight: auton hinta huutokauppamaksuineen, kuljetus, rahti ja vakuutus EU:n rajalle. Tulli lasketaan tästä arvosta."
+      },
+      "taric": {
+        "name": "TARIC ja HS-koodi",
+        "text": "EU:n tullitariffi. Koodi ratkaisee tullin: 8703 henkilöautot 10 %, 8704 pickupit ja pakettiautot 10–22 %, 8711 moottoripyörät 6–8 %, 9705 keräilyajoneuvot 0 %."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "Yhdysvaltalainen tai kanadalainen omistusasiakirja ilman merkintää kolarikorvauksesta. Auto rekisteröidään ilman lisätarkastuksia vauriohistoriasta."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Annetaan, kun vakuutusyhtiö on lunastanut auton. Korjauksen ja katsastuksen jälkeen sen voi tuoda ja rekisteröidä EU:ssa; ”non-repairable” yleensä ei."
+      },
+      "buyerFee": {
+        "name": "Huutokauppamaksut",
+        "text": "Mitä Copart, IAAI tai USS lisäävät vasarahintaan: porrastettu ostajan maksu, verkkotarjousmaksu, gate- ja ympäristömaksu. Ne kuuluvat tullausarvoon."
+      },
+      "importVat": {
+        "name": "Tuonnin arvonlisävero",
+        "text": "Sen maan ALV, jossa auto tullataan, tullausarvosta ja tullista. Käytetyn auton osalta se on lopullinen, vaikka auto rekisteröitäisiin toiseen EU-maahan."
+      },
+      "nationalTax": {
+        "name": "Autovero / rekisteröintivero",
+        "text": "Rekisteröintimaan kertavero: autovero Suomessa, BPM Alankomaissa, malus Ranskassa, valmistevero Puolassa. Saksassa ja Ruotsissa sitä ei ole."
+      },
+      "proc4200": {
+        "name": "Tullimenettely 4200",
+        "text": "Tullaus yhdessä EU-maassa ilman ALV:tä siellä ja käännetty verovelvollisuus määrämaassa. Vain ALV-rekisteröidyille yrityksille."
+      },
+      "customsRate": {
+        "name": "Tullikurssi",
+        "text": "Kurssi, jolla tulli muuntaa laskun koko kuukauden ajan – määräytyy edellisen kuun toiseksi viimeisen keskiviikon kursseista, ei päivän kurssista."
+      },
+      "roro": {
+        "name": "Ro-Ro vai kontti",
+        "text": "Ro-Ro: auto ajetaan laivaan – halvempaa, mutta sen on liikuttava. Kontti: usein jaettu 2–4 auton kesken – turvallisempi ja myös ajokelvottomille."
+      },
+      "coc": {
+        "name": "CoC ja yksittäishyväksyntä",
+        "text": "Vaatimustenmukaisuustodistus (CoC) osoittaa EU-tyyppihyväksynnän. Yhdysvaltalaisilta autoilta se puuttuu, joten ne tarvitsevat rekisteröintikatsastuksen ja valomuutokset."
+      },
+      "collector": {
+        "name": "Keräilyajoneuvo (CN 9705)",
+        "text": "Yli 30 vuotta vanha, alkuperäinen ja tuotannosta poistunut. Tulli 0 % – jos tulli hyväksyy luokittelun."
+      }
     }
   }
 }

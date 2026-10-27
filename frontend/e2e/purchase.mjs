@@ -48,10 +48,10 @@ await step('pay for the report', async () => {
   await page.getByRole('button', { name: /Odblokuj pełny raport/ }).first().click();
   await page.fill('#fullName', 'Jan Testowy');
   await page.fill('#email', 'e2e@example.com');
-  for (const box of await page.locator('form input[type=checkbox]').all()) {
+  for (const box of await page.locator('app-paywall-modal form input[type=checkbox]').all()) {
     await box.check();
   }
-  await page.locator('form button[type=submit]').click();
+  await page.locator('app-paywall-modal form button[type=submit]').click();
   await page.waitForURL(/\/pl\/report\/[0-9a-f-]{36}/, { timeout: 30000 });
 });
 

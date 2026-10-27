@@ -39,6 +39,14 @@ public class ReportOrder {
     @Column(name = "amount_minor", nullable = false)
     private long amountMinor;
 
+    /** Taken off by a Stripe promotion code at checkout; the buyer paid amountMinor - discountMinor. */
+    @Column(name = "discount_minor", nullable = false)
+    private long discountMinor;
+
+    /** Stripe id of the promotion code used (promo_...), if any. */
+    @Column(name = "promotion_code", length = 64)
+    private String promotionCode;
+
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 3)
     private CurrencyCode currency;
@@ -115,9 +123,16 @@ public class ReportOrder {
 
     /** Idempotent: returns false when the order was already paid (duplicate or out-of-order webhook). */
     public boolean markPaid(String paymentIntentId, Instant now) {
+        return markPaid(paymentIntentId, 0, null, now);
+    }
+
+    /** As {@link #markPaid(String, Instant)}, recording a promotion-code discount. */
+    public boolean markPaid(String paymentIntentId, long discountMinor, String promotionCode, Instant now) {
         if (status != Status.PENDING && status != Status.EXPIRED) {
             return false;
         }
+        this.discountMinor = Math.max(0, Math.min(discountMinor, amountMinor));
+        this.promotionCode = promotionCode;
         status = Status.PAID;
         stripePaymentIntentId = paymentIntentId;
         paidAt = now;
@@ -154,12 +169,12 @@ public class ReportOrder {
         if (refundedTotalMinor <= refundedMinor) {
             return false;
         }
-        refundedMinor = Math.min(refundedTotalMinor, amountMinor);
+        refundedMinor = Math.min(refundedTotalMinor, paidMinor());
         refundedAt = now;
         if (reason != null && !reason.isBlank()) {
             refundReason = reason.length() > 200 ? reason.substring(0, 200) : reason;
         }
-        if (refundedMinor >= amountMinor) {
+        if (refundedMinor >= paidMinor()) {
             status = Status.REFUNDED;
         }
         return true;
@@ -169,7 +184,12 @@ public class ReportOrder {
     public long refundableMinor() {
         boolean paid = status == Status.PAID || status == Status.GENERATING || status == Status.READY
                 || status == Status.FAILED;
-        return paid && stripePaymentIntentId != null ? amountMinor - refundedMinor : 0;
+        return paid && stripePaymentIntentId != null ? paidMinor() - refundedMinor : 0;
+    }
+
+    /** What the buyer actually paid: the price less any promotion-code discount. */
+    public long paidMinor() {
+        return amountMinor - discountMinor;
     }
 
     public void attachSession(String sessionId) {
@@ -215,6 +235,8 @@ public class ReportOrder {
     public String getLocale() { return locale; }
     public Status getStatus() { return status; }
     public long getAmountMinor() { return amountMinor; }
+    public long getDiscountMinor() { return discountMinor; }
+    public String getPromotionCode() { return promotionCode; }
     public CurrencyCode getCurrency() { return currency; }
     public String getAccessTokenHash() { return accessTokenHash; }
     public String getStripeSessionId() { return stripeSessionId; }

@@ -62,7 +62,7 @@ public class StripeWebhookService {
         switch (event.getType()) {
             case "checkout.session.completed" -> session(event).ifPresent(s -> {
                 // card and BLIK are paid at this point; P24 may still be "unpaid" and settle asynchronously
-                if ("paid".equals(s.getPaymentStatus())) {
+                if (OrderPayments.settled(s)) {
                     payments.markPaid(s);
                 }
             });

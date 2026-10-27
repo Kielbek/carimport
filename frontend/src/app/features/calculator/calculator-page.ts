@@ -1,7 +1,9 @@
-import { Component, OnInit, computed, inject, input, signal } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Component, OnInit, PLATFORM_ID, computed, inject, input, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { AnalyticsService } from '../../core/analytics/analytics.service';
+import { CarImportApi } from '../../core/api/carimport-api';
 import { AuctionHouse, FuelType, OriginCountry, VehicleCategory } from '../../core/api/api.models';
 import { LanguageService } from '../../core/i18n/language.service';
 import { PageContext } from '../../core/routing/page-context';
@@ -113,6 +115,9 @@ export class CalculatorPage implements OnInit {
   readonly from = input<string>();
   readonly to = input<string>();
   readonly port = input<string>();
+  /** /result/:quoteId - from the estimate e-mail (reload the car) or the Stripe cancel_url (?cancelled=1). */
+  readonly quoteId = input<string>();
+  readonly cancelled = input<string>();
   /** ?model=ford-mustang from the model cost pages: the example car's data as the starting point. */
   readonly model = input<string>();
 
@@ -126,6 +131,8 @@ export class CalculatorPage implements OnInit {
   protected readonly resultStep = RESULT_STEP;
   protected readonly paywall = signal(false);
   private readonly analytics = inject(AnalyticsService);
+  private readonly api = inject(CarImportApi);
+  private readonly platform = inject(PLATFORM_ID);
 
   protected openPaywall(): void {
     this.paywall.set(true);
@@ -134,6 +141,7 @@ export class CalculatorPage implements OnInit {
   protected readonly lead = signal(false);
 
   ngOnInit(): void {
+    this.reopenSavedQuote();
     const from = this.from();
     if (from && ORIGINS.some((o) => o.code === from)) {
       this.store.selectOrigin(from as OriginCountry);
@@ -167,6 +175,26 @@ export class CalculatorPage implements OnInit {
     if (port && /^[A-Z]{5}$/.test(port)) {
       this.store.choosePort(port);
     }
+  }
+
+  /**
+   * The link in the estimate e-mail: load that car into the wizard and recalculate with today's rates. The Stripe
+   * cancel return keeps its own session state instead.
+   */
+  private reopenSavedQuote(): void {
+    const id = this.quoteId();
+    if (!id || this.cancelled() || !isPlatformBrowser(this.platform) || this.store.result()?.quoteId === id) {
+      return;
+    }
+    this.api.quoteRequest(id).subscribe({
+      next: (request) => {
+        this.store.patch(request);
+        this.store.goTo(RESULT_STEP);
+      },
+      error: () => {
+        // unknown or deleted quote: the wizard simply starts from its saved or default state
+      },
+    });
   }
 
   protected go(delta: number): void {

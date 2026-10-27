@@ -201,7 +201,8 @@
     "terms": "Ik ga akkoord met de algemene voorwaarden en verzoek uitdrukkelijk om levering van het rapport vóór het einde van de herroepingstermijn van 14 dagen. Ik erken dat ik mijn herroepingsrecht verlies zodra het rapport is geleverd.",
     "title": "Volledig importrapport",
     "termsLink": "Algemene voorwaarden",
-    "guarantee": "Juistheidsgarantie: meld binnen 14 dagen een rekenfout (bijv. een verouderd tarief of een ontbrekende verplichte heffing) en we corrigeren het rapport of betalen de volledige prijs terug."
+    "guarantee": "Juistheidsgarantie: meld binnen 14 dagen een rekenfout (bijv. een verouderd tarief of een ontbrekende verplichte heffing) en we corrigeren het rapport of betalen de volledige prijs terug.",
+    "promoHint": "Heeft u een kortingscode? U vult die in op de betaalpagina."
   },
   "report": {
     "amount": "Bedrag",
@@ -300,7 +301,16 @@
     "span": "meestal {{min}} – {{max}}",
     "estimateNote": "Transport en levering zijn schattingen op basis van gangbare tarieven, afgerond op 100. De exacte bedragen, post voor post, staan in het volledige rapport.",
     "minimalNote": "Een ruwe schatting voor deze route. Wat elke post precies kost – transport, invoerrechten, btw, registratie en risico’s – staat in het rapport.",
-    "guarantee": "Juistheidsgarantie: fout in het rapport = correctie of geld terug"
+    "guarantee": "Juistheidsgarantie: fout in het rapport = correctie of geld terug",
+    "email": {
+      "title": "Stuur deze schatting naar mijn e-mail",
+      "lead": "U krijgt een samenvatting en een link die de calculator met dezelfde auto opent – handig bij het vergelijken van kavels.",
+      "submit": "Versturen",
+      "newsletter": "Stuur mij ook de nieuwsbrief (één keer per maand, bevestiging via link).",
+      "sent": "Verzonden – kijk in uw inbox (en spam).",
+      "error": "Versturen mislukt. Probeer het zo opnieuw.",
+      "limit": "Deze schatting is al meerdere keren verzonden. Bereken opnieuw om een nieuwe te sturen."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Eigen container",
@@ -464,7 +474,8 @@
     "blog": "Blog",
     "taxes": "Invoerrechten- en belastingcalculator",
     "method": "Zo rekenen we",
-    "toTop": "Naar boven"
+    "toTop": "Naar boven",
+    "glossary": "Woordenlijst"
   },
   "footer": {
     "about": "Onafhankelijke calculator voor de importkosten van auto’s van buiten de EU. Wij verkopen en importeren geen auto’s – wij berekenen wat ze echt kosten.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Zo berekenen we de kosten van een importauto – bronnen en methode | Carglo",
       "description": "Waar onze tarieven vandaan komen, hoe we transport schatten en wat de uitkomst niet kan weten. De volledige methodiek van de Carglo-calculator."
+    },
+    "glossary": {
+      "title": "Woordenlijst auto-import: CIF, TARIC, salvage title, invoer-btw | Carglo",
+      "description": "CIF, douanewaarde, TARIC-codes, clean en salvage title, invoer-btw, regeling 4200, Ro-Ro en CvO eenvoudig uitgelegd."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Onafhankelijkheid",
       "text": "Carglo verkoopt, koopt en verscheept geen auto's en ontvangt geen commissie van importeurs voor de uitkomst. We verdienen aan het betaalde PDF-rapport. Een fout of verouderd tarief gezien? Mail naar {{email}} – we passen het aan."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Woordenlijst",
+    "title": "Woordenlijst auto-import",
+    "lead": "De begrippen die u tegenkomt bij het kopen van een auto op een veiling in de VS, Canada, Japan of het VK en de invoer in de EU – in een of twee zinnen uitgelegd.",
+    "cta": "Totale kosten berekenen",
+    "terms": {
+      "cif": {
+        "name": "CIF / douanewaarde",
+        "text": "Cost, Insurance and Freight: prijs van de auto met veilingkosten, transport, vracht en verzekering tot de EU-grens. Over deze waarde wordt invoerrecht berekend."
+      },
+      "taric": {
+        "name": "TARIC en GS-code",
+        "text": "Het douanetarief van de EU. De code bepaalt het recht: 8703 personenauto's 10%, 8704 pick-ups en bestelauto's 10–22%, 8711 motoren 6–8%, 9705 verzamelvoertuigen 0%."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "Amerikaans of Canadees eigendomsbewijs zonder total-loss-registratie. De auto kan zonder extra onderzoek naar de schadehistorie worden geregistreerd."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Afgegeven als de verzekeraar de auto total loss verklaarde. Na reparatie en keuring kan hij in de EU worden ingevoerd en geregistreerd; met „non-repairable” meestal niet."
+      },
+      "buyerFee": {
+        "name": "Veilingkosten koper",
+        "text": "Wat Copart, IAAI of USS bovenop de hamerprijs rekenen: gestaffelde kopersfee, online biedkosten, gate- en environmental fee. Ze horen bij de douanewaarde."
+      },
+      "importVat": {
+        "name": "Invoer-btw",
+        "text": "Btw van het land waar de auto wordt ingeklaard, over douanewaarde plus invoerrecht. Bij een gebruikte auto is die definitief, ook als de auto in een ander EU-land wordt geregistreerd."
+      },
+      "nationalTax": {
+        "name": "Registratiebelasting",
+        "text": "Eenmalige belasting van het land van registratie: BPM in Nederland, malus in Frankrijk, NoVA in Oostenrijk, accijns in Polen. Duitsland en Zweden hebben er geen."
+      },
+      "proc4200": {
+        "name": "Douaneregeling 4200",
+        "text": "Inklaring in een EU-land met btw-vrijstelling daar en verlegging naar het land van bestemming. Alleen voor btw-plichtige bedrijven."
+      },
+      "customsRate": {
+        "name": "Douanekoers",
+        "text": "De koers waarmee de douane een hele maand de factuur omrekent – vastgesteld op de koersen van de voorlaatste woensdag van de vorige maand, niet de dagkoers."
+      },
+      "roro": {
+        "name": "Ro-Ro of container",
+        "text": "Ro-Ro: de auto rijdt zelf het schip op – goedkoper, maar hij moet rijden. Container: vaak gedeeld met 2–4 auto's – veiliger en ook voor niet-rijdende auto's."
+      },
+      "coc": {
+        "name": "CvO en individuele goedkeuring",
+        "text": "Het certificaat van overeenstemming bewijst de EU-typegoedkeuring. Amerikaanse auto's hebben er geen en krijgen een individuele keuring bij de RDW met aanpassing van de verlichting."
+      },
+      "collector": {
+        "name": "Verzamelvoertuig (GN 9705)",
+        "text": "Ouder dan 30 jaar, origineel en niet meer geproduceerd. 0% invoerrecht en 9% btw in Nederland – als de douane de indeling aanvaardt."
+      }
     }
   }
 }

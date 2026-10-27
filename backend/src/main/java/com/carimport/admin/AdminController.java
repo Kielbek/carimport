@@ -44,13 +44,15 @@ public class AdminController {
     public record OrderRow(UUID id, String number, Instant createdAt, Instant paidAt, String status, String email,
                            String name, String locale, long amountMinor, String currency, Instant emailSentAt,
                            int emailAttempts, int generationAttempts, String paymentIntent, long refundedMinor,
-                           Instant refundedAt, String refundReason, long refundableMinor) {
+                           Instant refundedAt, String refundReason, long refundableMinor, long discountMinor,
+                           String promotionCode) {
 
         static OrderRow of(ReportOrder o) {
             return new OrderRow(o.getId(), o.getNumber(), o.getCreatedAt(), o.getPaidAt(), o.getStatus().name(),
                     o.getEmail(), o.getFullName(), o.getLocale(), o.getAmountMinor(), o.getCurrency().name(),
                     o.getEmailSentAt(), o.getEmailAttempts(), o.getGenerationAttempts(), o.getStripePaymentIntentId(),
-                    o.getRefundedMinor(), o.getRefundedAt(), o.getRefundReason(), o.refundableMinor());
+                    o.getRefundedMinor(), o.getRefundedAt(), o.getRefundReason(), o.refundableMinor(),
+                    o.getDiscountMinor(), o.getPromotionCode());
         }
     }
 

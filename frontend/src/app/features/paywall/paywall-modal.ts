@@ -66,6 +66,7 @@ import { rememberOrder } from '../report/order-tokens';
           {{ busy() ? ('paywall.redirecting' | translate) : ('paywall.pay' | translate) }}
         </button>
         <p class="flex items-start gap-2 rounded-[4px] bg-brand/10 p-3 text-xs leading-relaxed"><app-icon name="shield" [size]="16" class="mt-px shrink-0 text-brand-text" /> {{ 'paywall.guarantee' | translate }}</p>
+        <p class="text-center text-xs text-muted">{{ 'paywall.promoHint' | translate }}</p>
         <p class="flex items-center justify-center gap-1.5 text-center text-[11px] text-muted"><app-icon name="lock" [size]="12" /> {{ 'paywall.secure' | translate }}</p>
       </form>
     </div>

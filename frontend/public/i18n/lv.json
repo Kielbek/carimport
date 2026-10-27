@@ -201,7 +201,8 @@
     "terms": "Es piekrītu noteikumiem un nepārprotami lūdzu piegādāt atskaiti pirms 14 dienu atteikuma termiņa beigām. Apzinos, ka pēc atskaites piegādes zaudēju atteikuma tiesības.",
     "title": "Pilna importa atskaite",
     "termsLink": "Noteikumi",
-    "guarantee": "Pareizības garantija: ziņojiet par aprēķina kļūdu 14 dienu laikā (piem., novecojusi likme vai trūkstoša obligātā maksa), un mēs izlabosim atskaiti vai atmaksāsim visu cenu."
+    "guarantee": "Pareizības garantija: ziņojiet par aprēķina kļūdu 14 dienu laikā (piem., novecojusi likme vai trūkstoša obligātā maksa), un mēs izlabosim atskaiti vai atmaksāsim visu cenu.",
+    "promoHint": "Vai jums ir atlaides kods? Ievadiet to maksājuma lapā."
   },
   "report": {
     "amount": "Summa",
@@ -300,7 +301,16 @@
     "span": "parasti {{min}} – {{max}}",
     "estimateNote": "Transports un piegāde ir aplēse pēc tipiskiem tarifiem, noapaļota līdz 100. Precīzas summas pa pozīcijām ir pilnajā atskaitē.",
     "minimalNote": "Aptuvena aplēse šim maršrutam. Cik precīzi maksā katra pozīcija – transports, muita, PVN, reģistrācija un riski – rāda atskaite.",
-    "guarantee": "Pareizības garantija: kļūda atskaitē = labojums vai naudas atmaksa"
+    "guarantee": "Pareizības garantija: kļūda atskaitē = labojums vai naudas atmaksa",
+    "email": {
+      "title": "Nosūtīt šo tāmi uz manu e-pastu",
+      "lead": "Saņemsiet kopsavilkumu un saiti, kas atvērs kalkulatoru ar to pašu auto – ērti, salīdzinot vairākus lotus.",
+      "submit": "Sūtīt",
+      "newsletter": "Vēlos saņemt arī jaunumu vēstuli (reizi mēnesī, apstiprinājums ar saiti).",
+      "sent": "Nosūtīts – pārbaudiet pastkastīti (arī mēstules).",
+      "error": "Neizdevās nosūtīt. Mēģiniet vēlreiz pēc brīža.",
+      "limit": "Šī tāme jau nosūtīta vairākas reizes. Pārrēķiniet, lai nosūtītu jaunu."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Atsevišķs konteiners",
@@ -464,7 +474,8 @@
     "blog": "Blogs",
     "taxes": "Muitas un nodokļu kalkulators",
     "method": "Kā mēs rēķinām",
-    "toTop": "Uz augšu"
+    "toTop": "Uz augšu",
+    "glossary": "Vārdnīca"
   },
   "footer": {
     "about": "Neatkarīgs importa izmaksu kalkulators automašīnām no valstīm ārpus ES. Mēs automašīnas nepārdodam un neimportējam – mēs aprēķinām, cik tās patiesībā maksā.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Kā mēs aprēķinām auto importa izmaksas – avoti un metode | Carglo",
       "description": "No kurienes nāk mūsu likmes, kā novērtējam transportu un ko rezultāts nevar zināt. Pilna Carglo kalkulatora metodoloģija."
+    },
+    "glossary": {
+      "title": "Auto importa vārdnīca: CIF, TARIC, salvage title, importa PVN | Carglo",
+      "description": "CIF, muitas vērtība, TARIC kodi, clean un salvage title, importa PVN, procedūra 4200, Ro-Ro un CoC vienkārši."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Neatkarība",
       "text": "Carglo nepārdod, nepērk un neimportē auto un neņem komisiju no importētājiem par rezultātu. Mēs pelnām ar maksas PDF atskaiti. Pamanījāt kļūdu vai novecojušu likmi? Rakstiet uz {{email}} – mēs to izlabosim."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Vārdnīca",
+    "title": "Auto importa vārdnīca",
+    "lead": "Jēdzieni, ar kuriem saskarsieties, pērkot auto izsolē ASV, Kanādā, Japānā vai Lielbritānijā un ievedot to ES – izskaidroti vienā divos teikumos.",
+    "cta": "Aprēķināt kopējās izmaksas",
+    "terms": {
+      "cif": {
+        "name": "CIF / muitas vērtība",
+        "text": "Cost, Insurance and Freight: auto cena ar izsoles maksām, transportu, frahtu un apdrošināšanu līdz ES robežai. No tās aprēķina muitu."
+      },
+      "taric": {
+        "name": "TARIC un HS kods",
+        "text": "ES muitas tarifs. Kods nosaka likmi: 8703 vieglie auto 10 %, 8704 pikapi un furgoni 10–22 %, 8711 motocikli 6–8 %, 9705 kolekcijas transportlīdzekļi 0 %."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "ASV vai Kanādas īpašuma dokuments bez ieraksta par pilnīgu bojāeju. Auto reģistrē bez papildu avāriju vēstures pārbaudēm."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Izsniedz, ja apdrošinātājs atzinis pilnīgu bojāeju. Pēc remonta un tehniskās apskates to var ievest un reģistrēt ES; ar “non-repairable” parasti ne."
+      },
+      "buyerFee": {
+        "name": "Izsoles maksas",
+        "text": "Ko Copart, IAAI vai USS pieskaita nosolītajai cenai: pakāpeniska pircēja maksa, tiešsaistes solīšanas maksa, gate un vides maksa. Tās ietilpst muitas vērtībā."
+      },
+      "importVat": {
+        "name": "Importa PVN",
+        "text": "Valsts, kurā auto muito, PVN no muitas vērtības kopā ar muitu. Lietotam auto tas ir galīgs, pat ja auto reģistrē citā ES valstī."
+      },
+      "nationalTax": {
+        "name": "Reģistrācijas nodoklis",
+        "text": "Reģistrācijas valsts vienreizējs nodoklis: BPM Nīderlandē, malus Francijā, akcīze Polijā. Latvijā, Vācijā un Zviedrijā tāda nav."
+      },
+      "proc4200": {
+        "name": "Muitas procedūra 4200",
+        "text": "Muitošana vienā ES valstī ar PVN atbrīvojumu un apgriezto maksāšanu galamērķa valstī. Tikai PVN maksātājiem uzņēmumiem."
+      },
+      "customsRate": {
+        "name": "Muitas kurss",
+        "text": "Kurss, ar kuru muita visu mēnesi pārrēķina rēķinu – noteikts pēc iepriekšējā mēneša priekšpēdējās trešdienas kursiem, nevis dienas kursa."
+      },
+      "roro": {
+        "name": "Ro-Ro vai konteiners",
+        "text": "Ro-Ro: auto iebrauc kuģī pats – lētāk, bet tam jābrauc. Konteiners: bieži dalīts ar 2–4 auto – drošāk un arī nebraucošiem."
+      },
+      "coc": {
+        "name": "CoC un individuālā apstiprināšana",
+        "text": "Atbilstības sertifikāts (CoC) apliecina ES tipa apstiprinājumu. ASV auto tā nav, tāpēc vajag individuālu apstiprināšanu un lukturu pārbūvi."
+      },
+      "collector": {
+        "name": "Kolekcijas transportlīdzeklis (KN 9705)",
+        "text": "Vecāks par 30 gadiem, oriģināls un vairs neražots. Muita 0 % – ja muita atzīst klasifikāciju."
+      }
     }
   }
 }
