@@ -243,6 +243,21 @@
       "downloadBelow": "Îl poți descărca de aici oricând.",
       "slow": "Durează mai mult decât de obicei. Reîmprospătează în câteva momente – dacă e-mailul este configurat, raportul va ajunge și în căsuța ta.",
       "refresh": "Verifică din nou"
+    },
+    "charts": {
+      "total": "Total până la ușă (mediu)",
+      "range": "Intervalul scenariilor",
+      "importCosts": "Costuri de import",
+      "importShare": "+{{pct}} peste prețul mașinii și al licitației",
+      "leadTime": "Timp până la înmatriculare",
+      "structure": "Unde se duc banii",
+      "scenarios": "Cost total în fiecare scenariu",
+      "topItems": "Cele mai mari poziții de cost",
+      "note": "Sume în {{cur}}, scenariul mediu. Treceți cu mouse-ul peste grafic pentru detalii.",
+      "firm": "Timp minim",
+      "delay": "Posibilă întârziere",
+      "axis": "Axă: zile de la cumpărare",
+      "breakdown": "Defalcare detaliată a costurilor"
     }
   },
   "result": {
@@ -312,6 +327,15 @@
       "sent": "Trimis – verificați inboxul (și spamul).",
       "error": "Trimiterea a eșuat. Încercați din nou imediat.",
       "limit": "Această estimare a fost deja trimisă de mai multe ori. Recalculați pentru a trimite una nouă."
+    },
+    "progress": {
+      "eyebrow": "Calcul",
+      "s1": "Prețuri și taxe de licitație",
+      "s2": "Transport și navlu maritim",
+      "s3": "Valoare în vamă, taxe vamale și accize",
+      "s4": "TVA și taxe portuare",
+      "s5": "Înmatriculare și taxe naționale",
+      "s6": "Scenarii și riscuri"
     }
   },
   "shipping": {

@@ -243,6 +243,21 @@
       "downloadBelow": "Saad selle siit igal ajal alla laadida.",
       "slow": "See võtab tavalisest kauem aega. Värskenda hetke pärast – kui e-post on seadistatud, jõuab raport ka sinu postkasti.",
       "refresh": "Kontrolli uuesti"
+    },
+    "charts": {
+      "total": "Kokku ukseni (keskmine)",
+      "range": "Stsenaariumide vahemik",
+      "importCosts": "Impordikulud",
+      "importShare": "+{{pct}} auto ja oksjoni hinnale",
+      "leadTime": "Aeg registreerimiseni",
+      "structure": "Kuhu raha läheb",
+      "scenarios": "Koguhind igas stsenaariumis",
+      "topItems": "Suurimad kuluartiklid",
+      "note": "Summad valuutas {{cur}}, keskmine stsenaarium. Üksikasjade nägemiseks vii kursor graafikule.",
+      "firm": "Minimaalne aeg",
+      "delay": "Võimalik viivitus",
+      "axis": "Telg: päevi ostust",
+      "breakdown": "Üksikasjalik kulude jaotus"
     }
   },
   "result": {
@@ -312,6 +327,15 @@
       "sent": "Saadetud – vaata postkasti (ka rämpsposti).",
       "error": "Saatmine ebaõnnestus. Proovi kohe uuesti.",
       "limit": "See hinnang on juba mitu korda saadetud. Arvuta uuesti, et saata uus."
+    },
+    "progress": {
+      "eyebrow": "Arvutus",
+      "s1": "Hinnad ja oksjonitasud",
+      "s2": "Transport ja merevedu",
+      "s3": "Tolliväärtus, toll ja aktsiis",
+      "s4": "Käibemaks ja sadamatasud",
+      "s5": "Registreerimine ja riiklikud tasud",
+      "s6": "Stsenaariumid ja riskid"
     }
   },
   "shipping": {

@@ -243,6 +243,21 @@
       "downloadBelow": "Itt bármikor letöltheti.",
       "slow": "Ez a szokásosnál tovább tart. Frissítsen egy kis idő múlva – ha az e-mail be van állítva, a jelentés a postafiókjába is megérkezik.",
       "refresh": "Ellenőrzés újra"
+    },
+    "charts": {
+      "total": "Összesen házhoz (átlag)",
+      "range": "Forgatókönyvek sávja",
+      "importCosts": "Importköltségek",
+      "importShare": "+{{pct}} az autó és az aukció árához",
+      "leadTime": "Idő a forgalomba helyezésig",
+      "structure": "Hová megy a pénz",
+      "scenarios": "Teljes költség forgatókönyvenként",
+      "topItems": "Legnagyobb költségtételek",
+      "note": "Összegek {{cur}} pénznemben, átlagos forgatókönyv. A részletekért vigye az egeret a diagramra.",
+      "firm": "Minimális idő",
+      "delay": "Lehetséges késés",
+      "axis": "Tengely: napok a vásárlástól",
+      "breakdown": "Részletes költségbontás"
     }
   },
   "result": {
@@ -312,6 +327,15 @@
       "sent": "Elküldve – nézze meg a postafiókját (és a spamet).",
       "error": "A küldés nem sikerült. Próbálja újra kicsit később.",
       "limit": "Ezt a becslést már többször elküldtük. Számolja újra, hogy újat küldjön."
+    },
+    "progress": {
+      "eyebrow": "Számítás",
+      "s1": "Árak és aukciós díjak",
+      "s2": "Szállítás és tengeri fuvar",
+      "s3": "Vámérték, vám és jövedéki adó",
+      "s4": "ÁFA és kikötői díjak",
+      "s5": "Forgalomba helyezés és hazai díjak",
+      "s6": "Forgatókönyvek és kockázatok"
     }
   },
   "shipping": {

@@ -243,6 +243,21 @@
       "downloadBelow": "Puedes descargarlo aquí cuando quieras.",
       "slow": "Está tardando más de lo habitual. Actualiza en un momento – si el correo está configurado, el informe también llegará a tu bandeja de entrada.",
       "refresh": "Comprobar de nuevo"
+    },
+    "charts": {
+      "total": "Total puerta a puerta (medio)",
+      "range": "Rango de escenarios",
+      "importCosts": "Costes de importación",
+      "importShare": "+{{pct}} sobre el precio del coche y la subasta",
+      "leadTime": "Tiempo hasta la matriculación",
+      "structure": "A dónde va el dinero",
+      "scenarios": "Coste total en cada escenario",
+      "topItems": "Partidas de coste más grandes",
+      "note": "Importes en {{cur}}, escenario medio. Pasa el ratón por el gráfico para ver detalles.",
+      "firm": "Tiempo mínimo",
+      "delay": "Posible retraso",
+      "axis": "Eje: días desde la compra",
+      "breakdown": "Desglose detallado de costes"
     }
   },
   "result": {
@@ -312,6 +327,15 @@
       "sent": "Enviado: revisa tu bandeja (y spam).",
       "error": "No se pudo enviar. Inténtalo de nuevo en un momento.",
       "limit": "Esta estimación ya se ha enviado varias veces. Recalcula para enviar una nueva."
+    },
+    "progress": {
+      "eyebrow": "Cálculo",
+      "s1": "Precios y tasas de subasta",
+      "s2": "Transporte y flete marítimo",
+      "s3": "Valor en aduana, arancel e impuestos especiales",
+      "s4": "IVA y tasas portuarias",
+      "s5": "Matriculación y tasas nacionales",
+      "s6": "Escenarios y riesgos"
     }
   },
   "shipping": {

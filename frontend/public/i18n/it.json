@@ -243,6 +243,21 @@
       "downloadBelow": "Puoi scaricarlo qui in qualsiasi momento.",
       "slow": "Ci sta mettendo più del solito. Aggiorna tra un attimo – se l’e-mail è configurata, il report arriverà anche nella tua casella di posta.",
       "refresh": "Controlla di nuovo"
+    },
+    "charts": {
+      "total": "Totale fino a casa (medio)",
+      "range": "Intervallo degli scenari",
+      "importCosts": "Costi di importazione",
+      "importShare": "+{{pct}} sul prezzo dell'auto e dell'asta",
+      "leadTime": "Tempo fino all'immatricolazione",
+      "structure": "Dove vanno i soldi",
+      "scenarios": "Costo totale in ogni scenario",
+      "topItems": "Voci di costo più alte",
+      "note": "Importi in {{cur}}, scenario medio. Passa il mouse sul grafico per i dettagli.",
+      "firm": "Tempo minimo",
+      "delay": "Possibile ritardo",
+      "axis": "Asse: giorni dall'acquisto",
+      "breakdown": "Dettaglio dei costi"
     }
   },
   "result": {
@@ -312,6 +327,15 @@
       "sent": "Inviata – controlla la posta (anche lo spam).",
       "error": "Invio non riuscito. Riprova tra poco.",
       "limit": "Questa stima è già stata inviata più volte. Ricalcola per inviarne una nuova."
+    },
+    "progress": {
+      "eyebrow": "Calcolo",
+      "s1": "Prezzi e commissioni d'asta",
+      "s2": "Trasporto e nolo marittimo",
+      "s3": "Valore in dogana, dazio e accise",
+      "s4": "IVA e tasse portuali",
+      "s5": "Immatricolazione e tasse nazionali",
+      "s6": "Scenari e rischi"
     }
   },
   "shipping": {

@@ -243,6 +243,21 @@
       "downloadBelow": "Kedykoľvek si ho tu môžete stiahnuť.",
       "slow": "Trvá to dlhšie ako zvyčajne. O chvíľu stránku obnovte – ak je nastavený e-mail, report vám príde aj do schránky.",
       "refresh": "Skontrolovať znova"
+    },
+    "charts": {
+      "total": "Spolu až domov (priemer)",
+      "range": "Rozpätie scenárov",
+      "importCosts": "Náklady na dovoz",
+      "importShare": "+{{pct}} k cene auta a aukcie",
+      "leadTime": "Čas do registrácie",
+      "structure": "Kam idú peniaze",
+      "scenarios": "Celkové náklady v každom scenári",
+      "topItems": "Najväčšie nákladové položky",
+      "note": "Sumy v {{cur}}, priemerný scenár. Pre podrobnosti prejdite myšou nad graf.",
+      "firm": "Minimálny čas",
+      "delay": "Možné oneskorenie",
+      "axis": "Os: dni od nákupu",
+      "breakdown": "Podrobný rozpis nákladov"
     }
   },
   "result": {
@@ -312,6 +327,15 @@
       "sent": "Odoslané – skontrolujte schránku (aj spam).",
       "error": "Odoslanie zlyhalo. Skúste to o chvíľu znova.",
       "limit": "Tento odhad už bol odoslaný niekoľkokrát. Prepočítajte ho a pošlite nový."
+    },
+    "progress": {
+      "eyebrow": "Výpočet",
+      "s1": "Ceny a aukčné poplatky",
+      "s2": "Doprava a námorná preprava",
+      "s3": "Colná hodnota, clo a spotrebná daň",
+      "s4": "DPH a prístavné poplatky",
+      "s5": "Registrácia a národné poplatky",
+      "s6": "Scenáre a riziká"
     }
   },
   "shipping": {

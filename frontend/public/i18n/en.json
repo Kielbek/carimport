@@ -243,6 +243,21 @@
       "downloadBelow": "You can download it here at any time.",
       "slow": "This is taking longer than usual. Refresh in a moment – if e-mail is set up, the report will also reach your inbox.",
       "refresh": "Check again"
+    },
+    "charts": {
+      "total": "Door-to-door total (average)",
+      "range": "Scenario range",
+      "importCosts": "Import costs",
+      "importShare": "+{{pct}} on top of the car and auction price",
+      "leadTime": "Time to registration",
+      "structure": "Where the money goes",
+      "scenarios": "Total cost in each scenario",
+      "topItems": "Largest cost items",
+      "note": "Amounts in {{cur}}, average scenario. Hover a chart for details.",
+      "firm": "Minimum time",
+      "delay": "Possible delay",
+      "axis": "Axis: days from purchase",
+      "breakdown": "Detailed cost breakdown"
     }
   },
   "result": {
@@ -312,6 +327,15 @@
       "sent": "Sent – check your inbox (and spam).",
       "error": "Could not send. Please try again in a moment.",
       "limit": "This estimate has already been sent several times. Recalculate to send a new one."
+    },
+    "progress": {
+      "eyebrow": "Calculation",
+      "s1": "Prices and auction fees",
+      "s2": "Transport and ocean freight",
+      "s3": "Customs value, duty and excise",
+      "s4": "VAT and port fees",
+      "s5": "Registration and national fees",
+      "s6": "Scenarios and risks"
     }
   },
   "shipping": {

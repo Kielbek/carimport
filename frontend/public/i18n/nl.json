@@ -243,6 +243,21 @@
       "downloadBelow": "U kunt het hier altijd downloaden.",
       "slow": "Dit duurt langer dan normaal. Vernieuw zo meteen – als e-mail is ingesteld, komt het rapport ook in uw inbox.",
       "refresh": "Opnieuw controleren"
+    },
+    "charts": {
+      "total": "Totaal tot de deur (gemiddeld)",
+      "range": "Bandbreedte van de scenario's",
+      "importCosts": "Importkosten",
+      "importShare": "+{{pct}} bovenop de prijs van auto en veiling",
+      "leadTime": "Tijd tot registratie",
+      "structure": "Waar het geld naartoe gaat",
+      "scenarios": "Totale kosten per scenario",
+      "topItems": "Grootste kostenposten",
+      "note": "Bedragen in {{cur}}, gemiddeld scenario. Beweeg over de grafiek voor details.",
+      "firm": "Minimale duur",
+      "delay": "Mogelijke vertraging",
+      "axis": "As: dagen vanaf aankoop",
+      "breakdown": "Gedetailleerd kostenoverzicht"
     }
   },
   "result": {
@@ -312,6 +327,15 @@
       "sent": "Verzonden – kijk in uw inbox (en spam).",
       "error": "Versturen mislukt. Probeer het zo opnieuw.",
       "limit": "Deze schatting is al meerdere keren verzonden. Bereken opnieuw om een nieuwe te sturen."
+    },
+    "progress": {
+      "eyebrow": "Berekening",
+      "s1": "Prijzen en veilingkosten",
+      "s2": "Transport en zeevracht",
+      "s3": "Douanewaarde, invoerrecht en accijns",
+      "s4": "Btw en havenkosten",
+      "s5": "Registratie en nationale heffingen",
+      "s6": "Scenario's en risico's"
     }
   },
   "shipping": {

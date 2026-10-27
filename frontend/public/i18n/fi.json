@@ -243,6 +243,21 @@
       "downloadBelow": "Voit ladata sen täältä milloin tahansa.",
       "slow": "Tämä kestää tavallista kauemmin. Päivitä hetken kuluttua – jos sähköposti on käytössä, raportti tulee myös postilaatikkoosi.",
       "refresh": "Tarkista uudelleen"
+    },
+    "charts": {
+      "total": "Yhteensä ovelle (keskimäärin)",
+      "range": "Skenaarioiden vaihteluväli",
+      "importCosts": "Tuontikulut",
+      "importShare": "+{{pct}} auton ja huutokaupan hintaan",
+      "leadTime": "Aika rekisteröintiin",
+      "structure": "Mihin rahat menevät",
+      "scenarios": "Kokonaiskustannus kussakin skenaariossa",
+      "topItems": "Suurimmat kuluerät",
+      "note": "Summat valuutassa {{cur}}, keskimääräinen skenaario. Näet tiedot viemällä osoittimen kaavion päälle.",
+      "firm": "Vähimmäisaika",
+      "delay": "Mahdollinen viive",
+      "axis": "Akseli: päiviä ostosta",
+      "breakdown": "Yksityiskohtainen kustannuserittely"
     }
   },
   "result": {
@@ -312,6 +327,15 @@
       "sent": "Lähetetty – tarkista saapuneet (ja roskaposti).",
       "error": "Lähetys epäonnistui. Yritä hetken päästä uudelleen.",
       "limit": "Tämä arvio on jo lähetetty useita kertoja. Laske uudelleen lähettääksesi uuden."
+    },
+    "progress": {
+      "eyebrow": "Laskenta",
+      "s1": "Hinnat ja huutokauppamaksut",
+      "s2": "Kuljetus ja merirahti",
+      "s3": "Tullausarvo, tulli ja valmistevero",
+      "s4": "ALV ja satamamaksut",
+      "s5": "Rekisteröinti ja kansalliset maksut",
+      "s6": "Skenaariot ja riskit"
     }
   },
   "shipping": {

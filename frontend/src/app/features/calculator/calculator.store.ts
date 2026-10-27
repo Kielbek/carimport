@@ -2,7 +2,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Injectable, PLATFORM_ID, computed, effect, inject, signal, untracked } from '@angular/core';
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
-import { EMPTY, Observable, catchError, debounceTime, distinctUntilChanged, map, of, switchMap, tap } from 'rxjs';
+import { EMPTY, Observable, catchError, debounceTime, distinctUntilChanged, forkJoin, map, of, switchMap, tap, timer } from 'rxjs';
 import {
   ApiProblem,
   AuctionHouse,
@@ -100,6 +100,8 @@ export class CalculatorStore {
   readonly state = signal<WizardState>(restore(this.lang.info()));
   readonly step = signal<WizardStep>(1);
   readonly calculating = signal(false);
+  /** The progress screen runs at least this long, so its stages can be read rather than flash by. */
+  static readonly CALC_MIN_MS = 2600;
   readonly result = signal<PublicQuoteView | null>(null);
   readonly error = signal<ApiProblem | null>(null);
   /** The calculated quote is the one bought as a report or attached to a partner lead. */
@@ -454,12 +456,12 @@ export class CalculatorStore {
     }
     this.calculating.set(true);
     this.error.set(null);
-    this.api
-      .createQuote(this.request())
-      .pipe(
-        map((view) => ({ view, error: null as ApiProblem | null })),
-        catchError((e: HttpErrorResponse) => of({ view: null, error: (e.error as ApiProblem) ?? { status: e.status } })),
-      )
+    const quote = this.api.createQuote(this.request()).pipe(
+      map((view) => ({ view, error: null as ApiProblem | null })),
+      catchError((e: HttpErrorResponse) => of({ view: null, error: (e.error as ApiProblem) ?? { status: e.status } })),
+    );
+    forkJoin([quote, timer(CalculatorStore.CALC_MIN_MS)])
+      .pipe(map(([outcome]) => outcome))
       .subscribe(({ view, error }) => {
         if (view) {
           this.analytics.track('quote_calculated', { destination: view.destinationCountry, port: view.clearancePort });

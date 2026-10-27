@@ -243,6 +243,21 @@
       "downloadBelow": "Du kan ladda ner den här när som helst.",
       "slow": "Det tar längre tid än vanligt. Uppdatera om en stund – om e-post är inställd kommer rapporten även till din inkorg.",
       "refresh": "Kontrollera igen"
+    },
+    "charts": {
+      "total": "Totalt till dörren (medel)",
+      "range": "Spann mellan scenarier",
+      "importCosts": "Importkostnader",
+      "importShare": "+{{pct}} utöver bil- och auktionspriset",
+      "leadTime": "Tid till registrering",
+      "structure": "Vart pengarna går",
+      "scenarios": "Total kostnad i varje scenario",
+      "topItems": "Största kostnadsposter",
+      "note": "Belopp i {{cur}}, genomsnittligt scenario. Håll muspekaren över diagrammet för detaljer.",
+      "firm": "Minsta tid",
+      "delay": "Möjlig försening",
+      "axis": "Axel: dagar från köp",
+      "breakdown": "Detaljerad kostnadsuppdelning"
     }
   },
   "result": {
@@ -312,6 +327,15 @@
       "sent": "Skickat – kolla inkorgen (och skräpposten).",
       "error": "Det gick inte att skicka. Försök igen om en stund.",
       "limit": "Beräkningen har redan skickats flera gånger. Räkna om för att skicka en ny."
+    },
+    "progress": {
+      "eyebrow": "Beräkning",
+      "s1": "Priser och auktionsavgifter",
+      "s2": "Transport och sjöfrakt",
+      "s3": "Tullvärde, tull och punktskatt",
+      "s4": "Moms och hamnavgifter",
+      "s5": "Registrering och nationella avgifter",
+      "s6": "Scenarier och risker"
     }
   },
   "shipping": {

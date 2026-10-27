@@ -243,6 +243,21 @@
       "downloadBelow": "Ją bet kada galite atsisiųsti čia.",
       "slow": "Tai užtrunka ilgiau nei įprastai. Po akimirkos atnaujinkite puslapį – jei el. paštas sukonfigūruotas, ataskaita atkeliaus ir į jūsų pašto dėžutę.",
       "refresh": "Patikrinti dar kartą"
+    },
+    "charts": {
+      "total": "Iš viso iki durų (vidutinis)",
+      "range": "Scenarijų intervalas",
+      "importCosts": "Importo išlaidos",
+      "importShare": "+{{pct}} prie automobilio ir aukciono kainos",
+      "leadTime": "Laikas iki registracijos",
+      "structure": "Kur eina pinigai",
+      "scenarios": "Bendra kaina kiekviename scenarijuje",
+      "topItems": "Didžiausios išlaidų eilutės",
+      "note": "Sumos valiuta {{cur}}, vidutinis scenarijus. Užveskite pelę ant diagramos, kad pamatytumėte detales.",
+      "firm": "Minimalus laikas",
+      "delay": "Galimas vėlavimas",
+      "axis": "Ašis: dienos nuo pirkimo",
+      "breakdown": "Išsamus išlaidų suskirstymas"
     }
   },
   "result": {
@@ -312,6 +327,15 @@
       "sent": "Išsiųsta – patikrinkite paštą (ir šlamštą).",
       "error": "Nepavyko išsiųsti. Bandykite netrukus.",
       "limit": "Ši sąmata jau išsiųsta kelis kartus. Perskaičiuokite, kad išsiųstumėte naują."
+    },
+    "progress": {
+      "eyebrow": "Skaičiavimas",
+      "s1": "Kainos ir aukciono mokesčiai",
+      "s2": "Transportas ir jūrinis frachtas",
+      "s3": "Muitinė vertė, muitas ir akcizas",
+      "s4": "PVM ir uosto mokesčiai",
+      "s5": "Registracija ir nacionaliniai mokesčiai",
+      "s6": "Scenarijai ir rizikos"
     }
   },
   "shipping": {

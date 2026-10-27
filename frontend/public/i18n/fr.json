@@ -243,6 +243,21 @@
       "downloadBelow": "Vous pouvez le télécharger ici à tout moment.",
       "slow": "Cela prend plus de temps que d’habitude. Actualisez dans un instant – si l’e-mail est configuré, le rapport arrivera aussi dans votre boîte de réception.",
       "refresh": "Vérifier à nouveau"
+    },
+    "charts": {
+      "total": "Total rendu (moyen)",
+      "range": "Fourchette des scénarios",
+      "importCosts": "Frais d'importation",
+      "importShare": "+{{pct}} sur le prix du véhicule et de l'enchère",
+      "leadTime": "Délai jusqu'à l'immatriculation",
+      "structure": "Où va l'argent",
+      "scenarios": "Coût total selon chaque scénario",
+      "topItems": "Principaux postes de coût",
+      "note": "Montants en {{cur}}, scénario moyen. Survolez le graphique pour les détails.",
+      "firm": "Durée minimale",
+      "delay": "Retard possible",
+      "axis": "Axe : jours depuis l'achat",
+      "breakdown": "Détail des coûts"
     }
   },
   "result": {
@@ -312,6 +327,15 @@
       "sent": "Envoyé – vérifiez votre boîte (et les spams).",
       "error": "Échec de l'envoi. Réessayez dans un instant.",
       "limit": "Cette estimation a déjà été envoyée plusieurs fois. Recalculez pour en envoyer une nouvelle."
+    },
+    "progress": {
+      "eyebrow": "Calcul",
+      "s1": "Prix et frais d'enchère",
+      "s2": "Transport et fret maritime",
+      "s3": "Valeur en douane, droits et accises",
+      "s4": "TVA et frais portuaires",
+      "s5": "Immatriculation et taxes nationales",
+      "s6": "Scénarios et risques"
     }
   },
   "shipping": {

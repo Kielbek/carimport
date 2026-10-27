@@ -243,6 +243,21 @@
       "downloadBelow": "Varat to lejupielādēt šeit jebkurā laikā.",
       "slow": "Tas aizņem ilgāk nekā parasti. Pēc brīža atsvaidziniet lapu – ja e-pasts ir iestatīts, atskaite pienāks arī jūsu pastkastītē.",
       "refresh": "Pārbaudīt vēlreiz"
+    },
+    "charts": {
+      "total": "Kopā līdz durvīm (vidēji)",
+      "range": "Scenāriju diapazons",
+      "importCosts": "Importa izmaksas",
+      "importShare": "+{{pct}} pie auto un izsoles cenas",
+      "leadTime": "Laiks līdz reģistrācijai",
+      "structure": "Kur aiziet nauda",
+      "scenarios": "Kopējās izmaksas katrā scenārijā",
+      "topItems": "Lielākās izmaksu pozīcijas",
+      "note": "Summas valūtā {{cur}}, vidējais scenārijs. Novietojiet kursoru uz grafika, lai redzētu detaļas.",
+      "firm": "Minimālais laiks",
+      "delay": "Iespējama kavēšanās",
+      "axis": "Ass: dienas no pirkuma",
+      "breakdown": "Detalizēts izmaksu sadalījums"
     }
   },
   "result": {
@@ -312,6 +327,15 @@
       "sent": "Nosūtīts – pārbaudiet pastkastīti (arī mēstules).",
       "error": "Neizdevās nosūtīt. Mēģiniet vēlreiz pēc brīža.",
       "limit": "Šī tāme jau nosūtīta vairākas reizes. Pārrēķiniet, lai nosūtītu jaunu."
+    },
+    "progress": {
+      "eyebrow": "Aprēķins",
+      "s1": "Cenas un izsoles maksas",
+      "s2": "Transports un jūras pārvadājums",
+      "s3": "Muitas vērtība, muita un akcīze",
+      "s4": "PVN un ostas maksas",
+      "s5": "Reģistrācija un valsts nodevas",
+      "s6": "Scenāriji un riski"
     }
   },
   "shipping": {

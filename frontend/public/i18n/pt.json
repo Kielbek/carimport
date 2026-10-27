@@ -243,6 +243,21 @@
       "downloadBelow": "Pode descarregá-lo aqui a qualquer momento.",
       "slow": "Está a demorar mais do que o habitual. Atualize daqui a pouco – se o e-mail estiver configurado, o relatório chegará também à sua caixa de entrada.",
       "refresh": "Verificar novamente"
+    },
+    "charts": {
+      "total": "Total até à porta (médio)",
+      "range": "Intervalo dos cenários",
+      "importCosts": "Custos de importação",
+      "importShare": "+{{pct}} sobre o preço do carro e do leilão",
+      "leadTime": "Tempo até à matrícula",
+      "structure": "Para onde vai o dinheiro",
+      "scenarios": "Custo total em cada cenário",
+      "topItems": "Maiores rubricas de custo",
+      "note": "Valores em {{cur}}, cenário médio. Passe o rato pelo gráfico para ver detalhes.",
+      "firm": "Tempo mínimo",
+      "delay": "Possível atraso",
+      "axis": "Eixo: dias desde a compra",
+      "breakdown": "Discriminação detalhada dos custos"
     }
   },
   "result": {
@@ -312,6 +327,15 @@
       "sent": "Enviado – verifique a caixa de entrada (e spam).",
       "error": "Não foi possível enviar. Tente novamente daqui a pouco.",
       "limit": "Esta estimativa já foi enviada várias vezes. Recalcule para enviar uma nova."
+    },
+    "progress": {
+      "eyebrow": "Cálculo",
+      "s1": "Preços e taxas de leilão",
+      "s2": "Transporte e frete marítimo",
+      "s3": "Valor aduaneiro, direitos e imposto especial",
+      "s4": "IVA e taxas portuárias",
+      "s5": "Matrícula e taxas nacionais",
+      "s6": "Cenários e riscos"
     }
   },
   "shipping": {

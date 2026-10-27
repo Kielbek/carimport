@@ -243,6 +243,21 @@
       "downloadBelow": "Ovdje ga možete preuzeti u bilo kojem trenutku.",
       "slow": "Ovo traje dulje nego obično. Osvježite stranicu za trenutak – ako je e-pošta postavljena, izvješće će stići i u vaš sandučić.",
       "refresh": "Provjeri ponovno"
+    },
+    "charts": {
+      "total": "Ukupno do vrata (prosjek)",
+      "range": "Raspon scenarija",
+      "importCosts": "Troškovi uvoza",
+      "importShare": "+{{pct}} na cijenu vozila i aukcije",
+      "leadTime": "Vrijeme do registracije",
+      "structure": "Kamo ide novac",
+      "scenarios": "Ukupni trošak u svakom scenariju",
+      "topItems": "Najveće stavke troškova",
+      "note": "Iznosi u {{cur}}, prosječni scenarij. Za pojedinosti prijeđite mišem preko grafikona.",
+      "firm": "Minimalno vrijeme",
+      "delay": "Moguće kašnjenje",
+      "axis": "Os: dani od kupnje",
+      "breakdown": "Detaljan pregled troškova"
     }
   },
   "result": {
@@ -312,6 +327,15 @@
       "sent": "Poslano – provjerite pretinac (i neželjenu poštu).",
       "error": "Slanje nije uspjelo. Pokušajte ponovno za trenutak.",
       "limit": "Ova je procjena već poslana nekoliko puta. Ponovno izračunajte da biste poslali novu."
+    },
+    "progress": {
+      "eyebrow": "Izračun",
+      "s1": "Cijene i aukcijske naknade",
+      "s2": "Prijevoz i pomorska vozarina",
+      "s3": "Carinska vrijednost, carina i trošarina",
+      "s4": "PDV i lučke naknade",
+      "s5": "Registracija i nacionalne naknade",
+      "s6": "Scenariji i rizici"
     }
   },
   "shipping": {

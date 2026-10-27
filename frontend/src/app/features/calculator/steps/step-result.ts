@@ -1,4 +1,4 @@
-import { Component, computed, inject, output } from '@angular/core';
+import { Component, DestroyRef, computed, effect, inject, output, signal } from '@angular/core';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { CostCategory } from '../../../core/api/api.models';
 import { reportPrice } from '../../../core/currency/currencies';
@@ -22,9 +22,70 @@ import { SITE } from '../../../core/site.config';
   imports: [TranslatePipe, Icon, CountryNamePipe, EstimateEmail],
   template: `
     @if (store.calculating()) {
-      <div class="py-20 text-center">
-        <div class="mx-auto size-12 animate-spin rounded-full border-4 border-line border-t-brand"></div>
-        <p class="mt-5 font-semibold">{{ 'result.calculating' | translate }}</p>
+      <!-- skeleton of the result while the quote is calculated -->
+      <div aria-busy="true">
+        <!-- progress of the calculation, stage by stage -->
+        <section class="card mb-6 p-6 sm:p-7" aria-live="polite">
+          <div class="flex items-end justify-between gap-4">
+            <div>
+              <p class="eyebrow">{{ 'result.progress.eyebrow' | translate }}</p>
+              <p class="mt-2 text-lg font-extrabold">{{ 'result.calculating' | translate }}</p>
+            </div>
+            <p class="text-[34px] font-extrabold leading-none tabular-nums text-brand-text">{{ progress() }}%</p>
+          </div>
+          <div class="mt-4 h-2 overflow-hidden rounded-full bg-panel-2" role="progressbar" aria-valuemin="0" aria-valuemax="100" [attr.aria-valuenow]="progress()">
+            <div class="h-full rounded-full bg-brand" [style.width.%]="progress()"></div>
+          </div>
+          <ol class="mt-5 grid gap-x-6 gap-y-2.5 text-sm sm:grid-cols-2">
+            @for (n of calcStages; track n; let i = $index) {
+              @let state = stageState(i);
+              <li class="flex items-center gap-2.5" [class.text-muted]="state === 'todo'">
+                @if (state === 'done') {
+                  <app-icon name="check-circle" [size]="18" class="shrink-0 text-success" />
+                } @else if (state === 'active') {
+                  <span class="size-[18px] shrink-0 animate-spin rounded-full border-[2.5px] border-line border-t-brand"></span>
+                } @else {
+                  <span class="size-[18px] shrink-0 rounded-full border-2 border-line"></span>
+                }
+                <span [class.font-semibold]="state === 'active'">{{ 'result.progress.s' + n | translate }}</span>
+              </li>
+            }
+          </ol>
+        </section>
+        <div class="flex flex-wrap gap-3" aria-hidden="true">
+          @for (w of [16, 28, 24, 20]; track $index) { <span class="skel h-4" [style.width.mm]="w"></span> }
+        </div>
+        <div class="mt-5 overflow-hidden rounded-[6px] border-2 border-line bg-panel" aria-hidden="true">
+          <div class="grid gap-6 p-6 sm:p-7 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-center">
+            <div>
+              <span class="skel h-3 w-24"></span>
+              <span class="skel mt-4 h-5 w-48"></span>
+              <span class="skel mt-3 h-12 w-64 max-w-full"></span>
+              <span class="skel mt-4 h-4 w-56"></span>
+              <span class="skel mt-4 h-3 w-full max-w-xl"></span>
+              <span class="skel mt-2 h-3 w-3/4 max-w-md"></span>
+            </div>
+            <div class="rounded-[4px] bg-panel-2/60 p-5">
+              <span class="skel h-5 w-44"></span>
+              <span class="skel mt-3 h-3 w-full"></span>
+              <span class="skel mt-2 h-3 w-4/5"></span>
+              <span class="skel mt-4 h-12 w-full"></span>
+              <span class="skel mx-auto mt-3 h-3 w-40"></span>
+              <span class="skel mx-auto mt-2 h-3 w-48"></span>
+            </div>
+          </div>
+          <div class="grid gap-3 border-t border-line px-6 py-6 sm:grid-cols-3 sm:px-7">
+            @for (i of [0, 1, 2]; track i) {
+              <div class="rounded-[4px] border border-line p-4"><span class="skel h-3 w-24"></span><span class="skel mt-3 h-7 w-36"></span></div>
+            }
+          </div>
+        </div>
+        <span class="skel mt-10 h-5 w-64" aria-hidden="true"></span>
+        <ul class="mt-4 divide-y divide-line border-y border-line" aria-hidden="true">
+          @for (w of [52, 40, 64, 46, 58, 36]; track $index) {
+            <li class="flex items-center justify-between gap-4 py-3.5"><span class="skel h-4" [style.width.mm]="w"></span><span class="skel h-4 w-20"></span></li>
+          }
+        </ul>
       </div>
     } @else if (store.error(); as e) {
       <div class="rounded-[4px] bg-danger-soft p-5 text-danger">
@@ -149,6 +210,38 @@ export class StepResult {
   private readonly translate = inject(TranslateService);
   protected readonly s = this.store.state;
   protected readonly partners = SITE.partners;
+
+  /** What the engine works through, shown ticking off while the quote is calculated. */
+  protected readonly calcStages = [1, 2, 3, 4, 5, 6];
+  protected readonly progress = signal(0);
+
+  constructor() {
+    let frame = 0;
+    inject(DestroyRef).onDestroy(() => cancelAnimationFrame(frame));
+    effect(() => {
+      cancelAnimationFrame(frame);
+      if (!this.store.calculating() || typeof requestAnimationFrame === 'undefined') {
+        return;
+      }
+      const start = performance.now();
+      const tick = (now: number) => {
+        // eases to 99% over the minimum duration; the result replaces the screen when the server has answered
+        const t = Math.min((now - start) / CalculatorStore.CALC_MIN_MS, 1);
+        this.progress.set(Math.min(99, Math.round(100 * (1 - Math.pow(1 - t, 2.2)))));
+        if (this.store.calculating()) {
+          frame = requestAnimationFrame(tick);
+        }
+      };
+      this.progress.set(0);
+      frame = requestAnimationFrame(tick);
+    });
+  }
+
+  protected stageState(i: number): 'done' | 'active' | 'todo' {
+    const per = 100 / this.calcStages.length;
+    const p = this.progress();
+    return p >= (i + 1) * per ? 'done' : p >= i * per ? 'active' : 'todo';
+  }
 
   readonly unlock = output<void>();
   readonly partner = output<void>();

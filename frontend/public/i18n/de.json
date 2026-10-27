@@ -243,6 +243,21 @@
       "downloadBelow": "Sie können ihn hier jederzeit herunterladen.",
       "slow": "Das dauert länger als üblich. Laden Sie die Seite gleich neu – ist der E-Mail-Versand eingerichtet, kommt der Bericht auch in Ihr Postfach.",
       "refresh": "Erneut prüfen"
+    },
+    "charts": {
+      "total": "Gesamt bis vor die Tür (Mittel)",
+      "range": "Spanne der Szenarien",
+      "importCosts": "Importkosten",
+      "importShare": "+{{pct}} zum Fahrzeug- und Auktionspreis",
+      "leadTime": "Dauer bis zur Zulassung",
+      "structure": "Wohin das Geld geht",
+      "scenarios": "Gesamtkosten je Szenario",
+      "topItems": "Größte Kostenpositionen",
+      "note": "Beträge in {{cur}}, mittleres Szenario. Für Details mit der Maus über das Diagramm fahren.",
+      "firm": "Mindestdauer",
+      "delay": "Mögliche Verzögerung",
+      "axis": "Achse: Tage ab Kauf",
+      "breakdown": "Detaillierte Kostenaufstellung"
     }
   },
   "result": {
@@ -312,6 +327,15 @@
       "sent": "Gesendet – prüfen Sie Ihr Postfach (auch Spam).",
       "error": "Senden fehlgeschlagen. Bitte gleich noch einmal versuchen.",
       "limit": "Diese Schätzung wurde bereits mehrmals gesendet. Rechnen Sie neu, um eine neue zu senden."
+    },
+    "progress": {
+      "eyebrow": "Berechnung",
+      "s1": "Preise und Auktionsgebühren",
+      "s2": "Transport und Seefracht",
+      "s3": "Zollwert, Zoll und Verbrauchsteuer",
+      "s4": "Einfuhrumsatzsteuer und Hafengebühren",
+      "s5": "Zulassung und nationale Gebühren",
+      "s6": "Szenarien und Risiken"
     }
   },
   "shipping": {

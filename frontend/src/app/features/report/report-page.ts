@@ -11,6 +11,7 @@ import { pathFor } from '../../core/routing/paths';
 import { Icon } from '../../shared/icon/icon';
 import { LanguageService } from '../../core/i18n/language.service';
 import { recallOrder, rememberOrder } from './order-tokens';
+import { ReportCharts } from './report-charts';
 
 const STAGES = ['PURCHASE', 'SHIPPING', 'CUSTOMS', 'REGISTRATION'] as const;
 const CATEGORIES: CostCategory[] = ['VEHICLE', 'TRANSPORT', 'TAXES', 'REGISTRATION', 'RISK'];
@@ -24,7 +25,7 @@ interface Row { code: string; line: CostLine; amounts: number[] }
  */
 @Component({
   selector: 'app-report-page',
-  imports: [TranslatePipe, MoneyPipe, LocalNumberPipe, RouterLink, Icon],
+  imports: [TranslatePipe, MoneyPipe, LocalNumberPipe, RouterLink, Icon, ReportCharts],
   template: `
     <div class="site max-w-5xl py-12">
       <a [routerLink]="home()" class="link-arrow text-sm"><app-icon name="arrow-left" [size]="16" /> {{ 'report.back' | translate }}</a>
@@ -91,7 +92,10 @@ interface Row { code: string; line: CostLine; amounts: number[] }
           </button>
         </header>
 
-        <div class="card mt-8 overflow-x-auto">
+        <app-report-charts [results]="results()" [main]="r.result" [locale]="lang.locale()" animate.enter="reveal-enter" />
+
+        <h2 class="mt-12 text-xl font-extrabold">{{ 'report.charts.breakdown' | translate }}</h2>
+        <div class="card mt-4 overflow-x-auto">
           <table class="w-full min-w-[760px] text-sm">
             <thead class="bg-bg-soft text-left text-[12px] uppercase tracking-wider text-muted">
               <tr>
@@ -144,15 +148,6 @@ interface Row { code: string; line: CostLine; amounts: number[] }
           </table>
         </div>
         <p class="mt-3 text-xs text-muted">{{ 'report.scenarioMethod' | translate }}</p>
-
-        <section class="mt-12">
-          <h2 class="text-xl font-extrabold">{{ 'report.timeline' | translate }}: {{ r.result.timeline.totalMin }}–{{ r.result.timeline.totalMax }} {{ 'report.days' | translate }}</h2>
-          <ul class="mt-4 grid gap-2 sm:grid-cols-5">
-            @for (st of r.result.timeline.stages; track st.code) {
-              <li class="card p-4"><span class="block text-xs text-muted">{{ 'timeline.' + st.code | translate }}</span><span class="mt-1 block font-bold">{{ st.minDays }}–{{ st.maxDays }}</span></li>
-            }
-          </ul>
-        </section>
 
         <section class="mt-12">
           <h2 class="text-xl font-extrabold">{{ 'report.plan' | translate }}</h2>
