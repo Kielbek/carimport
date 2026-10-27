@@ -463,7 +463,8 @@
     "language": "Idioma",
     "blog": "Blog",
     "taxes": "Calculadora de aranceles e impuestos",
-    "method": "Cómo calculamos"
+    "method": "Cómo calculamos",
+    "toTop": "Volver arriba"
   },
   "footer": {
     "about": "Calculadora independiente de los costes de importación de coches de fuera de la UE. No vendemos ni importamos coches – calculamos lo que realmente cuestan.",
@@ -525,8 +526,8 @@
     },
     "costs": {
       "eyebrow": "De qué se compone el precio",
-      "title": "Arancel, impuesto especial e IVA calculados en el mismo orden que en la aduana",
-      "lead": "Cada impuesto es la base del siguiente, así que el orden importa. El puerto de despacho determina el tipo de IVA; el país de matriculación, el impuesto especial.",
+      "title": "Arancel, IVA e impuesto de matriculación en el mismo orden que en la aduana",
+      "lead": "Cada impuesto es la base del siguiente. El puerto de despacho fija el IVA; al matricular en España se paga el impuesto de matriculación según el CO₂.",
       "cif": {
         "title": "Valor en aduana (CIF)",
         "formula": "precio + tasa de subasta + transporte + flete + seguro",
@@ -538,14 +539,14 @@
         "text": "El tipo depende del código SA; motos 6–8 %."
       },
       "excise": {
-        "title": "Impuesto especial (PL)",
-        "formula": "(CIF + arancel) × 3,1 % hasta 2,0 l · 18,6 % por encima",
-        "text": "Híbridos 1,55 % / 9,3 %, eléctricos 0 %. Se paga en el país de matriculación."
+        "title": "Impuesto de matriculación (ES)",
+        "formula": "0 % hasta 120 g · 4,75 % hasta 159 g · 9,75 % hasta 199 g · 14,75 % desde 200 g",
+        "text": "Sobre el valor del coche (tablas de Hacienda para usados); eléctricos 0 %. Canarias, Ceuta y Melilla tienen tipos propios."
       },
       "vat": {
         "title": "IVA de importación",
-        "formula": "(CIF + arancel + impuesto especial* + descarga) × tipo del país de despacho",
-        "text": "*El impuesto especial solo se incluye cuando el despacho se realiza en el país de matriculación."
+        "formula": "(CIF + arancel + descarga) × tipo del país de despacho",
+        "text": "El impuesto de matriculación se paga en España y no forma parte de la base del IVA de importación."
       }
     },
     "ports": {
@@ -680,7 +681,7 @@
       "taxes": {
         "title": "Aranceles e impuestos",
         "i1": "Arancel según TARIC (10 %, 10–22 % para pick-ups)",
-        "i2": "Impuesto especial según motor y combustible",
+        "i2": "Impuesto de matriculación según CO₂",
         "i3": "IVA en el país del puerto de despacho",
         "i4": "Tipo de cambio del banco central del mismo día"
       },
@@ -754,12 +755,12 @@
       "a": "Para los turismos (NC 8703) el arancel es del 10 % del valor en aduana CIF, del 10–22 % para pick-ups y camiones ligeros (8704) y del 6–8 % para motos. Los vehículos históricos de más de 30 años en estado original pueden acogerse al 0 %. El valor en aduana es el precio de compra más las tasas de subasta, el transporte hasta la frontera de la UE y el seguro. El arancel del 0 % para coches fabricados en EE. UU. (Reglamento (UE) 2026/1455, hasta finales de 2029) exige una prueba de fabricación en EE. UU. aceptada por la aduana y transporte directo desde EE. UU.; una factura o un informe Carfax no bastan. Si no, 10 %."
     },
     "q2": {
-      "q": "¿Qué impuesto especial se aplica al importar un coche a Polonia?",
-      "a": "Coches de combustión hasta 2000 cm³: 3,1 %; por encima de 2000 cm³: 18,6 %. Híbridos: 1,55 % hasta 2000 cm³ y 9,3 % hasta 3500 cm³. Los híbridos enchufables de hasta 2000 cm³ y los coches eléctricos están exentos. La base es el valor en aduana más el arancel, convertido a PLN."
+      "q": "¿Qué impuesto de matriculación paga un coche importado en España?",
+      "a": "El impuesto especial sobre determinados medios de transporte (IEDMT) depende del CO₂ WLTP: 0 % hasta 120 g/km, 4,75 % hasta 159 g/km, 9,75 % hasta 199 g/km y 14,75 % desde 200 g/km. Se aplica al valor del coche; para usados, según las tablas de Hacienda con depreciación por antigüedad. Los eléctricos están exentos."
     },
     "q3": {
-      "q": "¿Dónde conviene despachar el coche: Bremerhaven, Róterdam o Gdynia?",
-      "a": "El IVA de importación lo cobra el país de despacho: 19 % en Alemania, 21 % en los Países Bajos y 23 % en Polonia. Despachar en Alemania reduce el IVA, pero hay que sumar un camión portavehículos hasta Polonia y pagar el impuesto especial por separado en la oficina tributaria en un plazo de 14 días. La calculadora compara las opciones para tu coche."
+      "q": "¿Dónde despachar el coche: Valencia, Barcelona o Algeciras?",
+      "a": "El IVA de importación lo cobra el país de despacho: 21 % en España, igual que en Países Bajos y Bélgica; 19 % en Alemania. Para un coche usado el IVA pagado allí es definitivo, pero hay que sumar el transporte hasta España, y el impuesto de matriculación se paga siempre aquí. Por eso un puerto español suele ser lo más sencillo. La calculadora compara los puertos para su coche."
     },
     "q4": {
       "q": "¿Qué es el régimen aduanero 4200?",

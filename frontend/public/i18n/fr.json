@@ -463,7 +463,8 @@
     "language": "Langue",
     "blog": "Blog",
     "taxes": "Calculateur de droits et taxes",
-    "method": "Notre méthode"
+    "method": "Notre méthode",
+    "toTop": "Haut de page"
   },
   "footer": {
     "about": "Calculateur indépendant des coûts d’importation de voitures hors UE. Nous ne vendons ni n’importons de voitures – nous calculons ce qu’elles coûtent vraiment.",
@@ -525,8 +526,8 @@
     },
     "costs": {
       "eyebrow": "Ce qui compose le prix",
-      "title": "Droits de douane, accise et TVA calculés dans le même ordre qu’en douane",
-      "lead": "Chaque taxe sert d’assiette à la suivante, l’ordre compte donc. Le port de dédouanement fixe le taux de TVA ; le pays d’immatriculation fixe l’accise.",
+      "title": "Droits, TVA et malus dans le même ordre qu'à la douane",
+      "lead": "Chaque taxe sert de base à la suivante. Le port de dédouanement fixe la TVA ; l'immatriculation en France ajoute le malus et la taxe régionale.",
       "cif": {
         "title": "Valeur en douane (CIF)",
         "formula": "prix + frais d’enchère + transport + fret + assurance",
@@ -538,14 +539,14 @@
         "text": "Le taux dépend du code SH ; motos 6–8 %."
       },
       "excise": {
-        "title": "Accise (PL)",
-        "formula": "(CIF + droits) × 3,1 % jusqu’à 2,0 l · 18,6 % au-delà",
-        "text": "Hybrides 1,55 % / 9,3 %, électriques 0 %. Payée dans le pays d’immatriculation."
+        "title": "Malus et carte grise (FR)",
+        "formula": "malus CO₂ dès 108 g (max 80 000 € dès 192 g) + malus au poids dès 1 500 kg",
+        "text": "−10 % par année d'âge pour un véhicule d'occasion importé ; électriques exonérées. S'y ajoute la taxe régionale par cheval fiscal."
       },
       "vat": {
         "title": "TVA à l’importation",
-        "formula": "(CIF + droits + accise* + déchargement) × taux du pays de dédouanement",
-        "text": "*L’accise n’est incluse que si le dédouanement a lieu dans le pays d’immatriculation."
+        "formula": "(CIF + droits + déchargement) × taux du pays de dédouanement",
+        "text": "Le malus est payé à l'immatriculation en France et n'entre pas dans la base de la TVA à l'import."
       }
     },
     "ports": {
@@ -680,7 +681,7 @@
       "taxes": {
         "title": "Droits et taxes",
         "i1": "Droits de douane selon TARIC (10 %, 10–22 % pour les pick-up)",
-        "i2": "Accise selon la cylindrée et le carburant",
+        "i2": "Malus CO₂, malus au poids et taxe régionale",
         "i3": "TVA du pays du port de dédouanement",
         "i4": "Taux de change de la banque centrale du jour"
       },
@@ -754,12 +755,12 @@
       "a": "Pour les voitures particulières (NC 8703), les droits de douane s’élèvent à 10 % de la valeur en douane CIF, à 10–22 % pour les pick-up et les véhicules utilitaires légers (8704) et à 6–8 % pour les motos. Les véhicules de collection de plus de 30 ans en état d’origine peuvent bénéficier d’un taux de 0 %. La valeur en douane correspond au prix d’achat majoré des frais d’enchère, du transport jusqu’à la frontière de l’UE et de l’assurance. Le droit de 0 % sur les voitures fabriquées aux États-Unis (règlement (UE) 2026/1455, jusqu'à fin 2029) exige une preuve de fabrication américaine acceptée par la douane et un transport direct depuis les États-Unis – une facture ou un rapport Carfax ne suffit pas. Sinon 10 %."
     },
     "q2": {
-      "q": "Quelle accise s’applique à l’importation d’une voiture en Pologne ?",
-      "a": "Voitures thermiques jusqu’à 2000 cm³ : 3,1 %, au-delà de 2000 cm³ : 18,6 %. Hybrides : 1,55 % jusqu’à 2000 cm³ et 9,3 % jusqu’à 3500 cm³. Les hybrides rechargeables jusqu’à 2000 cm³ et les voitures électriques en sont exonérés. L’assiette est la valeur en douane majorée des droits de douane, convertie en PLN."
+      "q": "Quel malus s'applique à une voiture importée en France ?",
+      "a": "Le malus CO₂ 2026 démarre à 108 g/km et atteint 80 000 € à partir de 192 g/km ; le malus au poids s'applique dès 1 500 kg. Pour une voiture d'occasion importée, les deux sont réduits de 10 % par année d'âge. Les voitures électriques en sont exonérées. S'ajoute la taxe régionale par cheval fiscal. Le calculateur l'estime à partir du CO₂ WLTP, de la puissance, du poids et de l'âge."
     },
     "q3": {
-      "q": "Où vaut-il mieux dédouaner la voiture : Bremerhaven, Rotterdam ou Gdynia ?",
-      "a": "La TVA à l’importation est perçue par le pays de dédouanement : 19 % en Allemagne, 21 % aux Pays-Bas et 23 % en Pologne. Dédouaner en Allemagne réduit la TVA, mais il faut ajouter un camion porte-voitures jusqu’en Pologne et payer l’accise séparément auprès de l’administration fiscale dans les 14 jours. Le calculateur compare les options pour votre voiture."
+      "q": "Où dédouaner : Le Havre, Anvers ou Bremerhaven ?",
+      "a": "La TVA à l'import est perçue par le pays de dédouanement : 20 % en France, 21 % en Belgique, 19 % en Allemagne. Pour une voiture d'occasion, la TVA payée là-bas est définitive : dédouaner à Bremerhaven peut économiser 1 point, mais le transport jusqu'en France s'ajoute et le malus est toujours payé en France. Le calculateur compare les ports pour votre voiture."
     },
     "q4": {
       "q": "Qu’est-ce que le régime douanier 4200 ?",

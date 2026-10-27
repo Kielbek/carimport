@@ -463,7 +463,8 @@
     "language": "Idioma",
     "blog": "Blog",
     "taxes": "Calculadora de direitos e impostos",
-    "method": "Como calculamos"
+    "method": "Como calculamos",
+    "toTop": "Voltar ao topo"
   },
   "footer": {
     "about": "Calculadora independente dos custos de importação de carros de fora da UE. Não vendemos nem importamos carros – calculamos quanto custam realmente.",
@@ -525,8 +526,8 @@
     },
     "costs": {
       "eyebrow": "De que é feito o preço",
-      "title": "Direitos, imposto especial de consumo e IVA calculados pela mesma ordem que na alfândega",
-      "lead": "Cada imposto é a base do seguinte, por isso a ordem importa. O porto de desalfandegamento define a taxa de IVA; o país de matrícula define o imposto especial de consumo.",
+      "title": "Direitos, IVA e ISV pela mesma ordem que na alfândega",
+      "lead": "Cada imposto é a base do seguinte. O porto de desalfandegamento define o IVA; ao matricular em Portugal paga-se o ISV.",
       "cif": {
         "title": "Valor aduaneiro (CIF)",
         "formula": "preço + taxa do leilão + transporte + frete + seguro",
@@ -538,14 +539,14 @@
         "text": "A taxa depende do código SH; motociclos 6–8%."
       },
       "excise": {
-        "title": "Imposto especial de consumo (PL)",
-        "formula": "(CIF + direitos) × 3,1% até 2,0 l · 18,6% acima",
-        "text": "Híbridos 1,55% / 9,3%, elétricos 0%. Pago no país de matrícula."
+        "title": "ISV (PT)",
+        "formula": "componente cilindrada + componente CO₂ (tabela gasolina ou gasóleo)",
+        "text": "Para usados importados, redução por idade até 80 %; híbridos e plug-in com taxas reduzidas, elétricos isentos."
       },
       "vat": {
         "title": "IVA na importação",
-        "formula": "(CIF + direitos + imposto especial de consumo* + descarga) × taxa do país de desalfandegamento",
-        "text": "*O imposto especial de consumo só é incluído quando o desalfandegamento é feito no país de matrícula."
+        "formula": "(CIF + direitos + descarga) × taxa do país de desalfandegamento",
+        "text": "O ISV paga-se em Portugal na matrícula e não entra na base do IVA de importação."
       }
     },
     "ports": {
@@ -680,7 +681,7 @@
       "taxes": {
         "title": "Direitos e impostos",
         "i1": "Direitos segundo a TARIC (10%, 10–22% para pick-ups)",
-        "i2": "Imposto especial de consumo por motor e combustível",
+        "i2": "ISV por cilindrada, CO₂ e idade",
         "i3": "IVA no país do porto de desalfandegamento",
         "i4": "Câmbio do banco central do próprio dia"
       },
@@ -754,12 +755,12 @@
       "a": "Para automóveis ligeiros de passageiros (NC 8703) os direitos são de 10% do valor aduaneiro CIF, 10–22% para pick-ups e veículos comerciais ligeiros (8704) e 6–8% para motociclos. Os veículos de coleção com mais de 30 anos no estado original podem beneficiar de 0%. O valor aduaneiro é o preço de compra mais as taxas do leilão, o transporte até à fronteira da UE e o seguro. O direito de 0% para carros fabricados nos EUA (Regulamento (UE) 2026/1455, até ao fim de 2029) exige prova de fabrico nos EUA aceite pela alfândega e transporte direto dos EUA – uma fatura ou relatório Carfax não chega. Caso contrário, 10%."
     },
     "q2": {
-      "q": "Que imposto especial de consumo se aplica ao importar um carro para a Polónia?",
-      "a": "Carros com motor de combustão até 2000 cm³: 3,1%, acima de 2000 cm³: 18,6%. Híbridos: 1,55% até 2000 cm³ e 9,3% até 3500 cm³. Os híbridos plug-in até 2000 cm³ e os carros elétricos estão isentos. A base é o valor aduaneiro mais os direitos, convertido em PLN."
+      "q": "Quanto ISV paga um carro importado para Portugal?",
+      "a": "O imposto sobre veículos soma uma componente de cilindrada e uma componente ambiental pelo CO₂ WLTP (tabelas diferentes para gasolina e gasóleo, que paga mais). Num usado importado aplica-se uma redução por idade, até 80 % a partir de 10 anos. Híbridos e plug-in pagam uma percentagem, elétricos estão isentos. A calculadora estima-o pelo motor, CO₂ e idade."
     },
     "q3": {
-      "q": "Onde é melhor desalfandegar o carro: Bremerhaven, Roterdão ou Gdynia?",
-      "a": "O IVA na importação é cobrado pelo país de desalfandegamento: 19% na Alemanha, 21% nos Países Baixos e 23% na Polónia. Desalfandegar na Alemanha reduz o IVA, mas acresce o camião porta-automóveis até à Polónia e o imposto especial de consumo é pago à parte na repartição de finanças no prazo de 14 dias. A calculadora compara as opções para o seu carro."
+      "q": "Onde desalfandegar: Lisboa, Leixões ou Valência?",
+      "a": "O IVA de importação é cobrado pelo país de desalfandegamento: 23 % em Portugal, 21 % em Espanha e nos Países Baixos. Para um carro usado o IVA pago lá é definitivo: Valência poupa 2 pontos, mas soma-se o transporte até Portugal e o ISV paga-se sempre cá. A calculadora compara os portos para o seu carro."
     },
     "q4": {
       "q": "O que é o procedimento aduaneiro 4200?",

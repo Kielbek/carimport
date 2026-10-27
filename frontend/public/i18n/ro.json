@@ -463,7 +463,8 @@
     "language": "Limbă",
     "blog": "Blog",
     "taxes": "Calculator taxe vamale",
-    "method": "Cum calculăm"
+    "method": "Cum calculăm",
+    "toTop": "Sus"
   },
   "footer": {
     "about": "Calculator independent al costurilor de import pentru mașini din afara UE. Nu vindem și nu importăm mașini – calculăm cât costă de fapt.",
@@ -525,8 +526,8 @@
     },
     "costs": {
       "eyebrow": "Din ce se compune prețul",
-      "title": "Taxe vamale, accize și TVA calculate în aceeași ordine ca la vamă",
-      "lead": "Fiecare taxă este baza pentru următoarea, așa că ordinea contează. Portul de vămuire stabilește cota de TVA; țara de înmatriculare stabilește accizele.",
+      "title": "Taxe vamale, TVA și timbru de mediu în aceeași ordine ca la vamă",
+      "lead": "Fiecare taxă este baza următoarei. Portul de vămuire stabilește TVA-ul; la prima înmatriculare în România se plătește timbrul de mediu.",
       "cif": {
         "title": "Valoarea în vamă (CIF)",
         "formula": "preț + taxa de licitație + transport + navlu + asigurare",
@@ -538,14 +539,14 @@
         "text": "Cota depinde de codul SA (HS); motociclete 6–8%."
       },
       "excise": {
-        "title": "Accize (PL)",
-        "formula": "(CIF + taxe vamale) × 3,1% până la 2,0 l · 18,6% peste",
-        "text": "Hibride 1,55% / 9,3%, electrice 0%. Se plătesc în țara de înmatriculare."
+        "title": "Timbru de mediu (RO)",
+        "formula": "după norma Euro, CO₂ și vechime · calculatorul AFM",
+        "text": "Se plătește o singură dată, la prima înmatriculare în România; electricele sunt scutite."
       },
       "vat": {
         "title": "TVA la import",
-        "formula": "(CIF + taxe vamale + accize* + descărcare) × cota țării de vămuire",
-        "text": "*Accizele se includ doar la vămuirea în țara de înmatriculare."
+        "formula": "(CIF + taxă vamală + descărcare) × cota țării de vămuire",
+        "text": "Timbrul de mediu se plătește în România și nu intră în baza TVA la import."
       }
     },
     "ports": {
@@ -680,7 +681,7 @@
       "taxes": {
         "title": "Taxe vamale și impozite",
         "i1": "Taxe vamale conform TARIC (10%, 10–22% pentru pickupuri)",
-        "i2": "Accize în funcție de motor și combustibil",
+        "i2": "Timbrul de mediu și taxele de înmatriculare",
         "i3": "TVA în țara portului de vămuire",
         "i4": "Cursul băncii centrale din aceeași zi"
       },
@@ -754,12 +755,12 @@
       "a": "Pentru autoturisme (NC 8703) taxa vamală este de 10% din valoarea în vamă CIF, 10–22% pentru pickupuri și camionete (8704) și 6–8% pentru motociclete. Vehiculele de colecție mai vechi de 30 de ani, în stare originală, se pot încadra la 0%. Valoarea în vamă este prețul de achiziție plus taxele de licitație, transportul până la frontiera UE și asigurarea. Taxa de 0% pentru mașinile fabricate în SUA (Regulamentul (UE) 2026/1455, până la sfârșitul lui 2029) cere o dovadă a fabricației în SUA acceptată de vamă și transport direct din SUA – o factură sau un raport Carfax nu sunt suficiente. Altfel 10%."
     },
     "q2": {
-      "q": "Ce accize se aplică la importul unei mașini în Polonia?",
-      "a": "Mașini cu motor cu ardere internă până la 2000 cm³: 3,1%, peste 2000 cm³: 18,6%. Hibride: 1,55% până la 2000 cm³ și 9,3% până la 3500 cm³. Hibridele plug-in până la 2000 cm³ și mașinile electrice sunt scutite. Baza este valoarea în vamă plus taxele vamale, convertită în PLN."
+      "q": "Ce taxe plătesc la înmatricularea unei mașini importate în România?",
+      "a": "Pe lângă taxa vamală de 10 % și TVA-ul la import (21 % la vămuirea în Constanța), la prima înmatriculare se plătește timbrul de mediu, calculat după norma de poluare Euro, emisiile de CO₂ și vechime. Suma exactă o dă calculatorul AFM; în calculatorul nostru o puteți introduce direct."
     },
     "q3": {
-      "q": "Unde este cel mai bine să vămuiești mașina: Bremerhaven, Rotterdam sau Gdynia?",
-      "a": "TVA la import se percepe de țara de vămuire: 19% în Germania, 21% în Țările de Jos și 23% în Polonia. Vămuirea în Germania reduce TVA, dar se adaugă un trailer auto până în Polonia, iar accizele le plătești separat la administrația fiscală în termen de 14 zile. Calculatorul compară variantele pentru mașina ta."
+      "q": "Unde să vămuiesc mașina: Constanța, Varna sau Bremerhaven?",
+      "a": "TVA-ul la import este încasat de țara de vămuire: 21 % în România, 20 % în Bulgaria, 19 % în Germania. Pentru o mașină second-hand TVA-ul plătit acolo este definitiv, dar se adaugă transportul până în România, iar timbrul de mediu se plătește oricum aici. Calculatorul compară porturile pentru mașina dvs."
     },
     "q4": {
       "q": "Ce este procedura vamală 4200?",

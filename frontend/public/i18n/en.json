@@ -463,7 +463,8 @@
     "language": "Language",
     "blog": "Blog",
     "taxes": "Customs & tax calculator",
-    "method": "How we calculate"
+    "method": "How we calculate",
+    "toTop": "Back to top"
   },
   "footer": {
     "about": "Independent calculator of import costs for cars from outside the EU. We neither sell nor import cars – we work out what they really cost.",
@@ -525,8 +526,8 @@
     },
     "costs": {
       "eyebrow": "What the price is made of",
-      "title": "Duty, excise and VAT calculated in the same order as at customs",
-      "lead": "Each tax is the base for the next, so the order matters. The port of clearance sets the VAT rate; the country of registration sets the excise.",
+      "title": "Duty, VAT and registration tax in the same order as at customs",
+      "lead": "Each tax is the base for the next, so the order matters. The port of clearance sets the VAT rate; the country of registration sets the registration tax.",
       "cif": {
         "title": "Customs value (CIF)",
         "formula": "price + auction fee + transport + freight + insurance",
@@ -538,14 +539,14 @@
         "text": "The rate depends on the HS code; motorcycles 6–8%."
       },
       "excise": {
-        "title": "Excise (PL)",
-        "formula": "(CIF + duty) × 3.1% up to 2.0 l · 18.6% above",
-        "text": "Hybrids 1.55% / 9.3%, EVs 0%. Paid in the country of registration."
+        "title": "Registration tax (by country)",
+        "formula": "NL BPM · AT NoVA · FR malus · IE VRT · PL excise … · none in DE, CZ, SE",
+        "text": "One-off tax of the country where the car is registered – by CO₂, power or value. The calculator prices it for your country."
       },
       "vat": {
         "title": "Import VAT",
-        "formula": "(CIF + duty + excise* + unloading) × rate of clearance country",
-        "text": "*Excise is included only when cleared in the country of registration."
+        "formula": "(CIF + duty + unloading) × rate of the clearance country",
+        "text": "The registration tax is paid at home and is not part of the import VAT base (except Polish excise when cleared in Poland)."
       }
     },
     "ports": {
@@ -680,7 +681,7 @@
       "taxes": {
         "title": "Duty & taxes",
         "i1": "Duty per TARIC (10%, 10–22% for pickups)",
-        "i2": "Excise by engine and fuel type",
+        "i2": "Registration tax of your country (CO₂, power, value)",
         "i3": "VAT in the port-of-clearance country",
         "i4": "Same-day central bank exchange rate"
       },
@@ -754,12 +755,12 @@
       "a": "For passenger cars (CN 8703) duty is 10% of the CIF customs value, 10–22% for pickups and light trucks (8704) and 6–8% for motorcycles. Collector vehicles over 30 years old in original condition may qualify for 0%. The customs value is the purchase price plus auction fees, transport to the EU border and insurance. 0% duty on US-built cars (Regulation (EU) 2026/1455, until the end of 2029) needs proof of US manufacture accepted by customs and direct shipment from the USA – an invoice or a Carfax report alone is not enough. Without it the duty is 10%."
     },
     "q2": {
-      "q": "What excise applies when importing a car to Poland?",
-      "a": "Combustion cars up to 2000 cm³: 3.1%, above 2000 cm³: 18.6%. Hybrids: 1.55% up to 2000 cm³ and 9.3% up to 3500 cm³. Plug-in hybrids up to 2000 cm³ and electric cars are exempt. The base is the customs value plus duty, converted to PLN."
+      "q": "Which registration tax applies when importing a car into the EU?",
+      "a": "It depends on the country of registration: the Netherlands charge BPM by CO₂, Austria NoVA, France the CO₂ and weight malus, Ireland VRT on the market value, Denmark registreringsafgift up to 150% of the value, Poland an excise of 3.1% or 18.6%. Germany, Czechia, Sweden, Latvia, Luxembourg and Bulgaria have no one-off registration tax. The calculator estimates it from CO₂, power, weight and age."
     },
     "q3": {
-      "q": "Where is it best to clear the car: Bremerhaven, Rotterdam or Gdynia?",
-      "a": "Import VAT is charged by the clearance country: 19% in Germany, 21% in the Netherlands and 23% in Poland. Clearing in Germany lowers VAT, but you add a car carrier to Poland and pay excise separately at the tax office within 14 days. The calculator compares the options for your car."
+      "q": "Where is it best to clear the car: Bremerhaven, Rotterdam or Antwerp?",
+      "a": "Import VAT is charged by the country of clearance: 19% in Germany, 21% in the Netherlands and Belgium. For a used car the VAT paid there is final, so clearing where VAT is lower can save money – but road transport home is added and the registration tax is always paid in your own country. The calculator compares the ports for your car."
     },
     "q4": {
       "q": "What is customs procedure 4200?",

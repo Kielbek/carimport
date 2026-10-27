@@ -463,7 +463,8 @@
     "language": "Språk",
     "blog": "Blogg",
     "taxes": "Tull- och skattekalkylator",
-    "method": "Så räknar vi"
+    "method": "Så räknar vi",
+    "toTop": "Till toppen"
   },
   "footer": {
     "about": "Oberoende kalkylator för importkostnader för bilar från länder utanför EU. Vi varken säljer eller importerar bilar – vi räknar ut vad de verkligen kostar.",
@@ -525,8 +526,8 @@
     },
     "costs": {
       "eyebrow": "Vad priset består av",
-      "title": "Tull, punktskatt och moms beräknas i samma ordning som hos tullen",
-      "lead": "Varje skatt är underlag för nästa, så ordningen spelar roll. Förtullningshamnen avgör momssatsen; registreringslandet avgör punktskatten.",
+      "title": "Tull, moms och fordonsskatt i samma ordning som hos tullen",
+      "lead": "Varje skatt är grunden för nästa. Förtullningshamnen avgör momsen; i Sverige finns ingen engångsskatt vid registrering.",
       "cif": {
         "title": "Tullvärde (CIF)",
         "formula": "pris + auktionsavgift + transport + frakt + försäkring",
@@ -538,14 +539,14 @@
         "text": "Satsen beror på HS-numret; motorcyklar 6–8 %."
       },
       "excise": {
-        "title": "Punktskatt (PL)",
-        "formula": "(CIF + tull) × 3,1 % upp till 2,0 l · 18,6 % över",
-        "text": "Hybrider 1,55 % / 9,3 %, elbilar 0 %. Betalas i registreringslandet."
+        "title": "Registrering (SE)",
+        "formula": "ingen registreringsskatt · ursprungskontroll och registreringsbesiktning",
+        "text": "Sedan årlig fordonsskatt – med malus (högre skatt) de första tre åren för bilar med högt CO₂."
       },
       "vat": {
         "title": "Importmoms",
-        "formula": "(CIF + tull + punktskatt* + lossning) × förtullningslandets momssats",
-        "text": "*Punktskatten ingår bara vid förtullning i registreringslandet."
+        "formula": "(CIF + tull + lossning) × momssats i förtullningslandet",
+        "text": "Med förtullning i Sverige 25 % importmoms – i Tyskland 19 %."
       }
     },
     "ports": {
@@ -680,7 +681,7 @@
       "taxes": {
         "title": "Tull och skatter",
         "i1": "Tull enligt TARIC (10 %, 10–22 % för pickuper)",
-        "i2": "Punktskatt efter motor och bränsletyp",
+        "i2": "Registreringsbesiktning och fordonsskatt",
         "i3": "Moms i förtullningshamnens land",
         "i4": "Centralbankens växelkurs samma dag"
       },
@@ -754,12 +755,12 @@
       "a": "För personbilar (KN 8703) är tullen 10 % av tullvärdet (CIF), 10–22 % för pickuper och lätta lastbilar (8704) och 6–8 % för motorcyklar. Samlarfordon över 30 år i originalskick kan omfattas av 0 %. Tullvärdet är köpesumman plus auktionsavgifter, transport till EU:s gräns och försäkring. 0 % tull på bilar byggda i USA (förordning (EU) 2026/1455, till slutet av 2029) kräver bevis på amerikansk tillverkning som tullen godtar och direkt transport från USA – en faktura eller Carfax-rapport räcker inte. Annars 10 %."
     },
     "q2": {
-      "q": "Vilken punktskatt gäller vid import av en bil till Polen?",
-      "a": "Bilar med förbränningsmotor upp till 2000 cm³: 3,1 %, över 2000 cm³: 18,6 %. Hybrider: 1,55 % upp till 2000 cm³ och 9,3 % upp till 3500 cm³. Laddhybrider upp till 2000 cm³ och elbilar är befriade. Underlaget är tullvärdet plus tull, omräknat till PLN."
+      "q": "Vilka skatter betalar jag när jag importerar en bil till Sverige?",
+      "a": "10 % tull på tullvärdet (pris, auktionsavgifter, frakt och försäkring till EU-gränsen) och importmoms på tullvärdet plus tull. Någon engångsskatt vid registrering finns inte – bara ursprungskontroll, registreringsbesiktning och sedan årlig fordonsskatt, de första tre åren med malus för bilar med högt CO₂-utsläpp. Bilar tillverkade i USA kan sedan juli 2026 få 0 % tull om ursprunget bevisas."
     },
     "q3": {
-      "q": "Var är det bäst att förtulla bilen: Bremerhaven, Rotterdam eller Gdynia?",
-      "a": "Importmomsen tas ut av förtullningslandet: 19 % i Tyskland, 21 % i Nederländerna och 23 % i Polen. Förtullning i Tyskland sänker momsen, men du lägger till en biltransport till Polen och betalar punktskatten separat till skattekontoret inom 14 dagar. Kalkylatorn jämför alternativen för din bil."
+      "q": "Var ska bilen förtullas: Göteborg, Malmö eller Bremerhaven?",
+      "a": "Importmomsen tas ut av förtullningslandet: 25 % i Sverige och Danmark, 19 % i Tyskland. För en begagnad bil är momsen som betalats där slutlig: Bremerhaven sparar 6 procentenheter, men transporten till Sverige tillkommer. Kalkylatorn jämför hamnarna för din bil."
     },
     "q4": {
       "q": "Vad är tullförfarande 4200?",

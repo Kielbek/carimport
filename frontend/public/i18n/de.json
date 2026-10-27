@@ -463,7 +463,8 @@
     "language": "Sprache",
     "blog": "Blog",
     "taxes": "Zoll- und Steuerrechner",
-    "method": "So rechnen wir"
+    "method": "So rechnen wir",
+    "toTop": "Nach oben"
   },
   "footer": {
     "about": "Unabhängiger Rechner für die Importkosten von Autos außerhalb der EU. Wir verkaufen und importieren keine Autos – wir rechnen aus, was sie wirklich kosten.",
@@ -525,8 +526,8 @@
     },
     "costs": {
       "eyebrow": "Woraus sich der Preis zusammensetzt",
-      "title": "Zoll, Verbrauchsteuer und USt in derselben Reihenfolge wie beim Zoll",
-      "lead": "Jede Steuer ist Basis der nächsten. Der Abfertigungshafen bestimmt die USt, das Zulassungsland die Verbrauchsteuer.",
+      "title": "Zoll, USt und Zulassung in derselben Reihenfolge wie beim Zoll",
+      "lead": "Jede Steuer ist Basis der nächsten. Der Abfertigungshafen bestimmt die Einfuhrumsatzsteuer; in Deutschland fällt bei der Zulassung keine einmalige Steuer an.",
       "cif": {
         "title": "Zollwert (CIF)",
         "formula": "Preis + Auktionsgebühr + Transport + Fracht + Versicherung",
@@ -538,14 +539,14 @@
         "text": "Satz hängt vom HS-Code ab; Motorräder 6–8 %."
       },
       "excise": {
-        "title": "Verbrauchsteuer (PL)",
-        "formula": "(CIF + Zoll) × 3,1 % bis 2,0 l · 18,6 % darüber",
-        "text": "Hybride 1,55 % / 9,3 %, E-Autos 0 %. Fällig im Zulassungsland."
+        "title": "Zulassung (DE)",
+        "formula": "keine Zulassungssteuer · nur Gebühren und Kennzeichen (ca. 60–150 €)",
+        "text": "Danach jährliche Kfz-Steuer nach Hubraum und CO₂; Elektroautos mit Erstzulassung bis Ende 2030 befreit. Für US-Autos kommen Einzelabnahme (§ 21 StVZO) und Umbauten hinzu."
       },
       "vat": {
         "title": "Einfuhrumsatzsteuer",
-        "formula": "(CIF + Zoll + VSt* + Entladung) × Satz des Abfertigungslandes",
-        "text": "*Verbrauchsteuer nur bei Verzollung im Zulassungsland."
+        "formula": "(CIF + Zoll + Entladung) × Satz des Abfertigungslandes",
+        "text": "Bei Verzollung in Deutschland 19 % Einfuhrumsatzsteuer – der niedrigste Satz der großen Häfen."
       }
     },
     "ports": {
@@ -680,7 +681,7 @@
       "taxes": {
         "title": "Zoll & Steuern",
         "i1": "Zoll nach TARIC (10 %, 10–22 % für Pickups)",
-        "i2": "Verbrauchsteuer nach Motor und Antrieb",
+        "i2": "Zulassungskosten und Umrüstung in Deutschland",
         "i3": "EUSt im Land des Zollhafens",
         "i4": "Tagesaktueller Referenzkurs"
       },
@@ -754,12 +755,12 @@
       "a": "Für Pkw (KN 8703) beträgt der Zoll 10 % des CIF-Zollwerts, für Pickups und leichte Lkw (8704) 10–22 %, für Motorräder 6–8 %. Oldtimer über 30 Jahre im Originalzustand können 0 % erhalten. Der Zollwert umfasst Kaufpreis, Auktionsgebühren, Transport bis zur EU-Grenze und Versicherung. 0 % Zoll auf in den USA gebaute Autos (Verordnung (EU) 2026/1455, bis Ende 2029) erfordert einen vom Zoll anerkannten Nachweis der US-Herstellung und direkten Transport aus den USA – Rechnung oder Carfax-Bericht allein reichen nicht. Sonst 10 %."
     },
     "q2": {
-      "q": "Welche Verbrauchsteuer gilt beim Import nach Polen?",
-      "a": "Verbrenner bis 2000 cm³: 3,1 %, darüber 18,6 %. Hybride: 1,55 % bis 2000 cm³ und 9,3 % bis 3500 cm³. Plug-in-Hybride bis 2000 cm³ und E-Autos sind befreit. Basis ist Zollwert plus Zoll, umgerechnet in PLN."
+      "q": "Welche Steuern fallen beim Autoimport nach Deutschland an?",
+      "a": "10 % Zoll auf den Zollwert (Kaufpreis, Auktionsgebühren, Transport und Versicherung bis zur EU-Grenze) und 19 % Einfuhrumsatzsteuer auf Zollwert plus Zoll. Eine einmalige Zulassungssteuer gibt es in Deutschland nicht – nur Zulassungsgebühren, die Einzelabnahme beim TÜV/DEKRA und danach die jährliche Kfz-Steuer. Für in den USA gebaute Autos kann seit Juli 2026 0 % Zoll gelten, wenn der US-Ursprung nachgewiesen wird."
     },
     "q3": {
-      "q": "Wo verzollt man am besten: Bremerhaven, Rotterdam oder Gdynia?",
-      "a": "Die Einfuhrumsatzsteuer erhebt das Abfertigungsland: 19 % in Deutschland, 21 % in den Niederlanden, 23 % in Polen. Deutschland senkt die USt, dafür fallen Autotransport und separate Verbrauchsteuer (binnen 14 Tagen) an."
+      "q": "Wo verzollt man am besten: Bremerhaven, Hamburg oder Rotterdam?",
+      "a": "Die Einfuhrumsatzsteuer erhebt das Abfertigungsland: 19 % in Deutschland, 21 % in den Niederlanden und Belgien. Für ein Auto, das in Deutschland zugelassen wird, ist Bremerhaven oder Hamburg daher meist am günstigsten – niedrigste USt und kurzer Weg. Der Rechner vergleicht die Häfen für Ihr Auto."
     },
     "q4": {
       "q": "Was ist das Zollverfahren 4200?",
