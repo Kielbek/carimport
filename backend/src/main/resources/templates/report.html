@@ -8,7 +8,7 @@
             @bottom-center { content: counter(page) " / " counter(pages); font-size: 8pt; color: #6b6b72; } }
         body { font-family: 'Report Sans', sans-serif; font-size: 8.8pt; color: #101011; }
         h1 { font-size: 17pt; margin: 0 0 3mm 0; }
-        h2 { font-size: 11.5pt; margin: 7mm 0 2mm 0; padding-bottom: 1mm; border-bottom: 1.5px solid #ffc000; }
+        h2 { font-size: 11.5pt; margin: 7mm 0 2mm 0; padding-bottom: 1mm; border-bottom: 1.5px solid #ffc000; page-break-after: avoid; }
         .meta td { padding: 0.5mm 5mm 0.5mm 0; }
         .meta td.k { color: #5d5d64; }
         table.t { width: 100%; border-collapse: collapse; }
@@ -26,6 +26,24 @@
         .boxes .v { font-size: 15pt; font-weight: bold; }
         .warn { background: #fff8db; border-left: 3px solid #ffc000; padding: 1.5mm 3mm; margin: 1mm 0; }
         .disclaimer { margin-top: 8mm; font-size: 7.5pt; color: #6b6b72; }
+        .cols { width: 100%; border-collapse: collapse; }
+        .cols > tbody > tr > td, .cols > tr > td { vertical-align: top; padding: 0; }
+        .donut { width: 50mm; height: 50mm; }
+        .legend { border-collapse: collapse; width: 100%; }
+        .legend td { padding: 1mm 1.4mm; border-bottom: 1px solid #ececee; }
+        .key { display: inline-block; width: 3mm; height: 3mm; border-radius: 0.8mm; margin-right: 1.5mm; }
+        .headline { font-size: 18pt; font-weight: bold; margin: 0; }
+        h3 { font-size: 9.5pt; margin: 0 0 1.5mm 0; }
+        .bars { width: 100%; border-collapse: collapse; }
+        .bars td { padding: 0.9mm 1.4mm; vertical-align: middle; }
+        .bars td.label { width: 34%; }
+        .bars td.val { width: 18%; text-align: right; white-space: nowrap; }
+        .bar { height: 3.6mm; border-radius: 0 1mm 1mm 0; }
+        .stack, .gantt { width: 100%; border-collapse: collapse; table-layout: fixed; }
+        table.stack td, table.gantt td { height: 4.4mm; padding: 0; border-bottom: 0; border-right: 0.5mm solid #fff; }
+        table.stack td.rest, table.gantt td.rest, table.gantt td.off { border-right: 0; }
+        td.firm { background: #101011; }
+        td.delay { background: #c9c9cf; }
         .watermark { position: fixed; top: 62mm; left: 0; width: 100%; text-align: center; font-size: 96pt;
             font-weight: bold; color: #fff0c2; transform: rotate(-18deg); z-index: -1; }
     </style>
@@ -56,6 +74,61 @@
                 + ' g/km · ' + request.effectiveMassKg() + ' kg'}">vehicle</td>
         <td></td><td></td></tr>
 </table>
+
+<th:block th:if="${charts.donut() != null}">
+    <h2 th:text="#{report.overview}">Overview</h2>
+    <table class="cols"><tr>
+        <td style="width: 42%; padding-right: 8mm;">
+            <table class="cols"><tr>
+                <td style="width: 54mm;"><img class="donut" th:src="${charts.donut()}" alt=""/></td>
+                <td>
+                    <div class="small" th:text="#{report.total}">Total</div>
+                    <p class="headline" th:text="${#numbers.formatDecimal(charts.total().amount(), 1, 'DEFAULT', 0, 'DEFAULT')} + ' ' + ${result.displayCurrency()}">0</p>
+                    <div class="small" th:if="${charts.importShare().signum() > 0}"
+                         th:text="#{report.importShare(${#numbers.formatDecimal(charts.importCosts().amount(), 1, 'DEFAULT', 0, 'DEFAULT')}, ${result.displayCurrency()}, ${charts.importShare()})}">share</div>
+                </td>
+            </tr></table>
+            <h3 style="margin-top: 3mm;" th:text="#{report.structure}">Structure</h3>
+            <table class="legend">
+                <tr th:each="s : ${charts.slices()}">
+                    <td><span class="key" th:style="'background:' + ${s.color()}"></span><span th:text="#{'category.' + ${s.category()}}">cat</span></td>
+                    <td class="num" th:text="${#numbers.formatDecimal(s.amount().amount(), 1, 'DEFAULT', 0, 'DEFAULT')} + ' ' + ${result.displayCurrency()}">0</td>
+                    <td class="num" style="width: 14mm;"><b th:text="${#numbers.formatDecimal(s.percent(), 1, 'DEFAULT', 1, 'DEFAULT')} + ' %'">0 %</b></td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <th:block th:if="${!charts.scenarios().isEmpty()}">
+                <h3 th:text="#{report.scenarioChart}">Scenarios</h3>
+                <table class="bars" style="margin-bottom: 4mm;">
+                    <tr th:each="b : ${charts.scenarios()}">
+                        <td class="label" th:text="#{'scenario.' + ${b.scenario()}}">scenario</td>
+                        <td>
+                            <table class="stack"><tr>
+                                <td th:each="seg : ${b.segments()}" th:style="'width:' + ${seg.width()} + '%; background:' + ${seg.color()}"></td>
+                                <td class="rest" th:if="${b.rest().signum() > 0}" th:style="'width:' + ${b.rest()} + '%'"></td>
+                            </tr></table>
+                        </td>
+                        <td class="val"><b th:text="${#numbers.formatDecimal(b.total().amount(), 1, 'DEFAULT', 0, 'DEFAULT')}">0</b></td>
+                    </tr>
+                </table>
+            </th:block>
+            <h3 th:text="#{report.topItems}">Largest items</h3>
+            <table class="bars">
+                <tr th:each="it : ${charts.items()}">
+                    <td class="label">
+                        <span th:text="#{'cost.' + ${it.line().code()}}">Label</span>
+                        <span th:if="${it.line().params().get('localName') != null}" th:text="' (' + ${it.line().params().get('localName')} + ')'"></span>
+                    </td>
+                    <td><div class="bar" th:style="'width:' + ${it.width()} + '%; background:' + ${it.color()}"></div></td>
+                    <td class="val"><span th:text="${#numbers.formatDecimal(it.amount().amount(), 1, 'DEFAULT', 0, 'DEFAULT')}">0</span>
+                        <span class="small" th:text="' · ' + ${#numbers.formatDecimal(it.percent(), 1, 'DEFAULT', 1, 'DEFAULT')} + ' %'"></span></td>
+                </tr>
+            </table>
+            <p class="small" th:text="#{report.chartNote(${result.displayCurrency()})}">note</p>
+        </td>
+    </tr></table>
+</th:block>
 
 <th:block th:if="${table != null}">
     <h2 th:text="#{report.scenarios}">Scenarios</h2>
@@ -129,16 +202,28 @@
     </table>
 </th:block>
 
+<div style="page-break-inside: avoid;">
 <h2 th:text="#{report.timeline}">Timeline</h2>
 <table class="t">
-    <thead><tr><th th:text="#{report.stage}">Stage</th><th class="num" th:text="#{report.days}">Days</th></tr></thead>
-    <tr th:each="st : ${result.timeline().stages()}">
-        <td th:text="#{'timeline.' + ${st.code()}}">stage</td>
-        <td class="num" th:text="${st.minDays()} + '–' + ${st.maxDays()}">1–2</td>
+    <thead><tr><th style="width: 30%;" th:text="#{report.stage}">Stage</th><th class="num" style="width: 10%;" th:text="#{report.days}">Days</th>
+        <th th:text="#{report.timelineChart}">Gantt</th></tr></thead>
+    <tr th:each="g : ${charts.stages()}">
+        <td th:text="#{'timeline.' + ${g.stage().code()}}">stage</td>
+        <td class="num" th:text="${g.stage().minDays()} + '–' + ${g.stage().maxDays()}">1–2</td>
+        <td style="vertical-align: middle;">
+            <table class="gantt"><tr>
+                <td class="off" th:if="${g.offset().signum() > 0}" th:style="'width:' + ${g.offset()} + '%'"></td>
+                <td class="firm" th:if="${g.firm().signum() > 0}" th:style="'width:' + ${g.firm()} + '%'"></td>
+                <td class="delay" th:if="${g.delay().signum() > 0}" th:style="'width:' + ${g.delay()} + '%'"></td>
+                <td class="rest"></td>
+            </tr></table>
+        </td>
     </tr>
     <tr class="cat"><td th:text="#{report.total}">Total</td>
-        <td class="num" th:text="${result.timeline().totalMin()} + '–' + ${result.timeline().totalMax()}">0</td></tr>
+        <td class="num" th:text="${result.timeline().totalMin()} + '–' + ${result.timeline().totalMax()}">0</td>
+        <td class="small" style="font-weight: normal;" th:text="#{report.timelineLegend}">legend</td></tr>
 </table>
+</div>
 
 <h2 th:text="#{report.plan}">After import</h2>
 <table class="t">

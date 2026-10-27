@@ -51,7 +51,9 @@ public class PdfReportRenderer {
         List<DocumentChecklistService.ChecklistItem> docs =
                 checklist.checklist(quote.getRequest(), quote.getResult().historic());
         ctx.setVariable("documents", docs);
-        ctx.setVariable("table", quote.getRange() != null ? ScenarioTable.of(quote.getRange()) : null);
+        ScenarioTable table = quote.getRange() != null ? ScenarioTable.of(quote.getRange()) : null;
+        ctx.setVariable("table", table);
+        ctx.setVariable("charts", ReportCharts.of(quote.getResult(), table));
         ctx.setVariable("plan", planner.plan(quote.getRequest(), quote.getResult().route().euPortCode().substring(0, 2)));
         String html = templates.process("report", ctx);
 
