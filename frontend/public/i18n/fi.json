@@ -1556,7 +1556,10 @@
     "working": "Hetkinen…",
     "confirmed": "Tilauksesi on vahvistettu. Kiitos!",
     "unsubscribed": "Tilaus on peruttu, etkä saa enää uutiskirjeitä.",
-    "invalid": "Linkki on virheellinen tai jo käytetty."
+    "invalid": "Linkki on virheellinen tai jo käytetty.",
+    "popupTitle": "Tullien ja verojen muutokset – ennen kuin maksat",
+    "popupLead": "Lyhyt sähköposti kerran kuussa: uudet verot, rahtihinnat ja keinot maksaa vähemmän auton tuonnissa.",
+    "later": "Ei nyt"
   },
   "taxes": {
     "eyebrow": "Ilmainen työkalu",

@@ -1556,7 +1556,10 @@
     "working": "Un instant…",
     "confirmed": "Votre inscription est confirmée. Merci !",
     "unsubscribed": "Vous êtes désinscrit et ne recevrez plus la newsletter.",
-    "invalid": "Ce lien est invalide ou a déjà été utilisé."
+    "invalid": "Ce lien est invalide ou a déjà été utilisé.",
+    "popupTitle": "Droits et taxes qui changent – avant de payer",
+    "popupLead": "Un court e-mail par mois : nouveaux taux, prix du fret et astuces pour payer moins à l'import d'une voiture.",
+    "later": "Pas maintenant"
   },
   "taxes": {
     "eyebrow": "Outil gratuit",

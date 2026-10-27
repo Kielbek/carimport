@@ -1556,7 +1556,10 @@
     "working": "Un momento…",
     "confirmed": "Tu suscripción está confirmada. ¡Gracias!",
     "unsubscribed": "Te has dado de baja. No recibirás más boletines.",
-    "invalid": "Este enlace no es válido o ya se ha utilizado."
+    "invalid": "Este enlace no es válido o ya se ha utilizado.",
+    "popupTitle": "Cambios en aranceles e impuestos, antes de pagar",
+    "popupLead": "Un e-mail breve al mes: nuevos tipos, precios del flete y formas de pagar menos al importar un coche.",
+    "later": "Ahora no"
   },
   "taxes": {
     "eyebrow": "Herramienta gratuita",

@@ -1556,7 +1556,10 @@
     "working": "Mirkli…",
     "confirmed": "Jūsu pieraksts ir apstiprināts. Paldies!",
     "unsubscribed": "Jūs esat atteicies un vairs nesaņemsiet jaunumus.",
-    "invalid": "Šī saite nav derīga vai jau ir izmantota."
+    "invalid": "Šī saite nav derīga vai jau ir izmantota.",
+    "popupTitle": "Muitas un nodokļu izmaiņas – pirms maksājat",
+    "popupLead": "Reizi mēnesī īss e-pasts: jaunas likmes, kravu cenas un veidi, kā ievedot auto maksāt mazāk.",
+    "later": "Ne tagad"
   },
   "taxes": {
     "eyebrow": "Bezmaksas rīks",
