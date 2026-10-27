@@ -71,6 +71,8 @@ public class InMemoryTariffCatalog implements TariffCatalog {
         for (String eu : List.of("PLGDY", "DEBRV")) {
             ocean.add(new OceanFreightRate("USNWK", eu, ShippingMethod.CONTAINER_SHARED,
                     OceanFreightRate.SizeClass.SEDAN, bd("1300"), bd("1600"), CurrencyCode.USD, 21));
+            ocean.add(new OceanFreightRate("USNWK", eu, ShippingMethod.CONTAINER_SHARED,
+                    OceanFreightRate.SizeClass.OVERSIZE, bd("2100"), bd("2600"), CurrencyCode.USD, 21));
             ocean.add(new OceanFreightRate("USSAV", eu, ShippingMethod.CONTAINER_SHARED,
                     OceanFreightRate.SizeClass.SEDAN, bd("1400"), bd("1700"), CurrencyCode.USD, 23));
             ocean.add(new OceanFreightRate("JPYOK", eu, ShippingMethod.CONTAINER_SHARED,
@@ -111,7 +113,10 @@ public class InMemoryTariffCatalog implements TariffCatalog {
 
         tariffs.add(new CustomsTariff(VehicleCategory.PASSENGER_CAR, false, null, 0, null, "8703", bd("0.10"), "car"));
         tariffs.add(new CustomsTariff(VehicleCategory.PASSENGER_CAR, false, true, 0, null, "870380", bd("0.10"), "ev"));
-        tariffs.add(new CustomsTariff(VehicleCategory.PICKUP_TRUCK, false, null, 0, null, "870421", bd("0.22"), "pickup"));
+        tariffs.add(CustomsTariff.byFuel(VehicleCategory.PICKUP_TRUCK, true, 0, 2500, "870421", bd("0.10"), "pickup d small"));
+        tariffs.add(CustomsTariff.byFuel(VehicleCategory.PICKUP_TRUCK, true, 2501, null, "870421", bd("0.22"), "pickup d"));
+        tariffs.add(CustomsTariff.byFuel(VehicleCategory.PICKUP_TRUCK, false, 0, 2800, "870431", bd("0.10"), "pickup p small"));
+        tariffs.add(CustomsTariff.byFuel(VehicleCategory.PICKUP_TRUCK, false, 2801, null, "870431", bd("0.22"), "pickup p"));
         tariffs.add(new CustomsTariff(null, true, null, 0, null, "970500", bd("0"), "historic"));
 
         destinationFees.add(new DestinationFee("PL", null, "SWORN_TRANSLATION", bd("350"), CurrencyCode.PLN, true, true,

@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Fortoldet i Polen med henblik på registrering i et andet land – tjek registreringsafgifterne i destinationslandet.",
       "exciseDeclarationWithin14Days": "Polsk punktafgift betales på skattekontoret (AKC-U/S) inden for 14 dage efter ankomst.",
-      "pickupMayBeReclassified": "En pickup, der registreres som personbil, kan blive pålagt punktafgift – tjek typegodkendelsen."
+      "pickupMayBeReclassified": "En pickup, der registreres som personbil, kan blive pålagt punktafgift – tjek typegodkendelsen.",
+      "historicNoExcise": "Samlerkøretøj (KN 9705): ingen polsk punktafgift – forudsat at toldmyndigheden godkender denne tarifering."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Toldprocedure 4200: Momsen afregnes af køber i destinationslandet (omvendt betalingspligt, neutral for momsregistrerede virksomheder)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Afhentning i havnen valgt – landtransport hjem er ikke medregnet.",
       "selfDriveNotRunning": "En bil, der ikke kører, kan ikke køres hjem på midlertidige nummerplader – vælg en kranvogn."
+    },
+    "duty": {
+      "preferentialPossible": "Ifølge VIN er bilen bygget i afsenderlandet – med oprindelsesbevis kan tolden være 0 %. Sæt flueben i „Bygget i dette land“ i køretøjstrinnet.",
+      "preferentialOriginProof": "0 % told efter EU's handelsaftale kun med en gyldig erklæring om oprindelse (eller importørens viden) – ellers opkræves fuld sats.",
+      "usOriginProof": "0 % told på biler bygget i USA (forordning (EU) 2026/1455, til udgangen af 2029) kræver toldgodkendt bevis for amerikansk produktion og direkte transport fra USA – en faktura eller Carfax-rapport alene er ikke nok. Ellers 10 %."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "Det afhænger afgifterne af",
     "specLead": "Foreslået ud fra type og motor. Præcise tal (fra VIN eller CoC) gør registreringsafgiften langt mere nøjagtig.",
     "mass": "Egenvægt",
-    "massHint": "I kg. Tæller i Frankrig (vægtmalus) og Estland."
+    "massHint": "I kg. Tæller i Frankrig (vægtmalus) og Estland.",
+    "preferentialOrigin": "Bygget i dette land – 0 % told",
+    "preferentialOriginHint": "EU-handelsaftale / EU–USA-aftale: 0 % i stedet for 10 %, hvis du kan bevise, hvor bilen er bygget (ikke kun hvor den blev solgt). Toldmyndigheden afgør det – lad den for en sikkerheds skyld være tom.",
+    "preferentialVinMatch": "VIN: bygget i dette land"
   },
   "layout": {
     "topbar": "Uafhængig beregner af omkostninger ved import af biler fra USA, Canada, Japan, UAE og Storbritannien til 27 EU-lande",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Told (TARIC)",
-        "formula": "CIF × 10 % personbiler · 22 % pickupper · 0 % veteranbiler",
+        "formula": "CIF × 10 % personbiler · 10–22 % pickupper · 0 % veteranbiler",
         "text": "Satsen afhænger af HS-koden; motorcykler 6–8 %."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Told & afgifter",
-        "i1": "Told efter TARIC (10 %, 22 % for pickupper)",
+        "i1": "Told efter TARIC (10 %, 10–22 % for pickupper)",
         "i2": "Punktafgift efter motor og brændstoftype",
         "i3": "Moms i fortoldningshavnens land",
         "i4": "Centralbankens valutakurs samme dag"
@@ -742,7 +751,7 @@
     "lead": "Kan du ikke finde dit svar? Beregneren viser alle forudsætninger, og PDF-rapporten hver sats og hvert grundlag.",
     "q1": {
       "q": "Hvor meget er tolden på en bil fra USA?",
-      "a": "For personbiler (KN 8703) er tolden 10 % af toldværdien (CIF), 22 % for pickupper og lette lastbiler (8704) og 6–8 % for motorcykler. Veterankøretøjer over 30 år i original stand kan opnå 0 %. Toldværdien er købsprisen plus auktionsgebyrer, transport til EU's grænse og forsikring."
+      "a": "For personbiler (KN 8703) er tolden 10 % af toldværdien (CIF), 10–22 % for pickupper og lette lastbiler (8704) og 6–8 % for motorcykler. Veterankøretøjer over 30 år i original stand kan opnå 0 %. Toldværdien er købsprisen plus auktionsgebyrer, transport til EU's grænse og forsikring. 0 % told på biler bygget i USA (forordning (EU) 2026/1455, til udgangen af 2029) kræver toldgodkendt bevis for amerikansk produktion og direkte transport fra USA – en faktura eller Carfax-rapport alene er ikke nok. Ellers 10 %."
     },
     "q2": {
       "q": "Hvilken punktafgift gælder ved import af en bil til Polen?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Told",
-          "dutyValue": "10 % af CIF-værdien (pickupper 22 %, motorcykler 6–8 %, veteranbiler 0 %)",
+          "dutyValue": "10 % af CIF-værdien (pickupper 10–22 %, motorcykler 6–8 %, veteranbiler 0 %)",
           "vat": "Importmoms",
           "vatValue": "{{vat}} % – {{country}}",
           "vatRange": "17–27 % afhængigt af fortoldningslandet",
@@ -1431,7 +1440,7 @@
     "total": "Afgifter og gebyrer",
     "howTitle": "Sådan beregner vi",
     "how1": "Toldværdi (CIF) = pris + auktionsgebyrer + transport til EU-havnen + forsikring.",
-    "how2": "Told: 10 % af toldværdien (pickupper 22 %, motorcykler 6–8 %) – ens i alle EU-havne.",
+    "how2": "Told: 10 % af toldværdien (pickupper 10–22 %, motorcykler 6–8 %) – ens i alle EU-havne.",
     "how3": "Importmoms betales i havnens land, med dets sats, af toldværdi + told + transport til din adresse. En brugt bil, der fortoldes uden for {{country}}, betaler ikke moms igen derhjemme.",
     "how4": "Registreringslandets nationale afgifter (f.eks. polsk punktafgift) betales derhjemme – uanset havn.",
     "how5": "Rangeringen lægger fragt, havnegebyrer og levering pr. km til din adresse til – den billigste sum står øverst.",
@@ -1547,7 +1556,10 @@
     "working": "Et øjeblik…",
     "confirmed": "Din tilmelding er bekræftet. Tak!",
     "unsubscribed": "Du er afmeldt og modtager ikke flere nyhedsbreve.",
-    "invalid": "Linket er ugyldigt eller allerede brugt."
+    "invalid": "Linket er ugyldigt eller allerede brugt.",
+    "popupTitle": "Ændringer i told og afgifter – før du betaler",
+    "popupLead": "Én kort e-mail om måneden: nye satser, fragtpriser og måder at betale mindre på ved bilimport.",
+    "later": "Ikke nu"
   },
   "taxes": {
     "eyebrow": "Gratis værktøj",

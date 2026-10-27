@@ -27,6 +27,14 @@ export const LAST_INPUT_STEP = 5;
 export const RESULT_STEP: WizardStep = 6;
 export type WizardState = CalculationRequest;
 
+/** World manufacturer prefixes (first VIN characters) of the origins with a 0 % duty for cars built there. */
+const PREFERENTIAL_ORIGINS: Partial<Record<OriginCountry, RegExp>> = {
+  USA: /^[145]/,
+  CANADA: /^2/,
+  JAPAN: /^J/,
+  UK: /^S[A-M]/,
+};
+
 const DEFAULTS: WizardState = {
   originCountry: 'USA',
   auctionHouse: 'COPART',
@@ -61,6 +69,7 @@ const DEFAULTS: WizardState = {
   massKg: null,
   vin: null,
   vehicleDescription: null,
+  preferentialOrigin: null,
 };
 const STORAGE_KEY = 'carimport.wizard.v4';
 const PORT_MODE_KEY = 'carimport.wizard.portMode';
@@ -189,6 +198,14 @@ export class CalculatorStore {
   });
 
   readonly procedure4200Available = computed(() => this.state().buyerType === 'COMPANY');
+  /** Origins with 0 % duty for cars built there (EU-US deal, CETA, EU-Japan EPA, EU-UK TCA). */
+  readonly preferentialAvailable = computed(() => PREFERENTIAL_ORIGINS[this.state().originCountry] !== undefined);
+  /** The VIN's country of manufacture is the origin country - the precondition for the 0 % duty. */
+  readonly vinMadeInOrigin = computed(() => {
+    const vin = this.state().vin;
+    const test = PREFERENTIAL_ORIGINS[this.state().originCountry];
+    return !!vin && !!test && test.test(vin);
+  });
 
   /** Only the inputs that change the route options - typing a price must not refetch. */
   private readonly routeKey = computed(
@@ -401,7 +418,8 @@ export class CalculatorStore {
       : next.auctions[0];
     // 12 000 USD must not silently become 12 000 JPY
     const bidPrice = next.currency === current.currency ? this.state().bidPrice : next.typicalBid;
-    this.patch({ originCountry: origin, auctionHouse, pickupZone: null, departurePort: null, bidPrice });
+    this.patch({ originCountry: origin, auctionHouse, pickupZone: null, departurePort: null, bidPrice,
+      preferentialOrigin: null });
   }
 
   setBuyerType(buyerType: WizardState['buyerType']): void {

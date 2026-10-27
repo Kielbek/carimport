@@ -49,6 +49,8 @@ import java.util.Set;
  * @param massKg             curb weight; null = estimated from category, fuel and displacement
  * @param vin                VIN the vehicle data was read from (shown in the report)
  * @param vehicleDescription make, model and trim as decoded from the VIN or typed (shown in the report)
+ * @param preferentialOrigin the buyer claims 0 % duty because the car was made in the origin country and its origin can
+ *                           be proven ({@link PreferentialDuty}); null = no
  */
 public record CalculationRequest(
         @NotNull OriginCountry originCountry,
@@ -83,7 +85,8 @@ public record CalculationRequest(
         @DecimalMin("0") @DecimalMax("100000000") BigDecimal registrationTaxOwn,
         @Min(50) @Max(10000) Integer massKg,
         @Pattern(regexp = "[A-HJ-NPR-Z0-9]{11,17}") String vin,
-        @Size(max = 120) String vehicleDescription) {
+        @Size(max = 120) String vehicleDescription,
+        Boolean preferentialOrigin) {
 
     public static final int HISTORIC_MIN_AGE = 30;
 
@@ -107,7 +110,7 @@ public record CalculationRequest(
                 vehicleCategory, fuelType, engineCc, productionYear, historicOriginalCondition, condition,
                 shippingMethod, port, destinationCountry, buyerType, customsProcedure, displayCurrency, deliveryMode,
                 distanceKm, pricePerKm, repairEstimate, insuranceEstimate, postImportServices, destinationAddress,
-                destinationLat, destinationLon, co2Gkm, powerKw, registrationTaxOwn, massKg, vin, vehicleDescription);
+                destinationLat, destinationLon, co2Gkm, powerKw, registrationTaxOwn, massKg, vin, vehicleDescription, preferentialOrigin);
     }
 
     /** The same request with repair, insurance and registration tax left to the calculator's proposal. */
@@ -116,7 +119,11 @@ public record CalculationRequest(
                 vehicleCategory, fuelType, engineCc, productionYear, historicOriginalCondition, condition,
                 shippingMethod, euPortCode, destinationCountry, buyerType, customsProcedure, displayCurrency,
                 deliveryMode, deliveryDistanceKm, pricePerKm, null, null, postImportServices, destinationAddress,
-                destinationLat, destinationLon, co2Gkm, powerKw, null, massKg, vin, vehicleDescription);
+                destinationLat, destinationLon, co2Gkm, powerKw, null, massKg, vin, vehicleDescription, preferentialOrigin);
+    }
+
+    public boolean claimsPreferentialOrigin() {
+        return Boolean.TRUE.equals(preferentialOrigin);
     }
 
     public int effectiveCo2() {

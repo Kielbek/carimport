@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Sdoganata in Polonia per l’immatricolazione altrove – verifica le imposte di immatricolazione del Paese di destinazione.",
       "exciseDeclarationWithin14Days": "L’accisa polacca si paga all’ufficio delle imposte (AKC-U/S) entro 14 giorni dall’arrivo.",
-      "pickupMayBeReclassified": "Un pick-up immatricolato come autovettura può essere soggetto ad accisa – verifica l’omologazione."
+      "pickupMayBeReclassified": "Un pick-up immatricolato come autovettura può essere soggetto ad accisa – verifica l’omologazione.",
+      "historicNoExcise": "Veicolo da collezione (NC 9705): nessuna accisa polacca, purché la dogana accetti questa classificazione."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Regime 4200: l’IVA è autoliquidata nel Paese di destinazione (inversione contabile, neutra per i soggetti passivi IVA)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Ritiro in porto selezionato – il trasporto su strada fino a casa non è incluso.",
       "selfDriveNotRunning": "Un’auto non marciante non può circolare con targa provvisoria – scegli il carro attrezzi."
+    },
+    "duty": {
+      "preferentialPossible": "Dal VIN l'auto risulta costruita nel paese di spedizione: con la prova dell'origine il dazio può essere dello 0%. Spunta «Costruita in questo paese» nel passo del veicolo.",
+      "preferentialOriginProof": "Dazio 0% in base all'accordo commerciale UE solo con una dichiarazione di origine valida (o la conoscenza dell'importatore); senza, la dogana applica l'aliquota piena.",
+      "usOriginProof": "Il dazio 0% sulle auto costruite negli USA (regolamento (UE) 2026/1455, fino a fine 2029) richiede una prova della produzione negli USA accettata dalla dogana e il trasporto diretto dagli USA: fattura o report Carfax da soli non bastano. Altrimenti 10%."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "Da cosa dipendono le tasse",
     "specLead": "Proposto in base a tipo e motore. Dati precisi (dal VIN o dal CoC) rendono molto più accurata la tassa di immatricolazione.",
     "mass": "Massa a vuoto",
-    "massHint": "In kg. Conta in Francia (malus sul peso) e in Estonia."
+    "massHint": "In kg. Conta in Francia (malus sul peso) e in Estonia.",
+    "preferentialOrigin": "Costruita in questo paese – dazio 0%",
+    "preferentialOriginHint": "Accordo commerciale UE / intesa UE–USA: 0% invece del 10% se puoi provare dove è stata costruita l'auto (non solo dove è stata venduta). Decide la dogana: per prudenza lascia non spuntato.",
+    "preferentialVinMatch": "VIN: costruita in questo paese"
   },
   "layout": {
     "topbar": "Calcolatore indipendente dei costi di importazione auto da USA, Canada, Giappone, EAU e Regno Unito verso 27 Paesi UE",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Dazio doganale (TARIC)",
-        "formula": "CIF × 10% auto · 22% pick-up · 0% veicoli storici",
+        "formula": "CIF × 10% auto · 10–22% pick-up · 0% veicoli storici",
         "text": "L’aliquota dipende dal codice SA; moto 6–8%."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Dazi e imposte",
-        "i1": "Dazio secondo TARIC (10%, 22% per i pick-up)",
+        "i1": "Dazio secondo TARIC (10%, 10–22% per i pick-up)",
         "i2": "Accisa in base a motore e alimentazione",
         "i3": "IVA nel Paese del porto di sdoganamento",
         "i4": "Cambio della banca centrale del giorno"
@@ -742,7 +751,7 @@
     "lead": "Non trovi la risposta? Il calcolatore mostra ogni ipotesi e il report PDF ogni aliquota e base imponibile.",
     "q1": {
       "q": "Quanto è il dazio doganale su un’auto dagli USA?",
-      "a": "Per le autovetture (NC 8703) il dazio è il 10% del valore in dogana CIF, il 22% per pick-up e autocarri leggeri (8704) e il 6–8% per le moto. I veicoli da collezione con oltre 30 anni in condizioni originali possono beneficiare dello 0%. Il valore in dogana è il prezzo d’acquisto più le commissioni d’asta, il trasporto fino al confine UE e l’assicurazione."
+      "a": "Per le autovetture (NC 8703) il dazio è il 10% del valore in dogana CIF, il 10–22% per pick-up e autocarri leggeri (8704) e il 6–8% per le moto. I veicoli da collezione con oltre 30 anni in condizioni originali possono beneficiare dello 0%. Il valore in dogana è il prezzo d’acquisto più le commissioni d’asta, il trasporto fino al confine UE e l’assicurazione. Il dazio 0% sulle auto costruite negli USA (regolamento (UE) 2026/1455, fino a fine 2029) richiede una prova della produzione negli USA accettata dalla dogana e il trasporto diretto dagli USA: fattura o report Carfax da soli non bastano. Altrimenti 10%."
     },
     "q2": {
       "q": "Quale accisa si applica importando un’auto in Polonia?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Dazio doganale",
-          "dutyValue": "10% del valore CIF (pick-up 22%, moto 6–8%, auto storiche 0%)",
+          "dutyValue": "10% del valore CIF (pick-up 10–22%, moto 6–8%, auto storiche 0%)",
           "vat": "IVA all'importazione",
           "vatValue": "{{vat}}% – {{country}}",
           "vatRange": "17–27% a seconda del Paese di sdoganamento",
@@ -1431,7 +1440,7 @@
     "total": "Imposte e diritti",
     "howTitle": "Come lo calcoliamo",
     "how1": "Valore in dogana (CIF) = prezzo + commissioni d’asta + trasporto fino al porto UE + assicurazione.",
-    "how2": "Dazio doganale: 10% del valore in dogana (pickup 22%, moto 6–8%) – identico in ogni porto UE.",
+    "how2": "Dazio doganale: 10% del valore in dogana (pickup 10–22%, moto 6–8%) – identico in ogni porto UE.",
     "how3": "L’IVA all’importazione si paga nel paese del porto, con la sua aliquota, su valore in dogana + dazio + trasporto fino al tuo indirizzo. Un’auto usata sdoganata fuori dal paese {{country}} non paga di nuovo l’IVA in patria.",
     "how4": "Le imposte nazionali del paese di immatricolazione (es. l’accisa polacca) si pagano in patria, qualunque porto si scelga.",
     "how5": "La classifica aggiunge nolo, diritti portuali e consegna al km fino al tuo indirizzo – il totale più economico è in cima.",
@@ -1547,7 +1556,10 @@
     "working": "Un momento…",
     "confirmed": "La tua iscrizione è confermata. Grazie!",
     "unsubscribed": "Sei stato disiscritto e non riceverai altre newsletter.",
-    "invalid": "Questo link non è valido o è già stato utilizzato."
+    "invalid": "Questo link non è valido o è già stato utilizzato.",
+    "popupTitle": "Dazi e tasse che cambiano – prima di pagare",
+    "popupLead": "Una breve e-mail al mese: nuove aliquote, prezzi dei noli e modi per pagare meno importando un'auto.",
+    "later": "Non ora"
   },
   "taxes": {
     "eyebrow": "Strumento gratuito",

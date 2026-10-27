@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Ingeklaard in Polen voor registratie elders – controleer de registratiebelastingen in het land van bestemming.",
       "exciseDeclarationWithin14Days": "De Poolse accijns wordt binnen 14 dagen na aankomst bij de belastingdienst betaald (AKC-U/S).",
-      "pickupMayBeReclassified": "Een pick-up die als personenauto wordt geregistreerd, kan onder de accijns vallen – controleer de typegoedkeuring."
+      "pickupMayBeReclassified": "Een pick-up die als personenauto wordt geregistreerd, kan onder de accijns vallen – controleer de typegoedkeuring.",
+      "historicNoExcise": "Verzamelvoertuig (GN 9705): geen Poolse accijns – mits de douane deze indeling aanvaardt."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Regeling 4200: de btw wordt in het land van bestemming zelf aangegeven (verleggingsregeling, neutraal voor btw-plichtige ondernemingen)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Afhalen in de haven gekozen – wegtransport naar huis is niet meegerekend.",
       "selfDriveNotRunning": "Een niet-rijdende auto kan niet op een tijdelijk kenteken worden gereden – kies een oprij- of takelwagen."
+    },
+    "duty": {
+      "preferentialPossible": "Volgens het VIN is de auto gebouwd in het land van verzending – met een oorsprongsbewijs kan het invoerrecht 0% zijn. Vink bij de voertuigstap „In dit land gebouwd” aan.",
+      "preferentialOriginProof": "0% invoerrecht onder de EU-handelsovereenkomst alleen met een geldige oorsprongsverklaring (of kennis van de importeur) – anders rekent de douane het volle tarief.",
+      "usOriginProof": "0% invoerrecht op in de VS gebouwde auto's (Verordening (EU) 2026/1455, tot eind 2029) vereist een door de douane aanvaard bewijs van Amerikaanse productie en rechtstreeks vervoer uit de VS – een factuur of Carfax-rapport alleen volstaat niet. Anders 10%."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "Waar de belastingen op gebaseerd zijn",
     "specLead": "Voorgesteld op basis van type en motor. Exacte gegevens (uit de VIN of het CoC) maken de registratiebelasting veel nauwkeuriger.",
     "mass": "Leeggewicht",
-    "massHint": "In kg. Telt mee in Frankrijk (gewichtsmalus) en Estland."
+    "massHint": "In kg. Telt mee in Frankrijk (gewichtsmalus) en Estland.",
+    "preferentialOrigin": "In dit land gebouwd – 0% invoerrecht",
+    "preferentialOriginHint": "EU-handelsovereenkomst / EU-VS-akkoord: 0% in plaats van 10% als u kunt aantonen waar de auto is gebouwd (niet alleen waar hij is verkocht). De douane beslist – laat het voor de zekerheid uit.",
+    "preferentialVinMatch": "VIN: in dit land gebouwd"
   },
   "layout": {
     "topbar": "Onafhankelijke calculator voor de importkosten van auto’s uit de VS, Canada, Japan, de VAE en het VK naar 27 EU-landen",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Invoerrechten (TARIC)",
-        "formula": "CIF × 10% personenauto’s · 22% pick-ups · 0% klassiekers",
+        "formula": "CIF × 10% personenauto’s · 10–22% pick-ups · 0% klassiekers",
         "text": "Het tarief hangt af van de GS-code; motorfietsen 6–8%."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Invoerrechten & belastingen",
-        "i1": "Invoerrechten volgens TARIC (10%, 22% voor pick-ups)",
+        "i1": "Invoerrechten volgens TARIC (10%, 10–22% voor pick-ups)",
         "i2": "Accijns naar motor en brandstof",
         "i3": "Btw in het land van de haven van inklaring",
         "i4": "Wisselkoers van de centrale bank van dezelfde dag"
@@ -742,7 +751,7 @@
     "lead": "Staat uw antwoord er niet bij? De calculator toont elke aanname en het pdf-rapport elk tarief en elke grondslag.",
     "q1": {
       "q": "Hoeveel invoerrechten betaal ik op een auto uit de VS?",
-      "a": "Voor personenauto’s (GN 8703) bedragen de invoerrechten 10% van de douanewaarde (CIF), voor pick-ups en lichte vrachtwagens (8704) 22% en voor motorfietsen 6–8%. Verzamelvoertuigen ouder dan 30 jaar in originele staat kunnen in aanmerking komen voor 0%. De douanewaarde is de aankoopprijs plus veilingkosten, transport tot aan de EU-grens en verzekering."
+      "a": "Voor personenauto’s (GN 8703) bedragen de invoerrechten 10% van de douanewaarde (CIF), voor pick-ups en lichte vrachtwagens (8704) 10–22% en voor motorfietsen 6–8%. Verzamelvoertuigen ouder dan 30 jaar in originele staat kunnen in aanmerking komen voor 0%. De douanewaarde is de aankoopprijs plus veilingkosten, transport tot aan de EU-grens en verzekering. 0% invoerrecht op in de VS gebouwde auto's (Verordening (EU) 2026/1455, tot eind 2029) vereist een door de douane aanvaard bewijs van Amerikaanse productie en rechtstreeks vervoer uit de VS – een factuur of Carfax-rapport alleen volstaat niet. Anders 10%."
     },
     "q2": {
       "q": "Welke accijns geldt bij de invoer van een auto in Polen?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Invoerrechten",
-          "dutyValue": "10% van de CIF-waarde (pick-ups 22%, motorfietsen 6–8%, oldtimers 0%)",
+          "dutyValue": "10% van de CIF-waarde (pick-ups 10–22%, motorfietsen 6–8%, oldtimers 0%)",
           "vat": "Invoer-btw",
           "vatValue": "{{vat}}% – {{country}}",
           "vatRange": "17–27% afhankelijk van het land van inklaring",
@@ -1431,7 +1440,7 @@
     "total": "Belastingen en kosten",
     "howTitle": "Zo rekenen we",
     "how1": "Douanewaarde (CIF) = prijs + veilingkosten + transport naar de EU-haven + verzekering.",
-    "how2": "Invoerrecht: 10% van de douanewaarde (pick-ups 22%, motoren 6–8%) – in elke EU-haven gelijk.",
+    "how2": "Invoerrecht: 10% van de douanewaarde (pick-ups 10–22%, motoren 6–8%) – in elke EU-haven gelijk.",
     "how3": "De invoer-btw betaalt u in het land van de haven, tegen het daar geldende tarief, over douanewaarde + invoerrecht + transport naar uw adres. Een gebruikte auto die buiten {{country}} is ingeklaard, betaalt thuis niet opnieuw btw.",
     "how4": "Nationale belastingen van het land van registratie (bijv. de Poolse accijns) betaalt u thuis, welke haven u ook kiest.",
     "how5": "De ranking telt vracht, havenkosten en levering per km naar uw adres op – het goedkoopste totaal staat bovenaan.",
@@ -1547,7 +1556,10 @@
     "working": "Een ogenblik…",
     "confirmed": "Je inschrijving is bevestigd. Bedankt!",
     "unsubscribed": "Je bent afgemeld en ontvangt geen nieuwsbrieven meer.",
-    "invalid": "Deze link is ongeldig of al gebruikt."
+    "invalid": "Deze link is ongeldig of al gebruikt.",
+    "popupTitle": "Wijzigingen in invoerrechten en belastingen – vóór u betaalt",
+    "popupLead": "Eén korte e-mail per maand: nieuwe tarieven, vrachtprijzen en manieren om minder te betalen bij het importeren van een auto.",
+    "later": "Niet nu"
   },
   "taxes": {
     "eyebrow": "Gratis tool",

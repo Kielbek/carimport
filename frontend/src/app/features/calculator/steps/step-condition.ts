@@ -50,6 +50,23 @@ import { ProposalInput } from '../proposal-input';
           </div>
         </fieldset>
       }
+
+      @if (store.preferentialAvailable()) {
+        <label class="flex cursor-pointer items-start gap-3 rounded-[6px] border border-line bg-panel-2 p-4 sm:col-span-2"
+               animate.enter="reveal-enter" animate.leave="reveal-leave">
+          <input type="checkbox" class="checkbox" [checked]="!!s().preferentialOrigin"
+                 (change)="store.patch({ preferentialOrigin: $any($event.target).checked || null })" />
+          <span>
+            <span class="font-semibold">{{ 'wizard.preferentialOrigin' | translate }}</span>
+            @if (store.vinMadeInOrigin()) {
+              <span class="ml-2 inline-flex items-center gap-1 rounded-full bg-brand/15 px-2 py-0.5 text-xs font-semibold text-brand-text">
+                <app-icon name="check" [size]="12" /> {{ 'wizard.preferentialVinMatch' | translate }}
+              </span>
+            }
+            <span class="mt-1 block text-xs text-muted">{{ 'wizard.preferentialOriginHint' | translate }}</span>
+          </span>
+        </label>
+      }
     </div>
 
     <div class="mt-8 max-w-sm">

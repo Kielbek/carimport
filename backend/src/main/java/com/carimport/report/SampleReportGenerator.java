@@ -109,6 +109,6 @@ public class SampleReportGenerator implements CommandLineRunner {
                 new BigDecimal("18000"), VehicleCategory.PASSENGER_CAR, FuelType.PETROL, 4951, 2019, false,
                 VehicleCondition.RUN_AND_DRIVE, ShippingMethod.CONTAINER_SHARED, port, country, BuyerType.PRIVATE,
                 CustomsProcedure.STANDARD_4000, currency, null, null, null, null, null, null, null, null, null,
-                314, 343, null, 1720, null, "2019 Ford Mustang GT 5.0 V8");
+                314, 343, null, 1720, null, "2019 Ford Mustang GT 5.0 V8", null);
     }
 }

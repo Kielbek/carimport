@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Desalfandegado na Polónia para matrícula noutro país – verifique os impostos de matrícula do destino.",
       "exciseDeclarationWithin14Days": "O imposto especial de consumo polaco é pago na repartição de finanças (AKC-U/S) no prazo de 14 dias após a chegada.",
-      "pickupMayBeReclassified": "Uma pick-up matriculada como ligeiro de passageiros pode estar sujeita a imposto especial de consumo – verifique a homologação."
+      "pickupMayBeReclassified": "Uma pick-up matriculada como ligeiro de passageiros pode estar sujeita a imposto especial de consumo – verifique a homologação.",
+      "historicNoExcise": "Veículo de coleção (NC 9705): sem imposto especial polaco, desde que a alfândega aceite esta classificação."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Procedimento 4200: o IVA é autoliquidado no país de destino (autoliquidação, neutra para sujeitos passivos de IVA)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Levantamento no porto selecionado – o transporte rodoviário até casa não está incluído.",
       "selfDriveNotRunning": "Um carro que não circula não pode ser conduzido com matrícula provisória – escolha um reboque."
+    },
+    "duty": {
+      "preferentialPossible": "Pelo VIN, o carro foi fabricado no país de expedição – com prova de origem o direito aduaneiro pode ser 0%. Marque «Fabricado neste país» no passo do veículo.",
+      "preferentialOriginProof": "Direito de 0% ao abrigo do acordo comercial da UE apenas com uma declaração de origem válida (ou o conhecimento do importador) – sem ela a alfândega aplica a taxa total.",
+      "usOriginProof": "O direito de 0% para carros fabricados nos EUA (Regulamento (UE) 2026/1455, até ao fim de 2029) exige prova de fabrico nos EUA aceite pela alfândega e transporte direto dos EUA – uma fatura ou relatório Carfax não chega. Caso contrário, 10%."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "Do que dependem os impostos",
     "specLead": "Proposto com base no tipo e no motor. Dados exatos (do VIN ou do CoC) tornam o imposto de registo muito mais preciso.",
     "mass": "Peso em vazio",
-    "massHint": "Em kg. Conta em França (malus de peso) e na Estónia."
+    "massHint": "Em kg. Conta em França (malus de peso) e na Estónia.",
+    "preferentialOrigin": "Fabricado neste país – direito 0%",
+    "preferentialOriginHint": "Acordo comercial UE / acordo UE–EUA: 0% em vez de 10% se conseguir provar onde o carro foi fabricado (não apenas onde foi vendido). A alfândega decide – por precaução, deixe desmarcado.",
+    "preferentialVinMatch": "VIN: fabricado neste país"
   },
   "layout": {
     "topbar": "Calculadora independente dos custos de importação de carros dos EUA, Canadá, Japão, EAU e Reino Unido para 27 países da UE",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Direitos aduaneiros (TARIC)",
-        "formula": "CIF × 10% ligeiros · 22% pick-ups · 0% clássicos",
+        "formula": "CIF × 10% ligeiros · 10–22% pick-ups · 0% clássicos",
         "text": "A taxa depende do código SH; motociclos 6–8%."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Direitos e impostos",
-        "i1": "Direitos segundo a TARIC (10%, 22% para pick-ups)",
+        "i1": "Direitos segundo a TARIC (10%, 10–22% para pick-ups)",
         "i2": "Imposto especial de consumo por motor e combustível",
         "i3": "IVA no país do porto de desalfandegamento",
         "i4": "Câmbio do banco central do próprio dia"
@@ -742,7 +751,7 @@
     "lead": "Não encontra a resposta? A calculadora mostra todos os pressupostos e o relatório PDF todas as taxas e bases.",
     "q1": {
       "q": "Quanto são os direitos aduaneiros de um carro dos EUA?",
-      "a": "Para automóveis ligeiros de passageiros (NC 8703) os direitos são de 10% do valor aduaneiro CIF, 22% para pick-ups e veículos comerciais ligeiros (8704) e 6–8% para motociclos. Os veículos de coleção com mais de 30 anos no estado original podem beneficiar de 0%. O valor aduaneiro é o preço de compra mais as taxas do leilão, o transporte até à fronteira da UE e o seguro."
+      "a": "Para automóveis ligeiros de passageiros (NC 8703) os direitos são de 10% do valor aduaneiro CIF, 10–22% para pick-ups e veículos comerciais ligeiros (8704) e 6–8% para motociclos. Os veículos de coleção com mais de 30 anos no estado original podem beneficiar de 0%. O valor aduaneiro é o preço de compra mais as taxas do leilão, o transporte até à fronteira da UE e o seguro. O direito de 0% para carros fabricados nos EUA (Regulamento (UE) 2026/1455, até ao fim de 2029) exige prova de fabrico nos EUA aceite pela alfândega e transporte direto dos EUA – uma fatura ou relatório Carfax não chega. Caso contrário, 10%."
     },
     "q2": {
       "q": "Que imposto especial de consumo se aplica ao importar um carro para a Polónia?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Direitos aduaneiros",
-          "dutyValue": "10% do valor CIF (pick-ups 22%, motociclos 6–8%, veículos históricos 0%)",
+          "dutyValue": "10% do valor CIF (pick-ups 10–22%, motociclos 6–8%, veículos históricos 0%)",
           "vat": "IVA na importação",
           "vatValue": "{{vat}}% – {{country}}",
           "vatRange": "17–27% consoante o país de desalfandegamento",
@@ -1431,7 +1440,7 @@
     "total": "Impostos e taxas",
     "howTitle": "Como calculamos",
     "how1": "Valor aduaneiro (CIF) = preço + taxas de leilão + transporte até ao porto da UE + seguro.",
-    "how2": "Direito aduaneiro: 10% do valor aduaneiro (pick-ups 22%, motociclos 6–8%) – idêntico em todos os portos da UE.",
+    "how2": "Direito aduaneiro: 10% do valor aduaneiro (pick-ups 10–22%, motociclos 6–8%) – idêntico em todos os portos da UE.",
     "how3": "O IVA na importação é pago no país do porto, à sua taxa, sobre valor aduaneiro + direito + transporte até à sua morada. Um carro usado desalfandegado fora do país {{country}} não volta a pagar IVA em casa.",
     "how4": "Os impostos nacionais do país de matrícula (p. ex. o imposto especial polaco) pagam-se em casa, seja qual for o porto.",
     "how5": "O ranking soma frete, taxas portuárias e entrega por km até à sua morada – o total mais barato aparece primeiro.",
@@ -1547,7 +1556,10 @@
     "working": "Um momento…",
     "confirmed": "A sua subscrição está confirmada. Obrigado!",
     "unsubscribed": "A sua subscrição foi cancelada. Não receberá mais newsletters.",
-    "invalid": "Esta ligação é inválida ou já foi utilizada."
+    "invalid": "Esta ligação é inválida ou já foi utilizada.",
+    "popupTitle": "Mudanças em direitos e impostos – antes de pagar",
+    "popupLead": "Um e-mail curto por mês: novas taxas, preços de frete e formas de pagar menos ao importar um carro.",
+    "later": "Agora não"
   },
   "taxes": {
     "eyebrow": "Ferramenta gratuita",

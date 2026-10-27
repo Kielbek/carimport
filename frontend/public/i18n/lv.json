@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Muitots Polijā reģistrācijai citā valstī – pārbaudiet galamērķa valsts reģistrācijas nodokļus.",
       "exciseDeclarationWithin14Days": "Polijas akcīzes nodoklis jāsamaksā nodokļu iestādē (AKC-U/S) 14 dienu laikā pēc ierašanās.",
-      "pickupMayBeReclassified": "Pikaps, kas reģistrēts kā vieglais auto, var būt apliekams ar akcīzes nodokli – pārbaudiet tipa apstiprinājumu."
+      "pickupMayBeReclassified": "Pikaps, kas reģistrēts kā vieglais auto, var būt apliekams ar akcīzes nodokli – pārbaudiet tipa apstiprinājumu.",
+      "historicNoExcise": "Kolekcijas transportlīdzeklis (KN 9705): Polijas akcīzes nodokļa nav – ja muita atzīst šo klasifikāciju."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Procedūra 4200: PVN aprēķina pats pircējs galamērķa valstī (apgrieztā maksāšana, neitrāla PVN maksātājiem)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Izvēlēta saņemšana ostā – autotransports līdz mājām nav iekļauts.",
       "selfDriveNotRunning": "Nebraucošu auto nevar vadīt ar pagaidu numurzīmēm – izvēlieties evakuatoru."
+    },
+    "duty": {
+      "preferentialPossible": "Pēc VIN auto ražots nosūtīšanas valstī – ar izcelsmes pierādījumu muita var būt 0 %. Transportlīdzekļa solī atzīmējiet “Ražots šajā valstī”.",
+      "preferentialOriginProof": "0 % muita saskaņā ar ES tirdzniecības nolīgumu tikai ar derīgu izcelsmes deklarāciju (vai importētāja zināšanām) – citādi piemēro pilnu likmi.",
+      "usOriginProof": "0 % muita ASV ražotiem auto (Regula (ES) 2026/1455, līdz 2029. gada beigām) prasa muitas atzītu pierādījumu par ražošanu ASV un tiešu pārvadājumu no ASV – ar rēķinu vai Carfax pārskatu vien nepietiek. Citādi 10 %."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "No kā atkarīgi nodokļi",
     "specLead": "Ieteikts pēc tipa un dzinēja. Precīzi dati (no VIN vai CoC) padara reģistrācijas nodokļa aprēķinu daudz precīzāku.",
     "mass": "Pašmasa",
-    "massHint": "kg. Ņem vērā Francijā (svara malus) un Igaunijā."
+    "massHint": "kg. Ņem vērā Francijā (svara malus) un Igaunijā.",
+    "preferentialOrigin": "Ražots šajā valstī – muita 0 %",
+    "preferentialOriginHint": "ES tirdzniecības nolīgums / ES–ASV vienošanās: 0 % 10 % vietā, ja varat pierādīt, kur auto ražots (ne tikai kur pārdots). Lemj muita – drošības pēc neatzīmējiet.",
+    "preferentialVinMatch": "VIN: ražots šajā valstī"
   },
   "layout": {
     "topbar": "Neatkarīgs kalkulators automašīnu importa izmaksām no ASV, Kanādas, Japānas, AAE un Apvienotās Karalistes uz 27 ES valstīm",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Muitas nodoklis (TARIC)",
-        "formula": "CIF × 10% vieglie auto · 22% pikapi · 0% klasika",
+        "formula": "CIF × 10% vieglie auto · 10–22% pikapi · 0% klasika",
         "text": "Likme atkarīga no HS koda; motocikliem 6–8%."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Muitas nodoklis un nodokļi",
-        "i1": "Muitas nodoklis pēc TARIC (10%, pikapiem 22%)",
+        "i1": "Muitas nodoklis pēc TARIC (10%, pikapiem 10–22%)",
         "i2": "Akcīze pēc dzinēja un degvielas veida",
         "i3": "PVN muitošanas ostas valstī",
         "i4": "Tās pašas dienas centrālās bankas valūtas kurss"
@@ -742,7 +751,7 @@
     "lead": "Neatradāt atbildi? Kalkulators parāda katru pieņēmumu, bet PDF atskaite – katru likmi un bāzi.",
     "q1": {
       "q": "Cik liels ir muitas nodoklis auto no ASV?",
-      "a": "Vieglajiem automobiļiem (KN 8703) muitas nodoklis ir 10% no CIF muitas vērtības, pikapiem un vieglajām kravas automašīnām (8704) – 22%, bet motocikliem – 6–8%. Kolekcijas transportlīdzekļiem, kas vecāki par 30 gadiem un ir oriģinālā stāvoklī, var piemērot 0%. Muitas vērtība ir pirkuma cena plus izsoles maksas, transports līdz ES robežai un apdrošināšana."
+      "a": "Vieglajiem automobiļiem (KN 8703) muitas nodoklis ir 10% no CIF muitas vērtības, pikapiem un vieglajām kravas automašīnām (8704) – 10–22%, bet motocikliem – 6–8%. Kolekcijas transportlīdzekļiem, kas vecāki par 30 gadiem un ir oriģinālā stāvoklī, var piemērot 0%. Muitas vērtība ir pirkuma cena plus izsoles maksas, transports līdz ES robežai un apdrošināšana. 0 % muita ASV ražotiem auto (Regula (ES) 2026/1455, līdz 2029. gada beigām) prasa muitas atzītu pierādījumu par ražošanu ASV un tiešu pārvadājumu no ASV – ar rēķinu vai Carfax pārskatu vien nepietiek. Citādi 10 %."
     },
     "q2": {
       "q": "Kāds akcīzes nodoklis piemērojams, importējot auto uz Poliju?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Muitas nodoklis",
-          "dutyValue": "10% no CIF vērtības (pikapi 22%, motocikli 6–8%, vēsturiski auto 0%)",
+          "dutyValue": "10% no CIF vērtības (pikapi 10–22%, motocikli 6–8%, vēsturiski auto 0%)",
           "vat": "Importa PVN",
           "vatValue": "{{vat}}% – {{country}}",
           "vatRange": "17–27% atkarībā no muitošanas valsts",
@@ -1431,7 +1440,7 @@
     "total": "Nodokļi un maksas",
     "howTitle": "Kā mēs aprēķinām",
     "how1": "Muitas vērtība (CIF) = cena + izsoles maksas + transports līdz ES ostai + apdrošināšana.",
-    "how2": "Muitas nodoklis: 10% no muitas vērtības (pikapi 22%, motocikli 6–8%) – vienāds visās ES ostās.",
+    "how2": "Muitas nodoklis: 10% no muitas vērtības (pikapi 10–22%, motocikli 6–8%) – vienāds visās ES ostās.",
     "how3": "Importa PVN maksā ostas valstī pēc tās likmes no muitas vērtības + muitas nodokļa + transporta līdz jūsu adresei. Lietots auto, kas muitots ārpus reģistrācijas valsts ({{country}}), mājās PVN vēlreiz nemaksā.",
     "how4": "Reģistrācijas valsts nacionālos nodokļus (piem., Polijas akcīzi) maksā mājās – neatkarīgi no ostas.",
     "how5": "Reitingā pieskaita frakti, ostas maksas un piegādi par km līdz jūsu adresei – lētākā summa ir pirmā.",
@@ -1547,7 +1556,10 @@
     "working": "Mirkli…",
     "confirmed": "Jūsu pieraksts ir apstiprināts. Paldies!",
     "unsubscribed": "Jūs esat atteicies un vairs nesaņemsiet jaunumus.",
-    "invalid": "Šī saite nav derīga vai jau ir izmantota."
+    "invalid": "Šī saite nav derīga vai jau ir izmantota.",
+    "popupTitle": "Muitas un nodokļu izmaiņas – pirms maksājat",
+    "popupLead": "Reizi mēnesī īss e-pasts: jaunas likmes, kravu cenas un veidi, kā ievedot auto maksāt mazāk.",
+    "later": "Ne tagad"
   },
   "taxes": {
     "eyebrow": "Bezmaksas rīks",

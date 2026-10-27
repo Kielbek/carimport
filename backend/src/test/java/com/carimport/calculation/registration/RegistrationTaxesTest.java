@@ -47,8 +47,8 @@ class RegistrationTaxesTest {
 
     @Test
     void austrianNovaUsesCo2RateMalusAndDeduction() {
-        // 175 g: (175 − 91) / 5 = 16.8 % of 30 000 = 5 040, malus 20 × 80 = 1 600, minus 350 → 6 290
-        assertThat(tax(car("AT", FuelType.PETROL, 175, 150, 2000, 3, "30000", "0.2"))).isEqualByComparingTo("6290");
+        // 175 g: (175 − 91) / 5 = 16.8 → 17 % of 30 000 = 5 100, malus 20 × 80 = 1 600, minus 350 → 6 350
+        assertThat(tax(car("AT", FuelType.PETROL, 175, 150, 2000, 3, "30000", "0.2"))).isEqualByComparingTo("6350");
     }
 
     @Test
@@ -107,7 +107,7 @@ class RegistrationTaxesTest {
     void countriesWithoutTaxOrWithOfficialCalculatorAreNotEstimated() {
         assertThat(RegistrationTaxes.assess(car("DE", FuelType.PETROL, 175, 150, 2000, 3, "30000", "0.19"))).isEmpty();
         assertThat(RegistrationTaxes.assess(car("HR", FuelType.PETROL, 175, 150, 2000, 3, "30000", "0.25"))).isEmpty();
-        assertThat(RegistrationTaxes.OFFICIAL_CALCULATOR).containsOnlyKeys("CY", "GR", "HR", "MT");
+        assertThat(RegistrationTaxes.OFFICIAL_CALCULATOR).containsOnlyKeys("CY", "GR", "HR", "MT", "RO");
         assertThat(RegistrationTaxes.NONE).contains("DE", "CZ", "SE");
     }
 }

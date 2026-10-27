@@ -38,19 +38,21 @@ public final class RegistrationTaxes {
     }
 
     /** LV: only the CSDD registration fee (~15-20 €) and the annual operation tax - no one-off tax at registration. */
-    public static final Set<String> NONE = Set.of("BG", "CZ", "DE", "LU", "LV", "RO", "SE");
+    public static final Set<String> NONE = Set.of("BG", "CZ", "DE", "LU", "LV", "SE");
 
     /** Countries with a registration tax we do not estimate, with the official place to compute it. */
     /**
      * Countries whose tax depends on data the wizard cannot have or whose schedule could not be verified: HR (PPMV
      * value component from the new-car list price), GR (scale on the pre-depreciation retail value), CY (no published
-     * schedule), MT (percentages of Transport Malta's own registration value and the car's length).
+     * schedule), MT (percentages of Transport Malta's own registration value and the car's length), RO (timbrul de mediu
+     * by Euro class, CO₂ and age - the AFM calculator).
      */
     public static final Map<String, String> OFFICIAL_CALCULATOR = Map.of(
             "CY", "https://www.mof.gov.cy/mof/customs/customs.nsf",
             "GR", "https://www.aade.gr",
             "HR", "https://www.porezna-uprava.hr",
-            "MT", "https://www.transport.gov.mt");
+            "MT", "https://www.transport.gov.mt",
+            "RO", "https://www.afm.ro/timbru_mediu_calculator.php");
 
     public static Optional<Assessment> assess(Input in) {
         Assessment a = switch (in.country()) {
@@ -82,12 +84,15 @@ public final class RegistrationTaxes {
         };
     }
 
-    /** NoVA 2026: (CO₂ − 91) / 5 % of the net value, max 80 %, malus 80 € per g above 155, minus 350 €. */
+    /**
+     * NoVA 2026: (CO₂ − 91) / 5 % of the net value, rounded to whole percent, max 80 %, malus 80 € per g above 155,
+     * minus 350 €. The 91 g deduction drops by 3 g every 1 January (88 g in 2027).
+     */
     static Assessment austria(Input in) {
         if (in.fuel().isZeroEmission()) {
             return new Assessment(BigDecimal.ZERO, BigDecimal.ZERO, "NOVA_ZERO_EMISSION");
         }
-        double pct = Math.min(80, Math.max(0, (in.co2() - 91) / 5.0));
+        double pct = Math.min(80, Math.max(0, Math.round((in.co2() - 91) / 5.0)));
         double tax = in.netValue().doubleValue() * pct / 100 + Math.max(0, in.co2() - 155) * 80.0 - 350;
         return new Assessment(bd(tax), bd(pct / 100), "NOVA_2026");
     }
@@ -105,34 +110,36 @@ public final class RegistrationTaxes {
     }
 
     /**
-     * Registreringsafgift 2026 (DKK): 25 % / 85 % / 150 % value bands of the price incl. VAT, CO₂ supplement 294 / 587 /
-     * 1 115 kr per g above 0 / 107 / 137 g, minus the 25 500 kr deduction.
+     * Registreringsafgift 2026 (DKK): 25 % / 85 % / 150 % value bands (76 400 / 237 400 kr) of the price incl. VAT, CO₂
+     * supplement 294 / 587 / 1 115 kr per g above 0 / 107 / 137 g, minus the 25 500 kr deduction. Zero-emission cars pay
+     * 40 % of that, less their own 161 300 kr deduction.
      */
     static Assessment denmark(Input in) {
         double v = in.grossValue().doubleValue();
-        double value = 0.25 * Math.min(v, 75_100) + 0.85 * clamp(v - 75_100, 0, 233_300 - 75_100)
-                + 1.5 * Math.max(0, v - 233_300);
+        double value = 0.25 * Math.min(v, 76_400) + 0.85 * clamp(v - 76_400, 0, 237_400 - 76_400)
+                + 1.5 * Math.max(0, v - 237_400);
         int g = in.co2();
         double co2 = 294.0 * Math.min(g, 107) + 587.0 * clamp(g - 107, 0, 30) + 1115.0 * Math.max(0, g - 137);
         double tax = Math.max(0, value + co2 - 25_500);
         if (in.fuel().isZeroEmission()) {
-            tax *= 0.4; // phase-in share for zero-emission cars
+            tax = Math.max(0, tax * 0.4 - 161_300); // phase-in share and the zero-emission deduction for 2026
         }
         return new Assessment(bd(tax), null, "DK_REG_2026");
     }
 
     /**
-     * Registreerimistasu: 300 € + 5 / 40 / 60 / 80 € per g in the 1-117 / 118-150 / 151-200 / 201+ bands + 4 € per kg
-     * above 2 000 kg (2 400 kg for EVs), capped at 4 000 €, all scaled by age down to 0.2 at 15 years.
+     * Registreerimistasu: 150 € + 5 / 40 / 60 / 80 € per g in the 1-117 / 118-150 / 151-200 / 201+ bands + 2 € per kg
+     * above 2 000 kg (2 400 kg for EVs), all scaled by age down to 0.2 at 15 years. The CO₂ band rates differ between
+     * published summaries - the Transport Administration calculator is authoritative.
      */
     static Assessment estonia(Input in) {
         int g = in.co2();
         double co2 = 5.0 * Math.min(g, 117) + 40.0 * clamp(g - 117, 0, 33) + 60.0 * clamp(g - 150, 0, 50)
                 + 80.0 * Math.max(0, g - 200);
         int massFrom = in.fuel().isZeroEmission() ? 2400 : in.fuel() == FuelType.PHEV ? 2200 : 2000;
-        double mass = Math.min(4000, 4.0 * Math.max(0, in.massKg() - massFrom));
+        double mass = 2.0 * Math.max(0, in.massKg() - massFrom);
         double age = Math.max(0.2, 1 - 0.8 * Math.min(in.ageYears(), 15) / 15.0);
-        return new Assessment(bd((300 + co2 + mass) * age), null, "EE_REG_2025");
+        return new Assessment(bd((150 + co2 + mass) * age), null, "EE_REG_2025");
     }
 
     /** IEDMT (Spain, mainland): 0 % up to 120 g, 4.75 % to 159 g, 9.75 % to 199 g, 14.75 % from 200 g. */

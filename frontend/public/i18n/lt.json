@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Muitinis įforminimas Lenkijoje registracijai kitoje šalyje – patikrinkite paskirties šalies registracijos mokesčius.",
       "exciseDeclarationWithin14Days": "Lenkijos akcizas mokamas mokesčių inspekcijoje (AKC-U/S) per 14 dienų nuo atvykimo.",
-      "pickupMayBeReclassified": "Pikapas, registruojamas kaip lengvasis automobilis, gali būti apmokestintas akcizu – patikrinkite patvirtinimą."
+      "pickupMayBeReclassified": "Pikapas, registruojamas kaip lengvasis automobilis, gali būti apmokestintas akcizu – patikrinkite patvirtinimą.",
+      "historicNoExcise": "Kolekcinė transporto priemonė (KN 9705): Lenkijos akcizo nėra – jei muitinė pripažįsta šią klasifikaciją."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Procedūra 4200: PVM apskaičiuojamas paskirties šalyje (atvirkštinis apmokestinimas, neutralus PVM mokėtojams)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Pasirinktas atsiėmimas uoste – kelių transportas namo neįskaičiuotas.",
       "selfDriveNotRunning": "Neveikiančiu automobiliu negalima važiuoti su laikinais numeriais – pasirinkite evakuatorių."
+    },
+    "duty": {
+      "preferentialPossible": "Pagal VIN automobilis pagamintas siuntimo šalyje – turint kilmės įrodymą muitas gali būti 0 %. Transporto priemonės žingsnyje pažymėkite „Pagaminta šioje šalyje“.",
+      "preferentialOriginProof": "0 % muitas pagal ES prekybos susitarimą tik su galiojančia kilmės deklaracija (arba importuotojo žiniomis) – kitaip taikomas visas tarifas.",
+      "usOriginProof": "0 % muitas JAV pagamintiems automobiliams (Reglamentas (ES) 2026/1455, iki 2029 m. pabaigos) reikalauja muitinės pripažinto JAV gamybos įrodymo ir tiesioginio gabenimo iš JAV – vien sąskaitos ar Carfax ataskaitos nepakanka. Kitaip 10 %."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "Nuo ko priklauso mokesčiai",
     "specLead": "Pasiūlyta pagal tipą ir variklį. Tikslūs duomenys (iš VIN ar CoC) gerokai patikslina registracijos mokestį.",
     "mass": "Nuosava masė",
-    "massHint": "kg. Svarbi Prancūzijoje (malus pagal svorį) ir Estijoje."
+    "massHint": "kg. Svarbi Prancūzijoje (malus pagal svorį) ir Estijoje.",
+    "preferentialOrigin": "Pagaminta šioje šalyje – muitas 0 %",
+    "preferentialOriginHint": "ES prekybos susitarimas / ES–JAV susitarimas: 0 % vietoj 10 %, jei įrodysite, kur automobilis pagamintas (ne tik kur parduotas). Sprendžia muitinė – dėl saugumo nežymėkite.",
+    "preferentialVinMatch": "VIN: pagaminta šioje šalyje"
   },
   "layout": {
     "topbar": "Nepriklausoma automobilių importo iš JAV, Kanados, Japonijos, JAE ir JK į 27 ES šalis išlaidų skaičiuoklė",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Muitas (TARIC)",
-        "formula": "CIF × 10 % automobiliams · 22 % pikapams · 0 % klasikiniams",
+        "formula": "CIF × 10 % automobiliams · 10–22 % pikapams · 0 % klasikiniams",
         "text": "Tarifas priklauso nuo HS kodo; motociklams 6–8 %."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Muitai ir mokesčiai",
-        "i1": "Muitas pagal TARIC (10 %, pikapams 22 %)",
+        "i1": "Muitas pagal TARIC (10 %, pikapams 10–22 %)",
         "i2": "Akcizas pagal variklį ir kuro tipą",
         "i3": "PVM muitinio įforminimo uosto šalyje",
         "i4": "Tos dienos centrinio banko valiutos kursas"
@@ -742,7 +751,7 @@
     "lead": "Neradote atsakymo? Skaičiuoklė parodo kiekvieną prielaidą, o PDF ataskaita – kiekvieną tarifą ir bazę.",
     "q1": {
       "q": "Koks muitas taikomas automobiliui iš JAV?",
-      "a": "Lengviesiems automobiliams (KN 8703) muitas yra 10 % muitinės vertės CIF, pikapams ir lengviesiems sunkvežimiams (8704) – 22 %, motociklams – 6–8 %. Senesnėms nei 30 metų originalios būklės kolekcinėms transporto priemonėms gali būti taikomas 0 %. Muitinę vertę sudaro pirkimo kaina, aukciono mokesčiai, transportas iki ES sienos ir draudimas."
+      "a": "Lengviesiems automobiliams (KN 8703) muitas yra 10 % muitinės vertės CIF, pikapams ir lengviesiems sunkvežimiams (8704) – 10–22 %, motociklams – 6–8 %. Senesnėms nei 30 metų originalios būklės kolekcinėms transporto priemonėms gali būti taikomas 0 %. Muitinę vertę sudaro pirkimo kaina, aukciono mokesčiai, transportas iki ES sienos ir draudimas. 0 % muitas JAV pagamintiems automobiliams (Reglamentas (ES) 2026/1455, iki 2029 m. pabaigos) reikalauja muitinės pripažinto JAV gamybos įrodymo ir tiesioginio gabenimo iš JAV – vien sąskaitos ar Carfax ataskaitos nepakanka. Kitaip 10 %."
     },
     "q2": {
       "q": "Koks akcizas taikomas importuojant automobilį į Lenkiją?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Muitas",
-          "dutyValue": "10 % CIF vertės (pikapai 22 %, motociklai 6–8 %, istoriniai automobiliai 0 %)",
+          "dutyValue": "10 % CIF vertės (pikapai 10–22 %, motociklai 6–8 %, istoriniai automobiliai 0 %)",
           "vat": "Importo PVM",
           "vatValue": "{{vat}}% – {{country}}",
           "vatRange": "17–27 % priklausomai nuo įforminimo šalies",
@@ -1431,7 +1440,7 @@
     "total": "Mokesčiai ir rinkliavos",
     "howTitle": "Kaip skaičiuojame",
     "how1": "Muitinė vertė (CIF) = kaina + aukciono mokesčiai + transportas iki ES uosto + draudimas.",
-    "how2": "Muitas: 10 % muitinės vertės (pikapai 22 %, motociklai 6–8 %) – vienodas visuose ES uostuose.",
+    "how2": "Muitas: 10 % muitinės vertės (pikapai 10–22 %, motociklai 6–8 %) – vienodas visuose ES uostuose.",
     "how3": "Importo PVM mokamas uosto šalyje jos tarifu nuo muitinės vertės + muito + transporto iki jūsų adreso. Naudotas automobilis, įformintas ne registracijos šalyje ({{country}}), namuose PVM antrą kartą nemoka.",
     "how4": "Registracijos šalies nacionaliniai mokesčiai (pvz., Lenkijos akcizas) mokami namuose – nepriklausomai nuo uosto.",
     "how5": "Reitingas prideda frachtą, uosto rinkliavas ir pristatymą už km iki jūsų adreso – pigiausia suma yra pirma.",
@@ -1547,7 +1556,10 @@
     "working": "Akimirką…",
     "confirmed": "Jūsų prenumerata patvirtinta. Ačiū!",
     "unsubscribed": "Jūs atsisakėte prenumeratos ir naujienlaiškių nebegausite.",
-    "invalid": "Ši nuoroda negalioja arba jau buvo panaudota."
+    "invalid": "Ši nuoroda negalioja arba jau buvo panaudota.",
+    "popupTitle": "Muitų ir mokesčių pokyčiai – prieš sumokant",
+    "popupLead": "Kartą per mėnesį trumpas laiškas: nauji tarifai, krovinių kainos ir kaip mokėti mažiau importuojant automobilį.",
+    "later": "Ne dabar"
   },
   "taxes": {
     "eyebrow": "Nemokamas įrankis",

@@ -12,6 +12,8 @@ export type AnalyticsEvent =
   | 'paywall_opened'
   | 'sample_report_opened'
   | 'newsletter_signup'
+  | 'newsletter_popup_shown'
+  | 'newsletter_popup_dismissed'
   | 'checkout_started'
   | 'purchase'
   | 'partner_lead_sent';

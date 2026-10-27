@@ -341,7 +341,8 @@
     "pl": {
       "clearedForOtherMemberState": "Ocarinjeno na Poljskem za registracijo drugje – preverite registracijske davke v namembni državi.",
       "exciseDeclarationWithin14Days": "Poljska trošarina se plača na davčnem uradu (AKC-U/S) v 14 dneh od prihoda.",
-      "pickupMayBeReclassified": "Za pickup, registriran kot osebni avto, se lahko obračuna trošarina – preverite homologacijo."
+      "pickupMayBeReclassified": "Za pickup, registriran kot osebni avto, se lahko obračuna trošarina – preverite homologacijo.",
+      "historicNoExcise": "Zbirateljsko vozilo (KN 9705): brez poljske trošarine – če carina sprejme to uvrstitev."
     },
     "procedure4200": {
       "reverseChargeDeductible": "Postopek 4200: DDV se samoobdavči v namembni državi (obrnjena davčna obveznost, nevtralno za zavezance za DDV)."
@@ -352,6 +353,11 @@
     "delivery": {
       "portPickup": "Izbran je prevzem v pristanišču – cestni prevoz domov ni vključen.",
       "selfDriveNotRunning": "Nevoznega avta ni mogoče peljati s preizkusnimi tablicami – izberite avtovleko."
+    },
+    "duty": {
+      "preferentialPossible": "Po VIN je bil avto izdelan v državi odpreme – z dokazilom o poreklu je carina lahko 0 %. V koraku vozila označite »Izdelan v tej državi«.",
+      "preferentialOriginProof": "Carina 0 % po trgovinskem sporazumu EU samo z veljavno izjavo o poreklu (ali vedenjem uvoznika) – sicer velja polna stopnja.",
+      "usOriginProof": "Carina 0 % za avtomobile, izdelane v ZDA (Uredba (EU) 2026/1455, do konca 2029), zahteva dokazilo o izdelavi v ZDA, ki ga carina sprejme, in neposreden prevoz iz ZDA – račun ali poročilo Carfax nista dovolj. Sicer 10 %."
     }
   },
   "wizard": {
@@ -430,7 +436,10 @@
     "specTitle": "Od česa so odvisni davki",
     "specLead": "Predlagano glede na tip in motor. Natančni podatki (iz VIN ali CoC) bistveno izboljšajo izračun registracijskega davka.",
     "mass": "Masa praznega vozila",
-    "massHint": "V kg. Upošteva se v Franciji (malus glede na maso) in Estoniji."
+    "massHint": "V kg. Upošteva se v Franciji (malus glede na maso) in Estoniji.",
+    "preferentialOrigin": "Izdelan v tej državi – carina 0 %",
+    "preferentialOriginHint": "Trgovinski sporazum EU / dogovor EU–ZDA: 0 % namesto 10 %, če dokažete, kje je bil avto izdelan (ne le kje je bil prodan). Odloča carina – za vsak primer pustite neoznačeno.",
+    "preferentialVinMatch": "VIN: izdelan v tej državi"
   },
   "layout": {
     "topbar": "Neodvisni kalkulator stroškov uvoza avtomobilov iz ZDA, Kanade, Japonske, ZAE in Združenega kraljestva v 27 držav EU",
@@ -525,7 +534,7 @@
       },
       "duty": {
         "title": "Carina (TARIC)",
-        "formula": "CIF × 10 % avtomobili · 22 % pickupi · 0 % starodobniki",
+        "formula": "CIF × 10 % avtomobili · 10–22 % pickupi · 0 % starodobniki",
         "text": "Stopnja je odvisna od tarifne oznake HS; motorna kolesa 6–8 %."
       },
       "excise": {
@@ -670,7 +679,7 @@
       },
       "taxes": {
         "title": "Carine in davki",
-        "i1": "Carina po TARIC (10 %, 22 % za pickupe)",
+        "i1": "Carina po TARIC (10 %, 10–22 % za pickupe)",
         "i2": "Trošarina glede na motor in vrsto goriva",
         "i3": "DDV v državi pristanišča carinjenja",
         "i4": "Tečaj centralne banke na isti dan"
@@ -742,7 +751,7 @@
     "lead": "Ne najdete odgovora? Kalkulator prikaže vse predpostavke, poročilo PDF pa vse stopnje in osnove.",
     "q1": {
       "q": "Kolikšna je carina na avto iz ZDA?",
-      "a": "Za osebne avtomobile (KN 8703) znaša carina 10 % carinske vrednosti CIF, za pickupe in lahka tovorna vozila (8704) 22 %, za motorna kolesa pa 6–8 %. Starodobna vozila, starejša od 30 let, v originalnem stanju so lahko upravičena do 0 %. Carinska vrednost je kupnina, povečana za provizije dražbe, prevoz do meje EU in zavarovanje."
+      "a": "Za osebne avtomobile (KN 8703) znaša carina 10 % carinske vrednosti CIF, za pickupe in lahka tovorna vozila (8704) 10–22 %, za motorna kolesa pa 6–8 %. Starodobna vozila, starejša od 30 let, v originalnem stanju so lahko upravičena do 0 %. Carinska vrednost je kupnina, povečana za provizije dražbe, prevoz do meje EU in zavarovanje. Carina 0 % za avtomobile, izdelane v ZDA (Uredba (EU) 2026/1455, do konca 2029), zahteva dokazilo o izdelavi v ZDA, ki ga carina sprejme, in neposreden prevoz iz ZDA – račun ali poročilo Carfax nista dovolj. Sicer 10 %."
     },
     "q2": {
       "q": "Kakšna trošarina velja pri uvozu avta na Poljsko?",
@@ -1167,7 +1176,7 @@
         },
         "cost": {
           "duty": "Carina",
-          "dutyValue": "10 % vrednosti CIF (pickupi 22 %, motorna kolesa 6–8 %, starodobna vozila 0 %)",
+          "dutyValue": "10 % vrednosti CIF (pickupi 10–22 %, motorna kolesa 6–8 %, starodobna vozila 0 %)",
           "vat": "Uvozni DDV",
           "vatValue": "{{vat}} % – {{country}}",
           "vatRange": "17–27 % glede na državo carinjenja",
@@ -1431,7 +1440,7 @@
     "total": "Dajatve in stroški",
     "howTitle": "Kako računamo",
     "how1": "Carinska vrednost (CIF) = cena + dražbene provizije + prevoz do pristanišča EU + zavarovanje.",
-    "how2": "Carina: 10 % carinske vrednosti (pickupi 22 %, motorna kolesa 6–8 %) – enaka v vseh pristaniščih EU.",
+    "how2": "Carina: 10 % carinske vrednosti (pickupi 10–22 %, motorna kolesa 6–8 %) – enaka v vseh pristaniščih EU.",
     "how3": "Uvozni DDV plačate v državi pristanišča, po njeni stopnji, od carinske vrednosti + carine + prevoza do vašega naslova. Rabljeni avto, ocarinjen zunaj države registracije ({{country}}), doma ne plača DDV ponovno.",
     "how4": "Nacionalne davke države registracije (npr. poljsko trošarino) plačate doma – ne glede na pristanišče.",
     "how5": "Razvrstitev prišteje prevoznino, pristaniške stroške in dostavo na km do vašega naslova – najcenejši znesek je na vrhu.",
@@ -1547,7 +1556,10 @@
     "working": "Trenutek…",
     "confirmed": "Vaša prijava je potrjena. Hvala!",
     "unsubscribed": "Odjavljeni ste in ne boste več prejemali e-novic.",
-    "invalid": "Ta povezava ni veljavna ali je bila že uporabljena."
+    "invalid": "Ta povezava ni veljavna ali je bila že uporabljena.",
+    "popupTitle": "Spremembe carin in davkov – preden plačate",
+    "popupLead": "Enkrat na mesec kratko e-sporočilo: nove stopnje, cene prevoza in kako plačati manj pri uvozu avta.",
+    "later": "Ne zdaj"
   },
   "taxes": {
     "eyebrow": "Brezplačno orodje",
