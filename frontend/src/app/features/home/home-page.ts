@@ -52,16 +52,16 @@ interface CostGroup { key: string; icon: IconName; items: number }
         </div>
 
         <!-- facts band: claim on the left, three facts in a frosted panel on the right -->
-        <div class="flex flex-col gap-5 lg:absolute lg:inset-x-5 lg:bottom-7 lg:flex-row lg:items-center lg:justify-between lg:gap-10">
-          <div class="shrink-0">
+        <div class="flex flex-col gap-5 lg:absolute lg:inset-x-5 lg:bottom-7 lg:flex-row lg:items-end lg:justify-between lg:gap-10">
+          <div class="shrink-0 pb-1">
             <p class="text-[17px] font-bold leading-snug">{{ 'home.strip.brand.title' | translate }}<br>{{ 'home.strip.brand.text' | translate }}</p>
-            <span class="mt-3 block h-px w-14 bg-fg/40" aria-hidden="true"></span>
+            <span class="mt-2 block h-[2px] w-10 bg-brand-text" aria-hidden="true"></span>
           </div>
-          <dl class="grid rounded-[10px] bg-[var(--hero-facts-bg)] px-6 py-4 shadow-[var(--hero-facts-shadow)] backdrop-blur-xl sm:grid-cols-3 sm:px-10 sm:py-6 lg:mr-[calc(50%-50vw)] lg:min-w-[720px] lg:rounded-r-none lg:pr-[max(2.5rem,calc(50vw-50%+2.5rem))]">
+          <dl class="grid rounded-[10px] bg-[var(--hero-facts-bg)] px-6 py-4 shadow-[var(--hero-facts-shadow)] backdrop-blur-xl sm:grid-cols-3 sm:px-8 sm:py-5 max-w-fit">
             @for (k of strip; track k; let first = $first) {
-              <div class="py-3 sm:px-8 sm:py-0" [class]="first ? 'sm:pl-0' : 'border-t border-line sm:border-l sm:border-t-0'">
-                <dt class="text-[16px] font-bold">{{ 'home.strip.' + k + '.title' | translate }}</dt>
-                <dd class="mt-1 text-[13px] text-fg/70">{{ 'home.strip.' + k + '.text' | translate }}</dd>
+              <div class="py-2 sm:px-6 sm:py-0" [class]="first ? 'sm:pl-0' : 'border-t border-line sm:border-l sm:border-t-0 sm:pl-6'">
+                <dt class="text-[14px] font-bold">{{ 'home.strip.' + k + '.title' | translate }}</dt>
+                <dd class="mt-0.5 text-[11px] text-fg/70">{{ 'home.strip.' + k + '.text' | translate }}</dd>
               </div>
             }
           </dl>
