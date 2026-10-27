@@ -201,7 +201,8 @@
     "terms": "J’accepte les conditions générales et je demande expressément que le rapport me soit fourni avant l’expiration du délai de rétractation de 14 jours. Je reconnais perdre mon droit de rétractation une fois le rapport fourni.",
     "title": "Rapport d’importation complet",
     "termsLink": "Conditions générales",
-    "guarantee": "Garantie d'exactitude : signalez une erreur de calcul sous 14 jours (par ex. un taux obsolète ou des frais obligatoires manquants) et nous corrigeons le rapport ou remboursons l'intégralité du prix."
+    "guarantee": "Garantie d'exactitude : signalez une erreur de calcul sous 14 jours (par ex. un taux obsolète ou des frais obligatoires manquants) et nous corrigeons le rapport ou remboursons l'intégralité du prix.",
+    "promoHint": "Vous avez un code promo ? Saisissez-le sur la page de paiement."
   },
   "report": {
     "amount": "Montant",
@@ -300,7 +301,16 @@
     "span": "généralement {{min}} – {{max}}",
     "estimateNote": "Le transport et la livraison sont des estimations sur la base de tarifs habituels, arrondies à 100. Les montants exacts, poste par poste, figurent dans le rapport complet.",
     "minimalNote": "Une estimation approximative pour cet itinéraire. Le coût exact de chaque poste – transport, droits, TVA, immatriculation et risques – figure dans le rapport.",
-    "guarantee": "Garantie d'exactitude : une erreur dans le rapport = correction ou remboursement"
+    "guarantee": "Garantie d'exactitude : une erreur dans le rapport = correction ou remboursement",
+    "email": {
+      "title": "M'envoyer cette estimation par e-mail",
+      "lead": "Vous recevez un résumé et un lien qui rouvre le calculateur avec la même voiture – pratique pour comparer plusieurs lots.",
+      "submit": "Envoyer",
+      "newsletter": "Recevoir aussi la newsletter (une fois par mois, confirmation par lien).",
+      "sent": "Envoyé – vérifiez votre boîte (et les spams).",
+      "error": "Échec de l'envoi. Réessayez dans un instant.",
+      "limit": "Cette estimation a déjà été envoyée plusieurs fois. Recalculez pour en envoyer une nouvelle."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Conteneur exclusif",
@@ -464,7 +474,8 @@
     "blog": "Blog",
     "taxes": "Calculateur de droits et taxes",
     "method": "Notre méthode",
-    "toTop": "Haut de page"
+    "toTop": "Haut de page",
+    "glossary": "Glossaire"
   },
   "footer": {
     "about": "Calculateur indépendant des coûts d’importation de voitures hors UE. Nous ne vendons ni n’importons de voitures – nous calculons ce qu’elles coûtent vraiment.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Comment nous calculons le coût d'import d'une voiture – sources et méthode | Carglo",
       "description": "D'où viennent nos taux, comment nous estimons le transport et ce que le résultat ne peut pas savoir. La méthodologie complète du calculateur Carglo."
+    },
+    "glossary": {
+      "title": "Glossaire import auto : CIF, TARIC, salvage title, TVA à l'import | Carglo",
+      "description": "CIF, valeur en douane, codes TARIC, clean et salvage title, TVA à l'import, procédure 4200, Ro-Ro et COC expliqués simplement."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Indépendance",
       "text": "Carglo ne vend, n'achète ni n'expédie de voitures et ne touche aucune commission des importateurs sur le résultat. Nous vivons du rapport PDF payant. Une erreur ou un taux dépassé ? Écrivez à {{email}} – nous corrigeons."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Glossaire",
+    "title": "Glossaire de l'import auto",
+    "lead": "Les termes que vous rencontrez en achetant une voiture aux enchères aux États-Unis, au Canada, au Japon ou au Royaume-Uni et en l'important dans l'UE – expliqués en une ou deux phrases.",
+    "cta": "Calculer le coût total",
+    "terms": {
+      "cif": {
+        "name": "CIF / valeur en douane",
+        "text": "Cost, Insurance and Freight : prix de la voiture avec frais d'enchère, transport, fret et assurance jusqu'à la frontière de l'UE. C'est la valeur sur laquelle on calcule les droits."
+      },
+      "taric": {
+        "name": "TARIC et code SH",
+        "text": "Le tarif douanier de l'UE. Le code fixe le droit : 8703 voitures 10 %, 8704 pick-up et utilitaires 10–22 %, 8711 motos 6–8 %, 9705 véhicules de collection 0 %."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "Titre de propriété américain ou canadien sans mention de perte totale. La voiture s'immatricule sans contrôle supplémentaire de son passé accidentel."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Titre délivré quand l'assureur a déclaré la voiture en perte totale. Après réparation et contrôle technique, l'import et l'immatriculation dans l'UE sont possibles ; en « non-repairable », généralement non."
+      },
+      "buyerFee": {
+        "name": "Frais d'enchère acheteur",
+        "text": "Ce que Copart, IAAI ou USS ajoutent au prix adjugé : frais acheteur par paliers, frais d'enchère en ligne, gate et environmental fee. Ils font partie de la valeur en douane."
+      },
+      "importVat": {
+        "name": "TVA à l'importation",
+        "text": "TVA du pays où la voiture est dédouanée, sur la valeur en douane plus les droits. Pour une occasion, elle est définitive, même si la voiture est immatriculée dans un autre pays de l'UE."
+      },
+      "nationalTax": {
+        "name": "Taxe d'immatriculation",
+        "text": "Taxe unique du pays d'immatriculation : malus en France, accise en Pologne, BPM aux Pays-Bas, NoVA en Autriche. L'Allemagne, la Tchéquie et la Suède n'en ont pas."
+      },
+      "proc4200": {
+        "name": "Régime douanier 4200",
+        "text": "Dédouanement dans un pays de l'UE avec exonération de TVA et autoliquidation dans le pays de destination. Réservé aux entreprises assujetties à la TVA."
+      },
+      "customsRate": {
+        "name": "Taux de change douanier",
+        "text": "Le taux appliqué par la douane pendant tout le mois pour convertir la facture – fixé d'après les taux de l'avant-dernier mercredi du mois précédent, pas celui du jour."
+      },
+      "roro": {
+        "name": "Ro-Ro ou conteneur",
+        "text": "Ro-Ro : la voiture monte à bord par ses propres moyens – moins cher, mais elle doit rouler. Conteneur : souvent partagé avec 2 à 4 voitures – plus sûr, aussi pour les non-roulantes."
+      },
+      "coc": {
+        "name": "COC et réception individuelle",
+        "text": "Le certificat de conformité prouve l'homologation UE. Les voitures américaines n'en ont pas et passent par une réception à titre isolé (DREAL) avec adaptation des feux."
+      },
+      "collector": {
+        "name": "Véhicule de collection (NC 9705)",
+        "text": "Plus de 30 ans, d'origine et plus fabriqué. Droits 0 % et TVA réduite à 5,5 % en France – si la douane accepte ce classement."
+      }
     }
   }
 }

@@ -66,6 +66,7 @@ export const serverRoutes: ServerRoute[] = [
   ...perLanguage(SLUGS.terms),
   ...perLanguage(SLUGS.taxes),
   ...perLanguage(SLUGS.method),
+  ...perLanguage(SLUGS.glossary),
   ...guides,
   ...blog,
   { path: '**', renderMode: RenderMode.Client },

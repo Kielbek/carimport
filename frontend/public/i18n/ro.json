@@ -201,7 +201,8 @@
     "terms": "Accept termenii și condițiile și solicit în mod expres furnizarea raportului înainte de expirarea perioadei de retragere de 14 zile. Iau la cunoștință că, odată cu furnizarea raportului, îmi pierd dreptul de retragere.",
     "title": "Raport complet de import",
     "termsLink": "Termeni și condiții",
-    "guarantee": "Garanție de corectitudine: semnalează o eroare de calcul în 14 zile (de ex. o cotă depășită sau o taxă obligatorie lipsă) și corectăm raportul sau returnăm prețul integral."
+    "guarantee": "Garanție de corectitudine: semnalează o eroare de calcul în 14 zile (de ex. o cotă depășită sau o taxă obligatorie lipsă) și corectăm raportul sau returnăm prețul integral.",
+    "promoHint": "Aveți un cod de reducere? Îl introduceți pe pagina de plată."
   },
   "report": {
     "amount": "Sumă",
@@ -300,7 +301,16 @@
     "span": "de obicei {{min}} – {{max}}",
     "estimateNote": "Transportul și livrarea sunt estimări după tarife obișnuite, rotunjite la 100. Sumele exacte, pe fiecare poziție, sunt în raportul complet.",
     "minimalNote": "O estimare aproximativă pentru acest traseu. Cât costă exact fiecare poziție – transport, taxă vamală, TVA, înmatriculare și riscuri – arată raportul.",
-    "guarantee": "Garanție de corectitudine: o greșeală în raport = corectare sau banii înapoi"
+    "guarantee": "Garanție de corectitudine: o greșeală în raport = corectare sau banii înapoi",
+    "email": {
+      "title": "Trimite-mi această estimare pe e-mail",
+      "lead": "Primiți un rezumat și un link care redeschide calculatorul cu aceeași mașină – util când comparați mai multe loturi.",
+      "submit": "Trimite",
+      "newsletter": "Vreau și newsletterul (o dată pe lună, confirmare prin link).",
+      "sent": "Trimis – verificați inboxul (și spamul).",
+      "error": "Trimiterea a eșuat. Încercați din nou imediat.",
+      "limit": "Această estimare a fost deja trimisă de mai multe ori. Recalculați pentru a trimite una nouă."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Container exclusiv",
@@ -464,7 +474,8 @@
     "blog": "Blog",
     "taxes": "Calculator taxe vamale",
     "method": "Cum calculăm",
-    "toTop": "Sus"
+    "toTop": "Sus",
+    "glossary": "Glosar"
   },
   "footer": {
     "about": "Calculator independent al costurilor de import pentru mașini din afara UE. Nu vindem și nu importăm mașini – calculăm cât costă de fapt.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Cum calculăm costul importului unei mașini – surse și metodă | Carglo",
       "description": "De unde vin tarifele noastre, cum estimăm transportul și ce nu poate ști rezultatul. Metodologia completă a calculatorului Carglo."
+    },
+    "glossary": {
+      "title": "Glosar import auto: CIF, TARIC, salvage title, TVA la import | Carglo",
+      "description": "CIF, valoare în vamă, coduri TARIC, clean și salvage title, TVA la import, regim 4200, Ro-Ro și COC explicate simplu."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Independență",
       "text": "Carglo nu vinde, nu cumpără și nu importă mașini și nu primește comisioane de la importatori pentru rezultat. Câștigăm din raportul PDF plătit. Ai găsit o greșeală sau un tarif depășit? Scrie la {{email}} – corectăm."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Glosar",
+    "title": "Glosar pentru importul auto",
+    "lead": "Termenii pe care îi întâlniți când cumpărați o mașină la licitație în SUA, Canada, Japonia sau Marea Britanie și o importați în UE – explicați în una-două fraze.",
+    "cta": "Calculează costul total",
+    "terms": {
+      "cif": {
+        "name": "CIF / valoare în vamă",
+        "text": "Cost, Insurance and Freight: prețul mașinii cu taxele de licitație, transportul, navlul și asigurarea până la granița UE. Pe această valoare se calculează taxa vamală."
+      },
+      "taric": {
+        "name": "TARIC și cod SA",
+        "text": "Tariful vamal al UE. Codul stabilește taxa: 8703 autoturisme 10%, 8704 pick-up și utilitare 10–22%, 8711 motociclete 6–8%, 9705 vehicule de colecție 0%."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "Act de proprietate american sau canadian fără mențiunea de daună totală. Mașina se înmatriculează fără verificări suplimentare ale istoricului."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Se emite când asigurătorul a declarat daună totală. După reparație și inspecție tehnică poate fi importată și înmatriculată în UE; cu „non-repairable”, de obicei nu."
+      },
+      "buyerFee": {
+        "name": "Taxe de licitație",
+        "text": "Ce adaugă Copart, IAAI sau USS la prețul adjudecat: comision de cumpărător pe trepte, taxă de licitare online, gate și environmental fee. Intră în valoarea în vamă."
+      },
+      "importVat": {
+        "name": "TVA la import",
+        "text": "TVA-ul țării în care mașina este vămuită, la valoarea în vamă plus taxa vamală. Pentru o mașină second-hand este definitiv, chiar dacă mașina e înmatriculată în altă țară UE."
+      },
+      "nationalTax": {
+        "name": "Taxa de înmatriculare",
+        "text": "Taxa unică a țării de înmatriculare: timbrul de mediu în România, BPM în Țările de Jos, malus în Franța, acciza în Polonia. Germania și Suedia nu au."
+      },
+      "proc4200": {
+        "name": "Regimul vamal 4200",
+        "text": "Vămuire într-o țară UE cu scutire de TVA și taxare inversă în țara de destinație. Doar pentru firme plătitoare de TVA."
+      },
+      "customsRate": {
+        "name": "Cursul vamal",
+        "text": "Cursul folosit de vamă toată luna pentru conversia facturii – stabilit după cursurile din penultima miercuri a lunii anterioare, nu cursul zilei."
+      },
+      "roro": {
+        "name": "Ro-Ro sau container",
+        "text": "Ro-Ro: mașina urcă singură pe navă – mai ieftin, dar trebuie să meargă. Container: adesea împărțit cu 2–4 mașini – mai sigur și pentru mașini nefuncționale."
+      },
+      "coc": {
+        "name": "COC și omologare individuală",
+        "text": "Certificatul de conformitate (COC) atestă omologarea UE. Mașinile din SUA nu îl au și au nevoie de omologare individuală la RAR și modificarea farurilor."
+      },
+      "collector": {
+        "name": "Vehicul de colecție (NC 9705)",
+        "text": "Peste 30 de ani, în stare originală și ieșit din producție. Taxă vamală 0% – dacă vama acceptă clasificarea."
+      }
     }
   }
 }

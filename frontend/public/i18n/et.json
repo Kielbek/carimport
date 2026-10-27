@@ -201,7 +201,8 @@
     "terms": "Nõustun tingimustega ja palun sõnaselgelt raporti üleandmist enne 14-päevase taganemistähtaja möödumist. Olen teadlik, et raporti üleandmisega kaotan taganemisõiguse.",
     "title": "Täielik impordiraport",
     "termsLink": "Tingimused",
-    "guarantee": "Õigsuse garantii: teata arvutusveast 14 päeva jooksul (nt aegunud määr või puuduv kohustuslik tasu) ja me parandame aruande või tagastame kogu hinna."
+    "guarantee": "Õigsuse garantii: teata arvutusveast 14 päeva jooksul (nt aegunud määr või puuduv kohustuslik tasu) ja me parandame aruande või tagastame kogu hinna.",
+    "promoHint": "Kas sul on sooduskood? Sisesta see makselehel."
   },
   "report": {
     "amount": "Summa",
@@ -300,7 +301,16 @@
     "span": "tavaliselt {{min}} – {{max}}",
     "estimateNote": "Transport ja kohaletoimetamine on hinnang tavapäraste hindade järgi, ümardatud 100-ni. Täpsed summad rida-realt on täielikus aruandes.",
     "minimalNote": "Ligikaudne hinnang sellele marsruudile. Kui palju iga rida täpselt maksab – transport, toll, käibemaks, registreerimine ja riskid – näitab aruanne.",
-    "guarantee": "Õigsuse garantii: viga aruandes = parandus või raha tagasi"
+    "guarantee": "Õigsuse garantii: viga aruandes = parandus või raha tagasi",
+    "email": {
+      "title": "Saada see hinnang mu e-postile",
+      "lead": "Saad kokkuvõtte ja lingi, mis avab kalkulaatori sama autoga – mugav mitme auto võrdlemisel.",
+      "submit": "Saada",
+      "newsletter": "Soovin ka uudiskirja (kord kuus, kinnitus lingiga).",
+      "sent": "Saadetud – vaata postkasti (ka rämpsposti).",
+      "error": "Saatmine ebaõnnestus. Proovi kohe uuesti.",
+      "limit": "See hinnang on juba mitu korda saadetud. Arvuta uuesti, et saata uus."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Eraldi konteiner",
@@ -464,7 +474,8 @@
     "blog": "Blogi",
     "taxes": "Tolli- ja maksukalkulaator",
     "method": "Kuidas me arvutame",
-    "toTop": "Üles"
+    "toTop": "Üles",
+    "glossary": "Sõnastik"
   },
   "footer": {
     "about": "Sõltumatu kalkulaator väljastpoolt ELi toodavate autode impordikulude arvutamiseks. Me ei müü ega impordi autosid – arvutame välja, kui palju need tegelikult maksavad.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Kuidas arvutame auto impordi kulu – allikad ja meetod | Carglo",
       "description": "Kust meie määrad pärinevad, kuidas hindame transporti ja mida tulemus ei saa teada. Carglo kalkulaatori täielik metoodika."
+    },
+    "glossary": {
+      "title": "Auto impordi sõnastik: CIF, TARIC, salvage title, impordi käibemaks | Carglo",
+      "description": "CIF, tolliväärtus, TARIC-koodid, clean ja salvage title, impordi käibemaks, protseduur 4200, Ro-Ro ja CoC lihtsalt selgitatud."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Sõltumatus",
       "text": "Carglo ei müü, osta ega impordi autosid ega võta importijatelt tulemuse eest vahendustasu. Teenime tasulise PDF-aruandega. Leidsid vea või aegunud määra? Kirjuta aadressil {{email}} – parandame."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Sõnastik",
+    "title": "Auto impordi sõnastik",
+    "lead": "Mõisted, millega puutud kokku, ostes auto oksjonilt USA-s, Kanadas, Jaapanis või Suurbritannias ja tuues selle ELi – selgitatud ühe-kahe lausega.",
+    "cta": "Arvuta kogukulu",
+    "terms": {
+      "cif": {
+        "name": "CIF / tolliväärtus",
+        "text": "Cost, Insurance and Freight: auto hind koos oksjonitasude, transpordi, prahi ja kindlustusega ELi piirini. Toll arvutatakse sellelt väärtuselt."
+      },
+      "taric": {
+        "name": "TARIC ja HS-kood",
+        "text": "ELi tollitariifistik. Kood määrab tollimäära: 8703 sõiduautod 10%, 8704 pikapid ja kaubikud 10–22%, 8711 mootorrattad 6–8%, 9705 kollektsioonisõidukid 0%."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "USA või Kanada omandidokument ilma koguhävingu märketa. Auto registreeritakse ilma täiendava avariiajaloo kontrollita."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Väljastatakse, kui kindlustus tunnistas auto koguhävinguks. Pärast remonti ja ülevaatust saab selle ELi tuua ja registreerida; „non-repairable” puhul tavaliselt mitte."
+      },
+      "buyerFee": {
+        "name": "Oksjonitasud",
+        "text": "See, mida Copart, IAAI või USS haamrihinnale lisavad: astmeline ostjatasu, veebipakkumise tasu, gate- ja keskkonnatasu. Need kuuluvad tolliväärtusse."
+      },
+      "importVat": {
+        "name": "Impordi käibemaks",
+        "text": "Selle riigi käibemaks, kus auto tollitakse, tolliväärtuselt koos tolliga. Kasutatud auto puhul on see lõplik, isegi kui auto registreeritakse teises ELi riigis."
+      },
+      "nationalTax": {
+        "name": "Registreerimistasu",
+        "text": "Registreerimisriigi ühekordne maks: registreerimistasu Eestis, BPM Hollandis, malus Prantsusmaal, aktsiis Poolas. Saksamaal ja Rootsis seda pole."
+      },
+      "proc4200": {
+        "name": "Tolliprotseduur 4200",
+        "text": "Tollimine ühes ELi riigis käibemaksuvabastusega ja pöördmaksustamisega sihtriigis. Ainult käibemaksukohustuslastele ettevõtetele."
+      },
+      "customsRate": {
+        "name": "Tollikurss",
+        "text": "Kurss, millega toll kogu kuu arvet ümber arvestab – määratud eelmise kuu eelviimase kolmapäeva kursside järgi, mitte päeva kurss."
+      },
+      "roro": {
+        "name": "Ro-Ro või konteiner",
+        "text": "Ro-Ro: auto sõidab ise laevale – odavam, kuid peab olema sõidukorras. Konteiner: sageli jagatud 2–4 autoga – turvalisem ja ka sõidukõlbmatutele."
+      },
+      "coc": {
+        "name": "CoC ja üksikkinnitus",
+        "text": "Vastavustunnistus (CoC) tõendab ELi tüübikinnitust. USA autodel seda pole, nii et vaja on üksikkinnitust ja tulede ümberehitust."
+      },
+      "collector": {
+        "name": "Kollektsioonisõiduk (KN 9705)",
+        "text": "Üle 30 aasta vana, originaalne ja enam mitte toodetav. Toll 0% – kui toll klassifikatsiooni aktsepteerib."
+      }
     }
   }
 }

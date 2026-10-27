@@ -1,0 +1,17 @@
+[(${car})]
+[(#{mail.estimate.route(${origin}, ${port}, ${destination})})]
+
+[(#{mail.estimate.totalLabel})]: [(${min})] – [(${max})]
+[(#{mail.estimate.car})]: [(${carPrice})]
+[(#{mail.estimate.transport})]: [(${transport})]
+[(#{mail.estimate.taxes})]: [(${taxes})]
+
+[(#{mail.estimate.locked(${locked})})]
+
+[(#{mail.estimate.button})]: [(${link})]
+
+[(#{mail.estimate.note})]
+[(#{mail.estimate.why})]
+
+--
+[(${company.name()})]

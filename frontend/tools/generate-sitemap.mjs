@@ -21,6 +21,7 @@ const pages = [
   { key: 'terms', slugs: slugBlock('terms'), freq: 'yearly', priority: '0.2' },
   { key: 'taxes', slugs: slugBlock('taxes'), freq: 'monthly', priority: '0.8' },
   { key: 'method', slugs: slugBlock('method'), freq: 'monthly', priority: '0.5' },
+  { key: 'glossary', slugs: slugBlock('glossary'), freq: 'monthly', priority: '0.5' },
 ];
 // SEO guides: hubs and items, slugs from core/routing/guide-paths.ts and the generated guide data
 const guidePathsTs = src('core/routing/guide-paths.ts');

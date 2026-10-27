@@ -201,7 +201,8 @@
     "terms": "Elfogadom az ÁSZF-et, és kifejezetten kérem, hogy a jelentést a 14 napos elállási határidő lejárta előtt teljesítsék. Tudomásul veszem, hogy a jelentés teljesítésével elveszítem az elállási jogomat.",
     "title": "Teljes importjelentés",
     "termsLink": "ÁSZF",
-    "guarantee": "Pontossági garancia: jelezze a számítási hibát 14 napon belül (pl. elavult kulcs vagy hiányzó kötelező díj), és kijavítjuk a jelentést vagy visszafizetjük a teljes árat."
+    "guarantee": "Pontossági garancia: jelezze a számítási hibát 14 napon belül (pl. elavult kulcs vagy hiányzó kötelező díj), és kijavítjuk a jelentést vagy visszafizetjük a teljes árat.",
+    "promoHint": "Van kedvezménykódja? A fizetési oldalon adhatja meg."
   },
   "report": {
     "amount": "Összeg",
@@ -300,7 +301,16 @@
     "span": "általában {{min}} – {{max}}",
     "estimateNote": "A szállítás és a házhoz szállítás becslés a szokásos díjak alapján, 100-ra kerekítve. A pontos összegek tételesen a teljes jelentésben vannak.",
     "minimalNote": "Durva becslés erre az útvonalra. Hogy pontosan mennyibe kerül minden tétel – szállítás, vám, áfa, forgalomba helyezés és kockázatok –, azt a jelentés mutatja meg.",
-    "guarantee": "Pontossági garancia: hiba a jelentésben = javítás vagy pénz vissza"
+    "guarantee": "Pontossági garancia: hiba a jelentésben = javítás vagy pénz vissza",
+    "email": {
+      "title": "Küldje el ezt a becslést e-mailben",
+      "lead": "Kap egy összefoglalót és egy linket, amely ugyanazzal az autóval nyitja meg a kalkulátort – hasznos több tétel összevetésénél.",
+      "submit": "Küldés",
+      "newsletter": "Kérem a hírlevelet is (havonta egyszer, megerősítés linkkel).",
+      "sent": "Elküldve – nézze meg a postafiókját (és a spamet).",
+      "error": "A küldés nem sikerült. Próbálja újra kicsit később.",
+      "limit": "Ezt a becslést már többször elküldtük. Számolja újra, hogy újat küldjön."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Saját (kizárólagos) konténer",
@@ -464,7 +474,8 @@
     "blog": "Blog",
     "taxes": "Vám- és adókalkulátor",
     "method": "Így számolunk",
-    "toTop": "Vissza a tetejére"
+    "toTop": "Vissza a tetejére",
+    "glossary": "Szótár"
   },
   "footer": {
     "about": "Független kalkulátor az EU-n kívülről behozott autók importköltségeihez. Nem árulunk és nem importálunk autókat – kiszámoljuk, mennyibe kerülnek valójában.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Így számoljuk az autóimport költségét – források és módszer | Carglo",
       "description": "Honnan származnak a díjtételek, hogyan becsüljük a szállítást, és mit nem tudhat az eredmény. A Carglo kalkulátor teljes módszertana."
+    },
+    "glossary": {
+      "title": "Autóimport szótár: CIF, TARIC, salvage title, import áfa | Carglo",
+      "description": "CIF, vámérték, TARIC kódok, clean és salvage title, import áfa, 4200-as eljárás, Ro-Ro és CoC egyszerűen."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Függetlenség",
       "text": "A Carglo nem árul, nem vásárol és nem importál autókat, és az eredményért nem kap jutalékot importőröktől. A fizetős PDF-jelentésből élünk. Hibát vagy elavult díjtételt talált? Írjon a {{email}} címre – javítjuk."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Szótár",
+    "title": "Autóimport szótár",
+    "lead": "A fogalmak, amelyekkel akkor találkozik, ha autót vesz aukción az USA-ban, Kanadában, Japánban vagy az Egyesült Királyságban, és behozza az EU-ba – egy-két mondatban.",
+    "cta": "Teljes költség kiszámítása",
+    "terms": {
+      "cif": {
+        "name": "CIF / vámérték",
+        "text": "Cost, Insurance and Freight: az autó ára aukciós díjakkal, szállítással, fuvarral és biztosítással az EU határáig. Erre számítják a vámot."
+      },
+      "taric": {
+        "name": "TARIC és HR-kód",
+        "text": "Az EU vámtarifája. A kód határozza meg a vámot: 8703 személyautók 10%, 8704 pickupok és furgonok 10–22%, 8711 motorkerékpárok 6–8%, 9705 gyűjteményi járművek 0%."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "Amerikai vagy kanadai tulajdoni dokumentum totálkár-bejegyzés nélkül. Az autó külön sérüléstörténeti vizsgálat nélkül forgalomba helyezhető."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Akkor adják ki, ha a biztosító totálkárt állapított meg. Javítás és műszaki vizsga után behozható és forgalomba helyezhető az EU-ban; „non-repairable” esetén általában nem."
+      },
+      "buyerFee": {
+        "name": "Aukciós díjak",
+        "text": "Amit a Copart, IAAI vagy USS a leütési árhoz ad: sávos vevői díj, online licitdíj, gate és környezetvédelmi díj. A vámérték részei."
+      },
+      "importVat": {
+        "name": "Import áfa",
+        "text": "Annak az országnak az áfája, ahol az autót vámkezelik, a vámérték és a vám után. Használt autónál végleges, akkor is, ha másik EU-országban helyezik forgalomba."
+      },
+      "nationalTax": {
+        "name": "Regisztrációs adó",
+        "text": "A forgalomba helyezés országának egyszeri adója: regisztrációs adó Magyarországon, BPM Hollandiában, malus Franciaországban, jövedéki adó Lengyelországban. Németországban és Svédországban nincs."
+      },
+      "proc4200": {
+        "name": "4200-as vámeljárás",
+        "text": "Vámkezelés egy EU-országban áfamentesen, fordított adózással a célországban. Csak áfaalany cégeknek."
+      },
+      "customsRate": {
+        "name": "Vámárfolyam",
+        "text": "Az árfolyam, amellyel a vám egész hónapban átszámolja a számlát – az előző hónap utolsó előtti szerdájának árfolyamai alapján, nem a napi árfolyam."
+      },
+      "roro": {
+        "name": "Ro-Ro vagy konténer",
+        "text": "Ro-Ro: az autó maga hajt fel a hajóra – olcsóbb, de működnie kell. Konténer: gyakran 2–4 autóval közösen – biztonságosabb, nem működő autóknak is."
+      },
+      "coc": {
+        "name": "CoC és egyedi forgalomba helyezés",
+        "text": "A megfelelőségi nyilatkozat (CoC) igazolja az EU-típusjóváhagyást. Az amerikai autóknak nincs, ezért egyedi vizsgálat és a lámpák átalakítása kell."
+      },
+      "collector": {
+        "name": "Gyűjteményi jármű (KN 9705)",
+        "text": "30 évnél idősebb, eredeti állapotú és már nem gyártott. Vám 0% – ha a vámhatóság elfogadja a besorolást."
+      }
     }
   }
 }

@@ -131,7 +131,7 @@ public class ReportMailer {
         ctx.setVariable("orderNo", order.getNumber());
         NumberFormat money = NumberFormat.getCurrencyInstance(locale);
         money.setCurrency(java.util.Currency.getInstance(order.getCurrency().name()));
-        ctx.setVariable("amount", money.format(BigDecimal.valueOf(order.getAmountMinor(), 2)));
+        ctx.setVariable("amount", money.format(BigDecimal.valueOf(order.paidMinor(), 2)));
         Instant paid = order.getPaidAt() != null ? order.getPaidAt() : clock.instant();
         ctx.setVariable("paidDate", DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM).withLocale(locale)
                 .format(paid.atZone(ZoneId.of("Europe/Warsaw"))));

@@ -1,6 +1,6 @@
 import { Lang } from '../i18n/language.service';
 
-export type Page = 'home' | 'calculator' | 'about' | 'privacy' | 'terms' | 'taxes' | 'method';
+export type Page = 'home' | 'calculator' | 'about' | 'privacy' | 'terms' | 'taxes' | 'method' | 'glossary';
 
 /** Localized URL slugs - "/pl/kalkulator" ranks for Polish queries far better than "/pl/calculator". */
 export const SLUGS: Record<Exclude<Page, 'home'>, Record<Lang, string>> = {
@@ -44,6 +44,13 @@ export const SLUGS: Record<Exclude<Page, 'home'>, Record<Lang, string>> = {
     en: 'methodology', es: 'metodologia', et: 'metoodika', fi: 'menetelma', fr: 'methodologie', hr: 'metodologija',
     hu: 'modszertan', it: 'metodologia', lt: 'metodika', lv: 'metodologija', nl: 'methodologie', pl: 'jak-liczymy',
     pt: 'metodologia', ro: 'metodologie', sk: 'ako-pocitame', sl: 'metodologija', sv: 'metod', uk: 'metodolohiia',
+  },
+  /** Import terms explained: CIF, TARIC, titles, VAT, procedure 4200, ... */
+  glossary: {
+    bg: 'rechnik', cs: 'slovnik', da: 'ordliste', de: 'glossar', el: 'glossari', en: 'glossary', es: 'glosario',
+    et: 'sonastik', fi: 'sanasto', fr: 'glossaire', hr: 'pojmovnik', hu: 'fogalomtar', it: 'glossario', lt: 'zodynas',
+    lv: 'vardnica', nl: 'woordenlijst', pl: 'slownik', pt: 'glossario', ro: 'glosar', sk: 'slovnik', sl: 'slovar',
+    sv: 'ordlista', uk: 'slovnyk',
   },
 };
 

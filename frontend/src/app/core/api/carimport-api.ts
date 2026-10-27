@@ -29,6 +29,16 @@ export class CarImportApi {
     return this.http.post<PublicQuoteView>(`${this.base}/quotes`, request);
   }
 
+  /** The wizard input of a saved quote (link in the estimate e-mail). */
+  quoteRequest(quoteId: string): Observable<CalculationRequest> {
+    return this.http.get<CalculationRequest>(`${this.base}/quotes/${quoteId}/request`);
+  }
+
+  /** E-mails the free estimate; newsletter = also start the double opt-in. */
+  emailEstimate(body: { quoteId: string; email: string; newsletter: boolean; website: string }): Observable<void> {
+    return this.http.post<void>(`${this.base}/quotes/email`, body);
+  }
+
   /** Cheapest EU port for this car and address, distances and the proposed amounts. */
   suggestions(request: CalculationRequest): Observable<Suggestions> {
     return this.http.post<Suggestions>(`${this.base}/quotes/suggestions`, request);

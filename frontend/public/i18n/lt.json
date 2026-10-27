@@ -201,7 +201,8 @@
     "terms": "Sutinku su taisyklėmis ir aiškiai prašau pateikti ataskaitą nepasibaigus 14 dienų sutarties atsisakymo laikotarpiui. Suprantu, kad pateikus ataskaitą netenku teisės atsisakyti sutarties.",
     "title": "Išsami importo ataskaita",
     "termsLink": "Taisyklės",
-    "guarantee": "Tikslumo garantija: praneškite apie skaičiavimo klaidą per 14 dienų (pvz., pasenusį tarifą ar trūkstamą privalomą mokestį) – pataisysime ataskaitą arba grąžinsime visą kainą."
+    "guarantee": "Tikslumo garantija: praneškite apie skaičiavimo klaidą per 14 dienų (pvz., pasenusį tarifą ar trūkstamą privalomą mokestį) – pataisysime ataskaitą arba grąžinsime visą kainą.",
+    "promoHint": "Turite nuolaidos kodą? Įveskite jį mokėjimo puslapyje."
   },
   "report": {
     "amount": "Suma",
@@ -300,7 +301,16 @@
     "span": "paprastai {{min}} – {{max}}",
     "estimateNote": "Transportas ir pristatymas – įvertis pagal įprastus įkainius, suapvalintas iki 100. Tikslios sumos pagal kiekvieną poziciją – pilnoje ataskaitoje.",
     "minimalNote": "Apytikslis šio maršruto įvertis. Kiek tiksliai kainuoja kiekviena pozicija – transportas, muitas, PVM, registracija ir rizikos – parodo ataskaita.",
-    "guarantee": "Tikslumo garantija: klaida ataskaitoje = pataisymas arba pinigų grąžinimas"
+    "guarantee": "Tikslumo garantija: klaida ataskaitoje = pataisymas arba pinigų grąžinimas",
+    "email": {
+      "title": "Atsiųsti šią sąmatą el. paštu",
+      "lead": "Gausite santrauką ir nuorodą, kuri atidarys skaičiuoklę su tuo pačiu automobiliu – patogu lyginant kelis lotus.",
+      "submit": "Siųsti",
+      "newsletter": "Noriu gauti ir naujienlaiškį (kartą per mėnesį, patvirtinimas nuoroda).",
+      "sent": "Išsiųsta – patikrinkite paštą (ir šlamštą).",
+      "error": "Nepavyko išsiųsti. Bandykite netrukus.",
+      "limit": "Ši sąmata jau išsiųsta kelis kartus. Perskaičiuokite, kad išsiųstumėte naują."
+    }
   },
   "shipping": {
     "CONTAINER_EXCLUSIVE": "Atskiras konteineris",
@@ -464,7 +474,8 @@
     "blog": "Tinklaraštis",
     "taxes": "Muito ir mokesčių skaičiuoklė",
     "method": "Kaip skaičiuojame",
-    "toTop": "Į viršų"
+    "toTop": "Į viršų",
+    "glossary": "Žodynas"
   },
   "footer": {
     "about": "Nepriklausoma automobilių iš ne ES šalių importo išlaidų skaičiuoklė. Automobilių neparduodame ir neimportuojame – apskaičiuojame, kiek jie iš tikrųjų kainuoja.",
@@ -821,6 +832,10 @@
     "method": {
       "title": "Kaip skaičiuojame automobilio importo kainą – šaltiniai ir metodas | Carglo",
       "description": "Iš kur mūsų tarifai, kaip vertiname transportą ir ko rezultatas negali žinoti. Visa Carglo skaičiuoklės metodika."
+    },
+    "glossary": {
+      "title": "Automobilių importo žodynas: CIF, TARIC, salvage title, importo PVM | Carglo",
+      "description": "CIF, muitinė vertė, TARIC kodai, clean ir salvage title, importo PVM, procedūra 4200, Ro-Ro ir CoC paprastai."
     }
   },
   "privacy": {
@@ -1626,6 +1641,62 @@
     "s7": {
       "title": "Nepriklausomumas",
       "text": "Carglo neparduoda, neperka ir neimportuoja automobilių ir neima komisinių iš importuotojų už rezultatą. Uždirbame iš mokamos PDF ataskaitos. Pastebėjote klaidą ar pasenusį tarifą? Rašykite {{email}} – pataisysime."
+    }
+  },
+  "glossary": {
+    "eyebrow": "Žodynas",
+    "title": "Automobilių importo žodynas",
+    "lead": "Sąvokos, su kuriomis susidursite pirkdami automobilį aukcione JAV, Kanadoje, Japonijoje ar JK ir įveždami jį į ES – paaiškintos vienu dviem sakiniais.",
+    "cta": "Apskaičiuoti visą kainą",
+    "terms": {
+      "cif": {
+        "name": "CIF / muitinė vertė",
+        "text": "Cost, Insurance and Freight: automobilio kaina su aukciono mokesčiais, transportu, frachtu ir draudimu iki ES sienos. Nuo jos skaičiuojamas muitas."
+      },
+      "taric": {
+        "name": "TARIC ir SS kodas",
+        "text": "ES muitų tarifas. Kodas lemia muitą: 8703 lengvieji 10 %, 8704 pikapai ir furgonai 10–22 %, 8711 motociklai 6–8 %, 9705 kolekcinės transporto priemonės 0 %."
+      },
+      "cleanTitle": {
+        "name": "Clean title",
+        "text": "JAV ar Kanados nuosavybės dokumentas be visiško sunaikinimo įrašo. Automobilis registruojamas be papildomų avarijų istorijos patikrų."
+      },
+      "salvageTitle": {
+        "name": "Salvage title",
+        "text": "Išduodamas, kai draudikas pripažino visišką sunaikinimą. Po remonto ir techninės apžiūros galima įvežti ir registruoti ES; su „non-repairable“ paprastai ne."
+      },
+      "buyerFee": {
+        "name": "Aukciono mokesčiai",
+        "text": "Tai, ką Copart, IAAI ar USS prideda prie galutinės kainos: pakopinis pirkėjo mokestis, internetinio statymo, gate ir aplinkosaugos mokesčiai. Jie įeina į muitinę vertę."
+      },
+      "importVat": {
+        "name": "Importo PVM",
+        "text": "Šalies, kurioje automobilis muitinamas, PVM nuo muitinės vertės ir muito. Naudotam automobiliui jis galutinis, net jei automobilis registruojamas kitoje ES šalyje."
+      },
+      "nationalTax": {
+        "name": "Registracijos mokestis",
+        "text": "Vienkartinis registracijos šalies mokestis: taršos mokestis Lietuvoje, BPM Nyderlanduose, malus Prancūzijoje, akcizas Lenkijoje. Vokietijoje ir Švedijoje jo nėra."
+      },
+      "proc4200": {
+        "name": "Muitinės procedūra 4200",
+        "text": "Muitinimas vienoje ES šalyje su PVM lengvata ir atvirkštiniu apmokestinimu paskirties šalyje. Tik PVM mokėtojoms įmonėms."
+      },
+      "customsRate": {
+        "name": "Muitinės kursas",
+        "text": "Kursas, kuriuo muitinė visą mėnesį perskaičiuoja sąskaitą – nustatomas pagal praėjusio mėnesio priešpaskutinio trečiadienio kursus, ne dienos kursą."
+      },
+      "roro": {
+        "name": "Ro-Ro ar konteineris",
+        "text": "Ro-Ro: automobilis įvažiuoja į laivą pats – pigiau, bet turi važiuoti. Konteineris: dažnai dalijamas su 2–4 automobiliais – saugiau ir nevažiuojantiems."
+      },
+      "coc": {
+        "name": "CoC ir individualus patvirtinimas",
+        "text": "Atitikties sertifikatas (CoC) įrodo ES tipo patvirtinimą. JAV automobiliai jo neturi, todėl reikia individualaus patvirtinimo ir žibintų pakeitimo."
+      },
+      "collector": {
+        "name": "Kolekcinė transporto priemonė (KN 9705)",
+        "text": "Senesnė nei 30 metų, originali ir nebegaminama. Muitas 0 % – jei muitinė pripažįsta klasifikaciją."
+      }
     }
   }
 }

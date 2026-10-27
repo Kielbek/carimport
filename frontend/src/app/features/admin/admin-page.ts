@@ -21,6 +21,8 @@ interface OrderRow {
   generationAttempts: number;
   paymentIntent: string | null;
   refundedMinor: number;
+  discountMinor: number;
+  promotionCode: string | null;
   refundedAt: string | null;
   refundReason: string | null;
   refundableMinor: number;
@@ -113,6 +115,7 @@ const AUTH_KEY = 'carglo.admin';
                         <td>{{ date(o.paidAt ?? o.createdAt) }}</td>
                         <td>{{ o.name }}<br><span class="text-muted">{{ o.email }} · {{ o.locale }}</span></td>
                         <td class="tabular-nums">{{ money(o.amountMinor, o.currency) }}
+                          @if (o.discountMinor) { <span class="block text-xs text-muted" [title]="o.promotionCode ?? ''">rabat −{{ money(o.discountMinor, o.currency) }}</span> }
                           @if (o.refundedMinor) { <span class="block text-xs text-danger" [title]="o.refundReason ?? ''">zwrócono {{ money(o.refundedMinor, o.currency) }}</span> }</td>
                         <td><span class="badge" [class.!bg-danger-soft]="o.status === 'FAILED'">{{ statusPl[o.status] }}</span>
                           @if (o.generationAttempts > 1) { <span class="block text-xs text-muted">prób PDF: {{ o.generationAttempts }}</span> }</td>
@@ -144,7 +147,7 @@ const AUTH_KEY = 'carglo.admin';
         <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4" role="dialog" aria-modal="true" aria-labelledby="rf-title">
           <form class="card w-full max-w-md space-y-4 bg-panel p-6" (ngSubmit)="refund(o)">
             <h2 id="rf-title" class="text-xl font-extrabold">Zwrot – zamówienie {{ o.number }}</h2>
-            <p class="text-sm text-muted">{{ o.name }} · {{ o.email }}<br>Zapłacono {{ money(o.amountMinor, o.currency) }}@if (o.refundedMinor) {, zwrócono już {{ money(o.refundedMinor, o.currency) }}}</p>
+            <p class="text-sm text-muted">{{ o.name }} · {{ o.email }}<br>Zapłacono {{ money(o.amountMinor - o.discountMinor, o.currency) }}@if (o.refundedMinor) {, zwrócono już {{ money(o.refundedMinor, o.currency) }}}</p>
             <div>
               <label class="label" for="rf-amount">Kwota zwrotu ({{ o.currency }})</label>
               <input id="rf-amount" class="input" type="number" name="amount" min="0.01" step="0.01" [max]="o.refundableMinor / 100" [(ngModel)]="refundAmount" required />

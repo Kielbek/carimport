@@ -64,6 +64,7 @@ import { NewsletterSignup } from '../features/newsletter/newsletter-signup';
             <li><a [routerLink]="home()" fragment="pricing" class="hover:text-brand-text">{{ 'layout.forBusiness' | translate }}</a></li>
             <li><a [routerLink]="taxes()" class="hover:text-brand-text">{{ 'layout.taxes' | translate }}</a></li>
             <li><a [routerLink]="method()" class="hover:text-brand-text">{{ 'layout.method' | translate }}</a></li>
+            <li><a [routerLink]="glossary()" class="hover:text-brand-text">{{ 'layout.glossary' | translate }}</a></li>
             <li><a [routerLink]="terms()" class="hover:text-brand-text">{{ 'footer.terms' | translate }}</a></li>
             <li><a [routerLink]="privacy()" class="hover:text-brand-text">{{ 'footer.privacy' | translate }}</a></li>
           </ul>
@@ -114,4 +115,5 @@ export class SiteFooter {
   protected readonly terms = computed(() => pathFor('terms', this.lang.current()));
   protected readonly taxes = computed(() => pathFor('taxes', this.lang.current()));
   protected readonly method = computed(() => pathFor('method', this.lang.current()));
+  protected readonly glossary = computed(() => pathFor('glossary', this.lang.current()));
 }

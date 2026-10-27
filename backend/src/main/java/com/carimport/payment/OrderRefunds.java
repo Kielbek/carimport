@@ -66,8 +66,8 @@ public class OrderRefunds {
     public void apply(ReportOrder order, long refundedTotalMinor, String reason) {
         long before = order.getRefundedMinor();
         if (order.recordRefund(refundedTotalMinor, reason, clock.instant())) {
-            boolean full = order.getRefundedMinor() >= order.getAmountMinor();
-            log.info("Order {} refunded {} of {} {} ({})", order.getId(), order.getRefundedMinor(), order.getAmountMinor(),
+            boolean full = order.getRefundedMinor() >= order.paidMinor();
+            log.info("Order {} refunded {} of {} {} ({})", order.getId(), order.getRefundedMinor(), order.paidMinor(),
                     order.getCurrency(), full ? "full, access revoked" : "partial, access kept");
             events.publishEvent(new OrderRefundedEvent(order.getId(), order.getRefundedMinor() - before, full));
         }
