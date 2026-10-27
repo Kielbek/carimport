@@ -1,0 +1,140 @@
+spring:
+  application:
+    name: carimport-api
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/carimport}
+    username: ${DB_USER:carimport}
+    password: ${DB_PASSWORD:carimport}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate.jdbc.time_zone: UTC
+  flyway:
+    enabled: true
+  messages:
+    basename: i18n/messages
+    fallback-to-system-locale: false
+    encoding: UTF-8
+  cache:
+    type: simple
+  # Transactional e-mail (report link + PDF). Any SMTP provider works: Resend, Postmark, SendGrid, Mailgun, SES.
+  # Empty host = e-mail off (the report page still works).
+  mail:
+    host: ${SMTP_HOST:}
+    port: ${SMTP_PORT:587}
+    username: ${SMTP_USERNAME:}
+    password: ${SMTP_PASSWORD:}
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+      mail.smtp.connectiontimeout: 10000
+      mail.smtp.timeout: 15000
+      mail.smtp.writetimeout: 15000
+  threads:
+    virtual:
+      enabled: true
+
+server:
+  forward-headers-strategy: framework
+  error:
+    include-message: never
+
+# Console always (docker logs); with LOG_FILE also a daily/size-rotated file. Every line of a request carries its id
+# ([req-id]), the same id as in the nginx access log and the X-Request-Id response header.
+logging:
+  pattern:
+    level: "%5p [%X{requestId:-}]"
+  file:
+    name: ${LOG_FILE:}
+  logback:
+    rollingpolicy:
+      max-file-size: 20MB
+      max-history: 14
+      total-size-cap: 1GB
+  level:
+    root: INFO
+    com.carimport: ${LOG_LEVEL:INFO}
+    access: ${ACCESS_LOG_LEVEL:INFO}
+
+management:
+  endpoints.web.exposure.include: health,info,metrics,prometheus
+  # a missing or slow SMTP server must not take the API out of the load balancer
+  health.mail.enabled: false
+
+app:
+  frontend-url: ${FRONTEND_URL:http://localhost:4200}
+  supported-locales: [bg, cs, da, de, el, en, es, et, fi, fr, hr, hu, it, lt, lv, nl, pl, pt, ro, sk, sl, sv, uk]
+  fx:
+    cron: "0 20 12,23 * * MON-FRI"
+  insurance:
+    rate: 0.015
+    minimum-eur: 60
+  stripe:
+    api-key: ${STRIPE_SECRET_KEY:sk_test_replace_me}
+    webhook-secret: ${STRIPE_WEBHOOK_SECRET:whsec_replace_me}
+  report:
+    storage-dir: ${REPORT_STORAGE_DIR:./var/reports}
+    # same table as frontend core/currency/currencies.ts
+    price-minor:
+      EUR: 499
+      PLN: 1900
+      CZK: 12900
+      HUF: 199000
+      RON: 2500
+      SEK: 5900
+      DKK: 3900
+      USD: 549
+      GBP: 449
+  mail:
+    from: ${MAIL_FROM:Carglo <cargloapp@gmail.com>}
+    reply-to: ${MAIL_REPLY_TO:cargloapp@gmail.com}
+  # Operator panel (/admin): HTTP Basic account; empty password = the admin API is off
+  admin:
+    username: ${ADMIN_USERNAME:admin}
+    password: ${ADMIN_PASSWORD:}
+  # Operational alerts by e-mail (see com.carimport.ops.AlertService); empty = the contact address
+  alerts:
+    email: ${ALERT_EMAIL:}
+  # Seller identity - fill in before going live (also in frontend/src/app/core/site.config.ts)
+  company:
+    name: ${COMPANY_NAME:Carglo}
+    address: ${COMPANY_ADDRESS:}
+    tax-id: ${COMPANY_TAX_ID:}
+    email: ${CONTACT_EMAIL:cargloapp@gmail.com}
+  vehicle:
+    vpic-url: ${VPIC_URL:https://vpic.nhtsa.dot.gov/api}
+    epa-url: ${EPA_URL:https://www.fueleconomy.gov/ws/rest}
+    user-agent: "carimport/1.0 (${CONTACT_EMAIL:kontakt@carimport.example})"
+    timeout: 6s
+  affiliates:
+    - id: fx-online
+      kind: CURRENCY_EXCHANGE
+      partner: "Online FX exchange"
+      url: "https://example-fx.com/{locale}?ref=carimport&sub={subId}"
+      origins: [USA, CANADA, JAPAN, UAE, UK]
+      countries: []
+      locales: []
+      priority: 1
+    - id: vin-history
+      kind: VIN_CHECK
+      partner: "VIN history report"
+      url: "https://example-vin.com/{locale}/?a_aid=carimport&chan={subId}"
+      origins: [USA, CANADA]
+      countries: []
+      locales: []
+      priority: 2
+    - id: leasing-pl
+      kind: FINANCING
+      partner: "Leasing broker PL"
+      url: "https://example-leasing.pl/?utm_source=carimport&sub={subId}"
+      origins: []
+      countries: [PL]
+      locales: [pl, uk]
+      priority: 3
+  geo:
+    geocoder-url: ${GEOCODER_URL:https://nominatim.openstreetmap.org}
+    router-url: ${ROUTER_URL:https://router.project-osrm.org}
+    user-agent: "carimport/1.0 (${CONTACT_EMAIL:kontakt@carimport.example})"
+    timeout: 4s

@@ -45,8 +45,8 @@ interface CostGroup { key: string; icon: IconName; items: number }
         </div>
 
         <div class="relative -mx-3 sm:-mx-5 lg:-mr-24 lg:ml-0">
-          <img class="hero-car w-full" src="/images/hero-car-1600.webp"
-               srcset="/images/hero-car-900.webp 900w, /images/hero-car-1600.webp 1600w"
+          <img class="hero-car w-full" src="/images/hero-car-900.webp"
+               srcset="/images/hero-car-750.webp 750w, /images/hero-car-900.webp 900w, /images/hero-car-1600.webp 1600w"
                sizes="(min-width: 1024px) 60vw, 100vw" width="1600" height="835" fetchpriority="high" decoding="async"
                [alt]="'home.hero.visual' | translate" />
         </div>
@@ -57,7 +57,7 @@ interface CostGroup { key: string; icon: IconName; items: number }
             <p class="text-[17px] font-bold leading-snug">{{ 'home.strip.brand.title' | translate }}<br>{{ 'home.strip.brand.text' | translate }}</p>
             <span class="mt-2 block h-[2px] w-10 bg-brand-text" aria-hidden="true"></span>
           </div>
-          <dl class="grid rounded-[10px] bg-[var(--hero-facts-bg)] px-6 py-4 shadow-[var(--hero-facts-shadow)] backdrop-blur-xl sm:grid-cols-3 sm:px-8 sm:py-5 max-w-fit">
+          <dl class="grid max-w-fit rounded-[10px] bg-[var(--hero-facts-bg)] px-6 py-4 shadow-[var(--hero-facts-shadow)] backdrop-blur-xl sm:grid-cols-3 sm:px-8 sm:py-5">
             @for (k of strip; track k; let first = $first) {
               <div class="py-2 sm:px-6 sm:py-0" [class]="first ? 'sm:pl-0' : 'border-t border-line sm:border-l sm:border-t-0 sm:pl-6'">
                 <dt class="text-[14px] font-bold">{{ 'home.strip.' + k + '.title' | translate }}</dt>
@@ -77,9 +77,8 @@ interface CostGroup { key: string; icon: IconName; items: number }
 
       <div class="mt-9 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
         <a [routerLink]="calculator()" class="group relative min-h-[312px] overflow-hidden rounded-[4px] bg-ink sm:col-span-2">
-          <img src="/images/mercedes_image.webp" width="1200" height="760" loading="lazy" decoding="async"
-               [alt]="'home.why.preview.alt' | translate"
-               class="absolute inset-0 h-full w-full object-cover object-left-top transition duration-500 group-hover:scale-105" />
+          <img src="/images/mercedes_image.webp" width="739" height="415" loading="lazy" decoding="async" alt=""
+               class="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black via-black/75 to-black/10"></div>
           <div class="absolute bottom-5 left-6 right-6 text-white">
             <span class="text-sm font-semibold uppercase tracking-[0.12em] text-brand">{{ 'home.why.preview.tag' | translate }}</span>
