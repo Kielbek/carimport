@@ -463,7 +463,8 @@
     "language": "Lingua",
     "blog": "Blog",
     "taxes": "Calcolatore di dazi e tasse",
-    "method": "Come calcoliamo"
+    "method": "Come calcoliamo",
+    "toTop": "Torna su"
   },
   "footer": {
     "about": "Calcolatore indipendente dei costi di importazione di auto da Paesi extra UE. Non vendiamo né importiamo auto – calcoliamo quanto costano davvero.",
@@ -525,8 +526,8 @@
     },
     "costs": {
       "eyebrow": "Da cosa è composto il prezzo",
-      "title": "Dazio, accisa e IVA calcolati nello stesso ordine della dogana",
-      "lead": "Ogni imposta è la base della successiva, quindi l’ordine conta. Il porto di sdoganamento determina l’aliquota IVA; il Paese di immatricolazione determina l’accisa.",
+      "title": "Dazio, IVA e IPT nello stesso ordine della dogana",
+      "lead": "Ogni imposta è la base della successiva. Il porto di sdoganamento fissa l'IVA; all'immatricolazione in Italia si paga l'IPT in base ai kW.",
       "cif": {
         "title": "Valore in dogana (CIF)",
         "formula": "prezzo + commissione d’asta + trasporto + nolo + assicurazione",
@@ -538,14 +539,14 @@
         "text": "L’aliquota dipende dal codice SA; moto 6–8%."
       },
       "excise": {
-        "title": "Accisa (PL)",
-        "formula": "(CIF + dazio) × 3,1% fino a 2,0 l · 18,6% oltre",
-        "text": "Ibride 1,55% / 9,3%, elettriche 0%. Si paga nel Paese di immatricolazione."
+        "title": "IPT e immatricolazione (IT)",
+        "formula": "150,81 € fino a 53 kW · oltre 3,51 € per kW (+ fino al 30 % provinciale)",
+        "text": "Imposta provinciale di trascrizione, più marche, diritti e targhe. Prima immatricolazione di un veicolo estero: serve anche la nazionalizzazione."
       },
       "vat": {
         "title": "IVA all’importazione",
-        "formula": "(CIF + dazio + accisa* + sbarco) × aliquota del Paese di sdoganamento",
-        "text": "*L’accisa è inclusa solo se lo sdoganamento avviene nel Paese di immatricolazione."
+        "formula": "(CIF + dazio + scarico) × aliquota del paese di sdoganamento",
+        "text": "L'IPT si paga in Italia all'immatricolazione e non entra nella base IVA all'importazione."
       }
     },
     "ports": {
@@ -680,7 +681,7 @@
       "taxes": {
         "title": "Dazi e imposte",
         "i1": "Dazio secondo TARIC (10%, 10–22% per i pick-up)",
-        "i2": "Accisa in base a motore e alimentazione",
+        "i2": "IPT in base alla potenza e costi di immatricolazione",
         "i3": "IVA nel Paese del porto di sdoganamento",
         "i4": "Cambio della banca centrale del giorno"
       },
@@ -754,12 +755,12 @@
       "a": "Per le autovetture (NC 8703) il dazio è il 10% del valore in dogana CIF, il 10–22% per pick-up e autocarri leggeri (8704) e il 6–8% per le moto. I veicoli da collezione con oltre 30 anni in condizioni originali possono beneficiare dello 0%. Il valore in dogana è il prezzo d’acquisto più le commissioni d’asta, il trasporto fino al confine UE e l’assicurazione. Il dazio 0% sulle auto costruite negli USA (regolamento (UE) 2026/1455, fino a fine 2029) richiede una prova della produzione negli USA accettata dalla dogana e il trasporto diretto dagli USA: fattura o report Carfax da soli non bastano. Altrimenti 10%."
     },
     "q2": {
-      "q": "Quale accisa si applica importando un’auto in Polonia?",
-      "a": "Auto con motore termico fino a 2000 cm³: 3,1%, oltre 2000 cm³: 18,6%. Ibride: 1,55% fino a 2000 cm³ e 9,3% fino a 3500 cm³. Le ibride plug-in fino a 2000 cm³ e le auto elettriche sono esenti. La base imponibile è il valore in dogana più il dazio, convertito in PLN."
+      "q": "Quali tasse si pagano per immatricolare in Italia un'auto importata?",
+      "a": "Oltre a dazio (10 %) e IVA all'importazione (22 % se sdoganata in Italia), all'immatricolazione si paga l'IPT: 150,81 € fino a 53 kW, poi circa 3,51 € per kW, maggiorata dalla provincia fino al 30 %. Non esiste un'imposta di immatricolazione sul valore o sul CO₂. Poi il bollo annuale in base ai kW."
     },
     "q3": {
-      "q": "Dove conviene sdoganare l’auto: Bremerhaven, Rotterdam o Gdynia?",
-      "a": "L’IVA all’importazione è applicata dal Paese di sdoganamento: 19% in Germania, 21% nei Paesi Bassi e 23% in Polonia. Sdoganare in Germania riduce l’IVA, ma si aggiunge la bisarca fino in Polonia e l’accisa va pagata separatamente all’ufficio delle imposte entro 14 giorni. Il calcolatore confronta le opzioni per la tua auto."
+      "q": "Dove sdoganare: Genova, La Spezia o Bremerhaven?",
+      "a": "L'IVA all'importazione è riscossa dal paese di sdoganamento: 22 % in Italia e in Slovenia, 19 % in Germania. Per un'auto usata l'IVA pagata lì è definitiva: Bremerhaven fa risparmiare 3 punti, ma si aggiunge il trasporto fino in Italia e l'IPT si paga comunque qui. Il calcolatore confronta i porti per la sua auto."
     },
     "q4": {
       "q": "Che cos’è il regime doganale 4200?",

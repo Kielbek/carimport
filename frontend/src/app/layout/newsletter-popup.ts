@@ -1,4 +1,4 @@
-import { afterNextRender, Component, DestroyRef, inject, signal } from '@angular/core';
+import { afterNextRender, Component, DestroyRef, inject, Injectable, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { AnalyticsService } from '../core/analytics/analytics.service';
@@ -16,6 +16,12 @@ const MIN_SCROLL = 0.4;
 const EXIT_INTENT_SECONDS = 10;
 /** "Not now" / close hides it this long. */
 const SNOOZE_DAYS = 30;
+
+/** Whether the newsletter card sits in the bottom-right corner - the back-to-top button steps aside meanwhile. */
+@Injectable({ providedIn: 'root' })
+export class NewsletterCard {
+  readonly open = signal(false);
+}
 
 /**
  * Newsletter invitation on the content pages (never in the calculator, checkout or report): a small card in the
@@ -58,7 +64,7 @@ const SNOOZE_DAYS = 30;
 export class NewsletterPopup {
   private readonly router = inject(Router);
   private readonly analytics = inject(AnalyticsService);
-  protected readonly open = signal(false);
+  protected readonly open = inject(NewsletterCard).open;
   protected readonly done = signal(false);
   /** Other pages opened after the first one in this visit of the shell. */
   private pagesSeen = 0;

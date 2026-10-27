@@ -463,7 +463,8 @@
     "language": "Jezik",
     "blog": "Blog",
     "taxes": "Kalkulator carine i poreza",
-    "method": "Kako računamo"
+    "method": "Kako računamo",
+    "toTop": "Na vrh"
   },
   "footer": {
     "about": "Neovisni kalkulator troškova uvoza automobila izvan EU. Automobile ne prodajemo niti uvozimo – izračunavamo koliko zaista koštaju.",
@@ -525,8 +526,8 @@
     },
     "costs": {
       "eyebrow": "Od čega se sastoji cijena",
-      "title": "Carina, trošarina i PDV izračunani istim redoslijedom kao na carini",
-      "lead": "Svako davanje osnovica je za sljedeće, pa je redoslijed važan. Luka carinjenja određuje stopu PDV-a, a država registracije trošarinu.",
+      "title": "Carina, PDV i posebni porez istim redoslijedom kao na carini",
+      "lead": "Svaki porez je osnovica sljedećeg. Luka carinjenja određuje PDV; pri registraciji u Hrvatskoj plaća se posebni porez na motorna vozila.",
       "cif": {
         "title": "Carinska vrijednost (CIF)",
         "formula": "cijena + aukcijska naknada + prijevoz + vozarina + osiguranje",
@@ -538,14 +539,14 @@
         "text": "Stopa ovisi o tarifnoj oznaci HS; motocikli 6–8 %."
       },
       "excise": {
-        "title": "Trošarina (PL)",
-        "formula": "(CIF + carina) × 3,1 % do 2,0 l · 18,6 % iznad",
-        "text": "Hibridi 1,55 % / 9,3 %, električni 0 %. Plaća se u državi registracije."
+        "title": "Posebni porez PPMV (HR)",
+        "formula": "prema CO₂ i cijeni vozila · kalkulator Porezne uprave",
+        "text": "Za rabljena vozila umanjuje se prema vrijednosti na tržištu; električna vozila su oslobođena."
       },
       "vat": {
         "title": "PDV pri uvozu",
-        "formula": "(CIF + carina + trošarina* + istovar) × stopa države carinjenja",
-        "text": "*Trošarina se uključuje samo pri carinjenju u državi registracije."
+        "formula": "(CIF + carina + iskrcaj) × stopa zemlje carinjenja",
+        "text": "Pri carinjenju u Rijeci uvozni PDV je 25 % – u Sloveniji 22 %."
       }
     },
     "ports": {
@@ -680,7 +681,7 @@
       "taxes": {
         "title": "Carine i porezi",
         "i1": "Carina prema TARIC-u (10 %, 10–22 % za pickupe)",
-        "i2": "Trošarina prema motoru i vrsti goriva",
+        "i2": "Posebni porez prema CO₂ i cijeni",
         "i3": "PDV u državi luke carinjenja",
         "i4": "Tečaj središnje banke na isti dan"
       },
@@ -754,12 +755,12 @@
       "a": "Za osobne automobile (KN 8703) carina iznosi 10 % carinske vrijednosti CIF, 10–22 % za pickupe i laka teretna vozila (8704) te 6–8 % za motocikle. Kolekcionarska vozila starija od 30 godina u originalnom stanju mogu ostvariti stopu od 0 %. Carinska vrijednost je kupoprodajna cijena uvećana za aukcijske naknade, prijevoz do granice EU i osiguranje. Carina 0 % za automobile proizvedene u SAD-u (Uredba (EU) 2026/1455, do kraja 2029.) zahtijeva dokaz o proizvodnji u SAD-u koji carina prihvaća i izravan prijevoz iz SAD-a – sam račun ili Carfax izvješće nisu dovoljni. Inače 10 %."
     },
     "q2": {
-      "q": "Koja se trošarina primjenjuje pri uvozu automobila u Poljsku?",
-      "a": "Automobili s motorom s unutarnjim izgaranjem do 2000 cm³: 3,1 %, iznad 2000 cm³: 18,6 %. Hibridi: 1,55 % do 2000 cm³ i 9,3 % do 3500 cm³. Plug-in hibridi do 2000 cm³ i električni automobili oslobođeni su. Osnovica je carinska vrijednost uvećana za carinu, preračunata u PLN."
+      "q": "Koliki je posebni porez za uvezeni automobil u Hrvatskoj?",
+      "a": "Posebni porez na motorna vozila (PPMV) ovisi o emisiji CO₂ i cijeni vozila; za rabljeni automobil računa se prema tržišnoj vrijednosti. Električna vozila su oslobođena. Točan iznos daje kalkulator Porezne uprave, a u našem kalkulatoru možete ga upisati izravno. Uz to dolazi 10 % carine i PDV zemlje carinjenja."
     },
     "q3": {
-      "q": "Gdje je najbolje ocariniti automobil: u Bremerhavenu, Rotterdamu ili Gdyni?",
-      "a": "PDV pri uvozu obračunava država carinjenja: 19 % u Njemačkoj, 21 % u Nizozemskoj i 23 % u Poljskoj. Carinjenje u Njemačkoj smanjuje PDV, ali dodajete autotransporter do Poljske i trošarinu plaćate zasebno u poreznom uredu u roku od 14 dana. Kalkulator uspoređuje mogućnosti za vaš automobil."
+      "q": "Gdje ocariniti auto: Rijeka, Koper ili Trst?",
+      "a": "Uvozni PDV naplaćuje zemlja carinjenja: 25 % u Hrvatskoj, 22 % u Sloveniji i Italiji. Za rabljeni auto tamo plaćeni PDV je konačan, pa Koper može uštedjeti 3 postotna boda – uz prijevoz do Hrvatske, a PPMV se uvijek plaća ovdje. Kalkulator uspoređuje luke za vaš auto."
     },
     "q4": {
       "q": "Što je carinski postupak 4200?",

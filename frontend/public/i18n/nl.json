@@ -463,7 +463,8 @@
     "language": "Taal",
     "blog": "Blog",
     "taxes": "Invoerrechten- en belastingcalculator",
-    "method": "Zo rekenen we"
+    "method": "Zo rekenen we",
+    "toTop": "Naar boven"
   },
   "footer": {
     "about": "Onafhankelijke calculator voor de importkosten van auto’s van buiten de EU. Wij verkopen en importeren geen auto’s – wij berekenen wat ze echt kosten.",
@@ -525,8 +526,8 @@
     },
     "costs": {
       "eyebrow": "Waaruit de prijs bestaat",
-      "title": "Invoerrechten, accijns en btw berekend in dezelfde volgorde als bij de douane",
-      "lead": "Elke belasting vormt de grondslag voor de volgende, dus de volgorde is belangrijk. De haven van inklaring bepaalt het btw-tarief; het land van registratie bepaalt de accijns.",
+      "title": "Invoerrecht, btw en BPM in dezelfde volgorde als bij de douane",
+      "lead": "Elke belasting is de basis van de volgende. De haven van inklaring bepaalt de btw; bij registratie in Nederland betaalt u BPM op basis van CO₂.",
       "cif": {
         "title": "Douanewaarde (CIF)",
         "formula": "prijs + veilingkosten + transport + vracht + verzekering",
@@ -538,14 +539,14 @@
         "text": "Het tarief hangt af van de GS-code; motorfietsen 6–8%."
       },
       "excise": {
-        "title": "Accijns (PL)",
-        "formula": "(CIF + invoerrechten) × 3,1% tot 2,0 l · 18,6% daarboven",
-        "text": "Hybrides 1,55% / 9,3%, elektrische auto’s 0%. Betaald in het land van registratie."
+        "title": "BPM (NL)",
+        "formula": "687 € + CO₂-schijven (2 / 82 / 181 / 297 / 594 € per gram) + dieseltoeslag",
+        "text": "Voor gebruikte import verlaagd met de forfaitaire afschrijvingstabel naar leeftijd. Elektrische auto's alleen het vaste bedrag."
       },
       "vat": {
         "title": "Invoer-btw",
-        "formula": "(CIF + invoerrechten + accijns* + lossen) × tarief van het land van inklaring",
-        "text": "*Accijns telt alleen mee bij inklaring in het land van registratie."
+        "formula": "(CIF + invoerrecht + lossen) × tarief van het land van inklaring",
+        "text": "BPM betaalt u bij registratie in Nederland; het hoort niet bij de grondslag van de invoer-btw."
       }
     },
     "ports": {
@@ -680,7 +681,7 @@
       "taxes": {
         "title": "Invoerrechten & belastingen",
         "i1": "Invoerrechten volgens TARIC (10%, 10–22% voor pick-ups)",
-        "i2": "Accijns naar motor en brandstof",
+        "i2": "BPM naar CO₂ en leeftijd",
         "i3": "Btw in het land van de haven van inklaring",
         "i4": "Wisselkoers van de centrale bank van dezelfde dag"
       },
@@ -754,12 +755,12 @@
       "a": "Voor personenauto’s (GN 8703) bedragen de invoerrechten 10% van de douanewaarde (CIF), voor pick-ups en lichte vrachtwagens (8704) 10–22% en voor motorfietsen 6–8%. Verzamelvoertuigen ouder dan 30 jaar in originele staat kunnen in aanmerking komen voor 0%. De douanewaarde is de aankoopprijs plus veilingkosten, transport tot aan de EU-grens en verzekering. 0% invoerrecht op in de VS gebouwde auto's (Verordening (EU) 2026/1455, tot eind 2029) vereist een door de douane aanvaard bewijs van Amerikaanse productie en rechtstreeks vervoer uit de VS – een factuur of Carfax-rapport alleen volstaat niet. Anders 10%."
     },
     "q2": {
-      "q": "Welke accijns geldt bij de invoer van een auto in Polen?",
-      "a": "Auto’s met verbrandingsmotor tot 2000 cm³: 3,1%, boven 2000 cm³: 18,6%. Hybrides: 1,55% tot 2000 cm³ en 9,3% tot 3500 cm³. Plug-in hybrides tot 2000 cm³ en elektrische auto’s zijn vrijgesteld. De grondslag is de douanewaarde plus invoerrechten, omgerekend naar PLN."
+      "q": "Hoeveel BPM betaal ik voor een geïmporteerde auto?",
+      "a": "BPM 2026: 687 € plus een bedrag per gram CO₂ (WLTP) in vijf schijven: 2 € tot 77 g, 82 € tot 100 g, 181 € tot 139 g, 297 € tot 155 g en 594 € daarboven. Diesels betalen 114,83 € per gram boven 69 g extra. Voor een gebruikte import gaat er een afschrijving af volgens de forfaitaire tabel (of taxatie). Volledig elektrische auto's betalen alleen 687 €."
     },
     "q3": {
-      "q": "Waar kan de auto het best worden ingeklaard: Bremerhaven, Rotterdam of Gdynia?",
-      "a": "De invoer-btw wordt geheven door het land van inklaring: 19% in Duitsland, 21% in Nederland en 23% in Polen. Inklaren in Duitsland verlaagt de btw, maar daar komt een autotransporter naar Polen bij en u betaalt de accijns apart binnen 14 dagen bij de belastingdienst. De calculator vergelijkt de opties voor uw auto."
+      "q": "Waar inklaren: Rotterdam, Antwerpen of Bremerhaven?",
+      "a": "De invoer-btw wordt geheven door het land van inklaring: 21 % in Nederland en België, 19 % in Duitsland. Voor een gebruikte auto is de daar betaalde btw definitief: Bremerhaven scheelt 2 punten, maar u betaalt transport naar Nederland en de BPM altijd hier. De calculator vergelijkt de havens voor uw auto."
     },
     "q4": {
       "q": "Wat is douaneregeling 4200?",

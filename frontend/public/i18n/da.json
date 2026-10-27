@@ -463,7 +463,8 @@
     "language": "Sprog",
     "blog": "Blog",
     "taxes": "Told- og afgiftsberegner",
-    "method": "Sådan beregner vi"
+    "method": "Sådan beregner vi",
+    "toTop": "Til toppen"
   },
   "footer": {
     "about": "Uafhængig beregner af importomkostninger for biler fra lande uden for EU. Vi hverken sælger eller importerer biler – vi regner ud, hvad de reelt koster.",
@@ -525,8 +526,8 @@
     },
     "costs": {
       "eyebrow": "Hvad prisen består af",
-      "title": "Told, punktafgift og moms beregnet i samme rækkefølge som i tolden",
-      "lead": "Hver afgift er grundlaget for den næste, så rækkefølgen betyder noget. Fortoldningshavnen bestemmer momssatsen; registreringslandet bestemmer punktafgiften.",
+      "title": "Told, moms og registreringsafgift i samme rækkefølge som i tolden",
+      "lead": "Hver afgift er grundlag for den næste. Fortoldningshavnen bestemmer momsen; ved indregistrering i Danmark betales registreringsafgift.",
       "cif": {
         "title": "Toldværdi (CIF)",
         "formula": "pris + auktionsgebyr + transport + fragt + forsikring",
@@ -538,14 +539,14 @@
         "text": "Satsen afhænger af HS-koden; motorcykler 6–8 %."
       },
       "excise": {
-        "title": "Punktafgift (PL)",
-        "formula": "(CIF + told) × 3,1 % op til 2,0 l · 18,6 % derover",
-        "text": "Hybrider 1,55 % / 9,3 %, elbiler 0 %. Betales i registreringslandet."
+        "title": "Registreringsafgift (DK)",
+        "formula": "25 % op til 76.400 kr · 85 % op til 237.400 kr · 150 % derover + CO₂-tillæg − 25.500 kr",
+        "text": "Beregnes af værdien inkl. moms (for brugte biler handelsværdien). Elbiler betaler 40 % i 2026 med eget bundfradrag."
       },
       "vat": {
         "title": "Importmoms",
-        "formula": "(CIF + told + punktafgift* + losning) × fortoldningslandets sats",
-        "text": "*Punktafgiften medregnes kun ved fortoldning i registreringslandet."
+        "formula": "(CIF + told + losning) × sats i fortoldningslandet",
+        "text": "Registreringsafgiften betales i Danmark og indgår ikke i grundlaget for importmomsen."
       }
     },
     "ports": {
@@ -680,7 +681,7 @@
       "taxes": {
         "title": "Told & afgifter",
         "i1": "Told efter TARIC (10 %, 10–22 % for pickupper)",
-        "i2": "Punktafgift efter motor og brændstoftype",
+        "i2": "Registreringsafgift efter værdi og CO₂",
         "i3": "Moms i fortoldningshavnens land",
         "i4": "Centralbankens valutakurs samme dag"
       },
@@ -754,12 +755,12 @@
       "a": "For personbiler (KN 8703) er tolden 10 % af toldværdien (CIF), 10–22 % for pickupper og lette lastbiler (8704) og 6–8 % for motorcykler. Veterankøretøjer over 30 år i original stand kan opnå 0 %. Toldværdien er købsprisen plus auktionsgebyrer, transport til EU's grænse og forsikring. 0 % told på biler bygget i USA (forordning (EU) 2026/1455, til udgangen af 2029) kræver toldgodkendt bevis for amerikansk produktion og direkte transport fra USA – en faktura eller Carfax-rapport alene er ikke nok. Ellers 10 %."
     },
     "q2": {
-      "q": "Hvilken punktafgift gælder ved import af en bil til Polen?",
-      "a": "Biler med forbrændingsmotor op til 2000 cm³: 3,1 %, over 2000 cm³: 18,6 %. Hybrider: 1,55 % op til 2000 cm³ og 9,3 % op til 3500 cm³. Plug-in-hybrider op til 2000 cm³ og elbiler er fritaget. Grundlaget er toldværdien plus told, omregnet til PLN."
+      "q": "Hvor meget registreringsafgift skal jeg betale for en importeret bil?",
+      "a": "I 2026: 25 % af den afgiftspligtige værdi op til 76.400 kr, 85 % op til 237.400 kr og 150 % af resten, plus et CO₂-tillæg (294 / 587 / 1.115 kr pr. g/km) og minus et bundfradrag på 25.500 kr. For en brugt bil er værdien handelsværdien inkl. moms. Elbiler betaler 40 % af afgiften med et særligt fradrag. Beregneren estimerer den ud fra værdi, CO₂ og alder."
     },
     "q3": {
-      "q": "Hvor er det bedst at fortolde bilen: Bremerhaven, Rotterdam eller Gdynia?",
-      "a": "Importmomsen opkræves af fortoldningslandet: 19 % i Tyskland, 21 % i Nederlandene og 23 % i Polen. Fortoldning i Tyskland sænker momsen, men du skal lægge en autotransporter til Polen oveni og betale punktafgiften separat på skattekontoret inden for 14 dage. Beregneren sammenligner mulighederne for din bil."
+      "q": "Hvor er det bedst at fortolde: Aarhus, København eller Bremerhaven?",
+      "a": "Importmomsen opkræves af fortoldningslandet: 25 % i Danmark, 19 % i Tyskland. For en brugt bil er momsen betalt dér endelig: Bremerhaven sparer 6 procentpoint, men transporten til Danmark lægges til, og registreringsafgiften betales altid i Danmark. Beregneren sammenligner havnene for din bil."
     },
     "q4": {
       "q": "Hvad er toldprocedure 4200?",

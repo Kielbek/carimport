@@ -243,7 +243,7 @@ interface CostGroup { key: string; icon: IconName; items: number }
               <tr class="border-b border-line"><th class="py-3 font-semibold">{{ 'home.ports.port' | translate }}</th><th class="py-3 font-semibold">{{ 'home.ports.country' | translate }}</th><th class="py-3 text-right font-semibold">VAT</th></tr>
             </thead>
             <tbody>
-              @for (p of ports; track p.name) {
+              @for (p of ports(); track p.name) {
                 <tr class="border-b border-line">
                   <td class="py-4 font-bold">{{ p.name }}</td>
                   <td class="py-4"><span class="flex items-center gap-2.5"><app-flag [code]="p.country" class="w-5" />{{ p.country | countryName: lang.locale() }}</span></td>
@@ -387,14 +387,22 @@ export class HomePage {
     { key: 'vat', icon: 'percent' },
   ];
 
-  protected readonly ports = [
-    { name: 'Bremerhaven', country: 'DE', vat: 19 },
-    { name: 'Rotterdam', country: 'NL', vat: 21 },
-    { name: 'Gdynia', country: 'PL', vat: 23 },
-    { name: 'Klaipėda', country: 'LT', vat: 21 },
-    { name: 'Koper', country: 'SI', vat: 22 },
-    { name: 'Constanța', country: 'RO', vat: 21 },
-  ];
+  /** The usual entry ports, with the main port of the visitor's country (by language) first. */
+  protected readonly ports = computed(() => {
+    const base = [
+      { name: 'Bremerhaven', country: 'DE', vat: 19 },
+      { name: 'Rotterdam', country: 'NL', vat: 21 },
+      { name: 'Gdynia', country: 'PL', vat: 23 },
+      { name: 'Klaipėda', country: 'LT', vat: 21 },
+      { name: 'Koper', country: 'SI', vat: 22 },
+      { name: 'Constanța', country: 'RO', vat: 21 },
+    ];
+    const home = MAIN_PORT[this.lang.info().country];
+    if (!home) {
+      return base;
+    }
+    return [home, ...base.filter((p) => p.name !== home.name)].slice(0, 6);
+  });
 
   protected readonly plans: { key: string; featured: boolean }[] = [
     { key: 'free', featured: false },
@@ -406,3 +414,29 @@ export class HomePage {
     return Array.from({ length: n }, (_, i) => i + 1);
   }
 }
+
+/** Main car port of each coastal member state with its import VAT; landlocked countries keep the default list. */
+const MAIN_PORT: Record<string, { name: string; country: string; vat: number }> = {
+  BE: { name: 'Antwerpen', country: 'BE', vat: 21 },
+  BG: { name: 'Varna', country: 'BG', vat: 20 },
+  CY: { name: 'Limassol', country: 'CY', vat: 19 },
+  DE: { name: 'Bremerhaven', country: 'DE', vat: 19 },
+  DK: { name: 'Aarhus', country: 'DK', vat: 25 },
+  EE: { name: 'Tallinn (Muuga)', country: 'EE', vat: 24 },
+  ES: { name: 'Valencia', country: 'ES', vat: 21 },
+  FI: { name: 'Hanko', country: 'FI', vat: 25.5 },
+  FR: { name: 'Le Havre', country: 'FR', vat: 20 },
+  GR: { name: 'Piraeus', country: 'GR', vat: 24 },
+  HR: { name: 'Rijeka', country: 'HR', vat: 25 },
+  IE: { name: 'Dublin', country: 'IE', vat: 23 },
+  IT: { name: 'Genova', country: 'IT', vat: 22 },
+  LT: { name: 'Klaipėda', country: 'LT', vat: 21 },
+  LV: { name: 'Rīga', country: 'LV', vat: 21 },
+  MT: { name: 'Marsaxlokk', country: 'MT', vat: 18 },
+  NL: { name: 'Rotterdam', country: 'NL', vat: 21 },
+  PL: { name: 'Gdynia', country: 'PL', vat: 23 },
+  PT: { name: 'Lisboa', country: 'PT', vat: 23 },
+  RO: { name: 'Constanța', country: 'RO', vat: 21 },
+  SE: { name: 'Göteborg', country: 'SE', vat: 25 },
+  SI: { name: 'Koper', country: 'SI', vat: 22 },
+};

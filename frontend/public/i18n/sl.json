@@ -463,7 +463,8 @@
     "language": "Jezik",
     "blog": "Blog",
     "taxes": "Kalkulator carine in davkov",
-    "method": "Kako računamo"
+    "method": "Kako računamo",
+    "toTop": "Na vrh"
   },
   "footer": {
     "about": "Neodvisni kalkulator stroškov uvoza avtomobilov izven EU. Avtomobilov ne prodajamo in ne uvažamo – izračunamo, koliko v resnici stanejo.",
@@ -525,8 +526,8 @@
     },
     "costs": {
       "eyebrow": "Iz česa je sestavljena cena",
-      "title": "Carina, trošarina in DDV, izračunani v enakem vrstnem redu kot na carini",
-      "lead": "Vsaka dajatev je osnova za naslednjo, zato je vrstni red pomemben. Pristanišče carinjenja določa stopnjo DDV, država registracije pa trošarino.",
+      "title": "Carina, DDV in davek na motorna vozila v enakem vrstnem redu kot na carini",
+      "lead": "Vsak davek je osnova za naslednjega. Pristanišče carinjenja določa DDV; ob registraciji v Sloveniji se plača davek na motorna vozila.",
       "cif": {
         "title": "Carinska vrednost (CIF)",
         "formula": "cena + provizija dražbe + prevoz + vozarina + zavarovanje",
@@ -538,14 +539,14 @@
         "text": "Stopnja je odvisna od tarifne oznake HS; motorna kolesa 6–8 %."
       },
       "excise": {
-        "title": "Trošarina (PL)",
-        "formula": "(CIF + carina) × 3,1 % do 2,0 l · 18,6 % nad tem",
-        "text": "Hibridi 1,55 % / 9,3 %, električni 0 %. Plača se v državi registracije."
+        "title": "Davek na motorna vozila (SI)",
+        "formula": "% vrednosti po CO₂ · bencin 0,5–28 % · dizel 1–31 %",
+        "text": "Za rabljena vozila od tržne vrednosti; električna vozila so oproščena."
       },
       "vat": {
         "title": "Uvozni DDV",
-        "formula": "(CIF + carina + trošarina* + raztovarjanje) × stopnja države carinjenja",
-        "text": "*Trošarina je vključena le pri carinjenju v državi registracije."
+        "formula": "(CIF + carina + raztovarjanje) × stopnja države carinjenja",
+        "text": "Pri carinjenju v Kopru je uvozni DDV 22 %."
       }
     },
     "ports": {
@@ -680,7 +681,7 @@
       "taxes": {
         "title": "Carine in davki",
         "i1": "Carina po TARIC (10 %, 10–22 % za pickupe)",
-        "i2": "Trošarina glede na motor in vrsto goriva",
+        "i2": "Davek na motorna vozila po CO₂",
         "i3": "DDV v državi pristanišča carinjenja",
         "i4": "Tečaj centralne banke na isti dan"
       },
@@ -754,12 +755,12 @@
       "a": "Za osebne avtomobile (KN 8703) znaša carina 10 % carinske vrednosti CIF, za pickupe in lahka tovorna vozila (8704) 10–22 %, za motorna kolesa pa 6–8 %. Starodobna vozila, starejša od 30 let, v originalnem stanju so lahko upravičena do 0 %. Carinska vrednost je kupnina, povečana za provizije dražbe, prevoz do meje EU in zavarovanje. Carina 0 % za avtomobile, izdelane v ZDA (Uredba (EU) 2026/1455, do konca 2029), zahteva dokazilo o izdelavi v ZDA, ki ga carina sprejme, in neposreden prevoz iz ZDA – račun ali poročilo Carfax nista dovolj. Sicer 10 %."
     },
     "q2": {
-      "q": "Kakšna trošarina velja pri uvozu avta na Poljsko?",
-      "a": "Avtomobili z motorjem z notranjim zgorevanjem do 2000 cm³: 3,1 %, nad 2000 cm³: 18,6 %. Hibridi: 1,55 % do 2000 cm³ in 9,3 % do 3500 cm³. Priključni hibridi do 2000 cm³ in električni avtomobili so oproščeni. Osnova je carinska vrednost, povečana za carino, preračunana v PLN."
+      "q": "Koliko davka na motorna vozila plačam za uvožen avto?",
+      "a": "Davek na motorna vozila (DMV) je odstotek vrednosti vozila glede na izpust CO₂: za bencinske od 0,5 do 28 %, za dizelske od 1 do 31 %. Za rabljeno vozilo se upošteva tržna vrednost. Električna vozila so oproščena. Kalkulator ga oceni po CO₂ in vrednosti."
     },
     "q3": {
-      "q": "Kje je avto najbolje ocariniti: v Bremerhavnu, Rotterdamu ali Gdyni?",
-      "a": "Uvozni DDV obračuna država carinjenja: 19 % v Nemčiji, 21 % na Nizozemskem in 23 % na Poljskem. Carinjenje v Nemčiji zniža DDV, vendar dodate avtotransporter do Poljske, trošarino pa plačate ločeno na davčnem uradu v 14 dneh. Kalkulator primerja možnosti za vaš avto."
+      "q": "Kje ocariniti avto: Koper, Trst ali Bremerhaven?",
+      "a": "Uvozni DDV pobira država carinjenja: 22 % v Sloveniji in Italiji, 19 % v Nemčiji. Za rabljeni avto je tam plačani DDV dokončen, a se doda prevoz v Slovenijo, DMV pa se vedno plača doma. Zato je Koper običajno najpreprostejši. Kalkulator primerja pristanišča za vaš avto."
     },
     "q4": {
       "q": "Kaj je carinski postopek 4200?",
