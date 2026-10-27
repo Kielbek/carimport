@@ -202,7 +202,8 @@
     "title": "Fuld importrapport",
     "termsLink": "Handelsbetingelser",
     "guarantee": "Korrekthedsgaranti: meld en regnefejl inden for 14 dage (fx en forældet sats eller et manglende obligatorisk gebyr), så retter vi rapporten eller refunderer hele prisen.",
-    "promoHint": "Har du en rabatkode? Du indtaster den på betalingssiden."
+    "promoHint": "Har du en rabatkode? Du indtaster den på betalingssiden.",
+    "startFailed": "Betalingen kunne ikke startes. Prøv igen om lidt – skriv til os, hvis fejlen fortsætter."
   },
   "report": {
     "amount": "Beløb",

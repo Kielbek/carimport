@@ -123,7 +123,7 @@ export class PaywallModal {
         },
         error: (e) => {
           this.busy.set(false);
-          this.error.set(e?.status === 429 ? 'error.rateLimited' : (e?.error?.detail ?? 'Payment could not be started'));
+          this.error.set(e?.status === 429 ? 'error.rateLimited' : (e?.error?.detail ?? 'paywall.startFailed'));
         },
       });
   }

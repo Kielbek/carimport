@@ -202,7 +202,8 @@
     "title": "Täielik impordiraport",
     "termsLink": "Tingimused",
     "guarantee": "Õigsuse garantii: teata arvutusveast 14 päeva jooksul (nt aegunud määr või puuduv kohustuslik tasu) ja me parandame aruande või tagastame kogu hinna.",
-    "promoHint": "Kas sul on sooduskood? Sisesta see makselehel."
+    "promoHint": "Kas sul on sooduskood? Sisesta see makselehel.",
+    "startFailed": "Makset ei õnnestunud alustada. Proovi hetke pärast uuesti – kui viga kordub, kirjuta meile."
   },
   "report": {
     "amount": "Summa",

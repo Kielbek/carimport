@@ -202,7 +202,8 @@
     "title": "Fullständig importrapport",
     "termsLink": "Villkor",
     "guarantee": "Korrekthetsgaranti: anmäl ett räknefel inom 14 dagar (t.ex. en inaktuell sats eller en saknad obligatorisk avgift), så rättar vi rapporten eller återbetalar hela priset.",
-    "promoHint": "Har du en rabattkod? Du anger den på betalningssidan."
+    "promoHint": "Har du en rabattkod? Du anger den på betalningssidan.",
+    "startFailed": "Betalningen kunde inte startas. Försök igen om en stund – kontakta oss om felet kvarstår."
   },
   "report": {
     "amount": "Belopp",

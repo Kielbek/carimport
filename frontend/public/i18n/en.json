@@ -202,7 +202,8 @@
     "title": "Full import report",
     "termsLink": "Terms",
     "guarantee": "Accuracy guarantee: report a calculation error within 14 days (e.g. an outdated rate or a missing mandatory fee) and we fix the report or refund the full price.",
-    "promoHint": "Have a discount code? Enter it on the payment page."
+    "promoHint": "Have a discount code? Enter it on the payment page.",
+    "startFailed": "The payment could not be started. Please try again in a moment – if it keeps failing, contact us."
   },
   "report": {
     "amount": "Amount",

@@ -202,7 +202,8 @@
     "title": "Teljes importjelentés",
     "termsLink": "ÁSZF",
     "guarantee": "Pontossági garancia: jelezze a számítási hibát 14 napon belül (pl. elavult kulcs vagy hiányzó kötelező díj), és kijavítjuk a jelentést vagy visszafizetjük a teljes árat.",
-    "promoHint": "Van kedvezménykódja? A fizetési oldalon adhatja meg."
+    "promoHint": "Van kedvezménykódja? A fizetési oldalon adhatja meg.",
+    "startFailed": "A fizetést nem sikerült elindítani. Próbálja újra kicsit később – ha a hiba ismétlődik, írjon nekünk."
   },
   "report": {
     "amount": "Összeg",

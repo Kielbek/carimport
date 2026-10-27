@@ -202,7 +202,8 @@
     "title": "Raport complet de import",
     "termsLink": "Termeni și condiții",
     "guarantee": "Garanție de corectitudine: semnalează o eroare de calcul în 14 zile (de ex. o cotă depășită sau o taxă obligatorie lipsă) și corectăm raportul sau returnăm prețul integral.",
-    "promoHint": "Aveți un cod de reducere? Îl introduceți pe pagina de plată."
+    "promoHint": "Aveți un cod de reducere? Îl introduceți pe pagina de plată.",
+    "startFailed": "Plata nu a putut fi inițiată. Încercați din nou imediat – dacă eroarea persistă, scrieți-ne."
   },
   "report": {
     "amount": "Sumă",

@@ -202,7 +202,8 @@
     "title": "Rapport d’importation complet",
     "termsLink": "Conditions générales",
     "guarantee": "Garantie d'exactitude : signalez une erreur de calcul sous 14 jours (par ex. un taux obsolète ou des frais obligatoires manquants) et nous corrigeons le rapport ou remboursons l'intégralité du prix.",
-    "promoHint": "Vous avez un code promo ? Saisissez-le sur la page de paiement."
+    "promoHint": "Vous avez un code promo ? Saisissez-le sur la page de paiement.",
+    "startFailed": "Le paiement n'a pas pu démarrer. Réessayez dans un instant – si l'erreur persiste, contactez-nous."
   },
   "report": {
     "amount": "Montant",

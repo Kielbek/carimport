@@ -202,7 +202,8 @@
     "title": "Kompletní report dovozu",
     "termsLink": "Obchodní podmínky",
     "guarantee": "Záruka správnosti: nahlaste chybu ve výpočtu do 14 dnů (např. zastaralou sazbu nebo chybějící povinný poplatek) a report opravíme, nebo vrátíme celou částku.",
-    "promoHint": "Máte slevový kód? Zadáte ho na platební stránce."
+    "promoHint": "Máte slevový kód? Zadáte ho na platební stránce.",
+    "startFailed": "Platbu se nepodařilo zahájit. Zkuste to za chvíli znovu – pokud se chyba opakuje, napište nám."
   },
   "report": {
     "amount": "Částka",

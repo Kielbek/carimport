@@ -202,7 +202,8 @@
     "title": "Informe de importación completo",
     "termsLink": "Condiciones generales",
     "guarantee": "Garantía de exactitud: comunica un error de cálculo en 14 días (p. ej., un tipo desactualizado o una tasa obligatoria que falta) y corregiremos el informe o devolveremos el precio íntegro.",
-    "promoHint": "¿Tienes un código de descuento? Introdúcelo en la página de pago."
+    "promoHint": "¿Tienes un código de descuento? Introdúcelo en la página de pago.",
+    "startFailed": "No se pudo iniciar el pago. Inténtalo de nuevo en un momento; si el error persiste, escríbenos."
   },
   "report": {
     "amount": "Importe",

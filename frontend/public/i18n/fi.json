@@ -202,7 +202,8 @@
     "title": "Täydellinen tuontiraportti",
     "termsLink": "Ehdot",
     "guarantee": "Oikeellisuustakuu: ilmoita laskentavirheestä 14 päivän kuluessa (esim. vanhentunut verokanta tai puuttuva pakollinen maksu), niin korjaamme raportin tai palautamme koko hinnan.",
-    "promoHint": "Onko sinulla alennuskoodi? Syötä se maksusivulla."
+    "promoHint": "Onko sinulla alennuskoodi? Syötä se maksusivulla.",
+    "startFailed": "Maksua ei voitu aloittaa. Yritä hetken päästä uudelleen – jos virhe toistuu, ota meihin yhteyttä."
   },
   "report": {
     "amount": "Summa",

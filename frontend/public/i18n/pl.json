@@ -202,7 +202,8 @@
     "title": "Pełny raport importu",
     "termsLink": "Regulamin",
     "guarantee": "Gwarancja poprawności: zgłoś błąd w wyliczeniu w ciągu 14 dni (np. nieaktualną stawkę lub brakującą obowiązkową opłatę), a poprawimy raport albo zwrócimy całą kwotę.",
-    "promoHint": "Masz kod rabatowy? Wpiszesz go na stronie płatności."
+    "promoHint": "Masz kod rabatowy? Wpiszesz go na stronie płatności.",
+    "startFailed": "Nie udało się rozpocząć płatności. Spróbuj ponownie za chwilę – jeśli błąd się powtórzy, napisz do nas."
   },
   "report": {
     "amount": "Kwota",

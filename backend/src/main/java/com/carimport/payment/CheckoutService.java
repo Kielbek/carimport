@@ -10,7 +10,6 @@ import com.stripe.param.checkout.SessionCreateParams;
 import java.time.Clock;
 import java.time.Duration;
 import java.time.Instant;
-import java.util.List;
 import java.util.Locale;
 import java.util.UUID;
 import org.slf4j.Logger;
@@ -69,7 +68,8 @@ public class CheckoutService {
         String returnBase = props.frontendUrl() + "/" + locale + "/report/" + order.getId();
         SessionCreateParams params = SessionCreateParams.builder()
                 .setMode(SessionCreateParams.Mode.PAYMENT)
-                .addAllPaymentMethodType(paymentMethods(currency))
+                // no fixed list: Checkout offers what is switched on in the Stripe dashboard for this currency
+                // (card, BLIK, Przelewy24, ...) - a method not yet enabled in live mode cannot break the payment
                 .setCustomerEmail(email)
                 // discount codes are created in the Stripe dashboard (Products > Coupons > Promotion codes)
                 .setAllowPromotionCodes(true)
@@ -106,18 +106,6 @@ public class CheckoutService {
         log.info("Order {} created for quote {}: {} {} ({}), session {}", order.getId(), quote.getId(), price, currency,
                 locale, session.getId());
         return new CheckoutResult(order.getId(), token, session.getUrl());
-    }
-
-    /** BLIK and Przelewy24 only settle in PLN (P24 also EUR); cards work everywhere. */
-    static List<SessionCreateParams.PaymentMethodType> paymentMethods(CurrencyCode currency) {
-        return switch (currency) {
-            case PLN -> List.of(SessionCreateParams.PaymentMethodType.CARD,
-                    SessionCreateParams.PaymentMethodType.BLIK,
-                    SessionCreateParams.PaymentMethodType.P24);
-            case EUR -> List.of(SessionCreateParams.PaymentMethodType.CARD,
-                    SessionCreateParams.PaymentMethodType.P24);
-            default -> List.of(SessionCreateParams.PaymentMethodType.CARD);
-        };
     }
 
     /** Stripe Checkout speaks every site language except Ukrainian, which falls back to the browser language. */

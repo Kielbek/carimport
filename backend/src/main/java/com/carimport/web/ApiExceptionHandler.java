@@ -4,6 +4,7 @@ import com.carimport.calculation.CalculationException;
 import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;
+import com.stripe.exception.StripeException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
@@ -51,6 +52,24 @@ public class ApiExceptionHandler {
         e.getBindingResult().getGlobalErrors().forEach(g -> errors.putIfAbsent(g.getObjectName(), g.getDefaultMessage()));
         problem.setDetail(String.join(" ", errors.values()));
         problem.setProperty("errors", errors);
+        return problem;
+    }
+
+    /**
+     * Stripe refused a call (key, account not activated, payment method, ...): the buyer gets a short translated note,
+     * the operator an alert with Stripe's own message, which names the cause.
+     */
+    @ExceptionHandler(StripeException.class)
+    public ProblemDetail stripe(StripeException e) {
+        String id = MDC.get(RequestLoggingFilter.MDC_KEY);
+        log.error("Stripe refused the request ({} {}): {}", e.getStatusCode(), e.getCode(), e.getMessage());
+        events.publishEvent(new OpsAlert("stripe:" + e.getCode(), "Stripe refused a payment request",
+                "Stripe answered " + e.getStatusCode() + " " + e.getCode() + ": " + e.getMessage()
+                        + "\nRequest id " + id + ". Check the API keys in .env and the account and payment methods in"
+                        + " the Stripe dashboard (live mode)."));
+        ProblemDetail problem = ProblemDetail.forStatusAndDetail(HttpStatus.BAD_GATEWAY, messages.getMessage(
+                "error.payment.unavailable", null, "Payment could not be started.", LocaleContextHolder.getLocale()));
+        problem.setProperty("requestId", id);
         return problem;
     }
 

@@ -202,7 +202,8 @@
     "title": "Report completo sull’importazione",
     "termsLink": "Condizioni generali",
     "guarantee": "Garanzia di correttezza: segnala un errore di calcolo entro 14 giorni (ad es. un'aliquota non aggiornata o una tassa obbligatoria mancante) e correggiamo il report o rimborsiamo l'intero prezzo.",
-    "promoHint": "Hai un codice sconto? Lo inserisci nella pagina di pagamento."
+    "promoHint": "Hai un codice sconto? Lo inserisci nella pagina di pagamento.",
+    "startFailed": "Non è stato possibile avviare il pagamento. Riprova tra poco – se l'errore persiste, scrivici."
   },
   "report": {
     "amount": "Importo",
