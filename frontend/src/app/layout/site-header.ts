@@ -17,7 +17,10 @@ import { ThemeToggle } from './theme-toggle';
     <div class="hidden border-b border-line md:block">
       <div class="site flex h-[50px] items-center justify-between text-[12px] leading-[1.25] text-fg/90">
         <p class="max-w-[520px]">{{ 'layout.topbar' | translate }}</p>
-        <a [routerLink]="about()" class="transition hover:text-brand-text">{{ 'layout.about' | translate }}</a>
+        <span class="flex items-center gap-6">
+          <a [routerLink]="about()" class="transition hover:text-brand-text">{{ 'layout.about' | translate }}</a>
+          <a [routerLink]="contact()" class="transition hover:text-brand-text">{{ 'layout.contact' | translate }}</a>
+        </span>
       </div>
     </div>
 
@@ -60,6 +63,7 @@ import { ThemeToggle } from './theme-toggle';
             <a [routerLink]="guides()" (click)="menu.set(false)" class="py-2.5">{{ 'guide.nav.title' | translate }}</a>
             <a [routerLink]="blog()" (click)="menu.set(false)" class="py-2.5">{{ 'layout.blog' | translate }}</a>
             <a [routerLink]="about()" (click)="menu.set(false)" class="py-2.5">{{ 'layout.about' | translate }}</a>
+            <a [routerLink]="contact()" (click)="menu.set(false)" class="py-2.5">{{ 'layout.contact' | translate }}</a>
             <app-language-menu class="mt-3 self-start sm:hidden" [hrefFor]="hrefFor()" />
           </div>
         </nav>
@@ -76,6 +80,7 @@ export class SiteHeader {
   protected readonly home = computed(() => pathFor('home', this.lang.current()));
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly about = computed(() => pathFor('about', this.lang.current()));
+  protected readonly contact = computed(() => pathFor('contact', this.lang.current()));
   protected readonly blog = computed(() => `/${this.lang.current()}/blog`);
   protected readonly guides = computed(() => guidePath({ section: 'origins', item: null }, this.lang.current()));
   protected readonly anchors = [

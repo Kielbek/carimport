@@ -509,7 +509,8 @@
     "taxes": "Kalkulator cła i akcyzy",
     "method": "Jak liczymy",
     "toTop": "Do góry",
-    "glossary": "Słowniczek"
+    "glossary": "Słowniczek",
+    "contact": "Kontakt"
   },
   "footer": {
     "about": "Niezależny kalkulator kosztów importu samochodów spoza UE. Nie sprzedajemy ani nie sprowadzamy aut – liczymy, ile naprawdę kosztują.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Słowniczek importu auta: CIF, TARIC, salvage title, VAT importowy | Carglo",
       "description": "CIF, wartość celna, kody TARIC, clean i salvage title, VAT importowy, procedura 4200, Ro-Ro i CoC – proste wyjaśnienia przy imporcie auta do UE."
+    },
+    "contact": {
+      "title": "Kontakt – napisz do nas | Carglo",
+      "description": "Pytanie o kalkulację, raport, płatność albo współpracę? Napisz do zespołu Carglo – odpowiadamy zwykle w ciągu jednego dnia roboczego."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Szukaj…",
     "empty": "Brak wyników"
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Napisz do nas",
+    "lead": "Pytanie o wyliczenie, raport albo płatność? A może chcesz współpracować? Odpowiadamy zwykle w ciągu jednego dnia roboczego.",
+    "name": "Imię i nazwisko",
+    "email": "E-mail",
+    "emailInvalid": "Podaj poprawny adres e-mail.",
+    "topic": "Temat",
+    "topics": {
+      "report": "Pytanie o raport lub wyliczenie",
+      "order": "Zamówienie i płatność",
+      "partner": "Współpraca dla firm",
+      "other": "Inne"
+    },
+    "order": "Numer zamówienia",
+    "optional": "opcjonalnie",
+    "orderHint": "np. AB12CD34",
+    "message": "Wiadomość",
+    "messageHint": "Opisz krótko, w czym możemy pomóc…",
+    "messageShort": "Wiadomość musi mieć co najmniej 10 znaków.",
+    "privacy": "Dane z formularza wykorzystamy wyłącznie, aby odpowiedzieć na Twoją wiadomość. Szczegóły:",
+    "submit": "Wyślij wiadomość",
+    "error": "Nie udało się wysłać wiadomości. Spróbuj ponownie za chwilę albo napisz bezpośrednio na {{email}}.",
+    "direct": "Napisz bezpośrednio",
+    "response": "Odpowiadamy zwykle w ciągu jednego dnia roboczego.",
+    "quick": "Szybkie odpowiedzi",
+    "sent": {
+      "title": "Dziękujemy – wiadomość wysłana",
+      "text": "Odpowiemy na adres {{email}}, zwykle w ciągu jednego dnia roboczego.",
+      "cta": "Wróć do kalkulatora"
+    }
   }
 }

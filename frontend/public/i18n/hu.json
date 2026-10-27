@@ -509,7 +509,8 @@
     "taxes": "Vám- és adókalkulátor",
     "method": "Így számolunk",
     "toTop": "Vissza a tetejére",
-    "glossary": "Szótár"
+    "glossary": "Szótár",
+    "contact": "Kapcsolat"
   },
   "footer": {
     "about": "Független kalkulátor az EU-n kívülről behozott autók importköltségeihez. Nem árulunk és nem importálunk autókat – kiszámoljuk, mennyibe kerülnek valójában.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Autóimport szótár: CIF, TARIC, salvage title, import áfa | Carglo",
       "description": "CIF, vámérték, TARIC kódok, clean és salvage title, import áfa, 4200-as eljárás, Ro-Ro és CoC egyszerűen."
+    },
+    "contact": {
+      "title": "Kapcsolat – írjon nekünk | Carglo",
+      "description": "Kérdése van a kalkulációval, a jelentéssel, a fizetéssel vagy együttműködéssel kapcsolatban? Írjon a Carglo csapatának – általában egy munkanapon belül válaszolunk."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Keresés…",
     "empty": "Nincs találat"
+  },
+  "contact": {
+    "eyebrow": "Kapcsolat",
+    "title": "Írjon nekünk",
+    "lead": "Kérdése van a kalkulációval, a jelentéssel vagy a fizetéssel kapcsolatban? Vagy együttműködne velünk? Általában egy munkanapon belül válaszolunk.",
+    "name": "Teljes név",
+    "email": "E-mail",
+    "emailInvalid": "Adjon meg érvényes e-mail-címet.",
+    "topic": "Téma",
+    "topics": {
+      "report": "Kérdés a jelentésről vagy a kalkulációról",
+      "order": "Rendelés és fizetés",
+      "partner": "Együttműködés cégeknek",
+      "other": "Egyéb"
+    },
+    "order": "Rendelésszám",
+    "optional": "nem kötelező",
+    "orderHint": "pl. AB12CD34",
+    "message": "Üzenet",
+    "messageHint": "Írja le röviden, miben segíthetünk…",
+    "messageShort": "Az üzenetnek legalább 10 karakterből kell állnia.",
+    "privacy": "Az űrlap adatait kizárólag az üzenetére adott válaszhoz használjuk. Részletek:",
+    "submit": "Üzenet küldése",
+    "error": "Az üzenetet nem sikerült elküldeni. Próbálja újra egy perc múlva, vagy írjon közvetlenül a {{email}} címre.",
+    "direct": "Írjon közvetlenül",
+    "response": "Általában egy munkanapon belül válaszolunk.",
+    "quick": "Gyors válaszok",
+    "sent": {
+      "title": "Köszönjük – az üzenet elküldve",
+      "text": "A(z) {{email}} címre válaszolunk, általában egy munkanapon belül.",
+      "cta": "Vissza a kalkulátorhoz"
+    }
   }
 }

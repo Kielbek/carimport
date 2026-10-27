@@ -509,7 +509,8 @@
     "taxes": "Calcolatore di dazi e tasse",
     "method": "Come calcoliamo",
     "toTop": "Torna su",
-    "glossary": "Glossario"
+    "glossary": "Glossario",
+    "contact": "Contatti"
   },
   "footer": {
     "about": "Calcolatore indipendente dei costi di importazione di auto da Paesi extra UE. Non vendiamo né importiamo auto – calcoliamo quanto costano davvero.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Glossario importazione auto: CIF, TARIC, salvage title, IVA all'importazione | Carglo",
       "description": "CIF, valore in dogana, codici TARIC, clean e salvage title, IVA all'importazione, regime 4200, Ro-Ro e COC spiegati in modo semplice."
+    },
+    "contact": {
+      "title": "Contatti – scrivici | Carglo",
+      "description": "Una domanda sul calcolo, sul report, sul pagamento o su una collaborazione? Scrivi al team Carglo: di solito rispondiamo entro un giorno lavorativo."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Cerca…",
     "empty": "Nessun risultato"
+  },
+  "contact": {
+    "eyebrow": "Contatti",
+    "title": "Scrivici",
+    "lead": "Una domanda sul calcolo, sul report o sul pagamento? Oppure vuoi collaborare con noi? Di solito rispondiamo entro un giorno lavorativo.",
+    "name": "Nome e cognome",
+    "email": "E-mail",
+    "emailInvalid": "Inserisci un indirizzo e-mail valido.",
+    "topic": "Argomento",
+    "topics": {
+      "report": "Domanda sul report o sul calcolo",
+      "order": "Ordine e pagamento",
+      "partner": "Collaborazione per aziende",
+      "other": "Altro"
+    },
+    "order": "Numero d'ordine",
+    "optional": "facoltativo",
+    "orderHint": "es. AB12CD34",
+    "message": "Messaggio",
+    "messageHint": "Descrivi brevemente come possiamo aiutarti…",
+    "messageShort": "Il messaggio deve contenere almeno 10 caratteri.",
+    "privacy": "Usiamo i dati di questo modulo solo per rispondere al tuo messaggio. Dettagli:",
+    "submit": "Invia messaggio",
+    "error": "Non è stato possibile inviare il messaggio. Riprova tra un momento o scrivi direttamente a {{email}}.",
+    "direct": "Scrivi direttamente",
+    "response": "Di solito rispondiamo entro un giorno lavorativo.",
+    "quick": "Risposte rapide",
+    "sent": {
+      "title": "Grazie – messaggio inviato",
+      "text": "Ti risponderemo a {{email}}, di solito entro un giorno lavorativo.",
+      "cta": "Torna al calcolatore"
+    }
   }
 }

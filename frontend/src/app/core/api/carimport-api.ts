@@ -103,6 +103,11 @@ export class CarImportApi {
     return this.http.post<{ leadId: string }>(`${this.base}/leads`, body);
   }
 
+  /** Contact form: 202 = delivered to the operator's mailbox. */
+  sendContact(body: { name: string; email: string; topic: string; order: string; message: string; locale: string; website: string }): Observable<void> {
+    return this.http.post<void>(`${this.base}/contact`, body);
+  }
+
   /** Double opt-in: 202 = confirmation e-mail on its way (also for an address already on the list). */
   newsletterSubscribe(body: { email: string; locale: string; source: string; consent: boolean; website: string }): Observable<void> {
     return this.http.post<void>(`${this.base}/newsletter`, body);

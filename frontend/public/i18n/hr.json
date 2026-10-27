@@ -509,7 +509,8 @@
     "taxes": "Kalkulator carine i poreza",
     "method": "Kako računamo",
     "toTop": "Na vrh",
-    "glossary": "Pojmovnik"
+    "glossary": "Pojmovnik",
+    "contact": "Kontakt"
   },
   "footer": {
     "about": "Neovisni kalkulator troškova uvoza automobila izvan EU. Automobile ne prodajemo niti uvozimo – izračunavamo koliko zaista koštaju.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Pojmovnik uvoza: CIF, TARIC, salvage title, uvozni PDV | Carglo",
       "description": "CIF, carinska vrijednost, TARIC oznake, clean i salvage title, uvozni PDV, postupak 4200, Ro-Ro i CoC jednostavno objašnjeni."
+    },
+    "contact": {
+      "title": "Kontakt – pišite nam | Carglo",
+      "description": "Pitanje o izračunu, izvješću, plaćanju ili suradnji? Pišite timu Carglo – obično odgovaramo unutar jednog radnog dana."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Traži…",
     "empty": "Nema rezultata"
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Pišite nam",
+    "lead": "Pitanje o izračunu, izvješću ili plaćanju? Ili želite surađivati s nama? Obično odgovaramo unutar jednog radnog dana.",
+    "name": "Ime i prezime",
+    "email": "E-pošta",
+    "emailInvalid": "Unesite ispravnu adresu e-pošte.",
+    "topic": "Tema",
+    "topics": {
+      "report": "Pitanje o izvješću ili izračunu",
+      "order": "Narudžba i plaćanje",
+      "partner": "Suradnja za tvrtke",
+      "other": "Ostalo"
+    },
+    "order": "Broj narudžbe",
+    "optional": "neobavezno",
+    "orderHint": "npr. AB12CD34",
+    "message": "Poruka",
+    "messageHint": "Ukratko opišite kako vam možemo pomoći…",
+    "messageShort": "Poruka mora imati najmanje 10 znakova.",
+    "privacy": "Podatke iz obrasca koristimo samo za odgovor na vašu poruku. Pojedinosti:",
+    "submit": "Pošalji poruku",
+    "error": "Poruku nije bilo moguće poslati. Pokušajte ponovno za trenutak ili pišite izravno na {{email}}.",
+    "direct": "Pišite izravno",
+    "response": "Obično odgovaramo unutar jednog radnog dana.",
+    "quick": "Brzi odgovori",
+    "sent": {
+      "title": "Hvala – poruka je poslana",
+      "text": "Odgovorit ćemo na {{email}}, obično unutar jednog radnog dana.",
+      "cta": "Natrag na kalkulator"
+    }
   }
 }

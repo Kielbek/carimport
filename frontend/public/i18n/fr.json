@@ -509,7 +509,8 @@
     "taxes": "Calculateur de droits et taxes",
     "method": "Notre méthode",
     "toTop": "Haut de page",
-    "glossary": "Glossaire"
+    "glossary": "Glossaire",
+    "contact": "Contact"
   },
   "footer": {
     "about": "Calculateur indépendant des coûts d’importation de voitures hors UE. Nous ne vendons ni n’importons de voitures – nous calculons ce qu’elles coûtent vraiment.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Glossaire import auto : CIF, TARIC, salvage title, TVA à l'import | Carglo",
       "description": "CIF, valeur en douane, codes TARIC, clean et salvage title, TVA à l'import, procédure 4200, Ro-Ro et COC expliqués simplement."
+    },
+    "contact": {
+      "title": "Contact – écrivez-nous | Carglo",
+      "description": "Une question sur le calcul, le rapport, le paiement ou un partenariat ? Écrivez à l'équipe Carglo – nous répondons en général sous un jour ouvré."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Rechercher…",
     "empty": "Aucun résultat"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Écrivez-nous",
+    "lead": "Une question sur le calcul, le rapport ou le paiement ? Envie de travailler avec nous ? Nous répondons en général sous un jour ouvré.",
+    "name": "Nom et prénom",
+    "email": "E-mail",
+    "emailInvalid": "Saisissez une adresse e-mail valide.",
+    "topic": "Sujet",
+    "topics": {
+      "report": "Question sur le rapport ou le calcul",
+      "order": "Commande et paiement",
+      "partner": "Partenariat pour les entreprises",
+      "other": "Autre"
+    },
+    "order": "Numéro de commande",
+    "optional": "facultatif",
+    "orderHint": "ex. AB12CD34",
+    "message": "Message",
+    "messageHint": "Expliquez-nous brièvement comment nous pouvons vous aider…",
+    "messageShort": "Le message doit contenir au moins 10 caractères.",
+    "privacy": "Nous utilisons les données de ce formulaire uniquement pour répondre à votre message. Détails :",
+    "submit": "Envoyer le message",
+    "error": "Le message n'a pas pu être envoyé. Réessayez dans un instant ou écrivez directement à {{email}}.",
+    "direct": "Écrire directement",
+    "response": "Nous répondons en général sous un jour ouvré.",
+    "quick": "Réponses rapides",
+    "sent": {
+      "title": "Merci – message envoyé",
+      "text": "Nous répondrons à {{email}}, en général sous un jour ouvré.",
+      "cta": "Retour au calculateur"
+    }
   }
 }

@@ -509,7 +509,8 @@
     "taxes": "Muitas un nodokļu kalkulators",
     "method": "Kā mēs rēķinām",
     "toTop": "Uz augšu",
-    "glossary": "Vārdnīca"
+    "glossary": "Vārdnīca",
+    "contact": "Kontakti"
   },
   "footer": {
     "about": "Neatkarīgs importa izmaksu kalkulators automašīnām no valstīm ārpus ES. Mēs automašīnas nepārdodam un neimportējam – mēs aprēķinām, cik tās patiesībā maksā.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Auto importa vārdnīca: CIF, TARIC, salvage title, importa PVN | Carglo",
       "description": "CIF, muitas vērtība, TARIC kodi, clean un salvage title, importa PVN, procedūra 4200, Ro-Ro un CoC vienkārši."
+    },
+    "contact": {
+      "title": "Kontakti – raksti mums | Carglo",
+      "description": "Jautājums par aprēķinu, pārskatu, maksājumu vai sadarbību? Raksti Carglo komandai – parasti atbildam vienas darba dienas laikā."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Meklēt…",
     "empty": "Nav rezultātu"
+  },
+  "contact": {
+    "eyebrow": "Kontakti",
+    "title": "Raksti mums",
+    "lead": "Jautājums par aprēķinu, pārskatu vai maksājumu? Vai vēlies sadarboties? Parasti atbildam vienas darba dienas laikā.",
+    "name": "Vārds un uzvārds",
+    "email": "E-pasts",
+    "emailInvalid": "Ievadi derīgu e-pasta adresi.",
+    "topic": "Tēma",
+    "topics": {
+      "report": "Jautājums par pārskatu vai aprēķinu",
+      "order": "Pasūtījums un maksājums",
+      "partner": "Sadarbība uzņēmumiem",
+      "other": "Cits"
+    },
+    "order": "Pasūtījuma numurs",
+    "optional": "neobligāti",
+    "orderHint": "piem. AB12CD34",
+    "message": "Ziņa",
+    "messageHint": "Īsi apraksti, kā varam palīdzēt…",
+    "messageShort": "Ziņā jābūt vismaz 10 rakstzīmēm.",
+    "privacy": "Veidlapas datus izmantojam tikai, lai atbildētu uz tavu ziņu. Sīkāk:",
+    "submit": "Sūtīt ziņu",
+    "error": "Ziņu neizdevās nosūtīt. Mēģini vēlreiz pēc brīža vai raksti tieši uz {{email}}.",
+    "direct": "Raksti tieši",
+    "response": "Parasti atbildam vienas darba dienas laikā.",
+    "quick": "Ātrās atbildes",
+    "sent": {
+      "title": "Paldies – ziņa nosūtīta",
+      "text": "Atbildēsim uz {{email}}, parasti vienas darba dienas laikā.",
+      "cta": "Atpakaļ uz kalkulatoru"
+    }
   }
 }

@@ -40,6 +40,7 @@ const BREADCRUMB_LABEL: Record<Exclude<Page, 'home'>, string> = {
   taxes: 'layout.taxes',
   method: 'layout.method',
   glossary: 'layout.glossary',
+  contact: 'layout.contact',
 };
 
 /**

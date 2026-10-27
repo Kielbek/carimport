@@ -509,7 +509,8 @@
     "taxes": "Calculadora de direitos e impostos",
     "method": "Como calculamos",
     "toTop": "Voltar ao topo",
-    "glossary": "Glossário"
+    "glossary": "Glossário",
+    "contact": "Contacto"
   },
   "footer": {
     "about": "Calculadora independente dos custos de importação de carros de fora da UE. Não vendemos nem importamos carros – calculamos quanto custam realmente.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Glossário de importação: CIF, TARIC, salvage title, IVA de importação | Carglo",
       "description": "CIF, valor aduaneiro, códigos TARIC, clean e salvage title, IVA de importação, regime 4200, Ro-Ro e COC explicados de forma simples."
+    },
+    "contact": {
+      "title": "Contacto – escreva-nos | Carglo",
+      "description": "Uma pergunta sobre o cálculo, o relatório, o pagamento ou uma parceria? Escreva à equipa Carglo – normalmente respondemos num dia útil."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Pesquisar…",
     "empty": "Sem resultados"
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Escreva-nos",
+    "lead": "Uma pergunta sobre o cálculo, o relatório ou o pagamento? Ou quer trabalhar connosco? Normalmente respondemos num dia útil.",
+    "name": "Nome completo",
+    "email": "E-mail",
+    "emailInvalid": "Introduza um endereço de e-mail válido.",
+    "topic": "Assunto",
+    "topics": {
+      "report": "Pergunta sobre o relatório ou o cálculo",
+      "order": "Encomenda e pagamento",
+      "partner": "Parceria para empresas",
+      "other": "Outro"
+    },
+    "order": "Número da encomenda",
+    "optional": "opcional",
+    "orderHint": "p. ex. AB12CD34",
+    "message": "Mensagem",
+    "messageHint": "Descreva brevemente como podemos ajudar…",
+    "messageShort": "A mensagem deve ter pelo menos 10 caracteres.",
+    "privacy": "Usamos os dados deste formulário apenas para responder à sua mensagem. Detalhes:",
+    "submit": "Enviar mensagem",
+    "error": "Não foi possível enviar a mensagem. Tente novamente daqui a pouco ou escreva diretamente para {{email}}.",
+    "direct": "Escreva diretamente",
+    "response": "Normalmente respondemos num dia útil.",
+    "quick": "Respostas rápidas",
+    "sent": {
+      "title": "Obrigado – mensagem enviada",
+      "text": "Responderemos para {{email}}, normalmente num dia útil.",
+      "cta": "Voltar à calculadora"
+    }
   }
 }

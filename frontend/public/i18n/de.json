@@ -509,7 +509,8 @@
     "taxes": "Zoll- und Steuerrechner",
     "method": "So rechnen wir",
     "toTop": "Nach oben",
-    "glossary": "Glossar"
+    "glossary": "Glossar",
+    "contact": "Kontakt"
   },
   "footer": {
     "about": "Unabhängiger Rechner für die Importkosten von Autos außerhalb der EU. Wir verkaufen und importieren keine Autos – wir rechnen aus, was sie wirklich kosten.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Glossar Autoimport: CIF, TARIC, Salvage Title, Einfuhrumsatzsteuer | Carglo",
       "description": "CIF, Zollwert, TARIC-Codes, Clean und Salvage Title, Einfuhrumsatzsteuer, Verfahren 4200, Ro-Ro und CoC einfach erklärt."
+    },
+    "contact": {
+      "title": "Kontakt – schreiben Sie uns | Carglo",
+      "description": "Fragen zur Kalkulation, zum Bericht, zur Zahlung oder zu einer Partnerschaft? Schreiben Sie dem Carglo-Team – wir antworten meist innerhalb eines Werktags."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Suchen…",
     "empty": "Keine Treffer"
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Schreiben Sie uns",
+    "lead": "Eine Frage zur Kalkulation, zum Bericht oder zur Zahlung? Oder möchten Sie mit uns zusammenarbeiten? Wir antworten meist innerhalb eines Werktags.",
+    "name": "Vor- und Nachname",
+    "email": "E-Mail",
+    "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "topic": "Thema",
+    "topics": {
+      "report": "Frage zum Bericht oder zur Kalkulation",
+      "order": "Bestellung und Zahlung",
+      "partner": "Partnerschaft für Unternehmen",
+      "other": "Sonstiges"
+    },
+    "order": "Bestellnummer",
+    "optional": "optional",
+    "orderHint": "z. B. AB12CD34",
+    "message": "Nachricht",
+    "messageHint": "Beschreiben Sie kurz, wobei wir helfen können…",
+    "messageShort": "Die Nachricht muss mindestens 10 Zeichen lang sein.",
+    "privacy": "Die Angaben aus diesem Formular verwenden wir nur, um Ihre Nachricht zu beantworten. Details:",
+    "submit": "Nachricht senden",
+    "error": "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es gleich noch einmal oder schreiben Sie direkt an {{email}}.",
+    "direct": "Direkt schreiben",
+    "response": "Wir antworten meist innerhalb eines Werktags.",
+    "quick": "Schnelle Antworten",
+    "sent": {
+      "title": "Danke – Nachricht gesendet",
+      "text": "Wir antworten an {{email}}, meist innerhalb eines Werktags.",
+      "cta": "Zurück zum Rechner"
+    }
   }
 }

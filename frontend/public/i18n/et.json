@@ -509,7 +509,8 @@
     "taxes": "Tolli- ja maksukalkulaator",
     "method": "Kuidas me arvutame",
     "toTop": "Üles",
-    "glossary": "Sõnastik"
+    "glossary": "Sõnastik",
+    "contact": "Kontakt"
   },
   "footer": {
     "about": "Sõltumatu kalkulaator väljastpoolt ELi toodavate autode impordikulude arvutamiseks. Me ei müü ega impordi autosid – arvutame välja, kui palju need tegelikult maksavad.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Auto impordi sõnastik: CIF, TARIC, salvage title, impordi käibemaks | Carglo",
       "description": "CIF, tolliväärtus, TARIC-koodid, clean ja salvage title, impordi käibemaks, protseduur 4200, Ro-Ro ja CoC lihtsalt selgitatud."
+    },
+    "contact": {
+      "title": "Kontakt – kirjuta meile | Carglo",
+      "description": "Küsimus arvutuse, aruande, makse või koostöö kohta? Kirjuta Carglo meeskonnale – vastame tavaliselt ühe tööpäeva jooksul."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Otsi…",
     "empty": "Tulemusi pole"
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Kirjuta meile",
+    "lead": "Küsimus arvutuse, aruande või makse kohta? Või soovid meiega koostööd teha? Vastame tavaliselt ühe tööpäeva jooksul.",
+    "name": "Ees- ja perekonnanimi",
+    "email": "E-post",
+    "emailInvalid": "Sisesta kehtiv e-posti aadress.",
+    "topic": "Teema",
+    "topics": {
+      "report": "Küsimus aruande või arvutuse kohta",
+      "order": "Tellimus ja makse",
+      "partner": "Koostöö ettevõtetele",
+      "other": "Muu"
+    },
+    "order": "Tellimuse number",
+    "optional": "valikuline",
+    "orderHint": "nt AB12CD34",
+    "message": "Sõnum",
+    "messageHint": "Kirjelda lühidalt, millega saame aidata…",
+    "messageShort": "Sõnumis peab olema vähemalt 10 tähemärki.",
+    "privacy": "Kasutame vormi andmeid ainult sinu sõnumile vastamiseks. Üksikasjad:",
+    "submit": "Saada sõnum",
+    "error": "Sõnumi saatmine ebaõnnestus. Proovi hetke pärast uuesti või kirjuta otse aadressile {{email}}.",
+    "direct": "Kirjuta otse",
+    "response": "Vastame tavaliselt ühe tööpäeva jooksul.",
+    "quick": "Kiired vastused",
+    "sent": {
+      "title": "Aitäh – sõnum saadetud",
+      "text": "Vastame aadressile {{email}}, tavaliselt ühe tööpäeva jooksul.",
+      "cta": "Tagasi kalkulaatorisse"
+    }
   }
 }

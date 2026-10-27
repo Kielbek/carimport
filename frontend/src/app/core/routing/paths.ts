@@ -1,6 +1,6 @@
 import { Lang } from '../i18n/language.service';
 
-export type Page = 'home' | 'calculator' | 'about' | 'privacy' | 'terms' | 'taxes' | 'method' | 'glossary';
+export type Page = 'home' | 'calculator' | 'about' | 'privacy' | 'terms' | 'taxes' | 'method' | 'glossary' | 'contact';
 
 /** Localized URL slugs - "/pl/kalkulator" ranks for Polish queries far better than "/pl/calculator". */
 export const SLUGS: Record<Exclude<Page, 'home'>, Record<Lang, string>> = {
@@ -51,6 +51,13 @@ export const SLUGS: Record<Exclude<Page, 'home'>, Record<Lang, string>> = {
     et: 'sonastik', fi: 'sanasto', fr: 'glossaire', hr: 'pojmovnik', hu: 'fogalomtar', it: 'glossario', lt: 'zodynas',
     lv: 'vardnica', nl: 'woordenlijst', pl: 'slownik', pt: 'glossario', ro: 'glosar', sk: 'slovnik', sl: 'slovar',
     sv: 'ordlista', uk: 'slovnyk',
+  },
+  /** Contact form. */
+  contact: {
+    bg: 'kontakti', cs: 'kontakt', da: 'kontakt', de: 'kontakt', el: 'epikoinonia', en: 'contact', es: 'contacto',
+    et: 'kontakt', fi: 'yhteystiedot', fr: 'contact', hr: 'kontakt', hu: 'kapcsolat', it: 'contatti', lt: 'kontaktai',
+    lv: 'kontakti', nl: 'contact', pl: 'kontakt', pt: 'contacto', ro: 'contact', sk: 'kontakt', sl: 'kontakt',
+    sv: 'kontakt', uk: 'kontakty',
   },
 };
 

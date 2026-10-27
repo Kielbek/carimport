@@ -509,7 +509,8 @@
     "taxes": "Calculator taxe vamale",
     "method": "Cum calculăm",
     "toTop": "Sus",
-    "glossary": "Glosar"
+    "glossary": "Glosar",
+    "contact": "Contact"
   },
   "footer": {
     "about": "Calculator independent al costurilor de import pentru mașini din afara UE. Nu vindem și nu importăm mașini – calculăm cât costă de fapt.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Glosar import auto: CIF, TARIC, salvage title, TVA la import | Carglo",
       "description": "CIF, valoare în vamă, coduri TARIC, clean și salvage title, TVA la import, regim 4200, Ro-Ro și COC explicate simplu."
+    },
+    "contact": {
+      "title": "Contact – scrie-ne | Carglo",
+      "description": "O întrebare despre calcul, raport, plată sau un parteneriat? Scrie echipei Carglo – de obicei răspundem într-o zi lucrătoare."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Caută…",
     "empty": "Niciun rezultat"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Scrie-ne",
+    "lead": "O întrebare despre calcul, raport sau plată? Sau vrei să colaborăm? De obicei răspundem într-o zi lucrătoare.",
+    "name": "Nume și prenume",
+    "email": "E-mail",
+    "emailInvalid": "Introdu o adresă de e-mail validă.",
+    "topic": "Subiect",
+    "topics": {
+      "report": "Întrebare despre raport sau calcul",
+      "order": "Comandă și plată",
+      "partner": "Parteneriat pentru firme",
+      "other": "Altele"
+    },
+    "order": "Număr comandă",
+    "optional": "opțional",
+    "orderHint": "ex. AB12CD34",
+    "message": "Mesaj",
+    "messageHint": "Descrie pe scurt cu ce te putem ajuta…",
+    "messageShort": "Mesajul trebuie să aibă cel puțin 10 caractere.",
+    "privacy": "Folosim datele din formular doar pentru a-ți răspunde la mesaj. Detalii:",
+    "submit": "Trimite mesajul",
+    "error": "Mesajul nu a putut fi trimis. Încearcă din nou peste puțin timp sau scrie direct la {{email}}.",
+    "direct": "Scrie direct",
+    "response": "De obicei răspundem într-o zi lucrătoare.",
+    "quick": "Răspunsuri rapide",
+    "sent": {
+      "title": "Mulțumim – mesaj trimis",
+      "text": "Îți vom răspunde la {{email}}, de obicei într-o zi lucrătoare.",
+      "cta": "Înapoi la calculator"
+    }
   }
 }

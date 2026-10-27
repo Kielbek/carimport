@@ -509,7 +509,8 @@
     "taxes": "Invoerrechten- en belastingcalculator",
     "method": "Zo rekenen we",
     "toTop": "Naar boven",
-    "glossary": "Woordenlijst"
+    "glossary": "Woordenlijst",
+    "contact": "Contact"
   },
   "footer": {
     "about": "Onafhankelijke calculator voor de importkosten van auto’s van buiten de EU. Wij verkopen en importeren geen auto’s – wij berekenen wat ze echt kosten.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Woordenlijst auto-import: CIF, TARIC, salvage title, invoer-btw | Carglo",
       "description": "CIF, douanewaarde, TARIC-codes, clean en salvage title, invoer-btw, regeling 4200, Ro-Ro en CvO eenvoudig uitgelegd."
+    },
+    "contact": {
+      "title": "Contact – schrijf ons | Carglo",
+      "description": "Een vraag over de berekening, het rapport, de betaling of een samenwerking? Schrijf het Carglo-team – we antwoorden meestal binnen één werkdag."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Zoeken…",
     "empty": "Geen resultaten"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Schrijf ons",
+    "lead": "Een vraag over de berekening, het rapport of de betaling? Of wil je met ons samenwerken? We antwoorden meestal binnen één werkdag.",
+    "name": "Voor- en achternaam",
+    "email": "E-mail",
+    "emailInvalid": "Vul een geldig e-mailadres in.",
+    "topic": "Onderwerp",
+    "topics": {
+      "report": "Vraag over het rapport of de berekening",
+      "order": "Bestelling en betaling",
+      "partner": "Samenwerking voor bedrijven",
+      "other": "Overig"
+    },
+    "order": "Bestelnummer",
+    "optional": "optioneel",
+    "orderHint": "bijv. AB12CD34",
+    "message": "Bericht",
+    "messageHint": "Beschrijf kort waarmee we kunnen helpen…",
+    "messageShort": "Het bericht moet minstens 10 tekens bevatten.",
+    "privacy": "We gebruiken de gegevens uit dit formulier alleen om je bericht te beantwoorden. Details:",
+    "submit": "Bericht versturen",
+    "error": "Het bericht kon niet worden verstuurd. Probeer het zo opnieuw of schrijf rechtstreeks naar {{email}}.",
+    "direct": "Rechtstreeks schrijven",
+    "response": "We antwoorden meestal binnen één werkdag.",
+    "quick": "Snelle antwoorden",
+    "sent": {
+      "title": "Bedankt – bericht verstuurd",
+      "text": "We antwoorden naar {{email}}, meestal binnen één werkdag.",
+      "cta": "Terug naar de calculator"
+    }
   }
 }

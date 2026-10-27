@@ -509,7 +509,8 @@
     "taxes": "Tull- och skattekalkylator",
     "method": "Så räknar vi",
     "toTop": "Till toppen",
-    "glossary": "Ordlista"
+    "glossary": "Ordlista",
+    "contact": "Kontakt"
   },
   "footer": {
     "about": "Oberoende kalkylator för importkostnader för bilar från länder utanför EU. Vi varken säljer eller importerar bilar – vi räknar ut vad de verkligen kostar.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Ordlista bilimport: CIF, TARIC, salvage title, importmoms | Carglo",
       "description": "CIF, tullvärde, TARIC-koder, clean och salvage title, importmoms, förfarande 4200, Ro-Ro och CoC enkelt förklarat."
+    },
+    "contact": {
+      "title": "Kontakt – skriv till oss | Carglo",
+      "description": "En fråga om beräkningen, rapporten, betalningen eller ett samarbete? Skriv till Carglo-teamet – vi svarar oftast inom en arbetsdag."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Sök…",
     "empty": "Inga träffar"
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Skriv till oss",
+    "lead": "En fråga om beräkningen, rapporten eller betalningen? Eller vill du samarbeta med oss? Vi svarar oftast inom en arbetsdag.",
+    "name": "För- och efternamn",
+    "email": "E-post",
+    "emailInvalid": "Ange en giltig e-postadress.",
+    "topic": "Ämne",
+    "topics": {
+      "report": "Fråga om rapporten eller beräkningen",
+      "order": "Beställning och betalning",
+      "partner": "Samarbete för företag",
+      "other": "Övrigt"
+    },
+    "order": "Ordernummer",
+    "optional": "valfritt",
+    "orderHint": "t.ex. AB12CD34",
+    "message": "Meddelande",
+    "messageHint": "Beskriv kort vad vi kan hjälpa till med…",
+    "messageShort": "Meddelandet måste ha minst 10 tecken.",
+    "privacy": "Vi använder uppgifterna i formuläret endast för att svara på ditt meddelande. Detaljer:",
+    "submit": "Skicka meddelande",
+    "error": "Meddelandet kunde inte skickas. Försök igen om en stund eller skriv direkt till {{email}}.",
+    "direct": "Skriv direkt",
+    "response": "Vi svarar oftast inom en arbetsdag.",
+    "quick": "Snabba svar",
+    "sent": {
+      "title": "Tack – meddelandet har skickats",
+      "text": "Vi svarar till {{email}}, oftast inom en arbetsdag.",
+      "cta": "Tillbaka till kalkylatorn"
+    }
   }
 }

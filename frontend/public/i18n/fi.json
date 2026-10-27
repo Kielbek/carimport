@@ -509,7 +509,8 @@
     "taxes": "Tulli- ja verolaskuri",
     "method": "Näin laskemme",
     "toTop": "Takaisin ylös",
-    "glossary": "Sanasto"
+    "glossary": "Sanasto",
+    "contact": "Yhteystiedot"
   },
   "footer": {
     "about": "Riippumaton laskuri EU:n ulkopuolelta tuotavien autojen tuontikustannuksille. Emme myy emmekä tuo autoja – laskemme, mitä ne oikeasti maksavat.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Auton tuonnin sanasto: CIF, TARIC, salvage title, tuonnin ALV | Carglo",
       "description": "CIF, tullausarvo, TARIC-koodit, clean ja salvage title, tuonnin ALV, menettely 4200, Ro-Ro ja CoC selitettynä."
+    },
+    "contact": {
+      "title": "Yhteystiedot – kirjoita meille | Carglo",
+      "description": "Kysyttävää laskelmasta, raportista, maksusta tai yhteistyöstä? Kirjoita Carglon tiimille – vastaamme yleensä yhden arkipäivän kuluessa."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Hae…",
     "empty": "Ei tuloksia"
+  },
+  "contact": {
+    "eyebrow": "Yhteystiedot",
+    "title": "Kirjoita meille",
+    "lead": "Kysyttävää laskelmasta, raportista tai maksusta? Vai haluatko tehdä yhteistyötä? Vastaamme yleensä yhden arkipäivän kuluessa.",
+    "name": "Etu- ja sukunimi",
+    "email": "Sähköposti",
+    "emailInvalid": "Anna kelvollinen sähköpostiosoite.",
+    "topic": "Aihe",
+    "topics": {
+      "report": "Kysymys raportista tai laskelmasta",
+      "order": "Tilaus ja maksu",
+      "partner": "Yhteistyö yrityksille",
+      "other": "Muu"
+    },
+    "order": "Tilausnumero",
+    "optional": "valinnainen",
+    "orderHint": "esim. AB12CD34",
+    "message": "Viesti",
+    "messageHint": "Kerro lyhyesti, miten voimme auttaa…",
+    "messageShort": "Viestissä on oltava vähintään 10 merkkiä.",
+    "privacy": "Käytämme lomakkeen tietoja vain viestiisi vastaamiseen. Lisätietoja:",
+    "submit": "Lähetä viesti",
+    "error": "Viestin lähettäminen epäonnistui. Yritä hetken päästä uudelleen tai kirjoita suoraan osoitteeseen {{email}}.",
+    "direct": "Kirjoita suoraan",
+    "response": "Vastaamme yleensä yhden arkipäivän kuluessa.",
+    "quick": "Nopeat vastaukset",
+    "sent": {
+      "title": "Kiitos – viesti lähetetty",
+      "text": "Vastaamme osoitteeseen {{email}}, yleensä yhden arkipäivän kuluessa.",
+      "cta": "Takaisin laskuriin"
+    }
   }
 }

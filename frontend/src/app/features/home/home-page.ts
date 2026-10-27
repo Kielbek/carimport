@@ -4,7 +4,6 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { CountryNamePipe } from '../../core/format/country-name.pipe';
 import { AnalyticsService } from '../../core/analytics/analytics.service';
 import { LanguageService } from '../../core/i18n/language.service';
-import { contactEmail } from '../../core/site.config';
 import { pathFor } from '../../core/routing/paths';
 import { Flag } from '../../shared/flag/flag';
 import { Icon } from '../../shared/icon/icon';
@@ -275,7 +274,7 @@ interface CostGroup { key: string; icon: IconName; items: number }
                 }
               </ul>
               @if (plan.key === 'partner') {
-                <a [href]="'mailto:' + partnerMail()" class="btn btn-outline mt-8">{{ 'pricing.partner.cta' | translate }}</a>
+                <a [routerLink]="contact()" [queryParams]="{ topic: 'partner' }" class="btn btn-outline mt-8">{{ 'pricing.partner.cta' | translate }}</a>
               } @else {
                 <a [routerLink]="calculator()" class="btn mt-8" [class]="plan.featured ? 'btn-primary' : 'btn-outline'">{{ 'pricing.' + plan.key + '.cta' | translate }}</a>
                 @if (plan.featured) {
@@ -342,7 +341,7 @@ export class HomePage {
   protected readonly analytics = inject(AnalyticsService);
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly about = computed(() => pathFor('about', this.lang.current()));
-  protected readonly partnerMail = computed(() => contactEmail(this.lang.current()));
+  protected readonly contact = computed(() => pathFor('contact', this.lang.current()));
   protected readonly strip = ['instant', 'items', 'ports'];
 
   /** Two tall tiles next to the wide preview, then a row of four, the last one inverted. */

@@ -22,7 +22,7 @@ import { NewsletterSignup } from '../features/newsletter/newsletter-signup';
         <div>
           <app-logo />
           <p class="mt-5 max-w-xs text-sm leading-relaxed text-muted">{{ 'footer.about' | translate }}</p>
-          <a [href]="'mailto:' + email()" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold hover:text-brand-text">
+          <a [routerLink]="contact()" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold hover:text-brand-text">
             <app-icon name="mail" [size]="16" /> {{ email() }}
           </a>
         </div>
@@ -56,6 +56,7 @@ import { NewsletterSignup } from '../features/newsletter/newsletter-signup';
           <h2 class="label">{{ 'footer.service' | translate }}</h2>
           <ul class="space-y-2.5 text-sm text-fg/85">
             <li><a [routerLink]="about()" class="hover:text-brand-text">{{ 'layout.about' | translate }}</a></li>
+            <li><a [routerLink]="contact()" class="hover:text-brand-text">{{ 'layout.contact' | translate }}</a></li>
             <li><a [routerLink]="'/' + lang.current() + '/blog'" class="hover:text-brand-text">{{ 'layout.blog' | translate }}</a></li>
             <li><a [routerLink]="home()" fragment="what" class="hover:text-brand-text">{{ 'layout.what' | translate }}</a></li>
             <li><a [routerLink]="home()" fragment="how-it-works" class="hover:text-brand-text">{{ 'layout.howItWorks' | translate }}</a></li>
@@ -116,4 +117,5 @@ export class SiteFooter {
   protected readonly taxes = computed(() => pathFor('taxes', this.lang.current()));
   protected readonly method = computed(() => pathFor('method', this.lang.current()));
   protected readonly glossary = computed(() => pathFor('glossary', this.lang.current()));
+  protected readonly contact = computed(() => pathFor('contact', this.lang.current()));
 }

@@ -26,6 +26,7 @@ const terms = () => import('./features/legal/terms-page').then((m) => m.TermsPag
 const taxes = () => import('./features/taxes/taxes-page').then((m) => m.TaxesPage);
 const method = () => import('./features/method/method-page').then((m) => m.MethodPage);
 const glossary = () => import('./features/glossary/glossary-page').then((m) => m.GlossaryPage);
+const contact = () => import('./features/contact/contact-page').then((m) => m.ContactPage);
 
 /** Every language's slug resolves to the same page, e.g. /pl/kalkulator, /en/calculator, /de/rechner. */
 const localized = (slugs: Record<string, string>, load: NonNullable<Route['loadComponent']>, page: string): Routes =>
@@ -61,6 +62,7 @@ export const routes: Routes = [
           ...localized(SLUGS.taxes, taxes, 'taxes'),
           ...localized(SLUGS.method, method, 'method'),
           ...localized(SLUGS.glossary, glossary, 'glossary'),
+          ...localized(SLUGS.contact, contact, 'contact'),
           ...guides,
           {
             path: 'report/:orderId',

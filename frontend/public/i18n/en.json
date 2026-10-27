@@ -509,7 +509,8 @@
     "taxes": "Customs & tax calculator",
     "method": "How we calculate",
     "toTop": "Back to top",
-    "glossary": "Glossary"
+    "glossary": "Glossary",
+    "contact": "Contact"
   },
   "footer": {
     "about": "Independent calculator of import costs for cars from outside the EU. We neither sell nor import cars – we work out what they really cost.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Car import glossary: CIF, TARIC, salvage title, import VAT | Carglo",
       "description": "CIF, customs value, TARIC codes, clean and salvage titles, import VAT, procedure 4200, Ro-Ro and CoC explained simply for importing a car into the EU."
+    },
+    "contact": {
+      "title": "Contact us | Carglo",
+      "description": "A question about a quote, the report, a payment or a partnership? Write to the Carglo team – we usually reply within one business day."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Search…",
     "empty": "No results"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Get in touch",
+    "lead": "A question about a quote, the report or a payment? Interested in working with us? We usually reply within one business day.",
+    "name": "Full name",
+    "email": "E-mail",
+    "emailInvalid": "Please enter a valid e-mail address.",
+    "topic": "Topic",
+    "topics": {
+      "report": "Question about the report or a quote",
+      "order": "Order and payment",
+      "partner": "Business partnership",
+      "other": "Other"
+    },
+    "order": "Order number",
+    "optional": "optional",
+    "orderHint": "e.g. AB12CD34",
+    "message": "Message",
+    "messageHint": "Tell us briefly how we can help…",
+    "messageShort": "The message needs at least 10 characters.",
+    "privacy": "We use the details from this form only to reply to your message. Details:",
+    "submit": "Send message",
+    "error": "The message could not be sent. Please try again in a moment or write directly to {{email}}.",
+    "direct": "Write directly",
+    "response": "We usually reply within one business day.",
+    "quick": "Quick answers",
+    "sent": {
+      "title": "Thank you – message sent",
+      "text": "We will reply to {{email}}, usually within one business day.",
+      "cta": "Back to the calculator"
+    }
   }
 }

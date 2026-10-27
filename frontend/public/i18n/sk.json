@@ -509,7 +509,8 @@
     "taxes": "Kalkulačka cla a daní",
     "method": "Ako počítame",
     "toTop": "Nahor",
-    "glossary": "Slovník"
+    "glossary": "Slovník",
+    "contact": "Kontakt"
   },
   "footer": {
     "about": "Nezávislá kalkulačka nákladov na dovoz áut z krajín mimo EÚ. Autá nepredávame ani nedovážame – počítame, koľko naozaj stoja.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Slovník dovozu áut: CIF, TARIC, salvage title, DPH z dovozu | Carglo",
       "description": "CIF, colná hodnota, kódy TARIC, clean a salvage title, DPH z dovozu, režim 4200, Ro-Ro a COC jednoducho vysvetlené."
+    },
+    "contact": {
+      "title": "Kontakt – napíšte nám | Carglo",
+      "description": "Otázka ku kalkulácii, správe, platbe alebo spolupráci? Napíšte tímu Carglo – odpovedáme zvyčajne do jedného pracovného dňa."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Hľadať…",
     "empty": "Žiadne výsledky"
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Napíšte nám",
+    "lead": "Otázka ku kalkulácii, správe alebo platbe? Alebo chcete spolupracovať? Odpovedáme zvyčajne do jedného pracovného dňa.",
+    "name": "Meno a priezvisko",
+    "email": "E-mail",
+    "emailInvalid": "Zadajte platnú e-mailovú adresu.",
+    "topic": "Téma",
+    "topics": {
+      "report": "Otázka k správe alebo kalkulácii",
+      "order": "Objednávka a platba",
+      "partner": "Spolupráca pre firmy",
+      "other": "Iné"
+    },
+    "order": "Číslo objednávky",
+    "optional": "nepovinné",
+    "orderHint": "napr. AB12CD34",
+    "message": "Správa",
+    "messageHint": "Stručne opíšte, s čím vám môžeme pomôcť…",
+    "messageShort": "Správa musí mať aspoň 10 znakov.",
+    "privacy": "Údaje z formulára použijeme len na odpoveď na vašu správu. Podrobnosti:",
+    "submit": "Odoslať správu",
+    "error": "Správu sa nepodarilo odoslať. Skúste to o chvíľu znova alebo napíšte priamo na {{email}}.",
+    "direct": "Napíšte priamo",
+    "response": "Odpovedáme zvyčajne do jedného pracovného dňa.",
+    "quick": "Rýchle odpovede",
+    "sent": {
+      "title": "Ďakujeme – správa odoslaná",
+      "text": "Odpovieme na {{email}}, zvyčajne do jedného pracovného dňa.",
+      "cta": "Späť na kalkulačku"
+    }
   }
 }

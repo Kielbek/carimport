@@ -509,7 +509,8 @@
     "taxes": "Muito ir mokesčių skaičiuoklė",
     "method": "Kaip skaičiuojame",
     "toTop": "Į viršų",
-    "glossary": "Žodynas"
+    "glossary": "Žodynas",
+    "contact": "Kontaktai"
   },
   "footer": {
     "about": "Nepriklausoma automobilių iš ne ES šalių importo išlaidų skaičiuoklė. Automobilių neparduodame ir neimportuojame – apskaičiuojame, kiek jie iš tikrųjų kainuoja.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Automobilių importo žodynas: CIF, TARIC, salvage title, importo PVM | Carglo",
       "description": "CIF, muitinė vertė, TARIC kodai, clean ir salvage title, importo PVM, procedūra 4200, Ro-Ro ir CoC paprastai."
+    },
+    "contact": {
+      "title": "Kontaktai – parašykite mums | Carglo",
+      "description": "Klausimas dėl skaičiavimo, ataskaitos, mokėjimo ar bendradarbiavimo? Parašykite Carglo komandai – paprastai atsakome per vieną darbo dieną."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Ieškoti…",
     "empty": "Rezultatų nėra"
+  },
+  "contact": {
+    "eyebrow": "Kontaktai",
+    "title": "Parašykite mums",
+    "lead": "Klausimas dėl skaičiavimo, ataskaitos ar mokėjimo? O gal norite bendradarbiauti? Paprastai atsakome per vieną darbo dieną.",
+    "name": "Vardas ir pavardė",
+    "email": "El. paštas",
+    "emailInvalid": "Įveskite teisingą el. pašto adresą.",
+    "topic": "Tema",
+    "topics": {
+      "report": "Klausimas dėl ataskaitos ar skaičiavimo",
+      "order": "Užsakymas ir mokėjimas",
+      "partner": "Bendradarbiavimas įmonėms",
+      "other": "Kita"
+    },
+    "order": "Užsakymo numeris",
+    "optional": "neprivaloma",
+    "orderHint": "pvz. AB12CD34",
+    "message": "Žinutė",
+    "messageHint": "Trumpai aprašykite, kuo galime padėti…",
+    "messageShort": "Žinutėje turi būti bent 10 simbolių.",
+    "privacy": "Formos duomenis naudojame tik atsakyti į jūsų žinutę. Daugiau:",
+    "submit": "Siųsti žinutę",
+    "error": "Žinutės išsiųsti nepavyko. Pabandykite netrukus dar kartą arba rašykite tiesiai adresu {{email}}.",
+    "direct": "Rašykite tiesiai",
+    "response": "Paprastai atsakome per vieną darbo dieną.",
+    "quick": "Greiti atsakymai",
+    "sent": {
+      "title": "Ačiū – žinutė išsiųsta",
+      "text": "Atsakysime adresu {{email}}, paprastai per vieną darbo dieną.",
+      "cta": "Grįžti į skaičiuoklę"
+    }
   }
 }

@@ -509,7 +509,8 @@
     "taxes": "Told- og afgiftsberegner",
     "method": "Sådan beregner vi",
     "toTop": "Til toppen",
-    "glossary": "Ordliste"
+    "glossary": "Ordliste",
+    "contact": "Kontakt"
   },
   "footer": {
     "about": "Uafhængig beregner af importomkostninger for biler fra lande uden for EU. Vi hverken sælger eller importerer biler – vi regner ud, hvad de reelt koster.",
@@ -870,6 +871,10 @@
     "glossary": {
       "title": "Ordliste for bilimport: CIF, TARIC, salvage title, importmoms | Carglo",
       "description": "CIF, toldværdi, TARIC-koder, clean og salvage title, importmoms, procedure 4200, Ro-Ro og CoC forklaret enkelt."
+    },
+    "contact": {
+      "title": "Kontakt – skriv til os | Carglo",
+      "description": "Spørgsmål om beregningen, rapporten, betalingen eller samarbejde? Skriv til Carglo-teamet – vi svarer normalt inden for én arbejdsdag."
     }
   },
   "privacy": {
@@ -1736,5 +1741,37 @@
   "select": {
     "search": "Søg…",
     "empty": "Ingen resultater"
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Skriv til os",
+    "lead": "Spørgsmål om beregningen, rapporten eller betalingen? Eller vil du samarbejde med os? Vi svarer normalt inden for én arbejdsdag.",
+    "name": "Fulde navn",
+    "email": "E-mail",
+    "emailInvalid": "Indtast en gyldig e-mailadresse.",
+    "topic": "Emne",
+    "topics": {
+      "report": "Spørgsmål om rapporten eller beregningen",
+      "order": "Ordre og betaling",
+      "partner": "Samarbejde for virksomheder",
+      "other": "Andet"
+    },
+    "order": "Ordrenummer",
+    "optional": "valgfrit",
+    "orderHint": "f.eks. AB12CD34",
+    "message": "Besked",
+    "messageHint": "Beskriv kort, hvad vi kan hjælpe med…",
+    "messageShort": "Beskeden skal være mindst 10 tegn.",
+    "privacy": "Vi bruger oplysningerne fra formularen kun til at besvare din besked. Detaljer:",
+    "submit": "Send besked",
+    "error": "Beskeden kunne ikke sendes. Prøv igen om lidt, eller skriv direkte til {{email}}.",
+    "direct": "Skriv direkte",
+    "response": "Vi svarer normalt inden for én arbejdsdag.",
+    "quick": "Hurtige svar",
+    "sent": {
+      "title": "Tak – beskeden er sendt",
+      "text": "Vi svarer til {{email}}, normalt inden for én arbejdsdag.",
+      "cta": "Tilbage til beregneren"
+    }
   }
 }
