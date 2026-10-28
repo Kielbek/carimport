@@ -511,9 +511,9 @@
     "toTop": "Uz augšu",
     "glossary": "Vārdnīca",
     "contact": "Kontakti",
-    "vin": "VIN check",
-    "copart": "Copart – how to buy",
-    "vinCompare": "VIN reports compared"
+    "vin": "VIN pārbaude",
+    "copart": "Copart – kā iegādāties",
+    "vinCompare": "VIN atskaišu salīdzinājums"
   },
   "footer": {
     "about": "Neatkarīgs importa izmaksu kalkulators automašīnām no valstīm ārpus ES. Mēs automašīnas nepārdodam un neimportējam – mēs aprēķinām, cik tās patiesībā maksā.",
@@ -880,16 +880,16 @@
       "description": "Jautājums par aprēķinu, pārskatu, maksājumu vai sadarbību? Raksti Carglo komandai – parasti atbildam vienas darba dienas laikā."
     },
     "vin": {
-      "title": "VIN check for US cars – free VIN decoder and vehicle history | Carglo",
-      "description": "Enter a VIN and check the make, model, year, engine and country of manufacture for free. Learn how to read a VIN and where to check damage and mileage history."
+      "title": "ASV auto VIN pārbaude – bezmaksas VIN dekodētājs un vēsture | Carglo",
+      "description": "Ievadiet VIN un bez maksas pārbaudiet marku, modeli, gadu, dzinēju un ražošanas valsti. Kā lasīt VIN un kur pārbaudīt bojājumu un nobraukuma vēsturi."
     },
     "copart": {
-      "title": "Copart: how to buy a car from the US in Europe – fees, broker, shipping | Carglo",
-      "description": "A Copart guide for buyers in Europe: account or broker, auction fees, title types, checking the car, payment, shipping and the full cost of importing."
+      "title": "Copart: kā no Eiropas iegādāties auto ASV – maksas, brokeris, transports | Carglo",
+      "description": "Copart ceļvedis pircējiem no Eiropas: savs konts vai brokeris, izsoles maksas, title veidi, auto pārbaude, apmaksa, transports un importa kopējās izmaksas."
     },
     "vinCompare": {
-      "title": "VIN history reports compared: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Which VIN report should you buy for a car from the USA or Europe? Coverage, damage and title data, photos and prices compared: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
+      "title": "VIN vēstures atskaišu salīdzinājums: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
+      "description": "Kuru VIN atskaiti izvēlēties auto no ASV vai Eiropas? Pārklājums, bojājumu un title dati, fotoattēli un cenas: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     }
   },
   "privacy": {
@@ -1951,347 +1951,347 @@
     }
   },
   "vinCta": {
-    "title": "Before you bid – check the car's history by VIN",
-    "text": "A history report shows earlier damage, mileage and past auctions, among other things. It costs a fraction of even a small repair.",
-    "button": "Check the VIN at {{partner}}",
-    "label": "Partner link – Carglo may earn a commission. It does not affect our calculations."
+    "title": "Pirms solīšanas pārbaudiet auto vēsturi pēc VIN",
+    "text": "Vēstures atskaite cita starpā parāda iepriekšējos bojājumus, nobraukumu un pagātnes izsoles. Tā maksā daļu no pat neliela remonta.",
+    "button": "Pārbaudīt VIN: {{partner}}",
+    "label": "Partnera saite – Carglo var saņemt komisiju. Tas neietekmē mūsu aprēķinus."
   },
   "vinPage": {
-    "eyebrow": "Tool and guide",
-    "title": "Check the VIN of a car from the US, Canada or Europe",
-    "lead": "Enter a VIN and we decode the make, model, year, engine and country of manufacture for free. Below we explain how to read a VIN yourself and where to check damage and mileage history before you buy.",
+    "eyebrow": "Rīks un ceļvedis",
+    "title": "Pārbaudiet auto no ASV, Kanādas vai Eiropas VIN",
+    "lead": "Ievadiet VIN, un mēs bez maksas nolasīsim marku, modeli, gadu, dzinēju un ražošanas valsti. Tālāk skaidrojam, kā pašiem lasīt VIN un kur pirms pirkuma pārbaudīt bojājumu un nobraukuma vēsturi.",
     "tool": {
-      "title": "Free VIN decoder",
-      "lead": "Data from the US vehicle database (NHTSA) and the EPA, and – for cars from outside North America – from the VIN itself.",
-      "button": "Check VIN",
-      "year": "Model year",
-      "engine": "Engine",
-      "power": "Power",
-      "fuel": "Fuel",
-      "body": "Body",
-      "check": "Check digit",
-      "checkOk": "valid",
-      "checkBad": "does not match – possible typo",
-      "duty": "Car built in {{country}} – with proof of origin it may qualify for 0% duty instead of 10%.",
-      "dutyMore": "How it works",
-      "calculate": "Calculate the import cost of this car",
-      "note": "The decoder shows the technical data encoded in the VIN and in manufacturers' databases. It does not show damage or mileage history – that is what a vehicle history report is for."
+      "title": "Bezmaksas VIN dekodētājs",
+      "lead": "Dati no ASV transportlīdzekļu datubāzes (NHTSA) un EPA, bet auto ārpus Ziemeļamerikas – no paša VIN.",
+      "button": "Pārbaudīt VIN",
+      "year": "Modeļa gads",
+      "engine": "Dzinējs",
+      "power": "Jauda",
+      "fuel": "Degviela",
+      "body": "Virsbūve",
+      "check": "Kontrolcipars",
+      "checkOk": "derīgs",
+      "checkBad": "nesakrīt – iespējama drukas kļūda",
+      "duty": "Ražošanas valsts: {{country}} – ar izcelsmes apliecinājumu muita var būt 0 %, nevis 10 %.",
+      "dutyMore": "Kā tas darbojas",
+      "calculate": "Aprēķināt šī auto importa izmaksas",
+      "note": "Dekodētājs rāda tehniskos datus, kas ierakstīti VIN un ražotāju datubāzēs. Bojājumu vai nobraukuma vēsturi tas nerāda – tam paredzēta transportlīdzekļa vēstures atskaite."
     },
     "what": {
-      "title": "What a VIN is",
-      "text": "A VIN (Vehicle Identification Number) is the 17-character number the manufacturer gives every car. It never contains the letters I, O or Q, so they are not mistaken for the digits 1 and 0.\nYou will find the VIN on a plate by the windscreen (driver's side), on the door pillar, in the documents (the title in the US, the registration certificate in the EU) and in the auction listing. Before buying, compare the VIN in the listing with the one in the car's photos – a difference is a warning sign."
+      "title": "Kas ir VIN",
+      "text": "VIN (Vehicle Identification Number, šasijas numurs) ir 17 rakstzīmju numurs, ko ražotājs piešķir katram auto. Tajā nekad nav burtu I, O un Q, lai tos nesajauktu ar cipariem 1 un 0.\nVIN atrodas uz plāksnītes pie vējstikla (vadītāja pusē), uz durvju statņa, dokumentos (ASV – title, ES – reģistrācijas apliecībā) un izsoles sludinājumā. Pirms pirkuma salīdziniet sludinājuma VIN ar fotoattēlos redzamo – atšķirība ir brīdinājuma zīme."
     },
     "read": {
-      "title": "How to read a VIN, character by character",
-      "text": "Every position in a VIN means something. The most useful are the first character (country of manufacture), the ninth (check digit) and the tenth (model year).",
-      "p1": "Country of manufacture (e.g. 1, 4, 5 – US, W – Germany, J – Japan)",
-      "p2": "Manufacturer – together with the first character it forms the WMI code",
-      "p4": "Model, body, engine, safety systems",
-      "p9": "Check digit – mandatory in North America, catches typos",
-      "p10": "Model year",
-      "p11": "Plant where the car was assembled",
-      "p12": "The car's serial number",
-      "countryTitle": "First character – country of manufacture",
-      "yearTitle": "Tenth character – model year"
+      "title": "Kā lasīt VIN pa rakstzīmei",
+      "text": "Katrai VIN pozīcijai ir nozīme. Visnoderīgākās ir pirmā rakstzīme (ražošanas valsts), devītā (kontrolcipars) un desmitā (modeļa gads).",
+      "p1": "Ražošanas valsts (piem., 1, 4, 5 – ASV, W – Vācija, J – Japāna)",
+      "p2": "Ražotājs – kopā ar pirmo rakstzīmi veido WMI kodu",
+      "p4": "Modelis, virsbūve, dzinējs, drošības sistēmas",
+      "p9": "Kontrolcipars – obligāts Ziemeļamerikā, atklāj drukas kļūdas",
+      "p10": "Modeļa gads",
+      "p11": "Rūpnīca, kurā auto samontēts",
+      "p12": "Auto sērijas numurs",
+      "countryTitle": "Pirmā rakstzīme – ražošanas valsts",
+      "yearTitle": "Desmitā rakstzīme – modeļa gads"
     },
     "report": {
-      "title": "What a vehicle history report shows",
-      "text": "The decoder tells you what the car is. A history report tells you what happened to it. It usually includes:\n• damage and incidents reported by insurers, including total losses,\n• the title type (clean, salvage, rebuilt, flood) and its changes between states,\n• odometer readings – they reveal a rolled-back odometer,\n• earlier auctions, often with photos of the car before repair,\n• thefts, the number of owners and registration states.\nFor an auction car, a report usually costs a fraction of even a small repair – and it can stop you buying a flood car or one with serious structural damage."
+      "title": "Ko parāda transportlīdzekļa vēstures atskaite",
+      "text": "Dekodētājs pasaka, kas tas par auto. Vēstures atskaite pasaka, kas ar to noticis. Parasti tā ietver:\n• apdrošinātāju ziņotos bojājumus un negadījumus, arī pilnīgu bojāeju,\n• title veidu (clean, salvage, rebuilt, flood) un tā izmaiņas starp štatiem,\n• odometra rādījumus – tie atklāj attītu nobraukumu,\n• iepriekšējās izsoles, bieži ar fotoattēliem pirms remonta,\n• zādzības, īpašnieku skaitu un reģistrācijas štatus.\nIzsoles auto gadījumā atskaite parasti maksā daļu no pat neliela remonta – un var pasargāt no applūduša auto vai auto ar nopietniem virsbūves bojājumiem iegādes."
     },
     "free": {
-      "title": "Free sources of VIN information",
-      "text": "Some information you can check for free in official databases:",
-      "nicb": "The US insurers' database – whether the car was reported stolen or as a total loss (salvage).",
-      "nhtsa": "Open safety recalls for the VIN – worth fixing before shipping or right after.",
-      "nmvtis": "The official US register of titles and total losses; it lists approved report providers.",
-      "mot": "For cars from the UK: the full MOT test history with the mileage from each year."
+      "title": "Bezmaksas VIN informācijas avoti",
+      "text": "Daļu informācijas var bez maksas pārbaudīt oficiālās datubāzēs:",
+      "nicb": "ASV apdrošinātāju datubāze – vai auto ir pieteikts kā zagts vai pilnīga bojāeja (salvage).",
+      "nhtsa": "Neizpildītas atsaukšanas kampaņas pēc VIN – vislabāk novērst pirms nosūtīšanas vai uzreiz pēc tās.",
+      "nmvtis": "ASV oficiālais title un pilnīgas bojāejas reģistrs; tajā ir apstiprināto atskaišu sniedzēju saraksts.",
+      "mot": "Auto no Lielbritānijas: visa MOT tehnisko apskašu vēsture ar katra gada nobraukumu."
     },
     "flags": {
-      "title": "Warning signs",
-      "text": "• The VIN in the listing differs from the VIN in the photos of the plate or windscreen.\n• The check digit does not match (on a North American car).\n• The model year in the VIN does not match the listing.\n• The title is branded flood, water damage or \"not actual mileage\".\n• The car was offered at auction several times in a short period.\n• The VIN plate looks removed, glued on or damaged – a possible clone."
+      "title": "Brīdinājuma zīmes",
+      "text": "• Sludinājuma VIN atšķiras no VIN plāksnītes vai vējstikla fotoattēlos.\n• Kontrolcipars nesakrīt (Ziemeļamerikas auto).\n• Modeļa gads VIN neatbilst sludinājumam.\n• Title ir atzīme flood, water damage vai „not actual mileage”.\n• Auto īsā laikā vairākas reizes bijis izsolē.\n• VIN plāksnīte izskatās noņemta, pielīmēta vai bojāta – iespējams klons."
     },
     "japan": {
-      "title": "Cars from Japan – a chassis number instead of a VIN",
-      "text": "Cars from the Japanese market (JDM) often have no 17-character VIN, only a shorter chassis number, e.g. JZA80-0012345. A VIN decoder cannot read it.\nThe history of such a car is checked on the auction sheet and the export certificate – a good exporter translates them before you buy."
+      "title": "Auto no Japānas – šasijas numurs VIN vietā",
+      "text": "Japānas tirgus (JDM) auto bieži nav 17 rakstzīmju VIN, bet īsāks šasijas numurs, piem., JZA80-0012345. VIN dekodētājs to nevar nolasīt.\nŠāda auto vēsturi pārbauda pēc auction sheet un eksporta sertifikāta – labs eksportētājs tos pirms pirkuma iztulko."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Is a VIN check free?",
-      "a1": "Decoding the technical data from the VIN (make, model, year, engine, country of manufacture) is free here. A full history report – damage, mileage, past auctions – is paid, from report providers.",
-      "q2": "What can I tell from the VIN alone?",
-      "a2": "The country of manufacture, the manufacturer, the model year, the plant and – on North American cars – whether the number is valid, thanks to the check digit. Engine and body specs come from manufacturers' databases, history from reports.",
-      "q3": "How do I check whether a car from the US has been in an accident?",
-      "a3": "Check the title type (salvage means a total loss), the free NICB VINCheck database and a vehicle history report, which often also shows photos from earlier auctions.",
-      "q4": "How do I know which country the car was built in?",
-      "a4": "From the first character of the VIN: 1, 4 and 5 are the US, 2 – Canada, 3 – Mexico, J – Japan, W – Germany. It matters for import: cars built in the US, Canada, Japan and the UK may qualify for 0% duty.",
-      "q5": "Can a VIN be faked?",
-      "a5": "Yes – stolen cars are sometimes \"cloned\" with the VIN of another car. Compare the VIN in several places on the car and in the documents, check that the year and version match, and ask for an inspection if in doubt.",
-      "q6": "Does the decoder work for cars from Japan?",
-      "a6": "Only if the car has a 17-character VIN. Most cars from the Japanese market have a shorter chassis number – their history is checked on the auction sheet."
+      "title": "Biežāk uzdotie jautājumi",
+      "q1": "Vai VIN pārbaude ir bezmaksas?",
+      "a1": "Tehnisko datu nolasīšana no VIN (marka, modelis, gads, dzinējs, ražošanas valsts) pie mums ir bez maksas. Pilna vēstures atskaite – bojājumi, nobraukums, iepriekšējās izsoles – ir maksas pakalpojums, to piedāvā atskaišu sniedzēji.",
+      "q2": "Ko var uzzināt tikai no VIN?",
+      "a2": "Ražošanas valsti, ražotāju, modeļa gadu, rūpnīcu un – Ziemeļamerikas auto – pateicoties kontrolciparam, vai numurs ir derīgs. Dzinēja un virsbūves dati nāk no ražotāju datubāzēm, vēsture – no atskaitēm.",
+      "q3": "Kā pārbaudīt, vai auto no ASV ir bijis avārijā?",
+      "a3": "Pārbaudiet title veidu (salvage nozīmē pilnīgu bojāeju), bezmaksas datubāzi NICB VINCheck un vēstures atskaiti, kas bieži rāda arī iepriekšējo izsoļu fotoattēlus.",
+      "q4": "Kā uzzināt, kurā valstī auto ražots?",
+      "a4": "Pēc VIN pirmās rakstzīmes: 1, 4 un 5 – ASV, 2 – Kanāda, 3 – Meksika, J – Japāna, W – Vācija. Importā tas ir svarīgi: ASV, Kanādā, Japānā un Lielbritānijā ražotiem auto muita var būt 0 %.",
+      "q5": "Vai VIN var būt viltots?",
+      "a5": "Jā – zagtus auto dažkārt „klonē” ar cita auto VIN. Salīdziniet VIN vairākās vietās un dokumentos, pārbaudiet, vai sakrīt gads un versija, un šaubu gadījumā pasūtiet apskati.",
+      "q6": "Vai dekodētājs darbojas auto no Japānas?",
+      "a6": "Tikai tad, ja auto ir 17 rakstzīmju VIN. Lielākajai daļai Japānas tirgus auto ir īsāks šasijas numurs – to vēsturi pārbauda pēc auction sheet."
     },
-    "compareLink": "VIN report services compared – which one to choose",
+    "compareLink": "VIN atskaišu pakalpojumu salīdzinājums – kuru izvēlēties",
     "anatomy": {
-      "country": "country",
-      "maker": "manufacturer",
-      "vds": "vehicle description",
-      "check": "check digit",
-      "year": "model year",
-      "plant": "plant",
-      "serial": "serial number",
-      "caption": "Sample VIN {{vin}}: a Ford built in the USA, model year 2020."
+      "country": "valsts",
+      "maker": "ražotājs",
+      "vds": "auto apraksts",
+      "check": "kontroles",
+      "year": "gads",
+      "plant": "rūpnīca",
+      "serial": "sērijas numurs",
+      "caption": "VIN piemērs {{vin}}: ASV ražots Ford, 2020. modeļa gads."
     }
   },
   "copart": {
-    "eyebrow": "Guide",
-    "title": "Copart: how to buy a car from the US and import it to Europe",
-    "lead": "Copart is the largest auction of damaged and ex-lease cars in the US. We explain step by step how to buy there from Europe, what the fees are and what you will pay in total with shipping and taxes.",
+    "eyebrow": "Ceļvedis",
+    "title": "Copart: kā iegādāties auto ASV un ievest to Latvijā",
+    "lead": "Copart ir lielākā avarējušu un pēc līzinga atgrieztu auto izsole ASV. Soli pa solim skaidrojam, kā tur iepirkties no Eiropas, kādas ir maksas un cik kopā samaksāsiet ar transportu un nodokļiem.",
     "what": {
-      "title": "What Copart is",
-      "text": "Copart is a US auction company with more than 200 yards in the US and Canada. It mainly sells cars from insurers (after accidents, thefts, floods), leasing companies, rental firms and banks. Bidding is online, and the car stays in the yard until it is collected.\nEvery listing has photos, the damage type (primary / secondary damage), the title type, the mileage and a status such as \"Run and Drive\" (the car moved when it arrived at the yard). Sales follow different rules: \"Pure Sale\" – the car goes to the highest bid; \"Minimum Bid\" – the seller has a reserve price; \"On Approval\" – the seller approves the bid."
+      "title": "Kas ir Copart",
+      "text": "Copart ir ASV izsoļu uzņēmums ar vairāk nekā 200 laukumiem ASV un Kanādā. Tas galvenokārt pārdod apdrošinātāju (pēc avārijām, zādzībām, plūdiem), līzinga uzņēmumu, nomas firmu un banku auto. Solīšana notiek tiešsaistē, un auto paliek laukumā, līdz to izved.\nKatrā sludinājumā ir fotoattēli, bojājuma veids (primary / secondary damage), title veids, nobraukums un statuss, piem., „Run and Drive” (auto brauca, ierodoties laukumā). Pārdošanas noteikumi atšķiras: „Pure Sale” – auto iegūst augstākais solījums; „Minimum Bid” – pārdevējam ir minimālā cena; „On Approval” – pārdevējam solījums jāapstiprina."
     },
     "europe": {
-      "title": "Copart in Europe vs Copart in the US",
-      "text": "Copart also operates in several European countries (including the UK, Germany, Spain, Finland and Ireland). These are separate sites with local cars and local rules.\nThe biggest choice and the lowest prices, however, are at the US auctions – and that is what this guide is about. A car from the US has to cross the ocean and be cleared at an EU port, so always work out the full cost, not just the auction price."
+      "title": "Copart Eiropā vai Copart ASV",
+      "text": "Copart darbojas arī vairākās Eiropas valstīs (tostarp Lielbritānijā, Vācijā, Spānijā, Somijā un Īrijā). Tās ir atsevišķas vietnes ar vietējiem auto un noteikumiem.\nTomēr lielākā izvēle un zemākās cenas ir ASV izsolēs – par tām ir šis ceļvedis. Auto no ASV jāšķērso okeāns un jāmuitina ES ostā, tāpēc vienmēr rēķiniet kopējās izmaksas, nevis tikai izsoles cenu."
     },
     "account": {
-      "title": "Your own account or a broker",
-      "text": "You can open a Copart account yourself, but a standard account lets you bid on only some cars. In many states, cars with a salvage title can only be bought by licensed buyers – which is why most buyers from Europe bid through a broker.\nThe broker lends you their licence, pays the deposit and often arranges transport to the port and the export documents. They charge a commission for it (usually a fixed amount per car). Check reviews of the broker and exactly what their price includes."
+      "title": "Savs konts vai brokeris",
+      "text": "Copart kontu varat atvērt paši, taču ar standarta kontu var solīt tikai par daļu auto. Daudzos štatos auto ar salvage title drīkst pirkt tikai licencēti pircēji – tāpēc lielākā daļa pircēju no Eiropas solī ar brokera starpniecību.\nBrokeris aizdod savu licenci, iemaksā depozītu un bieži organizē transportu uz ostu un eksporta dokumentus. Par to viņš ņem komisiju (parasti fiksētu summu par auto). Pārbaudiet brokera atsauksmes un ko tieši ietver cena."
     },
     "fees": {
-      "title": "Auction fees",
-      "text": "Copart's fees are added to the hammer price:\n• the buyer fee – it rises in steps with the car's price,\n• the online bidding fee (virtual bid fee),\n• the gate fee for releasing the car from the yard,\n• environmental and title handling fees,\n• the broker's commission, if you use one.\nFor a car of a few thousand dollars this is usually several hundred to over a thousand dollars. Copart publishes the exact fee tables on its website – check them before you bid."
+      "title": "Izsoles maksas",
+      "text": "Pie nosolītās cenas pieskaita Copart maksas:\n• pircēja maksa (buyer fee) – pakāpeniski aug līdz ar cenu,\n• tiešsaistes solīšanas maksa (virtual bid fee),\n• gate fee par auto izsniegšanu no laukuma,\n• vides un title apstrādes maksas,\n• brokera komisija, ja to izmantojat.\nPar dažu tūkstošu dolāru auto tas parasti ir no dažiem simtiem līdz vairāk nekā tūkstotim dolāru. Precīzas maksu tabulas Copart publicē savā vietnē – pārbaudiet tās pirms solīšanas."
     },
     "titles": {
-      "title": "Title types – what you are buying",
-      "text": "The title is the US ownership document. Its type tells you what happened to the car:\n• Clean – no total loss in its history.\n• Salvage – the insurer declared a total loss; the most common title at Copart.\n• Rebuilt – a former total loss, repaired and allowed back on the road in the US.\n• Parts only, Non-repairable, Certificate of Destruction – for parts only; such a car cannot be registered in the EU.\nA salvage car can be registered in the EU after repair and a roadworthiness test. The title still affects its resale value.",
-      "link": "How to check a car by its VIN"
+      "title": "Title veidi – ko jūs pērkat",
+      "text": "Title ir ASV īpašumtiesību dokuments. Tā veids parāda, kas ar auto noticis:\n• Clean – vēsturē nav pilnīgas bojāejas.\n• Salvage – apdrošinātājs atzinis pilnīgu bojāeju; biežākais title Copart izsolē.\n• Rebuilt – bijusi pilnīga bojāeja, salabota un ASV atkal atļauta satiksmē.\n• Parts only, Non-repairable, Certificate of Destruction – tikai rezerves daļām; šādu auto ES reģistrēt nevar.\nAuto ar salvage title ES var reģistrēt pēc remonta un tehniskās apskates. Tomēr title ietekmē tālākpārdošanas vērtību.",
+      "link": "Kā pārbaudīt auto pēc VIN"
     },
     "inspect": {
-      "title": "Check the car before you bid",
-      "text": "You cannot see the car in person, so every detail counts:\n• compare the VIN in the listing with the one in the photos,\n• look at every photo – \"Front end\" can mean a bumper or bent chassis rails,\n• be careful with cars from Florida, Texas and Louisiana after hurricanes (water marks, silt, corroded connectors),\n• check the car's history by VIN – damage, mileage and earlier auctions,\n• keep a 20–30% reserve for hidden damage."
+      "title": "Pārbaudiet auto pirms solīšanas",
+      "text": "Auto klātienē neredzēsiet, tāpēc svarīga ir katra detaļa:\n• salīdziniet sludinājuma VIN ar fotoattēlos redzamo,\n• apskatiet visus fotoattēlus – „Front end” var nozīmēt buferi vai saliektas garensijas,\n• uzmanieties ar auto no Floridas, Teksasas un Luiziānas pēc viesuļvētrām (ūdens pēdas, dūņas, korodēti savienotāji),\n• pārbaudiet vēsturi pēc VIN – bojājumus, nobraukumu un iepriekšējās izsoles,\n• paredziet 20–30 % rezervi slēptiem bojājumiem."
     },
     "payment": {
-      "title": "Payment and pickup",
-      "text": "After winning a bid you usually have only a few business days to pay (most often by bank transfer). Paying late means a penalty and, in the worst case, a blocked account.\nThe car must be collected from the yard within a short time – after that, storage fees are charged. So before you bid, have the money ready for the car, the fees and the transport, and make sure the broker or carrier knows where to collect the car."
+      "title": "Apmaksa un izvešana",
+      "text": "Pēc uzvaras izsolē parasti ir tikai dažas darba dienas samaksai (visbiežāk ar pārskaitījumu). Kavējums nozīmē sodu, bet sliktākajā gadījumā – bloķētu kontu.\nAuto no laukuma jāizved ātri – pēc tam tiek aprēķināta stāvēšanas maksa. Tāpēc pirms solīšanas sagatavojiet naudu auto, maksām un transportam, un brokerim vai pārvadātājam jāzina, no kurienes auto paņemt."
     },
     "shipping": {
-      "title": "Shipping to Europe",
-      "text": "A car carrier takes the car from the yard to the export port (e.g. New Jersey, Savannah, Houston, Los Angeles). From there it sails in a container (often 3–4 cars together) or on a RoRo ship to a European port – usually 2–3 weeks from the East Coast.\nAt the EU port a customs agent clears the car: you pay duty and import VAT, and then the car is trucked to your address. The choice of port matters – freight, port fees and VAT rates differ between countries.",
-      "link": "Full guide to importing a car from the US"
+      "title": "Transports uz Eiropu",
+      "text": "Autovedējs aizved auto no laukuma uz eksporta ostu (piem., Ņūdžersija, Savanna, Hjūstona, Losandželosa). No turienes tas kuģo konteinerā (bieži 3–4 auto kopā) vai ar RoRo kuģi uz Eiropas ostu – no austrumu krasta parasti 2–3 nedēļas.\nES ostā muitas aģents nomuitina auto: jūs samaksājat muitu un importa PVN, pēc tam auto ar kravas auto nogādā uz jūsu adresi. Ostas izvēle ir svarīga – frakts, ostas maksas un PVN likmes valstīs atšķiras.",
+      "link": "Pilns ceļvedis auto importam no ASV"
     },
     "cost": {
-      "title": "What a Copart car costs in total",
-      "text": "The auction price is only part of the cost. On top come auction fees, transport in the US, ocean freight and insurance, port fees, duty (10%, or 0% for US-built cars with proof of origin), VAT, national taxes, transport in Europe, repair and registration.",
-      "example": "An example from our calculator: a {{model}} bought for {{price}} costs in total, delivered to your door in {{country}}:",
-      "breakdown": "See the full cost breakdown"
+      "title": "Cik kopā maksā auto no Copart",
+      "text": "Izsoles cena ir tikai daļa izmaksu. Klāt nāk izsoles maksas, transports ASV, jūras frakts un apdrošināšana, ostas maksas, muita (10 % vai 0 % ASV ražotiem auto ar izcelsmes apliecinājumu), PVN, valsts nodokļi, transports Eiropā, remonts un reģistrācija.",
+      "example": "Piemērs no mūsu kalkulatora: {{model}}, iegādāts par {{price}}, kopā ar piegādi līdz durvīm maksā (galamērķa valsts: {{country}}):",
+      "breakdown": "Skatīt pilnu izmaksu sadalījumu"
     },
     "mistakes": {
-      "title": "The most common mistakes",
-      "text": "• Bidding without working out the full cost – fees, shipping and taxes can double the auction price.\n• Buying a car with a \"parts only\" title that cannot be registered.\n• Trusting \"Run and Drive\" without checking the history by VIN.\n• No reserve for hidden damage and parts.\n• Counting on 0% duty without proof of origin.\n• Paying late and running up storage fees in the yard."
+      "title": "Biežākās kļūdas",
+      "text": "• Solīšana, neaprēķinot kopējās izmaksas – maksas, transports un nodokļi var dubultot izsoles cenu.\n• Auto ar „parts only” title iegāde, ko nevar reģistrēt.\n• Paļaušanās uz „Run and Drive”, nepārbaudot vēsturi pēc VIN.\n• Nav rezerves slēptiem bojājumiem un detaļām.\n• Rēķināšanās ar 0 % muitu bez izcelsmes apliecinājuma.\n• Nokavēta apmaksa un stāvēšanas maksas laukumā."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Can I buy a car at Copart without a broker?",
-      "a1": "You can open an account, but a standard account lets you bid on only some cars. Cars with a salvage title in many states require a buyer's licence, which is why most buyers from Europe use a broker.",
-      "q2": "How much are Copart's fees?",
-      "a2": "They depend on the car's price and the account type. For a car of a few thousand dollars the auction fees are usually several hundred to over a thousand dollars, plus the broker's commission. The current tables are on Copart's website.",
-      "q3": "What does \"Run and Drive\" mean?",
-      "a3": "That the car started and moved when it was received at the yard. It does not mean it is in working order or roadworthy.",
-      "q4": "How long does it take to bring a Copart car to Europe?",
-      "a4": "Usually 4–8 weeks from winning the bid: a few days to a week for pickup and transport to the port, 2–3 weeks at sea from the East Coast (longer from California), then clearance and delivery.",
-      "q5": "Can a salvage-title car be registered in Europe?",
-      "a5": "Yes, if after repair it passes the roadworthiness test in your country. Cars with a \"parts only\" or \"non-repairable\" title or a certificate of destruction cannot be registered.",
-      "q6": "How much duty will I pay on a Copart car?",
-      "a6": "As standard, 10% of the customs value (the price with fees plus transport to the EU border). US-built cars can have 0% duty from 1 July 2026 with proof of origin. VAT and national taxes come on top – the calculator works it all out."
+      "title": "Biežāk uzdotie jautājumi",
+      "q1": "Vai varu iegādāties Copart bez brokera?",
+      "a1": "Kontu atvērt varat, taču ar standarta kontu var solīt tikai par daļu auto. Auto ar salvage title daudzos štatos prasa pircēja licenci – tāpēc lielākā daļa pircēju no Eiropas izmanto brokeri.",
+      "q2": "Cik lielas ir Copart maksas?",
+      "a2": "Tās atkarīgas no auto cenas un konta veida. Par dažu tūkstošu dolāru auto izsoles maksas parasti ir no dažiem simtiem līdz vairāk nekā tūkstotim dolāru, plus brokera komisija. Aktuālās tabulas ir Copart vietnē.",
+      "q3": "Ko nozīmē „Run and Drive”?",
+      "a3": "Ka auto, to pieņemot laukumā, iedarbojās un brauca. Tas nenozīmē, ka tas ir tehniski kārtībā vai derīgs satiksmei.",
+      "q4": "Cik ilgi aizņem auto no Copart nogādāšana Eiropā?",
+      "a4": "Parasti 4–8 nedēļas no uzvaras izsolē: no dažām dienām līdz nedēļai izvešanai un transportam uz ostu, 2–3 nedēļas jūrā no austrumu krasta (no Kalifornijas ilgāk), pēc tam muitošana un piegāde.",
+      "q5": "Vai auto ar salvage title var reģistrēt Eiropā?",
+      "a5": "Jā, ja pēc remonta tas iztur tehnisko apskati jūsu valstī. Auto ar „parts only” vai „non-repairable” title vai iznīcināšanas apliecību reģistrēt nevar.",
+      "q6": "Cik muitas maksāšu par auto no Copart?",
+      "a6": "Parasti 10 % no muitas vērtības (cena ar maksām plus transports līdz ES robežai). ASV ražotiem auto no 2026. gada 1. jūlija ar izcelsmes apliecinājumu muita var būt 0 %. Klāt nāk PVN un valsts nodokļi – kalkulators visu aprēķina."
     },
-    "disclaimer": "Carglo is not affiliated with Copart Inc. The name Copart is used only to describe the service. Auction rules and fees may change – check them on Copart's website.",
+    "disclaimer": "Carglo nav saistīts ar Copart Inc. Nosaukums Copart izmantots tikai pakalpojuma aprakstam. Izsoļu noteikumi un maksas var mainīties – pārbaudiet tos Copart vietnē.",
+    "lot": {
+      "alt": "Auto skice ar atzīmētu bojāto priekšu",
+      "caption": "Ilustrācija – šādi izskatās izsoles lota kartīte ASV izsolē. Laukus un atzīmes skaidrojam tālāk."
+    },
     "listing": {
-      "title": "How to read a Copart listing",
-      "text": "Every lot has a number and a data sheet. The most important fields:\n• Primary / Secondary damage – the main and additional damage as reported by the insurer (e.g. Front end, Rear end, Side, Flood, Hail, Mechanical).\n• Odometer – mileage in miles marked “Actual” or “Not actual” / “Exempt”; the last two mean the reading cannot be trusted.\n• Est. Retail Value and Est. Repair Cost – the insurer’s estimates; they help gauge the damage but do not replace your own repair quote.\n• Highlights – e.g. “Run and Drive”, “Engine Starts”, “Enhanced Vehicles”.\n• Keys – whether keys are included (replacing them can be expensive).\n• Sale document / title – the document type and the state that issued it.\n• Location and Sale date – the yard you collect the car from and the auction date.\nSave the lot number and VIN – after the sale the listing disappears from public view."
+      "title": "Kā lasīt Copart sludinājumu",
+      "text": "Katram lotam ir numurs un datu kartīte. Svarīgākie lauki:\n• Primary / Secondary damage – galvenais un papildu bojājums pēc apdrošinātāja datiem (piem., Front end, Rear end, Side, Flood, Hail, Mechanical).\n• Odometer – nobraukums jūdzēs ar atzīmi „Actual” vai „Not actual” / „Exempt”; pēdējās divas nozīmē, ka odometram nevar uzticēties.\n• Est. Retail Value un Est. Repair Cost – apdrošinātāja aplēses; tās palīdz novērtēt bojājumu apjomu, bet neaizstāj jūsu pašu remonta tāmi.\n• Highlights – piem., „Run and Drive”, „Engine Starts”, „Enhanced Vehicles”.\n• Keys – vai ir atslēgas (jaunu izgatavošana var būt dārga).\n• Sale document / title – dokumenta veids un to izsniegušais štats.\n• Location un Sale date – laukums, no kura izvedīsiet auto, un izsoles datums.\nPierakstiet lota numuru un VIN – pēc pārdošanas sludinājums pazūd no publiskās piekļuves."
     },
     "bidding": {
-      "title": "How the bidding works",
-      "text": "Bidding has two stages. First comes preliminary bidding – you can enter your maximum amount and the system raises your bid automatically up to that limit. Then there is a live online auction, where the highest bid wins.\nSome cars offer “Buy It Now” – an immediate purchase at the listed price.\nSet your maximum before the auction: subtract auction fees, transport, customs duty, VAT, national taxes and a repair reserve from your budget. Getting carried away in the last seconds is the most common reason for overpaying."
+      "title": "Kā notiek solīšana",
+      "text": "Solīšanai ir divi posmi. Vispirms notiek iepriekšējā solīšana (preliminary bidding) – varat ievadīt maksimālo summu, un sistēma pati paaugstina solījumu līdz šim limitam. Pēc tam notiek tiešraides izsole tiešsaistē, kurā uzvar augstākais solījums.\nDažiem auto ir iespēja „Buy It Now” – tūlītējs pirkums par norādīto cenu.\nNosakiet maksimumu pirms izsoles: atņemiet no budžeta izsoles maksas, transportu, muitu, PVN, valsts nodokļus un remonta rezervi. Emocijas pēdējās sekundēs ir biežākais pārmaksas iemesls."
     },
     "repair": {
-      "title": "Repair – in the USA or in Europe",
-      "text": "A damaged car can be repaired while still in the USA or after it arrives. Repairing in the USA can be cheaper where used parts are easy to find, but it is harder to supervise from a distance. Repairing in Europe gives you control over quality, although some original parts for US-market cars have to be imported.\nWherever it is repaired, the car must pass a roadworthiness test in your country, and after structural damage it is worth keeping the repair paperwork and photos – they help with registration and resale."
+      "title": "Remonts – ASV vai Eiropā",
+      "text": "Avarējušu auto var salabot vēl ASV vai tikai pēc ievešanas. Remonts ASV var būt lētāks, ja pieejamas lietotas detaļas, taču to grūti kontrolēt no attāluma. Remonts Eiropā dod kontroli pār kvalitāti, tomēr dažas oriģinālās detaļas ASV tirgus auto nāksies pasūtīt.\nLai kur auto remontētu, tam jāiztur tehniskā apskate jūsu valstī, un pēc virsbūves bojājumiem vērts saglabāt remonta rēķinus un fotoattēlus – tie noder reģistrācijā un pārdošanā."
     },
     "flow": {
-      "title": "Buying on Copart from Europe – step by step",
+      "title": "Iegāde Copart no Eiropas – soli pa solim",
       "s1": {
-        "title": "Choosing a car",
-        "text": "listings, photos and title type",
-        "time": "1–7 days"
+        "title": "Auto izvēle",
+        "text": "sludinājumi, fotoattēli un title veids",
+        "time": "1–7 dienas"
       },
       "s2": {
-        "title": "VIN check",
-        "text": "damage history, mileage, previous auctions",
-        "time": "1 day"
+        "title": "VIN pārbaude",
+        "text": "bojājumu vēsture, nobraukums, iepriekšējās izsoles",
+        "time": "1 diena"
       },
       "s3": {
-        "title": "Bidding and payment",
-        "text": "through a broker; payment within a few business days",
-        "time": "2–4 days"
+        "title": "Solīšana un apmaksa",
+        "text": "ar brokeri; apmaksa dažu darba dienu laikā",
+        "time": "2–4 dienas"
       },
       "s4": {
-        "title": "Transport to the port",
-        "text": "truck from the Copart yard to the export port",
-        "time": "3–10 days"
+        "title": "Transports uz ostu",
+        "text": "autovedējs no Copart laukuma uz eksporta ostu",
+        "time": "3–10 dienas"
       },
       "s5": {
-        "title": "Ocean freight",
-        "text": "container or RoRo to an EU port",
-        "time": "2–6 weeks"
+        "title": "Jūras pārvadājums",
+        "text": "konteiners vai RoRo līdz ES ostai",
+        "time": "2–6 nedēļas"
       },
       "s6": {
-        "title": "EU customs clearance",
-        "text": "duty, import VAT, customs documents",
-        "time": "2–5 days"
+        "title": "Muitošana ES",
+        "text": "muita, importa PVN, muitas dokumenti",
+        "time": "2–5 dienas"
       },
       "s7": {
-        "title": "Registration",
-        "text": "national taxes, inspection, translations",
-        "time": "1–4 weeks"
+        "title": "Reģistrācija",
+        "text": "valsts nodokļi, apskate, tulkojumi",
+        "time": "1–4 nedēļas"
       }
     },
     "costbar": {
-      "title": "Cost breakdown",
-      "price": "Car incl. auction fees",
-      "transport": "Transport and freight",
-      "duty": "Customs duty",
-      "vat": "Import VAT",
-      "national": "National taxes",
-      "registration": "Registration and other"
-    },
-    "lot": {
-      "alt": "Sketch of a car with the damaged front marked",
-      "caption": "Illustration – what a lot card looks like at a US auction. We explain the fields and labels below."
+      "title": "Izmaksu struktūra",
+      "price": "Auto ar izsoles maksām",
+      "transport": "Transports un frakts",
+      "duty": "Muita",
+      "vat": "Importa PVN",
+      "national": "Valsts nodokļi",
+      "registration": "Reģistrācija un citas"
     }
   },
   "vinCompare": {
-    "eyebrow": "Comparison",
-    "title": "VIN history reports – which service to choose for a car from the USA or Europe",
-    "lead": "We compared the most popular vehicle history report services: data coverage, US damage and title information, photos from earlier listings and prices. At the end – how to choose a report for a specific car.",
-    "checked": "Prices and coverage checked: {{date}}. Prices are indicative and may change.",
-    "eu": "EU",
+    "eyebrow": "Salīdzinājums",
+    "title": "VIN vēstures atskaites – kuru pakalpojumu izvēlēties auto no ASV un Eiropas",
+    "lead": "Salīdzinājām populārākos transportlīdzekļu vēstures atskaišu pakalpojumus: datu pārklājumu, ASV bojājumu un title informāciju, iepriekšējo sludinājumu fotoattēlus un cenas. Beigās – kā izvēlēties atskaiti konkrētam auto.",
+    "checked": "Cenas un apjoms pārbaudīts: {{date}}. Cenas ir orientējošas un var mainīties.",
+    "eu": "ES",
     "verdict": {
       "us": {
-        "for": "Car from a US auction",
-        "pick": "AutoCheck or Carfax",
-        "why": "The deepest US data: damage, titles, auction and service history."
+        "for": "Auto no ASV izsoles",
+        "pick": "AutoCheck vai Carfax",
+        "why": "Detalizētākie ASV dati: bojājumi, title, izsoļu un servisa vēsture."
       },
       "eu": {
-        "for": "Car bought in Europe",
-        "pick": "carVertical or autoDNA",
-        "why": "Data from many EU countries, report in your language."
+        "for": "Eiropā pirkts auto",
+        "pick": "carVertical vai autoDNA",
+        "why": "Dati no daudzām ES valstīm, atskaite jūsu valodā."
       },
       "budget": {
-        "for": "Quick, cheap check",
+        "for": "Ātra un lēta pārbaude",
         "pick": "VinAudit",
-        "why": "Official NMVTIS title and total-loss data for a few dollars."
+        "why": "Oficiālie NMVTIS dati par title un pilnīgu bojāeju par dažiem dolāriem."
       }
     },
     "table": {
-      "title": "At a glance",
-      "service": "Service",
-      "regions": "Data coverage",
-      "usTitles": "US titles and total losses",
-      "photos": "Photos from history",
-      "price": "Report price",
-      "note": "“Sometimes” – photos appear when the service has them (e.g. from earlier listings or auctions). Coverage depends on the specific VIN."
+      "title": "Īsumā",
+      "service": "Pakalpojums",
+      "regions": "Datu pārklājums",
+      "usTitles": "ASV title un pilnīga bojāeja",
+      "photos": "Fotoattēli no vēstures",
+      "price": "Atskaites cena",
+      "note": "„Dažreiz” – fotoattēli parādās, ja pakalpojumam tie ir (piem., no iepriekšējiem sludinājumiem vai izsolēm). Datu apjoms atkarīgs no konkrētā VIN."
     },
     "value": {
-      "yes": "yes",
-      "partial": "partly",
-      "no": "no",
-      "sometimes": "sometimes",
-      "unknown": "no independent data"
+      "yes": "jā",
+      "partial": "daļēji",
+      "no": "nē",
+      "sometimes": "dažreiz",
+      "unknown": "nav neatkarīgu datu"
     },
-    "providers": "Services one by one",
-    "visit": "Go to {{name}}",
-    "pros": "Pros",
-    "cons": "Cons",
-    "bestFor": "Best for:",
+    "providers": "Pakalpojumi pa vienam",
+    "visit": "Uz {{name}}",
+    "pros": "Plusi",
+    "cons": "Mīnusi",
+    "bestFor": "Kam piemērots:",
     "p": {
       "carvertical": {
-        "desc": "A Lithuanian service operating in many European countries and in the USA. It claims over 1,000 data sources – registries, insurers, workshops, police. For US cars it shows title brands such as salvage, rebuilt and junk.",
-        "pros": "• European and US data in one report.\n• Report and support in many EU languages.\n• Photos from history when available.",
-        "cons": "• More expensive than US budget services.\n• Less US data than Carfax or AutoCheck.",
-        "best": "buyers in Europe who want one report for a car from the USA or the EU."
+        "desc": "Lietuviešu pakalpojums, kas darbojas daudzās Eiropas valstīs un ASV. Norāda vairāk nekā 1000 datu avotu – reģistrus, apdrošinātājus, servisus, policiju. ASV auto rāda, cita starpā, title atzīmes (salvage, rebuilt, junk).",
+        "pros": "• Eiropas un ASV dati vienā atskaitē.\n• Atskaite un atbalsts daudzās ES valodās.\n• Fotoattēli no vēstures, ja tādi ir.",
+        "cons": "• Dārgāks par lētajiem ASV pakalpojumiem.\n• Mazāk ASV datu nekā Carfax vai AutoCheck.",
+        "best": "pircējiem Eiropā, kuri vēlas vienu atskaiti auto no ASV vai ES."
       },
       "autodna": {
-        "desc": "A Polish service, strongest in Poland and Central and Eastern Europe. Its database covers dozens of countries in Europe and North America; reports include mileage, damage and – when available – photos.",
-        "pros": "• Very good data from Poland and the region.\n• Cheaper than carVertical, multi-report bundles.\n• Free preliminary check whether data exists.",
-        "cons": "• Less Western European data than competitors.\n• For US cars, add a US source as well.",
-        "best": "cars from Poland and neighbouring countries, and as a second source."
+        "desc": "Polijas pakalpojums, spēcīgākais Polijā un Centrāleiropā un Austrumeiropā. Datubāze aptver desmitiem Eiropas un Ziemeļamerikas valstu; atskaitēs ir nobraukums, bojājumi un – ja ir – fotoattēli.",
+        "pros": "• Ļoti labi dati no Polijas un reģiona.\n• Lētāks par carVertical, vairāku atskaišu paketes.\n• Bezmaksas iepriekšēja pārbaude, vai dati ir pieejami.",
+        "cons": "• Mazāk Rietumeiropas datu nekā konkurentiem.\n• ASV auto pievienojiet arī ASV avotu.",
+        "best": "auto no Polijas un kaimiņvalstīm, kā arī kā otrais avots."
       },
       "carfax": {
-        "desc": "The best-known service in the USA. It has broad access to insurer, police and workshop records, so it shows accidents and service history best.",
-        "pros": "• The deepest US accident and service history.\n• Recognised by buyers at resale.",
-        "cons": "• The most expensive single report.\n• Weak for cars from outside the USA and Canada.",
-        "best": "more expensive US cars where service history matters."
+        "desc": "Pazīstamākais pakalpojums ASV. Tam ir plaša piekļuve apdrošinātāju, policijas un servisu datiem, tāpēc tas vislabāk parāda avārijas un servisa vēsturi.",
+        "pros": "• Detalizētākā ASV avāriju un servisa vēsture.\n• Pircēji to pazīst tālākpārdošanā.",
+        "cons": "• Dārgākā atsevišķā atskaite.\n• Vājš auto ārpus ASV un Kanādas.",
+        "best": "dārgākiem ASV auto, kuriem svarīga servisa vēsture."
       },
       "autocheck": {
-        "desc": "A service owned by Experian. Particularly strong on auction history – used by dealers and auction houses. It also gives an AutoCheck Score.",
-        "pros": "• Very good US auction data.\n• Cheaper than Carfax.",
-        "cons": "• Fewer service details than Carfax.\n• US cars only.",
-        "best": "cars from Copart and IAAI auctions."
+        "desc": "Experian piederošs pakalpojums. Īpaši spēcīgs izsoļu vēsturē – to izmanto dīleri un izsoļu nami. Sniedz arī AutoCheck Score novērtējumu.",
+        "pros": "• Ļoti labi dati par ASV izsolēm.\n• Lētāks par Carfax.",
+        "cons": "• Mazāk servisa detaļu nekā Carfax.\n• Tikai ASV auto.",
+        "best": "auto no Copart un IAAI izsolēm."
       },
       "vinaudit": {
-        "desc": "An officially approved data provider for the government NMVTIS database. It shows title brands, total losses, odometer readings and theft records.",
-        "pros": "• Very cheap, bundles even cheaper.\n• Official NMVTIS title and total-loss data.",
-        "cons": "• Few details on minor accidents and servicing.\n• No photos.",
-        "best": "a quick first check of many cars before bidding."
+        "desc": "Oficiāli apstiprināts valsts NMVTIS datubāzes datu sniedzējs. Rāda title atzīmes, pilnīgu bojāeju, odometra rādījumus un zādzību ierakstus.",
+        "pros": "• Ļoti lēts, paketes vēl lētākas.\n• Oficiālie NMVTIS dati par title un pilnīgu bojāeju.",
+        "cons": "• Maz detaļu par sīkām avārijām un servisu.\n• Nav fotoattēlu.",
+        "best": "ātrai daudzu auto sākotnējai pārbaudei pirms solīšanas."
       },
       "automano": {
-        "desc": "A new low-cost VIN report service. We have not yet found independent reviews or a detailed description of its data sources – treat it as a cheap first check.",
-        "pros": "• Low report price.",
-        "cons": "• Few independent reviews.\n• Data sources not disclosed.",
-        "best": "a cheap first check – for a more expensive car, also order a report from a better-known service."
+        "desc": "Jauns lētu VIN atskaišu pakalpojums. Pagaidām neesam atraduši neatkarīgas atsauksmes vai detalizētu datu avotu aprakstu – uztveriet to kā lētu sākotnējo pārbaudi.",
+        "pros": "• Zema atskaites cena.",
+        "cons": "• Maz neatkarīgu atsauksmju.\n• Neatklāj datu avotus.",
+        "best": "lētai sākotnējai pārbaudei – dārgākam auto pasūtiet arī zināmāka pakalpojuma atskaiti."
       }
     },
     "how": {
-      "title": "How we compared",
-      "text": "We reviewed the services’ descriptions and price lists as well as independent comparisons from October 2026. We focused on what matters most when importing a car: where the data comes from, whether the report shows US titles and total losses, whether it includes photos from history and how much a single report costs.\nWe did not test the reports on the same VINs – coverage depends on the specific car, so for a more expensive car it is worth ordering two reports from different services."
+      "title": "Kā mēs salīdzinājām",
+      "text": "Pārskatījām pakalpojumu aprakstus, cenrāžus un 2026. gada oktobra neatkarīgus salīdzinājumus. Koncentrējāmies uz to, kas importā ir svarīgākais: no kurienes nāk dati, vai atskaite rāda ASV title un pilnīgu bojāeju, vai tajā ir fotoattēli no vēstures un cik maksā viena atskaite.\nAtskaites netestējām ar vieniem un tiem pašiem VIN – datu apjoms atkarīgs no konkrētā auto, tāpēc dārgākam auto vērts pasūtīt divas dažādu pakalpojumu atskaites."
     },
     "free": {
-      "title": "What you can check for free",
-      "text": "Before paying for a report, check for free:\n• NICB VINCheck – whether the car was reported stolen or a total loss (USA).\n• NHTSA Recalls – open recalls for the VIN.\n• MOT history on gov.uk – for cars from the UK.\n• unofficial Copart and IAAI auction archives – sometimes show photos and the price from an earlier sale; they are not affiliated with the auctions and may disappear.\nOur free VIN decoder also reads the make, model, year, engine and country of manufacture."
+      "title": "Ko var pārbaudīt bez maksas",
+      "text": "Pirms maksājat par atskaiti, bez maksas pārbaudiet:\n• NICB VINCheck – vai auto pieteikts kā zagts vai pilnīga bojāeja (ASV).\n• NHTSA Recalls – neizpildītas atsaukšanas kampaņas pēc VIN.\n• MOT vēsturi gov.uk vietnē – auto no Lielbritānijas.\n• neoficiālus Copart un IAAI izsoļu arhīvus – dažreiz rāda iepriekšējās pārdošanas fotoattēlus un cenu; tie nav saistīti ar izsolēm un var pazust.\nMūsu bezmaksas VIN dekodētājs nolasa arī marku, modeli, gadu, dzinēju un ražošanas valsti."
     },
     "read": {
-      "title": "How to read a report",
-      "text": "• Compare mileage readings over the years – a drop means a rolled-back odometer.\n• Look for title brands: salvage, rebuilt, flood, junk.\n• Note the registration states – cars from Florida, Texas and Louisiana more often have flood damage.\n• Several auctions in a short time suggest the car was hard to sell.\n• No record does not mean no damage – a report only shows what was reported."
+      "title": "Kā lasīt atskaiti",
+      "text": "• Salīdziniet nobraukumu pa gadiem – samazinājums nozīmē attītu odometru.\n• Meklējiet title atzīmes: salvage, rebuilt, flood, junk.\n• Pievērsiet uzmanību reģistrācijas štatiem – auto no Floridas, Teksasas un Luiziānas biežāk ir plūdu bojājumi.\n• Vairākas izsoles īsā laikā liecina, ka auto bija grūti pārdot.\n• Ieraksta trūkums nenozīmē, ka bojājumu nav bijis – atskaite rāda tikai ziņoto."
     },
     "choose": {
-      "title": "Which report to choose",
-      "text": "• Car from a US auction (Copart, IAAI): first the free NICB and the cheap VinAudit, then AutoCheck or Carfax before bidding on a more expensive car.\n• Car from the USA when you want one report in your language: carVertical.\n• Car from Poland or neighbouring countries: autoDNA, with carVertical as a second source.\n• Car from the UK: free MOT history plus a report from a European service.\nFor a car worth tens of thousands, two reports from different services cost a fraction of a possible loss."
+      "title": "Kuru atskaiti izvēlēties",
+      "text": "• Auto no ASV izsoles (Copart, IAAI): vispirms bezmaksas NICB un lētais VinAudit, bet pirms solīšanas par dārgāku auto – AutoCheck vai Carfax.\n• Auto no ASV, ja vēlaties vienu atskaiti savā valodā: carVertical.\n• Auto no Polijas vai kaimiņvalstīm: autoDNA, kā otrais avots – carVertical.\n• Auto no Lielbritānijas: bezmaksas MOT vēsture plus Eiropas pakalpojuma atskaite.\nAuto par desmitiem tūkstošu eiro divas dažādu pakalpojumu atskaites maksā daļu no iespējamā zaudējuma."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Which VIN report is best for a car from the USA?",
-      "a1": "For a car from a US auction, AutoCheck (auction history) and Carfax (accidents and servicing) give the most data. For a quick title and total-loss check, the cheaper VinAudit is enough.",
-      "q2": "Does carVertical check cars from the USA?",
-      "a2": "Yes – according to the service, the report includes US title brands (salvage, rebuilt, junk). Its US coverage is, however, smaller than that of US services.",
-      "q3": "autoDNA or carVertical – which is better?",
-      "a3": "autoDNA is stronger in Poland and Central and Eastern Europe and usually cheaper; carVertical has wider coverage in Western Europe and the USA. For a more expensive car, check both.",
-      "q4": "Will a report show photos from a Copart auction?",
-      "a4": "Sometimes – some reports include photos from earlier listings when the service has them. No service guarantees it. Save the photos of the current auction yourself, because the page disappears after the sale.",
-      "q5": "Is a free VIN report enough?",
-      "a5": "Free databases (NICB, NHTSA) show theft, total loss and recalls, but not the full accident and mileage history. A paid report is usually needed before deciding to buy.",
-      "q6": "Do you earn from these links?",
-      "a6": "For some services, yes – such links are marked as partner links. This does not affect what we recommend: the ranking is based on data coverage, not commission."
+      "title": "Biežāk uzdotie jautājumi",
+      "q1": "Kura VIN atskaite ir labākā auto no ASV?",
+      "a1": "Auto no ASV izsoles visvairāk datu sniedz AutoCheck (izsoļu vēsture) un Carfax (avārijas un serviss). Ātrai title un pilnīgas bojāejas pārbaudei pietiek ar lētāko VinAudit.",
+      "q2": "Vai carVertical pārbauda auto no ASV?",
+      "a2": "Jā – pēc pakalpojuma datiem atskaitē ir, cita starpā, ASV title atzīmes (salvage, rebuilt, junk). Tomēr ASV pārklājums ir mazāks nekā ASV pakalpojumiem.",
+      "q3": "autoDNA vai carVertical – kurš labāks?",
+      "a3": "autoDNA ir spēcīgāks Polijā un Centrāleiropā un Austrumeiropā un parasti lētāks, carVertical ir plašāks pārklājums Rietumeiropā un ASV. Dārgākam auto vērts pārbaudīt abus.",
+      "q4": "Vai atskaite parādīs Copart izsoles fotoattēlus?",
+      "a4": "Dažreiz – dažās atskaitēs ir iepriekšējo sludinājumu fotoattēli, ja pakalpojumam tie ir. Neviens to negarantē. Pašreizējās izsoles fotoattēlus saglabājiet paši, jo pēc pārdošanas lapa pazūd.",
+      "q5": "Vai pietiek ar bezmaksas VIN atskaiti?",
+      "a5": "Bezmaksas datubāzes (NICB, NHTSA) rāda zādzību, pilnīgu bojāeju un atsaukšanas kampaņas, bet ne pilnu avāriju un nobraukuma vēsturi. Lēmumam par pirkumu parasti vajadzīga maksas atskaite.",
+      "q6": "Vai jūs pelnāt ar šīm saitēm?",
+      "a6": "Dažu pakalpojumu gadījumā jā – šādas saites ir atzīmētas kā partneru saites. Tas neietekmē mūsu ieteikumus: secība balstās uz datu pārklājumu, nevis komisiju."
     },
-    "disclaimer": "Carglo is not affiliated with the services described. Names belong to their owners. Prices and coverage come from the services’ descriptions and comparisons from October 2026 – check the current offer before buying.",
-    "decoder": "Free VIN decoder",
+    "disclaimer": "Carglo nav saistīts ar aprakstītajiem pakalpojumiem. Nosaukumi pieder to īpašniekiem. Cenas un apjoms ņemti no pakalpojumu aprakstiem un 2026. gada oktobra salīdzinājumiem – pirms pirkuma pārbaudiet aktuālo piedāvājumu.",
+    "decoder": "Bezmaksas VIN dekodētājs",
     "mock": {
-      "title": "Vehicle history report",
-      "r1": "First registration – Florida",
-      "r2": "Odometer reading: 28,400 mi",
-      "r3": "Damage: front end, airbags deployed",
-      "r4": "Title changed to SALVAGE",
-      "r5": "Auction – 3 photos before repair",
-      "caption": "Illustration – what a history report typically looks like. Coverage depends on the service and the VIN."
+      "title": "Transportlīdzekļa vēstures atskaite",
+      "r1": "Pirmā reģistrācija – Florida",
+      "r2": "Odometra rādījums: 28 400 jūdzes",
+      "r3": "Bojājums: priekšpuse, nostrādājuši drošības spilveni",
+      "r4": "Title mainīts uz SALVAGE",
+      "r5": "Izsole – 3 fotoattēli pirms remonta",
+      "caption": "Ilustrācija – šādi parasti izskatās vēstures atskaite. Datu apjoms atkarīgs no pakalpojuma un VIN."
     }
   }
 }

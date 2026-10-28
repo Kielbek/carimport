@@ -511,9 +511,9 @@
     "toTop": "Üles",
     "glossary": "Sõnastik",
     "contact": "Kontakt",
-    "vin": "VIN check",
-    "copart": "Copart – how to buy",
-    "vinCompare": "VIN reports compared"
+    "vin": "VIN-kontroll",
+    "copart": "Copart – kuidas osta",
+    "vinCompare": "VIN-raportide võrdlus"
   },
   "footer": {
     "about": "Sõltumatu kalkulaator väljastpoolt ELi toodavate autode impordikulude arvutamiseks. Me ei müü ega impordi autosid – arvutame välja, kui palju need tegelikult maksavad.",
@@ -880,16 +880,16 @@
       "description": "Küsimus arvutuse, aruande, makse või koostöö kohta? Kirjuta Carglo meeskonnale – vastame tavaliselt ühe tööpäeva jooksul."
     },
     "vin": {
-      "title": "VIN check for US cars – free VIN decoder and vehicle history | Carglo",
-      "description": "Enter a VIN and check the make, model, year, engine and country of manufacture for free. Learn how to read a VIN and where to check damage and mileage history."
+      "title": "USA auto VIN-kontroll – tasuta VIN-dekooder ja sõiduki ajalugu | Carglo",
+      "description": "Sisesta VIN ja kontrolli tasuta marki, mudelit, aastat, mootorit ja tootjariiki. Kuidas VIN-i lugeda ja kust kontrollida kahjustuste ja läbisõidu ajalugu."
     },
     "copart": {
-      "title": "Copart: how to buy a car from the US in Europe – fees, broker, shipping | Carglo",
-      "description": "A Copart guide for buyers in Europe: account or broker, auction fees, title types, checking the car, payment, shipping and the full cost of importing."
+      "title": "Copart: kuidas osta Euroopast auto USA-st – tasud, maakler, transport | Carglo",
+      "description": "Copart’i juhend Euroopa ostjale: oma konto või maakler, oksjonitasud, title’i tüübid, auto kontrollimine, maksmine, transport ja impordi kogukulu."
     },
     "vinCompare": {
-      "title": "VIN history reports compared: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Which VIN report should you buy for a car from the USA or Europe? Coverage, damage and title data, photos and prices compared: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
+      "title": "VIN-ajalooraportide võrdlus: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
+      "description": "Millise VIN-raporti valida USA-st või Euroopast pärit autole? Katvus, kahjustuste ja title’i andmed, fotod ja hinnad: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     }
   },
   "privacy": {
@@ -1951,347 +1951,347 @@
     }
   },
   "vinCta": {
-    "title": "Before you bid – check the car's history by VIN",
-    "text": "A history report shows earlier damage, mileage and past auctions, among other things. It costs a fraction of even a small repair.",
-    "button": "Check the VIN at {{partner}}",
-    "label": "Partner link – Carglo may earn a commission. It does not affect our calculations."
+    "title": "Enne pakkumist kontrolli auto ajalugu VIN-i järgi",
+    "text": "Ajalooraport näitab muu hulgas varasemaid kahjustusi, läbisõitu ja möödunud oksjoneid. See maksab murdosa isegi väikesest remondist.",
+    "button": "Kontrolli VIN-i: {{partner}}",
+    "label": "Partnerlink – Carglo võib saada vahendustasu. See ei mõjuta meie arvutusi."
   },
   "vinPage": {
-    "eyebrow": "Tool and guide",
-    "title": "Check the VIN of a car from the US, Canada or Europe",
-    "lead": "Enter a VIN and we decode the make, model, year, engine and country of manufacture for free. Below we explain how to read a VIN yourself and where to check damage and mileage history before you buy.",
+    "eyebrow": "Tööriist ja juhend",
+    "title": "Kontrolli USA-st, Kanadast või Euroopast pärit auto VIN-i",
+    "lead": "Sisesta VIN ja me loeme tasuta välja margi, mudeli, aasta, mootori ja tootjariigi. Allpool selgitame, kuidas VIN-i ise lugeda ja kust enne ostu kontrollida kahjustuste ja läbisõidu ajalugu.",
     "tool": {
-      "title": "Free VIN decoder",
-      "lead": "Data from the US vehicle database (NHTSA) and the EPA, and – for cars from outside North America – from the VIN itself.",
-      "button": "Check VIN",
-      "year": "Model year",
-      "engine": "Engine",
-      "power": "Power",
-      "fuel": "Fuel",
-      "body": "Body",
-      "check": "Check digit",
-      "checkOk": "valid",
-      "checkBad": "does not match – possible typo",
-      "duty": "Car built in {{country}} – with proof of origin it may qualify for 0% duty instead of 10%.",
-      "dutyMore": "How it works",
-      "calculate": "Calculate the import cost of this car",
-      "note": "The decoder shows the technical data encoded in the VIN and in manufacturers' databases. It does not show damage or mileage history – that is what a vehicle history report is for."
+      "title": "Tasuta VIN-dekooder",
+      "lead": "Andmed USA sõidukiandmebaasist (NHTSA) ja EPA-lt, väljaspool Põhja-Ameerikat toodetud autode puhul VIN-ist endast.",
+      "button": "Kontrolli VIN-i",
+      "year": "Mudeliaasta",
+      "engine": "Mootor",
+      "power": "Võimsus",
+      "fuel": "Kütus",
+      "body": "Kere",
+      "check": "Kontrollnumber",
+      "checkOk": "kehtiv",
+      "checkBad": "ei klapi – võimalik trükiviga",
+      "duty": "Tootjariik: {{country}} – päritolutõendiga võib toll olla 10% asemel 0%.",
+      "dutyMore": "Kuidas see toimib",
+      "calculate": "Arvuta selle auto impordikulu",
+      "note": "Dekooder näitab VIN-is ja tootjate andmebaasides olevaid tehnilisi andmeid. Kahjustuste ega läbisõidu ajalugu see ei näita – selleks on sõiduki ajalooraport."
     },
     "what": {
-      "title": "What a VIN is",
-      "text": "A VIN (Vehicle Identification Number) is the 17-character number the manufacturer gives every car. It never contains the letters I, O or Q, so they are not mistaken for the digits 1 and 0.\nYou will find the VIN on a plate by the windscreen (driver's side), on the door pillar, in the documents (the title in the US, the registration certificate in the EU) and in the auction listing. Before buying, compare the VIN in the listing with the one in the car's photos – a difference is a warning sign."
+      "title": "Mis on VIN",
+      "text": "VIN (Vehicle Identification Number, valmistajatähis) on 17-märgiline number, mille tootja annab igale autole. Selles pole kunagi tähti I, O ja Q, et neid ei aetaks segi numbritega 1 ja 0.\nVIN asub tuuleklaasi juures oleval plaadil (juhi poolel), ukse piilaril, dokumentides (USA-s title, EL-is registreerimistunnistus) ja oksjonikuulutuses. Võrdle enne ostu kuulutuse VIN-i fotodel olevaga – erinevus on hoiatusmärk."
     },
     "read": {
-      "title": "How to read a VIN, character by character",
-      "text": "Every position in a VIN means something. The most useful are the first character (country of manufacture), the ninth (check digit) and the tenth (model year).",
-      "p1": "Country of manufacture (e.g. 1, 4, 5 – US, W – Germany, J – Japan)",
-      "p2": "Manufacturer – together with the first character it forms the WMI code",
-      "p4": "Model, body, engine, safety systems",
-      "p9": "Check digit – mandatory in North America, catches typos",
-      "p10": "Model year",
-      "p11": "Plant where the car was assembled",
-      "p12": "The car's serial number",
-      "countryTitle": "First character – country of manufacture",
-      "yearTitle": "Tenth character – model year"
+      "title": "Kuidas VIN-i märk-märgilt lugeda",
+      "text": "Igal VIN-i positsioonil on tähendus. Kõige kasulikumad on esimene märk (tootjariik), üheksas (kontrollnumber) ja kümnes (mudeliaasta).",
+      "p1": "Tootjariik (nt 1, 4, 5 – USA, W – Saksamaa, J – Jaapan)",
+      "p2": "Tootja – koos esimese märgiga moodustab WMI-koodi",
+      "p4": "Mudel, kere, mootor, turvasüsteemid",
+      "p9": "Kontrollnumber – Põhja-Ameerikas kohustuslik, tabab trükivead",
+      "p10": "Mudeliaasta",
+      "p11": "Tehas, kus auto kokku pandi",
+      "p12": "Auto seerianumber",
+      "countryTitle": "Esimene märk – tootjariik",
+      "yearTitle": "Kümnes märk – mudeliaasta"
     },
     "report": {
-      "title": "What a vehicle history report shows",
-      "text": "The decoder tells you what the car is. A history report tells you what happened to it. It usually includes:\n• damage and incidents reported by insurers, including total losses,\n• the title type (clean, salvage, rebuilt, flood) and its changes between states,\n• odometer readings – they reveal a rolled-back odometer,\n• earlier auctions, often with photos of the car before repair,\n• thefts, the number of owners and registration states.\nFor an auction car, a report usually costs a fraction of even a small repair – and it can stop you buying a flood car or one with serious structural damage."
+      "title": "Mida sõiduki ajalooraport näitab",
+      "text": "Dekooder ütleb, mis auto see on. Ajalooraport ütleb, mis sellega juhtunud on. Tavaliselt sisaldab see:\n• kindlustusseltside teatatud kahjustusi ja juhtumeid, sh täiskahjusid,\n• title’i tüüpi (clean, salvage, rebuilt, flood) ja selle muutusi osariikide vahel,\n• läbisõidunäite – need paljastavad tagasi keritud näidu,\n• varasemaid oksjoneid, sageli fotodega enne remonti,\n• vargusi, omanike arvu ja registreerimisosariike.\nOksjoniauto puhul maksab raport tavaliselt murdosa isegi väikesest remondist – ja võib hoida sind ostmast üleujutatud või raskete kerekahjustustega autot."
     },
     "free": {
-      "title": "Free sources of VIN information",
-      "text": "Some information you can check for free in official databases:",
-      "nicb": "The US insurers' database – whether the car was reported stolen or as a total loss (salvage).",
-      "nhtsa": "Open safety recalls for the VIN – worth fixing before shipping or right after.",
-      "nmvtis": "The official US register of titles and total losses; it lists approved report providers.",
-      "mot": "For cars from the UK: the full MOT test history with the mileage from each year."
+      "title": "Tasuta VIN-teabe allikad",
+      "text": "Osa teavet saad tasuta kontrollida ametlikest andmebaasidest:",
+      "nicb": "USA kindlustusseltside andmebaas – kas auto on teatatud varastatuks või täiskahjuks (salvage).",
+      "nhtsa": "VIN-i avatud tagasikutsed – parem lahendada enne saatmist või kohe pärast.",
+      "nmvtis": "USA ametlik title’ite ja täiskahjude register; loetleb heakskiidetud raportipakkujad.",
+      "mot": "Ühendkuningriigist pärit autodele: kogu MOT-ülevaatuste ajalugu iga aasta läbisõiduga."
     },
     "flags": {
-      "title": "Warning signs",
-      "text": "• The VIN in the listing differs from the VIN in the photos of the plate or windscreen.\n• The check digit does not match (on a North American car).\n• The model year in the VIN does not match the listing.\n• The title is branded flood, water damage or \"not actual mileage\".\n• The car was offered at auction several times in a short period.\n• The VIN plate looks removed, glued on or damaged – a possible clone."
+      "title": "Hoiatusmärgid",
+      "text": "• Kuulutuse VIN erineb plaadi või tuuleklaasi fotodel olevast.\n• Kontrollnumber ei klapi (Põhja-Ameerika autol).\n• VIN-i mudeliaasta ei vasta kuulutusele.\n• Title’il on märge flood, water damage või „not actual mileage”.\n• Auto on lühikese aja jooksul mitu korda oksjonil olnud.\n• VIN-plaat paistab eemaldatud, kleebitud või kahjustatud – võimalik kloon."
     },
     "japan": {
-      "title": "Cars from Japan – a chassis number instead of a VIN",
-      "text": "Cars from the Japanese market (JDM) often have no 17-character VIN, only a shorter chassis number, e.g. JZA80-0012345. A VIN decoder cannot read it.\nThe history of such a car is checked on the auction sheet and the export certificate – a good exporter translates them before you buy."
+      "title": "Autod Jaapanist – raaminumber VIN-i asemel",
+      "text": "Jaapani turu (JDM) autodel pole sageli 17-märgilist VIN-i, vaid lühem raaminumber, nt JZA80-0012345. VIN-dekooder ei suuda seda lugeda.\nSellise auto ajalugu kontrollitakse auction sheet’i ja ekspordisertifikaadi põhjal – hea eksportija tõlgib need enne ostu."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Is a VIN check free?",
-      "a1": "Decoding the technical data from the VIN (make, model, year, engine, country of manufacture) is free here. A full history report – damage, mileage, past auctions – is paid, from report providers.",
-      "q2": "What can I tell from the VIN alone?",
-      "a2": "The country of manufacture, the manufacturer, the model year, the plant and – on North American cars – whether the number is valid, thanks to the check digit. Engine and body specs come from manufacturers' databases, history from reports.",
-      "q3": "How do I check whether a car from the US has been in an accident?",
-      "a3": "Check the title type (salvage means a total loss), the free NICB VINCheck database and a vehicle history report, which often also shows photos from earlier auctions.",
-      "q4": "How do I know which country the car was built in?",
-      "a4": "From the first character of the VIN: 1, 4 and 5 are the US, 2 – Canada, 3 – Mexico, J – Japan, W – Germany. It matters for import: cars built in the US, Canada, Japan and the UK may qualify for 0% duty.",
-      "q5": "Can a VIN be faked?",
-      "a5": "Yes – stolen cars are sometimes \"cloned\" with the VIN of another car. Compare the VIN in several places on the car and in the documents, check that the year and version match, and ask for an inspection if in doubt.",
-      "q6": "Does the decoder work for cars from Japan?",
-      "a6": "Only if the car has a 17-character VIN. Most cars from the Japanese market have a shorter chassis number – their history is checked on the auction sheet."
+      "title": "Korduma kippuvad küsimused",
+      "q1": "Kas VIN-kontroll on tasuta?",
+      "a1": "Tehniliste andmete lugemine VIN-ist (mark, mudel, aasta, mootor, tootjariik) on meil tasuta. Täielik ajalooraport – kahjustused, läbisõit, varasemad oksjonid – on tasuline ja seda pakuvad raportiteenused.",
+      "q2": "Mida saab teada ainult VIN-ist?",
+      "a2": "Tootjariigi, tootja, mudeliaasta, tehase ja – Põhja-Ameerika autode puhul – kontrollnumbri abil ka selle, kas number on kehtiv. Mootori ja kere andmed tulevad tootjate andmebaasidest, ajalugu raportitest.",
+      "q3": "Kuidas kontrollida, kas USA auto on olnud õnnetuses?",
+      "a3": "Kontrolli title’i tüüpi (salvage tähendab täiskahju), tasuta andmebaasi NICB VINCheck ja ajalooraportit, mis näitab sageli ka varasemate oksjonite fotosid.",
+      "q4": "Kuidas teada, millises riigis auto toodeti?",
+      "a4": "VIN-i esimese märgi järgi: 1, 4 ja 5 on USA, 2 – Kanada, 3 – Mehhiko, J – Jaapan, W – Saksamaa. Impordil on see oluline: USA-s, Kanadas, Jaapanis ja Ühendkuningriigis toodetud autodel võib toll olla 0%.",
+      "q5": "Kas VIN võib olla võltsitud?",
+      "a5": "Jah – varastatud autosid „kloonitakse” mõnikord teise auto VIN-iga. Võrdle VIN-i mitmes kohas ja dokumentides, kontrolli, et aasta ja versioon klapivad, ning kahtluse korral lase auto üle vaadata.",
+      "q6": "Kas dekooder töötab Jaapani autodega?",
+      "a6": "Ainult siis, kui autol on 17-märgiline VIN. Enamikul Jaapani turu autodest on lühem raaminumber – nende ajalugu kontrollitakse auction sheet’i põhjal."
     },
-    "compareLink": "VIN report services compared – which one to choose",
+    "compareLink": "VIN-raportite pakkujate võrdlus – millise valida",
     "anatomy": {
-      "country": "country",
-      "maker": "manufacturer",
-      "vds": "vehicle description",
-      "check": "check digit",
-      "year": "model year",
-      "plant": "plant",
-      "serial": "serial number",
-      "caption": "Sample VIN {{vin}}: a Ford built in the USA, model year 2020."
+      "country": "riik",
+      "maker": "tootja",
+      "vds": "sõiduki kirjeldus",
+      "check": "kontroll",
+      "year": "aasta",
+      "plant": "tehas",
+      "serial": "seerianumber",
+      "caption": "Näidis-VIN {{vin}}: USA-s toodetud Ford, mudeliaasta 2020."
     }
   },
   "copart": {
-    "eyebrow": "Guide",
-    "title": "Copart: how to buy a car from the US and import it to Europe",
-    "lead": "Copart is the largest auction of damaged and ex-lease cars in the US. We explain step by step how to buy there from Europe, what the fees are and what you will pay in total with shipping and taxes.",
+    "eyebrow": "Juhend",
+    "title": "Copart: kuidas osta auto USA-st ja tuua see Eestisse",
+    "lead": "Copart on USA suurim avariiliste ja liisingust tagastatud autode oksjon. Selgitame samm-sammult, kuidas sealt Euroopast osta, millised on tasud ja kui palju maksad kokku koos transpordi ja maksudega.",
     "what": {
-      "title": "What Copart is",
-      "text": "Copart is a US auction company with more than 200 yards in the US and Canada. It mainly sells cars from insurers (after accidents, thefts, floods), leasing companies, rental firms and banks. Bidding is online, and the car stays in the yard until it is collected.\nEvery listing has photos, the damage type (primary / secondary damage), the title type, the mileage and a status such as \"Run and Drive\" (the car moved when it arrived at the yard). Sales follow different rules: \"Pure Sale\" – the car goes to the highest bid; \"Minimum Bid\" – the seller has a reserve price; \"On Approval\" – the seller approves the bid."
+      "title": "Mis on Copart",
+      "text": "Copart on Ameerika oksjonifirma, millel on üle 200 platsi USA-s ja Kanadas. See müüb peamiselt kindlustusseltside (pärast õnnetusi, vargusi, üleujutusi), liisingufirmade, rendifirmade ja pankade autosid. Pakkumisi tehakse veebis ning auto jääb platsile, kuni see ära viiakse.\nIgas kuulutuses on fotod, kahjustuse tüüp (primary / secondary damage), title’i tüüp, läbisõit ja olek nagu „Run and Drive” (auto sõitis platsile saabudes). Müügireeglid erinevad: „Pure Sale” – auto läheb kõrgeimale pakkumisele; „Minimum Bid” – müüjal on miinimumhind; „On Approval” – müüja peab pakkumise heaks kiitma."
     },
     "europe": {
-      "title": "Copart in Europe vs Copart in the US",
-      "text": "Copart also operates in several European countries (including the UK, Germany, Spain, Finland and Ireland). These are separate sites with local cars and local rules.\nThe biggest choice and the lowest prices, however, are at the US auctions – and that is what this guide is about. A car from the US has to cross the ocean and be cleared at an EU port, so always work out the full cost, not just the auction price."
+      "title": "Copart Euroopas või Copart USA-s",
+      "text": "Copart tegutseb ka mitmes Euroopa riigis (sh Ühendkuningriigis, Saksamaal, Hispaanias, Soomes ja Iirimaal). Need on eraldi saidid kohalike autode ja reeglitega.\nSuurim valik ja madalaimad hinnad on aga USA oksjonitel – neist see juhend räägibki. USA auto peab ületama ookeani ja läbima tollivormistuse EL-i sadamas, seega arvesta alati kogukulu, mitte ainult oksjonihinda."
     },
     "account": {
-      "title": "Your own account or a broker",
-      "text": "You can open a Copart account yourself, but a standard account lets you bid on only some cars. In many states, cars with a salvage title can only be bought by licensed buyers – which is why most buyers from Europe bid through a broker.\nThe broker lends you their licence, pays the deposit and often arranges transport to the port and the export documents. They charge a commission for it (usually a fixed amount per car). Check reviews of the broker and exactly what their price includes."
+      "title": "Oma konto või maakler",
+      "text": "Copart’i konto võid ise avada, kuid tavakontoga saad pakkuda vaid osale autodest. Paljudes osariikides tohivad salvage-title’iga autosid osta ainult litsentsiga ostjad – seepärast teeb enamik Euroopa ostjaid pakkumisi maakleri (broker) kaudu.\nMaakler laenab sulle oma litsentsi, tasub tagatisraha ja korraldab sageli transpordi sadamasse ning ekspordidokumendid. Selle eest võtab ta vahendustasu (tavaliselt kindel summa auto kohta). Kontrolli maakleri arvustusi ja mida hind täpselt sisaldab."
     },
     "fees": {
-      "title": "Auction fees",
-      "text": "Copart's fees are added to the hammer price:\n• the buyer fee – it rises in steps with the car's price,\n• the online bidding fee (virtual bid fee),\n• the gate fee for releasing the car from the yard,\n• environmental and title handling fees,\n• the broker's commission, if you use one.\nFor a car of a few thousand dollars this is usually several hundred to over a thousand dollars. Copart publishes the exact fee tables on its website – check them before you bid."
+      "title": "Oksjonitasud",
+      "text": "Haamrihinnale lisanduvad Copart’i tasud:\n• ostjatasu (buyer fee) – kasvab astmeliselt koos hinnaga,\n• veebipakkumise tasu (virtual bid fee),\n• gate fee auto väljastamise eest platsilt,\n• keskkonna- ja title’i töötlemise tasud,\n• maakleri vahendustasu, kui kasutad maaklerit.\nMõne tuhande dollari eest autole teeb see tavaliselt mõnisada kuni üle tuhande dollari. Copart avaldab täpsed tasutabelid oma veebilehel – kontrolli need enne pakkumist üle."
     },
     "titles": {
-      "title": "Title types – what you are buying",
-      "text": "The title is the US ownership document. Its type tells you what happened to the car:\n• Clean – no total loss in its history.\n• Salvage – the insurer declared a total loss; the most common title at Copart.\n• Rebuilt – a former total loss, repaired and allowed back on the road in the US.\n• Parts only, Non-repairable, Certificate of Destruction – for parts only; such a car cannot be registered in the EU.\nA salvage car can be registered in the EU after repair and a roadworthiness test. The title still affects its resale value.",
-      "link": "How to check a car by its VIN"
+      "title": "Title’i tüübid – mida sa ostad",
+      "text": "Title on Ameerika omandidokument. Selle tüüp näitab, mis autoga juhtunud on:\n• Clean – ajaloos pole täiskahju.\n• Salvage – kindlustusselts tunnistas täiskahju; Copart’i kõige levinum title.\n• Rebuilt – endine täiskahju, parandatud ja USA-s taas liiklusesse lubatud.\n• Parts only, Non-repairable, Certificate of Destruction – ainult varuosadeks; sellist autot EL-is registreerida ei saa.\nSalvage-auto saab EL-is registreerida pärast remonti ja ülevaatust. Title mõjutab siiski edasimüügi väärtust.",
+      "link": "Kuidas kontrollida autot VIN-i järgi"
     },
     "inspect": {
-      "title": "Check the car before you bid",
-      "text": "You cannot see the car in person, so every detail counts:\n• compare the VIN in the listing with the one in the photos,\n• look at every photo – \"Front end\" can mean a bumper or bent chassis rails,\n• be careful with cars from Florida, Texas and Louisiana after hurricanes (water marks, silt, corroded connectors),\n• check the car's history by VIN – damage, mileage and earlier auctions,\n• keep a 20–30% reserve for hidden damage."
+      "title": "Kontrolli autot enne pakkumist",
+      "text": "Sa ei näe autot oma silmaga, seega loeb iga detail:\n• võrdle kuulutuse VIN-i fotodel olevaga,\n• vaata kõiki fotosid – „Front end” võib tähendada põrkerauda või kõverdunud pikitalasid,\n• ole ettevaatlik Florida, Texase ja Louisiana autodega pärast orkaane (veejäljed, muda, korrodeerunud pistikud),\n• kontrolli ajalugu VIN-i järgi – kahjustused, läbisõit ja varasemad oksjonid,\n• jäta varjatud kahjustuste jaoks 20–30% reservi."
     },
     "payment": {
-      "title": "Payment and pickup",
-      "text": "After winning a bid you usually have only a few business days to pay (most often by bank transfer). Paying late means a penalty and, in the worst case, a blocked account.\nThe car must be collected from the yard within a short time – after that, storage fees are charged. So before you bid, have the money ready for the car, the fees and the transport, and make sure the broker or carrier knows where to collect the car."
+      "title": "Maksmine ja äravedu",
+      "text": "Pärast oksjoni võitmist on sul tavaliselt maksmiseks vaid mõni tööpäev (enamasti pangaülekandega). Hilinemine tähendab trahvi ja halvimal juhul konto blokeerimist.\nAuto tuleb platsilt kiiresti ära viia – seejärel arvestatakse hoiutasu. Seepärast hoia enne pakkumist raha valmis auto, tasude ja transpordi jaoks ning veendu, et maakler või vedaja teab, kust auto peale võtta."
     },
     "shipping": {
-      "title": "Shipping to Europe",
-      "text": "A car carrier takes the car from the yard to the export port (e.g. New Jersey, Savannah, Houston, Los Angeles). From there it sails in a container (often 3–4 cars together) or on a RoRo ship to a European port – usually 2–3 weeks from the East Coast.\nAt the EU port a customs agent clears the car: you pay duty and import VAT, and then the car is trucked to your address. The choice of port matters – freight, port fees and VAT rates differ between countries.",
-      "link": "Full guide to importing a car from the US"
+      "title": "Transport Euroopasse",
+      "text": "Autoveok viib auto platsilt ekspordisadamasse (nt New Jersey, Savannah, Houston, Los Angeles). Sealt sõidab see konteineris (sageli 3–4 autot koos) või RoRo-laevaga Euroopa sadamasse – idarannikult tavaliselt 2–3 nädalat.\nEL-i sadamas vormistab tolliagent auto: maksad tollimaksu ja impordikäibemaksu ning seejärel tuuakse auto veokiga sinu aadressile. Sadama valik on oluline – prahitasu, sadamatasud ja käibemaksumäärad erinevad riigiti.",
+      "link": "Täielik juhend auto importimiseks USA-st"
     },
     "cost": {
-      "title": "What a Copart car costs in total",
-      "text": "The auction price is only part of the cost. On top come auction fees, transport in the US, ocean freight and insurance, port fees, duty (10%, or 0% for US-built cars with proof of origin), VAT, national taxes, transport in Europe, repair and registration.",
-      "example": "An example from our calculator: a {{model}} bought for {{price}} costs in total, delivered to your door in {{country}}:",
-      "breakdown": "See the full cost breakdown"
+      "title": "Kui palju Copart’i auto kokku maksab",
+      "text": "Oksjonihind on vaid osa kuludest. Lisanduvad oksjonitasud, transport USA-s, merevedu ja kindlustus, sadamatasud, toll (10% või USA-s toodetud autodel päritolutõendiga 0%), käibemaks, riiklikud maksud, transport Euroopas, remont ja registreerimine.",
+      "example": "Näide meie kalkulaatorist: {{price}} eest ostetud {{model}} maksab kokku koos kohaletoimetamisega (sihtriik: {{country}}):",
+      "breakdown": "Vaata kulude täielikku jaotust"
     },
     "mistakes": {
-      "title": "The most common mistakes",
-      "text": "• Bidding without working out the full cost – fees, shipping and taxes can double the auction price.\n• Buying a car with a \"parts only\" title that cannot be registered.\n• Trusting \"Run and Drive\" without checking the history by VIN.\n• No reserve for hidden damage and parts.\n• Counting on 0% duty without proof of origin.\n• Paying late and running up storage fees in the yard."
+      "title": "Levinumad vead",
+      "text": "• Pakkumine ilma kogukulu arvutamata – tasud, transport ja maksud võivad oksjonihinna kahekordistada.\n• „Parts only” title’iga auto ostmine, mida ei saa registreerida.\n• „Run and Drive” märke usaldamine ilma VIN-i järgi ajalugu kontrollimata.\n• Puudub reserv varjatud kahjustuste ja varuosade jaoks.\n• 0% tollile lootmine ilma päritolutõendita.\n• Hilinenud makse ja hoiutasud platsil."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Can I buy a car at Copart without a broker?",
-      "a1": "You can open an account, but a standard account lets you bid on only some cars. Cars with a salvage title in many states require a buyer's licence, which is why most buyers from Europe use a broker.",
-      "q2": "How much are Copart's fees?",
-      "a2": "They depend on the car's price and the account type. For a car of a few thousand dollars the auction fees are usually several hundred to over a thousand dollars, plus the broker's commission. The current tables are on Copart's website.",
-      "q3": "What does \"Run and Drive\" mean?",
-      "a3": "That the car started and moved when it was received at the yard. It does not mean it is in working order or roadworthy.",
-      "q4": "How long does it take to bring a Copart car to Europe?",
-      "a4": "Usually 4–8 weeks from winning the bid: a few days to a week for pickup and transport to the port, 2–3 weeks at sea from the East Coast (longer from California), then clearance and delivery.",
-      "q5": "Can a salvage-title car be registered in Europe?",
-      "a5": "Yes, if after repair it passes the roadworthiness test in your country. Cars with a \"parts only\" or \"non-repairable\" title or a certificate of destruction cannot be registered.",
-      "q6": "How much duty will I pay on a Copart car?",
-      "a6": "As standard, 10% of the customs value (the price with fees plus transport to the EU border). US-built cars can have 0% duty from 1 July 2026 with proof of origin. VAT and national taxes come on top – the calculator works it all out."
+      "title": "Korduma kippuvad küsimused",
+      "q1": "Kas saan Copart’ist osta ilma maaklerita?",
+      "a1": "Konto saad avada, kuid tavakontoga saad pakkuda vaid osale autodest. Salvage-title’iga autode jaoks on paljudes osariikides vaja ostjalitsentsi – seepärast kasutab enamik Euroopa ostjaid maaklerit.",
+      "q2": "Kui suured on Copart’i tasud?",
+      "a2": "Need sõltuvad auto hinnast ja konto tüübist. Mõne tuhande dollari eest autole on oksjonitasud tavaliselt mõnisada kuni üle tuhande dollari, lisaks maakleri vahendustasu. Kehtivad tabelid on Copart’i veebilehel.",
+      "q3": "Mida tähendab „Run and Drive”?",
+      "a3": "Et auto käivitus ja liikus, kui see platsile vastu võeti. See ei tähenda, et auto oleks korras või liikluskõlblik.",
+      "q4": "Kui kaua võtab Copart’i auto toomine Euroopasse?",
+      "a4": "Tavaliselt 4–8 nädalat pärast oksjoni võitmist: mõnest päevast nädalani äraveoks ja transpordiks sadamasse, 2–3 nädalat merel idarannikult (Californiast kauem), seejärel tollivormistus ja kohaletoimetamine.",
+      "q5": "Kas salvage-title’iga autot saab Euroopas registreerida?",
+      "a5": "Jah, kui see pärast remonti läbib ülevaatuse sinu riigis. „Parts only” või „non-repairable” title’iga või lammutustõendiga autosid registreerida ei saa.",
+      "q6": "Kui palju tolli maksan Copart’i auto eest?",
+      "a6": "Tavaliselt 10% tolliväärtusest (hind koos tasudega pluss transport EL-i piirini). USA-s toodetud autodel võib alates 1. juulist 2026 olla päritolutõendiga toll 0%. Lisanduvad käibemaks ja riiklikud maksud – kalkulaator arvutab kõik välja."
     },
-    "disclaimer": "Carglo is not affiliated with Copart Inc. The name Copart is used only to describe the service. Auction rules and fees may change – check them on Copart's website.",
+    "disclaimer": "Carglo ei ole seotud ettevõttega Copart Inc. Nime Copart kasutatakse ainult teenuse kirjeldamiseks. Oksjonite reeglid ja tasud võivad muutuda – kontrolli neid Copart’i veebilehel.",
+    "lot": {
+      "alt": "Auto visand, kahjustatud esiosa märgitud",
+      "caption": "Illustratsioon – selline näeb välja oksjoniloti kaart USA oksjonil. Välju ja märkeid selgitame allpool."
+    },
     "listing": {
-      "title": "How to read a Copart listing",
-      "text": "Every lot has a number and a data sheet. The most important fields:\n• Primary / Secondary damage – the main and additional damage as reported by the insurer (e.g. Front end, Rear end, Side, Flood, Hail, Mechanical).\n• Odometer – mileage in miles marked “Actual” or “Not actual” / “Exempt”; the last two mean the reading cannot be trusted.\n• Est. Retail Value and Est. Repair Cost – the insurer’s estimates; they help gauge the damage but do not replace your own repair quote.\n• Highlights – e.g. “Run and Drive”, “Engine Starts”, “Enhanced Vehicles”.\n• Keys – whether keys are included (replacing them can be expensive).\n• Sale document / title – the document type and the state that issued it.\n• Location and Sale date – the yard you collect the car from and the auction date.\nSave the lot number and VIN – after the sale the listing disappears from public view."
+      "title": "Kuidas lugeda Copart’i kuulutust",
+      "text": "Igal lotil on number ja andmekaart. Olulisimad väljad:\n• Primary / Secondary damage – kindlustusseltsi järgi peamine ja lisakahjustus (nt Front end, Rear end, Side, Flood, Hail, Mechanical).\n• Odometer – läbisõit miilides märkega „Actual” või „Not actual” / „Exempt”; kaks viimast tähendavad, et näitu ei saa usaldada.\n• Est. Retail Value ja Est. Repair Cost – kindlustusseltsi hinnangud; aitavad kahju ulatust hinnata, kuid ei asenda oma remondipakkumist.\n• Highlights – nt „Run and Drive”, „Engine Starts”, „Enhanced Vehicles”.\n• Keys – kas võtmed on olemas (uute tegemine võib olla kallis).\n• Sale document / title – dokumendi tüüp ja selle väljastanud osariik.\n• Location ja Sale date – plats, kust auto ära viid, ja oksjoni kuupäev.\nPane kirja loti number ja VIN – pärast müüki kaob kuulutus avalikust vaatest."
     },
     "bidding": {
-      "title": "How the bidding works",
-      "text": "Bidding has two stages. First comes preliminary bidding – you can enter your maximum amount and the system raises your bid automatically up to that limit. Then there is a live online auction, where the highest bid wins.\nSome cars offer “Buy It Now” – an immediate purchase at the listed price.\nSet your maximum before the auction: subtract auction fees, transport, customs duty, VAT, national taxes and a repair reserve from your budget. Getting carried away in the last seconds is the most common reason for overpaying."
+      "title": "Kuidas pakkumine käib",
+      "text": "Pakkumisel on kaks etappi. Kõigepealt toimub eelpakkumine (preliminary bidding) – saad sisestada oma maksimaalse summa ja süsteem tõstab pakkumist automaatselt selle piirini. Seejärel toimub otseülekandes veebioksjon, mille võidab kõrgeim pakkumine.\nMõnel autol on võimalus „Buy It Now” – kohene ost näidatud hinnaga.\nPane maksimum paika enne oksjonit: lahuta eelarvest oksjonitasud, transport, toll, käibemaks, riiklikud maksud ja remondireserv. Emotsioonid viimastel sekunditel on kõige sagedasem ülemaksmise põhjus."
     },
     "repair": {
-      "title": "Repair – in the USA or in Europe",
-      "text": "A damaged car can be repaired while still in the USA or after it arrives. Repairing in the USA can be cheaper where used parts are easy to find, but it is harder to supervise from a distance. Repairing in Europe gives you control over quality, although some original parts for US-market cars have to be imported.\nWherever it is repaired, the car must pass a roadworthiness test in your country, and after structural damage it is worth keeping the repair paperwork and photos – they help with registration and resale."
+      "title": "Remont – USA-s või Euroopas",
+      "text": "Avariilise auto saab parandada veel USA-s või alles pärast importi. Remont USA-s võib olla odavam tänu kasutatud varuosadele, kuid seda on eemalt raske kontrollida. Remont Euroopas annab sulle kontrolli kvaliteedi üle, kuid osa USA turu autode originaalvaruosi tuleb tellida.\nKus iganes autot parandatakse, peab see sinu riigis ülevaatuse läbima ning pärast kerekahjustusi tasub remondiarved ja fotod alles hoida – need aitavad registreerimisel ja müügil."
     },
     "flow": {
-      "title": "Buying on Copart from Europe – step by step",
+      "title": "Ostmine Copart’ist Euroopast – samm-sammult",
       "s1": {
-        "title": "Choosing a car",
-        "text": "listings, photos and title type",
-        "time": "1–7 days"
+        "title": "Auto valik",
+        "text": "kuulutused, fotod ja title’i tüüp",
+        "time": "1–7 päeva"
       },
       "s2": {
-        "title": "VIN check",
-        "text": "damage history, mileage, previous auctions",
-        "time": "1 day"
+        "title": "VIN-i kontroll",
+        "text": "kahjustuste ajalugu, läbisõit, varasemad oksjonid",
+        "time": "1 päev"
       },
       "s3": {
-        "title": "Bidding and payment",
-        "text": "through a broker; payment within a few business days",
-        "time": "2–4 days"
+        "title": "Pakkumine ja makse",
+        "text": "maakleri kaudu; makse mõne tööpäeva jooksul",
+        "time": "2–4 päeva"
       },
       "s4": {
-        "title": "Transport to the port",
-        "text": "truck from the Copart yard to the export port",
-        "time": "3–10 days"
+        "title": "Transport sadamasse",
+        "text": "autoveok Copart’i platsilt ekspordisadamasse",
+        "time": "3–10 päeva"
       },
       "s5": {
-        "title": "Ocean freight",
-        "text": "container or RoRo to an EU port",
-        "time": "2–6 weeks"
+        "title": "Merevedu",
+        "text": "konteiner või RoRo EL-i sadamasse",
+        "time": "2–6 nädalat"
       },
       "s6": {
-        "title": "EU customs clearance",
-        "text": "duty, import VAT, customs documents",
-        "time": "2–5 days"
+        "title": "Tollivormistus EL-is",
+        "text": "toll, impordikäibemaks, tollidokumendid",
+        "time": "2–5 päeva"
       },
       "s7": {
-        "title": "Registration",
-        "text": "national taxes, inspection, translations",
-        "time": "1–4 weeks"
+        "title": "Registreerimine",
+        "text": "riiklikud maksud, ülevaatus, tõlked",
+        "time": "1–4 nädalat"
       }
     },
     "costbar": {
-      "title": "Cost breakdown",
-      "price": "Car incl. auction fees",
-      "transport": "Transport and freight",
-      "duty": "Customs duty",
-      "vat": "Import VAT",
-      "national": "National taxes",
-      "registration": "Registration and other"
-    },
-    "lot": {
-      "alt": "Sketch of a car with the damaged front marked",
-      "caption": "Illustration – what a lot card looks like at a US auction. We explain the fields and labels below."
+      "title": "Kulude struktuur",
+      "price": "Auto koos oksjonitasudega",
+      "transport": "Transport ja prahitasu",
+      "duty": "Toll",
+      "vat": "Impordikäibemaks",
+      "national": "Riiklikud maksud",
+      "registration": "Registreerimine ja muu"
     }
   },
   "vinCompare": {
-    "eyebrow": "Comparison",
-    "title": "VIN history reports – which service to choose for a car from the USA or Europe",
-    "lead": "We compared the most popular vehicle history report services: data coverage, US damage and title information, photos from earlier listings and prices. At the end – how to choose a report for a specific car.",
-    "checked": "Prices and coverage checked: {{date}}. Prices are indicative and may change.",
-    "eu": "EU",
+    "eyebrow": "Võrdlus",
+    "title": "VIN-ajalooraportid – millise teenuse valida USA-st või Euroopast pärit autole",
+    "lead": "Võrdlesime populaarseimaid sõiduki ajalooraportite teenuseid: andmete katvus, USA kahjustuste ja title’i andmed, varasemate kuulutuste fotod ja hinnad. Lõpus – kuidas valida raport konkreetsele autole.",
+    "checked": "Hinnad ja ulatus kontrollitud: {{date}}. Hinnad on ligikaudsed ja võivad muutuda.",
+    "eu": "EL",
     "verdict": {
       "us": {
-        "for": "Car from a US auction",
-        "pick": "AutoCheck or Carfax",
-        "why": "The deepest US data: damage, titles, auction and service history."
+        "for": "Auto USA oksjonilt",
+        "pick": "AutoCheck või Carfax",
+        "why": "Põhjalikumad USA andmed: kahjustused, title’id, oksjonite ja hoolduse ajalugu."
       },
       "eu": {
-        "for": "Car bought in Europe",
-        "pick": "carVertical or autoDNA",
-        "why": "Data from many EU countries, report in your language."
+        "for": "Euroopast ostetud auto",
+        "pick": "carVertical või autoDNA",
+        "why": "Andmed paljudest EL-i riikidest, raport sinu keeles."
       },
       "budget": {
-        "for": "Quick, cheap check",
+        "for": "Kiire ja odav kontroll",
         "pick": "VinAudit",
-        "why": "Official NMVTIS title and total-loss data for a few dollars."
+        "why": "Ametlikud NMVTIS-andmed title’i ja täiskahjude kohta mõne dollari eest."
       }
     },
     "table": {
-      "title": "At a glance",
-      "service": "Service",
-      "regions": "Data coverage",
-      "usTitles": "US titles and total losses",
-      "photos": "Photos from history",
-      "price": "Report price",
-      "note": "“Sometimes” – photos appear when the service has them (e.g. from earlier listings or auctions). Coverage depends on the specific VIN."
+      "title": "Lühidalt",
+      "service": "Teenus",
+      "regions": "Andmete katvus",
+      "usTitles": "USA title’id ja täiskahjud",
+      "photos": "Fotod ajaloost",
+      "price": "Raporti hind",
+      "note": "„Mõnikord” – fotod ilmuvad, kui teenusel need on (nt varasematest kuulutustest või oksjonitelt). Andmete ulatus sõltub konkreetsest VIN-ist."
     },
     "value": {
-      "yes": "yes",
-      "partial": "partly",
-      "no": "no",
-      "sometimes": "sometimes",
-      "unknown": "no independent data"
+      "yes": "jah",
+      "partial": "osaliselt",
+      "no": "ei",
+      "sometimes": "mõnikord",
+      "unknown": "sõltumatud andmed puuduvad"
     },
-    "providers": "Services one by one",
-    "visit": "Go to {{name}}",
-    "pros": "Pros",
-    "cons": "Cons",
-    "bestFor": "Best for:",
+    "providers": "Teenused ükshaaval",
+    "visit": "Mine: {{name}}",
+    "pros": "Plussid",
+    "cons": "Miinused",
+    "bestFor": "Kellele:",
     "p": {
       "carvertical": {
-        "desc": "A Lithuanian service operating in many European countries and in the USA. It claims over 1,000 data sources – registries, insurers, workshops, police. For US cars it shows title brands such as salvage, rebuilt and junk.",
-        "pros": "• European and US data in one report.\n• Report and support in many EU languages.\n• Photos from history when available.",
-        "cons": "• More expensive than US budget services.\n• Less US data than Carfax or AutoCheck.",
-        "best": "buyers in Europe who want one report for a car from the USA or the EU."
+        "desc": "Leedu teenus, mis tegutseb paljudes Euroopa riikides ja USA-s. Väidab, et kasutab üle 1000 andmeallika – registrid, kindlustusseltsid, töökojad, politsei. USA autode puhul näitab muu hulgas title’i märkeid (salvage, rebuilt, junk).",
+        "pros": "• Euroopa ja USA andmed ühes raportis.\n• Raport ja klienditugi paljudes EL-i keeltes.\n• Fotod ajaloost, kui need on olemas.",
+        "cons": "• Kallim kui USA soodsad teenused.\n• Vähem USA andmeid kui Carfaxil või AutoCheckil.",
+        "best": "Euroopa ostjatele, kes soovivad ühte raportit USA-st või EL-ist pärit autole."
       },
       "autodna": {
-        "desc": "A Polish service, strongest in Poland and Central and Eastern Europe. Its database covers dozens of countries in Europe and North America; reports include mileage, damage and – when available – photos.",
-        "pros": "• Very good data from Poland and the region.\n• Cheaper than carVertical, multi-report bundles.\n• Free preliminary check whether data exists.",
-        "cons": "• Less Western European data than competitors.\n• For US cars, add a US source as well.",
-        "best": "cars from Poland and neighbouring countries, and as a second source."
+        "desc": "Poola teenus, kõige tugevam Poolas ning Kesk- ja Ida-Euroopas. Andmebaas katab kümneid Euroopa ja Põhja-Ameerika riike; raportid sisaldavad muu hulgas läbisõitu, kahjustusi ja – kui need on – fotosid.",
+        "pros": "• Väga head andmed Poolast ja piirkonnast.\n• Odavam kui carVertical, mitme raporti paketid.\n• Tasuta eelkontroll, kas andmeid leidub.",
+        "cons": "• Vähem Lääne-Euroopa andmeid kui konkurentidel.\n• USA auto puhul lisa ka USA allikas.",
+        "best": "Poolast ja naaberriikidest pärit autodele ning teise allikana."
       },
       "carfax": {
-        "desc": "The best-known service in the USA. It has broad access to insurer, police and workshop records, so it shows accidents and service history best.",
-        "pros": "• The deepest US accident and service history.\n• Recognised by buyers at resale.",
-        "cons": "• The most expensive single report.\n• Weak for cars from outside the USA and Canada.",
-        "best": "more expensive US cars where service history matters."
+        "desc": "USA tuntuim teenus. Tal on lai juurdepääs kindlustusseltside, politsei ja töökodade andmetele, seega näitab ta õnnetusi ja hooldusajalugu kõige paremini.",
+        "pros": "• USA põhjalikum õnnetuste ja hoolduse ajalugu.\n• Ostjad tunnevad seda edasimüügil.",
+        "cons": "• Kalleim üksikraport.\n• Nõrk väljaspool USA-d ja Kanadat pärit autode puhul.",
+        "best": "kallimatele USA autodele, mille puhul hooldusajalugu loeb."
       },
       "autocheck": {
-        "desc": "A service owned by Experian. Particularly strong on auction history – used by dealers and auction houses. It also gives an AutoCheck Score.",
-        "pros": "• Very good US auction data.\n• Cheaper than Carfax.",
-        "cons": "• Fewer service details than Carfax.\n• US cars only.",
-        "best": "cars from Copart and IAAI auctions."
+        "desc": "Experianile kuuluv teenus. Eriti tugev oksjonite ajaloos – seda kasutavad edasimüüjad ja oksjonimajad. Annab ka AutoCheck Score’i hinnangu.",
+        "pros": "• Väga head andmed USA oksjonite kohta.\n• Odavam kui Carfax.",
+        "cons": "• Vähem hoolduse üksikasju kui Carfaxil.\n• Ainult USA autod.",
+        "best": "Copart’i ja IAAI oksjonite autodele."
       },
       "vinaudit": {
-        "desc": "An officially approved data provider for the government NMVTIS database. It shows title brands, total losses, odometer readings and theft records.",
-        "pros": "• Very cheap, bundles even cheaper.\n• Official NMVTIS title and total-loss data.",
-        "cons": "• Few details on minor accidents and servicing.\n• No photos.",
-        "best": "a quick first check of many cars before bidding."
+        "desc": "Riikliku NMVTIS-andmebaasi ametlikult heakskiidetud andmepakkuja. Näitab title’i märkeid, täiskahjusid, läbisõidunäite ja vargusandmeid.",
+        "pros": "• Väga odav, paketid veel odavamad.\n• Ametlikud NMVTIS-andmed title’i ja täiskahjude kohta.",
+        "cons": "• Vähe üksikasju väiksemate õnnetuste ja hoolduse kohta.\n• Fotosid pole.",
+        "best": "paljude autode kiireks esmaseks kontrolliks enne pakkumist."
       },
       "automano": {
-        "desc": "A new low-cost VIN report service. We have not yet found independent reviews or a detailed description of its data sources – treat it as a cheap first check.",
-        "pros": "• Low report price.",
-        "cons": "• Few independent reviews.\n• Data sources not disclosed.",
-        "best": "a cheap first check – for a more expensive car, also order a report from a better-known service."
+        "desc": "Uus soodne VIN-raportite teenus. Sõltumatuid arvustusi ega andmeallikate täpset kirjeldust me veel ei leidnud – käsitle seda odava esmase kontrollina.",
+        "pros": "• Madal raporti hind.",
+        "cons": "• Vähe sõltumatuid arvustusi.\n• Ei avalda oma andmeallikaid.",
+        "best": "odavaks esmaseks kontrolliks – kallima auto puhul telli raport ka tuntumalt teenuselt."
       }
     },
     "how": {
-      "title": "How we compared",
-      "text": "We reviewed the services’ descriptions and price lists as well as independent comparisons from October 2026. We focused on what matters most when importing a car: where the data comes from, whether the report shows US titles and total losses, whether it includes photos from history and how much a single report costs.\nWe did not test the reports on the same VINs – coverage depends on the specific car, so for a more expensive car it is worth ordering two reports from different services."
+      "title": "Kuidas me võrdlesime",
+      "text": "Vaatasime läbi teenuste kirjeldused ja hinnakirjad ning 2026. aasta oktoobri sõltumatud võrdlused. Keskendusime sellele, mis impordil kõige olulisem: kust andmed pärinevad, kas raport näitab USA title’eid ja täiskahjusid, kas see sisaldab fotosid ajaloost ja kui palju üks raport maksab.\nMe ei testinud raporteid samade VIN-idega – andmete ulatus sõltub konkreetsest autost, seega tasub kallima auto puhul tellida kaks raportit eri teenustelt."
     },
     "free": {
-      "title": "What you can check for free",
-      "text": "Before paying for a report, check for free:\n• NICB VINCheck – whether the car was reported stolen or a total loss (USA).\n• NHTSA Recalls – open recalls for the VIN.\n• MOT history on gov.uk – for cars from the UK.\n• unofficial Copart and IAAI auction archives – sometimes show photos and the price from an earlier sale; they are not affiliated with the auctions and may disappear.\nOur free VIN decoder also reads the make, model, year, engine and country of manufacture."
+      "title": "Mida saab tasuta kontrollida",
+      "text": "Enne raporti eest maksmist kontrolli tasuta:\n• NICB VINCheck – kas auto on teatatud varastatuks või täiskahjuks (USA).\n• NHTSA Recalls – VIN-i avatud tagasikutsed.\n• MOT-ajalugu gov.uk lehel – Ühendkuningriigist pärit autodele.\n• Copart’i ja IAAI oksjonite mitteametlikud arhiivid – näitavad mõnikord varasema müügi fotosid ja hinda; need pole oksjonitega seotud ja võivad kaduda.\nMeie tasuta VIN-dekooder loeb ka välja margi, mudeli, aasta, mootori ja tootjariigi."
     },
     "read": {
-      "title": "How to read a report",
-      "text": "• Compare mileage readings over the years – a drop means a rolled-back odometer.\n• Look for title brands: salvage, rebuilt, flood, junk.\n• Note the registration states – cars from Florida, Texas and Louisiana more often have flood damage.\n• Several auctions in a short time suggest the car was hard to sell.\n• No record does not mean no damage – a report only shows what was reported."
+      "title": "Kuidas raportit lugeda",
+      "text": "• Võrdle läbisõitu aastate kaupa – langus tähendab tagasi keritud näitu.\n• Otsi title’i märkeid: salvage, rebuilt, flood, junk.\n• Pane tähele registreerimisosariike – Florida, Texase ja Louisiana autodel on sagedamini üleujutuskahjustusi.\n• Mitu oksjonit lühikese aja jooksul viitab sellele, et autot oli raske müüa.\n• Kirje puudumine ei tähenda kahju puudumist – raport näitab vaid teatatut."
     },
     "choose": {
-      "title": "Which report to choose",
-      "text": "• Car from a US auction (Copart, IAAI): first the free NICB and the cheap VinAudit, then AutoCheck or Carfax before bidding on a more expensive car.\n• Car from the USA when you want one report in your language: carVertical.\n• Car from Poland or neighbouring countries: autoDNA, with carVertical as a second source.\n• Car from the UK: free MOT history plus a report from a European service.\nFor a car worth tens of thousands, two reports from different services cost a fraction of a possible loss."
+      "title": "Millise raporti valida",
+      "text": "• Auto USA oksjonilt (Copart, IAAI): kõigepealt tasuta NICB ja odav VinAudit ning enne kallimale autole pakkumist AutoCheck või Carfax.\n• Auto USA-st, kui soovid ühte raportit oma keeles: carVertical.\n• Auto Poolast või naaberriikidest: autoDNA, teise allikana carVertical.\n• Auto Ühendkuningriigist: tasuta MOT-ajalugu pluss Euroopa teenuse raport.\nKümnete tuhandete eurode väärtuses auto puhul maksavad kaks raportit eri teenustelt murdosa võimalikust kahjust."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Which VIN report is best for a car from the USA?",
-      "a1": "For a car from a US auction, AutoCheck (auction history) and Carfax (accidents and servicing) give the most data. For a quick title and total-loss check, the cheaper VinAudit is enough.",
-      "q2": "Does carVertical check cars from the USA?",
-      "a2": "Yes – according to the service, the report includes US title brands (salvage, rebuilt, junk). Its US coverage is, however, smaller than that of US services.",
-      "q3": "autoDNA or carVertical – which is better?",
-      "a3": "autoDNA is stronger in Poland and Central and Eastern Europe and usually cheaper; carVertical has wider coverage in Western Europe and the USA. For a more expensive car, check both.",
-      "q4": "Will a report show photos from a Copart auction?",
-      "a4": "Sometimes – some reports include photos from earlier listings when the service has them. No service guarantees it. Save the photos of the current auction yourself, because the page disappears after the sale.",
-      "q5": "Is a free VIN report enough?",
-      "a5": "Free databases (NICB, NHTSA) show theft, total loss and recalls, but not the full accident and mileage history. A paid report is usually needed before deciding to buy.",
-      "q6": "Do you earn from these links?",
-      "a6": "For some services, yes – such links are marked as partner links. This does not affect what we recommend: the ranking is based on data coverage, not commission."
+      "title": "Korduma kippuvad küsimused",
+      "q1": "Milline VIN-raport on USA autole parim?",
+      "a1": "USA oksjoniauto puhul annavad kõige rohkem andmeid AutoCheck (oksjonite ajalugu) ja Carfax (õnnetused ja hooldus). Title’i ja täiskahjude kiireks kontrolliks piisab odavamast VinAuditist.",
+      "q2": "Kas carVertical kontrollib USA autosid?",
+      "a2": "Jah – teenuse sõnul sisaldab raport muu hulgas USA title’i märkeid (salvage, rebuilt, junk). USA katvus on siiski väiksem kui USA teenustel.",
+      "q3": "autoDNA või carVertical – kumb on parem?",
+      "a3": "autoDNA on tugevam Poolas ning Kesk- ja Ida-Euroopas ja tavaliselt odavam; carVerticalil on laiem katvus Lääne-Euroopas ja USA-s. Kallima auto puhul tasub kontrollida mõlemat.",
+      "q4": "Kas raport näitab Copart’i oksjoni fotosid?",
+      "a4": "Mõnikord – mõned raportid sisaldavad varasemate kuulutuste fotosid, kui teenusel need on. Ükski seda ei garanteeri. Salvesta praeguse oksjoni fotod ise, sest pärast müüki leht kaob.",
+      "q5": "Kas tasuta VIN-raportist piisab?",
+      "a5": "Tasuta andmebaasid (NICB, NHTSA) näitavad vargust, täiskahju ja tagasikutseid, kuid mitte täielikku õnnetuste ja läbisõidu ajalugu. Ostuotsuseks on tavaliselt vaja tasulist raportit.",
+      "q6": "Kas teenite nende linkidega raha?",
+      "a6": "Mõne teenuse puhul jah – sellised lingid on märgitud partnerlinkidena. See ei mõjuta meie soovitusi: järjestus põhineb andmete katvusel, mitte vahendustasul."
     },
-    "disclaimer": "Carglo is not affiliated with the services described. Names belong to their owners. Prices and coverage come from the services’ descriptions and comparisons from October 2026 – check the current offer before buying.",
-    "decoder": "Free VIN decoder",
+    "disclaimer": "Carglo ei ole kirjeldatud teenustega seotud. Nimed kuuluvad nende omanikele. Hinnad ja ulatus pärinevad teenuste kirjeldustest ja 2026. aasta oktoobri võrdlustest – kontrolli enne ostu kehtivat pakkumist.",
+    "decoder": "Tasuta VIN-dekooder",
     "mock": {
-      "title": "Vehicle history report",
-      "r1": "First registration – Florida",
-      "r2": "Odometer reading: 28,400 mi",
-      "r3": "Damage: front end, airbags deployed",
-      "r4": "Title changed to SALVAGE",
-      "r5": "Auction – 3 photos before repair",
-      "caption": "Illustration – what a history report typically looks like. Coverage depends on the service and the VIN."
+      "title": "Sõiduki ajalooraport",
+      "r1": "Esmane registreerimine – Florida",
+      "r2": "Läbisõidunäit: 28 400 miili",
+      "r3": "Kahjustus: esiosa, turvapadjad avanesid",
+      "r4": "Title muudetud: SALVAGE",
+      "r5": "Oksjon – 3 fotot enne remonti",
+      "caption": "Illustratsioon – selline näeb ajalooraport tavaliselt välja. Andmete ulatus sõltub teenusest ja VIN-ist."
     }
   }
 }
