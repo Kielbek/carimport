@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: model-photos-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
@@ -29,4 +33,5 @@ jobs:
           git add frontend/tools/models.json frontend/public/images/models
           git diff --cached --quiet && { echo "nothing new"; exit 0; }
           git commit -m "Model photos from Wikimedia Commons"
-          git push
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin HEAD:"$GITHUB_REF_NAME"
