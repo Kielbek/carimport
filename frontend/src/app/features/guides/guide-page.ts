@@ -12,6 +12,7 @@ import { Icon } from '../../shared/icon/icon';
 import { IconName } from '../../shared/icon/icons';
 import { COUNTRY_FACTS } from './country-facts';
 import { GUIDE_MODELS, MODEL_EU, MODEL_EXAMPLES, MODEL_EXAMPLES_DATE } from './model-data.generated';
+import { VinCta } from '../../shared/vin-cta/vin-cta';
 import { ModelDetails } from './model-details';
 import { OriginDeepGuide } from './origin-deep-guide';
 import { GuideModel, ModelExample, ModelPhoto } from './model-types';
@@ -37,7 +38,7 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
  */
 @Component({
   selector: 'app-guide-page',
-  imports: [RouterLink, TranslatePipe, Flag, Icon, ModelDetails, OriginDeepGuide],
+  imports: [RouterLink, TranslatePipe, Flag, Icon, ModelDetails, OriginDeepGuide, VinCta],
   template: `
     @if (ref(); as r) {
       <article class="site max-w-5xl py-10 lg:py-14">
@@ -143,6 +144,7 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
               </div>
 
               <app-origin-deep-guide [origin]="$any(r.item)" />
+              <div class="mt-10"><app-vin-cta placement="origin" /></div>
             }
           }
 

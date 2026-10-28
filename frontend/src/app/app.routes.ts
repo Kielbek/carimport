@@ -26,6 +26,8 @@ const terms = () => import('./features/legal/terms-page').then((m) => m.TermsPag
 const taxes = () => import('./features/taxes/taxes-page').then((m) => m.TaxesPage);
 const method = () => import('./features/method/method-page').then((m) => m.MethodPage);
 const glossary = () => import('./features/glossary/glossary-page').then((m) => m.GlossaryPage);
+const vin = () => import('./features/vin/vin-page').then((m) => m.VinPage);
+const copart = () => import('./features/copart/copart-page').then((m) => m.CopartPage);
 const contact = () => import('./features/contact/contact-page').then((m) => m.ContactPage);
 
 /** Every language's slug resolves to the same page, e.g. /pl/kalkulator, /en/calculator, /de/rechner. */
@@ -63,6 +65,8 @@ export const routes: Routes = [
           ...localized(SLUGS.method, method, 'method'),
           ...localized(SLUGS.glossary, glossary, 'glossary'),
           ...localized(SLUGS.contact, contact, 'contact'),
+          ...localized(SLUGS.vin, vin, 'vin'),
+          ...localized(SLUGS.copart, copart, 'copart'),
           ...guides,
           {
             path: 'report/:orderId',

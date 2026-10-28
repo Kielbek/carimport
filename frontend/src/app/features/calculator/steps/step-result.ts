@@ -6,6 +6,7 @@ import { reportPrice } from '../../../core/currency/currencies';
 import { CountryNamePipe } from '../../../core/format/country-name.pipe';
 import { AnalyticsService } from '../../../core/analytics/analytics.service';
 import { LanguageService } from '../../../core/i18n/language.service';
+import { VinCta } from '../../../shared/vin-cta/vin-cta';
 import { EstimateEmail } from '../estimate-email';
 import { Icon } from '../../../shared/icon/icon';
 import { CalculatorStore } from '../calculator.store';
@@ -20,7 +21,7 @@ import { SITE } from '../../../core/site.config';
  */
 @Component({
   selector: 'app-step-result',
-  imports: [TranslatePipe, Icon, CountryNamePipe, EstimateEmail],
+  imports: [TranslatePipe, Icon, CountryNamePipe, EstimateEmail, VinCta],
   template: `
     @if (store.calculating()) {
       <!-- skeleton of the result while the quote is calculated -->
@@ -151,6 +152,7 @@ import { SITE } from '../../../core/site.config';
 
       @if (r.quoteId) {
         <app-estimate-email [quoteId]="r.quoteId" />
+        <div class="mt-6"><app-vin-cta [vin]="s().vin" placement="result" /></div>
       }
 
       <!-- locked: everything else, by name only -->

@@ -18,7 +18,8 @@ export type AnalyticsEvent =
   | 'checkout_started'
   | 'purchase'
   | 'partner_lead_sent'
-  | 'contact_sent';
+  | 'contact_sent'
+  | 'vin_partner_click';
 
 const CONSENT_KEY = 'carimport.consent';
 

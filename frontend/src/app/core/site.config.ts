@@ -42,6 +42,12 @@ export const SITE = {
    * *.google-analytics.com) when switching it on.
    */
   analytics: { provider: null as 'plausible' | 'ga4' | null, id: '' },
+  /**
+   * Vehicle history report partner, linked from the VIN page, the Copart guide, the origin guides and the result.
+   * Swap the provider here (name + affiliate URL; "{vin}" in the URL is replaced with the car's VIN when known).
+   * null hides every partner link. Links carry rel="sponsored" and the page discloses the referral.
+   */
+  vinPartner: { name: 'Automano', url: 'https://automano.com/?aff=cargloapp' } as { name: string; url: string } | null,
   /** Last review of tax rules, tariffs and freight rates - shown on the methodology page. */
   ratesReviewed: '2026-10-25',
   /** Date and version of the terms; bump when the text changes (stored with every order). */

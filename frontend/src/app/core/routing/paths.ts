@@ -1,6 +1,6 @@
 import { Lang } from '../i18n/language.service';
 
-export type Page = 'home' | 'calculator' | 'about' | 'privacy' | 'terms' | 'taxes' | 'method' | 'glossary' | 'contact';
+export type Page = 'home' | 'calculator' | 'about' | 'privacy' | 'terms' | 'taxes' | 'method' | 'glossary' | 'contact' | 'vin' | 'copart';
 
 /** Localized URL slugs - "/pl/kalkulator" ranks for Polish queries far better than "/pl/calculator". */
 export const SLUGS: Record<Exclude<Page, 'home'>, Record<Lang, string>> = {
@@ -58,6 +58,20 @@ export const SLUGS: Record<Exclude<Page, 'home'>, Record<Lang, string>> = {
     et: 'kontakt', fi: 'yhteystiedot', fr: 'contact', hr: 'kontakt', hu: 'kapcsolat', it: 'contatti', lt: 'kontaktai',
     lv: 'kontakti', nl: 'contact', pl: 'kontakt', pt: 'contacto', ro: 'contact', sk: 'kontakt', sl: 'kontakt',
     sv: 'kontakt', uk: 'kontakty',
+  },
+  /** VIN decoder and vehicle history check. */
+  vin: {
+    bg: 'proverka-vin', cs: 'kontrola-vin', da: 'vin-tjek', de: 'vin-abfrage', el: 'elegchos-vin', en: 'vin-check',
+    es: 'comprobar-vin', et: 'vin-kontroll', fi: 'vin-tarkistus', fr: 'verifier-vin', hr: 'provjera-vin',
+    hu: 'alvazszam-ellenorzes', it: 'controllo-vin', lt: 'vin-patikra', lv: 'vin-parbaude', nl: 'vin-check',
+    pl: 'sprawdz-vin', pt: 'verificar-vin', ro: 'verificare-vin', sk: 'kontrola-vin', sl: 'preverjanje-vin',
+    sv: 'vin-kontroll', uk: 'perevirka-vin',
+  },
+  /** Buying at Copart from Europe. */
+  copart: {
+    bg: 'copart', cs: 'copart', da: 'copart', de: 'copart', el: 'copart', en: 'copart', es: 'copart', et: 'copart',
+    fi: 'copart', fr: 'copart', hr: 'copart', hu: 'copart', it: 'copart', lt: 'copart', lv: 'copart', nl: 'copart',
+    pl: 'copart', pt: 'copart', ro: 'copart', sk: 'copart', sl: 'copart', sv: 'copart', uk: 'copart',
   },
 };
 

@@ -510,7 +510,9 @@
     "method": "Ako počítame",
     "toTop": "Nahor",
     "glossary": "Slovník",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "vin": "VIN check",
+    "copart": "Copart – how to buy"
   },
   "footer": {
     "about": "Nezávislá kalkulačka nákladov na dovoz áut z krajín mimo EÚ. Autá nepredávame ani nedovážame – počítame, koľko naozaj stoja.",
@@ -875,6 +877,14 @@
     "contact": {
       "title": "Kontakt – napíšte nám | Carglo",
       "description": "Otázka ku kalkulácii, správe, platbe alebo spolupráci? Napíšte tímu Carglo – odpovedáme zvyčajne do jedného pracovného dňa."
+    },
+    "vin": {
+      "title": "VIN check for US cars – free VIN decoder and vehicle history | Carglo",
+      "description": "Enter a VIN and check the make, model, year, engine and country of manufacture for free. Learn how to read a VIN and where to check damage and mileage history."
+    },
+    "copart": {
+      "title": "Copart: how to buy a car from the US in Europe – fees, broker, shipping | Carglo",
+      "description": "A Copart guide for buyers in Europe: account or broker, auction fees, title types, checking the car, payment, shipping and the full cost of importing."
     }
   },
   "privacy": {
@@ -1825,7 +1835,7 @@
     },
     "independence": {
       "title": "Nezávislosť",
-      "text": "Carglo autá nepredáva, nekupuje ani nedováža a neberie od dovozcov províziu za výsledok. Zarábame na platenom PDF reporte. Vidíte chybu alebo zastaranú sadzbu? Napíšte na {{email}} – opravíme ju."
+      "text": "Carglo autá nepredáva, nekupuje ani nedováža a neberie od dovozcov províziu za výsledok. Zarábame na platenom PDF reporte. Vidíte chybu alebo zastaranú sadzbu? Napíšte na {{email}} – opravíme ju.\nNa stránkach o kontrole VIN uvádzame partnerský odkaz na službu reportov o histórii vozidla – ak ju využijete, môžeme získať províziu. Na výpočty to nemá vplyv."
     },
     "faq": {
       "title": "Časté otázky",
@@ -1934,5 +1944,150 @@
       "text": "Odpovieme na {{email}}, zvyčajne do jedného pracovného dňa.",
       "cta": "Späť na kalkulačku"
     }
+  },
+  "vinCta": {
+    "title": "Before you bid – check the car's history by VIN",
+    "text": "A history report shows earlier damage, mileage and past auctions, among other things. It costs a fraction of even a small repair.",
+    "button": "Check the VIN at {{partner}}",
+    "label": "Partner link – Carglo may earn a commission. It does not affect our calculations."
+  },
+  "vinPage": {
+    "eyebrow": "Tool and guide",
+    "title": "Check the VIN of a car from the US, Canada or Europe",
+    "lead": "Enter a VIN and we decode the make, model, year, engine and country of manufacture for free. Below we explain how to read a VIN yourself and where to check damage and mileage history before you buy.",
+    "tool": {
+      "title": "Free VIN decoder",
+      "lead": "Data from the US vehicle database (NHTSA) and the EPA, and – for cars from outside North America – from the VIN itself.",
+      "button": "Check VIN",
+      "year": "Model year",
+      "engine": "Engine",
+      "power": "Power",
+      "fuel": "Fuel",
+      "body": "Body",
+      "check": "Check digit",
+      "checkOk": "valid",
+      "checkBad": "does not match – possible typo",
+      "duty": "Car built in {{country}} – with proof of origin it may qualify for 0% duty instead of 10%.",
+      "dutyMore": "How it works",
+      "calculate": "Calculate the import cost of this car",
+      "note": "The decoder shows the technical data encoded in the VIN and in manufacturers' databases. It does not show damage or mileage history – that is what a vehicle history report is for."
+    },
+    "what": {
+      "title": "What a VIN is",
+      "text": "A VIN (Vehicle Identification Number) is the 17-character number the manufacturer gives every car. It never contains the letters I, O or Q, so they are not mistaken for the digits 1 and 0.\nYou will find the VIN on a plate by the windscreen (driver's side), on the door pillar, in the documents (the title in the US, the registration certificate in the EU) and in the auction listing. Before buying, compare the VIN in the listing with the one in the car's photos – a difference is a warning sign."
+    },
+    "read": {
+      "title": "How to read a VIN, character by character",
+      "text": "Every position in a VIN means something. The most useful are the first character (country of manufacture), the ninth (check digit) and the tenth (model year).",
+      "p1": "Country of manufacture (e.g. 1, 4, 5 – US, W – Germany, J – Japan)",
+      "p2": "Manufacturer – together with the first character it forms the WMI code",
+      "p4": "Model, body, engine, safety systems",
+      "p9": "Check digit – mandatory in North America, catches typos",
+      "p10": "Model year",
+      "p11": "Plant where the car was assembled",
+      "p12": "The car's serial number",
+      "countryTitle": "First character – country of manufacture",
+      "yearTitle": "Tenth character – model year"
+    },
+    "report": {
+      "title": "What a vehicle history report shows",
+      "text": "The decoder tells you what the car is. A history report tells you what happened to it. It usually includes:\n• damage and incidents reported by insurers, including total losses,\n• the title type (clean, salvage, rebuilt, flood) and its changes between states,\n• odometer readings – they reveal a rolled-back odometer,\n• earlier auctions, often with photos of the car before repair,\n• thefts, the number of owners and registration states.\nFor an auction car, a report usually costs a fraction of even a small repair – and it can stop you buying a flood car or one with serious structural damage."
+    },
+    "free": {
+      "title": "Free sources of VIN information",
+      "text": "Some information you can check for free in official databases:",
+      "nicb": "The US insurers' database – whether the car was reported stolen or as a total loss (salvage).",
+      "nhtsa": "Open safety recalls for the VIN – worth fixing before shipping or right after.",
+      "nmvtis": "The official US register of titles and total losses; it lists approved report providers.",
+      "mot": "For cars from the UK: the full MOT test history with the mileage from each year."
+    },
+    "flags": {
+      "title": "Warning signs",
+      "text": "• The VIN in the listing differs from the VIN in the photos of the plate or windscreen.\n• The check digit does not match (on a North American car).\n• The model year in the VIN does not match the listing.\n• The title is branded flood, water damage or \"not actual mileage\".\n• The car was offered at auction several times in a short period.\n• The VIN plate looks removed, glued on or damaged – a possible clone."
+    },
+    "japan": {
+      "title": "Cars from Japan – a chassis number instead of a VIN",
+      "text": "Cars from the Japanese market (JDM) often have no 17-character VIN, only a shorter chassis number, e.g. JZA80-0012345. A VIN decoder cannot read it.\nThe history of such a car is checked on the auction sheet and the export certificate – a good exporter translates them before you buy."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "q1": "Is a VIN check free?",
+      "a1": "Decoding the technical data from the VIN (make, model, year, engine, country of manufacture) is free here. A full history report – damage, mileage, past auctions – is paid, from report providers.",
+      "q2": "What can I tell from the VIN alone?",
+      "a2": "The country of manufacture, the manufacturer, the model year, the plant and – on North American cars – whether the number is valid, thanks to the check digit. Engine and body specs come from manufacturers' databases, history from reports.",
+      "q3": "How do I check whether a car from the US has been in an accident?",
+      "a3": "Check the title type (salvage means a total loss), the free NICB VINCheck database and a vehicle history report, which often also shows photos from earlier auctions.",
+      "q4": "How do I know which country the car was built in?",
+      "a4": "From the first character of the VIN: 1, 4 and 5 are the US, 2 – Canada, 3 – Mexico, J – Japan, W – Germany. It matters for import: cars built in the US, Canada, Japan and the UK may qualify for 0% duty.",
+      "q5": "Can a VIN be faked?",
+      "a5": "Yes – stolen cars are sometimes \"cloned\" with the VIN of another car. Compare the VIN in several places on the car and in the documents, check that the year and version match, and ask for an inspection if in doubt.",
+      "q6": "Does the decoder work for cars from Japan?",
+      "a6": "Only if the car has a 17-character VIN. Most cars from the Japanese market have a shorter chassis number – their history is checked on the auction sheet."
+    }
+  },
+  "copart": {
+    "eyebrow": "Guide",
+    "title": "Copart: how to buy a car from the US and import it to Europe",
+    "lead": "Copart is the largest auction of damaged and ex-lease cars in the US. We explain step by step how to buy there from Europe, what the fees are and what you will pay in total with shipping and taxes.",
+    "what": {
+      "title": "What Copart is",
+      "text": "Copart is a US auction company with more than 200 yards in the US and Canada. It mainly sells cars from insurers (after accidents, thefts, floods), leasing companies, rental firms and banks. Bidding is online, and the car stays in the yard until it is collected.\nEvery listing has photos, the damage type (primary / secondary damage), the title type, the mileage and a status such as \"Run and Drive\" (the car moved when it arrived at the yard). Sales follow different rules: \"Pure Sale\" – the car goes to the highest bid; \"Minimum Bid\" – the seller has a reserve price; \"On Approval\" – the seller approves the bid."
+    },
+    "europe": {
+      "title": "Copart in Europe vs Copart in the US",
+      "text": "Copart also operates in several European countries (including the UK, Germany, Spain, Finland and Ireland). These are separate sites with local cars and local rules.\nThe biggest choice and the lowest prices, however, are at the US auctions – and that is what this guide is about. A car from the US has to cross the ocean and be cleared at an EU port, so always work out the full cost, not just the auction price."
+    },
+    "account": {
+      "title": "Your own account or a broker",
+      "text": "You can open a Copart account yourself, but a standard account lets you bid on only some cars. In many states, cars with a salvage title can only be bought by licensed buyers – which is why most buyers from Europe bid through a broker.\nThe broker lends you their licence, pays the deposit and often arranges transport to the port and the export documents. They charge a commission for it (usually a fixed amount per car). Check reviews of the broker and exactly what their price includes."
+    },
+    "fees": {
+      "title": "Auction fees",
+      "text": "Copart's fees are added to the hammer price:\n• the buyer fee – it rises in steps with the car's price,\n• the online bidding fee (virtual bid fee),\n• the gate fee for releasing the car from the yard,\n• environmental and title handling fees,\n• the broker's commission, if you use one.\nFor a car of a few thousand dollars this is usually several hundred to over a thousand dollars. Copart publishes the exact fee tables on its website – check them before you bid."
+    },
+    "titles": {
+      "title": "Title types – what you are buying",
+      "text": "The title is the US ownership document. Its type tells you what happened to the car:\n• Clean – no total loss in its history.\n• Salvage – the insurer declared a total loss; the most common title at Copart.\n• Rebuilt – a former total loss, repaired and allowed back on the road in the US.\n• Parts only, Non-repairable, Certificate of Destruction – for parts only; such a car cannot be registered in the EU.\nA salvage car can be registered in the EU after repair and a roadworthiness test. The title still affects its resale value.",
+      "link": "How to check a car by its VIN"
+    },
+    "inspect": {
+      "title": "Check the car before you bid",
+      "text": "You cannot see the car in person, so every detail counts:\n• compare the VIN in the listing with the one in the photos,\n• look at every photo – \"Front end\" can mean a bumper or bent chassis rails,\n• be careful with cars from Florida, Texas and Louisiana after hurricanes (water marks, silt, corroded connectors),\n• check the car's history by VIN – damage, mileage and earlier auctions,\n• keep a 20–30% reserve for hidden damage."
+    },
+    "payment": {
+      "title": "Payment and pickup",
+      "text": "After winning a bid you usually have only a few business days to pay (most often by bank transfer). Paying late means a penalty and, in the worst case, a blocked account.\nThe car must be collected from the yard within a short time – after that, storage fees are charged. So before you bid, have the money ready for the car, the fees and the transport, and make sure the broker or carrier knows where to collect the car."
+    },
+    "shipping": {
+      "title": "Shipping to Europe",
+      "text": "A car carrier takes the car from the yard to the export port (e.g. New Jersey, Savannah, Houston, Los Angeles). From there it sails in a container (often 3–4 cars together) or on a RoRo ship to a European port – usually 2–3 weeks from the East Coast.\nAt the EU port a customs agent clears the car: you pay duty and import VAT, and then the car is trucked to your address. The choice of port matters – freight, port fees and VAT rates differ between countries.",
+      "link": "Full guide to importing a car from the US"
+    },
+    "cost": {
+      "title": "What a Copart car costs in total",
+      "text": "The auction price is only part of the cost. On top come auction fees, transport in the US, ocean freight and insurance, port fees, duty (10%, or 0% for US-built cars with proof of origin), VAT, national taxes, transport in Europe, repair and registration.",
+      "example": "An example from our calculator: a {{model}} bought for {{price}} costs in total, delivered to your door in {{country}}:",
+      "breakdown": "See the full cost breakdown"
+    },
+    "mistakes": {
+      "title": "The most common mistakes",
+      "text": "• Bidding without working out the full cost – fees, shipping and taxes can double the auction price.\n• Buying a car with a \"parts only\" title that cannot be registered.\n• Trusting \"Run and Drive\" without checking the history by VIN.\n• No reserve for hidden damage and parts.\n• Counting on 0% duty without proof of origin.\n• Paying late and running up storage fees in the yard."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "q1": "Can I buy a car at Copart without a broker?",
+      "a1": "You can open an account, but a standard account lets you bid on only some cars. Cars with a salvage title in many states require a buyer's licence, which is why most buyers from Europe use a broker.",
+      "q2": "How much are Copart's fees?",
+      "a2": "They depend on the car's price and the account type. For a car of a few thousand dollars the auction fees are usually several hundred to over a thousand dollars, plus the broker's commission. The current tables are on Copart's website.",
+      "q3": "What does \"Run and Drive\" mean?",
+      "a3": "That the car started and moved when it was received at the yard. It does not mean it is in working order or roadworthy.",
+      "q4": "How long does it take to bring a Copart car to Europe?",
+      "a4": "Usually 4–8 weeks from winning the bid: a few days to a week for pickup and transport to the port, 2–3 weeks at sea from the East Coast (longer from California), then clearance and delivery.",
+      "q5": "Can a salvage-title car be registered in Europe?",
+      "a5": "Yes, if after repair it passes the roadworthiness test in your country. Cars with a \"parts only\" or \"non-repairable\" title or a certificate of destruction cannot be registered.",
+      "q6": "How much duty will I pay on a Copart car?",
+      "a6": "As standard, 10% of the customs value (the price with fees plus transport to the EU border). US-built cars can have 0% duty from 1 July 2026 with proof of origin. VAT and national taxes come on top – the calculator works it all out."
+    },
+    "disclaimer": "Carglo is not affiliated with Copart Inc. The name Copart is used only to describe the service. Auction rules and fees may change – check them on Copart's website."
   }
 }

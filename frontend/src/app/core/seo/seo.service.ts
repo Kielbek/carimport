@@ -41,6 +41,8 @@ const BREADCRUMB_LABEL: Record<Exclude<Page, 'home'>, string> = {
   method: 'layout.method',
   glossary: 'layout.glossary',
   contact: 'layout.contact',
+  vin: 'layout.vin',
+  copart: 'layout.copart',
 };
 
 /**
@@ -48,8 +50,12 @@ const BREADCRUMB_LABEL: Record<Exclude<Page, 'home'>, string> = {
  * alternates (+ x-default), Open Graph / Twitter and JSON-LD. Runs during prerendering, so crawlers get it as static
  * HTML without executing JavaScript.
  */
-/** Questions on the methodology page (method.faq.q1..qN). */
-const METHOD_FAQ_COUNT = 6;
+/** Pages with their own FAQ: the translation root of the questions (<root>.faq.q1..qN, a1..aN) and their count. */
+const PAGE_FAQ: Partial<Record<Page, { root: string; count: number }>> = {
+  method: { root: 'method', count: 6 },
+  vin: { root: 'vinPage', count: 6 },
+  copart: { root: 'copart', count: 6 },
+};
 
 @Injectable({ providedIn: 'root' })
 export class SeoService {
@@ -193,13 +199,14 @@ export class SeoService {
         })),
       });
     } else {
-      if (page === 'method') {
+      const faq = PAGE_FAQ[page];
+      if (faq) {
         graph.push({
           '@type': 'FAQPage',
-          mainEntity: Array.from({ length: METHOD_FAQ_COUNT }, (_, i) => ({
+          mainEntity: Array.from({ length: faq.count }, (_, i) => ({
             '@type': 'Question',
-            name: t(`method.faq.q${i + 1}`),
-            acceptedAnswer: { '@type': 'Answer', text: t(`method.faq.a${i + 1}`) },
+            name: t(`${faq.root}.faq.q${i + 1}`),
+            acceptedAnswer: { '@type': 'Answer', text: t(`${faq.root}.faq.a${i + 1}`) },
           })),
         });
       }

@@ -510,7 +510,9 @@
     "method": "Jak liczymy",
     "toTop": "Do góry",
     "glossary": "Słowniczek",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "vin": "Sprawdź VIN",
+    "copart": "Copart – jak kupić"
   },
   "footer": {
     "about": "Niezależny kalkulator kosztów importu samochodów spoza UE. Nie sprzedajemy ani nie sprowadzamy aut – liczymy, ile naprawdę kosztują.",
@@ -875,6 +877,14 @@
     "contact": {
       "title": "Kontakt – napisz do nas | Carglo",
       "description": "Pytanie o kalkulację, raport, płatność albo współpracę? Napisz do zespołu Carglo – odpowiadamy zwykle w ciągu jednego dnia roboczego."
+    },
+    "vin": {
+      "title": "Sprawdź VIN auta z USA – darmowy dekoder i historia pojazdu | Carglo",
+      "description": "Wpisz VIN i sprawdź za darmo markę, model, rocznik, silnik i kraj produkcji. Dowiedz się, jak czytać VIN i gdzie sprawdzić historię szkód i przebiegu."
+    },
+    "copart": {
+      "title": "Copart: jak kupić auto z USA z Europy – opłaty, broker, transport | Carglo",
+      "description": "Poradnik Copart dla kupujących z Europy: konto i broker, opłaty aukcyjne, typy title, sprawdzanie auta, płatność, wysyłka i pełny koszt sprowadzenia."
     }
   },
   "privacy": {
@@ -1825,7 +1835,7 @@
     },
     "independence": {
       "title": "Niezależność",
-      "text": "Carglo nie sprzedaje, nie kupuje i nie sprowadza aut i nie bierze prowizji od importerów za wynik. Zarabiamy na płatnym raporcie PDF. Widzisz błąd albo nieaktualną stawkę? Napisz na {{email}} – poprawimy."
+      "text": "Carglo nie sprzedaje, nie kupuje i nie sprowadza aut i nie bierze prowizji od importerów za wynik. Zarabiamy na płatnym raporcie PDF. Widzisz błąd albo nieaktualną stawkę? Napisz na {{email}} – poprawimy.\nNa stronach o sprawdzaniu VIN umieszczamy link partnerski do serwisu raportów historii pojazdu – jeśli z niego skorzystasz, możemy otrzymać prowizję. Nie ma to wpływu na wyliczenia."
     },
     "faq": {
       "title": "Najczęstsze pytania",
@@ -1934,5 +1944,150 @@
       "text": "Odpowiemy na adres {{email}}, zwykle w ciągu jednego dnia roboczego.",
       "cta": "Wróć do kalkulatora"
     }
+  },
+  "vinCta": {
+    "title": "Zanim zalicytujesz – sprawdź historię auta po VIN",
+    "text": "Raport historii pokazuje m.in. wcześniejsze szkody, przebieg i dawne aukcje. Kosztuje ułamek ceny nawet drobnej naprawy.",
+    "button": "Sprawdź VIN w {{partner}}",
+    "label": "Link partnerski – Carglo może otrzymać prowizję. Nie wpływa to na nasze wyliczenia."
+  },
+  "vinPage": {
+    "eyebrow": "Narzędzie i poradnik",
+    "title": "Sprawdź VIN auta z USA, Kanady i Europy",
+    "lead": "Wpisz numer VIN, a za darmo odczytamy markę, model, rocznik, silnik i kraj produkcji. Poniżej wyjaśniamy, jak samodzielnie czytać VIN i gdzie sprawdzić historię szkód i przebiegu przed zakupem.",
+    "tool": {
+      "title": "Darmowy dekoder VIN",
+      "lead": "Dane z amerykańskiej bazy pojazdów NHTSA i EPA, a dla aut spoza Ameryki – z samego numeru VIN.",
+      "button": "Sprawdź VIN",
+      "year": "Rocznik",
+      "engine": "Silnik",
+      "power": "Moc",
+      "fuel": "Paliwo",
+      "body": "Nadwozie",
+      "check": "Cyfra kontrolna",
+      "checkOk": "poprawna",
+      "checkBad": "niezgodna – możliwa literówka",
+      "duty": "Auto wyprodukowane w kraju: {{country}} – przy dowodzie pochodzenia może mieć cło 0% zamiast 10%.",
+      "dutyMore": "Na czym to polega",
+      "calculate": "Oblicz koszt importu tego auta",
+      "note": "Dekoder pokazuje dane techniczne zapisane w VIN i w bazach producentów. Nie pokazuje historii szkód ani przebiegu – do tego służy raport historii pojazdu."
+    },
+    "what": {
+      "title": "Co to jest VIN",
+      "text": "VIN (Vehicle Identification Number) to 17-znakowy numer nadwozia, nadawany każdemu autu przez producenta. Nie ma w nim liter I, O ani Q, żeby nie myliły się z cyframi 1 i 0.\nVIN znajdziesz na tabliczce przy przedniej szybie (od strony kierowcy), na słupku drzwi, w dokumentach (title w USA, dowód rejestracyjny w UE) i w ogłoszeniu aukcji. Przed zakupem porównaj VIN z ogłoszenia z tym na zdjęciach auta – różnica to sygnał alarmowy."
+    },
+    "read": {
+      "title": "Jak czytać VIN – znak po znaku",
+      "text": "Każda pozycja w VIN ma swoje znaczenie. Najwięcej powiedzą Ci pierwszy znak (kraj produkcji), dziewiąty (cyfra kontrolna) i dziesiąty (rocznik).",
+      "p1": "Kraj produkcji (np. 1, 4, 5 – USA, W – Niemcy, J – Japonia)",
+      "p2": "Producent – razem z pierwszym znakiem tworzy kod WMI",
+      "p4": "Model, nadwozie, silnik, systemy bezpieczeństwa",
+      "p9": "Cyfra kontrolna – obowiązkowa w Ameryce Północnej, wykrywa literówki",
+      "p10": "Rok modelowy",
+      "p11": "Fabryka, w której zmontowano auto",
+      "p12": "Numer seryjny auta",
+      "countryTitle": "Pierwszy znak – kraj produkcji",
+      "yearTitle": "Dziesiąty znak – rok modelowy"
+    },
+    "report": {
+      "title": "Co pokazuje raport historii pojazdu",
+      "text": "Dekoder powie Ci, czym jest auto. Raport historii powie, co się z nim działo. Zwykle zawiera:\n• szkody i zdarzenia zgłaszane przez ubezpieczycieli, w tym szkody całkowite,\n• typ title (clean, salvage, rebuilt, flood) i jego zmiany między stanami,\n• odczyty przebiegu – pozwalają wykryć cofnięty licznik,\n• wcześniejsze aukcje, często ze zdjęciami auta sprzed naprawy,\n• kradzieże, liczbę właścicieli i stany rejestracji.\nPrzy aucie z aukcji raport kosztuje zwykle ułamek ceny nawet drobnej naprawy – i może uchronić przed kupnem auta po powodzi albo z poważną szkodą konstrukcyjną."
+    },
+    "free": {
+      "title": "Darmowe źródła informacji o VIN",
+      "text": "Część informacji sprawdzisz bezpłatnie w oficjalnych bazach:",
+      "nicb": "Amerykańska baza ubezpieczycieli – czy auto zgłoszono jako skradzione lub szkodę całkowitą (salvage).",
+      "nhtsa": "Niezałatwione akcje serwisowe (recall) dla danego VIN – warto naprawić przed wysyłką lub zaraz po.",
+      "nmvtis": "Oficjalny rejestr USA dotyczący title i szkód całkowitych; podaje listę zatwierdzonych dostawców raportów.",
+      "mot": "Dla aut z Wielkiej Brytanii: pełna historia przeglądów MOT z przebiegiem z każdego roku."
+    },
+    "flags": {
+      "title": "Sygnały ostrzegawcze",
+      "text": "• VIN w ogłoszeniu różni się od VIN na zdjęciach tabliczki lub szyby.\n• Cyfra kontrolna się nie zgadza (w aucie z Ameryki Północnej).\n• Rocznik z VIN nie pasuje do opisu w ogłoszeniu.\n• Title oznaczony jako flood, water damage albo „not actual mileage”.\n• Auto było wystawiane na aukcjach kilka razy w krótkim czasie.\n• Tabliczka VIN wygląda na zdjętą, przyklejoną lub uszkodzoną – możliwy klon."
+    },
+    "japan": {
+      "title": "Auta z Japonii – numer nadwozia zamiast VIN",
+      "text": "Auta z rynku japońskiego (JDM) często nie mają 17-znakowego VIN, tylko krótszy numer nadwozia (chassis number), np. JZA80-0012345. Dekoder VIN go nie odczyta.\nHistorię takiego auta sprawdza się w arkuszu aukcyjnym (auction sheet) i certyfikacie eksportowym – dobry eksporter przetłumaczy je przed zakupem."
+    },
+    "faq": {
+      "title": "Najczęstsze pytania",
+      "q1": "Czy sprawdzenie VIN jest darmowe?",
+      "a1": "Odczyt danych technicznych z VIN (marka, model, rocznik, silnik, kraj produkcji) jest u nas darmowy. Pełny raport historii – szkody, przebieg, dawne aukcje – jest płatny u dostawców raportów.",
+      "q2": "Co mogę wyczytać z samego numeru VIN?",
+      "a2": "Kraj produkcji, producenta, rok modelowy, fabrykę i – w autach z Ameryki Północnej – poprawność numeru dzięki cyfrze kontrolnej. Specyfikację silnika i nadwozia dają bazy producentów, a historię – raporty.",
+      "q3": "Jak sprawdzić, czy auto z USA było po wypadku?",
+      "a3": "Sprawdź typ title (salvage oznacza szkodę całkowitą), darmową bazę NICB VINCheck i raport historii pojazdu, który często pokazuje też zdjęcia z wcześniejszych aukcji.",
+      "q4": "Skąd wiem, w jakim kraju zbudowano auto?",
+      "a4": "Z pierwszego znaku VIN: 1, 4 i 5 to USA, 2 – Kanada, 3 – Meksyk, J – Japonia, W – Niemcy. To ważne przy imporcie: auta zbudowane w USA, Kanadzie, Japonii i Wielkiej Brytanii mogą mieć cło 0%.",
+      "q5": "Czy VIN może być podrobiony?",
+      "a5": "Tak – przy kradzionych autach zdarza się „klonowanie” VIN z innego egzemplarza. Porównaj VIN w kilku miejscach auta i w dokumentach, sprawdź, czy rocznik i wersja się zgadzają, a przy wątpliwościach poproś o oględziny.",
+      "q6": "Czy dekoder działa dla aut z Japonii?",
+      "a6": "Tylko jeśli auto ma 17-znakowy VIN. Większość aut z rynku japońskiego ma krótszy numer nadwozia – ich historię sprawdza się w arkuszu aukcyjnym."
+    }
+  },
+  "copart": {
+    "eyebrow": "Poradnik",
+    "title": "Copart: jak kupić auto z USA i sprowadzić je do Polski",
+    "lead": "Copart to największa aukcja aut uszkodzonych i poleasingowych w USA. Wyjaśniamy krok po kroku, jak kupić tam auto z Europy, ile kosztują opłaty i ile zapłacisz w sumie z transportem i podatkami.",
+    "what": {
+      "title": "Czym jest Copart",
+      "text": "Copart to amerykańska firma aukcyjna z ponad 200 placami w USA i Kanadzie. Sprzedaje głównie auta od ubezpieczycieli (po szkodach, kradzieżach, powodziach), firm leasingowych, wypożyczalni i banków. Licytacje odbywają się online, a auto stoi na placu do czasu odbioru.\nKażde ogłoszenie ma zdjęcia, typ szkody (primary / secondary damage), typ title, przebieg i status, np. „Run and Drive” (auto jechało przy przyjęciu na plac). Aukcje mają różne zasady sprzedaży: „Pure Sale” – auto idzie za najwyższą ofertę; „Minimum Bid” – sprzedawca ma cenę minimalną; „On Approval” – sprzedawca zatwierdza ofertę."
+    },
+    "europe": {
+      "title": "Copart w Europie a Copart w USA",
+      "text": "Copart działa też w kilku krajach Europy (m.in. w Wielkiej Brytanii, Niemczech, Hiszpanii, Finlandii i Irlandii). To osobne serwisy z lokalnymi autami i lokalnymi zasadami.\nNajwiększy wybór i najniższe ceny są jednak na aukcjach w USA – i to o nich jest ten poradnik. Auto z USA trzeba przewieźć przez ocean i odprawić w porcie UE, dlatego zawsze licz pełny koszt, a nie tylko cenę z aukcji."
+    },
+    "account": {
+      "title": "Konto czy broker",
+      "text": "Na Coparcie możesz założyć konto samodzielnie, ale zwykłe konto pozwala licytować tylko część aut. Auta z title salvage w wielu stanach może kupić wyłącznie licencjonowany kupiec – dlatego większość kupujących z Europy licytuje przez brokera.\nBroker użycza swojej licencji, wpłaca depozyt, a często organizuje też transport do portu i dokumenty eksportowe. Pobiera za to prowizję (zwykle stałą kwotę za auto). Sprawdź opinie o brokerze i to, co dokładnie obejmuje jego cena."
+    },
+    "fees": {
+      "title": "Opłaty aukcyjne",
+      "text": "Do ceny wylicytowanej doliczane są opłaty Copart:\n• opłata kupującego (buyer fee) – rośnie progowo z ceną auta,\n• opłata za licytację online (virtual bid fee),\n• gate fee za wydanie auta z placu,\n• opłata środowiskowa i za obsługę title,\n• prowizja brokera, jeśli z niego korzystasz.\nPrzy aucie za kilka tysięcy dolarów to zwykle od kilkuset do ponad tysiąca dolarów. Dokładne tabele opłat Copart publikuje na swojej stronie – sprawdź je przed licytacją."
+    },
+    "titles": {
+      "title": "Typy title – co kupujesz",
+      "text": "Title to amerykański dokument własności. Jego typ mówi, co działo się z autem:\n• Clean – bez szkody całkowitej w historii.\n• Salvage – ubezpieczyciel uznał szkodę całkowitą; najczęstszy title na Coparcie.\n• Rebuilt – dawna szkoda całkowita, naprawiona i dopuszczona do ruchu w USA.\n• Parts only, Non-repairable, Certificate of Destruction – tylko na części; takiego auta nie zarejestrujesz w UE.\nAuto z title salvage można zarejestrować w UE po naprawie i badaniu technicznym. Title wpływa jednak na wartość odsprzedaży.",
+      "link": "Jak sprawdzić auto po numerze VIN"
+    },
+    "inspect": {
+      "title": "Sprawdź auto przed licytacją",
+      "text": "Nie zobaczysz auta na żywo, więc liczy się każdy szczegół:\n• porównaj VIN z ogłoszenia z tym na zdjęciach,\n• obejrzyj wszystkie zdjęcia – „Front end” może oznaczać zderzak albo pogięte podłużnice,\n• uważaj na auta z Florydy, Teksasu i Luizjany po huraganach (ślady wody, muł, korozja złączy),\n• sprawdź historię auta po VIN – szkody, przebieg i wcześniejsze aukcje,\n• zostaw rezerwę 20–30% na ukryte uszkodzenia."
+    },
+    "payment": {
+      "title": "Płatność i odbiór",
+      "text": "Po wygranej licytacji masz zwykle tylko kilka dni roboczych na zapłatę (najczęściej przelewem). Spóźnienie oznacza karę, a w skrajnym przypadku blokadę konta.\nAuto trzeba odebrać z placu w krótkim czasie – potem naliczane są opłaty za postój. Dlatego przed licytacją miej gotowe pieniądze na auto, opłaty i transport, a broker lub przewoźnik powinien wiedzieć, skąd odbiera auto."
+    },
+    "shipping": {
+      "title": "Transport do Europy",
+      "text": "Laweta wiezie auto z placu do portu eksportowego (np. New Jersey, Savannah, Houston, Los Angeles). Stamtąd płynie w kontenerze (często 3–4 auta razem) albo statkiem RoRo do portu w Europie – z Wschodniego Wybrzeża zwykle 2–3 tygodnie.\nW porcie UE agencja celna odprawia auto: płacisz cło i VAT importowy, a potem auto jedzie lawetą pod Twój adres. Wybór portu ma znaczenie – ceny frachtu, opłaty portowe i stawki VAT różnią się między krajami.",
+      "link": "Pełny poradnik importu auta z USA"
+    },
+    "cost": {
+      "title": "Ile kosztuje auto z Copart w sumie",
+      "text": "Cena z aukcji to tylko część kosztu. Dochodzą opłaty aukcyjne, transport w USA, fracht morski i ubezpieczenie, opłaty portowe, cło (10% albo 0% dla aut zbudowanych w USA z dowodem pochodzenia), VAT, podatki krajowe, transport w Europie, naprawa i rejestracja.",
+      "example": "Przykład z naszego kalkulatora: {{model}} kupiony za {{price}} kosztuje w sumie, pod drzwi w kraju: {{country}}:",
+      "breakdown": "Zobacz pełne rozbicie kosztów"
+    },
+    "mistakes": {
+      "title": "Najczęstsze błędy",
+      "text": "• Licytowanie bez policzenia pełnego kosztu – opłaty, transport i podatki potrafią podwoić cenę z aukcji.\n• Zakup auta z title „parts only”, którego nie da się zarejestrować.\n• Wiara w „Run and Drive” bez sprawdzenia historii po VIN.\n• Brak rezerwy na ukryte uszkodzenia i części.\n• Liczenie na cło 0% bez dowodu pochodzenia.\n• Spóźniona płatność i opłaty za postój na placu."
+    },
+    "faq": {
+      "title": "Najczęstsze pytania",
+      "q1": "Czy mogę kupić auto na Copart bez brokera?",
+      "a1": "Możesz założyć konto, ale zwykłe konto pozwala licytować tylko część aut. Auta z title salvage w wielu stanach wymagają licencji kupca, dlatego większość kupujących z Europy korzysta z brokera.",
+      "q2": "Ile wynoszą opłaty Copart?",
+      "a2": "Zależą od ceny auta i rodzaju konta. Przy aucie za kilka tysięcy dolarów opłaty aukcyjne to zwykle od kilkuset do ponad tysiąca dolarów, plus prowizja brokera. Aktualne tabele są na stronie Copart.",
+      "q3": "Co oznacza „Run and Drive”?",
+      "a3": "Że auto uruchomiło się i jechało, gdy przyjmowano je na plac. Nie oznacza, że jest sprawne ani dopuszczone do ruchu.",
+      "q4": "Ile trwa sprowadzenie auta z Copart do Europy?",
+      "a4": "Zwykle 4–8 tygodni od wygranej licytacji: kilka dni do tygodnia na odbiór i transport do portu, 2–3 tygodnie rejsu z Wschodniego Wybrzeża (dłużej z Kalifornii), a potem odprawa i dowóz.",
+      "q5": "Czy auto z title salvage da się zarejestrować w Europie?",
+      "a5": "Tak, jeśli po naprawie przejdzie badanie techniczne w Twoim kraju. Nie da się zarejestrować aut z title „parts only”, „non-repairable” ani z certyfikatem zniszczenia.",
+      "q6": "Ile zapłacę cła za auto z Copart?",
+      "a6": "Standardowo 10% wartości celnej (cena z opłatami plus transport do granicy UE). Auta zbudowane w USA mogą od 1 lipca 2026 mieć cło 0% przy dowodzie pochodzenia. Do tego dochodzi VAT i podatki krajowe – wszystko policzy kalkulator."
+    },
+    "disclaimer": "Carglo nie jest powiązane z Copart Inc. Nazwa Copart służy wyłącznie do opisu usługi. Zasady i opłaty aukcji mogą się zmieniać – sprawdzaj je na stronie Copart."
   }
 }
