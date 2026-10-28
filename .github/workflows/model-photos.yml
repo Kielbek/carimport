@@ -1,0 +1,32 @@
+name: Model photos
+
+# Fetches the Wikimedia Commons photos for the model pages from a GitHub runner (Commons rate-limits
+# shared cloud IPs) and commits them back. Run it by changing frontend/tools/photos.request.
+on:
+  push:
+    branches: [main, master, 'claude/**']
+    paths: [frontend/tools/photos.request]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow
+      - name: Fetch photos
+        run: python3 frontend/tools/fetch_model_photos.py $(cat frontend/tools/photos.request | grep -o -- '--force' || true)
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add frontend/tools/models.json frontend/public/images/models
+          git diff --cached --quiet && { echo "nothing new"; exit 0; }
+          git commit -m "Model photos from Wikimedia Commons"
+          git push
