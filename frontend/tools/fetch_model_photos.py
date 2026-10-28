@@ -8,7 +8,7 @@ and -1280.webp (16:9 crop) and writes author, licence and source into models.jso
     (backend) java -jar app.jar --spring.profiles.active=models
 Review the chosen photos before publishing - search results can show the wrong generation or a toy model.
 """
-import html, io, json, re, sys, urllib.parse, urllib.request
+import html, io, json, re, sys, time, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 from PIL import Image
 
@@ -21,9 +21,19 @@ FREE = re.compile(r'^(CC0|Public domain|PD|CC BY(-SA)? \d(\.\d)?)', re.I)
 SIZES = (640, 1280)
 
 
-def get(url):
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
-        return r.read()
+def get(url, attempts=10):
+    # Wikimedia rate-limits shared cloud IPs: pace the requests and honour Retry-After
+    for attempt in range(attempts):
+        time.sleep(1.5)
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or attempt == attempts - 1:
+                raise
+            wait = int(e.headers.get('Retry-After') or 30)
+            print(f'  rate limited, waiting {wait}s', file=sys.stderr)
+            time.sleep(wait + 2)
 
 
 def query(params):
