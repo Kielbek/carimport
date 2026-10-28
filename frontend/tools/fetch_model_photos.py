@@ -59,7 +59,8 @@ def plausible(title, m):
 
 
 def candidates(m):
-    pinned = (m.get('photo') or {}).get('commons')
+    photo = m.get('photo') or {}
+    pinned = None if 'src' in photo else photo.get('commons')  # a fetched photo is re-searched on --force
     common = {'prop': 'imageinfo', 'iiprop': 'url|size|mime|extmetadata', 'iiurlwidth': '1600'}
     if pinned:
         pages = query({'action': 'query', 'titles': pinned, **common})['query']['pages']
