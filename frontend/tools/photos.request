@@ -1,2 +1,2 @@
-# arguments for tools/fetch_model_photos.py - change this file to re-run the Model photos workflow
---force toyota-supra toyota-land-cruiser
+# arguments for tools/fetch_model_photos.py, or "pages" for tools/fetch_page_photos.py - change this file to re-run the Model photos workflow
+pages

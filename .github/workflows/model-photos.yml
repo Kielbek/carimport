@@ -25,12 +25,17 @@ jobs:
           python-version: '3.12'
       - run: pip install pillow
       - name: Fetch photos
-        run: python3 frontend/tools/fetch_model_photos.py $(grep -v "^#" frontend/tools/photos.request)
+        run: |
+          if grep -q "^pages" frontend/tools/photos.request; then
+            cd frontend/tools && python3 fetch_page_photos.py
+          else
+            python3 frontend/tools/fetch_model_photos.py $(grep -v "^#" frontend/tools/photos.request)
+          fi
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-          git add frontend/tools/models.json frontend/public/images/models
+          git add -A frontend/tools frontend/public/images
           git diff --cached --quiet && { echo "nothing new"; exit 0; }
           git commit -m "Model photos from Wikimedia Commons"
           git pull --rebase origin "$GITHUB_REF_NAME"
