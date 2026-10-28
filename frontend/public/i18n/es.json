@@ -1457,6 +1457,64 @@
         "JAPAN": "desde Japón",
         "UAE": "desde los EAU",
         "UK": "desde el Reino Unido"
+      },
+      "breakdownTitle": "En qué se va el dinero al importar un {{car}}",
+      "priceTitle": "Coste de importar un {{car}} con otro precio de compra",
+      "priceLead": "El arancel y el IVA se calculan sobre el precio del coche, así que cada euro extra en la compra sube también los impuestos. Coste total – {{country}}:",
+      "priceCol": "Precio de compra ({{origin}})",
+      "totalCol": "Coste puerta a puerta – {{country}}",
+      "typical": "precio típico",
+      "euTitle": "Coste de importar un {{car}} en los países de la UE",
+      "euLead": "El mismo {{car}} comprado por {{price}}. Más barato: {{cheapest}} (aprox. {{cheapestTotal}}), más caro: {{priciest}} (aprox. {{priciestTotal}}). La diferencia la marcan los impuestos nacionales de matriculación y el tipo de IVA. Importes en euros, por el puerto más barato para cada país.",
+      "euNote": "* El país tiene un impuesto de matriculación que se calcula con una herramienta oficial; el importe no lo incluye. Pulsa un país para ver los detalles.",
+      "tipsTitle": "Qué revisar al importar un {{car}}",
+      "tips": {
+        "usaLights": {
+          "title": "Luces según normas UE",
+          "text": "Los coches norteamericanos tienen intermitentes traseros rojos y no llevan antiniebla trasero. Hay que adaptarlos a las normas UE antes de la ITV, normalmente unos cientos de euros."
+        },
+        "usaTitle": {
+          "title": "Revisa el título y el historial por VIN",
+          "text": "Muchos coches de Copart e IAAI tienen título salvage o rebuilt. Antes de pujar, revisa el historial por VIN (daños, kilometraje, robo) y las fotos de los daños: deciden el coste de la reparación."
+        },
+        "japanRhd": {
+          "title": "Volante a la derecha",
+          "text": "Un coche de Japón lleva el volante a la derecha. Se puede matricular en la UE, pero hay que ajustar o cambiar los faros para circular por la derecha."
+        },
+        "japanSheet": {
+          "title": "Hoja de subasta y certificado de exportación",
+          "text": "En las subastas japonesas (p. ej. USS) cuenta la nota de la hoja de subasta: revísala junto con la lista de defectos. Para el despacho se necesita el certificado de exportación con el kilometraje."
+        },
+        "uaeGcc": {
+          "title": "Versión GCC y clima",
+          "text": "Los coches de EAU suelen ser versiones GCC, preparadas para el calor. Revisa el historial de mantenimiento, las gomas y restos de arena, y las diferencias de equipamiento con la versión europea."
+        },
+        "ev": {
+          "title": "Conector de carga e impuestos de los eléctricos",
+          "text": "Los eléctricos estadounidenses suelen tener conector NACS o Tipo 1 en lugar del CCS2 europeo: prevé un adaptador o una modificación. Muchos países de la UE cobran a los eléctricos menos impuesto de matriculación o ninguno; mira la comparación de países."
+        },
+        "pickup": {
+          "title": "Arancel del 10 % o del 22 %: clasificación del pick-up",
+          "text": "Un pick-up puede clasificarse como turismo (10 % de arancel) o como vehículo comercial (22 %). Deciden la cabina, la caja y las plazas: confirma la clasificación con un agente de aduanas antes de comprar."
+        },
+        "classic": {
+          "title": "Coche clásico: impuestos más bajos",
+          "text": "El coche tiene más de 30 años y puede considerarse vehículo de colección. El arancel es entonces del 0 % y algunos países aplican un IVA reducido, siempre que esté original y sin modificar. Marca esa opción en la calculadora."
+        },
+        "highCo2": {
+          "title": "CO₂ alto: impuestos altos en parte de la UE",
+          "text": "El {{car}} emite mucho CO₂ y, por ejemplo, en Francia, Países Bajos, Dinamarca o Portugal el impuesto de matriculación sube mucho con las emisiones. Revisa la comparación de países antes de decidir dónde matricularlo."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}): foto del modelo",
+      "photoCredit": "Foto",
+      "faqCheapest": {
+        "q": "¿En qué país de la UE sale más barato importar un {{car}}?",
+        "a": "Según nuestro cálculo, el más barato: {{cheapest}}, aprox. {{cheapestTotal}}; el más caro: {{priciest}}, aprox. {{priciestTotal}}. La diferencia la marcan sobre todo los impuestos nacionales de matriculación y el tipo de IVA."
+      },
+      "faqPrice": {
+        "q": "¿Cuánto cuesta importar un {{car}} con otro precio de compra?",
+        "a": "Con un precio de compra de {{lowPrice}}, el coste total ({{country}}) es de aprox. {{lowTotal}}; con {{highPrice}}, de aprox. {{highTotal}}. El arancel y el IVA crecen con el precio del coche."
       }
     }
   },

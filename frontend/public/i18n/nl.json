@@ -1457,6 +1457,64 @@
         "JAPAN": "uit Japan",
         "UAE": "uit de VAE",
         "UK": "uit het VK"
+      },
+      "breakdownTitle": "Waar het geld naartoe gaat bij de import van een {{car}}",
+      "priceTitle": "Importkosten van een {{car}} bij een andere aankoopprijs",
+      "priceLead": "Invoerrecht en btw worden berekend over de prijs van de auto, dus elk extra bedrag in de aankoopprijs verhoogt ook de belastingen. Totale kosten – {{country}}:",
+      "priceCol": "Aankoopprijs ({{origin}})",
+      "totalCol": "Kosten tot aan de deur – {{country}}",
+      "typical": "typische prijs",
+      "euTitle": "Importkosten van een {{car}} in de EU-landen",
+      "euLead": "Dezelfde {{car}} gekocht voor {{price}}. Goedkoopst: {{cheapest}} (ca. {{cheapestTotal}}), duurst: {{priciest}} (ca. {{priciestTotal}}). Nationale registratiebelastingen en het btw-tarief maken het verschil. Bedragen in euro, via de goedkoopste haven per land.",
+      "euNote": "* Het land heft een registratiebelasting die met een officiële rekentool wordt bepaald – het bedrag bevat die niet. Klik op een land voor details.",
+      "tipsTitle": "Waar je op let bij de import van een {{car}}",
+      "tips": {
+        "usaLights": {
+          "title": "Verlichting volgens EU-normen",
+          "text": "Noord-Amerikaanse auto's hebben rode achterknipperlichten en geen mistachterlicht. Voor de keuring moeten ze aan EU-normen voldoen – meestal enkele honderden euro."
+        },
+        "usaTitle": {
+          "title": "Controleer de title en VIN-historie",
+          "text": "Veel auto's bij Copart en IAAI hebben een salvage- of rebuilt-title. Controleer vóór het bieden de VIN-historie (schade, kilometerstand, diefstal) en de schadefoto's – die bepalen de reparatiekosten."
+        },
+        "japanRhd": {
+          "title": "Rechts stuur",
+          "text": "Een auto uit Japan heeft rechts stuur. Hij kan in de EU worden geregistreerd, maar de koplampen moeten worden afgesteld of vervangen voor rechts rijden."
+        },
+        "japanSheet": {
+          "title": "Veilingblad en exportcertificaat",
+          "text": "Bij Japanse veilingen (bijv. USS) telt de score op het veilingblad – controleer die samen met de lijst gebreken. Voor de inklaring is het exportcertificaat met kilometerstand nodig."
+        },
+        "uaeGcc": {
+          "title": "GCC-uitvoering en klimaat",
+          "text": "Auto's uit de VAE zijn meestal GCC-uitvoeringen voor grote hitte. Controleer de onderhoudshistorie, rubberdelen en zandsporen, en de verschillen in uitrusting met de Europese versie."
+        },
+        "ev": {
+          "title": "Laadaansluiting en belasting voor EV's",
+          "text": "Amerikaanse EV's hebben vaak een NACS- of Type 1-aansluiting in plaats van de Europese CCS2 – plan een adapter of ombouw. Veel EU-landen heffen voor EV's minder of geen registratiebelasting – zie de landenvergelijking."
+        },
+        "pickup": {
+          "title": "10 % of 22 % invoerrecht – indeling van de pick-up",
+          "text": "Een pick-up kan als personenauto (10 % invoerrecht) of als bedrijfswagen (22 %) worden ingedeeld. Cabine, laadbak en zitplaatsen beslissen – controleer de indeling vóór aankoop met een douane-expediteur."
+        },
+        "classic": {
+          "title": "Klassieker – lagere belastingen",
+          "text": "De auto is ouder dan 30 jaar en kan als verzamelvoertuig gelden. Het invoerrecht is dan 0 % en sommige landen rekenen een lagere btw – mits origineel en ongewijzigd. Vink die optie aan in de calculator."
+        },
+        "highCo2": {
+          "title": "Hoge CO₂-uitstoot – hoge belastingen in een deel van de EU",
+          "text": "De {{car}} stoot veel CO₂ uit, en bijvoorbeeld in Frankrijk, Nederland, Denemarken of Portugal stijgt de registratiebelasting snel met de uitstoot. Bekijk de landenvergelijking voordat je kiest waar je de auto registreert."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – foto van het model",
+      "photoCredit": "Foto",
+      "faqCheapest": {
+        "q": "In welk EU-land is de import van een {{car}} het goedkoopst?",
+        "a": "Volgens onze berekening goedkoopst: {{cheapest}} – ca. {{cheapestTotal}}, duurst: {{priciest}} – ca. {{priciestTotal}}. Het verschil komt vooral door nationale registratiebelastingen en het btw-tarief."
+      },
+      "faqPrice": {
+        "q": "Wat kost de import van een {{car}} bij een andere aankoopprijs?",
+        "a": "Bij een aankoopprijs van {{lowPrice}} zijn de totale kosten ({{country}}) ca. {{lowTotal}}, bij {{highPrice}} ca. {{highTotal}}. Invoerrecht en btw stijgen mee met de prijs van de auto."
       }
     }
   },

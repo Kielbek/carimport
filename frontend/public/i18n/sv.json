@@ -1457,6 +1457,64 @@
         "JAPAN": "från Japan",
         "UAE": "från Förenade Arabemiraten",
         "UK": "från Storbritannien"
+      },
+      "breakdownTitle": "Vart pengarna går vid import av en {{car}}",
+      "priceTitle": "Importkostnad för en {{car}} vid ett annat inköpspris",
+      "priceLead": "Tull och moms beräknas på bilens pris, så varje extra belopp i inköpspriset höjer också skatterna. Total kostnad – {{country}}:",
+      "priceCol": "Inköpspris ({{origin}})",
+      "totalCol": "Kostnad till dörren – {{country}}",
+      "typical": "typiskt pris",
+      "euTitle": "Importkostnad för en {{car}} i EU-länderna",
+      "euLead": "Samma {{car}} köpt för {{price}}. Billigast: {{cheapest}} (ca {{cheapestTotal}}), dyrast: {{priciest}} (ca {{priciestTotal}}). Nationella registreringsskatter och momssatsen gör skillnaden. Belopp i euro, via den billigaste hamnen för varje land.",
+      "euNote": "* Landet har en registreringsskatt som räknas fram med en officiell kalkylator – beloppet innehåller den inte. Klicka på ett land för detaljer.",
+      "tipsTitle": "Det här ska du kontrollera vid import av en {{car}}",
+      "tips": {
+        "usaLights": {
+          "title": "Belysning enligt EU-krav",
+          "text": "Nordamerikanska bilar har röda bakre blinkers och saknar dimbakljus. Före besiktningen måste de anpassas till EU-kraven – oftast några hundra euro."
+        },
+        "usaTitle": {
+          "title": "Kontrollera title och VIN-historik",
+          "text": "Många bilar hos Copart och IAAI har en salvage- eller rebuilt-title. Kontrollera VIN-historiken (skador, mätarställning, stöld) och skadebilderna innan du budar – de avgör reparationskostnaden."
+        },
+        "japanRhd": {
+          "title": "Högerstyrd",
+          "text": "En bil från Japan är högerstyrd. Den kan registreras i EU, men strålkastarna måste justeras eller bytas för högertrafik."
+        },
+        "japanSheet": {
+          "title": "Auktionsblad och exportcertifikat",
+          "text": "På japanska auktioner (t.ex. USS) är betyget på auktionsbladet viktigt – kontrollera det tillsammans med listan över fel. För förtullningen krävs exportcertifikatet med mätarställning."
+        },
+        "uaeGcc": {
+          "title": "GCC-version och klimat",
+          "text": "Bilar från Förenade Arabemiraten är oftast GCC-versioner byggda för hetta. Kontrollera servicehistorik, gummidetaljer och spår av sand samt skillnader i utrustning mot den europeiska versionen."
+        },
+        "ev": {
+          "title": "Laddkontakt och skatter för elbilar",
+          "text": "Amerikanska elbilar har ofta NACS- eller Typ 1-kontakt i stället för den europeiska CCS2 – planera för adapter eller ombyggnad. Många EU-länder tar ut lägre eller ingen registreringsskatt för elbilar – se jämförelsen mellan länder."
+        },
+        "pickup": {
+          "title": "10 % eller 22 % tull – klassificering av pickupen",
+          "text": "En pickup kan klassas som personbil (10 % tull) eller lätt lastbil (22 %). Hytt, flak och antal platser avgör – kontrollera klassificeringen med ett tullombud före köpet."
+        },
+        "classic": {
+          "title": "Veteranbil – lägre skatter",
+          "text": "Bilen är över 30 år och kan räknas som samlarfordon. Tullen är då 0 % och vissa länder tar ut lägre moms – förutsatt att den är original och oförändrad. Välj det alternativet i kalkylatorn."
+        },
+        "highCo2": {
+          "title": "Högt CO₂ – höga skatter i delar av EU",
+          "text": "{{car}} släpper ut mycket CO₂, och i t.ex. Frankrike, Nederländerna, Danmark eller Portugal stiger registreringsskatten brant med utsläppen. Se jämförelsen mellan länder innan du väljer var bilen ska registreras."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – foto av modellen",
+      "photoCredit": "Foto",
+      "faqCheapest": {
+        "q": "I vilket EU-land är import av en {{car}} billigast?",
+        "a": "Enligt vår beräkning billigast: {{cheapest}} – ca {{cheapestTotal}}, dyrast: {{priciest}} – ca {{priciestTotal}}. Skillnaden beror främst på nationella registreringsskatter och momssatsen."
+      },
+      "faqPrice": {
+        "q": "Vad kostar import av en {{car}} vid ett annat inköpspris?",
+        "a": "Vid ett inköpspris på {{lowPrice}} är den totala kostnaden ({{country}}) ca {{lowTotal}}, vid {{highPrice}} ca {{highTotal}}. Tull och moms ökar med bilens pris."
       }
     }
   },

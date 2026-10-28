@@ -1457,6 +1457,64 @@
         "JAPAN": "z Japonske",
         "UAE": "iz ZAE",
         "UK": "iz Združenega kraljestva"
+      },
+      "breakdownTitle": "Kam gre denar pri uvozu {{car}}",
+      "priceTitle": "Stroški uvoza {{car}} pri drugi nakupni ceni",
+      "priceLead": "Carina in DDV se obračunata od cene avtomobila, zato vsak dodaten znesek v nakupni ceni poveča tudi davke. Skupni stroški – {{country}}:",
+      "priceCol": "Nakupna cena ({{origin}})",
+      "totalCol": "Stroški do doma – {{country}}",
+      "typical": "običajna cena",
+      "euTitle": "Stroški uvoza {{car}} v državah EU",
+      "euLead": "Isti {{car}}, kupljen za {{price}}. Najceneje: {{cheapest}} (pribl. {{cheapestTotal}}), najdražje: {{priciest}} (pribl. {{priciestTotal}}). Razliko naredijo nacionalni registracijski davki in stopnja DDV. Zneski v evrih, prek najcenejšega pristanišča za vsako državo.",
+      "euNote": "* Država ima registracijski davek, ki se izračuna z uradnim kalkulatorjem – znesek ga ne vključuje. Kliknite državo za podrobnosti.",
+      "tipsTitle": "Na kaj paziti pri uvozu {{car}}",
+      "tips": {
+        "usaLights": {
+          "title": "Osvetlitev po normah EU",
+          "text": "Severnoameriški avtomobili imajo rdeče zadnje smernike in nimajo zadnje meglenke. Pred tehničnim pregledom jih je treba prilagoditi normam EU – običajno nekaj sto evrov."
+        },
+        "usaTitle": {
+          "title": "Preverite title in zgodovino po VIN",
+          "text": "Veliko avtomobilov na Copart in IAAI ima title salvage ali rebuilt. Pred dražbo preverite zgodovino po VIN (poškodbe, kilometri, kraja) in fotografije poškodb – odločajo o ceni popravila."
+        },
+        "japanRhd": {
+          "title": "Volan na desni",
+          "text": "Avtomobil iz Japonske ima volan na desni. V EU ga je mogoče registrirati, vendar je treba žaromete nastaviti ali zamenjati za vožnjo po desni."
+        },
+        "japanSheet": {
+          "title": "Dražbeni list in izvozni certifikat",
+          "text": "Na japonskih dražbah (npr. USS) šteje ocena na dražbenem listu – preverite jo skupaj s seznamom napak. Za carinjenje je potreben izvozni certifikat s prevoženimi kilometri."
+        },
+        "uaeGcc": {
+          "title": "Različica GCC in podnebje",
+          "text": "Avtomobili iz ZAE so običajno različice GCC za vročino. Preverite servisno zgodovino, gumijaste dele in sledi peska ter razlike v opremi glede na evropsko različico."
+        },
+        "ev": {
+          "title": "Polnilni priključek in davki za električne",
+          "text": "Ameriški električni avtomobili imajo pogosto priključek NACS ali Type 1 namesto evropskega CCS2 – načrtujte adapter ali predelavo. Številne države EU za električne avtomobile zaračunajo nižji ali nobenega registracijskega davka – glejte primerjavo držav."
+        },
+        "pickup": {
+          "title": "Carina 10 % ali 22 % – razvrstitev pick-upa",
+          "text": "Pick-up je lahko razvrščen kot osebni avtomobil (10 % carine) ali gospodarsko vozilo (22 %). Odločajo kabina, tovorni prostor in število sedežev – razvrstitev preverite pri carinskem posredniku pred nakupom."
+        },
+        "classic": {
+          "title": "Starodobnik – nižji davki",
+          "text": "Avtomobil je starejši od 30 let, zato je lahko priznan kot zbirateljsko vozilo. Carina je takrat 0 %, nekatere države pa uporabljajo nižji DDV – če je izviren in nespremenjen. To možnost označite v kalkulatorju."
+        },
+        "highCo2": {
+          "title": "Visok CO₂ – visoki davki v delu EU",
+          "text": "{{car}} izpusti veliko CO₂, na primer v Franciji, na Nizozemskem, Danskem ali Portugalskem pa registracijski davek z izpusti hitro raste. Preden izberete kraj registracije, preverite primerjavo držav."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – fotografija modela",
+      "photoCredit": "Foto",
+      "faqCheapest": {
+        "q": "V kateri državi EU je uvoz {{car}} najcenejši?",
+        "a": "Po našem izračunu najceneje: {{cheapest}} – pribl. {{cheapestTotal}}, najdražje: {{priciest}} – pribl. {{priciestTotal}}. Razliko naredijo predvsem nacionalni registracijski davki in stopnja DDV."
+      },
+      "faqPrice": {
+        "q": "Koliko stane uvoz {{car}} pri drugi nakupni ceni?",
+        "a": "Pri nakupni ceni {{lowPrice}} so skupni stroški ({{country}}) pribl. {{lowTotal}}, pri {{highPrice}} pribl. {{highTotal}}. Carina in DDV rasteta s ceno avtomobila."
       }
     }
   },

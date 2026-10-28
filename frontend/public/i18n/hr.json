@@ -1457,6 +1457,64 @@
         "JAPAN": "iz Japana",
         "UAE": "iz UAE-a",
         "UK": "iz Ujedinjenog Kraljevstva"
+      },
+      "breakdownTitle": "Kamo ide novac pri uvozu {{car}}",
+      "priceTitle": "Trošak uvoza {{car}} uz drugu kupovnu cijenu",
+      "priceLead": "Carina i PDV obračunavaju se na cijenu automobila, pa svaki dodatni iznos u kupovnoj cijeni povećava i poreze. Ukupni trošak – {{country}}:",
+      "priceCol": "Kupovna cijena ({{origin}})",
+      "totalCol": "Trošak do vrata – {{country}}",
+      "typical": "uobičajena cijena",
+      "euTitle": "Trošak uvoza {{car}} u zemljama EU-a",
+      "euLead": "Isti {{car}} kupljen za {{price}}. Najjeftinije: {{cheapest}} (oko {{cheapestTotal}}), najskuplje: {{priciest}} (oko {{priciestTotal}}). Razliku čine nacionalni registracijski porezi i stopa PDV-a. Iznosi u eurima, preko najjeftinije luke za svaku zemlju.",
+      "euNote": "* Zemlja ima registracijski porez koji se računa službenim kalkulatorom – iznos ga ne uključuje. Kliknite zemlju za pojedinosti.",
+      "tipsTitle": "Na što paziti pri uvozu {{car}}",
+      "tips": {
+        "usaLights": {
+          "title": "Svjetla prema normama EU-a",
+          "text": "Sjevernoamerički automobili imaju crvene stražnje pokazivače smjera i nemaju stražnje svjetlo za maglu. Prije tehničkog pregleda treba ih prilagoditi normama EU-a – obično nekoliko stotina eura."
+        },
+        "usaTitle": {
+          "title": "Provjerite title i povijest po VIN-u",
+          "text": "Mnogi automobili na Copartu i IAAI-ju imaju title salvage ili rebuilt. Prije licitacije provjerite povijest po VIN-u (štete, kilometraža, krađa) i fotografije oštećenja – o njima ovisi cijena popravka."
+        },
+        "japanRhd": {
+          "title": "Volan na desnoj strani",
+          "text": "Automobil iz Japana ima volan na desnoj strani. U EU-u se može registrirati, ali farove treba podesiti ili zamijeniti za vožnju desnom stranom."
+        },
+        "japanSheet": {
+          "title": "Aukcijski list i izvozni certifikat",
+          "text": "Na japanskim aukcijama (npr. USS) važna je ocjena s aukcijskog lista – provjerite je zajedno s popisom nedostataka. Za carinjenje je potreban izvozni certifikat s kilometražom."
+        },
+        "uaeGcc": {
+          "title": "GCC verzija i klima",
+          "text": "Automobili iz UAE-a obično su GCC verzije za vrućinu. Provjerite servisnu povijest, gumene dijelove i tragove pijeska te razlike u opremi u odnosu na europsku verziju."
+        },
+        "ev": {
+          "title": "Priključak za punjenje i porezi za električne",
+          "text": "Američki električni automobili često imaju priključak NACS ili Type 1 umjesto europskog CCS2 – planirajte adapter ili preinaku. Mnoge zemlje EU-a za električne automobile naplaćuju niži registracijski porez ili nikakav – pogledajte usporedbu zemalja."
+        },
+        "pickup": {
+          "title": "Carina 10 % ili 22 % – razvrstavanje pick-upa",
+          "text": "Pick-up može biti razvrstan kao osobni automobil (carina 10 %) ili gospodarsko vozilo (22 %). Odlučuju kabina, teretni sanduk i broj sjedala – provjerite razvrstavanje s carinskim agentom prije kupnje."
+        },
+        "classic": {
+          "title": "Oldtimer – niži porezi",
+          "text": "Automobil je stariji od 30 godina pa može biti priznat kao kolekcionarsko vozilo. Carina je tada 0 %, a neke zemlje primjenjuju niži PDV – uz uvjet da je originalan i nepromijenjen. Označite tu opciju u kalkulatoru."
+        },
+        "highCo2": {
+          "title": "Visoke emisije CO₂ – visoki porezi u dijelu EU-a",
+          "text": "{{car}} ispušta mnogo CO₂, a npr. u Francuskoj, Nizozemskoj, Danskoj ili Portugalu registracijski porez brzo raste s emisijama. Pogledajte usporedbu zemalja prije nego odlučite gdje registrirati automobil."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – fotografija modela",
+      "photoCredit": "Fotografija",
+      "faqCheapest": {
+        "q": "U kojoj je zemlji EU-a uvoz {{car}} najjeftiniji?",
+        "a": "Prema našem izračunu najjeftinije: {{cheapest}} – oko {{cheapestTotal}}, najskuplje: {{priciest}} – oko {{priciestTotal}}. Razliku čine uglavnom nacionalni registracijski porezi i stopa PDV-a."
+      },
+      "faqPrice": {
+        "q": "Koliko košta uvoz {{car}} uz drugu kupovnu cijenu?",
+        "a": "Uz kupovnu cijenu {{lowPrice}} ukupni trošak ({{country}}) iznosi oko {{lowTotal}}, a uz {{highPrice}} oko {{highTotal}}. Carina i PDV rastu s cijenom automobila."
       }
     }
   },

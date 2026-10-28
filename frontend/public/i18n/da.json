@@ -1457,6 +1457,64 @@
         "JAPAN": "fra Japan",
         "UAE": "fra Emiraterne",
         "UK": "fra Storbritannien"
+      },
+      "breakdownTitle": "Hvor pengene går hen ved import af en {{car}}",
+      "priceTitle": "Importpris for en {{car}} ved en anden købspris",
+      "priceLead": "Told og moms beregnes af bilens pris, så hvert ekstra beløb i købsprisen hæver også afgifterne. Samlet pris – {{country}}:",
+      "priceCol": "Købspris ({{origin}})",
+      "totalCol": "Pris til døren – {{country}}",
+      "typical": "typisk pris",
+      "euTitle": "Importpris for en {{car}} i EU-landene",
+      "euLead": "Den samme {{car}} købt for {{price}}. Billigst: {{cheapest}} (ca. {{cheapestTotal}}), dyrest: {{priciest}} (ca. {{priciestTotal}}). Nationale registreringsafgifter og momssatsen gør forskellen. Beløb i euro via den billigste havn for hvert land.",
+      "euNote": "* Landet har en registreringsafgift, der beregnes med en officiel beregner – beløbet indeholder den ikke. Klik på et land for detaljer.",
+      "tipsTitle": "Det skal du tjekke ved import af en {{car}}",
+      "tips": {
+        "usaLights": {
+          "title": "Lygter efter EU-regler",
+          "text": "Nordamerikanske biler har røde blinklys bagtil og ingen tågebaglygte. Før synet skal de tilpasses EU-reglerne – typisk nogle hundrede euro."
+        },
+        "usaTitle": {
+          "title": "Tjek title og VIN-historik",
+          "text": "Mange biler hos Copart og IAAI har en salvage- eller rebuilt-title. Tjek VIN-historikken (skader, kilometertal, tyveri) og skadesbillederne, før du byder – de afgør reparationsprisen."
+        },
+        "japanRhd": {
+          "title": "Højrestyring",
+          "text": "En bil fra Japan er højrestyret. Den kan registreres i EU, men forlygterne skal justeres eller udskiftes til højrekørsel."
+        },
+        "japanSheet": {
+          "title": "Auktionsark og eksportcertifikat",
+          "text": "På japanske auktioner (fx USS) tæller karakteren på auktionsarket – tjek den sammen med listen over fejl. Til fortoldningen kræves eksportcertifikatet med kilometertal."
+        },
+        "uaeGcc": {
+          "title": "GCC-version og klima",
+          "text": "Biler fra UAE er som regel GCC-versioner bygget til varme. Tjek servicehistorik, gummidele og spor af sand samt forskelle i udstyr i forhold til den europæiske version."
+        },
+        "ev": {
+          "title": "Ladestik og afgifter for elbiler",
+          "text": "Amerikanske elbiler har ofte NACS- eller Type 1-stik i stedet for det europæiske CCS2 – planlæg en adapter eller ombygning. Mange EU-lande opkræver lavere eller ingen registreringsafgift for elbiler – se landesammenligningen."
+        },
+        "pickup": {
+          "title": "10 % eller 22 % told – klassificering af pickuppen",
+          "text": "En pickup kan klassificeres som personbil (10 % told) eller varebil (22 %). Førerhus, lad og antal pladser afgør det – tjek klassificeringen med en toldagent før køb."
+        },
+        "classic": {
+          "title": "Veteranbil – lavere afgifter",
+          "text": "Bilen er over 30 år gammel og kan regnes som samlerkøretøj. Så er tolden 0 %, og nogle lande har lavere moms – forudsat at den er original og uændret. Vælg den mulighed i beregneren."
+        },
+        "highCo2": {
+          "title": "Højt CO₂ – høje afgifter i dele af EU",
+          "text": "{{car}} udleder meget CO₂, og fx i Frankrig, Nederlandene, Danmark eller Portugal stiger registreringsafgiften stejlt med udledningen. Se landesammenligningen, før du vælger, hvor bilen skal registreres."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – foto af modellen",
+      "photoCredit": "Foto",
+      "faqCheapest": {
+        "q": "I hvilket EU-land er import af en {{car}} billigst?",
+        "a": "Ifølge vores beregning billigst: {{cheapest}} – ca. {{cheapestTotal}}, dyrest: {{priciest}} – ca. {{priciestTotal}}. Forskellen skyldes især nationale registreringsafgifter og momssatsen."
+      },
+      "faqPrice": {
+        "q": "Hvad koster import af en {{car}} ved en anden købspris?",
+        "a": "Ved en købspris på {{lowPrice}} er den samlede pris ({{country}}) ca. {{lowTotal}}, ved {{highPrice}} ca. {{highTotal}}. Told og moms stiger med bilens pris."
       }
     }
   },

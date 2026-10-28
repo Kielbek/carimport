@@ -1457,6 +1457,64 @@
         "JAPAN": "z Japonska",
         "UAE": "ze SAE",
         "UK": "z Velké Británie"
+      },
+      "breakdownTitle": "Kam jdou peníze při dovozu {{car}}",
+      "priceTitle": "Náklady na dovoz {{car}} při jiné kupní ceně",
+      "priceLead": "Clo a DPH se počítají z ceny auta, takže každá částka navíc v kupní ceně zvyšuje i daně. Celkové náklady – {{country}}:",
+      "priceCol": "Kupní cena ({{origin}})",
+      "totalCol": "Náklady až domů – {{country}}",
+      "typical": "typická cena",
+      "euTitle": "Náklady na dovoz {{car}} v zemích EU",
+      "euLead": "Stejný {{car}} koupený za {{price}}. Nejlevněji: {{cheapest}} (cca {{cheapestTotal}}), nejdráž: {{priciest}} (cca {{priciestTotal}}). Rozdíl dělají národní registrační daně a sazba DPH. Částky v eurech, přes nejlevnější přístav pro každou zemi.",
+      "euNote": "* Země má registrační daň počítanou úřední kalkulačkou – částka ji nezahrnuje. Klikněte na zemi pro podrobnosti.",
+      "tipsTitle": "Na co si dát pozor při dovozu {{car}}",
+      "tips": {
+        "usaLights": {
+          "title": "Osvětlení podle norem EU",
+          "text": "Severoamerická auta mají červené zadní blinkry a nemají zadní mlhovku. Před STK je třeba je upravit podle norem EU – obvykle několik set eur."
+        },
+        "usaTitle": {
+          "title": "Zkontrolujte title a historii podle VIN",
+          "text": "Mnoho aut na Copart a IAAI má title salvage nebo rebuilt. Před dražbou zkontrolujte historii podle VIN (škody, nájezd, krádež) a fotky poškození – rozhodují o ceně opravy."
+        },
+        "japanRhd": {
+          "title": "Řízení vpravo",
+          "text": "Auto z Japonska má volant vpravo. V EU ho lze registrovat, ale světlomety je nutné seřídit nebo vyměnit pro jízdu vpravo."
+        },
+        "japanSheet": {
+          "title": "Aukční list a exportní certifikát",
+          "text": "Na japonských aukcích (např. USS) rozhoduje hodnocení v aukčním listu – zkontrolujte ho spolu se seznamem vad. K proclení je potřeba exportní certifikát s nájezdem."
+        },
+        "uaeGcc": {
+          "title": "Verze GCC a klima",
+          "text": "Auta ze SAE jsou obvykle verze GCC určené do horka. Zkontrolujte servisní historii, pryžové díly a stopy písku i rozdíly ve výbavě oproti evropské verzi."
+        },
+        "ev": {
+          "title": "Nabíjecí konektor a daně u elektromobilů",
+          "text": "Americké elektromobily mají často konektor NACS nebo Type 1 místo evropského CCS2 – počítejte s adaptérem nebo úpravou. Řada zemí EU vybírá u elektromobilů nižší nebo žádnou registrační daň – viz srovnání zemí."
+        },
+        "pickup": {
+          "title": "Clo 10 %, nebo 22 % – zařazení pickupu",
+          "text": "Pickup může být zařazen jako osobní auto (clo 10 %), nebo užitkové vozidlo (22 %). Rozhoduje kabina, korba a počet míst – ověřte si zařazení u celního deklaranta ještě před koupí."
+        },
+        "classic": {
+          "title": "Veterán – nižší daně",
+          "text": "Auto je starší 30 let, takže může být uznáno jako sběratelské vozidlo. Clo je pak 0 % a některé země uplatňují nižší DPH – pokud je originální a neupravené. Zaškrtněte tuto možnost v kalkulačce."
+        },
+        "highCo2": {
+          "title": "Vysoké CO₂ – vysoké daně v části EU",
+          "text": "{{car}} vypouští hodně CO₂ a např. ve Francii, Nizozemsku, Dánsku nebo Portugalsku roste registrační daň s emisemi velmi rychle. Před volbou místa registrace se podívejte na srovnání zemí."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – fotografie modelu",
+      "photoCredit": "Foto",
+      "faqCheapest": {
+        "q": "Ve které zemi EU je dovoz {{car}} nejlevnější?",
+        "a": "Podle našeho výpočtu nejlevněji: {{cheapest}} – cca {{cheapestTotal}}, nejdráž: {{priciest}} – cca {{priciestTotal}}. Rozdíl dělají hlavně národní registrační daně a sazba DPH."
+      },
+      "faqPrice": {
+        "q": "Kolik stojí dovoz {{car}} při jiné kupní ceně?",
+        "a": "Při kupní ceně {{lowPrice}} jsou celkové náklady ({{country}}) cca {{lowTotal}}, při {{highPrice}} cca {{highTotal}}. Clo a DPH rostou s cenou auta."
       }
     }
   },

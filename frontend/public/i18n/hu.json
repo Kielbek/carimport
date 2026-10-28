@@ -1457,6 +1457,64 @@
         "JAPAN": "Japánból",
         "UAE": "az Emírségekből",
         "UK": "az Egyesült Királyságból"
+      },
+      "breakdownTitle": "Mire megy el a pénz egy {{car}} importjánál",
+      "priceTitle": "Egy {{car}} importköltsége más vételárnál",
+      "priceLead": "A vámot és az áfát az autó árából számolják, így a vételár minden további összege az adókat is növeli. Teljes költség – {{country}}:",
+      "priceCol": "Vételár ({{origin}})",
+      "totalCol": "Költség házhoz – {{country}}",
+      "typical": "jellemző ár",
+      "euTitle": "Egy {{car}} importköltsége az EU-országokban",
+      "euLead": "Ugyanaz a {{car}} {{price}} áron megvéve. Legolcsóbb: {{cheapest}} (kb. {{cheapestTotal}}), legdrágább: {{priciest}} (kb. {{priciestTotal}}). A különbséget a nemzeti regisztrációs adók és az áfakulcs okozzák. Összegek euróban, országonként a legolcsóbb kikötőn át.",
+      "euNote": "* Az országban hivatalos kalkulátorral számolt regisztrációs adó van – az összeg nem tartalmazza. Kattintson egy országra a részletekért.",
+      "tipsTitle": "Mire figyeljen egy {{car}} importjánál",
+      "tips": {
+        "usaLights": {
+          "title": "Világítás az uniós előírások szerint",
+          "text": "Az észak-amerikai autókon piros hátsó irányjelzők vannak, és nincs hátsó ködlámpa. A műszaki vizsga előtt az uniós előírásokhoz kell igazítani őket – ez általában néhány száz euró."
+        },
+        "usaTitle": {
+          "title": "Ellenőrizze a title-t és a VIN-előzményeket",
+          "text": "Sok Copart- és IAAI-autó salvage vagy rebuilt title-lel rendelkezik. Licitálás előtt nézze meg a VIN-előzményeket (sérülés, futásteljesítmény, lopás) és a sérülésfotókat – ezek döntik el a javítás költségét."
+        },
+        "japanRhd": {
+          "title": "Jobbkormányos autó",
+          "text": "A japán autó jobbkormányos. Az EU-ban forgalomba helyezhető, de a fényszórókat jobb oldali közlekedésre kell állítani vagy cserélni."
+        },
+        "japanSheet": {
+          "title": "Aukciós lap és exporttanúsítvány",
+          "text": "A japán aukciókon (pl. USS) az aukciós lap osztályzata számít – nézze meg a hibalistával együtt. A vámkezeléshez a futásteljesítményt tartalmazó exporttanúsítvány kell."
+        },
+        "uaeGcc": {
+          "title": "GCC-változat és éghajlat",
+          "text": "Az Egyesült Arab Emírségekből érkező autók általában hőségre készült GCC-változatok. Ellenőrizze a szervizmúltat, a gumialkatrészeket és a homok nyomait, valamint a felszereltség eltéréseit az európai változathoz képest."
+        },
+        "ev": {
+          "title": "Töltőcsatlakozó és az elektromos autók adói",
+          "text": "Az amerikai elektromos autókon gyakran NACS vagy Type 1 csatlakozó van az európai CCS2 helyett – számoljon adapterrel vagy átalakítással. Sok uniós országban az elektromos autók regisztrációs adója alacsonyabb vagy nincs – lásd az országok összevetését."
+        },
+        "pickup": {
+          "title": "10% vagy 22% vám – a pickup besorolása",
+          "text": "A pickup besorolható személyautóként (10% vám) vagy haszongépjárműként (22%). A fülke, a platós rész és az ülések száma dönt – vásárlás előtt egyeztesse a besorolást vámügynökkel."
+        },
+        "classic": {
+          "title": "Veterán autó – alacsonyabb adók",
+          "text": "Az autó 30 évnél idősebb, így gyűjteményi járműnek minősülhet. A vám ekkor 0%, és egyes országokban alacsonyabb az áfa – ha eredeti, átalakítás nélküli állapotú. Jelölje be ezt a lehetőséget a kalkulátorban."
+        },
+        "highCo2": {
+          "title": "Magas CO₂ – magas adók az EU egy részében",
+          "text": "A {{car}} sok CO₂-t bocsát ki, és pl. Franciaországban, Hollandiában, Dániában vagy Portugáliában a regisztrációs adó meredeken nő a kibocsátással. Mielőtt eldönti, hol helyezi forgalomba, nézze meg az országok összevetését."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – fotó a modellről",
+      "photoCredit": "Fotó",
+      "faqCheapest": {
+        "q": "Melyik uniós országban a legolcsóbb egy {{car}} importja?",
+        "a": "Számításunk szerint a legolcsóbb: {{cheapest}} – kb. {{cheapestTotal}}, a legdrágább: {{priciest}} – kb. {{priciestTotal}}. A különbséget főleg a nemzeti regisztrációs adók és az áfakulcs okozzák."
+      },
+      "faqPrice": {
+        "q": "Mennyibe kerül egy {{car}} importja más vételárnál?",
+        "a": "{{lowPrice}} vételárnál a teljes költség ({{country}}) kb. {{lowTotal}}, {{highPrice}} vételárnál kb. {{highTotal}}. A vám és az áfa az autó árával együtt nő."
       }
     }
   },

@@ -1457,6 +1457,64 @@
         "JAPAN": "no Japānas",
         "UAE": "no AAE",
         "UK": "no Lielbritānijas"
+      },
+      "breakdownTitle": "Kur aiziet nauda, importējot {{car}}",
+      "priceTitle": "{{car}} importa izmaksas ar citu pirkuma cenu",
+      "priceLead": "Muitu un PVN aprēķina no auto cenas, tāpēc katra papildu summa pirkuma cenā palielina arī nodokļus. Kopējās izmaksas – {{country}}:",
+      "priceCol": "Pirkuma cena ({{origin}})",
+      "totalCol": "Izmaksas līdz durvīm – {{country}}",
+      "typical": "tipiskā cena",
+      "euTitle": "{{car}} importa izmaksas ES valstīs",
+      "euLead": "Tas pats {{car}}, nopirkts par {{price}}. Lētāk: {{cheapest}} (ap. {{cheapestTotal}}), dārgāk: {{priciest}} (ap. {{priciestTotal}}). Atšķirību rada valstu reģistrācijas nodokļi un PVN likme. Summas eiro, caur lētāko ostu katrai valstij.",
+      "euNote": "* Valstī ir reģistrācijas nodoklis, ko aprēķina ar oficiālu kalkulatoru, – summa to neietver. Noklikšķiniet uz valsts, lai redzētu sīkāk.",
+      "tipsTitle": "Kam pievērst uzmanību, importējot {{car}}",
+      "tips": {
+        "usaLights": {
+          "title": "Apgaismojums atbilstoši ES prasībām",
+          "text": "Ziemeļamerikas auto ir sarkani aizmugurējie pagrieziena rādītāji un nav aizmugurējā miglas luktura. Pirms tehniskās apskates tie jāpielāgo ES prasībām – parasti daži simti eiro."
+        },
+        "usaTitle": {
+          "title": "Pārbaudiet title un VIN vēsturi",
+          "text": "Daudziem Copart un IAAI auto ir salvage vai rebuilt title. Pirms solīšanas pārbaudiet VIN vēsturi (bojājumi, nobraukums, zādzība) un bojājumu fotogrāfijas – tās nosaka remonta izmaksas."
+        },
+        "japanRhd": {
+          "title": "Labās puses stūre",
+          "text": "Auto no Japānas ir ar stūri labajā pusē. To var reģistrēt ES, bet lukturi jānoregulē vai jānomaina braukšanai pa labo pusi."
+        },
+        "japanSheet": {
+          "title": "Izsoles lapa un eksporta sertifikāts",
+          "text": "Japānas izsolēs (piem., USS) svarīgs ir izsoles lapas vērtējums – pārbaudiet to kopā ar defektu sarakstu. Muitošanai vajadzīgs eksporta sertifikāts ar nobraukumu."
+        },
+        "uaeGcc": {
+          "title": "GCC versija un klimats",
+          "text": "Auto no AAE parasti ir GCC versijas, kas paredzētas karstumam. Pārbaudiet servisa vēsturi, gumijas detaļas un smilšu pēdas, kā arī aprīkojuma atšķirības no Eiropas versijas."
+        },
+        "ev": {
+          "title": "Uzlādes ligzda un elektroauto nodokļi",
+          "text": "ASV elektroauto bieži ir NACS vai Type 1 ligzda Eiropas CCS2 vietā – plānojiet adapteri vai pārbūvi. Daudzās ES valstīs elektroauto reģistrācijas nodoklis ir mazāks vai tā nav – skatiet valstu salīdzinājumu."
+        },
+        "pickup": {
+          "title": "Muita 10% vai 22% – pikapa klasifikācija",
+          "text": "Pikapu var klasificēt kā vieglo auto (muita 10%) vai kravas auto (22%). Izšķir kabīne, kravas kaste un sēdvietu skaits – pārbaudiet klasifikāciju ar muitas aģentu pirms pirkuma."
+        },
+        "classic": {
+          "title": "Vēsturisks auto – zemāki nodokļi",
+          "text": "Auto ir vecāks par 30 gadiem, tāpēc to var atzīt par kolekcijas transportlīdzekli. Tad muita ir 0%, un dažās valstīs PVN ir zemāks – ja auto ir oriģināls un nepārveidots. Atzīmējiet šo iespēju kalkulatorā."
+        },
+        "highCo2": {
+          "title": "Augsts CO₂ – augsti nodokļi daļā ES",
+          "text": "{{car}} izmet daudz CO₂, un, piem., Francijā, Nīderlandē, Dānijā vai Portugālē reģistrācijas nodoklis ar izmešiem strauji aug. Pirms izvēlaties, kur reģistrēt auto, apskatiet valstu salīdzinājumu."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – modeļa fotogrāfija",
+      "photoCredit": "Foto",
+      "faqCheapest": {
+        "q": "Kurā ES valstī {{car}} imports ir lētākais?",
+        "a": "Pēc mūsu aprēķina lētāk: {{cheapest}} – ap. {{cheapestTotal}}, dārgāk: {{priciest}} – ap. {{priciestTotal}}. Atšķirību galvenokārt rada valstu reģistrācijas nodokļi un PVN likme."
+      },
+      "faqPrice": {
+        "q": "Cik maksā {{car}} imports ar citu pirkuma cenu?",
+        "a": "Ar pirkuma cenu {{lowPrice}} kopējās izmaksas ({{country}}) ir ap. {{lowTotal}}, ar {{highPrice}} – ap. {{highTotal}}. Muita un PVN aug līdz ar auto cenu."
       }
     }
   },

@@ -1457,6 +1457,64 @@
         "JAPAN": "iš Japonijos",
         "UAE": "iš JAE",
         "UK": "iš Jungtinės Karalystės"
+      },
+      "breakdownTitle": "Kur keliauja pinigai importuojant {{car}}",
+      "priceTitle": "{{car}} importo kaina esant kitai pirkimo kainai",
+      "priceLead": "Muitas ir PVM skaičiuojami nuo automobilio kainos, todėl kiekviena papildoma suma pirkimo kainoje padidina ir mokesčius. Bendra kaina – {{country}}:",
+      "priceCol": "Pirkimo kaina ({{origin}})",
+      "totalCol": "Kaina iki durų – {{country}}",
+      "typical": "įprasta kaina",
+      "euTitle": "{{car}} importo kaina ES šalyse",
+      "euLead": "Tas pats {{car}}, nupirktas už {{price}}. Pigiausia: {{cheapest}} (apie {{cheapestTotal}}), brangiausia: {{priciest}} (apie {{priciestTotal}}). Skirtumą lemia nacionaliniai registracijos mokesčiai ir PVM tarifas. Sumos eurais, per pigiausią uostą kiekvienai šaliai.",
+      "euNote": "* Šalyje taikomas registracijos mokestis, skaičiuojamas oficialia skaičiuokle, – suma jo neapima. Spustelėkite šalį, kad pamatytumėte išsamiau.",
+      "tipsTitle": "Į ką atkreipti dėmesį importuojant {{car}}",
+      "tips": {
+        "usaLights": {
+          "title": "Apšvietimas pagal ES reikalavimus",
+          "text": "Šiaurės Amerikos automobiliai turi raudonus galinius posūkio žibintus ir neturi galinio rūko žibinto. Prieš techninę apžiūrą juos reikia pritaikyti ES reikalavimams – paprastai keli šimtai eurų."
+        },
+        "usaTitle": {
+          "title": "Patikrinkite title ir VIN istoriją",
+          "text": "Daug Copart ir IAAI automobilių turi salvage arba rebuilt title. Prieš statydami patikrinkite VIN istoriją (žala, rida, vagystė) ir pažeidimų nuotraukas – jos lemia remonto kainą."
+        },
+        "japanRhd": {
+          "title": "Vairas dešinėje",
+          "text": "Automobilis iš Japonijos turi vairą dešinėje. Jį galima registruoti ES, bet žibintus reikia sureguliuoti ar pakeisti eismui dešine puse."
+        },
+        "japanSheet": {
+          "title": "Aukciono lapas ir eksporto sertifikatas",
+          "text": "Japonijos aukcionuose (pvz., USS) svarbus aukciono lapo įvertinimas – patikrinkite jį kartu su defektų sąrašu. Muitinei reikia eksporto sertifikato su rida."
+        },
+        "uaeGcc": {
+          "title": "GCC versija ir klimatas",
+          "text": "Automobiliai iš JAE paprastai yra karščiui pritaikytos GCC versijos. Patikrinkite serviso istoriją, gumines detales ir smėlio pėdsakus bei įrangos skirtumus nuo europinės versijos."
+        },
+        "ev": {
+          "title": "Įkrovimo lizdas ir elektromobilių mokesčiai",
+          "text": "JAV elektromobiliai dažnai turi NACS arba Type 1 lizdą vietoj europinio CCS2 – numatykite adapterį ar perdirbimą. Daugelyje ES šalių elektromobiliams taikomas mažesnis registracijos mokestis arba jo nėra – žr. šalių palyginimą."
+        },
+        "pickup": {
+          "title": "Muitas 10 % ar 22 % – pikapo klasifikacija",
+          "text": "Pikapas gali būti klasifikuojamas kaip lengvasis automobilis (10 % muito) arba krovininis (22 %). Lemia kabina, krovinių platforma ir sėdimų vietų skaičius – prieš pirkdami pasitikrinkite klasifikaciją su muitinės tarpininku."
+        },
+        "classic": {
+          "title": "Senovinis automobilis – mažesni mokesčiai",
+          "text": "Automobiliui daugiau nei 30 metų, todėl jis gali būti pripažintas kolekciniu. Tada muitas – 0 %, o kai kuriose šalyse PVM mažesnis – jei automobilis originalus ir nepakeistas. Pažymėkite šią parinktį skaičiuoklėje."
+        },
+        "highCo2": {
+          "title": "Didelė CO₂ emisija – dideli mokesčiai dalyje ES",
+          "text": "{{car}} išmeta daug CO₂, o, pvz., Prancūzijoje, Nyderlanduose, Danijoje ar Portugalijoje registracijos mokestis su emisija sparčiai auga. Prieš rinkdamiesi, kur registruoti, peržiūrėkite šalių palyginimą."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – modelio nuotrauka",
+      "photoCredit": "Nuotrauka",
+      "faqCheapest": {
+        "q": "Kurioje ES šalyje {{car}} importas pigiausias?",
+        "a": "Mūsų skaičiavimu pigiausia: {{cheapest}} – apie {{cheapestTotal}}, brangiausia: {{priciest}} – apie {{priciestTotal}}. Skirtumą daugiausia lemia nacionaliniai registracijos mokesčiai ir PVM tarifas."
+      },
+      "faqPrice": {
+        "q": "Kiek kainuoja {{car}} importas esant kitai pirkimo kainai?",
+        "a": "Kai pirkimo kaina {{lowPrice}}, bendra kaina ({{country}}) – apie {{lowTotal}}, kai {{highPrice}} – apie {{highTotal}}. Muitas ir PVM auga kartu su automobilio kaina."
       }
     }
   },

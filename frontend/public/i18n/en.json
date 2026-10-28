@@ -1457,6 +1457,64 @@
         "JAPAN": "from Japan",
         "UAE": "from the UAE",
         "UK": "from the UK"
+      },
+      "breakdownTitle": "Where the money goes when importing a {{car}}",
+      "priceTitle": "Import cost of a {{car}} at other purchase prices",
+      "priceLead": "Duty and VAT are charged on the price of the car, so every extra amount you pay also raises the taxes. Total cost – {{country}}:",
+      "priceCol": "Purchase price ({{origin}})",
+      "totalCol": "Door-to-door cost – {{country}}",
+      "typical": "typical price",
+      "euTitle": "Import cost of a {{car}} across the EU",
+      "euLead": "The same {{car}} bought for {{price}}. Cheapest: {{cheapest}} (approx. {{cheapestTotal}}), most expensive: {{priciest}} (approx. {{priciestTotal}}). National registration taxes and the VAT rate make the difference. Amounts in euro, via the cheapest port for each country.",
+      "euNote": "* The country has a registration tax worked out with an official calculator – the amount leaves it out. Click a country for details.",
+      "tipsTitle": "What to check when importing a {{car}}",
+      "tips": {
+        "usaLights": {
+          "title": "Lighting to EU standards",
+          "text": "North American cars have red rear indicators and no rear fog light. They must be brought to EU standards before the roadworthiness test – usually a few hundred euro."
+        },
+        "usaTitle": {
+          "title": "Check the title and VIN history",
+          "text": "Many Copart and IAAI cars carry a salvage or rebuilt title. Before bidding, check the VIN history (damage, mileage, theft) and the damage photos – they decide the repair bill."
+        },
+        "japanRhd": {
+          "title": "Right-hand drive",
+          "text": "A car from Japan is right-hand drive. It can be registered in the EU, but the headlights must be adjusted or replaced for driving on the right."
+        },
+        "japanSheet": {
+          "title": "Auction sheet and export certificate",
+          "text": "At Japanese auctions (e.g. USS) the auction sheet grade matters – check it together with the list of defects. Customs clearance needs the export certificate with the mileage."
+        },
+        "uaeGcc": {
+          "title": "GCC spec and climate",
+          "text": "Cars from the UAE are usually GCC-spec, built for the heat. Check the service history, rubber parts and traces of sand, and how the equipment differs from the European version."
+        },
+        "ev": {
+          "title": "Charging port and EV taxes",
+          "text": "US electric cars often have a NACS or Type 1 port instead of the European CCS2 – plan an adapter or a retrofit. Many EU countries charge EVs a lower registration tax or none – see the country comparison."
+        },
+        "pickup": {
+          "title": "10% or 22% duty – how the pickup is classified",
+          "text": "A pickup can be classified as a passenger car (10% duty) or a commercial vehicle (22%). Cab, load bed and seats decide – check the classification with a customs agent before you buy."
+        },
+        "classic": {
+          "title": "Classic car – lower taxes",
+          "text": "The car is over 30 years old, so it may count as a collector's vehicle. Duty is then 0% and some countries charge lower VAT – provided it is original and unmodified. Tick that option in the calculator."
+        },
+        "highCo2": {
+          "title": "High CO₂ – high taxes in parts of the EU",
+          "text": "The {{car}} emits a lot of CO₂, and in France, the Netherlands, Denmark or Portugal, for example, the registration tax climbs steeply with emissions. Check the country comparison before deciding where to register."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – photo of the model",
+      "photoCredit": "Photo",
+      "faqCheapest": {
+        "q": "In which EU country is importing a {{car}} cheapest?",
+        "a": "By our calculation the cheapest is {{cheapest}} – approx. {{cheapestTotal}}, the most expensive {{priciest}} – approx. {{priciestTotal}}. National registration taxes and the VAT rate make most of the difference."
+      },
+      "faqPrice": {
+        "q": "How much does importing a {{car}} cost at a different purchase price?",
+        "a": "At a purchase price of {{lowPrice}} the total cost ({{country}}) is approx. {{lowTotal}}, at {{highPrice}} approx. {{highTotal}}. Duty and VAT grow with the price of the car."
       }
     }
   },

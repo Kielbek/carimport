@@ -11,8 +11,9 @@ import { Flag } from '../../shared/flag/flag';
 import { Icon } from '../../shared/icon/icon';
 import { IconName } from '../../shared/icon/icons';
 import { COUNTRY_FACTS } from './country-facts';
-import { GUIDE_MODELS, MODEL_EXAMPLES, MODEL_EXAMPLES_DATE } from './model-data.generated';
-import { GuideModel, ModelExample } from './model-types';
+import { GUIDE_MODELS, MODEL_EU, MODEL_EXAMPLES, MODEL_EXAMPLES_DATE } from './model-data.generated';
+import { ModelDetails } from './model-details';
+import { GuideModel, ModelExample, ModelPhoto } from './model-types';
 import { DEPARTURE_PORTS, ORIGINS, PICKUP_ZONES } from '../calculator/calculator.options';
 import {
   GUIDE_COUNTRIES,
@@ -35,7 +36,7 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
  */
 @Component({
   selector: 'app-guide-page',
-  imports: [RouterLink, TranslatePipe, Flag, Icon],
+  imports: [RouterLink, TranslatePipe, Flag, Icon, ModelDetails],
   template: `
     @if (ref(); as r) {
       <article class="site max-w-5xl py-10 lg:py-14">
@@ -336,8 +337,12 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
               <ul class="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 @for (m of models; track m.id) {
                   <li>
-                    <a [routerLink]="link({ section: 'models', item: m.id })" class="flex items-center gap-3 rounded-[4px] border border-line p-4 transition hover:border-brand">
-                      <app-flag [code]="m.origin" class="w-8" />
+                    <a [routerLink]="link({ section: 'models', item: m.id })" class="flex items-center gap-3 overflow-hidden rounded-[4px] border border-line p-4 transition hover:border-brand">
+                      @if (photoOf(m); as ph) {
+                        <img [src]="ph.src + '-640.webp'" width="96" height="54" loading="lazy" alt="" class="-my-2 -ml-2 h-14 w-24 shrink-0 rounded-[3px] object-cover" />
+                      } @else {
+                        <app-flag [code]="m.origin" class="w-8" />
+                      }
                       <span class="min-w-0 flex-1">
                         <span class="block truncate font-bold">{{ m.make }} {{ m.model }}</span>
                         <span class="text-xs text-muted">{{ m.year }} · {{ m.engine }}</span>
@@ -357,8 +362,20 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
                       <h1 class="h-section">{{ 'guide.model.h1' | translate: params() }}</h1>
                       <p class="lead mt-4">{{ 'guide.model.lead' | translate: params() }}</p>
                     </div>
-                    <app-flag [code]="m.origin" class="hidden w-24 md:block" />
+                    @if (!photoOf(m)) { <app-flag [code]="m.origin" class="hidden w-24 md:block" /> }
                   </header>
+                  @if (photoOf(m); as ph) {
+                    <figure class="mt-8">
+                      <img [src]="ph.src + '-1280.webp'" [srcset]="ph.src + '-640.webp 640w, ' + ph.src + '-1280.webp 1280w'"
+                           sizes="(min-width: 1100px) 1040px, 100vw" [width]="ph.width" [height]="ph.height"
+                           [alt]="'guide.model.photoAlt' | translate: params()" fetchpriority="high"
+                           class="aspect-[16/9] w-full rounded-[10px] bg-panel-2 object-cover" />
+                      <figcaption class="mt-2 text-xs text-muted">
+                        {{ 'guide.model.photoCredit' | translate }}: <a [href]="ph.source" target="_blank" rel="noopener" class="underline underline-offset-2">{{ ph.author }}</a>,
+                        <a [href]="ph.licenseUrl" target="_blank" rel="noopener license" class="underline underline-offset-2">{{ ph.license }}</a> · Wikimedia Commons
+                      </figcaption>
+                    </figure>
+                  }
 
                   <div class="mt-10 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)]">
                     <section class="rounded-[6px] border-2 border-brand bg-panel p-6">
@@ -401,6 +418,9 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
                     <p>{{ (e.national.length ? 'guide.model.p2National' : 'guide.model.p2None') | translate: params() }}</p>
                     <p>{{ 'guide.model.p3' | translate: params() }}</p>
                   </section>
+
+                  <app-model-details [model]="m" [example]="e" [params]="params()" [destination]="destination()"
+                                     [originCurrency]="originCurrency(m.origin)" />
 
                   <section class="mt-12">
                     <h2 class="text-2xl font-extrabold">{{ 'guide.model.othersTitle' | translate }}</h2>
@@ -684,7 +704,7 @@ export class GuidePage {
       case 'ports':
         return [pair('guide.port.faq1'), pair('guide.port.faq2'), pair('guide.origin.common.faqBinding')];
       case 'models':
-        return [pair('guide.model.faq1'), pair('guide.model.faq2'), pair('guide.origin.common.faqBinding')];
+        return [pair('guide.model.faq1'), pair('guide.model.faq2'), ...this.modelFaq(), pair('guide.origin.common.faqBinding')];
     }
   });
 
@@ -718,7 +738,9 @@ export class GuidePage {
               name: this.port()!.name,
               geo: { '@type': 'GeoCoordinates', latitude: this.port()!.lat, longitude: this.port()!.lon },
             }
-          : undefined;
+          : r.section === 'models' && r.item
+            ? this.carSchema()
+            : undefined;
     this.seo.applyCustom({
       lang,
       title,
@@ -730,6 +752,75 @@ export class GuidePage {
       about,
     });
     this.pageContext.hrefFor.set((l) => guidePath(r, l));
+  }
+
+  /** The car as schema.org data: make, model, engine, power, CO₂, mass and the photo when there is one. */
+  private carSchema(): Record<string, unknown> | undefined {
+    const m = this.model();
+    if (!m) {
+      return undefined;
+    }
+    return {
+      '@type': 'Car',
+      name: `${m.make} ${m.model}`,
+      brand: { '@type': 'Brand', name: m.make },
+      model: m.model,
+      vehicleModelDate: String(m.year),
+      fuelType: this.translate.instant(`fuel.${m.fuel}`),
+      vehicleEngine: {
+        '@type': 'EngineSpecification',
+        name: m.engine,
+        ...(m.cc ? { engineDisplacement: { '@type': 'QuantitativeValue', value: m.cc, unitCode: 'CMQ' } } : {}),
+        enginePower: { '@type': 'QuantitativeValue', value: m.kw, unitCode: 'KWT' },
+      },
+      ...(m.co2 ? { emissionsCO2: m.co2 } : {}),
+      weightTotal: { '@type': 'QuantitativeValue', value: m.kg, unitCode: 'KGM' },
+      ...(this.photoOf(m)
+        ? {
+            image: {
+              '@type': 'ImageObject',
+              contentUrl: `https://cargloapp.com${this.photoOf(m)!.src}-1280.webp`,
+              license: this.photoOf(m)!.licenseUrl,
+              acquireLicensePage: this.photoOf(m)!.source,
+              creditText: this.photoOf(m)!.author,
+              creator: { '@type': 'Person', name: this.photoOf(m)!.author },
+            },
+          }
+        : {}),
+    };
+  }
+
+  /** Model questions answered with this page's own numbers: the cheapest EU country and other purchase prices. */
+  private modelFaq(): { q: string; a: string }[] {
+    const m = this.model();
+    const e = this.example();
+    if (!m || !e) {
+      return [];
+    }
+    const eur = (v: number) => new Intl.NumberFormat(this.lang.locale(), { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(v);
+    const priced = Object.entries(MODEL_EU[m.id] ?? {}).filter(([, c]) => !c.unpriced).sort((a, b) => a[1].total - b[1].total);
+    const list: { q: string; a: string }[] = [];
+    const p = this.params();
+    if (priced.length > 1) {
+      const [cheap, top] = [priced[0], priced[priced.length - 1]];
+      const q = { ...p, cheapest: this.countryName(cheap[0]), cheapestTotal: eur(cheap[1].total), priciest: this.countryName(top[0]), priciestTotal: eur(top[1].total) };
+      list.push({ q: this.translate.instant('guide.model.faqCheapest.q', q), a: this.translate.instant('guide.model.faqCheapest.a', q) });
+    }
+    if (e.steps?.length === 3) {
+      const cur = this.originCurrency(m.origin);
+      const q = {
+        ...p,
+        lowPrice: this.money(e.steps[0][0], cur), lowTotal: this.money(e.steps[0][1], e.currency),
+        highPrice: this.money(e.steps[2][0], cur), highTotal: this.money(e.steps[2][1], e.currency),
+      };
+      list.push({ q: this.translate.instant('guide.model.faqPrice.q', q), a: this.translate.instant('guide.model.faqPrice.a', q) });
+    }
+    return list;
+  }
+
+  /** The fetched photo, or null while only a Commons file is pinned (or none). */
+  protected photoOf(m: GuideModel): ModelPhoto | null {
+    return m.photo && 'src' in m.photo ? m.photo : null;
   }
 
   protected link(ref: GuideRef): string {

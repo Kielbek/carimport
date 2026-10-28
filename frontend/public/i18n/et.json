@@ -1457,6 +1457,64 @@
         "JAPAN": "Jaapanist",
         "UAE": "AÜE-st",
         "UK": "Ühendkuningriigist"
+      },
+      "breakdownTitle": "Kuhu raha läheb, kui impordid {{car}}",
+      "priceTitle": "{{car}} impordikulu teistsuguse ostuhinnaga",
+      "priceLead": "Toll ja käibemaks arvutatakse auto hinnalt, nii et iga lisasumma ostuhinnas tõstab ka makse. Kogukulu – {{country}}:",
+      "priceCol": "Ostuhind ({{origin}})",
+      "totalCol": "Kulu ukseni – {{country}}",
+      "typical": "tüüpiline hind",
+      "euTitle": "{{car}} impordikulu ELi riikides",
+      "euLead": "Sama {{car}}, ostetud hinnaga {{price}}. Odavaim: {{cheapest}} (u {{cheapestTotal}}), kalleim: {{priciest}} (u {{priciestTotal}}). Vahe tuleb riiklikest registreerimismaksudest ja käibemaksumäärast. Summad eurodes, iga riigi odavaima sadama kaudu.",
+      "euNote": "* Riigil on registreerimismaks, mis arvutatakse ametliku kalkulaatoriga – summa seda ei sisalda. Üksikasjade nägemiseks klõpsa riigil.",
+      "tipsTitle": "Mida kontrollida, kui impordid {{car}}",
+      "tips": {
+        "usaLights": {
+          "title": "Tuled ELi nõuete järgi",
+          "text": "Põhja-Ameerika autodel on punased tagumised suunatuled ja puudub tagaudutuli. Enne tehnoülevaatust tuleb need viia ELi nõuetega vastavusse – tavaliselt mõnisada eurot."
+        },
+        "usaTitle": {
+          "title": "Kontrolli title'it ja VIN-ajalugu",
+          "text": "Paljudel Coparti ja IAAI autodel on salvage- või rebuilt-title. Enne pakkumist kontrolli VIN-ajalugu (kahjud, läbisõit, vargus) ja kahjustuste fotosid – need määravad remondi hinna."
+        },
+        "japanRhd": {
+          "title": "Parempoolne rool",
+          "text": "Jaapanist toodud autol on rool paremal. Selle saab ELis registreerida, kuid esituled tuleb parempoolse liikluse jaoks reguleerida või vahetada."
+        },
+        "japanSheet": {
+          "title": "Oksjonileht ja ekspordisertifikaat",
+          "text": "Jaapani oksjonitel (nt USS) on oluline oksjonilehe hinne – kontrolli seda koos vigade loendiga. Tollivormistuseks on vaja läbisõiduga ekspordisertifikaati."
+        },
+        "uaeGcc": {
+          "title": "GCC-versioon ja kliima",
+          "text": "AÜE autod on tavaliselt kuumuse jaoks tehtud GCC-versioonid. Kontrolli hooldusajalugu, kummiosi ja liivajälgi ning varustuse erinevusi Euroopa versioonist."
+        },
+        "ev": {
+          "title": "Laadimispesa ja elektriautode maksud",
+          "text": "USA elektriautodel on sageli NACS- või Type 1 pesa Euroopa CCS2 asemel – arvesta adapteri või ümberehitusega. Paljudes ELi riikides on elektriautode registreerimismaks väiksem või puudub – vaata riikide võrdlust."
+        },
+        "pickup": {
+          "title": "Toll 10% või 22% – pikapi klassifikatsioon",
+          "text": "Pikapi võib klassifitseerida sõiduautoks (toll 10%) või kaubikuks (22%). Otsustavad kabiin, kast ja istekohtade arv – kontrolli klassifikatsiooni enne ostu tolliagendiga."
+        },
+        "classic": {
+          "title": "Vanasõiduk – madalamad maksud",
+          "text": "Auto on üle 30 aasta vana ja võib olla kollektsioonisõiduk. Siis on toll 0% ja mõnes riigis on käibemaks madalam – eeldusel, et auto on originaalne ja muutmata. Vali see võimalus kalkulaatoris."
+        },
+        "highCo2": {
+          "title": "Kõrge CO₂ – kõrged maksud osas ELis",
+          "text": "{{car}} heidab palju CO₂, ja nt Prantsusmaal, Hollandis, Taanis või Portugalis kasvab registreerimismaks heitega järsult. Vaata riikide võrdlust enne, kui otsustad, kus autot registreerida."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – mudeli foto",
+      "photoCredit": "Foto",
+      "faqCheapest": {
+        "q": "Millises ELi riigis on {{car}} import kõige odavam?",
+        "a": "Meie arvutuse järgi odavaim: {{cheapest}} – u {{cheapestTotal}}, kalleim: {{priciest}} – u {{priciestTotal}}. Vahe tuleb peamiselt riiklikest registreerimismaksudest ja käibemaksumäärast."
+      },
+      "faqPrice": {
+        "q": "Kui palju maksab {{car}} import teistsuguse ostuhinnaga?",
+        "a": "Ostuhinnaga {{lowPrice}} on kogukulu ({{country}}) u {{lowTotal}}, hinnaga {{highPrice}} u {{highTotal}}. Toll ja käibemaks kasvavad koos auto hinnaga."
       }
     }
   },

@@ -1457,6 +1457,64 @@
         "JAPAN": "du Japon",
         "UAE": "des Émirats arabes unis",
         "UK": "du Royaume-Uni"
+      },
+      "breakdownTitle": "Où va l'argent quand on importe une {{car}}",
+      "priceTitle": "Coût d'import d'une {{car}} à d'autres prix d'achat",
+      "priceLead": "Les droits de douane et la TVA sont calculés sur le prix de la voiture : chaque montant supplémentaire augmente aussi les taxes. Coût total – {{country}} :",
+      "priceCol": "Prix d'achat ({{origin}})",
+      "totalCol": "Coût rendu – {{country}}",
+      "typical": "prix typique",
+      "euTitle": "Coût d'import d'une {{car}} dans les pays de l'UE",
+      "euLead": "La même {{car}} achetée {{price}}. Le moins cher : {{cheapest}} (env. {{cheapestTotal}}), le plus cher : {{priciest}} (env. {{priciestTotal}}). Les taxes nationales d'immatriculation et le taux de TVA font la différence. Montants en euros, via le port le moins cher pour chaque pays.",
+      "euNote": "* Le pays applique une taxe d'immatriculation calculée avec un simulateur officiel – le montant ne l'inclut pas. Cliquez sur un pays pour les détails.",
+      "tipsTitle": "Points à vérifier pour importer une {{car}}",
+      "tips": {
+        "usaLights": {
+          "title": "Éclairage aux normes UE",
+          "text": "Les voitures nord-américaines ont des clignotants arrière rouges et pas de feu antibrouillard arrière. Il faut les mettre aux normes UE avant le contrôle technique – en général quelques centaines d'euros."
+        },
+        "usaTitle": {
+          "title": "Vérifiez le titre et l'historique VIN",
+          "text": "Beaucoup de voitures chez Copart et IAAI ont un titre salvage ou rebuilt. Avant d'enchérir, vérifiez l'historique VIN (dommages, kilométrage, vol) et les photos des dégâts – ils déterminent le coût de réparation."
+        },
+        "japanRhd": {
+          "title": "Conduite à droite",
+          "text": "Une voiture du Japon a le volant à droite. Elle peut être immatriculée dans l'UE, mais les phares doivent être réglés ou remplacés pour la circulation à droite."
+        },
+        "japanSheet": {
+          "title": "Fiche d'enchère et certificat d'export",
+          "text": "Aux enchères japonaises (p. ex. USS), la note de la fiche d'enchère compte – vérifiez-la avec la liste des défauts. Le dédouanement exige le certificat d'export avec le kilométrage."
+        },
+        "uaeGcc": {
+          "title": "Version GCC et climat",
+          "text": "Les voitures des Émirats sont en général des versions GCC, prévues pour la chaleur. Vérifiez l'historique d'entretien, les pièces en caoutchouc, les traces de sable et les différences d'équipement avec la version européenne."
+        },
+        "ev": {
+          "title": "Prise de recharge et taxes des électriques",
+          "text": "Les électriques américaines ont souvent une prise NACS ou Type 1 au lieu de la CCS2 européenne – prévoyez un adaptateur ou une modification. Beaucoup de pays de l'UE taxent peu ou pas du tout les électriques à l'immatriculation – voir la comparaison des pays."
+        },
+        "pickup": {
+          "title": "Droits de 10 % ou 22 % – classement du pick-up",
+          "text": "Un pick-up peut être classé comme voiture particulière (10 % de droits) ou utilitaire (22 %). La cabine, la benne et le nombre de places décident – vérifiez le classement avec un transitaire avant l'achat."
+        },
+        "classic": {
+          "title": "Voiture de collection – taxes réduites",
+          "text": "La voiture a plus de 30 ans et peut être considérée comme véhicule de collection. Les droits sont alors de 0 % et certains pays appliquent une TVA réduite – à condition qu'elle soit d'origine. Cochez cette option dans le calculateur."
+        },
+        "highCo2": {
+          "title": "CO₂ élevé – taxes élevées dans une partie de l'UE",
+          "text": "La {{car}} émet beaucoup de CO₂ ; en France, aux Pays-Bas, au Danemark ou au Portugal, par exemple, la taxe d'immatriculation grimpe fortement avec les émissions. Consultez la comparaison des pays avant de choisir où immatriculer."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – photo du modèle",
+      "photoCredit": "Photo",
+      "faqCheapest": {
+        "q": "Dans quel pays de l'UE l'import d'une {{car}} coûte-t-il le moins ?",
+        "a": "Selon notre calcul, le moins cher : {{cheapest}} – env. {{cheapestTotal}}, le plus cher : {{priciest}} – env. {{priciestTotal}}. La différence vient surtout des taxes nationales d'immatriculation et du taux de TVA."
+      },
+      "faqPrice": {
+        "q": "Combien coûte l'import d'une {{car}} à un autre prix d'achat ?",
+        "a": "Pour un prix d'achat de {{lowPrice}}, le coût total ({{country}}) est d'env. {{lowTotal}} ; pour {{highPrice}}, d'env. {{highTotal}}. Droits et TVA augmentent avec le prix de la voiture."
       }
     }
   },

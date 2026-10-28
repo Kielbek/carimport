@@ -1457,6 +1457,64 @@
         "JAPAN": "din Japonia",
         "UAE": "din EAU",
         "UK": "din Regatul Unit"
+      },
+      "breakdownTitle": "Pe ce se duc banii la importul unui {{car}}",
+      "priceTitle": "Costul importului unui {{car}} la alt preț de cumpărare",
+      "priceLead": "Taxele vamale și TVA se calculează la prețul mașinii, așa că orice sumă în plus la cumpărare crește și taxele. Cost total – {{country}}:",
+      "priceCol": "Preț de cumpărare ({{origin}})",
+      "totalCol": "Cost până la ușă – {{country}}",
+      "typical": "preț tipic",
+      "euTitle": "Costul importului unui {{car}} în țările UE",
+      "euLead": "Același {{car}} cumpărat cu {{price}}. Cel mai ieftin: {{cheapest}} (cca {{cheapestTotal}}), cel mai scump: {{priciest}} (cca {{priciestTotal}}). Diferența o fac taxele naționale de înmatriculare și cota de TVA. Sume în euro, prin cel mai ieftin port pentru fiecare țară.",
+      "euNote": "* Țara are o taxă de înmatriculare calculată cu un calculator oficial – suma nu o include. Apasă pe o țară pentru detalii.",
+      "tipsTitle": "La ce să fii atent la importul unui {{car}}",
+      "tips": {
+        "usaLights": {
+          "title": "Iluminare conform normelor UE",
+          "text": "Mașinile din America de Nord au semnalizări spate roșii și nu au lampă de ceață spate. Înainte de inspecție trebuie aduse la normele UE – de obicei câteva sute de euro."
+        },
+        "usaTitle": {
+          "title": "Verifică titlul și istoricul după VIN",
+          "text": "Multe mașini de la Copart și IAAI au titlu salvage sau rebuilt. Înainte de licitație verifică istoricul după VIN (daune, kilometraj, furt) și fotografiile daunelor – ele decid costul reparației."
+        },
+        "japanRhd": {
+          "title": "Volan pe dreapta",
+          "text": "O mașină din Japonia are volanul pe dreapta. Poate fi înmatriculată în UE, dar farurile trebuie reglate sau înlocuite pentru circulația pe dreapta."
+        },
+        "japanSheet": {
+          "title": "Fișa de licitație și certificatul de export",
+          "text": "La licitațiile japoneze (ex. USS) contează nota din fișa de licitație – verific-o împreună cu lista defectelor. Pentru vămuire e nevoie de certificatul de export cu kilometrajul."
+        },
+        "uaeGcc": {
+          "title": "Versiune GCC și climă",
+          "text": "Mașinile din EAU sunt de obicei versiuni GCC, făcute pentru căldură. Verifică istoricul de service, piesele din cauciuc și urmele de nisip, precum și diferențele de dotări față de versiunea europeană."
+        },
+        "ev": {
+          "title": "Priza de încărcare și taxele pentru electrice",
+          "text": "Electricele americane au adesea priză NACS sau Tip 1 în loc de CCS2 europeană – planifică un adaptor sau o modificare. Multe țări UE taxează electricele la înmatriculare mai puțin sau deloc – vezi comparația între țări."
+        },
+        "pickup": {
+          "title": "Taxă vamală 10% sau 22% – clasificarea pick-up-ului",
+          "text": "Un pick-up poate fi clasificat ca autoturism (10% taxă vamală) sau vehicul comercial (22%). Decid cabina, bena și numărul de locuri – verifică clasificarea cu un agent vamal înainte de cumpărare."
+        },
+        "classic": {
+          "title": "Mașină de epocă – taxe mai mici",
+          "text": "Mașina are peste 30 de ani, deci poate fi considerată vehicul de colecție. Taxa vamală este atunci 0%, iar unele țări aplică TVA redus – cu condiția să fie originală și nemodificată. Bifează opțiunea în calculator."
+        },
+        "highCo2": {
+          "title": "CO₂ ridicat – taxe mari în o parte din UE",
+          "text": "{{car}} emite mult CO₂, iar de exemplu în Franța, Țările de Jos, Danemarca sau Portugalia taxa de înmatriculare crește abrupt cu emisiile. Verifică comparația între țări înainte să alegi unde înmatriculezi."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – fotografie a modelului",
+      "photoCredit": "Foto",
+      "faqCheapest": {
+        "q": "În ce țară UE este cel mai ieftin importul unui {{car}}?",
+        "a": "După calculul nostru, cel mai ieftin: {{cheapest}} – cca {{cheapestTotal}}, cel mai scump: {{priciest}} – cca {{priciestTotal}}. Diferența vine mai ales din taxele naționale de înmatriculare și cota de TVA."
+      },
+      "faqPrice": {
+        "q": "Cât costă importul unui {{car}} la alt preț de cumpărare?",
+        "a": "La un preț de cumpărare de {{lowPrice}}, costul total ({{country}}) este de cca {{lowTotal}}, iar la {{highPrice}} de cca {{highTotal}}. Taxele vamale și TVA cresc odată cu prețul mașinii."
       }
     }
   },

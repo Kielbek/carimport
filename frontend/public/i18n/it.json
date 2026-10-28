@@ -1457,6 +1457,64 @@
         "JAPAN": "dal Giappone",
         "UAE": "dagli Emirati Arabi",
         "UK": "dal Regno Unito"
+      },
+      "breakdownTitle": "Dove vanno i soldi importando una {{car}}",
+      "priceTitle": "Costo di importazione di una {{car}} con un altro prezzo d'acquisto",
+      "priceLead": "Dazio e IVA si calcolano sul prezzo dell'auto, quindi ogni importo in più nel prezzo d'acquisto aumenta anche le imposte. Costo totale – {{country}}:",
+      "priceCol": "Prezzo d'acquisto ({{origin}})",
+      "totalCol": "Costo fino a casa – {{country}}",
+      "typical": "prezzo tipico",
+      "euTitle": "Costo di importazione di una {{car}} nei paesi UE",
+      "euLead": "La stessa {{car}} acquistata a {{price}}. Più economico: {{cheapest}} (ca. {{cheapestTotal}}), più caro: {{priciest}} (ca. {{priciestTotal}}). La differenza la fanno le imposte nazionali di immatricolazione e l'aliquota IVA. Importi in euro, tramite il porto più economico per ogni paese.",
+      "euNote": "* Il paese applica un'imposta di immatricolazione calcolata con uno strumento ufficiale: l'importo non la include. Clicca su un paese per i dettagli.",
+      "tipsTitle": "Cosa controllare importando una {{car}}",
+      "tips": {
+        "usaLights": {
+          "title": "Luci a norma UE",
+          "text": "Le auto nordamericane hanno frecce posteriori rosse e nessuna luce retronebbia. Prima della revisione vanno adeguate alle norme UE: di solito qualche centinaio di euro."
+        },
+        "usaTitle": {
+          "title": "Controlla il title e lo storico VIN",
+          "text": "Molte auto su Copart e IAAI hanno un title salvage o rebuilt. Prima di fare un'offerta controlla lo storico VIN (danni, chilometri, furto) e le foto dei danni: decidono il costo della riparazione."
+        },
+        "japanRhd": {
+          "title": "Guida a destra",
+          "text": "Un'auto dal Giappone ha la guida a destra. Si può immatricolare nell'UE, ma i fari vanno regolati o sostituiti per la circolazione a destra."
+        },
+        "japanSheet": {
+          "title": "Foglio d'asta e certificato di esportazione",
+          "text": "Nelle aste giapponesi (es. USS) conta il voto del foglio d'asta: controllalo insieme all'elenco dei difetti. Per lo sdoganamento serve il certificato di esportazione con i chilometri."
+        },
+        "uaeGcc": {
+          "title": "Versione GCC e clima",
+          "text": "Le auto dagli Emirati sono di solito versioni GCC, pensate per il caldo. Controlla lo storico dei tagliandi, le parti in gomma e le tracce di sabbia, e le differenze di dotazione rispetto alla versione europea."
+        },
+        "ev": {
+          "title": "Presa di ricarica e tasse sulle elettriche",
+          "text": "Le elettriche americane hanno spesso una presa NACS o Tipo 1 invece della CCS2 europea: prevedi un adattatore o una modifica. Molti paesi UE fanno pagare alle elettriche un'imposta di immatricolazione ridotta o nulla: vedi il confronto tra paesi."
+        },
+        "pickup": {
+          "title": "Dazio del 10% o del 22%: classificazione del pick-up",
+          "text": "Un pick-up può essere classificato come autovettura (dazio 10%) o veicolo commerciale (22%). Decidono cabina, cassone e posti: verifica la classificazione con uno spedizioniere doganale prima dell'acquisto."
+        },
+        "classic": {
+          "title": "Auto d'epoca: imposte più basse",
+          "text": "L'auto ha più di 30 anni e può essere considerata veicolo da collezione. Il dazio è allora dello 0% e alcuni paesi applicano un'IVA ridotta, purché sia originale e non modificata. Seleziona l'opzione nel calcolatore."
+        },
+        "highCo2": {
+          "title": "CO₂ alta: imposte alte in parte dell'UE",
+          "text": "La {{car}} emette molta CO₂ e, ad esempio, in Francia, Paesi Bassi, Danimarca o Portogallo l'imposta di immatricolazione cresce rapidamente con le emissioni. Guarda il confronto tra paesi prima di scegliere dove immatricolarla."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – foto del modello",
+      "photoCredit": "Foto",
+      "faqCheapest": {
+        "q": "In quale paese UE importare una {{car}} costa meno?",
+        "a": "Secondo il nostro calcolo, il più economico: {{cheapest}} – ca. {{cheapestTotal}}, il più caro: {{priciest}} – ca. {{priciestTotal}}. La differenza la fanno soprattutto le imposte nazionali di immatricolazione e l'aliquota IVA."
+      },
+      "faqPrice": {
+        "q": "Quanto costa importare una {{car}} con un altro prezzo d'acquisto?",
+        "a": "Con un prezzo d'acquisto di {{lowPrice}} il costo totale ({{country}}) è di ca. {{lowTotal}}, con {{highPrice}} di ca. {{highTotal}}. Dazio e IVA crescono con il prezzo dell'auto."
       }
     }
   },

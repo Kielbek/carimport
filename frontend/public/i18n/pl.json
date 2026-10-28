@@ -1457,6 +1457,64 @@
         "JAPAN": "z Japonii",
         "UAE": "z ZEA",
         "UK": "z Wielkiej Brytanii"
+      },
+      "breakdownTitle": "Na co idą pieniądze przy imporcie {{car}}",
+      "priceTitle": "Koszt importu {{car}} przy innej cenie zakupu",
+      "priceLead": "Cło i VAT liczy się od ceny auta, więc każda dodatkowa kwota w cenie zakupu podnosi też podatki. Łączny koszt – {{country}}:",
+      "priceCol": "Cena zakupu ({{origin}})",
+      "totalCol": "Koszt pod dom – {{country}}",
+      "typical": "typowa cena",
+      "euTitle": "Koszt importu {{car}} w krajach UE",
+      "euLead": "Ten sam {{car}} kupiony za {{price}}. Najtaniej: {{cheapest}} (ok. {{cheapestTotal}}), najdrożej: {{priciest}} (ok. {{priciestTotal}}). Różnicę robią krajowe podatki rejestracyjne i stawka VAT. Kwoty w euro, przez najtańszy port dla każdego kraju.",
+      "euNote": "* Kraj ma podatek rejestracyjny liczony urzędowym kalkulatorem – kwota go nie zawiera. Kliknij kraj, aby zobaczyć szczegóły.",
+      "tipsTitle": "Na co uważać przy imporcie {{car}}",
+      "tips": {
+        "usaLights": {
+          "title": "Oświetlenie do norm UE",
+          "text": "Auta z Ameryki Północnej mają czerwone tylne kierunkowskazy i nie mają tylnego światła przeciwmgielnego. Przed badaniem technicznym trzeba je dostosować do norm UE – to zwykle koszt rzędu kilkuset euro."
+        },
+        "usaTitle": {
+          "title": "Sprawdź tytuł i historię po VIN",
+          "text": "Na aukcjach Copart i IAAI wiele aut ma tytuł salvage albo rebuilt. Przed licytacją sprawdź historię po VIN (szkody, przebieg, kradzież) i zdjęcia uszkodzeń – to one decydują o koszcie naprawy."
+        },
+        "japanRhd": {
+          "title": "Kierownica po prawej stronie",
+          "text": "Auto z Japonii ma kierownicę po prawej. W UE można je zarejestrować, ale reflektory trzeba przestawić lub wymienić na wersję do ruchu prawostronnego."
+        },
+        "japanSheet": {
+          "title": "Arkusz aukcyjny i certyfikat eksportowy",
+          "text": "Na japońskich aukcjach (np. USS) liczy się ocena z arkusza aukcyjnego – sprawdź ją razem z opisem usterek. Do odprawy potrzebny jest certyfikat eksportowy z przebiegiem."
+        },
+        "uaeGcc": {
+          "title": "Wersja GCC i klimat",
+          "text": "Auta z ZEA to zwykle wersje GCC, przygotowane na upały. Sprawdź historię serwisową, stan gumowych elementów i ślady piasku, a także różnice wyposażenia względem wersji europejskiej."
+        },
+        "ev": {
+          "title": "Gniazdo ładowania i podatki dla elektryków",
+          "text": "Elektryki z USA mają często gniazdo NACS lub Type 1 zamiast europejskiego CCS2 – zaplanuj adapter albo przeróbkę. W wielu krajach UE auta elektryczne płacą niższy podatek rejestracyjny albo wcale – zobacz porównanie krajów."
+        },
+        "pickup": {
+          "title": "Cło 10% czy 22% – klasyfikacja pickupa",
+          "text": "Pickup może zostać sklasyfikowany jako auto osobowe (cło 10%) albo dostawcze (22%). Decyduje m.in. kabina, skrzynia ładunkowa i liczba miejsc – sprawdź klasyfikację z agencją celną jeszcze przed zakupem."
+        },
+        "classic": {
+          "title": "Auto zabytkowe – niższe podatki",
+          "text": "Auto ma ponad 30 lat, więc może zostać uznane za pojazd kolekcjonerski. Wtedy cło wynosi 0%, a w części krajów VAT jest niższy – warunkiem jest oryginalny, niezmieniony stan. Zaznacz tę opcję w kalkulatorze."
+        },
+        "highCo2": {
+          "title": "Wysoka emisja CO₂ – wysokie podatki w części UE",
+          "text": "{{car}} emituje dużo CO₂, a np. we Francji, Holandii, Danii czy Portugalii podatek rejestracyjny rośnie z emisją bardzo szybko. Sprawdź porównanie krajów, zanim zdecydujesz, gdzie zarejestrować auto."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – zdjęcie modelu",
+      "photoCredit": "Zdjęcie",
+      "faqCheapest": {
+        "q": "W którym kraju UE import {{car}} wychodzi najtaniej?",
+        "a": "Według naszego wyliczenia najtaniej: {{cheapest}} – ok. {{cheapestTotal}}, a najdrożej: {{priciest}} – ok. {{priciestTotal}}. Różnicę robią głównie krajowe podatki rejestracyjne i stawka VAT."
+      },
+      "faqPrice": {
+        "q": "Ile kosztuje import {{car}}, gdy cena zakupu jest inna?",
+        "a": "Przy cenie zakupu {{lowPrice}} łączny koszt ({{country}}) to ok. {{lowTotal}}, a przy {{highPrice}} – ok. {{highTotal}}. Cło i VAT rosną razem z ceną auta."
       }
     }
   },

@@ -1457,6 +1457,64 @@
         "JAPAN": "aus Japan",
         "UAE": "aus den VAE",
         "UK": "aus Großbritannien"
+      },
+      "breakdownTitle": "Wohin das Geld beim Import eines {{car}} fließt",
+      "priceTitle": "Importkosten eines {{car}} bei anderem Kaufpreis",
+      "priceLead": "Zoll und Einfuhrumsatzsteuer werden auf den Fahrzeugpreis berechnet – jeder Euro mehr im Kaufpreis erhöht auch die Steuern. Gesamtkosten – {{country}}:",
+      "priceCol": "Kaufpreis ({{origin}})",
+      "totalCol": "Kosten bis vor die Tür – {{country}}",
+      "typical": "typischer Preis",
+      "euTitle": "Importkosten eines {{car}} in den EU-Ländern",
+      "euLead": "Derselbe {{car}}, gekauft für {{price}}. Am günstigsten: {{cheapest}} (ca. {{cheapestTotal}}), am teuersten: {{priciest}} (ca. {{priciestTotal}}). Den Unterschied machen nationale Zulassungssteuern und der Mehrwertsteuersatz. Beträge in Euro, über den günstigsten Hafen je Land.",
+      "euNote": "* Das Land erhebt eine Zulassungssteuer, die mit einem amtlichen Rechner ermittelt wird – sie ist im Betrag nicht enthalten. Klicken Sie auf ein Land für Details.",
+      "tipsTitle": "Worauf Sie beim Import eines {{car}} achten sollten",
+      "tips": {
+        "usaLights": {
+          "title": "Beleuchtung nach EU-Norm",
+          "text": "Nordamerikanische Autos haben rote hintere Blinker und keine Nebelschlussleuchte. Vor der Hauptuntersuchung müssen sie an EU-Normen angepasst werden – meist einige hundert Euro."
+        },
+        "usaTitle": {
+          "title": "Title und VIN-Historie prüfen",
+          "text": "Viele Autos bei Copart und IAAI haben einen Salvage- oder Rebuilt-Title. Prüfen Sie vor dem Bieten die VIN-Historie (Schäden, Laufleistung, Diebstahl) und die Schadensfotos – sie bestimmen die Reparaturkosten."
+        },
+        "japanRhd": {
+          "title": "Rechtslenker",
+          "text": "Ein Auto aus Japan ist ein Rechtslenker. Es kann in der EU zugelassen werden, aber die Scheinwerfer müssen für Rechtsverkehr eingestellt oder getauscht werden."
+        },
+        "japanSheet": {
+          "title": "Auktionsblatt und Exportzertifikat",
+          "text": "Bei japanischen Auktionen (z. B. USS) zählt die Note im Auktionsblatt – prüfen Sie sie zusammen mit der Mängelliste. Für die Verzollung brauchen Sie das Exportzertifikat mit Kilometerstand."
+        },
+        "uaeGcc": {
+          "title": "GCC-Version und Klima",
+          "text": "Autos aus den VAE sind meist GCC-Versionen für große Hitze. Prüfen Sie Servicehistorie, Gummiteile und Sandspuren sowie die Ausstattungsunterschiede zur Europa-Version."
+        },
+        "ev": {
+          "title": "Ladeanschluss und Steuern für E-Autos",
+          "text": "US-Elektroautos haben oft einen NACS- oder Typ-1-Anschluss statt des europäischen CCS2 – planen Sie einen Adapter oder Umbau ein. Viele EU-Länder verlangen für E-Autos weniger oder keine Zulassungssteuer – siehe Ländervergleich."
+        },
+        "pickup": {
+          "title": "10 % oder 22 % Zoll – Einstufung des Pickups",
+          "text": "Ein Pickup kann als Pkw (10 % Zoll) oder als Nutzfahrzeug (22 %) eingestuft werden. Kabine, Ladefläche und Sitzplätze entscheiden – klären Sie die Einstufung vor dem Kauf mit einem Zollagenten."
+        },
+        "classic": {
+          "title": "Oldtimer – niedrigere Steuern",
+          "text": "Das Auto ist über 30 Jahre alt und kann als Sammlerfahrzeug gelten. Dann beträgt der Zoll 0 % und manche Länder erheben weniger Mehrwertsteuer – sofern es original und unverändert ist. Wählen Sie diese Option im Rechner."
+        },
+        "highCo2": {
+          "title": "Hoher CO₂-Ausstoß – hohe Steuern in Teilen der EU",
+          "text": "Der {{car}} stößt viel CO₂ aus, und z. B. in Frankreich, den Niederlanden, Dänemark oder Portugal steigt die Zulassungssteuer mit der Emission steil an. Prüfen Sie den Ländervergleich, bevor Sie den Zulassungsort wählen."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – Foto des Modells",
+      "photoCredit": "Foto",
+      "faqCheapest": {
+        "q": "In welchem EU-Land ist der Import eines {{car}} am günstigsten?",
+        "a": "Nach unserer Berechnung am günstigsten: {{cheapest}} – ca. {{cheapestTotal}}, am teuersten: {{priciest}} – ca. {{priciestTotal}}. Den Unterschied machen vor allem nationale Zulassungssteuern und der Mehrwertsteuersatz."
+      },
+      "faqPrice": {
+        "q": "Was kostet der Import eines {{car}} bei anderem Kaufpreis?",
+        "a": "Bei einem Kaufpreis von {{lowPrice}} liegen die Gesamtkosten ({{country}}) bei ca. {{lowTotal}}, bei {{highPrice}} bei ca. {{highTotal}}. Zoll und Einfuhrumsatzsteuer steigen mit dem Fahrzeugpreis."
       }
     }
   },

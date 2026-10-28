@@ -1457,6 +1457,64 @@
         "JAPAN": "Japanista",
         "UAE": "Arabiemiirikunnista",
         "UK": "Isosta-Britanniasta"
+      },
+      "breakdownTitle": "Mihin rahat menevät, kun tuot maahan {{car}}-auton",
+      "priceTitle": "{{car}}-auton tuontikustannus eri ostohinnalla",
+      "priceLead": "Tulli ja arvonlisävero lasketaan auton hinnasta, joten jokainen lisäsumma ostohinnassa nostaa myös veroja. Kokonaiskustannus – {{country}}:",
+      "priceCol": "Ostohinta ({{origin}})",
+      "totalCol": "Kustannus perille – {{country}}",
+      "typical": "tyypillinen hinta",
+      "euTitle": "{{car}}-auton tuontikustannus EU-maissa",
+      "euLead": "Sama {{car}} ostettuna hintaan {{price}}. Edullisin: {{cheapest}} (n. {{cheapestTotal}}), kallein: {{priciest}} (n. {{priciestTotal}}). Erot syntyvät kansallisista rekisteröintiveroista ja arvonlisäverokannasta. Summat euroina, kunkin maan edullisimman sataman kautta.",
+      "euNote": "* Maassa on rekisteröintivero, joka lasketaan virallisella laskurilla – summa ei sisällä sitä. Napsauta maata nähdäksesi tiedot.",
+      "tipsTitle": "Mitä tarkistaa, kun tuot maahan {{car}}-auton",
+      "tips": {
+        "usaLights": {
+          "title": "Valot EU-määräysten mukaisiksi",
+          "text": "Pohjoisamerikkalaisissa autoissa on punaiset takavilkut eikä takasumuvaloa. Ennen katsastusta ne on muutettava EU-määräysten mukaisiksi – yleensä muutama sata euroa."
+        },
+        "usaTitle": {
+          "title": "Tarkista title ja VIN-historia",
+          "text": "Monella Copartin ja IAAI:n autolla on salvage- tai rebuilt-title. Tarkista ennen tarjoamista VIN-historia (vauriot, kilometrit, varkaudet) ja vauriokuvat – ne ratkaisevat korjauskustannuksen."
+        },
+        "japanRhd": {
+          "title": "Oikeanpuoleinen ohjaus",
+          "text": "Japanista tuotu auto on oikealta ohjattava. Sen voi rekisteröidä EU:ssa, mutta ajovalot on säädettävä tai vaihdettava oikeanpuoleiseen liikenteeseen."
+        },
+        "japanSheet": {
+          "title": "Huutokauppalomake ja vientitodistus",
+          "text": "Japanilaisissa huutokaupoissa (esim. USS) ratkaisee huutokauppalomakkeen arvosana – tarkista se vikalistan kanssa. Tullaukseen tarvitaan vientitodistus, jossa on ajokilometrit."
+        },
+        "uaeGcc": {
+          "title": "GCC-versio ja ilmasto",
+          "text": "Arabiemiirikunnista tulevat autot ovat yleensä kuumuuteen tehtyjä GCC-versioita. Tarkista huoltohistoria, kumiosat ja hiekan jäljet sekä varustelun erot eurooppalaiseen versioon."
+        },
+        "ev": {
+          "title": "Latausliitäntä ja sähköautojen verot",
+          "text": "Amerikkalaisissa sähköautoissa on usein NACS- tai Type 1 -liitäntä eurooppalaisen CCS2:n sijaan – varaudu sovittimeen tai muutostyöhön. Monissa EU-maissa sähköautojen rekisteröintivero on pienempi tai sitä ei ole lainkaan – katso maavertailu."
+        },
+        "pickup": {
+          "title": "Tulli 10 % vai 22 % – avolavan luokitus",
+          "text": "Avolava-auto voidaan luokitella henkilöautoksi (tulli 10 %) tai pakettiautoksi (22 %). Ratkaisevia ovat ohjaamo, lava ja istumapaikat – tarkista luokitus tulliasiamiehen kanssa ennen ostoa."
+        },
+        "classic": {
+          "title": "Museoauto – pienemmät verot",
+          "text": "Auto on yli 30 vuotta vanha, joten se voidaan katsoa keräilyajoneuvoksi. Tulli on silloin 0 %, ja joissain maissa arvonlisävero on alempi – kunhan auto on alkuperäinen ja muuttamaton. Valitse tämä vaihtoehto laskurissa."
+        },
+        "highCo2": {
+          "title": "Korkeat CO₂-päästöt – korkeat verot osassa EU:ta",
+          "text": "{{car}} tuottaa paljon CO₂-päästöjä, ja esim. Ranskassa, Alankomaissa, Tanskassa tai Portugalissa rekisteröintivero kasvaa jyrkästi päästöjen mukaan. Katso maavertailu ennen kuin päätät rekisteröintimaan."
+        }
+      },
+      "photoAlt": "{{car}} ({{year}}) – kuva mallista",
+      "photoCredit": "Kuva",
+      "faqCheapest": {
+        "q": "Missä EU-maassa {{car}}-auton tuonti on edullisinta?",
+        "a": "Laskelmamme mukaan edullisin: {{cheapest}} – n. {{cheapestTotal}}, kallein: {{priciest}} – n. {{priciestTotal}}. Erot johtuvat pääosin kansallisista rekisteröintiveroista ja arvonlisäverokannasta."
+      },
+      "faqPrice": {
+        "q": "Paljonko {{car}}-auton tuonti maksaa eri ostohinnalla?",
+        "a": "Ostohinnalla {{lowPrice}} kokonaiskustannus ({{country}}) on n. {{lowTotal}}, hinnalla {{highPrice}} n. {{highTotal}}. Tulli ja arvonlisävero kasvavat auton hinnan mukana."
       }
     }
   },
