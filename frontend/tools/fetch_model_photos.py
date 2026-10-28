@@ -32,7 +32,7 @@ def get(url, attempts=10):
             if e.code != 429 or attempt == attempts - 1:
                 raise
             wait = int(e.headers.get('Retry-After') or 30)
-            print(f'  rate limited, waiting {wait}s', file=sys.stderr)
+            print(f'  rate limited, waiting {wait}s', file=sys.stderr, flush=True)
             time.sleep(wait + 2)
 
 
@@ -106,8 +106,8 @@ def main(argv):
             'source': info.get('descriptionurl') or 'https://commons.wikimedia.org/wiki/' + urllib.parse.quote(title),
             'commons': title,
         }
-        print(f'{m["id"]}: {title} ({lic}, {author[:40]})')
-    MODELS.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
+        print(f'{m["id"]}: {title} ({lic}, {author[:40]})', flush=True)
+        MODELS.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')  # saved per model, so a re-run resumes
 
 
 if __name__ == '__main__':
