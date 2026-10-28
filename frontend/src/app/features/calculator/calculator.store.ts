@@ -21,6 +21,7 @@ import { AnalyticsService } from '../../core/analytics/analytics.service';
 import { LanguageService } from '../../core/i18n/language.service';
 import { LanguageInfo } from '../../core/i18n/languages';
 import { EXCISE_THRESHOLD_CC, ORIGINS } from './calculator.options';
+import { ProgressPlan, randomPlan } from './calc-progress';
 
 export type WizardStep = 1 | 2 | 3 | 4 | 5 | 6;
 export const LAST_INPUT_STEP = 5;
@@ -100,8 +101,8 @@ export class CalculatorStore {
   readonly state = signal<WizardState>(restore(this.lang.info()));
   readonly step = signal<WizardStep>(1);
   readonly calculating = signal(false);
-  /** The progress screen runs at least this long, so its stages can be read rather than flash by. */
-  static readonly CALC_MIN_MS = 2600;
+  /** The progress screen's random timeline; the result is not shown before it has run through. */
+  readonly calcPlan = signal<ProgressPlan>(randomPlan());
   readonly result = signal<PublicQuoteView | null>(null);
   readonly error = signal<ApiProblem | null>(null);
   /** The calculated quote is the one bought as a report or attached to a partner lead. */
@@ -456,11 +457,13 @@ export class CalculatorStore {
     }
     this.calculating.set(true);
     this.error.set(null);
+    const plan = randomPlan();
+    this.calcPlan.set(plan);
     const quote = this.api.createQuote(this.request()).pipe(
       map((view) => ({ view, error: null as ApiProblem | null })),
       catchError((e: HttpErrorResponse) => of({ view: null, error: (e.error as ApiProblem) ?? { status: e.status } })),
     );
-    forkJoin([quote, timer(CalculatorStore.CALC_MIN_MS)])
+    forkJoin([quote, timer(plan.duration)])
       .pipe(map(([outcome]) => outcome))
       .subscribe(({ view, error }) => {
         if (view) {

@@ -153,7 +153,7 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
                 <h1 class="h-section mt-4">{{ 'guide.hub.countries.title' | translate }}</h1>
                 <p class="lead mt-4">{{ 'guide.hub.countries.lead' | translate }}</p>
               </header>
-              <ul class="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              <ul class="mt-10 grid grid-cols-[minmax(0,1fr)] gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 @for (c of countriesSorted(); track c.code) {
                   <li>
                     <a [routerLink]="link({ section: 'countries', item: c.code })"
@@ -337,7 +337,7 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
                 <h1 class="h-section mt-4">{{ 'guide.hub.models.title' | translate }}</h1>
                 <p class="lead mt-4">{{ 'guide.hub.models.lead' | translate: { country: countryName(destination()) } }}</p>
               </header>
-              <ul class="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              <ul class="mt-10 grid grid-cols-[minmax(0,1fr)] gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 @for (m of models; track m.id) {
                   <li>
                     <a [routerLink]="link({ section: 'models', item: m.id })" class="flex items-center gap-3 overflow-hidden rounded-[4px] border border-line p-4 transition hover:border-brand">
@@ -350,7 +350,7 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
                         <span class="block truncate font-bold">{{ m.make }} {{ m.model }}</span>
                         <span class="text-xs text-muted">{{ m.year }} · {{ m.engine }}</span>
                       </span>
-                      <span class="text-sm font-bold tabular-nums text-brand-text">≈ {{ money(exampleOf(m.id).total, exampleOf(m.id).currency) }}</span>
+                      <span class="shrink-0 whitespace-nowrap text-sm font-bold tabular-nums text-brand-text">≈ {{ money(exampleOf(m.id).total, exampleOf(m.id).currency) }}</span>
                     </a>
                   </li>
                 }

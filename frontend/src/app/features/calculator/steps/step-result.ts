@@ -1,4 +1,5 @@
 import { Component, DestroyRef, computed, effect, inject, output, signal } from '@angular/core';
+import { progressAt } from '../calc-progress';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { CostCategory } from '../../../core/api/api.models';
 import { reportPrice } from '../../../core/currency/currencies';
@@ -223,11 +224,11 @@ export class StepResult {
       if (!this.store.calculating() || typeof requestAnimationFrame === 'undefined') {
         return;
       }
+      const plan = this.store.calcPlan();
       const start = performance.now();
       const tick = (now: number) => {
-        // eases to 99% over the minimum duration; the result replaces the screen when the server has answered
-        const t = Math.min((now - start) / CalculatorStore.CALC_MIN_MS, 1);
-        this.progress.set(Math.min(99, Math.round(100 * (1 - Math.pow(1 - t, 2.2)))));
+        // follows the random plan up to 99%; the result replaces the screen when the server has answered
+        this.progress.set(Math.min(99, Math.round(progressAt(plan, now - start))));
         if (this.store.calculating()) {
           frame = requestAnimationFrame(tick);
         }
