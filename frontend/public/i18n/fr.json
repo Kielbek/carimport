@@ -1711,36 +1711,134 @@
   },
   "method": {
     "eyebrow": "Méthodologie",
-    "title": "Comment nous calculons le coût d'import d'une voiture",
-    "lead": "Carglo chiffre chaque étape, de l'enchère à l'immatriculation, avec les mêmes règles que les administrations et les transporteurs. Voici d'où viennent les chiffres et où ce sont des estimations.",
-    "updated": "Taux et règles vérifiés le : {{date}}",
-    "s1": {
+    "title": "Comment nous calculons le coût d’import d’une voiture",
+    "lead": "Carglo chiffre chaque étape, de l’enchère à l’immatriculation, selon les règles douanières et fiscales de l’UE et des États membres. Vous trouverez ci-dessous les formules, un exemple réel issu de notre calculateur, les sources des taux et ce qui relève de l’estimation.",
+    "updated": "Taux et règles vérifiés : {{date}}",
+    "toc": "Sommaire",
+    "flow": {
+      "s1": {
+        "title": "Achat",
+        "text": "prix de la voiture avec frais d’enchère ou de concessionnaire"
+      },
+      "s2": {
+        "title": "Transport au port",
+        "text": "camion porte-voitures jusqu’au port d’export"
+      },
+      "s3": {
+        "title": "Fret maritime",
+        "text": "conteneur ou RoRo, assurance"
+      },
+      "s4": {
+        "title": "Dédouanement dans l’UE",
+        "text": "droits de douane et TVA à l’import au port"
+      },
+      "s5": {
+        "title": "Taxes nationales",
+        "text": "accise ou taxe d’immatriculation"
+      },
+      "s6": {
+        "title": "Immatriculation",
+        "text": "contrôle, traductions, plaques"
+      }
+    },
+    "scope": {
       "title": "Ce que comprend le calcul",
-      "text": "L'achat avec les frais d'enchère ou de vendeur, le transport jusqu'au port, le fret maritime et l'assurance, les frais de port et de transitaire, les droits de douane, la TVA à l'importation, les taxes nationales, la livraison à votre adresse ainsi que le contrôle et l'immatriculation dans votre pays.\nChaque résultat comporte trois scénarios – optimiste, attendu et pessimiste – car les prix du transport et certains frais varient."
+      "text": "Nous calculons le coût complet livré à domicile : achat avec frais d’enchère ou de concessionnaire, transport jusqu’au port, fret maritime et assurance, frais portuaires et de transitaire, droits de douane, TVA à l’import, taxes nationales, livraison à votre adresse ainsi que contrôle technique et immatriculation dans votre pays.\nChaque résultat comporte trois scénarios – optimiste, attendu et pessimiste – car les prix du transport et certains frais varient. Dans le rapport PDF, chaque poste détaille sa base et son taux."
     },
-    "s2": {
-      "title": "Droits de douane et TVA",
-      "text": "Les taux suivent la nomenclature combinée de l'UE (TARIC) : 10 % pour les voitures particulières, jusqu'à 22 % pour les pick-up et utilitaires, et les règles des véhicules de collection de plus de 30 ans. La valeur en douane est le prix plus le transport et l'assurance jusqu'à la frontière de l'UE.\nLes devises sont converties au taux douanier du mois (taux de l'avant-dernier mercredi du mois précédent), les autres montants aux taux actuels de la banque centrale."
+    "example": {
+      "title": "Un exemple pas à pas",
+      "lead": "Une {{model}} achetée aux États-Unis pour {{price}}, importée vers : {{country}}, dédouanée au port de {{port}}. Les chiffres viennent de notre calculateur ({{date}}) – avec les mêmes formules que la douane et l’administration fiscale.",
+      "colItem": "Poste",
+      "colFormula": "Comment nous calculons",
+      "colAmount": "Montant",
+      "rows": {
+        "price": "Prix de la voiture avec frais d’enchère",
+        "toBorder": "Transport et assurance jusqu’à la frontière de l’UE",
+        "customsValue": "Valeur en douane (CAF)",
+        "duty": "Droits de douane",
+        "toDestination": "Frais portuaires et coûts jusqu’à destination",
+        "vatBase": "Base de la TVA",
+        "vat": "TVA à l’import",
+        "restTransport": "Reste du transport et livraison à l’adresse",
+        "registration": "Contrôle technique et immatriculation",
+        "other": "Autres frais (traductions, transitaire)",
+        "total": "Total livré à domicile"
+      },
+      "formulas": {
+        "customsValue": "prix + transport et assurance jusqu’à la frontière de l’UE",
+        "duty": "{{dutyRate}} × valeur en douane",
+        "vatBase": "valeur en douane + droits + coûts jusqu’à destination",
+        "vat": "{{vatRate}} × base de la TVA (taux du pays de dédouanement)",
+        "national": "selon les règles du pays d’immatriculation",
+        "total": "somme de tous les postes, arrondie"
+      },
+      "note": "L’exemple suppose le droit standard de 10 % (sans preuve d’origine) et des tarifs de transport typiques. Les montants sont arrondis et peuvent ne pas tomber juste à l’unité. La même voiture dans les autres pays de l’UE figure dans le tableau de la section 5."
     },
-    "s3": {
-      "title": "Taxes nationales",
-      "text": "Les taxes d'immatriculation et accises sont modélisées selon la loi de chaque pays : cylindrée, CO₂, puissance, poids, âge et valeur, selon ce qu'exige le pays. À Chypre, en Grèce, en Croatie et à Malte, la taxe dépend de calculateurs officiels – nous demandons alors le montant ou affichons une fourchette.\nSi vous saisissez le CO₂ et la puissance des papiers, le résultat est exact ; sinon nous les estimons à partir du moteur et du carburant."
+    "duty": {
+      "title": "Droits de douane",
+      "text": "Les taux proviennent du tarif douanier de l’UE (TARIC) : 10 % pour les voitures particulières, 22 % pour les pick-up et utilitaires classés comme véhicules de marchandises, 6 à 8 % pour les motos. Les véhicules de plus de 30 ans en état d’origine peuvent être considérés comme pièces de collection – le droit est alors de 0 %.\nLe droit de 0 % s’applique aussi aux voitures fabriquées dans un pays lié à l’UE par un accord : les États-Unis (règlement (UE) 2026/1455, du 1er juillet 2026 à fin 2029, en expédition directe depuis les États-Unis), le Canada (CETA), le Japon (accord de partenariat économique) et le Royaume-Uni (accord de commerce et de coopération). La condition est une preuve d’origine – une facture seule ne suffit pas. Le VIN indique le pays de fabrication (p. ex. 1, 4, 5 – États-Unis ; 2 – Canada), et vous pouvez cocher cette option dans le calculateur.\nLa valeur en douane est le prix de la voiture avec frais d’enchère, plus le transport et l’assurance jusqu’à la frontière de l’UE. Les prix en devises sont convertis au taux de change douanier du mois (fixé l’avant-dernier mercredi du mois précédent)."
     },
-    "s4": {
+    "vat": {
+      "title": "TVA à l’import",
+      "text": "La TVA se paie dans le pays où la voiture est dédouanée, à son taux – p. ex. 19 % en Allemagne, 21 % aux Pays-Bas et en Belgique, 23 % en Pologne. La base est la valeur en douane augmentée des droits et des frais de transport jusqu’à la destination dans l’UE.\nLes entreprises peuvent utiliser le régime douanier 4200 : dédouaner la voiture dans un pays et déclarer la TVA dans le pays d’immatriculation. Le calculateur affiche la TVA du pays du port, car c’est ainsi que paient la plupart des particuliers."
+    },
+    "national": {
+      "title": "Taxes nationales dans 27 pays",
+      "text": "Après le dédouanement, chaque pays ajoute sa propre taxe : accise (Pologne), taxe d’immatriculation calculée sur le CO₂, la puissance, la masse, l’âge ou la valeur de la voiture (p. ex. Pays-Bas, France, Danemark, Finlande, Portugal) ou rien du tout (p. ex. Allemagne, Tchéquie, Suède). Nous la calculons avec les formules prévues par la loi de chaque pays.\nÀ Chypre, en Grèce, en Croatie, à Malte et en Roumanie, la taxe résulte des calculateurs officiels des administrations – nous demandons alors le montant ou affichons une fourchette. Si vous indiquez le CO₂ et la puissance figurant sur les documents, le résultat est le plus précis ; sinon nous les estimons d’après le moteur et le carburant.",
+      "tableLead": "{{model}} livrée à domicile dans chaque pays de l’UE (en euros) :",
+      "colCountry": "Pays",
+      "colTax": "Taxe à l’immatriculation",
+      "colTotal": "Total",
+      "none": "aucune",
+      "unpriced": "Seul le calculateur officiel du pays donne la taxe d’immatriculation – le total ne l’inclut pas. Calculateurs officiels :"
+    },
+    "transport": {
       "title": "Transport et frais",
-      "text": "Le transport terrestre dans le pays d'achat est chiffré selon la distance entre la région d'enlèvement et le port de départ, avec des tarifs de transporteurs typiques. Le fret maritime et les frais de port et de transitaire sont des prix typiques par itinéraire et par port de l'UE.\nCes postes sont des estimations – le devis d'un transitaire pour votre voiture peut différer, c'est pourquoi nous montrons une fourchette."
+      "text": "Le transport terrestre dans le pays d’achat est chiffré à partir de la distance entre le parc ou la région d’enlèvement et le port de départ, aux tarifs habituels des transporteurs. Le fret maritime, l’assurance (en général 1,5 à 2 % de la valeur), les frais de port, de terminal et de transitaire sont des prix typiques pour chaque route et chaque port de l’UE.\nCes postes sont des estimations – le devis d’un transitaire dépend de la saison, de la taille, du mode d’expédition (conteneur ou RoRo) et de l’état de la voiture ; c’est pourquoi nous affichons une fourchette."
     },
-    "s5": {
+    "port": {
       "title": "Choix du port",
-      "text": "Le calculateur chiffre chaque port de l'UE porte à porte – fret, frais portuaires, TVA du pays du port et livraison à votre adresse – et propose le moins cher. Vous pouvez choisir un autre port et comparer."
+      "text": "Le calculateur chiffre chaque port de l’UE livré à domicile – fret, frais portuaires, TVA du pays du port et livraison à votre adresse – et propose le moins cher. Vous pouvez choisir un autre port et comparer. Le port le plus proche n’est souvent pas le moins cher, car les taux de TVA et le fret diffèrent."
     },
-    "s6": {
-      "title": "Ce que le calcul ne peut pas savoir",
-      "text": "L'état réel de la voiture, les dommages cachés, l'évolution des prix aux enchères, les variations de change après le calcul et les décisions individuelles des administrations. Le résultat est une information, pas une décision douanière ni un conseil fiscal."
+    "sources": {
+      "title": "Sources",
+      "text": "Nous vérifions les taux auprès des sources officielles de l’UE et des administrations nationales :",
+      "taric": "Le tarif douanier de l’UE – taux des droits pour voitures, véhicules utilitaires et motos.",
+      "origin": "Le portail de la Commission européenne sur les accords commerciaux de l’UE – règles d’origine et droits préférentiels (CETA, Japon, Royaume-Uni).",
+      "eurlex": "Les textes du droit de l’UE, dont le règlement (UE) 2026/1455 sur les droits applicables aux marchandises américaines.",
+      "ecb": "Les taux de change de référence de la Banque centrale européenne.",
+      "vat": "La Commission européenne – taux de TVA et fiscalité des États membres."
     },
-    "s7": {
+    "changes": {
+      "title": "Historique des modifications",
+      "text": "Ce que nous avons modifié dans les règles de calcul, et quand :",
+      "c20261028": "Méthodologie enrichie : exemple pas à pas, tableau des 27 pays, sources.",
+      "c20261026": "Droit de 0 % pour les voitures fabriquées aux États-Unis, au Canada, au Japon et au Royaume-Uni avec preuve d’origine ; taux distinct pour les pick-up ; pas d’accise polonaise sur les véhicules de collection.",
+      "c20261025": "Formules de la taxe d’immatriculation pour la Slovaquie, la Lituanie et la Hongrie ; confirmation que la Lettonie n’en perçoit pas.",
+      "c20261024": "Taxe d’immatriculation pour chaque pays de l’UE ; valeur en douane au taux de change douanier du mois."
+    },
+    "limits": {
+      "title": "Ce que le calcul ignore",
+      "text": "L’état réel de la voiture, les dommages cachés, l’évolution des prix aux enchères, les variations de change après le calcul ou les décisions individuelles des administrations (p. ex. une autre classification d’un pick-up). Le résultat est fourni à titre indicatif – ce n’est ni une décision douanière ni un conseil fiscal."
+    },
+    "independence": {
       "title": "Indépendance",
-      "text": "Carglo ne vend, n'achète ni n'expédie de voitures et ne touche aucune commission des importateurs sur le résultat. Nous vivons du rapport PDF payant. Une erreur ou un taux dépassé ? Écrivez à {{email}} – nous corrigeons."
+      "text": "Carglo ne vend, n’achète ni n’importe de voitures et ne touche aucune commission des importateurs pour le résultat. Nous sommes rémunérés par le rapport PDF payant. Vous avez repéré une erreur ou un taux dépassé ? Écrivez à {{email}} – nous corrigerons."
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "q1": "Le résultat du calculateur est-il contraignant ?",
+      "a1": "Non. Les montants définitifs des droits, de la TVA et des taxes sont fixés par la douane et l’administration fiscale sur la base des documents. Nous appliquons les mêmes règles, les taxes concordent donc généralement à quelques pour cent près – les écarts viennent surtout du taux de change le jour du dédouanement et du prix du transport.",
+      "q2": "Pourquoi mon transitaire annonce-t-il un autre prix de transport ?",
+      "a2": "Nous utilisons des tarifs typiques pour la route et le port. Un devis concret dépend de la saison, de la taille de la voiture, de l’envoi en conteneur ou en RoRo, de l’état du véhicule et de la marge de l’entreprise. C’est pourquoi nous affichons une fourchette – un vrai devis devrait s’y situer.",
+      "q3": "À quelle fréquence mettez-vous à jour les taux ?",
+      "a3": "Le taux de change douanier chaque mois, les taux de change en continu, les taux de douane, de TVA et des taxes nationales à chaque changement de loi. La date de la dernière vérification figure en haut de cette page, les changements de règles dans l’historique.",
+      "q4": "Comment savoir si ma voiture bénéficie d’un droit de 0 % ?",
+      "a4": "Ce qui compte, c’est le pays de fabrication, pas le pays d’achat, et une preuve d’origine (déclaration de l’exportateur ou documents). Le premier caractère du VIN indique le pays de fabrication. Sans preuve, la douane applique les 10 % standard.",
+      "q5": "La TVA est-elle calculée sur le prix de la voiture ou sur le total ?",
+      "a5": "Sur une base qui comprend la valeur en douane (la voiture avec le transport jusqu’à la frontière de l’UE), les droits et les frais de transport jusqu’à destination. C’est pourquoi la TVA est plus élevée que si elle portait sur le seul prix de la voiture.",
+      "q6": "Pourquoi est-ce plus cher dans mon pays que chez le voisin ?",
+      "a6": "Le plus souvent à cause d’une taxe d’immatriculation ou d’une accise – dans certains pays quelques pour cent de la valeur, dans d’autres plusieurs dizaines. La comparaison de tous les pays de l’UE figure dans le tableau de la section 5."
     }
   },
   "glossary": {

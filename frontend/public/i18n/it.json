@@ -1711,36 +1711,134 @@
   },
   "method": {
     "eyebrow": "Metodologia",
-    "title": "Come calcoliamo il costo di importazione di un'auto",
-    "lead": "Carglo calcola ogni passaggio, dall'asta all'immatricolazione, con le stesse regole usate da autorità e trasportatori. Ecco da dove vengono i numeri e dove sono stime.",
-    "updated": "Tariffe e norme verificate il: {{date}}",
-    "s1": {
+    "title": "Come calcoliamo il costo di importazione di un’auto",
+    "lead": "Carglo calcola ogni fase, dall’asta all’immatricolazione, secondo le norme doganali e fiscali dell’UE e degli Stati membri. Qui sotto trovi le formule, un esempio reale del nostro calcolatore, le fonti delle aliquote e dove le cifre sono stime.",
+    "updated": "Aliquote e norme verificate: {{date}}",
+    "toc": "Indice",
+    "flow": {
+      "s1": {
+        "title": "Acquisto",
+        "text": "prezzo dell’auto con commissioni d’asta o del concessionario"
+      },
+      "s2": {
+        "title": "Trasporto al porto",
+        "text": "bisarca dal piazzale al porto di esportazione"
+      },
+      "s3": {
+        "title": "Nolo marittimo",
+        "text": "container o RoRo, assicurazione"
+      },
+      "s4": {
+        "title": "Sdoganamento nell’UE",
+        "text": "dazio e IVA all’importazione al porto"
+      },
+      "s5": {
+        "title": "Imposte nazionali",
+        "text": "accisa o tassa di immatricolazione"
+      },
+      "s6": {
+        "title": "Immatricolazione",
+        "text": "revisione, traduzioni, targhe"
+      }
+    },
+    "scope": {
       "title": "Cosa comprende il calcolo",
-      "text": "L'acquisto con commissioni d'asta o del venditore, il trasporto al porto, il nolo marittimo e l'assicurazione, le spese portuali e dello spedizioniere doganale, il dazio, l'IVA all'importazione, le tasse nazionali, la consegna al tuo indirizzo e la revisione e immatricolazione nel tuo paese.\nOgni risultato ha tre scenari – ottimistico, atteso e pessimistico – perché i prezzi del trasporto e alcune spese variano."
+      "text": "Calcoliamo il costo completo fino a casa: acquisto con commissioni d’asta o del concessionario, trasporto al porto, nolo marittimo e assicurazione, spese portuali e dello spedizioniere doganale, dazio, IVA all’importazione, imposte nazionali, consegna al tuo indirizzo e revisione e immatricolazione nel tuo paese.\nOgni risultato ha tre scenari – ottimistico, atteso e pessimistico – perché i prezzi del trasporto e alcune spese variano. Nel report PDF ogni voce mostra base e aliquota."
     },
-    "s2": {
-      "title": "Dazio e IVA",
-      "text": "Le aliquote seguono la Nomenclatura Combinata UE (TARIC): 10% per le autovetture, fino al 22% per pick-up e furgoni, e le regole per i veicoli storici oltre 30 anni. Il valore in dogana è il prezzo più trasporto e assicurazione fino al confine UE.\nLe valute sono convertite al cambio doganale del mese (cambi del penultimo mercoledì del mese precedente), gli altri importi ai cambi attuali della banca centrale."
+    "example": {
+      "title": "Un esempio passo per passo",
+      "lead": "Una {{model}} acquistata negli USA per {{price}}, importata in: {{country}}, sdoganata nel porto di {{port}}. Le cifre vengono dal nostro calcolatore ({{date}}) – con le stesse formule usate da dogana e fisco.",
+      "colItem": "Voce",
+      "colFormula": "Come calcoliamo",
+      "colAmount": "Importo",
+      "rows": {
+        "price": "Prezzo dell’auto con commissioni d’asta",
+        "toBorder": "Trasporto e assicurazione fino al confine UE",
+        "customsValue": "Valore in dogana (CIF)",
+        "duty": "Dazio",
+        "toDestination": "Spese portuali e costi fino alla destinazione",
+        "vatBase": "Base imponibile IVA",
+        "vat": "IVA all’importazione",
+        "restTransport": "Resto del trasporto e consegna all’indirizzo",
+        "registration": "Revisione e immatricolazione",
+        "other": "Altre spese (traduzioni, spedizioniere)",
+        "total": "Totale fino a casa"
+      },
+      "formulas": {
+        "customsValue": "prezzo + trasporto e assicurazione fino al confine UE",
+        "duty": "{{dutyRate}} × valore in dogana",
+        "vatBase": "valore in dogana + dazio + costi fino alla destinazione",
+        "vat": "{{vatRate}} × base IVA (aliquota del paese di sdoganamento)",
+        "national": "secondo le norme del paese di immatricolazione",
+        "total": "somma di tutte le voci, arrotondata"
+      },
+      "note": "L’esempio presuppone il dazio standard del 10 % (senza prova d’origine) e tariffe di trasporto tipiche. Gli importi sono arrotondati, quindi potrebbero non sommarsi esattamente. La stessa auto negli altri paesi UE è nella tabella della sezione 5."
     },
-    "s3": {
-      "title": "Tasse nazionali",
-      "text": "Imposte di immatricolazione e accise sono modellate secondo la legge di ciascun paese: cilindrata, CO₂, potenza, peso, età e valore, come richiede il paese. A Cipro, in Grecia, Croazia e Malta l'imposta deriva da calcolatori ufficiali: lì chiediamo l'importo o mostriamo un intervallo.\nSe inserisci CO₂ e potenza dai documenti, il risultato è esatto; altrimenti li stimiamo da motore e alimentazione."
+    "duty": {
+      "title": "Dazio",
+      "text": "Le aliquote provengono dalla tariffa doganale dell’UE (TARIC): 10 % per le autovetture, 22 % per pick-up e furgoni classificati come veicoli commerciali, 6–8 % per le moto. I veicoli con più di 30 anni in condizioni originali possono essere considerati da collezione – in tal caso il dazio è dello 0 %.\nIl dazio dello 0 % vale anche per le auto prodotte in un paese che ha un accordo con l’UE: USA (Regolamento (UE) 2026/1455, dal 1° luglio 2026 a fine 2029, con spedizione diretta dagli USA), Canada (CETA), Giappone (Accordo di partenariato economico) e Regno Unito (Accordo sugli scambi commerciali e la cooperazione). Serve una prova d’origine – la sola fattura non basta. Il VIN indica il paese di produzione (es. 1, 4, 5 – USA; 2 – Canada) e nel calcolatore puoi spuntare questa opzione.\nIl valore in dogana è il prezzo dell’auto con commissioni d’asta più trasporto e assicurazione fino al confine UE. I prezzi in valuta estera sono convertiti al tasso di cambio doganale del mese (fissato il penultimo mercoledì del mese precedente)."
     },
-    "s4": {
+    "vat": {
+      "title": "IVA all’importazione",
+      "text": "L’IVA si paga nel paese in cui l’auto viene sdoganata, alla sua aliquota – es. 19 % in Germania, 21 % nei Paesi Bassi e in Belgio, 23 % in Polonia. La base è il valore in dogana aumentato del dazio e dei costi di trasporto fino alla destinazione nell’UE.\nLe aziende possono usare il regime doganale 4200: sdoganare l’auto in un paese e versare l’IVA nel paese di immatricolazione. Il calcolatore mostra l’IVA del paese del porto, perché così paga la maggior parte dei privati."
+    },
+    "national": {
+      "title": "Imposte nazionali in 27 paesi",
+      "text": "Dopo lo sdoganamento ogni paese aggiunge la propria imposta: accisa (Polonia), una tassa di immatricolazione calcolata su CO₂, potenza, massa, età o valore dell’auto (es. Paesi Bassi, Francia, Danimarca, Finlandia, Portogallo) oppure nulla (es. Germania, Cechia, Svezia). La calcoliamo con le formule previste dalla legge di ciascun paese.\nA Cipro, in Grecia, Croazia, Malta e Romania l’imposta deriva dai calcolatori ufficiali delle amministrazioni – lì chiediamo l’importo o mostriamo un intervallo. Se inserisci CO₂ e potenza dai documenti dell’auto il risultato è più preciso; altrimenti li stimiamo da motore e carburante.",
+      "tableLead": "{{model}} fino a casa in ogni paese dell’UE (in euro):",
+      "colCountry": "Paese",
+      "colTax": "Imposta all’immatricolazione",
+      "colTotal": "Totale",
+      "none": "nessuna",
+      "unpriced": "Solo il calcolatore ufficiale del paese fornisce la tassa di immatricolazione – il totale non la comprende. Calcolatori ufficiali:"
+    },
+    "transport": {
       "title": "Trasporto e spese",
-      "text": "Il trasporto terrestre nel paese d'acquisto è calcolato dalla distanza tra la regione di ritiro e il porto di partenza con tariffe tipiche dei trasportatori. Nolo marittimo, spese portuali e d'agenzia sono prezzi tipici per rotta e porto UE.\nQueste voci sono stime: il preventivo di uno spedizioniere per la tua auto può differire, per questo mostriamo un intervallo."
+      "text": "Il trasporto via terra nel paese d’acquisto è calcolato dalla distanza tra il piazzale o la zona di ritiro e il porto di partenza, con tariffe tipiche dei vettori. Nolo marittimo, assicurazione (di solito 1,5–2 % del valore), spese portuali, di terminal e dello spedizioniere sono prezzi tipici per ogni rotta e porto UE.\nQueste voci sono stime – il preventivo di uno spedizioniere per la tua auto dipende da stagione, dimensioni, modalità di spedizione (container o RoRo) e condizioni dell’auto; per questo mostriamo un intervallo."
     },
-    "s5": {
+    "port": {
       "title": "Scelta del porto",
-      "text": "Il calcolatore valuta ogni porto UE porta a porta – nolo, spese portuali, IVA del paese del porto e consegna al tuo indirizzo – e propone il più conveniente. Puoi scegliere un altro porto e confrontare."
+      "text": "Il calcolatore valuta ogni porto UE fino a casa – nolo, spese portuali, IVA del paese del porto e consegna al tuo indirizzo – e propone il più conveniente. Puoi scegliere un altro porto e confrontare. Il porto più vicino spesso non è il più economico, perché aliquote IVA e nolo sono diversi."
     },
-    "s6": {
-      "title": "Cosa il calcolo non può sapere",
-      "text": "Le reali condizioni dell'auto, i danni nascosti, le variazioni di prezzo alle aste, i movimenti dei cambi dopo il calcolo e le decisioni individuali delle autorità. Il risultato è informativo, non una decisione doganale né una consulenza fiscale."
+    "sources": {
+      "title": "Fonti",
+      "text": "Verifichiamo le aliquote su fonti ufficiali dell’UE e delle amministrazioni nazionali:",
+      "taric": "La tariffa doganale dell’UE – aliquote del dazio per autovetture, veicoli commerciali e moto.",
+      "origin": "Il portale della Commissione europea sugli accordi commerciali dell’UE – regole d’origine e dazio preferenziale (CETA, Giappone, Regno Unito).",
+      "eurlex": "I testi del diritto dell’UE, incluso il Regolamento (UE) 2026/1455 sui dazi per le merci statunitensi.",
+      "ecb": "I tassi di cambio di riferimento della Banca centrale europea.",
+      "vat": "La Commissione europea – aliquote IVA e imposte negli Stati membri."
     },
-    "s7": {
+    "changes": {
+      "title": "Cronologia delle modifiche",
+      "text": "Cosa abbiamo cambiato nelle regole di calcolo e quando:",
+      "c20261028": "Metodologia ampliata: esempio passo per passo, tabella dei 27 paesi, fonti.",
+      "c20261026": "Dazio dello 0 % per le auto prodotte in USA, Canada, Giappone e Regno Unito con prova d’origine; aliquota separata per i pick-up; nessuna accisa polacca sui veicoli da collezione.",
+      "c20261025": "Formule della tassa di immatricolazione per Slovacchia, Lituania e Ungheria; confermato che la Lettonia non la applica.",
+      "c20261024": "Tassa di immatricolazione per ogni paese UE; valore in dogana al tasso di cambio doganale del mese."
+    },
+    "limits": {
+      "title": "Cosa il calcolo non sa",
+      "text": "Le condizioni reali dell’auto, i danni nascosti, le variazioni di prezzo alle aste, i movimenti dei cambi dopo il calcolo o le decisioni individuali delle amministrazioni (es. una diversa classificazione di un pick-up). Il risultato è solo indicativo – non è una decisione doganale né una consulenza fiscale."
+    },
+    "independence": {
       "title": "Indipendenza",
-      "text": "Carglo non vende, compra né spedisce auto e non prende commissioni dagli importatori per il risultato. Guadagniamo con il report PDF a pagamento. Hai trovato un errore o una tariffa non aggiornata? Scrivi a {{email}}: correggiamo."
+      "text": "Carglo non vende, non compra e non importa auto e non prende commissioni dagli importatori per il risultato. Guadagniamo con il report PDF a pagamento. Hai trovato un errore o un’aliquota non aggiornata? Scrivi a {{email}} – la correggeremo."
+    },
+    "faq": {
+      "title": "Domande frequenti",
+      "q1": "Il risultato del calcolatore è vincolante?",
+      "a1": "No. Gli importi definitivi di dazio, IVA e imposte li stabiliscono la dogana e il fisco in base ai documenti. Applichiamo le stesse norme, quindi le imposte di solito coincidono a pochi punti percentuali – le differenze derivano soprattutto dal cambio nel giorno dello sdoganamento e dal prezzo del trasporto.",
+      "q2": "Perché il mio spedizioniere mi ha dato un altro prezzo per il trasporto?",
+      "a2": "Usiamo tariffe tipiche per rotta e porto. Un preventivo concreto dipende da stagione, dimensioni dell’auto, spedizione in container o RoRo, condizioni del veicolo e margine dell’azienda. Per questo mostriamo un intervallo – un preventivo reale dovrebbe rientrarvi.",
+      "q3": "Ogni quanto aggiornate le aliquote?",
+      "a3": "Il cambio doganale ogni mese, i tassi di cambio in continuo, le aliquote di dazio, IVA e imposte nazionali a ogni modifica di legge. La data dell’ultima verifica è in cima a questa pagina, le modifiche alle regole nella cronologia.",
+      "q4": "Come faccio a sapere se la mia auto ha diritto al dazio dello 0 %?",
+      "a4": "Conta il paese di produzione, non quello d’acquisto, più una prova d’origine (dichiarazione dell’esportatore o documenti). Il primo carattere del VIN indica il paese di produzione. Senza prova la dogana applica il 10 % standard.",
+      "q5": "L’IVA si calcola sul prezzo dell’auto o sul totale?",
+      "a5": "Su una base che comprende il valore in dogana (l’auto con il trasporto fino al confine UE), il dazio e i costi di trasporto fino alla destinazione. Per questo l’IVA è più alta che se fosse calcolata sul solo prezzo dell’auto.",
+      "q6": "Perché nel mio paese costa di più che in un paese vicino?",
+      "a6": "Di solito per una tassa di immatricolazione o un’accisa – in alcuni paesi è pochi punti percentuali del valore dell’auto, in altri diverse decine. Il confronto di tutti i paesi UE è nella tabella della sezione 5."
     }
   },
   "glossary": {

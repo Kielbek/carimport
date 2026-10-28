@@ -1712,35 +1712,133 @@
   "method": {
     "eyebrow": "Metodología",
     "title": "Cómo calculamos el coste de importar un coche",
-    "lead": "Carglo calcula cada paso, de la subasta a la matriculación, con las mismas reglas que usan las administraciones y los transportistas. Aquí explicamos de dónde salen las cifras y dónde son estimaciones.",
-    "updated": "Tarifas y normas revisadas: {{date}}",
-    "s1": {
+    "lead": "Carglo calcula cada etapa, de la subasta a la matriculación, según las normas aduaneras y fiscales de la UE y de los Estados miembros. A continuación mostramos las fórmulas, un ejemplo real de nuestra calculadora, las fuentes de los tipos y dónde las cifras son estimaciones.",
+    "updated": "Tipos y normas comprobados: {{date}}",
+    "toc": "Índice",
+    "flow": {
+      "s1": {
+        "title": "Compra",
+        "text": "precio del coche con tasas de subasta o concesionario"
+      },
+      "s2": {
+        "title": "Transporte al puerto",
+        "text": "camión portacoches hasta el puerto de exportación"
+      },
+      "s3": {
+        "title": "Flete marítimo",
+        "text": "contenedor o RoRo, seguro"
+      },
+      "s4": {
+        "title": "Despacho en la UE",
+        "text": "arancel e IVA de importación en el puerto"
+      },
+      "s5": {
+        "title": "Impuestos nacionales",
+        "text": "impuesto especial o de matriculación"
+      },
+      "s6": {
+        "title": "Matriculación",
+        "text": "inspección, traducciones, placas"
+      }
+    },
+    "scope": {
       "title": "Qué incluye el cálculo",
-      "text": "La compra con comisiones de subasta o concesionario, el transporte al puerto, el flete marítimo y el seguro, las tasas portuarias y de agente de aduanas, el arancel, el IVA de importación, los impuestos nacionales, la entrega en tu dirección y la inspección y matriculación en tu país.\nCada resultado tiene tres escenarios –optimista, esperado y pesimista– porque los precios del transporte y algunas tasas varían."
+      "text": "Calculamos el coste completo puerta a puerta: compra con tasas de subasta o concesionario, transporte al puerto, flete marítimo y seguro, tasas portuarias y del agente de aduanas, arancel, IVA de importación, impuestos nacionales, entrega en tu dirección e inspección técnica y matriculación en tu país.\nCada resultado tiene tres escenarios – optimista, esperado y pesimista – porque los precios del transporte y algunas tasas varían. En el informe PDF cada partida muestra su base y su tipo."
     },
-    "s2": {
-      "title": "Arancel e IVA",
-      "text": "Los tipos siguen la Nomenclatura Combinada de la UE (TARIC): 10 % para turismos, hasta 22 % para pick-ups y furgonetas, y las reglas de vehículos históricos de más de 30 años. El valor en aduana es el precio más transporte y seguro hasta la frontera de la UE.\nLas divisas se convierten al tipo aduanero del mes (tipos del penúltimo miércoles del mes anterior) y el resto de importes a los tipos actuales del banco central."
+    "example": {
+      "title": "Un ejemplo paso a paso",
+      "lead": "Un {{model}} comprado en EE. UU. por {{price}}, importado a: {{country}}, despachado en el puerto de {{port}}. Las cifras salen de nuestra calculadora ({{date}}) – con las mismas fórmulas que aplican la aduana y Hacienda.",
+      "colItem": "Partida",
+      "colFormula": "Cómo lo calculamos",
+      "colAmount": "Importe",
+      "rows": {
+        "price": "Precio del coche con tasas de subasta",
+        "toBorder": "Transporte y seguro hasta la frontera de la UE",
+        "customsValue": "Valor en aduana (CIF)",
+        "duty": "Arancel",
+        "toDestination": "Tasas portuarias y costes hasta el destino",
+        "vatBase": "Base del IVA",
+        "vat": "IVA de importación",
+        "restTransport": "Resto del transporte y entrega en la dirección",
+        "registration": "Inspección y matriculación",
+        "other": "Otras tasas (traducciones, agente)",
+        "total": "Total puerta a puerta"
+      },
+      "formulas": {
+        "customsValue": "precio + transporte y seguro hasta la frontera de la UE",
+        "duty": "{{dutyRate}} × valor en aduana",
+        "vatBase": "valor en aduana + arancel + costes hasta el destino",
+        "vat": "{{vatRate}} × base del IVA (tipo del país de despacho)",
+        "national": "según las normas del país de matriculación",
+        "total": "suma de todas las partidas, redondeada"
+      },
+      "note": "El ejemplo supone el arancel estándar del 10 % (sin prueba de origen) y tarifas de transporte habituales. Los importes están redondeados, por lo que pueden no sumar exactamente. El mismo coche en otros países de la UE aparece en la tabla de la sección 5."
     },
-    "s3": {
-      "title": "Impuestos nacionales",
-      "text": "Los impuestos de matriculación y especiales se modelan según la ley de cada país: cilindrada, CO₂, potencia, peso, antigüedad y valor, según lo que exija el país. En Chipre, Grecia, Croacia y Malta el impuesto sale de calculadoras oficiales: ahí pedimos el importe o mostramos un rango.\nSi introduces el CO₂ y la potencia de la documentación, el resultado es exacto; si no, los estimamos a partir del motor y el combustible."
+    "duty": {
+      "title": "Arancel",
+      "text": "Los tipos proceden del arancel aduanero de la UE (TARIC): 10 % para turismos, 22 % para pickups y furgonetas clasificadas como vehículos de mercancías, 6–8 % para motocicletas. Los vehículos de más de 30 años en estado original pueden considerarse de colección – entonces el arancel es del 0 %.\nEl arancel del 0 % también se aplica a los coches fabricados en un país con acuerdo con la UE: EE. UU. (Reglamento (UE) 2026/1455, del 1 de julio de 2026 a finales de 2029, con envío directo desde EE. UU.), Canadá (CETA), Japón (Acuerdo de Asociación Económica) y el Reino Unido (Acuerdo de Comercio y Cooperación). La condición es una prueba de origen – una factura no basta. El VIN indica el país de fabricación (p. ej., 1, 4, 5 – EE. UU.; 2 – Canadá), y en la calculadora puedes marcar esta opción.\nEl valor en aduana es el precio del coche con tasas de subasta más el transporte y el seguro hasta la frontera de la UE. Los precios en divisas se convierten al tipo de cambio aduanero del mes (fijado el penúltimo miércoles del mes anterior)."
     },
-    "s4": {
+    "vat": {
+      "title": "IVA de importación",
+      "text": "El IVA se paga en el país donde se despacha el coche, a su tipo – p. ej., 19 % en Alemania, 21 % en los Países Bajos y Bélgica, 23 % en Polonia. La base es el valor en aduana más el arancel y los costes de transporte hasta el destino en la UE.\nLas empresas pueden usar el régimen aduanero 4200: despachar el coche en un país y liquidar el IVA en el país de matriculación. La calculadora muestra el IVA del país del puerto, porque así paga la mayoría de los particulares."
+    },
+    "national": {
+      "title": "Impuestos nacionales en 27 países",
+      "text": "Tras el despacho, cada país añade su propio impuesto: impuesto especial (Polonia), un impuesto de matriculación según CO₂, potencia, masa, antigüedad o valor del coche (p. ej., Países Bajos, Francia, Dinamarca, Finlandia, Portugal) o nada (p. ej., Alemania, Chequia, Suecia). Lo calculamos con las fórmulas de la ley de cada país.\nEn Chipre, Grecia, Croacia, Malta y Rumanía el impuesto sale de las calculadoras oficiales de las administraciones – allí pedimos el importe o mostramos un rango. Si introduces el CO₂ y la potencia de la documentación, el resultado es más preciso; si no, los estimamos a partir del motor y el combustible.",
+      "tableLead": "{{model}} puerta a puerta en cada país de la UE (en euros):",
+      "colCountry": "País",
+      "colTax": "Impuesto en la matriculación",
+      "colTotal": "Total",
+      "none": "ninguno",
+      "unpriced": "Solo la calculadora oficial del país da el impuesto de matriculación – el total no lo incluye. Calculadoras oficiales:"
+    },
+    "transport": {
       "title": "Transporte y tasas",
-      "text": "El transporte terrestre en el país de compra se calcula por la distancia entre la región de recogida y el puerto de salida con tarifas típicas de transportistas. El flete marítimo y las tasas portuarias y de agencia son precios típicos por ruta y puerto de la UE.\nEstas partidas son estimaciones: la oferta de un transitario para tu coche puede variar, por eso mostramos un rango."
+      "text": "El transporte terrestre en el país de compra se calcula a partir de la distancia entre el recinto o la región de recogida y el puerto de salida, con tarifas habituales de transportistas. El flete marítimo, el seguro (normalmente 1,5–2 % del valor del coche), las tasas portuarias, de terminal y del agente de aduanas son precios típicos para cada ruta y puerto de la UE.\nEstas partidas son estimaciones – la oferta de un transitario para tu coche depende de la temporada, el tamaño, el modo de envío (contenedor o RoRo) y el estado del coche; por eso mostramos un rango."
     },
-    "s5": {
+    "port": {
       "title": "Elección del puerto",
-      "text": "La calculadora valora cada puerto de la UE puerta a puerta –flete, tasas portuarias, IVA del país del puerto y entrega en tu dirección– y propone el más barato. Puedes elegir otro puerto y comparar."
+      "text": "La calculadora valora cada puerto de la UE puerta a puerta – flete, tasas portuarias, IVA del país del puerto y entrega en tu dirección – y propone el más barato. Puedes elegir otro puerto y comparar. El puerto más cercano a menudo no es el más barato, porque los tipos de IVA y el flete difieren."
     },
-    "s6": {
-      "title": "Lo que el cálculo no puede saber",
-      "text": "El estado real del coche, los daños ocultos, los cambios de precio en las subastas, los movimientos del tipo de cambio después del cálculo y las decisiones individuales de las administraciones. El resultado es informativo, no una resolución aduanera ni asesoramiento fiscal."
+    "sources": {
+      "title": "Fuentes",
+      "text": "Comprobamos los tipos en fuentes oficiales de la UE y de las administraciones nacionales:",
+      "taric": "El arancel aduanero de la UE – tipos para turismos, vehículos de mercancías y motocicletas.",
+      "origin": "El portal de la Comisión Europea sobre los acuerdos comerciales de la UE – normas de origen y arancel preferente (CETA, Japón, Reino Unido).",
+      "eurlex": "Textos legales de la UE, incluido el Reglamento (UE) 2026/1455 sobre aranceles a mercancías de EE. UU.",
+      "ecb": "Tipos de cambio de referencia del Banco Central Europeo.",
+      "vat": "La Comisión Europea – tipos de IVA e impuestos en los Estados miembros."
     },
-    "s7": {
+    "changes": {
+      "title": "Historial de cambios",
+      "text": "Qué hemos cambiado en las reglas de cálculo y cuándo:",
+      "c20261028": "Metodología ampliada: ejemplo paso a paso, tabla de 27 países, fuentes.",
+      "c20261026": "Arancel del 0 % para coches fabricados en EE. UU., Canadá, Japón y el Reino Unido con prueba de origen; tipo propio para pickups; sin impuesto especial polaco para vehículos de colección.",
+      "c20261025": "Fórmulas del impuesto de matriculación de Eslovaquia, Lituania y Hungría; confirmado que Letonia no lo cobra.",
+      "c20261024": "Impuesto de matriculación para cada país de la UE; valor en aduana al tipo de cambio aduanero del mes."
+    },
+    "limits": {
+      "title": "Lo que el cálculo no sabe",
+      "text": "El estado real del coche, los daños ocultos, los cambios de precio en las subastas, los movimientos de divisas después del cálculo ni las decisiones individuales de las administraciones (p. ej., otra clasificación de un pickup). El resultado es solo informativo – no es una decisión aduanera ni asesoramiento fiscal."
+    },
+    "independence": {
       "title": "Independencia",
-      "text": "Carglo no vende, compra ni envía coches y no cobra comisiones de importadores por el resultado. Ganamos con el informe PDF de pago. ¿Has visto un error o una tarifa desactualizada? Escribe a {{email}} y lo corregimos."
+      "text": "Carglo no vende, compra ni importa coches y no cobra comisión a los importadores por el resultado. Ganamos con el informe PDF de pago. ¿Has visto un error o un tipo desactualizado? Escribe a {{email}} – lo corregiremos."
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "q1": "¿Es vinculante el resultado de la calculadora?",
+      "a1": "No. Los importes definitivos de arancel, IVA e impuestos los fijan la aduana y Hacienda a partir de los documentos. Aplicamos las mismas normas, así que los impuestos suelen coincidir con pocos puntos de diferencia – las diferencias vienen sobre todo del tipo de cambio el día del despacho y del precio del transporte.",
+      "q2": "¿Por qué mi transitario me ha dado otro precio de transporte?",
+      "a2": "Usamos tarifas habituales para la ruta y el puerto. Una oferta concreta depende de la temporada, el tamaño del coche, el envío en contenedor o RoRo, su estado y el margen de la empresa. Por eso mostramos un rango – una oferta real debería caer dentro.",
+      "q3": "¿Con qué frecuencia actualizáis los tipos?",
+      "a3": "El tipo de cambio aduanero cada mes, los tipos de cambio de forma continua, los tipos de arancel, IVA e impuestos nacionales con cada cambio legal. La fecha de la última comprobación está arriba en esta página, y los cambios de reglas en el historial.",
+      "q4": "¿Cómo sé si mi coche tiene arancel del 0 %?",
+      "a4": "Cuenta el país de fabricación, no el de compra, y una prueba de origen (declaración del exportador o documentos). El primer carácter del VIN indica el país de fabricación. Sin prueba, la aduana aplica el 10 % estándar.",
+      "q5": "¿El IVA se calcula sobre el precio del coche o sobre el total?",
+      "a5": "Sobre una base que incluye el valor en aduana (el coche con el transporte hasta la frontera de la UE), el arancel y los costes de transporte hasta el destino. Por eso el IVA es mayor que si se calculara solo sobre el precio del coche.",
+      "q6": "¿Por qué sale más caro en mi país que en uno vecino?",
+      "a6": "Casi siempre por un impuesto de matriculación o especial – en algunos países es un pequeño porcentaje del valor del coche, en otros varias decenas. La comparación de todos los países de la UE está en la tabla de la sección 5."
     }
   },
   "glossary": {

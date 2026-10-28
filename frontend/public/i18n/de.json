@@ -1711,36 +1711,134 @@
   },
   "method": {
     "eyebrow": "Methodik",
-    "title": "So berechnen wir die Kosten des Autoimports",
-    "lead": "Carglo bepreist jeden Schritt von der Auktion bis zur Zulassung nach denselben Regeln, die Behörden und Spediteure anwenden. Hier steht, woher die Zahlen kommen und wo sie Schätzungen sind.",
-    "updated": "Sätze und Vorschriften zuletzt geprüft: {{date}}",
-    "s1": {
+    "title": "So berechnen wir die Kosten für den Autoimport",
+    "lead": "Carglo berechnet jede Etappe von der Auktion bis zur Zulassung nach den Zoll- und Steuervorschriften der EU und der Mitgliedstaaten. Unten zeigen wir die Formeln, ein echtes Beispiel aus unserem Rechner, die Quellen der Sätze und wo die Zahlen Schätzungen sind.",
+    "updated": "Sätze und Vorschriften geprüft: {{date}}",
+    "toc": "Inhalt",
+    "flow": {
+      "s1": {
+        "title": "Kauf",
+        "text": "Autopreis mit Auktions- oder Händlergebühren"
+      },
+      "s2": {
+        "title": "Transport zum Hafen",
+        "text": "Autotransporter vom Gelände zum Exporthafen"
+      },
+      "s3": {
+        "title": "Seefracht",
+        "text": "Container oder RoRo, Versicherung"
+      },
+      "s4": {
+        "title": "Verzollung in der EU",
+        "text": "Zoll und Einfuhrumsatzsteuer im Hafen"
+      },
+      "s5": {
+        "title": "Nationale Steuern",
+        "text": "Verbrauchsteuer oder Zulassungssteuer"
+      },
+      "s6": {
+        "title": "Zulassung",
+        "text": "Prüfung, Übersetzungen, Kennzeichen"
+      }
+    },
+    "scope": {
       "title": "Was die Berechnung umfasst",
-      "text": "Den Kauf mit Auktions- oder Händlergebühren, den Transport zum Hafen, Seefracht und Versicherung, Hafen- und Zollagenturgebühren, Zoll, Einfuhrumsatzsteuer, nationale Steuern, die Lieferung an Ihre Adresse sowie Prüfung und Zulassung in Ihrem Land.\nJedes Ergebnis hat drei Szenarien – optimistisch, erwartet und pessimistisch –, weil Transportpreise und einige Gebühren schwanken."
+      "text": "Wir berechnen die vollständigen Kosten bis vor die Haustür: Kauf mit Auktions- oder Händlergebühren, Transport zum Hafen, Seefracht und Versicherung, Hafen- und Zollagentengebühren, Zoll, Einfuhrumsatzsteuer, nationale Steuern, Lieferung an Ihre Adresse sowie technische Prüfung und Zulassung in Ihrem Land.\nJedes Ergebnis hat drei Szenarien – optimistisch, erwartet und pessimistisch –, weil Transportpreise und einige Gebühren schwanken. Im PDF-Bericht ist für jede Position Bemessungsgrundlage und Satz aufgeschlüsselt."
     },
-    "s2": {
-      "title": "Zoll und Einfuhrumsatzsteuer",
-      "text": "Die Zollsätze folgen der Kombinierten Nomenklatur der EU (TARIC): 10 % für Pkw, bis 22 % für Pick-ups und Transporter, dazu die Regeln für historische Fahrzeuge über 30 Jahre. Der Zollwert ist der Preis plus Transport und Versicherung bis zur EU-Grenze.\nFremdwährungen rechnen wir mit dem im Monat gültigen Zollkurs um (Kurse des vorletzten Mittwochs des Vormonats), andere Beträge mit aktuellen Zentralbankkursen."
+    "example": {
+      "title": "Ein Beispiel Schritt für Schritt",
+      "lead": "Ein {{model}}, in den USA für {{price}} gekauft, Einfuhr nach: {{country}}, Verzollung im Hafen {{port}}. Die Zahlen stammen aus unserem Rechner ({{date}}) – mit denselben Formeln, die Zoll und Finanzamt anwenden.",
+      "colItem": "Position",
+      "colFormula": "So rechnen wir",
+      "colAmount": "Betrag",
+      "rows": {
+        "price": "Autopreis mit Auktionsgebühren",
+        "toBorder": "Transport und Versicherung bis zur EU-Grenze",
+        "customsValue": "Zollwert (CIF)",
+        "duty": "Zoll",
+        "toDestination": "Hafengebühren und Kosten bis zum Bestimmungsort",
+        "vatBase": "Bemessungsgrundlage der Einfuhrumsatzsteuer",
+        "vat": "Einfuhrumsatzsteuer",
+        "restTransport": "Übriger Transport und Lieferung an die Adresse",
+        "registration": "Technische Prüfung und Zulassung",
+        "other": "Sonstige Gebühren (Übersetzungen, Agentur)",
+        "total": "Gesamt bis vor die Haustür"
+      },
+      "formulas": {
+        "customsValue": "Preis + Transport und Versicherung bis zur EU-Grenze",
+        "duty": "{{dutyRate}} × Zollwert",
+        "vatBase": "Zollwert + Zoll + Kosten bis zum Bestimmungsort",
+        "vat": "{{vatRate}} × Bemessungsgrundlage (Satz des Verzollungslandes)",
+        "national": "nach den Vorschriften des Zulassungslandes",
+        "total": "Summe aller Positionen, gerundet"
+      },
+      "note": "Das Beispiel geht vom Regelzoll von 10 % (ohne Ursprungsnachweis) und typischen Transportsätzen aus. Die Beträge sind gerundet und ergeben daher nicht immer exakt die Summe. Dasselbe Auto in anderen EU-Ländern steht in der Tabelle in Abschnitt 5."
     },
-    "s3": {
-      "title": "Nationale Steuern",
-      "text": "Zulassungs- und Verbrauchsteuern bilden wir nach dem Recht jedes Landes ab: Hubraum, CO₂, Leistung, Gewicht, Alter und Wert – so, wie es das Land verlangt. In Zypern, Griechenland, Kroatien und Malta ergibt sich die Steuer aus amtlichen Rechnern – dort fragen wir nach dem Betrag oder zeigen eine Spanne.\nWenn Sie CO₂ und Leistung aus den Papieren eingeben, ist das Ergebnis exakt; sonst schätzen wir sie aus Motor und Kraftstoff."
+    "duty": {
+      "title": "Zoll",
+      "text": "Die Zollsätze stammen aus dem EU-Zolltarif (TARIC): 10 % für Pkw, 22 % für Pick-ups und Transporter, die als Lkw eingestuft werden, 6–8 % für Motorräder. Fahrzeuge über 30 Jahre im Originalzustand können als Sammlerstücke gelten – dann beträgt der Zoll 0 %.\n0 % Zoll gelten auch für Autos, die in einem Land mit EU-Abkommen hergestellt wurden: in den USA (Verordnung (EU) 2026/1455, vom 1. Juli 2026 bis Ende 2029, bei direktem Versand aus den USA), in Kanada (CETA), in Japan (Wirtschaftspartnerschaftsabkommen) und im Vereinigten Königreich (Handels- und Kooperationsabkommen). Voraussetzung ist ein Ursprungsnachweis – eine Rechnung allein reicht nicht. Die FIN verrät das Herstellungsland (z. B. 1, 4, 5 – USA; 2 – Kanada), und im Rechner können Sie diese Option ankreuzen.\nDer Zollwert ist der Autopreis mit Auktionsgebühren plus Transport und Versicherung bis zur EU-Grenze. Preise in Fremdwährung rechnen wir mit dem Zollkurs des jeweiligen Monats um (festgelegt am vorletzten Mittwoch des Vormonats)."
     },
-    "s4": {
+    "vat": {
+      "title": "Einfuhrumsatzsteuer",
+      "text": "Die Einfuhrumsatzsteuer wird in dem Land gezahlt, in dem das Auto verzollt wird, zu dessen Satz – z. B. 19 % in Deutschland, 21 % in den Niederlanden und Belgien, 23 % in Polen. Bemessungsgrundlage ist der Zollwert zuzüglich Zoll und Transportkosten bis zum Bestimmungsort in der EU.\nUnternehmen können das Zollverfahren 4200 nutzen: das Auto in einem Land verzollen und die Steuer im Zulassungsland abrechnen. Der Rechner zeigt die Steuer des Hafenlandes, weil die meisten Privatkäufer so zahlen."
+    },
+    "national": {
+      "title": "Nationale Steuern in 27 Ländern",
+      "text": "Nach der Verzollung erhebt jedes Land seine eigene Steuer: Verbrauchsteuer (Polen), eine Zulassungssteuer nach CO₂, Leistung, Masse, Alter oder Wert des Autos (z. B. Niederlande, Frankreich, Dänemark, Finnland, Portugal) oder gar nichts (z. B. Deutschland, Tschechien, Schweden). Wir berechnen sie mit den Formeln aus den Gesetzen jedes Landes.\nIn Zypern, Griechenland, Kroatien, Malta und Rumänien ergibt sich die Steuer aus den offiziellen Rechnern der Behörden – dort fragen wir nach dem Betrag oder zeigen eine Spanne. Wenn Sie CO₂ und Leistung aus den Fahrzeugpapieren angeben, ist das Ergebnis am genauesten; sonst schätzen wir sie aus Motor und Kraftstoff.",
+      "tableLead": "{{model}} bis vor die Haustür in jedem EU-Land (in Euro):",
+      "colCountry": "Land",
+      "colTax": "Steuer bei der Zulassung",
+      "colTotal": "Gesamt",
+      "none": "keine",
+      "unpriced": "Die Zulassungssteuer liefert nur der offizielle Rechner des Landes – die Summe enthält sie nicht. Offizielle Rechner:"
+    },
+    "transport": {
       "title": "Transport und Gebühren",
-      "text": "Den Landtransport im Kaufland bepreisen wir aus der Entfernung zwischen Abholregion und Abfahrtshafen mit typischen Spediteurstarifen. Seefracht, Hafen- und Agenturgebühren sind typische Preise je Route und EU-Hafen.\nDiese Positionen sind Schätzungen – das Angebot eines Spediteurs für Ihr Auto kann abweichen, deshalb zeigen wir eine Spanne."
+      "text": "Den Landtransport im Kaufland berechnen wir aus der Entfernung zwischen Gelände oder Abholregion und Abgangshafen zu typischen Speditionstarifen. Seefracht, Versicherung (meist 1,5–2 % des Fahrzeugwerts), Hafen-, Terminal- und Zollagentengebühren sind typische Preise für jede Route und jeden EU-Hafen.\nDiese Positionen sind Schätzungen – das Angebot einer Spedition für Ihr Auto hängt von Saison, Größe, Versandart (Container oder RoRo) und Zustand ab, deshalb zeigen wir eine Spanne."
     },
-    "s5": {
+    "port": {
       "title": "Wahl des Hafens",
-      "text": "Der Rechner bepreist jeden EU-Hafen bis vor die Tür – Fracht, Hafengebühren, die Einfuhrumsatzsteuer des Hafenlandes und die Lieferung an Ihre Adresse – und schlägt den günstigsten vor. Sie können einen anderen Hafen wählen und vergleichen."
+      "text": "Der Rechner bewertet jeden EU-Hafen bis vor die Haustür – Fracht, Hafengebühren, Einfuhrumsatzsteuer des Hafenlandes und Lieferung an Ihre Adresse – und schlägt den günstigsten vor. Sie können einen anderen Hafen wählen und vergleichen. Der nächste Hafen ist oft nicht der günstigste, weil sich Steuersätze und Fracht unterscheiden."
     },
-    "s6": {
-      "title": "Was die Berechnung nicht wissen kann",
-      "text": "Den tatsächlichen Zustand des Autos, versteckte Schäden, Preisänderungen bei Auktionen, Kursbewegungen nach der Berechnung und individuelle Entscheidungen der Behörden. Das Ergebnis ist eine Information, keine Zollentscheidung und keine Steuerberatung."
+    "sources": {
+      "title": "Quellen",
+      "text": "Wir prüfen die Sätze anhand offizieller Quellen der EU und nationaler Behörden:",
+      "taric": "Der EU-Zolltarif – Zollsätze für Pkw, Lkw und Motorräder.",
+      "origin": "Portal der Europäischen Kommission zu EU-Handelsabkommen – Ursprungsregeln und Präferenzzoll (CETA, Japan, Vereinigtes Königreich).",
+      "eurlex": "EU-Rechtstexte, darunter die Verordnung (EU) 2026/1455 über Zölle auf Waren aus den USA.",
+      "ecb": "Euro-Referenzkurse der Europäischen Zentralbank.",
+      "vat": "Europäische Kommission – Mehrwertsteuersätze und Steuern in den Mitgliedstaaten."
     },
-    "s7": {
+    "changes": {
+      "title": "Änderungsverlauf",
+      "text": "Was wir an den Berechnungsregeln wann geändert haben:",
+      "c20261028": "Erweiterte Methodik: Beispiel Schritt für Schritt, Tabelle mit 27 Ländern, Quellen.",
+      "c20261026": "0 % Zoll für in den USA, Kanada, Japan und im Vereinigten Königreich hergestellte Autos mit Ursprungsnachweis; eigener Satz für Pick-ups; keine polnische Verbrauchsteuer auf Sammlerfahrzeuge.",
+      "c20261025": "Formeln der Zulassungssteuer für die Slowakei, Litauen und Ungarn; bestätigt, dass Lettland keine erhebt.",
+      "c20261024": "Zulassungssteuer für jedes EU-Land; Zollwert zum Zollkurs des Monats."
+    },
+    "limits": {
+      "title": "Was die Berechnung nicht weiß",
+      "text": "Den tatsächlichen Zustand des Autos, versteckte Schäden, Preisänderungen auf Auktionen, Wechselkursbewegungen nach der Berechnung oder individuelle Entscheidungen der Behörden (z. B. eine andere Einstufung eines Pick-ups). Das Ergebnis dient nur der Information – es ist keine Zollentscheidung und keine Steuerberatung."
+    },
+    "independence": {
       "title": "Unabhängigkeit",
-      "text": "Carglo verkauft, kauft und verschifft keine Autos und nimmt von Importeuren keine Provision für das Ergebnis. Wir verdienen am kostenpflichtigen PDF-Bericht. Fehler oder veralteter Satz entdeckt? Schreiben Sie an {{email}} – wir korrigieren es."
+      "text": "Carglo verkauft, kauft und importiert keine Autos und nimmt keine Provision von Importeuren für das Ergebnis. Wir verdienen am kostenpflichtigen PDF-Bericht. Fehler oder veralteten Satz entdeckt? Schreiben Sie an {{email}} – wir korrigieren es."
+    },
+    "faq": {
+      "title": "Häufige Fragen",
+      "q1": "Ist das Ergebnis des Rechners verbindlich?",
+      "a1": "Nein. Zoll, Einfuhrumsatzsteuer und Steuern legen Zoll und Finanzamt anhand der Unterlagen fest. Wir wenden dieselben Vorschriften an, daher stimmen die Steuern meist auf wenige Prozent überein – Abweichungen entstehen vor allem durch den Wechselkurs am Tag der Verzollung und den Transportpreis.",
+      "q2": "Warum hat meine Spedition einen anderen Transportpreis genannt?",
+      "a2": "Wir verwenden typische Sätze für Route und Hafen. Ein konkretes Angebot hängt von Saison, Fahrzeuggröße, Container- oder RoRo-Versand, Zustand des Autos und Marge der Firma ab. Deshalb zeigen wir eine Spanne – ein echtes Angebot sollte darin liegen.",
+      "q3": "Wie oft aktualisieren Sie die Sätze?",
+      "a3": "Den Zollkurs monatlich, Wechselkurse laufend, Zoll-, Umsatzsteuer- und nationale Steuersätze bei jeder Gesetzesänderung. Das Datum der letzten Prüfung steht oben auf dieser Seite, Regeländerungen im Änderungsverlauf.",
+      "q4": "Woran erkenne ich, ob mein Auto 0 % Zoll bekommt?",
+      "a4": "Entscheidend ist das Herstellungsland, nicht das Kaufland, und ein Ursprungsnachweis (Erklärung des Ausführers oder Unterlagen). Das erste Zeichen der FIN zeigt das Herstellungsland. Ohne Nachweis berechnet der Zoll die regulären 10 %.",
+      "q5": "Wird die Einfuhrumsatzsteuer vom Autopreis oder vom Gesamtbetrag berechnet?",
+      "a5": "Von einer Grundlage aus Zollwert (Auto mit Transport bis zur EU-Grenze), Zoll und Transportkosten bis zum Bestimmungsort. Deshalb ist die Steuer höher, als wenn sie nur vom Autopreis berechnet würde.",
+      "q6": "Warum ist es in meinem Land teurer als im Nachbarland?",
+      "a6": "Meist wegen einer Zulassungs- oder Verbrauchsteuer – in manchen Ländern sind es wenige, in anderen mehrere Dutzend Prozent des Fahrzeugwerts. Den Vergleich aller EU-Länder finden Sie in der Tabelle in Abschnitt 5."
     }
   },
   "glossary": {

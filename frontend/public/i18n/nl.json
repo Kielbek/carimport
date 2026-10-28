@@ -1712,35 +1712,133 @@
   "method": {
     "eyebrow": "Methodiek",
     "title": "Zo berekenen we de kosten van het importeren van een auto",
-    "lead": "Carglo rekent elke stap, van veiling tot registratie, met dezelfde regels die overheden en vervoerders gebruiken. Hier lees je waar de cijfers vandaan komen en waar het schattingen zijn.",
-    "updated": "Tarieven en regels laatst gecontroleerd: {{date}}",
-    "s1": {
+    "lead": "Carglo berekent elke stap, van veiling tot registratie, volgens de douane- en belastingregels van de EU en de lidstaten. Hieronder vind je de formules, een echt voorbeeld uit onze calculator, de bronnen van de tarieven en waar de cijfers schattingen zijn.",
+    "updated": "Tarieven en regels gecontroleerd: {{date}}",
+    "toc": "Inhoud",
+    "flow": {
+      "s1": {
+        "title": "Aankoop",
+        "text": "prijs van de auto met veiling- of dealerkosten"
+      },
+      "s2": {
+        "title": "Transport naar de haven",
+        "text": "autotransporter van het terrein naar de exporthaven"
+      },
+      "s3": {
+        "title": "Zeevracht",
+        "text": "container of RoRo, verzekering"
+      },
+      "s4": {
+        "title": "Inklaring in de EU",
+        "text": "invoerrecht en invoer-btw in de haven"
+      },
+      "s5": {
+        "title": "Nationale belastingen",
+        "text": "accijns of registratiebelasting"
+      },
+      "s6": {
+        "title": "Registratie",
+        "text": "keuring, vertalingen, kentekenplaten"
+      }
+    },
+    "scope": {
       "title": "Wat de berekening omvat",
-      "text": "De aankoop met veiling- of dealerkosten, transport naar de haven, zeevracht en verzekering, haven- en douane-expediteurkosten, invoerrechten, invoer-btw, nationale belastingen, levering op je adres en de keuring en registratie in je land.\nElke uitkomst heeft drie scenario's – optimistisch, verwacht en pessimistisch – omdat transportprijzen en sommige kosten schommelen."
+      "text": "We berekenen de volledige kosten tot aan de deur: aankoop met veiling- of dealerkosten, transport naar de haven, zeevracht en verzekering, haven- en douane-expediteurskosten, invoerrecht, invoer-btw, nationale belastingen, levering op je adres en de keuring en registratie in je land.\nElk resultaat heeft drie scenario’s – optimistisch, verwacht en pessimistisch – omdat transportprijzen en sommige kosten schommelen. In het pdf-rapport staat bij elke post de grondslag en het tarief."
     },
-    "s2": {
-      "title": "Invoerrechten en btw",
-      "text": "De tarieven volgen de Gecombineerde Nomenclatuur van de EU (TARIC): 10% voor personenauto's, tot 22% voor pick-ups en bestelauto's, en de regels voor historische voertuigen ouder dan 30 jaar. De douanewaarde is de prijs plus transport en verzekering tot de EU-grens.\nVreemde valuta rekenen we om tegen de douanekoers van de maand (koersen van de voorlaatste woensdag van de vorige maand), andere bedragen tegen de actuele koersen van de centrale bank."
+    "example": {
+      "title": "Een voorbeeld, stap voor stap",
+      "lead": "Een {{model}}, in de VS gekocht voor {{price}}, geïmporteerd naar: {{country}}, ingeklaard in de haven van {{port}}. De cijfers komen uit onze calculator ({{date}}) – met dezelfde formules die de douane en de Belastingdienst gebruiken.",
+      "colItem": "Post",
+      "colFormula": "Zo rekenen we",
+      "colAmount": "Bedrag",
+      "rows": {
+        "price": "Prijs van de auto met veilingkosten",
+        "toBorder": "Transport en verzekering tot de EU-grens",
+        "customsValue": "Douanewaarde (CIF)",
+        "duty": "Invoerrecht",
+        "toDestination": "Havenkosten en kosten tot de bestemming",
+        "vatBase": "Grondslag btw",
+        "vat": "Invoer-btw",
+        "restTransport": "Overig transport en levering op het adres",
+        "registration": "Keuring en registratie",
+        "other": "Overige kosten (vertalingen, expediteur)",
+        "total": "Totaal tot aan de deur"
+      },
+      "formulas": {
+        "customsValue": "prijs + transport en verzekering tot de EU-grens",
+        "duty": "{{dutyRate}} × douanewaarde",
+        "vatBase": "douanewaarde + invoerrecht + kosten tot de bestemming",
+        "vat": "{{vatRate}} × grondslag (tarief van het land van inklaring)",
+        "national": "volgens de regels van het land van registratie",
+        "total": "som van alle posten, afgerond"
+      },
+      "note": "Het voorbeeld gaat uit van het standaard invoerrecht van 10% (zonder bewijs van oorsprong) en gangbare transporttarieven. De bedragen zijn afgerond en tellen daardoor niet altijd exact op. Dezelfde auto in andere EU-landen staat in de tabel in sectie 5."
     },
-    "s3": {
-      "title": "Nationale belastingen",
-      "text": "Registratiebelasting en accijns modelleren we volgens de wet van elk land: cilinderinhoud, CO₂, vermogen, gewicht, leeftijd en waarde, zoals het land vereist. In Cyprus, Griekenland, Kroatië en Malta volgt de belasting uit officiële calculators – daar vragen we het bedrag of tonen we een bandbreedte.\nAls je CO₂ en vermogen uit de papieren invult, is de uitkomst exact; anders schatten we ze op basis van motor en brandstof."
+    "duty": {
+      "title": "Invoerrecht",
+      "text": "De tarieven komen uit het douanetarief van de EU (TARIC): 10% voor personenauto’s, 22% voor pick-ups en bestelwagens die als vrachtwagen zijn ingedeeld, 6–8% voor motoren. Voertuigen ouder dan 30 jaar in originele staat kunnen als verzamelobject gelden – dan is het invoerrecht 0%.\nHet invoerrecht van 0% geldt ook voor auto’s die zijn gemaakt in een land waarmee de EU een akkoord heeft: de VS (Verordening (EU) 2026/1455, van 1 juli 2026 tot eind 2029, bij rechtstreekse verzending uit de VS), Canada (CETA), Japan (Economische Partnerschapsovereenkomst) en het Verenigd Koninkrijk (Handels- en Samenwerkingsovereenkomst). Voorwaarde is een bewijs van oorsprong – een factuur alleen is niet genoeg. Het VIN geeft het land van productie aan (bijv. 1, 4, 5 – VS; 2 – Canada), en in de calculator kun je deze optie aanvinken.\nDe douanewaarde is de prijs van de auto met veilingkosten plus transport en verzekering tot de EU-grens. Prijzen in vreemde valuta rekenen we om tegen de douanewisselkoers van de maand (vastgesteld op de voorlaatste woensdag van de vorige maand)."
     },
-    "s4": {
+    "vat": {
+      "title": "Invoer-btw",
+      "text": "Btw betaal je in het land waar de auto wordt ingeklaard, tegen het tarief van dat land – bijv. 19% in Duitsland, 21% in Nederland en België, 23% in Polen. De grondslag is de douanewaarde plus invoerrecht en transportkosten tot de bestemming in de EU.\nBedrijven kunnen douaneregeling 4200 gebruiken: de auto in het ene land inklaren en de btw in het land van registratie aangeven. De calculator toont de btw van het havenland, omdat de meeste particulieren zo betalen."
+    },
+    "national": {
+      "title": "Nationale belastingen in 27 landen",
+      "text": "Na de inklaring heft elk land zijn eigen belasting: accijns (Polen), een registratiebelasting op basis van CO₂, vermogen, massa, leeftijd of waarde van de auto (bijv. Nederland met de BPM, Frankrijk, Denemarken, Finland, Portugal) of helemaal niets (bijv. Duitsland, Tsjechië, Zweden). We berekenen die met de formules uit de wet van elk land.\nIn Cyprus, Griekenland, Kroatië, Malta en Roemenië volgt de belasting uit de officiële rekenhulpen van de overheid – daar vragen we het bedrag of tonen we een bandbreedte. Vul je CO₂ en vermogen uit de autopapieren in, dan is het resultaat het nauwkeurigst; anders schatten we ze op basis van motor en brandstof.",
+      "tableLead": "{{model}} tot aan de deur in elk EU-land (in euro):",
+      "colCountry": "Land",
+      "colTax": "Belasting bij registratie",
+      "colTotal": "Totaal",
+      "none": "geen",
+      "unpriced": "Alleen de officiële rekenhulp van het land geeft de registratiebelasting – het totaal bevat die niet. Officiële rekenhulpen:"
+    },
+    "transport": {
       "title": "Transport en kosten",
-      "text": "Het vervoer over land in het land van aankoop berekenen we uit de afstand tussen ophaalregio en vertrekhaven met typische vervoerderstarieven. Zeevracht, haven- en agentkosten zijn typische prijzen per route en EU-haven.\nDeze posten zijn schattingen – de offerte van een expediteur voor jouw auto kan afwijken, daarom tonen we een bandbreedte."
+      "text": "Het landtransport in het land van aankoop berekenen we op basis van de afstand tussen het terrein of de ophaalregio en de vertrekhaven, tegen gangbare tarieven van vervoerders. Zeevracht, verzekering (meestal 1,5–2% van de waarde van de auto), haven-, terminal- en expediteurskosten zijn gangbare prijzen voor elke route en EU-haven.\nDeze posten zijn schattingen – de offerte van een expediteur voor jouw auto hangt af van het seizoen, de grootte, de verzendwijze (container of RoRo) en de staat van de auto; daarom tonen we een bandbreedte."
     },
-    "s5": {
+    "port": {
       "title": "Keuze van de haven",
-      "text": "De calculator rekent elke EU-haven tot aan de deur door – vracht, havenkosten, de btw van het havenland en levering op je adres – en stelt de goedkoopste voor. Je kunt een andere haven kiezen en vergelijken."
+      "text": "De calculator berekent elke EU-haven tot aan de deur – vracht, havenkosten, btw van het havenland en levering op je adres – en stelt de goedkoopste voor. Je kunt een andere haven kiezen en vergelijken. De dichtstbijzijnde haven is vaak niet de goedkoopste, omdat btw-tarieven en vracht verschillen."
     },
-    "s6": {
-      "title": "Wat de berekening niet kan weten",
-      "text": "De werkelijke staat van de auto, verborgen schade, prijswijzigingen op veilingen, koersbewegingen na de berekening en individuele beslissingen van overheden. De uitkomst is informatief, geen douanebeslissing en geen belastingadvies."
+    "sources": {
+      "title": "Bronnen",
+      "text": "We controleren de tarieven aan de hand van officiële bronnen van de EU en nationale overheden:",
+      "taric": "Het douanetarief van de EU – invoerrechten voor personenauto’s, vrachtwagens en motoren.",
+      "origin": "Het portaal van de Europese Commissie over EU-handelsakkoorden – oorsprongsregels en preferentieel invoerrecht (CETA, Japan, Verenigd Koninkrijk).",
+      "eurlex": "EU-wetgeving, waaronder Verordening (EU) 2026/1455 over invoerrechten op goederen uit de VS.",
+      "ecb": "De referentiewisselkoersen van de Europese Centrale Bank.",
+      "vat": "De Europese Commissie – btw-tarieven en belastingen in de lidstaten."
     },
-    "s7": {
+    "changes": {
+      "title": "Wijzigingsgeschiedenis",
+      "text": "Wat we wanneer hebben gewijzigd aan de rekenregels:",
+      "c20261028": "Uitgebreide methodiek: voorbeeld stap voor stap, tabel met 27 landen, bronnen.",
+      "c20261026": "Invoerrecht van 0% voor auto’s gemaakt in de VS, Canada, Japan en het Verenigd Koninkrijk met bewijs van oorsprong; apart tarief voor pick-ups; geen Poolse accijns op verzamelvoertuigen.",
+      "c20261025": "Formules voor de registratiebelasting van Slowakije, Litouwen en Hongarije; bevestigd dat Letland er geen heft.",
+      "c20261024": "Registratiebelasting voor elk EU-land; douanewaarde tegen de douanewisselkoers van de maand."
+    },
+    "limits": {
+      "title": "Wat de berekening niet weet",
+      "text": "De werkelijke staat van de auto, verborgen schade, prijswijzigingen op veilingen, koersbewegingen na de berekening of individuele beslissingen van instanties (bijv. een andere indeling van een pick-up). Het resultaat is alleen ter informatie – het is geen douanebeslissing en geen belastingadvies."
+    },
+    "independence": {
       "title": "Onafhankelijkheid",
-      "text": "Carglo verkoopt, koopt en verscheept geen auto's en ontvangt geen commissie van importeurs voor de uitkomst. We verdienen aan het betaalde PDF-rapport. Een fout of verouderd tarief gezien? Mail naar {{email}} – we passen het aan."
+      "text": "Carglo verkoopt, koopt en importeert geen auto’s en neemt geen commissie van importeurs voor het resultaat. We verdienen aan het betaalde pdf-rapport. Een fout of een verouderd tarief gezien? Schrijf naar {{email}} – we passen het aan."
+    },
+    "faq": {
+      "title": "Veelgestelde vragen",
+      "q1": "Is het resultaat van de calculator bindend?",
+      "a1": "Nee. De definitieve bedragen aan invoerrecht, btw en belastingen stellen de douane en de Belastingdienst vast op basis van de documenten. We passen dezelfde regels toe, dus de belastingen kloppen meestal op enkele procenten na – verschillen komen vooral door de wisselkoers op de dag van inklaring en de transportprijs.",
+      "q2": "Waarom noemt mijn expediteur een andere transportprijs?",
+      "a2": "We gebruiken gangbare tarieven voor de route en haven. Een concrete offerte hangt af van het seizoen, de grootte van de auto, verzending in een container of met RoRo, de staat van de auto en de marge van het bedrijf. Daarom tonen we een bandbreedte – een echte offerte zou daarbinnen moeten vallen.",
+      "q3": "Hoe vaak werken jullie de tarieven bij?",
+      "a3": "De douanewisselkoers maandelijks, wisselkoersen doorlopend, tarieven voor invoerrecht, btw en nationale belastingen bij elke wetswijziging. De datum van de laatste controle staat bovenaan deze pagina, regelwijzigingen in de wijzigingsgeschiedenis.",
+      "q4": "Hoe weet ik of mijn auto 0% invoerrecht krijgt?",
+      "a4": "Het gaat om het land van productie, niet het land van aankoop, plus een bewijs van oorsprong (verklaring van de exporteur of documenten). Het eerste teken van het VIN geeft het land van productie aan. Zonder bewijs rekent de douane het standaardtarief van 10%.",
+      "q5": "Wordt btw berekend over de prijs van de auto of over het totaal?",
+      "a5": "Over een grondslag die de douanewaarde (de auto met transport tot de EU-grens), het invoerrecht en de transportkosten tot de bestemming omvat. Daarom is de btw hoger dan wanneer die alleen over de prijs van de auto zou worden berekend.",
+      "q6": "Waarom is het in mijn land duurder dan in een buurland?",
+      "a6": "Meestal door een registratiebelasting of accijns – in sommige landen enkele procenten van de waarde van de auto, in andere tientallen procenten. De vergelijking van alle EU-landen staat in de tabel in sectie 5."
     }
   },
   "glossary": {

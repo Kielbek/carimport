@@ -1712,35 +1712,133 @@
   "method": {
     "eyebrow": "Metodologia",
     "title": "Como calculamos o custo de importar um carro",
-    "lead": "A Carglo calcula cada etapa, do leilão à matrícula, com as mesmas regras usadas pelas autoridades e transportadores. Eis de onde vêm os números e onde são estimativas.",
-    "updated": "Taxas e regras verificadas em: {{date}}",
-    "s1": {
-      "title": "O que o cálculo inclui",
-      "text": "A compra com comissões de leilão ou de stand, o transporte até ao porto, o frete marítimo e o seguro, as taxas portuárias e do despachante, os direitos aduaneiros, o IVA de importação, os impostos nacionais, a entrega na sua morada e a inspeção e matrícula no seu país.\nCada resultado tem três cenários – otimista, esperado e pessimista – porque os preços do transporte e algumas taxas variam."
+    "lead": "A Carglo calcula cada etapa, do leilão à matrícula, segundo as regras aduaneiras e fiscais da UE e dos Estados-Membros. Abaixo mostramos as fórmulas, um exemplo real da nossa calculadora, as fontes das taxas e onde os valores são estimativas.",
+    "updated": "Taxas e regras verificadas: {{date}}",
+    "toc": "Índice",
+    "flow": {
+      "s1": {
+        "title": "Compra",
+        "text": "preço do carro com taxas de leilão ou concessionário"
+      },
+      "s2": {
+        "title": "Transporte até ao porto",
+        "text": "camião porta-automóveis até ao porto de exportação"
+      },
+      "s3": {
+        "title": "Frete marítimo",
+        "text": "contentor ou RoRo, seguro"
+      },
+      "s4": {
+        "title": "Desalfandegamento na UE",
+        "text": "direito aduaneiro e IVA de importação no porto"
+      },
+      "s5": {
+        "title": "Impostos nacionais",
+        "text": "imposto especial ou de registo"
+      },
+      "s6": {
+        "title": "Matrícula",
+        "text": "inspeção, traduções, chapas"
+      }
     },
-    "s2": {
-      "title": "Direitos aduaneiros e IVA",
-      "text": "As taxas seguem a Nomenclatura Combinada da UE (TARIC): 10% para ligeiros de passageiros, até 22% para pick-ups e comerciais, e as regras dos veículos clássicos com mais de 30 anos. O valor aduaneiro é o preço mais transporte e seguro até à fronteira da UE.\nAs moedas estrangeiras são convertidas à taxa de câmbio aduaneira do mês (taxas da penúltima quarta-feira do mês anterior) e os restantes valores às taxas atuais do banco central."
+    "scope": {
+      "title": "O que inclui o cálculo",
+      "text": "Calculamos o custo completo até à porta: compra com taxas de leilão ou concessionário, transporte até ao porto, frete marítimo e seguro, taxas portuárias e do despachante, direito aduaneiro, IVA de importação, impostos nacionais, entrega na sua morada e inspeção técnica e matrícula no seu país.\nCada resultado tem três cenários – otimista, esperado e pessimista – porque os preços do transporte e algumas taxas variam. No relatório PDF cada rubrica mostra a base e a taxa."
     },
-    "s3": {
-      "title": "Impostos nacionais",
-      "text": "Os impostos de matrícula e especiais são modelados segundo a lei de cada país: cilindrada, CO₂, potência, peso, idade e valor, conforme o país exige. Em Chipre, Grécia, Croácia e Malta o imposto resulta de calculadoras oficiais – aí pedimos o valor ou mostramos um intervalo.\nSe introduzir o CO₂ e a potência dos documentos, o resultado é exato; caso contrário estimamo-los a partir do motor e do combustível."
+    "example": {
+      "title": "Um exemplo passo a passo",
+      "lead": "Um {{model}} comprado nos EUA por {{price}}, importado para: {{country}}, desalfandegado no porto de {{port}}. Os valores vêm da nossa calculadora ({{date}}) – com as mesmas fórmulas que a alfândega e as Finanças usam.",
+      "colItem": "Rubrica",
+      "colFormula": "Como calculamos",
+      "colAmount": "Montante",
+      "rows": {
+        "price": "Preço do carro com taxas de leilão",
+        "toBorder": "Transporte e seguro até à fronteira da UE",
+        "customsValue": "Valor aduaneiro (CIF)",
+        "duty": "Direito aduaneiro",
+        "toDestination": "Taxas portuárias e custos até ao destino",
+        "vatBase": "Base do IVA",
+        "vat": "IVA de importação",
+        "restTransport": "Restante transporte e entrega na morada",
+        "registration": "Inspeção e matrícula",
+        "other": "Outras taxas (traduções, despachante)",
+        "total": "Total até à porta"
+      },
+      "formulas": {
+        "customsValue": "preço + transporte e seguro até à fronteira da UE",
+        "duty": "{{dutyRate}} × valor aduaneiro",
+        "vatBase": "valor aduaneiro + direito + custos até ao destino",
+        "vat": "{{vatRate}} × base do IVA (taxa do país de desalfandegamento)",
+        "national": "segundo as regras do país de matrícula",
+        "total": "soma de todas as rubricas, arredondada"
+      },
+      "note": "O exemplo assume o direito normal de 10% (sem prova de origem) e tarifas de transporte habituais. Os montantes estão arredondados, por isso podem não somar exatamente. O mesmo carro nos outros países da UE está na tabela da secção 5."
     },
-    "s4": {
+    "duty": {
+      "title": "Direito aduaneiro",
+      "text": "As taxas vêm da pauta aduaneira da UE (TARIC): 10% para automóveis de passageiros, 22% para pickups e furgões classificados como veículos de mercadorias, 6–8% para motociclos. Veículos com mais de 30 anos em estado original podem ser considerados de coleção – nesse caso o direito é de 0%.\nO direito de 0% aplica-se também a carros fabricados num país com acordo com a UE: EUA (Regulamento (UE) 2026/1455, de 1 de julho de 2026 até ao fim de 2029, com envio direto dos EUA), Canadá (CETA), Japão (Acordo de Parceria Económica) e Reino Unido (Acordo de Comércio e Cooperação). A condição é uma prova de origem – uma fatura não basta. O VIN indica o país de fabrico (p. ex. 1, 4, 5 – EUA; 2 – Canadá), e na calculadora pode assinalar esta opção.\nO valor aduaneiro é o preço do carro com taxas de leilão mais o transporte e o seguro até à fronteira da UE. Os preços em moeda estrangeira são convertidos à taxa de câmbio aduaneira do mês (fixada na penúltima quarta-feira do mês anterior)."
+    },
+    "vat": {
+      "title": "IVA de importação",
+      "text": "O IVA paga-se no país onde o carro é desalfandegado, à taxa desse país – p. ex. 19% na Alemanha, 21% nos Países Baixos e na Bélgica, 23% em Portugal e na Polónia. A base é o valor aduaneiro acrescido do direito e dos custos de transporte até ao destino na UE.\nAs empresas podem usar o regime aduaneiro 4200: desalfandegar o carro num país e liquidar o IVA no país de matrícula. A calculadora mostra o IVA do país do porto, porque é assim que paga a maioria dos particulares."
+    },
+    "national": {
+      "title": "Impostos nacionais em 27 países",
+      "text": "Depois do desalfandegamento, cada país acrescenta o seu imposto: imposto especial (Polónia), um imposto de registo calculado sobre o CO₂, a potência, a massa, a idade ou o valor do carro (p. ex. o ISV em Portugal, Países Baixos, França, Dinamarca, Finlândia) ou nada (p. ex. Alemanha, Chéquia, Suécia). Calculamo-lo com as fórmulas da lei de cada país.\nEm Chipre, Grécia, Croácia, Malta e Roménia o imposto resulta dos simuladores oficiais das autoridades – aí pedimos o montante ou mostramos um intervalo. Se indicar o CO₂ e a potência dos documentos do carro, o resultado é mais preciso; caso contrário, estimamo-los a partir do motor e do combustível.",
+      "tableLead": "{{model}} até à porta em cada país da UE (em euros):",
+      "colCountry": "País",
+      "colTax": "Imposto na matrícula",
+      "colTotal": "Total",
+      "none": "nenhum",
+      "unpriced": "Só o simulador oficial do país dá o imposto de registo – o total não o inclui. Simuladores oficiais:"
+    },
+    "transport": {
       "title": "Transporte e taxas",
-      "text": "O transporte terrestre no país de compra é calculado pela distância entre a região de recolha e o porto de partida com tarifas típicas de transportadores. O frete marítimo e as taxas portuárias e de despachante são preços típicos por rota e porto da UE.\nEstas rubricas são estimativas – a proposta de um transitário para o seu carro pode ser diferente, por isso mostramos um intervalo."
+      "text": "O transporte terrestre no país de compra é calculado a partir da distância entre o parque ou a região de recolha e o porto de partida, com tarifas habituais dos transportadores. O frete marítimo, o seguro (normalmente 1,5–2% do valor do carro), as taxas portuárias, de terminal e do despachante são preços típicos para cada rota e porto da UE.\nEstas rubricas são estimativas – a proposta de um transitário para o seu carro depende da época, do tamanho, do modo de envio (contentor ou RoRo) e do estado do carro; por isso mostramos um intervalo."
     },
-    "s5": {
+    "port": {
       "title": "Escolha do porto",
-      "text": "A calculadora avalia cada porto da UE porta a porta – frete, taxas portuárias, IVA do país do porto e entrega na sua morada – e propõe o mais barato. Pode escolher outro porto e comparar."
+      "text": "A calculadora avalia cada porto da UE até à porta – frete, taxas portuárias, IVA do país do porto e entrega na sua morada – e propõe o mais barato. Pode escolher outro porto e comparar. O porto mais próximo muitas vezes não é o mais barato, porque as taxas de IVA e o frete diferem."
     },
-    "s6": {
-      "title": "O que o cálculo não pode saber",
-      "text": "O estado real do carro, danos ocultos, alterações de preço nos leilões, variações cambiais depois do cálculo e decisões individuais das autoridades. O resultado é informativo, não é uma decisão aduaneira nem aconselhamento fiscal."
+    "sources": {
+      "title": "Fontes",
+      "text": "Verificamos as taxas em fontes oficiais da UE e das autoridades nacionais:",
+      "taric": "A pauta aduaneira da UE – direitos para automóveis, veículos de mercadorias e motociclos.",
+      "origin": "O portal da Comissão Europeia sobre os acordos comerciais da UE – regras de origem e direito preferencial (CETA, Japão, Reino Unido).",
+      "eurlex": "Textos legais da UE, incluindo o Regulamento (UE) 2026/1455 sobre direitos aplicáveis a mercadorias dos EUA.",
+      "ecb": "As taxas de câmbio de referência do Banco Central Europeu.",
+      "vat": "A Comissão Europeia – taxas de IVA e impostos nos Estados-Membros."
     },
-    "s7": {
+    "changes": {
+      "title": "Histórico de alterações",
+      "text": "O que alterámos nas regras de cálculo e quando:",
+      "c20261028": "Metodologia alargada: exemplo passo a passo, tabela dos 27 países, fontes.",
+      "c20261026": "Direito de 0% para carros fabricados nos EUA, Canadá, Japão e Reino Unido com prova de origem; taxa própria para pickups; sem imposto especial polaco sobre veículos de coleção.",
+      "c20261025": "Fórmulas do imposto de registo da Eslováquia, Lituânia e Hungria; confirmado que a Letónia não o cobra.",
+      "c20261024": "Imposto de registo para cada país da UE; valor aduaneiro à taxa de câmbio aduaneira do mês."
+    },
+    "limits": {
+      "title": "O que o cálculo não sabe",
+      "text": "O estado real do carro, danos ocultos, alterações de preço nos leilões, oscilações cambiais depois do cálculo ou decisões individuais das autoridades (p. ex. outra classificação de uma pickup). O resultado é apenas informativo – não é uma decisão aduaneira nem aconselhamento fiscal."
+    },
+    "independence": {
       "title": "Independência",
-      "text": "A Carglo não vende, compra nem envia carros e não recebe comissões de importadores pelo resultado. Ganhamos com o relatório PDF pago. Encontrou um erro ou uma taxa desatualizada? Escreva para {{email}} – corrigimos."
+      "text": "A Carglo não vende, não compra nem importa carros e não recebe comissões de importadores pelo resultado. Ganhamos com o relatório PDF pago. Encontrou um erro ou uma taxa desatualizada? Escreva para {{email}} – corrigimos."
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "q1": "O resultado da calculadora é vinculativo?",
+      "a1": "Não. Os montantes finais de direitos, IVA e impostos são fixados pela alfândega e pelas Finanças com base nos documentos. Aplicamos as mesmas regras, por isso os impostos costumam coincidir com poucos pontos de diferença – as diferenças vêm sobretudo do câmbio no dia do desalfandegamento e do preço do transporte.",
+      "q2": "Porque é que o meu transitário deu outro preço de transporte?",
+      "a2": "Usamos tarifas habituais para a rota e o porto. Uma proposta concreta depende da época, do tamanho do carro, do envio em contentor ou RoRo, do estado do carro e da margem da empresa. Por isso mostramos um intervalo – uma proposta real deve ficar dentro dele.",
+      "q3": "Com que frequência atualizam as taxas?",
+      "a3": "A taxa de câmbio aduaneira todos os meses, as taxas de câmbio continuamente, as taxas de direitos, IVA e impostos nacionais a cada alteração legal. A data da última verificação está no topo desta página, e as alterações às regras no histórico.",
+      "q4": "Como sei se o meu carro tem direito a 0%?",
+      "a4": "Conta o país de fabrico, não o de compra, mais uma prova de origem (declaração do exportador ou documentos). O primeiro carácter do VIN indica o país de fabrico. Sem prova, a alfândega aplica os 10% normais.",
+      "q5": "O IVA é calculado sobre o preço do carro ou sobre o total?",
+      "a5": "Sobre uma base que inclui o valor aduaneiro (o carro com o transporte até à fronteira da UE), o direito e os custos de transporte até ao destino. Por isso o IVA é mais alto do que se fosse calculado só sobre o preço do carro.",
+      "q6": "Porque é mais caro no meu país do que num país vizinho?",
+      "a6": "Normalmente por causa de um imposto de registo ou especial – nalguns países é uma pequena percentagem do valor do carro, noutros várias dezenas. A comparação de todos os países da UE está na tabela da secção 5."
     }
   },
   "glossary": {

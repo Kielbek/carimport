@@ -48,6 +48,9 @@ const BREADCRUMB_LABEL: Record<Exclude<Page, 'home'>, string> = {
  * alternates (+ x-default), Open Graph / Twitter and JSON-LD. Runs during prerendering, so crawlers get it as static
  * HTML without executing JavaScript.
  */
+/** Questions on the methodology page (method.faq.q1..qN). */
+const METHOD_FAQ_COUNT = 6;
+
 @Injectable({ providedIn: 'root' })
 export class SeoService {
   private readonly document = inject(DOCUMENT);
@@ -190,6 +193,16 @@ export class SeoService {
         })),
       });
     } else {
+      if (page === 'method') {
+        graph.push({
+          '@type': 'FAQPage',
+          mainEntity: Array.from({ length: METHOD_FAQ_COUNT }, (_, i) => ({
+            '@type': 'Question',
+            name: t(`method.faq.q${i + 1}`),
+            acceptedAnswer: { '@type': 'Answer', text: t(`method.faq.a${i + 1}`) },
+          })),
+        });
+      }
       graph.push({
         '@type': 'BreadcrumbList',
         itemListElement: [
