@@ -8,7 +8,7 @@ import { ArticleText } from '../../shared/article/article-text';
 import { VinCta } from '../../shared/vin-cta/vin-cta';
 import { CopartFlow } from './copart-flow';
 import { CostBar } from './cost-bar';
-import { PAGE_PHOTOS } from '../../shared/article/page-photos';
+import { LotCard } from './lot-card';
 import { GUIDE_MODELS, MODEL_EXAMPLES } from '../guides/model-data.generated';
 
 /** The car whose door-to-door cost illustrates the guide (priced by the engine for the reader's country). */
@@ -17,7 +17,7 @@ const EXAMPLE_MODEL = 'ford-mustang';
 /** Buying at Copart from Europe: accounts and brokers, fees, titles, checks, shipping and the full cost. */
 @Component({
   selector: 'app-copart-page',
-  imports: [RouterLink, TranslatePipe, ArticleText, VinCta, CopartFlow, CostBar],
+  imports: [RouterLink, TranslatePipe, ArticleText, VinCta, CopartFlow, CostBar, LotCard],
   template: `
     <article class="site max-w-3xl py-16">
       <p class="eyebrow">{{ 'copart.eyebrow' | translate }}</p>
@@ -37,16 +37,8 @@ const EXAMPLE_MODEL = 'ford-mustang';
       @for (s of sections; track s; let i = $index) {
         <section [id]="s" class="mt-12 scroll-mt-24">
           <h2 class="text-xl font-extrabold">{{ i + 1 }}. {{ 'copart.' + s + '.title' | translate }}</h2>
-          @if (s === 'what' && photo; as ph) {
-            <figure class="mt-5">
-              <img [src]="ph.src + '-1280.webp'" [srcset]="ph.src + '-640.webp 640w, ' + ph.src + '-1280.webp 1280w'"
-                   sizes="(min-width: 800px) 768px, 100vw" [width]="ph.width" [height]="ph.height" [alt]="'copart.photoAlt' | translate"
-                   class="aspect-[16/9] w-full rounded-[8px] bg-panel-2 object-cover" />
-              <figcaption class="mt-2 text-xs text-muted">
-                <a [href]="ph.source" target="_blank" rel="noopener" class="underline underline-offset-2">{{ ph.author }}</a>,
-                <a [href]="ph.licenseUrl" target="_blank" rel="noopener license" class="underline underline-offset-2">{{ ph.license }}</a> · Wikimedia Commons
-              </figcaption>
-            </figure>
+          @if (s === 'what') {
+            <app-lot-card />
           }
           <app-article-text [text]="'copart.' + s + '.text' | translate" />
           @if (s === 'account') { <app-copart-flow /> }
@@ -102,7 +94,6 @@ export class CopartPage {
     'what', 'europe', 'account', 'listing', 'bidding', 'fees', 'titles', 'inspect', 'payment', 'shipping', 'repair', 'cost', 'mistakes',
   ];
   protected readonly faq = [1, 2, 3, 4, 5, 6];
-  protected readonly photo = PAGE_PHOTOS['copart'] ?? null;
 
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly vin = computed(() => pathFor('vin', this.lang.current()));

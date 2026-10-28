@@ -2105,7 +2105,6 @@
       "a6": "Standardowo 10% wartości celnej (cena z opłatami plus transport do granicy UE). Auta zbudowane w USA mogą od 1 lipca 2026 mieć cło 0% przy dowodzie pochodzenia. Do tego dochodzi VAT i podatki krajowe – wszystko policzy kalkulator."
     },
     "disclaimer": "Carglo nie jest powiązane z Copart Inc. Nazwa Copart służy wyłącznie do opisu usługi. Zasady i opłaty aukcji mogą się zmieniać – sprawdzaj je na stronie Copart.",
-    "photoAlt": "Plac aukcyjny z samochodami po szkodach",
     "listing": {
       "title": "Jak czytać ogłoszenie na Coparcie",
       "text": "Każdy lot ma numer i kartę z danymi. Najważniejsze pola:\n• Primary / Secondary damage – główne i dodatkowe uszkodzenie według ubezpieczyciela (np. Front end, Rear end, Side, Flood, Hail, Mechanical).\n• Odometer – przebieg w milach z dopiskiem „Actual” albo „Not actual” / „Exempt”; dwa ostatnie oznaczają, że licznikowi nie można ufać.\n• Est. Retail Value i Est. Repair Cost – szacunki ubezpieczyciela; pomagają ocenić skalę szkody, ale nie zastąpią własnej wyceny naprawy.\n• Highlights – np. „Run and Drive”, „Engine Starts”, „Enhanced Vehicles”.\n• Keys – czy są kluczyki (bez nich dorobienie bywa drogie).\n• Sale document / title – typ dokumentu i stan, który go wydał.\n• Location i Sale date – plac, z którego odbierasz auto, i termin aukcji.\nZapisz numer lotu i VIN – po sprzedaży strona aukcji znika z publicznego widoku."
@@ -2164,6 +2163,10 @@
       "vat": "VAT importowy",
       "national": "Podatki krajowe",
       "registration": "Rejestracja i inne"
+    },
+    "lot": {
+      "alt": "Szkic auta z zaznaczonym uszkodzonym przodem",
+      "caption": "Ilustracja – tak wygląda karta losu na aukcji w USA. Pola i oznaczenia wyjaśniamy niżej."
     }
   },
   "vinCompare": {
@@ -2280,6 +2283,15 @@
       "a6": "Przy niektórych serwisach tak – takie linki są oznaczone jako partnerskie. Nie wpływa to na to, co polecamy: ranking opiera się na zakresie danych, a nie na prowizji."
     },
     "disclaimer": "Carglo nie jest powiązane z opisanymi serwisami. Nazwy należą do ich właścicieli. Ceny i zakres danych pochodzą z opisów serwisów i porównań z października 2026 – przed zakupem sprawdź aktualną ofertę.",
-    "decoder": "Darmowy dekoder VIN"
+    "decoder": "Darmowy dekoder VIN",
+    "mock": {
+      "title": "Raport historii pojazdu",
+      "r1": "Pierwsza rejestracja – Floryda",
+      "r2": "Odczyt licznika: 28 400 mil",
+      "r3": "Szkoda: przód, wystrzelone poduszki powietrzne",
+      "r4": "Title zmieniony na SALVAGE",
+      "r5": "Aukcja – 3 zdjęcia przed naprawą",
+      "caption": "Ilustracja – tak zwykle wygląda raport historii. Zakres danych zależy od serwisu i od VIN."
+    }
   }
 }

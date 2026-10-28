@@ -6,12 +6,13 @@ import { LanguageService } from '../../core/i18n/language.service';
 import { pathFor } from '../../core/routing/paths';
 import { ArticleText } from '../../shared/article/article-text';
 import { Icon } from '../../shared/icon/icon';
+import { ReportMock } from './report-mock';
 import { VIN_PROVIDERS, VIN_PROVIDERS_CHECKED, VinProvider } from './vin-providers';
 
 /** Vehicle history report providers side by side: coverage, US titles, photos, price, who each one suits. */
 @Component({
   selector: 'app-vin-compare-page',
-  imports: [RouterLink, TranslatePipe, ArticleText, Icon],
+  imports: [RouterLink, TranslatePipe, ArticleText, Icon, ReportMock],
   template: `
     <article class="site max-w-4xl py-16">
       <p class="eyebrow">{{ 'vinCompare.eyebrow' | translate }}</p>
@@ -29,6 +30,8 @@ import { VIN_PROVIDERS, VIN_PROVIDERS_CHECKED, VinProvider } from './vin-provide
           </div>
         }
       </section>
+
+      <app-report-mock />
 
       <!-- comparison table -->
       <section id="table" class="mt-12 scroll-mt-24">

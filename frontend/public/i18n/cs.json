@@ -2105,7 +2105,6 @@
       "a6": "As standard, 10% of the customs value (the price with fees plus transport to the EU border). US-built cars can have 0% duty from 1 July 2026 with proof of origin. VAT and national taxes come on top – the calculator works it all out."
     },
     "disclaimer": "Carglo is not affiliated with Copart Inc. The name Copart is used only to describe the service. Auction rules and fees may change – check them on Copart's website.",
-    "photoAlt": "Auction yard with damaged cars",
     "listing": {
       "title": "How to read a Copart listing",
       "text": "Every lot has a number and a data sheet. The most important fields:\n• Primary / Secondary damage – the main and additional damage as reported by the insurer (e.g. Front end, Rear end, Side, Flood, Hail, Mechanical).\n• Odometer – mileage in miles marked “Actual” or “Not actual” / “Exempt”; the last two mean the reading cannot be trusted.\n• Est. Retail Value and Est. Repair Cost – the insurer’s estimates; they help gauge the damage but do not replace your own repair quote.\n• Highlights – e.g. “Run and Drive”, “Engine Starts”, “Enhanced Vehicles”.\n• Keys – whether keys are included (replacing them can be expensive).\n• Sale document / title – the document type and the state that issued it.\n• Location and Sale date – the yard you collect the car from and the auction date.\nSave the lot number and VIN – after the sale the listing disappears from public view."
@@ -2164,6 +2163,10 @@
       "vat": "Import VAT",
       "national": "National taxes",
       "registration": "Registration and other"
+    },
+    "lot": {
+      "alt": "Sketch of a car with the damaged front marked",
+      "caption": "Illustration – what a lot card looks like at a US auction. We explain the fields and labels below."
     }
   },
   "vinCompare": {
@@ -2280,6 +2283,15 @@
       "a6": "For some services, yes – such links are marked as partner links. This does not affect what we recommend: the ranking is based on data coverage, not commission."
     },
     "disclaimer": "Carglo is not affiliated with the services described. Names belong to their owners. Prices and coverage come from the services’ descriptions and comparisons from October 2026 – check the current offer before buying.",
-    "decoder": "Free VIN decoder"
+    "decoder": "Free VIN decoder",
+    "mock": {
+      "title": "Vehicle history report",
+      "r1": "First registration – Florida",
+      "r2": "Odometer reading: 28,400 mi",
+      "r3": "Damage: front end, airbags deployed",
+      "r4": "Title changed to SALVAGE",
+      "r5": "Auction – 3 photos before repair",
+      "caption": "Illustration – what a history report typically looks like. Coverage depends on the service and the VIN."
+    }
   }
 }
