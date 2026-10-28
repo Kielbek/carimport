@@ -20,6 +20,8 @@ export interface GuideModel {
   category: string;
   /** Freely licensed photo (Wikimedia Commons), fetched by tools/fetch_model_photos.py; absent until fetched. */
   photo?: ModelPhoto | { commons: string };
+  /** Commons search used by tools/fetch_model_photos.py instead of "make model year". */
+  photoQuery?: string;
 }
 
 export interface ModelPhoto {
