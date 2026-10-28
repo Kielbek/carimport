@@ -21,7 +21,9 @@ export interface GuideModel {
   /** Freely licensed photo (Wikimedia Commons), fetched by tools/fetch_model_photos.py; absent until fetched. */
   photo?: ModelPhoto | { commons: string };
   /** Commons search used by tools/fetch_model_photos.py instead of "make model year". */
-  photoQuery?: string;
+  photoQuery?: string | string[];
+  /** Text the Commons file name must contain (e.g. "Supra"). */
+  photoMust?: string;
 }
 
 export interface ModelPhoto {

@@ -274,7 +274,14 @@
         "source": "https://commons.wikimedia.org/wiki/File:Cadillac_Escalade_(14573456383).jpg",
         "commons": "File:Cadillac Escalade (14573456383).jpg"
       },
-      "photoQuery": "Cadillac Escalade 2018"
+      "photoQuery": [
+        "Cadillac Escalade 2019",
+        "Cadillac Escalade 2018",
+        "Cadillac Escalade 2017",
+        "Cadillac Escalade 2016",
+        "Cadillac Escalade 2015"
+      ],
+      "photoMust": "Escalade"
     },
     {
       "id": "tesla-model-3",
@@ -356,7 +363,13 @@
         "source": "https://commons.wikimedia.org/wiki/File:Toyota_GR_Yaris_GR-DAT_prototype.jpg",
         "commons": "File:Toyota GR Yaris GR-DAT prototype.jpg"
       },
-      "photoQuery": "Toyota GR Supra"
+      "photoQuery": [
+        "Toyota GR Supra 2020",
+        "Toyota Supra A90",
+        "Toyota GR Supra",
+        "Toyota Supra 2019"
+      ],
+      "photoMust": "Supra"
     },
     {
       "id": "nissan-skyline-gt-r-r34",
@@ -411,7 +424,13 @@
         "source": "https://commons.wikimedia.org/wiki/File:Toyota_Land_Cruiser_J80_Longyan_01_2022-08-06.jpg",
         "commons": "File:Toyota Land Cruiser J80 Longyan 01 2022-08-06.jpg"
       },
-      "photoQuery": "Toyota Land Cruiser 300"
+      "photoQuery": [
+        "Toyota Land Cruiser 300",
+        "Toyota Land Cruiser 2022",
+        "Toyota Land Cruiser 2023",
+        "Toyota Land Cruiser J300"
+      ],
+      "photoMust": "Land Cruiser"
     },
     {
       "id": "nissan-patrol",

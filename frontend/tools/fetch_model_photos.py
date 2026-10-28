@@ -54,6 +54,8 @@ def plausible(title, m):
     """Skips photos of the wrong generation (a year far from the model's) and of police, race or show cars."""
     if BAD_WORDS.search(title):
         return False
+    if m.get('photoMust') and m['photoMust'].lower() not in title.lower():
+        return False
     years = [int(y) for y in re.findall(r'(?<!\d)(19[5-9]\d|20[0-3]\d)(?!\d)', title)]
     return not years or any(abs(y - int(m['year'])) <= 4 for y in years)
 
@@ -65,11 +67,13 @@ def candidates(m):
     if pinned:
         pages = query({'action': 'query', 'titles': pinned, **common})['query']['pages']
     else:
-        search = m.get('photoQuery') or f'{m["make"]} {m["model"].split(" ")[0]} {m["year"]}'
-        search += ' filetype:bitmap -interior -engine -toy'
-        pages = query({'action': 'query', 'generator': 'search', 'gsrsearch': search, 'gsrnamespace': '6',
-                       'gsrlimit': '30', **common}).get('query', {}).get('pages', [])
-    for p in sorted(pages, key=lambda p: p.get('index', 0)):
+        searches = m.get('photoQuery') or f'{m["make"]} {m["model"].split(" ")[0]} {m["year"]}'
+        pages = []
+        for search in [searches] if isinstance(searches, str) else searches:
+            found = query({'action': 'query', 'generator': 'search', 'gsrnamespace': '6', 'gsrlimit': '30',
+                           'gsrsearch': search + ' filetype:bitmap -interior -engine -toy', **common})
+            pages += sorted(found.get('query', {}).get('pages', []), key=lambda p: p.get('index', 0))
+    for p in pages:
         info = (p.get('imageinfo') or [{}])[0]
         meta = info.get('extmetadata', {})
         lic = text(meta, 'LicenseShortName')
@@ -112,6 +116,10 @@ def main(argv):
         found = next(candidates(m), None)
         if not found:
             print(f'{m["id"]}: no freely licensed landscape photo found - pin one with "photo": {{"commons": "File:..."}}')
+            if force and m.pop('photo', None):  # better no photo than the wrong car
+                for size in SIZES:
+                    (OUT / f'{m["id"]}-{size}.webp').unlink(missing_ok=True)
+                MODELS.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
             continue
         title, info, lic, author, lic_url = found
         width, height = save(m['id'], info['url'])
