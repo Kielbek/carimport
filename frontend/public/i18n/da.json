@@ -1710,135 +1710,135 @@
     "countriesTitle": "Afgifter og indregistrering land for land"
   },
   "method": {
-    "eyebrow": "Methodology",
-    "title": "How we calculate the cost of importing a car",
-    "lead": "Carglo prices every stage from auction to registration according to the customs and tax rules of the EU and its member states. Below you will find the formulas, a real example from our calculator, the sources of the rates and where the figures are estimates.",
-    "updated": "Rates and rules checked: {{date}}",
-    "toc": "Contents",
+    "eyebrow": "Metode",
+    "title": "Sådan beregner vi prisen på at importere en bil",
+    "lead": "Carglo beregner hvert trin, fra auktion til registrering, efter told- og skattereglerne i EU og medlemslandene. Herunder finder du formlerne, et rigtigt eksempel fra vores beregner, kilderne til satserne, og hvor tallene er skøn.",
+    "updated": "Satser og regler kontrolleret: {{date}}",
+    "toc": "Indhold",
     "flow": {
       "s1": {
-        "title": "Purchase",
-        "text": "car price with auction or dealer fees"
+        "title": "Køb",
+        "text": "bilens pris med auktions- eller forhandlergebyrer"
       },
       "s2": {
-        "title": "Transport to port",
-        "text": "car carrier from the yard to the export port"
+        "title": "Transport til havnen",
+        "text": "autotransporter fra pladsen til eksporthavnen"
       },
       "s3": {
-        "title": "Ocean freight",
-        "text": "container or RoRo, insurance"
+        "title": "Søfragt",
+        "text": "container eller RoRo, forsikring"
       },
       "s4": {
-        "title": "EU clearance",
-        "text": "duty and import VAT at the port"
+        "title": "Fortoldning i EU",
+        "text": "told og importmoms i havnen"
       },
       "s5": {
-        "title": "National taxes",
-        "text": "excise or registration tax"
+        "title": "Nationale afgifter",
+        "text": "punktafgift eller registreringsafgift"
       },
       "s6": {
-        "title": "Registration",
-        "text": "inspection, translations, plates"
+        "title": "Registrering",
+        "text": "syn, oversættelser, nummerplader"
       }
     },
     "scope": {
-      "title": "What the calculation covers",
-      "text": "We calculate the full door-to-door cost: purchase with auction or dealer fees, transport to the port, ocean freight and insurance, port and customs agent fees, duty, import VAT, national taxes, delivery to your address, and the roadworthiness test and registration in your country.\nEvery result has three scenarios – optimistic, expected and pessimistic – because transport prices and some fees vary. In the PDF report every item shows its base and rate."
+      "title": "Hvad beregningen omfatter",
+      "text": "Vi beregner den samlede pris helt til døren: køb med auktions- eller forhandlergebyrer, transport til havnen, søfragt og forsikring, havne- og toldagentgebyrer, told, importmoms, nationale afgifter, levering til din adresse samt syn og registrering i dit land.\nHvert resultat har tre scenarier – optimistisk, forventet og pessimistisk – fordi transportpriser og nogle gebyrer svinger. I PDF-rapporten vises grundlag og sats for hver post."
     },
     "example": {
-      "title": "A worked example, step by step",
-      "lead": "A {{model}} bought in the US for {{price}}, imported to {{country}}, cleared at the port of {{port}}. The figures come from our calculator ({{date}}) – the same formulas customs and the tax office use.",
-      "colItem": "Item",
-      "colFormula": "How we calculate it",
-      "colAmount": "Amount",
+      "title": "Et eksempel trin for trin",
+      "lead": "En {{model}} købt i USA for {{price}}, importeret til: {{country}}, fortoldet i havnen i {{port}}. Tallene kommer fra vores beregner ({{date}}) – med de samme formler, som toldvæsenet og skattemyndighederne bruger.",
+      "colItem": "Post",
+      "colFormula": "Sådan regner vi",
+      "colAmount": "Beløb",
       "rows": {
-        "price": "Car price with auction fees",
-        "toBorder": "Transport and insurance to the EU border",
-        "customsValue": "Customs value (CIF)",
-        "duty": "Duty",
-        "toDestination": "Port fees and costs to the destination",
-        "vatBase": "VAT base",
-        "vat": "Import VAT",
-        "restTransport": "Remaining transport and delivery to your address",
-        "registration": "Inspection and registration",
-        "other": "Other fees (translations, agent)",
-        "total": "Total, delivered to your door"
+        "price": "Bilens pris med auktionsgebyrer",
+        "toBorder": "Transport og forsikring til EU's grænse",
+        "customsValue": "Toldværdi (CIF)",
+        "duty": "Told",
+        "toDestination": "Havnegebyrer og omkostninger til bestemmelsesstedet",
+        "vatBase": "Momsgrundlag",
+        "vat": "Importmoms",
+        "restTransport": "Øvrig transport og levering til adressen",
+        "registration": "Syn og registrering",
+        "other": "Andre gebyrer (oversættelser, agent)",
+        "total": "I alt helt til døren"
       },
       "formulas": {
-        "customsValue": "price + transport and insurance to the EU border",
-        "duty": "{{dutyRate}} × customs value",
-        "vatBase": "customs value + duty + costs to the destination",
-        "vat": "{{vatRate}} × VAT base (rate of the clearance country)",
-        "national": "under the rules of the country of registration",
-        "total": "sum of all items, rounded"
+        "customsValue": "pris + transport og forsikring til EU's grænse",
+        "duty": "{{dutyRate}} × toldværdi",
+        "vatBase": "toldværdi + told + omkostninger til bestemmelsesstedet",
+        "vat": "{{vatRate}} × momsgrundlag (sats i fortoldningslandet)",
+        "national": "efter reglerne i registreringslandet",
+        "total": "summen af alle poster, afrundet"
       },
-      "note": "The example assumes the standard 10% duty (no proof of origin) and typical transport rates. Amounts are rounded, so they may not add up exactly. The same car in other EU countries is in the table in section 5."
+      "note": "Eksemplet forudsætter den almindelige told på 10 % (uden oprindelsesbevis) og typiske transportpriser. Beløbene er afrundede og giver derfor ikke altid præcis summen. Samme bil i andre EU-lande står i tabellen i afsnit 5."
     },
     "duty": {
-      "title": "Customs duty",
-      "text": "Duty rates come from the EU customs tariff (TARIC): 10% for passenger cars, 22% for pickups and vans classified as goods vehicles, 6–8% for motorcycles. Vehicles over 30 years old in original condition may count as collector's items – then the duty is 0%.\n0% duty also applies to cars made in a country the EU has an agreement with: the US (Regulation (EU) 2026/1455, from 1 July 2026 to the end of 2029, shipped directly from the US), Canada (CETA), Japan (the Economic Partnership Agreement) and the United Kingdom (the Trade and Cooperation Agreement). The condition is proof of origin – an invoice alone is not enough. The VIN hints at the country of manufacture (e.g. 1, 4, 5 – US; 2 – Canada), and you can tick this option in the calculator.\nThe customs value is the car's price with auction fees plus transport and insurance to the EU border. Prices in foreign currencies are converted at the customs exchange rate for the month (set on the penultimate Wednesday of the previous month)."
+      "title": "Told",
+      "text": "Toldsatserne kommer fra EU's toldtarif (TARIC): 10 % for personbiler, 22 % for pickupper og varebiler klassificeret som lastbiler, 6–8 % for motorcykler. Køretøjer over 30 år i original stand kan regnes som samlerobjekter – så er tolden 0 %.\n0 % told gælder også biler fremstillet i et land, EU har en aftale med: USA (forordning (EU) 2026/1455, fra 1. juli 2026 til udgangen af 2029, ved direkte forsendelse fra USA), Canada (CETA), Japan (aftalen om økonomisk partnerskab) og Storbritannien (handels- og samarbejdsaftalen). Betingelsen er oprindelsesbevis – en faktura alene er ikke nok. VIN angiver produktionslandet (fx 1, 4, 5 – USA; 2 – Canada), og i beregneren kan du sætte kryds ved denne mulighed.\nToldværdien er bilens pris med auktionsgebyrer plus transport og forsikring til EU's grænse. Priser i udenlandsk valuta omregnes til månedens toldkurs (fastsat næstsidste onsdag i den foregående måned)."
     },
     "vat": {
-      "title": "Import VAT",
-      "text": "VAT is paid in the country where the car is cleared, at that country's rate – e.g. 19% in Germany, 21% in the Netherlands and Belgium, 23% in Poland. The base is the customs value plus duty and transport costs to the destination in the EU.\nBusinesses can use customs procedure 4200: clear the car in one country and account for VAT in the country of registration. The calculator shows the VAT of the port's country, because that is how most private buyers pay."
+      "title": "Importmoms",
+      "text": "Moms betales i det land, hvor bilen fortoldes, med landets sats – fx 19 % i Tyskland, 21 % i Nederlandene og Belgien, 23 % i Polen, 25 % i Danmark. Grundlaget er toldværdien plus told og transportomkostninger til bestemmelsesstedet i EU.\nVirksomheder kan bruge toldprocedure 4200: fortolde bilen i ét land og afregne momsen i registreringslandet. Beregneren viser momsen i havnens land, fordi de fleste private betaler sådan."
     },
     "national": {
-      "title": "National taxes in 27 countries",
-      "text": "After clearance, each country adds its own tax: excise (Poland), a registration tax based on the car's CO₂, power, mass, age or value (e.g. the Netherlands, France, Denmark, Finland, Portugal) or nothing at all (e.g. Germany, Czechia, Sweden). We calculate it with the formulas from each country's law.\nIn Cyprus, Greece, Croatia, Malta and Romania the tax comes from the authorities' official calculators – there we ask for the amount or show a range. If you enter CO₂ and power from the car's documents, the result is most accurate; otherwise we estimate them from the engine and fuel.",
-      "tableLead": "{{model}} delivered to your door in every EU country (in euro):",
-      "colCountry": "Country",
-      "colTax": "Tax at registration",
-      "colTotal": "Total",
-      "none": "none",
-      "unpriced": "Only the country's official calculator gives the registration tax – the total leaves it out. Official calculators:"
+      "title": "Nationale afgifter i 27 lande",
+      "text": "Efter fortoldningen lægger hvert land sin egen afgift på: punktafgift (Polen), en registreringsafgift baseret på bilens CO₂, effekt, vægt, alder eller værdi (fx Danmark, Nederlandene, Frankrig, Finland, Portugal) eller ingenting (fx Tyskland, Tjekkiet, Sverige). Vi beregner den med formlerne i hvert lands lovgivning.\nPå Cypern, i Grækenland, Kroatien, på Malta og i Rumænien fremgår afgiften af myndighedernes officielle beregnere – der beder vi om beløbet eller viser et interval. Hvis du angiver CO₂ og effekt fra bilens papirer, bliver resultatet mest præcist; ellers skønner vi dem ud fra motor og brændstof.",
+      "tableLead": "{{model}} helt til døren i hvert EU-land (i euro):",
+      "colCountry": "Land",
+      "colTax": "Afgift ved registrering",
+      "colTotal": "I alt",
+      "none": "ingen",
+      "unpriced": "Registreringsafgiften gives kun af landets officielle beregner – summen indeholder den ikke. Officielle beregnere:"
     },
     "transport": {
-      "title": "Transport and fees",
-      "text": "Land transport in the country of purchase is priced from the distance between the yard or pickup region and the port of departure, at typical carrier rates. Ocean freight, insurance (usually 1.5–2% of the car's value), port, terminal and customs agent fees are typical prices for each route and EU port.\nThese items are estimates – a forwarder's quote for your car depends on the season, size, shipping method (container or RoRo) and the car's condition, so we show a range."
+      "title": "Transport og gebyrer",
+      "text": "Landtransporten i købslandet beregner vi ud fra afstanden mellem pladsen eller afhentningsregionen og afgangshavnen, med typiske vognmandstakster. Søfragt, forsikring (normalt 1,5–2 % af bilens værdi), havne-, terminal- og toldagentgebyrer er typiske priser for hver rute og EU-havn.\nDisse poster er skøn – en speditørs tilbud på din bil afhænger af sæson, størrelse, forsendelsesmåde (container eller RoRo) og bilens stand, derfor viser vi et interval."
     },
     "port": {
-      "title": "Choice of port",
-      "text": "The calculator prices every EU port door-to-door – freight, port fees, the VAT of the port's country and delivery to your address – and suggests the cheapest. You can pick another port and compare. The nearest port is often not the cheapest, because VAT rates and freight differ."
+      "title": "Valg af havn",
+      "text": "Beregneren prissætter hver EU-havn helt til døren – fragt, havnegebyrer, moms i havnens land og levering til din adresse – og foreslår den billigste. Du kan vælge en anden havn og sammenligne. Den nærmeste havn er ofte ikke den billigste, fordi momssatser og fragt er forskellige."
     },
     "sources": {
-      "title": "Sources",
-      "text": "We check the rates against official sources of the EU and national authorities:",
-      "taric": "The EU customs tariff – duty rates for cars, goods vehicles and motorcycles.",
-      "origin": "The European Commission's portal on EU trade agreements – rules of origin and preferential duty (CETA, Japan, the United Kingdom).",
-      "eurlex": "EU legislation, including Regulation (EU) 2026/1455 on duty on goods from the US.",
-      "ecb": "Euro reference exchange rates of the European Central Bank.",
-      "vat": "The European Commission – VAT rates and taxes in the member states."
+      "title": "Kilder",
+      "text": "Vi kontrollerer satserne i officielle kilder fra EU og nationale myndigheder:",
+      "taric": "EU's toldtarif – toldsatser for personbiler, lastbiler og motorcykler.",
+      "origin": "Europa-Kommissionens portal om EU's handelsaftaler – oprindelsesregler og præferencetold (CETA, Japan, Storbritannien).",
+      "eurlex": "EU-lovgivning, herunder forordning (EU) 2026/1455 om told på varer fra USA.",
+      "ecb": "Den Europæiske Centralbanks referencekurser.",
+      "vat": "Europa-Kommissionen – momssatser og skatter i medlemslandene."
     },
     "changes": {
-      "title": "Change log",
-      "text": "What we changed in the calculation rules, and when:",
-      "c20261028": "Extended methodology: worked example, table of 27 countries, sources.",
-      "c20261026": "0% duty for cars made in the US, Canada, Japan and the United Kingdom with proof of origin; separate rate for pickups; no Polish excise on collector's vehicles.",
-      "c20261025": "Registration tax formulas for Slovakia, Lithuania and Hungary; confirmed that Latvia charges none.",
-      "c20261024": "Registration tax for every EU country; customs value at the month's customs exchange rate."
+      "title": "Ændringslog",
+      "text": "Hvad vi har ændret i beregningsreglerne, og hvornår:",
+      "c20261028": "Udvidet metode: eksempel trin for trin, tabel med 27 lande, kilder.",
+      "c20261026": "0 % told for biler fremstillet i USA, Canada, Japan og Storbritannien med oprindelsesbevis; egen sats for pickupper; ingen polsk punktafgift på samlerkøretøjer.",
+      "c20261025": "Formler for registreringsafgiften i Slovakiet, Litauen og Ungarn; bekræftet, at Letland ikke opkræver en.",
+      "c20261024": "Registreringsafgift for hvert EU-land; toldværdi til månedens toldkurs."
     },
     "limits": {
-      "title": "What the calculation does not know",
-      "text": "The car's real condition, hidden damage, changes in auction prices, currency moves after the quote, or individual decisions by authorities (e.g. a different classification of a pickup). The result is for information only – it is not a customs decision or tax advice."
+      "title": "Hvad beregningen ikke ved",
+      "text": "Bilens reelle stand, skjulte skader, prisændringer på auktioner, valutabevægelser efter beregningen eller enkeltafgørelser fra myndighederne (fx en anden klassificering af en pickup). Resultatet er vejledende – det er hverken en toldafgørelse eller skatterådgivning."
     },
     "independence": {
-      "title": "Independence",
-      "text": "Carglo does not sell, buy or import cars and takes no commission from importers for the result. We earn from the paid PDF report. Spotted a mistake or an outdated rate? Write to {{email}} – we will fix it."
+      "title": "Uafhængighed",
+      "text": "Carglo sælger, køber og importerer ikke biler og tager ingen provision fra importører for resultatet. Vi tjener på den betalte PDF-rapport. Har du fundet en fejl eller en forældet sats? Skriv til {{email}} – vi retter den."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Is the calculator's result binding?",
-      "a1": "No. The final duty, VAT and taxes are set by customs and the tax office from the documents. We apply the same rules, so the taxes usually match within a few percent – differences mostly come from the exchange rate on the day of clearance and the transport price.",
-      "q2": "Why did my forwarder quote a different transport price?",
-      "a2": "We use typical rates for the route and port. A specific quote depends on the season, the car's size, container or RoRo shipping, the car's condition and the company's margin. That is why we show a range – a real quote should fall within it.",
-      "q3": "How often do you update the rates?",
-      "a3": "The customs exchange rate monthly, currency rates continuously, duty, VAT and national tax rates whenever the law changes. The date of the last check is at the top of this page, and rule changes are in the change log.",
-      "q4": "How do I know whether my car qualifies for 0% duty?",
-      "a4": "What counts is the country of manufacture, not the country of purchase, plus proof of origin (an exporter's statement or documents). The first character of the VIN shows the country of manufacture. Without proof, customs charges the standard 10%.",
-      "q5": "Is VAT charged on the car's price or on the total?",
-      "a5": "On a base that includes the customs value (the car with transport to the EU border), duty and transport costs to the destination. That is why VAT is higher than if it were charged on the car's price alone.",
-      "q6": "Why is it more expensive in my country than in a neighbouring one?",
-      "a6": "Usually because of a registration tax or excise – in some countries it is a few percent of the car's value, in others several tens of percent. The comparison of all EU countries is in the table in section 5."
+      "title": "Ofte stillede spørgsmål",
+      "q1": "Er beregnerens resultat bindende?",
+      "a1": "Nej. De endelige beløb for told, moms og afgifter fastsættes af toldvæsenet og skattemyndighederne ud fra dokumenterne. Vi bruger de samme regler, så afgifterne passer som regel inden for få procent – forskelle skyldes mest valutakursen på fortoldningsdagen og transportprisen.",
+      "q2": "Hvorfor har min speditør givet en anden transportpris?",
+      "a2": "Vi bruger typiske priser for ruten og havnen. Et konkret tilbud afhænger af sæson, bilens størrelse, container- eller RoRo-forsendelse, bilens stand og firmaets avance. Derfor viser vi et interval – et rigtigt tilbud bør ligge inden for det.",
+      "q3": "Hvor ofte opdaterer I satserne?",
+      "a3": "Toldkursen hver måned, valutakurser løbende, told-, moms- og nationale afgiftssatser ved hver lovændring. Datoen for seneste kontrol står øverst på siden, regelændringer i ændringsloggen.",
+      "q4": "Hvordan ved jeg, om min bil får 0 % told?",
+      "a4": "Det er produktionslandet, der tæller, ikke købslandet, plus et oprindelsesbevis (eksportørens erklæring eller dokumenter). Første tegn i VIN viser produktionslandet. Uden bevis opkræver toldvæsenet de almindelige 10 %.",
+      "q5": "Beregnes momsen af bilens pris eller af det hele?",
+      "a5": "Af et grundlag, der omfatter toldværdien (bilen med transport til EU's grænse), tolden og transportomkostningerne til bestemmelsesstedet. Derfor er momsen højere, end hvis den kun blev beregnet af bilens pris.",
+      "q6": "Hvorfor er det dyrere i mit land end i nabolandet?",
+      "a6": "Som regel på grund af en registreringsafgift eller punktafgift – i nogle lande få procent af bilens værdi, i andre flere titals procent. Sammenligningen af alle EU-lande står i tabellen i afsnit 5."
     }
   },
   "glossary": {

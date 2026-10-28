@@ -1710,135 +1710,135 @@
     "countriesTitle": "Податки й реєстрація за країнами"
   },
   "method": {
-    "eyebrow": "Methodology",
-    "title": "How we calculate the cost of importing a car",
-    "lead": "Carglo prices every stage from auction to registration according to the customs and tax rules of the EU and its member states. Below you will find the formulas, a real example from our calculator, the sources of the rates and where the figures are estimates.",
-    "updated": "Rates and rules checked: {{date}}",
-    "toc": "Contents",
+    "eyebrow": "Методологія",
+    "title": "Як ми розраховуємо вартість імпорту авто",
+    "lead": "Carglo розраховує кожен етап – від аукціону до реєстрації – за митними й податковими правилами ЄС і країн-членів. Нижче – формули, реальний приклад із нашого калькулятора, джерела ставок і те, де цифри є оцінкою.",
+    "updated": "Ставки й правила перевірено: {{date}}",
+    "toc": "Зміст",
     "flow": {
       "s1": {
-        "title": "Purchase",
-        "text": "car price with auction or dealer fees"
+        "title": "Купівля",
+        "text": "ціна авто з аукціонними чи дилерськими зборами"
       },
       "s2": {
-        "title": "Transport to port",
-        "text": "car carrier from the yard to the export port"
+        "title": "Доставка до порту",
+        "text": "автовоз із майданчика до порту експорту"
       },
       "s3": {
-        "title": "Ocean freight",
-        "text": "container or RoRo, insurance"
+        "title": "Морський фрахт",
+        "text": "контейнер або RoRo, страхування"
       },
       "s4": {
-        "title": "EU clearance",
-        "text": "duty and import VAT at the port"
+        "title": "Розмитнення в ЄС",
+        "text": "мито та імпортний ПДВ у порту"
       },
       "s5": {
-        "title": "National taxes",
-        "text": "excise or registration tax"
+        "title": "Національні податки",
+        "text": "акциз або реєстраційний податок"
       },
       "s6": {
-        "title": "Registration",
-        "text": "inspection, translations, plates"
+        "title": "Реєстрація",
+        "text": "техогляд, переклади, номери"
       }
     },
     "scope": {
-      "title": "What the calculation covers",
-      "text": "We calculate the full door-to-door cost: purchase with auction or dealer fees, transport to the port, ocean freight and insurance, port and customs agent fees, duty, import VAT, national taxes, delivery to your address, and the roadworthiness test and registration in your country.\nEvery result has three scenarios – optimistic, expected and pessimistic – because transport prices and some fees vary. In the PDF report every item shows its base and rate."
+      "title": "Що охоплює розрахунок",
+      "text": "Ми рахуємо повну вартість «під двері»: купівлю з аукціонними чи дилерськими зборами, доставку до порту, морський фрахт і страхування, портові збори та послуги митного брокера, мито, імпортний ПДВ, національні податки, доставку на вашу адресу, а також техогляд і реєстрацію у вашій країні.\nКожен результат має три сценарії – оптимістичний, очікуваний і песимістичний, – бо ціни на перевезення й частина зборів коливаються. У PDF-звіті для кожної позиції розписано базу й ставку."
     },
     "example": {
-      "title": "A worked example, step by step",
-      "lead": "A {{model}} bought in the US for {{price}}, imported to {{country}}, cleared at the port of {{port}}. The figures come from our calculator ({{date}}) – the same formulas customs and the tax office use.",
-      "colItem": "Item",
-      "colFormula": "How we calculate it",
-      "colAmount": "Amount",
+      "title": "Приклад крок за кроком",
+      "lead": "{{model}}, купений у США за {{price}}, ввозиться до країни: {{country}}, розмитнення в порту {{port}}. Цифри – з нашого калькулятора ({{date}}), за тими самими формулами, що їх застосовують митниця й податкова.",
+      "colItem": "Позиція",
+      "colFormula": "Як рахуємо",
+      "colAmount": "Сума",
       "rows": {
-        "price": "Car price with auction fees",
-        "toBorder": "Transport and insurance to the EU border",
-        "customsValue": "Customs value (CIF)",
-        "duty": "Duty",
-        "toDestination": "Port fees and costs to the destination",
-        "vatBase": "VAT base",
-        "vat": "Import VAT",
-        "restTransport": "Remaining transport and delivery to your address",
-        "registration": "Inspection and registration",
-        "other": "Other fees (translations, agent)",
-        "total": "Total, delivered to your door"
+        "price": "Ціна авто з аукціонними зборами",
+        "toBorder": "Доставка й страхування до кордону ЄС",
+        "customsValue": "Митна вартість (CIF)",
+        "duty": "Мито",
+        "toDestination": "Портові збори й витрати до місця призначення",
+        "vatBase": "База ПДВ",
+        "vat": "Імпортний ПДВ",
+        "restTransport": "Решта перевезення й доставка на адресу",
+        "registration": "Техогляд і реєстрація",
+        "other": "Інші збори (переклади, брокер)",
+        "total": "Разом «під двері»"
       },
       "formulas": {
-        "customsValue": "price + transport and insurance to the EU border",
-        "duty": "{{dutyRate}} × customs value",
-        "vatBase": "customs value + duty + costs to the destination",
-        "vat": "{{vatRate}} × VAT base (rate of the clearance country)",
-        "national": "under the rules of the country of registration",
-        "total": "sum of all items, rounded"
+        "customsValue": "ціна + доставка й страхування до кордону ЄС",
+        "duty": "{{dutyRate}} × митна вартість",
+        "vatBase": "митна вартість + мито + витрати до місця призначення",
+        "vat": "{{vatRate}} × база ПДВ (ставка країни розмитнення)",
+        "national": "за правилами країни реєстрації",
+        "total": "сума всіх позицій, округлена"
       },
-      "note": "The example assumes the standard 10% duty (no proof of origin) and typical transport rates. Amounts are rounded, so they may not add up exactly. The same car in other EU countries is in the table in section 5."
+      "note": "Приклад передбачає стандартне мито 10% (без доказу походження) і типові ставки перевезення. Суми округлено, тому вони можуть не збігатися до одиниці. Те саме авто в інших країнах ЄС – у таблиці в пункті 5."
     },
     "duty": {
-      "title": "Customs duty",
-      "text": "Duty rates come from the EU customs tariff (TARIC): 10% for passenger cars, 22% for pickups and vans classified as goods vehicles, 6–8% for motorcycles. Vehicles over 30 years old in original condition may count as collector's items – then the duty is 0%.\n0% duty also applies to cars made in a country the EU has an agreement with: the US (Regulation (EU) 2026/1455, from 1 July 2026 to the end of 2029, shipped directly from the US), Canada (CETA), Japan (the Economic Partnership Agreement) and the United Kingdom (the Trade and Cooperation Agreement). The condition is proof of origin – an invoice alone is not enough. The VIN hints at the country of manufacture (e.g. 1, 4, 5 – US; 2 – Canada), and you can tick this option in the calculator.\nThe customs value is the car's price with auction fees plus transport and insurance to the EU border. Prices in foreign currencies are converted at the customs exchange rate for the month (set on the penultimate Wednesday of the previous month)."
+      "title": "Мито",
+      "text": "Ставки мита взято з митного тарифу ЄС (TARIC): 10% для легкових авто, 22% для пікапів і фургонів, класифікованих як вантажні, 6–8% для мотоциклів. Транспорт, старший за 30 років, в оригінальному стані може вважатися колекційним – тоді мито 0%.\nМито 0% діє також для авто, виготовлених у країні, з якою ЄС має угоду: у США (Регламент (ЄС) 2026/1455, з 1 липня 2026 до кінця 2029 року, за умови відправлення безпосередньо зі США), у Канаді (CETA), в Японії (Угода про економічне партнерство) та у Великій Британії (Угода про торгівлю та співробітництво). Умова – доказ походження; самого інвойсу недостатньо. VIN підказує країну виробництва (напр. 1, 4, 5 – США; 2 – Канада), а в калькуляторі можна позначити цю опцію.\nМитна вартість – це ціна авто з аукціонними зборами плюс доставка й страхування до кордону ЄС. Ціни в іноземній валюті перераховуємо за митним курсом відповідного місяця (встановлюється в передостанню середу попереднього місяця)."
     },
     "vat": {
-      "title": "Import VAT",
-      "text": "VAT is paid in the country where the car is cleared, at that country's rate – e.g. 19% in Germany, 21% in the Netherlands and Belgium, 23% in Poland. The base is the customs value plus duty and transport costs to the destination in the EU.\nBusinesses can use customs procedure 4200: clear the car in one country and account for VAT in the country of registration. The calculator shows the VAT of the port's country, because that is how most private buyers pay."
+      "title": "Імпортний ПДВ",
+      "text": "ПДВ сплачують у країні, де авто розмитнюють, за її ставкою – напр. 19% у Німеччині, 21% у Нідерландах і Бельгії, 23% у Польщі. База – митна вартість плюс мито й витрати на доставку до місця призначення в ЄС.\nКомпанії можуть використати митний режим 4200: розмитнити авто в одній країні, а ПДВ сплатити в країні реєстрації. Калькулятор показує ПДВ країни порту, бо так платить більшість приватних покупців."
     },
     "national": {
-      "title": "National taxes in 27 countries",
-      "text": "After clearance, each country adds its own tax: excise (Poland), a registration tax based on the car's CO₂, power, mass, age or value (e.g. the Netherlands, France, Denmark, Finland, Portugal) or nothing at all (e.g. Germany, Czechia, Sweden). We calculate it with the formulas from each country's law.\nIn Cyprus, Greece, Croatia, Malta and Romania the tax comes from the authorities' official calculators – there we ask for the amount or show a range. If you enter CO₂ and power from the car's documents, the result is most accurate; otherwise we estimate them from the engine and fuel.",
-      "tableLead": "{{model}} delivered to your door in every EU country (in euro):",
-      "colCountry": "Country",
-      "colTax": "Tax at registration",
-      "colTotal": "Total",
-      "none": "none",
-      "unpriced": "Only the country's official calculator gives the registration tax – the total leaves it out. Official calculators:"
+      "title": "Національні податки в 27 країнах",
+      "text": "Після розмитнення кожна країна додає свій податок: акциз (Польща), реєстраційний податок залежно від CO₂, потужності, маси, віку чи вартості авто (напр. Нідерланди, Франція, Данія, Фінляндія, Португалія) або нічого (напр. Німеччина, Чехія, Швеція). Ми рахуємо його за формулами із законодавства кожної країни.\nНа Кіпрі, у Греції, Хорватії, на Мальті та в Румунії податок визначають офіційні калькулятори відомств – там ми просимо вказати суму або показуємо діапазон. Якщо ви введете CO₂ і потужність із документів авто, результат буде найточнішим; інакше ми оцінимо їх за двигуном і паливом.",
+      "tableLead": "{{model}} «під двері» в кожній країні ЄС (у євро):",
+      "colCountry": "Країна",
+      "colTax": "Податок при реєстрації",
+      "colTotal": "Разом",
+      "none": "немає",
+      "unpriced": "Реєстраційний податок дає лише офіційний калькулятор країни – сума його не містить. Офіційні калькулятори:"
     },
     "transport": {
-      "title": "Transport and fees",
-      "text": "Land transport in the country of purchase is priced from the distance between the yard or pickup region and the port of departure, at typical carrier rates. Ocean freight, insurance (usually 1.5–2% of the car's value), port, terminal and customs agent fees are typical prices for each route and EU port.\nThese items are estimates – a forwarder's quote for your car depends on the season, size, shipping method (container or RoRo) and the car's condition, so we show a range."
+      "title": "Перевезення та збори",
+      "text": "Наземне перевезення в країні купівлі розраховуємо з відстані між майданчиком чи регіоном забору та портом відправлення за типовими тарифами перевізників. Морський фрахт, страхування (зазвичай 1,5–2% вартості авто), портові, термінальні та брокерські збори – типові ціни для кожного маршруту й порту ЄС.\nЦі позиції є оцінкою – пропозиція експедитора для вашого авто залежить від сезону, розміру, способу перевезення (контейнер чи RoRo) та стану авто, тому ми показуємо діапазон."
     },
     "port": {
-      "title": "Choice of port",
-      "text": "The calculator prices every EU port door-to-door – freight, port fees, the VAT of the port's country and delivery to your address – and suggests the cheapest. You can pick another port and compare. The nearest port is often not the cheapest, because VAT rates and freight differ."
+      "title": "Вибір порту",
+      "text": "Калькулятор оцінює кожен порт ЄС «під двері» – фрахт, портові збори, ПДВ країни порту й доставку на вашу адресу – і пропонує найдешевший. Ви можете вибрати інший порт і порівняти. Найближчий порт часто не найдешевший, бо ставки ПДВ і фрахт різняться."
     },
     "sources": {
-      "title": "Sources",
-      "text": "We check the rates against official sources of the EU and national authorities:",
-      "taric": "The EU customs tariff – duty rates for cars, goods vehicles and motorcycles.",
-      "origin": "The European Commission's portal on EU trade agreements – rules of origin and preferential duty (CETA, Japan, the United Kingdom).",
-      "eurlex": "EU legislation, including Regulation (EU) 2026/1455 on duty on goods from the US.",
-      "ecb": "Euro reference exchange rates of the European Central Bank.",
-      "vat": "The European Commission – VAT rates and taxes in the member states."
+      "title": "Джерела",
+      "text": "Ставки ми перевіряємо в офіційних джерелах ЄС і національних органів:",
+      "taric": "Митний тариф ЄС – ставки мита для легкових авто, вантажівок і мотоциклів.",
+      "origin": "Портал Європейської комісії про торговельні угоди ЄС – правила походження та преференційне мито (CETA, Японія, Велика Британія).",
+      "eurlex": "Законодавство ЄС, зокрема Регламент (ЄС) 2026/1455 про мито на товари зі США.",
+      "ecb": "Довідкові валютні курси Європейського центрального банку.",
+      "vat": "Європейська комісія – ставки ПДВ і податки в країнах-членах."
     },
     "changes": {
-      "title": "Change log",
-      "text": "What we changed in the calculation rules, and when:",
-      "c20261028": "Extended methodology: worked example, table of 27 countries, sources.",
-      "c20261026": "0% duty for cars made in the US, Canada, Japan and the United Kingdom with proof of origin; separate rate for pickups; no Polish excise on collector's vehicles.",
-      "c20261025": "Registration tax formulas for Slovakia, Lithuania and Hungary; confirmed that Latvia charges none.",
-      "c20261024": "Registration tax for every EU country; customs value at the month's customs exchange rate."
+      "title": "Історія змін",
+      "text": "Що й коли ми змінили в правилах розрахунку:",
+      "c20261028": "Розширена методологія: приклад крок за кроком, таблиця 27 країн, джерела.",
+      "c20261026": "Мито 0% для авто, виготовлених у США, Канаді, Японії та Великій Британії, за наявності доказу походження; окрема ставка для пікапів; без польського акцизу на колекційні авто.",
+      "c20261025": "Формули реєстраційного податку для Словаччини, Литви та Угорщини; підтверджено, що Латвія його не стягує.",
+      "c20261024": "Реєстраційний податок для кожної країни ЄС; митна вартість за митним курсом місяця."
     },
     "limits": {
-      "title": "What the calculation does not know",
-      "text": "The car's real condition, hidden damage, changes in auction prices, currency moves after the quote, or individual decisions by authorities (e.g. a different classification of a pickup). The result is for information only – it is not a customs decision or tax advice."
+      "title": "Чого розрахунок не знає",
+      "text": "Реального стану авто, прихованих пошкоджень, змін цін на аукціонах, коливань курсів після розрахунку чи індивідуальних рішень органів (напр. іншої класифікації пікапа). Результат має інформаційний характер – це не митне рішення й не податкова консультація."
     },
     "independence": {
-      "title": "Independence",
-      "text": "Carglo does not sell, buy or import cars and takes no commission from importers for the result. We earn from the paid PDF report. Spotted a mistake or an outdated rate? Write to {{email}} – we will fix it."
+      "title": "Незалежність",
+      "text": "Carglo не продає, не купує й не ввозить авто та не бере комісії від імпортерів за результат. Ми заробляємо на платному PDF-звіті. Помітили помилку чи застарілу ставку? Напишіть на {{email}} – виправимо."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Is the calculator's result binding?",
-      "a1": "No. The final duty, VAT and taxes are set by customs and the tax office from the documents. We apply the same rules, so the taxes usually match within a few percent – differences mostly come from the exchange rate on the day of clearance and the transport price.",
-      "q2": "Why did my forwarder quote a different transport price?",
-      "a2": "We use typical rates for the route and port. A specific quote depends on the season, the car's size, container or RoRo shipping, the car's condition and the company's margin. That is why we show a range – a real quote should fall within it.",
-      "q3": "How often do you update the rates?",
-      "a3": "The customs exchange rate monthly, currency rates continuously, duty, VAT and national tax rates whenever the law changes. The date of the last check is at the top of this page, and rule changes are in the change log.",
-      "q4": "How do I know whether my car qualifies for 0% duty?",
-      "a4": "What counts is the country of manufacture, not the country of purchase, plus proof of origin (an exporter's statement or documents). The first character of the VIN shows the country of manufacture. Without proof, customs charges the standard 10%.",
-      "q5": "Is VAT charged on the car's price or on the total?",
-      "a5": "On a base that includes the customs value (the car with transport to the EU border), duty and transport costs to the destination. That is why VAT is higher than if it were charged on the car's price alone.",
-      "q6": "Why is it more expensive in my country than in a neighbouring one?",
-      "a6": "Usually because of a registration tax or excise – in some countries it is a few percent of the car's value, in others several tens of percent. The comparison of all EU countries is in the table in section 5."
+      "title": "Поширені запитання",
+      "q1": "Чи є результат калькулятора обов’язковим?",
+      "a1": "Ні. Остаточні суми мита, ПДВ і податків визначають митниця й податкова на підставі документів. Ми застосовуємо ті самі правила, тож податки зазвичай збігаються з точністю до кількох відсотків – розбіжності виникають переважно через курс у день розмитнення та ціну перевезення.",
+      "q2": "Чому експедитор назвав іншу ціну перевезення?",
+      "a2": "Ми використовуємо типові ставки для маршруту й порту. Конкретна пропозиція залежить від сезону, розміру авто, перевезення в контейнері чи RoRo, стану авто й націнки компанії. Тому ми показуємо діапазон – реальна пропозиція має в нього вкластися.",
+      "q3": "Як часто ви оновлюєте ставки?",
+      "a3": "Митний курс – щомісяця, валютні курси – постійно, ставки мита, ПДВ і національних податків – після кожної зміни законодавства. Дату останньої перевірки видно вгорі цієї сторінки, а зміни правил – в історії змін.",
+      "q4": "Як дізнатися, чи має моє авто мито 0%?",
+      "a4": "Важить країна виробництва, а не країна купівлі, і доказ походження (декларація експортера чи документи). Перший символ VIN показує країну виробництва. Без доказу митниця нарахує стандартні 10%.",
+      "q5": "ПДВ рахують від ціни авто чи від усієї суми?",
+      "a5": "Від бази, що включає митну вартість (авто з доставкою до кордону ЄС), мито й витрати на перевезення до місця призначення. Тому ПДВ вищий, ніж якби його рахували лише від ціни авто.",
+      "q6": "Чому в моїй країні дорожче, ніж у сусідній?",
+      "a6": "Найчастіше через реєстраційний податок чи акциз – в одних країнах це кілька відсотків вартості авто, в інших – десятки. Порівняння всіх країн ЄС – у таблиці в пункті 5."
     }
   },
   "glossary": {

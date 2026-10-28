@@ -1710,135 +1710,135 @@
     "countriesTitle": "Daně a registrace podle země"
   },
   "method": {
-    "eyebrow": "Methodology",
-    "title": "How we calculate the cost of importing a car",
-    "lead": "Carglo prices every stage from auction to registration according to the customs and tax rules of the EU and its member states. Below you will find the formulas, a real example from our calculator, the sources of the rates and where the figures are estimates.",
-    "updated": "Rates and rules checked: {{date}}",
-    "toc": "Contents",
+    "eyebrow": "Metodika",
+    "title": "Jak počítáme náklady na dovoz auta",
+    "lead": "Carglo počítá každou etapu od aukce po registraci podle celních a daňových předpisů EU a členských států. Níže najdete vzorce, skutečný příklad z naší kalkulačky, zdroje sazeb a místa, kde jsou čísla odhadem.",
+    "updated": "Sazby a předpisy ověřeny: {{date}}",
+    "toc": "Obsah",
     "flow": {
       "s1": {
-        "title": "Purchase",
-        "text": "car price with auction or dealer fees"
+        "title": "Nákup",
+        "text": "cena auta s poplatky aukce nebo dealera"
       },
       "s2": {
-        "title": "Transport to port",
-        "text": "car carrier from the yard to the export port"
+        "title": "Doprava do přístavu",
+        "text": "autotransportér z areálu do vývozního přístavu"
       },
       "s3": {
-        "title": "Ocean freight",
-        "text": "container or RoRo, insurance"
+        "title": "Námořní přeprava",
+        "text": "kontejner nebo RoRo, pojištění"
       },
       "s4": {
-        "title": "EU clearance",
-        "text": "duty and import VAT at the port"
+        "title": "Proclení v EU",
+        "text": "clo a DPH při dovozu v přístavu"
       },
       "s5": {
-        "title": "National taxes",
-        "text": "excise or registration tax"
+        "title": "Národní daně",
+        "text": "spotřební nebo registrační daň"
       },
       "s6": {
-        "title": "Registration",
-        "text": "inspection, translations, plates"
+        "title": "Registrace",
+        "text": "technická kontrola, překlady, značky"
       }
     },
     "scope": {
-      "title": "What the calculation covers",
-      "text": "We calculate the full door-to-door cost: purchase with auction or dealer fees, transport to the port, ocean freight and insurance, port and customs agent fees, duty, import VAT, national taxes, delivery to your address, and the roadworthiness test and registration in your country.\nEvery result has three scenarios – optimistic, expected and pessimistic – because transport prices and some fees vary. In the PDF report every item shows its base and rate."
+      "title": "Co výpočet zahrnuje",
+      "text": "Počítáme úplné náklady až ke dveřím: nákup s poplatky aukce nebo dealera, dopravu do přístavu, námořní přepravu a pojištění, přístavní poplatky a poplatky celního deklaranta, clo, DPH při dovozu, národní daně, dovoz na vaši adresu a technickou kontrolu a registraci ve vaší zemi.\nKaždý výsledek má tři scénáře – optimistický, očekávaný a pesimistický –, protože ceny dopravy a některé poplatky kolísají. V PDF reportu má každá položka rozepsaný základ a sazbu."
     },
     "example": {
-      "title": "A worked example, step by step",
-      "lead": "A {{model}} bought in the US for {{price}}, imported to {{country}}, cleared at the port of {{port}}. The figures come from our calculator ({{date}}) – the same formulas customs and the tax office use.",
-      "colItem": "Item",
-      "colFormula": "How we calculate it",
-      "colAmount": "Amount",
+      "title": "Příklad krok za krokem",
+      "lead": "{{model}} koupený v USA za {{price}}, dovážený do země: {{country}}, proclení v přístavu {{port}}. Čísla pocházejí z naší kalkulačky ({{date}}) – se stejnými vzorci, jaké používá celní a finanční úřad.",
+      "colItem": "Položka",
+      "colFormula": "Jak počítáme",
+      "colAmount": "Částka",
       "rows": {
-        "price": "Car price with auction fees",
-        "toBorder": "Transport and insurance to the EU border",
-        "customsValue": "Customs value (CIF)",
-        "duty": "Duty",
-        "toDestination": "Port fees and costs to the destination",
-        "vatBase": "VAT base",
-        "vat": "Import VAT",
-        "restTransport": "Remaining transport and delivery to your address",
-        "registration": "Inspection and registration",
-        "other": "Other fees (translations, agent)",
-        "total": "Total, delivered to your door"
+        "price": "Cena auta s poplatky aukce",
+        "toBorder": "Doprava a pojištění na hranici EU",
+        "customsValue": "Celní hodnota (CIF)",
+        "duty": "Clo",
+        "toDestination": "Přístavní poplatky a náklady do místa určení",
+        "vatBase": "Základ DPH",
+        "vat": "DPH při dovozu",
+        "restTransport": "Zbývající doprava a dovoz na adresu",
+        "registration": "Technická kontrola a registrace",
+        "other": "Ostatní poplatky (překlady, deklarant)",
+        "total": "Celkem až ke dveřím"
       },
       "formulas": {
-        "customsValue": "price + transport and insurance to the EU border",
-        "duty": "{{dutyRate}} × customs value",
-        "vatBase": "customs value + duty + costs to the destination",
-        "vat": "{{vatRate}} × VAT base (rate of the clearance country)",
-        "national": "under the rules of the country of registration",
-        "total": "sum of all items, rounded"
+        "customsValue": "cena + doprava a pojištění na hranici EU",
+        "duty": "{{dutyRate}} × celní hodnota",
+        "vatBase": "celní hodnota + clo + náklady do místa určení",
+        "vat": "{{vatRate}} × základ DPH (sazba země proclení)",
+        "national": "podle předpisů země registrace",
+        "total": "součet všech položek, zaokrouhleno"
       },
-      "note": "The example assumes the standard 10% duty (no proof of origin) and typical transport rates. Amounts are rounded, so they may not add up exactly. The same car in other EU countries is in the table in section 5."
+      "note": "Příklad počítá se standardním clem 10 % (bez dokladu o původu) a typickými sazbami dopravy. Částky jsou zaokrouhlené, a proto nemusí přesně sedět. Stejné auto v ostatních zemích EU najdete v tabulce v bodě 5."
     },
     "duty": {
-      "title": "Customs duty",
-      "text": "Duty rates come from the EU customs tariff (TARIC): 10% for passenger cars, 22% for pickups and vans classified as goods vehicles, 6–8% for motorcycles. Vehicles over 30 years old in original condition may count as collector's items – then the duty is 0%.\n0% duty also applies to cars made in a country the EU has an agreement with: the US (Regulation (EU) 2026/1455, from 1 July 2026 to the end of 2029, shipped directly from the US), Canada (CETA), Japan (the Economic Partnership Agreement) and the United Kingdom (the Trade and Cooperation Agreement). The condition is proof of origin – an invoice alone is not enough. The VIN hints at the country of manufacture (e.g. 1, 4, 5 – US; 2 – Canada), and you can tick this option in the calculator.\nThe customs value is the car's price with auction fees plus transport and insurance to the EU border. Prices in foreign currencies are converted at the customs exchange rate for the month (set on the penultimate Wednesday of the previous month)."
+      "title": "Clo",
+      "text": "Sazby cla pocházejí z celního sazebníku EU (TARIC): 10 % pro osobní auta, 22 % pro pick-upy a dodávky zařazené jako nákladní vozidla, 6–8 % pro motocykly. Vozidla starší 30 let v originálním stavu mohou být považována za sběratelská – pak je clo 0 %.\nClo 0 % platí také pro auta vyrobená v zemi, se kterou má EU dohodu: v USA (nařízení (EU) 2026/1455, od 1. července 2026 do konce roku 2029, při přepravě přímo z USA), v Kanadě (CETA), v Japonsku (dohoda o hospodářském partnerství) a ve Spojeném království (dohoda o obchodu a spolupráci). Podmínkou je doklad o původu – samotná faktura nestačí. VIN napoví zemi výroby (např. 1, 4, 5 – USA; 2 – Kanada) a v kalkulačce můžete tuto možnost zaškrtnout.\nCelní hodnota je cena auta s poplatky aukce plus doprava a pojištění na hranici EU. Ceny v cizích měnách přepočítáváme celním kurzem platným v daném měsíci (stanoveným v předposlední středu předchozího měsíce)."
     },
     "vat": {
-      "title": "Import VAT",
-      "text": "VAT is paid in the country where the car is cleared, at that country's rate – e.g. 19% in Germany, 21% in the Netherlands and Belgium, 23% in Poland. The base is the customs value plus duty and transport costs to the destination in the EU.\nBusinesses can use customs procedure 4200: clear the car in one country and account for VAT in the country of registration. The calculator shows the VAT of the port's country, because that is how most private buyers pay."
+      "title": "DPH při dovozu",
+      "text": "DPH se platí v zemi, kde auto prochází proclením, podle její sazby – např. 19 % v Německu, 21 % v Nizozemsku, Belgii a Česku, 23 % v Polsku. Základem je celní hodnota zvýšená o clo a náklady na dopravu do místa určení v EU.\nFirmy mohou využít celní režim 4200: proclít auto v jedné zemi a DPH odvést v zemi registrace. Kalkulačka ukazuje DPH země přístavu, protože tak platí většina soukromých kupujících."
     },
     "national": {
-      "title": "National taxes in 27 countries",
-      "text": "After clearance, each country adds its own tax: excise (Poland), a registration tax based on the car's CO₂, power, mass, age or value (e.g. the Netherlands, France, Denmark, Finland, Portugal) or nothing at all (e.g. Germany, Czechia, Sweden). We calculate it with the formulas from each country's law.\nIn Cyprus, Greece, Croatia, Malta and Romania the tax comes from the authorities' official calculators – there we ask for the amount or show a range. If you enter CO₂ and power from the car's documents, the result is most accurate; otherwise we estimate them from the engine and fuel.",
-      "tableLead": "{{model}} delivered to your door in every EU country (in euro):",
-      "colCountry": "Country",
-      "colTax": "Tax at registration",
-      "colTotal": "Total",
-      "none": "none",
-      "unpriced": "Only the country's official calculator gives the registration tax – the total leaves it out. Official calculators:"
+      "title": "Národní daně ve 27 zemích",
+      "text": "Po proclení si každá země připočítá vlastní daň: spotřební daň (Polsko), registrační daň podle CO₂, výkonu, hmotnosti, stáří nebo hodnoty auta (např. Nizozemsko, Francie, Dánsko, Finsko, Portugalsko) nebo nic (např. Německo, Česko, Švédsko). Počítáme ji podle vzorců ze zákonů každé země.\nNa Kypru, v Řecku, Chorvatsku, na Maltě a v Rumunsku vyplývá daň z oficiálních kalkulaček úřadů – tam se ptáme na částku nebo ukazujeme rozpětí. Když zadáte CO₂ a výkon z dokladů auta, je výsledek nejpřesnější; jinak je odhadneme z motoru a paliva.",
+      "tableLead": "{{model}} až ke dveřím v každé zemi EU (v eurech):",
+      "colCountry": "Země",
+      "colTax": "Daň při registraci",
+      "colTotal": "Celkem",
+      "none": "žádná",
+      "unpriced": "Registrační daň uvádí jen oficiální kalkulačka dané země – součet ji nezahrnuje. Oficiální kalkulačky:"
     },
     "transport": {
-      "title": "Transport and fees",
-      "text": "Land transport in the country of purchase is priced from the distance between the yard or pickup region and the port of departure, at typical carrier rates. Ocean freight, insurance (usually 1.5–2% of the car's value), port, terminal and customs agent fees are typical prices for each route and EU port.\nThese items are estimates – a forwarder's quote for your car depends on the season, size, shipping method (container or RoRo) and the car's condition, so we show a range."
+      "title": "Doprava a poplatky",
+      "text": "Pozemní dopravu v zemi nákupu počítáme ze vzdálenosti mezi areálem nebo oblastí vyzvednutí a výchozím přístavem podle typických sazeb dopravců. Námořní přeprava, pojištění (obvykle 1,5–2 % hodnoty auta), přístavní, terminálové a deklarantské poplatky jsou typické ceny pro každou trasu a přístav EU.\nTyto položky jsou odhadem – nabídka speditéra pro vaše auto závisí na sezóně, velikosti, způsobu přepravy (kontejner nebo RoRo) a stavu auta, proto ukazujeme rozpětí."
     },
     "port": {
-      "title": "Choice of port",
-      "text": "The calculator prices every EU port door-to-door – freight, port fees, the VAT of the port's country and delivery to your address – and suggests the cheapest. You can pick another port and compare. The nearest port is often not the cheapest, because VAT rates and freight differ."
+      "title": "Volba přístavu",
+      "text": "Kalkulačka ocení každý přístav EU až ke dveřím – přepravu, přístavní poplatky, DPH země přístavu a dovoz na vaši adresu – a navrhne nejlevnější. Můžete zvolit jiný přístav a porovnat. Nejbližší přístav často není nejlevnější, protože se liší sazby DPH i přeprava."
     },
     "sources": {
-      "title": "Sources",
-      "text": "We check the rates against official sources of the EU and national authorities:",
-      "taric": "The EU customs tariff – duty rates for cars, goods vehicles and motorcycles.",
-      "origin": "The European Commission's portal on EU trade agreements – rules of origin and preferential duty (CETA, Japan, the United Kingdom).",
-      "eurlex": "EU legislation, including Regulation (EU) 2026/1455 on duty on goods from the US.",
-      "ecb": "Euro reference exchange rates of the European Central Bank.",
-      "vat": "The European Commission – VAT rates and taxes in the member states."
+      "title": "Zdroje",
+      "text": "Sazby ověřujeme v oficiálních zdrojích EU a národních úřadů:",
+      "taric": "Celní sazebník EU – sazby cla pro osobní auta, nákladní vozidla a motocykly.",
+      "origin": "Portál Evropské komise o obchodních dohodách EU – pravidla původu a preferenční clo (CETA, Japonsko, Spojené království).",
+      "eurlex": "Právní předpisy EU, včetně nařízení (EU) 2026/1455 o clech na zboží z USA.",
+      "ecb": "Referenční směnné kurzy Evropské centrální banky.",
+      "vat": "Evropská komise – sazby DPH a daně v členských státech."
     },
     "changes": {
-      "title": "Change log",
-      "text": "What we changed in the calculation rules, and when:",
-      "c20261028": "Extended methodology: worked example, table of 27 countries, sources.",
-      "c20261026": "0% duty for cars made in the US, Canada, Japan and the United Kingdom with proof of origin; separate rate for pickups; no Polish excise on collector's vehicles.",
-      "c20261025": "Registration tax formulas for Slovakia, Lithuania and Hungary; confirmed that Latvia charges none.",
-      "c20261024": "Registration tax for every EU country; customs value at the month's customs exchange rate."
+      "title": "Historie změn",
+      "text": "Co a kdy jsme změnili v pravidlech výpočtu:",
+      "c20261028": "Rozšířená metodika: příklad krok za krokem, tabulka 27 zemí, zdroje.",
+      "c20261026": "Clo 0 % pro auta vyrobená v USA, Kanadě, Japonsku a Spojeném království s dokladem o původu; samostatná sazba pro pick-upy; bez polské spotřební daně na sběratelská vozidla.",
+      "c20261025": "Vzorce registrační daně pro Slovensko, Litvu a Maďarsko; potvrzeno, že Lotyšsko ji nevybírá.",
+      "c20261024": "Registrační daň pro každou zemi EU; celní hodnota podle celního kurzu měsíce."
     },
     "limits": {
-      "title": "What the calculation does not know",
-      "text": "The car's real condition, hidden damage, changes in auction prices, currency moves after the quote, or individual decisions by authorities (e.g. a different classification of a pickup). The result is for information only – it is not a customs decision or tax advice."
+      "title": "Co výpočet neví",
+      "text": "Skutečný stav auta, skryté vady, změny cen na aukcích, pohyby kurzů po výpočtu ani individuální rozhodnutí úřadů (např. jiné zařazení pick-upu). Výsledek má informativní povahu – není celním rozhodnutím ani daňovým poradenstvím."
     },
     "independence": {
-      "title": "Independence",
-      "text": "Carglo does not sell, buy or import cars and takes no commission from importers for the result. We earn from the paid PDF report. Spotted a mistake or an outdated rate? Write to {{email}} – we will fix it."
+      "title": "Nezávislost",
+      "text": "Carglo auta neprodává, nekupuje ani nedováží a nebere od dovozců provizi za výsledek. Vyděláváme na placeném PDF reportu. Vidíte chybu nebo zastaralou sazbu? Napište na {{email}} – opravíme ji."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Is the calculator's result binding?",
-      "a1": "No. The final duty, VAT and taxes are set by customs and the tax office from the documents. We apply the same rules, so the taxes usually match within a few percent – differences mostly come from the exchange rate on the day of clearance and the transport price.",
-      "q2": "Why did my forwarder quote a different transport price?",
-      "a2": "We use typical rates for the route and port. A specific quote depends on the season, the car's size, container or RoRo shipping, the car's condition and the company's margin. That is why we show a range – a real quote should fall within it.",
-      "q3": "How often do you update the rates?",
-      "a3": "The customs exchange rate monthly, currency rates continuously, duty, VAT and national tax rates whenever the law changes. The date of the last check is at the top of this page, and rule changes are in the change log.",
-      "q4": "How do I know whether my car qualifies for 0% duty?",
-      "a4": "What counts is the country of manufacture, not the country of purchase, plus proof of origin (an exporter's statement or documents). The first character of the VIN shows the country of manufacture. Without proof, customs charges the standard 10%.",
-      "q5": "Is VAT charged on the car's price or on the total?",
-      "a5": "On a base that includes the customs value (the car with transport to the EU border), duty and transport costs to the destination. That is why VAT is higher than if it were charged on the car's price alone.",
-      "q6": "Why is it more expensive in my country than in a neighbouring one?",
-      "a6": "Usually because of a registration tax or excise – in some countries it is a few percent of the car's value, in others several tens of percent. The comparison of all EU countries is in the table in section 5."
+      "title": "Časté otázky",
+      "q1": "Je výsledek kalkulačky závazný?",
+      "a1": "Ne. Konečné částky cla, DPH a daní stanoví celní a finanční úřad podle dokladů. Používáme stejné předpisy, takže daně se obvykle shodují s rozdílem několika procent – rozdíly vznikají hlavně kvůli kurzu v den proclení a ceně dopravy.",
+      "q2": "Proč mi speditér uvedl jinou cenu dopravy?",
+      "a2": "Používáme typické sazby pro trasu a přístav. Konkrétní nabídka závisí na sezóně, velikosti auta, přepravě v kontejneru nebo RoRo, stavu auta a marži firmy. Proto ukazujeme rozpětí – skutečná nabídka by se do něj měla vejít.",
+      "q3": "Jak často sazby aktualizujete?",
+      "a3": "Celní kurz každý měsíc, směnné kurzy průběžně, sazby cla, DPH a národních daní při každé změně předpisů. Datum poslední kontroly je nahoře na této stránce, změny pravidel v historii změn.",
+      "q4": "Jak poznám, zda má moje auto nárok na clo 0 %?",
+      "a4": "Rozhoduje země výroby, ne země nákupu, a doklad o původu (prohlášení vývozce nebo doklady). První znak VIN ukazuje zemi výroby. Bez dokladu úřad vyměří standardních 10 %.",
+      "q5": "Počítá se DPH z ceny auta, nebo z celku?",
+      "a5": "Ze základu, který zahrnuje celní hodnotu (auto s dopravou na hranici EU), clo a náklady na dopravu do místa určení. Proto je DPH vyšší, než kdyby se počítala jen z ceny auta.",
+      "q6": "Proč je to v mé zemi dražší než v sousední?",
+      "a6": "Nejčastěji kvůli registrační nebo spotřební dani – v některých zemích jde o několik procent hodnoty auta, v jiných o desítky procent. Srovnání všech zemí EU je v tabulce v bodě 5."
     }
   },
   "glossary": {

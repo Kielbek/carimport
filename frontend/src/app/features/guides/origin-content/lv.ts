@@ -72,7 +72,7 @@ export const ORIGIN_DEEP: OriginDeep = {
         "Standarta ES muita vieglajiem auto ir 10 % no muitas vērtības. Muitas vērtība ir auto cena ar izsoles maksām plus transports un apdrošināšana līdz ES robežai (CIF vērtība). Pikapus var klasificēt kā kravas transportlīdzekļus – tad muita ir 22 % – bet motocikliem piemēro 6–8 %.",
         "No 2026. gada 1. jūlija līdz 2029. gada beigām ASV ražotus auto var ievest ES ar 0 % muitu (Regula (ES) 2026/1455). Nosacījums: muitai jāpierāda auto ASV izcelsme, un auto jānosūta tieši no ASV. Ar rēķinu vai uzlīmi „Made in USA“ nepietiek – vajadzīgs izcelsmes apliecinājums. VIN dod mājienu: ASV ražotu auto VIN sākas ar 1, 4 vai 5. Nosacījumiem var atbilst arī Amerikā salikta japāņu vai vācu marka, bet Eiropā ražots un ASV pirkts BMW – ne.",
         "Importa PVN aprēķina pēc tās valsts likmes, kurā auto tiek muitots. PVN bāze ir muitas vērtība plus muita un transporta izmaksas līdz galamērķim ES. Uzņēmumi var izmantot muitas procedūru 4200: muitošana vienā valstī un PVN deklarēšana reģistrācijas valstī.",
-        "Pēc muitošanas seko valsts nodokļi – atkarībā no valsts akcīzes nodoklis (piem., Polijā 3,1 % vai 18,6 % atkarībā no dzinēja tilpuma), reģistrācijas nodoklis pēc CO₂, jaudas vai vērtības (Latvijā – transportlīdzekļa pirmās reģistrācijas nodoklis), vai vispār nekas. Bieži tieši tie izšķir, vai imports atmaksājas.",
+        "Pēc muitošanas seko valsts nodokļi – atkarībā no valsts akcīzes nodoklis (piem., Polijā 3,1 % vai 18,6 % atkarībā no dzinēja tilpuma), reģistrācijas nodoklis pēc CO₂, jaudas vai vērtības, vai vispār nekas. Bieži tieši tie izšķir, vai imports atmaksājas.",
       ],
     },
     {

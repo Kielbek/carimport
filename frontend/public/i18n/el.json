@@ -1710,135 +1710,135 @@
     "countriesTitle": "Φόροι και ταξινόμηση ανά χώρα"
   },
   "method": {
-    "eyebrow": "Methodology",
-    "title": "How we calculate the cost of importing a car",
-    "lead": "Carglo prices every stage from auction to registration according to the customs and tax rules of the EU and its member states. Below you will find the formulas, a real example from our calculator, the sources of the rates and where the figures are estimates.",
-    "updated": "Rates and rules checked: {{date}}",
-    "toc": "Contents",
+    "eyebrow": "Μεθοδολογία",
+    "title": "Πώς υπολογίζουμε το κόστος εισαγωγής αυτοκινήτου",
+    "lead": "Το Carglo υπολογίζει κάθε στάδιο, από τη δημοπρασία έως την ταξινόμηση, σύμφωνα με τους τελωνειακούς και φορολογικούς κανόνες της ΕΕ και των κρατών μελών. Παρακάτω θα βρείτε τους τύπους, ένα πραγματικό παράδειγμα από τον υπολογιστή μας, τις πηγές των συντελεστών και πού τα νούμερα είναι εκτιμήσεις.",
+    "updated": "Συντελεστές και κανόνες ελέγχθηκαν: {{date}}",
+    "toc": "Περιεχόμενα",
     "flow": {
       "s1": {
-        "title": "Purchase",
-        "text": "car price with auction or dealer fees"
+        "title": "Αγορά",
+        "text": "τιμή αυτοκινήτου με τέλη δημοπρασίας ή εμπόρου"
       },
       "s2": {
-        "title": "Transport to port",
-        "text": "car carrier from the yard to the export port"
+        "title": "Μεταφορά στο λιμάνι",
+        "text": "φορτηγό από τον χώρο στο λιμάνι εξαγωγής"
       },
       "s3": {
-        "title": "Ocean freight",
-        "text": "container or RoRo, insurance"
+        "title": "Θαλάσσια μεταφορά",
+        "text": "κοντέινερ ή RoRo, ασφάλιση"
       },
       "s4": {
-        "title": "EU clearance",
-        "text": "duty and import VAT at the port"
+        "title": "Εκτελωνισμός στην ΕΕ",
+        "text": "δασμός και ΦΠΑ εισαγωγής στο λιμάνι"
       },
       "s5": {
-        "title": "National taxes",
-        "text": "excise or registration tax"
+        "title": "Εθνικοί φόροι",
+        "text": "ειδικός φόρος ή τέλος ταξινόμησης"
       },
       "s6": {
-        "title": "Registration",
-        "text": "inspection, translations, plates"
+        "title": "Ταξινόμηση",
+        "text": "έλεγχος, μεταφράσεις, πινακίδες"
       }
     },
     "scope": {
-      "title": "What the calculation covers",
-      "text": "We calculate the full door-to-door cost: purchase with auction or dealer fees, transport to the port, ocean freight and insurance, port and customs agent fees, duty, import VAT, national taxes, delivery to your address, and the roadworthiness test and registration in your country.\nEvery result has three scenarios – optimistic, expected and pessimistic – because transport prices and some fees vary. In the PDF report every item shows its base and rate."
+      "title": "Τι περιλαμβάνει ο υπολογισμός",
+      "text": "Υπολογίζουμε το πλήρες κόστος έως την πόρτα σας: αγορά με τέλη δημοπρασίας ή εμπόρου, μεταφορά στο λιμάνι, θαλάσσια μεταφορά και ασφάλιση, λιμενικά τέλη και αμοιβή εκτελωνιστή, δασμό, ΦΠΑ εισαγωγής, εθνικούς φόρους, παράδοση στη διεύθυνσή σας, καθώς και τεχνικό έλεγχο και ταξινόμηση στη χώρα σας.\nΚάθε αποτέλεσμα έχει τρία σενάρια – αισιόδοξο, αναμενόμενο και απαισιόδοξο – επειδή οι τιμές μεταφοράς και ορισμένα τέλη κυμαίνονται. Στην αναφορά PDF κάθε στοιχείο έχει αναλυτικά βάση και συντελεστή."
     },
     "example": {
-      "title": "A worked example, step by step",
-      "lead": "A {{model}} bought in the US for {{price}}, imported to {{country}}, cleared at the port of {{port}}. The figures come from our calculator ({{date}}) – the same formulas customs and the tax office use.",
-      "colItem": "Item",
-      "colFormula": "How we calculate it",
-      "colAmount": "Amount",
+      "title": "Ένα παράδειγμα βήμα προς βήμα",
+      "lead": "Ένα {{model}} που αγοράστηκε στις ΗΠΑ για {{price}}, εισάγεται σε: {{country}}, με εκτελωνισμό στο λιμάνι {{port}}. Τα νούμερα προέρχονται από τον υπολογιστή μας ({{date}}) – με τους ίδιους τύπους που εφαρμόζουν το τελωνείο και η εφορία.",
+      "colItem": "Στοιχείο",
+      "colFormula": "Πώς υπολογίζουμε",
+      "colAmount": "Ποσό",
       "rows": {
-        "price": "Car price with auction fees",
-        "toBorder": "Transport and insurance to the EU border",
-        "customsValue": "Customs value (CIF)",
-        "duty": "Duty",
-        "toDestination": "Port fees and costs to the destination",
-        "vatBase": "VAT base",
-        "vat": "Import VAT",
-        "restTransport": "Remaining transport and delivery to your address",
-        "registration": "Inspection and registration",
-        "other": "Other fees (translations, agent)",
-        "total": "Total, delivered to your door"
+        "price": "Τιμή αυτοκινήτου με τέλη δημοπρασίας",
+        "toBorder": "Μεταφορά και ασφάλιση έως τα σύνορα της ΕΕ",
+        "customsValue": "Δασμολογητέα αξία (CIF)",
+        "duty": "Δασμός",
+        "toDestination": "Λιμενικά τέλη και κόστος έως τον προορισμό",
+        "vatBase": "Βάση ΦΠΑ",
+        "vat": "ΦΠΑ εισαγωγής",
+        "restTransport": "Υπόλοιπη μεταφορά και παράδοση στη διεύθυνση",
+        "registration": "Τεχνικός έλεγχος και ταξινόμηση",
+        "other": "Άλλα τέλη (μεταφράσεις, εκτελωνιστής)",
+        "total": "Σύνολο έως την πόρτα"
       },
       "formulas": {
-        "customsValue": "price + transport and insurance to the EU border",
-        "duty": "{{dutyRate}} × customs value",
-        "vatBase": "customs value + duty + costs to the destination",
-        "vat": "{{vatRate}} × VAT base (rate of the clearance country)",
-        "national": "under the rules of the country of registration",
-        "total": "sum of all items, rounded"
+        "customsValue": "τιμή + μεταφορά και ασφάλιση έως τα σύνορα της ΕΕ",
+        "duty": "{{dutyRate}} × δασμολογητέα αξία",
+        "vatBase": "δασμολογητέα αξία + δασμός + κόστος έως τον προορισμό",
+        "vat": "{{vatRate}} × βάση ΦΠΑ (συντελεστής χώρας εκτελωνισμού)",
+        "national": "σύμφωνα με τους κανόνες της χώρας ταξινόμησης",
+        "total": "άθροισμα όλων των στοιχείων, στρογγυλεμένο"
       },
-      "note": "The example assumes the standard 10% duty (no proof of origin) and typical transport rates. Amounts are rounded, so they may not add up exactly. The same car in other EU countries is in the table in section 5."
+      "note": "Το παράδειγμα υποθέτει τον συνήθη δασμό 10% (χωρίς απόδειξη καταγωγής) και τυπικές τιμές μεταφοράς. Τα ποσά είναι στρογγυλεμένα, οπότε μπορεί να μην αθροίζονται ακριβώς. Το ίδιο αυτοκίνητο στις άλλες χώρες της ΕΕ βρίσκεται στον πίνακα της ενότητας 5."
     },
     "duty": {
-      "title": "Customs duty",
-      "text": "Duty rates come from the EU customs tariff (TARIC): 10% for passenger cars, 22% for pickups and vans classified as goods vehicles, 6–8% for motorcycles. Vehicles over 30 years old in original condition may count as collector's items – then the duty is 0%.\n0% duty also applies to cars made in a country the EU has an agreement with: the US (Regulation (EU) 2026/1455, from 1 July 2026 to the end of 2029, shipped directly from the US), Canada (CETA), Japan (the Economic Partnership Agreement) and the United Kingdom (the Trade and Cooperation Agreement). The condition is proof of origin – an invoice alone is not enough. The VIN hints at the country of manufacture (e.g. 1, 4, 5 – US; 2 – Canada), and you can tick this option in the calculator.\nThe customs value is the car's price with auction fees plus transport and insurance to the EU border. Prices in foreign currencies are converted at the customs exchange rate for the month (set on the penultimate Wednesday of the previous month)."
+      "title": "Δασμός",
+      "text": "Οι συντελεστές προέρχονται από το δασμολόγιο της ΕΕ (TARIC): 10% για επιβατικά, 22% για pick-up και βαν που κατατάσσονται ως φορτηγά, 6–8% για μοτοσικλέτες. Οχήματα άνω των 30 ετών σε αυθεντική κατάσταση μπορεί να θεωρηθούν συλλεκτικά – τότε ο δασμός είναι 0%.\nΔασμός 0% ισχύει επίσης για αυτοκίνητα κατασκευασμένα σε χώρα με την οποία η ΕΕ έχει συμφωνία: ΗΠΑ (Κανονισμός (ΕΕ) 2026/1455, από 1η Ιουλίου 2026 έως το τέλος του 2029, με απευθείας αποστολή από τις ΗΠΑ), Καναδάς (CETA), Ιαπωνία (Συμφωνία Οικονομικής Εταιρικής Σχέσης) και Ηνωμένο Βασίλειο (Συμφωνία Εμπορίου και Συνεργασίας). Προϋπόθεση είναι η απόδειξη καταγωγής – ένα τιμολόγιο μόνο του δεν αρκεί. Το VIN δείχνει τη χώρα κατασκευής (π.χ. 1, 4, 5 – ΗΠΑ· 2 – Καναδάς) και στον υπολογιστή μπορείτε να επιλέξετε αυτή την επιλογή.\nΗ δασμολογητέα αξία είναι η τιμή του αυτοκινήτου με τα τέλη δημοπρασίας, συν τη μεταφορά και την ασφάλιση έως τα σύνορα της ΕΕ. Τις τιμές σε ξένο νόμισμα τις μετατρέπουμε με την τελωνειακή ισοτιμία του μήνα (ορίζεται την προτελευταία Τετάρτη του προηγούμενου μήνα)."
     },
     "vat": {
-      "title": "Import VAT",
-      "text": "VAT is paid in the country where the car is cleared, at that country's rate – e.g. 19% in Germany, 21% in the Netherlands and Belgium, 23% in Poland. The base is the customs value plus duty and transport costs to the destination in the EU.\nBusinesses can use customs procedure 4200: clear the car in one country and account for VAT in the country of registration. The calculator shows the VAT of the port's country, because that is how most private buyers pay."
+      "title": "ΦΠΑ εισαγωγής",
+      "text": "Ο ΦΠΑ καταβάλλεται στη χώρα όπου εκτελωνίζεται το αυτοκίνητο, με τον δικό της συντελεστή – π.χ. 19% στη Γερμανία, 21% στις Κάτω Χώρες και στο Βέλγιο, 23% στην Πολωνία, 24% στην Ελλάδα. Βάση είναι η δασμολογητέα αξία προσαυξημένη με τον δασμό και το κόστος μεταφοράς έως τον προορισμό στην ΕΕ.\nΟι επιχειρήσεις μπορούν να χρησιμοποιήσουν το τελωνειακό καθεστώς 4200: εκτελωνισμός σε μία χώρα και απόδοση ΦΠΑ στη χώρα ταξινόμησης. Ο υπολογιστής δείχνει τον ΦΠΑ της χώρας του λιμανιού, επειδή έτσι πληρώνουν οι περισσότεροι ιδιώτες."
     },
     "national": {
-      "title": "National taxes in 27 countries",
-      "text": "After clearance, each country adds its own tax: excise (Poland), a registration tax based on the car's CO₂, power, mass, age or value (e.g. the Netherlands, France, Denmark, Finland, Portugal) or nothing at all (e.g. Germany, Czechia, Sweden). We calculate it with the formulas from each country's law.\nIn Cyprus, Greece, Croatia, Malta and Romania the tax comes from the authorities' official calculators – there we ask for the amount or show a range. If you enter CO₂ and power from the car's documents, the result is most accurate; otherwise we estimate them from the engine and fuel.",
-      "tableLead": "{{model}} delivered to your door in every EU country (in euro):",
-      "colCountry": "Country",
-      "colTax": "Tax at registration",
-      "colTotal": "Total",
-      "none": "none",
-      "unpriced": "Only the country's official calculator gives the registration tax – the total leaves it out. Official calculators:"
+      "title": "Εθνικοί φόροι σε 27 χώρες",
+      "text": "Μετά τον εκτελωνισμό κάθε χώρα προσθέτει τον δικό της φόρο: ειδικό φόρο κατανάλωσης (Πολωνία), τέλος ταξινόμησης βάσει CO₂, ισχύος, μάζας, ηλικίας ή αξίας του αυτοκινήτου (π.χ. Κάτω Χώρες, Γαλλία, Δανία, Φινλανδία, Πορτογαλία) ή τίποτα (π.χ. Γερμανία, Τσεχία, Σουηδία). Τον υπολογίζουμε με τους τύπους της νομοθεσίας κάθε χώρας.\nΣτην Κύπρο, την Ελλάδα, την Κροατία, τη Μάλτα και τη Ρουμανία ο φόρος προκύπτει από τους επίσημους υπολογιστές των αρχών – εκεί ζητάμε το ποσό ή δείχνουμε εύρος. Αν δώσετε CO₂ και ισχύ από τα έγγραφα του αυτοκινήτου, το αποτέλεσμα είναι ακριβέστερο· αλλιώς τα εκτιμούμε από τον κινητήρα και το καύσιμο.",
+      "tableLead": "{{model}} έως την πόρτα σε κάθε χώρα της ΕΕ (σε ευρώ):",
+      "colCountry": "Χώρα",
+      "colTax": "Φόρος στην ταξινόμηση",
+      "colTotal": "Σύνολο",
+      "none": "κανένας",
+      "unpriced": "Το τέλος ταξινόμησης δίνεται μόνο από τον επίσημο υπολογιστή της χώρας – το σύνολο δεν το περιλαμβάνει. Επίσημοι υπολογιστές:"
     },
     "transport": {
-      "title": "Transport and fees",
-      "text": "Land transport in the country of purchase is priced from the distance between the yard or pickup region and the port of departure, at typical carrier rates. Ocean freight, insurance (usually 1.5–2% of the car's value), port, terminal and customs agent fees are typical prices for each route and EU port.\nThese items are estimates – a forwarder's quote for your car depends on the season, size, shipping method (container or RoRo) and the car's condition, so we show a range."
+      "title": "Μεταφορά και τέλη",
+      "text": "Τη χερσαία μεταφορά στη χώρα αγοράς την υπολογίζουμε από την απόσταση μεταξύ του χώρου ή της περιοχής παραλαβής και του λιμανιού αναχώρησης, με τυπικά τιμολόγια μεταφορέων. Η θαλάσσια μεταφορά, η ασφάλιση (συνήθως 1,5–2% της αξίας), τα λιμενικά, τα τέλη τερματικού σταθμού και η αμοιβή εκτελωνιστή είναι τυπικές τιμές για κάθε διαδρομή και λιμάνι της ΕΕ.\nΑυτά τα στοιχεία είναι εκτιμήσεις – η προσφορά ενός διαμεταφορέα για το αυτοκίνητό σας εξαρτάται από την εποχή, το μέγεθος, τον τρόπο αποστολής (κοντέινερ ή RoRo) και την κατάσταση του αυτοκινήτου, γι’ αυτό δείχνουμε εύρος."
     },
     "port": {
-      "title": "Choice of port",
-      "text": "The calculator prices every EU port door-to-door – freight, port fees, the VAT of the port's country and delivery to your address – and suggests the cheapest. You can pick another port and compare. The nearest port is often not the cheapest, because VAT rates and freight differ."
+      "title": "Επιλογή λιμανιού",
+      "text": "Ο υπολογιστής κοστολογεί κάθε λιμάνι της ΕΕ έως την πόρτα – ναύλο, λιμενικά τέλη, ΦΠΑ της χώρας του λιμανιού και παράδοση στη διεύθυνσή σας – και προτείνει το φθηνότερο. Μπορείτε να επιλέξετε άλλο λιμάνι και να συγκρίνετε. Το πλησιέστερο λιμάνι συχνά δεν είναι το φθηνότερο, επειδή διαφέρουν οι συντελεστές ΦΠΑ και ο ναύλος."
     },
     "sources": {
-      "title": "Sources",
-      "text": "We check the rates against official sources of the EU and national authorities:",
-      "taric": "The EU customs tariff – duty rates for cars, goods vehicles and motorcycles.",
-      "origin": "The European Commission's portal on EU trade agreements – rules of origin and preferential duty (CETA, Japan, the United Kingdom).",
-      "eurlex": "EU legislation, including Regulation (EU) 2026/1455 on duty on goods from the US.",
-      "ecb": "Euro reference exchange rates of the European Central Bank.",
-      "vat": "The European Commission – VAT rates and taxes in the member states."
+      "title": "Πηγές",
+      "text": "Ελέγχουμε τους συντελεστές σε επίσημες πηγές της ΕΕ και των εθνικών αρχών:",
+      "taric": "Το δασμολόγιο της ΕΕ – δασμοί για επιβατικά, φορτηγά και μοτοσικλέτες.",
+      "origin": "Η πύλη της Ευρωπαϊκής Επιτροπής για τις εμπορικές συμφωνίες της ΕΕ – κανόνες καταγωγής και προτιμησιακός δασμός (CETA, Ιαπωνία, Ηνωμένο Βασίλειο).",
+      "eurlex": "Η νομοθεσία της ΕΕ, μεταξύ άλλων ο Κανονισμός (ΕΕ) 2026/1455 για τους δασμούς σε προϊόντα από τις ΗΠΑ.",
+      "ecb": "Οι ισοτιμίες αναφοράς της Ευρωπαϊκής Κεντρικής Τράπεζας.",
+      "vat": "Η Ευρωπαϊκή Επιτροπή – συντελεστές ΦΠΑ και φόροι στα κράτη μέλη."
     },
     "changes": {
-      "title": "Change log",
-      "text": "What we changed in the calculation rules, and when:",
-      "c20261028": "Extended methodology: worked example, table of 27 countries, sources.",
-      "c20261026": "0% duty for cars made in the US, Canada, Japan and the United Kingdom with proof of origin; separate rate for pickups; no Polish excise on collector's vehicles.",
-      "c20261025": "Registration tax formulas for Slovakia, Lithuania and Hungary; confirmed that Latvia charges none.",
-      "c20261024": "Registration tax for every EU country; customs value at the month's customs exchange rate."
+      "title": "Ιστορικό αλλαγών",
+      "text": "Τι αλλάξαμε στους κανόνες υπολογισμού και πότε:",
+      "c20261028": "Διευρυμένη μεθοδολογία: παράδειγμα βήμα προς βήμα, πίνακας 27 χωρών, πηγές.",
+      "c20261026": "Δασμός 0% για αυτοκίνητα κατασκευασμένα σε ΗΠΑ, Καναδά, Ιαπωνία και Ηνωμένο Βασίλειο με απόδειξη καταγωγής· ξεχωριστός συντελεστής για pick-up· χωρίς πολωνικό ειδικό φόρο σε συλλεκτικά οχήματα.",
+      "c20261025": "Τύποι του τέλους ταξινόμησης για Σλοβακία, Λιθουανία και Ουγγαρία· επιβεβαιώθηκε ότι η Λετονία δεν επιβάλλει.",
+      "c20261024": "Τέλος ταξινόμησης για κάθε χώρα της ΕΕ· δασμολογητέα αξία με την τελωνειακή ισοτιμία του μήνα."
     },
     "limits": {
-      "title": "What the calculation does not know",
-      "text": "The car's real condition, hidden damage, changes in auction prices, currency moves after the quote, or individual decisions by authorities (e.g. a different classification of a pickup). The result is for information only – it is not a customs decision or tax advice."
+      "title": "Τι δεν γνωρίζει ο υπολογισμός",
+      "text": "Την πραγματική κατάσταση του αυτοκινήτου, κρυφές ζημιές, αλλαγές τιμών στις δημοπρασίες, κινήσεις ισοτιμιών μετά τον υπολογισμό ή μεμονωμένες αποφάσεις των αρχών (π.χ. διαφορετική κατάταξη ενός pick-up). Το αποτέλεσμα είναι ενημερωτικό – δεν αποτελεί τελωνειακή απόφαση ούτε φορολογική συμβουλή."
     },
     "independence": {
-      "title": "Independence",
-      "text": "Carglo does not sell, buy or import cars and takes no commission from importers for the result. We earn from the paid PDF report. Spotted a mistake or an outdated rate? Write to {{email}} – we will fix it."
+      "title": "Ανεξαρτησία",
+      "text": "Το Carglo δεν πουλά, δεν αγοράζει και δεν εισάγει αυτοκίνητα και δεν παίρνει προμήθεια από εισαγωγείς για το αποτέλεσμα. Κερδίζουμε από την επί πληρωμή αναφορά PDF. Εντοπίσατε λάθος ή παρωχημένο συντελεστή; Γράψτε στο {{email}} – θα το διορθώσουμε."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Is the calculator's result binding?",
-      "a1": "No. The final duty, VAT and taxes are set by customs and the tax office from the documents. We apply the same rules, so the taxes usually match within a few percent – differences mostly come from the exchange rate on the day of clearance and the transport price.",
-      "q2": "Why did my forwarder quote a different transport price?",
-      "a2": "We use typical rates for the route and port. A specific quote depends on the season, the car's size, container or RoRo shipping, the car's condition and the company's margin. That is why we show a range – a real quote should fall within it.",
-      "q3": "How often do you update the rates?",
-      "a3": "The customs exchange rate monthly, currency rates continuously, duty, VAT and national tax rates whenever the law changes. The date of the last check is at the top of this page, and rule changes are in the change log.",
-      "q4": "How do I know whether my car qualifies for 0% duty?",
-      "a4": "What counts is the country of manufacture, not the country of purchase, plus proof of origin (an exporter's statement or documents). The first character of the VIN shows the country of manufacture. Without proof, customs charges the standard 10%.",
-      "q5": "Is VAT charged on the car's price or on the total?",
-      "a5": "On a base that includes the customs value (the car with transport to the EU border), duty and transport costs to the destination. That is why VAT is higher than if it were charged on the car's price alone.",
-      "q6": "Why is it more expensive in my country than in a neighbouring one?",
-      "a6": "Usually because of a registration tax or excise – in some countries it is a few percent of the car's value, in others several tens of percent. The comparison of all EU countries is in the table in section 5."
+      "title": "Συχνές ερωτήσεις",
+      "q1": "Είναι δεσμευτικό το αποτέλεσμα του υπολογιστή;",
+      "a1": "Όχι. Τα τελικά ποσά δασμού, ΦΠΑ και φόρων τα ορίζουν το τελωνείο και η εφορία βάσει των εγγράφων. Εφαρμόζουμε τους ίδιους κανόνες, οπότε οι φόροι συνήθως συμπίπτουν με απόκλιση λίγων μονάδων τοις εκατό – οι διαφορές προέρχονται κυρίως από την ισοτιμία την ημέρα του εκτελωνισμού και την τιμή μεταφοράς.",
+      "q2": "Γιατί ο διαμεταφορέας μου έδωσε άλλη τιμή μεταφοράς;",
+      "a2": "Χρησιμοποιούμε τυπικές τιμές για τη διαδρομή και το λιμάνι. Μια συγκεκριμένη προσφορά εξαρτάται από την εποχή, το μέγεθος του αυτοκινήτου, την αποστολή σε κοντέινερ ή RoRo, την κατάστασή του και το περιθώριο της εταιρείας. Γι’ αυτό δείχνουμε εύρος – μια πραγματική προσφορά θα πρέπει να βρίσκεται μέσα σε αυτό.",
+      "q3": "Πόσο συχνά ενημερώνετε τους συντελεστές;",
+      "a3": "Την τελωνειακή ισοτιμία κάθε μήνα, τις ισοτιμίες συνεχώς, τους συντελεστές δασμού, ΦΠΑ και εθνικών φόρων σε κάθε αλλαγή νομοθεσίας. Η ημερομηνία του τελευταίου ελέγχου βρίσκεται στην κορυφή της σελίδας και οι αλλαγές κανόνων στο ιστορικό αλλαγών.",
+      "q4": "Πώς ξέρω αν το αυτοκίνητό μου δικαιούται δασμό 0%;",
+      "a4": "Μετράει η χώρα κατασκευής, όχι η χώρα αγοράς, και η απόδειξη καταγωγής (δήλωση του εξαγωγέα ή έγγραφα). Ο πρώτος χαρακτήρας του VIN δείχνει τη χώρα κατασκευής. Χωρίς απόδειξη, το τελωνείο επιβάλλει το συνήθες 10%.",
+      "q5": "Ο ΦΠΑ υπολογίζεται στην τιμή του αυτοκινήτου ή στο σύνολο;",
+      "a5": "Σε μια βάση που περιλαμβάνει τη δασμολογητέα αξία (το αυτοκίνητο με τη μεταφορά έως τα σύνορα της ΕΕ), τον δασμό και το κόστος μεταφοράς έως τον προορισμό. Γι’ αυτό ο ΦΠΑ είναι υψηλότερος από ό,τι αν υπολογιζόταν μόνο στην τιμή του αυτοκινήτου.",
+      "q6": "Γιατί στη χώρα μου βγαίνει ακριβότερα από ό,τι σε μια γειτονική;",
+      "a6": "Συνήθως λόγω τέλους ταξινόμησης ή ειδικού φόρου – σε ορισμένες χώρες είναι λίγες μονάδες τοις εκατό της αξίας, σε άλλες δεκάδες. Η σύγκριση όλων των χωρών της ΕΕ βρίσκεται στον πίνακα της ενότητας 5."
     }
   },
   "glossary": {

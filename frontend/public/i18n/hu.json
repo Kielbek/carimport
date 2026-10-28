@@ -1710,135 +1710,135 @@
     "countriesTitle": "Adók és forgalomba helyezés országonként"
   },
   "method": {
-    "eyebrow": "Methodology",
-    "title": "How we calculate the cost of importing a car",
-    "lead": "Carglo prices every stage from auction to registration according to the customs and tax rules of the EU and its member states. Below you will find the formulas, a real example from our calculator, the sources of the rates and where the figures are estimates.",
-    "updated": "Rates and rules checked: {{date}}",
-    "toc": "Contents",
+    "eyebrow": "Módszertan",
+    "title": "Így számoljuk ki az autóimport költségét",
+    "lead": "A Carglo az aukciótól a forgalomba helyezésig minden lépést az EU és a tagállamok vám- és adószabályai szerint számol. Alább megtalálja a képleteket, egy valódi példát a kalkulátorunkból, a kulcsok forrásait, és azt, hol becslés egy-egy szám.",
+    "updated": "Kulcsok és szabályok ellenőrizve: {{date}}",
+    "toc": "Tartalom",
     "flow": {
       "s1": {
-        "title": "Purchase",
-        "text": "car price with auction or dealer fees"
+        "title": "Vásárlás",
+        "text": "az autó ára aukciós vagy kereskedői díjakkal"
       },
       "s2": {
-        "title": "Transport to port",
-        "text": "car carrier from the yard to the export port"
+        "title": "Szállítás a kikötőbe",
+        "text": "autószállító a telephelyről az exportkikötőbe"
       },
       "s3": {
-        "title": "Ocean freight",
-        "text": "container or RoRo, insurance"
+        "title": "Tengeri fuvar",
+        "text": "konténer vagy RoRo, biztosítás"
       },
       "s4": {
-        "title": "EU clearance",
-        "text": "duty and import VAT at the port"
+        "title": "Vámkezelés az EU-ban",
+        "text": "vám és importáfa a kikötőben"
       },
       "s5": {
-        "title": "National taxes",
-        "text": "excise or registration tax"
+        "title": "Nemzeti adók",
+        "text": "jövedéki vagy regisztrációs adó"
       },
       "s6": {
-        "title": "Registration",
-        "text": "inspection, translations, plates"
+        "title": "Forgalomba helyezés",
+        "text": "műszaki vizsga, fordítások, rendszám"
       }
     },
     "scope": {
-      "title": "What the calculation covers",
-      "text": "We calculate the full door-to-door cost: purchase with auction or dealer fees, transport to the port, ocean freight and insurance, port and customs agent fees, duty, import VAT, national taxes, delivery to your address, and the roadworthiness test and registration in your country.\nEvery result has three scenarios – optimistic, expected and pessimistic – because transport prices and some fees vary. In the PDF report every item shows its base and rate."
+      "title": "Mit tartalmaz a számítás",
+      "text": "A teljes, házhoz szállított költséget számoljuk: vásárlás aukciós vagy kereskedői díjakkal, szállítás a kikötőbe, tengeri fuvar és biztosítás, kikötői és vámügynöki díjak, vám, importáfa, nemzeti adók, kiszállítás az Ön címére, valamint műszaki vizsga és forgalomba helyezés az Ön országában.\nMinden eredménynek három forgatókönyve van – optimista, várható és pesszimista –, mert a szállítási árak és egyes díjak ingadoznak. A PDF-jelentésben minden tételnél szerepel az alap és a kulcs."
     },
     "example": {
-      "title": "A worked example, step by step",
-      "lead": "A {{model}} bought in the US for {{price}}, imported to {{country}}, cleared at the port of {{port}}. The figures come from our calculator ({{date}}) – the same formulas customs and the tax office use.",
-      "colItem": "Item",
-      "colFormula": "How we calculate it",
-      "colAmount": "Amount",
+      "title": "Egy példa lépésről lépésre",
+      "lead": "Egy {{model}}, amelyet {{price}} áron vettek az USA-ban, behozatal ide: {{country}}, vámkezelés {{port}} kikötőjében. A számok a kalkulátorunkból származnak ({{date}}) – ugyanazokkal a képletekkel, amelyeket a vámhatóság és az adóhatóság használ.",
+      "colItem": "Tétel",
+      "colFormula": "Hogyan számoljuk",
+      "colAmount": "Összeg",
       "rows": {
-        "price": "Car price with auction fees",
-        "toBorder": "Transport and insurance to the EU border",
-        "customsValue": "Customs value (CIF)",
-        "duty": "Duty",
-        "toDestination": "Port fees and costs to the destination",
-        "vatBase": "VAT base",
-        "vat": "Import VAT",
-        "restTransport": "Remaining transport and delivery to your address",
-        "registration": "Inspection and registration",
-        "other": "Other fees (translations, agent)",
-        "total": "Total, delivered to your door"
+        "price": "Az autó ára aukciós díjakkal",
+        "toBorder": "Szállítás és biztosítás az EU határáig",
+        "customsValue": "Vámérték (CIF)",
+        "duty": "Vám",
+        "toDestination": "Kikötői díjak és költségek a rendeltetési helyig",
+        "vatBase": "Áfaalap",
+        "vat": "Importáfa",
+        "restTransport": "További szállítás és kiszállítás a címre",
+        "registration": "Műszaki vizsga és forgalomba helyezés",
+        "other": "Egyéb díjak (fordítás, ügynök)",
+        "total": "Összesen, házhoz szállítva"
       },
       "formulas": {
-        "customsValue": "price + transport and insurance to the EU border",
-        "duty": "{{dutyRate}} × customs value",
-        "vatBase": "customs value + duty + costs to the destination",
-        "vat": "{{vatRate}} × VAT base (rate of the clearance country)",
-        "national": "under the rules of the country of registration",
-        "total": "sum of all items, rounded"
+        "customsValue": "ár + szállítás és biztosítás az EU határáig",
+        "duty": "{{dutyRate}} × vámérték",
+        "vatBase": "vámérték + vám + költségek a rendeltetési helyig",
+        "vat": "{{vatRate}} × áfaalap (a vámkezelés országának kulcsa)",
+        "national": "a forgalomba helyezés országának szabályai szerint",
+        "total": "az összes tétel összege, kerekítve"
       },
-      "note": "The example assumes the standard 10% duty (no proof of origin) and typical transport rates. Amounts are rounded, so they may not add up exactly. The same car in other EU countries is in the table in section 5."
+      "note": "A példa az általános 10%-os vámmal (származási igazolás nélkül) és szokásos szállítási díjakkal számol. Az összegek kerekítettek, ezért nem feltétlenül adódnak össze pontosan. Ugyanez az autó a többi uniós országban az 5. pont táblázatában látható."
     },
     "duty": {
-      "title": "Customs duty",
-      "text": "Duty rates come from the EU customs tariff (TARIC): 10% for passenger cars, 22% for pickups and vans classified as goods vehicles, 6–8% for motorcycles. Vehicles over 30 years old in original condition may count as collector's items – then the duty is 0%.\n0% duty also applies to cars made in a country the EU has an agreement with: the US (Regulation (EU) 2026/1455, from 1 July 2026 to the end of 2029, shipped directly from the US), Canada (CETA), Japan (the Economic Partnership Agreement) and the United Kingdom (the Trade and Cooperation Agreement). The condition is proof of origin – an invoice alone is not enough. The VIN hints at the country of manufacture (e.g. 1, 4, 5 – US; 2 – Canada), and you can tick this option in the calculator.\nThe customs value is the car's price with auction fees plus transport and insurance to the EU border. Prices in foreign currencies are converted at the customs exchange rate for the month (set on the penultimate Wednesday of the previous month)."
+      "title": "Vám",
+      "text": "A vámtételek az EU vámtarifájából (TARIC) származnak: 10% személyautóra, 22% tehergépjárműnek minősülő pickupra és kisteherautóra, 6–8% motorkerékpárra. A 30 évnél idősebb, eredeti állapotú járművek gyűjteményi darabnak minősülhetnek – ekkor a vám 0%.\nA 0%-os vám olyan autókra is vonatkozik, amelyeket az EU-val megállapodást kötött országban gyártottak: az USA-ban (2026/1455/EU rendelet, 2026. július 1-jétől 2029 végéig, közvetlenül az USA-ból történő szállítás esetén), Kanadában (CETA), Japánban (gazdasági partnerségi megállapodás) és az Egyesült Királyságban (kereskedelmi és együttműködési megállapodás). Feltétel a származási igazolás – egy számla önmagában nem elég. Az alvázszám (VIN) utal a gyártás országára (pl. 1, 4, 5 – USA; 2 – Kanada), a kalkulátorban pedig bejelölheti ezt a lehetőséget.\nA vámérték az autó ára az aukciós díjakkal, plusz a szállítás és a biztosítás az EU határáig. A külföldi pénznemben megadott árakat az adott hónap vámárfolyamán számítjuk át (az előző hónap utolsó előtti szerdáján rögzítik)."
     },
     "vat": {
-      "title": "Import VAT",
-      "text": "VAT is paid in the country where the car is cleared, at that country's rate – e.g. 19% in Germany, 21% in the Netherlands and Belgium, 23% in Poland. The base is the customs value plus duty and transport costs to the destination in the EU.\nBusinesses can use customs procedure 4200: clear the car in one country and account for VAT in the country of registration. The calculator shows the VAT of the port's country, because that is how most private buyers pay."
+      "title": "Importáfa",
+      "text": "Az áfát abban az országban kell megfizetni, ahol az autót vámkezelik, annak kulcsa szerint – pl. 19% Németországban, 21% Hollandiában és Belgiumban, 23% Lengyelországban, 27% Magyarországon. Az alap a vámérték, növelve a vámmal és az EU-n belüli rendeltetési helyig tartó szállítás költségével.\nA vállalkozások igénybe vehetik a 4200-as vámeljárást: az autót az egyik országban vámkezelik, az áfát pedig a forgalomba helyezés országában számolják el. A kalkulátor a kikötő országának áfáját mutatja, mert a legtöbb magánvásárló így fizet."
     },
     "national": {
-      "title": "National taxes in 27 countries",
-      "text": "After clearance, each country adds its own tax: excise (Poland), a registration tax based on the car's CO₂, power, mass, age or value (e.g. the Netherlands, France, Denmark, Finland, Portugal) or nothing at all (e.g. Germany, Czechia, Sweden). We calculate it with the formulas from each country's law.\nIn Cyprus, Greece, Croatia, Malta and Romania the tax comes from the authorities' official calculators – there we ask for the amount or show a range. If you enter CO₂ and power from the car's documents, the result is most accurate; otherwise we estimate them from the engine and fuel.",
-      "tableLead": "{{model}} delivered to your door in every EU country (in euro):",
-      "colCountry": "Country",
-      "colTax": "Tax at registration",
-      "colTotal": "Total",
-      "none": "none",
-      "unpriced": "Only the country's official calculator gives the registration tax – the total leaves it out. Official calculators:"
+      "title": "Nemzeti adók 27 országban",
+      "text": "A vámkezelés után minden ország saját adót vet ki: jövedéki adót (Lengyelország), az autó CO₂-kibocsátásán, teljesítményén, tömegén, korán vagy értékén alapuló regisztrációs adót (pl. Hollandia, Franciaország, Dánia, Finnország, Portugália, Magyarország), vagy semmit (pl. Németország, Csehország, Svédország). Az egyes országok jogszabályainak képletei szerint számoljuk.\nCipruson, Görögországban, Horvátországban, Máltán és Romániában az adó a hatóságok hivatalos kalkulátoraiból adódik – ott az összeget kérjük, vagy sávot mutatunk. Ha megadja a CO₂-t és a teljesítményt az autó papírjaiból, az eredmény a legpontosabb; különben a motorból és az üzemanyagból becsüljük.",
+      "tableLead": "{{model}} házhoz szállítva minden uniós országban (euróban):",
+      "colCountry": "Ország",
+      "colTax": "Adó a forgalomba helyezéskor",
+      "colTotal": "Összesen",
+      "none": "nincs",
+      "unpriced": "A regisztrációs adót csak az ország hivatalos kalkulátora adja meg – az összeg nem tartalmazza. Hivatalos kalkulátorok:"
     },
     "transport": {
-      "title": "Transport and fees",
-      "text": "Land transport in the country of purchase is priced from the distance between the yard or pickup region and the port of departure, at typical carrier rates. Ocean freight, insurance (usually 1.5–2% of the car's value), port, terminal and customs agent fees are typical prices for each route and EU port.\nThese items are estimates – a forwarder's quote for your car depends on the season, size, shipping method (container or RoRo) and the car's condition, so we show a range."
+      "title": "Szállítás és díjak",
+      "text": "A vásárlás országán belüli szárazföldi szállítást a telephely vagy átvételi régió és az indulási kikötő közötti távolság alapján, a fuvarozók szokásos díjaival számoljuk. A tengeri fuvar, a biztosítás (általában az autó értékének 1,5–2%-a), a kikötői, terminál- és vámügynöki díjak az egyes útvonalakra és uniós kikötőkre jellemző árak.\nEzek a tételek becslések – a szállítmányozó ajánlata az Ön autójára az évszaktól, a mérettől, a szállítás módjától (konténer vagy RoRo) és az autó állapotától függ, ezért sávot mutatunk."
     },
     "port": {
-      "title": "Choice of port",
-      "text": "The calculator prices every EU port door-to-door – freight, port fees, the VAT of the port's country and delivery to your address – and suggests the cheapest. You can pick another port and compare. The nearest port is often not the cheapest, because VAT rates and freight differ."
+      "title": "A kikötő kiválasztása",
+      "text": "A kalkulátor minden uniós kikötőt házhoz szállítva áraz – fuvar, kikötői díjak, a kikötő országának áfája és kiszállítás az Ön címére –, és a legolcsóbbat javasolja. Választhat másik kikötőt is, és összehasonlíthatja. A legközelebbi kikötő gyakran nem a legolcsóbb, mert az áfakulcsok és a fuvardíjak eltérnek."
     },
     "sources": {
-      "title": "Sources",
-      "text": "We check the rates against official sources of the EU and national authorities:",
-      "taric": "The EU customs tariff – duty rates for cars, goods vehicles and motorcycles.",
-      "origin": "The European Commission's portal on EU trade agreements – rules of origin and preferential duty (CETA, Japan, the United Kingdom).",
-      "eurlex": "EU legislation, including Regulation (EU) 2026/1455 on duty on goods from the US.",
-      "ecb": "Euro reference exchange rates of the European Central Bank.",
-      "vat": "The European Commission – VAT rates and taxes in the member states."
+      "title": "Források",
+      "text": "A kulcsokat az EU és a nemzeti hatóságok hivatalos forrásaiban ellenőrizzük:",
+      "taric": "Az EU vámtarifája – vámtételek személyautókra, tehergépjárművekre és motorkerékpárokra.",
+      "origin": "Az Európai Bizottság portálja az uniós kereskedelmi megállapodásokról – származási szabályok és kedvezményes vám (CETA, Japán, Egyesült Királyság).",
+      "eurlex": "Az uniós jogszabályok, köztük a 2026/1455/EU rendelet az USA-ból származó árukra kivetett vámról.",
+      "ecb": "Az Európai Központi Bank referencia-árfolyamai.",
+      "vat": "Az Európai Bizottság – áfakulcsok és adók a tagállamokban."
     },
     "changes": {
-      "title": "Change log",
-      "text": "What we changed in the calculation rules, and when:",
-      "c20261028": "Extended methodology: worked example, table of 27 countries, sources.",
-      "c20261026": "0% duty for cars made in the US, Canada, Japan and the United Kingdom with proof of origin; separate rate for pickups; no Polish excise on collector's vehicles.",
-      "c20261025": "Registration tax formulas for Slovakia, Lithuania and Hungary; confirmed that Latvia charges none.",
-      "c20261024": "Registration tax for every EU country; customs value at the month's customs exchange rate."
+      "title": "Változásnapló",
+      "text": "Mit és mikor változtattunk a számítási szabályokon:",
+      "c20261028": "Bővített módszertan: lépésenkénti példa, 27 ország táblázata, források.",
+      "c20261026": "0%-os vám az USA-ban, Kanadában, Japánban és az Egyesült Királyságban gyártott autókra származási igazolással; külön kulcs a pickupokra; nincs lengyel jövedéki adó a gyűjteményi járműveken.",
+      "c20261025": "A regisztrációs adó képletei Szlovákiára, Litvániára és Magyarországra; megerősítettük, hogy Lettország nem szed ilyet.",
+      "c20261024": "Regisztrációs adó minden uniós országra; vámérték a hónap vámárfolyamán."
     },
     "limits": {
-      "title": "What the calculation does not know",
-      "text": "The car's real condition, hidden damage, changes in auction prices, currency moves after the quote, or individual decisions by authorities (e.g. a different classification of a pickup). The result is for information only – it is not a customs decision or tax advice."
+      "title": "Amit a számítás nem tud",
+      "text": "Az autó valódi állapotát, a rejtett hibákat, az aukciós árak változását, az árfolyammozgásokat a számítás után, sem a hatóságok egyedi döntéseit (pl. egy pickup eltérő besorolását). Az eredmény tájékoztató jellegű – nem vámhatározat és nem adótanácsadás."
     },
     "independence": {
-      "title": "Independence",
-      "text": "Carglo does not sell, buy or import cars and takes no commission from importers for the result. We earn from the paid PDF report. Spotted a mistake or an outdated rate? Write to {{email}} – we will fix it."
+      "title": "Függetlenség",
+      "text": "A Carglo nem árul, nem vásárol és nem hoz be autókat, és nem kap jutalékot az importőröktől az eredményért. A fizetős PDF-jelentésből élünk. Hibát vagy elavult kulcsot talált? Írjon a {{email}} címre – kijavítjuk."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Is the calculator's result binding?",
-      "a1": "No. The final duty, VAT and taxes are set by customs and the tax office from the documents. We apply the same rules, so the taxes usually match within a few percent – differences mostly come from the exchange rate on the day of clearance and the transport price.",
-      "q2": "Why did my forwarder quote a different transport price?",
-      "a2": "We use typical rates for the route and port. A specific quote depends on the season, the car's size, container or RoRo shipping, the car's condition and the company's margin. That is why we show a range – a real quote should fall within it.",
-      "q3": "How often do you update the rates?",
-      "a3": "The customs exchange rate monthly, currency rates continuously, duty, VAT and national tax rates whenever the law changes. The date of the last check is at the top of this page, and rule changes are in the change log.",
-      "q4": "How do I know whether my car qualifies for 0% duty?",
-      "a4": "What counts is the country of manufacture, not the country of purchase, plus proof of origin (an exporter's statement or documents). The first character of the VIN shows the country of manufacture. Without proof, customs charges the standard 10%.",
-      "q5": "Is VAT charged on the car's price or on the total?",
-      "a5": "On a base that includes the customs value (the car with transport to the EU border), duty and transport costs to the destination. That is why VAT is higher than if it were charged on the car's price alone.",
-      "q6": "Why is it more expensive in my country than in a neighbouring one?",
-      "a6": "Usually because of a registration tax or excise – in some countries it is a few percent of the car's value, in others several tens of percent. The comparison of all EU countries is in the table in section 5."
+      "title": "Gyakori kérdések",
+      "q1": "Kötelező érvényű a kalkulátor eredménye?",
+      "a1": "Nem. A vám, az áfa és az adók végleges összegét a vámhatóság és az adóhatóság állapítja meg a dokumentumok alapján. Ugyanazokat a szabályokat alkalmazzuk, így az adók általában néhány százalékon belül egyeznek – az eltérés főleg a vámkezelés napi árfolyamából és a szállítási árból adódik.",
+      "q2": "Miért adott a szállítmányozóm más szállítási árat?",
+      "a2": "Az útvonalra és a kikötőre jellemző díjakat használjuk. Egy konkrét ajánlat függ az évszaktól, az autó méretétől, a konténeres vagy RoRo szállítástól, az autó állapotától és a cég árrésétől. Ezért mutatunk sávot – egy valódi ajánlatnak bele kell esnie.",
+      "q3": "Milyen gyakran frissítik a kulcsokat?",
+      "a3": "A vámárfolyamot havonta, az árfolyamokat folyamatosan, a vám-, áfa- és nemzeti adókulcsokat minden jogszabályváltozáskor. Az utolsó ellenőrzés dátuma az oldal tetején, a szabályváltozások a változásnaplóban láthatók.",
+      "q4": "Honnan tudom, hogy az autóm 0%-os vámot kap-e?",
+      "a4": "A gyártás országa számít, nem a vásárlásé, valamint a származási igazolás (az exportőr nyilatkozata vagy dokumentumok). Az alvázszám első karaktere a gyártás országát mutatja. Igazolás nélkül a vámhatóság az általános 10%-ot számítja fel.",
+      "q5": "Az áfát az autó árából vagy a teljes összegből számolják?",
+      "a5": "Olyan alapból, amely tartalmazza a vámértéket (az autót az EU határáig tartó szállítással), a vámot és a rendeltetési helyig tartó szállítás költségét. Ezért magasabb az áfa, mintha csak az autó árából számolnák.",
+      "q6": "Miért drágább az én országomban, mint a szomszédban?",
+      "a6": "Többnyire a regisztrációs vagy jövedéki adó miatt – egyes országokban ez az autó értékének néhány százaléka, másokban több tíz százalék. Az összes uniós ország összehasonlítása az 5. pont táblázatában található."
     }
   },
   "glossary": {

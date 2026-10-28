@@ -1710,135 +1710,135 @@
     "countriesTitle": "Taxe și înmatriculare pe țări"
   },
   "method": {
-    "eyebrow": "Methodology",
-    "title": "How we calculate the cost of importing a car",
-    "lead": "Carglo prices every stage from auction to registration according to the customs and tax rules of the EU and its member states. Below you will find the formulas, a real example from our calculator, the sources of the rates and where the figures are estimates.",
-    "updated": "Rates and rules checked: {{date}}",
-    "toc": "Contents",
+    "eyebrow": "Metodologie",
+    "title": "Cum calculăm costul importului unei mașini",
+    "lead": "Carglo calculează fiecare etapă, de la licitație la înmatriculare, după regulile vamale și fiscale ale UE și ale statelor membre. Mai jos găsiți formulele, un exemplu real din calculatorul nostru, sursele cotelor și unde cifrele sunt estimări.",
+    "updated": "Cote și reguli verificate: {{date}}",
+    "toc": "Cuprins",
     "flow": {
       "s1": {
-        "title": "Purchase",
-        "text": "car price with auction or dealer fees"
+        "title": "Cumpărare",
+        "text": "prețul mașinii cu comisioane de licitație sau dealer"
       },
       "s2": {
-        "title": "Transport to port",
-        "text": "car carrier from the yard to the export port"
+        "title": "Transport la port",
+        "text": "platformă de la parc la portul de export"
       },
       "s3": {
-        "title": "Ocean freight",
-        "text": "container or RoRo, insurance"
+        "title": "Transport maritim",
+        "text": "container sau RoRo, asigurare"
       },
       "s4": {
-        "title": "EU clearance",
-        "text": "duty and import VAT at the port"
+        "title": "Vămuire în UE",
+        "text": "taxă vamală și TVA la import în port"
       },
       "s5": {
-        "title": "National taxes",
-        "text": "excise or registration tax"
+        "title": "Taxe naționale",
+        "text": "acciză sau taxă de înmatriculare"
       },
       "s6": {
-        "title": "Registration",
-        "text": "inspection, translations, plates"
+        "title": "Înmatriculare",
+        "text": "inspecție, traduceri, numere"
       }
     },
     "scope": {
-      "title": "What the calculation covers",
-      "text": "We calculate the full door-to-door cost: purchase with auction or dealer fees, transport to the port, ocean freight and insurance, port and customs agent fees, duty, import VAT, national taxes, delivery to your address, and the roadworthiness test and registration in your country.\nEvery result has three scenarios – optimistic, expected and pessimistic – because transport prices and some fees vary. In the PDF report every item shows its base and rate."
+      "title": "Ce include calculul",
+      "text": "Calculăm costul complet până la ușă: cumpărarea cu comisioane de licitație sau dealer, transportul la port, transportul maritim și asigurarea, taxele portuare și ale agentului vamal, taxa vamală, TVA la import, taxele naționale, livrarea la adresa dvs., plus inspecția tehnică și înmatricularea în țara dvs.\nFiecare rezultat are trei scenarii – optimist, așteptat și pesimist – pentru că prețurile transportului și unele taxe variază. În raportul PDF fiecare poziție are baza și cota detaliate."
     },
     "example": {
-      "title": "A worked example, step by step",
-      "lead": "A {{model}} bought in the US for {{price}}, imported to {{country}}, cleared at the port of {{port}}. The figures come from our calculator ({{date}}) – the same formulas customs and the tax office use.",
-      "colItem": "Item",
-      "colFormula": "How we calculate it",
-      "colAmount": "Amount",
+      "title": "Un exemplu pas cu pas",
+      "lead": "Un {{model}} cumpărat în SUA cu {{price}}, importat în: {{country}}, vămuit în portul {{port}}. Cifrele provin din calculatorul nostru ({{date}}) – cu aceleași formule pe care le aplică vama și fiscul.",
+      "colItem": "Poziție",
+      "colFormula": "Cum calculăm",
+      "colAmount": "Sumă",
       "rows": {
-        "price": "Car price with auction fees",
-        "toBorder": "Transport and insurance to the EU border",
-        "customsValue": "Customs value (CIF)",
-        "duty": "Duty",
-        "toDestination": "Port fees and costs to the destination",
-        "vatBase": "VAT base",
-        "vat": "Import VAT",
-        "restTransport": "Remaining transport and delivery to your address",
-        "registration": "Inspection and registration",
-        "other": "Other fees (translations, agent)",
-        "total": "Total, delivered to your door"
+        "price": "Prețul mașinii cu comisioane de licitație",
+        "toBorder": "Transport și asigurare până la granița UE",
+        "customsValue": "Valoarea în vamă (CIF)",
+        "duty": "Taxa vamală",
+        "toDestination": "Taxe portuare și costuri până la destinație",
+        "vatBase": "Baza TVA",
+        "vat": "TVA la import",
+        "restTransport": "Restul transportului și livrarea la adresă",
+        "registration": "Inspecție și înmatriculare",
+        "other": "Alte taxe (traduceri, agent)",
+        "total": "Total până la ușă"
       },
       "formulas": {
-        "customsValue": "price + transport and insurance to the EU border",
-        "duty": "{{dutyRate}} × customs value",
-        "vatBase": "customs value + duty + costs to the destination",
-        "vat": "{{vatRate}} × VAT base (rate of the clearance country)",
-        "national": "under the rules of the country of registration",
-        "total": "sum of all items, rounded"
+        "customsValue": "preț + transport și asigurare până la granița UE",
+        "duty": "{{dutyRate}} × valoarea în vamă",
+        "vatBase": "valoarea în vamă + taxa vamală + costuri până la destinație",
+        "vat": "{{vatRate}} × baza TVA (cota țării de vămuire)",
+        "national": "conform regulilor țării de înmatriculare",
+        "total": "suma tuturor pozițiilor, rotunjită"
       },
-      "note": "The example assumes the standard 10% duty (no proof of origin) and typical transport rates. Amounts are rounded, so they may not add up exactly. The same car in other EU countries is in the table in section 5."
+      "note": "Exemplul presupune taxa vamală standard de 10% (fără dovada originii) și tarife de transport obișnuite. Sumele sunt rotunjite, deci s-ar putea să nu se adune exact. Aceeași mașină în celelalte țări UE este în tabelul de la punctul 5."
     },
     "duty": {
-      "title": "Customs duty",
-      "text": "Duty rates come from the EU customs tariff (TARIC): 10% for passenger cars, 22% for pickups and vans classified as goods vehicles, 6–8% for motorcycles. Vehicles over 30 years old in original condition may count as collector's items – then the duty is 0%.\n0% duty also applies to cars made in a country the EU has an agreement with: the US (Regulation (EU) 2026/1455, from 1 July 2026 to the end of 2029, shipped directly from the US), Canada (CETA), Japan (the Economic Partnership Agreement) and the United Kingdom (the Trade and Cooperation Agreement). The condition is proof of origin – an invoice alone is not enough. The VIN hints at the country of manufacture (e.g. 1, 4, 5 – US; 2 – Canada), and you can tick this option in the calculator.\nThe customs value is the car's price with auction fees plus transport and insurance to the EU border. Prices in foreign currencies are converted at the customs exchange rate for the month (set on the penultimate Wednesday of the previous month)."
+      "title": "Taxa vamală",
+      "text": "Cotele provin din tariful vamal al UE (TARIC): 10% pentru autoturisme, 22% pentru pick-up-uri și dube clasificate drept vehicule de marfă, 6–8% pentru motociclete. Vehiculele de peste 30 de ani în stare originală pot fi considerate de colecție – atunci taxa vamală este 0%.\nTaxa de 0% se aplică și mașinilor fabricate într-o țară cu care UE are un acord: SUA (Regulamentul (UE) 2026/1455, de la 1 iulie 2026 până la sfârșitul lui 2029, cu expediere directă din SUA), Canada (CETA), Japonia (Acordul de parteneriat economic) și Regatul Unit (Acordul comercial și de cooperare). Condiția este dovada originii – o factură nu ajunge. VIN-ul indică țara de fabricație (de ex. 1, 4, 5 – SUA; 2 – Canada), iar în calculator puteți bifa această opțiune.\nValoarea în vamă este prețul mașinii cu comisioanele de licitație plus transportul și asigurarea până la granița UE. Prețurile în valută le convertim la cursul vamal al lunii (stabilit în penultima miercuri a lunii precedente)."
     },
     "vat": {
-      "title": "Import VAT",
-      "text": "VAT is paid in the country where the car is cleared, at that country's rate – e.g. 19% in Germany, 21% in the Netherlands and Belgium, 23% in Poland. The base is the customs value plus duty and transport costs to the destination in the EU.\nBusinesses can use customs procedure 4200: clear the car in one country and account for VAT in the country of registration. The calculator shows the VAT of the port's country, because that is how most private buyers pay."
+      "title": "TVA la import",
+      "text": "TVA se plătește în țara în care mașina este vămuită, la cota acesteia – de ex. 19% în Germania, 21% în Țările de Jos și Belgia, 23% în Polonia. Baza este valoarea în vamă plus taxa vamală și costurile de transport până la destinația din UE.\nFirmele pot folosi regimul vamal 4200: vămuiesc mașina într-o țară și plătesc TVA în țara de înmatriculare. Calculatorul arată TVA-ul țării portului, pentru că așa plătesc majoritatea persoanelor fizice."
     },
     "national": {
-      "title": "National taxes in 27 countries",
-      "text": "After clearance, each country adds its own tax: excise (Poland), a registration tax based on the car's CO₂, power, mass, age or value (e.g. the Netherlands, France, Denmark, Finland, Portugal) or nothing at all (e.g. Germany, Czechia, Sweden). We calculate it with the formulas from each country's law.\nIn Cyprus, Greece, Croatia, Malta and Romania the tax comes from the authorities' official calculators – there we ask for the amount or show a range. If you enter CO₂ and power from the car's documents, the result is most accurate; otherwise we estimate them from the engine and fuel.",
-      "tableLead": "{{model}} delivered to your door in every EU country (in euro):",
-      "colCountry": "Country",
-      "colTax": "Tax at registration",
+      "title": "Taxe naționale în 27 de țări",
+      "text": "După vămuire, fiecare țară adaugă propria taxă: acciză (Polonia), o taxă de înmatriculare calculată după CO₂, putere, masă, vechime sau valoarea mașinii (de ex. Țările de Jos, Franța, Danemarca, Finlanda, Portugalia) sau nimic (de ex. Germania, Cehia, Suedia). O calculăm cu formulele din legislația fiecărei țări.\nÎn Cipru, Grecia, Croația, Malta și România taxa rezultă din calculatoarele oficiale ale autorităților – acolo vă cerem suma sau arătăm un interval. Dacă introduceți CO₂ și puterea din actele mașinii, rezultatul este cel mai precis; altfel le estimăm din motor și combustibil.",
+      "tableLead": "{{model}} până la ușă în fiecare țară UE (în euro):",
+      "colCountry": "Țară",
+      "colTax": "Taxă la înmatriculare",
       "colTotal": "Total",
-      "none": "none",
-      "unpriced": "Only the country's official calculator gives the registration tax – the total leaves it out. Official calculators:"
+      "none": "niciuna",
+      "unpriced": "Taxa de înmatriculare o dă doar calculatorul oficial al țării – totalul nu o include. Calculatoare oficiale:"
     },
     "transport": {
-      "title": "Transport and fees",
-      "text": "Land transport in the country of purchase is priced from the distance between the yard or pickup region and the port of departure, at typical carrier rates. Ocean freight, insurance (usually 1.5–2% of the car's value), port, terminal and customs agent fees are typical prices for each route and EU port.\nThese items are estimates – a forwarder's quote for your car depends on the season, size, shipping method (container or RoRo) and the car's condition, so we show a range."
+      "title": "Transport și taxe",
+      "text": "Transportul terestru în țara de cumpărare îl calculăm din distanța dintre parc sau regiunea de preluare și portul de plecare, la tarifele obișnuite ale transportatorilor. Transportul maritim, asigurarea (de obicei 1,5–2% din valoarea mașinii), taxele portuare, de terminal și ale agentului vamal sunt prețuri tipice pentru fiecare rută și port UE.\nAceste poziții sunt estimări – oferta unei case de expediții pentru mașina dvs. depinde de sezon, mărime, modul de expediere (container sau RoRo) și starea mașinii, de aceea arătăm un interval."
     },
     "port": {
-      "title": "Choice of port",
-      "text": "The calculator prices every EU port door-to-door – freight, port fees, the VAT of the port's country and delivery to your address – and suggests the cheapest. You can pick another port and compare. The nearest port is often not the cheapest, because VAT rates and freight differ."
+      "title": "Alegerea portului",
+      "text": "Calculatorul evaluează fiecare port UE până la ușă – transport, taxe portuare, TVA-ul țării portului și livrarea la adresa dvs. – și îl propune pe cel mai ieftin. Puteți alege alt port și compara. Cel mai apropiat port adesea nu este cel mai ieftin, pentru că diferă cotele TVA și transportul."
     },
     "sources": {
-      "title": "Sources",
-      "text": "We check the rates against official sources of the EU and national authorities:",
-      "taric": "The EU customs tariff – duty rates for cars, goods vehicles and motorcycles.",
-      "origin": "The European Commission's portal on EU trade agreements – rules of origin and preferential duty (CETA, Japan, the United Kingdom).",
-      "eurlex": "EU legislation, including Regulation (EU) 2026/1455 on duty on goods from the US.",
-      "ecb": "Euro reference exchange rates of the European Central Bank.",
-      "vat": "The European Commission – VAT rates and taxes in the member states."
+      "title": "Surse",
+      "text": "Verificăm cotele în surse oficiale ale UE și ale autorităților naționale:",
+      "taric": "Tariful vamal al UE – cotele taxei vamale pentru autoturisme, vehicule de marfă și motociclete.",
+      "origin": "Portalul Comisiei Europene despre acordurile comerciale ale UE – reguli de origine și taxă preferențială (CETA, Japonia, Regatul Unit).",
+      "eurlex": "Legislația UE, inclusiv Regulamentul (UE) 2026/1455 privind taxele pe mărfurile din SUA.",
+      "ecb": "Cursurile de schimb de referință ale Băncii Centrale Europene.",
+      "vat": "Comisia Europeană – cote TVA și taxe în statele membre."
     },
     "changes": {
-      "title": "Change log",
-      "text": "What we changed in the calculation rules, and when:",
-      "c20261028": "Extended methodology: worked example, table of 27 countries, sources.",
-      "c20261026": "0% duty for cars made in the US, Canada, Japan and the United Kingdom with proof of origin; separate rate for pickups; no Polish excise on collector's vehicles.",
-      "c20261025": "Registration tax formulas for Slovakia, Lithuania and Hungary; confirmed that Latvia charges none.",
-      "c20261024": "Registration tax for every EU country; customs value at the month's customs exchange rate."
+      "title": "Istoricul modificărilor",
+      "text": "Ce și când am schimbat în regulile de calcul:",
+      "c20261028": "Metodologie extinsă: exemplu pas cu pas, tabel cu 27 de țări, surse.",
+      "c20261026": "Taxă vamală 0% pentru mașinile fabricate în SUA, Canada, Japonia și Regatul Unit cu dovada originii; cotă separată pentru pick-up-uri; fără acciza poloneză pe vehiculele de colecție.",
+      "c20261025": "Formulele taxei de înmatriculare pentru Slovacia, Lituania și Ungaria; confirmat că Letonia nu percepe una.",
+      "c20261024": "Taxă de înmatriculare pentru fiecare țară UE; valoarea în vamă la cursul vamal al lunii."
     },
     "limits": {
-      "title": "What the calculation does not know",
-      "text": "The car's real condition, hidden damage, changes in auction prices, currency moves after the quote, or individual decisions by authorities (e.g. a different classification of a pickup). The result is for information only – it is not a customs decision or tax advice."
+      "title": "Ce nu știe calculul",
+      "text": "Starea reală a mașinii, daunele ascunse, schimbările de preț la licitații, mișcările cursului după calcul sau deciziile individuale ale autorităților (de ex. o altă clasificare a unui pick-up). Rezultatul are caracter informativ – nu este o decizie vamală și nici consultanță fiscală."
     },
     "independence": {
-      "title": "Independence",
-      "text": "Carglo does not sell, buy or import cars and takes no commission from importers for the result. We earn from the paid PDF report. Spotted a mistake or an outdated rate? Write to {{email}} – we will fix it."
+      "title": "Independență",
+      "text": "Carglo nu vinde, nu cumpără și nu importă mașini și nu ia comision de la importatori pentru rezultat. Câștigăm din raportul PDF plătit. Ați găsit o greșeală sau o cotă depășită? Scrieți la {{email}} – o corectăm."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Is the calculator's result binding?",
-      "a1": "No. The final duty, VAT and taxes are set by customs and the tax office from the documents. We apply the same rules, so the taxes usually match within a few percent – differences mostly come from the exchange rate on the day of clearance and the transport price.",
-      "q2": "Why did my forwarder quote a different transport price?",
-      "a2": "We use typical rates for the route and port. A specific quote depends on the season, the car's size, container or RoRo shipping, the car's condition and the company's margin. That is why we show a range – a real quote should fall within it.",
-      "q3": "How often do you update the rates?",
-      "a3": "The customs exchange rate monthly, currency rates continuously, duty, VAT and national tax rates whenever the law changes. The date of the last check is at the top of this page, and rule changes are in the change log.",
-      "q4": "How do I know whether my car qualifies for 0% duty?",
-      "a4": "What counts is the country of manufacture, not the country of purchase, plus proof of origin (an exporter's statement or documents). The first character of the VIN shows the country of manufacture. Without proof, customs charges the standard 10%.",
-      "q5": "Is VAT charged on the car's price or on the total?",
-      "a5": "On a base that includes the customs value (the car with transport to the EU border), duty and transport costs to the destination. That is why VAT is higher than if it were charged on the car's price alone.",
-      "q6": "Why is it more expensive in my country than in a neighbouring one?",
-      "a6": "Usually because of a registration tax or excise – in some countries it is a few percent of the car's value, in others several tens of percent. The comparison of all EU countries is in the table in section 5."
+      "title": "Întrebări frecvente",
+      "q1": "Este obligatoriu rezultatul calculatorului?",
+      "a1": "Nu. Sumele finale ale taxei vamale, TVA-ului și taxelor le stabilesc vama și fiscul pe baza documentelor. Aplicăm aceleași reguli, deci taxele coincid de regulă cu o diferență de câteva procente – diferențele vin mai ales din cursul din ziua vămuirii și din prețul transportului.",
+      "q2": "De ce casa de expediții mi-a dat alt preț la transport?",
+      "a2": "Folosim tarife tipice pentru rută și port. O ofertă concretă depinde de sezon, mărimea mașinii, expedierea în container sau RoRo, starea mașinii și marja firmei. De aceea arătăm un interval – o ofertă reală ar trebui să se încadreze în el.",
+      "q3": "Cât de des actualizați cotele?",
+      "a3": "Cursul vamal lunar, cursurile valutare continuu, cotele taxei vamale, TVA-ului și taxelor naționale la fiecare schimbare legislativă. Data ultimei verificări este sus pe această pagină, iar schimbările de reguli în istoricul modificărilor.",
+      "q4": "Cum aflu dacă mașina mea are taxă vamală 0%?",
+      "a4": "Contează țara de fabricație, nu cea de cumpărare, plus dovada originii (declarația exportatorului sau documente). Primul caracter al VIN-ului arată țara de fabricație. Fără dovadă, vama aplică 10% standard.",
+      "q5": "TVA se calculează la prețul mașinii sau la total?",
+      "a5": "La o bază care include valoarea în vamă (mașina cu transportul până la granița UE), taxa vamală și costurile de transport până la destinație. De aceea TVA este mai mare decât dacă s-ar calcula doar la prețul mașinii.",
+      "q6": "De ce iese mai scump în țara mea decât într-una vecină?",
+      "a6": "De cele mai multe ori din cauza unei taxe de înmatriculare sau accize – în unele țări sunt câteva procente din valoarea mașinii, în altele zeci de procente. Comparația tuturor țărilor UE este în tabelul de la punctul 5."
     }
   },
   "glossary": {
