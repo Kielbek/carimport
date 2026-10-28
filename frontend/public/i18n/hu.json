@@ -511,9 +511,9 @@
     "toTop": "Vissza a tetejére",
     "glossary": "Szótár",
     "contact": "Kapcsolat",
-    "vin": "VIN check",
-    "copart": "Copart – how to buy",
-    "vinCompare": "VIN reports compared"
+    "vin": "Alvázszám-ellenőrzés",
+    "copart": "Copart – így vásárolj",
+    "vinCompare": "VIN-jelentések összehasonlítása"
   },
   "footer": {
     "about": "Független kalkulátor az EU-n kívülről behozott autók importköltségeihez. Nem árulunk és nem importálunk autókat – kiszámoljuk, mennyibe kerülnek valójában.",
@@ -880,16 +880,16 @@
       "description": "Kérdése van a kalkulációval, a jelentéssel, a fizetéssel vagy együttműködéssel kapcsolatban? Írjon a Carglo csapatának – általában egy munkanapon belül válaszolunk."
     },
     "vin": {
-      "title": "VIN check for US cars – free VIN decoder and vehicle history | Carglo",
-      "description": "Enter a VIN and check the make, model, year, engine and country of manufacture for free. Learn how to read a VIN and where to check damage and mileage history."
+      "title": "Amerikai autó alvázszám-ellenőrzése – ingyenes VIN-dekóder és előélet | Carglo",
+      "description": "Írja be az alvázszámot (VIN), és ingyen ellenőrizze a márkát, modellt, évjáratot, motort és gyártási országot. Hogyan olvassa a VIN-t, és hol nézze meg a sérülés- és kilométer-előzményeket."
     },
     "copart": {
-      "title": "Copart: how to buy a car from the US in Europe – fees, broker, shipping | Carglo",
-      "description": "A Copart guide for buyers in Europe: account or broker, auction fees, title types, checking the car, payment, shipping and the full cost of importing."
+      "title": "Copart: autóvásárlás az USA-ból Európából – díjak, bróker, szállítás | Carglo",
+      "description": "Copart-útmutató európai vásárlóknak: saját fiók vagy bróker, aukciós díjak, title-típusok, az autó ellenőrzése, fizetés, szállítás és az import teljes költsége."
     },
     "vinCompare": {
-      "title": "VIN history reports compared: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Which VIN report should you buy for a car from the USA or Europe? Coverage, damage and title data, photos and prices compared: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
+      "title": "VIN-előéletjelentések összehasonlítása: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
+      "description": "Melyik VIN-jelentést válassza amerikai vagy európai autóhoz? Lefedettség, sérülés- és title-adatok, fotók és árak: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     }
   },
   "privacy": {
@@ -1951,347 +1951,347 @@
     }
   },
   "vinCta": {
-    "title": "Before you bid – check the car's history by VIN",
-    "text": "A history report shows earlier damage, mileage and past auctions, among other things. It costs a fraction of even a small repair.",
-    "button": "Check the VIN at {{partner}}",
-    "label": "Partner link – Carglo may earn a commission. It does not affect our calculations."
+    "title": "Licitálás előtt ellenőrizze az autó előéletét az alvázszám alapján",
+    "text": "Az előéletjelentés többek között a korábbi sérüléseket, a kilométeróra-állásokat és a korábbi aukciókat mutatja. Egy kisebb javítás árának töredékébe kerül.",
+    "button": "VIN ellenőrzése: {{partner}}",
+    "label": "Partnerlink – a Carglo jutalékot kaphat. Ez nem befolyásolja a számításainkat."
   },
   "vinPage": {
-    "eyebrow": "Tool and guide",
-    "title": "Check the VIN of a car from the US, Canada or Europe",
-    "lead": "Enter a VIN and we decode the make, model, year, engine and country of manufacture for free. Below we explain how to read a VIN yourself and where to check damage and mileage history before you buy.",
+    "eyebrow": "Eszköz és útmutató",
+    "title": "Ellenőrizze az USA-ból, Kanadából vagy Európából származó autó alvázszámát",
+    "lead": "Írja be a VIN-t, és ingyen kiolvassuk a márkát, a modellt, az évjáratot, a motort és a gyártási országot. Lent elmagyarázzuk, hogyan olvassa a VIN-t saját maga, és hol ellenőrizze vásárlás előtt a sérülés- és kilométer-előzményeket.",
     "tool": {
-      "title": "Free VIN decoder",
-      "lead": "Data from the US vehicle database (NHTSA) and the EPA, and – for cars from outside North America – from the VIN itself.",
-      "button": "Check VIN",
-      "year": "Model year",
-      "engine": "Engine",
-      "power": "Power",
-      "fuel": "Fuel",
-      "body": "Body",
-      "check": "Check digit",
-      "checkOk": "valid",
-      "checkBad": "does not match – possible typo",
-      "duty": "Car built in {{country}} – with proof of origin it may qualify for 0% duty instead of 10%.",
-      "dutyMore": "How it works",
-      "calculate": "Calculate the import cost of this car",
-      "note": "The decoder shows the technical data encoded in the VIN and in manufacturers' databases. It does not show damage or mileage history – that is what a vehicle history report is for."
+      "title": "Ingyenes VIN-dekóder",
+      "lead": "Adatok az amerikai járműadatbázisból (NHTSA) és az EPA-tól, Észak-Amerikán kívüli autóknál magából a VIN-ből.",
+      "button": "VIN ellenőrzése",
+      "year": "Modellév",
+      "engine": "Motor",
+      "power": "Teljesítmény",
+      "fuel": "Üzemanyag",
+      "body": "Karosszéria",
+      "check": "Ellenőrző számjegy",
+      "checkOk": "érvényes",
+      "checkBad": "nem egyezik – lehetséges elírás",
+      "duty": "Gyártási ország: {{country}} – származási igazolással 10% helyett 0% vám vonatkozhat rá.",
+      "dutyMore": "Hogyan működik",
+      "calculate": "Az autó importköltségének kiszámítása",
+      "note": "A dekóder a VIN-ben és a gyártói adatbázisokban rögzített műszaki adatokat mutatja. A sérülés- és kilométer-előzményeket nem – erre szolgál a járműelőzmény-jelentés."
     },
     "what": {
-      "title": "What a VIN is",
-      "text": "A VIN (Vehicle Identification Number) is the 17-character number the manufacturer gives every car. It never contains the letters I, O or Q, so they are not mistaken for the digits 1 and 0.\nYou will find the VIN on a plate by the windscreen (driver's side), on the door pillar, in the documents (the title in the US, the registration certificate in the EU) and in the auction listing. Before buying, compare the VIN in the listing with the one in the car's photos – a difference is a warning sign."
+      "title": "Mi az alvázszám (VIN)",
+      "text": "A VIN (Vehicle Identification Number, alvázszám) a 17 karakteres azonosító, amelyet a gyártó minden autónak ad. Soha nem tartalmazza az I, O és Q betűket, hogy ne lehessen összetéveszteni őket az 1-es és 0-s számjeggyel.\nA VIN megtalálható a szélvédő melletti táblán (vezetőoldalon), az ajtóoszlopon, az okmányokban (az USA-ban a title-ön, az EU-ban a forgalmi engedélyen) és az aukciós hirdetésben. Vásárlás előtt vesse össze a hirdetés VIN-jét a fotókon láthatóval – az eltérés figyelmeztető jel."
     },
     "read": {
-      "title": "How to read a VIN, character by character",
-      "text": "Every position in a VIN means something. The most useful are the first character (country of manufacture), the ninth (check digit) and the tenth (model year).",
-      "p1": "Country of manufacture (e.g. 1, 4, 5 – US, W – Germany, J – Japan)",
-      "p2": "Manufacturer – together with the first character it forms the WMI code",
-      "p4": "Model, body, engine, safety systems",
-      "p9": "Check digit – mandatory in North America, catches typos",
-      "p10": "Model year",
-      "p11": "Plant where the car was assembled",
-      "p12": "The car's serial number",
-      "countryTitle": "First character – country of manufacture",
-      "yearTitle": "Tenth character – model year"
+      "title": "A VIN olvasása karakterről karakterre",
+      "text": "A VIN minden pozíciójának jelentése van. A leghasznosabb az első karakter (gyártási ország), a kilencedik (ellenőrző számjegy) és a tizedik (modellév).",
+      "p1": "Gyártási ország (pl. 1, 4, 5 – USA, W – Németország, J – Japán)",
+      "p2": "Gyártó – az első karakterrel együtt alkotja a WMI-kódot",
+      "p4": "Modell, karosszéria, motor, biztonsági rendszerek",
+      "p9": "Ellenőrző számjegy – Észak-Amerikában kötelező, kiszűri az elírásokat",
+      "p10": "Modellév",
+      "p11": "Az összeszerelő gyár",
+      "p12": "Az autó sorozatszáma",
+      "countryTitle": "Első karakter – gyártási ország",
+      "yearTitle": "Tizedik karakter – modellév"
     },
     "report": {
-      "title": "What a vehicle history report shows",
-      "text": "The decoder tells you what the car is. A history report tells you what happened to it. It usually includes:\n• damage and incidents reported by insurers, including total losses,\n• the title type (clean, salvage, rebuilt, flood) and its changes between states,\n• odometer readings – they reveal a rolled-back odometer,\n• earlier auctions, often with photos of the car before repair,\n• thefts, the number of owners and registration states.\nFor an auction car, a report usually costs a fraction of even a small repair – and it can stop you buying a flood car or one with serious structural damage."
+      "title": "Mit mutat a járműelőzmény-jelentés",
+      "text": "A dekóder megmondja, milyen autó. Az előéletjelentés megmondja, mi történt vele. Általában tartalmazza:\n• a biztosítók által jelentett sérüléseket és káreseményeket, a totálkárokat is,\n• a title típusát (clean, salvage, rebuilt, flood) és változásait államok között,\n• a kilométeróra-állásokat – ezek leleplezik a visszatekert órát,\n• a korábbi aukciókat, gyakran javítás előtti fotókkal,\n• a lopásokat, a tulajdonosok számát és a nyilvántartási államokat.\nAukciós autónál a jelentés általában egy kisebb javítás árának töredéke – és megóvhat egy ázott vagy súlyos szerkezeti sérüléses autó megvételétől."
     },
     "free": {
-      "title": "Free sources of VIN information",
-      "text": "Some information you can check for free in official databases:",
-      "nicb": "The US insurers' database – whether the car was reported stolen or as a total loss (salvage).",
-      "nhtsa": "Open safety recalls for the VIN – worth fixing before shipping or right after.",
-      "nmvtis": "The official US register of titles and total losses; it lists approved report providers.",
-      "mot": "For cars from the UK: the full MOT test history with the mileage from each year."
+      "title": "Ingyenes VIN-információforrások",
+      "text": "Egyes adatokat ingyen ellenőrizhet hivatalos adatbázisokban:",
+      "nicb": "Az amerikai biztosítók adatbázisa – bejelentették-e az autót lopottként vagy totálkárosként (salvage).",
+      "nhtsa": "Nyitott visszahívások a VIN-re – érdemes a szállítás előtt vagy közvetlenül utána elintézni.",
+      "nmvtis": "Az USA hivatalos title- és totálkár-nyilvántartása; felsorolja a jóváhagyott jelentésszolgáltatókat.",
+      "mot": "Egyesült királyságbeli autóknál: a teljes MOT-műszakivizsga-előzmény az évenkénti kilométeróra-állással."
     },
     "flags": {
-      "title": "Warning signs",
-      "text": "• The VIN in the listing differs from the VIN in the photos of the plate or windscreen.\n• The check digit does not match (on a North American car).\n• The model year in the VIN does not match the listing.\n• The title is branded flood, water damage or \"not actual mileage\".\n• The car was offered at auction several times in a short period.\n• The VIN plate looks removed, glued on or damaged – a possible clone."
+      "title": "Figyelmeztető jelek",
+      "text": "• A hirdetés VIN-je eltér a tábla vagy a szélvédő fotóin láthatótól.\n• Az ellenőrző számjegy nem egyezik (észak-amerikai autónál).\n• A VIN szerinti modellév nem egyezik a hirdetéssel.\n• A title-ön flood, water damage vagy „not actual mileage” jelölés szerepel.\n• Az autót rövid időn belül többször is elárverezték.\n• A VIN-tábla eltávolítottnak, ragasztottnak vagy sérültnek tűnik – lehetséges klón."
     },
     "japan": {
-      "title": "Cars from Japan – a chassis number instead of a VIN",
-      "text": "Cars from the Japanese market (JDM) often have no 17-character VIN, only a shorter chassis number, e.g. JZA80-0012345. A VIN decoder cannot read it.\nThe history of such a car is checked on the auction sheet and the export certificate – a good exporter translates them before you buy."
+      "title": "Japán autók – alvázszám helyett vázszám",
+      "text": "A japán piacra gyártott (JDM) autóknak gyakran nincs 17 karakteres VIN-jük, csak rövidebb vázszámuk, pl. JZA80-0012345. Ezt a VIN-dekóder nem tudja kiolvasni.\nAz ilyen autó előéletét az auction sheet és az exportbizonyítvány alapján ellenőrzik – egy jó exportőr vásárlás előtt lefordítja őket."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Is a VIN check free?",
-      "a1": "Decoding the technical data from the VIN (make, model, year, engine, country of manufacture) is free here. A full history report – damage, mileage, past auctions – is paid, from report providers.",
-      "q2": "What can I tell from the VIN alone?",
-      "a2": "The country of manufacture, the manufacturer, the model year, the plant and – on North American cars – whether the number is valid, thanks to the check digit. Engine and body specs come from manufacturers' databases, history from reports.",
-      "q3": "How do I check whether a car from the US has been in an accident?",
-      "a3": "Check the title type (salvage means a total loss), the free NICB VINCheck database and a vehicle history report, which often also shows photos from earlier auctions.",
-      "q4": "How do I know which country the car was built in?",
-      "a4": "From the first character of the VIN: 1, 4 and 5 are the US, 2 – Canada, 3 – Mexico, J – Japan, W – Germany. It matters for import: cars built in the US, Canada, Japan and the UK may qualify for 0% duty.",
-      "q5": "Can a VIN be faked?",
-      "a5": "Yes – stolen cars are sometimes \"cloned\" with the VIN of another car. Compare the VIN in several places on the car and in the documents, check that the year and version match, and ask for an inspection if in doubt.",
-      "q6": "Does the decoder work for cars from Japan?",
-      "a6": "Only if the car has a 17-character VIN. Most cars from the Japanese market have a shorter chassis number – their history is checked on the auction sheet."
+      "title": "Gyakori kérdések",
+      "q1": "Ingyenes az alvázszám-ellenőrzés?",
+      "a1": "A műszaki adatok kiolvasása a VIN-ből (márka, modell, évjárat, motor, gyártási ország) nálunk ingyenes. A teljes előéletjelentés – sérülések, kilométerek, korábbi aukciók – fizetős, jelentésszolgáltatóktól érhető el.",
+      "q2": "Mit árul el önmagában a VIN?",
+      "a2": "A gyártási országot, a gyártót, a modellévet, a gyárat és – észak-amerikai autóknál – az ellenőrző számjegy révén azt, hogy érvényes-e a szám. A motor- és karosszériaadatok a gyártói adatbázisokból, az előélet a jelentésekből származik.",
+      "q3": "Hogyan derítem ki, hogy egy amerikai autó balesetes volt-e?",
+      "a3": "Nézze meg a title típusát (a salvage totálkárt jelent), az ingyenes NICB VINCheck adatbázist és egy előéletjelentést, amely gyakran a korábbi aukciók fotóit is mutatja.",
+      "q4": "Honnan tudom, melyik országban gyártották az autót?",
+      "a4": "A VIN első karakteréből: 1, 4 és 5 – USA, 2 – Kanada, 3 – Mexikó, J – Japán, W – Németország. Importnál ez fontos: az USA-ban, Kanadában, Japánban és az Egyesült Királyságban gyártott autókra 0% vám vonatkozhat.",
+      "q5": "Hamisítható a VIN?",
+      "a5": "Igen – a lopott autókat néha egy másik autó VIN-jével „klónozzák”. Vesse össze a VIN-t több helyen és az okmányokban, ellenőrizze, egyezik-e az évjárat és a kivitel, kétség esetén pedig kérjen átvizsgálást.",
+      "q6": "Működik a dekóder japán autókra?",
+      "a6": "Csak ha az autónak 17 karakteres VIN-je van. A japán piaci autók többségének rövidebb vázszáma van – ezek előéletét az auction sheet alapján ellenőrzik."
     },
-    "compareLink": "VIN report services compared – which one to choose",
+    "compareLink": "VIN-jelentésszolgáltatók összehasonlítása – melyiket válassza",
     "anatomy": {
-      "country": "country",
-      "maker": "manufacturer",
-      "vds": "vehicle description",
-      "check": "check digit",
-      "year": "model year",
-      "plant": "plant",
-      "serial": "serial number",
-      "caption": "Sample VIN {{vin}}: a Ford built in the USA, model year 2020."
+      "country": "ország",
+      "maker": "gyártó",
+      "vds": "járműleírás",
+      "check": "ellenőrző",
+      "year": "évjárat",
+      "plant": "gyár",
+      "serial": "sorozatszám",
+      "caption": "Példa VIN {{vin}}: az USA-ban gyártott Ford, 2020-as modellév."
     }
   },
   "copart": {
-    "eyebrow": "Guide",
-    "title": "Copart: how to buy a car from the US and import it to Europe",
-    "lead": "Copart is the largest auction of damaged and ex-lease cars in the US. We explain step by step how to buy there from Europe, what the fees are and what you will pay in total with shipping and taxes.",
+    "eyebrow": "Útmutató",
+    "title": "Copart: hogyan vegyünk autót az USA-ban, és hozzuk be Magyarországra",
+    "lead": "A Copart az USA legnagyobb aukciója sérült és lízingből visszajött autók számára. Lépésről lépésre elmagyarázzuk, hogyan vásárolhat ott Európából, milyen díjak vannak, és mennyit fizet összesen szállítással és adókkal.",
     "what": {
-      "title": "What Copart is",
-      "text": "Copart is a US auction company with more than 200 yards in the US and Canada. It mainly sells cars from insurers (after accidents, thefts, floods), leasing companies, rental firms and banks. Bidding is online, and the car stays in the yard until it is collected.\nEvery listing has photos, the damage type (primary / secondary damage), the title type, the mileage and a status such as \"Run and Drive\" (the car moved when it arrived at the yard). Sales follow different rules: \"Pure Sale\" – the car goes to the highest bid; \"Minimum Bid\" – the seller has a reserve price; \"On Approval\" – the seller approves the bid."
+      "title": "Mi a Copart",
+      "text": "A Copart amerikai aukciós cég több mint 200 telephellyel az USA-ban és Kanadában. Főként biztosítók (baleset, lopás, árvíz után), lízingcégek, autókölcsönzők és bankok autóit értékesíti. A licitálás online zajlik, az autó az elszállításig a telephelyen marad.\nMinden hirdetésben vannak fotók, a sérülés típusa (primary / secondary damage), a title típusa, a kilométeróra-állás és egy állapot, például „Run and Drive” (az autó a telephelyre érkezéskor mozgott). Az értékesítési szabályok eltérnek: „Pure Sale” – az autót a legmagasabb ajánlat viszi; „Minimum Bid” – az eladónak minimumára van; „On Approval” – az eladónak jóvá kell hagynia az ajánlatot."
     },
     "europe": {
-      "title": "Copart in Europe vs Copart in the US",
-      "text": "Copart also operates in several European countries (including the UK, Germany, Spain, Finland and Ireland). These are separate sites with local cars and local rules.\nThe biggest choice and the lowest prices, however, are at the US auctions – and that is what this guide is about. A car from the US has to cross the ocean and be cleared at an EU port, so always work out the full cost, not just the auction price."
+      "title": "Copart Európában és Copart az USA-ban",
+      "text": "A Copart több európai országban is működik (többek között az Egyesült Királyságban, Németországban, Spanyolországban, Finnországban és Írországban). Ezek külön oldalak helyi autókkal és szabályokkal.\nA legnagyobb kínálat és a legalacsonyabb árak azonban az amerikai aukciókon vannak – ez az útmutató róluk szól. Az amerikai autónak át kell kelnie az óceánon, és egy uniós kikötőben vámkezelni kell, ezért mindig a teljes költséggel számoljon, ne csak az aukciós árral."
     },
     "account": {
-      "title": "Your own account or a broker",
-      "text": "You can open a Copart account yourself, but a standard account lets you bid on only some cars. In many states, cars with a salvage title can only be bought by licensed buyers – which is why most buyers from Europe bid through a broker.\nThe broker lends you their licence, pays the deposit and often arranges transport to the port and the export documents. They charge a commission for it (usually a fixed amount per car). Check reviews of the broker and exactly what their price includes."
+      "title": "Saját fiók vagy bróker",
+      "text": "Copart-fiókot nyithat saját maga is, de normál fiókkal csak az autók egy részére licitálhat. Sok államban salvage title-ös autót csak engedéllyel rendelkező vevő vásárolhat – ezért az európai vásárlók többsége brókeren keresztül licitál.\nA bróker kölcsönadja az engedélyét, befizeti a letétet, és gyakran megszervezi a kikötőbe szállítást és az exportpapírokat. Ezért jutalékot kér (általában fix összeget autónként). Nézze meg a bróker értékeléseit, és hogy pontosan mit tartalmaz az ár."
     },
     "fees": {
-      "title": "Auction fees",
-      "text": "Copart's fees are added to the hammer price:\n• the buyer fee – it rises in steps with the car's price,\n• the online bidding fee (virtual bid fee),\n• the gate fee for releasing the car from the yard,\n• environmental and title handling fees,\n• the broker's commission, if you use one.\nFor a car of a few thousand dollars this is usually several hundred to over a thousand dollars. Copart publishes the exact fee tables on its website – check them before you bid."
+      "title": "Aukciós díjak",
+      "text": "A leütési árhoz hozzáadódnak a Copart díjai:\n• vevői díj (buyer fee) – az árral sávosan nő,\n• online licitdíj (virtual bid fee),\n• gate fee az autó kiadásáért a telephelyről,\n• környezetvédelmi és title-kezelési díj,\n• a bróker jutaléka, ha igénybe veszi.\nNéhány ezer dolláros autónál ez általában néhány száz és bő ezer dollár közé esik. A Copart a pontos díjtáblázatokat a honlapján közli – licitálás előtt nézze meg őket."
     },
     "titles": {
-      "title": "Title types – what you are buying",
-      "text": "The title is the US ownership document. Its type tells you what happened to the car:\n• Clean – no total loss in its history.\n• Salvage – the insurer declared a total loss; the most common title at Copart.\n• Rebuilt – a former total loss, repaired and allowed back on the road in the US.\n• Parts only, Non-repairable, Certificate of Destruction – for parts only; such a car cannot be registered in the EU.\nA salvage car can be registered in the EU after repair and a roadworthiness test. The title still affects its resale value.",
-      "link": "How to check a car by its VIN"
+      "title": "Title-típusok – mit vásárol",
+      "text": "A title az amerikai tulajdoni okmány. Típusa elárulja, mi történt az autóval:\n• Clean – nincs totálkár az előéletében.\n• Salvage – a biztosító totálkárt állapított meg; a leggyakoribb title a Copartnál.\n• Rebuilt – korábbi totálkár, megjavítva, és az USA-ban újra forgalomba helyezve.\n• Parts only, Non-repairable, Certificate of Destruction – csak alkatrésznek; ilyen autót az EU-ban nem lehet forgalomba helyezni.\nA salvage autó javítás és műszaki vizsga után forgalomba helyezhető az EU-ban. A title azonban befolyásolja a viszonteladási értéket.",
+      "link": "Hogyan ellenőrizzük az autót alvázszám alapján"
     },
     "inspect": {
-      "title": "Check the car before you bid",
-      "text": "You cannot see the car in person, so every detail counts:\n• compare the VIN in the listing with the one in the photos,\n• look at every photo – \"Front end\" can mean a bumper or bent chassis rails,\n• be careful with cars from Florida, Texas and Louisiana after hurricanes (water marks, silt, corroded connectors),\n• check the car's history by VIN – damage, mileage and earlier auctions,\n• keep a 20–30% reserve for hidden damage."
+      "title": "Ellenőrizze az autót licitálás előtt",
+      "text": "Az autót nem látja élőben, ezért minden részlet számít:\n• vesse össze a hirdetés VIN-jét a fotókon láthatóval,\n• nézze meg az összes fotót – a „Front end” jelenthet lökhárítót vagy elhajlott hossztartókat is,\n• legyen óvatos a floridai, texasi és louisianai autókkal hurrikánok után (vízfoltok, iszap, korrodált csatlakozók),\n• ellenőrizze az előéletet a VIN alapján – sérülések, kilométerek, korábbi aukciók,\n• tartson 20–30% tartalékot rejtett hibákra."
     },
     "payment": {
-      "title": "Payment and pickup",
-      "text": "After winning a bid you usually have only a few business days to pay (most often by bank transfer). Paying late means a penalty and, in the worst case, a blocked account.\nThe car must be collected from the yard within a short time – after that, storage fees are charged. So before you bid, have the money ready for the car, the fees and the transport, and make sure the broker or carrier knows where to collect the car."
+      "title": "Fizetés és elszállítás",
+      "text": "A nyertes licit után általában csak néhány munkanapja van fizetni (leggyakrabban átutalással). A késés bírságot, végső esetben a fiók letiltását jelenti.\nAz autót rövid időn belül el kell szállítani a telephelyről – utána tárolási díjat számolnak fel. Ezért licitálás előtt legyen kész a pénz az autóra, a díjakra és a szállításra, a brókernek vagy fuvarozónak pedig tudnia kell, honnan viszi el az autót."
     },
     "shipping": {
-      "title": "Shipping to Europe",
-      "text": "A car carrier takes the car from the yard to the export port (e.g. New Jersey, Savannah, Houston, Los Angeles). From there it sails in a container (often 3–4 cars together) or on a RoRo ship to a European port – usually 2–3 weeks from the East Coast.\nAt the EU port a customs agent clears the car: you pay duty and import VAT, and then the car is trucked to your address. The choice of port matters – freight, port fees and VAT rates differ between countries.",
-      "link": "Full guide to importing a car from the US"
+      "title": "Szállítás Európába",
+      "text": "Autószállító viszi az autót a telephelyről az exportkikötőbe (pl. New Jersey, Savannah, Houston, Los Angeles). Onnan konténerben (gyakran 3–4 autó együtt) vagy RoRo hajón megy egy európai kikötőbe – a keleti partról általában 2–3 hét.\nAz uniós kikötőben vámügynök vámkezeli az autót: kifizeti a vámot és az import-áfát, majd az autót kamion viszi a címére. A kikötő megválasztása számít – a fuvardíj, a kikötői díjak és az áfakulcsok országonként eltérnek.",
+      "link": "Teljes útmutató az autóimporthoz az USA-ból"
     },
     "cost": {
-      "title": "What a Copart car costs in total",
-      "text": "The auction price is only part of the cost. On top come auction fees, transport in the US, ocean freight and insurance, port fees, duty (10%, or 0% for US-built cars with proof of origin), VAT, national taxes, transport in Europe, repair and registration.",
-      "example": "An example from our calculator: a {{model}} bought for {{price}} costs in total, delivered to your door in {{country}}:",
-      "breakdown": "See the full cost breakdown"
+      "title": "Mennyibe kerül összesen egy Copart-autó",
+      "text": "Az aukciós ár csak a költség egy része. Hozzájönnek az aukciós díjak, az amerikai szállítás, a tengeri fuvar és biztosítás, a kikötői díjak, a vám (10%, vagy 0% az USA-ban gyártott autóknál származási igazolással), az áfa, a nemzeti adók, az európai szállítás, a javítás és a forgalomba helyezés.",
+      "example": "Példa a kalkulátorunkból: egy {{price}} áron vett {{model}} összesen ennyibe kerül házhoz szállítva (célország: {{country}}):",
+      "breakdown": "A teljes költségbontás megtekintése"
     },
     "mistakes": {
-      "title": "The most common mistakes",
-      "text": "• Bidding without working out the full cost – fees, shipping and taxes can double the auction price.\n• Buying a car with a \"parts only\" title that cannot be registered.\n• Trusting \"Run and Drive\" without checking the history by VIN.\n• No reserve for hidden damage and parts.\n• Counting on 0% duty without proof of origin.\n• Paying late and running up storage fees in the yard."
+      "title": "A leggyakoribb hibák",
+      "text": "• Licitálás a teljes költség kiszámítása nélkül – a díjak, a szállítás és az adók megduplázhatják az aukciós árat.\n• „Parts only” title-ös autó vásárlása, amely nem helyezhető forgalomba.\n• Bízni a „Run and Drive”-ban a VIN szerinti előélet ellenőrzése nélkül.\n• Nincs tartalék a rejtett hibákra és alkatrészekre.\n• 0% vámmal számolni származási igazolás nélkül.\n• Késedelmes fizetés és tárolási díjak a telephelyen."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Can I buy a car at Copart without a broker?",
-      "a1": "You can open an account, but a standard account lets you bid on only some cars. Cars with a salvage title in many states require a buyer's licence, which is why most buyers from Europe use a broker.",
-      "q2": "How much are Copart's fees?",
-      "a2": "They depend on the car's price and the account type. For a car of a few thousand dollars the auction fees are usually several hundred to over a thousand dollars, plus the broker's commission. The current tables are on Copart's website.",
-      "q3": "What does \"Run and Drive\" mean?",
-      "a3": "That the car started and moved when it was received at the yard. It does not mean it is in working order or roadworthy.",
-      "q4": "How long does it take to bring a Copart car to Europe?",
-      "a4": "Usually 4–8 weeks from winning the bid: a few days to a week for pickup and transport to the port, 2–3 weeks at sea from the East Coast (longer from California), then clearance and delivery.",
-      "q5": "Can a salvage-title car be registered in Europe?",
-      "a5": "Yes, if after repair it passes the roadworthiness test in your country. Cars with a \"parts only\" or \"non-repairable\" title or a certificate of destruction cannot be registered.",
-      "q6": "How much duty will I pay on a Copart car?",
-      "a6": "As standard, 10% of the customs value (the price with fees plus transport to the EU border). US-built cars can have 0% duty from 1 July 2026 with proof of origin. VAT and national taxes come on top – the calculator works it all out."
+      "title": "Gyakori kérdések",
+      "q1": "Vásárolhatok a Copartnál bróker nélkül?",
+      "a1": "Fiókot nyithat, de normál fiókkal csak az autók egy részére licitálhat. Salvage title-ös autókhoz sok államban vevői engedély kell – ezért az európai vásárlók többsége brókert használ.",
+      "q2": "Mennyibe kerülnek a Copart díjai?",
+      "a2": "Az autó árától és a fiók típusától függ. Néhány ezer dolláros autónál az aukciós díjak általában néhány száz és bő ezer dollár között vannak, plusz a bróker jutaléka. Az aktuális táblázatok a Copart honlapján találhatók.",
+      "q3": "Mit jelent a „Run and Drive”?",
+      "a3": "Hogy az autó a telephelyi átvételkor beindult és mozgott. Nem jelenti azt, hogy üzemképes vagy közlekedésre alkalmas.",
+      "q4": "Mennyi idő alatt ér Európába egy Copart-autó?",
+      "a4": "Általában a nyertes licittől számítva 4–8 hét: néhány nap–egy hét az elszállításra és a kikötőbe szállításra, 2–3 hét tengeren a keleti partról (Kaliforniából tovább), majd vámkezelés és kiszállítás.",
+      "q5": "Forgalomba helyezhető Európában a salvage title-ös autó?",
+      "a5": "Igen, ha javítás után átmegy a műszaki vizsgán az Ön országában. A „parts only” vagy „non-repairable” title-ös, illetve bontási igazolással rendelkező autók nem helyezhetők forgalomba.",
+      "q6": "Mennyi vámot fizetek egy Copart-autó után?",
+      "a6": "Alapesetben a vámérték 10%-át (ár a díjakkal, plusz szállítás az EU határáig). Az USA-ban gyártott autókra 2026. július 1-jétől származási igazolással 0% vonatkozhat. Ehhez jön az áfa és a nemzeti adók – a kalkulátor mindent kiszámol."
     },
-    "disclaimer": "Carglo is not affiliated with Copart Inc. The name Copart is used only to describe the service. Auction rules and fees may change – check them on Copart's website.",
+    "disclaimer": "A Carglo nem áll kapcsolatban a Copart Inc.-vel. A Copart nevet csak a szolgáltatás leírására használjuk. Az aukciós szabályok és díjak változhatnak – ellenőrizze őket a Copart honlapján.",
+    "lot": {
+      "alt": "Autó vázlata, a sérült eleje megjelölve",
+      "caption": "Illusztráció – így néz ki egy tételkártya egy amerikai aukción. A mezőket és jelöléseket lent magyarázzuk el."
+    },
     "listing": {
-      "title": "How to read a Copart listing",
-      "text": "Every lot has a number and a data sheet. The most important fields:\n• Primary / Secondary damage – the main and additional damage as reported by the insurer (e.g. Front end, Rear end, Side, Flood, Hail, Mechanical).\n• Odometer – mileage in miles marked “Actual” or “Not actual” / “Exempt”; the last two mean the reading cannot be trusted.\n• Est. Retail Value and Est. Repair Cost – the insurer’s estimates; they help gauge the damage but do not replace your own repair quote.\n• Highlights – e.g. “Run and Drive”, “Engine Starts”, “Enhanced Vehicles”.\n• Keys – whether keys are included (replacing them can be expensive).\n• Sale document / title – the document type and the state that issued it.\n• Location and Sale date – the yard you collect the car from and the auction date.\nSave the lot number and VIN – after the sale the listing disappears from public view."
+      "title": "Hogyan olvassuk a Copart-hirdetést",
+      "text": "Minden tételnek (lot) van száma és adatlapja. A legfontosabb mezők:\n• Primary / Secondary damage – fő és mellék sérülés a biztosító szerint (pl. Front end, Rear end, Side, Flood, Hail, Mechanical).\n• Odometer – futásteljesítmény mérföldben „Actual” vagy „Not actual” / „Exempt” jelöléssel; az utóbbi kettő azt jelenti, hogy a kilométeróra nem megbízható.\n• Est. Retail Value és Est. Repair Cost – a biztosító becslései; segítenek felmérni a kárt, de nem pótolják a saját javítási árajánlatot.\n• Highlights – pl. „Run and Drive”, „Engine Starts”, „Enhanced Vehicles”.\n• Keys – van-e kulcs (a pótlás drága lehet).\n• Sale document / title – az okmány típusa és a kiállító állam.\n• Location és Sale date – a telephely, ahonnan elviszi az autót, és az aukció időpontja.\nÍrja fel a tételszámot és a VIN-t – az eladás után a hirdetés eltűnik a nyilvános nézetből."
     },
     "bidding": {
-      "title": "How the bidding works",
-      "text": "Bidding has two stages. First comes preliminary bidding – you can enter your maximum amount and the system raises your bid automatically up to that limit. Then there is a live online auction, where the highest bid wins.\nSome cars offer “Buy It Now” – an immediate purchase at the listed price.\nSet your maximum before the auction: subtract auction fees, transport, customs duty, VAT, national taxes and a repair reserve from your budget. Getting carried away in the last seconds is the most common reason for overpaying."
+      "title": "Hogyan zajlik a licitálás",
+      "text": "A licitálás két szakaszból áll. Először az előlicit (preliminary bidding) zajlik – megadhatja a maximális összegét, a rendszer pedig automatikusan emeli az ajánlatát eddig a határig. Ezután jön az élő online aukció, ahol a legmagasabb ajánlat nyer.\nNéhány autónál elérhető a „Buy It Now” – azonnali vásárlás a megadott áron.\nA maximumot az aukció előtt határozza meg: vonja le a keretből az aukciós díjakat, a szállítást, a vámot, az áfát, a nemzeti adókat és a javítási tartalékot. Az utolsó másodpercek izgalma a túlfizetés leggyakoribb oka."
     },
     "repair": {
-      "title": "Repair – in the USA or in Europe",
-      "text": "A damaged car can be repaired while still in the USA or after it arrives. Repairing in the USA can be cheaper where used parts are easy to find, but it is harder to supervise from a distance. Repairing in Europe gives you control over quality, although some original parts for US-market cars have to be imported.\nWherever it is repaired, the car must pass a roadworthiness test in your country, and after structural damage it is worth keeping the repair paperwork and photos – they help with registration and resale."
+      "title": "Javítás – az USA-ban vagy Európában",
+      "text": "A sérült autót javíttathatja még az USA-ban vagy csak behozatal után. Az USA-ban a javítás olcsóbb lehet, ha van használt alkatrész, de távolról nehéz ellenőrizni. Az európai javítással Ön kontrollálja a minőséget, viszont egyes eredeti alkatrészeket az amerikai piaci autókhoz be kell hozatni.\nBárhol javítják is, az autónak át kell mennie a műszaki vizsgán az Ön országában, szerkezeti sérülés után pedig érdemes megőrizni a javítás számláit és fotóit – jól jönnek a forgalomba helyezésnél és az eladásnál."
     },
     "flow": {
-      "title": "Buying on Copart from Europe – step by step",
+      "title": "Vásárlás a Copartnál Európából – lépésről lépésre",
       "s1": {
-        "title": "Choosing a car",
-        "text": "listings, photos and title type",
-        "time": "1–7 days"
+        "title": "Autóválasztás",
+        "text": "hirdetések, fotók és title-típus",
+        "time": "1–7 nap"
       },
       "s2": {
-        "title": "VIN check",
-        "text": "damage history, mileage, previous auctions",
-        "time": "1 day"
+        "title": "VIN ellenőrzése",
+        "text": "sérüléselőzmény, kilométer, korábbi aukciók",
+        "time": "1 nap"
       },
       "s3": {
-        "title": "Bidding and payment",
-        "text": "through a broker; payment within a few business days",
-        "time": "2–4 days"
+        "title": "Licit és fizetés",
+        "text": "brókeren keresztül; fizetés néhány munkanapon belül",
+        "time": "2–4 nap"
       },
       "s4": {
-        "title": "Transport to the port",
-        "text": "truck from the Copart yard to the export port",
-        "time": "3–10 days"
+        "title": "Szállítás a kikötőbe",
+        "text": "autószállító a Copart-telephelyről az exportkikötőbe",
+        "time": "3–10 nap"
       },
       "s5": {
-        "title": "Ocean freight",
-        "text": "container or RoRo to an EU port",
-        "time": "2–6 weeks"
+        "title": "Tengeri fuvar",
+        "text": "konténer vagy RoRo egy uniós kikötőbe",
+        "time": "2–6 hét"
       },
       "s6": {
-        "title": "EU customs clearance",
-        "text": "duty, import VAT, customs documents",
-        "time": "2–5 days"
+        "title": "Vámkezelés az EU-ban",
+        "text": "vám, import-áfa, vámokmányok",
+        "time": "2–5 nap"
       },
       "s7": {
-        "title": "Registration",
-        "text": "national taxes, inspection, translations",
-        "time": "1–4 weeks"
+        "title": "Forgalomba helyezés",
+        "text": "nemzeti adók, műszaki vizsga, fordítások",
+        "time": "1–4 hét"
       }
     },
     "costbar": {
-      "title": "Cost breakdown",
-      "price": "Car incl. auction fees",
-      "transport": "Transport and freight",
-      "duty": "Customs duty",
-      "vat": "Import VAT",
-      "national": "National taxes",
-      "registration": "Registration and other"
-    },
-    "lot": {
-      "alt": "Sketch of a car with the damaged front marked",
-      "caption": "Illustration – what a lot card looks like at a US auction. We explain the fields and labels below."
+      "title": "A költség szerkezete",
+      "price": "Autó aukciós díjakkal",
+      "transport": "Szállítás és fuvar",
+      "duty": "Vám",
+      "vat": "Import-áfa",
+      "national": "Nemzeti adók",
+      "registration": "Forgalomba helyezés és egyéb"
     }
   },
   "vinCompare": {
-    "eyebrow": "Comparison",
-    "title": "VIN history reports – which service to choose for a car from the USA or Europe",
-    "lead": "We compared the most popular vehicle history report services: data coverage, US damage and title information, photos from earlier listings and prices. At the end – how to choose a report for a specific car.",
-    "checked": "Prices and coverage checked: {{date}}. Prices are indicative and may change.",
+    "eyebrow": "Összehasonlítás",
+    "title": "VIN-előéletjelentések – melyik szolgáltatót válasszuk amerikai és európai autóhoz",
+    "lead": "Összehasonlítottuk a legnépszerűbb járműelőzmény-szolgáltatókat: adatlefedettség, amerikai sérülés- és title-adatok, korábbi hirdetések fotói és árak. A végén – hogyan válasszon jelentést egy adott autóhoz.",
+    "checked": "Árak és tartalom ellenőrizve: {{date}}. Az árak tájékoztató jellegűek, és változhatnak.",
     "eu": "EU",
     "verdict": {
       "us": {
-        "for": "Car from a US auction",
-        "pick": "AutoCheck or Carfax",
-        "why": "The deepest US data: damage, titles, auction and service history."
+        "for": "Amerikai aukciós autó",
+        "pick": "AutoCheck vagy Carfax",
+        "why": "A legrészletesebb amerikai adatok: sérülések, title, aukciós és szervizelőzmények."
       },
       "eu": {
-        "for": "Car bought in Europe",
-        "pick": "carVertical or autoDNA",
-        "why": "Data from many EU countries, report in your language."
+        "for": "Európában vásárolt autó",
+        "pick": "carVertical vagy autoDNA",
+        "why": "Adatok sok uniós országból, jelentés az Ön nyelvén."
       },
       "budget": {
-        "for": "Quick, cheap check",
+        "for": "Gyors, olcsó ellenőrzés",
         "pick": "VinAudit",
-        "why": "Official NMVTIS title and total-loss data for a few dollars."
+        "why": "Hivatalos NMVTIS-adatok a title-ről és totálkárokról néhány dollárért."
       }
     },
     "table": {
-      "title": "At a glance",
-      "service": "Service",
-      "regions": "Data coverage",
-      "usTitles": "US titles and total losses",
-      "photos": "Photos from history",
-      "price": "Report price",
-      "note": "“Sometimes” – photos appear when the service has them (e.g. from earlier listings or auctions). Coverage depends on the specific VIN."
+      "title": "Röviden",
+      "service": "Szolgáltató",
+      "regions": "Adatlefedettség",
+      "usTitles": "Amerikai title és totálkár",
+      "photos": "Fotók az előéletből",
+      "price": "Jelentés ára",
+      "note": "„Néha” – fotók akkor jelennek meg, ha a szolgáltatónak vannak (pl. korábbi hirdetésekből vagy aukciókról). Az adatok köre az adott VIN-től függ."
     },
     "value": {
-      "yes": "yes",
-      "partial": "partly",
-      "no": "no",
-      "sometimes": "sometimes",
-      "unknown": "no independent data"
+      "yes": "igen",
+      "partial": "részben",
+      "no": "nem",
+      "sometimes": "néha",
+      "unknown": "nincs független adat"
     },
-    "providers": "Services one by one",
-    "visit": "Go to {{name}}",
-    "pros": "Pros",
-    "cons": "Cons",
-    "bestFor": "Best for:",
+    "providers": "A szolgáltatók egyenként",
+    "visit": "Tovább: {{name}}",
+    "pros": "Előnyök",
+    "cons": "Hátrányok",
+    "bestFor": "Kinek ajánlott:",
     "p": {
       "carvertical": {
-        "desc": "A Lithuanian service operating in many European countries and in the USA. It claims over 1,000 data sources – registries, insurers, workshops, police. For US cars it shows title brands such as salvage, rebuilt and junk.",
-        "pros": "• European and US data in one report.\n• Report and support in many EU languages.\n• Photos from history when available.",
-        "cons": "• More expensive than US budget services.\n• Less US data than Carfax or AutoCheck.",
-        "best": "buyers in Europe who want one report for a car from the USA or the EU."
+        "desc": "Litván szolgáltató, amely Európa sok országában és az USA-ban működik. Több mint 1000 adatforrást említ – nyilvántartások, biztosítók, szervizek, rendőrség. Amerikai autóknál többek között a title-jelöléseket (salvage, rebuilt, junk) mutatja.",
+        "pros": "• Európai és amerikai adatok egy jelentésben.\n• Jelentés és ügyfélszolgálat sok uniós nyelven.\n• Fotók az előéletből, ha elérhetők.",
+        "cons": "• Drágább az amerikai olcsó szolgáltatóknál.\n• Kevesebb amerikai adat, mint a Carfaxnál vagy az AutoChecknél.",
+        "best": "európai vásárlóknak, akik egyetlen jelentést szeretnének amerikai vagy uniós autóhoz."
       },
       "autodna": {
-        "desc": "A Polish service, strongest in Poland and Central and Eastern Europe. Its database covers dozens of countries in Europe and North America; reports include mileage, damage and – when available – photos.",
-        "pros": "• Very good data from Poland and the region.\n• Cheaper than carVertical, multi-report bundles.\n• Free preliminary check whether data exists.",
-        "cons": "• Less Western European data than competitors.\n• For US cars, add a US source as well.",
-        "best": "cars from Poland and neighbouring countries, and as a second source."
+        "desc": "Lengyel szolgáltató, Lengyelországban és Közép-Kelet-Európában a legerősebb. Adatbázisa Európa és Észak-Amerika több tucat országát fedi le; a jelentések többek között kilométer-állást, sérüléseket és – ha vannak – fotókat tartalmaznak.",
+        "pros": "• Nagyon jó adatok Lengyelországból és a régióból.\n• Olcsóbb a carVerticalnál, több jelentésből álló csomagok.\n• Ingyenes előzetes ellenőrzés, van-e adat.",
+        "cons": "• Kevesebb nyugat-európai adat, mint a versenytársaknál.\n• Amerikai autóhoz érdemes amerikai forrást is használni.",
+        "best": "lengyel és szomszédos országbeli autókhoz, illetve második forrásnak."
       },
       "carfax": {
-        "desc": "The best-known service in the USA. It has broad access to insurer, police and workshop records, so it shows accidents and service history best.",
-        "pros": "• The deepest US accident and service history.\n• Recognised by buyers at resale.",
-        "cons": "• The most expensive single report.\n• Weak for cars from outside the USA and Canada.",
-        "best": "more expensive US cars where service history matters."
+        "desc": "Az USA legismertebb szolgáltatója. Széles hozzáférése van biztosítói, rendőrségi és szervizadatokhoz, ezért a baleseteket és a szervizelőzményeket mutatja a legjobban.",
+        "pros": "• A legrészletesebb amerikai baleseti és szervizelőzmény.\n• A vevők ismerik viszonteladáskor.",
+        "cons": "• A legdrágább egyedi jelentés.\n• Gyenge az USA-n és Kanadán kívüli autóknál.",
+        "best": "drágább amerikai autókhoz, ahol számít a szervizelőzmény."
       },
       "autocheck": {
-        "desc": "A service owned by Experian. Particularly strong on auction history – used by dealers and auction houses. It also gives an AutoCheck Score.",
-        "pros": "• Very good US auction data.\n• Cheaper than Carfax.",
-        "cons": "• Fewer service details than Carfax.\n• US cars only.",
-        "best": "cars from Copart and IAAI auctions."
+        "desc": "Az Experian szolgáltatása. Különösen erős az aukciós előzményekben – kereskedők és aukciós házak használják. AutoCheck Score értékelést is ad.",
+        "pros": "• Nagyon jó adatok az amerikai aukciókról.\n• Olcsóbb a Carfaxnál.",
+        "cons": "• Kevesebb szervizrészlet, mint a Carfaxnál.\n• Csak amerikai autók.",
+        "best": "a Copart és IAAI aukciók autóihoz."
       },
       "vinaudit": {
-        "desc": "An officially approved data provider for the government NMVTIS database. It shows title brands, total losses, odometer readings and theft records.",
-        "pros": "• Very cheap, bundles even cheaper.\n• Official NMVTIS title and total-loss data.",
-        "cons": "• Few details on minor accidents and servicing.\n• No photos.",
-        "best": "a quick first check of many cars before bidding."
+        "desc": "Az állami NMVTIS adatbázis hivatalosan jóváhagyott adatszolgáltatója. Title-jelöléseket, totálkárokat, kilométeróra-állásokat és lopási bejegyzéseket mutat.",
+        "pros": "• Nagyon olcsó, a csomagok még olcsóbbak.\n• Hivatalos NMVTIS-adatok a title-ről és totálkárokról.",
+        "cons": "• Kevés részlet a kisebb balesetekről és a szervizről.\n• Nincsenek fotók.",
+        "best": "sok autó gyors első ellenőrzéséhez licitálás előtt."
       },
       "automano": {
-        "desc": "A new low-cost VIN report service. We have not yet found independent reviews or a detailed description of its data sources – treat it as a cheap first check.",
-        "pros": "• Low report price.",
-        "cons": "• Few independent reviews.\n• Data sources not disclosed.",
-        "best": "a cheap first check – for a more expensive car, also order a report from a better-known service."
+        "desc": "Új, olcsó VIN-jelentés-szolgáltató. Még nem találtunk független értékeléseket vagy részletes leírást az adatforrásairól – tekintse olcsó első ellenőrzésnek.",
+        "pros": "• Alacsony jelentésár.",
+        "cons": "• Kevés független értékelés.\n• Nem közli az adatforrásait.",
+        "best": "olcsó első ellenőrzéshez – drágább autónál rendeljen jelentést egy ismertebb szolgáltatótól is."
       }
     },
     "how": {
-      "title": "How we compared",
-      "text": "We reviewed the services’ descriptions and price lists as well as independent comparisons from October 2026. We focused on what matters most when importing a car: where the data comes from, whether the report shows US titles and total losses, whether it includes photos from history and how much a single report costs.\nWe did not test the reports on the same VINs – coverage depends on the specific car, so for a more expensive car it is worth ordering two reports from different services."
+      "title": "Hogyan hasonlítottunk össze",
+      "text": "Átnéztük a szolgáltatók leírásait, árlistáit és a 2026. októberi független összehasonlításokat. Arra figyeltünk, ami importnál a legfontosabb: honnan származnak az adatok, mutatja-e a jelentés az amerikai title-t és totálkárokat, vannak-e benne fotók az előéletből, és mennyibe kerül egy jelentés.\nA jelentéseket nem teszteltük ugyanazokkal a VIN-ekkel – az adatok köre az adott autótól függ, ezért drágább autónál érdemes két különböző szolgáltatótól jelentést rendelni."
     },
     "free": {
-      "title": "What you can check for free",
-      "text": "Before paying for a report, check for free:\n• NICB VINCheck – whether the car was reported stolen or a total loss (USA).\n• NHTSA Recalls – open recalls for the VIN.\n• MOT history on gov.uk – for cars from the UK.\n• unofficial Copart and IAAI auction archives – sometimes show photos and the price from an earlier sale; they are not affiliated with the auctions and may disappear.\nOur free VIN decoder also reads the make, model, year, engine and country of manufacture."
+      "title": "Mit ellenőrizhet ingyen",
+      "text": "Mielőtt jelentésért fizetne, ellenőrizze ingyen:\n• NICB VINCheck – bejelentették-e az autót lopottként vagy totálkárosként (USA).\n• NHTSA Recalls – nyitott visszahívások a VIN-re.\n• MOT-előzmény a gov.uk oldalon – egyesült királyságbeli autókhoz.\n• nem hivatalos Copart- és IAAI-aukcióarchívumok – néha mutatják egy korábbi eladás fotóit és árát; nem kapcsolódnak az aukciókhoz, és eltűnhetnek.\nIngyenes VIN-dekóderünk a márkát, modellt, évjáratot, motort és gyártási országot is kiolvassa."
     },
     "read": {
-      "title": "How to read a report",
-      "text": "• Compare mileage readings over the years – a drop means a rolled-back odometer.\n• Look for title brands: salvage, rebuilt, flood, junk.\n• Note the registration states – cars from Florida, Texas and Louisiana more often have flood damage.\n• Several auctions in a short time suggest the car was hard to sell.\n• No record does not mean no damage – a report only shows what was reported."
+      "title": "Hogyan olvassuk a jelentést",
+      "text": "• Vesse össze az évenkénti kilométeróra-állásokat – a csökkenés visszatekert órát jelent.\n• Keresse a title-jelöléseket: salvage, rebuilt, flood, junk.\n• Figyeljen a nyilvántartási államokra – a floridai, texasi és louisianai autóknál gyakoribb az árvízkár.\n• Rövid időn belüli több aukció arra utal, hogy az autót nehéz volt eladni.\n• Ha nincs bejegyzés, az nem jelenti, hogy nem volt kár – a jelentés csak a bejelentett eseményeket mutatja."
     },
     "choose": {
-      "title": "Which report to choose",
-      "text": "• Car from a US auction (Copart, IAAI): first the free NICB and the cheap VinAudit, then AutoCheck or Carfax before bidding on a more expensive car.\n• Car from the USA when you want one report in your language: carVertical.\n• Car from Poland or neighbouring countries: autoDNA, with carVertical as a second source.\n• Car from the UK: free MOT history plus a report from a European service.\nFor a car worth tens of thousands, two reports from different services cost a fraction of a possible loss."
+      "title": "Melyik jelentést válasszuk",
+      "text": "• Amerikai aukciós autó (Copart, IAAI): először az ingyenes NICB és az olcsó VinAudit, drágább autó licitálása előtt AutoCheck vagy Carfax.\n• Amerikai autó, ha egy jelentést szeretne a saját nyelvén: carVertical.\n• Lengyel vagy szomszédos országbeli autó: autoDNA, második forrásként carVertical.\n• Egyesült királyságbeli autó: ingyenes MOT-előzmény és egy európai szolgáltató jelentése.\nEgy több millió forintos autónál két különböző szolgáltató jelentése a lehetséges veszteség töredékébe kerül."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Which VIN report is best for a car from the USA?",
-      "a1": "For a car from a US auction, AutoCheck (auction history) and Carfax (accidents and servicing) give the most data. For a quick title and total-loss check, the cheaper VinAudit is enough.",
-      "q2": "Does carVertical check cars from the USA?",
-      "a2": "Yes – according to the service, the report includes US title brands (salvage, rebuilt, junk). Its US coverage is, however, smaller than that of US services.",
-      "q3": "autoDNA or carVertical – which is better?",
-      "a3": "autoDNA is stronger in Poland and Central and Eastern Europe and usually cheaper; carVertical has wider coverage in Western Europe and the USA. For a more expensive car, check both.",
-      "q4": "Will a report show photos from a Copart auction?",
-      "a4": "Sometimes – some reports include photos from earlier listings when the service has them. No service guarantees it. Save the photos of the current auction yourself, because the page disappears after the sale.",
-      "q5": "Is a free VIN report enough?",
-      "a5": "Free databases (NICB, NHTSA) show theft, total loss and recalls, but not the full accident and mileage history. A paid report is usually needed before deciding to buy.",
-      "q6": "Do you earn from these links?",
-      "a6": "For some services, yes – such links are marked as partner links. This does not affect what we recommend: the ranking is based on data coverage, not commission."
+      "title": "Gyakori kérdések",
+      "q1": "Melyik a legjobb VIN-jelentés amerikai autóhoz?",
+      "a1": "Amerikai aukciós autóhoz az AutoCheck (aukciós előzmények) és a Carfax (balesetek és szerviz) adja a legtöbb adatot. A title és a totálkár gyors ellenőrzéséhez elég az olcsóbb VinAudit.",
+      "q2": "Ellenőrzi a carVertical az amerikai autókat?",
+      "a2": "Igen – a szolgáltató szerint a jelentés tartalmazza többek között az amerikai title-jelöléseket (salvage, rebuilt, junk). Az amerikai lefedettség azonban kisebb, mint az amerikai szolgáltatóké.",
+      "q3": "autoDNA vagy carVertical – melyik a jobb?",
+      "a3": "Az autoDNA Lengyelországban és Közép-Kelet-Európában erősebb, és általában olcsóbb, a carVertical Nyugat-Európát és az USA-t fedi le szélesebben. Drágább autónál érdemes mindkettőt megnézni.",
+      "q4": "Megmutatja a jelentés a Copart-aukció fotóit?",
+      "a4": "Néha – egyes jelentések tartalmaznak fotókat korábbi hirdetésekből, ha a szolgáltatónak vannak. Garanciát egyik sem ad. Az aktuális aukció fotóit mentse el saját maga, mert az eladás után az oldal eltűnik.",
+      "q5": "Elég egy ingyenes VIN-jelentés?",
+      "a5": "Az ingyenes adatbázisok (NICB, NHTSA) mutatják a lopást, a totálkárt és a visszahívásokat, de nem a teljes baleseti és kilométer-előzményt. A vásárlási döntéshez általában fizetős jelentés kell.",
+      "q6": "Kerestek ezeken a linkeken?",
+      "a6": "Egyes szolgáltatóknál igen – ezek a linkek partnerlinkként vannak jelölve. Ez nem befolyásolja, mit ajánlunk: a sorrend az adatlefedettségen alapul, nem a jutalékon."
     },
-    "disclaimer": "Carglo is not affiliated with the services described. Names belong to their owners. Prices and coverage come from the services’ descriptions and comparisons from October 2026 – check the current offer before buying.",
-    "decoder": "Free VIN decoder",
+    "disclaimer": "A Carglo nem áll kapcsolatban a bemutatott szolgáltatókkal. A nevek tulajdonosaikéi. Az árak és az adatok köre a szolgáltatók leírásaiból és 2026. októberi összehasonlításokból származnak – vásárlás előtt ellenőrizze az aktuális ajánlatot.",
+    "decoder": "Ingyenes VIN-dekóder",
     "mock": {
-      "title": "Vehicle history report",
-      "r1": "First registration – Florida",
-      "r2": "Odometer reading: 28,400 mi",
-      "r3": "Damage: front end, airbags deployed",
-      "r4": "Title changed to SALVAGE",
-      "r5": "Auction – 3 photos before repair",
-      "caption": "Illustration – what a history report typically looks like. Coverage depends on the service and the VIN."
+      "title": "Járműelőzmény-jelentés",
+      "r1": "Első forgalomba helyezés – Florida",
+      "r2": "Kilométeróra-állás: 28 400 mérföld",
+      "r3": "Sérülés: eleje, a légzsákok kinyíltak",
+      "r4": "Title SALVAGE-re változott",
+      "r5": "Aukció – 3 fotó javítás előtt",
+      "caption": "Illusztráció – így néz ki általában egy előéletjelentés. Az adatok köre a szolgáltatótól és a VIN-től függ."
     }
   }
 }

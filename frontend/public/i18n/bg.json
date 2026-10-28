@@ -511,9 +511,9 @@
     "toTop": "Нагоре",
     "glossary": "Речник",
     "contact": "Контакти",
-    "vin": "VIN check",
-    "copart": "Copart – how to buy",
-    "vinCompare": "VIN reports compared"
+    "vin": "Проверка на VIN",
+    "copart": "Copart – как да купите",
+    "vinCompare": "Сравнение на VIN доклади"
   },
   "footer": {
     "about": "Независим калкулатор на разходите за внос на автомобили извън ЕС. Не продаваме и не внасяме коли – изчисляваме колко всъщност струват.",
@@ -880,16 +880,16 @@
       "description": "Въпрос за изчислението, доклада, плащането или партньорство? Пишете на екипа на Carglo – обикновено отговаряме до един работен ден."
     },
     "vin": {
-      "title": "VIN check for US cars – free VIN decoder and vehicle history | Carglo",
-      "description": "Enter a VIN and check the make, model, year, engine and country of manufacture for free. Learn how to read a VIN and where to check damage and mileage history."
+      "title": "Проверка на VIN на кола от САЩ – безплатен VIN декодер и история | Carglo",
+      "description": "Въведете VIN и безплатно проверете марка, модел, година, двигател и държава на производство. Как се чете VIN и къде да проверите историята на щетите и пробега."
     },
     "copart": {
-      "title": "Copart: how to buy a car from the US in Europe – fees, broker, shipping | Carglo",
-      "description": "A Copart guide for buyers in Europe: account or broker, auction fees, title types, checking the car, payment, shipping and the full cost of importing."
+      "title": "Copart: как да купите кола от САЩ от Европа – такси, брокер, транспорт | Carglo",
+      "description": "Наръчник за Copart за купувачи от Европа: собствен акаунт или брокер, такси на търга, видове title, проверка на колата, плащане, транспорт и пълна цена на вноса."
     },
     "vinCompare": {
-      "title": "VIN history reports compared: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Which VIN report should you buy for a car from the USA or Europe? Coverage, damage and title data, photos and prices compared: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
+      "title": "Сравнение на доклади за история по VIN: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
+      "description": "Кой VIN доклад да изберете за кола от САЩ или Европа? Обхват, данни за щети и title, снимки и цени: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     }
   },
   "privacy": {
@@ -1951,347 +1951,347 @@
     }
   },
   "vinCta": {
-    "title": "Before you bid – check the car's history by VIN",
-    "text": "A history report shows earlier damage, mileage and past auctions, among other things. It costs a fraction of even a small repair.",
-    "button": "Check the VIN at {{partner}}",
-    "label": "Partner link – Carglo may earn a commission. It does not affect our calculations."
+    "title": "Преди да наддавате – проверете историята на колата по VIN",
+    "text": "Докладът за история показва, наред с другото, предишни щети, пробег и минали търгове. Струва частица от дори малък ремонт.",
+    "button": "Проверете VIN в {{partner}}",
+    "label": "Партньорски линк – Carglo може да получи комисиона. Това не влияе на нашите изчисления."
   },
   "vinPage": {
-    "eyebrow": "Tool and guide",
-    "title": "Check the VIN of a car from the US, Canada or Europe",
-    "lead": "Enter a VIN and we decode the make, model, year, engine and country of manufacture for free. Below we explain how to read a VIN yourself and where to check damage and mileage history before you buy.",
+    "eyebrow": "Инструмент и наръчник",
+    "title": "Проверете VIN на кола от САЩ, Канада или Европа",
+    "lead": "Въведете VIN и ние безплатно ще разчетем марката, модела, годината, двигателя и държавата на производство. По-долу обясняваме как сами да четете VIN и къде да проверите историята на щетите и пробега преди покупка.",
     "tool": {
-      "title": "Free VIN decoder",
-      "lead": "Data from the US vehicle database (NHTSA) and the EPA, and – for cars from outside North America – from the VIN itself.",
-      "button": "Check VIN",
-      "year": "Model year",
-      "engine": "Engine",
-      "power": "Power",
-      "fuel": "Fuel",
-      "body": "Body",
-      "check": "Check digit",
-      "checkOk": "valid",
-      "checkBad": "does not match – possible typo",
-      "duty": "Car built in {{country}} – with proof of origin it may qualify for 0% duty instead of 10%.",
-      "dutyMore": "How it works",
-      "calculate": "Calculate the import cost of this car",
-      "note": "The decoder shows the technical data encoded in the VIN and in manufacturers' databases. It does not show damage or mileage history – that is what a vehicle history report is for."
+      "title": "Безплатен VIN декодер",
+      "lead": "Данни от американската база данни за превозни средства (NHTSA) и EPA, а за коли извън Северна Америка – от самия VIN.",
+      "button": "Проверете VIN",
+      "year": "Моделна година",
+      "engine": "Двигател",
+      "power": "Мощност",
+      "fuel": "Гориво",
+      "body": "Купе",
+      "check": "Контролна цифра",
+      "checkOk": "валидна",
+      "checkBad": "не съвпада – възможна грешка при въвеждане",
+      "duty": "Кола, произведена в: {{country}} – с доказателство за произход може да има мито 0% вместо 10%.",
+      "dutyMore": "Как работи",
+      "calculate": "Изчислете разходите за внос на тази кола",
+      "note": "Декодерът показва техническите данни, записани във VIN и в базите на производителите. Не показва история на щети или пробег – за това служи докладът за историята на автомобила."
     },
     "what": {
-      "title": "What a VIN is",
-      "text": "A VIN (Vehicle Identification Number) is the 17-character number the manufacturer gives every car. It never contains the letters I, O or Q, so they are not mistaken for the digits 1 and 0.\nYou will find the VIN on a plate by the windscreen (driver's side), on the door pillar, in the documents (the title in the US, the registration certificate in the EU) and in the auction listing. Before buying, compare the VIN in the listing with the one in the car's photos – a difference is a warning sign."
+      "title": "Какво е VIN",
+      "text": "VIN (Vehicle Identification Number, номер на рама) е 17-символният номер, който производителят дава на всяка кола. Никога не съдържа буквите I, O и Q, за да не се бъркат с 1 и 0.\nVIN се намира на табелка до предното стъкло (от страната на водача), на колоната на вратата, в документите (title в САЩ, свидетелство за регистрация в ЕС) и в обявата на търга. Преди покупка сравнете VIN от обявата с този на снимките – разлика е тревожен сигнал."
     },
     "read": {
-      "title": "How to read a VIN, character by character",
-      "text": "Every position in a VIN means something. The most useful are the first character (country of manufacture), the ninth (check digit) and the tenth (model year).",
-      "p1": "Country of manufacture (e.g. 1, 4, 5 – US, W – Germany, J – Japan)",
-      "p2": "Manufacturer – together with the first character it forms the WMI code",
-      "p4": "Model, body, engine, safety systems",
-      "p9": "Check digit – mandatory in North America, catches typos",
-      "p10": "Model year",
-      "p11": "Plant where the car was assembled",
-      "p12": "The car's serial number",
-      "countryTitle": "First character – country of manufacture",
-      "yearTitle": "Tenth character – model year"
+      "title": "Как да четете VIN символ по символ",
+      "text": "Всяка позиция във VIN има значение. Най-полезни са първият символ (държава на производство), деветият (контролна цифра) и десетият (моделна година).",
+      "p1": "Държава на производство (напр. 1, 4, 5 – САЩ, W – Германия, J – Япония)",
+      "p2": "Производител – заедно с първия символ образува кода WMI",
+      "p4": "Модел, купе, двигател, системи за безопасност",
+      "p9": "Контролна цифра – задължителна в Северна Америка, улавя грешки",
+      "p10": "Моделна година",
+      "p11": "Завод, в който е сглобена колата",
+      "p12": "Сериен номер на колата",
+      "countryTitle": "Първи символ – държава на производство",
+      "yearTitle": "Десети символ – моделна година"
     },
     "report": {
-      "title": "What a vehicle history report shows",
-      "text": "The decoder tells you what the car is. A history report tells you what happened to it. It usually includes:\n• damage and incidents reported by insurers, including total losses,\n• the title type (clean, salvage, rebuilt, flood) and its changes between states,\n• odometer readings – they reveal a rolled-back odometer,\n• earlier auctions, often with photos of the car before repair,\n• thefts, the number of owners and registration states.\nFor an auction car, a report usually costs a fraction of even a small repair – and it can stop you buying a flood car or one with serious structural damage."
+      "title": "Какво показва докладът за историята на автомобила",
+      "text": "Декодерът казва каква е колата. Докладът за история казва какво се е случило с нея. Обикновено съдържа:\n• щети и събития, обявени от застрахователи, включително тотални щети,\n• вида title (clean, salvage, rebuilt, flood) и промените му между щатите,\n• показания на километража – разкриват върнат пробег,\n• предишни търгове, често със снимки преди ремонта,\n• кражби, брой собственици и щати на регистрация.\nЗа кола от търг докладът обикновено струва частица от дори малък ремонт – и може да ви спаси от наводнена кола или кола със сериозни щети по конструкцията."
     },
     "free": {
-      "title": "Free sources of VIN information",
-      "text": "Some information you can check for free in official databases:",
-      "nicb": "The US insurers' database – whether the car was reported stolen or as a total loss (salvage).",
-      "nhtsa": "Open safety recalls for the VIN – worth fixing before shipping or right after.",
-      "nmvtis": "The official US register of titles and total losses; it lists approved report providers.",
-      "mot": "For cars from the UK: the full MOT test history with the mileage from each year."
+      "title": "Безплатни източници на информация по VIN",
+      "text": "Някои данни можете да проверите безплатно в официални бази:",
+      "nicb": "Базата на американските застрахователи – дали колата е обявена за открадната или тотална щета (salvage).",
+      "nhtsa": "Неизпълнени сервизни кампании за VIN – по-добре да се отстранят преди изпращане или веднага след него.",
+      "nmvtis": "Официалният регистър на САЩ за title и тотални щети; изброява одобрените доставчици на доклади.",
+      "mot": "За коли от Великобритания: цялата история на техническите прегледи MOT с пробега за всяка година."
     },
     "flags": {
-      "title": "Warning signs",
-      "text": "• The VIN in the listing differs from the VIN in the photos of the plate or windscreen.\n• The check digit does not match (on a North American car).\n• The model year in the VIN does not match the listing.\n• The title is branded flood, water damage or \"not actual mileage\".\n• The car was offered at auction several times in a short period.\n• The VIN plate looks removed, glued on or damaged – a possible clone."
+      "title": "Тревожни сигнали",
+      "text": "• VIN в обявата се различава от VIN на снимките на табелката или стъклото.\n• Контролната цифра не съвпада (при северноамериканска кола).\n• Моделната година във VIN не отговаря на обявата.\n• Title има отбелязване flood, water damage или „not actual mileage“.\n• Колата е била на търг няколко пъти за кратко време.\n• Табелката с VIN изглежда махана, залепена или повредена – възможен клонинг."
     },
     "japan": {
-      "title": "Cars from Japan – a chassis number instead of a VIN",
-      "text": "Cars from the Japanese market (JDM) often have no 17-character VIN, only a shorter chassis number, e.g. JZA80-0012345. A VIN decoder cannot read it.\nThe history of such a car is checked on the auction sheet and the export certificate – a good exporter translates them before you buy."
+      "title": "Коли от Япония – номер на шаси вместо VIN",
+      "text": "Колите от японския пазар (JDM) често нямат 17-символен VIN, а по-кратък номер на шаси, напр. JZA80-0012345. VIN декодерът не може да го разчете.\nИсторията на такава кола се проверява по auction sheet и експортния сертификат – добрият износител ги превежда преди покупката."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Is a VIN check free?",
-      "a1": "Decoding the technical data from the VIN (make, model, year, engine, country of manufacture) is free here. A full history report – damage, mileage, past auctions – is paid, from report providers.",
-      "q2": "What can I tell from the VIN alone?",
-      "a2": "The country of manufacture, the manufacturer, the model year, the plant and – on North American cars – whether the number is valid, thanks to the check digit. Engine and body specs come from manufacturers' databases, history from reports.",
-      "q3": "How do I check whether a car from the US has been in an accident?",
-      "a3": "Check the title type (salvage means a total loss), the free NICB VINCheck database and a vehicle history report, which often also shows photos from earlier auctions.",
-      "q4": "How do I know which country the car was built in?",
-      "a4": "From the first character of the VIN: 1, 4 and 5 are the US, 2 – Canada, 3 – Mexico, J – Japan, W – Germany. It matters for import: cars built in the US, Canada, Japan and the UK may qualify for 0% duty.",
-      "q5": "Can a VIN be faked?",
-      "a5": "Yes – stolen cars are sometimes \"cloned\" with the VIN of another car. Compare the VIN in several places on the car and in the documents, check that the year and version match, and ask for an inspection if in doubt.",
-      "q6": "Does the decoder work for cars from Japan?",
-      "a6": "Only if the car has a 17-character VIN. Most cars from the Japanese market have a shorter chassis number – their history is checked on the auction sheet."
+      "title": "Често задавани въпроси",
+      "q1": "Безплатна ли е проверката на VIN?",
+      "a1": "Разчитането на техническите данни от VIN (марка, модел, година, двигател, държава на производство) при нас е безплатно. Пълният доклад за история – щети, пробег, минали търгове – е платен и се предлага от доставчици на доклади.",
+      "q2": "Какво се разбира само от VIN?",
+      "a2": "Държавата на производство, производителят, моделната година, заводът и – при северноамерикански коли – благодарение на контролната цифра дали номерът е валиден. Данните за двигателя и купето идват от базите на производителите, историята – от докладите.",
+      "q3": "Как да проверя дали кола от САЩ е била в катастрофа?",
+      "a3": "Проверете вида title (salvage означава тотална щета), безплатната база NICB VINCheck и доклад за история, който често показва и снимки от предишни търгове.",
+      "q4": "Как да разбера в коя държава е произведена колата?",
+      "a4": "По първия символ на VIN: 1, 4 и 5 са САЩ, 2 – Канада, 3 – Мексико, J – Япония, W – Германия. Това е важно при вноса: колите, произведени в САЩ, Канада, Япония и Великобритания, могат да имат мито 0%.",
+      "q5": "Може ли VIN да е подправен?",
+      "a5": "Да – откраднати коли понякога се „клонират“ с VIN на друга кола. Сравнете VIN на няколко места и в документите, проверете дали годината и версията съвпадат и при съмнение поискайте оглед.",
+      "q6": "Работи ли декодерът за коли от Япония?",
+      "a6": "Само ако колата има 17-символен VIN. Повечето коли от японския пазар имат по-кратък номер на шаси – историята им се проверява по auction sheet."
     },
-    "compareLink": "VIN report services compared – which one to choose",
+    "compareLink": "Сравнение на услугите за VIN доклади – коя да изберете",
     "anatomy": {
-      "country": "country",
-      "maker": "manufacturer",
-      "vds": "vehicle description",
-      "check": "check digit",
-      "year": "model year",
-      "plant": "plant",
-      "serial": "serial number",
-      "caption": "Sample VIN {{vin}}: a Ford built in the USA, model year 2020."
+      "country": "държава",
+      "maker": "производител",
+      "vds": "описание на колата",
+      "check": "контролна",
+      "year": "година",
+      "plant": "завод",
+      "serial": "сериен номер",
+      "caption": "Примерен VIN {{vin}}: Ford, произведен в САЩ, моделна година 2020."
     }
   },
   "copart": {
-    "eyebrow": "Guide",
-    "title": "Copart: how to buy a car from the US and import it to Europe",
-    "lead": "Copart is the largest auction of damaged and ex-lease cars in the US. We explain step by step how to buy there from Europe, what the fees are and what you will pay in total with shipping and taxes.",
+    "eyebrow": "Наръчник",
+    "title": "Copart: как да купите кола в САЩ и да я внесете в България",
+    "lead": "Copart е най-големият търг за ударени коли и коли след лизинг в САЩ. Обясняваме стъпка по стъпка как да купувате там от Европа, какви са таксите и колко ще платите общо с транспорта и данъците.",
     "what": {
-      "title": "What Copart is",
-      "text": "Copart is a US auction company with more than 200 yards in the US and Canada. It mainly sells cars from insurers (after accidents, thefts, floods), leasing companies, rental firms and banks. Bidding is online, and the car stays in the yard until it is collected.\nEvery listing has photos, the damage type (primary / secondary damage), the title type, the mileage and a status such as \"Run and Drive\" (the car moved when it arrived at the yard). Sales follow different rules: \"Pure Sale\" – the car goes to the highest bid; \"Minimum Bid\" – the seller has a reserve price; \"On Approval\" – the seller approves the bid."
+      "title": "Какво е Copart",
+      "text": "Copart е американска компания за търгове с над 200 площадки в САЩ и Канада. Продава главно коли от застрахователи (след катастрофи, кражби, наводнения), лизингови компании, рент-а-кар фирми и банки. Наддаването е онлайн, а колата остава на площадката, докато не бъде взета.\nВсяка обява има снимки, вида щета (primary / secondary damage), вида title, пробега и статус като „Run and Drive“ (колата се е движила при пристигането на площадката). Правилата на продажба са различни: „Pure Sale“ – колата отива при най-високата оферта; „Minimum Bid“ – продавачът има минимална цена; „On Approval“ – продавачът трябва да одобри офертата."
     },
     "europe": {
-      "title": "Copart in Europe vs Copart in the US",
-      "text": "Copart also operates in several European countries (including the UK, Germany, Spain, Finland and Ireland). These are separate sites with local cars and local rules.\nThe biggest choice and the lowest prices, however, are at the US auctions – and that is what this guide is about. A car from the US has to cross the ocean and be cleared at an EU port, so always work out the full cost, not just the auction price."
+      "title": "Copart в Европа или Copart в САЩ",
+      "text": "Copart работи и в няколко европейски държави (включително Великобритания, Германия, Испания, Финландия и Ирландия). Това са отделни сайтове с местни коли и правила.\nНай-големият избор и най-ниските цени обаче са на американските търгове – за тях е този наръчник. Колата от САЩ трябва да прекоси океана и да мине митническо оформяне в пристанище в ЕС, затова винаги смятайте пълната цена, а не само цената от търга."
     },
     "account": {
-      "title": "Your own account or a broker",
-      "text": "You can open a Copart account yourself, but a standard account lets you bid on only some cars. In many states, cars with a salvage title can only be bought by licensed buyers – which is why most buyers from Europe bid through a broker.\nThe broker lends you their licence, pays the deposit and often arranges transport to the port and the export documents. They charge a commission for it (usually a fixed amount per car). Check reviews of the broker and exactly what their price includes."
+      "title": "Собствен акаунт или брокер",
+      "text": "Можете сами да отворите акаунт в Copart, но стандартният акаунт позволява наддаване само за част от колите. В много щати колите със salvage title могат да се купуват само от лицензирани купувачи – затова повечето купувачи от Европа наддават чрез брокер.\nБрокерът ви предоставя лиценза си, внася депозита и често организира транспорта до пристанището и експортните документи. За това взема комисиона (обикновено фиксирана сума на кола). Проверете отзивите за брокера и какво точно включва цената."
     },
     "fees": {
-      "title": "Auction fees",
-      "text": "Copart's fees are added to the hammer price:\n• the buyer fee – it rises in steps with the car's price,\n• the online bidding fee (virtual bid fee),\n• the gate fee for releasing the car from the yard,\n• environmental and title handling fees,\n• the broker's commission, if you use one.\nFor a car of a few thousand dollars this is usually several hundred to over a thousand dollars. Copart publishes the exact fee tables on its website – check them before you bid."
+      "title": "Такси на търга",
+      "text": "Към цената от търга се добавят таксите на Copart:\n• такса за купувача (buyer fee) – расте на стъпки с цената,\n• такса за онлайн наддаване (virtual bid fee),\n• gate fee за изваждане на колата от площадката,\n• екологична такса и такса за обработка на title,\n• комисионата на брокера, ако ползвате такъв.\nЗа кола за няколко хиляди долара това обикновено е от няколкостотин до над хиляда долара. Copart публикува точните таблици на сайта си – проверете ги преди да наддавате."
     },
     "titles": {
-      "title": "Title types – what you are buying",
-      "text": "The title is the US ownership document. Its type tells you what happened to the car:\n• Clean – no total loss in its history.\n• Salvage – the insurer declared a total loss; the most common title at Copart.\n• Rebuilt – a former total loss, repaired and allowed back on the road in the US.\n• Parts only, Non-repairable, Certificate of Destruction – for parts only; such a car cannot be registered in the EU.\nA salvage car can be registered in the EU after repair and a roadworthiness test. The title still affects its resale value.",
-      "link": "How to check a car by its VIN"
+      "title": "Видове title – какво купувате",
+      "text": "Title е американският документ за собственост. Видът му показва какво се е случило с колата:\n• Clean – без тотална щета в историята.\n• Salvage – застрахователят е обявил тотална щета; най-често срещаният title в Copart.\n• Rebuilt – бивша тотална щета, ремонтирана и отново допусната до движение в САЩ.\n• Parts only, Non-repairable, Certificate of Destruction – само за части; такава кола не може да се регистрира в ЕС.\nКола със salvage title може да се регистрира в ЕС след ремонт и технически преглед. Title обаче влияе на цената при препродажба.",
+      "link": "Как да проверите кола по VIN"
     },
     "inspect": {
-      "title": "Check the car before you bid",
-      "text": "You cannot see the car in person, so every detail counts:\n• compare the VIN in the listing with the one in the photos,\n• look at every photo – \"Front end\" can mean a bumper or bent chassis rails,\n• be careful with cars from Florida, Texas and Louisiana after hurricanes (water marks, silt, corroded connectors),\n• check the car's history by VIN – damage, mileage and earlier auctions,\n• keep a 20–30% reserve for hidden damage."
+      "title": "Проверете колата преди да наддавате",
+      "text": "Няма да видите колата на живо, затова всеки детайл е важен:\n• сравнете VIN от обявата с този на снимките,\n• разгледайте всички снимки – „Front end“ може да е броня или огънати надлъжни греди,\n• внимавайте с коли от Флорида, Тексас и Луизиана след урагани (следи от вода, тиня, корозирали конектори),\n• проверете историята по VIN – щети, пробег и предишни търгове,\n• заложете резерв от 20–30% за скрити дефекти."
     },
     "payment": {
-      "title": "Payment and pickup",
-      "text": "After winning a bid you usually have only a few business days to pay (most often by bank transfer). Paying late means a penalty and, in the worst case, a blocked account.\nThe car must be collected from the yard within a short time – after that, storage fees are charged. So before you bid, have the money ready for the car, the fees and the transport, and make sure the broker or carrier knows where to collect the car."
+      "title": "Плащане и вземане",
+      "text": "След спечелен търг обикновено имате само няколко работни дни за плащане (най-често с банков превод). Закъснението означава глоба, а в краен случай – блокиран акаунт.\nКолата трябва бързо да бъде взета от площадката – след това се начисляват такси за престой. Затова преди да наддавате, подгответе парите за колата, таксите и транспорта, а брокерът или превозвачът трябва да знае откъде да вземе колата."
     },
     "shipping": {
-      "title": "Shipping to Europe",
-      "text": "A car carrier takes the car from the yard to the export port (e.g. New Jersey, Savannah, Houston, Los Angeles). From there it sails in a container (often 3–4 cars together) or on a RoRo ship to a European port – usually 2–3 weeks from the East Coast.\nAt the EU port a customs agent clears the car: you pay duty and import VAT, and then the car is trucked to your address. The choice of port matters – freight, port fees and VAT rates differ between countries.",
-      "link": "Full guide to importing a car from the US"
+      "title": "Транспорт до Европа",
+      "text": "Автовоз откарва колата от площадката до експортното пристанище (напр. Ню Джърси, Савана, Хюстън, Лос Анджелис). Оттам тя пътува в контейнер (често 3–4 коли заедно) или с RoRo кораб до европейско пристанище – от Източното крайбрежие обикновено 2–3 седмици.\nВ пристанището в ЕС митнически агент оформя колата: плащате мито и ДДС при внос, след което колата пристига с камион на вашия адрес. Изборът на пристанище има значение – навлото, пристанищните такси и ставките на ДДС се различават по държави.",
+      "link": "Пълен наръчник за внос на кола от САЩ"
     },
     "cost": {
-      "title": "What a Copart car costs in total",
-      "text": "The auction price is only part of the cost. On top come auction fees, transport in the US, ocean freight and insurance, port fees, duty (10%, or 0% for US-built cars with proof of origin), VAT, national taxes, transport in Europe, repair and registration.",
-      "example": "An example from our calculator: a {{model}} bought for {{price}} costs in total, delivered to your door in {{country}}:",
-      "breakdown": "See the full cost breakdown"
+      "title": "Колко струва общо кола от Copart",
+      "text": "Цената от търга е само част от разходите. Добавят се таксите на търга, транспортът в САЩ, морското навло и застраховката, пристанищните такси, митото (10% или 0% за коли, произведени в САЩ, с доказателство за произход), ДДС, националните данъци, транспортът в Европа, ремонтът и регистрацията.",
+      "example": "Пример от нашия калкулатор: {{model}}, купен за {{price}}, струва общо с доставка до вратата (държава на местоназначение: {{country}}):",
+      "breakdown": "Вижте пълната разбивка на разходите"
     },
     "mistakes": {
-      "title": "The most common mistakes",
-      "text": "• Bidding without working out the full cost – fees, shipping and taxes can double the auction price.\n• Buying a car with a \"parts only\" title that cannot be registered.\n• Trusting \"Run and Drive\" without checking the history by VIN.\n• No reserve for hidden damage and parts.\n• Counting on 0% duty without proof of origin.\n• Paying late and running up storage fees in the yard."
+      "title": "Най-честите грешки",
+      "text": "• Наддаване без пресмятане на пълната цена – таксите, транспортът и данъците могат да удвоят цената от търга.\n• Купуване на кола с title „parts only“, която не може да се регистрира.\n• Доверие в „Run and Drive“ без проверка на историята по VIN.\n• Липса на резерв за скрити дефекти и части.\n• Разчитане на мито 0% без доказателство за произход.\n• Закъсняло плащане и такси за престой на площадката."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Can I buy a car at Copart without a broker?",
-      "a1": "You can open an account, but a standard account lets you bid on only some cars. Cars with a salvage title in many states require a buyer's licence, which is why most buyers from Europe use a broker.",
-      "q2": "How much are Copart's fees?",
-      "a2": "They depend on the car's price and the account type. For a car of a few thousand dollars the auction fees are usually several hundred to over a thousand dollars, plus the broker's commission. The current tables are on Copart's website.",
-      "q3": "What does \"Run and Drive\" mean?",
-      "a3": "That the car started and moved when it was received at the yard. It does not mean it is in working order or roadworthy.",
-      "q4": "How long does it take to bring a Copart car to Europe?",
-      "a4": "Usually 4–8 weeks from winning the bid: a few days to a week for pickup and transport to the port, 2–3 weeks at sea from the East Coast (longer from California), then clearance and delivery.",
-      "q5": "Can a salvage-title car be registered in Europe?",
-      "a5": "Yes, if after repair it passes the roadworthiness test in your country. Cars with a \"parts only\" or \"non-repairable\" title or a certificate of destruction cannot be registered.",
-      "q6": "How much duty will I pay on a Copart car?",
-      "a6": "As standard, 10% of the customs value (the price with fees plus transport to the EU border). US-built cars can have 0% duty from 1 July 2026 with proof of origin. VAT and national taxes come on top – the calculator works it all out."
+      "title": "Често задавани въпроси",
+      "q1": "Мога ли да купя от Copart без брокер?",
+      "a1": "Можете да отворите акаунт, но стандартният акаунт позволява наддаване само за част от колите. В много щати колите със salvage title изискват лиценз на купувач – затова повечето купувачи от Европа ползват брокер.",
+      "q2": "Колко са таксите на Copart?",
+      "a2": "Зависят от цената на колата и вида акаунт. За кола за няколко хиляди долара таксите на търга обикновено са от няколкостотин до над хиляда долара, плюс комисионата на брокера. Актуалните таблици са на сайта на Copart.",
+      "q3": "Какво означава „Run and Drive“?",
+      "a3": "Че колата е запалила и се е движила при приемането ѝ на площадката. Това не означава, че е изправна или годна за движение.",
+      "q4": "Колко време отнема докарването на кола от Copart до Европа?",
+      "a4": "Обикновено 4–8 седмици от спечелването на търга: от няколко дни до седмица за вземане и транспорт до пристанището, 2–3 седмици в морето от Източното крайбрежие (от Калифорния повече), след това митническо оформяне и доставка.",
+      "q5": "Може ли кола със salvage title да се регистрира в Европа?",
+      "a5": "Да, ако след ремонта премине технически преглед във вашата държава. Колите с title „parts only“ или „non-repairable“ или със сертификат за унищожаване не могат да се регистрират.",
+      "q6": "Колко мито ще платя за кола от Copart?",
+      "a6": "Стандартно 10% от митническата стойност (цената с таксите плюс транспорта до границата на ЕС). Колите, произведени в САЩ, могат да имат мито 0% от 1 юли 2026 г. с доказателство за произход. Към това се добавят ДДС и националните данъци – калкулаторът изчислява всичко."
     },
-    "disclaimer": "Carglo is not affiliated with Copart Inc. The name Copart is used only to describe the service. Auction rules and fees may change – check them on Copart's website.",
+    "disclaimer": "Carglo не е свързано с Copart Inc. Името Copart се използва само за описание на услугата. Правилата и таксите на търговете могат да се променят – проверявайте ги на сайта на Copart.",
+    "lot": {
+      "alt": "Скица на кола с отбелязана ударена предна част",
+      "caption": "Илюстрация – така изглежда картата на лот на търг в САЩ. Полетата и отбелязванията обясняваме по-долу."
+    },
     "listing": {
-      "title": "How to read a Copart listing",
-      "text": "Every lot has a number and a data sheet. The most important fields:\n• Primary / Secondary damage – the main and additional damage as reported by the insurer (e.g. Front end, Rear end, Side, Flood, Hail, Mechanical).\n• Odometer – mileage in miles marked “Actual” or “Not actual” / “Exempt”; the last two mean the reading cannot be trusted.\n• Est. Retail Value and Est. Repair Cost – the insurer’s estimates; they help gauge the damage but do not replace your own repair quote.\n• Highlights – e.g. “Run and Drive”, “Engine Starts”, “Enhanced Vehicles”.\n• Keys – whether keys are included (replacing them can be expensive).\n• Sale document / title – the document type and the state that issued it.\n• Location and Sale date – the yard you collect the car from and the auction date.\nSave the lot number and VIN – after the sale the listing disappears from public view."
+      "title": "Как да четете обява в Copart",
+      "text": "Всеки лот има номер и карта с данни. Най-важните полета:\n• Primary / Secondary damage – основна и допълнителна щета според застрахователя (напр. Front end, Rear end, Side, Flood, Hail, Mechanical).\n• Odometer – пробег в мили с отбелязване „Actual“ или „Not actual“ / „Exempt“; последните две означават, че на километража не може да се вярва.\n• Est. Retail Value и Est. Repair Cost – оценки на застрахователя; помагат да прецените щетата, но не заменят собствената оферта за ремонт.\n• Highlights – напр. „Run and Drive“, „Engine Starts“, „Enhanced Vehicles“.\n• Keys – има ли ключове (изработването на нови може да е скъпо).\n• Sale document / title – вид на документа и щата, който го е издал.\n• Location и Sale date – площадката, откъдето вземате колата, и датата на търга.\nЗапишете номера на лота и VIN – след продажбата обявата изчезва от публичен достъп."
     },
     "bidding": {
-      "title": "How the bidding works",
-      "text": "Bidding has two stages. First comes preliminary bidding – you can enter your maximum amount and the system raises your bid automatically up to that limit. Then there is a live online auction, where the highest bid wins.\nSome cars offer “Buy It Now” – an immediate purchase at the listed price.\nSet your maximum before the auction: subtract auction fees, transport, customs duty, VAT, national taxes and a repair reserve from your budget. Getting carried away in the last seconds is the most common reason for overpaying."
+      "title": "Как протича наддаването",
+      "text": "Наддаването има два етапа. Първо е предварителното наддаване (preliminary bidding) – можете да въведете максималната си сума и системата сама вдига офертата до този лимит. След това следва онлайн търг на живо, който печели най-високата оферта.\nПри някои коли има опция „Buy It Now“ – покупка веднага на обявената цена.\nОпределете максимума преди търга: извадете от бюджета таксите, транспорта, митото, ДДС, националните данъци и резерв за ремонт. Емоциите в последните секунди са най-честата причина за надплащане."
     },
     "repair": {
-      "title": "Repair – in the USA or in Europe",
-      "text": "A damaged car can be repaired while still in the USA or after it arrives. Repairing in the USA can be cheaper where used parts are easy to find, but it is harder to supervise from a distance. Repairing in Europe gives you control over quality, although some original parts for US-market cars have to be imported.\nWherever it is repaired, the car must pass a roadworthiness test in your country, and after structural damage it is worth keeping the repair paperwork and photos – they help with registration and resale."
+      "title": "Ремонт – в САЩ или в Европа",
+      "text": "Ударената кола може да се ремонтира още в САЩ или след вноса. Ремонтът в САЩ може да е по-евтин при наличие на употребявани части, но трудно се контролира от разстояние. Ремонтът в Европа ви дава контрол върху качеството, но някои оригинални части за коли от американския пазар трябва да се поръчват.\nКъдето и да се ремонтира, колата трябва да мине технически преглед във вашата държава, а след щети по конструкцията е добре да пазите фактурите и снимките от ремонта – помагат при регистрация и продажба."
     },
     "flow": {
-      "title": "Buying on Copart from Europe – step by step",
+      "title": "Покупка от Copart от Европа – стъпка по стъпка",
       "s1": {
-        "title": "Choosing a car",
-        "text": "listings, photos and title type",
-        "time": "1–7 days"
+        "title": "Избор на кола",
+        "text": "обяви, снимки и вид title",
+        "time": "1–7 дни"
       },
       "s2": {
-        "title": "VIN check",
-        "text": "damage history, mileage, previous auctions",
-        "time": "1 day"
+        "title": "Проверка на VIN",
+        "text": "история на щетите, пробег, предишни търгове",
+        "time": "1 ден"
       },
       "s3": {
-        "title": "Bidding and payment",
-        "text": "through a broker; payment within a few business days",
-        "time": "2–4 days"
+        "title": "Наддаване и плащане",
+        "text": "чрез брокер; плащане до няколко работни дни",
+        "time": "2–4 дни"
       },
       "s4": {
-        "title": "Transport to the port",
-        "text": "truck from the Copart yard to the export port",
-        "time": "3–10 days"
+        "title": "Транспорт до пристанището",
+        "text": "автовоз от площадката на Copart до експортното пристанище",
+        "time": "3–10 дни"
       },
       "s5": {
-        "title": "Ocean freight",
-        "text": "container or RoRo to an EU port",
-        "time": "2–6 weeks"
+        "title": "Морски превоз",
+        "text": "контейнер или RoRo до пристанище в ЕС",
+        "time": "2–6 седмици"
       },
       "s6": {
-        "title": "EU customs clearance",
-        "text": "duty, import VAT, customs documents",
-        "time": "2–5 days"
+        "title": "Митническо оформяне в ЕС",
+        "text": "мито, ДДС при внос, митнически документи",
+        "time": "2–5 дни"
       },
       "s7": {
-        "title": "Registration",
-        "text": "national taxes, inspection, translations",
-        "time": "1–4 weeks"
+        "title": "Регистрация",
+        "text": "национални данъци, преглед, преводи",
+        "time": "1–4 седмици"
       }
     },
     "costbar": {
-      "title": "Cost breakdown",
-      "price": "Car incl. auction fees",
-      "transport": "Transport and freight",
-      "duty": "Customs duty",
-      "vat": "Import VAT",
-      "national": "National taxes",
-      "registration": "Registration and other"
-    },
-    "lot": {
-      "alt": "Sketch of a car with the damaged front marked",
-      "caption": "Illustration – what a lot card looks like at a US auction. We explain the fields and labels below."
+      "title": "Структура на разходите",
+      "price": "Кола с такси на търга",
+      "transport": "Транспорт и навло",
+      "duty": "Мито",
+      "vat": "ДДС при внос",
+      "national": "Национални данъци",
+      "registration": "Регистрация и други"
     }
   },
   "vinCompare": {
-    "eyebrow": "Comparison",
-    "title": "VIN history reports – which service to choose for a car from the USA or Europe",
-    "lead": "We compared the most popular vehicle history report services: data coverage, US damage and title information, photos from earlier listings and prices. At the end – how to choose a report for a specific car.",
-    "checked": "Prices and coverage checked: {{date}}. Prices are indicative and may change.",
-    "eu": "EU",
+    "eyebrow": "Сравнение",
+    "title": "Доклади за история по VIN – коя услуга да изберете за кола от САЩ и Европа",
+    "lead": "Сравнихме най-популярните услуги за доклади за историята на автомобила: обхват на данните, информация за щети и title от САЩ, снимки от предишни обяви и цени. Накрая – как да изберете доклад за конкретна кола.",
+    "checked": "Цени и обхват проверени: {{date}}. Цените са ориентировъчни и могат да се променят.",
+    "eu": "ЕС",
     "verdict": {
       "us": {
-        "for": "Car from a US auction",
-        "pick": "AutoCheck or Carfax",
-        "why": "The deepest US data: damage, titles, auction and service history."
+        "for": "Кола от търг в САЩ",
+        "pick": "AutoCheck или Carfax",
+        "why": "Най-подробните данни от САЩ: щети, title, история на търгове и сервиз."
       },
       "eu": {
-        "for": "Car bought in Europe",
-        "pick": "carVertical or autoDNA",
-        "why": "Data from many EU countries, report in your language."
+        "for": "Кола, купена в Европа",
+        "pick": "carVertical или autoDNA",
+        "why": "Данни от много държави от ЕС, доклад на вашия език."
       },
       "budget": {
-        "for": "Quick, cheap check",
+        "for": "Бърза и евтина проверка",
         "pick": "VinAudit",
-        "why": "Official NMVTIS title and total-loss data for a few dollars."
+        "why": "Официални данни от NMVTIS за title и тотални щети за няколко долара."
       }
     },
     "table": {
-      "title": "At a glance",
-      "service": "Service",
-      "regions": "Data coverage",
-      "usTitles": "US titles and total losses",
-      "photos": "Photos from history",
-      "price": "Report price",
-      "note": "“Sometimes” – photos appear when the service has them (e.g. from earlier listings or auctions). Coverage depends on the specific VIN."
+      "title": "Накратко",
+      "service": "Услуга",
+      "regions": "Обхват на данните",
+      "usTitles": "Title и тотални щети от САЩ",
+      "photos": "Снимки от историята",
+      "price": "Цена на доклада",
+      "note": "„Понякога“ – снимки има, когато услугата разполага с тях (напр. от предишни обяви или търгове). Обхватът зависи от конкретния VIN."
     },
     "value": {
-      "yes": "yes",
-      "partial": "partly",
-      "no": "no",
-      "sometimes": "sometimes",
-      "unknown": "no independent data"
+      "yes": "да",
+      "partial": "частично",
+      "no": "не",
+      "sometimes": "понякога",
+      "unknown": "няма независими данни"
     },
-    "providers": "Services one by one",
-    "visit": "Go to {{name}}",
-    "pros": "Pros",
-    "cons": "Cons",
-    "bestFor": "Best for:",
+    "providers": "Услугите една по една",
+    "visit": "Към {{name}}",
+    "pros": "Плюсове",
+    "cons": "Минуси",
+    "bestFor": "За кого:",
     "p": {
       "carvertical": {
-        "desc": "A Lithuanian service operating in many European countries and in the USA. It claims over 1,000 data sources – registries, insurers, workshops, police. For US cars it shows title brands such as salvage, rebuilt and junk.",
-        "pros": "• European and US data in one report.\n• Report and support in many EU languages.\n• Photos from history when available.",
-        "cons": "• More expensive than US budget services.\n• Less US data than Carfax or AutoCheck.",
-        "best": "buyers in Europe who want one report for a car from the USA or the EU."
+        "desc": "Литовска услуга, работеща в много европейски държави и в САЩ. Посочва над 1000 източника на данни – регистри, застрахователи, сервизи, полиция. За коли от САЩ показва, наред с другото, отбелязванията на title (salvage, rebuilt, junk).",
+        "pros": "• Данни от Европа и САЩ в един доклад.\n• Доклад и поддръжка на много езици от ЕС.\n• Снимки от историята, когато ги има.",
+        "cons": "• По-скъпа от евтините американски услуги.\n• По-малко данни от САЩ от Carfax или AutoCheck.",
+        "best": "купувачи в Европа, които искат един доклад за кола от САЩ или от ЕС."
       },
       "autodna": {
-        "desc": "A Polish service, strongest in Poland and Central and Eastern Europe. Its database covers dozens of countries in Europe and North America; reports include mileage, damage and – when available – photos.",
-        "pros": "• Very good data from Poland and the region.\n• Cheaper than carVertical, multi-report bundles.\n• Free preliminary check whether data exists.",
-        "cons": "• Less Western European data than competitors.\n• For US cars, add a US source as well.",
-        "best": "cars from Poland and neighbouring countries, and as a second source."
+        "desc": "Полска услуга, най-силна в Полша и Централна и Източна Европа. Базата ѝ обхваща десетки държави в Европа и Северна Америка; докладите съдържат пробег, щети и – когато ги има – снимки.",
+        "pros": "• Много добри данни от Полша и региона.\n• По-евтина от carVertical, пакети от няколко доклада.\n• Безплатна предварителна проверка дали има данни.",
+        "cons": "• По-малко данни от Западна Европа от конкурентите.\n• За коли от САЩ добавете и американски източник.",
+        "best": "коли от Полша и съседните държави, както и като втори източник."
       },
       "carfax": {
-        "desc": "The best-known service in the USA. It has broad access to insurer, police and workshop records, so it shows accidents and service history best.",
-        "pros": "• The deepest US accident and service history.\n• Recognised by buyers at resale.",
-        "cons": "• The most expensive single report.\n• Weak for cars from outside the USA and Canada.",
-        "best": "more expensive US cars where service history matters."
+        "desc": "Най-известната услуга в САЩ. Има широк достъп до данни от застрахователи, полиция и сервизи, затова най-добре показва катастрофи и сервизна история.",
+        "pros": "• Най-подробната история на катастрофи и сервиз в САЩ.\n• Разпознаваема от купувачите при препродажба.",
+        "cons": "• Най-скъпият единичен доклад.\n• Слаба за коли извън САЩ и Канада.",
+        "best": "по-скъпи коли от САЩ, при които сервизната история е важна."
       },
       "autocheck": {
-        "desc": "A service owned by Experian. Particularly strong on auction history – used by dealers and auction houses. It also gives an AutoCheck Score.",
-        "pros": "• Very good US auction data.\n• Cheaper than Carfax.",
-        "cons": "• Fewer service details than Carfax.\n• US cars only.",
-        "best": "cars from Copart and IAAI auctions."
+        "desc": "Услуга на Experian. Особено силна в историята на търговете – използват я дилъри и аукционни къщи. Дава и оценка AutoCheck Score.",
+        "pros": "• Много добри данни за търговете в САЩ.\n• По-евтина от Carfax.",
+        "cons": "• По-малко сервизни подробности от Carfax.\n• Само коли от САЩ.",
+        "best": "коли от търговете Copart и IAAI."
       },
       "vinaudit": {
-        "desc": "An officially approved data provider for the government NMVTIS database. It shows title brands, total losses, odometer readings and theft records.",
-        "pros": "• Very cheap, bundles even cheaper.\n• Official NMVTIS title and total-loss data.",
-        "cons": "• Few details on minor accidents and servicing.\n• No photos.",
-        "best": "a quick first check of many cars before bidding."
+        "desc": "Официално одобрен доставчик на данни от държавната база NMVTIS. Показва отбелязвания на title, тотални щети, показания на километража и записи за кражби.",
+        "pros": "• Много евтина, пакетите още по-евтини.\n• Официални данни от NMVTIS за title и тотални щети.",
+        "cons": "• Малко подробности за дребни катастрофи и сервиз.\n• Без снимки.",
+        "best": "бърза първа проверка на много коли преди наддаване."
       },
       "automano": {
-        "desc": "A new low-cost VIN report service. We have not yet found independent reviews or a detailed description of its data sources – treat it as a cheap first check.",
-        "pros": "• Low report price.",
-        "cons": "• Few independent reviews.\n• Data sources not disclosed.",
-        "best": "a cheap first check – for a more expensive car, also order a report from a better-known service."
+        "desc": "Нова услуга за VIN доклади на ниска цена. Все още не сме намерили независими отзиви или подробно описание на източниците на данни – приемайте я като евтина първа проверка.",
+        "pros": "• Ниска цена на доклада.",
+        "cons": "• Малко независими отзиви.\n• Не посочва източниците на данни.",
+        "best": "евтина първа проверка – при по-скъпа кола поръчайте и доклад от по-известна услуга."
       }
     },
     "how": {
-      "title": "How we compared",
-      "text": "We reviewed the services’ descriptions and price lists as well as independent comparisons from October 2026. We focused on what matters most when importing a car: where the data comes from, whether the report shows US titles and total losses, whether it includes photos from history and how much a single report costs.\nWe did not test the reports on the same VINs – coverage depends on the specific car, so for a more expensive car it is worth ordering two reports from different services."
+      "title": "Как сравнихме",
+      "text": "Прегледахме описанията и ценоразписите на услугите и независими сравнения от октомври 2026 г. Фокусирахме се върху най-важното при внос: откъде идват данните, дали докладът показва title и тотални щети от САЩ, дали съдържа снимки от историята и колко струва един доклад.\nНе сме тествали докладите с едни и същи VIN – обхватът зависи от конкретната кола, затова при по-скъпа кола си струва да поръчате два доклада от различни услуги."
     },
     "free": {
-      "title": "What you can check for free",
-      "text": "Before paying for a report, check for free:\n• NICB VINCheck – whether the car was reported stolen or a total loss (USA).\n• NHTSA Recalls – open recalls for the VIN.\n• MOT history on gov.uk – for cars from the UK.\n• unofficial Copart and IAAI auction archives – sometimes show photos and the price from an earlier sale; they are not affiliated with the auctions and may disappear.\nOur free VIN decoder also reads the make, model, year, engine and country of manufacture."
+      "title": "Какво можете да проверите безплатно",
+      "text": "Преди да платите за доклад, проверете безплатно:\n• NICB VINCheck – дали колата е обявена за открадната или тотална щета (САЩ).\n• NHTSA Recalls – неизпълнени сервизни кампании за VIN.\n• историята на MOT в gov.uk – за коли от Великобритания.\n• неофициални архиви на търговете Copart и IAAI – понякога показват снимки и цена от предишна продажба; не са свързани с търговете и могат да изчезнат.\nНашият безплатен VIN декодер разчита също марката, модела, годината, двигателя и държавата на производство."
     },
     "read": {
-      "title": "How to read a report",
-      "text": "• Compare mileage readings over the years – a drop means a rolled-back odometer.\n• Look for title brands: salvage, rebuilt, flood, junk.\n• Note the registration states – cars from Florida, Texas and Louisiana more often have flood damage.\n• Several auctions in a short time suggest the car was hard to sell.\n• No record does not mean no damage – a report only shows what was reported."
+      "title": "Как да четете доклада",
+      "text": "• Сравнете пробега по години – спад означава върнат километраж.\n• Търсете отбелязвания на title: salvage, rebuilt, flood, junk.\n• Обърнете внимание на щатите на регистрация – колите от Флорида, Тексас и Луизиана по-често имат щети от наводнения.\n• Няколко търга за кратко време показват, че колата трудно се е продавала.\n• Липсата на запис не означава липса на щета – докладът показва само обявеното."
     },
     "choose": {
-      "title": "Which report to choose",
-      "text": "• Car from a US auction (Copart, IAAI): first the free NICB and the cheap VinAudit, then AutoCheck or Carfax before bidding on a more expensive car.\n• Car from the USA when you want one report in your language: carVertical.\n• Car from Poland or neighbouring countries: autoDNA, with carVertical as a second source.\n• Car from the UK: free MOT history plus a report from a European service.\nFor a car worth tens of thousands, two reports from different services cost a fraction of a possible loss."
+      "title": "Кой доклад да изберете",
+      "text": "• Кола от търг в САЩ (Copart, IAAI): първо безплатният NICB и евтиният VinAudit, а преди наддаване за по-скъпа кола – AutoCheck или Carfax.\n• Кола от САЩ, когато искате един доклад на вашия език: carVertical.\n• Кола от Полша или съседните държави: autoDNA, а като втори източник – carVertical.\n• Кола от Великобритания: безплатна история на MOT плюс доклад от европейска услуга.\nПри кола за десетки хиляди два доклада от различни услуги струват частица от възможната загуба."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Which VIN report is best for a car from the USA?",
-      "a1": "For a car from a US auction, AutoCheck (auction history) and Carfax (accidents and servicing) give the most data. For a quick title and total-loss check, the cheaper VinAudit is enough.",
-      "q2": "Does carVertical check cars from the USA?",
-      "a2": "Yes – according to the service, the report includes US title brands (salvage, rebuilt, junk). Its US coverage is, however, smaller than that of US services.",
-      "q3": "autoDNA or carVertical – which is better?",
-      "a3": "autoDNA is stronger in Poland and Central and Eastern Europe and usually cheaper; carVertical has wider coverage in Western Europe and the USA. For a more expensive car, check both.",
-      "q4": "Will a report show photos from a Copart auction?",
-      "a4": "Sometimes – some reports include photos from earlier listings when the service has them. No service guarantees it. Save the photos of the current auction yourself, because the page disappears after the sale.",
-      "q5": "Is a free VIN report enough?",
-      "a5": "Free databases (NICB, NHTSA) show theft, total loss and recalls, but not the full accident and mileage history. A paid report is usually needed before deciding to buy.",
-      "q6": "Do you earn from these links?",
-      "a6": "For some services, yes – such links are marked as partner links. This does not affect what we recommend: the ranking is based on data coverage, not commission."
+      "title": "Често задавани въпроси",
+      "q1": "Кой VIN доклад е най-добър за кола от САЩ?",
+      "a1": "За кола от американски търг най-много данни дават AutoCheck (история на търговете) и Carfax (катастрофи и сервиз). За бърза проверка на title и тотални щети стига по-евтиният VinAudit.",
+      "q2": "Проверява ли carVertical коли от САЩ?",
+      "a2": "Да – според услугата докладът включва американските отбелязвания на title (salvage, rebuilt, junk). Обхватът за САЩ обаче е по-малък от този на американските услуги.",
+      "q3": "autoDNA или carVertical – кое е по-добро?",
+      "a3": "autoDNA е по-силна в Полша и Централна и Източна Европа и обикновено по-евтина, а carVertical има по-широк обхват в Западна Европа и САЩ. При по-скъпа кола си струва да проверите и двете.",
+      "q4": "Ще покаже ли докладът снимки от търга в Copart?",
+      "a4": "Понякога – някои доклади съдържат снимки от предишни обяви, когато услугата ги има. Никоя не го гарантира. Запазете сами снимките от текущия търг, защото страницата изчезва след продажбата.",
+      "q5": "Достатъчен ли е безплатен VIN доклад?",
+      "a5": "Безплатните бази (NICB, NHTSA) показват кражба, тотална щета и сервизни кампании, но не пълната история на катастрофите и пробега. За решение за покупка обикновено е нужен платен доклад.",
+      "q6": "Печелите ли от тези линкове?",
+      "a6": "При някои услуги да – такива линкове са отбелязани като партньорски. Това не влияе на препоръките ни: класирането се основава на обхвата на данните, а не на комисионата."
     },
-    "disclaimer": "Carglo is not affiliated with the services described. Names belong to their owners. Prices and coverage come from the services’ descriptions and comparisons from October 2026 – check the current offer before buying.",
-    "decoder": "Free VIN decoder",
+    "disclaimer": "Carglo не е свързано с описаните услуги. Имената принадлежат на собствениците им. Цените и обхватът са от описанията на услугите и сравнения от октомври 2026 г. – преди покупка проверете актуалната оферта.",
+    "decoder": "Безплатен VIN декодер",
     "mock": {
-      "title": "Vehicle history report",
-      "r1": "First registration – Florida",
-      "r2": "Odometer reading: 28,400 mi",
-      "r3": "Damage: front end, airbags deployed",
-      "r4": "Title changed to SALVAGE",
-      "r5": "Auction – 3 photos before repair",
-      "caption": "Illustration – what a history report typically looks like. Coverage depends on the service and the VIN."
+      "title": "Доклад за историята на автомобила",
+      "r1": "Първа регистрация – Флорида",
+      "r2": "Показание на километража: 28 400 мили",
+      "r3": "Щета: предна част, задействани въздушни възглавници",
+      "r4": "Title сменен на SALVAGE",
+      "r5": "Търг – 3 снимки преди ремонта",
+      "caption": "Илюстрация – така обикновено изглежда докладът за история. Обхватът зависи от услугата и от VIN."
     }
   }
 }
