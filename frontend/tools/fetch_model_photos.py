@@ -80,7 +80,7 @@ def candidates(m):
         w, h = info.get('width', 0), info.get('height', 0)
         if info.get('mime') not in ('image/jpeg', 'image/png') or not FREE.match(lic):
             continue
-        if not pinned and (w < 1600 or not 1.25 <= w / max(h, 1) <= 2.1):
+        if not pinned and (w < 1200 or not 1.25 <= w / max(h, 1) <= 2.1):
             continue
         if not pinned and not plausible(p['title'], m):
             continue
