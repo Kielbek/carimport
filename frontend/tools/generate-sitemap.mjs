@@ -24,6 +24,7 @@ const pages = [
   { key: 'glossary', slugs: slugBlock('glossary'), freq: 'monthly', priority: '0.5' },
   { key: 'contact', slugs: slugBlock('contact'), freq: 'yearly', priority: '0.4' },
   { key: 'vin', slugs: slugBlock('vin'), freq: 'monthly', priority: '0.7' },
+  { key: 'vinCompare', slugs: slugBlock('vinCompare'), freq: 'monthly', priority: '0.7' },
   { key: 'copart', slugs: slugBlock('copart'), freq: 'monthly', priority: '0.7' },
 ];
 // SEO guides: hubs and items, slugs from core/routing/guide-paths.ts and the generated guide data

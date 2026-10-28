@@ -512,7 +512,8 @@
     "glossary": "Glossario",
     "contact": "Contatti",
     "vin": "VIN check",
-    "copart": "Copart – how to buy"
+    "copart": "Copart – how to buy",
+    "vinCompare": "VIN reports compared"
   },
   "footer": {
     "about": "Calcolatore indipendente dei costi di importazione di auto da Paesi extra UE. Non vendiamo né importiamo auto – calcoliamo quanto costano davvero.",
@@ -885,6 +886,10 @@
     "copart": {
       "title": "Copart: how to buy a car from the US in Europe – fees, broker, shipping | Carglo",
       "description": "A Copart guide for buyers in Europe: account or broker, auction fees, title types, checking the car, payment, shipping and the full cost of importing."
+    },
+    "vinCompare": {
+      "title": "VIN history reports compared: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
+      "description": "Which VIN report should you buy for a car from the USA or Europe? Coverage, damage and title data, photos and prices compared: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     }
   },
   "privacy": {
@@ -2023,6 +2028,17 @@
       "a5": "Yes – stolen cars are sometimes \"cloned\" with the VIN of another car. Compare the VIN in several places on the car and in the documents, check that the year and version match, and ask for an inspection if in doubt.",
       "q6": "Does the decoder work for cars from Japan?",
       "a6": "Only if the car has a 17-character VIN. Most cars from the Japanese market have a shorter chassis number – their history is checked on the auction sheet."
+    },
+    "compareLink": "VIN report services compared – which one to choose",
+    "anatomy": {
+      "country": "country",
+      "maker": "manufacturer",
+      "vds": "vehicle description",
+      "check": "check digit",
+      "year": "model year",
+      "plant": "plant",
+      "serial": "serial number",
+      "caption": "Sample VIN {{vin}}: a Ford built in the USA, model year 2020."
     }
   },
   "copart": {
@@ -2088,6 +2104,182 @@
       "q6": "How much duty will I pay on a Copart car?",
       "a6": "As standard, 10% of the customs value (the price with fees plus transport to the EU border). US-built cars can have 0% duty from 1 July 2026 with proof of origin. VAT and national taxes come on top – the calculator works it all out."
     },
-    "disclaimer": "Carglo is not affiliated with Copart Inc. The name Copart is used only to describe the service. Auction rules and fees may change – check them on Copart's website."
+    "disclaimer": "Carglo is not affiliated with Copart Inc. The name Copart is used only to describe the service. Auction rules and fees may change – check them on Copart's website.",
+    "photoAlt": "Auction yard with damaged cars",
+    "listing": {
+      "title": "How to read a Copart listing",
+      "text": "Every lot has a number and a data sheet. The most important fields:\n• Primary / Secondary damage – the main and additional damage as reported by the insurer (e.g. Front end, Rear end, Side, Flood, Hail, Mechanical).\n• Odometer – mileage in miles marked “Actual” or “Not actual” / “Exempt”; the last two mean the reading cannot be trusted.\n• Est. Retail Value and Est. Repair Cost – the insurer’s estimates; they help gauge the damage but do not replace your own repair quote.\n• Highlights – e.g. “Run and Drive”, “Engine Starts”, “Enhanced Vehicles”.\n• Keys – whether keys are included (replacing them can be expensive).\n• Sale document / title – the document type and the state that issued it.\n• Location and Sale date – the yard you collect the car from and the auction date.\nSave the lot number and VIN – after the sale the listing disappears from public view."
+    },
+    "bidding": {
+      "title": "How the bidding works",
+      "text": "Bidding has two stages. First comes preliminary bidding – you can enter your maximum amount and the system raises your bid automatically up to that limit. Then there is a live online auction, where the highest bid wins.\nSome cars offer “Buy It Now” – an immediate purchase at the listed price.\nSet your maximum before the auction: subtract auction fees, transport, customs duty, VAT, national taxes and a repair reserve from your budget. Getting carried away in the last seconds is the most common reason for overpaying."
+    },
+    "repair": {
+      "title": "Repair – in the USA or in Europe",
+      "text": "A damaged car can be repaired while still in the USA or after it arrives. Repairing in the USA can be cheaper where used parts are easy to find, but it is harder to supervise from a distance. Repairing in Europe gives you control over quality, although some original parts for US-market cars have to be imported.\nWherever it is repaired, the car must pass a roadworthiness test in your country, and after structural damage it is worth keeping the repair paperwork and photos – they help with registration and resale."
+    },
+    "flow": {
+      "title": "Buying on Copart from Europe – step by step",
+      "s1": {
+        "title": "Choosing a car",
+        "text": "listings, photos and title type",
+        "time": "1–7 days"
+      },
+      "s2": {
+        "title": "VIN check",
+        "text": "damage history, mileage, previous auctions",
+        "time": "1 day"
+      },
+      "s3": {
+        "title": "Bidding and payment",
+        "text": "through a broker; payment within a few business days",
+        "time": "2–4 days"
+      },
+      "s4": {
+        "title": "Transport to the port",
+        "text": "truck from the Copart yard to the export port",
+        "time": "3–10 days"
+      },
+      "s5": {
+        "title": "Ocean freight",
+        "text": "container or RoRo to an EU port",
+        "time": "2–6 weeks"
+      },
+      "s6": {
+        "title": "EU customs clearance",
+        "text": "duty, import VAT, customs documents",
+        "time": "2–5 days"
+      },
+      "s7": {
+        "title": "Registration",
+        "text": "national taxes, inspection, translations",
+        "time": "1–4 weeks"
+      }
+    },
+    "costbar": {
+      "title": "Cost breakdown",
+      "price": "Car incl. auction fees",
+      "transport": "Transport and freight",
+      "duty": "Customs duty",
+      "vat": "Import VAT",
+      "national": "National taxes",
+      "registration": "Registration and other"
+    }
+  },
+  "vinCompare": {
+    "eyebrow": "Comparison",
+    "title": "VIN history reports – which service to choose for a car from the USA or Europe",
+    "lead": "We compared the most popular vehicle history report services: data coverage, US damage and title information, photos from earlier listings and prices. At the end – how to choose a report for a specific car.",
+    "checked": "Prices and coverage checked: {{date}}. Prices are indicative and may change.",
+    "eu": "EU",
+    "verdict": {
+      "us": {
+        "for": "Car from a US auction",
+        "pick": "AutoCheck or Carfax",
+        "why": "The deepest US data: damage, titles, auction and service history."
+      },
+      "eu": {
+        "for": "Car bought in Europe",
+        "pick": "carVertical or autoDNA",
+        "why": "Data from many EU countries, report in your language."
+      },
+      "budget": {
+        "for": "Quick, cheap check",
+        "pick": "VinAudit",
+        "why": "Official NMVTIS title and total-loss data for a few dollars."
+      }
+    },
+    "table": {
+      "title": "At a glance",
+      "service": "Service",
+      "regions": "Data coverage",
+      "usTitles": "US titles and total losses",
+      "photos": "Photos from history",
+      "price": "Report price",
+      "note": "“Sometimes” – photos appear when the service has them (e.g. from earlier listings or auctions). Coverage depends on the specific VIN."
+    },
+    "value": {
+      "yes": "yes",
+      "partial": "partly",
+      "no": "no",
+      "sometimes": "sometimes",
+      "unknown": "no independent data"
+    },
+    "providers": "Services one by one",
+    "visit": "Go to {{name}}",
+    "pros": "Pros",
+    "cons": "Cons",
+    "bestFor": "Best for:",
+    "p": {
+      "carvertical": {
+        "desc": "A Lithuanian service operating in many European countries and in the USA. It claims over 1,000 data sources – registries, insurers, workshops, police. For US cars it shows title brands such as salvage, rebuilt and junk.",
+        "pros": "• European and US data in one report.\n• Report and support in many EU languages.\n• Photos from history when available.",
+        "cons": "• More expensive than US budget services.\n• Less US data than Carfax or AutoCheck.",
+        "best": "buyers in Europe who want one report for a car from the USA or the EU."
+      },
+      "autodna": {
+        "desc": "A Polish service, strongest in Poland and Central and Eastern Europe. Its database covers dozens of countries in Europe and North America; reports include mileage, damage and – when available – photos.",
+        "pros": "• Very good data from Poland and the region.\n• Cheaper than carVertical, multi-report bundles.\n• Free preliminary check whether data exists.",
+        "cons": "• Less Western European data than competitors.\n• For US cars, add a US source as well.",
+        "best": "cars from Poland and neighbouring countries, and as a second source."
+      },
+      "carfax": {
+        "desc": "The best-known service in the USA. It has broad access to insurer, police and workshop records, so it shows accidents and service history best.",
+        "pros": "• The deepest US accident and service history.\n• Recognised by buyers at resale.",
+        "cons": "• The most expensive single report.\n• Weak for cars from outside the USA and Canada.",
+        "best": "more expensive US cars where service history matters."
+      },
+      "autocheck": {
+        "desc": "A service owned by Experian. Particularly strong on auction history – used by dealers and auction houses. It also gives an AutoCheck Score.",
+        "pros": "• Very good US auction data.\n• Cheaper than Carfax.",
+        "cons": "• Fewer service details than Carfax.\n• US cars only.",
+        "best": "cars from Copart and IAAI auctions."
+      },
+      "vinaudit": {
+        "desc": "An officially approved data provider for the government NMVTIS database. It shows title brands, total losses, odometer readings and theft records.",
+        "pros": "• Very cheap, bundles even cheaper.\n• Official NMVTIS title and total-loss data.",
+        "cons": "• Few details on minor accidents and servicing.\n• No photos.",
+        "best": "a quick first check of many cars before bidding."
+      },
+      "automano": {
+        "desc": "A new low-cost VIN report service. We have not yet found independent reviews or a detailed description of its data sources – treat it as a cheap first check.",
+        "pros": "• Low report price.",
+        "cons": "• Few independent reviews.\n• Data sources not disclosed.",
+        "best": "a cheap first check – for a more expensive car, also order a report from a better-known service."
+      }
+    },
+    "how": {
+      "title": "How we compared",
+      "text": "We reviewed the services’ descriptions and price lists as well as independent comparisons from October 2026. We focused on what matters most when importing a car: where the data comes from, whether the report shows US titles and total losses, whether it includes photos from history and how much a single report costs.\nWe did not test the reports on the same VINs – coverage depends on the specific car, so for a more expensive car it is worth ordering two reports from different services."
+    },
+    "free": {
+      "title": "What you can check for free",
+      "text": "Before paying for a report, check for free:\n• NICB VINCheck – whether the car was reported stolen or a total loss (USA).\n• NHTSA Recalls – open recalls for the VIN.\n• MOT history on gov.uk – for cars from the UK.\n• unofficial Copart and IAAI auction archives – sometimes show photos and the price from an earlier sale; they are not affiliated with the auctions and may disappear.\nOur free VIN decoder also reads the make, model, year, engine and country of manufacture."
+    },
+    "read": {
+      "title": "How to read a report",
+      "text": "• Compare mileage readings over the years – a drop means a rolled-back odometer.\n• Look for title brands: salvage, rebuilt, flood, junk.\n• Note the registration states – cars from Florida, Texas and Louisiana more often have flood damage.\n• Several auctions in a short time suggest the car was hard to sell.\n• No record does not mean no damage – a report only shows what was reported."
+    },
+    "choose": {
+      "title": "Which report to choose",
+      "text": "• Car from a US auction (Copart, IAAI): first the free NICB and the cheap VinAudit, then AutoCheck or Carfax before bidding on a more expensive car.\n• Car from the USA when you want one report in your language: carVertical.\n• Car from Poland or neighbouring countries: autoDNA, with carVertical as a second source.\n• Car from the UK: free MOT history plus a report from a European service.\nFor a car worth tens of thousands, two reports from different services cost a fraction of a possible loss."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "q1": "Which VIN report is best for a car from the USA?",
+      "a1": "For a car from a US auction, AutoCheck (auction history) and Carfax (accidents and servicing) give the most data. For a quick title and total-loss check, the cheaper VinAudit is enough.",
+      "q2": "Does carVertical check cars from the USA?",
+      "a2": "Yes – according to the service, the report includes US title brands (salvage, rebuilt, junk). Its US coverage is, however, smaller than that of US services.",
+      "q3": "autoDNA or carVertical – which is better?",
+      "a3": "autoDNA is stronger in Poland and Central and Eastern Europe and usually cheaper; carVertical has wider coverage in Western Europe and the USA. For a more expensive car, check both.",
+      "q4": "Will a report show photos from a Copart auction?",
+      "a4": "Sometimes – some reports include photos from earlier listings when the service has them. No service guarantees it. Save the photos of the current auction yourself, because the page disappears after the sale.",
+      "q5": "Is a free VIN report enough?",
+      "a5": "Free databases (NICB, NHTSA) show theft, total loss and recalls, but not the full accident and mileage history. A paid report is usually needed before deciding to buy.",
+      "q6": "Do you earn from these links?",
+      "a6": "For some services, yes – such links are marked as partner links. This does not affect what we recommend: the ranking is based on data coverage, not commission."
+    },
+    "disclaimer": "Carglo is not affiliated with the services described. Names belong to their owners. Prices and coverage come from the services’ descriptions and comparisons from October 2026 – check the current offer before buying.",
+    "decoder": "Free VIN decoder"
   }
 }

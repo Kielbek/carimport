@@ -512,7 +512,8 @@
     "glossary": "Słowniczek",
     "contact": "Kontakt",
     "vin": "Sprawdź VIN",
-    "copart": "Copart – jak kupić"
+    "copart": "Copart – jak kupić",
+    "vinCompare": "Raporty VIN – porównanie"
   },
   "footer": {
     "about": "Niezależny kalkulator kosztów importu samochodów spoza UE. Nie sprzedajemy ani nie sprowadzamy aut – liczymy, ile naprawdę kosztują.",
@@ -885,6 +886,10 @@
     "copart": {
       "title": "Copart: jak kupić auto z USA z Europy – opłaty, broker, transport | Carglo",
       "description": "Poradnik Copart dla kupujących z Europy: konto i broker, opłaty aukcyjne, typy title, sprawdzanie auta, płatność, wysyłka i pełny koszt sprowadzenia."
+    },
+    "vinCompare": {
+      "title": "Raporty historii VIN – porównanie: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
+      "description": "Który raport VIN wybrać do auta z USA lub z Europy? Porównanie zasięgu, danych o szkodach i title, zdjęć i cen: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     }
   },
   "privacy": {
@@ -2023,6 +2028,17 @@
       "a5": "Tak – przy kradzionych autach zdarza się „klonowanie” VIN z innego egzemplarza. Porównaj VIN w kilku miejscach auta i w dokumentach, sprawdź, czy rocznik i wersja się zgadzają, a przy wątpliwościach poproś o oględziny.",
       "q6": "Czy dekoder działa dla aut z Japonii?",
       "a6": "Tylko jeśli auto ma 17-znakowy VIN. Większość aut z rynku japońskiego ma krótszy numer nadwozia – ich historię sprawdza się w arkuszu aukcyjnym."
+    },
+    "compareLink": "Porównanie serwisów z raportami VIN – który wybrać",
+    "anatomy": {
+      "country": "kraj",
+      "maker": "producent",
+      "vds": "opis pojazdu",
+      "check": "kontrolna",
+      "year": "rocznik",
+      "plant": "fabryka",
+      "serial": "numer seryjny",
+      "caption": "Przykładowy VIN {{vin}}: Ford zbudowany w USA, rocznik 2020."
     }
   },
   "copart": {
@@ -2066,7 +2082,7 @@
     "cost": {
       "title": "Ile kosztuje auto z Copart w sumie",
       "text": "Cena z aukcji to tylko część kosztu. Dochodzą opłaty aukcyjne, transport w USA, fracht morski i ubezpieczenie, opłaty portowe, cło (10% albo 0% dla aut zbudowanych w USA z dowodem pochodzenia), VAT, podatki krajowe, transport w Europie, naprawa i rejestracja.",
-      "example": "Przykład z naszego kalkulatora: {{model}} kupiony za {{price}} kosztuje w sumie, pod drzwi w kraju: {{country}}:",
+      "example": "Przykład z naszego kalkulatora: {{model}} kupiony za {{price}} kosztuje w sumie z dostawą pod drzwi (kraj docelowy: {{country}}):",
       "breakdown": "Zobacz pełne rozbicie kosztów"
     },
     "mistakes": {
@@ -2088,6 +2104,182 @@
       "q6": "Ile zapłacę cła za auto z Copart?",
       "a6": "Standardowo 10% wartości celnej (cena z opłatami plus transport do granicy UE). Auta zbudowane w USA mogą od 1 lipca 2026 mieć cło 0% przy dowodzie pochodzenia. Do tego dochodzi VAT i podatki krajowe – wszystko policzy kalkulator."
     },
-    "disclaimer": "Carglo nie jest powiązane z Copart Inc. Nazwa Copart służy wyłącznie do opisu usługi. Zasady i opłaty aukcji mogą się zmieniać – sprawdzaj je na stronie Copart."
+    "disclaimer": "Carglo nie jest powiązane z Copart Inc. Nazwa Copart służy wyłącznie do opisu usługi. Zasady i opłaty aukcji mogą się zmieniać – sprawdzaj je na stronie Copart.",
+    "photoAlt": "Plac aukcyjny z samochodami po szkodach",
+    "listing": {
+      "title": "Jak czytać ogłoszenie na Coparcie",
+      "text": "Każdy lot ma numer i kartę z danymi. Najważniejsze pola:\n• Primary / Secondary damage – główne i dodatkowe uszkodzenie według ubezpieczyciela (np. Front end, Rear end, Side, Flood, Hail, Mechanical).\n• Odometer – przebieg w milach z dopiskiem „Actual” albo „Not actual” / „Exempt”; dwa ostatnie oznaczają, że licznikowi nie można ufać.\n• Est. Retail Value i Est. Repair Cost – szacunki ubezpieczyciela; pomagają ocenić skalę szkody, ale nie zastąpią własnej wyceny naprawy.\n• Highlights – np. „Run and Drive”, „Engine Starts”, „Enhanced Vehicles”.\n• Keys – czy są kluczyki (bez nich dorobienie bywa drogie).\n• Sale document / title – typ dokumentu i stan, który go wydał.\n• Location i Sale date – plac, z którego odbierasz auto, i termin aukcji.\nZapisz numer lotu i VIN – po sprzedaży strona aukcji znika z publicznego widoku."
+    },
+    "bidding": {
+      "title": "Jak wygląda licytacja",
+      "text": "Licytacja ma dwa etapy. Najpierw trwa licytacja wstępna (preliminary bidding) – możesz wpisać swoją maksymalną kwotę, a system sam podbija ofertę do tego limitu. Potem odbywa się aukcja na żywo online, w której wygrywa najwyższa oferta.\nPrzy części aut dostępna jest opcja „Buy It Now” – zakup od razu za podaną cenę.\nUstal maksymalną kwotę przed aukcją: odejmij od budżetu opłaty aukcyjne, transport, cło, VAT, podatki krajowe i rezerwę na naprawę. Emocje w ostatnich sekundach to najczęstszy powód przepłacenia."
+    },
+    "repair": {
+      "title": "Naprawa – w USA czy w Europie",
+      "text": "Auto po szkodzie można naprawić jeszcze w USA albo dopiero po sprowadzeniu. Naprawa w USA bywa tańsza przy dostępności używanych części, ale trudniej ją kontrolować na odległość. Naprawa w Europie daje kontrolę nad jakością, za to część oryginalnych części do aut z rynku USA trzeba sprowadzać.\nNiezależnie od miejsca naprawy auto musi przejść badanie techniczne w Twoim kraju, a przy szkodach konstrukcyjnych warto zachować dokumentację i zdjęcia z naprawy – przydadzą się przy rejestracji i sprzedaży."
+    },
+    "flow": {
+      "title": "Zakup na Coparcie z Europy – krok po kroku",
+      "s1": {
+        "title": "Wybór auta",
+        "text": "przegląd ogłoszeń, zdjęć i typu title",
+        "time": "1–7 dni"
+      },
+      "s2": {
+        "title": "Sprawdzenie VIN",
+        "text": "historia szkód, przebieg, wcześniejsze aukcje",
+        "time": "1 dzień"
+      },
+      "s3": {
+        "title": "Licytacja i płatność",
+        "text": "przez brokera; zapłata w ciągu kilku dni roboczych",
+        "time": "2–4 dni"
+      },
+      "s4": {
+        "title": "Transport do portu",
+        "text": "laweta z placu Copart do portu eksportowego",
+        "time": "3–10 dni"
+      },
+      "s5": {
+        "title": "Fracht morski",
+        "text": "kontener lub RoRo do portu w UE",
+        "time": "2–6 tygodni"
+      },
+      "s6": {
+        "title": "Odprawa w UE",
+        "text": "cło, VAT importowy, dokumenty celne",
+        "time": "2–5 dni"
+      },
+      "s7": {
+        "title": "Rejestracja",
+        "text": "podatki krajowe, badanie, tłumaczenia",
+        "time": "1–4 tygodnie"
+      }
+    },
+    "costbar": {
+      "title": "Struktura kosztu",
+      "price": "Auto z opłatami aukcji",
+      "transport": "Transport i fracht",
+      "duty": "Cło",
+      "vat": "VAT importowy",
+      "national": "Podatki krajowe",
+      "registration": "Rejestracja i inne"
+    }
+  },
+  "vinCompare": {
+    "eyebrow": "Porównanie",
+    "title": "Raporty historii VIN – który serwis wybrać do auta z USA i z Europy",
+    "lead": "Porównaliśmy najpopularniejsze serwisy z raportami historii pojazdu: zasięg danych, informacje o szkodach i title z USA, zdjęcia z wcześniejszych ogłoszeń i ceny. Na końcu – jak wybrać raport do konkretnego auta.",
+    "checked": "Ceny i zakres sprawdzone: {{date}}. Ceny są orientacyjne i mogą się zmieniać.",
+    "eu": "UE",
+    "verdict": {
+      "us": {
+        "for": "Auto z aukcji w USA",
+        "pick": "AutoCheck lub Carfax",
+        "why": "Najgłębsze dane z USA: szkody, title, historia aukcji i serwisów."
+      },
+      "eu": {
+        "for": "Auto kupowane w Europie",
+        "pick": "carVertical lub autoDNA",
+        "why": "Dane z wielu krajów UE, raport w Twoim języku."
+      },
+      "budget": {
+        "for": "Szybkie, tanie sprawdzenie",
+        "pick": "VinAudit",
+        "why": "Oficjalne dane NMVTIS o title i szkodach całkowitych za kilka dolarów."
+      }
+    },
+    "table": {
+      "title": "Porównanie w skrócie",
+      "service": "Serwis",
+      "regions": "Zasięg danych",
+      "usTitles": "Title i szkody całkowite z USA",
+      "photos": "Zdjęcia z historii",
+      "price": "Cena raportu",
+      "note": "„Czasem” – zdjęcia pojawiają się, gdy serwis je ma (np. z wcześniejszych ogłoszeń lub aukcji). Zakres danych zależy od konkretnego VIN."
+    },
+    "value": {
+      "yes": "tak",
+      "partial": "częściowo",
+      "no": "nie",
+      "sometimes": "czasem",
+      "unknown": "brak niezależnych danych"
+    },
+    "providers": "Serwisy jeden po drugim",
+    "visit": "Przejdź do {{name}}",
+    "pros": "Plusy",
+    "cons": "Minusy",
+    "bestFor": "Dla kogo:",
+    "p": {
+      "carvertical": {
+        "desc": "Litewski serwis działający w wielu krajach Europy i w USA. Deklaruje ponad 1000 źródeł danych – rejestry, ubezpieczyciele, serwisy, policja. Dla aut z USA pokazuje m.in. oznaczenia title (salvage, rebuilt, junk).",
+        "pros": "• Dane z Europy i z USA w jednym raporcie.\n• Raport i obsługa w wielu językach UE.\n• Zdjęcia z historii, gdy są dostępne.",
+        "cons": "• Droższy od amerykańskich serwisów budżetowych.\n• Zakres danych z USA mniejszy niż w Carfax czy AutoCheck.",
+        "best": "kupujących w Europie, którzy chcą jednego raportu dla auta z USA lub z UE."
+      },
+      "autodna": {
+        "desc": "Polski serwis, najmocniejszy w Polsce i Europie Środkowo-Wschodniej. Jego baza obejmuje kilkadziesiąt krajów Europy i Ameryki Północnej, raporty zawierają m.in. przebiegi, szkody i – gdy są – zdjęcia.",
+        "pros": "• Bardzo dobre dane z Polski i regionu.\n• Tańszy od carVertical, pakiety kilku raportów.\n• Darmowe wstępne sprawdzenie, czy są dane.",
+        "cons": "• Mniej danych z Europy Zachodniej niż u konkurencji.\n• Dla aut z USA warto dodatkowo sprawdzić źródło amerykańskie.",
+        "best": "aut z Polski i krajów sąsiednich oraz jako drugie źródło."
+      },
+      "carfax": {
+        "desc": "Najbardziej znany serwis w USA. Ma szeroki dostęp do raportów ubezpieczycieli, policji i serwisów, więc najlepiej pokazuje wypadki i historię przeglądów.",
+        "pros": "• Najgłębsza historia wypadków i serwisowa w USA.\n• Rozpoznawany przez kupujących przy odsprzedaży.",
+        "cons": "• Najdroższy pojedynczy raport.\n• Słaby dla aut spoza USA i Kanady.",
+        "best": "droższych aut z USA, gdy historia serwisowa ma znaczenie."
+      },
+      "autocheck": {
+        "desc": "Serwis należący do Experian. Szczególnie mocny w historii aukcyjnej – korzystają z niego dealerzy i domy aukcyjne. Daje też ocenę AutoCheck Score.",
+        "pros": "• Bardzo dobre dane o aukcjach w USA.\n• Tańszy od Carfax.",
+        "cons": "• Mniej szczegółów serwisowych niż Carfax.\n• Tylko auta z USA.",
+        "best": "aut z aukcji Copart i IAAI."
+      },
+      "vinaudit": {
+        "desc": "Oficjalnie zatwierdzony dostawca danych z rządowej bazy NMVTIS. Pokazuje oznaczenia title, szkody całkowite, odczyty przebiegu i zapisy o kradzieżach.",
+        "pros": "• Bardzo tani, pakiety jeszcze tańsze.\n• Oficjalne dane NMVTIS o title i szkodach całkowitych.",
+        "cons": "• Mało szczegółów o drobniejszych wypadkach i serwisie.\n• Bez zdjęć.",
+        "best": "szybkiego wstępnego sprawdzenia wielu aut przed licytacją."
+      },
+      "automano": {
+        "desc": "Nowy serwis z raportami VIN w niskiej cenie. Nie znaleźliśmy jeszcze niezależnych opinii ani szczegółowego opisu źródeł danych – traktuj go jako tanią wstępną weryfikację.",
+        "pros": "• Niska cena raportu.",
+        "cons": "• Mało niezależnych opinii.\n• Nie wiemy, z jakich źródeł korzysta.",
+        "best": "taniego, wstępnego sprawdzenia – przy droższym aucie zamów też raport z bardziej znanego serwisu."
+      }
+    },
+    "how": {
+      "title": "Jak porównywaliśmy",
+      "text": "Sprawdziliśmy opisy usług i cenniki serwisów oraz niezależne porównania z października 2026. Patrzyliśmy na to, co jest najważniejsze przy imporcie auta: skąd pochodzą dane, czy raport pokazuje title i szkody całkowite z USA, czy zawiera zdjęcia z historii i ile kosztuje pojedynczy raport.\nNie testowaliśmy raportów na tych samych VIN-ach – zakres danych zależy od konkretnego auta, dlatego przy droższym aucie warto zamówić dwa raporty z różnych serwisów."
+    },
+    "free": {
+      "title": "Co sprawdzisz za darmo",
+      "text": "Zanim zapłacisz za raport, sprawdź bezpłatnie:\n• NICB VINCheck – czy auto zgłoszono jako skradzione lub szkodę całkowitą (USA).\n• NHTSA Recalls – niezałatwione akcje serwisowe dla VIN.\n• historię przeglądów MOT na gov.uk – dla aut z Wielkiej Brytanii.\n• nieoficjalne archiwa aukcji Copart i IAAI – czasem pokazują zdjęcia i cenę z wcześniejszej sprzedaży; nie są powiązane z aukcjami i mogą zniknąć.\nNasz darmowy dekoder VIN odczyta też markę, model, rocznik, silnik i kraj produkcji."
+    },
+    "read": {
+      "title": "Jak czytać raport",
+      "text": "• Porównaj przebiegi z kolejnych lat – spadek oznacza cofnięty licznik.\n• Szukaj oznaczeń title: salvage, rebuilt, flood, junk.\n• Zwróć uwagę na stany rejestracji – auta z Florydy, Teksasu i Luizjany częściej mają szkody powodziowe.\n• Kilka aukcji w krótkim czasie to sygnał, że auto miało problemy ze sprzedażą.\n• Brak zapisu nie oznacza braku szkody – raport pokazuje tylko to, co zgłoszono."
+    },
+    "choose": {
+      "title": "Który raport wybrać",
+      "text": "• Auto z aukcji w USA (Copart, IAAI): najpierw darmowy NICB i tani VinAudit, a przed licytacją droższego auta – AutoCheck lub Carfax.\n• Auto z USA, gdy chcesz jednego raportu w swoim języku: carVertical.\n• Auto z Polski lub krajów sąsiednich: autoDNA, a jako drugie źródło carVertical.\n• Auto z Wielkiej Brytanii: darmowa historia MOT plus raport z serwisu europejskiego.\nPrzy aucie za kilkadziesiąt tysięcy dwa raporty z różnych serwisów kosztują ułamek możliwej straty."
+    },
+    "faq": {
+      "title": "Najczęstsze pytania",
+      "q1": "Który raport VIN jest najlepszy do auta z USA?",
+      "a1": "Do auta z amerykańskiej aukcji najwięcej danych dają AutoCheck (historia aukcji) i Carfax (wypadki i serwis). Do szybkiego sprawdzenia title i szkód całkowitych wystarczy tańszy VinAudit.",
+      "q2": "Czy carVertical sprawdza auta z USA?",
+      "a2": "Tak – według serwisu raport obejmuje m.in. oznaczenia title z USA (salvage, rebuilt, junk). Zakres danych z USA jest jednak mniejszy niż w serwisach amerykańskich.",
+      "q3": "Czy autoDNA czy carVertical – co lepsze?",
+      "a3": "autoDNA jest mocniejsze w Polsce i Europie Środkowo-Wschodniej i zwykle tańsze, carVertical ma szerszy zasięg w Europie Zachodniej i w USA. Przy droższym aucie warto sprawdzić oba.",
+      "q4": "Czy raport pokaże zdjęcia z aukcji Copart?",
+      "a4": "Czasem – niektóre raporty zawierają zdjęcia z wcześniejszych ogłoszeń, gdy serwis je ma. Pewności nie daje żaden serwis. Zdjęcia aktualnej aukcji zapisz sam, bo po sprzedaży strona znika.",
+      "q5": "Czy darmowy raport VIN wystarczy?",
+      "a5": "Darmowe bazy (NICB, NHTSA) pokażą kradzież, szkodę całkowitą i akcje serwisowe, ale nie pełną historię wypadków i przebiegu. Do decyzji o zakupie zwykle potrzebny jest płatny raport.",
+      "q6": "Czy zarabiacie na tych linkach?",
+      "a6": "Przy niektórych serwisach tak – takie linki są oznaczone jako partnerskie. Nie wpływa to na to, co polecamy: ranking opiera się na zakresie danych, a nie na prowizji."
+    },
+    "disclaimer": "Carglo nie jest powiązane z opisanymi serwisami. Nazwy należą do ich właścicieli. Ceny i zakres danych pochodzą z opisów serwisów i porównań z października 2026 – przed zakupem sprawdź aktualną ofertę.",
+    "decoder": "Darmowy dekoder VIN"
   }
 }

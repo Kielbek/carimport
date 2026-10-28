@@ -27,6 +27,7 @@ const taxes = () => import('./features/taxes/taxes-page').then((m) => m.TaxesPag
 const method = () => import('./features/method/method-page').then((m) => m.MethodPage);
 const glossary = () => import('./features/glossary/glossary-page').then((m) => m.GlossaryPage);
 const vin = () => import('./features/vin/vin-page').then((m) => m.VinPage);
+const vinCompare = () => import('./features/vin/vin-compare-page').then((m) => m.VinComparePage);
 const copart = () => import('./features/copart/copart-page').then((m) => m.CopartPage);
 const contact = () => import('./features/contact/contact-page').then((m) => m.ContactPage);
 
@@ -66,6 +67,7 @@ export const routes: Routes = [
           ...localized(SLUGS.glossary, glossary, 'glossary'),
           ...localized(SLUGS.contact, contact, 'contact'),
           ...localized(SLUGS.vin, vin, 'vin'),
+          ...localized(SLUGS.vinCompare, vinCompare, 'vinCompare'),
           ...localized(SLUGS.copart, copart, 'copart'),
           ...guides,
           {

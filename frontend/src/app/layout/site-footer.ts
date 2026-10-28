@@ -51,6 +51,7 @@ import { NewsletterSignup } from '../features/newsletter/newsletter-signup';
             }
             <li><a [routerLink]="copart()" class="hover:text-brand-text">{{ 'layout.copart' | translate }}</a></li>
             <li><a [routerLink]="vin()" class="hover:text-brand-text">{{ 'layout.vin' | translate }}</a></li>
+            <li><a [routerLink]="vinCompare()" class="hover:text-brand-text">{{ 'layout.vinCompare' | translate }}</a></li>
           </ul>
         </div>
 
@@ -119,6 +120,7 @@ export class SiteFooter {
   protected readonly taxes = computed(() => pathFor('taxes', this.lang.current()));
   protected readonly method = computed(() => pathFor('method', this.lang.current()));
   protected readonly vin = computed(() => pathFor('vin', this.lang.current()));
+  protected readonly vinCompare = computed(() => pathFor('vinCompare', this.lang.current()));
   protected readonly copart = computed(() => pathFor('copart', this.lang.current()));
   protected readonly glossary = computed(() => pathFor('glossary', this.lang.current()));
   protected readonly contact = computed(() => pathFor('contact', this.lang.current()));
