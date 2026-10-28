@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Is de berekening bindend?",
           "a": "Nee. Ze is gebaseerd op actuele tarieven en prijslijsten; de douane en de belastingdienst stellen de definitieve bedragen vast. Het pdf-rapport vermeldt elk tarief en elke aanname, zodat u kunt vergelijken."
-        }
+        },
+        "deepTitle": "Een auto importeren {{from}}: de complete gids",
+        "deepToc": "In deze gids",
+        "deepReviewed": "Gecontroleerd: {{date}}"
       },
       "USA": {
         "h1": "Een auto uit de VS naar Nederland importeren",

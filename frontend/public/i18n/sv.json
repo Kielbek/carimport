@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Är beräkningen bindande?",
           "a": "Nej. Den bygger på aktuella satser och prislistor; tull- och skattemyndigheterna fastställer de slutliga beloppen. PDF-rapporten listar varje sats och antagande så att du kan jämföra."
-        }
+        },
+        "deepTitle": "Importera bil {{from}}: den kompletta guiden",
+        "deepToc": "I den här guiden",
+        "deepReviewed": "Granskad: {{date}}"
       },
       "USA": {
         "h1": "Importera bil från USA till Sverige",

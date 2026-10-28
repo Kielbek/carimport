@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "¿Es vinculante el presupuesto?",
           "a": "No. Se basa en tarifas y listas de precios actuales; las autoridades aduaneras y tributarias fijan los importes definitivos. El informe en PDF detalla cada tipo y supuesto para que puedas compararlos."
-        }
+        },
+        "deepTitle": "Importar un coche {{from}}: la guía completa",
+        "deepToc": "En esta guía",
+        "deepReviewed": "Revisado: {{date}}"
       },
       "USA": {
         "h1": "Importar un coche de Estados Unidos a España",

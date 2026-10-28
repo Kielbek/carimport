@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Je odhad záväzný?",
           "a": "Nie. Vychádza z aktuálnych sadzieb a cenníkov; konečné sumy určujú colné a daňové úrady. PDF správa uvádza všetky sadzby a predpoklady, aby ste ich mohli porovnať."
-        }
+        },
+        "deepTitle": "Dovoz auta {{from}}: kompletný sprievodca",
+        "deepToc": "V tomto sprievodcovi",
+        "deepReviewed": "Skontrolované: {{date}}"
       },
       "USA": {
         "h1": "Dovoz auta z USA na Slovensko",

@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Ar įvertinimas yra privalomas?",
           "a": "Ne. Jis pagrįstas galiojančiais tarifais ir kainoraščiais; galutines sumas nustato muitinė ir mokesčių institucijos. PDF ataskaitoje nurodyti visi tarifai ir prielaidos, kad galėtumėte palyginti."
-        }
+        },
+        "deepTitle": "Automobilio importas {{from}}: išsamus gidas",
+        "deepToc": "Šiame gide",
+        "deepReviewed": "Patikrinta: {{date}}"
       },
       "USA": {
         "h1": "Automobilio importas iš JAV į Lietuvą",

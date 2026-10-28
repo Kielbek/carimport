@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Is the estimate binding?",
           "a": "No. It is based on current rates and price lists; customs and tax authorities decide the final amounts. The PDF report lists every rate and assumption so you can compare."
-        }
+        },
+        "deepTitle": "Importing a car {{from}}: the complete guide",
+        "deepToc": "In this guide",
+        "deepReviewed": "Reviewed: {{date}}"
       },
       "USA": {
         "h1": "Importing a car from the USA to the EU",

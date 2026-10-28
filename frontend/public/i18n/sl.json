@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Ali je ocena zavezujoča?",
           "a": "Ne. Temelji na veljavnih stopnjah in cenikih; končne zneske določijo carinski in davčni organi. Poročilo PDF navaja vse stopnje in predpostavke, da jih lahko primerjate."
-        }
+        },
+        "deepTitle": "Uvoz avtomobila {{from}}: celoten vodnik",
+        "deepToc": "V tem vodniku",
+        "deepReviewed": "Pregledano: {{date}}"
       },
       "USA": {
         "h1": "Uvoz avtomobila iz ZDA v Slovenijo",

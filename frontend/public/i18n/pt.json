@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "O orçamento é vinculativo?",
           "a": "Não. Baseia-se em taxas e tabelas de preços atuais; são as autoridades aduaneiras e tributárias que fixam os valores finais. O relatório em PDF indica todas as taxas e pressupostos para que possa comparar."
-        }
+        },
+        "deepTitle": "Importar um carro {{from}}: o guia completo",
+        "deepToc": "Neste guia",
+        "deepReviewed": "Revisto: {{date}}"
       },
       "USA": {
         "h1": "Importar um carro dos EUA para Portugal",

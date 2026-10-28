@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Je odhad závazný?",
           "a": "Ne. Vychází z aktuálních sazeb a ceníků; konečné částky určují celní a finanční úřady. PDF zpráva uvádí všechny sazby a předpoklady, abyste je mohli porovnat."
-        }
+        },
+        "deepTitle": "Dovoz auta {{from}}: kompletní průvodce",
+        "deepToc": "V tomto průvodci",
+        "deepReviewed": "Zkontrolováno: {{date}}"
       },
       "USA": {
         "h1": "Dovoz auta z USA do Česka",

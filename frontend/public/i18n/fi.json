@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Onko laskelma sitova?",
           "a": "Ei. Se perustuu voimassa oleviin verokantoihin ja hinnastoihin; lopulliset summat määräävät tulli- ja veroviranomaiset. PDF-raportissa luetellaan jokainen verokanta ja oletus, joten voit verrata niitä."
-        }
+        },
+        "deepTitle": "Auton tuonti {{from}}: kattava opas",
+        "deepToc": "Tässä oppaassa",
+        "deepReviewed": "Tarkistettu: {{date}}"
       },
       "USA": {
         "h1": "Auton tuonti Yhdysvalloista Suomeen",

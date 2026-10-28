@@ -13,6 +13,7 @@ import { IconName } from '../../shared/icon/icons';
 import { COUNTRY_FACTS } from './country-facts';
 import { GUIDE_MODELS, MODEL_EU, MODEL_EXAMPLES, MODEL_EXAMPLES_DATE } from './model-data.generated';
 import { ModelDetails } from './model-details';
+import { OriginDeepGuide } from './origin-deep-guide';
 import { GuideModel, ModelExample, ModelPhoto } from './model-types';
 import { DEPARTURE_PORTS, ORIGINS, PICKUP_ZONES } from '../calculator/calculator.options';
 import {
@@ -36,7 +37,7 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
  */
 @Component({
   selector: 'app-guide-page',
-  imports: [RouterLink, TranslatePipe, Flag, Icon, ModelDetails],
+  imports: [RouterLink, TranslatePipe, Flag, Icon, ModelDetails, OriginDeepGuide],
   template: `
     @if (ref(); as r) {
       <article class="site max-w-5xl py-10 lg:py-14">
@@ -140,6 +141,8 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
                   </div>
                 </section>
               </div>
+
+              <app-origin-deep-guide [origin]="$any(r.item)" />
             }
           }
 

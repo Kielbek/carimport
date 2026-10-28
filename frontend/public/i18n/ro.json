@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Estimarea este obligatorie?",
           "a": "Nu. Se bazează pe tarifele și listele de prețuri actuale; sumele finale sunt stabilite de autoritățile vamale și fiscale. Raportul PDF enumeră fiecare cotă și ipoteză, ca să poți compara."
-        }
+        },
+        "deepTitle": "Importul unei mașini {{from}}: ghidul complet",
+        "deepToc": "În acest ghid",
+        "deepReviewed": "Verificat: {{date}}"
       },
       "USA": {
         "h1": "Importul unei mașini din SUA în România",

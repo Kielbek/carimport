@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Czy wycena jest wiążąca?",
           "a": "Nie. Opiera się na aktualnych stawkach i cennikach; ostateczne kwoty ustalają urzędy celne i skarbowe. Raport PDF wymienia każdą stawkę i założenie, więc łatwo je porównać."
-        }
+        },
+        "deepTitle": "Import auta {{from}} – kompletny poradnik",
+        "deepToc": "W tym poradniku",
+        "deepReviewed": "Treść sprawdzona: {{date}}"
       },
       "USA": {
         "h1": "Import auta z USA do Polski",

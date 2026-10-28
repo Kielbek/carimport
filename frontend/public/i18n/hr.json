@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Je li procjena obvezujuća?",
           "a": "Nije. Temelji se na važećim stopama i cjenicima; konačne iznose određuju carinska i porezna tijela. PDF izvješće navodi svaku stopu i pretpostavku kako biste mogli usporediti."
-        }
+        },
+        "deepTitle": "Uvoz automobila {{from}}: cjeloviti vodič",
+        "deepToc": "U ovom vodiču",
+        "deepReviewed": "Provjereno: {{date}}"
       },
       "USA": {
         "h1": "Uvoz automobila iz SAD-a u Hrvatsku",

@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "L’estimation est-elle contraignante ?",
           "a": "Non. Elle repose sur les taux et tarifs actuels ; les montants définitifs sont fixés par les autorités douanières et fiscales. Le rapport PDF détaille chaque taux et hypothèse pour que vous puissiez comparer."
-        }
+        },
+        "deepTitle": "Importer une voiture {{from}} : le guide complet",
+        "deepToc": "Dans ce guide",
+        "deepReviewed": "Vérifié : {{date}}"
       },
       "USA": {
         "h1": "Importer une voiture des États-Unis en France",

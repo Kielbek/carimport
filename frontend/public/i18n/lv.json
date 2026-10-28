@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Vai aprēķins ir saistošs?",
           "a": "Nē. Tas balstās uz aktuālajām likmēm un cenrāžiem; galīgās summas nosaka muitas un nodokļu iestādes. PDF pārskatā norādītas visas likmes un pieņēmumi, lai tu varētu salīdzināt."
-        }
+        },
+        "deepTitle": "Auto imports {{from}}: pilns ceļvedis",
+        "deepToc": "Šajā ceļvedī",
+        "deepReviewed": "Pārbaudīts: {{date}}"
       },
       "USA": {
         "h1": "Auto imports no ASV uz Latviju",

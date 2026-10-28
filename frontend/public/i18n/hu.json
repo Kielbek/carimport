@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Kötelező érvényű a becslés?",
           "a": "Nem. Az aktuális díjakon és árlistákon alapul; a végső összegekről a vám- és adóhatóságok döntenek. A PDF-jelentés minden kulcsot és feltételezést felsorol, így összehasonlíthatja őket."
-        }
+        },
+        "deepTitle": "Autóimport {{from}}: a teljes útmutató",
+        "deepToc": "Ebben az útmutatóban",
+        "deepReviewed": "Ellenőrizve: {{date}}"
       },
       "USA": {
         "h1": "Autó behozatala az USA-ból Magyarországra",

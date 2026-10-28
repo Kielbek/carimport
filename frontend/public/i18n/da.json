@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Er beregningen bindende?",
           "a": "Nej. Den bygger på aktuelle satser og prislister; told- og skattemyndighederne fastsætter de endelige beløb. PDF-rapporten viser alle satser og forudsætninger, så du kan sammenligne."
-        }
+        },
+        "deepTitle": "Bilimport {{from}}: den komplette guide",
+        "deepToc": "I denne guide",
+        "deepReviewed": "Gennemgået: {{date}}"
       },
       "USA": {
         "h1": "Import af bil fra USA til Danmark",

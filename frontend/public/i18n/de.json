@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Ist die Kalkulation verbindlich?",
           "a": "Nein. Sie basiert auf aktuellen Sätzen und Preislisten; die endgültigen Beträge legen Zoll- und Steuerbehörden fest. Der PDF-Bericht listet jeden Satz und jede Annahme auf, damit Sie vergleichen können."
-        }
+        },
+        "deepTitle": "Autoimport {{from}}: der komplette Ratgeber",
+        "deepToc": "In diesem Ratgeber",
+        "deepReviewed": "Geprüft: {{date}}"
       },
       "USA": {
         "h1": "Auto aus den USA nach Deutschland importieren",

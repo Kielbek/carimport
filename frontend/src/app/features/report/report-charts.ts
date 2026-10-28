@@ -88,7 +88,7 @@ export class ReportHeading {
         </div>
         <div>
           <dt class="text-[11px] font-semibold uppercase tracking-[0.14em] text-fg/50">{{ 'report.charts.taxes' | translate }}</dt>
-          <dd class="mt-1.5 text-xl font-bold tabular-nums">{{ (main().totalsByCategory.TAXES?.amount ?? 0) | money: cur() : locale() }}</dd>
+          <dd class="mt-1.5 text-xl font-bold tabular-nums">{{ main().totalsByCategory.TAXES.amount | money: cur() : locale() }}</dd>
           <dd class="mt-0.5 text-xs text-fg/50">HS {{ main().hsCode }}</dd>
         </div>
         <div>

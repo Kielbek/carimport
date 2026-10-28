@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Il preventivo è vincolante?",
           "a": "No. Si basa su tariffe e listini attuali; gli importi definitivi sono stabiliti dalle autorità doganali e fiscali. Il report PDF elenca ogni aliquota e ipotesi, così puoi confrontarle."
-        }
+        },
+        "deepTitle": "Importare un'auto {{from}}: la guida completa",
+        "deepToc": "In questa guida",
+        "deepReviewed": "Verificato: {{date}}"
       },
       "USA": {
         "h1": "Importare un'auto dagli Stati Uniti in Italia",

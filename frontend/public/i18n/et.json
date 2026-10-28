@@ -1250,7 +1250,10 @@
         "faqBinding": {
           "q": "Kas hinnang on siduv?",
           "a": "Ei. See põhineb kehtivatel määradel ja hinnakirjadel; lõplikud summad määravad toll ja maksuamet. PDF-aruanne loetleb kõik määrad ja eeldused, et saaksid võrrelda."
-        }
+        },
+        "deepTitle": "Auto import {{from}}: täielik juhend",
+        "deepToc": "Selles juhendis",
+        "deepReviewed": "Üle vaadatud: {{date}}"
       },
       "USA": {
         "h1": "Auto import USAst Eestisse",
