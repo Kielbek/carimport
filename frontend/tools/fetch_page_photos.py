@@ -13,11 +13,13 @@ from fetch_model_photos import FREE, query, save, text
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'public' / 'images' / 'pages'
 DATA = ROOT / 'tools' / 'page-photos.json'
-MAX = 4
+MAX = 6
 PAGES = {
-    'copart': ['Copart', 'Copart auction yard', 'salvage auction cars', 'insurance auto auction'],
-    'vin': ['vehicle identification number plate', 'VIN plate windshield', 'VIN number car'],
+    'copart': ['incategory:Copart', 'incategory:"Car auctions"', 'incategory:"Salvage yards in the United States"',
+               'damaged cars salvage yard', 'wrecked cars lot'],
+    'vin': ['incategory:"Vehicle identification numbers"', 'VIN dashboard windshield car', 'VIN sticker door jamb'],
 }
+SKIP = ('race', 'nascar', 'speedway', 'bus', 'truck', 'locomotive', 'tram', 'motorcycle')
 
 
 def candidates(searches):
@@ -31,7 +33,7 @@ def candidates(searches):
             meta = info.get('extmetadata', {})
             lic = text(meta, 'LicenseShortName')
             w, h = info.get('width', 0), info.get('height', 0)
-            if p['title'] in seen or info.get('mime') not in ('image/jpeg', 'image/png') or not FREE.match(lic):
+            if p['title'] in seen or any(w in p['title'].lower() for w in SKIP) or info.get('mime') not in ('image/jpeg', 'image/png') or not FREE.match(lic):
                 continue
             if w < 1200 or not 1.2 <= w / max(h, 1) <= 2.1:
                 continue
