@@ -1810,12 +1810,14 @@
       "vat": "Europeiska kommissionen – momssatser och skatter i medlemsländerna."
     },
     "changes": {
-      "title": "Ändringslogg",
-      "text": "Vad vi har ändrat i beräkningsreglerna och när:",
-      "c20261028": "Utökad metod: exempel steg för steg, tabell med 27 länder, källor.",
-      "c20261026": "0 % tull för bilar tillverkade i USA, Kanada, Japan och Storbritannien med ursprungsbevis; egen sats för pickuper; ingen polsk punktskatt på samlarfordon.",
-      "c20261025": "Formler för registreringsskatten i Slovakien, Litauen och Ungern; bekräftat att Lettland inte tar ut någon.",
-      "c20261024": "Registreringsskatt för varje EU-land; tullvärde till månadens tullkurs."
+      "title": "Regeländringar och uppdateringar",
+      "text": "De viktigaste lagändringarna som kalkylatorn tillämpar och våra egna uppdateringar:",
+      "c202610": "Carglo-uppdatering: kalkylatorn tillämpar alla ändringar nedan – 0 % tull med ursprungsbevis, registreringsskatter i 27 EU-länder och månadens tullkurs; utökad metod.",
+      "c20260701": "USA: förordning (EU) 2026/1455 – 0 % tull på bilar tillverkade i USA och skickade direkt därifrån, till slutet av 2029.",
+      "c20260101": "Japan: den stegvisa sänkningen av biltullen i avtalet om ekonomiskt partnerskap är klar – bilar med japanskt ursprung har 0 % tull.",
+      "c20210101": "Storbritannien: efter brexit gäller handels- och samarbetsavtalet – bilar måste förtullas, men de som uppfyller ursprungsreglerna har 0 % tull.",
+      "c20190201": "Japan: avtalet om ekonomiskt partnerskap mellan EU och Japan träder i kraft – den stegvisa sänkningen av biltullen börjar.",
+      "c20170921": "Kanada: CETA börjar tillämpas – 0 % tull på bilar tillverkade i Kanada."
     },
     "limits": {
       "title": "Vad beräkningen inte vet",

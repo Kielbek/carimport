@@ -1810,12 +1810,14 @@
       "vat": "Komisja Europejska – stawki VAT i podatki w krajach członkowskich."
     },
     "changes": {
-      "title": "Historia zmian",
-      "text": "Co i kiedy zmieniliśmy w zasadach wyliczenia:",
-      "c20261028": "Rozszerzona metodologia: przykład krok po kroku, tabela 27 krajów, źródła.",
-      "c20261026": "Cło 0% dla aut wyprodukowanych w USA, Kanadzie, Japonii i Wielkiej Brytanii przy dowodzie pochodzenia; osobna stawka dla pick-upów; brak polskiej akcyzy na pojazdy kolekcjonerskie.",
-      "c20261025": "Wzory podatku rejestracyjnego dla Słowacji, Litwy i Węgier; potwierdzenie, że Łotwa go nie pobiera.",
-      "c20261024": "Podatek rejestracyjny dla każdego kraju UE; wartość celna po kursie celnym miesiąca."
+      "title": "Zmiany przepisów i aktualizacje",
+      "text": "Najważniejsze zmiany prawa, które uwzględnia kalkulator, i nasze aktualizacje:",
+      "c202610": "Aktualizacja Carglo: kalkulator uwzględnia wszystkie zmiany poniżej – cło 0% przy dowodzie pochodzenia, podatki rejestracyjne 27 krajów UE i kurs celny miesiąca; rozszerzona metodologia.",
+      "c20260701": "USA: rozporządzenie (UE) 2026/1455 – cło 0% na auta wyprodukowane w USA i wysłane bezpośrednio stamtąd, do końca 2029.",
+      "c20260101": "Japonia: koniec stopniowego obniżania cła na samochody w umowie o partnerstwie gospodarczym – auta japońskiego pochodzenia mają cło 0%.",
+      "c20210101": "Wielka Brytania: po brexicie obowiązuje umowa o handlu i współpracy – auta wymagają odprawy celnej, ale te spełniające reguły pochodzenia mają cło 0%.",
+      "c20190201": "Japonia: weszła w życie umowa o partnerstwie gospodarczym UE–Japonia – początek stopniowego obniżania cła na samochody.",
+      "c20170921": "Kanada: rozpoczęło się stosowanie umowy CETA – cło 0% na auta wyprodukowane w Kanadzie."
     },
     "limits": {
       "title": "Czego wyliczenie nie wie",

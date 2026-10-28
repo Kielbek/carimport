@@ -1810,12 +1810,14 @@
       "vat": "Euroopa Komisjon – käibemaksumäärad ja maksud liikmesriikides."
     },
     "changes": {
-      "title": "Muudatuste ajalugu",
-      "text": "Mida ja millal oleme arvutusreeglites muutnud:",
-      "c20261028": "Laiendatud metoodika: näide samm-sammult, 27 riigi tabel, allikad.",
-      "c20261026": "0% toll USAs, Kanadas, Jaapanis ja Ühendkuningriigis valmistatud autodele päritolutõendiga; eraldi määr pikapitele; Poola aktsiisi ei rakendata kollektsioonisõidukitele.",
-      "c20261025": "Registreerimismaksu valemid Slovakkiale, Leedule ja Ungarile; kinnitatud, et Läti seda ei võta.",
-      "c20261024": "Registreerimismaks igale ELi riigile; tolliväärtus kuu tollikursiga."
+      "title": "Reeglite muudatused ja uuendused",
+      "text": "Olulisemad seadusemuudatused, mida kalkulaator arvestab, ja meie enda uuendused:",
+      "c202610": "Carglo uuendus: kalkulaator arvestab kõiki allolevaid muudatusi – 0% toll päritolutõendiga, 27 ELi riigi registreerimismaksud ja kuu tollikurss; laiendatud metoodika.",
+      "c20260701": "USA: määrus (EL) 2026/1455 – 0% toll USAs valmistatud ja otse sealt saadetud autodele kuni 2029. aasta lõpuni.",
+      "c20260101": "Jaapan: majanduspartnerluse lepingu kohane autode tolli järkjärguline vähendamine lõpeb – Jaapani päritolu autode toll on 0%.",
+      "c20210101": "Ühendkuningriik: pärast Brexitit kehtib kaubandus- ja koostööleping – autod tuleb tollivormistada, kuid päritolureeglitele vastavate autode toll on 0%.",
+      "c20190201": "Jaapan: jõustub ELi–Jaapani majanduspartnerluse leping – algab autode tolli järkjärguline vähendamine.",
+      "c20170921": "Kanada: CETA kohaldamine algab – 0% toll Kanadas valmistatud autodele."
     },
     "limits": {
       "title": "Mida arvutus ei tea",

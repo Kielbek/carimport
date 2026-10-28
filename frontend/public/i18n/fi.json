@@ -1810,12 +1810,14 @@
       "vat": "Euroopan komissio – arvonlisäverokannat ja verot jäsenvaltioissa."
     },
     "changes": {
-      "title": "Muutoshistoria",
-      "text": "Mitä olemme muuttaneet laskentasäännöissä ja milloin:",
-      "c20261028": "Laajennettu menetelmäkuvaus: esimerkki vaihe vaiheelta, 27 maan taulukko, lähteet.",
-      "c20261026": "0 %:n tulli Yhdysvalloissa, Kanadassa, Japanissa ja Yhdistyneessä kuningaskunnassa valmistetuille autoille alkuperäselvityksellä; oma verokanta avolava-autoille; ei Puolan valmisteveroa keräilyajoneuvoille.",
-      "c20261025": "Rekisteröintiveron kaavat Slovakialle, Liettualle ja Unkarille; vahvistettu, ettei Latvia peri sitä.",
-      "c20261024": "Rekisteröintivero jokaiselle EU-maalle; tullausarvo kuukauden tullikurssilla."
+      "title": "Sääntömuutokset ja päivitykset",
+      "text": "Tärkeimmät lakimuutokset, joita laskuri soveltaa, ja omat päivityksemme:",
+      "c202610": "Carglon päivitys: laskuri soveltaa kaikkia alla olevia muutoksia – 0 %:n tulli alkuperäselvityksellä, 27 EU-maan rekisteröintiverot ja kuukauden tullikurssi; laajennettu menetelmäkuvaus.",
+      "c20260701": "Yhdysvallat: asetus (EU) 2026/1455 – 0 %:n tulli Yhdysvalloissa valmistetuille ja suoraan sieltä lähetetyille autoille vuoden 2029 loppuun.",
+      "c20260101": "Japani: talouskumppanuussopimuksen mukainen autojen tullin asteittainen alentaminen päättyy – japanilaista alkuperää olevien autojen tulli on 0 %.",
+      "c20210101": "Yhdistynyt kuningaskunta: brexitin jälkeen sovelletaan kauppa- ja yhteistyösopimusta – autot on tulliselvitettävä, mutta alkuperäsäännöt täyttävien tulli on 0 %.",
+      "c20190201": "Japani: EU:n ja Japanin talouskumppanuussopimus tulee voimaan – autojen tullin asteittainen alentaminen alkaa.",
+      "c20170921": "Kanada: CETA-sopimusta aletaan soveltaa – 0 %:n tulli Kanadassa valmistetuille autoille."
     },
     "limits": {
       "title": "Mitä laskelma ei tiedä",

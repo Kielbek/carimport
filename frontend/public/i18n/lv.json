@@ -1810,12 +1810,14 @@
       "vat": "Eiropas Komisija – PVN likmes un nodokļi dalībvalstīs."
     },
     "changes": {
-      "title": "Izmaiņu vēsture",
-      "text": "Ko un kad esam mainījuši aprēķina noteikumos:",
-      "c20261028": "Paplašināta metodika: piemērs soli pa solim, 27 valstu tabula, avoti.",
-      "c20261026": "0 % muita ASV, Kanādā, Japānā un Apvienotajā Karalistē ražotiem auto ar izcelsmes apliecinājumu; atsevišķa likme pikapiem; bez Polijas akcīzes kolekcijas transportlīdzekļiem.",
-      "c20261025": "Reģistrācijas nodokļa formulas Slovākijai, Lietuvai un Ungārijai; apstiprināts, ka Latvija to neiekasē.",
-      "c20261024": "Reģistrācijas nodoklis katrai ES valstij; muitas vērtība pēc mēneša muitas kursa."
+      "title": "Noteikumu izmaiņas un atjauninājumi",
+      "text": "Svarīgākās tiesību izmaiņas, ko piemēro kalkulators, un mūsu atjauninājumi:",
+      "c202610": "Carglo atjauninājums: kalkulators piemēro visas tālāk minētās izmaiņas – 0 % muita ar izcelsmes apliecinājumu, 27 ES valstu reģistrācijas nodokļi un mēneša muitas kurss; paplašināta metodika.",
+      "c20260701": "ASV: Regula (ES) 2026/1455 – 0 % muita ASV ražotiem un tieši no turienes nosūtītiem auto līdz 2029. gada beigām.",
+      "c20260101": "Japāna: noslēdzas pakāpeniska auto muitas samazināšana saskaņā ar Ekonomiskā partnerattiecību nolīgumu – Japānas izcelsmes auto muita ir 0 %.",
+      "c20210101": "Apvienotā Karaliste: pēc „Brexit“ piemēro Tirdzniecības un sadarbības nolīgumu – auto jāmuito, bet tiem, kas atbilst izcelsmes noteikumiem, muita ir 0 %.",
+      "c20190201": "Japāna: stājas spēkā ES un Japānas ekonomiskā partnerattiecību nolīgums – sākas pakāpeniska auto muitas samazināšana.",
+      "c20170921": "Kanāda: sāk piemērot CETA – 0 % muita Kanādā ražotiem auto."
     },
     "limits": {
       "title": "Ko aprēķins nezina",

@@ -1810,12 +1810,14 @@
       "vat": "De Europese Commissie – btw-tarieven en belastingen in de lidstaten."
     },
     "changes": {
-      "title": "Wijzigingsgeschiedenis",
-      "text": "Wat we wanneer hebben gewijzigd aan de rekenregels:",
-      "c20261028": "Uitgebreide methodiek: voorbeeld stap voor stap, tabel met 27 landen, bronnen.",
-      "c20261026": "Invoerrecht van 0% voor auto’s gemaakt in de VS, Canada, Japan en het Verenigd Koninkrijk met bewijs van oorsprong; apart tarief voor pick-ups; geen Poolse accijns op verzamelvoertuigen.",
-      "c20261025": "Formules voor de registratiebelasting van Slowakije, Litouwen en Hongarije; bevestigd dat Letland er geen heft.",
-      "c20261024": "Registratiebelasting voor elk EU-land; douanewaarde tegen de douanewisselkoers van de maand."
+      "title": "Regelwijzigingen en updates",
+      "text": "De belangrijkste wetswijzigingen die de calculator toepast, en onze eigen updates:",
+      "c202610": "Update van Carglo: de calculator past alle wijzigingen hieronder toe – 0% invoerrecht met bewijs van oorsprong, registratiebelastingen van 27 EU-landen en de douanewisselkoers van de maand; uitgebreide methodiek.",
+      "c20260701": "VS: Verordening (EU) 2026/1455 – 0% invoerrecht op auto’s die in de VS zijn gemaakt en rechtstreeks vandaar worden verscheept, tot eind 2029.",
+      "c20260101": "Japan: de geleidelijke verlaging van het invoerrecht op auto’s uit de Economische Partnerschapsovereenkomst is afgerond – auto’s van Japanse oorsprong hebben 0% invoerrecht.",
+      "c20210101": "Verenigd Koninkrijk: na de brexit geldt de Handels- en Samenwerkingsovereenkomst – auto’s moeten worden ingeklaard, maar wie aan de oorsprongsregels voldoet, betaalt 0% invoerrecht.",
+      "c20190201": "Japan: de Economische Partnerschapsovereenkomst EU–Japan treedt in werking – de geleidelijke verlaging van het invoerrecht op auto’s begint.",
+      "c20170921": "Canada: CETA wordt toegepast – 0% invoerrecht op auto’s gemaakt in Canada."
     },
     "limits": {
       "title": "Wat de berekening niet weet",

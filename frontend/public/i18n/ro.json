@@ -1810,12 +1810,14 @@
       "vat": "Comisia Europeană – cote TVA și taxe în statele membre."
     },
     "changes": {
-      "title": "Istoricul modificărilor",
-      "text": "Ce și când am schimbat în regulile de calcul:",
-      "c20261028": "Metodologie extinsă: exemplu pas cu pas, tabel cu 27 de țări, surse.",
-      "c20261026": "Taxă vamală 0% pentru mașinile fabricate în SUA, Canada, Japonia și Regatul Unit cu dovada originii; cotă separată pentru pick-up-uri; fără acciza poloneză pe vehiculele de colecție.",
-      "c20261025": "Formulele taxei de înmatriculare pentru Slovacia, Lituania și Ungaria; confirmat că Letonia nu percepe una.",
-      "c20261024": "Taxă de înmatriculare pentru fiecare țară UE; valoarea în vamă la cursul vamal al lunii."
+      "title": "Modificări ale regulilor și actualizări",
+      "text": "Principalele schimbări legale aplicate de calculator și propriile noastre actualizări:",
+      "c202610": "Actualizare Carglo: calculatorul aplică toate schimbările de mai jos – taxă vamală 0% cu dovada originii, taxele de înmatriculare din 27 de țări UE și cursul vamal al lunii; metodologie extinsă.",
+      "c20260701": "SUA: Regulamentul (UE) 2026/1455 – taxă vamală 0% pentru mașinile fabricate în SUA și expediate direct de acolo, până la sfârșitul lui 2029.",
+      "c20260101": "Japonia: se încheie reducerea treptată a taxei vamale pe mașini din Acordul de parteneriat economic – mașinile de origine japoneză au taxă vamală 0%.",
+      "c20210101": "Regatul Unit: după Brexit se aplică Acordul comercial și de cooperare – mașinile trebuie vămuite, dar cele care respectă regulile de origine au taxă vamală 0%.",
+      "c20190201": "Japonia: intră în vigoare Acordul de parteneriat economic UE–Japonia – începe reducerea treptată a taxei vamale pe mașini.",
+      "c20170921": "Canada: începe aplicarea CETA – taxă vamală 0% pentru mașinile fabricate în Canada."
     },
     "limits": {
       "title": "Ce nu știe calculul",

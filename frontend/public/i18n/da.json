@@ -1810,12 +1810,14 @@
       "vat": "Europa-Kommissionen – momssatser og skatter i medlemslandene."
     },
     "changes": {
-      "title": "Ændringslog",
-      "text": "Hvad vi har ændret i beregningsreglerne, og hvornår:",
-      "c20261028": "Udvidet metode: eksempel trin for trin, tabel med 27 lande, kilder.",
-      "c20261026": "0 % told for biler fremstillet i USA, Canada, Japan og Storbritannien med oprindelsesbevis; egen sats for pickupper; ingen polsk punktafgift på samlerkøretøjer.",
-      "c20261025": "Formler for registreringsafgiften i Slovakiet, Litauen og Ungarn; bekræftet, at Letland ikke opkræver en.",
-      "c20261024": "Registreringsafgift for hvert EU-land; toldværdi til månedens toldkurs."
+      "title": "Regelændringer og opdateringer",
+      "text": "De vigtigste lovændringer, som beregneren anvender, og vores egne opdateringer:",
+      "c202610": "Carglo-opdatering: beregneren anvender alle ændringerne nedenfor – 0 % told med oprindelsesbevis, registreringsafgifter i 27 EU-lande og månedens toldkurs; udvidet metode.",
+      "c20260701": "USA: forordning (EU) 2026/1455 – 0 % told på biler fremstillet i USA og sendt direkte derfra, indtil udgangen af 2029.",
+      "c20260101": "Japan: den gradvise nedsættelse af biltolden i aftalen om økonomisk partnerskab er afsluttet – biler med japansk oprindelse har 0 % told.",
+      "c20210101": "Storbritannien: efter brexit gælder handels- og samarbejdsaftalen – biler skal fortoldes, men dem, der opfylder oprindelsesreglerne, har 0 % told.",
+      "c20190201": "Japan: aftalen om økonomisk partnerskab mellem EU og Japan træder i kraft – den gradvise nedsættelse af biltolden begynder.",
+      "c20170921": "Canada: CETA begynder at gælde – 0 % told på biler fremstillet i Canada."
     },
     "limits": {
       "title": "Hvad beregningen ikke ved",

@@ -31,8 +31,11 @@ const SOURCES: readonly { key: string; name: string; url: string }[] = [
   { key: 'vat', name: 'Taxation and Customs Union', url: 'https://taxation-customs.ec.europa.eu' },
 ];
 
-/** Dated changes to the rules the calculator applies (newest first), taken from the project history. */
-const CHANGES = ['2026-10-28', '2026-10-26', '2026-10-25', '2026-10-24'];
+/**
+ * Dated changes to the rules the calculator applies, newest first: the law (real effective dates) and our own update.
+ * A month-only date ("2026-10") is shown as month and year.
+ */
+const CHANGES = ['2026-10', '2026-07-01', '2026-01-01', '2021-01-01', '2019-02-01', '2017-09-21'];
 
 /** How the calculation works: a worked example, the rules, sources and limits - the trust page for search and buyers. */
 @Component({
@@ -159,7 +162,7 @@ const CHANGES = ['2026-10-28', '2026-10-26', '2026-10-25', '2026-10-24'];
               @for (d of changes; track d) {
                 <li class="relative pb-4 pl-5">
                   <span class="absolute -left-[7px] top-1.5 h-3 w-3 rounded-full bg-brand"></span>
-                  <time [attr.datetime]="d" class="text-sm font-bold">{{ date(d) }}</time>
+                  <time [attr.datetime]="d" class="text-sm font-bold">{{ d.length === 7 ? month(d) : date(d) }}</time>
                   <p class="mt-1 text-sm text-fg/85">{{ 'method.changes.c' + d.replaceAll('-', '') | translate }}</p>
                 </li>
               }
@@ -290,6 +293,10 @@ export class MethodPage {
 
   protected pct(rate: number): string {
     return new Intl.NumberFormat(this.lang.locale(), { style: 'percent', maximumFractionDigits: 1 }).format(rate);
+  }
+
+  protected month(iso: string): string {
+    return new Intl.DateTimeFormat(this.lang.locale(), { month: 'long', year: 'numeric' }).format(new Date(iso + '-15T12:00:00Z'));
   }
 
   protected date(iso: string): string {

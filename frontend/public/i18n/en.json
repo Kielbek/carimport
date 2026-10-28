@@ -1810,12 +1810,14 @@
       "vat": "The European Commission – VAT rates and taxes in the member states."
     },
     "changes": {
-      "title": "Change log",
-      "text": "What we changed in the calculation rules, and when:",
-      "c20261028": "Extended methodology: worked example, table of 27 countries, sources.",
-      "c20261026": "0% duty for cars made in the US, Canada, Japan and the United Kingdom with proof of origin; separate rate for pickups; no Polish excise on collector's vehicles.",
-      "c20261025": "Registration tax formulas for Slovakia, Lithuania and Hungary; confirmed that Latvia charges none.",
-      "c20261024": "Registration tax for every EU country; customs value at the month's customs exchange rate."
+      "title": "Rule changes and updates",
+      "text": "The main legal changes the calculator applies, and our own updates:",
+      "c202610": "Carglo update: the calculator applies all the changes below – 0% duty with proof of origin, registration taxes for 27 EU countries and the month's customs exchange rate; extended methodology.",
+      "c20260701": "USA: Regulation (EU) 2026/1455 – 0% duty on cars made in the US and shipped directly from there, until the end of 2029.",
+      "c20260101": "Japan: the step-by-step cut in car duty under the Economic Partnership Agreement is complete – cars of Japanese origin have 0% duty.",
+      "c20210101": "United Kingdom: after Brexit the Trade and Cooperation Agreement applies – cars need customs clearance, but those meeting the rules of origin have 0% duty.",
+      "c20190201": "Japan: the EU–Japan Economic Partnership Agreement enters into force – the gradual cut in car duty begins.",
+      "c20170921": "Canada: CETA starts to apply – 0% duty on cars made in Canada."
     },
     "limits": {
       "title": "What the calculation does not know",

@@ -1810,12 +1810,14 @@
       "vat": "Europäische Kommission – Mehrwertsteuersätze und Steuern in den Mitgliedstaaten."
     },
     "changes": {
-      "title": "Änderungsverlauf",
-      "text": "Was wir an den Berechnungsregeln wann geändert haben:",
-      "c20261028": "Erweiterte Methodik: Beispiel Schritt für Schritt, Tabelle mit 27 Ländern, Quellen.",
-      "c20261026": "0 % Zoll für in den USA, Kanada, Japan und im Vereinigten Königreich hergestellte Autos mit Ursprungsnachweis; eigener Satz für Pick-ups; keine polnische Verbrauchsteuer auf Sammlerfahrzeuge.",
-      "c20261025": "Formeln der Zulassungssteuer für die Slowakei, Litauen und Ungarn; bestätigt, dass Lettland keine erhebt.",
-      "c20261024": "Zulassungssteuer für jedes EU-Land; Zollwert zum Zollkurs des Monats."
+      "title": "Rechtsänderungen und Aktualisierungen",
+      "text": "Die wichtigsten Rechtsänderungen, die der Rechner berücksichtigt, und unsere eigenen Aktualisierungen:",
+      "c202610": "Carglo-Aktualisierung: Der Rechner berücksichtigt alle Änderungen unten – 0 % Zoll mit Ursprungsnachweis, Zulassungssteuern in 27 EU-Ländern und den Zollkurs des Monats; erweiterte Methodik.",
+      "c20260701": "USA: Verordnung (EU) 2026/1455 – 0 % Zoll auf in den USA hergestellte und direkt von dort versandte Autos, bis Ende 2029.",
+      "c20260101": "Japan: Der schrittweise Abbau des Autozolls im Wirtschaftspartnerschaftsabkommen ist abgeschlossen – Autos japanischen Ursprungs haben 0 % Zoll.",
+      "c20210101": "Vereinigtes Königreich: Nach dem Brexit gilt das Handels- und Kooperationsabkommen – Autos müssen verzollt werden, aber bei Erfüllung der Ursprungsregeln gilt 0 % Zoll.",
+      "c20190201": "Japan: Das Wirtschaftspartnerschaftsabkommen EU–Japan tritt in Kraft – der schrittweise Abbau des Autozolls beginnt.",
+      "c20170921": "Kanada: CETA wird angewendet – 0 % Zoll auf in Kanada hergestellte Autos."
     },
     "limits": {
       "title": "Was die Berechnung nicht weiß",

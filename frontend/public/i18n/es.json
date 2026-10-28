@@ -1810,12 +1810,14 @@
       "vat": "La Comisión Europea – tipos de IVA e impuestos en los Estados miembros."
     },
     "changes": {
-      "title": "Historial de cambios",
-      "text": "Qué hemos cambiado en las reglas de cálculo y cuándo:",
-      "c20261028": "Metodología ampliada: ejemplo paso a paso, tabla de 27 países, fuentes.",
-      "c20261026": "Arancel del 0 % para coches fabricados en EE. UU., Canadá, Japón y el Reino Unido con prueba de origen; tipo propio para pickups; sin impuesto especial polaco para vehículos de colección.",
-      "c20261025": "Fórmulas del impuesto de matriculación de Eslovaquia, Lituania y Hungría; confirmado que Letonia no lo cobra.",
-      "c20261024": "Impuesto de matriculación para cada país de la UE; valor en aduana al tipo de cambio aduanero del mes."
+      "title": "Cambios normativos y actualizaciones",
+      "text": "Los principales cambios legales que aplica la calculadora y nuestras propias actualizaciones:",
+      "c202610": "Actualización de Carglo: la calculadora aplica todos los cambios de abajo – arancel del 0 % con prueba de origen, impuestos de matriculación de 27 países de la UE y tipo de cambio aduanero del mes; metodología ampliada.",
+      "c20260701": "EE. UU.: Reglamento (UE) 2026/1455 – arancel del 0 % para coches fabricados en EE. UU. y enviados directamente desde allí, hasta finales de 2029.",
+      "c20260101": "Japón: concluye la reducción gradual del arancel de los coches del Acuerdo de Asociación Económica – los coches de origen japonés tienen arancel del 0 %.",
+      "c20210101": "Reino Unido: tras el Brexit se aplica el Acuerdo de Comercio y Cooperación – los coches necesitan despacho aduanero, pero los que cumplen las normas de origen tienen arancel del 0 %.",
+      "c20190201": "Japón: entra en vigor el Acuerdo de Asociación Económica UE–Japón – empieza la reducción gradual del arancel de los coches.",
+      "c20170921": "Canadá: empieza a aplicarse el CETA – arancel del 0 % para coches fabricados en Canadá."
     },
     "limits": {
       "title": "Lo que el cálculo no sabe",

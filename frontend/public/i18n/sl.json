@@ -1810,12 +1810,14 @@
       "vat": "Evropska komisija – stopnje DDV in davki v državah članicah."
     },
     "changes": {
-      "title": "Zgodovina sprememb",
-      "text": "Kaj in kdaj smo spremenili v pravilih izračuna:",
-      "c20261028": "Razširjena metodologija: primer po korakih, tabela 27 držav, viri.",
-      "c20261026": "Carina 0 % za avtomobile, izdelane v ZDA, Kanadi, na Japonskem in v Združenem kraljestvu, z dokazilom o poreklu; ločena stopnja za pick-upe; brez poljske trošarine na zbirateljska vozila.",
-      "c20261025": "Formule davka ob registraciji za Slovaško, Litvo in Madžarsko; potrjeno, da ga Latvija ne pobira.",
-      "c20261024": "Davek ob registraciji za vsako državo EU; carinska vrednost po carinskem tečaju meseca."
+      "title": "Spremembe predpisov in posodobitve",
+      "text": "Najpomembnejše zakonske spremembe, ki jih upošteva kalkulator, in naše posodobitve:",
+      "c202610": "Posodobitev Carglo: kalkulator upošteva vse spremembe spodaj – carina 0 % z dokazilom o poreklu, davki ob registraciji v 27 državah EU in carinski tečaj meseca; razširjena metodologija.",
+      "c20260701": "ZDA: Uredba (EU) 2026/1455 – carina 0 % za avtomobile, izdelane v ZDA in poslane neposredno od tam, do konca leta 2029.",
+      "c20260101": "Japonska: končuje se postopno zniževanje carine na avtomobile iz Sporazuma o gospodarskem partnerstvu – avtomobili japonskega porekla imajo carino 0 %.",
+      "c20210101": "Združeno kraljestvo: po brexitu velja Sporazum o trgovini in sodelovanju – avtomobile je treba ocariniti, a tisti, ki izpolnjujejo pravila o poreklu, imajo carino 0 %.",
+      "c20190201": "Japonska: začne veljati Sporazum o gospodarskem partnerstvu EU–Japonska – začne se postopno zniževanje carine na avtomobile.",
+      "c20170921": "Kanada: začne se uporaba CETA – carina 0 % za avtomobile, izdelane v Kanadi."
     },
     "limits": {
       "title": "Česa izračun ne ve",

@@ -1810,12 +1810,14 @@
       "vat": "Evropská komise – sazby DPH a daně v členských státech."
     },
     "changes": {
-      "title": "Historie změn",
-      "text": "Co a kdy jsme změnili v pravidlech výpočtu:",
-      "c20261028": "Rozšířená metodika: příklad krok za krokem, tabulka 27 zemí, zdroje.",
-      "c20261026": "Clo 0 % pro auta vyrobená v USA, Kanadě, Japonsku a Spojeném království s dokladem o původu; samostatná sazba pro pick-upy; bez polské spotřební daně na sběratelská vozidla.",
-      "c20261025": "Vzorce registrační daně pro Slovensko, Litvu a Maďarsko; potvrzeno, že Lotyšsko ji nevybírá.",
-      "c20261024": "Registrační daň pro každou zemi EU; celní hodnota podle celního kurzu měsíce."
+      "title": "Změny předpisů a aktualizace",
+      "text": "Nejdůležitější změny práva, které kalkulačka zohledňuje, a naše aktualizace:",
+      "c202610": "Aktualizace Carglo: kalkulačka zohledňuje všechny změny níže – clo 0 % s dokladem o původu, registrační daně 27 zemí EU a celní kurz měsíce; rozšířená metodika.",
+      "c20260701": "USA: nařízení (EU) 2026/1455 – clo 0 % na auta vyrobená v USA a odeslaná přímo odtud, do konce roku 2029.",
+      "c20260101": "Japonsko: končí postupné snižování cla na auta podle dohody o hospodářském partnerství – auta japonského původu mají clo 0 %.",
+      "c20210101": "Spojené království: po brexitu platí dohoda o obchodu a spolupráci – auta musí projít proclením, ale ta splňující pravidla původu mají clo 0 %.",
+      "c20190201": "Japonsko: vstupuje v platnost dohoda o hospodářském partnerství EU–Japonsko – začíná postupné snižování cla na auta.",
+      "c20170921": "Kanada: začíná se uplatňovat CETA – clo 0 % na auta vyrobená v Kanadě."
     },
     "limits": {
       "title": "Co výpočet neví",

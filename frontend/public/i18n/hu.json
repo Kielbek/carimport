@@ -1810,12 +1810,14 @@
       "vat": "Az Európai Bizottság – áfakulcsok és adók a tagállamokban."
     },
     "changes": {
-      "title": "Változásnapló",
-      "text": "Mit és mikor változtattunk a számítási szabályokon:",
-      "c20261028": "Bővített módszertan: lépésenkénti példa, 27 ország táblázata, források.",
-      "c20261026": "0%-os vám az USA-ban, Kanadában, Japánban és az Egyesült Királyságban gyártott autókra származási igazolással; külön kulcs a pickupokra; nincs lengyel jövedéki adó a gyűjteményi járműveken.",
-      "c20261025": "A regisztrációs adó képletei Szlovákiára, Litvániára és Magyarországra; megerősítettük, hogy Lettország nem szed ilyet.",
-      "c20261024": "Regisztrációs adó minden uniós országra; vámérték a hónap vámárfolyamán."
+      "title": "Szabályváltozások és frissítések",
+      "text": "A kalkulátor által alkalmazott legfontosabb jogszabályváltozások és saját frissítéseink:",
+      "c202610": "Carglo-frissítés: a kalkulátor az alábbi összes változást alkalmazza – 0%-os vám származási igazolással, 27 uniós ország regisztrációs adója és a hónap vámárfolyama; bővített módszertan.",
+      "c20260701": "USA: a 2026/1455/EU rendelet – 0%-os vám az USA-ban gyártott és onnan közvetlenül szállított autókra, 2029 végéig.",
+      "c20260101": "Japán: lezárul az autók vámjának fokozatos csökkentése a gazdasági partnerségi megállapodásban – a japán származású autók vámja 0%.",
+      "c20210101": "Egyesült Királyság: a Brexit után a kereskedelmi és együttműködési megállapodás érvényes – az autókat vámkezelni kell, de a származási szabályoknak megfelelők vámja 0%.",
+      "c20190201": "Japán: hatályba lép az EU–Japán gazdasági partnerségi megállapodás – megkezdődik az autók vámjának fokozatos csökkentése.",
+      "c20170921": "Kanada: megkezdődik a CETA alkalmazása – 0%-os vám a Kanadában gyártott autókra."
     },
     "limits": {
       "title": "Amit a számítás nem tud",

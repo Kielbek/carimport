@@ -1810,12 +1810,14 @@
       "vat": "A Comissão Europeia – taxas de IVA e impostos nos Estados-Membros."
     },
     "changes": {
-      "title": "Histórico de alterações",
-      "text": "O que alterámos nas regras de cálculo e quando:",
-      "c20261028": "Metodologia alargada: exemplo passo a passo, tabela dos 27 países, fontes.",
-      "c20261026": "Direito de 0% para carros fabricados nos EUA, Canadá, Japão e Reino Unido com prova de origem; taxa própria para pickups; sem imposto especial polaco sobre veículos de coleção.",
-      "c20261025": "Fórmulas do imposto de registo da Eslováquia, Lituânia e Hungria; confirmado que a Letónia não o cobra.",
-      "c20261024": "Imposto de registo para cada país da UE; valor aduaneiro à taxa de câmbio aduaneira do mês."
+      "title": "Alterações às regras e atualizações",
+      "text": "As principais alterações legais que a calculadora aplica e as nossas atualizações:",
+      "c202610": "Atualização da Carglo: a calculadora aplica todas as alterações abaixo – direito de 0% com prova de origem, impostos de registo de 27 países da UE e taxa de câmbio aduaneira do mês; metodologia alargada.",
+      "c20260701": "EUA: Regulamento (UE) 2026/1455 – direito de 0% para carros fabricados nos EUA e enviados diretamente de lá, até ao fim de 2029.",
+      "c20260101": "Japão: termina a redução gradual do direito sobre automóveis do Acordo de Parceria Económica – carros de origem japonesa têm direito de 0%.",
+      "c20210101": "Reino Unido: após o Brexit aplica-se o Acordo de Comércio e Cooperação – os carros precisam de desalfandegamento, mas os que cumprem as regras de origem têm direito de 0%.",
+      "c20190201": "Japão: entra em vigor o Acordo de Parceria Económica UE–Japão – começa a redução gradual do direito sobre automóveis.",
+      "c20170921": "Canadá: começa a aplicação do CETA – direito de 0% para carros fabricados no Canadá."
     },
     "limits": {
       "title": "O que o cálculo não sabe",

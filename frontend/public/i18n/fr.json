@@ -1810,12 +1810,14 @@
       "vat": "La Commission européenne – taux de TVA et fiscalité des États membres."
     },
     "changes": {
-      "title": "Historique des modifications",
-      "text": "Ce que nous avons modifié dans les règles de calcul, et quand :",
-      "c20261028": "Méthodologie enrichie : exemple pas à pas, tableau des 27 pays, sources.",
-      "c20261026": "Droit de 0 % pour les voitures fabriquées aux États-Unis, au Canada, au Japon et au Royaume-Uni avec preuve d’origine ; taux distinct pour les pick-up ; pas d’accise polonaise sur les véhicules de collection.",
-      "c20261025": "Formules de la taxe d’immatriculation pour la Slovaquie, la Lituanie et la Hongrie ; confirmation que la Lettonie n’en perçoit pas.",
-      "c20261024": "Taxe d’immatriculation pour chaque pays de l’UE ; valeur en douane au taux de change douanier du mois."
+      "title": "Évolutions des règles et mises à jour",
+      "text": "Les principaux changements juridiques appliqués par le calculateur, et nos propres mises à jour :",
+      "c202610": "Mise à jour Carglo : le calculateur applique tous les changements ci-dessous – droit de 0 % avec preuve d’origine, taxes d’immatriculation de 27 pays de l’UE et taux de change douanier du mois ; méthodologie enrichie.",
+      "c20260701": "États-Unis : règlement (UE) 2026/1455 – droit de 0 % sur les voitures fabriquées aux États-Unis et expédiées directement de là-bas, jusqu’à fin 2029.",
+      "c20260101": "Japon : la baisse progressive des droits sur les voitures prévue par l’accord de partenariat économique est achevée – les voitures d’origine japonaise ont un droit de 0 %.",
+      "c20210101": "Royaume-Uni : après le Brexit, l’accord de commerce et de coopération s’applique – les voitures doivent être dédouanées, mais celles qui respectent les règles d’origine ont un droit de 0 %.",
+      "c20190201": "Japon : entrée en vigueur de l’accord de partenariat économique UE–Japon – début de la baisse progressive des droits sur les voitures.",
+      "c20170921": "Canada : début de l’application du CETA – droit de 0 % sur les voitures fabriquées au Canada."
     },
     "limits": {
       "title": "Ce que le calcul ignore",

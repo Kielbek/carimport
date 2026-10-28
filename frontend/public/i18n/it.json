@@ -1810,12 +1810,14 @@
       "vat": "La Commissione europea – aliquote IVA e imposte negli Stati membri."
     },
     "changes": {
-      "title": "Cronologia delle modifiche",
-      "text": "Cosa abbiamo cambiato nelle regole di calcolo e quando:",
-      "c20261028": "Metodologia ampliata: esempio passo per passo, tabella dei 27 paesi, fonti.",
-      "c20261026": "Dazio dello 0 % per le auto prodotte in USA, Canada, Giappone e Regno Unito con prova d’origine; aliquota separata per i pick-up; nessuna accisa polacca sui veicoli da collezione.",
-      "c20261025": "Formule della tassa di immatricolazione per Slovacchia, Lituania e Ungheria; confermato che la Lettonia non la applica.",
-      "c20261024": "Tassa di immatricolazione per ogni paese UE; valore in dogana al tasso di cambio doganale del mese."
+      "title": "Modifiche normative e aggiornamenti",
+      "text": "Le principali modifiche di legge applicate dal calcolatore e i nostri aggiornamenti:",
+      "c202610": "Aggiornamento Carglo: il calcolatore applica tutte le modifiche qui sotto – dazio dello 0 % con prova d’origine, tasse di immatricolazione di 27 paesi UE e tasso di cambio doganale del mese; metodologia ampliata.",
+      "c20260701": "USA: Regolamento (UE) 2026/1455 – dazio dello 0 % sulle auto prodotte negli USA e spedite direttamente da lì, fino a fine 2029.",
+      "c20260101": "Giappone: si conclude la riduzione graduale del dazio sulle auto prevista dall’Accordo di partenariato economico – le auto di origine giapponese hanno dazio dello 0 %.",
+      "c20210101": "Regno Unito: dopo la Brexit si applica l’Accordo sugli scambi commerciali e la cooperazione – le auto vanno sdoganate, ma quelle conformi alle regole d’origine hanno dazio dello 0 %.",
+      "c20190201": "Giappone: entra in vigore l’Accordo di partenariato economico UE–Giappone – inizia la riduzione graduale del dazio sulle auto.",
+      "c20170921": "Canada: inizia l’applicazione del CETA – dazio dello 0 % sulle auto prodotte in Canada."
     },
     "limits": {
       "title": "Cosa il calcolo non sa",

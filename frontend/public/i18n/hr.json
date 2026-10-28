@@ -1810,12 +1810,14 @@
       "vat": "Europska komisija – stope PDV-a i porezi u državama članicama."
     },
     "changes": {
-      "title": "Povijest izmjena",
-      "text": "Što smo i kada promijenili u pravilima izračuna:",
-      "c20261028": "Proširena metodologija: primjer korak po korak, tablica 27 zemalja, izvori.",
-      "c20261026": "Carina od 0 % za automobile proizvedene u SAD-u, Kanadi, Japanu i Ujedinjenoj Kraljevini uz dokaz o podrijetlu; zasebna stopa za pick-upove; bez poljske trošarine na kolekcionarska vozila.",
-      "c20261025": "Formule poreza pri registraciji za Slovačku, Litvu i Mađarsku; potvrđeno da ga Latvija ne naplaćuje.",
-      "c20261024": "Porez pri registraciji za svaku zemlju EU-a; carinska vrijednost po carinskom tečaju mjeseca."
+      "title": "Izmjene propisa i ažuriranja",
+      "text": "Najvažnije zakonske izmjene koje kalkulator primjenjuje i naša ažuriranja:",
+      "c202610": "Ažuriranje Carglo: kalkulator primjenjuje sve izmjene u nastavku – carina od 0 % uz dokaz o podrijetlu, porezi pri registraciji u 27 zemalja EU-a i carinski tečaj mjeseca; proširena metodologija.",
+      "c20260701": "SAD: Uredba (EU) 2026/1455 – carina od 0 % na automobile proizvedene u SAD-u i poslane izravno odande, do kraja 2029.",
+      "c20260101": "Japan: završava postupno smanjenje carine na automobile iz Sporazuma o gospodarskom partnerstvu – automobili japanskog podrijetla imaju carinu od 0 %.",
+      "c20210101": "Ujedinjena Kraljevina: nakon Brexita primjenjuje se Sporazum o trgovini i suradnji – automobili se moraju ocariniti, ali oni koji ispunjavaju pravila o podrijetlu imaju carinu od 0 %.",
+      "c20190201": "Japan: stupa na snagu Sporazum o gospodarskom partnerstvu EU–Japan – počinje postupno smanjenje carine na automobile.",
+      "c20170921": "Kanada: počinje primjena CETA-e – carina od 0 % na automobile proizvedene u Kanadi."
     },
     "limits": {
       "title": "Što izračun ne zna",
