@@ -46,13 +46,26 @@ def text(meta, key):
     return html.unescape(re.sub(r'<[^>]+>', '', raw)).strip()
 
 
+BAD_WORDS = re.compile(r'police|polic[ií]a|polizei|sheriff|patrol car|rac(e|ing)|rally|nascar|supercars|drift|prototype|concept|'
+                       r'interior|dashboard|engine|wreck|crash|toy|lego|model kit|mach-e|rear', re.I)
+
+
+def plausible(title, m):
+    """Skips photos of the wrong generation (a year far from the model's) and of police, race or show cars."""
+    if BAD_WORDS.search(title):
+        return False
+    years = [int(y) for y in re.findall(r'(?<!\d)(19[5-9]\d|20[0-3]\d)(?!\d)', title)]
+    return not years or any(abs(y - int(m['year'])) <= 4 for y in years)
+
+
 def candidates(m):
     pinned = (m.get('photo') or {}).get('commons')
     common = {'prop': 'imageinfo', 'iiprop': 'url|size|mime|extmetadata', 'iiurlwidth': '1600'}
     if pinned:
         pages = query({'action': 'query', 'titles': pinned, **common})['query']['pages']
     else:
-        search = f'{m["make"]} {m["model"].split(" ")[0]} {m["year"]} filetype:bitmap -interior -engine -toy'
+        search = m.get('photoQuery') or f'{m["make"]} {m["model"].split(" ")[0]} {m["year"]}'
+        search += ' filetype:bitmap -interior -engine -toy'
         pages = query({'action': 'query', 'generator': 'search', 'gsrsearch': search, 'gsrnamespace': '6',
                        'gsrlimit': '30', **common}).get('query', {}).get('pages', [])
     for p in sorted(pages, key=lambda p: p.get('index', 0)):
@@ -63,6 +76,8 @@ def candidates(m):
         if info.get('mime') not in ('image/jpeg', 'image/png') or not FREE.match(lic):
             continue
         if not pinned and (w < 1600 or not 1.25 <= w / max(h, 1) <= 2.1):
+            continue
+        if not pinned and not plausible(p['title'], m):
             continue
         yield p['title'], info, lic, text(meta, 'Artist') or 'unknown', (meta.get('LicenseUrl') or {}).get('value', '')
 

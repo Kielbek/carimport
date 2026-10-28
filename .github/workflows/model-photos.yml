@@ -21,7 +21,7 @@ jobs:
           python-version: '3.12'
       - run: pip install pillow
       - name: Fetch photos
-        run: python3 frontend/tools/fetch_model_photos.py $(cat frontend/tools/photos.request | grep -o -- '--force' || true)
+        run: python3 frontend/tools/fetch_model_photos.py $(grep -v "^#" frontend/tools/photos.request)
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
