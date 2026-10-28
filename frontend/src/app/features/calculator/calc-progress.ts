@@ -1,44 +1,49 @@
 /**
- * A randomised timeline for the "calculating" screen: the bar moves at varying speed and stalls
- * at random points (sometimes briefly, sometimes for a couple of seconds), like a real job would.
+ * A randomised timeline for the "calculating" screen: the bar moves at varying speed and, once or twice,
+ * nearly stalls at a random point (creeping by a percent or two), like a real job would.
  */
 export interface ProgressPlan {
   /** Total length in ms - the result is not shown before this. */
   readonly duration: number;
-  /** Keyframes [ms, percent], ascending, from [0, 0] to [duration, 100]; equal percents are stalls. */
+  /** Keyframes [ms, percent], ascending, from [0, 0] to [duration, 100]. */
   readonly keys: readonly (readonly [number, number])[];
 }
-
-const MAX_MS = 7500;
 
 export function randomPlan(rand: () => number = Math.random): ProgressPlan {
   const between = (a: number, b: number) => a + rand() * (b - a);
 
-  // 5-8 moving segments with random breakpoints between 0 and 100
-  const count = 5 + Math.floor(rand() * 4);
-  const cuts = Array.from({ length: count - 1 }, () => between(4, 96)).sort((a, b) => a - b);
+  // 4-6 moving segments with random breakpoints between 0 and 100
+  const count = 4 + Math.floor(rand() * 3);
+  const cuts = Array.from({ length: count - 1 }, () => between(6, 90)).sort((a, b) => a - b);
   const points = [0, ...cuts, 100];
 
-  // 2-4 of the inner breakpoints get a stall
+  // 1-2 of the inner breakpoints get a near-stall
   const stalls = new Set<number>();
-  const wanted = 2 + Math.floor(rand() * 3);
-  while (stalls.size < Math.min(wanted, cuts.length)) {
+  const wanted = 1 + Math.floor(rand() * 2);
+  while (stalls.size < wanted) {
     stalls.add(1 + Math.floor(rand() * cuts.length));
   }
 
   const keys: [number, number][] = [[0, 0]];
   let t = 0;
+  let p = 0;
   for (let i = 1; i < points.length; i++) {
-    t += (points[i] - points[i - 1]) * between(10, 38);
-    keys.push([t, Math.round(points[i])]);
+    const target = Math.max(points[i], p);
+    t += (target - p) * between(10, 38);
+    p = target;
+    keys.push([t, p]);
     if (stalls.has(i)) {
-      t += rand() < 0.3 ? between(1200, 2400) : between(250, 900);
-      keys.push([t, Math.round(points[i])]);
+      // crawls on by 1-3 % instead of freezing, never past the next breakpoint
+      const creep = Math.max(0, Math.min(between(1, 3), points[i + 1] - p - 1));
+      t += rand() < 0.3 ? between(900, 1500) : between(350, 800);
+      p += creep;
+      keys.push([t, p]);
     }
   }
 
-  const scale = t > MAX_MS ? MAX_MS / t : 1;
-  return { duration: Math.round(t * scale), keys: keys.map(([ms, p]) => [ms * scale, p] as const) };
+  // the whole run takes 2.6-3.5 s
+  const duration = between(2600, 3500);
+  return { duration: Math.round(duration), keys: keys.map(([ms, v]) => [(ms * duration) / t, v] as const) };
 }
 
 /** Percent shown at `ms` into the plan; eases within each moving segment. */

@@ -98,7 +98,7 @@ def main(argv):
             print(f'{m["id"]}: no freely licensed landscape photo found - pin one with "photo": {{"commons": "File:..."}}')
             continue
         title, info, lic, author, lic_url = found
-        width, height = save(m['id'], info.get('thumburl') or info['url'])
+        width, height = save(m['id'], info['url'])
         m['photo'] = {
             'src': f'/images/models/{m["id"]}', 'width': width, 'height': height,
             'author': author[:120], 'license': lic,
