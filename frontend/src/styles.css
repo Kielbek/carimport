@@ -243,23 +243,26 @@ select.input {
   @apply border-danger bg-danger text-white;
 }
 
-/* ---------- hero: always dark, the night photo of the car behind the text (phones) or on the right (desktop) ---------- */
+/* ---------- hero: the car photo (day or night, following the theme) behind the text on phones, on the right on desktop ---------- */
 .hero {
-  background: radial-gradient(ellipse at 70% 40%, var(--hero-glow-1), transparent 45%),
-    radial-gradient(ellipse at 14% 100%, var(--hero-glow-2), transparent 38%), var(--bg);
-}
-.hero-night {
-  --bg: #101011;
-  --fg: #f8f8f8;
-  --muted: #b4b4bb;
-  --line: rgb(255 255 255 / 0.16);
-  --brand: #ffc61a;
-  --brand-hover: #ffd34d;
-  --brand-text: #ffc61a;
-  --hero-facts-bg: rgb(16 16 17 / 0.72);
-  --hero-facts-shadow: none;
-  color-scheme: dark;
   background: var(--bg);
+}
+/* the car photo and the colour its edges fade into: set per theme on <html> by the inline script in index.html and by
+   ThemeService (the build-time inlined CSS only knows the light theme), so only the matching image is downloaded;
+   these are the fallbacks without JavaScript */
+:root {
+  --hero-shade: 243 243 244;
+  --hero-photo-sm: url('/images/hero-day-750.webp');
+  --hero-photo-lg: url('/images/hero-day-1100.webp');
+}
+.hero-photo {
+  background: var(--hero-photo-sm) 100% 50% / cover no-repeat;
+}
+@media (min-width: 640px) {
+  .hero-photo { background-image: var(--hero-photo-lg); background-position: 100% 75%; }
+}
+@media (min-width: 1024px) {
+  .hero-photo { background-position: 60% 72%; }
 }
 /* the hero picture is the largest paint (LCP): it slides in but is visible from the first frame (no fade from 0),
    and the costly drop shadow is kept for desktops */
@@ -272,16 +275,17 @@ select.input {
     filter: drop-shadow(0 30px 40px rgb(0 0 0 / 0.55));
   }
 }
-/* phones: darkens the photo's top under the headline and fades its bottom into the page;
+/* phones: dims the photo's top under the headline and fades its bottom into the page;
    desktop: fades the photo's left edge into the text column and its bottom into the facts band */
 .hero-night-shade {
-  background: linear-gradient(180deg, rgb(16 16 17 / 0.8) 0%, rgb(16 16 17 / 0.6) 34%, rgb(16 16 17 / 0) 54%,
-    rgb(16 16 17 / 0) 76%, var(--bg) 100%);
+  background: linear-gradient(180deg, rgb(var(--hero-shade) / 0.8) 0%, rgb(var(--hero-shade) / 0.6) 34%,
+    rgb(var(--hero-shade) / 0) 54%, rgb(var(--hero-shade) / 0) 76%, rgb(var(--hero-shade)) 100%);
 }
 @media (min-width: 1024px) {
   .hero-night-shade {
-    background: linear-gradient(90deg, var(--bg) 0%, rgb(16 16 17 / 0) 30%, rgb(16 16 17 / 0) 88%, var(--bg) 100%),
-      linear-gradient(180deg, rgb(16 16 17 / 0) 70%, var(--bg) 100%);
+    background: linear-gradient(90deg, rgb(var(--hero-shade)) 0%, rgb(var(--hero-shade) / 0) 30%,
+        rgb(var(--hero-shade) / 0) 88%, rgb(var(--hero-shade)) 100%),
+      linear-gradient(180deg, rgb(var(--hero-shade) / 0) 70%, rgb(var(--hero-shade)) 100%);
   }
 }
 @keyframes hero-car-in {

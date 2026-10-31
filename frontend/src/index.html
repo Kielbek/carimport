@@ -20,6 +20,12 @@
           t = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
         }
         document.documentElement.setAttribute('data-theme', t);
+        // the home hero photo for this theme (kept in sync by ThemeService); set here because the CSS inlined at build
+        // time only knows the light theme
+        var s = document.documentElement.style, n = t === 'dark' ? 'night' : 'day';
+        s.setProperty('--hero-photo-sm', 'url(/images/hero-' + n + '-750.webp)');
+        s.setProperty('--hero-photo-lg', 'url(/images/hero-' + n + '-1100.webp)');
+        s.setProperty('--hero-shade', t === 'dark' ? '16 16 17' : '243 243 244');
       })();
     </script>
   </head>

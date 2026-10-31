@@ -23,8 +23,8 @@ interface CostGroup { key: string; icon: IconName; items: number }
   selector: 'app-home-page',
   imports: [RouterLink, TranslatePipe, CountryNamePipe, Flag, Icon, WorldMap, FaqSection],
   template: `
-    <!-- HERO: always dark; phones: text on the night photo, then the facts; desktop: text left, photo right, facts band below -->
-    <section class="hero hero-night relative isolate overflow-hidden text-fg">
+    <!-- HERO: the car photo follows the theme (day / night); phones: text on the photo, then the facts; desktop: text left, photo right, facts band below -->
+    <section class="hero relative isolate overflow-hidden text-fg">
       <div class="site relative grid pb-8 pt-7 lg:min-h-[660px] lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:items-center lg:gap-6 lg:pb-44 lg:pt-12">
         <div class="relative z-10 min-h-[340px] max-w-[600px] lg:min-h-0">
           <p class="eyebrow hidden lg:block">{{ 'home.hero.eyebrow' | translate }}</p>
@@ -45,12 +45,9 @@ interface CostGroup { key: string; icon: IconName; items: number }
           </div>
         </div>
 
-        <!-- the night photo: backdrop of the whole hero on phones, right-hand panel on desktop -->
+        <!-- the photo is a CSS background so only the version for the current theme is downloaded; backdrop of the whole hero on phones, right-hand panel on desktop -->
         <div class="absolute inset-x-0 top-0 -z-10 h-[700px] lg:inset-y-0 lg:left-auto lg:h-auto lg:w-[60%]">
-          <img class="pointer-events-none h-full w-full select-none object-cover object-[100%_50%] sm:object-[100%_75%] lg:object-[60%_72%]"
-               src="/images/hero-night-1100.webp" srcset="/images/hero-night-750.webp 750w, /images/hero-night-1100.webp 1100w"
-               sizes="(min-width: 1024px) 60vw, 100vw" width="1100" height="1311" fetchpriority="high" decoding="async"
-               [alt]="'home.hero.visual' | translate" />
+          <div class="hero-photo h-full w-full" role="img" [attr.aria-label]="'home.hero.visual' | translate"></div>
           <div class="hero-night-shade absolute inset-0" aria-hidden="true"></div>
         </div>
 
