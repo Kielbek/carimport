@@ -24,21 +24,23 @@ interface CostGroup { key: string; icon: IconName; items: number }
   imports: [RouterLink, TranslatePipe, CountryNamePipe, Flag, Icon, WorldMap, FaqSection],
   template: `
     <!-- HERO: follows the light/dark theme -->
-    <section class="hero relative isolate overflow-hidden text-fg">
-      <div class="site relative grid min-h-[660px] items-center gap-6 pb-10 pt-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:pb-44">
+    <section class="hero hero-mobile-dark relative isolate overflow-hidden text-fg">
+      <div class="site relative grid items-center gap-0 pb-8 pt-7 lg:min-h-[660px] lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:gap-6 lg:pb-44 lg:pt-12">
         <div class="relative z-10 max-w-[600px]">
-          <p class="eyebrow">{{ 'home.hero.eyebrow' | translate }}</p>
-          <h1 class="h-display mt-5">
+          <p class="eyebrow hidden lg:block">{{ 'home.hero.eyebrow' | translate }}</p>
+          <h1 class="h-display lg:mt-5">
             <span class="block text-brand-text">{{ 'home.hero.title1' | translate }}</span>
             <span class="block">{{ 'home.hero.title2' | translate }}</span>
           </h1>
-          <p class="mt-7 max-w-[540px] text-[16px] leading-[1.5] text-fg/95">{{ 'home.hero.lead' | translate }}</p>
-          <ul class="mt-6 space-y-2 text-[14px] text-fg/90">
+          <!-- phones: a short lead, the car, two points and a full-width button fit on the first screen -->
+          <p class="mt-3 text-[15.5px] leading-[1.5] text-muted lg:hidden">{{ 'home.hero.mobileLead' | translate }}</p>
+          <p class="mt-7 hidden max-w-[540px] text-[16px] leading-[1.5] text-fg/95 lg:block">{{ 'home.hero.lead' | translate }}</p>
+          <ul class="mt-6 hidden space-y-2 text-[14px] text-fg/90 lg:block">
             @for (n of [1, 2, 3]; track n) {
               <li class="flex items-start gap-2.5"><app-icon name="check" [size]="18" [stroke]="2.5" class="mt-0.5 shrink-0 text-brand-text" />{{ 'home.hero.point' + n | translate }}</li>
             }
           </ul>
-          <div class="mt-9 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
+          <div class="mt-9 hidden flex-col items-start gap-5 sm:flex-row sm:items-center lg:flex">
             <a [routerLink]="calculator()" class="btn btn-primary"><app-icon name="calculator" [size]="18" /> {{ 'home.hero.cta' | translate }}</a>
             <a routerLink="." fragment="what" class="link-arrow text-[15px]">{{ 'home.hero.secondary' | translate }} <app-icon name="arrow-long" [size]="26" [stroke]="1.5" /></a>
           </div>
@@ -51,8 +53,17 @@ interface CostGroup { key: string; icon: IconName; items: number }
                [alt]="'home.hero.visual' | translate" />
         </div>
 
+        <div class="lg:hidden">
+          <ul class="space-y-1.5 text-[14px] text-muted">
+            @for (n of [1, 2]; track n) {
+              <li class="flex items-start gap-2.5"><app-icon name="check" [size]="18" [stroke]="2.5" class="mt-0.5 shrink-0 text-brand-text" />{{ 'home.hero.mobilePoint' + n | translate }}</li>
+            }
+          </ul>
+          <a [routerLink]="calculator()" class="btn btn-primary mt-5 w-full justify-center"><app-icon name="calculator" [size]="18" /> {{ 'home.hero.cta' | translate }}</a>
+        </div>
+
         <!-- facts band: claim on the left, three facts in a frosted panel on the right -->
-        <div class="flex flex-col gap-5 lg:absolute lg:inset-x-5 lg:bottom-7 lg:flex-row lg:items-end lg:justify-between lg:gap-10">
+        <div class="hidden lg:absolute lg:inset-x-5 lg:bottom-7 lg:flex lg:flex-row lg:items-end lg:justify-between lg:gap-10">
           <div class="shrink-0 pb-1">
             <p class="text-[17px] font-bold leading-snug">{{ 'home.strip.brand.title' | translate }}<br>{{ 'home.strip.brand.text' | translate }}</p>
             <span class="mt-2 block h-[2px] w-10 bg-brand-text" aria-hidden="true"></span>
