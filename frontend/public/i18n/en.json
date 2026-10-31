@@ -513,7 +513,8 @@
     "contact": "Contact",
     "vin": "VIN check",
     "copart": "Copart – how to buy",
-    "vinCompare": "VIN reports compared"
+    "vinCompare": "VIN reports compared",
+    "euImport": "Import a car from the EU"
   },
   "footer": {
     "about": "Independent calculator of import costs for cars from outside the EU. We neither sell nor import cars – we work out what they really cost.",
@@ -891,6 +892,10 @@
     "vinCompare": {
       "title": "VIN history reports compared: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
       "description": "Which VIN report should you buy for a car from the USA or Europe? Coverage, damage and title data, photos and prices compared: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
+    },
+    "euImport": {
+      "title": "Import a car from Germany or another EU country – cost calculator | Carglo",
+      "description": "What does it cost to bring a car from Germany, the Netherlands or another EU country? Free calculator: transport by car carrier or on export plates, registration tax, VAT on new cars and fees."
     }
   },
   "privacy": {
@@ -2295,6 +2300,84 @@
       "r4": "Title changed to SALVAGE",
       "r5": "Auction – 3 photos before repair",
       "caption": "Illustration – what a history report typically looks like. Coverage depends on the service and the VIN."
+    }
+  },
+  "euImport": {
+    "eyebrow": "EU import calculator",
+    "title": "What it costs to bring a car from Germany or another EU country",
+    "lead": "A car from another EU country pays no customs duty, but transport, registration taxes and fees come on top of the price. Choose where you buy and where you register – we work out the full cost for free.",
+    "origin": "Country of purchase",
+    "destination": "Country of registration",
+    "price": "Car price",
+    "currency": "Currency",
+    "year": "Year of manufacture",
+    "fuel": "Fuel",
+    "engine": "Engine size (cc)",
+    "power": "Power (kW)",
+    "co2": "CO₂ emissions (g/km)",
+    "optional": "optional",
+    "transportLabel": "How the car gets to you",
+    "mode": {
+      "CAR_CARRIER": "Car carrier",
+      "TOW_TRUCK": "Dedicated tow truck",
+      "SELF_DRIVE": "Drive it home on export plates"
+    },
+    "newVehicle": "New vehicle for VAT purposes",
+    "newVehicleHint": "Up to 6 months since first registration or up to 6,000 km – VAT is then paid in your country.",
+    "submit": "Calculate cost",
+    "calculating": "Calculating…",
+    "resultTitle": "Cost of importing",
+    "route": "{{from}} → {{to}}: approx. {{km}} km",
+    "total": "Total",
+    "empty": "Fill in the details and click “Calculate cost”.",
+    "error": "We could not calculate this. Check the details and try again.",
+    "note": "Estimate based on current rates. Taxes are calculated on the purchase price; the authorities may use the market value if the price differs from it.",
+    "nonEu": "Car from the USA, Canada, Japan, the UAE or the UK?",
+    "nonEuLink": "Use the non-EU import calculator",
+    "cost": {
+      "PURCHASE_PRICE": "Purchase price",
+      "EU_TRANSPORT_CAR_CARRIER": "Car carrier transport ({{km}} km)",
+      "EU_TRANSPORT_TOW_TRUCK": "Dedicated tow truck ({{km}} km)",
+      "EU_TRANSPORT_SELF_DRIVE": "Export plates with insurance, fuel and tolls ({{km}} km)",
+      "EU_NEW_VEHICLE_VAT": "VAT {{rate}}% on a new car",
+      "INSURANCE_FIRST_YEAR": "Liability insurance – first year (estimate)"
+    },
+    "warning": {
+      "usedVatAtOrigin": "Used car: VAT is settled in the country of purchase (or there is none when buying from a private seller or under the margin scheme) – you do not pay it again where you register.",
+      "newVehicleVat": "New car: the seller invoices without VAT and you pay VAT in the country of registration. Enter the net price.",
+      "exportPlates": "For the trip you need export plates from the country of purchase or temporary plates from your own registration office – both with liability insurance.",
+      "ferry": "The route needs a ferry – its cost is not included."
+    },
+    "vat": {
+      "title": "VAT on a car from the EU – when you pay it",
+      "text": "There are no customs duties between EU countries, and VAT is settled only once:\n• Used car from a private seller or from a dealer under the margin scheme – there is no VAT, or it is already in the price. You do not pay it again at home.\n• Used car from a dealer with a full VAT invoice – a private buyer pays the VAT of the country of purchase in the price. A business can buy net and account for VAT at home.\n• New car – up to 6 months since first registration or up to 6,000 km. VAT is then always paid in the country of registration, and the seller invoices at 0%."
+    },
+    "transport": {
+      "title": "Transport – carrier or on its own wheels",
+      "text": "A car carrier is the cheapest option over a longer distance – you pay per kilometre and the car travels with others. A dedicated tow truck costs more but collects the car right away and carries only yours – the choice for cars that do not run.\nYou can drive home if the car runs. You need export plates from the country of purchase (e.g. Ausfuhrkennzeichen in Germany) or temporary plates from the registration office in your country – always with liability insurance. Add fuel and tolls along the way."
+    },
+    "taxes": {
+      "title": "Taxes at registration",
+      "text": "Each country has its own one-off tax at the first registration of an imported car – and it most often decides whether importing pays off:\n• Poland: excise of 3.1% of the price up to 2,000 cc and 18.6% above (half for hybrids, 0% for EVs),\n• the Netherlands: BPM, Austria: NoVA, Belgium: registration tax, Denmark and Finland: taxes on the car’s value,\n• Germany, Czechia or Sweden have no such tax – only registration fees.\nThe calculator works it out automatically from the purchase price, year, CO₂ and power."
+    },
+    "documents": {
+      "title": "Documents to register a car from the EU",
+      "text": "You usually need:\n• the purchase contract or invoice,\n• the foreign registration certificate (in Germany both parts: Zulassungsbescheinigung Teil I and II),\n• proof of payment of excise or registration tax,\n• a valid roadworthiness test in your country,\n• translations of foreign-language documents if your office requires them.\nDeadlines differ between countries – in Poland, for example, a car brought from the EU must be registered within 30 days."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "q1": "Do I pay customs duty on a car from Germany?",
+      "a1": "No. There are no customs duties between EU countries, so a car from Germany, the Netherlands or France pays no duty. You do pay your own country’s registration taxes, such as excise in Poland or BPM in the Netherlands.",
+      "q2": "Do I pay VAT on a used car from the EU?",
+      "a2": "Usually not – VAT is settled in the country of purchase, or there is none when buying from a private seller or under the margin scheme. The exception is new cars (up to 6 months or 6,000 km) – their VAT is paid in the country of registration.",
+      "q3": "How much does it cost to transport a car from Germany?",
+      "a3": "It depends on the distance and the method. A car carrier is usually the cheapest over a longer distance, a dedicated tow truck costs more. The calculator prices it from the distance between the countries and per-kilometre rates.",
+      "q4": "Can I drive the car home from Germany?",
+      "a4": "Yes, if it runs. You need export plates from the country of purchase or temporary plates from your registration office – always with liability insurance for the trip.",
+      "q5": "What value is the registration tax based on?",
+      "a5": "Usually on the price you paid or on the car’s value, depending on the country – some countries also use CO₂ and age. If the price is far from the market value, the authorities may use the market value.",
+      "q6": "Does a car from the EU need type approval?",
+      "a6": "Usually not – a car registered in another EU country already has European type approval, so a roadworthiness test is enough. Extra tests or modifications are only needed in unusual cases, e.g. after modifications or for a car originally from outside the EU."
     }
   }
 }

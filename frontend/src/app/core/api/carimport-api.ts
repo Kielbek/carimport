@@ -4,6 +4,8 @@ import { Observable } from 'rxjs';
 import {
   AffiliateOffer,
   CalculationRequest,
+  EuImportRequest,
+  EuImportResult,
   DisplayCurrency,
   FullReport,
   OrderProgress,
@@ -20,6 +22,10 @@ import {
 export class CarImportApi {
   private readonly http = inject(HttpClient);
   private readonly base = '/api/v1';
+
+  euImport(request: EuImportRequest): Observable<EuImportResult> {
+    return this.http.post<EuImportResult>(`${this.base}/quotes/eu`, request);
+  }
 
   preview(request: CalculationRequest): Observable<PublicQuoteView> {
     return this.http.post<PublicQuoteView>(`${this.base}/quotes/preview`, request);

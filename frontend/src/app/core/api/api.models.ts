@@ -281,3 +281,36 @@ export interface VinDecoding {
   warnings: string[];
   description: string;
 }
+
+/** A car bought in another member state (POST /quotes/eu). */
+export interface EuImportRequest {
+  originCountry: string;
+  destinationCountry: string;
+  price: number;
+  priceCurrency: string;
+  displayCurrency: string;
+  productionYear: number;
+  fuelType: FuelType;
+  engineCc: number;
+  vehicleCategory: VehicleCategory | null;
+  powerKw: number | null;
+  co2Gkm: number | null;
+  massKg: number | null;
+  newVehicle: boolean;
+  deliveryMode: DeliveryMode | null;
+  distanceKm: number | null;
+  destinationLat: number | null;
+  destinationLon: number | null;
+  registrationTaxOwn: number | null;
+}
+
+export interface EuImportResult {
+  currency: string;
+  fxDate: string;
+  lines: CostLine[];
+  byCategory: Record<CostCategory, Money>;
+  total: Money;
+  distanceKm: number;
+  vatRate: number;
+  warnings: string[];
+}

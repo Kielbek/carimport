@@ -43,6 +43,7 @@ const BREADCRUMB_LABEL: Record<Exclude<Page, 'home'>, string> = {
   contact: 'layout.contact',
   vin: 'layout.vin',
   vinCompare: 'layout.vinCompare',
+  euImport: 'layout.euImport',
   copart: 'layout.copart',
 };
 
@@ -56,6 +57,7 @@ const PAGE_FAQ: Partial<Record<Page, { root: string; count: number }>> = {
   method: { root: 'method', count: 6 },
   vin: { root: 'vinPage', count: 6 },
   vinCompare: { root: 'vinCompare', count: 6 },
+  euImport: { root: 'euImport', count: 6 },
   copart: { root: 'copart', count: 7 },
 };
 

@@ -513,7 +513,8 @@
     "contact": "Kontakt",
     "vin": "Sprawdź VIN",
     "copart": "Copart – jak kupić",
-    "vinCompare": "Raporty VIN – porównanie"
+    "vinCompare": "Raporty VIN – porównanie",
+    "euImport": "Import auta z UE"
   },
   "footer": {
     "about": "Niezależny kalkulator kosztów importu samochodów spoza UE. Nie sprzedajemy ani nie sprowadzamy aut – liczymy, ile naprawdę kosztują.",
@@ -891,6 +892,10 @@
     "vinCompare": {
       "title": "Raporty historii VIN – porównanie: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
       "description": "Który raport VIN wybrać do auta z USA lub z Europy? Porównanie zasięgu, danych o szkodach i title, zdjęć i cen: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
+    },
+    "euImport": {
+      "title": "Import auta z Niemiec i UE – kalkulator kosztów: akcyza, transport, rejestracja | Carglo",
+      "description": "Ile kosztuje sprowadzenie auta z Niemiec, Holandii czy innego kraju UE? Darmowy kalkulator: transport lawetą lub na tablicach wywozowych, akcyza lub podatek rejestracyjny, VAT przy nowym aucie i opłaty."
     }
   },
   "privacy": {
@@ -2295,6 +2300,84 @@
       "r4": "Title zmieniony na SALVAGE",
       "r5": "Aukcja – 3 zdjęcia przed naprawą",
       "caption": "Ilustracja – tak zwykle wygląda raport historii. Zakres danych zależy od serwisu i od VIN."
+    }
+  },
+  "euImport": {
+    "eyebrow": "Kalkulator importu z UE",
+    "title": "Ile kosztuje sprowadzenie auta z Niemiec i innych krajów UE",
+    "lead": "Auto z innego kraju Unii nie płaci cła, ale do ceny dochodzą transport, podatki przy rejestracji i opłaty. Wybierz kraj zakupu i kraj rejestracji – policzymy pełny koszt za darmo.",
+    "origin": "Kraj zakupu",
+    "destination": "Kraj rejestracji",
+    "price": "Cena auta",
+    "currency": "Waluta",
+    "year": "Rok produkcji",
+    "fuel": "Paliwo",
+    "engine": "Pojemność silnika (cm³)",
+    "power": "Moc (kW)",
+    "co2": "Emisja CO₂ (g/km)",
+    "optional": "opcjonalnie",
+    "transportLabel": "Jak auto przyjedzie",
+    "mode": {
+      "CAR_CARRIER": "Autolaweta (autotransporter)",
+      "TOW_TRUCK": "Laweta indywidualna",
+      "SELF_DRIVE": "Sam jadę na tablicach wywozowych"
+    },
+    "newVehicle": "Auto nowe w rozumieniu VAT",
+    "newVehicleHint": "Do 6 miesięcy od pierwszej rejestracji albo do 6000 km – wtedy VAT płacisz w swoim kraju.",
+    "submit": "Oblicz koszt",
+    "calculating": "Liczę…",
+    "resultTitle": "Koszt sprowadzenia",
+    "route": "{{from}} → {{to}}: ok. {{km}} km",
+    "total": "Razem",
+    "empty": "Uzupełnij dane i kliknij „Oblicz koszt”.",
+    "error": "Nie udało się policzyć. Sprawdź dane i spróbuj ponownie.",
+    "note": "Szacunek na podstawie aktualnych stawek. Podatki liczymy od ceny zakupu; urząd może przyjąć wartość rynkową, jeśli cena odbiega od niej.",
+    "nonEu": "Auto z USA, Kanady, Japonii, ZEA lub Wielkiej Brytanii?",
+    "nonEuLink": "Użyj kalkulatora importu spoza UE",
+    "cost": {
+      "PURCHASE_PRICE": "Cena zakupu",
+      "EU_TRANSPORT_CAR_CARRIER": "Transport autolawetą ({{km}} km)",
+      "EU_TRANSPORT_TOW_TRUCK": "Transport lawetą indywidualną ({{km}} km)",
+      "EU_TRANSPORT_SELF_DRIVE": "Tablice wywozowe z ubezpieczeniem, paliwo i opłaty drogowe ({{km}} km)",
+      "EU_NEW_VEHICLE_VAT": "VAT {{rate}}% od nowego auta",
+      "INSURANCE_FIRST_YEAR": "Ubezpieczenie OC – pierwszy rok (szacunek)"
+    },
+    "warning": {
+      "usedVatAtOrigin": "Auto używane: VAT rozlicza się w kraju zakupu (albo nie ma go wcale przy zakupie od osoby prywatnej lub w procedurze marży) – w kraju rejestracji nie płacisz go drugi raz.",
+      "newVehicleVat": "Nowe auto: sprzedawca wystawia fakturę bez VAT, a VAT płacisz w kraju rejestracji. Podaj cenę netto.",
+      "exportPlates": "Na drogę potrzebujesz tablic wywozowych z kraju zakupu albo tablic tymczasowych z Twojego urzędu – oba warianty z ubezpieczeniem OC.",
+      "ferry": "Trasa wymaga promu – jego koszt nie jest wliczony."
+    },
+    "vat": {
+      "title": "VAT przy aucie z UE – kiedy go płacisz",
+      "text": "Między krajami Unii nie ma ceł, a VAT rozlicza się tylko raz:\n• Auto używane od osoby prywatnej albo od dealera w procedurze marży – VAT nie występuje albo jest już w cenie. W Twoim kraju nie płacisz go ponownie.\n• Auto używane od dealera z pełną fakturą VAT – osoba prywatna płaci VAT kraju zakupu w cenie. Firma może kupić auto netto i rozliczyć VAT u siebie.\n• Auto nowe – do 6 miesięcy od pierwszej rejestracji albo do 6000 km. Wtedy VAT zawsze płacisz w kraju rejestracji, a sprzedawca wystawia fakturę ze stawką 0%."
+    },
+    "transport": {
+      "title": "Transport – laweta czy na kołach",
+      "text": "Autolaweta (autotransporter) to najtańszy sposób na dłuższej trasie – płacisz za kilometry, a auto jedzie razem z innymi. Laweta indywidualna jest droższa, ale odbiera auto od razu i wiezie tylko Twoje – to rozwiązanie dla aut niesprawnych.\nNa kołach wrócisz, jeśli auto jest sprawne. Potrzebujesz tablic wywozowych z kraju zakupu (np. Ausfuhrkennzeichen w Niemczech) albo tablic tymczasowych z wydziału komunikacji w Twoim kraju – zawsze z ubezpieczeniem OC. Do tego paliwo i opłaty za drogi po trasie."
+    },
+    "taxes": {
+      "title": "Podatki przy rejestracji",
+      "text": "Każdy kraj ma własny jednorazowy podatek przy pierwszej rejestracji sprowadzonego auta – i to on najczęściej decyduje o opłacalności:\n• w Polsce akcyza: 3,1% ceny przy silniku do 2000 cm³ i 18,6% powyżej (hybrydy o połowę mniej, elektryki 0%),\n• w Holandii BPM, w Austrii NoVA, w Belgii podatek od wprowadzenia do ruchu, w Danii i Finlandii podatki od wartości auta,\n• w Niemczech, Czechach czy Szwecji takiego podatku nie ma – są tylko opłaty rejestracyjne.\nKalkulator liczy go automatycznie od ceny zakupu, roku produkcji, CO₂ i mocy."
+    },
+    "documents": {
+      "title": "Dokumenty do rejestracji auta z UE",
+      "text": "Zwykle potrzebujesz:\n• umowy kupna albo faktury,\n• zagranicznego dowodu rejestracyjnego (np. w Niemczech obie części: Zulassungsbescheinigung Teil I i II),\n• potwierdzenia zapłaty akcyzy lub podatku rejestracyjnego,\n• aktualnego badania technicznego w Twoim kraju,\n• tłumaczeń dokumentów w obcym języku, jeśli wymaga ich urząd.\nW Polsce auto sprowadzone z UE trzeba zarejestrować w ciągu 30 dni od przywozu, a deklarację akcyzową złożyć w ciągu 14 dni."
+    },
+    "faq": {
+      "title": "Najczęstsze pytania",
+      "q1": "Czy płacę cło za auto z Niemiec?",
+      "a1": "Nie. Między krajami Unii Europejskiej nie ma ceł, więc auto z Niemiec, Holandii czy Francji nie płaci cła. Płacisz natomiast podatki przy rejestracji obowiązujące w Twoim kraju, np. akcyzę w Polsce.",
+      "q2": "Czy płacę VAT za używane auto z UE?",
+      "a2": "Zwykle nie – VAT rozlicza się w kraju zakupu albo nie ma go wcale przy zakupie od osoby prywatnej lub w procedurze marży. Wyjątkiem są auta nowe (do 6 miesięcy lub 6000 km) – od nich VAT płacisz w kraju rejestracji.",
+      "q3": "Ile kosztuje transport auta z Niemiec do Polski?",
+      "a3": "Zależy od odległości i sposobu. Autolaweta to zwykle najtańsza opcja na dłuższej trasie, laweta indywidualna jest droższa. Kalkulator liczy koszt na podstawie dystansu między krajami i stawek za kilometr.",
+      "q4": "Czy mogę wrócić autem z Niemiec na kołach?",
+      "a4": "Tak, jeśli auto jest sprawne. Potrzebujesz tablic wywozowych z kraju zakupu albo tablic tymczasowych z Twojego wydziału komunikacji – zawsze z ubezpieczeniem OC na czas przejazdu.",
+      "q5": "Od jakiej kwoty liczona jest akcyza za auto z UE?",
+      "a5": "W Polsce od ceny zapłaconej za auto, przeliczonej na złote. Jeśli cena wyraźnie odbiega od wartości rynkowej, urząd skarbowy może przyjąć wartość rynkową. Stawka to 3,1% do 2000 cm³ i 18,6% powyżej.",
+      "q6": "Czy auto z UE wymaga homologacji?",
+      "a6": "Zwykle nie – auto zarejestrowane w innym kraju UE ma europejską homologację, więc wystarczy badanie techniczne. Dodatkowe badania lub przeróbki są potrzebne tylko w nietypowych przypadkach, np. po przeróbkach albo przy aucie z rynku spoza UE."
     }
   }
 }

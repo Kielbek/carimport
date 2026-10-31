@@ -70,6 +70,7 @@ export const serverRoutes: ServerRoute[] = [
   ...perLanguage(SLUGS.contact),
   ...perLanguage(SLUGS.vin),
   ...perLanguage(SLUGS.vinCompare),
+  ...perLanguage(SLUGS.euImport),
   ...perLanguage(SLUGS.copart),
   ...guides,
   ...blog,

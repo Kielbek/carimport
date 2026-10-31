@@ -1,6 +1,6 @@
 import { Lang } from '../i18n/language.service';
 
-export type Page = 'home' | 'calculator' | 'about' | 'privacy' | 'terms' | 'taxes' | 'method' | 'glossary' | 'contact' | 'vin' | 'vinCompare' | 'copart';
+export type Page = 'home' | 'calculator' | 'about' | 'privacy' | 'terms' | 'taxes' | 'method' | 'glossary' | 'contact' | 'vin' | 'vinCompare' | 'copart' | 'euImport';
 
 /** Localized URL slugs - "/pl/kalkulator" ranks for Polish queries far better than "/pl/calculator". */
 export const SLUGS: Record<Exclude<Page, 'home'>, Record<Lang, string>> = {
@@ -68,6 +68,14 @@ export const SLUGS: Record<Exclude<Page, 'home'>, Record<Lang, string>> = {
     sv: 'vin-kontroll', uk: 'perevirka-vin',
   },
   /** Vehicle history report providers compared. */
+  euImport: {
+    bg: 'vnos-na-kola-ot-es', cs: 'dovoz-auta-z-eu', da: 'import-af-bil-fra-eu', de: 'auto-import-aus-der-eu', el: 'eisagogi-aftokinitou-apo-ee',
+    en: 'import-car-from-eu', es: 'importar-coche-de-la-ue', et: 'auto-import-el-ist', fi: 'auton-tuonti-eu-maasta',
+    fr: 'importer-voiture-ue', hr: 'uvoz-automobila-iz-eu', hu: 'autoimport-eu-bol', it: 'importare-auto-dalla-ue',
+    lt: 'automobilio-importas-is-es', lv: 'auto-imports-no-es', nl: 'auto-importeren-uit-eu', pl: 'import-auta-z-ue',
+    pt: 'importar-carro-da-ue', ro: 'import-masina-din-ue', sk: 'dovoz-auta-z-eu', sl: 'uvoz-avtomobila-iz-eu',
+    sv: 'importera-bil-fran-eu', uk: 'import-avto-z-yes',
+  },
   vinCompare: {
     bg: 'sravnenie-vin-dokladi', cs: 'srovnani-vin-reportu', da: 'vin-rapporter-sammenligning', de: 'fahrzeughistorie-vergleich',
     el: 'sygkrisi-anaforon-vin', en: 'vin-report-comparison', es: 'comparativa-informes-vin', et: 'vin-raportide-vordlus',
