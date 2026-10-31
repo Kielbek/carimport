@@ -23,8 +23,8 @@ interface CostGroup { key: string; icon: IconName; items: number }
   selector: 'app-home-page',
   imports: [RouterLink, TranslatePipe, CountryNamePipe, Flag, Icon, WorldMap, FaqSection],
   template: `
-    <!-- HERO: follows the light/dark theme on desktop; always dark on phones (text, then the night photo, then the facts) -->
-    <section class="hero hero-mobile-dark relative isolate overflow-hidden text-fg">
+    <!-- HERO: always dark; phones: text on the night photo, then the facts; desktop: text left, photo right, facts band below -->
+    <section class="hero hero-night relative isolate overflow-hidden text-fg">
       <div class="site relative grid pb-8 pt-7 lg:min-h-[660px] lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:items-center lg:gap-6 lg:pb-44 lg:pt-12">
         <div class="relative z-10 min-h-[340px] max-w-[600px] lg:min-h-0">
           <p class="eyebrow hidden lg:block">{{ 'home.hero.eyebrow' | translate }}</p>
@@ -45,18 +45,13 @@ interface CostGroup { key: string; icon: IconName; items: number }
           </div>
         </div>
 
-        <!-- phones: the night photo is the backdrop of the whole hero (text on its dark top, car below); desktop: the neon car beside the text -->
-        <div class="absolute inset-x-0 top-0 -z-10 h-[700px] lg:relative lg:inset-auto lg:z-auto lg:h-auto lg:-mr-24">
-          <picture>
-            <source media="(max-width: 1023.98px)" srcset="/images/hero-night-750.webp 750w, /images/hero-night-1100.webp 1100w"
-                    sizes="100vw" width="1100" height="1311" />
-            <img class="hero-car h-full w-full object-cover object-[100%_50%] sm:object-[100%_75%] lg:h-auto lg:object-contain"
-                 src="/images/hero-car-900.webp"
-                 srcset="/images/hero-car-750.webp 750w, /images/hero-car-900.webp 900w, /images/hero-car-1600.webp 1600w"
-                 sizes="60vw" width="1600" height="835" fetchpriority="high" decoding="async"
-                 [alt]="'home.hero.visual' | translate" />
-          </picture>
-          <div class="hero-night-shade absolute inset-0 lg:hidden" aria-hidden="true"></div>
+        <!-- the night photo: backdrop of the whole hero on phones, right-hand panel on desktop -->
+        <div class="absolute inset-x-0 top-0 -z-10 h-[700px] lg:inset-y-0 lg:left-auto lg:h-auto lg:w-[60%]">
+          <img class="pointer-events-none h-full w-full select-none object-cover object-[100%_50%] sm:object-[100%_75%] lg:object-[60%_72%]"
+               src="/images/hero-night-1100.webp" srcset="/images/hero-night-750.webp 750w, /images/hero-night-1100.webp 1100w"
+               sizes="(min-width: 1024px) 60vw, 100vw" width="1100" height="1311" fetchpriority="high" decoding="async"
+               [alt]="'home.hero.visual' | translate" />
+          <div class="hero-night-shade absolute inset-0" aria-hidden="true"></div>
         </div>
 
         <!-- facts band: claim and three facts (phones: facts framed over the photo's bottom edge, then the claim) -->
