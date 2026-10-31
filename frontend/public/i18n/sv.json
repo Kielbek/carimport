@@ -514,7 +514,7 @@
     "vin": "VIN-kontroll",
     "copart": "Copart – så köper du",
     "vinCompare": "VIN-rapporter jämförda",
-    "euImport": "Import a car from the EU"
+    "euImport": "Importera bil från EU"
   },
   "footer": {
     "about": "Oberoende kalkylator för importkostnader för bilar från länder utanför EU. Vi varken säljer eller importerar bilar – vi räknar ut vad de verkligen kostar.",
@@ -894,8 +894,8 @@
       "description": "Vilken VIN-rapport ska du välja för en bil från USA eller Europa? Täckning, skade- och title-data, foton och priser: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
-      "title": "Import a car from Germany or another EU country – cost calculator | Carglo",
-      "description": "What does it cost to bring a car from Germany, the Netherlands or another EU country? Free calculator: transport by car carrier or on export plates, registration tax, VAT on new cars and fees."
+      "title": "Importera bil från Tyskland eller EU – kostnadskalkylator: transport, moms, registrering | Carglo",
+      "description": "Vad kostar det att ta hem en bil från Tyskland, Danmark eller ett annat EU-land? Gratis kalkylator: transport med biltransport eller på exportskyltar, moms på nya bilar, registreringsavgifter och försäkring."
     }
   },
   "privacy": {
@@ -2303,81 +2303,81 @@
     }
   },
   "euImport": {
-    "eyebrow": "EU import calculator",
-    "title": "What it costs to bring a car from Germany or another EU country",
-    "lead": "A car from another EU country pays no customs duty, but transport, registration taxes and fees come on top of the price. Choose where you buy and where you register – we work out the full cost for free.",
-    "origin": "Country of purchase",
-    "destination": "Country of registration",
-    "price": "Car price",
-    "currency": "Currency",
-    "year": "Year of manufacture",
-    "fuel": "Fuel",
-    "engine": "Engine size (cc)",
-    "power": "Power (kW)",
-    "co2": "CO₂ emissions (g/km)",
-    "optional": "optional",
-    "transportLabel": "How the car gets to you",
+    "eyebrow": "Kalkylator för import från EU",
+    "title": "Vad kostar det att importera en bil från Tyskland eller ett annat EU-land",
+    "lead": "En bil från ett annat EU-land betalar ingen tull, men transport, skatter vid registrering och avgifter tillkommer på priset. Välj köpland och registreringsland – vi räknar ut totalkostnaden gratis.",
+    "origin": "Köpland",
+    "destination": "Registreringsland",
+    "price": "Bilens pris",
+    "currency": "Valuta",
+    "year": "Tillverkningsår",
+    "fuel": "Bränsle",
+    "engine": "Motorvolym (cm³)",
+    "power": "Effekt (kW)",
+    "co2": "CO₂-utsläpp (g/km)",
+    "optional": "valfritt",
+    "transportLabel": "Hur bilen kommer till dig",
     "mode": {
-      "CAR_CARRIER": "Car carrier",
-      "TOW_TRUCK": "Dedicated tow truck",
-      "SELF_DRIVE": "Drive it home on export plates"
+      "CAR_CARRIER": "Biltransport",
+      "TOW_TRUCK": "Egen bärgningsbil",
+      "SELF_DRIVE": "Kör hem själv på exportskyltar"
     },
-    "newVehicle": "New vehicle for VAT purposes",
-    "newVehicleHint": "Up to 6 months since first registration or up to 6,000 km – VAT is then paid in your country.",
-    "submit": "Calculate cost",
-    "calculating": "Calculating…",
-    "resultTitle": "Cost of importing",
-    "route": "{{from}} → {{to}}: approx. {{km}} km",
-    "total": "Total",
-    "empty": "Fill in the details and click “Calculate cost”.",
-    "error": "We could not calculate this. Check the details and try again.",
-    "note": "Estimate based on current rates. Taxes are calculated on the purchase price; the authorities may use the market value if the price differs from it.",
-    "nonEu": "Car from the USA, Canada, Japan, the UAE or the UK?",
-    "nonEuLink": "Use the non-EU import calculator",
+    "newVehicle": "Ny bil enligt momsreglerna",
+    "newVehicleHint": "Högst 6 månader sedan första registreringen eller högst 6 000 km – då betalar du momsen i ditt land.",
+    "submit": "Beräkna kostnad",
+    "calculating": "Beräknar…",
+    "resultTitle": "Importkostnad",
+    "route": "{{from}} → {{to}}: ca {{km}} km",
+    "total": "Totalt",
+    "empty": "Fyll i uppgifterna och klicka på ”Beräkna kostnad”.",
+    "error": "Beräkningen misslyckades. Kontrollera uppgifterna och försök igen.",
+    "note": "Uppskattning utifrån aktuella taxor. Skatter beräknas på köpeskillingen; myndigheten kan använda marknadsvärdet om priset avviker från det.",
+    "nonEu": "Bil från USA, Kanada, Japan, Förenade Arabemiraten eller Storbritannien?",
+    "nonEuLink": "Använd kalkylatorn för import utanför EU",
     "cost": {
-      "PURCHASE_PRICE": "Purchase price",
-      "EU_TRANSPORT_CAR_CARRIER": "Car carrier transport ({{km}} km)",
-      "EU_TRANSPORT_TOW_TRUCK": "Dedicated tow truck ({{km}} km)",
-      "EU_TRANSPORT_SELF_DRIVE": "Export plates with insurance, fuel and tolls ({{km}} km)",
-      "EU_NEW_VEHICLE_VAT": "VAT {{rate}}% on a new car",
-      "INSURANCE_FIRST_YEAR": "Liability insurance – first year (estimate)"
+      "PURCHASE_PRICE": "Köpeskilling",
+      "EU_TRANSPORT_CAR_CARRIER": "Biltransport ({{km}} km)",
+      "EU_TRANSPORT_TOW_TRUCK": "Egen bärgningsbil ({{km}} km)",
+      "EU_TRANSPORT_SELF_DRIVE": "Exportskyltar med försäkring, bränsle och vägavgifter ({{km}} km)",
+      "EU_NEW_VEHICLE_VAT": "Moms {{rate}} % på en ny bil",
+      "INSURANCE_FIRST_YEAR": "Trafikförsäkring – första året (uppskattning)"
     },
     "warning": {
-      "usedVatAtOrigin": "Used car: VAT is settled in the country of purchase (or there is none when buying from a private seller or under the margin scheme) – you do not pay it again where you register.",
-      "newVehicleVat": "New car: the seller invoices without VAT and you pay VAT in the country of registration. Enter the net price.",
-      "exportPlates": "For the trip you need export plates from the country of purchase or temporary plates from your own registration office – both with liability insurance.",
-      "ferry": "The route needs a ferry – its cost is not included."
+      "usedVatAtOrigin": "Begagnad bil: momsen redovisas i köplandet (eller finns inte alls vid köp från privatperson eller med vinstmarginalbeskattning) – du betalar den inte igen där du registrerar.",
+      "newVehicleVat": "Ny bil: säljaren fakturerar utan moms och du betalar momsen i registreringslandet. Ange priset utan moms.",
+      "exportPlates": "För resan behöver du exportskyltar från köplandet eller tillfälliga skyltar från ditt eget land – alltid med trafikförsäkring.",
+      "ferry": "Rutten kräver färja – den kostnaden ingår inte."
     },
     "vat": {
-      "title": "VAT on a car from the EU – when you pay it",
-      "text": "There are no customs duties between EU countries, and VAT is settled only once:\n• Used car from a private seller or from a dealer under the margin scheme – there is no VAT, or it is already in the price. You do not pay it again at home.\n• Used car from a dealer with a full VAT invoice – a private buyer pays the VAT of the country of purchase in the price. A business can buy net and account for VAT at home.\n• New car – up to 6 months since first registration or up to 6,000 km. VAT is then always paid in the country of registration, and the seller invoices at 0%."
+      "title": "Moms på en bil från EU – när betalar du den",
+      "text": "Mellan EU-länder finns ingen tull, och momsen redovisas bara en gång:\n• Begagnad bil från privatperson eller från handlare med vinstmarginalbeskattning – ingen moms, eller den ingår redan i priset. Du betalar den inte igen hemma.\n• Begagnad bil från handlare med full momsfaktura – en privatperson betalar köplandets moms i priset. Ett företag kan köpa utan moms och redovisa den i Sverige.\n• Ny bil – högst 6 månader sedan första registreringen eller högst 6 000 km. Då betalas momsen alltid i registreringslandet och säljaren fakturerar med 0 %."
     },
     "transport": {
-      "title": "Transport – carrier or on its own wheels",
-      "text": "A car carrier is the cheapest option over a longer distance – you pay per kilometre and the car travels with others. A dedicated tow truck costs more but collects the car right away and carries only yours – the choice for cars that do not run.\nYou can drive home if the car runs. You need export plates from the country of purchase (e.g. Ausfuhrkennzeichen in Germany) or temporary plates from the registration office in your country – always with liability insurance. Add fuel and tolls along the way."
+      "title": "Transport – biltransport eller köra själv",
+      "text": "Biltransport är billigast på längre sträckor – du betalar per kilometer och bilen åker tillsammans med andra. En egen bärgningsbil kostar mer men hämtar bilen direkt och fraktar bara din – valet för bilar som inte går.\nDu kan köra hem om bilen går. Du behöver exportskyltar från köplandet (t.ex. Ausfuhrkennzeichen i Tyskland) eller tillfälliga skyltar från ditt land – alltid med trafikförsäkring. Lägg till bränsle, vägavgifter och färja."
     },
     "taxes": {
-      "title": "Taxes at registration",
-      "text": "Each country has its own one-off tax at the first registration of an imported car – and it most often decides whether importing pays off:\n• Poland: excise of 3.1% of the price up to 2,000 cc and 18.6% above (half for hybrids, 0% for EVs),\n• the Netherlands: BPM, Austria: NoVA, Belgium: registration tax, Denmark and Finland: taxes on the car’s value,\n• Germany, Czechia or Sweden have no such tax – only registration fees.\nThe calculator works it out automatically from the purchase price, year, CO₂ and power."
+      "title": "Skatter vid registrering",
+      "text": "Varje land har en egen engångsskatt vid första registreringen av en importerad bil – och den avgör ofta om importen lönar sig:\n• Sverige har ingen sådan skatt – du betalar ursprungskontroll, registreringsbesiktning och avgifter, och därefter årlig fordonsskatt (med malus för nyare bilar),\n• Polen: punktskatt på 3,1 % av priset upp till 2 000 cm³ och 18,6 % över; Nederländerna: BPM; Österrike: NoVA; Danmark och Finland: skatter på bilens värde,\n• Tyskland och Tjeckien har också bara registreringsavgifter.\nKalkylatorn räknar ut skatten automatiskt där den finns."
     },
     "documents": {
-      "title": "Documents to register a car from the EU",
-      "text": "You usually need:\n• the purchase contract or invoice,\n• the foreign registration certificate (in Germany both parts: Zulassungsbescheinigung Teil I and II),\n• proof of payment of excise or registration tax,\n• a valid roadworthiness test in your country,\n• translations of foreign-language documents if your office requires them.\nDeadlines differ between countries – in Poland, for example, a car brought from the EU must be registered within 30 days."
+      "title": "Dokument för att registrera en bil från EU",
+      "text": "Oftast behöver du:\n• köpeavtal eller faktura,\n• det utländska registreringsbeviset (i Tyskland båda delarna: Zulassungsbescheinigung Teil I och II),\n• ursprungskontroll hos Transportstyrelsen och registreringsbesiktning,\n• intyg om överensstämmelse (COC) om det krävs,\n• bevis på betald moms för en ny bil.\nTidsfristerna skiljer sig mellan länder – kontakta registreringsmyndigheten."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Do I pay customs duty on a car from Germany?",
-      "a1": "No. There are no customs duties between EU countries, so a car from Germany, the Netherlands or France pays no duty. You do pay your own country’s registration taxes, such as excise in Poland or BPM in the Netherlands.",
-      "q2": "Do I pay VAT on a used car from the EU?",
-      "a2": "Usually not – VAT is settled in the country of purchase, or there is none when buying from a private seller or under the margin scheme. The exception is new cars (up to 6 months or 6,000 km) – their VAT is paid in the country of registration.",
-      "q3": "How much does it cost to transport a car from Germany?",
-      "a3": "It depends on the distance and the method. A car carrier is usually the cheapest over a longer distance, a dedicated tow truck costs more. The calculator prices it from the distance between the countries and per-kilometre rates.",
-      "q4": "Can I drive the car home from Germany?",
-      "a4": "Yes, if it runs. You need export plates from the country of purchase or temporary plates from your registration office – always with liability insurance for the trip.",
-      "q5": "What value is the registration tax based on?",
-      "a5": "Usually on the price you paid or on the car’s value, depending on the country – some countries also use CO₂ and age. If the price is far from the market value, the authorities may use the market value.",
-      "q6": "Does a car from the EU need type approval?",
-      "a6": "Usually not – a car registered in another EU country already has European type approval, so a roadworthiness test is enough. Extra tests or modifications are only needed in unusual cases, e.g. after modifications or for a car originally from outside the EU."
+      "title": "Vanliga frågor",
+      "q1": "Betalar jag tull för en bil från Tyskland?",
+      "a1": "Nej. Mellan EU-länder finns ingen tull, så en bil från Tyskland, Danmark eller Frankrike är tullfri. Du betalar däremot avgifterna för registrering i Sverige – och moms om bilen är ny.",
+      "q2": "Betalar jag moms för en begagnad bil från EU?",
+      "a2": "Oftast inte – momsen redovisas i köplandet eller finns inte vid köp från privatperson eller med vinstmarginalbeskattning. Undantaget är nya bilar (högst 6 månader eller 6 000 km), vars moms betalas i registreringslandet.",
+      "q3": "Vad kostar det att frakta en bil från Tyskland?",
+      "a3": "Det beror på avstånd och sätt. Biltransport är oftast billigast på längre sträckor, en egen bärgningsbil kostar mer. Kalkylatorn räknar på avståndet mellan länderna och kilometerpriser.",
+      "q4": "Kan jag köra hem bilen från Tyskland själv?",
+      "a4": "Ja, om den går. Du behöver exportskyltar från köplandet eller tillfälliga skyltar från ditt land – alltid med trafikförsäkring för resan.",
+      "q5": "Vilket värde beräknas registreringsskatten på?",
+      "a5": "Sverige har ingen registreringsskatt. I andra länder beräknas den på priset eller bilens värde, ibland också på CO₂ och ålder. Om priset avviker kraftigt från marknadsvärdet kan myndigheten använda det.",
+      "q6": "Behöver en bil från EU typgodkännas?",
+      "a6": "Oftast inte – en bil som registrerats i ett annat EU-land har redan EU-typgodkännande, och det räcker med ursprungskontroll och registreringsbesiktning. Mer krävs bara i särskilda fall, t.ex. efter ombyggnad."
     }
   }
 }

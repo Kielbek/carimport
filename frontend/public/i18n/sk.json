@@ -514,7 +514,7 @@
     "vin": "Kontrola VIN",
     "copart": "Copart – ako nakúpiť",
     "vinCompare": "Porovnanie VIN reportov",
-    "euImport": "Import a car from the EU"
+    "euImport": "Dovoz auta z EÚ"
   },
   "footer": {
     "about": "Nezávislá kalkulačka nákladov na dovoz áut z krajín mimo EÚ. Autá nepredávame ani nedovážame – počítame, koľko naozaj stoja.",
@@ -894,8 +894,8 @@
       "description": "Aký VIN report zvoliť pre auto z USA alebo z Európy? Porovnanie pokrytia, údajov o škodách a title, fotiek a cien: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
-      "title": "Import a car from Germany or another EU country – cost calculator | Carglo",
-      "description": "What does it cost to bring a car from Germany, the Netherlands or another EU country? Free calculator: transport by car carrier or on export plates, registration tax, VAT on new cars and fees."
+      "title": "Dovoz auta z Nemecka a EÚ – kalkulačka nákladov: doprava, registračný poplatok | Carglo",
+      "description": "Koľko stojí dovoz auta z Nemecka, Rakúska alebo inej krajiny EÚ? Bezplatná kalkulačka: doprava odťahovkou alebo na vývozných značkách, registračný poplatok, DPH pri novom aute a ďalšie poplatky."
     }
   },
   "privacy": {
@@ -2303,81 +2303,81 @@
     }
   },
   "euImport": {
-    "eyebrow": "EU import calculator",
-    "title": "What it costs to bring a car from Germany or another EU country",
-    "lead": "A car from another EU country pays no customs duty, but transport, registration taxes and fees come on top of the price. Choose where you buy and where you register – we work out the full cost for free.",
-    "origin": "Country of purchase",
-    "destination": "Country of registration",
-    "price": "Car price",
-    "currency": "Currency",
-    "year": "Year of manufacture",
-    "fuel": "Fuel",
-    "engine": "Engine size (cc)",
-    "power": "Power (kW)",
-    "co2": "CO₂ emissions (g/km)",
-    "optional": "optional",
-    "transportLabel": "How the car gets to you",
+    "eyebrow": "Kalkulačka dovozu z EÚ",
+    "title": "Koľko stojí dovoz auta z Nemecka alebo inej krajiny EÚ",
+    "lead": "Auto z inej krajiny EÚ neplatí clo, ale k cene sa pripočítava doprava, dane pri registrácii a poplatky. Vyberte krajinu kúpy a krajinu registrácie – celkové náklady vypočítame zadarmo.",
+    "origin": "Krajina kúpy",
+    "destination": "Krajina registrácie",
+    "price": "Cena auta",
+    "currency": "Mena",
+    "year": "Rok výroby",
+    "fuel": "Palivo",
+    "engine": "Objem motora (cm³)",
+    "power": "Výkon (kW)",
+    "co2": "Emisie CO₂ (g/km)",
+    "optional": "nepovinné",
+    "transportLabel": "Ako sa auto dostane k vám",
     "mode": {
-      "CAR_CARRIER": "Car carrier",
-      "TOW_TRUCK": "Dedicated tow truck",
-      "SELF_DRIVE": "Drive it home on export plates"
+      "CAR_CARRIER": "Autotransportér",
+      "TOW_TRUCK": "Samostatná odťahovka",
+      "SELF_DRIVE": "Pôjdem sám na vývozných značkách"
     },
-    "newVehicle": "New vehicle for VAT purposes",
-    "newVehicleHint": "Up to 6 months since first registration or up to 6,000 km – VAT is then paid in your country.",
-    "submit": "Calculate cost",
-    "calculating": "Calculating…",
-    "resultTitle": "Cost of importing",
-    "route": "{{from}} → {{to}}: approx. {{km}} km",
-    "total": "Total",
-    "empty": "Fill in the details and click “Calculate cost”.",
-    "error": "We could not calculate this. Check the details and try again.",
-    "note": "Estimate based on current rates. Taxes are calculated on the purchase price; the authorities may use the market value if the price differs from it.",
-    "nonEu": "Car from the USA, Canada, Japan, the UAE or the UK?",
-    "nonEuLink": "Use the non-EU import calculator",
+    "newVehicle": "Nové auto z hľadiska DPH",
+    "newVehicleHint": "Do 6 mesiacov od prvej registrácie alebo do 6000 km – DPH potom platíte vo svojej krajine.",
+    "submit": "Vypočítať náklady",
+    "calculating": "Počítam…",
+    "resultTitle": "Náklady na dovoz",
+    "route": "{{from}} → {{to}}: cca {{km}} km",
+    "total": "Spolu",
+    "empty": "Vyplňte údaje a kliknite na „Vypočítať náklady“.",
+    "error": "Výpočet sa nepodaril. Skontrolujte údaje a skúste to znova.",
+    "note": "Odhad podľa aktuálnych sadzieb. Dane počítame z kúpnej ceny; úrad môže použiť trhovú hodnotu, ak sa od nej cena líši.",
+    "nonEu": "Auto z USA, Kanady, Japonska, SAE alebo Veľkej Británie?",
+    "nonEuLink": "Použite kalkulačku dovozu mimo EÚ",
     "cost": {
-      "PURCHASE_PRICE": "Purchase price",
-      "EU_TRANSPORT_CAR_CARRIER": "Car carrier transport ({{km}} km)",
-      "EU_TRANSPORT_TOW_TRUCK": "Dedicated tow truck ({{km}} km)",
-      "EU_TRANSPORT_SELF_DRIVE": "Export plates with insurance, fuel and tolls ({{km}} km)",
-      "EU_NEW_VEHICLE_VAT": "VAT {{rate}}% on a new car",
-      "INSURANCE_FIRST_YEAR": "Liability insurance – first year (estimate)"
+      "PURCHASE_PRICE": "Kúpna cena",
+      "EU_TRANSPORT_CAR_CARRIER": "Doprava autotransportérom ({{km}} km)",
+      "EU_TRANSPORT_TOW_TRUCK": "Samostatná odťahovka ({{km}} km)",
+      "EU_TRANSPORT_SELF_DRIVE": "Vývozné značky s poistením, palivo a mýto ({{km}} km)",
+      "EU_NEW_VEHICLE_VAT": "DPH {{rate}} % z nového auta",
+      "INSURANCE_FIRST_YEAR": "PZP – prvý rok (odhad)"
     },
     "warning": {
-      "usedVatAtOrigin": "Used car: VAT is settled in the country of purchase (or there is none when buying from a private seller or under the margin scheme) – you do not pay it again where you register.",
-      "newVehicleVat": "New car: the seller invoices without VAT and you pay VAT in the country of registration. Enter the net price.",
-      "exportPlates": "For the trip you need export plates from the country of purchase or temporary plates from your own registration office – both with liability insurance.",
-      "ferry": "The route needs a ferry – its cost is not included."
+      "usedVatAtOrigin": "Ojazdené auto: DPH sa vysporiada v krajine kúpy (alebo vôbec nie je pri kúpe od súkromnej osoby či v osobitnom režime) – v krajine registrácie ju neplatíte druhýkrát.",
+      "newVehicleVat": "Nové auto: predajca fakturuje bez DPH a DPH zaplatíte v krajine registrácie. Zadajte cenu bez DPH.",
+      "exportPlates": "Na cestu potrebujete vývozné značky z krajiny kúpy alebo dočasné značky z vašej krajiny – vždy s PZP.",
+      "ferry": "Trasa vyžaduje trajekt – jeho cena nie je započítaná."
     },
     "vat": {
-      "title": "VAT on a car from the EU – when you pay it",
-      "text": "There are no customs duties between EU countries, and VAT is settled only once:\n• Used car from a private seller or from a dealer under the margin scheme – there is no VAT, or it is already in the price. You do not pay it again at home.\n• Used car from a dealer with a full VAT invoice – a private buyer pays the VAT of the country of purchase in the price. A business can buy net and account for VAT at home.\n• New car – up to 6 months since first registration or up to 6,000 km. VAT is then always paid in the country of registration, and the seller invoices at 0%."
+      "title": "DPH pri aute z EÚ – kedy ju platíte",
+      "text": "Medzi krajinami EÚ sa neplatí clo a DPH sa vysporiada len raz:\n• Ojazdené auto od súkromnej osoby alebo od predajcu v osobitnom režime – DPH nie je alebo je už v cene. Doma ju neplatíte znova.\n• Ojazdené auto od predajcu s plnou faktúrou s DPH – súkromná osoba platí v cene DPH krajiny kúpy. Firma môže kúpiť bez DPH a priznať ju doma.\n• Nové auto – do 6 mesiacov od prvej registrácie alebo do 6000 km. DPH sa potom vždy platí v krajine registrácie a predajca fakturuje s 0 %."
     },
     "transport": {
-      "title": "Transport – carrier or on its own wheels",
-      "text": "A car carrier is the cheapest option over a longer distance – you pay per kilometre and the car travels with others. A dedicated tow truck costs more but collects the car right away and carries only yours – the choice for cars that do not run.\nYou can drive home if the car runs. You need export plates from the country of purchase (e.g. Ausfuhrkennzeichen in Germany) or temporary plates from the registration office in your country – always with liability insurance. Add fuel and tolls along the way."
+      "title": "Doprava – odťahovka, alebo po vlastnej osi",
+      "text": "Autotransportér je na dlhšej trase najlacnejší – platíte za kilometre a auto ide s ďalšími. Samostatná odťahovka je drahšia, ale vyzdvihne auto hneď a vezie len vaše – voľba pre nepojazdné autá.\nPo vlastnej osi sa vrátite, ak je auto pojazdné. Potrebujete vývozné značky z krajiny kúpy (napr. Ausfuhrkennzeichen v Nemecku) alebo dočasné značky z vašej krajiny – vždy s PZP. Pripočítajte palivo a mýto."
     },
     "taxes": {
-      "title": "Taxes at registration",
-      "text": "Each country has its own one-off tax at the first registration of an imported car – and it most often decides whether importing pays off:\n• Poland: excise of 3.1% of the price up to 2,000 cc and 18.6% above (half for hybrids, 0% for EVs),\n• the Netherlands: BPM, Austria: NoVA, Belgium: registration tax, Denmark and Finland: taxes on the car’s value,\n• Germany, Czechia or Sweden have no such tax – only registration fees.\nThe calculator works it out automatically from the purchase price, year, CO₂ and power."
+      "title": "Dane pri registrácii",
+      "text": "Každá krajina má vlastnú jednorazovú daň pri prvej registrácii dovezeného auta – a tá zvyčajne rozhoduje, či sa dovoz oplatí:\n• Slovensko: registračný poplatok podľa výkonu motora so zľavou podľa veku auta,\n• Poľsko: spotrebná daň 3,1 % z ceny do 2000 cm³ a 18,6 % nad; Holandsko: BPM; Rakúsko: NoVA; Dánsko a Fínsko: dane z hodnoty,\n• Nemecko, Česko či Švédsko takú daň nemajú – len registračné poplatky.\nKalkulačka ju vypočíta automaticky z ceny, roku výroby, CO₂ a výkonu."
     },
     "documents": {
-      "title": "Documents to register a car from the EU",
-      "text": "You usually need:\n• the purchase contract or invoice,\n• the foreign registration certificate (in Germany both parts: Zulassungsbescheinigung Teil I and II),\n• proof of payment of excise or registration tax,\n• a valid roadworthiness test in your country,\n• translations of foreign-language documents if your office requires them.\nDeadlines differ between countries – in Poland, for example, a car brought from the EU must be registered within 30 days."
+      "title": "Doklady na registráciu auta z EÚ",
+      "text": "Zvyčajne potrebujete:\n• kúpnu zmluvu alebo faktúru,\n• zahraničné osvedčenie o evidencii (v Nemecku obe časti: Zulassungsbescheinigung Teil I a II),\n• kontrolu originality a platnú technickú kontrolu,\n• doklad o zaplatení registračného poplatku,\n• úradné preklady cudzojazyčných dokladov, ak ich úrad vyžaduje.\nLehoty sa v jednotlivých krajinách líšia – informujte sa na dopravnom inšpektoráte."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Do I pay customs duty on a car from Germany?",
-      "a1": "No. There are no customs duties between EU countries, so a car from Germany, the Netherlands or France pays no duty. You do pay your own country’s registration taxes, such as excise in Poland or BPM in the Netherlands.",
-      "q2": "Do I pay VAT on a used car from the EU?",
-      "a2": "Usually not – VAT is settled in the country of purchase, or there is none when buying from a private seller or under the margin scheme. The exception is new cars (up to 6 months or 6,000 km) – their VAT is paid in the country of registration.",
-      "q3": "How much does it cost to transport a car from Germany?",
-      "a3": "It depends on the distance and the method. A car carrier is usually the cheapest over a longer distance, a dedicated tow truck costs more. The calculator prices it from the distance between the countries and per-kilometre rates.",
-      "q4": "Can I drive the car home from Germany?",
-      "a4": "Yes, if it runs. You need export plates from the country of purchase or temporary plates from your registration office – always with liability insurance for the trip.",
-      "q5": "What value is the registration tax based on?",
-      "a5": "Usually on the price you paid or on the car’s value, depending on the country – some countries also use CO₂ and age. If the price is far from the market value, the authorities may use the market value.",
-      "q6": "Does a car from the EU need type approval?",
-      "a6": "Usually not – a car registered in another EU country already has European type approval, so a roadworthiness test is enough. Extra tests or modifications are only needed in unusual cases, e.g. after modifications or for a car originally from outside the EU."
+      "title": "Časté otázky",
+      "q1": "Platím clo za auto z Nemecka?",
+      "a1": "Nie. Medzi krajinami EÚ sa clo neplatí, takže auto z Nemecka, Rakúska alebo Francúzska je bez cla. Platíte však registračný poplatok svojej krajiny.",
+      "q2": "Platím DPH za ojazdené auto z EÚ?",
+      "a2": "Zvyčajne nie – DPH sa vysporiada v krajine kúpy alebo vôbec nie je pri kúpe od súkromnej osoby či v osobitnom režime. Výnimkou sú nové autá (do 6 mesiacov alebo 6000 km), pri ktorých sa DPH platí v krajine registrácie.",
+      "q3": "Koľko stojí doprava auta z Nemecka?",
+      "a3": "Závisí od vzdialenosti a spôsobu. Autotransportér býva na dlhšej trase najlacnejší, samostatná odťahovka je drahšia. Kalkulačka počíta so vzdialenosťou medzi krajinami a cenami za kilometer.",
+      "q4": "Môžem auto z Nemecka priviezť po vlastnej osi?",
+      "a4": "Áno, ak je pojazdné. Potrebujete vývozné značky z krajiny kúpy alebo dočasné značky z vašej krajiny – vždy s PZP na cestu.",
+      "q5": "Z akej hodnoty sa počíta registračný poplatok?",
+      "a5": "Na Slovensku z výkonu motora so zľavou podľa veku auta. Iné krajiny počítajú z ceny alebo hodnoty auta, niekedy aj z CO₂ a veku.",
+      "q6": "Potrebuje auto z EÚ homologizáciu?",
+      "a6": "Zvyčajne nie – auto registrované v inej krajine EÚ má európske schválenie typu, stačí kontrola originality a technická kontrola. Ďalšie skúšky alebo úpravy sú potrebné len vo výnimočných prípadoch, napr. po prestavbe alebo pri aute pôvodne z trhu mimo EÚ."
     }
   }
 }

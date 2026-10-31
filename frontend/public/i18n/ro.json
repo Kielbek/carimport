@@ -514,7 +514,7 @@
     "vin": "Verificare VIN",
     "copart": "Copart – cum cumperi",
     "vinCompare": "Rapoarte VIN comparate",
-    "euImport": "Import a car from the EU"
+    "euImport": "Import mașină din UE"
   },
   "footer": {
     "about": "Calculator independent al costurilor de import pentru mașini din afara UE. Nu vindem și nu importăm mașini – calculăm cât costă de fapt.",
@@ -894,8 +894,8 @@
       "description": "Ce raport VIN alegeți pentru o mașină din SUA sau din Europa? Acoperire, date despre daune și title, fotografii și prețuri: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
-      "title": "Import a car from Germany or another EU country – cost calculator | Carglo",
-      "description": "What does it cost to bring a car from Germany, the Netherlands or another EU country? Free calculator: transport by car carrier or on export plates, registration tax, VAT on new cars and fees."
+      "title": "Import mașină din Germania sau UE – calculator costuri: transport, taxe, înmatriculare | Carglo",
+      "description": "Cât costă să aduci o mașină din Germania, Austria sau alt stat UE? Calculator gratuit: transport cu platformă sau pe numere de export, taxe la înmatriculare, TVA la mașinile noi și alte costuri."
     }
   },
   "privacy": {
@@ -2303,81 +2303,81 @@
     }
   },
   "euImport": {
-    "eyebrow": "EU import calculator",
-    "title": "What it costs to bring a car from Germany or another EU country",
-    "lead": "A car from another EU country pays no customs duty, but transport, registration taxes and fees come on top of the price. Choose where you buy and where you register – we work out the full cost for free.",
-    "origin": "Country of purchase",
-    "destination": "Country of registration",
-    "price": "Car price",
-    "currency": "Currency",
-    "year": "Year of manufacture",
-    "fuel": "Fuel",
-    "engine": "Engine size (cc)",
-    "power": "Power (kW)",
-    "co2": "CO₂ emissions (g/km)",
-    "optional": "optional",
-    "transportLabel": "How the car gets to you",
+    "eyebrow": "Calculator import din UE",
+    "title": "Cât costă să aduci o mașină din Germania sau din alt stat UE",
+    "lead": "O mașină din alt stat UE nu plătește taxă vamală, dar la preț se adaugă transportul, taxele la înmatriculare și alte costuri. Alegeți țara de cumpărare și țara de înmatriculare – calculăm gratuit costul total.",
+    "origin": "Țara de cumpărare",
+    "destination": "Țara de înmatriculare",
+    "price": "Prețul mașinii",
+    "currency": "Monedă",
+    "year": "Anul fabricației",
+    "fuel": "Combustibil",
+    "engine": "Capacitate cilindrică (cm³)",
+    "power": "Putere (kW)",
+    "co2": "Emisii CO₂ (g/km)",
+    "optional": "opțional",
+    "transportLabel": "Cum ajunge mașina la dvs.",
     "mode": {
-      "CAR_CARRIER": "Car carrier",
-      "TOW_TRUCK": "Dedicated tow truck",
-      "SELF_DRIVE": "Drive it home on export plates"
+      "CAR_CARRIER": "Platformă auto (transport comun)",
+      "TOW_TRUCK": "Platformă dedicată",
+      "SELF_DRIVE": "O aduc singur pe numere de export"
     },
-    "newVehicle": "New vehicle for VAT purposes",
-    "newVehicleHint": "Up to 6 months since first registration or up to 6,000 km – VAT is then paid in your country.",
-    "submit": "Calculate cost",
-    "calculating": "Calculating…",
-    "resultTitle": "Cost of importing",
-    "route": "{{from}} → {{to}}: approx. {{km}} km",
+    "newVehicle": "Mașină nouă din punctul de vedere al TVA",
+    "newVehicleHint": "Până la 6 luni de la prima înmatriculare sau până la 6000 km – atunci TVA se plătește în țara dvs.",
+    "submit": "Calculează costul",
+    "calculating": "Calculez…",
+    "resultTitle": "Costul importului",
+    "route": "{{from}} → {{to}}: aprox. {{km}} km",
     "total": "Total",
-    "empty": "Fill in the details and click “Calculate cost”.",
-    "error": "We could not calculate this. Check the details and try again.",
-    "note": "Estimate based on current rates. Taxes are calculated on the purchase price; the authorities may use the market value if the price differs from it.",
-    "nonEu": "Car from the USA, Canada, Japan, the UAE or the UK?",
-    "nonEuLink": "Use the non-EU import calculator",
+    "empty": "Completați datele și apăsați „Calculează costul”.",
+    "error": "Calculul nu a reușit. Verificați datele și încercați din nou.",
+    "note": "Estimare pe baza tarifelor actuale. Taxele sunt calculate din prețul de cumpărare; autoritățile pot folosi valoarea de piață dacă prețul diferă de ea.",
+    "nonEu": "Mașină din SUA, Canada, Japonia, EAU sau Regatul Unit?",
+    "nonEuLink": "Folosiți calculatorul de import din afara UE",
     "cost": {
-      "PURCHASE_PRICE": "Purchase price",
-      "EU_TRANSPORT_CAR_CARRIER": "Car carrier transport ({{km}} km)",
-      "EU_TRANSPORT_TOW_TRUCK": "Dedicated tow truck ({{km}} km)",
-      "EU_TRANSPORT_SELF_DRIVE": "Export plates with insurance, fuel and tolls ({{km}} km)",
-      "EU_NEW_VEHICLE_VAT": "VAT {{rate}}% on a new car",
-      "INSURANCE_FIRST_YEAR": "Liability insurance – first year (estimate)"
+      "PURCHASE_PRICE": "Preț de cumpărare",
+      "EU_TRANSPORT_CAR_CARRIER": "Transport cu platformă auto ({{km}} km)",
+      "EU_TRANSPORT_TOW_TRUCK": "Platformă dedicată ({{km}} km)",
+      "EU_TRANSPORT_SELF_DRIVE": "Numere de export cu asigurare, combustibil și taxe de drum ({{km}} km)",
+      "EU_NEW_VEHICLE_VAT": "TVA {{rate}}% la o mașină nouă",
+      "INSURANCE_FIRST_YEAR": "Asigurare RCA – primul an (estimare)"
     },
     "warning": {
-      "usedVatAtOrigin": "Used car: VAT is settled in the country of purchase (or there is none when buying from a private seller or under the margin scheme) – you do not pay it again where you register.",
-      "newVehicleVat": "New car: the seller invoices without VAT and you pay VAT in the country of registration. Enter the net price.",
-      "exportPlates": "For the trip you need export plates from the country of purchase or temporary plates from your own registration office – both with liability insurance.",
-      "ferry": "The route needs a ferry – its cost is not included."
+      "usedVatAtOrigin": "Mașină second-hand: TVA se plătește în țara de cumpărare (sau nu există la cumpărarea de la o persoană fizică ori în regim special) – nu o plătiți din nou în țara de înmatriculare.",
+      "newVehicleVat": "Mașină nouă: vânzătorul facturează fără TVA, iar TVA o plătiți în țara de înmatriculare. Introduceți prețul fără TVA.",
+      "exportPlates": "Pentru drum aveți nevoie de numere de export din țara de cumpărare sau de numere provizorii din țara dvs. – mereu cu asigurare RCA.",
+      "ferry": "Traseul necesită feribot – costul acestuia nu este inclus."
     },
     "vat": {
-      "title": "VAT on a car from the EU – when you pay it",
-      "text": "There are no customs duties between EU countries, and VAT is settled only once:\n• Used car from a private seller or from a dealer under the margin scheme – there is no VAT, or it is already in the price. You do not pay it again at home.\n• Used car from a dealer with a full VAT invoice – a private buyer pays the VAT of the country of purchase in the price. A business can buy net and account for VAT at home.\n• New car – up to 6 months since first registration or up to 6,000 km. VAT is then always paid in the country of registration, and the seller invoices at 0%."
+      "title": "TVA la o mașină din UE – când o plătiți",
+      "text": "Între statele UE nu există taxe vamale, iar TVA se plătește o singură dată:\n• Mașină second-hand de la o persoană fizică sau de la un dealer în regim special – nu există TVA sau este deja în preț. Nu o plătiți din nou acasă.\n• Mașină second-hand de la un dealer cu factură cu TVA – o persoană fizică plătește în preț TVA-ul țării de cumpărare. O firmă poate cumpăra fără TVA și o declară în România.\n• Mașină nouă – până la 6 luni de la prima înmatriculare sau până la 6000 km. TVA se plătește atunci mereu în țara de înmatriculare, iar vânzătorul facturează cu 0%."
     },
     "transport": {
-      "title": "Transport – carrier or on its own wheels",
-      "text": "A car carrier is the cheapest option over a longer distance – you pay per kilometre and the car travels with others. A dedicated tow truck costs more but collects the car right away and carries only yours – the choice for cars that do not run.\nYou can drive home if the car runs. You need export plates from the country of purchase (e.g. Ausfuhrkennzeichen in Germany) or temporary plates from the registration office in your country – always with liability insurance. Add fuel and tolls along the way."
+      "title": "Transport – platformă sau pe roți",
+      "text": "Platforma auto comună este cea mai ieftină variantă pe distanțe lungi – plătiți pe kilometru, iar mașina călătorește alături de altele. O platformă dedicată este mai scumpă, dar ridică mașina imediat și o transportă doar pe a dvs. – varianta pentru mașini care nu pornesc.\nPuteți veni pe roți dacă mașina funcționează. Aveți nevoie de numere de export din țara de cumpărare (de ex. Ausfuhrkennzeichen în Germania) sau de numere provizorii din țara dvs. – mereu cu asigurare RCA. Adăugați combustibilul și taxele de drum."
     },
     "taxes": {
-      "title": "Taxes at registration",
-      "text": "Each country has its own one-off tax at the first registration of an imported car – and it most often decides whether importing pays off:\n• Poland: excise of 3.1% of the price up to 2,000 cc and 18.6% above (half for hybrids, 0% for EVs),\n• the Netherlands: BPM, Austria: NoVA, Belgium: registration tax, Denmark and Finland: taxes on the car’s value,\n• Germany, Czechia or Sweden have no such tax – only registration fees.\nThe calculator works it out automatically from the purchase price, year, CO₂ and power."
+      "title": "Taxe la înmatriculare",
+      "text": "Fiecare țară are propria taxă unică la prima înmatriculare a unei mașini importate – și ea decide adesea dacă importul merită:\n• România: timbrul de mediu, după norma Euro, CO₂ și vechime (se calculează pe site-ul AFM),\n• Polonia: acciză de 3,1% din preț până la 2000 cm³ și 18,6% peste; Țările de Jos: BPM; Austria: NoVA; Danemarca și Finlanda: taxe pe valoare,\n• Germania, Cehia sau Suedia nu au o astfel de taxă – doar taxe de înmatriculare.\nCalculatorul o estimează automat din preț, an, CO₂ și putere acolo unde este posibil."
     },
     "documents": {
-      "title": "Documents to register a car from the EU",
-      "text": "You usually need:\n• the purchase contract or invoice,\n• the foreign registration certificate (in Germany both parts: Zulassungsbescheinigung Teil I and II),\n• proof of payment of excise or registration tax,\n• a valid roadworthiness test in your country,\n• translations of foreign-language documents if your office requires them.\nDeadlines differ between countries – in Poland, for example, a car brought from the EU must be registered within 30 days."
+      "title": "Documente pentru înmatricularea unei mașini din UE",
+      "text": "De obicei aveți nevoie de:\n• contract de vânzare-cumpărare sau factură,\n• certificatul de înmatriculare străin (în Germania ambele părți: Zulassungsbescheinigung Teil I și II),\n• cartea de identitate a vehiculului (RAR) și inspecția tehnică,\n• dovada plății timbrului de mediu,\n• traduceri legalizate ale documentelor, dacă sunt cerute.\nTermenele diferă de la țară la țară – informați-vă la serviciul de înmatriculări."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Do I pay customs duty on a car from Germany?",
-      "a1": "No. There are no customs duties between EU countries, so a car from Germany, the Netherlands or France pays no duty. You do pay your own country’s registration taxes, such as excise in Poland or BPM in the Netherlands.",
-      "q2": "Do I pay VAT on a used car from the EU?",
-      "a2": "Usually not – VAT is settled in the country of purchase, or there is none when buying from a private seller or under the margin scheme. The exception is new cars (up to 6 months or 6,000 km) – their VAT is paid in the country of registration.",
-      "q3": "How much does it cost to transport a car from Germany?",
-      "a3": "It depends on the distance and the method. A car carrier is usually the cheapest over a longer distance, a dedicated tow truck costs more. The calculator prices it from the distance between the countries and per-kilometre rates.",
-      "q4": "Can I drive the car home from Germany?",
-      "a4": "Yes, if it runs. You need export plates from the country of purchase or temporary plates from your registration office – always with liability insurance for the trip.",
-      "q5": "What value is the registration tax based on?",
-      "a5": "Usually on the price you paid or on the car’s value, depending on the country – some countries also use CO₂ and age. If the price is far from the market value, the authorities may use the market value.",
-      "q6": "Does a car from the EU need type approval?",
-      "a6": "Usually not – a car registered in another EU country already has European type approval, so a roadworthiness test is enough. Extra tests or modifications are only needed in unusual cases, e.g. after modifications or for a car originally from outside the EU."
+      "title": "Întrebări frecvente",
+      "q1": "Plătesc taxă vamală pentru o mașină din Germania?",
+      "a1": "Nu. Între statele UE nu există taxe vamale, deci o mașină din Germania, Austria sau Franța nu plătește vamă. Plătiți însă taxele de înmatriculare ale țării dvs., cum ar fi timbrul de mediu în România.",
+      "q2": "Plătesc TVA pentru o mașină second-hand din UE?",
+      "a2": "De obicei nu – TVA se plătește în țara de cumpărare sau nu există la cumpărarea de la o persoană fizică ori în regim special. Excepție fac mașinile noi (până la 6 luni sau 6000 km), pentru care TVA se plătește în țara de înmatriculare.",
+      "q3": "Cât costă transportul unei mașini din Germania?",
+      "a3": "Depinde de distanță și de mod. Platforma auto comună este de obicei cea mai ieftină pe distanțe lungi, platforma dedicată costă mai mult. Calculatorul estimează costul din distanța dintre țări și tarifele pe kilometru.",
+      "q4": "Pot aduce mașina din Germania pe roți?",
+      "a4": "Da, dacă funcționează. Aveți nevoie de numere de export din țara de cumpărare sau de numere provizorii din țara dvs. – mereu cu asigurare RCA pentru drum.",
+      "q5": "Din ce valoare se calculează taxele la înmatriculare?",
+      "a5": "Depinde de țară: din preț, din valoarea mașinii sau din norma Euro, CO₂ și vechime. Dacă prețul diferă mult de valoarea de piață, autoritățile pot folosi valoarea de piață.",
+      "q6": "Mașina din UE are nevoie de omologare?",
+      "a6": "De obicei nu – o mașină înmatriculată în alt stat UE are deja omologare europeană, ajung inspecția tehnică și cartea de identitate de la RAR. Verificări suplimentare sunt necesare doar în cazuri speciale, de ex. după modificări."
     }
   }
 }

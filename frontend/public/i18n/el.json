@@ -514,7 +514,7 @@
     "vin": "Έλεγχος VIN",
     "copart": "Copart – πώς αγοράζετε",
     "vinCompare": "Σύγκριση αναφορών VIN",
-    "euImport": "Import a car from the EU"
+    "euImport": "Εισαγωγή αυτοκινήτου από ΕΕ"
   },
   "footer": {
     "about": "Ανεξάρτητος υπολογιστής κόστους εισαγωγής αυτοκινήτων από χώρες εκτός ΕΕ. Δεν πουλάμε ούτε εισάγουμε αυτοκίνητα – υπολογίζουμε πόσο πραγματικά κοστίζουν.",
@@ -894,8 +894,8 @@
       "description": "Ποια αναφορά VIN να επιλέξετε για αυτοκίνητο από ΗΠΑ ή Ευρώπη; Κάλυψη, στοιχεία ζημιών και title, φωτογραφίες και τιμές: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
-      "title": "Import a car from Germany or another EU country – cost calculator | Carglo",
-      "description": "What does it cost to bring a car from Germany, the Netherlands or another EU country? Free calculator: transport by car carrier or on export plates, registration tax, VAT on new cars and fees."
+      "title": "Εισαγωγή αυτοκινήτου από Γερμανία και ΕΕ – υπολογιστής κόστους: μεταφορά, τέλος ταξινόμησης | Carglo",
+      "description": "Πόσο κοστίζει να φέρετε αυτοκίνητο από Γερμανία, Ιταλία ή άλλη χώρα της ΕΕ; Δωρεάν υπολογιστής: μεταφορά με νταλίκα ή με πινακίδες εξαγωγής, τέλος ταξινόμησης, ΦΠΑ για καινούργιο αυτοκίνητο και τέλη."
     }
   },
   "privacy": {
@@ -2303,81 +2303,81 @@
     }
   },
   "euImport": {
-    "eyebrow": "EU import calculator",
-    "title": "What it costs to bring a car from Germany or another EU country",
-    "lead": "A car from another EU country pays no customs duty, but transport, registration taxes and fees come on top of the price. Choose where you buy and where you register – we work out the full cost for free.",
-    "origin": "Country of purchase",
-    "destination": "Country of registration",
-    "price": "Car price",
-    "currency": "Currency",
-    "year": "Year of manufacture",
-    "fuel": "Fuel",
-    "engine": "Engine size (cc)",
-    "power": "Power (kW)",
-    "co2": "CO₂ emissions (g/km)",
-    "optional": "optional",
-    "transportLabel": "How the car gets to you",
+    "eyebrow": "Υπολογιστής εισαγωγής από ΕΕ",
+    "title": "Πόσο κοστίζει να φέρετε αυτοκίνητο από τη Γερμανία ή άλλη χώρα της ΕΕ",
+    "lead": "Αυτοκίνητο από άλλη χώρα της ΕΕ δεν πληρώνει δασμό, αλλά στην τιμή προστίθενται μεταφορά, φόροι ταξινόμησης και τέλη. Επιλέξτε χώρα αγοράς και χώρα ταξινόμησης – υπολογίζουμε δωρεάν το συνολικό κόστος.",
+    "origin": "Χώρα αγοράς",
+    "destination": "Χώρα ταξινόμησης",
+    "price": "Τιμή αυτοκινήτου",
+    "currency": "Νόμισμα",
+    "year": "Έτος κατασκευής",
+    "fuel": "Καύσιμο",
+    "engine": "Κυβισμός (cm³)",
+    "power": "Ισχύς (kW)",
+    "co2": "Εκπομπές CO₂ (g/km)",
+    "optional": "προαιρετικό",
+    "transportLabel": "Πώς φτάνει το αυτοκίνητο σε εσάς",
     "mode": {
-      "CAR_CARRIER": "Car carrier",
-      "TOW_TRUCK": "Dedicated tow truck",
-      "SELF_DRIVE": "Drive it home on export plates"
+      "CAR_CARRIER": "Νταλίκα μεταφοράς αυτοκινήτων",
+      "TOW_TRUCK": "Αποκλειστική οδική βοήθεια",
+      "SELF_DRIVE": "Το οδηγώ ο ίδιος με πινακίδες εξαγωγής"
     },
-    "newVehicle": "New vehicle for VAT purposes",
-    "newVehicleHint": "Up to 6 months since first registration or up to 6,000 km – VAT is then paid in your country.",
-    "submit": "Calculate cost",
-    "calculating": "Calculating…",
-    "resultTitle": "Cost of importing",
-    "route": "{{from}} → {{to}}: approx. {{km}} km",
-    "total": "Total",
-    "empty": "Fill in the details and click “Calculate cost”.",
-    "error": "We could not calculate this. Check the details and try again.",
-    "note": "Estimate based on current rates. Taxes are calculated on the purchase price; the authorities may use the market value if the price differs from it.",
-    "nonEu": "Car from the USA, Canada, Japan, the UAE or the UK?",
-    "nonEuLink": "Use the non-EU import calculator",
+    "newVehicle": "Καινούργιο όχημα για τον ΦΠΑ",
+    "newVehicleHint": "Έως 6 μήνες από την πρώτη ταξινόμηση ή έως 6.000 km – τότε ο ΦΠΑ πληρώνεται στη χώρα σας.",
+    "submit": "Υπολογισμός κόστους",
+    "calculating": "Υπολογισμός…",
+    "resultTitle": "Κόστος εισαγωγής",
+    "route": "{{from}} → {{to}}: περίπου {{km}} km",
+    "total": "Σύνολο",
+    "empty": "Συμπληρώστε τα στοιχεία και πατήστε «Υπολογισμός κόστους».",
+    "error": "Ο υπολογισμός απέτυχε. Ελέγξτε τα στοιχεία και δοκιμάστε ξανά.",
+    "note": "Εκτίμηση με τους τρέχοντες συντελεστές. Οι φόροι υπολογίζονται στην τιμή αγοράς· οι αρχές μπορεί να χρησιμοποιήσουν την αγοραία αξία αν η τιμή αποκλίνει.",
+    "nonEu": "Αυτοκίνητο από ΗΠΑ, Καναδά, Ιαπωνία, ΗΑΕ ή Ηνωμένο Βασίλειο;",
+    "nonEuLink": "Χρησιμοποιήστε τον υπολογιστή εισαγωγής εκτός ΕΕ",
     "cost": {
-      "PURCHASE_PRICE": "Purchase price",
-      "EU_TRANSPORT_CAR_CARRIER": "Car carrier transport ({{km}} km)",
-      "EU_TRANSPORT_TOW_TRUCK": "Dedicated tow truck ({{km}} km)",
-      "EU_TRANSPORT_SELF_DRIVE": "Export plates with insurance, fuel and tolls ({{km}} km)",
-      "EU_NEW_VEHICLE_VAT": "VAT {{rate}}% on a new car",
-      "INSURANCE_FIRST_YEAR": "Liability insurance – first year (estimate)"
+      "PURCHASE_PRICE": "Τιμή αγοράς",
+      "EU_TRANSPORT_CAR_CARRIER": "Μεταφορά με νταλίκα ({{km}} km)",
+      "EU_TRANSPORT_TOW_TRUCK": "Αποκλειστική οδική βοήθεια ({{km}} km)",
+      "EU_TRANSPORT_SELF_DRIVE": "Πινακίδες εξαγωγής με ασφάλιση, καύσιμα και διόδια ({{km}} km)",
+      "EU_NEW_VEHICLE_VAT": "ΦΠΑ {{rate}}% σε καινούργιο αυτοκίνητο",
+      "INSURANCE_FIRST_YEAR": "Ασφάλιση αστικής ευθύνης – πρώτο έτος (εκτίμηση)"
     },
     "warning": {
-      "usedVatAtOrigin": "Used car: VAT is settled in the country of purchase (or there is none when buying from a private seller or under the margin scheme) – you do not pay it again where you register.",
-      "newVehicleVat": "New car: the seller invoices without VAT and you pay VAT in the country of registration. Enter the net price.",
-      "exportPlates": "For the trip you need export plates from the country of purchase or temporary plates from your own registration office – both with liability insurance.",
-      "ferry": "The route needs a ferry – its cost is not included."
+      "usedVatAtOrigin": "Μεταχειρισμένο: ο ΦΠΑ καταβάλλεται στη χώρα αγοράς (ή δεν υπάρχει όταν αγοράζετε από ιδιώτη ή με καθεστώς περιθωρίου) – δεν τον πληρώνετε ξανά στη χώρα ταξινόμησης.",
+      "newVehicleVat": "Καινούργιο: ο πωλητής τιμολογεί χωρίς ΦΠΑ και ο ΦΠΑ πληρώνεται στη χώρα ταξινόμησης. Εισαγάγετε την τιμή χωρίς ΦΠΑ.",
+      "exportPlates": "Για τη διαδρομή χρειάζεστε πινακίδες εξαγωγής από τη χώρα αγοράς ή προσωρινές πινακίδες της χώρας σας – πάντα με ασφάλιση.",
+      "ferry": "Η διαδρομή απαιτεί πλοίο – το κόστος του δεν περιλαμβάνεται."
     },
     "vat": {
-      "title": "VAT on a car from the EU – when you pay it",
-      "text": "There are no customs duties between EU countries, and VAT is settled only once:\n• Used car from a private seller or from a dealer under the margin scheme – there is no VAT, or it is already in the price. You do not pay it again at home.\n• Used car from a dealer with a full VAT invoice – a private buyer pays the VAT of the country of purchase in the price. A business can buy net and account for VAT at home.\n• New car – up to 6 months since first registration or up to 6,000 km. VAT is then always paid in the country of registration, and the seller invoices at 0%."
+      "title": "ΦΠΑ σε αυτοκίνητο από την ΕΕ – πότε πληρώνεται",
+      "text": "Μεταξύ χωρών της ΕΕ δεν υπάρχουν δασμοί και ο ΦΠΑ καταβάλλεται μόνο μία φορά:\n• Μεταχειρισμένο από ιδιώτη ή από έμπορο με καθεστώς περιθωρίου – δεν υπάρχει ΦΠΑ ή είναι ήδη στην τιμή. Δεν τον πληρώνετε ξανά.\n• Μεταχειρισμένο από έμπορο με πλήρες τιμολόγιο ΦΠΑ – ο ιδιώτης πληρώνει στην τιμή τον ΦΠΑ της χώρας αγοράς. Μια επιχείρηση μπορεί να αγοράσει χωρίς ΦΠΑ και να τον αποδώσει στην Ελλάδα.\n• Καινούργιο – έως 6 μήνες από την πρώτη ταξινόμηση ή έως 6.000 km. Τότε ο ΦΠΑ οφείλεται πάντα στη χώρα ταξινόμησης και ο πωλητής τιμολογεί με 0%."
     },
     "transport": {
-      "title": "Transport – carrier or on its own wheels",
-      "text": "A car carrier is the cheapest option over a longer distance – you pay per kilometre and the car travels with others. A dedicated tow truck costs more but collects the car right away and carries only yours – the choice for cars that do not run.\nYou can drive home if the car runs. You need export plates from the country of purchase (e.g. Ausfuhrkennzeichen in Germany) or temporary plates from the registration office in your country – always with liability insurance. Add fuel and tolls along the way."
+      "title": "Μεταφορά – νταλίκα ή οδηγώντας",
+      "text": "Η νταλίκα μεταφοράς αυτοκινήτων είναι η φθηνότερη λύση σε μεγάλες αποστάσεις – πληρώνετε ανά χιλιόμετρο και το αυτοκίνητο ταξιδεύει μαζί με άλλα. Η αποκλειστική οδική βοήθεια κοστίζει περισσότερο, αλλά παραλαμβάνει αμέσως και μεταφέρει μόνο το δικό σας – η επιλογή για αυτοκίνητο που δεν κινείται.\nΜπορείτε να γυρίσετε οδηγώντας αν το αυτοκίνητο κινείται. Χρειάζεστε πινακίδες εξαγωγής από τη χώρα αγοράς (π.χ. Ausfuhrkennzeichen στη Γερμανία) ή προσωρινές πινακίδες της χώρας σας – πάντα με ασφάλιση. Προσθέστε καύσιμα, διόδια και πλοίο."
     },
     "taxes": {
-      "title": "Taxes at registration",
-      "text": "Each country has its own one-off tax at the first registration of an imported car – and it most often decides whether importing pays off:\n• Poland: excise of 3.1% of the price up to 2,000 cc and 18.6% above (half for hybrids, 0% for EVs),\n• the Netherlands: BPM, Austria: NoVA, Belgium: registration tax, Denmark and Finland: taxes on the car’s value,\n• Germany, Czechia or Sweden have no such tax – only registration fees.\nThe calculator works it out automatically from the purchase price, year, CO₂ and power."
+      "title": "Φόροι στην ταξινόμηση",
+      "text": "Κάθε χώρα έχει δικό της εφάπαξ φόρο στην πρώτη ταξινόμηση εισαγόμενου αυτοκινήτου – και συχνά αυτός κρίνει αν συμφέρει η εισαγωγή:\n• Ελλάδα: τέλος ταξινόμησης με βάση τη λιανική αξία προ φόρων και τις εκπομπές CO₂, μειωμένο με την ηλικία – το ποσό ορίζει το τελωνείο,\n• Πολωνία: ειδικός φόρος 3,1% της τιμής έως 2.000 cm³ και 18,6% πάνω από αυτό· Ολλανδία: BPM· Αυστρία: NoVA· Δανία και Φινλανδία: φόροι επί της αξίας,\n• Γερμανία, Τσεχία ή Σουηδία δεν έχουν τέτοιο φόρο – μόνο τέλη ταξινόμησης.\nΟ υπολογιστής τον υπολογίζει αυτόματα όπου είναι δυνατόν· για την Ελλάδα μπορείτε να εισαγάγετε το ποσό μόνοι σας."
     },
     "documents": {
-      "title": "Documents to register a car from the EU",
-      "text": "You usually need:\n• the purchase contract or invoice,\n• the foreign registration certificate (in Germany both parts: Zulassungsbescheinigung Teil I and II),\n• proof of payment of excise or registration tax,\n• a valid roadworthiness test in your country,\n• translations of foreign-language documents if your office requires them.\nDeadlines differ between countries – in Poland, for example, a car brought from the EU must be registered within 30 days."
+      "title": "Έγγραφα για ταξινόμηση αυτοκινήτου από την ΕΕ",
+      "text": "Συνήθως χρειάζεστε:\n• συμβόλαιο αγοράς ή τιμολόγιο,\n• την ξένη άδεια κυκλοφορίας (στη Γερμανία και τα δύο μέρη: Zulassungsbescheinigung Teil I και II),\n• δήλωση άφιξης οχήματος (ΔΑΟ) στο τελωνείο και πληρωμή του τέλους ταξινόμησης,\n• έλεγχο ΚΤΕΟ,\n• επίσημες μεταφράσεις, αν ζητηθούν.\nΟι προθεσμίες διαφέρουν ανά χώρα – ρωτήστε στο τελωνείο ή στη Διεύθυνση Μεταφορών."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Do I pay customs duty on a car from Germany?",
-      "a1": "No. There are no customs duties between EU countries, so a car from Germany, the Netherlands or France pays no duty. You do pay your own country’s registration taxes, such as excise in Poland or BPM in the Netherlands.",
-      "q2": "Do I pay VAT on a used car from the EU?",
-      "a2": "Usually not – VAT is settled in the country of purchase, or there is none when buying from a private seller or under the margin scheme. The exception is new cars (up to 6 months or 6,000 km) – their VAT is paid in the country of registration.",
-      "q3": "How much does it cost to transport a car from Germany?",
-      "a3": "It depends on the distance and the method. A car carrier is usually the cheapest over a longer distance, a dedicated tow truck costs more. The calculator prices it from the distance between the countries and per-kilometre rates.",
-      "q4": "Can I drive the car home from Germany?",
-      "a4": "Yes, if it runs. You need export plates from the country of purchase or temporary plates from your registration office – always with liability insurance for the trip.",
-      "q5": "What value is the registration tax based on?",
-      "a5": "Usually on the price you paid or on the car’s value, depending on the country – some countries also use CO₂ and age. If the price is far from the market value, the authorities may use the market value.",
-      "q6": "Does a car from the EU need type approval?",
-      "a6": "Usually not – a car registered in another EU country already has European type approval, so a roadworthiness test is enough. Extra tests or modifications are only needed in unusual cases, e.g. after modifications or for a car originally from outside the EU."
+      "title": "Συχνές ερωτήσεις",
+      "q1": "Πληρώνω δασμό για αυτοκίνητο από τη Γερμανία;",
+      "a1": "Όχι. Μεταξύ χωρών της ΕΕ δεν υπάρχουν δασμοί, οπότε αυτοκίνητο από Γερμανία, Ιταλία ή Γαλλία δεν πληρώνει δασμό. Πληρώνετε όμως τους φόρους ταξινόμησης της χώρας σας, όπως το τέλος ταξινόμησης στην Ελλάδα.",
+      "q2": "Πληρώνω ΦΠΑ για μεταχειρισμένο από την ΕΕ;",
+      "a2": "Συνήθως όχι – ο ΦΠΑ καταβάλλεται στη χώρα αγοράς ή δεν υπάρχει όταν αγοράζετε από ιδιώτη ή με καθεστώς περιθωρίου. Εξαίρεση τα καινούργια (έως 6 μήνες ή 6.000 km), των οποίων ο ΦΠΑ πληρώνεται στη χώρα ταξινόμησης.",
+      "q3": "Πόσο κοστίζει η μεταφορά αυτοκινήτου από τη Γερμανία;",
+      "a3": "Εξαρτάται από την απόσταση και τον τρόπο. Η νταλίκα είναι συνήθως η φθηνότερη σε μεγάλες αποστάσεις, η αποκλειστική οδική βοήθεια ακριβότερη. Ο υπολογιστής χρησιμοποιεί την απόσταση μεταξύ χωρών και τιμές ανά χιλιόμετρο· ο ελληνικός προορισμός συχνά απαιτεί και πλοίο.",
+      "q4": "Μπορώ να φέρω το αυτοκίνητο οδηγώντας από τη Γερμανία;",
+      "a4": "Ναι, αν κινείται. Χρειάζεστε πινακίδες εξαγωγής από τη χώρα αγοράς ή προσωρινές πινακίδες της χώρας σας – πάντα με ασφάλιση για τη διαδρομή.",
+      "q5": "Σε ποια αξία υπολογίζεται το τέλος ταξινόμησης;",
+      "a5": "Στην Ελλάδα στη λιανική αξία προ φόρων και στις εκπομπές CO₂, μειωμένη ανάλογα με την ηλικία – το ποσό ορίζει το τελωνείο. Άλλες χώρες χρησιμοποιούν την τιμή, την αξία, το CO₂ ή την ηλικία.",
+      "q6": "Χρειάζεται έγκριση τύπου ένα αυτοκίνητο από την ΕΕ;",
+      "a6": "Συνήθως όχι – αυτοκίνητο ταξινομημένο σε άλλη χώρα της ΕΕ έχει ήδη ευρωπαϊκή έγκριση τύπου, αρκεί ο έλεγχος ΚΤΕΟ. Περισσότερα χρειάζονται μόνο σε ειδικές περιπτώσεις, π.χ. μετά από μετατροπές."
     }
   }
 }

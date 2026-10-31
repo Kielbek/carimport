@@ -514,7 +514,7 @@
     "vin": "Verificar VIN",
     "copart": "Copart – como comprar",
     "vinCompare": "Relatórios VIN comparados",
-    "euImport": "Import a car from the EU"
+    "euImport": "Importar carro da UE"
   },
   "footer": {
     "about": "Calculadora independente dos custos de importação de carros de fora da UE. Não vendemos nem importamos carros – calculamos quanto custam realmente.",
@@ -894,8 +894,8 @@
       "description": "Que relatório VIN escolher para um carro dos EUA ou da Europa? Cobertura, dados de danos e title, fotos e preços: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
-      "title": "Import a car from Germany or another EU country – cost calculator | Carglo",
-      "description": "What does it cost to bring a car from Germany, the Netherlands or another EU country? Free calculator: transport by car carrier or on export plates, registration tax, VAT on new cars and fees."
+      "title": "Importar carro da Alemanha ou da UE – calculadora de custos: transporte, ISV, matrícula | Carglo",
+      "description": "Quanto custa trazer um carro da Alemanha, França ou outro país da UE? Calculadora grátis: transporte em camião porta-carros ou com matrícula de exportação, ISV e impostos de matrícula, IVA em carros novos e taxas."
     }
   },
   "privacy": {
@@ -2303,81 +2303,81 @@
     }
   },
   "euImport": {
-    "eyebrow": "EU import calculator",
-    "title": "What it costs to bring a car from Germany or another EU country",
-    "lead": "A car from another EU country pays no customs duty, but transport, registration taxes and fees come on top of the price. Choose where you buy and where you register – we work out the full cost for free.",
-    "origin": "Country of purchase",
-    "destination": "Country of registration",
-    "price": "Car price",
-    "currency": "Currency",
-    "year": "Year of manufacture",
-    "fuel": "Fuel",
-    "engine": "Engine size (cc)",
-    "power": "Power (kW)",
-    "co2": "CO₂ emissions (g/km)",
-    "optional": "optional",
-    "transportLabel": "How the car gets to you",
+    "eyebrow": "Calculadora de importação UE",
+    "title": "Quanto custa trazer um carro da Alemanha ou de outro país da UE",
+    "lead": "Um carro de outro país da UE não paga direitos aduaneiros, mas ao preço somam-se o transporte, os impostos de matrícula e as taxas. Escolha o país de compra e o de matrícula – calculamos o custo total grátis.",
+    "origin": "País de compra",
+    "destination": "País de matrícula",
+    "price": "Preço do carro",
+    "currency": "Moeda",
+    "year": "Ano de fabrico",
+    "fuel": "Combustível",
+    "engine": "Cilindrada (cm³)",
+    "power": "Potência (kW)",
+    "co2": "Emissões de CO₂ (g/km)",
+    "optional": "opcional",
+    "transportLabel": "Como o carro chega até si",
     "mode": {
-      "CAR_CARRIER": "Car carrier",
-      "TOW_TRUCK": "Dedicated tow truck",
-      "SELF_DRIVE": "Drive it home on export plates"
+      "CAR_CARRIER": "Camião porta-carros",
+      "TOW_TRUCK": "Reboque exclusivo",
+      "SELF_DRIVE": "Trago-o eu com matrícula de exportação"
     },
-    "newVehicle": "New vehicle for VAT purposes",
-    "newVehicleHint": "Up to 6 months since first registration or up to 6,000 km – VAT is then paid in your country.",
-    "submit": "Calculate cost",
-    "calculating": "Calculating…",
-    "resultTitle": "Cost of importing",
-    "route": "{{from}} → {{to}}: approx. {{km}} km",
+    "newVehicle": "Veículo novo para efeitos de IVA",
+    "newVehicleHint": "Até 6 meses após a primeira matrícula ou até 6000 km – o IVA é então pago no seu país.",
+    "submit": "Calcular custo",
+    "calculating": "A calcular…",
+    "resultTitle": "Custo da importação",
+    "route": "{{from}} → {{to}}: cerca de {{km}} km",
     "total": "Total",
-    "empty": "Fill in the details and click “Calculate cost”.",
-    "error": "We could not calculate this. Check the details and try again.",
-    "note": "Estimate based on current rates. Taxes are calculated on the purchase price; the authorities may use the market value if the price differs from it.",
-    "nonEu": "Car from the USA, Canada, Japan, the UAE or the UK?",
-    "nonEuLink": "Use the non-EU import calculator",
+    "empty": "Preencha os dados e clique em «Calcular custo».",
+    "error": "Não foi possível calcular. Verifique os dados e tente de novo.",
+    "note": "Estimativa com base nas taxas atuais. Os impostos são calculados sobre o preço de compra; a administração pode usar o valor de mercado se o preço se afastar dele.",
+    "nonEu": "Carro dos EUA, Canadá, Japão, EAU ou Reino Unido?",
+    "nonEuLink": "Use a calculadora de importação fora da UE",
     "cost": {
-      "PURCHASE_PRICE": "Purchase price",
-      "EU_TRANSPORT_CAR_CARRIER": "Car carrier transport ({{km}} km)",
-      "EU_TRANSPORT_TOW_TRUCK": "Dedicated tow truck ({{km}} km)",
-      "EU_TRANSPORT_SELF_DRIVE": "Export plates with insurance, fuel and tolls ({{km}} km)",
-      "EU_NEW_VEHICLE_VAT": "VAT {{rate}}% on a new car",
-      "INSURANCE_FIRST_YEAR": "Liability insurance – first year (estimate)"
+      "PURCHASE_PRICE": "Preço de compra",
+      "EU_TRANSPORT_CAR_CARRIER": "Transporte em camião porta-carros ({{km}} km)",
+      "EU_TRANSPORT_TOW_TRUCK": "Reboque exclusivo ({{km}} km)",
+      "EU_TRANSPORT_SELF_DRIVE": "Matrícula de exportação com seguro, combustível e portagens ({{km}} km)",
+      "EU_NEW_VEHICLE_VAT": "IVA {{rate}}% sobre um carro novo",
+      "INSURANCE_FIRST_YEAR": "Seguro de responsabilidade civil – primeiro ano (estimativa)"
     },
     "warning": {
-      "usedVatAtOrigin": "Used car: VAT is settled in the country of purchase (or there is none when buying from a private seller or under the margin scheme) – you do not pay it again where you register.",
-      "newVehicleVat": "New car: the seller invoices without VAT and you pay VAT in the country of registration. Enter the net price.",
-      "exportPlates": "For the trip you need export plates from the country of purchase or temporary plates from your own registration office – both with liability insurance.",
-      "ferry": "The route needs a ferry – its cost is not included."
+      "usedVatAtOrigin": "Carro usado: o IVA é liquidado no país de compra (ou não existe se comprar a um particular ou no regime da margem) – não o paga outra vez onde matricula.",
+      "newVehicleVat": "Carro novo: o vendedor fatura sem IVA e o IVA é pago no país de matrícula. Indique o preço sem IVA.",
+      "exportPlates": "Para a viagem precisa de matrícula de exportação do país de compra ou de matrícula temporária do seu país – sempre com seguro.",
+      "ferry": "O percurso exige ferry – o custo não está incluído."
     },
     "vat": {
-      "title": "VAT on a car from the EU – when you pay it",
-      "text": "There are no customs duties between EU countries, and VAT is settled only once:\n• Used car from a private seller or from a dealer under the margin scheme – there is no VAT, or it is already in the price. You do not pay it again at home.\n• Used car from a dealer with a full VAT invoice – a private buyer pays the VAT of the country of purchase in the price. A business can buy net and account for VAT at home.\n• New car – up to 6 months since first registration or up to 6,000 km. VAT is then always paid in the country of registration, and the seller invoices at 0%."
+      "title": "IVA num carro da UE – quando o paga",
+      "text": "Entre países da UE não há direitos aduaneiros e o IVA é liquidado uma única vez:\n• Carro usado de um particular ou de um stand no regime da margem – não há IVA ou já está no preço. Não o paga outra vez em Portugal.\n• Carro usado de um stand com fatura com IVA – um particular paga no preço o IVA do país de compra. Uma empresa pode comprar sem IVA e liquidá-lo cá.\n• Carro novo – até 6 meses após a primeira matrícula ou até 6000 km. O IVA é sempre devido no país de matrícula e o vendedor fatura a 0%."
     },
     "transport": {
-      "title": "Transport – carrier or on its own wheels",
-      "text": "A car carrier is the cheapest option over a longer distance – you pay per kilometre and the car travels with others. A dedicated tow truck costs more but collects the car right away and carries only yours – the choice for cars that do not run.\nYou can drive home if the car runs. You need export plates from the country of purchase (e.g. Ausfuhrkennzeichen in Germany) or temporary plates from the registration office in your country – always with liability insurance. Add fuel and tolls along the way."
+      "title": "Transporte – camião ou a conduzir",
+      "text": "O camião porta-carros é a opção mais barata em longas distâncias – paga por quilómetro e o carro viaja com outros. Um reboque exclusivo é mais caro, mas recolhe o carro logo e só leva o seu – a opção para carros que não andam.\nPode voltar a conduzir se o carro andar. Precisa de matrícula de exportação do país de compra (p. ex. Ausfuhrkennzeichen na Alemanha) ou de matrícula temporária do seu país – sempre com seguro. Some combustível e portagens."
     },
     "taxes": {
-      "title": "Taxes at registration",
-      "text": "Each country has its own one-off tax at the first registration of an imported car – and it most often decides whether importing pays off:\n• Poland: excise of 3.1% of the price up to 2,000 cc and 18.6% above (half for hybrids, 0% for EVs),\n• the Netherlands: BPM, Austria: NoVA, Belgium: registration tax, Denmark and Finland: taxes on the car’s value,\n• Germany, Czechia or Sweden have no such tax – only registration fees.\nThe calculator works it out automatically from the purchase price, year, CO₂ and power."
+      "title": "Impostos na matrícula",
+      "text": "Cada país tem um imposto único próprio na primeira matrícula de um carro importado – e é ele que costuma decidir se a importação compensa:\n• Portugal: ISV, com componente de cilindrada e de CO₂ e redução pela idade do usado,\n• Polónia: imposto especial de 3,1% do preço até 2000 cm³ e 18,6% acima; Países Baixos: BPM; Áustria: NoVA; Bélgica: imposto de circulação inicial; Dinamarca e Finlândia: impostos sobre o valor,\n• Alemanha, Chéquia ou Suécia não têm este imposto – apenas taxas de matrícula.\nA calculadora estima-o automaticamente com o preço, o ano, o CO₂ e a potência."
     },
     "documents": {
-      "title": "Documents to register a car from the EU",
-      "text": "You usually need:\n• the purchase contract or invoice,\n• the foreign registration certificate (in Germany both parts: Zulassungsbescheinigung Teil I and II),\n• proof of payment of excise or registration tax,\n• a valid roadworthiness test in your country,\n• translations of foreign-language documents if your office requires them.\nDeadlines differ between countries – in Poland, for example, a car brought from the EU must be registered within 30 days."
+      "title": "Documentos para matricular um carro da UE",
+      "text": "Normalmente precisa de:\n• contrato de compra ou fatura,\n• o documento de registo estrangeiro (na Alemanha as duas partes: Zulassungsbescheinigung Teil I e II),\n• o certificado de conformidade (COC),\n• a Declaração Aduaneira de Veículo (DAV) e o pagamento do ISV,\n• a inspeção para atribuição de matrícula.\nOs prazos variam de país para país – informe-se no IMT ou na alfândega."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Do I pay customs duty on a car from Germany?",
-      "a1": "No. There are no customs duties between EU countries, so a car from Germany, the Netherlands or France pays no duty. You do pay your own country’s registration taxes, such as excise in Poland or BPM in the Netherlands.",
-      "q2": "Do I pay VAT on a used car from the EU?",
-      "a2": "Usually not – VAT is settled in the country of purchase, or there is none when buying from a private seller or under the margin scheme. The exception is new cars (up to 6 months or 6,000 km) – their VAT is paid in the country of registration.",
-      "q3": "How much does it cost to transport a car from Germany?",
-      "a3": "It depends on the distance and the method. A car carrier is usually the cheapest over a longer distance, a dedicated tow truck costs more. The calculator prices it from the distance between the countries and per-kilometre rates.",
-      "q4": "Can I drive the car home from Germany?",
-      "a4": "Yes, if it runs. You need export plates from the country of purchase or temporary plates from your registration office – always with liability insurance for the trip.",
-      "q5": "What value is the registration tax based on?",
-      "a5": "Usually on the price you paid or on the car’s value, depending on the country – some countries also use CO₂ and age. If the price is far from the market value, the authorities may use the market value.",
-      "q6": "Does a car from the EU need type approval?",
-      "a6": "Usually not – a car registered in another EU country already has European type approval, so a roadworthiness test is enough. Extra tests or modifications are only needed in unusual cases, e.g. after modifications or for a car originally from outside the EU."
+      "title": "Perguntas frequentes",
+      "q1": "Pago direitos aduaneiros por um carro da Alemanha?",
+      "a1": "Não. Entre países da UE não há direitos aduaneiros, por isso um carro da Alemanha, França ou Espanha não paga alfândega. Paga, no entanto, os impostos de matrícula do seu país, como o ISV em Portugal.",
+      "q2": "Pago IVA por um carro usado da UE?",
+      "a2": "Normalmente não – o IVA é liquidado no país de compra ou não existe se comprar a um particular ou no regime da margem. A exceção são os carros novos (até 6 meses ou 6000 km), cujo IVA se paga no país de matrícula.",
+      "q3": "Quanto custa transportar um carro da Alemanha?",
+      "a3": "Depende da distância e do meio. O camião porta-carros costuma ser o mais barato em longas distâncias; o reboque exclusivo é mais caro. A calculadora estima-o com a distância entre países e tarifas por quilómetro.",
+      "q4": "Posso trazer o carro a conduzir da Alemanha?",
+      "a4": "Sim, se andar. Precisa de matrícula de exportação do país de compra ou de matrícula temporária do seu país – sempre com seguro para a viagem.",
+      "q5": "Sobre que valor é calculado o imposto de matrícula?",
+      "a5": "Depende do país: sobre o preço pago, o valor do carro, a cilindrada ou o CO₂ – em Portugal o ISV usa cilindrada e CO₂, com redução pela idade. Se o preço se afastar muito do valor de mercado, a administração pode usar este último.",
+      "q6": "Um carro da UE precisa de homologação?",
+      "a6": "Normalmente não – um carro matriculado noutro país da UE já tem homologação europeia, basta a inspeção. Só em casos especiais são precisos mais controlos ou alterações, p. ex. após transformações ou num carro originalmente de fora da UE."
     }
   }
 }

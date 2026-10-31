@@ -514,7 +514,7 @@
     "vin": "VIN-check",
     "copart": "Copart – zo koop je",
     "vinCompare": "VIN-rapporten vergeleken",
-    "euImport": "Import a car from the EU"
+    "euImport": "Auto importeren uit de EU"
   },
   "footer": {
     "about": "Onafhankelijke calculator voor de importkosten van auto’s van buiten de EU. Wij verkopen en importeren geen auto’s – wij berekenen wat ze echt kosten.",
@@ -894,8 +894,8 @@
       "description": "Welk VIN-rapport voor een auto uit de VS of Europa? Dekking, schade- en titlegegevens, foto’s en prijzen vergeleken: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
-      "title": "Import a car from Germany or another EU country – cost calculator | Carglo",
-      "description": "What does it cost to bring a car from Germany, the Netherlands or another EU country? Free calculator: transport by car carrier or on export plates, registration tax, VAT on new cars and fees."
+      "title": "Auto importeren uit Duitsland of de EU – kosten berekenen: transport, bpm, registratie | Carglo",
+      "description": "Wat kost een auto importeren uit Duitsland, België of een ander EU-land? Gratis calculator: transport per autotransporter of op exportkenteken, bpm en andere registratiebelasting, btw bij nieuwe auto’s en leges."
     }
   },
   "privacy": {
@@ -2303,81 +2303,81 @@
     }
   },
   "euImport": {
-    "eyebrow": "EU import calculator",
-    "title": "What it costs to bring a car from Germany or another EU country",
-    "lead": "A car from another EU country pays no customs duty, but transport, registration taxes and fees come on top of the price. Choose where you buy and where you register – we work out the full cost for free.",
-    "origin": "Country of purchase",
-    "destination": "Country of registration",
-    "price": "Car price",
-    "currency": "Currency",
-    "year": "Year of manufacture",
-    "fuel": "Fuel",
-    "engine": "Engine size (cc)",
-    "power": "Power (kW)",
-    "co2": "CO₂ emissions (g/km)",
-    "optional": "optional",
-    "transportLabel": "How the car gets to you",
+    "eyebrow": "Calculator auto-import uit de EU",
+    "title": "Wat kost een auto importeren uit Duitsland of een ander EU-land",
+    "lead": "Een auto uit een ander EU-land betaalt geen invoerrecht, maar transport, registratiebelasting en leges komen bovenop de prijs. Kies het land van aankoop en het land van registratie – wij berekenen de totale kosten gratis.",
+    "origin": "Land van aankoop",
+    "destination": "Land van registratie",
+    "price": "Prijs van de auto",
+    "currency": "Valuta",
+    "year": "Bouwjaar",
+    "fuel": "Brandstof",
+    "engine": "Cilinderinhoud (cm³)",
+    "power": "Vermogen (kW)",
+    "co2": "CO₂-uitstoot (g/km)",
+    "optional": "optioneel",
+    "transportLabel": "Hoe de auto bij je komt",
     "mode": {
-      "CAR_CARRIER": "Car carrier",
-      "TOW_TRUCK": "Dedicated tow truck",
-      "SELF_DRIVE": "Drive it home on export plates"
+      "CAR_CARRIER": "Autotransporter",
+      "TOW_TRUCK": "Eigen takelwagen",
+      "SELF_DRIVE": "Zelf rijden op exportkenteken"
     },
-    "newVehicle": "New vehicle for VAT purposes",
-    "newVehicleHint": "Up to 6 months since first registration or up to 6,000 km – VAT is then paid in your country.",
-    "submit": "Calculate cost",
-    "calculating": "Calculating…",
-    "resultTitle": "Cost of importing",
-    "route": "{{from}} → {{to}}: approx. {{km}} km",
-    "total": "Total",
-    "empty": "Fill in the details and click “Calculate cost”.",
-    "error": "We could not calculate this. Check the details and try again.",
-    "note": "Estimate based on current rates. Taxes are calculated on the purchase price; the authorities may use the market value if the price differs from it.",
-    "nonEu": "Car from the USA, Canada, Japan, the UAE or the UK?",
-    "nonEuLink": "Use the non-EU import calculator",
+    "newVehicle": "Nieuwe auto voor de btw",
+    "newVehicleHint": "Tot 6 maanden na de eerste registratie of tot 6.000 km – dan betaal je de btw in je eigen land.",
+    "submit": "Kosten berekenen",
+    "calculating": "Berekenen…",
+    "resultTitle": "Importkosten",
+    "route": "{{from}} → {{to}}: ca. {{km}} km",
+    "total": "Totaal",
+    "empty": "Vul de gegevens in en klik op ‘Kosten berekenen’.",
+    "error": "Berekenen is niet gelukt. Controleer de gegevens en probeer het opnieuw.",
+    "note": "Schatting op basis van actuele tarieven. Belastingen berekenen we over de aankoopprijs; de overheid kan de marktwaarde gebruiken als de prijs daarvan afwijkt.",
+    "nonEu": "Auto uit de VS, Canada, Japan, de VAE of het VK?",
+    "nonEuLink": "Gebruik de calculator voor import van buiten de EU",
     "cost": {
-      "PURCHASE_PRICE": "Purchase price",
-      "EU_TRANSPORT_CAR_CARRIER": "Car carrier transport ({{km}} km)",
-      "EU_TRANSPORT_TOW_TRUCK": "Dedicated tow truck ({{km}} km)",
-      "EU_TRANSPORT_SELF_DRIVE": "Export plates with insurance, fuel and tolls ({{km}} km)",
-      "EU_NEW_VEHICLE_VAT": "VAT {{rate}}% on a new car",
-      "INSURANCE_FIRST_YEAR": "Liability insurance – first year (estimate)"
+      "PURCHASE_PRICE": "Aankoopprijs",
+      "EU_TRANSPORT_CAR_CARRIER": "Transport per autotransporter ({{km}} km)",
+      "EU_TRANSPORT_TOW_TRUCK": "Eigen takelwagen ({{km}} km)",
+      "EU_TRANSPORT_SELF_DRIVE": "Exportkenteken met verzekering, brandstof en tol ({{km}} km)",
+      "EU_NEW_VEHICLE_VAT": "Btw {{rate}}% over een nieuwe auto",
+      "INSURANCE_FIRST_YEAR": "WA-verzekering – eerste jaar (schatting)"
     },
     "warning": {
-      "usedVatAtOrigin": "Used car: VAT is settled in the country of purchase (or there is none when buying from a private seller or under the margin scheme) – you do not pay it again where you register.",
-      "newVehicleVat": "New car: the seller invoices without VAT and you pay VAT in the country of registration. Enter the net price.",
-      "exportPlates": "For the trip you need export plates from the country of purchase or temporary plates from your own registration office – both with liability insurance.",
-      "ferry": "The route needs a ferry – its cost is not included."
+      "usedVatAtOrigin": "Gebruikte auto: de btw wordt afgerekend in het land van aankoop (of is er niet bij aankoop van een particulier of via de margeregeling) – je betaalt hem niet nog eens waar je registreert.",
+      "newVehicleVat": "Nieuwe auto: de verkoper factureert zonder btw en jij betaalt de btw in het land van registratie. Vul de netto prijs in.",
+      "exportPlates": "Voor de rit heb je een exportkenteken uit het land van aankoop nodig of een tijdelijk kenteken uit je eigen land – altijd met WA-verzekering.",
+      "ferry": "De route vraagt een veerboot – die kosten zijn niet meegerekend."
     },
     "vat": {
-      "title": "VAT on a car from the EU – when you pay it",
-      "text": "There are no customs duties between EU countries, and VAT is settled only once:\n• Used car from a private seller or from a dealer under the margin scheme – there is no VAT, or it is already in the price. You do not pay it again at home.\n• Used car from a dealer with a full VAT invoice – a private buyer pays the VAT of the country of purchase in the price. A business can buy net and account for VAT at home.\n• New car – up to 6 months since first registration or up to 6,000 km. VAT is then always paid in the country of registration, and the seller invoices at 0%."
+      "title": "Btw bij een auto uit de EU – wanneer je die betaalt",
+      "text": "Tussen EU-landen bestaan geen invoerrechten en de btw wordt maar één keer afgerekend:\n• Gebruikte auto van een particulier of van een dealer via de margeregeling – er is geen btw of hij zit al in de prijs. Thuis betaal je hem niet nog een keer.\n• Gebruikte auto van een dealer met volledige btw-factuur – een particulier betaalt de btw van het land van aankoop in de prijs. Een bedrijf kan netto kopen en de btw in Nederland aangeven.\n• Nieuwe auto – tot 6 maanden na de eerste registratie of tot 6.000 km. De btw is dan altijd verschuldigd in het land van registratie; de verkoper factureert tegen 0%."
     },
     "transport": {
-      "title": "Transport – carrier or on its own wheels",
-      "text": "A car carrier is the cheapest option over a longer distance – you pay per kilometre and the car travels with others. A dedicated tow truck costs more but collects the car right away and carries only yours – the choice for cars that do not run.\nYou can drive home if the car runs. You need export plates from the country of purchase (e.g. Ausfuhrkennzeichen in Germany) or temporary plates from the registration office in your country – always with liability insurance. Add fuel and tolls along the way."
+      "title": "Transport – autotransporter of zelf rijden",
+      "text": "Een autotransporter is op langere afstand het goedkoopst – je betaalt per kilometer en de auto reist mee met andere. Een eigen takelwagen is duurder, maar haalt de auto meteen op en vervoert alleen die van jou – de keuze voor auto’s die niet rijden.\nZelf rijden kan als de auto rijdt. Je hebt een exportkenteken uit het land van aankoop nodig (bijv. Ausfuhrkennzeichen in Duitsland) of een tijdelijk kenteken uit je eigen land – altijd met WA-verzekering. Reken ook brandstof en tol."
     },
     "taxes": {
-      "title": "Taxes at registration",
-      "text": "Each country has its own one-off tax at the first registration of an imported car – and it most often decides whether importing pays off:\n• Poland: excise of 3.1% of the price up to 2,000 cc and 18.6% above (half for hybrids, 0% for EVs),\n• the Netherlands: BPM, Austria: NoVA, Belgium: registration tax, Denmark and Finland: taxes on the car’s value,\n• Germany, Czechia or Sweden have no such tax – only registration fees.\nThe calculator works it out automatically from the purchase price, year, CO₂ and power."
+      "title": "Belastingen bij registratie",
+      "text": "Elk land heeft een eigen eenmalige belasting bij de eerste registratie van een geïmporteerde auto – en die bepaalt meestal of importeren loont:\n• Nederland: bpm, voor gebruikte auto’s verminderd met de afschrijving,\n• België: belasting op de inverkeerstelling; Oostenrijk: NoVA; Polen: accijns van 3,1% tot 2.000 cm³ en 18,6% daarboven; Denemarken en Finland: belasting op de waarde,\n• Duitsland, Tsjechië of Zweden kennen zo’n belasting niet – alleen registratiekosten.\nDe calculator berekent het automatisch uit prijs, bouwjaar, CO₂ en vermogen."
     },
     "documents": {
-      "title": "Documents to register a car from the EU",
-      "text": "You usually need:\n• the purchase contract or invoice,\n• the foreign registration certificate (in Germany both parts: Zulassungsbescheinigung Teil I and II),\n• proof of payment of excise or registration tax,\n• a valid roadworthiness test in your country,\n• translations of foreign-language documents if your office requires them.\nDeadlines differ between countries – in Poland, for example, a car brought from the EU must be registered within 30 days."
+      "title": "Documenten voor de registratie van een auto uit de EU",
+      "text": "Meestal heb je nodig:\n• koopcontract of factuur,\n• het buitenlandse kentekenbewijs (in Duitsland beide delen: Zulassungsbescheinigung Teil I en II),\n• het certificaat van overeenstemming (CvO/COC) indien gevraagd,\n• de RDW-keuring voor geïmporteerde auto’s,\n• het bewijs van betaalde bpm.\nTermijnen verschillen per land – vraag het na bij de registratie-instantie."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Do I pay customs duty on a car from Germany?",
-      "a1": "No. There are no customs duties between EU countries, so a car from Germany, the Netherlands or France pays no duty. You do pay your own country’s registration taxes, such as excise in Poland or BPM in the Netherlands.",
-      "q2": "Do I pay VAT on a used car from the EU?",
-      "a2": "Usually not – VAT is settled in the country of purchase, or there is none when buying from a private seller or under the margin scheme. The exception is new cars (up to 6 months or 6,000 km) – their VAT is paid in the country of registration.",
-      "q3": "How much does it cost to transport a car from Germany?",
-      "a3": "It depends on the distance and the method. A car carrier is usually the cheapest over a longer distance, a dedicated tow truck costs more. The calculator prices it from the distance between the countries and per-kilometre rates.",
-      "q4": "Can I drive the car home from Germany?",
-      "a4": "Yes, if it runs. You need export plates from the country of purchase or temporary plates from your registration office – always with liability insurance for the trip.",
-      "q5": "What value is the registration tax based on?",
-      "a5": "Usually on the price you paid or on the car’s value, depending on the country – some countries also use CO₂ and age. If the price is far from the market value, the authorities may use the market value.",
-      "q6": "Does a car from the EU need type approval?",
-      "a6": "Usually not – a car registered in another EU country already has European type approval, so a roadworthiness test is enough. Extra tests or modifications are only needed in unusual cases, e.g. after modifications or for a car originally from outside the EU."
+      "title": "Veelgestelde vragen",
+      "q1": "Betaal ik invoerrecht voor een auto uit Duitsland?",
+      "a1": "Nee. Tussen EU-landen bestaan geen invoerrechten, dus een auto uit Duitsland, België of Frankrijk is vrij van douane. Je betaalt wel de registratiebelasting van je eigen land, zoals de bpm in Nederland.",
+      "q2": "Betaal ik btw over een gebruikte auto uit de EU?",
+      "a2": "Meestal niet – de btw wordt afgerekend in het land van aankoop of is er niet bij aankoop van een particulier of via de margeregeling. Uitzondering zijn nieuwe auto’s (tot 6 maanden of 6.000 km): daarvan betaal je de btw in het land van registratie.",
+      "q3": "Wat kost het transport van een auto uit Duitsland?",
+      "a3": "Dat hangt af van afstand en manier. Een autotransporter is op langere afstand meestal het goedkoopst, een eigen takelwagen is duurder. De calculator rekent met de afstand tussen de landen en kilometertarieven.",
+      "q4": "Kan ik de auto zelf uit Duitsland rijden?",
+      "a4": "Ja, als hij rijdt. Je hebt een exportkenteken uit het land van aankoop of een tijdelijk kenteken uit je eigen land nodig – altijd met WA-verzekering voor de rit.",
+      "q5": "Waarover wordt de bpm berekend?",
+      "a5": "In Nederland over de CO₂-uitstoot, verminderd met de afschrijving van een gebruikte auto. Andere landen rekenen met de prijs of de waarde van de auto, soms ook met CO₂ en leeftijd. Wijkt de prijs sterk af van de marktwaarde, dan kan de overheid die gebruiken.",
+      "q6": "Moet een auto uit de EU gekeurd worden?",
+      "a6": "Een auto uit een ander EU-land heeft al Europese typegoedkeuring, dus een volledige goedkeuring is niet nodig. In Nederland is wel een RDW-keuring voor geïmporteerde auto’s verplicht; extra aanpassingen zijn alleen in bijzondere gevallen nodig."
     }
   }
 }

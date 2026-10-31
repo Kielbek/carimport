@@ -514,7 +514,7 @@
     "vin": "Preverjanje VIN",
     "copart": "Copart – kako kupiti",
     "vinCompare": "Primerjava poročil VIN",
-    "euImport": "Import a car from the EU"
+    "euImport": "Uvoz avtomobila iz EU"
   },
   "footer": {
     "about": "Neodvisni kalkulator stroškov uvoza avtomobilov izven EU. Avtomobilov ne prodajamo in ne uvažamo – izračunamo, koliko v resnici stanejo.",
@@ -894,8 +894,8 @@
       "description": "Katero poročilo VIN izbrati za avto iz ZDA ali Evrope? Pokritost, podatki o poškodbah in titlu, fotografije in cene: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
-      "title": "Import a car from Germany or another EU country – cost calculator | Carglo",
-      "description": "What does it cost to bring a car from Germany, the Netherlands or another EU country? Free calculator: transport by car carrier or on export plates, registration tax, VAT on new cars and fees."
+      "title": "Uvoz avtomobila iz Nemčije in EU – kalkulator stroškov: prevoz, DMV, registracija | Carglo",
+      "description": "Koliko stane uvoz avtomobila iz Nemčije, Avstrije ali druge države EU? Brezplačni kalkulator: prevoz z avtotransporterjem ali na izvoznih tablicah, davek na motorna vozila, DDV pri novem avtu in pristojbine."
     }
   },
   "privacy": {
@@ -2303,81 +2303,81 @@
     }
   },
   "euImport": {
-    "eyebrow": "EU import calculator",
-    "title": "What it costs to bring a car from Germany or another EU country",
-    "lead": "A car from another EU country pays no customs duty, but transport, registration taxes and fees come on top of the price. Choose where you buy and where you register – we work out the full cost for free.",
-    "origin": "Country of purchase",
-    "destination": "Country of registration",
-    "price": "Car price",
-    "currency": "Currency",
-    "year": "Year of manufacture",
-    "fuel": "Fuel",
-    "engine": "Engine size (cc)",
-    "power": "Power (kW)",
-    "co2": "CO₂ emissions (g/km)",
-    "optional": "optional",
-    "transportLabel": "How the car gets to you",
+    "eyebrow": "Kalkulator uvoza iz EU",
+    "title": "Koliko stane uvoz avtomobila iz Nemčije ali druge države EU",
+    "lead": "Avto iz druge države EU ne plača carine, a ceni se prištejejo prevoz, davki pri registraciji in pristojbine. Izberite državo nakupa in državo registracije – skupne stroške izračunamo brezplačno.",
+    "origin": "Država nakupa",
+    "destination": "Država registracije",
+    "price": "Cena avtomobila",
+    "currency": "Valuta",
+    "year": "Letnik",
+    "fuel": "Gorivo",
+    "engine": "Prostornina motorja (cm³)",
+    "power": "Moč (kW)",
+    "co2": "Izpust CO₂ (g/km)",
+    "optional": "neobvezno",
+    "transportLabel": "Kako pride avto do vas",
     "mode": {
-      "CAR_CARRIER": "Car carrier",
-      "TOW_TRUCK": "Dedicated tow truck",
-      "SELF_DRIVE": "Drive it home on export plates"
+      "CAR_CARRIER": "Avtotransporter",
+      "TOW_TRUCK": "Samostojna vlečna služba",
+      "SELF_DRIVE": "Peljem ga sam na izvoznih tablicah"
     },
-    "newVehicle": "New vehicle for VAT purposes",
-    "newVehicleHint": "Up to 6 months since first registration or up to 6,000 km – VAT is then paid in your country.",
-    "submit": "Calculate cost",
-    "calculating": "Calculating…",
-    "resultTitle": "Cost of importing",
-    "route": "{{from}} → {{to}}: approx. {{km}} km",
-    "total": "Total",
-    "empty": "Fill in the details and click “Calculate cost”.",
-    "error": "We could not calculate this. Check the details and try again.",
-    "note": "Estimate based on current rates. Taxes are calculated on the purchase price; the authorities may use the market value if the price differs from it.",
-    "nonEu": "Car from the USA, Canada, Japan, the UAE or the UK?",
-    "nonEuLink": "Use the non-EU import calculator",
+    "newVehicle": "Novo vozilo za namene DDV",
+    "newVehicleHint": "Do 6 mesecev od prve registracije ali do 6000 km – takrat DDV plačate v svoji državi.",
+    "submit": "Izračunaj stroške",
+    "calculating": "Računam…",
+    "resultTitle": "Stroški uvoza",
+    "route": "{{from}} → {{to}}: pribl. {{km}} km",
+    "total": "Skupaj",
+    "empty": "Vnesite podatke in kliknite »Izračunaj stroške«.",
+    "error": "Izračun ni uspel. Preverite podatke in poskusite znova.",
+    "note": "Ocena po aktualnih tarifah. Davke računamo od nakupne cene; organi lahko upoštevajo tržno vrednost, če cena od nje odstopa.",
+    "nonEu": "Avto iz ZDA, Kanade, Japonske, ZAE ali Združenega kraljestva?",
+    "nonEuLink": "Uporabite kalkulator uvoza izven EU",
     "cost": {
-      "PURCHASE_PRICE": "Purchase price",
-      "EU_TRANSPORT_CAR_CARRIER": "Car carrier transport ({{km}} km)",
-      "EU_TRANSPORT_TOW_TRUCK": "Dedicated tow truck ({{km}} km)",
-      "EU_TRANSPORT_SELF_DRIVE": "Export plates with insurance, fuel and tolls ({{km}} km)",
-      "EU_NEW_VEHICLE_VAT": "VAT {{rate}}% on a new car",
-      "INSURANCE_FIRST_YEAR": "Liability insurance – first year (estimate)"
+      "PURCHASE_PRICE": "Nakupna cena",
+      "EU_TRANSPORT_CAR_CARRIER": "Prevoz z avtotransporterjem ({{km}} km)",
+      "EU_TRANSPORT_TOW_TRUCK": "Samostojna vlečna služba ({{km}} km)",
+      "EU_TRANSPORT_SELF_DRIVE": "Izvozne tablice z zavarovanjem, gorivo in cestnine ({{km}} km)",
+      "EU_NEW_VEHICLE_VAT": "DDV {{rate}} % od novega avta",
+      "INSURANCE_FIRST_YEAR": "Obvezno zavarovanje – prvo leto (ocena)"
     },
     "warning": {
-      "usedVatAtOrigin": "Used car: VAT is settled in the country of purchase (or there is none when buying from a private seller or under the margin scheme) – you do not pay it again where you register.",
-      "newVehicleVat": "New car: the seller invoices without VAT and you pay VAT in the country of registration. Enter the net price.",
-      "exportPlates": "For the trip you need export plates from the country of purchase or temporary plates from your own registration office – both with liability insurance.",
-      "ferry": "The route needs a ferry – its cost is not included."
+      "usedVatAtOrigin": "Rabljen avto: DDV se obračuna v državi nakupa (ali ga ni pri nakupu od fizične osebe ali po posebni ureditvi za rabljeno blago) – v državi registracije ga ne plačate znova.",
+      "newVehicleVat": "Nov avto: prodajalec izda račun brez DDV, DDV pa plačate v državi registracije. Vnesite ceno brez DDV.",
+      "exportPlates": "Za pot potrebujete izvozne tablice iz države nakupa ali začasne tablice iz svoje države – vedno z obveznim zavarovanjem.",
+      "ferry": "Pot zahteva trajekt – njegov strošek ni vključen."
     },
     "vat": {
-      "title": "VAT on a car from the EU – when you pay it",
-      "text": "There are no customs duties between EU countries, and VAT is settled only once:\n• Used car from a private seller or from a dealer under the margin scheme – there is no VAT, or it is already in the price. You do not pay it again at home.\n• Used car from a dealer with a full VAT invoice – a private buyer pays the VAT of the country of purchase in the price. A business can buy net and account for VAT at home.\n• New car – up to 6 months since first registration or up to 6,000 km. VAT is then always paid in the country of registration, and the seller invoices at 0%."
+      "title": "DDV pri avtu iz EU – kdaj ga plačate",
+      "text": "Med državami EU ni carin, DDV pa se obračuna le enkrat:\n• Rabljen avto od fizične osebe ali od trgovca po posebni ureditvi – DDV-ja ni ali je že v ceni. Doma ga ne plačate znova.\n• Rabljen avto od trgovca s polnim računom z DDV – fizična oseba plača v ceni DDV države nakupa. Podjetje lahko kupi brez DDV in ga obračuna doma.\n• Nov avto – do 6 mesecev od prve registracije ali do 6000 km. DDV se takrat vedno plača v državi registracije, prodajalec pa izda račun z 0 %."
     },
     "transport": {
-      "title": "Transport – carrier or on its own wheels",
-      "text": "A car carrier is the cheapest option over a longer distance – you pay per kilometre and the car travels with others. A dedicated tow truck costs more but collects the car right away and carries only yours – the choice for cars that do not run.\nYou can drive home if the car runs. You need export plates from the country of purchase (e.g. Ausfuhrkennzeichen in Germany) or temporary plates from the registration office in your country – always with liability insurance. Add fuel and tolls along the way."
+      "title": "Prevoz – avtotransporter ali na kolesih",
+      "text": "Avtotransporter je na daljši poti najcenejši – plačate po kilometru, avto pa potuje z drugimi. Samostojna vlečna služba je dražja, a avto prevzame takoj in pelje samo vašega – izbira za nevozna vozila.\nNa kolesih se lahko vrnete, če avto vozi. Potrebujete izvozne tablice iz države nakupa (npr. Ausfuhrkennzeichen v Nemčiji) ali začasne tablice iz svoje države – vedno z obveznim zavarovanjem. Prištejte gorivo in cestnine."
     },
     "taxes": {
-      "title": "Taxes at registration",
-      "text": "Each country has its own one-off tax at the first registration of an imported car – and it most often decides whether importing pays off:\n• Poland: excise of 3.1% of the price up to 2,000 cc and 18.6% above (half for hybrids, 0% for EVs),\n• the Netherlands: BPM, Austria: NoVA, Belgium: registration tax, Denmark and Finland: taxes on the car’s value,\n• Germany, Czechia or Sweden have no such tax – only registration fees.\nThe calculator works it out automatically from the purchase price, year, CO₂ and power."
+      "title": "Davki pri registraciji",
+      "text": "Vsaka država ima svoj enkratni davek ob prvi registraciji uvoženega avta – in ta najpogosteje odloča, ali se uvoz splača:\n• Slovenija: davek na motorna vozila (DMV) glede na CO₂ in prodajno ceno,\n• Poljska: trošarina 3,1 % cene do 2000 cm³ in 18,6 % nad tem; Nizozemska: BPM; Avstrija: NoVA; Danska in Finska: davki od vrednosti,\n• Nemčija, Češka ali Švedska takega davka nimajo – le pristojbine za registracijo.\nKalkulator ga izračuna samodejno iz cene, letnika, CO₂ in moči."
     },
     "documents": {
-      "title": "Documents to register a car from the EU",
-      "text": "You usually need:\n• the purchase contract or invoice,\n• the foreign registration certificate (in Germany both parts: Zulassungsbescheinigung Teil I and II),\n• proof of payment of excise or registration tax,\n• a valid roadworthiness test in your country,\n• translations of foreign-language documents if your office requires them.\nDeadlines differ between countries – in Poland, for example, a car brought from the EU must be registered within 30 days."
+      "title": "Dokumenti za registracijo avta iz EU",
+      "text": "Običajno potrebujete:\n• kupoprodajno pogodbo ali račun,\n• tuje prometno dovoljenje (v Nemčiji oba dela: Zulassungsbescheinigung Teil I in II),\n• potrdilo o skladnosti (COC) in tehnični pregled,\n• dokazilo o plačilu DMV in DDV, kadar je potrebno,\n• prevode dokumentov, če jih zahtevajo.\nRoki se med državami razlikujejo – pozanimajte se na upravni enoti ali pri registracijski organizaciji."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Do I pay customs duty on a car from Germany?",
-      "a1": "No. There are no customs duties between EU countries, so a car from Germany, the Netherlands or France pays no duty. You do pay your own country’s registration taxes, such as excise in Poland or BPM in the Netherlands.",
-      "q2": "Do I pay VAT on a used car from the EU?",
-      "a2": "Usually not – VAT is settled in the country of purchase, or there is none when buying from a private seller or under the margin scheme. The exception is new cars (up to 6 months or 6,000 km) – their VAT is paid in the country of registration.",
-      "q3": "How much does it cost to transport a car from Germany?",
-      "a3": "It depends on the distance and the method. A car carrier is usually the cheapest over a longer distance, a dedicated tow truck costs more. The calculator prices it from the distance between the countries and per-kilometre rates.",
-      "q4": "Can I drive the car home from Germany?",
-      "a4": "Yes, if it runs. You need export plates from the country of purchase or temporary plates from your registration office – always with liability insurance for the trip.",
-      "q5": "What value is the registration tax based on?",
-      "a5": "Usually on the price you paid or on the car’s value, depending on the country – some countries also use CO₂ and age. If the price is far from the market value, the authorities may use the market value.",
-      "q6": "Does a car from the EU need type approval?",
-      "a6": "Usually not – a car registered in another EU country already has European type approval, so a roadworthiness test is enough. Extra tests or modifications are only needed in unusual cases, e.g. after modifications or for a car originally from outside the EU."
+      "title": "Pogosta vprašanja",
+      "q1": "Ali plačam carino za avto iz Nemčije?",
+      "a1": "Ne. Med državami EU ni carin, zato avto iz Nemčije, Avstrije ali Italije ne plača carine. Plačate pa davke pri registraciji v svoji državi, na primer DMV v Sloveniji.",
+      "q2": "Ali plačam DDV za rabljen avto iz EU?",
+      "a2": "Običajno ne – DDV se obračuna v državi nakupa ali ga ni pri nakupu od fizične osebe ali po posebni ureditvi. Izjema so nova vozila (do 6 mesecev ali 6000 km), za katera se DDV plača v državi registracije.",
+      "q3": "Koliko stane prevoz avta iz Nemčije?",
+      "a3": "Odvisno od razdalje in načina. Avtotransporter je na daljši poti običajno najcenejši, samostojna vlečna služba je dražja. Kalkulator računa po razdalji med državama in cenah na kilometer.",
+      "q4": "Ali lahko avto iz Nemčije pripeljem sam?",
+      "a4": "Da, če vozi. Potrebujete izvozne tablice iz države nakupa ali začasne tablice iz svoje države – vedno z obveznim zavarovanjem za pot.",
+      "q5": "Od katere vrednosti se računa DMV?",
+      "a5": "V Sloveniji glede na izpust CO₂ in prodajno ceno vozila. Druge države računajo od cene ali vrednosti avta, včasih tudi glede na starost. Če cena močno odstopa od tržne vrednosti, lahko organ upošteva tržno.",
+      "q6": "Ali avto iz EU potrebuje homologacijo?",
+      "a6": "Običajno ne – avto, registriran v drugi državi EU, že ima evropsko homologacijo, zadostuje tehnični pregled. Dodatni pregledi so potrebni le v posebnih primerih, npr. po predelavah."
     }
   }
 }

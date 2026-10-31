@@ -514,7 +514,7 @@
     "vin": "VIN patikra",
     "copart": "Copart – kaip pirkti",
     "vinCompare": "VIN ataskaitų palyginimas",
-    "euImport": "Import a car from the EU"
+    "euImport": "Automobilio importas iš ES"
   },
   "footer": {
     "about": "Nepriklausoma automobilių iš ne ES šalių importo išlaidų skaičiuoklė. Automobilių neparduodame ir neimportuojame – apskaičiuojame, kiek jie iš tikrųjų kainuoja.",
@@ -894,8 +894,8 @@
       "description": "Kurią VIN ataskaitą rinktis automobiliui iš JAV ar Europos? Aprėptis, žalų ir title duomenys, nuotraukos ir kainos: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
-      "title": "Import a car from Germany or another EU country – cost calculator | Carglo",
-      "description": "What does it cost to bring a car from Germany, the Netherlands or another EU country? Free calculator: transport by car carrier or on export plates, registration tax, VAT on new cars and fees."
+      "title": "Automobilio importas iš Vokietijos ir ES – išlaidų skaičiuoklė: transportas, registracijos mokestis | Carglo",
+      "description": "Kiek kainuoja parsivežti automobilį iš Vokietijos, Nyderlandų ar kitos ES šalies? Nemokama skaičiuoklė: transportas autovežiu arba su eksporto numeriais, registracijos mokestis, naujo automobilio PVM ir rinkliavos."
     }
   },
   "privacy": {
@@ -2303,81 +2303,81 @@
     }
   },
   "euImport": {
-    "eyebrow": "EU import calculator",
-    "title": "What it costs to bring a car from Germany or another EU country",
-    "lead": "A car from another EU country pays no customs duty, but transport, registration taxes and fees come on top of the price. Choose where you buy and where you register – we work out the full cost for free.",
-    "origin": "Country of purchase",
-    "destination": "Country of registration",
-    "price": "Car price",
-    "currency": "Currency",
-    "year": "Year of manufacture",
-    "fuel": "Fuel",
-    "engine": "Engine size (cc)",
-    "power": "Power (kW)",
-    "co2": "CO₂ emissions (g/km)",
-    "optional": "optional",
-    "transportLabel": "How the car gets to you",
+    "eyebrow": "ES importo skaičiuoklė",
+    "title": "Kiek kainuoja parsivežti automobilį iš Vokietijos ar kitos ES šalies",
+    "lead": "Už automobilį iš kitos ES šalies muito nemokama, tačiau prie kainos prisideda transportas, registracijos mokesčiai ir rinkliavos. Pasirinkite pirkimo ir registracijos šalis – visas išlaidas apskaičiuosime nemokamai.",
+    "origin": "Pirkimo šalis",
+    "destination": "Registracijos šalis",
+    "price": "Automobilio kaina",
+    "currency": "Valiuta",
+    "year": "Pagaminimo metai",
+    "fuel": "Kuras",
+    "engine": "Variklio tūris (cm³)",
+    "power": "Galia (kW)",
+    "co2": "CO₂ emisija (g/km)",
+    "optional": "neprivaloma",
+    "transportLabel": "Kaip automobilis atvyks pas jus",
     "mode": {
-      "CAR_CARRIER": "Car carrier",
-      "TOW_TRUCK": "Dedicated tow truck",
-      "SELF_DRIVE": "Drive it home on export plates"
+      "CAR_CARRIER": "Autovežis",
+      "TOW_TRUCK": "Atskiras tralas",
+      "SELF_DRIVE": "Važiuoju pats su eksporto numeriais"
     },
-    "newVehicle": "New vehicle for VAT purposes",
-    "newVehicleHint": "Up to 6 months since first registration or up to 6,000 km – VAT is then paid in your country.",
-    "submit": "Calculate cost",
-    "calculating": "Calculating…",
-    "resultTitle": "Cost of importing",
-    "route": "{{from}} → {{to}}: approx. {{km}} km",
-    "total": "Total",
-    "empty": "Fill in the details and click “Calculate cost”.",
-    "error": "We could not calculate this. Check the details and try again.",
-    "note": "Estimate based on current rates. Taxes are calculated on the purchase price; the authorities may use the market value if the price differs from it.",
-    "nonEu": "Car from the USA, Canada, Japan, the UAE or the UK?",
-    "nonEuLink": "Use the non-EU import calculator",
+    "newVehicle": "Naujas automobilis PVM prasme",
+    "newVehicleHint": "Iki 6 mėnesių nuo pirmosios registracijos arba iki 6000 km – tada PVM mokate savo šalyje.",
+    "submit": "Apskaičiuoti",
+    "calculating": "Skaičiuoju…",
+    "resultTitle": "Importo išlaidos",
+    "route": "{{from}} → {{to}}: apie {{km}} km",
+    "total": "Iš viso",
+    "empty": "Užpildykite duomenis ir spustelėkite „Apskaičiuoti“.",
+    "error": "Apskaičiuoti nepavyko. Patikrinkite duomenis ir bandykite dar kartą.",
+    "note": "Įvertinimas pagal dabartinius tarifus. Mokesčius skaičiuojame nuo pirkimo kainos; institucijos gali taikyti rinkos vertę, jei kaina nuo jos skiriasi.",
+    "nonEu": "Automobilis iš JAV, Kanados, Japonijos, JAE ar Jungtinės Karalystės?",
+    "nonEuLink": "Naudokite importo ne iš ES skaičiuoklę",
     "cost": {
-      "PURCHASE_PRICE": "Purchase price",
-      "EU_TRANSPORT_CAR_CARRIER": "Car carrier transport ({{km}} km)",
-      "EU_TRANSPORT_TOW_TRUCK": "Dedicated tow truck ({{km}} km)",
-      "EU_TRANSPORT_SELF_DRIVE": "Export plates with insurance, fuel and tolls ({{km}} km)",
-      "EU_NEW_VEHICLE_VAT": "VAT {{rate}}% on a new car",
-      "INSURANCE_FIRST_YEAR": "Liability insurance – first year (estimate)"
+      "PURCHASE_PRICE": "Pirkimo kaina",
+      "EU_TRANSPORT_CAR_CARRIER": "Transportas autovežiu ({{km}} km)",
+      "EU_TRANSPORT_TOW_TRUCK": "Atskiras tralas ({{km}} km)",
+      "EU_TRANSPORT_SELF_DRIVE": "Eksporto numeriai su draudimu, kuras ir kelių mokesčiai ({{km}} km)",
+      "EU_NEW_VEHICLE_VAT": "{{rate}} % PVM nuo naujo automobilio",
+      "INSURANCE_FIRST_YEAR": "Civilinės atsakomybės draudimas – pirmi metai (įvertinimas)"
     },
     "warning": {
-      "usedVatAtOrigin": "Used car: VAT is settled in the country of purchase (or there is none when buying from a private seller or under the margin scheme) – you do not pay it again where you register.",
-      "newVehicleVat": "New car: the seller invoices without VAT and you pay VAT in the country of registration. Enter the net price.",
-      "exportPlates": "For the trip you need export plates from the country of purchase or temporary plates from your own registration office – both with liability insurance.",
-      "ferry": "The route needs a ferry – its cost is not included."
+      "usedVatAtOrigin": "Naudotas automobilis: PVM sumokamas pirkimo šalyje (arba jo nėra perkant iš privataus asmens ar taikant maržos schemą) – registracijos šalyje antrą kartą nemokate.",
+      "newVehicleVat": "Naujas automobilis: pardavėjas išrašo sąskaitą be PVM, o PVM mokate registracijos šalyje. Įveskite kainą be PVM.",
+      "exportPlates": "Kelionei reikia pirkimo šalies eksporto numerių arba savo šalies laikinųjų numerių – visada su civilinės atsakomybės draudimu.",
+      "ferry": "Maršrutui reikia kelto – jo kaina neįskaičiuota."
     },
     "vat": {
-      "title": "VAT on a car from the EU – when you pay it",
-      "text": "There are no customs duties between EU countries, and VAT is settled only once:\n• Used car from a private seller or from a dealer under the margin scheme – there is no VAT, or it is already in the price. You do not pay it again at home.\n• Used car from a dealer with a full VAT invoice – a private buyer pays the VAT of the country of purchase in the price. A business can buy net and account for VAT at home.\n• New car – up to 6 months since first registration or up to 6,000 km. VAT is then always paid in the country of registration, and the seller invoices at 0%."
+      "title": "PVM už automobilį iš ES – kada jį mokate",
+      "text": "Tarp ES šalių muitų nėra, o PVM sumokamas tik kartą:\n• Naudotas automobilis iš privataus asmens arba iš prekiautojo pagal maržos schemą – PVM nėra arba jis jau kainoje. Namuose jo nemokate dar kartą.\n• Naudotas automobilis iš prekiautojo su pilna PVM sąskaita – privatus asmuo kainoje sumoka pirkimo šalies PVM. Įmonė gali pirkti be PVM ir deklaruoti jį Lietuvoje.\n• Naujas automobilis – iki 6 mėnesių nuo pirmosios registracijos arba iki 6000 km. PVM tada visada mokamas registracijos šalyje, o pardavėjas taiko 0 %."
     },
     "transport": {
-      "title": "Transport – carrier or on its own wheels",
-      "text": "A car carrier is the cheapest option over a longer distance – you pay per kilometre and the car travels with others. A dedicated tow truck costs more but collects the car right away and carries only yours – the choice for cars that do not run.\nYou can drive home if the car runs. You need export plates from the country of purchase (e.g. Ausfuhrkennzeichen in Germany) or temporary plates from the registration office in your country – always with liability insurance. Add fuel and tolls along the way."
+      "title": "Transportas – autovežis ar savo eiga",
+      "text": "Autovežis ilgesniu atstumu pigiausias – mokate už kilometrus, o automobilis važiuoja kartu su kitais. Atskiras tralas brangesnis, bet automobilį paima iš karto ir veža tik jūsų – pasirinkimas nevažiuojantiems automobiliams.\nSavo eiga grįšite, jei automobilis važiuoja. Reikia pirkimo šalies eksporto numerių (pvz., Ausfuhrkennzeichen Vokietijoje) arba savo šalies laikinųjų numerių – visada su draudimu. Pridėkite kurą ir kelių mokesčius."
     },
     "taxes": {
-      "title": "Taxes at registration",
-      "text": "Each country has its own one-off tax at the first registration of an imported car – and it most often decides whether importing pays off:\n• Poland: excise of 3.1% of the price up to 2,000 cc and 18.6% above (half for hybrids, 0% for EVs),\n• the Netherlands: BPM, Austria: NoVA, Belgium: registration tax, Denmark and Finland: taxes on the car’s value,\n• Germany, Czechia or Sweden have no such tax – only registration fees.\nThe calculator works it out automatically from the purchase price, year, CO₂ and power."
+      "title": "Mokesčiai registruojant",
+      "text": "Kiekviena šalis turi savo vienkartinį mokestį pirmą kartą registruojant įvežtą automobilį – jis dažnai lemia, ar importas apsimoka:\n• Lietuva: registracijos mokestis pagal CO₂ emisiją,\n• Lenkija: akcizas 3,1 % kainos iki 2000 cm³ ir 18,6 % daugiau; Nyderlandai: BPM; Austrija: NoVA; Danija ir Suomija: mokesčiai nuo vertės,\n• Vokietijoje, Čekijoje ar Švedijoje tokio mokesčio nėra – tik registracijos rinkliavos.\nSkaičiuoklė jį apskaičiuoja automatiškai pagal kainą, metus, CO₂ ir galią."
     },
     "documents": {
-      "title": "Documents to register a car from the EU",
-      "text": "You usually need:\n• the purchase contract or invoice,\n• the foreign registration certificate (in Germany both parts: Zulassungsbescheinigung Teil I and II),\n• proof of payment of excise or registration tax,\n• a valid roadworthiness test in your country,\n• translations of foreign-language documents if your office requires them.\nDeadlines differ between countries – in Poland, for example, a car brought from the EU must be registered within 30 days."
+      "title": "Dokumentai automobiliui iš ES registruoti",
+      "text": "Paprastai reikia:\n• pirkimo–pardavimo sutarties arba sąskaitos,\n• užsienio registracijos liudijimo (Vokietijoje abiejų dalių: Zulassungsbescheinigung Teil I ir II),\n• techninės apžiūros,\n• registracijos mokesčio sumokėjimo įrodymo,\n• vertimų, jei jų reikalauja „Regitra“.\nTerminai skiriasi priklausomai nuo šalies – pasiteiraukite registracijos įstaigoje."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Do I pay customs duty on a car from Germany?",
-      "a1": "No. There are no customs duties between EU countries, so a car from Germany, the Netherlands or France pays no duty. You do pay your own country’s registration taxes, such as excise in Poland or BPM in the Netherlands.",
-      "q2": "Do I pay VAT on a used car from the EU?",
-      "a2": "Usually not – VAT is settled in the country of purchase, or there is none when buying from a private seller or under the margin scheme. The exception is new cars (up to 6 months or 6,000 km) – their VAT is paid in the country of registration.",
-      "q3": "How much does it cost to transport a car from Germany?",
-      "a3": "It depends on the distance and the method. A car carrier is usually the cheapest over a longer distance, a dedicated tow truck costs more. The calculator prices it from the distance between the countries and per-kilometre rates.",
-      "q4": "Can I drive the car home from Germany?",
-      "a4": "Yes, if it runs. You need export plates from the country of purchase or temporary plates from your registration office – always with liability insurance for the trip.",
-      "q5": "What value is the registration tax based on?",
-      "a5": "Usually on the price you paid or on the car’s value, depending on the country – some countries also use CO₂ and age. If the price is far from the market value, the authorities may use the market value.",
-      "q6": "Does a car from the EU need type approval?",
-      "a6": "Usually not – a car registered in another EU country already has European type approval, so a roadworthiness test is enough. Extra tests or modifications are only needed in unusual cases, e.g. after modifications or for a car originally from outside the EU."
+      "title": "Dažni klausimai",
+      "q1": "Ar moku muitą už automobilį iš Vokietijos?",
+      "a1": "Ne. Tarp ES šalių muitų nėra, todėl automobilis iš Vokietijos, Nyderlandų ar Prancūzijos be muito. Tačiau mokate savo šalies registracijos mokesčius, pvz., registracijos mokestį Lietuvoje.",
+      "q2": "Ar moku PVM už naudotą automobilį iš ES?",
+      "a2": "Paprastai ne – PVM sumokamas pirkimo šalyje arba jo nėra perkant iš privataus asmens ar pagal maržos schemą. Išimtis – nauji automobiliai (iki 6 mėnesių arba 6000 km), už kuriuos PVM mokamas registracijos šalyje.",
+      "q3": "Kiek kainuoja automobilio transportas iš Vokietijos?",
+      "a3": "Priklauso nuo atstumo ir būdo. Autovežis ilgesniu atstumu paprastai pigiausias, atskiras tralas brangesnis. Skaičiuoklė skaičiuoja pagal atstumą tarp šalių ir kainas už kilometrą.",
+      "q4": "Ar galiu parvažiuoti automobiliu iš Vokietijos pats?",
+      "a4": "Taip, jei automobilis važiuoja. Reikia pirkimo šalies eksporto numerių arba savo šalies laikinųjų numerių – visada su draudimu kelionei.",
+      "q5": "Nuo ko skaičiuojamas registracijos mokestis?",
+      "a5": "Lietuvoje pagal CO₂ emisiją. Kitose šalyse pagrindas gali būti kaina, vertė, CO₂ ar amžius.",
+      "q6": "Ar automobiliui iš ES reikia tipo patvirtinimo?",
+      "a6": "Paprastai ne – kitoje ES šalyje registruotas automobilis jau turi ES tipo patvirtinimą, užtenka techninės apžiūros. Daugiau reikia tik ypatingais atvejais, pvz., po pertvarkymų."
     }
   }
 }

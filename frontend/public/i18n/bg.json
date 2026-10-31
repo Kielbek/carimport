@@ -514,7 +514,7 @@
     "vin": "Проверка на VIN",
     "copart": "Copart – как да купите",
     "vinCompare": "Сравнение на VIN доклади",
-    "euImport": "Import a car from the EU"
+    "euImport": "Внос на кола от ЕС"
   },
   "footer": {
     "about": "Независим калкулатор на разходите за внос на автомобили извън ЕС. Не продаваме и не внасяме коли – изчисляваме колко всъщност струват.",
@@ -894,8 +894,8 @@
       "description": "Кой VIN доклад да изберете за кола от САЩ или Европа? Обхват, данни за щети и title, снимки и цени: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
-      "title": "Import a car from Germany or another EU country – cost calculator | Carglo",
-      "description": "What does it cost to bring a car from Germany, the Netherlands or another EU country? Free calculator: transport by car carrier or on export plates, registration tax, VAT on new cars and fees."
+      "title": "Внос на кола от Германия и ЕС – калкулатор на разходите: транспорт, данъци, регистрация | Carglo",
+      "description": "Колко струва да докарате кола от Германия, Австрия или друга държава от ЕС? Безплатен калкулатор: транспорт с автовоз или с транзитни номера, данъци при регистрация, ДДС за нова кола и такси."
     }
   },
   "privacy": {
@@ -2303,81 +2303,81 @@
     }
   },
   "euImport": {
-    "eyebrow": "EU import calculator",
-    "title": "What it costs to bring a car from Germany or another EU country",
-    "lead": "A car from another EU country pays no customs duty, but transport, registration taxes and fees come on top of the price. Choose where you buy and where you register – we work out the full cost for free.",
-    "origin": "Country of purchase",
-    "destination": "Country of registration",
-    "price": "Car price",
-    "currency": "Currency",
-    "year": "Year of manufacture",
-    "fuel": "Fuel",
-    "engine": "Engine size (cc)",
-    "power": "Power (kW)",
-    "co2": "CO₂ emissions (g/km)",
-    "optional": "optional",
-    "transportLabel": "How the car gets to you",
+    "eyebrow": "Калкулатор за внос от ЕС",
+    "title": "Колко струва да докарате кола от Германия или друга държава от ЕС",
+    "lead": "Кола от друга държава от ЕС не плаща мито, но към цената се добавят транспорт, данъци при регистрация и такси. Изберете държавата на покупка и държавата на регистрация – ще изчислим пълната цена безплатно.",
+    "origin": "Държава на покупка",
+    "destination": "Държава на регистрация",
+    "price": "Цена на колата",
+    "currency": "Валута",
+    "year": "Година на производство",
+    "fuel": "Гориво",
+    "engine": "Обем на двигателя (см³)",
+    "power": "Мощност (kW)",
+    "co2": "Емисии CO₂ (г/км)",
+    "optional": "по желание",
+    "transportLabel": "Как колата стига до вас",
     "mode": {
-      "CAR_CARRIER": "Car carrier",
-      "TOW_TRUCK": "Dedicated tow truck",
-      "SELF_DRIVE": "Drive it home on export plates"
+      "CAR_CARRIER": "Автовоз",
+      "TOW_TRUCK": "Отделна платформа",
+      "SELF_DRIVE": "Карам я сам с транзитни номера"
     },
-    "newVehicle": "New vehicle for VAT purposes",
-    "newVehicleHint": "Up to 6 months since first registration or up to 6,000 km – VAT is then paid in your country.",
-    "submit": "Calculate cost",
-    "calculating": "Calculating…",
-    "resultTitle": "Cost of importing",
-    "route": "{{from}} → {{to}}: approx. {{km}} km",
-    "total": "Total",
-    "empty": "Fill in the details and click “Calculate cost”.",
-    "error": "We could not calculate this. Check the details and try again.",
-    "note": "Estimate based on current rates. Taxes are calculated on the purchase price; the authorities may use the market value if the price differs from it.",
-    "nonEu": "Car from the USA, Canada, Japan, the UAE or the UK?",
-    "nonEuLink": "Use the non-EU import calculator",
+    "newVehicle": "Нова кола за целите на ДДС",
+    "newVehicleHint": "До 6 месеца от първата регистрация или до 6000 км – тогава ДДС се плаща във вашата държава.",
+    "submit": "Изчисли разходите",
+    "calculating": "Изчислявам…",
+    "resultTitle": "Разходи за внос",
+    "route": "{{from}} → {{to}}: около {{km}} км",
+    "total": "Общо",
+    "empty": "Попълнете данните и натиснете „Изчисли разходите“.",
+    "error": "Изчислението не беше успешно. Проверете данните и опитайте отново.",
+    "note": "Оценка по актуалните ставки. Данъците изчисляваме от покупната цена; органите могат да вземат пазарната стойност, ако цената се отклонява от нея.",
+    "nonEu": "Кола от САЩ, Канада, Япония, ОАЕ или Великобритания?",
+    "nonEuLink": "Използвайте калкулатора за внос извън ЕС",
     "cost": {
-      "PURCHASE_PRICE": "Purchase price",
-      "EU_TRANSPORT_CAR_CARRIER": "Car carrier transport ({{km}} km)",
-      "EU_TRANSPORT_TOW_TRUCK": "Dedicated tow truck ({{km}} km)",
-      "EU_TRANSPORT_SELF_DRIVE": "Export plates with insurance, fuel and tolls ({{km}} km)",
-      "EU_NEW_VEHICLE_VAT": "VAT {{rate}}% on a new car",
-      "INSURANCE_FIRST_YEAR": "Liability insurance – first year (estimate)"
+      "PURCHASE_PRICE": "Покупна цена",
+      "EU_TRANSPORT_CAR_CARRIER": "Транспорт с автовоз ({{km}} км)",
+      "EU_TRANSPORT_TOW_TRUCK": "Отделна платформа ({{km}} км)",
+      "EU_TRANSPORT_SELF_DRIVE": "Транзитни номера със застраховка, гориво и пътни такси ({{km}} км)",
+      "EU_NEW_VEHICLE_VAT": "ДДС {{rate}}% за нова кола",
+      "INSURANCE_FIRST_YEAR": "Гражданска отговорност – първа година (оценка)"
     },
     "warning": {
-      "usedVatAtOrigin": "Used car: VAT is settled in the country of purchase (or there is none when buying from a private seller or under the margin scheme) – you do not pay it again where you register.",
-      "newVehicleVat": "New car: the seller invoices without VAT and you pay VAT in the country of registration. Enter the net price.",
-      "exportPlates": "For the trip you need export plates from the country of purchase or temporary plates from your own registration office – both with liability insurance.",
-      "ferry": "The route needs a ferry – its cost is not included."
+      "usedVatAtOrigin": "Употребявана кола: ДДС се урежда в държавата на покупка (или няма такъв при покупка от частно лице или по схемата на маржа) – в държавата на регистрация не го плащате втори път.",
+      "newVehicleVat": "Нова кола: продавачът фактурира без ДДС, а ДДС плащате в държавата на регистрация. Въведете цената без ДДС.",
+      "exportPlates": "За пътуването са нужни транзитни номера от държавата на покупка или временни номера от вашата държава – винаги с гражданска отговорност.",
+      "ferry": "Маршрутът изисква ферибот – цената му не е включена."
     },
     "vat": {
-      "title": "VAT on a car from the EU – when you pay it",
-      "text": "There are no customs duties between EU countries, and VAT is settled only once:\n• Used car from a private seller or from a dealer under the margin scheme – there is no VAT, or it is already in the price. You do not pay it again at home.\n• Used car from a dealer with a full VAT invoice – a private buyer pays the VAT of the country of purchase in the price. A business can buy net and account for VAT at home.\n• New car – up to 6 months since first registration or up to 6,000 km. VAT is then always paid in the country of registration, and the seller invoices at 0%."
+      "title": "ДДС за кола от ЕС – кога се плаща",
+      "text": "Между държавите от ЕС няма мита, а ДДС се урежда само веднъж:\n• Употребявана кола от частно лице или от търговец по схемата на маржа – няма ДДС или той вече е в цената. Не го плащате отново у дома.\n• Употребявана кола от търговец с пълна фактура с ДДС – частното лице плаща в цената ДДС на държавата на покупка. Фирма може да купи без ДДС и да го начисли у нас.\n• Нова кола – до 6 месеца от първата регистрация или до 6000 км. Тогава ДДС винаги се дължи в държавата на регистрация, а продавачът фактурира с 0%."
     },
     "transport": {
-      "title": "Transport – carrier or on its own wheels",
-      "text": "A car carrier is the cheapest option over a longer distance – you pay per kilometre and the car travels with others. A dedicated tow truck costs more but collects the car right away and carries only yours – the choice for cars that do not run.\nYou can drive home if the car runs. You need export plates from the country of purchase (e.g. Ausfuhrkennzeichen in Germany) or temporary plates from the registration office in your country – always with liability insurance. Add fuel and tolls along the way."
+      "title": "Транспорт – автовоз или своим ходом",
+      "text": "Автовозът е най-евтиният вариант на дълго разстояние – плащате на километър, а колата пътува с други. Отделна платформа е по-скъпа, но взема колата веднага и вози само вашата – изборът за неработещи коли.\nСвоим ходом можете, ако колата е в движение. Нужни са транзитни номера от държавата на покупка (напр. Ausfuhrkennzeichen в Германия) или временни номера от вашата държава – винаги с гражданска отговорност. Добавете гориво и пътни такси."
     },
     "taxes": {
-      "title": "Taxes at registration",
-      "text": "Each country has its own one-off tax at the first registration of an imported car – and it most often decides whether importing pays off:\n• Poland: excise of 3.1% of the price up to 2,000 cc and 18.6% above (half for hybrids, 0% for EVs),\n• the Netherlands: BPM, Austria: NoVA, Belgium: registration tax, Denmark and Finland: taxes on the car’s value,\n• Germany, Czechia or Sweden have no such tax – only registration fees.\nThe calculator works it out automatically from the purchase price, year, CO₂ and power."
+      "title": "Данъци при регистрация",
+      "text": "Всяка държава има собствен еднократен данък при първа регистрация на внесена кола – и той често решава дали вносът си струва:\n• България няма отделен регистрационен данък – плащат се такси за регистрация и годишен данък,\n• Полша: акциз 3,1% от цената до 2000 см³ и 18,6% над; Нидерландия: BPM; Австрия: NoVA; Дания и Финландия: данъци върху стойността,\n• Германия, Чехия и Швеция също имат само такси за регистрация.\nКалкулаторът го изчислява автоматично от цената, годината, CO₂ и мощността."
     },
     "documents": {
-      "title": "Documents to register a car from the EU",
-      "text": "You usually need:\n• the purchase contract or invoice,\n• the foreign registration certificate (in Germany both parts: Zulassungsbescheinigung Teil I and II),\n• proof of payment of excise or registration tax,\n• a valid roadworthiness test in your country,\n• translations of foreign-language documents if your office requires them.\nDeadlines differ between countries – in Poland, for example, a car brought from the EU must be registered within 30 days."
+      "title": "Документи за регистрация на кола от ЕС",
+      "text": "Обикновено са нужни:\n• договор за покупко-продажба или фактура,\n• чуждото свидетелство за регистрация (в Германия двете части: Zulassungsbescheinigung Teil I и II),\n• преглед за техническа изправност и годност,\n• застраховка „Гражданска отговорност“,\n• заверени преводи на документите, ако се изискват.\nСроковете се различават според държавата – попитайте в КАТ."
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "q1": "Do I pay customs duty on a car from Germany?",
-      "a1": "No. There are no customs duties between EU countries, so a car from Germany, the Netherlands or France pays no duty. You do pay your own country’s registration taxes, such as excise in Poland or BPM in the Netherlands.",
-      "q2": "Do I pay VAT on a used car from the EU?",
-      "a2": "Usually not – VAT is settled in the country of purchase, or there is none when buying from a private seller or under the margin scheme. The exception is new cars (up to 6 months or 6,000 km) – their VAT is paid in the country of registration.",
-      "q3": "How much does it cost to transport a car from Germany?",
-      "a3": "It depends on the distance and the method. A car carrier is usually the cheapest over a longer distance, a dedicated tow truck costs more. The calculator prices it from the distance between the countries and per-kilometre rates.",
-      "q4": "Can I drive the car home from Germany?",
-      "a4": "Yes, if it runs. You need export plates from the country of purchase or temporary plates from your registration office – always with liability insurance for the trip.",
-      "q5": "What value is the registration tax based on?",
-      "a5": "Usually on the price you paid or on the car’s value, depending on the country – some countries also use CO₂ and age. If the price is far from the market value, the authorities may use the market value.",
-      "q6": "Does a car from the EU need type approval?",
-      "a6": "Usually not – a car registered in another EU country already has European type approval, so a roadworthiness test is enough. Extra tests or modifications are only needed in unusual cases, e.g. after modifications or for a car originally from outside the EU."
+      "title": "Често задавани въпроси",
+      "q1": "Плащам ли мито за кола от Германия?",
+      "a1": "Не. Между държавите от ЕС няма мита, така че кола от Германия, Австрия или Франция не плаща мито. Плащате обаче таксите и данъците при регистрация във вашата държава.",
+      "q2": "Плащам ли ДДС за употребявана кола от ЕС?",
+      "a2": "Обикновено не – ДДС се урежда в държавата на покупка или няма такъв при покупка от частно лице или по схемата на маржа. Изключение са новите коли (до 6 месеца или 6000 км), чийто ДДС се плаща в държавата на регистрация.",
+      "q3": "Колко струва транспортът на кола от Германия?",
+      "a3": "Зависи от разстоянието и начина. Автовозът обикновено е най-евтин на дълго разстояние, отделната платформа е по-скъпа. Калкулаторът изчислява по разстоянието между държавите и тарифите на километър.",
+      "q4": "Мога ли да докарам колата от Германия своим ходом?",
+      "a4": "Да, ако е в движение. Нужни са транзитни номера от държавата на покупка или временни номера от вашата държава – винаги с гражданска отговорност за пътуването.",
+      "q5": "От каква стойност се изчислява регистрационният данък?",
+      "a5": "Зависи от държавата – от цената, стойността на колата или от CO₂ и възрастта. Ако цената се отклонява силно от пазарната стойност, органите могат да вземат пазарната.",
+      "q6": "Нужно ли е одобряване на кола от ЕС?",
+      "a6": "Обикновено не – кола, регистрирана в друга държава от ЕС, има европейско одобрение на типа и стига технически преглед. Допълнителни проверки са нужни само в особени случаи, напр. след преустройство."
     }
   }
 }
