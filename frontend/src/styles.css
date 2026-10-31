@@ -260,17 +260,26 @@ select.input {
     --brand-text: #ffc61a;
     --hero-glow-1: rgb(255 198 26 / 0.12);
     --hero-glow-2: transparent;
+    --hero-facts-bg: rgb(16 16 17 / 0.72);
+    --hero-facts-shadow: none;
     color-scheme: dark;
+    background: var(--bg);
   }
 }
 /* the hero picture is the largest paint (LCP): it slides in but is visible from the first frame (no fade from 0),
    and the costly drop shadow is kept for desktops */
 .hero-car {
   @apply pointer-events-none select-none;
-  animation: hero-car-in 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 @media (min-width: 1024px) {
-  .hero-car { filter: drop-shadow(0 30px 40px rgb(0 0 0 / 0.55)); }
+  .hero-car {
+    animation: hero-car-in 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    filter: drop-shadow(0 30px 40px rgb(0 0 0 / 0.55));
+  }
+}
+/* phones: the photo fades into the page above and below */
+.hero-night-shade {
+  background: linear-gradient(180deg, var(--bg) 0%, rgb(16 16 17 / 0) 28%, rgb(16 16 17 / 0) 62%, var(--bg) 100%);
 }
 @keyframes hero-car-in {
   from { transform: translateX(40px); }
