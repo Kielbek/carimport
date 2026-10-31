@@ -2378,6 +2378,8 @@
       "a5": "Suomessa auton yleisestä vähittäismyyntiarvosta eli siitä, mitä vastaavasta autosta maksettaisiin Suomessa – prosentti riippuu CO₂-päästöistä. Muissa maissa veron perusteena voi olla hinta, arvo, CO₂ tai ikä.",
       "q6": "Tarvitseeko EU:sta tuotu auto tyyppihyväksynnän?",
       "a6": "Yleensä ei – toisessa EU-maassa rekisteröidyllä autolla on jo EU-tyyppihyväksyntä, joten rekisteröintikatsastus riittää. Muuta tarvitaan vain erityistapauksissa, esim. muutostöiden jälkeen."
-    }
+    },
+    "wizardHint": "Ostatko auton Saksasta tai muusta EU-maasta?",
+    "wizardLink": "Käytä EU-tuontilaskuria"
   }
 }

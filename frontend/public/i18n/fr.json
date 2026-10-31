@@ -2378,6 +2378,8 @@
       "a5": "Selon le pays, sur le prix payé ou sur la valeur du véhicule – certains pays tiennent aussi compte du CO₂ et de l’âge. Si le prix s’écarte fortement de la valeur de marché, l’administration peut retenir celle-ci.",
       "q6": "Une voiture de l’UE doit-elle passer une réception individuelle ?",
       "a6": "En général non – une voiture immatriculée dans un autre pays de l’UE dispose déjà d’une réception européenne, un contrôle technique suffit. Des contrôles ou modifications supplémentaires ne sont nécessaires que dans des cas particuliers, par ex. après transformation ou pour une voiture provenant à l’origine d’un pays hors UE."
-    }
+    },
+    "wizardHint": "Vous achetez une voiture en Allemagne ou dans un autre pays de l’UE ?",
+    "wizardLink": "Utilisez le calculateur d’import UE"
   }
 }

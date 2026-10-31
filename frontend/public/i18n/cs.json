@@ -2378,6 +2378,8 @@
       "a5": "Podle země z ceny, hodnoty auta nebo z emisí CO₂ a stáří. Pokud se cena výrazně liší od tržní hodnoty, může úřad použít tržní hodnotu.",
       "q6": "Potřebuje auto z EU homologaci?",
       "a6": "Obvykle ne – auto registrované v jiné zemi EU má evropské schválení typu, stačí evidenční kontrola a technická prohlídka. Další zkoušky nebo úpravy jsou nutné jen ve zvláštních případech, např. po přestavbě nebo u auta původně z trhu mimo EU."
-    }
+    },
+    "wizardHint": "Kupujete auto v Německu nebo jiné zemi EU?",
+    "wizardLink": "Použijte kalkulačku dovozu z EU"
   }
 }

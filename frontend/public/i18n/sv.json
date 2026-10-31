@@ -2378,6 +2378,8 @@
       "a5": "Sverige har ingen registreringsskatt. I andra länder beräknas den på priset eller bilens värde, ibland också på CO₂ och ålder. Om priset avviker kraftigt från marknadsvärdet kan myndigheten använda det.",
       "q6": "Behöver en bil från EU typgodkännas?",
       "a6": "Oftast inte – en bil som registrerats i ett annat EU-land har redan EU-typgodkännande, och det räcker med ursprungskontroll och registreringsbesiktning. Mer krävs bara i särskilda fall, t.ex. efter ombyggnad."
-    }
+    },
+    "wizardHint": "Köper du bil i Tyskland eller ett annat EU-land?",
+    "wizardLink": "Använd kalkylatorn för import från EU"
   }
 }

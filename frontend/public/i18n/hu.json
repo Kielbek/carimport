@@ -2378,6 +2378,8 @@
       "a5": "Magyarországon a környezetvédelmi osztály és a hengerűrtartalom alapján, az autó korával csökkenve. Más országokban az ár vagy az autó értéke számít, néha a CO₂ és a kor is.",
       "q6": "Kell-e honosítás egy EU-ból hozott autónál?",
       "a6": "Általában nem – a más uniós országban forgalomba helyezett autó rendelkezik európai típusjóváhagyással, elég a származásellenőrzés és a műszaki vizsga. További vizsgálat csak különleges esetben kell, pl. átalakítás után."
-    }
+    },
+    "wizardHint": "Németországban vagy más uniós országban vesz autót?",
+    "wizardLink": "Használja az uniós import kalkulátort"
   }
 }

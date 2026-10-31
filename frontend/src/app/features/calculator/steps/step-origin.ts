@@ -1,16 +1,19 @@
 import { Component, computed, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { Flag } from '../../../shared/flag/flag';
 import { Icon } from '../../../shared/icon/icon';
 import { Select, SelectOption } from '../../../shared/select/select';
+import { LanguageService } from '../../../core/i18n/language.service';
+import { pathFor } from '../../../core/routing/paths';
 import { CalculatorStore } from '../calculator.store';
 import { DEPARTURE_PORTS, ORIGINS, PICKUP_ZONES } from '../calculator.options';
 
 /** Step 1 - where the car is bought and from which port it sails. */
 @Component({
   selector: 'app-step-origin',
-  imports: [TranslatePipe, Flag, Icon, Select],
+  imports: [RouterLink, TranslatePipe, Flag, Icon, Select],
   template: `
     <fieldset>
       <legend class="label">{{ 'wizard.origin' | translate }}</legend>
@@ -25,6 +28,10 @@ import { DEPARTURE_PORTS, ORIGINS, PICKUP_ZONES } from '../calculator.options';
           </button>
         }
       </div>
+      <p class="mt-3 text-sm text-muted">
+        {{ 'euImport.wizardHint' | translate }}
+        <a [routerLink]="euImport()" class="font-semibold text-brand-text underline underline-offset-2">{{ 'euImport.wizardLink' | translate }}</a>
+      </p>
     </fieldset>
 
     <fieldset class="mt-8">
@@ -59,6 +66,8 @@ export class StepOrigin {
   protected readonly store = inject(CalculatorStore);
   protected readonly s = this.store.state;
   protected readonly origins = ORIGINS;
+  private readonly lang = inject(LanguageService);
+  protected readonly euImport = computed(() => pathFor('euImport', this.lang.current()));
   protected readonly zones = computed(() => PICKUP_ZONES[this.s().originCountry]);
   protected readonly departurePorts = computed(() => this.store.options()?.departurePorts ?? []);
   private readonly labels = toSignal(inject(TranslateService).stream(['wizard.zoneOther', 'wizard.departureAuto']),

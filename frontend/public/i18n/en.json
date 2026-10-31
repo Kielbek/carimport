@@ -2378,6 +2378,8 @@
       "a5": "Usually on the price you paid or on the car’s value, depending on the country – some countries also use CO₂ and age. If the price is far from the market value, the authorities may use the market value.",
       "q6": "Does a car from the EU need type approval?",
       "a6": "Usually not – a car registered in another EU country already has European type approval, so a roadworthiness test is enough. Extra tests or modifications are only needed in unusual cases, e.g. after modifications or for a car originally from outside the EU."
-    }
+    },
+    "wizardHint": "Buying a car in Germany or another EU country?",
+    "wizardLink": "Use the EU import calculator"
   }
 }
