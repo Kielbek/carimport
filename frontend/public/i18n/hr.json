@@ -886,7 +886,7 @@
     },
     "copart": {
       "title": "Copart iz Hrvatske: kupnja auta iz SAD-a – troškovi, broker, carina 0 % (2026) | Carglo",
-      "description": "Kako kupiti na Copartu iz Hrvatske korak po korak: broker, aukcijske naknade, salvage title, prijevoz za 4–8 tjedana i ukupni trošak s carinom i PDV-om. Auti proizvedeni u SAD-u od srpnja 2026. mogu imati carinu 0 %. Besplatni kalkulator."
+      "description": "Copart ne posluje u Hrvatskoj – licitirate na aukcijama u SAD-u preko brokera. Naknade, salvage title, prijevoz za 4–8 tjedana i ukupni trošak s carinom i PDV-om. Auti iz SAD-a od srpnja 2026. mogu imati carinu 0 %."
     },
     "vinCompare": {
       "title": "Usporedba izvještaja o povijesti VIN-a: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
@@ -2103,7 +2103,9 @@
       "q5": "Može li se auto sa salvage titleom registrirati u Europi?",
       "a5": "Da, ako nakon popravka prođe tehnički pregled u vašoj zemlji. Auti s titleom „parts only” ili „non-repairable” ili s potvrdom o uništenju ne mogu se registrirati.",
       "q6": "Koliko ću carine platiti za auto s Coparta?",
-      "a6": "Standardno 10 % carinske vrijednosti (cijena s naknadama plus prijevoz do granice EU). Auti proizvedeni u SAD-u od 1. srpnja 2026. mogu imati carinu 0 % uz dokaz o podrijetlu. Tome se dodaju PDV i nacionalni porezi – kalkulator sve izračuna."
+      "a6": "Standardno 10 % carinske vrijednosti (cijena s naknadama plus prijevoz do granice EU). Auti proizvedeni u SAD-u od 1. srpnja 2026. mogu imati carinu 0 % uz dokaz o podrijetlu. Tome se dodaju PDV i nacionalni porezi – kalkulator sve izračuna.",
+      "q7": "Postoji li Copart u Hrvatskoj?",
+      "a7": "Ne. Prema godišnjem izvješću Coparta (2025), tvrtka posluje u 11 zemalja, a u Europskoj uniji samo u Njemačkoj, Španjolskoj, Finskoj i Irskoj. Kupci iz Hrvatske zato obično licitiraju na Copartovim aukcijama u SAD-u preko brokera – ondje je najveći izbor. Europske Copartove stranice imaju vlastita pravila za strane kupce, provjerite ih prije licitiranja."
     },
     "disclaimer": "Carglo nije povezan s tvrtkom Copart Inc. Naziv Copart koristi se samo za opis usluge. Pravila i naknade aukcija mogu se mijenjati – provjerite ih na stranici Coparta.",
     "lot": {

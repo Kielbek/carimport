@@ -56,7 +56,7 @@ const PAGE_FAQ: Partial<Record<Page, { root: string; count: number }>> = {
   method: { root: 'method', count: 6 },
   vin: { root: 'vinPage', count: 6 },
   vinCompare: { root: 'vinCompare', count: 6 },
-  copart: { root: 'copart', count: 6 },
+  copart: { root: 'copart', count: 7 },
 };
 
 @Injectable({ providedIn: 'root' })

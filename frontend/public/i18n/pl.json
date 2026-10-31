@@ -886,7 +886,7 @@
     },
     "copart": {
       "title": "Copart – jak kupić auto z USA do Polski: koszty, broker, cło 0% (2026) | Carglo",
-      "description": "Licytacja na Copart z Polski krok po kroku: broker, opłaty aukcyjne, title salvage, transport 4–8 tygodni i pełny koszt z cłem, VAT i akcyzą. Auta z USA od lipca 2026 mogą mieć 0% cła. Darmowy kalkulator."
+      "description": "Copart nie działa w Polsce – ale licytujesz na aukcjach w USA przez brokera. Opłaty, title salvage, transport 4–8 tygodni i pełny koszt z cłem, VAT i akcyzą. Auta z USA od lipca 2026 mogą mieć 0% cła."
     },
     "vinCompare": {
       "title": "Raporty historii VIN – porównanie: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
@@ -2103,7 +2103,9 @@
       "q5": "Czy auto z title salvage da się zarejestrować w Europie?",
       "a5": "Tak, jeśli po naprawie przejdzie badanie techniczne w Twoim kraju. Nie da się zarejestrować aut z title „parts only”, „non-repairable” ani z certyfikatem zniszczenia.",
       "q6": "Ile zapłacę cła za auto z Copart?",
-      "a6": "Standardowo 10% wartości celnej (cena z opłatami plus transport do granicy UE). Auta zbudowane w USA mogą od 1 lipca 2026 mieć cło 0% przy dowodzie pochodzenia. Do tego dochodzi VAT i podatki krajowe – wszystko policzy kalkulator."
+      "a6": "Standardowo 10% wartości celnej (cena z opłatami plus transport do granicy UE). Auta zbudowane w USA mogą od 1 lipca 2026 mieć cło 0% przy dowodzie pochodzenia. Do tego dochodzi VAT i podatki krajowe – wszystko policzy kalkulator.",
+      "q7": "Czy Copart działa w Polsce?",
+      "a7": "Nie. Według rocznego raportu Copart (2025) firma działa w 11 krajach, a w Unii Europejskiej tylko w Niemczech, Hiszpanii, Finlandii i Irlandii. Kupujący z Polski licytują więc zwykle na aukcjach Copart w USA przez brokera – tam jest największy wybór. Europejskie serwisy Copart mają własne zasady rejestracji kupujących z zagranicy, sprawdź je przed licytacją."
     },
     "disclaimer": "Carglo nie jest powiązane z Copart Inc. Nazwa Copart służy wyłącznie do opisu usługi. Zasady i opłaty aukcji mogą się zmieniać – sprawdzaj je na stronie Copart.",
     "listing": {

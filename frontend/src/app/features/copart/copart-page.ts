@@ -93,7 +93,7 @@ export class CopartPage {
   protected readonly sections = [
     'what', 'europe', 'account', 'listing', 'bidding', 'fees', 'titles', 'inspect', 'payment', 'shipping', 'repair', 'cost', 'mistakes',
   ];
-  protected readonly faq = [1, 2, 3, 4, 5, 6];
+  protected readonly faq = [7, 1, 2, 3, 4, 5, 6];
 
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly vin = computed(() => pathFor('vin', this.lang.current()));

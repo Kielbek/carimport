@@ -886,7 +886,7 @@
     },
     "copart": {
       "title": "Copart Eestist: auto ost USA-st – kulud, maakler, 0% toll (2026) | Carglo",
-      "description": "Kuidas osta Copart’ist Eestist samm-sammult: maakler, oksjonitasud, salvage-title, transport 4–8 nädalaga ja kogukulu koos tolli ja käibemaksuga. USA-s toodetud autodel võib alates juulist 2026 olla 0% toll. Tasuta kalkulaator."
+      "description": "Copart Eestis ei tegutse – pakkumisi saab teha USA oksjonitel maakleri kaudu. Tasud, salvage-title, transport 4–8 nädalaga ja kogukulu koos tolli ja käibemaksuga. USA autodel võib alates juulist 2026 olla 0% toll."
     },
     "vinCompare": {
       "title": "VIN-ajalooraportide võrdlus: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
@@ -2103,7 +2103,9 @@
       "q5": "Kas salvage-title’iga autot saab Euroopas registreerida?",
       "a5": "Jah, kui see pärast remonti läbib ülevaatuse sinu riigis. „Parts only” või „non-repairable” title’iga või lammutustõendiga autosid registreerida ei saa.",
       "q6": "Kui palju tolli maksan Copart’i auto eest?",
-      "a6": "Tavaliselt 10% tolliväärtusest (hind koos tasudega pluss transport EL-i piirini). USA-s toodetud autodel võib alates 1. juulist 2026 olla päritolutõendiga toll 0%. Lisanduvad käibemaks ja riiklikud maksud – kalkulaator arvutab kõik välja."
+      "a6": "Tavaliselt 10% tolliväärtusest (hind koos tasudega pluss transport EL-i piirini). USA-s toodetud autodel võib alates 1. juulist 2026 olla päritolutõendiga toll 0%. Lisanduvad käibemaks ja riiklikud maksud – kalkulaator arvutab kõik välja.",
+      "q7": "Kas Copart tegutseb Eestis?",
+      "a7": "Ei. Copart’i 2025. aasta aastaaruande järgi tegutseb ettevõte 11 riigis ja Euroopa Liidus ainult Saksamaal, Hispaanias, Soomes ja Iirimaal. Eesti ostjad teevad seetõttu tavaliselt pakkumisi USA Copart’i oksjonitel maakleri kaudu – seal on valik suurim. Lähim on Copart Soomes, kuid Euroopa saitidel on välismaistele ostjatele omad reeglid, kontrolli need enne pakkumist."
     },
     "disclaimer": "Carglo ei ole seotud ettevõttega Copart Inc. Nime Copart kasutatakse ainult teenuse kirjeldamiseks. Oksjonite reeglid ja tasud võivad muutuda – kontrolli neid Copart’i veebilehel.",
     "lot": {
