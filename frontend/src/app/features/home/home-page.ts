@@ -26,7 +26,7 @@ interface CostGroup { key: string; icon: IconName; items: number }
     <!-- HERO: follows the light/dark theme on desktop; always dark on phones (text, then the night photo, then the facts) -->
     <section class="hero hero-mobile-dark relative isolate overflow-hidden text-fg">
       <div class="site relative grid pb-8 pt-7 lg:min-h-[660px] lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:items-center lg:gap-6 lg:pb-44 lg:pt-12">
-        <div class="relative z-10 max-w-[600px]">
+        <div class="relative z-10 min-h-[340px] max-w-[600px] lg:min-h-0">
           <p class="eyebrow hidden lg:block">{{ 'home.hero.eyebrow' | translate }}</p>
           <h1 class="h-display lg:mt-5">
             <span class="block text-brand-text">{{ 'home.hero.title1' | translate }}</span>
@@ -45,12 +45,12 @@ interface CostGroup { key: string; icon: IconName; items: number }
           </div>
         </div>
 
-        <!-- phones: the night photo fading into the page; desktop: the neon car beside the text -->
-        <div class="relative -mx-3 sm:-mx-5 lg:mx-0 lg:-mr-24">
+        <!-- phones: the night photo is the backdrop of the whole hero (text on its dark top, car below); desktop: the neon car beside the text -->
+        <div class="absolute inset-x-0 top-0 -z-10 h-[700px] lg:relative lg:inset-auto lg:z-auto lg:h-auto lg:-mr-24">
           <picture>
             <source media="(max-width: 1023.98px)" srcset="/images/hero-night-750.webp 750w, /images/hero-night-1100.webp 1100w"
                     sizes="100vw" width="1100" height="1311" />
-            <img class="hero-car aspect-[1/1] w-full object-cover object-[78%_70%] sm:aspect-[16/10] lg:aspect-auto lg:h-auto lg:object-contain"
+            <img class="hero-car h-full w-full object-cover object-[100%_50%] sm:object-[100%_75%] lg:h-auto lg:object-contain"
                  src="/images/hero-car-900.webp"
                  srcset="/images/hero-car-750.webp 750w, /images/hero-car-900.webp 900w, /images/hero-car-1600.webp 1600w"
                  sizes="60vw" width="1600" height="835" fetchpriority="high" decoding="async"
@@ -60,7 +60,7 @@ interface CostGroup { key: string; icon: IconName; items: number }
         </div>
 
         <!-- facts band: claim and three facts (phones: facts framed over the photo's bottom edge, then the claim) -->
-        <div class="relative z-10 -mt-16 flex flex-col-reverse gap-6 lg:absolute lg:inset-x-5 lg:bottom-7 lg:mt-0 lg:flex-row lg:items-end lg:justify-between lg:gap-10">
+        <div class="relative z-10 mt-[190px] flex flex-col-reverse gap-6 lg:absolute lg:inset-x-5 lg:bottom-7 lg:mt-0 lg:flex-row lg:items-end lg:justify-between lg:gap-10">
           <div class="shrink-0 pb-1">
             <p class="text-[17px] font-bold leading-snug">{{ 'home.strip.brand.title' | translate }}<br>{{ 'home.strip.brand.text' | translate }}</p>
             <span class="mt-2 block h-[2px] w-10 bg-brand-text" aria-hidden="true"></span>
@@ -268,10 +268,10 @@ interface CostGroup { key: string; icon: IconName; items: number }
       <div class="site">
         <p class="eyebrow">{{ 'home.pricing.eyebrow' | translate }}</p>
         <h2 class="h-section mt-5">{{ 'home.pricing.title' | translate }}</h2>
-        <div class="mt-9 grid gap-7 lg:grid-cols-3">
+        <div class="mt-9 grid grid-cols-[minmax(0,1fr)] gap-7 lg:grid-cols-3">
           @for (plan of plans; track plan.key) {
-            <article class="card flex flex-col p-7" [style.box-shadow]="plan.featured ? 'inset 0 0 0 1px var(--brand)' : null">
-              <div class="flex items-center justify-between">
+            <article class="card flex flex-col p-5 sm:p-7" [style.box-shadow]="plan.featured ? 'inset 0 0 0 1px var(--brand)' : null">
+              <div class="flex flex-wrap items-center justify-between gap-2">
                 <span class="text-[16px] uppercase tracking-[0.08em] text-brand-text">{{ 'pricing.' + plan.key + '.name' | translate }}</span>
                 @if (plan.featured) { <span class="badge badge--brand">{{ 'pricing.popular' | translate }}</span> }
               </div>

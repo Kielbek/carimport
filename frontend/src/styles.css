@@ -277,9 +277,10 @@ select.input {
     filter: drop-shadow(0 30px 40px rgb(0 0 0 / 0.55));
   }
 }
-/* phones: the photo fades into the page above and below */
+/* phones: darkens the photo's top under the headline and fades its bottom into the page */
 .hero-night-shade {
-  background: linear-gradient(180deg, var(--bg) 0%, rgb(16 16 17 / 0) 28%, rgb(16 16 17 / 0) 62%, var(--bg) 100%);
+  background: linear-gradient(180deg, rgb(16 16 17 / 0.8) 0%, rgb(16 16 17 / 0.6) 34%, rgb(16 16 17 / 0) 54%,
+    rgb(16 16 17 / 0) 76%, var(--bg) 100%);
 }
 @keyframes hero-car-in {
   from { transform: translateX(40px); }
