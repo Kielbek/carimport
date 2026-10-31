@@ -18,16 +18,19 @@ import { NewsletterSignup } from '../features/newsletter/newsletter-signup';
       <div class="border-b border-line bg-panel">
         <div class="site py-10"><app-newsletter-signup source="footer" /></div>
       </div>
-      <div class="site grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr]">
-        <div>
+      <div class="site grid grid-cols-2 gap-x-6 gap-y-10 py-14 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+        <div class="col-span-2 sm:col-span-1">
           <app-logo />
           <p class="mt-5 max-w-xs text-sm leading-relaxed text-muted">{{ 'footer.about' | translate }}</p>
           <a [routerLink]="contact()" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold hover:text-brand-text">
             <app-icon name="mail" [size]="16" /> {{ email() }}
           </a>
+          <p class="mt-6 flex max-w-xs items-start gap-2 text-xs leading-relaxed text-muted">
+            <app-icon name="lock" [size]="14" class="mt-0.5 shrink-0" /> {{ 'footer.payments' | translate }}
+          </p>
         </div>
 
-        <div>
+        <div class="col-span-2 sm:col-span-1">
           <h2 class="label">{{ 'footer.calculators' | translate }}</h2>
           <ul class="space-y-2.5 text-sm">
             @for (o of origins; track o.code) {
@@ -37,6 +40,12 @@ import { NewsletterSignup } from '../features/newsletter/newsletter-signup';
                 </a>
               </li>
             }
+            <li>
+              <a [routerLink]="euImport()" class="flex items-center gap-2.5 text-fg/85 hover:text-brand-text">
+                <app-flag code="EU" class="w-5" /> {{ 'layout.euImport' | translate }}
+              </a>
+            </li>
+            <li class="pt-1"><a [routerLink]="taxes()" class="text-fg/85 hover:text-brand-text">{{ 'layout.taxes' | translate }}</a></li>
           </ul>
         </div>
 
@@ -46,46 +55,36 @@ import { NewsletterSignup } from '../features/newsletter/newsletter-signup';
             @for (s of guideSections; track s) {
               <li><a [routerLink]="guide({ section: s, item: null })" class="hover:text-brand-text">{{ 'guide.nav.' + s | translate }}</a></li>
             }
-            @if (homeCountry(); as h) {
-              <li><a [routerLink]="guide({ section: 'countries', item: h })" class="hover:text-brand-text">{{ countryName(h) }}</a></li>
-            }
             <li><a [routerLink]="copart()" class="hover:text-brand-text">{{ 'layout.copart' | translate }}</a></li>
             <li><a [routerLink]="vin()" class="hover:text-brand-text">{{ 'layout.vin' | translate }}</a></li>
             <li><a [routerLink]="vinCompare()" class="hover:text-brand-text">{{ 'layout.vinCompare' | translate }}</a></li>
+            <li><a [routerLink]="glossary()" class="hover:text-brand-text">{{ 'layout.glossary' | translate }}</a></li>
+            <li><a [routerLink]="'/' + lang.current() + '/blog'" class="hover:text-brand-text">{{ 'layout.blog' | translate }}</a></li>
           </ul>
         </div>
 
         <div>
-          <h2 class="label">{{ 'footer.service' | translate }}</h2>
+          <h2 class="label">{{ name }}</h2>
           <ul class="space-y-2.5 text-sm text-fg/85">
             <li><a [routerLink]="about()" class="hover:text-brand-text">{{ 'layout.about' | translate }}</a></li>
-            <li><a [routerLink]="contact()" class="hover:text-brand-text">{{ 'layout.contact' | translate }}</a></li>
-            <li><a [routerLink]="'/' + lang.current() + '/blog'" class="hover:text-brand-text">{{ 'layout.blog' | translate }}</a></li>
-            <li><a [routerLink]="home()" fragment="what" class="hover:text-brand-text">{{ 'layout.what' | translate }}</a></li>
-            <li><a [routerLink]="home()" fragment="how-it-works" class="hover:text-brand-text">{{ 'layout.howItWorks' | translate }}</a></li>
+            <li><a [routerLink]="method()" class="hover:text-brand-text">{{ 'layout.method' | translate }}</a></li>
             <li><a [routerLink]="home()" fragment="pricing" class="hover:text-brand-text">{{ 'layout.pricing' | translate }}</a></li>
             <li><a [routerLink]="home()" fragment="faq" class="hover:text-brand-text">{{ 'layout.faq' | translate }}</a></li>
-            <li><a [routerLink]="home()" fragment="pricing" class="hover:text-brand-text">{{ 'layout.forBusiness' | translate }}</a></li>
-            <li><a [routerLink]="taxes()" class="hover:text-brand-text">{{ 'layout.taxes' | translate }}</a></li>
-            <li><a [routerLink]="euImport()" class="hover:text-brand-text">{{ 'layout.euImport' | translate }}</a></li>
-            <li><a [routerLink]="method()" class="hover:text-brand-text">{{ 'layout.method' | translate }}</a></li>
-            <li><a [routerLink]="glossary()" class="hover:text-brand-text">{{ 'layout.glossary' | translate }}</a></li>
+            <li><a [routerLink]="contact()" class="hover:text-brand-text">{{ 'layout.contact' | translate }}</a></li>
             <li><a [routerLink]="terms()" class="hover:text-brand-text">{{ 'footer.terms' | translate }}</a></li>
             <li><a [routerLink]="privacy()" class="hover:text-brand-text">{{ 'footer.privacy' | translate }}</a></li>
           </ul>
         </div>
+      </div>
 
-        <div>
-          <h2 class="label">{{ 'footer.language' | translate }}</h2>
-          <ul class="flex flex-wrap gap-1.5 text-sm">
-            @for (l of langs; track l.code) {
-              <li><a [routerLink]="'/' + l.code" [attr.hreflang]="l.code" [attr.title]="l.native" class="chip !min-h-8 !px-2.5 text-xs" [class.chip--active]="l.code === lang.current()"><app-flag [code]="l.flag" class="w-4" /> {{ l.label }}</a></li>
-            }
-          </ul>
-          <p class="mt-6 flex items-start gap-2 text-xs leading-relaxed text-muted">
-            <app-icon name="lock" [size]="14" class="mt-0.5" /> {{ 'footer.payments' | translate }}
-          </p>
-        </div>
+      <div class="border-t border-line">
+        <nav class="site flex flex-wrap items-center gap-x-3 gap-y-2 py-5 text-xs" [attr.aria-label]="'footer.language' | translate">
+          <span class="mr-1 font-semibold uppercase tracking-wide text-muted">{{ 'footer.language' | translate }}</span>
+          @for (l of langs; track l.code) {
+            <a [routerLink]="'/' + l.code" [attr.hreflang]="l.code" [attr.title]="l.native"
+               class="text-fg/70 hover:text-brand-text" [class.font-bold]="l.code === lang.current()" [class.!text-brand-text]="l.code === lang.current()">{{ l.native }}</a>
+          }
+        </nav>
       </div>
       <div class="border-t border-line">
         <div class="site flex flex-col gap-3 py-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
@@ -107,15 +106,11 @@ export class SiteFooter {
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly about = computed(() => pathFor('about', this.lang.current()));
   protected readonly guideSections: GuideSection[] = ['origins', 'countries', 'ports', 'models'];
-  protected readonly homeCountry = computed(() => this.lang.info().home);
 
   protected guide(ref: GuideRef): string {
     return guidePath(ref, this.lang.current());
   }
 
-  protected countryName(code: string): string {
-    return new Intl.DisplayNames([this.lang.locale()], { type: 'region' }).of(code) ?? code;
-  }
   protected readonly privacy = computed(() => pathFor('privacy', this.lang.current()));
   protected readonly terms = computed(() => pathFor('terms', this.lang.current()));
   protected readonly taxes = computed(() => pathFor('taxes', this.lang.current()));
