@@ -765,6 +765,7 @@ export class GuidePage {
     if (!m) {
       return undefined;
     }
+    const photo = this.photoOf(m);
     return {
       '@type': 'Car',
       name: `${m.make} ${m.model}`,
@@ -780,15 +781,16 @@ export class GuidePage {
       },
       ...(m.co2 ? { emissionsCO2: m.co2 } : {}),
       weightTotal: { '@type': 'QuantitativeValue', value: m.kg, unitCode: 'KGM' },
-      ...(this.photoOf(m)
+      ...(photo
         ? {
             image: {
               '@type': 'ImageObject',
-              contentUrl: `https://cargloapp.com${this.photoOf(m)!.src}-1280.webp`,
-              license: this.photoOf(m)!.licenseUrl,
-              acquireLicensePage: this.photoOf(m)!.source,
-              creditText: this.photoOf(m)!.author,
-              creator: { '@type': 'Person', name: this.photoOf(m)!.author },
+              contentUrl: `https://cargloapp.com${photo.src}-1280.webp`,
+              license: photo.licenseUrl,
+              acquireLicensePage: photo.source,
+              creditText: photo.author,
+              copyrightNotice: `© ${photo.author}, ${photo.license}`,
+              creator: { '@type': 'Person', name: photo.author },
             },
           }
         : {}),
