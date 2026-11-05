@@ -41,7 +41,7 @@ export const ORIGIN_DEEP: OriginDeep = {
       paras: [
         "Na aukcii auto osobne neuvidíte, takže sa počíta každý detail v inzeráte. Predtým, ako prihodíte:",
         [
-          "Preverte históriu podľa VIN (napr. Carfax, AutoCheck, databáza NMVTIS): škody, nájazd, počet majiteľov, krádež a zaplavenie.",
+          "Preverte históriu podľa VIN (napr. carVertical, databáza NMVTIS): škody, nájazd, počet majiteľov, krádež a zaplavenie.",
           "Preštudujte fotky a popis poškodenia (primary / secondary damage). „Front end“ môže znamenať čokoľvek od nárazníka po ohnuté pozdĺžniky a vystrelené airbagy.",
           "Pozorne čítajte štítky stavu: „Run and Drive“ znamená, že auto pri príjazde do areálu išlo, nie že je spôsobilé na premávku; „Engine Starts“ znamená len, že motor naskočil.",
           "Pozor na autá z oblastí hurikánov a povodní (Florida, Texas, Louisiana). Stopy vody pod kobercom, bahno a skorodované elektrické konektory sú dôvod odstúpiť.",

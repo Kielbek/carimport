@@ -183,7 +183,7 @@
         "ol": [
           "Vyberte brokera a podepište smlouvu; získáte přístup k přihazování přes jeho účet.",
           "Složte zálohu – obvykle kolem 10 % vaší maximální nabídky.",
-          "Najděte auto, přečtěte si zprávu o stavu a prověřte historii podle VIN (Carfax, AutoCheck).",
+          "Najděte auto, přečtěte si zprávu o stavu a prověřte historii podle VIN (carVertical).",
           "Stanovte maximální nabídku včetně všech poplatků, cla a DPH – nejen cenu příklepu.",
           "Přihazujte v předkole nebo živě; nejvyšší nabídka vyhrává, pokud dosáhne minimální ceny prodávajícího.",
           "Zaplaťte ve lhůtě (obvykle 2–3 pracovní dny) bankovním převodem v USD.",
@@ -367,7 +367,7 @@
       },
       {
         "ol": [
-          "Prověřte historii VIN kvůli předchozím nehodám a záznamům o zaplavení (Carfax, AutoCheck).",
+          "Prověřte historii VIN kvůli předchozím nehodám a záznamům o zaplavení (carVertical).",
           "Dávejte přednost autům s poškozením jen vpředu nebo vzadu, bez vystřelených airbagů.",
           "Než přihodíte, nechte si udělat odhad opravy v servisu, který daný model zná.",
           "Ověřte dostupnost a ceny dílů v Česku – díly pro americké verze bývají hůř k sehnání.",
@@ -1019,7 +1019,7 @@
       },
       {
         "ol": [
-          "Prověřte historii podle VIN (Carfax, AutoCheck): nehody, zaplavení, nájezd, krádež.",
+          "Prověřte historii podle VIN (carVertical): nehody, zaplavení, nájezd, krádež.",
           "Zkontrolujte typ titulu – vyhněte se certifikátům parts only a non-repairable.",
           "Prohlédněte si každou fotku: spáry mezi díly, airbagy, stopy po vodě, motorový prostor.",
           "Štítky stavu (Run and Drive, Engine Starts) berte jako informaci, ne jako záruku.",

@@ -513,7 +513,6 @@
     "contact": "Contact",
     "vin": "Verificare VIN",
     "copart": "Copart – cum cumperi",
-    "vinCompare": "Rapoarte VIN comparate",
     "euImport": "Import mașină din UE"
   },
   "footer": {
@@ -888,10 +887,6 @@
     "copart": {
       "title": "Copart din România: cumpărați o mașină din SUA – costuri, broker, taxă vamală 0% (2026) | Carglo",
       "description": "Copart nu există în România – dar licitați la licitațiile din SUA prin broker. Taxe, title salvage, transport în 4–8 săptămâni și costul total cu taxă vamală și TVA. Mașinile din SUA pot avea taxă vamală 0% din iulie 2026."
-    },
-    "vinCompare": {
-      "title": "Rapoarte de istoric VIN comparate: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Ce raport VIN alegeți pentru o mașină din SUA sau din Europa? Acoperire, date despre daune și title, fotografii și prețuri: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
       "title": "Import mașină din Germania sau UE – calculator costuri: transport, taxe, înmatriculare | Carglo",
@@ -1960,7 +1955,11 @@
     "title": "Înainte să licitați – verificați istoricul după VIN",
     "text": "Un raport de istoric arată, printre altele, daunele anterioare, kilometrajul și licitațiile trecute. Costă o fracțiune dintr-o reparație mică.",
     "button": "Verificați VIN-ul la {{partner}}",
-    "label": "Link de afiliere – Carglo poate primi un comision. Nu influențează calculele noastre."
+    "label": "Link de afiliere – Carglo poate primi un comision. Nu influențează calculele noastre.",
+    "code": "Cod de reducere:",
+    "discount": "−{{pct}}% la rapoartele {{partner}}",
+    "copy": "Copiază",
+    "copied": "Copiat"
   },
   "vinPage": {
     "eyebrow": "Instrument și ghid",
@@ -2035,7 +2034,6 @@
       "q6": "Funcționează decodorul pentru mașini din Japonia?",
       "a6": "Doar dacă mașina are VIN de 17 caractere. Majoritatea mașinilor de pe piața japoneză au un număr de șasiu mai scurt – istoricul lor se verifică pe auction sheet."
     },
-    "compareLink": "Comparație a serviciilor de rapoarte VIN – pe care să-l alegeți",
     "anatomy": {
       "country": "țara",
       "maker": "producător",
@@ -2177,131 +2175,6 @@
       "registration": "Înmatriculare și altele"
     }
   },
-  "vinCompare": {
-    "eyebrow": "Comparație",
-    "title": "Rapoarte de istoric VIN – ce serviciu alegeți pentru o mașină din SUA sau din Europa",
-    "lead": "Am comparat cele mai populare servicii de rapoarte de istoric: acoperirea datelor, informații despre daune și title din SUA, fotografii din anunțuri anterioare și prețuri. La final – cum alegeți raportul pentru o anumită mașină.",
-    "checked": "Prețuri și acoperire verificate: {{date}}. Prețurile sunt orientative și se pot schimba.",
-    "eu": "UE",
-    "verdict": {
-      "us": {
-        "for": "Mașină de la o licitație din SUA",
-        "pick": "AutoCheck sau Carfax",
-        "why": "Cele mai complete date din SUA: daune, title, istoric de licitații și service."
-      },
-      "eu": {
-        "for": "Mașină cumpărată în Europa",
-        "pick": "carVertical sau autoDNA",
-        "why": "Date din multe țări UE, raport în limba dvs."
-      },
-      "budget": {
-        "for": "Verificare rapidă și ieftină",
-        "pick": "VinAudit",
-        "why": "Date oficiale NMVTIS despre title și daune totale pentru câțiva dolari."
-      }
-    },
-    "table": {
-      "title": "Pe scurt",
-      "service": "Serviciu",
-      "regions": "Acoperire date",
-      "usTitles": "Title și daune totale din SUA",
-      "photos": "Fotografii din istoric",
-      "price": "Prețul raportului",
-      "note": "„Uneori” – fotografiile apar când serviciul le are (ex. din anunțuri sau licitații anterioare). Acoperirea depinde de VIN-ul concret."
-    },
-    "value": {
-      "yes": "da",
-      "partial": "parțial",
-      "no": "nu",
-      "sometimes": "uneori",
-      "unknown": "fără date independente"
-    },
-    "providers": "Serviciile pe rând",
-    "visit": "Mergeți la {{name}}",
-    "pros": "Avantaje",
-    "cons": "Dezavantaje",
-    "bestFor": "Pentru cine:",
-    "p": {
-      "carvertical": {
-        "desc": "Serviciu lituanian prezent în multe țări europene și în SUA. Declară peste 1000 de surse de date – registre, asigurători, service-uri, poliție. Pentru mașinile din SUA arată, printre altele, mențiunile de title (salvage, rebuilt, junk).",
-        "pros": "• Date europene și din SUA într-un singur raport.\n• Raport și asistență în multe limbi UE.\n• Fotografii din istoric, când există.",
-        "cons": "• Mai scump decât serviciile americane ieftine.\n• Mai puține date din SUA decât Carfax sau AutoCheck.",
-        "best": "cumpărătorii din Europa care vor un singur raport pentru o mașină din SUA sau din UE."
-      },
-      "autodna": {
-        "desc": "Serviciu polonez, cel mai puternic în Polonia și Europa Centrală și de Est. Baza acoperă zeci de țări din Europa și America de Nord; rapoartele includ kilometraj, daune și – când există – fotografii.",
-        "pros": "• Date foarte bune din Polonia și din regiune.\n• Mai ieftin decât carVertical, pachete de mai multe rapoarte.\n• Verificare prealabilă gratuită dacă există date.",
-        "cons": "• Mai puține date din Europa de Vest decât concurența.\n• Pentru mașini din SUA adăugați și o sursă americană.",
-        "best": "mașini din Polonia și țările vecine și ca a doua sursă."
-      },
-      "carfax": {
-        "desc": "Cel mai cunoscut serviciu din SUA. Are acces larg la date de la asigurători, poliție și service-uri, de aceea arată cel mai bine accidentele și istoricul de service.",
-        "pros": "• Cel mai complet istoric de accidente și service din SUA.\n• Recunoscut de cumpărători la revânzare.",
-        "cons": "• Cel mai scump raport individual.\n• Slab pentru mașini din afara SUA și Canadei.",
-        "best": "mașini mai scumpe din SUA, unde contează istoricul de service."
-      },
-      "autocheck": {
-        "desc": "Serviciu deținut de Experian. Deosebit de puternic pe istoricul de licitații – folosit de dealeri și case de licitații. Oferă și AutoCheck Score.",
-        "pros": "• Date foarte bune despre licitațiile din SUA.\n• Mai ieftin decât Carfax.",
-        "cons": "• Mai puține detalii de service decât Carfax.\n• Doar mașini din SUA.",
-        "best": "mașini de la licitațiile Copart și IAAI."
-      },
-      "vinaudit": {
-        "desc": "Furnizor aprobat oficial de date din baza guvernamentală NMVTIS. Arată mențiunile de title, daunele totale, citirile kilometrajului și înregistrările de furt.",
-        "pros": "• Foarte ieftin, pachetele și mai ieftine.\n• Date oficiale NMVTIS despre title și daune totale.",
-        "cons": "• Puține detalii despre accidentele minore și service.\n• Fără fotografii.",
-        "best": "o primă verificare rapidă a multor mașini înainte de licitare."
-      },
-      "automano": {
-        "desc": "Serviciu nou de rapoarte VIN la preț mic. Nu am găsit încă recenzii independente sau o descriere detaliată a surselor de date – tratați-l ca pe o primă verificare ieftină.",
-        "pros": "• Preț mic al raportului.",
-        "cons": "• Puține recenzii independente.\n• Nu își publică sursele de date.",
-        "best": "o primă verificare ieftină – la o mașină mai scumpă comandați și un raport de la un serviciu mai cunoscut."
-      }
-    },
-    "how": {
-      "title": "Cum am comparat",
-      "text": "Am analizat descrierile și listele de prețuri ale serviciilor și comparații independente din octombrie 2026. Ne-am concentrat pe ce contează cel mai mult la import: de unde provin datele, dacă raportul arată title și daune totale din SUA, dacă include fotografii din istoric și cât costă un raport.\nNu am testat rapoartele pe aceleași VIN-uri – acoperirea depinde de fiecare mașină, de aceea la o mașină mai scumpă merită să comandați două rapoarte de la servicii diferite."
-    },
-    "free": {
-      "title": "Ce puteți verifica gratuit",
-      "text": "Înainte să plătiți un raport, verificați gratuit:\n• NICB VINCheck – dacă mașina a fost raportată furată sau daună totală (SUA).\n• NHTSA Recalls – campanii de rechemare nerezolvate pentru VIN.\n• istoricul MOT pe gov.uk – pentru mașini din Marea Britanie.\n• arhive neoficiale ale licitațiilor Copart și IAAI – uneori arată fotografii și prețul unei vânzări anterioare; nu sunt afiliate licitațiilor și pot dispărea.\nDecodorul nostru VIN gratuit citește și marca, modelul, anul, motorul și țara de fabricație."
-    },
-    "read": {
-      "title": "Cum citiți un raport",
-      "text": "• Comparați kilometrajul de la an la an – o scădere înseamnă kilometraj dat înapoi.\n• Căutați mențiunile de title: salvage, rebuilt, flood, junk.\n• Fiți atenți la statele de înmatriculare – mașinile din Florida, Texas și Louisiana au mai des daune de inundație.\n• Mai multe licitații în scurt timp sugerează că mașina s-a vândut greu.\n• Lipsa unei înregistrări nu înseamnă lipsa daunei – raportul arată doar ce a fost raportat."
-    },
-    "choose": {
-      "title": "Ce raport să alegeți",
-      "text": "• Mașină de la o licitație din SUA (Copart, IAAI): întâi NICB gratuit și VinAudit ieftin, iar înainte de a licita pe o mașină mai scumpă – AutoCheck sau Carfax.\n• Mașină din SUA, când vreți un singur raport în limba dvs.: carVertical.\n• Mașină din Polonia sau țările vecine: autoDNA, cu carVertical ca a doua sursă.\n• Mașină din Marea Britanie: istoric MOT gratuit plus un raport de la un serviciu european.\nLa o mașină de zeci de mii, două rapoarte de la servicii diferite costă o fracțiune dintr-o posibilă pierdere."
-    },
-    "faq": {
-      "title": "Întrebări frecvente",
-      "q1": "Care raport VIN este cel mai bun pentru o mașină din SUA?",
-      "a1": "Pentru o mașină de la o licitație din SUA, AutoCheck (istoric de licitații) și Carfax (accidente și service) oferă cele mai multe date. Pentru o verificare rapidă a title-ului și a daunelor totale este suficient VinAudit, mai ieftin.",
-      "q2": "carVertical verifică mașini din SUA?",
-      "a2": "Da – potrivit serviciului, raportul include mențiunile de title din SUA (salvage, rebuilt, junk). Acoperirea pentru SUA este totuși mai mică decât la serviciile americane.",
-      "q3": "autoDNA sau carVertical – care este mai bun?",
-      "a3": "autoDNA este mai puternic în Polonia și Europa Centrală și de Est și de obicei mai ieftin; carVertical acoperă mai bine Europa de Vest și SUA. La o mașină mai scumpă merită verificate ambele.",
-      "q4": "Va arăta raportul fotografii de la licitația Copart?",
-      "a4": "Uneori – unele rapoarte includ fotografii din anunțuri anterioare, când serviciul le are. Niciun serviciu nu garantează. Salvați singuri fotografiile licitației actuale, pentru că pagina dispare după vânzare.",
-      "q5": "Este suficient un raport VIN gratuit?",
-      "a5": "Bazele gratuite (NICB, NHTSA) arată furtul, dauna totală și rechemările, dar nu istoricul complet de accidente și kilometraj. Pentru decizia de cumpărare de obicei e nevoie de un raport plătit.",
-      "q6": "Câștigați bani din aceste linkuri?",
-      "a6": "La unele servicii, da – astfel de linkuri sunt marcate ca linkuri de afiliere. Nu influențează ce recomandăm: clasamentul se bazează pe acoperirea datelor, nu pe comision."
-    },
-    "disclaimer": "Carglo nu este afiliat cu serviciile descrise. Numele aparțin proprietarilor lor. Prețurile și acoperirea provin din descrierile serviciilor și din comparații din octombrie 2026 – verificați oferta actuală înainte de cumpărare.",
-    "decoder": "Decodor VIN gratuit",
-    "mock": {
-      "title": "Raport de istoric al vehiculului",
-      "r1": "Prima înmatriculare – Florida",
-      "r2": "Citire kilometraj: 28.400 de mile",
-      "r3": "Daună: partea din față, airbaguri declanșate",
-      "r4": "Title schimbat în SALVAGE",
-      "r5": "Licitație – 3 fotografii înainte de reparație",
-      "caption": "Ilustrație – așa arată de obicei un raport de istoric. Acoperirea depinde de serviciu și de VIN."
-    }
-  },
   "euImport": {
     "eyebrow": "Calculator import din UE",
     "title": "Cât costă să aduci o mașină din Germania sau din alt stat UE",
@@ -2386,5 +2259,14 @@
     "title": "Alegeți limba",
     "lead": "Afișăm prețuri, taxe și ghiduri pentru țara limbii alese. O puteți schimba oricând din partea de sus a paginii.",
     "suggested": "Sugerată"
+  },
+  "reportMock": {
+    "title": "Raport de istoric al vehiculului",
+    "r1": "Prima înmatriculare – Florida",
+    "r2": "Citire kilometraj: 28.400 de mile",
+    "r3": "Daună: partea din față, airbaguri declanșate",
+    "r4": "Title schimbat în SALVAGE",
+    "r5": "Licitație – 3 fotografii înainte de reparație",
+    "caption": "Ilustrație – așa arată de obicei un raport de istoric. Acoperirea depinde de serviciu și de VIN."
   }
 }

@@ -41,7 +41,7 @@ export const ORIGIN_DEEP: OriginDeep = {
       paras: [
         "Du kan inte se bilen på plats vid auktionen, så varje detalj i annonsen räknas. Innan du budar:",
         [
-          "Kontrollera historiken via VIN (t.ex. Carfax, AutoCheck, NMVTIS-databasen): skador, miltal, antal ägare, stöld och översvämning.",
+          "Kontrollera historiken via VIN (t.ex. carVertical, NMVTIS-databasen): skador, miltal, antal ägare, stöld och översvämning.",
           "Studera bilderna och skadebeskrivningen (primary / secondary damage). ”Front end” kan betyda allt från en stötfångare till böjda längsgående balkar och utlösta krockkuddar.",
           "Läs tillståndsmärkningen noga: ”Run and Drive” betyder att bilen gick att köra när den kom till uppställningsplatsen, inte att den är trafikduglig; ”Engine Starts” betyder bara att motorn startade.",
           "Var försiktig med bilar från orkan- och översvämningsområden (Florida, Texas, Louisiana). Vattenmärken under mattan, slam och korroderade elkontakter är skäl att avstå.",

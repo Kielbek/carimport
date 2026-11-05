@@ -192,7 +192,7 @@
         "ol": [
           "Odaberite brokera i potpišite ugovor; dobivate pristup licitiranju preko njegova računa.",
           "Uplatite sigurnosni depozit – obično oko 10 % vaše maksimalne ponude.",
-          "Pronađite automobil, pročitajte izvješće o stanju i provjerite povijest po VIN-u (Carfax, AutoCheck).",
+          "Pronađite automobil, pročitajte izvješće o stanju i provjerite povijest po VIN-u (carVertical).",
           "Odredite maksimalnu ponudu uključujući sve naknade i poreze – ne samo cijenu na čekiću.",
           "Licitirajte u preliminarnom krugu ili uživo; najviša ponuda pobjeđuje ako dosegne minimalnu cijenu prodavatelja.",
           "Platite u roku (obično 2 do 3 radna dana) bankovnom doznakom u dolarima.",
@@ -385,7 +385,7 @@
       },
       {
         "ol": [
-          "Provjerite povijest po VIN-u (Carfax, AutoCheck) – ranije nesreće, poplave, kilometraža.",
+          "Provjerite povijest po VIN-u (carVertical) – ranije nesreće, poplave, kilometraža.",
           "Birajte automobile samo s prednjim ili stražnjim oštećenjem, bez aktiviranih zračnih jastuka.",
           "Prije licitiranja zatražite procjenu popravka od servisa ili limarske radionice koja poznaje model.",
           "Provjerite dostupnost i cijene dijelova u Hrvatskoj.",
@@ -404,7 +404,7 @@
           "Hrđa na vijcima sjedala, pedalama i donjem dijelu armaturne ploče",
           "Zamagljena svjetla i instrumenti, vlaga ispod tepiha",
           "Lokacija aukcije u području koje je nedavno pogodio uragan ili poplava",
-          "Zapis o poplavi u izvješću Carfax ili AutoCheck"
+          "Zapis o poplavi u izvješću carVertical"
         ]
       },
       {
@@ -1093,7 +1093,7 @@
         "h3": "Povijest vozila po VIN-u"
       },
       {
-        "p": "Izvješće Carfax ili AutoCheck stoji nekoliko desetaka dolara i najjeftinije je osiguranje koje možete kupiti. Pokazuje ranije štete, zapise o poplavi, promjene vlasnika i očitanja kilometraže. Ako se kilometraža u izvješću ne slaže s onom na fotografiji instrumenata, odustanite."
+        "p": "Izvješće carVertical stoji nekoliko desetaka dolara i najjeftinije je osiguranje koje možete kupiti. Pokazuje ranije štete, zapise o poplavi, promjene vlasnika i očitanja kilometraže. Ako se kilometraža u izvješću ne slaže s onom na fotografiji instrumenata, odustanite."
       },
       {
         "h3": "Fotografije i opis štete"

@@ -181,7 +181,7 @@
         "ol": [
           "Broker auswählen und Vertrag unterschreiben; Sie erhalten Zugang zum Bieten über dessen Konto.",
           "Kaution hinterlegen – meist etwa 10 % Ihres Höchstgebots.",
-          "Auto suchen, den Zustandsbericht lesen und die VIN-Historie (Carfax, AutoCheck) prüfen.",
+          "Auto suchen, den Zustandsbericht lesen und die VIN-Historie (carVertical) prüfen.",
           "Höchstgebot inklusive aller Gebühren festlegen – nicht nur den Zuschlagspreis.",
           "In der Vorgebotsrunde oder live bieten; das höchste Gebot gewinnt, wenn es den Mindestpreis des Verkäufers erreicht.",
           "Innerhalb der Frist bezahlen (meist 2–3 Werktage) per Überweisung in Dollar.",
@@ -208,7 +208,7 @@
         "h2": "VIN-Historie und Fotos prüfen"
       },
       {
-        "p": "Bevor Sie bieten, lohnt sich ein Bericht von Carfax oder AutoCheck zur VIN. Er zeigt frühere Unfälle, Überschwemmungsmeldungen, Kilometerstände und Diebstahlseinträge. Vergleichen Sie die Angaben mit den Fotos der Auktion: Spaltmaße, Airbags, Wasserränder im Innenraum und der Motorraum verraten oft mehr als die Schadensbeschreibung. Bei teureren Autos kann sich eine Vor-Ort-Besichtigung durch einen Inspektionsdienst lohnen, den viele Broker vermitteln. Prüfen Sie außerdem, ob es das Modell in Europa gab – das erleichtert Ersatzteile und das Vollgutachten erheblich."
+        "p": "Bevor Sie bieten, lohnt sich ein Bericht von carVertical zur VIN. Er zeigt frühere Unfälle, Überschwemmungsmeldungen, Kilometerstände und Diebstahlseinträge. Vergleichen Sie die Angaben mit den Fotos der Auktion: Spaltmaße, Airbags, Wasserränder im Innenraum und der Motorraum verraten oft mehr als die Schadensbeschreibung. Bei teureren Autos kann sich eine Vor-Ort-Besichtigung durch einen Inspektionsdienst lohnen, den viele Broker vermitteln. Prüfen Sie außerdem, ob es das Modell in Europa gab – das erleichtert Ersatzteile und das Vollgutachten erheblich."
       },
       {
         "h2": "Gebühren, die Neulinge überraschen"
@@ -366,7 +366,7 @@
       },
       {
         "ol": [
-          "Prüfen Sie die VIN-Historie bei Carfax oder AutoCheck auf frühere Unfälle und Hochwassermeldungen.",
+          "Prüfen Sie die VIN-Historie bei carVertical auf frühere Unfälle und Hochwassermeldungen.",
           "Bevorzugen Sie Autos mit reinem Front- oder Heckschaden ohne ausgelöste Airbags.",
           "Holen Sie vor dem Bieten einen Kostenvoranschlag bei einer Werkstatt ein, die das Modell kennt.",
           "Prüfen Sie Verfügbarkeit und Preise der Ersatzteile in Deutschland.",
@@ -951,7 +951,7 @@
       },
       {
         "ol": [
-          "VIN-Historie prüfen: Lassen Sie einen Bericht von Carfax oder AutoCheck laufen und achten Sie auf Unfälle, Hochwasser, Kilometerstand und Diebstahl.",
+          "VIN-Historie prüfen: Lassen Sie einen Bericht von carVertical laufen und achten Sie auf Unfälle, Hochwasser, Kilometerstand und Diebstahl.",
           "Title-Art kontrollieren: Meiden Sie Parts Only und Non-Repairable, wenn Sie das Auto in Deutschland zulassen wollen.",
           "Jedes Foto studieren: Spaltmaße, Airbags, Wasserränder, Motorraum und Unterboden verraten oft mehr als der Text.",
           "Zustandslabels als Information lesen, nicht als Garantie: Run and Drive heißt nur, dass das Auto beim Check-in fuhr.",

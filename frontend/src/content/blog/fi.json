@@ -258,7 +258,7 @@
         "h2": "Kuvat ja kuntoraportti tarkemmin"
       },
       {
-        "p": "Huutokaupan kuvat on otettu nopeasti pihalla, ja ne näyttävät vain sen, mikä näkyy päältä. Katso jokainen kuva suurennettuna: paneelien raot, vanteiden ja renkaiden kunto, turvatyynyjen paikat, moottoritila ja sisätilojen vesirajat. Jos kuvissa näkyy mutaa istuimilla tai korroosiota ruuveissa, epäile tulvavauriota. Vertaa myös VIN-numeroa ilmoituksessa ja kuvissa, ja hae auton historia Carfaxista tai AutoCheckista ennen tarjoamista."
+        "p": "Huutokaupan kuvat on otettu nopeasti pihalla, ja ne näyttävät vain sen, mikä näkyy päältä. Katso jokainen kuva suurennettuna: paneelien raot, vanteiden ja renkaiden kunto, turvatyynyjen paikat, moottoritila ja sisätilojen vesirajat. Jos kuvissa näkyy mutaa istuimilla tai korroosiota ruuveissa, epäile tulvavauriota. Vertaa myös VIN-numeroa ilmoituksessa ja kuvissa, ja hae auton historia carVerticalista ennen tarjoamista."
       },
       {
         "p": "Monet välittäjät tarjoavat lisämaksusta tarkastuksen paikan päällä. Se maksaa yleensä vähemmän kuin yksi yllättävä vaurio, joten kalliimmissa autoissa se kannattaa melkein aina."
@@ -399,7 +399,7 @@
       },
       {
         "ol": [
-          "Tarkista VIN-historia aiempien kolareiden ja tulvamerkintöjen varalta (Carfax, AutoCheck).",
+          "Tarkista VIN-historia aiempien kolareiden ja tulvamerkintöjen varalta (carVertical).",
           "Suosi autoja, joissa on vain etu- tai takavaurio ilman turvatyynyjen laukeamista.",
           "Pyydä korjausarvio mallin tuntevalta korjaamolta ennen tarjoamista.",
           "Tarkista osien saatavuus ja hinnat Suomessa.",
@@ -1116,7 +1116,7 @@
       },
       {
         "ol": [
-          "Hanki VIN-historiaraportti (Carfax, AutoCheck): kolarit, tulva, mittarilukema, varkaus.",
+          "Hanki VIN-historiaraportti (carVertical): kolarit, tulva, mittarilukema, varkaus.",
           "Tarkista titlen tyyppi – vältä parts only- ja non-repairable-todistuksia.",
           "Tutki jokainen kuva: paneelien raot, turvatyynyt, vesirajat, moottoritila.",
           "Lue kuntomerkinnät tietona, älä takuuna.",

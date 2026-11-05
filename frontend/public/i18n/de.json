@@ -513,7 +513,6 @@
     "contact": "Kontakt",
     "vin": "FIN-Check",
     "copart": "Copart – so kaufen Sie",
-    "vinCompare": "FIN-Berichte im Vergleich",
     "euImport": "Auto aus der EU importieren"
   },
   "footer": {
@@ -888,10 +887,6 @@
     "copart": {
       "title": "Copart aus Deutschland: US-Auto kaufen – Kosten, Broker, 0 % Zoll (2026) | Carglo",
       "description": "So kaufen Sie bei Copart aus Deutschland: Broker, Auktionsgebühren, Salvage-Title, Verschiffung in 4–8 Wochen und Gesamtkosten mit Zoll und MwSt. US-Autos ab Juli 2026 mit 0 % Zoll möglich. Kostenloser Rechner."
-    },
-    "vinCompare": {
-      "title": "FIN-Historienberichte im Vergleich: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Welcher FIN-Bericht für ein Auto aus den USA oder Europa? Abdeckung, Schaden- und Title-Daten, Fotos und Preise im Vergleich: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
       "title": "Auto aus dem EU-Ausland importieren – Kostenrechner: Transport, Steuern, Zulassung | Carglo",
@@ -1960,7 +1955,11 @@
     "title": "Vor dem Bieten – Fahrzeughistorie per FIN prüfen",
     "text": "Ein Historienbericht zeigt u. a. frühere Schäden, Kilometerstände und vergangene Auktionen. Er kostet einen Bruchteil selbst einer kleinen Reparatur.",
     "button": "FIN bei {{partner}} prüfen",
-    "label": "Partnerlink – Carglo erhält eventuell eine Provision. Auf unsere Berechnungen hat das keinen Einfluss."
+    "label": "Partnerlink – Carglo erhält eventuell eine Provision. Auf unsere Berechnungen hat das keinen Einfluss.",
+    "code": "Rabattcode:",
+    "discount": "−{{pct}} % auf {{partner}}-Berichte",
+    "copy": "Kopieren",
+    "copied": "Kopiert"
   },
   "vinPage": {
     "eyebrow": "Tool und Ratgeber",
@@ -2035,7 +2034,6 @@
       "q6": "Funktioniert der Decoder für Autos aus Japan?",
       "a6": "Nur wenn das Auto eine 17-stellige FIN hat. Die meisten Autos vom japanischen Markt haben eine kürzere Fahrgestellnummer – ihre Historie prüft man im Auction Sheet."
     },
-    "compareLink": "Anbieter von FIN-Berichten im Vergleich – welchen wählen",
     "anatomy": {
       "country": "Land",
       "maker": "Hersteller",
@@ -2177,131 +2175,6 @@
       "caption": "Illustration – so sieht eine Loskarte bei einer US-Auktion aus. Felder und Vermerke erklären wir unten."
     }
   },
-  "vinCompare": {
-    "eyebrow": "Vergleich",
-    "title": "FIN-Historienberichte – welcher Anbieter für ein Auto aus den USA oder Europa",
-    "lead": "Wir haben die beliebtesten Anbieter von Fahrzeughistorienberichten verglichen: Datenabdeckung, US-Schaden- und Title-Daten, Fotos aus früheren Inseraten und Preise. Am Ende – wie Sie den Bericht für ein konkretes Auto wählen.",
-    "checked": "Preise und Umfang geprüft: {{date}}. Die Preise sind Richtwerte und können sich ändern.",
-    "eu": "EU",
-    "verdict": {
-      "us": {
-        "for": "Auto aus einer US-Auktion",
-        "pick": "AutoCheck oder Carfax",
-        "why": "Die tiefsten US-Daten: Schäden, Titles, Auktions- und Servicehistorie."
-      },
-      "eu": {
-        "for": "Auto aus Europa",
-        "pick": "carVertical oder autoDNA",
-        "why": "Daten aus vielen EU-Ländern, Bericht in Ihrer Sprache."
-      },
-      "budget": {
-        "for": "Schneller, günstiger Check",
-        "pick": "VinAudit",
-        "why": "Offizielle NMVTIS-Daten zu Title und Totalschäden für wenige Dollar."
-      }
-    },
-    "table": {
-      "title": "Auf einen Blick",
-      "service": "Anbieter",
-      "regions": "Datenabdeckung",
-      "usTitles": "US-Titles und Totalschäden",
-      "photos": "Fotos aus der Historie",
-      "price": "Berichtspreis",
-      "note": "„Manchmal“ – Fotos erscheinen, wenn der Anbieter sie hat (z. B. aus früheren Inseraten oder Auktionen). Der Umfang hängt von der konkreten FIN ab."
-    },
-    "value": {
-      "yes": "ja",
-      "partial": "teilweise",
-      "no": "nein",
-      "sometimes": "manchmal",
-      "unknown": "keine unabhängigen Daten"
-    },
-    "providers": "Die Anbieter im Einzelnen",
-    "visit": "Zu {{name}}",
-    "pros": "Vorteile",
-    "cons": "Nachteile",
-    "bestFor": "Für wen:",
-    "p": {
-      "carvertical": {
-        "desc": "Litauischer Anbieter, aktiv in vielen europäischen Ländern und in den USA. Er nennt über 1.000 Datenquellen – Register, Versicherer, Werkstätten, Polizei. Bei US-Autos zeigt er u. a. Title-Vermerke (salvage, rebuilt, junk).",
-        "pros": "• Europäische und US-Daten in einem Bericht.\n• Bericht und Support in vielen EU-Sprachen.\n• Fotos aus der Historie, wenn verfügbar.",
-        "cons": "• Teurer als US-Budgetanbieter.\n• Weniger US-Daten als Carfax oder AutoCheck.",
-        "best": "Käufer in Europa, die einen Bericht für ein Auto aus den USA oder der EU wollen."
-      },
-      "autodna": {
-        "desc": "Polnischer Anbieter, am stärksten in Polen und Mittelosteuropa. Die Datenbank umfasst Dutzende Länder in Europa und Nordamerika; Berichte enthalten u. a. Kilometerstände, Schäden und – wenn vorhanden – Fotos.",
-        "pros": "• Sehr gute Daten aus Polen und der Region.\n• Günstiger als carVertical, Pakete mit mehreren Berichten.\n• Kostenlose Vorabprüfung, ob Daten vorhanden sind.",
-        "cons": "• Weniger Daten aus Westeuropa als die Konkurrenz.\n• Für US-Autos zusätzlich eine US-Quelle nutzen.",
-        "best": "Autos aus Polen und Nachbarländern sowie als zweite Quelle."
-      },
-      "carfax": {
-        "desc": "Der bekannteste Anbieter in den USA. Breiter Zugang zu Daten von Versicherern, Polizei und Werkstätten – zeigt Unfälle und Wartungshistorie am besten.",
-        "pros": "• Tiefste US-Unfall- und Wartungshistorie.\n• Beim Wiederverkauf von Käufern anerkannt.",
-        "cons": "• Teuerster Einzelbericht.\n• Schwach bei Autos außerhalb der USA und Kanadas.",
-        "best": "teurere US-Autos, bei denen die Wartungshistorie zählt."
-      },
-      "autocheck": {
-        "desc": "Anbieter von Experian. Besonders stark bei der Auktionshistorie – genutzt von Händlern und Auktionshäusern. Liefert auch einen AutoCheck Score.",
-        "pros": "• Sehr gute Daten zu US-Auktionen.\n• Günstiger als Carfax.",
-        "cons": "• Weniger Wartungsdetails als Carfax.\n• Nur US-Autos.",
-        "best": "Autos aus Copart- und IAAI-Auktionen."
-      },
-      "vinaudit": {
-        "desc": "Offiziell zugelassener Datenanbieter der staatlichen NMVTIS-Datenbank. Zeigt Title-Vermerke, Totalschäden, Kilometerstände und Diebstahleinträge.",
-        "pros": "• Sehr günstig, Pakete noch günstiger.\n• Offizielle NMVTIS-Daten zu Title und Totalschäden.",
-        "cons": "• Wenig Details zu kleineren Unfällen und Wartung.\n• Keine Fotos.",
-        "best": "einen schnellen ersten Check vieler Autos vor dem Bieten."
-      },
-      "automano": {
-        "desc": "Neuer, günstiger Anbieter von FIN-Berichten. Wir haben noch keine unabhängigen Bewertungen oder eine genaue Beschreibung der Datenquellen gefunden – betrachten Sie ihn als günstigen ersten Check.",
-        "pros": "• Niedriger Berichtspreis.",
-        "cons": "• Wenige unabhängige Bewertungen.\n• Datenquellen nicht offengelegt.",
-        "best": "einen günstigen ersten Check – bei einem teureren Auto zusätzlich einen Bericht eines bekannteren Anbieters bestellen."
-      }
-    },
-    "how": {
-      "title": "Wie wir verglichen haben",
-      "text": "Wir haben Leistungsbeschreibungen und Preislisten der Anbieter sowie unabhängige Vergleiche vom Oktober 2026 ausgewertet. Entscheidend war, was beim Autoimport zählt: woher die Daten stammen, ob der Bericht US-Titles und Totalschäden zeigt, ob er Fotos aus der Historie enthält und was ein Einzelbericht kostet.\nWir haben die Berichte nicht mit denselben FINs getestet – der Umfang hängt vom konkreten Auto ab, deshalb lohnen sich bei einem teureren Auto zwei Berichte verschiedener Anbieter."
-    },
-    "free": {
-      "title": "Was Sie kostenlos prüfen können",
-      "text": "Bevor Sie für einen Bericht zahlen, prüfen Sie kostenlos:\n• NICB VINCheck – ob das Auto als gestohlen oder Totalschaden gemeldet wurde (USA).\n• NHTSA Recalls – offene Rückrufe für die FIN.\n• MOT-Historie auf gov.uk – für Autos aus Großbritannien.\n• inoffizielle Archive der Copart- und IAAI-Auktionen – zeigen manchmal Fotos und Preis eines früheren Verkaufs; sie sind nicht mit den Auktionen verbunden und können verschwinden.\nUnser kostenloser FIN-Decoder liest außerdem Marke, Modell, Baujahr, Motor und Herstellungsland aus."
-    },
-    "read": {
-      "title": "So lesen Sie einen Bericht",
-      "text": "• Vergleichen Sie die Kilometerstände über die Jahre – ein Rückgang bedeutet einen manipulierten Tacho.\n• Achten Sie auf Title-Vermerke: salvage, rebuilt, flood, junk.\n• Beachten Sie die Zulassungsstaaten – Autos aus Florida, Texas und Louisiana haben häufiger Hochwasserschäden.\n• Mehrere Auktionen in kurzer Zeit deuten darauf hin, dass das Auto schwer verkäuflich war.\n• Kein Eintrag heißt nicht kein Schaden – ein Bericht zeigt nur, was gemeldet wurde."
-    },
-    "choose": {
-      "title": "Welchen Bericht wählen",
-      "text": "• Auto aus einer US-Auktion (Copart, IAAI): zuerst das kostenlose NICB und das günstige VinAudit, vor dem Bieten auf ein teureres Auto AutoCheck oder Carfax.\n• Auto aus den USA, wenn Sie einen Bericht in Ihrer Sprache wollen: carVertical.\n• Auto aus Polen oder Nachbarländern: autoDNA, als zweite Quelle carVertical.\n• Auto aus Großbritannien: kostenlose MOT-Historie plus Bericht eines europäischen Anbieters.\nBei einem Auto für Zehntausende kosten zwei Berichte verschiedener Anbieter einen Bruchteil eines möglichen Verlusts."
-    },
-    "faq": {
-      "title": "Häufige Fragen",
-      "q1": "Welcher FIN-Bericht ist für ein Auto aus den USA am besten?",
-      "a1": "Für ein Auto aus einer US-Auktion liefern AutoCheck (Auktionshistorie) und Carfax (Unfälle und Wartung) die meisten Daten. Für einen schnellen Title- und Totalschaden-Check reicht das günstigere VinAudit.",
-      "q2": "Prüft carVertical Autos aus den USA?",
-      "a2": "Ja – laut Anbieter enthält der Bericht u. a. US-Title-Vermerke (salvage, rebuilt, junk). Die US-Abdeckung ist jedoch kleiner als bei US-Anbietern.",
-      "q3": "autoDNA oder carVertical – was ist besser?",
-      "a3": "autoDNA ist in Polen und Mittelosteuropa stärker und meist günstiger, carVertical hat eine breitere Abdeckung in Westeuropa und den USA. Bei einem teureren Auto lohnt es sich, beide zu prüfen.",
-      "q4": "Zeigt ein Bericht Fotos aus der Copart-Auktion?",
-      "a4": "Manchmal – manche Berichte enthalten Fotos aus früheren Inseraten, wenn der Anbieter sie hat. Garantieren kann es keiner. Speichern Sie die Fotos der aktuellen Auktion selbst, denn die Seite verschwindet nach dem Verkauf.",
-      "q5": "Reicht ein kostenloser FIN-Bericht?",
-      "a5": "Kostenlose Datenbanken (NICB, NHTSA) zeigen Diebstahl, Totalschaden und Rückrufe, aber nicht die vollständige Unfall- und Kilometerhistorie. Für die Kaufentscheidung braucht man meist einen kostenpflichtigen Bericht.",
-      "q6": "Verdienen Sie an diesen Links?",
-      "a6": "Bei manchen Anbietern ja – solche Links sind als Partnerlinks gekennzeichnet. Das beeinflusst unsere Empfehlungen nicht: Die Rangfolge beruht auf der Datenabdeckung, nicht auf der Provision."
-    },
-    "disclaimer": "Carglo ist mit den beschriebenen Anbietern nicht verbunden. Die Namen gehören ihren Inhabern. Preise und Umfang stammen aus den Beschreibungen der Anbieter und Vergleichen vom Oktober 2026 – prüfen Sie vor dem Kauf das aktuelle Angebot.",
-    "decoder": "Kostenloser FIN-Decoder",
-    "mock": {
-      "title": "Fahrzeughistorienbericht",
-      "r1": "Erstzulassung – Florida",
-      "r2": "Kilometerstand: 28.400 Meilen",
-      "r3": "Schaden: Front, Airbags ausgelöst",
-      "r4": "Title geändert auf SALVAGE",
-      "r5": "Auktion – 3 Fotos vor der Reparatur",
-      "caption": "Illustration – so sieht ein Historienbericht meist aus. Der Umfang hängt vom Anbieter und von der FIN ab."
-    }
-  },
   "euImport": {
     "eyebrow": "EU-Import-Rechner",
     "title": "Was kostet ein Auto aus einem anderen EU-Land",
@@ -2386,5 +2259,14 @@
     "title": "Sprache wählen",
     "lead": "Preise, Steuern und Ratgeber zeigen wir für das Land der gewählten Sprache. Sie können die Sprache jederzeit oben auf der Seite ändern.",
     "suggested": "Vorgeschlagen"
+  },
+  "reportMock": {
+    "title": "Fahrzeughistorienbericht",
+    "r1": "Erstzulassung – Florida",
+    "r2": "Kilometerstand: 28.400 Meilen",
+    "r3": "Schaden: Front, Airbags ausgelöst",
+    "r4": "Title geändert auf SALVAGE",
+    "r5": "Auktion – 3 Fotos vor der Reparatur",
+    "caption": "Illustration – so sieht ein Historienbericht meist aus. Der Umfang hängt vom Anbieter und von der FIN ab."
   }
 }

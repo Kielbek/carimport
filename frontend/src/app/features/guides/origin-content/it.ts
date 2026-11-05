@@ -41,7 +41,7 @@ export const ORIGIN_DEEP: OriginDeep = {
       paras: [
         "All'asta non vedi l'auto di persona, quindi ogni dettaglio dell'annuncio conta. Prima di offrire:",
         [
-          "Controlla lo storico del VIN (ad es. Carfax, AutoCheck, banca dati NMVTIS): danni, chilometraggio, numero di proprietari, furto e allagamento.",
+          "Controlla lo storico del VIN (ad es. carVertical, banca dati NMVTIS): danni, chilometraggio, numero di proprietari, furto e allagamento.",
           "Analizza foto e descrizione del danno (primary / secondary damage). «Front end» può andare dal paraurti ai longheroni piegati e agli airbag esplosi.",
           "Leggi bene le indicazioni sullo stato: «Run and Drive» significa che l'auto si è mossa all'arrivo al piazzale, non che sia in grado di circolare; «Engine Starts» solo che il motore si è avviato.",
           "Attenzione alle auto da zone di uragani e alluvioni (Florida, Texas, Louisiana). Segni d'acqua sotto la moquette, fango e connettori elettrici corrosi sono un motivo per rinunciare.",

@@ -207,7 +207,7 @@
         "ol": [
           "Wybierz brokera i podpisz umowę; dostajesz dostęp do licytacji przez jego konto.",
           "Wpłać depozyt – zwykle ok. 10% Twojej maksymalnej oferty.",
-          "Znajdź auto, przeczytaj raport stanu i sprawdź historię po numerze VIN (Carfax, AutoCheck).",
+          "Znajdź auto, przeczytaj raport stanu i sprawdź historię po numerze VIN (carVertical).",
           "Ustal maksymalną ofertę z uwzględnieniem wszystkich opłat, cła, akcyzy i VAT – nie tylko ceny młotkowej.",
           "Licytuj w rundzie wstępnej lub na żywo; najwyższa oferta wygrywa, jeśli osiągnie cenę minimalną sprzedającego.",
           "Zapłać w terminie (zwykle 2–3 dni robocze) przelewem bankowym w USD.",
@@ -394,7 +394,7 @@
       },
       {
         "ol": [
-          "Sprawdź historię VIN pod kątem wcześniejszych wypadków i zalania (Carfax, AutoCheck).",
+          "Sprawdź historię VIN pod kątem wcześniejszych wypadków i zalania (carVertical).",
           "Wybieraj auta z uszkodzonym wyłącznie przodem lub tyłem, bez wystrzelonych poduszek.",
           "Zanim zalicytujesz, poproś o wycenę naprawy warsztat, który zna dany model.",
           "Sprawdź dostępność i ceny części w Polsce – części do wersji amerykańskich bywają trudniejsze do zdobycia.",
@@ -1113,7 +1113,7 @@
       },
       {
         "ol": [
-          "Sprawdź raport historii VIN (Carfax, AutoCheck): wypadki, zalanie, przebieg, kradzież.",
+          "Sprawdź raport historii VIN (carVertical): wypadki, zalanie, przebieg, kradzież.",
           "Sprawdź rodzaj tytułu – omijaj certyfikaty parts only i non-repairable.",
           "Przejrzyj każde zdjęcie: szczeliny między elementami, poduszki powietrzne, ślady wody, komorę silnika.",
           "Traktuj etykiety stanu (Run and Drive, Engine Starts) jako informację, a nie gwarancję.",

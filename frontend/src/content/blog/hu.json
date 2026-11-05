@@ -192,7 +192,7 @@
         "ol": [
           "Válasszon brókert és írja alá a szerződést; a bróker fiókján keresztül hozzáférést kap a licitáláshoz.",
           "Fizesse be a biztosítéki letétet – általában a maximális licit kb. 10%-át.",
-          "Keresse meg az autót, olvassa el az állapotjelentést, és ellenőrizze az előéletet a VIN alapján (Carfax, AutoCheck).",
+          "Keresse meg az autót, olvassa el az állapotjelentést, és ellenőrizze az előéletet a VIN alapján (carVertical).",
           "Határozza meg a maximális licitet az összes díjjal és adóval együtt – ne csak a leütési árat nézze.",
           "Licitáljon az előzetes körben vagy élőben; a legmagasabb ajánlat nyer, ha eléri az eladó minimálárát.",
           "Fizessen határidőn belül (általában 2–3 munkanap) dollárban, banki átutalással.",
@@ -389,7 +389,7 @@
           "Rozsda az ülések csavarjain, a pedálokon és a műszerfal alsó részén",
           "Bepárásodott lámpák és műszerek, nedvesség a szőnyeg alatt",
           "Az aukció helyszíne nemrég hurrikán vagy árvíz sújtotta területen van",
-          "Árvízbejegyzés a Carfax vagy az AutoCheck jelentésben"
+          "Árvízbejegyzés a carVertical jelentésben"
         ]
       },
       {
@@ -406,7 +406,7 @@
       },
       {
         "ol": [
-          "Ellenőrizze az előéletet a VIN alapján (Carfax, AutoCheck): korábbi balesetek, árvíz, kilométeróra.",
+          "Ellenőrizze az előéletet a VIN alapján (carVertical): korábbi balesetek, árvíz, kilométeróra.",
           "Részesítse előnyben a csak elöl vagy hátul sérült, légzsák-kioldás nélküli autókat.",
           "Licitálás előtt kérjen javítási árajánlatot egy, a modellt ismerő karosszérialakatostól.",
           "Ellenőrizze az alkatrészek elérhetőségét és árát Magyarországon.",
@@ -1114,7 +1114,7 @@
         "h3": "Előélet a VIN alapján"
       },
       {
-        "p": "Egy Carfax vagy AutoCheck jelentés néhány tíz dollárba kerül, és ez a legolcsóbb biztosítás, amit vásárolhat. Megmutatja a korábbi károkat, az árvízbejegyzéseket, a tulajdonosváltásokat és a kilométeróra-állásokat. Ha a jelentésben szereplő futásteljesítmény nem egyezik a műszerfal fotóján láthatóval, lépjen vissza."
+        "p": "Egy carVertical jelentés néhány tíz dollárba kerül, és ez a legolcsóbb biztosítás, amit vásárolhat. Megmutatja a korábbi károkat, az árvízbejegyzéseket, a tulajdonosváltásokat és a kilométeróra-állásokat. Ha a jelentésben szereplő futásteljesítmény nem egyezik a műszerfal fotóján láthatóval, lépjen vissza."
       },
       {
         "h3": "Fotók és a sérülés leírása"

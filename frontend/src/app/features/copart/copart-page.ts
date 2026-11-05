@@ -47,7 +47,6 @@ const EXAMPLE_MODEL = 'ford-mustang';
           }
           @if (s === 'inspect') {
             <div class="mt-5"><app-vin-cta placement="copart" /></div>
-            <p class="mt-3 text-sm"><a [routerLink]="compare()" class="font-semibold text-brand-text underline underline-offset-2">{{ 'vinPage.compareLink' | translate }}</a></p>
           }
           @if (s === 'shipping') {
             <p class="mt-3 text-sm"><a [routerLink]="usaGuide()" class="font-semibold text-brand-text underline underline-offset-2">{{ 'copart.shipping.link' | translate }}</a></p>
@@ -97,7 +96,6 @@ export class CopartPage {
 
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly vin = computed(() => pathFor('vin', this.lang.current()));
-  protected readonly compare = computed(() => pathFor('vinCompare', this.lang.current()));
   protected readonly usaGuide = computed(() => guidePath({ section: 'origins', item: 'USA' }, this.lang.current()));
   protected readonly modelPage = computed(() => guidePath({ section: 'models', item: EXAMPLE_MODEL }, this.lang.current()));
   protected readonly countryName = computed(

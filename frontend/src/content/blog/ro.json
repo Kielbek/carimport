@@ -189,7 +189,7 @@
         "ol": [
           "Alegi un broker și semnezi contractul; primești acces la licitare prin contul lui.",
           "Plătești garanția – de obicei în jur de 10% din oferta maximă.",
-          "Găsești mașina, citești raportul de stare și verifici istoricul după VIN (Carfax, AutoCheck).",
+          "Găsești mașina, citești raportul de stare și verifici istoricul după VIN (carVertical).",
           "Stabilești oferta maximă incluzând toate taxele – nu doar prețul de adjudecare.",
           "Licitezi în runda preliminară sau live; cea mai mare ofertă câștigă dacă atinge prețul minim al vânzătorului.",
           "Plătești în termen (de obicei 2–3 zile lucrătoare) prin transfer bancar în dolari.",
@@ -295,7 +295,7 @@
       },
       {
         "ol": [
-          "Verifică istoricul după VIN (Carfax, AutoCheck) pentru accidente anterioare și înregistrări de inundație.",
+          "Verifică istoricul după VIN (carVertical) pentru accidente anterioare și înregistrări de inundație.",
           "Preferă mașinile cu avarii doar în față sau în spate, fără airbaguri declanșate.",
           "Cere o estimare de reparație de la un service care cunoaște modelul, înainte să licitezi.",
           "Verifică disponibilitatea și prețul pieselor în România – unele modele americane au piese greu de găsit în Europa.",
@@ -910,7 +910,7 @@
       },
       {
         "ol": [
-          "Scoate un raport de istoric după VIN (Carfax, AutoCheck): accidente, inundații, kilometraj, furt.",
+          "Scoate un raport de istoric după VIN (carVertical): accidente, inundații, kilometraj, furt.",
           "Verifică tipul titlului – evită certificatele parts only și non-repairable.",
           "Studiază fiecare fotografie: rosturile dintre elemente, airbagurile, urmele de apă, compartimentul motor.",
           "Citește etichetele de stare ca informație, nu ca garanție.",

@@ -41,7 +41,7 @@ export const ORIGIN_DEEP: OriginDeep = {
       paras: [
         "Izsolē auto klātienē neredzēsiet, tāpēc svarīga ir katra sludinājuma detaļa. Pirms solāt:",
         [
-          "Pārbaudiet vēsturi pēc VIN (piem., Carfax, AutoCheck, NMVTIS datubāze): bojājumus, nobraukumu, īpašnieku skaitu, zādzības un plūdus.",
+          "Pārbaudiet vēsturi pēc VIN (piem., carVertical, NMVTIS datubāze): bojājumus, nobraukumu, īpašnieku skaitu, zādzības un plūdus.",
           "Izpētiet fotogrāfijas un bojājumu aprakstu (primary / secondary damage). „Front end“ var nozīmēt jebko – no bampera līdz saliektām garensijām un nostrādājušiem drošības spilveniem.",
           "Uzmanīgi lasiet stāvokļa atzīmes: „Run and Drive“ nozīmē, ka auto brauca, ierodoties laukumā, nevis ka tas ir derīgs satiksmei; „Engine Starts“ nozīmē tikai to, ka dzinējs iedarbojās.",
           "Esiet piesardzīgi ar auto no viesuļvētru un plūdu reģioniem (Florida, Teksasa, Luiziāna). Ūdens pēdas zem paklāja, dubļi un korodēti elektriskie savienotāji ir iemesls atteikties.",

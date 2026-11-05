@@ -41,7 +41,7 @@ export const ORIGIN_DEEP: OriginDeep = {
       paras: [
         "Az aukción nem láthatja személyesen az autót, ezért a hirdetés minden részlete számít. Licitálás előtt:",
         [
-          "Ellenőrizze az előéletet az alvázszám (VIN) alapján (pl. Carfax, AutoCheck, NMVTIS adatbázis): károk, futásteljesítmény, tulajdonosok száma, lopás és árvíz.",
+          "Ellenőrizze az előéletet az alvázszám (VIN) alapján (pl. carVertical, NMVTIS adatbázis): károk, futásteljesítmény, tulajdonosok száma, lopás és árvíz.",
           "Nézze át a fotókat és a kárleírást (primary / secondary damage). A „Front end” jelenthet bármit a lökhárítótól a meghajlott hossztartókig és kioldott légzsákokig.",
           "Figyelmesen olvassa el az állapotcímkéket: a „Run and Drive” azt jelenti, hogy az autó a telephelyre érkezéskor mozgott, nem azt, hogy közlekedésre alkalmas; az „Engine Starts” csak azt, hogy a motor beindult.",
           "Legyen óvatos a hurrikán- és árvízsújtotta területekről (Florida, Texas, Louisiana) származó autókkal. Vízfoltok a szőnyeg alatt, iszap és korrodált elektromos csatlakozók – ezek okot adnak a visszalépésre.",

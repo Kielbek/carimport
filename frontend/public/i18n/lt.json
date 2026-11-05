@@ -513,7 +513,6 @@
     "contact": "Kontaktai",
     "vin": "VIN patikra",
     "copart": "Copart – kaip pirkti",
-    "vinCompare": "VIN ataskaitų palyginimas",
     "euImport": "Automobilio importas iš ES"
   },
   "footer": {
@@ -888,10 +887,6 @@
     "copart": {
       "title": "Copart iš Lietuvos: automobilio pirkimas JAV – išlaidos, brokeris, 0 % muitas (2026) | Carglo",
       "description": "Copart Lietuvoje neveikia – statote JAV aukcionuose per brokerį. Mokesčiai, salvage title, gabenimas per 4–8 savaites ir visa kaina su muitu ir PVM. JAV automobiliai nuo 2026 m. liepos gali turėti 0 % muitą."
-    },
-    "vinCompare": {
-      "title": "VIN istorijos ataskaitų palyginimas: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Kurią VIN ataskaitą rinktis automobiliui iš JAV ar Europos? Aprėptis, žalų ir title duomenys, nuotraukos ir kainos: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
       "title": "Automobilio importas iš Vokietijos ir ES – išlaidų skaičiuoklė: transportas, registracijos mokestis | Carglo",
@@ -1960,7 +1955,11 @@
     "title": "Prieš statydami – patikrinkite automobilio istoriją pagal VIN",
     "text": "Istorijos ataskaita parodo, be kita ko, ankstesnes žalas, ridą ir buvusius aukcionus. Ji kainuoja mažą dalį net nedidelio remonto.",
     "button": "Tikrinti VIN per {{partner}}",
-    "label": "Partnerio nuoroda – Carglo gali gauti komisinius. Tai neturi įtakos mūsų skaičiavimams."
+    "label": "Partnerio nuoroda – Carglo gali gauti komisinius. Tai neturi įtakos mūsų skaičiavimams.",
+    "code": "Nuolaidos kodas:",
+    "discount": "−{{pct}} % {{partner}} ataskaitoms",
+    "copy": "Kopijuoti",
+    "copied": "Nukopijuota"
   },
   "vinPage": {
     "eyebrow": "Įrankis ir gidas",
@@ -2035,7 +2034,6 @@
       "q6": "Ar dekoderis veikia automobiliams iš Japonijos?",
       "a6": "Tik jei automobilis turi 17 simbolių VIN. Dauguma Japonijos rinkos automobilių turi trumpesnį važiuoklės numerį – jų istorija tikrinama pagal auction sheet."
     },
-    "compareLink": "VIN ataskaitų paslaugų palyginimas – kurią rinktis",
     "anatomy": {
       "country": "šalis",
       "maker": "gamintojas",
@@ -2177,131 +2175,6 @@
       "registration": "Registracija ir kita"
     }
   },
-  "vinCompare": {
-    "eyebrow": "Palyginimas",
-    "title": "VIN istorijos ataskaitos – kurią paslaugą rinktis automobiliui iš JAV ar Europos",
-    "lead": "Palyginome populiariausias transporto priemonių istorijos ataskaitų paslaugas: duomenų aprėptį, JAV žalų ir title informaciją, ankstesnių skelbimų nuotraukas ir kainas. Pabaigoje – kaip pasirinkti ataskaitą konkrečiam automobiliui.",
-    "checked": "Kainos ir apimtis patikrintos: {{date}}. Kainos orientacinės ir gali keistis.",
-    "eu": "ES",
-    "verdict": {
-      "us": {
-        "for": "Automobilis iš JAV aukciono",
-        "pick": "AutoCheck arba Carfax",
-        "why": "Išsamiausi JAV duomenys: žalos, title, aukcionų ir serviso istorija."
-      },
-      "eu": {
-        "for": "Europoje perkamas automobilis",
-        "pick": "carVertical arba autoDNA",
-        "why": "Duomenys iš daugelio ES šalių, ataskaita jūsų kalba."
-      },
-      "budget": {
-        "for": "Greita ir pigi patikra",
-        "pick": "VinAudit",
-        "why": "Oficialūs NMVTIS duomenys apie title ir visiškas netektis už kelis dolerius."
-      }
-    },
-    "table": {
-      "title": "Trumpai",
-      "service": "Paslauga",
-      "regions": "Duomenų aprėptis",
-      "usTitles": "JAV title ir visiškos netektys",
-      "photos": "Nuotraukos iš istorijos",
-      "price": "Ataskaitos kaina",
-      "note": "„Kartais“ – nuotraukos rodomos, kai paslauga jų turi (pvz., iš ankstesnių skelbimų ar aukcionų). Duomenų apimtis priklauso nuo konkretaus VIN."
-    },
-    "value": {
-      "yes": "taip",
-      "partial": "iš dalies",
-      "no": "ne",
-      "sometimes": "kartais",
-      "unknown": "nėra nepriklausomų duomenų"
-    },
-    "providers": "Paslaugos po vieną",
-    "visit": "Eiti į {{name}}",
-    "pros": "Privalumai",
-    "cons": "Trūkumai",
-    "bestFor": "Kam tinka:",
-    "p": {
-      "carvertical": {
-        "desc": "Lietuviška paslauga, veikianti daugelyje Europos šalių ir JAV. Nurodo daugiau nei 1000 duomenų šaltinių – registrus, draudikus, servisus, policiją. JAV automobiliams rodo, be kita ko, title žymas (salvage, rebuilt, junk).",
-        "pros": "• Europos ir JAV duomenys vienoje ataskaitoje.\n• Ataskaita ir pagalba daugeliu ES kalbų.\n• Nuotraukos iš istorijos, kai jų yra.",
-        "cons": "• Brangesnė už pigias JAV paslaugas.\n• Mažiau JAV duomenų nei Carfax ar AutoCheck.",
-        "best": "pirkėjams Europoje, norintiems vienos ataskaitos automobiliui iš JAV ar ES."
-      },
-      "autodna": {
-        "desc": "Lenkiška paslauga, stipriausia Lenkijoje ir Vidurio bei Rytų Europoje. Duomenų bazė apima dešimtis Europos ir Šiaurės Amerikos šalių; ataskaitose yra rida, žalos ir – jei yra – nuotraukos.",
-        "pros": "• Labai geri Lenkijos ir regiono duomenys.\n• Pigesnė už carVertical, kelių ataskaitų paketai.\n• Nemokama išankstinė patikra, ar yra duomenų.",
-        "cons": "• Mažiau Vakarų Europos duomenų nei konkurentų.\n• JAV automobiliui pridėkite ir JAV šaltinį.",
-        "best": "automobiliams iš Lenkijos ir kaimyninių šalių bei kaip antras šaltinis."
-      },
-      "carfax": {
-        "desc": "Žinomiausia paslauga JAV. Turi plačią prieigą prie draudikų, policijos ir servisų duomenų, todėl geriausiai rodo avarijas ir aptarnavimo istoriją.",
-        "pros": "• Išsamiausia JAV avarijų ir aptarnavimo istorija.\n• Pirkėjai ją žino perparduodant.",
-        "cons": "• Brangiausia pavienė ataskaita.\n• Silpna automobiliams ne iš JAV ir Kanados.",
-        "best": "brangesniems JAV automobiliams, kai svarbi aptarnavimo istorija."
-      },
-      "autocheck": {
-        "desc": "Experian priklausanti paslauga. Ypač stipri aukcionų istorijoje – ja naudojasi prekiautojai ir aukcionų namai. Taip pat pateikia AutoCheck Score įvertinimą.",
-        "pros": "• Labai geri JAV aukcionų duomenys.\n• Pigesnė už Carfax.",
-        "cons": "• Mažiau aptarnavimo detalių nei Carfax.\n• Tik JAV automobiliai.",
-        "best": "automobiliams iš Copart ir IAAI aukcionų."
-      },
-      "vinaudit": {
-        "desc": "Oficialiai patvirtintas valstybinės NMVTIS duomenų bazės duomenų teikėjas. Rodo title žymas, visiškas netektis, ridos rodmenis ir vagysčių įrašus.",
-        "pros": "• Labai pigi, paketai dar pigesni.\n• Oficialūs NMVTIS duomenys apie title ir visiškas netektis.",
-        "cons": "• Mažai detalių apie smulkias avarijas ir aptarnavimą.\n• Nėra nuotraukų.",
-        "best": "greitai pirminei daugelio automobilių patikrai prieš statant."
-      },
-      "automano": {
-        "desc": "Nauja pigių VIN ataskaitų paslauga. Kol kas neradome nepriklausomų atsiliepimų ar išsamaus duomenų šaltinių aprašymo – laikykite ją pigia pirmine patikra.",
-        "pros": "• Maža ataskaitos kaina.",
-        "cons": "• Mažai nepriklausomų atsiliepimų.\n• Neskelbia duomenų šaltinių.",
-        "best": "pigiai pirminei patikrai – brangesniam automobiliui užsisakykite ir žinomesnės paslaugos ataskaitą."
-      }
-    },
-    "how": {
-      "title": "Kaip lyginome",
-      "text": "Peržiūrėjome paslaugų aprašymus, kainoraščius ir 2026 m. spalio nepriklausomus palyginimus. Susitelkėme į tai, kas importuojant svarbiausia: iš kur gaunami duomenys, ar ataskaita rodo JAV title ir visiškas netektis, ar joje yra nuotraukų iš istorijos ir kiek kainuoja viena ataskaita.\nAtaskaitų netestavome su tais pačiais VIN – duomenų apimtis priklauso nuo konkretaus automobilio, todėl brangesniam automobiliui verta užsisakyti dvi skirtingų paslaugų ataskaitas."
-    },
-    "free": {
-      "title": "Ką galite patikrinti nemokamai",
-      "text": "Prieš mokėdami už ataskaitą, nemokamai patikrinkite:\n• NICB VINCheck – ar automobilis buvo praneštas kaip pavogtas ar visiška netektis (JAV).\n• NHTSA Recalls – neatliktus atšaukimus pagal VIN.\n• MOT istoriją gov.uk svetainėje – automobiliams iš Jungtinės Karalystės.\n• neoficialius Copart ir IAAI aukcionų archyvus – kartais rodo ankstesnio pardavimo nuotraukas ir kainą; jie nesusiję su aukcionais ir gali išnykti.\nMūsų nemokamas VIN dekoderis taip pat nuskaito markę, modelį, metus, variklį ir pagaminimo šalį."
-    },
-    "read": {
-      "title": "Kaip skaityti ataskaitą",
-      "text": "• Palyginkite ridą skirtingais metais – sumažėjimas reiškia atsuktą ridą.\n• Ieškokite title žymų: salvage, rebuilt, flood, junk.\n• Atkreipkite dėmesį į registracijos valstijas – automobiliai iš Floridos, Teksaso ir Luizianos dažniau turi potvynių žalų.\n• Keli aukcionai per trumpą laiką rodo, kad automobilį buvo sunku parduoti.\n• Įrašo nebuvimas nereiškia, kad žalos nebuvo – ataskaita rodo tik tai, kas buvo pranešta."
-    },
-    "choose": {
-      "title": "Kurią ataskaitą rinktis",
-      "text": "• Automobilis iš JAV aukciono (Copart, IAAI): pirmiausia nemokamas NICB ir pigus VinAudit, o prieš statydami už brangesnį automobilį – AutoCheck arba Carfax.\n• Automobilis iš JAV, kai norite vienos ataskaitos savo kalba: carVertical.\n• Automobilis iš Lenkijos ar kaimyninių šalių: autoDNA, o kaip antras šaltinis – carVertical.\n• Automobilis iš Jungtinės Karalystės: nemokama MOT istorija plius Europos paslaugos ataskaita.\nKelių dešimčių tūkstančių eurų automobiliui dvi skirtingų paslaugų ataskaitos kainuoja mažą dalį galimo nuostolio."
-    },
-    "faq": {
-      "title": "Dažni klausimai",
-      "q1": "Kuri VIN ataskaita geriausia automobiliui iš JAV?",
-      "a1": "Automobiliui iš JAV aukciono daugiausia duomenų pateikia AutoCheck (aukcionų istorija) ir Carfax (avarijos ir aptarnavimas). Greitai title ir visiškų netekčių patikrai užtenka pigesnio VinAudit.",
-      "q2": "Ar carVertical tikrina automobilius iš JAV?",
-      "a2": "Taip – pasak paslaugos, ataskaitoje yra, be kita ko, JAV title žymos (salvage, rebuilt, junk). Tačiau JAV aprėptis mažesnė nei JAV paslaugų.",
-      "q3": "autoDNA ar carVertical – kuri geresnė?",
-      "a3": "autoDNA stipresnė Lenkijoje ir Vidurio bei Rytų Europoje ir paprastai pigesnė, o carVertical turi platesnę Vakarų Europos ir JAV aprėptį. Brangesniam automobiliui verta patikrinti abi.",
-      "q4": "Ar ataskaita parodys Copart aukciono nuotraukas?",
-      "a4": "Kartais – kai kuriose ataskaitose yra ankstesnių skelbimų nuotraukų, kai paslauga jų turi. Nė viena to negarantuoja. Dabartinio aukciono nuotraukas išsisaugokite patys, nes po pardavimo puslapis dingsta.",
-      "q5": "Ar užtenka nemokamos VIN ataskaitos?",
-      "a5": "Nemokamos bazės (NICB, NHTSA) parodo vagystę, visišką netektį ir atšaukimus, bet ne visą avarijų ir ridos istoriją. Sprendimui pirkti paprastai reikia mokamos ataskaitos.",
-      "q6": "Ar uždirbate iš šių nuorodų?",
-      "a6": "Kai kurių paslaugų atveju taip – tokios nuorodos pažymėtos kaip partnerių. Tai neturi įtakos mūsų rekomendacijoms: eiliškumas grindžiamas duomenų aprėptimi, o ne komisiniais."
-    },
-    "disclaimer": "Carglo nėra susijusi su aprašytomis paslaugomis. Pavadinimai priklauso jų savininkams. Kainos ir apimtis paimtos iš paslaugų aprašymų ir 2026 m. spalio palyginimų – prieš pirkdami patikrinkite aktualų pasiūlymą.",
-    "decoder": "Nemokamas VIN dekoderis",
-    "mock": {
-      "title": "Transporto priemonės istorijos ataskaita",
-      "r1": "Pirmoji registracija – Florida",
-      "r2": "Ridos rodmuo: 28 400 mylių",
-      "r3": "Žala: priekis, išsiskleidė oro pagalvės",
-      "r4": "Title pakeistas į SALVAGE",
-      "r5": "Aukcionas – 3 nuotraukos prieš remontą",
-      "caption": "Iliustracija – taip paprastai atrodo istorijos ataskaita. Duomenų apimtis priklauso nuo paslaugos ir VIN."
-    }
-  },
   "euImport": {
     "eyebrow": "ES importo skaičiuoklė",
     "title": "Kiek kainuoja parsivežti automobilį iš Vokietijos ar kitos ES šalies",
@@ -2386,5 +2259,14 @@
     "title": "Pasirinkite kalbą",
     "lead": "Kainas, mokesčius ir gidus rodome pasirinktos kalbos šaliai. Kalbą bet kada galite pakeisti puslapio viršuje.",
     "suggested": "Siūloma"
+  },
+  "reportMock": {
+    "title": "Transporto priemonės istorijos ataskaita",
+    "r1": "Pirmoji registracija – Florida",
+    "r2": "Ridos rodmuo: 28 400 mylių",
+    "r3": "Žala: priekis, išsiskleidė oro pagalvės",
+    "r4": "Title pakeistas į SALVAGE",
+    "r5": "Aukcionas – 3 nuotraukos prieš remontą",
+    "caption": "Iliustracija – taip paprastai atrodo istorijos ataskaita. Duomenų apimtis priklauso nuo paslaugos ir VIN."
   }
 }

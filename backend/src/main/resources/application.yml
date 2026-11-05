@@ -110,31 +110,9 @@ app:
     epa-url: ${EPA_URL:https://www.fueleconomy.gov/ws/rest}
     user-agent: "carimport/1.0 (${CONTACT_EMAIL:kontakt@carimport.example})"
     timeout: 6s
-  affiliates:
-    - id: fx-online
-      kind: CURRENCY_EXCHANGE
-      partner: "Online FX exchange"
-      url: "https://example-fx.com/{locale}?ref=carimport&sub={subId}"
-      origins: [USA, CANADA, JAPAN, UAE, UK]
-      countries: []
-      locales: []
-      priority: 1
-    - id: vin-history
-      kind: VIN_CHECK
-      partner: "VIN history report"
-      url: "https://example-vin.com/{locale}/?a_aid=carimport&chan={subId}"
-      origins: [USA, CANADA]
-      countries: []
-      locales: []
-      priority: 2
-    - id: leasing-pl
-      kind: FINANCING
-      partner: "Leasing broker PL"
-      url: "https://example-leasing.pl/?utm_source=carimport&sub={subId}"
-      origins: []
-      countries: [PL]
-      locales: [pl, uk]
-      priority: 3
+  # extra partner tiles under the calculator result (kind CURRENCY_EXCHANGE / VIN_CHECK / FINANCING); none signed yet.
+  # The VIN report partner (carVertical) is configured in frontend core/site.config.ts (vinPartner).
+  affiliates: []
   geo:
     geocoder-url: ${GEOCODER_URL:https://nominatim.openstreetmap.org}
     router-url: ${ROUTER_URL:https://router.project-osrm.org}

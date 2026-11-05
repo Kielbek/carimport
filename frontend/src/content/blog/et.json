@@ -219,7 +219,7 @@
         "h2": "Fotod ja seisukorra raport"
       },
       {
-        "p": "Oksjonifotod tehakse kiiresti platsil ja need näitavad vaid seda, mis on pealt näha. Vaata iga fotot suurendatult: paneelide vahed, veljed ja rehvid, turvapatjade kohad, mootoriruum ning veepiirid salongis. Kui istmetel on muda või kruvidel korrosioon, kahtlusta üleujutust. Võrdle VIN-koodi kuulutuses ja fotodel ning telli auto ajalugu Carfaxist või AutoCheckist enne pakkumist. Paljud vahendajad pakuvad lisatasu eest ka kohapealset ülevaatust, mis kallima auto puhul tasub end peaaegu alati ära."
+        "p": "Oksjonifotod tehakse kiiresti platsil ja need näitavad vaid seda, mis on pealt näha. Vaata iga fotot suurendatult: paneelide vahed, veljed ja rehvid, turvapatjade kohad, mootoriruum ning veepiirid salongis. Kui istmetel on muda või kruvidel korrosioon, kahtlusta üleujutust. Võrdle VIN-koodi kuulutuses ja fotodel ning telli auto ajalugu carVerticalist enne pakkumist. Paljud vahendajad pakuvad lisatasu eest ka kohapealset ülevaatust, mis kallima auto puhul tasub end peaaegu alati ära."
       },
       {
         "h2": "Tasud, mis üllatavad uut ostjat"
@@ -399,7 +399,7 @@
       },
       {
         "ol": [
-          "Kontrolli VIN-ajalugu varasemate avariide ja üleujutuse märgete suhtes (Carfax, AutoCheck).",
+          "Kontrolli VIN-ajalugu varasemate avariide ja üleujutuse märgete suhtes (carVertical).",
           "Eelista autosid, millel on ainult esi- või tagakahjustus ilma turvapatjade avanemiseta.",
           "Küsi enne pakkumist remondihinnangut mudelit tundvalt kereremonditöökojalt.",
           "Kontrolli varuosade saadavust ja hindu Eestis.",
@@ -1105,7 +1105,7 @@
       },
       {
         "ol": [
-          "Telli VIN-ajaloo raport (Carfax, AutoCheck): avariid, üleujutus, läbisõit, vargus.",
+          "Telli VIN-ajaloo raport (carVertical): avariid, üleujutus, läbisõit, vargus.",
           "Kontrolli dokumendi tüüpi – väldi parts only ja non-repairable dokumente.",
           "Uuri iga fotot: paneelide vahed, turvapadjad, veepiirid, mootoriruum.",
           "Loe seisukorra märgiseid kui infot, mitte garantiid.",

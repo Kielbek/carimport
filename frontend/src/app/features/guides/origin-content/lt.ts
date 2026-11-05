@@ -41,7 +41,7 @@ export const ORIGIN_DEEP: OriginDeep = {
       paras: [
         "Aukcione automobilio pats nepamatysite, todėl svarbi kiekviena skelbimo detalė. Prieš statydami:",
         [
-          "Patikrinkite istoriją pagal VIN (pvz., Carfax, AutoCheck, NMVTIS duomenų bazė): pažeidimus, ridą, savininkų skaičių, vagystes ir potvynius.",
+          "Patikrinkite istoriją pagal VIN (pvz., carVertical, NMVTIS duomenų bazė): pažeidimus, ridą, savininkų skaičių, vagystes ir potvynius.",
           "Išnagrinėkite nuotraukas ir pažeidimų aprašymą (primary / secondary damage). „Front end“ gali reikšti bet ką – nuo buferio iki sulenktų išilginių sijų ir išsiskleidusių oro pagalvių.",
           "Atidžiai skaitykite būklės žymas: „Run and Drive“ reiškia, kad automobilis važiavo atvykęs į aikštelę, o ne kad jis tinkamas eismui; „Engine Starts“ reiškia tik tai, kad variklis užsivedė.",
           "Būkite atsargūs su automobiliais iš uraganų ir potvynių zonų (Florida, Teksasas, Luiziana). Vandens žymės po kilimu, dumblas ir korozijos paveiktos elektros jungtys – priežastis atsisakyti.",

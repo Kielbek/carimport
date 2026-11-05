@@ -41,7 +41,7 @@ export const ORIGIN_DEEP: OriginDeep = {
       paras: [
         "Op de veiling zie je de auto niet zelf, dus elk detail in de advertentie telt. Voordat je biedt:",
         [
-          "Controleer de VIN-historie (bijv. Carfax, AutoCheck, de NMVTIS-database): schade, kilometerstand, aantal eigenaren, diefstal en overstroming.",
+          "Controleer de VIN-historie (bijv. carVertical, de NMVTIS-database): schade, kilometerstand, aantal eigenaren, diefstal en overstroming.",
           "Bestudeer de foto's en de schadeomschrijving (primary / secondary damage). „Front end” kan van een bumper tot verbogen chassisbalken en afgegane airbags betekenen.",
           "Lees de conditievermeldingen goed: „Run and Drive” betekent dat de auto reed bij aankomst op het terrein, niet dat hij verkeersveilig is; „Engine Starts” betekent alleen dat de motor startte.",
           "Wees voorzichtig met auto's uit orkaan- en overstromingsgebieden (Florida, Texas, Louisiana). Waterranden onder de vloerbedekking, slib en gecorrodeerde stekkers zijn een reden om af te haken.",

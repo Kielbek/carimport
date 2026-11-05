@@ -41,7 +41,7 @@ export const ORIGIN_DEEP: OriginDeep = {
       paras: [
         'Na aukcji nie obejrzysz auta osobiście, dlatego każda informacja z ogłoszenia jest na wagę złota. Zanim zalicytujesz:',
         [
-          'Sprawdź historię po numerze VIN (np. Carfax, AutoCheck, baza NMVTIS): szkody, przebieg, liczbę właścicieli, kradzież i zalanie.',
+          'Sprawdź historię po numerze VIN (np. carVertical, baza NMVTIS): szkody, przebieg, liczbę właścicieli, kradzież i zalanie.',
           'Przeanalizuj zdjęcia i opis szkody (primary / secondary damage). Szkoda „front end” może oznaczać zarówno zderzak, jak i uszkodzone podłużnice i poduszki powietrzne.',
           'Zwróć uwagę na oznaczenia stanu: „Run and Drive” oznacza, że auto ruszyło przy odbiorze na plac, a nie że jest sprawne; „Engine Starts” – że silnik tylko odpalił.',
           'Uważaj na auta z rejonów po huraganach i powodziach (Floryda, Teksas, Luizjana). Ślady wody pod wykładziną, osad, korozja złączy elektrycznych to sygnał, by odpuścić.',

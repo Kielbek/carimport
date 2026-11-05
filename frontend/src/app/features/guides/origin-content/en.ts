@@ -41,7 +41,7 @@ export const ORIGIN_DEEP: OriginDeep = {
       paras: [
         'You cannot see the car in person at the auction, so every detail in the listing counts. Before you bid:',
         [
-          'Check the VIN history (e.g. Carfax, AutoCheck, the NMVTIS database): damage, mileage, number of owners, theft and flooding.',
+          'Check the VIN history (e.g. carVertical, the NMVTIS database): damage, mileage, number of owners, theft and flooding.',
           'Study the photos and damage description (primary / secondary damage). "Front end" can mean anything from a bumper to bent chassis rails and deployed airbags.',
           'Read the condition labels carefully: "Run and Drive" means the car moved when it arrived at the yard, not that it is roadworthy; "Engine Starts" means the engine only started.',
           'Be careful with cars from hurricane and flood areas (Florida, Texas, Louisiana). Water marks under the carpet, silt and corroded electrical connectors are a reason to walk away.',

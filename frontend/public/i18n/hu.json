@@ -513,7 +513,6 @@
     "contact": "Kapcsolat",
     "vin": "Alvázszám-ellenőrzés",
     "copart": "Copart – így vásárolj",
-    "vinCompare": "VIN-jelentések összehasonlítása",
     "euImport": "Autóimport az EU-ból"
   },
   "footer": {
@@ -888,10 +887,6 @@
     "copart": {
       "title": "Copart Magyarországról: autóvásárlás az USA-ból – költségek, bróker, 0% vám (2026) | Carglo",
       "description": "A Copart nincs jelen Magyarországon – az amerikai aukciókon licitálhat bróker segítségével. Díjak, salvage title, szállítás 4–8 hét alatt és teljes költség vámmal és áfával. Az USA-ban gyártott autókra 2026 júliusától 0% vám vonatkozhat."
-    },
-    "vinCompare": {
-      "title": "VIN-előéletjelentések összehasonlítása: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Melyik VIN-jelentést válassza amerikai vagy európai autóhoz? Lefedettség, sérülés- és title-adatok, fotók és árak: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
       "title": "Autóimport Németországból és az EU-ból – költségkalkulátor: szállítás, regisztrációs adó | Carglo",
@@ -1960,7 +1955,11 @@
     "title": "Licitálás előtt ellenőrizze az autó előéletét az alvázszám alapján",
     "text": "Az előéletjelentés többek között a korábbi sérüléseket, a kilométeróra-állásokat és a korábbi aukciókat mutatja. Egy kisebb javítás árának töredékébe kerül.",
     "button": "VIN ellenőrzése: {{partner}}",
-    "label": "Partnerlink – a Carglo jutalékot kaphat. Ez nem befolyásolja a számításainkat."
+    "label": "Partnerlink – a Carglo jutalékot kaphat. Ez nem befolyásolja a számításainkat.",
+    "code": "Kedvezménykód:",
+    "discount": "−{{pct}}% a {{partner}} jelentésekre",
+    "copy": "Másolás",
+    "copied": "Másolva"
   },
   "vinPage": {
     "eyebrow": "Eszköz és útmutató",
@@ -2035,7 +2034,6 @@
       "q6": "Működik a dekóder japán autókra?",
       "a6": "Csak ha az autónak 17 karakteres VIN-je van. A japán piaci autók többségének rövidebb vázszáma van – ezek előéletét az auction sheet alapján ellenőrzik."
     },
-    "compareLink": "VIN-jelentésszolgáltatók összehasonlítása – melyiket válassza",
     "anatomy": {
       "country": "ország",
       "maker": "gyártó",
@@ -2177,131 +2175,6 @@
       "registration": "Forgalomba helyezés és egyéb"
     }
   },
-  "vinCompare": {
-    "eyebrow": "Összehasonlítás",
-    "title": "VIN-előéletjelentések – melyik szolgáltatót válasszuk amerikai és európai autóhoz",
-    "lead": "Összehasonlítottuk a legnépszerűbb járműelőzmény-szolgáltatókat: adatlefedettség, amerikai sérülés- és title-adatok, korábbi hirdetések fotói és árak. A végén – hogyan válasszon jelentést egy adott autóhoz.",
-    "checked": "Árak és tartalom ellenőrizve: {{date}}. Az árak tájékoztató jellegűek, és változhatnak.",
-    "eu": "EU",
-    "verdict": {
-      "us": {
-        "for": "Amerikai aukciós autó",
-        "pick": "AutoCheck vagy Carfax",
-        "why": "A legrészletesebb amerikai adatok: sérülések, title, aukciós és szervizelőzmények."
-      },
-      "eu": {
-        "for": "Európában vásárolt autó",
-        "pick": "carVertical vagy autoDNA",
-        "why": "Adatok sok uniós országból, jelentés az Ön nyelvén."
-      },
-      "budget": {
-        "for": "Gyors, olcsó ellenőrzés",
-        "pick": "VinAudit",
-        "why": "Hivatalos NMVTIS-adatok a title-ről és totálkárokról néhány dollárért."
-      }
-    },
-    "table": {
-      "title": "Röviden",
-      "service": "Szolgáltató",
-      "regions": "Adatlefedettség",
-      "usTitles": "Amerikai title és totálkár",
-      "photos": "Fotók az előéletből",
-      "price": "Jelentés ára",
-      "note": "„Néha” – fotók akkor jelennek meg, ha a szolgáltatónak vannak (pl. korábbi hirdetésekből vagy aukciókról). Az adatok köre az adott VIN-től függ."
-    },
-    "value": {
-      "yes": "igen",
-      "partial": "részben",
-      "no": "nem",
-      "sometimes": "néha",
-      "unknown": "nincs független adat"
-    },
-    "providers": "A szolgáltatók egyenként",
-    "visit": "Tovább: {{name}}",
-    "pros": "Előnyök",
-    "cons": "Hátrányok",
-    "bestFor": "Kinek ajánlott:",
-    "p": {
-      "carvertical": {
-        "desc": "Litván szolgáltató, amely Európa sok országában és az USA-ban működik. Több mint 1000 adatforrást említ – nyilvántartások, biztosítók, szervizek, rendőrség. Amerikai autóknál többek között a title-jelöléseket (salvage, rebuilt, junk) mutatja.",
-        "pros": "• Európai és amerikai adatok egy jelentésben.\n• Jelentés és ügyfélszolgálat sok uniós nyelven.\n• Fotók az előéletből, ha elérhetők.",
-        "cons": "• Drágább az amerikai olcsó szolgáltatóknál.\n• Kevesebb amerikai adat, mint a Carfaxnál vagy az AutoChecknél.",
-        "best": "európai vásárlóknak, akik egyetlen jelentést szeretnének amerikai vagy uniós autóhoz."
-      },
-      "autodna": {
-        "desc": "Lengyel szolgáltató, Lengyelországban és Közép-Kelet-Európában a legerősebb. Adatbázisa Európa és Észak-Amerika több tucat országát fedi le; a jelentések többek között kilométer-állást, sérüléseket és – ha vannak – fotókat tartalmaznak.",
-        "pros": "• Nagyon jó adatok Lengyelországból és a régióból.\n• Olcsóbb a carVerticalnál, több jelentésből álló csomagok.\n• Ingyenes előzetes ellenőrzés, van-e adat.",
-        "cons": "• Kevesebb nyugat-európai adat, mint a versenytársaknál.\n• Amerikai autóhoz érdemes amerikai forrást is használni.",
-        "best": "lengyel és szomszédos országbeli autókhoz, illetve második forrásnak."
-      },
-      "carfax": {
-        "desc": "Az USA legismertebb szolgáltatója. Széles hozzáférése van biztosítói, rendőrségi és szervizadatokhoz, ezért a baleseteket és a szervizelőzményeket mutatja a legjobban.",
-        "pros": "• A legrészletesebb amerikai baleseti és szervizelőzmény.\n• A vevők ismerik viszonteladáskor.",
-        "cons": "• A legdrágább egyedi jelentés.\n• Gyenge az USA-n és Kanadán kívüli autóknál.",
-        "best": "drágább amerikai autókhoz, ahol számít a szervizelőzmény."
-      },
-      "autocheck": {
-        "desc": "Az Experian szolgáltatása. Különösen erős az aukciós előzményekben – kereskedők és aukciós házak használják. AutoCheck Score értékelést is ad.",
-        "pros": "• Nagyon jó adatok az amerikai aukciókról.\n• Olcsóbb a Carfaxnál.",
-        "cons": "• Kevesebb szervizrészlet, mint a Carfaxnál.\n• Csak amerikai autók.",
-        "best": "a Copart és IAAI aukciók autóihoz."
-      },
-      "vinaudit": {
-        "desc": "Az állami NMVTIS adatbázis hivatalosan jóváhagyott adatszolgáltatója. Title-jelöléseket, totálkárokat, kilométeróra-állásokat és lopási bejegyzéseket mutat.",
-        "pros": "• Nagyon olcsó, a csomagok még olcsóbbak.\n• Hivatalos NMVTIS-adatok a title-ről és totálkárokról.",
-        "cons": "• Kevés részlet a kisebb balesetekről és a szervizről.\n• Nincsenek fotók.",
-        "best": "sok autó gyors első ellenőrzéséhez licitálás előtt."
-      },
-      "automano": {
-        "desc": "Új, olcsó VIN-jelentés-szolgáltató. Még nem találtunk független értékeléseket vagy részletes leírást az adatforrásairól – tekintse olcsó első ellenőrzésnek.",
-        "pros": "• Alacsony jelentésár.",
-        "cons": "• Kevés független értékelés.\n• Nem közli az adatforrásait.",
-        "best": "olcsó első ellenőrzéshez – drágább autónál rendeljen jelentést egy ismertebb szolgáltatótól is."
-      }
-    },
-    "how": {
-      "title": "Hogyan hasonlítottunk össze",
-      "text": "Átnéztük a szolgáltatók leírásait, árlistáit és a 2026. októberi független összehasonlításokat. Arra figyeltünk, ami importnál a legfontosabb: honnan származnak az adatok, mutatja-e a jelentés az amerikai title-t és totálkárokat, vannak-e benne fotók az előéletből, és mennyibe kerül egy jelentés.\nA jelentéseket nem teszteltük ugyanazokkal a VIN-ekkel – az adatok köre az adott autótól függ, ezért drágább autónál érdemes két különböző szolgáltatótól jelentést rendelni."
-    },
-    "free": {
-      "title": "Mit ellenőrizhet ingyen",
-      "text": "Mielőtt jelentésért fizetne, ellenőrizze ingyen:\n• NICB VINCheck – bejelentették-e az autót lopottként vagy totálkárosként (USA).\n• NHTSA Recalls – nyitott visszahívások a VIN-re.\n• MOT-előzmény a gov.uk oldalon – egyesült királyságbeli autókhoz.\n• nem hivatalos Copart- és IAAI-aukcióarchívumok – néha mutatják egy korábbi eladás fotóit és árát; nem kapcsolódnak az aukciókhoz, és eltűnhetnek.\nIngyenes VIN-dekóderünk a márkát, modellt, évjáratot, motort és gyártási országot is kiolvassa."
-    },
-    "read": {
-      "title": "Hogyan olvassuk a jelentést",
-      "text": "• Vesse össze az évenkénti kilométeróra-állásokat – a csökkenés visszatekert órát jelent.\n• Keresse a title-jelöléseket: salvage, rebuilt, flood, junk.\n• Figyeljen a nyilvántartási államokra – a floridai, texasi és louisianai autóknál gyakoribb az árvízkár.\n• Rövid időn belüli több aukció arra utal, hogy az autót nehéz volt eladni.\n• Ha nincs bejegyzés, az nem jelenti, hogy nem volt kár – a jelentés csak a bejelentett eseményeket mutatja."
-    },
-    "choose": {
-      "title": "Melyik jelentést válasszuk",
-      "text": "• Amerikai aukciós autó (Copart, IAAI): először az ingyenes NICB és az olcsó VinAudit, drágább autó licitálása előtt AutoCheck vagy Carfax.\n• Amerikai autó, ha egy jelentést szeretne a saját nyelvén: carVertical.\n• Lengyel vagy szomszédos országbeli autó: autoDNA, második forrásként carVertical.\n• Egyesült királyságbeli autó: ingyenes MOT-előzmény és egy európai szolgáltató jelentése.\nEgy több millió forintos autónál két különböző szolgáltató jelentése a lehetséges veszteség töredékébe kerül."
-    },
-    "faq": {
-      "title": "Gyakori kérdések",
-      "q1": "Melyik a legjobb VIN-jelentés amerikai autóhoz?",
-      "a1": "Amerikai aukciós autóhoz az AutoCheck (aukciós előzmények) és a Carfax (balesetek és szerviz) adja a legtöbb adatot. A title és a totálkár gyors ellenőrzéséhez elég az olcsóbb VinAudit.",
-      "q2": "Ellenőrzi a carVertical az amerikai autókat?",
-      "a2": "Igen – a szolgáltató szerint a jelentés tartalmazza többek között az amerikai title-jelöléseket (salvage, rebuilt, junk). Az amerikai lefedettség azonban kisebb, mint az amerikai szolgáltatóké.",
-      "q3": "autoDNA vagy carVertical – melyik a jobb?",
-      "a3": "Az autoDNA Lengyelországban és Közép-Kelet-Európában erősebb, és általában olcsóbb, a carVertical Nyugat-Európát és az USA-t fedi le szélesebben. Drágább autónál érdemes mindkettőt megnézni.",
-      "q4": "Megmutatja a jelentés a Copart-aukció fotóit?",
-      "a4": "Néha – egyes jelentések tartalmaznak fotókat korábbi hirdetésekből, ha a szolgáltatónak vannak. Garanciát egyik sem ad. Az aktuális aukció fotóit mentse el saját maga, mert az eladás után az oldal eltűnik.",
-      "q5": "Elég egy ingyenes VIN-jelentés?",
-      "a5": "Az ingyenes adatbázisok (NICB, NHTSA) mutatják a lopást, a totálkárt és a visszahívásokat, de nem a teljes baleseti és kilométer-előzményt. A vásárlási döntéshez általában fizetős jelentés kell.",
-      "q6": "Kerestek ezeken a linkeken?",
-      "a6": "Egyes szolgáltatóknál igen – ezek a linkek partnerlinkként vannak jelölve. Ez nem befolyásolja, mit ajánlunk: a sorrend az adatlefedettségen alapul, nem a jutalékon."
-    },
-    "disclaimer": "A Carglo nem áll kapcsolatban a bemutatott szolgáltatókkal. A nevek tulajdonosaikéi. Az árak és az adatok köre a szolgáltatók leírásaiból és 2026. októberi összehasonlításokból származnak – vásárlás előtt ellenőrizze az aktuális ajánlatot.",
-    "decoder": "Ingyenes VIN-dekóder",
-    "mock": {
-      "title": "Járműelőzmény-jelentés",
-      "r1": "Első forgalomba helyezés – Florida",
-      "r2": "Kilométeróra-állás: 28 400 mérföld",
-      "r3": "Sérülés: eleje, a légzsákok kinyíltak",
-      "r4": "Title SALVAGE-re változott",
-      "r5": "Aukció – 3 fotó javítás előtt",
-      "caption": "Illusztráció – így néz ki általában egy előéletjelentés. Az adatok köre a szolgáltatótól és a VIN-től függ."
-    }
-  },
   "euImport": {
     "eyebrow": "Uniós autóimport-kalkulátor",
     "title": "Mennyibe kerül egy autó behozatala Németországból vagy más uniós országból",
@@ -2386,5 +2259,14 @@
     "title": "Válasszon nyelvet",
     "lead": "Az árakat, adókat és útmutatókat a választott nyelv országára mutatjuk. A nyelvet bármikor módosíthatja az oldal tetején.",
     "suggested": "Javasolt"
+  },
+  "reportMock": {
+    "title": "Járműelőzmény-jelentés",
+    "r1": "Első forgalomba helyezés – Florida",
+    "r2": "Kilométeróra-állás: 28 400 mérföld",
+    "r3": "Sérülés: eleje, a légzsákok kinyíltak",
+    "r4": "Title SALVAGE-re változott",
+    "r5": "Aukció – 3 fotó javítás előtt",
+    "caption": "Illusztráció – így néz ki általában egy előéletjelentés. Az adatok köre a szolgáltatótól és a VIN-től függ."
   }
 }

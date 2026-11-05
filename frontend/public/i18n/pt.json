@@ -513,7 +513,6 @@
     "contact": "Contacto",
     "vin": "Verificar VIN",
     "copart": "Copart – como comprar",
-    "vinCompare": "Relatórios VIN comparados",
     "euImport": "Importar carro da UE"
   },
   "footer": {
@@ -888,10 +887,6 @@
     "copart": {
       "title": "Copart a partir de Portugal: comprar carro dos EUA – custos, broker, 0% de direitos (2026) | Carglo",
       "description": "A Copart não existe em Portugal – mas pode licitar nos leilões dos EUA através de um broker. Taxas, title salvage, envio em 4–8 semanas e custo total com direitos, IVA e ISV. Carros dos EUA com 0% de direitos desde julho de 2026."
-    },
-    "vinCompare": {
-      "title": "Relatórios de histórico VIN comparados: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Que relatório VIN escolher para um carro dos EUA ou da Europa? Cobertura, dados de danos e title, fotos e preços: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
       "title": "Importar carro da Alemanha ou da UE – calculadora de custos: transporte, ISV, matrícula | Carglo",
@@ -1960,7 +1955,11 @@
     "title": "Antes de licitar – verifique o histórico pelo VIN",
     "text": "Um relatório de histórico mostra, entre outras coisas, danos anteriores, quilometragem e leilões passados. Custa uma fração de uma pequena reparação.",
     "button": "Verificar o VIN na {{partner}}",
-    "label": "Link de parceiro – a Carglo pode receber uma comissão. Não afeta os nossos cálculos."
+    "label": "Link de parceiro – a Carglo pode receber uma comissão. Não afeta os nossos cálculos.",
+    "code": "Código de desconto:",
+    "discount": "−{{pct}}% nos relatórios {{partner}}",
+    "copy": "Copiar",
+    "copied": "Copiado"
   },
   "vinPage": {
     "eyebrow": "Ferramenta e guia",
@@ -2035,7 +2034,6 @@
       "q6": "O descodificador funciona com carros do Japão?",
       "a6": "Só se o carro tiver um VIN de 17 caracteres. A maioria dos carros do mercado japonês tem um número de chassis mais curto – o seu histórico verifica-se na auction sheet."
     },
-    "compareLink": "Comparação de serviços de relatórios VIN – qual escolher",
     "anatomy": {
       "country": "país",
       "maker": "fabricante",
@@ -2177,131 +2175,6 @@
       "registration": "Matrícula e outros"
     }
   },
-  "vinCompare": {
-    "eyebrow": "Comparação",
-    "title": "Relatórios de histórico VIN – que serviço escolher para um carro dos EUA ou da Europa",
-    "lead": "Comparámos os serviços de relatórios de histórico mais populares: cobertura de dados, informação de danos e title dos EUA, fotos de anúncios anteriores e preços. No fim – como escolher o relatório para um carro concreto.",
-    "checked": "Preços e cobertura verificados: {{date}}. Os preços são indicativos e podem mudar.",
-    "eu": "UE",
-    "verdict": {
-      "us": {
-        "for": "Carro de um leilão dos EUA",
-        "pick": "AutoCheck ou Carfax",
-        "why": "Os dados mais completos dos EUA: danos, titles, histórico de leilões e manutenção."
-      },
-      "eu": {
-        "for": "Carro comprado na Europa",
-        "pick": "carVertical ou autoDNA",
-        "why": "Dados de muitos países da UE, relatório na sua língua."
-      },
-      "budget": {
-        "for": "Verificação rápida e barata",
-        "pick": "VinAudit",
-        "why": "Dados oficiais NMVTIS sobre title e perdas totais por poucos dólares."
-      }
-    },
-    "table": {
-      "title": "Em resumo",
-      "service": "Serviço",
-      "regions": "Cobertura de dados",
-      "usTitles": "Titles e perdas totais dos EUA",
-      "photos": "Fotos do histórico",
-      "price": "Preço do relatório",
-      "note": "«Às vezes» – as fotos aparecem quando o serviço as tem (ex. de anúncios ou leilões anteriores). A cobertura depende do VIN."
-    },
-    "value": {
-      "yes": "sim",
-      "partial": "em parte",
-      "no": "não",
-      "sometimes": "às vezes",
-      "unknown": "sem dados independentes"
-    },
-    "providers": "Os serviços um a um",
-    "visit": "Ir para {{name}}",
-    "pros": "Vantagens",
-    "cons": "Desvantagens",
-    "bestFor": "Para quem:",
-    "p": {
-      "carvertical": {
-        "desc": "Serviço lituano presente em muitos países europeus e nos EUA. Declara mais de 1000 fontes de dados – registos, seguradoras, oficinas, polícia. Para carros dos EUA mostra, entre outras, as menções de title (salvage, rebuilt, junk).",
-        "pros": "• Dados europeus e dos EUA num só relatório.\n• Relatório e apoio em muitas línguas da UE.\n• Fotos do histórico, quando existem.",
-        "cons": "• Mais caro do que os serviços económicos dos EUA.\n• Menos dados dos EUA do que a Carfax ou a AutoCheck.",
-        "best": "compradores na Europa que querem um só relatório para um carro dos EUA ou da UE."
-      },
-      "autodna": {
-        "desc": "Serviço polaco, mais forte na Polónia e na Europa Central e de Leste. A base cobre dezenas de países da Europa e da América do Norte; os relatórios incluem quilometragem, danos e, quando existem, fotos.",
-        "pros": "• Muito bons dados da Polónia e da região.\n• Mais barato do que a carVertical, pacotes de vários relatórios.\n• Verificação prévia gratuita da existência de dados.",
-        "cons": "• Menos dados da Europa Ocidental do que a concorrência.\n• Para carros dos EUA, junte uma fonte norte-americana.",
-        "best": "carros da Polónia e de países vizinhos, e como segunda fonte."
-      },
-      "carfax": {
-        "desc": "O serviço mais conhecido nos EUA. Tem amplo acesso a dados de seguradoras, polícia e oficinas, por isso é o que melhor mostra acidentes e histórico de manutenção.",
-        "pros": "• O histórico de acidentes e manutenção mais completo dos EUA.\n• Reconhecido pelos compradores na revenda.",
-        "cons": "• O relatório individual mais caro.\n• Fraco para carros de fora dos EUA e do Canadá.",
-        "best": "carros dos EUA mais caros em que o histórico de manutenção conta."
-      },
-      "autocheck": {
-        "desc": "Serviço da Experian. Especialmente forte no histórico de leilões – usado por concessionários e leiloeiras. Dá também o AutoCheck Score.",
-        "pros": "• Muito bons dados de leilões dos EUA.\n• Mais barato do que a Carfax.",
-        "cons": "• Menos detalhes de manutenção do que a Carfax.\n• Só carros dos EUA.",
-        "best": "carros dos leilões Copart e IAAI."
-      },
-      "vinaudit": {
-        "desc": "Fornecedor oficialmente aprovado de dados da base governamental NMVTIS. Mostra menções de title, perdas totais, leituras do conta-quilómetros e registos de roubo.",
-        "pros": "• Muito barato, pacotes ainda mais.\n• Dados oficiais NMVTIS sobre title e perdas totais.",
-        "cons": "• Poucos detalhes sobre pequenos acidentes e manutenção.\n• Sem fotos.",
-        "best": "uma primeira verificação rápida de muitos carros antes de licitar."
-      },
-      "automano": {
-        "desc": "Serviço novo de relatórios VIN a preço baixo. Ainda não encontrámos avaliações independentes nem uma descrição detalhada das fontes – trate-o como uma primeira verificação barata.",
-        "pros": "• Preço do relatório baixo.",
-        "cons": "• Poucas avaliações independentes.\n• Fontes de dados não divulgadas.",
-        "best": "uma primeira verificação barata – num carro mais caro, peça também um relatório de um serviço mais conhecido."
-      }
-    },
-    "how": {
-      "title": "Como comparámos",
-      "text": "Analisámos as descrições e preçários dos serviços e comparações independentes de outubro de 2026. Focámo-nos no que mais importa ao importar: de onde vêm os dados, se o relatório mostra titles e perdas totais dos EUA, se inclui fotos do histórico e quanto custa um relatório.\nNão testámos os relatórios com os mesmos VIN – a cobertura depende de cada carro, por isso num carro mais caro vale a pena pedir dois relatórios de serviços diferentes."
-    },
-    "free": {
-      "title": "O que pode verificar grátis",
-      "text": "Antes de pagar um relatório, verifique grátis:\n• NICB VINCheck – se o carro foi dado como roubado ou perda total (EUA).\n• NHTSA Recalls – campanhas de recolha pendentes para o VIN.\n• o histórico MOT em gov.uk – para carros do Reino Unido.\n• arquivos não oficiais dos leilões Copart e IAAI – por vezes mostram fotos e o preço de uma venda anterior; não estão ligados aos leilões e podem desaparecer.\nO nosso descodificador VIN gratuito também lê a marca, o modelo, o ano, o motor e o país de fabrico."
-    },
-    "read": {
-      "title": "Como ler um relatório",
-      "text": "• Compare a quilometragem ao longo dos anos – uma descida indica um conta-quilómetros adulterado.\n• Procure menções de title: salvage, rebuilt, flood, junk.\n• Veja os estados de registo – carros da Florida, do Texas e da Luisiana têm mais vezes danos de inundação.\n• Vários leilões em pouco tempo indicam um carro difícil de vender.\n• Falta de registo não significa falta de dano – o relatório só mostra o que foi comunicado."
-    },
-    "choose": {
-      "title": "Que relatório escolher",
-      "text": "• Carro de um leilão dos EUA (Copart, IAAI): primeiro o NICB grátis e o VinAudit barato; antes de licitar num carro mais caro, AutoCheck ou Carfax.\n• Carro dos EUA, com um só relatório na sua língua: carVertical.\n• Carro da Polónia ou de países vizinhos: autoDNA, com a carVertical como segunda fonte.\n• Carro do Reino Unido: histórico MOT grátis mais um relatório de um serviço europeu.\nNum carro de dezenas de milhares, dois relatórios de serviços diferentes custam uma fração de uma possível perda."
-    },
-    "faq": {
-      "title": "Perguntas frequentes",
-      "q1": "Qual o melhor relatório VIN para um carro dos EUA?",
-      "a1": "Para um carro de um leilão dos EUA, a AutoCheck (histórico de leilões) e a Carfax (acidentes e manutenção) dão mais dados. Para verificar rapidamente o title e as perdas totais basta o VinAudit, mais barato.",
-      "q2": "A carVertical verifica carros dos EUA?",
-      "a2": "Sim – segundo o serviço, o relatório inclui menções de title dos EUA (salvage, rebuilt, junk). A cobertura dos EUA é, no entanto, menor do que a dos serviços norte-americanos.",
-      "q3": "autoDNA ou carVertical – qual é melhor?",
-      "a3": "A autoDNA é mais forte na Polónia e na Europa Central e de Leste e costuma ser mais barata; a carVertical cobre mais a Europa Ocidental e os EUA. Num carro mais caro, verifique ambas.",
-      "q4": "O relatório vai mostrar fotos do leilão da Copart?",
-      "a4": "Às vezes – alguns relatórios incluem fotos de anúncios anteriores quando o serviço as tem. Nenhum o garante. Guarde você mesmo as fotos do leilão atual, porque a página desaparece depois da venda.",
-      "q5": "Um relatório VIN gratuito chega?",
-      "a5": "As bases gratuitas (NICB, NHTSA) mostram roubo, perda total e campanhas de recolha, mas não o histórico completo de acidentes e quilometragem. Para decidir a compra costuma ser preciso um relatório pago.",
-      "q6": "Ganham dinheiro com estes links?",
-      "a6": "Com alguns serviços, sim – esses links estão marcados como links de parceiro. Isso não influencia o que recomendamos: a classificação baseia-se na cobertura de dados, não na comissão."
-    },
-    "disclaimer": "A Carglo não tem ligação aos serviços descritos. Os nomes pertencem aos seus proprietários. Preços e cobertura vêm das descrições dos serviços e de comparações de outubro de 2026 – confirme a oferta atual antes de comprar.",
-    "decoder": "Descodificador VIN gratuito",
-    "mock": {
-      "title": "Relatório de histórico do veículo",
-      "r1": "Primeira matrícula – Florida",
-      "r2": "Leitura do conta-quilómetros: 28 400 milhas",
-      "r3": "Dano: frente, airbags acionados",
-      "r4": "Title alterado para SALVAGE",
-      "r5": "Leilão – 3 fotos antes da reparação",
-      "caption": "Ilustração – é assim que costuma ser um relatório de histórico. A cobertura depende do serviço e do VIN."
-    }
-  },
   "euImport": {
     "eyebrow": "Calculadora de importação UE",
     "title": "Quanto custa trazer um carro da Alemanha ou de outro país da UE",
@@ -2386,5 +2259,14 @@
     "title": "Escolha o idioma",
     "lead": "Mostramos preços, impostos e guias para o país do idioma escolhido. Pode mudá-lo a qualquer momento no topo da página.",
     "suggested": "Sugerido"
+  },
+  "reportMock": {
+    "title": "Relatório de histórico do veículo",
+    "r1": "Primeira matrícula – Florida",
+    "r2": "Leitura do conta-quilómetros: 28 400 milhas",
+    "r3": "Dano: frente, airbags acionados",
+    "r4": "Title alterado para SALVAGE",
+    "r5": "Leilão – 3 fotos antes da reparação",
+    "caption": "Ilustração – é assim que costuma ser um relatório de histórico. A cobertura depende do serviço e do VIN."
   }
 }

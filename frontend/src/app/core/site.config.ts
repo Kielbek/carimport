@@ -16,6 +16,16 @@ export function contactEmail(lang: string): string {
 }
 
 /** Public site identity used for canonical URLs, hreflang, Open Graph and structured data. Change per deployment. */
+export interface VinPartner {
+  name: string;
+  url: string;
+  vinUrl: string | null;
+  coupon: string | null;
+  discount: number | null;
+  logo: string | null;
+  logoDark: string | null;
+}
+
 export const SITE = {
   url: 'https://cargloapp.com',
   name: 'Carglo',
@@ -47,7 +57,17 @@ export const SITE = {
    * Swap the provider here (name + affiliate URL; "{vin}" in the URL is replaced with the car's VIN when known).
    * null hides every partner link. Links carry rel="sponsored" and the page discloses the referral.
    */
-  vinPartner: { name: 'Automano', url: 'https://automano.com/?aff=cargloapp' } as { name: string; url: string } | null,
+  vinPartner: {
+    name: 'carVertical',
+    /** Everflow links from the partner (sub1 = our id); the VIN one opens the partner's VIN landing with "{vin}" filled in. */
+    url: 'https://www.carvertical.deal/47K1NZ8/5L55FG/?source_id=AFF&sub1=carglo',
+    vinUrl: 'https://www.carvertical.deal/47K1NZ8/5L55FG/?uid=34&source_id=AFF&sub1=carglo&sub3=vin&vin={vin}',
+    /** Discount code for our visitors and its value in percent. */
+    coupon: 'carglo',
+    discount: 20,
+    logo: '/images/partners/carvertical.png',
+    logoDark: '/images/partners/carvertical-white.png',
+  } as VinPartner | null,
   /** Last review of tax rules, tariffs and freight rates - shown on the methodology page. */
   ratesReviewed: '2026-10-25',
   /** Date and version of the terms; bump when the text changes (stored with every order). */

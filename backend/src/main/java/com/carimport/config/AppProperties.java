@@ -18,6 +18,10 @@ public record AppProperties(
         Mail mail,
         Company company) {
 
+    public AppProperties {
+        affiliates = affiliates == null ? List.of() : List.copyOf(affiliates);
+    }
+
     public record Stripe(String apiKey, String webhookSecret) {
     }
 

@@ -513,7 +513,6 @@
     "contact": "Kontakt",
     "vin": "VIN-tjek",
     "copart": "Copart – sådan køber du",
-    "vinCompare": "VIN-rapporter sammenlignet",
     "euImport": "Import af bil fra EU"
   },
   "footer": {
@@ -888,10 +887,6 @@
     "copart": {
       "title": "Copart fra Danmark: køb bil fra USA – omkostninger, mægler, 0 % told (2026) | Carglo",
       "description": "Copart findes ikke i Danmark – men du kan byde på auktionerne i USA via en mægler. Gebyrer, salvage-title, fragt på 4–8 uger og samlede omkostninger med told, moms og registreringsafgift. 0 % told for USA-byggede biler fra juli 2026."
-    },
-    "vinCompare": {
-      "title": "VIN-historikrapporter sammenlignet: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Hvilken VIN-rapport skal du vælge til en bil fra USA eller Europa? Dækning, skade- og title-data, billeder og priser: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
       "title": "Import af bil fra Tyskland eller EU – beregner: transport, registreringsafgift, moms | Carglo",
@@ -1960,7 +1955,11 @@
     "title": "Før du byder – tjek bilens historik via VIN",
     "text": "En historikrapport viser blandt andet tidligere skader, kilometertal og tidligere auktioner. Den koster en brøkdel af selv en lille reparation.",
     "button": "Tjek VIN hos {{partner}}",
-    "label": "Partnerlink – Carglo kan få provision. Det påvirker ikke vores beregninger."
+    "label": "Partnerlink – Carglo kan få provision. Det påvirker ikke vores beregninger.",
+    "code": "Rabatkode:",
+    "discount": "−{{pct}} % på {{partner}}-rapporter",
+    "copy": "Kopiér",
+    "copied": "Kopieret"
   },
   "vinPage": {
     "eyebrow": "Værktøj og guide",
@@ -2035,7 +2034,6 @@
       "q6": "Virker dekoderen til biler fra Japan?",
       "a6": "Kun hvis bilen har et 17-cifret VIN. De fleste biler fra det japanske marked har et kortere stelnummer – deres historik tjekkes i auction sheet."
     },
-    "compareLink": "Udbydere af VIN-rapporter sammenlignet – hvilken skal du vælge",
     "anatomy": {
       "country": "land",
       "maker": "producent",
@@ -2177,131 +2175,6 @@
       "registration": "Registrering og andet"
     }
   },
-  "vinCompare": {
-    "eyebrow": "Sammenligning",
-    "title": "VIN-historikrapporter – hvilken tjeneste skal du vælge til en bil fra USA eller Europa",
-    "lead": "Vi har sammenlignet de mest populære tjenester med bilhistorikrapporter: datadækning, amerikanske skade- og title-oplysninger, billeder fra tidligere annoncer og priser. Til sidst – hvordan du vælger rapport til en bestemt bil.",
-    "checked": "Priser og omfang tjekket: {{date}}. Priserne er vejledende og kan ændre sig.",
-    "eu": "EU",
-    "verdict": {
-      "us": {
-        "for": "Bil fra en amerikansk auktion",
-        "pick": "AutoCheck eller Carfax",
-        "why": "De mest omfattende amerikanske data: skader, titles, auktions- og servicehistorik."
-      },
-      "eu": {
-        "for": "Bil købt i Europa",
-        "pick": "carVertical eller autoDNA",
-        "why": "Data fra mange EU-lande, rapport på dit sprog."
-      },
-      "budget": {
-        "for": "Hurtigt og billigt tjek",
-        "pick": "VinAudit",
-        "why": "Officielle NMVTIS-data om title og totalskader for få dollars."
-      }
-    },
-    "table": {
-      "title": "Kort fortalt",
-      "service": "Tjeneste",
-      "regions": "Datadækning",
-      "usTitles": "Amerikanske titles og totalskader",
-      "photos": "Billeder fra historikken",
-      "price": "Rapportpris",
-      "note": "„Nogle gange“ – billeder vises, når tjenesten har dem (f.eks. fra tidligere annoncer eller auktioner). Omfanget afhænger af det konkrete VIN."
-    },
-    "value": {
-      "yes": "ja",
-      "partial": "delvist",
-      "no": "nej",
-      "sometimes": "nogle gange",
-      "unknown": "ingen uafhængige data"
-    },
-    "providers": "Tjenesterne én for én",
-    "visit": "Gå til {{name}}",
-    "pros": "Fordele",
-    "cons": "Ulemper",
-    "bestFor": "Passer til:",
-    "p": {
-      "carvertical": {
-        "desc": "Litauisk tjeneste, der er aktiv i mange europæiske lande og i USA. Angiver over 1.000 datakilder – registre, forsikringsselskaber, værksteder, politi. For biler fra USA viser den bl.a. title-mærkninger (salvage, rebuilt, junk).",
-        "pros": "• Europæiske og amerikanske data i én rapport.\n• Rapport og support på mange EU-sprog.\n• Billeder fra historikken, når de findes.",
-        "cons": "• Dyrere end amerikanske budgettjenester.\n• Færre amerikanske data end Carfax eller AutoCheck.",
-        "best": "købere i Europa, der vil have én rapport til en bil fra USA eller EU."
-      },
-      "autodna": {
-        "desc": "Polsk tjeneste, stærkest i Polen og Central- og Østeuropa. Databasen dækker snesevis af lande i Europa og Nordamerika; rapporterne indeholder bl.a. kilometertal, skader og – når de findes – billeder.",
-        "pros": "• Meget gode data fra Polen og regionen.\n• Billigere end carVertical, pakker med flere rapporter.\n• Gratis forhåndstjek af, om der findes data.",
-        "cons": "• Færre data fra Vesteuropa end konkurrenterne.\n• For amerikanske biler, tilføj en amerikansk kilde.",
-        "best": "biler fra Polen og nabolandene og som anden kilde."
-      },
-      "carfax": {
-        "desc": "Den mest kendte tjeneste i USA. Har bred adgang til data fra forsikringsselskaber, politi og værksteder og viser derfor uheld og servicehistorik bedst.",
-        "pros": "• Den mest omfattende amerikanske uheld- og servicehistorik.\n• Kendt af købere ved videresalg.",
-        "cons": "• Den dyreste enkeltrapport.\n• Svag for biler uden for USA og Canada.",
-        "best": "dyrere amerikanske biler, hvor servicehistorikken betyder noget."
-      },
-      "autocheck": {
-        "desc": "Tjeneste ejet af Experian. Særligt stærk på auktionshistorik – bruges af forhandlere og auktionshuse. Giver også en AutoCheck Score.",
-        "pros": "• Meget gode data om amerikanske auktioner.\n• Billigere end Carfax.",
-        "cons": "• Færre servicedetaljer end Carfax.\n• Kun amerikanske biler.",
-        "best": "biler fra auktionerne Copart og IAAI."
-      },
-      "vinaudit": {
-        "desc": "Officielt godkendt dataudbyder fra den statslige database NMVTIS. Viser title-mærkninger, totalskader, kilometeraflæsninger og tyveriregistreringer.",
-        "pros": "• Meget billig, pakker endnu billigere.\n• Officielle NMVTIS-data om title og totalskader.",
-        "cons": "• Få detaljer om mindre uheld og service.\n• Ingen billeder.",
-        "best": "et hurtigt første tjek af mange biler, før du byder."
-      },
-      "automano": {
-        "desc": "Ny tjeneste med billige VIN-rapporter. Vi har endnu ikke fundet uafhængige anmeldelser eller en detaljeret beskrivelse af datakilderne – se den som et billigt første tjek.",
-        "pros": "• Lav rapportpris.",
-        "cons": "• Få uafhængige anmeldelser.\n• Oplyser ikke sine datakilder.",
-        "best": "et billigt første tjek – for en dyrere bil bør du også bestille en rapport fra en mere kendt tjeneste."
-      }
-    },
-    "how": {
-      "title": "Sådan sammenlignede vi",
-      "text": "Vi gennemgik tjenesternes beskrivelser og prislister samt uafhængige sammenligninger fra oktober 2026. Vi fokuserede på det, der betyder mest ved import: hvor data kommer fra, om rapporten viser amerikanske titles og totalskader, om den indeholder billeder fra historikken, og hvad én rapport koster.\nVi testede ikke rapporterne med de samme VIN – omfanget afhænger af den enkelte bil, så for en dyrere bil kan det betale sig at bestille to rapporter fra forskellige tjenester."
-    },
-    "free": {
-      "title": "Det kan du tjekke gratis",
-      "text": "Før du betaler for en rapport, så tjek gratis:\n• NICB VINCheck – om bilen er meldt stjålet eller totalskadet (USA).\n• NHTSA Recalls – åbne tilbagekaldelser for VIN.\n• MOT-historik på gov.uk – for biler fra Storbritannien.\n• uofficielle arkiver over Copart- og IAAI-auktioner – viser nogle gange billeder og pris fra et tidligere salg; de har ingen tilknytning til auktionerne og kan forsvinde.\nVores gratis VIN-dekoder læser også mærke, model, årgang, motor og produktionsland."
-    },
-    "read": {
-      "title": "Sådan læser du en rapport",
-      "text": "• Sammenlign kilometertallene over årene – et fald betyder en tilbagerullet tæller.\n• Kig efter title-mærkninger: salvage, rebuilt, flood, junk.\n• Læg mærke til registreringsstaterne – biler fra Florida, Texas og Louisiana har oftere oversvømmelsesskader.\n• Flere auktioner på kort tid tyder på, at bilen var svær at sælge.\n• Ingen registrering betyder ikke ingen skade – en rapport viser kun det, der er anmeldt."
-    },
-    "choose": {
-      "title": "Hvilken rapport skal du vælge",
-      "text": "• Bil fra en amerikansk auktion (Copart, IAAI): først gratis NICB og billige VinAudit, og før du byder på en dyrere bil, AutoCheck eller Carfax.\n• Bil fra USA, når du vil have én rapport på dit sprog: carVertical.\n• Bil fra Polen eller nabolandene: autoDNA, med carVertical som anden kilde.\n• Bil fra Storbritannien: gratis MOT-historik plus en rapport fra en europæisk tjeneste.\nFor en bil til flere hundrede tusinde kroner koster to rapporter fra forskellige tjenester en brøkdel af et muligt tab."
-    },
-    "faq": {
-      "title": "Ofte stillede spørgsmål",
-      "q1": "Hvilken VIN-rapport er bedst til en bil fra USA?",
-      "a1": "For en bil fra en amerikansk auktion giver AutoCheck (auktionshistorik) og Carfax (uheld og service) flest data. Til et hurtigt tjek af title og totalskader er den billigere VinAudit nok.",
-      "q2": "Tjekker carVertical biler fra USA?",
-      "a2": "Ja – ifølge tjenesten indeholder rapporten bl.a. amerikanske title-mærkninger (salvage, rebuilt, junk). Dækningen af USA er dog mindre end hos amerikanske tjenester.",
-      "q3": "autoDNA eller carVertical – hvad er bedst?",
-      "a3": "autoDNA er stærkere i Polen og Central- og Østeuropa og som regel billigere; carVertical har bredere dækning i Vesteuropa og USA. For en dyrere bil kan det betale sig at tjekke begge.",
-      "q4": "Viser rapporten billeder fra Copart-auktionen?",
-      "a4": "Nogle gange – visse rapporter indeholder billeder fra tidligere annoncer, når tjenesten har dem. Ingen garanterer det. Gem selv billederne fra den aktuelle auktion, da siden forsvinder efter salget.",
-      "q5": "Er en gratis VIN-rapport nok?",
-      "a5": "Gratis databaser (NICB, NHTSA) viser tyveri, totalskade og tilbagekaldelser, men ikke hele uheld- og kilometerhistorikken. Til en købsbeslutning skal man som regel bruge en betalt rapport.",
-      "q6": "Tjener I penge på disse links?",
-      "a6": "For nogle tjenester ja – sådanne links er markeret som partnerlinks. Det påvirker ikke vores anbefalinger: rækkefølgen bygger på datadækning, ikke provision."
-    },
-    "disclaimer": "Carglo har ingen tilknytning til de beskrevne tjenester. Navnene tilhører deres ejere. Priser og omfang stammer fra tjenesternes beskrivelser og sammenligninger fra oktober 2026 – tjek det aktuelle tilbud før køb.",
-    "decoder": "Gratis VIN-dekoder",
-    "mock": {
-      "title": "Bilhistorikrapport",
-      "r1": "Første registrering – Florida",
-      "r2": "Kilometeraflæsning: 28.400 miles",
-      "r3": "Skade: front, airbags udløst",
-      "r4": "Title ændret til SALVAGE",
-      "r5": "Auktion – 3 billeder før reparation",
-      "caption": "Illustration – sådan ser en historikrapport typisk ud. Omfanget afhænger af tjenesten og VIN."
-    }
-  },
   "euImport": {
     "eyebrow": "Beregner til import fra EU",
     "title": "Hvad koster det at importere en bil fra Tyskland eller et andet EU-land",
@@ -2386,5 +2259,14 @@
     "title": "Vælg sprog",
     "lead": "Vi viser priser, afgifter og guider for landet til det valgte sprog. Du kan altid skifte sprog øverst på siden.",
     "suggested": "Foreslået"
+  },
+  "reportMock": {
+    "title": "Bilhistorikrapport",
+    "r1": "Første registrering – Florida",
+    "r2": "Kilometeraflæsning: 28.400 miles",
+    "r3": "Skade: front, airbags udløst",
+    "r4": "Title ændret til SALVAGE",
+    "r5": "Auktion – 3 billeder før reparation",
+    "caption": "Illustration – sådan ser en historikrapport typisk ud. Omfanget afhænger af tjenesten og VIN."
   }
 }

@@ -513,7 +513,6 @@
     "contact": "Kontakt",
     "vin": "Kontrola VIN",
     "copart": "Copart – jak nakoupit",
-    "vinCompare": "Srovnání VIN reportů",
     "euImport": "Dovoz auta z EU"
   },
   "footer": {
@@ -888,10 +887,6 @@
     "copart": {
       "title": "Copart z Česka: koupě auta z USA – náklady, broker, clo 0 % (2026) | Carglo",
       "description": "Copart v Česku nepůsobí – přihazujete na aukcích v USA přes brokera. Poplatky, salvage title, doprava za 4–8 týdnů a celkové náklady s clem a DPH. Auta z USA mohou mít od července 2026 clo 0 %."
-    },
-    "vinCompare": {
-      "title": "Srovnání reportů historie VIN: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Jaký VIN report zvolit pro auto z USA nebo z Evropy? Srovnání pokrytí, údajů o škodách a title, fotek a cen: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
       "title": "Dovoz auta z Německa a EU – kalkulačka nákladů: doprava, registrace, poplatky | Carglo",
@@ -1960,7 +1955,11 @@
     "title": "Než přihodíte – ověřte historii auta podle VIN",
     "text": "Report historie ukáže mimo jiné dřívější škody, najeté kilometry a předchozí aukce. Stojí zlomek i drobné opravy.",
     "button": "Ověřit VIN u {{partner}}",
-    "label": "Partnerský odkaz – Carglo může získat provizi. Na naše výpočty to nemá vliv."
+    "label": "Partnerský odkaz – Carglo může získat provizi. Na naše výpočty to nemá vliv.",
+    "code": "Slevový kód:",
+    "discount": "−{{pct}} % na reporty {{partner}}",
+    "copy": "Kopírovat",
+    "copied": "Zkopírováno"
   },
   "vinPage": {
     "eyebrow": "Nástroj a průvodce",
@@ -2035,7 +2034,6 @@
       "q6": "Funguje dekodér pro auta z Japonska?",
       "a6": "Jen pokud má auto 17místný VIN. Většina aut z japonského trhu má kratší číslo podvozku – jejich historie se ověřuje v auction sheetu."
     },
-    "compareLink": "Srovnání služeb s VIN reporty – kterou zvolit",
     "anatomy": {
       "country": "země",
       "maker": "výrobce",
@@ -2177,131 +2175,6 @@
       "registration": "Registrace a ostatní"
     }
   },
-  "vinCompare": {
-    "eyebrow": "Srovnání",
-    "title": "Reporty historie VIN – kterou službu zvolit pro auto z USA a z Evropy",
-    "lead": "Srovnali jsme nejoblíbenější služby s reporty historie vozidel: pokrytí dat, údaje o škodách a title z USA, fotky z dřívějších inzerátů a ceny. Na konci – jak vybrat report pro konkrétní auto.",
-    "checked": "Ceny a rozsah ověřeny: {{date}}. Ceny jsou orientační a mohou se měnit.",
-    "eu": "EU",
-    "verdict": {
-      "us": {
-        "for": "Auto z aukce v USA",
-        "pick": "AutoCheck nebo Carfax",
-        "why": "Nejhlubší data z USA: škody, title, historie aukcí a servisu."
-      },
-      "eu": {
-        "for": "Auto kupované v Evropě",
-        "pick": "carVertical nebo autoDNA",
-        "why": "Data z mnoha zemí EU, report ve vašem jazyce."
-      },
-      "budget": {
-        "for": "Rychlá a levná kontrola",
-        "pick": "VinAudit",
-        "why": "Oficiální data NMVTIS o title a totálních škodách za pár dolarů."
-      }
-    },
-    "table": {
-      "title": "Srovnání ve zkratce",
-      "service": "Služba",
-      "regions": "Pokrytí dat",
-      "usTitles": "Title a totální škody z USA",
-      "photos": "Fotky z historie",
-      "price": "Cena reportu",
-      "note": "„Někdy“ – fotky se objeví, pokud je služba má (např. z dřívějších inzerátů nebo aukcí). Rozsah dat závisí na konkrétním VIN."
-    },
-    "value": {
-      "yes": "ano",
-      "partial": "částečně",
-      "no": "ne",
-      "sometimes": "někdy",
-      "unknown": "chybí nezávislá data"
-    },
-    "providers": "Služby jedna po druhé",
-    "visit": "Přejít na {{name}}",
-    "pros": "Plusy",
-    "cons": "Minusy",
-    "bestFor": "Pro koho:",
-    "p": {
-      "carvertical": {
-        "desc": "Litevská služba působící v mnoha zemích Evropy a v USA. Uvádí přes 1000 zdrojů dat – registry, pojišťovny, servisy, policie. U aut z USA ukazuje mimo jiné označení title (salvage, rebuilt, junk).",
-        "pros": "• Data z Evropy i z USA v jednom reportu.\n• Report a podpora v mnoha jazycích EU.\n• Fotky z historie, pokud jsou k dispozici.",
-        "cons": "• Dražší než americké levné služby.\n• Méně dat z USA než Carfax nebo AutoCheck.",
-        "best": "kupce v Evropě, kteří chtějí jeden report pro auto z USA nebo z EU."
-      },
-      "autodna": {
-        "desc": "Polská služba, nejsilnější v Polsku a ve střední a východní Evropě. Databáze pokrývá desítky zemí Evropy a Severní Ameriky; reporty obsahují mimo jiné kilometry, škody a – pokud jsou – fotky.",
-        "pros": "• Velmi dobrá data z Polska a regionu.\n• Levnější než carVertical, balíčky více reportů.\n• Bezplatná předběžná kontrola, zda data existují.",
-        "cons": "• Méně dat ze západní Evropy než konkurence.\n• U aut z USA přidejte i americký zdroj.",
-        "best": "auta z Polska a sousedních zemí a jako druhý zdroj."
-      },
-      "carfax": {
-        "desc": "Nejznámější služba v USA. Má široký přístup k datům pojišťoven, policie a servisů, takže nejlépe ukazuje nehody a servisní historii.",
-        "pros": "• Nejhlubší historie nehod a servisu v USA.\n• Kupci ji znají při dalším prodeji.",
-        "cons": "• Nejdražší jednotlivý report.\n• Slabá u aut mimo USA a Kanadu.",
-        "best": "dražší auta z USA, kde záleží na servisní historii."
-      },
-      "autocheck": {
-        "desc": "Služba společnosti Experian. Zvlášť silná v historii aukcí – používají ji dealeři i aukční domy. Nabízí také hodnocení AutoCheck Score.",
-        "pros": "• Velmi dobrá data o aukcích v USA.\n• Levnější než Carfax.",
-        "cons": "• Méně servisních detailů než Carfax.\n• Jen auta z USA.",
-        "best": "auta z aukcí Copart a IAAI."
-      },
-      "vinaudit": {
-        "desc": "Oficiálně schválený poskytovatel dat z vládní databáze NMVTIS. Ukazuje označení title, totální škody, stavy tachometru a záznamy o krádežích.",
-        "pros": "• Velmi levný, balíčky ještě levnější.\n• Oficiální data NMVTIS o title a totálních škodách.",
-        "cons": "• Málo detailů o drobných nehodách a servisu.\n• Bez fotek.",
-        "best": "rychlou první kontrolu mnoha aut před aukcí."
-      },
-      "automano": {
-        "desc": "Nová služba s levnými VIN reporty. Zatím jsme nenašli nezávislé recenze ani podrobný popis zdrojů dat – berte ji jako levnou první kontrolu.",
-        "pros": "• Nízká cena reportu.",
-        "cons": "• Málo nezávislých recenzí.\n• Nezveřejňuje zdroje dat.",
-        "best": "levnou první kontrolu – u dražšího auta objednejte i report od známější služby."
-      }
-    },
-    "how": {
-      "title": "Jak jsme srovnávali",
-      "text": "Prošli jsme popisy služeb, ceníky a nezávislá srovnání z října 2026. Zaměřili jsme se na to, co je při dovozu nejdůležitější: odkud data pocházejí, zda report ukazuje title a totální škody z USA, zda obsahuje fotky z historie a kolik stojí jeden report.\nReporty jsme netestovali na stejných VIN – rozsah dat závisí na konkrétním autě, proto se u dražšího auta vyplatí objednat dva reporty od různých služeb."
-    },
-    "free": {
-      "title": "Co ověříte zdarma",
-      "text": "Než zaplatíte za report, ověřte zdarma:\n• NICB VINCheck – zda bylo auto nahlášeno jako kradené nebo totální škoda (USA).\n• NHTSA Recalls – nevyřízené svolávací akce pro VIN.\n• historii MOT na gov.uk – u aut z Velké Británie.\n• neoficiální archivy aukcí Copart a IAAI – někdy ukazují fotky a cenu z dřívějšího prodeje; nejsou s aukcemi spojené a mohou zmizet.\nNáš bezplatný dekodér VIN přečte také značku, model, ročník, motor a zemi výroby."
-    },
-    "read": {
-      "title": "Jak číst report",
-      "text": "• Porovnejte stavy kilometrů v jednotlivých letech – pokles znamená stočený tachometr.\n• Hledejte označení title: salvage, rebuilt, flood, junk.\n• Všímejte si států registrace – auta z Floridy, Texasu a Louisiany mají častěji škody po povodních.\n• Několik aukcí v krátké době naznačuje, že se auto špatně prodávalo.\n• Chybějící záznam neznamená, že škoda nebyla – report ukazuje jen to, co bylo nahlášeno."
-    },
-    "choose": {
-      "title": "Jaký report zvolit",
-      "text": "• Auto z aukce v USA (Copart, IAAI): nejdřív bezplatný NICB a levný VinAudit, před dražbou dražšího auta AutoCheck nebo Carfax.\n• Auto z USA, když chcete jeden report ve svém jazyce: carVertical.\n• Auto z Polska nebo sousedních zemí: autoDNA, jako druhý zdroj carVertical.\n• Auto z Velké Británie: bezplatná historie MOT plus report od evropské služby.\nU auta za statisíce stojí dva reporty od různých služeb zlomek možné ztráty."
-    },
-    "faq": {
-      "title": "Časté otázky",
-      "q1": "Který VIN report je nejlepší pro auto z USA?",
-      "a1": "U auta z americké aukce dají nejvíc dat AutoCheck (historie aukcí) a Carfax (nehody a servis). Pro rychlou kontrolu title a totálních škod stačí levnější VinAudit.",
-      "q2": "Prověřuje carVertical auta z USA?",
-      "a2": "Ano – podle služby report obsahuje mimo jiné americká označení title (salvage, rebuilt, junk). Pokrytí USA je ale menší než u amerických služeb.",
-      "q3": "autoDNA, nebo carVertical – co je lepší?",
-      "a3": "autoDNA je silnější v Polsku a ve střední a východní Evropě a bývá levnější, carVertical má širší pokrytí západní Evropy a USA. U dražšího auta se vyplatí ověřit oba.",
-      "q4": "Ukáže report fotky z aukce Copart?",
-      "a4": "Někdy – některé reporty obsahují fotky z dřívějších inzerátů, pokud je služba má. Jistotu nedá žádná. Fotky aktuální aukce si uložte sami, protože po prodeji stránka zmizí.",
-      "q5": "Stačí bezplatný VIN report?",
-      "a5": "Bezplatné databáze (NICB, NHTSA) ukážou krádež, totální škodu a svolávací akce, ale ne úplnou historii nehod a kilometrů. K rozhodnutí o koupi je obvykle potřeba placený report.",
-      "q6": "Vyděláváte na těchto odkazech?",
-      "a6": "U některých služeb ano – takové odkazy jsou označené jako partnerské. Na naše doporučení to vliv nemá: pořadí vychází z rozsahu dat, ne z provize."
-    },
-    "disclaimer": "Carglo není spojeno s popsanými službami. Názvy patří jejich vlastníkům. Ceny a rozsah dat pocházejí z popisů služeb a srovnání z října 2026 – před nákupem si ověřte aktuální nabídku.",
-    "decoder": "Bezplatný dekodér VIN",
-    "mock": {
-      "title": "Report historie vozidla",
-      "r1": "První registrace – Florida",
-      "r2": "Stav tachometru: 28 400 mil",
-      "r3": "Škoda: příď, aktivované airbagy",
-      "r4": "Title změněn na SALVAGE",
-      "r5": "Aukce – 3 fotky před opravou",
-      "caption": "Ilustrace – takto obvykle vypadá report historie. Rozsah dat závisí na službě a na VIN."
-    }
-  },
   "euImport": {
     "eyebrow": "Kalkulačka dovozu z EU",
     "title": "Kolik stojí dovoz auta z Německa nebo jiné země EU",
@@ -2386,5 +2259,14 @@
     "title": "Vyberte jazyk",
     "lead": "Ceny, daně a průvodce zobrazíme pro zemi zvoleného jazyka. Jazyk můžete kdykoli změnit v horní části stránky.",
     "suggested": "Doporučeno"
+  },
+  "reportMock": {
+    "title": "Report historie vozidla",
+    "r1": "První registrace – Florida",
+    "r2": "Stav tachometru: 28 400 mil",
+    "r3": "Škoda: příď, aktivované airbagy",
+    "r4": "Title změněn na SALVAGE",
+    "r5": "Aukce – 3 fotky před opravou",
+    "caption": "Ilustrace – takto obvykle vypadá report historie. Rozsah dat závisí na službě a na VIN."
   }
 }

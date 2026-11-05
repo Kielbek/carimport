@@ -513,7 +513,6 @@
     "contact": "Contact",
     "vin": "VIN-check",
     "copart": "Copart – zo koop je",
-    "vinCompare": "VIN-rapporten vergeleken",
     "euImport": "Auto importeren uit de EU"
   },
   "footer": {
@@ -888,10 +887,6 @@
     "copart": {
       "title": "Copart vanuit Nederland: auto uit de VS kopen – kosten, broker, 0% invoerrecht (2026) | Carglo",
       "description": "Copart heeft geen vestiging in Nederland – maar je biedt op de veilingen in de VS via een broker. Kosten, salvage-title, verscheping in 4–8 weken en totale kosten met invoerrecht, btw en bpm. Amerikaanse auto’s vanaf juli 2026 met 0% invoerrecht."
-    },
-    "vinCompare": {
-      "title": "VIN-historierapporten vergeleken: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Welk VIN-rapport voor een auto uit de VS of Europa? Dekking, schade- en titlegegevens, foto’s en prijzen vergeleken: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
       "title": "Auto importeren uit Duitsland of de EU – kosten berekenen: transport, bpm, registratie | Carglo",
@@ -1960,7 +1955,11 @@
     "title": "Voordat je biedt – controleer de historie via het VIN",
     "text": "Een historierapport toont onder meer eerdere schade, kilometerstanden en eerdere veilingen. Het kost een fractie van zelfs een kleine reparatie.",
     "button": "Controleer het VIN bij {{partner}}",
-    "label": "Partnerlink – Carglo kan een commissie ontvangen. Dit heeft geen invloed op onze berekeningen."
+    "label": "Partnerlink – Carglo kan een commissie ontvangen. Dit heeft geen invloed op onze berekeningen.",
+    "code": "Kortingscode:",
+    "discount": "−{{pct}}% op {{partner}}-rapporten",
+    "copy": "Kopiëren",
+    "copied": "Gekopieerd"
   },
   "vinPage": {
     "eyebrow": "Tool en gids",
@@ -2035,7 +2034,6 @@
       "q6": "Werkt de decoder voor auto’s uit Japan?",
       "a6": "Alleen als de auto een VIN van 17 tekens heeft. De meeste auto’s van de Japanse markt hebben een korter chassisnummer – hun historie controleer je op het auction sheet."
     },
-    "compareLink": "Aanbieders van VIN-rapporten vergeleken – welke kies je",
     "anatomy": {
       "country": "land",
       "maker": "fabrikant",
@@ -2177,131 +2175,6 @@
       "registration": "Registratie en overig"
     }
   },
-  "vinCompare": {
-    "eyebrow": "Vergelijking",
-    "title": "VIN-historierapporten – welke dienst kies je voor een auto uit de VS of Europa",
-    "lead": "We vergeleken de populairste aanbieders van voertuighistorierapporten: datadekking, Amerikaanse schade- en titlegegevens, foto’s uit eerdere advertenties en prijzen. Aan het eind – hoe je het rapport voor een specifieke auto kiest.",
-    "checked": "Prijzen en dekking gecontroleerd: {{date}}. Prijzen zijn indicatief en kunnen veranderen.",
-    "eu": "EU",
-    "verdict": {
-      "us": {
-        "for": "Auto van een Amerikaanse veiling",
-        "pick": "AutoCheck of Carfax",
-        "why": "De meest uitgebreide Amerikaanse data: schade, titles, veiling- en onderhoudshistorie."
-      },
-      "eu": {
-        "for": "Auto gekocht in Europa",
-        "pick": "carVertical of autoDNA",
-        "why": "Data uit veel EU-landen, rapport in jouw taal."
-      },
-      "budget": {
-        "for": "Snelle, goedkope check",
-        "pick": "VinAudit",
-        "why": "Officiële NMVTIS-data over title en total loss voor een paar dollar."
-      }
-    },
-    "table": {
-      "title": "In één oogopslag",
-      "service": "Dienst",
-      "regions": "Datadekking",
-      "usTitles": "Amerikaanse titles en total loss",
-      "photos": "Foto’s uit de historie",
-      "price": "Prijs per rapport",
-      "note": "„Soms” – foto’s verschijnen als de dienst ze heeft (bijv. uit eerdere advertenties of veilingen). De dekking hangt af van het specifieke VIN."
-    },
-    "value": {
-      "yes": "ja",
-      "partial": "deels",
-      "no": "nee",
-      "sometimes": "soms",
-      "unknown": "geen onafhankelijke gegevens"
-    },
-    "providers": "De diensten een voor een",
-    "visit": "Naar {{name}}",
-    "pros": "Pluspunten",
-    "cons": "Minpunten",
-    "bestFor": "Voor wie:",
-    "p": {
-      "carvertical": {
-        "desc": "Litouwse dienst, actief in veel Europese landen en in de VS. Claimt meer dan 1000 databronnen – registers, verzekeraars, garages, politie. Bij Amerikaanse auto’s toont hij o.a. titlevermeldingen (salvage, rebuilt, junk).",
-        "pros": "• Europese en Amerikaanse data in één rapport.\n• Rapport en support in veel EU-talen.\n• Foto’s uit de historie, als die er zijn.",
-        "cons": "• Duurder dan Amerikaanse budgetdiensten.\n• Minder Amerikaanse data dan Carfax of AutoCheck.",
-        "best": "kopers in Europa die één rapport willen voor een auto uit de VS of de EU."
-      },
-      "autodna": {
-        "desc": "Poolse dienst, het sterkst in Polen en Centraal- en Oost-Europa. De database dekt tientallen landen in Europa en Noord-Amerika; rapporten bevatten o.a. kilometerstanden, schade en – als die er zijn – foto’s.",
-        "pros": "• Zeer goede data uit Polen en de regio.\n• Goedkoper dan carVertical, bundels van meerdere rapporten.\n• Gratis voorcontrole of er data is.",
-        "cons": "• Minder data uit West-Europa dan de concurrentie.\n• Voor Amerikaanse auto’s ook een Amerikaanse bron gebruiken.",
-        "best": "auto’s uit Polen en buurlanden, en als tweede bron."
-      },
-      "carfax": {
-        "desc": "De bekendste dienst in de VS. Heeft brede toegang tot gegevens van verzekeraars, politie en garages, en toont daardoor ongelukken en onderhoudshistorie het best.",
-        "pros": "• De uitgebreidste Amerikaanse ongeval- en onderhoudshistorie.\n• Erkend door kopers bij doorverkoop.",
-        "cons": "• Het duurste losse rapport.\n• Zwak voor auto’s van buiten de VS en Canada.",
-        "best": "duurdere Amerikaanse auto’s waarbij de onderhoudshistorie telt."
-      },
-      "autocheck": {
-        "desc": "Dienst van Experian. Bijzonder sterk in veilinghistorie – gebruikt door dealers en veilinghuizen. Geeft ook een AutoCheck Score.",
-        "pros": "• Zeer goede data over Amerikaanse veilingen.\n• Goedkoper dan Carfax.",
-        "cons": "• Minder onderhoudsdetails dan Carfax.\n• Alleen Amerikaanse auto’s.",
-        "best": "auto’s van de veilingen Copart en IAAI."
-      },
-      "vinaudit": {
-        "desc": "Officieel erkende dataleverancier van de overheidsdatabase NMVTIS. Toont titlevermeldingen, total loss, kilometerstanden en diefstalregistraties.",
-        "pros": "• Zeer goedkoop, bundels nog goedkoper.\n• Officiële NMVTIS-data over title en total loss.",
-        "cons": "• Weinig details over kleinere ongelukken en onderhoud.\n• Geen foto’s.",
-        "best": "een snelle eerste check van veel auto’s vóór het bieden."
-      },
-      "automano": {
-        "desc": "Nieuwe, goedkope dienst voor VIN-rapporten. We vonden nog geen onafhankelijke reviews of een gedetailleerde beschrijving van de databronnen – zie hem als een goedkope eerste check.",
-        "pros": "• Lage prijs per rapport.",
-        "cons": "• Weinig onafhankelijke reviews.\n• Databronnen niet bekendgemaakt.",
-        "best": "een goedkope eerste check – bestel bij een duurdere auto ook een rapport van een bekendere dienst."
-      }
-    },
-    "how": {
-      "title": "Hoe we vergeleken",
-      "text": "We bekeken de dienstomschrijvingen en prijslijsten en onafhankelijke vergelijkingen van oktober 2026. We letten op wat bij import het belangrijkst is: waar de data vandaan komt, of het rapport Amerikaanse titles en total loss toont, of het foto’s uit de historie bevat en wat één rapport kost.\nWe testten de rapporten niet met dezelfde VIN’s – de dekking hangt af van de specifieke auto, dus bij een duurdere auto loont het om twee rapporten van verschillende diensten te bestellen."
-    },
-    "free": {
-      "title": "Wat je gratis kunt controleren",
-      "text": "Controleer gratis voordat je voor een rapport betaalt:\n• NICB VINCheck – of de auto als gestolen of total loss is gemeld (VS).\n• NHTSA Recalls – openstaande terugroepacties voor het VIN.\n• MOT-historie op gov.uk – voor auto’s uit het VK.\n• onofficiële archieven van Copart- en IAAI-veilingen – tonen soms foto’s en de prijs van een eerdere verkoop; ze zijn niet verbonden aan de veilingen en kunnen verdwijnen.\nOnze gratis VIN-decoder leest ook merk, model, bouwjaar, motor en land van productie uit."
-    },
-    "read": {
-      "title": "Zo lees je een rapport",
-      "text": "• Vergelijk de kilometerstanden over de jaren – een daling betekent een teruggedraaide teller.\n• Let op titlevermeldingen: salvage, rebuilt, flood, junk.\n• Kijk naar de registratiestaten – auto’s uit Florida, Texas en Louisiana hebben vaker overstromingsschade.\n• Meerdere veilingen in korte tijd wijzen erop dat de auto moeilijk te verkopen was.\n• Geen vermelding betekent niet geen schade – een rapport toont alleen wat is gemeld."
-    },
-    "choose": {
-      "title": "Welk rapport kies je",
-      "text": "• Auto van een Amerikaanse veiling (Copart, IAAI): eerst de gratis NICB en de goedkope VinAudit, en vóór het bieden op een duurdere auto AutoCheck of Carfax.\n• Auto uit de VS als je één rapport in jouw taal wilt: carVertical.\n• Auto uit Polen of buurlanden: autoDNA, met carVertical als tweede bron.\n• Auto uit het VK: gratis MOT-historie plus een rapport van een Europese dienst.\nBij een auto van tienduizenden euro’s kosten twee rapporten van verschillende diensten een fractie van een mogelijk verlies."
-    },
-    "faq": {
-      "title": "Veelgestelde vragen",
-      "q1": "Welk VIN-rapport is het best voor een auto uit de VS?",
-      "a1": "Voor een auto van een Amerikaanse veiling geven AutoCheck (veilinghistorie) en Carfax (ongelukken en onderhoud) de meeste data. Voor een snelle check van title en total loss volstaat het goedkopere VinAudit.",
-      "q2": "Controleert carVertical auto’s uit de VS?",
-      "a2": "Ja – volgens de dienst bevat het rapport o.a. Amerikaanse titlevermeldingen (salvage, rebuilt, junk). De Amerikaanse dekking is wel kleiner dan bij Amerikaanse diensten.",
-      "q3": "autoDNA of carVertical – wat is beter?",
-      "a3": "autoDNA is sterker in Polen en Centraal- en Oost-Europa en meestal goedkoper; carVertical heeft een bredere dekking in West-Europa en de VS. Bij een duurdere auto loont het om beide te controleren.",
-      "q4": "Toont een rapport foto’s van de Copart-veiling?",
-      "a4": "Soms – sommige rapporten bevatten foto’s uit eerdere advertenties als de dienst ze heeft. Geen enkele dienst garandeert het. Sla de foto’s van de huidige veiling zelf op, want de pagina verdwijnt na de verkoop.",
-      "q5": "Is een gratis VIN-rapport genoeg?",
-      "a5": "Gratis databases (NICB, NHTSA) tonen diefstal, total loss en terugroepacties, maar niet de volledige ongeval- en kilometerhistorie. Voor een aankoopbeslissing is meestal een betaald rapport nodig.",
-      "q6": "Verdienen jullie aan deze links?",
-      "a6": "Bij sommige diensten wel – zulke links zijn gemarkeerd als partnerlinks. Dat beïnvloedt onze aanbevelingen niet: de rangschikking is gebaseerd op datadekking, niet op commissie."
-    },
-    "disclaimer": "Carglo is niet verbonden aan de beschreven diensten. De namen zijn van hun eigenaren. Prijzen en dekking komen uit de beschrijvingen van de diensten en vergelijkingen van oktober 2026 – controleer vóór aankoop het actuele aanbod.",
-    "decoder": "Gratis VIN-decoder",
-    "mock": {
-      "title": "Voertuighistorierapport",
-      "r1": "Eerste registratie – Florida",
-      "r2": "Kilometerstand: 28.400 mijl",
-      "r3": "Schade: voorkant, airbags afgegaan",
-      "r4": "Title gewijzigd in SALVAGE",
-      "r5": "Veiling – 3 foto’s vóór reparatie",
-      "caption": "Illustratie – zo ziet een historierapport er meestal uit. De dekking hangt af van de dienst en het VIN."
-    }
-  },
   "euImport": {
     "eyebrow": "Calculator auto-import uit de EU",
     "title": "Wat kost een auto importeren uit Duitsland of een ander EU-land",
@@ -2386,5 +2259,14 @@
     "title": "Kies je taal",
     "lead": "We tonen prijzen, belastingen en gidsen voor het land van de gekozen taal. Je kunt de taal altijd bovenaan de pagina wijzigen.",
     "suggested": "Voorgesteld"
+  },
+  "reportMock": {
+    "title": "Voertuighistorierapport",
+    "r1": "Eerste registratie – Florida",
+    "r2": "Kilometerstand: 28.400 mijl",
+    "r3": "Schade: voorkant, airbags afgegaan",
+    "r4": "Title gewijzigd in SALVAGE",
+    "r5": "Veiling – 3 foto’s vóór reparatie",
+    "caption": "Illustratie – zo ziet een historierapport er meestal uit. De dekking hangt af van de dienst en het VIN."
   }
 }

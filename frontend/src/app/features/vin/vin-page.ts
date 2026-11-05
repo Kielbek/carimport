@@ -150,7 +150,6 @@ const FREE_SOURCES: readonly { key: string; name: string; url: string }[] = [
           <app-article-text [text]="'vinPage.' + s + '.text' | translate" />
           @if (s === 'report') {
             <div class="mt-5"><app-vin-cta placement="vin_page" /></div>
-            <p class="mt-3 text-sm"><a [routerLink]="compare()" class="font-semibold text-brand-text underline underline-offset-2">{{ 'vinPage.compareLink' | translate }}</a></p>
           }
           @if (s === 'free') {
             <ul class="mt-4 space-y-3">
@@ -211,7 +210,6 @@ export class VinPage {
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly method = computed(() => pathFor('method', this.lang.current()));
   protected readonly copart = computed(() => pathFor('copart', this.lang.current()));
-  protected readonly compare = computed(() => pathFor('vinCompare', this.lang.current()));
 
   protected decode(raw: string): void {
     const vin = raw.replace(/[\s-]/g, '').toUpperCase();

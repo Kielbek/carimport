@@ -41,7 +41,7 @@ export const ORIGIN_DEEP: OriginDeep = {
       paras: [
         "Bei der Auktion sehen Sie das Auto nicht persönlich, daher zählt jedes Detail im Angebot. Bevor Sie bieten:",
         [
-          "Prüfen Sie die VIN-Historie (z. B. Carfax, AutoCheck, NMVTIS-Datenbank): Schäden, Laufleistung, Zahl der Vorbesitzer, Diebstahl und Überflutung.",
+          "Prüfen Sie die VIN-Historie (z. B. carVertical, NMVTIS-Datenbank): Schäden, Laufleistung, Zahl der Vorbesitzer, Diebstahl und Überflutung.",
           "Werten Sie Fotos und Schadensbeschreibung (Primary / Secondary Damage) aus. „Front End“ kann vom Stoßfänger bis zu verbogenen Längsträgern und ausgelösten Airbags alles bedeuten.",
           "Lesen Sie die Zustandsangaben genau: „Run and Drive“ heißt, das Auto ist bei Ankunft auf dem Platz gefahren – nicht, dass es verkehrstauglich ist; „Engine Starts“ heißt nur, dass der Motor angesprungen ist.",
           "Vorsicht bei Autos aus Hurrikan- und Hochwassergebieten (Florida, Texas, Louisiana). Wasserränder unter dem Teppich, Schlamm und korrodierte Steckverbindungen sind ein Grund, die Finger davon zu lassen.",

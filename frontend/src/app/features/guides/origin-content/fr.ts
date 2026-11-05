@@ -41,7 +41,7 @@ export const ORIGIN_DEEP: OriginDeep = {
       paras: [
         "Aux enchères, vous ne voyez pas la voiture en personne : chaque détail de l'annonce compte. Avant d'enchérir :",
         [
-          "Vérifiez l'historique du VIN (p. ex. Carfax, AutoCheck, base NMVTIS) : dommages, kilométrage, nombre de propriétaires, vol et inondation.",
+          "Vérifiez l'historique du VIN (p. ex. carVertical, base NMVTIS) : dommages, kilométrage, nombre de propriétaires, vol et inondation.",
           "Étudiez les photos et la description des dégâts (primary / secondary damage). « Front end » peut aller du pare-chocs aux longerons tordus et airbags déclenchés.",
           "Lisez bien les mentions d'état : « Run and Drive » signifie que la voiture a roulé à son arrivée au parc, pas qu'elle est en état de circuler ; « Engine Starts » signifie seulement que le moteur a démarré.",
           "Méfiez-vous des voitures venant de zones d'ouragans et d'inondations (Floride, Texas, Louisiane). Traces d'eau sous la moquette, limon et connecteurs électriques corrodés sont une raison de renoncer.",

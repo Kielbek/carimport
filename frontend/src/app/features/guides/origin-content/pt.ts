@@ -41,7 +41,7 @@ export const ORIGIN_DEEP: OriginDeep = {
       paras: [
         "No leilão não pode ver o carro pessoalmente, por isso cada pormenor do anúncio conta. Antes de licitar:",
         [
-          "Verifique o historial pelo VIN (p. ex. Carfax, AutoCheck, base NMVTIS): danos, quilometragem, número de donos, roubo e inundação.",
+          "Verifique o historial pelo VIN (p. ex. carVertical, base NMVTIS): danos, quilometragem, número de donos, roubo e inundação.",
           "Analise as fotos e a descrição dos danos (primary / secondary damage). “Front end” pode significar desde um para-choques até longarinas dobradas e airbags disparados.",
           "Leia com atenção as etiquetas de estado: “Run and Drive” significa que o carro andou ao chegar ao parque, não que está apto a circular; “Engine Starts” significa apenas que o motor pegou.",
           "Cuidado com carros de zonas de furacões e cheias (Florida, Texas, Louisiana). Marcas de água debaixo da alcatifa, lodo e conectores elétricos corroídos são motivo para desistir.",

@@ -41,7 +41,7 @@ export const ORIGIN_DEEP: OriginDeep = {
       paras: [
         "En la subasta no ves el coche en persona, así que cada dato del anuncio cuenta. Antes de pujar:",
         [
-          "Consulta el historial del VIN (p. ej. Carfax, AutoCheck, base NMVTIS): daños, kilometraje, número de dueños, robo e inundación.",
+          "Consulta el historial del VIN (p. ej. carVertical, base NMVTIS): daños, kilometraje, número de dueños, robo e inundación.",
           "Analiza las fotos y la descripción del daño (primary / secondary damage). «Front end» puede ir desde un paragolpes hasta largueros doblados y airbags disparados.",
           "Lee bien las etiquetas de estado: «Run and Drive» significa que el coche se movió al llegar a la campa, no que esté en condiciones de circular; «Engine Starts», que el motor solo arrancó.",
           "Cuidado con coches de zonas de huracanes e inundaciones (Florida, Texas, Luisiana). Marcas de agua bajo la moqueta, lodo y conectores eléctricos corroídos son motivo para descartarlo.",

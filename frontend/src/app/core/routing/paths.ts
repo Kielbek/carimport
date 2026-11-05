@@ -1,6 +1,6 @@
 import { Lang } from '../i18n/language.service';
 
-export type Page = 'home' | 'calculator' | 'about' | 'privacy' | 'terms' | 'taxes' | 'method' | 'glossary' | 'contact' | 'vin' | 'vinCompare' | 'copart' | 'euImport';
+export type Page = 'home' | 'calculator' | 'about' | 'privacy' | 'terms' | 'taxes' | 'method' | 'glossary' | 'contact' | 'vin' | 'copart' | 'euImport';
 
 /** Localized URL slugs - "/pl/kalkulator" ranks for Polish queries far better than "/pl/calculator". */
 export const SLUGS: Record<Exclude<Page, 'home'>, Record<Lang, string>> = {
@@ -67,7 +67,7 @@ export const SLUGS: Record<Exclude<Page, 'home'>, Record<Lang, string>> = {
     pl: 'sprawdz-vin', pt: 'verificar-vin', ro: 'verificare-vin', sk: 'kontrola-vin', sl: 'preverjanje-vin',
     sv: 'vin-kontroll', uk: 'perevirka-vin',
   },
-  /** Vehicle history report providers compared. */
+  /** Car import between EU countries. */
   euImport: {
     bg: 'vnos-na-kola-ot-es', cs: 'dovoz-auta-z-eu', da: 'import-af-bil-fra-eu', de: 'auto-import-aus-der-eu', el: 'eisagogi-aftokinitou-apo-ee',
     en: 'import-car-from-eu', es: 'importar-coche-de-la-ue', et: 'auto-import-el-ist', fi: 'auton-tuonti-eu-maasta',
@@ -75,14 +75,6 @@ export const SLUGS: Record<Exclude<Page, 'home'>, Record<Lang, string>> = {
     lt: 'automobilio-importas-is-es', lv: 'auto-imports-no-es', nl: 'auto-importeren-uit-eu', pl: 'import-auta-z-ue',
     pt: 'importar-carro-da-ue', ro: 'import-masina-din-ue', sk: 'dovoz-auta-z-eu', sl: 'uvoz-avtomobila-iz-eu',
     sv: 'importera-bil-fran-eu', uk: 'import-avto-z-yes',
-  },
-  vinCompare: {
-    bg: 'sravnenie-vin-dokladi', cs: 'srovnani-vin-reportu', da: 'vin-rapporter-sammenligning', de: 'fahrzeughistorie-vergleich',
-    el: 'sygkrisi-anaforon-vin', en: 'vin-report-comparison', es: 'comparativa-informes-vin', et: 'vin-raportide-vordlus',
-    fi: 'vin-raporttien-vertailu', fr: 'comparatif-rapports-vin', hr: 'usporedba-vin-izvjestaja', hu: 'alvazszam-jelentesek-osszehasonlitasa',
-    it: 'confronto-report-vin', lt: 'vin-ataskaitu-palyginimas', lv: 'vin-atskaisu-salidzinajums', nl: 'vin-rapporten-vergelijken',
-    pl: 'raporty-vin-porownanie', pt: 'comparacao-relatorios-vin', ro: 'comparatie-rapoarte-vin', sk: 'porovnanie-vin-reportov',
-    sl: 'primerjava-vin-porocil', sv: 'vin-rapporter-jamforelse', uk: 'porivniannia-zvitiv-vin',
   },
   /** Buying at Copart from Europe. */
   copart: {

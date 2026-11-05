@@ -513,7 +513,6 @@
     "contact": "Kontakt",
     "vin": "Preverjanje VIN",
     "copart": "Copart – kako kupiti",
-    "vinCompare": "Primerjava poročil VIN",
     "euImport": "Uvoz avtomobila iz EU"
   },
   "footer": {
@@ -888,10 +887,6 @@
     "copart": {
       "title": "Copart iz Slovenije: nakup avtomobila iz ZDA – stroški, posrednik, 0 % carine (2026) | Carglo",
       "description": "Copart v Sloveniji ne deluje – dražite na dražbah v ZDA prek posrednika. Pristojbine, title salvage, prevoz v 4–8 tednih in skupni stroški s carino in DDV. Avtomobili iz ZDA imajo lahko od julija 2026 0 % carine."
-    },
-    "vinCompare": {
-      "title": "Primerjava poročil o zgodovini VIN: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Katero poročilo VIN izbrati za avto iz ZDA ali Evrope? Pokritost, podatki o poškodbah in titlu, fotografije in cene: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
       "title": "Uvoz avtomobila iz Nemčije in EU – kalkulator stroškov: prevoz, DMV, registracija | Carglo",
@@ -1960,7 +1955,11 @@
     "title": "Preden dražite, preverite zgodovino avtomobila po VIN",
     "text": "Poročilo o zgodovini med drugim pokaže pretekle poškodbe, prevožene kilometre in pretekle dražbe. Stane delček že manjšega popravila.",
     "button": "Preverite VIN pri {{partner}}",
-    "label": "Partnerska povezava – Carglo lahko prejme provizijo. Na naše izračune to ne vpliva."
+    "label": "Partnerska povezava – Carglo lahko prejme provizijo. Na naše izračune to ne vpliva.",
+    "code": "Koda za popust:",
+    "discount": "−{{pct}} % na poročila {{partner}}",
+    "copy": "Kopiraj",
+    "copied": "Kopirano"
   },
   "vinPage": {
     "eyebrow": "Orodje in vodnik",
@@ -2035,7 +2034,6 @@
       "q6": "Ali dekoder deluje za avtomobile z Japonske?",
       "a6": "Samo če ima avto 17-mestno VIN. Večina avtomobilov z japonskega trga ima krajšo številko šasije – njihovo zgodovino preverite na auction sheetu."
     },
-    "compareLink": "Primerjava ponudnikov poročil VIN – katerega izbrati",
     "anatomy": {
       "country": "država",
       "maker": "proizvajalec",
@@ -2177,131 +2175,6 @@
       "registration": "Registracija in drugo"
     }
   },
-  "vinCompare": {
-    "eyebrow": "Primerjava",
-    "title": "Poročila o zgodovini VIN – katero storitev izbrati za avto iz ZDA in Evrope",
-    "lead": "Primerjali smo najbolj priljubljene storitve s poročili o zgodovini vozil: pokritost podatkov, podatke o poškodbah in titlu iz ZDA, fotografije iz preteklih oglasov in cene. Na koncu – kako izbrati poročilo za določen avto.",
-    "checked": "Cene in obseg preverjeni: {{date}}. Cene so okvirne in se lahko spremenijo.",
-    "eu": "EU",
-    "verdict": {
-      "us": {
-        "for": "Avto z dražbe v ZDA",
-        "pick": "AutoCheck ali Carfax",
-        "why": "Najpodrobnejši podatki iz ZDA: poškodbe, title, zgodovina dražb in servisa."
-      },
-      "eu": {
-        "for": "Avto, kupljen v Evropi",
-        "pick": "carVertical ali autoDNA",
-        "why": "Podatki iz številnih držav EU, poročilo v vašem jeziku."
-      },
-      "budget": {
-        "for": "Hitro in poceni preverjanje",
-        "pick": "VinAudit",
-        "why": "Uradni podatki NMVTIS o titlu in totalnih škodah za nekaj dolarjev."
-      }
-    },
-    "table": {
-      "title": "Na kratko",
-      "service": "Storitev",
-      "regions": "Pokritost podatkov",
-      "usTitles": "Title in totalne škode iz ZDA",
-      "photos": "Fotografije iz zgodovine",
-      "price": "Cena poročila",
-      "note": "»Včasih« – fotografije se pojavijo, kadar jih storitev ima (npr. iz preteklih oglasov ali dražb). Obseg podatkov je odvisen od konkretne VIN."
-    },
-    "value": {
-      "yes": "da",
-      "partial": "delno",
-      "no": "ne",
-      "sometimes": "včasih",
-      "unknown": "ni neodvisnih podatkov"
-    },
-    "providers": "Storitve ena za drugo",
-    "visit": "Na {{name}}",
-    "pros": "Prednosti",
-    "cons": "Slabosti",
-    "bestFor": "Za koga:",
-    "p": {
-      "carvertical": {
-        "desc": "Litovska storitev, ki deluje v številnih evropskih državah in v ZDA. Navaja več kot 1000 virov podatkov – registre, zavarovalnice, servise, policijo. Pri avtomobilih iz ZDA med drugim prikaže oznake titla (salvage, rebuilt, junk).",
-        "pros": "• Evropski in ameriški podatki v enem poročilu.\n• Poročilo in podpora v številnih jezikih EU.\n• Fotografije iz zgodovine, kadar so na voljo.",
-        "cons": "• Dražja od cenenih ameriških storitev.\n• Manj podatkov iz ZDA kot Carfax ali AutoCheck.",
-        "best": "kupce v Evropi, ki želijo eno poročilo za avto iz ZDA ali EU."
-      },
-      "autodna": {
-        "desc": "Poljska storitev, najmočnejša na Poljskem ter v Srednji in Vzhodni Evropi. Baza pokriva več deset držav Evrope in Severne Amerike; poročila vsebujejo kilometre, poškodbe in – če obstajajo – fotografije.",
-        "pros": "• Zelo dobri podatki s Poljske in iz regije.\n• Cenejša od carVertical, paketi več poročil.\n• Brezplačno predhodno preverjanje, ali podatki obstajajo.",
-        "cons": "• Manj podatkov iz Zahodne Evrope kot konkurenca.\n• Za avtomobile iz ZDA dodajte še ameriški vir.",
-        "best": "avtomobile s Poljske in iz sosednjih držav ter kot drugi vir."
-      },
-      "carfax": {
-        "desc": "Najbolj znana storitev v ZDA. Ima širok dostop do podatkov zavarovalnic, policije in servisov, zato najbolje prikaže nesreče in servisno zgodovino.",
-        "pros": "• Najpodrobnejša zgodovina nesreč in servisa v ZDA.\n• Kupci jo poznajo pri nadaljnji prodaji.",
-        "cons": "• Najdražje posamezno poročilo.\n• Šibka za avtomobile zunaj ZDA in Kanade.",
-        "best": "dražje avtomobile iz ZDA, pri katerih šteje servisna zgodovina."
-      },
-      "autocheck": {
-        "desc": "Storitev podjetja Experian. Posebej močna pri zgodovini dražb – uporabljajo jo trgovci in dražbene hiše. Ponuja tudi oceno AutoCheck Score.",
-        "pros": "• Zelo dobri podatki o dražbah v ZDA.\n• Cenejša od Carfaxa.",
-        "cons": "• Manj servisnih podrobnosti kot Carfax.\n• Samo avtomobili iz ZDA.",
-        "best": "avtomobile z dražb Copart in IAAI."
-      },
-      "vinaudit": {
-        "desc": "Uradno odobreni ponudnik podatkov iz državne baze NMVTIS. Prikaže oznake titla, totalne škode, odčitke števca in zapise o krajah.",
-        "pros": "• Zelo poceni, paketi še cenejši.\n• Uradni podatki NMVTIS o titlu in totalnih škodah.",
-        "cons": "• Malo podrobnosti o manjših nesrečah in servisu.\n• Brez fotografij.",
-        "best": "hitro prvo preverjanje številnih avtomobilov pred draženjem."
-      },
-      "automano": {
-        "desc": "Nova storitev s poceni poročili VIN. Neodvisnih mnenj ali podrobnega opisa virov podatkov še nismo našli – obravnavajte jo kot poceni prvo preverjanje.",
-        "pros": "• Nizka cena poročila.",
-        "cons": "• Malo neodvisnih mnenj.\n• Virov podatkov ne razkrije.",
-        "best": "poceni prvo preverjanje – pri dražjem avtomobilu naročite še poročilo bolj znane storitve."
-      }
-    },
-    "how": {
-      "title": "Kako smo primerjali",
-      "text": "Pregledali smo opise storitev, cenike in neodvisne primerjave iz oktobra 2026. Osredotočili smo se na tisto, kar je pri uvozu najpomembnejše: od kod so podatki, ali poročilo prikaže title in totalne škode iz ZDA, ali vsebuje fotografije iz zgodovine in koliko stane eno poročilo.\nPoročil nismo preizkusili na istih VIN – obseg podatkov je odvisen od konkretnega avtomobila, zato se pri dražjem avtomobilu splača naročiti dve poročili različnih storitev."
-    },
-    "free": {
-      "title": "Kaj lahko preverite brezplačno",
-      "text": "Preden plačate poročilo, brezplačno preverite:\n• NICB VINCheck – ali je bil avto prijavljen kot ukraden ali totalna škoda (ZDA).\n• NHTSA Recalls – odprte odpoklice za VIN.\n• zgodovino MOT na gov.uk – za avtomobile iz Združenega kraljestva.\n• neuradne arhive dražb Copart in IAAI – včasih prikažejo fotografije in ceno iz pretekle prodaje; z dražbami niso povezani in lahko izginejo.\nNaš brezplačni dekoder VIN prebere tudi znamko, model, letnik, motor in državo izdelave."
-    },
-    "read": {
-      "title": "Kako brati poročilo",
-      "text": "• Primerjajte stanje števca po letih – padec pomeni previte kilometre.\n• Iščite oznake titla: salvage, rebuilt, flood, junk.\n• Bodite pozorni na države registracije – avtomobili s Floride, iz Teksasa in Louisiane imajo pogosteje poplavne poškodbe.\n• Več dražb v kratkem času kaže, da se je avto težko prodajal.\n• Odsotnost zapisa ne pomeni odsotnosti škode – poročilo prikaže le prijavljeno."
-    },
-    "choose": {
-      "title": "Katero poročilo izbrati",
-      "text": "• Avto z dražbe v ZDA (Copart, IAAI): najprej brezplačni NICB in poceni VinAudit, pred draženjem dražjega avtomobila pa AutoCheck ali Carfax.\n• Avto iz ZDA, ko želite eno poročilo v svojem jeziku: carVertical.\n• Avto s Poljske ali iz sosednjih držav: autoDNA, kot drugi vir carVertical.\n• Avto iz Združenega kraljestva: brezplačna zgodovina MOT in poročilo evropske storitve.\nPri avtomobilu za več deset tisoč evrov dve poročili različnih storitev staneta delček morebitne izgube."
-    },
-    "faq": {
-      "title": "Pogosta vprašanja",
-      "q1": "Katero poročilo VIN je najboljše za avto iz ZDA?",
-      "a1": "Za avto z ameriške dražbe dajeta največ podatkov AutoCheck (zgodovina dražb) in Carfax (nesreče in servis). Za hitro preverjanje titla in totalnih škod zadostuje cenejši VinAudit.",
-      "q2": "Ali carVertical preverja avtomobile iz ZDA?",
-      "a2": "Da – po navedbah storitve poročilo med drugim vsebuje ameriške oznake titla (salvage, rebuilt, junk). Pokritost ZDA pa je manjša kot pri ameriških storitvah.",
-      "q3": "autoDNA ali carVertical – kaj je bolje?",
-      "a3": "autoDNA je močnejša na Poljskem ter v Srednji in Vzhodni Evropi in običajno cenejša, carVertical pa ima širšo pokritost Zahodne Evrope in ZDA. Pri dražjem avtomobilu se splača preveriti obe.",
-      "q4": "Ali bo poročilo prikazalo fotografije z dražbe Copart?",
-      "a4": "Včasih – nekatera poročila vsebujejo fotografije iz preteklih oglasov, kadar jih storitev ima. Nobena tega ne zagotavlja. Fotografije trenutne dražbe shranite sami, ker stran po prodaji izgine.",
-      "q5": "Ali zadostuje brezplačno poročilo VIN?",
-      "a5": "Brezplačne baze (NICB, NHTSA) prikažejo krajo, totalno škodo in odpoklice, ne pa celotne zgodovine nesreč in kilometrov. Za odločitev o nakupu je običajno potrebno plačljivo poročilo.",
-      "q6": "Ali s temi povezavami zaslužite?",
-      "a6": "Pri nekaterih storitvah da – take povezave so označene kot partnerske. To ne vpliva na naša priporočila: vrstni red temelji na obsegu podatkov, ne na proviziji."
-    },
-    "disclaimer": "Carglo ni povezan z opisanimi storitvami. Imena pripadajo njihovim lastnikom. Cene in obseg podatkov izhajajo iz opisov storitev in primerjav iz oktobra 2026 – pred nakupom preverite aktualno ponudbo.",
-    "decoder": "Brezplačni dekoder VIN",
-    "mock": {
-      "title": "Poročilo o zgodovini vozila",
-      "r1": "Prva registracija – Florida",
-      "r2": "Stanje števca: 28.400 milj",
-      "r3": "Poškodba: sprednji del, sprožene zračne blazine",
-      "r4": "Title spremenjen v SALVAGE",
-      "r5": "Dražba – 3 fotografije pred popravilom",
-      "caption": "Ilustracija – tako je običajno videti poročilo o zgodovini. Obseg podatkov je odvisen od storitve in VIN."
-    }
-  },
   "euImport": {
     "eyebrow": "Kalkulator uvoza iz EU",
     "title": "Koliko stane uvoz avtomobila iz Nemčije ali druge države EU",
@@ -2386,5 +2259,14 @@
     "title": "Izberite jezik",
     "lead": "Cene, davke in vodnike prikažemo za državo izbranega jezika. Jezik lahko kadar koli spremenite na vrhu strani.",
     "suggested": "Predlagano"
+  },
+  "reportMock": {
+    "title": "Poročilo o zgodovini vozila",
+    "r1": "Prva registracija – Florida",
+    "r2": "Stanje števca: 28.400 milj",
+    "r3": "Poškodba: sprednji del, sprožene zračne blazine",
+    "r4": "Title spremenjen v SALVAGE",
+    "r5": "Dražba – 3 fotografije pred popravilom",
+    "caption": "Ilustracija – tako je običajno videti poročilo o zgodovini. Obseg podatkov je odvisen od storitve in VIN."
   }
 }

@@ -513,7 +513,6 @@
     "contact": "Yhteystiedot",
     "vin": "VIN-tarkistus",
     "copart": "Copart – näin ostat",
-    "vinCompare": "VIN-raporttien vertailu",
     "euImport": "Auton tuonti EU:sta"
   },
   "footer": {
@@ -888,10 +887,6 @@
     "copart": {
       "title": "Copart Suomesta: auton osto USA:sta – kulut, välittäjä, 0 % tulli (2026) | Carglo",
       "description": "Näin ostat Copartista Suomesta vaihe vaiheelta: välittäjä, huutokauppamaksut, salvage-title, rahti 4–8 viikossa ja kokonaiskustannus tullin, arvonlisäveron ja autoveron kanssa. Yhdysvalloissa valmistetuille autoille 0 % tulli heinäkuusta 2026. Ilmainen laskuri."
-    },
-    "vinCompare": {
-      "title": "VIN-historiaraporttien vertailu: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Minkä VIN-raportin valitset Yhdysvalloista tai Euroopasta tulevalle autolle? Kattavuus, vaurio- ja title-tiedot, kuvat ja hinnat: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
       "title": "Auton tuonti Saksasta tai EU:sta – kustannuslaskuri: kuljetus, autovero, rekisteröinti | Carglo",
@@ -1960,7 +1955,11 @@
     "title": "Ennen kuin teet tarjouksen – tarkista auton historia VIN-koodilla",
     "text": "Historiaraportti näyttää muun muassa aiemmat vauriot, mittarilukemat ja aiemmat huutokaupat. Se maksaa murto-osan pienestäkin korjauksesta.",
     "button": "Tarkista VIN palvelussa {{partner}}",
-    "label": "Kumppanilinkki – Carglo voi saada palkkion. Se ei vaikuta laskelmiimme."
+    "label": "Kumppanilinkki – Carglo voi saada palkkion. Se ei vaikuta laskelmiimme.",
+    "code": "Alennuskoodi:",
+    "discount": "−{{pct}} % {{partner}}-raporteista",
+    "copy": "Kopioi",
+    "copied": "Kopioitu"
   },
   "vinPage": {
     "eyebrow": "Työkalu ja opas",
@@ -2035,7 +2034,6 @@
       "q6": "Toimiiko dekooderi Japanista tuleville autoille?",
       "a6": "Vain jos autossa on 17-merkkinen VIN. Useimmissa Japanin markkinoiden autoissa on lyhyempi runkonumero – niiden historia tarkistetaan auction sheetistä."
     },
-    "compareLink": "VIN-raporttipalvelujen vertailu – minkä valita",
     "anatomy": {
       "country": "maa",
       "maker": "valmistaja",
@@ -2177,131 +2175,6 @@
       "registration": "Rekisteröinti ja muut"
     }
   },
-  "vinCompare": {
-    "eyebrow": "Vertailu",
-    "title": "VIN-historiaraportit – minkä palvelun valita Yhdysvalloista tai Euroopasta tulevalle autolle",
-    "lead": "Vertailimme suosituimmat ajoneuvojen historiaraporttipalvelut: tietojen kattavuus, Yhdysvaltain vaurio- ja title-tiedot, aiempien ilmoitusten kuvat ja hinnat. Lopuksi – miten valitset raportin tietylle autolle.",
-    "checked": "Hinnat ja sisältö tarkistettu: {{date}}. Hinnat ovat suuntaa antavia ja voivat muuttua.",
-    "eu": "EU",
-    "verdict": {
-      "us": {
-        "for": "Auto yhdysvaltalaisesta huutokaupasta",
-        "pick": "AutoCheck tai Carfax",
-        "why": "Kattavimmat Yhdysvaltain tiedot: vauriot, titlet, huutokauppa- ja huoltohistoria."
-      },
-      "eu": {
-        "for": "Euroopasta ostettu auto",
-        "pick": "carVertical tai autoDNA",
-        "why": "Tietoja monesta EU-maasta, raportti omalla kielelläsi."
-      },
-      "budget": {
-        "for": "Nopea ja edullinen tarkistus",
-        "pick": "VinAudit",
-        "why": "Viralliset NMVTIS-tiedot titlestä ja lunastuksista muutamalla dollarilla."
-      }
-    },
-    "table": {
-      "title": "Lyhyesti",
-      "service": "Palvelu",
-      "regions": "Tietojen kattavuus",
-      "usTitles": "Yhdysvaltain titlet ja lunastukset",
-      "photos": "Kuvat historiasta",
-      "price": "Raportin hinta",
-      "note": "”Joskus” – kuvat näkyvät, jos palvelulla on niitä (esim. aiemmista ilmoituksista tai huutokaupoista). Tietojen laajuus riippuu VIN-koodista."
-    },
-    "value": {
-      "yes": "kyllä",
-      "partial": "osittain",
-      "no": "ei",
-      "sometimes": "joskus",
-      "unknown": "ei riippumatonta tietoa"
-    },
-    "providers": "Palvelut yksi kerrallaan",
-    "visit": "Siirry: {{name}}",
-    "pros": "Plussat",
-    "cons": "Miinukset",
-    "bestFor": "Kenelle:",
-    "p": {
-      "carvertical": {
-        "desc": "Liettualainen palvelu, joka toimii monessa Euroopan maassa ja Yhdysvalloissa. Se kertoo käyttävänsä yli 1 000 tietolähdettä – rekisterit, vakuutusyhtiöt, korjaamot, poliisi. Yhdysvaltalaisista autoista se näyttää muun muassa title-merkinnät (salvage, rebuilt, junk).",
-        "pros": "• Euroopan ja Yhdysvaltain tiedot samassa raportissa.\n• Raportti ja asiakaspalvelu monella EU-kielellä.\n• Kuvat historiasta, kun niitä on.",
-        "cons": "• Kalliimpi kuin yhdysvaltalaiset edulliset palvelut.\n• Vähemmän Yhdysvaltain tietoja kuin Carfaxissa tai AutoCheckissa.",
-        "best": "eurooppalaisille ostajille, jotka haluavat yhden raportin Yhdysvalloista tai EU:sta tulevalle autolle."
-      },
-      "autodna": {
-        "desc": "Puolalainen palvelu, vahvimmillaan Puolassa sekä Keski- ja Itä-Euroopassa. Tietokanta kattaa kymmeniä Euroopan ja Pohjois-Amerikan maita; raporteissa on mm. mittarilukemat, vauriot ja – jos niitä on – kuvat.",
-        "pros": "• Erittäin hyvät tiedot Puolasta ja lähialueilta.\n• Edullisempi kuin carVertical, usean raportin paketit.\n• Ilmainen ennakkotarkistus siitä, löytyykö tietoja.",
-        "cons": "• Vähemmän tietoja Länsi-Euroopasta kuin kilpailijoilla.\n• Yhdysvaltalaiselle autolle kannattaa lisätä yhdysvaltalainen lähde.",
-        "best": "Puolasta ja naapurimaista tuleville autoille sekä toiseksi lähteeksi."
-      },
-      "carfax": {
-        "desc": "Yhdysvaltain tunnetuin palvelu. Sillä on laaja pääsy vakuutusyhtiöiden, poliisin ja korjaamojen tietoihin, joten se näyttää kolarit ja huoltohistorian parhaiten.",
-        "pros": "• Yhdysvaltain kattavin kolari- ja huoltohistoria.\n• Ostajat tuntevat sen jälleenmyynnissä.",
-        "cons": "• Kallein yksittäinen raportti.\n• Heikko Yhdysvaltain ja Kanadan ulkopuolisille autoille.",
-        "best": "kalliimmille yhdysvaltalaisille autoille, joissa huoltohistorialla on merkitystä."
-      },
-      "autocheck": {
-        "desc": "Experianin omistama palvelu. Erityisen vahva huutokauppahistoriassa – sitä käyttävät jälleenmyyjät ja huutokauppatalot. Antaa myös AutoCheck Score -arvion.",
-        "pros": "• Erittäin hyvät tiedot Yhdysvaltain huutokaupoista.\n• Edullisempi kuin Carfax.",
-        "cons": "• Vähemmän huoltotietoja kuin Carfaxissa.\n• Vain yhdysvaltalaiset autot.",
-        "best": "Copartin ja IAAI:n huutokauppojen autoille."
-      },
-      "vinaudit": {
-        "desc": "Virallisesti hyväksytty tietojen toimittaja valtion NMVTIS-tietokannasta. Näyttää title-merkinnät, lunastukset, mittarilukemat ja varkausmerkinnät.",
-        "pros": "• Erittäin edullinen, paketit vielä edullisempia.\n• Viralliset NMVTIS-tiedot titlestä ja lunastuksista.",
-        "cons": "• Vähän tietoa pienistä kolareista ja huolloista.\n• Ei kuvia.",
-        "best": "monen auton nopeaan ensitarkistukseen ennen tarjouksia."
-      },
-      "automano": {
-        "desc": "Uusi edullinen VIN-raporttipalvelu. Emme ole vielä löytäneet riippumattomia arvioita tai tarkkaa kuvausta tietolähteistä – pidä sitä edullisena ensitarkistuksena.",
-        "pros": "• Edullinen raportti.",
-        "cons": "• Vähän riippumattomia arvioita.\n• Ei kerro tietolähteitään.",
-        "best": "edulliseen ensitarkistukseen – kalliimmasta autosta tilaa raportti myös tunnetummasta palvelusta."
-      }
-    },
-    "how": {
-      "title": "Miten vertailimme",
-      "text": "Kävimme läpi palvelujen kuvaukset ja hinnastot sekä riippumattomat vertailut lokakuulta 2026. Keskityimme siihen, mikä tuonnissa on tärkeintä: mistä tiedot tulevat, näyttääkö raportti Yhdysvaltain titlet ja lunastukset, sisältääkö se kuvia historiasta ja paljonko yksi raportti maksaa.\nEmme testanneet raportteja samoilla VIN-koodeilla – tietojen laajuus riippuu yksittäisestä autosta, joten kalliimmasta autosta kannattaa tilata kaksi raporttia eri palveluista."
-    },
-    "free": {
-      "title": "Mitä voit tarkistaa ilmaiseksi",
-      "text": "Ennen kuin maksat raportista, tarkista ilmaiseksi:\n• NICB VINCheck – onko auto ilmoitettu varastetuksi tai lunastetuksi (Yhdysvallat).\n• NHTSA Recalls – VIN-koodin avoimet takaisinkutsut.\n• MOT-historia gov.uk-sivustolla – Iso-Britanniasta tuleville autoille.\n• Copartin ja IAAI:n huutokauppojen epäviralliset arkistot – näyttävät joskus aiemman myynnin kuvat ja hinnan; ne eivät liity huutokauppoihin ja voivat kadota.\nIlmainen VIN-dekooderimme lukee myös merkin, mallin, vuosimallin, moottorin ja valmistusmaan."
-    },
-    "read": {
-      "title": "Näin luet raporttia",
-      "text": "• Vertaa mittarilukemia vuosien välillä – lasku tarkoittaa taaksepäin pyöritettyä mittaria.\n• Etsi title-merkintöjä: salvage, rebuilt, flood, junk.\n• Kiinnitä huomiota rekisteröintiosavaltioihin – Floridan, Texasin ja Louisianan autoissa on useammin tulvavaurioita.\n• Useat huutokaupat lyhyessä ajassa viittaavat siihen, että autoa oli vaikea myydä.\n• Merkinnän puuttuminen ei tarkoita, ettei vauriota olisi – raportti näyttää vain ilmoitetun."
-    },
-    "choose": {
-      "title": "Minkä raportin valitset",
-      "text": "• Auto yhdysvaltalaisesta huutokaupasta (Copart, IAAI): ensin ilmainen NICB ja edullinen VinAudit, ja ennen kalliimman auton tarjousta AutoCheck tai Carfax.\n• Auto Yhdysvalloista, kun haluat yhden raportin omalla kielelläsi: carVertical.\n• Auto Puolasta tai naapurimaista: autoDNA, toisena lähteenä carVertical.\n• Auto Isosta-Britanniasta: ilmainen MOT-historia ja eurooppalaisen palvelun raportti.\nKymmenien tuhansien eurojen autossa kaksi raporttia eri palveluista maksaa murto-osan mahdollisesta tappiosta."
-    },
-    "faq": {
-      "title": "Usein kysyttyä",
-      "q1": "Mikä VIN-raportti on paras Yhdysvalloista tulevalle autolle?",
-      "a1": "Yhdysvaltalaisen huutokaupan autolle eniten tietoja antavat AutoCheck (huutokauppahistoria) ja Carfax (kolarit ja huollot). Titlen ja lunastusten nopeaan tarkistukseen riittää edullisempi VinAudit.",
-      "q2": "Tarkistaako carVertical Yhdysvalloista tulevia autoja?",
-      "a2": "Kyllä – palvelun mukaan raportti sisältää muun muassa Yhdysvaltain title-merkinnät (salvage, rebuilt, junk). Yhdysvaltain kattavuus on kuitenkin pienempi kuin yhdysvaltalaisilla palveluilla.",
-      "q3": "autoDNA vai carVertical – kumpi on parempi?",
-      "a3": "autoDNA on vahvempi Puolassa sekä Keski- ja Itä-Euroopassa ja yleensä edullisempi; carVerticalilla on laajempi kattavuus Länsi-Euroopassa ja Yhdysvalloissa. Kalliimmasta autosta kannattaa tarkistaa molemmat.",
-      "q4": "Näyttääkö raportti Copart-huutokaupan kuvat?",
-      "a4": "Joskus – osa raporteista sisältää aiempien ilmoitusten kuvia, jos palvelulla on niitä. Yksikään ei takaa sitä. Tallenna nykyisen huutokaupan kuvat itse, sillä sivu katoaa myynnin jälkeen.",
-      "q5": "Riittääkö ilmainen VIN-raportti?",
-      "a5": "Ilmaiset tietokannat (NICB, NHTSA) näyttävät varkauden, lunastuksen ja takaisinkutsut, mutta eivät koko kolari- ja mittarihistoriaa. Ostopäätökseen tarvitaan yleensä maksullinen raportti.",
-      "q6": "Ansaitsetteko näillä linkeillä?",
-      "a6": "Joidenkin palvelujen kohdalla kyllä – tällaiset linkit on merkitty kumppanilinkeiksi. Se ei vaikuta suosituksiimme: järjestys perustuu tietojen kattavuuteen, ei palkkioon."
-    },
-    "disclaimer": "Carglo ei ole yhteydessä kuvattuihin palveluihin. Nimet kuuluvat omistajilleen. Hinnat ja tietojen laajuus perustuvat palvelujen kuvauksiin ja lokakuun 2026 vertailuihin – tarkista ajantasainen tarjous ennen ostoa.",
-    "decoder": "Ilmainen VIN-dekooderi",
-    "mock": {
-      "title": "Ajoneuvon historiaraportti",
-      "r1": "Ensirekisteröinti – Florida",
-      "r2": "Mittarilukema: 28 400 mailia",
-      "r3": "Vaurio: keula, turvatyynyt lauenneet",
-      "r4": "Title muutettu: SALVAGE",
-      "r5": "Huutokauppa – 3 kuvaa ennen korjausta",
-      "caption": "Kuvitus – tältä historiaraportti yleensä näyttää. Tietojen laajuus riippuu palvelusta ja VIN-koodista."
-    }
-  },
   "euImport": {
     "eyebrow": "EU-tuontilaskuri",
     "title": "Paljonko maksaa tuoda auto Saksasta tai muusta EU-maasta",
@@ -2386,5 +2259,14 @@
     "title": "Valitse kieli",
     "lead": "Näytämme hinnat, verot ja oppaat valitsemasi kielen maalle. Voit vaihtaa kielen milloin tahansa sivun yläosasta.",
     "suggested": "Ehdotettu"
+  },
+  "reportMock": {
+    "title": "Ajoneuvon historiaraportti",
+    "r1": "Ensirekisteröinti – Florida",
+    "r2": "Mittarilukema: 28 400 mailia",
+    "r3": "Vaurio: keula, turvatyynyt lauenneet",
+    "r4": "Title muutettu: SALVAGE",
+    "r5": "Huutokauppa – 3 kuvaa ennen korjausta",
+    "caption": "Kuvitus – tältä historiaraportti yleensä näyttää. Tietojen laajuus riippuu palvelusta ja VIN-koodista."
   }
 }

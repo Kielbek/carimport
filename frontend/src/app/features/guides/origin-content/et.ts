@@ -41,7 +41,7 @@ export const ORIGIN_DEEP: OriginDeep = {
       paras: [
         "Oksjonil ei saa sa autot ise näha, seega loeb iga detail kuulutuses. Enne pakkumist:",
         [
-          "Kontrolli ajalugu VIN-koodi järgi (nt Carfax, AutoCheck, NMVTIS-andmebaas): kahjustused, läbisõit, omanike arv, vargused ja üleujutused.",
+          "Kontrolli ajalugu VIN-koodi järgi (nt carVertical, NMVTIS-andmebaas): kahjustused, läbisõit, omanike arv, vargused ja üleujutused.",
           "Uuri fotosid ja kahjustuste kirjeldust (primary / secondary damage). „Front end“ võib tähendada mida tahes stange'ist kuni kõverdunud pikitalade ja avanenud turvapatjadeni.",
           "Loe seisukorramärgiseid hoolikalt: „Run and Drive“ tähendab, et auto liikus platsile saabudes, mitte et see on liikluskõlblik; „Engine Starts“ tähendab ainult, et mootor käivitus.",
           "Ole ettevaatlik orkaani- ja üleujutuspiirkondade autodega (Florida, Texas, Louisiana). Veejäljed vaiba all, muda ja korrodeerunud elektripistikud on põhjus loobumiseks.",

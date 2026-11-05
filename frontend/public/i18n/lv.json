@@ -513,7 +513,6 @@
     "contact": "Kontakti",
     "vin": "VIN pārbaude",
     "copart": "Copart – kā iegādāties",
-    "vinCompare": "VIN atskaišu salīdzinājums",
     "euImport": "Auto imports no ES"
   },
   "footer": {
@@ -888,10 +887,6 @@
     "copart": {
       "title": "Copart no Latvijas: auto iegāde ASV – izmaksas, brokeris, 0 % muita (2026) | Carglo",
       "description": "Copart Latvijā nedarbojas – solāt ASV izsolēs ar brokera starpniecību. Maksas, salvage title, transports 4–8 nedēļās un kopējās izmaksas ar muitu un PVN. ASV auto no 2026. gada jūlija muita var būt 0 %."
-    },
-    "vinCompare": {
-      "title": "VIN vēstures atskaišu salīdzinājums: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Kuru VIN atskaiti izvēlēties auto no ASV vai Eiropas? Pārklājums, bojājumu un title dati, fotoattēli un cenas: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
       "title": "Auto imports no Vācijas un ES – izmaksu kalkulators: transports, reģistrācija, nodevas | Carglo",
@@ -1960,7 +1955,11 @@
     "title": "Pirms solīšanas pārbaudiet auto vēsturi pēc VIN",
     "text": "Vēstures atskaite cita starpā parāda iepriekšējos bojājumus, nobraukumu un pagātnes izsoles. Tā maksā daļu no pat neliela remonta.",
     "button": "Pārbaudīt VIN: {{partner}}",
-    "label": "Partnera saite – Carglo var saņemt komisiju. Tas neietekmē mūsu aprēķinus."
+    "label": "Partnera saite – Carglo var saņemt komisiju. Tas neietekmē mūsu aprēķinus.",
+    "code": "Atlaides kods:",
+    "discount": "−{{pct}}% {{partner}} atskaitēm",
+    "copy": "Kopēt",
+    "copied": "Nokopēts"
   },
   "vinPage": {
     "eyebrow": "Rīks un ceļvedis",
@@ -2035,7 +2034,6 @@
       "q6": "Vai dekodētājs darbojas auto no Japānas?",
       "a6": "Tikai tad, ja auto ir 17 rakstzīmju VIN. Lielākajai daļai Japānas tirgus auto ir īsāks šasijas numurs – to vēsturi pārbauda pēc auction sheet."
     },
-    "compareLink": "VIN atskaišu pakalpojumu salīdzinājums – kuru izvēlēties",
     "anatomy": {
       "country": "valsts",
       "maker": "ražotājs",
@@ -2177,131 +2175,6 @@
       "registration": "Reģistrācija un citas"
     }
   },
-  "vinCompare": {
-    "eyebrow": "Salīdzinājums",
-    "title": "VIN vēstures atskaites – kuru pakalpojumu izvēlēties auto no ASV un Eiropas",
-    "lead": "Salīdzinājām populārākos transportlīdzekļu vēstures atskaišu pakalpojumus: datu pārklājumu, ASV bojājumu un title informāciju, iepriekšējo sludinājumu fotoattēlus un cenas. Beigās – kā izvēlēties atskaiti konkrētam auto.",
-    "checked": "Cenas un apjoms pārbaudīts: {{date}}. Cenas ir orientējošas un var mainīties.",
-    "eu": "ES",
-    "verdict": {
-      "us": {
-        "for": "Auto no ASV izsoles",
-        "pick": "AutoCheck vai Carfax",
-        "why": "Detalizētākie ASV dati: bojājumi, title, izsoļu un servisa vēsture."
-      },
-      "eu": {
-        "for": "Eiropā pirkts auto",
-        "pick": "carVertical vai autoDNA",
-        "why": "Dati no daudzām ES valstīm, atskaite jūsu valodā."
-      },
-      "budget": {
-        "for": "Ātra un lēta pārbaude",
-        "pick": "VinAudit",
-        "why": "Oficiālie NMVTIS dati par title un pilnīgu bojāeju par dažiem dolāriem."
-      }
-    },
-    "table": {
-      "title": "Īsumā",
-      "service": "Pakalpojums",
-      "regions": "Datu pārklājums",
-      "usTitles": "ASV title un pilnīga bojāeja",
-      "photos": "Fotoattēli no vēstures",
-      "price": "Atskaites cena",
-      "note": "„Dažreiz” – fotoattēli parādās, ja pakalpojumam tie ir (piem., no iepriekšējiem sludinājumiem vai izsolēm). Datu apjoms atkarīgs no konkrētā VIN."
-    },
-    "value": {
-      "yes": "jā",
-      "partial": "daļēji",
-      "no": "nē",
-      "sometimes": "dažreiz",
-      "unknown": "nav neatkarīgu datu"
-    },
-    "providers": "Pakalpojumi pa vienam",
-    "visit": "Uz {{name}}",
-    "pros": "Plusi",
-    "cons": "Mīnusi",
-    "bestFor": "Kam piemērots:",
-    "p": {
-      "carvertical": {
-        "desc": "Lietuviešu pakalpojums, kas darbojas daudzās Eiropas valstīs un ASV. Norāda vairāk nekā 1000 datu avotu – reģistrus, apdrošinātājus, servisus, policiju. ASV auto rāda, cita starpā, title atzīmes (salvage, rebuilt, junk).",
-        "pros": "• Eiropas un ASV dati vienā atskaitē.\n• Atskaite un atbalsts daudzās ES valodās.\n• Fotoattēli no vēstures, ja tādi ir.",
-        "cons": "• Dārgāks par lētajiem ASV pakalpojumiem.\n• Mazāk ASV datu nekā Carfax vai AutoCheck.",
-        "best": "pircējiem Eiropā, kuri vēlas vienu atskaiti auto no ASV vai ES."
-      },
-      "autodna": {
-        "desc": "Polijas pakalpojums, spēcīgākais Polijā un Centrāleiropā un Austrumeiropā. Datubāze aptver desmitiem Eiropas un Ziemeļamerikas valstu; atskaitēs ir nobraukums, bojājumi un – ja ir – fotoattēli.",
-        "pros": "• Ļoti labi dati no Polijas un reģiona.\n• Lētāks par carVertical, vairāku atskaišu paketes.\n• Bezmaksas iepriekšēja pārbaude, vai dati ir pieejami.",
-        "cons": "• Mazāk Rietumeiropas datu nekā konkurentiem.\n• ASV auto pievienojiet arī ASV avotu.",
-        "best": "auto no Polijas un kaimiņvalstīm, kā arī kā otrais avots."
-      },
-      "carfax": {
-        "desc": "Pazīstamākais pakalpojums ASV. Tam ir plaša piekļuve apdrošinātāju, policijas un servisu datiem, tāpēc tas vislabāk parāda avārijas un servisa vēsturi.",
-        "pros": "• Detalizētākā ASV avāriju un servisa vēsture.\n• Pircēji to pazīst tālākpārdošanā.",
-        "cons": "• Dārgākā atsevišķā atskaite.\n• Vājš auto ārpus ASV un Kanādas.",
-        "best": "dārgākiem ASV auto, kuriem svarīga servisa vēsture."
-      },
-      "autocheck": {
-        "desc": "Experian piederošs pakalpojums. Īpaši spēcīgs izsoļu vēsturē – to izmanto dīleri un izsoļu nami. Sniedz arī AutoCheck Score novērtējumu.",
-        "pros": "• Ļoti labi dati par ASV izsolēm.\n• Lētāks par Carfax.",
-        "cons": "• Mazāk servisa detaļu nekā Carfax.\n• Tikai ASV auto.",
-        "best": "auto no Copart un IAAI izsolēm."
-      },
-      "vinaudit": {
-        "desc": "Oficiāli apstiprināts valsts NMVTIS datubāzes datu sniedzējs. Rāda title atzīmes, pilnīgu bojāeju, odometra rādījumus un zādzību ierakstus.",
-        "pros": "• Ļoti lēts, paketes vēl lētākas.\n• Oficiālie NMVTIS dati par title un pilnīgu bojāeju.",
-        "cons": "• Maz detaļu par sīkām avārijām un servisu.\n• Nav fotoattēlu.",
-        "best": "ātrai daudzu auto sākotnējai pārbaudei pirms solīšanas."
-      },
-      "automano": {
-        "desc": "Jauns lētu VIN atskaišu pakalpojums. Pagaidām neesam atraduši neatkarīgas atsauksmes vai detalizētu datu avotu aprakstu – uztveriet to kā lētu sākotnējo pārbaudi.",
-        "pros": "• Zema atskaites cena.",
-        "cons": "• Maz neatkarīgu atsauksmju.\n• Neatklāj datu avotus.",
-        "best": "lētai sākotnējai pārbaudei – dārgākam auto pasūtiet arī zināmāka pakalpojuma atskaiti."
-      }
-    },
-    "how": {
-      "title": "Kā mēs salīdzinājām",
-      "text": "Pārskatījām pakalpojumu aprakstus, cenrāžus un 2026. gada oktobra neatkarīgus salīdzinājumus. Koncentrējāmies uz to, kas importā ir svarīgākais: no kurienes nāk dati, vai atskaite rāda ASV title un pilnīgu bojāeju, vai tajā ir fotoattēli no vēstures un cik maksā viena atskaite.\nAtskaites netestējām ar vieniem un tiem pašiem VIN – datu apjoms atkarīgs no konkrētā auto, tāpēc dārgākam auto vērts pasūtīt divas dažādu pakalpojumu atskaites."
-    },
-    "free": {
-      "title": "Ko var pārbaudīt bez maksas",
-      "text": "Pirms maksājat par atskaiti, bez maksas pārbaudiet:\n• NICB VINCheck – vai auto pieteikts kā zagts vai pilnīga bojāeja (ASV).\n• NHTSA Recalls – neizpildītas atsaukšanas kampaņas pēc VIN.\n• MOT vēsturi gov.uk vietnē – auto no Lielbritānijas.\n• neoficiālus Copart un IAAI izsoļu arhīvus – dažreiz rāda iepriekšējās pārdošanas fotoattēlus un cenu; tie nav saistīti ar izsolēm un var pazust.\nMūsu bezmaksas VIN dekodētājs nolasa arī marku, modeli, gadu, dzinēju un ražošanas valsti."
-    },
-    "read": {
-      "title": "Kā lasīt atskaiti",
-      "text": "• Salīdziniet nobraukumu pa gadiem – samazinājums nozīmē attītu odometru.\n• Meklējiet title atzīmes: salvage, rebuilt, flood, junk.\n• Pievērsiet uzmanību reģistrācijas štatiem – auto no Floridas, Teksasas un Luiziānas biežāk ir plūdu bojājumi.\n• Vairākas izsoles īsā laikā liecina, ka auto bija grūti pārdot.\n• Ieraksta trūkums nenozīmē, ka bojājumu nav bijis – atskaite rāda tikai ziņoto."
-    },
-    "choose": {
-      "title": "Kuru atskaiti izvēlēties",
-      "text": "• Auto no ASV izsoles (Copart, IAAI): vispirms bezmaksas NICB un lētais VinAudit, bet pirms solīšanas par dārgāku auto – AutoCheck vai Carfax.\n• Auto no ASV, ja vēlaties vienu atskaiti savā valodā: carVertical.\n• Auto no Polijas vai kaimiņvalstīm: autoDNA, kā otrais avots – carVertical.\n• Auto no Lielbritānijas: bezmaksas MOT vēsture plus Eiropas pakalpojuma atskaite.\nAuto par desmitiem tūkstošu eiro divas dažādu pakalpojumu atskaites maksā daļu no iespējamā zaudējuma."
-    },
-    "faq": {
-      "title": "Biežāk uzdotie jautājumi",
-      "q1": "Kura VIN atskaite ir labākā auto no ASV?",
-      "a1": "Auto no ASV izsoles visvairāk datu sniedz AutoCheck (izsoļu vēsture) un Carfax (avārijas un serviss). Ātrai title un pilnīgas bojāejas pārbaudei pietiek ar lētāko VinAudit.",
-      "q2": "Vai carVertical pārbauda auto no ASV?",
-      "a2": "Jā – pēc pakalpojuma datiem atskaitē ir, cita starpā, ASV title atzīmes (salvage, rebuilt, junk). Tomēr ASV pārklājums ir mazāks nekā ASV pakalpojumiem.",
-      "q3": "autoDNA vai carVertical – kurš labāks?",
-      "a3": "autoDNA ir spēcīgāks Polijā un Centrāleiropā un Austrumeiropā un parasti lētāks, carVertical ir plašāks pārklājums Rietumeiropā un ASV. Dārgākam auto vērts pārbaudīt abus.",
-      "q4": "Vai atskaite parādīs Copart izsoles fotoattēlus?",
-      "a4": "Dažreiz – dažās atskaitēs ir iepriekšējo sludinājumu fotoattēli, ja pakalpojumam tie ir. Neviens to negarantē. Pašreizējās izsoles fotoattēlus saglabājiet paši, jo pēc pārdošanas lapa pazūd.",
-      "q5": "Vai pietiek ar bezmaksas VIN atskaiti?",
-      "a5": "Bezmaksas datubāzes (NICB, NHTSA) rāda zādzību, pilnīgu bojāeju un atsaukšanas kampaņas, bet ne pilnu avāriju un nobraukuma vēsturi. Lēmumam par pirkumu parasti vajadzīga maksas atskaite.",
-      "q6": "Vai jūs pelnāt ar šīm saitēm?",
-      "a6": "Dažu pakalpojumu gadījumā jā – šādas saites ir atzīmētas kā partneru saites. Tas neietekmē mūsu ieteikumus: secība balstās uz datu pārklājumu, nevis komisiju."
-    },
-    "disclaimer": "Carglo nav saistīts ar aprakstītajiem pakalpojumiem. Nosaukumi pieder to īpašniekiem. Cenas un apjoms ņemti no pakalpojumu aprakstiem un 2026. gada oktobra salīdzinājumiem – pirms pirkuma pārbaudiet aktuālo piedāvājumu.",
-    "decoder": "Bezmaksas VIN dekodētājs",
-    "mock": {
-      "title": "Transportlīdzekļa vēstures atskaite",
-      "r1": "Pirmā reģistrācija – Florida",
-      "r2": "Odometra rādījums: 28 400 jūdzes",
-      "r3": "Bojājums: priekšpuse, nostrādājuši drošības spilveni",
-      "r4": "Title mainīts uz SALVAGE",
-      "r5": "Izsole – 3 fotoattēli pirms remonta",
-      "caption": "Ilustrācija – šādi parasti izskatās vēstures atskaite. Datu apjoms atkarīgs no pakalpojuma un VIN."
-    }
-  },
   "euImport": {
     "eyebrow": "ES importa kalkulators",
     "title": "Cik maksā atvest auto no Vācijas vai citas ES valsts",
@@ -2386,5 +2259,14 @@
     "title": "Izvēlieties valodu",
     "lead": "Cenas, nodokļus un ceļvežus rādām izvēlētās valodas valstij. Valodu jebkurā laikā var mainīt lapas augšdaļā.",
     "suggested": "Ieteicamā"
+  },
+  "reportMock": {
+    "title": "Transportlīdzekļa vēstures atskaite",
+    "r1": "Pirmā reģistrācija – Florida",
+    "r2": "Odometra rādījums: 28 400 jūdzes",
+    "r3": "Bojājums: priekšpuse, nostrādājuši drošības spilveni",
+    "r4": "Title mainīts uz SALVAGE",
+    "r5": "Izsole – 3 fotoattēli pirms remonta",
+    "caption": "Ilustrācija – šādi parasti izskatās vēstures atskaite. Datu apjoms atkarīgs no pakalpojuma un VIN."
   }
 }

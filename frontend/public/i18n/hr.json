@@ -513,7 +513,6 @@
     "contact": "Kontakt",
     "vin": "Provjera VIN-a",
     "copart": "Copart – kako kupiti",
-    "vinCompare": "Usporedba VIN izvještaja",
     "euImport": "Uvoz automobila iz EU-a"
   },
   "footer": {
@@ -888,10 +887,6 @@
     "copart": {
       "title": "Copart iz Hrvatske: kupnja auta iz SAD-a – troškovi, broker, carina 0 % (2026) | Carglo",
       "description": "Copart ne posluje u Hrvatskoj – licitirate na aukcijama u SAD-u preko brokera. Naknade, salvage title, prijevoz za 4–8 tjedana i ukupni trošak s carinom i PDV-om. Auti iz SAD-a od srpnja 2026. mogu imati carinu 0 %."
-    },
-    "vinCompare": {
-      "title": "Usporedba izvještaja o povijesti VIN-a: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Koji VIN izvještaj odabrati za auto iz SAD-a ili Europe? Pokrivenost, podaci o oštećenjima i titleu, fotografije i cijene: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
       "title": "Uvoz automobila iz Njemačke i EU-a – kalkulator troškova: prijevoz, PPMV, registracija | Carglo",
@@ -1960,7 +1955,11 @@
     "title": "Prije licitiranja provjerite povijest auta prema VIN-u",
     "text": "Izvještaj o povijesti pokazuje, među ostalim, ranija oštećenja, kilometražu i prošle aukcije. Stoji djelić čak i malog popravka.",
     "button": "Provjerite VIN na {{partner}}",
-    "label": "Partnerska poveznica – Carglo može dobiti proviziju. To ne utječe na naše izračune."
+    "label": "Partnerska poveznica – Carglo može dobiti proviziju. To ne utječe na naše izračune.",
+    "code": "Kod za popust:",
+    "discount": "−{{pct}} % na {{partner}} izvješća",
+    "copy": "Kopiraj",
+    "copied": "Kopirano"
   },
   "vinPage": {
     "eyebrow": "Alat i vodič",
@@ -2035,7 +2034,6 @@
       "q6": "Radi li dekoder za aute iz Japana?",
       "a6": "Samo ako auto ima 17-znamenkasti VIN. Većina auta s japanskog tržišta ima kraći broj šasije – njihova se povijest provjerava na auction sheetu."
     },
-    "compareLink": "Usporedba servisa s VIN izvještajima – koji odabrati",
     "anatomy": {
       "country": "zemlja",
       "maker": "proizvođač",
@@ -2177,131 +2175,6 @@
       "registration": "Registracija i ostalo"
     }
   },
-  "vinCompare": {
-    "eyebrow": "Usporedba",
-    "title": "Izvještaji o povijesti VIN-a – koji servis odabrati za auto iz SAD-a i Europe",
-    "lead": "Usporedili smo najpopularnije servise s izvještajima o povijesti vozila: pokrivenost podataka, podatke o oštećenjima i titleu iz SAD-a, fotografije iz ranijih oglasa i cijene. Na kraju – kako odabrati izvještaj za određeni auto.",
-    "checked": "Cijene i opseg provjereni: {{date}}. Cijene su okvirne i mogu se mijenjati.",
-    "eu": "EU",
-    "verdict": {
-      "us": {
-        "for": "Auto s aukcije u SAD-u",
-        "pick": "AutoCheck ili Carfax",
-        "why": "Najdetaljniji podaci iz SAD-a: oštećenja, title, povijest aukcija i servisa."
-      },
-      "eu": {
-        "for": "Auto kupljen u Europi",
-        "pick": "carVertical ili autoDNA",
-        "why": "Podaci iz mnogih zemalja EU, izvještaj na vašem jeziku."
-      },
-      "budget": {
-        "for": "Brza i jeftina provjera",
-        "pick": "VinAudit",
-        "why": "Službeni NMVTIS podaci o titleu i totalnim štetama za nekoliko dolara."
-      }
-    },
-    "table": {
-      "title": "Ukratko",
-      "service": "Servis",
-      "regions": "Pokrivenost podataka",
-      "usTitles": "Title i totalne štete iz SAD-a",
-      "photos": "Fotografije iz povijesti",
-      "price": "Cijena izvještaja",
-      "note": "„Ponekad” – fotografije se pojavljuju kada ih servis ima (npr. iz ranijih oglasa ili aukcija). Opseg podataka ovisi o konkretnom VIN-u."
-    },
-    "value": {
-      "yes": "da",
-      "partial": "djelomično",
-      "no": "ne",
-      "sometimes": "ponekad",
-      "unknown": "nema neovisnih podataka"
-    },
-    "providers": "Servisi jedan po jedan",
-    "visit": "Idi na {{name}}",
-    "pros": "Prednosti",
-    "cons": "Nedostaci",
-    "bestFor": "Za koga:",
-    "p": {
-      "carvertical": {
-        "desc": "Litavski servis koji posluje u mnogim europskim zemljama i u SAD-u. Navodi više od 1000 izvora podataka – registre, osiguravatelje, servise, policiju. Za aute iz SAD-a prikazuje, među ostalim, oznake titlea (salvage, rebuilt, junk).",
-        "pros": "• Podaci iz Europe i SAD-a u jednom izvještaju.\n• Izvještaj i podrška na mnogim jezicima EU.\n• Fotografije iz povijesti, kada postoje.",
-        "cons": "• Skuplji od jeftinih američkih servisa.\n• Manje podataka iz SAD-a nego Carfax ili AutoCheck.",
-        "best": "kupce u Europi koji žele jedan izvještaj za auto iz SAD-a ili EU."
-      },
-      "autodna": {
-        "desc": "Poljski servis, najjači u Poljskoj te Srednjoj i Istočnoj Europi. Baza pokriva desetke zemalja Europe i Sjeverne Amerike; izvještaji sadrže kilometražu, oštećenja i – kada postoje – fotografije.",
-        "pros": "• Vrlo dobri podaci iz Poljske i regije.\n• Jeftiniji od carVerticala, paketi više izvještaja.\n• Besplatna prethodna provjera postoje li podaci.",
-        "cons": "• Manje podataka iz Zapadne Europe nego konkurencija.\n• Za aute iz SAD-a dodajte i američki izvor.",
-        "best": "aute iz Poljske i susjednih zemalja te kao drugi izvor."
-      },
-      "carfax": {
-        "desc": "Najpoznatiji servis u SAD-u. Ima širok pristup podacima osiguravatelja, policije i servisa, pa najbolje prikazuje nesreće i servisnu povijest.",
-        "pros": "• Najdetaljnija povijest nesreća i servisa u SAD-u.\n• Kupci ga prepoznaju pri preprodaji.",
-        "cons": "• Najskuplji pojedinačni izvještaj.\n• Slab za aute izvan SAD-a i Kanade.",
-        "best": "skuplje aute iz SAD-a kod kojih je važna servisna povijest."
-      },
-      "autocheck": {
-        "desc": "Servis tvrtke Experian. Posebno jak u povijesti aukcija – koriste ga trgovci i aukcijske kuće. Daje i ocjenu AutoCheck Score.",
-        "pros": "• Vrlo dobri podaci o aukcijama u SAD-u.\n• Jeftiniji od Carfaxa.",
-        "cons": "• Manje servisnih detalja nego Carfax.\n• Samo auti iz SAD-a.",
-        "best": "aute s aukcija Copart i IAAI."
-      },
-      "vinaudit": {
-        "desc": "Službeno odobreni pružatelj podataka iz državne baze NMVTIS. Prikazuje oznake titlea, totalne štete, očitanja kilometraže i zapise o krađama.",
-        "pros": "• Vrlo jeftin, paketi još jeftiniji.\n• Službeni NMVTIS podaci o titleu i totalnim štetama.",
-        "cons": "• Malo detalja o manjim nesrećama i servisu.\n• Bez fotografija.",
-        "best": "brzu prvu provjeru mnogih auta prije licitiranja."
-      },
-      "automano": {
-        "desc": "Novi servis s jeftinim VIN izvještajima. Još nismo pronašli neovisne recenzije ni detaljan opis izvora podataka – smatrajte ga jeftinom prvom provjerom.",
-        "pros": "• Niska cijena izvještaja.",
-        "cons": "• Malo neovisnih recenzija.\n• Ne objavljuje izvore podataka.",
-        "best": "jeftinu prvu provjeru – za skuplji auto naručite i izvještaj poznatijeg servisa."
-      }
-    },
-    "how": {
-      "title": "Kako smo uspoređivali",
-      "text": "Pregledali smo opise usluga i cjenike servisa te neovisne usporedbe iz listopada 2026. Usredotočili smo se na ono što je pri uvozu najvažnije: odakle dolaze podaci, prikazuje li izvještaj title i totalne štete iz SAD-a, sadrži li fotografije iz povijesti i koliko stoji jedan izvještaj.\nIzvještaje nismo testirali na istim VIN-ovima – opseg podataka ovisi o konkretnom autu, zato se za skuplji auto isplati naručiti dva izvještaja različitih servisa."
-    },
-    "free": {
-      "title": "Što možete provjeriti besplatno",
-      "text": "Prije nego što platite izvještaj, besplatno provjerite:\n• NICB VINCheck – je li auto prijavljen kao ukraden ili totalna šteta (SAD).\n• NHTSA Recalls – otvorene opozive za VIN.\n• povijest MOT-a na gov.uk – za aute iz Ujedinjenog Kraljevstva.\n• neslužbene arhive aukcija Copart i IAAI – ponekad prikazuju fotografije i cijenu iz ranije prodaje; nisu povezane s aukcijama i mogu nestati.\nNaš besplatni VIN dekoder očitava i marku, model, godište, motor i zemlju proizvodnje."
-    },
-    "read": {
-      "title": "Kako čitati izvještaj",
-      "text": "• Usporedite kilometražu po godinama – pad znači vraćene kilometre.\n• Tražite oznake titlea: salvage, rebuilt, flood, junk.\n• Obratite pažnju na države registracije – auti s Floride, iz Teksasa i Louisiane češće imaju štete od poplava.\n• Više aukcija u kratkom vremenu upućuje na to da se auto teško prodavao.\n• Nepostojanje zapisa ne znači da nije bilo štete – izvještaj prikazuje samo ono što je prijavljeno."
-    },
-    "choose": {
-      "title": "Koji izvještaj odabrati",
-      "text": "• Auto s aukcije u SAD-u (Copart, IAAI): najprije besplatni NICB i jeftini VinAudit, a prije licitiranja skupljeg auta AutoCheck ili Carfax.\n• Auto iz SAD-a kada želite jedan izvještaj na svom jeziku: carVertical.\n• Auto iz Poljske ili susjednih zemalja: autoDNA, a kao drugi izvor carVertical.\n• Auto iz Ujedinjenog Kraljevstva: besplatna povijest MOT-a plus izvještaj europskog servisa.\nZa auto od nekoliko desetaka tisuća eura dva izvještaja različitih servisa stoje djelić moguće štete."
-    },
-    "faq": {
-      "title": "Česta pitanja",
-      "q1": "Koji je VIN izvještaj najbolji za auto iz SAD-a?",
-      "a1": "Za auto s američke aukcije najviše podataka daju AutoCheck (povijest aukcija) i Carfax (nesreće i servis). Za brzu provjeru titlea i totalnih šteta dovoljan je jeftiniji VinAudit.",
-      "q2": "Provjerava li carVertical aute iz SAD-a?",
-      "a2": "Da – prema servisu, izvještaj među ostalim sadrži američke oznake titlea (salvage, rebuilt, junk). Pokrivenost SAD-a ipak je manja nego kod američkih servisa.",
-      "q3": "autoDNA ili carVertical – što je bolje?",
-      "a3": "autoDNA je jači u Poljskoj te Srednjoj i Istočnoj Europi i obično jeftiniji, a carVertical ima širu pokrivenost Zapadne Europe i SAD-a. Za skuplji auto isplati se provjeriti oba.",
-      "q4": "Hoće li izvještaj prikazati fotografije s Copartove aukcije?",
-      "a4": "Ponekad – neki izvještaji sadrže fotografije iz ranijih oglasa, kada ih servis ima. Nijedan to ne jamči. Fotografije trenutačne aukcije spremite sami jer stranica nakon prodaje nestaje.",
-      "q5": "Je li besplatni VIN izvještaj dovoljan?",
-      "a5": "Besplatne baze (NICB, NHTSA) prikazuju krađu, totalnu štetu i opozive, ali ne i potpunu povijest nesreća i kilometraže. Za odluku o kupnji obično je potreban plaćeni izvještaj.",
-      "q6": "Zarađujete li na ovim poveznicama?",
-      "a6": "Kod nekih servisa da – takve su poveznice označene kao partnerske. To ne utječe na naše preporuke: poredak se temelji na opsegu podataka, a ne na proviziji."
-    },
-    "disclaimer": "Carglo nije povezan s opisanim servisima. Nazivi pripadaju njihovim vlasnicima. Cijene i opseg podataka potječu iz opisa servisa i usporedbi iz listopada 2026. – prije kupnje provjerite aktualnu ponudu.",
-    "decoder": "Besplatni VIN dekoder",
-    "mock": {
-      "title": "Izvještaj o povijesti vozila",
-      "r1": "Prva registracija – Florida",
-      "r2": "Očitanje kilometraže: 28 400 milja",
-      "r3": "Oštećenje: prednji dio, aktivirani zračni jastuci",
-      "r4": "Title promijenjen u SALVAGE",
-      "r5": "Aukcija – 3 fotografije prije popravka",
-      "caption": "Ilustracija – ovako obično izgleda izvještaj o povijesti. Opseg podataka ovisi o servisu i VIN-u."
-    }
-  },
   "euImport": {
     "eyebrow": "Kalkulator uvoza iz EU-a",
     "title": "Koliko stoji uvoz automobila iz Njemačke ili druge zemlje EU-a",
@@ -2386,5 +2259,14 @@
     "title": "Odaberite jezik",
     "lead": "Cijene, poreze i vodiče prikazujemo za zemlju odabranog jezika. Jezik možete promijeniti bilo kada na vrhu stranice.",
     "suggested": "Predloženo"
+  },
+  "reportMock": {
+    "title": "Izvještaj o povijesti vozila",
+    "r1": "Prva registracija – Florida",
+    "r2": "Očitanje kilometraže: 28 400 milja",
+    "r3": "Oštećenje: prednji dio, aktivirani zračni jastuci",
+    "r4": "Title promijenjen u SALVAGE",
+    "r5": "Aukcija – 3 fotografije prije popravka",
+    "caption": "Ilustracija – ovako obično izgleda izvještaj o povijesti. Opseg podataka ovisi o servisu i VIN-u."
   }
 }

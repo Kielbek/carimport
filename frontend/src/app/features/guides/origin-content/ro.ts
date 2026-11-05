@@ -41,7 +41,7 @@ export const ORIGIN_DEEP: OriginDeep = {
       paras: [
         "La licitație nu puteți vedea mașina personal, așa că fiecare detaliu din anunț contează. Înainte de a licita:",
         [
-          "Verificați istoricul după VIN (de ex. Carfax, AutoCheck, baza NMVTIS): avarii, kilometraj, număr de proprietari, furt și inundații.",
+          "Verificați istoricul după VIN (de ex. carVertical, baza NMVTIS): avarii, kilometraj, număr de proprietari, furt și inundații.",
           "Studiați fotografiile și descrierea avariilor (primary / secondary damage). „Front end” poate însemna orice, de la bară la lonjeroane îndoite și airbaguri declanșate.",
           "Citiți atent etichetele de stare: „Run and Drive” înseamnă că mașina a mers la sosirea în parc, nu că este aptă de circulație; „Engine Starts” înseamnă doar că motorul a pornit.",
           "Atenție la mașinile din zone cu uragane și inundații (Florida, Texas, Louisiana). Urme de apă sub mochetă, mâl și conectori electrici corodați sunt motive să renunțați.",

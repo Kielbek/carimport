@@ -41,7 +41,7 @@ export const ORIGIN_DEEP: OriginDeep = {
       paras: [
         "Huutokaupassa et näe autoa itse, joten jokainen ilmoituksen yksityiskohta on tärkeä. Ennen tarjousta:",
         [
-          "Tarkista historia VIN-numerolla (esim. Carfax, AutoCheck, NMVTIS-tietokanta): vauriot, ajokilometrit, omistajien määrä, varkaudet ja tulvat.",
+          "Tarkista historia VIN-numerolla (esim. carVertical, NMVTIS-tietokanta): vauriot, ajokilometrit, omistajien määrä, varkaudet ja tulvat.",
           "Tutki kuvat ja vauriokuvaus (primary / secondary damage). ”Front end” voi tarkoittaa mitä tahansa puskurista vääntyneisiin runkopalkkeihin ja lauenneisiin turvatyynyihin.",
           "Lue kuntomerkinnät tarkasti: ”Run and Drive” tarkoittaa, että auto liikkui saapuessaan alueelle, ei että se olisi liikennekelpoinen; ”Engine Starts” tarkoittaa vain, että moottori käynnistyi.",
           "Ole varovainen hurrikaani- ja tulva-alueiden autojen kanssa (Florida, Texas, Louisiana). Vesijäljet maton alla, liete ja syöpyneet sähköliittimet ovat syy luopua kaupasta.",

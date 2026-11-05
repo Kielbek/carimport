@@ -17,7 +17,7 @@ const ROWS: readonly { date: string; key: string; bad?: boolean; photos?: boolea
     <figure class="mt-8">
       <div class="overflow-hidden rounded-[8px] border border-line bg-panel">
         <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-line bg-panel-2 px-4 py-2.5">
-          <span class="text-sm font-extrabold">{{ 'vinCompare.mock.title' | translate }}</span>
+          <span class="text-sm font-extrabold">{{ 'reportMock.title' | translate }}</span>
           <span class="font-mono text-xs font-bold tracking-wide">VIN 1FA6P8CF7L5123456</span>
         </div>
         <ol class="px-4 py-3 sm:px-5">
@@ -27,7 +27,7 @@ const ROWS: readonly { date: string; key: string; bad?: boolean; photos?: boolea
               <div class="relative border-l-2 pl-4" [class.border-line]="!r.bad" [class.border-danger]="r.bad">
                 <span class="absolute -left-[7px] top-1 size-3 rounded-full border-2 border-panel"
                       [class]="r.bad ? 'bg-danger' : 'bg-[var(--cat-2)]'"></span>
-                <p class="text-sm" [class.font-semibold]="r.bad" [class.text-danger]="r.bad">{{ 'vinCompare.mock.' + r.key | translate }}</p>
+                <p class="text-sm" [class.font-semibold]="r.bad" [class.text-danger]="r.bad">{{ 'reportMock.' + r.key | translate }}</p>
                 @if (r.photos) {
                   <div class="mt-2 flex gap-2">
                     @for (n of [1, 2, 3]; track n) {
@@ -43,7 +43,7 @@ const ROWS: readonly { date: string; key: string; bad?: boolean; photos?: boolea
           }
         </ol>
       </div>
-      <figcaption class="mt-2 text-xs text-muted">{{ 'vinCompare.mock.caption' | translate }}</figcaption>
+      <figcaption class="mt-2 text-xs text-muted">{{ 'reportMock.caption' | translate }}</figcaption>
     </figure>
   `,
 })

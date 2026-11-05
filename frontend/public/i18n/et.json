@@ -513,7 +513,6 @@
     "contact": "Kontakt",
     "vin": "VIN-kontroll",
     "copart": "Copart – kuidas osta",
-    "vinCompare": "VIN-raportide võrdlus",
     "euImport": "Auto import EList"
   },
   "footer": {
@@ -888,10 +887,6 @@
     "copart": {
       "title": "Copart Eestist: auto ost USA-st – kulud, maakler, 0% toll (2026) | Carglo",
       "description": "Copart Eestis ei tegutse – pakkumisi saab teha USA oksjonitel maakleri kaudu. Tasud, salvage-title, transport 4–8 nädalaga ja kogukulu koos tolli ja käibemaksuga. USA autodel võib alates juulist 2026 olla 0% toll."
-    },
-    "vinCompare": {
-      "title": "VIN-ajalooraportide võrdlus: carVertical, autoDNA, Carfax, AutoCheck | Carglo",
-      "description": "Millise VIN-raporti valida USA-st või Euroopast pärit autole? Katvus, kahjustuste ja title’i andmed, fotod ja hinnad: carVertical, autoDNA, Carfax, AutoCheck, VinAudit, Automano."
     },
     "euImport": {
       "title": "Auto import Saksamaalt või EList – kulude kalkulaator: transport, registreerimistasu | Carglo",
@@ -1960,7 +1955,11 @@
     "title": "Enne pakkumist kontrolli auto ajalugu VIN-i järgi",
     "text": "Ajalooraport näitab muu hulgas varasemaid kahjustusi, läbisõitu ja möödunud oksjoneid. See maksab murdosa isegi väikesest remondist.",
     "button": "Kontrolli VIN-i: {{partner}}",
-    "label": "Partnerlink – Carglo võib saada vahendustasu. See ei mõjuta meie arvutusi."
+    "label": "Partnerlink – Carglo võib saada vahendustasu. See ei mõjuta meie arvutusi.",
+    "code": "Sooduskood:",
+    "discount": "−{{pct}}% {{partner}}i raportitelt",
+    "copy": "Kopeeri",
+    "copied": "Kopeeritud"
   },
   "vinPage": {
     "eyebrow": "Tööriist ja juhend",
@@ -2035,7 +2034,6 @@
       "q6": "Kas dekooder töötab Jaapani autodega?",
       "a6": "Ainult siis, kui autol on 17-märgiline VIN. Enamikul Jaapani turu autodest on lühem raaminumber – nende ajalugu kontrollitakse auction sheet’i põhjal."
     },
-    "compareLink": "VIN-raportite pakkujate võrdlus – millise valida",
     "anatomy": {
       "country": "riik",
       "maker": "tootja",
@@ -2177,131 +2175,6 @@
       "registration": "Registreerimine ja muu"
     }
   },
-  "vinCompare": {
-    "eyebrow": "Võrdlus",
-    "title": "VIN-ajalooraportid – millise teenuse valida USA-st või Euroopast pärit autole",
-    "lead": "Võrdlesime populaarseimaid sõiduki ajalooraportite teenuseid: andmete katvus, USA kahjustuste ja title’i andmed, varasemate kuulutuste fotod ja hinnad. Lõpus – kuidas valida raport konkreetsele autole.",
-    "checked": "Hinnad ja ulatus kontrollitud: {{date}}. Hinnad on ligikaudsed ja võivad muutuda.",
-    "eu": "EL",
-    "verdict": {
-      "us": {
-        "for": "Auto USA oksjonilt",
-        "pick": "AutoCheck või Carfax",
-        "why": "Põhjalikumad USA andmed: kahjustused, title’id, oksjonite ja hoolduse ajalugu."
-      },
-      "eu": {
-        "for": "Euroopast ostetud auto",
-        "pick": "carVertical või autoDNA",
-        "why": "Andmed paljudest EL-i riikidest, raport sinu keeles."
-      },
-      "budget": {
-        "for": "Kiire ja odav kontroll",
-        "pick": "VinAudit",
-        "why": "Ametlikud NMVTIS-andmed title’i ja täiskahjude kohta mõne dollari eest."
-      }
-    },
-    "table": {
-      "title": "Lühidalt",
-      "service": "Teenus",
-      "regions": "Andmete katvus",
-      "usTitles": "USA title’id ja täiskahjud",
-      "photos": "Fotod ajaloost",
-      "price": "Raporti hind",
-      "note": "„Mõnikord” – fotod ilmuvad, kui teenusel need on (nt varasematest kuulutustest või oksjonitelt). Andmete ulatus sõltub konkreetsest VIN-ist."
-    },
-    "value": {
-      "yes": "jah",
-      "partial": "osaliselt",
-      "no": "ei",
-      "sometimes": "mõnikord",
-      "unknown": "sõltumatud andmed puuduvad"
-    },
-    "providers": "Teenused ükshaaval",
-    "visit": "Mine: {{name}}",
-    "pros": "Plussid",
-    "cons": "Miinused",
-    "bestFor": "Kellele:",
-    "p": {
-      "carvertical": {
-        "desc": "Leedu teenus, mis tegutseb paljudes Euroopa riikides ja USA-s. Väidab, et kasutab üle 1000 andmeallika – registrid, kindlustusseltsid, töökojad, politsei. USA autode puhul näitab muu hulgas title’i märkeid (salvage, rebuilt, junk).",
-        "pros": "• Euroopa ja USA andmed ühes raportis.\n• Raport ja klienditugi paljudes EL-i keeltes.\n• Fotod ajaloost, kui need on olemas.",
-        "cons": "• Kallim kui USA soodsad teenused.\n• Vähem USA andmeid kui Carfaxil või AutoCheckil.",
-        "best": "Euroopa ostjatele, kes soovivad ühte raportit USA-st või EL-ist pärit autole."
-      },
-      "autodna": {
-        "desc": "Poola teenus, kõige tugevam Poolas ning Kesk- ja Ida-Euroopas. Andmebaas katab kümneid Euroopa ja Põhja-Ameerika riike; raportid sisaldavad muu hulgas läbisõitu, kahjustusi ja – kui need on – fotosid.",
-        "pros": "• Väga head andmed Poolast ja piirkonnast.\n• Odavam kui carVertical, mitme raporti paketid.\n• Tasuta eelkontroll, kas andmeid leidub.",
-        "cons": "• Vähem Lääne-Euroopa andmeid kui konkurentidel.\n• USA auto puhul lisa ka USA allikas.",
-        "best": "Poolast ja naaberriikidest pärit autodele ning teise allikana."
-      },
-      "carfax": {
-        "desc": "USA tuntuim teenus. Tal on lai juurdepääs kindlustusseltside, politsei ja töökodade andmetele, seega näitab ta õnnetusi ja hooldusajalugu kõige paremini.",
-        "pros": "• USA põhjalikum õnnetuste ja hoolduse ajalugu.\n• Ostjad tunnevad seda edasimüügil.",
-        "cons": "• Kalleim üksikraport.\n• Nõrk väljaspool USA-d ja Kanadat pärit autode puhul.",
-        "best": "kallimatele USA autodele, mille puhul hooldusajalugu loeb."
-      },
-      "autocheck": {
-        "desc": "Experianile kuuluv teenus. Eriti tugev oksjonite ajaloos – seda kasutavad edasimüüjad ja oksjonimajad. Annab ka AutoCheck Score’i hinnangu.",
-        "pros": "• Väga head andmed USA oksjonite kohta.\n• Odavam kui Carfax.",
-        "cons": "• Vähem hoolduse üksikasju kui Carfaxil.\n• Ainult USA autod.",
-        "best": "Copart’i ja IAAI oksjonite autodele."
-      },
-      "vinaudit": {
-        "desc": "Riikliku NMVTIS-andmebaasi ametlikult heakskiidetud andmepakkuja. Näitab title’i märkeid, täiskahjusid, läbisõidunäite ja vargusandmeid.",
-        "pros": "• Väga odav, paketid veel odavamad.\n• Ametlikud NMVTIS-andmed title’i ja täiskahjude kohta.",
-        "cons": "• Vähe üksikasju väiksemate õnnetuste ja hoolduse kohta.\n• Fotosid pole.",
-        "best": "paljude autode kiireks esmaseks kontrolliks enne pakkumist."
-      },
-      "automano": {
-        "desc": "Uus soodne VIN-raportite teenus. Sõltumatuid arvustusi ega andmeallikate täpset kirjeldust me veel ei leidnud – käsitle seda odava esmase kontrollina.",
-        "pros": "• Madal raporti hind.",
-        "cons": "• Vähe sõltumatuid arvustusi.\n• Ei avalda oma andmeallikaid.",
-        "best": "odavaks esmaseks kontrolliks – kallima auto puhul telli raport ka tuntumalt teenuselt."
-      }
-    },
-    "how": {
-      "title": "Kuidas me võrdlesime",
-      "text": "Vaatasime läbi teenuste kirjeldused ja hinnakirjad ning 2026. aasta oktoobri sõltumatud võrdlused. Keskendusime sellele, mis impordil kõige olulisem: kust andmed pärinevad, kas raport näitab USA title’eid ja täiskahjusid, kas see sisaldab fotosid ajaloost ja kui palju üks raport maksab.\nMe ei testinud raporteid samade VIN-idega – andmete ulatus sõltub konkreetsest autost, seega tasub kallima auto puhul tellida kaks raportit eri teenustelt."
-    },
-    "free": {
-      "title": "Mida saab tasuta kontrollida",
-      "text": "Enne raporti eest maksmist kontrolli tasuta:\n• NICB VINCheck – kas auto on teatatud varastatuks või täiskahjuks (USA).\n• NHTSA Recalls – VIN-i avatud tagasikutsed.\n• MOT-ajalugu gov.uk lehel – Ühendkuningriigist pärit autodele.\n• Copart’i ja IAAI oksjonite mitteametlikud arhiivid – näitavad mõnikord varasema müügi fotosid ja hinda; need pole oksjonitega seotud ja võivad kaduda.\nMeie tasuta VIN-dekooder loeb ka välja margi, mudeli, aasta, mootori ja tootjariigi."
-    },
-    "read": {
-      "title": "Kuidas raportit lugeda",
-      "text": "• Võrdle läbisõitu aastate kaupa – langus tähendab tagasi keritud näitu.\n• Otsi title’i märkeid: salvage, rebuilt, flood, junk.\n• Pane tähele registreerimisosariike – Florida, Texase ja Louisiana autodel on sagedamini üleujutuskahjustusi.\n• Mitu oksjonit lühikese aja jooksul viitab sellele, et autot oli raske müüa.\n• Kirje puudumine ei tähenda kahju puudumist – raport näitab vaid teatatut."
-    },
-    "choose": {
-      "title": "Millise raporti valida",
-      "text": "• Auto USA oksjonilt (Copart, IAAI): kõigepealt tasuta NICB ja odav VinAudit ning enne kallimale autole pakkumist AutoCheck või Carfax.\n• Auto USA-st, kui soovid ühte raportit oma keeles: carVertical.\n• Auto Poolast või naaberriikidest: autoDNA, teise allikana carVertical.\n• Auto Ühendkuningriigist: tasuta MOT-ajalugu pluss Euroopa teenuse raport.\nKümnete tuhandete eurode väärtuses auto puhul maksavad kaks raportit eri teenustelt murdosa võimalikust kahjust."
-    },
-    "faq": {
-      "title": "Korduma kippuvad küsimused",
-      "q1": "Milline VIN-raport on USA autole parim?",
-      "a1": "USA oksjoniauto puhul annavad kõige rohkem andmeid AutoCheck (oksjonite ajalugu) ja Carfax (õnnetused ja hooldus). Title’i ja täiskahjude kiireks kontrolliks piisab odavamast VinAuditist.",
-      "q2": "Kas carVertical kontrollib USA autosid?",
-      "a2": "Jah – teenuse sõnul sisaldab raport muu hulgas USA title’i märkeid (salvage, rebuilt, junk). USA katvus on siiski väiksem kui USA teenustel.",
-      "q3": "autoDNA või carVertical – kumb on parem?",
-      "a3": "autoDNA on tugevam Poolas ning Kesk- ja Ida-Euroopas ja tavaliselt odavam; carVerticalil on laiem katvus Lääne-Euroopas ja USA-s. Kallima auto puhul tasub kontrollida mõlemat.",
-      "q4": "Kas raport näitab Copart’i oksjoni fotosid?",
-      "a4": "Mõnikord – mõned raportid sisaldavad varasemate kuulutuste fotosid, kui teenusel need on. Ükski seda ei garanteeri. Salvesta praeguse oksjoni fotod ise, sest pärast müüki leht kaob.",
-      "q5": "Kas tasuta VIN-raportist piisab?",
-      "a5": "Tasuta andmebaasid (NICB, NHTSA) näitavad vargust, täiskahju ja tagasikutseid, kuid mitte täielikku õnnetuste ja läbisõidu ajalugu. Ostuotsuseks on tavaliselt vaja tasulist raportit.",
-      "q6": "Kas teenite nende linkidega raha?",
-      "a6": "Mõne teenuse puhul jah – sellised lingid on märgitud partnerlinkidena. See ei mõjuta meie soovitusi: järjestus põhineb andmete katvusel, mitte vahendustasul."
-    },
-    "disclaimer": "Carglo ei ole kirjeldatud teenustega seotud. Nimed kuuluvad nende omanikele. Hinnad ja ulatus pärinevad teenuste kirjeldustest ja 2026. aasta oktoobri võrdlustest – kontrolli enne ostu kehtivat pakkumist.",
-    "decoder": "Tasuta VIN-dekooder",
-    "mock": {
-      "title": "Sõiduki ajalooraport",
-      "r1": "Esmane registreerimine – Florida",
-      "r2": "Läbisõidunäit: 28 400 miili",
-      "r3": "Kahjustus: esiosa, turvapadjad avanesid",
-      "r4": "Title muudetud: SALVAGE",
-      "r5": "Oksjon – 3 fotot enne remonti",
-      "caption": "Illustratsioon – selline näeb ajalooraport tavaliselt välja. Andmete ulatus sõltub teenusest ja VIN-ist."
-    }
-  },
   "euImport": {
     "eyebrow": "ELi impordi kalkulaator",
     "title": "Kui palju maksab tuua auto Saksamaalt või muust ELi riigist",
@@ -2386,5 +2259,14 @@
     "title": "Vali keel",
     "lead": "Näitame hindu, makse ja juhendeid valitud keele riigi kohta. Keelt saad igal ajal lehe ülaosas muuta.",
     "suggested": "Soovitatud"
+  },
+  "reportMock": {
+    "title": "Sõiduki ajalooraport",
+    "r1": "Esmane registreerimine – Florida",
+    "r2": "Läbisõidunäit: 28 400 miili",
+    "r3": "Kahjustus: esiosa, turvapadjad avanesid",
+    "r4": "Title muudetud: SALVAGE",
+    "r5": "Oksjon – 3 fotot enne remonti",
+    "caption": "Illustratsioon – selline näeb ajalooraport tavaliselt välja. Andmete ulatus sõltub teenusest ja VIN-ist."
   }
 }
