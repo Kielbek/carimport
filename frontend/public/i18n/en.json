@@ -2381,5 +2381,10 @@
     },
     "wizardHint": "Buying a car in Germany or another EU country?",
     "wizardLink": "Use the EU import calculator"
+  },
+  "langPicker": {
+    "title": "Choose your language",
+    "lead": "We show prices, taxes and guides for the country of the language you pick. You can change it at any time at the top of the page.",
+    "suggested": "Suggested"
   }
 }

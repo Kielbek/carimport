@@ -1,7 +1,5 @@
-import { inject } from '@angular/core';
 import { Route, Routes } from '@angular/router';
-import { languageGuard } from './core/i18n/language.guard';
-import { LanguageService } from './core/i18n/language.service';
+import { languageGuard, rootGuard } from './core/i18n/language.guard';
 import { ALL_SECTION_SLUGS } from './core/routing/guide-paths';
 import { SLUGS } from './core/routing/paths';
 import { blogResolver } from './features/blog/blog-content';
@@ -37,7 +35,21 @@ const localized = (slugs: Record<string, string>, load: NonNullable<Route['loadC
   [...new Set(Object.values(slugs))].map((path) => ({ path, loadComponent: load, data: { page } }));
 
 export const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: () => inject(LanguageService).detect() },
+  // the bare domain: home page in the default language, indexable, no redirect (see rootGuard)
+  {
+    path: '',
+    pathMatch: 'full',
+    canActivate: [rootGuard],
+    loadComponent: () => import('./layout/shell').then((m) => m.Shell),
+    children: [
+      {
+        path: '',
+        loadComponent: () => import('./features/home/home-page').then((m) => m.HomePage),
+        data: { page: 'home', root: true },
+        resolve: { posts: blogResolver },
+      },
+    ],
+  },
   // operator panel: Polish only, client-rendered, not indexed
   { path: 'admin', loadComponent: () => import('./features/admin/admin-page').then((m) => m.AdminPage), data: { page: 'admin' } },
   {

@@ -68,11 +68,12 @@ export class SeoService {
   private readonly meta = inject(Meta);
   private readonly translate = inject(TranslateService);
 
-  apply(page: Page, lang: Lang, indexable = true): void {
+  /** @param path the page's own path when it is not the usual one - '/' for the bare domain */
+  apply(page: Page, lang: Lang, indexable = true, path?: string): void {
     const t = (key: string) => this.translate.instant(key) as string;
     const pageTitle = t(`seo.${page}.title`);
     const description = t(`seo.${page}.description`);
-    const url = SITE.url + pathFor(page, lang);
+    const url = SITE.url + (path ?? pathFor(page, lang));
 
     this.title.setTitle(pageTitle);
     this.meta.updateTag({ name: 'description', content: description });
@@ -151,11 +152,14 @@ export class SeoService {
     this.meta.updateTag({ name: 'robots', content: 'noindex,nofollow' });
   }
 
+  /** The home page's x-default is the bare domain; other pages' is their English version. */
   private setLinks(page: Page, canonical: string): void {
-    this.writeLinks(canonical, (l) => SITE.url + pathFor(page, l));
+    this.writeLinks(canonical, (l) => SITE.url + pathFor(page, l), SUPPORTED_LANGS,
+      page === 'home' ? SITE.url + '/' : undefined);
   }
 
-  private writeLinks(canonical: string, alternate: (lang: Lang) => string, langs: readonly Lang[] = SUPPORTED_LANGS): void {
+  private writeLinks(canonical: string, alternate: (lang: Lang) => string, langs: readonly Lang[] = SUPPORTED_LANGS,
+                     xDefault?: string): void {
     const head = this.document.head;
     head.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang]').forEach((l) => l.remove());
     const add = (attrs: Record<string, string>) => {
@@ -167,7 +171,7 @@ export class SeoService {
     for (const l of langs) {
       add({ rel: 'alternate', hreflang: l, href: alternate(l) });
     }
-    add({ rel: 'alternate', hreflang: 'x-default', href: alternate(langs.includes('en') ? 'en' : langs[0]) });
+    add({ rel: 'alternate', hreflang: 'x-default', href: xDefault ?? alternate(langs.includes('en') ? 'en' : langs[0]) });
   }
 
   private setJsonLd(page: Page, lang: Lang, name: string, description: string, url: string, t: (k: string) => string) {

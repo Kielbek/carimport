@@ -39,7 +39,7 @@ export class PageContext {
       return; // guide and blog pages set their own head tags and language links
     }
     if (page && INDEXABLE.includes(page as Page) && !data['noindex']) {
-      this.seo.apply(page as Page, this.lang.current());
+      this.seo.apply(page as Page, this.lang.current(), true, data['root'] ? '/' : undefined);
       this.hrefFor.set((l) => pathFor(page as Page, l));
     } else {
       this.seo.noindex();

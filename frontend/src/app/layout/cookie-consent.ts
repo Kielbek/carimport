@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { AnalyticsService } from '../core/analytics/analytics.service';
 import { LanguageService } from '../core/i18n/language.service';
+import { LanguagePickerState } from './language-picker';
 import { pathFor } from '../core/routing/paths';
 
 const KEY = 'carimport.consent';
@@ -34,16 +35,19 @@ export type Consent = 'all' | 'necessary';
 export class CookieConsent {
   private readonly lang = inject(LanguageService);
   private readonly analytics = inject(AnalyticsService);
-  protected readonly visible = signal(false);
+  private readonly picker = inject(LanguagePickerState);
+  /** No choice saved yet; shown only once the language picker is out of the way (one overlay at a time). */
+  private readonly needed = signal(false);
+  protected readonly visible = computed(() => this.needed() && !this.picker.open());
   protected readonly privacy = computed(() => pathFor('privacy', this.lang.current()));
 
   constructor() {
     afterNextRender(() => {
       try {
-        this.visible.set(!localStorage.getItem(KEY));
+        this.needed.set(!localStorage.getItem(KEY));
         this.analytics.init();
       } catch {
-        this.visible.set(true);
+        this.needed.set(true);
       }
     });
   }
@@ -54,7 +58,7 @@ export class CookieConsent {
     } catch {
       // not persisted; banner returns next visit
     }
-    this.visible.set(false);
+    this.needed.set(false);
     this.analytics.init(); // loads the analytics provider only when the choice was 'all'
   }
 }

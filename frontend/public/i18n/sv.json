@@ -2381,5 +2381,10 @@
     },
     "wizardHint": "Köper du bil i Tyskland eller ett annat EU-land?",
     "wizardLink": "Använd kalkylatorn för import från EU"
+  },
+  "langPicker": {
+    "title": "Välj språk",
+    "lead": "Vi visar priser, skatter och guider för landet för det valda språket. Du kan när som helst byta språk högst upp på sidan.",
+    "suggested": "Föreslaget"
   }
 }

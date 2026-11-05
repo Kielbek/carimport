@@ -54,10 +54,10 @@ const blog: ServerRoute[] = [
 
 /**
  * Static output: public, indexable pages are prerendered to HTML at build time (fast, crawlable, CDN-friendly);
- * personal pages (report, quote links) and the language-detecting root render in the browser.
+ * personal pages (report, quote links) render in the browser. The bare domain is prerendered too (home page in ROOT_LANG).
  */
 export const serverRoutes: ServerRoute[] = [
-  { path: '', renderMode: RenderMode.Client },
+  { path: '', renderMode: RenderMode.Prerender },
   { path: 'admin', renderMode: RenderMode.Client },
   { path: ':lang', renderMode: RenderMode.Prerender, getPrerenderParams: allLangs },
   ...perLanguage(SLUGS.calculator),

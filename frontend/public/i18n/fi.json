@@ -2381,5 +2381,10 @@
     },
     "wizardHint": "Ostatko auton Saksasta tai muusta EU-maasta?",
     "wizardLink": "Käytä EU-tuontilaskuria"
+  },
+  "langPicker": {
+    "title": "Valitse kieli",
+    "lead": "Näytämme hinnat, verot ja oppaat valitsemasi kielen maalle. Voit vaihtaa kielen milloin tahansa sivun yläosasta.",
+    "suggested": "Ehdotettu"
   }
 }

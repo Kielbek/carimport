@@ -2381,5 +2381,10 @@
     },
     "wizardHint": "Vai comprar um carro na Alemanha ou noutro país da UE?",
     "wizardLink": "Use a calculadora de importação UE"
+  },
+  "langPicker": {
+    "title": "Escolha o idioma",
+    "lead": "Mostramos preços, impostos e guias para o país do idioma escolhido. Pode mudá-lo a qualquer momento no topo da página.",
+    "suggested": "Sugerido"
   }
 }

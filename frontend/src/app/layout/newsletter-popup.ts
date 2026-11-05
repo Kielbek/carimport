@@ -4,6 +4,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { AnalyticsService } from '../core/analytics/analytics.service';
 import { NewsletterSignup, newsletterState, snoozeNewsletter } from '../features/newsletter/newsletter-signup';
 import { Icon } from '../shared/icon/icon';
+import { LanguagePickerState } from './language-picker';
 
 const CONSENT_KEY = 'carimport.consent';
 const SESSION_START = 'carimport.session-start';
@@ -66,6 +67,7 @@ export class NewsletterPopup {
   private readonly analytics = inject(AnalyticsService);
   protected readonly open = inject(NewsletterCard).open;
   protected readonly done = signal(false);
+  private readonly picker = inject(LanguagePickerState);
   /** Other pages opened after the first one in this visit of the shell. */
   private pagesSeen = 0;
   private maxScroll = 0;
@@ -121,7 +123,7 @@ export class NewsletterPopup {
   }
 
   private tryShow(): void {
-    if (this.open() || this.done() || !this.eligible() || !this.allowedHere()) {
+    if (this.open() || this.done() || this.picker.open() || !this.eligible() || !this.allowedHere()) {
       return;
     }
     try {
