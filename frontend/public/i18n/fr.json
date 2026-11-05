@@ -571,7 +571,7 @@
       },
       "s4": {
         "title": "Résultat et rapport",
-        "text": "Trois scénarios gratuits, et un PDF au centime près quand vous êtes prêt à acheter."
+        "text": "Une estimation gratuite avec une fourchette, et un PDF avec chaque poste et trois scénarios quand vous êtes prêt à acheter."
       },
       "step": "Étape"
     },
@@ -773,7 +773,7 @@
       "name": "Estimation rapide",
       "price": "Gratuit",
       "f1": "Fourchette du coût rendu",
-      "f2": "Graphique de la structure des coûts",
+      "f2": "Résultat par e-mail",
       "f3": "Durée de transit et avertissements",
       "f4": "Sans inscription",
       "cta": "Calculer gratuitement"
@@ -840,7 +840,7 @@
   },
   "calc": {
     "title": "Calculateur du coût d’importation d’une voiture",
-    "lead": "Six étapes : origine, véhicule, état, destination, après l’importation et rapport. Le résultat s’affiche à la fin – en trois scénarios.",
+    "lead": "Six étapes : origine, véhicule, état, destination, après l’importation et rapport. Le résultat s’affiche à la fin.",
     "currency": "Devise du résultat",
     "progress": "Progression"
   },
@@ -1142,7 +1142,7 @@
       "lead": "Le résultat du calculateur ne dépend ni de qui nous paie ni du montant. Nous gagnons de l’argent de trois façons, toutes transparentes :",
       "m1": {
         "title": "Rapport PDF – 4,99 €",
-        "text": "Le résultat gratuit affiche la fourchette et la structure des coûts. Vous n’achetez le rapport détaillé avec chaque poste que si vous en avez besoin."
+        "text": "Le résultat gratuit affiche une estimation et sa fourchette. Vous n’achetez le rapport détaillé poste par poste que si vous en avez besoin."
       },
       "m2": {
         "title": "Demande facultative à une société d’importation",

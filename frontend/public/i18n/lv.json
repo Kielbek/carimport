@@ -571,7 +571,7 @@
       },
       "s4": {
         "title": "Rezultāts un atskaite",
-        "text": "Trīs scenāriji bez maksas un PDF līdz centam, kad esat gatavs pirkt."
+        "text": "Bezmaksas aplēse ar diapazonu, bet PDF ar katru pozīciju un trim scenārijiem – kad esat gatavs pirkt."
       },
       "step": "Solis"
     },
@@ -773,7 +773,7 @@
       "name": "Ātrs aprēķins",
       "price": "Bez maksas",
       "f1": "Kopējo izmaksu diapazons",
-      "f2": "Izmaksu struktūras diagramma",
+      "f2": "Rezultāts e-pastā",
       "f3": "Pārvadājuma laiks un brīdinājumi",
       "f4": "Bez reģistrācijas",
       "cta": "Aprēķināt bez maksas"
@@ -840,7 +840,7 @@
   },
   "calc": {
     "title": "Auto importa izmaksu kalkulators",
-    "lead": "Seši soļi: izcelsme, transportlīdzeklis, stāvoklis, galamērķis, pēc importa un atskaite. Rezultāts tiek parādīts beigās – trīs scenārijos.",
+    "lead": "Seši soļi: izcelsme, transportlīdzeklis, stāvoklis, galamērķis, pēc importa un atskaite. Rezultāts tiek parādīts beigās.",
     "currency": "Rezultāta valūta",
     "progress": "Progress"
   },
@@ -1142,7 +1142,7 @@
       "lead": "Kalkulatora rezultāts nav atkarīgs no tā, kas mums maksā un cik. Mēs pelnām trīs veidos, visi ir atklāti:",
       "m1": {
         "title": "PDF atskaite – 4,99 €",
-        "text": "Bezmaksas rezultāts parāda diapazonu un izmaksu struktūru. Detalizētu atskaiti ar katru pozīciju pērkat tikai tad, ja tā jums nepieciešama."
+        "text": "Bezmaksas rezultāts parāda aplēsi un izmaksu diapazonu. Detalizēto atskaiti ar katru pozīciju pērkat tikai tad, ja tā ir vajadzīga."
       },
       "m2": {
         "title": "Neobligāts pieprasījums importa uzņēmumam",

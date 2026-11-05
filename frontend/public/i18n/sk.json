@@ -571,7 +571,7 @@
       },
       "s4": {
         "title": "Výsledok a report",
-        "text": "Tri scenáre zadarmo a PDF presné na cent, keď budete pripravení kúpiť."
+        "text": "Zadarmo odhad s rozpätím a PDF s každou položkou a tromi scenármi, keď budete pripravení kúpiť."
       },
       "step": "Krok"
     },
@@ -773,7 +773,7 @@
       "name": "Rýchly odhad",
       "price": "Zadarmo",
       "f1": "Rozpätie celkových nákladov",
-      "f2": "Graf štruktúry nákladov",
+      "f2": "Výsledok e-mailom",
       "f3": "Čas prepravy a upozornenia",
       "f4": "Bez registrácie",
       "cta": "Vypočítať zadarmo"
@@ -840,7 +840,7 @@
   },
   "calc": {
     "title": "Kalkulačka nákladov na dovoz auta",
-    "lead": "Šesť krokov: pôvod, vozidlo, stav, cieľ, po dovoze a report. Výsledok dostanete na konci – v troch scenároch.",
+    "lead": "Šesť krokov: pôvod, vozidlo, stav, cieľ, po dovoze a report. Výsledok dostanete na konci.",
     "currency": "Mena výsledku",
     "progress": "Postup"
   },
@@ -1142,7 +1142,7 @@
       "lead": "Výsledok kalkulačky nezávisí od toho, kto nám platí ani koľko. Zarábame tromi spôsobmi, všetkými otvorene:",
       "m1": {
         "title": "PDF report – 4,99 €",
-        "text": "Bezplatný výsledok ukazuje rozpätie a štruktúru nákladov. Podrobný report so všetkými položkami si kúpite, len ak ho potrebujete."
+        "text": "Bezplatný výsledok ukazuje odhad a rozpätie nákladov. Podrobný report s každou položkou si kúpite, len ak ho potrebujete."
       },
       "m2": {
         "title": "Nepovinný dopyt u dovoznej firmy",

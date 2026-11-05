@@ -571,7 +571,7 @@
       },
       "s4": {
         "title": "Resultado e relatório",
-        "text": "Três cenários grátis e um PDF ao cêntimo quando estiver pronto para comprar."
+        "text": "Uma estimativa gratuita com intervalo e um PDF com cada rubrica e três cenários quando estiver pronto para comprar."
       },
       "step": "Passo"
     },
@@ -773,7 +773,7 @@
       "name": "Estimativa rápida",
       "price": "Grátis",
       "f1": "Intervalo do custo no destino",
-      "f2": "Gráfico da estrutura de custos",
+      "f2": "Resultado por e-mail",
       "f3": "Tempo de trânsito e alertas",
       "f4": "Sem registo",
       "cta": "Calcular grátis"
@@ -840,7 +840,7 @@
   },
   "calc": {
     "title": "Calculadora de custos de importação de carros",
-    "lead": "Seis passos: origem, veículo, estado, destino, pós-importação e relatório. O resultado surge no fim – em três cenários.",
+    "lead": "Seis passos: origem, veículo, estado, destino, pós-importação e relatório. O resultado surge no fim.",
     "currency": "Moeda do resultado",
     "progress": "Progresso"
   },
@@ -1142,7 +1142,7 @@
       "lead": "O resultado da calculadora não depende de quem nos paga nem de quanto. Ganhamos de três formas, todas às claras:",
       "m1": {
         "title": "Relatório PDF – 4,99 €",
-        "text": "O resultado gratuito mostra o intervalo e a estrutura de custos. Só compra o relatório detalhado com todas as rubricas se precisar dele."
+        "text": "O resultado gratuito mostra uma estimativa e o seu intervalo. Só compra o relatório detalhado com cada rubrica se precisar dele."
       },
       "m2": {
         "title": "Pedido opcional a uma empresa de importação",

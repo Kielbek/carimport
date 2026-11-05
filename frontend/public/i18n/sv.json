@@ -571,7 +571,7 @@
       },
       "s4": {
         "title": "Resultat och rapport",
-        "text": "Tre scenarier gratis och en PDF exakt på öret när du är redo att köpa."
+        "text": "En gratis uppskattning med intervall – och en PDF med varje post och tre scenarier när du är redo att köpa."
       },
       "step": "Steg"
     },
@@ -773,7 +773,7 @@
       "name": "Snabb uppskattning",
       "price": "Gratis",
       "f1": "Intervall för total kostnad",
-      "f2": "Diagram över kostnadsstruktur",
+      "f2": "Resultatet via e-post",
       "f3": "Transporttid och varningar",
       "f4": "Utan registrering",
       "cta": "Beräkna gratis"
@@ -840,7 +840,7 @@
   },
   "calc": {
     "title": "Kalkylator för bilimportkostnader",
-    "lead": "Sex steg: ursprung, fordon, skick, destination, efter import och rapport. Resultatet kommer i slutet – i tre scenarier.",
+    "lead": "Sex steg: ursprung, fordon, skick, destination, efter import och rapport. Resultatet kommer i slutet.",
     "currency": "Valuta för resultatet",
     "progress": "Förlopp"
   },
@@ -1142,7 +1142,7 @@
       "lead": "Kalkylatorns resultat beror inte på vem som betalar oss eller hur mycket. Vi tjänar pengar på tre sätt, alla öppet redovisade:",
       "m1": {
         "title": "PDF-rapport – 59 kr",
-        "text": "Det kostnadsfria resultatet visar intervallet och kostnadsstrukturen. Den detaljerade rapporten med varje post köper du bara om du behöver den."
+        "text": "Det kostnadsfria resultatet visar en uppskattning och ett intervall. Den detaljerade rapporten med varje post köper du bara om du behöver den."
       },
       "m2": {
         "title": "Valfri förfrågan till ett importföretag",

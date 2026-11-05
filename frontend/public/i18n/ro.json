@@ -571,7 +571,7 @@
       },
       "s4": {
         "title": "Rezultat și raport",
-        "text": "Trei scenarii gratuit și un PDF exact la cent atunci când ești gata să cumperi."
+        "text": "O estimare gratuită cu interval, iar un PDF cu fiecare poziție și trei scenarii când ești gata să cumperi."
       },
       "step": "Pasul"
     },
@@ -773,7 +773,7 @@
       "name": "Estimare rapidă",
       "price": "Gratuit",
       "f1": "Intervalul costului total",
-      "f2": "Graficul structurii costurilor",
+      "f2": "Rezultat pe e-mail",
       "f3": "Durata tranzitului și avertizări",
       "f4": "Fără înregistrare",
       "cta": "Calculează gratuit"
@@ -840,7 +840,7 @@
   },
   "calc": {
     "title": "Calculator al costurilor de import auto",
-    "lead": "Șase pași: origine, vehicul, stare, destinație, după import și raport. Rezultatul apare la final – în trei scenarii.",
+    "lead": "Șase pași: origine, vehicul, stare, destinație, după import și raport. Rezultatul apare la final.",
     "currency": "Moneda rezultatului",
     "progress": "Progres"
   },
@@ -1142,7 +1142,7 @@
       "lead": "Rezultatul calculatorului nu depinde de cine ne plătește sau cât. Câștigăm în trei moduri, toate la vedere:",
       "m1": {
         "title": "Raport PDF – 25 lei",
-        "text": "Rezultatul gratuit arată intervalul și structura costurilor. Raportul detaliat, cu fiecare poziție, îl cumperi doar dacă ai nevoie de el."
+        "text": "Rezultatul gratuit arată o estimare și intervalul de costuri. Raportul detaliat cu fiecare poziție îl cumperi doar dacă ai nevoie de el."
       },
       "m2": {
         "title": "Cerere opțională către o firmă de import",

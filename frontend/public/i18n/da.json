@@ -571,7 +571,7 @@
       },
       "s4": {
         "title": "Resultat og rapport",
-        "text": "Tre scenarier gratis – og en PDF præcis på øren, når du er klar til at købe."
+        "text": "Et gratis estimat med interval – og en PDF med hver post og tre scenarier, når du er klar til at købe."
       },
       "step": "Trin"
     },
@@ -773,7 +773,7 @@
       "name": "Hurtigt overslag",
       "price": "Gratis",
       "f1": "Interval for samlet pris leveret",
-      "f2": "Diagram over omkostningsstrukturen",
+      "f2": "Resultatet på e-mail",
       "f3": "Transittid og advarsler",
       "f4": "Uden oprettelse",
       "cta": "Beregn gratis"
@@ -840,7 +840,7 @@
   },
   "calc": {
     "title": "Beregner til omkostninger ved bilimport",
-    "lead": "Seks trin: oprindelse, køretøj, stand, destination, efter importen og rapport. Resultatet kommer til sidst – i tre scenarier.",
+    "lead": "Seks trin: oprindelse, køretøj, stand, destination, efter importen og rapport. Resultatet kommer til sidst.",
     "currency": "Valuta for resultatet",
     "progress": "Fremskridt"
   },
@@ -1142,7 +1142,7 @@
       "lead": "Beregnerens resultat afhænger ikke af, hvem der betaler os, eller hvor meget. Vi tjener penge på tre måder, og de er alle åbne:",
       "m1": {
         "title": "PDF-rapport – 39 kr.",
-        "text": "Det gratis resultat viser intervallet og omkostningsstrukturen. Den detaljerede rapport med hver post køber du kun, hvis du har brug for den."
+        "text": "Det gratis resultat viser et estimat og et interval. Den detaljerede rapport med hver post køber du kun, hvis du har brug for den."
       },
       "m2": {
         "title": "Valgfri forespørgsel til en importvirksomhed",

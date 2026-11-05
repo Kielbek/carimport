@@ -571,7 +571,7 @@
       },
       "s4": {
         "title": "Tulemus ja raport",
-        "text": "Kolm stsenaariumi tasuta ja sendi täpsusega PDF, kui oled ostuks valmis."
+        "text": "Tasuta hinnang koos vahemikuga ning PDF iga kuluartikli ja kolme stsenaariumiga, kui oled ostuks valmis."
       },
       "step": "Samm"
     },
@@ -773,7 +773,7 @@
       "name": "Kiire hinnang",
       "price": "Tasuta",
       "f1": "Kogukulu vahemik",
-      "f2": "Kulude struktuuri diagramm",
+      "f2": "Tulemus e-postiga",
       "f3": "Transiidiaeg ja hoiatused",
       "f4": "Ilma registreerumiseta",
       "cta": "Arvuta tasuta"
@@ -840,7 +840,7 @@
   },
   "calc": {
     "title": "Autode impordikulude kalkulaator",
-    "lead": "Kuus sammu: päritolu, sõiduk, seisukord, sihtkoht, pärast importi ja raport. Tulemus selgub lõpus – kolmes stsenaariumis.",
+    "lead": "Kuus sammu: päritolu, sõiduk, seisukord, sihtkoht, pärast importi ja raport. Tulemus selgub lõpus.",
     "currency": "Tulemuse valuuta",
     "progress": "Edenemine"
   },
@@ -1142,7 +1142,7 @@
       "lead": "Kalkulaatori tulemus ei sõltu sellest, kes meile maksab või kui palju. Teenime kolmel viisil, kõik avalikult:",
       "m1": {
         "title": "PDF-raport – 4,99 €",
-        "text": "Tasuta tulemus näitab vahemikku ja kulude struktuuri. Üksikasjaliku raporti iga kirjega ostad ainult siis, kui seda vajad."
+        "text": "Tasuta tulemus näitab hinnangut ja kulude vahemikku. Üksikasjaliku raporti iga kuluga ostad ainult siis, kui seda vajad."
       },
       "m2": {
         "title": "Valikuline päring impordiettevõttele",

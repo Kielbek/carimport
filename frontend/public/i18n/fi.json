@@ -571,7 +571,7 @@
       },
       "s4": {
         "title": "Tulos ja raportti",
-        "text": "Kolme skenaariota maksutta ja sentilleen tarkka PDF, kun olet valmis ostamaan."
+        "text": "Ilmainen arvio vaihteluvälillä – ja PDF jokaisesta erästä kolmessa skenaariossa, kun olet valmis ostamaan."
       },
       "step": "Vaihe"
     },
@@ -773,7 +773,7 @@
       "name": "Pika-arvio",
       "price": "Maksuton",
       "f1": "Kokonaiskustannuksen vaihteluväli",
-      "f2": "Kustannusrakennekaavio",
+      "f2": "Tulos sähköpostiin",
       "f3": "Kuljetusaika ja varoitukset",
       "f4": "Ei rekisteröitymistä",
       "cta": "Laske maksutta"
@@ -840,7 +840,7 @@
   },
   "calc": {
     "title": "Autontuonnin kustannuslaskuri",
-    "lead": "Kuusi vaihetta: lähtömaa, ajoneuvo, kunto, määränpää, tuonnin jälkeen ja raportti. Tulos näytetään lopussa – kolmessa skenaariossa.",
+    "lead": "Kuusi vaihetta: lähtömaa, ajoneuvo, kunto, määränpää, tuonnin jälkeen ja raportti. Tulos näytetään lopussa.",
     "currency": "Tuloksen valuutta",
     "progress": "Edistyminen"
   },
@@ -1142,7 +1142,7 @@
       "lead": "Laskurin tulos ei riipu siitä, kuka meille maksaa tai kuinka paljon. Ansaitsemme kolmella tavalla, ja kaikki ne ovat avoimia:",
       "m1": {
         "title": "PDF-raportti – 4,99 €",
-        "text": "Maksuton tulos näyttää vaihteluvälin ja kustannusrakenteen. Ostat yksityiskohtaisen raportin kaikkine erineen vain, jos tarvitset sitä."
+        "text": "Ilmainen tulos näyttää arvion ja kustannusten vaihteluvälin. Yksityiskohtaisen raportin jokaisesta erästä ostat vain, jos tarvitset sitä."
       },
       "m2": {
         "title": "Valinnainen tarjouspyyntö tuontiyritykselle",

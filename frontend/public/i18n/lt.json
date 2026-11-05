@@ -571,7 +571,7 @@
       },
       "s4": {
         "title": "Rezultatas ir ataskaita",
-        "text": "Trys scenarijai nemokamai, o PDF iki cento – kai būsite pasiruošę pirkti."
+        "text": "Nemokamas įvertis su intervalu, o PDF su kiekviena pozicija ir trimis scenarijais – kai būsite pasiruošę pirkti."
       },
       "step": "Žingsnis"
     },
@@ -773,7 +773,7 @@
       "name": "Greitas įvertis",
       "price": "Nemokamai",
       "f1": "Kainos iki durų intervalas",
-      "f2": "Išlaidų struktūros diagrama",
+      "f2": "Rezultatas el. paštu",
       "f3": "Gabenimo laikas ir įspėjimai",
       "f4": "Be registracijos",
       "cta": "Apskaičiuoti nemokamai"
@@ -840,7 +840,7 @@
   },
   "calc": {
     "title": "Automobilių importo išlaidų skaičiuoklė",
-    "lead": "Šeši žingsniai: kilmė, transporto priemonė, būklė, paskirtis, po importo ir ataskaita. Rezultatas pateikiamas pabaigoje – trimis scenarijais.",
+    "lead": "Šeši žingsniai: kilmė, transporto priemonė, būklė, paskirtis, po importo ir ataskaita. Rezultatas pateikiamas pabaigoje.",
     "currency": "Rezultato valiuta",
     "progress": "Eiga"
   },
@@ -1142,7 +1142,7 @@
       "lead": "Skaičiuoklės rezultatas nepriklauso nuo to, kas ir kiek mums moka. Uždirbame trimis būdais, ir visi jie atviri:",
       "m1": {
         "title": "PDF ataskaita – 4,99 €",
-        "text": "Nemokamas rezultatas parodo intervalą ir išlaidų struktūrą. Išsamią ataskaitą su kiekviena pozicija perkate tik jei jos reikia."
+        "text": "Nemokamas rezultatas rodo įvertį ir išlaidų intervalą. Išsamią ataskaitą su kiekviena pozicija perkate tik tada, kai jos reikia."
       },
       "m2": {
         "title": "Neprivaloma užklausa importo įmonei",

@@ -104,6 +104,9 @@ import { SITE } from '../../../core/site.config';
         <span>{{ r.clearancePort }}</span>
         <app-icon name="arrow-right" [size]="14" />
         <span>{{ s().destinationAddress ?? (r.destinationCountry | countryName: lang.locale()) }}</span>
+        @if (r.transitDays > 0) {
+          <span class="inline-flex items-center gap-1.5 font-semibold text-fg/80"><app-icon name="ship" [size]="14" />{{ 'result.transit' | translate: { days: r.transitDays } }}</span>
+        }
       </p>
 
       <!-- the result and the purchase in one card, above the fold: one rough number, the detail is what is sold -->

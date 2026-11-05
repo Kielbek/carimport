@@ -571,7 +571,7 @@
       },
       "s4": {
         "title": "Result and report",
-        "text": "Three scenarios for free, and a to-the-cent PDF when you’re ready to buy."
+        "text": "A free estimate with a range, and a PDF with every item and three scenarios when you’re ready to buy."
       },
       "step": "Step"
     },
@@ -773,7 +773,7 @@
       "name": "Quick estimate",
       "price": "Free",
       "f1": "Landed-cost range",
-      "f2": "Cost structure chart",
+      "f2": "Result sent by e-mail",
       "f3": "Transit time and warnings",
       "f4": "No sign-up",
       "cta": "Calculate for free"
@@ -840,7 +840,7 @@
   },
   "calc": {
     "title": "Car import cost calculator",
-    "lead": "Six steps: origin, vehicle, condition, destination, after import and report. The result comes at the end – in three scenarios.",
+    "lead": "Six steps: origin, vehicle, condition, destination, after import and report. The result comes at the end.",
     "currency": "Result currency",
     "progress": "Progress"
   },
@@ -1142,7 +1142,7 @@
       "lead": "The calculator’s result doesn’t depend on who pays us or how much. We earn in three ways, all of them open:",
       "m1": {
         "title": "PDF report – €4.99",
-        "text": "The free result shows the range and cost structure. You buy the detailed report with every item only if you need it."
+        "text": "The free result shows an estimate and its range. You buy the detailed report with every item only if you need it."
       },
       "m2": {
         "title": "Optional enquiry to an import company",

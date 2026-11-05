@@ -571,7 +571,7 @@
       },
       "s4": {
         "title": "Risultato e report",
-        "text": "Tre scenari gratis e un PDF al centesimo quando sei pronto ad acquistare."
+        "text": "Una stima gratuita con un intervallo e un PDF con ogni voce e tre scenari quando sei pronto ad acquistare."
       },
       "step": "Passo"
     },
@@ -773,7 +773,7 @@
       "name": "Stima rapida",
       "price": "Gratis",
       "f1": "Forbice del costo a destinazione",
-      "f2": "Grafico della struttura dei costi",
+      "f2": "Risultato via e-mail",
       "f3": "Tempi di transito e avvisi",
       "f4": "Senza registrazione",
       "cta": "Calcola gratis"
@@ -840,7 +840,7 @@
   },
   "calc": {
     "title": "Calcolatore dei costi di importazione auto",
-    "lead": "Sei passi: origine, veicolo, condizioni, destinazione, dopo l’importazione e report. Il risultato arriva alla fine – in tre scenari.",
+    "lead": "Sei passi: origine, veicolo, condizioni, destinazione, dopo l’importazione e report. Il risultato arriva alla fine.",
     "currency": "Valuta del risultato",
     "progress": "Avanzamento"
   },
@@ -1142,7 +1142,7 @@
       "lead": "Il risultato del calcolatore non dipende da chi ci paga né da quanto. Guadagniamo in tre modi, tutti dichiarati:",
       "m1": {
         "title": "Report PDF – 4,99 €",
-        "text": "Il risultato gratuito mostra la forbice e la struttura dei costi. Acquisti il report dettagliato con ogni voce solo se ti serve."
+        "text": "Il risultato gratuito mostra una stima e il suo intervallo. Il report dettagliato con ogni voce lo acquisti solo se ti serve."
       },
       "m2": {
         "title": "Richiesta facoltativa a un’azienda di importazione",

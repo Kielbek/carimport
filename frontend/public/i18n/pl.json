@@ -571,7 +571,7 @@
       },
       "s4": {
         "title": "Wynik i raport",
-        "text": "Trzy scenariusze za darmo, a raport PDF co do grosza, gdy będziesz gotów kupić."
+        "text": "Szacunek z przedziałem za darmo, a raport PDF z każdą pozycją i trzema scenariuszami, gdy będziesz gotów kupić."
       },
       "step": "Krok"
     },
@@ -773,7 +773,7 @@
       "name": "Szybka wycena",
       "price": "0 zł",
       "f1": "Przedział kosztów „pod dom”",
-      "f2": "Struktura kosztów na wykresie",
+      "f2": "Wynik na e-mail",
       "f3": "Czas transportu i ostrzeżenia",
       "f4": "Bez rejestracji",
       "cta": "Policz za darmo"
@@ -840,7 +840,7 @@
   },
   "calc": {
     "title": "Kalkulator kosztów importu auta",
-    "lead": "Sześć kroków: skąd, pojazd, stan, dokąd, po imporcie i raport. Wynik pokazujemy na końcu – w trzech scenariuszach.",
+    "lead": "Sześć kroków: skąd, pojazd, stan, dokąd, po imporcie i raport. Wynik pokazujemy na końcu.",
     "currency": "Waluta wyniku",
     "progress": "Postęp"
   },
@@ -1142,7 +1142,7 @@
       "lead": "Wynik kalkulatora nie zależy od tego, kto i ile nam płaci. Zarabiamy na trzy sposoby, wszystkie jawne:",
       "m1": {
         "title": "Raport PDF – 19 zł",
-        "text": "Darmowy wynik pokazuje przedział i strukturę kosztów. Szczegółowy raport z każdą pozycją kupujesz tylko, jeśli go potrzebujesz."
+        "text": "Darmowy wynik pokazuje szacunek i przedział kosztów. Szczegółowy raport z każdą pozycją kupujesz tylko, jeśli go potrzebujesz."
       },
       "m2": {
         "title": "Opcjonalne zapytanie do firmy importowej",

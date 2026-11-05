@@ -571,7 +571,7 @@
       },
       "s4": {
         "title": "Eredmény és jelentés",
-        "text": "Három forgatókönyv ingyen, és fillérre pontos PDF, amikor készen áll a vásárlásra."
+        "text": "Ingyenes becslés sávval, és PDF minden tétellel és három forgatókönyvvel, amikor készen áll a vásárlásra."
       },
       "step": "Lépés"
     },
@@ -773,7 +773,7 @@
       "name": "Gyors becslés",
       "price": "Ingyenes",
       "f1": "Bekerülési költség sávja",
-      "f2": "Költségszerkezet-diagram",
+      "f2": "Eredmény e-mailben",
       "f3": "Szállítási idő és figyelmeztetések",
       "f4": "Regisztráció nélkül",
       "cta": "Ingyenes kalkuláció"
@@ -840,7 +840,7 @@
   },
   "calc": {
     "title": "Autóimport-költségkalkulátor",
-    "lead": "Hat lépés: származás, jármű, állapot, célország, behozatal után és jelentés. Az eredmény a végén jelenik meg – három forgatókönyvben.",
+    "lead": "Hat lépés: származás, jármű, állapot, célország, behozatal után és jelentés. Az eredmény a végén jelenik meg.",
     "currency": "Az eredmény pénzneme",
     "progress": "Haladás"
   },
@@ -1142,7 +1142,7 @@
       "lead": "A kalkulátor eredménye nem függ attól, ki és mennyit fizet nekünk. Háromféleképpen keresünk pénzt, mindhárom nyilvános:",
       "m1": {
         "title": "PDF-jelentés – 1 990 Ft",
-        "text": "Az ingyenes eredmény megmutatja a sávot és a költségszerkezetet. A minden tételt tartalmazó részletes jelentést csak akkor veszi meg, ha szüksége van rá."
+        "text": "Az ingyenes eredmény becslést és költségsávot mutat. A részletes, tételes jelentést csak akkor vásárolja meg, ha szüksége van rá."
       },
       "m2": {
         "title": "Opcionális ajánlatkérés importcégtől",

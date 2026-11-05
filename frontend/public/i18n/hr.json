@@ -571,7 +571,7 @@
       },
       "s4": {
         "title": "Rezultat i izvješće",
-        "text": "Tri scenarija besplatno, a PDF do centa kad ste spremni za kupnju."
+        "text": "Besplatna procjena s rasponom, a PDF sa svakom stavkom i tri scenarija kad ste spremni kupiti."
       },
       "step": "Korak"
     },
@@ -773,7 +773,7 @@
       "name": "Brza procjena",
       "price": "Besplatno",
       "f1": "Raspon troška do vrata",
-      "f2": "Grafikon strukture troškova",
+      "f2": "Rezultat e-poštom",
       "f3": "Vrijeme prijevoza i upozorenja",
       "f4": "Bez registracije",
       "cta": "Izračunajte besplatno"
@@ -840,7 +840,7 @@
   },
   "calc": {
     "title": "Kalkulator troškova uvoza automobila",
-    "lead": "Šest koraka: podrijetlo, vozilo, stanje, odredište, nakon uvoza i izvješće. Rezultat dobivate na kraju – u tri scenarija.",
+    "lead": "Šest koraka: podrijetlo, vozilo, stanje, odredište, nakon uvoza i izvješće. Rezultat dobivate na kraju.",
     "currency": "Valuta rezultata",
     "progress": "Napredak"
   },
@@ -1142,7 +1142,7 @@
       "lead": "Rezultat kalkulatora ne ovisi o tome tko nam plaća ni koliko. Zarađujemo na tri načina, svi su javni:",
       "m1": {
         "title": "PDF izvješće – 4,99 €",
-        "text": "Besplatni rezultat prikazuje raspon i strukturu troškova. Detaljno izvješće sa svim stavkama kupujete samo ako vam treba."
+        "text": "Besplatni rezultat prikazuje procjenu i raspon troškova. Detaljno izvješće sa svakom stavkom kupujete samo ako vam treba."
       },
       "m2": {
         "title": "Neobavezni upit uvozničkoj tvrtki",
