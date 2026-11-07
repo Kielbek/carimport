@@ -21,6 +21,8 @@ export class PageContext {
 
   /** Maps a language to the URL of the current page in that language. */
   readonly hrefFor = signal<(lang: Lang) => string>((l) => `/${l}`);
+  /** Route data "page" of the current screen (home, guide, blog, vin, ...). */
+  readonly page = signal<string | undefined>(undefined);
 
   start(destroyRef: DestroyRef): void {
     this.router.events
@@ -35,6 +37,7 @@ export class PageContext {
     }
     const data = leaf.snapshot.data;
     const page = data['page'] as Page | 'report' | 'newsletter' | 'admin' | 'guide' | 'blog' | undefined;
+    this.page.set(page);
     if (page === 'guide' || page === 'blog') {
       return; // guide and blog pages set their own head tags and language links
     }

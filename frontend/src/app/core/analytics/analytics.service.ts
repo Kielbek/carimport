@@ -20,7 +20,8 @@ export type AnalyticsEvent =
   | 'partner_lead_sent'
   | 'contact_sent'
   | 'vin_partner_click'
-  | 'vin_partner_coupon_copied';
+  | 'vin_partner_coupon_copied'
+  | 'sticky_cta_click';
 
 const CONSENT_KEY = 'carimport.consent';
 

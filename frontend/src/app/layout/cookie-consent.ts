@@ -1,10 +1,16 @@
-import { Component, afterNextRender, computed, inject, signal } from '@angular/core';
+import { Component, Injectable, afterNextRender, computed, effect, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { AnalyticsService } from '../core/analytics/analytics.service';
 import { LanguageService } from '../core/i18n/language.service';
 import { LanguagePickerState } from './language-picker';
 import { pathFor } from '../core/routing/paths';
+
+/** Whether the cookie banner is on screen (the sticky calculator button waits for it). */
+@Injectable({ providedIn: 'root' })
+export class CookieBanner {
+  readonly open = signal(false);
+}
 
 const KEY = 'carimport.consent';
 export type Consent = 'all' | 'necessary';
@@ -39,6 +45,8 @@ export class CookieConsent {
   /** No choice saved yet; shown only once the language picker is out of the way (one overlay at a time). */
   private readonly needed = signal(false);
   protected readonly visible = computed(() => this.needed() && !this.picker.open());
+  private readonly banner = inject(CookieBanner);
+  private readonly sync = effect(() => this.banner.open.set(this.visible()));
   protected readonly privacy = computed(() => pathFor('privacy', this.lang.current()));
 
   constructor() {

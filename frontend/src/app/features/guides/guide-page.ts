@@ -1,4 +1,4 @@
-import { Component, computed, effect, inject, input, untracked } from '@angular/core';
+import { Component, DestroyRef, computed, effect, inject, input, untracked } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs';
@@ -19,6 +19,7 @@ import { GUIDE_MODELS, MODEL_EU, MODEL_EXAMPLES, MODEL_EXAMPLES_DATE } from './m
 import { VinCta } from '../../shared/vin-cta/vin-cta';
 import { ModelDetails } from './model-details';
 import { PORT_PHOTOS } from './port-photos';
+import { StickyCtaState } from '../../layout/sticky-cta';
 import { OriginDeepGuide } from './origin-deep-guide';
 import { GuideModel, ModelExample, ModelPhoto } from './model-types';
 import { DEPARTURE_PORTS, ORIGINS, PICKUP_ZONES } from '../calculator/calculator.options';
@@ -770,6 +771,10 @@ export class GuidePage {
   });
 
   constructor() {
+    // the pinned calculator button on phones opens the calculator for what this page is about
+    const sticky = inject(StickyCtaState);
+    effect(() => sticky.params.set(this.ctaParams()));
+    inject(DestroyRef).onDestroy(() => sticky.params.set({}));
     // head tags, language links; unknown guide URLs go to the home page
     effect(() => {
       const r = this.ref();
