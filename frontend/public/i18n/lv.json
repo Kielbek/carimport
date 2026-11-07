@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Vai var muitot auto šeit un reģistrēt citā ES valstī?",
         "a": "Jā. Privātpersona importa PVN maksā šeit; PVN reģistrēts uzņēmums var izmantot muitas procedūru 4200 un uzskaitīt PVN savā valstī."
-      }
+      },
+      "feesNote": "Maksas ir orientējošas un atkarīgas no termināļa un muitas aģenta. Dati uz {{date}}.",
+      "sourcesTitle": "No kurienes nāk šie dati",
+      "source1": "Importa PVN – ES dalībvalstu standarta PVN likmes saskaņā ar Eiropas Komisijas apkopojumu.",
+      "source2": "Termināļa apkalpošana un muitas aģents – tipiskas cenas vienam vieglajam automobilim; konkrēts terminālis vai aģents var noteikt citu cenu.",
+      "source3": "Kuģošanas laiks – tipisks tranzīts koplietošanas konteinerā no galvenajām eksporta ostām, neieskaitot kuģa gaidīšanu.",
+      "source4": "Attālumi – taisnā līnijā × 1,25 no ostas līdz valsts galvenajam iedzīvotāju centram kā aptuvens autoceļa maršruts.",
+      "sourcesUpdated": "Dati pēdējo reizi atjaunināti: {{date}}. Visus pieņēmumus aprakstām lapā"
     },
     "cta": {
       "title": "Aprēķini precīzas izmaksas savam auto",

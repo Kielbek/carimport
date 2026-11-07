@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Kann ich ein Auto hier verzollen und in einem anderen EU-Land zulassen?",
         "a": "Ja. Ein Privatkäufer zahlt die Einfuhrumsatzsteuer hier; ein umsatzsteuerlich registriertes Unternehmen kann das Zollverfahren 4200 nutzen und die Umsatzsteuer im eigenen Land abrechnen."
-      }
+      },
+      "feesNote": "Die Gebühren sind Richtwerte und hängen vom Terminal und vom Zollagenten ab. Stand: {{date}}.",
+      "sourcesTitle": "Woher diese Daten stammen",
+      "source1": "Einfuhrumsatzsteuer – Normalsätze der EU-Mitgliedstaaten laut Übersicht der Europäischen Kommission.",
+      "source2": "Terminalumschlag und Zollagent – typische Preise für einen Pkw; ein bestimmtes Terminal oder ein Agent kann anders abrechnen.",
+      "source3": "Fahrtzeit – typische Laufzeit im Sammelcontainer ab den wichtigsten Exporthäfen, ohne Wartezeit auf das Schiff.",
+      "source4": "Entfernungen – Luftlinie × 1,25 vom Hafen zum Bevölkerungsschwerpunkt des Landes, als Näherung für die Straßenroute.",
+      "sourcesUpdated": "Daten zuletzt aktualisiert: {{date}}. Alle Annahmen beschreiben wir auf der Seite"
     },
     "cta": {
       "title": "Berechnen Sie die genauen Kosten für Ihr Auto",

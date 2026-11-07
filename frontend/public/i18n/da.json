@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Kan jeg fortolde en bil her og registrere den i et andet EU-land?",
         "a": "Ja. En privat køber betaler importmomsen her; en momsregistreret virksomhed kan bruge toldprocedure 4200 og afregne momsen i sit eget land."
-      }
+      },
+      "feesNote": "Gebyrerne er vejledende og afhænger af terminalen og toldagenten. Pr. {{date}}.",
+      "sourcesTitle": "Hvor disse data kommer fra",
+      "source1": "Import-moms – standardmomssatser i EU's medlemsstater ifølge Europa-Kommissionens oversigt.",
+      "source2": "Terminalhåndtering og toldagent – typiske priser for én personbil; en bestemt terminal eller agent kan tage en anden pris.",
+      "source3": "Sejltid – typisk transittid i delt container fra de vigtigste eksporthavne, uden ventetid på skibet.",
+      "source4": "Afstande – fugleflugt × 1,25 fra havnen til landets befolkningscentrum som tilnærmelse af vejruten.",
+      "sourcesUpdated": "Data senest opdateret: {{date}}. Alle forudsætninger er beskrevet på siden"
     },
     "cta": {
       "title": "Beregn den nøjagtige pris for din bil",

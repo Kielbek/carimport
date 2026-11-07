@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Mohu auto proclít zde a zaregistrovat ho v jiné zemi EU?",
         "a": "Ano. Soukromý kupující zaplatí dovozní DPH zde; firma registrovaná k DPH může využít celní režim 4200 a přiznat DPH ve své zemi."
-      }
+      },
+      "feesNote": "Poplatky jsou orientační a závisí na terminálu a celním agentovi. Stav k {{date}}.",
+      "sourcesTitle": "Odkud tato data pocházejí",
+      "source1": "DPH při dovozu – základní sazby DPH členských států EU podle přehledu Evropské komise.",
+      "source2": "Obsluha terminálu a celní agent – typické ceny za jeden osobní automobil; konkrétní terminál nebo agent může účtovat jinak.",
+      "source3": "Doba plavby – typická doba přepravy ve sdíleném kontejneru z hlavních exportních přístavů, bez čekání na loď.",
+      "source4": "Vzdálenosti – vzdušnou čarou × 1,25 z přístavu do hlavního populačního centra země jako přiblížení silniční trasy.",
+      "sourcesUpdated": "Poslední aktualizace údajů: {{date}}. Všechny předpoklady popisujeme na stránce"
     },
     "cta": {
       "title": "Spočítejte přesné náklady pro své auto",

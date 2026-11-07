@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Posso desalfandegar um carro aqui e matriculá-lo noutro país da UE?",
         "a": "Sim. Um particular paga aqui o IVA na importação; uma empresa registada para efeitos de IVA pode utilizar o regime aduaneiro 4200 e liquidar o IVA no seu próprio país."
-      }
+      },
+      "feesNote": "As taxas são indicativas e dependem do terminal e do despachante aduaneiro. Dados de {{date}}.",
+      "sourcesTitle": "De onde vêm estes dados",
+      "source1": "IVA na importação – taxas normais de IVA dos Estados-Membros segundo a Comissão Europeia.",
+      "source2": "Movimentação no terminal e despachante – preços habituais para um ligeiro de passageiros; um terminal ou despachante concreto pode cobrar de outra forma.",
+      "source3": "Tempo de viagem – trânsito habitual em contentor partilhado a partir dos principais portos de exportação, sem a espera pelo navio.",
+      "source4": "Distâncias – em linha reta × 1,25 do porto até ao principal centro populacional do país, como aproximação do percurso rodoviário.",
+      "sourcesUpdated": "Dados atualizados pela última vez: {{date}}. Todos os pressupostos estão descritos na página"
     },
     "cta": {
       "title": "Calcule o custo exato do seu carro",

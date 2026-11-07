@@ -7,6 +7,7 @@ import { GuideRef, GuideSection, guidePath, resolveGuide } from '../../core/rout
 import { PageContext } from '../../core/routing/page-context';
 import { pathFor } from '../../core/routing/paths';
 import { SeoService } from '../../core/seo/seo.service';
+import { SITE } from '../../core/site.config';
 import { Flag } from '../../shared/flag/flag';
 import { Icon } from '../../shared/icon/icon';
 import { IconName } from '../../shared/icon/icons';
@@ -275,10 +276,11 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
                   <div class="bg-bg p-5"><dt class="label !mb-1">{{ 'guide.port.facts.country' | translate }}</dt>
                     <dd><a [routerLink]="link({ section: 'countries', item: p.country })" class="flex items-center gap-2 font-semibold hover:text-brand-text"><app-flag [code]="p.country" class="w-5" />{{ countryName(p.country) }}</a></dd></div>
                   <div class="bg-bg p-5"><dt class="label !mb-1">{{ 'guide.port.facts.vat' | translate }}</dt><dd class="text-2xl font-extrabold text-brand-text">{{ pct(vatOf(p.country)) }}%</dd></div>
-                  <div class="bg-bg p-5"><dt class="label !mb-1">{{ 'guide.port.facts.unloading' | translate }}</dt><dd class="font-semibold">{{ money(p.unloading, p.feeCurrency) }} <span class="text-xs text-muted">{{ 'guide.port.facts.perCar' | translate }}</span></dd></div>
-                  <div class="bg-bg p-5"><dt class="label !mb-1">{{ 'guide.port.facts.agency' | translate }}</dt><dd class="font-semibold">{{ money(p.agency, p.feeCurrency) }} <span class="text-xs text-muted">{{ 'guide.port.facts.perCar' | translate }}</span></dd></div>
+                  <div class="bg-bg p-5"><dt class="label !mb-1">{{ 'guide.port.facts.unloading' | translate }}</dt><dd class="font-semibold"><span class="text-xs font-normal text-muted">{{ 'result.approx' | translate }}</span> {{ money(p.unloading, p.feeCurrency) }} <span class="text-xs text-muted">{{ 'guide.port.facts.perCar' | translate }}</span></dd></div>
+                  <div class="bg-bg p-5"><dt class="label !mb-1">{{ 'guide.port.facts.agency' | translate }}</dt><dd class="font-semibold"><span class="text-xs font-normal text-muted">{{ 'result.approx' | translate }}</span> {{ money(p.agency, p.feeCurrency) }} <span class="text-xs text-muted">{{ 'guide.port.facts.perCar' | translate }}</span></dd></div>
                 </dl>
                 <p class="mt-3 text-xs text-muted">{{ 'guide.port.facts.region' | translate }}: {{ 'region.' + p.region | translate }}</p>
+                <p class="mt-1 text-xs text-muted">{{ 'guide.port.feesNote' | translate: { date: reviewedDate() } }}</p>
 
                 <div class="mt-12 grid gap-10 lg:grid-cols-2">
                   <section>
@@ -318,6 +320,15 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
                 <section class="mt-12 space-y-4 leading-relaxed text-fg/90">
                   <p>{{ 'guide.port.p1' | translate: params() }}</p>
                   <p>{{ 'guide.port.p2' | translate: params() }}</p>
+                </section>
+
+                <section class="mt-12 rounded-[6px] border border-line bg-panel p-5 sm:p-6">
+                  <h2 class="text-lg font-extrabold">{{ 'guide.port.sourcesTitle' | translate }}</h2>
+                  <ul class="mt-3 list-disc space-y-1.5 pl-5 text-sm text-fg/85">
+                    @for (n of [1, 2, 3, 4]; track n) { <li>{{ 'guide.port.source' + n | translate }}</li> }
+                  </ul>
+                  <p class="mt-3 text-sm text-fg/85">{{ 'guide.port.sourcesUpdated' | translate: { date: reviewedDate() } }}
+                    <a [routerLink]="method()" class="font-semibold text-brand-text underline underline-offset-2">{{ 'layout.method' | translate }}</a></p>
                 </section>
 
                 <section class="mt-12">
@@ -663,6 +674,11 @@ export class GuidePage {
   });
 
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
+  protected readonly method = computed(() => pathFor('method', this.lang.current()));
+  /** Last review of rates and fees (SITE.ratesReviewed), in the page language. */
+  protected readonly reviewedDate = computed(() =>
+    new Intl.DateTimeFormat(this.lang.locale(), { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(SITE.ratesReviewed + 'T12:00:00Z')),
+  );
   protected readonly ctaParams = computed(() => {
     const r = this.ref();
     if (!r?.item) {
@@ -755,6 +771,7 @@ export class GuidePage {
       breadcrumbs: this.crumbs(),
       faq: this.faq(),
       about,
+      modified: SITE.ratesReviewed,
     });
     this.pageContext.hrefFor.set((l) => guidePath(r, l));
   }

@@ -27,6 +27,8 @@ export interface CustomPage {
   type?: 'Article' | 'BlogPosting' | 'CollectionPage';
   /** ISO date - published and modified (blog). */
   published?: string;
+  /** ISO date the facts on the page were last checked (dateModified). */
+  modified?: string;
   /** Languages that have this page (hreflang); default all. */
   languages?: readonly Lang[];
 }
@@ -122,7 +124,8 @@ export class SeoService {
       {
         '@type': page.type ?? 'Article',
         headline: page.headline ?? page.title,
-        ...(page.published ? { datePublished: page.published, dateModified: page.published } : {}),
+        ...(page.published ? { datePublished: page.published } : {}),
+        ...(page.modified ?? page.published ? { dateModified: page.modified ?? page.published } : {}),
         description: page.description,
         inLanguage: page.lang,
         mainEntityOfPage: url,

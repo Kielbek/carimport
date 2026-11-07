@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Posso sdoganare un'auto qui e immatricolarla in un altro Paese UE?",
         "a": "Sì. Un acquirente privato paga qui l'IVA all'importazione; un'impresa con partita IVA può utilizzare il regime doganale 4200 e assolvere l'IVA nel proprio Paese."
-      }
+      },
+      "feesNote": "Le tariffe sono indicative e dipendono dal terminal e dallo spedizioniere doganale. Dati al {{date}}.",
+      "sourcesTitle": "Da dove provengono questi dati",
+      "source1": "IVA all’importazione – aliquote IVA ordinarie degli Stati membri secondo la Commissione europea.",
+      "source2": "Movimentazione al terminal e spedizioniere – prezzi tipici per un’autovettura; un terminal o spedizioniere specifico può applicare tariffe diverse.",
+      "source3": "Tempo di navigazione – transito tipico in container condiviso dai principali porti di esportazione, senza l’attesa della nave.",
+      "source4": "Distanze – in linea d’aria × 1,25 dal porto al principale centro abitato del paese, come approssimazione del percorso stradale.",
+      "sourcesUpdated": "Dati aggiornati l’ultima volta: {{date}}. Tutte le ipotesi sono descritte nella pagina"
     },
     "cta": {
       "title": "Calcola il costo esatto della tua auto",

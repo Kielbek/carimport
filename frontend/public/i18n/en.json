@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Can I clear a car here and register it in another EU country?",
         "a": "Yes. A private buyer pays the import VAT here; a VAT-registered company can use customs procedure 4200 and account for VAT in its own country."
-      }
+      },
+      "feesNote": "Fees are indicative and depend on the terminal and customs agent. As of {{date}}.",
+      "sourcesTitle": "Where this data comes from",
+      "source1": "Import VAT – standard VAT rates of EU member states as listed by the European Commission.",
+      "source2": "Terminal handling and customs agent – typical prices for one passenger car; a specific terminal or agent may charge differently.",
+      "source3": "Sailing time – typical shared-container transit from the main export ports, excluding waiting for a vessel.",
+      "source4": "Distances – straight line × 1.25 from the port to the country's main population centre, as an approximation of the road route.",
+      "sourcesUpdated": "Data last updated: {{date}}. Every assumption is described on the page"
     },
     "cta": {
       "title": "Calculate the exact cost for your car",

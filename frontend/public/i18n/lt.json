@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Ar galiu įforminti automobilį čia ir registruoti jį kitoje ES šalyje?",
         "a": "Taip. Privatus pirkėjas importo PVM moka čia; PVM mokėtoja įmonė gali taikyti muitinės procedūrą 4200 ir apskaityti PVM savo šalyje."
-      }
+      },
+      "feesNote": "Mokesčiai yra orientaciniai ir priklauso nuo terminalo bei muitinės tarpininko. Duomenys {{date}}.",
+      "sourcesTitle": "Iš kur šie duomenys",
+      "source1": "Importo PVM – ES valstybių narių standartiniai PVM tarifai pagal Europos Komisijos suvestinę.",
+      "source2": "Terminalo aptarnavimas ir muitinės tarpininkas – įprastos kainos vienam lengvajam automobiliui; konkretus terminalas ar tarpininkas gali skaičiuoti kitaip.",
+      "source3": "Plaukimo trukmė – įprastas tranzitas bendrame konteineryje iš pagrindinių eksporto uostų, neįskaitant laivo laukimo.",
+      "source4": "Atstumai – tiesia linija × 1,25 nuo uosto iki pagrindinio šalies gyventojų centro, kaip apytikslis kelio maršrutas.",
+      "sourcesUpdated": "Duomenys paskutinį kartą atnaujinti: {{date}}. Visas prielaidas aprašome puslapyje"
     },
     "cta": {
       "title": "Apskaičiuokite tikslią savo automobilio kainą",

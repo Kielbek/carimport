@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Pot vămui mașina aici și să o înmatriculez în altă țară UE?",
         "a": "Da. O persoană fizică plătește aici TVA-ul la import; o firmă înregistrată în scopuri de TVA poate folosi regimul vamal 4200 și poate deconta TVA-ul în propria țară."
-      }
+      },
+      "feesNote": "Taxele sunt orientative și depind de terminal și de agentul vamal. Date la {{date}}.",
+      "sourcesTitle": "De unde provin aceste date",
+      "source1": "TVA la import – cotele standard de TVA ale statelor membre UE, conform Comisiei Europene.",
+      "source2": "Manipulare în terminal și agent vamal – prețuri obișnuite pentru un autoturism; un anumit terminal sau agent poate percepe altfel.",
+      "source3": "Durata navigației – tranzit obișnuit în container partajat din principalele porturi de export, fără așteptarea navei.",
+      "source4": "Distanțe – în linie dreaptă × 1,25 de la port până la principalul centru de populație al țării, ca aproximare a rutei rutiere.",
+      "sourcesUpdated": "Date actualizate ultima dată: {{date}}. Toate ipotezele sunt descrise pe pagina"
     },
     "cta": {
       "title": "Calculează costul exact pentru mașina ta",

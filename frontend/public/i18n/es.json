@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "¿Puedo despachar un coche aquí y matricularlo en otro país de la UE?",
         "a": "Sí. Un comprador particular paga aquí el IVA a la importación; una empresa registrada a efectos del IVA puede utilizar el régimen aduanero 4200 y liquidar el IVA en su propio país."
-      }
+      },
+      "feesNote": "Las tasas son orientativas y dependen de la terminal y del agente de aduanas. Datos a {{date}}.",
+      "sourcesTitle": "De dónde salen estos datos",
+      "source1": "IVA de importación – tipos generales de IVA de los Estados miembros según la Comisión Europea.",
+      "source2": "Manipulación en terminal y agente de aduanas – precios típicos para un turismo; una terminal o agente concreto puede cobrar otra cantidad.",
+      "source3": "Tiempo de travesía – tránsito típico en contenedor compartido desde los principales puertos de exportación, sin esperar al buque.",
+      "source4": "Distancias – en línea recta × 1,25 desde el puerto hasta el principal núcleo de población del país, como aproximación de la ruta por carretera.",
+      "sourcesUpdated": "Datos actualizados por última vez: {{date}}. Todas las hipótesis se explican en la página"
     },
     "cta": {
       "title": "Calcula el coste exacto de tu coche",

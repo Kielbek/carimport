@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Kan ik een auto hier inklaren en in een ander EU-land registreren?",
         "a": "Ja. Een particuliere koper betaalt de invoer-btw hier; een btw-geregistreerd bedrijf kan douaneregeling 4200 gebruiken en de btw in het eigen land verrekenen."
-      }
+      },
+      "feesNote": "De kosten zijn indicatief en hangen af van de terminal en de douane-expediteur. Stand per {{date}}.",
+      "sourcesTitle": "Waar deze gegevens vandaan komen",
+      "source1": "Invoer-btw – standaard btw-tarieven van de EU-lidstaten volgens het overzicht van de Europese Commissie.",
+      "source2": "Terminalafhandeling en douane-expediteur – gangbare prijzen voor één personenauto; een specifieke terminal of expediteur kan anders rekenen.",
+      "source3": "Vaartijd – gangbare doorlooptijd in een gedeelde container vanuit de belangrijkste exporthavens, zonder wachten op het schip.",
+      "source4": "Afstanden – hemelsbreed × 1,25 van de haven naar het belangrijkste bevolkingscentrum van het land, als benadering van de route over de weg.",
+      "sourcesUpdated": "Gegevens laatst bijgewerkt: {{date}}. Alle aannames beschrijven we op de pagina"
     },
     "cta": {
       "title": "Bereken de exacte kosten voor uw auto",

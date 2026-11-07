@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Puis-je dédouaner une voiture ici et l’immatriculer dans un autre pays de l’UE ?",
         "a": "Oui. Un particulier paie la TVA à l’importation ici ; une entreprise assujettie à la TVA peut utiliser le régime douanier 4200 et déclarer la TVA dans son propre pays."
-      }
+      },
+      "feesNote": "Les frais sont indicatifs et dépendent du terminal et du transitaire en douane. Données au {{date}}.",
+      "sourcesTitle": "D’où viennent ces données",
+      "source1": "TVA à l’importation – taux normaux de TVA des États membres selon la Commission européenne.",
+      "source2": "Manutention au terminal et transitaire – prix habituels pour une voiture particulière ; un terminal ou transitaire précis peut facturer autrement.",
+      "source3": "Durée de traversée – transit habituel en conteneur partagé depuis les principaux ports d’exportation, sans l’attente du navire.",
+      "source4": "Distances – à vol d’oiseau × 1,25 du port jusqu’au principal centre de population du pays, comme approximation de l’itinéraire routier.",
+      "sourcesUpdated": "Dernière mise à jour des données : {{date}}. Toutes les hypothèses sont décrites sur la page"
     },
     "cta": {
       "title": "Calculez le coût exact pour votre voiture",

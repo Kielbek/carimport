@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Ali lahko avtomobil ocarinim tukaj in ga registriram v drugi državi EU?",
         "a": "Da. Zasebni kupec plača uvozni DDV tukaj; podjetje, registrirano za DDV, lahko uporabi carinski postopek 4200 in obračuna DDV v svoji državi."
-      }
+      },
+      "feesNote": "Pristojbine so okvirne in so odvisne od terminala in carinskega zastopnika. Stanje na {{date}}.",
+      "sourcesTitle": "Od kod so ti podatki",
+      "source1": "Uvozni DDV – splošne stopnje DDV držav članic EU po pregledu Evropske komisije.",
+      "source2": "Pretovor na terminalu in carinski zastopnik – običajne cene za en osebni avtomobil; posamezen terminal ali zastopnik lahko zaračuna drugače.",
+      "source3": "Čas plovbe – običajen tranzit v deljenem zabojniku iz glavnih izvoznih pristanišč, brez čakanja na ladjo.",
+      "source4": "Razdalje – zračna črta × 1,25 od pristanišča do glavnega središča prebivalstva države kot približek cestne poti.",
+      "sourcesUpdated": "Podatki nazadnje posodobljeni: {{date}}. Vse predpostavke opisujemo na strani"
     },
     "cta": {
       "title": "Izračunajte točne stroške za svoj avtomobil",

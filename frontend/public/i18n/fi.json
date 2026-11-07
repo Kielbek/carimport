@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Voinko tullata auton täällä ja rekisteröidä sen toisessa EU-maassa?",
         "a": "Kyllä. Yksityinen ostaja maksaa tuonnin arvonlisäveron täällä; ALV-rekisteröity yritys voi käyttää tullimenettelyä 4200 ja tilittää arvonlisäveron omassa maassaan."
-      }
+      },
+      "feesNote": "Maksut ovat suuntaa-antavia ja riippuvat terminaalista ja tulliasiamiehestä. Tilanne {{date}}.",
+      "sourcesTitle": "Mistä tiedot ovat peräisin",
+      "source1": "Tuonnin arvonlisävero – EU-maiden yleiset ALV-kannat Euroopan komission koosteen mukaan.",
+      "source2": "Terminaalikäsittely ja tulliasiamies – tyypilliset hinnat yhdelle henkilöautolle; tietty terminaali tai asiamies voi veloittaa eri tavoin.",
+      "source3": "Merimatkan kesto – tyypillinen kuljetusaika jaetussa kontissa tärkeimmistä vientisatamista ilman laivan odotusta.",
+      "source4": "Etäisyydet – linnuntie × 1,25 satamasta maan pääasialliseen väestökeskukseen tieyhteyden likiarvona.",
+      "sourcesUpdated": "Tiedot päivitetty viimeksi: {{date}}. Kaikki oletukset kuvataan sivulla"
     },
     "cta": {
       "title": "Laske autosi tarkat kulut",

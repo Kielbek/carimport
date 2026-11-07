@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Kan jag förtulla en bil här och registrera den i ett annat EU-land?",
         "a": "Ja. En privatperson betalar importmomsen här; ett momsregistrerat företag kan använda tullförfarande 4200 och redovisa momsen i sitt eget land."
-      }
+      },
+      "feesNote": "Avgifterna är ungefärliga och beror på terminalen och tullombudet. Per {{date}}.",
+      "sourcesTitle": "Var uppgifterna kommer ifrån",
+      "source1": "Import-moms – normalskattesatser för moms i EU:s medlemsstater enligt Europeiska kommissionens sammanställning.",
+      "source2": "Terminalhantering och tullombud – typiska priser för en personbil; en viss terminal eller ett visst ombud kan ta betalt annorlunda.",
+      "source3": "Restid till sjöss – typisk transittid i delad container från de viktigaste exporthamnarna, utan väntan på fartyg.",
+      "source4": "Avstånd – fågelvägen × 1,25 från hamnen till landets främsta befolkningscentrum, som en uppskattning av vägsträckan.",
+      "sourcesUpdated": "Uppgifterna senast uppdaterade: {{date}}. Alla antaganden beskrivs på sidan"
     },
     "cta": {
       "title": "Beräkna den exakta kostnaden för din bil",

@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Mogu li automobil ocariniti ovdje i registrirati ga u drugoj zemlji EU-a?",
         "a": "Da. Privatni kupac ovdje plaća uvozni PDV; tvrtka registrirana za PDV može koristiti carinski postupak 4200 i obračunati PDV u svojoj zemlji."
-      }
+      },
+      "feesNote": "Naknade su okvirne i ovise o terminalu i carinskom agentu. Stanje na {{date}}.",
+      "sourcesTitle": "Odakle ovi podaci",
+      "source1": "Uvozni PDV – opće stope PDV-a država članica EU prema pregledu Europske komisije.",
+      "source2": "Obrada na terminalu i carinski agent – uobičajene cijene za jedan osobni automobil; određeni terminal ili agent može naplatiti drukčije.",
+      "source3": "Trajanje plovidbe – uobičajeni tranzit u dijeljenom kontejneru iz glavnih izvoznih luka, bez čekanja na brod.",
+      "source4": "Udaljenosti – zračnom linijom × 1,25 od luke do glavnog središta stanovništva zemlje, kao približna cestovna ruta.",
+      "sourcesUpdated": "Podaci zadnji put ažurirani: {{date}}. Sve pretpostavke opisujemo na stranici"
     },
     "cta": {
       "title": "Izračunajte točan trošak za svoj automobil",

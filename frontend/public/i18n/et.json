@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Kas autot saab siin tollist läbi viia ja registreerida mõnes teises ELi riigis?",
         "a": "Jah. Eraisik maksab impordikäibemaksu siin; käibemaksukohustuslasest ettevõte saab kasutada tolliprotseduuri 4200 ja arvestada käibemaksu oma riigis."
-      }
+      },
+      "feesNote": "Tasud on orienteeruvad ja sõltuvad terminalist ning tolliagendist. Seisuga {{date}}.",
+      "sourcesTitle": "Kust need andmed pärinevad",
+      "source1": "Impordikäibemaks – ELi liikmesriikide standardsed käibemaksumäärad Euroopa Komisjoni andmetel.",
+      "source2": "Terminali teenindus ja tolliagent – tüüpilised hinnad ühe sõiduauto kohta; konkreetne terminal või agent võib küsida teistsugust hinda.",
+      "source3": "Merereisi aeg – tüüpiline transiit jagatud konteineris peamistest eksportsadamatest, ilma laeva ootamiseta.",
+      "source4": "Kaugused – linnulennult × 1,25 sadamast riigi peamise rahvastikukeskuseni, maanteetee ligikaudse hinnanguna.",
+      "sourcesUpdated": "Andmed viimati uuendatud: {{date}}. Kõik eeldused kirjeldame lehel"
     },
     "cta": {
       "title": "Arvuta oma auto täpne hind",

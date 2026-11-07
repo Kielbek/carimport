@@ -1422,7 +1422,14 @@
       "faq2": {
         "q": "Vámkezeltethetem itt az autót, és forgalomba helyezhetem egy másik uniós országban?",
         "a": "Igen. Magánszemély itt fizeti meg a behozatali áfát; áfaregisztrált cég a 4200-as vámeljárással a saját országában számolhatja el az áfát."
-      }
+      },
+      "feesNote": "A díjak tájékoztató jellegűek, és a termináltól, illetve a vámügynöktől függenek. Állapot: {{date}}.",
+      "sourcesTitle": "Honnan származnak ezek az adatok",
+      "source1": "Import áfa – az EU-tagállamok általános áfakulcsai az Európai Bizottság összesítése szerint.",
+      "source2": "Terminálkezelés és vámügynök – egy személyautóra jellemző árak; egy adott terminál vagy ügynök eltérő díjat számíthat fel.",
+      "source3": "Hajózási idő – jellemző szállítási idő gyűjtőkonténerben a fő exportkikötőkből, a hajóra várakozás nélkül.",
+      "source4": "Távolságok – légvonalban × 1,25 a kikötőtől az ország fő népességi központjáig, a közúti útvonal közelítéseként.",
+      "sourcesUpdated": "Az adatok utolsó frissítése: {{date}}. Minden feltételezést leírunk ezen az oldalon:"
     },
     "cta": {
       "title": "Számolja ki autója pontos költségét",
