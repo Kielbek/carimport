@@ -1,8 +1,11 @@
 import { Component, computed, effect, inject, input, untracked } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { map } from 'rxjs';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../../core/i18n/language.service';
 import { Lang } from '../../core/i18n/languages';
+import { isSupportedLang } from '../../core/i18n/language.service';
 import { GuideRef, GuideSection, guidePath, resolveGuide } from '../../core/routing/guide-paths';
 import { PageContext } from '../../core/routing/page-context';
 import { pathFor } from '../../core/routing/paths';
@@ -542,7 +545,21 @@ export class GuidePage {
   protected readonly examplesDate = MODEL_EXAMPLES_DATE;
   protected readonly stepIcons = STEP_ICONS;
 
-  protected readonly ref = computed(() => resolveGuide(this.lang.current(), this.section() ?? '', this.item() ?? null));
+  /**
+   * Language of this page's own URL. While a language switch is in flight the service already holds the new language
+   * but this component still shows the old URL - resolving the old slugs in the new language would find nothing.
+   */
+  private readonly urlLang = (() => {
+    const route = inject(ActivatedRoute).pathFromRoot.find((r) => r.snapshot.paramMap.has('lang'));
+    return route
+      ? toSignal(route.paramMap.pipe(map((p) => p.get('lang'))), { initialValue: route.snapshot.paramMap.get('lang') })
+      : () => null;
+  })();
+  private readonly pageLang = computed<Lang>(() => {
+    const l = this.urlLang();
+    return isSupportedLang(l) ? l : this.lang.current();
+  });
+  protected readonly ref = computed(() => resolveGuide(this.pageLang(), this.section() ?? '', this.item() ?? null));
 
   /** The reader's home country (from the language); null for English and Ukrainian = the whole EU. */
   protected readonly home = computed(() => {
@@ -756,7 +773,7 @@ export class GuidePage {
     // head tags, language links; unknown guide URLs go to the home page
     effect(() => {
       const r = this.ref();
-      const lang = this.lang.current();
+      const lang = this.pageLang();
       untracked(() => (r ? this.applySeo(r, lang) : void this.router.navigateByUrl(pathFor('home', lang))));
     });
   }
