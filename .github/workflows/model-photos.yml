@@ -27,7 +27,7 @@ jobs:
       - name: Fetch photos
         run: |
           if grep -q "^pages" frontend/tools/photos.request; then
-            cd frontend/tools && python3 fetch_page_photos.py
+            cd frontend/tools && python3 fetch_page_photos.py $(grep "^pages" photos.request | sed 's/#.*//' | cut -s -d' ' -f2-)
           else
             python3 frontend/tools/fetch_model_photos.py $(grep -v "^#" frontend/tools/photos.request)
           fi

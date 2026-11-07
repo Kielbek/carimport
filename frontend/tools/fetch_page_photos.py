@@ -4,7 +4,8 @@
 For each page in PAGES it keeps up to MAX landscape candidates (CC0 / public domain / CC BY / CC BY-SA), saves them as
 public/images/pages/<page>-<n>-640.webp and -1280.webp (16:9) and writes author, licence and source to
 tools/page-photos.json. Pick the one to show by setting "chosen" in that file; review before publishing.
-    python3 tools/fetch_page_photos.py
+    python3 tools/fetch_page_photos.py            # all pages
+    python3 tools/fetch_page_photos.py ports      # only the port guide pages (port-<UN/LOCODE>)
 """
 import json, urllib.parse
 from pathlib import Path
@@ -13,11 +14,24 @@ from fetch_model_photos import FREE, query, save, text
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'public' / 'images' / 'pages'
 DATA = ROOT / 'tools' / 'page-photos.json'
-MAX = 6
+MAX = 5
 PAGES = {
     'copart': ['incategory:Copart', 'incategory:"Car auctions"', 'incategory:"Salvage yards in the United States"',
                'damaged cars salvage yard', 'wrecked cars lot'],
     'vin': ['incategory:"Vehicle identification numbers"', 'VIN dashboard windshield car', 'VIN sticker door jamb'],
+}
+# port guide pages: the port itself (terminals, car carriers, quays) - not the town
+PORTS = {
+    'port-DEBRV': ['incategory:"Port of Bremerhaven"', 'Bremerhaven Autoterminal car carrier', 'Bremerhaven container terminal'],
+    'port-DEHAM': ['incategory:"Port of Hamburg"', 'Hamburg container terminal Burchardkai', 'Hamburg port container ship'],
+    'port-NLRTM': ['incategory:"Port of Rotterdam"', 'Rotterdam Maasvlakte container terminal', 'Rotterdam port container ship'],
+    'port-BEANR': ['incategory:"Port of Antwerp"', 'Antwerp port container terminal', 'Antwerpen haven containerschip'],
+    'port-BEZEE': ['incategory:"Port of Zeebrugge"', 'Zeebrugge car carrier', 'Zeebrugge haven'],
+    'port-PLGDN': ['incategory:"Port of Gdańsk"', 'DCT Gdańsk container terminal', 'Gdańsk port container ship'],
+    'port-PLGDY': ['incategory:"Port of Gdynia"', 'Gdynia container terminal', 'port Gdynia statek'],
+    'port-PLSZZ': ['incategory:"Port of Szczecin"', 'incategory:"Port of Świnoujście"', 'Świnoujście ferry terminal'],
+    'port-LTKLJ': ['incategory:"Port of Klaipėda"', 'Klaipėda container terminal', 'Klaipėda port ship'],
+    'port-SIKOP': ['incategory:"Port of Koper"', 'Luka Koper car terminal', 'Koper port container'],
 }
 SKIP = ('race', 'nascar', 'speedway', 'bus', 'truck', 'locomotive', 'tram', 'motorcycle')
 
@@ -41,11 +55,12 @@ def candidates(searches):
             yield p['title'], info, lic, text(meta, 'Artist') or 'unknown', (meta.get('LicenseUrl') or {}).get('value', '')
 
 
-def main():
+def main(group=None):
     import fetch_model_photos
     fetch_model_photos.OUT = OUT  # save() writes next to the page images
     data = json.loads(DATA.read_text()) if DATA.exists() else {}
-    for page, searches in PAGES.items():
+    pages = PORTS if group == 'ports' else PAGES if group else {**PAGES, **PORTS}
+    for page, searches in pages.items():
         found = []
         for n, (title, info, lic, author, lic_url) in enumerate(candidates(searches)):
             if n >= MAX:
@@ -64,4 +79,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import sys
+    main(sys.argv[1] if len(sys.argv) > 1 else None)
