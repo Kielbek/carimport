@@ -14,12 +14,20 @@
     <!-- Theme before first paint: stored choice, else OS preference (no light/dark flash). -->
     <script>
       (function () {
-        var t;
-        try { t = localStorage.getItem('carimport.theme'); } catch (e) {}
+        var t, l;
+        try { t = localStorage.getItem('carimport.theme'); l = localStorage.getItem('carimport.lang'); } catch (e) {}
+        // returning visitor on the bare domain: go to the saved language before anything is drawn (no English flash)
+        if (location.pathname === '/' && /^(bg|cs|da|de|el|en|es|et|fi|fr|hr|hu|it|lt|lv|nl|pl|pt|ro|sk|sl|sv|uk)$/.test(l || '')) {
+          location.replace('/' + l + location.search + location.hash);
+          return;
+        }
         if (t !== 'light' && t !== 'dark') {
           t = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
         }
         document.documentElement.setAttribute('data-theme', t);
+        if (!/bot|crawl|spider|slurp|lighthouse|headless|preview/i.test(navigator.userAgent)) {
+          document.documentElement.classList.add('splash');
+        }
         // the home hero photo for this theme (kept in sync by ThemeService); set here because the CSS inlined at build
         // time only knows the light theme
         var s = document.documentElement.style, n = t === 'dark' ? 'night' : 'day';
@@ -28,8 +36,56 @@
         s.setProperty('--hero-shade', t === 'dark' ? '16 16 17' : '243 243 244');
       })();
     </script>
+    <!-- Entry splash: a grey shimmering logo while fonts and the first images arrive (browser only, never for crawlers) -->
+    <style>
+      #splash{display:none}
+      html.splash #splash{position:fixed;inset:0;z-index:2147483000;display:grid;place-items:center;background:#f3f3f4;transition:opacity .3s ease,visibility .3s}
+      html.splash[data-theme='dark'] #splash{background:#101011}
+      html.splash #splash.out{opacity:0;visibility:hidden}
+      #splash svg{width:min(52vw,220px);height:auto}
+      #splash .ink{fill:#d4d4d8}
+      html[data-theme='dark'] #splash .ink{fill:#2a2a2e}
+      #splash .glint{fill:url(#splash-glint)}
+      @media (prefers-reduced-motion:reduce){#splash animateTransform{display:none}}
+    </style>
   </head>
   <body>
+    <div id="splash" aria-hidden="true">
+      <svg viewBox="20 215 3613 970">
+        <defs>
+          <linearGradient id="splash-glint" x1="0" x2="1" y1="0" y2="0" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fff" stop-opacity="0" />
+            <stop offset="0.5" stop-color="#fff" stop-opacity="0.75" />
+            <stop offset="1" stop-color="#fff" stop-opacity="0" />
+            <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="1.3s" repeatCount="indefinite" />
+          </linearGradient>
+        </defs>
+        <path class="ink" d="M338 977Q247 977 177.0 941.0Q107 905 67.0 842.0Q27 779 27 696Q27 615 67.0 551.5Q107 488 177.0 452.5Q247 417 338 417Q430 417 497.0 456.0Q564 495 592 566L445 641Q426 603 398.0 585.5Q370 568 337 568Q288 568 253.5 601.5Q219 635 219 696Q219 759 253.5 792.5Q288 826 337 826Q370 826 398.0 808.5Q426 791 445 753L592 828Q564 898 497.0 937.5Q430 977 338 977ZM995 968V899Q953 977 835 977Q738 977 685.5 929.0Q633 881 633 810Q633 735 690.5 691.5Q748 648 874 648H982Q979 607 951.5 584.5Q924 562 867 562Q828 562 788.0 574.5Q748 587 720 609L656 480Q702 450 766.5 433.5Q831 417 895 417Q1027 417 1099.5 477.5Q1172 538 1172 667V968ZM982 794V747H900Q854 747 835.5 762.0Q817 777 817 802Q817 826 836.0 841.5Q855 857 888 857Q919 857 944.5 841.5Q970 826 982 794ZM1292 968V426H1473V491Q1532 417 1655 417V588Q1631 585 1612 585Q1554 585 1518.0 616.5Q1482 648 1482 719V968ZM2000 1171Q1922 1171 1851.5 1153.0Q1781 1135 1731 1100L1800 967Q1834 994 1884.5 1009.5Q1935 1025 1983 1025Q2060 1025 2094.0 991.5Q2128 958 2128 894V877Q2073 940 1967 940Q1895 940 1834.5 908.0Q1774 876 1737.5 817.0Q1701 758 1701 678Q1701 598 1737.5 539.5Q1774 481 1834.5 449.0Q1895 417 1967 417Q2082 417 2137 491V426H2318V869Q2318 1023 2234.5 1097.0Q2151 1171 2000 1171ZM2012 789Q2063 789 2096.5 758.5Q2130 728 2130 678Q2130 628 2096.5 598.0Q2063 568 2012 568Q1961 568 1927.0 598.0Q1893 628 1893 678Q1893 728 1927.0 758.5Q1961 789 2012 789ZM2440 968V226H2630V968ZM3025 977Q2936 977 2867.0 941.0Q2798 905 2758.5 841.5Q2719 778 2719 696Q2719 615 2758.5 551.5Q2798 488 2867.0 452.5Q2936 417 3025 417Q3114 417 3183.5 452.5Q3253 488 3292.0 551.5Q3331 615 3331 696Q3331 778 3292.0 841.5Q3253 905 3183.5 941.0Q3114 977 3025 977ZM3025 826Q3074 826 3106.5 792.0Q3139 758 3139 696Q3139 635 3106.5 601.5Q3074 568 3025 568Q2977 568 2944.0 601.5Q2911 635 2911 696Q2911 758 2944.0 792.0Q2977 826 3025 826Z" />
+        <path class="ink" d="M3499 977Q3451 977 3418.0 945.0Q3385 913 3385 864Q3385 813 3418.0 782.5Q3451 752 3499 752Q3548 752 3580.5 782.5Q3613 813 3613 864Q3613 913 3580.5 945.0Q3548 977 3499 977Z" />
+        <path class="glint" d="M338 977Q247 977 177.0 941.0Q107 905 67.0 842.0Q27 779 27 696Q27 615 67.0 551.5Q107 488 177.0 452.5Q247 417 338 417Q430 417 497.0 456.0Q564 495 592 566L445 641Q426 603 398.0 585.5Q370 568 337 568Q288 568 253.5 601.5Q219 635 219 696Q219 759 253.5 792.5Q288 826 337 826Q370 826 398.0 808.5Q426 791 445 753L592 828Q564 898 497.0 937.5Q430 977 338 977ZM995 968V899Q953 977 835 977Q738 977 685.5 929.0Q633 881 633 810Q633 735 690.5 691.5Q748 648 874 648H982Q979 607 951.5 584.5Q924 562 867 562Q828 562 788.0 574.5Q748 587 720 609L656 480Q702 450 766.5 433.5Q831 417 895 417Q1027 417 1099.5 477.5Q1172 538 1172 667V968ZM982 794V747H900Q854 747 835.5 762.0Q817 777 817 802Q817 826 836.0 841.5Q855 857 888 857Q919 857 944.5 841.5Q970 826 982 794ZM1292 968V426H1473V491Q1532 417 1655 417V588Q1631 585 1612 585Q1554 585 1518.0 616.5Q1482 648 1482 719V968ZM2000 1171Q1922 1171 1851.5 1153.0Q1781 1135 1731 1100L1800 967Q1834 994 1884.5 1009.5Q1935 1025 1983 1025Q2060 1025 2094.0 991.5Q2128 958 2128 894V877Q2073 940 1967 940Q1895 940 1834.5 908.0Q1774 876 1737.5 817.0Q1701 758 1701 678Q1701 598 1737.5 539.5Q1774 481 1834.5 449.0Q1895 417 1967 417Q2082 417 2137 491V426H2318V869Q2318 1023 2234.5 1097.0Q2151 1171 2000 1171ZM2012 789Q2063 789 2096.5 758.5Q2130 728 2130 678Q2130 628 2096.5 598.0Q2063 568 2012 568Q1961 568 1927.0 598.0Q1893 628 1893 678Q1893 728 1927.0 758.5Q1961 789 2012 789ZM2440 968V226H2630V968ZM3025 977Q2936 977 2867.0 941.0Q2798 905 2758.5 841.5Q2719 778 2719 696Q2719 615 2758.5 551.5Q2798 488 2867.0 452.5Q2936 417 3025 417Q3114 417 3183.5 452.5Q3253 488 3292.0 551.5Q3331 615 3331 696Q3331 778 3292.0 841.5Q3253 905 3183.5 941.0Q3114 977 3025 977ZM3025 826Q3074 826 3106.5 792.0Q3139 758 3139 696Q3139 635 3106.5 601.5Q3074 568 3025 568Q2977 568 2944.0 601.5Q2911 635 2911 696Q2911 758 2944.0 792.0Q2977 826 3025 826Z" />
+      </svg>
+    </div>
+    <script>
+      (function () {
+        var root = document.documentElement;
+        if (!root.classList.contains('splash')) return;
+        var start = Date.now(), done = false;
+        function hide() {
+          if (done) return;
+          done = true;
+          setTimeout(function () {
+            var el = document.getElementById('splash');
+            if (el) el.className = 'out';
+            setTimeout(function () { root.classList.remove('splash'); }, 320);
+          }, Math.max(0, 350 - (Date.now() - start)));
+        }
+        var fonts = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+        var loaded = new Promise(function (r) { document.readyState === 'complete' ? r() : window.addEventListener('load', r); });
+        var app = new Promise(function (r) { document.addEventListener('app-ready', r); });
+        Promise.all([fonts, loaded, app]).then(hide, hide);
+        setTimeout(hide, 2500);
+      })();
+    </script>
     <app-root></app-root>
   </body>
 </html>
