@@ -1429,7 +1429,8 @@
       "source2": "Obsluha terminálu a colný agent – typické ceny za jedno osobné auto; konkrétny terminál alebo agent môže účtovať inak.",
       "source3": "Čas plavby – typický čas prepravy v zdieľanom kontajneri z hlavných exportných prístavov, bez čakania na loď.",
       "source4": "Vzdialenosti – vzdušnou čiarou × 1,25 z prístavu do hlavného populačného centra krajiny ako priblíženie cestnej trasy.",
-      "sourcesUpdated": "Posledná aktualizácia údajov: {{date}}. Všetky predpoklady opisujeme na stránke"
+      "sourcesUpdated": "Posledná aktualizácia údajov: {{date}}. Všetky predpoklady opisujeme na stránke",
+      "aboutTitle": "Čo vedieť o tomto prístave"
     },
     "cta": {
       "title": "Vypočítajte presné náklady pre svoje auto",
@@ -1542,6 +1543,18 @@
         "q": "Koľko stojí dovoz {{car}} pri inej kúpnej cene?",
         "a": "Pri kúpnej cene {{lowPrice}} sú celkové náklady ({{country}}) cca {{lowTotal}}, pri {{highPrice}} cca {{highTotal}}. Clo a DPH rastú s cenou auta."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Bremerhaven patrí k najväčším automobilovým prístavom Európy a je hlavnou bránou pre vozidlá z východného pobrežia USA – na lodiach RoRo aj v kontajneroch. Mnoho kontajnerových liniek zo Severnej Ameriky sem pláva priamo, takže čas prepravy patrí k najkratším. Dobrý východiskový bod pre severné Nemecko, Benelux a Dánsko.",
+      "DEHAM": "Hamburg je najväčší kontajnerový prístav Nemecka, preto sem autá kúpené v USA, Kanade alebo Japonsku často pripláva v zdieľaných kontajneroch a vykladajú sa v skladoch pri prístave. Má dobré cestné spojenie s Berlínom, Škandináviou, Poľskom a Českom.",
+      "NLRTM": "Rotterdam je najväčší prístav Európy s najčastejšími kontajnerovými linkami zo Severnej Ameriky a Ázie. Mnoho dovozných agentov tu vykladá zdieľané kontajnery a firmy registrované pre DPH môžu využiť colný režim 4200. Hodí sa pre Holandsko, Belgicko a západné Nemecko.",
+      "BEANR": "Antverpy (Port of Antwerp-Bruges) sú jedným z najväčších kontajnerových prístavov Európy a dlhoročným centrom dovozu amerických áut – pôsobí tu mnoho agentov, ktorí vykladajú zdieľané kontajnery a vybavujú colné formality. Ležia blízko Holandska, Nemecka, Francúzska a Luxemburska.",
+      "BEZEE": "Zeebrugge, súčasť Port of Antwerp-Bruges, je jedným z najväčších prístavov RoRo pre autá na svete s denným trajektovým a RoRo spojením s Veľkou Britániou. Preto je prirodzeným vstupným bodom pre autá kúpené v Spojenom kráľovstve aj pre prepravu RoRo zo Severnej Ameriky.",
+      "PLGDN": "V Gdansku sa nachádza DCT Gdańsk, najväčší kontajnerový terminál na Baltiku s priamymi zaoceánskymi linkami z Ázie; kontajnery zo Severnej Ameriky zvyčajne prídu po prekládke v prístave Severného mora. Miestni agenti preclievajú v poľštine – jasná voľba pre severné a stredné Poľsko.",
+      "PLGDY": "Gdyňa má dva kontajnerové terminály (BCT a GCT) a trajektové spojenie do švédskej Karlskrony. Kontajnery z USA sem zvyčajne prídu po prekládke v prístave Severného mora, čo oproti Bremerhavenu alebo Rotterdamu pridá niekoľko dní.",
+      "PLSZZ": "Štetín a Svinoústie tvoria jeden prístavný komplex pri nemeckých hraniciach a zo Svinoústia premávajú trajekty do Švédska. Zámorské kontajnery prichádzajú prípojnými loďami po prekládke v prístave Severného mora. Pohodlná možnosť pre západné Poľsko a okolie Berlína.",
+      "LTKLJ": "Klaipėda je jediný námorný prístav Litvy a najsevernejší nezamŕzajúci prístav na východnom pobreží Baltiku. Ojazdené autá z amerických aukcií sem prichádzajú v kontajneroch po prekládke a miestni agenti majú s týmto obchodom dlhoročné skúsenosti. Praktická voľba pre pobaltské štáty a severovýchodné Poľsko.",
+      "SIKOP": "Koper je jediný prístav Slovinska a jeden z najväčších automobilových terminálov v Stredomorí. Vďaka trase cez Suez sem lode z Japonska a SAE prídu skôr ako do prístavov Severného mora a prístav leží blízko Rakúska, Maďarska, Chorvátska a severného Talianska."
     }
   },
   "blog": {

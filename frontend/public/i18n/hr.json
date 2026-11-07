@@ -1429,7 +1429,8 @@
       "source2": "Obrada na terminalu i carinski agent – uobičajene cijene za jedan osobni automobil; određeni terminal ili agent može naplatiti drukčije.",
       "source3": "Trajanje plovidbe – uobičajeni tranzit u dijeljenom kontejneru iz glavnih izvoznih luka, bez čekanja na brod.",
       "source4": "Udaljenosti – zračnom linijom × 1,25 od luke do glavnog središta stanovništva zemlje, kao približna cestovna ruta.",
-      "sourcesUpdated": "Podaci zadnji put ažurirani: {{date}}. Sve pretpostavke opisujemo na stranici"
+      "sourcesUpdated": "Podaci zadnji put ažurirani: {{date}}. Sve pretpostavke opisujemo na stranici",
+      "aboutTitle": "Što treba znati o ovoj luci"
     },
     "cta": {
       "title": "Izračunajte točan trošak za svoj automobil",
@@ -1542,6 +1543,18 @@
         "q": "Koliko košta uvoz {{car}} uz drugu kupovnu cijenu?",
         "a": "Uz kupovnu cijenu {{lowPrice}} ukupni trošak ({{country}}) iznosi oko {{lowTotal}}, a uz {{highPrice}} oko {{highTotal}}. Carina i PDV rastu s cijenom automobila."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Bremerhaven je jedna od najvećih automobilskih luka u Europi i glavni ulaz za vozila s istočne obale SAD-a, i brodovima RoRo i u kontejnerima. Mnoge kontejnerske linije iz Sjeverne Amerike pristaju ovdje izravno, pa je vrijeme prijevoza među najkraćima. Dobro polazište za sjevernu Njemačku, Benelux i Dansku.",
+      "DEHAM": "Hamburg je najveća kontejnerska luka Njemačke, pa automobili kupljeni u SAD-u, Kanadi ili Japanu ovdje često stižu u dijeljenim kontejnerima i istovaruju se u skladištima uz luku. Ima dobre cestovne veze s Berlinom, Skandinavijom, Poljskom i Češkom.",
+      "NLRTM": "Rotterdam je najveća luka u Europi s najčešćim kontejnerskim linijama iz Sjeverne Amerike i Azije. Mnogi uvozni agenti ovdje istovaruju dijeljene kontejnere, a tvrtke registrirane za PDV mogu koristiti carinski postupak 4200. Prikladno za Nizozemsku, Belgiju i zapadnu Njemačku.",
+      "BEANR": "Antwerpen (Port of Antwerp-Bruges) jedna je od najvećih kontejnerskih luka Europe i dugogodišnje središte uvoza američkih automobila – ovdje radi mnogo agenata koji istovaruju dijeljene kontejnere i obavljaju carinske formalnosti. Luka je blizu Nizozemske, Njemačke, Francuske i Luksemburga.",
+      "BEZEE": "Zeebrugge, dio Port of Antwerp-Bruges, jedna je od najvećih RoRo luka za automobile na svijetu, s dnevnim trajektnim i RoRo vezama s Ujedinjenim Kraljevstvom. Zato je prirodna ulazna točka za automobile kupljene u UK-u i za RoRo prijevoz iz Sjeverne Amerike.",
+      "PLGDN": "U Gdanjsku se nalazi DCT Gdańsk, najveći kontejnerski terminal na Baltiku s izravnim oceanskim linijama iz Azije; kontejneri iz Sjeverne Amerike obično stižu nakon pretovara u luci Sjevernog mora. Lokalni agenti carine na poljskom – logičan izbor za sjevernu i središnju Poljsku.",
+      "PLGDY": "Gdynia ima dva kontejnerska terminala (BCT i GCT) i trajektnu vezu s Karlskronom u Švedskoj. Kontejneri iz SAD-a ovdje obično stižu nakon pretovara u luci Sjevernog mora, što u odnosu na Bremerhaven ili Rotterdam dodaje nekoliko dana.",
+      "PLSZZ": "Szczecin i Świnoujście čine jedan lučki kompleks uz njemačku granicu, a iz Świnoujścia plove trajekti za Švedsku. Prekooceanski kontejneri stižu feeder brodovima nakon pretovara u luci Sjevernog mora. Praktična opcija za zapadnu Poljsku i područje Berlina.",
+      "LTKLJ": "Klaipėda je jedina morska luka Litve i najsjevernija luka bez leda na istočnoj obali Baltika. Rabljeni automobili s američkih aukcija ovdje stižu u kontejnerima nakon pretovara, a lokalni agenti imaju dugo iskustvo s tom trgovinom. Praktičan izbor za baltičke zemlje i sjeveroistočnu Poljsku.",
+      "SIKOP": "Koper je jedina luka Slovenije i jedan od najvećih automobilskih terminala na Sredozemlju. Zahvaljujući ruti kroz Sueski kanal, brodovi iz Japana i UAE-a ovdje stižu prije nego u luke Sjevernog mora, a luka je blizu Austrije, Mađarske, Hrvatske i sjeverne Italije."
     }
   },
   "blog": {

@@ -1429,7 +1429,8 @@
       "source2": "Terminalafhandeling en douane-expediteur – gangbare prijzen voor één personenauto; een specifieke terminal of expediteur kan anders rekenen.",
       "source3": "Vaartijd – gangbare doorlooptijd in een gedeelde container vanuit de belangrijkste exporthavens, zonder wachten op het schip.",
       "source4": "Afstanden – hemelsbreed × 1,25 van de haven naar het belangrijkste bevolkingscentrum van het land, als benadering van de route over de weg.",
-      "sourcesUpdated": "Gegevens laatst bijgewerkt: {{date}}. Alle aannames beschrijven we op de pagina"
+      "sourcesUpdated": "Gegevens laatst bijgewerkt: {{date}}. Alle aannames beschrijven we op de pagina",
+      "aboutTitle": "Goed om te weten over deze haven"
     },
     "cta": {
       "title": "Bereken de exacte kosten voor uw auto",
@@ -1542,6 +1543,18 @@
         "q": "Wat kost de import van een {{car}} bij een andere aankoopprijs?",
         "a": "Bij een aankoopprijs van {{lowPrice}} zijn de totale kosten ({{country}}) ca. {{lowTotal}}, bij {{highPrice}} ca. {{highTotal}}. Invoerrecht en btw stijgen mee met de prijs van de auto."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Bremerhaven is een van de grootste autohavens van Europa en een belangrijke toegangspoort voor voertuigen van de Amerikaanse oostkust, zowel per RoRo-schip als in containers. Veel containerdiensten uit Noord-Amerika doen de haven rechtstreeks aan, dus de transittijden behoren tot de kortste. Een goed vertrekpunt voor Noord-Duitsland, de Benelux en Denemarken.",
+      "DEHAM": "Hamburg is de grootste containerhaven van Duitsland, dus auto’s uit de VS, Canada of Japan komen hier vaak in een gedeelde container aan en worden in loodsen bij de haven gelost. Goede wegverbindingen met Berlijn, Scandinavië, Polen en Tsjechië.",
+      "NLRTM": "Rotterdam is de grootste haven van Europa, met de meest frequente containerdiensten uit Noord-Amerika en Azië. Veel importagenten lossen hier gedeelde containers, en btw-geregistreerde bedrijven kunnen douaneregeling 4200 gebruiken. Geschikt voor Nederland, België en West-Duitsland.",
+      "BEANR": "Antwerpen (Port of Antwerp-Bruges) is een van de grootste containerhavens van Europa en al jaren een centrum voor de import van Amerikaanse auto’s, met veel agenten die gedeelde containers lossen en de douaneformaliteiten regelen. De haven ligt dicht bij Nederland, Duitsland, Frankrijk en Luxemburg.",
+      "BEZEE": "Zeebrugge, onderdeel van Port of Antwerp-Bruges, is een van de grootste RoRo-autohavens ter wereld, met dagelijkse ferry- en RoRo-verbindingen met het Verenigd Koninkrijk. Daarmee is het de logische toegangspoort voor auto’s uit het VK en voor RoRo-verschepingen uit Noord-Amerika.",
+      "PLGDN": "In Gdańsk ligt DCT Gdańsk, de grootste containerterminal aan de Oostzee, met rechtstreekse oceaandiensten uit Azië; containers uit Noord-Amerika komen meestal aan na overslag in een Noordzeehaven. Lokale agenten verzorgen de inklaring in het Pools – de logische keuze voor Noord- en Midden-Polen.",
+      "PLGDY": "Gdynia heeft twee containerterminals (BCT en GCT) en een ferryverbinding met Karlskrona in Zweden. Containers uit de VS bereiken Gdynia meestal na overslag in een Noordzeehaven, wat enkele dagen extra kost ten opzichte van Bremerhaven of Rotterdam.",
+      "PLSZZ": "Szczecin en Świnoujście vormen één havencomplex vlak bij de Duitse grens, en vanuit Świnoujście varen ferry’s naar Zweden. Containers van overzee komen per feederschip aan na overslag in een Noordzeehaven. Een handige optie voor West-Polen en de regio Berlijn.",
+      "LTKLJ": "Klaipėda is de enige zeehaven van Litouwen en de noordelijkste ijsvrije haven aan de oostelijke Oostzeekust. Gebruikte auto’s van Amerikaanse veilingen komen hier na overslag in containers aan, en lokale agenten hebben veel ervaring met deze handel. Een praktische keuze voor de Baltische staten en Noordoost-Polen.",
+      "SIKOP": "Koper is de enige haven van Slovenië en een van de grootste autoterminals in de Middellandse Zee. Dankzij de route via Suez komen schepen uit Japan en de VAE er eerder aan dan in Noordzeehavens, en de haven ligt dicht bij Oostenrijk, Hongarije, Kroatië en Noord-Italië."
     }
   },
   "blog": {

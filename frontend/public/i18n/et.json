@@ -1429,7 +1429,8 @@
       "source2": "Terminali teenindus ja tolliagent – tüüpilised hinnad ühe sõiduauto kohta; konkreetne terminal või agent võib küsida teistsugust hinda.",
       "source3": "Merereisi aeg – tüüpiline transiit jagatud konteineris peamistest eksportsadamatest, ilma laeva ootamiseta.",
       "source4": "Kaugused – linnulennult × 1,25 sadamast riigi peamise rahvastikukeskuseni, maanteetee ligikaudse hinnanguna.",
-      "sourcesUpdated": "Andmed viimati uuendatud: {{date}}. Kõik eeldused kirjeldame lehel"
+      "sourcesUpdated": "Andmed viimati uuendatud: {{date}}. Kõik eeldused kirjeldame lehel",
+      "aboutTitle": "Mida selle sadama kohta teada"
     },
     "cta": {
       "title": "Arvuta oma auto täpne hind",
@@ -1542,6 +1543,18 @@
         "q": "Kui palju maksab {{car}} import teistsuguse ostuhinnaga?",
         "a": "Ostuhinnaga {{lowPrice}} on kogukulu ({{country}}) u {{lowTotal}}, hinnaga {{highPrice}} u {{highTotal}}. Toll ja käibemaks kasvavad koos auto hinnaga."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Bremerhaven on üks Euroopa suurimaid autosadamaid ja peamine värav USA idarannikult tulevatele sõidukitele nii RoRo-laevadel kui ka konteinerites. Paljud Põhja-Ameerika konteinerliinid sõidavad siia otse, seega on transiidiajad ühed lühimad. Hea lähtepunkt Põhja-Saksamaale, Beneluxi riikidesse ja Taani.",
+      "DEHAM": "Hamburg on Saksamaa suurim konteinersadam, seega jõuavad USA-st, Kanadast või Jaapanist ostetud autod siia sageli jagatud konteineris ja need laaditakse tühjaks sadama lähedal asuvates ladudes. Head maanteeühendused Berliini, Skandinaaviasse, Poola ja Tšehhi.",
+      "NLRTM": "Rotterdam on Euroopa suurim sadam, kuhu tuleb kõige rohkem konteinerliine Põhja-Ameerikast ja Aasiast. Paljud impordiagendid laadivad siin tühjaks jagatud konteinereid ning käibemaksukohustuslased ettevõtted saavad kasutada tolliprotseduuri 4200. Sobib Hollandisse, Belgiasse ja Lääne-Saksamaale.",
+      "BEANR": "Antwerpen (Port of Antwerp-Bruges) on üks Euroopa suurimaid konteinersadamaid ja pikaajaline Ameerika autode impordi keskus – siin tegutseb palju agente, kes laadivad jagatud konteinereid tühjaks ja korraldavad tollivormistuse. Sadam asub Hollandi, Saksamaa, Prantsusmaa ja Luksemburgi lähedal.",
+      "BEZEE": "Zeebrugge, mis kuulub Port of Antwerp-Bruges'i koosseisu, on üks maailma suurimaid RoRo-autosadamaid ning sealt on igapäevased parvlaeva- ja RoRo-ühendused Ühendkuningriigiga. Seetõttu on see loomulik sisenemispunkt Ühendkuningriigist ostetud autodele ja Põhja-Ameerika RoRo-vedudele.",
+      "PLGDN": "Gdańskis asub DCT Gdańsk, Läänemere suurim konteineriterminal, kuhu tulevad otse ookeaniliinid Aasiast; Põhja-Ameerika konteinerid jõuavad tavaliselt kohale pärast ümberlaadimist Põhjamere sadamas. Kohalikud agendid tegelevad tollivormistusega poola keeles – loomulik valik Põhja- ja Kesk-Poola jaoks.",
+      "PLGDY": "Gdynias on kaks konteineriterminali (BCT ja GCT) ning parvlaevaühendus Rootsi Karlskronaga. USA konteinerid jõuavad siia tavaliselt pärast ümberlaadimist Põhjamere sadamas, mis lisab Bremerhaveni või Rotterdamiga võrreldes mõne päeva.",
+      "PLSZZ": "Szczecin ja Świnoujście moodustavad ühe sadamakompleksi Saksamaa piiri lähedal ning Świnoujściest sõidavad parvlaevad Rootsi. Ülemere konteinerid saabuvad söötjalaevadega pärast ümberlaadimist Põhjamere sadamas. Mugav valik Lääne-Poola ja Berliini piirkonna jaoks.",
+      "LTKLJ": "Klaipėda on Leedu ainus meresadam ja Läänemere idaranniku põhjapoolseim jäävaba sadam. USA oksjonitelt ostetud kasutatud autod jõuavad siia konteinerites pärast ümberlaadimist ning kohalikel agentidel on selles äris pikk kogemus. Praktiline valik Balti riikide ja Kirde-Poola jaoks.",
+      "SIKOP": "Koper on Sloveenia ainus sadam ja üks Vahemere suurimaid autoterminale. Tänu Suessi marsruudile jõuavad laevad Jaapanist ja AÜE-st siia varem kui Põhjamere sadamatesse ning sadam asub Austria, Ungari, Horvaatia ja Põhja-Itaalia lähedal."
     }
   },
   "blog": {

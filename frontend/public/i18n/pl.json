@@ -1429,7 +1429,8 @@
       "source2": "Obsługa terminalu i agencja celna – typowe ceny dla jednego auta osobowego; konkretny terminal i agencja mogą policzyć inaczej.",
       "source3": "Czas rejsu – typowy czas kontenerem dzielonym z głównych portów eksportowych, bez oczekiwania na statek.",
       "source4": "Odległości – w linii prostej × 1,25 od portu do głównego skupiska ludności kraju, jako przybliżenie trasy drogowej.",
-      "sourcesUpdated": "Ostatnia aktualizacja danych: {{date}}. Wszystkie założenia opisujemy na stronie"
+      "sourcesUpdated": "Ostatnia aktualizacja danych: {{date}}. Wszystkie założenia opisujemy na stronie",
+      "aboutTitle": "Co warto wiedzieć o tym porcie"
     },
     "cta": {
       "title": "Policz dokładny koszt dla swojego auta",
@@ -1542,6 +1543,18 @@
         "q": "Ile kosztuje import {{car}}, gdy cena zakupu jest inna?",
         "a": "Przy cenie zakupu {{lowPrice}} łączny koszt ({{country}}) to ok. {{lowTotal}}, a przy {{highPrice}} – ok. {{highTotal}}. Cło i VAT rosną razem z ceną auta."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Bremerhaven to jeden z największych portów samochodowych w Europie i główna brama dla aut ze wschodniego wybrzeża USA – zarówno statkami RoRo, jak i w kontenerach. Wiele serwisów kontenerowych z Ameryki Północnej zawija tu bezpośrednio, więc czas rejsu należy do najkrótszych. Dobry punkt startowy dla północnych Niemiec, Beneluksu i Danii.",
+      "DEHAM": "Hamburg to największy port kontenerowy Niemiec, dlatego auta kupione w USA, Kanadzie czy Japonii często przypływają tu w kontenerach dzielonych i są rozładowywane w magazynach przy porcie. Ma dobre połączenia drogowe z Berlinem, Skandynawią, Polską i Czechami.",
+      "NLRTM": "Rotterdam to największy port Europy z najczęstszymi serwisami kontenerowymi z Ameryki Północnej i Azji. Wielu agentów importowych rozładowuje tu kontenery dzielone, a firmy zarejestrowane do VAT mogą skorzystać z procedury celnej 4200. Pasuje dla Holandii, Belgii i zachodnich Niemiec.",
+      "BEANR": "Antwerpia (Port of Antwerp-Bruges) to jeden z największych portów kontenerowych Europy i od lat centrum importu aut z USA – działa tu wielu agentów, którzy rozładowują kontenery dzielone i załatwiają formalności celne. Leży blisko Holandii, Niemiec, Francji i Luksemburga.",
+      "BEZEE": "Zeebrugge, część Port of Antwerp-Bruges, to jeden z największych na świecie portów RoRo dla samochodów, z codziennymi połączeniami promowymi i RoRo z Wielką Brytanią. Dlatego to naturalny punkt wjazdu dla aut kupionych w UK, a także dla transportu RoRo z Ameryki Północnej.",
+      "PLGDN": "W Gdańsku działa DCT Gdańsk – największy terminal kontenerowy nad Bałtykiem, obsługiwany bezpośrednio przez oceaniczne serwisy z Azji; kontenery z Ameryki Północnej zwykle docierają po przeładunku w porcie Morza Północnego. Lokalne agencje prowadzą odprawę po polsku, więc to oczywisty wybór dla północnej i centralnej Polski.",
+      "PLGDY": "Gdynia ma dwa terminale kontenerowe (BCT i GCT) oraz połączenie promowe z Karlskroną w Szwecji. Kontenery z USA trafiają tu zwykle po przeładunku w porcie Morza Północnego, co dodaje kilka dni w porównaniu z Bremerhaven czy Rotterdamem.",
+      "PLSZZ": "Szczecin i Świnoujście tworzą jeden zespół portowy przy granicy z Niemcami, a ze Świnoujścia kursują promy do Szwecji. Kontenery zza oceanu przypływają statkami dowozowymi po przeładunku w porcie Morza Północnego. Wygodna opcja dla zachodniej Polski i okolic Berlina.",
+      "LTKLJ": "Kłajpeda to jedyny port morski Litwy i najdalej na północ wysunięty niezamarzający port wschodniego Bałtyku. Używane auta z amerykańskich aukcji przypływają tu w kontenerach po przeładunku, a lokalni agenci mają w tym duże doświadczenie. Praktyczny wybór dla krajów bałtyckich i północno-wschodniej Polski.",
+      "SIKOP": "Koper to jedyny port Słowenii i jeden z największych terminali samochodowych na Morzu Śródziemnym. Dzięki trasie przez Suez statki z Japonii i ZEA docierają tu szybciej niż do portów Morza Północnego, a port leży blisko Austrii, Węgier, Chorwacji i północnych Włoch."
     }
   },
   "blog": {

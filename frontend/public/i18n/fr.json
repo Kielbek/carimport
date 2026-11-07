@@ -1429,7 +1429,8 @@
       "source2": "Manutention au terminal et transitaire – prix habituels pour une voiture particulière ; un terminal ou transitaire précis peut facturer autrement.",
       "source3": "Durée de traversée – transit habituel en conteneur partagé depuis les principaux ports d’exportation, sans l’attente du navire.",
       "source4": "Distances – à vol d’oiseau × 1,25 du port jusqu’au principal centre de population du pays, comme approximation de l’itinéraire routier.",
-      "sourcesUpdated": "Dernière mise à jour des données : {{date}}. Toutes les hypothèses sont décrites sur la page"
+      "sourcesUpdated": "Dernière mise à jour des données : {{date}}. Toutes les hypothèses sont décrites sur la page",
+      "aboutTitle": "À savoir sur ce port"
     },
     "cta": {
       "title": "Calculez le coût exact pour votre voiture",
@@ -1542,6 +1543,18 @@
         "q": "Combien coûte l'import d'une {{car}} à un autre prix d'achat ?",
         "a": "Pour un prix d'achat de {{lowPrice}}, le coût total ({{country}}) est d'env. {{lowTotal}} ; pour {{highPrice}}, d'env. {{highTotal}}. Droits et TVA augmentent avec le prix de la voiture."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Bremerhaven est l’un des plus grands ports automobiles d’Europe et une porte d’entrée majeure pour les véhicules de la côte Est des États-Unis, par navire RoRo comme en conteneur. De nombreux services conteneurisés d’Amérique du Nord y font escale directement, d’où des délais parmi les plus courts. Un bon point de départ pour le nord de l’Allemagne, le Benelux et le Danemark.",
+      "DEHAM": "Hambourg est le premier port à conteneurs d’Allemagne : les voitures achetées aux États-Unis, au Canada ou au Japon y arrivent souvent en conteneur partagé et sont déchargées dans des entrepôts proches du port. Bonnes liaisons routières vers Berlin, la Scandinavie, la Pologne et la Tchéquie.",
+      "NLRTM": "Rotterdam est le plus grand port d’Europe, avec les services conteneurisés les plus fréquents depuis l’Amérique du Nord et l’Asie. De nombreux agents d’import y dépotent des conteneurs partagés, et les entreprises assujetties à la TVA peuvent utiliser le régime douanier 4200. Adapté aux Pays-Bas, à la Belgique et à l’ouest de l’Allemagne.",
+      "BEANR": "Anvers (Port of Antwerp-Bruges) est l’un des plus grands ports à conteneurs d’Europe et un centre historique d’importation de voitures américaines, avec de nombreux agents qui dépotent les conteneurs partagés et gèrent les formalités douanières. Il est proche des Pays-Bas, de l’Allemagne, de la France et du Luxembourg.",
+      "BEZEE": "Zeebrugge, qui fait partie de Port of Antwerp-Bruges, est l’un des plus grands ports RoRo automobiles du monde, avec des liaisons ferry et RoRo quotidiennes vers le Royaume-Uni. C’est donc un point d’entrée naturel pour les voitures achetées au Royaume-Uni et pour les expéditions RoRo d’Amérique du Nord.",
+      "PLGDN": "Gdańsk accueille DCT Gdańsk, le plus grand terminal à conteneurs de la Baltique, desservi directement par des services océaniques depuis l’Asie ; les conteneurs d’Amérique du Nord arrivent en général après transbordement dans un port de la mer du Nord. Les agents locaux dédouanent en polonais : le choix évident pour le nord et le centre de la Pologne.",
+      "PLGDY": "Gdynia dispose de deux terminaux à conteneurs (BCT et GCT) et d’une liaison ferry vers Karlskrona en Suède. Les conteneurs des États-Unis y arrivent généralement après transbordement dans un port de la mer du Nord, ce qui ajoute quelques jours par rapport à Bremerhaven ou Rotterdam.",
+      "PLSZZ": "Szczecin et Świnoujście forment un même complexe portuaire près de la frontière allemande, et Świnoujście a des liaisons ferry vers la Suède. Les conteneurs d’outre-mer arrivent par navire feeder après transbordement dans un port de la mer du Nord. Une option pratique pour l’ouest de la Pologne et la région de Berlin.",
+      "LTKLJ": "Klaipėda est le seul port maritime de Lituanie et le port libre de glace le plus au nord de la côte est de la Baltique. Les voitures d’occasion des enchères américaines y arrivent en conteneur après transbordement, et les agents locaux ont une longue expérience de ce commerce. Un choix pratique pour les pays baltes et le nord-est de la Pologne.",
+      "SIKOP": "Koper est le seul port de Slovénie et l’un des plus grands terminaux automobiles de Méditerranée. Grâce à la route de Suez, les navires du Japon et des Émirats y arrivent plus tôt que dans les ports de la mer du Nord, et le port est proche de l’Autriche, de la Hongrie, de la Croatie et du nord de l’Italie."
     }
   },
   "blog": {

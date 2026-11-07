@@ -1429,7 +1429,8 @@
       "source2": "Terminalo aptarnavimas ir muitinės tarpininkas – įprastos kainos vienam lengvajam automobiliui; konkretus terminalas ar tarpininkas gali skaičiuoti kitaip.",
       "source3": "Plaukimo trukmė – įprastas tranzitas bendrame konteineryje iš pagrindinių eksporto uostų, neįskaitant laivo laukimo.",
       "source4": "Atstumai – tiesia linija × 1,25 nuo uosto iki pagrindinio šalies gyventojų centro, kaip apytikslis kelio maršrutas.",
-      "sourcesUpdated": "Duomenys paskutinį kartą atnaujinti: {{date}}. Visas prielaidas aprašome puslapyje"
+      "sourcesUpdated": "Duomenys paskutinį kartą atnaujinti: {{date}}. Visas prielaidas aprašome puslapyje",
+      "aboutTitle": "Ką verta žinoti apie šį uostą"
     },
     "cta": {
       "title": "Apskaičiuokite tikslią savo automobilio kainą",
@@ -1542,6 +1543,18 @@
         "q": "Kiek kainuoja {{car}} importas esant kitai pirkimo kainai?",
         "a": "Kai pirkimo kaina {{lowPrice}}, bendra kaina ({{country}}) – apie {{lowTotal}}, kai {{highPrice}} – apie {{highTotal}}. Muitas ir PVM auga kartu su automobilio kaina."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Bremerhafenas – vienas didžiausių Europos automobilių uostų ir pagrindiniai vartai transporto priemonėms iš JAV rytinės pakrantės, tiek RoRo laivais, tiek konteineriuose. Daug konteinerių linijų iš Šiaurės Amerikos čia užsuka tiesiogiai, todėl tranzito laikas vienas trumpiausių. Geras atspirties taškas Šiaurės Vokietijai, Beniliukso šalims ir Danijai.",
+      "DEHAM": "Hamburgas – didžiausias Vokietijos konteinerių uostas, todėl JAV, Kanadoje ar Japonijoje pirkti automobiliai čia dažnai atplaukia bendruose konteineriuose ir iškraunami sandėliuose prie uosto. Geri keliai į Berlyną, Skandinaviją, Lenkiją ir Čekiją.",
+      "NLRTM": "Roterdamas – didžiausias Europos uostas, į kurį dažniausiai plaukia konteinerių linijos iš Šiaurės Amerikos ir Azijos. Daug importo agentų čia iškrauna bendrus konteinerius, o PVM mokėtojos įmonės gali naudoti muitinės procedūrą 4200. Tinka Nyderlandams, Belgijai ir Vakarų Vokietijai.",
+      "BEANR": "Antverpenas (Port of Antwerp-Bruges) – vienas didžiausių Europos konteinerių uostų ir senas amerikietiškų automobilių importo centras: čia dirba daug agentų, kurie iškrauna bendrus konteinerius ir tvarko muitinės formalumus. Uostas yra netoli Nyderlandų, Vokietijos, Prancūzijos ir Liuksemburgo.",
+      "BEZEE": "Zebriugė, priklausanti Port of Antwerp-Bruges, yra vienas didžiausių pasaulyje RoRo automobilių uostų, turintis kasdienius keltų ir RoRo ryšius su Jungtine Karalyste. Todėl tai natūralus įvežimo taškas JK pirktiems automobiliams ir RoRo siuntoms iš Šiaurės Amerikos.",
+      "PLGDN": "Gdanske veikia DCT Gdańsk – didžiausias Baltijos jūros konteinerių terminalas su tiesioginėmis vandenyno linijomis iš Azijos; konteineriai iš Šiaurės Amerikos paprastai atvyksta po perkrovimo Šiaurės jūros uoste. Vietiniai agentai muitina lenkų kalba – natūralus pasirinkimas Šiaurės ir Centrinei Lenkijai.",
+      "PLGDY": "Gdynėje yra du konteinerių terminalai (BCT ir GCT) ir keltų linija į Karlskroną Švedijoje. Konteineriai iš JAV čia paprastai atkeliauja po perkrovimo Šiaurės jūros uoste, todėl tai užtrunka keliomis dienomis ilgiau nei per Bremerhafeną ar Roterdamą.",
+      "PLSZZ": "Ščecinas ir Svinouiscis sudaro vieną uostų kompleksą prie Vokietijos sienos, o iš Svinouiscio plaukia keltai į Švediją. Užjūrio konteineriai atplaukia fiderių laivais po perkrovimo Šiaurės jūros uoste. Patogus variantas Vakarų Lenkijai ir Berlyno apylinkėms.",
+      "LTKLJ": "Klaipėda – vienintelis Lietuvos jūrų uostas ir šiauriausias neužšąlantis uostas rytinėje Baltijos jūros pakrantėje. Naudoti automobiliai iš JAV aukcionų čia atplaukia konteineriuose po perkrovimo, o vietiniai agentai turi ilgametę šios prekybos patirtį. Praktiškas pasirinkimas Baltijos šalims ir Šiaurės Rytų Lenkijai.",
+      "SIKOP": "Koperis – vienintelis Slovėnijos uostas ir vienas didžiausių automobilių terminalų Viduržemio jūroje. Dėl maršruto per Sueco kanalą laivai iš Japonijos ir JAE čia atplaukia greičiau nei į Šiaurės jūros uostus, o uostas yra netoli Austrijos, Vengrijos, Kroatijos ir Šiaurės Italijos."
     }
   },
   "blog": {

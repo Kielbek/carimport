@@ -1429,7 +1429,8 @@
       "source2": "Pretovor na terminalu in carinski zastopnik – običajne cene za en osebni avtomobil; posamezen terminal ali zastopnik lahko zaračuna drugače.",
       "source3": "Čas plovbe – običajen tranzit v deljenem zabojniku iz glavnih izvoznih pristanišč, brez čakanja na ladjo.",
       "source4": "Razdalje – zračna črta × 1,25 od pristanišča do glavnega središča prebivalstva države kot približek cestne poti.",
-      "sourcesUpdated": "Podatki nazadnje posodobljeni: {{date}}. Vse predpostavke opisujemo na strani"
+      "sourcesUpdated": "Podatki nazadnje posodobljeni: {{date}}. Vse predpostavke opisujemo na strani",
+      "aboutTitle": "Kaj je dobro vedeti o tem pristanišču"
     },
     "cta": {
       "title": "Izračunajte točne stroške za svoj avtomobil",
@@ -1542,6 +1543,18 @@
         "q": "Koliko stane uvoz {{car}} pri drugi nakupni ceni?",
         "a": "Pri nakupni ceni {{lowPrice}} so skupni stroški ({{country}}) pribl. {{lowTotal}}, pri {{highPrice}} pribl. {{highTotal}}. Carina in DDV rasteta s ceno avtomobila."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Bremerhaven je eno največjih avtomobilskih pristanišč v Evropi in glavna vstopna točka za vozila z vzhodne obale ZDA, tako z ladjami RoRo kot v zabojnikih. Številne zabojniške linije iz Severne Amerike tu pristajajo neposredno, zato je čas prevoza med najkrajšimi. Dobro izhodišče za severno Nemčijo, Beneluks in Dansko.",
+      "DEHAM": "Hamburg je največje zabojniško pristanišče v Nemčiji, zato avtomobili, kupljeni v ZDA, Kanadi ali na Japonskem, sem pogosto priplujejo v deljenih zabojnikih in jih raztovorijo v skladiščih ob pristanišču. Ima dobre cestne povezave z Berlinom, Skandinavijo, Poljsko in Češko.",
+      "NLRTM": "Rotterdam je največje pristanišče v Evropi z najpogostejšimi zabojniškimi linijami iz Severne Amerike in Azije. Številni uvozni agenti tu raztovarjajo deljene zabojnike, podjetja, registrirana za DDV, pa lahko uporabijo carinski postopek 4200. Primerno za Nizozemsko, Belgijo in zahodno Nemčijo.",
+      "BEANR": "Antwerpen (Port of Antwerp-Bruges) je eno največjih zabojniških pristanišč v Evropi in dolgoletno središče uvoza ameriških avtomobilov – tu dela veliko agentov, ki raztovarjajo deljene zabojnike in urejajo carinske formalnosti. Leži blizu Nizozemske, Nemčije, Francije in Luksemburga.",
+      "BEZEE": "Zeebrugge, del Port of Antwerp-Bruges, je eno največjih pristanišč RoRo za avtomobile na svetu z dnevnimi trajektnimi in RoRo povezavami z Združenim kraljestvom. Zato je naravna vstopna točka za avtomobile, kupljene v Združenem kraljestvu, in za prevoz RoRo iz Severne Amerike.",
+      "PLGDN": "V Gdansku je DCT Gdańsk, največji zabojniški terminal na Baltiku z neposrednimi oceanskimi linijami iz Azije; zabojniki iz Severne Amerike običajno prispejo po pretovoru v pristanišču Severnega morja. Lokalni agenti carinijo v poljščini – logična izbira za severno in osrednjo Poljsko.",
+      "PLGDY": "Gdynia ima dva zabojniška terminala (BCT in GCT) in trajektno povezavo s Karlskrono na Švedskem. Zabojniki iz ZDA sem običajno prispejo po pretovoru v pristanišču Severnega morja, kar v primerjavi z Bremerhavnom ali Rotterdamom doda nekaj dni.",
+      "PLSZZ": "Szczecin in Świnoujście tvorita en pristaniški kompleks ob nemški meji, iz Świnoujścia pa plujejo trajekti na Švedsko. Čezoceanski zabojniki prispejo z dovoznimi ladjami po pretovoru v pristanišču Severnega morja. Priročna možnost za zahodno Poljsko in območje Berlina.",
+      "LTKLJ": "Klaipėda je edino morsko pristanišče Litve in najsevernejše nezamrzujoče pristanišče na vzhodni obali Baltika. Rabljeni avtomobili z ameriških dražb sem prispejo v zabojnikih po pretovoru, lokalni agenti pa imajo s to trgovino dolgoletne izkušnje. Praktična izbira za baltske države in severovzhodno Poljsko.",
+      "SIKOP": "Koper je edino pristanišče Slovenije in eden največjih avtomobilskih terminalov v Sredozemlju. Zaradi poti skozi Sueški prekop ladje z Japonske in iz ZAE sem prispejo prej kot v pristanišča Severnega morja, pristanišče pa leži blizu Avstrije, Madžarske, Hrvaške in severne Italije."
     }
   },
   "blog": {

@@ -1429,7 +1429,8 @@
       "source2": "Termināļa apkalpošana un muitas aģents – tipiskas cenas vienam vieglajam automobilim; konkrēts terminālis vai aģents var noteikt citu cenu.",
       "source3": "Kuģošanas laiks – tipisks tranzīts koplietošanas konteinerā no galvenajām eksporta ostām, neieskaitot kuģa gaidīšanu.",
       "source4": "Attālumi – taisnā līnijā × 1,25 no ostas līdz valsts galvenajam iedzīvotāju centram kā aptuvens autoceļa maršruts.",
-      "sourcesUpdated": "Dati pēdējo reizi atjaunināti: {{date}}. Visus pieņēmumus aprakstām lapā"
+      "sourcesUpdated": "Dati pēdējo reizi atjaunināti: {{date}}. Visus pieņēmumus aprakstām lapā",
+      "aboutTitle": "Kas jāzina par šo ostu"
     },
     "cta": {
       "title": "Aprēķini precīzas izmaksas savam auto",
@@ -1542,6 +1543,18 @@
         "q": "Cik maksā {{car}} imports ar citu pirkuma cenu?",
         "a": "Ar pirkuma cenu {{lowPrice}} kopējās izmaksas ({{country}}) ir ap. {{lowTotal}}, ar {{highPrice}} – ap. {{highTotal}}. Muita un PVN aug līdz ar auto cenu."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Brēmerhāfene ir viena no lielākajām auto ostām Eiropā un galvenie vārti transportlīdzekļiem no ASV austrumu krasta – gan ar RoRo kuģiem, gan konteineros. Daudzas konteineru līnijas no Ziemeļamerikas ienāk šeit tieši, tāpēc tranzīta laiks ir viens no īsākajiem. Labs sākumpunkts Ziemeļvācijai, Beniluksa valstīm un Dānijai.",
+      "DEHAM": "Hamburga ir Vācijas lielākā konteineru osta, tāpēc ASV, Kanādā vai Japānā pirktie auto šeit bieži ierodas koplietošanas konteineros un tiek izkrauti noliktavās pie ostas. Labi autoceļu savienojumi ar Berlīni, Skandināviju, Poliju un Čehiju.",
+      "NLRTM": "Roterdama ir Eiropas lielākā osta ar visbiežākajām konteineru līnijām no Ziemeļamerikas un Āzijas. Daudzi importa aģenti šeit izkrauj koplietošanas konteinerus, un PVN reģistrētie uzņēmumi var izmantot muitas procedūru 4200. Piemērota Nīderlandei, Beļģijai un Rietumvācijai.",
+      "BEANR": "Antverpene (Port of Antwerp-Bruges) ir viena no lielākajām konteineru ostām Eiropā un ilggadējs amerikāņu auto importa centrs – šeit strādā daudz aģentu, kas izkrauj koplietošanas konteinerus un kārto muitas formalitātes. Osta atrodas tuvu Nīderlandei, Vācijai, Francijai un Luksemburgai.",
+      "BEZEE": "Zēbrigge, kas ietilpst Port of Antwerp-Bruges, ir viena no pasaules lielākajām RoRo auto ostām ar ikdienas prāmju un RoRo satiksmi ar Lielbritāniju. Tāpēc tā ir dabiska ievešanas vieta Lielbritānijā pirktiem auto un RoRo kravām no Ziemeļamerikas.",
+      "PLGDN": "Gdaņskā atrodas DCT Gdańsk – lielākais konteineru terminālis Baltijas jūrā ar tiešām okeāna līnijām no Āzijas; konteineri no Ziemeļamerikas parasti ierodas pēc pārkraušanas kādā Ziemeļjūras ostā. Vietējie aģenti muitošanu veic poļu valodā – loģiska izvēle Polijas ziemeļiem un centram.",
+      "PLGDY": "Gdiņā ir divi konteineru termināļi (BCT un GCT) un prāmju satiksme ar Karlskrūnu Zviedrijā. Konteineri no ASV šeit parasti nonāk pēc pārkraušanas Ziemeļjūras ostā, kas salīdzinājumā ar Brēmerhāfeni vai Roterdamu pievieno dažas dienas.",
+      "PLSZZ": "Ščecina un Svinouiste veido vienu ostu kompleksu pie Vācijas robežas, un no Svinouistes kursē prāmji uz Zviedriju. Aizjūras konteineri ierodas ar fīderkuģiem pēc pārkraušanas Ziemeļjūras ostā. Ērta iespēja Rietumpolijai un Berlīnes apkārtnei.",
+      "LTKLJ": "Klaipēda ir Lietuvas vienīgā jūras osta un ziemeļu galējā neaizsalstošā osta Baltijas jūras austrumu krastā. Lietoti auto no ASV izsolēm šeit ierodas konteineros pēc pārkraušanas, un vietējiem aģentiem ir liela pieredze šajā tirdzniecībā. Praktiska izvēle Baltijas valstīm un Polijas ziemeļaustrumiem.",
+      "SIKOP": "Kopera ir Slovēnijas vienīgā osta un viens no lielākajiem auto termināļiem Vidusjūrā. Pateicoties maršrutam caur Suecu, kuģi no Japānas un AAE šeit ierodas ātrāk nekā Ziemeļjūras ostās, un osta atrodas tuvu Austrijai, Ungārijai, Horvātijai un Ziemeļitālijai."
     }
   },
   "blog": {

@@ -1429,7 +1429,8 @@
       "source2": "Terminalhantering och tullombud – typiska priser för en personbil; en viss terminal eller ett visst ombud kan ta betalt annorlunda.",
       "source3": "Restid till sjöss – typisk transittid i delad container från de viktigaste exporthamnarna, utan väntan på fartyg.",
       "source4": "Avstånd – fågelvägen × 1,25 från hamnen till landets främsta befolkningscentrum, som en uppskattning av vägsträckan.",
-      "sourcesUpdated": "Uppgifterna senast uppdaterade: {{date}}. Alla antaganden beskrivs på sidan"
+      "sourcesUpdated": "Uppgifterna senast uppdaterade: {{date}}. Alla antaganden beskrivs på sidan",
+      "aboutTitle": "Bra att veta om den här hamnen"
     },
     "cta": {
       "title": "Beräkna den exakta kostnaden för din bil",
@@ -1542,6 +1543,18 @@
         "q": "Vad kostar import av en {{car}} vid ett annat inköpspris?",
         "a": "Vid ett inköpspris på {{lowPrice}} är den totala kostnaden ({{country}}) ca {{lowTotal}}, vid {{highPrice}} ca {{highTotal}}. Tull och moms ökar med bilens pris."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Bremerhaven är en av Europas största bilhamnar och en viktig port för fordon från USA:s östkust, både med RoRo-fartyg och i container. Många containerlinjer från Nordamerika anlöper hamnen direkt, så transittiderna hör till de kortaste. En bra utgångspunkt för norra Tyskland, Benelux och Danmark.",
+      "DEHAM": "Hamburg är Tysklands största containerhamn, så bilar köpta i USA, Kanada eller Japan kommer ofta hit i delad container och lossas i lager nära hamnen. Goda vägförbindelser till Berlin, Skandinavien, Polen och Tjeckien.",
+      "NLRTM": "Rotterdam är Europas största hamn med de tätaste containerlinjerna från Nordamerika och Asien. Många importagenter lossar delade containrar här, och momsregistrerade företag kan använda tullförfarande 4200. Passar Nederländerna, Belgien och västra Tyskland.",
+      "BEANR": "Antwerpen (Port of Antwerp-Bruges) är en av Europas största containerhamnar och sedan länge ett centrum för import av amerikanska bilar, med många agenter som lossar delade containrar och sköter tullformaliteterna. Hamnen ligger nära Nederländerna, Tyskland, Frankrike och Luxemburg.",
+      "BEZEE": "Zeebrugge, en del av Port of Antwerp-Bruges, är en av världens största RoRo-hamnar för bilar med dagliga färje- och RoRo-förbindelser med Storbritannien. Därför är den en naturlig infart för bilar köpta i Storbritannien och för RoRo-frakt från Nordamerika.",
+      "PLGDN": "I Gdańsk ligger DCT Gdańsk, Östersjöns största containerterminal, med direkta oceanlinjer från Asien; containrar från Nordamerika kommer oftast efter omlastning i en Nordsjöhamn. Lokala agenter förtullar på polska – det självklara valet för norra och centrala Polen.",
+      "PLGDY": "Gdynia har två containerterminaler (BCT och GCT) och en färjeförbindelse till Karlskrona. Containrar från USA kommer oftast hit efter omlastning i en Nordsjöhamn, vilket tar några dagar längre än via Bremerhaven eller Rotterdam.",
+      "PLSZZ": "Szczecin och Świnoujście bildar ett hamnkomplex nära tyska gränsen, och från Świnoujście går färjor till Sverige. Containrar från andra sidan havet kommer med feederfartyg efter omlastning i en Nordsjöhamn. Ett bekvämt alternativ för västra Polen och Berlinområdet.",
+      "LTKLJ": "Klaipėda är Litauens enda hamn och den nordligaste isfria hamnen på Östersjöns östra kust. Begagnade bilar från amerikanska auktioner kommer hit i container efter omlastning, och lokala agenter har lång erfarenhet av den handeln. Ett praktiskt val för de baltiska länderna och nordöstra Polen.",
+      "SIKOP": "Koper är Sloveniens enda hamn och en av Medelhavets största bilterminaler. Tack vare rutten genom Suez kommer fartyg från Japan och Förenade Arabemiraten fram tidigare än till Nordsjöhamnarna, och hamnen ligger nära Österrike, Ungern, Kroatien och norra Italien."
     }
   },
   "blog": {

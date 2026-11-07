@@ -1429,7 +1429,8 @@
       "source2": "Manipulare în terminal și agent vamal – prețuri obișnuite pentru un autoturism; un anumit terminal sau agent poate percepe altfel.",
       "source3": "Durata navigației – tranzit obișnuit în container partajat din principalele porturi de export, fără așteptarea navei.",
       "source4": "Distanțe – în linie dreaptă × 1,25 de la port până la principalul centru de populație al țării, ca aproximare a rutei rutiere.",
-      "sourcesUpdated": "Date actualizate ultima dată: {{date}}. Toate ipotezele sunt descrise pe pagina"
+      "sourcesUpdated": "Date actualizate ultima dată: {{date}}. Toate ipotezele sunt descrise pe pagina",
+      "aboutTitle": "Ce trebuie să știi despre acest port"
     },
     "cta": {
       "title": "Calculează costul exact pentru mașina ta",
@@ -1542,6 +1543,18 @@
         "q": "Cât costă importul unui {{car}} la alt preț de cumpărare?",
         "a": "La un preț de cumpărare de {{lowPrice}}, costul total ({{country}}) este de cca {{lowTotal}}, iar la {{highPrice}} de cca {{highTotal}}. Taxele vamale și TVA cresc odată cu prețul mașinii."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Bremerhaven este unul dintre cele mai mari porturi auto din Europa și o poartă principală pentru vehiculele de pe coasta de est a SUA, atât cu nave RoRo, cât și în container. Multe servicii de containere din America de Nord fac escală direct aici, așa că timpii de tranzit sunt printre cei mai scurți. Un bun punct de plecare pentru nordul Germaniei, Benelux și Danemarca.",
+      "DEHAM": "Hamburg este cel mai mare port de containere din Germania, așa că mașinile cumpărate în SUA, Canada sau Japonia sosesc adesea aici în container partajat și sunt descărcate în depozite de lângă port. Are legături rutiere bune cu Berlinul, Scandinavia, Polonia și Cehia.",
+      "NLRTM": "Rotterdam este cel mai mare port din Europa, cu cele mai dese servicii de containere din America de Nord și Asia. Mulți agenți de import descarcă aici containere partajate, iar firmele înregistrate în scopuri de TVA pot folosi regimul vamal 4200. Potrivit pentru Țările de Jos, Belgia și vestul Germaniei.",
+      "BEANR": "Anvers (Port of Antwerp-Bruges) este unul dintre cele mai mari porturi de containere din Europa și un centru vechi pentru importul de mașini americane, cu mulți agenți care descarcă containere partajate și se ocupă de formalitățile vamale. Este aproape de Țările de Jos, Germania, Franța și Luxemburg.",
+      "BEZEE": "Zeebrugge, parte a Port of Antwerp-Bruges, este unul dintre cele mai mari porturi RoRo auto din lume, cu legături zilnice de feribot și RoRo cu Regatul Unit. De aceea este punctul natural de intrare pentru mașinile cumpărate în Regatul Unit și pentru transporturile RoRo din America de Nord.",
+      "PLGDN": "La Gdańsk se află DCT Gdańsk, cel mai mare terminal de containere de la Marea Baltică, deservit direct de servicii oceanice din Asia; containerele din America de Nord sosesc de obicei după transbordare într-un port de la Marea Nordului. Agenții locali vămuiesc în poloneză – alegerea evidentă pentru nordul și centrul Poloniei.",
+      "PLGDY": "Gdynia are două terminale de containere (BCT și GCT) și o legătură de feribot cu Karlskrona, în Suedia. Containerele din SUA ajung de obicei aici după transbordare într-un port de la Marea Nordului, ceea ce adaugă câteva zile față de Bremerhaven sau Rotterdam.",
+      "PLSZZ": "Szczecin și Świnoujście formează un singur complex portuar lângă granița cu Germania, iar din Świnoujście pleacă feriboturi spre Suedia. Containerele de peste ocean sosesc cu nave feeder după transbordare într-un port de la Marea Nordului. O opțiune comodă pentru vestul Poloniei și zona Berlinului.",
+      "LTKLJ": "Klaipėda este singurul port maritim al Lituaniei și cel mai nordic port fără gheață de pe coasta de est a Mării Baltice. Mașinile second-hand de la licitațiile din SUA sosesc aici în container după transbordare, iar agenții locali au o experiență îndelungată în acest comerț. O alegere practică pentru statele baltice și nord-estul Poloniei.",
+      "SIKOP": "Koper este singurul port al Sloveniei și unul dintre cele mai mari terminale auto din Mediterana. Datorită rutei prin Suez, navele din Japonia și EAU ajung aici mai repede decât în porturile de la Marea Nordului, iar portul este aproape de Austria, Ungaria, Croația și nordul Italiei."
     }
   },
   "blog": {

@@ -1429,7 +1429,8 @@
       "source2": "Terminalhåndtering og toldagent – typiske priser for én personbil; en bestemt terminal eller agent kan tage en anden pris.",
       "source3": "Sejltid – typisk transittid i delt container fra de vigtigste eksporthavne, uden ventetid på skibet.",
       "source4": "Afstande – fugleflugt × 1,25 fra havnen til landets befolkningscentrum som tilnærmelse af vejruten.",
-      "sourcesUpdated": "Data senest opdateret: {{date}}. Alle forudsætninger er beskrevet på siden"
+      "sourcesUpdated": "Data senest opdateret: {{date}}. Alle forudsætninger er beskrevet på siden",
+      "aboutTitle": "Godt at vide om denne havn"
     },
     "cta": {
       "title": "Beregn den nøjagtige pris for din bil",
@@ -1542,6 +1543,18 @@
         "q": "Hvad koster import af en {{car}} ved en anden købspris?",
         "a": "Ved en købspris på {{lowPrice}} er den samlede pris ({{country}}) ca. {{lowTotal}}, ved {{highPrice}} ca. {{highTotal}}. Told og moms stiger med bilens pris."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Bremerhaven er en af Europas største bilhavne og en vigtig indgang for køretøjer fra USA's østkyst, både med RoRo-skibe og i containere. Mange containerruter fra Nordamerika anløber havnen direkte, så transittiderne er blandt de korteste. Et godt udgangspunkt for Nordtyskland, Benelux og Danmark.",
+      "DEHAM": "Hamborg er Tysklands største containerhavn, så biler købt i USA, Canada eller Japan ankommer ofte hertil i delte containere og losses i lagre ved havnen. Gode vejforbindelser til Berlin, Skandinavien, Polen og Tjekkiet.",
+      "NLRTM": "Rotterdam er Europas største havn med de hyppigste containerruter fra Nordamerika og Asien. Mange importagenter losser delte containere her, og momsregistrerede virksomheder kan bruge toldprocedure 4200. Passer til Holland, Belgien og Vesttyskland.",
+      "BEANR": "Antwerpen (Port of Antwerp-Bruges) er en af Europas største containerhavne og et mangeårigt centrum for import af amerikanske biler, med mange agenter, der losser delte containere og klarer toldformaliteterne. Havnen ligger tæt på Holland, Tyskland, Frankrig og Luxembourg.",
+      "BEZEE": "Zeebrugge, en del af Port of Antwerp-Bruges, er en af verdens største RoRo-bilhavne med daglige færge- og RoRo-forbindelser til Storbritannien. Derfor er den den naturlige indgang for biler købt i Storbritannien og for RoRo-forsendelser fra Nordamerika.",
+      "PLGDN": "I Gdańsk ligger DCT Gdańsk, Østersøens største containerterminal, med direkte oceanruter fra Asien; containere fra Nordamerika ankommer som regel efter omladning i en Nordsøhavn. Lokale agenter fortolder på polsk – det oplagte valg for Nord- og Centralpolen.",
+      "PLGDY": "Gdynia har to containerterminaler (BCT og GCT) og en færgeforbindelse til Karlskrona i Sverige. Containere fra USA når som regel frem efter omladning i en Nordsøhavn, hvilket tager nogle dage længere end via Bremerhaven eller Rotterdam.",
+      "PLSZZ": "Szczecin og Świnoujście udgør ét havnekompleks tæt på den tyske grænse, og fra Świnoujście sejler færger til Sverige. Oversøiske containere ankommer med feederskib efter omladning i en Nordsøhavn. En praktisk mulighed for Vestpolen og Berlin-området.",
+      "LTKLJ": "Klaipėda er Litauens eneste havn og den nordligste isfri havn på Østersøens østkyst. Brugte biler fra amerikanske auktioner ankommer hertil i containere efter omladning, og lokale agenter har stor erfaring med denne handel. Et praktisk valg for de baltiske lande og det nordøstlige Polen.",
+      "SIKOP": "Koper er Sloveniens eneste havn og en af de største bilterminaler i Middelhavet. Takket være ruten gennem Suez når skibe fra Japan og UAE hertil hurtigere end til Nordsøhavnene, og havnen ligger tæt på Østrig, Ungarn, Kroatien og Norditalien."
     }
   },
   "blog": {

@@ -1429,7 +1429,8 @@
       "source2": "Movimentazione al terminal e spedizioniere – prezzi tipici per un’autovettura; un terminal o spedizioniere specifico può applicare tariffe diverse.",
       "source3": "Tempo di navigazione – transito tipico in container condiviso dai principali porti di esportazione, senza l’attesa della nave.",
       "source4": "Distanze – in linea d’aria × 1,25 dal porto al principale centro abitato del paese, come approssimazione del percorso stradale.",
-      "sourcesUpdated": "Dati aggiornati l’ultima volta: {{date}}. Tutte le ipotesi sono descritte nella pagina"
+      "sourcesUpdated": "Dati aggiornati l’ultima volta: {{date}}. Tutte le ipotesi sono descritte nella pagina",
+      "aboutTitle": "Cosa sapere su questo porto"
     },
     "cta": {
       "title": "Calcola il costo esatto della tua auto",
@@ -1542,6 +1543,18 @@
         "q": "Quanto costa importare una {{car}} con un altro prezzo d'acquisto?",
         "a": "Con un prezzo d'acquisto di {{lowPrice}} il costo totale ({{country}}) è di ca. {{lowTotal}}, con {{highPrice}} di ca. {{highTotal}}. Dazio e IVA crescono con il prezzo dell'auto."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Bremerhaven è uno dei maggiori porti per auto d’Europa e una delle principali porte d’ingresso per i veicoli dalla costa orientale degli USA, sia su navi RoRo sia in container. Molti servizi container dal Nord America vi fanno scalo diretto, quindi i tempi di transito sono tra i più brevi. Un buon punto di partenza per la Germania settentrionale, il Benelux e la Danimarca.",
+      "DEHAM": "Amburgo è il maggiore porto container della Germania: le auto acquistate negli USA, in Canada o in Giappone arrivano spesso qui in container condiviso e vengono scaricate in magazzini vicino al porto. Buoni collegamenti stradali con Berlino, la Scandinavia, la Polonia e la Repubblica Ceca.",
+      "NLRTM": "Rotterdam è il porto più grande d’Europa, con i servizi container più frequenti da Nord America e Asia. Molti agenti d’importazione vi svuotano container condivisi e le imprese registrate ai fini IVA possono usare il regime doganale 4200. Adatto a Paesi Bassi, Belgio e Germania occidentale.",
+      "BEANR": "Anversa (Port of Antwerp-Bruges) è uno dei maggiori porti container d’Europa e da anni un centro per l’importazione di auto americane, con molti agenti che svuotano container condivisi e curano le pratiche doganali. È vicino a Paesi Bassi, Germania, Francia e Lussemburgo.",
+      "BEZEE": "Zeebrugge, parte di Port of Antwerp-Bruges, è uno dei maggiori porti RoRo per auto al mondo, con collegamenti giornalieri in traghetto e RoRo con il Regno Unito. È quindi il punto d’ingresso naturale per le auto acquistate nel Regno Unito e per le spedizioni RoRo dal Nord America.",
+      "PLGDN": "A Danzica si trova DCT Gdańsk, il più grande terminal container del Baltico, servito direttamente da servizi oceanici dall’Asia; i container dal Nord America arrivano di solito dopo un trasbordo in un porto del Mare del Nord. Gli agenti locali sdoganano in polacco: la scelta ovvia per la Polonia settentrionale e centrale.",
+      "PLGDY": "Gdynia ha due terminal container (BCT e GCT) e un collegamento in traghetto con Karlskrona in Svezia. I container dagli USA arrivano di solito dopo un trasbordo in un porto del Mare del Nord, il che aggiunge alcuni giorni rispetto a Bremerhaven o Rotterdam.",
+      "PLSZZ": "Stettino e Świnoujście formano un unico complesso portuale vicino al confine tedesco, e da Świnoujście partono traghetti per la Svezia. I container d’oltremare arrivano con navi feeder dopo un trasbordo in un porto del Mare del Nord. Un’opzione comoda per la Polonia occidentale e l’area di Berlino.",
+      "LTKLJ": "Klaipėda è l’unico porto marittimo della Lituania e il porto libero dai ghiacci più a nord della costa orientale del Baltico. Le auto usate delle aste americane arrivano qui in container dopo un trasbordo, e gli agenti locali hanno grande esperienza in questo commercio. Una scelta pratica per i Paesi baltici e la Polonia nord-orientale.",
+      "SIKOP": "Capodistria (Koper) è l’unico porto della Slovenia e uno dei maggiori terminal auto del Mediterraneo. Grazie alla rotta di Suez, le navi da Giappone ed Emirati arrivano prima che nei porti del Mare del Nord, e il porto è vicino ad Austria, Ungheria, Croazia e Italia settentrionale."
     }
   },
   "blog": {

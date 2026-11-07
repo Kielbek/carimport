@@ -1429,7 +1429,8 @@
       "source2": "Terminálkezelés és vámügynök – egy személyautóra jellemző árak; egy adott terminál vagy ügynök eltérő díjat számíthat fel.",
       "source3": "Hajózási idő – jellemző szállítási idő gyűjtőkonténerben a fő exportkikötőkből, a hajóra várakozás nélkül.",
       "source4": "Távolságok – légvonalban × 1,25 a kikötőtől az ország fő népességi központjáig, a közúti útvonal közelítéseként.",
-      "sourcesUpdated": "Az adatok utolsó frissítése: {{date}}. Minden feltételezést leírunk ezen az oldalon:"
+      "sourcesUpdated": "Az adatok utolsó frissítése: {{date}}. Minden feltételezést leírunk ezen az oldalon:",
+      "aboutTitle": "Amit érdemes tudni erről a kikötőről"
     },
     "cta": {
       "title": "Számolja ki autója pontos költségét",
@@ -1542,6 +1543,18 @@
         "q": "Mennyibe kerül egy {{car}} importja más vételárnál?",
         "a": "{{lowPrice}} vételárnál a teljes költség ({{country}}) kb. {{lowTotal}}, {{highPrice}} vételárnál kb. {{highTotal}}. A vám és az áfa az autó árával együtt nő."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Bremerhaven Európa egyik legnagyobb autós kikötője és az USA keleti partjáról érkező járművek fő kapuja, RoRo-hajón és konténerben egyaránt. Számos észak-amerikai konténerjárat közvetlenül ide fut be, így a szállítási idő itt az egyik legrövidebb. Jó kiindulópont Észak-Németország, a Benelux-államok és Dánia felé.",
+      "DEHAM": "Hamburg Németország legnagyobb konténerkikötője, ezért az USA-ban, Kanadában vagy Japánban vett autók gyakran gyűjtőkonténerben érkeznek ide, és a kikötő melletti raktárakban rakják ki őket. Jó közúti kapcsolat Berlin, Skandinávia, Lengyelország és Csehország felé.",
+      "NLRTM": "Rotterdam Európa legnagyobb kikötője, ide fut be a legtöbb konténerjárat Észak-Amerikából és Ázsiából. Sok importügynök itt rakja ki a gyűjtőkonténereket, az áfaregisztrált cégek pedig a 4200-as vámeljárást is használhatják. Hollandiába, Belgiumba és Nyugat-Németországba ajánlott.",
+      "BEANR": "Antwerpen (Port of Antwerp-Bruges) Európa egyik legnagyobb konténerkikötője és régóta az amerikai autók importjának központja: sok ügynök rakja itt ki a gyűjtőkonténereket és intézi a vámügyeket. Közel van Hollandiához, Németországhoz, Franciaországhoz és Luxemburghoz.",
+      "BEZEE": "Zeebrugge, a Port of Antwerp-Bruges része, a világ egyik legnagyobb RoRo-autókikötője, naponta induló komp- és RoRo-járatokkal az Egyesült Királyságba. Ezért természetes belépési pont az Egyesült Királyságban vett autóknak és az észak-amerikai RoRo-szállítmányoknak.",
+      "PLGDN": "Gdańskban működik a DCT Gdańsk, a Balti-tenger legnagyobb konténerterminálja, közvetlen óceáni járatokkal Ázsiából; az észak-amerikai konténerek általában egy északi-tengeri kikötőben történő átrakás után érkeznek. A helyi ügynökök lengyelül intézik a vámkezelést – kézenfekvő választás Észak- és Közép-Lengyelországba.",
+      "PLGDY": "Gdyniának két konténerterminálja van (BCT és GCT), és kompjárat köti össze a svédországi Karlskronával. Az USA-ból érkező konténerek általában egy északi-tengeri kikötőben való átrakás után jutnak ide, ami Bremerhavenhez vagy Rotterdamhoz képest néhány nappal hosszabb.",
+      "PLSZZ": "Szczecin és Świnoujście egy kikötőkomplexumot alkot a német határ közelében, Świnoujścieből pedig kompok járnak Svédországba. A tengerentúli konténerek egy északi-tengeri kikötőben való átrakás után feeder hajóval érkeznek. Kényelmes megoldás Nyugat-Lengyelországba és Berlin környékére.",
+      "LTKLJ": "Klaipėda Litvánia egyetlen tengeri kikötője és a keleti Balti-tenger partjának legészakibb jégmentes kikötője. Az amerikai aukciókról származó használt autók átrakás után konténerben érkeznek ide, és a helyi ügynököknek nagy tapasztalatuk van ebben. Praktikus választás a balti államokba és Északkelet-Lengyelországba.",
+      "SIKOP": "Koper Szlovénia egyetlen kikötője és a Földközi-tenger egyik legnagyobb autós terminálja. A szuezi útvonalnak köszönhetően a japán és emírségekbeli hajók ide hamarabb érnek, mint az északi-tengeri kikötőkbe, és a kikötő közel van Ausztriához, Magyarországhoz, Horvátországhoz és Észak-Olaszországhoz."
     }
   },
   "blog": {

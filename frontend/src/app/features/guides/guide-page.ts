@@ -282,6 +282,13 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
                 <p class="mt-3 text-xs text-muted">{{ 'guide.port.facts.region' | translate }}: {{ 'region.' + p.region | translate }}</p>
                 <p class="mt-1 text-xs text-muted">{{ 'guide.port.feesNote' | translate: { date: reviewedDate() } }}</p>
 
+                @if (portInfo.includes(p.code)) {
+                  <section class="mt-10 max-w-3xl">
+                    <h2 class="text-2xl font-extrabold">{{ 'guide.port.aboutTitle' | translate }}</h2>
+                    <p class="mt-4 leading-relaxed text-fg/90">{{ 'guide.portInfo.' + p.code | translate }}</p>
+                  </section>
+                }
+
                 <div class="mt-12 grid gap-10 lg:grid-cols-2">
                   <section>
                     <h2 class="text-2xl font-extrabold">{{ 'guide.port.sailingTitle' | translate: params() }}</h2>
@@ -675,6 +682,8 @@ export class GuidePage {
 
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly method = computed(() => pathFor('method', this.lang.current()));
+  /** Ports with a hand-written description (guide.portInfo.{code}). */
+  protected readonly portInfo: readonly string[] = ['DEBRV', 'DEHAM', 'NLRTM', 'BEANR', 'BEZEE', 'PLGDN', 'PLGDY', 'PLSZZ', 'LTKLJ', 'SIKOP'];
   /** Last review of rates and fees (SITE.ratesReviewed), in the page language. */
   protected readonly reviewedDate = computed(() =>
     new Intl.DateTimeFormat(this.lang.locale(), { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(SITE.ratesReviewed + 'T12:00:00Z')),

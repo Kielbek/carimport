@@ -1429,7 +1429,8 @@
       "source2": "Terminaalikäsittely ja tulliasiamies – tyypilliset hinnat yhdelle henkilöautolle; tietty terminaali tai asiamies voi veloittaa eri tavoin.",
       "source3": "Merimatkan kesto – tyypillinen kuljetusaika jaetussa kontissa tärkeimmistä vientisatamista ilman laivan odotusta.",
       "source4": "Etäisyydet – linnuntie × 1,25 satamasta maan pääasialliseen väestökeskukseen tieyhteyden likiarvona.",
-      "sourcesUpdated": "Tiedot päivitetty viimeksi: {{date}}. Kaikki oletukset kuvataan sivulla"
+      "sourcesUpdated": "Tiedot päivitetty viimeksi: {{date}}. Kaikki oletukset kuvataan sivulla",
+      "aboutTitle": "Hyvä tietää tästä satamasta"
     },
     "cta": {
       "title": "Laske autosi tarkat kulut",
@@ -1542,6 +1543,18 @@
         "q": "Paljonko {{car}}-auton tuonti maksaa eri ostohinnalla?",
         "a": "Ostohinnalla {{lowPrice}} kokonaiskustannus ({{country}}) on n. {{lowTotal}}, hinnalla {{highPrice}} n. {{highTotal}}. Tulli ja arvonlisävero kasvavat auton hinnan mukana."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Bremerhaven on yksi Euroopan suurimmista autosatamista ja tärkeä portti Yhdysvaltain itärannikolta tuleville ajoneuvoille sekä RoRo-aluksilla että konteissa. Moni Pohjois-Amerikan konttilinja käy satamassa suoraan, joten kuljetusajat ovat lyhimpien joukossa. Hyvä lähtökohta Pohjois-Saksaan, Benelux-maihin ja Tanskaan.",
+      "DEHAM": "Hampuri on Saksan suurin konttisatama, joten Yhdysvalloista, Kanadasta tai Japanista ostetut autot saapuvat tänne usein jaetussa kontissa ja puretaan sataman lähellä olevissa varastoissa. Hyvät tieyhteydet Berliiniin, Skandinaviaan, Puolaan ja Tšekkiin.",
+      "NLRTM": "Rotterdam on Euroopan suurin satama, ja sinne kulkee eniten konttilinjoja Pohjois-Amerikasta ja Aasiasta. Monet tuontiagentit purkavat täällä jaettuja kontteja, ja arvonlisäverovelvolliset yritykset voivat käyttää tullimenettelyä 4200. Sopii Alankomaihin, Belgiaan ja Länsi-Saksaan.",
+      "BEANR": "Antwerpen (Port of Antwerp-Bruges) on yksi Euroopan suurimmista konttisatamista ja pitkäaikainen amerikkalaisten autojen tuonnin keskus: täällä toimii monia agentteja, jotka purkavat jaettuja kontteja ja hoitavat tullimuodollisuudet. Satama on lähellä Alankomaita, Saksaa, Ranskaa ja Luxemburgia.",
+      "BEZEE": "Zeebrugge, osa Port of Antwerp-Bruges -satamaa, on yksi maailman suurimmista RoRo-autosatamista, ja sieltä on päivittäiset lautta- ja RoRo-yhteydet Isoon-Britanniaan. Siksi se on luonteva tuontisatama Britanniasta ostetuille autoille ja Pohjois-Amerikan RoRo-kuljetuksille.",
+      "PLGDN": "Gdańskissa toimii DCT Gdańsk, Itämeren suurin konttiterminaali, jonne tulee suoria valtamerilinjoja Aasiasta; Pohjois-Amerikan kontit saapuvat yleensä Pohjanmeren sataman uudelleenlastauksen kautta. Paikalliset agentit hoitavat tullauksen puolaksi – luonteva valinta Pohjois- ja Keski-Puolaan.",
+      "PLGDY": "Gdyniassa on kaksi konttiterminaalia (BCT ja GCT) ja lauttayhteys Ruotsin Karlskronaan. Yhdysvaltojen kontit saapuvat yleensä Pohjanmeren sataman uudelleenlastauksen kautta, mikä lisää muutaman päivän verrattuna Bremerhaveniin tai Rotterdamiin.",
+      "PLSZZ": "Szczecin ja Świnoujście muodostavat yhden satamakokonaisuuden lähellä Saksan rajaa, ja Świnoujściesta kulkee lauttoja Ruotsiin. Merentakaiset kontit saapuvat syöttöaluksilla Pohjanmeren sataman uudelleenlastauksen jälkeen. Kätevä vaihtoehto Länsi-Puolaan ja Berliinin seudulle.",
+      "LTKLJ": "Klaipėda on Liettuan ainoa merisatama ja Itämeren itärannikon pohjoisin jäätön satama. Yhdysvaltain huutokaupoista ostetut käytetyt autot saapuvat tänne konteissa uudelleenlastauksen jälkeen, ja paikallisilla agenteilla on tästä kaupasta pitkä kokemus. Käytännöllinen valinta Baltian maihin ja Koillis-Puolaan.",
+      "SIKOP": "Koper on Slovenian ainoa satama ja yksi Välimeren suurimmista autoterminaaleista. Suezin reitin ansiosta laivat Japanista ja Arabiemiirikunnista saapuvat tänne nopeammin kuin Pohjanmeren satamiin, ja satama on lähellä Itävaltaa, Unkaria, Kroatiaa ja Pohjois-Italiaa."
     }
   },
   "blog": {

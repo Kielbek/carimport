@@ -1429,7 +1429,8 @@
       "source2": "Terminalumschlag und Zollagent – typische Preise für einen Pkw; ein bestimmtes Terminal oder ein Agent kann anders abrechnen.",
       "source3": "Fahrtzeit – typische Laufzeit im Sammelcontainer ab den wichtigsten Exporthäfen, ohne Wartezeit auf das Schiff.",
       "source4": "Entfernungen – Luftlinie × 1,25 vom Hafen zum Bevölkerungsschwerpunkt des Landes, als Näherung für die Straßenroute.",
-      "sourcesUpdated": "Daten zuletzt aktualisiert: {{date}}. Alle Annahmen beschreiben wir auf der Seite"
+      "sourcesUpdated": "Daten zuletzt aktualisiert: {{date}}. Alle Annahmen beschreiben wir auf der Seite",
+      "aboutTitle": "Wissenswertes über diesen Hafen"
     },
     "cta": {
       "title": "Berechnen Sie die genauen Kosten für Ihr Auto",
@@ -1542,6 +1543,18 @@
         "q": "Was kostet der Import eines {{car}} bei anderem Kaufpreis?",
         "a": "Bei einem Kaufpreis von {{lowPrice}} liegen die Gesamtkosten ({{country}}) bei ca. {{lowTotal}}, bei {{highPrice}} bei ca. {{highTotal}}. Zoll und Einfuhrumsatzsteuer steigen mit dem Fahrzeugpreis."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Bremerhaven ist einer der größten Autoumschlaghäfen Europas und ein Haupttor für Fahrzeuge von der US-Ostküste – per RoRo-Schiff wie im Container. Viele Containerdienste aus Nordamerika laufen den Hafen direkt an, daher gehören die Transitzeiten zu den kürzesten. Ein guter Ausgangspunkt für Norddeutschland, die Benelux-Länder und Dänemark.",
+      "DEHAM": "Hamburg ist Deutschlands größter Containerhafen, daher kommen in den USA, Kanada oder Japan gekaufte Autos oft im Sammelcontainer hier an und werden in Lagern am Hafen entladen. Gute Straßenverbindungen nach Berlin, Skandinavien, Polen und Tschechien.",
+      "NLRTM": "Rotterdam ist Europas größter Hafen mit den meisten Containerdiensten aus Nordamerika und Asien. Viele Importagenten entladen hier Sammelcontainer, und umsatzsteuerlich registrierte Unternehmen können das Zollverfahren 4200 nutzen. Passend für die Niederlande, Belgien und Westdeutschland.",
+      "BEANR": "Antwerpen (Port of Antwerp-Bruges) ist einer der größten Containerhäfen Europas und seit Langem ein Zentrum für den Import amerikanischer Autos – viele Agenten entladen hier Sammelcontainer und erledigen die Zollformalitäten. Der Hafen liegt nahe den Niederlanden, Deutschland, Frankreich und Luxemburg.",
+      "BEZEE": "Zeebrugge, Teil von Port of Antwerp-Bruges, ist einer der größten RoRo-Autohäfen der Welt mit täglichen Fähr- und RoRo-Verbindungen nach Großbritannien. Damit ist er ein natürlicher Einfuhrpunkt für in Großbritannien gekaufte Autos und für RoRo-Verschiffungen aus Nordamerika.",
+      "PLGDN": "In Danzig liegt DCT Gdańsk, das größte Containerterminal an der Ostsee, das direkt von Ozeandiensten aus Asien angelaufen wird; Container aus Nordamerika kommen meist nach Umschlag in einem Nordseehafen an. Lokale Agenten wickeln die Verzollung auf Polnisch ab – die naheliegende Wahl für Nord- und Mittelpolen.",
+      "PLGDY": "Gdynia hat zwei Containerterminals (BCT und GCT) und eine Fährverbindung nach Karlskrona in Schweden. Container aus den USA erreichen Gdynia meist nach Umschlag in einem Nordseehafen, was einige Tage mehr als über Bremerhaven oder Rotterdam bedeutet.",
+      "PLSZZ": "Stettin und Swinemünde bilden einen Hafenkomplex nahe der deutschen Grenze; ab Swinemünde fahren Fähren nach Schweden. Überseecontainer kommen per Feederschiff nach Umschlag in einem Nordseehafen an. Eine bequeme Option für Westpolen und den Raum Berlin.",
+      "LTKLJ": "Klaipėda ist der einzige Seehafen Litauens und der nördlichste eisfreie Hafen an der östlichen Ostseeküste. Gebrauchtwagen von US-Auktionen kommen hier nach Umschlag im Container an, und lokale Agenten haben viel Erfahrung mit diesem Geschäft. Praktisch für die baltischen Staaten und Nordostpolen.",
+      "SIKOP": "Koper ist der einzige Hafen Sloweniens und eines der größten Autoterminals im Mittelmeer. Dank der Route durch den Suezkanal kommen Schiffe aus Japan und den VAE früher an als in Nordseehäfen, und der Hafen liegt nahe an Österreich, Ungarn, Kroatien und Norditalien."
     }
   },
   "blog": {

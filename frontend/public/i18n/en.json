@@ -1429,7 +1429,8 @@
       "source2": "Terminal handling and customs agent – typical prices for one passenger car; a specific terminal or agent may charge differently.",
       "source3": "Sailing time – typical shared-container transit from the main export ports, excluding waiting for a vessel.",
       "source4": "Distances – straight line × 1.25 from the port to the country's main population centre, as an approximation of the road route.",
-      "sourcesUpdated": "Data last updated: {{date}}. Every assumption is described on the page"
+      "sourcesUpdated": "Data last updated: {{date}}. Every assumption is described on the page",
+      "aboutTitle": "What to know about this port"
     },
     "cta": {
       "title": "Calculate the exact cost for your car",
@@ -1542,6 +1543,18 @@
         "q": "How much does importing a {{car}} cost at a different purchase price?",
         "a": "At a purchase price of {{lowPrice}} the total cost ({{country}}) is approx. {{lowTotal}}, at {{highPrice}} approx. {{highTotal}}. Duty and VAT grow with the price of the car."
       }
+    },
+    "portInfo": {
+      "DEBRV": "Bremerhaven is one of Europe's largest car-handling ports and a main gateway for vehicles from the US East Coast, both on RoRo vessels and in containers. Many container services from North America call here directly, so transit times are among the shortest. A good starting point for northern Germany, the Benelux countries and Denmark.",
+      "DEHAM": "Hamburg is Germany's largest container port, so cars bought in the US, Canada or Japan often arrive here in shared containers and are unloaded in warehouses near the port. It has good road links to Berlin, Scandinavia, Poland and the Czech Republic.",
+      "NLRTM": "Rotterdam is Europe's largest port and has the most frequent container services from North America and Asia. Many import agents unload shared containers here, and VAT-registered companies can use customs procedure 4200. It suits the Netherlands, Belgium and western Germany.",
+      "BEANR": "Antwerp (Port of Antwerp-Bruges) is one of Europe's biggest container ports and a long-established hub for importing American cars, with many agents who unload shared containers and handle the customs formalities. It lies close to the Netherlands, Germany, France and Luxembourg.",
+      "BEZEE": "Zeebrugge, part of Port of Antwerp-Bruges, is one of the world's largest RoRo car ports and has daily ferry and RoRo links with the United Kingdom. That makes it a natural entry point for cars bought in the UK, as well as for RoRo shipments from North America.",
+      "PLGDN": "Gdańsk is home to DCT Gdańsk, the largest container terminal on the Baltic Sea, with direct ocean services from Asia; containers from North America usually arrive after transhipment in a North Sea port. Local agents handle clearance in Polish, which makes it the obvious choice for northern and central Poland.",
+      "PLGDY": "Gdynia has two container terminals (BCT and GCT) and a ferry link to Karlskrona in Sweden. Containers from the US usually reach Gdynia after transhipment in a North Sea port, which adds a few days compared with Bremerhaven or Rotterdam.",
+      "PLSZZ": "Szczecin and Świnoujście form one port complex near the German border, and Świnoujście has ferry connections to Sweden. Overseas containers arrive by feeder vessel after transhipment in a North Sea port. A convenient option for western Poland and the Berlin area.",
+      "LTKLJ": "Klaipėda is Lithuania's only seaport and the northernmost ice-free port on the eastern Baltic coast. Used cars from US auctions arrive here in containers after transhipment, and local agents have long experience with this trade. A practical choice for the Baltic states and north-eastern Poland.",
+      "SIKOP": "Koper is Slovenia's only port and one of the largest car terminals in the Mediterranean. Thanks to the Suez route, ships from Japan and the UAE arrive sooner than in North Sea ports, and the port is close to Austria, Hungary, Croatia and northern Italy."
     }
   },
   "blog": {
