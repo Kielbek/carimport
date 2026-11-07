@@ -1430,7 +1430,8 @@
       "source3": "Sailing time – typical shared-container transit from the main export ports, excluding waiting for a vessel.",
       "source4": "Distances – straight line × 1.25 from the port to the country's main population centre, as an approximation of the road route.",
       "sourcesUpdated": "Data last updated: {{date}}. Every assumption is described on the page",
-      "aboutTitle": "What to know about this port"
+      "aboutTitle": "What to know about this port",
+      "photoAlt": "Port of {{port}} ({{country}})"
     },
     "cta": {
       "title": "Calculate the exact cost for your car",

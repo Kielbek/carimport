@@ -1430,7 +1430,8 @@
       "source3": "Restid till sjöss – typisk transittid i delad container från de viktigaste exporthamnarna, utan väntan på fartyg.",
       "source4": "Avstånd – fågelvägen × 1,25 från hamnen till landets främsta befolkningscentrum, som en uppskattning av vägsträckan.",
       "sourcesUpdated": "Uppgifterna senast uppdaterade: {{date}}. Alla antaganden beskrivs på sidan",
-      "aboutTitle": "Bra att veta om den här hamnen"
+      "aboutTitle": "Bra att veta om den här hamnen",
+      "photoAlt": "Hamnen i {{port}} ({{country}})"
     },
     "cta": {
       "title": "Beräkna den exakta kostnaden för din bil",

@@ -15,6 +15,7 @@ import { COUNTRY_FACTS } from './country-facts';
 import { GUIDE_MODELS, MODEL_EU, MODEL_EXAMPLES, MODEL_EXAMPLES_DATE } from './model-data.generated';
 import { VinCta } from '../../shared/vin-cta/vin-cta';
 import { ModelDetails } from './model-details';
+import { PORT_PHOTOS } from './port-photos';
 import { OriginDeepGuide } from './origin-deep-guide';
 import { GuideModel, ModelExample, ModelPhoto } from './model-types';
 import { DEPARTURE_PORTS, ORIGINS, PICKUP_ZONES } from '../calculator/calculator.options';
@@ -269,9 +270,21 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
                     <h1 class="h-section">{{ 'guide.port.h1' | translate: params() }}</h1>
                     <p class="lead mt-4">{{ 'guide.port.lead' | translate: params() }}</p>
                   </div>
-                  <app-flag [code]="p.country" class="hidden w-24 md:block" />
+                  @if (!portPhotos[p.code]) { <app-flag [code]="p.country" class="hidden w-24 md:block" /> }
                 </header>
 
+                @if (portPhotos[p.code]; as ph) {
+                  <figure class="mt-8">
+                    <img [src]="ph.src + '-1280.webp'" [srcset]="ph.src + '-640.webp 640w, ' + ph.src + '-1280.webp 1280w'"
+                         sizes="(min-width: 1100px) 1040px, 100vw" [width]="ph.width" [height]="ph.height"
+                         [alt]="'guide.port.photoAlt' | translate: params()" fetchpriority="high"
+                         class="aspect-[16/9] w-full rounded-[10px] bg-panel-2 object-cover" />
+                    <figcaption class="mt-2 text-xs text-muted">
+                      {{ 'guide.model.photoCredit' | translate }}: <a [href]="ph.source" target="_blank" rel="noopener" class="underline underline-offset-2">{{ ph.author }}</a>,
+                      <a [href]="ph.licenseUrl" target="_blank" rel="noopener license" class="underline underline-offset-2">{{ ph.license }}</a> · Wikimedia Commons
+                    </figcaption>
+                  </figure>
+                }
                 <dl class="mt-10 grid gap-px overflow-hidden rounded-[4px] border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
                   <div class="bg-bg p-5"><dt class="label !mb-1">{{ 'guide.port.facts.country' | translate }}</dt>
                     <dd><a [routerLink]="link({ section: 'countries', item: p.country })" class="flex items-center gap-2 font-semibold hover:text-brand-text"><app-flag [code]="p.country" class="w-5" />{{ countryName(p.country) }}</a></dd></div>
@@ -682,6 +695,7 @@ export class GuidePage {
 
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly method = computed(() => pathFor('method', this.lang.current()));
+  protected readonly portPhotos = PORT_PHOTOS;
   /** Ports with a hand-written description (guide.portInfo.{code}). */
   protected readonly portInfo: readonly string[] = ['DEBRV', 'DEHAM', 'NLRTM', 'BEANR', 'BEZEE', 'PLGDN', 'PLGDY', 'PLSZZ', 'LTKLJ', 'SIKOP'];
   /** Last review of rates and fees (SITE.ratesReviewed), in the page language. */
@@ -767,6 +781,7 @@ export class GuidePage {
               '@type': 'Place',
               name: this.port()!.name,
               geo: { '@type': 'GeoCoordinates', latitude: this.port()!.lat, longitude: this.port()!.lon },
+              ...this.photoSchema(PORT_PHOTOS[this.port()!.code]),
             }
           : r.section === 'models' && r.item
             ? this.carSchema()
@@ -783,6 +798,23 @@ export class GuidePage {
       modified: SITE.ratesReviewed,
     });
     this.pageContext.hrefFor.set((l) => guidePath(r, l));
+  }
+
+  /** A Commons photo as schema.org image (licence, credit, copyright notice for Google image metadata). */
+  private photoSchema(photo: ModelPhoto | null | undefined): Record<string, unknown> {
+    return photo
+      ? {
+          image: {
+            '@type': 'ImageObject',
+            contentUrl: `https://cargloapp.com${photo.src}-1280.webp`,
+            license: photo.licenseUrl,
+            acquireLicensePage: photo.source,
+            creditText: photo.author,
+            copyrightNotice: `© ${photo.author}, ${photo.license}`,
+            creator: { '@type': 'Person', name: photo.author },
+          },
+        }
+      : {};
   }
 
   /** The car as schema.org data: make, model, engine, power, CO₂, mass and the photo when there is one. */
@@ -807,19 +839,7 @@ export class GuidePage {
       },
       ...(m.co2 ? { emissionsCO2: m.co2 } : {}),
       weightTotal: { '@type': 'QuantitativeValue', value: m.kg, unitCode: 'KGM' },
-      ...(photo
-        ? {
-            image: {
-              '@type': 'ImageObject',
-              contentUrl: `https://cargloapp.com${photo.src}-1280.webp`,
-              license: photo.licenseUrl,
-              acquireLicensePage: photo.source,
-              creditText: photo.author,
-              copyrightNotice: `© ${photo.author}, ${photo.license}`,
-              creator: { '@type': 'Person', name: photo.author },
-            },
-          }
-        : {}),
+      ...this.photoSchema(photo),
     };
   }
 

@@ -1430,7 +1430,8 @@
       "source3": "Tempo di navigazione – transito tipico in container condiviso dai principali porti di esportazione, senza l’attesa della nave.",
       "source4": "Distanze – in linea d’aria × 1,25 dal porto al principale centro abitato del paese, come approssimazione del percorso stradale.",
       "sourcesUpdated": "Dati aggiornati l’ultima volta: {{date}}. Tutte le ipotesi sono descritte nella pagina",
-      "aboutTitle": "Cosa sapere su questo porto"
+      "aboutTitle": "Cosa sapere su questo porto",
+      "photoAlt": "Porto di {{port}} ({{country}})"
     },
     "cta": {
       "title": "Calcola il costo esatto della tua auto",

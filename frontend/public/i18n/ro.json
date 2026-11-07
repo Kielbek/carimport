@@ -1430,7 +1430,8 @@
       "source3": "Durata navigației – tranzit obișnuit în container partajat din principalele porturi de export, fără așteptarea navei.",
       "source4": "Distanțe – în linie dreaptă × 1,25 de la port până la principalul centru de populație al țării, ca aproximare a rutei rutiere.",
       "sourcesUpdated": "Date actualizate ultima dată: {{date}}. Toate ipotezele sunt descrise pe pagina",
-      "aboutTitle": "Ce trebuie să știi despre acest port"
+      "aboutTitle": "Ce trebuie să știi despre acest port",
+      "photoAlt": "Portul {{port}} ({{country}})"
     },
     "cta": {
       "title": "Calculează costul exact pentru mașina ta",

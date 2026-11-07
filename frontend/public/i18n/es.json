@@ -1430,7 +1430,8 @@
       "source3": "Tiempo de travesía – tránsito típico en contenedor compartido desde los principales puertos de exportación, sin esperar al buque.",
       "source4": "Distancias – en línea recta × 1,25 desde el puerto hasta el principal núcleo de población del país, como aproximación de la ruta por carretera.",
       "sourcesUpdated": "Datos actualizados por última vez: {{date}}. Todas las hipótesis se explican en la página",
-      "aboutTitle": "Lo que conviene saber de este puerto"
+      "aboutTitle": "Lo que conviene saber de este puerto",
+      "photoAlt": "Puerto de {{port}} ({{country}})"
     },
     "cta": {
       "title": "Calcula el coste exacto de tu coche",

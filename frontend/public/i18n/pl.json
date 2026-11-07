@@ -1430,7 +1430,8 @@
       "source3": "Czas rejsu – typowy czas kontenerem dzielonym z głównych portów eksportowych, bez oczekiwania na statek.",
       "source4": "Odległości – w linii prostej × 1,25 od portu do głównego skupiska ludności kraju, jako przybliżenie trasy drogowej.",
       "sourcesUpdated": "Ostatnia aktualizacja danych: {{date}}. Wszystkie założenia opisujemy na stronie",
-      "aboutTitle": "Co warto wiedzieć o tym porcie"
+      "aboutTitle": "Co warto wiedzieć o tym porcie",
+      "photoAlt": "Port {{port}} ({{country}})"
     },
     "cta": {
       "title": "Policz dokładny koszt dla swojego auta",

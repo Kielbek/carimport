@@ -1430,7 +1430,8 @@
       "source3": "Fahrtzeit – typische Laufzeit im Sammelcontainer ab den wichtigsten Exporthäfen, ohne Wartezeit auf das Schiff.",
       "source4": "Entfernungen – Luftlinie × 1,25 vom Hafen zum Bevölkerungsschwerpunkt des Landes, als Näherung für die Straßenroute.",
       "sourcesUpdated": "Daten zuletzt aktualisiert: {{date}}. Alle Annahmen beschreiben wir auf der Seite",
-      "aboutTitle": "Wissenswertes über diesen Hafen"
+      "aboutTitle": "Wissenswertes über diesen Hafen",
+      "photoAlt": "Hafen {{port}} ({{country}})"
     },
     "cta": {
       "title": "Berechnen Sie die genauen Kosten für Ihr Auto",

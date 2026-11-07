@@ -1430,7 +1430,8 @@
       "source3": "Sejltid – typisk transittid i delt container fra de vigtigste eksporthavne, uden ventetid på skibet.",
       "source4": "Afstande – fugleflugt × 1,25 fra havnen til landets befolkningscentrum som tilnærmelse af vejruten.",
       "sourcesUpdated": "Data senest opdateret: {{date}}. Alle forudsætninger er beskrevet på siden",
-      "aboutTitle": "Godt at vide om denne havn"
+      "aboutTitle": "Godt at vide om denne havn",
+      "photoAlt": "Havnen i {{port}} ({{country}})"
     },
     "cta": {
       "title": "Beregn den nøjagtige pris for din bil",

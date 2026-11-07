@@ -1430,7 +1430,8 @@
       "source3": "Čas plavby – typický čas prepravy v zdieľanom kontajneri z hlavných exportných prístavov, bez čakania na loď.",
       "source4": "Vzdialenosti – vzdušnou čiarou × 1,25 z prístavu do hlavného populačného centra krajiny ako priblíženie cestnej trasy.",
       "sourcesUpdated": "Posledná aktualizácia údajov: {{date}}. Všetky predpoklady opisujeme na stránke",
-      "aboutTitle": "Čo vedieť o tomto prístave"
+      "aboutTitle": "Čo vedieť o tomto prístave",
+      "photoAlt": "Prístav {{port}} ({{country}})"
     },
     "cta": {
       "title": "Vypočítajte presné náklady pre svoje auto",

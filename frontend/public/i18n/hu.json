@@ -1430,7 +1430,8 @@
       "source3": "Hajózási idő – jellemző szállítási idő gyűjtőkonténerben a fő exportkikötőkből, a hajóra várakozás nélkül.",
       "source4": "Távolságok – légvonalban × 1,25 a kikötőtől az ország fő népességi központjáig, a közúti útvonal közelítéseként.",
       "sourcesUpdated": "Az adatok utolsó frissítése: {{date}}. Minden feltételezést leírunk ezen az oldalon:",
-      "aboutTitle": "Amit érdemes tudni erről a kikötőről"
+      "aboutTitle": "Amit érdemes tudni erről a kikötőről",
+      "photoAlt": "{{port}} kikötő ({{country}})"
     },
     "cta": {
       "title": "Számolja ki autója pontos költségét",

@@ -1430,7 +1430,8 @@
       "source3": "Tempo de viagem – trânsito habitual em contentor partilhado a partir dos principais portos de exportação, sem a espera pelo navio.",
       "source4": "Distâncias – em linha reta × 1,25 do porto até ao principal centro populacional do país, como aproximação do percurso rodoviário.",
       "sourcesUpdated": "Dados atualizados pela última vez: {{date}}. Todos os pressupostos estão descritos na página",
-      "aboutTitle": "O que saber sobre este porto"
+      "aboutTitle": "O que saber sobre este porto",
+      "photoAlt": "Porto de {{port}} ({{country}})"
     },
     "cta": {
       "title": "Calcule o custo exato do seu carro",

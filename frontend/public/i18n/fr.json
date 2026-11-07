@@ -1430,7 +1430,8 @@
       "source3": "Durée de traversée – transit habituel en conteneur partagé depuis les principaux ports d’exportation, sans l’attente du navire.",
       "source4": "Distances – à vol d’oiseau × 1,25 du port jusqu’au principal centre de population du pays, comme approximation de l’itinéraire routier.",
       "sourcesUpdated": "Dernière mise à jour des données : {{date}}. Toutes les hypothèses sont décrites sur la page",
-      "aboutTitle": "À savoir sur ce port"
+      "aboutTitle": "À savoir sur ce port",
+      "photoAlt": "Port de {{port}} ({{country}})"
     },
     "cta": {
       "title": "Calculez le coût exact pour votre voiture",
