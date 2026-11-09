@@ -1,0 +1,31 @@
+{
+  "_comment": "Popular intra-EU import routes (from Search Console demand), each published in the destination's language. Run tools/generate-eu-routes.mjs against a running backend after changes.",
+  "routes": {
+    "pl": { "PL": ["DE", "NL", "BE", "AT", "SK", "FR", "DK", "IT"] },
+    "nl": { "NL": ["DE", "BE", "LU", "AT", "DK", "IT", "FR", "SE"], "BE": ["DE", "NL", "LU", "FR"] },
+    "fr": { "FR": ["DE", "BE", "ES", "IT"], "BE": ["DE", "NL"] },
+    "de": { "DE": ["NL", "FR", "IT", "ES", "AT", "PL"], "AT": ["DE"] },
+    "lv": { "LV": ["DE", "LT", "FR", "NL"] },
+    "lt": { "LT": ["DE", "NL"] },
+    "cs": { "CZ": ["DE", "AT", "IT", "FR"] },
+    "sk": { "SK": ["DE", "CZ", "AT"] },
+    "el": { "GR": ["DE", "BG", "IT"] },
+    "es": { "ES": ["IT", "FR", "DE"] },
+    "pt": { "PT": ["DE", "ES", "FR"] },
+    "it": { "IT": ["DE", "FR"] },
+    "sv": { "SE": ["DE"] },
+    "da": { "DK": ["DE"] },
+    "fi": { "FI": ["DE", "SE"] },
+    "et": { "EE": ["DE", "FI"] },
+    "ro": { "RO": ["DE", "IT"] },
+    "bg": { "BG": ["DE", "IT"] },
+    "hu": { "HU": ["DE", "AT"] },
+    "hr": { "HR": ["DE", "AT"] },
+    "sl": { "SI": ["AT", "DE"] }
+  },
+  "cars": [
+    { "id": "petrol", "price": 15000, "year": 2019, "fuel": "PETROL", "cc": 1498, "kw": 110, "co2": 130 },
+    { "id": "diesel", "price": 28000, "year": 2020, "fuel": "DIESEL", "cc": 1995, "kw": 140, "co2": 125 },
+    { "id": "ev", "price": 32000, "year": 2022, "fuel": "EV", "cc": 0, "kw": 150, "co2": 0 }
+  ]
+}

@@ -92,6 +92,17 @@ for (const [id, versions] of Object.entries(BLOG_INDEX)) {
     xml += `    <changefreq>monthly</changefreq><priority>0.7</priority>\n  </url>\n`;
   }
 }
+// intra-EU route pages: one language each (the destination's), so the page is its own alternate and x-default
+const euSlugs = slugBlock('euImport');
+const euRoutes = JSON.parse(src('features/eu-import/eu-routes.generated.ts').match(/export const EU_ROUTES: [^=]*= (.*);/)[1]);
+const euDate = src('features/eu-import/eu-routes.generated.ts').match(/EU_ROUTES_DATE = '([^']+)'/)[1];
+for (const r of euRoutes) {
+  const loc = url(r.lang, `${euSlugs[r.lang]}/${r.slug}`);
+  xml += `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${euDate}</lastmod>\n`;
+  xml += `    <xhtml:link rel="alternate" hreflang="${r.lang}" href="${loc}"/>\n`;
+  xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${loc}"/>\n`;
+  xml += `    <changefreq>monthly</changefreq><priority>0.7</priority>\n  </url>\n`;
+}
 xml += '</urlset>\n';
 writeFileSync(new URL('../public/sitemap.xml', import.meta.url), xml);
 console.log(`sitemap: ${xml.split("<loc>").length - 1} URLs in ${langs.length} languages (${xml.length >> 10} kB)`);

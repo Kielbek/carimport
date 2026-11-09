@@ -26,6 +26,7 @@ const method = () => import('./features/method/method-page').then((m) => m.Metho
 const glossary = () => import('./features/glossary/glossary-page').then((m) => m.GlossaryPage);
 const vin = () => import('./features/vin/vin-page').then((m) => m.VinPage);
 const euImport = () => import('./features/eu-import/eu-import-page').then((m) => m.EuImportPage);
+const euRoute = () => import('./features/eu-import/eu-route-page').then((m) => m.EuRoutePage);
 const copart = () => import('./features/copart/copart-page').then((m) => m.CopartPage);
 const contact = () => import('./features/contact/contact-page').then((m) => m.ContactPage);
 
@@ -80,6 +81,10 @@ export const routes: Routes = [
           ...localized(SLUGS.contact, contact, 'contact'),
           ...localized(SLUGS.vin, vin, 'vin'),
           ...localized(SLUGS.euImport, euImport, 'euImport'),
+          // popular routes between member states: /pl/import-auta-z-ue/niemcy-polska (destination's language only)
+          ...[...new Set(Object.values(SLUGS.euImport))].map((slug) => ({
+            path: `${slug}/:route`, loadComponent: euRoute, data: { page: 'euRoute' },
+          })),
           ...localized(SLUGS.copart, copart, 'copart'),
           ...guides,
           {

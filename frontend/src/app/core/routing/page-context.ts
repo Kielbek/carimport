@@ -36,10 +36,10 @@ export class PageContext {
       leaf = leaf.firstChild;
     }
     const data = leaf.snapshot.data;
-    const page = data['page'] as Page | 'report' | 'newsletter' | 'admin' | 'guide' | 'blog' | undefined;
+    const page = data['page'] as Page | 'report' | 'newsletter' | 'admin' | 'guide' | 'blog' | 'euRoute' | undefined;
     this.page.set(page);
-    if (page === 'guide' || page === 'blog') {
-      return; // guide and blog pages set their own head tags and language links
+    if (page === 'guide' || page === 'blog' || page === 'euRoute') {
+      return; // guide, blog and EU route pages set their own head tags and language links
     }
     if (page && INDEXABLE.includes(page as Page) && !data['noindex']) {
       this.seo.apply(page as Page, this.lang.current(), true, data['root'] ? '/' : undefined);

@@ -3,6 +3,7 @@ import { SUPPORTED_LANGS } from './core/i18n/language.service';
 import { GUIDE_SECTIONS, GuideSection, itemSlug, itemsOf } from './core/routing/guide-paths';
 import { SLUGS } from './core/routing/paths';
 import { BLOG_INDEX } from './features/blog/blog-index.generated';
+import { EU_ROUTES } from './features/eu-import/eu-routes.generated';
 
 const allLangs = async () => SUPPORTED_LANGS.map((lang) => ({ lang }));
 
@@ -52,6 +53,14 @@ const blog: ServerRoute[] = [
   },
 ];
 
+/** Intra-EU route pages, each only in its destination's language: /pl/import-auta-z-ue/niemcy-polska, ... */
+const euRoutes: ServerRoute[] = [...new Set(Object.values(SLUGS.euImport))].map((slug) => ({
+  path: `:lang/${slug}/:route`,
+  renderMode: RenderMode.Prerender,
+  getPrerenderParams: async () =>
+    EU_ROUTES.filter((r) => SLUGS.euImport[r.lang] === slug).map((r) => ({ lang: r.lang, route: r.slug })),
+}));
+
 /**
  * Static output: public, indexable pages are prerendered to HTML at build time (fast, crawlable, CDN-friendly);
  * personal pages (report, quote links) render in the browser. The bare domain is prerendered too (home page in ROOT_LANG).
@@ -70,6 +79,7 @@ export const serverRoutes: ServerRoute[] = [
   ...perLanguage(SLUGS.contact),
   ...perLanguage(SLUGS.vin),
   ...perLanguage(SLUGS.euImport),
+  ...euRoutes,
   ...perLanguage(SLUGS.copart),
   ...guides,
   ...blog,

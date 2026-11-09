@@ -1,4 +1,4 @@
-import { Component, PLATFORM_ID, afterNextRender, computed, inject, signal } from '@angular/core';
+import { Component, OnInit, PLATFORM_ID, afterNextRender, computed, inject, input, signal } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
@@ -14,6 +14,7 @@ import { Icon } from '../../shared/icon/icon';
 import { Select, SelectOption } from '../../shared/select/select';
 import { EU_COUNTRIES } from '../calculator/calculator.options';
 import { GUIDE_COUNTRIES } from '../guides/guide-data.generated';
+import { EU_ROUTES } from './eu-routes.generated';
 
 const FUELS: FuelType[] = ['PETROL', 'DIESEL', 'LPG', 'HEV', 'PHEV', 'EV'];
 const MODES: DeliveryMode[] = ['CAR_CARRIER', 'TOW_TRUCK', 'SELF_DRIVE'];
@@ -32,12 +33,14 @@ const OWN_WARNINGS = new Set(['warning.euImport.usedVatAtOrigin', 'warning.euImp
   selector: 'app-eu-import-page',
   imports: [FormsModule, RouterLink, TranslatePipe, Icon, Select, ArticleText],
   template: `
-    <article class="site max-w-5xl py-12 lg:py-16">
-      <p class="eyebrow">{{ 'euImport.eyebrow' | translate }}</p>
-      <h1 class="h-section mt-4 max-w-3xl">{{ 'euImport.title' | translate }}</h1>
-      <p class="lead mt-4 max-w-3xl">{{ 'euImport.lead' | translate }}</p>
+    <article [class]="embedded() ? '' : 'site max-w-5xl py-12 lg:py-16'">
+      @if (!embedded()) {
+        <p class="eyebrow">{{ 'euImport.eyebrow' | translate }}</p>
+        <h1 class="h-section mt-4 max-w-3xl">{{ 'euImport.title' | translate }}</h1>
+        <p class="lead mt-4 max-w-3xl">{{ 'euImport.lead' | translate }}</p>
+      }
 
-      <div class="mt-10 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+      <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]" [class.mt-10]="!embedded()">
         <form class="card grid grid-cols-[minmax(0,1fr)] content-start gap-4 p-5 sm:grid-cols-2 sm:p-6" (ngSubmit)="calculate()">
           <div>
             <label class="label" for="eu-from">{{ 'euImport.origin' | translate }}</label>
@@ -140,6 +143,17 @@ const OWN_WARNINGS = new Set(['warning.euImport.usedVatAtOrigin', 'warning.euImp
         </section>
       </div>
 
+      @if (!embedded()) {
+      @if (routes().length) {
+        <section class="mt-12">
+          <h2 class="text-xl font-extrabold">{{ 'euImport.routesTitle' | translate }}</h2>
+          <ul class="mt-4 flex flex-wrap gap-2">
+            @for (r of routes(); track r.slug) {
+              <li><a [routerLink]="routePath(r.slug)" class="chip"><span class="font-semibold">{{ countryName(r.from) }} → {{ countryName(r.to) }}</span></a></li>
+            }
+          </ul>
+        </section>
+      }
       @for (s of sections; track s) {
         <section class="mt-12 max-w-3xl">
           <h2 class="text-xl font-extrabold">{{ 'euImport.' + s + '.title' | translate }}</h2>
@@ -160,15 +174,23 @@ const OWN_WARNINGS = new Set(['warning.euImport.usedVatAtOrigin', 'warning.euImp
           }
         </div>
       </section>
+      }
     </article>
   `,
 })
-export class EuImportPage {
+export class EuImportPage implements OnInit {
   private readonly api = inject(CarImportApi);
   private readonly translate = inject(TranslateService);
   protected readonly lang = inject(LanguageService);
 
+  /** On a route page (/pl/import-auta-z-ue/niemcy-polska): the calculator only, preset to the route's countries. */
+  readonly embedded = input(false);
+  readonly presetFrom = input<string | null>(null);
+  readonly presetTo = input<string | null>(null);
+
   protected readonly currentYear = new Date().getFullYear();
+  /** The popular routes published in this language, linked from the calculator page. */
+  protected readonly routes = computed(() => EU_ROUTES.filter((r) => r.lang === this.lang.current()));
   protected readonly modes = MODES;
   protected readonly sections = ['vat', 'transport', 'taxes', 'documents'];
   protected readonly faq = [1, 2, 3, 4, 5, 6];
@@ -216,6 +238,21 @@ export class EuImportPage {
     if (isPlatformBrowser(inject(PLATFORM_ID))) {
       afterNextRender(() => this.calculate());
     }
+  }
+
+  ngOnInit(): void {
+    const to = this.presetTo();
+    const from = this.presetFrom();
+    if (to) {
+      this.destination.set(to);
+    }
+    if (from && from !== this.destination()) {
+      this.origin.set(from);
+    }
+  }
+
+  protected routePath(slug: string): string {
+    return `${pathFor('euImport', this.lang.current())}/${slug}`;
   }
 
   protected setDestination(code: string): void {
