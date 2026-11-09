@@ -495,6 +495,14 @@ const REGIONS = ['NORTH_SEA', 'BALTIC', 'ATLANTIC', 'WEST_MED', 'EAST_MED'] as c
           </section>
         }
 
+        <!-- when the facts were last checked and how they are computed (ports have a fuller sources box) -->
+        @if (ref()?.section !== 'ports' || !ref()?.item) {
+          <p class="mt-12 border-t border-line pt-5 text-sm text-muted">
+            {{ 'guide.port.sourcesUpdated' | translate: { date: reviewedDate() } }}
+            <a [routerLink]="method()" class="font-semibold text-brand-text underline underline-offset-2">{{ 'layout.method' | translate }}</a>
+          </p>
+        }
+
         <!-- CTA -->
         <section class="theme-dark mt-14 flex flex-col items-start gap-6 rounded-[4px] bg-panel p-8 text-fg sm:p-10 lg:flex-row lg:items-center lg:justify-between">
           <div>

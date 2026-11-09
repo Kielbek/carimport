@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Preverite svoj avto v minuti",
       "text": "Imate vprašanje ali ste opazili zastarelo stopnjo? Pišite na {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Kdo stoji za tem",
+      "title": "Ena oseba, z imenom",
+      "text": "Carglo ustvarja in vodi {{name}} ({{city}}, Poljska) – ista oseba je prodajalec v pogojih in odgovarja za izračune. Če opazite zastarelo stopnjo ali napačen rezultat, pišite neposredno: {{email}}. Vsako prijavo preverim in popravim podatke."
     }
   },
   "currency": {

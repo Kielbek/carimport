@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Provjerite svoj automobil u minuti",
       "text": "Imate pitanje ili ste uočili zastarjelu stopu? Pišite na {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Tko stoji iza toga",
+      "title": "Jedna osoba, imenom",
+      "text": "Carglo izrađuje i vodi {{name}} ({{city}}, Poljska) – ista je osoba prodavatelj u uvjetima i odgovara za izračune. Ako primijetite zastarjelu stopu ili pogrešan rezultat, pišite izravno: {{email}}. Svaku prijavu provjerim i ispravim podatke."
     }
   },
   "currency": {

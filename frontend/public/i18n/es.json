@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Comprueba tu coche en un minuto",
       "text": "¿Tienes una pregunta o has visto un tipo desactualizado? Escribe a {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Quién está detrás",
+      "title": "Una persona, con nombre y apellido",
+      "text": "Carglo lo crea y gestiona {{name}} ({{city}}, Polonia), la misma persona que figura como vendedor en las condiciones y que responde de los cálculos. Si ves un tipo desactualizado o un resultado erróneo, escribe directamente: {{email}}. Reviso cada aviso y corrijo los datos."
     }
   },
   "currency": {

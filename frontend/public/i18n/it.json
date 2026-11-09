@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Verifica la tua auto in un minuto",
       "text": "Hai una domanda o hai notato un’aliquota non aggiornata? Scrivi a {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Chi c’è dietro",
+      "title": "Una persona, con nome e cognome",
+      "text": "Carglo è creato e gestito da {{name}} ({{city}}, Polonia): la stessa persona è il venditore indicato nei termini e risponde dei calcoli. Se noti un’aliquota non aggiornata o un risultato errato, scrivi direttamente: {{email}}. Controllo ogni segnalazione e correggo i dati."
     }
   },
   "currency": {

@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Verifică-ți mașina într-un minut",
       "text": "Ai o întrebare sau ai observat o cotă depășită? Scrie-ne la {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Cine se află în spate",
+      "title": "O persoană, cu nume",
+      "text": "Carglo este creat și administrat de {{name}} ({{city}}, Polonia) – aceeași persoană este vânzătorul din termeni și răspunde de calcule. Dacă observi o cotă depășită sau un rezultat greșit, scrie direct: {{email}}. Verific fiecare semnalare și corectez datele."
     }
   },
   "currency": {

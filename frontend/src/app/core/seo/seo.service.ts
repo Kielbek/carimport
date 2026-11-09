@@ -263,6 +263,10 @@ export class SeoService {
         url: SITE.url,
         email: contactEmail(lang),
         logo: { '@type': 'ImageObject', url: `${SITE.url}/icons/icon-512.png`, width: 512, height: 512 },
+        ...(SITE.company.name.startsWith('[') ? {} : {
+          founder: { '@type': 'Person', name: SITE.company.name },
+          address: { '@type': 'PostalAddress', addressLocality: SITE.company.address.split(' ').pop(), addressCountry: 'PL' },
+        }),
       },
       {
         '@type': 'WebSite',

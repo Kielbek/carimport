@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Pārbaudiet savu auto minūtē",
       "text": "Jums ir jautājums vai pamanījāt novecojušu likmi? Rakstiet: {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Kas ir aiz tā",
+      "title": "Viens cilvēks, ar vārdu",
+      "text": "Carglo veido un uztur {{name}} ({{city}}, Polija) – tā pati persona ir noteikumos minētais pārdevējs un atbild par aprēķiniem. Ja pamanāt novecojušu likmi vai kļūdainu rezultātu, rakstiet tieši: {{email}}. Pārbaudu katru ziņojumu un laboju datus."
     }
   },
   "currency": {

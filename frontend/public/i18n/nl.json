@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Controleer uw auto in een minuut",
       "text": "Heeft u een vraag of ziet u een verouderd tarief? Schrijf naar {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Wie erachter zit",
+      "title": "Eén persoon, met naam",
+      "text": "Carglo wordt gemaakt en beheerd door {{name}} ({{city}}, Polen) – dezelfde persoon is de verkoper in de voorwaarden en is verantwoordelijk voor de berekeningen. Zie je een verouderd tarief of een fout resultaat, mail dan direct: {{email}}. Ik controleer elke melding en corrigeer de gegevens."
     }
   },
   "currency": {

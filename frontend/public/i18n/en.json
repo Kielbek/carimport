@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Check your car in a minute",
       "text": "Have a question or spotted an outdated rate? Write to {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Who is behind it",
+      "title": "A real person, not an anonymous company",
+      "text": "Carglo is built and run by {{name}} ({{city}}, Poland) – the same person is the seller named in the terms and is responsible for the calculations. If you spot an outdated rate or a wrong result, write directly: {{email}}. I check every report and correct the data."
     }
   },
   "currency": {

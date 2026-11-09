@@ -3,7 +3,7 @@ import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageService } from '../../core/i18n/language.service';
 import { pathFor } from '../../core/routing/paths';
-import { contactEmail } from '../../core/site.config';
+import { SITE, contactEmail } from '../../core/site.config';
 import { Icon } from '../../shared/icon/icon';
 import { IconName } from '../../shared/icon/icons';
 
@@ -125,6 +125,17 @@ import { IconName } from '../../shared/icon/icons';
       </div>
     </section>
 
+    <!-- who runs it: a named, reachable person (from the seller's details in the terms) -->
+    @if (owner(); as o) {
+      <section class="border-t border-line py-16">
+        <div class="site max-w-3xl">
+          <p class="eyebrow">{{ 'about.owner.eyebrow' | translate }}</p>
+          <h2 class="h-section mt-5">{{ 'about.owner.title' | translate }}</h2>
+          <p class="mt-5 text-[16px] leading-relaxed text-fg/90">{{ 'about.owner.text' | translate: { name: o.name, city: o.city, email: email() } }}</p>
+        </div>
+      </section>
+    }
+
     <!-- CTA -->
     <section class="site pb-4 pt-6">
       <div class="theme-dark flex flex-col items-start gap-6 rounded-[4px] bg-panel p-8 text-fg sm:p-10 lg:flex-row lg:items-center lg:justify-between lg:p-[50px]">
@@ -141,6 +152,11 @@ export class AboutPage {
   private readonly lang = inject(LanguageService);
   protected readonly calculator = computed(() => pathFor('calculator', this.lang.current()));
   protected readonly email = computed(() => contactEmail(this.lang.current()));
+  /** The person behind the service, as named in the terms; hidden while the details are placeholders. */
+  protected readonly owner = computed(() => {
+    const { name, address } = SITE.company;
+    return name.startsWith('[') ? null : { name, city: address.split(' ').pop() ?? '' };
+  });
 
   protected readonly sources: { key: string; icon: IconName }[] = [
     { key: 'customs', icon: 'landmark' },

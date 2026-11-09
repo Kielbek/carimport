@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Preverte svoje auto za minútu",
       "text": "Máte otázku alebo ste narazili na zastaranú sadzbu? Napíšte na {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Kto za tým stojí",
+      "title": "Jeden človek, menom",
+      "text": "Carglo vytvára a prevádzkuje {{name}} ({{city}}, Poľsko) – tá istá osoba je predávajúcim v obchodných podmienkach a zodpovedá za výpočty. Ak narazíte na zastaranú sadzbu alebo chybný výsledok, napíšte priamo: {{email}}. Každé hlásenie preverím a údaje opravím."
     }
   },
   "currency": {

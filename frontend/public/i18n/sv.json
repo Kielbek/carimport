@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Kontrollera din bil på en minut",
       "text": "Har du en fråga eller har du hittat en inaktuell sats? Skriv till {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Vem som står bakom",
+      "title": "En person, med namn",
+      "text": "Carglo byggs och drivs av {{name}} ({{city}}, Polen) – samma person är säljare enligt villkoren och ansvarar för beräkningarna. Ser du en inaktuell sats eller ett felaktigt resultat, skriv direkt: {{email}}. Jag kontrollerar varje rapport och rättar uppgifterna."
     }
   },
   "currency": {

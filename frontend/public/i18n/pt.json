@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Verifique o seu carro num minuto",
       "text": "Tem uma pergunta ou detetou uma taxa desatualizada? Escreva para {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Quem está por trás",
+      "title": "Uma pessoa, com nome",
+      "text": "O Carglo é criado e gerido por {{name}} ({{city}}, Polónia) – a mesma pessoa é o vendedor indicado nos termos e responde pelos cálculos. Se encontrar uma taxa desatualizada ou um resultado errado, escreva diretamente: {{email}}. Verifico cada aviso e corrijo os dados."
     }
   },
   "currency": {

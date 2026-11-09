@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Kontrolli oma autot minutiga",
       "text": "Kas sul on küsimus või märkasid aegunud määra? Kirjuta aadressil {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Kes selle taga on",
+      "title": "Üks inimene, nimega",
+      "text": "Carglo loob ja haldab {{name}} ({{city}}, Poola) – sama isik on tingimustes nimetatud müüja ja vastutab arvutuste eest. Kui märkad aegunud määra või vale tulemust, kirjuta otse: {{email}}. Kontrollin iga teate ja parandan andmed."
     }
   },
   "currency": {

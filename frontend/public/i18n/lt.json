@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Patikrinkite savo automobilį per minutę",
       "text": "Turite klausimą ar pastebėjote pasenusį tarifą? Rašykite: {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Kas už to stovi",
+      "title": "Vienas žmogus, vardu ir pavarde",
+      "text": "Carglo kuria ir prižiūri {{name}} ({{city}}, Lenkija) – tas pats asmuo yra taisyklėse nurodytas pardavėjas ir atsako už skaičiavimus. Jei pastebėjote pasenusį tarifą ar klaidingą rezultatą, rašykite tiesiai: {{email}}. Patikrinu kiekvieną pranešimą ir pataisau duomenis."
     }
   },
   "currency": {

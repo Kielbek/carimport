@@ -13,7 +13,7 @@ import { Icon } from '../../shared/icon/icon';
 import { EuImportPage } from './eu-import-page';
 import { EuRoute, EuRouteExample, EuRouteLine } from './eu-route-types';
 import { EU_ROUTES, EU_ROUTES_DATE } from './eu-routes.generated';
-import { EU_ROUTE_TEXTS, RouteTexts } from './eu-routes-content';
+import { EU_ROUTE_NOTES, EU_ROUTE_TEXTS, RouteTexts } from './eu-routes-content';
 
 /** Lines with their own label in the EU calculator (no auction, no port). */
 const OWN_LABELS = new Set(['PURCHASE_PRICE', 'EU_TRANSPORT_CAR_CARRIER', 'EU_TRANSPORT_TOW_TRUCK', 'EU_TRANSPORT_SELF_DRIVE',
@@ -49,6 +49,7 @@ const OWN_WARNINGS = new Set(['warning.euImport.newVehicleVat', 'warning.euImpor
               <p class="eyebrow">{{ 'euImport.eyebrow' | translate }}</p>
               <h1 class="h-section mt-4">{{ fill(t.h1) }}</h1>
               <p class="lead mt-4">{{ fill(t.lead) }}</p>
+              @if (note(); as n) { <p class="mt-4 leading-relaxed text-fg/90">{{ n }}</p> }
             </div>
             <span class="hidden shrink-0 items-center gap-2 md:flex">
               <app-flag [code]="r.from" class="w-12" /><app-icon name="arrow-right" [size]="20" class="text-muted" /><app-flag [code]="r.to" class="w-12" />
@@ -134,6 +135,15 @@ const OWN_WARNINGS = new Set(['warning.euImport.newVehicleVat', 'warning.euImpor
             <div class="mt-5"><app-eu-import-page [embedded]="true" [presetFrom]="r.from" [presetTo]="r.to" /></div>
           </section>
 
+          <section class="mt-12 max-w-3xl rounded-[6px] border border-line bg-panel p-5 sm:p-6">
+            <h2 class="text-lg font-extrabold">{{ 'guide.port.sourcesTitle' | translate }}</h2>
+            <ul class="mt-3 list-disc space-y-1.5 pl-5 text-sm text-fg/85">
+              @for (src of t.sources; track src) { <li>{{ fill(src) }}</li> }
+            </ul>
+            <p class="mt-3 text-sm text-fg/85">{{ 'guide.port.sourcesUpdated' | translate: { date: updated() } }}
+              <a [routerLink]="method()" class="font-semibold text-brand-text underline underline-offset-2">{{ 'layout.method' | translate }}</a></p>
+          </section>
+
           <section class="mt-12 max-w-3xl">
             <h2 class="text-2xl font-extrabold">{{ 'euImport.faq.title' | translate }}</h2>
             <div class="mt-4 divide-y divide-line border-y border-line">
@@ -191,6 +201,16 @@ export class EuRoutePage {
   protected readonly texts = computed<RouteTexts | undefined>(() => EU_ROUTE_TEXTS[this.pageLang()]);
   protected readonly hub = computed(() => pathFor('euImport', this.pageLang()));
   protected readonly home = computed(() => pathFor('home', this.pageLang()));
+  protected readonly method = computed(() => pathFor('method', this.pageLang()));
+  /** Route-specific paperwork and local practice, for the most searched routes. */
+  protected readonly note = computed(() => {
+    const r = this.route();
+    return r ? EU_ROUTE_NOTES[`${r.lang}/${r.slug}`] : undefined;
+  });
+  protected readonly updated = computed(() => {
+    this.pageLang();
+    return this.date(EU_ROUTES_DATE);
+  });
   /** Other routes in this language, same destination first. */
   protected readonly others = computed(() => {
     const r = this.route();

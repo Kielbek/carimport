@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Prüfen Sie Ihr Auto in einer Minute",
       "text": "Frage oder veralteter Satz entdeckt? Schreiben Sie an {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Wer dahintersteht",
+      "title": "Eine Person, mit Namen",
+      "text": "Carglo wird von {{name}} ({{city}}, Polen) entwickelt und betrieben – dieselbe Person ist Verkäufer laut AGB und verantwortet die Berechnungen. Wenn Ihnen ein veralteter Satz oder ein falsches Ergebnis auffällt, schreiben Sie direkt: {{email}}. Ich prüfe jede Meldung und korrigiere die Daten."
     }
   },
   "currency": {

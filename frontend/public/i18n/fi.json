@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Tarkista autosi minuutissa",
       "text": "Onko sinulla kysyttävää tai huomasitko vanhentuneen verokannan? Kirjoita osoitteeseen {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Kuka on taustalla",
+      "title": "Yksi ihminen, nimellä",
+      "text": "Carglon tekee ja sitä ylläpitää {{name}} ({{city}}, Puola) – sama henkilö on käyttöehtojen myyjä ja vastaa laskelmista. Jos huomaat vanhentuneen veroprosentin tai virheellisen tuloksen, kirjoita suoraan: {{email}}. Tarkistan jokaisen ilmoituksen ja korjaan tiedot."
     }
   },
   "currency": {

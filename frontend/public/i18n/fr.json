@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Vérifiez votre voiture en une minute",
       "text": "Une question ou un taux obsolète repéré ? Écrivez à {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Qui est derrière",
+      "title": "Une personne, nommément",
+      "text": "Carglo est conçu et géré par {{name}} ({{city}}, Pologne) – la même personne est le vendeur cité dans les CGV et répond des calculs. Si vous repérez un taux dépassé ou un résultat erroné, écrivez directement : {{email}}. Je vérifie chaque signalement et corrige les données."
     }
   },
   "currency": {

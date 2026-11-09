@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Ellenőrizze az autóját egy perc alatt",
       "text": "Kérdése van, vagy elavult kulcsot talált? Írjon nekünk: {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Ki áll mögötte",
+      "title": "Egy ember, névvel",
+      "text": "A Carglót {{name}} ({{city}}, Lengyelország) készíti és üzemelteti – ugyanő az ÁSZF-ben megnevezett eladó, és ő felel a számításokért. Ha elavult kulcsot vagy hibás eredményt talál, írjon közvetlenül: {{email}}. Minden bejelentést ellenőrzök, és javítom az adatokat."
     }
   },
   "currency": {

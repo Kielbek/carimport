@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Tjek din bil på et minut",
       "text": "Har du et spørgsmål eller fundet en forældet sats? Skriv til {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Hvem står bag",
+      "title": "Én person, med navn",
+      "text": "Carglo er udviklet og drives af {{name}} ({{city}}, Polen) – samme person er sælger i handelsbetingelserne og står for beregningerne. Ser du en forældet sats eller et forkert resultat, så skriv direkte: {{email}}. Jeg tjekker hver henvendelse og retter dataene."
     }
   },
   "currency": {

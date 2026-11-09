@@ -1166,6 +1166,11 @@
     "cta": {
       "title": "Sprawdź swoje auto w minutę",
       "text": "Masz pytanie lub zauważyłeś nieaktualną stawkę? Napisz: {{email}}"
+    },
+    "owner": {
+      "eyebrow": "Kto za tym stoi",
+      "title": "Konkretna osoba, nie anonimowa firma",
+      "text": "Carglo tworzy i prowadzi {{name}} ({{city}}, Polska) – ta sama osoba jest sprzedawcą w regulaminie i odpowiada za wyliczenia. Jeśli zauważysz nieaktualną stawkę albo błąd w wyniku, napisz bezpośrednio: {{email}}. Każde zgłoszenie sprawdzam i poprawiam dane."
     }
   },
   "currency": {

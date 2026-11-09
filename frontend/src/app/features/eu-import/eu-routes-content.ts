@@ -31,6 +31,8 @@ export interface RouteTexts {
   vatText: string;
   calcTitle: string;
   otherRoutes: string;
+  /** Where the figures come from (three short items; {date} = exchange-rate date). */
+  sources: string[];
   faq: { q: string; a: string }[];
 }
 
@@ -54,6 +56,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Kupując używane auto jako osoba prywatna, nie płacisz drugi raz VAT – podatek zapłacony u sprzedawcy zostaje w kraju zakupu. Wyjątek to nowe auto (do 6 miesięcy lub 6000 km): wtedy VAT 23% płacisz w Polsce. Firmy rozliczają zakup jako WNT.',
     calcTitle: 'Policz swoje auto {from}',
     otherRoutes: 'Inne popularne trasy',
+    sources: ['Podatki i opłaty – według obowiązujących przepisów kraju rejestracji; stawki i podstawy prawne opisujemy na stronie „Jak liczymy”.', 'Transport – stawki za kilometr dla autolawety, lawety i jazdy na tablicach wywozowych, dla odległości między głównymi miastami obu krajów.', 'Ceny przeliczone po kursach z {date}; ubezpieczenie OC to szacunek za pierwszy rok.'],
     faq: [
       { q: 'Ile kosztuje transport auta {from} {to}?', a: 'Autotransporterem ok. {carrier}, lawetą ok. {tow}, a na tablicach wywozowych ok. {self} (ok. {km} km).' },
       { q: 'Czy za auto {from} płaci się cło?', a: 'Nie – między krajami UE nie ma ceł. Płacisz akcyzę i opłaty rejestracyjne: dla auta {car} razem ok. {taxes}.' },
@@ -79,6 +82,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Koop je als particulier een gebruikte auto, dan betaal je geen tweede keer btw – de btw blijft in het land van aankoop. Uitzondering is een nieuwe auto (tot 6 maanden of 6000 km): dan betaal je de btw in het land van registratie.',
     calcTitle: 'Bereken jouw auto {from}',
     otherRoutes: 'Andere populaire routes',
+    sources: ['Belastingen en kosten – volgens de geldende regels van het registratieland; tarieven en wettelijke basis staan op de pagina ‘Hoe we rekenen’.', 'Transport – tarieven per kilometer voor autotransporter, oprijwagen en rijden op exportkenteken, over de afstand tussen de grootste steden van beide landen.', 'Bedragen omgerekend tegen de koersen van {date}; de WA-verzekering is een schatting voor het eerste jaar.'],
     faq: [
       { q: 'Wat kost het transport van een auto {from} {to}?', a: 'Met een autotransporter ca. {carrier}, met een oprijwagen ca. {tow}, op exportkenteken ca. {self} (ca. {km} km).' },
       { q: 'Betaal je invoerrechten op een auto {from}?', a: 'Nee – tussen EU-landen zijn er geen invoerrechten. Je betaalt de belastingen en kosten bij registratie: voor een {car} samen ca. {taxes}.' },
@@ -104,6 +108,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Un particulier qui achète une voiture d’occasion ne repaie pas la TVA : elle reste dans le pays d’achat. Exception : une voiture neuve (moins de 6 mois ou 6 000 km), dont la TVA se paie dans le pays d’immatriculation.',
     calcTitle: 'Calculez votre voiture {from}',
     otherRoutes: 'Autres trajets populaires',
+    sources: ['Taxes et frais – selon les règles en vigueur dans le pays d’immatriculation ; taux et bases légales sur la page « Notre méthode ».', 'Transport – tarifs au kilomètre du porte-voitures, de la dépanneuse et des plaques export, sur la distance entre les principales villes des deux pays.', 'Montants convertis aux cours du {date} ; l’assurance est une estimation pour la première année.'],
     faq: [
       { q: 'Combien coûte le transport d’une voiture {from} {to} ?', a: 'Environ {carrier} en porte-voitures, {tow} en dépanneuse et {self} en plaques export (env. {km} km).' },
       { q: 'Paie-t-on des droits de douane sur une voiture {from} ?', a: 'Non, il n’y a pas de douane entre pays de l’UE. Vous payez les taxes et frais d’immatriculation : pour une {car}, env. {taxes} au total.' },
@@ -129,6 +134,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Kaufen Sie privat einen Gebrauchtwagen, zahlen Sie die Mehrwertsteuer nicht noch einmal – sie bleibt im Kaufland. Ausnahme ist ein Neuwagen (höchstens 6 Monate oder 6.000 km): Dann wird die Steuer im Zulassungsland fällig.',
     calcTitle: 'Ihr Auto {from} berechnen',
     otherRoutes: 'Weitere beliebte Strecken',
+    sources: ['Steuern und Gebühren – nach den geltenden Regeln des Zulassungslandes; Sätze und Rechtsgrundlagen auf der Seite „So rechnen wir“.', 'Transport – Kilometersätze für Autotransporter, Abschleppwagen und Fahrt mit Ausfuhrkennzeichen, über die Entfernung zwischen den größten Städten beider Länder.', 'Beträge umgerechnet zu den Kursen vom {date}; die Haftpflichtversicherung ist eine Schätzung für das erste Jahr.'],
     faq: [
       { q: 'Was kostet die Überführung eines Autos {from} {to}?', a: 'Per Autotransporter ca. {carrier}, per Abschleppwagen ca. {tow}, mit Ausfuhrkennzeichen ca. {self} (ca. {km} km).' },
       { q: 'Zahlt man Zoll für ein Auto {from}?', a: 'Nein – zwischen EU-Ländern gibt es keinen Zoll. Sie zahlen Steuern und Gebühren bei der Zulassung: für einen {car} zusammen ca. {taxes}.' },
@@ -154,6 +160,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Privātpersona, pērkot lietotu auto, PVN otrreiz nemaksā – tas paliek pirkuma valstī. Izņēmums ir jauns auto (līdz 6 mēnešiem vai 6000 km): tad PVN maksā reģistrācijas valstī.',
     calcTitle: 'Aprēķiniet savu auto {from}',
     otherRoutes: 'Citi populāri maršruti',
+    sources: ['Nodokļi un maksas – saskaņā ar reģistrācijas valsts spēkā esošajiem noteikumiem; likmes un tiesiskais pamats lapā “Kā mēs rēķinām”.', 'Transports – likmes par kilometru autovedējam, evakuatoram un braucienam ar tranzīta numuriem, attālumam starp abu valstu lielākajām pilsētām.', 'Summas pārrēķinātas pēc {date} kursiem; OCTA ir pirmā gada aplēse.'],
     faq: [
       { q: 'Cik maksā auto transports {from} {to}?', a: 'Ar autovedēju ap. {carrier}, ar evakuatoru ap. {tow}, ar tranzīta numuriem ap. {self} (ap. {km} km).' },
       { q: 'Vai par auto {from} jāmaksā muita?', a: 'Nē – starp ES valstīm muitas nav. Jāmaksā nodokļi un maksas reģistrācijā: auto {car} kopā ap. {taxes}.' },
@@ -179,6 +186,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Privatus asmuo, pirkdamas naudotą automobilį, PVM antrą kartą nemoka – jis lieka pirkimo šalyje. Išimtis – naujas automobilis (iki 6 mėnesių arba 6000 km): tada PVM mokamas registracijos šalyje.',
     calcTitle: 'Apskaičiuokite savo automobilį {from}',
     otherRoutes: 'Kiti populiarūs maršrutai',
+    sources: ['Mokesčiai ir rinkliavos – pagal galiojančias registracijos šalies taisykles; tarifai ir teisinis pagrindas puslapyje „Kaip skaičiuojame“.', 'Transportas – kilometro įkainiai autovežiui, evakuatoriui ir važiavimui su tranzitiniais numeriais, atstumui tarp didžiausių abiejų šalių miestų.', 'Sumos perskaičiuotos {date} kursais; draudimas – pirmųjų metų įvertis.'],
     faq: [
       { q: 'Kiek kainuoja automobilio transportas {from} {to}?', a: 'Autovežiu apie {carrier}, evakuatoriumi apie {tow}, su tranzitiniais numeriais apie {self} (apie {km} km).' },
       { q: 'Ar už automobilį {from} mokamas muitas?', a: 'Ne – tarp ES šalių muitų nėra. Mokate mokesčius ir rinkliavas registruojant: automobiliui {car} iš viso apie {taxes}.' },
@@ -204,6 +212,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Kupujete-li ojeté auto jako soukromá osoba, DPH podruhé neplatíte – zůstává v zemi nákupu. Výjimkou je nové auto (do 6 měsíců nebo 6000 km): pak se DPH platí v zemi registrace.',
     calcTitle: 'Spočítejte své auto {from}',
     otherRoutes: 'Další oblíbené trasy',
+    sources: ['Daně a poplatky – podle platných pravidel země registrace; sazby a právní základ na stránce „Jak počítáme“.', 'Doprava – sazby za kilometr pro autopřepravník, odtahovku a jízdu na převozní značky, na vzdálenost mezi největšími městy obou zemí.', 'Částky přepočtené kurzy z {date}; povinné ručení je odhad za první rok.'],
     faq: [
       { q: 'Kolik stojí doprava auta {from} {to}?', a: 'Autopřepravníkem asi {carrier}, odtahovkou asi {tow}, na převozní značky asi {self} (asi {km} km).' },
       { q: 'Platí se clo za auto {from}?', a: 'Ne – mezi zeměmi EU se clo neplatí. Platíte daně a poplatky při registraci: za {car} celkem asi {taxes}.' },
@@ -229,6 +238,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Ak kupujete ojazdené auto ako súkromná osoba, DPH druhýkrát neplatíte – zostáva v krajine nákupu. Výnimkou je nové auto (do 6 mesiacov alebo 6000 km): vtedy sa DPH platí v krajine registrácie.',
     calcTitle: 'Vypočítajte svoje auto {from}',
     otherRoutes: 'Ďalšie obľúbené trasy',
+    sources: ['Dane a poplatky – podľa platných pravidiel krajiny registrácie; sadzby a právny základ na stránke „Ako počítame“.', 'Doprava – sadzby za kilometer pre autoprepravník, odťahovku a jazdu na prevozné značky, na vzdialenosť medzi najväčšími mestami oboch krajín.', 'Sumy prepočítané kurzami z {date}; PZP je odhad za prvý rok.'],
     faq: [
       { q: 'Koľko stojí doprava auta {from} {to}?', a: 'Autoprepravníkom asi {carrier}, odťahovkou asi {tow}, na prevozné značky asi {self} (asi {km} km).' },
       { q: 'Platí sa clo za auto {from}?', a: 'Nie – medzi krajinami EÚ sa clo neplatí. Platíte dane a poplatky pri registrácii: za {car} spolu asi {taxes}.' },
@@ -254,6 +264,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Ως ιδιώτης που αγοράζει μεταχειρισμένο αυτοκίνητο δεν πληρώνετε ξανά ΦΠΑ – μένει στη χώρα αγοράς. Εξαίρεση είναι το καινούργιο αυτοκίνητο (έως 6 μήνες ή 6.000 km): τότε ο ΦΠΑ πληρώνεται στη χώρα ταξινόμησης.',
     calcTitle: 'Υπολογίστε το αυτοκίνητό σας {from}',
     otherRoutes: 'Άλλες δημοφιλείς διαδρομές',
+    sources: ['Φόροι και τέλη – σύμφωνα με τους ισχύοντες κανόνες της χώρας ταξινόμησης· συντελεστές και νομική βάση στη σελίδα «Πώς υπολογίζουμε».', 'Μεταφορά – χρεώσεις ανά χιλιόμετρο για νταλίκα, γερανοφόρο και οδήγηση με πινακίδες εξαγωγής, για την απόσταση μεταξύ των μεγαλύτερων πόλεων των δύο χωρών.', 'Ποσά με ισοτιμίες της {date}· η ασφάλιση είναι εκτίμηση για τον πρώτο χρόνο.'],
     faq: [
       { q: 'Πόσο κοστίζει η μεταφορά αυτοκινήτου {from} {to};', a: 'Με νταλίκα περίπου {carrier}, με γερανοφόρο περίπου {tow}, με πινακίδες εξαγωγής περίπου {self} (περίπου {km} km).' },
       { q: 'Πληρώνεται δασμός για αυτοκίνητο {from};', a: 'Όχι – μεταξύ χωρών της ΕΕ δεν υπάρχουν δασμοί. Πληρώνετε φόρους και τέλη ταξινόμησης: για {car} συνολικά περίπου {taxes}.' },
@@ -279,6 +290,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Si compras un coche usado como particular, no vuelves a pagar IVA: se queda en el país de compra. La excepción es un coche nuevo (hasta 6 meses o 6.000 km): entonces el IVA se paga en el país de matriculación.',
     calcTitle: 'Calcula tu coche {from}',
     otherRoutes: 'Otras rutas populares',
+    sources: ['Impuestos y tasas – según las normas vigentes del país de matriculación; tipos y base legal en la página «Cómo calculamos».', 'Transporte – tarifas por kilómetro de camión portacoches, grúa y placas de exportación, para la distancia entre las principales ciudades de ambos países.', 'Importes convertidos al cambio del {date}; el seguro es una estimación del primer año.'],
     faq: [
       { q: '¿Cuánto cuesta transportar un coche {from} {to}?', a: 'En camión portacoches unos {carrier}, en grúa unos {tow} y con placas de exportación unos {self} (unos {km} km).' },
       { q: '¿Se pagan aranceles por un coche {from}?', a: 'No, entre países de la UE no hay aranceles. Pagas los impuestos y tasas de matriculación: para un {car}, unos {taxes} en total.' },
@@ -304,6 +316,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Quem compra um carro usado como particular não paga IVA outra vez – fica no país de compra. A exceção é um carro novo (até 6 meses ou 6.000 km): nesse caso o IVA paga-se no país de matrícula.',
     calcTitle: 'Calcule o seu carro {from}',
     otherRoutes: 'Outras rotas populares',
+    sources: ['Impostos e taxas – segundo as regras em vigor no país de matrícula; taxas e base legal na página «Como calculamos».', 'Transporte – tarifas por quilómetro de camião porta-carros, reboque e matrícula de exportação, para a distância entre as principais cidades dos dois países.', 'Valores convertidos ao câmbio de {date}; o seguro é uma estimativa do primeiro ano.'],
     faq: [
       { q: 'Quanto custa o transporte de um carro {from} {to}?', a: 'Em camião porta-carros cerca de {carrier}, em reboque cerca de {tow} e com matrícula de exportação cerca de {self} (cerca de {km} km).' },
       { q: 'Paga-se alfândega por um carro {from}?', a: 'Não – entre países da UE não há direitos aduaneiros. Paga os impostos e taxas da legalização: para um {car}, cerca de {taxes} no total.' },
@@ -329,6 +342,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Se compri un’auto usata da privato non paghi di nuovo l’IVA: resta nel Paese di acquisto. Fa eccezione l’auto nuova (fino a 6 mesi o 6.000 km), per cui l’IVA si paga nel Paese di immatricolazione.',
     calcTitle: 'Calcola la tua auto {from}',
     otherRoutes: 'Altre tratte popolari',
+    sources: ['Imposte e diritti – secondo le regole in vigore nel Paese di immatricolazione; aliquote e base normativa nella pagina «Come calcoliamo».', 'Trasporto – tariffe al chilometro di bisarca, carro attrezzi e targa di esportazione, sulla distanza tra le principali città dei due Paesi.', 'Importi convertiti ai cambi del {date}; l’assicurazione è una stima per il primo anno.'],
     faq: [
       { q: 'Quanto costa trasportare un’auto {from} {to}?', a: 'Con bisarca circa {carrier}, con carro attrezzi circa {tow}, con targa di esportazione circa {self} (circa {km} km).' },
       { q: 'Si paga il dazio su un’auto {from}?', a: 'No, tra Paesi UE non ci sono dazi. Paghi imposte e diritti di immatricolazione: per una {car} in tutto circa {taxes}.' },
@@ -354,6 +368,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Köper du en begagnad bil som privatperson betalar du inte moms en gång till – den stannar i köplandet. Undantaget är en ny bil (högst 6 månader eller 6 000 km): då betalas momsen i registreringslandet.',
     calcTitle: 'Räkna på din bil {from}',
     otherRoutes: 'Andra populära rutter',
+    sources: ['Skatter och avgifter – enligt gällande regler i registreringslandet; satser och rättslig grund på sidan ”Så räknar vi”.', 'Transport – kilometerpriser för biltransport, bärgningsbil och körning på exportskyltar, för avståndet mellan ländernas största städer.', 'Belopp omräknade till kurserna från {date}; försäkringen är en uppskattning för första året.'],
     faq: [
       { q: 'Vad kostar det att transportera en bil {from} {to}?', a: 'Med biltransport ca {carrier}, med bärgningsbil ca {tow} och på exportskyltar ca {self} (ca {km} km).' },
       { q: 'Betalar man tull för en bil {from}?', a: 'Nej, mellan EU-länder finns ingen tull. Du betalar skatter och avgifter vid registreringen: för en {car} totalt ca {taxes}.' },
@@ -379,6 +394,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Køber du en brugt bil som privatperson, betaler du ikke moms igen – den bliver i købslandet. Undtagelsen er en ny bil (højst 6 måneder eller 6.000 km): så betales momsen i registreringslandet.',
     calcTitle: 'Beregn din bil {from}',
     otherRoutes: 'Andre populære ruter',
+    sources: ['Afgifter og gebyrer – efter de gældende regler i registreringslandet; satser og retsgrundlag på siden ”Sådan regner vi”.', 'Transport – kilometerpriser for biltransporter, blokvogn og kørsel på eksportplader, for afstanden mellem landenes største byer.', 'Beløb omregnet til kurserne fra {date}; forsikringen er et skøn for første år.'],
     faq: [
       { q: 'Hvad koster det at transportere en bil {from} {to}?', a: 'Med biltransporter ca. {carrier}, på blokvogn ca. {tow} og på eksportplader ca. {self} (ca. {km} km).' },
       { q: 'Betaler man told for en bil {from}?', a: 'Nej, mellem EU-lande er der ingen told. Du betaler afgifter og gebyrer ved registreringen: for en {car} i alt ca. {taxes}.' },
@@ -404,6 +420,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Kun ostat käytetyn auton yksityishenkilönä, et maksa arvonlisäveroa uudelleen – se jää ostomaahan. Poikkeus on uusi auto (enintään 6 kk tai 6 000 km): silloin arvonlisävero maksetaan rekisteröintimaassa.',
     calcTitle: 'Laske oma autosi {from}',
     otherRoutes: 'Muita suosittuja reittejä',
+    sources: ['Verot ja maksut – rekisteröintimaan voimassa olevien sääntöjen mukaan; verokannat ja oikeusperusta sivulla ”Miten laskemme”.', 'Kuljetus – kilometrihinnat autonkuljetusautolle, hinausautolle ja siirtokilvillä ajolle maiden suurimpien kaupunkien välisellä etäisyydellä.', 'Summat muunnettu {date} kursseilla; vakuutus on arvio ensimmäiselle vuodelle.'],
     faq: [
       { q: 'Paljonko auton kuljetus {from} {to} maksaa?', a: 'Autonkuljetusautolla n. {carrier}, hinausautolla n. {tow} ja siirtokilvillä n. {self} (n. {km} km).' },
       { q: 'Maksetaanko tullia autosta {from}?', a: 'Ei – EU-maiden välillä ei ole tulleja. Maksat verot ja maksut rekisteröinnissä: autosta {car} yhteensä n. {taxes}.' },
@@ -429,6 +446,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Kui ostad eraisikuna kasutatud auto, ei maksa sa käibemaksu teist korda – see jääb osturiiki. Erand on uus auto (kuni 6 kuud või 6000 km): siis makstakse käibemaks registreerimisriigis.',
     calcTitle: 'Arvuta oma auto {from}',
     otherRoutes: 'Teised populaarsed marsruudid',
+    sources: ['Maksud ja tasud – registreerimisriigi kehtivate reeglite järgi; määrad ja õiguslik alus lehel „Kuidas me arvutame“.', 'Transport – kilomeetrihinnad autoveokile, puksiirile ja transiitnumbritega sõidule, mõlema riigi suurimate linnade vahelise kauguse järgi.', 'Summad ümber arvestatud {date} kurssidega; kindlustus on esimese aasta hinnang.'],
     faq: [
       { q: 'Kui palju maksab auto transport {from} {to}?', a: 'Autoveokiga u {carrier}, puksiiriga u {tow} ja transiitnumbritega u {self} (u {km} km).' },
       { q: 'Kas auto eest {from} makstakse tolli?', a: 'Ei – ELi riikide vahel tolli ei ole. Maksad maksud ja tasud registreerimisel: auto {car} eest kokku u {taxes}.' },
@@ -454,6 +472,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Dacă cumperi o mașină second-hand ca persoană fizică, nu mai plătești TVA a doua oară – rămâne în țara de cumpărare. Excepție face mașina nouă (până la 6 luni sau 6.000 km): atunci TVA se plătește în țara de înmatriculare.',
     calcTitle: 'Calculează mașina ta {from}',
     otherRoutes: 'Alte rute populare',
+    sources: ['Taxe și tarife – conform regulilor în vigoare în țara de înmatriculare; cote și bază legală pe pagina „Cum calculăm”.', 'Transport – tarife pe kilometru pentru platformă multiplă, platformă individuală și numere provizorii, pentru distanța dintre principalele orașe ale celor două țări.', 'Sume convertite la cursurile din {date}; asigurarea RCA este o estimare pentru primul an.'],
     faq: [
       { q: 'Cât costă transportul unei mașini {from} {to}?', a: 'Pe platformă multiplă circa {carrier}, pe platformă individuală circa {tow}, cu numere provizorii circa {self} (circa {km} km).' },
       { q: 'Se plătesc taxe vamale pentru o mașină {from}?', a: 'Nu – între țările UE nu există taxe vamale. Plătești taxele la înmatriculare: pentru un {car}, în total circa {taxes}.' },
@@ -479,6 +498,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Ако купувате употребявана кола като физическо лице, не плащате ДДС втори път – той остава в държавата на покупката. Изключение е новата кола (до 6 месеца или 6000 km): тогава ДДС се плаща в държавата на регистрация.',
     calcTitle: 'Изчислете вашата кола {from}',
     otherRoutes: 'Други популярни маршрути',
+    sources: ['Данъци и такси – по действащите правила на държавата на регистрация; ставки и правно основание на страницата „Как изчисляваме“.', 'Транспорт – тарифи на километър за автовоз, пътна помощ и транзитни номера, за разстоянието между най-големите градове на двете държави.', 'Суми по курсовете от {date}; застраховката е оценка за първата година.'],
     faq: [
       { q: 'Колко струва транспортът на кола {from} {to}?', a: 'С автовоз около {carrier}, с пътна помощ около {tow}, с транзитни номера около {self} (около {km} km).' },
       { q: 'Плаща ли се мито за кола {from}?', a: 'Не – между държавите от ЕС няма мита. Плащате данъците и таксите при регистрация: за {car} общо около {taxes}.' },
@@ -504,6 +524,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Ha magánszemélyként használt autót vesz, nem fizet újra áfát – az a vásárlás országában marad. Kivétel az új autó (legfeljebb 6 hónap vagy 6000 km): ilyenkor az áfát a forgalomba helyezés országában kell megfizetni.',
     calcTitle: 'Számolja ki az autóját {from}',
     otherRoutes: 'További népszerű útvonalak',
+    sources: ['Adók és díjak – a forgalomba helyezés országának hatályos szabályai szerint; kulcsok és jogalap a „Hogyan számolunk” oldalon.', 'Szállítás – kilométerdíjak autószállítóra, trélerre és ideiglenes rendszámos vezetésre, a két ország legnagyobb városai közötti távolságra.', 'Összegek a {date} árfolyamain; a biztosítás az első év becslése.'],
     faq: [
       { q: 'Mennyibe kerül egy autó szállítása {from} {to}?', a: 'Autószállítóval kb. {carrier}, trélerrel kb. {tow}, ideiglenes rendszámmal kb. {self} (kb. {km} km).' },
       { q: 'Kell vámot fizetni egy autó után {from}?', a: 'Nem – az EU-országok között nincs vám. A forgalomba helyezés adóit és díjait fizeti: egy {car} esetén összesen kb. {taxes}.' },
@@ -529,6 +550,7 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Kupujete li rabljeni automobil kao fizička osoba, PDV ne plaćate ponovno – ostaje u zemlji kupnje. Iznimka je novi automobil (do 6 mjeseci ili 6000 km): tada se PDV plaća u zemlji registracije.',
     calcTitle: 'Izračunajte svoj automobil {from}',
     otherRoutes: 'Ostale popularne rute',
+    sources: ['Porezi i pristojbe – prema važećim pravilima zemlje registracije; stope i pravna osnova na stranici „Kako računamo“.', 'Prijevoz – cijene po kilometru za autotransporter, šlep-službu i vožnju s izvoznim tablicama, za udaljenost između najvećih gradova obiju zemalja.', 'Iznosi preračunati po tečajevima od {date}; osiguranje je procjena za prvu godinu.'],
     faq: [
       { q: 'Koliko košta prijevoz automobila {from} {to}?', a: 'Autotransporterom oko {carrier}, šlep-službom oko {tow}, s izvoznim tablicama oko {self} (oko {km} km).' },
       { q: 'Plaća li se carina za automobil {from}?', a: 'Ne – između zemalja EU nema carine. Plaćate poreze i pristojbe pri registraciji: za {car} ukupno oko {taxes}.' },
@@ -554,10 +576,38 @@ export const EU_ROUTE_TEXTS: Partial<Record<Lang, RouteTexts>> = {
     vatText: 'Če rabljen avtomobil kupite kot fizična oseba, DDV ne plačate še enkrat – ostane v državi nakupa. Izjema je nov avtomobil (do 6 mesecev ali 6000 km): takrat se DDV plača v državi registracije.',
     calcTitle: 'Izračunajte svoj avtomobil {from}',
     otherRoutes: 'Druge priljubljene poti',
+    sources: ['Davki in takse – po veljavnih pravilih države registracije; stopnje in pravna podlaga na strani »Kako računamo«.', 'Prevoz – cene na kilometer za tovornjak za prevoz vozil, vlečno vozilo in vožnjo z izvoznimi tablicami, za razdaljo med največjimi mesti obeh držav.', 'Zneski preračunani po tečajih z dne {date}; zavarovanje je ocena za prvo leto.'],
     faq: [
       { q: 'Koliko stane prevoz avtomobila {from} {to}?', a: 'S tovornjakom za prevoz vozil približno {carrier}, z vlečnim vozilom približno {tow}, z izvoznimi tablicami približno {self} (približno {km} km).' },
       { q: 'Ali se za avtomobil {from} plača carina?', a: 'Ne – med državami EU carine ni. Plačate davke in takse pri registraciji: za {car} skupaj približno {taxes}.' },
       { q: 'Ali moram za avtomobil {from} plačati DDV?', a: 'Ne za rabljen avtomobil, ki ga kupi fizična oseba. DDV v državi registracije se plača le za nov avtomobil (do 6 mesecev ali 6000 km).' },
     ],
   },
+};
+
+/**
+ * What is specific to the most searched routes (lang/slug), shown under the lead. Only facts that hold in general -
+ * paperwork and local practice - so they do not go stale with rates.
+ */
+export const EU_ROUTE_NOTES: Readonly<Record<string, string>> = {
+  'pl/niemcy-polska':
+    'Niemcy to najczęstszy kierunek sprowadzania aut do Polski – to największy rynek używanych aut w Europie. Auto przywieziesz lawetą albo sam, na niemieckich tablicach wywozowych (Ausfuhrkennzeichen) z krótkim ubezpieczeniem. Po przyjeździe masz 14 dni na deklarację akcyzową i 30 dni na rejestrację auta.',
+  'pl/holandia-polska':
+    'Auta z Holandii mają zwykle dobrze udokumentowany przebieg – holenderski system NAP zapisuje stan licznika przy przeglądach i naprawach. Holenderskie tablice są przypisane do auta, więc na drogę potrzebujesz tablic eksportowych albo lawety. W Polsce, jak przy każdym imporcie z UE, masz 14 dni na akcyzę i 30 dni na rejestrację.',
+  'pl/belgia-polska':
+    'W Belgii tablice rejestracyjne należą do właściciela, nie do auta – sprzedający je zdejmuje, więc auto odbierasz lawetą albo na belgijskich tablicach tranzytowych. Przy sprzedaży używanego auta w Belgii obowiązuje Car-Pass, dokument z historią przebiegu – poproś o niego sprzedawcę.',
+  'nl/duitsland-nederland':
+    'Duitsland is de grootste markt voor gebruikte auto’s in Europa. In Nederland betaal je voor een geïmporteerde auto BPM: het bedrag hangt af van de CO₂-uitstoot en wordt verlaagd naar de leeftijd van de auto (forfaitaire tabel of taxatierapport). Voor een Nederlands kenteken moet de auto eerst langs de RDW voor een keuring.',
+  'nl/luxemburg-nederland':
+    'Luxemburg heeft het laagste btw-tarief van de EU (17%), daarom kijken veel kopers daar naar nieuwe auto’s. Let op: voor een nieuwe auto (tot 6 maanden of 6000 km) betaal je de Nederlandse btw, en voor elke geïmporteerde auto BPM en een RDW-keuring.',
+  'nl/duitsland-belgie':
+    'Bij inschrijving in België betaal je de belasting op de inverkeerstelling (BIV); de regels verschillen per gewest – in Vlaanderen tellen vooral CO₂-uitstoot, euronorm en leeftijd. Een geïmporteerde auto moet eerst langs de technische keuring voordat de DIV hem inschrijft.',
+  'nl/nederland-belgie':
+    'Nederlandse kentekenplaten horen bij de auto: voor de rit naar België heb je een Nederlands exportkenteken nodig, of je laat de auto vervoeren. In België volgt daarna de technische keuring en de inschrijving bij de DIV, met de BIV volgens de regels van je gewest.',
+  'de/niederlande-deutschland':
+    'Autos aus den Niederlanden haben oft eine gut dokumentierte Laufleistung – das niederländische NAP-System erfasst den Kilometerstand bei Inspektionen und Reparaturen. Für die Fahrt nach Deutschland gibt es niederländische Exportkennzeichen; mit der EG-Übereinstimmungsbescheinigung (CoC) ist die Zulassung meist ohne Vollabnahme möglich.',
+  'fr/allemagne-france':
+    'L’Allemagne est le plus grand marché de l’occasion en Europe. Pour immatriculer en France une voiture achetée dans l’UE, il faut un quitus fiscal délivré par le service des impôts, puis la demande sur le site de l’ANTS avec le certificat de conformité (COC). Le trajet se fait en plaques export allemandes (Ausfuhrkennzeichen) ou en porte-voitures.',
+  'el/germania-ellada':
+    'Η Γερμανία είναι η μεγαλύτερη αγορά μεταχειρισμένων αυτοκινήτων στην Ευρώπη. Στην Ελλάδα ένα μεταχειρισμένο αυτοκίνητο από την ΕΕ ταξινομείται μέσω τελωνείου με ειδική δήλωση και πληρώνεται τέλος ταξινόμησης, που εξαρτάται από την τιμή, τις εκπομπές CO₂ και την ηλικία – μπορεί να είναι σημαντικό ποσό, γι’ αυτό υπολογίστε το πριν από την αγορά.',
 };
