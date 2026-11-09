@@ -38,8 +38,8 @@ export const SITE = {
    *   name: 'Jan Kowalski (działalność nierejestrowana)', address: 'ul. Przykładowa 1, 00-001 Warszawa'
    */
   company: {
-    name: '[imię i nazwisko]',
-    address: '[adres do korespondencji]',
+    name: 'Mateusz Kielbasa',
+    address: 'Parkowa 43, 71-634 Szczecin',
     taxId: '',
     registry: '',
   },
