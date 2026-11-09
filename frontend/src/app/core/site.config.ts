@@ -71,5 +71,5 @@ export const SITE = {
   /** Last review of tax rules, tariffs and freight rates - shown on the methodology page. */
   ratesReviewed: '2026-10-25',
   /** Date and version of the terms; bump when the text changes (stored with every order). */
-  termsVersion: '2026-10-26',
+  termsVersion: '2026-11-09',
 } as const;
