@@ -1,0 +1,10 @@
+{
+  "_comment": "Which EU-country and port guides each language offers to search engines (the rest stays on the site, noindex and out of the sitemap). '*' = every country: English and the big diaspora languages. Others: the countries where the language is official. Ports: those of these countries plus each country's nearest ports. Read by core/routing/index-scope.ts and tools/generate-sitemap.mjs.",
+  "countries": {
+    "en": "*", "pl": "*", "uk": "*",
+    "de": ["DE", "AT", "LU", "BE"], "fr": ["FR", "BE", "LU"], "nl": ["NL", "BE"], "sv": ["SE", "FI"], "el": ["GR", "CY"],
+    "it": ["IT"], "es": ["ES"], "pt": ["PT"], "cs": ["CZ"], "sk": ["SK"], "hu": ["HU"], "ro": ["RO"], "bg": ["BG"],
+    "hr": ["HR"], "sl": ["SI"], "da": ["DK"], "fi": ["FI"], "et": ["EE"], "lv": ["LV"], "lt": ["LT"]
+  },
+  "nearestPorts": 6
+}

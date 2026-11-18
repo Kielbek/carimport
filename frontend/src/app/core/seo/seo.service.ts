@@ -11,6 +11,8 @@ export const FAQ_COUNT = 9;
 
 export interface CustomPage {
   lang: Lang;
+  /** Kept on the site but not offered to search engines (noindex, follow; no hreflang to other versions). */
+  noindex?: boolean;
   title: string;
   description: string;
   /** Path of this page (canonical). */
@@ -99,7 +101,7 @@ export class SeoService {
     const url = SITE.url + page.path;
     this.title.setTitle(page.title);
     this.meta.updateTag({ name: 'description', content: page.description });
-    this.meta.updateTag({ name: 'robots', content: 'index,follow,max-image-preview:large' });
+    this.meta.updateTag({ name: 'robots', content: page.noindex ? 'noindex,follow' : 'index,follow,max-image-preview:large' });
     this.meta.updateTag({ property: 'og:type', content: 'article' });
     this.meta.updateTag({ property: 'og:site_name', content: SITE.name });
     this.meta.updateTag({ property: 'og:title', content: page.title });
@@ -109,7 +111,7 @@ export class SeoService {
     this.meta.updateTag({ property: 'og:image', content: SITE.url + SITE.ogImage });
     this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
 
-    this.writeLinks(url, (l) => SITE.url + page.pathFor(l), page.languages);
+    this.writeLinks(url, (l) => SITE.url + page.pathFor(l), page.noindex ? [page.lang] : page.languages);
     const graph: Record<string, unknown>[] = [
       ...this.baseGraph(page.lang),
       {

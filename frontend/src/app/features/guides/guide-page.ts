@@ -8,6 +8,7 @@ import { Lang } from '../../core/i18n/languages';
 import { isSupportedLang } from '../../core/i18n/language.service';
 import { GuideRef, GuideSection, guidePath, resolveGuide } from '../../core/routing/guide-paths';
 import { PageContext } from '../../core/routing/page-context';
+import { guideIndexable, guideLanguages } from '../../core/routing/index-scope';
 import { pathFor } from '../../core/routing/paths';
 import { SeoService } from '../../core/seo/seo.service';
 import { SITE } from '../../core/site.config';
@@ -826,6 +827,9 @@ export class GuidePage {
       faq: this.faq(),
       about,
       modified: SITE.ratesReviewed,
+      // country and port guides only in the languages whose readers use them (core/routing/index-scope.ts)
+      noindex: !guideIndexable(r.section, r.item, lang),
+      languages: guideLanguages(r.section, r.item),
     });
     this.pageContext.hrefFor.set((l) => guidePath(r, l));
   }
